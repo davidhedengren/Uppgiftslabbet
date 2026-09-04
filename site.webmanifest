@@ -1,0 +1,11 @@
+{
+  "name": "Uppgiftslabbet",
+  "short_name": "Uppgiftslabbet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F5F7",
+  "theme_color": "#B43123",
+  "icons": [
+    {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}
