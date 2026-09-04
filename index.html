@@ -2278,6 +2278,43 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
   .kurskort:hover .kk-action{transform:none!important}
 }
 
+
+/* PDF-export: samma prov-/övningsbladslayout som Word */
+.pdf-provhuvud,.pdf-ovningshuvud{font-family:Arial,Helvetica,sans-serif;color:#111}
+.pdf-provtop{display:grid;grid-template-columns:42% 58%;align-items:start;margin-bottom:22pt}
+.pdf-provlogo img{width:68px;height:auto;display:block}
+.pdf-ident{padding-top:1pt}
+.pdf-ident>div{display:flex;align-items:flex-end;gap:7pt;margin-bottom:12pt;font-size:10.8pt}
+.pdf-ident b{width:34pt}
+.pdf-ident span{display:inline-block;min-width:155pt;min-height:13pt;border-bottom:.8pt solid #111;padding:0 2pt 1pt}
+.pdf-provhuvud h1{font:700 18pt/1.15 Arial,Helvetica,sans-serif;margin:0 0 14pt}
+.pdf-provdatum{font-size:11.5pt;font-weight:700;margin-bottom:11pt}
+.pdf-huvudlinje{border-top:1.1pt solid #111;margin-bottom:17pt}
+.pdf-notice{font-size:8.2pt;line-height:1.35;text-transform:uppercase;margin-bottom:11pt}
+.pdf-max{font-size:9.3pt;text-transform:uppercase;margin-top:2pt}
+.pdf-fordelning{font-size:8.8pt;margin:2pt 0 20pt}
+.pdf-instruktion{
+  box-sizing:border-box;width:100%;margin:0 0 13pt;padding:7pt 5pt 6pt;
+  background:#e4e4e4;border-top:1.1pt solid #222;border-bottom:1.1pt solid #222;
+  font-size:9.5pt;font-weight:700;line-height:1.15;text-transform:uppercase
+}
+.pdf-ovningshuvud{
+  display:grid;grid-template-columns:82px 1fr;gap:12pt;align-items:start;
+  border-bottom:1.1pt solid #222;padding-bottom:10pt;margin-bottom:17pt
+}
+.pdf-ovningshuvud>img{width:68px;height:auto}
+.pdf-ovningshuvud h1{font:700 18pt/1.15 Arial,Helvetica,sans-serif;margin:2pt 0 5pt}
+.pdf-ovningsmeta{font-size:9.5pt;color:#333;margin-bottom:3pt}
+.pdf-ovningsantal{font-size:8.8pt;color:#555}
+.pdf-pu{
+  display:grid!important;grid-template-columns:25pt minmax(0,1fr) 67pt;
+  gap:0;padding:0 0 9pt!important;margin:0 0 9pt!important;
+  border-bottom:.55pt solid #b8b8b8;break-inside:avoid;page-break-inside:avoid
+}
+.pdf-pu>.pn{width:auto!important;padding:1pt 8pt 0 1pt!important}
+.pdf-uppgiftstext{min-width:0;padding-right:7pt}
+.pdf-uppgiftsmeta{text-align:right;white-space:nowrap;padding-top:1pt;font-size:9.5pt}
+.pdf-uppgiftsmeta .utskriftsverktyg{margin-right:5pt}
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -4320,35 +4357,61 @@ function exportMärke(x,totalEndast=false){
 function bladHTML({facit,hjalpmedel=true,totalEndast=false,typ=dokumentTyp()}){
   const fallback=typ==='prov'?'Prov':'Övningsblad';
   const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
-  const p={E:0,C:0,A:0}, antalN={E:0,C:0,A:0};
+  const datum=wordDatum(da);
+  const p={E:0,C:0,A:0};
   state.blad.forEach(x=>{
     const m=String(x.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
     if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
-    if(antalN[x.niva]!=null) antalN[x.niva]++;
   });
   const tot=p.E+p.C+p.A;
-  const rad=[AKTIV?AKTIV.titel:'',kl,da].filter(Boolean).join(' · ');
 
-  let sammanfattning='';
+  let h='';
   if(typ==='prov'){
-    sammanfattning=totalEndast
-      ? `Max ${tot} poäng · ${state.blad.length} uppgifter`
-      : (state.visaPoäng
-          ? `Max ${tot} poäng (${p.E}/${p.C}/${p.A}) · ${state.blad.length} uppgifter`
-          : `${state.blad.length} uppgifter (${antalN.E} E / ${antalN.C} C / ${antalN.A} A)`);
+    h=`<div class="pdf-provhuvud">
+      <div class="pdf-provtop">
+        <div class="pdf-provlogo"><img src="${LOGO}" alt="Erik Dahlbergsgymnasiet"></div>
+        <div class="pdf-ident">
+          <div><b>Namn:</b><span></span></div>
+          <div><b>Klass:</b><span>${wordEsc(kl)}</span></div>
+        </div>
+      </div>
+      <h1>${wordEsc(t)}</h1>
+      ${datum?`<div class="pdf-provdatum">${wordEsc(datum)}</div>`:''}
+      <div class="pdf-huvudlinje"></div>
+      <div class="pdf-notice">BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER
+      KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS
+      SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.</div>
+      <div class="pdf-max"><b>MAX:</b> ${tot} POÄNG</div>
+      ${totalEndast?'':`<div class="pdf-fordelning">Poängfördelning: ${p.E} E &nbsp;·&nbsp; ${p.C} C &nbsp;·&nbsp; ${p.A} A</div>`}
+      <div class="pdf-instruktion">REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.</div>
+    </div>`;
   }else{
-    sammanfattning=`${state.blad.length} uppgifter${totalEndast?` · ${tot} poäng`:''}`;
+    const meta=[AKTIV?AKTIV.titel:'',kl,datum].filter(Boolean).join(' · ');
+    h=`<div class="pdf-ovningshuvud">
+      <img src="${LOGO}" alt="Erik Dahlbergsgymnasiet">
+      <div>
+        <h1>${wordEsc(t)}</h1>
+        ${meta?`<div class="pdf-ovningsmeta">${wordEsc(meta)}</div>`:''}
+        <div class="pdf-ovningsantal">${state.blad.length} uppgifter${totalEndast?` · ${tot} poäng`:''}</div>
+      </div>
+    </div>`;
   }
 
-  let h=`<div class="ph"><img src="${LOGO}" alt=""><div><h1>${t}</h1>
-    <div class="pm">${rad?rad+' · ':''}${sammanfattning}</div></div></div>`;
-
+  h+=`<div class="pdf-uppgifter">`;
   state.blad.forEach((x,i)=>{
-    const märke=exportMärke(x,totalEndast);
     const verktyg=hjalpmedel?utskriftsVerktyg(x):'';
-    const meta=(verktyg||märke)?`<span class="utskriftsmeta">${verktyg}${märke}</span>`:'';
-    h+=`<div class="pu"><div class="pn">${i+1}.</div><div>${meta}${x.t}</div></div>`;
+    const marke=totalEndast
+      ? `<span class="pp">(${totalpoang(x)} p)</span>`
+      : (state.visaPoäng
+          ? `<span class="pp">(${x.poang})</span>`
+          : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`);
+    h+=`<div class="pu pdf-pu">
+      <div class="pn">${i+1}.</div>
+      <div class="pdf-uppgiftstext">${x.t}</div>
+      <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>
+    </div>`;
   });
+  h+=`</div>`;
 
   if(facit){
     h+=`<div class="fk"><h1 style="font-size:14pt;margin-bottom:12pt">Facit</h1>`;
@@ -4453,41 +4516,47 @@ function skickaTillAnalys(){
 $('#tillAnalys').addEventListener('click',skickaTillAnalys);
 
 $('#expPdf').addEventListener('click',()=>{
-  const u=$('#utskrift');
-  u.innerHTML=bladHTML({
-    facit:$('#taMedFacit').checked,
-    hjalpmedel:$('#visaHjälpmedelExport').checked,
-    totalEndast:$('#visaTotalpoangExport').checked,
-    typ:dokumentTyp()
-  });
-  /* Renderar KaTeX i DOM innan elementets geometri mäts. */
-  renderKatex(u);
-
-  // Första frame: DOM + SVG läggs ut.
-  // Andra frame: trimma verklig geometri.
-  // Tredje frame: öppna utskriftsdialogen med färdig layout.
-  requestAnimationFrame(()=>{
-    const gammal=u.getAttribute('style');
-    u.style.cssText=[
-      'display:block',
-      'position:fixed',
-      'left:-100000px',
-      'top:0',
-      'width:180mm',
-      'visibility:hidden',
-      'pointer-events:none',
-      'background:#fff'
-    ].join(';');
+  try{
+    if(!state.blad.length){
+      alert('Lägg först till minst en uppgift i bladet.');
+      return;
+    }
+    const u=$('#utskrift');
+    u.innerHTML=bladHTML({
+      facit:$('#taMedFacit').checked,
+      hjalpmedel:$('#visaHjälpmedelExport').checked,
+      totalEndast:$('#visaTotalpoangExport').checked,
+      typ:dokumentTyp()
+    });
+    renderKatex(u);
 
     requestAnimationFrame(()=>{
-      trimmaUtskriftsFigurer(u);
-
-      if(gammal===null)u.removeAttribute('style');
-      else u.setAttribute('style',gammal);
-
-      requestAnimationFrame(()=>window.print());
+      try{
+        const gammal=u.getAttribute('style');
+        u.style.cssText=[
+          'display:block','position:fixed','left:-100000px','top:0',
+          'width:180mm','visibility:hidden','pointer-events:none','background:#fff'
+        ].join(';');
+        requestAnimationFrame(()=>{
+          try{
+            trimmaUtskriftsFigurer(u);
+            if(gammal===null)u.removeAttribute('style'); else u.setAttribute('style',gammal);
+            requestAnimationFrame(()=>window.print());
+          }catch(e){
+            console.error(e);
+            if(gammal===null)u.removeAttribute('style'); else u.setAttribute('style',gammal);
+            alert('PDF-exporten kunde inte förberedas: '+(e?.message||e));
+          }
+        });
+      }catch(e){
+        console.error(e);
+        alert('PDF-exporten kunde inte startas: '+(e?.message||e));
+      }
     });
-  });
+  }catch(e){
+    console.error(e);
+    alert('PDF-exporten kunde inte skapas: '+(e?.message||e));
+  }
 });
 
 /* ── Word-export · äkta OOXML/DOCX ───────────────────────────────────────
@@ -4795,7 +4864,7 @@ async function wordSkapaNativeDocx(){
   const datum=wordDatum($('#bDatum').value);
   const meta=wordProvMeta();
   const children=[];
-  const logoRun=await wordBildRunFranUrl(LOGO,docx,82);
+  const logoRun=await wordBildRunFranUrl(LOGO,docx,68);
   const noBorder=wordCellBorders(docx);
 
   if(typ==='prov'){
@@ -4804,11 +4873,11 @@ async function wordSkapaNativeDocx(){
       borders:noBorder,
       rows:[new TableRow({children:[
         new TableCell({
-          width:{size:46,type:WidthType.PERCENTAGE},borders:noBorder,verticalAlign:VerticalAlign.TOP,
+          width:{size:42,type:WidthType.PERCENTAGE},borders:noBorder,verticalAlign:VerticalAlign.TOP,
           children:[new Paragraph({children:[logoRun]})]
         }),
         new TableCell({
-          width:{size:54,type:WidthType.PERCENTAGE},borders:noBorder,verticalAlign:VerticalAlign.TOP,
+          width:{size:58,type:WidthType.PERCENTAGE},borders:noBorder,verticalAlign:VerticalAlign.TOP,
           children:[
             new Paragraph({spacing:{after:130},children:[
               new TextRun({text:'Namn: ',bold:true,size:22}),
@@ -4847,14 +4916,20 @@ async function wordSkapaNativeDocx(){
         insideHorizontal:{style:BorderStyle.NIL,size:0,color:'FFFFFF'},
         insideVertical:{style:BorderStyle.NIL,size:0,color:'FFFFFF'}
       },
-      rows:[new TableRow({children:[new TableCell({
-        shading:{fill:'E8E8E8',type:ShadingType.CLEAR},
-        margins:{top:100,bottom:90,left:90,right:90},
-        children:[new Paragraph({children:[new TextRun({
-          text:'REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.',
-          bold:true,size:19,font:'Arial'
-        })]})]
-      })]})]
+      rows:[new TableRow({
+        children:[new TableCell({
+          shading:{fill:'E4E4E4',type:ShadingType.CLEAR},
+          margins:{top:95,bottom:85,left:0,right:0},
+          children:[new Paragraph({
+            spacing:{before:0,after:0},
+            indent:{left:70,right:70},
+            children:[new TextRun({
+              text:'REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.',
+              bold:true,size:19,font:'Arial'
+            })]
+          })]
+        })]
+      })]
     }));
     children.push(new Paragraph({spacing:{after:80},children:[new TextRun('')]}));
   }else{
@@ -4949,7 +5024,7 @@ async function wordSkapaNativeDocx(){
 
   const doc=new Document({
     creator:'Uppgiftslabbet',
-    title,
+    title:titel,
     description:'Skapat i Uppgiftslabbet',
     sections:[{
       properties:{
