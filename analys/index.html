@@ -1028,7 +1028,8 @@ function renderWorkbar(){
 }
 function normalizeState(s){ const d=defaultState(); s=Object.assign(d,s||{}); s.grades=Object.assign({e:"",d:"",c:"",b:"",a:""},s.grades||{}); s.areas=Array.isArray(s.areas)?s.areas:[];
   s.tasks=(s.tasks||[]).map(t=>{ let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:p.id,max:p.max??""})); else parts=[{id:t.id,max:t.max??""}];
-    return {id:t.id,areas:Array.isArray(t.areas)?t.areas:[],level:t.level||null,weights:(t.weights&&typeof t.weights==="object")?t.weights:{},parts}; });
+    return {id:t.id,areas:Array.isArray(t.areas)?t.areas:[],level:t.level||null,weights:(t.weights&&typeof t.weights==="object")?t.weights:{},parts,
+      source:(t.source&&typeof t.source==="object")?t.source:null}; });
   s.students=(s.students||[]).map(st=>({id:st.id,name:st.name||"",scores:st.scores||{},absent:!!st.absent,comment:st.comment||""})); return s; }
 
 /* ===== 2. HJÄLP ===== */
@@ -2076,9 +2077,9 @@ function buildPrint(){
 function printStudents(){ if(!validTasks().length||!activeStudents().length){ alert("Det finns inga elevresultat att skriva ut."); return; } buildPrint(); window.print(); }
 
 /* ===== Provfil + bibliotek ===== */
-function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,max:p.max}))}))}; }
+function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,max:p.max})),source:t.source||null}))}; }
 function applyTestData(d){ state.testName=d.testName||""; state.grades=Object.assign({e:"",d:"",c:"",b:"",a:""},d.grades||{}); state.areas=d.areas||[]; nextId=1;
-  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,max:p.max??""})); else parts=[{id:nextId++,max:t.max??""}]; return {id:tid,areas:t.areas||[],level:t.level||null,weights:t.weights||{},parts}; });
+  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,max:p.max??""})); else parts=[{id:nextId++,max:t.max??""}]; return {id:tid,areas:t.areas||[],level:t.level||null,weights:t.weights||{},parts,source:t.source||null}; });
   renderAll(); save(); }
 function saveTestFile(){ const blob=new Blob([JSON.stringify(currentTestData(),null,2)],{type:"application/json"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=((state.testName||"prov").replace(/[^\w åäöÅÄÖ-]/g,"").trim()||"prov")+".prov.json"; a.click(); URL.revokeObjectURL(a.href); }
 function loadTestFile(file){ const r=new FileReader(); r.onload=()=>{ try{ applyTestData(JSON.parse(r.result)); }catch(e){ alert("Filen kunde inte läsas. Är det en sparad provmall?"); } }; r.readAsText(file); }
@@ -2175,9 +2176,58 @@ function wire(){
   $("#importAllInput").addEventListener("change",e=>{ if(e.target.files[0]) importAllFile(e.target.files[0]); e.target.value=""; });
     $("#themeToggle").addEventListener("click",()=>applyTheme(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"));
 }
+const UPPGIFTSLABBET_TRANSFER_KEY="uppgiftslabbet_analysis_transfer_v1";
+
+function hamtaUppgiftslabbetOverforing(){
+  let raw=null;
+  try{ raw=localStorage.getItem(UPPGIFTSLABBET_TRANSFER_KEY); }catch(e){}
+  if(!raw) return null;
+  try{
+    const p=JSON.parse(raw);
+    if(!p || p.schema!=="uppgiftslabbet-analysis-transfer-v1" || !p.data || !Array.isArray(p.data.tasks)) return null;
+    return p;
+  }catch(e){ return null; }
+}
+function rensaUppgiftslabbetOverforing(){
+  try{ localStorage.removeItem(UPPGIFTSLABBET_TRANSFER_KEY); }catch(e){}
+}
+function importeraFranUppgiftslabbet(p){
+  if(!p?.data?.tasks?.length) return false;
+
+  /* Om klass och kurs skickades med väljs motsvarande arbetsyta. Finns den inte
+     skapas den automatiskt. Utan klass används den klass som redan är vald. */
+  const cls=(p.className||"").trim(), course=(p.courseName||"").trim();
+  let gid=work.curGid;
+  if(cls){
+    let g=work.groups.find(x=>
+      (x.cls||"").trim().toLowerCase()===cls.toLowerCase() &&
+      (x.course||"").trim().toLowerCase()===course.toLowerCase()
+    );
+    if(!g){
+      g={id:newId("g"),cls,course};
+      work.groups.push(g);
+    }
+    gid=g.id;
+  }else if(!gid){
+    if(!work.groups.length) work.groups.push({id:newId("g"),cls:"Namnlös klass",course});
+    gid=work.groups[0].id;
+  }
+
+  const st=normalizeState(Object.assign(defaultState(),p.data,{students:[]}));
+  createTest(gid,st,st.testName||"Prov från Uppgiftslabbet");
+  rensaUppgiftslabbetOverforing();
+  switchTab("build");
+  renderLibrary(); renderWorkbar(); renderPipeline();
+  return true;
+}
+
 function init(){
   const fresh=loadWork();
   wire(); initTheme();
+
+  const incoming=hamtaUppgiftslabbetOverforing();
+  if(incoming && importeraFranUppgiftslabbet(incoming)) return;
+
   const t=curTest();
   if(t){ openTest(t.id); }
   else {
