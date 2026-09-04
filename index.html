@@ -935,6 +935,14 @@ table.data th{background:var(--sunken);font-weight:600}
 .bladtopp{padding:20px 18px 16px;border-bottom:1px solid var(--line-2)}
 .bladtopp h2{margin:0 0 13px;font-size:15px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
 .fält{display:flex;flex-direction:column;gap:8px}
+.bladtyp-rad{display:flex;align-items:center;gap:8px;margin-bottom:2px}
+.bladtyp-rad label{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.bladtyp-rad select{
+  flex:1;border:1px solid transparent;background:var(--sunken);border-radius:10px;
+  padding:8px 10px;font-size:12.5px;font-weight:650;color:var(--ink);cursor:pointer
+}
+.bladtyp-rad select:focus{outline:none;border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring)}
+
 .fält input{border:1px solid transparent;background:var(--sunken);border-radius:11px;padding:10px 13px;
   font-size:13.5px;color:var(--ink);transition:background .15s,border-color .15s,box-shadow .15s}
 .fält input::placeholder{color:var(--muted)}
@@ -2270,63 +2278,12 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
   .kurskort:hover .kk-action{transform:none!important}
 }
 
-/* ── Mörkt tema + temaknapp ── */
-.kv-theme-toggle{
-  margin-left:auto;width:44px;height:44px;flex:0 0 44px;padding:0;
-  display:grid;place-items:center;border:1px solid rgba(43,37,39,.09);
-  border-radius:13px;background:rgba(255,255,255,.88);color:var(--ink-2);
-  box-shadow:0 1px 2px rgba(43,37,39,.04),0 7px 20px rgba(43,37,39,.045);
-  cursor:pointer;transition:background .18s,border-color .18s,color .18s,transform .08s,box-shadow .18s;
-}
-.kv-theme-toggle:hover{background:#fff;border-color:rgba(180,49,35,.20);color:var(--ed);box-shadow:0 7px 22px rgba(43,37,39,.08)}
-.kv-theme-toggle:active{transform:translateY(1px)}
-.kv-theme-toggle:focus-visible{outline:2px solid var(--ed);outline-offset:3px}
-.kv-theme-toggle svg{width:20px;height:20px;display:block}
-.kv-theme-toggle .sun-icon{display:none}
-:root[data-theme="dark"] .kv-theme-toggle .moon-icon{display:none}
-:root[data-theme="dark"] .kv-theme-toggle .sun-icon{display:block}
-
-:root[data-theme="dark"]{
-  --canvas:#1F1B1C;--surface:#292426;--sunken:#332D30;
-  --ink:#F2EEEF;--ink-2:#C1B9BC;--muted:#948B8F;--line:#40383B;--line-2:#342E31;
-  --ed:#D66D61;--ed-dark:#F08A7E;--ed-tint:#452A29;--ed-ring:rgba(214,109,97,.20);
-  --nE:#55B894;--nC:#78A0D0;--nA:#B88ACB;
-  --nE-bg:#193A30;--nC-bg:#26364B;--nA-bg:#392C41;
-  --sidebar-bg:#292426;--sidebar-bg-2:#292426;--sidebar-hover:#332D30;--sidebar-line:#40383B;
-}
-:root[data-theme="dark"] body{background:var(--canvas);color:var(--ink)}
-:root[data-theme="dark"] .kursval{
-  background:
-    radial-gradient(900px 520px at 8% -10%,rgba(214,109,97,.08),transparent 66%),
-    radial-gradient(720px 520px at 96% 104%,rgba(255,255,255,.025),transparent 68%),
-    #1F1B1C;
-}
-:root[data-theme="dark"] .kv-logo-shell,
-:root[data-theme="dark"] .kv-theme-toggle{background:#292426;border-color:#40383B}
-:root[data-theme="dark"] .kv-logo-shell img{background:#fff;border-radius:11px}
-:root[data-theme="dark"] .kv-brandname,
-:root[data-theme="dark"] .kk-namn,
-:root[data-theme="dark"] .kv-designhero-copy h2{color:#F2EEEF}
-:root[data-theme="dark"] .kurskort{background:rgba(41,36,38,.92);border-color:#40383B;color:var(--ink)}
-:root[data-theme="dark"] .kurskort:hover{background:#302A2D;border-color:rgba(214,109,97,.30);box-shadow:0 16px 48px rgba(0,0,0,.20)}
-:root[data-theme="dark"] .kk-number{color:#3A3336}
-:root[data-theme="dark"] .kurskort:hover .kk-number{color:#493538}
-:root[data-theme="dark"] .kk-tag{background:#332D30;border-color:#443B3F;color:#B8AFB3}
-:root[data-theme="dark"] .kurskort:hover .kk-tag{background:#393235;border-color:#554448;color:#D0C8CB}
-:root[data-theme="dark"] .kk-action{background:#452A29;border-color:#5A3633;color:#E78378}
-:root[data-theme="dark"] .top{background:var(--surface);border-color:var(--line)}
-:root[data-theme="dark"] input,
-:root[data-theme="dark"] select,
-:root[data-theme="dark"] textarea{background:#211D1F;color:var(--ink);border-color:var(--line)}
-@media(max-width:520px){
-  .kv-theme-toggle{width:40px;height:40px;flex-basis:40px;border-radius:12px}
-}
-
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.js"></script>
 </head>
 <body class="password-locked">
 
@@ -2410,15 +2367,6 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
           <span class="kv-brandmeta">Erik Dahlbergsgymnasiets stora uppgiftsbank</span>
         </span>
       </div>
-      <button class="kv-theme-toggle" id="kvThemeToggle" type="button" aria-label="Byt till mörkt tema" title="Byt till mörkt tema">
-        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.8A8.6 8.6 0 1 1 11.2 3a6.7 6.7 0 0 0 9.8 9.8Z"/>
-        </svg>
-        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"/>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/>
-        </svg>
-      </button>
     </header>
 
     <section class="kv-designhero" aria-label="Introduktion">
@@ -2537,7 +2485,13 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
 
   <aside class="höger">
     <div class="bladtopp">
-      <h2>Övningsblad</h2>
+      <div class="bladtyp-rad">
+        <label for="bladTyp">Dokument</label>
+        <select id="bladTyp" aria-label="Välj dokumenttyp">
+          <option value="ovning" selected>Övningsblad</option>
+          <option value="prov">Prov</option>
+        </select>
+      </div>
       <div class="fält">
         <input id="bTitel" value="Övningsblad" aria-label="Rubrik">
         <div class="rad">
@@ -2569,6 +2523,7 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
 
     <div class="bladfot">
       <label class="växel"><input type="checkbox" id="taMedFacit" checked> Ta med facit</label>
+      <label class="växel"><input type="checkbox" id="visaTotalpoangExport"> Visa bara totalpoäng</label>
       <label class="växel"><input type="checkbox" id="visaHjälpmedelExport" checked> Visa symbol för digitalt hjälpmedel</label>
       <div class="exportrad">
         <button class="knapp primär" id="expPdf">
@@ -2997,7 +2952,7 @@ function uppdateraKursRubriker(){
   if(!AKTIV)return;
   const namn=kursnamnMedSpår(), n=variantBank().length;
   $('#banktal').textContent=`${namn} · ${n} uppgifter`;
-  $('#bTitel').value=`Övningsblad ${namn}`;
+  $('#bTitel').value=`${dokumentTyp()==='prov'?'Prov':'Övningsblad'} ${namn}`;
 }
 
 /* Strukturerar ett facit.
@@ -4351,29 +4306,54 @@ function utskriftsVerktyg(x){
   }
   return delar.length?`<span class="utskriftsverktyg">${delar.join('')}</span>`:'';
 }
-function bladHTML({facit,hjalpmedel=true}){
-  const t=$('#bTitel').value||'Övningsblad', kl=$('#bKlass').value, da=$('#bDatum').value;
-  const vp=state.visaPoäng;
+
+function dokumentTyp(){ return $('#bladTyp')?.value==='prov'?'prov':'ovning'; }
+function totalpoang(x){
+  const m=String(x?.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+  return m ? (+m[1]+ +m[2]+ +m[3]) : 0;
+}
+function exportMärke(x,totalEndast=false){
+  if(totalEndast) return `<span class="pp">${totalpoang(x)} p</span>`;
+  if(state.visaPoäng) return `<span class="pp">${x.poang}</span>`;
+  return `<span class="nivåmärke ${x.niva}">${x.niva}</span>`;
+}
+
+function bladHTML({facit,hjalpmedel=true,totalEndast=false,typ=dokumentTyp()}){
+  const fallback=typ==='prov'?'Prov':'Övningsblad';
+  const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
   const p={E:0,C:0,A:0}, antalN={E:0,C:0,A:0};
-  state.blad.forEach(x=>{const m=x.poang.match(/(\d+)\/(\d+)\/(\d+)/);p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];antalN[x.niva]++;});
+  state.blad.forEach(x=>{
+    const m=String(x.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+    if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
+    if(antalN[x.niva]!=null) antalN[x.niva]++;
+  });
   const tot=p.E+p.C+p.A;
   const rad=[AKTIV?AKTIV.titel:'',kl,da].filter(Boolean).join(' · ');
-  const sammanfattning=vp
-    ? `Max ${tot} poäng (${p.E}/${p.C}/${p.A}) · ${state.blad.length} uppgifter`
-    : `${state.blad.length} uppgifter (${antalN.E} E / ${antalN.C} C / ${antalN.A} A)`;
+
+  let sammanfattning='';
+  if(typ==='prov'){
+    sammanfattning=totalEndast
+      ? `Max ${tot} poäng · ${state.blad.length} uppgifter`
+      : (state.visaPoäng
+          ? `Max ${tot} poäng (${p.E}/${p.C}/${p.A}) · ${state.blad.length} uppgifter`
+          : `${state.blad.length} uppgifter (${antalN.E} E / ${antalN.C} C / ${antalN.A} A)`);
+  }else{
+    sammanfattning=`${state.blad.length} uppgifter${totalEndast?` · ${tot} poäng`:''}`;
+  }
+
   let h=`<div class="ph"><img src="${LOGO}" alt=""><div><h1>${t}</h1>
     <div class="pm">${rad?rad+' · ':''}${sammanfattning}</div></div></div>`;
+
   state.blad.forEach((x,i)=>{
-    const märke=vp
-      ? `<span class="pp">${x.poang}</span>`
-      : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`;
+    const märke=exportMärke(x,totalEndast);
     const verktyg=hjalpmedel?utskriftsVerktyg(x):'';
     const meta=(verktyg||märke)?`<span class="utskriftsmeta">${verktyg}${märke}</span>`:'';
     h+=`<div class="pu"><div class="pn">${i+1}.</div><div>${meta}${x.t}</div></div>`;
   });
+
   if(facit){
     h+=`<div class="fk"><h1 style="font-size:14pt;margin-bottom:12pt">Facit</h1>`;
-    state.blad.forEach((x,i)=>{ h+=`<div class="fu"><b>${i+1}.</b> ${LOS(x.s)}</div>`; });
+    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${i+1}.</b><div>${LOS(x.s)}</div></div>`;});
     h+=`</div>`;
   }
   return h;
@@ -4475,7 +4455,12 @@ $('#tillAnalys').addEventListener('click',skickaTillAnalys);
 
 $('#expPdf').addEventListener('click',()=>{
   const u=$('#utskrift');
-  u.innerHTML=bladHTML({facit:$('#taMedFacit').checked,hjalpmedel:$('#visaHjälpmedelExport').checked});
+  u.innerHTML=bladHTML({
+    facit:$('#taMedFacit').checked,
+    hjalpmedel:$('#visaHjälpmedelExport').checked,
+    totalEndast:$('#visaTotalpoangExport').checked,
+    typ:dokumentTyp()
+  });
   /* Renderar KaTeX i DOM innan elementets geometri mäts. */
   renderKatex(u);
 
@@ -4505,127 +4490,370 @@ $('#expPdf').addEventListener('click',()=>{
     });
   });
 });
-$('#expWord').addEventListener('click',()=>{
-  const temp=document.createElement('div');
-  temp.style.cssText='position:fixed;left:-100000px;top:0;width:180mm;background:#fff';
-  temp.innerHTML=bladHTML({facit:$('#taMedFacit').checked,hjalpmedel:$('#visaHjälpmedelExport').checked});
-  document.body.appendChild(temp);
-  /* Rendera KaTeX medan temp-elementet är i DOM:en så att HTML-resultatet */
-  /* innehåller KaTeX-spans som fungerar utan externa resurser i Word        */
-  renderKatex(temp);
-  trimmaUtskriftsFigurer(temp);
-  /* Word förstår inte KaTeX-CSS. Ersätt .katex-element med sin textrepresentation */
-  temp.querySelectorAll('.katex').forEach(el=>{
-    const ann=el.querySelector('annotation[encoding="application/x-tex"]');
-    if(ann){
-      /* Inline math */
-      const span=document.createElement('span');
-      span.style.fontStyle='italic';
-      span.textContent=ann.textContent;
-      el.replaceWith(span);
-    }
-  });
-  temp.querySelectorAll('.katex-display').forEach(el=>{
-    const ann=el.querySelector('annotation[encoding="application/x-tex"]');
-    if(ann){
-      const p=document.createElement('p');
-      p.style.cssText='text-align:center;font-style:italic;margin:6pt 0';
-      p.textContent=ann.textContent;
-      el.replaceWith(p);
-    }
-  });
-  const kropp=temp.innerHTML;
-  temp.remove();
-  const doc=`<html xmlns:o="urn:schemas-microsoft-com:office:office"
-    xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
-    <head><meta charset="utf-8"><title>${$('#bTitel').value}</title>
-    <style>
-      @page{size:A4;margin:2cm}
-      body{font-family:Verdana,Arial,sans-serif;font-size:11pt;line-height:1.6;color:#000}
-      .ph{border-bottom:2px solid #000;padding-bottom:8pt;margin-bottom:18pt}
-      .ph img{height:38px}
-      h1{font-size:16pt;margin:6pt 0 0}
-      .pm{font-size:9.5pt;color:#444}
-      .pu{margin-bottom:14pt}
-      .pn{font-weight:bold;float:left;width:26pt}
-      .utskriftsmeta{float:right;display:inline-flex;align-items:center;gap:5pt;margin-left:10pt;white-space:nowrap}
-      .utskriftsverktyg{display:inline-flex;align-items:center;gap:3.5pt;color:#444}
-      .utskriftsikon{display:inline-flex;align-items:center;justify-content:center;width:14pt;height:14pt}
-      .utskriftsikon svg{display:block;width:13pt;height:13pt}
-      .pp{float:none;font-size:9.5pt;color:#444}
-      .nivåmärke{float:none;margin-left:0;font-weight:bold;font-size:9pt;letter-spacing:.3pt;
-        border-radius:4pt;padding:1.5pt 7pt}
-      .nivåmärke.E{background:#E9F3EF;color:#0F6B4F}
-      .nivåmärke.C{background:#EAF0F8;color:#2A5D9E}
-      .nivåmärke.A{background:#F2ECF6;color:#6E3B86}
-      ol{margin:6pt 0 6pt 26pt}
-      li{margin-bottom:3pt}
-      table.data{border-collapse:collapse;font-size:10pt;margin:6pt 0}
-      table.data th,table.data td{border:1px solid #999;padding:3pt 9pt;text-align:right}
-      table.data th{background:#eee}
-      .fig img,.fig svg{max-width:100%;max-height:300pt;width:auto;height:auto}
 
-      .fig[style*="width"]{display:block!important;max-width:none!important}
-      .fig[style*="width"] img,.fig[style*="width"] svg{max-width:none!important;width:100%!important;height:auto!important}
-      .fig[data-bildskala]{display:block!important;width:min(var(--bildbredd,450pt),100%)!important;max-width:100%!important}
-      .fig[data-bildskala] img,.fig[data-bildskala] svg{width:100%!important;max-width:none!important;height:auto!important}
-      .katex{font-size:1.05em}.katex-display{margin:.4em 0}
-      .fk{page-break-before:always;border-top:2px solid #000;padding-top:12pt}
-      .fu{margin-bottom:11pt;font-size:10pt}
-      .steg{margin:3pt 0 3pt 24pt}
-      .stegnr{font-weight:bold;color:#B43123;margin-right:8pt}
-      .komm{margin-left:24pt;color:#333}
-    
+/* ── Word-export · provlayout ────────────────────────────────────────────
+   Layouten följer skolans provmall: logotyp + namn/klass, tydlig provrubrik,
+   datum, informationsblock, instruktionsrad och en tunn skiljelinje mellan
+   uppgifterna. Hjälpmedel anges inte i provhuvudet; eventuella task-specifika
+   hjälpmedelssymboler styrs fortfarande av exportens befintliga toggle. */
 
-/* ── Statusstämpel · stor diagonal över hela kortet ── */
-.kk-byggstamp{
-  position:absolute!important;
-  z-index:6!important;
-  left:-14%!important;
-  right:auto!important;
-  top:48%!important;
-  width:128%!important;
-  padding:11px 0 10px!important;
-  border:0!important;
-  border-top:2px solid rgba(142,37,25,.55)!important;
-  border-bottom:2px solid rgba(142,37,25,.55)!important;
-  border-radius:0!important;
-  background:rgba(255,247,244,.90)!important;
-  color:#8E2519!important;
-  box-shadow:0 3px 14px rgba(142,37,25,.10)!important;
-  font-family:var(--mono)!important;
-  font-size:13px!important;
-  font-weight:700!important;
-  line-height:1.05!important;
-  letter-spacing:.18em!important;
-  text-align:center!important;
-  text-transform:uppercase!important;
-  white-space:nowrap!important;
-  pointer-events:none!important;
-  opacity:.94!important;
-  transform:translateY(-50%) rotate(-11deg)!important;
-  transform-origin:center center!important;
+function wordEsc(s){
+  return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
-.kurskort:hover .kk-byggstamp{opacity:1!important}
-@media(max-width:620px){
-  .kk-byggstamp{
-    left:-18%!important;
-    width:136%!important;
-    top:49%!important;
-    padding:10px 0 9px!important;
-    font-size:11.5px!important;
-    letter-spacing:.15em!important;
-    transform:translateY(-50%) rotate(-10deg)!important;
+function wordDatum(raw){
+  if(!raw) return '';
+  const d=new Date(raw+'T12:00:00');
+  if(Number.isNaN(d.getTime())) return raw;
+  const veckodag=new Intl.DateTimeFormat('sv-SE',{weekday:'long'}).format(d);
+  const manad=new Intl.DateTimeFormat('sv-SE',{month:'long'}).format(d);
+  const v=veckodag.charAt(0).toUpperCase()+veckodag.slice(1);
+  return `${v} den ${d.getDate()} ${manad} ${d.getFullYear()}`;
+}
+function wordProvMeta(){
+  const p={E:0,C:0,A:0};
+  state.blad.forEach(x=>{
+    const m=String(x.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+    if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
+  });
+  return {p,tot:p.E+p.C+p.A};
+}
+function wordTaskMeta(x,totalEndast=false){
+  if(totalEndast) return `<span class="word-points">(${totalpoang(x)} p)</span>`;
+  if(state.visaPoäng) return `<span class="word-points">(${wordEsc(x.poang)})</span>`;
+  return `<span class="word-level word-${wordEsc((x.niva||'E').split('/')[0])}">${wordEsc(x.niva||'')}</span>`;
+}
+function wordProvKropp({facit=false,hjalpmedel=true,totalEndast=false,typ=dokumentTyp()}={}){
+  const fallback=typ==='prov'?'Prov':'Övningsblad';
+  const titel=($('#bTitel').value||fallback).trim();
+  const klass=($('#bKlass').value||'').trim();
+  const datum=wordDatum($('#bDatum').value);
+  const meta=wordProvMeta();
+
+  let h=`<div class="word-page">`;
+
+  if(typ==='prov'){
+    h+=`
+      <table class="word-top" role="presentation">
+        <tr>
+          <td class="word-logo"><img src="${LOGO}" alt="Erik Dahlbergsgymnasiet"></td>
+          <td class="word-ident">
+            <div class="word-ident-row"><b>Namn:</b><span class="word-line">&nbsp;</span></div>
+            <div class="word-ident-row"><b>Klass:</b><span class="word-line">${wordEsc(klass)}</span></div>
+          </td>
+        </tr>
+      </table>
+
+      <h1 class="word-title">${wordEsc(titel)}</h1>
+      ${datum?`<div class="word-date">${wordEsc(datum)}</div>`:''}
+      <div class="word-rule"></div>
+
+      <div class="word-notice">BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER
+      KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS
+      SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.</div>
+
+      <div class="word-max"><b>MAX:</b> ${meta.tot} POÄNG</div>
+      ${totalEndast?'':`<div class="word-distribution">Poängfördelning: ${meta.p.E} E &nbsp;·&nbsp; ${meta.p.C} C &nbsp;·&nbsp; ${meta.p.A} A</div>`}
+
+      <div class="word-instruction">REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.</div>`;
+  }else{
+    h+=`
+      <table class="word-sheet-top" role="presentation">
+        <tr>
+          <td><img src="${LOGO}" alt="Erik Dahlbergsgymnasiet"></td>
+          <td class="word-sheet-head">
+            <h1>${wordEsc(titel)}</h1>
+            <div class="word-sheet-meta">${[AKTIV?AKTIV.titel:'',klass,datum].filter(Boolean).map(wordEsc).join(' · ')}</div>
+            ${totalEndast?`<div class="word-sheet-count">${state.blad.length} uppgifter · ${meta.tot} poäng</div>`:`<div class="word-sheet-count">${state.blad.length} uppgifter</div>`}
+          </td>
+        </tr>
+      </table>`;
+  }
+
+  h+=`<div class="word-tasks">`;
+  state.blad.forEach((x,i)=>{
+    const verktyg=hjalpmedel?utskriftsVerktyg(x):'';
+    h+=`<div class="word-task">
+      <table class="word-task-grid" role="presentation">
+        <tr>
+          <td class="word-num">${i+1}.</td>
+          <td class="word-content">${x.t}</td>
+          <td class="word-task-meta">${verktyg}${wordTaskMeta(x,totalEndast)}</td>
+        </tr>
+      </table>
+    </div>`;
+  });
+  h+=`</div>`;
+
+  if(facit){
+    h+=`<div class="word-answer-key"><h1>Facit</h1>`;
+    state.blad.forEach((x,i)=>{
+      h+=`<div class="word-answer"><b>${i+1}.</b> ${LOS(x.s)}</div>`;
+    });
+    h+=`</div>`;
+  }
+  return h+`</div>`;
+}
+
+function wordBildDataUrl(blob){
+  return new Promise((ok,fel)=>{
+    const r=new FileReader();
+    r.onload=()=>ok(r.result);
+    r.onerror=fel;
+    r.readAsDataURL(blob);
+  });
+}
+async function wordSvgTillPng(svg){
+  const rect=svg.getBoundingClientRect();
+  const vb=svg.viewBox?.baseVal;
+  let w=Math.max(40,Math.round(rect.width||vb?.width||500));
+  let h=Math.max(30,Math.round(rect.height||vb?.height||300));
+  const maxW=1300, scale=Math.min(2.2,maxW/w);
+  const cw=Math.max(1,Math.round(w*scale)), ch=Math.max(1,Math.round(h*scale));
+
+  const klon=svg.cloneNode(true);
+  if(!klon.getAttribute('xmlns')) klon.setAttribute('xmlns','http://www.w3.org/2000/svg');
+  klon.setAttribute('width',w);
+  klon.setAttribute('height',h);
+  const xml=new XMLSerializer().serializeToString(klon);
+  const blob=new Blob([xml],{type:'image/svg+xml;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+
+  try{
+    const im=new Image();
+    await new Promise((ok,fel)=>{im.onload=ok;im.onerror=fel;im.src=url;});
+    const c=document.createElement('canvas');
+    c.width=cw;c.height=ch;
+    const ctx=c.getContext('2d');
+    ctx.fillStyle='#fff';ctx.fillRect(0,0,cw,ch);
+    ctx.drawImage(im,0,0,cw,ch);
+    return {src:c.toDataURL('image/png'),width:w,height:h};
+  }finally{
+    URL.revokeObjectURL(url);
   }
 }
-</style></head><body>${kropp}</body></html>`;
-  const namn=($('#bTitel').value||'Övningsblad').replace(/[^\wåäöÅÄÖ -]/g,'').trim()||'Övningsblad';
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob(['\ufeff'+doc],{type:'application/msword'}));
-  a.download=namn+'.doc';
-  document.body.appendChild(a); a.click();
-  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},400);
-});
+async function wordBaddaInBilder(root){
+  /* Inline-SVG är huvudorsaken till att figurer tidigare försvann i Word.
+     Rasterisera dem till skarpa PNG-bilder innan DOCX-filen byggs. */
+  for(const svg of [...root.querySelectorAll('svg')]){
+    try{
+      const png=await wordSvgTillPng(svg);
+      const img=document.createElement('img');
+      img.src=png.src;
+      img.alt=svg.getAttribute('aria-label')||'Figur';
+      img.style.cssText=`width:${Math.round(png.width)}px;max-width:100%;height:auto;display:inline-block;vertical-align:middle`;
+      svg.replaceWith(img);
+    }catch(e){
+      /* Om en enstaka ikon inte kan rasteriseras ska resten av provet ändå exporteras. */
+      svg.remove();
+    }
+  }
+
+  /* Gör även vanliga bilder självständiga från webbplatsens URL. */
+  for(const img of [...root.querySelectorAll('img')]){
+    if(!img.src || img.src.startsWith('data:')) continue;
+    try{
+      const svar=await fetch(img.src);
+      if(!svar.ok) continue;
+      img.src=await wordBildDataUrl(await svar.blob());
+    }catch(e){}
+  }
+}
+function wordForenklaMatematik(root){
+  /* KaTeX innehåller semantisk MathML. Behåll MathML när den finns i stället
+     för att exportera den synliga KaTeX-DOM:en med hundratals CSS-klasser. */
+  root.querySelectorAll('.katex').forEach(el=>{
+    const math=el.querySelector('.katex-mathml math');
+    if(math){
+      const clone=math.cloneNode(true);
+      el.replaceWith(clone);
+    }else{
+      const ann=el.querySelector('annotation[encoding="application/x-tex"]');
+      if(ann){
+        const span=document.createElement('span');
+        span.className='word-math-fallback';
+        span.textContent=ann.textContent;
+        el.replaceWith(span);
+      }
+    }
+  });
+}
+function wordDokumentHTML(kropp,titel){
+  return `<!DOCTYPE html>
+  <html xmlns:o="urn:schemas-microsoft-com:office:office"
+        xmlns:w="urn:schemas-microsoft-com:office:word"
+        xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+        xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <meta charset="utf-8">
+    <title>${wordEsc(titel)}</title>
+    <style>
+      @page WordSection1{
+        size:595.3pt 841.9pt;
+        margin:42pt 46pt 48pt 46pt;
+      }
+      div.WordSection1{page:WordSection1}
+      body{
+        margin:0;
+        color:#111;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:10.8pt;
+        line-height:1.28;
+      }
+      .word-page{width:100%}
+      table{border-collapse:collapse}
+      .word-top{width:100%;margin:0 0 24pt}
+      .word-top td{border:0;padding:0;vertical-align:top}
+      .word-logo{width:46%}
+      .word-logo img{width:82px;height:auto;display:block}
+      .word-ident{width:54%;padding-top:2pt!important}
+      .word-ident-row{display:block;margin:0 0 13pt;font-size:10.8pt;white-space:nowrap}
+      .word-ident-row b{display:inline-block;width:38pt}
+      .word-line{display:inline-block;width:160pt;min-height:13pt;border-bottom:0.8pt solid #111;padding:0 2pt 1pt}
+      .word-title{font-size:18pt;line-height:1.15;margin:0 0 17pt;font-weight:700}
+      .word-sheet-top{width:100%;margin:0 0 20pt;border-bottom:1.1pt solid #222}
+      .word-sheet-top td{border:0;padding:0 0 12pt;vertical-align:top}
+      .word-sheet-top td:first-child{width:88pt}
+      .word-sheet-top img{width:70px;height:auto;display:block}
+      .word-sheet-head h1{font-size:18pt;line-height:1.15;margin:2pt 0 6pt;font-weight:700}
+      .word-sheet-meta{font-size:9.5pt;color:#333;margin-bottom:3pt}
+      .word-sheet-count{font-size:8.8pt;color:#555}
+
+      .word-date{font-size:11.5pt;font-weight:700;margin:0 0 13pt}
+      .word-rule{border-top:1.1pt solid #111;height:0;margin:0 0 20pt}
+      .word-notice{font-size:8.2pt;line-height:1.35;text-transform:uppercase;margin:0 0 13pt;max-width:98%}
+      .word-max{font-size:9.3pt;text-transform:uppercase;margin-top:2pt}
+      .word-distribution{font-size:8.8pt;margin:2pt 0 26pt;color:#222}
+      .word-instruction{
+        font-size:9.5pt;font-weight:700;text-transform:uppercase;
+        background:#E8E8E8;border-top:1.1pt solid #222;border-bottom:1.1pt solid #222;
+        padding:8pt 6pt 7pt;margin:0 0 14pt;
+      }
+      .word-task{
+        padding:0 0 10pt;margin:0 0 10pt;
+        border-bottom:0.55pt solid #B8B8B8;
+        page-break-inside:avoid;
+      }
+      .word-task-grid{width:100%;table-layout:fixed}
+      .word-task-grid td{border:0;padding:0;vertical-align:top}
+      .word-num{width:25pt;padding:1pt 8pt 0 1pt!important;font-size:10.5pt}
+      .word-content{width:auto;padding-right:7pt!important}
+      .word-task-meta{width:67pt;text-align:right;white-space:nowrap;padding-top:1pt!important;font-size:9.5pt}
+      .word-points{font-size:9.7pt}
+      .word-level{display:inline-block;font-weight:700;font-size:8.7pt;padding:1pt 5pt;border:0.6pt solid #bbb}
+      .word-E{color:#0F6B4F}.word-C{color:#2A5D9E}.word-A{color:#6E3B86}
+      .word-content p{margin:0 0 5pt}
+      .word-content p:last-child{margin-bottom:0}
+      .word-content ol,.word-content ul{margin:4pt 0 5pt 20pt;padding-left:12pt}
+      .word-content li{margin:0 0 3pt}
+      .word-content table.data{border-collapse:collapse;font-size:9.5pt;margin:7pt 0}
+      .word-content table.data th,.word-content table.data td{border:0.7pt solid #777;padding:3pt 7pt}
+      .word-content table.data th{background:#F0F0F0;font-weight:700}
+      .fig{display:block!important;margin:7pt auto 5pt!important;text-align:center;max-width:100%!important}
+      .fig img{display:block;margin:0 auto;max-width:100%!important;height:auto!important}
+      .utskriftsverktyg{display:inline-block;margin-right:5pt;vertical-align:middle}
+      .utskriftsikon{display:inline-block;width:13pt;height:13pt;vertical-align:middle;margin-right:2pt}
+      .utskriftsikon img{max-width:13pt!important;max-height:13pt!important;width:13pt!important;height:13pt!important}
+      math{font-family:'Cambria Math','Times New Roman',serif;font-size:11pt}
+      .word-math-fallback{font-family:'Cambria Math','Times New Roman',serif;font-style:italic}
+      .word-answer-key{page-break-before:always}
+      .word-answer-key h1{font-size:16pt;margin:0 0 14pt}
+      .word-answer{padding:0 0 8pt;margin:0 0 8pt;border-bottom:0.45pt solid #CCC;font-size:10pt}
+      .steg{margin:3pt 0 3pt 20pt}
+      .stegnr{font-weight:700;color:#B43123;margin-right:6pt}
+      .komm{margin-left:20pt;color:#333}
+    </style>
+  </head>
+  <body><div class="WordSection1">${kropp}</div></body></html>`;
+}
+async function wordLaddaDocxBibliotek(){
+  if(window.htmlDocx?.asBlob) return true;
+  return await new Promise(resolve=>{
+    const bef=[...document.scripts].find(s=>/html-docx-js/.test(s.src||''));
+    if(bef){
+      let n=0;
+      const timer=setInterval(()=>{
+        n++;
+        if(window.htmlDocx?.asBlob){clearInterval(timer);resolve(true);}
+        else if(n>40){clearInterval(timer);resolve(false);}
+      },100);
+      return;
+    }
+    const s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.js';
+    s.onload=()=>resolve(Boolean(window.htmlDocx?.asBlob));
+    s.onerror=()=>resolve(false);
+    document.head.appendChild(s);
+  });
+}
+async function exporteraWord(){
+  if(!state.blad.length){alert('Lägg först till minst en uppgift i bladet.');return;}
+  const knapp=$('#expWord'),gammalText=knapp.innerHTML;
+  knapp.disabled=true;
+  knapp.textContent='Skapar Word…';
+
+  const temp=document.createElement('div');
+  temp.style.cssText='position:fixed;left:-100000px;top:0;width:670px;background:#fff;color:#000';
+  temp.innerHTML=wordProvKropp({
+    facit:$('#taMedFacit').checked,
+    hjalpmedel:$('#visaHjälpmedelExport').checked,
+    totalEndast:$('#visaTotalpoangExport').checked,
+    typ:dokumentTyp()
+  });
+  document.body.appendChild(temp);
+
+  try{
+    renderKatex(temp);
+    await new Promise(ok=>requestAnimationFrame(()=>requestAnimationFrame(ok)));
+    trimmaUtskriftsFigurer(temp);
+    await wordBaddaInBilder(temp);
+    wordForenklaMatematik(temp);
+
+    const titel=($('#bTitel').value||'Prov').trim();
+    const html=wordDokumentHTML(temp.innerHTML,titel);
+    const namn=(titel.replace(/[^\wåäöÅÄÖ -]/g,'').trim()||'Prov');
+
+    const harDocx=await wordLaddaDocxBibliotek();
+    let blob,filnamn;
+    if(harDocx){
+      blob=window.htmlDocx.asBlob(html,{
+        orientation:'portrait',
+        margins:{top:840,right:920,bottom:960,left:920,header:0,footer:0,gutter:0}
+      });
+      filnamn=namn+'.docx';
+    }else{
+      /* Reservväg om CDN är blockerat: samma snygga HTML-layout öppnas i Word,
+         men filformatet blir klassisk .doc. */
+      blob=new Blob(['\ufeff'+html],{type:'application/msword'});
+      filnamn=namn+'.doc';
+    }
+
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=filnamn;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},700);
+  }catch(e){
+    console.error(e);
+    alert('Word-exporten kunde inte skapas. Prova igen eller ladda om sidan.');
+  }finally{
+    temp.remove();
+    knapp.disabled=false;
+    knapp.innerHTML=gammalText;
+  }
+}
+$('#expWord').addEventListener('click',exporteraWord);
+
+function uppdateraDokumenttyp(){
+  const typ=dokumentTyp();
+  const input=$('#bTitel');
+  const namn=kursnamnMedSpår();
+  const nu=(input.value||'').trim();
+  const arAuto=/^(Övningsblad|Prov)(\s|$)/i.test(nu);
+  if(arAuto) input.value=`${typ==='prov'?'Prov':'Övningsblad'}${namn?' '+namn:''}`;
+}
+$('#bladTyp').addEventListener('change',uppdateraDokumenttyp);
+
 
 /* ── KaTeX · snabb rendering av uppgiftslistan ── */
 let katexListaObserver=null;
@@ -4683,36 +4911,5 @@ if(DIREKTKURS){
   });
 }
 </script>
-
-<script>
-(function(){
-  const KEY='uppgiftslabbet_theme';
-  const html=document.documentElement;
-
-  function applyTheme(theme){
-    html.setAttribute('data-theme',theme);
-    try{localStorage.setItem(KEY,theme);}catch(e){}
-    const btn=document.getElementById('kvThemeToggle');
-    if(btn){
-      const dark=theme==='dark';
-      btn.setAttribute('aria-label',dark?'Byt till ljust tema':'Byt till mörkt tema');
-      btn.title=dark?'Byt till ljust tema':'Byt till mörkt tema';
-    }
-  }
-
-  let saved=null;
-  try{saved=localStorage.getItem(KEY);}catch(e){}
-  const initial=saved||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-  applyTheme(initial);
-
-  const bind=()=>{
-    const btn=document.getElementById('kvThemeToggle');
-    if(btn) btn.addEventListener('click',()=>applyTheme(html.getAttribute('data-theme')==='dark'?'light':'dark'));
-  };
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind);
-  else bind();
-})();
-</script>
-
 </body>
 </html>
