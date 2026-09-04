@@ -992,6 +992,18 @@ table.data th{background:var(--sunken);font-weight:600}
 .exportrad{display:flex;gap:9px}
 .exportrad .knapp{flex:1;justify-content:center;padding:11px 14px;border-radius:11px;font-weight:600}
 .exportrad .knapp.primär{box-shadow:0 2px 8px rgba(180,49,35,.22)}
+.exportrad .knapp.till-analys{
+  border-color:rgba(42,93,158,.24);
+  background:#EEF3FA;
+  color:#244F87;
+}
+.exportrad .knapp.till-analys:hover{
+  border-color:rgba(42,93,158,.42);
+  background:#E4ECF7;
+  color:#173E70;
+}
+.exportrad .knapp.till-analys svg{width:18px;height:18px}
+
 .växel{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:13.5px;font-weight:500;
   color:var(--ink-2);cursor:pointer}
 .växel input{appearance:none;width:38px;height:22px;border-radius:99px;background:#D6D5D9;position:relative;
@@ -2500,6 +2512,15 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
         <button class="knapp primär" id="expPdf">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V4h12v5M6 18H4v-6h16v6h-2M8 14h8v7H8z"/></svg>
           PDF
+        </button>
+        <button class="knapp till-analys" id="tillAnalys" type="button" title="Skicka provets uppgifter direkt till resultatanalysen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 3h6"/>
+            <path d="M10 3v7.2l-4.7 7.2A2.3 2.3 0 0 0 7.2 21h9.6a2.3 2.3 0 0 0 1.9-3.6L14 10.2V3"/>
+            <path d="M7.7 16h8.6"/>
+            <path d="M10 13.2h4"/>
+          </svg>
+          Till analys
         </button>
         <button class="knapp" id="expWord">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
@@ -4295,6 +4316,101 @@ function bladHTML({facit,hjalpmedel=true}){
   }
   return h;
 }
+
+/* ── Till analys ──────────────────────────────────────────────────────────
+   Uppgiftslabbet och /analys ligger på samma origin. Därför kan ett prov
+   lämnas över direkt via localStorage utan filhämtning eller manuell
+   inmatning. Posten tas bort av analysverktyget när den har lästs. */
+const ANALYS_TRANSFER_KEY='uppgiftslabbet_analysis_transfer_v1';
+
+function analysNiva(niva){
+  return niva==='A'?5:(niva==='C'?3:1);
+}
+function analysPoangSumma(poang){
+  const m=String(poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+  return m ? (+m[1]+ +m[2]+ +m[3]) : 0;
+}
+function analysDelar(x){
+  /* Om banken har explicit delpoäng används den. Annars blir uppgiften en
+     sammanhållen analysuppgift med sin totala maxpoäng. */
+  if(Array.isArray(x?.delpoang) && x.delpoang.length){
+    const delar=x.delpoang.map(d=>{
+      const p=analysPoangSumma(d?.poang ?? d?.points ?? '');
+      return p>0?p:null;
+    }).filter(v=>v!==null);
+    if(delar.length) return delar;
+  }
+  const total=analysPoangSumma(x?.poang);
+  return total>0?[total]:[];
+}
+function byggAnalysOverforing(){
+  const tasks=[];
+  let nextId=1;
+  state.blad.forEach(x=>{
+    const maxdelar=analysDelar(x);
+    if(!maxdelar.length) return;
+    const omradesnamn=DB.omr?.[x.kap]?.[x.omr] || x.omr || '(utan område)';
+    const tid=nextId++;
+    tasks.push({
+      id:tid,
+      areas:[omradesnamn],
+      level:analysNiva(x.niva),
+      weights:{[omradesnamn]:1},
+      parts:maxdelar.map(max=>({id:nextId++,max})),
+      source:{
+        bankId:x.id,
+        family:x.familj||null,
+        abilities:Array.isArray(x.formaga)?[...x.formaga]:[],
+        course:AKTIV?.id||null,
+        track:state.spår||null
+      }
+    });
+  });
+
+  const total=tasks.reduce((s,t)=>s+t.parts.reduce((a,p)=>a+(Number(p.max)||0),0),0);
+  const areas=[];
+  tasks.forEach(t=>t.areas.forEach(a=>{if(!areas.includes(a))areas.push(a);}));
+
+  return {
+    schema:'uppgiftslabbet-analysis-transfer-v1',
+    createdAt:Date.now(),
+    className:($('#bKlass').value||'').trim(),
+    courseName:AKTIV?.titel||'',
+    data:{
+      testName:($('#bTitel').value||'').trim()||'Prov från Uppgiftslabbet',
+      grades:{
+        e:total?Math.round(total*.28):'',
+        d:'',
+        c:total?Math.round(total*.55):'',
+        b:'',
+        a:total?Math.round(total*.78):''
+      },
+      areas,
+      tasks,
+      students:[]
+    }
+  };
+}
+function skickaTillAnalys(){
+  if(!state.blad.length){
+    alert('Lägg först till minst en uppgift i bladet.');
+    return;
+  }
+  const transfer=byggAnalysOverforing();
+  if(!transfer.data.tasks.length){
+    alert('De valda uppgifterna saknar poäng och kan därför inte skickas till analysen.');
+    return;
+  }
+  try{
+    localStorage.setItem(ANALYS_TRANSFER_KEY,JSON.stringify(transfer));
+  }catch(e){
+    alert('Kunde inte förbereda överföringen till analysen i den här webbläsaren.');
+    return;
+  }
+  window.location.href='/analys/?from=uppgiftslabbet';
+}
+$('#tillAnalys').addEventListener('click',skickaTillAnalys);
+
 $('#expPdf').addEventListener('click',()=>{
   const u=$('#utskrift');
   u.innerHTML=bladHTML({facit:$('#taMedFacit').checked,hjalpmedel:$('#visaHjälpmedelExport').checked});
