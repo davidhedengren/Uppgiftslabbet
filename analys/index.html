@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Davids prov- och resultatanalyserare</title>
+<title>Uppgiftslabbets prov- och resultatanalyserare</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233250A6'/%3E%3Cstop offset='1' stop-color='%231C2C63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23b)'/%3E%3Cpath d='M7 24.5h11' stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' opacity='.42'/%3E%3Cpath d='M6.5 15.5l6 6L25.5 7.5' fill='none' stroke='%23FFFFFF' stroke-width='4.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
 <style>
   /* Grundpaletten. Den slutliga uppsättningen värden står längre ned, i avsnittet
@@ -617,15 +617,72 @@ table.hist td.d{font-family:'JetBrains Mono',monospace;font-weight:600;}
 @media(max-width:620px){.gs-name{width:96px;}}
 
 @media(max-width:620px){ .task-fields,.col-head-tasks{grid-template-columns:1fr} .ov-grid{grid-template-columns:1fr} .bar-row{grid-template-columns:1fr;gap:6px}.bar-meta{text-align:left} .phint{display:none}.maxinfo{margin-left:0} }
+
+/* ═════════ Uppgiftslabbet-tema ═════════ */
+:root{
+  --bg:#F4F5F7; --bg-2:#EDEEF1;
+  --ink:#2B2527; --muted:#5C575E; --faint:#8A858E;
+  --line:#E4E3E6; --line-strong:#D5D2D7; --card:#FFFFFF; --card-2:#F7F7F9;
+  --indigo:#B43123; --indigo-d:#8E2519; --indigo-soft:#FBF0EE; --coral:#2A5D9E;
+  --good:#0F6B4F; --good-bg:#E9F3EF; --okay:#5F8125; --okay-bg:#EEF4DD;
+  --mid:#A8731F; --mid-bg:#F8EFDA; --weak:#B43123; --weak-bg:#FBEBE8;
+  --radius:12px;
+  --shadow:0 1px 2px rgba(43,37,39,.05),0 10px 26px -22px rgba(43,37,39,.32);
+  --shadow-sm:0 1px 2px rgba(43,37,39,.05),0 6px 16px -14px rgba(43,37,39,.25);
+}
+body{font-family:'Instrument Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,.phead h2,details.collapsible>summary h2,.sub{font-family:'Instrument Sans',system-ui,sans-serif}
+.kicker,.tab .n,.maxinfo b,.tagpct,.tnum+.tmeta,.plabel,.ov-card .v,
+table.ov td.n,table.ov th.n,.bar-meta,.gc-num,.gc-lbl,.bp-axis,.hist td.v,.hist td.d{
+  font-family:'IBM Plex Mono',monospace;
+}
+header.top{margin-top:20px;padding:8px 2px 10px}
+.analysis-brand{display:flex;align-items:center;gap:14px;min-width:0}
+.analysis-logo{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:12px;
+  background:#fff;border:1px solid rgba(43,37,39,.08);box-shadow:var(--shadow-sm);overflow:hidden}
+.analysis-logo img{width:43px;height:43px;display:block;object-fit:contain}
+.analysis-logo:hover{box-shadow:0 0 0 4px rgba(180,49,35,.10)}
+h1{font-size:clamp(19px,2.4vw,24px);letter-spacing:-.025em}
+h1 .swash{color:var(--ed,#B43123)}
+.tabs{background:linear-gradient(180deg,rgba(244,245,247,.96),rgba(244,245,247,.80))}
+.panel,.task,.scard{border-color:var(--line)}
+.tab.active{color:var(--indigo)}
+.btn{background:var(--indigo)}
+.btn:hover{background:var(--indigo-d)}
+:root[data-theme="dark"]{
+  --bg:#1F1B1C; --bg-2:#292426; --ink:#F2EEEF; --muted:#B8B0B3; --faint:#8F878A;
+  --line:#3B3437; --line-strong:#51474B; --card:#292426; --card-2:#312B2E;
+  --indigo:#D56B5E; --indigo-d:#E27A6D; --indigo-soft:#472B2A; --coral:#7298C8;
+  --good:#55B894; --good-bg:#193A30; --okay:#A2C36B; --okay-bg:#2D391F;
+  --mid:#D8AB59; --mid-bg:#42351E; --weak:#EC8175; --weak-bg:#462826;
+}
+:root[data-theme="dark"] body{background:var(--bg)}
+:root[data-theme="dark"] .tabs{background:rgba(31,27,28,.90)}
+:root[data-theme="dark"] .analysis-logo{background:#fff}
+
+/* Metadata från Uppgiftslabbet */
+.task-source{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px}
+.source-chip{display:inline-flex;align-items:center;gap:5px;min-height:25px;padding:4px 8px;border-radius:999px;
+  border:1px solid var(--line);background:var(--card-2);font-size:11.5px;color:var(--muted)}
+.source-chip strong{font-weight:650;color:var(--ink)}
+.source-chip.ability{border-color:rgba(180,49,35,.14);background:var(--indigo-soft);color:var(--indigo-d)}
+.source-chip.family{border-color:rgba(42,93,158,.16);background:#EEF3FA;color:#244F87}
+:root[data-theme="dark"] .source-chip.family{background:#263448;color:#AFC8E8;border-color:#354A65}
+.meta-note{font-size:12px;color:var(--faint);margin:7px 0 0}
+@media(max-width:620px){.analysis-logo{width:42px;height:42px;flex-basis:42px}.analysis-logo img{width:38px;height:38px}}
+
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brandwrap">
-      <div class="kicker">skapa prov <span class="kdot">·</span> registrera elevresultat <span class="kdot">·</span> analysera</div>
-      <h1>Davids prov- och resultat<span class="swash">analyserare</span></h1>
-      <div class="spectrum-rule" aria-hidden="true"></div>
+    <div class="analysis-brand">
+      <a class="analysis-logo" href="/" title="Till Uppgiftslabbet" aria-label="Till Uppgiftslabbet"><img src="../logo.png" alt=""></a>
+      <div class="brandwrap">
+        <div class="kicker">skapa prov <span class="kdot">·</span> registrera elevresultat <span class="kdot">·</span> analysera</div>
+        <h1>Uppgiftslabbets prov- och resultat<span class="swash">analyserare</span></h1>
+        <div class="spectrum-rule" aria-hidden="true"></div>
+      </div>
     </div>
     <button id="themeToggle" class="theme-toggle" title="Växla ljust/mörkt läge" aria-label="Växla ljust/mörkt läge">🌙</button>
   </header>
@@ -767,6 +824,8 @@ table.hist td.d{font-family:'JetBrains Mono',monospace;font-weight:600;}
             <button class="btn btn-out" id="printBtn">Skriv ut eller spara som PDF</button>
           </div>
           <details class="dinline"><summary>Klassens resultat per område<span class="chev">▸</span></summary><div class="dbody"><div class="viewsw" role="group" aria-label="Visning"><button class="vw on" data-areaview="area">Per område</button><button class="vw" data-areaview="level">Delat på svårighet</button></div><div id="detArea"></div></div></details>
+          <details class="dinline" id="detAbilityWrap"><summary>Klassens resultat per förmåga<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">En uppgift med två förmågor delas lika mellan dem, så att samma poäng inte räknas dubbelt.</div><div id="detAbility"></div></div></details>
+          <details class="dinline" id="detFamilyWrap"><summary>Klassens resultat per uppgiftstyp<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">Uppgiftstyper visar mer specifikt vilken typ av färdighet uppgifterna prövar. Uppgifter som lagts in manuellt utan metadata för uppgiftstyp räknas inte här.</div><div id="detFamily"></div></div></details>
           <details class="dinline"><summary>Klassens resultat per uppgift<span class="chev">▸</span></summary><div class="dbody"><div id="detTask"></div></div></details>
           <details class="dinline" id="detLevelWrap"><summary>Klassens resultat per svårighetsnivå<span class="chev">▸</span></summary><div class="dbody"><div id="detLevel"></div></div></details>
           <details class="dinline"><summary>Resultatspridning<span class="chev">▸</span></summary><div class="dbody"><div id="detSpread"></div></div></details>
@@ -808,6 +867,7 @@ table.hist td.d{font-family:'JetBrains Mono',monospace;font-weight:600;}
           <div class="sub">Betygsfördelning per prov</div>
           <div id="histGrades" class="gradestack"></div>
           <details class="dinline" open><summary>Områden över tid<span class="chev">▸</span></summary><div class="dbody"><div id="histAreas"></div></div></details>
+          <details class="dinline"><summary>Förmågor över tid<span class="chev">▸</span></summary><div class="dbody"><div id="histAbilities"></div></div></details>
           <details class="dinline"><summary>Elevernas utveckling<span class="chev">▸</span></summary><div class="dbody"><div id="histStudents"></div></div></details>
           <div class="sub">Enskild elev</div>
           <div class="stu-pick">
@@ -1054,6 +1114,27 @@ function taskNo(t){ return state.tasks.indexOf(t)+1; }
 function taskAreas(t){ return (t.areas&&t.areas.length)?t.areas:["(utan område)"]; }
 function studentTaskPoints(s,t){ return t.parts.reduce((a,p)=>a+num(s.scores[p.id]),0); }
 function usedAreas(){ const o=[]; validTasks().forEach(t=>taskAreas(t).forEach(a=>{ if(!o.includes(a)) o.push(a); })); return o; }
+const ABILITY_LABELS={begrepp:"Begrepp",procedur:"Procedur",resonemang:"Resonemang",modellering:"Modellering","problemlösning":"Problemlösning"};
+const ABILITY_ORDER=["begrepp","procedur","resonemang","modellering","problemlösning"];
+function taskAbilities(t){ return (t.source&&Array.isArray(t.source.abilities))?t.source.abilities.filter(a=>ABILITY_LABELS[a]):[]; }
+function taskFamily(t){ return (t.source&&typeof t.source.family==="string"&&t.source.family)?t.source.family:null; }
+function familyLabel(f){
+  if(!f) return "";
+  const p=f.includes("__")?f.split("__").slice(1).join("__"):f;
+  const z=p.replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+  return z.replace(/\bOch\b/g,"och").replace(/\bMed\b/g,"med").replace(/\bFran\b/g,"från").replace(/\bPa\b/g,"på");
+}
+function usedAbilities(){ return ABILITY_ORDER.filter(a=>validTasks().some(t=>taskAbilities(t).includes(a))); }
+function abilityTaskCount(a){ return validTasks().filter(t=>taskAbilities(t).includes(a)).length; }
+function abilityWInTask(t,a){ const aa=taskAbilities(t); return aa.includes(a)?1/aa.length:0; }
+function studentAbilityPct(st,a){ let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; g+=studentTaskPoints(st,t)*w; m+=taskMax(t)*w; }); return m?g/m:0; }
+function classAbilityAvg(a){ const act=activeStudents(),n=act.length||1; let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; act.forEach(st=>g+=studentTaskPoints(st,t)*w); m+=taskMax(t)*w; }); return {got:g/n,max:m,pct:m?(g/n)/m:0}; }
+function usedFamilies(){ const out=[]; validTasks().forEach(t=>{ const f=taskFamily(t); if(f&&!out.includes(f))out.push(f); }); return out; }
+function familyTaskCount(f){ return validTasks().filter(t=>taskFamily(t)===f).length; }
+function studentFamilyPct(st,f){ let g=0,m=0; validTasks().filter(t=>taskFamily(t)===f).forEach(t=>{g+=studentTaskPoints(st,t);m+=taskMax(t);}); return m?g/m:0; }
+function classFamilyAvg(f){ const act=activeStudents(),n=act.length||1; let g=0,m=0; validTasks().filter(t=>taskFamily(t)===f).forEach(t=>{act.forEach(st=>g+=studentTaskPoints(st,t));m+=taskMax(t);}); return {got:g/n,max:m,pct:m?(g/n)/m:0}; }
+
+
 function areaTaskCount(a){ return validTasks().filter(t=>taskAreas(t).includes(a)).length; }
 function areaMax(a){ return validTasks().filter(t=>taskAreas(t).includes(a)).reduce((s,t)=>s+taskMax(t),0); }
 function studentAreaPoints(s,a){ return validTasks().filter(t=>taskAreas(t).includes(a)).reduce((sum,t)=>sum+studentTaskPoints(s,t),0); }
@@ -1421,6 +1502,11 @@ function renderTasks(){
         ${(t.areas||[]).map(a=>{ const w=(t.weights&&t.weights[a]!=null)?t.weights[a]:1; return `<span class="tag primary tag-w" data-area="${esc(a)}" style="opacity:${(0.5+0.5*w).toFixed(2)}" title="Vikt ${Math.round(w*100)} %. Klicka för att ändra.">${esc(a)} <small class="tagpct">${Math.round(w*100)}%</small><button data-area="${esc(a)}">×</button></span>`; }).join("")}
         <input class="tag-input" list="areaPool" placeholder="${(t.areas||[]).length?'lägg till…':'område'}"></div></div>
         <div><select data-act="lvl">${lvlOpts}</select></div></div>
+      ${(taskAbilities(t).length||taskFamily(t))?`<div class="task-source">
+        ${taskAbilities(t).map(a=>`<span class="source-chip ability"><strong>Förmåga</strong> ${esc(ABILITY_LABELS[a])}</span>`).join("")}
+        ${taskFamily(t)?`<span class="source-chip family"><strong>Uppgiftstyp</strong> ${esc(familyLabel(taskFamily(t)))}</span>`:""}
+        ${t.source&&t.source.bankId?`<span class="source-chip">Bank-ID ${esc(t.source.bankId)}</span>`:""}
+      </div>`:""}
       <div class="parts">${pc>1?'<div class="col-head-parts">Deluppgifter · poäng</div>':''}${partsHtml}
         <button class="btn-ghost addpart" data-act="addpart">+ Lägg till deluppgift (a, b, c…)</button></div>`;
     card.querySelector('[data-act="del"]').addEventListener("click",()=>{ t.parts.forEach(p=>state.students.forEach(s=>delete s.scores[p.id])); state.tasks=state.tasks.filter(x=>x.id!==t.id); commitBuild(); });
@@ -1440,7 +1526,7 @@ function renderTasks(){
   if(focusTaskId!=null){ const idx=state.tasks.findIndex(x=>x.id===focusTaskId); if(idx>=0){ const inp=list.children[idx].querySelector(".tag-input"); if(inp) inp.focus(); } focusTaskId=null; }
 }
 function moveTask(i,dir){ const j=i+dir; if(j<0||j>=state.tasks.length) return; const tmp=state.tasks[i]; state.tasks[i]=state.tasks[j]; state.tasks[j]=tmp; commitBuild(); }
-function dupTask(i){ const t=state.tasks[i]; state.tasks.splice(i+1,0,{id:nextId++,areas:[...(t.areas||[])],level:t.level,parts:t.parts.map(p=>({id:nextId++,max:p.max}))}); commitBuild(); }
+function dupTask(i){ const t=state.tasks[i]; state.tasks.splice(i+1,0,{id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),parts:t.parts.map(p=>({id:nextId++,max:p.max})),source:t.source?JSON.parse(JSON.stringify(t.source)):null}); commitBuild(); }
 function addAreaToTask(t,raw){ const name=(raw||"").trim(); if(!name) return; if(!state.areas.some(a=>a.toLowerCase()===name.toLowerCase())) state.areas.push(name);
   const canon=state.areas.find(a=>a.toLowerCase()===name.toLowerCase()); if(!t.areas.includes(canon)) t.areas.push(canon); focusTaskId=t.id; commitBuild(); }
 function commitBuild(){ renderAreaPool(); renderTasks(); renderOverview(); renderGradeScale(); renderGrid(); renderAnalysis(); save(); }
@@ -1611,10 +1697,11 @@ function renderAnalysis(){
   renderDetails();
 }
 function renderDetails(){
-  const aEl=$("#detArea"), tEl=$("#detTask"), lEl=$("#detLevel"), sEl=$("#detSpread"), lWrap=$("#detLevelWrap");
+  const aEl=$("#detArea"), abEl=$("#detAbility"), famEl=$("#detFamily"), tEl=$("#detTask"), lEl=$("#detLevel"), sEl=$("#detSpread"),
+        lWrap=$("#detLevelWrap"), abWrap=$("#detAbilityWrap"), famWrap=$("#detFamilyWrap");
   if(!aEl) return;
   const act=activeStudents(), nm=s=>esc(s.name||"(namnlös)"), vt=validTasks();
-  if(!vt.length||!act.length){ [aEl,tEl,lEl,sEl].forEach(e=>{ if(e) e.innerHTML='<div class="empty">Ingen data ännu.</div>'; }); if(lWrap) lWrap.style.display=""; return; }
+  if(!vt.length||!act.length){ [aEl,abEl,famEl,tEl,lEl,sEl].forEach(e=>{ if(e) e.innerHTML='<div class="empty">Ingen data ännu.</div>'; }); if(lWrap) lWrap.style.display=""; return; }
   // Klassens resultat per område
   const ua=usedAreas(); let ah='<div class="ld-bars">';
   const barRow=(label,sub,got,max)=>{ const pct=max?got/max:0, b=band(pct);
@@ -1638,6 +1725,28 @@ function renderDetails(){
     ua.forEach(a=>{ const v=classAreaAvg(a); ah+=barRow(a,areaLevelNote(a),v.got,v.max); });
   }
   aEl.innerHTML=ah+'</div>';
+
+  // Klassens resultat per förmåga. Dubbeltaggade uppgifter delas lika.
+  const uab=usedAbilities();
+  if(abWrap) abWrap.style.display=uab.length?"":"none";
+  if(abEl && uab.length){
+    let bh='<div class="ld-bars">';
+    uab.forEach(a=>{ const v=classAbilityAvg(a); bh+=barRow(ABILITY_LABELS[a],abilityTaskCount(a)+" uppg.",v.got,v.max); });
+    abEl.innerHTML=bh+'</div>';
+  }
+
+  // Klassens resultat per pedagogisk uppgiftstyp.
+  const uf=usedFamilies();
+  if(famWrap) famWrap.style.display=uf.length?"":"none";
+  if(famEl && uf.length){
+    let fh='<div class="ld-bars">';
+    uf.map(f=>({f,v:classFamilyAvg(f)})).sort((x,y)=>x.v.pct-y.v.pct).forEach(r=>{
+      const area=(r.f.split("__")[0]||"").replace(/_/g," ");
+      fh+=barRow(familyLabel(r.f),area+" · "+familyTaskCount(r.f)+" uppg.",r.v.got,r.v.max);
+    });
+    famEl.innerHTML=fh+'</div>';
+  }
+
   // Klassens resultat per uppgift (nummerordning)
   let th='<div class="scroll"><table class="heat ld-tasks"><thead><tr><th class="name-h">Uppg.</th><th class="lcol">Område</th><th>Medelpoäng</th></tr></thead><tbody>';
   vt.forEach((t,i)=>{ let g=0,m=0; act.forEach(s=>{ g+=studentTaskPoints(s,t); m+=taskMax(t); }); const p=m?g/m:0, b=band(p), avg=g/(act.length||1); th+=`<tr><td class="namecell">${taskNo(t)}.</td><td class="lcol">${esc(taskAreas(t).join(", "))}</td><td class="cell" style="background:${b.bg};color:${b.fg}">${fmt(avg)}/${fmt(taskMax(t))} p</td></tr>`; });
@@ -1681,8 +1790,8 @@ function renderDetails(){
 /* ═════════ HISTORIK: FLERA PROV FÖR SAMMA KLASS ═════════
    Varje sparat prov är en ögonblicksbild av analysen: klassens snitt, resultatet
    per område och per svårighetsnivå, betygsfördelningen och varje elevs poäng.
-   Uppgifterna sparas aldrig, bara utfallet, eftersom jämförelsen sker på nivåerna
-   klass, område och elev.
+   Jämförelsen räknas från varje sparat prov. Därmed kan även återkommande
+   förmågor följas över tid när provet kommer från Uppgiftslabbet.
 
    Allt ligger i webbläsarens eget lagringsutrymme och lämnar aldrig datorn. Den
    som vill flytta historiken till en annan dator exporterar den till fil. Därför
@@ -1698,16 +1807,18 @@ function snapshotOf(t){
     const act=activeStudents();
     const tot=act.reduce((o,x)=>{const v=studentTotals(x);o.g+=v.pts;o.m+=v.max;return o;},{g:0,m:0});
     const areas={}; usedAreas().forEach(a=>{ const v=classAreaAvg(a); areas[a]={got:v.got,max:v.max}; });
+    const abilities={}; usedAbilities().forEach(a=>{ const v=classAbilityAvg(a); abilities[a]={got:v.got,max:v.max}; });
     const lv=classLevelStats();
     return {
       id:t.id, name:testLabel(t), savedAt:t.savedAt||0,
       max:totalMax(), n:act.length, avg: tot.m? tot.g/tot.m : 0,
-      areas:areas, levels:{grund:lv.grund,medel:lv.medel,avancerat:lv.avancerat},
+      areas:areas, abilities:abilities, levels:{grund:lv.grund,medel:lv.medel,avancerat:lv.avancerat},
       grades: gradesValid()? gradeDistribution() : null,
       students: act.map(x=>{ const v=studentTotals(x);
         const ar={}; usedAreas().forEach(a=>{ ar[a]={got:studentAreaPoints(x,a),max:areaMax(a)}; });
+        const ab={}; usedAbilities().forEach(a=>{ let m=0; validTasks().forEach(t=>m+=taskMax(t)*abilityWInTask(t,a)); ab[a]={got:studentAbilityPct(x,a)*m,max:m}; });
         return {name:(x.name||"").trim(), pts:v.pts, max:v.max, pct:v.pct, grade:v.grade||null,
-                areas:ar, levels:studentLevelStats(x)}; })
+                areas:ar, abilities:ab, levels:studentLevelStats(x)}; })
     };
   });
 }
@@ -1969,6 +2080,16 @@ function renderHistory(){
     ? histTable(areaNames.map(a=>({label:a, v:hs.map(h=>h.areas[a]&&h.areas[a].max?h.areas[a].got/h.areas[a].max:null)})), hs, "Område")
     : '<div class="empty">Inga områden återkommer i flera prov, så det finns inget att jämföra.</div>';
 
+  /* Förmågor: blir särskilt användbara över flera prov eftersom samma fem
+     dimensioner återkommer även när innehållsområdena byts. */
+  const hab=$("#histAbilities");
+  if(hab){
+    const abNames=ABILITY_ORDER.filter(a=>hs.filter(h=>h.abilities&&h.abilities[a]&&h.abilities[a].max).length>=2);
+    hab.innerHTML=abNames.length
+      ? histTable(abNames.map(a=>({label:ABILITY_LABELS[a],v:hs.map(h=>h.abilities&&h.abilities[a]&&h.abilities[a].max?h.abilities[a].got/h.abilities[a].max:null)})),hs,"Förmåga")
+      : '<div class="empty">Förmågemetadata behöver finnas i minst två prov för att visa utveckling över tid.</div>';
+  }
+
   /* Elever: alla som förekommer i minst två av proven, matchade på namn. */
   const keys=new Map();
   hs.forEach(h=>h.students.forEach(s=>{ const k=nameKey(s.name); if(k&&!keys.has(k)) keys.set(k,s.name); }));
@@ -1984,7 +2105,7 @@ function renderHistory(){
 
 /* ===== 6. EXPORT ===== */
 const GRADE_XL={A:{bg:"FFD9F0E4",fg:"FF115C3E"},B:{bg:"FFE6F1D8",fg:"FF3D5E12"},C:{bg:"FFE0E6FB",fg:"FF26429C"},D:{bg:"FFF6EFD2",fg:"FF7A5E12"},E:{bg:"FFF9E7D4",fg:"FF8F4E1B"},F:{bg:"FFF8DEDC",fg:"FF892824"},"":{bg:"FFFFFFFF",fg:"FF222222"}};
-const HEAD_FILL="FF4B43C4";
+const HEAD_FILL="FFB43123";
 function styleHeader(ws,row){ const r=ws.getRow(row); r.height=20; r.eachCell(c=>{ c.font={bold:true,color:{argb:"FFFFFFFF"},size:11}; c.fill={type:"pattern",pattern:"solid",fgColor:{argb:HEAD_FILL}}; c.alignment={vertical:"middle"}; c.border={bottom:{style:"thin",color:{argb:"FFBBBBBB"}}}; }); }
 function bandFillXL(p){ if(p>=0.8) return {bg:"FFE3F2EA",fg:"FF1f6e4c"}; if(p>=0.6) return {bg:"FFEEF4DD",fg:"FF566f22"}; if(p>=0.4) return {bg:"FFF8EFDA",fg:"FF8a611f"}; return {bg:"FFFAE5E2",fg:"FF993730"}; }
 async function exportXlsx(){
