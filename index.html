@@ -718,6 +718,7 @@ button,input,select{font-family:inherit;font-size:inherit;color:inherit}
 .slumprad input:focus{outline:none;background:var(--surface);border-color:var(--ed);box-shadow:0 0 0 3.5px var(--ed-ring)}
 .slumprad .knapp{flex:1;justify-content:center;padding:9px 10px}
 .knapp:disabled{opacity:.4;cursor:not-allowed;transform:none}
+#expWord:disabled{cursor:progress}
 .knapp:focus-visible,input:focus-visible,.omrad:focus-visible,.kort:focus-visible{
   outline:2px solid var(--ed);outline-offset:2px}
 .knapp svg{width:15px;height:15px;flex:none}
@@ -1394,6 +1395,20 @@ table.data th{background:var(--sunken);font-weight:600}
   #utskrift h1{font-family:var(--ui);font-size:17pt;margin:0;font-weight:700}
   #utskrift .pm{font-family:var(--mono);font-size:9.5pt;color:#444;margin-top:2px}
   #utskrift .pu{margin-bottom:16pt;break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
+  #utskrift .pu.pdf-pu{
+    display:grid!important;
+    grid-template-columns:25pt minmax(0,1fr) 78pt!important;
+    column-gap:0!important;
+    align-items:start!important
+  }
+  #utskrift .pu.pdf-pu .pdf-uppgiftsmeta{
+    grid-column:3!important;
+    grid-row:1!important;
+    text-align:right!important;
+    justify-self:stretch!important;
+    white-space:nowrap!important;
+    padding-top:1pt!important
+  }
   #utskrift .pn{font-family:var(--mono);font-weight:600}
   #utskrift .pu p{margin:0 0 6pt}
   #utskrift .pu p:last-child{margin-bottom:0}
@@ -4857,7 +4872,7 @@ async function wordUrlTillDataUrl(url){
     fr.readAsDataURL(blob);
   });
 }
-async function wordRenderElementTillPng(el,{maxWidth=640,scale=2}={}){
+async function wordRenderElementTillPng(el,{maxWidth=640,scale=1.45}={}){
   const h2c=await wordLaddaHtml2Canvas();
   const c=await h2c(el,{
     backgroundColor:'#ffffff',
@@ -4866,12 +4881,24 @@ async function wordRenderElementTillPng(el,{maxWidth=640,scale=2}={}){
     useCORS:true,
     allowTaint:false
   });
-  const ratio=Math.min(1,maxWidth/c.width);
-  return {
-    data:wordDataUrlBytes(c.toDataURL('image/png')),
-    width:Math.max(1,Math.round(c.width*ratio)),
-    height:Math.max(1,Math.round(c.height*ratio))
-  };
+  try{
+    const cssWidth=Math.max(1,el.getBoundingClientRect().width||c.width/scale||c.width);
+    const cssHeight=Math.max(1,el.getBoundingClientRect().height||c.height/scale||c.height);
+    const ratio=Math.min(1,maxWidth/cssWidth);
+    const blob=await new Promise((resolve,reject)=>{
+      c.toBlob(b=>b?resolve(b):reject(new Error('Kunde inte skapa PNG-bild.')),'image/png');
+    });
+    const data=new Uint8Array(await blob.arrayBuffer());
+    return {
+      data,
+      width:Math.max(1,Math.round(cssWidth*ratio)),
+      height:Math.max(1,Math.round(cssHeight*ratio))
+    };
+  }finally{
+    /* Frigör canvasminnet direkt. Detta är viktigt på mobil och för stora prov. */
+    c.width=1;
+    c.height=1;
+  }
 }
 async function wordSvgTillPngData(svg,maxWidth=640){
   const rect=svg.getBoundingClientRect();
@@ -5026,24 +5053,43 @@ async function wordBlockTillElement(block,docx,{indent=0,after=90,bold=false}={}
 async function wordHtmlTillParagrapher(html,docx,{indent=0}={}){
   const root=wordTemp(html,620);
   try{
-    await wordRastreraSpecial(root);
+    await new Promise(ok=>requestAnimationFrame(()=>requestAnimationFrame(ok)));
+    trimmaUtskriftsFigurer(root);
+
+    /* Komplexa uppgifter renderas som EN bild i stället för en bild per
+       formel/SVG. Det minskar minnesanvändningen kraftigt och undviker att
+       webbläsaren låser sig under Word-export. */
+    const komplex=!!root.querySelector('.katex,svg,img,table,.fig');
+    if(komplex){
+      const bild=await wordRenderElementTillPng(root,{maxWidth:610,scale:1.45});
+      return [new docx.Paragraph({
+        spacing:{after:90},
+        indent:indent?{left:indent}:undefined,
+        children:[new docx.ImageRun({
+          data:bild.data,
+          type:'png',
+          transformation:{width:bild.width,height:bild.height}
+        })]
+      })];
+    }
+
     const blocks=[];
     for(const node of [...root.childNodes]){
       if(node.nodeType===Node.TEXT_NODE){
         if(node.nodeValue.trim()){
-          const p=document.createElement('p');p.textContent=node.nodeValue;blocks.push(p);
+          const q=document.createElement('p');q.textContent=node.nodeValue;blocks.push(q);
         }
       }else if(node.nodeType===Node.ELEMENT_NODE){
         const tag=node.tagName.toLowerCase();
-        if(['p','div','table','img','ul','ol','span'].includes(tag)){
+        if(['p','div','ul','ol','span'].includes(tag)){
           if(tag==='ul'||tag==='ol'){
             for(const li of [...node.children]){
-              const p=document.createElement('p');
-              p.innerHTML=(tag==='ol'?`${[...node.children].indexOf(li)+1}. `:'• ')+li.innerHTML;
-              blocks.push(p);
+              const q=document.createElement('p');
+              q.innerHTML=(tag==='ol'?`${[...node.children].indexOf(li)+1}. `:'• ')+li.innerHTML;
+              blocks.push(q);
             }
-          }else if(tag==='span' && !node.classList.contains('fig')){
-            const p=document.createElement('p');p.appendChild(node.cloneNode(true));blocks.push(p);
+          }else if(tag==='span'){
+            const q=document.createElement('p');q.appendChild(node.cloneNode(true));blocks.push(q);
           }else blocks.push(node);
         }
       }
@@ -5051,7 +5097,11 @@ async function wordHtmlTillParagrapher(html,docx,{indent=0}={}){
     const out=[];
     for(const b of blocks) out.push(await wordBlockTillElement(b,docx,{indent}));
     return out;
-  }finally{root.remove();}
+  }finally{
+    root.remove();
+    /* Ge webbläsaren en chans att städa mellan uppgifterna. */
+    await new Promise(ok=>setTimeout(ok,0));
+  }
 }
 async function wordBildRunFranUrl(url,docx,width=88){
   try{
@@ -5192,12 +5242,16 @@ async function wordSkapaNativeDocx(){
       if(toolHtml){
         const tmp=wordTemp(toolHtml,120);
         try{
-          await wordRastreraSpecial(tmp);
-          const img=tmp.querySelector('img');
-          if(img){
-            const data=wordDataUrlBytes(img.src);
-            toolRun=new docx.ImageRun({data,type:'png',transformation:{width:18,height:18}});
-          }
+          await new Promise(ok=>requestAnimationFrame(()=>requestAnimationFrame(ok)));
+          const bild=await wordRenderElementTillPng(tmp,{maxWidth:36,scale:1.35});
+          const ratio=Math.min(1,18/Math.max(1,bild.height));
+          toolRun=new docx.ImageRun({
+            data:bild.data,type:'png',
+            transformation:{
+              width:Math.max(12,Math.round(bild.width*ratio)),
+              height:Math.max(12,Math.round(bild.height*ratio))
+            }
+          });
         }finally{tmp.remove();}
       }
     }
@@ -5300,6 +5354,17 @@ function uppdateraDokumenttyp(){
   const nu=(input.value||'').trim();
   const arAuto=/^(Övningsblad|Prov)(\s|$)/i.test(nu);
   if(arAuto) input.value=`${typ==='prov'?'Prov':'Övningsblad'}${namn?' '+namn:''}`;
+
+  /* Dokumenttypernas standardinställningar. */
+  const total=$('#visaTotalpoangExport');
+  const hjalp=$('#visaHjälpmedelExport');
+  if(typ==='prov'){
+    if(total) total.checked=true;
+    if(hjalp) hjalp.checked=false;
+  }else{
+    if(total) total.checked=false;
+    if(hjalp) hjalp.checked=true;
+  }
 }
 $('#bladTyp').addEventListener('change',uppdateraDokumenttyp);
 
