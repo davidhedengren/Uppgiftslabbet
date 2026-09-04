@@ -2481,8 +2481,15 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
   margin:.28em 0 .1em 0!important;padding:0!important;list-style:none!important
 }
 .pdf-uppgiftstext li{
-  display:block!important;margin:.18em 0!important;padding:0!important;
+  display:block!important;margin:.18em 0!important;
+  padding:0 0 0 20pt!important;
+  position:relative!important;
   min-width:0;width:100%;clear:both
+}
+.pdf-uppgiftstext li::before{
+  left:0!important;
+  width:16pt;
+  text-align:left;
 }
 .pdf-uppgiftstext p{margin:.16em 0!important}
 .pdf-uppgiftstext .fig{display:block!important;max-width:100%!important;margin:.45em auto!important}
