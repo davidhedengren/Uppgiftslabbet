@@ -2713,6 +2713,55 @@ const KURSER=[
   }
 ];
 
+/* ═══════════════ kursadresser ═══════════════
+   En och samma app används för alla kurser. Små index-filer i kursmapparna
+   skickar hit ?kurs=<id>; när kursen är laddad visas den rena adressen igen. */
+const KURSSLUG={
+  fy1:'fysik1',
+  fy2:'fysik2',
+  ma1:'ma1',
+  ma2:'ma2',
+  mato1:'maforts1',
+  mato2:'maforts2',
+  matf1:'mafordjupning1'
+};
+
+/* På den riktiga domänen är appens rot /. På GitHubs reservadress ligger
+   projektet under /Uppgiftslabbet/, så även den adressen fortsätter fungera. */
+const APP_ROOT=(()=>{
+  if(location.hostname.toLowerCase().endsWith('.github.io')){
+    const första=location.pathname.split('/').filter(Boolean)[0];
+    return första?`/${första}/`:'/';
+  }
+  return '/';
+})();
+
+function kursFrånAdress(){
+  const q=new URLSearchParams(location.search).get('kurs');
+  if(q){
+    const nyckel=q.toLowerCase();
+    const viaQuery=KURSER.find(k=>k.id.toLowerCase()===nyckel || KURSSLUG[k.id]===nyckel);
+    if(viaQuery) return viaQuery;
+  }
+  const delar=location.pathname.split('/').filter(Boolean);
+  const sista=(delar.at(-1)||'').toLowerCase();
+  return KURSER.find(k=>KURSSLUG[k.id]===sista)||null;
+}
+function renKursadress(kurs){
+  const slug=KURSSLUG[kurs?.id];
+  if(!slug) return;
+  const mål=APP_ROOT+slug+'/';
+  if(location.pathname!==mål || location.search || location.hash){
+    history.replaceState({kurs:kurs.id},'',mål);
+  }
+}
+function renStartadress(){
+  if(location.pathname!==APP_ROOT || location.search || location.hash){
+    history.replaceState({},'',APP_ROOT);
+  }
+}
+
+
 /* ═══════════════ app ═══════════════ */
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const svgBock='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>';
@@ -3131,6 +3180,7 @@ async function väljKurs(kurs,kort){
 }
 function visaKursval(){
   AKTIV=null;
+  renStartadress();
   document.documentElement.style.setProperty('--ed','#B43123');
   document.documentElement.style.setProperty('--ed-dark','#8E2519');
   document.documentElement.style.setProperty('--ed-tint','#FBF0EE');
@@ -3148,6 +3198,7 @@ function visaKursval(){
 }
 function startaKurs(kurs){
   AKTIV=kurs; DB=kurs.data;
+  renKursadress(kurs);
 
   /* Vyn växlas innan uppgiftsrenderingen så att renderingsfel kan visas i bankvyn. */
   $('#kursval').hidden=true;
@@ -4392,7 +4443,18 @@ window.addEventListener('load',()=>{ if(window.renderMathInElement) renderKatex(
 
 /* ── Initiering ── */
 $('#bDatum').value=new Date().toLocaleDateString('sv-SE');
+const DIREKTKURS=kursFrånAdress();
 ritaKursval();
+
+/* Direktlänkar som /ma1/ och /fysik2/ öppnar samma kurs som ett klick på
+   motsvarande kurskort. Lösenordsgrinden ligger kvar ovanpå tills sessionen
+   är upplåst, så direktlänken kringgår inte lösenordsskyddet. */
+if(DIREKTKURS){
+  requestAnimationFrame(()=>{
+    const kort=document.querySelector(`.kurskort[data-kurs="${DIREKTKURS.id}"]`);
+    if(kort) väljKurs(DIREKTKURS,kort);
+  });
+}
 </script>
 </body>
 </html>
