@@ -1,1 +1,20 @@
-1
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uppgiftslabbet</title>
+<script>
+(()=>{
+  const kurs='ma1';
+  const isGithub=location.hostname.toLowerCase().endsWith('.github.io');
+  const första=location.pathname.split('/').filter(Boolean)[0];
+  const root=isGithub && första ? `/${första}/` : '/';
+  location.replace(root+'?kurs='+encodeURIComponent(kurs));
+})();
+</script>
+</head>
+<body>
+<p>Öppnar Uppgiftslabbet…</p>
+</body>
+</html>
