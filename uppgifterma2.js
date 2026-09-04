@@ -1,9 +1,4 @@
-/* uppgifterma2.js — Matematik nivå 2.
-   Familj-taggarna är pedagogiskt standardiserade.
-   Varje uppgift har dessutom metadatafältet formaga med 1–2 av:
-   begrepp, procedur, resonemang, modellering, problemlösning.
-*/
-
+/* uppgifterma2.js — familjetaggar strukturerade för analys. */
 window.BANKMA2 = [
   {
     "id": "1.01",
@@ -20,10 +15,7 @@ window.BANKMA2 = [
     "s": "<p>Multiplicera varje term i den första parentesen med varje term i den andra:</p><p>\\((x-7)(x+3)=x^2+3x-7x-21=x^2-4x-21\\).</p><p><strong>\\(x^2-4x-21\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.02",
@@ -40,10 +32,7 @@ window.BANKMA2 = [
     "s": "<p>Uttrycket blir \\(x^2-a^2+x^2-2x+1=2x^2-2x+(1-a^2)\\).</p><p>\\(1-a^2=10\\Rightarrow a^2=-9\\), vilket saknar reell lösning.</p><p><strong>Det finns inget reellt värde på \\(a\\).</strong></p>",
     "familj": "multiplicera_parenteser__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.03",
@@ -60,10 +49,7 @@ window.BANKMA2 = [
     "s": "<p>\\((2a+5)(a-4)=2a^2-8a+5a-20\\).</p><p><strong>\\(2a^2-3a-20\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.04",
@@ -80,10 +66,7 @@ window.BANKMA2 = [
     "s": "<p>Använd först konjugatregeln på den första produkten:</p><p>\\((x+a)(x-a)=x^2-a^2\\).</p><p>Utveckla också kvadraten:</p><p>\\((x+2)^2=x^2+4x+4\\).</p><p>Hela uttrycket blir därför \\(2x^2+4x+4-a^2\\). Konstanttermen är \\(4-a^2\\).</p><p>Villkoret \\(4-a^2=-5\\) ger \\(a^2=9\\).</p><p><strong>\\(a=3\\) eller \\(a=-3\\).</strong></p>",
     "familj": "multiplicera_parenteser__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.05",
@@ -100,10 +83,7 @@ window.BANKMA2 = [
     "s": "<p>Först utvecklas parenteserna:</p><p>\\((x+6)(x-1)=x^2+5x-6\\).</p><p>Därför blir \\(x^2+5x-6-x^2=5x-6\\).</p><p><strong>\\(5x-6\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.06",
@@ -120,10 +100,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla vänsterledet:</p><p>\\((x+b)(x-4)=x^2+(b-4)x-4b\\).</p><p>Jämför koefficienterna med \\(x^2+3x-28\\). Då ska \\(b-4=3\\), alltså \\(b=7\\).</p><p>Kontroll: \\(-4\\cdot7=-28\\), så även konstanttermen stämmer.</p><p><strong>\\(b=7\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.07",
@@ -140,10 +117,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla med konjugatregeln.</p><p>\\[(4x+5)(4x-5)\\]</p>",
     "s": "<p>\\[(4x+5)(4x-5)=(4x)^2-5^2.\\]</p><p><strong>\\(16x^2-25\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.08",
@@ -160,10 +134,7 @@ window.BANKMA2 = [
     "s": "<p>Se vänsterledet som en differens av två kvadrater:</p><p>\\([(x+4)-(x-4)]\\,[(x+4)+(x-4)]=96\\).</p><p>\\(8\\cdot2x=96\\Rightarrow16x=96\\Rightarrow x=6\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "konjugatregeln__ekvation_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.09",
@@ -180,10 +151,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv talen som \\(60+2\\) och \\(60-2\\):</p><p>\\(62\\cdot58=(60+2)(60-2)=60^2-2^2=3600-4\\).</p><p><strong>3596</strong></p>",
     "familj": "konjugatregeln__numerisk_berakning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.10",
@@ -200,10 +168,7 @@ window.BANKMA2 = [
     "s": "<p>Exempel på punkter är \\((-1,1)\\) och \\((1,2)\\).</p><p>Då blir \\(k=(2-1)/(1-(-1))=0,5\\). Skärningen med \\(y\\)-axeln är 1,5.</p><p><strong>\\(y=0,5x+1,5\\).</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.11",
@@ -220,10 +185,7 @@ window.BANKMA2 = [
     "s": "<p>Låt linjen skära x-axeln i \\(A=(a,0)\\) och y-axeln i \\(B=(0,b)\\), där \\(a,b&gt;0\\).</p><p>Triangelns area ger \\(ab/2=45\\), alltså \\(ab=90\\) och \\(b=90/a\\).</p><p>Linjen genom A och B har riktningskoefficienten \\(-b/a\\), så den kan skrivas \\(y=b-(b/a)x\\).</p><p>Punkten \\((2,10)\\) ligger på linjen:</p><p>\\(10=b-2b/a\\).</p><p>Sätt in \\(b=90/a\\): \\(10=90/a-180/a^2\\).</p><p>Multiplicera med \\(a^2\\): \\(10a^2=90a-180\\), alltså \\(a^2-9a+18=0\\).</p><p>\\((a-3)(a-6)=0\\), så \\(a=3\\) eller \\(a=6\\).</p><p>Då blir \\(b=30\\) respektive \\(b=15\\).</p><p><strong>Linjerna är \\(y=-10x+30\\) och \\(y=-2,5x+15\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.12",
@@ -240,10 +202,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar med 2 från −2 till 0 minskar \\(f(x)\\) med 4. Därför är \\(k=-2\\).</p><p>Tabellen visar att \\(f(0)=5\\), alltså \\(m=5\\).</p><p>\\(f(x)=-2x+5\\) och \\(f(8)=-16+5=-11\\).</p><p><strong>\\(f(x)=-2x+5\\) och \\(f(8)=-11\\).</strong></p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.13",
@@ -260,10 +219,7 @@ window.BANKMA2 = [
     "s": "<p> Det ger riktningskoefficienten och därefter kan konstanttermen bestämmas.</p><p>\\(k=(-4-8)/(5-(-1))=-2\\). Med \\((-1,8)\\): \\(8=2+m\\Rightarrow m=6\\), så \\(f(x)=-2x+6\\).</p><p>\\(-2x+6=2\\Rightarrow x=2\\).</p><p><strong>\\(x=2\\).</strong></p>",
     "familj": "linjara_representationer__vaxla_mellan_representationer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.14",
@@ -280,10 +236,7 @@ window.BANKMA2 = [
     "s": "<p>\\(k=(15-7)/(6-2)=2\\).</p><p>\\(7=2\\cdot2+m\\Rightarrow m=3\\).</p><p><strong>\\(y=2x+3\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.15",
@@ -300,10 +253,7 @@ window.BANKMA2 = [
     "t": "<p>Tabellen beskriver en linjär funktion.</p><table class=\"data\"><tr><th>x</th><th>-1</th><th>1</th><th>3</th></tr><tr><td>y</td><td>7</td><td>3</td><td>-1</td></tr></table><p>Bestäm funktionens formel.</p>",
     "s": "<p>När x ökar med 2 minskar y med 4. Riktningskoefficienten är därför \\(k=-2\\).</p><p>Använd till exempel punkten \\((1,3)\\): \\(3=-2\\cdot1+m\\), så \\(m=5\\).</p><p><strong>\\(y=-2x+5\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.16",
@@ -320,10 +270,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(f(x))=k(kx+m)+m=k^2x+m(k+1)\\).</p><p>Därför \\(k^2=4\\), så \\(k=2\\) eller \\(k=-2\\).</p><p>Om \\(k=2\\) ger \\(f(1)=3\\) att \\(2+m=3\\Rightarrow m=1\\). Då blir \\(m(k+1)=3\\), vilket stämmer.</p><p>Om \\(k=-2\\) ger \\(-2+m=3\\Rightarrow m=5\\), men då blir \\(m(k+1)=-5\\), vilket inte stämmer.</p><p><strong>\\(f(x)=2x+1\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.17",
@@ -340,10 +287,7 @@ window.BANKMA2 = [
     "s": "<p>Vinkelräta linjer har riktningskoefficienter vars produkt är \\(-1\\):</p><p>\\((a-1)(2a+1)=-1\\).</p><p>\\(2a^2-a-1=-1\\Rightarrow2a^2-a=0\\Rightarrow a(2a-1)=0\\).</p><p>Alltså är \\(a=0\\) eller \\(a=\\frac12\\).</p><p>Om \\(a=0\\): \\(L_1:y=-x+2\\), \\(L_2:y=x-4\\). Skärningen är \\((3,-1)\\), alltså under \\(x\\)-axeln.</p><p>Om \\(a=\\frac12\\): \\(L_1:y=-\\frac12x+2\\), \\(L_2:y=2x-4\\). Skärningen fås av \\(-\\frac12x+2=2x-4\\), vilket ger \\(x=2,4\\) och \\(y=0,8\\).</p><p>Den skärningen ligger ovanför \\(x\\)-axeln.</p><p><strong>\\(a=\\frac12\\)</strong></p>",
     "familj": "rata_linjens_ekvation__parallella_och_vinkelrata_linjer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.18",
@@ -360,10 +304,7 @@ window.BANKMA2 = [
     "s": "<p>Linjen går till exempel genom \\((0,4)\\) och \\((1,2)\\).</p><p>\\(k=\\frac{2-4}{1-0}=-2\\) och skärningen med \\(y\\)-axeln är \\(m=4\\).</p><p>För nollstället sätts \\(y=0\\): \\(0=-2x+4\\Rightarrow x=2\\).</p><p><strong>\\(k=-2\\), \\(m=4\\), nollstället är \\(x=2\\).</strong></p>",
     "familj": "rata_linjens_ekvation__riktningskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.19",
@@ -380,10 +321,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna är \\((0,-5)\\) och \\((4,3)\\).</p><p>Riktningskoefficienten är \\(k=(3-(-5))/(4-0)=8/4=2\\).</p><p>När \\(x=0\\) är \\(y=-5\\), så \\(m=-5\\).</p><p><strong>\\(y=2x-5\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.20",
@@ -400,10 +338,7 @@ window.BANKMA2 = [
     "s": "<p>Använd konjugatregeln:</p><p>\\(x^2-36=13\\), alltså \\(x^2=49\\).</p><p>Därför \\(x=7\\) eller \\(x=-7\\).</p><p><strong>\\(x=\\pm7\\)</strong></p>",
     "familj": "konjugatregeln__ekvation_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.21",
@@ -420,10 +355,7 @@ window.BANKMA2 = [
     "s": "<p>Använd konjugatregeln \\((a-b)(a+b)=a^2-b^2\\).</p><p>Här är \\(a=7y\\) och \\(b=3\\):</p><p>\\((7y-3)(7y+3)=(7y)^2-3^2\\).</p><p><strong>\\(49y^2-9\\).</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.22",
@@ -440,10 +372,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen utan att först utveckla båda kvadraterna.</p><p>\\[(x+4)^2-(x-4)^2=64.\\]</p>",
     "s": "<p>Se vänsterledet som en differens av två kvadrater:</p><p>\\[[(x+4)-(x-4)]\\,[(x+4)+(x-4)]=64.\\]</p><p>Det ger \\(8\\cdot 2x=64\\), alltså \\(16x=64\\).</p><p><strong>\\(x=4\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.23",
@@ -460,10 +389,7 @@ window.BANKMA2 = [
     "s": "<p>\\((3x+4)^2=(3x)^2+2\\cdot3x\\cdot4+4^2\\).</p><p><strong>\\(9x^2+24x+16\\)</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.24",
@@ -480,10 +406,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla vänsterledet:</p><p>\\((x+b)^2=x^2+2bx+b^2\\).</p><p>Jämför koefficienten framför \\(x\\): \\(2b=12\\), alltså \\(b=6\\).</p><p>Då är \\(c=b^2=36\\).</p><p><strong>\\(b=6\\) och \\(c=36\\)</strong></p>",
     "familj": "kvadreringsreglerna__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.25",
@@ -500,10 +423,7 @@ window.BANKMA2 = [
     "s": "<p>Kontroll av \\((2,3)\\): den andra ekvationen ger \\(2\\cdot2+3=7\\), men den första ger \\(8-9=-1\\ne5\\). Svaret är alltså fel.</p><p>Ur den andra ekvationen: \\(y=7-2x\\).</p><p>Sätt in i den första: \\(4x-3(7-2x)=5\\Rightarrow10x=26\\Rightarrow x=\\frac{13}{5}\\).</p><p>\\(y=7-\\frac{26}{5}=\\frac95\\).</p><p><strong>\\((x,y)=(\\frac{13}{5},\\frac95)\\).</strong></p>",
     "familj": "linjara_ekvationssystem__kontrollera_losning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.26",
@@ -520,10 +440,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=2y-3\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(6 y - 18=0\\).</p><p>Därifrån fås \\(y=3\\).</p><p>Sätt tillbaka värdet i \\(x=2y-3\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(3,3)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.27",
@@ -540,10 +457,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet med additionsmetoden.</p><p>\\(\\begin{cases}4x+3y=5\\\\2x-3y=7\\end{cases}\\)</p>",
     "s": "<p>Addera ekvationerna: \\(6x=12\\), alltså \\(x=2\\).</p><p>Sätt in i den andra: \\(4-3y=7\\Rightarrow -3y=3\\Rightarrow y=-1\\).</p><p><strong>\\((x,y)=(2,-1)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.28",
@@ -560,10 +474,7 @@ window.BANKMA2 = [
     "s": "<p>Linjerna skär varandra i punkten \\((4,4)\\).</p><p><strong>a) \\((x,y)=(4,4)\\).</strong></p><p>Skärningspunkten är den punkt som uppfyller båda ekvationerna samtidigt.</p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.29",
@@ -580,10 +491,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna: \\(2x=12\\Rightarrow x=6\\). Då \\(y=5\\).</p><p><strong>\\((6,5)\\).</strong></p>",
     "familj": "linjara_ekvationssystem__losa_system",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.30",
@@ -600,10 +508,7 @@ window.BANKMA2 = [
     "s": "<p>För att systemet ska beskriva samma linje måste den andra ekvationen vara en konstant multipel av den första.</p><p>Om första ekvationen multipliceras med 2 måste koefficienterna och högerledet också dubbleras. Jämförelse av x-koefficienterna ger \\(2a=6\\).</p><p>\\(a=3\\).</p><p>Med detta värde blir hela den andra ekvationen exakt dubbla den första, så systemet har oändligt många lösningar.</p><p><strong>\\(a=3\\).</strong></p>",
     "familj": "linjara_ekvationssystem__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.31",
@@ -620,10 +525,7 @@ window.BANKMA2 = [
     "s": "<p>Systemet saknar unik lösning när koefficienterna är proportionella.</p><p>Det kräver \\(\\frac{a-1}{2}=\\frac{2}{a-1}\\), alltså \\((a-1)^2=4\\).</p><p>Därför \\(a=3\\) eller \\(a=-1\\).</p><p>Om \\(a=3\\) blir båda ekvationerna \\(2x+2y=4\\), alltså oändligt många lösningar.</p><p>Om \\(a=-1\\) blir ekvationerna \\(-2x+2y=4\\) och \\(2x-2y=4\\). Vänsterleden är motsatta men högerleden inte, alltså ingen lösning.</p><p><strong>a) Exakt en lösning för \\(a\\ne3,-1\\). b) Ingen lösning för \\(a=-1\\). c) Oändligt många lösningar för \\(a=3\\).</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.32",
@@ -638,10 +540,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(v,u,b\\) vara antal vuxen-, ungdoms- och barnbiljetter.</p><p>\\(v+u+b=120\\), \\(140v+90u+60b=12900\\) och \\(v=2b\\).</p><p>Sätt \\(v=2b\\). Då är \\(u=120-3b\\).</p><p>\\(280b+90(120-3b)+60b=12900\\).</p><p>\\(70b+10800=12900\\Rightarrow b=30\\).</p><p>Då \\(v=60\\) och \\(u=30\\).</p><p><strong>60 vuxenbiljetter, 30 ungdomsbiljetter och 30 barnbiljetter.</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__textproblem_tre_obekanta",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.33",
@@ -656,10 +555,7 @@ window.BANKMA2 = [
     "s": "<p>Från \\(x+y=7\\) fås \\(x=7-y\\). Från \\(y+z=8\\) fås \\(z=8-y\\).</p><p>Sätt in i första ekvationen:</p><p>\\((7-y)+y+(8-y)=12\\Rightarrow15-y=12\\Rightarrow y=3\\).</p><p>Då är \\(x=4\\) och \\(z=5\\).</p><p><strong>\\((x,y,z)=(4,3,5)\\)</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.34",
@@ -676,10 +572,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera den andra ekvationen med 2:</p><p>\\(2y=4x+8\\Rightarrow y=2x+4\\).</p><p>Det är exakt samma ekvation som den första.</p><p><strong>Systemet har därför oändligt många lösningar.</strong></p>",
     "familj": "speciella_ekvationssystem__beroende_och_motsagelse",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.35",
@@ -696,10 +589,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra ekvationens vänsterled är dubbelt så stort som den första. Om även högerledet är dubbelt, alltså \\(b=10\\), beskriver ekvationerna samma linje och systemet har oändligt många lösningar. Om \\(b\\ne10\\) blir linjerna parallella och olika.</p><p><strong>Oändligt många lösningar för alla \\(a\\) när \\(b=10\\). Ingen lösning för alla \\(a\\) när \\(b\\ne10\\).</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.36",
@@ -716,10 +606,7 @@ window.BANKMA2 = [
     "s": "<p>Andra ekvationen ger \\(y=3x+2\\). För ingen lösning måste linjerna vara parallella men olika. Om \\(a=3\\) blir de i stället samma linje. För andra värden på \\(a\\) skär de varandra.</p><p><strong>Det finns inget sådant värde på \\(a\\).</strong></p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.37",
@@ -736,10 +623,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara liter 20-procentig lösning och \\(y\\) liter 50-procentig.</p><p>\\(x+y=12\\).</p><p>Mängden salt ska vara \\(0,30\\cdot12=3,6\\) liter, alltså \\(0,20x+0,50y=3,6\\).</p><p>Med \\(x=12-y\\): \\(0,20(12-y)+0,50y=3,6\\Rightarrow0,30y=1,2\\Rightarrow y=4\\).</p><p>Då \\(x=8\\).</p><p><strong>8 liter av 20 %-lösningen och 4 liter av 50 %-lösningen.</strong></p>",
     "familj": "ekvationssystem_tillampningar__blandningsproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.38",
@@ -756,11 +640,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) och \\(y\\) vara liter av A respektive B.</p><p>\\[\\begin{cases}x+y=18\\0,12x+0,30y=0,22\\cdot18\\end{cases}\\]</p><p>Högerledet i den andra ekvationen är 3,96. Sätt \\(x=18-y\\):</p><p>\\(0,12(18-y)+0,30y=3,96\\Rightarrow2,16+0,18y=3,96\\Rightarrow y=10\\).</p><p>Då \\(x=8\\). <strong>8 liter A och 10 liter B.</strong></p><p>b) Om högst 8 liter B används blir koncentratmängden som mest \\(0,12\\cdot10+0,30\\cdot8=3,60\\) liter. Det motsvarar \\(3,60/18=0,20=20\\%\\).</p><p><strong>Nej. Med bara 8 liter B kan blandningen som mest bli 20 %.</strong></p>",
     "familj": "ekvationssystem_tillampningar__blandningsproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.39",
@@ -777,10 +657,7 @@ window.BANKMA2 = [
     "s": "<p>Låt kaffe kosta \\(x\\) kr och te \\(y\\) kr.</p><p>\\(3x+2y=128\\) och \\(2x+5y=169\\).</p><p>Multiplicera första ekvationen med 5 och den andra med 2:</p><p>\\(15x+10y=640\\), \\(4x+10y=338\\).</p><p>Subtraktion ger \\(11x=302\\), alltså \\(x=\\frac{302}{11}\\approx27,45\\).</p><p>Sätt in i första ekvationen: \\(2y=128-3\\cdot\\frac{302}{11}=\\frac{502}{11}\\), alltså \\(y=\\frac{251}{11}\\approx22,82\\).</p><p><strong>Kaffe cirka 27,45 kr och te cirka 22,82 kr.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.40",
@@ -797,10 +674,7 @@ window.BANKMA2 = [
     "s": "<p>Första kvadreringsregeln ger \\((x+5)^2=x^2+2\\cdot x\\cdot5+5^2\\).</p><p><strong>\\(x^2+10x+25\\)</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.41",
@@ -817,10 +691,7 @@ window.BANKMA2 = [
     "s": "<p>Använd distributiva lagen: varje term i den första parentesen multipliceras med varje term i den andra.</p><p>\\(2x^2+10x-3x-15=\\)<strong>\\(2x^2+7x-15\\)</strong>.</p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.42",
@@ -837,10 +708,7 @@ window.BANKMA2 = [
     "s": "<p>\\((5a-2)(5a+2)=(5a)^2-2^2\\).</p><p><strong>\\(25a^2-4\\)</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.43",
@@ -857,10 +725,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla den givna kvadraten:</p><p>\\((x-6)^2=x^2-12x+36\\).</p><p>Jämför med \\(x^2+ax+36\\). Koefficienten framför \\(x\\) måste därför vara −12.</p><p><strong>\\(a=-12\\).</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.44",
@@ -877,10 +742,7 @@ window.BANKMA2 = [
     "s": "<p>Det är en differens av två kvadrater:</p><p>\\(x^2-25=x^2-5^2\\).</p><p>Med konjugatregeln baklänges fås <strong>\\((x-5)(x+5)\\)</strong>.</p>",
     "familj": "faktorisering__bryt_ut_gemensam_faktor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.45",
@@ -897,10 +759,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[(x+6)(x-6)=13.\\]</p>",
     "s": "<p>Vänsterledet är en differens av två kvadrater:</p><p>\\[x^2-36=13.\\]</p><p>Då får vi \\(x^2=49\\) och därför</p><p><strong>\\(x=7\\) eller \\(x=-7\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.46",
@@ -917,10 +776,7 @@ window.BANKMA2 = [
     "s": "<p>Använd \\((a+b)^2=a^2+2ab+b^2\\) och \\((a-b)^2=a^2-2ab+b^2\\).</p><p>a) \\((x+6)^2=x^2+2\\cdot x\\cdot6+6^2=x^2+12x+36\\).</p><p>b) \\((3x-2)^2=(3x)^2-2\\cdot3x\\cdot2+2^2=9x^2-12x+4\\).</p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.47",
@@ -937,11 +793,7 @@ window.BANKMA2 = [
     "s": "<p>För varje uttryck: hitta den största faktor som finns i alla termer, bryt ut den framför parentesen och kontrollera genom att multiplicera tillbaka.</p><p>Skillnaden är</p><p>\\((n+2)^2-n^2=n^2+4n+4-n^2=4(n+1)\\).</p><p>Eftersom \\(n\\) är udda är \\(n+1\\) jämnt. Skriv \\(n+1=2k\\).</p><p>Då blir skillnaden \\(4\\cdot2k=8k\\).</p><p><strong>Skillnaden är alltså alltid delbar med 8.</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.48",
@@ -958,11 +810,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla med kvadreringsreglerna:</p><p>\\((n+3)^2=n^2+6n+9\\) och \\((n-3)^2=n^2-6n+9\\).</p><p>Differensen blir \\(12n\\).</p><p><strong>Eftersom \\(n\\) är ett heltal är \\(12n\\) alltid delbart med 12.</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.49",
@@ -979,10 +827,7 @@ window.BANKMA2 = [
     "s": "<p>Använd kvadreringsregeln \\((a\\pm b)^2=a^2\\pm2ab+b^2\\).</p><p>\\((a-b)^2=a^2-2ab+b^2\\).</p><p>\\((2x)^2-2\\cdot2x\\cdot5+5^2=\\)<strong>\\(4x^2-20x+25\\)</strong>.</p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.50",
@@ -999,10 +844,7 @@ window.BANKMA2 = [
     "s": "<p>Största gemensamma faktor är \\(4x\\):</p><p><strong>\\(4x(x-3)\\)</strong></p>",
     "familj": "faktorisering__bryt_ut_gemensam_faktor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.51",
@@ -1019,10 +861,7 @@ window.BANKMA2 = [
     "s": "<p> Kontrollera sedan om uttrycket kan faktoriseras ytterligare.</p><p>\\(2x(x^2-9)=2x(x-3)(x+3)\\).</p><p><strong>\\(x=-3,0,3\\).</strong></p>",
     "familj": "faktorisering__faktorisering_for_ekvationslosning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.52",
@@ -1039,10 +878,7 @@ window.BANKMA2 = [
     "s": "<p> Kontrollera sedan om uttrycket kan faktoriseras ytterligare.</p><p>a) Bryt ut \\(6x\\): <strong>\\(6x(2x-3)\\)</strong>.</p><p>b) Använd konjugatregeln för att faktorisera: <strong>\\((3x-5)(3x+5)\\)</strong>.</p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.53",
@@ -1059,10 +895,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen genom faktorisering.</p><p>\\[x^2-11x+24=0.\\]</p>",
     "s": "<p>Vi söker två tal som har produkten 24 och summan 11. Det är 3 och 8.</p><p>\\[x^2-11x+24=(x-3)(x-8).\\]</p><p>Använd nollproduktmetoden.</p><p><strong>\\(x=3\\) eller \\(x=8\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.54",
@@ -1079,10 +912,7 @@ window.BANKMA2 = [
     "s": "<p>För vinkelräta linjer gäller \\(k_1k_2=-1\\). Därför är \\(L\\):s riktningskoefficient \\(-2\\).</p><p>Skriv \\(y=-2x+m\\) och sätt in \\((4,1)\\):</p><p>\\(1=-8+m\\), alltså \\(m=9\\).</p><p><strong>\\(y=-2x+9\\)</strong></p>",
     "familj": "rata_linjens_ekvation__parallella_och_vinkelrata_linjer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.55",
@@ -1099,11 +929,7 @@ window.BANKMA2 = [
     "s": "<p>a) Av grafen kan vi till exempel läsa punkterna \\((0,6)\\) och \\((2,3)\\). Då</p><p>\\(k=\\frac{3-6}{2-0}=-\\frac32=-1,5\\) och \\(m=6\\).</p><p><strong>\\(y=-1,5x+6\\).</strong></p><p>b) Insättning ger \\(9,6,3,0\\) för \\(x=-2,0,2,4\\).</p><table class=\"data\"><tr><th>x</th><th>−2</th><th>0</th><th>2</th><th>4</th></tr><tr><th>y</th><td>9</td><td>6</td><td>3</td><td>0</td></tr></table><p>c) Riktningskoefficienten \\(-1,5\\) betyder att \\(y\\) minskar med 1,5 när \\(x\\) ökar med 1. I tabellen syns samma sak, till exempel som en minskning med 3 när \\(x\\) ökar med 2.</p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.56",
@@ -1120,11 +946,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoren ger \\(kp+m=q\\) och \\(kq+m=p\\).</p><p>Subtrahera ekvationerna:</p><p>\\(k(p-q)=q-p=-(p-q)\\).</p><p>Eftersom \\(p\\ne q\\) kan vi dividera med \\(p-q\\), vilket ger \\(k=-1\\).</p><p>Sätt in i till exempel första ekvationen: \\(-p+m=q\\Rightarrow m=p+q\\).</p><p>Därför är \\(f(x)=-x+p+q\\).</p><p>\\(f\\!\\left(\\frac{p+q}{2}\\right)=-\\frac{p+q}{2}+p+q=\\frac{p+q}{2}\\).</p><p><strong>\\(k=-1\\) och \\(f((p+q)/2)=(p+q)/2\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.57",
@@ -1141,10 +963,7 @@ window.BANKMA2 = [
     "s": "<p>Linjen går genom exempelvis \\((0,-2)\\) och \\((2,0)\\).</p><p>\\(k=1\\) och \\(m=-2\\).</p><p><strong>\\(y=x-2\\).</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.58",
@@ -1161,10 +980,7 @@ window.BANKMA2 = [
     "s": "<p>I skärningspunkten gäller \\(kx=1,4x-6\\).</p><p>\\((1,4-k)x=6\\Rightarrow x=\\frac6{1,4-k}\\).</p><p>För att \\(x\\) ska vara positiv måste \\(k<1,4\\). Kravet \\(x>40\\) ger</p><p>\\(\\frac6{1,4-k}>40\\Rightarrow6>56-40k\\Rightarrow k>1,25\\).</p><p><strong>Alla värden \\(1,25&lt;k&lt;1,4\\) fungerar.</strong></p>",
     "familj": "rata_linjens_ekvation__skarningspunkter_och_axlar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.59",
@@ -1181,10 +997,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna: \\(2x=12\\Rightarrow x=6\\). Då \\(y=3\\).</p><p><strong>\\((6,3)\\).</strong></p>",
     "familj": "linjara_ekvationssystem__losa_system",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.60",
@@ -1201,11 +1014,7 @@ window.BANKMA2 = [
     "s": "<p>\\(4=2a+2\\Rightarrow a=1\\). Då är linjerna \\(y=x+2\\) och \\(x+2y=10\\), som har olika riktningskoefficient.</p><p><strong>\\(a=1\\), och lösningen är unik.</strong></p>",
     "familj": "substitutionsmetoden__parameter_och_losningsvillkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.61",
@@ -1222,10 +1031,7 @@ window.BANKMA2 = [
     "s": "<p>Eliminera \\(y\\) utan att använda någon ny metod utanför kursen. Multiplicera den första ekvationen med \\(a-1\\) och den andra med 2:</p><p>\\(a(a-1)x+2(a-1)y=8(a-1)\\)</p><p>\\(6x+2(a-1)y=18\\).</p><p>Subtraktion ger</p><p>\\([a(a-1)-6]x=8(a-1)-18\\).</p><p>Systemet kan bara sluta ha exakt en lösning när koefficienten framför \\(x\\) blir 0:</p><p>\\(a(a-1)-6=0\\Rightarrow a^2-a-6=0=(a-3)(a+2)\\).</p><p>Alltså \\(a=3\\) eller \\(a=-2\\). Kontroll i ursprungssystemet visar i båda fallen två parallella, olika linjer, alltså ingen lösning.</p><p><strong>Systemet har inte exakt en lösning för \\(a=3\\) eller \\(a=-2\\).</strong></p>",
     "familj": "additionsmetoden__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.62",
@@ -1242,11 +1048,7 @@ window.BANKMA2 = [
     "s": "<p>Linjerna har samma riktningskoefficient \\(k=2\\) men olika m-värden.</p><p>De är därför parallella och kan aldrig skära varandra.</p><p><strong>Systemet saknar lösning; mer zoomning kan inte skapa någon skärningspunkt.</strong></p>",
     "familj": "grafisk_losning_ekvationssystem__digital_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.63",
@@ -1263,10 +1065,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra ekvationens vänsterled är alltid dubbla den första.</p><p>För oändligt många lösningar måste även högerledet vara dubbelt: \\(b=12\\). Detta gäller för alla \\(a\\).</p><p>Om \\(b\\ne12\\) får man två parallella ekvationer som motsäger varandra, alltså ingen lösning.</p><p><strong>Oändligt många: alla \\(a\\), \\(b=12\\). Ingen lösning: alla \\(a\\), \\(b\\ne12\\).</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.64",
@@ -1283,11 +1082,7 @@ window.BANKMA2 = [
     "t": "<p>Två företag hyr ut samma typ av släp. Företag A tar en fast avgift och 18 kr per kilometer. Företag B tar en annan fast avgift och 12 kr per kilometer.</p><p>Vid 40 km kostar A 80 kr mindre än B. Vid 90 km kostar A 220 kr mer än B.</p><p>Går det att bestämma de två fasta avgifterna var för sig? Motivera ditt svar.</p>",
     "s": "<p>Låt de fasta avgifterna vara \\(a\\) respektive \\(b\\).</p><p>Vid 40 km gäller \\(a+18\\cdot40=b+12\\cdot40-80\\), alltså \\(a-b=-320\\).</p><p>Vid 90 km gäller \\(a+18\\cdot90=b+12\\cdot90+220\\), vilket också ger \\(a-b=-320\\).</p><p>De två uppgifterna ger alltså samma enda villkor. Det går inte att bestämma \\(a\\) och \\(b\\) var för sig.</p><p><strong>De fasta avgifterna kan inte bestämmas var för sig. Man kan bara säga att A:s fasta avgift är 320 kr lägre än B:s.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.65",
@@ -1302,10 +1097,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet</p><p>\\[\\begin{cases}x+y+z=12\\\\x-y+z=4\\\\2x+y-z=7\\end{cases}\\]</p>",
     "s": "<p>Subtrahera den andra ekvationen från den första: \\(2y=8\\), alltså \\(y=4\\).</p><p>Då ger den första ekvationen \\(x+z=8\\). Den tredje blir \\(2x-z=3\\).</p><p>Addera \\(x+z=8\\) och \\(2x-z=3\\): \\(3x=11\\), så \\(x=\\frac{11}{3}\\).</p><p>Då är \\(z=8-\\frac{11}{3}=\\frac{13}{3}\\).</p><p><strong>\\((x,y,z)=(\\frac{11}{3},4,\\frac{13}{3})\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.66",
@@ -1322,10 +1114,7 @@ window.BANKMA2 = [
     "s": "<p>I \\(y=kx+m\\) är \\(k=-2\\) och \\(m=3\\).</p><p>Vi söker alltså en linje som <strong>avtar</strong> 2 enheter när \\(x\\) ökar med 1 och som skär y-axeln vid 3.</p><p><strong>Det är graf B.</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.67",
@@ -1342,10 +1131,7 @@ window.BANKMA2 = [
     "s": "<p>\\((4y+1)(y-3)=4y^2-12y+y-3\\).</p><p><strong>\\(4y^2-11y-3\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.68",
@@ -1362,10 +1148,7 @@ window.BANKMA2 = [
     "s": "<p>Konjugatregeln ger \\((a+b)(a-b)=a^2-b^2\\).</p><p>\\((x+9)(x-9)=x^2-9^2\\).</p><p><strong>\\(x^2-81\\)</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.69",
@@ -1382,10 +1165,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledet blir</p><p>\\(3x^2+(4a+2b)x+(a^2-b^2)\\).</p><p>Alltså krävs \\(2a+b=7\\) och \\(a^2-b^2=-5\\).</p><p>Sätt \\(b=7-2a\\):</p><p>\\(a^2-(7-2a)^2=-5\\Rightarrow3a^2-28a+44=0\\).</p><p>Det ger \\(a=2\\) eller \\(a=22/3\\). Det senare ger \\(b=-23/3\\), som inte är positivt.</p><p>För \\(a=2\\) fås \\(b=3\\).</p><p><strong>\\(a=2\\), \\(b=3\\).</strong></p>",
     "familj": "kvadreringsreglerna__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.70",
@@ -1402,10 +1182,7 @@ window.BANKMA2 = [
     "t": "<p>Faktorisera</p><p>\\[x^2-14x+49.\\]</p>",
     "s": "<p>Använd kvadreringsregeln baklänges:</p><p>\\[(x-7)^2=x^2-14x+49.\\]</p><p><strong>\\(x^2-14x+49=(x-7)^2\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.71",
@@ -1422,10 +1199,7 @@ window.BANKMA2 = [
     "s": "<p>Linjen går genom \\((0,1)\\) och \\((2,3)\\), så \\(k=1\\) och \\(m=1\\).</p><p>Alltså \\(f(x)=x+1\\). Då \\(f(6,5)=7,5\\).</p><p><strong>\\(f(x)=x+1\\) och \\(f(6,5)=7,5\\).</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.72",
@@ -1442,10 +1216,7 @@ window.BANKMA2 = [
     "s": "<p>Skärningen med x-axeln vid \\(x=4\\) betyder att punkten \\((4,0)\\) ligger på linjen. Den andra punkten är \\((10,-9)\\).</p><p>Riktningskoefficienten blir</p><p>\\(k=\\frac{-9-0}{10-4}=\\frac{-9}{6}=-1,5\\).</p><p>Sätt in punkten \\((4,0)\\) i \\(y=kx+m\\):</p><p>\\(0=-1,5\\cdot4+m\\Rightarrow m=6\\).</p><p><strong>Linjen har ekvationen \\(y=-1,5x+6\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.73",
@@ -1462,10 +1233,7 @@ window.BANKMA2 = [
     "s": "<p>Riktningskoefficienten är \\(k=\\frac{11-5}{4-1}=2\\).</p><p>Sätt in \\((1,5)\\) i \\(y=2x+m\\): \\(5=2+m\\), alltså \\(m=3\\).</p><p><strong>\\(y=2x+3\\)</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.74",
@@ -1480,10 +1248,7 @@ window.BANKMA2 = [
     "s": "<p>Första minus andra ger \\(z=6\\). Då \\(y=5\\), och \\(x=4\\).</p><p><strong>\\((4,5,6)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.75",
@@ -1498,10 +1263,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera \\(x+z=9\\) från \\(x+y+z=15\\): \\(y=6\\).</p><p>Sätt in \\(y=6\\) i \\(x+y=11\\): \\(x=5\\).</p><p>Sätt sedan in \\(x=5\\) i \\(x+z=9\\): \\(z=4\\).</p><p><strong>\\((x,y,z)=(5,6,4)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.76",
@@ -1518,10 +1280,7 @@ window.BANKMA2 = [
     "s": "<p>Startvärdet är 850 och förändringen är −32 liter per minut:</p><p>\\(V(t)=850-32t\\).</p><p>\\(850-32t=530\\Rightarrow32t=320\\Rightarrow t=10\\).</p><p><strong>\\(V(t)=850-32t\\) och 530 liter återstår efter 10 minuter.</strong></p>",
     "familj": "linjara_representationer__text_till_linjarmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.77",
@@ -1536,10 +1295,7 @@ window.BANKMA2 = [
     "t": "<p>Till ett evenemang säljs tre sorters biljetter för 60 kr, 100 kr respektive 150 kr. Totalt säljs 50 biljetter för 4 700 kr.</p><p>Intäkten från 60-kronorsbiljetterna är lika stor som intäkten från 150-kronorsbiljetterna.</p><p>Bestäm hur många biljetter av varje sort som säljs.</p>",
     "s": "<p>Låt antalen vara \\(x,y,z\\). Då gäller</p><p>\\[\\begin{cases}x+y+z=50\\\\60x+100y+150z=4700\\\\60x=150z\\end{cases}\\]</p><p>Den tredje ekvationen ger \\(2x=5z\\). Sätt \\(z=2t\\), så är \\(x=5t\\). Då blir \\(y=50-7t\\).</p><p>Sätt in i intäktsekvationen:</p><p>\\[60(5t)+100(50-7t)+150(2t)=4700.\\]</p><p>\\[5000-100t=4700\\Rightarrow t=3.\\]</p><p>Alltså \\(x=15\\), \\(z=6\\) och \\(y=29\\).</p><p><strong>15 biljetter för 60 kr, 29 för 100 kr och 6 för 150 kr.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.78",
@@ -1554,10 +1310,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera den andra ekvationen från den första:</p><p>\\((x+y+z)-(x+y)=12-7\\Rightarrow z=5\\).</p><p>Sätt in \\(z=5\\) i \\(y+z=9\\): \\(y+5=9\\Rightarrow y=4\\).</p><p>Sätt sedan in \\(y=4\\) i \\(x+y=7\\): \\(x+4=7\\Rightarrow x=3\\).</p><p><strong>\\((x,y,z)=(3,4,5)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.79",
@@ -1574,10 +1327,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm \\(k\\) så att systemet får oändligt många lösningar.</p><p>\\(\\begin{cases}x+2y=5\\\\3x+ky=15\\end{cases}\\)</p>",
     "s": "<p>För oändligt många lösningar måste ekvationerna beskriva samma linje.</p><p>Om den första ekvationen multipliceras med 3 får vi</p><p>\\[3x+6y=15.\\]</p><p>Då måste \\(k=6\\).</p><p><strong>\\(k=6\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.80",
@@ -1594,10 +1344,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara vuxenbiljetter och \\(y\\) ungdomsbiljetter.</p><p>\\[\\begin{cases}x+y=86\\140x+90y=9390\\end{cases}\\]</p><p>Multiplicera första ekvationen med 90: \\(90x+90y=7740\\).</p><p>Subtraktion ger \\(50x=1650\\Rightarrow x=33\\).</p><p>Då \\(y=86-33=53\\).</p><p><strong>33 vuxenbiljetter och 53 ungdomsbiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.81",
@@ -1614,10 +1361,7 @@ window.BANKMA2 = [
     "s": "<p>a) Den andra ekvationen förenklas till \\(y=2x+3\\). Linjerna är samma: <strong>oändligt många lösningar</strong>.</p><p>b) Linjerna har samma riktningskoefficient men olika skärning med \\(y\\)-axeln: <strong>ingen lösning</strong>.</p><p>c) Linjerna har olika riktningskoefficient och skär varandra en gång: <strong>en lösning</strong>.</p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.82",
@@ -1634,10 +1378,7 @@ window.BANKMA2 = [
     "s": "<p>Systemet kan bara få något annat än exakt en lösning när linjernas koefficienter är proportionella.</p><p>Då måste \\(\\frac{a+1}{2}=\\frac{2}{a+1}\\), alltså \\((a+1)^2=4\\).</p><p>Det ger \\(a=1\\) eller \\(a=-3\\).</p><p>Om \\(a=1\\) blir båda ekvationerna \\(2x+2y=4\\): oändligt många lösningar.</p><p>Om \\(a=-3\\) blir ekvationerna \\(-2x+2y=4\\) och \\(2x-2y=4\\). Multipliceras den första med −1 fås \\(2x-2y=-4\\), vilket motsäger den andra: ingen lösning.</p><p>För alla andra värden på \\(a\\) är linjerna inte parallella och skär därför varandra i exakt en punkt.</p><p><strong>a) \\(a\\ne1,-3\\), b) \\(a=1\\), c) \\(a=-3\\).</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.83",
@@ -1654,10 +1395,7 @@ window.BANKMA2 = [
     "s": "<p>Multiplicera först parenteserna: \\((2x-3)(x+4)=2x^2+5x-12\\).</p><p>Subtrahera sedan \\(2x^2\\).</p><p><strong>Svaret är \\(5x-12\\).</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.84",
@@ -1674,10 +1412,7 @@ window.BANKMA2 = [
     "s": "<p>Använd konjugatregeln \\((a+b)(a-b)=a^2-b^2\\).</p><p>\\(1003\\cdot997=(1000+3)(1000-3)=1000^2-3^2\\).</p><p><strong>999 991.</strong></p>",
     "familj": "konjugatregeln__numerisk_berakning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.85",
@@ -1694,10 +1429,7 @@ window.BANKMA2 = [
     "s": "<p>Andra kvadreringsregeln ger</p><p>\\((2a-3)^2=(2a)^2-2\\cdot2a\\cdot3+3^2\\).</p><p><strong>\\(4a^2-12a+9\\)</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.86",
@@ -1714,10 +1446,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(4y^2=(2y)^2\\). Uttrycket är då en differens av två kvadrater:</p><p>\\((x-3)^2-(2y)^2\\).</p><p>Med konjugatregeln baklänges blir det</p><p><strong>\\((x-3-2y)(x-3+2y)\\)</strong>.</p>",
     "familj": "faktorisering__bryt_ut_gemensam_faktor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.87",
@@ -1734,10 +1463,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna är \\((0,4)\\) och \\((-2,0)\\). \\(k=(4-0)/(0-(-2))=2\\).</p><p><strong>\\(y=2x+4\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.88",
@@ -1754,10 +1480,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(s+t=14\\) och \\(55s+75t=910\\). Med \\(s=14-t\\): \\(770+20t=910\\Rightarrow t=7\\). Då \\(s=7\\).</p><p><strong>7 smörgåsar och 7 sallader.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.89",
@@ -1774,10 +1497,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra ekvationen kan delas med 2: \\(2x+2y=6\\).</p><p>För oändligt många lösningar måste den första ekvationen bli samma ekvation. Då krävs \\(a-1=2\\), alltså \\(a=3\\).</p><p>Om \\(a\\ne3\\) har ekvationerna olika koefficient framför \\(x\\), medan koefficienten framför \\(y\\) och högerledet redan är samma. Linjerna får då olika riktningskoefficient och skär varandra en gång. Därför uppstår aldrig två parallella, skilda linjer.</p><p><strong>a) \\(a=3\\). b) Det finns inget sådant värde.</strong></p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.90",
@@ -1794,10 +1514,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(f(x))=k^2x+m(k+1)\\).</p><p>För att detta ska vara \\(x\\) måste \\(k^2=1\\) och \\(m(k+1)=0\\).</p><p>Om \\(k=1\\) måste \\(m=0\\), men då är \\(f(2)=2\\), vilket inte stämmer.</p><p>Alltså \\(k=-1\\). Då ger \\(f(2)=7\\): \\(-2+m=7\\Rightarrow m=9\\).</p><p><strong>\\(f(x)=-x+9\\).</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.91",
@@ -1814,10 +1531,7 @@ window.BANKMA2 = [
     "s": "<p>Båda linjerna har riktningskoefficienten −3, men de skär y-axeln vid 1 respektive −5.</p><p>De är alltså olika parallella linjer.</p><p><strong>Systemet har ingen lösning.</strong></p>",
     "familj": "speciella_ekvationssystem__beroende_och_motsagelse",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.92",
@@ -1834,10 +1548,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna: \\(3x=12\\Rightarrow x=4\\).</p><p>Sätt in i \\(x-y=1\\): \\(4-y=1\\Rightarrow y=3\\).</p><p><strong>\\((x,y)=(4,3)\\).</strong></p>",
     "familj": "linjara_ekvationssystem__losa_system",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.93",
@@ -1854,10 +1565,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv den andra ekvationen som \\(y=2x-\\frac53\\).</p><p>För att linjerna ska vara parallella måste de ha samma riktningskoefficient. Då krävs \\(a=2\\).</p><p>Skärningarna med \\(y\\)-axeln är då 2 respektive \\(-\\frac53\\), så linjerna är olika och skär inte varandra.</p><p><strong>\\(a=2\\)</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.94",
@@ -1874,10 +1582,7 @@ window.BANKMA2 = [
     "t": "<p>Ett kafé säljer 52 drycker under en rast. Kaffe kostar 28 kr och te kostar 22 kr. Intäkten blir 1 300 kr.</p><p>Bestäm hur många kaffe och hur många te som säljs.</p>",
     "s": "<p>Låt \\(k\\) vara antal kaffe och \\(t\\) antal te.</p><p>\\[\\begin{cases}k+t=52\\\\28k+22t=1300\\end{cases}\\]</p><p>Multiplicera den första ekvationen med 22: \\(22k+22t=1144\\).</p><p>Subtraktion ger \\(6k=156\\), alltså \\(k=26\\). Då är \\(t=26\\).</p><p><strong>26 kaffe och 26 te.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.95",
@@ -1894,10 +1599,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla \\((x+7)^2\\):</p><p>\\((x+7)^2=x^2+14x+49\\).</p><p>Jämför med \\(x^2+ax+49\\).</p><p><strong>\\(a=14\\).</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.96",
@@ -1914,10 +1616,7 @@ window.BANKMA2 = [
     "s": "<p>Båda termerna innehåller faktorn \\(3x\\):</p><p>\\(6x^2+9x=3x(2x+3)\\).</p><p><strong>\\(3x(2x+3)\\)</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.97",
@@ -1934,10 +1633,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra ekvationen kan delas med 2 och blir \\(y=-3x+4\\), alltså samma ekvation som den första.</p><p><strong>Systemet har oändligt många lösningar.</strong></p>",
     "familj": "speciella_ekvationssystem__beroende_och_motsagelse",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.102",
@@ -1954,10 +1650,7 @@ window.BANKMA2 = [
     "s": "<p>En linje skrivs \\(y=kx+m\\).</p><p>Riktningskoefficienten är given: \\(k=-3\\). Punkten \\((0,7)\\) ligger på y-axeln, så den visar direkt att \\(m=7\\).</p><p><strong>Linjen är \\(y=-3x+7\\).</strong></p>",
     "familj": "rata_linjens_ekvation__riktningskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.103",
@@ -1974,10 +1667,7 @@ window.BANKMA2 = [
     "s": "<p>Linjen går genom \\((0,3)\\) och \\((6,0)\\).</p><p>\\(k=(0-3)/(6-0)=-0,5\\) och \\(m=3\\).</p><p><strong>\\(y=-0,5x+3\\).</strong></p>",
     "familj": "rata_linjens_ekvation__tolka_och_anvanda_kxm",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.104",
@@ -1994,10 +1684,7 @@ window.BANKMA2 = [
     "s": "<p>Från \\(x=-2\\) till 0 ökar \\(x\\) med 2 medan \\(y\\) minskar med 4. Därför är \\(k=-2\\).</p><p>När \\(x=0\\) är \\(y=3\\), alltså \\(m=3\\).</p><p>Funktionen är \\(y=-2x+3\\).</p><p>För \\(x=4\\) ska därför \\(y=-8+3=-5\\).</p><p><strong>Värdet −4 är fel; det ska vara −5. Formeln är \\(y=-2x+3\\).</strong></p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.105",
@@ -2014,10 +1701,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoren ger \\(2a+b=8\\) och \\(2b+a=5\\).</p><p>Från första \\(b=8-2a\\). Då \\(2(8-2a)+a=5\\Rightarrow16-3a=5\\Rightarrow a=11/3\\).</p><p>Då \\(b=8-22/3=2/3\\).</p><p><strong>\\(f(x)=\\frac{11}{3}x+\\frac{2}{3}\\)</strong> och <strong>\\(g(x)=\\frac{2}{3}x+\\frac{11}{3}\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.107",
@@ -2034,10 +1718,7 @@ window.BANKMA2 = [
     "s": "<p>Linjerna skär varandra i punkten \\((2,3)\\).</p><p>I skärningspunkten har båda linjerna samma \\(x\\)-värde och samma \\(y\\)-värde. Punkten uppfyller därför båda ekvationerna samtidigt.</p><p><strong>Lösningen är \\((2,3)\\).</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.108",
@@ -2054,10 +1735,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(x=y\\) kan den andra ekvationen skrivas \\(3x-x=4\\), alltså \\(x=2\\). Då är också \\(y=2\\).</p><p>Sätt in i den första ekvationen:</p><p>\\(2(a+1)+4=10\\Rightarrow2a+6=10\\Rightarrow a=2\\).</p><p><strong>\\(a=2\\).</strong></p>",
     "familj": "linjara_ekvationssystem__losa_system",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.109",
@@ -2074,10 +1752,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=y+4\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(3 y - 9=0\\).</p><p>Därifrån fås \\(y=3\\).</p><p>Sätt tillbaka värdet i \\(x=y+4\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(7,3)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.110",
@@ -2094,10 +1769,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((6)x=18\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(4\\cdot(3)+3y=18\\Rightarrow y=2\\).</p><p><strong>\\((x,y)=(3,2)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.112",
@@ -2114,10 +1786,7 @@ window.BANKMA2 = [
     "s": "<p> Det ger riktningskoefficienten och därefter kan konstanttermen bestämmas.</p><p>\\(k=(-1-9)/(7-2)=-2\\).</p><p>\\(9=-4+m\\Rightarrow m=13\\), så \\(f(x)=-2x+13\\).</p><p>\\(-2x+13=5\\Rightarrow x=4\\).</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "linjara_representationer__vaxla_mellan_representationer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.113",
@@ -2134,10 +1803,7 @@ window.BANKMA2 = [
     "s": "<p>I formen \\(y=kx+m\\) är \\(k\\) riktningskoefficienten och \\(m\\) skärningen med y-axeln.</p><p>Här är \\(k=4\\) och \\(m=-3\\).</p><p><strong>Alltså är linjens ekvation \\(y=4x-3\\).</strong></p>",
     "familj": "rata_linjens_ekvation__skarningspunkter_och_axlar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.114",
@@ -2154,10 +1820,7 @@ window.BANKMA2 = [
     "s": "<p>Avståndet från origo till \\(P(3,4)\\) är \\(\\sqrt{3^2+4^2}=5\\).</p><p>Eftersom \\(A\\) ligger på positiva y-axeln blir \\(A=(0,5)\\).</p><p>Riktningskoefficienten är \\(k=(4-5)/(3-0)=-1/3\\).</p><p><strong>Linjen är \\(y=-\\frac13x+5\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.115",
@@ -2174,10 +1837,7 @@ window.BANKMA2 = [
     "s": "<p>Systemet saknar unik lösning när koefficienterna blir proportionella:</p><p>\\((a+2)(a+3)-6=0\\).</p><p>Det ger \\(a^2+5a=0\\Rightarrow a=0\\) eller \\(a=-5\\).</p><p>För \\(a=0\\) blir båda ekvationerna \\(2x+3y=6\\), alltså oändligt många lösningar.</p><p>För \\(a=-5\\) blir ekvationerna \\(-3x+3y=6\\) och \\(2x-2y=6\\). De beskriver parallella olika linjer, alltså ingen lösning.</p><p><strong>Exakt en lösning för \\(a\\ne0,-5\\); ingen lösning för \\(a=-5\\); oändligt många för \\(a=0\\).</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.116",
@@ -2194,10 +1854,7 @@ window.BANKMA2 = [
     "s": "<p>För oändligt många lösningar måste den andra ekvationen beskriva exakt samma linje.</p><p>Högerledet 21 är tre gånger 7, så även koefficienterna måste multipliceras med 3.</p><p>\\(a=9\\) och \\(b=-6\\).</p><p><strong>\\(a=9\\), \\(b=-6\\).</strong></p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.117",
@@ -2214,10 +1871,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(v\\) vara antal vuxenbiljetter, \\(u\\) antal ungdomsbiljetter och \\(f\\) antal fribiljetter.</p><p>\\(v+u+f=300\\), \\(180v+120u=43200\\) och \\(f=\\frac u2\\).</p><p>Sätt in \\(f=\\frac u2\\): \\(v+1,5u=300\\).</p><p>Intäktsekvationen kan delas med 60: \\(3v+2u=720\\).</p><p>Multiplicera den första med 3: \\(3v+4,5u=900\\). Subtraktion ger \\(2,5u=180\\), alltså \\(u=72\\).</p><p>Då \\(f=36\\) och \\(v=300-72-36=192\\).</p><p><strong>192 vuxenbiljetter, 72 ungdomsbiljetter och 36 fribiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.118",
@@ -2234,10 +1888,7 @@ window.BANKMA2 = [
     "s": "<p>Första modellen har \\(k=(40-10)/(12-0)=2,5\\), alltså \\(f(x)=2,5x+10\\).</p><p>Den andra skrivs \\(g(x)=-1,5x+m\\). Punkten \\((12,40)\\) ger \\(40=-18+m\\Rightarrow m=58\\), alltså \\(g(x)=-1,5x+58\\).</p><p>Efter skärningen växer f medan g minskar.</p><p><strong>\\(f(x)&gt;g(x)\\) för \\(x&gt;12\\).</strong></p><p><strong>GeoGebra:</strong> skriv in båda modellerna och kontrollera att skärningspunkten är \\((12,40)\\) och att f ligger över g för \\(x&gt;12\\).</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.119",
@@ -2254,10 +1905,7 @@ window.BANKMA2 = [
     "s": "<p>\\((3x-2)(2x+5)=6x^2+15x-4x-10\\).</p><p><strong>\\(6x^2+11x-10\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.120",
@@ -2274,10 +1922,7 @@ window.BANKMA2 = [
     "s": "<p>\\((2y+5)(2y-5)=(2y)^2-5^2\\).</p><p><strong>\\(4y^2-25\\)</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.123",
@@ -2294,11 +1939,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x\\) ökar med 3 i varje steg. Från 13 till 7 minskar funktionsvärdet med 6, vilket ger \\(k=-2\\).</p><p>Då ska värdena minska med 6 varje gång: \\(13,7,1,-5\\).</p><p>Värdet 2 är alltså fel och ska vara 1.</p><p>Med \\((-1,7)\\): \\(7=-2(-1)+m\\Rightarrow m=5\\).</p><p><strong>Det felaktiga värdet är 2; det ska vara 1. Funktionen är \\(f(x)=-2x+5\\).</strong></p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.124",
@@ -2315,10 +1956,7 @@ window.BANKMA2 = [
     "s": "<p>\\(k=\\frac{-5-5}{2-(-3)}=\\frac{-10}{5}=-2\\).</p><p>Sätt in \\((-3,5)\\): \\(5=-2(-3)+m\\Rightarrow m=-1\\).</p><p><strong>Linjen är \\(y=-2x-1\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.127",
@@ -2335,10 +1973,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet algebraiskt.</p><p>\\(\\begin{cases}3x+2y=7\\\\x-2y=1\\end{cases}\\)</p>",
     "s": "<p>Addera ekvationerna: \\(4x=8\\Rightarrow x=2\\).</p><p>Sätt in i \\(x-2y=1\\): \\(2-2y=1\\Rightarrow -2y=-1\\Rightarrow y=\\frac12\\).</p><p><strong>\\((x,y)=(2,\\frac12)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.128",
@@ -2355,10 +1990,7 @@ window.BANKMA2 = [
     "s": "<p>\\(59+12x=119+7x\\Rightarrow5x=60\\Rightarrow x=12\\).</p><p>B har lägre kostnad per extra film och blir därför billigare för fler än 12 filmer.</p><p><strong>Lika vid 12 filmer; därefter är B billigare.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.129",
@@ -2375,10 +2007,7 @@ window.BANKMA2 = [
     "s": "<p>Skärningspunkten är \\((2,2)\\). Linje 1 har ekvationen \\(y=-x+4\\). Linje 2 går genom \\((0,1)\\) och \\((2,2)\\), alltså \\(y=0,5x+1\\).</p><p><strong>System B och lösningen \\((2,2)\\).</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.130",
@@ -2395,10 +2024,7 @@ window.BANKMA2 = [
     "s": "<p>Linjerna har samma riktningskoefficient men olika skärning med \\(y\\)-axeln. De är parallella.</p><p><strong>Systemet saknar lösning.</strong></p>",
     "familj": "speciella_ekvationssystem__beroende_och_motsagelse",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.131",
@@ -2413,10 +2039,7 @@ window.BANKMA2 = [
     "s": "<p>Addera de två första ekvationerna:</p><p>\\((x+y+z)+(2x-y+z)=6+3\\).</p><p>Det ger \\(3x+2z=9\\).</p><p>Den tredje ekvationen ger alltså ingen ny information precis när \\(c=9\\). Då återstår två oberoende ekvationer med tre obekanta, så systemet har oändligt många lösningar.</p><p>Om \\(c\\ne9\\) kräver de två första ekvationerna \\(3x+2z=9\\), medan den tredje kräver \\(3x+2z=c\\). Kraven motsäger då varandra.</p><p><strong>\\(c=9\\) ger oändligt många lösningar. För \\(c\\ne9\\) saknar systemet lösning.</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.132",
@@ -2433,10 +2056,7 @@ window.BANKMA2 = [
     "s": "<p>En rät linje skrivs \\(y=kx+m\\).</p><p>Här är \\(k=3\\) och \\(m=-2\\).</p><p><strong>\\(y=3x-2\\)</strong></p>",
     "familj": "rata_linjens_ekvation__skarningspunkter_och_axlar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.134",
@@ -2453,10 +2073,7 @@ window.BANKMA2 = [
     "s": "<p>Använd distributiva lagen: varje term i den första parentesen multipliceras med varje term i den andra.</p><p><strong>a) \\(x^2+2x-8\\)</strong></p><p><strong>b) \\(3x^2-14x-5\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.135",
@@ -2473,10 +2090,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla vänsterledet:</p><p>\\(x^2+2ax+a^2-(x^2-2bx+b^2)=2(a+b)x+a^2-b^2\\).</p><p>För att likheten ska gälla för alla \\(x\\) måste</p><p>\\(2(a+b)=10\\Rightarrow a+b=5\\)</p><p>och \\(a^2-b^2=15\\).</p><p>Men \\(a^2-b^2=(a-b)(a+b)\\). Eftersom \\(a+b=5\\) fås \\(5(a-b)=15\\Rightarrow a-b=3\\).</p><p>Lös systemet \\(a+b=5\\), \\(a-b=3\\): \\(a=4\\), \\(b=1\\).</p><p><strong>\\(a=4\\) och \\(b=1\\).</strong></p>",
     "familj": "kvadreringsreglerna__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.136",
@@ -2493,10 +2107,7 @@ window.BANKMA2 = [
     "t": "<p>Uttrycket \\(x^2+kx+24\\) har faktorn \\(x-4\\). Bestäm \\(k\\) och faktorisera sedan uttrycket helt.</p>",
     "s": "<p>Om \\(x-4\\) är en faktor är \\(x=4\\) ett nollställe. Sätt in \\(x=4\\):</p><p>\\[16+4k+24=0\\Rightarrow4k=-40\\Rightarrow k=-10.\\]</p><p>Då är uttrycket \\(x^2-10x+24\\), som faktoriseras till</p><p><strong>\\((x-4)(x-6)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.138",
@@ -2513,11 +2124,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt kostnaderna lika:</p><p>\\(129+1,20x=249+0,60x\\Rightarrow0,60x=120\\Rightarrow x=200\\).</p><p>Abonnemang B har mindre kostnadsökning per minut, 0,60 kr jämfört med 1,20 kr. Därför blir B billigare efter skärningspunkten.</p><p><strong>De kostar lika vid 200 minuter. Vid fler minuter är B billigast.</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.140",
@@ -2534,10 +2141,7 @@ window.BANKMA2 = [
     "t": "<p>Två tal har summan 34. Om det större talet minskas med 4 blir det dubbelt så stort som det mindre talet. Bestäm talen.</p>",
     "s": "<p>Låt \\(x\\) vara det större talet och \\(y\\) det mindre.</p><p>\\(\\begin{cases}x+y=34\\\\x-4=2y\\end{cases}\\)</p><p>Ur den andra ekvationen är \\(x=2y+4\\). Sätt in: \\(2y+4+y=34\\Rightarrow 3y=30\\Rightarrow y=10\\).</p><p>Då är \\(x=24\\).</p><p><strong>Talen är 24 och 10.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.141",
@@ -2554,10 +2158,7 @@ window.BANKMA2 = [
     "s": "<p>a) En parallell, annan linje fungerar, till exempel \\(6x+4y=30\\). Vänsterledet har samma proportion som den första ekvationen men konstanten stämmer inte.</p><p>b) En ekvivalent ekvation fungerar, till exempel \\(6x+4y=24\\).</p><p>c) Punkten \\((2,3)\\) ligger på den givna linjen eftersom \\(3\\cdot2+2\\cdot3=12\\). Välj en annan linje genom punkten som inte är parallell, till exempel \\(x+y=5\\).</p><p><strong>Ett möjligt svar är a) \\(6x+4y=30\\), b) \\(6x+4y=24\\), c) \\(x+y=5\\).</strong></p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.143",
@@ -2574,10 +2175,7 @@ window.BANKMA2 = [
     "s": "<p> Kontrollera sedan om uttrycket kan faktoriseras ytterligare.</p><p>\\(3x(x^2-4)=3x(x-2)(x+2)\\).</p><p><strong>\\(x=-2,0,2\\).</strong></p>",
     "familj": "faktorisering__faktorisering_for_ekvationslosning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.144",
@@ -2594,10 +2192,7 @@ window.BANKMA2 = [
     "s": "<p>\\(k=(12-4)/(3-(-1))=2\\). Med \\((-1,4)\\): \\(4=-2+m\\Rightarrow m=6\\).</p><p><strong>\\(y=2x+6\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_tva_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.145",
@@ -2614,10 +2209,7 @@ window.BANKMA2 = [
     "s": "<p>Första elevens väg: multiplicera första ekvationen med 2:</p><p>\\(14x-4y=36\\). Addera med \\(3x+4y=2\\): \\(17x=38\\Rightarrow x=38/17\\).</p><p>Andra elevens väg: multiplicera andra ekvationen med \\(1/2\\): \\(1,5x+2y=1\\). Addera med första ekvationen: \\(8,5x=19\\Rightarrow x=38/17\\).</p><p>Insättning ger \\(y=-20/17\\).</p><p><strong>Båda metoderna ger \\((38/17,-20/17)\\).</strong></p>",
     "familj": "additionsmetoden__metodresonemang",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.146",
@@ -2634,10 +2226,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((10)x=40\\Rightarrow x=4\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(7\\cdot(4)+1y=31\\Rightarrow y=3\\).</p><p><strong>\\((x,y)=(4,3)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.147",
@@ -2654,10 +2243,7 @@ window.BANKMA2 = [
     "s": "<p>För att eliminera \\(y\\) multiplicerar vi den första ekvationen med 5 och den andra med 3:</p><p>\\(20x+15y=85\\)</p><p>\\(18x-15y=21\\).</p><p>Addition ger \\(38x=106\\Rightarrow x=\\frac{53}{19}\\).</p><p>Sätt in i första ekvationen:</p><p>\\(4\\cdot\\frac{53}{19}+3y=17\\Rightarrow3y=\\frac{111}{19}\\Rightarrow y=\\frac{37}{19}\\).</p><p><strong>\\((x,y)=(53/19,37/19)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.148",
@@ -2674,10 +2260,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((7)x=21\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(2\\cdot(3)+3y=7\\Rightarrow y=\\frac{1}{3}\\).</p><p><strong>\\((x,y)=(3,\\frac{1}{3})\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.149",
@@ -2694,10 +2277,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(a\\ne4\\) är linjerna inte parallella och skär varandra i en punkt.</p><p><strong>Då finns exakt en lösning.</strong></p><p>När \\(a=4\\) blir den andra ekvationen \\(4x+6y=k\\).</p><p>För oändligt många lösningar måste den vara en dubblering av den första ekvationen, alltså \\(4x+6y=14\\).</p><p><strong>Oändligt många lösningar fås när \\(a=4\\) och \\(k=14\\).</strong></p><p>Om \\(a=4\\) men \\(k\\ne14\\) blir linjerna parallella men olika.</p><p><strong>Då finns ingen lösning.</strong></p>",
     "familj": "additionsmetoden__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.150",
@@ -2714,10 +2294,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((9)x=20\\Rightarrow x=\\frac{20}{9}\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(7\\cdot(\\frac{20}{9})+-3y=11\\Rightarrow y=\\frac{41}{27}\\).</p><p><strong>\\((x,y)=(\\frac{20}{9},\\frac{41}{27})\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.151",
@@ -2734,10 +2311,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(y\\) redan är frilöst i den första ekvationen sätter vi in \\(\\frac32x-4\\) i den andra:</p><p>\\(2x+\\frac32x-4=10\\).</p><p>\\(\\frac72x=14\\Rightarrow x=4\\).</p><p>Sätt tillbaka: \\(y=\\frac32\\cdot4-4=2\\).</p><p><strong>\\((x,y)=(4,2)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.152",
@@ -2754,10 +2328,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=y+5\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(3 y - 9=0\\).</p><p>Därifrån fås \\(y=3\\).</p><p>Sätt tillbaka värdet i \\(x=y+5\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(8,3)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.153",
@@ -2774,11 +2345,7 @@ window.BANKMA2 = [
     "s": "<p>Vid substitution ska hela uttrycket \\(2x-4\\) ersätta \\(y\\):</p><p>\\(3x+(2x-4)=11\\).</p><p>Elevens fel är att konstanten \\(-4\\) har flyttats till högerledet med fel tecken.</p><p>Förenkla: \\(5x-4=11\\Rightarrow5x=15\\Rightarrow x=3\\).</p><p>Då \\(y=2\\cdot3-4=2\\).</p><p><strong>Systemets lösning är \\((3,2)\\).</strong></p>",
     "familj": "substitutionsmetoden__felanalys_och_metodresonemang",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.154",
@@ -2795,10 +2362,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=2-y\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(- y - 3=0\\).</p><p>Därifrån fås \\(y=-3\\).</p><p>Sätt tillbaka värdet i \\(x=2-y\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(5,-3)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.155",
@@ -2815,10 +2379,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=10-2x\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(x - 4=0\\).</p><p>Därifrån fås \\(x=4\\).</p><p>Sätt tillbaka värdet i \\(y=10-2x\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(4,2)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.156",
@@ -2835,10 +2396,7 @@ window.BANKMA2 = [
     "s": "<p>Ersätt den ena variabeln med uttrycket från den andra ekvationen. Lös sedan den nya ekvationen med en variabel.</p><p>\\(2x+(3x-2)=18\\Rightarrow 5x=20\\Rightarrow x=4\\). Då \\(y=10\\).</p><p><strong>\\((4,10)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.163",
@@ -2853,10 +2411,7 @@ window.BANKMA2 = [
     "s": "<p>Från \\(x-y=2\\) fås \\(x=y+2\\).</p><p>Från \\(z-y=-1\\) fås \\(z=y-1\\).</p><p>Sätt in i första ekvationen:</p><p>\\((y+2)+y+(y-1)=10\\Rightarrow3y+1=10\\Rightarrow y=3\\).</p><p>Då är \\(x=5\\) och \\(z=2\\).</p><p><strong>\\((x,y,z)=(5,3,2)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.164",
@@ -2871,10 +2426,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför de två första ekvationerna: \\(z=12-7=5\\).</p><p>Då ger \\(y+z=9\\) att \\(y=4\\).</p><p>Slutligen ger \\(x+y=7\\) att \\(x=3\\).</p><p><strong>\\((x,y,z)=(3,4,5)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.165",
@@ -2889,10 +2441,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara antal smörgåsar, \\(y\\) antal sallader och \\(z\\) antal soppor.</p><p>\\[\\begin{cases}x+y+z=90\\\\55x+70y+45z=5200\\\\y-z=10\\end{cases}\\]</p><p>Ur sista ekvationen är \\(y=z+10\\). Första ger \\(x=80-2z\\).</p><p>Sätt in i kostnadsekvationen:</p><p>\\(55(80-2z)+70(z+10)+45z=5200\\).</p><p>\\(5100+5z=5200\\Rightarrow z=20\\).</p><p>Då är \\(y=30\\) och \\(x=40\\).</p><p><strong>40 smörgåsar, 30 sallader och 20 soppor.</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.166",
@@ -2907,10 +2456,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera den första ekvationen från den andra:</p><p>\\(x-2y=0\\Rightarrow x=2y\\).</p><p>Addera den första och den tredje ekvationen:</p><p>\\(2x+3y=7\\).</p><p>Sätt in \\(x=2y\\): \\(4y+3y=7\\Rightarrow y=1\\).</p><p>Då är \\(x=2\\), och från \\(x+y+z=6\\) fås \\(z=3\\).</p><p><strong>\\((x,y,z)=(2,1,3)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.167",
@@ -2925,10 +2471,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera första ekvationen från den andra:</p><p>\\(x-2y=-1\\). (1)</p><p>Addera första och tredje ekvationen:</p><p>\\(2x+3y=12\\). (2)</p><p>Från (1) är \\(x=2y-1\\). Sätt in i (2):</p><p>\\(2(2y-1)+3y=12\\Rightarrow7y=14\\Rightarrow y=2\\).</p><p>Då är \\(x=3\\) och ur första ekvationen \\(z=4\\).</p><p><strong>\\((x,y,z)=(3,2,4)\\)</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.168",
@@ -2943,10 +2486,7 @@ window.BANKMA2 = [
     "s": "<p>Från \\(x-y=1\\) fås \\(x=y+1\\). Från \\(y-z=1\\) fås \\(z=y-1\\).</p><p>Sätt in båda uttrycken i \\(x+y+z=9\\):</p><p>\\((y+1)+y+(y-1)=9\\Rightarrow3y=9\\Rightarrow y=3\\).</p><p>Då är \\(x=4\\) och \\(z=2\\).</p><p><strong>\\((x,y,z)=(4,3,2)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.169",
@@ -2963,10 +2503,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((8)x=24\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(3\\cdot(3)+2y=16\\Rightarrow y=\\frac{7}{2}\\).</p><p><strong>\\((x,y)=(3,\\frac{7}{2})\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.170",
@@ -2983,10 +2520,7 @@ window.BANKMA2 = [
     "s": "<p>Multiplicera den andra ekvationen med 2:</p><p>\\(4x-2y=0\\).</p><p>Addera med den första: \\(7x=14\\Rightarrow x=2\\).</p><p>\\(2\\cdot2-y=0\\Rightarrow y=4\\).</p><p><strong>\\((x,y)=(2,4)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.171",
@@ -3003,10 +2537,7 @@ window.BANKMA2 = [
     "s": "<p>Multiplicera vid behov någon ekvation så att en variabel kan elimineras när ekvationerna adderas eller subtraheras.</p><p>Addera: \\(6x=18\\Rightarrow x=3\\).</p><p>\\(2\\cdot3-3y=0\\Rightarrow y=2\\).</p><p><strong>\\((3,2)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.172",
@@ -3023,10 +2554,7 @@ window.BANKMA2 = [
     "s": "<p>Multiplicera vid behov någon ekvation så att en variabel kan elimineras när ekvationerna adderas eller subtraheras.</p><p>Addera: \\(8x=24\\Rightarrow x=3\\). Sätt in: \\(15+2y=16\\Rightarrow y=0,5\\).</p><p><strong>\\((3,0,5)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.173",
@@ -3043,10 +2571,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((8)x=16\\Rightarrow x=2\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(3\\cdot(2)+4y=2\\Rightarrow y=-1\\).</p><p><strong>\\((x,y)=(2,-1)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.174",
@@ -3063,10 +2588,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((11)x=55\\Rightarrow x=5\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(4\\cdot(5)+-5y=19\\Rightarrow y=\\frac{1}{5}\\).</p><p><strong>\\((x,y)=(5,\\frac{1}{5})\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.175",
@@ -3083,10 +2605,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((8)x=16\\Rightarrow x=2\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(5\\cdot(2)+-4y=2\\Rightarrow y=2\\).</p><p><strong>\\((x,y)=(2,2)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.176",
@@ -3103,10 +2622,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((6)x=18\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(2\\cdot(3)+3y=13\\Rightarrow y=\\frac{7}{3}\\).</p><p><strong>\\((x,y)=(3,\\frac{7}{3})\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.177",
@@ -3123,10 +2639,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=3y-2\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(4 y - 16=0\\).</p><p>Därifrån fås \\(y=4\\).</p><p>Sätt tillbaka värdet i \\(x=3y-2\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(10,4)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.178",
@@ -3143,10 +2656,7 @@ window.BANKMA2 = [
     "s": "<p>Ersätt den ena variabeln med uttrycket från den andra ekvationen. Lös sedan den nya ekvationen med en variabel.</p><p>\\(3x-(2x+1)=9\\Rightarrow x=10\\).</p><p>\\(y=21\\).</p><p><strong>\\((10,21)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.179",
@@ -3163,10 +2673,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=2x+1\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(5 x - 15=0\\).</p><p>Därifrån fås \\(x=3\\).</p><p>Sätt tillbaka värdet i \\(y=2x+1\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(3,7)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.180",
@@ -3183,10 +2690,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=\\frac12x+1\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(\\frac{x}{2} - 6=0\\).</p><p>Därifrån fås \\(x=12\\).</p><p>Sätt tillbaka värdet i \\(y=\\frac12x+1\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(12,7)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.181",
@@ -3203,10 +2707,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(y=3x-4\\) i den andra ekvationen:</p><p>\\(2x+3x-4=16\\Rightarrow5x=20\\Rightarrow x=4\\).</p><p>\\(y=3\\cdot4-4=8\\).</p><p><strong>\\((x,y)=(4,8)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.182",
@@ -3223,10 +2724,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(x=4-y\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(5 - y=0\\).</p><p>Därifrån fås \\(y=5\\).</p><p>Sätt tillbaka värdet i \\(x=4-y\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(-1,5)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.183",
@@ -3243,10 +2741,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=2x+4\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(3 x - 9=0\\).</p><p>Därifrån fås \\(x=3\\).</p><p>Sätt tillbaka värdet i \\(y=2x+4\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(3,10)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.184",
@@ -3263,10 +2758,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=\\frac12x+3\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(\\frac{3 x}{2} - 9=0\\).</p><p>Därifrån fås \\(x=6\\).</p><p>Sätt tillbaka värdet i \\(y=\\frac12x+3\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(6,6)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.193",
@@ -3283,10 +2775,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar från \\(a\\) till \\(a+3\\) minskar funktionsvärdet från 7 till −2, alltså med 9.</p><p>Därför är \\(k=\\frac{-9}{3}=-3\\).</p><p>Eftersom \\(f(0)=13\\) är \\(m=13\\). Alltså \\(f(x)=-3x+13\\).</p><p>\\(f(a)=7\\Rightarrow -3a+13=7\\Rightarrow a=2\\).</p><p><strong>\\(a=2\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.195",
@@ -3303,10 +2792,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((8)x=24\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(5\\cdot(3)+2y=19\\Rightarrow y=2\\).</p><p><strong>\\((x,y)=(3,2)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.196",
@@ -3323,10 +2809,7 @@ window.BANKMA2 = [
     "s": "<p>Använd distributiva lagen: varje term i den första parentesen multipliceras med varje term i den andra.</p><p><strong>a) \\(x^2+8x+15\\)</strong></p><p><strong>b) \\(2x^2+7x-4\\)</strong></p>",
     "familj": "multiplicera_parenteser__utveckla_och_forenkla",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.197",
@@ -3343,10 +2826,7 @@ window.BANKMA2 = [
     "s": "<p>\\(k=\\frac{0-(-3)}{6-0}=\\frac36=0,5\\).</p><p>Skärningen med \\(y\\)-axeln ger \\(m=-3\\).</p><p><strong>\\(y=0,5x-3\\).</strong></p>",
     "familj": "rata_linjens_ekvation__skarningspunkter_och_axlar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.198",
@@ -3363,10 +2843,7 @@ window.BANKMA2 = [
     "s": "<p>Kontrollera punkten i båda ekvationerna.</p><p>Första: \\(2\\cdot3-2=4\\), vilket stämmer.</p><p>Andra: \\(3+3\\cdot2=9\\), vilket också stämmer.</p><p><strong>Ja, eleven har rätt.</strong></p>",
     "familj": "linjara_ekvationssystem__kontrollera_losning",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.199",
@@ -3383,10 +2860,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra ekvationen ger \\(y=3x+4\\).</p><p>För samma linje måste \\(a=3\\).</p><p>Om \\(a\\ne3\\) har linjerna olika riktningskoefficient och skär varandra en gång.</p><p><strong>\\(a=3\\); annars exakt en lösning.</strong></p>",
     "familj": "speciella_ekvationssystem__klassificera_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.200",
@@ -3403,10 +2877,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(v\\) vara antal vuxenbiljetter och \\(b\\) antal barnbiljetter.</p><p>\\(v+b=23\\) och \\(130v+80b=2440\\).</p><p>Sätt \\(b=23-v\\):</p><p>\\(130v+80(23-v)=2440\\Rightarrow50v=600\\Rightarrow v=12\\).</p><p>Då \\(b=11\\).</p><p><strong>12 vuxenbiljetter och 11 barnbiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.202",
@@ -3423,10 +2894,7 @@ window.BANKMA2 = [
     "s": "<p>Startavgiften 55 kr betalas även när \\(x=0\\), så den är funktionens konstantterm.</p><p>Varje kilometer kostar ytterligare 18 kr, vilket ger termen \\(18x\\).</p><p><strong>Prisfunktionen är \\(P(x)=55+18x\\).</strong></p>",
     "familj": "bestamma_linjara_funktioner__fran_villkor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.204",
@@ -3443,10 +2911,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen genom faktorisering.</p><p>\\[2x^2+7x+3=0.\\]</p>",
     "s": "<p>Vi faktoriserar först uttrycket:</p><p>\\[2x^2+7x+3=(2x+1)(x+3).\\]</p><p>Nollproduktmetoden ger</p><p>\\[2x+1=0\\Rightarrow x=-\\frac12\\qquad\\text{eller}\\qquad x+3=0\\Rightarrow x=-3.\\]</p><p><strong>\\(x=-\\frac12\\) eller \\(x=-3\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.206",
@@ -3463,10 +2928,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen är den punkt där de två graferna skär varandra.</p><p>Linjerna skär varandra i \\((1,2)\\).</p><p><strong>Lösningen är \\((1,2)\\).</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.207",
@@ -3483,10 +2945,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar med 1 minskar \\(y\\) med 2, alltså är \\(k=-2\\).</p><p>Vid \\(x=0\\) är \\(y=7\\), så \\(m=7\\).</p><p><strong>\\(f(x)=-2x+7\\).</strong></p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.208",
@@ -3503,10 +2962,7 @@ window.BANKMA2 = [
     "s": "<p>\\(v+u=160\\), \\(150v+90u=19800\\).</p><p>Med \\(u=160-v\\): \\(150v+14400-90v=19800\\Rightarrow60v=5400\\Rightarrow v=90\\).</p><p>Då \\(u=70\\).</p><p><strong>90 vuxenbiljetter och 70 ungdomsbiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.209",
@@ -3523,10 +2979,7 @@ window.BANKMA2 = [
     "s": "<p>a) Linjerna \\(y=3x+1\\) och \\(y=3x-4\\) har samma riktningskoefficient men olika m-värden. De är parallella: <strong>ingen lösning</strong>.</p><p>b) \\(2y=4x+6\\) kan divideras med 2 och blir \\(y=2x+3\\). Ekvationerna beskriver samma linje: <strong>oändligt många lösningar</strong>.</p><p>c) Linjerna har olika riktningskoefficienter, −1 och 2. De skär varandra en gång: <strong>exakt en lösning</strong>.</p>",
     "familj": "speciella_ekvationssystem__beroende_och_motsagelse",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.212",
@@ -3543,10 +2996,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom konstanten är 49 måste \\(a=7\\) eller \\(a=-7\\).</p><p>Med kvadreringsregeln får vi</p><p>\\[(x+7)^2=x^2+14x+49\\]</p><p>och</p><p>\\[(x-7)^2=x^2-14x+49.\\]</p><p><strong>\\(p=14\\) eller \\(p=-14\\).</strong></p>",
     "familj": "kvadreringsreglerna__parameter_och_villkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.216",
@@ -3563,10 +3013,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar med 1 ökar \\(y\\) med 2. Alltså är \\(k=2\\).</p><p>När \\(x=0\\) är \\(y=2\\), så \\(m=2\\).</p><p>Formeln är \\(y=2x+2\\).</p><p>\\(y(12)=26\\).</p><p><strong>\\(y=2x+2\\), och \\(y=26\\) när \\(x=12\\).</strong></p>",
     "familj": "linjara_representationer__graf_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.217",
@@ -3583,10 +3030,7 @@ window.BANKMA2 = [
     "s": "<p><strong>GeoGebra:</strong> skriv \\(A(x)=75+2,8x\\) och \\(B(x)=120+1,6x\\) i grafvyn och använd skärningspunkten.</p><p>Skärningen fås vid \\(x=37,5\\), där kostnaden är 180.</p><p>Efter skärningen växer A med 2,8 per x-enhet medan B bara växer med 1,6.</p><p><strong>Modellerna är lika vid \\(x=37,5\\); därefter är B billigare.</strong></p>",
     "familj": "grafisk_losning_ekvationssystem__digital_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.218",
@@ -3603,10 +3047,7 @@ window.BANKMA2 = [
     "s": "<p>För oändligt många lösningar måste ekvationerna beskriva samma linje.</p><p>Högerledet 9 är \\(\\frac32\\) gånger 6. Därför måste även varje koefficient i den andra ekvationen vara \\(\\frac32\\) gånger motsvarande koefficient i den första.</p><p>\\(3=\\frac32a\\Rightarrow a=2\\).</p><p>\\(b=\\frac32\\cdot2=3\\).</p><p><strong>\\(a=2\\) och \\(b=3\\)</strong></p>",
     "familj": "speciella_ekvationssystem__parameterfall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.221",
@@ -3623,10 +3064,7 @@ window.BANKMA2 = [
     "t": "<p>Faktorisera så långt som möjligt:</p><p>\\[12x^2-27x.\\]</p>",
     "s": "<p>Bryt ut största gemensamma faktor \\(3x\\):</p><p>\\[12x^2-27x=3x(4x-9).\\]</p><p><strong>\\(3x(4x-9)\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.222",
@@ -3643,10 +3081,7 @@ window.BANKMA2 = [
     "s": "<p>Använd kvadreringsregeln \\((a-b)^2=a^2-2ab+b^2\\).</p><p>\\((3x-2)^2=(3x)^2-2\\cdot3x\\cdot2+2^2\\).</p><p><strong>\\(9x^2-12x+4\\).</strong></p>",
     "familj": "kvadreringsreglerna__utveckla_med_kvadreringsregel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.223",
@@ -3663,10 +3098,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(k\\), \\(t\\) och \\(j\\) vara antalet kaffe, te respektive juice.</p><p>Då gäller</p><p>\\(k+t+j=45\\)</p><p>\\(34k+28t+24j=1320\\)</p><p>\\(k=j+5\\).</p><p>Sätt in \\(k=j+5\\) i den första ekvationen:</p><p>\\((j+5)+t+j=45\\Rightarrow t=40-2j\\).</p><p>Sätt nu in i prisekvationen:</p><p>\\(34(j+5)+28(40-2j)+24j=1320\\).</p><p>\\(34j+170+1120-56j+24j=1320\\Rightarrow 2j+1290=1320\\).</p><p>\\(2j=30\\Rightarrow j=15\\).</p><p>Då är \\(k=20\\) och \\(t=10\\).</p><p><strong>Det säljs 20 kaffe, 10 te och 15 juice.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.224",
@@ -3683,10 +3115,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen är den punkt där de två graferna skär varandra.</p><p>Linjerna skär varandra i punkten \\((2,3)\\).</p><p><strong>Lösningen är \\((2,3)\\).</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.225",
@@ -3703,10 +3132,7 @@ window.BANKMA2 = [
     "s": "<p>Skärningspunkten ligger på f:</p><p>\\(82=3,2x+18\\Rightarrow64=3,2x\\Rightarrow x=20\\).</p><p>Den ligger också på g:</p><p>\\(82=20k+54\\Rightarrow20k=28\\).</p><p><strong>\\(k=1,4\\).</strong></p><p><strong>GeoGebra:</strong> kontrollera genom att rita \\(y=3,2x+18\\) och \\(y=1,4x+54\\).</p>",
     "familj": "grafisk_losning_ekvationssystem__digital_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.226",
@@ -3723,10 +3149,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen är linjernas skärningspunkt.</p><p>Av grafen avläses skärningen till \\((2,3)\\).</p><p><strong>\\((x,y)=(2,3)\\).</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.227",
@@ -3743,11 +3166,7 @@ window.BANKMA2 = [
     "s": "<p><strong>GeoGebra:</strong> rita båda linjerna. Skärningspunkten blir \\((6{,}5;\\,7{,}1)\\).</p><p>För punkten \\((6;6)\\) ger den första linjen \\(1,4\\cdot6-2=6,4\\), inte 6.</p><p><strong>Alltså är lösningen \\((6{,}5;\\,7{,}1)\\), och \\((6;6)\\) ligger inte på båda linjerna.</strong></p>",
     "familj": "grafisk_losning_ekvationssystem__digital_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.228",
@@ -3764,10 +3183,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen är den punkt där de två graferna skär varandra.</p><p>Linjerna är parallella och skär inte varandra.</p><p><strong>Systemet har ingen lösning.</strong></p><p><strong>GeoGebra:</strong> Skriv in de två linjernas ekvationer i grafvyn. Lösningen till ekvationssystemet är koordinaterna för linjernas skärningspunkt. Zooma så att skärningen syns tydligt och klicka på punkten för att läsa av koordinaterna.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.229",
@@ -3784,10 +3200,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera den första ekvationen med 2:</p><p>\\(2x-y=4\\).</p><p>Det är exakt samma ekvation som den andra.</p><p><strong>Linjerna sammanfaller och systemet har oändligt många lösningar.</strong></p>",
     "familj": "grafisk_losning_ekvationssystem__digital_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.230",
@@ -3804,10 +3217,7 @@ window.BANKMA2 = [
     "s": "<p>I skärningspunkten gäller \\(ax+1=-0,5x+7\\), alltså</p><p>\\((a+0,5)x=6\\Rightarrow x=\\frac{6}{a+0,5}\\).</p><p>För \\(x&gt;8\\) måste nämnaren vara positiv och mindre än \\(6/8=0,75\\):</p><p>\\(0&lt;a+0,5&lt;0,75\\).</p><p><strong>\\(-0,5&lt;a&lt;0,25\\).</strong></p><p>I GeoGebra kan detta kontrolleras med en glidare för \\(a\\).</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.231",
@@ -3824,10 +3234,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen är linjernas skärningspunkt.</p><p>Av grafen avläses punkten \\(P=(4,3)\\).</p><p><strong>\\((x,y)=(4,3)\\).</strong></p><p><strong>GeoGebra:</strong> skriv in båda linjernas ekvationer i grafvyn och använd skärningspunkten som kontroll.</p>",
     "familj": "grafisk_losning_ekvationssystem__avlas_skarningspunkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "1.232",
@@ -3844,10 +3251,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar med 2 minskar \\(f(x)\\) med 4, alltså \\(k=-2\\).</p><p>Med \\((1,3)\\): \\(3=-2+m\\Rightarrow m=5\\).</p><p><strong>\\(f(x)=-2x+5\\).</strong></p>",
     "familj": "linjara_representationer__vaxla_mellan_representationer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.233",
@@ -3864,10 +3268,7 @@ window.BANKMA2 = [
     "t": "<p>En rät linje skär den positiva x-axeln i \\((a,0)\\) och den positiva y-axeln i \\((0,b)\\). Det gäller att \\(a+b=12\\). Linjen går dessutom genom punkten \\((3,2)\\).</p><p>Bestäm alla linjer som uppfyller villkoren.</p>",
     "s": "<p>En linje med axelskärningarna \\((a,0)\\) och \\((0,b)\\) uppfyller \\(\\frac{x}{a}+\\frac{y}{b}=1\\). För punkten \\((3,2)\\) gäller därför</p><p>\\[\\frac{3}{a}+\\frac{2}{b}=1.\\]</p><p>Eftersom \\(b=12-a\\) får vi</p><p>\\[\\frac3a+\\frac2{12-a}=1.\\]</p><p>Multiplicera med \\(a(12-a)\\):</p><p>\\[3(12-a)+2a=a(12-a).\\]</p><p>\\[36-a=12a-a^2\\Rightarrow a^2-13a+36=0.\\]</p><p>Faktorisering ger \\((a-4)(a-9)=0\\). Alltså är \\(a=4\\) eller \\(a=9\\). Då blir \\(b=8\\) respektive \\(b=3\\).</p><p><strong>Linjerna är \\(y=-2x+8\\) och \\(y=-\\frac13x+3\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.234",
@@ -3884,10 +3285,7 @@ window.BANKMA2 = [
     "s": "<p> Det ger riktningskoefficienten och därefter kan konstanttermen bestämmas.</p><p>a) \\(45+12\\cdot5=105\\).</p><p>b) 45 är startavgiften när \\(x=0\\).</p><p><strong>a) 105. b) Startavgiften är 45 kr.</strong></p>",
     "familj": "linjara_representationer__text_till_linjarmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.235",
@@ -3904,10 +3302,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=3-2x\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(9 x - 17=0\\).</p><p>Därifrån fås \\(x=\\frac{17}{9}\\).</p><p>Sätt tillbaka värdet i \\(y=3-2x\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(\\frac{17}{9},- \\frac{7}{9})\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.236",
@@ -3924,10 +3319,7 @@ window.BANKMA2 = [
     "s": "<p>Den första ekvationen ger \\(y=9-x\\). Sätt in det uttrycket i den andra ekvationen.</p><p>Efter insättning och förenkling fås \\(3 x - 12=0\\).</p><p>Därifrån fås \\(x=4\\).</p><p>Sätt tillbaka värdet i \\(y=9-x\\) för att få den andra variabeln.</p><p><strong>\\((x,y)=(4,5)\\).</strong></p>",
     "familj": "substitutionsmetoden__substitution",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.237",
@@ -3944,10 +3336,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((10)x=20\\Rightarrow x=2\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(6\\cdot(2)+5y=17\\Rightarrow y=1\\).</p><p><strong>\\((x,y)=(2,1)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.238",
@@ -3964,10 +3353,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet med additionsmetoden.</p><p>\\(\\begin{cases}2x+y=8\\\\3x-y=7\\end{cases}\\)</p>",
     "s": "<p>Addera ekvationerna: \\(5x=15\\), alltså \\(x=3\\).</p><p>Sätt in i \\(2x+y=8\\): \\(6+y=8\\Rightarrow y=2\\).</p><p><strong>\\((x,y)=(3,2)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.239",
@@ -3984,10 +3370,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(v\\) vara antal vuxenbiljetter och \\(u\\) antal ungdomsbiljetter.</p><p>\\(v+u=40\\) och \\(150v+90u=5100\\).</p><p>Multiplicera första ekvationen med 90 och subtrahera:</p><p>\\(60v=1500\\Rightarrow v=25\\).</p><p>Då \\(u=15\\).</p><p><strong>25 vuxenbiljetter och 15 ungdomsbiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.240",
@@ -4004,10 +3387,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(m+s=18\\) och \\(70m+110s=1500\\).</p><p>Med \\(m=18-s\\): \\(1260+40s=1500\\Rightarrow s=6\\).</p><p>Då \\(m=12\\).</p><p><strong>12 muggar och 6 skålar.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.241",
@@ -4024,10 +3404,7 @@ window.BANKMA2 = [
     "t": "<p>Utveckla och förenkla \\((2x-5)(x+4)\\).</p><p>Endast svar krävs.</p>",
     "s": "<p>\\((2x-5)(x+4)=2x^2+8x-5x-20=2x^2+3x-20\\).</p><p><strong>\\(2x^2+3x-20\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.242",
@@ -4044,10 +3421,7 @@ window.BANKMA2 = [
     "t": "<p>Utveckla och förenkla \\((3-2x)(x-5)\\).</p><p>Endast svar krävs.</p>",
     "s": "<p>\\((3-2x)(x-5)=3x-15-2x^2+10x=-2x^2+13x-15\\).</p><p><strong>\\(-2x^2+13x-15\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.243",
@@ -4064,10 +3438,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla uttrycket</p><p>\\[(x-3)(x+3)+(x+1)(x-1).\\]</p>",
     "s": "<p>Använd först konjugatregeln i båda produkterna.</p><p>\\[(x-3)(x+3)=x^2-9\\qquad\\text{och}\\qquad(x+1)(x-1)=x^2-1.\\]</p><p>Då blir summan</p><p>\\[x^2-9+x^2-1=2x^2-10.\\]</p><p><strong>\\(2x^2-10\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.244",
@@ -4084,10 +3455,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm talet \\(k\\) så att</p><p>\\[(x+2)(x+k)=x^2+7x+10.\\]</p>",
     "s": "<p>Utveckla vänsterledet:</p><p>\\[(x+2)(x+k)=x^2+(k+2)x+2k.\\]</p><p>Jämför koefficienterna med \\(x^2+7x+10\\). Då ska</p><p>\\[k+2=7\\quad\\text{och}\\quad 2k=10.\\]</p><p>Båda villkoren ger \\(k=5\\).</p><p><strong>\\(k=5\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.245",
@@ -4104,10 +3472,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla</p><p>\\[(3x-1)(3x+1)-(x-5)(x+5).\\]</p>",
     "s": "<p>Använd konjugatregeln i båda produkterna.</p><p>\\[(3x-1)(3x+1)=9x^2-1\\qquad\\text{och}\\qquad (x-5)(x+5)=x^2-25.\\]</p><p>Då blir uttrycket</p><p>\\[9x^2-1-(x^2-25)=8x^2+24.\\]</p><p><strong>\\(8x^2+24\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.246",
@@ -4124,10 +3489,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla.</p><p>\\[(7-y)(7+y)\\]</p>",
     "s": "<p>Konjugatregeln ger skillnaden mellan två kvadrater.</p><p><strong>\\(49-y^2\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.247",
@@ -4144,10 +3506,7 @@ window.BANKMA2 = [
     "s": "<p>Använd konjugatregeln \\((a+b)(a-b)=a^2-b^2\\).</p><p>Här är \\(a=3x\\) och \\(b=4\\).</p><p>\\((3x+4)(3x-4)=(3x)^2-4^2=9x^2-16\\).</p><p><strong>Svaret är \\(9x^2-16\\).</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.248",
@@ -4164,10 +3523,7 @@ window.BANKMA2 = [
     "s": "<p>Med konjugatregeln:</p><p>\\((3x)^2-7^2=9x^2-49\\).</p><p><strong>\\(9x^2-49\\)</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.249",
@@ -4184,10 +3540,7 @@ window.BANKMA2 = [
     "t": "<p>Utveckla och förenkla \\((2x-7)^2\\).</p>",
     "s": "<p>Använd kvadreringsregeln \\((a-b)^2=a^2-2ab+b^2\\).</p><p>\\[(2x-7)^2=(2x)^2-2\\cdot 2x\\cdot 7+7^2=4x^2-28x+49.\\]</p><p><strong>\\(4x^2-28x+49\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.250",
@@ -4204,10 +3557,7 @@ window.BANKMA2 = [
     "t": "<p>Skriv uttrycket som en kvadrat:</p><p>\\[x^2+12x+36.\\]</p>",
     "s": "<p>Vi känner igen mönstret \\(a^2+2ab+b^2\\). Här är \\(a=x\\) och \\(b=6\\).</p><p><strong>\\(x^2+12x+36=(x+6)^2\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.251",
@@ -4224,10 +3574,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm \\(a\\) så att</p><p>\\[(x-a)^2=x^2-10x+25.\\]</p>",
     "s": "<p>Utveckla vänsterledet:</p><p>\\[(x-a)^2=x^2-2ax+a^2.\\]</p><p>Jämför med \\(x^2-10x+25\\). Då får vi \\(2a=10\\), alltså \\(a=5\\). Konstanttermen stämmer också eftersom \\(a^2=25\\).</p><p><strong>\\(a=5\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.252",
@@ -4244,10 +3591,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[(x+3)^2=x^2+15.\\]</p>",
     "s": "<p>Utveckla vänsterledet:</p><p>\\[x^2+6x+9=x^2+15.\\]</p><p>Subtrahera \\(x^2\\) från båda leden.</p><p>\\[6x+9=15\\Rightarrow 6x=6\\Rightarrow x=1.\\]</p><p><strong>\\(x=1\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.253",
@@ -4264,11 +3608,7 @@ window.BANKMA2 = [
     "s": "<p>För varje uttryck: hitta den största faktor som finns i alla termer, bryt ut den framför parentesen och kontrollera genom att multiplicera tillbaka.</p><p>Skillnaden är</p><p>\\((2n+1)^2-(2n-1)^2=8n\\).</p><p>Därför är den alltid delbar med 8.</p><p>Den är delbar med 16 precis när \\(8n\\) är delbart med 16, alltså när \\(n\\) är jämnt.</p><p><strong>a) Alltid delbar med 8. b) Delbar med 16 precis när \\(n\\) är jämnt.</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.254",
@@ -4285,10 +3625,7 @@ window.BANKMA2 = [
     "s": "<p>Bryt först ut största gemensamma faktor \\(2x\\):</p><p>\\(8x^3-18x=2x(4x^2-9)\\).</p><p>Använd sedan konjugatregeln för att faktorisera:</p><p>\\(4x^2-9=(2x-3)(2x+3)\\).</p><p><strong>\\(2x(2x-3)(2x+3)\\).</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.255",
@@ -4305,11 +3642,7 @@ window.BANKMA2 = [
     "s": "<p>För varje uttryck: hitta den största faktor som finns i alla termer, bryt ut den framför parentesen och kontrollera genom att multiplicera tillbaka.</p><p>Låt heltalen vara \\(n\\) och \\(n+1\\). Skillnaden mellan kvadraterna är \\((n+1)^2-n^2=2n+1\\).</p><p>Tal av formen \\(2n+1\\) är alltid udda.</p><p><strong>Skillnaden är alltså alltid udda.</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.256",
@@ -4326,10 +3659,7 @@ window.BANKMA2 = [
     "s": "<p> Kontrollera sedan om uttrycket kan faktoriseras ytterligare.</p><p><strong>a) \\(5x(3x+2)\\)</strong></p><p><strong>b) \\((x-6)(x+6)\\)</strong></p>",
     "familj": "faktorisering__bryt_ut_gemensam_faktor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.257",
@@ -4346,10 +3676,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera ekvationerna: \\((a-1)(x-y)=0\\). Om \\(a\\ne1\\) fås \\(x=y\\).</p><p>Sätt in: \\((a+1)x=6\\). Det ger en unik lösning när \\(a+1\\ne0\\), alltså \\(a\\ne-1\\).</p><p>Samtidigt måste \\(a\\ne1\\) för att inte få oändligt många lösningar.</p><p><strong>Exakt en lösning fås för \\(a\\ne1,-1\\), och då är \\(x=y=\\frac{6}{a+1}\\).</strong></p>",
     "familj": "linjara_ekvationssystem__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.258",
@@ -4366,10 +3693,7 @@ window.BANKMA2 = [
     "t": "<p>Till en skolbio säljs 26 biljetter. Vuxenbiljetter kostar 10 kr och elevbiljetter kostar 6 kr. Den totala intäkten blir 212 kr.</p><p>Bestäm hur många vuxenbiljetter och elevbiljetter som säljs.</p>",
     "s": "<p>Låt \\(v\\) vara antalet vuxenbiljetter och \\(e\\) antalet elevbiljetter.</p><p>\\(\\begin{cases}v+e=26\\\\10v+6e=212\\end{cases}\\)</p><p>Multiplicera den första ekvationen med 6: \\(6v+6e=156\\).</p><p>Subtrahera från den andra: \\(4v=56\\Rightarrow v=14\\).</p><p>Då blir \\(e=12\\).</p><p><strong>14 vuxenbiljetter och 12 elevbiljetter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.259",
@@ -4386,10 +3710,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet algebraiskt.</p><p>\\(\\begin{cases}x+y=9\\\\2x-y=3\\end{cases}\\)</p>",
     "s": "<p>Addera ekvationerna: \\(3x=12\\Rightarrow x=4\\).</p><p>Sätt in i \\(x+y=9\\): \\(4+y=9\\Rightarrow y=5\\).</p><p><strong>\\((x,y)=(4,5)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.260",
@@ -4406,10 +3727,7 @@ window.BANKMA2 = [
     "s": "<p>För att ett linjärt system ska ha oändligt många lösningar måste ekvationerna beskriva samma linje.</p><p>Jämför koefficienterna. Den andra ekvationen är dubbla den första om varje term, även högerledet, har faktor 2.</p><p>Villkoret för konstanten blir därför \\(a=4\\).</p><p>Med \\(a=4\\) blir ekvationerna proportionella och beskriver samma linje.</p><p><strong>\\(a=4\\).</strong></p>",
     "familj": "linjara_ekvationssystem__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.261",
@@ -4426,10 +3744,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm ekvationen för linjen som har riktningskoefficient 4 och skär y-axeln i 3.</p>",
     "s": "<p>En linje skrivs \\(y=kx+m\\). Här är \\(k=4\\) och \\(m=3\\).</p><p><strong>\\(y=4x+3\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.262",
@@ -4446,10 +3761,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm ekvationen för linjen som går genom punkterna \\((-1,2)\\) och \\((3,10)\\).</p>",
     "s": "<p>Riktningskoefficienten blir \\(k=(10-2)/(3-(-1))=8/4=2\\).</p><p>Sätt in punkten \\((-1,2)\\): \\(2=2\\cdot(-1)+m\\Rightarrow m=4\\).</p><p><strong>\\(y=2x+4\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.263",
@@ -4466,10 +3778,7 @@ window.BANKMA2 = [
     "t": "<p>En funktion beskrivs av tabellen.</p><table class=\"data\"><tr><th>x</th><th>0</th><th>2</th><th>5</th></tr><tr><td>y</td><td>-1</td><td>5</td><td>14</td></tr></table><p>Bestäm funktionens formel.</p>",
     "s": "<p>När \\(x\\) ökar med 2 ökar \\(y\\) med 6, så riktningskoefficienten är \\(k=3\\).</p><p>När \\(x=0\\) är \\(y=-1\\), alltså är \\(m=-1\\).</p><p><strong>\\(y=3x-1\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.264",
@@ -4486,10 +3795,7 @@ window.BANKMA2 = [
     "t": "<p>En linje skär y-axeln i 7 och x-axeln i 3,5. Bestäm linjens ekvation.</p>",
     "s": "<p>Linjen går genom punkterna \\((0,7)\\) och \\((3{,}5,0)\\).</p><p>Riktningskoefficienten blir</p><p>\\[k=\\frac{0-7}{3{,}5-0}=-2.\\]</p><p>Eftersom skärningen med y-axeln är 7 blir \\(m=7\\).</p><p><strong>\\(y=-2x+7\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.265",
@@ -4506,11 +3812,7 @@ window.BANKMA2 = [
     "s": "<p>Förändringen ger riktningskoefficienten \\(k=12/3=4\\), så \\(f(x)=4x+m\\).</p><p>Punkten \\((a,2a+5)\\) ska ligga på grafen för alla \\(a\\). Insättning ger</p><p>\\(2a+5=4a+m\\Rightarrow m=5-2a\\).</p><p>Detta kan inte vara en och samma konstant för alla \\(a\\). Villkoren är alltså oförenliga: <strong>ingen linjär funktion uppfyller båda villkoren för alla \\(a\\)</strong>.</p><p>Den avgörande insikten är att en konstantterm inte får bero på talet \\(a\\). Uppgiften visar därför att man måste kontrollera om givna representationer verkligen kan beskriva samma funktion.</p>",
     "familj": "linjara_representationer__graf_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.266",
@@ -4527,10 +3829,7 @@ window.BANKMA2 = [
     "s": "<p> Det ger riktningskoefficienten och därefter kan konstanttermen bestämmas.</p><p>Ökningen är 2 per steg i \\(x\\), alltså \\(k=2\\). Eftersom \\(f(0)=4\\) är \\(m=4\\).</p><p><strong>\\(f(x)=2x+4\\).</strong></p>",
     "familj": "linjara_representationer__tabell_till_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.267",
@@ -4547,10 +3846,7 @@ window.BANKMA2 = [
     "t": "<p>Två tabeller visas nedan.</p><table class=\"data\"><tr><th>x</th><th>0</th><th>2</th><th>5</th><th>7</th></tr><tr><td>Tabell A</td><td>4</td><td>10</td><td>19</td><td>25</td></tr><tr><td>Tabell B</td><td>4</td><td>10</td><td>18</td><td>24</td></tr></table><p>Avgör vilken tabell som kan beskrivas av en linjär funktion. Bestäm också funktionens formel.</p>",
     "s": "<p>I tabell A är förändringen i y alltid 3 per steg i x: från x=0 till 2 ökar y med 6, alltså 3 per x-enhet; från 2 till 5 ökar y med 9, också 3 per x-enhet.</p><p>Tabell B har inte samma förändring per x-enhet.</p><p>För tabell A är \\(k=3\\) och \\(y=4\\) när \\(x=0\\), alltså \\(m=4\\).</p><p><strong>Tabell A är linjär och har formeln \\(y=3x+4\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.268",
@@ -4565,10 +3861,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera den första ekvationen från den andra:</p><p>\\(-x+y=1\\Rightarrow y=x+1\\).</p><p>Subtrahera den andra från den tredje:</p><p>\\(-y+z=1\\Rightarrow z=y+1=x+2\\).</p><p>Sätt in i den första ekvationen:</p><p>\\(2x+(x+1)+(x+2)=11\\Rightarrow4x=8\\Rightarrow x=2\\).</p><p>Då är \\(y=3\\) och \\(z=4\\).</p><p><strong>\\((x,y,z)=(2,3,4)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.269",
@@ -4583,10 +3876,7 @@ window.BANKMA2 = [
     "t": "<p>På en festival säljs tre sorters dagsband: ungdom, vuxen och familj. Totalt säljs 120 band för 19 500 kr. Ett ungdomsband kostar 90 kr, ett vuxenband 150 kr och ett familjeband 240 kr. Antalet vuxenband är 10 fler än antalet ungdomsband.</p><p>Bestäm hur många band av varje sort som säljs.</p>",
     "s": "<p>Låt \\(u\\), \\(v\\) och \\(f\\) beteckna antalen ungdoms-, vuxen- och familjeband.</p><p>\\[\\begin{cases}u+v+f=120\\\\90u+150v+240f=19500\\\\v=u+10\\end{cases}\\]</p><p>Sätt in \\(v=u+10\\) i den första ekvationen: \\(2u+f=110\\), alltså \\(f=110-2u\\).</p><p>Sätt in i intäktsekvationen:</p><p>\\[90u+150(u+10)+240(110-2u)=19500.\\]</p><p>\\[-240u+27900=19500\\Rightarrow u=35.\\]</p><p>Då är \\(v=45\\) och \\(f=40\\). Kontroll: \\(35+45+40=120\\) och intäkten blir 19 500 kr.</p><p><strong>35 ungdomsband, 45 vuxenband och 40 familjeband.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.270",
@@ -4603,10 +3893,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(v+u=180\\) och \\(130v+90u=19800\\). Med \\(u=180-v\\): \\(130v+16200-90v=19800\\Rightarrow 40v=3600\\Rightarrow v=90\\). Då \\(u=90\\).</p><p><strong>90 vuxenbiljetter och 90 ungdomsbiljetter.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.271",
@@ -4623,10 +3910,7 @@ window.BANKMA2 = [
     "s": "<p>Låt priset på bio B vara \\(x\\) kr och antalet personer där vara \\(n\\).</p><p>Då gäller \\(xn=1440\\).</p><p>På bio A kostar biljetten \\(x+20\\) och gruppen har \\(n-6\\) personer:</p><p>\\((x+20)(n-6)=1440\\).</p><p>Eftersom \\(n=1440/x\\) fås \\((x+20)(1440/x-6)=1440\\).</p><p>Multiplicera med \\(x\\) och förenkla:</p><p>\\(1440x+28800-6x^2-120x=1440x\\).</p><p>\\(6x^2+120x-28800=0\\Rightarrow x^2+20x-4800=0\\).</p><p>\\((x-60)(x+80)=0\\), så det positiva priset på bio B är 60 kr.</p><p><strong>Bio A kostar därför 80 kr.</strong></p>",
     "familj": "ekvationssystem_tillampningar__ekonomiskt_textproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.272",
@@ -4641,10 +3925,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera den första ekvationen från den andra:</p><p>\\((2x-y+z)-(x+y+z)=13-15\\Rightarrow x-2y=-2\\).</p><p>Ur den första ekvationen är \\(z=15-x-y\\). Sätt in detta i den tredje:</p><p>\\(x+2y-(15-x-y)=2\\Rightarrow2x+3y=17\\).</p><p>Från \\(x-2y=-2\\) får vi \\(x=2y-2\\). Substitution ger</p><p>\\(2(2y-2)+3y=17\\Rightarrow7y=21\\Rightarrow y=3\\).</p><p>Då \\(x=4\\) och \\(z=15-4-3=8\\).</p><p><strong>\\((x,y,z)=(4,3,8)\\).</strong></p>",
     "familj": "ekvationssystem_tre_obekanta__losa_tre_obekanta",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.273",
@@ -4661,10 +3942,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet med substitutionsmetoden.</p><p>\\(\\begin{cases}x=12-2y\\\\3x+y=16\\end{cases}\\)</p>",
     "s": "<p>Sätt in \\(x=12-2y\\) i den andra ekvationen:</p><p>\\[3(12-2y)+y=16.\\]</p><p>\\[36-5y=16\\Rightarrow y=4.\\]</p><p>Då är \\(x=4\\).</p><p><strong>\\((x,y)=(4,4)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.274",
@@ -4681,10 +3959,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationssystemet med substitutionsmetoden.</p><p>\\(\\begin{cases}y=2x+1\\\\x+y=10\\end{cases}\\)</p>",
     "s": "<p>Sätt in \\(y=2x+1\\) i den andra ekvationen:</p><p>\\[x+2x+1=10\\Rightarrow 3x=9\\Rightarrow x=3.\\]</p><p>Då är \\(y=7\\).</p><p><strong>\\((x,y)=(3,7)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.275",
@@ -4701,10 +3976,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((6)x=18\\Rightarrow x=3\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(4\\cdot(3)+1y=18\\Rightarrow y=6\\).</p><p><strong>\\((x,y)=(3,6)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.276",
@@ -4721,10 +3993,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna. y-termerna tar då ut varandra:</p><p>\\((10)x=20\\Rightarrow x=2\\).</p><p>Sätt in x-värdet i den första ekvationen:</p><p>\\(6\\cdot(2)+5y=7\\Rightarrow y=-1\\).</p><p><strong>\\((x,y)=(2,-1)\\).</strong></p>",
     "familj": "additionsmetoden__eliminering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.277",
@@ -4741,10 +4010,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla med konjugatregeln: \\((5x+2)(5x-2)\\).</p>",
     "s": "<p>Konjugatregeln ger \\((a+b)(a-b)=a^2-b^2\\).</p><p>\\[(5x+2)(5x-2)=(5x)^2-2^2=25x^2-4.\\]</p><p><strong>\\(25x^2-4\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.278",
@@ -4761,10 +4027,7 @@ window.BANKMA2 = [
     "s": "<p>Använd konjugatregeln \\((a+b)(a-b)=a^2-b^2\\).</p><p>Med \\(a=5x\\) och \\(b=2\\) fås</p><p>\\((5x+2)(5x-2)=(5x)^2-2^2\\).</p><p><strong>\\(25x^2-4\\).</strong></p>",
     "familj": "konjugatregeln__utveckla_med_konjugat",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.279",
@@ -4781,10 +4044,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(x=y\\) ger båda ekvationerna \\((a+1)x=5\\), så \\(x=y=5/(a+1)\\) när \\(a\\ne-1\\).</p><p>Men systemet kan också ha andra lösningar om linjerna inte tvingar \\(x=y\\). Subtraktion ger \\((a-1)(x-y)=0\\).</p><p>För att alla lösningar ska ha \\(x=y\\) behöver \\(a\\ne1\\). För att en lösning ska finnas behöver \\(a\\ne-1\\).</p><p><strong>Alla \\(a\\ne1,-1\\) ger en unik lösning med \\(x=y=5/(a+1)\\).</strong></p>",
     "familj": "linjara_ekvationssystem__parameter_och_antal_losningar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "1.280",
@@ -4801,10 +4061,7 @@ window.BANKMA2 = [
     "s": "<p>Bryt först ut 6: \\(6(x^2-4)\\).</p><p>Använd sedan konjugatregeln för att faktorisera: \\(x^2-4=(x-2)(x+2)\\).</p><p><strong>\\(6(x-2)(x+2)\\).</strong></p>",
     "familj": "faktorisering__faktorisera_flera_steg",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.01",
@@ -4821,10 +4078,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 4: \\((x-1)^2=25/4\\).</p><p>Ta kvadratroten: \\(x-1=\\pm5/2\\).</p><p><strong>\\(x=\\frac72\\) eller \\(x=-\\frac32\\).</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.02",
@@ -4841,10 +4095,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först hela ekvationen med 2:</p><p>\\(x^2+\\frac52x-\\frac32=0\\).</p><p>pq-formeln ger \\(x=-\\frac54\\pm\\sqrt{\\frac{25}{16}+\\frac{24}{16}}=-\\frac54\\pm\\frac74\\).</p><p><strong>\\(x=\\frac12\\) eller \\(x=-3\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.03",
@@ -4861,10 +4112,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först ekvationen med 3:</p>\n<p>\\(x^2-\\frac{14}{3}x+\\frac83=0\\).</p>\n<p>Använd <strong>pq-formeln</strong> med \\(p=-\\frac{14}{3}\\), \\(q=\\frac83\\):</p>\n<p>\\(x=\\frac73\\pm\\sqrt{\\frac{49}{9}-\\frac{24}{9}}\n=\\frac73\\pm\\frac53\\).</p>\n<p><strong>\\(x=4\\) eller \\(x=\\frac23\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.04",
@@ -4881,10 +4129,7 @@ window.BANKMA2 = [
     "s": "<p> När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p><p><strong>a) \\(x=7,-3\\).</strong></p><p><strong>b) \\(x=2,-4\\).</strong></p><p><strong>c) \\(x=1,2\\).</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.05",
@@ -4901,10 +4146,7 @@ window.BANKMA2 = [
     "s": "<p>\\(-x^2+8x-12=0\\) motsvarar \\(x^2-8x+12=0=(x-2)(x-6)\\).</p><p>Nollställena är alltså 2 och 6.</p><p>Symmetrilinjen är \\(x=4\\). Då \\(g(4)=-16+32-12=4\\).</p><p>Eftersom parabeln är nedåtvänd är 4 största värdet.</p><p><strong>Nollställen 2 och 6; symmetrilinje \\(x=4\\); största värde 4.</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.06",
@@ -4921,10 +4163,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena avläses där grafen skär x-axeln: −2 och 4.</p><p>Symmetrilinjen ligger mitt emellan:</p><p>\\((-2+4)/2=1\\).</p><p><strong>Nollställen −2 och 4; symmetrilinje \\(x=1\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.07",
@@ -4941,11 +4180,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom maximipunkten är \\((2,5)\\) kan funktionen skrivas \\(f(x)=a(x-2)^2+5\\).</p><p>Punkten \\((0,-3)\\) ger \\(-3=4a+5\\Rightarrow a=-2\\).</p><p>Alltså \\(f(x)=-2(x-2)^2+5\\).</p><p>Utveckla: \\(-2(x^2-4x+4)+5=-2x^2+8x-3\\).</p><p><strong>\\(f(x)=-2(x-2)^2+5=-2x^2+8x-3\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.08",
@@ -4962,10 +4197,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(f(x)=(x-3)^2+m-9\\).</p><p>Det minsta värdet är \\(m-9\\).</p><p>Det är negativt när \\(m-9&lt;0\\).</p><p><strong>\\(m&lt;9\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.09",
@@ -4982,10 +4214,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera:</p><p>\\(x(x-12)=0\\).</p><p>Med nollproduktmetoden fås <strong>\\(x=0\\) eller \\(x=12\\)</strong>.</p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.10",
@@ -5002,10 +4231,7 @@ window.BANKMA2 = [
     "s": "<p> När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p><p><strong>a) \\(x=\\pm9\\)</strong></p><p><strong>b) \\(x=0\\) eller \\(x=9\\)</strong></p><p><strong>c) \\(x=\\pm5\\)</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.11",
@@ -5022,10 +4248,7 @@ window.BANKMA2 = [
     "s": "<p>\\(240/200=1,2\\) och \\(288/240=1,2\\).</p><p>Förändringsfaktorn är alltså 1,2.</p><p>Nästa värde blir \\(288\\cdot1,2=345,6\\).</p><p><strong>a) 1,2. b) 345,6.</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.12",
@@ -5042,11 +4265,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(h(0)=2\\cdot1,5^0=2\\).</p><p>b) Varje steg åt höger multiplicerar funktionsvärdet med 1,5.</p><p>c) Eftersom \\(1,5&gt;1\\) är funktionen växande.</p><p><strong>a) 2. b) Multipliceras med 1,5. c) Växande.</strong></p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.13",
@@ -5062,10 +4281,7 @@ window.BANKMA2 = [
     "s": "<p>\\(0,0001=10^{-4}\\). Därför är <strong>\\(\\lg0,0001=-4\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.14",
@@ -5080,10 +4296,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom x står i exponenten är detta en exponentialekvation.</p><p><strong>GeoGebra:</strong> öppna CAS och skriv <code>NLös(500*1.12^x=900)</code>.</p><p>GeoGebra ger \\(x\\approx5,19\\).</p><p>Avrundat till en decimal blir</p><p><strong>\\(x\\approx5,2\\).</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.15",
@@ -5100,10 +4313,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellen lika med 1 100:</p><p>\\(750\\cdot1,08^t=1100\\).</p><p>I GeoGebra CAS kan du skriva <code>NLös(750*1.08^t=1100)</code>. Det ger \\(t\\approx4,98\\).</p><p>Kontroll: \\(N(4,9)&lt;1100\\) och \\(N(5,0)&gt;1100\\), så passagen ligger mellan dessa tider.</p><p><strong>Modellen passerar 1 100 efter cirka 5,0 år.</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.16",
@@ -5120,10 +4330,7 @@ window.BANKMA2 = [
     "s": "<p> När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p><p><strong>a) \\(x=\\pm6\\).</strong></p><p><strong>b) \\(x=\\pm\\frac32\\).</strong></p><p><strong>c) \\(x=\\pm\\frac52\\).</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.17",
@@ -5139,11 +4346,7 @@ window.BANKMA2 = [
     "s": "<p>Nej. Värdet \\(x=50\\) ligger mycket långt utanför intervallet 1–6 där mätningarna gjordes.</p><p>Små skillnader mellan modellerna i mätintervallet kan växa till mycket stora skillnader långt utanför intervallet.</p><p><strong>Valet av modell måste därför också motiveras utifrån sammanhanget och om modellens fortsatta utveckling är rimlig.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.18",
@@ -5158,10 +4361,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadrera:</p><p>\\(3x+1=(x+1)^2=x^2+2x+1\\).</p><p>\\(x^2-x=0\\Rightarrow x=0\\) eller \\(x=1\\).</p><p>Kontroll: båda värdena uppfyller ursprungsekvationen.</p><p><strong>\\(x=0\\) eller \\(x=1\\)</strong></p>",
     "familj": "rotekvationer__kontrollera_efter_kvadrering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.19",
@@ -5176,10 +4376,7 @@ window.BANKMA2 = [
     "s": "<p>Halva koefficienten −6 är −3.</p><p>\\((x-3)^2=x^2-6x+9\\).</p><p>Skillnaden upp till 13 är 4.</p><p><strong>\\(x^2-6x+13=(x-3)^2+4\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.20",
@@ -5195,10 +4392,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>3</strong><br>b) <strong>3</strong><br>c) Graferna skär varandra vid \\(x=2\\), alltså <strong>\\(x=2\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.21",
@@ -5215,10 +4409,7 @@ window.BANKMA2 = [
     "s": "<p>Triangelns area är \\(\\frac{(x+4)(x-2)}{2}=36\\).</p><p>Multiplicera med 2 och utveckla:</p><p>\\(x^2+2x-8=72\\Rightarrow x^2+2x-80=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=-1\\pm\\sqrt{1+80}=-1\\pm9\\).</p><p>Den positiva lösningen är \\(x=8\\).</p><p><strong>Basen är 12 cm och höjden 6 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.22",
@@ -5234,10 +4425,7 @@ window.BANKMA2 = [
     "s": "<p>Om rötterna är \\(r\\) och \\(s\\) kan vänsterledet skrivas</p><p>\\[(x-r)(x-s)=x^2-(r+s)x+rs.\\]</p><p>Jämförelse med \\(x^2+px+q\\) ger därför \\(p=-(r+s)\\) och \\(q=rs\\).</p><p>Villkoret \\(p+q=11\\) ger \\(rs-r-s=11\\). Lägg till 1 i båda leden:</p><p>\\((r-1)(s-1)=12\\).</p><p>Eftersom rötterna är positiva heltal undersöker vi faktorparen till 12: \\((1,12),(2,6),(3,4)\\), bortsett från omvänd ordning.</p><p>Det ger rötterna \\((2,13)\\), \\((3,7)\\) och \\((4,5)\\).</p><p><strong>\\(x^2-15x+26=0\\), \\(x^2-10x+21=0\\) eller \\(x^2-9x+20=0\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.23",
@@ -5254,11 +4442,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena 2 och 6 ger den faktoriserade formen</p><p>\\(f(x)=a(x-2)(x-6)\\).</p><p>Använd punkten \\((0,12)\\):</p><p>\\(12=a(0-2)(0-6)=12a\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x-2)(x-6)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.24",
@@ -5275,11 +4459,7 @@ window.BANKMA2 = [
     "s": "<p>Lös \\(-0,20x^2+2,4x\\ge4\\).</p><p>Gränspunkterna fås av \\(-0,20x^2+2,4x=4\\). Multiplicera med −5: \\(x^2-12x+20=0\\).</p><p>Rötterna är \\(x=2\\) och \\(x=10\\).</p><p>Parabeln är uppåt efter omskrivningen, vilket innebär att ursprungliga höjden är minst 4 m mellan rötterna.</p><p><strong>\\(2\\le x\\le10\\).</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.25",
@@ -5296,10 +4476,7 @@ window.BANKMA2 = [
     "t": "<p>En exponentialfunktion har formen \\(f(x)=C\\cdot a^x\\). Det gäller att \\(f(0)=6\\) och \\(f(2)=24\\). Bestäm funktionen.</p>",
     "s": "<p>Eftersom \\(f(0)=C\\) är \\(C=6\\).</p><p>Sedan ger \\(f(2)=24\\): \\(6a^2=24\\Rightarrow a^2=4\\). För en exponentialfunktion är \\(a&gt;0\\), alltså \\(a=2\\).</p><p><strong>\\(f(x)=6\\cdot2^x\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.26",
@@ -5315,10 +4492,7 @@ window.BANKMA2 = [
     "s": "<p>Slå först ihop de två första logaritmerna:</p><p>\\(\\lg(2x)+\\lg(5x)=\\lg(10x^2)\\).</p><p>Subtraktionen av \\(\\lg10\\) ger med lagen \\(\\lg x-\\lg y=\\lg(x/y)\\)</p><p>\\(\\lg(10x^2/10)=\\lg(x^2)\\).</p><p><strong>\\(\\lg(x^2)\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.27",
@@ -5334,11 +4508,7 @@ window.BANKMA2 = [
     "s": "<p>Rita båda funktionerna i GeoGebra och bestäm skärningspunkterna, till exempel med <code>Skärning</code> eller <code>NLös(3x^2=2*1.6^x)</code>.</p><p>De positiva skärningarna ligger ungefär vid \\(x\\approx1,04\\) och \\(x\\approx11,11\\).</p><p>Kontrollera ett värde mellan skärningarna, exempelvis \\(x=3\\): \\(f(3)=27\\) och \\(g(3)=8,192\\), så där är potensmodellen större.</p><p>Vid \\(x=0\\) är \\(g(0)=2&gt;0=f(0)\\), och för stora \\(x\\) växer exponentialfunktionen snabbare.</p><p><strong>Den exponentiella modellen är större ungefär för \\(0\\le x&lt;1,04\\) och för \\(x&gt;11,11\\).</strong></p>",
     "familj": "jamfora_exponential_potens__jamforelse_med_graf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.28",
@@ -5354,11 +4524,7 @@ window.BANKMA2 = [
     "s": "<p>Man bör bland annat undersöka</p><p>• hur väl respektive graf följer datapunkterna och om skillnaderna mellan mätvärden och modellvärden visar något mönster,<br>• hur långt prognosen ligger utanför den tidsperiod där mätningar finns,<br>• om en konstant procentuell förändring är rimlig under så lång tid.</p><p>Även ändrade villkor i verkligheten kan göra en modell olämplig.</p><p><strong>Valet av modell kan därför inte avgöras enbart av att en modell råkar ligga något närmare de uppmätta punkterna.</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.29",
@@ -5373,10 +4539,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(x=a\\): \\(\\sqrt{a+4}=2a\\). Eftersom vänsterledet är en kvadratrot måste \\(2a\\ge0\\), alltså \\(a\\ge0\\).</p><p>Kvadrera: \\(a+4=4a^2\\Rightarrow4a^2-a-4=0\\).</p><p>Den lösning som uppfyller \\(a\\ge0\\) är \\(a=\\frac{1+\\sqrt{65}}8\\).</p><p>Efter kvadrering av ursprungsekvationen fås en andragradsekvation där den andra möjliga lösningen är \\(1-3a\\). För detta värde på \\(a\\) är \\((1-3a)+a=1-2a&lt;0\\), så den uppfyller inte ursprungsekvationen.</p><p><strong>\\(a=\\frac{1+\\sqrt{65}}8\\), och ingen ytterligare lösning finns.</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.30",
@@ -5392,10 +4555,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x=2\\) är en rot för alla \\(a\\). Den andra roten är \\(a\\).</p><p><strong>Alla heltal \\(a\\) fungerar.</strong></p>",
     "familj": "mer_om_andragradsekvationer__parameter_och_rotvillkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.31",
@@ -5412,10 +4572,7 @@ window.BANKMA2 = [
     "s": "<p>Arean är \\(A=x(12-2x)=-2x^2+12x\\).</p><p>Villkoret \\(x\\ge2y\\) ger \\(x\\ge2(12-2x)\\Rightarrow5x\\ge24\\Rightarrow x\\ge4,8\\).</p><p>Utan villkoret har parabeln maximum vid \\(x=3\\). För \\(x&gt;3\\) minskar arean, så inom det tillåtna området blir största arean vid minsta tillåtna \\(x\\), alltså \\(x=4,8\\).</p><p>Då \\(y=12-9,6=2,4\\).</p><p><strong>Största arean är \\(4,8\\cdot2,4=11,52\\).</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.32",
@@ -5432,10 +4589,7 @@ window.BANKMA2 = [
     "s": "<p>Låt rötterna vara \\(r\\) och \\(2r\\).</p><p>Summan är \\(3r=2a\\), alltså \\(r=2a/3\\).</p><p>Produkten är \\(2r^2=a+3\\).</p><p>\\(2(2a/3)^2=a+3\\Rightarrow8a^2-9a-27=0\\).</p><p>\\(a=\\frac{9\\pm3\\sqrt{105}}{16}\\).</p><p><strong>\\(a=\\frac{9+3\\sqrt{105}}{16}\\) eller \\(a=\\frac{9-3\\sqrt{105}}{16}\\).</strong></p>",
     "familj": "andragradsekvationer_tillampningar__olikhet_och_villkor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.33",
@@ -5451,10 +4605,7 @@ window.BANKMA2 = [
     "s": "<p>\\(r+3r=16\\Rightarrow r=4\\). Rötterna är 4 och 12.</p><p>\\((x-4)(x-12)=x^2-16x+48\\).</p><p><strong>\\(p=-16\\), \\(q=48\\).</strong></p>",
     "familj": "samband_roter_koefficienter__rotternas_summa_och_produkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.34",
@@ -5471,10 +4622,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den kortare sidan vara \\(x\\) cm. Eftersom arean är 84 cm² är den längre sidan \\(84/x\\).</p><p>Efter förändringen är sidorna \\(x+3\\) och \\(84/x-3\\). Villkoret om den nya arean ger</p><p>\\((x+3)(84/x-3)=90\\).</p><p>Multiplicera med \\(x\\): \\((x+3)(84-3x)=90x\\).</p><p>Utveckla och förenkla:</p><p>\\(84x+252-3x^2-9x=90x\\Rightarrow3x^2+15x-252=0\\).</p><p>Dela med 3: \\(x^2+5x-84=0=(x-7)(x+12)\\).</p><p>En längd måste vara positiv, alltså \\(x=7\\). Den andra sidan är \\(84/7=12\\).</p><p><strong>Den ursprungliga rektangeln är 7 cm × 12 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.35",
@@ -5491,11 +4639,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt gränsen \\(h(x)=6\\):</p><p>\\(-0,08(x-10)^2+8=6\\).</p><p>\\((x-10)^2=25\\).</p><p>Det ger \\(x=5\\) och \\(x=15\\).</p><p>Parabeln är nedåtvänd, så höjden är minst 6 m mellan dessa värden.</p><p><strong>Området är 10 m brett.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.36",
@@ -5512,10 +4656,7 @@ window.BANKMA2 = [
     "s": "<p>förändringsfaktorn är 1,18.</p><p>\\(N(t)=240\\cdot1,18^t\\).</p><p>\\(N(6)\\approx648\\).</p><p><strong>\\(N(t)=240\\cdot1,18^t\\), cirka 648 bakterier efter 6 timmar.</strong></p>",
     "familj": "exponentialfunktioner__bestam_exponentialmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.37",
@@ -5531,11 +4672,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ökar med samma belopp hela tiden. Den exponentiella ökar först långsamt men får allt snabbare ökning och kommer till slut att växa förbi den linjära.</p><p><strong>Exponentialmodellen får allt snabbare tillväxt och dominerar på lång sikt.</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.38",
@@ -5550,10 +4687,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[\\sqrt{x+5}=x-1.\\]</p>",
     "s": "<p>Högerledet måste vara minst 0, alltså \\(x\\ge1\\).</p><p>Kvadrera båda leden:</p><p>\\[x+5=(x-1)^2=x^2-2x+1.\\]</p><p>\\[x^2-3x-4=0\\Rightarrow (x-4)(x+1)=0.\\]</p><p>De möjliga lösningarna efter kvadreringen är 4 och -1, men endast \\(x=4\\) uppfyller ursprungsekvationen.</p><p><strong>\\(x=4\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.39",
@@ -5569,11 +4703,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ger 100, 123, 146 och 169. Skillnaderna från mätvärdena är 2, 4, 3 och 0 i absolut värde.</p><p>Exponentialmodellen ger ungefär 100, 119, 141,6 och 168,5. Skillnaderna är ungefär 2, 0, 1,4 och 0,5.</p><p>Exponentialmodellen ligger alltså närmare de fyra givna mätvärdena totalt sett.</p><p>Men fyra mätpunkter över ett kort intervall visar inte säkert hur sambandet utvecklas långt senare. De två modellerna kan ge mycket olika värden utanför det undersökta intervallet.</p><p><strong>Exponentialmodellen ligger närmast de givna mätvärdena, men underlaget är för litet för en säker långsiktig slutsats.</strong></p>",
     "familj": "modellval_regression__extrapolation_och_giltighetsomrade",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.40",
@@ -5590,10 +4720,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x+3)(x-5)\\).</p><p>Sätt in \\(x=1\\): \\(-16=a\\cdot4\\cdot(-4)=-16a\\), så \\(a=1\\).</p><p>Alltså \\(f(x)=(x+3)(x-5)\\).</p><p>\\(f(8)=11\\cdot3=33\\).</p><p><strong>\\(f(x)=(x+3)(x-5)\\), \\(f(8)=33\\).</strong></p>",
     "familj": "andragradsfunktioner__bestam_funktion_fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.41",
@@ -5610,10 +4737,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(x=\\pm7\\).</p><p>b) \\(x=0\\) eller \\(x=7\\).</p><p>c) \\(x(x+5)=0\\), alltså \\(x=0\\) eller \\(x=-5\\).</p><p><strong>Svar: a) ±7, b) 0 eller 7, c) 0 eller −5.</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.42",
@@ -5630,10 +4754,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 4:</p><p>\\(x^2+x-\\frac34=0\\).</p><p>pq-formeln ger \\(x=-\\frac12\\pm\\sqrt{\\frac14+\\frac34}=-\\frac12\\pm1\\).</p><p><strong>\\(x=\\frac12\\) eller \\(x=-\\frac32\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.43",
@@ -5650,10 +4771,7 @@ window.BANKMA2 = [
     "s": "<p>Använd <strong>pq-formeln</strong> på \\(x^2+4x-21=0\\).</p>\n<p>Här är \\(p=4\\) och \\(q=-21\\).</p>\n<p>\\(x=-2\\pm\\sqrt{2^2+21}=-2\\pm5\\).</p>\n<p><strong>\\(x=3\\) eller \\(x=-7\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.44",
@@ -5668,10 +4786,7 @@ window.BANKMA2 = [
     "s": "<p>Komplettera till kvadrat:</p><p>\\(x^2-6x+k=(x-3)^2-9+k\\).</p><p>Ekvationen kan skrivas</p><p>\\((x-3)^2=9-k\\).</p><p>För att få exakt en reell lösning måste högerledet vara 0.</p><p>\\(9-k=0\\Rightarrow k=9\\).</p><p><strong>\\(k=9\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.45",
@@ -5688,10 +4803,7 @@ window.BANKMA2 = [
     "s": "<p>Symmetrilinjen ligger mitt emellan nollställena: \\(x=1\\).</p><p>Skriv \\(f(x)=a(x+3)(x-5)\\).</p><p>Maximipunkten ligger vid \\(x=1\\), så</p><p>\\(16=a\\cdot4\\cdot(-4)=-16a\\Rightarrow a=-1\\).</p><p><strong>\\(f(x)=-(x+3)(x-5)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.46",
@@ -5708,10 +4820,7 @@ window.BANKMA2 = [
     "s": "<p>Symmetrilinjen ligger mitt emellan nollställena.</p><p>\\(x=\\frac{3+11}{2}=7\\).</p><p><strong>Symmetrilinjen är \\(x=7\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.47",
@@ -5728,10 +4837,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x+3)^2+9\\).</p><p>Sätt in nollstället \\(x=0\\):</p><p>\\(0=9a+9\\Rightarrow a=-1\\).</p><p><strong>\\(f(x)=-(x+3)^2+9\\).</strong></p>",
     "familj": "fran_graf_till_formel__graf_och_skarningspunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.48",
@@ -5748,10 +4854,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(0)=7\\).</p><p>b) \\(f(3)=-3^2+6\\cdot3+7=-9+18+7=16\\).</p><p>c) För punkten \\((7,0)\\) kontrollerar vi \\(f(7)\\):</p><p>\\(f(7)=-49+42+7=0\\).</p><p><strong>Punkten ligger alltså på grafen.</strong></p>",
     "familj": "andragradsfunktioner__funktionsvarden_och_punktkontroll",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.49",
@@ -5768,10 +4871,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 5: \\(x^2=16\\).</p><p><strong>\\(x=\\pm4\\)</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.50",
@@ -5788,10 +4888,7 @@ window.BANKMA2 = [
     "s": "<p> När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p><p><strong>a) \\(x=\\pm7\\)</strong></p><p><strong>b) \\(x=0\\) eller \\(x=-6\\)</strong></p><p><strong>c) \\(x=\\pm5\\)</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.51",
@@ -5808,10 +4905,7 @@ window.BANKMA2 = [
     "s": "<p>Mellan mätningarna går det två år. Om den årliga förändringsfaktorn är \\(a\\), gäller därför</p><p>\\(12500a^2=15125\\).</p><p>Dividera med 12 500:</p><p>\\(a^2=1,21\\).</p><p>En förändringsfaktor är positiv, så \\(a=\\sqrt{1,21}=1,10\\).</p><p><strong>Den årliga förändringsfaktorn är 1,10, vilket motsvarar 10 % ökning per år.</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.52",
@@ -5828,10 +4922,7 @@ window.BANKMA2 = [
     "s": "<p>Elevens modell \\(3\\cdot1,3^x\\) närmar sig 0 när x blir allt mindre. Grafen i figuren närmar sig i stället den horisontella linjen \\(y=1\\).</p><p>Dessutom visar grafen att \\(f(0)=3\\).</p><p>En modell som både har \\(f(0)=3\\) och närmar sig 1 åt vänster är</p><p><strong>\\(f(x)=2\\cdot1,3^x+1\\).</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.53",
@@ -5847,10 +4938,7 @@ window.BANKMA2 = [
     "s": "<p>\\(0,01=10^{-2}\\). Därför är <strong>\\(\\lg0,01=-2\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.54",
@@ -5866,10 +4954,7 @@ window.BANKMA2 = [
     "s": "<p>Använd lagen \\(\\lg x+\\lg y=\\lg(xy)\\) \\(\\lg a+\\lg b=\\lg(ab)\\):</p><p>\\(\\lg2+\\lg50=\\lg(2\\cdot50)=\\lg100\\).</p><p><strong>\\(2\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.55",
@@ -5886,10 +4971,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera först med 5:</p><p>\\(1,12^x=3,6\\).</p><p>Eftersom exponenten är okänd använder vi ett digitalt ekvationsverktyg. I GeoGebra CAS kan du skriva <code>NLös(1.12^x=3.6)</code>.</p><p>Det ger \\(x\\approx11,3\\).</p><p><strong>\\(x\\approx11,3\\).</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.56",
@@ -5905,11 +4987,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 7:</p><p>\\(1,3^x=\\frac{20}{7}\\).</p><p>Ta \\(\\lg\\) av båda leden: \\(x\\lg1,3=\\lg\\left(\\frac{20}{7}\\right)\\).</p><p>\\(x=\\frac{\\lg(20/7)}{\\lg1,3}\\approx4,0014\\).</p><p><strong>\\(x\\approx4,00\\)</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.57",
@@ -5926,10 +5004,7 @@ window.BANKMA2 = [
     "s": "<p>\\(2x+1=5\\) eller \\(2x+1=-5\\).</p><p>Det ger <strong>\\(x=2\\) eller \\(x=-3\\)</strong>.</p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.58",
@@ -5945,10 +5020,7 @@ window.BANKMA2 = [
     "s": "<p>Varje y-värde är dubbelt så stort som föregående.</p><p>En konstant kvot är typisk för exponentiell utveckling.</p><p><strong>En exponentialmodell är mest naturlig.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.59",
@@ -5963,10 +5035,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadrera båda leden:</p><p>\\(3x-2=25\\Rightarrow3x=27\\Rightarrow x=9\\).</p><p>Kontroll: \\(\\sqrt{3\\cdot9-2}=\\sqrt{25}=5\\).</p><p><strong>\\(x=9\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.60",
@@ -5982,10 +5051,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(f(x)=kx+m\\). Då \\(k^2=9\\) och \\(m(k+1)=8\\). Villkoret \\(f(0)&gt;0\\) väljer \\(k=3\\), \\(m=2\\).</p><p><strong>\\(f(x)=3x+2\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.61",
@@ -6002,10 +5068,7 @@ window.BANKMA2 = [
     "s": "<p>Låt bredden vara \\(x\\) cm. Då är längden \\(x+4\\).</p><p>\\(x(x+4)=96\\Rightarrow x^2+4x-96=0\\).</p><p>Använd <strong>pq-formeln</strong> med \\(p=4\\), \\(q=-96\\):</p><p>\\(x=-2\\pm\\sqrt{4+96}=-2\\pm10\\).</p><p>Den positiva lösningen är \\(x=8\\).</p><p><strong>Sidorna är 8 cm och 12 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.62",
@@ -6021,10 +5084,7 @@ window.BANKMA2 = [
     "s": "<p>Rötternas produkt är 12. Positiva heltalspar är \\((1,12)\\), \\((2,6)\\) och \\((3,4)\\).</p><p>Rötternas summa är \\(-k\\).</p><p>Summorna är 13, 8 och 7.</p><p><strong>\\(k=-13,-8\\) eller \\(-7\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__parameter_och_rotvillkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.63",
@@ -6040,10 +5100,7 @@ window.BANKMA2 = [
     "s": "<p>Om de positiva heltalsrötterna är \\(r\\) och \\(s\\) kan ekvationen skrivas</p><p>\\((x-r)(x-s)=x^2-(r+s)x+rs\\).</p><p>Konstanttermen 18 ger \\(rs=18\\). De positiva faktorparen är \\((1,18)\\), \\((2,9)\\) och \\((3,6)\\).</p><p>Då blir \\(a=r+s\\), alltså 19, 11 respektive 9.</p><p><strong>\\(a=9,11\\) eller 19.</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.64",
@@ -6060,11 +5117,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena 1 och 5 ger \\(f(x)=a(x-1)(x-5)\\).</p><p>Punkten \\((0,10)\\) ger \\(10=a(-1)(-5)=5a\\), alltså \\(a=2\\).</p><p><strong>\\(f(x)=2(x-1)(x-5)=2x^2-12x+10\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.65",
@@ -6081,11 +5134,7 @@ window.BANKMA2 = [
     "s": "<p>Säkerhetsmarginalen innebär att tunneln måste vara minst 8,0 m hög över hela fordonets bredd.</p><p>Sätt \\(h(x)=8\\):</p><p>\\(0,25x(12-x)=8\\Rightarrow x(12-x)=32\\).</p><p>\\(x^2-12x+32=0=(x-4)(x-8)\\).</p><p>Tunneln är minst 8 m hög mellan \\(x=4\\) och \\(x=8\\).</p><p><strong>Fordonet kan därför vara högst 4,0 m brett.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.66",
@@ -6102,10 +5151,7 @@ window.BANKMA2 = [
     "s": "<p>\\(V(t)=5000\\cdot1,06^t\\).</p><p>\\(V(4)\\approx6312\\).</p><p><strong>Modell: \\(5000\\cdot1,06^t\\). Efter 4 år cirka 6 312 kr.</strong></p>",
     "familj": "exponentialfunktioner__bestam_exponentialmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.67",
@@ -6121,10 +5167,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\lg(100a^2)=\\lg100+\\lg(a^2)=2+2\\lg a\\).</p><p>Uttrycket blir därför</p><p>\\(2+2\\lg a-2\\lg a=2\\).</p><p><strong>Svaret är 2.</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.68",
@@ -6140,11 +5183,7 @@ window.BANKMA2 = [
     "s": "<p>Här jämför vi exponentialuttrycket \\(3^x\\) med det linjära uttrycket \\(10x\\).</p><p>Pröva heltalen i ordning:</p><p>\\(x=1:\\ 3&lt;10\\).</p><p>\\(x=2:\\ 9&lt;20\\).</p><p>\\(x=3:\\ 27&lt;30\\).</p><p>\\(x=4:\\ 81&gt;40\\).</p><p>Eftersom inget mindre positivt heltal fungerar är</p><p><strong>det minsta heltalet \\(x=4\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.69",
@@ -6160,11 +5199,7 @@ window.BANKMA2 = [
     "s": "<p>Nej. Man bör även kontrollera om skillnaderna mellan mätvärden och modellvärden visar ett systematiskt mönster, vilket intervall data täcker och om modellens sätt att förändras är rimligt i sammanhanget.</p><p>Om modellen ska användas långt utanför mätintervallet blir den bedömningen särskilt viktig.</p><p><strong>Att ligga något närmare datapunkterna räcker inte ensamt för att avgöra vilken modell som bör väljas.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.70",
@@ -6179,10 +5214,7 @@ window.BANKMA2 = [
     "s": "<p>Krav: \\(x\\ge1\\). Kvadrera: \\(x+7=x^2-2x+1\\Rightarrow x^2-3x-6=0\\).</p><p>\\(x=\\frac{3\\pm\\sqrt{33}}2\\). Endast den positiva som är större än 1 fungerar.</p><p><strong>\\(x=\\frac{3+\\sqrt{33}}2\\approx4,37\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.71",
@@ -6197,10 +5229,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x^2+4x+1=(x+2)^2-4+1\\).</p><p><strong>\\((x+2)^2-3\\)</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.72",
@@ -6216,11 +5245,7 @@ window.BANKMA2 = [
     "s": "<p>Nej. Hur nära en modell ligger de uppmätta punkterna är bara en del av bedömningen.</p><p>Man måste också undersöka om den valda modellen är rimlig i sammanhanget och hur långt från de uppmätta x-värdena prognosen görs.</p><p><strong>En modell kan passa mätvärdena bra men ändå ge en orimlig prognos långt utanför mätintervallet.</strong></p>",
     "familj": "modellval_regression__extrapolation_och_giltighetsomrade",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.73",
@@ -6237,10 +5262,7 @@ window.BANKMA2 = [
     "s": "<p>Halva omkretsen är 17, så om ena sidan är \\(x\\) är den andra \\(17-x\\).</p><p>Arean ger</p><p>\\(x(17-x)=60\\).</p><p>\\(x^2-17x+60=0=(x-5)(x-12)\\).</p><p><strong>Rektangelns sidor är 5 cm och 12 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.74",
@@ -6257,10 +5279,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoret \\(f(x)=f(10-x)\\) visar att symmetrilinjen är \\(x=5\\).</p><p>Eftersom minsta värdet är −4 har funktionen formen \\(f(x)=a(x-5)^2-4\\).</p><p>Sätt in \\(x=2\\):</p><p>\\(12=9a-4\\Rightarrow9a=16\\Rightarrow a=16/9\\).</p><p><strong>\\(f(x)=\\frac{16}{9}(x-5)^2-4\\).</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.75",
@@ -6276,10 +5295,7 @@ window.BANKMA2 = [
     "s": "<p>Om rötterna är \\(r\\) och \\(r+3\\) kan vänsterledet skrivas</p><p>\\((x-r)(x-(r+3))\\).</p><p>Koefficienten framför \\(x\\) blir då \\(-(2r+3)\\). Jämför med \\(-11x\\):</p><p>\\(2r+3=11\\Rightarrow r=4\\).</p><p>Rötterna är alltså 4 och 7, och konstanttermen blir \\(k=4\\cdot7=28\\).</p><p><strong>\\(k=28\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.76",
@@ -6296,10 +5312,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(t=3\\):</p><p>\\(864=C\\cdot1,2^3=C\\cdot1,728\\).</p><p>\\(C=864/1,728=500\\).</p><p><strong>\\(N(t)=500\\cdot1,2^t\\)</strong></p>",
     "familj": "exponentialfunktioner__bestam_exponentialmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.77",
@@ -6316,11 +5329,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 3: \\(2^x=16\\).</p><p>Eftersom \\(16=2^4\\) får vi <strong>\\(x=4\\)</strong>.</p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.78",
@@ -6335,10 +5344,7 @@ window.BANKMA2 = [
     "s": "<p>För att båda rotuttrycken ska vara definierade krävs \\(x\\ge5\\).</p><p>Isolera det första rotuttrycket:</p><p>\\(\\sqrt{x+4}=5-\\sqrt{x-5}\\).</p><p>Kvadrera:</p><p>\\(x+4=25-10\\sqrt{x-5}+x-5\\).</p><p>Det ger \\(10\\sqrt{x-5}=16\\), alltså \\(\\sqrt{x-5}=\\frac85\\).</p><p>Kvadrera igen:</p><p>\\(x-5=\\frac{64}{25}\\), så \\(x=\\frac{189}{25}\\).</p><p>Kontroll i ursprungsekvationen ger 5 i vänsterledet.</p><p><strong>\\(x=\\frac{189}{25}\\)</strong></p>",
     "familj": "rotekvationer__kontrollera_efter_kvadrering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.79",
@@ -6354,11 +5360,7 @@ window.BANKMA2 = [
     "t": "<p>En forskargrupp mäter ett index på skalan 0–100 vid fem tidpunkter.</p><table class=\"data\"><tr><th>t</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td>Index</td><td>20,0</td><td>24,1</td><td>28,8</td><td>34,7</td><td>41,5</td></tr></table><p>Både en linjär och en exponentiell modell passar de fem mätvärdena ganska väl. Indexet kan däremot aldrig överstiga 100.</p><p>Välj en av modellerna för en prognos två tidsenheter framåt och förklara sedan varför ingen av modellerna bör användas långt in i framtiden.</p>",
     "s": "<p>Mätvärdena har ungefär samma procentuella ökning, så en exponentialmodell är rimlig för en kort prognos. Med ett digitalt verktyg kan modellen bestämmas till ungefär \\(I(t)=20{,}0\\cdot1{,}20^t\\).</p><p>Två tidsenheter efter sista mätningen är \\(t=6\\), vilket ger \\(I(6)\\approx59{,}7\\).</p><p>På lång sikt fortsätter exponentialmodellen att växa utan gräns och skulle så småningom ge värden över 100, vilket strider mot villkoret. Den linjära modellen gör också det om den används tillräckligt länge.</p><p><strong>En kort prognos med exponentialmodellen ger cirka 60. Ingen av modellerna är rimlig långt fram eftersom indexet har en övre gräns på 100.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.80",
@@ -6375,11 +5377,7 @@ window.BANKMA2 = [
     "s": "<p>Maximipunkten ligger vid \\(x=-\\frac{0,80}{2(-0,04)}=10\\).</p><p>\\(h(10)=-4+8+0,6=4,6\\) m.</p><p>Vid mållinjen: \\(h(18)=-0,04\\cdot324+14,4+0,6=2,04\\) m.</p><p><strong>a) 4,6 m. b) Ja, modellen ger 2,04 m vid mållinjen, alltså under 2,44 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.81",
@@ -6396,10 +5394,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 3: \\((x-2)^2=9\\).</p><p>\\(x-2=3\\) eller \\(x-2=-3\\).</p><p><strong>\\(x=5\\) eller \\(x=-1\\)</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.82",
@@ -6416,10 +5411,7 @@ window.BANKMA2 = [
     "t": "<p>Lös med pq-formeln.</p><p>\\[x^2+8x+7=0.\\]</p>",
     "s": "<p>Här är \\(p=8\\) och \\(q=7\\).</p><p>\\[x=-4\\pm\\sqrt{16-7}=-4\\pm3.\\]</p><p><strong>\\(x=-1\\) eller \\(x=-7\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.83",
@@ -6436,10 +5428,7 @@ window.BANKMA2 = [
     "s": "<p>Topp-/minimipunkten visar att \\(f(4)=-4,5\\).</p><p>Den horisontella linjen \\(y=2\\) skär den uppåtvända parabeln två gånger.</p><p><strong>a) \\(-4,5\\). b) Två lösningar.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_funktionsvarden_och_ekvationer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.84",
@@ -6454,10 +5443,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(x)=(x+3)^2+5\\).</p><p>Eftersom en kvadrat är minst 0 är det minsta värdet 5.</p><p><strong>Det minsta värdet är 5 och fås vid \\(x=-3\\).</strong></p>",
     "familj": "kvadratkomplettering__extrempunkt_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.85",
@@ -6474,10 +5460,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(x)=a(x+2)(x-8)\\).</p><p>\\(-16=a\\cdot2\\cdot(-8)=-16a\\Rightarrow a=1\\).</p><p>Symmetrilinjen är \\(x=3\\).</p><p>\\(f(3)=5\\cdot(-5)=-25\\).</p><p><strong>Minsta värdet är −25.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.86",
@@ -6494,10 +5477,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är −2 och 1, så \\(f(x)=a(x+2)(x-1)\\).</p><p>Av grafen ser man att \\(f(0)=4\\).</p><p>\\(4=a\\cdot2\\cdot(-1)=-2a\\Rightarrow a=-2\\).</p><p><strong>\\(f(x)=-2(x+2)(x-1)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.87",
@@ -6514,11 +5494,7 @@ window.BANKMA2 = [
     "s": "<p>Minimipunkten \\((3,-2)\\) gör att funktionen kan skrivas \\(f(x)=a(x-3)^2-2\\).</p><p>Sätt in \\((1,6)\\): \\(6=4a-2\\Rightarrow a=2\\).</p><p><strong>\\(f(x)=2(x-3)^2-2\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.88",
@@ -6535,10 +5511,7 @@ window.BANKMA2 = [
     "s": "<p>Bryt ut 2 ur de två första termerna:</p><p>\\(f(x)=2(x^2-4x)+3\\).</p><p>Kvadratkomplettera: \\(x^2-4x=(x-2)^2-4\\).</p><p>Alltså \\(f(x)=2(x-2)^2-5\\).</p><p><strong>Symmetrilinjen är \\(x=2\\).</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.89",
@@ -6555,10 +5528,7 @@ window.BANKMA2 = [
     "s": "<p>Använd <strong>pq-formeln</strong>.</p>\n<p>a) \\(p=2\\), \\(q=-8\\): \\(x=-1\\pm\\sqrt{1+8}=-1\\pm3\\Rightarrow x=2,-4\\).</p>\n<p>b) \\(p=-6\\), \\(q=8\\): \\(x=3\\pm\\sqrt{9-8}=3\\pm1\\Rightarrow x=2,4\\).</p>\n<p>c) \\(p=4\\), \\(q=-5\\): \\(x=-2\\pm\\sqrt{4+5}=-2\\pm3\\Rightarrow x=1,-5\\).</p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.90",
@@ -6575,10 +5545,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv funktionen som \\(y=Ca^x\\).</p><p>Punkterna ger \\(6=Ca^2\\) och \\(18=Ca^4\\).</p><p>Dividera ekvationerna: \\(3=a^2\\).</p><p>Då är \\(Ca^2=6\\), alltså \\(C=6/3=2\\).</p><p><strong>Grafen skär y-axeln i \\((0,2)\\).</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.91",
@@ -6594,11 +5561,7 @@ window.BANKMA2 = [
     "s": "<p>\\(A=Ca\\) och \\(B=Ca^4\\).</p><p>\\(\\frac{A^4}{B}=\\frac{C^4a^4}{Ca^4}=C^3\\).</p><p>Eftersom \\(f(0)=C\\) är alltså \\(f(0)^3=A^4/B\\).</p><p>När \\(A=12\\), \\(B=96\\): \\(C^3=12^4/96=216\\), så \\(C=6\\).</p><p><strong>a) visat. b) \\(f(0)=6\\).</strong></p>",
     "familj": "exponentialfunktioner__berakna_och_tolka_exponentialfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.92",
@@ -6614,11 +5577,7 @@ window.BANKMA2 = [
     "s": "<p>Skillnaderna är 25, 37 och 57, alltså inte ungefär konstanta. Kvoterna är däremot ungefär 1,50, 1,49 och 1,51.</p><p><strong>En exponentiell modell passar bäst.</strong></p><p>En rimlig modell är \\(y=50\\cdot1,5^x\\).</p><p>För \\(x=5\\) fås \\(y=50\\cdot1,5^5\\approx379,7\\).</p><p><strong>Uppskattningen blir cirka 380.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.93",
@@ -6634,10 +5593,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(u=\\lg18\\), så betyder det att \\(10^u=18\\).</p><p>Alltså <strong>\\(10^{\\lg18}=18\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.94",
@@ -6653,10 +5609,7 @@ window.BANKMA2 = [
     "s": "<p>Enligt logaritmlagarna är \\(\\lg20+\\lg5=\\lg(20\\cdot5)=\\lg100\\).</p><p><strong>2</strong></p>",
     "familj": "logaritmlagar__tillampa_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.95",
@@ -6673,10 +5626,7 @@ window.BANKMA2 = [
     "s": "<p>Gränsen fås ur ekvationen \\(640\\cdot0,8^t=100\\).</p><p>Använd ett digitalt verktyg. I GeoGebra CAS kan du skriva <code>NLös(640*0.8^t=100)</code>, vilket ger \\(t\\approx8,32\\).</p><p>Frågan gäller första hela timmen efter att värdet passerat gränsen. Efter 8 timmar är värdet fortfarande över 100, men efter 9 timmar är det under 100.</p><p><strong>Efter 9 timmar.</strong></p>",
     "familj": "exponentialekvationer__losa_exponentialekvation",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.96",
@@ -6693,10 +5643,7 @@ window.BANKMA2 = [
     "s": "<p>Här är \\(p=6\\) och \\(q=-7\\).</p><p>\\(x=-3\\pm\\sqrt{3^2+7}=-3\\pm4\\).</p><p><strong>\\(x=1\\) eller \\(x=-7\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.97",
@@ -6711,10 +5658,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom en kvadratrot inte kan vara negativ måste \\(x-2\\ge0\\), alltså \\(x\\ge2\\).</p><p>Kvadrera:</p><p>\\(x+4=(x-2)^2=x^2-4x+4\\).</p><p>\\(x^2-5x=0\\Rightarrow x=0\\) eller \\(x=5\\).</p><p>\\(x=0\\) uppfyller inte villkoret \\(x\\ge2\\). Kontroll av \\(x=5\\): \\(\\sqrt{9}=3=5-2\\).</p><p><strong>\\(x=5\\)</strong></p>",
     "familj": "rotekvationer__kontrollera_efter_kvadrering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.98",
@@ -6730,10 +5674,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(3)=120-45=75\\). Det betyder att <strong>75 liter finns kvar efter 3 minuter</strong>.</p><p>b) \\(120-15t=30\\Rightarrow15t=90\\Rightarrow\\)<strong>\\(t=6\\) minuter</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.99",
@@ -6750,10 +5691,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 3:</p><p>\\(x^2-\\frac{10}{3}x+1=0\\).</p><p>pq-formeln ger \\(x=\\frac53\\pm\\sqrt{\\frac{25}{9}-1}=\\frac53\\pm\\frac43\\).</p><p><strong>\\(x=3\\) eller \\(x=\\frac13\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.100",
@@ -6769,11 +5707,7 @@ window.BANKMA2 = [
     "t": "<p>En mätserie visas i tabellen.</p><table class=\"data\"><tr><th>x</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>y</td><td>4,1</td><td>6,0</td><td>9,2</td><td>13,7</td><td>20,6</td></tr></table><ol><li>Bestäm en linjär regressionsmodell och en exponentialmodell.</li><li>Avgör vilken modell som passar mätvärdena bäst i det givna intervallet.</li></ol>",
     "s": "<p>Med ett digitalt verktyg fås ungefär en linjär regressionsmodell \\(y=4{,}07x-1{,}49\\) och en exponentialmodell \\(y=2{,}7\\cdot1{,}50^x\\).</p><p>Mätvärdena ökar med allt större skillnader men ungefär samma faktor. Exponentialmodellen följer därför punkterna bättre.</p><p><strong>Exponentialmodellen passar de givna mätvärdena bäst.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.101",
@@ -6790,10 +5724,7 @@ window.BANKMA2 = [
     "s": "<p><strong>GeoGebra:</strong> rita båda funktionerna och bestäm deras skärningspunkt.</p><p>Före skärningen ligger g högre; efter skärningen ligger f högre eftersom f växer och g avtar.</p><p>Med <code>NLös(4*1.25^x=10*0.9^x)</code> fås \\(x\\approx2,79\\).</p><p><strong>f är större än g för \\(x&gt;2,79\\).</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.102",
@@ -6810,10 +5741,7 @@ window.BANKMA2 = [
     "t": "<p>En rektangel har arean 60 cm². Längden är 7 cm längre än bredden. Bestäm rektangelns sidlängder.</p>",
     "s": "<p>Låt bredden vara \\(x\\) cm. Då är längden \\(x+7\\) cm.</p><p>\\[x(x+7)=60\\Rightarrow x^2+7x-60=0.\\]</p><p>Faktorisera: \\((x+12)(x-5)=0\\). Den positiva lösningen är \\(x=5\\).</p><p><strong>Sidorna är 5 cm och 12 cm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.103",
@@ -6829,10 +5757,7 @@ window.BANKMA2 = [
     "s": "<p>Ekvationen ska ha exakt en reell lösning. Då måste vänsterledet kunna skrivas som en kvadrat som blir 0 för ett enda värde på \\(x\\).</p><p>\\[x^2+8x+16=(x+4)^2\\]</p><p>och</p><p>\\[x^2-8x+16=(x-4)^2.\\]</p><p><strong>\\(a=8\\) eller \\(a=-8\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.104",
@@ -6848,10 +5773,7 @@ window.BANKMA2 = [
     "s": "<p>Om rötterna är \\(r\\) och \\(s\\) kan vänsterledet skrivas \\((x-r)(x-s)\\). Konstanttermen visar då att \\(rs=24\\).</p><p>Positiva faktorpar till 24 är \\((1,24)\\), \\((2,12)\\), \\((3,8)\\) och \\((4,6)\\). Endast paret \\((3,8)\\) skiljer 5.</p><p>\\((x-3)(x-8)=x^2-11x+24\\), så \\(k=11\\).</p><p><strong>\\(k=11\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.105",
@@ -6868,11 +5790,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är −1 och 4, så \\(f(x)=a(x+1)(x-4)\\).</p><p>Grafen går genom \\((0,-4)\\):</p><p>\\(-4=a\\cdot1\\cdot(-4)\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x+1)(x-4)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.106",
@@ -6889,10 +5807,7 @@ window.BANKMA2 = [
     "t": "<p>Öppningen i en symmetrisk båge är 12 m bred vid marken och 4,5 m hög i mitten. Formen modelleras med en andragradsfunktion. Ett rektangulärt fordon är 3,0 m högt och ska köras rakt genom mitten av öppningen.</p><p>Bestäm den största bredd fordonet kan ha enligt modellen.</p>",
     "s": "<p>Låt marken vara x-axeln och placera öppningens kanter vid \\(x=0\\) och \\(x=12\\). Då kan modellen skrivas \\(h(x)=a x(x-12)\\).</p><p>I mitten, \\(x=6\\), är höjden 4,5 m:</p><p>\\[4{,}5=a\\cdot6\\cdot(-6)\\Rightarrow a=-0{,}125.\\]</p><p>Fordonets övre hörn måste ligga där höjden är minst 3 m. Lös därför</p><p>\\[-0{,}125x(x-12)=3.\\]</p><p>Det ger \\(x^2-12x+24=0\\), alltså \\(x=6\\pm2\\sqrt3\\).</p><p>Avståndet mellan dessa två x-värden är \\(4\\sqrt3\\approx6{,}93\\).</p><p><strong>Fordonet kan vara högst cirka 6,9 m brett.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.107",
@@ -6909,10 +5824,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen skär x-axeln vid \\(x=-2\\) och \\(x=1\\).</p><p>Parabeln är nedåtvänd, så koefficienten framför \\(x^2\\) är negativ.</p><p><strong>Nollställen −2 och 1; \\(a&lt;0\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.108",
@@ -6929,10 +5841,7 @@ window.BANKMA2 = [
     "s": "<p>Mellan 2 timmar och 5 timmar går det 3 timmar. Med förändringsfaktorn \\(a\\) får vi</p><p>\\(4000a^3=9000\\).</p><p>Dividera med 4000:</p><p>\\(a^3=2,25\\Rightarrow a=\\sqrt[3]{2,25}\\approx1,31\\).</p><p><strong>förändringsfaktorn är ungefär 1,31 per timme.</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.109",
@@ -6948,10 +5857,7 @@ window.BANKMA2 = [
     "s": "<p>Använd först lagen \\(\\lg(x^p)=p\\lg x\\):</p><p>\\(2\\lg(3x)=\\lg((3x)^2)=\\lg(9x^2)\\).</p><p>Använd sedan lagen \\(\\lg x-\\lg y=\\lg(x/y)\\):</p><p>\\(\\lg(9x^2)-\\lg9=\\lg(x^2)\\).</p><p><strong>\\(\\lg(x^2)\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.110",
@@ -6967,11 +5873,7 @@ window.BANKMA2 = [
     "s": "<p>Vi behöver bara hitta ett exempel av varje typ.</p><p>För \\(x=-2\\):</p><p>\\(f(-2)=(-2)^2=4\\) och \\(g(-2)=4^{-2}=\\frac1{16}\\).</p><p>Alltså är \\(f(-2)&gt;g(-2)\\).</p><p>För \\(x=3\\):</p><p>\\(f(3)=3^2=9\\) och \\(g(3)=4^3=64\\).</p><p>Alltså är \\(g(3)&gt;f(3)\\).</p><p><strong>Ett möjligt svar är \\(x=-2\\) för \\(f&gt;g\\) och \\(x=3\\) för \\(g&gt;f\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.111",
@@ -6986,10 +5888,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(x=9\\): \\(\\sqrt{9+a}=9\\Rightarrow 9+a=81\\Rightarrow a=72\\).</p><p>Då blir ekvationen \\(\\sqrt{x+72}=x\\). Kvadrera: \\(x+72=x^2\\Rightarrow x^2-x-72=0\\Rightarrow (x-9)(x+8)=0\\).</p><p>\\(x=-8\\) kan inte vara lösning eftersom högerledet då är negativt.</p><p><strong>\\(a=72\\), och den enda lösningen är \\(x=9\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.112",
@@ -7005,11 +5904,7 @@ window.BANKMA2 = [
     "s": "<p>Beräkna \\(y/x^2\\):</p><p>\\(3/1^2=3\\), \\(12/2^2=3\\), \\(27/3^2=3\\), \\(48/4^2=3\\).</p><p>Kvoten är konstant, så \\(y=3x^2\\) beskriver alla punkterna.</p><p><strong>\\(y=3x^2\\)</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.113",
@@ -7026,10 +5921,7 @@ window.BANKMA2 = [
     "s": "<p>Låt sidorna vara \\(x\\) och \\(17-x\\), eftersom halva omkretsen är 17.</p><p>Pythagoras ger</p><p>\\(x^2+(17-x)^2=13^2\\).</p><p>Förenkla och dela med 2:</p><p>\\(x^2-17x+60=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=8,5\\pm\\sqrt{72,25-60}=8,5\\pm3,5\\).</p><p><strong>Sidorna är 5 cm och 12 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.114",
@@ -7045,10 +5937,7 @@ window.BANKMA2 = [
     "s": "<p>Låt rötterna vara \\(r\\) och \\(r+2\\). Då kan vänsterledet skrivas</p><p>\\((x-r)(x-r-2)\\).</p><p>Koefficienten framför \\(x\\) blir \\(-(2r+2)\\). Jämför med \\(-10x\\):</p><p>\\(2r+2=10\\Rightarrow r=4\\).</p><p>Rötterna är 4 och 6 och konstanttermen blir \\(k=4\\cdot6=24\\).</p><p><strong>\\(k=24\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.115",
@@ -7065,10 +5954,7 @@ window.BANKMA2 = [
     "s": "<p>Uttrycket kan skrivas \\(f_p(x)=(x-p)^2-4\\).</p><p>a) Nollställena ges av \\((x-p)^2=4\\), alltså \\(x=p-2\\) och \\(x=p+2\\). Avståndet är \\((p+2)-(p-2)=4\\).</p><p>b) Uttrycket \\((x-p)^2-4\\) är minst när \\(x=p\\). Då är funktionsvärdet \\(-4\\).</p><p><strong>a) Avståndet är alltid 4. b) Minimipunkten är \\((p,-4)\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.116",
@@ -7085,11 +5971,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoren ger</p><p>\\(Ca^2=72\\) och \\(Ca^5=576\\).</p><p>Dela den andra ekvationen med den första:</p><p>\\(a^3=576/72=8\\), alltså \\(a=2\\).</p><p>Sätt in i \\(Ca^2=72\\): \\(4C=72\\), så \\(C=18\\).</p><p><strong>\\(C=18\\) och \\(a=2\\), alltså \\(f(x)=18\\cdot2^x\\).</strong></p>",
     "familj": "exponentialfunktioner__berakna_och_tolka_exponentialfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.117",
@@ -7105,11 +5987,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 4: \\(3^x=27=3^3\\).</p><p><strong>\\(x=3\\)</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.118",
@@ -7124,10 +6002,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratroten är redan isolerad. Kvadrera därför båda leden:</p><p>\\(x+5=4^2=16\\Rightarrow x=11\\).</p><p>Kontroll i ursprungsekvationen: \\(\\sqrt{11+5}=\\sqrt{16}=4\\).</p><p><strong>\\(x=11\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.119",
@@ -7143,11 +6018,7 @@ window.BANKMA2 = [
     "s": "<p>Man bör undersöka hur väl modellerna följer punkterna, hur avvikelserna mellan mätvärden och modellvärden ser ut och hur långt prognosen ligger utanför mätperioden.</p><p>Dessutom måste man bedöma om det finns sakliga skäl att tro att en konstant procentuell tillväxt kan fortsätta i 40 år. Begränsade resurser eller ändrade villkor kan göra exponentialmodellen orimlig.</p><p><strong>För att välja modell behöver man både jämföra med data och bedöma om modellen är rimlig i situationen.</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.120",
@@ -7164,10 +6035,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(h(t)=35\\):</p><p>\\(-5t^2+30t+10=35\\).</p><p>Dela med −5:</p><p>\\(t^2-6t+5=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(t=3\\pm\\sqrt{9-5}=3\\pm2\\).</p><p><strong>Efter 1 s och 5 s.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__rorelse_och_hojdmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.121",
@@ -7184,10 +6052,7 @@ window.BANKMA2 = [
     "s": "<p>Hitta två tal vars produkt är konstanttermen och vars summa är x-koefficienten.</p><p>a) \\(x^2-11x+24=(x-3)(x-8)\\Rightarrow x=3,8\\).</p><p>b) \\(x^2+8x+15=(x+3)(x+5)\\Rightarrow x=-3,-5\\).</p><p>c) \\(x^2-3x-18=(x-6)(x+3)\\Rightarrow x=6,-3\\).</p>",
     "familj": "nollproduktmetoden__faktorisera_och_nollprodukt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.122",
@@ -7204,10 +6069,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(x(x-7)=0\\). Alltså \\(x=0\\) eller \\(x-7=0\\Rightarrow x=7\\).</p><p>b) \\((x+3)(x-5)=0\\). Alltså \\(x=-3\\) eller \\(x=5\\).</p><p>c) \\((2x-1)(x+4)=0\\). Då \\(2x-1=0\\Rightarrow x=1/2\\), eller \\(x+4=0\\Rightarrow x=-4\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.123",
@@ -7224,10 +6086,7 @@ window.BANKMA2 = [
     "s": "<p>Bryt ut en gemensam faktor eller använd konjugatregeln för att faktorisera.</p><p>a) \\(2x^2-10x=2x(x-5)=0\\Rightarrow x=0,5\\).</p><p>b) \\(3x^2+12x=3x(x+4)=0\\Rightarrow x=0,-4\\).</p><p>c) \\(5x^2-20=5(x^2-4)=5(x-2)(x+2)=0\\Rightarrow x=\\pm2\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.124",
@@ -7244,10 +6103,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta allt till vänster:</p><p>\\(x(x-4)-5x=0\\).</p><p>Bryt ut \\(x\\): \\(x[(x-4)-5]=x(x-9)=0\\).</p><p><strong>\\(x=0\\) eller \\(x=9\\).</strong></p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.125",
@@ -7264,10 +6120,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta högerledet till vänster och bryt ut den gemensamma faktorn:</p><p>\\((x-2)(x+5)-3(x-2)=0\\).</p><p>\\((x-2)[(x+5)-3]=(x-2)(x+2)=0\\).</p><p><strong>\\(x=2\\) eller \\(x=-2\\).</strong></p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.126",
@@ -7284,10 +6137,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen genom nollproduktmetoden.</p><p>\\[x(x-7)=0.\\]</p>",
     "s": "<p>En produkt är 0 om minst en faktor är 0.</p><p>\\[x=0\\quad\\text{eller}\\quad x-7=0.\\]</p><p><strong>\\(x=0\\) eller \\(x=7\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.127",
@@ -7304,10 +6154,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera varje vänsterled och använd nollproduktmetoden.</p><p>a) \\(x^2-16=(x-4)(x+4)=0\\Rightarrow x=\\pm4\\).</p><p>b) \\(x^2+2x-15=(x+5)(x-3)=0\\Rightarrow x=-5\\) eller 3.</p><p>c) \\(x^2-7x+12=(x-3)(x-4)=0\\Rightarrow x=3\\) eller 4.</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.128",
@@ -7324,10 +6171,7 @@ window.BANKMA2 = [
     "s": "<p>En produkt är noll när minst en faktor är noll.</p><p><strong>\\(x=0\\) eller \\(x=-9\\)</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.129",
@@ -7344,10 +6188,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x+3=4\\) eller \\(x+3=-4\\).</p><p>Alltså <strong>\\(x=1\\) eller \\(x=-7\\)</strong>.</p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.130",
@@ -7364,10 +6205,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först varje ekvation så att koefficienten framför \\(x^2\\) blir 1. Använd sedan <strong>pq-formeln</strong>.</p>\n<p>a) \\(x^2-3x+\\frac54=0\\).</p>\n<p>\\(x=\\frac32\\pm\\sqrt{\\frac94-\\frac54}\n=\\frac32\\pm1\\Rightarrow x=\\frac12,\\frac52\\).</p>\n<p>b) \\(x^2+\\frac16x-\\frac13=0\\).</p>\n<p>\\(x=-\\frac1{12}\\pm\\sqrt{\\frac1{144}+\\frac{48}{144}}\n=-\\frac1{12}\\pm\\frac7{12}\\Rightarrow x=\\frac12,-\\frac23\\).</p>\n<p>c) \\(x^2-\\frac52x-6=0\\).</p>\n<p>\\(x=\\frac54\\pm\\sqrt{\\frac{25}{16}+\\frac{96}{16}}\n=\\frac54\\pm\\frac{11}{4}\\Rightarrow x=4,-\\frac32\\).</p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.131",
@@ -7384,10 +6222,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först varje ekvation med koefficienten framför \\(x^2\\), och använd sedan <strong>pq-formeln</strong>.</p>\n<p>a) \\(x^2-\\frac72x+\\frac32=0\\).</p>\n<p>\\(x=\\frac74\\pm\\sqrt{\\frac{49}{16}-\\frac{24}{16}}\n=\\frac74\\pm\\frac54\\Rightarrow x=3,\\frac12\\).</p>\n<p>b) \\(x^2+\\frac12x-\\frac32=0\\).</p>\n<p>\\(x=-\\frac14\\pm\\sqrt{\\frac1{16}+\\frac{24}{16}}\n=-\\frac14\\pm\\frac54\\Rightarrow x=1,-\\frac32\\).</p>\n<p>c) \\(x^2-\\frac73x+\\frac23=0\\).</p>\n<p>\\(x=\\frac76\\pm\\sqrt{\\frac{49}{36}-\\frac{24}{36}}\n=\\frac76\\pm\\frac56\\Rightarrow x=2,\\frac13\\).</p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.132",
@@ -7404,10 +6239,7 @@ window.BANKMA2 = [
     "t": "<p>Lös med pq-formeln.</p><p>\\[2x^2+4x-6=0.\\]</p>",
     "s": "<p>Dividera först hela ekvationen med 2:</p><p>\\[x^2+2x-3=0.\\]</p><p>Nu är \\(p=2\\) och \\(q=-3\\).</p><p>\\[x=-1\\pm\\sqrt{1+3}=-1\\pm2.\\]</p><p><strong>\\(x=1\\) eller \\(x=-3\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.133",
@@ -7424,10 +6256,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(2x+3=0\\Rightarrow x=-3/2\\), eller \\(x-4=0\\Rightarrow x=4\\).</p><p>b) \\(5x-10=0\\Rightarrow x=2\\), eller \\(x+1=0\\Rightarrow x=-1\\).</p><p>c) \\(4x+1=0\\Rightarrow x=-1/4\\), eller \\(2x-6=0\\Rightarrow x=3\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.134",
@@ -7444,10 +6273,7 @@ window.BANKMA2 = [
     "s": "<p>Produkten är redan faktoriserad. Sätt varje faktor lika med 0.</p><p>a) \\(x=0\\), \\(x+2=0\\) eller \\(x-5=0\\). Alltså \\(x=-2,0,5\\).</p><p>b) \\(x-1=0\\), \\(x+4=0\\) eller \\(2x-3=0\\). Alltså \\(x=1,-4,\\frac32\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.135",
@@ -7464,10 +6290,7 @@ window.BANKMA2 = [
     "t": "<p>Lös med pq-formeln.</p><p>\\[x^2-6x+5=0.\\]</p>",
     "s": "<p>Här är \\(p=-6\\) och \\(q=5\\).</p><p>\\[x=3\\pm\\sqrt{9-5}=3\\pm2.\\]</p><p><strong>\\(x=1\\) eller \\(x=5\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.136",
@@ -7484,10 +6307,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först så att koefficienten framför \\(x^2\\) blir 1 och använd sedan <strong>pq-formeln</strong>.</p>\n<p>a) \\(x^2+\\frac53x-\\frac23=0\\).</p>\n<p>\\(x=-\\frac56\\pm\\sqrt{\\frac{25}{36}+\\frac{24}{36}}\n=-\\frac56\\pm\\frac76\\Rightarrow x=\\frac13,-2\\).</p>\n<p>b) \\(x^2-\\frac92x+2=0\\).</p>\n<p>\\(x=\\frac94\\pm\\sqrt{\\frac{81}{16}-\\frac{32}{16}}\n=\\frac94\\pm\\frac74\\Rightarrow x=4,\\frac12\\).</p>\n<p>c) \\(x^2-\\frac{13}{5}x+\\frac65=0\\).</p>\n<p>\\(x=\\frac{13}{10}\\pm\\sqrt{\\frac{169}{100}-\\frac{120}{100}}\n=\\frac{13}{10}\\pm\\frac7{10}\\Rightarrow x=2,\\frac35\\).</p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.137",
@@ -7504,10 +6324,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera så att vänsterledet blir en produkt.</p><p>a) \\(x^2+x-12=(x+4)(x-3)=0\\Rightarrow x=-4,3\\).</p><p>b) \\(x^2-2x-24=(x-6)(x+4)=0\\Rightarrow x=6,-4\\).</p><p>c) \\(x^2-10x+21=(x-3)(x-7)=0\\Rightarrow x=3,7\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.138",
@@ -7524,10 +6341,7 @@ window.BANKMA2 = [
     "s": "<p>Använd nollproduktmetoden: om en produkt är 0 måste minst en faktor vara 0.</p><p>a) \\((x-6)(x+2)=0\\Rightarrow x=6\\) eller \\(x=-2\\).</p><p>b) \\((3x+2)(x-1)=0\\Rightarrow3x+2=0\\) eller \\(x-1=0\\), alltså \\(x=-\\frac23\\) eller \\(x=1\\).</p><p>c) \\(x(4x-12)=0\\Rightarrow x=0\\) eller \\(4x-12=0\\Rightarrow x=3\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.139",
@@ -7544,11 +6358,7 @@ window.BANKMA2 = [
     "t": "<p>Två olika andragradsfunktioner har båda nollställena \\(x=1\\) och \\(x=7\\). Den ena grafen går genom \\((0,14)\\) och den andra genom \\((0,-7)\\).</p><p>Bestäm funktionerna och förklara hur deras grafer är placerade i förhållande till x-axeln.</p>",
     "s": "<p>Båda funktionerna kan skrivas \\(a(x-1)(x-7)\\).</p><p>För den första gäller \\(14=a(-1)(-7)=7a\\), alltså \\(a=2\\).</p><p>För den andra gäller \\(-7=7a\\), alltså \\(a=-1\\).</p><p>Funktionerna är därför \\(f(x)=2(x-1)(x-7)\\) och \\(g(x)=-(x-1)(x-7)\\).</p><p>De har samma nollställen men öppnar åt olika håll. Därför ligger de på motsatta sidor om x-axeln mellan nollställena.</p><p><strong>\\(f(x)=2(x-1)(x-7)\\) och \\(g(x)=-(x-1)(x-7)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.140",
@@ -7565,10 +6375,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen skär x-axeln vid \\(x=-3\\) och \\(x=1\\).</p><p>Maximipunkten ligger mitt emellan nollställena, vid \\(x=-1\\), och avläsningen ger y-värdet 4.</p><p><strong>Nollställen −3 och 1; största värde 4.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.141",
@@ -7585,10 +6392,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är \\(-1\\) och 4. Då kan \\(q(x)=a(x+1)(x-4)\\). minimipunkt ligger vid \\(x=1,5\\) och \\(y=-6,25\\). Detta stämmer med \\(a=1\\).</p><p><strong>\\(q(x)=x^2-3x-4\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.142",
@@ -7605,10 +6409,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är de x-värden där grafen har \\(y=0\\).</p><p>Av grafen avläses skärningarna vid \\(x=-3\\) och \\(x=1\\).</p><p><strong>\\(x=-3\\) och \\(x=1\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.143",
@@ -7625,10 +6426,7 @@ window.BANKMA2 = [
     "s": "<p>Det andra nollstället ligger lika långt på andra sidan symmetrilinjen: \\(x=8\\).</p><p>Skriv \\(f(x)=a(x-2)(x-8)\\).</p><p>\\(f(0)=16a=40\\Rightarrow a=2,5\\).</p><p><strong>\\(f(x)=2,5(x-2)(x-8)\\).</strong></p><p>Symmetrilinjen är \\(x=5\\), och det minsta värdet är \\(f(5)=2,5\\cdot3\\cdot(-3)=-22,5\\).</p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.144",
@@ -7645,10 +6443,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är 1 och 5 och \\(f(0)=5\\), så \\(a=1\\).</p><p><strong>\\(f(x)=(x-1)(x-5)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.145",
@@ -7665,10 +6460,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen är symmetrisk kring y-axeln, så ingen x-term behövs.</p><p>\\(f(0)=-4\\), alltså \\(c=-4\\).</p><p>Ett nollställe är 4: \\(0=16a-4\\Rightarrow a=1/4\\).</p><p><strong>\\(f(x)=\\frac14x^2-4\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.146",
@@ -7685,10 +6477,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är \\(-1\\) och 3.</p><p>Symmetrilinjen är \\(x=1\\).</p><p>Minimipunkten är \\((1,-4)\\).</p><p><strong>Nollställen: −1 och 3. Symmetrilinje: \\(x=1\\). Minimipunkt: \\((1,-4)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.147",
@@ -7705,10 +6494,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x+2)(x-4)\\).</p><p>Eftersom \\(f(0)=4\\) får vi \\(4=a\\cdot2\\cdot(-4)=-8a\\), alltså \\(a=-1/2\\).</p><p>Symmetrilinjen är \\(x=1\\).</p><p>\\(f(1)=-\\frac12\\cdot3\\cdot(-3)=\\frac92\\).</p><p><strong>Maximipunkten är \\((1,4,5)\\).</strong></p>",
     "familj": "andragradsfunktioner__bestam_funktion_fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.148",
@@ -7725,10 +6511,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(0)=8\\).</p><p>b) \\(f(3)=-9+6+8=5\\).</p><p>c) \\(f(4)=-16+8+8=0\\), så punkten \\((4,0)\\) ligger på grafen.</p><p><strong>a) 8. b) 5. c) Ja.</strong></p>",
     "familj": "andragradsfunktioner__funktionsvarden_och_punktkontroll",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.149",
@@ -7745,11 +6528,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena 1 och 5 ger \\(f(x)=a(x-1)(x-5)\\).</p><p>Punkten \\((3,-8)\\) ger \\(-8=a\\cdot2\\cdot(-2)=-4a\\).</p><p>Alltså \\(a=2\\).</p><p><strong>\\(f(x)=2(x-1)(x-5)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.150",
@@ -7766,11 +6545,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena 2 och 7 ger \\(f(x)=a(x-2)(x-7)\\).</p><p>Sätt in \\((0,14)\\): \\(14=a(-2)(-7)=14a\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x-2)(x-7)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.151",
@@ -7787,10 +6562,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta högerledet till vänster:</p><p>\\((2x-3)^2-5(2x-3)=0\\).</p><p>Bryt ut den gemensamma faktorn \\((2x-3)\\):</p><p>\\((2x-3)[(2x-3)-5]=(2x-3)(2x-8)=0\\).</p><p>Alltså \\(2x-3=0\\Rightarrow x=3/2\\), eller \\(2x-8=0\\Rightarrow x=4\\).</p><p><strong>\\(x=3/2\\) eller \\(x=4\\).</strong></p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.152",
@@ -7807,10 +6579,7 @@ window.BANKMA2 = [
     "s": "<p>Bryt först ut \\(x\\), och faktorisera sedan differensen av två kvadrater.</p><p>a) \\(x^3-4x=x(x^2-4)=x(x-2)(x+2)\\Rightarrow x=-2,0,2\\).</p><p>b) \\(x^3-9x=x(x-3)(x+3)\\Rightarrow x=-3,0,3\\).</p><p>c) \\(2x^3-8x=2x(x^2-4)=2x(x-2)(x+2)\\Rightarrow x=-2,0,2\\).</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.153",
@@ -7826,10 +6595,7 @@ window.BANKMA2 = [
     "s": "<p>Uttrycket faktoriseras:</p><p>\\(x^2-(a+2)x+2a=(x-2)(x-a)\\).</p><p>Rötterna är alltså \\(2\\) och \\(a\\).</p><p>För att båda ska vara positiva krävs \\(a&gt;0\\). För att de ska vara olika krävs dessutom \\(a\\ne2\\).</p><p><strong>\\(a&gt;0\\) och \\(a\\ne2\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__parameter_och_rotvillkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.154",
@@ -7845,11 +6611,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv funktionen som \\(f(x)=a(x-r)(x-s)\\), där \\(a\\ne0\\), och sätt \\(m=\\frac{r+s}{2}\\).</p><p>För ett godtyckligt tal \\(h\\) gäller</p><p>\\[f(m+h)=a\\left(h+\\frac{s-r}{2}\\right)\\left(h-\\frac{s-r}{2}\\right).\\]</p><p>Om \\(h\\) byts mot \\(-h\\) fås samma produkt, alltså \\(f(m+h)=f(m-h)\\).</p><p>Funktionsvärdena är därför lika långt till vänster och höger om \\(x=m\\). Grafen är alltså symmetrisk kring</p><p><strong>\\(x=m=\\frac{r+s}{2}\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.155",
@@ -7866,10 +6628,7 @@ window.BANKMA2 = [
     "s": "<p>Arean blir \\(A(x)=x(18-3x)=-3x^2+18x\\). Parabelns topp ligger vid \\(x=-18/(2\\cdot-3)=3\\). Då är \\(y=9\\).</p><p><strong>Största area är \\(3\\cdot9=27\\) areaenheter.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.156",
@@ -7886,11 +6645,7 @@ window.BANKMA2 = [
     "s": "<p>Låt ena sidan vara \\(x\\). Den andra blir \\(20-x\\).</p><p>Arean är \\(A=x(20-x)\\).</p><p>Kravet är \\(-x^2+20x\\ge91\\).</p><p>Det ger \\(x^2-20x+91\\le0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=10\\pm\\sqrt{100-91}=10\\pm3\\).</p><p><strong>\\(7\\le x\\le13\\) cm.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.157",
@@ -7907,10 +6662,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera: \\(x^2+4x-5=(x+5)(x-1)\\). Nollställena är −5 och 1.</p><p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\(x=\\frac{-5+1}{2}=-2\\).</p><p>\\(f(-2)=4-8-5=-9\\). Eftersom parabeln är uppåtvänd är detta det minsta värdet.</p><p><strong>Symmetrilinje \\(x=-2\\), minsta värde −9.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.158",
@@ -7927,11 +6679,7 @@ window.BANKMA2 = [
     "s": "<p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\(r+3=5\\Rightarrow r=2\\).</p><p>Nollställena är alltså 2 och 8.</p><p>Skriv \\(f(x)=a(x-2)(x-8)\\).</p><p>\\(20=16a\\Rightarrow a=5/4\\).</p><p><strong>\\(f(x)=\\frac54(x-2)(x-8)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.159",
@@ -7947,10 +6695,7 @@ window.BANKMA2 = [
     "s": "<p>Om rötterna är 3 och 4 måste vänsterledet vara</p><p>\\((x-3)(x-4)\\).</p><p>Utveckla: \\(x^2-7x+12\\).</p><p>Jämför med \\(x^2-7x+a\\).</p><p><strong>\\(a=12\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.160",
@@ -7967,10 +6712,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta allt till en produktform:</p><p>\\(x^3-9x=x(x^2-9)=x(x-3)(x+3)\\).</p><p>Enligt nollproduktmetoden måste minst en faktor vara 0.</p><p><strong>\\(x=-3,0,3\\).</strong></p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.161",
@@ -7987,10 +6729,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(f(1)=f(7)\\) ligger symmetrilinjen mitt emellan 1 och 7: \\(x=4\\).</p><p>Minimipunkten är alltså \\((4,-4)\\), så \\(f(x)=a(x-4)^2-4\\).</p><p>Sätt in \\(x=1\\): \\(5=9a-4\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x-4)^2-4\\).</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.162",
@@ -8007,10 +6746,7 @@ window.BANKMA2 = [
     "s": "<p>Intäkten är \\(I=pq=p(500-2p)=500p-2p^2\\).</p><p>Kostnaden blir \\(K=6000+50(500-2p)=31000-100p\\).</p><p>Vinsten är</p><p>\\(V(p)=-2p^2+600p-31000\\).</p><p>Maximipunkten ligger vid \\(p=150\\).</p><p>\\(V(150)=-45000+90000-31000=14000\\).</p><p><strong>Priset 150 kr ger maximal vinst 14 000 kr.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.163",
@@ -8026,10 +6762,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(x=3\\): \\(9+3p-18=0\\Rightarrow3p=9\\Rightarrow p=3\\).</p><p>Ekvationen blir \\(x^2+3x-18=(x-3)(x+6)=0\\).</p><p><strong>\\(p=3\\) och den andra roten är \\(-6\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.164",
@@ -8045,10 +6778,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom produkten är 36 söker vi heltalspar med differens 5.</p><p>Positiva faktorpar: \\((1,36),(2,18),(3,12),(4,9),(6,6)\\). Endast \\(4\\) och \\(9\\) har differensen 5.</p><p>Även \\(-4\\) och \\(-9\\) har produkten 36 och differensen 5.</p><p>För rötter \\(r_1,r_2\\) gäller \\(p=-(r_1+r_2)\\) och \\(q=r_1r_2\\).</p><p>Rötterna \\(4,9\\) ger \\(p=-13,q=36\\). Rötterna \\(-4,-9\\) ger \\(p=13,q=36\\).</p><p><strong>\\((p,q)=(-13,36)\\) eller \\((13,36)\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__parameter_och_rotvillkor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.165",
@@ -8065,10 +6795,7 @@ window.BANKMA2 = [
     "s": "<p>Låt rötterna vara \\(r\\) och \\(2r\\).</p><p>Rötternas produkt är 12, så \\(2r^2=12\\Rightarrow r^2=6\\).</p><p>Alltså \\(r=\\pm\\sqrt6\\).</p><p>Rötternas summa är \\(a\\), så \\(a=3r\\).</p><p><strong>\\(a=3\\sqrt6\\) eller \\(a=-3\\sqrt6\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.166",
@@ -8085,11 +6812,7 @@ window.BANKMA2 = [
     "s": "<p>Lös \\(-0,25x^2+2x+3\\ge6\\).</p><p>\\(-0,25x^2+2x-3\\ge0\\). Multiplicera med −4: \\(x^2-8x+12\\le0\\).</p><p>Rötterna är 2 och 6.</p><p><strong>Bredden är \\(6-2=4\\) m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.167",
@@ -8106,11 +6829,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är \\(-1\\) och 5, så funktionen har formen</p><p>\\(f(x)=a(x+1)(x-5)\\).</p><p>Den markerade punkten i grafen visar att \\(a=1\\).</p><p><strong>\\(f(x)=(x+1)(x-5)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.168",
@@ -8126,10 +6845,7 @@ window.BANKMA2 = [
     "s": "<p>Ekvationen ska ha exakt en reell lösning. Med kvadreringsregeln får vi</p><p>\\[(x-3)^2=x^2-6x+9.\\]</p><p>Om \\(a=9\\) blir ekvationen \\((x-3)^2=0\\), som bara har lösningen \\(x=3\\).</p><p><strong>\\(a=9\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.169",
@@ -8146,10 +6862,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först med 2:</p>\n<p>\\(x^2-\\frac52x-\\frac32=0\\).</p>\n<p>Använd <strong>pq-formeln</strong> med \\(p=-\\frac52\\) och \\(q=-\\frac32\\):</p>\n<p>\\(x=\\frac54\\pm\\sqrt{\\frac{25}{16}+\\frac{24}{16}}\n=\\frac54\\pm\\frac74\\).</p>\n<p><strong>\\(x=3\\) eller \\(x=-\\frac12\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.170",
@@ -8166,10 +6879,7 @@ window.BANKMA2 = [
     "s": "<p>Dela med 2:</p><p>\\(x^2-\\frac32x-1=0\\).</p><p>pq-formeln ger \\(x=\\frac34\\pm\\sqrt{\\frac{9}{16}+1}=\\frac34\\pm\\frac54\\).</p><p><strong>\\(x=2\\) eller \\(x=-\\frac12\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.171",
@@ -8186,10 +6896,7 @@ window.BANKMA2 = [
     "s": "<p>Använd <strong>pq-formeln</strong> på varje ekvation.</p>\n<p>a) \\(x^2-8x+15=0\\): \\(p=-8\\), \\(q=15\\).</p>\n<p>\\(x=4\\pm\\sqrt{16-15}=4\\pm1\\Rightarrow x=3,5\\).</p>\n<p>b) \\(x^2+7x+10=0\\): \\(p=7\\), \\(q=10\\).</p>\n<p>\\(x=-\\frac72\\pm\\sqrt{\\frac{49}{4}-10}\n=-\\frac72\\pm\\frac32\\Rightarrow x=-5,-2\\).</p>\n<p>c) \\(x^2-x-12=0\\): \\(p=-1\\), \\(q=-12\\).</p>\n<p>\\(x=\\frac12\\pm\\sqrt{\\frac14+12}\n=\\frac12\\pm\\frac72\\Rightarrow x=-3,4\\).</p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.172",
@@ -8206,10 +6913,7 @@ window.BANKMA2 = [
     "s": "<p>Använd först potens av en produkt:</p><p>\\((2x^3)^2=2^2\\cdot(x^3)^2\\).</p><p>\\((x^3)^2=x^{3\\cdot2}=x^6\\).</p><p><strong>\\(4x^6\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.173",
@@ -8226,10 +6930,7 @@ window.BANKMA2 = [
     "s": "<p>Täljaren blir \\(4x^6y^{-2}\\).</p><p>Dividera potensvis:</p><p>\\(\\frac{4x^6y^{-2}}{4x^2y^{-3}}=x^{6-2}y^{-2-(-3)}\\).</p><p><strong>\\(x^4y\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.174",
@@ -8246,10 +6947,7 @@ window.BANKMA2 = [
     "s": "<p>Börja med potensen av produkten:</p><p>\\((3x^2y)^2=9x^4y^2\\).</p><p>Då blir uttrycket \\(\\frac{9x^5y^2}{9x^2y}\\).</p><p>Förkorta koefficienterna och subtrahera exponenterna:</p><p>\\(x^{5-2}y^{2-1}=x^3y\\).</p><p><strong>Svaret är \\(x^3y\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.175",
@@ -8265,10 +6963,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(f(2)=7\\) är \\(f(f(2))=f(7)\\). Alltså gäller \\(f(7)=22\\).</p><p>Den linjära funktionens graf går därför genom punkterna \\((2,7)\\) och \\((7,22)\\).</p><p>Riktningskoefficienten är \\(k=\\frac{22-7}{7-2}=3\\).</p><p>Skriv \\(f(x)=3x+m\\). Villkoret \\(f(2)=7\\) ger \\(6+m=7\\), alltså \\(m=1\\).</p><p><strong>\\(f(x)=3x+1\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.176",
@@ -8284,10 +6979,7 @@ window.BANKMA2 = [
     "s": "<p>Först söker vi vilka x-värde \\(u\\) som ger \\(f(u)=2\\). Av grafen fås <strong>\\(u=-4,0,2\\)</strong>.</p><p>Alltså måste \\(f(x)=-4\\), \\(f(x)=0\\) eller \\(f(x)=2\\).</p><p>Grafen når aldrig −4. \\(f(x)=0\\) ger \\(x=-2\\) eller \\(x=4\\). \\(f(x)=2\\) ger \\(x=-4,0,2\\).</p><p><strong>Lösningarna är \\(x=-4,-2,0,2,4\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.177",
@@ -8303,10 +6995,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(-2)=(-2)^2-2(-2)=8\\).</p><p>\\(f(2)=2^2-2\\cdot2=0\\).</p><p><strong>Alltså är \\(f(-2)&gt;f(2)\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.178",
@@ -8322,10 +7011,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>\\(f(3)=4\\)</strong>.</p><p>b) Nivån \\(y=4\\) skär grafen vid <strong>\\(x=-1\\) och \\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.179",
@@ -8341,10 +7027,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(-2)=3\\cdot4-2=10\\).</p><p>b) \\(3x^2-2=10\\Rightarrow x^2=4\\Rightarrow x=\\pm2\\).</p><p><strong>a) 10, b) \\(x=\\pm2\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.180",
@@ -8360,11 +7043,7 @@ window.BANKMA2 = [
     "s": "<p>Värdet \\(x=1\\) förekommer två gånger. För att \\(y\\) ska kunna beskrivas som en funktion av \\(x\\) måste samma x-värde ge samma funktionsvärde.</p><p>Alltså krävs \\(a+2=7\\), vilket ger \\(a=5\\).</p><p><strong>\\(a=5\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__tabell_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.181",
@@ -8380,10 +7059,7 @@ window.BANKMA2 = [
     "s": "<p>\\(1000=10^3\\). Därför är <strong>\\(\\lg1000=3\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.182",
@@ -8399,10 +7075,7 @@ window.BANKMA2 = [
     "s": "<p>\\(10000=10^4\\). Därför är <strong>\\(\\lg10000=4\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.183",
@@ -8418,10 +7091,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(100=10^2\\Rightarrow\\lg100=2\\).</p><p>b) \\(0,001=10^{-3}\\Rightarrow\\lg0,001=-3\\).</p><p>c) \\(10^{\\lg7}=7\\), eftersom tiopotens och \\(\\lg\\) tar ut varandra.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.184",
@@ -8437,10 +7107,7 @@ window.BANKMA2 = [
     "s": "<p>\\(0,1=10^{-1}\\). Därför är <strong>\\(\\lg0,1=-1\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.185",
@@ -8456,10 +7123,7 @@ window.BANKMA2 = [
     "s": "<p>Logaritmen och tiopotensen tar ut varandra:</p><p><strong>\\(\\lg(10^5)=5\\).</strong></p>",
     "familj": "logaritmbegreppet__inversa_sambandet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.186",
@@ -8475,10 +7139,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\lg x=3\\) betyder per definition att \\(x=10^3\\).</p><p><strong>\\(x=1000\\).</strong></p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.187",
@@ -8495,10 +7156,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledets exponent blir \\(3a+2-(a+4)=2a-2\\).</p><p>För att uttrycken ska vara lika måste \\(2a-2=8\\).</p><p><strong>\\(a=5\\).</strong></p>",
     "familj": "potensregler__tillampa_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.188",
@@ -8515,10 +7173,7 @@ window.BANKMA2 = [
     "s": "<p>Vid division av potenser med samma bas subtraheras exponenterna:</p><p>\\(a^{7-2}=a^5\\).</p><p><strong>\\(a^5\\)</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.189",
@@ -8535,10 +7190,7 @@ window.BANKMA2 = [
     "s": "<p>Om sidlängden är \\(2x^n\\) blir volymen</p><p>\\[(2x^n)^3=8x^{3n}.\\]</p><p>Det ska vara samma uttryck som \\(8x^{12}\\). Därför måste \\(3n=12\\).</p><p><strong>\\(n=4\\)</strong></p>",
     "familj": "potensregler__tillampa_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.190",
@@ -8553,10 +7205,7 @@ window.BANKMA2 = [
     "s": "<p>Halva koefficienten framför \\(x\\) är 3:</p><p>\\(x^2+6x+2=(x+3)^2-9+2\\).</p><p><strong>\\((x+3)^2-7\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.191",
@@ -8573,10 +7222,7 @@ window.BANKMA2 = [
     "s": "<p>Börja med täljaren:</p><p>\\((2a^3)^2=4a^6\\).</p><p>Då blir \\(\\frac{4a^6}{4a}=a^{6-1}\\).</p><p><strong>\\(a^5\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.192",
@@ -8593,10 +7239,7 @@ window.BANKMA2 = [
     "s": "<p>Använd potenslagarna stegvis och förenkla exponenterna innan du skriver slutsvaret.</p><p>Exponenterna ger \\(n+4=10\\).</p><p><strong>\\(n=6\\).</strong></p>",
     "familj": "potensregler__tillampa_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.193",
@@ -8611,10 +7254,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta över konstanten eller kvadratkomplettera direkt:</p><p>\\(x^2-8x+3=(x-4)^2-16+3=(x-4)^2-13\\).</p><p>Ekvationen blir därför</p><p>\\((x-4)^2-13=0\\Rightarrow (x-4)^2=13\\).</p><p>Ta kvadratroten:</p><p>\\(x-4=\\pm\\sqrt{13}\\).</p><p><strong>\\(x=4\\pm\\sqrt{13}\\).</strong></p>",
     "familj": "kvadratkomplettering__ekvationslosning_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.194",
@@ -8629,10 +7269,7 @@ window.BANKMA2 = [
     "s": "<p>Halva koefficienten framför x är 5, så börja med \\((x+5)^2\\).</p><p>\\((x+5)^2=x^2+10x+25\\).</p><p>För att få 21 i stället för 25 måste vi subtrahera 4.</p><p><strong>\\(x^2+10x+21=(x+5)^2-4\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.195",
@@ -8647,10 +7284,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta konstanten:</p><p>\\(x^2+6x=2\\).</p><p>Addera 9 i båda leden:</p><p>\\((x+3)^2=11\\).</p><p>Därför <strong>\\(x=-3\\pm\\sqrt{11}\\)</strong>.</p>",
     "familj": "kvadratkomplettering__ekvationslosning_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.196",
@@ -8667,11 +7301,7 @@ window.BANKMA2 = [
     "s": "<p>Låt förändringsfaktorn per timme vara \\(a\\). Mellan tidpunkterna skiljer det 4 timmar, så</p><p>\\(900a^4=2025\\Rightarrow a^4=2,25\\Rightarrow a\\approx1,2247\\).</p><p>Vi söker sedan \\(t\\) då \\(900a^t=6834\\). I GeoGebra kan ekvationen lösas med <code>NLös(900*1.2247^t=6834)</code>.</p><p>Det ger \\(t\\approx10,0\\).</p><p><strong>Efter ungefär 10,0 timmar.</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.197",
@@ -8688,10 +7318,7 @@ window.BANKMA2 = [
     "s": "<p>Ta kubikroten ur båda leden:</p><p>\\(2x+1=3\\).</p><p>\\(2x=2\\Rightarrow x=1\\).</p><p><strong>\\(x=1\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.198",
@@ -8708,10 +7335,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta allt till ena sidan:</p><p>\\(x^6-64x^2=0\\).</p><p>Faktorisera:</p><p>\\(x^2(x^4-64)=0\\).</p><p>Första faktorn ger \\(x=0\\). Den andra ger \\(x^4=64\\), alltså \\(x=\\pm\\sqrt[4]{64}=\\pm2\\sqrt2\\).</p><p><strong>\\(x=0\\) eller \\(x=\\pm2\\sqrt2\\).</strong></p>",
     "familj": "potensekvationer__jamn_potens_tva_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.199",
@@ -8727,11 +7351,7 @@ window.BANKMA2 = [
     "s": "<p>Vi jämför exponentialfunktionen \\(2^x\\) med potensfunktionen \\(x^2\\).</p><p>Vid \\(x=4\\) är de lika: \\(2^4=16\\) och \\(4^2=16\\).</p><p>För det första tillåtna heltalet \\(x=5\\) får vi</p><p>\\(2^5=32\\) och \\(5^2=25\\).</p><p>Alltså gäller redan \\(2^5&gt;5^2\\).</p><p><strong>Det minsta heltalet \\(x\\ge5\\) är \\(x=5\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.200",
@@ -8747,11 +7367,7 @@ window.BANKMA2 = [
     "s": "<p>Påståendet är <strong>fel</strong>. Att en olikhet gäller för ett enda x-värde visar inte att den gäller för alla x.</p><p>Vid \\(x=10\\) är</p><p>\\(10^5=100\\,000\\) och \\(2^{10}=1\\,024\\), så där är \\(x^5\\) mycket större.</p><p>Men vid exempelvis \\(x=23\\) får vi</p><p>\\(23^5=6\\,436\\,343\\) medan \\(2^{23}=8\\,388\\,608\\).</p><p>Där har alltså exponentialfunktionen gått om potensfunktionen.</p><p>Förklaringen är att \\(2^x\\) multipliceras med 2 varje gång x ökar med 1, medan den relativa ökningen hos \\(x^5\\) blir allt mindre när x blir stort.</p><p><strong>Ett enda exempel, som \\(x=10\\), räcker därför inte för att bevisa ett påstående om alla x.</strong></p>",
     "familj": "jamfora_exponential_potens__jamfora_tillvaxt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.201",
@@ -8767,11 +7383,7 @@ window.BANKMA2 = [
     "s": "<p>Rita båda funktionerna i GeoGebra och bestäm deras skärningspunkter i intervallet.</p><p>De har samma värde ungefär vid \\(x=2,36\\) och \\(x=44,34\\).</p><p>Kontroll mellan skärningarna, till exempel vid \\(x=10\\): \\(f(10)=5000\\), medan \\(g(10)\\approx809\\). Där är alltså \\(f>g\\).</p><p>Utanför skärningspunkterna är exponentialfunktionen större.</p><p><strong>\\(f(x)>g(x)\\) för ungefär \\(2,36<x<44,34\\).</strong></p>",
     "familj": "jamfora_exponential_potens__jamforelse_med_graf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.202",
@@ -8787,11 +7399,7 @@ window.BANKMA2 = [
     "s": "<p>Vid \\(t=5\\):</p><p>\\(f(5)=40\\cdot5^{1,5}\\approx447\\) och \\(g(5)=100\\cdot1,25^5\\approx305\\). Alltså är \\(f(5)>g(5)\\).</p><p>Vid \\(t=15\\):</p><p>\\(f(15)=40\\cdot15^{1,5}\\approx2324\\) och \\(g(15)=100\\cdot1,25^{15}\\approx2842\\). Alltså är \\(g(15)>f(15)\\).</p><p><strong>Potensmodellen är störst vid \\(t=5\\), exponentialmodellen vid \\(t=15\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.203",
@@ -8807,11 +7415,7 @@ window.BANKMA2 = [
     "t": "<p>Två modeller beskriver hur arbetsmängden växer när ett projekt får fler delar:</p><p>\\[A(n)=15n^2,\\qquad B(n)=10\\cdot1{,}3^n.\\]</p><p>För heltalsvärden \\(n\\ge1\\) är modell A först större. Bestäm ungefär när modell B går om modell A, och förklara varför det inte räcker att bara titta på förändringsfaktorn 1,3.</p>",
     "s": "<p>Rita båda funktionerna eller lös \\(10\\cdot1{,}3^n=15n^2\\) digitalt.</p><p>Den relevanta skärningen för \\(n\\ge1\\) ligger vid ungefär \\(n=26{,}54\\). För \\(n=26\\) är A fortfarande större, medan B är större vid \\(n=27\\).</p><p>Förändringsfaktorn 1,3 visar hur B förändras per steg, men säger inte ensam när B passerar A. Modellernas startnivåer och hela uttryck måste jämföras.</p><p><strong>B går om A mellan 26 och 27 delar; för heltal sker det första gången vid \\(n=27\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.204",
@@ -8827,11 +7431,7 @@ window.BANKMA2 = [
     "s": "<p>Här jämförs en <strong>potensfunktion</strong>, \\(f(x)=4x^2\\), med en <strong>exponentialfunktion</strong>, \\(g(x)=3\\cdot1,5^x\\).</p><p><strong>GeoGebra:</strong> skriv in båda funktionerna och bestäm den skärningspunkt som ligger i området \\(x\\ge5\\). Du kan också skriva <code>NLös(3*1.5^x=4x^2)</code> i CAS.</p><p>Den relevanta skärningen ligger vid \\(x\\approx13,57\\). Eftersom frågan gäller heltal kontrollerar vi heltalen på var sin sida:</p><p>\\(x=13:\\quad g(13)\\approx583,9&lt;f(13)=676\\).</p><p>\\(x=14:\\quad g(14)\\approx875,8&gt;f(14)=784\\).</p><p><strong>Det minsta heltalet är därför \\(x=14\\).</strong></p>",
     "familj": "jamfora_exponential_potens__jamforelse_med_graf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.205",
@@ -8847,10 +7447,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(g(-3)=-8\\).</p><p>b) \\(x^2+4x-5=(x+5)(x-1)\\).</p><p><strong>Nollställena är −5 och 1.</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.206",
@@ -8866,11 +7463,7 @@ window.BANKMA2 = [
     "s": "<p>\\(g(3)=10\\), så \\(f(g(3))=f(10)=\\)<strong>25</strong>.</p><p>\\(f(3)=4\\), så \\(g(f(3))=g(4)=\\)<strong>12</strong>.</p><p>Funktionerna används i olika ordning och mellanvärdena blir olika. Därför behöver svaren inte bli lika.</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.207",
@@ -8886,10 +7479,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(2)=3\\).</p><p>b) \\(2x^2-3x+1=3\\Rightarrow2x^2-3x-2=0\\). \\((2x+1)(x-2)=0\\).</p><p><strong>\\(x=2\\) eller \\(x=-\\frac12\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.208",
@@ -8905,10 +7495,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(f(x))=a(ax+b)+b=a^2x+b(a+1)\\).</p><p>Därför \\(a^2=9\\), så \\(a=3\\) eller \\(a=-3\\).</p><p>Om \\(a=3\\): \\(4b=-8\\Rightarrow b=-2\\), alltså <strong>\\(f(x)=3x-2\\)</strong>.</p><p>Om \\(a=-3\\): \\(-2b=-8\\Rightarrow b=4\\), alltså <strong>\\(f(x)=-3x+4\\)</strong>.</p><p>Därmed är <strong>\\(f(2)=4\\) eller \\(f(2)=-2\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.209",
@@ -8924,10 +7511,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(x=-1\\):</p><p>\\(g(-1)=3(-1)^2-2(-1)+1=3+2+1\\).</p><p><strong>\\(g(-1)=6\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.210",
@@ -8943,10 +7527,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>−1</strong>.</p><p>b) Formeln ger \\(4^2-2=\\)<strong>14</strong>.</p><p>c) \\(x^2-2=7\\Rightarrow x^2=9\\Rightarrow\\)<strong>\\(x=-3\\) eller \\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.211",
@@ -8962,10 +7543,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(f(x)=8\\):</p><p>\\(x^2-4x+3=8\\Rightarrow x^2-4x-5=0\\).</p><p>Faktorisera: \\((x-5)(x+1)=0\\).</p><p><strong>\\(x=5\\) eller \\(x=-1\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.212",
@@ -8981,11 +7559,7 @@ window.BANKMA2 = [
     "s": "<p>Påståendet är <strong>falskt</strong>. Exempelvis \\(f(x)=3x+(x-2)(x-4)\\) ger fortfarande \\(f(2)=6\\) och \\(f(4)=12\\), men är inte \\(3x\\).</p><p>Om man dessutom vet att <strong>f är linjär</strong>, bestämmer två punkter den räta linjen och då blir \\(f(x)=3x\\).</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.213",
@@ -9001,10 +7575,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(1000=10^3\\), alltså \\(\\lg1000=3\\).</p><p>b) \\(0,01=10^{-2}\\), alltså \\(\\lg0,01=-2\\).</p><p>c) Av sambandet på formelbladet, \\(y=10^x\\Leftrightarrow x=\\lg y\\), följer att \\(10^{\\lg12}=12\\).</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.214",
@@ -9020,10 +7591,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\lg23\\) är det tal som 10 ska upphöjas till för att ge 23.</p><p>Därför är <strong>\\(10^{\\lg23}=23\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.215",
@@ -9039,10 +7607,7 @@ window.BANKMA2 = [
     "s": "<p>Använd definitionen: \\(\\lg a=b\\) betyder att \\(10^b=a\\).</p><p><strong>a) 2</strong>, eftersom \\(10^2=100\\).</p><p><strong>b) −3</strong>, eftersom \\(10^{-3}=0,001\\).</p><p><strong>c) 7</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.216",
@@ -9058,10 +7623,7 @@ window.BANKMA2 = [
     "s": "<p>\\(0,001=10^{-3}\\). Därför är <strong>\\(\\lg(0,001)=-3\\)</strong>.</p>",
     "familj": "logaritmbegreppet__inversa_sambandet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.217",
@@ -9077,10 +7639,7 @@ window.BANKMA2 = [
     "s": "<p>Summan av två logaritmer kan skrivas som logaritmen av produkten:</p><p>\\(\\lg5+\\lg8=\\lg(5\\cdot8)\\).</p><p><strong>\\(\\lg40\\).</strong></p>",
     "familj": "logaritmlagar__sammanfoga_logaritmer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.218",
@@ -9096,10 +7655,7 @@ window.BANKMA2 = [
     "s": "<p>Definitionsvillkoret är \\(x&gt;6\\).</p><p>Använd logaritmlagen på formelbladet:</p><p>\\(\\lg(x(x-6))=\\lg40\\).</p><p>Alltså \\(x(x-6)=40\\).</p><p>\\(x^2-6x-40=0=(x-10)(x+4)\\).</p><p>De möjliga lösningarna är 10 och −4, men bara 10 uppfyller \\(x&gt;6\\).</p><p><strong>\\(x=10\\).</strong></p>",
     "familj": "logaritmlagar__losa_logaritmekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.219",
@@ -9115,10 +7671,7 @@ window.BANKMA2 = [
     "s": "<p>Använd logaritmlagen på formelbladet:</p><p>\\(\\lg4+\\lg25=\\lg(4\\cdot25)=\\lg100\\).</p><p><strong>\\(\\lg100=2\\).</strong></p>",
     "familj": "logaritmlagar__sammanfoga_logaritmer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.220",
@@ -9134,10 +7687,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(x&gt;0\\) när \\(\\lg x\\) är definierad kan vänsterledet skrivas \\(\\lg(x^2)\\).</p><p>\\(\\lg(x^2)=\\lg81\\Rightarrow x^2=81\\).</p><p>Den positiva lösningen är <strong>\\(x=9\\)</strong>.</p>",
     "familj": "logaritmlagar__losa_logaritmekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.221",
@@ -9153,11 +7703,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera först med 3:</p><p>\\(1,08^x=2\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(x\\lg1,08=\\lg2\\).</p><p>\\(x=\\frac{\\lg2}{\\lg1,08}\\approx9,01\\).</p><p><strong>\\(x\\approx9,0\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.222",
@@ -9173,11 +7719,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(a^u=5\\) gäller \\(a^{3u}=(a^u)^3=5^3=125\\). Eftersom en exponentialfunktion med \\(a>1\\) är växande och med \\(0<a<1\\) är avtagande kan ekvationen ha högst en lösning. Alltså är lösningen till \\(a^x=125\\) \\(x=3u\\).</p><p><strong>Alltså är lösningen \\(x=3u\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.223",
@@ -9193,11 +7735,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 2:</p><p>\\(1,15^x=2,5\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(x\\lg1,15=\\lg2,5\\).</p><p>\\(x=\\frac{\\lg2,5}{\\lg1,15}\\approx6,56\\).</p><p><strong>\\(x\\approx6,6\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.224",
@@ -9214,10 +7752,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\frac{12b^7}{3b^2}=4b^{7-2}\\), eftersom exponenterna subtraheras vid division med samma bas.</p><p><strong>\\(4b^5\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.225",
@@ -9234,10 +7769,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledets exponent blir \\(2n+3-(n-1)=n+4\\).</p><p>För att uttrycken ska vara lika för alla \\(x\\ne0\\) måste exponenterna vara lika:</p><p>\\(n+4=10\\).</p><p><strong>\\(n=6\\).</strong></p>",
     "familj": "potensregler__tillampa_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.226",
@@ -9254,10 +7786,7 @@ window.BANKMA2 = [
     "s": "<p>Förkorta koefficienterna och använd potensregeln på formelbladet:</p><p>\\(\\frac{6a^5}{2a^2}=3a^{5-2}\\).</p><p><strong>\\(3a^3\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.227",
@@ -9274,10 +7803,7 @@ window.BANKMA2 = [
     "s": "<p>Täljaren blir \\(4x^6y^4\\).</p><p>Därför</p><p>\\(\\frac{4x^6y^4}{4x^2y}=x^{6-2}y^{4-1}\\).</p><p><strong>\\(x^4y^3\\)</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.228",
@@ -9294,10 +7820,7 @@ window.BANKMA2 = [
     "s": "<p>Subtrahera exponenterna för varje bas:</p><p>\\(x^{3-1}y^{2-1}=x^2y\\).</p><p><strong>\\(x^2y\\)</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.229",
@@ -9313,11 +7836,7 @@ window.BANKMA2 = [
     "s": "<p>Vi sätter \\(N(t)=300\\):</p><p>\\(120\\cdot1,18^t=300\\).</p><p>Dividera med 120:</p><p>\\(1,18^t=2,5\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(t\\lg1,18=\\lg2,5\\).</p><p>\\(t=\\frac{\\lg2,5}{\\lg1,18}\\approx5,54\\).</p><p><strong>Antalet passerar 300 efter ungefär 5,5 timmar.</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.230",
@@ -9333,11 +7852,7 @@ window.BANKMA2 = [
     "s": "<p>I \\(x^4=80\\) är \\(x\\) bas. Det är en <strong>potensekvation</strong> och löses genom att ta fjärderoten: \\(x=\\pm\\sqrt[4]{80}\\) om reella lösningar söks.</p><p>I \\(4^x=80\\) står \\(x\\) i exponenten. Det är en <strong>exponentialekvation</strong> och löses med logaritmer eller digitalt verktyg: \\(x=\\lg80/\\lg4\\).</p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.231",
@@ -9354,10 +7869,7 @@ window.BANKMA2 = [
     "s": "<p>Ta kubikroten ur båda leden:</p><p>\\((x-2)^3=64\\Rightarrow x-2=\\sqrt[3]{64}=4\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.232",
@@ -9373,11 +7885,7 @@ window.BANKMA2 = [
     "s": "<p>a) Här är \\(x\\) basen. Det är alltså en potensekvation.</p><p>\\(x^4=81=3^4\\), så</p><p>\\(x=\\pm3\\).</p><p>b) Här står \\(x\\) i exponenten. Det är en exponentialekvation.</p><p>\\(81=3^4\\), alltså måste</p><p>\\(x=4\\).</p><p><strong>Potensekvationen löses genom att ta lämplig rot. Exponentialekvationen löses genom att jämföra potenser eller använda logaritmer.</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.233",
@@ -9394,10 +7902,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(u=x^2\\). Då fås \\(u^2-au+4=0\\).</p><p>För fyra olika reella \\(x\\)-lösningar måste ekvationen i \\(u\\) ha två olika positiva rötter.</p><p>Olika rötter kräver \\(a^2-16&gt;0\\), alltså \\(|a|&gt;4\\).</p><p>Summan av rötterna är \\(a\\), så den måste vara positiv. Därför krävs \\(a&gt;0\\).</p><p>När \\(a&gt;4\\) blir båda \\(u\\)-rötterna positiva och olika, och då ger varje \\(u\\)-rot två \\(x\\)-värden.</p><p><strong>Alltså gäller \\(a&gt;4\\).</strong></p>",
     "familj": "potensekvationer__jamn_potens_tva_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.234",
@@ -9414,10 +7919,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 4:</p><p>\\(x^2=49/4\\).</p><p>När en kvadrat är given måste båda kvadratrötterna tas med:</p><p>\\(x=\\pm\\sqrt{49/4}=\\pm7/2\\).</p><p><strong>\\(x=\\pm\\frac72\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.235",
@@ -9434,10 +7936,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 3:</p><p>\\((x+1)^2=9\\).</p><p>Ta kvadratroten ur båda leden. Kom ihåg både positiv och negativ rot:</p><p>\\(x+1=\\pm3\\).</p><p>Det ger \\(x=2\\) eller \\(x=-4\\).</p><p><strong>\\(x=2\\) eller \\(x=-4\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.236",
@@ -9454,10 +7953,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 3:</p><p>\\(x^4=16\\).</p><p>Eftersom exponenten är jämn finns två reella lösningar:</p><p><strong>\\(x=-2\\) eller \\(x=2\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.237",
@@ -9472,10 +7968,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x^2-10x+22=(x-5)^2-25+22\\).</p><p><strong>\\((x-5)^2-3\\)</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.238",
@@ -9492,10 +7985,7 @@ window.BANKMA2 = [
     "t": "<p>En andragradsfunktion har symmetrilinjen \\(x=4\\). Grafen går genom punkten \\((1,10)\\), och funktionens värde i symmetrilinjen är 1.</p><p>Bestäm funktionen.</p>",
     "s": "<p>Eftersom symmetrilinjen är \\(x=4\\) och funktionens minsta värde är 1 ligger minimipunkten i \\((4,1)\\).</p><p>Funktionen kan därför skrivas</p><p>\\[f(x)=a(x-4)^2+1.\\]</p><p>Punkten \\((1,10)\\) ligger på grafen:</p><p>\\[10=a(1-4)^2+1=9a+1.\\]</p><p>Alltså \\(a=1\\).</p><p><strong>\\(f(x)=(x-4)^2+1=x^2-8x+17\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.239",
@@ -9512,10 +8002,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-2)^2-5\\).</p><p>Skärningspunkterna med \\(y=3\\) ligger symmetriskt kring \\(x=2\\) och 4 enheter från varandra, alltså vid \\(x=0\\) och \\(x=4\\).</p><p>Sätt in \\(x=0\\):</p><p>\\(3=4a-5\\Rightarrow a=2\\).</p><p><strong>\\(f(x)=2(x-2)^2-5\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.240",
@@ -9531,10 +8018,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför hur väl olika modeller följer datapunkterna och om den valda modellen är rimlig utifrån förändringen i materialet.</p><p><strong>Modellen ökar med 7 % varje gång \\(x\\) ökar med 1.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.241",
@@ -9550,10 +8034,7 @@ window.BANKMA2 = [
     "s": "<p>Använd lagen \\(\\lg(x^p)=p\\lg x\\) \\(k\\lg a=\\lg(a^k)\\):</p><p>\\(2\\lg3=\\lg(3^2)\\).</p><p><strong>\\(\\lg9\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.242",
@@ -9570,10 +8051,7 @@ window.BANKMA2 = [
     "s": "<p>Ta kvadratroten: \\(x^2-1=\\pm4\\).</p><p>Fall 1: \\(x^2=5\\Rightarrow x=\\pm\\sqrt5\\).</p><p>Fall 2: \\(x^2=-3\\), vilket saknar reella lösningar.</p><p><strong>\\(x=\\pm\\sqrt5\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.243",
@@ -9588,10 +8066,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(x\\) ersätts med \\(4x\\) blir</p><p>\\(C(4x)^{1,5}=4^{1,5}Cx^{1,5}\\).</p><p>\\(4^{1,5}=4^{3/2}=\\sqrt{4^3}=8\\).</p><p><strong>\\(y\\) blir 8 gånger så stort.</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.244",
@@ -9608,10 +8083,7 @@ window.BANKMA2 = [
     "s": "<p>Maximipunkten ligger vid \\((2,9)\\), så största värdet är 9.</p><p>Grafen ligger över x-axeln mellan nollställena −1 och 5.</p><p><strong>Största värde 9; \\(f(x)&gt;0\\) för \\(-1&lt;x&lt;5\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.245",
@@ -9628,10 +8100,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(4)=16-20+6=2\\).</p><p>b) Lös \\(x^2-5x+6=0\\) med <strong>pq-formeln</strong>:</p><p>\\(x=2,5\\pm\\sqrt{6,25-6}=2,5\\pm0,5\\).</p><p><strong>\\(f(4)=2\\), nollställena är 2 och 3.</strong></p>",
     "familj": "andragradsfunktioner__bestam_funktion_fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.246",
@@ -9647,10 +8116,7 @@ window.BANKMA2 = [
     "s": "<p>Ekvationen ska ha exakt en reell lösning. Använd kvadreringsregeln:</p><p>\\[(x-3)^2=x^2-6x+9.\\]</p><p>Därför ska \\(k=9\\). Ekvationen blir då \\((x-3)^2=0\\).</p><p><strong>\\(k=9\\) och lösningen är \\(x=3\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.247",
@@ -9667,10 +8133,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera: \\(x^2-10x+21=(x-3)(x-7)\\). Nollställena är 3 och 7.</p><p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\(x=\\frac{3+7}{2}=5\\).</p><p>\\(f(5)=25-50+21=-4\\). Eftersom parabeln är uppåtvänd är detta det minsta värdet.</p><p><strong>Symmetrilinje \\(x=5\\), minsta värde −4.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.248",
@@ -9687,10 +8150,7 @@ window.BANKMA2 = [
     "s": "<p>a) Vid \\(x=0\\) är \\(f(0)=2^0=1\\).</p><p>b) \\(f(3)=2^3=8\\).</p><p>c) När x ökar med 1 multipliceras värdet med basen 2, alltså fördubblas det.</p><p><strong>a) 1. b) 8. c) Värdet fördubblas.</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.249",
@@ -9707,10 +8167,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebra kan ekvationen lösas med kommandot Lös eller genom att rita leden och bestämma skärningspunkten.</p><p>Lösningen är \\(x\\approx3,8295\\).</p><p><strong>\\(x\\approx3,8\\)</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.250",
@@ -9726,10 +8183,7 @@ window.BANKMA2 = [
     "s": "<p>Använd logaritmlagarna på formelbladet:</p><p>\\(3\\lg x=\\lg(x^3)\\).</p><p>Då blir</p><p>\\(3\\lg x+\\lg4-\\lg(2x)=\\lg\\left(\\frac{4x^3}{2x}\\right)=\\lg(2x^2)\\).</p><p><strong>\\(\\lg(2x^2)\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.251",
@@ -9744,10 +8198,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledet är en kvadratrot och kan därför inte vara negativt. Alltså måste \\(x-1\\ge0\\), så \\(x\\ge1\\).</p><p>Kvadrera båda leden:</p><p>\\(x+5=(x-1)^2=x^2-2x+1\\).</p><p>\\(x^2-3x-4=0=(x-4)(x+1)\\).</p><p>De möjliga lösningarna efter kvadreringen är \\(x=4\\) och \\(x=-1\\). Endast \\(x=4\\) uppfyller villkoret \\(x\\ge1\\) och ursprungsekvationen.</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.252",
@@ -9764,10 +8215,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera först med 2:</p><p>\\(x^3=27\\).</p><p>Eftersom exponenten är 3 tar vi kubikroten ur båda leden:</p><p>\\(x=\\sqrt[3]{27}=3\\).</p><p><strong>\\(x=3\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.253",
@@ -9784,10 +8232,7 @@ window.BANKMA2 = [
     "s": "<p>Låt djupet vara \\(x\\). Då går \\(2x\\) meter stängsel till de två kortsidorna och längden blir \\(40-2x\\).</p><p>Arean är \\(A(x)=x(40-2x)=-2x^2+40x\\).</p><p>Parabelns topp ligger vid \\(x=-40/(2\\cdot-2)=10\\), vilket uppfyller kravet \\(x\\ge6\\).</p><p>Längden blir \\(40-2\\cdot10=20\\).</p><p>\\(A(10)=10\\cdot20=200\\).</p><p><strong>Största möjliga area är 200 m², med måtten 10 m × 20 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.254",
@@ -9803,11 +8248,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ökar med samma belopp per steg i \\(x\\). Den exponentiella modellen ökar med samma faktor och får därför en allt större ökning.</p><p><strong>På längre sikt kan den exponentiella modellen växa snabbare trots att den först ligger lägre.</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.255",
@@ -9823,10 +8264,7 @@ window.BANKMA2 = [
     "s": "<p>a) Sätt in \\(x=7\\): \\(f(7)=3\\cdot7-5=21-5=16\\).</p><p>b) Sätt funktionsvärdet lika med 31:</p><p>\\(3x-5=31\\Rightarrow3x=36\\Rightarrow x=12\\).</p><p><strong>a) 16. b) \\(x=12\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.256",
@@ -9843,10 +8281,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera först.</p><p>a) \\(2x^2-8x=2x(x-4)=0\\Rightarrow x=0,4\\).</p><p>b) \\(4x^2+12x=4x(x+3)=0\\Rightarrow x=0,-3\\).</p><p>c) \\(3x^2-27=3(x^2-9)=3(x-3)(x+3)=0\\Rightarrow x=\\pm3\\).</p>",
     "familj": "nollproduktmetoden__faktorisera_och_nollprodukt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.257",
@@ -9863,10 +8298,7 @@ window.BANKMA2 = [
     "s": "<p>Använd <strong>pq-formeln</strong> på \\(x^2-5x-24=0\\).</p>\n<p>Här är \\(p=-5\\) och \\(q=-24\\).</p>\n<p>\\(x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}\n=\\frac52\\pm\\sqrt{\\frac{25}{4}+24}\n=\\frac52\\pm\\frac{11}{2}\\).</p>\n<p><strong>\\(x=8\\) eller \\(x=-3\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.258",
@@ -9883,10 +8315,7 @@ window.BANKMA2 = [
     "t": "<p>En parabel har nollställena \\(-2\\) och 6 och går genom punkten \\((0,-12)\\). Bestäm funktionens formel.</p>",
     "s": "<p>Med nollställena kan funktionen skrivas \\(f(x)=a(x+2)(x-6)\\).</p><p>Sätt in \\((0,-12)\\): \\(-12=a\\cdot2\\cdot(-6)=-12a\\), så \\(a=1\\).</p><p><strong>\\(f(x)=(x+2)(x-6)=x^2-4x-12\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.259",
@@ -9903,11 +8332,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-1)(x-6)\\).</p><p>Eftersom \\(f(0)=-6\\) fås \\(-6=a\\cdot(-1)\\cdot(-6)=6a\\), alltså \\(a=-1\\).</p><p>Symmetrilinjen ligger mitt emellan nollställena: \\(x=3,5\\).</p><p>\\(f(3,5)=-(2,5)(-2,5)=6,25\\).</p><p><strong>\\(f(x)=-(x-1)(x-6)\\), största värde 6,25.</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.260",
@@ -9924,10 +8349,7 @@ window.BANKMA2 = [
     "s": "<p>Grafiskt söker vi den punkt där exponentialkurvan har y-värdet 12.</p><p>I GeoGebra kan man lägga till den horisontella linjen \\(y=12\\) och läsa av skärningen med \\(p(x)=3\\cdot1,6^x\\).</p><p>Skärningen ligger vid ungefär \\(x=2,95\\).</p><p><strong>Alltså \\(x\\approx3,0\\).</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.261",
@@ -9943,11 +8365,7 @@ window.BANKMA2 = [
     "t": "<p>En mängd beskrivs av en exponentialfunktion \\(M(t)=C\\cdot a^t\\). Det gäller att \\(M(2)=45\\) och \\(M(5)=121{,}5\\).</p><p>Bestäm \\(C\\) och \\(a\\), och bestäm sedan när modellen når värdet 200.</p>",
     "s": "<p>Kvoten mellan värdena ger</p><p>\\[\\frac{M(5)}{M(2)}=a^3=\\frac{121{,}5}{45}=2{,}7.\\]</p><p>Därför är \\(a=\\sqrt[3]{2{,}7}\\approx1{,}3925\\).</p><p>Ur \\(45=C\\cdot a^2\\) fås \\(C\\approx45/a^2\\approx23{,}21\\).</p><p>Lös sedan \\(23{,}21\\cdot1{,}3925^t=200\\):</p><p>\\[t=\\frac{\\lg(200/23{,}21)}{\\lg1{,}3925}\\approx6{,}51.\\]</p><p><strong>\\(C\\approx23{,}2\\), \\(a\\approx1{,}393\\), och värdet 200 nås efter cirka 6,5 tidsenheter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.262",
@@ -9963,10 +8381,7 @@ window.BANKMA2 = [
     "s": "<p>\\(10=10^1\\). Eftersom \\(\\lg a\\) är exponenten på 10 som ger \\(a\\), är <strong>\\(\\lg10=1\\)</strong>.</p>",
     "familj": "logaritmbegreppet__bestam_logaritmvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.263",
@@ -9982,10 +8397,7 @@ window.BANKMA2 = [
     "s": "<p>Addera ekvationerna:</p><p>\\(2\\lg a=4\\Rightarrow\\lg a=2\\Rightarrow a=100\\).</p><p>Sätt in i den första ekvationen:</p><p>\\(2+\\lg b=3\\Rightarrow\\lg b=1\\Rightarrow b=10\\).</p><p><strong>\\(a=100\\) och \\(b=10\\)</strong></p>",
     "familj": "logaritmlagar__tillampa_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.264",
@@ -10002,10 +8414,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla.</p><p>\\[a^4\\cdot a^7\\]</p>",
     "s": "<p>Vid multiplikation av potenser med samma bas adderas exponenterna.</p><p><strong>\\(a^{11}\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.265",
@@ -10022,10 +8431,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningarna är \\(\\pm\\sqrt a\\). Skillnaden är \\(2\\sqrt a\\). Alltså \\(2\\sqrt a=10\\Rightarrow a=25\\).</p><p><strong>\\(a=25\\).</strong></p>",
     "familj": "potensekvationer__jamn_potens_tva_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.266",
@@ -10041,11 +8447,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ger värden 12, 24, 36, 48, 60. Den ligger tydligt för högt i mitten av serien.</p><p>Exponentialmodellen ger 12, 18, 27, 40,5, 60,75, vilket ligger mycket nära alla givna data.</p><p>Dessutom är kvoterna mellan efterföljande y-värden ungefär 1,5, medan differenserna inte är konstanta.</p><p><strong>Exponentialmodellen är klart rimligast.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.267",
@@ -10062,11 +8464,7 @@ window.BANKMA2 = [
     "s": "<p>Lös \\(-x^2+6x\\ge5\\Rightarrow x^2-6x+5\\le0\\).</p><p>\\((x-1)(x-5)\\le0\\), alltså mellan rötterna.</p><p><strong>För \\(1\\le x\\le5\\).</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.268",
@@ -10081,10 +8479,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadrera:</p><p>\\(2x-1=25\\Rightarrow2x=26\\).</p><p><strong>\\(x=13\\)</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.269",
@@ -10101,10 +8496,7 @@ window.BANKMA2 = [
     "s": "<p> När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p><p>\\(x-4=\\pm\\sqrt{18}=\\pm3\\sqrt2\\).</p><p><strong>\\(x=4\\pm3\\sqrt2\\).</strong></p>",
     "familj": "enkla_andragradsekvationer__kvadratrotmetoden",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.270",
@@ -10121,10 +8513,7 @@ window.BANKMA2 = [
     "s": "<p>\\(p=-3\\) och \\(q=-10\\).</p><p>\\(x=\\frac32\\pm\\sqrt{\\left(\\frac32\\right)^2+10}=\\frac32\\pm\\frac72\\).</p><p><strong>\\(x=5\\) eller \\(x=-2\\)</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.271",
@@ -10139,10 +8528,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(x^2+4x+k=(x+2)^2+k-4\\).</p><p>Minsta värdet fås när \\((x+2)^2=0\\), alltså är minsta värdet \\(k-4\\).</p><p>\\(k-4=7\\).</p><p><strong>\\(k=11\\).</strong></p>",
     "familj": "kvadratkomplettering__extrempunkt_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.272",
@@ -10158,10 +8544,7 @@ window.BANKMA2 = [
     "s": "<p>Låt rötterna vara \\(r\\) och \\(r+1\\). Då kan vänsterledet skrivas</p><p>\\((x-r)(x-r-1)\\).</p><p>Koefficienten framför \\(x\\) blir \\(-(2r+1)\\). Jämför med \\(-9x\\):</p><p>\\(2r+1=9\\Rightarrow r=4\\).</p><p>Rötterna är 4 och 5 och konstanttermen blir \\(k=4\\cdot5=20\\).</p><p><strong>\\(k=20\\).</strong></p>",
     "familj": "samband_roter_koefficienter__koefficienter_fran_rotter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.273",
@@ -10178,10 +8561,7 @@ window.BANKMA2 = [
     "s": "<p><strong>Nollställena är \\(-1\\) och 3.</strong></p><p><strong>Symmetrilinjen är \\(x=1\\).</strong></p><p><strong>Minpunkten är \\((1,-4)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.274",
@@ -10198,11 +8578,7 @@ window.BANKMA2 = [
     "s": "<p>Maximipunkten \\((-2,6)\\) gör att funktionen kan skrivas \\(f(x)=a(x+2)^2+6\\).</p><p>Punkten \\((0,-2)\\) ger \\(-2=4a+6\\Rightarrow a=-2\\).</p><p><strong>\\(f(x)=-2(x+2)^2+6\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.275",
@@ -10219,11 +8595,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom den högsta punkten är \\((6,3)\\) kan modellen skrivas \\(h(x)=a(x-6)^2+3\\).</p><p>Villkoret \\(h(0)=1,8\\) ger \\(36a+3=1,8\\Rightarrow a=-1/30\\).</p><p>Vid landningen är \\(h(x)=0\\):</p><p>\\(-\\frac1{30}(x-6)^2+3=0\\Rightarrow(x-6)^2=90\\).</p><p>\\(x=6\\pm3\\sqrt{10}\\). Den mindre lösningen ligger före kastpunkten, så den används inte.</p><p><strong>Bollen landar vid \\(x=6+3\\sqrt{10}\\approx15,5\\) m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.276",
@@ -10240,10 +8612,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla.</p><p>\\[\\frac{x^9}{x^4},\\qquad x\\ne0\\]</p>",
     "s": "<p>Vid division av potenser med samma bas subtraheras exponenterna.</p><p><strong>\\(x^5\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.277",
@@ -10258,10 +8627,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x=1\\) fås \\(a=4\\).</p><p>Med \\(x=2\\): \\(16=4\\cdot2^n\\Rightarrow2^n=4\\).</p><p><strong>\\(n=2\\) och funktionen är \\(y=4x^2\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.278",
@@ -10278,11 +8644,7 @@ window.BANKMA2 = [
     "s": "<p>Startvärdet är 300. En ökning med 7 % ger förändringsfaktorn \\(1,07\\).</p><p><strong>\\(P(t)=300\\cdot1,07^t\\)</strong></p>",
     "familj": "exponentialfunktioner__berakna_och_tolka_exponentialfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.279",
@@ -10297,10 +8659,7 @@ window.BANKMA2 = [
     "s": "<p>x står i exponenten, så ekvationen löses med GeoGebra.</p><p><strong>GeoGebra:</strong> skriv <code>NLös(1200*0.92^x=700)</code> i CAS.</p><p>GeoGebra ger \\(x\\approx6,47\\).</p><p><strong>Avrundat till en decimal: \\(x\\approx6,5\\).</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.280",
@@ -10316,10 +8675,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\lg(10^6)\\) frågar efter exponenten på 10.</p><p><strong>\\(\\lg(10^6)=6\\).</strong></p>",
     "familj": "logaritmbegreppet__inversa_sambandet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.281",
@@ -10335,10 +8691,7 @@ window.BANKMA2 = [
     "s": "<p>Med logaritmlagarna:</p><p>\\(\\lg(5x)-\\lg x=\\lg\\left(\\frac{5x}{x}\\right)=\\lg5\\).</p><p><strong>\\(\\lg5\\)</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.282",
@@ -10354,11 +8707,7 @@ window.BANKMA2 = [
     "s": "<p>Insättning av \\(x=20\\) ger visserligen \\(0,42\\cdot20+1,1=9,5\\), men 20 ligger långt utanför det undersökta intervallet 3–9. Prognosen är därför en osäker prognos långt utanför mätintervallet.</p><p>\\(r=0,91\\) visar ett starkt positivt linjärt samband i datamaterialet men bevisar inte orsak. Andra faktorer kan påverka båda variablerna.</p><p><strong>Beräkningen 9,5 följer modellen, men varken den långa prognos långt utanför mätintervalleten eller påståendet om orsak är väl underbyggt.</strong></p>",
     "familj": "modellval_regression__korrelation_och_kausalitet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.283",
@@ -10373,10 +8722,7 @@ window.BANKMA2 = [
     "s": "<p>Högerledet kan inte vara negativt, så vi behöver \\(x\\ge2\\).</p><p>Kvadrera båda leden:</p><p>\\(x+10=(x-2)^2=x^2-4x+4\\).</p><p>\\(x^2-5x-6=0=(x-6)(x+1)\\), alltså \\(x=6\\) eller \\(x=-1\\).</p><p>\\(x=-1\\) uppfyller inte villkoret \\(x\\ge2\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.284",
@@ -10393,10 +8739,7 @@ window.BANKMA2 = [
     "s": "<p>Låt bredden vinkelrätt mot muren vara \\(x\\). Då blir den stängslade långsidan \\(48-2x\\).</p><p>Arean är \\(A=x(48-2x)\\). Kravet är \\(x(48-2x)\\ge250\\).</p><p>\\(-2x^2+48x-250\\ge0\\). Gränserna fås av \\(x^2-24x+125=0\\).</p><p>Rötterna är \\(x=12\\pm\\sqrt{19}\\), cirka 7,64 och 16,36.</p><p>Eftersom parabeln för arean är nedåtvänd uppfylls kravet mellan rötterna.</p><p><strong>\\(12-\\sqrt{19}\\le x\\le12+\\sqrt{19}\\) meter.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__olikhet_och_villkor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.285",
@@ -10413,10 +8756,7 @@ window.BANKMA2 = [
     "t": "<p>En kvadratisk skylt har sidan \\(x\\) dm. Runt skylten sätts en ram som är 1 dm bred på alla sidor. Hela skylten med ram får arean 100 dm².</p><p>Bestäm den ursprungliga skyltens sida.</p>",
     "s": "<p>När ramen läggs till ökar varje sida med 2 dm. Yttermåttet blir därför \\(x+2\\).</p><p>\\[(x+2)^2=100.\\]</p><p>Eftersom en längd är positiv får vi \\(x+2=10\\), alltså \\(x=8\\).</p><p><strong>Skyltens sida är 8 dm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.286",
@@ -10433,10 +8773,7 @@ window.BANKMA2 = [
     "s": "<p>Låt sidorna vara \\(x\\) och \\(180/x\\).</p><p>Efter minskningen gäller</p><p>\\((x-3)(180/x-3)=99\\).</p><p>Multiplicera med \\(x\\):</p><p>\\(180x-540-3x^2+9x=99x\\).</p><p>\\(3x^2-90x+540=0\\).</p><p>Dela med 3: \\(x^2-30x+180=0\\).</p><p>Använd <strong>pq-formeln</strong>:</p><p>\\(x=15\\pm\\sqrt{225-180}=15\\pm3\\sqrt5\\).</p><p>Den andra sidan blir den andra roten, eftersom produkten är 180.</p><p><strong>Måtten är \\(15-3\\sqrt5\\) cm och \\(15+3\\sqrt5\\) cm, cirka 8,29 cm och 21,71 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.287",
@@ -10453,10 +8790,7 @@ window.BANKMA2 = [
     "s": "<p>Låt ramens bredd vara \\(x\\) cm.</p><p>Bildytans mått blir \\(30-2x\\) och \\(40-2x\\).</p><p>\\((30-2x)(40-2x)=704\\).</p><p>Efter utveckling och division med 4:</p><p>\\(x^2-35x+124=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=17,5\\pm\\sqrt{306,25-124}=17,5\\pm13,5\\).</p><p>Lösningarna är 4 och 31. Endast 4 cm är geometriskt möjlig.</p><p><strong>Ramen är 4 cm bred.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.288",
@@ -10473,10 +8807,7 @@ window.BANKMA2 = [
     "s": "<p>Låt det mindre talet vara \\(x\\). Då är det andra \\(x+1\\).</p><p>\\(x(x+1)=132\\Rightarrow x^2+x-132=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=-\\frac12\\pm\\sqrt{\\frac14+132}=-\\frac12\\pm\\frac{23}{2}\\).</p><p>Det ger \\(x=11\\) eller \\(x=-12\\).</p><p><strong>Talen är 11 och 12, eller −12 och −11.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__talproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.289",
@@ -10493,10 +8824,7 @@ window.BANKMA2 = [
     "s": "<p>Halva omkretsen är 15. Låt därför sidorna vara \\(x\\) och \\(15-x\\).</p><p>Arean ger \\(x(15-x)=44\\).</p><p>\\(x^2-15x+44=0=(x-4)(x-11)\\).</p><p><strong>Sidorna är 4 cm och 11 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.290",
@@ -10513,10 +8841,7 @@ window.BANKMA2 = [
     "t": "<p>Ett rektangulärt fotografi har omkretsen 46 cm. När både längden och bredden minskas med 2 cm blir arean 78 cm².</p><p>Bestäm fotografiets ursprungliga mått.</p>",
     "s": "<p>Låt längden vara \\(x\\) och bredden \\(y\\). Omkretsen ger \\(x+y=23\\), alltså \\(y=23-x\\).</p><p>Efter minskningen är måtten \\(x-2\\) och \\(y-2\\), så</p><p>\\[(x-2)(y-2)=78.\\]</p><p>Sätt in \\(y=23-x\\):</p><p>\\[(x-2)(21-x)=78.\\]</p><p>\\[-x^2+23x-42=78\\Rightarrow x^2-23x+120=0.\\]</p><p>Faktorisera: \\((x-8)(x-15)=0\\).</p><p>Om \\(x=15\\) blir \\(y=8\\); den andra lösningen byter bara plats på längd och bredd.</p><p><strong>Fotografiets mått är 15 cm och 8 cm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.291",
@@ -10533,10 +8858,7 @@ window.BANKMA2 = [
     "s": "<p>Låt det ena talet vara \\(x\\). Eftersom summan är 17 är det andra \\(17-x\\).</p><p>Produkten ska vara 60:</p><p>\\(x(17-x)=60\\Rightarrow x^2-17x+60=0\\).</p><p>Faktorisera: \\((x-5)(x-12)=0\\).</p><p><strong>Talen är 5 och 12.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__talproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.292",
@@ -10553,10 +8875,7 @@ window.BANKMA2 = [
     "s": "<p>Arean ger \\((x-1)(x+3)=77\\).</p><p>\\(x^2+2x-3=77\\Rightarrow x^2+2x-80=0\\).</p><p>Använd <strong>pq-formeln</strong> med \\(p=2\\), \\(q=-80\\):</p><p>\\(x=-1\\pm\\sqrt{1+80}=-1\\pm9\\).</p><p>Den positiva lösningen är \\(x=8\\).</p><p><strong>Skylten är 7 cm × 11 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.293",
@@ -10573,10 +8892,7 @@ window.BANKMA2 = [
     "s": "<p>Låt gångens bredd vara \\(x\\) m.</p><p>Yttermåtten blir \\(14+2x\\) och \\(8+2x\\).</p><p>\\((14+2x)(8+2x)=180\\).</p><p>Utveckla och dela med 4:</p><p>\\(x^2+11x-17=0\\).</p><p>Använd <strong>pq-formeln</strong>:</p><p>\\(x=-5,5\\pm\\sqrt{30,25+17}=-5,5\\pm\\sqrt{47,25}\\).</p><p>Den positiva lösningen är \\(x\\approx1,37\\).</p><p><strong>Gången är cirka 1,37 m bred.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.294",
@@ -10593,10 +8909,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena kräver \\((x-a)^2=4a\\), så först måste \\(a&gt;0\\).</p><p>Då är rötterna \\(x=a\\pm2\\sqrt a\\).</p><p>Den större roten är positiv. Den mindre ska också vara positiv:</p><p>\\(a-2\\sqrt a&gt;0\\).</p><p>Sätt \\(u=\\sqrt a&gt;0\\): \\(u^2-2u&gt;0\\Rightarrow u&gt;2\\).</p><p>Alltså \\(a&gt;4\\).</p><p><strong>Två olika positiva nollställen fås precis när \\(a&gt;4\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.295",
@@ -10613,10 +8926,7 @@ window.BANKMA2 = [
     "s": "<p>\\(-x^2+6x-5=3\\Rightarrow x^2-6x+8=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=3\\pm\\sqrt{9-8}=3\\pm1\\).</p><p><strong>\\(x=2\\) eller \\(x=4\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.296",
@@ -10633,11 +8943,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(f(x)=g(x)\\):</p><p>\\(x^2-4x+1=2x-5\\Rightarrow x^2-6x+6=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=3\\pm\\sqrt3\\).</p><p>För \\(y\\) använder vi \\(y=2x-5\\):</p><p>\\(y=1\\pm2\\sqrt3\\).</p><p><strong>Skärningspunkterna är \\((3-\\sqrt3,\\,1-2\\sqrt3)\\) och \\((3+\\sqrt3,\\,1+2\\sqrt3)\\).</strong></p>",
     "familj": "andragradsfunktioner__egenskaper_fran_formel",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.297",
@@ -10654,11 +8960,7 @@ window.BANKMA2 = [
     "s": "<p>a) Sätt in \\(x=2\\): \\(f(2)=2^2-6\\cdot2+5=-3\\).</p><p>b) \\(f(1)=1-6+5=0\\), alltså är \\(x=1\\) ett nollställe.</p><p>c) Faktorisera: \\(x^2-6x+5=(x-1)(x-5)\\).</p><p><strong>a) −3. b) Ja. c) Det andra nollstället är 5.</strong></p>",
     "familj": "andragradsfunktioner__egenskaper_fran_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.298",
@@ -10675,10 +8977,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera med avseende på \\(x\\):</p><p>\\(f_a(x)=x^2-4ax+5a^2=(x-2a)^2+a^2\\).</p><p>Kvadraten \\((x-2a)^2\\) är alltid minst 0 och blir 0 när \\(x=2a\\). Därför är funktionens minsta värde exakt \\(a^2\\).</p><p>Villkoret ger \\(a^2=20\\).</p><p><strong>\\(a=\\pm\\sqrt{20}=\\pm2\\sqrt5\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.299",
@@ -10695,10 +8994,7 @@ window.BANKMA2 = [
     "s": "<p>När koefficienten framför \\(x^2\\) är 1 och nollställena är r och s kan funktionen skrivas</p><p>\\(f(x)=(x-r)(x-s)=x^2-(r+s)x+rs\\).</p><p>Med \\(r+s=8\\) och \\(rs=12\\) fås \\(f(x)=x^2-8x+12\\).</p><p>Symmetrilinjen är \\(x=4\\), och \\(f(4)=-4\\).</p><p><strong>\\(f(x)=x^2-8x+12\\), minsta värde −4.</strong></p>",
     "familj": "andragradsfunktioner__bestam_funktion_fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.300",
@@ -10715,11 +9011,7 @@ window.BANKMA2 = [
     "s": "<p>Beräkna funktionsvärdena:</p><p>\\(f(0)=4\\), \\(f(1)=1\\), \\(f(2)=0\\), \\(f(3)=1\\).</p><p><strong>Alla fyra punkterna ligger på grafen.</strong></p>",
     "familj": "andragradsfunktioner__egenskaper_fran_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.301",
@@ -10736,10 +9028,7 @@ window.BANKMA2 = [
     "s": "<p>Funktionen kan skrivas</p><p>\\(f(x)=x^2-(r+s)x+rs=x^2-12x+rs\\).</p><p>Kvadratkomplettera:</p><p>\\(f(x)=(x-6)^2+rs-36\\).</p><p>Minsta värdet fås när \\((x-6)^2=0\\).</p><p><strong>Minsta värdet är \\(rs-36\\).</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.302",
@@ -10756,10 +9045,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera: \\(x^2-6x+8=(x-2)(x-4)\\), så nollställena är 2 och 4.</p><p>Symmetrilinjen ligger mitt emellan dem: \\(x=(2+4)/2=3\\).</p><p>\\(f(3)=9-18+8=-1\\).</p><p>Parabeln är uppåtvänd, så detta är det minsta värdet.</p><p><strong>Nollställen 2 och 4; symmetrilinje \\(x=3\\); minsta värde −1.</strong></p>",
     "familj": "andragradsfunktioner__symmetri_och_extrempunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.303",
@@ -10776,10 +9062,7 @@ window.BANKMA2 = [
     "s": "<p>Skärningspunkterna fås när \\(f(x)=g(x)\\):</p><p>\\(x^2-4x+3=x-1\\).</p><p>Flytta allt till vänster: \\(x^2-5x+4=0\\).</p><p>Faktorisera: \\((x-1)(x-4)=0\\).</p><p><strong>\\(x=1\\) eller \\(x=4\\).</strong></p>",
     "familj": "andragradsfunktioner__parameterfamilj",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.304",
@@ -10796,10 +9079,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är −1 och 4, så</p><p>\\(f(x)=(x+1)(x-4)=x^2-3x-4\\).</p><p>Alltså \\(p=-3\\), \\(q=-4\\).</p><p>Symmetrilinjen är \\(x=\\frac32\\).</p><p>\\(f\\left(\\frac32\\right)=-\\frac{25}{4}\\).</p><p><strong>\\(p=-3\\), \\(q=-4\\), minimipunkt \\(\\left(\\frac32,-\\frac{25}{4}\\right)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.305",
@@ -10816,10 +9096,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är \\(-4\\) och 2, så funktionen har formen \\(f(x)=a(x+4)(x-2)\\).</p><p>Av grafens y-skärning framgår att \\(a=1\\).</p><p><strong>\\(f(x)=(x+4)(x-2)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.306",
@@ -10836,10 +9113,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt funktionsuttrycket lika med 5:</p><p>\\((x-1)^2-4=5\\Rightarrow(x-1)^2=9\\).</p><p>Ta kvadratroten: \\(x-1=\\pm3\\).</p><p><strong>\\(x=-2\\) eller \\(x=4\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_funktionsvarden_och_ekvationer",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.307",
@@ -10856,10 +9130,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena läses av där grafen skär x-axeln: \\(x=-2\\) och \\(x=4\\).</p><p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\(x=(-2+4)/2=1\\).</p><p><strong>Nollställen −2 och 4, symmetrilinje \\(x=1\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.308",
@@ -10876,10 +9147,7 @@ window.BANKMA2 = [
     "s": "<p>Av grafen ser man att nollställena är \\(-1\\) och 5. Alltså kan funktionen skrivas \\(f(x)=a(x+1)(x-5)\\).</p><p>Grafen går genom punkten \\((0,5)\\). Då fås \\(5=a\\cdot1\\cdot(-5)\\), alltså \\(a=-1\\).</p><p>Alltså är \\(f(x)=-(x+1)(x-5)=-x^2+4x+5\\).</p><p>Eftersom parabeln är nedåtvänd är \\(f(x)&gt;0\\) mellan nollställena.</p><p><strong>a) \\(f(x)=-(x+1)(x-5)\\). b) \\(-1&lt;x&lt;5\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.309",
@@ -10896,10 +9164,7 @@ window.BANKMA2 = [
     "s": "<p>Grafens skärningar med x-axeln ger nollställena \\(x=1\\) och \\(x=3\\).</p><p>Minimipunkten avläses till \\((2,-2)\\).</p><p><strong>Nollställen 1 och 3; minimipunkt \\((2,-2)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.310",
@@ -10916,10 +9181,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena avläses där grafen skär x-axeln: \\(x=-2\\) och \\(x=4\\).</p><p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\(x=(-2+4)/2=1\\).</p><p><strong>a) −2 och 4. b) \\(x=1\\).</strong></p>",
     "familj": "andragradsfunktion_graf__bestam_formel_fran_graf_eller_punkter",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.311",
@@ -10936,10 +9198,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen skär x-axeln vid \\(x=1\\) och \\(x=6\\).</p><p>Parabeln är nedåtvänd.</p><p><strong>Nollställena är 1 och 6, och funktionen har ett största värde.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.312",
@@ -10956,10 +9215,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen skär x-axeln vid \\(x=2\\) och \\(x=6\\).</p><p>Symmetrilinjen ligger vid \\(x=4\\), och maximipunkten avläses till \\((4,2)\\).</p><p><strong>Nollställen 2 och 6; maximipunkt \\((4,2)\\).</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.313",
@@ -10976,10 +9232,7 @@ window.BANKMA2 = [
     "s": "<p>a) Nollställena läses där grafen skär x-axeln: \\(x=1\\) och \\(x=5\\).</p><p>b) Symmetrilinjen ligger mitt emellan nollställena: \\(x=3\\).</p><p>c) Grafens maximipunkt är \\((3,4)\\).</p><p>d) Eftersom parabeln är nedåtvänd är maximipunktens y-värde funktionens största värde.</p><p><strong>Största värdet är 4.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.314",
@@ -10996,10 +9249,7 @@ window.BANKMA2 = [
     "t": "<p>En andragradsfunktion har nollställena \\(x=2\\) och \\(x=10\\). Funktionens minsta värde är \\(-16\\). Bestäm funktionens formel.</p>",
     "s": "<p>Symmetrilinjen ligger mitt mellan nollställena: \\(x=6\\).</p><p>Skriv funktionen som \\(f(x)=a(x-2)(x-10)\\).</p><p>I minimipunkten gäller \\(f(6)=-16\\):</p><p>\\[-16=a(4)(-4)=-16a\\Rightarrow a=1.\\]</p><p><strong>\\(f(x)=(x-2)(x-10)=x^2-12x+20\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.315",
@@ -11016,10 +9266,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(x^2-8x+13=(x-4)^2-3\\).</p><p>Kvadraten \\((x-4)^2\\) är som minst 0, vilket sker vid \\(x=4\\).</p><p><strong>Symmetrilinje \\(x=4\\), minsta värde −3.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.316",
@@ -11036,10 +9283,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom minimipunkten är \\((3,1)\\) kan funktionen skrivas \\(f(x)=a(x-3)^2+1\\).</p><p>Konstanttermen blir då \\(9a+1\\).</p><p>Den ska vara 10, så \\(9a+1=10\\Rightarrow a=1\\).</p><p>Utveckla: \\((x-3)^2+1=x^2-6x+10\\).</p><p><strong>\\(a=1\\), \\(b=-6\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.317",
@@ -11056,10 +9300,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(f(0)=f(4)\\) ligger symmetrilinjen mitt emellan, alltså vid \\(x=2\\).</p><p>Minimipunkten är därför \\((2,-3)\\).</p><p>Funktionen kan därför skrivas \\(f(x)=a(x-2)^2-3\\).</p><p>Sätt in \\(x=0\\): \\(5=4a-3\\Rightarrow a=2\\).</p><p><strong>Funktionen är \\(f(x)=2(x-2)^2-3\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.318",
@@ -11076,10 +9317,7 @@ window.BANKMA2 = [
     "s": "<p>Det största värdet 12 vid \\(x=-2\\) innebär att maximipunkten är \\((-2,12)\\).</p><p>Funktionen kan därför skrivas \\(f(x)=a(x+2)^2+12\\).</p><p>Sätt in \\((1,3)\\): \\(3=9a+12\\Rightarrow a=-1\\).</p><p><strong>\\(f(x)=-(x+2)^2+12\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.319",
@@ -11096,10 +9334,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(f(x)=-2(x^2-4x)+3=-2\\big((x-2)^2-4\\big)+3\\).</p><p>Alltså \\(f(x)=-2(x-2)^2+11\\).</p><p>Eftersom \\((x-2)^2\\ge0\\) är det största värdet 11, och det fås när \\(x=2\\).</p><p><strong>Symmetrilinjen är \\(x=2\\) och maximipunkten är \\((2,11)\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.320",
@@ -11116,10 +9351,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(f(x)=2(x^2-6x)+k=2(x-3)^2+k-18\\).</p><p>Minsta värdet är \\(k-18\\).</p><p>\\(k-18=5\\Rightarrow k=23\\).</p><p><strong>\\(k=23\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.321",
@@ -11136,10 +9368,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera minustecknet och kvadratkomplettera:</p><p>\\(g(x)=-(x^2-10x)-16=-(x-5)^2+9\\).</p><p><strong>Symmetrilinje \\(x=5\\), största värde 9.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.322",
@@ -11156,10 +9385,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(x)=a(x+2)(x-8)\\). \\(-16=-16a\\Rightarrow a=1\\). Symmetrilinjen är \\(x=3\\), och \\(f(3)=-25\\).</p><p><strong>Minsta värdet är −25.</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.323",
@@ -11176,10 +9402,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=(x-h)^2-16\\).</p><p>Nollstället \\(x=1\\) ger</p><p>\\((1-h)^2=16\\).</p><p>Alltså \\(1-h=\\pm4\\), så \\(h=-3\\) eller \\(h=5\\).</p><p><strong>\\(f(x)=(x+3)^2-16\\) eller \\(f(x)=(x-5)^2-16\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_nollstallen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.324",
@@ -11196,11 +9419,7 @@ window.BANKMA2 = [
     "s": "<p>Symmetrilinjen ligger mitt emellan nollställena. Om det ena nollstället är −1 och symmetrilinjen är \\(x=2\\), måste det andra ligga lika långt på andra sidan: \\(x=5\\).</p><p>Därför \\(f(x)=a(x+1)(x-5)\\).</p><p>Punkten \\((0,-6)\\) ger \\(-6=-5a\\Rightarrow a=6/5\\).</p><p><strong>\\(f(x)=\\frac65(x+1)(x-5)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.325",
@@ -11217,11 +9436,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-3)^2-8\\).</p><p>Använd nollstället \\(x=1\\):</p><p>\\(0=4a-8\\Rightarrow a=2\\).</p><p><strong>\\(f(x)=2(x-3)^2-8\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.326",
@@ -11238,11 +9453,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena är −1 och 5, så</p><p>\\(f(x)=a(x+1)(x-5)\\).</p><p>Sätt in punkten \\((2,-9)\\):</p><p>\\(-9=a\\cdot3\\cdot(-3)=-9a\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x+1)(x-5)=x^2-4x-5\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.327",
@@ -11259,10 +9470,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x+4)(x-2)\\).</p><p>Skärningen med y-axeln är \\(f(0)=-8a\\).</p><p>Triangeln med basen 4 längdenheter längs x-axeln från −4 till 0 och höjden \\(|f(0)|\\) har area 8:</p><p>\\(\\frac12\\cdot4\\cdot|f(0)|=8\\Rightarrow|f(0)|=4\\).</p><p>Parabeln är uppåtvänd, så \\(a&gt;0\\) och därmed \\(f(0)=-8a&lt;0\\). Alltså \\(f(0)=-4\\).</p><p>\\(-8a=-4\\Rightarrow a=1/2\\).</p><p><strong>\\(f(x)=\\frac12(x+4)(x-2)\\).</strong></p>",
     "familj": "fran_graf_till_formel__graf_och_skarningspunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.328",
@@ -11279,11 +9487,7 @@ window.BANKMA2 = [
     "s": "<p>Nollställena −2 och 4 ger</p><p>\\(f(x)=a(x+2)(x-4)\\).</p><p>Sätt in punkten \\((0,-8)\\):</p><p>\\(-8=a\\cdot2\\cdot(-4)=-8a\\Rightarrow a=1\\).</p><p><strong>\\(f(x)=(x+2)(x-4)=x^2-2x-8\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.329",
@@ -11300,10 +9504,7 @@ window.BANKMA2 = [
     "s": "<p>Det andra nollstället ligger lika långt på andra sidan symmetrilinjen: \\(x=4\\).</p><p>Skriv \\(f(x)=a(x+2)(x-4)\\).</p><p>\\(f(0)=a\\cdot2\\cdot(-4)=-8a=6\\Rightarrow a=-3/4\\).</p><p><strong>\\(f(x)=-\\frac34(x+2)(x-4)\\).</strong></p>",
     "familj": "fran_graf_till_formel__graf_och_skarningspunkt",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.330",
@@ -11320,11 +9521,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-1)(x-7)\\).</p><p>Med \\(x=3\\): \\(-16=a\\cdot2\\cdot(-4)=-8a\\), alltså \\(a=2\\).</p><p>Symmetrilinjen ligger vid \\(x=4\\).</p><p>\\(f(4)=2\\cdot3\\cdot(-3)=-18\\).</p><p><strong>\\(f(x)=2(x-1)(x-7)\\), minsta värde \\(-18\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.331",
@@ -11341,11 +9538,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-2)(x-8)\\).</p><p>\\(4=a\\cdot2\\cdot(-4)=-8a\\Rightarrow a=-1/2\\).</p><p><strong>\\(f(x)=-\\frac12(x-2)(x-8)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.332",
@@ -11362,11 +9555,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=ax(x-4)\\).</p><p>Av grafen avläses minimipunkten \\((2,-2)\\).</p><p>\\(-2=a\\cdot2\\cdot(-2)=-4a\\Rightarrow a=1/2\\).</p><p><strong>\\(f(x)=\\frac12x(x-4)\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.333",
@@ -11383,11 +9572,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=a(x-2)^2-9\\).</p><p>\\(9=9a-9\\Rightarrow a=2\\).</p><p>Alltså \\(f(x)=2(x-2)^2-9\\).</p><p>För nollställena löser vi \\(2(x-2)^2-9=0\\), Detta kan skrivas \\(x^2-4x-\\frac12=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=2\\pm\\sqrt{4+\\frac12}=2\\pm\\frac{3}{\\sqrt2}\\).</p><p><strong>\\(f(x)=2(x-2)^2-9\\), nollställen \\(x=2\\pm\\frac{3\\sqrt2}{2}\\).</strong></p>",
     "familj": "fran_graf_till_formel__avlas_k_och_m",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.334",
@@ -11404,11 +9589,7 @@ window.BANKMA2 = [
     "s": "<p>Vi löser \\(h(x)\\ge6\\):</p><p>\\(-0,16(x-7)^2+7,84\\ge6\\).</p><p>\\(-0,16(x-7)^2\\ge-1,84\\). Dividera med \\(-0,16\\) och vänd olikheten:</p><p>\\((x-7)^2\\le11,5\\).</p><p>\\(|x-7|\\le\\sqrt{11,5}\\approx3,391\\).</p><p>Intervallet blir ungefär \\(3,61\\le x\\le10,39\\).</p><p>Bredden är \\(2\\sqrt{11,5}\\approx6,78\\).</p><p><strong>Området är cirka 6,8 m brett.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.335",
@@ -11425,11 +9606,7 @@ window.BANKMA2 = [
     "s": "<p>Låt varje kortsida vara \\(x\\) m. Den tredje stängslade sidan blir \\(72-2x\\).</p><p>Arean är \\(A(x)=x(72-2x)\\).</p><p>Kravet är</p><p>\\(-2x^2+72x\\ge600\\).</p><p>Dela med −2 och vänd olikheten:</p><p>\\(x^2-36x+300\\le0\\).</p><p>Med <strong>pq-formeln</strong> fås rötterna</p><p>\\(x=18\\pm\\sqrt{324-300}=18\\pm2\\sqrt6\\).</p><p>Eftersom parabeln är uppåtvänd gäller olikheten mellan rötterna.</p><p><strong>\\(18-2\\sqrt6\\le x\\le18+2\\sqrt6\\), cirka 13,1–22,9 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.336",
@@ -11446,10 +9623,7 @@ window.BANKMA2 = [
     "s": "<p>Om ena sidan är \\(x\\), blir den andra \\(60-x\\), eftersom \\(2x+2y=120\\).</p><p>Alltså \\(A(x)=x(60-x)=-x^2+60x\\).</p><p>Parabelns topp ligger vid \\(x=30\\).</p><p>\\(A(30)=30\\cdot30=900\\).</p><p><strong>a) \\(A(x)=-x^2+60x\\). b) 900 m².</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.337",
@@ -11466,10 +9640,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(h(x)=-x^2+6x+7=-(x-3)^2+16\\).</p><p>Eftersom \\(-(x-3)^2\\le0\\) blir det största möjliga värdet 16.</p><p><strong>Bollens största höjd är 16 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.338",
@@ -11486,10 +9657,7 @@ window.BANKMA2 = [
     "s": "<p>Bollen träffar marken när höjden är 0:</p><p>\\(-5t^2+20t+25=0\\).</p><p>Dividera med −5: \\(t^2-4t-5=0\\).</p><p>Faktorisera: \\((t-5)(t+1)=0\\), så \\(t=5\\) eller \\(t=-1\\).</p><p>Negativ tid är inte relevant i situationen.</p><p><strong>Bollen träffar marken efter 5 s.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__rorelse_och_hojdmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.339",
@@ -11506,10 +9674,7 @@ window.BANKMA2 = [
     "s": "<p>Låt de två korta sidorna vara \\(x\\) meter. Då blir den tredje stängslade sidan \\(80-2x\\).</p><p>Arean är \\(A(x)=x(80-2x)=-2x^2+80x\\).</p><p>Maximipunkten ligger vid \\(x=-80/(2\\cdot-2)=20\\).</p><p>Den långa sidan blir \\(80-40=40\\).</p><p>Arean blir \\(20\\cdot40=800\\).</p><p><strong>Största area är 800 m², med måtten 20 m × 40 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.340",
@@ -11526,10 +9691,7 @@ window.BANKMA2 = [
     "s": "<p>Om ena sidan är x är den andra \\(13-x\\), eftersom halva omkretsen är 13.</p><p>Arean blir \\(A(x)=x(13-x)=-x^2+13x\\).</p><p>Parabelns symmetrilinje är \\(x=13/2=6,5\\).</p><p>\\(A(6,5)=6,5^2=42,25\\).</p><p><strong>Största möjliga area är 42,25 cm².</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.341",
@@ -11546,10 +9708,7 @@ window.BANKMA2 = [
     "s": "<p>Utveckla areafunktionen:</p><p>\\(A(x)=x(20-x)=-x^2+20x\\).</p><p>Kvadratkomplettera:</p><p>\\(A(x)=-(x-10)^2+100\\).</p><p><strong>Största möjliga area är 100 areaenheter.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.342",
@@ -11566,10 +9725,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x(x+2)=48\\Rightarrow(x-6)(x+8)=0\\). En sidlängd måste vara positiv, så den negativa lösningen kan inte användas.</p><p><strong>6 cm och 8 cm.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__tolka_och_anvanda_andragradsmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.343",
@@ -11586,10 +9742,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(V(x)=600\\):</p><p>\\(-2x^2+120x-1000=600\\).</p><p>Dela med −2:</p><p>\\(x^2-60x+800=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=30\\pm\\sqrt{900-800}=30\\pm10\\).</p><p><strong>Vid 20 och 40 enheter.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__tolka_och_anvanda_andragradsmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.344",
@@ -11606,10 +9759,7 @@ window.BANKMA2 = [
     "s": "<p>Förkorta varje bas för sig:</p><p>\\(\\frac{x^5y^3}{x^2y}=x^{5-2}y^{3-1}\\).</p><p><strong>\\(x^3y^2\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.345",
@@ -11626,10 +9776,7 @@ window.BANKMA2 = [
     "s": "<p>Vid multiplikation av potenser med samma bas adderas exponenterna:</p><p><strong>\\(x^8\\)</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.346",
@@ -11644,10 +9791,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoren ger \\(C2^a=12\\) och \\(C4^a=48\\).</p><p>Dela ekvationerna:</p><p>\\(\\frac{4^a}{2^a}=4\\Rightarrow2^a=4\\), så \\(a=2\\).</p><p>Då är \\(4C=12\\), alltså \\(C=3\\).</p><p><strong>\\(f(x)=3x^2\\)</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.347",
@@ -11662,10 +9806,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(f(1)=5\\) fås direkt \\(C=5\\).</p><p>Det andra villkoret ger \\(40=5\\cdot4^a\\), alltså \\(4^a=8\\).</p><p>Eftersom \\(4^{3/2}=8\\) är \\(a=\\frac32=1,5\\).</p><p>Alltså \\(f(x)=5x^{1,5}\\).</p><p>\\(f(9)=5\\cdot9^{3/2}=5\\cdot27=135\\).</p><p><strong>a) \\(f(x)=5x^{1,5}\\). b) \\(f(9)=135\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.348",
@@ -11682,10 +9823,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 2:</p><p>\\(x^3=125\\).</p><p>Ta kubikroten:</p><p>\\(x=\\sqrt[3]{125}=5\\).</p><p><strong>\\(x=5\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.349",
@@ -11702,10 +9840,7 @@ window.BANKMA2 = [
     "s": "<p>Flytta allt till ena sidan:</p><p>\\(x^8-16x^4=0\\).</p><p>Faktorisera:</p><p>\\(x^4(x^4-16)=0\\).</p><p>Första faktorn ger \\(x=0\\).</p><p>Andra ger \\(x^4=16\\), alltså \\(x=\\pm2\\) för reella \\(x\\).</p><p><strong>\\(x=-2,0,2\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.350",
@@ -11722,10 +9857,7 @@ window.BANKMA2 = [
     "s": "<p>Ta kubikroten ur båda leden:</p><p>\\(x-2=5\\).</p><p>\\(x=7\\).</p><p><strong>\\(x=7\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.351",
@@ -11740,10 +9872,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellerna lika:</p><p>\\(4x^{1,5}=x^2\\).</p><p>Dividera med \\(x^{1,5}\\): \\(4=x^{0,5}=\\sqrt{x}\\).</p><p>Alltså \\(x=16\\).</p><p>För stora x växer \\(x^2\\) snabbare än \\(x^{1,5}\\).</p><p><strong>De är lika vid \\(x=16\\); därefter är g större.</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.352",
@@ -11758,10 +9887,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(4)=3\\cdot4^2=3\\cdot16\\).</p><p><strong>\\(f(4)=48\\)</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.353",
@@ -11776,10 +9902,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna ger \\(12=a2^n\\) och \\(48=a4^n\\).</p><p>Dividera den andra ekvationen med den första:</p><p>\\(4=\\left(\\frac42\\right)^n=2^n\\), alltså \\(n=2\\).</p><p>\\(12=4a\\Rightarrow a=3\\).</p><p><strong>\\(y=3x^2\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.354",
@@ -11794,10 +9917,7 @@ window.BANKMA2 = [
     "s": "<p>\\(18=a2^n\\) och \\(288=a8^n\\).</p><p>Dividera:</p><p>\\(16=(8/2)^n=4^n\\Rightarrow n=2\\).</p><p>\\(18=4a\\Rightarrow a=4,5\\). Modellen är \\(f(x)=4,5x^2\\).</p><p>\\(4,5x^2=72\\Rightarrow x^2=16\\).</p><p><strong>\\(x=4\\) eftersom x ska vara positivt.</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.355",
@@ -11812,10 +9932,7 @@ window.BANKMA2 = [
     "s": "<p>x multipliceras med \\(12/4=3\\).</p><p>För en potensfunktion multipliceras y då med \\(3^n\\).</p><p>\\(3^n=9=3^2\\).</p><p><strong>\\(n=2\\).</strong></p>",
     "familj": "potensfunktioner__bestam_parameter",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.356",
@@ -11830,10 +9947,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x=1\\) fås \\(a=6\\).</p><p>När x fördubblas från 1 till 2 fyrdubblas y från 6 till 24.</p><p>Därför gäller \\(2^n=4\\Rightarrow n=2\\).</p><p><strong>\\(y=6x^2\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.357",
@@ -11848,10 +9962,7 @@ window.BANKMA2 = [
     "s": "<p>En ökning med 50 % betyder att x multipliceras med 1,5.</p><p>Arean multipliceras med \\(1,5^2=2,25\\), alltså ökar den med 125 %.</p><p>Volymen multipliceras med \\(1,5^3=3,375\\), alltså ökar den med 237,5 %.</p><p><strong>Volymen påverkas betydligt mer än arean.</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.358",
@@ -11866,11 +9977,7 @@ window.BANKMA2 = [
     "s": "<p>Vid fördubbling av x multipliceras Q med \\(2^n\\).</p><p>Villkoret ger \\(2^n=8=2^3\\), alltså \\(n=3\\).</p><p>En storhet som skalar med tredje potensen beter sig som en volym, inte som en area.</p><p><strong>Elevens påstående är fel; modellen har exponenten 3.</strong></p>",
     "familj": "potensfunktioner__skalning_med_potens",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.359",
@@ -11887,10 +9994,7 @@ window.BANKMA2 = [
     "s": "<p>Grafen går genom \\((0,8)\\), så startvärdet är 8.</p><p>När x ökar med 1 halveras y-värdet: 8, 4, 2, ...</p><p><strong>En möjlig formel är \\(f(x)=8\\cdot0,5^x\\).</strong></p>",
     "familj": "exponentialgraf__bestam_formel_fran_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.360",
@@ -11907,10 +10011,7 @@ window.BANKMA2 = [
     "s": "<p>En linjär funktion ökar med samma belopp för varje steg i \\(x\\).</p><p>En exponentialfunktion multipliceras däremot med samma faktor. När värdena blivit tillräckligt stora innebär samma faktor allt större absoluta ökningar.</p><p><strong>Därför kan den linjära funktionen ligga högre först, men exponentialfunktionen går till slut om och växer snabbare.</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.361",
@@ -11927,11 +10028,7 @@ window.BANKMA2 = [
     "s": "<p>Startvärdet är y-värdet när \\(x=0\\), vilket avläses till 2.</p><p>Grafen växer när x ökar, så förändringsfaktorn är större än 1.</p><p><strong>Startvärde 2; förändringsfaktor större än 1.</strong></p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.362",
@@ -11948,11 +10045,7 @@ window.BANKMA2 = [
     "s": "<p>Låt det gemensamma värdet vid \\(x=5\\) vara M.</p><p>För den växande funktionen är startvärdet \\(M/1,2^5\\).</p><p>För den avtagande är startvärdet \\(M/0,8^5\\).</p><p>Eftersom \\(0,8^5&lt;1&lt;1,2^5\\) är \\(M/0,8^5\\) störst.</p><p><strong>Den avtagande funktionen ligger högst vid \\(x=0\\).</strong></p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.363",
@@ -11969,11 +10062,7 @@ window.BANKMA2 = [
     "s": "<p>a) Startvärdet är \\(f(0)=3\\cdot0,5^0=3\\).</p><p>b) När x ökar med 1 multipliceras funktionsvärdet med 0,5, alltså halveras det.</p><p>c) Eftersom förändringsfaktorn 0,5 är mindre än 1 är funktionen avtagande.</p><p><strong>a) 3. b) Halveras. c) Avtagande.</strong></p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.364",
@@ -11990,11 +10079,7 @@ window.BANKMA2 = [
     "s": "<p>Startvärdet avläses vid \\(x=0\\). Där ligger g högre än f, så g har störst startvärde.</p><p>f växer när x ökar och har därför förändringsfaktor större än 1. g avtar och har förändringsfaktor mellan 0 och 1.</p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.365",
@@ -12011,10 +10096,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera funktionsvärdena:</p><p>\\(96/12=a^3=8\\Rightarrow a=2\\).</p><p>\\(12=C\\cdot2\\Rightarrow C=6\\).</p><p>Grafen skär y-axeln vid \\((0,6)\\).</p><p>Eftersom \\(a=2&gt;1\\) är grafen växande.</p><p><strong>Y-skärningen är \\((0,6)\\).</strong></p>",
     "familj": "exponentialgraf__avlas_exponentialgraf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.366",
@@ -12031,11 +10113,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(f(x)=5a^x\\).</p><p>\\(40=5a^3\\Rightarrow a^3=8\\Rightarrow a=2\\).</p><p>Grafen har startvärdet 5, växer snabbt och fördubblas för varje steg i x.</p><p><strong>\\(f(x)=5\\cdot2^x\\).</strong></p>",
     "familj": "exponentialgraf__tolka_tillvaxt_och_avtagande",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.367",
@@ -12051,11 +10129,7 @@ window.BANKMA2 = [
     "s": "<p>För den linjära modellen finns ett tydligt mönster: skillnaderna är negativa i ändarna och positiva i mitten. Det tyder på att den räta linjen missar en böjning i sambandet.</p><p>För exponentialmodellen är skillnaderna små och växlar kring 0 utan tydligt mönster.</p><p><strong>Exponentialmodellen verkar därför passa mätdata bättre.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.368",
@@ -12071,11 +10145,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ökar med ett fast belopp per steg, medan exponentialmodellen ökar med en faktor. På lång sikt växer exponentialmodellen snabbast.</p><p><strong>Exponentialmodellen växer snabbast på lång sikt.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.369",
@@ -12091,11 +10161,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ger \\(L(20)=168\\).</p><p>Den exponentiella modellen ger \\(E(20)\\approx1270\\).</p><p>Trots att modellerna följer mätdata nära i intervallet 0–6 ger de alltså mycket olika värden vid 20.</p><p>Värdet \\(x=20\\) ligger långt utanför intervallet där mätningarna gjordes. Därför måste den valda modellen motiveras utifrån sammanhanget innan någon av prognoserna kan betraktas som rimlig.</p><p><strong>Elevens påstående är inte tillräckligt motiverat.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.370",
@@ -12111,10 +10177,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför hur väl olika modeller följer datapunkterna och om den valda modellen är rimlig utifrån förändringen i materialet.</p><p>a) \\(y=1,52\\cdot6+1,3=10,42\\).</p><p>b) När \\(x\\) ökar med 1 ökar modellen \\(y\\) med 1,52.</p><p><strong>a) 10,42. b) Ökning 1,52 per x-enhet.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.371",
@@ -12130,10 +10193,7 @@ window.BANKMA2 = [
     "s": "<p><strong>GeoGebra:</strong> Gör först en linjär regression med alla punkter och notera linjens ekvation. Ta sedan bort den tydligt avvikande punkten och gör regressionen igen.</p><p>Jämför framför allt riktningskoefficient, konstantterm och hur linjen ligger i förhållande till de övriga datapunkterna.</p><p><strong>En stor förändring visar att den avvikande punkten påverkar regressionsmodellen mycket.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.372",
@@ -12149,10 +10209,7 @@ window.BANKMA2 = [
     "s": "<p>Att ökningen växer räcker inte för att identifiera en andragradsmodell; även en exponentialfunktion får växande differenser.</p><p>Kvoterna mellan efterföljande y-värden är ungefär 1,62; 1,64; 1,59 och 1,60. De är betydligt jämnare än differenserna, vilket talar för en exponentialmodell.</p><p><strong>GeoGebra:</strong> gör både andragradsregression och exponentialregression. Rita båda modellerna tillsammans med datapunkterna och jämför hur väl graferna följer punkterna samt om avvikelserna visar något tydligt mönster.</p><p><strong>Exponentialmodellen har den starkare motiveringen.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.373",
@@ -12168,10 +10225,7 @@ window.BANKMA2 = [
     "s": "<p>Värdet multipliceras med 0,92 för varje steg i \\(x\\), alltså minskar med 8 % per steg.</p><p><strong>Faktorn 0,92 betyder en minskning med 8 % per steg.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.374",
@@ -12187,11 +10241,7 @@ window.BANKMA2 = [
     "s": "<p>Första differenserna är 3, 7, 11, 15 och är alltså inte konstanta.</p><p>Andra differenserna är däremot 4, 4, 4.</p><p><strong>En andragradsmodell är därför rimligast.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.375",
@@ -12206,10 +10256,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(x^2+ax+16=\\left(x+\\frac a2\\right)^2+16-\\frac{a^2}{4}\\).</p><p>Det minsta värdet är därför \\(16-\\frac{a^2}{4}\\).</p><p>\\(16-\\frac{a^2}{4}=7\\Rightarrow\\frac{a^2}{4}=9\\Rightarrow a=6\\) eller \\(a=-6\\).</p><p>Minimipunktens \\(x\\)-koordinat är \\(-\\frac a2\\). Den ska vara positiv, vilket kräver \\(a<0\\).</p><p><strong>\\(a=-6\\)</strong></p>",
     "familj": "kvadratkomplettering__extrempunkt_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.376",
@@ -12224,10 +10271,7 @@ window.BANKMA2 = [
     "s": "<p>Halva koefficienten framför x är −3. Därför använder vi \\((x-3)^2\\).</p><p>\\((x-3)^2=x^2-6x+9\\).</p><p>För att få konstanttermen 13 behöver vi lägga till 4:</p><p><strong>\\(x^2-6x+13=(x-3)^2+4\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.377",
@@ -12242,10 +10286,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera:</p><p>\\(x^2-8x+k=(x-4)^2-16+k\\).</p><p>Kvadraten är minst 0, så funktionens minsta värde är \\(k-16\\).</p><p>Villkoret ger \\(k-16=-3\\Rightarrow k=13\\).</p><p><strong>\\(k=13\\).</strong></p>",
     "familj": "kvadratkomplettering__extrempunkt_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.378",
@@ -12261,11 +10302,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen \\(3\\cdot1{,}4^x=20\\) med logaritmer.</p>",
     "s": "<p>Dividera först med 3:</p><p>\\[1{,}4^x=\\frac{20}{3}.\\]</p><p>Ta lg i båda leden:</p><p>\\[x\\lg1{,}4=\\lg\\left(\\frac{20}{3}\\right).\\]</p><p>\\[x=\\frac{\\lg(20/3)}{\\lg1{,}4}\\approx5{,}64.\\]</p><p><strong>\\(x\\approx5{,}64\\)</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.379",
@@ -12282,10 +10319,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen \\(250\\cdot1{,}08^x=400\\) med ett digitalt verktyg.</p>",
     "s": "<p>Skriv ekvationen i GeoGebra och använd Lös eller NLös.</p><p>Det ger \\(x\\approx6{,}11\\).</p><p><strong>\\(x\\approx6{,}1\\)</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.380",
@@ -12301,11 +10335,7 @@ window.BANKMA2 = [
     "s": "<p>Rita \\(y=x^5\\) och \\(y=2^x\\) och använd skärningsverktyget eller <code>NLös(x^5=2^x)</code> i relevanta intervall.</p><p>Graferna skär varandra positivt ungefär vid \\(x\\approx1,18\\) och \\(x\\approx22,44\\).</p><p>Vid \\(x=10\\) är \\(10^5=100000&gt;1024=2^{10}\\), så eleven ser bara beteendet mellan skärningarna.</p><p>För mycket stora \\(x\\) växer \\(2^x\\) snabbare än varje fast potens \\(x^5\\), så efter den andra skärningen blir \\(g(x)&gt;f(x)\\).</p><p><strong>Påståendet är alltså fel. Ett testvärde kan inte avgöra en olikhet för alla \\(x\\).</strong></p>",
     "familj": "jamfora_exponential_potens__jamforelse_med_graf",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.381",
@@ -12322,10 +10352,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 4:</p><p>\\(x^2=81/4\\).</p><p>Ta kvadratroten och kom ihåg både positiv och negativ rot:</p><p>\\(x=\\pm9/2\\).</p><p><strong>\\(x=\\pm\\frac92\\).</strong></p>",
     "familj": "potensekvationer__isolera_potens_och_ta_rot",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.382",
@@ -12342,10 +10369,7 @@ window.BANKMA2 = [
     "s": "<p>Ta kvadratroten ur båda leden:</p><p>\\(x-1=\\pm4\\).</p><p>Det ger \\(x=1+4=5\\) eller \\(x=1-4=-3\\).</p><p><strong>\\(x=5\\) eller \\(x=-3\\).</strong></p>",
     "familj": "potensekvationer__skiftad_potensekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.383",
@@ -12361,11 +10385,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(f(t)=(t-1)^2+1\\) får vi</p><p>\\[(2x-2)^2=(x+1)^2.\\]</p><p>Två kvadrater är lika när uttrycken är lika eller motsatta:</p><p>1) \\(2x-2=x+1\\Rightarrow x=3\\).</p><p>2) \\(2x-2=-(x+1)\\Rightarrow3x=1\\Rightarrow x=1/3\\).</p><p><strong>\\(x=3\\) eller \\(x=1/3\\).</strong></p><p>Grafiskt beror de två fallen på att parabolen är symmetrisk kring \\(x=1\\).</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.384",
@@ -12381,10 +10401,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom funktionen är linjär är förändringen per x-enhet konstant.</p><p>Mellan \\(x=1\\) och \\(x=3\\) ökar funktionsvärdet från 4 till 10: \\(k=(10-4)/(3-1)=3\\).</p><p>Från \\(x=3\\) till \\(x=5\\) är det två steg, så \\(f(5)=10+2\\cdot3=16\\).</p><p><strong>\\(f(5)=16\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.385",
@@ -12400,10 +10417,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(a)=3\\) vid <strong>\\(a=-2\\) och \\(a=2\\)</strong>.</p><p>b) Då måste \\(x+1=-2\\) eller \\(x+1=2\\). Alltså <strong>\\(x=-3\\) eller \\(x=1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.386",
@@ -12419,10 +10433,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(f(x)=0\\):</p><p>\\(x^2-9=0\\Rightarrow x^2=9\\).</p><p><strong>\\(x=-3\\) eller \\(x=3\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.387",
@@ -12438,10 +10449,7 @@ window.BANKMA2 = [
     "s": "<p>a) Efter 3 sekunder är föremålet 5 meter högt.</p><p>b) Nivån 3 meter nås vid <strong>\\(t=1\\) s och \\(t=5\\) s</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.388",
@@ -12457,10 +10465,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(x=-2\\):</p><p>\\(g(-2)=2(-2)^2+3(-2)-1=8-6-1\\).</p><p><strong>\\(g(-2)=1\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.389",
@@ -12476,10 +10481,7 @@ window.BANKMA2 = [
     "s": "<p>a) Den konstanta ökningen ger koefficienten 3, så \\(f(x)=3x+m\\).</p><p>Villkoret \\(f(2)=7\\) ger \\(6+m=7\\), alltså \\(m=1\\).</p><p><strong>\\(f(x)=3x+1\\)</strong></p><p>b) \\(f(2x)=6x+1\\) och \\(f(x)+15=3x+16\\). Villkoret ger</p><p>\\(6x+1=3x+16\\Rightarrow3x=15\\).</p><p><strong>\\(x=5\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.390",
@@ -12495,10 +10497,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(g(-2)=2(-2)^2-(-2)+4=8+2+4=14\\).</p><p>b) \\(g(1)=2-1+4=5\\).</p><p><strong>\\(g(-2)=14&gt;5=g(1)\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.391",
@@ -12514,11 +10513,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>Ja.</strong> Varje bestämd parkeringstid ger exakt en kostnad.</p><p>b) <strong>Nej.</strong> Samma kostnad kan höra till flera olika parkeringstider. Exempelvis kostar alla tider över 1 timme och upp till 2 timmar 50 kr. Kostnaden 50 kr bestämmer alltså inte en enda tid.</p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.392",
@@ -12534,10 +10529,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(3)=3^2+2\\cdot3=15\\).</p><p>\\(f(1)=1^2+2=3\\).</p><p>Skillnaden är \\(15-3=12\\).</p><p><strong>12.</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.393",
@@ -12553,10 +10545,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>5</strong>.</p><p>b) \\(f(x)=5\\) vid <strong>\\(x=-1\\) och \\(x=3\\)</strong>.</p><p>c) \\(f(u)=5\\) när \\(u=-1\\) eller \\(u=3\\). Alltså \\(x+2=-1\\) eller \\(x+2=3\\), vilket ger <strong>\\(x=-3\\) eller \\(x=1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.394",
@@ -12572,10 +10561,7 @@ window.BANKMA2 = [
     "s": "<p>Villkoret \\(h(x)=11\\) ger ekvationen \\(3x-7=11\\).</p><p>\\(3x=18\\Rightarrow x=6\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.395",
@@ -12591,10 +10577,7 @@ window.BANKMA2 = [
     "s": "<p>a) Grafen visar att \\(f(u)=2\\) när \\(u=2\\). Alltså \\(x+1=2\\Rightarrow\\)<strong>\\(x=1\\)</strong>.</p><p>b) \\(f(u)=0\\) när \\(u=4\\). Alltså \\(2x=4\\Rightarrow\\)<strong>\\(x=2\\)</strong>.</p><p>c) Man bestämmer först vilket x-värde \\(u\\) som ger rätt funktionsvärde och löser sedan ekvationen för uttrycket inne i parentesen.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.396",
@@ -12610,10 +10593,7 @@ window.BANKMA2 = [
     "s": "<p>Riktningskoefficienten fås av</p><p>\\(k=(19-7)/(6-2)=12/4=3\\).</p><p>Använd \\(f(2)=7\\): \\(7=3\\cdot2+m\\Rightarrow m=1\\).</p><p>Alltså \\(f(x)=3x+1\\), och \\(f(10)=31\\).</p><p><strong>\\(f(10)=31\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.397",
@@ -12629,10 +10609,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>3</strong>.</p><p>b) \\(g(3)=6-3=\\)<strong>3</strong>.</p><p>c) Av grafen ser man att \\(f(u)=4\\) när \\(u=3\\). Alltså \\(g(x)=3\\): \\(2x-3=3\\Rightarrow\\)<strong>\\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.398",
@@ -12648,10 +10625,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(h(x)=0\\):</p><p>\\(x^2-16=0\\Rightarrow x^2=16\\).</p><p><strong>\\(x=-4\\) eller \\(x=4\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.399",
@@ -12667,10 +10641,7 @@ window.BANKMA2 = [
     "s": "<p>Först söker vi vilka x-värden \\(u\\) som ger \\(f(u)=1\\). Av grafen är det \\(u=-2\\) eller \\(u=2\\).</p><p>Vi behöver alltså \\(f(x)=-2\\) eller \\(f(x)=2\\). Grafen når aldrig −2, medan \\(f(x)=2\\) vid \\(x=-3\\) och \\(x=3\\).</p><p><strong>\\(x=-3\\) eller \\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.400",
@@ -12686,10 +10657,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt funktionsvärdet lika med −9:</p><p>\\(5-2x=-9\\Rightarrow-2x=-14\\).</p><p><strong>\\(x=7\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.401",
@@ -12705,10 +10673,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(4)=16+2=\\)<strong>18</strong>.</p><p>b) \\(x^2+2=18\\Rightarrow x^2=16\\), alltså <strong>\\(x=-4\\) eller \\(x=4\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.402",
@@ -12724,10 +10689,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>4</strong><br>b) <strong>0</strong><br>c) <strong>\\(x=-1\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.403",
@@ -12743,11 +10705,7 @@ window.BANKMA2 = [
     "s": "<p>De två paren med \\(x=-1\\) måste ha samma y-värde. Därför krävs \\(a-1=2\\), vilket ger \\(a=3\\).</p><p>Men när \\(a=3\\) blir två andra par \\((3,5)\\) och \\((3,6)\\). Samma x-värde, 3, får då två olika y-värden.</p><p><strong>Det finns alltså inget värde på \\(a\\) som gör att \\(y\\) kan beskrivas som en funktion av \\(x\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.404",
@@ -12763,10 +10721,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>1</strong><br>b) <strong>4</strong><br>c) <strong>\\(x=-1\\) eller \\(x=3\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.405",
@@ -12782,10 +10737,7 @@ window.BANKMA2 = [
     "s": "<p>Ett samband där samma x-värde kan ge två olika y-värden beskriver inte en funktion av \\(x\\). Ett exempel är \\(x=y^2\\): när \\(x=4\\) kan \\(y=2\\) eller \\(y=-2\\).</p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.406",
@@ -12801,10 +10753,7 @@ window.BANKMA2 = [
     "s": "<p><strong>Ja.</strong> Varje första tal har exakt ett värde som hör till det. Att både 1 och 2 ger värdet 4 är tillåtet.</p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.407",
@@ -12820,10 +10769,7 @@ window.BANKMA2 = [
     "s": "<p>\\(g(2)=3\\), så \\(3a+b=11\\).</p><p>\\(g(f(1))=2(a+b)-1=9\\), alltså \\(a+b=5\\).</p><p>Subtraktion ger \\(2a=6\\Rightarrow a=3\\), och då \\(b=2\\).</p><p>\\(g(5)=9\\), så \\(f(g(5))=f(9)=3\\cdot9+2=\\)<strong>29</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.408",
@@ -12839,10 +10785,7 @@ window.BANKMA2 = [
     "s": "<p>Det betyder att <strong>växten är 38 cm hög efter 12 dygn</strong>, om höjden mäts i centimeter.</p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.409",
@@ -12858,10 +10801,7 @@ window.BANKMA2 = [
     "s": "<p>08.45 är 75 minuter efter 07.30. <strong>\\(T(75)=12\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.410",
@@ -12877,10 +10817,7 @@ window.BANKMA2 = [
     "s": "<p><strong>A.</strong> För en funktion har varje tillåtet x-värde exakt ett funktionsvärde.</p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.411",
@@ -12896,10 +10833,7 @@ window.BANKMA2 = [
     "s": "<p>a) Av grafen: \\(f(2)=2,5\\) och \\(f(0)=1,5\\). Skillnaden är <strong>1</strong>.</p><p>b) Grafen har värdet 2 vid <strong>\\(x=1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.412",
@@ -12915,10 +10849,7 @@ window.BANKMA2 = [
     "s": "<p>\\(f(5)\\) är mängden vatten i tanken efter 5 minuter.</p><p>\\(120-6\\cdot5=\\)<strong>90 liter</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__berakna_funktionsvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.413",
@@ -12934,11 +10865,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(0)=-1\\) och \\(f(-1)=0\\), alltså <strong>0</strong>.</p><p>b) \\(f(2)=3\\). Sedan \\(f(3)=3^2-1=\\)<strong>8</strong>.</p><p>c) Det andra x-värdet blir 3, men <strong>\\(x=3\\) ligger utanför den del av grafen som visas</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.414",
@@ -12954,10 +10881,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>3</strong><br>b) <strong>3</strong><br>c) <strong>\\(x=-1\\) och \\(x=1\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.415",
@@ -12973,10 +10897,7 @@ window.BANKMA2 = [
     "s": "<p>Först söker vi de x-värde \\(u\\) där \\(f(u)=4\\). Grafen för \\(f\\) ger <strong>\\(u=-1\\) eller \\(u=3\\)</strong>.</p><p>Därför ska \\(g(x)=-1\\) eller \\(g(x)=3\\).</p><p>Av grafen för \\(g\\): \\(g(x)=-1\\) vid \\(x=0\\), och \\(g(x)=3\\) vid \\(x=-4\\) och \\(x=4\\).</p><p><strong>\\(x=-4,0,4\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.416",
@@ -12992,10 +10913,7 @@ window.BANKMA2 = [
     "s": "<p>a) För \\(f(2)\\) går vi till \\(x=2\\) i grafen och läser av y-värdet. Grafen ger <strong>\\(f(2)=4\\)</strong>.</p><p>b) Vid \\(x=-3\\) är grafens y-värde \\(-1\\), alltså <strong>\\(f(-3)=-1\\)</strong>.</p><p>c) Ekvationen \\(f(x)=5\\) betyder att vi söker den punkt där grafen har höjden \\(y=5\\). Den horisontella nivån \\(y=5\\) skär grafen vid <strong>\\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.417",
@@ -13011,11 +10929,7 @@ window.BANKMA2 = [
     "s": "<p>a) Sätt \\(x=1\\): \\(f(1)=f(5)\\), alltså \\(f(5)=4\\). Sätt \\(x=2\\): \\(f(2)=f(4)\\), alltså \\(f(4)=7\\).</p><p>b) För \\(x=3\\) ger villkoret bara \\(f(3)=f(3)\\). Det bestämmer inte något värde på \\(f(3)\\).</p><p><strong>a) \\(f(5)=4\\), \\(f(4)=7\\). b) Nej, \\(f(3)\\) kan inte bestämmas av uppgifterna.</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.418",
@@ -13031,10 +10945,7 @@ window.BANKMA2 = [
     "s": "<p><strong>\\(f(x)=4x-1\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.419",
@@ -13050,10 +10961,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(1)=1\\) och \\(g(1)=4\\), alltså <strong>−3</strong>.</p><p>b) \\(2x-1=-x+5\\Rightarrow3x=6\\Rightarrow\\)<strong>\\(x=2\\)</strong>.</p><p>c) \\(f(x+1)=2(x+1)-1=2x+1\\). Då \\(2x+1=-x+5\\Rightarrow3x=4\\Rightarrow\\)<strong>\\(x=4/3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.420",
@@ -13069,10 +10977,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>\\(f(1)=1\\)</strong>.</p><p>b) Använd formeln: \\(f(4)=2\\cdot4-1=\\)<strong>7</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.421",
@@ -13088,10 +10993,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(2)=6\\) och \\(f(-1)=1,5\\), så <strong>\\(f(2)-f(-1)=4,5\\)</strong>.</p><p>b) Av grafen ser man att \\(f(1)=2,5\\). Därför måste \\(x+2=1\\), alltså <strong>\\(x=-1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.422",
@@ -13107,10 +11009,7 @@ window.BANKMA2 = [
     "s": "<p><strong>\\(f(5)=17\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.423",
@@ -13126,10 +11025,7 @@ window.BANKMA2 = [
     "s": "<p>a) Av grafen är <strong>\\(f(0)=2\\)</strong>.</p><p>b) Då blir \\(f(f(0))=f(2)\\). Av grafen är <strong>\\(f(2)=-1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.424",
@@ -13145,10 +11041,7 @@ window.BANKMA2 = [
     "s": "<p>Först bildas \\(x^2\\) och därefter adderas 5.</p><p><strong>\\(f(x)=x^2+5\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.425",
@@ -13164,10 +11057,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>2</strong><br>b) <strong>5</strong><br>c) <strong>\\(x=2\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.426",
@@ -13183,10 +11073,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(-8+9=\\)<strong>1</strong>.<br>b) \\(4+9=\\)<strong>13</strong>.<br>c) \\(-4x+9=5\\Rightarrow x=\\)<strong>1</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.427",
@@ -13202,10 +11089,7 @@ window.BANKMA2 = [
     "s": "<p>a) Läs av grafens höjd när \\(x=2\\): <strong>\\(f(2)=4\\)</strong>.</p><p>b) Läs av grafens höjd när \\(x=-3\\): <strong>\\(f(-3)=-1\\)</strong>.</p><p>c) Här är frågan omvänd. Vi söker det x-värde där funktionsvärdet är 5. Följ nivån \\(y=5\\) till grafen och sedan ned till x-axeln. Det ger <strong>\\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.428",
@@ -13221,10 +11105,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>−1</strong><br>b) <strong>\\(x=0\\)</strong><br>c) <strong>\\(f(5)=6\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__tabell_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.429",
@@ -13240,10 +11121,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>1</strong>.</p><p>b) Den horisontella nivån \\(y=3\\) skär grafen vid <strong>\\(x=-1\\) och \\(x=3\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.430",
@@ -13259,10 +11137,7 @@ window.BANKMA2 = [
     "s": "<p>a) Av grafen: <strong>\\(f(1)=2\\)</strong>.</p><p>b) Punkten ligger utanför den visade grafen, så använd formeln: \\(f(4)=3\\cdot4-1=\\)<strong>11</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.431",
@@ -13278,10 +11153,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>1</strong><br>b) <strong>3</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.432",
@@ -13297,10 +11169,7 @@ window.BANKMA2 = [
     "s": "<p>a) När x-värden är 6 är funktionsvärdet 14.</p><p>b) <strong>\\((6,14)\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.433",
@@ -13316,10 +11185,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>11</strong><br>b) <strong>−7</strong><br>c) \\(5-3x=2\\Rightarrow\\)<strong>\\(x=1\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__losa_med_funktionsvarde",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.434",
@@ -13335,10 +11201,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>1</strong><br>b) <strong>3</strong><br>c) <strong>\\(x=0\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.435",
@@ -13354,10 +11217,7 @@ window.BANKMA2 = [
     "s": "<p><strong>Ja.</strong> Varje temperatur i tabellen hör ihop med exakt ett motstånd.</p>",
     "familj": "funktionsskrivsatt_rep__tabell_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.436",
@@ -13373,10 +11233,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>−3</strong><br>b) <strong>\\(x=0\\)</strong><br>c) <strong>\\((-3,6)\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.437",
@@ -13392,10 +11249,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>4</strong><br>b) <strong>0</strong><br>c) <strong>\\(x=-2\\) eller \\(x=2\\)</strong></p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.438",
@@ -13411,10 +11265,7 @@ window.BANKMA2 = [
     "s": "<p><strong>\\(P(4)=360\\).</strong></p>",
     "familj": "funktionsskrivsatt_rep__tolka_funktionsnotation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.439",
@@ -13430,10 +11281,7 @@ window.BANKMA2 = [
     "s": "<p>a) <strong>\\(f(0)=1\\)</strong>.</p><p>b) Grafen har värdet 3 när <strong>\\(x=-1\\)</strong>.</p>",
     "familj": "funktionsskrivsatt_rep__graf_och_funktionsnotation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.440",
@@ -13449,11 +11297,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv om vänsterledet: \\(5\\cdot2^{x-1}=\\frac52\\cdot2^x\\). Högerledet är \\(3\\cdot3^x\\).</p><p>Dividera med \\(3\\cdot2^x\\):</p><p>\\(\\frac56=\\left(\\frac32\\right)^x\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(x\\lg(3/2)=\\lg(5/6)\\).</p><p><strong>\\(x=\\frac{\\lg(5/6)}{\\lg(3/2)}\\).</strong></p><p>Eftersom \\((3/2)^x\\) är strikt växande kan det anta värdet \\(5/6\\) för högst ett \\(x\\). Därför finns högst en lösning.</p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.441",
@@ -13470,10 +11314,7 @@ window.BANKMA2 = [
     "s": "<p>Med GeoGebra fås \\(t\\approx5,638\\).</p><p><strong>\\(t\\approx5,6\\)</strong></p>",
     "familj": "exponentialekvationer__digital_eller_grafisk_losning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.442",
@@ -13489,11 +11330,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(a^u=2\\) gäller</p><p>\\(a^{2u}=(a^u)^2=2^2=4\\).</p><p>För \\(a&gt;1\\) är exponentialfunktionen växande och för \\(0&lt;a&lt;1\\) är den avtagande. Ekvationen kan därför ha högst en lösning, så detta är lösningen.</p><p><strong>Lösningen är \\(x=2u\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.443",
@@ -13509,11 +11346,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 3:</p><p>\\(1,2^x=3\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(x\\lg1,2=\\lg3\\).</p><p>\\(x=\\frac{\\lg3}{\\lg1,2}\\approx6,03\\).</p><p><strong>\\(x\\approx6,0\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.444",
@@ -13529,11 +11362,7 @@ window.BANKMA2 = [
     "s": "<p>a) Detta är en potensekvation. Ta tredje roten: \\(x=\\sqrt[3]{50}\\approx3,7\\).</p><p>b) Här finns \\(x\\) i exponenten. Med logaritmer:</p><p>\\(x=\\frac{\\lg50}{\\lg3}\\approx3,6\\).</p><p><strong>a) \\(x\\approx3,7\\), b) \\(x\\approx3,6\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.445",
@@ -13549,11 +11378,7 @@ window.BANKMA2 = [
     "s": "<p>De två ekvationerna ser liknande ut, men x har olika roller och därför används olika metoder.</p><p><strong>1. \\(x^3=20\\) är en potensekvation.</strong> Här är x basen. För att frigöra x tar man kubikroten ur båda leden:</p><p>\\(x=\\sqrt[3]{20}\\approx2,71\\).</p><p><strong>2. \\(3^x=20\\) är en exponentialekvation.</strong> Här står x i exponenten. Då kan man ta \\(\\lg\\) av båda leden:</p><p>\\(\\lg(3^x)=\\lg20\\).</p><p>Med logaritmlagen \\(\\lg(a^x)=x\\lg a\\) får vi</p><p>\\(x\\lg3=\\lg20\\Rightarrow x=\\frac{\\lg20}{\\lg3}\\approx2,73\\).</p><p><strong>Potensekvationen löses alltså med en rot, medan exponentialekvationen löses med logaritmer (eller med exempelvis GeoGebra).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.446",
@@ -13569,11 +11394,7 @@ window.BANKMA2 = [
     "s": "<p>För mindre positiva x är potensfunktionen här större, men exponentialfunktionen kommer senare att gå om.</p><p><strong>GeoGebra:</strong> rita \\(y=x^3\\) och \\(y=2^x\\), eller använd <code>NLös(2^x=x^3)</code>. Den relevanta skärningen ligger vid \\(x\\approx9,94\\).</p><p>Kontrollera närliggande heltal:</p><p>\\(x=9:\\quad 2^9=512&lt;9^3=729\\).</p><p>\\(x=10:\\quad 2^{10}=1024&gt;10^3=1000\\).</p><p><strong>Det minsta heltalet \\(x\\ge2\\) är därför \\(x=10\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.447",
@@ -13589,11 +11410,7 @@ window.BANKMA2 = [
     "s": "<p>Påståendet är fel. För en potensfunktion \\(f(x)=Cx^n\\) gäller</p><p>\\(f(2x)=C(2x)^n=2^n f(x)\\).</p><p>Om \\(n=1\\) får vi \\(f(2x)=2f(x)\\). Den linjära potensfunktionen \\(f(x)=5x\\) fördubblas alltså när \\(x\\) fördubblas, trots att den inte är exponentiell.</p><p><strong>Att en fördubbling av \\(x\\) ger en fördubbling av \\(y\\) räcker därför inte för att avgöra vilken typ av modell det är.</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.448",
@@ -13608,10 +11425,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadratkomplettera: \\(x^2-6x+k=(x-3)^2+k-9\\).</p><p>Uttryckets minsta värde fås när \\((x-3)^2=0\\), alltså blir minsta värdet \\(k-9\\).</p><p>Vi vill ha \\(k-9\\ge2\\).</p><p><strong>Det minsta möjliga värdet är \\(k=11\\).</strong></p>",
     "familj": "kvadratkomplettering__extrempunkt_via_kvadratkomplettering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.449",
@@ -13626,10 +11440,7 @@ window.BANKMA2 = [
     "s": "<p>Halva koefficienten 8 är 4, så börja med \\((x+4)^2\\).</p><p>\\((x+4)^2=x^2+8x+16\\).</p><p>För att få konstanttermen 19 lägger vi till 3:</p><p><strong>\\(x^2+8x+19=(x+4)^2+3\\).</strong></p>",
     "familj": "kvadratkomplettering__skriva_pa_kvadratkompletterad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.450",
@@ -13645,10 +11456,7 @@ window.BANKMA2 = [
     "s": "<p>För ekvationen \\(x^2+ax+25=0\\) är \\(p=a\\) och \\(q=25\\).</p>\n<p>Enligt <strong>pq-formeln</strong> blir</p>\n<p>\\(x=-\\frac a2\\pm\\sqrt{\\left(\\frac a2\\right)^2-25}\\).</p>\n<p>För exakt en reell lösning måste uttrycket under roten vara 0:</p>\n<p>\\(\\frac{a^2}{4}-25=0\\Rightarrow a^2=100\\).</p>\n<p><strong>\\(a=10\\) eller \\(a=-10\\).</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.451",
@@ -13664,10 +11472,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorparen är \\((1,12)\\), \\((2,6)\\), \\((3,4)\\). Summorna är 13, 8 och 7.</p><p><strong>\\(k=7,8\\) eller 13.</strong></p>",
     "familj": "mer_om_andragradsekvationer__sammansatt_andragradsekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.452",
@@ -13684,11 +11489,7 @@ window.BANKMA2 = [
     "s": "<p>Om ena sidan är x blir den andra \\(12-x\\), så arean är</p><p>\\(A(x)=x(12-x)\\).</p><p>Kravet \\(A\\ge32\\) ger \\(x(12-x)\\ge32\\).</p><p>Det kan skrivas \\((x-4)(x-8)\\le0\\).</p><p>Produkten är icke-positiv mellan rötterna.</p><p><strong>\\(4\\le x\\le8\\).</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__olikhet_och_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.453",
@@ -13705,10 +11506,7 @@ window.BANKMA2 = [
     "s": "<p>Vi bestämmer först gränsen genom att lösa \\(-x^2+140x-3600=0\\), alltså</p><p>\\(x^2-140x+3600=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=70\\pm\\sqrt{4900-3600}=70\\pm10\\sqrt{13}\\approx33,94\\) och \\(106,06\\).</p><p>Vinsten är positiv mellan rötterna.</p><p><strong>För hela antal luncher: 34–106 luncher.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__tolka_och_anvanda_andragradsmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.454",
@@ -13724,11 +11522,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen ökar med samma absoluta belopp för varje steg, medan exponentialmodellen ökar med samma procentuella faktor.</p><p>Utanför intervallet med mätvärden ger modellerna därför allt mer olika värden.</p><p>\\(L(40)=352\\), medan \\(E(40)=42\\cdot1,11^{40}\\approx2730\\).</p><p><strong>Att modellerna följer datapunkterna ungefär lika väl i mätintervallet betyder alltså inte att de ger liknande prognoser långt utanför intervallet.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.455",
@@ -13744,10 +11538,7 @@ window.BANKMA2 = [
     "s": "<p>För modell A är skillnaderna små och växlar kring 0 utan något tydligt mönster.</p><p>För modell B förändras skillnaderna systematiskt från negativa till positiva. Det tyder på att modellen missar en förändring i sambandet.</p><p><strong>Modell A verkar därför passa mätdata bättre.</strong></p>",
     "familj": "regressionsanalys_olika_modeller__valja_bast_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.456",
@@ -13763,11 +11554,7 @@ window.BANKMA2 = [
     "s": "<p>Vi söker den punkt där exponentialfunktionen \\(g(x)=2\\cdot1,6^x\\) går om potensfunktionen \\(f(x)=5x^2\\).</p><p><strong>GeoGebra:</strong> rita båda funktionerna eller använd <code>NLös(2*1.6^x=5x^2)</code>. Den relevanta positiva skärningen ligger vid \\(x\\approx12,80\\).</p><p>Kontrollera därför heltalen 12 och 13:</p><p>\\(f(12)=720\\) och \\(g(12)\\approx562,9\\), alltså \\(g(12)&lt;f(12)\\).</p><p>\\(f(13)=845\\) och \\(g(13)\\approx900,7\\), alltså \\(g(13)&gt;f(13)\\).</p><p><strong>Det minsta heltalet är \\(x=13\\).</strong></p>",
     "familj": "jamfora_exponential_potens__klassificera_funktionstyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.457",
@@ -13784,10 +11571,7 @@ window.BANKMA2 = [
     "s": "<p>Om faktorn är \\(a\\) gäller \\(182250\\,a^3=132860\\).</p><p>\\(a^3=132860/182250\\approx0,7290\\).</p><p>\\(a\\approx0,900\\).</p><p><strong>Den årliga förändringsfaktorn är ungefär 0,90, alltså en minskning med cirka 10 % per år.</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.458",
@@ -13803,11 +11587,7 @@ window.BANKMA2 = [
     "s": "<p>\\(a^3=144/18=8\\Rightarrow a=2\\). Då \\(C\\cdot4=18\\Rightarrow C=9/2\\).</p><p>\\(f(-1)=\\frac92\\cdot2^{-1}=\\frac94\\).</p><p><strong>\\(f(-1)=\\frac94\\).</strong></p>",
     "familj": "exponentialfunktioner__berakna_och_tolka_exponentialfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.459",
@@ -13824,10 +11604,7 @@ window.BANKMA2 = [
     "s": "<p>\\(V(t)=8000\\cdot1,04^t\\).</p><p>\\(V(5)\\approx9733\\).</p><p><strong>Modellen är \\(8000\\cdot1,04^t\\), värdet cirka 9 733 kr.</strong></p>",
     "familj": "exponentialfunktioner__bestam_exponentialmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.460",
@@ -13844,10 +11621,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv modellen \\(N(t)=1200\\cdot a^t\\).</p><p>Efter två tidsenheter:</p><p>\\(972=1200a^2\\Rightarrow a^2=0,81\\).</p><p>Eftersom en förändringsfaktor är positiv blir \\(a=0,9\\).</p><p><strong>Förändringsfaktorn är 0,9 och modellen är \\(N(t)=1200\\cdot0,9^t\\).</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.461",
@@ -13864,10 +11638,7 @@ window.BANKMA2 = [
     "s": "<p>I en exponentialfunktion \\(P(t)=C\\cdot a^t\\) är \\(C\\) startvärdet och \\(a\\) förändringsfaktorn.</p><p>Här är \\(C=850\\) och \\(a=1,04\\), vilket motsvarar en ökning med 4 %.</p><p><strong>Startvärde 850 och ökning 4 % per tidsenhet.</strong></p>",
     "familj": "exponentialfunktioner__forandringsfaktor_och_procent",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.462",
@@ -13882,10 +11653,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) fördubblas från 1 till 2 fyrdubblas \\(y\\) från 5 till 20. Samma sak sker från 2 till 4.</p><p>Alltså är \\(2^n=4\\), så \\(n=2\\).</p><p>När \\(x=1\\) är \\(a=5\\), alltså \\(y=5x^2\\).</p><p>För \\(x=8\\) ska \\(y=5\\cdot64=320\\).</p><p><strong>Modellen är \\(y=5x^2\\); 300 ska vara 320.</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.463",
@@ -13900,10 +11668,7 @@ window.BANKMA2 = [
     "t": "<p>För en viss typ av 3D-utskriven testdel används modellen \\(m(s)=Cs^a\\), där \\(m\\) är materialmängden i gram.</p><p>Talet \\(s\\) anger skalan: \\(s=2\\) betyder att alla längdmått är dubbelt så stora som för originaldelen.</p><p>Vid \\(s=2\\) används 18 g material och vid \\(s=8\\) används 144 g.</p><p>Bestäm en potensmodell och använd den för att uppskatta vilket värde på \\(s\\) som ger 80 g material. Digitalt verktyg får användas.</p>",
     "s": "<p>Sätt in de två mätpunkterna i \\(m=C s^a\\). Kvoten ger</p><p>\\[\\frac{144}{18}=\\left(\\frac82\\right)^a\\Rightarrow 8=4^a.\\]</p><p>Eftersom \\(4^{1{,}5}=8\\) är \\(a=1{,}5\\).</p><p>Ur \\(18=C\\cdot2^{1{,}5}\\) fås \\(C\\approx6{,}364\\). Modellen blir alltså \\(m(s)\\approx6{,}364s^{1{,}5}\\).</p><p>Lös \\(6{,}364s^{1{,}5}=80\\) digitalt. Då fås \\(s\\approx5{,}41\\).</p><p><strong>En modell är \\(m(s)\\approx6{,}364s^{1{,}5}\\), och 80 g motsvarar ungefär \\(s=5{,}4\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.464",
@@ -13918,10 +11683,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(f(2)=2,5\\cdot2^3=20\\).</p><p>b) För en tredjegradspotens multipliceras funktionsvärdet med \\(2^3=8\\) när x fördubblas.</p><p><strong>\\(f(2)=20\\), och en fördubbling av x ger åtta gånger så stort y.</strong></p>",
     "familj": "potensfunktioner__skalning_med_potens",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.465",
@@ -13936,10 +11698,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna ger \\(24=a\\cdot2^n\\) och \\(216=a\\cdot6^n\\).</p><p>Dividera ekvationerna: \\(\\frac{216}{24}=\\left(\\frac{6}{2}\\right)^n\\Rightarrow9=3^n\\).</p><p>Alltså \\(n=2\\).</p><p>Sätt in i första ekvationen: \\(24=4a\\Rightarrow a=6\\).</p><p><strong>\\(a=6\\) och \\(n=2\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.466",
@@ -13954,10 +11713,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(x=3\\) och \\(y=54\\):</p><p>\\(54=C\\cdot3^3=27C\\).</p><p><strong>\\(C=2\\)</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.467",
@@ -13973,10 +11729,7 @@ window.BANKMA2 = [
     "s": "<p>Använd lagen \\(\\lg x-\\lg y=\\lg(x/y)\\) \\(\\lg a-\\lg b=\\lg(a/b)\\):</p><p>\\(\\lg80-\\lg8=\\lg(80/8)=\\lg10\\).</p><p><strong>\\(1\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.468",
@@ -13992,10 +11745,7 @@ window.BANKMA2 = [
     "s": "<p>Kombinera logaritmerna stegvis:</p><p>\\(\\lg45+\\lg20-\\lg9=\\lg\\left(\\frac{45\\cdot20}{9}\\right)\\).</p><p>\\(\\frac{45\\cdot20}{9}=100\\).</p><p><strong>\\(\\lg100=2\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.469",
@@ -14011,10 +11761,7 @@ window.BANKMA2 = [
     "s": "<p>Använd lagen \\(\\lg x-\\lg y=\\lg(x/y)\\):</p><p>\\(\\lg(50x)-\\lg(2x)=\\lg\\left(\\frac{50x}{2x}\\right)\\).</p><p>Eftersom \\(x&gt;0\\) kan \\(x\\) förkortas bort.</p><p><strong>\\(\\lg25\\).</strong></p>",
     "familj": "logaritmlagar__forenkla_med_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.470",
@@ -14030,10 +11777,7 @@ window.BANKMA2 = [
     "s": "<p>Först krävs \\(x-1&gt;0\\) och \\(x+1&gt;0\\), alltså \\(x&gt;1\\).</p><p>Med logaritmlagen fås \\(\\lg((x-1)(x+1))=1\\).</p><p>Därför gäller \\((x-1)(x+1)=10\\Rightarrow x^2-1=10\\Rightarrow x^2=11\\).</p><p>Lösningarna till den ekvationen är \\(x=\\pm\\sqrt{11}\\), men bara \\(x&gt;1\\) fungerar.</p><p><strong>\\(x=\\sqrt{11}\\).</strong></p>",
     "familj": "logaritmlagar__losa_logaritmekvation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.471",
@@ -14049,10 +11793,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\lg80-\\lg8=\\lg(80/8)=\\lg10\\).</p><p><strong>1</strong></p>",
     "familj": "logaritmlagar__tillampa_logaritmlagar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.472",
@@ -14067,10 +11808,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(y=\\sqrt{x+4}\\). Då är \\(y\\ge0\\) och \\(x=y^2-4\\).</p><p>Ekvationen blir \\(y=y^2-4+a\\), alltså</p><p>\\(y^2-y+(a-4)=0\\).</p><p>Kvadratkomplettera:</p><p>\\((y-\\frac12)^2=\\frac{17}{4}-a\\).</p><p>Om \\(a&gt;17/4\\) finns ingen reell lösning. Om \\(a=17/4\\) fås endast \\(y=1/2\\), alltså exakt en lösning.</p><p>Om \\(a&lt;17/4\\) fås två möjliga värden \\(y=\\frac12\\pm\\sqrt{\\frac{17}{4}-a}\\).</p><p>Det mindre värdet är negativ precis när \\(\\sqrt{\\frac{17}{4}-a}&gt;\\frac12\\), vilket ger \\(a&lt;4\\). Då återstår exakt en tillåten lösning eftersom \\(y\\ge0\\).</p><p>För \\(4\\le a&lt;17/4\\) är båda värdena större än eller lika med 0 och ger två lösningar.</p><p><strong>Exakt en reell lösning fås för \\(a&lt;4\\) eller \\(a=17/4\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.473",
@@ -14085,10 +11823,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledet är en kvadratrot och kan därför inte vara negativt. Därför måste \\(x+2\\ge0\\), alltså \\(x\\ge-2\\).</p><p>Kvadrera:</p><p>\\(3x+4=(x+2)^2=x^2+4x+4\\).</p><p>\\(x^2+x=0\\Rightarrow x(x+1)=0\\).</p><p>De möjliga lösningarna är \\(x=0\\) och \\(x=-1\\). Båda uppfyller ursprungsekvationen.</p><p><strong>\\(x=0\\) eller \\(x=-1\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.474",
@@ -14103,10 +11838,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadrera båda leden:</p><p>\\(2x+1=49\\Rightarrow2x=48\\Rightarrow x=24\\).</p><p>Kontroll: \\(\\sqrt{2\\cdot24+1}=\\sqrt{49}=7\\).</p><p><strong>\\(x=24\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.475",
@@ -14121,10 +11853,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledet är en kvadratrot och kan därför inte vara negativt. Alltså måste \\(x\\ge0\\).</p><p>Kvadrera båda leden: \\(2x+3=x^2\\).</p><p>\\(x^2-2x-3=0=(x-3)(x+1)\\).</p><p>De möjliga lösningarna efter kvadreringen är \\(x=3\\) och \\(x=-1\\). Endast \\(x=3\\) uppfyller villkoret \\(x\\ge0\\) och ursprungsekvationen.</p><p><strong>\\(x=3\\).</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.476",
@@ -14139,10 +11868,7 @@ window.BANKMA2 = [
     "s": "<p>Vänsterledet är en kvadratrot och kan därför inte vara negativt. Alltså måste \\(x\\ge0\\).</p><p>Kvadrera: \\(2x+3=x^2\\Rightarrow x^2-2x-3=0\\Rightarrow(x-3)(x+1)=0\\).</p><p>Efter kvadreringen får vi \\(x=3\\) eller \\(x=-1\\). Värdet \\(x=-1\\) uppfyller inte villkoret och fungerar inte i ursprungsekvationen.</p><p><strong>\\(x=3\\).</strong></p>",
     "familj": "rotekvationer__kontrollera_efter_kvadrering",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.477",
@@ -14158,11 +11884,7 @@ window.BANKMA2 = [
     "s": "<p>a) Punkterna ligger relativt nära den räta linjen utan något tydligt böjt mönster. En linjär modell verkar därför rimlig inom det observerade intervallet.</p><p>b) Man bör bland annat kontrollera om sambandet fortfarande är linjärt utanför intervallet och om det finns sakliga skäl att anta att samma trend fortsätter.</p><p><strong>Modellen är rimlig inom dataintervallet men prognos långt utanför mätintervallet kräver försiktighet.</strong></p>",
     "familj": "modellval_regression__extrapolation_och_giltighetsomrade",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.478",
@@ -14178,11 +11900,7 @@ window.BANKMA2 = [
     "s": "<p>Den linjära modellen minskar med 50 liter varje minut, vilket stämmer med att pumpen tar bort ungefär samma volym per minut.</p><p>Den ger \\(L(10)=0\\), alltså att tanken blir tom efter cirka 10 minuter.</p><p>Exponentialmodellen minskar i stället med 12 % av den återstående volymen varje minut. Den når aldrig exakt 0 och motsvarar därför inte en pump med ungefär konstant flöde.</p><p><strong>Den linjära modellen är mest rimlig i den här situationen.</strong></p>",
     "familj": "modellval_regression__kritisk_modellbedomning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.479",
@@ -14198,11 +11916,7 @@ window.BANKMA2 = [
     "s": "<p>Skillnaderna mellan \\(y\\)-värdena är 6, 12 och 24 och är alltså inte konstanta.</p><p>Kvoten mellan två efterföljande \\(y\\)-värden är däremot hela tiden 2.</p><p><strong>En exponentialmodell är mest lämplig eftersom värdet fördubblas när \\(x\\) ökar med 1.</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.480",
@@ -14218,11 +11932,7 @@ window.BANKMA2 = [
     "s": "<p>a) Digital lösning av \\(8+3,2t=7,5\\cdot1,12^t\\) ger \\(t\\approx19,9\\) veckor. Det ligger redan utanför det intervall, 0–12 veckor, där modellerna sägs beskriva växten.</p><p>b) En femårsprognos motsvarar ungefär 260 veckor. Det är en mycket lång prognos långt utanför mätintervallet. Verklig växttillväxt kan inte förväntas fortsätta linjärt eller exponentiellt på samma sätt under så lång tid.</p><p><strong>Modellerna bör inte användas för en femårsprognos utan nytt underlag.</strong></p>",
     "familj": "modellval_regression__kritisk_modellbedomning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.481",
@@ -14239,10 +11949,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[(x+4)^2=49.\\]</p>",
     "s": "<p>Ta kvadratroten i båda leden: \\(x+4=\\pm 7\\).</p><p>Därför får vi</p><p><strong>\\(x=3\\) eller \\(x=-11\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.482",
@@ -14259,10 +11966,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[9(x-2)^2=16.\\]</p>",
     "s": "<p>Dividera med 9:</p><p>\\[(x-2)^2=\\frac{16}{9}.\\]</p><p>Ta kvadratroten: \\(x-2=\\pm\\frac43\\).</p><p><strong>\\(x=\\frac{10}{3}\\) eller \\(x=\\frac{2}{3}\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.483",
@@ -14279,10 +11983,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[x^2=20.\\]</p>",
     "s": "<p>Ta kvadratroten i båda leden.</p><p><strong>\\(x=\\pm\\sqrt{20}=\\pm 2\\sqrt5\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.484",
@@ -14299,10 +12000,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[(2x+1)^2=36.\\]</p>",
     "s": "<p>Ta kvadratroten: \\(2x+1=\\pm 6\\).</p><p>Det ger</p><p>\\[2x=5\\Rightarrow x=\\frac52\\qquad\\text{eller}\\qquad 2x=-7\\Rightarrow x=-\\frac72.\\]</p><p><strong>\\(x=\\frac52\\) eller \\(x=-\\frac72\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.485",
@@ -14318,10 +12016,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[x^4-13x^2+36=0.\\]</p>",
     "s": "<p>Sätt \\(u=x^2\\). Då får vi andragradsekvationen</p><p>\\[u^2-13u+36=0.\\]</p><p>Faktorisera: \\((u-4)(u-9)=0\\).</p><p>Alltså är \\(u=4\\) eller \\(u=9\\).</p><p>Det betyder \\(x^2=4\\) eller \\(x^2=9\\).</p><p><strong>\\(x=-3,-2,2,3\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.486",
@@ -14337,10 +12032,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm \\(k\\) så att ekvationen</p><p>\\[x^2+6x+k=0\\]</p><p>får exakt en lösning.</p>",
     "s": "<p>Använd pq-formeln. För ekvationen \\(x^2+6x+k=0\\) är \\(p=6\\) och \\(q=k\\):</p><p>\\[x=-3\\pm\\sqrt{9-k}.\\]</p><p>Ekvationen har exakt en lösning när uttrycket under rottecknet är 0.</p><p>\\[9-k=0\\Rightarrow k=9.\\]</p><p><strong>\\(k=9\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.487",
@@ -14356,10 +12048,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[x+\\frac{6}{x}=5,\\qquad x\neq 0.\\]</p>",
     "s": "<p>Multiplicera båda leden med \\(x\\):</p><p>\\[x^2+6=5x.\\]</p><p>Flytta allt till ett led:</p><p>\\[x^2-5x+6=0.\\]</p><p>Faktorisera: \\((x-2)(x-3)=0\\).</p><p><strong>\\(x=2\\) eller \\(x=3\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.488",
@@ -14375,10 +12064,7 @@ window.BANKMA2 = [
     "t": "<p>En rektangel har area 48 cm\\(^2\\). Den ena sidan är 2 cm längre än den andra.</p><p>Bestäm rektangelns sidlängder.</p>",
     "s": "<p>Låt den kortare sidan vara \\(x\\) cm. Då är den längre sidan \\(x+2\\) cm.</p><p>Arean ger ekvationen</p><p>\\[x(x+2)=48.\\]</p><p>Detta ger \\(x^2+2x-48=0\\).</p><p>Faktorisera: \\((x+8)(x-6)=0\\).</p><p>Lösningarna är \\(x=-8\\) och \\(x=6\\), men en sidlängd kan inte vara negativ.</p><p><strong>Sidorna är 6 cm och 8 cm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.489",
@@ -14394,10 +12080,7 @@ window.BANKMA2 = [
     "t": "<p>Ekvationen \\(x^2+px+q=0\\) har rötterna 3 och \\(-5\\). Bestäm \\(p\\) och \\(q\\).</p>",
     "s": "<p>Om rötterna är 3 och \\(-5\\) kan ekvationen skrivas</p><p>\\[(x-3)(x+5)=0.\\]</p><p>Utveckla vänsterledet:</p><p>\\[x^2+2x-15=0.\\]</p><p><strong>\\(p=2\\) och \\(q=-15\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.490",
@@ -14413,10 +12096,7 @@ window.BANKMA2 = [
     "t": "<p>Ekvationen \\(x^2+px+12=0\\) har en rot som är 4. Bestäm \\(p\\).</p>",
     "s": "<p>Om en rot är 4 och produkten av rötterna är 12, måste den andra roten vara 3.</p><p>Rötternas summa är då 7.</p><p>För ekvationen \\(x^2+px+q=0\\) gäller att summan av rötterna är \\(-p\\).</p><p><strong>\\(p=-7\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.491",
@@ -14432,10 +12112,7 @@ window.BANKMA2 = [
     "t": "<p>Skriv en andragradsekvation vars rötter har summan 8 och produkten 12.</p>",
     "s": "<p>För en ekvation på formen \\(x^2+px+q=0\\) gäller att \\(-p\\) är summan och \\(q\\) är produkten.</p><p>Därför är \\(p=-8\\) och \\(q=12\\).</p><p><strong>\\(x^2-8x+12=0\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.492",
@@ -14451,10 +12128,7 @@ window.BANKMA2 = [
     "t": "<p>Ekvationen \\(x^2+px+q=0\\) har två rötter som skiljer sig med 2 och tillsammans har summan 10.</p><p>Bestäm \\(p\\) och \\(q\\).</p>",
     "s": "<p>Två tal som har summan 10 och skiljer sig med 2 är 4 och 6.</p><p>Då blir ekvationen</p><p>\\[(x-4)(x-6)=0.\\]</p><p>Utveckling ger \\(x^2-10x+24=0\\).</p><p><strong>\\(p=-10\\) och \\(q=24\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.493",
@@ -14471,11 +12145,7 @@ window.BANKMA2 = [
     "t": "<p>Betrakta funktionen \\(f(x)=3\\cdot 1{,}5^x\\).</p><ol><li>Bestäm \\(f(0)\\).</li><li>Avgör om funktionen är växande eller avtagande.</li></ol>",
     "s": "<p>\\(f(0)=3\\cdot 1{,}5^0=3\\).</p><p>Eftersom förändringsfaktorn \\(1{,}5\\) är större än 1 är funktionen växande.</p><p><strong>\\(f(0)=3\\), och funktionen är växande.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.494",
@@ -14492,10 +12162,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm formeln för en exponentialfunktion \\(f(x)=C\\cdot a^x\\) som uppfyller tabellen.</p><table class=\"data\"><tr><th>x</th><th>0</th><th>1</th><th>2</th></tr><tr><td>f(x)</td><td>5</td><td>10</td><td>20</td></tr></table>",
     "s": "<p>När \\(x=0\\) är \\(f(0)=C=5\\).</p><p>Kvoten mellan två efterföljande värden är \\(10/5=2\\) och \\(20/10=2\\), så \\(a=2\\).</p><p><strong>\\(f(x)=5\\cdot 2^x\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.495",
@@ -14512,11 +12179,7 @@ window.BANKMA2 = [
     "t": "<p>Betrakta funktionen \\(g(x)=8\\cdot 0{,}75^x\\).</p><ol><li>Vilket värde har funktionen när \\(x=0\\)?</li><li>Förklara vad förändringsfaktorn 0,75 betyder.</li><li>Avgör om funktionen är växande eller avtagande.</li></ol>",
     "s": "<p>\\(g(0)=8\\cdot 0{,}75^0=8\\).</p><p>Förändringsfaktorn 0,75 betyder att värdet multipliceras med 0,75 för varje steg som \\(x\\) ökar med 1.</p><p>Eftersom 0,75 är mindre än 1 är funktionen avtagande.</p><p><strong>\\(g(0)=8\\); värdet multipliceras med 0,75 per steg; funktionen är avtagande.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.496",
@@ -14533,10 +12196,7 @@ window.BANKMA2 = [
     "t": "<p>Två funktioner ges av \\(f(x)=2\\cdot 1{,}2^x\\) och \\(g(x)=5\\cdot 0{,}9^x\\).</p><ol><li>Vilken funktion har störst värde när \\(x=0\\)?</li><li>Förklara med ord hur funktionernas värden förändras när \\(x\\) ökar.</li></ol>",
     "s": "<p>\\(f(0)=2\\) och \\(g(0)=5\\), alltså är \\(g\\) störst när \\(x=0\\).</p><p>Funktionen \\(f\\) är växande eftersom 1,2 är större än 1. Funktionen \\(g\\) är avtagande eftersom 0,9 är mindre än 1.</p><p>Därför kan \\(f\\) så småningom gå om \\(g\\).</p><p><strong>Vid \\(x=0\\) är \\(g\\) störst. \\(f\\) växer medan \\(g\\) avtar.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.497",
@@ -14552,10 +12212,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm \\(\\lg 100000\\).</p>",
     "s": "<p>\\(100000=10^5\\).</p><p><strong>\\(\\lg 100000=5\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.498",
@@ -14571,10 +12228,7 @@ window.BANKMA2 = [
     "t": "<p>Skriv om sambandet \\(\\lg x=2{,}7\\) på formen \\(x=10^a\\).</p>",
     "s": "<p>På formelbladet står sambandet \\(10^a=x\\Leftrightarrow a=\\lg x\\).</p><p>Här är \\(a=2{,}7\\).</p><p><strong>\\(x=10^{2{,}7}\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.499",
@@ -14590,10 +12244,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[10^x=0{,}001.\\]</p>",
     "s": "<p>\\(0{,}001=10^{-3}\\).</p><p>Alltså är</p><p><strong>\\(x=-3\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.500",
@@ -14609,10 +12260,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen</p><p>\\[\\lg x=-0{,}3.\\]</p>",
     "s": "<p>Använd sambandet på formelbladet \\(10^a=x\\Leftrightarrow a=\\lg x\\).</p><p>Av \\(\\lg x=-0{,}3\\) följer</p><p>\\[x=10^{-0{,}3}.\\]</p><p>Med räknare fås \\(x\\approx0{,}50\\).</p><p><strong>\\(x\\approx0{,}50\\)</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.501",
@@ -14629,10 +12277,7 @@ window.BANKMA2 = [
     "s": "<p>Låt det ena talet vara \\(x\\). Det andra är \\(18-x\\).</p><p>\\(x(18-x)=65\\Rightarrow x^2-18x+65=0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=9\\pm\\sqrt{81-65}=9\\pm4\\).</p><p><strong>Talen är 5 och 13.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__talproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.502",
@@ -14649,10 +12294,7 @@ window.BANKMA2 = [
     "s": "<p>Låt talen vara \\(x\\) och \\(13-x\\). Då \\(x(13-x)=30\\Rightarrow x^2-13x+30=0\\).</p><p>Rötterna är 3 och 10.</p><p><strong>Talen är 3 och 10.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__talproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.503",
@@ -14669,10 +12311,7 @@ window.BANKMA2 = [
     "s": "<p>Låt ena sidan vara \\(x\\) cm. Eftersom arean är 36 blir den andra sidan \\(36/x\\).</p><p>Omkretsen ger \\(2\\left(x+\\frac{36}{x}\\right)=26\\), alltså \\(x+\\frac{36}{x}=13\\).</p><p>Multiplicera med \\(x\\): \\(x^2-13x+36=0\\).</p><p>Använd <strong>pq-formeln</strong>:</p><p>\\(x=\\frac{13}{2}\\pm\\sqrt{\\frac{169}{4}-36}=\\frac{13}{2}\\pm\\frac52\\).</p><p><strong>Sidorna är 4 cm och 9 cm.</strong></p>",
     "familj": "andragradsekvationer_tillampningar__geometri_och_area",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.504",
@@ -14689,10 +12328,7 @@ window.BANKMA2 = [
     "s": "<p>Med symmetrilinjen \\(x=3\\) och det minsta värdet 1 kan funktionen skrivas</p><p>\\(f(x)=a(x-3)^2+1\\).</p><p>Sätt in punkten \\((1,5)\\):</p><p>\\(5=4a+1\\Rightarrow a=1\\).</p><p><strong>Ett svar är \\(f(x)=(x-3)^2+1\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.505",
@@ -14709,10 +12345,7 @@ window.BANKMA2 = [
     "s": "<p>Symmetrilinjen \\(x=4\\) innebär att om 2 är ett nollställe så är det andra nollstället 6.</p><p>Skriv \\(f(x)=a(x-2)(x-6)\\).</p><p>\\(f(1)=a(-1)(-5)=5a=7\\Rightarrow a=7/5\\).</p><p>Det minsta värdet fås vid \\(x=4\\):</p><p>\\(f(4)=\\frac75\\cdot2\\cdot(-2)=-\\frac{28}{5}\\).</p><p><strong>Det minsta värdet är \\(-\\frac{28}{5}=-5,6\\).</strong></p>",
     "familj": "symmetrilinje_extrempunkt__fran_funktionsformel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.506",
@@ -14729,10 +12362,7 @@ window.BANKMA2 = [
     "s": "<p>Avläsningen ger minimipunkten \\((3,-1)\\).</p><p>Grafen skär x-axeln vid 2 och 4.</p><p><strong>Minimipunkt \\((3,-1)\\); nollställen 2 och 4.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.507",
@@ -14749,10 +12379,7 @@ window.BANKMA2 = [
     "s": "<p>Maximipunkten är \\((2,8)\\).</p><p>När \\(x&gt;2\\) är funktionen avtagande.</p><p>Största värdet är 8.</p><p><strong>Maximipunkt \\((2,8)\\), avtagande för \\(x&gt;2\\), största värde 8.</strong></p>",
     "familj": "andragradsfunktion_graf__avlas_egenskaper_ur_graf",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.508",
@@ -14768,11 +12395,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera båda leden med \\(5\\cdot1,1^x\\):</p><p>\\(\\left(\\frac{1,4}{1,1}\\right)^x=\\frac{12}{5}\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(x\\lg(1,4/1,1)=\\lg(12/5)\\).</p><p>\\(x=\\frac{\\lg(2,4)}{\\lg(14/11)}\\approx3,63\\).</p><p><strong>\\(x\\approx3,63\\).</strong></p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.509",
@@ -14788,10 +12411,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera med 5:</p><p>\\(2^x=8\\).</p><p>Eftersom \\(8=2^3\\) följer att</p><p><strong>\\(x=3\\).</strong></p>",
     "familj": "exponentialekvationer__losa_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.510",
@@ -14807,11 +12427,7 @@ window.BANKMA2 = [
     "s": "<p>Gränsen fås när modellerna är lika:</p><p>\\(180\\cdot1,05^t=120\\cdot1,09^t\\).</p><p>Dela med \\(120\\cdot1,05^t\\):</p><p>\\(1,5=\\left(\\frac{1,09}{1,05}\\right)^t\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(t=\\frac{\\lg1,5}{\\lg(1,09/1,05)}\\approx10,845\\).</p><p>Efter denna tidpunkt är \\(B(t)>A(t)\\). Den första hela årstidpunkten är därför <strong>11 år</strong>.</p>",
     "familj": "exponentialekvationer__tillampad_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.511",
@@ -14827,11 +12443,7 @@ window.BANKMA2 = [
     "t": "<p>Två modeller är \\(P(x)=30x^2\\) och \\(E(x)=2\\cdot1{,}4^x\\), där \\(x\\ge1\\).</p><p>Bestäm med ett digitalt verktyg det minsta heltalsvärdet på \\(x\\) där \\(E(x)&gt;P(x)\\).</p>",
     "s": "<p>Rita båda graferna eller jämför modellernas värden nära skärningen.</p><p>Vid \\(x=27\\) är \\(P(27)=21870\\) och \\(E(27)\\approx17640\\), så potensmodellen är fortfarande större.</p><p>Vid \\(x=28\\) är \\(P(28)=23520\\) och \\(E(28)\\approx24695\\).</p><p><strong>Det minsta heltalsvärdet är \\(x=28\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.512",
@@ -14847,11 +12459,7 @@ window.BANKMA2 = [
     "s": "<p>\\(x^4\\) är en <strong>potensfunktion</strong>: x står i basen och exponenten 4 är konstant.</p><p>\\(1,5^x\\) är en <strong>exponentialfunktion</strong>: basen 1,5 är konstant och x står i exponenten.</p><p>När x ökar med 1 multipliceras exponentialfunktionen alltid med 1,5. För potensfunktionen är förändringsfaktorn från x till x+1 \\(\\left(\\frac{x+1}{x}\\right)^4\\), och den faktorn närmar sig 1 när x blir stor.</p><p>Därför kommer exponentialfunktionen till slut att växa snabbare.</p><p><strong>På lång sikt växer \\(1,5^x\\) snabbast.</strong></p>",
     "familj": "jamfora_exponential_potens__jamfora_tillvaxt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.513",
@@ -14867,11 +12475,7 @@ window.BANKMA2 = [
     "s": "<p>Första differenserna är \\(3,3,3,3\\), alltså konstanta.</p><p><strong>En linjär modell är därför mest naturlig.</strong> Den exakta modellen är \\(y=3x+5\\).</p>",
     "familj": "regressionsanalys_olika_modeller__jamfora_modelltyper",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.514",
@@ -14887,11 +12491,7 @@ window.BANKMA2 = [
     "s": "<p>Första differenserna är 5, 7, 9 och 11. De är inte konstanta.</p><p>Andra differenserna är däremot 2, 2 och 2, vilket är typiskt för en andragradsfunktion.</p><p>Värdena följer exakt \\(y=(x+2)^2\\).</p><p>För \\(x=6\\) blir \\(y=8^2=64\\).</p><p><strong>Andragradsmodell; \\(y(6)=64\\).</strong></p>",
     "familj": "modellval_regression__valja_modelltyp",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "2.515",
@@ -14906,10 +12506,7 @@ window.BANKMA2 = [
     "t": "<p>En punkt \\(P=(x,0)\\) ligger på x-axeln. Avståndet från P till \\(A=(1,3)\\) är exakt 2 längdenheter större än avståndet från P till \\(B=(7,3)\\).</p><p>Bestäm x-koordinaten för P.</p>",
     "s": "<p>Avstånden är</p><p>\\[PA=\\sqrt{(x-1)^2+9},\\qquad PB=\\sqrt{(x-7)^2+9}.\\]</p><p>Villkoret är \\(PA=PB+2\\). Detta kan lösas digitalt eller genom att isolera och kvadrera stegvis.</p><p>En lösning av ekvationen ger \\(x\\approx5{,}46\\).</p><p>Kontroll i ursprungsvillkoret visar att avståndsskillnaden verkligen är 2.</p><p><strong>\\(x\\approx5{,}46\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.516",
@@ -14924,10 +12521,7 @@ window.BANKMA2 = [
     "s": "<p>Kvadrera båda leden:</p><p>\\(x+5=16\\).</p><p><strong>\\(x=11\\)</strong></p>",
     "familj": "rotekvationer__isolera_rot_och_kvadrera",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.517",
@@ -14944,10 +12538,7 @@ window.BANKMA2 = [
     "s": "<p>Vi löser \\(h(x)&gt;6\\):</p><p>\\(-0,5x^2+4x+1&gt;6\\).</p><p>Multiplicera med −2 och vänd olikheten:</p><p>\\(x^2-8x+10&lt;0\\).</p><p>Med <strong>pq-formeln</strong>:</p><p>\\(x=4\\pm\\sqrt{16-10}=4\\pm\\sqrt6\\).</p><p>Eftersom uttrycket är negativt mellan rötterna:</p><p><strong>\\(4-\\sqrt6&lt;x&lt;4+\\sqrt6\\), cirka 1,55–6,45 m.</strong></p>",
     "familj": "andragradsfunktioner_tillampningar__rorelse_och_hojdmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.518",
@@ -14962,10 +12553,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna ger \\(12=a3^n\\) och \\(48=a6^n\\).</p><p>Dividera ekvationerna:</p><p>\\(4=(6/3)^n=2^n\\Rightarrow n=2\\).</p><p>\\(12=9a\\Rightarrow a=4/3\\).</p><p><strong>\\(y=\\frac43x^2\\).</strong></p>",
     "familj": "potensfunktioner__tolka_och_anvanda_potensfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.519",
@@ -14982,10 +12570,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen.</p><p>\\[(2x+3)(x-5)=0.\\]</p>",
     "s": "<p>Sätt varje faktor lika med 0.</p><p>\\[2x+3=0\\Rightarrow x=-\\frac32,\\qquad x-5=0\\Rightarrow x=5.\\]</p><p><strong>\\(x=-\\frac32\\) eller \\(x=5\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.520",
@@ -15002,10 +12587,7 @@ window.BANKMA2 = [
     "t": "<p>Lös ekvationen.</p><p>\\[x^2+4x=0.\\]</p>",
     "s": "<p>Faktorisera först:</p><p>\\[x(x+4)=0.\\]</p><p>Nollproduktmetoden ger</p><p><strong>\\(x=0\\) eller \\(x=-4\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.521",
@@ -15022,10 +12604,7 @@ window.BANKMA2 = [
     "s": "<p>Faktorisera genom att bryta ut \\(x\\).</p><p>a) \\(x^2-9x=x(x-9)=0\\Rightarrow x=0\\) eller 9.</p><p>b) \\(x^2+5x=x(x+5)=0\\Rightarrow x=0\\) eller −5.</p><p>c) \\(4x^2-12x=4x(x-3)=0\\Rightarrow x=0\\) eller 3.</p>",
     "familj": "nollproduktmetoden__nollprodukt_faktoriserad_form",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.522",
@@ -15042,10 +12621,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först ekvationen med 2:</p>\n<p>\\(x^2-\\frac72x+\\frac32=0\\).</p>\n<p>Använd <strong>pq-formeln</strong> med \\(p=-\\frac72\\), \\(q=\\frac32\\):</p>\n<p>\\(x=\\frac74\\pm\\sqrt{\\frac{49}{16}-\\frac{24}{16}}\n=\\frac74\\pm\\frac54\\).</p>\n<p><strong>\\(x=3\\) eller \\(x=\\frac12\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.523",
@@ -15062,10 +12638,7 @@ window.BANKMA2 = [
     "s": "<p>Använd gärna faktorisering här, eller <strong>pq-formeln</strong>.</p>\n<p>Med pq-formeln på \\(x^2-7x+10=0\\) är \\(p=-7\\) och \\(q=10\\):</p>\n<p>\\(x=\\frac72\\pm\\sqrt{\\frac{49}{4}-10}\n=\\frac72\\pm\\frac32\\).</p>\n<p><strong>\\(x=2\\) eller \\(x=5\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.524",
@@ -15082,10 +12655,7 @@ window.BANKMA2 = [
     "s": "<p>Dela först ekvationen med 3 så att koefficienten framför \\(x^2\\) blir 1:</p>\n<p>\\(x^2+\\frac23x-\\frac83=0\\).</p>\n<p>Använd sedan <strong>pq-formeln</strong> med \\(p=\\frac23\\) och \\(q=-\\frac83\\):</p>\n<p>\\(x=-\\frac13\\pm\\sqrt{\\frac19+\\frac83}\n=-\\frac13\\pm\\frac53\\).</p>\n<p><strong>\\(x=\\frac43\\) eller \\(x=-2\\).</strong></p>",
     "familj": "losningsformel_andragrad__losa_med_pq_eller_formel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.525",
@@ -15102,10 +12672,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla.</p><p>\\[(3x^2)^3\\]</p>",
     "s": "<p>Potensen ska användas på både 3 och \\(x^2\\):</p><p>\\[(3x^2)^3=3^3x^6.\\]</p><p><strong>\\(27x^6\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.526",
@@ -15122,10 +12689,7 @@ window.BANKMA2 = [
     "s": "<p>\\((3x^2)^2=3^2\\cdot(x^2)^2\\).</p><p>Potens av en potens ger \\(x^{2\\cdot2}=x^4\\).</p><p><strong>\\(9x^4\\).</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.527",
@@ -15142,10 +12706,7 @@ window.BANKMA2 = [
     "s": "<p>\\((2x^2)^3=2^3(x^2)^3=8x^6\\).</p><p><strong>\\(8x^6\\)</strong></p>",
     "familj": "potensregler__forenkla_med_potensregler",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.528",
@@ -15161,11 +12722,7 @@ window.BANKMA2 = [
     "s": "<p>Dividera värdena:</p><p>\\(\\frac{f(5)}{f(2)}=a^3=\\frac{486}{18}=27\\), alltså \\(a=3\\).</p><p>\\(f(2)=C\\cdot3^2=18\\Rightarrow9C=18\\Rightarrow C=2\\).</p><p><strong>\\(f(0)=C=2\\).</strong></p>",
     "familj": "exponentialfunktioner__berakna_och_tolka_exponentialfunktion",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "2.529",
@@ -15181,10 +12738,7 @@ window.BANKMA2 = [
     "t": "<p>Förenkla till en enda logaritm. Anta att \\(x&gt;0\\) och \\(y&gt;0\\).</p><p>\\[\\lg(50x)-\\lg2+2\\lg y\\]</p>",
     "s": "<p>Använd reglerna på formelbladet:</p><p>\\[\\lg(50x)-\\lg2=\\lg(25x)\\]</p><p>och \\(2\\lg y=\\lg(y^2)\\).</p><p>Därför blir uttrycket</p><p><strong>\\(\\lg(25xy^2)\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.01",
@@ -15200,10 +12754,7 @@ window.BANKMA2 = [
     "s": "<p><strong>a)</strong> En diagonal binder samman två icke intilliggande hörn i en polygon.</p><p><strong>b)</strong> En bisektris delar en vinkel i två lika stora delar.</p><p><strong>c)</strong> En höjd går från ett hörn vinkelrätt mot motstående sida eller dess förlängning.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.02",
@@ -15219,10 +12770,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den första motstående vinkeln vara \\(x\\). Då är yttervinkeln \\(3x\\).</p><p>Yttervinkelsatsen ger \\(3x=x+46\\Rightarrow2x=46\\Rightarrow x=23\\).</p><p><strong>Yttervinkeln är 69°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.03",
@@ -15238,10 +12786,7 @@ window.BANKMA2 = [
     "s": "<p>a) Randvinkeln och medelpunktsvinkeln står på samma båge. Enligt randvinkelsatsen är randvinkeln hälften så stor:</p><p>\\(\\angle ACB=116^\\circ/2=58^\\circ\\).</p><p>b) Triangeln MAB är likbent eftersom MA och MB är radier. De två basvinklarna är därför lika stora.</p><p>\\(\\angle MAB=(180^\\circ-116^\\circ)/2=32^\\circ\\).</p><p><strong>a) \\(58^\\circ\\). b) \\(32^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.04",
@@ -15258,10 +12803,7 @@ window.BANKMA2 = [
     "s": "<p>Stegen är hypotenusan:</p><p>\\(L^2=6,4^2+2,7^2=40,96+7,29=48,25\\).</p><p>\\(L=\\sqrt{48,25}\\approx6,95\\).</p><p><strong>Stegen är cirka 7,0 m lång.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.05",
@@ -15278,10 +12820,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten är \\((-1,6)\\).</p><p>\\(AB=\\sqrt{6^2+8^2}=10\\).</p><p><strong>a) \\((-1,6)\\), b) 10.</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunkt_och_avstand",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.06",
@@ -15298,11 +12837,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(P=(p,0)\\). Lika avstånd ger lika kvadrerade avstånd:</p><p>\\((p+2)^2+5^2=(p-6)^2+1^2\\).</p><p>Utveckla: \\(p^2+4p+29=p^2-12p+37\\).</p><p>\\(16p=8\\Rightarrow p=\\frac12\\).</p><p><strong>\\(P=(\\frac12,0)\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__lika_avstand_till_punkter",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.07",
@@ -15318,10 +12853,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(CDE\\) och \\(CAB\\) är likformiga.</p><p>\\(CA=3+5=8\\).</p><p>Längdskalan från lilla till stora triangeln är \\(8/3\\).</p><p>\\(AB=6\\cdot8/3=16\\).</p><p><strong>\\(AB=16\\).</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.08",
@@ -15337,10 +12869,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=4+8=12\\).</p><p>Längdskalan från den lilla till den stora triangeln är \\(12/4=3\\).</p><p>\\(BC=3\\cdot5=15\\).</p><p><strong>\\(BC=15\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.09",
@@ -15356,10 +12885,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(x(x+2)=3\\cdot8=24\\).</p><p>\\(x^2+2x-24=0\\).</p><p>Faktorisera: \\((x-4)(x+6)=0\\), så \\(x=4\\) eller \\(x=-6\\).</p><p>En längd måste vara positiv.</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.10",
@@ -15375,10 +12901,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(AP\\cdot PB=CP\\cdot PD\\).</p><p>\\(5\\cdot6=3\\cdot x\\).</p><p>\\(30=3x\\Rightarrow x=10\\).</p><p><strong>\\(x=10\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.11",
@@ -15394,11 +12917,7 @@ window.BANKMA2 = [
     "s": "<p>Kontrollera riktningen i påståendet: en implikation behöver bara gälla åt ett håll, medan en ekvivalens måste gälla åt båda.</p><p>Nej. En romb behöver inte ha räta vinklar.</p><p><strong>Påståendet är inte en ekvivalens.</strong></p>",
     "familj": "implikation_ekvivalens__omvand_implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.12",
@@ -15415,10 +12934,7 @@ window.BANKMA2 = [
     "s": "<p>Om vinkeln vid P är rät gäller \\(AP^2+BP^2=AB^2\\).</p><p>\\(AP^2=t^2+(t+1)^2\\).</p><p>\\(BP^2=(t-6)^2+(t+1)^2\\).</p><p>\\(AB^2=36\\).</p><p>Det ger \\(4t^2-8t+2=0\\), eller \\(2t^2-4t+1=0\\).</p><p>\\(t=1\\pm\\frac{\\sqrt2}{2}\\).</p><p><strong>\\(t=1-\\frac{\\sqrt2}{2}\\) eller \\(t=1+\\frac{\\sqrt2}{2}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.13",
@@ -15435,10 +12951,7 @@ window.BANKMA2 = [
     "s": "<p>Basen \\(AB\\) är 6 och höjden från C till x-axeln är 4.</p><p>\\(A=\\frac{6\\cdot4}{2}=12\\).</p><p><strong>12 areaenheter.</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.14",
@@ -15454,11 +12967,7 @@ window.BANKMA2 = [
     "s": "<p>De två trianglarna är likformiga. Avståndet från stolpen till skuggans spets är \\(6,0+2,4=8,4\\) m.</p><p>\\(\\frac{H}{8,4}=\\frac{1,80}{2,4}\\).</p><p>\\(H=8,4\\cdot0,75=6,3\\).</p><p><strong>Lyktstolpen är 6,3 m hög.</strong></p>",
     "familj": "likformighet__indirekt_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.15",
@@ -15474,11 +12983,7 @@ window.BANKMA2 = [
     "s": "<p>Placera den räta vinkeln i \\(A=(0,0)\\), och låt \\(B=(2b,0)\\), \\(C=(0,2c)\\).</p><p>Hypotenusans mittpunkt är \\(M=(b,c)\\).</p><p>\\(MA^2=b^2+c^2\\).</p><p>\\(MB^2=(b-2b)^2+c^2=b^2+c^2\\).</p><p>\\(MC^2=b^2+(c-2c)^2=b^2+c^2\\).</p><p>Alla tre avstånd har samma kvadrat och är därför lika.</p><p><strong>Alltså är \\(MA=MB=MC\\).</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.16",
@@ -15494,10 +12999,7 @@ window.BANKMA2 = [
     "s": "<p>En yttervinkel är lika stor som summan av de två motstående inre vinklarna.</p><p>Den sökta vinkeln blir därför \\(137^\\circ-58^\\circ=79^\\circ\\).</p><p><strong>79°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.17",
@@ -15513,10 +13015,7 @@ window.BANKMA2 = [
     "s": "<p>En randvinkel som står på samma båge är hälften av medelpunktsvinkeln.</p><p><strong>\\(x=40^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.18",
@@ -15532,11 +13031,7 @@ window.BANKMA2 = [
     "s": "<p>Areor förändras med kvadraten på längdskalan: \\(3^2=9\\).</p><p>\\(14\\cdot9=126\\).</p><p><strong>126 cm².</strong></p>",
     "familj": "likformighet__area_och_langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.19",
@@ -15553,10 +13048,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunktsformeln ger</p><p>\\((1+x_B)/2=4\\Rightarrow x_B=7\\).</p><p>\\((-2+y_B)/2=3\\Rightarrow y_B=8\\).</p><p><strong>\\(B=(7,8)\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.20",
@@ -15572,10 +13064,7 @@ window.BANKMA2 = [
     "s": "<p>När två kordor skär varandra inne i en cirkel gäller kordasatsen:</p><p>\\(AP\\cdot PB=CP\\cdot PD\\).</p><p>Av figuren är \\(AP=4\\), \\(PB=10\\), \\(CP=x\\) och \\(PD=8\\).</p><p>\\(4\\cdot10=x\\cdot8\\Rightarrow40=8x\\Rightarrow x=5\\).</p><p><strong>\\(x=5\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.21",
@@ -15591,11 +13080,7 @@ window.BANKMA2 = [
     "s": "<p>Kontrollera riktningen i påståendet: en implikation behöver bara gälla åt ett håll, medan en ekvivalens måste gälla åt båda.</p><p><strong>Ja.</strong> Alla kvadrater är rektanglar.</p>",
     "familj": "implikation_ekvivalens__implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.22",
@@ -15611,10 +13096,7 @@ window.BANKMA2 = [
     "t": "<p>I triangeln ABC ligger D på AB och E på AC. Det gäller att DE är parallell med BC. Sätt \\(k=AD/AB\\).</p><p>Visa att arean av fyrhörningen DBCE är \\((1-k^2)\\) gånger arean av triangeln ABC.</p>",
     "s": "<p>Eftersom DE är parallell med BC är trianglarna ADE och ABC likformiga.</p><p>Längdskalan från ABC till ADE är \\(k=AD/AB\\). Areaskalan är därför \\(k^2\\).</p><p>Om arean av ABC betecknas \\(A\\), så är arean av ADE \\(k^2A\\).</p><p>Fyrhörningen DBCE är det som återstår av ABC när ADE tas bort:</p><p>\\[A_{DBCE}=A-k^2A=(1-k^2)A.\\]</p><p><strong>Alltså är \\(A_{DBCE}=(1-k^2)A_{ABC}\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.23",
@@ -15631,10 +13113,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(P=(t,t-1)\\).</p><p>Likheten mellan de kvadrerade avstånden ger</p><p>\\((t-1)^2+(t-6)^2=(t-7)^2+(t-2)^2\\).</p><p>Utveckling ger \\(2t^2-14t+37=2t^2-18t+53\\).</p><p>\\(4t=16\\Rightarrow t=4\\).</p><p>Alltså \\(P=(4,3)\\).</p><p>Avståndet till A är \\(\\sqrt{(4-1)^2+(3-5)^2}=\\sqrt{13}\\).</p><p><strong>\\(P=(4,3)\\), avståndet är \\(\\sqrt{13}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__avstandsproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.24",
@@ -15651,11 +13130,7 @@ window.BANKMA2 = [
     "s": "<p>Medelpunkten är \\((1,1)\\).</p><p>Diametern är \\(\\sqrt{8^2+(-6)^2}=10\\), så radien är 5.</p><p><strong>Medelpunkt \\((1,1)\\), radie 5.</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__cirkel_fran_diameter",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.25",
@@ -15672,10 +13147,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på \\(AB\\) är \\((3,0)\\). Medianens längd blir avståndet från \\((4,3)\\) till \\((3,0)\\): \\(\\sqrt{1^2+3^2}=\\sqrt{10}\\).</p><p><strong>\\(\\sqrt{10}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.26",
@@ -15691,10 +13163,7 @@ window.BANKMA2 = [
     "s": "<p>Vinkeln vid \\(A\\) är gemensam för båda trianglarna.</p><p>Eftersom \\(DE\\parallel BC\\) är motsvarande vinklar vid \\(D\\) och \\(B\\) lika, och motsvarande vinklar vid \\(E\\) och \\(C\\) lika.</p><p>Trianglarna har alltså samma vinklar och är likformiga enligt VV.</p><p><strong>\\(\\triangle ADE\\sim\\triangle ABC\\).</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.27",
@@ -15710,10 +13179,7 @@ window.BANKMA2 = [
     "s": "<p>\\(\\angle ACB=90^\\circ\\).</p><p>\\(\\angle BAC=180-90-28=62^\\circ\\).</p><p>Randvinkeln \\(\\angle BAC\\) står på bågen \\(BC\\), så \\(\\angle BMC=124^\\circ\\).</p><p><strong>62° och 124°.</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.28",
@@ -15729,11 +13195,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på \\(AC\\) är</p><p>\\(\\left(\\frac{a+b}{2},\\frac c2\\right)\\).</p><p>Mittpunkten på \\(BD\\) är</p><p>\\(\\left(\\frac{a+b}{2},\\frac c2\\right)\\).</p><p>Diagonalerna har alltså samma mittpunkt.</p><p><strong>De halverar därför varandra.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.29",
@@ -15749,10 +13211,7 @@ window.BANKMA2 = [
     "s": "<p>För likformiga figurer gäller enligt formelbladet</p><p>\\[\\text{Areaskalan}=(\\text{Längdskalan})^2.\\]</p><p>Areaskalan från den mindre till den större triangeln är</p><p>\\(\\frac{96}{54}=\\frac{16}{9}\\).</p><p>Längdskalan är därför</p><p>\\(\\sqrt{16/9}=4/3\\).</p><p>Den motsvarande sidan blir \\(9\\cdot4/3=12\\).</p><p><strong>Sidan är 12 cm.</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.30",
@@ -15768,11 +13227,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(AP=PB=x\\), eftersom \\(P\\) är mittpunkt på \\(AB\\).</p><p>Kordasatsen ger \\(AP\\cdot PB=CP\\cdot PD\\), alltså \\(x^2=ab\\).</p><p>Eftersom \\(x&gt;0\\) är \\(x=\\sqrt{ab}\\). Hela kordan är därför</p><p>\\(AB=AP+PB=2x=2\\sqrt{ab}\\).</p><p>När \\(a=4,5\\) och \\(b=8,0\\): \\(AB=2\\sqrt{36}=12\\) cm.</p><p><strong>a) \\(AB=2\\sqrt{ab}\\). b) 12 cm.</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.31",
@@ -15788,10 +13243,7 @@ window.BANKMA2 = [
     "s": "<p>En <strong>transversal</strong> är en linje som skär två eller flera andra linjer.</p><p>I geometri används transversaler bland annat tillsammans med parallella linjer för att skapa samband mellan vinklar och längder.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.32",
@@ -15807,10 +13259,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den mindre motstående inre vinkeln vara \\(x\\). Då är den större \\(x+22^\\circ\\).</p><p>Yttervinkelsatsen säger att yttervinkeln är summan av de två motstående inre vinklarna:</p><p>\\(x+(x+22)=128\\).</p><p>\\(2x=106\\Rightarrow x=53\\).</p><p>Den större vinkeln är \\(53+22=75^\\circ\\).</p><p><strong>Vinklarna är 53° och 75°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.33",
@@ -15826,10 +13275,7 @@ window.BANKMA2 = [
     "s": "<p>Vinkeln \\(\\angle ACB\\) är en randvinkel som står på diametern \\(AB\\).</p><p>Enligt Thales sats är en sådan randvinkel alltid rät.</p><p><strong>\\(\\angle ACB=90^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__vinkel_i_halvcirkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.34",
@@ -15846,10 +13292,7 @@ window.BANKMA2 = [
     "s": "<p>Den totala horisontella förflyttningen är \\(6+9=15\\) m.</p><p>Den totala vertikala förflyttningen är \\(4+3=7\\) m.</p><p>Det raka avståndet blir</p><p>\\(AE=\\sqrt{15^2+7^2}=\\sqrt{274}\\approx16,55\\).</p><p><strong>Cirka 16,6 m.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.35",
@@ -15865,10 +13308,7 @@ window.BANKMA2 = [
     "s": "<p>Längdskalan från den mindre till den större figuren är \\(15/6=2,5\\).</p><p>Den motsvarande sidan blir \\(8\\cdot2,5=20\\).</p><p><strong>20 cm.</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.36",
@@ -15884,10 +13324,7 @@ window.BANKMA2 = [
     "s": "<p>Likformiga trianglars areor förhåller sig som kvadraten på längdskalan.</p><p>\\(\\frac{A_{ADE}}{A_{ABC}}=\\frac{27}{75}=\\frac{9}{25}\\).</p><p>Alltså är längdskalan liten/stor \\(\\sqrt{9/25}=3/5\\).</p><p>\\(AD/AB=3/5\\). Med \\(AD=6\\) fås \\(6/AB=3/5\\Rightarrow AB=10\\).</p><p>\\(DB=AB-AD=10-6=4\\).</p><p><strong>\\(DB=4\\) cm.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.37",
@@ -15903,10 +13340,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(x(x+1)=4\\cdot9=36\\).</p><p>\\(x^2+x-36=0\\).</p><p>Med pq-formeln fås \\(x=\\frac{-1\\pm\\sqrt{145}}2\\).</p><p>Den negativa roten kan inte vara en längd.</p><p><strong>\\(x=\\frac{-1+\\sqrt{145}}2\\approx5,52\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.38",
@@ -15923,10 +13357,7 @@ window.BANKMA2 = [
     "s": "<p>Skillnaden i x-led är \\(4-(-2)=6\\) och i y-led \\(-5-3=-8\\).</p><p>Avståndsformeln ger</p><p>\\(AB=\\sqrt{6^2+(-8)^2}=\\sqrt{100}=10\\).</p><p><strong>\\(AB=10\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__avstandsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.39",
@@ -15943,10 +13374,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på \\(AB\\) är \\((3,0)\\). Eftersom \\(AB\\) är horisontell blir mittnormalen \\(x=3\\).</p><p>Mittpunkten på \\(AC\\) är \\((1,2)\\). Riktningskoefficienten för \\(AC\\) är 2, så mittnormalens riktningskoefficient är \\(-\\frac12\\).</p><p>Därför blir ekvationen \\(y-2=-\\frac12(x-1)\\), alltså \\(y=-\\frac12x+\\frac52\\).</p><p>Skärningspunkten med \\(x=3\\) fås till \\(y=1\\). Alltså är centrum \\((3,1)\\).</p><p>Radien blir avståndet till \\(A\\): \\(r=\\sqrt{3^2+1^2}=\\sqrt{10}\\).</p><p><strong>Centrum är \\((3,1)\\) och radien är \\(\\sqrt{10}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.40",
@@ -15962,11 +13390,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(x=4\\), så är alltid \\(x^2=16\\).</p><p>Men \\(x^2=16\\) ger både \\(x=4\\) och \\(x=-4\\), så omvändningen gäller inte.</p><p><strong>Det är en implikation: \\(x=4\\Rightarrow x^2=16\\).</strong></p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.41",
@@ -15982,11 +13406,7 @@ window.BANKMA2 = [
     "s": "<p>Låt de motstående vinklarna vara \\(A\\) och \\(C\\).</p><p>Vinkel A är en randvinkel och är hälften av måttet på den båge som ligger mittemot A.</p><p>Vinkel C är hälften av den återstående bågen.</p><p>De två bågarna tillsammans är ett helt varv, \\(360^\\circ\\).</p><p>Därför \\(A+C=\\frac12\\cdot360^\\circ=180^\\circ\\).</p><p><strong>Alltså är summan av motstående vinklar 180°.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.42",
@@ -16002,10 +13422,7 @@ window.BANKMA2 = [
     "s": "<p>a) Randvinkelsatsen ger \\(\\angle ACB=124^\\circ/2=62^\\circ\\).</p><p>b) MA och MB är radier, så triangeln MAB är likbent. Därför</p><p>\\(\\angle MAB=(180^\\circ-124^\\circ)/2=28^\\circ\\).</p><p><strong>a) \\(62^\\circ\\). b) \\(28^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.43",
@@ -16021,10 +13438,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför motsvarande sidor:</p><p>\\(10/5=14/7=2\\).</p><p>Längdskalan är alltså 2.</p><p>Då blir \\(x=9\\cdot2=18\\).</p><p><strong>a) Längdskalan är 2. b) \\(x=18\\).</strong></p>",
     "familj": "likformighet__langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.44",
@@ -16040,10 +13454,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(4\\cdot9=6x\\).</p><p>\\(36=6x\\Rightarrow x=6\\).</p><p><strong>Den okända korddelen är 6 cm.</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.45",
@@ -16060,10 +13471,7 @@ window.BANKMA2 = [
     "s": "<p>Tyngdpunkten har koordinaterna \\(((−2+4+1)/3, (−1−1+4)/3)=(1,2/3)\\).</p><p><strong>\\((1,2/3)\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.46",
@@ -16079,10 +13487,7 @@ window.BANKMA2 = [
     "s": "<p>Yttervinkeln är summan av de två motstående inre vinklarna:</p><p>\\(36^\\circ+74^\\circ=110^\\circ\\).</p><p><strong>110°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.47",
@@ -16098,10 +13503,7 @@ window.BANKMA2 = [
     "s": "<p>En medelpunktsvinkel som står på samma båge är dubbelt så stor som randvinkeln.</p><p>Därför är \\(x=2\\cdot28^\\circ=56^\\circ\\).</p><p><strong>\\(x=56^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.48",
@@ -16117,10 +13519,7 @@ window.BANKMA2 = [
     "s": "<p>Figurerna är likformiga med längdskalan 2,4.</p><p>Den motsvarande sidan blir \\(3,5\\cdot2,4=8,4\\).</p><p><strong>8,4 cm.</strong></p>",
     "familj": "likformighet__langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.49",
@@ -16136,10 +13535,7 @@ window.BANKMA2 = [
     "s": "<p>När två kordor skär varandra inne i cirkeln använder vi kordasatsen: produkten av segmenten på den ena kordan är lika med produkten av segmenten på den andra.</p><p>Kordasatsen ger \\(AP\\cdot PB=CP\\cdot PD\\).</p><p>\\(3\\cdot12=x(x+5)\\).</p><p>\\(x^2+5x-36=0=(x-4)(x+9)\\).</p><p>Längden måste vara positiv.</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.50",
@@ -16156,10 +13552,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunktsformeln ger</p><p>\\(((-2+x_B)/2,(4+y_B)/2)=(3,-1)\\).</p><p>\\(-2+x_B=6\\Rightarrow x_B=8\\).</p><p>\\(4+y_B=-2\\Rightarrow y_B=-6\\).</p><p><strong>\\(B=(8,-6)\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.51",
@@ -16175,11 +13568,7 @@ window.BANKMA2 = [
     "s": "<p>Ekvationen \\(x^2=a^2\\) har lösningarna \\(x=a\\) och \\(x=-a\\).</p><p>För att detta ska vara exakt samma lösningsmängd som \\(x=a\\) måste de två lösningarna sammanfalla:</p><p>\\(-a=a\\Rightarrow a=0\\).</p><p>För \\(a=0\\) gäller \\(x^2=0\\) exakt när \\(x=0\\).</p><p><strong>\\(a=0\\)</strong></p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.52",
@@ -16195,10 +13584,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför sidkvoterna kring den lika vinkeln:</p><p>\\(9/6=15/10=1,5\\).</p><p>Två par motsvarande sidor har alltså samma längdskala och vinkeln mellan dem är lika stor.</p><p><strong>Trianglarna är därför likformiga enligt sida–vinkel–sida.</strong></p><p>När detta villkor är uppfyllt får även det tredje sidparet samma längdskala.</p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.53",
@@ -16215,10 +13601,7 @@ window.BANKMA2 = [
     "t": "<p>Punkten \\(A=(2,-1)\\) är ena ändpunkten på en sträcka AB som är 10 längdenheter lång. Mittpunkten på AB ligger på linjen \\(y=x\\). Punkten B ligger ovanför A.</p><p>Bestäm koordinaterna för B.</p>",
     "s": "<p>Sätt \\(B=(x,y)\\). Mittpunkten är \\(M=((2+x)/2,(-1+y)/2)\\). Eftersom M ligger på \\(y=x\\) gäller</p><p>\\[\\frac{-1+y}{2}=\\frac{2+x}{2}\\Rightarrow y=x+3.\\]</p><p>Avståndet AB är 10:</p><p>\\[(x-2)^2+(y+1)^2=100.\\]</p><p>Sätt in \\(y=x+3\\):</p><p>\\[(x-2)^2+(x+4)^2=100.\\]</p><p>\\[x^2+2x-40=0.\\]</p><p>Därför \\(x=-1\\pm\\sqrt{41}\\). Eftersom B ska ligga ovanför A väljs \\(x=-1+\\sqrt{41}\\). Då är \\(y=2+\\sqrt{41}\\).</p><p><strong>\\(B=(-1+\\sqrt{41},\\ 2+\\sqrt{41})\\approx(5{,}40,8{,}40)\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.54",
@@ -16235,10 +13618,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten är \\((5,1)\\).</p><p>Avståndet är \\(\\sqrt{6^2+8^2}=10\\).</p><p><strong>a) \\((5,1)\\), b) 10.</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunkt_och_avstand",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.55",
@@ -16254,11 +13634,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på diagonalen mellan \\((0,0)\\) och \\((a+b,c)\\) är \\(((a+b)/2,c/2)\\).</p><p>Mittpunkten på diagonalen mellan \\((a,0)\\) och \\((b,c)\\) är också \\(((a+b)/2,c/2)\\).</p><p>Diagonalerna har alltså samma mittpunkt och halverar därför varandra.</p><p><strong>Satsen är visad.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.56",
@@ -16274,10 +13650,7 @@ window.BANKMA2 = [
     "s": "<p>Randvinkeln \\(\\angle BAC=31^\\circ\\) spänner över bågen \\(BC\\).</p><p>Medelpunktsvinkeln \\(\\angle BMC\\) spänner över samma båge. En medelpunktsvinkel är dubbelt så stor som en randvinkel på samma båge.</p><p>\\(\\angle BMC=2\\cdot31^\\circ=62^\\circ\\).</p><p><strong>\\(\\angle BMC=62^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__vinkel_i_halvcirkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.57",
@@ -16293,11 +13666,7 @@ window.BANKMA2 = [
     "s": "<p>Solstrålarna ger likformiga trianglar.</p><p>\\(h/14=1,8/2,4\\).</p><p>\\(h=14\\cdot0,75=10,5\\).</p><p><strong>Trädet är 10,5 m högt.</strong></p>",
     "familj": "likformighet__indirekt_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.58",
@@ -16314,10 +13683,7 @@ window.BANKMA2 = [
     "s": "<p>Från \\(A=(-3,1)\\) till \\(B=(4,5)\\) är förändringarna 7 och 4.</p><p>\\(AB=\\sqrt{7^2+4^2}=\\sqrt{65}\\).</p><p><strong>\\(AB=\\sqrt{65}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.59",
@@ -16333,11 +13699,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(x(x+3)=4\\cdot10=40\\).</p><p>\\(x^2+3x-40=0\\).</p><p>Faktorisera: \\((x+8)(x-5)=0\\).</p><p>Rötterna är \\(x=-8\\) och \\(x=5\\). Eftersom en sträckas längd måste vara positiv används bara \\(x=5\\).</p><p><strong>\\(x=5\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.60",
@@ -16353,11 +13715,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>D är mittpunkt, så \\(AD/AB=1/2\\).</p><p>Likformigheten ger då \\(AE/AC=1/2\\), alltså \\(AE=EC\\). Därför är E mittpunkt.</p><p>Samma likformighet ger \\(DE/BC=1/2\\).</p><p><strong>Alltså är E mittpunkt och \\(DE=BC/2\\).</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.61",
@@ -16373,10 +13731,7 @@ window.BANKMA2 = [
     "s": "<p><strong>a)</strong> En korda är en sträcka vars båda ändpunkter ligger på cirkelns rand.</p><p><strong>b)</strong> En randvinkel har sin spets på cirkelns rand och vinkelbenen går genom två andra punkter på cirkelns rand.</p><p><strong>c)</strong> En medelpunktsvinkel har sin spets i cirkelns medelpunkt.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.62",
@@ -16393,10 +13748,7 @@ window.BANKMA2 = [
     "s": "<p>Med Pythagoras sats:</p><p>\\(c^2=7^2+24^2=49+576=625\\).</p><p>\\(c=\\sqrt{625}=25\\).</p><p><strong>25 cm.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.63",
@@ -16413,10 +13765,7 @@ window.BANKMA2 = [
     "s": "<p>Likheten av avstånd kan skrivas med kvadrerade avstånd:</p><p>\\((x-1)^2+(2x-5)^2=(x-7)^2+(2x+1)^2\\).</p><p>Utveckling ger \\(5x^2-22x+26=5x^2-10x+50\\).</p><p>\\(-12x=24\\Rightarrow x=-2\\).</p><p>Då \\(y=2(-2)-1=-5\\).</p><p><strong>\\(P=(-2,-5)\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__avstandsproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.64",
@@ -16433,10 +13782,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på \\(BC\\) är \\(M=(6,-1)\\).</p><p>Från \\(A=(-5,7)\\) till \\(M=(6,-1)\\) är förändringarna 11 och −8.</p><p>\\(AM=\\sqrt{11^2+8^2}=\\sqrt{185}\\).</p><p><strong>Medianens längd är \\(\\sqrt{185}\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__avstandsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.65",
@@ -16452,10 +13798,7 @@ window.BANKMA2 = [
     "s": "<p>Längdskalan är kvoten mellan motsvarande sidor:</p><p>\\(k=30/18=5/3\\).</p><p><strong>Längdskalan är \\(5/3\\).</strong></p>",
     "familj": "likformighet__langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.66",
@@ -16472,10 +13815,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten på \\(AB\\) är \\(M=((1+7)/2,(1+1)/2)=(4,1)\\).</p><p>Medianens längd är avståndet från \\(C(3,6)\\) till \\(M(4,1)\\):</p><p>\\(CM=\\sqrt{(4-3)^2+(1-6)^2}=\\sqrt{1+25}=\\sqrt{26}\\).</p><p><strong>\\(\\sqrt{26}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.67",
@@ -16491,10 +13831,7 @@ window.BANKMA2 = [
     "s": "<p>Randvinkeln \\(x\\) står på bågen \\(AB\\), så medelpunktsvinkeln \\(\\angle AMB=2x\\).</p><p>Triangeln \\(AMB\\) är likbent, så \\(\\angle MBA=90^\\circ-x\\).</p><p>Eftersom \\(BD\\) är en förlängning av \\(BA\\) blir \\(\\angle MBD=180^\\circ-(90^\\circ-x)=90^\\circ+x\\).</p><p>I triangeln \\(MBD\\) är \\(MB=BD\\), så basvinklarna vid \\(M\\) och \\(D\\) är lika.</p><p>\\(2y+(90^\\circ+x)=180^\\circ\\).</p><p><strong>\\(y=45^\\circ-\\frac{x}{2}\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__cirkelvinklar",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.68",
@@ -16510,10 +13847,7 @@ window.BANKMA2 = [
     "t": "<p>I en triangel är en yttervinkel tre gånger så stor som den minsta inre vinkeln. Den andra motstående inre vinkeln är \\(24^\\circ\\) större än den minsta.</p><p>Bestäm triangelns vinklar.</p>",
     "s": "<p>Låt den minsta inre vinkeln vara \\(x\\). Då är yttervinkeln \\(3x\\), och den andra motstående inre vinkeln är \\(x+24\\).</p><p>Yttervinkelsatsen ger</p><p>\\[3x=x+(x+24).\\]</p><p>Alltså \\(x=24^\\circ\\). Den andra motstående vinkeln är \\(48^\\circ\\).</p><p>Den tredje inre vinkeln är sidovinkel till yttervinkeln \\(72^\\circ\\), alltså \\(108^\\circ\\).</p><p><strong>Triangelns vinklar är \\(24^\\circ\\), \\(48^\\circ\\) och \\(108^\\circ\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.69",
@@ -16529,10 +13863,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>\\(AB=AD+DB=5+5=10\\).</p><p>Längdskalan från den lilla triangeln till den stora är \\(AB/AD=10/5=2\\).</p><p>Därför \\(BC=2\\cdot DE=2\\cdot8=16\\).</p><p><strong>\\(BC=16\\) cm.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.70",
@@ -16548,10 +13879,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(6(x+1)=4\\cdot9=36\\).</p><p>\\(x+1=6\\Rightarrow x=5\\).</p><p><strong>\\(x=5\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.71",
@@ -16567,11 +13895,7 @@ window.BANKMA2 = [
     "s": "<p>Kontrollera riktningen i påståendet: en implikation behöver bara gälla åt ett håll, medan en ekvivalens måste gälla åt båda.</p><p>Nej. En likbent triangel behöver bara ha två lika långa sidor. Den tredje kan ha en annan längd.</p><p><strong>Implikationen är inte en ekvivalens.</strong></p>",
     "familj": "implikation_ekvivalens__omvand_implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.72",
@@ -16587,11 +13911,7 @@ window.BANKMA2 = [
     "s": "<p>Ett bevis måste bygga på tidigare kända satser eller definitioner och visa varför påståendet gäller i alla relevanta fall.</p><p><strong>Exemplen visar bara några enskilda fall. Ett bevis måste täcka alla heltal som påståendet gäller.</strong></p>",
     "familj": "sats_bevis__tolka_sats_och_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.73",
@@ -16607,10 +13927,7 @@ window.BANKMA2 = [
     "t": "<p>Två likformiga trianglar har areorna 36 cm² och 81 cm². En sida i den mindre triangeln är 8 cm. Bestäm längden på motsvarande sida i den större triangeln.</p>",
     "s": "<p>Areaskalan är \\(81/36=9/4\\). Längdskalan är kvadratroten ur areaskalan: \\(\\sqrt{9/4}=3/2\\).</p><p>Den motsvarande sidan är därför \\(8\\cdot3/2=12\\) cm.</p><p><strong>12 cm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.74",
@@ -16627,10 +13944,7 @@ window.BANKMA2 = [
     "s": "<p>Samma avstånd innebär att de kvadrerade avstånden kan sättas lika; då slipper vi kvadratrötter.</p><p>För \\(P=(x,x+2)\\) blir</p><p>\\(PA^2=x^2+(x+2)^2\\)</p><p>och</p><p>\\(PB^2=(x-8)^2+(x-2)^2\\).</p><p>Sätt lika:</p><p>\\(2x^2+4x+4=2x^2-20x+68\\Rightarrow24x=64\\Rightarrow x=8/3\\).</p><p>Då är \\(y=x+2=14/3\\).</p><p><strong>\\(P=(8/3,14/3)\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__avstandsproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.75",
@@ -16647,10 +13961,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten har koordinaterna</p><p>\\(x_m=\\frac{-6+2}{2}=-2\\), \\(y_m=\\frac{4-8}{2}=-2\\).</p><p><strong>\\((-2,-2)\\)</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.76",
@@ -16667,10 +13978,7 @@ window.BANKMA2 = [
     "s": "<p>Halva diagonalerna är 5 cm och 12 cm.</p><p>En sida i romben blir hypotenusan i en rätvinklig triangel:</p><p>\\(s=\\sqrt{5^2+12^2}=13\\).</p><p>Omkretsen är \\(4\\cdot13=52\\).</p><p><strong>52 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.77",
@@ -16686,10 +13994,7 @@ window.BANKMA2 = [
     "s": "<p>Längdskalan är 1,5. Motsvarande sida multipliceras därför med 1,5:</p><p>\\(7,2\\cdot1,5=10,8\\).</p><p><strong>10,8 cm.</strong></p>",
     "familj": "likformighet__langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.78",
@@ -16705,10 +14010,7 @@ window.BANKMA2 = [
     "s": "<p>Vinkeln \\(\\angle ACB\\) står på diametern \\(AB\\), så enligt Thales sats är den \\(90^\\circ\\).</p><p>Vinkeln \\(\\angle BAC=34^\\circ\\) står på bågen \\(BC\\). Medelpunktsvinkeln på samma båge är dubbelt så stor.</p><p><strong>\\(\\angle ACB=90^\\circ\\) och \\(\\angle BMC=68^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__vinkel_i_halvcirkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.79",
@@ -16724,10 +14026,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(5\\cdot6=3x\\).</p><p>\\(30=3x\\Rightarrow x=10\\).</p><p><strong>Den okända korddelen är 10 cm.</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.80",
@@ -16744,10 +14043,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=6\\).</p><p>\\(AC=\\sqrt{3^2+6^2}=\\sqrt{45}\\) och \\(BC=\\sqrt{(-3)^2+6^2}=\\sqrt{45}\\).</p><p><strong>Ja, triangeln är likbent eftersom \\(AC=BC\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.81",
@@ -16763,10 +14059,7 @@ window.BANKMA2 = [
     "s": "<p>Jämför motsvarande sidor:</p><p>\\(6/4=9/6=12/8=1,5\\).</p><p>Alla tre sidpar har samma längdskala.</p><p><strong>Trianglarna är därför likformiga enligt sida–sida–sida.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.82",
@@ -16783,10 +14076,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna A och B har samma y-koordinat −1, så sträckan är horisontell.</p><p>Längden är skillnaden mellan x-koordinaterna:</p><p>\\(4-(-2)=6\\).</p><p><strong>\\(AB=6\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.83",
@@ -16802,11 +14092,7 @@ window.BANKMA2 = [
     "s": "<p>Varje kvadrat är en rektangel, men varje rektangel är inte en kvadrat.</p><p><strong>Rätt symbol är \\(\\Rightarrow\\).</strong></p>",
     "familj": "implikation_ekvivalens__implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.84",
@@ -16823,10 +14109,7 @@ window.BANKMA2 = [
     "t": "<p>Punkten M=(4,1) är mittpunkt på sträckan AB. Ena ändpunkten är A=(-2,5). Bestäm koordinaterna för B.</p>",
     "s": "<p>Låt \\(B=(x,y)\\). Mittpunktsformeln ger</p><p>\\[\\frac{-2+x}{2}=4\\Rightarrow x=10\\]</p><p>och</p><p>\\[\\frac{5+y}{2}=1\\Rightarrow y=-3.\\]</p><p><strong>\\(B=(10,-3)\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.85",
@@ -16842,11 +14125,7 @@ window.BANKMA2 = [
     "s": "<p>Punkten \\((x,y)\\), origo \\((0,0)\\) och projektionerna på axlarna bildar en rätvinklig triangel med kateter \\(|x|\\) och \\(|y|\\). Med Pythagoras blir avståndet \\(d\\) sådant att \\(d^2=x^2+y^2\\). Eftersom avstånd är positivt fås \\(d=\\sqrt{x^2+y^2}\\).</p><p><strong>Avståndsformeln är visad.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.86",
@@ -16862,11 +14141,7 @@ window.BANKMA2 = [
     "s": "<p>Solens strålar ger likformiga trianglar för personen och flaggstången.</p><p>Skuggornas längder har kvoten \\(7,2/2,4=3\\).</p><p>Höjden måste ha samma längdskala:</p><p>\\(1,8\\cdot3=5,4\\).</p><p><strong>Flaggstången är 5,4 m hög.</strong></p>",
     "familj": "likformighet__indirekt_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.87",
@@ -16882,10 +14157,7 @@ window.BANKMA2 = [
     "s": "<p>Medelpunktsvinkeln och randvinkeln står på samma båge.</p><p>Medelpunktsvinkeln är dubbelt så stor:</p><p>\\(2\\cdot52^\\circ=104^\\circ\\).</p><p><strong>104°.</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.88",
@@ -16902,10 +14174,7 @@ window.BANKMA2 = [
     "t": "<p>Tre hörn i en parallellogram är A=(1,2), B=(7,2) och C=(9,6). Punkterna ligger i ordningen A-B-C-D.</p><p>Bestäm koordinaterna för D.</p>",
     "s": "<p>I en parallellogram har diagonalerna samma mittpunkt.</p><p>Mittpunkten på AC är</p><p>\\[M=\\left(\\frac{1+9}{2},\\frac{2+6}{2}\\right)=(5,4).\\]</p><p>Om \\(D=(x,y)\\) ska mittpunkten på BD också vara (5,4):</p><p>\\[\\frac{7+x}{2}=5\\Rightarrow x=3,\\qquad \\frac{2+y}{2}=4\\Rightarrow y=6.\\]</p><p><strong>\\(D=(3,6)\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.89",
@@ -16921,10 +14190,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen säger att produkterna av kordsegmenten är lika stora:</p><p>\\(AP\\cdot PB=CP\\cdot PD\\).</p><p>Sätt in värdena:</p><p>\\(4\\cdot6=x\\cdot8\\).</p><p>\\(24=8x\\Rightarrow x=3\\).</p><p><strong>\\(x=3\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.90",
@@ -16940,11 +14206,7 @@ window.BANKMA2 = [
     "s": "<p>Placera den rätvinkliga triangeln med hörnen \\(A(0,0)\\), \\(B(2a,0)\\) och \\(C(0,2b)\\).</p><p>Hypotenusan \\(BC\\) har mittpunkt \\(M(a,b)\\).</p><p>\\(MA=\\sqrt{a^2+b^2}\\).</p><p>\\(MB=\\sqrt{(2a-a)^2+(0-b)^2}=\\sqrt{a^2+b^2}\\).</p><p>\\(MC=\\sqrt{(0-a)^2+(2b-b)^2}=\\sqrt{a^2+b^2}\\).</p><p><strong>Alltså är \\(MA=MB=MC\\), vilket visar påståendet.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.091",
@@ -16960,10 +14222,7 @@ window.BANKMA2 = [
     "s": "<p>En <strong>diameter</strong> är en korda som går genom cirkelns medelpunkt.</p><p>Diameterns längd är dubbelt så stor som radien.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.092",
@@ -16979,10 +14238,7 @@ window.BANKMA2 = [
     "s": "<p><strong>a)</strong> En diameter är en korda som går genom cirkelns medelpunkt.</p><p><strong>b)</strong> En korda är en sträcka vars ändpunkter ligger på cirkeln.</p><p><strong>c)</strong> En bisektris delar en vinkel i två lika stora vinklar.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.093",
@@ -16998,10 +14254,7 @@ window.BANKMA2 = [
     "s": "<p>Likbelägna vinklar ligger i motsvarande läge vid de två skärningspunkterna.</p><p>När en linje skär två parallella linjer är de likbelägna vinklarna lika stora.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.094",
@@ -17017,10 +14270,7 @@ window.BANKMA2 = [
     "s": "<p>Alternatvinklar ligger mellan de parallella linjerna och på varsin sida om den skärande linjen.</p><p>När en linje skär två parallella linjer är alternatvinklarna lika stora.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.095",
@@ -17036,10 +14286,7 @@ window.BANKMA2 = [
     "s": "<p>En <strong>korda</strong> är en sträcka vars båda ändpunkter ligger på cirkeln.</p><p>En diameter är ett särskilt fall av en korda som dessutom går genom cirkelns medelpunkt.</p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.096",
@@ -17055,10 +14302,7 @@ window.BANKMA2 = [
     "s": "<p><strong>Figurer med samma form, där motsvarande längder har samma längdskala.</strong></p>",
     "familj": "geometriska_begrepp_definitioner__identifiera_geometriska_begrepp",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.097",
@@ -17074,10 +14318,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(ADE\\) och \\(ABC\\) är likformiga.</p><p>\\(AB=AD+DB=6+9=15\\).</p><p>Längdskalan från den lilla till den stora triangeln är \\(AB/AD=15/6=2,5\\).</p><p>Alltså \\(BC=DE\\cdot2,5=8\\cdot2,5=20\\).</p><p><strong>\\(BC=20\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.098",
@@ -17093,10 +14334,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=4+6=10\\).</p><p>Parallelliteten ger likformighet. Längdskalan från \\(ADE\\) till \\(ABC\\) är \\(10/4=2,5\\).</p><p>\\(BC=2,5\\cdot6=15\\).</p><p><strong>\\(BC=15\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.099",
@@ -17112,10 +14350,7 @@ window.BANKMA2 = [
     "s": "<p>\\(CA=5+10=15\\), så längdskalan från \\(CDE\\) till \\(CAB\\) är \\(15/5=3\\).</p><p>Därför är \\(AB=3\\cdot DE=3\\cdot6=18\\).</p><p>Areor skalar med kvadraten på längdskalan, alltså \\(3^2=9\\).</p><p>Arean av \\(CAB\\) blir \\(18\\cdot9=162\\).</p><p><strong>\\(AB=18\\) och arean är 162.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.100",
@@ -17131,10 +14366,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=10\\) cm. Trianglarna \\(ADE\\) och \\(ABC\\) är likformiga.</p><p>\\(\\frac{DE}{BC}=\\frac{AD}{AB}=\\frac6{10}\\).</p><p>\\(BC=7,2\\cdot\\frac{10}{6}=12\\).</p><p><strong>\\(BC=12\\) cm.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.101",
@@ -17150,10 +14382,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(CDE\\) och \\(CAB\\) är likformiga.</p><p>\\(CA=CD+DA=3+9=12\\).</p><p>Längdskalan från den lilla till den stora triangeln är \\(12/3=4\\).</p><p>Då blir \\(AB=4\\cdot DE=4\\cdot4=16\\).</p><p><strong>\\(AB=16\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.102",
@@ -17169,10 +14398,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=AD+DB=4+6=10\\).</p><p>Eftersom \\(DE\\parallel BC\\) är trianglarna likformiga, och längdskalan från liten till stor är</p><p>\\(AB/AD=10/4=2,5\\).</p><p>\\(BC=2,5\\cdot5=12,5\\).</p><p><strong>\\(BC=12,5\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.103",
@@ -17189,10 +14415,7 @@ window.BANKMA2 = [
     "s": "<p>Låt bredden vara \\(x\\). Med Pythagoras sats:</p><p>\\(x^2+33^2=65^2\\).</p><p>\\(x^2=4225-1089=3136\\), så \\(x=56\\).</p><p><strong>Bredden är 56 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.104",
@@ -17208,11 +14431,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(x&gt;4\\), så är \\(x^2&gt;16\\). Alltså är A \\(\\Rightarrow\\) B sann.</p><p>B betyder däremot att \\(x&gt;4\\) eller \\(x&lt;-4\\). Till exempel uppfyller \\(x=-5\\) B men inte A.</p><p><strong>Endast A \\(\\Rightarrow\\) B är sann.</strong></p>",
     "familj": "implikation_ekvivalens__implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.105",
@@ -17228,11 +14447,7 @@ window.BANKMA2 = [
     "t": "<p>Bestäm alla reella värden på konstanten \\(a\\) för vilka påståendena</p><p>\\[x^2=a\\qquad\\text{och}\\qquad x=\\sqrt a\\]</p><p>är ekvivalenta för reella \\(x\\). Motivera.</p>",
     "s": "<p>För att \\(\\sqrt a\\) ska vara reellt måste \\(a\\ge0\\).</p><p>Om \\(a&gt;0\\) har ekvationen \\(x^2=a\\) två lösningar, \\(x=\\sqrt a\\) och \\(x=-\\sqrt a\\). Påståendet \\(x=\\sqrt a\\) beskriver bara den positiva lösningen. Då är påståendena inte ekvivalenta.</p><p>Om \\(a=0\\) ger båda påståendena exakt \\(x=0\\).</p><p><strong>Endast \\(a=0\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.106",
@@ -17248,11 +14463,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(x=3\\) är \\(x^2=9\\), så A medför B.</p><p>Om \\(x^2=9\\) kan däremot \\(x=3\\) eller \\(x=-3\\). Därför medför inte B att A gäller.</p><p><strong>A \\(\\Rightarrow\\) B, men B \\(\\nRightarrow\\) A.</strong></p>",
     "familj": "implikation_ekvivalens__implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.107",
@@ -17268,11 +14479,7 @@ window.BANKMA2 = [
     "s": "<p>Det första är en implikation: \\(x=4\\Rightarrow x^2=16\\).</p><p>Det omvända gäller inte eftersom \\(x^2=16\\) även har lösningen \\(x=-4\\).</p><p><strong>Implikation, inte ekvivalens.</strong></p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.109",
@@ -17288,10 +14495,7 @@ window.BANKMA2 = [
     "s": "<p>Betrakta trianglarna \\(ABP\\) och \\(CDP\\).</p><p>Vertikalvinklarna vid \\(P\\) är lika. Eftersom \\(AB\\parallel CD\\) är också \\(\\angle BAP=\\angle DCP\\) och \\(\\angle ABP=\\angle CDP\\).</p><p>Trianglarna är därför likformiga.</p><p>Motsvarande sidor är proportionella, vilket ger</p><p><strong>\\(\\frac{AP}{PC}=\\frac{BP}{PD}\\).</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.110",
@@ -17307,10 +14511,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>Den hela vänstra sidan är \\(AB=AD+DB=4+8=12\\).</p><p>Motsvarande sidor ger</p><p>\\(\\frac{DE}{BC}=\\frac{AD}{AB}=\\frac4{12}=\\frac13\\).</p><p>Alltså \\(BC=3\\cdot DE=3\\cdot5=15\\).</p><p><strong>\\(BC=15\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.111",
@@ -17326,11 +14527,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(PA\\cdot PB=PC\\cdot PD\\).</p><p>Eftersom P är mittpunkt på CD, sätt \\(PC=PD=x\\).</p><p>Då \\(ab=x^2\\).</p><p>Längder är positiva, så</p><p><strong>\\(PC=PD=x=\\sqrt{ab}\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.112",
@@ -17347,10 +14544,7 @@ window.BANKMA2 = [
     "s": "<p>Basen \\(AB\\) är horisontell och har längden \\(6-(-2)=8\\).</p><p>Höjden mot basen är det lodräta avståndet från C till linjen \\(y=1\\), alltså \\(|c-1|\\).</p><p>Arean blir \\(\\frac12\\cdot8\\cdot|c-1|=4|c-1|\\).</p><p>Villkoret \\(4|c-1|=16\\) ger \\(|c-1|=4\\).</p><p>Alltså \\(c-1=4\\) eller \\(c-1=-4\\).</p><p><strong>\\(c=5\\) eller \\(c=-3\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.113",
@@ -17366,10 +14560,7 @@ window.BANKMA2 = [
     "s": "<p>En randvinkel som står på en diameter är 90°, så \\(\\angle ACB=90^\\circ\\).</p><p>Vinkeln \\(\\angle BAC=37^\\circ\\) står på bågen \\(BC\\). Medelpunktsvinkeln på samma båge är dubbelt så stor.</p><p><strong>\\(\\angle ACB=90^\\circ\\), medelpunktsvinkeln är 74°.</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.114",
@@ -17385,10 +14576,7 @@ window.BANKMA2 = [
     "s": "<p>Vinkeln \\(\\angle DAB\\) är en randvinkel och är hälften av den båge DB som inte innehåller A.</p><p>Vinkeln \\(\\angle BCD\\) är hälften av den andra bågen DB.</p><p>De två bågarna bildar tillsammans hela cirkeln, alltså \\(360^\\circ\\).</p><p>Därför är</p><p>\\(\\angle DAB+\\angle BCD=\\frac{360^\\circ}{2}=180^\\circ\\).</p><p>Samma resonemang gäller för det andra paret motstående vinklar.</p><p><strong>De motstående vinklarna har alltså summan \\(180^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.115",
@@ -17404,10 +14592,7 @@ window.BANKMA2 = [
     "s": "<p>Längdskalan är samma som för motsvarande längder och omkretsar.</p><p>\\(45/18=2,5\\).</p><p><strong>2,5.</strong></p>",
     "familj": "likformighet__langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.116",
@@ -17424,10 +14609,7 @@ window.BANKMA2 = [
     "s": "<p>a) Det fjärde hörnet är \\((1,5)\\).</p><p>b) Diagonalen har skillnaderna 6 och 4: \\(d=\\sqrt{36+16}=\\sqrt{52}=2\\sqrt{13}\\).</p><p><strong>a) \\((1,5)\\), b) \\(2\\sqrt{13}\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.117",
@@ -17443,11 +14625,7 @@ window.BANKMA2 = [
     "s": "<p>Ett bevis måste bygga på tidigare kända satser eller definitioner och visa varför påståendet gäller i alla relevanta fall.</p><p><strong>B.</strong> Ett bevis måste visa att påståendet gäller generellt inom de givna villkoren.</p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.118",
@@ -17463,11 +14641,7 @@ window.BANKMA2 = [
     "s": "<p>\\(|x|=3\\) betyder \\(x=3\\) eller \\(x=-3\\), vilket ger \\(x^2=9\\).</p><p>Om \\(x^2=9\\) får vi också \\(x=3\\) eller \\(x=-3\\), alltså \\(|x|=3\\).</p><p><strong>Påståendena är ekvivalenta: \\(|x|=3\\Leftrightarrow x^2=9\\).</strong></p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.119",
@@ -17483,10 +14657,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\((x+1)(x+5)=6\\cdot8=48\\).</p><p>\\(x^2+6x-43=0\\).</p><p>\\(x=-3\\pm2\\sqrt{13}\\). Längderna måste vara positiva, så \\(x=-3+2\\sqrt{13}\\approx4,21\\).</p><p>Då är delarna cirka 5,21 cm och 9,21 cm.</p><p><strong>\\(x=-3+2\\sqrt{13}\\), delarna \\(-2+2\\sqrt{13}\\) och \\(2+2\\sqrt{13}\\) cm.</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.120",
@@ -17502,10 +14673,7 @@ window.BANKMA2 = [
     "s": "<p>Yttervinkeln vid det tredje hörnet är summan av de två motstående inre vinklarna.</p><p>\\(48^\\circ+67^\\circ=115^\\circ\\).</p><p><strong>Yttervinkeln är 115°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.121",
@@ -17521,10 +14689,7 @@ window.BANKMA2 = [
     "s": "<p>Likformighet ger att bildhöjd/föremålshöjd = sensoravstånd/föremålsavstånd.</p><p>Först: \\(18/1800=d/3000\\Rightarrow d=30\\) mm.</p><p>Nytt sensoravstånd är \\(1,40\\cdot30=42\\) mm. Nytt föremålsavstånd är 3,6 m = 3600 mm.</p><p>\\(h/1800=42/3600\\Rightarrow h=21\\) mm.</p><p><strong>Den nya bildhöjden är 21 mm.</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.122",
@@ -17540,10 +14705,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(AP\\cdot PB=CP\\cdot PD\\).</p><p>Alltså \\(x(x+2)=4\\cdot6=24\\), så \\(x^2+2x-24=0\\).</p><p>Med pq-formeln fås \\(x=-1\\pm5\\), alltså \\(x=4\\) eller \\(x=-6\\).</p><p>En längd måste vara positiv, därför återstår bara \\(x=4\\).</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.123",
@@ -17560,10 +14722,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den kortare sidan vara \\(x\\). Då måste den längre sidan vara \\(x+6\\), eftersom \\(x+3=(x+6)-3\\).</p><p>Pythagoras ger</p><p>\\(x^2+(x+6)^2=17^2\\).</p><p>\\(2x^2+12x+36=289\\Rightarrow2x^2+12x-253=0\\).</p><p>Pq-formeln efter division med 2 ger \\(x^2+6x-126,5=0\\), alltså</p><p>\\(x=-3+\\sqrt{135,5}\\approx8,64\\) (den negativa lösningen kan inte vara en sidlängd).</p><p>Den längre sidan är \\(x+6\\approx14,64\\).</p><p><strong>Sidorna är ungefär 8,64 cm och 14,64 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.124",
@@ -17579,11 +14738,7 @@ window.BANKMA2 = [
     "s": "<p>För att A och B ska vara ekvivalenta måste andragradsekvationen ha \\(x=3\\) som sin enda lösning.</p><p>Då ska vänsterledet vara \\((x-3)^2=x^2-6x+9\\).</p><p>Jämförelse ger <strong>\\(c=9\\)</strong>.</p><p>Kontroll: \\(x^2-6x+9=(x-3)^2=0\\) gäller exakt när \\(x=3\\).</p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.125",
@@ -17599,11 +14754,7 @@ window.BANKMA2 = [
     "s": "<p>Låt rektangelns sidor vara \\(a\\) och \\(b\\).</p><p>Varje diagonal är hypotenusa i en rätvinklig triangel med kateterna \\(a\\) och \\(b\\).</p><p>Med Pythagoras får båda diagonalerna längden \\(\\sqrt{a^2+b^2}\\).</p><p><strong>Alltså är diagonalerna lika långa.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.126",
@@ -17620,10 +14771,7 @@ window.BANKMA2 = [
     "t": "<p>En punkt P ligger på linjen \\(y=x+1\\). Punkten ska ligga lika långt från A=(1,7) som från B=(7,3). Bestäm koordinaterna för P.</p>",
     "s": "<p>Skriv \\(P=(x,x+1)\\). Villkoret \\(PA=PB\\) ger</p><p>\\[(x-1)^2+(x+1-7)^2=(x-7)^2+(x+1-3)^2.\\]</p><p>Utveckla och förenkla:</p><p>\\[(x-1)^2+(x-6)^2=(x-7)^2+(x-2)^2.\\]</p><p>Det ger \\(-14x+37=-18x+53\\), alltså \\(4x=16\\) och \\(x=4\\).</p><p>Då är \\(y=5\\).</p><p><strong>\\(P=(4,5)\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.127",
@@ -17639,10 +14787,7 @@ window.BANKMA2 = [
     "s": "<p>Yttervinkelsatsen säger att yttervinkeln är summan av de två motstående inre vinklarna.</p><p>Alltså</p><p>\\(128^\\circ=49^\\circ+x\\).</p><p>\\(x=128^\\circ-49^\\circ=79^\\circ\\).</p><p><strong>\\(x=79^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.128",
@@ -17659,10 +14804,7 @@ window.BANKMA2 = [
     "s": "<p>Använd avståndsformeln:</p><p>\\(AB=\\sqrt{(5-(-1))^2+(10-2)^2}\\).</p><p>\\(AB=\\sqrt{6^2+8^2}=\\sqrt{100}\\).</p><p><strong>\\(AB=10\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__avstandsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.129",
@@ -17679,10 +14821,7 @@ window.BANKMA2 = [
     "s": "<p>Hypotenusan är den sida som ligger mittemot den räta vinkeln.</p><p>Med Pythagoras:</p><p>\\(c^2=9^2+12^2=81+144=225\\).</p><p>\\(c=\\sqrt{225}=15\\).</p><p><strong>Hypotenusan är 15 cm.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.130",
@@ -17698,11 +14837,7 @@ window.BANKMA2 = [
     "s": "<p>Längdlängdskalan är \\(30/18=5/3\\).</p><p>Areor skalar med kvadraten på längdlängdskalan:</p><p>\\(216\\cdot(5/3)^2=216\\cdot25/9=600\\).</p><p><strong>600 cm².</strong></p>",
     "familj": "likformighet__area_och_langdskala",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.131",
@@ -17718,10 +14853,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=6+3=9\\).</p><p>Längdskalan från \\(ADE\\) till \\(ABC\\) är \\(9/6=1,5\\).</p><p>\\(BC=1,5\\cdot8=12\\).</p><p><strong>\\(BC=12\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.132",
@@ -17737,10 +14869,7 @@ window.BANKMA2 = [
     "s": "<p>a) Randvinkelsatsen ger \\(\\angle ACB=128^\\circ/2=64^\\circ\\).</p><p>b) Triangeln MAB är likbent eftersom MA och MB är radier. Alltså</p><p>\\(\\angle MAB=(180^\\circ-128^\\circ)/2=26^\\circ\\).</p><p><strong>a) \\(64^\\circ\\). b) \\(26^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.133",
@@ -17756,10 +14885,7 @@ window.BANKMA2 = [
     "s": "<p>När två kordor skär varandra inne i cirkeln använder vi kordasatsen: produkten av segmenten på den ena kordan är lika med produkten av segmenten på den andra.</p><p>Kordasatsen ger \\(3\\cdot12=x(x+5)\\).</p><p>\\(x^2+5x-36=0\\).</p><p>\\((x-4)(x+9)=0\\).</p><p>En längd måste vara positiv.</p><p><strong>\\(x=4\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.134",
@@ -17776,10 +14902,7 @@ window.BANKMA2 = [
     "s": "<p>Om \\(M=(2,1)\\) är mittpunkt gäller</p><p>\\(\\left(\\frac{-3+x_B}{2},\\frac{5+y_B}{2}\\right)=(2,1)\\).</p><p>För x-koordinaten: \\(\\frac{-3+x_B}{2}=2\\Rightarrow -3+x_B=4\\Rightarrow x_B=7\\).</p><p>För y-koordinaten: \\(\\frac{5+y_B}{2}=1\\Rightarrow 5+y_B=2\\Rightarrow y_B=-3\\).</p><p><strong>\\(B=(7,-3)\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.135",
@@ -17796,10 +14919,7 @@ window.BANKMA2 = [
     "s": "<p>Beräkna kvadrerade sidlängder:</p><p>\\(AB^2=6^2+(-4)^2=52\\).</p><p>\\(AC^2=(-4)^2+(-6)^2=52\\).</p><p>\\(BC^2=(-10)^2+(-2)^2=104\\).</p><p>Eftersom \\(52+52=104\\) gäller Pythagoras sats.</p><p><strong>Triangeln är rätvinklig vid \\(A\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.136",
@@ -17815,11 +14935,7 @@ window.BANKMA2 = [
     "s": "<p>Nej. Det första påståendet är sant, men det omvända följer inte automatiskt.</p><p>En likbent trapets kan till exempel ha lika långa diagonaler utan att vara en rektangel.</p><p><strong>Slutsatsen är inte korrekt; implikationen är inte en ekvivalens.</strong></p>",
     "familj": "implikation_ekvivalens__implikation",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.137",
@@ -17835,11 +14951,7 @@ window.BANKMA2 = [
     "s": "<p>Ett bevis måste bygga på tidigare kända satser eller definitioner och visa varför påståendet gäller i alla relevanta fall.</p><p><strong>En figur visar bara ett enskilt fall. Ett bevis måste visa att påståendet gäller i alla fall.</strong></p>",
     "familj": "sats_bevis__genomfora_bevis",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.138",
@@ -17856,10 +14968,7 @@ window.BANKMA2 = [
     "t": "<p>En rektangulär skiva har diagonalen 13 dm och den ena sidan 5 dm. Bestäm den andra sidan.</p>",
     "s": "<p>Låt den okända sidan vara \\(x\\). Pythagoras sats ger</p><p>\\[5^2+x^2=13^2.\\]</p><p>\\[x^2=169-25=144.\\]</p><p><strong>\\(x=12\\) dm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.139",
@@ -17876,10 +14985,7 @@ window.BANKMA2 = [
     "s": "<p>Använd Pythagoras sats:</p><p>\\(c^2=9^2+12^2=225\\).</p><p>\\(c=\\sqrt{225}=15\\).</p><p><strong>Hypotenusan är 15 cm.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.140",
@@ -17896,10 +15002,7 @@ window.BANKMA2 = [
     "s": "<p>Låt sidorna vara \\(a\\) och \\(b\\).</p><p>Arean ger \\(ab=60\\).</p><p>Pythagoras ger \\(a^2+b^2=169\\).</p><p>Eftersom \\((a+b)^2=a^2+b^2+2ab\\) fås \\((a+b)^2=169+120=289\\), alltså \\(a+b=17\\).</p><p>Två positiva tal med summa 17 och produkt 60 är 5 och 12.</p><p><strong>Sidorna är 5 cm och 12 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.141",
@@ -17916,10 +15019,7 @@ window.BANKMA2 = [
     "s": "<p>Låt kateterna vara a och b.</p><p>\\(a+b=17\\) och \\(a^2+b^2=169\\).</p><p>\\((a+b)^2=a^2+b^2+2ab\\) ger \\(289=169+2ab\\), alltså \\(ab=60\\).</p><p>a och b är rötterna till \\(t^2-17t+60=0=(t-5)(t-12)\\).</p><p><strong>Kateterna är 5 cm och 12 cm.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.142",
@@ -17936,10 +15036,7 @@ window.BANKMA2 = [
     "s": "<p>Med Pythagoras:</p><p>\\(c^2=8^2+15^2=64+225=289\\).</p><p>\\(c=17\\).</p><p><strong>Hypotenusan är 17 cm.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.143",
@@ -17956,10 +15053,7 @@ window.BANKMA2 = [
     "t": "<p>En rektangel har omkretsen 34 cm och diagonalen 13 cm. Bestäm rektangelns sidlängder.</p>",
     "s": "<p>Låt sidorna vara \\(x\\) och \\(y\\). Omkretsen ger \\(x+y=17\\), alltså \\(y=17-x\\).</p><p>Pythagoras sats ger</p><p>\\[x^2+y^2=13^2.\\]</p><p>Sätt in \\(y=17-x\\):</p><p>\\[x^2+(17-x)^2=169.\\]</p><p>\\[2x^2-34x+120=0\\Rightarrow x^2-17x+60=0.\\]</p><p>\\[(x-5)(x-12)=0.\\]</p><p><strong>Sidorna är 5 cm och 12 cm.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.144",
@@ -17976,10 +15070,7 @@ window.BANKMA2 = [
     "s": "<p>Identifiera hypotenusan och använd \\(a^2+b^2=c^2\\).</p><p>\\(x=\\sqrt{17^2-8^2}=\\sqrt{225}=15\\).</p><p>Area \\(=8\\cdot15=120\\).</p><p><strong>Sidan är 15 cm och arean 120 cm².</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.145",
@@ -17996,10 +15087,7 @@ window.BANKMA2 = [
     "s": "<p>Höjden delar basen i två delar på 8 cm.</p><p>Med Pythagoras:</p><p>\\(h^2+8^2=10^2\\Rightarrow h^2=36\\Rightarrow h=6\\).</p><p>Arean är \\(16\\cdot6/2=48\\).</p><p><strong>Höjd 6 cm, area 48 cm².</strong></p>",
     "familj": "pythagoras__berakna_hojd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.146",
@@ -18015,10 +15103,7 @@ window.BANKMA2 = [
     "s": "<p>Två proportionella sidpar räcker inte utan ett relevant vinkelvillkor.</p><p>Dessutom är den tredje kvoten \\(16/10=1,6\\), inte 1,5.</p><p><strong>Trianglarna är inte likformiga, och elevens bevis är otillräckligt.</strong></p>",
     "familj": "bevis_likformighet__anvanda_likformighetskriterier",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.147",
@@ -18034,10 +15119,7 @@ window.BANKMA2 = [
     "s": "<p>Triangeln \\(ABC\\) är rätvinklig vid C. De mindre trianglarna \\(ACH\\) och \\(BCH\\) är rätvinkliga vid H.</p><p>Triangeln \\(ACH\\) delar dessutom vinkeln A med den stora triangeln, och triangeln \\(BCH\\) delar vinkeln B med den stora.</p><p>Varje liten triangel har alltså två vinklar lika med två vinklar i \\(ABC\\).</p><p><strong>Båda är därför likformiga med \\(ABC\\) enligt vinkel–vinkel, och därmed även likformiga med varandra.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.148",
@@ -18053,10 +15135,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(ADE\\) och \\(ABC\\) har den gemensamma vinkeln A.</p><p>Dessutom är de båda sidorna kring vinkeln proportionella:</p><p>\\(AD/AB=AE/AC=0,6\\).</p><p>Trianglarna är därför likformiga enligt sida–vinkel–sida.</p><p>Då är motsvarande vinklar vid D/B lika. Därför måste</p><p><strong>\\(DE\\parallel BC\\).</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.149",
@@ -18072,10 +15151,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(\\triangle ACD\\) och \\(\\triangle CDB\\) är båda rätvinkliga och dessutom likformiga.</p><p>Av likformigheten följer proportionen \\(\\frac{h}{p}=\\frac{q}{h}\\).</p><p>Multiplicera korsvis: \\(h^2=pq\\).</p><p><strong>Alltså gäller \\(h^2=pq\\).</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.150",
@@ -18091,10 +15167,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglars vinkelsumma är 180°. Om två vinkelpar är lika måste även det tredje vara lika. Då har trianglarna samma form, alltså är de likformiga enligt VV.</p><p><strong>Trianglarna är likformiga.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.151",
@@ -18110,10 +15183,7 @@ window.BANKMA2 = [
     "s": "<p>Sidkvoterna är \\(9/6=12/8=15/10=1,5\\).</p><p>Eftersom alla motsvarande sidor är proportionella är trianglarna likformiga.</p><p><strong>Längdskalan är 1,5.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.152",
@@ -18129,10 +15199,7 @@ window.BANKMA2 = [
     "s": "<p>Av \\(DE\\parallel BC\\) följer att trianglarna \\(ADE\\) och \\(ABC\\) är likformiga.</p><p>Därför \\(AD/AB=AE/AC\\).</p><p>Skriv \\(AB=AD+DB\\) och \\(AC=AE+EC\\):</p><p>\\(\\frac{AD}{AD+DB}=\\frac{AE}{AE+EC}\\).</p><p>Korsmultiplikation ger \\(AD\\cdot EC=AE\\cdot DB\\).</p><p><strong>Alltså \\(\\frac{AD}{DB}=\\frac{AE}{EC}\\).</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.153",
@@ -18148,10 +15215,7 @@ window.BANKMA2 = [
     "s": "<p>Två lika vinkelpar räcker för likformighet enligt VV.</p><p>Vinkelsumman i varje triangel är 180°, så om två vinklar är lika måste även de tredje vara lika.</p><p><strong>Trianglarna är likformiga.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.154",
@@ -18167,10 +15231,7 @@ window.BANKMA2 = [
     "s": "<p>En yttervinkel i en triangel är lika stor som summan av de två motstående inre vinklarna.</p><p>Alltså är \\(x=52^\\circ+43^\\circ=95^\\circ\\).</p><p><strong>\\(x=95^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.155",
@@ -18186,10 +15247,7 @@ window.BANKMA2 = [
     "t": "<p>I en triangel är en yttervinkel \\(128^\\circ\\). En av de två motstående inre vinklarna är \\(17^\\circ\\) större än den andra.</p><p>Bestäm triangelns tre inre vinklar.</p>",
     "s": "<p>Låt den mindre motstående vinkeln vara \\(x\\). Den andra är då \\(x+17\\).</p><p>Yttervinkelsatsen ger \\(x+(x+17)=128\\).</p><p>\\[2x=111\\Rightarrow x=55{,}5.\\]</p><p>Den andra motstående vinkeln är \\(72{,}5^\\circ\\). Den tredje inre vinkeln är sidovinkel till 128°, alltså \\(52^\\circ\\).</p><p><strong>Vinklarna är \\(52^\\circ\\), \\(55{,}5^\\circ\\) och \\(72{,}5^\\circ\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.156",
@@ -18205,10 +15263,7 @@ window.BANKMA2 = [
     "s": "<p>En yttervinkel i en triangel är lika stor som summan av de två motstående inre vinklarna.</p><p>\\(35^\\circ+48^\\circ=83^\\circ\\).</p><p><strong>Yttervinkeln är \\(83^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.157",
@@ -18224,10 +15279,7 @@ window.BANKMA2 = [
     "s": "<p>En randvinkel som står på samma båge är hälften så stor som medelpunktsvinkeln.</p><p>\\(124^\\circ/2=62^\\circ\\).</p><p><strong>\\(62^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.158",
@@ -18243,10 +15295,7 @@ window.BANKMA2 = [
     "t": "<p>AB är en diameter i en cirkel och C är en annan punkt på cirkeln. Vinkeln \\(\\angle BAC=34^\\circ\\). Bestäm vinklarna \\(\\angle ACB\\) och \\(\\angle ABC\\).</p>",
     "s": "<p>Vinkeln ACB är en randvinkel som står på diametern AB. Den är därför \\(90^\\circ\\).</p><p>Triangelns vinkelsumma ger \\(34^\\circ+90^\\circ+\\angle ABC=180^\\circ\\).</p><p><strong>\\(\\angle ACB=90^\\circ\\) och \\(\\angle ABC=56^\\circ\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.159",
@@ -18262,10 +15311,7 @@ window.BANKMA2 = [
     "s": "<p>Medelpunktsvinkeln på samma båge är dubbelt så stor som randvinkeln.</p><p>\\(2\\cdot37^\\circ=74^\\circ\\).</p><p><strong>74°.</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.160",
@@ -18281,11 +15327,7 @@ window.BANKMA2 = [
     "s": "<p>Personen och trädet bildar likformiga trianglar med sina skuggor.</p><p>Längdskalan från person till träd är \\(8,8/2,2=4\\).</p><p>Trädets höjd blir \\(1,65\\cdot4=6,6\\).</p><p><strong>Trädet är 6,6 m högt.</strong></p>",
     "familj": "likformighet__indirekt_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.161",
@@ -18301,11 +15343,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(ACD\\) och \\(CBD\\) är likformiga: båda är rätvinkliga och deras övriga vinklar motsvarar varandra.</p><p>Ur likformigheten fås</p><p>\\(\\frac{AD}{CD}=\\frac{CD}{DB}\\).</p><p>Alltså \\(\\frac{p}{h}=\\frac{h}{q}\\), vilket ger</p><p><strong>\\(h^2=pq\\).</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.162",
@@ -18321,10 +15359,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=4+6=10\\).</p><p>Eftersom \\(DE\\parallel BC\\) är \\(\\triangle ADE\\) och \\(\\triangle ABC\\) likformiga.</p><p>Längdskalan är \\(\\frac{AB}{AD}=\\frac{10}{4}=\\frac52\\).</p><p>Därför gäller \\(\\frac{AC}{AE}=\\frac52\\). Med \\(AC=x+9\\) fås \\(\\frac{x+9}{x}=\\frac52\\).</p><p>Det ger \\(2x+18=5x\\Rightarrow x=6\\).</p><p>Areor skalar med kvadraten på längdskalan: \\(\\text{area}(ABC)=24\\cdot\\left(\\frac52\\right)^2=150\\).</p><p><strong>\\(x=6\\) och arean av \\(ABC\\) är 150.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.163",
@@ -18340,10 +15375,7 @@ window.BANKMA2 = [
     "s": "<p>Trianglarna \\(ADE\\) och \\(ABC\\) är likformiga.</p><p>\\(AB=5+3=8\\).</p><p>\\(\\frac{DE}{BC}=\\frac{AD}{AB}=\\frac{5}{8}\\).</p><p>\\(\\frac{6}{BC}=\\frac{5}{8}\\Rightarrow BC=\\frac{48}{5}=9,6\\).</p><p><strong>\\(BC=9,6\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.164",
@@ -18359,10 +15391,7 @@ window.BANKMA2 = [
     "s": "<p>\\(CA=4+6=10\\). Längdskalan från den lilla till den stora triangeln är \\(10/4=2,5\\).</p><p>Därför \\(AB=5\\cdot2,5=12,5\\).</p><p>Areor skalar med kvadraten på längdlängdskalan:</p><p>\\(20\\cdot2,5^2=20\\cdot6,25=125\\).</p><p><strong>\\(AB=12,5\\) och arean är 125.</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.165",
@@ -18378,10 +15407,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=2+6=8\\).</p><p>Eftersom \\(DE\\parallel BC\\) är längdskalan från liten till stor \\(8/2=4\\).</p><p>\\(BC=4\\cdot3=12\\).</p><p><strong>\\(BC=12\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.166",
@@ -18397,10 +15423,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(2x=3\\cdot6=18\\).</p><p>\\(x=9\\).</p><p><strong>\\(x=9\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.167",
@@ -18416,10 +15439,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(9x=6\\cdot12=72\\).</p><p>\\(x=8\\).</p><p><strong>\\(x=8\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.168",
@@ -18435,10 +15455,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\((x-1)(x+2)=4\\cdot9=36\\).</p><p>Utveckla vänsterledet:</p><p>\\(x^2+x-2=36\\).</p><p>Det ger andragradsekvationen \\(x^2+x-38=0\\).</p><p>Med pq-formeln på formen \\(x^2+px+q=0\\) får vi \\(p=1\\) och \\(q=-38\\).</p><p>\\(x=-\\frac12\\pm\\sqrt{\\left(\\frac12\\right)^2+38}= -\\frac12\\pm\\sqrt{38,25}\\).</p><p>Det ger \\(x\\approx5,68\\) eller \\(x\\approx-6,68\\).</p><p>Eftersom längden \\(x-1\\) måste vara positiv kan den negativa lösningen inte användas.</p><p><strong>\\(x\\approx5,68\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.169",
@@ -18454,10 +15471,7 @@ window.BANKMA2 = [
     "s": "<p>När två kordor skär varandra inne i cirkeln använder vi kordasatsen: produkten av segmenten på den ena kordan är lika med produkten av segmenten på den andra.</p><p>Kordasatsen ger produktsambandet</p><p>\\(AP\\cdot PB=CP\\cdot PD\\).</p><p>Sätt in längderna: \\(4\\cdot9=6x\\).</p><p>\\(36=6x\\Rightarrow x=6\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.170",
@@ -18473,10 +15487,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen säger att produkterna av kordsegmenten är lika:</p><p>\\(AP\\cdot PB=CP\\cdot PD\\).</p><p>Sätt in längderna: \\(3\\cdot8=4x\\).</p><p>\\(24=4x\\Rightarrow x=6\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.171",
@@ -18492,10 +15503,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(4\\cdot x=6\\cdot8\\).</p><p>\\(4x=48\\Rightarrow x=12\\).</p><p><strong>\\(x=12\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.172",
@@ -18511,10 +15519,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den mindre vinkeln vara \\(x\\). Då är den andra \\(x+28\\).</p><p>Yttervinkeln är summan av de två motstående inre vinklarna, alltså \\(2x+28\\).</p><p>Samtidigt är yttervinkeln \\(3x\\).</p><p>\\(3x=2x+28\\Rightarrow x=28\\).</p><p><strong>Vinklarna är 28° och 56°.</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.173",
@@ -18530,11 +15535,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den mindre motstående vinkeln vara \\(x\\). Den andra är \\(x+24\\) och yttervinkeln är \\(3x\\).</p><p>Yttervinkelsatsen ger \\(3x=x+(x+24)\\).</p><p>\\(3x=2x+24\\Rightarrow x=24^\\circ\\).</p><p>Den andra motstående vinkeln är \\(48^\\circ\\). Yttervinkeln är \\(72^\\circ\\), så den intilliggande inre vinkeln är \\(180^\\circ-72^\\circ=108^\\circ\\).</p><p><strong>Triangelns vinklar är \\(24^\\circ,48^\\circ,108^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.174",
@@ -18551,10 +15552,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten är</p><p>\\(M=\\left(\\frac{-4+6}{2},\\frac{2+8}{2}\\right)=(1,5)\\).</p><p>Avståndet \\(AM\\) är</p><p>\\(AM=\\sqrt{(1+4)^2+(5-2)^2}=\\sqrt{25+9}=\\sqrt{34}\\).</p><p>Eftersom \\(P\\) ligger på \\(y\\)-axeln kan den skrivas \\(P=(0,y)\\). Villkoret \\(PM=\\sqrt{34}\\) ger</p><p>\\(\\sqrt{(0-1)^2+(y-5)^2}=\\sqrt{34}\\).</p><p>\\(1+(y-5)^2=34\\Rightarrow(y-5)^2=33\\).</p><p><strong>\\(P=(0,5+\\sqrt{33})\\) eller \\(P=(0,5-\\sqrt{33})\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunkt_och_avstand",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.175",
@@ -18571,10 +15569,7 @@ window.BANKMA2 = [
     "s": "<p>a) Mittpunkten fås genom att ta medelvärdet av koordinaterna:</p><p>\\(M=\\left(\\frac{-2+4}{2},\\frac{-1+7}{2}\\right)=(1,3)\\).</p><p>b) Skillnaden i x-led är 6 och i y-led 8.</p><p>\\(AB=\\sqrt{6^2+8^2}=\\sqrt{36+64}=\\sqrt{100}=10\\).</p><p><strong>a) \\(M=(1,3)\\). b) \\(AB=10\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunkt_och_avstand",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.176",
@@ -18590,10 +15585,7 @@ window.BANKMA2 = [
     "s": "<p>Först är \\(AB=AD+DB=4+6=10\\).</p><p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>Längdskalan från den lilla triangeln till den stora är</p><p>\\(\\frac{AD}{AB}=\\frac{4}{10}=\\frac{2}{5}\\).</p><p>a) Då gäller \\(\\frac{AE}{AC}=\\frac{2}{5}\\), alltså</p><p>\\(AE=\\frac{2}{5}\\cdot15=6\\).</p><p>b) \\(\\frac{DE}{BC}=\\frac{2}{5}\\), så</p><p>\\(\\frac{8}{BC}=\\frac{2}{5}\\Rightarrow BC=20\\).</p><p><strong>a) \\(AE=6\\). b) \\(BC=20\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.177",
@@ -18609,10 +15601,7 @@ window.BANKMA2 = [
     "s": "<p>Hela triangeln \\(ABC\\) har arean \\(16+84=100\\) cm².</p><p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>För likformiga trianglar är areakvoten kvadraten på längdskalan:</p><p>\\(\\frac{A_{ADE}}{A_{ABC}}=\\left(\\frac{AD}{AB}\\right)^2\\).</p><p>Alltså</p><p>\\(\\frac{16}{100}=\\left(\\frac{AD}{AB}\\right)^2\\).</p><p>\\(\\frac{AD}{AB}=\\sqrt{\\frac{16}{100}}=\\frac{4}{10}=\\frac{2}{5}\\).</p><p>a) <strong>\\(AD:AB=2:5\\).</strong></p><p>b) Om \\(AB=15\\) fås \\(AD=\\frac{2}{5}\\cdot15=6\\).</p><p><strong>\\(AD=6\\) cm.</strong></p>",
     "familj": "bevis_likformighet__anvanda_likformighetskriterier",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.178",
@@ -18628,10 +15617,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(3\\cdot8=4\\cdot x\\).</p><p>\\(24=4x\\Rightarrow x=6\\).</p><p><strong>\\(x=6\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.179",
@@ -18647,10 +15633,7 @@ window.BANKMA2 = [
     "t": "<p>Två kordor skär varandra i en punkt P inne i en cirkel. På den ena kordan är de två delarna \\(x\\) och \\(x+5\\). På den andra kordan är delarna 6 och 14.</p><p>Bestäm \\(x\\).</p>",
     "s": "<p>Kordasatsen ger</p><p>\\[x(x+5)=6\\cdot14=84.\\]</p><p>\\[x^2+5x-84=0.\\]</p><p>Faktorisera: \\((x+12)(x-7)=0\\). En längd måste vara positiv.</p><p><strong>\\(x=7\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.180",
@@ -18666,11 +15649,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(AB\\) är en diameter är \\(\\angle ACB=90^\\circ\\) enligt Thales sats.</p><p>Randvinkeln \\(\\angle BAC=34^\\circ\\) står på bågen \\(BC\\). Medelpunktsvinkeln på samma båge är dubbelt så stor.</p><p><strong>\\(\\angle ACB=90^\\circ\\) och \\(\\angle BMC=68^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__vinkel_i_halvcirkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.181",
@@ -18686,10 +15665,7 @@ window.BANKMA2 = [
     "s": "<p>Yttervinkeln är summan av de två motstående inre vinklarna.</p><p>\\(4x+10=(2x+15)+(x+25)\\).</p><p>\\(4x+10=3x+40\\Rightarrow x=30\\).</p><p>Yttervinkeln blir då</p><p>\\(4\\cdot30+10=130^\\circ\\).</p><p><strong>\\(x=30\\) och yttervinkeln är \\(130^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.182",
@@ -18705,10 +15681,7 @@ window.BANKMA2 = [
     "s": "<p>En yttervinkel är lika stor som summan av de två motstående inre vinklarna.</p><p>\\[x^2-10=(x+20)+(2x+10)\\]</p><p>\\[x^2-3x-40=0\\]</p><p>Faktorisera: \\( (x-8)(x+5)=0 \\). Alltså får vi de möjliga värdena \\(x=8\\) och \\(x=-5\\).</p><p>Om \\(x=-5\\) blir vinkeln \\(2x+10=0^\\circ\\), vilket inte kan vara en vinkel i en triangel. Därför används \\(x=8\\).</p><p>De två motstående inre vinklarna är då \\(28^\\circ\\) och \\(26^\\circ\\). Yttervinkeln är \\(54^\\circ\\), så den tredje inre vinkeln är \\(180^\\circ-54^\\circ=126^\\circ\\).</p><p><strong>Triangelns vinklar är \\(28^\\circ\\), \\(26^\\circ\\) och \\(126^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__tillampa_yttervinkelsatsen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.183",
@@ -18725,10 +15698,7 @@ window.BANKMA2 = [
     "s": "<p>Avståndens kvadrater är</p><p>\\(PA^2=(p+3)^2+(4-1)^2=(p+3)^2+9\\)</p><p>och \\(PB^2=(p-5)^2+(4-7)^2=(p-5)^2+9\\).</p><p>Villkoret ger</p><p>\\((p+3)^2+(p-5)^2+18=50\\).</p><p>\\(2p^2-4p+34+18=50\\Rightarrow2p^2-4p+2=0\\).</p><p>Dela med 2: \\(p^2-2p+1=0=(p-1)^2\\).</p><p><strong>Det enda möjliga värdet är \\(p=1\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__avstandsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.184",
@@ -18745,10 +15715,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten är \\(\\left(\\frac{-7+5}{2},\\frac{9-3}{2}\\right)=(-1,3)\\).</p><p><strong>\\((-1,3)\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.185",
@@ -18764,10 +15731,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB=5+5=10\\).</p><p>Längdskalan från den lilla till den stora triangeln är \\(10/5=2\\).</p><p>\\(BC=2\\cdot7=14\\).</p><p><strong>\\(BC=14\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.186",
@@ -18783,10 +15747,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(DE\\parallel BC\\) är trianglarna \\(ADE\\) och \\(ABC\\) likformiga.</p><p>\\(AB=AD+DB=3+5=8\\).</p><p>Därför gäller \\(\\frac{DE}{BC}=\\frac{AD}{AB}=\\frac{3}{8}\\).</p><p>Alltså \\(\\frac{4}{BC}=\\frac{3}{8}\\Rightarrow BC=\\frac{32}{3}\\).</p><p><strong>\\(BC=\\frac{32}{3}\\approx10,67\\).</strong></p>",
     "familj": "topptriangel_transversal__topptriangelsatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.187",
@@ -18803,10 +15764,7 @@ window.BANKMA2 = [
     "s": "<p>Låt sidorna vara x och y. Då gäller \\(xy=60\\) och \\(x^2+y^2=169\\).</p><p>\\((x+y)^2=x^2+y^2+2xy=169+120=289\\), alltså \\(x+y=17\\).</p><p>Sidorna är därför rötterna till \\(t^2-17t+60=0\\), som faktoriseras till \\((t-5)(t-12)=0\\).</p><p><strong>Sidorna är 5 cm och 12 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.188",
@@ -18823,10 +15781,7 @@ window.BANKMA2 = [
     "s": "<p>\\(({-1+x})/2=3\\Rightarrow x=7\\).</p><p>\\((5+y)/2=-2\\Rightarrow y=-9\\).</p><p><strong>\\(B=(7,-9)\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__sammansatt_koordinatgeometri",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.189",
@@ -18842,10 +15797,7 @@ window.BANKMA2 = [
     "t": "<p>Förklara kort vad som menas med</p><p>a) korda,<br>b) bisektris,<br>c) transversal.</p>",
     "s": "<p><strong>a)</strong> En korda är en sträcka vars båda ändpunkter ligger på en cirkel.</p><p><strong>b)</strong> En bisektris delar en vinkel i två lika stora vinklar.</p><p><strong>c)</strong> En transversal är en linje som skär två andra linjer.</p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.190",
@@ -18861,10 +15813,7 @@ window.BANKMA2 = [
     "t": "<p>Förklara kort vad som menas med</p><p>a) randvinkel,<br>b) medelpunktsvinkel.</p>",
     "s": "<p><strong>a)</strong> En randvinkel har sin spets på cirkelns rand och dess ben går genom två punkter på cirkeln.</p><p><strong>b)</strong> En medelpunktsvinkel har sin spets i cirkelns medelpunkt och dess ben går genom två punkter på cirkeln.</p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.191",
@@ -18880,11 +15829,7 @@ window.BANKMA2 = [
     "t": "<p>En elev säger: ”En diameter är samma sak som en radie.” Förklara varför det inte stämmer.</p>",
     "s": "<p>En radie är en sträcka från cirkelns medelpunkt till en punkt på cirkeln.</p><p>En diameter är en sträcka som går mellan två punkter på cirkeln och passerar medelpunkten.</p><p>Diametern är dubbelt så lång som radien.</p><p><strong>Alltså är en diameter och en radie inte samma sak.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.192",
@@ -18900,10 +15845,7 @@ window.BANKMA2 = [
     "t": "<p>Ge ett exempel på när en sträcka i en cirkel är både en korda och en diameter.</p>",
     "s": "<p>Varje diameter är också en korda, eftersom ändpunkterna ligger på cirkeln.</p><p>Ett exempel är en sträcka som går genom medelpunkten och har båda ändpunkterna på cirkeln.</p><p><strong>En diameter är alltid också en korda.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.193",
@@ -18919,11 +15861,7 @@ window.BANKMA2 = [
     "t": "<p>Visa med hjälp av Pythagoras sats att diagonalen \\(d\\) i en kvadrat med sidan \\(a\\) är \\(a\\sqrt2\\).</p>",
     "s": "<p>Kvadratens diagonal delar kvadraten i två rätvinkliga trianglar med kateterna \\(a\\) och \\(a\\).</p><p>Pythagoras sats ger</p><p>\\[d^2=a^2+a^2=2a^2.\\]</p><p>Ta kvadratroten i båda leden:</p><p><strong>\\(d=a\\sqrt2\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.194",
@@ -18939,11 +15877,7 @@ window.BANKMA2 = [
     "t": "<p>Förklara varför ett enda motexempel räcker för att motbevisa ett påstående av typen ”Alla objekt med egenskap A har också egenskap B”.</p>",
     "s": "<p>Påståendet säger att det ska gälla för alla sådana objekt.</p><p>Om man hittar ett enda objekt som har egenskap A men inte egenskap B, så är påståendet inte sant i alla fall.</p><p><strong>Därför räcker ett motexempel för att motbevisa ett allmänt påstående.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.195",
@@ -18959,11 +15893,7 @@ window.BANKMA2 = [
     "t": "<p>Visa med koordinater att triangeln med hörnen \\(A=(0,0)\\), \\(B=(6,0)\\) och \\(C=(3,4)\\) är likbent.</p>",
     "s": "<p>Beräkna först sidorna \\(AC\\) och \\(BC\\).</p><p>\\[AC=\\sqrt{(3-0)^2+(4-0)^2}=\\sqrt{9+16}=5.\\]</p><p>\\[BC=\\sqrt{(3-6)^2+(4-0)^2}=\\sqrt{9+16}=5.\\]</p><p>Eftersom \\(AC=BC\\) har triangeln två lika långa sidor.</p><p><strong>Triangeln är därför likbent.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.196",
@@ -18979,11 +15909,7 @@ window.BANKMA2 = [
     "t": "<p>En sats lyder: ”Om en fyrhörning är en rektangel, så är diagonalerna lika långa.”</p><p>Vad är antagande och vad är slutsats?</p>",
     "s": "<p>Antagandet är den del som står efter ”om”.</p><p>Slutsatsen är den del som står efter ”så”.</p><p><strong>Antagande:</strong> fyrhörningen är en rektangel.<br><strong>Slutsats:</strong> diagonalerna är lika långa.</p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.197",
@@ -18999,10 +15925,7 @@ window.BANKMA2 = [
     "s": "<p>Yttervinkelsatsen ger</p><p>\\(5x+20=(2x+15)+(x+35)\\).</p><p>\\(5x+20=3x+50\\Rightarrow2x=30\\Rightarrow x=15\\).</p><p>Vinklarna vid A och B blir \\(45^\\circ\\) respektive \\(50^\\circ\\). Yttervinkeln är \\(95^\\circ\\), så den inre vinkeln vid C är</p><p>\\(180^\\circ-95^\\circ=85^\\circ\\).</p><p><strong>Triangelns vinklar är \\(45^\\circ,50^\\circ,85^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__tillampa_yttervinkelsatsen",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.198",
@@ -19018,10 +15941,7 @@ window.BANKMA2 = [
     "s": "<p>Triangelns två motstående inre vinklar är 40° och 70°. Enligt yttervinkelsatsen är yttervinkeln deras summa.</p><p><strong>\\(x=110^\\circ\\).</strong></p>",
     "familj": "yttervinkelsatsen__berakna_vinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.199",
@@ -19038,10 +15958,7 @@ window.BANKMA2 = [
     "s": "<p>Stegen är hypotenusan i en rätvinklig triangel.</p><p>\\(L^2=2,5^2+6,0^2=6,25+36=42,25\\).</p><p>\\(L=\\sqrt{42,25}=6,5\\).</p><p><strong>Stegen är 6,5 m lång.</strong></p>",
     "familj": "pythagoras__berakna_sida_i_ratvinklig_triangel",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.200",
@@ -19058,10 +15975,7 @@ window.BANKMA2 = [
     "s": "<p>Låt den okända sidan vara x.</p><p>\\(x^2+5^2=13^2\\).</p><p>\\(x^2=169-25=144\\Rightarrow x=12\\).</p><p><strong>Den andra sidan är 12 cm.</strong></p>",
     "familj": "pythagoras__diagonal_och_sidlengd",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.201",
@@ -19078,10 +15992,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(A=(x,y)\\). Mittpunktsformeln ger</p><p>\\(\\frac{x+7}{2}=2\\Rightarrow x=-3\\),</p><p>\\(\\frac{y-1}{2}=5\\Rightarrow y=11\\).</p><p>Alltså är \\(A=(-3,11)\\).</p><p>Avståndet blir</p><p>\\(AB=\\sqrt{(7-(-3))^2+(-1-11)^2}=\\sqrt{100+144}=\\sqrt{244}=2\\sqrt{61}\\).</p><p><strong>\\(A=(-3,11)\\) och \\(AB=2\\sqrt{61}\\).</strong></p>",
     "familj": "avstandsformeln_mittpunktsformeln__mittpunktsformeln",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.202",
@@ -19098,10 +16009,7 @@ window.BANKMA2 = [
     "s": "<p>Centrum är mittpunkten på diametern:</p><p>\\(M=((1+7)/2,(2+4)/2)=(4,3)\\).</p><p>Diameterns längd är \\(AB=\\sqrt{(7-1)^2+(4-2)^2}=\\sqrt{40}=2\\sqrt{10}\\).</p><p>Radien är därför \\(r=\\sqrt{10}\\).</p><p>Cirkeln med centrum \\((4,3)\\) och radie \\(\\sqrt{10}\\) har ekvationen</p><p><strong>\\((x-4)^2+(y-3)^2=10\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__cirkelproblem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.203",
@@ -19118,10 +16026,7 @@ window.BANKMA2 = [
     "s": "<p>\\(AB^2=6^2+2^2=40\\).</p><p>\\(AC^2=2^2+6^2=40\\).</p><p>Alltså \\(AB=AC\\).</p><p><strong>Ja, triangeln är likbent med lika sidor \\(AB\\) och \\(AC\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.204",
@@ -19137,11 +16042,7 @@ window.BANKMA2 = [
     "s": "<p>Kordasatsen ger \\(x(x+5)=6\\cdot14=84\\).</p><p>\\(x^2+5x-84=0\\).</p><p>Faktorisera: \\((x+12)(x-7)=0\\).</p><p>Rötterna är \\(x=-12\\) och \\(x=7\\). Eftersom x betecknar en längd kan den negativa lösningen inte användas.</p><p><strong>\\(x=7\\).</strong></p>",
     "familj": "kordasatsen_biskarningssatsen__kordasatsen",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.205",
@@ -19158,10 +16059,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna är \\((-3,1)\\) och \\((2,1)\\). De ligger på samma horisontella linje.</p><p><strong>\\(AB=5\\).</strong></p>",
     "familj": "koordinatgeometri_problemlosning__area_i_koordinatsystem",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.206",
@@ -19177,10 +16075,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(DE\\parallel BC\\) är motsvarande vinklar vid D/B och E/C lika.</p><p>Vinkeln vid A är gemensam.</p><p>Trianglarna har alltså två par lika vinklar.</p><p><strong>De är likformiga enligt vinkel–vinkel.</strong></p>",
     "familj": "bevis_likformighet__visa_likformighet",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.207",
@@ -19196,11 +16091,7 @@ window.BANKMA2 = [
     "s": "<p>Kontrollera riktningen i påståendet: en implikation behöver bara gälla åt ett håll, medan en ekvivalens måste gälla åt båda.</p><p>Båda riktningarna gäller för reella tal.</p><p><strong>Ja, det är en ekvivalens.</strong></p>",
     "familj": "implikation_ekvivalens__ekvivalens",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.208",
@@ -19216,11 +16107,7 @@ window.BANKMA2 = [
     "s": "<p>Randvinkeln \\(\\angle ADC\\) står på bågen från A till C som går genom B.</p><p>Motsvarande medelpunktsvinkel är summan</p><p>\\(138^\\circ+76^\\circ=214^\\circ\\).</p><p>Randvinkelsatsen ger därför</p><p>\\(\\angle ADC=214^\\circ/2=107^\\circ\\).</p><p><strong>\\(\\angle ADC=107^\\circ\\).</strong></p>",
     "familj": "randvinkel_medelpunkt__randvinkel_och_medelpunktsvinkel",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "3.209",
@@ -19236,10 +16123,7 @@ window.BANKMA2 = [
     "s": "<p>Längdskalan från den första triangeln till den andra är \\(9/6=12/8=1,5\\).</p><p>Då måste även den tredje sidan multipliceras med 1,5.</p><p>\\(x=10\\cdot1,5=15\\).</p><p><strong>\\(x=15\\).</strong></p>",
     "familj": "likformighet__motsvarande_sidor",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.01",
@@ -19256,10 +16140,7 @@ window.BANKMA2 = [
     "s": "<p>Första gruppens summa är \\(20\\cdot17=340\\).</p><p>Andra gruppens summa är \\(30\\cdot22=660\\).</p><p>Tillsammans blir summan 1000 för 50 personer.</p><p>\\(1000/50=20\\).</p><p><strong>Det gemensamma medelvärdet är 20.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.02",
@@ -19276,10 +16157,7 @@ window.BANKMA2 = [
     "s": "<p>Om eleven ligger på 92:a percentilen ligger cirka \\(100-92=8\\)% högre.</p><p>\\(0,08\\cdot250=20\\).</p><p><strong>Cirka 20 resultat ligger högre.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.03",
@@ -19296,10 +16174,7 @@ window.BANKMA2 = [
     "s": "<p>Av lådagrammet läses minimum 6, \\(Q_1=10\\), median 14, \\(Q_3=20\\) och maximum 24.</p><p>Kvartilavstånd: \\(20-10=10\\).</p><p>Variationsbredd: \\(24-6=18\\).</p><p><strong>Median 14, kvartilavstånd 10, variationsbredd 18.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.04",
@@ -19316,10 +16191,7 @@ window.BANKMA2 = [
     "s": "<p>A har mindre spridning och är därför jämnare.</p><p>Eftersom medeltiderna är samma säger standardavvikelsen inget om att den ena är snabbare i genomsnitt; den beskriver variationen.</p><p><strong>A är jämnare, men inte snabbare i genomsnitt.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.05",
@@ -19336,11 +16208,7 @@ window.BANKMA2 = [
     "t": "<p>Fyra mätvärden är 8, 10, 12 och \\(x\\). Medelvärdet ska vara 11.</p><p>Bestäm \\(x\\). Jämför sedan standardavvikelsen för de fyra värdena med standardavvikelsen för värdena 9, 10, 11, 12. Vilket material är mest samlat kring sitt medelvärde?</p>",
     "s": "<p>Medelvärdet 11 ger</p><p>\\[\\frac{8+10+12+x}{4}=11\\Rightarrow 30+x=44\\Rightarrow x=14.\\]</p><p>Det första materialet är alltså 8,10,12,14 och har medelvärdet 11. Ett digitalt verktyg ger standardavvikelse cirka 2,24.</p><p>Det andra materialet 9,10,11,12 har medelvärdet 10,5 och standardavvikelse cirka 1,12.</p><p><strong>\\(x=14\\). Det andra materialet är mer samlat eftersom dess standardavvikelse är mindre.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.06",
@@ -19357,10 +16225,7 @@ window.BANKMA2 = [
     "s": "<p>Värdet 130 ligger en standardavvikelse över medelvärdet eftersom \\(130=120+10\\).</p><p>Ungefär 68,2 % ligger inom en standardavvikelse, så från medelvärdet upp till \\(\\mu+\\sigma\\) ligger cirka 34,1 %.</p><p>Andelen över 130 blir därför \\(50-34,1=15,9\\)%.</p><p><strong>Cirka 15,9 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.07",
@@ -19377,10 +16242,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet är symmetriskt kring 64 och sträcker sig 12 enheter åt varje håll.</p><p>95,4 % motsvarar ungefär \\(\\mu\\pm2\\sigma\\).</p><p>Alltså \\(2\\sigma=12\\Rightarrow\\sigma=6\\).</p><p>Utanför intervallet ligger 4,6 %, fördelat lika på de två sidorna om intervallet.</p><p><strong>Standardavvikelsen är 6 och cirka 2,3 % ligger över 76.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.08",
@@ -19397,10 +16259,7 @@ window.BANKMA2 = [
     "s": "<p>Av normalfördelningsfiguren på formelbladet framgår att ungefär 95,4 % ligger mellan \\(\\mu-2\\sigma\\) och \\(\\mu+2\\sigma\\).</p><p>\\(100\\pm2\\cdot15=100\\pm30\\).</p><p><strong>Mellan 70 och 130.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.09",
@@ -19417,10 +16276,7 @@ window.BANKMA2 = [
     "t": "<p>På ett test ligger resultatet 72 vid den 90:e percentilen. En elev fick 75 poäng. Vad kan man säga om elevens placering i gruppen?</p>",
     "s": "<p>Den 90:e percentilen är ett värde som ungefär 90 % av resultaten ligger på eller under. Eftersom 75 är högre än 72 ligger eleven över den 90:e percentilen.</p><p><strong>Eleven tillhör ungefär de 10 % högsta resultaten, eller ännu högre beroende på fördelningen.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.10",
@@ -19437,11 +16293,7 @@ window.BANKMA2 = [
     "s": "<p>Båda materialen har summan 6 och medelvärdet \\(6/5=1,2\\).</p><p>Med ett digitalt verktyg fås samma standardavvikelse för båda, cirka 1,47.</p><p>Medianen är däremot 0 i A och 1 i B.</p><p><strong>Materialen visar att samma medelvärde och standardavvikelse kan ge olika median.</strong></p><p><strong>GeoGebra:</strong> Lägg varje material i en egen lista och använd envariabelanalys för att läsa av medelvärde, standardavvikelse och median.</p>",
     "familj": "lagesmatt__berakna_medelvarde_och_median",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.11",
@@ -19458,10 +16310,7 @@ window.BANKMA2 = [
     "s": "<p>Summan är 60, så medelvärdet är 10. Medianen är 9.</p><p><strong>Medelvärde 10, median 9.</strong></p>",
     "familj": "lagesmatt__berakna_medelvarde_och_median",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.12",
@@ -19478,10 +16327,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen avläses till 15, \\(Q_1=11\\), \\(Q_3=19\\), minimum 6 och maximum 25.</p><p>Kvartilavståndet är \\(19-11=8\\).</p><p>Variationsbredden är \\(25-6=19\\).</p><p><strong>Median 15, kvartilavstånd 8, variationsbredd 19.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.13",
@@ -19497,10 +16343,7 @@ window.BANKMA2 = [
     "t": "<p>Ett resultat antas vara normalfördelat. Den 10:e percentilen är 42 och den 90:e percentilen är 58.</p><p>Bestäm fördelningens medelvärde och standardavvikelse med hjälp av ett digitalt verktyg.</p>",
     "s": "<p>En normalfördelning är symmetrisk. Den 10:e och 90:e percentilen ligger därför lika långt från medelvärdet.</p><p>Medelvärdet blir \\(\\mu=(42+58)/2=50\\).</p><p>Använd därefter sannolikhetskalkylatorn med medelvärde 50 och justera standardavvikelsen tills 90 % av arean ligger till vänster om 58.</p><p>Det ger \\(\\sigma\\approx6{,}24\\).</p><p><strong>Medelvärdet är 50 och standardavvikelsen cirka 6,24.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.14",
@@ -19517,11 +16360,7 @@ window.BANKMA2 = [
     "s": "<p>Standardavvikelsen mäter spridningen kring medelvärdet.</p><p>Eftersom \\(5,7&gt;2,1\\) har materialet med standardavvikelsen 5,7 större spridning.</p><p><strong>Materialet med standardavvikelsen 5,7.</strong></p>",
     "familj": "standardavvikelse__jamfora_spridning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.15",
@@ -19537,11 +16376,7 @@ window.BANKMA2 = [
     "s": "<p>a) En rimlig linje är ungefär \\(y=3,4x+20\\).</p><p>b) Sätt in \\(x=7\\):</p><p>\\(y\\approx3,4\\cdot7+20=23,8+20=43,8\\).</p><p>Alltså ungefär \\(44\\).</p><p>c) Mätpunkterna ligger bara i intervallet ungefär \\(x=1\\) till \\(x=6\\). En prognos vid \\(x=20\\) blir en prognos långt utanför mätintervallet långt utanför det område där modellen byggdes upp.</p><p><strong>En möjlig modell är \\(y\\approx3,4x+20\\), vilket ger \\(y\\approx44\\) när \\(x=7\\).</strong></p>",
     "familj": "linjar_regression__paverkan_av_avvikande_punkt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.16",
@@ -19558,10 +16393,7 @@ window.BANKMA2 = [
     "s": "<p>Det räcker att konstruera motexempel.</p><p>Grupp A kan vara \\(40,45,50,55,60\\): median 50 och medelvärde 50.</p><p>Grupp B kan vara \\(1,2,50,57,200\\): median 50 och medelvärde \\(310/5=62\\).</p><p>I grupp B är två värden mycket låga och ett extremt högt värde drar upp medelvärdet. Man kan därför inte dra slutsatsen om ”de flesta” enbart från medelvärdet.</p><p><strong>Påståendet är inte logiskt nödvändigt.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.17",
@@ -19578,10 +16410,7 @@ window.BANKMA2 = [
     "s": "<p>De fem ursprungliga värdena har summan \\(5\\cdot18=90\\).</p><p>Efter att 28 lagts till är summan 118 och antalet värden 6.</p><p>\\(118/6\\approx19,67\\).</p><p><strong>Det nya medelvärdet är cirka 19,7.</strong></p>",
     "familj": "lagesmatt__forandring_av_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.18",
@@ -19598,10 +16427,7 @@ window.BANKMA2 = [
     "s": "<p>Av lådagrammet läses minimum 12, \\(Q_1=16\\), median 20, \\(Q_3=27\\) och maximum 31.</p><p>Variationsbredden är \\(31-12=19\\).</p><p>Kvartilavståndet är \\(27-16=11\\).</p><p><strong>Median 20, variationsbredd 19 och kvartilavstånd 11.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.19",
@@ -19618,10 +16444,7 @@ window.BANKMA2 = [
     "s": "<p>95,4 % motsvarar ungefär intervallet \\(\\mu\\pm2\\sigma\\).</p><p>Från medelvärdet 70 till någon av gränserna är avståndet 12.</p><p>Alltså \\(2\\sigma=12\\Rightarrow\\sigma=6\\).</p><p><strong>Standardavvikelsen är 6.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.20",
@@ -19638,10 +16461,7 @@ window.BANKMA2 = [
     "s": "<p>68 är en standardavvikelse över medelvärdet. Av normalfördelningsfiguren på formelbladet framgår att ungefär \\(50-34,1=15,9\\) % ligger över detta värde.</p><p>\\(0,159\\cdot400\\approx64\\).</p><p><strong>Cirka 64 personer.</strong></p>",
     "familj": "normalfordelat_material__andel_over_eller_under_grans",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.21",
@@ -19658,10 +16478,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet omvandlas med samma linjära formel:</p><p>\\(3\\cdot12-7=29\\).</p><p>Standardavvikelsen påverkas bara av skalningsfaktorn 3, inte av förskjutningen −7:</p><p>\\(3\\cdot5=15\\).</p><p><strong>Nytt medelvärde 29 och ny standardavvikelse 15.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.22",
@@ -19678,10 +16495,7 @@ window.BANKMA2 = [
     "s": "<p>80:e percentilen betyder att ungefär 80 % av resultaten ligger på eller under det aktuella värdet.</p><p>Ungefär 20 % ligger högre.</p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.23",
@@ -19698,10 +16512,7 @@ window.BANKMA2 = [
     "s": "<p>Vi behöver fem sorterade heltal med median 8, så det tredje talet ska vara 8.</p><p>Minsta och största ska vara 2 respektive 20. Ett exempel är</p><p>\\(2,5,8,15,20\\).</p><p>Summan är 50, så medelvärdet är \\(50/5=10\\).</p><p><strong>Exemplet uppfyller alla villkor.</strong></p>",
     "familj": "lagesmatt__konstruera_datamaterial",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.24",
@@ -19717,11 +16528,7 @@ window.BANKMA2 = [
     "s": "<p>Punkten har stort \\(x\\)-värde och därför stor hävstång: den kan påverka regressionslinjens riktningskoefficient mycket.</p><p>Eftersom punkten ligger långt under den gamla linjen drar den normalt ned linjens högra del, så den nya riktningskoefficienten blir mindre än 2,4.</p><p>Punkten avviker samtidigt kraftigt från det tidigare linjära mönstret. Därför minskar normalt styrkan i det linjära sambandet, vilket innebär att \\(|r|\\) blir mindre.</p><p><strong>Man kan alltså förvänta sig mindre riktningskoefficient och en korrelationskoefficient närmare 0.</strong></p><p>Exakta förändringar kräver de faktiska koordinaterna, men riktningen kan motiveras kvalitativt.</p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.25",
@@ -19738,10 +16545,7 @@ window.BANKMA2 = [
     "s": "<p>De fyra första mätningarnas summa är \\(4\\cdot12=48\\).</p><p>När värdet 17 läggs till blir summan \\(48+17=65\\).</p><p>Nu finns 5 värden, så det nya medelvärdet är \\(65/5=13\\).</p><p><strong>13.</strong></p>",
     "familj": "lagesmatt__forandring_av_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.26",
@@ -19758,11 +16562,7 @@ window.BANKMA2 = [
     "s": "<p>a) I Sannolikhetskalkylatorn väljer du Normal, anger medelvärdet 49,5 och standardavvikelsen 7 och markerar området till höger om 61. Andelen blir cirka 0,0502, alltså 5,02 %.</p><p>b) \\(0,0502\\cdot600\\approx30\\).</p><p>c) Normalfördelningen är en modell för materialet och beräkningen ger en förväntad andel, inte ett exakt antal i varje grupp med 600 värden.</p><p><strong>a) Cirka 5,0 %. b) Cirka 30 värden.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.27",
@@ -19779,10 +16579,7 @@ window.BANKMA2 = [
     "s": "<p>a) 23 av 1000 motsvarar 2,3 %. Av formelbladets normalfördelningsfigur framgår att ungefär 2,3 % ligger mer än två standardavvikelser över medelvärdet.</p><p>Därför motsvarar 90 g ungefär \\(\\mu+2\\sigma\\):</p><p>\\(90=84+2\\sigma\\Rightarrow\\sigma=3\\) g.</p><p>b) I Sannolikhetskalkylatorn väljer du Normal, medelvärde 84 och standardavvikelse 3. Området till höger om 90 blir cirka 0,0228, alltså ungefär 2,3 %.</p><p><strong>Standardavvikelsen är ungefär 3,0 g.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.28",
@@ -19799,10 +16596,7 @@ window.BANKMA2 = [
     "s": "<p>Med envariabelanalys i GeoGebra fås medelvärdet 10,0 och standardavvikelsen cirka 3,5.</p><p><strong>Medelvärde 10,0 och standardavvikelse cirka 3,5.</strong></p>",
     "familj": "standardavvikelse__berakna_med_digitalt_verktyg",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.29",
@@ -19819,11 +16613,7 @@ window.BANKMA2 = [
     "s": "<p>75:e percentilen innebär att ungefär 75 % ligger på eller under nivån och ungefär 25 % över.</p><p>\\(0,25\\cdot240=60\\).</p><p>Det är ungefärligt eftersom flera personer kan ha exakt 42 poäng och definitionen av percentil kan hantera gränsvärden något olika.</p><p><strong>Ungefär 60 personer.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.30",
@@ -19840,10 +16630,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv talen som \\(4,a,12,b,24\\). Summan ska vara 70, så \\(a+b=30\\) med \\(4&lt;a&lt;12&lt;b&lt;24\\).</p><p>Ett möjligt val är 10 och 20.</p><p><strong>Ett möjligt material är 4, 10, 12, 20, 24.</strong></p>",
     "familj": "lagesmatt__konstruera_datamaterial",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.31",
@@ -19860,10 +16647,7 @@ window.BANKMA2 = [
     "s": "<p>Grupp A:s totalsumma är \\(18\\cdot24,5=441\\).</p><p>Grupp B:s totalsumma är \\(12\\cdot31=372\\).</p><p>Totalt \\(813\\). \\(813/30=27,1\\).</p><p><strong>Det gemensamma medelvärdet är 27,1.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.32",
@@ -19880,10 +16664,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet påverkas direkt av alla värdens storlek och kommer normalt att minska tydligt när den mycket höga lönen tas bort.</p><p>Medianen bestäms av värdenas ordning och påverkas ofta lite eller inte alls.</p><p><strong>Medianen påverkas alltså normalt minst av ett mycket avvikande värde.</strong></p>",
     "familj": "lagesmatt__forandring_av_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.33",
@@ -19900,10 +16681,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen är medelvärdet av 8 och 9: 8,5.</p><p>Nedre halvan är 3,5,6,8, så \\(Q_1=(5+6)/2=5,5\\).</p><p>Övre halvan är 9,11,14,18, så \\(Q_3=(11+14)/2=12,5\\).</p><p><strong>Median 8,5, \\(Q_1=5,5\\), \\(Q_3=12,5\\).</strong></p>",
     "familj": "kvartiler_percentiler__median_och_kvartiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.34",
@@ -19920,10 +16698,7 @@ window.BANKMA2 = [
     "s": "<p>Samma median säger att gruppernas mittvärde är detsamma. Samma variationsbredd säger att avståndet mellan minsta och största värdet är lika.</p><p>Kvartilavståndet beskriver de mittersta 50 % av resultaten. Eftersom A har kvartilavstånd 8 och B 20 är de mittersta resultaten betydligt mer samlade i A.</p><p><strong>Grupp B har större spridning i den centrala halvan.</strong></p><p>Däremot kan vi inte avgöra exakt hur standardavvikelsen eller alla enskilda observationer ser ut enbart från dessa uppgifter.</p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.35",
@@ -19940,11 +16715,7 @@ window.BANKMA2 = [
     "s": "<p>Maskin B har mindre spridning, men dess medelvärde ligger 0,5 mm från målvärdet. Maskin A ligger rätt i genomsnitt men varierar mer.</p><p>Vilken som är bäst beror på tillåtna toleranser och hur kostsamma olika avvikelser är.</p><p><strong>Standardavvikelsen ensam räcker inte; både läge och spridning måste bedömas.</strong></p>",
     "familj": "standardavvikelse__jamfora_spridning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.36",
@@ -19961,10 +16732,7 @@ window.BANKMA2 = [
     "t": "<p>Två datamaterial har samma medelvärde. Material A har standardavvikelsen 1,8 och material B standardavvikelsen 4,6.</p><p>Vilket material har observationerna mest samlade kring medelvärdet?</p>",
     "s": "<p>Mindre standardavvikelse betyder att observationerna i genomsnitt ligger närmare medelvärdet.</p><p><strong>Material A.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.37",
@@ -19981,10 +16749,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet är symmetriskt och sträcker sig 12 g från medelvärdet.</p><p>95,4 % motsvarar ungefär \\(\\mu\\pm2\\sigma\\).</p><p>\\(2\\sigma=12\\Rightarrow\\sigma=6\\).</p><p><strong>6 g.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.38",
@@ -20001,10 +16766,7 @@ window.BANKMA2 = [
     "s": "<p>Av normalfördelningsfiguren på formelbladet framgår att ungefär 95,4 % ligger mellan \\(\\mu-2\\sigma\\) och \\(\\mu+2\\sigma\\).</p><p>Här är \\(\\mu=40\\) och \\(2\\sigma=10\\).</p><p>\\(40-10=30\\) och \\(40+10=50\\).</p><p><strong>Ungefär 95,4 % ligger mellan 30 och 50.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.39",
@@ -20021,10 +16783,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet är \\(100\\pm24=\\mu\\pm2\\sigma\\).</p><p>Av normalfördelningsfiguren på formelbladet ligger ungefär \\(34,1+34,1+13,6+13,6=95,4\\) % inom intervallet.</p><p>Andelen utanför blir \\(100-95,4=4,6\\) %.</p><p>\\(0,046\\cdot600=27,6\\).</p><p><strong>Ungefär 28 observationer.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.40",
@@ -20041,10 +16800,7 @@ window.BANKMA2 = [
     "s": "<p>84:e percentilen betyder att ungefär 84 % ligger på eller under resultatet. Då ligger ungefär \\(100-84=16\\) % högre.</p><p>\\(0,16\\cdot250=40\\).</p><p><strong>Ungefär 40 resultat ligger högre.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.41",
@@ -20061,10 +16817,7 @@ window.BANKMA2 = [
     "s": "<p>Summan är 54, så medelvärdet är 9.</p><p>Medianen är \\((8+10)/2=9\\).</p><p><strong>Medelvärde 9, median 9.</strong></p>",
     "familj": "lagesmatt__berakna_medelvarde_och_median",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.42",
@@ -20081,10 +16834,7 @@ window.BANKMA2 = [
     "s": "<p>Lådans vänstra kant ger \\(Q_1=14\\) och högra kant ger \\(Q_3=22\\).</p><p>Kvartilavståndet är \\(22-14=8\\).</p><p><strong>\\(Q_1=14\\), \\(Q_3=22\\), kvartilavstånd 8.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.43",
@@ -20101,11 +16851,7 @@ window.BANKMA2 = [
     "s": "<p>När alla värden multipliceras med 1,5 multipliceras både medelvärdet och standardavvikelsen med 1,5. När 7 sedan subtraheras påverkas bara medelvärdet.</p><p>Nytt medelvärde: \\(1,5\\cdot20-7=23\\).</p><p>Ny standardavvikelse: \\(1,5\\cdot4=6\\).</p><p><strong>Medelvärde 23 och standardavvikelse 6.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.44",
@@ -20122,10 +16868,7 @@ window.BANKMA2 = [
     "s": "<p>88 är \\(\\mu-\\sigma\\) och 124 är \\(\\mu+2\\sigma\\).</p><p>Av normalfördelningsfiguren på formelbladet ligger ungefär \\(34,1+34,1+13,6=81,8\\) % mellan dessa gränser.</p><p>\\(0,818\\cdot800\\approx654\\).</p><p><strong>Cirka 654 observationer.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.45",
@@ -20142,10 +16885,7 @@ window.BANKMA2 = [
     "s": "<p>a) Gränsen för de 10 % högsta är den 90:e percentilen. Sannolikhetskalkylatorn ger cirka 86,0 poäng.</p><p>b) Välj området mellan 65 och 86. GeoGebra ger cirka 0,580.</p><p><strong>a) Cirka 86 poäng. b) Cirka 58,0 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.46",
@@ -20162,10 +16902,7 @@ window.BANKMA2 = [
     "s": "<p>a) Medelvärdet är 18 och standardavvikelsen är cirka 3,85.</p><p>b) När ytterligare ett värde 18 läggs till är medelvärdet fortfarande 18. Den nya standardavvikelsen blir cirka 3,51.</p><p>c) Det nya värdet ligger precis vid medelvärdet och ökar därför inte spridningen. När ett sådant värde läggs till blir materialet relativt mer samlat kring medelvärdet, så standardavvikelsen minskar.</p><p><strong>GeoGebra:</strong> använd envariabelanalys före och efter att värdet 18 lagts till.</p>",
     "familj": "lagesmatt__forandring_av_lagesmatt",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.47",
@@ -20182,10 +16919,7 @@ window.BANKMA2 = [
     "s": "<p>Totalt får hon \\(24+36=60\\) poäng av \\(30+50=80\\).</p><p>\\(60/80=0,75\\).</p><p><strong>75 %.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.48",
@@ -20202,10 +16936,7 @@ window.BANKMA2 = [
     "s": "<p>95:e percentilen betyder att ungefär 95 % ligger på eller under resultatet.</p><p>Alltså ligger cirka 5 % högre.</p><p>\\(0,05\\cdot600=30\\).</p><p><strong>Cirka 30 personer.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.49",
@@ -20222,10 +16953,7 @@ window.BANKMA2 = [
     "s": "<p>När 100 adderas till varje observation ökar även medelvärdet med 100.</p><p>Avstånden mellan observationerna och medelvärdet ändras däremot inte.</p><p><strong>Standardavvikelsen är därför fortfarande 6.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.50",
@@ -20242,10 +16970,7 @@ window.BANKMA2 = [
     "s": "<p>Två standardavvikelser över medelvärdet är \\(72+2\\cdot5=82\\).</p><p><strong>82.</strong></p>",
     "familj": "normalfordelat_material__andel_over_eller_under_grans",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.51",
@@ -20262,10 +16987,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet är mittpunkten: \\((22+38)/2=30\\).</p><p>95,4 % motsvarar ungefär intervallet \\(\\mu\\pm2\\sigma\\).</p><p>Avståndet från 30 till 38 är 8, alltså \\(2\\sigma=8\\Rightarrow\\sigma=4\\).</p><p><strong>\\(\\mu=30\\), \\(\\sigma=4\\).</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.52",
@@ -20282,11 +17004,7 @@ window.BANKMA2 = [
     "s": "<p>Grupp A: \\(Q_3-Q_1=20-16=4\\).</p><p>Grupp B: \\(26-10=16\\).</p><p><strong>Grupp A har alltså betydligt mindre spridning i de mittersta 50 %.</strong></p>",
     "familj": "ladagram__jamfora_ladagram",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.53",
@@ -20303,10 +17021,7 @@ window.BANKMA2 = [
     "s": "<p>I Sannolikhetskalkylatorn anger du medelvärdet 50 och standardavvikelsen 9,4 och söker gränsen som har 90 % av arean till vänster.</p><p><strong>90:e percentilen är cirka 62,0.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__bestam_gransvarde_fran_sannolikhet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.54",
@@ -20323,10 +17038,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv talen i ordning som \\(4,a,12,b,25\\), där \\(4&lt;a&lt;12&lt;b&lt;25\\).</p><p>Summan ska vara \\(5\\cdot14=70\\).</p><p>Därför \\(a+b=70-4-12-25=29\\).</p><p>Med heltalsvillkoren kan \\(a\\) vara 5,6,7,8,9,10 eller 11, men \\(b=29-a\\) måste vara större än 12 och mindre än 25.</p><p>Det ger paren <strong>(5,24), (6,23), (7,22), (8,21), (9,20), (10,19), (11,18)</strong>.</p>",
     "familj": "lagesmatt__berakna_medelvarde_och_median",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.55",
@@ -20343,10 +17055,7 @@ window.BANKMA2 = [
     "s": "<p>Summorna är \\(24\\cdot18=432\\) och \\(16\\cdot27=432\\).</p><p>Total summa 864 för 40 personer.</p><p><strong>21,6.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.56",
@@ -20363,10 +17072,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet blir \\(-4\\cdot25+10=-90\\). Standardavvikelsen multipliceras med \\(|-4|\\), alltså 12.</p><p><strong>Nytt medelvärde −90, ny standardavvikelse 12.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.57",
@@ -20383,10 +17089,7 @@ window.BANKMA2 = [
     "s": "<p>De 8 % lägsta motsvarar den 8:e percentilen. I GeoGebras Sannolikhetskalkylator fås gränsen cirka 60,8.</p><p>De 12 % högsta innebär att 88 % ligger på eller under den övre gränsen. Den 88:e percentilen blir cirka 81,4.</p><p><strong>Gränserna är ungefär 60,8 och 81,4.</strong></p><p><strong>GeoGebra:</strong> Öppna <em>Sannolikhetskalkylatorn</em>, välj <em>Normal</em>, ange medelvärdet 72 och standardavvikelsen 8. Välj området till vänster och ange arean 0,08 respektive 0,88 och läs av sannolikheten eller gränsvärdet.</p>",
     "familj": "normalfordelning_digitala_verktyg__bestam_gransvarde_fran_sannolikhet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.58",
@@ -20403,10 +17106,7 @@ window.BANKMA2 = [
     "s": "<p>Om 10 % ska ligga över gränsen ska 90 % ligga under den.</p><p>I GeoGebras Sannolikhetskalkylator söker man därför värdet som har 0,90 av arean till vänster.</p><p>Gränsen blir ungefär 525,6 g.</p><p><strong>Viktgränsen bör sättas till cirka 526 g.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.59",
@@ -20423,11 +17123,7 @@ window.BANKMA2 = [
     "s": "<p>Ett exempel är</p><p>A: 0, 3, 5, 8, 10, 12, 15, 17, 20.</p><p>B: 0, 3, 5, 9, 10, 14, 15, 17, 20.</p><p>I båda materialen är \\(Q_1=(3+5)/2=4\\), medianen 10 och \\(Q_3=(15+17)/2=16\\), med samma min och max.</p><p>A har medelvärde \\(90/9=10\\). B har medelvärde \\(93/9\\approx10,33\\).</p><p><strong>Samma lådagram kan alltså motsvara olika medelvärden.</strong></p>",
     "familj": "kvartiler_percentiler__median_och_kvartiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.60",
@@ -20444,10 +17140,7 @@ window.BANKMA2 = [
     "s": "<p>Summan av alla sju tal ska vara \\(7\\cdot18=126\\).</p><p>De sex kända talen har summan 103.</p><p><strong>Det sjunde talet är \\(126-103=23\\).</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.61",
@@ -20464,10 +17157,7 @@ window.BANKMA2 = [
     "s": "<p>Summan är 56 och det finns 7 tal, så medelvärdet är 8.</p><p>Det mittersta talet är 7 och talet 6 förekommer flest gånger.</p><p><strong>Medelvärde 8, median 7, typvärde 6.</strong></p>",
     "familj": "lagesmatt__berakna_medelvarde_och_median",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.62",
@@ -20484,10 +17174,7 @@ window.BANKMA2 = [
     "s": "<p>Fem sorterade tal har medianen som det tredje värdet.</p><p>Det tredje värdet är \\(x\\), och medianen ska vara 12.</p><p><strong>\\(x=12\\).</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.63",
@@ -20504,10 +17191,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen är medelvärdet av det 4:e och 5:e värdet: \\((8+9)/2=8,5\\).</p><p>Undre halvan är 3, 5, 6, 8, så \\(Q_1=(5+6)/2=5,5\\).</p><p>Övre halvan är 9, 12, 15, 18, så \\(Q_3=(12+15)/2=13,5\\).</p><p><strong>\\(Q_1=5,5\\), median 8,5, \\(Q_3=13,5\\).</strong></p>",
     "familj": "kvartiler_percentiler__median_och_kvartiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.64",
@@ -20524,11 +17208,7 @@ window.BANKMA2 = [
     "s": "<p>Ett möjligt ursprungsmaterial är \\(2,4,4,6,8,8,10\\), vilket ger min 2, median 6 och max 10 med kvartiler omkring 4 och 8.</p><p>Om värdet 12 läggs till blir max 12 och övre delen av materialet flyttas upp, vilket kan ge \\(Q_3=9\\) samtidigt som medianen ligger kvar vid 6.</p><p><strong>Ett möjligt åttonde värde är 12.</strong></p><p>Andra svar kan också vara möjliga om de motiveras med ett konkret datamaterial.</p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.65",
@@ -20545,10 +17225,7 @@ window.BANKMA2 = [
     "s": "<p>En mindre standardavvikelse innebär att värdena i genomsnitt ligger närmare medelvärdet.</p><p><strong>Grupp A är mest samlad.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.66",
@@ -20565,10 +17242,7 @@ window.BANKMA2 = [
     "s": "<p>Avståndet från 60 till 80 är 20, vilket motsvarar \\(2\\sigma\\).</p><p>Alltså \\(\\sigma=10\\).</p><p>Inom två standardavvikelser ligger ungefär 95,4 %.</p><p><strong>a) 10. b) cirka 95,4 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.67",
@@ -20585,10 +17259,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen läses av till 12. Minimum är 4 och maximum 24.</p><p>Variationsbredden är därför \\(24-4=20\\).</p><p><strong>Median 12 och variationsbredd 20.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.68",
@@ -20605,10 +17276,7 @@ window.BANKMA2 = [
     "s": "<p>En linjär omvandling \\(y=ax+b\\) ändrar medelvärdet till \\(a\\mu+b\\), medan standardavvikelsen multipliceras med \\(|a|\\).</p><p>Nytt medelvärde: \\(1,5\\cdot18-7=20\\).</p><p>Ny standardavvikelse: \\(1,5\\cdot4=6\\).</p><p><strong>Medelvärde 20 och standardavvikelse 6.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.69",
@@ -20625,10 +17293,7 @@ window.BANKMA2 = [
     "s": "<p>68,2 % motsvarar ungefär \\(\\mu\\pm\\sigma\\).</p><p>Gränserna 188 och 212 ligger båda 12 enheter från medelvärdet 200.</p><p><strong>Alltså är \\(\\sigma=12\\).</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.70",
@@ -20645,10 +17310,7 @@ window.BANKMA2 = [
     "s": "<p>Att ligga bland de 10 % bästa betyder att 90 % ligger på eller under gränsvärdet.</p><p><strong>GeoGebra:</strong> Öppna <em>Sannolikhetskalkylatorn</em>, välj <em>Normal</em>, ange medelvärdet 64 och standardavvikelsen 9. Välj vänsterarea 0,90 och läs av gränsvärdet.</p><p>GeoGebra ger cirka 75,5.</p><p><strong>Det krävs alltså ungefär 76 poäng.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__bestam_gransvarde_fran_sannolikhet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.71",
@@ -20665,10 +17327,7 @@ window.BANKMA2 = [
     "t": "<p>De sorterade observationerna är</p><p>\\[3,\\ 4,\\ 6,\\ 7,\\ 8,\\ 11,\\ 13,\\ 15.\\]</p><p>Bestäm median, nedre kvartil, övre kvartil och kvartilavstånd.</p>",
     "s": "<p>Medianen är medelvärdet av den fjärde och femte observationen: \\((7+8)/2=7{,}5\\).</p><p>Nedre kvartil är medianen av 3,4,6,7: \\((4+6)/2=5\\).</p><p>Övre kvartil är medianen av 8,11,13,15: \\((11+13)/2=12\\).</p><p>Kvartilavståndet är \\(12-5=7\\).</p><p><strong>Median 7,5; nedre kvartil 5; övre kvartil 12; kvartilavstånd 7.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.72",
@@ -20685,10 +17344,7 @@ window.BANKMA2 = [
     "s": "<p>Av normalfördelningsfiguren på formelbladet framgår att ungefär 68,2 % ligger mellan \\(\\mu-\\sigma\\) och \\(\\mu+\\sigma\\).</p><p>\\(50-8=42\\) och \\(50+8=58\\).</p><p><strong>Intervallet är 42 till 58.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.74",
@@ -20705,10 +17361,7 @@ window.BANKMA2 = [
     "s": "<p>Fem tal med medelvärdet 12 måste tillsammans ha summan</p><p>\\(5\\cdot12=60\\).</p><p>De fyra kända talen har summan \\(6+8+11+14=39\\).</p><p>\\(x=60-39=21\\).</p><p><strong>\\(x=21\\).</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.75",
@@ -20725,10 +17378,7 @@ window.BANKMA2 = [
     "s": "<p>Om samma tal adderas till alla observationer flyttas hela materialet lika långt, men avstånden till medelvärdet ändras inte.</p><p><strong>Standardavvikelsen förändras därför inte.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.76",
@@ -20745,10 +17395,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet är summan dividerad med antalet värden.</p><p>Därför är summan \\(10\\cdot14=140\\).</p><p><strong>Summan är 140.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.77",
@@ -20765,10 +17412,7 @@ window.BANKMA2 = [
     "s": "<p>Grupp A har totalsumman \\(18\\cdot24=432\\).</p><p>Grupp B har totalsumman \\(12\\cdot30=360\\).</p><p>Tillsammans är summan 792 för 30 elever.</p><p>\\(792/30=26,4\\).</p><p><strong>Det gemensamma medelvärdet är 26,4.</strong></p>",
     "familj": "lagesmatt__viktat_eller_sammanslaget_medelvarde",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.78",
@@ -20785,10 +17429,7 @@ window.BANKMA2 = [
     "s": "<p>80:e percentilen betyder att ungefär 80 % av resultaten ligger på eller under elevens resultat.</p><p>Det innebär samtidigt att ungefär 20 % ligger högre.</p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.79",
@@ -20805,11 +17446,7 @@ window.BANKMA2 = [
     "s": "<p>Med sju sorterade tal är det fjärde talet 10. För att medianen för åtta tal ska bli 11 måste de två mittersta talen ha summan 22.</p><p>Ett möjligt ursprungligt material är 4, 7, 7, 10, 12, 15, 20.</p><p>Om värdet 12 läggs till får vi 4,7,7,10,12,12,15,20. Medianen blir \\((10+12)/2=11\\).</p><p><strong>Ett möjligt nytt värde är 12.</strong> Flera svar kan fungera beroende på det ursprungliga materialet.</p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.80",
@@ -20826,10 +17463,7 @@ window.BANKMA2 = [
     "s": "<p>488 g är \\(500-12=\\mu-\\sigma\\) och 524 g är \\(500+24=\\mu+2\\sigma\\).</p><p>Av normalfördelningsfiguren på formelbladet framgår att området från \\(\\mu-\\sigma\\) till \\(\\mu+\\sigma\\) är ungefär \\(34,1+34,1=68,2\\) %.</p><p>Från \\(\\mu+\\sigma\\) till \\(\\mu+2\\sigma\\) tillkommer ungefär 13,6 %.</p><p>\\(68,2+13,6=81,8\\).</p><p><strong>Ungefär 81,8 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.81",
@@ -20846,10 +17480,7 @@ window.BANKMA2 = [
     "s": "<p>Välj normalfördelning i Sannolikhetskalkylatorn och ange medelvärde 72 och standardavvikelse 8. Markera intervallet 65 till 80.</p><p>Sannolikheten blir ungefär \\(0,6506\\).</p><p><strong>Ungefär 65,1 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.82",
@@ -20866,10 +17497,7 @@ window.BANKMA2 = [
     "s": "<p>Med nio värden är det femte värdet medianen, alltså 6.</p><p>För de fyra första ska medianen vara 4; för de fyra sista ska medianen vara 9.</p><p>Ett möjligt material är</p><p>\\(2,3,5,5,6,8,10,10,11\\).</p><p>Första kvartilen är \\((3+5)/2=4\\) och tredje kvartilen är \\((8+10)/2=9\\).</p><p><strong>Detta är ett möjligt svar.</strong></p>",
     "familj": "ladagram__rita_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.84",
@@ -20886,10 +17514,7 @@ window.BANKMA2 = [
     "s": "<p>Materialen har samma centrum eftersom medelvärdena är lika.</p><p>Standardavvikelsen 8 är fyra gånger så stor som 2, vilket betyder att det materialet är mycket mer utspritt kring medelvärdet.</p><p><strong>Materialet med standardavvikelse 8 har större spridning.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.85",
@@ -20906,10 +17531,7 @@ window.BANKMA2 = [
     "s": "<p>Sex tal med medelvärdet 12 ska ha totalsumman \\(6\\cdot12=72\\).</p><p>De fem kända talen summerar till \\(8+9+11+14+15=57\\).</p><p>Det sjätte talet är \\(72-57=15\\).</p><p><strong>15.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.86",
@@ -20926,10 +17548,7 @@ window.BANKMA2 = [
     "s": "<p>När alla observationer multipliceras med 3 blir även alla avstånd till medelvärdet tre gånger så stora.</p><p><strong>Standardavvikelsen multipliceras därför med 3.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.87",
@@ -20946,10 +17565,7 @@ window.BANKMA2 = [
     "s": "<p>a) I Sannolikhetskalkylatorn blir sannolikheten under 47,0 plus sannolikheten över 53,0 cirka 0,0956.</p><p>Alltså ligger cirka 9,6 % utanför intervallet.</p><p>b) Ett symmetriskt intervall med 90 % i mitten lämnar 5 % i vardera änden. GeoGebra ger ungefär 47,04 mm och 52,96 mm.</p><p><strong>a) Cirka 9,6 %. b) Ungefär 47,0–53,0 mm.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.88",
@@ -20966,10 +17582,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen läses vid den röda linjen: 10.</p><p>Kvartilavståndet är \\(Q_3-Q_1=14-7=7\\).</p><p><strong>Median 10 och kvartilavstånd 7.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.89",
@@ -20986,10 +17599,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebras Sannolikhetskalkylator väljer du normalfördelning, anger medelvärdet 50 och standardavvikelsen 8 och väljer området till vänster om 62.</p><p>Andelen blir cirka 0,933, alltså 93,3 %.</p><p><strong>Cirka 93,3 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.90",
@@ -21006,10 +17616,7 @@ window.BANKMA2 = [
     "t": "<p>Ett datamaterial har medelvärdet 12 och standardavvikelsen 3. Varje observation ökas med 5.</p><p>Bestäm det nya medelvärdet och förklara vad som händer med standardavvikelsen.</p>",
     "s": "<p>När alla observationer ökas med 5 ökar medelvärdet också med 5: \\(12+5=17\\).</p><p>Avstånden mellan observationerna och medelvärdet ändras inte, eftersom både observationerna och medelvärdet flyttas lika mycket.</p><p>Standardavvikelsen är därför fortfarande 3.</p><p><strong>Nytt medelvärde 17 och standardavvikelse 3.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.091",
@@ -21026,10 +17633,7 @@ window.BANKMA2 = [
     "s": "<p>Om 8 värden har medelvärdet 14 är deras totalsumma</p><p>\\(8\\cdot14=112\\).</p><p><strong>Summan är 112.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.092",
@@ -21046,10 +17650,7 @@ window.BANKMA2 = [
     "s": "<p>87:e percentilen betyder att ungefär 87 % ligger på eller under resultatet.</p><p>Därför ligger ungefär \\(100-87=13\\)% högre.</p><p>\\(0,13\\cdot600=78\\).</p><p><strong>Cirka 78 deltagare.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.093",
@@ -21066,10 +17667,7 @@ window.BANKMA2 = [
     "s": "<p>Om varje observation multipliceras med 2 fördubblas även medelvärdet.</p><p>Alla avstånd till medelvärdet fördubblas också, så standardavvikelsen fördubblas.</p><p><strong>Både medelvärde och standardavvikelse multipliceras med 2.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.094",
@@ -21086,10 +17684,7 @@ window.BANKMA2 = [
     "s": "<p>66 och 74 är precis \\(\\mu-\\sigma\\) respektive \\(\\mu+\\sigma\\), eftersom \\(70\\pm4\\).</p><p>Intervallet är alltså en standardavvikelse på var sida om medelvärdet.</p><p><strong>Andelen är ungefär 68,2 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.095",
@@ -21106,10 +17701,7 @@ window.BANKMA2 = [
     "s": "<p>a) Den nedre gränsen är den 10:e percentilen och den övre den 90:e percentilen. GeoGebra ger cirka 59,0 respektive 91,0.</p><p>b) 10 % ligger under den nedre och 10 % över den övre. Alltså ligger 80 % mellan gränserna.</p><p><strong>a) Cirka 59,0 och 91,0. b) 80 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.096",
@@ -21126,10 +17718,7 @@ window.BANKMA2 = [
     "s": "<p>Gamla lönesumman är \\(9\\cdot34000=306000\\).</p><p>Ny summa är \\(10\\cdot35200=352000\\).</p><p>Skillnaden är 46 000.</p><p><strong>46 000 kr.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.097",
@@ -21146,10 +17735,7 @@ window.BANKMA2 = [
     "s": "<p>Det ursprungliga materialet har medelvärdet 6,5 och standardavvikelsen cirka 3,35.</p><p>Det omvandlade materialet är −2, −11, −20, −29. Medelvärdet är −15,5 och standardavvikelsen cirka 10,06.</p><p>För medelvärdet stämmer \\(-3\\cdot6,5+4=-15,5\\).</p><p>Avstånden från medelvärdet multipliceras med 3 när varje värde multipliceras med −3. Tillägget 4 flyttar alla värden lika mycket och ändrar inte spridningen. Därför blir standardavvikelsen \\(3\\cdot3,35\\approx10,06\\).</p><p><strong>Generellt blir det nya medelvärdet \\(a\\mu+b\\) och standardavvikelsen multipliceras med \\(|a|\\).</strong></p>",
     "familj": "standardavvikelse__forandring_av_standardavvikelse",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.098",
@@ -21166,10 +17752,7 @@ window.BANKMA2 = [
     "s": "<p>25:e percentilen är det värde som ungefär 25 % av resultaten ligger på eller under.</p><p>Ungefär 75 % av resultaten ligger alltså över detta värde.</p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.099",
@@ -21186,10 +17769,7 @@ window.BANKMA2 = [
     "t": "<p>Ett stort material är ungefär normalfördelat med medelvärdet 120 och standardavvikelsen 10. Uppskatta hur stor andel som ligger mellan 100 och 130. Använd normalfördelningsfiguren på formelbladet.</p>",
     "s": "<p>100 är \\(\\mu-2\\sigma\\) och 130 är \\(\\mu+\\sigma\\).</p><p>Från \\(\\mu-2\\sigma\\) till \\(\\mu\\) ligger \\(13{,}6\\%+34{,}1\\%=47{,}7\\%\\). Från \\(\\mu\\) till \\(\\mu+\\sigma\\) ligger 34,1 %.</p><p>Totalt: \\(47{,}7\\%+34{,}1\\%=81{,}8\\%\\).</p><p><strong>Cirka 81,8 %.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.100",
@@ -21206,10 +17786,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebras Sannolikhetskalkylator väljer du <em>Normal</em>, anger medelvärdet 100 och standardavvikelsen 15 och väljer området till vänster om 120.</p><p><strong>Andelen är cirka 0,909.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.101",
@@ -21226,10 +17803,7 @@ window.BANKMA2 = [
     "s": "<p>Fem tal med medelvärdet 12 har summan \\(5\\cdot12=60\\).</p><p>De fyra kända talen summerar till 40.</p><p><strong>\\(x=20\\).</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.102",
@@ -21246,10 +17820,7 @@ window.BANKMA2 = [
     "s": "<p>När alla värden multipliceras med 0,5 multipliceras standardavvikelsen med \\(|0,5|\\).</p><p>\\(4\\cdot0,5=2\\).</p><p><strong>Den nya standardavvikelsen är 2.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.103",
@@ -21266,11 +17837,7 @@ window.BANKMA2 = [
     "s": "<p>För grupp A är kvartilavståndet \\(22-18=4\\).</p><p>För grupp B är kvartilavståndet \\(29-11=18\\).</p><p>Eftersom grupp A har mycket mindre kvartilavstånd ligger dess mittersta 50 % betydligt tätare.</p><p><strong>Grupp A är mest samlad.</strong></p>",
     "familj": "ladagram__jamfora_ladagram",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.104",
@@ -21286,10 +17853,7 @@ window.BANKMA2 = [
     "t": "<p>Ett provresultat antas vara normalfördelat med standardavvikelsen 12. Gränsen 74 poäng ligger vid den 80:e percentilen.</p><p>Bestäm med ett digitalt verktyg vilket medelvärde fördelningen har.</p>",
     "s": "<p>Använd GeoGebras sannolikhetskalkylator för normalfördelning. Ange standardavvikelsen 12 och justera medelvärdet tills arean till vänster om 74 är 0,80.</p><p>Det ger ett medelvärde på ungefär 63,9.</p><p><strong>Medelvärdet är cirka 63,9 poäng.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.105",
@@ -21306,10 +17870,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet ligger en standardavvikelse på var sida om medelvärdet.</p><p>För en normalfördelning ligger ungefär 68,2 % inom \\(\\mu\\pm\\sigma\\).</p><p><strong>Andelen är därför ungefär 68,2 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.106",
@@ -21326,11 +17887,7 @@ window.BANKMA2 = [
     "s": "<p>a) I Sannolikhetskalkylatorn med medelvärde 250 och standardavvikelse 30 blir området till höger om 288 cirka 0,103, alltså 10,3 %. Påståendet är därför en rimlig avrundning.</p><p>b) Om 5 % ska ligga över gränsen ska 95 % ligga på eller under den. Läs av den 95:e percentilen i Sannolikhetskalkylatorn. Den är cirka 299,3.</p><p>c) Normalfördelningen är en modell. Ett verkligt stickprov kan avvika från modellens exakta procentandelar.</p><p><strong>a) Cirka 10,3 %. b) Cirka 299.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.107",
@@ -21347,10 +17904,7 @@ window.BANKMA2 = [
     "s": "<p>Den minsta standardavvikelsen ger den smalaste och högsta kurvan.</p><p><strong>Kurva C.</strong></p>",
     "familj": "normalfordelat_material__andel_over_eller_under_grans",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.108",
@@ -21367,10 +17921,7 @@ window.BANKMA2 = [
     "s": "<p>I grupp A är kvartilavståndet \\(9-6=3\\). I grupp B är kvartilavståndet \\(10-5=5\\).</p><p><strong>I är sann.</strong></p><p>Eftersom \\(Q_3=9\\) i grupp A ligger minst 25 % av resultaten på eller över 9.</p><p><strong>II är sann.</strong></p><p>I grupp B ligger de mittersta 50 % mellan \\(Q_1=5\\) och \\(Q_3=10\\).</p><p><strong>III är också sann.</strong></p><p><strong>Alla tre påståendena är säkert sanna.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.109",
@@ -21387,10 +17938,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet omvandlas på samma sätt: \\(2\\cdot20+7=47\\).</p><p>Standardavvikelsen påverkas bara av multiplikationen och blir \\(2\\cdot4=8\\).</p><p><strong>Nytt medelvärde 47 och standardavvikelse 8.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.110",
@@ -21407,10 +17955,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebras Sannolikhetskalkylator anger du medelvärdet 120 och standardavvikelsen 15 och markerar intervallet 105–135.</p><p><strong>Andelen är cirka 0,683, alltså 68,3 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.111",
@@ -21427,10 +17972,7 @@ window.BANKMA2 = [
     "s": "<p>Total summa ska vara 90. De fem kända summerar till 72.</p><p><strong>Det sjätte talet är 18.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.112",
@@ -21447,10 +17989,7 @@ window.BANKMA2 = [
     "s": "<p>Summan ska vara \\(7\\cdot16=112\\). De sex talen summerar till 95.</p><p><strong>Det sjunde talet är 17.</strong></p>",
     "familj": "lagesmatt__berakna_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.113",
@@ -21467,11 +18006,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv värdena \\(a_1&lt;\\dots&lt;a_8\\). Då krävs \\((a_2+a_3)/2=5\\), \\((a_4+a_5)/2=9\\) och \\((a_6+a_7)/2=14\\), med \\(a_1=2\\), \\(a_8=20\\).</p><p>Ett möjligt val är \\(a_2=4,a_3=6\\); \\(a_4=8,a_5=10\\); \\(a_6=13,a_7=15\\).</p><p><strong>Ett möjligt material är 2, 4, 6, 8, 10, 13, 15, 20.</strong></p>",
     "familj": "kvartiler_percentiler__median_och_kvartiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.114",
@@ -21488,10 +18023,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet ökar med 5. Avstånden mellan varje värde och medelvärdet ändras inte.</p><p><strong>Medelvärdet ökar med 5 och standardavvikelsen är oförändrad.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.115",
@@ -21508,10 +18040,7 @@ window.BANKMA2 = [
     "s": "<p>760 g är \\(\\mu-\\sigma\\) och 940 g är \\(\\mu+2\\sigma\\).</p><p>Av normalfördelningsfiguren på formelbladet ligger ungefär \\(34,1+34,1+13,6=81,8\\) % mellan dessa gränser.</p><p>\\(0,818\\cdot500\\approx409\\).</p><p><strong>Cirka 409 fiskar.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.116",
@@ -21528,10 +18057,7 @@ window.BANKMA2 = [
     "s": "<p>I Sannolikhetskalkylatorn anger du medelvärdet 52 och standardavvikelsen 9,4.</p><p>Med vänsterarean 0,10 fås cirka 40,0 och med vänsterarean 0,90 fås cirka 64,0.</p><p><strong>10:e percentilen är cirka 40,0 och 90:e percentilen cirka 64,0.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__bestam_gransvarde_fran_sannolikhet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.117",
@@ -21548,10 +18074,7 @@ window.BANKMA2 = [
     "s": "<p>Om 80 % ska ligga i mitten återstår 20 % utanför intervallet. Eftersom intervallet är symmetriskt ska 10 % ligga på vardera sidan.</p><p>Den nedre gränsen är därför den 10:e percentilen och den övre den 90:e percentilen.</p><p><strong>GeoGebra:</strong> Öppna Sannolikhetskalkylatorn, välj Normal och ange medelvärdet 70 och standardavvikelsen 8. Läs av gränsvärdena för vänsterareorna 0,10 och 0,90.</p><p>Gränserna blir cirka 59,7 och 80,3.</p><p><strong>Intervallet är ungefär 59,7–80,3.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.118",
@@ -21568,10 +18091,7 @@ window.BANKMA2 = [
     "s": "<p>Kvartilavståndet definieras som \\(Q_3-Q_1\\).</p><p>Här blir det \\(31-18=13\\).</p><p><strong>Kvartilavståndet är 13.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.119",
@@ -21588,10 +18108,7 @@ window.BANKMA2 = [
     "s": "<p>De fem första mätningarnas summa är \\(5\\cdot18=90\\).</p><p>Ny summa är 114. \\(114/6=19\\).</p><p><strong>Det nya medelvärdet är 19.</strong></p>",
     "familj": "lagesmatt__forandring_av_lagesmatt",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.120",
@@ -21608,10 +18125,7 @@ window.BANKMA2 = [
     "s": "<p>75:e percentilen är ett gränsvärde där ungefär 75 % av observationerna ligger på eller under gränsen.</p><p>Ungefär 25 % ligger över den.</p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.121",
@@ -21628,11 +18142,7 @@ window.BANKMA2 = [
     "s": "<p>Mindre standardavvikelse betyder mindre spridning i genomsnitt, men säger inte att varje enskilt värde i A ligger närmare medelvärdet än varje värde i B.</p><p><strong>Påståendet är för starkt och behöver inte vara sant.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.122",
@@ -21649,10 +18159,7 @@ window.BANKMA2 = [
     "t": "<p>Ett stort normalfördelat material har medelvärdet 70 och standardavvikelsen 5.</p><p>Ungefär hur stor andel ligger mellan 65 och 75? Använd normalfördelningsfiguren på formelbladet.</p>",
     "s": "<p>65 och 75 är en standardavvikelse under respektive över medelvärdet.</p><p>Formelbladet visar 34,1 % på vardera sidan om medelvärdet inom en standardavvikelse.</p><p>\\[34{,}1\\%+34{,}1\\%=68{,}2\\%.\\]</p><p><strong>Cirka 68,2 %.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.123",
@@ -21669,10 +18176,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebras Sannolikhetskalkylator väljer du Normal, anger medelvärdet 50 och standardavvikelsen 8 och markerar området till vänster om 60.</p><p><strong>Andelen är cirka 0,894.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.124",
@@ -21689,10 +18193,7 @@ window.BANKMA2 = [
     "s": "<p>15 minuter är en standardavvikelse över medelvärdet eftersom \\(15=12+3\\).</p><p>Av normalfördelningsfiguren på formelbladet framgår att området från medelvärdet till \\(\\mu+\\sigma\\) är ungefär 34,1 %. Till vänster om medelvärdet ligger 50 %.</p><p>\\(50\\%+34,1\\%=84,1\\%\\).</p><p><strong>GeoGebra:</strong> Öppna <em>Sannolikhetskalkylatorn</em>, välj fördelningen <em>Normal</em>, ange medelvärdet 12 och standardavvikelsen 3 och välj området till vänster om 15. Då fås ungefär 0,841.</p><p><strong>Sannolikheten är ungefär 84,1 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.125",
@@ -21709,11 +18210,7 @@ window.BANKMA2 = [
     "s": "<p>Ett exempel är A: 0, 3, 5, 8, 10, 12, 15, 17, 20 och B: 0, 3, 5, 9, 10, 14, 15, 17, 20.</p><p>De har samma femtal för lådagrammet men olika summor, 90 respektive 93.</p><p><strong>Samma lådagram kan alltså ge olika medelvärden.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.126",
@@ -21729,11 +18226,7 @@ window.BANKMA2 = [
     "s": "<p>Det visar ett starkt negativt linjärt samband.</p><p>Det visar inte att den ena variabeln orsakar förändringen i den andra.</p><p><strong>Starkt negativt samband, men inget bevis för orsak.</strong></p>",
     "familj": "korrelation_koefficient__tolka_korrelationskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.127",
@@ -21749,11 +18242,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten beskriver styrkan och riktningen i ett linjärt samband; värden nära \\(\\pm1\\) betyder starkt linjärt samband.</p><p>Punkterna ligger nära en fallande rät linje.</p><p><strong>Det rimliga värdet är −0,94.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.128",
@@ -21769,11 +18258,7 @@ window.BANKMA2 = [
     "s": "<p>Absolutbeloppen är lika: \\(|r|=0,91\\). Det betyder att de linjära sambanden är ungefär lika starka.</p><p>Tecknen är däremot olika. \\(r=0,91\\) beskriver ett starkt positivt samband, medan \\(r=-0,91\\) beskriver ett starkt negativt samband.</p><p><strong>Samma styrka ungefär, men motsatt riktning.</strong></p>",
     "familj": "korrelation_koefficient__jamfora_korrelationsstyrka",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.129",
@@ -21789,11 +18274,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten beskriver hur tydligt punkterna följer ett linjärt samband.</p><p>P ligger långt från det mönster som de andra punkterna följer. När P tas bort ligger de återstående punkterna betydligt närmare en rät linje.</p><p><strong>Därför kan korrelationskoefficienten förändras mycket även när bara en punkt tas bort.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.130",
@@ -21809,11 +18290,7 @@ window.BANKMA2 = [
     "t": "<p>En elev säger: ”Om korrelationskoefficienten är nära 0 finns det inget samband alls mellan variablerna.”</p><p>Förklara varför påståendet inte alltid stämmer.</p>",
     "s": "<p>En korrelationskoefficient nära 0 betyder att det inte finns något tydligt linjärt samband.</p><p>Det kan ändå finnas ett annat slags samband, till exempel ett böjt eller periodiskt samband.</p><p><strong>Alltså betyder \\(r\\approx 0\\) att det linjära sambandet är svagt, inte nödvändigtvis att allt samband saknas.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.131",
@@ -21829,10 +18306,7 @@ window.BANKMA2 = [
     "s": "<p>a) I diagram A ligger punkterna tydligt närmare en rät linje än i diagram B.</p><p>Därför har diagram A starkast linjärt samband.</p><p>b) I diagram A ökar y när x ökar, så sambandet är positivt.</p><p><strong>a) Diagram A. b) Positivt samband.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.132",
@@ -21848,11 +18322,7 @@ window.BANKMA2 = [
     "t": "<p>En studie får korrelationskoefficienten \\(r=-0{,}88\\) mellan två variabler.</p><p>Beskriv vad detta säger om det linjära sambandet och vad det inte säger om orsak.</p>",
     "s": "<p>Värdet ligger nära -1 och visar därför ett starkt negativt linjärt samband: när den ena variabeln ökar tenderar den andra att minska.</p><p>Korrelationskoefficienten visar däremot inte att förändringen i den ena variabeln orsakar förändringen i den andra.</p><p><strong>Starkt negativt linjärt samband, men ingen säker slutsats om orsak.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.133",
@@ -21868,11 +18338,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten beskriver styrkan och riktningen i ett linjärt samband; värden nära \\(\\pm1\\) betyder starkt linjärt samband.</p><p>Punkterna ligger nära en stigande rät linje.</p><p><strong>0,96 är rimligast.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.134",
@@ -21888,11 +18354,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten mäter styrkan i ett <em>linjärt</em> samband.</p><p>Ett tydligt böjt samband kan vara starkt utan att \\(r\\) ligger nära 1.</p><p><strong>Påståendet behöver alltså inte vara sant.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.135",
@@ -21908,11 +18370,7 @@ window.BANKMA2 = [
     "s": "<p>Ett exempel är punkter som ligger nära en parabel, till exempel \\(y=x^2\\) med \\(x\\)-värden symmetriskt kring 0.</p><p>Då finns ett tydligt icke-linjärt samband: \\(y\\) bestäms av \\(x\\). Men när \\(x\\) går från negativa värden mot 0 minskar \\(y\\), och när \\(x\\) går från 0 mot positiva värden ökar \\(y\\).</p><p>De positiva och negativa linjära tendenserna tar i stort sett ut varandra, så den <em>linjära</em> korrelationskoefficienten kan bli nära 0.</p><p><strong>\\(r\\approx0\\) betyder därför inget tydligt linjärt samband, inte nödvändigtvis inget samband alls.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.185",
@@ -21928,11 +18386,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna visar ett <strong>positivt</strong> linjärt samband, men de ligger inte särskilt tätt längs en rät linje.</p><p>Sambandet är därför inte svagt nära 0, och inte heller starkt negativt.</p><p><strong>Det rimligaste värdet är 0,58.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.186",
@@ -21948,11 +18402,7 @@ window.BANKMA2 = [
     "s": "<p>När \\(x\\) ökar tenderar \\(y\\) att minska, alltså är sambandet <strong>negativt</strong>.</p><p>Punkterna ligger inte mycket tätt kring en rät linje, så sambandet är inte extremt starkt.</p><p><strong>Det rimligaste värdet är −0,54.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.187",
@@ -21968,11 +18418,7 @@ window.BANKMA2 = [
     "s": "<p>Punkterna visar ett <strong>positivt</strong> linjärt samband, men det är ganska svagt eftersom spridningen är stor.</p><p>Ett värde nära 1 skulle betyda ett mycket starkt linjärt samband, vilket inte stämmer här.</p><p><strong>Det rimligaste värdet är 0,40.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.188",
@@ -21988,11 +18434,7 @@ window.BANKMA2 = [
     "s": "<p>Det är svårt att se något tydligt linjärt samband i diagrammet. Om något finns en mycket svag positiv tendens.</p><p>Därför passar ett värde nära 0 bäst.</p><p><strong>Det rimligaste värdet är 0,15.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.189",
@@ -22008,11 +18450,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom \\(r\\) är positiv finns ett <strong>positivt</strong> linjärt samband.</p><p>Värdet ligger inte nära 1, så sambandet är inte starkt.</p><p><strong>Det finns ett svagt positivt linjärt samband.</strong></p>",
     "familj": "korrelation_koefficient__tolka_korrelationskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.190",
@@ -22028,11 +18466,7 @@ window.BANKMA2 = [
     "s": "<p>Båda sambanden är positiva eftersom båda värdena är större än 0.</p><p>Värdet \\(0,71\\) ligger betydligt närmare 1 än \\(0,27\\), så det beskriver ett starkare linjärt samband.</p><p><strong>Det första sambandet är svagt positivt, medan det andra är tydligt starkare positivt.</strong></p>",
     "familj": "korrelation_koefficient__jamfora_korrelationsstyrka",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.136",
@@ -22048,10 +18482,7 @@ window.BANKMA2 = [
     "t": "<p>Följande mätvärden har samlats in.</p><table class=\"data\"><tr><th>x</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>y</td><td>7,1</td><td>9,0</td><td>11,2</td><td>12,9</td><td>15,1</td></tr></table><p>Bestäm en linjär regressionsmodell med ett digitalt verktyg och använd modellen för att uppskatta \\(y\\) när \\(x=6\\).</p>",
     "s": "<p>En linjär regression ger ungefär \\(y=1{,}99x+5{,}09\\).</p><p>För \\(x=6\\) blir modellvärdet \\(y\\approx1{,}99\\cdot6+5{,}09=17{,}03\\).</p><p><strong>En modell är \\(y\\approx1{,}99x+5{,}09\\), och vid \\(x=6\\) blir prognosen cirka 17,0.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.137",
@@ -22067,10 +18498,7 @@ window.BANKMA2 = [
     "s": "<p>a) Talet 4,2 är modellens riktningskoefficient. När \\(x\\) ökar med 1 väntas \\(y\\) öka med ungefär 4,2.</p><p>b) Sätt in \\(x=5\\):</p><p>\\(y=4,2\\cdot5+18=21+18=39\\).</p><p><strong>a) \\(y\\) ökar med ungefär 4,2 per enhet i \\(x\\). b) \\(y=39\\).</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.138",
@@ -22086,10 +18514,7 @@ window.BANKMA2 = [
     "s": "<p>En linjär regression i GeoGebra ger ungefär</p><p>\\(y=2,5x+4,7\\).</p><p>För \\(x=6\\): \\(y=2,5\\cdot6+4,7=19,7\\).</p><p><strong>Modellen är \\(y\\approx2,5x+4,7\\) och ger \\(y\\approx19,7\\).</strong></p>",
     "familj": "linjar_regression__bestam_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.139",
@@ -22105,10 +18530,7 @@ window.BANKMA2 = [
     "s": "<p>Med linjär regression i GeoGebra, till exempel via en punktlista och kommandot <code>AnpassaLinje</code>, fås</p><p><strong>\\(y\\approx3,00x+8,80\\).</strong></p>",
     "familj": "linjar_regression__bestam_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.140",
@@ -22124,11 +18546,7 @@ window.BANKMA2 = [
     "s": "<p>\\(h(20)=3,2\\cdot20+14=78\\).</p><p>Men 20 ligger långt utanför mätområdet 0–8, så detta är prognos långt utanför mätintervallet och osäkert.</p><p><strong>Modellvärdet är 78, men prognosen är osäker.</strong></p>",
     "familj": "linjar_regression__anvanda_regressionsmodell_for_prognos",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.141",
@@ -22144,10 +18562,7 @@ window.BANKMA2 = [
     "s": "<p>a) Med alla fem punkter ger GeoGebra ungefär \\(y=3,8x-2,6\\).</p><p>b) För de fyra första punkterna ligger punkterna exakt på linjen \\(y=2x+1\\).</p><p>c) Punkten \\((5,20)\\) ligger långt från det mönster som de första fyra punkterna följer. När den tas med ändras både riktningskoefficienten och skärningen med \\(y\\)-axeln tydligt.</p><p><strong>En enstaka mätpunkt som avviker mycket kan därför påverka den linjära regressionsmodellen kraftigt.</strong></p>",
     "familj": "linjar_regression__bestam_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.142",
@@ -22163,10 +18578,7 @@ window.BANKMA2 = [
     "s": "<p>Beräkningen går att göra, men \\(x=30\\) ligger långt utanför dataintervallet.</p><p>Det är prognos långt utanför mätintervallet, så osäkerheten är stor.</p><p><strong>Eleven bör tydligt ange att prognosen är osäker eftersom den bygger på lång prognos långt utanför mätintervallet.</strong></p>",
     "familj": "linjar_regression__anvanda_regressionsmodell_for_prognos",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.143",
@@ -22182,10 +18594,7 @@ window.BANKMA2 = [
     "s": "<p>a) Modellen säger att testresultatet ökar med ungefär 1,8 enheter för varje extra träningspass.</p><p>b) \\(y=1,8\\cdot10+42=60\\).</p><p><strong>Ökning cirka 1,8 enheter per pass; modellen ger resultatet 60 efter 10 pass.</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.144",
@@ -22201,11 +18610,7 @@ window.BANKMA2 = [
     "s": "<p>Modellen ger \\(2,4\\cdot40+31=127\\).</p><p>Men \\(x=40\\) ligger långt utanför dataintervallet. Det är en prognos långt utanför mätintervallet.</p><p><strong>Modellvärdet är 127, men prognosen är osäker.</strong></p>",
     "familj": "linjar_regression__extrapolation_och_modellbegransning",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.145",
@@ -22221,11 +18626,7 @@ window.BANKMA2 = [
     "s": "<p>Modellen når 0 när \\(100-1,8n=0\\Rightarrow n\\approx55,6\\). Det ligger långt utanför det uppmätta intervallet \\(0\\le n\\le10\\), så det är en mycket lång prognos långt utanför mätintervallet. Modellen behöver inte fortsätta linjärt så långt.</p><p>\\(r=-0,98\\) visar ett starkt negativt linjärt samband i mätningarna, men korrelation visar inte att en enda faktor orsakar hela förändringen.</p><p><strong>Inget av påståendena är tillräckligt underbyggt.</strong></p>",
     "familj": "linjar_regression__anvanda_regressionsmodell_for_prognos",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.146",
@@ -22241,11 +18642,7 @@ window.BANKMA2 = [
     "s": "<p>a) Regressionen ger ungefär \\(y=5,7x+42,9\\).</p><p>b) \\(y(8)=5,7\\cdot8+42,9=88,5\\).</p><p>c) Mätvärdena ligger endast mellan \\(x=1\\) och \\(x=5\\). Värdet vid \\(x=8\\) är en prognos långt utanför mätintervallet, så vi vet inte om det linjära sambandet fortsätter så långt.</p><p><strong>Modell: \\(y\\approx5,7x+42,9\\), prognos \\(88,5\\), men prognosen är osäker eftersom den ligger utanför dataintervallet.</strong></p><p><strong>GeoGebra:</strong> Lägg x- och y-värden i två kolumner i kalkylbladet, markera dem och öppna tvåvariabelanalys. Välj den regressionsmodell som uppgiften efterfrågar och läs av modellen. Rita gärna modellen tillsammans med punkterna för att kontrollera hur väl linjen följer datapunkterna.</p>",
     "familj": "linjar_regression__bestam_regressionsmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.147",
@@ -22261,11 +18658,7 @@ window.BANKMA2 = [
     "s": "<p>Modellen ger visserligen \\(3,2\\cdot30+48=144\\), men \\(x=30\\) ligger långt utanför mätområdet 2–8. Det är en stor prognos långt utanför mätintervallet och därför finns det inget bra stöd för att använda modellen så långt.</p><p>Det höga värdet på \\(r\\) visar ett starkt linjärt samband i datamaterialet, men inte ett orsakssamband. Andra faktorer kan påverka både utbildningstid och produktion.</p><p><strong>Inget av påståendena är tillräckligt motiverat av undersökningen.</strong></p>",
     "familj": "linjar_regression__anvanda_regressionsmodell_for_prognos",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.148",
@@ -22281,10 +18674,7 @@ window.BANKMA2 = [
     "s": "<p>Modellens värde är \\(4,2\\cdot7+18=47,4\\).</p><p>Skillnaden blir \\(44-47,4=-3,4\\).</p><p>Det negativa tecknet betyder att det uppmätta värdet ligger 3,4 enheter under modellens värde.</p><p><strong>Modellen överskattar alltså mätvärdet med 3,4 enheter.</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.149",
@@ -22300,11 +18690,7 @@ window.BANKMA2 = [
     "s": "<p>Värdet visar ett starkt positivt linjärt samband. Men korrelation visar inte orsakssamband; andra faktorer kan påverka båda variablerna.</p><p><strong>Starkt samband, men inget bevis för orsak.</strong></p>",
     "familj": "korrelation_koefficient__tolka_korrelationskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.150",
@@ -22320,11 +18706,7 @@ window.BANKMA2 = [
     "t": "<p>Fyra skolor jämförs. För varje skola anges antal elever och antal utlånade biblioteksböcker under en månad.</p><table class=\"data\"><tr><th>Elever</th><th>Biblioteksutlån</th></tr><tr><td>200</td><td>600</td></tr><tr><td>400</td><td>1200</td></tr><tr><td>600</td><td>1800</td></tr><tr><td>800</td><td>2400</td></tr></table><p>En elev beräknar en perfekt positiv korrelation och drar slutsatsen att större skolor får varje elev att låna fler böcker. Bedöm slutsatsen.</p>",
     "s": "<p>Antalet utlån är exakt tre gånger elevantalet i varje skola. Därför är korrelationen mellan de två angivna antalen perfekt positiv.</p><p>Men antalet utlån per elev är \\(600/200=1200/400=1800/600=2400/800=3\\) i alla skolor.</p><p>Det finns alltså inget stöd i materialet för att en elev lånar fler böcker på en större skola.</p><p><strong>Slutsatsen är fel. Den perfekta korrelationen beror här på att båda de angivna antalen ökar med skolans storlek.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.151",
@@ -22341,10 +18723,7 @@ window.BANKMA2 = [
     "s": "<p>a) De 5 % högsta börjar vid den 95:e percentilen. GeoGebra ger cirka 87,0.</p><p>b) Med vänsterarean 0,20 fås cirka 57,2.</p><p><strong>a) Cirka 87,0. b) Cirka 57,2.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__bestam_gransvarde_fran_sannolikhet",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.152",
@@ -22361,10 +18740,7 @@ window.BANKMA2 = [
     "s": "<p>I GeoGebras Sannolikhetskalkylator anger du medelvärdet 40 och standardavvikelsen 5 och markerar området till vänster om 45.</p><p><strong>Andelen är cirka 0,841, alltså 84,1 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.153",
@@ -22381,11 +18757,7 @@ window.BANKMA2 = [
     "s": "<p>a) Sannolikhetskalkylatorn ger cirka 42,0 för den 10:e percentilen och 66,0 för den 90:e.</p><p>b) Normalfördelningen är symmetrisk kring medelvärdet 54. De två percentilerna lämnar lika stor andel, 10 %, i varsin ände.</p><p>c) Mellan gränserna ligger 80 % av resultaten. \\(0,80\\cdot1200=960\\).</p><p><strong>a) Cirka 42,0 och 66,0. c) Cirka 960 resultat.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.154",
@@ -22402,10 +18774,7 @@ window.BANKMA2 = [
     "s": "<p>Två standardavvikelser under medelvärdet är</p><p>\\(50-2\\cdot8=34\\).</p><p><strong>Värdet är 34.</strong></p>",
     "familj": "normalfordelat_material__andel_over_eller_under_grans",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.155",
@@ -22422,10 +18791,7 @@ window.BANKMA2 = [
     "t": "<p>Vikten hos en produkt är ungefär normalfördelad med medelvärdet 500 g och standardavvikelsen 8 g. En låda innehåller 2 000 produkter.</p><p>Uppskatta hur många produkter som väger mellan 484 g och 516 g.</p>",
     "s": "<p>484 och 516 ligger två standardavvikelser från medelvärdet eftersom \\(16=2\\cdot8\\).</p><p>Mellan \\(\\mu-2\\sigma\\) och \\(\\mu+2\\sigma\\) ligger enligt formelbladet ungefär</p><p>\\[2(34{,}1\\%+13{,}6\\%)=95{,}4\\%.\\]</p><p>\\[0{,}954\\cdot2000=1908.\\]</p><p><strong>Ungefär 1 908 produkter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.156",
@@ -22442,10 +18808,7 @@ window.BANKMA2 = [
     "s": "<p>Klass A har mindre spridning och därmed jämnare resultat. Men man kan inte avgöra exakt hur resultaten är fördelade eller om någon klass har fler extrema värden.</p><p><strong>Klass A är jämnare, men standardavvikelsen beskriver inte hela fördelningen.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.157",
@@ -22462,10 +18825,7 @@ window.BANKMA2 = [
     "s": "<p>a) De fem första talen har summan 50. Sex tal med medelvärdet 10 måste ha summan 60, alltså är det nya värdet 10.</p><p>b) Med ett digitalt verktyg fås standardavvikelsen cirka 2,28 före och cirka 2,08 efter.</p><p>Det nya värdet ligger exakt vid medelvärdet och gör därför materialet relativt mer samlat kring medelvärdet.</p><p><strong>Det sjätte värdet är 10 och standardavvikelsen minskar.</strong></p>",
     "familj": "standardavvikelse__berakna_med_digitalt_verktyg",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.158",
@@ -22481,10 +18841,7 @@ window.BANKMA2 = [
     "s": "<p>Tolka först regressionslinjens riktningskoefficient och konstantterm i sammanhanget innan du gör beräkningen.</p><p>a) \\(1,8\\cdot15+24=51\\).</p><p>b) När \\(x\\) ökar med 1 ökar modellens värde med 1,8.</p><p><strong>a) 51. b) Ökningen per enhet i \\(x\\) är 1,8.</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.159",
@@ -22500,11 +18857,7 @@ window.BANKMA2 = [
     "s": "<p>Lösningen till \\(24-1,6t=-20\\) är \\(t=27,5\\) timmar. Men detta ligger långt utanför intervallet där modellen byggts upp. Det är därför en prognos långt utanför mätintervallet och modellen behöver inte gälla där. Temperaturen kan också påverkas av andra faktorer och inte fortsätta minska linjärt.</p><p><strong>Beräkningen är korrekt inom modellen, men slutsatsen om verkligheten är inte säker.</strong></p>",
     "familj": "linjar_regression__anvanda_regressionsmodell_for_prognos",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.160",
@@ -22520,10 +18873,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(4,6\\cdot12+28=83,2\\).</p><p>b) Modellen ger värdet 28 när \\(x=0\\).</p><p><strong>a) 83,2. b) Startvärdet i modellen är 28.</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.161",
@@ -22539,11 +18889,7 @@ window.BANKMA2 = [
     "t": "<p>Vilket av talen \\(0{,}28\\), \\(0{,}91\\) och \\(-0{,}77\\) visar det starkaste positiva linjära sambandet?</p>",
     "s": "<p>Det starkaste positiva linjära sambandet ges av det positiva tal som ligger närmast 1.</p><p><strong>\\(0{,}91\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.162",
@@ -22559,10 +18905,7 @@ window.BANKMA2 = [
     "t": "<p>Följande datapunkter hör till ett datamaterial.</p><table class=\"data\"><tr><th>x</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td>y</td><td>8</td><td>6</td><td>4</td><td>2</td></tr></table><p>Bestäm korrelationskoefficienten.</p>",
     "s": "<p>Punkterna ligger exakt på den räta linjen \\(y=-2x+10\\).</p><p>Det är alltså ett perfekt negativt linjärt samband.</p><p><strong>Korrelationskoefficienten är \\(r=-1\\).</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.163",
@@ -22579,10 +18922,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom omvandlingen \\(y=1,5x-10\\) är strikt växande bevaras ordningen. Percentilerna omvandlas därför med samma formel.</p><p>Ny första kvartil: \\(1,5\\cdot48-10=62\\).</p><p>Ny tredje kvartil: \\(1,5\\cdot72-10=98\\).</p><p>Nytt kvartilavstånd: \\(98-62=36\\).</p><p>Det ursprungliga kvartilavståndet var \\(72-48=24\\), och det har som väntat multiplicerats med 1,5.</p><p><strong>\\(Q_1=62\\), \\(Q_3=98\\), kvartilavstånd 36.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.164",
@@ -22599,10 +18939,7 @@ window.BANKMA2 = [
     "s": "<p>Materialet har 8 värden. Medianen är medelvärdet av det 4:e och 5:e värdet:</p><p>\\((7+9)/2=8\\).</p><p>Den undre halvan är 2, 4, 5, 7, så \\(Q_1=(4+5)/2=4,5\\).</p><p>Den övre halvan är 9, 11, 13, 18, så \\(Q_3=(11+13)/2=12\\).</p><p><strong>\\(Q_1=4,5\\), median 8, \\(Q_3=12\\).</strong></p>",
     "familj": "kvartiler_percentiler__median_och_kvartiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.165",
@@ -22619,10 +18956,7 @@ window.BANKMA2 = [
     "s": "<p>Med 9 värden är det femte värdet medianen, alltså 8.</p><p>Välj till exempel värden så att medianen av de fyra första blir 5 och medianen av de fyra sista blir 11.</p><p>Ett möjligt material är</p><p>\\(2,4,6,7,8,10,12,14,18\\).</p><p>Första kvartilen blir \\((4+6)/2=5\\) och tredje kvartilen \\((10+12)/2=11\\).</p><p><strong>Detta är ett möjligt svar.</strong></p>",
     "familj": "ladagram__rita_ladagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.166",
@@ -22639,10 +18973,7 @@ window.BANKMA2 = [
     "s": "<p>Kvartilavståndet beskriver spridningen hos de mittersta 50 % av observationerna.</p><p>Klass A har kvartilavstånd 8 och klass B 15.</p><p><strong>Klass B har därför större spridning i den mittersta halvan av resultaten.</strong></p>",
     "familj": "ladagram__avlas_ladagram",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.167",
@@ -22658,11 +18989,7 @@ window.BANKMA2 = [
     "t": "<p>Vilket av talen \\(-0{,}12\\), \\(-0{,}85\\) och \\(0{,}63\\) visar det starkaste negativa linjära sambandet?</p>",
     "s": "<p>Det starkaste negativa linjära sambandet ges av det negativa tal som ligger närmast \\(-1\\).</p><p><strong>\\(-0{,}85\\)</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.168",
@@ -22678,11 +19005,7 @@ window.BANKMA2 = [
     "s": "<p>a) En avvikande punkt som inte följer mönstret brukar försvaga det linjära sambandet. Därför blir korrelationskoefficienten ofta mindre i absolutbelopp.</p><p>b) Regressionslinjen försöker ta hänsyn till alla punkter. En tydlig avvikande punkt kan därför dra linjen mot sig, så att både riktningskoefficient och skärning förändras.</p><p><strong>En avvikande punkt kan alltså både minska korrelationen och flytta regressionslinjen märkbart.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.169",
@@ -22698,11 +19021,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten påverkas både av riktningen i punktmönstret och av hur nära punkterna ligger ett linjärt samband.</p><p>P ligger långt från mönstret som de övriga punkterna följer och kan därför påverka värdet på korrelationskoefficienten tydligt.</p><p><strong>Påståendet är alltså inte korrekt. En enda mycket avvikande punkt kan få stor betydelse i ett litet material.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.170",
@@ -22718,10 +19037,7 @@ window.BANKMA2 = [
     "s": "<p>Korrelationskoefficienten beskriver styrkan och riktningen i ett linjärt samband; värden nära \\(\\pm1\\) betyder starkt linjärt samband.</p><p>Punkterna ligger nära en fallande rät linje. Sambandet är därför starkt negativt.</p><p><strong>A) \\(r\\approx-0,95\\).</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.171",
@@ -22738,10 +19054,7 @@ window.BANKMA2 = [
     "s": "<p>92:a percentilen innebär att ungefär 92 % ligger på eller under resultatet.</p><p>Alltså ligger cirka 8 % högre.</p><p>\\(0,08\\cdot850=68\\).</p><p><strong>Cirka 68 resultat.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.172",
@@ -22758,11 +19071,7 @@ window.BANKMA2 = [
     "t": "<p>Två datamaterial har samma minsta värde 0, samma median 10 och samma största värde 20. För material A är nedre och övre kvartil 4 och 16. För material B är de 8 och 12.</p><p>En elev säger: ”Materialen är lika utspridda eftersom variationsbredden är samma.” Bedöm påståendet.</p>",
     "s": "<p>Variationsbredden är 20 för båda materialen, så sett enbart till minsta och största värde är spridningen lika.</p><p>Men kvartilavståndet för A är \\(16-4=12\\), medan det för B är \\(12-8=4\\).</p><p>De mittersta 50 % av observationerna är alltså betydligt mer samlade i B.</p><p><strong>Påståendet är ofullständigt. Samma variationsbredd betyder inte att materialen har samma spridning i övrigt; B har mycket mindre kvartilavstånd.</strong></p>",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.173",
@@ -22779,11 +19088,7 @@ window.BANKMA2 = [
     "s": "<p>Båda materialen har samma medelvärde, så skillnaden ligger i spridningen.</p><p>Standardavvikelsen är 1,8 i A och 4,9 i B.</p><p>Eftersom 4,9 är större ligger värdena i B i genomsnitt längre från medelvärdet.</p><p><strong>Material B har större spridning.</strong></p>",
     "familj": "standardavvikelse__jamfora_spridning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.174",
@@ -22800,10 +19105,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet omvandlas med samma linjära formel: \\(3\\cdot35-10=95\\).</p><p>Standardavvikelsen multipliceras med absolutbeloppet av skalningsfaktorn 3: \\(3\\cdot6=18\\).</p><p><strong>Nytt medelvärde 95 och standardavvikelse 18.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.175",
@@ -22820,10 +19122,7 @@ window.BANKMA2 = [
     "s": "<p>Exempel: A: 0, 0, 0, 3, 3 och B: 0, 0, 1, 1, 4. Båda har medelvärdet 1,2 och samma standardavvikelse, men medianerna är 0 respektive 1.</p><p><strong>Det visar att samma medelvärde och standardavvikelse inte bestämmer medianen.</strong></p>",
     "familj": "standardavvikelse__berakna_och_tolka_standardavvikelse",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.176",
@@ -22840,10 +19139,7 @@ window.BANKMA2 = [
     "s": "<p>Av normalfördelningsfiguren på formelbladet framgår att ungefär 95,4 % ligger mellan \\(\\mu-2\\sigma\\) och \\(\\mu+2\\sigma\\).</p><p>\\(30\\pm2\\cdot4=30\\pm8\\).</p><p><strong>Intervallet är 22 till 38.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.177",
@@ -22860,10 +19156,7 @@ window.BANKMA2 = [
     "s": "<p>Av normalfördelningsfiguren på formelbladet framgår att ungefär 68 % ligger mellan \\(\\mu-\\sigma\\) och \\(\\mu+\\sigma\\).</p><p>\\(70-6=64\\) och \\(70+6=76\\).</p><p><strong>Mellan 64 och 76.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.178",
@@ -22880,10 +19173,7 @@ window.BANKMA2 = [
     "s": "<p>a) I Sannolikhetskalkylatorn med medelvärde 80 och standardavvikelse 10 ger området till höger om 95 cirka 0,0668, alltså 6,7 %.</p><p>b) I grupp B söker vi därför ett gränsvärde som har 93,32 % av värdena på eller under sig. Med medelvärde 76 och standardavvikelse 14 fås cirka 97,0.</p><p><strong>a) Cirka 6,7 %. b) Cirka 97.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_over_under",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.179",
@@ -22899,10 +19189,7 @@ window.BANKMA2 = [
     "s": "<p>Material A ligger i huvudsak nära en stigande rät linje, medan material B är stigande men tydligt böjt.</p><p>Korrelationskoefficienten mäter hur väl ett <em>linjärt</em> samband stämmer.</p><p>Därför bör <strong>material A</strong> ha \\(r\\)-värdet närmast 1.</p><p>Om den avvikande punkten i A tas bort blir sambandet ännu mer linjärt.</p><p><strong>Då ökar korrelationskoefficienten och kommer ännu närmare 1.</strong></p>",
     "familj": "korrelation_koefficient__uppskatta_r_fran_diagram",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.180",
@@ -22918,11 +19205,7 @@ window.BANKMA2 = [
     "s": "<p>Nej. En hög korrelation visar att variablerna samvarierar, men den visar inte att den ena orsakar den andra.</p><p>En möjlig bakomliggande variabel är temperaturen. Varma dagar kan både öka glassförsäljningen och göra att fler personer badar.</p><p><strong>Korrelation innebär inte automatiskt orsakssamband.</strong></p>",
     "familj": "korrelation_koefficient__tolka_korrelationskoefficient",
     "miniräknare": false,
-    "geogebra": false,
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.181",
@@ -22939,10 +19222,7 @@ window.BANKMA2 = [
     "s": "<p>70 och 90 är \\(\\mu-\\sigma\\) respektive \\(\\mu+\\sigma\\).</p><p>Av normalfördelningsfiguren på formelbladet ligger ungefär \\(34,1+34,1=68,2\\) % mellan dessa värden.</p><p><strong>Andelen är ungefär 68,2 %.</strong></p>",
     "familj": "normalfordelning_digitala_verktyg__berakna_sannolikhet_i_intervall",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.182",
@@ -22958,11 +19238,7 @@ window.BANKMA2 = [
     "s": "<p>a) Riktningskoefficienten 3,8 betyder att modellen förutsäger att testresultatet ökar med ungefär 3,8 enheter för varje ytterligare träningsvecka.</p><p>b) Mätdata ligger bara kring \\(x=1\\) till \\(6\\). Att använda modellen vid \\(x=30\\) är en lång prognos långt utanför mätintervallet. Det finns inget i data som visar att ökningen fortsätter linjärt så länge.</p><p><strong>Modellen kan beskriva det observerade intervallet väl utan att vara tillförlitlig vid 30 veckor.</strong></p>",
     "familj": "linjar_regression__tolka_regressionskoefficienter",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "4.183",
@@ -22979,10 +19255,7 @@ window.BANKMA2 = [
     "s": "<p>90:e percentilen innebär att ungefär 90 % ligger på eller under elevens resultat.</p><p>Då ligger cirka 10 % högre.</p><p>\\(0,10\\cdot320=32\\).</p><p><strong>Cirka 32 resultat ligger högre.</strong></p>",
     "familj": "kvartiler_percentiler__percentiler",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "4.184",
@@ -22999,10 +19272,7 @@ window.BANKMA2 = [
     "s": "<p>112 är en standardavvikelse över medelvärdet: \\(100+12=112\\).</p><p>Omkring 15,9 % av en normalfördelning ligger över \\(\\mu+\\sigma\\).</p><p><strong>Andelen är cirka 15,9 %.</strong></p>",
     "familj": "normalfordelat_material__andel_i_intervall",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.01",
@@ -23017,10 +19287,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) vara antal Bas och \\(y\\) antal Plus.</p><p>\\[\\begin{cases}x+y=18\\\\8000x+12000y=176000\\end{cases}\\]</p><p>Dividera den andra ekvationen med 4 000: \\(2x+3y=44\\). Dubbel den första: \\(2x+2y=36\\). Subtraktion ger \\(y=8\\), och då \\(x=10\\).</p><p>b) De rörliga kostnaderna blir \\(10\\cdot2500+8\\cdot4000=57000\\) kr.</p><p>\\(176000-57000=119000\\).</p><p><strong>10 Bas och 8 Plus. Efter de angivna rörliga kostnaderna återstår 119 000 kr.</strong></p>",
     "familj": "ekonomiprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.02",
@@ -23035,11 +19302,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(K(t)=230000\\):</p><p>\\(180000\\cdot1,05^t=230000\\).</p><p>Dividera med 180 000:</p><p>\\(1,05^t=\\frac{230}{180}\\).</p><p>Ta \\(\\lg\\) av båda leden:</p><p>\\(t\\lg1,05=\\lg(230/180)\\).</p><p>\\(t=\\frac{\\lg(230/180)}{\\lg1,05}\\approx5,02\\).</p><p><strong>Kapitalet når 230 000 kr efter cirka 5,0 år.</strong></p>",
     "familj": "ekonomiprogrammet__logaritm_och_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.03",
@@ -23054,11 +19317,7 @@ window.BANKMA2 = [
     "s": "<p>Gränsen ska vara den 90:e percentilen, eftersom 90 % ska ligga under den.</p><p>Använd normalfördelningens sannolikhetskalkylator i GeoGebra med medelvärde 4 800 och standardavvikelse 900 och bestäm det värde som har 0,90 av arean till vänster.</p><p>Det ger ungefär \\(5953\\) kr.</p><p><strong>Gränsen är cirka 5 950 kr.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.04",
@@ -23073,10 +19332,7 @@ window.BANKMA2 = [
     "s": "<p>Riktningskoefficienten 18,5 betyder att modellen förknippar en ökning av reklamkostnaden med 1 000 kr med en ökning av veckoförsäljningen med cirka 18 500 kr.</p><p>Konstanten 240 betyder att modellen ger en veckoförsäljning på 240 000 kr när reklamkostnaden är 0 kr.</p><p><strong>18,5 beskriver modellens förändring per extra tusen kronor reklam och 240 är modellens värde vid 0 kr reklam.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.05",
@@ -23091,10 +19347,7 @@ window.BANKMA2 = [
     "s": "<p>a) Eftersom \\(O(0)=3,20\\) är \\(C=3,20\\).</p><p>\\(3,20a^4=4,685\\), alltså \\(a=\\sqrt[4]{4,685/3,20}\\approx1,10\\).</p><p>En modell är därför \\(O(t)\\approx3,20\\cdot1,10^t\\), där \\(O\\) mäts i miljoner kronor.</p><p>b) \\(O(7)\\approx3,20\\cdot1,10^7\\approx6,24\\).</p><p>c) Modellen bygger på utvecklingen under en begränsad period. Marknad, priser och efterfrågan kan förändras, så samma procentuella ökning behöver inte fortsätta.</p><p><strong>\\(O(t)\\approx3,20\\cdot1,10^t\\) och \\(O(7)\\approx6,24\\) miljoner kr.</strong></p>",
     "familj": "ekonomiprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.06",
@@ -23109,11 +19362,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt \\(R(x)=0\\):</p><p>\\(-5x^2+450x-7000=0\\).</p><p>Dividera med \\(-5\\): \\(x^2-90x+1400=0\\).</p><p>Faktorisera: \\((x-20)(x-70)=0\\).</p><p>Alltså \\(x=20\\) eller \\(x=70\\).</p><p>Eftersom \\(x\\) anges i hundratal motsvarar det 2 000 respektive 7 000 enheter.</p><p><strong>Resultatet är 0 vid 2 000 och 7 000 sålda enheter.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.07",
@@ -23128,10 +19377,7 @@ window.BANKMA2 = [
     "s": "<p>a) För de fem första kampanjerna blir \\(r\\approx1,00\\), alltså ett mycket starkt positivt linjärt samband.</p><p>b) När punkten \\((18,150)\\) tas med blir \\(r\\approx0,62\\).</p><p>c) Den sjätte punkten ligger långt från det mönster som de övriga punkterna följer. Därför minskar korrelationskoefficienten tydligt.</p><p><strong>En enda punkt som ligger tydligt utanför det övriga mönstret kan alltså förändra den uppmätta korrelationen mycket.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.08",
@@ -23146,10 +19392,7 @@ window.BANKMA2 = [
     "s": "<p>En minskning med 15 % ger förändringsfaktorn \\(0,85\\).</p><p>\\(V(t)=300000\\cdot0,85^t\\).</p><p>\\(V(4)=300000\\cdot0,85^4\\approx156602\\).</p><p><strong>\\(V(t)=300000\\cdot0,85^t\\) och värdet efter 4 år är cirka 157 000 kr.</strong></p>",
     "familj": "ekonomiprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.09",
@@ -23164,10 +19407,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara Bas och \\(y\\) Premium.</p><p>\\[\\begin{cases}x+y=420\\\\140x+220y=75600\\end{cases}\\]</p><p>Sätt \\(x=420-y\\):</p><p>\\(140(420-y)+220y=75600\\).</p><p>\\(58800+80y=75600\\), så \\(y=210\\) och \\(x=210\\).</p><p>Andelen Premium är \\(210/420=0,50=50\\%\\).</p><p><strong>210 Bas och 210 Premium. Målet uppfylldes eftersom 50 % var Premium.</strong></p>",
     "familj": "ekonomiprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.10",
@@ -23182,10 +19422,7 @@ window.BANKMA2 = [
     "s": "<p>Värdet ligger nära \\(-1\\), vilket betyder att det finns ett starkt negativt linjärt samband i datamaterialet.</p><p>När priset är högre tenderar antalet sålda enheter att vara lägre.</p><p><strong>Datamaterialet visar ett starkt negativt linjärt samband. Korrelationskoefficienten visar däremot inte i sig att priset är den enda orsaken till förändringen.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.11",
@@ -23200,10 +19437,7 @@ window.BANKMA2 = [
     "s": "<p>Intäkten är \\(pq\\). De rörliga kostnaderna är \\(20q\\). Därför</p><p>\\(V=(p-20)q-6000\\).</p><p>Sätt in \\(q=1200-15p\\):</p><p>\\(V(p)=(p-20)(1200-15p)-6000=-15p^2+1500p-30000\\).</p><p>Parabelns symmetrilinje är \\(p=-\\frac{1500}{2(-15)}=50\\).</p><p>\\(V(50)=7500\\).</p><p><strong>Priset 50 kr ger enligt modellen den största vinsten, 7 500 kr per månad.</strong></p>",
     "familj": "ekonomiprogrammet__linjar_modell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.12",
@@ -23218,11 +19452,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet är \\(32500\\pm4500\\), alltså en standardavvikelse från medelvärdet åt varje håll.</p><p>Med GeoGebras sannolikhetskalkylator fås sannolikheten ungefär \\(0,683\\).</p><p><strong>Cirka 68,3 % av ordervärdena ligger i intervallet.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.13",
@@ -23237,11 +19467,7 @@ window.BANKMA2 = [
     "s": "<p>\\(r=0,91\\) visar ett starkt positivt linjärt samband i det undersökta datamaterialet, men korrelation bevisar inte orsak.</p><p>Till exempel kan säsong, prisändringar, andra kampanjer, sortiment eller allmän efterfrågan påverka både annonskostnad och försäljning.</p><p><strong>Påståendet är för starkt. Data visar ett samband, men inte att annonskostnaden ensam orsakar försäljningsökningen.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.14",
@@ -23256,11 +19482,7 @@ window.BANKMA2 = [
     "s": "<p>Standardavvikelsen beskriver hur mycket värdena varierar kring medelvärdet.</p><p>Eftersom \\(21000>8000\\) varierar försäljningen mer i butik B.</p><p><strong>Butik B har störst variation.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.15",
@@ -23275,11 +19497,7 @@ window.BANKMA2 = [
     "s": "<p>a) Linjär regression ger ungefär \\(y=13,6x+64,7\\). En exponentialmodell blir ungefär \\(y=71,84\\cdot1,129^x\\).</p><p>För dessa sex punkter ligger exponentialmodellen tydligare närmare mätvärdena.</p><p>b) Med exponentialmodellen blir \\(y(8)\\approx190\\).</p><p>c) Modellen bygger bara på de första sex månaderna. Efterfrågan kan förändras på ett annat sätt senare.</p><p><strong>Exponentialmodellen passar de givna punkterna bäst och ger cirka 190 enheter månad 8, men prognosen är osäker utanför den observerade perioden.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.16",
@@ -23294,11 +19512,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellens värde lika med gränsvärdet och lös \\(1200\\cdot1,08^t=2000\\).</p><p>\\(1,08^t=\\frac{5}{3}\\).</p><p>\\(t=\\frac{\\lg(5/3)}{\\lg1,08}\\approx6,64\\).</p><p><strong>Modellen passerar 2 000 kunder efter cirka 6,6 år.</strong></p>",
     "familj": "ekonomiprogrammet__logaritm_och_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.17",
@@ -23313,11 +19527,7 @@ window.BANKMA2 = [
     "s": "<p>a) Med normalfördelningens sannolikhetskalkylator fås sannolikheten ungefär 0,0668, alltså cirka 6,7 %.</p><p>b) Den 90:e percentilen är ungefär 23,1 minuter.</p><p>c) \\(200\\cdot0,0668\\approx13,4\\).</p><p><strong>Cirka 6,7 %, 90:e percentilen cirka 23,1 min och ungefär 13–14 order av 200.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.18",
@@ -23332,11 +19542,7 @@ window.BANKMA2 = [
     "s": "<p>Intäkten är</p><p>\\[I(p)=-10p^2+800p=-10p(p-80).\\]</p><p>Nollställena är \\(p=0\\) och \\(p=80\\). Symmetrilinjen ligger mitt emellan nollställena, alltså vid \\(p=40\\).</p><p>\\[I(40)=-10\\cdot40^2+800\\cdot40=16000.\\]</p><p><strong>Priset 40 kr ger den största intäkten, 16 000 kr.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.19",
@@ -23351,10 +19557,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) vara annonser i A och \\(y\\) annonser i B.</p><p>\\[\\begin{cases}x+y=21\\\\4000x+7000y=120000\\end{cases}\\]</p><p>Dividera den andra ekvationen med 1 000: \\(4x+7y=120\\).</p><p>Fyra gånger den första ger \\(4x+4y=84\\). Subtraktion ger \\(3y=36\\), alltså \\(y=12\\) och \\(x=9\\).</p><p>b) \\(9\\cdot35+12\\cdot50=915\\).</p><p><strong>9 annonser i A och 12 i B; kalkylen ger 915 kundkontakter.</strong></p>",
     "familj": "ekonomiprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.20",
@@ -23369,11 +19572,7 @@ window.BANKMA2 = [
     "s": "<p>\\(150000\\cdot1,04^t=200000\\).</p><p>\\(1,04^t=\\frac{4}{3}\\).</p><p>\\(t=\\frac{\\lg(4/3)}{\\lg1,04}\\approx7,33\\).</p><p><strong>Modellen når 200 000 kr efter cirka 7,3 år.</strong></p>",
     "familj": "ekonomiprogrammet__logaritm_och_exponentialekvation",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.21",
@@ -23388,11 +19587,7 @@ window.BANKMA2 = [
     "s": "<p>Först bestäms nollställena:</p><p>\\(-2x^2+200x-3200=0\\).</p><p>Dividera med \\(-2\\): \\(x^2-100x+1600=0=(x-20)(x-80)\\).</p><p>Parabeln är positiv mellan nollställena: \\(20<x<80\\).</p><p>Eftersom produktionen sker i hela femtal blir de möjliga nivåerna 25, 30, 35, ..., 75.</p><p><strong>Alla hela femtal från 25 till 75 enheter.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.22",
@@ -23407,11 +19602,7 @@ window.BANKMA2 = [
     "s": "<p>a) Vinsten är intäkt minus rörliga och fasta kostnader:</p><p>\\[V(p)=(p-25)(1500-20p)-5000=-20p^2+2000p-42500.\\]</p><p>b) Skriv om uttrycket med kvadratkomplettering:</p><p>\\[V(p)=-20(p^2-100p)-42500=-20(p-50)^2+7500.\\]</p><p>Eftersom \\((p-50)^2\\ge0\\) blir det största värdet 7 500 när \\(p=50\\).</p><p>c) Kravet \\(V(p)\\ge7000\\) ger</p><p>\\[-20p^2+2000p-49500\\ge0.\\]</p><p>Dividera med \\(-20\\) och vänd olikhetstecknet:</p><p>\\[p^2-100p+2475\\le0.\\]</p><p>Nollställena är \\(p=45\\) och \\(p=55\\). Parabeln ligger under eller på x-axeln mellan nollställena.</p><p><strong>a) \\(V(p)=-20p^2+2000p-42500\\). b) 50 kr ger den största vinsten, 7 500 kr. c) Heltalspriserna 45–55 kr uppfyller kravet.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.23",
@@ -23426,10 +19617,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(A(8)\\approx142210\\) kr och \\(B(8)=144000\\) kr, så B är större efter 8 år.</p><p>b) Lös \\(100000\\cdot1,045^t=100000+5500t\\) med GeoGebra. Förutom \\(t=0\\) fås \\(t\\approx9,77\\).</p><p>c) Vid skärningspunkten ger modellerna samma kapital. Före respektive efter punkten kan ordningen mellan alternativen vara olika.</p><p><strong>B är större år 8 och den andra skärningen ligger vid cirka 9,8 år.</strong></p>",
     "familj": "ekonomiprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.24",
@@ -23444,11 +19632,7 @@ window.BANKMA2 = [
     "s": "<p>Använd normalfördelningens sannolikhetskalkylator med medelvärde 12 500 och standardavvikelse 2 400.</p><p>Sannolikheten att beloppet är större än 15 000 kr blir ungefär 0,149.</p><p><strong>Sannolikheten är cirka 14,9 %.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.25",
@@ -23463,10 +19647,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara antal A och \\(y\\) antal B.</p><p>\\[\\begin{cases}x+y=500\\\\60x+110y=42500\\end{cases}\\]</p><p>Sätt \\(x=500-y\\): \\(60(500-y)+110y=42500\\).</p><p>\\(30000+50y=42500\\), så \\(y=250\\) och \\(x=250\\).</p><p>Typ B utgör \\(250/500=50\\%\\).</p><p><strong>Påståendet stämmer inte. Exakt hälften var typ B.</strong></p>",
     "familj": "ekonomiprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.26",
@@ -23481,11 +19662,7 @@ window.BANKMA2 = [
     "s": "<p>a) Lös \\(80000\\cdot1,06^t=105000+3000t\\) i GeoGebra. Skärningen är vid \\(t\\approx8,33\\) år. Efter den tidpunkten ligger A över B.</p><p>b) Med förändringsfaktorn 1,055 löses \\(80000\\cdot1,055^t=105000+3000t\\). Då fås \\(t\\approx9,61\\) år.</p><p>c) En minskning av den antagna årliga tillväxten med 0,5 procentenheter flyttar skärningen med ungefär 1,3 år. Slutsatsen om när A går om B är därför tydligt beroende av tillväxtantagandet.</p><p><strong>Cirka 8,3 år vid 6 % och 9,6 år vid 5,5 %.</strong></p>",
     "familj": "ekonomiprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.27",
@@ -23500,10 +19677,7 @@ window.BANKMA2 = [
     "s": "<p>Prognosen ligger långt utanför intervallet där modellen har jämförts med data. Det finns därför inget stöd i de fem observationerna för att sambandet fortsätter vara linjärt där.</p><p>Dessutom kan sambandet förändras när budgeten blir mycket större, till exempel genom att ytterligare annonsering ger mindre effekt än tidigare.</p><p><strong>En god hur väl modellen passar mätvärdena inom det observerade intervallet garanterar inte en god prognos långt utanför intervallet.</strong></p>",
     "familj": "ekonomiprogrammet__korrelation_och_regression",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.28",
@@ -23518,11 +19692,7 @@ window.BANKMA2 = [
     "s": "<p>a) Med medelvärde 240 och standardavvikelse 35 ger GeoGebra sannolikheten cirka 0,0433, alltså cirka 4,3 %, för att efterfrågan är större än 300 enheter.</p><p>b) Gränsen ska ha 97,5 % av fördelningen till vänster. GeoGebra ger ungefär 308,6. Ett heltalslager behöver därför vara cirka 309 enheter.</p><p>c) \\(0,025\\cdot250=6,25\\), alltså ungefär 6 dagar.</p><p>Modellen kan till exempel missa säsongsvariation, kampanjer eller plötsliga förändringar i efterfrågan.</p><p><strong>Cirka 4,3 %, cirka 309 enheter och ungefär 6 dagar av 250.</strong></p>",
     "familj": "ekonomiprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.29",
@@ -23537,11 +19707,7 @@ window.BANKMA2 = [
     "s": "<p>a) Vinsten är \\((p-35)q-8000\\). Sätt in \\(p=95-0{,}05q\\):</p><p>\\[V(q)=(60-0{,}05q)q-8000=-0{,}05q^2+60q-8000.\\]</p><p>b) Kvadratkomplettera:</p><p>\\[V(q)=-0{,}05(q^2-1200q)-8000=-0{,}05(q-600)^2+10000.\\]</p><p>Eftersom \\((q-600)^2\\ge0\\) blir det största värdet 10 000 när \\(q=600\\).</p><p><strong>600 enheter ger enligt modellen den största vinsten, 10 000 kr.</strong></p>",
     "familj": "ekonomiprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.30",
@@ -23556,11 +19722,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellens värde lika med gränsvärdet och lös \\(320000\\cdot0,82^t=150000\\) med logaritmer eller GeoGebra.</p><p>Den ger \\(t\\approx3,82\\).</p><p>Efter 3 hela år är värdet fortfarande över gränsen, men efter 4 år har det passerat under.</p><p><strong>Efter 4 hela år.</strong></p>",
     "familj": "ekonomiprogrammet__linjar_modell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.31",
@@ -23575,10 +19737,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) vara kortare besök och \\(y\\) längre besök.</p><p>\\[\\begin{cases}x+y=24\\\\25x+40y=735\\end{cases}\\]</p><p>Sätt \\(x=24-y\\): \\(25(24-y)+40y=735\\).</p><p>\\(600+15y=735\\), så \\(y=9\\) och \\(x=15\\).</p><p>b) Dokumentationen tar \\(24\\cdot8=192\\) minuter. Totalt \\(735+192=927\\) minuter.</p><p><strong>15 kortare och 9 längre besök; totalt 927 minuter inklusive dokumentation.</strong></p>",
     "familj": "vard_omsorgsprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.32",
@@ -23593,11 +19752,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(S(4)=800/4^2=800/16=50\\).</p><p>b) Lös \\(800/d^2=32\\).</p><p>\\(d^2=800/32=25\\), alltså \\(d=5\\) eftersom avståndet är positivt.</p><p><strong>\\(S(4)=50\\) och signalstyrkan 32 fås vid 5 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.33",
@@ -23612,11 +19767,7 @@ window.BANKMA2 = [
     "s": "<p>Den tredje sidan blir \\(24-2x\\) meter.</p><p>Arean är \\(A(x)=x(24-2x)=-2x^2+24x\\).</p><p>Kravet är \\(-2x^2+24x\\ge64\\).</p><p>Dividera med \\(-2\\) och vänd olikheten: \\(x^2-12x+32\\le0\\).</p><p>\\(x^2-12x+32=(x-4)(x-8)\\).</p><p>Uttrycket är högst 0 mellan nollställena.</p><p><strong>\\(4\\le x\\le8\\) meter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.34",
@@ -23631,11 +19782,7 @@ window.BANKMA2 = [
     "s": "<p>Låt ena sidan vara \\(x\\) meter. Då är den andra sidan \\(15-x\\), eftersom \\(2x+2y=30\\).</p><p>\\(A(x)=x(15-x)=-x^2+15x\\).</p><p>Symmetrilinjen är \\(x=7,5\\).</p><p>Då är även den andra sidan \\(15-7,5=7,5\\).</p><p><strong>Största area fås med måtten 7,5 m × 7,5 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.35",
@@ -23650,11 +19797,7 @@ window.BANKMA2 = [
     "s": "<p>a) Sätt modellens värde lika med gränsvärdet och lös \\(100\\cdot0,90^t=40\\) med GeoGebra. Det ger \\(t\\approx8,70\\).</p><p>Alltså går modellen under 40 % efter cirka 8,7 timmar.</p><p>b) Modellen har bara jämförts med data under de första 10 timmarna. Batteriets verkliga urladdning kan ändras, och en lång prognos ligger långt utanför det observerade intervallet.</p><p><strong>Cirka 8,7 timmar; långtidsprognosen är osäker eftersom modellen används långt utanför mätintervallet.</strong></p>",
     "familj": "vard_omsorgsprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.36",
@@ -23669,10 +19812,7 @@ window.BANKMA2 = [
     "s": "<p>a) Talet 14 betyder att modellen lägger till 14 minuter per ärende. Talet 30 är en fast tidsdel som inte beror på antalet ärenden.</p><p>b) \\(T(12)=14\\cdot12+30=198\\).</p><p><strong>14 min per ärende, 30 min fast tid och totalt 198 min för 12 ärenden.</strong></p>",
     "familj": "vard_omsorgsprogrammet__linjar_modell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.37",
@@ -23687,11 +19827,7 @@ window.BANKMA2 = [
     "s": "<p>a) Med Pythagoras sats i koordinatsystemet:</p><p>\\(TF=\\sqrt{(10-2)^2+(7-1)^2}=\\sqrt{64+36}=10\\) m.</p><p>\\(TR=6\\) m och \\(RF=8\\) m.</p><p>b) \\(T\\to R\\to F\\) är \\(6+8=14\\) m.</p><p>\\(T\\to F\\to R\\) är \\(10+8=18\\) m.</p><p><strong>Den första rutten är 4 m kortare.</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.38",
@@ -23706,11 +19842,7 @@ window.BANKMA2 = [
     "s": "<p>Ungefär 95,4 % ligger inom två standardavvikelser från medelvärdet.</p><p>\\(14-2\\cdot3=8\\) och \\(14+2\\cdot3=20\\).</p><p><strong>Ungefär mellan 8 och 20 minuter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.39",
@@ -23725,10 +19857,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(100a^4=64\\), alltså \\(a^4=0,64\\).</p><p>\\(a=\\sqrt[4]{0,64}\\approx0,894\\).</p><p>Modellen blir \\(B(t)\\approx100\\cdot0,894^t\\).</p><p>b) Lös \\(100\\cdot0,894^t=30\\) med GeoGebra. Det ger \\(t\\approx10,8\\).</p><p><strong>\\(a\\approx0,894\\) och modellen går under 30 % efter cirka 10,8 timmar.</strong></p>",
     "familj": "vard_omsorgsprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.40",
@@ -23743,10 +19872,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara standardbesök och \\(y\\) utökade besök.</p><p>\\[\\begin{cases}x+y=18\\\\20x+35y=450\\end{cases}\\]</p><p>Sätt \\(x=18-y\\): \\(20(18-y)+35y=450\\).</p><p>\\(360+15y=450\\), så \\(y=6\\) och \\(x=12\\).</p><p><strong>12 standardbesök och 6 utökade besök.</strong></p>",
     "familj": "vard_omsorgsprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.41",
@@ -23761,11 +19887,7 @@ window.BANKMA2 = [
     "s": "<p>Medianen är medelvärdet av det 8:e och 9:e värdet: \\((10+11)/2=10,5\\).</p><p>Nedre halvan har mittvärdena 9 och 9, så nedre kvartilen är 9.</p><p>Övre halvan har mittvärdena 12 och 13, så övre kvartilen är \\(12,5\\).</p><p>Kvartilavståndet är \\(12,5-9=3,5\\).</p><p><strong>Median 10,5 min, nedre kvartil 9 min, övre kvartil 12,5 min och kvartilavstånd 3,5 min.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.42",
@@ -23780,10 +19902,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellens värde lika med gränsvärdet och lös \\(100\\cdot0,88^t=50\\) med GeoGebra.</p><p>Det ger \\(t\\approx5,42\\).</p><p><strong>Modellen går under 50 % efter cirka 5,4 timmar.</strong></p>",
     "familj": "vard_omsorgsprogrammet__linjar_modell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.43",
@@ -23798,10 +19917,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) vara antal 8-timmarspass och \\(y\\) antal 6-timmarspass.</p><p>\\[\\begin{cases}x+y=14\\\\8x+6y=96\\end{cases}\\]</p><p>Sex gånger första ekvationen ger \\(6x+6y=84\\). Subtraktion ger \\(2x=12\\), så \\(x=6\\) och \\(y=8\\).</p><p>b) \\(6\\cdot8\\cdot190+8\\cdot6\\cdot175=17520\\) kr.</p><p><strong>6 personer arbetar 8 timmar och 8 personer arbetar 6 timmar; kalkylkostnaden är 17 520 kr.</strong></p>",
     "familj": "vard_omsorgsprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.44",
@@ -23816,11 +19932,7 @@ window.BANKMA2 = [
     "s": "<p>Låt bredden vara \\(x\\) meter. Då är längden \\(x+3\\).</p><p>\\(x(x+3)=54\\Rightarrow x^2+3x-54=0\\).</p><p>\\((x+9)(x-6)=0\\), så \\(x=6\\) eller \\(x=-9\\).</p><p>En längd kan inte vara negativ, alltså är bredden 6 m och längden 9 m.</p><p><strong>6 m × 9 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.45",
@@ -23835,11 +19947,7 @@ window.BANKMA2 = [
     "s": "<p>Den andra sidan är \\(16-x\\).</p><p>Arean är \\(A(x)=x(16-x)=-x^2+16x\\).</p><p>Kravet är \\(-x^2+16x\\ge60\\).</p><p>Det ger \\(x^2-16x+60\\le0\\).</p><p>\\((x-6)(x-10)\\le0\\), alltså ligger \\(x\\) mellan nollställena.</p><p><strong>\\(6\\le x\\le10\\) meter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.46",
@@ -23854,11 +19962,7 @@ window.BANKMA2 = [
     "s": "<p>Mindre standardavvikelse betyder att tiderna ligger mer samlade kring medelvärdet.</p><p>Eftersom \\(2,1<4,8\\) har lag A mindre spridning.</p><p><strong>Lag A har jämnare responstider.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.47",
@@ -23873,11 +19977,7 @@ window.BANKMA2 = [
     "s": "<p>Övre kvartilen är 13 minuter. Den delar materialet så att ungefär 75 % av observationerna ligger på eller under detta värde.</p><p><strong>Påståendet är rimligt: ungefär tre fjärdedelar av väntetiderna är högst 13 minuter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.48",
@@ -23892,11 +19992,7 @@ window.BANKMA2 = [
     "s": "<p>Ungefär 68,2 % ligger inom en standardavvikelse från medelvärdet.</p><p>\\(30-5=25\\) och \\(30+5=35\\).</p><p><strong>Ungefär mellan 25 och 35 minuter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.49",
@@ -23911,11 +20007,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara antal 8-timmarspass och \\(y\\) antal 5-timmarspass.</p><p>\\[\\begin{cases}x+y=18\\\\8x+5y=123\\end{cases}\\]</p><p>Fem gånger första ekvationen ger \\(5x+5y=90\\). Subtraktion ger \\(3x=33\\), alltså \\(x=11\\) och \\(y=7\\).</p><p><strong>11 personer arbetar 8 timmar och 7 personer arbetar 5 timmar.</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.50",
@@ -23930,11 +20022,7 @@ window.BANKMA2 = [
     "s": "<p>Om den ena yttersidan är \\(x\\), är den andra \\(15-x\\). Passagen tar 1 m på varje sida, så den inre rektangeln får sidorna \\(x-2\\) och \\(13-x\\).</p><p>a) \\(U(x)=(x-2)(13-x)=-x^2+15x-26\\).</p><p>b) Kvadratkomplettera:</p><p>\\[U(x)=-(x-7{,}5)^2+30{,}25.\\]</p><p>Det största värdet fås när \\(x=7{,}5\\). Den andra yttersidan är då också \\(15-7{,}5=7{,}5\\).</p><p>c) Den inre ytan är \\(5{,}5\\cdot5{,}5=30{,}25\\) m².</p><p><strong>\\(U(x)=-x^2+15x-26\\); yttermått 7,5 m × 7,5 m; största inre area 30,25 m².</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.51",
@@ -23949,11 +20037,7 @@ window.BANKMA2 = [
     "s": "<p>a) Avståndet är</p><p>\\(FT=\\sqrt{(10-2)^2+(7-1)^2}=\\sqrt{64+36}=10\\) m.</p><p>b) Mittpunkten är</p><p>\\(\\left(\\frac{2+10}{2},\\frac{1+7}{2}\\right)=(6,4)\\).</p><p><strong>Avståndet är 10 m och mittpunkten är \\((6,4)\\).</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.52",
@@ -23968,10 +20052,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara antal på A och \\(y\\) antal på B.</p><p>\\[\\begin{cases}x+y=34\\\\x-y=4\\end{cases}\\]</p><p>Addition ger \\(2x=38\\), alltså \\(x=19\\). Då \\(y=15\\).</p><p><strong>19 personer på A och 15 på B.</strong></p>",
     "familj": "vard_omsorgsprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.53",
@@ -23986,11 +20067,7 @@ window.BANKMA2 = [
     "s": "<p>a) Två standardavvikelser från medelvärdet ger \\(24\\pm2\\cdot4\\), alltså 16–32 minuter.</p><p>b) \\(0,954\\cdot500=477\\).</p><p>c) Området mer än två standardavvikelser över medelvärdet är ungefär 2,3 %. \\(0,023\\cdot500=11,5\\), alltså cirka 12 ärenden.</p><p><strong>16–32 min; cirka 477 ärenden i intervallet; cirka 12 över 32 min.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.54",
@@ -24005,10 +20082,7 @@ window.BANKMA2 = [
     "s": "<p>a) Lös \\(96\\cdot0,84^t=30\\) med GeoGebra. Det ger \\(t\\approx6,67\\) timmar.</p><p>b) Modellen ger \\(B(6)=96\\cdot0,84^6\\approx33,7\\%\\). Mätningen 39 % är alltså cirka 5,3 procentenheter högre.</p><p>c) Modellen är en förenkling. Belastning, batteriets skick och andra förhållanden kan ändras. En aktuell mätning ger information om att just detta förlopp avviker från modellen.</p><p><strong>Modellen når 30 % efter cirka 6,7 timmar och underskattar den uppmätta nivån efter 6 timmar med cirka 5,3 procentenheter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.55",
@@ -24023,11 +20097,7 @@ window.BANKMA2 = [
     "s": "<p>Eftersom P ligger på korridoren kan den skrivas \\(P(x,4)\\).</p><p>Likheten mellan de kvadrerade avstånden ger</p><p>\\((x-1)^2+(4-1)^2=(x-9)^2+(4-7)^2\\).</p><p>De båda \\(3^2\\)-termerna tar ut varandra:</p><p>\\((x-1)^2=(x-9)^2\\).</p><p>Utveckla: \\(x^2-2x+1=x^2-18x+81\\).</p><p>\\(16x=80\\), så \\(x=5\\).</p><p><strong>\\(P=(5,4)\\).</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.56",
@@ -24042,11 +20112,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt A ha \\(x\\) personer. Då har B \\(20-x\\).</p><p>Antalet par blir \\(x(20-x)=96\\).</p><p>\\(-x^2+20x-96=0\\), eller \\(x^2-20x+96=0\\).</p><p>\\((x-8)(x-12)=0\\), så teamstorlekarna är 8 och 12.</p><p>b) Det större teamet A har 12 personer.</p><p>c) Funktionen \\(P(x)=-x^2+20x\\) har symmetrilinjen \\(x=10\\). Där är \\(P(10)=100\\). Eftersom parabeln är nedåtvänd är detta det största värdet.</p><p><strong>Teamstorlekarna är 12 och 8; som mest kan 100 sådana par bildas.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.57",
@@ -24061,10 +20127,7 @@ window.BANKMA2 = [
     "s": "<p>a) Låt \\(x\\) vara korta besök och \\(y\\) långa.</p><p>\\[\\begin{cases}x+y=30\\\\20x+50y=990\\end{cases}\\]</p><p>Sätt \\(x=30-y\\): \\(20(30-y)+50y=990\\).</p><p>\\(600+30y=990\\), så \\(y=13\\) och \\(x=17\\).</p><p>b) Dokumentationen tar \\(30\\cdot6=180\\) minuter. Totalt \\(990+180=1170\\) minuter.</p><p><strong>17 korta och 13 långa besök; totalt 1 170 minuter.</strong></p>",
     "familj": "vard_omsorgsprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.58",
@@ -24079,11 +20142,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(S(3)=450/9=50\\).</p><p>b) \\(450/d^2=18\\Rightarrow d^2=25\\Rightarrow d=5\\) m.</p><p><strong>Signalstyrkan är 50 vid 3 m och 18 vid 5 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.59",
@@ -24098,11 +20157,7 @@ window.BANKMA2 = [
     "s": "<p>a) Lös \\(120\\cdot1,05^t=120+9t+20\\) med GeoGebra. Den första positiva lösningen är \\(t\\approx20,24\\).</p><p>b) \\(L(12)=120+9\\cdot12=228\\). \\(E(12)=120\\cdot1,05^{12}\\approx215,5\\).</p><p>Efter 12 månader ligger alltså den linjära modellen fortfarande högre.</p><p>c) Båda modellerna bygger på antaganden. Bemanning, arbetssätt och efterfrågan kan förändras, så en matematisk jämförelse långt fram säger inte vilken modell som stämmer bäst med verkliga data.</p><p><strong>Exponentialmodellen blir 20 ärenden större efter cirka 20,2 månader. Efter 12 månader ger modellerna cirka 228 respektive 216 ärenden.</strong></p>",
     "familj": "vard_omsorgsprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.60",
@@ -24117,11 +20172,7 @@ window.BANKMA2 = [
     "s": "<p>a) Dividera ekvationerna:</p><p>\\(\\frac{20}{180}=\\left(\\frac{6}{2}\\right)^a\\).</p><p>\\(\\frac{1}{9}=3^a\\), alltså \\(a=-2\\).</p><p>Nu \\(180=C\\cdot2^{-2}=C/4\\), så \\(C=720\\).</p><p>Modellen är \\(S(d)=720d^{-2}=720/d^2\\).</p><p>b) \\(720/d^2=45\\Rightarrow d^2=16\\Rightarrow d=4\\) m.</p><p><strong>\\(a=-2\\), \\(C=720\\) och signalstyrkan 45 fås vid 4 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.61",
@@ -24136,11 +20187,7 @@ window.BANKMA2 = [
     "s": "<p>a) \\(200t^2=5000\\Rightarrow t^2=25\\). I sammanhanget är \\(t=5\\).</p><p>b) \\(800\\cdot1,25^t=5000\\Rightarrow1,25^t=6,25\\).</p><p>\\(t=\\frac{\\lg6,25}{\\lg1,25}\\approx8,21\\).</p><p>c) I potensekvationen är den okända storheten basen som upphöjs till 2. I exponentialekvationen finns den okända storheten i exponenten, vilket gör logaritmer användbara.</p><p><strong>Potensmodellen når 5 000 vid \\(t=5\\) och exponentialmodellen vid \\(t\\approx8,2\\).</strong></p>",
     "familj": "ekonomiprogrammet__exponential_och_procentmodell",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.62",
@@ -24155,11 +20202,7 @@ window.BANKMA2 = [
     "s": "<p>Vinsten är</p><p>\\[V(p)=(p-40)(a-20p)-12000.\\]</p><p>a) Maximipunkten ligger vid \\(p=70\\). På grund av symmetrin måste därför \\(V(69)=V(71)\\).</p><p>\\[29(a-1380)-12000=31(a-1420)-12000.\\]</p><p>Det ger \\(29a-40020=31a-44020\\), alltså \\(a=2000\\).</p><p>b) \\(q=2000-20\\cdot70=600\\). Vinsten blir \\((70-40)\\cdot600-12000=6000\\) kr.</p><p>c) Efterfrågan får inte vara negativ:</p><p>\\[2000-20p\\ge0\\Rightarrow p\\le100.\\]</p><p><strong>\\(a=2000\\), 600 enheter, största vinst 6 000 kr och modellens högsta möjliga pris 100 kr.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.63",
@@ -24174,11 +20217,7 @@ window.BANKMA2 = [
     "s": "<p>Lös \\(V(x)\\ge1500\\):</p><p>\\(-3x^2+240x-4200\\ge0\\).</p><p>Dividera med \\(-3\\) och vänd olikheten:</p><p>\\(x^2-80x+1400\\le0\\).</p><p>Nollställena är \\(x=40\\pm10\\sqrt2\\), ungefär 25,9 och 54,1.</p><p>Alla hela tiotal i intervallet är 30, 40 och 50.</p><p><strong>30, 40 eller 50 enheter.</strong></p>",
     "familj": "ekonomiprogrammet__andragradsmodell_och_optimering",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.64",
@@ -24193,11 +20232,7 @@ window.BANKMA2 = [
     "s": "<p>Större standardavvikelse betyder större spridning kring medelvärdet.</p><p><strong>Enhet B har störst spridning eftersom \\(8,7>3,2\\).</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.65",
@@ -24212,11 +20247,7 @@ window.BANKMA2 = [
     "s": "<p>a) En standardavvikelse från medelvärdet: \\(16\\pm2,5\\), alltså 13,5–18,5 min.</p><p>b) Två standardavvikelser: \\(16\\pm5\\), alltså 11–21 min.</p><p>c) Utanför intervallet ligger ungefär \\(100-95,4=4,6\\%\\).</p><p>\\(0,046\\cdot400=18,4\\), alltså ungefär 18 aktiviteter.</p><p><strong>13,5–18,5 min; 11–21 min; ungefär 18 av 400 utanför det senare intervallet.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.66",
@@ -24231,11 +20262,7 @@ window.BANKMA2 = [
     "s": "<p>a) Båda materialen har medianen 14. Nedre kvartilen är 13 och övre kvartilen 15, så kvartilavståndet är 2 för båda.</p><p>b) Med digitalt verktyg fås standardavvikelsen ungefär 1,22 min för dag A och 5,47 min för dag B.</p><p>c) Påståendet missar det mycket höga värdet 30 på dag B. Median och kvartilavstånd påverkas inte av det värdet i just dessa data, men standardavvikelsen ökar kraftigt.</p><p><strong>Påståendet är därför missvisande: dag B har betydligt större total spridning trots samma median och kvartilavstånd.</strong></p>",
     "familj": "vard_omsorgsprogrammet__statistik_och_fordelningar",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.67",
@@ -24250,10 +20277,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara beloppet i A och \\(y\\) beloppet i B.</p><p>\\[\\begin{cases}x+y=240000\\\\1,08x+1,04y=253200\\end{cases}\\]</p><p>Multiplicera första ekvationen med 1,04: \\(1,04x+1,04y=249600\\).</p><p>Subtraktion ger \\(0,04x=3600\\), alltså \\(x=90000\\).</p><p>Då \\(y=150000\\).</p><p><strong>90 000 kr i A och 150 000 kr i B.</strong></p>",
     "familj": "ekonomiprogrammet__ekvationssystem_och_fordelning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.68",
@@ -24268,11 +20292,7 @@ window.BANKMA2 = [
     "s": "<p>Den raka sträckan är hypotenusan i en rätvinklig triangel.</p><p>\\(d^2=7,0^2+4,5^2=49+20,25=69,25\\).</p><p>\\(d=\\sqrt{69,25}\\approx8,32\\).</p><p><strong>Den raka sträckan är cirka 8,3 m.</strong></p>",
     "familj": "vard_omsorgsprogrammet__geometri_och_matning",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24287,10 +20307,7 @@ window.BANKMA2 = [
     "s": "<p>Från A till V: \\[AV=\\sqrt{(4-1)^2+(5-1)^2}=\\sqrt{25}=5\\,\\mathrm{m}.\\]</p><p>Från V till B är sträckan 6 m. Totalt blir det \\(5+6=11\\) m.</p><p>Direktsträckan är \\[AB=\\sqrt{(10-1)^2+(5-1)^2}=\\sqrt{97}\\approx9{,}85\\,\\mathrm{m}.\\]</p><p>Skillnaden är cirka \\(11-9{,}85=1{,}15\\) m. Procentuell ökning: \\[\\frac{1{,}15}{9{,}85}\\cdot100\\approx11{,}7\\%.\\]</p><p><strong>Svar: 11 m, vilket är cirka 1,15 m eller 11,7 % längre än direktsträckan.</strong></p>",
     "id": "5.69",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24305,11 +20322,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet 20,0–22,0 °C motsvarar \\(\\mu-\\sigma\\) till \\(\\mu+\\sigma\\).</p><p>Formelbladet visar 34,1 % på vardera sidan om medelvärdet inom en standardavvikelse. \\[34{,}1\\%+34{,}1\\%=68{,}2\\%.\\]</p><p><strong>Svar: cirka 68,2 %.</strong></p>",
     "id": "5.70",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24324,11 +20337,7 @@ window.BANKMA2 = [
     "s": "<p>Båda datamaterialen har medelvärdet 21,0 °C.</p><p>Ett digitalt verktyg ger ungefär \\[s_A\\approx0{,}63,\\qquad s_B\\approx1{,}26.\\]</p><p>Standardavvikelsen mäter spridningen kring medelvärdet. Rum A har mindre standardavvikelse och därmed mindre variation.</p><p><strong>Svar: Rum A har stabilast temperatur.</strong></p>",
     "id": "5.71",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "kap": 5,
@@ -24343,10 +20352,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv \\(P=(5,y)\\). Villkoret \\(PA=PB\\) kan jämföras med kvadrerade avstånd: \\[(5-1)^2+(y-2)^2=(5-9)^2+(y-8)^2.\\]</p><p>De två \\(16\\)-termerna tar ut varandra: \\[(y-2)^2=(y-8)^2.\\]</p><p>Utveckla: \\(y^2-4y+4=y^2-16y+64\\), vilket ger \\(12y=60\\) och \\(y=5\\). Alltså \\(P=(5,5)\\).</p><p>Då är \\(PA=PB=5\\) m och \\(RP=6\\) m, så vägen via P blir \\(16\\) m.</p><p>Direkt från R: \\[RA=\\sqrt{(5-1)^2+(-1-2)^2}=5,\\] \\[RB=\\sqrt{(5-9)^2+(-1-8)^2}=\\sqrt{97}\\approx9{,}85.\\]</p><p>Direktdragningen blir cirka \\(14{,}85\\) m och är därför ungefär \\(1{,}15\\) m kortare.</p><p><strong>Svar: \\(P=(5,5)\\). Direktdragningen är kortast, cirka 14,85 m jämfört med 16 m via P.</strong></p>",
     "id": "5.72",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24361,10 +20367,7 @@ window.BANKMA2 = [
     "s": "<p>För \\(q=120\\): \\[\\Delta p=0{,}018\\cdot120^2=259{,}2.\\]</p><p>När \\(\\Delta p=200\\) får vi potensekvationen \\[0{,}018q^2=200\\Rightarrow q^2=11111{,}1.\\]</p><p>Eftersom luftflödet är positivt: \\[q\\approx105{,}4.\\]</p><p><strong>Svar: 259,2 Pa och cirka 105 L/s.</strong></p>",
     "id": "5.73",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24379,11 +20382,7 @@ window.BANKMA2 = [
     "s": "<p>17,5 °C är \\(\\mu-\\sigma\\) och 19,0 °C är \\(\\mu+2\\sigma\\).</p><p>Från \\(\\mu-\\sigma\\) till \\(\\mu\\) är 34,1 %, från \\(\\mu\\) till \\(\\mu+\\sigma\\) är 34,1 % och från \\(\\mu+\\sigma\\) till \\(\\mu+2\\sigma\\) är 13,6 %.</p><p>Summan blir \\[34{,}1+34{,}1+13{,}6=81{,}8\\%.\\]</p><p><strong>Svar: cirka 81,8 %.</strong></p>",
     "id": "5.74",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24398,11 +20397,7 @@ window.BANKMA2 = [
     "s": "<p>Arean kan skrivas \\[A=\\frac{\\pi}{4}(60^2-40^2).\\]</p><p>Med konjugatregeln: \\[60^2-40^2=(60-40)(60+40)=20\\cdot100=2000.\\]</p><p>Alltså \\[A=\\frac{\\pi}{4}\\cdot2000=500\\pi\\approx1571\\,\\mathrm{mm^2}.\\]</p><p><strong>Svar: cirka \\(1570\\,\\mathrm{mm^2}\\).</strong></p>",
     "id": "5.75",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24417,11 +20412,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellerna lika: \\[-0{,}8x+40=-1{,}1x+44{,}5.\\]</p><p>Då är \\(0{,}3x=4{,}5\\), alltså \\(x=15\\). Framledningstemperaturen är då 28 °C.</p><p>Vid \\(x=-10\\): \\[T_A=48,\\qquad T_B=55{,}5.\\]</p><p><strong>Svar: modellerna är lika vid 15 °C. Vid −10 °C ger modell B högre framledningstemperatur.</strong></p>",
     "id": "5.76",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24436,11 +20427,7 @@ window.BANKMA2 = [
     "s": "<p>Skillnaden i x-led är \\(7-1=6\\) m och i y-led \\(10-2=8\\) m. Med Pythagoras sats: \\[d=\\sqrt{6^2+8^2}=\\sqrt{100}=10.\\]</p><p><strong>Svar: 10 m.</strong></p>",
     "id": "5.77",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24455,11 +20442,7 @@ window.BANKMA2 = [
     "s": "<p>Lös ekvationen \\[120+18t=120\\cdot1{,}12^t\\] med ett digitalt verktyg. Förutom \\(t=0\\) fås \\[t\\approx4{,}74.\\]</p><p>Efter exempelvis 10 veckor är \\[L(10)=300,\\qquad E(10)\\approx372{,}7,\\] så exponentialmodellen är då störst.</p><p>Vid 15 veckor ger modellerna ungefär 390 Pa respektive 657 Pa. Skillnaden är stor, men mätdata finns bara till vecka 6. Därför är det osäkert vilken modell som bäst beskriver verkligheten så långt fram. Nya mätningar behövs för att bedöma modellerna.</p><p><strong>Svar: andra skärningen vid cirka 4,74 veckor; därefter växer exponentialmodellen snabbare, men prognosen vid 15 veckor är osäker.</strong></p>",
     "id": "5.78",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "kap": 5,
@@ -24474,11 +20457,7 @@ window.BANKMA2 = [
     "s": "<p>För att hitta maximipunkten skriver vi om uttrycket med kvadreringsregeln:</p><p>\\[P(x)=-0{,}04(x^2-8x)+6{,}4=-0{,}04((x-4)^2-16)+6{,}4.\\]</p><p>Alltså</p><p>\\[P(x)=-0{,}04(x-4)^2+7{,}04.\\]</p><p>Eftersom \\((x-4)^2\\ge0\\) blir största värdet 7,04 när \\(x=4\\).</p><p>För \\(P=6{,}4\\):</p><p>\\[-0{,}04x^2+0{,}32x=0\\Rightarrow x(-0{,}04x+0{,}32)=0.\\]</p><p>Alltså \\(x=0\\) eller \\(x=8\\).</p><p><strong>Svar: max 7,04 kW vid \\(x=4\\); 6,4 kW vid \\(x=0\\) och \\(x=8\\).</strong></p>",
     "id": "5.79",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24493,10 +20472,7 @@ window.BANKMA2 = [
     "s": "<p>Vi ska lösa \\[18+42\\cdot0{,}82^t=30.\\]</p><p>Eftersom \\(t\\) finns i exponenten används ett digitalt verktyg, till exempel GeoGebra. Lösningen blir \\[t\\approx6{,}31.\\]</p><p><strong>Svar: cirka 6,3 timmar.</strong></p>",
     "id": "5.80",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "kap": 5,
@@ -24511,10 +20487,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt modellerna lika: \\[420-0{,}012q^2=180+0{,}004q^2.\\]</p><p>Då blir \\[240=0{,}016q^2\\Rightarrow q^2=15000.\\]</p><p>Luftflödet är positivt: \\[q\\approx122{,}5\\,\\mathrm{L/s}.\\]</p><p>Trycket blir exempelvis \\[p_k=180+0{,}004\\cdot15000=240\\,\\mathrm{Pa}.\\]</p><p><strong>Svar: cirka 122 L/s och 240 Pa.</strong></p>",
     "id": "5.81",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24529,11 +20502,7 @@ window.BANKMA2 = [
     "s": "<p>Areaekvationen är \\[x(x+0{,}20)=0{,}48.\\]</p><p>Det ger \\[x^2+0{,}20x-0{,}48=0.\\]</p><p>Med pq-formeln fås \\(x=0{,}60\\) eller \\(x=-0{,}80\\). En längd måste vara positiv, så \\(x=0{,}60\\). Bredden är då \\(0{,}80\\) m.</p><p><strong>Svar: 0,60 m × 0,80 m.</strong></p>",
     "id": "5.82",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24548,11 +20517,7 @@ window.BANKMA2 = [
     "s": "<p>Efter 5 veckor: \\[L(5)=210,\\qquad E(5)\\approx211{,}5.\\]</p><p>Efter 10 veckor: \\[L(10)=300,\\qquad E(10)\\approx372{,}7.\\]</p><p>Modellerna ligger nära varandra i början men skiljer sig allt mer. En matematisk modell är en förenkling av verkligheten och behöver inte fortsätta gälla utanför det intervall där den har kontrollerats mot mätningar.</p><p><strong>Slutsats: långtidsprognoserna bör därför användas försiktigt och jämföras med nya mätvärden.</strong></p>",
     "id": "5.83",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24567,11 +20532,7 @@ window.BANKMA2 = [
     "s": "<p>Om 95,4 % ligger inom området ligger \\[100-95{,}4=4{,}6\\%\\] utanför.</p><p>För 80 intervall motsvarar det \\[0{,}046\\cdot80=3{,}68,\\] alltså ungefär 4 intervall.</p><p>I loggen ligger 9 av 80 utanför, vilket är \\[\\frac{9}{80}\\cdot100=11{,}25\\%.\\]</p><p>Det är tydligt mer än modellens 4,6 %. En enda logg bevisar inte att modellen är fel, men avvikelsen är tillräckligt stor för att motivera fler mätningar och en kontroll av om normalfördelningsmodellen är rimlig för anläggningen.</p>",
     "id": "5.84",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24586,11 +20547,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(Q=300\\):</p><p>\\[300=12d^2\\Rightarrow d^2=25.\\]</p><p>En diameter är positiv, så \\(d=5\\).</p><p><strong>Kanalen har diametern 5 dm.</strong></p>",
     "id": "5.85",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24605,10 +20562,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara flödet i A och \\(y\\) flödet i B. Då gäller \\[x+y=48,\\qquad x=1{,}5y+6.\\]</p><p>Sätt in den andra ekvationen i den första: \\[1{,}5y+6+y=48\\Rightarrow2{,}5y=42.\\]</p><p>Alltså \\(y=16{,}8\\) och \\(x=31{,}2\\).</p><p><strong>Svar: gren A 31,2 L/min och gren B 16,8 L/min.</strong></p>",
     "id": "5.86",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24623,10 +20577,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) och \\(y\\) vara luftflödena. Då gäller \\[x+y=960,\\qquad x-y=160.\\]</p><p>Adderar vi ekvationerna får vi \\(2x=1120\\), alltså \\(x=560\\). Då är \\(y=400\\).</p><p><strong>Svar: 560 L/s och 400 L/s.</strong></p>",
     "id": "5.87",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24641,11 +20592,7 @@ window.BANKMA2 = [
     "s": "<p>Den yttre radien är \\(r+t\\), alltså \\[A=\\pi(r+t)^2-\\pi r^2.\\]</p><p>Använd kvadreringsregeln: \\[A=\\pi(r^2+2rt+t^2-r^2)=\\pi(2rt+t^2).\\]</p><p>För \\(r=20\\) och \\(t=10\\): \\[A=\\pi(2\\cdot20\\cdot10+10^2)=500\\pi\\approx1571\\,\\mathrm{mm^2}.\\]</p><p><strong>Svar: \\(A=\\pi(2rt+t^2)\\), och i exemplet cirka \\(1570\\,\\mathrm{mm^2}\\).</strong></p>",
     "id": "5.88",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24660,10 +20607,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara antalet 15 cm-delar och \\(y\\) antalet 25 cm-delar. Då gäller \\[x+y=18,\\qquad 0{,}15x+0{,}25y=3{,}60.\\]</p><p>Ur den första ekvationen är \\(x=18-y\\). Sätt in: \\[0{,}15(18-y)+0{,}25y=3{,}60.\\]</p><p>Det ger \\(2{,}70+0{,}10y=3{,}60\\), alltså \\(y=9\\) och därmed \\(x=9\\).</p><p><strong>Svar: 9 rördelar av 15 cm och 9 rördelar av 25 cm.</strong></p>",
     "id": "5.89",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24678,11 +20622,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in \\(x=6\\): \\[64=a(6-2)(6-10)=a\\cdot4\\cdot(-4)=-16a.\\]</p><p>Alltså \\(a=-4\\), så \\[P(x)=-4(x-2)(x-10).\\]</p><p>Nollställena är 2 och 10. Symmetrilinjen ligger mitt emellan: \\(x=6\\). Eftersom \\(a<0\\) är detta en maximipunkt.</p><p>Vi vet redan att \\(P(6)=64\\).</p><p><strong>Svar: \\(a=-4\\), och största värdet är 64 vid \\(x=6\\).</strong></p>",
     "id": "5.90",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24697,11 +20637,7 @@ window.BANKMA2 = [
     "s": "<p>Bestäm först nollställena:</p><p>\\[-4x^2+90x-80=0.\\]</p><p>Dividera med \\(-4\\):</p><p>\\[x^2-22{,}5x+20=0.\\]</p><p>Med pq-formeln fås ungefär</p><p>\\[x_1\\approx0{,}93,\\qquad x_2\\approx21{,}57.\\]</p><p>En parabel är symmetrisk. Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\[x=\\frac{0{,}93+21{,}57}{2}\\approx11{,}25.\\]</p><p>Eftersom parabeln är vänd nedåt ligger maximipunkten där. Då är</p><p>\\[N(11{,}25)=426{,}25.\\]</p><p>Inom modellens intervall \\(0\\le x\\le20\\) blir nettobesparingen positiv efter det första nollstället, alltså för tjocklekar större än cirka 0,93 cm.</p><p>Modellen är endast avsedd för intervallet 0–20 cm. Dessutom är den en förenkling; kostnader och energibesparing behöver inte fortsätta följa samma samband för mycket stora tjocklekar.</p><p><strong>Den största nettobesparingen fås vid 11,25 cm och är cirka 426 kr/år. Nettobesparingen är positiv från cirka 0,93 cm inom modellintervallet.</strong></p>",
     "id": "5.91",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24716,10 +20652,7 @@ window.BANKMA2 = [
     "s": "<p>Riktningskoefficienten bestäms av de två kända punkterna: \\[k=\\frac{35-55}{5-(-15)}=\\frac{-20}{20}=-1.\\]</p><p>Sätt in exempelvis punkten \\((-15,55)\\): \\[55=-1\\cdot(-15)+m\\Rightarrow m=40.\\]</p><p>Modellen är alltså \\[\\boxed{T(x)=-x+40}.\\]</p><p>Vid \\(x=-7\\) blir \\[T(-7)=47.\\] <strong>Svar: \\(47\\ ^\\circ\\mathrm{C}\\).</strong></p>",
     "id": "5.92",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24734,11 +20667,7 @@ window.BANKMA2 = [
     "s": "<p>Intervallet 3,0–5,0 °C är \\(\\mu-2\\sigma\\) till \\(\\mu+2\\sigma\\).</p><p>Formelbladet ger andelen \\[13{,}6+34{,}1+34{,}1+13{,}6=95{,}4\\%.\\]</p><p>95,4 % är mindre än 98 %.</p><p><strong>Påståendet stämmer alltså inte med den angivna normalfördelningsmodellen.</strong></p>",
     "id": "5.93",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24753,11 +20682,7 @@ window.BANKMA2 = [
     "s": "<p>Medelvärdet är \\[\\bar x=\\frac{20{,}8+21{,}2+21{,}0+21{,}4+20{,}6}{5}=21{,}0.\\]</p><p>Ett digitalt verktyg ger standardavvikelsen ungefär \\[0{,}28\\ ^\\circ\\mathrm{C}.\\]</p><p><strong>Svar: medelvärde 21,0 °C och standardavvikelse cirka 0,28 °C.</strong></p>",
     "id": "5.94",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "kap": 5,
@@ -24772,11 +20697,7 @@ window.BANKMA2 = [
     "s": "<p>Vi behöver lösa \\[40\\cdot1{,}12^t=100.\\]</p><p>Variabeln finns i exponenten. På nivå 2a löses därför exponentialekvationen med ett digitalt verktyg, till exempel GeoGebra.</p><p>Lösningen är \\[t\\approx8{,}09.\\]</p><p><strong>Svar: efter cirka 8,1 veckor.</strong></p>",
     "id": "5.95",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "kap": 5,
@@ -24791,11 +20712,7 @@ window.BANKMA2 = [
     "s": "<p>Den nya arean är \\((x+0{,}20)^2\\) och den gamla är \\(x^2\\). Skillnaden är \\[ (x+0{,}20)^2-x^2.\\]</p><p>Med kvadreringsregeln: \\[x^2+0{,}40x+0{,}04-x^2=0{,}40x+0{,}04.\\]</p><p><strong>Svar: arean ökar med \\(0{,}40x+0{,}04\\,\\mathrm{m^2}\\).</strong></p>",
     "id": "5.96",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24810,11 +20727,7 @@ window.BANKMA2 = [
     "s": "<p>Mittpunkten är \\[M=\\left(\\frac{2+10}{2},\\frac{3+9}{2}\\right)=(6,6).\\]</p><p>Avståndet till A: \\[MA=\\sqrt{(6-2)^2+(6-3)^2}=\\sqrt{16+9}=5.\\]</p><p>Avståndet till B: \\[MB=\\sqrt{(10-6)^2+(9-6)^2}=5.\\]</p><p><strong>Alltså ligger \\(M=(6,6)\\) lika långt från båda givarna.</strong></p>",
     "id": "5.97",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24829,10 +20742,7 @@ window.BANKMA2 = [
     "s": "<p>Vi har två villkor: \\[q_1+q_2=300\\] och \\[0{,}008q_1^2=0{,}018q_2^2.\\]</p><p>Dividera den andra ekvationen med 0,008: \\[q_1^2=2{,}25q_2^2.\\]</p><p>Flödena är positiva, så \\[q_1=1{,}5q_2.\\]</p><p>Sätt in i totalflödet: \\[1{,}5q_2+q_2=300\\Rightarrow2{,}5q_2=300.\\]</p><p>Därmed \\(q_2=120\\) L/s och \\(q_1=180\\) L/s. Tryckfallet blir \\[\\Delta p=0{,}008\\cdot180^2=259{,}2\\,\\mathrm{Pa}.\\]</p><p><strong>Svar: \\(q_1=180\\) L/s, \\(q_2=120\\) L/s och gemensamt tryckfall 259,2 Pa.</strong></p>",
     "id": "5.98",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24847,10 +20757,7 @@ window.BANKMA2 = [
     "s": "<p>Skriv funktionen som en andragradsfunktion: \\[A(x)=-x^2+1{,}2x.\\]</p><p>Nollställena är \\(x=0\\) och \\(x=1{,}2\\). Symmetrilinjen ligger mitt emellan nollställena: \\[x=0{,}6.\\]</p><p>Då är även höjden \\(1{,}2-0{,}6=0{,}6\\) m och \\[A(0{,}6)=0{,}36.\\]</p><p><strong>Svar: största arean är \\(0{,}36\\,\\mathrm{m^2}\\), med måtten 0,60 m × 0,60 m.</strong></p>",
     "id": "5.99",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24865,10 +20772,7 @@ window.BANKMA2 = [
     "s": "<p>Sätt in mätningen: \\[90=C\\cdot150^2.\\]</p><p>Alltså \\[C=\\frac{90}{22500}=0{,}004.\\]</p><p>Vid 160 Pa gäller \\[160=0{,}004q^2\\Rightarrow q^2=40000.\\]</p><p>Det positiva luftflödet är \\(q=200\\).</p><p><strong>Svar: \\(C=0{,}004\\) och luftflödet 200 L/s.</strong></p>",
     "id": "5.100",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24883,11 +20787,7 @@ window.BANKMA2 = [
     "s": "<p>Arean är \\[A(x)=x(1{,}4-x)=-x^2+1{,}4x.\\]</p><p>För \\(A=0{,}45\\): \\[x^2-1{,}4x+0{,}45=0.\\]</p><p>Lösningarna är \\(x=0{,}50\\) och \\(x=0{,}90\\). Måttparen blir därför 0,50 m × 0,90 m respektive 0,90 m × 0,50 m.</p><p>Parabelns symmetrilinje är \\(x=0{,}70\\). Där blir den största arean \\[A(0{,}70)=0{,}49\\,\\mathrm{m^2}.\\]</p><p>Eftersom 0,50 m² är större än det största värdet 0,49 m² är den arean inte möjlig med omkretsen 2,8 m.</p>",
     "id": "5.101",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "kap": 5,
@@ -24902,10 +20802,7 @@ window.BANKMA2 = [
     "s": "<p>Låt \\(x\\) vara färdig kopparlängd och \\(y\\) färdig PEX-längd. Då är \\[x+y=52.\\]</p><p>Inköpskostnaden blir \\(1{,}10x\\cdot110+1{,}05y\\cdot55\\), alltså \\[121x+57{,}75y=4268.\\]</p><p>Sätt \\(y=52-x\\): \\[121x+57{,}75(52-x)=4268.\\]</p><p>Det ger \\(63{,}25x=1265\\), så \\(x=20\\) och \\(y=32\\).</p><p><strong>Svar: 20 m koppar och 32 m PEX i den färdiga installationen.</strong></p>",
     "id": "5.102",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.103",
@@ -24920,10 +20817,7 @@ window.BANKMA2 = [
     "t": "<p>En kommun skickar en enkät till 500 personer. Av de yngre svarar 60 % och av de äldre svarar 80 %. Totalt kommer 350 svar in.</p><p>Bestäm hur många yngre respektive äldre personer enkäten skickades till.</p>",
     "s": "<p>Låt \\(x\\) vara antalet yngre och \\(y\\) antalet äldre.</p><p>\\[\\begin{cases}x+y=500\\\\0{,}60x+0{,}80y=350\\end{cases}\\]</p><p>Multiplicera den andra ekvationen med 100 och förenkla: \\(60x+80y=35000\\). Multiplicera den första med 60: \\(60x+60y=30000\\).</p><p>Subtraktion ger \\(20y=5000\\), alltså \\(y=250\\). Då är \\(x=250\\).</p><p><strong>Enkäten skickades till 250 yngre och 250 äldre.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.104",
@@ -24938,10 +20832,7 @@ window.BANKMA2 = [
     "t": "<p>I en fiktiv kommun modelleras valdeltagandet med</p><p>\\[V(t)=72{,}4+0{,}6t,\\]</p><p>där \\(V\\) anges i procent och \\(t\\) är antal valperioder efter startåret.</p><ol><li>Bestäm \\(V(5)\\).</li><li>Tolka talet 0,6 i modellen.</li></ol>",
     "s": "<p>\\(V(5)=72{,}4+0{,}6\\cdot5=75{,}4\\).</p><p>Riktningskoefficienten 0,6 betyder att modellen ökar med 0,6 procentenheter per valperiod.</p><p><strong>75,4 %; modellen ökar med 0,6 procentenheter per valperiod.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.105",
@@ -24956,11 +20847,7 @@ window.BANKMA2 = [
     "t": "<p>En redaktion följer hur många personer som nås av en ny digital nyhetssatsning. Under den första perioden används modellen</p><p>\\[R(t)=12000\\cdot1{,}09^t,\\]</p><p>där \\(t\\) mäts i månader.</p><ol><li>Efter hur många månader är räckvidden enligt modellen 20 000 personer? Lös med logaritmer.</li><li>Förklara varför modellen bör användas försiktigt för en prognos flera år framåt.</li></ol>",
     "s": "<p>Sätt \\(R(t)=20000\\): \\(12000\\cdot1{,}09^t=20000\\).</p><p>\\[t=\\frac{\\lg(20000/12000)}{\\lg1{,}09}\\approx5{,}93.\\]</p><p>Modellen bygger på utvecklingen under en begränsad period. Publikens beteende, plattformar och redaktionens arbetssätt kan förändras.</p><p><strong>Cirka 5,9 månader. En lång prognos ligger utanför det observerade intervallet och är därför osäker.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.106",
@@ -24975,11 +20862,7 @@ window.BANKMA2 = [
     "t": "<p>En samhällsvetenskaplig undersökning skickas till 600 personer. Gruppen 18–29 år har svarsfrekvens 70 % och gruppen 30 år eller äldre har svarsfrekvens 90 %. Totalt kommer 468 svar in.</p><p>Bland de svarande i den yngre gruppen stödjer 50 % ett förslag. Bland de svarande i den äldre gruppen stödjer 75 % förslaget.</p><ol><li>Bestäm hur många personer ur varje åldersgrupp som ingick i det ursprungliga urvalet.</li><li>Beräkna andelen stöd bland de 468 inkomna svaren.</li><li>Beräkna i stället andelen stöd när de två åldersgrupperna får samma andelar som de hade i det ursprungliga urvalet. Förklara varför de två beräknade andelarna skiljer sig.</li></ol>",
     "s": "<p>Låt \\(x\\) vara antalet 18–29 år och \\(y\\) antalet 30 år eller äldre.</p><p>\\[\\begin{cases}x+y=600\\\\0{,}70x+0{,}90y=468\\end{cases}\\]</p><p>Lös ekvationssystemet med additionsmetoden. Då fås \\(x=360\\) och \\(y=240\\). Antalet svar blir då 252 respektive 216.</p><p>Stöd bland de inkomna svaren: \\(0{,}50\\cdot252+0{,}75\\cdot216=288\\). Andelen är \\(288/468\\approx61{,}5\\%\\).</p><p>I ursprungsurvalet utgör yngre 60 % och äldre 40 %. Om de andelarna används blir stödet</p><p>\\[0{,}60\\cdot50\\%+0{,}40\\cdot75\\%=60\\%.\\]</p><p>Resultaten skiljer sig eftersom den äldre gruppen har högre svarsfrekvens och därför utgör en större andel av de inkomna svaren än av det ursprungliga urvalet.</p><p><strong>360 yngre och 240 äldre; cirka 61,5 % bland de inkomna svaren och 60 % när ursprungsurvalets gruppandelar används.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.107",
@@ -24994,11 +20877,7 @@ window.BANKMA2 = [
     "t": "<p>I en stor enkät är ett attitydmått ungefär normalfördelat med medelvärdet 50 och standardavvikelsen 8.</p><p>Ungefär hur stor andel ligger mellan 42 och 58? Använd normalfördelningsfiguren på formelbladet.</p>",
     "s": "<p>42 och 58 är \\(\\mu-\\sigma\\) respektive \\(\\mu+\\sigma\\). Formelbladet visar 34,1 % på vardera sidan om medelvärdet inom en standardavvikelse.</p><p>\\[34{,}1\\%+34{,}1\\%=68{,}2\\%.\\]</p><p><strong>Cirka 68,2 %.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.108",
@@ -25013,10 +20892,7 @@ window.BANKMA2 = [
     "t": "<p>I en mindre studie undersöks sambandet mellan hur många dagar per vecka personer tar del av lokala nyheter och resultatet på ett kunskapstest om kommunen.</p><table class=\"data\"><tr><th>Dagar/vecka, x</th><th>Testpoäng, y</th></tr><tr><td>1</td><td>42</td></tr><tr><td>2</td><td>48</td></tr><tr><td>3</td><td>53</td></tr><tr><td>4</td><td>57</td></tr><tr><td>5</td><td>62</td></tr></table><ol><li>Bestäm en linjär regressionsmodell med ett digitalt verktyg.</li><li>Tolka modellens riktningskoefficient.</li><li>Använd modellen för att uppskatta testpoängen vid 6 dagar per vecka.</li></ol>",
     "s": "<p>Linjär regression ger ungefär \\(y=4{,}9x+37{,}7\\).</p><p>Riktningskoefficienten 4,9 betyder att modellen förknippar en extra dag per vecka med cirka 4,9 högre testpoäng.</p><p>\\(y(6)=4{,}9\\cdot6+37{,}7=67{,}1\\).</p><p><strong>Modell: \\(y\\approx4{,}9x+37{,}7\\). Vid 6 dagar blir modellvärdet cirka 67 poäng.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.109",
@@ -25031,10 +20907,7 @@ window.BANKMA2 = [
     "t": "<p>En undersökning får 320 svar. Ett webbsvar beräknas ta 2 minuter att behandla och ett telefonsvar 6 minuter. Den sammanlagda behandlingstiden är 960 minuter.</p><p>Bestäm antalet webbsvar och telefonsvar.</p>",
     "s": "<p>Låt \\(x\\) vara webbsvar och \\(y\\) telefonsvar.</p><p>\\[\\begin{cases}x+y=320\\\\2x+6y=960\\end{cases}\\]</p><p>Dubbel den första ekvationen: \\(2x+2y=640\\). Subtraktion ger \\(4y=320\\), alltså \\(y=80\\). Då är \\(x=240\\).</p><p><strong>240 webbsvar och 80 telefonsvar.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.110",
@@ -25049,11 +20922,7 @@ window.BANKMA2 = [
     "t": "<p>Två grupper svarar på samma fråga på en skala från 1 till 10.</p><table class=\"data\"><tr><th>Grupp A</th><th>Grupp B</th></tr><tr><td>4</td><td>2</td></tr><tr><td>5</td><td>4</td></tr><tr><td>5</td><td>5</td></tr><tr><td>6</td><td>6</td></tr><tr><td>5</td><td>8</td></tr></table><ol><li>Bestäm medelvärde och standardavvikelse för båda grupperna med ett digitalt verktyg.</li><li>Vilken grupp har mest samlade svar kring medelvärdet? Motivera.</li></ol>",
     "s": "<p>Båda grupperna har medelvärdet 5,0.</p><p>Ett digitalt verktyg ger standardavvikelse ungefär \\(0{,}63\\) för grupp A och \\(2{,}00\\) för grupp B.</p><p>Grupp A har mindre standardavvikelse och svaren ligger därför mer samlade kring medelvärdet.</p><p><strong>Grupp A har mest samlade svar.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.111",
@@ -25068,11 +20937,7 @@ window.BANKMA2 = [
     "t": "<p>Befolkningen i en fiktiv kommun mäts vartannat år. \\(t\\) är antal år efter startåret och \\(P\\) anges i tusental.</p><table class=\"data\"><tr><th>t</th><th>P</th></tr><tr><td>0</td><td>50,0</td></tr><tr><td>2</td><td>52,0</td></tr><tr><td>4</td><td>54,1</td></tr><tr><td>6</td><td>56,3</td></tr></table><ol><li>Bestäm med ett digitalt verktyg en linjär regressionsmodell och en exponentialmodell.</li><li>Beräkna båda modellernas prognos för \\(t=20\\).</li><li>Förklara varför det är svårt att avgöra vilken modell som är bäst enbart utifrån de fyra mätpunkterna.</li></ol>",
     "s": "<p>En linjär regressionsmodell blir ungefär \\(P=49{,}95+1{,}05t\\). En exponentialmodell blir ungefär \\(P=49{,}99\\cdot1{,}01998^t\\).</p><p>För \\(t=20\\) ger den linjära modellen cirka \\(70{,}95\\) tusen och exponentialmodellen cirka \\(74{,}25\\) tusen.</p><p>Båda modellerna ligger mycket nära de fyra observerade värdena. Skillnaden blir tydligare först långt utanför mätintervallet, där båda prognoserna dessutom är mer osäkra.</p><p><strong>Cirka 71,0 tusen respektive 74,3 tusen vid \\(t=20\\); de fyra mätvärdena räcker inte för att säkert välja en modell för långtidsprognoser.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.112",
@@ -25087,10 +20952,7 @@ window.BANKMA2 = [
     "t": "<p>Antalet läsare som nås av en digital artikel modelleras under de första timmarna med</p><p>\\[L(t)=18000\\cdot1{,}12^t.\\]</p><p>Beräkna modellens värde efter 4 timmar.</p>",
     "s": "<p>\\(L(4)=18000\\cdot1{,}12^4\\approx28323\\).</p><p><strong>Cirka 28 300 läsare.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.113",
@@ -25105,11 +20967,7 @@ window.BANKMA2 = [
     "t": "<p>I en studie är korrelationskoefficienten mellan hur ofta personer tar del av politiska nyheter och hur ofta de deltar i samhällsdebatter \\(r=0{,}82\\).</p><p>En skribent drar slutsatsen att mer nyhetsläsning orsakar ett större deltagande i samhällsdebatter. Bedöm slutsatsen.</p>",
     "s": "<p>Ett värde nära 1 visar ett starkt positivt linjärt samband i materialet, men korrelation visar inte i sig orsak.</p><p>Till exempel kan ett redan stort samhällsintresse göra att en person både läser mer nyheter och deltar oftare i debatter.</p><p><strong>Slutsatsen om orsak är inte motiverad enbart av korrelationskoefficienten.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.114",
@@ -25124,11 +20982,7 @@ window.BANKMA2 = [
     "t": "<p>På en förenklad kommunkarta ligger ett bibliotek i \\(A=(2,1)\\) och ett medborgarkontor i \\(B=(8,9)\\). Koordinaterna anges i kilometer.</p><p>Beräkna det raka avståndet mellan platserna.</p>",
     "s": "<p>Avståndsformeln ger</p><p>\\[d=\\sqrt{(8-2)^2+(9-1)^2}=\\sqrt{36+64}=10.\\]</p><p><strong>Avståndet är 10 km.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.115",
@@ -25143,11 +20997,7 @@ window.BANKMA2 = [
     "t": "<p>Ett enkätresultat är ungefär normalfördelat med medelvärdet 50 och standardavvikelsen 10.</p><p>Bestäm med ett digitalt verktyg det gränsvärde som 90 % av resultaten ligger under.</p>",
     "s": "<p>Gränsen är den 90:e percentilen. Använd normalfördelningens sannolikhetskalkylator med medelvärde 50 och standardavvikelse 10 och bestäm värdet som har 0,90 av arean till vänster.</p><p>Det ger ungefär \\(62{,}8\\).</p><p><strong>Gränsvärdet är cirka 62,8.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.116",
@@ -25162,11 +21012,7 @@ window.BANKMA2 = [
     "t": "<p>Två mötesplatser på en karta har koordinaterna \\(A=(2,4)\\) och \\(B=(10,8)\\).</p><p>Bestäm mittpunkten på sträckan \\(AB\\).</p>",
     "s": "<p>Mittpunktsformeln ger</p><p>\\[M=\\left(\\frac{2+10}{2},\\frac{4+8}{2}\\right)=(6,6).\\]</p><p><strong>Mittpunkten är \\((6,6)\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.117",
@@ -25181,11 +21027,7 @@ window.BANKMA2 = [
     "t": "<p>En kommun testar olika antal påminnelser inför ett digitalt samråd. En förenklad modell för antalet svar är</p><p>\\[S(x)=-2x^2+24x+40,\\]</p><p>där \\(x\\) är antalet påminnelser i modellen.</p><ol><li>Bestäm modellens största värde.</li><li>För vilka värden på \\(x\\) är modellens värde minst 100?</li></ol>",
     "s": "<p>Skriv modellen med en kvadrat:</p><p>\\[S(x)=-2(x^2-12x)+40=-2((x-6)^2-36)+40=-2(x-6)^2+112.\\]</p><p>Eftersom \\((x-6)^2\\ge0\\) är modellens största värde 112, och det fås när \\(x=6\\).</p><p>Kravet \\(S(x)\\ge100\\) ger \\(-2x^2+24x+40\\ge100\\), alltså \\(x^2-12x+30\\le0\\).</p><p>Nollställena är \\(x=6\\pm\\sqrt6\\approx3{,}55\\) och \\(8{,}45\\). Uttrycket är högst 0 mellan nollställena.</p><p><strong>Största modellvärdet är 112. Matematiskt fås minst 100 för ungefär \\(3{,}55\\le x\\le8{,}45\\). Eftersom \\(x\\) är antal påminnelser motsvarar det 4–8 påminnelser.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.118",
@@ -25200,11 +21042,7 @@ window.BANKMA2 = [
     "t": "<p>En kommun överväger en informationspunkt längs en huvudgata som i koordinatsystemet har ekvationen \\(x=6\\). Två bostadsområden representeras av \\(A=(1,2)\\) och \\(B=(9,6)\\). Informationspunkten \\(P\\) ska ligga lika långt från A som från B.</p><span class=\"fig\"><svg width=\"560\" height=\"420\" viewBox=\"0 0 560 420\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Koordinatsystem med två bostadsområden och en vertikal huvudgata x lika med 6\">\n<rect x=\"1\" y=\"1\" width=\"558\" height=\"418\" rx=\"12\" fill=\"#fff\" stroke=\"#E4E3E6\"/>\n<g stroke=\"#E9E8EB\" stroke-width=\"1\"><line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"360\"/><line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"360\"/><line x1=\"140\" y1=\"40\" x2=\"140\" y2=\"360\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"360\"/><line x1=\"220\" y1=\"40\" x2=\"220\" y2=\"360\"/><line x1=\"260\" y1=\"40\" x2=\"260\" y2=\"360\"/><line x1=\"300\" y1=\"40\" x2=\"300\" y2=\"360\"/><line x1=\"340\" y1=\"40\" x2=\"340\" y2=\"360\"/><line x1=\"380\" y1=\"40\" x2=\"380\" y2=\"360\"/><line x1=\"420\" y1=\"40\" x2=\"420\" y2=\"360\"/><line x1=\"460\" y1=\"40\" x2=\"460\" y2=\"360\"/><line x1=\"60\" y1=\"360\" x2=\"460\" y2=\"360\"/><line x1=\"60\" y1=\"320\" x2=\"460\" y2=\"320\"/><line x1=\"60\" y1=\"280\" x2=\"460\" y2=\"280\"/><line x1=\"60\" y1=\"240\" x2=\"460\" y2=\"240\"/><line x1=\"60\" y1=\"200\" x2=\"460\" y2=\"200\"/><line x1=\"60\" y1=\"160\" x2=\"460\" y2=\"160\"/><line x1=\"60\" y1=\"120\" x2=\"460\" y2=\"120\"/><line x1=\"60\" y1=\"80\" x2=\"460\" y2=\"80\"/><line x1=\"60\" y1=\"40\" x2=\"460\" y2=\"40\"/></g>\n<line x1=\"60\" y1=\"360\" x2=\"485\" y2=\"360\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"60\" y1=\"380\" x2=\"60\" y2=\"25\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<line x1=\"300\" y1=\"40\" x2=\"300\" y2=\"360\" stroke=\"#B43123\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/>\n<text x=\"307\" y=\"62\" class=\"fig-etikett\">huvudgata x = 6</text>\n<circle cx=\"100\" cy=\"280\" r=\"6\" fill=\"#2A5D9E\"/><text x=\"82\" y=\"302\" class=\"fig-namn\">A</text>\n<circle cx=\"420\" cy=\"120\" r=\"6\" fill=\"#2A5D9E\"/><text x=\"430\" y=\"112\" class=\"fig-namn\">B</text>\n<text x=\"60\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">0</text><text x=\"140\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">2</text><text x=\"220\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">4</text><text x=\"300\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">6</text><text x=\"380\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">8</text><text x=\"460\" y=\"382\" text-anchor=\"middle\" class=\"fig-num\">10</text><text x=\"48\" y=\"365\" text-anchor=\"end\" class=\"fig-num\">0</text><text x=\"48\" y=\"285\" text-anchor=\"end\" class=\"fig-num\">2</text><text x=\"48\" y=\"205\" text-anchor=\"end\" class=\"fig-num\">4</text><text x=\"48\" y=\"125\" text-anchor=\"end\" class=\"fig-num\">6</text><text x=\"48\" y=\"45\" text-anchor=\"end\" class=\"fig-num\">8</text><text x=\"492\" y=\"365\" class=\"fig-num\">x</text><text x=\"49\" y=\"24\" class=\"fig-num\">y</text>\n</svg></span><ol><li>Bestäm koordinaterna för \\(P\\).</li><li>Beräkna avståndet från \\(P\\) till vart och ett av områdena.</li></ol>",
     "s": "<p>Skriv \\(P=(6,y)\\). Villkoret \\(PA=PB\\) ger</p><p>\\[(6-1)^2+(y-2)^2=(6-9)^2+(y-6)^2.\\]</p><p>\\(25+(y-2)^2=9+(y-6)^2\\). Efter utveckling fås \\(8y=16\\), alltså \\(y=2\\).</p><p>Alltså \\(P=(6,2)\\). Avståndet till A blir 5 längdenheter. Till B blir avståndet \\(\\sqrt{3^2+4^2}=5\\).</p><p><strong>\\(P=(6,2)\\), och avståndet till vardera området är 5 längdenheter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.119",
@@ -25219,10 +21057,7 @@ window.BANKMA2 = [
     "t": "<p>I en studie av kommuninformation används regressionsmodellen</p><p>\\[y=2{,}4x+31,\\]</p><p>där \\(x\\) är antal informationskontakter under en månad och \\(y\\) är ett kunskapsresultat i poäng.</p><p>Tolka talen 2,4 och 31 i modellen.</p>",
     "s": "<p>Riktningskoefficienten 2,4 betyder att modellen förknippar en extra informationskontakt med cirka 2,4 högre poäng.</p><p>Konstanten 31 är modellens värde när \\(x=0\\).</p><p><strong>2,4 är förändringen per extra kontakt och 31 är modellvärdet vid 0 kontakter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.120",
@@ -25237,10 +21072,7 @@ window.BANKMA2 = [
     "t": "<p>Två fiktiva kommuner har modellerna</p><p>\\[A(t)=68+0{,}4t,\\qquad B(t)=72+0{,}4t,\\]</p><p>för ett procenttal som följs över tid.</p><ol><li>Finns det något värde på \\(t\\) där modellerna ger samma resultat?</li><li>Tolka svaret i sammanhanget.</li></ol>",
     "s": "<p>Sätt modellerna lika: \\(68+0{,}4t=72+0{,}4t\\). När \\(0{,}4t\\) subtraheras från båda led återstår \\(68=72\\), vilket är omöjligt.</p><p>Linjerna har samma riktningskoefficient men olika konstant och är därför parallella.</p><p><strong>Nej. Modellerna behåller en skillnad på 4 procentenheter hela tiden.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.121",
@@ -25255,11 +21087,7 @@ window.BANKMA2 = [
     "t": "<p>Antalet sökbara dokument i ett digitalt mediearkiv modelleras med</p><p>\\[D(t)=5000\\cdot10^{0{,}2t}.\\]</p><p>Efter hur lång tid är modellens värde 50 000?</p>",
     "s": "<p>Sätt \\(D(t)=50000\\): \\(5000\\cdot10^{0{,}2t}=50000\\), alltså \\(10^{0{,}2t}=10\\).</p><p>Därför är \\(0{,}2t=1\\) och \\(t=5\\).</p><p><strong>Efter 5 tidsenheter.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.122",
@@ -25274,10 +21102,7 @@ window.BANKMA2 = [
     "t": "<p>Två modeller används för befolkningen i ett område, där \\(t\\) är antal år efter startåret:</p><p>\\[L(t)=20000+400t,\\qquad E(t)=20000\\cdot1{,}02^t.\\]</p><ol><li>Beräkna båda modellernas värden efter 10 år.</li><li>Vilken modell ger då störst befolkning?</li><li>Förklara en viktig skillnad mellan modellernas antaganden.</li></ol>",
     "s": "<p>\\(L(10)=24000\\).</p><p>\\(E(10)=20000\\cdot1{,}02^{10}\\approx24380\\).</p><p>Den linjära modellen antar samma ökning i antal varje år. Exponentialmodellen antar samma procentuella ökning varje år.</p><p><strong>Efter 10 år: 24 000 respektive cirka 24 380; exponentialmodellen är större.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.123",
@@ -25292,11 +21117,7 @@ window.BANKMA2 = [
     "t": "<p>Ett lådagram visar hur personer i en enkät bedömer förtroendet för lokal samhällsinformation på en skala från 0 till 10.</p><span class=\"fig smal\"><svg width=\"520\" height=\"190\" viewBox=\"0 0 520 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Lådagram från 0 till 10\">\n<rect x=\"1\" y=\"1\" width=\"518\" height=\"188\" rx=\"12\" fill=\"#fff\" stroke=\"#E4E3E6\"/>\n<line x1=\"55\" y1=\"135\" x2=\"465\" y2=\"135\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<line x1=\"55\" y1=\"130\" x2=\"55\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"55\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">0</text><line x1=\"96\" y1=\"130\" x2=\"96\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"96\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">1</text><line x1=\"137\" y1=\"130\" x2=\"137\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"137\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">2</text><line x1=\"178\" y1=\"130\" x2=\"178\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"178\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">3</text><line x1=\"219\" y1=\"130\" x2=\"219\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"219\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">4</text><line x1=\"260\" y1=\"130\" x2=\"260\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"260\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">5</text><line x1=\"301\" y1=\"130\" x2=\"301\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"301\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">6</text><line x1=\"342\" y1=\"130\" x2=\"342\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"342\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">7</text><line x1=\"383\" y1=\"130\" x2=\"383\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"383\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">8</text><line x1=\"424\" y1=\"130\" x2=\"424\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"424\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">9</text><line x1=\"465\" y1=\"130\" x2=\"465\" y2=\"140\" stroke=\"#2B2527\"/><text x=\"465\" y=\"158\" text-anchor=\"middle\" class=\"fig-num\">10</text><line x1=\"96\" y1=\"80\" x2=\"424\" y2=\"80\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<line x1=\"96\" y1=\"67\" x2=\"96\" y2=\"93\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"424\" y1=\"67\" x2=\"424\" y2=\"93\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<rect x=\"178\" y=\"55\" width=\"164\" height=\"50\" fill=\"#EAF0F8\" stroke=\"#2A5D9E\" stroke-width=\"2\"/>\n<line x1=\"260\" y1=\"55\" x2=\"260\" y2=\"105\" stroke=\"#2A5D9E\" stroke-width=\"3\"/>\n</svg></span><ol><li>Bestäm medianen.</li><li>Bestäm kvartilavståndet.</li></ol>",
     "s": "<p>Medianen markeras av linjen inne i lådan och är 5.</p><p>Nedre kvartil är 3 och övre kvartil är 7. Kvartilavståndet är \\(7-3=4\\).</p><p><strong>Median 5 och kvartilavstånd 4.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.124",
@@ -25311,11 +21132,7 @@ window.BANKMA2 = [
     "t": "<p>I en kommun utgör grupp A 60 % av befolkningen och grupp B 40 %. I en undersökning är medelvärdet på en fråga 7,2 i grupp A och 6,1 i grupp B.</p><p>I det faktiska svarsunderlaget kommer 80 % av svaren från grupp A och 20 % från grupp B.</p><ol><li>Beräkna ett gemensamt medelvärde när grupp A står för 80 % och grupp B för 20 %.</li><li>Beräkna i stället ett gemensamt medelvärde när grupp A står för 60 % och grupp B för 40 %, som i kommunens befolkning.</li><li>Förklara vad skillnaden mellan resultaten visar.</li></ol>",
     "s": "<p>Med svarsunderlagets fördelning blir medelvärdet \\(0{,}80\\cdot7{,}2+0{,}20\\cdot6{,}1=6{,}98\\).</p><p>Med befolkningens fördelning blir medelvärdet \\(0{,}60\\cdot7{,}2+0{,}40\\cdot6{,}1=6{,}76\\).</p><p>Skillnaden visar att en grupp som utgör en större andel av svaren än av befolkningen kan påverka det sammanlagda resultatet.</p><p><strong>6,98 respektive 6,76.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.125",
@@ -25330,11 +21147,7 @@ window.BANKMA2 = [
     "t": "<p>En journalist jämför fyra kommuner och får följande data.</p><table class=\"data\"><tr><th>Invånare (tusental)</th><th>Biblioteksbesök (tusental)</th><th>Anmälda serviceärenden</th></tr><tr><td>20</td><td>30</td><td>160</td></tr><tr><td>40</td><td>60</td><td>320</td></tr><tr><td>60</td><td>90</td><td>480</td></tr><tr><td>80</td><td>120</td><td>640</td></tr></table><ol><li>Bestäm korrelationskoefficienten mellan biblioteksbesök och serviceärenden.</li><li>Journalisten skriver: ”Fler biblioteksbesök leder till fler serviceärenden.” Bedöm slutsatsen genom att även jämföra uppgifterna med kommunernas storlek.</li></ol>",
     "s": "<p>De två kolumnerna är exakt proportionella, så den linjära korrelationskoefficienten är \\(r=1\\).</p><p>Men båda antalen ökar också exakt proportionellt med invånarantalet. Biblioteksbesöken är \\(1{,}5\\) per invånare i samtliga kommuner och serviceärendena är 8 per 1000 invånare i samtliga kommuner.</p><p>Sambandet mellan de två angivna antalen kan därför förklaras av kommunstorleken. Korrelationen visar inte att biblioteksbesök orsakar serviceärenden.</p><p><strong>\\(r=1\\), men slutsatsen om orsak stöds inte; invånarantalet förklarar den gemensamma ökningen i de angivna antalen.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.126",
@@ -25349,11 +21162,7 @@ window.BANKMA2 = [
     "t": "<p>Inför en medborgardialog modelleras antalet deltagare med</p><p>\\[D(x)=-4x^2+48x+120.\\]</p><p>Här är \\(x\\) antal veckor före dialogen som informationsinsatsen startar. Bestäm modellens största värde och vilket \\(x\\)-värde det fås för.</p>",
     "s": "<p>Kvadratkomplettera:</p><p>\\[D(x)=-4(x^2-12x)+120=-4((x-6)^2-36)+120=-4(x-6)^2+264.\\]</p><p>Eftersom \\((x-6)^2\\ge0\\) är det största möjliga modellvärdet 264. Det fås när \\(x=6\\).</p><p><strong>Största modellvärdet är 264 och fås vid \\(x=6\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.127",
@@ -25368,11 +21177,7 @@ window.BANKMA2 = [
     "t": "<p>Ett mått i en stor undersökning antas vara normalfördelat. Av 1 200 personer vill man uppskatta hur många som ligger inom två standardavvikelser från medelvärdet.</p><p>Använd normalfördelningsfiguren på formelbladet.</p>",
     "s": "<p>Mellan \\(\\mu-2\\sigma\\) och \\(\\mu+2\\sigma\\) ligger enligt figuren</p><p>\\[2\\cdot(34{,}1\\%+13{,}6\\%)=95{,}4\\%.\\]</p><p>\\(0{,}954\\cdot1200=1144{,}8\\).</p><p><strong>Ungefär 1 145 personer.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.128",
@@ -25387,11 +21192,7 @@ window.BANKMA2 = [
     "t": "<p>I ett källkritikstest inom en mediestudie ligger en persons resultat vid den 75:e percentilen.</p><p>Förklara vad det betyder.</p>",
     "s": "<p>Den 75:e percentilen är ett värde som ungefär 75 % av observationerna ligger på eller under.</p><p><strong>Personens resultat ligger ungefär lika högt eller högre än 75 % av resultaten.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "procedur",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.129",
@@ -25406,10 +21207,7 @@ window.BANKMA2 = [
     "t": "<p>Befolkningen i ett område var 42 000 personer vid startåret och 46 400 personer fem år senare. Anta att utvecklingen under perioden kan beskrivas med en exponentialfunktion.</p><ol><li>Bestäm en modell \\(P(t)=C\\cdot a^t\\).</li><li>Beräkna modellens värde efter 10 år.</li><li>Ange den årliga procentuella förändringen enligt modellen.</li></ol>",
     "s": "<p>Eftersom \\(P(0)=42000\\) är \\(C=42000\\).</p><p>\\[42000a^5=46400\\Rightarrow a=\\sqrt[5]{46400/42000}\\approx1{,}02013.\\]</p><p>Alltså \\(P(t)\\approx42000\\cdot1{,}02013^t\\). Efter 10 år blir modellvärdet cirka \\(51261\\).</p><p>Förändringsfaktorn motsvarar ungefär 2,01 % ökning per år.</p><p><strong>\\(P(t)\\approx42000\\cdot1{,}02013^t\\), cirka 51 300 personer efter 10 år och cirka 2,0 % per år.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.130",
@@ -25424,11 +21222,7 @@ window.BANKMA2 = [
     "t": "<p>I en mediestudie beskriver \\(I(x)=-x^2+10x\\) skillnaden mellan två informationskanalers modellerade räckvidd.</p><p>När \\(I(x)=0\\) ger modellerna samma räckvidd. Bestäm dessa \\(x\\)-värden.</p>",
     "s": "<p>Faktorisera: \\(I(x)=x(10-x)\\).</p><p>Nollproduktmetoden ger \\(x=0\\) eller \\(x=10\\).</p><p><strong>Modellerna ger samma räckvidd vid \\(x=0\\) och \\(x=10\\).</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.131",
@@ -25443,11 +21237,7 @@ window.BANKMA2 = [
     "t": "<p>Två modeller används för den sammanlagda räckvidden för ett medieinnehåll under de första 20 timmarna:</p><p>\\[P(t)=400t^2,\\qquad E(t)=1500\\cdot1{,}3^t.\\]</p><ol><li>Bestäm med GeoGebra när modellerna ger samma värde.</li><li>Beskriv under vilka tidsintervall respektive modell ger störst värde.</li><li>Förklara varför en jämförelse mellan modellerna bör begränsas till det intervall där de har prövats mot data.</li></ol>",
     "s": "<p>Lös \\(400t^2=1500\\cdot1{,}3^t\\) grafiskt eller med ett digitalt verktyg. Det ger ungefär \\(t=2{,}80\\) och \\(t=16{,}19\\).</p><p>Exponentialmodellen ligger högre före cirka 2,80 timmar och efter cirka 16,19 timmar. Potensmodellen ligger högre däremellan.</p><p>Utanför det observerade intervallet kan båda modellerna ge utveckling som inte motsvarar verkligt användarbeteende.</p><p><strong>Skärningar vid cirka 2,80 h och 16,19 h; modellernas relativa storlek växlar vid dessa punkter.</strong></p>",
     "miniräknare": true,
-    "geogebra": true,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": true
   },
   {
     "id": "5.132",
@@ -25462,11 +21252,7 @@ window.BANKMA2 = [
     "t": "<p>Ett attitydmått i en undersökning har medelvärdet 50 och standardavvikelsen 10. En analytiker antar att resultaten är normalfördelade.</p><p>I ett material med 1 000 personer ligger 870 personer mellan 30 och 70.</p><ol><li>Hur många personer skulle normalfördelningsmodellen ungefär förutsäga mellan 30 och 70? Använd formelbladet.</li><li>Jämför modellens resultat med det faktiska antalet 870.</li><li>Bedöm om uppgifterna ger skäl att kontrollera närmare om normalfördelning är en rimlig modell för resultaten.</li></ol>",
     "s": "<p>Intervallet 30–70 är \\(\\mu\\pm2\\sigma\\). Formelbladet ger cirka 95,4 % inom två standardavvikelser.</p><p>Modellen förutsäger därför \\(0{,}954\\cdot1000=954\\) personer. Det observerade antalet är 870, alltså 84 färre.</p><p>Skillnaden är tydlig. Den visar inte ensam exakt hur fördelningen ser ut, men den ger goda skäl att undersöka om normalfördelningsmodellen passar materialet.</p><p><strong>Modellen förutsäger cirka 954 personer, jämfört med 870 observerade; det bör kontrolleras närmare om normalfördelning är en rimlig modell.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.133",
@@ -25481,10 +21267,7 @@ window.BANKMA2 = [
     "t": "<p>Vid ett kommunalt samråd deltar 420 personer. Bland deltagare under 30 år väljer 62 % en digital kanal, medan 38 % av deltagarna som är 30 år eller äldre gör det. Totalt väljer 210 personer den digitala kanalen.</p><p>Bestäm hur många deltagare som tillhör respektive åldersgrupp.</p>",
     "s": "<p>Låt \\(x\\) vara antalet under 30 år och \\(y\\) antalet 30 år eller äldre.</p><p>\\[\\begin{cases}x+y=420\\\\0{,}62x+0{,}38y=210\\end{cases}\\]</p><p>Sätt \\(y=420-x\\): \\(0{,}62x+0{,}38(420-x)=210\\).</p><p>\\(0{,}24x=50{,}4\\), alltså \\(x=210\\) och \\(y=210\\).</p><p><strong>210 personer i vardera gruppen.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.134",
@@ -25499,10 +21282,7 @@ window.BANKMA2 = [
     "t": "<p>Två modeller för andelen som använder två olika informationskanaler är</p><p>\\[A(t)=30+2t,\\qquad B(t)=48-t,\\]</p><p>där andelarna anges i procent.</p><p>Bestäm när modellerna ger samma andel och vilken andel det är.</p>",
     "s": "<p>Sätt modellerna lika: \\(30+2t=48-t\\). Då \\(3t=18\\), så \\(t=6\\).</p><p>Andelen blir \\(A(6)=30+12=42\\).</p><p><strong>Efter 6 tidsenheter, då båda modellerna ger 42 %.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.135",
@@ -25517,11 +21297,7 @@ window.BANKMA2 = [
     "t": "<p>På en tematisk karta i skala 1:25 000 upptar ett stadsområde 18 cm².</p><ol><li>Bestäm områdets verkliga area i km².</li><li>Samma område ritas på en ny karta i skala 1:10 000. Hur stor area upptar området på den nya kartan?</li></ol>",
     "s": "<p>I skala 1:25 000 motsvarar 1 cm 250 m. Därför motsvarar 1 cm² \\(250^2=62500\\) m² = 0,0625 km².</p><p>Områdets area är \\(18\\cdot0{,}0625=1{,}125\\) km².</p><p>I skala 1:10 000 motsvarar 1 cm 100 m och 1 cm² motsvarar 10 000 m² = 0,01 km². Därför blir kartarean \\(1{,}125/0{,}01=112{,}5\\) cm².</p><p><strong>1,125 km² i verkligheten och 112,5 cm² på kartan i skala 1:10 000.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "geogebra": false
   },
   {
     "id": "5.136",
@@ -25536,10 +21312,6 @@ window.BANKMA2 = [
     "t": "<p>För två områden har följande värden lästs av ur lådagram från en enkät på skalan 0–10:</p><table class=\"data\"><tr><th></th><th>Min</th><th>Nedre kvartil</th><th>Median</th><th>Övre kvartil</th><th>Max</th></tr><tr><td>Område A</td><td>1</td><td>4</td><td>6</td><td>8</td><td>10</td></tr><tr><td>Område B</td><td>2</td><td>5</td><td>6</td><td>7</td><td>9</td></tr></table><ol><li>Jämför medianerna.</li><li>Bestäm kvartilavståndet för båda områdena.</li><li>En elev säger: ”Område B har högre typiskt resultat och större spridning.” Bedöm påståendet utifrån uppgifterna.</li></ol>",
     "s": "<p>Båda områdena har medianen 6.</p><p>Kvartilavståndet är \\(8-4=4\\) för A och \\(7-5=2\\) för B.</p><p>Påståendet stämmer inte. Medianerna är lika, och de mittersta 50 % av svaren är mer utspridda i A än i B.</p><p><strong>Samma median, men större kvartilavstånd i område A.</strong></p>",
     "miniräknare": true,
-    "geogebra": false,
-    "formaga": [
-      "resonemang",
-      "modellering"
-    ]
+    "geogebra": false
   }
 ];
