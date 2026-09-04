@@ -1,9 +1,10 @@
 /* uppgiftermato1.js — Matematik – fortsättning nivå 1b och 1c.
-   Referensutbyggnad 2026-09-01: nya uppgifter kalibrerade mot uppladdade Ma3c-prov,
-   repetitionsmaterial och ämnesplanen.
    Figurgenomgång 2026-09-03: samtliga 351 figurer granskade och rättade — etiketter flyttade ur
    kurvor och sidor, måttlinjer införda i geometrifigurer, axelskalor tillagda där de saknades,
-   färg, typsnitt och viewBox normaliserade. 32 facit omskrivna med individuella lösningar. */
+   färg, typsnitt och viewBox normaliserade.
+   Facitgenomgång 2026-09-04: 69 mallfacit ersatta med individuella lösningar. Uppgiftstexten i
+   1.103, 1.106, 1.109, 1.112 och 1.115 återställd — bråket saknades, så facitets tal om formen
+   0/0 hörde inte ihop med uppgiften. */
 
 window.BANKMATO1 = [
   {
@@ -1627,8 +1628,8 @@ window.BANKMATO1 = [
     ],
     "niva": "E",
     "poang": "2/0/0",
-    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 1}x + 1.\\]</p>",
-    "s": "<p>Direkt insättning ger formen \\(0/0\\), så faktorisera och förkorta den faktor som orsakar problemet. Det förenklade uttrycket kan sedan värderas vid \\(x=1\\).</p><p><strong>Svar:</strong> \\(\\boxed{2}\\).</p>",
+    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 1}\\frac{x^2-1}{x-1}.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Direkt insättning ger \\(\\frac{1^2-1}{1-1}=\\frac00\\), vilket inte är ett tal. Formen \\(0/0\\) betyder att både täljare och nämnare innehåller faktorn \\(x-1\\). Faktorisera och förkorta bort den.</p><p>\\[\\frac{x^2-1}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1\\qquad\\text{för }x\\neq1\\]</p><p>Det förenklade uttrycket \\(x+1\\) är kontinuerligt, så gränsvärdet fås genom insättning:</p><p>\\[\\lim_{x\\to1}\\frac{x^2-1}{x-1}=1+1=\\boxed{2}\\]</p><p><strong>Observera:</strong> Funktionen är fortfarande odefinierad i \\(x=1\\) — grafen har ett hål där. Gränsvärdet beskriver vad funktionen närmar sig, inte vad den är i punkten.</p>",
     "familj": "r2_lim_E_1",
     "id": "1.103",
     "miniräknare": false,
@@ -1675,8 +1676,8 @@ window.BANKMATO1 = [
     ],
     "niva": "E",
     "poang": "2/0/0",
-    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 2}x + 2.\\]</p>",
-    "s": "<p>Direkt insättning ger formen \\(0/0\\), så faktorisera och förkorta den faktor som orsakar problemet. Det förenklade uttrycket kan sedan värderas vid \\(x=2\\).</p><p><strong>Svar:</strong> \\(\\boxed{4}\\).</p>",
+    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 2}\\frac{x^2-4}{x-2}.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Insättning av \\(x=2\\) ger \\(\\frac00\\). Täljaren är en konjugatregel:</p><p>\\[x^2-4=(x-2)(x+2)\\]</p><p>\\[\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2\\qquad\\text{för }x\\neq2\\]</p><p>\\[\\lim_{x\\to2}\\frac{x^2-4}{x-2}=2+2=\\boxed{4}\\]</p><p><strong>Koppling framåt:</strong> Uttrycket \\(\\frac{x^2-4}{x-2}\\) är just ändringskvoten för \\(f(x)=x^2\\) mellan \\(x\\) och 2. Att gränsvärdet blir 4 är alltså samma sak som att \\(f'(2)=4\\).</p>",
     "familj": "r2_lim_E_2",
     "id": "1.106",
     "miniräknare": false,
@@ -1723,8 +1724,8 @@ window.BANKMATO1 = [
     ],
     "niva": "E",
     "poang": "2/0/0",
-    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to -3}x - 3.\\]</p>",
-    "s": "<p>Direkt insättning ger formen \\(0/0\\), så faktorisera och förkorta den faktor som orsakar problemet. Det förenklade uttrycket kan sedan värderas vid \\(x=-3\\).</p><p><strong>Svar:</strong> \\(\\boxed{-6}\\).</p>",
+    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to -3}\\frac{x^2-9}{x+3}.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Insättning av \\(x=-3\\) ger \\(\\frac00\\). Här är det nämnaren \\(x+3\\) som är den kritiska faktorn, så faktorisera täljaren så att den syns:</p><p>\\[x^2-9=(x+3)(x-3)\\]</p><p>\\[\\frac{x^2-9}{x+3}=x-3\\qquad\\text{för }x\\neq-3\\]</p><p>\\[\\lim_{x\\to-3}\\frac{x^2-9}{x+3}=-3-3=\\boxed{-6}\\]</p><p><strong>Att lägga märke till:</strong> Gränsvärdet är negativt trots att täljaren \\(x^2-9\\) är en kvadrat minus ett tal. Låt inte kvadraten lura dig — det är det förenklade uttrycket \\(x-3\\) som avgör tecknet.</p>",
     "familj": "r2_lim_E_3",
     "id": "1.109",
     "miniräknare": false,
@@ -1771,8 +1772,8 @@ window.BANKMATO1 = [
     ],
     "niva": "E",
     "poang": "2/0/0",
-    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 4}x + 4.\\]</p>",
-    "s": "<p>Direkt insättning ger formen \\(0/0\\), så faktorisera och förkorta den faktor som orsakar problemet. Det förenklade uttrycket kan sedan värderas vid \\(x=4\\).</p><p><strong>Svar:</strong> \\(\\boxed{8}\\).</p>",
+    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 4}\\frac{x^2-16}{x-4}.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Insättning ger \\(\\frac{16-16}{4-4}=\\frac00\\). Faktorisera täljaren med konjugatregeln:</p><p>\\[\\frac{x^2-16}{x-4}=\\frac{(x-4)(x+4)}{x-4}=x+4\\qquad\\text{för }x\\neq4\\]</p><p>\\[\\lim_{x\\to4}\\frac{x^2-16}{x-4}=4+4=\\boxed{8}\\]</p><p><strong>Kontrollera numeriskt:</strong> Sätt in värden nära 4, till exempel \\(x=3,99\\) och \\(x=4,01\\). Du får \\(7,99\\) respektive \\(8,01\\). Att värdena närmar sig 8 från båda håll bekräftar svaret.</p>",
     "familj": "r2_lim_E_4",
     "id": "1.112",
     "miniräknare": false,
@@ -1819,8 +1820,8 @@ window.BANKMATO1 = [
     ],
     "niva": "E",
     "poang": "2/0/0",
-    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 0}x + 3.\\]</p>",
-    "s": "<p>Direkt insättning ger formen \\(0/0\\), så faktorisera och förkorta den faktor som orsakar problemet. Det förenklade uttrycket kan sedan värderas vid \\(x=0\\).</p><p><strong>Svar:</strong> \\(\\boxed{3}\\).</p>",
+    "t": "<p>Bestäm gränsvärdet</p><p>\\[\\lim_{x\\to 0}\\frac{x^2+3x}{x}.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Insättning av \\(x=0\\) ger \\(\\frac00\\). Här är täljaren inte en konjugatregel utan har en gemensam faktor \\(x\\):</p><p>\\[x^2+3x=x(x+3)\\]</p><p>\\[\\frac{x^2+3x}{x}=x+3\\qquad\\text{för }x\\neq0\\]</p><p>\\[\\lim_{x\\to0}\\frac{x^2+3x}{x}=0+3=\\boxed{3}\\]</p><p><strong>Poäng:</strong> Alla \\(0/0\\)-uttryck faktoriseras inte med konjugatregeln. Leta först efter en gemensam faktor att bryta ut — det är ofta enklare.</p>",
     "familj": "r2_lim_E_5",
     "id": "1.115",
     "miniräknare": false,
@@ -4153,7 +4154,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera</p><p>\\[f(x)=2 x^{4} - x^{3} + 2 x^{2} - 5 x + 3.\\]</p>",
-    "s": "<p>Derivera term för term med potensregeln:</p><p>\\[f' (x)=8 x^{3} - 3 x^{2} + 4 x - 5.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Derivera term för term med potensregeln \\((x^n)'=nx^{n-1}\\). Konstanta faktorer följer med, och den fristående konstanten försvinner.</p><p>\\[2x^4\\to 8x^3,\\qquad -x^3\\to-3x^2,\\qquad 2x^2\\to4x,\\qquad -5x\\to-5,\\qquad 3\\to0\\]</p><p>\\[f'(x)=\\boxed{8x^3-3x^2+4x-5}\\]</p><p><strong>Kontroll:</strong> Gradtalet ska sjunka med precis ett steg, från 4 till 3. Antalet termer minskar med en, eftersom konstanttermen 3 deriveras bort.</p>",
     "familj": "topup_derreg_0",
     "miniräknare": false,
     "geogebra": false
@@ -4217,7 +4218,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera</p><p>\\[f(x)=3 x^{4} - 2 x^{3} + 2 x^{2} - 5 x + 3.\\]</p>",
-    "s": "<p>Derivera term för term med potensregeln:</p><p>\\[f' (x)=12 x^{3} - 6 x^{2} + 4 x - 5.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Potensregeln \\((x^n)'=nx^{n-1}\\) på varje term.</p><p>\\[3x^4\\to 12x^3,\\qquad -2x^3\\to-6x^2,\\qquad 2x^2\\to4x,\\qquad -5x\\to-5,\\qquad 3\\to0\\]</p><p>\\[f'(x)=\\boxed{12x^3-6x^2+4x-5}\\]</p><p><strong>Jämför med föregående uppgift:</strong> Endast de två första koefficienterna skiljer. Derivatans tre sista termer är identiska, eftersom de kommer från de termer som är lika i de båda funktionerna.</p>",
     "familj": "topup_derreg_1",
     "miniräknare": false,
     "geogebra": false
@@ -4281,7 +4282,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera</p><p>\\[f(x)=4 x^{4} - 3 x^{3} + 2 x^{2} - 5 x + 3.\\]</p>",
-    "s": "<p>Derivera term för term med potensregeln:</p><p>\\[f' (x)=16 x^{3} - 9 x^{2} + 4 x - 5.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Derivera varje term för sig.</p><p>\\[4x^4\\to 16x^3,\\qquad -3x^3\\to-9x^2,\\qquad 2x^2\\to4x,\\qquad -5x\\to-5,\\qquad 3\\to0\\]</p><p>\\[f'(x)=\\boxed{16x^3-9x^2+4x-5}\\]</p><p><strong>Kontroll i en punkt:</strong> \\(f'(1)=16-9+4-5=6\\). Räkna ut ändringskvoten mellan \\(x=1\\) och \\(x=1,001\\) på räknaren — du bör få ett värde nära 6.</p>",
     "familj": "topup_derreg_2",
     "miniräknare": false,
     "geogebra": false
@@ -4345,7 +4346,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera</p><p>\\[f(x)=5 x^{4} - x^{3} + 2 x^{2} - 5 x + 3.\\]</p>",
-    "s": "<p>Derivera term för term med potensregeln:</p><p>\\[f' (x)=20 x^{3} - 3 x^{2} + 4 x - 5.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Potensregeln på varje term.</p><p>\\[5x^4\\to 20x^3,\\qquad -x^3\\to-3x^2,\\qquad 2x^2\\to4x,\\qquad -5x\\to-5,\\qquad 3\\to0\\]</p><p>\\[f'(x)=\\boxed{20x^3-3x^2+4x-5}\\]</p><p><strong>Vanligt fel:</strong> Termen \\(-x^3\\) har den underförstådda koefficienten \\(-1\\). Derivatan blir \\(-3x^2\\), inte \\(-x^2\\).</p>",
     "familj": "topup_derreg_3",
     "miniräknare": false,
     "geogebra": false
@@ -4409,7 +4410,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera</p><p>\\[f(x)=2 x^{4} - 2 x^{3} + 2 x^{2} - 5 x + 3.\\]</p>",
-    "s": "<p>Derivera term för term med potensregeln:</p><p>\\[f' (x)=8 x^{3} - 6 x^{2} + 4 x - 5.\\]</p>",
+    "s": "<p><strong>Metod:</strong> Potensregeln på varje term.</p><p>\\[2x^4\\to 8x^3,\\qquad -2x^3\\to-6x^2,\\qquad 2x^2\\to4x,\\qquad -5x\\to-5,\\qquad 3\\to0\\]</p><p>\\[f'(x)=\\boxed{8x^3-6x^2+4x-5}\\]</p><p><strong>Notera att konstanttermen 3 inte påverkar derivatan alls.</strong> Alla funktioner \\(2x^4-2x^3+2x^2-5x+C\\) har samma derivata, oavsett \\(C\\). Det är precis den observation som senare gör att en primitiv funktion alltid får ett \\(+C\\).</p>",
     "familj": "topup_derreg_4",
     "miniräknare": false,
     "geogebra": false
@@ -4504,7 +4505,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera \\(f(x)=3 \\cdot 2^{x}\\).</p>",
-    "s": "<p>Använd regeln \\((a^x)^{\\prime}=a^x\\ln a\\):</p><p>\\[f^{\\prime}(x)=3\\cdot2^x\\ln2.\\]</p><p><strong>Svar:</strong> \\(\\boxed{3\\cdot2^x\\ln2}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Regeln är \\((a^x)'=a^x\\ln a\\). Den konstanta faktorn 3 följer med oförändrad.</p><p>\\[f'(x)=3\\cdot2^x\\ln 2\\]</p><p><strong>Svar:</strong> \\(\\boxed{f'(x)=3\\cdot2^x\\ln2}\\)</p><p><strong>Varför dyker \\(\\ln 2\\) upp?</strong> Skriv om basen med hjälp av \\(2=e^{\\ln 2}\\). Då är \\(2^x=e^{x\\ln2}\\), och kedjeregeln ger faktorn \\(\\ln2\\). Talet \\(\\ln2\\approx0,69\\) är alltså mindre än 1 — derivatan är här faktiskt <em>mindre</em> än funktionen själv.</p>",
     "familj": "r2_exp_E_der_1",
     "id": "2.84",
     "miniräknare": false,
@@ -4584,7 +4585,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera \\(f(x)=2 \\cdot 3^{x}\\).</p>",
-    "s": "<p>Använd regeln \\((a^x)^{\\prime}=a^x\\ln a\\):</p><p>\\[f^{\\prime}(x)=2\\cdot3^x\\ln3.\\]</p><p><strong>Svar:</strong> \\(\\boxed{2\\cdot3^x\\ln3}\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\((a^x)'=a^x\\ln a\\) med \\(a=3\\), och faktorn 2 följer med.</p><p>\\[f'(x)=2\\cdot3^x\\ln 3\\]</p><p><strong>Svar:</strong> \\(\\boxed{f'(x)=2\\cdot3^x\\ln3}\\)</p><p><strong>Jämförelse:</strong> \\(\\ln3\\approx1,10\\) är större än 1, så här växer derivatan snabbare än funktionen. Gränsfallet är basen \\(e\\), där \\(\\ln e=1\\) och funktionen är sin egen derivata.</p>",
     "familj": "r2_exp_E_der_2",
     "id": "2.89",
     "miniräknare": false,
@@ -4664,7 +4665,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera \\(f(x)=4 \\cdot 5^{x}\\).</p>",
-    "s": "<p>Använd regeln \\((a^x)^{\\prime}=a^x\\ln a\\):</p><p>\\[f^{\\prime}(x)=4\\cdot5^x\\ln5.\\]</p><p><strong>Svar:</strong> \\(\\boxed{4\\cdot5^x\\ln5}\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\((a^x)'=a^x\\ln a\\) med \\(a=5\\).</p><p>\\[f'(x)=4\\cdot5^x\\ln 5\\]</p><p><strong>Svar:</strong> \\(\\boxed{f'(x)=4\\cdot5^x\\ln5}\\)</p><p><strong>Vanligt fel:</strong> Att svara \\(4x\\cdot5^{x-1}\\) genom att använda potensregeln. Potensregeln gäller när <em>basen</em> är variabeln, som i \\(x^5\\). Här är variabeln i <em>exponenten</em>, och då gäller den här regeln i stället.</p>",
     "familj": "r2_exp_E_der_3",
     "id": "2.94",
     "miniräknare": false,
@@ -4744,7 +4745,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "1/0/0",
     "t": "<p>Derivera \\(f(x)=2 \\cdot 10^{x}\\).</p>",
-    "s": "<p>Använd regeln \\((a^x)^{\\prime}=a^x\\ln a\\):</p><p>\\[f^{\\prime}(x)=2\\cdot10^x\\ln10.\\]</p><p><strong>Svar:</strong> \\(\\boxed{2\\cdot10^x\\ln10}\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\((a^x)'=a^x\\ln a\\) med \\(a=10\\).</p><p>\\[f'(x)=2\\cdot10^x\\ln 10\\]</p><p><strong>Svar:</strong> \\(\\boxed{f'(x)=2\\cdot10^x\\ln10}\\)</p><p><strong>Storleksordning:</strong> \\(\\ln10\\approx2,3\\), så derivatan är ungefär \\(2,3\\) gånger funktionsvärdet. Det säger att en tiopotensfunktion växer med drygt 230 % per enhet \\(x\\) — vilket stämmer med att den faktiskt tiofaldigas.</p>",
     "familj": "r2_exp_E_der_4",
     "id": "2.99",
     "miniräknare": false,
@@ -8169,7 +8170,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} + x - 2.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+2)(x-1)\\). Nollställena är \\(x=-2\\) och \\(x=1\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-2\\) och \\(x&gt;1\\), samt avtagande för \\(-2&lt;x&lt;1\\).</p>",
+    "s": "<p><strong>Metod:</strong> Sök nollställen till \\(f'\\) och undersök sedan tecknet på var sida.</p><p>a) Faktorisera. Vi söker två tal med produkten \\(-2\\) och summan \\(1\\), nämligen \\(2\\) och \\(-1\\):</p><p>\\[f'(x)=x^2+x-2=(x+2)(x-1)\\]</p><p>Nollställena är \\(\\boxed{x=-2}\\) och \\(\\boxed{x=1}\\).</p><p>b) Parabeln \\(f'\\) öppnar uppåt, så produkten är positiv utanför nollställena och negativ mellan dem. Kontrollera med en testpunkt: \\(f'(0)=-2<0\\).</p><p>\\(f\\) är <strong>växande för \\(x<-2\\) och för \\(x>1\\)</strong>, <strong>avtagande för \\(-2<x<1\\)</strong>.</p><p>Teckenbytena betyder att \\(f\\) har en maximipunkt i \\(x=-2\\) och en minimipunkt i \\(x=1\\).</p>",
     "familj": "topup_grafanalys_0",
     "miniräknare": false,
     "geogebra": false
@@ -8265,7 +8266,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} - x - 2.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+1)(x-2)\\). Nollställena är \\(x=-1\\) och \\(x=2\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-1\\) och \\(x&gt;2\\), samt avtagande för \\(-1&lt;x&lt;2\\).</p>",
+    "s": "<p><strong>Metod:</strong> Nollställena till \\(f'\\) delar tallinjen i intervall där \\(f'\\) har konstant tecken.</p><p>a) Två tal med produkten \\(-2\\) och summan \\(-1\\) är \\(1\\) och \\(-2\\):</p><p>\\[f'(x)=x^2-x-2=(x+1)(x-2)\\]</p><p>Nollställena är \\(\\boxed{x=-1}\\) och \\(\\boxed{x=2}\\).</p><p>b) Testa \\(x=0\\): \\(f'(0)=-2<0\\), alltså är derivatan negativ mellan nollställena och positiv utanför.</p><p>\\(f\\) är <strong>växande för \\(x<-1\\) och för \\(x>2\\)</strong>, <strong>avtagande för \\(-1<x<2\\)</strong>.</p><p>Jämför med uppgiften innan: bara tecknet på \\(x\\)-termen skiljer, och det räcker för att spegla hela svaret kring \\(x=\\tfrac12\\).</p>",
     "familj": "topup_grafanalys_1",
     "miniräknare": false,
     "geogebra": false
@@ -8361,7 +8362,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} - x - 6.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+2)(x-3)\\). Nollställena är \\(x=-2\\) och \\(x=3\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-2\\) och \\(x&gt;3\\), samt avtagande för \\(-2&lt;x&lt;3\\).</p>",
+    "s": "<p><strong>Metod:</strong> Faktorisera derivatan och gör ett teckenstudium.</p><p>a) Två tal med produkten \\(-6\\) och summan \\(-1\\) är \\(2\\) och \\(-3\\):</p><p>\\[f'(x)=x^2-x-6=(x+2)(x-3)\\]</p><p>Nollställena är \\(\\boxed{x=-2}\\) och \\(\\boxed{x=3}\\).</p><p>b) \\(f'(0)=-6<0\\), så derivatan är negativ mellan nollställena.</p><p>\\(f\\) är <strong>växande för \\(x<-2\\) och för \\(x>3\\)</strong>, <strong>avtagande för \\(-2<x<3\\)</strong>.</p><p>Här är det avtagande intervallet fem enheter brett. Ju längre isär derivatans nollställen ligger, desto längre sträcka sjunker funktionen innan den vänder uppåt igen.</p>",
     "familj": "topup_grafanalys_2",
     "miniräknare": false,
     "geogebra": false
@@ -8457,7 +8458,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} - 1.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+1)(x-1)\\). Nollställena är \\(x=-1\\) och \\(x=1\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-1\\) och \\(x&gt;1\\), samt avtagande för \\(-1&lt;x&lt;1\\).</p>",
+    "s": "<p><strong>Metod:</strong> Här behövs ingen summa-produkt-metod — uttrycket är en ren konjugatregel.</p><p>a) \\[f'(x)=x^2-1=(x+1)(x-1)\\]</p><p>Nollställena är \\(\\boxed{x=-1}\\) och \\(\\boxed{x=1}\\).</p><p>b) Eftersom \\(x^2\\ge0\\) är \\(x^2-1<0\\) precis när \\(x^2<1\\), det vill säga när \\(-1<x<1\\).</p><p>\\(f\\) är <strong>växande för \\(x<-1\\) och för \\(x>1\\)</strong>, <strong>avtagande för \\(-1<x<1\\)</strong>.</p><p>Eftersom \\(f'\\) saknar \\(x\\)-term ligger nollställena symmetriskt kring origo. Det gör att svaret går att läsa direkt ur olikheten \\(x^2<1\\) utan faktorisering.</p>",
     "familj": "topup_grafanalys_3",
     "miniräknare": false,
     "geogebra": false
@@ -8553,7 +8554,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} - 4.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+2)(x-2)\\). Nollställena är \\(x=-2\\) och \\(x=2\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-2\\) och \\(x&gt;2\\), samt avtagande för \\(-2&lt;x&lt;2\\).</p>",
+    "s": "<p><strong>Metod:</strong> Konjugatregeln igen, men med talet 4 i stället för 1.</p><p>a) \\[f'(x)=x^2-4=(x+2)(x-2)\\]</p><p>Nollställena är \\(\\boxed{x=-2}\\) och \\(\\boxed{x=2}\\).</p><p>b) \\(x^2-4<0\\) precis när \\(x^2<4\\), alltså när \\(-2<x<2\\).</p><p>\\(f\\) är <strong>växande för \\(x<-2\\) och för \\(x>2\\)</strong>, <strong>avtagande för \\(-2<x<2\\)</strong>.</p><p>En funktion med den här derivatan är till exempel \\(f(x)=\\frac{x^3}{3}-4x\\). Rita gärna den och kontrollera att den verkligen vänder i \\(x=-2\\) och \\(x=2\\).</p>",
     "familj": "topup_grafanalys_4",
     "miniräknare": false,
     "geogebra": false
@@ -8649,7 +8650,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "3/0/0",
     "t": "<p>För en funktion gäller \\[f'(x)=x^{2} - 2 x - 3.\\]</p><p>a) Bestäm derivatans nollställen.<br>b) Ange intervall där \\(f\\) är växande respektive avtagande.</p>",
-    "s": "<p>Faktorisera: \\(f'(x)=(x+1)(x-3)\\). Nollställena är \\(x=-1\\) och \\(x=3\\).</p><p>Produkten är positiv utanför nollställena och negativ mellan dem. Alltså är \\(f\\) växande för \\(x&lt;-1\\) och \\(x&gt;3\\), samt avtagande för \\(-1&lt;x&lt;3\\).</p>",
+    "s": "<p><strong>Metod:</strong> Faktorisera och undersök tecknet.</p><p>a) Två tal med produkten \\(-3\\) och summan \\(-2\\) är \\(1\\) och \\(-3\\):</p><p>\\[f'(x)=x^2-2x-3=(x+1)(x-3)\\]</p><p>Nollställena är \\(\\boxed{x=-1}\\) och \\(\\boxed{x=3}\\).</p><p>b) \\(f'(0)=-3<0\\), alltså negativ mellan nollställena.</p><p>\\(f\\) är <strong>växande för \\(x<-1\\) och för \\(x>3\\)</strong>, <strong>avtagande för \\(-1<x<3\\)</strong>.</p><p><strong>Kontroll:</strong> Derivatans minimum ligger mitt emellan nollställena, i \\(x=1\\), där \\(f'(1)=-4\\). Det är där \\(f\\) sjunker som brantast — inte där \\(f\\) är minst.</p>",
     "familj": "topup_grafanalys_5",
     "miniräknare": false,
     "geogebra": false
@@ -14721,7 +14722,7 @@ window.BANKMATO1 = [
     "niva": "A",
     "poang": "0/1/2",
     "t": "<p>Beräkna gränsvärdet och visa hur du tänker:</p><p>\\[\\lim_{x\\to\\infty}\\frac{5+6x}{\\sqrt{16x^2-3}}.\\]</p>",
-    "s": "<p>Bryt ut \\(x\\) i täljaren och \\(x^2\\) under roten. När \\(x\\to\\infty\\) är \\(x>0\\), så \\(\\sqrt{x^2}=x\\):</p><p>\\[\\frac{x(6+5/x)}{x\\sqrt{16-3/x^2}}=\\frac{6+5/x}{\\sqrt{16-3/x^2}}.\\]</p><p>När \\(x\\to\\infty\\) går \\(1/x\\) och \\(1/x^2\\) mot 0.</p><p><strong>Svar:</strong> \\(\\boxed{\\frac64=\\frac32}\\).</p>",
+    "s": "<p><strong>Idé:</strong> Både täljare och nämnare växer obegränsat, så uttrycket har formen \\(\\infty/\\infty\\). Jämför i stället termernas storleksordning: bryt ut den snabbast växande faktorn ur var och en.</p><p><strong>Täljaren:</strong></p><p>\\[5+6x=x\\left(6+\\frac5x\\right)\\]</p><p><strong>Nämnaren.</strong> Bryt ut \\(16x^2\\) under roten och dra ut det:</p><p>\\[\\sqrt{16x^2-3}=\\sqrt{16x^2\\left(1-\\frac{3}{16x^2}\\right)}=\\sqrt{16x^2}\\cdot\\sqrt{1-\\frac{3}{16x^2}}\\]</p><p>Eftersom \\(x\\to\\infty\\) är \\(x>0\\), och då gäller \\(\\sqrt{16x^2}=4x\\) (inte \\(-4x\\)).</p><p>\\[\\sqrt{16x^2-3}=4x\\sqrt{1-\\frac{3}{16x^2}}\\]</p><p><strong>Förkorta med \\(x\\):</strong></p><p>\\[\\frac{5+6x}{\\sqrt{16x^2-3}}=\\frac{x\\left(6+\\dfrac5x\\right)}{4x\\sqrt{1-\\dfrac{3}{16x^2}}}=\\frac{6+\\dfrac5x}{4\\sqrt{1-\\dfrac{3}{16x^2}}}\\]</p><p>När \\(x\\to\\infty\\) går \\(\\dfrac5x\\to0\\) och \\(\\dfrac{3}{16x^2}\\to0\\), så nämnaren går mot \\(4\\sqrt1=4\\).</p><p>\\[\\lim_{x\\to\\infty}\\frac{5+6x}{\\sqrt{16x^2-3}}=\\frac{6}{4}=\\boxed{\\frac32}\\]</p><p><strong>Snabbkontroll:</strong> För stora \\(x\\) är täljaren ungefär \\(6x\\) och nämnaren ungefär \\(\\sqrt{16x^2}=4x\\). Kvoten går alltså mot \\(6x/4x=1,5\\). Sätt in \\(x=1000\\) på räknaren: du får \\(1,5008\\).</p><p><strong>Vanligt fel:</strong> Att jämföra 6 med 16 och svara \\(6/16\\). Roten måste dras först — det är \\(\\sqrt{16}=4\\) som är nämnarens koefficient, inte 16.</p>",
     "familj": "ref2_limit_oandlighet_rot",
     "miniräknare": false,
     "geogebra": false
@@ -16345,7 +16346,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 36 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel för optimering\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><defs><marker id=\"m\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,4 L8,0 L6,4 L8,8 Z\" fill=\"#2B2527\"/></marker></defs><rect x=\"92\" y=\"58\" width=\"160\" height=\"88\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"13\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">Omkrets: 36 cm</text><defs><marker id=\"dim3295\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"252\" y1=\"46\" x2=\"252\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"92\" y1=\"41\" x2=\"252\" y2=\"41\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3295)\" marker-end=\"url(#dim3295)\"/><text x=\"172\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"70\" y1=\"58\" x2=\"80\" y2=\"58\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"70\" y1=\"146\" x2=\"80\" y2=\"146\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"75\" y1=\"58\" x2=\"75\" y2=\"146\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3295)\" marker-end=\"url(#dim3295)\"/><text x=\"66\" y=\"106.9\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">18 − x</text></svg></span><p>Bestäm rektangelns största möjliga area.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm måste den andra vara \\(18-x\\) cm.</p><p>Arean blir</p><p>\\[A(x)=x(18-x)=18x-x^2.\\]</p><p>Derivatan är \\(A^{\\prime}(x)=18-2x\\). När \\(A^{\\prime}(x)=0\\) fås \\(x=9\\).</p><p>Maximal area blir då \\(81\\text{ cm}^2\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Omkretsen är 36 cm, så de två sidorna har summan \\(36/2=18\\) cm. Kalla den ena sidan \\(x\\); då är den andra \\(18-x\\).</p><p>\\[A(x)=x(18-x)=18x-x^2,\\qquad 0<x<18\\]</p><p><strong>Derivera:</strong></p><p>\\[A'(x)=18-2x=0\\quad\\Rightarrow\\quad x=9\\]</p><p>Den andra sidan blir \\(18-9=9\\) cm, alltså en kvadrat.</p><p>\\[A(9)=9\\cdot9=\\boxed{81\\text{ cm}^2}\\]</p><p><strong>Att det är ett maximum</strong> ser man på att \\(A\\) är en andragradsfunktion med negativ \\(x^2\\)-koefficient — grafen är en nedåtvänd parabel, och nollstället till derivatan är dess toppunkt.</p>",
     "familj": "r5_ext_rect_1",
     "miniräknare": false,
     "geogebra": false
@@ -16361,7 +16362,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 44 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel för optimering\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><defs><marker id=\"m\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,4 L8,0 L6,4 L8,8 Z\" fill=\"#2B2527\"/></marker></defs><rect x=\"92\" y=\"58\" width=\"160\" height=\"88\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"13\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">Omkrets: 44 cm</text><defs><marker id=\"dim3296\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"252\" y1=\"46\" x2=\"252\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"92\" y1=\"41\" x2=\"252\" y2=\"41\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3296)\" marker-end=\"url(#dim3296)\"/><text x=\"172\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"70\" y1=\"58\" x2=\"80\" y2=\"58\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"70\" y1=\"146\" x2=\"80\" y2=\"146\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"75\" y1=\"58\" x2=\"75\" y2=\"146\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3296)\" marker-end=\"url(#dim3296)\"/><text x=\"66\" y=\"106.9\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">22 − x</text></svg></span><p>Bestäm rektangelns största möjliga area.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm måste den andra vara \\(22-x\\) cm.</p><p>Arean blir</p><p>\\[A(x)=x(22-x)=22x-x^2.\\]</p><p>Derivatan är \\(A^{\\prime}(x)=22-2x\\). När \\(A^{\\prime}(x)=0\\) fås \\(x=11\\).</p><p>Maximal area blir då \\(121\\text{ cm}^2\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Halva omkretsen är \\(44/2=22\\) cm, så sidorna är \\(x\\) och \\(22-x\\).</p><p>\\[A(x)=x(22-x)=22x-x^2\\]</p><p>\\[A'(x)=22-2x=0\\quad\\Rightarrow\\quad x=11\\]</p><p>\\[A(11)=11\\cdot11=\\boxed{121\\text{ cm}^2}\\]</p><p><strong>Kontrollera med några grannvärden:</strong></p><p>\\(A(10)=10\\cdot12=120\\), \\(A(11)=121\\), \\(A(12)=12\\cdot10=120\\).</p><p>Arean är alltså störst mitt emellan, och den ändras mycket långsamt nära toppen — ett steg åt sidan kostar bara 1 cm². Det är typiskt för maximipunkter och förklarar varför man i praktiken sällan behöver träffa exakt rätt.</p>",
     "familj": "r5_ext_rect_2",
     "miniräknare": false,
     "geogebra": false
@@ -16377,7 +16378,7 @@ window.BANKMATO1 = [
     "niva": "C",
     "poang": "0/2/0",
     "t": "<p>En rektangel har omkretsen 52 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel för optimering\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><defs><marker id=\"m\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,4 L8,0 L6,4 L8,8 Z\" fill=\"#2B2527\"/></marker></defs><rect x=\"92\" y=\"58\" width=\"160\" height=\"88\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"13\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">Omkrets: 52 cm</text><defs><marker id=\"dim3297\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"252\" y1=\"46\" x2=\"252\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"92\" y1=\"41\" x2=\"252\" y2=\"41\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3297)\" marker-end=\"url(#dim3297)\"/><text x=\"172\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"70\" y1=\"58\" x2=\"80\" y2=\"58\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"70\" y1=\"146\" x2=\"80\" y2=\"146\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"75\" y1=\"58\" x2=\"75\" y2=\"146\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3297)\" marker-end=\"url(#dim3297)\"/><text x=\"66\" y=\"106.9\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">26 − x</text></svg></span><p>Bestäm rektangelns största möjliga area.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm måste den andra vara \\(26-x\\) cm.</p><p>Arean blir</p><p>\\[A(x)=x(26-x)=26x-x^2.\\]</p><p>Derivatan är \\(A^{\\prime}(x)=26-2x\\). När \\(A^{\\prime}(x)=0\\) fås \\(x=13\\).</p><p>Maximal area blir då \\(169\\text{ cm}^2\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Sidorna har summan \\(52/2=26\\) cm, alltså \\(x\\) och \\(26-x\\).</p><p>\\[A(x)=26x-x^2,\\qquad A'(x)=26-2x\\]</p><p>\\[A'(x)=0\\quad\\Rightarrow\\quad x=13\\]</p><p>\\[A(13)=13\\cdot13=\\boxed{169\\text{ cm}^2}\\]</p><p><strong>Teckenstudium som motivering:</strong> \\(A'(x)=26-2x\\) är positiv för \\(x<13\\) och negativ för \\(x>13\\). Derivatan byter alltså tecken från plus till minus, vilket bevisar att \\(x=13\\) ger ett maximum och inte ett minimum.</p><p>Glöm inte definitionsmängden \\(0<x<26\\). I ändpunkterna går arean mot noll, så maximum måste ligga inuti intervallet.</p>",
     "familj": "r5_ext_rect_3",
     "miniräknare": false,
     "geogebra": false
@@ -16393,7 +16394,7 @@ window.BANKMATO1 = [
     "niva": "C",
     "poang": "0/2/0",
     "t": "<p>En rektangel har omkretsen 60 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel för optimering\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><defs><marker id=\"m\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,4 L8,0 L6,4 L8,8 Z\" fill=\"#2B2527\"/></marker></defs><rect x=\"92\" y=\"58\" width=\"160\" height=\"88\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"13\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">Omkrets: 60 cm</text><defs><marker id=\"dim3298\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"252\" y1=\"46\" x2=\"252\" y2=\"36\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"92\" y1=\"41\" x2=\"252\" y2=\"41\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3298)\" marker-end=\"url(#dim3298)\"/><text x=\"172\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"70\" y1=\"58\" x2=\"80\" y2=\"58\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"70\" y1=\"146\" x2=\"80\" y2=\"146\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"75\" y1=\"58\" x2=\"75\" y2=\"146\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3298)\" marker-end=\"url(#dim3298)\"/><text x=\"66\" y=\"106.9\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">30 − x</text></svg></span><p>Bestäm rektangelns största möjliga area.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm måste den andra vara \\(30-x\\) cm.</p><p>Arean blir</p><p>\\[A(x)=x(30-x)=30x-x^2.\\]</p><p>Derivatan är \\(A^{\\prime}(x)=30-2x\\). När \\(A^{\\prime}(x)=0\\) fås \\(x=15\\).</p><p>Maximal area blir då \\(225\\text{ cm}^2\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Sidorna har summan \\(60/2=30\\) cm.</p><p>\\[A(x)=30x-x^2,\\qquad A'(x)=30-2x=0\\quad\\Rightarrow\\quad x=15\\]</p><p>\\[A(15)=15\\cdot15=\\boxed{225\\text{ cm}^2}\\]</p><p><strong>Generalisering:</strong> Gör om räkningen med omkretsen \\(P\\) i stället för 60. Då är \\(A(x)=x\\left(\\frac P2-x\\right)\\) och \\(A'(x)=\\frac P2-2x=0\\) ger \\(x=\\frac P4\\).</p><p>Svaret är alltid en kvadrat, och den största arean är \\(\\left(\\frac P4\\right)^2\\). Kontrollera: \\((60/4)^2=15^2=225\\). Med den formeln kan du lösa alla uppgifter av den här typen i huvudet.</p>",
     "familj": "r5_ext_rect_4",
     "miniräknare": false,
     "geogebra": false
@@ -16825,7 +16826,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En bils hastighet \\(v\\) i m/s visas i figuren. Bestäm sträckan under de första 4 sekunderna.</p><span class=\"fig smal\"><svg width=\"395\" height=\"252\" viewBox=\"0 -2 395 252\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Bilens hastighet: v(t)\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"393\" height=\"248\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><line x1=\"48.0\" y1=\"18\" x2=\"48.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"48\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">0</text><line x1=\"126.2\" y1=\"18\" x2=\"126.2\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"126.2\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"204.5\" y1=\"18\" x2=\"204.5\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"204.5\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"282.8\" y1=\"18\" x2=\"282.8\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"282.8\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"361.0\" y1=\"18\" x2=\"361.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"361\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"48\" y1=\"216.0\" x2=\"367\" y2=\"216.0\" stroke=\"#E9E8EB\"/><line x1=\"48\" y1=\"186.0\" x2=\"367\" y2=\"186.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"190\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"48\" y1=\"156.0\" x2=\"367\" y2=\"156.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"48\" y1=\"126.0\" x2=\"367\" y2=\"126.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"130\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"48\" y1=\"96.0\" x2=\"367\" y2=\"96.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"100\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"48\" y1=\"66.0\" x2=\"367\" y2=\"66.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"70\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">5</text><line x1=\"48\" y1=\"36.0\" x2=\"367\" y2=\"36.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"40\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">6</text><line x1=\"48\" y1=\"216\" x2=\"367\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"18\" x2=\"48\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><text x=\"377\" y=\"220\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">t</text><text x=\"34.67\" y=\"12.5\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">v</text><path d=\"M 48.0 216.0 L 126.2 96.0 L 204.5 36.0 L 361.0 36.0\" fill=\"none\" stroke=\"#2D70B3\" stroke-width=\"2.6\"/><circle cx=\"48.0\" cy=\"216.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"126.2\" cy=\"96.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"204.5\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"361.0\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><text x=\"197.5\" y=\"16\" text-anchor=\"middle\" font-size=\"13\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">Bilens hastighet: v(t)</text></svg></span>",
-    "s": "<p>Sträckan motsvarar arean under grafen. Vi delar upp arean under grafen i rektanglar, trianglar och parallelltrapetser.</p><p>Den totala arean blir \\(19\\).</p><p><strong>Svar:</strong> \\(\\boxed{19\\text{ m}}\\).</p>",
+    "s": "<p><strong>Begrepp:</strong> Sträckan är arean mellan hastighetsgrafen och \\(t\\)-axeln. Grafen består av räta linjer, så arean kan delas upp i enkla figurer utan integral.</p><p>Läs av figuren: hastigheten växer från 0 till 4 m/s under första sekunden, från 4 till 6 m/s under andra sekunden, och är sedan konstant 6 m/s.</p><p><strong>0–1 s (triangel):</strong> \\(\\frac{0+4}{2}\\cdot1=2\\) m</p><p><strong>1–2 s (parallelltrapets):</strong> \\(\\frac{4+6}{2}\\cdot1=5\\) m</p><p><strong>2–4 s (rektangel):</strong> \\(6\\cdot2=12\\) m</p><p>\\[s=2+5+12=\\boxed{19\\text{ m}}\\]</p><p><strong>Rimlighetskontroll:</strong> Medelhastigheten blir \\(19/4\\approx4,8\\) m/s, vilket ligger mellan lägsta och högsta hastigheten. Det stämmer.</p>",
     "familj": "r5_intapp_vt_1",
     "miniräknare": false,
     "geogebra": false
@@ -16841,7 +16842,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En cyklist har hastigheten \\(v\\) i m/s enligt figuren. Hur långt cyklar hon under 5 s?</p><span class=\"fig smal\"><svg width=\"395\" height=\"252\" viewBox=\"0 -2 395 252\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Cyklistens hastighet: v(t)\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"393\" height=\"248\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><line x1=\"48.0\" y1=\"18\" x2=\"48.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"48\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">0</text><line x1=\"110.6\" y1=\"18\" x2=\"110.6\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"110.6\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"173.2\" y1=\"18\" x2=\"173.2\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"173.2\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"235.8\" y1=\"18\" x2=\"235.8\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"235.8\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"298.4\" y1=\"18\" x2=\"298.4\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"298.4\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"361.0\" y1=\"18\" x2=\"361.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"361\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">5</text><line x1=\"48\" y1=\"216.0\" x2=\"367\" y2=\"216.0\" stroke=\"#E9E8EB\"/><line x1=\"48\" y1=\"164.6\" x2=\"367\" y2=\"164.6\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"168.6\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"48\" y1=\"113.1\" x2=\"367\" y2=\"113.1\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"117.1\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"48\" y1=\"61.7\" x2=\"367\" y2=\"61.7\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"65.7\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">6</text><line x1=\"48\" y1=\"216\" x2=\"367\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"18\" x2=\"48\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><text x=\"377\" y=\"220\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">t</text><text x=\"34.67\" y=\"12.5\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">v</text><path d=\"M 48.0 138.9 L 173.2 138.9 L 298.4 36.0 L 361.0 36.0\" fill=\"none\" stroke=\"#2D70B3\" stroke-width=\"2.6\"/><circle cx=\"48.0\" cy=\"138.9\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"173.2\" cy=\"138.9\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"298.4\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"361.0\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><text x=\"197.5\" y=\"16\" text-anchor=\"middle\" font-size=\"13\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">Cyklistens hastighet: v(t)</text></svg></span>",
-    "s": "<p>Sträckan motsvarar arean under grafen. Vi delar upp arean under grafen i rektanglar, trianglar och parallelltrapetser.</p><p>Den totala arean blir \\(23\\).</p><p><strong>Svar:</strong> \\(\\boxed{23\\text{ m}}\\).</p>",
+    "s": "<p><strong>Begrepp:</strong> Sträckan är arean under \\(v\\)-\\(t\\)-grafen.</p><p>Av figuren: konstant 3 m/s de första två sekunderna, sedan jämn ökning till 7 m/s vid \\(t=4\\), därefter konstant 7 m/s.</p><p><strong>0–2 s (rektangel):</strong> \\(3\\cdot2=6\\) m</p><p><strong>2–4 s (parallelltrapets):</strong> \\(\\frac{3+7}{2}\\cdot2=10\\) m</p><p><strong>4–5 s (rektangel):</strong> \\(7\\cdot1=7\\) m</p><p>\\[s=6+10+7=\\boxed{23\\text{ m}}\\]</p><p><strong>Tips:</strong> Parallelltrapetsen kan också ses som en rektangel \\(3\\cdot2=6\\) plus en triangel \\(\\frac{4\\cdot2}{2}=4\\). Samma svar, och ibland är den uppdelningen lättare att se i figuren.</p>",
     "familj": "r5_intapp_vt_2",
     "miniräknare": false,
     "geogebra": false
@@ -16857,7 +16858,7 @@ window.BANKMATO1 = [
     "niva": "C",
     "poang": "0/2/0",
     "t": "<p>Ett tåg bromsar enligt figuren. Hur långt rullar tåget under 4 s?</p><span class=\"fig smal\"><svg width=\"395\" height=\"252\" viewBox=\"0 -2 395 252\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Tågets hastighet: v(t)\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"393\" height=\"248\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><line x1=\"48.0\" y1=\"18\" x2=\"48.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"48\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">0</text><line x1=\"126.2\" y1=\"18\" x2=\"126.2\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"126.2\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"204.5\" y1=\"18\" x2=\"204.5\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"204.5\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"282.8\" y1=\"18\" x2=\"282.8\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"282.8\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"361.0\" y1=\"18\" x2=\"361.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"361\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"48\" y1=\"216.0\" x2=\"367\" y2=\"216.0\" stroke=\"#E9E8EB\"/><line x1=\"48\" y1=\"171.0\" x2=\"367\" y2=\"171.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"175\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"48\" y1=\"126.0\" x2=\"367\" y2=\"126.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"130\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"48\" y1=\"81.0\" x2=\"367\" y2=\"81.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"85\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">6</text><line x1=\"48\" y1=\"36.0\" x2=\"367\" y2=\"36.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"40\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">8</text><line x1=\"48\" y1=\"216\" x2=\"367\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"18\" x2=\"48\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><text x=\"377\" y=\"220\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">t</text><text x=\"34.67\" y=\"12.5\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">v</text><path d=\"M 48.0 36.0 L 204.5 81.0 L 361.0 171.0\" fill=\"none\" stroke=\"#2D70B3\" stroke-width=\"2.6\"/><circle cx=\"48.0\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"204.5\" cy=\"81.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"361.0\" cy=\"171.0\" r=\"3.6\" fill=\"#2D70B3\"/><text x=\"197.5\" y=\"16\" text-anchor=\"middle\" font-size=\"13\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">Tågets hastighet: v(t)</text></svg></span>",
-    "s": "<p>Sträckan motsvarar arean under grafen. Vi delar upp arean under grafen i rektanglar, trianglar och parallelltrapetser.</p><p>Den totala arean blir \\(22\\).</p><p><strong>Svar:</strong> \\(\\boxed{22\\text{ m}}\\).</p>",
+    "s": "<p><strong>Begrepp:</strong> Sträckan är arean under grafen, även när hastigheten minskar. Tåget bromsar men rör sig framåt hela tiden, så arean ska adderas — inte subtraheras.</p><p>Av figuren: hastigheten sjunker från 8 m/s till 6 m/s under de första två sekunderna, och sedan från 6 m/s till 2 m/s.</p><p><strong>0–2 s (parallelltrapets):</strong> \\(\\frac{8+6}{2}\\cdot2=14\\) m</p><p><strong>2–4 s (parallelltrapets):</strong> \\(\\frac{6+2}{2}\\cdot2=8\\) m</p><p>\\[s=14+8=\\boxed{22\\text{ m}}\\]</p><p><strong>Observera:</strong> Retardationen är inte konstant. Under första halvan tappar tåget 1 m/s per sekund, under andra halvan 2 m/s per sekund. Det syns på att grafen blir brantare.</p>",
     "familj": "r5_intapp_vt_3",
     "miniräknare": false,
     "geogebra": false
@@ -16873,7 +16874,7 @@ window.BANKMATO1 = [
     "niva": "C",
     "poang": "0/2/0",
     "t": "<p>En drönare rör sig rakt fram med hastigheten \\(v\\) i m/s enligt grafen. Bestäm sträckan på 5 s.</p><span class=\"fig smal\"><svg width=\"395\" height=\"252\" viewBox=\"0 -2 395 252\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Drönarens hastighet: v(t)\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"393\" height=\"248\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><line x1=\"48.0\" y1=\"18\" x2=\"48.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"48\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">0</text><line x1=\"110.6\" y1=\"18\" x2=\"110.6\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"110.6\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"173.2\" y1=\"18\" x2=\"173.2\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"173.2\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"235.8\" y1=\"18\" x2=\"235.8\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"235.8\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"298.4\" y1=\"18\" x2=\"298.4\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"298.4\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">4</text><line x1=\"361.0\" y1=\"18\" x2=\"361.0\" y2=\"216\" stroke=\"#E9E8EB\"/><text x=\"361\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">5</text><line x1=\"48\" y1=\"216.0\" x2=\"367\" y2=\"216.0\" stroke=\"#E9E8EB\"/><line x1=\"48\" y1=\"156.0\" x2=\"367\" y2=\"156.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">1</text><line x1=\"48\" y1=\"96.0\" x2=\"367\" y2=\"96.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"100\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">2</text><line x1=\"48\" y1=\"36.0\" x2=\"367\" y2=\"36.0\" stroke=\"#E9E8EB\"/><text x=\"38\" y=\"40\" text-anchor=\"end\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">3</text><line x1=\"48\" y1=\"216\" x2=\"367\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"18\" x2=\"48\" y2=\"216\" stroke=\"#2B2527\" stroke-width=\"1.5\"/><text x=\"377\" y=\"220\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">t</text><text x=\"34.67\" y=\"12.5\" font-size=\"12\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">v</text><path d=\"M 48.0 156.0 L 110.6 36.0 L 235.8 36.0 L 361.0 216.0\" fill=\"none\" stroke=\"#2D70B3\" stroke-width=\"2.6\"/><circle cx=\"48.0\" cy=\"156.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"110.6\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"235.8\" cy=\"36.0\" r=\"3.6\" fill=\"#2D70B3\"/><circle cx=\"361.0\" cy=\"216.0\" r=\"3.6\" fill=\"#2D70B3\"/><text x=\"197.5\" y=\"16\" text-anchor=\"middle\" font-size=\"13\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">Drönarens hastighet: v(t)</text></svg></span>",
-    "s": "<p>Sträckan motsvarar arean under grafen. Vi delar upp arean under grafen i rektanglar, trianglar och parallelltrapetser.</p><p>Den totala arean blir \\(11\\).</p><p><strong>Svar:</strong> \\(\\boxed{11\\text{ m}}\\).</p>",
+    "s": "<p><strong>Begrepp:</strong> Sträckan är arean under grafen. Dela upp den i de tre delarna som figuren naturligt bjuder på.</p><p>Av figuren: hastigheten stiger från 1 till 3 m/s under första sekunden, håller sig på 3 m/s till \\(t=3\\), och sjunker sedan till 0 vid \\(t=5\\).</p><p><strong>0–1 s (parallelltrapets):</strong> \\(\\frac{1+3}{2}\\cdot1=2\\) m</p><p><strong>1–3 s (rektangel):</strong> \\(3\\cdot2=6\\) m</p><p><strong>3–5 s (triangel):</strong> \\(\\frac{3\\cdot2}{2}=3\\) m</p><p>\\[s=2+6+3=\\boxed{11\\text{ m}}\\]</p><p><strong>Att lägga märke till:</strong> Drönaren står stilla vid \\(t=5\\) s, men den har ändå tillryggalagt 11 m. Hastigheten noll betyder att sträckan slutar växa, inte att den är noll.</p>",
     "familj": "r5_intapp_vt_4",
     "miniräknare": false,
     "geogebra": false
@@ -17532,7 +17533,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>Bestäm med derivata funktionens största värde och ange extrempunktens koordinater.</p><p>\\[f(x)=- x^{2} + 6 x + 1\\]</p>",
-    "s": "<p>\\(f^{\\prime}(x)=6 - 2 x\\).</p><p>Sätt derivatan lika med noll: \\(f^{\\prime}(x)=0\\Rightarrow x=3\\).</p><p>\\(f(3)=10\\).</p><p><strong>Svar:</strong> det största värdet är \\(\\boxed{10}\\) och extrempunkten är \\(\\boxed{(3; 10)}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera, sätt derivatan till noll och beräkna funktionsvärdet där.</p><p>\\[f(x)=-x^2+6x+1\\quad\\Rightarrow\\quad f'(x)=-2x+6\\]</p><p>\\[f'(x)=0\\quad\\Rightarrow\\quad x=3\\]</p><p>\\[f(3)=-9+18+1=10\\]</p><p><strong>Svar:</strong> största värdet är \\(\\boxed{10}\\), i extrempunkten \\(\\boxed{(3,\\;10)}\\).</p><p><strong>Att det är ett maximum</strong> följer av att koefficienten framför \\(x^2\\) är negativ — parabeln vänder nedåt. Man kan också se det på derivatan: \\(f'\\) går från positiv till negativ när \\(x\\) passerar 3.</p>",
     "familj": "r6_ext_func_1",
     "miniräknare": false,
     "geogebra": false
@@ -17564,7 +17565,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>Bestäm med derivata funktionens största värde och ange extrempunktens koordinater.</p><p>\\[f(x)=- 2 x^{2} + 12 x - 5\\]</p>",
-    "s": "<p>\\(f^{\\prime}(x)=12 - 4 x\\).</p><p>Sätt derivatan lika med noll: \\(f^{\\prime}(x)=0\\Rightarrow x=3\\).</p><p>\\(f(3)=13\\).</p><p><strong>Svar:</strong> det största värdet är \\(\\boxed{13}\\) och extrempunkten är \\(\\boxed{(3; 13)}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och sök derivatans nollställe.</p><p>\\[f(x)=-2x^2+12x-5\\quad\\Rightarrow\\quad f'(x)=-4x+12\\]</p><p>\\[f'(x)=0\\quad\\Rightarrow\\quad x=3\\]</p><p>\\[f(3)=-18+36-5=13\\]</p><p><strong>Svar:</strong> största värdet är \\(\\boxed{13}\\), i extrempunkten \\(\\boxed{(3,\\;13)}\\).</p><p><strong>Vanligt fel:</strong> Att stanna vid \\(x=3\\) och tro att det är svaret. \\(x=3\\) talar om <em>var</em> maximum ligger; det största <em>värdet</em> får man först när man sätter in 3 i \\(f\\), inte i \\(f'\\).</p>",
     "familj": "r6_ext_func_3",
     "miniräknare": false,
     "geogebra": false
@@ -17596,7 +17597,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>Bestäm med derivata funktionens största värde och ange extrempunktens koordinater.</p><p>\\[f(x)=- x^{2} + 10 x - 9\\]</p>",
-    "s": "<p>\\(f^{\\prime}(x)=10 - 2 x\\).</p><p>Sätt derivatan lika med noll: \\(f^{\\prime}(x)=0\\Rightarrow x=5\\).</p><p>\\(f(5)=16\\).</p><p><strong>Svar:</strong> det största värdet är \\(\\boxed{16}\\) och extrempunkten är \\(\\boxed{(5; 16)}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\).</p><p>\\[f(x)=-x^2+10x-9\\quad\\Rightarrow\\quad f'(x)=-2x+10\\]</p><p>\\[f'(x)=0\\quad\\Rightarrow\\quad x=5\\]</p><p>\\[f(5)=-25+50-9=16\\]</p><p><strong>Svar:</strong> största värdet är \\(\\boxed{16}\\), i extrempunkten \\(\\boxed{(5,\\;16)}\\).</p><p><strong>Kontroll med nollställen:</strong> \\(f(x)=-(x^2-10x+9)=-(x-1)(x-9)\\), så nollställena är 1 och 9. Toppunkten ligger alltid mitt emellan, i \\(x=\\frac{1+9}{2}=5\\). Det bekräftar derivatans svar.</p>",
     "familj": "r6_ext_func_5",
     "miniräknare": false,
     "geogebra": false
@@ -17628,7 +17629,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>Bestäm med derivata funktionens största värde och ange extrempunktens koordinater.</p><p>\\[f(x)=- 3 x^{2} + 18 x + 2\\]</p>",
-    "s": "<p>\\(f^{\\prime}(x)=18 - 6 x\\).</p><p>Sätt derivatan lika med noll: \\(f^{\\prime}(x)=0\\Rightarrow x=3\\).</p><p>\\(f(3)=29\\).</p><p><strong>Svar:</strong> det största värdet är \\(\\boxed{29}\\) och extrempunkten är \\(\\boxed{(3; 29)}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\).</p><p>\\[f(x)=-3x^2+18x+2\\quad\\Rightarrow\\quad f'(x)=-6x+18\\]</p><p>\\[f'(x)=0\\quad\\Rightarrow\\quad x=3\\]</p><p>\\[f(3)=-27+54+2=29\\]</p><p><strong>Svar:</strong> största värdet är \\(\\boxed{29}\\), i extrempunkten \\(\\boxed{(3,\\;29)}\\).</p><p><strong>Notera:</strong> Konstanttermen \\(+2\\) påverkar inte var toppunkten ligger — den lyfter bara hela grafen två steg uppåt. Utan den skulle maximum bli 27 i samma \\(x\\)-värde.</p>",
     "familj": "r6_ext_func_7",
     "miniräknare": false,
     "geogebra": false
@@ -17660,7 +17661,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 28 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel med markerade sidlängder\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><rect x=\"85\" y=\"55\" width=\"180\" height=\"95\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">omkrets 28</text><defs><marker id=\"dim3341\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"85\" y1=\"43\" x2=\"85\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"265\" y1=\"43\" x2=\"265\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"85\" y1=\"38\" x2=\"265\" y2=\"38\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3341)\" marker-end=\"url(#dim3341)\"/><text x=\"175\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"63\" y1=\"55\" x2=\"73\" y2=\"55\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"63\" y1=\"150\" x2=\"73\" y2=\"150\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"68\" y1=\"55\" x2=\"68\" y2=\"150\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3341)\" marker-end=\"url(#dim3341)\"/><text x=\"59\" y=\"107.4\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">14 - x</text></svg></span><p>Bestäm med derivata den största möjliga arean.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm blir den andra \\(14-x\\) cm.</p><p>\\[A(x)=x(14-x)=14x-x^2.\\]</p><p>\\(A^{\\prime}(x)=14-2x\\). Derivatan är noll när \\(x=7\\).</p><p>Då är båda sidorna \\(7\\) cm och största arean är \\(\\boxed{49\\text{ cm}^2}\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Omkretsen 28 cm ger sidsumman \\(28/2=14\\) cm, alltså sidorna \\(x\\) och \\(14-x\\).</p><p>\\[A(x)=x(14-x)=14x-x^2\\]</p><p>\\[A'(x)=14-2x=0\\quad\\Rightarrow\\quad x=7\\]</p><p>Båda sidorna blir 7 cm.</p><p>\\[A(7)=\\boxed{49\\text{ cm}^2}\\]</p><p><strong>Utan derivata:</strong> Skriv om med kvadratkomplettering: \\(A(x)=-(x-7)^2+49\\). Eftersom \\((x-7)^2\\ge0\\) kan \\(A\\) aldrig bli större än 49, och likhet gäller precis när \\(x=7\\). Derivatan och kvadratkompletteringen ger samma svar.</p>",
     "familj": "r6_ext_rect_1",
     "miniräknare": false,
     "geogebra": false
@@ -17676,7 +17677,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 32 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel med markerade sidlängder\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><rect x=\"85\" y=\"55\" width=\"180\" height=\"95\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">omkrets 32</text><defs><marker id=\"dim3342\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"85\" y1=\"43\" x2=\"85\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"265\" y1=\"43\" x2=\"265\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"85\" y1=\"38\" x2=\"265\" y2=\"38\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3342)\" marker-end=\"url(#dim3342)\"/><text x=\"175\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"63\" y1=\"55\" x2=\"73\" y2=\"55\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"63\" y1=\"150\" x2=\"73\" y2=\"150\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"68\" y1=\"55\" x2=\"68\" y2=\"150\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3342)\" marker-end=\"url(#dim3342)\"/><text x=\"59\" y=\"107.4\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">16 - x</text></svg></span><p>Bestäm med derivata den största möjliga arean.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm blir den andra \\(16-x\\) cm.</p><p>\\[A(x)=x(16-x)=16x-x^2.\\]</p><p>\\(A^{\\prime}(x)=16-2x\\). Derivatan är noll när \\(x=8\\).</p><p>Då är båda sidorna \\(8\\) cm och största arean är \\(\\boxed{64\\text{ cm}^2}\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Sidsumman är \\(32/2=16\\) cm.</p><p>\\[A(x)=x(16-x)=16x-x^2,\\qquad A'(x)=16-2x\\]</p><p>\\[A'(x)=0\\quad\\Rightarrow\\quad x=8\\]</p><p>\\[A(8)=8\\cdot8=\\boxed{64\\text{ cm}^2}\\]</p><p><strong>Tolkning av derivatan:</strong> \\(A'(4)=8\\) betyder att arean växer med ungefär 8 cm² per cm när den korta sidan förlängs från 4 cm. \\(A'(12)=-8\\) betyder att arean minskar lika snabbt på andra sidan toppen. I \\(x=8\\) är förändringstakten noll — där lönar det sig varken att öka eller minska.</p>",
     "familj": "r6_ext_rect_2",
     "miniräknare": false,
     "geogebra": false
@@ -17692,7 +17693,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 40 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel med markerade sidlängder\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><rect x=\"85\" y=\"55\" width=\"180\" height=\"95\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">omkrets 40</text><defs><marker id=\"dim3343\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"85\" y1=\"43\" x2=\"85\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"265\" y1=\"43\" x2=\"265\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"85\" y1=\"38\" x2=\"265\" y2=\"38\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3343)\" marker-end=\"url(#dim3343)\"/><text x=\"175\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"63\" y1=\"55\" x2=\"73\" y2=\"55\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"63\" y1=\"150\" x2=\"73\" y2=\"150\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"68\" y1=\"55\" x2=\"68\" y2=\"150\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3343)\" marker-end=\"url(#dim3343)\"/><text x=\"59\" y=\"107.4\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">20 - x</text></svg></span><p>Bestäm med derivata den största möjliga arean.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm blir den andra \\(20-x\\) cm.</p><p>\\[A(x)=x(20-x)=20x-x^2.\\]</p><p>\\(A^{\\prime}(x)=20-2x\\). Derivatan är noll när \\(x=10\\).</p><p>Då är båda sidorna \\(10\\) cm och största arean är \\(\\boxed{100\\text{ cm}^2}\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Sidsumman är \\(40/2=20\\) cm.</p><p>\\[A(x)=x(20-x)=20x-x^2,\\qquad A'(x)=20-2x=0\\quad\\Rightarrow\\quad x=10\\]</p><p>\\[A(10)=\\boxed{100\\text{ cm}^2}\\]</p><p><strong>Jämförelse med andra former:</strong> En cirkel med omkretsen 40 cm har radien \\(r=40/(2\\pi)\\approx6,37\\) cm och arean \\(\\pi r^2\\approx127\\) cm² — mer än kvadraten. Kvadraten är alltså bäst bland rektanglarna, men cirkeln är bäst av alla former med given omkrets.</p>",
     "familj": "r6_ext_rect_3",
     "miniräknare": false,
     "geogebra": false
@@ -17708,7 +17709,7 @@ window.BANKMATO1 = [
     "niva": "E",
     "poang": "2/0/0",
     "t": "<p>En rektangel har omkretsen 48 cm.</p><span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel med markerade sidlängder\" preserveAspectRatio=\"xMidYMid meet\" font-family=\"IBM Plex Mono, monospace\" style=\"max-width:100%;height:auto\"><rect x=\"1\" y=\"1\" width=\"358\" height=\"218\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E4E3E6\"/><rect x=\"85\" y=\"55\" width=\"180\" height=\"95\" fill=\"#F7F4E8\" stroke=\"#8C6A43\" stroke-width=\"2\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" fill=\"#5B5560\" font-family=\"IBM Plex Mono, monospace\">omkrets 48</text><defs><marker id=\"dim3344\" markerWidth=\"9\" markerHeight=\"9\" refX=\"8.5\" refY=\"4.5\" orient=\"auto\" markerUnits=\"userSpaceOnUse\"><path d=\"M0.5,1 L9,4.5 L0.5,8 L2.6,4.5 Z\" fill=\"#2B2527\"/></marker></defs><line x1=\"85\" y1=\"43\" x2=\"85\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"265\" y1=\"43\" x2=\"265\" y2=\"33\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"85\" y1=\"38\" x2=\"265\" y2=\"38\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3344)\" marker-end=\"url(#dim3344)\"/><text x=\"175\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">x</text><line x1=\"63\" y1=\"55\" x2=\"73\" y2=\"55\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"63\" y1=\"150\" x2=\"73\" y2=\"150\" stroke=\"#B9B6BC\" stroke-width=\"1\"/><line x1=\"68\" y1=\"55\" x2=\"68\" y2=\"150\" stroke=\"#2B2527\" stroke-width=\"1.2\" marker-start=\"url(#dim3344)\" marker-end=\"url(#dim3344)\"/><text x=\"59\" y=\"107.4\" text-anchor=\"end\" font-size=\"14\" fill=\"#2B2527\" font-family=\"IBM Plex Mono, monospace\">24 - x</text></svg></span><p>Bestäm med derivata den största möjliga arean.</p>",
-    "s": "<p>Om ena sidan är \\(x\\) cm blir den andra \\(24-x\\) cm.</p><p>\\[A(x)=x(24-x)=24x-x^2.\\]</p><p>\\(A^{\\prime}(x)=24-2x\\). Derivatan är noll när \\(x=12\\).</p><p>Då är båda sidorna \\(12\\) cm och största arean är \\(\\boxed{144\\text{ cm}^2}\\).</p>",
+    "s": "<p><strong>Ställ upp:</strong> Sidsumman är \\(48/2=24\\) cm.</p><p>\\[A(x)=x(24-x)=24x-x^2,\\qquad A'(x)=24-2x=0\\quad\\Rightarrow\\quad x=12\\]</p><p>\\[A(12)=\\boxed{144\\text{ cm}^2}\\]</p><p><strong>Snabbkoll:</strong> Rektangeln med störst area vid given omkrets är alltid en kvadrat med sidan \\(P/4\\). Här ger \\(48/4=12\\) cm och arean \\(12^2=144\\) cm², precis som räkningen visade.</p><p>Använd derivatan för att <em>visa</em> att det stämmer, och regeln för att kontrollera att du räknat rätt.</p>",
     "familj": "r6_ext_rect_4",
     "miniräknare": false,
     "geogebra": false
