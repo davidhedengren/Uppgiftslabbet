@@ -3192,6 +3192,123 @@ button,input,select,textarea{font-family:var(--ui)!important}
   border-radius:9px!important;
   font-size:12px!important;
 }
+
+
+/* ── v9.3 · tätare filterlayout ──
+   Anpassad för laptop: förmågor, sortering och poäng ryms på en rad. */
+.mittopp{
+  gap:6px!important;
+  padding:10px 0 9px!important;
+}
+.träffar{
+  flex:0 0 auto!important;
+  font-size:10.5px!important;
+  color:#8B9098!important;
+  white-space:nowrap!important;
+  margin-right:4px!important;
+}
+.träffar b{
+  font-size:11px!important;
+  font-weight:600!important;
+  color:#737983!important;
+}
+.formagefilter{
+  margin-top:0!important;
+  gap:4px!important;
+  flex-wrap:nowrap!important;
+  flex:0 1 auto!important;
+}
+.formagefilter .formageetikett{
+  font-size:7.5px!important;
+  letter-spacing:.09em!important;
+  margin-right:1px!important;
+}
+.formagefilter button{
+  min-height:26px!important;
+  height:26px!important;
+  padding:2px 6px!important;
+  border-radius:7px!important;
+  font-size:9.5px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+.mittopp .fyll{min-width:2px!important}
+.mittopp .kryssgrupp{
+  flex:0 0 auto!important;
+  gap:4px!important;
+  flex-wrap:nowrap!important;
+}
+#sorteraKnapp{
+  min-height:26px!important;
+  height:26px!important;
+  padding:3px 6px!important;
+  border-radius:7px!important;
+  font-size:10px!important;
+  white-space:nowrap!important;
+}
+#sorteraKnapp svg{width:13px!important;height:13px!important}
+.mittopp .kryss{
+  min-height:26px!important;
+  padding:3px 7px!important;
+  border-radius:7px!important;
+  font-size:10px!important;
+  gap:5px!important;
+  white-space:nowrap!important;
+}
+.mittopp .kryss .ruta{width:15px!important;height:15px!important;border-radius:5px!important}
+
+/* Vänsterpanel: mindre vertikalt tomrum så kapitelträdet kommer upp. */
+.vänster .etikett{
+  margin-top:14px!important;
+  margin-bottom:6px!important;
+}
+.vänster .spar-inriktning{margin-top:12px!important}
+.nivåfilter{
+  gap:5px!important;
+  margin:0 4px 8px!important;
+}
+.nivåfilter button{
+  min-height:28px!important;
+  height:28px!important;
+  padding:2px 0!important;
+  border-radius:8px!important;
+  font-size:11px!important;
+}
+.hjälpfilter{
+  margin:8px 4px 8px!important;
+}
+.hjälpfilter .etikett{
+  margin-top:0!important;
+  margin-bottom:6px!important;
+}
+.hjälpval{gap:5px!important;margin-bottom:5px!important}
+.hjälpval button{
+  min-height:32px!important;
+  padding:5px 8px!important;
+  border-radius:8px!important;
+  font-size:10.5px!important;
+}
+#träd{margin-top:10px!important}
+
+/* På smalare laptopfönster görs mittradens kontroller ännu snäppet tätare. */
+@media (max-width:1500px) and (min-width:901px){
+  .mittopp{gap:4px!important}
+  .träffar{font-size:9.5px!important;margin-right:1px!important}
+  .träffar b{font-size:10px!important}
+  .formagefilter{gap:3px!important}
+  .formagefilter .formageetikett{font-size:7px!important}
+  .formagefilter button{
+    min-height:24px!important;height:24px!important;
+    padding:2px 5px!important;font-size:8.8px!important;border-radius:6px!important;
+  }
+  #sorteraKnapp{
+    min-height:24px!important;height:24px!important;
+    padding:2px 5px!important;font-size:9px!important;
+  }
+  .mittopp .kryss{
+    min-height:24px!important;padding:2px 5px!important;font-size:9px!important;
+  }
+}
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -3364,7 +3481,6 @@ button,input,select,textarea{font-family:var(--ui)!important}
   <main class="panel mitten">
     <div class="mittopp">
       <span class="träffar" id="träffar"></span>
-      <button class="knapp tyst" id="läggAlla">Lägg till alla</button>
       <div class="formagefilter" id="formagefilter" aria-label="Filtrera på förmåga" hidden>
         <span class="formageetikett">Förmåga</span>
         <button type="button" data-formaga="begrepp" aria-pressed="true">Begrepp</button>
@@ -4628,7 +4744,6 @@ function urval(){
 function rita(){
   const u=urval(), vald=new Set(state.blad.map(x=>x.id));
   $('#träffar').innerHTML=`<b>${u.length}</b> ${u.length===1?'uppgift':'uppgifter'}`;
-  $('#läggAlla').disabled=u.length===0;
 
   if(!u.length){
     $('#lista').innerHTML=`<div class="tomt"><h3>Inga uppgifter matchar</h3>
@@ -5277,11 +5392,6 @@ PR.addEventListener('click',e=>{
 });
 
 /* ── knappar ── */
-$('#läggAlla').addEventListener('click',()=>{
-  const har=new Set(state.blad.map(x=>x.id));
-  urval().forEach(x=>{if(!har.has(x.id))state.blad.push(x);});
-  rita(); ritaBlad();
-});
 $('#rensaAllt').addEventListener('click',()=>{
   state.blad=[]; state.omr.clear(); state.sök=''; state.nivåer=new Set(['E','C','A']);
   state.sorteraNivå=false; state.visaPoäng=false;
