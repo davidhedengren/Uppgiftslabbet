@@ -3127,6 +3127,25 @@ button,input,select,textarea{font-family:var(--ui)!important}
   background:var(--track-accent)!important;
 }
 
+
+/* ── KORREKT UPPGIFTSLABBET-LOGGA ── */
+.password-brand{display:block!important;margin-bottom:24px!important}
+.password-brand .password-full-logo{display:block;width:min(100%,520px);height:auto;object-fit:contain;margin:0 auto}
+.password-brand-text{display:none!important}
+
+.kv-nav .kv-brand{display:block!important;width:min(100%,760px)!important}
+.kv-nav .kv-full-logo{display:block;width:100%;height:auto;object-fit:contain}
+
+.top .märke{display:flex!important;align-items:center!important;min-width:0!important}
+.top .hem-logo{width:min(430px,42vw)!important;height:auto!important;padding:0!important;border:0!important;background:transparent!important;border-radius:0!important;line-height:0!important}
+.top .hem-logo img{display:block!important;width:100%!important;height:auto!important;max-height:82px!important;object-fit:contain!important;object-position:left center!important}
+.top .titel{display:none!important}
+@media(max-width:650px){
+  .password-brand .password-full-logo{width:100%}
+  .kv-nav .kv-brand{width:100%!important}
+  .top .hem-logo{width:min(78vw,430px)!important}
+  .top .hem-logo img{max-height:88px!important}
+}
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -3139,11 +3158,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
 <section class="password-gate" id="passwordGate" aria-labelledby="passwordTitle">
   <form class="password-card" id="passwordForm">
     <div class="password-brand">
-      <img src="logo.png" alt="Uppgiftslabbet">
-      <div class="password-brand-text">
-        <span class="password-brand-title">Uppgiftslabbet</span>
-        <span class="password-brand-subtitle">Fysik nivå 1–2 · Matematik nivå 1–2 · Fortsättning nivå 1–2 · Fördjupning nivå 1</span>
-      </div>
+      <img class="password-full-logo" src="logo.jpg" alt="Uppgiftslabbet – Erik Dahlbergsgymnasiets uppgiftsbank i matematik och fysik">
     </div>
     <h1 id="passwordTitle">Ange lösenord</h1>
     <p>Skriv lösenordet för att öppna uppgiftsbanken.</p>
@@ -3209,12 +3224,8 @@ button,input,select,textarea{font-family:var(--ui)!important}
 <div class="kursval" id="kursval">
   <div class="kv-inner">
     <header class="kv-nav" aria-label="Uppgiftsbanken">
-      <div class="kv-brand">
-        <span class="kv-logo-shell"><img src="logo.png" alt="Uppgiftslabbet"></span>
-        <span class="kv-brandtext">
-          <span class="kv-brandname">Uppgiftslabbet</span>
-          <span class="kv-brandmeta">Uppgifter i matematik och fysik</span>
-        </span>
+      <div class="kv-brand kv-brand-logo">
+        <img class="kv-full-logo" src="logo.jpg" alt="Uppgiftslabbet – Erik Dahlbergsgymnasiets uppgiftsbank i matematik och fysik">
       </div>
     </header>
 
@@ -3245,7 +3256,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
 <header class="top" hidden>
   <div class="märke">
     <button class="hem-logo" id="logoHem" type="button" aria-label="Till startsidan" title="Till startsidan">
-      <img src="logo.png" alt="Uppgiftslabbet">
+      <img src="logo.jpg" alt="Uppgiftslabbet – Erik Dahlbergsgymnasiets uppgiftsbank i matematik och fysik">
     </button>
     <div class="titel">
       <h1>Uppgiftslabbet</h1>
