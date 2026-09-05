@@ -1,9 +1,16 @@
 /* uppgiftermatf1.js — Matematik – fördjupning nivå 1.
-   Metadatarevision 2026-09-04:
-   - familj standardiserad till återanvändbara pedagogiska uppgiftsfamiljer
-   - formaga tillagd: begrepp, procedur, resonemang, modellering, problemlösning
-   - övrigt uppgiftsinnehåll är oförändrat
+   Adaptiv metadata:
+   - familj
+   - svarstyp
+   - rättSvar
+   - tolerans
+   - självrättning
+
+   Klassificeringen är konservativ:
+   öppna resonemang, figuruppgifter och avancerade symboliska svar
+   med flera ekvivalenta skrivsätt självrättas inte.
 */
+
 window.BANKMATF1 = [
   {
     "kap": 1,
@@ -16,10 +23,11 @@ window.BANKMATF1 = [
     "id": "1.01",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_skriva_mangd_med_mangdbyggarnotation",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(A=\\{x\\in\\mathbb R\\mid x<100\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -32,10 +40,11 @@ window.BANKMATF1 = [
     "id": "1.02",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_bestamma_element_ur_mangdbyggarnotation",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(A=\\{-3,-2,-1,0,1,2,3\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -48,10 +57,15 @@ window.BANKMATF1 = [
     "id": "1.03",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_skriva_mangder_pa_listform",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(\\{\\text{måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag}\\}\\)",
+      "\\(\\varnothing\\)",
+      "\\(\\{1,2,3\\}\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -64,10 +78,14 @@ window.BANKMATF1 = [
     "id": "1.04",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_snitt_och_union_av_andliga_mangder",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(A\\cap B=\\{3,4,5,6,8\\}\\)",
+      "\\(A\\cup B=\\{1,3,4,5,6,7,8,9\\}\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -80,11 +98,11 @@ window.BANKMATF1 = [
     "id": "1.05",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_tolka_antal_i_venn_diagram",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -97,10 +115,16 @@ window.BANKMATF1 = [
     "id": "1.06",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_rakna_med_union_snitt_och_tom_mangd",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(A\\)",
+      "\\(\\varnothing\\)",
+      "\\(A\\)",
+      "\\(B\\cap A=B\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -113,11 +137,11 @@ window.BANKMATF1 = [
     "id": "1.07",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_markera_mangder_i_venn_diagram",
+    "svarstyp": "figur",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -130,10 +154,16 @@ window.BANKMATF1 = [
     "id": "1.08",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_komplement_och_differens_i_andliga_mangder",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(\\{0\\}\\)",
+      "\\(\\{1,2,4,5,6,8,9,10,12,13,15,16,17,18,19,20\\}\\)",
+      "\\(\\{0,2,3,4,6,7,9,10,11,12,14,15,16,17,18,19\\}\\)",
+      "\\(\\{3,7,11,14\\}\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -146,11 +176,11 @@ window.BANKMATF1 = [
     "id": "1.09",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_beskriva_skuggat_venn_omrade_med_symboler",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -163,10 +193,11 @@ window.BANKMATF1 = [
     "id": "1.10",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_symmetrisk_differens_med_union_och_snitt",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -179,10 +210,11 @@ window.BANKMATF1 = [
     "id": "1.11",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_beskriva_samma_mangd_pa_flera_satt",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(P=\\{2n\\mid n\\in\\mathbb Z,\\ 1\\le n\\le5\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -195,10 +227,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi söker heltal som är jämna och ligger mellan 2 och 20. Ett tydligt sätt är att skriva</p><p><strong>\\(A=\\{x\\mid x\\in\\mathbb{Z},\\ 2\\le x\\le 20\\ \\text{och}\\ x\\ \\text{är jämnt}\\}\\)</strong>.</p><p>Man kan också skriva \\(A=\\{2n\\mid n\\in\\mathbb{Z},\\ 1\\le n\\le 10\\}\\).</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_skriva_mangd_med_mangdbyggare",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(A=\\{2n\\mid n\\in\\mathbb{Z},\\ 1\\le n\\le 10\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -211,10 +244,11 @@ window.BANKMATF1 = [
     "s": "<p>Mängden består av alla heltal från \\(-3\\) upp till men inte med 4.</p><p>Därför är</p><p><strong>\\(B=\\{-3,-2,-1,0,1,2,3\\}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_bestamma_element_i_given_mangd",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(B=\\{-3,-2,-1,0,1,2,3\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -227,10 +261,11 @@ window.BANKMATF1 = [
     "id": "1.145",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__representera_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_mangdbyggare_for_intervall",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(\\{x\\mid x\\in\\mathbb Z,\\ -2\\le x\\le5\\}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -243,10 +278,11 @@ window.BANKMATF1 = [
     "id": "1.12",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_oversatta_omradesbeskrivning_till_mangdsymboler",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -259,10 +295,11 @@ window.BANKMATF1 = [
     "id": "1.13",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_tre_mangder_med_villkor",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -275,11 +312,11 @@ window.BANKMATF1 = [
     "id": "1.14",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_tolka_sektorer_i_venn_diagram",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -292,11 +329,11 @@ window.BANKMATF1 = [
     "id": "1.46",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_tolka_markerat_omrade_i_venn_diagram",
+    "svarstyp": "figur",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -309,10 +346,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där A snitt B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs><clipPath id=\"c115a\"><circle cx=\"170\" cy=\"138\" r=\"86\"/></clipPath></defs><g clip-path=\"url(#c115a)\"><circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"#E7B07A\"/></g>\n<circle cx=\"170\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"120\" y=\"70\" font-size=\"18\">A</text><text x=\"288\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"42\" font-size=\"16\">U</text>\n<text x=\"128\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">14</text><text x=\"210\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">9</text><text x=\"292\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">11</text><text x=\"355\" y=\"228\" font-size=\"16\" text-anchor=\"middle\">6</text></svg></span><p><strong>a)</strong> I snittet står talet 9, alltså \\(|A\\cap B|=9\\).</p><span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där A union B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<circle cx=\"170\" cy=\"138\" r=\"86\" fill=\"#E7B07A\"/><circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"#E7B07A\"/>\n<circle cx=\"170\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"120\" y=\"70\" font-size=\"18\">A</text><text x=\"288\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"42\" font-size=\"16\">U</text>\n<text x=\"128\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">14</text><text x=\"210\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">9</text><text x=\"292\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">11</text><text x=\"355\" y=\"228\" font-size=\"16\" text-anchor=\"middle\">6</text></svg></span><p><strong>b)</strong> Unionen innehåller \\(14+9+11=34\\) elever.</p><span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där området utanför både A och B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"#E7B07A\"/><circle cx=\"170\" cy=\"138\" r=\"86\" fill=\"white\"/><circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"white\"/>\n<circle cx=\"170\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"138\" r=\"86\" fill=\"none\" fill-opacity=\".08\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"120\" y=\"70\" font-size=\"18\">A</text><text x=\"288\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"42\" font-size=\"16\">U</text>\n<text x=\"128\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">14</text><text x=\"210\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">9</text><text x=\"292\" y=\"145\" font-size=\"20\" text-anchor=\"middle\">11</text><text x=\"355\" y=\"228\" font-size=\"16\" text-anchor=\"middle\">6</text></svg></span><p><strong>c)</strong> Utanför båda mängderna ligger \\(40-34=6\\) elever.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_avlasa_antal_i_venn_diagram",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -325,10 +363,11 @@ window.BANKMATF1 = [
     "id": "1.147",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_tre_mangder_med_inklusion_exklusion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(68\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -341,10 +380,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där A snitt B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_161_s_1_A2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"170\" cy=\"130\" r=\"75\"/></clipPath>\n<clipPath id=\"matf1_1_161_s_1_B2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"250\" cy=\"130\" r=\"75\"/></clipPath>\n</defs>\n<g clip-path=\"url(#matf1_1_161_s_1_A2clip)\"><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/></g>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"126\" y=\"70\" font-size=\"18\">A</text>\n<text x=\"284\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"40\" font-size=\"16\">U</text>\n</svg></span><p><strong>a)</strong> \\(A\\cap B=\\{5,7\\}\\).</p><span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där A minus B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_161_s_2_A2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"170\" cy=\"130\" r=\"75\"/></clipPath>\n<clipPath id=\"matf1_1_161_s_2_B2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"250\" cy=\"130\" r=\"75\"/></clipPath>\n</defs>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"white\"/>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"126\" y=\"70\" font-size=\"18\">A</text>\n<text x=\"284\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"40\" font-size=\"16\">U</text>\n</svg></span><p><strong>b)</strong> \\(A\\setminus B=\\{1,3\\}\\).</p><span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där området utanför A union B är markerat\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_161_s_3_A2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"170\" cy=\"130\" r=\"75\"/></clipPath>\n<clipPath id=\"matf1_1_161_s_3_B2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"250\" cy=\"130\" r=\"75\"/></clipPath>\n</defs>\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"#E7B07A\"/><circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"white\"/><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"white\"/>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"126\" y=\"70\" font-size=\"18\">A</text>\n<text x=\"284\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"40\" font-size=\"16\">U</text>\n</svg></span><p><strong>c)</strong> \\((A\\cup B)^c=\\{11\\}\\).</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_avlasa_element_i_venn_diagram",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -357,11 +397,11 @@ window.BANKMATF1 = [
     "s": "<p>Det markerade området ligger i \\(B\\), men inte i \\(A\\). Därför skrivs området som <strong>\\(B\\setminus A\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_tolka_markerat_omrade_i_venn_diagram",
+    "svarstyp": "figur",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -374,11 +414,11 @@ window.BANKMATF1 = [
     "s": "<p>Området ligger i både \\(A\\) och \\(C\\), men inte i \\(B\\). Därför kan det skrivas som <strong>\\((A\\cap C)\\setminus B\\)</strong>.</p><p>En likvärdig skrivning är <strong>\\(A\\cap C\\cap B^c\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_tolka_markerat_omrade_i_venn_diagram_med_tre_mangder",
+    "svarstyp": "figur",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -391,10 +431,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"234\" viewBox=\"0 0 430 280\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där delen av C utanför A och B är markerad\">\n<rect x=\"15\" y=\"15\" width=\"400\" height=\"250\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_165_s_1_Aclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"165\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_165_s_1_Bclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"265\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_165_s_1_Cclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"215\" cy=\"184\" r=\"72\"/></clipPath>\n</defs>\n<circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"#E7B07A\"/><circle cx=\"165\" cy=\"118\" r=\"82\" fill=\"white\"/><circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"white\"/>\n<circle cx=\"165\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2\"/>\n<circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2\"/>\n<circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"none\" stroke=\"#B48A18\" stroke-width=\"2\"/>\n<text x=\"118\" y=\"56\" font-size=\"17\">A</text>\n<text x=\"302\" y=\"56\" font-size=\"17\">B</text>\n<text x=\"210\" y=\"260\" font-size=\"17\">C</text>\n<text x=\"28\" y=\"35\" font-size=\"15\">U</text>\n</svg></span><p>Vi söker de element som ligger i \\(C\\), men inte i \\(A\\) och inte i \\(B\\). Området kan skrivas <strong>\\(C\\setminus(A\\cup B)\\)</strong> eller <strong>\\(C\\cap A^c\\cap B^c\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_rita_och_tolka_omrade_med_tre_mangder",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -407,10 +448,14 @@ window.BANKMATF1 = [
     "id": "1.15",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_skillnad_mellan_delmangd_och_element",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "Falskt",
+      "Sant"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -423,10 +468,11 @@ window.BANKMATF1 = [
     "id": "1.16",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_de_morgans_lag_i_konkret_mangd",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -439,10 +485,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>a)</strong> Unionen innehåller alla element som finns i minst en av mängderna:</p><p>\\[A\\cup B=\\{1,3,4,5,6,7,9\\}.\\]</p><p><strong>b)</strong> Snittet innehåller de element som finns i båda mängderna:</p><p>\\[A\\cap B=\\{3,5\\}.\\]</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_union_och_snitt_av_tva_mangder",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -455,10 +502,11 @@ window.BANKMATF1 = [
     "s": "<p>Eftersom komplementet tas i förhållande till grundmängden \\(U\\), är \\(A^c\\) samma mängd som \\(U\\setminus A\\).</p><p>Vi tar alltså bort \\(2,4,6,8\\) ur \\(U\\):</p><p>\\[U\\setminus A=A^c=\\{1,3,5,7\\}.\\]</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_differens_och_komplement",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -471,10 +519,11 @@ window.BANKMATF1 = [
     "id": "1.146",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_symmetrisk_differens_via_operationer",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -487,10 +536,11 @@ window.BANKMATF1 = [
     "id": "1.17",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tva_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_for_tva_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(118\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -503,10 +553,11 @@ window.BANKMATF1 = [
     "id": "1.18",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tre_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_med_tre_mangder_och_parameter",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -519,10 +570,11 @@ window.BANKMATF1 = [
     "id": "1.47",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tre_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_for_tre_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(128\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -535,10 +587,11 @@ window.BANKMATF1 = [
     "id": "1.56",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_exakt_en_av_tva_aktiviteter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "64",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -551,10 +604,11 @@ window.BANKMATF1 = [
     "id": "1.57",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_exakt_tva_av_tre_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "36",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -567,10 +621,11 @@ window.BANKMATF1 = [
     "s": "<p>Om vi bara adderar 18 och 15 räknas de 7 elever som spelar båda sporterna två gånger. Därför använder vi additionsprincipen:</p><p>\\[|F\\cup B|=|F|+|B|-|F\\cap B|=18+15-7=26.\\]</p><p><strong>26 elever</strong> spelar minst en av sporterna.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_additionsprincipen_med_tva_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(26\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -583,10 +638,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där unionen av A och B är markerad\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_164_s_1_A2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"170\" cy=\"130\" r=\"75\"/></clipPath>\n<clipPath id=\"matf1_1_164_s_1_B2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"250\" cy=\"130\" r=\"75\"/></clipPath>\n</defs>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"126\" y=\"70\" font-size=\"18\">A</text>\n<text x=\"284\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"40\" font-size=\"16\">U</text>\n</svg></span><p><strong>a)</strong> \\(|A\\cup B|=18+7+11=36\\).</p><span class=\"fig smal\"><svg width=\"360\" height=\"223\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där exakt en av mängderna är markerad\">\n<rect x=\"18\" y=\"18\" width=\"384\" height=\"224\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_164_s_2_A2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"170\" cy=\"130\" r=\"75\"/></clipPath>\n<clipPath id=\"matf1_1_164_s_2_B2clip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"250\" cy=\"130\" r=\"75\"/></clipPath>\n</defs>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"#E7B07A\"/><g clip-path=\"url(#matf1_1_164_s_2_A2clip)\"><circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"white\"/></g>\n<circle cx=\"170\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2.2\"/>\n<circle cx=\"250\" cy=\"130\" r=\"75\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2.2\"/>\n<text x=\"126\" y=\"70\" font-size=\"18\">A</text>\n<text x=\"284\" y=\"70\" font-size=\"18\">B</text>\n<text x=\"34\" y=\"40\" font-size=\"16\">U</text>\n</svg></span><p><strong>b)</strong> Exakt en mängd ger \\(18+11=29\\) personer.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_tva_mangder_med_angivna_antal_i_diagram",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -599,10 +655,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"234\" viewBox=\"0 0 430 280\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där de områden som tillhör exakt två mängder är markerade\">\n<rect x=\"15\" y=\"15\" width=\"400\" height=\"250\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_166_s_1_Aclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"165\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_166_s_1_Bclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"265\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_166_s_1_Cclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"215\" cy=\"184\" r=\"72\"/></clipPath>\n</defs>\n<g clip-path=\"url(#matf1_1_166_s_1_Aclip)\"><circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"#E7B07A\"/></g><g clip-path=\"url(#matf1_1_166_s_1_Aclip)\"><circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"#E7B07A\"/></g><g clip-path=\"url(#matf1_1_166_s_1_Bclip)\"><circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"#E7B07A\"/></g><g clip-path=\"url(#matf1_1_166_s_1_Aclip)\"><g clip-path=\"url(#matf1_1_166_s_1_Bclip)\"><circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"white\"/></g></g>\n<circle cx=\"165\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2\"/>\n<circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2\"/>\n<circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"none\" stroke=\"#B48A18\" stroke-width=\"2\"/>\n<text x=\"118\" y=\"56\" font-size=\"17\">A</text>\n<text x=\"302\" y=\"56\" font-size=\"17\">B</text>\n<text x=\"210\" y=\"260\" font-size=\"17\">C</text>\n<text x=\"28\" y=\"35\" font-size=\"15\">U</text>\n</svg></span><p><strong>a)</strong> Exakt två mängder motsvarar de tre parvisa överlappen utan mittenområdet. Antalet är \\(5+6+4=15\\).</p><span class=\"fig smal\"><svg width=\"360\" height=\"234\" viewBox=\"0 0 430 280\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Venn-diagram där området utanför alla tre mängder är markerat\">\n<rect x=\"15\" y=\"15\" width=\"400\" height=\"250\" fill=\"white\" stroke=\"#777\" stroke-width=\"1.5\"/>\n<defs>\n<clipPath id=\"matf1_1_166_s_2_Aclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"165\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_166_s_2_Bclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"265\" cy=\"118\" r=\"82\"/></clipPath>\n<clipPath id=\"matf1_1_166_s_2_Cclip\" clipPathUnits=\"userSpaceOnUse\"><circle cx=\"215\" cy=\"184\" r=\"72\"/></clipPath>\n</defs>\n<rect x=\"15\" y=\"15\" width=\"400\" height=\"250\" fill=\"#E7B07A\"/><circle cx=\"165\" cy=\"118\" r=\"82\" fill=\"white\"/><circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"white\"/><circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"white\"/>\n<circle cx=\"165\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2C62A8\" stroke-width=\"2\"/>\n<circle cx=\"265\" cy=\"118\" r=\"82\" fill=\"none\" stroke=\"#2E7D52\" stroke-width=\"2\"/>\n<circle cx=\"215\" cy=\"184\" r=\"72\" fill=\"none\" stroke=\"#B48A18\" stroke-width=\"2\"/>\n<text x=\"118\" y=\"56\" font-size=\"17\">A</text>\n<text x=\"302\" y=\"56\" font-size=\"17\">B</text>\n<text x=\"210\" y=\"260\" font-size=\"17\">C</text>\n<text x=\"28\" y=\"35\" font-size=\"15\">U</text>\n</svg></span><p><strong>b)</strong> Inne i minst en mängd finns \\(12+8+10+5+6+4+3=48\\) personer. Utanför alla tre finns därför \\(60-48=12\\) personer.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_tre_mangder_med_antal_i_diagram",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -615,11 +672,11 @@ window.BANKMATF1 = [
     "id": "1.19",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -632,10 +689,11 @@ window.BANKMATF1 = [
     "id": "1.20",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_och_ordna_utan_aterlaggning",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -648,10 +706,11 @@ window.BANKMATF1 = [
     "id": "1.21",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_grupp_utan_ordning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "33\\,649",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -664,10 +723,11 @@ window.BANKMATF1 = [
     "id": "1.22",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestamma_binomialkoefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(5\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -680,10 +740,11 @@ window.BANKMATF1 = [
     "id": "1.23",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_produktprincipen_med_kortlek",
+    "svarstyp": "numeriskt",
+    "rättSvar": "169",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -696,10 +757,11 @@ window.BANKMATF1 = [
     "id": "1.24",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_pinkod_med_aterlaggning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "10\\,000",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -712,10 +774,11 @@ window.BANKMATF1 = [
     "id": "1.25",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_produktprincipen_i_kladval",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2100",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -728,10 +791,11 @@ window.BANKMATF1 = [
     "id": "1.26",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_grupper_i_block",
+    "svarstyp": "numeriskt",
+    "rättSvar": "622\\,080",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -744,10 +808,11 @@ window.BANKMATF1 = [
     "id": "1.27",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_antal_pokerhander",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2\\,598\\,960",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -760,10 +825,11 @@ window.BANKMATF1 = [
     "id": "1.28",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_tolka_och_anvanda_kombinationsformel",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -776,10 +842,11 @@ window.BANKMATF1 = [
     "id": "1.29",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_berakna_kombinationstal",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2380\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -792,10 +859,11 @@ window.BANKMATF1 = [
     "id": "1.30",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__utveckla_med_binomialsatsen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_utveckla_binom_med_binomialsatsen",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(16x^4+16x^3y+6x^2y^2+xy^3+\\frac{1}{16}y^4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -808,10 +876,11 @@ window.BANKMATF1 = [
     "id": "1.31",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__utveckla_med_binomialsatsen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_utveckla_binom",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(=81x^4+216x^3+216x^2+96x+16\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -824,10 +893,11 @@ window.BANKMATF1 = [
     "id": "1.32",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_jamfora_ordnade_och_oordnade_urval",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -840,10 +910,11 @@ window.BANKMATF1 = [
     "id": "1.33",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_stora_kombinationstal_och_symmetri",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(187\\,460\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -856,10 +927,14 @@ window.BANKMATF1 = [
     "id": "1.34",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__utveckla_med_binomialsatsen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_utveckla_algebraiska_binom",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(32x^5+80x^6+80x^7+40x^8+10x^9+x^{10}\\)",
+      "\\(32x^5-80x^4y+80x^3y^2-40x^2y^3+10xy^4-y^5\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -872,10 +947,11 @@ window.BANKMATF1 = [
     "id": "1.35",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_hypergeometrisk_sannolikhet_i_lotteri",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -888,10 +964,14 @@ window.BANKMATF1 = [
     "id": "1.36",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_i_binomialutveckling",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(\\binom{11}{4}=330\\)",
+      "\\(\\binom94 2^5=4032\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -904,10 +984,11 @@ window.BANKMATF1 = [
     "id": "1.37",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_rakna_nya_registreringskombinationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "27\\,984\\,100",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -920,11 +1001,11 @@ window.BANKMATF1 = [
     "id": "1.38",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_manader",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(24\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -937,11 +1018,11 @@ window.BANKMATF1 = [
     "id": "1.51",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_parindelning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -954,10 +1035,11 @@ window.BANKMATF1 = [
     "id": "1.58",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_samma_begynnelsebokstav",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -970,10 +1052,11 @@ window.BANKMATF1 = [
     "id": "1.59",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_strumpor_och_farger",
+    "svarstyp": "numeriskt",
+    "rättSvar": "17",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -986,10 +1069,11 @@ window.BANKMATF1 = [
     "id": "1.60",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_fodelsemanader",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1002,10 +1086,11 @@ window.BANKMATF1 = [
     "id": "1.61",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_samma_rest_modulo",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1018,10 +1103,11 @@ window.BANKMATF1 = [
     "id": "1.62",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_avrundade_matvarden",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1034,10 +1120,11 @@ window.BANKMATF1 = [
     "id": "1.63",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_komplementara_talpar",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1050,10 +1137,11 @@ window.BANKMATF1 = [
     "id": "1.64",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_tva_pa_varandra_foljande_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1066,10 +1154,11 @@ window.BANKMATF1 = [
     "id": "1.65",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_workshopfordelning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1082,11 +1171,11 @@ window.BANKMATF1 = [
     "id": "1.66",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_geometrisk_ladprincip",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1099,10 +1188,11 @@ window.BANKMATF1 = [
     "id": "1.67",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_generellt_bevis_med_restklasser",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1115,10 +1205,11 @@ window.BANKMATF1 = [
     "id": "1.68",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_filer_i_mappar",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1131,11 +1222,11 @@ window.BANKMATF1 = [
     "s": "<p>Här är månaderna lådorna, alltså 12 lådor. Personerna är objekten som placeras i lådorna.</p><p>Om 13 personer fördelas på 12 månader måste någon månad innehålla minst två personer enligt <strong>lådprincipen</strong>.</p><p>Alltså måste minst två personer vara födda samma månad.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_manader",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1148,11 +1239,11 @@ window.BANKMATF1 = [
     "s": "<p>Färgerna är lådorna: svart, vit och blå, alltså 3 lådor.</p><p>I värsta fall kan man först få en svart, en vit och en blå strumpa, alltså tre strumpor utan att ha ett par i samma färg. Nästa strumpa måste då ge samma färg som någon av de tidigare.</p><p><strong>Man måste ta upp 4 strumpor.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_strumpor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1165,11 +1256,11 @@ window.BANKMATF1 = [
     "id": "1.133",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_veckodagar",
+    "svarstyp": "numeriskt",
+    "rättSvar": "8 personer",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1182,11 +1273,11 @@ window.BANKMATF1 = [
     "id": "1.134",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_rester",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1199,11 +1290,11 @@ window.BANKMATF1 = [
     "id": "1.135",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_med_minsta_garanterade_antal",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(300\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1216,11 +1307,11 @@ window.BANKMATF1 = [
     "id": "1.150",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_farger",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(8\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1233,11 +1324,11 @@ window.BANKMATF1 = [
     "id": "1.151",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__ladprincipen_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "kombinatoriska_principer_ladprincipen_heltal_inom_intervall",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1250,10 +1341,11 @@ window.BANKMATF1 = [
     "id": "1.39",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_koder_med_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "608\\,400",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1266,10 +1358,11 @@ window.BANKMATF1 = [
     "id": "1.52",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_kod_med_flera_val",
+    "svarstyp": "numeriskt",
+    "rättSvar": "55\\,200",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1282,10 +1375,11 @@ window.BANKMATF1 = [
     "id": "1.53",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_produktprincip_i_spelkontext",
+    "svarstyp": "numeriskt",
+    "rättSvar": "360",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1298,10 +1392,11 @@ window.BANKMATF1 = [
     "id": "1.54",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_produktprincip_med_forbjudna_kombinationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(66\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1314,10 +1409,11 @@ window.BANKMATF1 = [
     "id": "1.55",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_fargning_med_narliggande_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "320",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1330,10 +1426,11 @@ window.BANKMATF1 = [
     "s": "<p>Först görs ett val av bägare, sedan ett oberoende val av smak och till sist ett oberoende val av topping. Då används multiplikationsprincipen:</p><p>\\[3\\cdot 6\\cdot 4=72.\\]</p><p><strong>Det finns 72 olika val.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_antal_val_med_multiplikationsprincipen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(72\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1346,10 +1443,11 @@ window.BANKMATF1 = [
     "s": "<p>För första bokstaven finns 26 val och för andra bokstaven också 26 val. För varje sifferplats finns 10 val.</p><p>\\[26\\cdot 26\\cdot 10\\cdot 10\\cdot 10=676\\,000.\\]</p><p><strong>Antalet koder är 676 000.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_kod_med_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(676\\,000\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1362,10 +1460,11 @@ window.BANKMATF1 = [
     "id": "1.130",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_val_i_flera_steg",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(12\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1378,10 +1477,11 @@ window.BANKMATF1 = [
     "id": "1.131",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_registreringskod_med_begransad_forsta_position",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(180\\,000\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1394,10 +1494,11 @@ window.BANKMATF1 = [
     "id": "1.132",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__multiplikationsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_kombinera_additions_och_multiplikationsprincipen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(48\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1410,10 +1511,11 @@ window.BANKMATF1 = [
     "id": "1.148",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_flaggor_med_fargval",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(125\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1426,10 +1528,11 @@ window.BANKMATF1 = [
     "id": "1.149",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_koder_utan_upprepning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(30\\,240\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1442,10 +1545,11 @@ window.BANKMATF1 = [
     "id": "1.40",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_permutationer_med_upprepade_objekt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "45\\,360",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1458,10 +1562,11 @@ window.BANKMATF1 = [
     "id": "1.69",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_prispall",
+    "svarstyp": "numeriskt",
+    "rättSvar": "336",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1474,10 +1579,11 @@ window.BANKMATF1 = [
     "id": "1.70",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_spellista",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5040",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1490,10 +1596,11 @@ window.BANKMATF1 = [
     "id": "1.71",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordningsvillkor_fore",
+    "svarstyp": "numeriskt",
+    "rättSvar": "20\\,160",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1506,11 +1613,11 @@ window.BANKMATF1 = [
     "id": "1.72",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_tva_objekt_intill",
+    "svarstyp": "numeriskt",
+    "rättSvar": "80\\,640",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1523,10 +1630,11 @@ window.BANKMATF1 = [
     "id": "1.73",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_upprepade_bokstaver",
+    "svarstyp": "numeriskt",
+    "rättSvar": "15\\,120",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1539,10 +1647,11 @@ window.BANKMATF1 = [
     "id": "1.74",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_inte_bredvid_varandra",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2\\,903\\,040",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1555,11 +1664,11 @@ window.BANKMATF1 = [
     "id": "1.75",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_personer_pa_andplatser",
+    "svarstyp": "numeriskt",
+    "rättSvar": "240",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1572,11 +1681,11 @@ window.BANKMATF1 = [
     "id": "1.76",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_inga_sarskilda_bocker_intill",
+    "svarstyp": "numeriskt",
+    "rättSvar": "14\\,400",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1589,10 +1698,11 @@ window.BANKMATF1 = [
     "id": "1.77",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_tva_foredrag_i_bestamd_foljd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "120",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1605,10 +1715,11 @@ window.BANKMATF1 = [
     "id": "1.78",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kod_utan_upprepning_och_nollrestriktion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "27\\,216",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1621,10 +1732,11 @@ window.BANKMATF1 = [
     "s": "<p>Ordet har 5 olika bokstäver. Antalet ord fås därför som antalet permutationer av 5 objekt:</p><p>\\[5!=120.\\]</p><p><strong>Det går att bilda 120 olika ord.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_permutation_av_olika_bokstaver",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(120\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1637,10 +1749,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>a)</strong> Alla 6 bokstäver är olika, så antalet ord är</p><p>\\[6!=720.\\]</p><p><strong>b)</strong> Vi räknar hur många ord som kommer före <em>KNOTAF</em> i lexikografisk ordning.</p><p>Första bokstaven är K. Före K finns A och F.</p><p>Med A först finns \\(5!=120\\) ord och med F först finns också \\(5!=120\\) ord. Alltså 240 ord före.</p><p>Bland ord som börjar på K är andra bokstaven N. När K är valt återstår A, F, N, O, T, och före N kommer A och F. Det ger \\(2\\cdot 4!=48\\) ord.</p><p>Nu är vi på 288.</p><p>Tredje bokstaven är O. Efter K och N återstår A, F, O, T. Före O kommer A och F, alltså \\(2\\cdot 3!=12\\) ord. Nu 300.</p><p>Fjärde bokstaven är T. Efter K, N, O återstår A, F, T. Före T kommer A och F, alltså \\(2\\cdot 2!=4\\) ord. Nu 304.</p><p>Femte bokstaven är A. Efter K, N, O, T återstår A och F. Ingen bokstav kommer före A, alltså 0 nya ord.</p><p>Alltså finns 304 ord före <em>KNOTAF</em>. Därför får ordet nummer <strong>305</strong>.</p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_lexikografisk_ordning_av_permutationer",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1653,11 +1766,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi räknar först alla möjliga ordningar och drar sedan bort de förbjudna.</p><p>Totalt antal ordningar av 12 olika ämnen är</p><p>\\[12!.\\]</p><p>Om A och B står bredvid varandra kan de ses som ett block. Då har vi blocket \\(AB\\) eller \\(BA\\) samt de övriga 10 ämnena, alltså totalt 11 objekt att ordna.</p><p>Det ger</p><p>\\[2\\cdot 11!\\]</p><p>förbjudna ordningar.</p><p>Alltså blir antalet tillåtna ordningar</p><p>\\[12!-2\\cdot 11!=11!(12-2)=10\\cdot 11!.\\]</p><p><strong>Svaret är \\(399\\,168\\,000\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_permutationer_med_grannvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(399\\,168\\,000\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1670,10 +1783,11 @@ window.BANKMATF1 = [
     "id": "1.136",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_personer_i_rad",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(720\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1686,10 +1800,11 @@ window.BANKMATF1 = [
     "id": "1.137",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_permutation_med_upprepade_bokstaver",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(60\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1702,11 +1817,11 @@ window.BANKMATF1 = [
     "id": "1.138",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_tva_personer_ska_sta_tillsammans",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(10\\,080\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1719,10 +1834,11 @@ window.BANKMATF1 = [
     "id": "1.152",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_cirkular_placering_introduktion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(120\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1735,11 +1851,11 @@ window.BANKMATF1 = [
     "id": "1.153",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_med_tva_block",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(8640\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1752,10 +1868,11 @@ window.BANKMATF1 = [
     "id": "1.41",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_gruppval_med_minst_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "371",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1768,11 +1885,11 @@ window.BANKMATF1 = [
     "id": "1.42",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordela_personer_i_olika_grupper",
+    "svarstyp": "numeriskt",
+    "rättSvar": "27\\,720",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1785,10 +1902,11 @@ window.BANKMATF1 = [
     "id": "1.43",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kombinatoriskt_bevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -1801,11 +1919,11 @@ window.BANKMATF1 = [
     "id": "1.48",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kombinationer_med_minst_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(945\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1818,10 +1936,11 @@ window.BANKMATF1 = [
     "id": "1.79",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_sensorer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "495",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1834,10 +1953,11 @@ window.BANKMATF1 = [
     "id": "1.80",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_toppings",
+    "svarstyp": "numeriskt",
+    "rättSvar": "84",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1850,10 +1970,11 @@ window.BANKMATF1 = [
     "id": "1.81",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kommitte_med_minstvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4410",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1866,10 +1987,11 @@ window.BANKMATF1 = [
     "id": "1.82",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_lag_med_positionskategori",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1485",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1882,10 +2004,11 @@ window.BANKMATF1 = [
     "id": "1.83",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_minst_en_fran_varje_kategori",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1940",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1898,10 +2021,11 @@ window.BANKMATF1 = [
     "id": "1.84",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_minst_en_av_tva_specialister",
+    "svarstyp": "numeriskt",
+    "rättSvar": "540",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1914,10 +2038,11 @@ window.BANKMATF1 = [
     "id": "1.85",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_oforenligt_par",
+    "svarstyp": "numeriskt",
+    "rättSvar": "182",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1930,10 +2055,11 @@ window.BANKMATF1 = [
     "id": "1.86",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_flera_kategorier_med_minstvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "805",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1946,10 +2072,11 @@ window.BANKMATF1 = [
     "id": "1.87",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_tva_representanter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "36",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1962,10 +2089,11 @@ window.BANKMATF1 = [
     "id": "1.88",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_exakt_antal_erfarna",
+    "svarstyp": "numeriskt",
+    "rättSvar": "336",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1978,10 +2106,11 @@ window.BANKMATF1 = [
     "id": "1.89",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_hogst_en_fran_kategori",
+    "svarstyp": "numeriskt",
+    "rättSvar": "196",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -1994,10 +2123,11 @@ window.BANKMATF1 = [
     "id": "1.90",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_lika_manga_fran_tva_kategorier",
+    "svarstyp": "numeriskt",
+    "rättSvar": "6720",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2010,10 +2140,11 @@ window.BANKMATF1 = [
     "id": "1.91",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_laguttagning_med_tre_positionstyper",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2000\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2026,10 +2157,11 @@ window.BANKMATF1 = [
     "id": "1.92",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_exakt_en_av_tva_personer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "420",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2042,10 +2174,11 @@ window.BANKMATF1 = [
     "id": "1.93",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kortaste_vagar_i_rutnat",
+    "svarstyp": "numeriskt",
+    "rättSvar": "56",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2058,10 +2191,11 @@ window.BANKMATF1 = [
     "id": "1.94",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_obligatoriska_uppgifter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "20",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2074,10 +2208,11 @@ window.BANKMATF1 = [
     "s": "<p>Här spelar ordningen ingen roll. Vi ska alltså välja 3 elever av 11, vilket är en kombination:</p><p>\\[\\binom{11}{3}=\\frac{11!}{3!\\,8!}=165.\\]</p><p><strong>Det finns 165 möjliga elevråd.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_grupp_utan_ordning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(165\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2090,11 +2225,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>a)</strong> Låt \\(x_1,x_2,x_3,x_4\\) vara antalet burkar av de fyra smakerna. Då söker vi antalet heltalslösningar till</p><p>\\[x_1+x_2+x_3+x_4=12\\]</p><p>där varje \\(x_i\\) är 0 eller positivt.</p><p>Ett sätt att räkna är att tänka de 12 burkarna som 12 markeringar och skilja de fyra smakerna åt med tre streck. Vi ordnar alltså 12 markeringar och 3 streck i en rad. Det räcker att välja vilka 3 av de 15 platserna som ska innehålla streck:</p><p>\\[\\binom{15}{3}=455.\\]</p><p><strong>b)</strong> Om minst en burk av varje smak ska väljas lägger vi först undan en burk av varje smak. Då återstår 8 burkar att fördela fritt mellan de fyra smakerna.</p><p>Det motsvarar 8 markeringar och 3 streck, alltså</p><p>\\[\\binom{11}{3}=165.\\]</p><p><strong>Svar:</strong> a) 455 sätt, b) 165 sätt.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kombinationer_med_upprepning_och_villkor",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -2107,10 +2242,11 @@ window.BANKMATF1 = [
     "id": "1.139",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_arbetsgrupp",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(715\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2123,10 +2259,11 @@ window.BANKMATF1 = [
     "id": "1.140",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_glasskulor_utan_ordning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(84\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2139,10 +2276,11 @@ window.BANKMATF1 = [
     "id": "1.141",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_grupp_med_exakt_fordelning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1470\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2155,10 +2293,11 @@ window.BANKMATF1 = [
     "id": "1.142",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_grupp_med_minst_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(381\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2171,10 +2310,11 @@ window.BANKMATF1 = [
     "id": "1.154",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kortval",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\,598\\,960\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2187,10 +2327,11 @@ window.BANKMATF1 = [
     "id": "1.155",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_tva_representanter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(91\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2203,10 +2344,11 @@ window.BANKMATF1 = [
     "id": "1.156",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_val_med_forbjudet_par",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(672\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2219,10 +2361,11 @@ window.BANKMATF1 = [
     "id": "1.187",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_kommitte",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(495\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2235,10 +2378,11 @@ window.BANKMATF1 = [
     "id": "1.188",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_foton",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(720\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2251,10 +2395,11 @@ window.BANKMATF1 = [
     "id": "1.189",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordnade_roller",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(182\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2267,10 +2412,11 @@ window.BANKMATF1 = [
     "id": "1.190",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_toppings_utan_ordning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(56\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2283,10 +2429,11 @@ window.BANKMATF1 = [
     "id": "1.191",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_del_av_en_grupp",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3024\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2299,10 +2446,11 @@ window.BANKMATF1 = [
     "id": "1.192",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_cirkular_permutation",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(362\\,880\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2315,10 +2463,11 @@ window.BANKMATF1 = [
     "id": "1.193",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kommitte_med_konsvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1176\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2331,10 +2480,11 @@ window.BANKMATF1 = [
     "id": "1.194",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_alla_sarskilda_bocker_tillsammans",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(576\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2347,10 +2497,11 @@ window.BANKMATF1 = [
     "id": "1.195",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_tva_personer_inte_intill",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3600\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2363,10 +2514,11 @@ window.BANKMATF1 = [
     "id": "1.196",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_larare_separerade_av_elever",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(14\\,400\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2379,11 +2531,11 @@ window.BANKMATF1 = [
     "id": "1.44",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "binomialsatsen_parameter_i_binomialkoefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2396,10 +2548,11 @@ window.BANKMATF1 = [
     "id": "1.49",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestamma_koefficient_i_binomialutveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": "-48\\,384",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2412,10 +2565,11 @@ window.BANKMATF1 = [
     "id": "1.95",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_i_enkel_binomialutveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": "80",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2428,10 +2582,11 @@ window.BANKMATF1 = [
     "id": "1.96",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_konstant_term_med_negativa_exponenter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1215",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2444,10 +2599,11 @@ window.BANKMATF1 = [
     "id": "1.97",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_tecken_i_binomialkoefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "280",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2460,10 +2616,11 @@ window.BANKMATF1 = [
     "id": "1.98",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestam_parameter_fran_koefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(-2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2476,11 +2633,11 @@ window.BANKMATF1 = [
     "id": "1.99",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "binomialsatsen_konstant_term_avancerad",
+    "svarstyp": "numeriskt",
+    "rättSvar": "672",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2493,10 +2650,11 @@ window.BANKMATF1 = [
     "id": "1.100",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bevis_och_resonemang",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "binomialsatsen_binomial_identitet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -2509,10 +2667,11 @@ window.BANKMATF1 = [
     "id": "1.101",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestam_exponent_fran_koefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(10\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2525,10 +2684,11 @@ window.BANKMATF1 = [
     "s": "<p>En allmän term i utvecklingen av \\((x+2)^5\\) är \\(\\binom{5}{k}x^{5-k}2^k\\).</p><p>För att få \\(x^3\\) måste \\(5-k=3\\), alltså \\(k=2\\).</p><p>Koefficienten blir därför</p><p>\\[\\binom{5}{2}\\cdot 2^2=10\\cdot4=40.\\]</p><p><strong>Koefficienten är 40.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestamma_koefficient_med_binomialsatsen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(40\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2541,11 +2701,11 @@ window.BANKMATF1 = [
     "s": "<p>En allmän term är</p><p>\\[\\binom{6}{k}(2x^2)^{6-k}\\left(\\frac{1}{x}\\rightight)^k=\\binom{6}{k} 2^{6-k}x^{12-3k}.\\]</p><p>Den konstanta termen fås när exponenten på \\(x\\) är 0:</p><p>\\[12-3k=0\\quad\\Rightarrow\\quad k=4.\\]</p><p>Då blir termen</p><p>\\[\\binom{6}{4} 2^{2}=15\\cdot 4=60.\\]</p><p><strong>Den konstanta termen är 60.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "binomialsatsen_konstant_term_i_binomialutveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(60\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2558,10 +2718,11 @@ window.BANKMATF1 = [
     "id": "1.143",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__utveckla_med_binomialsatsen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_utveckla_binom",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\((x+3)^4=x^4+12x^3+54x^2+108x+81\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2574,10 +2735,11 @@ window.BANKMATF1 = [
     "id": "1.144",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestamma_viss_term",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(-560x^4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2590,10 +2752,11 @@ window.BANKMATF1 = [
     "id": "1.157",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_i_enkelt_binom",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(60\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2606,10 +2769,11 @@ window.BANKMATF1 = [
     "id": "1.158",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestam_parameter_fran_koefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2622,10 +2786,11 @@ window.BANKMATF1 = [
     "id": "1.179",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__utveckla_med_binomialsatsen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_utveckla_binom_grad_fem",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(16x^4+96x^3+216x^2+216x+81\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2638,10 +2803,11 @@ window.BANKMATF1 = [
     "id": "1.180",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_framfor_x_kubik",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(-160\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2654,10 +2820,11 @@ window.BANKMATF1 = [
     "id": "1.181",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_i_binomialutveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1215\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2670,10 +2837,11 @@ window.BANKMATF1 = [
     "id": "1.182",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_forsta_termer_i_binomialutveckling",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(1+8x+28x^2+56x^3+\\cdots\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2686,10 +2854,11 @@ window.BANKMATF1 = [
     "id": "1.183",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_mittenterm_i_binomialutveckling",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(70a^4b^4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2702,10 +2871,11 @@ window.BANKMATF1 = [
     "id": "1.184",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_koefficient_med_negativa_potenser",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(40\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2718,10 +2888,11 @@ window.BANKMATF1 = [
     "id": "1.185",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_konstantterm_i_binomialutveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(60\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2734,10 +2905,11 @@ window.BANKMATF1 = [
     "id": "1.186",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "binomialsatsen__bestam_term_eller_koefficient",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "binomialsatsen_bestam_parameter_fran_koefficient",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(-3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2750,10 +2922,11 @@ window.BANKMATF1 = [
     "id": "1.45",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_villkorad_kombinatorisk_sannolikhet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,319",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2766,10 +2939,11 @@ window.BANKMATF1 = [
     "id": "1.50",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_kombinatorisk_sannolikhet_med_flera_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,327",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2782,10 +2956,11 @@ window.BANKMATF1 = [
     "id": "1.102",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__kombinatorisk_sannolikhet",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_tva_sarskilda_personer_i_slumpmassigt_lag",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{2}{15}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2798,10 +2973,11 @@ window.BANKMATF1 = [
     "id": "1.103",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_defekta_komponenter_i_stickprov",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{28}{55}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2814,10 +2990,11 @@ window.BANKMATF1 = [
     "id": "1.104",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_slumpmassig_jury",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{105}{286}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2830,10 +3007,11 @@ window.BANKMATF1 = [
     "id": "1.105",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_kortlek_exakt_tva_hjarter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,274",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2846,10 +3024,11 @@ window.BANKMATF1 = [
     "id": "1.106",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_villkorad_sannolikhet_i_lagurval",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{35}{88}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2862,10 +3041,11 @@ window.BANKMATF1 = [
     "id": "1.107",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_minst_en_av_viss_typ",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{973}{1001}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2878,10 +3058,11 @@ window.BANKMATF1 = [
     "id": "1.108",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__kombinatorisk_sannolikhet",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_tva_personer_bredvid_varandra_i_slumpmassigt_led",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac14",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2894,10 +3075,11 @@ window.BANKMATF1 = [
     "id": "1.109",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_lotteri_exakt_fyra_ratt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,00697",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2910,10 +3092,11 @@ window.BANKMATF1 = [
     "id": "1.110",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_minst_tva_premiumobjekt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,407",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2926,10 +3109,11 @@ window.BANKMATF1 = [
     "s": "<p>Totalt antal sätt att välja 2 kulor av 8 är</p><p>\\[\\binom{8}{2}=28.\\]</p><p>Gynnsamma val är att välja 2 av de 5 röda:</p><p>\\[\\binom{5}{2}=10.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{10}{28}=\\frac{5}{14}.\\]</p><p><strong>Sannolikheten är \\(5/14\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__kombinatorisk_sannolikhet",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_sannolikhet_med_kombinationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(5/14\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2942,10 +3126,11 @@ window.BANKMATF1 = [
     "s": "<p>Från A till B krävs totalt 3 steg åt höger och 2 steg upp, alltså 5 steg.</p><p><strong>a)</strong> Antalet kortaste vägar är antalet sätt att välja vilka 2 av de 5 stegen som ska vara uppsteg:</p><p>\\[\\binom{5}{2}=10.\\]</p><p><strong>b)</strong> Till mittpunkten krävs 2 höger och 1 upp, alltså \\(\\binom{3}{1}=3\\) vägar. Från mittpunkten till B krävs 1 höger och 1 upp, alltså \\(\\binom{2}{1}=2\\) vägar.</p><p>Multiplikationsprincipen ger</p><p>\\[3\\cdot 2=6.\\]</p><p><strong>Det finns 6 sådana vägar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_vagar_i_rutnat",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -2958,10 +3143,11 @@ window.BANKMATF1 = [
     "id": "1.159",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_hypergeometrisk_exakt_en",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac12\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2974,10 +3160,11 @@ window.BANKMATF1 = [
     "id": "1.160",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_minst_en_med_komplement",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,281\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -2990,10 +3177,11 @@ window.BANKMATF1 = [
     "id": "1.167",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_inklusion_exklusion_med_obekant_snitt",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3006,10 +3194,11 @@ window.BANKMATF1 = [
     "id": "1.168",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__rakna_med_mangdoperationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "mangder_venn_de_morgans_lag_for_tre_mangder",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3022,10 +3211,11 @@ window.BANKMATF1 = [
     "id": "1.169",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__grundlaggande_mangdbegrepp",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "mangder_venn_antal_delmangder_och_potensmangd",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3038,11 +3228,11 @@ window.BANKMATF1 = [
     "id": "1.170",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "mangder_venn__tolka_och_representera_mangdoperationer",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "mangder_venn_symmetrisk_differens",
+    "svarstyp": "figur",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3055,10 +3245,11 @@ window.BANKMATF1 = [
     "id": "1.171",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tva_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_med_delbarhet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "140",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3071,10 +3262,11 @@ window.BANKMATF1 = [
     "id": "1.172",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tre_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_for_tre_mangder_med_delbarhet",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3087,10 +3279,11 @@ window.BANKMATF1 = [
     "id": "1.174",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tva_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_tva_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(67\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3103,10 +3296,11 @@ window.BANKMATF1 = [
     "id": "1.175",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_exakt_en_av_tva_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(37\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3119,10 +3313,11 @@ window.BANKMATF1 = [
     "id": "1.176",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_ingen_av_tva_mangder",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(21\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3135,10 +3330,11 @@ window.BANKMATF1 = [
     "id": "1.177",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tva_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_tre_intressen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(92\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3151,10 +3347,11 @@ window.BANKMATF1 = [
     "id": "1.178",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_bestam_okant_snitt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(28\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3167,10 +3364,11 @@ window.BANKMATF1 = [
     "id": "1.205",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__inklusion_exklusion_tva_mangder",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_inklusion_exklusion_i_kursval",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(78\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3183,10 +3381,11 @@ window.BANKMATF1 = [
     "id": "1.206",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_bestam_snitt_fran_total_och_utanfor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(35\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3199,10 +3398,11 @@ window.BANKMATF1 = [
     "id": "1.207",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "additionsprincipen_mangder__additionsprincipen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "additionsprincipen_mangder_exakt_en_och_ingen_fran_tva_mangder",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3215,10 +3415,11 @@ window.BANKMATF1 = [
     "id": "1.173",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_komplementhandelse_vid_urval_utan_aterlaggning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0,341",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3231,10 +3432,11 @@ window.BANKMATF1 = [
     "id": "1.197",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_sannolikhet_bada_jamna_utan_aterlaggning",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3247,10 +3449,11 @@ window.BANKMATF1 = [
     "id": "1.198",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__kombinatorisk_sannolikhet",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_sannolikhet_tva_fran_viss_grupp",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3263,10 +3466,11 @@ window.BANKMATF1 = [
     "id": "1.199",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_alla_roda_utan_aterlaggning",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3279,10 +3483,11 @@ window.BANKMATF1 = [
     "id": "1.200",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__kombinatorisk_sannolikhet",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_sannolikhet_att_bestamd_person_valjs",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3295,10 +3500,11 @@ window.BANKMATF1 = [
     "id": "1.201",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_exakt_tva_roda",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3311,10 +3517,11 @@ window.BANKMATF1 = [
     "id": "1.202",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_minst_en_defekt_via_komplement",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(28,4\\%\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 1,
@@ -3327,10 +3534,11 @@ window.BANKMATF1 = [
     "id": "1.203",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_exakt_en_kvinna_i_urval",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 1,
@@ -3343,10 +3551,11 @@ window.BANKMATF1 = [
     "id": "1.204",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatoriska_fall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_minst_tva_sarskilda_objekt",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3359,10 +3568,11 @@ window.BANKMATF1 = [
     "id": "2.01",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_identifiera_geometrisk_talfoljd",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3375,10 +3585,11 @@ window.BANKMATF1 = [
     "id": "2.02",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_ut_och_berakna_sigma_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3391,10 +3602,11 @@ window.BANKMATF1 = [
     "id": "2.03",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_identifiera_geometriska_foljder_inklusive_negativ_kvot",
+    "svarstyp": "val",
+    "rättSvar": "1, 2 och 3",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3407,10 +3619,11 @@ window.BANKMATF1 = [
     "id": "2.04",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_tolka_geometrisk_sigma_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3423,10 +3636,11 @@ window.BANKMATF1 = [
     "id": "2.05",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_explicit_formel_och_geometrisk_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3439,10 +3653,11 @@ window.BANKMATF1 = [
     "id": "2.06",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_upprepade_insattningar_och_geometrisk_summa",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3455,10 +3670,11 @@ window.BANKMATF1 = [
     "id": "2.07",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_sista_termer_och_aritmetisk_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3471,11 +3687,11 @@ window.BANKMATF1 = [
     "id": "2.08",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_skriva_rekursiv_formel",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_1=2a_n\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3488,10 +3704,14 @@ window.BANKMATF1 = [
     "id": "2.09",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_klassificera_aritmetisk_och_geometrisk_talfoljd",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "A",
+      "C och D"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3504,10 +3724,11 @@ window.BANKMATF1 = [
     "id": "2.55",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__bestam_allman_term",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_hitta_explicit_formel_ur_differensmonster",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3520,10 +3741,11 @@ window.BANKMATF1 = [
     "s": "<p>Varje gång ökar talföljden med 4.</p><p><strong>a)</strong> De tre nästa termerna är \\(23,27,31\\).</p><p><strong>b)</strong> Eftersom differensen är konstant är det en <strong>aritmetisk talföljd</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_bestam_nasta_termer",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3536,10 +3758,11 @@ window.BANKMATF1 = [
     "id": "2.96",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_identifiera_aritmetisk_eller_geometrisk",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3552,10 +3775,11 @@ window.BANKMATF1 = [
     "id": "2.97",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_bestam_foljande_termer_fran_monster",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3568,10 +3792,11 @@ window.BANKMATF1 = [
     "id": "2.98",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__bestam_allman_term",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_explicit_formel_fran_andradifferenser",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_n=n^2+2n\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3584,10 +3809,11 @@ window.BANKMATF1 = [
     "id": "2.123",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__bestam_allman_term",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_explicit_formel_enkel",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_n=3n+1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3600,10 +3826,11 @@ window.BANKMATF1 = [
     "id": "2.10",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_rekursiv_och_explicit_formel_samt_lang_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3616,10 +3843,11 @@ window.BANKMATF1 = [
     "id": "2.11",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_geometrisk_summa_med_brakkvot",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1,494",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3632,11 +3860,11 @@ window.BANKMATF1 = [
     "id": "2.12",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_beskriva_induktionsbevisets_struktur",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3649,10 +3877,11 @@ window.BANKMATF1 = [
     "id": "2.13",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestamma_antal_termer_fran_sista_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2620",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3665,10 +3894,11 @@ window.BANKMATF1 = [
     "s": "<p>Formeln för en aritmetisk talföljd är \\(a_n=a_1+(n-1)d\\).</p><p>Här är \\(a_1=5\\), \\(d=3\\) och \\(n=20\\):</p><p>\\[a_{20}=5+19\\cdot 3=5+57=62.\\]</p><p><strong>Den 20:e termen är 62.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_berakna_n_te_termen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(62\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3681,10 +3911,11 @@ window.BANKMATF1 = [
     "s": "<p>Detta är en aritmetisk talföljd med första termen 4, sista termen 46 och differensen 3.</p><p>Antal termer fås av</p><p>\\[4+(n-1)\\cdot 3=46\\Rightarrow (n-1)\\cdot 3=42\\Rightarrow n=15.\\]</p><p>Summan blir</p><p>\\[S_{15}=\\frac{15(4+46)}{2}=\\frac{15\\cdot 50}{2}=375.\\]</p><p><strong>Summan är 375.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_summa_av_aritmetisk_talfoljd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "375",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3697,10 +3928,11 @@ window.BANKMATF1 = [
     "id": "2.99",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_n_te_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(157\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3713,10 +3945,11 @@ window.BANKMATF1 = [
     "id": "2.100",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_summa_n_termer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(348\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3729,10 +3962,11 @@ window.BANKMATF1 = [
     "id": "2.101",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_antal_termer_fran_summa",
+    "svarstyp": "numeriskt",
+    "rättSvar": "14",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3745,10 +3979,11 @@ window.BANKMATF1 = [
     "id": "2.124",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_forsta_term_fran_senare_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3761,10 +3996,11 @@ window.BANKMATF1 = [
     "id": "2.125",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_tva_okanda_fran_tva_termer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3777,10 +4013,11 @@ window.BANKMATF1 = [
     "id": "2.140",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_senare_term_fran_tva_termer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(59\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3793,11 +4030,11 @@ window.BANKMATF1 = [
     "id": "2.14",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_skriva_rekursion_fran_vaxande_differenser",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_1=a_n+n+1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3810,11 +4047,11 @@ window.BANKMATF1 = [
     "id": "2.15",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_sluten_formel_for_linjar_rekursion_med_konstant_tillskott",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(10\\,909\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3827,11 +4064,11 @@ window.BANKMATF1 = [
     "id": "2.56",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__rekursiva_samband",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_fran_rekursiv_till_explicit_formel",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_n=2^{n+1}-1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3844,11 +4081,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi använder rekursionsformeln steg för steg:</p><p>\\[a_2=a_1+5=2+5=7,\\]</p><p>\\[a_3=a_2+5=7+5=12,\\]</p><p>\\[a_4=a_3+5=12+5=17.\\]</p><p><strong>Alltså är \\(a_2=7\\), \\(a_3=12\\) och \\(a_4=17\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_berakna_nasta_termer_ur_rekursion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(17\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3861,11 +4098,11 @@ window.BANKMATF1 = [
     "id": "2.108",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_berakna_rekursivt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(33\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3878,11 +4115,11 @@ window.BANKMATF1 = [
     "id": "2.109",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_skriva_rekursion_for_aritmetisk_foljd",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_1=a_n+4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3895,11 +4132,11 @@ window.BANKMATF1 = [
     "id": "2.110",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_rekursiv_modell_med_procent_och_tillskott",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3912,11 +4149,11 @@ window.BANKMATF1 = [
     "id": "2.130",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_fibonacci_liknande_rekursion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(13\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3929,11 +4166,11 @@ window.BANKMATF1 = [
     "id": "2.131",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_explicit_formel_fran_linjar_rekursion",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3946,10 +4183,11 @@ window.BANKMATF1 = [
     "id": "2.16",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_omskriva_sigma_summa_till_sluten_form",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(\\frac{n(5n+1)}2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3962,10 +4200,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi sätter in \\(k=1,2,3,4,5\\):</p><p>\\[(2\\cdot1+1)+(2\\cdot2+1)+(2\\cdot3+1)+(2\\cdot4+1)+(2\\cdot5+1)\\]</p><p>\\[=3+5+7+9+11=35.\\]</p><p><strong>Summan är 35.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_ut_sigma_summa",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -3978,10 +4217,11 @@ window.BANKMATF1 = [
     "s": "<p>Termerna är multiplar av 4: \\(4\\cdot1,4\\cdot2,\\ldots,4\\cdot5\\).</p><p>Därför kan summan skrivas</p><p><strong>\\(\\displaystyle \\sum_{k=1}^{5}4k\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_summa_med_sigma_notation",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(\\displaystyle \\sum_{k=1}^{5}4k\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -3994,10 +4234,11 @@ window.BANKMATF1 = [
     "id": "2.105",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_ut_sigma",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4010,10 +4251,11 @@ window.BANKMATF1 = [
     "id": "2.106",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_med_sigma",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(k=1,\\ldots,5\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4026,10 +4268,11 @@ window.BANKMATF1 = [
     "id": "2.107",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_dela_upp_och_berakna_sigma",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(780\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4042,10 +4285,11 @@ window.BANKMATF1 = [
     "id": "2.128",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__tolka_och_beskriv_talfoljd",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "talfoljder_sigma_andra_index",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(25\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4058,10 +4302,11 @@ window.BANKMATF1 = [
     "id": "2.129",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_geometrisk_summa_med_sigma",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(21,64\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4074,10 +4319,11 @@ window.BANKMATF1 = [
     "id": "2.17",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_upprepad_medicindos_som_geometrisk_summa",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4090,10 +4336,11 @@ window.BANKMATF1 = [
     "id": "2.18",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestamma_dos_fran_malvarde",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(208,6\\text{ mg}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4106,10 +4353,11 @@ window.BANKMATF1 = [
     "s": "<p>Formeln är \\(a_n=a_1\\cdot k^{n-1}\\).</p><p>\\[a_8=3\\cdot 2^{7}=3\\cdot 128=384.\\]</p><p><strong>Den 8:e termen är 384.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestamma_n_te_term_i_geometrisk_talfoljd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(384\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4122,10 +4370,11 @@ window.BANKMATF1 = [
     "s": "<p>Här är första termen \\(a_1=2\\) och kvoten \\(k=3\\).</p><p>Summan av de sex första termerna blir</p><p>\\[S_6=\\frac{a_1(k^6-1)}{k-1}=\\frac{2(3^6-1)}{3-1}=3^6-1=729-1=728.\\]</p><p><strong>Summan är 728.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_summa_av_geometrisk_talfoljd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "728",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4138,10 +4387,11 @@ window.BANKMATF1 = [
     "id": "2.102",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_n_te_term_geometrisk",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1,25\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4154,10 +4404,11 @@ window.BANKMATF1 = [
     "id": "2.103",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_geometrisk_summa",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(155\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4170,10 +4421,11 @@ window.BANKMATF1 = [
     "id": "2.104",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_upprepad_procentuell_minskning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4186,10 +4438,11 @@ window.BANKMATF1 = [
     "id": "2.126",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_kvot",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4202,10 +4455,11 @@ window.BANKMATF1 = [
     "id": "2.127",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_summa_till_oandlighet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(16\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4218,10 +4472,11 @@ window.BANKMATF1 = [
     "id": "2.139",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_tidigare_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4234,10 +4489,11 @@ window.BANKMATF1 = [
     "id": "2.181",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_aritmetisk_foljd_bestam_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(83\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4250,10 +4506,11 @@ window.BANKMATF1 = [
     "id": "2.182",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_summa_aritmetisk_foljd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1455\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4266,10 +4523,11 @@ window.BANKMATF1 = [
     "id": "2.183",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_geometrisk_foljd_bestam_term",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(384\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4282,10 +4540,11 @@ window.BANKMATF1 = [
     "id": "2.184",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_andlig_geometrisk_summa",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac{255}{128}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4298,10 +4557,11 @@ window.BANKMATF1 = [
     "id": "2.185",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__aritmetisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_identifiera_foljdtyp_och_kvot",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4314,10 +4574,11 @@ window.BANKMATF1 = [
     "id": "2.186",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__jamfor_aritmetisk_och_geometrisk",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_sittplatser_i_vaxande_rader",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1050\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4330,10 +4591,11 @@ window.BANKMATF1 = [
     "id": "2.187",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "aritmetiska_geometriska__geometrisk_summa",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_oandlig_geometrisk_summa_i_studsmodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(68\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4346,10 +4608,11 @@ window.BANKMATF1 = [
     "id": "2.188",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "aritmetiska_geometriska__geometrisk_talfoljd",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "aritmetiska_geometriska_bestam_antal_termer_fran_geometrisk_tillvaxt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "9",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4362,10 +4625,11 @@ window.BANKMATF1 = [
     "id": "2.19",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_bestamma_restklass",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4378,10 +4642,11 @@ window.BANKMATF1 = [
     "id": "2.20",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_forenkla_produkt_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4394,10 +4659,11 @@ window.BANKMATF1 = [
     "id": "2.21",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "kongruens_ge_exempel_pa_kongruenta_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4410,10 +4676,11 @@ window.BANKMATF1 = [
     "id": "2.22",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_multiplikation_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4426,10 +4693,11 @@ window.BANKMATF1 = [
     "id": "2.23",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_rest_vid_division",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4442,10 +4710,11 @@ window.BANKMATF1 = [
     "id": "2.24",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_veckodag_med_modulo_7",
+    "svarstyp": "val",
+    "rättSvar": "måndag",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4458,10 +4727,11 @@ window.BANKMATF1 = [
     "id": "2.25",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "kongruens_tolka_kongruensnotation",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4474,10 +4744,11 @@ window.BANKMATF1 = [
     "s": "<p>\\(58=56+2=8\\cdot 7+2\\).</p><p>Resten är alltså 2. Med kongruensnotation skrivs detta</p><p><strong>\\(58\\equiv 2\\pmod 7\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_enkel_kongruens",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4490,10 +4761,11 @@ window.BANKMATF1 = [
     "id": "2.87",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_bestam_restklass",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4506,10 +4778,11 @@ window.BANKMATF1 = [
     "id": "2.88",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "kongruens_kongruenta_eller_inte",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4522,10 +4795,11 @@ window.BANKMATF1 = [
     "id": "2.89",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_ge_representant_i_restklass",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4538,10 +4812,11 @@ window.BANKMATF1 = [
     "id": "2.118",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_skriva_flera_representanter",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(-4,2,8\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4554,10 +4829,11 @@ window.BANKMATF1 = [
     "id": "2.26",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_klockaritmetik",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4570,10 +4846,11 @@ window.BANKMATF1 = [
     "id": "2.27",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_blandad_kongruensberakning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4586,10 +4863,11 @@ window.BANKMATF1 = [
     "id": "2.28",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_bestamma_mojliga_moduler_fran_differens",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(n=1,5,7,35\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4602,10 +4880,11 @@ window.BANKMATF1 = [
     "id": "2.29",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_flera_modularitetsberakningar_med_potenser",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4618,10 +4897,11 @@ window.BANKMATF1 = [
     "id": "2.30",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_bestamma_slutsiffra_med_modularitet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(7^2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4634,10 +4914,11 @@ window.BANKMATF1 = [
     "id": "2.31",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_stor_veckodagsberakning_modulo_7",
+    "svarstyp": "val",
+    "rättSvar": "lördag",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4650,10 +4931,11 @@ window.BANKMATF1 = [
     "id": "2.58",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_veckodag_med_stor_exponent",
+    "svarstyp": "val",
+    "rättSvar": "fredag",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4666,10 +4948,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt \\(N\\) vara antalet deltagare. Villkoren ger</p><p>\\[N\\equiv 1\\pmod 4,\\quad N\\equiv 1\\pmod 8,\\quad N\\equiv -1\\pmod 3,\\quad N\\equiv -1\\pmod 6,\\quad N\\equiv -1\\pmod 9,\\quad N\\equiv 0\\pmod 5.\\]</p><p>Villkoren modulo 4 och 8 sammanfattas av det starkaste, alltså \\(N\\equiv 1\\pmod 8\\). På samma sätt sammanfattas villkoren modulo 3, 6 och 9 av</p><p>\\[N\\equiv -1\\pmod{18},\\qquad\\text{det vill säga}\\qquad N\\equiv 17\\pmod{18}.\\]</p><p>Kvar är tre kongruenser:</p><p>\\[N\\equiv 1\\pmod 8,\\qquad N\\equiv 17\\pmod{18},\\qquad N\\equiv 0\\pmod 5.\\]</p><p>Från den sista är \\(N=5m\\). Insatt i den första ger \\(5m\\equiv 1\\pmod 8\\), och eftersom \\(5\\cdot 5=25\\equiv 1\\pmod 8\\) är 5 sin egen invers modulo 8. Multiplikation med 5 ger</p><p>\\[m\\equiv 5\\pmod 8,\\qquad\\text{alltså}\\qquad N\\equiv 25\\pmod{40}.\\]</p><p>Skriv \\(N=40k+25\\) och sätt in i den andra kongruensen:</p><p>\\[40k+25\\equiv 17\\pmod{18}\\Rightarrow 4k\\equiv 10\\pmod{18}\\Rightarrow 2k\\equiv 5\\pmod 9.\\]</p><p>Eftersom \\(2\\cdot 5=10\\equiv 1\\pmod 9\\) är 5 invers till 2 modulo 9, och</p><p>\\[k\\equiv 25\\equiv 7\\pmod 9.\\]</p><p>Med \\(k=9j+7\\) blir</p><p>\\[N=40(9j+7)+25=360j+305.\\]</p><p>Deltagarna är 10 färre än de anställda, så \\(N\\) ska ligga mellan 490 och 790. Det ger \\(j=1\\) och</p><p>\\[N=665.\\]</p><p>Kontroll: \\(665=83\\cdot 8+1\\), \\(665=36\\cdot 18+17\\) och \\(665=133\\cdot 5\\). Antalet anställda blir</p><p><strong>\\[665+10=675.\\]</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_kongruenser_med_flera_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(675\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4682,10 +4965,11 @@ window.BANKMATF1 = [
     "id": "2.94",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_klocka_modulo_12",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -4698,10 +4982,11 @@ window.BANKMATF1 = [
     "id": "2.95",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_veckodag_med_exponent",
+    "svarstyp": "val",
+    "rättSvar": "fredag",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4714,10 +4999,11 @@ window.BANKMATF1 = [
     "id": "2.121",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__grundlaggande_kongruensrakning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_slutsiffra",
+    "svarstyp": "numeriskt",
+    "rättSvar": "6",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4730,10 +5016,11 @@ window.BANKMATF1 = [
     "id": "2.122",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_tva_restvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(7\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4746,11 +5033,11 @@ window.BANKMATF1 = [
     "id": "2.32",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__linjara_kongruenser",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "kongruens_losa_simultana_kongruenser",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(32\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4763,10 +5050,11 @@ window.BANKMATF1 = [
     "id": "2.57",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_stor_exponent_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(6\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4779,10 +5067,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Metod:</strong> Vi arbetar modulo 5, så vi ersätter först faktorerna med deras rester vid division med 5:</p><p>\\[17\\equiv2\\pmod5,\\qquad23\\equiv3\\pmod5.\\]</p><p>Då får produkten samma rest som</p><p>\\[2\\cdot3=6\\equiv1\\pmod5.\\]</p><p>Alltså är resten <strong>1</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_forenkla_modulouttryck",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4795,10 +5084,11 @@ window.BANKMATF1 = [
     "id": "2.90",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_summa_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4811,10 +5101,11 @@ window.BANKMATF1 = [
     "id": "2.91",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_potens_modulo_med_kort_period",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4827,10 +5118,11 @@ window.BANKMATF1 = [
     "id": "2.92",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_produkt_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(4\\pmod7\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4843,10 +5135,11 @@ window.BANKMATF1 = [
     "id": "2.93",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_stor_exponent_med_cykel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(7^3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4859,10 +5152,11 @@ window.BANKMATF1 = [
     "id": "2.119",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_subtraktion_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4875,10 +5169,11 @@ window.BANKMATF1 = [
     "id": "2.120",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_potenssumma_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "0",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4891,10 +5186,11 @@ window.BANKMATF1 = [
     "id": "2.137",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_negativa_tal_modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4907,10 +5203,11 @@ window.BANKMATF1 = [
     "id": "2.195",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_bestam_rest",
+    "svarstyp": "numeriskt",
+    "rättSvar": "11",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4923,10 +5220,11 @@ window.BANKMATF1 = [
     "id": "2.196",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_addition_modulo_nio",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4939,10 +5237,11 @@ window.BANKMATF1 = [
     "id": "2.197",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_potens_modulo_fem",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4955,10 +5254,11 @@ window.BANKMATF1 = [
     "id": "2.198",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_veckodag_med_modulo_sju",
+    "svarstyp": "val",
+    "rättSvar": "torsdag",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4971,10 +5271,11 @@ window.BANKMATF1 = [
     "id": "2.199",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__linjara_kongruenser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_losa_linjar_kongruens",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(k\\in\\mathbb Z\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -4987,10 +5288,11 @@ window.BANKMATF1 = [
     "id": "2.200",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kongruens__potenser_och_restmonster",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kongruens_sista_tva_siffror_med_potenscykel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "01",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5003,11 +5305,11 @@ window.BANKMATF1 = [
     "id": "2.33",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__bevis_med_delbarhet",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "delbarhet_bevisa_delbarhet_med_kongruens",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5020,10 +5322,11 @@ window.BANKMATF1 = [
     "id": "2.34",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_omvandla_fran_bas_10_till_annan_bas",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(91_{10}=1123_4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5036,10 +5339,11 @@ window.BANKMATF1 = [
     "id": "2.53",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_omvandla_fran_annan_talbas_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5052,10 +5356,11 @@ window.BANKMATF1 = [
     "id": "2.54",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_omvandla_fran_bas_tio_till_bas_tre",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5068,10 +5373,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi använder platsvärdena i bas 2:</p><p>\\[101101_2=1\\cdot 2^5+0\\cdot 2^4+1\\cdot 2^3+1\\cdot 2^2+0\\cdot 2^1+1\\cdot 2^0.\\]</p><p>\\[=32+8+4+1=45.\\]</p><p><strong>Svaret är \\(45_{10}\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_omvandla_fran_bas_tva",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5084,10 +5390,11 @@ window.BANKMATF1 = [
     "id": "2.83",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_fyra_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5100,10 +5407,11 @@ window.BANKMATF1 = [
     "id": "2.84",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_tio_till_bas_tva",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5116,10 +5424,11 @@ window.BANKMATF1 = [
     "id": "2.85",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_atta_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5132,10 +5441,11 @@ window.BANKMATF1 = [
     "id": "2.86",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__rakning_i_andra_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_addition_i_bas_fem",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5148,10 +5458,11 @@ window.BANKMATF1 = [
     "id": "2.116",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_sex_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5164,11 +5475,11 @@ window.BANKMATF1 = [
     "id": "2.117",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__positionssystem_och_talbaser",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "talbaser_hitta_okand_siffra_i_talbas",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5181,10 +5492,11 @@ window.BANKMATF1 = [
     "id": "2.138",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_tio_till_bas_fem",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5197,10 +5509,11 @@ window.BANKMATF1 = [
     "id": "2.35",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare_i_kontext",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(7\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5213,10 +5526,11 @@ window.BANKMATF1 = [
     "s": "<p>Primtalsfaktorisera båda talen:</p><p>\\[84=2^2\\cdot 3\\cdot 7,\\qquad 126=2\\cdot 3^2\\cdot 7.\\]</p><p>Gemensamma faktorer med minsta exponent är \\(2\\), \\(3\\) och \\(7\\).</p><p>\\[\\mathrm{sgd}(84,126)=2\\cdot 3\\cdot 7=42.\\]</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(42\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5229,10 +5543,11 @@ window.BANKMATF1 = [
     "s": "<p>Summan av siffrorna är \\(6+9+3=18\\).</p><p>Därför är 693 delbart med 3 och också med 9.</p><p>För 11 kan vi använda regeln med växlande summa:</p><p>\\[(6+3)-9=0.\\]</p><p>Eftersom resultatet är delbart med 11 är även 693 delbart med 11.</p><p><strong>Alltså är 693 delbart med 3, 9 och 11.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__delbarhetsregler_och_villkor",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "delbarhet_delbarhetskontroll",
+    "svarstyp": "val",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5245,10 +5560,11 @@ window.BANKMATF1 = [
     "id": "2.79",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__primtal_och_primtalsfaktorisering",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_primtalsfaktorisering",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5261,10 +5577,11 @@ window.BANKMATF1 = [
     "id": "2.80",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(84\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5277,10 +5594,11 @@ window.BANKMATF1 = [
     "id": "2.81",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__delbarhetsregler_och_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_gemensamma_multipel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(72\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5293,10 +5611,11 @@ window.BANKMATF1 = [
     "id": "2.82",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_fordela_lika_stora_paket_med_sgd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -5309,10 +5628,11 @@ window.BANKMATF1 = [
     "id": "2.114",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_euklides_algoritm",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5325,11 +5645,11 @@ window.BANKMATF1 = [
     "id": "2.115",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "delbarhet_linjar_kombination_av_sgd",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5342,11 +5662,11 @@ window.BANKMATF1 = [
     "id": "2.136",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__bevis_med_delbarhet",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "delbarhet_delbarhet_med_algebra",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5359,11 +5679,11 @@ window.BANKMATF1 = [
     "id": "2.36",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_geometrisk_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5376,11 +5696,11 @@ window.BANKMATF1 = [
     "id": "2.37",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_av_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5393,11 +5713,11 @@ window.BANKMATF1 = [
     "id": "2.38",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_aritmetisk_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5410,11 +5730,11 @@ window.BANKMATF1 = [
     "id": "2.39",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_udda_aritmetisk_serie",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5427,11 +5747,11 @@ window.BANKMATF1 = [
     "id": "2.40",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_summan_1_till_n",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5444,11 +5764,11 @@ window.BANKMATF1 = [
     "id": "2.41",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_sigmaformel",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5461,11 +5781,11 @@ window.BANKMATF1 = [
     "id": "2.42",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_forklara_induktionsbevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5478,11 +5798,11 @@ window.BANKMATF1 = [
     "id": "2.43",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_explicit_form_av_rekursiv_foljd",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5495,11 +5815,11 @@ window.BANKMATF1 = [
     "id": "2.44",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_av_exponentialdelbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5512,11 +5832,11 @@ window.BANKMATF1 = [
     "id": "2.45",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_kubsumma",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5529,11 +5849,11 @@ window.BANKMATF1 = [
     "id": "2.46",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_fibonacci_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5546,11 +5866,11 @@ window.BANKMATF1 = [
     "id": "2.47",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_for_linjar_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5563,11 +5883,11 @@ window.BANKMATF1 = [
     "id": "2.48",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_av_olikhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5580,11 +5900,11 @@ window.BANKMATF1 = [
     "id": "2.49",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_av_delbarhet_med_faktoruppdelning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5597,11 +5917,11 @@ window.BANKMATF1 = [
     "id": "2.50",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_hitta_fel_i_induktionsbevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5614,11 +5934,11 @@ window.BANKMATF1 = [
     "id": "2.60",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktionsbevis_av_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5631,10 +5951,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Basfall:</strong> För \\(n=1\\) är vänsterledet \\(1\\) och högerledet \\(1^2=1\\). Påståendet stämmer.</p><p><strong>Induktionsantagande:</strong> Anta att</p><p>\\[1+3+5+\\ldots +(2k-1)=k^2.\\]</p><p><strong>Induktionssteg:</strong> För \\(n=k+1\\) får vi</p><p>\\[1+3+\\ldots +(2k-1)+(2(k+1)-1).\\]</p><p>Med induktionsantagandet blir detta</p><p>\\[k^2+(2k+1)=(k+1)^2.\\]</p><p>Därmed gäller formeln också för \\(k+1\\). Alltså är påståendet sant för alla \\(n\\ge 1\\).</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_enkel_induktion_med_tydlig_struktur",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5647,11 +5968,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Basfall:</strong> För \\(n=1\\) är \\(7^2-1=49-1=48\\), alltså delbart med 48.</p><p><strong>Induktionsantagande:</strong> Anta att \\(7^{2k}-1\\) är delbart med 48, alltså att</p><p>\\[7^{2k}-1=48m\\]</p><p>för något heltal \\(m\\).</p><p><strong>Induktionssteg:</strong></p><p>\\[7^{2(k+1)}-1=49\\cdot 7^{2k}-1=48\\cdot 7^{2k}+(7^{2k}-1).\\]</p><p>Den första termen är uppenbart delbar med 48. Den andra termen, \\(7^{2k}-1\\), är delbar med 48 enligt induktionsantagandet. Summan är därför också delbar med 48.</p><p>Alltså gäller påståendet för alla \\(n\\ge 1\\).</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktion_med_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5664,10 +5985,11 @@ window.BANKMATF1 = [
     "id": "2.111",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_induktion_for_aritmetisk_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5680,11 +6002,11 @@ window.BANKMATF1 = [
     "id": "2.112",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktion_for_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5697,10 +6019,11 @@ window.BANKMATF1 = [
     "id": "2.132",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_induktion_kvadratsumma_enkel_identitet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5713,11 +6036,11 @@ window.BANKMATF1 = [
     "id": "2.133",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__induktionsbevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_induktion_geometrisk_summa",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5730,11 +6053,11 @@ window.BANKMATF1 = [
     "id": "2.51",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_motsagelsebevis_av_irrationalitet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5747,11 +6070,11 @@ window.BANKMATF1 = [
     "id": "2.52",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_motsagelsebevis_om_oandligt_manga_primtal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5764,11 +6087,11 @@ window.BANKMATF1 = [
     "id": "2.59",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_euklides_bevis_for_oandligt_manga_primtal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5781,11 +6104,11 @@ window.BANKMATF1 = [
     "s": "<p>Anta motsatsen: att \\(\\sqrt{12}\\) är rationellt. Då kan det skrivas</p><p>\\[\\sqrt{12}=\\frac{a}{b}\\]</p><p>där \\(a\\) och \\(b\\) är heltal utan gemensamma faktorer och \\(b\\ne 0\\).</p><p>Kvadrera:</p><p>\\[12=\\frac{a^2}{b^2}\\Rightarrow a^2=12b^2.\\]</p><p>Då är \\(a^2\\) delbart med 3, alltså är \\(a\\) delbart med 3. Skriv \\(a=3k\\).</p><p>Insättning ger</p><p>\\[9k^2=12b^2\\Rightarrow 3k^2=4b^2.\\]</p><p>Då är \\(b^2\\) delbart med 3, alltså är \\(b\\) också delbart med 3.</p><p>Men då har \\(a\\) och \\(b\\) en gemensam faktor 3, i strid med antagandet att bråket är förkortat. Motsägelse. Alltså är <strong>\\(\\sqrt{12}\\) irrationellt</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_irrationalitetsbevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5798,10 +6121,11 @@ window.BANKMATF1 = [
     "s": "<p>Anta motsatsen: att \\(\\sqrt{2}\\) är rationellt. Då kan det skrivas</p><p>\\[\\sqrt{2}=\\frac{a}{b}\\]</p><p>där \\(a\\) och \\(b\\) är heltal utan gemensamma faktorer och \\(b\\ne 0\\).</p><p>Kvadrera båda leden:</p><p>\\[2=\\frac{a^2}{b^2}\\Rightarrow a^2=2b^2.\\]</p><p>Alltså är \\(a^2\\) jämnt, och då måste även \\(a\\) vara jämnt. Skriv därför \\(a=2k\\).</p><p>Insättning ger</p><p>\\[4k^2=2b^2\\Rightarrow b^2=2k^2.\\]</p><p>Då är även \\(b^2\\) jämnt, alltså är också \\(b\\) jämnt.</p><p>Men då är både \\(a\\) och \\(b\\) jämna, så de har minst faktorn 2 gemensam. Det strider mot att bråket \\(a/b\\) skulle vara förkortat. Detta är en motsägelse.</p><p>Alltså är <strong>\\(\\sqrt{2}\\) irrationellt</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_klassisk_irrationalitetsbevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5814,11 +6138,11 @@ window.BANKMATF1 = [
     "id": "2.113",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_motsagelsebevis_om_jamn_udda",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5831,10 +6155,11 @@ window.BANKMATF1 = [
     "id": "2.134",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_motsagelse_om_minsta_rationella_positiva_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -5847,11 +6172,11 @@ window.BANKMATF1 = [
     "id": "2.135",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_irrationalitet_roten_ur_5",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.141",
@@ -5864,10 +6189,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Idé:</strong> I ett direkt bevis utgår vi från det vi vet och arbetar steg för steg fram till det som ska visas.</p><p>Låt de två jämna heltalen vara \\(a\\) och \\(b\\). Eftersom de är jämna finns heltal \\(m\\) och \\(n\\) sådana att</p><p>\\[a=2m,\\qquad b=2n.\\]</p><p>Då är</p><p>\\[a+b=2m+2n=2(m+n).\\]</p><p>Eftersom \\(m+n\\) är ett heltal är \\(a+b\\) två gånger ett heltal. Därför är <strong>\\(a+b\\) jämnt</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_direkt_bevis_jamna_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.142",
@@ -5880,10 +6206,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt de udda talen vara</p><p>\\[a=2m+1,\\qquad b=2n+1\\]</p><p>där \\(m\\) och \\(n\\) är heltal.</p><p>Då blir</p><p>\\[a+b=(2m+1)+(2n+1)=2m+2n+2=2(m+n+1).\\]</p><p>Uttrycket är alltså två gånger ett heltal. Därför är <strong>summan jämn</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_direkt_bevis_udda_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.143",
@@ -5896,10 +6223,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt \\(x\\) och \\(y\\) vara rationella. Då kan de skrivas</p><p>\\[x=\\frac{a}{b},\\qquad y=\\frac{c}{d}\\]</p><p>där \\(a,b,c,d\\) är heltal och \\(b\\ne0\\), \\(d\\ne0\\).</p><p>Då är</p><p>\\[x+y=\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd}.\\]</p><p>Täljaren \\(ad+bc\\) är ett heltal och nämnaren \\(bd\\ne0\\) är ett heltal. Alltså kan summan skrivas som en kvot av två heltal.</p><p>Därför är <strong>\\(x+y\\) rationellt</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_direkt_bevis_rationella_tal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.144",
@@ -5912,10 +6240,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Kontraposition:</strong> I stället för att visa</p><p>\\[n^2\\text{ jämnt}\\Rightarrow n\\text{ jämnt}\\]</p><p>visar vi det logiskt likvärdiga påståendet</p><p>\\[n\\text{ udda}\\Rightarrow n^2\\text{ udda}.\\]</p><p>Anta därför att \\(n\\) är udda. Då finns ett heltal \\(k\\) sådant att</p><p>\\[n=2k+1.\\]</p><p>Då</p><p>\\[n^2=(2k+1)^2=4k^2+4k+1=2(2k^2+2k)+1.\\]</p><p>Detta är udda. Kontrapositionen är alltså bevisad, och därmed gäller det ursprungliga påståendet: <strong>om \\(n^2\\) är jämnt så är \\(n\\) jämnt</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_kontraposition",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.145",
@@ -5928,10 +6257,11 @@ window.BANKMATF1 = [
     "s": "<p>I ett <strong>direkt bevis</strong> utgår man från antagandena och härleder steg för steg det som ska visas.</p><p>I ett <strong>indirekt bevis</strong> visar man påståendet via ett logiskt likvärdigt eller motsatt resonemang i stället för att gå direkt från antagande till slutsats.</p><p>Två vanliga indirekta metoder är:</p><p>1. <strong>Kontraposition:</strong> för att visa \\(P\\Rightarrow Q\\) visar man i stället \\(\\neg Q\\Rightarrow\\neg P\\).</p><p>2. <strong>Motsägelsebevis:</strong> man antar att det man vill visa är falskt och visar att antagandet leder till en motsägelse.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "bevismetoder_valja_bevismetod",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.146",
@@ -5944,11 +6274,11 @@ window.BANKMATF1 = [
     "s": "<p>Antag att \\(a\\mid b\\). Då finns ett heltal \\(m\\) sådant att</p><p>\\[b=am.\\]</p><p>Antag också att \\(b\\mid c\\). Då finns ett heltal \\(n\\) sådant att</p><p>\\[c=bn.\\]</p><p>Sätt in \\(b=am\\):</p><p>\\[c=(am)n=a(mn).\\]</p><p>Produkten \\(mn\\) är ett heltal. Alltså kan \\(c\\) skrivas som \\(a\\) gånger ett heltal.</p><p>Därför gäller <strong>\\(a\\mid c\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_direkt_bevis_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.147",
@@ -5961,11 +6291,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt \\(n\\) vara udda. Då kan vi skriva</p><p>\\[n=2k+1\\]</p><p>för något heltal \\(k\\).</p><p>Kvadrera:</p><p>\\[n^2=(2k+1)^2=4k^2+4k+1=4k(k+1)+1.\\]</p><p>Två heltal i följd, \\(k\\) och \\(k+1\\), innehåller alltid ett jämnt tal. Därför är \\(k(k+1)\\) jämnt. Skriv \\(k(k+1)=2m\\).</p><p>Då</p><p>\\[n^2=4\\cdot2m+1=8m+1.\\]</p><p>Alltså ger \\(n^2\\) resten <strong>1</strong> vid division med 8.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_direkt_bevis_udda_kvadrat_modulo_8",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.148",
@@ -5978,11 +6308,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi visar kontrapositionen:</p><p><strong>Om \\(n\\) inte är delbart med 3, så är \\(n^2\\) inte delbart med 3.</strong></p><p>Om \\(n\\) inte är delbart med 3 ger det resten 1 eller 2 vid division med 3.</p><p>Fall 1:</p><p>\\[n\\equiv1\\pmod3\\Rightarrow n^2\\equiv1^2=1\\pmod3.\\]</p><p>Fall 2:</p><p>\\[n\\equiv2\\pmod3\\Rightarrow n^2\\equiv2^2=4\\equiv1\\pmod3.\\]</p><p>I båda fallen ger \\(n^2\\) resten 1 och är alltså inte delbart med 3.</p><p>Kontrapositionen är bevisad. Därför gäller det ursprungliga påståendet.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_kontraposition_och_delbarhet",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.149",
@@ -5995,11 +6325,11 @@ window.BANKMATF1 = [
     "s": "<p>Det är smidigare att visa kontrapositionen:</p><p><strong>Om minst ett av talen \\(a\\) och \\(b\\) är jämnt, så är produkten \\(ab\\) jämn.</strong></p><p>Anta till exempel att \\(a\\) är jämnt. Då finns ett heltal \\(k\\) sådant att</p><p>\\[a=2k.\\]</p><p>Då blir</p><p>\\[ab=(2k)b=2(kb).\\]</p><p>Eftersom \\(kb\\) är ett heltal är produkten jämn. Samma resonemang gäller om \\(b\\) är jämnt.</p><p>Alltså är kontrapositionen sann. Därför gäller det ursprungliga påståendet: om \\(ab\\) är udda måste <strong>både \\(a\\) och \\(b\\) vara udda</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__indirekt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_indirekt_bevis_kontraposition_av_produkt",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.150",
@@ -6012,11 +6342,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt de tre heltalen vara</p><p>\\[n,\\qquad n+1,\\qquad n+2.\\]</p><p>För att produkten ska vara delbar med 6 måste den innehålla både en faktor 2 och en faktor 3.</p><p><strong>Faktor 2:</strong> Bland tre på varandra följande heltal finns alltid minst ett jämnt tal. Produkten är därför delbar med 2.</p><p><strong>Faktor 3:</strong> Tre på varandra följande heltal ger vid division med 3 resterna 0, 1 och 2 i någon ordning. Därför är exakt ett av dem delbart med 3. Produkten är alltså delbar med 3.</p><p>Eftersom 2 och 3 saknar gemensamma primfaktorer är produkten delbar med</p><p>\\[2\\cdot3=6.\\]</p><p>Alltså är <strong>\\(n(n+1)(n+2)\\) alltid delbart med 6</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "bevismetoder__direkt_bevis",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "bevismetoder_direkt_bevis_tre_konsekutiva_heltal",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6029,10 +6359,11 @@ window.BANKMATF1 = [
     "id": "2.151",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_addition_direkt_i_annan_bas",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6045,11 +6376,11 @@ window.BANKMATF1 = [
     "id": "2.152",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__positionssystem_och_talbaser",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "talbaser_bestamma_okand_bas",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(120\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6062,10 +6393,11 @@ window.BANKMATF1 = [
     "id": "2.165",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_tio_till_bas_fem",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6078,10 +6410,11 @@ window.BANKMATF1 = [
     "id": "2.166",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_binart_tal_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6094,10 +6427,11 @@ window.BANKMATF1 = [
     "id": "2.167",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_fem_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6110,10 +6444,11 @@ window.BANKMATF1 = [
     "id": "2.168",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_tio_till_bas_tva",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6126,10 +6461,11 @@ window.BANKMATF1 = [
     "id": "2.169",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_atta_till_bas_tio",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6142,10 +6478,11 @@ window.BANKMATF1 = [
     "id": "2.170",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__rakning_i_andra_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_addition_i_bas_fem",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6158,11 +6495,11 @@ window.BANKMATF1 = [
     "id": "2.171",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__positionssystem_och_talbaser",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "talbaser_okand_siffra_i_talbas",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6175,11 +6512,11 @@ window.BANKMATF1 = [
     "id": "2.172",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__positionssystem_och_talbaser",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "talbaser_bestam_okand_bas",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(6\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6192,10 +6529,11 @@ window.BANKMATF1 = [
     "id": "2.205",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__omvandling_mellan_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_bas_fem_till_bas_tio_ny_variant",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6208,10 +6546,11 @@ window.BANKMATF1 = [
     "id": "2.206",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talbaser__rakning_i_andra_talbaser",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talbaser_subtraktion_i_bas_sex",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6224,10 +6563,11 @@ window.BANKMATF1 = [
     "id": "2.153",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_teleskopsumma",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6240,10 +6580,11 @@ window.BANKMATF1 = [
     "id": "2.154",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_summa_med_forskjutet_startindex",
+    "svarstyp": "numeriskt",
+    "rättSvar": "140",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6256,10 +6597,11 @@ window.BANKMATF1 = [
     "id": "2.189",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_berakna_summa_med_sigma",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(50\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6272,10 +6614,11 @@ window.BANKMATF1 = [
     "id": "2.190",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_skriva_aritmetisk_summa_med_sigma",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(\\sum_{k=1}^{10}(3k+1)\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6288,10 +6631,11 @@ window.BANKMATF1 = [
     "id": "2.191",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__bestam_allman_term",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_bestam_termer_fran_explicit_formel",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(2,11,26,47,\\ldots\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6304,10 +6648,11 @@ window.BANKMATF1 = [
     "id": "2.192",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_bestam_parameter_i_sigma_summa",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6320,10 +6665,11 @@ window.BANKMATF1 = [
     "id": "2.193",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_summa_av_udda_tal_med_summaformel",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6336,10 +6682,11 @@ window.BANKMATF1 = [
     "id": "2.194",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "talfoljder_sigma__sigma_notation_och_summor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "talfoljder_sigma_summa_av_de_forsta_heltalen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(210\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6352,11 +6699,11 @@ window.BANKMATF1 = [
     "id": "2.155",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__bevis_med_delbarhet",
-    "formaga": [
-      "resonemang",
-      "begrepp"
-    ]
+    "familj": "delbarhet_delbarhet_med_sammansatt_modul",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6369,10 +6716,11 @@ window.BANKMATF1 = [
     "id": "2.157",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__primtal_och_primtalsfaktorisering",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_primtalsfaktorisering",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6385,10 +6733,11 @@ window.BANKMATF1 = [
     "id": "2.158",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare_med_euklides_algoritm",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(84\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6401,10 +6750,11 @@ window.BANKMATF1 = [
     "id": "2.159",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_gemensamma_multipel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(252\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6417,10 +6767,11 @@ window.BANKMATF1 = [
     "id": "2.160",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__delbarhetsregler_och_villkor",
-    "formaga": [
-      "resonemang"
-    ]
+    "familj": "delbarhet_delbarhetsregler",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6433,10 +6784,11 @@ window.BANKMATF1 = [
     "id": "2.161",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_identiska_paket_med_sgd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(7\\text{ blå}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6449,10 +6801,11 @@ window.BANKMATF1 = [
     "id": "2.162",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__delbarhetsregler_och_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_faktor_for_delbarhet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(14\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6465,10 +6818,11 @@ window.BANKMATF1 = [
     "id": "2.163",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_kvadratiska_platta_med_sgd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(126\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6481,10 +6835,11 @@ window.BANKMATF1 = [
     "id": "2.164",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_antal_positiva_delare",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(30\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6497,10 +6852,11 @@ window.BANKMATF1 = [
     "id": "2.207",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare_ny_variant",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(315\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6513,10 +6869,11 @@ window.BANKMATF1 = [
     "id": "2.208",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_gemensamma_multipel_i_tidsschema",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6529,11 +6886,11 @@ window.BANKMATF1 = [
     "id": "2.156",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_sluten_formel_for_rekursion_och_induktionsbevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6546,11 +6903,11 @@ window.BANKMATF1 = [
     "id": "2.173",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_berakna_term_ur_rekursion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(-9\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6563,11 +6920,11 @@ window.BANKMATF1 = [
     "id": "2.174",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_geometrisk_rekursion",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(4,\\ 16,\\ 64,\\ 256,\\ 1024\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6580,11 +6937,11 @@ window.BANKMATF1 = [
     "id": "2.175",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_skriva_rekursion_for_aritmetisk_foljd",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_1=12,\\qquad a_{n+1}=a_n-3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6597,11 +6954,11 @@ window.BANKMATF1 = [
     "id": "2.176",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_skriva_rekursion_for_geometrisk_foljd",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_1=2,\\qquad a_{n+1}=3a_n\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6614,11 +6971,11 @@ window.BANKMATF1 = [
     "id": "2.177",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_rekursion_av_andra_ordningen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(70\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6631,11 +6988,11 @@ window.BANKMATF1 = [
     "id": "2.178",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_rekursiv_ekonomisk_modell",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 2,
@@ -6648,11 +7005,11 @@ window.BANKMATF1 = [
     "id": "2.179",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_explicit_formel_fran_rekursion_med_jamviktsvarde",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(T_n=20+60\\cdot0,75^n\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6665,11 +7022,11 @@ window.BANKMATF1 = [
     "id": "2.180",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_explicit_formel_fran_linjar_rekursion",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a_n=2+3^n\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6682,11 +7039,11 @@ window.BANKMATF1 = [
     "id": "2.201",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_procentuell_minskning_rekursivt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(72,9\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6699,11 +7056,11 @@ window.BANKMATF1 = [
     "id": "2.202",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__berakna_och_tolka_rekursiv_talfoljd",
-    "formaga": [
-      "procedur",
-      "begrepp"
-    ]
+    "familj": "rekursiva_talfoljder_rekursion_med_n_beroende_tillskott",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(22\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6716,11 +7073,11 @@ window.BANKMATF1 = [
     "id": "2.203",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_rekursion_med_jamviktsvarde_i_dosmodell",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(M_n=50(1-0,8^n)\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 2,
@@ -6733,11 +7090,11 @@ window.BANKMATF1 = [
     "id": "2.204",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "rekursiva_talfoljder__fran_rekursiv_till_explicit_form",
-    "formaga": [
-      "problemlösning",
-      "resonemang"
-    ]
+    "familj": "rekursiva_talfoljder_rekursion_med_gransvarde",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6750,10 +7107,11 @@ window.BANKMATF1 = [
     "id": "3.01",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__upprepad_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_tva_ganger",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6766,10 +7124,11 @@ window.BANKMATF1 = [
     "id": "3.02",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_av_x_e_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6782,10 +7141,11 @@ window.BANKMATF1 = [
     "id": "3.03",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_logaritm",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6798,10 +7158,11 @@ window.BANKMATF1 = [
     "id": "3.14",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_trigonometrisk_funktion",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6814,10 +7175,11 @@ window.BANKMATF1 = [
     "id": "3.15",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_med_logaritm",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6830,10 +7192,11 @@ window.BANKMATF1 = [
     "s": "<p>Välj \\(u=x\\) och \\(dv=e^x\\,dx\\). Då är \\(du=dx\\) och \\(v=e^x\\).</p><p>Med partiell integration får vi</p><p>\\[\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=xe^x-e^x+C.\\]</p><p><strong>Svaret är \\((x-1)e^x+C\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_med_exponentialfunktion",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6846,10 +7209,11 @@ window.BANKMATF1 = [
     "id": "3.30",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_x_ganger_exponential",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6862,10 +7226,11 @@ window.BANKMATF1 = [
     "id": "3.31",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_x_sin",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6878,10 +7243,11 @@ window.BANKMATF1 = [
     "id": "3.32",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_ln_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6894,10 +7260,11 @@ window.BANKMATF1 = [
     "id": "3.33",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__bestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_bestamd_integral_med_partiell_integration",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -6910,10 +7277,11 @@ window.BANKMATF1 = [
     "id": "3.34",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_tva_steg_partiell_integration",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6926,10 +7294,11 @@ window.BANKMATF1 = [
     "id": "3.55",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_x_cos_2x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6942,10 +7311,11 @@ window.BANKMATF1 = [
     "id": "3.56",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_x_e_minus_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6958,10 +7328,11 @@ window.BANKMATF1 = [
     "id": "3.57",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_x_ln_x_bestamd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(\\frac{e^2+1}{4}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -6974,10 +7345,11 @@ window.BANKMATF1 = [
     "id": "3.58",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_x2_sin_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -6990,10 +7362,11 @@ window.BANKMATF1 = [
     "id": "3.76",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_x_cos_x_bestamd",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(-2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7006,11 +7379,11 @@ window.BANKMATF1 = [
     "id": "3.04",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_konvergens_for_generaliserad_integral_med_x_upphojt_till_minus_p",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(p>1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7023,10 +7396,11 @@ window.BANKMATF1 = [
     "id": "3.05",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__generaliserade_integraler_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_berakna_konvergent_generaliserad_integral",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac13",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7039,11 +7413,11 @@ window.BANKMATF1 = [
     "id": "3.06",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_parameter_och_konvergens_nara_noll",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a\\gt -1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7056,10 +7430,11 @@ window.BANKMATF1 = [
     "id": "3.16",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__generaliserade_integraler_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_tolka_och_berakna_generaliserad_integral_med_graf",
+    "svarstyp": "numeriskt",
+    "rättSvar": "1",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7072,11 +7447,11 @@ window.BANKMATF1 = [
     "id": "3.17",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_parameter_i_generaliserad_integral_dar_integranden_gar_mot_oandlighete",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(0\\lt p\\lt 1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7089,11 +7464,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi skriver integralen som ett gränsvärde:</p><p>\\[\\int_1^{\\infty}\\frac{1}{x^3}\\,dx=\\lim_{b\\to\\infty}\\int_1^b x^{-3}\\,dx.\\]</p><p>En primitiv funktion är \\(-\\frac{1}{2x^2}\\). Alltså</p><p>\\[\\lim_{b\\to\\infty}\\left[-\\frac{1}{2x^2}\\rightight]_1^b=\\lim_{b\\to\\infty}\\left(-\\frac{1}{2b^2}+\\frac{1}{2}\\rightight)=\\frac{1}{2}.\\]</p><p>Integralen <strong>konvergerar</strong> och värdet är <strong>\\(1/2\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_med_oandlig_ovre_grans",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7106,10 +7481,11 @@ window.BANKMATF1 = [
     "id": "3.35",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__generaliserade_integraler_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_med_potensfunktion",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac12\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7122,10 +7498,11 @@ window.BANKMATF1 = [
     "id": "3.36",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__integraler_over_oandliga_intervall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_exponentialintegral_till_oandligheten",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac12\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7138,11 +7515,11 @@ window.BANKMATF1 = [
     "id": "3.37",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_avgora_divergens_p_1",
+    "svarstyp": "val",
+    "rättSvar": "divergerar",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7155,11 +7532,11 @@ window.BANKMATF1 = [
     "id": "3.38",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_dar_integranden_gar_mot_oandligheten_vid_noll",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7172,11 +7549,11 @@ window.BANKMATF1 = [
     "id": "3.39",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_jamfora_generaliserade_integraler_med_olika_exponenter",
+    "svarstyp": "val",
+    "rättSvar": "p=1,4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7189,10 +7566,11 @@ window.BANKMATF1 = [
     "id": "3.59",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__integraler_over_oandliga_intervall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_fran_3_till_oandligheten",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac13\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7205,11 +7583,11 @@ window.BANKMATF1 = [
     "id": "3.60",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_divergent_exponential_at_plus",
+    "svarstyp": "val",
+    "rättSvar": "divergerar",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7222,11 +7600,11 @@ window.BANKMATF1 = [
     "id": "3.61",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_med_problem_vid_x_lika_med_noll",
+    "svarstyp": "val",
+    "rättSvar": "divergerar",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7239,11 +7617,11 @@ window.BANKMATF1 = [
     "id": "3.62",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_parameter_p_vid_noll",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(0\\lt p\\lt1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7256,10 +7634,11 @@ window.BANKMATF1 = [
     "id": "3.77",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__generaliserade_integraler_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_1_over_x4",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac13\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7272,10 +7651,11 @@ window.BANKMATF1 = [
     "id": "3.85",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__integraler_over_oandliga_intervall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_fran_2_till_oandligheten",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac12\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7288,10 +7668,11 @@ window.BANKMATF1 = [
     "id": "3.86",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__integraler_over_oandliga_intervall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_exponentialintegral_till_oandligheten",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac13\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7304,11 +7685,11 @@ window.BANKMATF1 = [
     "id": "3.87",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_avgora_divergens_for_generaliserad_integral",
+    "svarstyp": "val",
+    "rättSvar": "divergerar",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7321,11 +7702,11 @@ window.BANKMATF1 = [
     "id": "3.88",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_konvergent_generaliserad_integral_vid_noll",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7338,11 +7719,11 @@ window.BANKMATF1 = [
     "id": "3.89",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_parameter_i_generaliserad_integral",
+    "svarstyp": "uttryck",
+    "rättSvar": "\\(a>-1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7355,10 +7736,11 @@ window.BANKMATF1 = [
     "id": "3.106",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__integraler_over_oandliga_intervall",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_fran_3_till_oandligheten",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac1{18}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7371,10 +7753,11 @@ window.BANKMATF1 = [
     "id": "3.107",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__generaliserade_integraler_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "generaliserade_integraler_exponentialintegral_med_faktor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7387,11 +7770,11 @@ window.BANKMATF1 = [
     "id": "3.108",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_generaliserad_integral_med_logaritm_vid_noll",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7404,11 +7787,11 @@ window.BANKMATF1 = [
     "id": "3.109",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "generaliserade_integraler__konvergens_och_divergens",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "generaliserade_integraler_parameter_vid_noll",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7421,10 +7804,11 @@ window.BANKMATF1 = [
     "id": "3.07",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_kring_punkt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "3,0333",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7437,11 +7821,11 @@ window.BANKMATF1 = [
     "id": "3.08",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "derivata_tillampningar_felbedomning_for_linjar_approximation",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7454,10 +7838,11 @@ window.BANKMATF1 = [
     "id": "3.18",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_nara_kant_varde",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7470,10 +7855,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt \\(f(x)=\\sqrt{x}\\). Då är \\(f(16)=4\\) och</p><p>\\[f'(x)=\\frac{1}{2\\sqrt{x}}\\Rightarrow f'(16)=\\frac{1}{8}.\\]</p><p>Tangentlinjen i \\(x=16\\) blir därför</p><p>\\[L(x)=4+\\frac{1}{8}(x-16).\\]</p><p>För \\(x=16,3\\) får vi</p><p>\\[L(16,3)=4+\\frac{1}{8}\\cdot 0,3=4+0,0375=4,0375.\\]</p><p><strong>Uppskattningen blir \\(\\sqrt{16,3}\\approx 4,0375\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_med_figur",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7486,10 +7872,11 @@ window.BANKMATF1 = [
     "id": "3.40",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_av_kvadratrot",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7502,10 +7889,11 @@ window.BANKMATF1 = [
     "id": "3.41",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_av_invers",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7518,10 +7906,11 @@ window.BANKMATF1 = [
     "id": "3.42",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_av_kubikrot",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7534,10 +7923,11 @@ window.BANKMATF1 = [
     "id": "3.43",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_bedoma_over_eller_underskattning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7550,10 +7940,11 @@ window.BANKMATF1 = [
     "id": "3.63",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_approximation_sin_nara_noll",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7566,10 +7957,11 @@ window.BANKMATF1 = [
     "id": "3.64",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_approximation_e_x",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7582,10 +7974,11 @@ window.BANKMATF1 = [
     "id": "3.65",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_bestam_tangentapproximation_symboliskt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,08\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7598,10 +7991,11 @@ window.BANKMATF1 = [
     "id": "3.78",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_approximation_cos_nara_noll",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7614,10 +8008,11 @@ window.BANKMATF1 = [
     "id": "3.09",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_tva_fordon",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(90\\ \\text{km/h}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7630,10 +8025,11 @@ window.BANKMATF1 = [
     "id": "3.10",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_ballong",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(5,3\\ \\text{m/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7646,11 +8042,11 @@ window.BANKMATF1 = [
     "id": "3.11",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_konisk_tank",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1,59\\ \\text{cm/min}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7663,10 +8059,11 @@ window.BANKMATF1 = [
     "id": "3.19",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_stege",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,60\\ \\text{m/s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7679,10 +8076,11 @@ window.BANKMATF1 = [
     "id": "3.20",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_vaxande_cirkel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(15,1\\ \\text{cm}^2/\\text{s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7695,11 +8093,11 @@ window.BANKMATF1 = [
     "id": "3.21",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_konisk_tank",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,40\\ \\text{cm/min}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7712,10 +8110,11 @@ window.BANKMATF1 = [
     "s": "<p>Arean är \\(A=s^2\\). Derivera med avseende på tiden:</p><p>\\[\\frac{dA}{dt}=2s\\frac{ds}{dt}.\\]</p><p>Sätt in \\(s=5,0\\) och \\(ds/dt=0,6\\):</p><p>\\[\\frac{dA}{dt}=2\\cdot5,0\\cdot0,6=6,0.\\]</p><p><strong>Svar: arean ökar med \\(6,0\\ \\text{cm}^2/\\text{s}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_for_kvadrat",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(6,0\\ \\text{cm}^2/\\text{s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7728,10 +8127,11 @@ window.BANKMATF1 = [
     "id": "3.44",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_cirkelns_area_via_diameter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(15,1\\ \\text{cm}^2/\\text{s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7744,10 +8144,11 @@ window.BANKMATF1 = [
     "id": "3.45",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_sfarens_volym",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(62,8\\ \\text{cm}^3/\\text{s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7760,10 +8161,11 @@ window.BANKMATF1 = [
     "id": "3.46",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_kubens_volym",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(10,8\\ \\text{cm}^3/\\text{s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7776,10 +8178,11 @@ window.BANKMATF1 = [
     "id": "3.47",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_stege_mot_vagg",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,375\\ \\text{m/s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7792,10 +8195,11 @@ window.BANKMATF1 = [
     "id": "3.48",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_kon_med_likformighet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,159\\ \\text{dm/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7808,10 +8212,11 @@ window.BANKMATF1 = [
     "id": "3.66",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_rektangel_area",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(18\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7824,10 +8229,11 @@ window.BANKMATF1 = [
     "id": "3.67",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_cylinder_volym",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3,6\\pi\\text{ dm}^3/\\text{min}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7840,10 +8246,11 @@ window.BANKMATF1 = [
     "id": "3.68",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_skugga_likformiga_trianglar",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,64\\ \\text{m/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7856,10 +8263,11 @@ window.BANKMATF1 = [
     "id": "3.69",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_sfar_area_mot_volym",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,106\\ \\text{cm/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7872,10 +8280,11 @@ window.BANKMATF1 = [
     "id": "3.79",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_omkrets_cirkel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,754\\ \\text{m/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7888,10 +8297,11 @@ window.BANKMATF1 = [
     "id": "3.98",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterad_forandringshastighet_cirkel_via_omkrets",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(12,6\\ \\text{cm}^2/\\text{s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7904,10 +8314,11 @@ window.BANKMATF1 = [
     "id": "3.99",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_av_kvadratrot",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -7920,10 +8331,11 @@ window.BANKMATF1 = [
     "id": "3.100",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterad_forandringshastighet_bat_och_rep",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,75\\ \\text{m/s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7936,10 +8348,11 @@ window.BANKMATF1 = [
     "id": "3.101",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterad_forandringshastighet_sfar",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,597\\ \\text{cm/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7952,11 +8365,11 @@ window.BANKMATF1 = [
     "id": "3.12",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_optimering_med_integralvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "3",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7969,11 +8382,11 @@ window.BANKMATF1 = [
     "id": "3.22",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_mellan_kurva_och_x_axel_med_graf",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac43",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -7986,11 +8399,11 @@ window.BANKMATF1 = [
     "s": "<p>Arean ges av integralen</p><p>\\[A=\\int_1^3 (4-x)\\,dx.\\]</p><p>En primitiv funktion är \\(4x-\\frac{x^2}{2}\\). Då får vi</p><p>\\[A=\\left[4x-\\frac{x^2}{2}\\rightight]_1^3=(12-4,5)-(4-0,5)=7,5-3,5=4.\\]</p><p><strong>Arean är 4 areaenheter.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_mellan_graf_och_x_axel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8003,11 +8416,11 @@ window.BANKMATF1 = [
     "id": "3.49",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_under_parabel",
+    "svarstyp": "bråk",
+    "rättSvar": "\\frac{32}{3}",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8020,11 +8433,11 @@ window.BANKMATF1 = [
     "id": "3.50",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_medelvarde_av_funktion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8037,11 +8450,11 @@ window.BANKMATF1 = [
     "id": "3.51",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_mellan_tva_kurvor",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac92\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8054,11 +8467,11 @@ window.BANKMATF1 = [
     "id": "3.52",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_optimering_med_integralanknytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(12\\sqrt3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8071,11 +8484,11 @@ window.BANKMATF1 = [
     "id": "3.70",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_bestam_area_mellan_linje_och_axel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(9\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8088,11 +8501,11 @@ window.BANKMATF1 = [
     "id": "3.71",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_bestamd_integral_symmetri",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(16\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8105,11 +8518,11 @@ window.BANKMATF1 = [
     "id": "3.72",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_parameter_bestamd_fran_area",
+    "svarstyp": "numeriskt",
+    "rättSvar": "3",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8122,11 +8535,11 @@ window.BANKMATF1 = [
     "id": "3.73",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_bestam_parameter_fran_integral",
+    "svarstyp": "numeriskt",
+    "rättSvar": "5",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8139,11 +8552,11 @@ window.BANKMATF1 = [
     "id": "3.80",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_med_absolutvarde",
+    "svarstyp": "numeriskt",
+    "rättSvar": "4",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8156,11 +8569,11 @@ window.BANKMATF1 = [
     "id": "3.13",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_vardera_cas_resultat_for_generaliserad_integral",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8173,11 +8586,11 @@ window.BANKMATF1 = [
     "id": "3.23",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_granska_felaktigt_cas_resultat_for_generaliserad_integral",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8190,11 +8603,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>a)</strong> Kritiska punkter fås när derivatan är 0:</p><p>\\[3x^2-6=0\\Rightarrow x^2=2\\Rightarrow x=\\pm \\sqrt2.\\]</p><p><strong>b)</strong> Funktionen är växande när \\(f'(x)\\gt 0\\):</p><p>\\[3x^2-6\\gt 0\\Rightarrow x^2\\gt 2\\Rightarrow x\\lt -\\sqrt2\\ \\text{eller}\\ x\\gt \\sqrt2.\\]</p><p><strong>Funktionen är alltså växande för \\(( -\\infty,-\\sqrt2)\\) och \\((\\sqrt2,\\infty)\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_tolka_derivata_fran_cas_utdata",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8207,11 +8620,11 @@ window.BANKMATF1 = [
     "id": "3.53",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__numeriska_och_digitala_metoder",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_tolka_numeriskt_integralvarde",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8224,11 +8637,11 @@ window.BANKMATF1 = [
     "id": "3.54",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_granska_cas_antagande",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8241,11 +8654,11 @@ window.BANKMATF1 = [
     "id": "3.74",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "fordjupad_analys__numeriska_och_digitala_metoder",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_numerisk_nollpunkt_fran_verktyg",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8258,11 +8671,11 @@ window.BANKMATF1 = [
     "id": "3.75",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__numeriska_och_digitala_metoder",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_numerisk_derivata_och_tolkning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8275,10 +8688,11 @@ window.BANKMATF1 = [
     "id": "3.81",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_med_aterkommande_integral",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8291,10 +8705,11 @@ window.BANKMATF1 = [
     "id": "3.82",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_av_logaritm_i_kvadrat",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8307,10 +8722,11 @@ window.BANKMATF1 = [
     "id": "3.90",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_x_ganger_e_upphojt_tre_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8323,10 +8739,11 @@ window.BANKMATF1 = [
     "id": "3.91",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_trigonometrisk",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8339,10 +8756,11 @@ window.BANKMATF1 = [
     "id": "3.92",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_integral_av_logaritm_med_faktor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8355,10 +8773,11 @@ window.BANKMATF1 = [
     "id": "3.93",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__bestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_bestamd_integral_med_partiell_integration",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(e^2+1\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8371,10 +8790,11 @@ window.BANKMATF1 = [
     "id": "3.94",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__upprepad_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_tva_ganger_med_e_minus_x",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8387,10 +8807,11 @@ window.BANKMATF1 = [
     "id": "3.95",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_x_kvadrat_cosinus",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8403,10 +8824,11 @@ window.BANKMATF1 = [
     "id": "3.96",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__obestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_partiell_integration_polynom_ganger_logaritm",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8419,10 +8841,11 @@ window.BANKMATF1 = [
     "id": "3.97",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "partiell_integration__bestamd_integral_med_partiell_integration",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "partiell_integration_bestamd_integral_av_logaritm_i_kvadrat",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(e-2\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8435,11 +8858,11 @@ window.BANKMATF1 = [
     "id": "3.83",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_optimering_av_inskriven_rektangel",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8452,11 +8875,11 @@ window.BANKMATF1 = [
     "id": "3.84",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_area_mellan_tva_kurvor_med_bestamda_skarningspunkter",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 3,
@@ -8469,11 +8892,11 @@ window.BANKMATF1 = [
     "id": "3.102",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_medelvarde_av_linjar_funktion",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(4\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8486,11 +8909,11 @@ window.BANKMATF1 = [
     "id": "3.103",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__fordjupad_grafanalys",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "fordjupad_analys_area_mellan_tva_enkla_kurvor",
+    "svarstyp": "bråk",
+    "rättSvar": "\\(\\frac16\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8503,11 +8926,11 @@ window.BANKMATF1 = [
     "id": "3.104",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_parameter_fran_area_mellan_linje_och_parabel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "2",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 3,
@@ -8520,11 +8943,11 @@ window.BANKMATF1 = [
     "id": "3.105",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "fordjupad_analys__analytiskt_resonemang",
-    "formaga": [
-      "resonemang",
-      "problemlösning"
-    ]
+    "familj": "fordjupad_analys_optimering_av_rektangel_under_parabel",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(12\\sqrt3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -8537,10 +8960,11 @@ window.BANKMATF1 = [
     "id": "4.01",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_homogen_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8553,10 +8977,11 @@ window.BANKMATF1 = [
     "id": "4.02",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_bestam_funktion_fran_andra_ordningens_begynnelsevarde",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8569,10 +8994,11 @@ window.BANKMATF1 = [
     "id": "4.03",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__separabla_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_allman_losning_separabel_linjar_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8585,10 +9011,11 @@ window.BANKMATF1 = [
     "s": "<p>För en differentialekvation av typen \\(y'=ky\\) är den allmänna lösningen \\(y=Ce^{kx}\\).</p><p>Här är \\(k=3\\), alltså</p><p><strong>\\(y=Ce^{3x}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_losa_enkel_homogen_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8601,10 +9028,11 @@ window.BANKMATF1 = [
     "s": "<p>Den allmänna lösningen är \\(y=Ce^{-0,5x}\\).</p><p>Begynnelsevillkoret ger</p><p>\\[12=y(0)=Ce^0=C.\\]</p><p>Alltså är <strong>\\(y=12e^{-0,5x}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_begynnelsevarde_till_homogen_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8617,10 +9045,11 @@ window.BANKMATF1 = [
     "id": "4.67",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_losa_y_prim_lika_med_ky",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8633,11 +9062,11 @@ window.BANKMATF1 = [
     "id": "4.68",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__exponentiell_tillvaxt_och_avklingning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_begynnelsevarde_exponential",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8650,10 +9079,11 @@ window.BANKMATF1 = [
     "id": "4.69",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_bestam_parameter_fran_tva_varden",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,0811\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -8666,10 +9096,11 @@ window.BANKMATF1 = [
     "id": "4.92",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_halveringstid_fran_k",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,368\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -8682,10 +9113,11 @@ window.BANKMATF1 = [
     "id": "4.93",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_bestam_halveringstid",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(19,8\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -8698,10 +9130,11 @@ window.BANKMATF1 = [
     "id": "4.120",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_bestam_konstant_c",
+    "svarstyp": "numeriskt",
+    "rättSvar": "10",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -8714,10 +9147,11 @@ window.BANKMATF1 = [
     "id": "4.04",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_homogen_med_tva_reella_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8730,10 +9164,11 @@ window.BANKMATF1 = [
     "id": "4.05",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_ange_en_partikular_losning_till_homogen_differentialekvation",
+    "svarstyp": "numeriskt",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8746,10 +9181,11 @@ window.BANKMATF1 = [
     "s": "<p>Karakteristiska ekvationen är</p><p>\\[r^2-5r+6=0=(r-2)(r-3).\\]</p><p>Rötterna är \\(r=2\\) och \\(r=3\\). Därför blir den allmänna lösningen</p><p><strong>\\(y=C_1e^{2x}+C_2e^{3x}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_homogen_med_reella_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8762,10 +9198,11 @@ window.BANKMATF1 = [
     "id": "4.73",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_karakteristisk_ekvation_med_tva_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8778,10 +9215,11 @@ window.BANKMATF1 = [
     "id": "4.74",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningen_reella_negativa_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8794,10 +9232,11 @@ window.BANKMATF1 = [
     "id": "4.97",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_reella_rotter_1_och_4",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8810,10 +9249,11 @@ window.BANKMATF1 = [
     "id": "4.98",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_begynnelsevillkor_reella_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8826,10 +9266,11 @@ window.BANKMATF1 = [
     "id": "4.06",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_andra_ordningens_begynnelsevardesproblem",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8842,10 +9283,11 @@ window.BANKMATF1 = [
     "id": "4.07",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_andra_ordningens_begynnelsevarde_med_positiva_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8858,10 +9300,11 @@ window.BANKMATF1 = [
     "s": "<p>Den allmänna lösningen till \\(y''-y=0\\) är</p><p>\\[y=C_1e^x+C_2e^{-x}.\\]</p><p>Då är</p><p>\\[y(0)=C_1+C_2=2\\]</p><p>och</p><p>\\[y'=C_1e^x-C_2e^{-x}\\Rightarrow y'(0)=C_1-C_2=0.\\]</p><p>Systemet ger \\(C_1=C_2=1\\).</p><p><strong>Alltså är \\(y=e^x+e^{-x}\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_bestamma_konstanter_i_losning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8874,10 +9317,11 @@ window.BANKMATF1 = [
     "id": "4.82",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_bestam_konstanter_andra_ordningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8890,10 +9334,11 @@ window.BANKMATF1 = [
     "id": "4.83",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_begynnelsevillkor_komplex_losning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8906,10 +9351,11 @@ window.BANKMATF1 = [
     "id": "4.107",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_initialvillkor_inhomogen_forsta_ordningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8922,10 +9368,11 @@ window.BANKMATF1 = [
     "id": "4.108",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_initialvillkor_andra_inhomogen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8938,10 +9385,11 @@ window.BANKMATF1 = [
     "id": "4.08",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_linjar_inhomogen_forsta_ordningens_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8954,10 +9402,11 @@ window.BANKMATF1 = [
     "id": "4.09",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_linjar_inhomogen_forsta_ordningens_differentialekvation_med_polynom",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8970,10 +9419,11 @@ window.BANKMATF1 = [
     "id": "4.10",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_homogen_med_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -8986,11 +9436,11 @@ window.BANKMATF1 = [
     "id": "4.11",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_radioaktivt_sonderfall_som_differentialekvation",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9003,10 +9453,14 @@ window.BANKMATF1 = [
     "id": "4.12",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_komplexa_rotter_i_karakteristisk_ekvation",
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "\\(y=10e^{8x}\\)",
+      "\\(y=e^{-2x}(A\\cos3x+B\\sin3x)\\)"
+    ],
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9019,10 +9473,11 @@ window.BANKMATF1 = [
     "id": "4.13",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_allman_losning_med_komplexa_rotter",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9035,11 +9490,11 @@ window.BANKMATF1 = [
     "id": "4.14",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_given_losning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9052,11 +9507,11 @@ window.BANKMATF1 = [
     "id": "4.36",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_losning_till_inhomogen_differentialekvation",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9069,11 +9524,11 @@ window.BANKMATF1 = [
     "s": "<p>Derivera först funktionen:</p><p>\\[y'=-8e^{-2x}.\\]</p><p>Sätt in i vänsterledet:</p><p>\\[y'+2y=-8e^{-2x}+2\\cdot 4e^{-2x}=-8e^{-2x}+8e^{-2x}=0.\\]</p><p>Eftersom vänsterledet blir 0 uppfyller funktionen differentialekvationen.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_losning_genom_insattning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9086,11 +9541,11 @@ window.BANKMATF1 = [
     "id": "4.63",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_exponentiallosning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9103,11 +9558,11 @@ window.BANKMATF1 = [
     "id": "4.64",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_trigonometrisk_losning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9120,11 +9575,11 @@ window.BANKMATF1 = [
     "id": "4.89",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_konstant_plus_exponential",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9137,10 +9592,11 @@ window.BANKMATF1 = [
     "id": "4.15",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__klassificera_diffekvation",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_ordning_och_homogenitet",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9153,10 +9609,11 @@ window.BANKMATF1 = [
     "s": "<p>En differentialekvation innehåller en okänd funktion och någon av dess derivator.</p><p>a) \\(y'=3y\\) är en differentialekvation.</p><p>b) \\(2x+5=11\\) är bara en vanlig ekvation.</p><p>c) \\(y''+y=0\\) är en differentialekvation.</p><p>d) \\(f(x)=x^2\\) beskriver en funktion men är ingen differentialekvation.</p><p><strong>Rätt svar är a) och c).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_identifiera_differentialekvation",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9169,10 +9626,11 @@ window.BANKMATF1 = [
     "id": "4.61",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__klassificera_diffekvation",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_ordning_hos_differentialekvation",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9185,10 +9643,11 @@ window.BANKMATF1 = [
     "id": "4.62",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_homogen_eller_inhomogen",
+    "svarstyp": "val",
+    "rättSvar": "därför inhomogen",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9201,10 +9660,11 @@ window.BANKMATF1 = [
     "id": "4.88",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_identifiera_beroende_variabel",
+    "svarstyp": "val",
+    "rättSvar": "\\(T\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9217,10 +9677,11 @@ window.BANKMATF1 = [
     "id": "4.16",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_tolka_tecken_i_newtons_avsvalningslag",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9233,11 +9694,11 @@ window.BANKMATF1 = [
     "id": "4.44",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_jamfora_homogen_och_inhomogen_ekvation",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9250,11 +9711,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi använder begynnelsevillkoret i lösningsfamiljen:</p><p>\\[y(0)=Ce^{0}=C.\\]</p><p>Eftersom \\(y(0)=5\\) blir \\(C=5\\).</p><p><strong>Lösningen är \\(y=5e^{2x}\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_tolka_losningsfamilj",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9267,11 +9728,11 @@ window.BANKMATF1 = [
     "id": "4.65",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_jamviktslosning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9284,10 +9745,11 @@ window.BANKMATF1 = [
     "id": "4.66",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_tolka_tecken_pa_derivata",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9300,10 +9762,11 @@ window.BANKMATF1 = [
     "id": "4.90",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_tecken_pa_tillvaxt",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9316,10 +9779,11 @@ window.BANKMATF1 = [
     "id": "4.91",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_jamviktspunkter_logistisk_modell",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9332,11 +9796,11 @@ window.BANKMATF1 = [
     "id": "4.17",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_newtons_avsvalningslag_fran_matdata",
+    "svarstyp": "numeriskt",
+    "rättSvar": "44,8\\,^{\\circ}C",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9349,11 +9813,11 @@ window.BANKMATF1 = [
     "id": "4.18",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_blandningsproblem_med_differentialekvation",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9366,10 +9830,11 @@ window.BANKMATF1 = [
     "id": "4.19",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_eulersteg_flera_steg",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9382,10 +9847,11 @@ window.BANKMATF1 = [
     "id": "4.39",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_eulersteg_och_jamforelse_med_riktningsfalt",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9398,10 +9864,11 @@ window.BANKMATF1 = [
     "s": "<p>Vid startpunkten \\((0,1)\\) är lutningen</p><p>\\[y'=x-y=0-1=-1.\\]</p><p>Eulerformeln är \\(y_{1}=y_0+h\\,f(x_0,y_0)\\).</p><p>Alltså</p><p>\\[y(0,5)\\approx 1+0,5\\cdot(-1)=0,5.\\]</p><p><strong>Approximationen blir \\(y(0,5)\\approx 0,5\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_ett_eulersteg_med_figur",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9414,10 +9881,11 @@ window.BANKMATF1 = [
     "id": "4.85",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_tva_eulersteg",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1,75\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9430,10 +9898,11 @@ window.BANKMATF1 = [
     "id": "4.111",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_tre_eulersteg",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1,728\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9446,10 +9915,11 @@ window.BANKMATF1 = [
     "id": "4.112",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_jamfora_steglangder",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9462,10 +9932,11 @@ window.BANKMATF1 = [
     "id": "4.20",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_tolka_lutningar_i_riktningsfalt_utan_figur",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9478,10 +9949,11 @@ window.BANKMATF1 = [
     "id": "4.37",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_identifiera_differentialekvation_fran_riktningsfalt",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9494,11 +9966,11 @@ window.BANKMATF1 = [
     "id": "4.38",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__tolka_riktningsfalt_och_skiss_losningskurva",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "riktningsfalt_euler_bestamma_losningskurva_ur_riktningsfalt_och_allman_losning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9511,11 +9983,11 @@ window.BANKMATF1 = [
     "s": "<p>Lutningen i en punkt fås genom att sätta in punktens koordinater i högerledet:</p><p>\\[y'=x+y=1+2=3.\\]</p><p><strong>Lösningskurvans lutning är 3.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__tolka_riktningsfalt_och_skiss_losningskurva",
-    "formaga": [
-      "begrepp",
-      "resonemang"
-    ]
+    "familj": "riktningsfalt_euler_avlasa_lutning_i_riktningsfalt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -9528,10 +10000,11 @@ window.BANKMATF1 = [
     "id": "4.84",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_tolka_stabil_jamvikt_ur_riktningsfalt",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9544,10 +10017,11 @@ window.BANKMATF1 = [
     "id": "4.109",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_identifiera_jamviktslinje",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9560,10 +10034,11 @@ window.BANKMATF1 = [
     "id": "4.110",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_skissa_kvalitativ_losning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9576,11 +10051,11 @@ window.BANKMATF1 = [
     "id": "4.21",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__exponentiell_tillvaxt_och_avklingning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_inhomogen_forsta_ordningens_differentialekvation_med_exponentialterm",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9593,10 +10068,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi löser först den homogena ekvationen \\(y'+2y=0\\), som ger</p><p>\\[y_h=Ce^{-2x}.\\]</p><p>Därefter söker vi en konstant partikulärlösning \\(y_p=A\\). Insättning ger</p><p>\\[0+2A=6\\Rightarrow A=3.\\]</p><p>Den allmänna lösningen blir då</p><p><strong>\\(y=Ce^{-2x}+3\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_forsta_ordningens_inhomogen_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9609,11 +10085,11 @@ window.BANKMATF1 = [
     "s": "<p>Differentialekvationen kan skrivas</p><p>\\[T'+0,10T=2.\\]</p><p>Den homogena lösningen är \\(T_h=Ce^{-0,10t}\\). En konstant partikulärlösning fås av \\(T_p=A\\):</p><p>\\[0,10A=2\\Rightarrow A=20.\\]</p><p>Alltså</p><p>\\[T(t)=Ce^{-0,10t}+20.\\]</p><p>Begynnelsevillkoret \\(T(0)=80\\) ger \\(C=60\\), så</p><p>\\[T(t)=60e^{-0,10t}+20.\\]</p><p>För \\(T=50\\) får vi</p><p>\\[60e^{-0,10t}+20=50\\Rightarrow 60e^{-0,10t}=30\\Rightarrow e^{-0,10t}=\\frac{1}{2}.\\]</p><p>\\[-0,10t=\\ln\\left(\\frac{1}{2}\\rightight)=-\\ln 2\\Rightarrow t=10\\ln 2\\approx 6,93.\\]</p><p><strong>Kaffet når 50 °C efter ungefär 6,9 minuter.</strong></p>",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "forsta_ordningen_temperaturmodell_med_newtons_avsvalningslag",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9626,10 +10102,11 @@ window.BANKMATF1 = [
     "id": "4.70",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_konstant_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9642,10 +10119,11 @@ window.BANKMATF1 = [
     "id": "4.71",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_begynnelsevillkor_inhomogen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9658,10 +10136,11 @@ window.BANKMATF1 = [
     "id": "4.72",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_bestam_ekvation_fran_losningsfamilj",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9674,10 +10153,11 @@ window.BANKMATF1 = [
     "id": "4.94",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_los_med_jamviktsvarde",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9690,10 +10170,11 @@ window.BANKMATF1 = [
     "id": "4.95",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_initialvarde_mot_jamvikt",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9706,10 +10187,11 @@ window.BANKMATF1 = [
     "id": "4.96",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_bestam_tid_till_niva",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9722,10 +10204,11 @@ window.BANKMATF1 = [
     "id": "4.140",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_homogen_forsta_ordningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9738,10 +10221,11 @@ window.BANKMATF1 = [
     "id": "4.141",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_linjar_forsta_ordningen_med_konstant_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9754,10 +10238,11 @@ window.BANKMATF1 = [
     "id": "4.142",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_linjar_forsta_ordningen_konstant_term",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9770,10 +10255,11 @@ window.BANKMATF1 = [
     "id": "4.143",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_forsta_ordningen_med_jamviktsvarde",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9786,10 +10272,11 @@ window.BANKMATF1 = [
     "id": "4.144",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_kontrollera_allman_losning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9802,10 +10289,11 @@ window.BANKMATF1 = [
     "id": "4.145",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_inhomogen_forsta_ordningen_med_linjart_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9818,10 +10306,11 @@ window.BANKMATF1 = [
     "id": "4.146",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__linjara_diffekvationer_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_linjar_forsta_ordningen_med_polynom",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9834,10 +10323,11 @@ window.BANKMATF1 = [
     "id": "4.147",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "forsta_ordningen__forsta_ordningens_diffekvationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "forsta_ordningen_newtons_avsvalningsform_utan_begynnelsevillkor",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9850,10 +10340,11 @@ window.BANKMATF1 = [
     "id": "4.22",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_begynnelsevillkor_vid_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9866,10 +10357,11 @@ window.BANKMATF1 = [
     "id": "4.43",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_tolka_losningsform_vid_dubbelrot",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9882,10 +10374,11 @@ window.BANKMATF1 = [
     "s": "<p>Karakteristiska ekvationen är</p><p>\\[r^2-4r+4=0=(r-2)^2.\\]</p><p>Roten \\(r=2\\) är en dubbelrot. Då får lösningen formen</p><p><strong>\\(y=(C_1+C_2x)e^{2x}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9898,10 +10391,11 @@ window.BANKMATF1 = [
     "id": "4.75",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_homogen_med_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9914,10 +10408,11 @@ window.BANKMATF1 = [
     "id": "4.76",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_bestam_differentialekvation_fran_losning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9930,10 +10425,11 @@ window.BANKMATF1 = [
     "id": "4.99",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_dubbelrot_negativ",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9946,10 +10442,11 @@ window.BANKMATF1 = [
     "id": "4.100",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_begynnelsevillkor_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9962,10 +10459,11 @@ window.BANKMATF1 = [
     "id": "4.23",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_begynnelsevillkor_med_komplexa_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9978,10 +10476,11 @@ window.BANKMATF1 = [
     "s": "<p>Karakteristiska ekvationen är \\(r^2+9=0\\), vilket ger rötterna \\(r=\\pm 3i\\).</p><p>Vid rötter av typen \\(\\alpha\\pm \\beta i\\) blir lösningen</p><p>\\[y=e^{\\alpha x}(C_1\\cos \\beta x + C_2\\sin \\beta x).\\]</p><p>Här är \\(\\alpha=0\\) och \\(\\beta=3\\), alltså</p><p><strong>\\(y=C_1\\cos 3x+C_2\\sin 3x\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_komplexa_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -9994,10 +10493,11 @@ window.BANKMATF1 = [
     "id": "4.77",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_komplexa_rotter_med_dampning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10010,10 +10510,11 @@ window.BANKMATF1 = [
     "id": "4.78",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_bestam_ekvation_fran_sinuslosning",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10026,10 +10527,11 @@ window.BANKMATF1 = [
     "id": "4.101",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_ren_harmonisk_svangning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10042,10 +10544,11 @@ window.BANKMATF1 = [
     "id": "4.102",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_begynnelsevillkor_dampad_svangning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10058,10 +10561,11 @@ window.BANKMATF1 = [
     "id": "4.27",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_inhomogen_med_konstant_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10074,10 +10578,11 @@ window.BANKMATF1 = [
     "id": "4.28",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_inhomogen_med_linjart_polynom",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10090,10 +10595,11 @@ window.BANKMATF1 = [
     "id": "4.29",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_inhomogen_med_exponentialterm",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10106,10 +10612,11 @@ window.BANKMATF1 = [
     "id": "4.30",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_exponentialterm_som_ingar_i_den_homogena_losningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10122,10 +10629,11 @@ window.BANKMATF1 = [
     "id": "4.31",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_andra_ordningens_inhomogen_med_trigonometriskt_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10138,10 +10646,11 @@ window.BANKMATF1 = [
     "id": "4.32",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_valja_ansats_nar_hogerledet_ingar_i_den_homogena_losningen",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10154,10 +10663,11 @@ window.BANKMATF1 = [
     "id": "4.33",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_inhomogent_begynnelsevardesproblem_med_polynom",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10170,10 +10680,11 @@ window.BANKMATF1 = [
     "id": "4.34",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_periodiskt_hogerled_som_ingar_i_den_homogena_losningen_och_begynnelsevillkor",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10186,10 +10697,11 @@ window.BANKMATF1 = [
     "id": "4.35",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_bestamma_hogerled_fran_partikularlosning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10202,10 +10714,11 @@ window.BANKMATF1 = [
     "id": "4.79",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_konstant_partikularlosning",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10218,10 +10731,11 @@ window.BANKMATF1 = [
     "id": "4.80",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_polynom_som_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10234,10 +10748,11 @@ window.BANKMATF1 = [
     "id": "4.81",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_sinusterm_som_ingar_i_den_homogena_losningen",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10250,10 +10765,11 @@ window.BANKMATF1 = [
     "id": "4.103",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_exponentialterm_som_inte_ingar_i_den_homogena_losningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10266,10 +10782,11 @@ window.BANKMATF1 = [
     "id": "4.104",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_cosinusterm_som_inte_ingar_i_den_homogena_losningen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(\\frac85\\cos2x\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10282,10 +10799,11 @@ window.BANKMATF1 = [
     "id": "4.105",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_linjart_polynom_partikular",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10298,10 +10816,11 @@ window.BANKMATF1 = [
     "id": "4.106",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_exponentialterm_som_ingar_i_den_homogena_losningen",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(\\frac12x^2e^{2x}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10314,10 +10833,11 @@ window.BANKMATF1 = [
     "id": "4.119",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_konstant_hogerled_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10330,10 +10850,11 @@ window.BANKMATF1 = [
     "id": "4.148",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_homogen_andra_ordningen_reella_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10346,10 +10867,11 @@ window.BANKMATF1 = [
     "id": "4.149",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_dubbelrot",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_homogen_andra_ordningen_dubbelrot",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10362,10 +10884,11 @@ window.BANKMATF1 = [
     "id": "4.150",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_komplexa_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_homogen_andra_ordningen_komplexa_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10378,10 +10901,11 @@ window.BANKMATF1 = [
     "id": "4.151",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_inhomogen_andra_ordningen_konstant_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10394,10 +10918,11 @@ window.BANKMATF1 = [
     "id": "4.152",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_inhomogen_andra_ordningen_exponentialhogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10410,10 +10935,11 @@ window.BANKMATF1 = [
     "id": "4.153",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__homogena_med_reella_karaktaristiska_rotter",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_exponentialhogerled_som_ingar_i_den_homogena_losningen",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10426,10 +10952,11 @@ window.BANKMATF1 = [
     "id": "4.154",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_inhomogen_andra_ordningen_linjart_polynom",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10442,10 +10969,11 @@ window.BANKMATF1 = [
     "id": "4.155",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "andra_ordningen__inhomogena_diffekvationer",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "andra_ordningen_inhomogen_andra_ordningen_trigonometriskt_hogerled",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10458,11 +10986,11 @@ window.BANKMATF1 = [
     "id": "4.24",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_terminalhastighet_med_linjar_luftmotstandsmodell",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10475,11 +11003,11 @@ window.BANKMATF1 = [
     "id": "4.40",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_blandningsproblem_med_figur",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10492,11 +11020,11 @@ window.BANKMATF1 = [
     "id": "4.41",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_massa_fjader_med_periodisk_kraft",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10509,11 +11037,11 @@ window.BANKMATF1 = [
     "id": "4.42",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_dampat_system_med_konstant_yttre_kraft",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10526,11 +11054,11 @@ window.BANKMATF1 = [
     "s": "<p>Låt \\(S(t)\\) vara mängden salt i kg och \\(V(t)\\) volymen i liter.</p><p>Eftersom 2,5 L/min rinner in och 5,0 L/min rinner ut får vi</p><p>\\[V(t)=47,5-2,5t,\\qquad 0\\le t\\lt 19.\\]</p><p>Inflödet av salt är \\(2,5\\cdot 0,20=0,5\\) kg/min. Utflödet av salt är koncentrationen i tanken gånger utflödet:</p><p>\\[5,0\\cdot\\frac{S}{47,5-2,5t}.\\]</p><p>Därför gäller</p><p>\\[S'=0,5-\\frac{5S}{47,5-2,5t}=0,5-\\frac{2S}{19-t}.\\]</p><p>För att hitta när mängden är som störst sätter vi \\(S'=0\\):</p><p>\\[0,5=\\frac{2S}{19-t}\\Rightarrow S=\\frac{19-t}{4}.\\]</p><p>Vi bestämmer nu \\(S(t)\\). Ekvationen är linjär:</p><p>\\[S'+\\frac{2}{19-t}S=0,5.\\]</p><p>En integrerande faktor är \\((19-t)^{-2}\\). Lösning ger</p><p>\\[S(t)=\\frac{19-t}{2}+C(19-t)^2.\\]</p><p>Begynnelsevillkoret \\(S(0)=2,5\\) ger</p><p>\\[2,5=9,5+361C\\Rightarrow C=-\\frac{7}{361}.\\]</p><p>Alltså</p><p>\\[S(t)=\\frac{19-t}{2}-\\frac{7}{361}(19-t)^2.\\]</p><p>Sätt detta lika med \\((19-t)/4\\):</p><p>\\[\\frac{19-t}{2}-\\frac{7}{361}(19-t)^2=\\frac{19-t}{4}.\\]</p><p>För \\(19-t\\gt 0\\) fås</p><p>\\[\\frac14=\\frac{7}{361}(19-t)\\Rightarrow 19-t=\\frac{361}{28}.\\]</p><p>Alltså</p><p>\\[t=19-\\frac{361}{28}=\\frac{171}{28}\\approx 6,11\\ \\text{min}.\\]</p><p>Då blir</p><p>\\[S_{\\max}=\\frac{19-t}{4}=\\frac{361}{112}\\approx 3,22\\ \\text{kg}.\\]</p><p><strong>Tankens maximala saltmängd är ungefär 3,22 kg och detta sker efter cirka 6,1 minuter.</strong></p>",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_saltblandning_och_maxvarde",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(3,22\\ \\text{kg}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10543,11 +11071,11 @@ window.BANKMATF1 = [
     "id": "4.86",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_newtonsk_avsvalning_enkel_modell",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10560,11 +11088,11 @@ window.BANKMATF1 = [
     "id": "4.113",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_formulera_enkel_tillvaxtmodell",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10577,11 +11105,11 @@ window.BANKMATF1 = [
     "id": "4.114",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_medicin_kontinuerlig_elimination",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10594,11 +11122,11 @@ window.BANKMATF1 = [
     "id": "4.115",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_blandning_med_konstant_volym",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10611,11 +11139,11 @@ window.BANKMATF1 = [
     "id": "4.116",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_temperatur_fran_tva_matningar",
+    "svarstyp": "numeriskt",
+    "rättSvar": "60",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10628,11 +11156,11 @@ window.BANKMATF1 = [
     "id": "4.25",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__digital_och_numerisk_modellosning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "modellering_digitalt_kontrollera_digital_losning_till_differentialekvation",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10645,11 +11173,11 @@ window.BANKMATF1 = [
     "id": "4.26",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__granska_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "resonemang"
-    ]
+    "familj": "modellering_digitalt_jamfora_eulerapproximation_med_exakt_losning",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10662,11 +11190,11 @@ window.BANKMATF1 = [
     "id": "4.45",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__digital_och_numerisk_modellosning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "modellering_digitalt_kontroll_av_digital_losning_till_inhomogen_andra_ordningens_ekvation",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10679,11 +11207,11 @@ window.BANKMATF1 = [
     "s": "<p>Sätt in \\(x=1\\) i lösningsfamiljen:</p><p>\\[6=Ce^4.\\]</p><p>Därför är</p><p>\\[C=6e^{-4}.\\]</p><p>Lösningen blir då</p><p><strong>\\(y=6e^{-4}e^{4x}=6e^{4x-4}\\)</strong>.</p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__tolka_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "begrepp"
-    ]
+    "familj": "modellering_digitalt_tolka_cas_losning_till_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10696,11 +11224,11 @@ window.BANKMATF1 = [
     "id": "4.87",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__digital_och_numerisk_modellosning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "modellering_digitalt_kontrollera_numerisk_losning",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10713,11 +11241,11 @@ window.BANKMATF1 = [
     "id": "4.117",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__digital_och_numerisk_modellosning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "modellering_digitalt_tolka_numerisk_losning",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10730,11 +11258,11 @@ window.BANKMATF1 = [
     "id": "4.118",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__granska_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "resonemang"
-    ]
+    "familj": "modellering_digitalt_jamfora_numerisk_och_analytisk_losning",
+    "svarstyp": "numeriskt",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10747,11 +11275,11 @@ window.BANKMATF1 = [
     "id": "4.162",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_formulera_blandningsmodell",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10764,11 +11292,11 @@ window.BANKMATF1 = [
     "id": "4.163",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_tolka_cas_konstant",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10781,11 +11309,11 @@ window.BANKMATF1 = [
     "id": "4.164",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_jamviktsvarde_i_medicinmodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(80\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10798,11 +11326,11 @@ window.BANKMATF1 = [
     "id": "4.165",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_bestam_tillvaxtkonstant_fran_fordubblingstid",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,0693\\text{ per år}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10815,11 +11343,11 @@ window.BANKMATF1 = [
     "id": "4.166",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_newtons_avsvalningslag_fran_en_matning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,1022\\text{ min}^{-1}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10832,11 +11360,11 @@ window.BANKMATF1 = [
     "id": "4.167",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__digital_och_numerisk_modellosning",
-    "formaga": [
-      "modellering",
-      "procedur"
-    ]
+    "familj": "modellering_digitalt_tolka_numeriskt_fel",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10849,11 +11377,11 @@ window.BANKMATF1 = [
     "id": "4.175",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_exponentiell_tillvaxt_fran_differentialekvation",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1292,9\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "kap": 4,
@@ -10866,11 +11394,11 @@ window.BANKMATF1 = [
     "id": "4.176",
     "miniräknare": true,
     "geogebra": true,
-    "familj": "modellering_digitalt__bygg_och_anpassa_diffekvationsmodell",
-    "formaga": [
-      "modellering",
-      "problemlösning"
-    ]
+    "familj": "modellering_digitalt_medicinmodell_med_tid_till_niva",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10883,11 +11411,11 @@ window.BANKMATF1 = [
     "id": "4.121",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur",
-      "problemlösning"
-    ]
+    "familj": "begynnelsevillkor_harmonisk_svangning_med_amplitud_och_fasforskjutning",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10900,10 +11428,11 @@ window.BANKMATF1 = [
     "id": "4.124",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_forsta_ordningens_begynnelsevardesproblem",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10916,10 +11445,11 @@ window.BANKMATF1 = [
     "id": "4.125",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_exponentiellt_avtagande_begynnelsevardesproblem",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10932,10 +11462,11 @@ window.BANKMATF1 = [
     "id": "4.126",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_inhomogen_forsta_ordningen_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10948,10 +11479,11 @@ window.BANKMATF1 = [
     "id": "4.127",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_andra_ordningens_begynnelsevardesproblem_med_tva_reella_rotter",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10964,10 +11496,11 @@ window.BANKMATF1 = [
     "id": "4.128",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_harmonisk_svangning_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10980,10 +11513,11 @@ window.BANKMATF1 = [
     "id": "4.129",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_dampad_svangning_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -10996,10 +11530,11 @@ window.BANKMATF1 = [
     "id": "4.130",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_dubbelrot_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11012,10 +11547,11 @@ window.BANKMATF1 = [
     "id": "4.131",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_inhomogen_andra_ordningen_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11028,10 +11564,11 @@ window.BANKMATF1 = [
     "id": "4.168",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_forsta_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_forsta_ordningen_med_jamviktsvarde_och_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11044,10 +11581,11 @@ window.BANKMATF1 = [
     "id": "4.169",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_harmonisk_begynnelsevardesproblem",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11060,10 +11598,11 @@ window.BANKMATF1 = [
     "id": "4.170",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_dubbelrot_med_nya_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11076,10 +11615,11 @@ window.BANKMATF1 = [
     "id": "4.171",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "begynnelsevillkor__begynnelsevillkor_andra_ordningen",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "begynnelsevillkor_inhomogen_harmonisk_ekvation_med_begynnelsevillkor",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11092,10 +11632,11 @@ window.BANKMATF1 = [
     "id": "4.122",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_eulers_metod_jamford_med_exakt_losning",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11108,10 +11649,11 @@ window.BANKMATF1 = [
     "id": "4.132",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_ett_eulersteg",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11124,10 +11666,11 @@ window.BANKMATF1 = [
     "id": "4.133",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_flera_eulersteg",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11140,10 +11683,11 @@ window.BANKMATF1 = [
     "id": "4.134",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_lutning_i_punkter",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11156,10 +11700,11 @@ window.BANKMATF1 = [
     "id": "4.135",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__numeriska_losningar",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_jamviktslosningar_fran_differentialekvation",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11172,10 +11717,11 @@ window.BANKMATF1 = [
     "id": "4.136",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_jamfora_eulersteg_med_olika_steglangd",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11188,10 +11734,11 @@ window.BANKMATF1 = [
     "id": "4.137",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_tolka_riktningsfalt_och_linjen_dar_lutningen_ar_noll",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11204,10 +11751,11 @@ window.BANKMATF1 = [
     "id": "4.138",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_logistiskt_riktningsfalt",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11220,10 +11768,11 @@ window.BANKMATF1 = [
     "id": "4.139",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_euler_i_koncentrationsmodell",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11236,10 +11785,11 @@ window.BANKMATF1 = [
     "id": "4.172",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__riktningsfalt",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "riktningsfalt_euler_lutning_i_riktningsfalt_med_x_kvadrat",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11252,10 +11802,11 @@ window.BANKMATF1 = [
     "id": "4.173",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__eulers_stegmetod",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_tva_eulersteg",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11268,10 +11819,11 @@ window.BANKMATF1 = [
     "id": "4.174",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "riktningsfalt_euler__numeriska_losningar",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "riktningsfalt_euler_stabilitet_hos_tva_jamvikter",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11284,11 +11836,11 @@ window.BANKMATF1 = [
     "id": "4.123",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_jamvikter_och_stabilitet_i_logistisk_modell",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11301,10 +11853,11 @@ window.BANKMATF1 = [
     "id": "4.156",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__klassificera_diffekvation",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_bestam_ordning_hos_differentialekvation",
+    "svarstyp": "numeriskt",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11317,11 +11870,11 @@ window.BANKMATF1 = [
     "id": "4.157",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_losningsfamilj",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11334,11 +11887,11 @@ window.BANKMATF1 = [
     "id": "4.158",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_jamviktslosningar",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11351,10 +11904,11 @@ window.BANKMATF1 = [
     "id": "4.159",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__begrepp_och_tolkning",
-    "formaga": [
-      "begrepp"
-    ]
+    "familj": "diffekv_grunder_tolka_tecken_pa_forandringshastighet",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11367,11 +11921,11 @@ window.BANKMATF1 = [
     "id": "4.160",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_bestam_differentialekvation_fran_losningsfamilj",
+    "svarstyp": "uttryck",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "kap": 4,
@@ -11384,11 +11938,11 @@ window.BANKMATF1 = [
     "id": "4.161",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "diffekv_grunder__kontrollera_losning_till_diffekvation",
-    "formaga": [
-      "begrepp",
-      "procedur"
-    ]
+    "familj": "diffekv_grunder_verifiera_losning_till_dubbelrotsekvation",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "1.208",
@@ -11401,10 +11955,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Första steget:</strong> Kravet på minst 2 pass per vecka använder \\(4\\cdot2=8\\) pass. Då återstår</p><p>\\[14-8=6\\]</p><p>pass som får fördelas fritt mellan de fyra veckorna.</p><span class=\"fig smal\"><svg width=\"360\" height=\"105\" viewBox=\"0 0 420 122\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Exempel på sex markeringar fördelade i fyra grupper med tre skiljestreck\">\n<rect x=\"10\" y=\"12\" width=\"400\" height=\"96\" rx=\"7\" fill=\"white\" stroke=\"#c7c7c7\"/>\n<circle cx=\"55\" cy=\"58\" r=\"8\" fill=\"#555\"/><circle cx=\"82\" cy=\"58\" r=\"8\" fill=\"#555\"/>\n<line x1=\"112\" y1=\"35\" x2=\"112\" y2=\"81\" stroke=\"#333\" stroke-width=\"3\"/>\n<circle cx=\"145\" cy=\"58\" r=\"8\" fill=\"#555\"/>\n<line x1=\"178\" y1=\"35\" x2=\"178\" y2=\"81\" stroke=\"#333\" stroke-width=\"3\"/>\n<line x1=\"207\" y1=\"35\" x2=\"207\" y2=\"81\" stroke=\"#333\" stroke-width=\"3\"/>\n<circle cx=\"241\" cy=\"58\" r=\"8\" fill=\"#555\"/><circle cx=\"268\" cy=\"58\" r=\"8\" fill=\"#555\"/><circle cx=\"295\" cy=\"58\" r=\"8\" fill=\"#555\"/>\n<text x=\"52\" y=\"99\" font-size=\"12\">2</text><text x=\"142\" y=\"99\" font-size=\"12\">1</text><text x=\"190\" y=\"99\" font-size=\"12\">0</text><text x=\"266\" y=\"99\" font-size=\"12\">3</text>\n<text x=\"323\" y=\"61\" font-size=\"12\">extra pass</text>\n</svg></span><p>Vi kan tänka de 6 återstående passen som 6 markeringar. Tre streck skiljer de fyra veckorna åt. Bilden visar ett exempel: \\(2,1,0,3\\) extra pass.</p><p>Totalt ska alltså 6 markeringar och 3 streck ordnas. Vi väljer var de tre strecken ska stå bland 9 platser:</p><p>\\[\\binom93=84.\\]</p><p><strong>Det finns 84 möjliga fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordela_identiska_objekt_med_ett_minsta_antal_i_varje_grupp",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(84\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.209",
@@ -11417,11 +11972,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi uppfyller först minimikraven: \\(1+2+3=6\\) skålar. Då återstår 6 skålar att fördela fritt mellan tre sorter.</p><p>Låt de extra antalen vara \\(x,y,z\\). Då</p><p>\\[x+y+z=6\\]</p><p>där variablerna är 0 eller positiva.</p><p>Sex markeringar ska delas i tre grupper med två streck. Därför blir antalet fördelningar</p><p>\\[\\binom{8}{2}=28.\\]</p><p><strong>Svar: 28 fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordelning_med_olika_minsta_antal",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(28\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.210",
@@ -11434,10 +11989,11 @@ window.BANKMATF1 = [
     "s": "<p>Sätt \\(x=2+a\\) och \\(y=1+b\\), där \\(a,b\\ge0\\). Då blir ekvationen</p><p>\\[a+b+z+w=7.\\]</p><p>Vi ska alltså fördela 7 enheter mellan fyra variabler. Det motsvarar 7 markeringar och 3 streck:</p><p>\\[\\binom{10}{3}=120.\\]</p><p><strong>Det finns 120 lösningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_heltalslosningar_med_tva_minsta_villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(120\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.211",
@@ -11450,10 +12006,11 @@ window.BANKMATF1 = [
     "s": "<p>Utan villkoret \\(x\\le5\\) finns</p><p>\\[\\binom{17}{2}=136\\]</p><p>lösningar.</p><p>Vi tar bort lösningarna där \\(x\\ge6\\). Sätt då \\(x=6+a\\). Ekvationen blir</p><p>\\[a+y+z=9,\\]</p><p>vilket ger</p><p>\\[\\binom{11}{2}=55\\]</p><p>lösningar.</p><p>Alltså återstår</p><p>\\[136-55=81.\\]</p><p><strong>Svar: 81 lösningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_heltalslosningar_med_ovre_grans",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(81\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.212",
@@ -11466,11 +12023,11 @@ window.BANKMATF1 = [
     "s": "<p>Ge först varje barn 2 klistermärken. Då används 10 och det återstår 8.</p><p>De 8 återstående klistermärkena får fördelas fritt mellan fem barn. Vi behöver därför fyra skiljestreck:</p><p>\\[\\binom{8+4}{4}=\\binom{12}{4}=495.\\]</p><p><strong>Svar: 495 fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordela_identiska_foremal_med_minimikrav",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(495\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.213",
@@ -11483,11 +12040,11 @@ window.BANKMATF1 = [
     "s": "<p>Utan begränsningen finns</p><p>\\[\\binom{13}{3}=286\\]</p><p>fördelningar.</p><p>Vi tar bort de fördelningar där den bestämda butiken får minst 3 kuponger. Lägg först 3 kuponger där. Då återstår 7 kuponger att fördela mellan fyra butiker:</p><p>\\[\\binom{10}{3}=120.\\]</p><p>Antalet tillåtna fördelningar blir</p><p>\\[286-120=166.\\]</p><p><strong>Svar: 166.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordelning_med_ovre_grans_for_en_grupp",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(166\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.214",
@@ -11500,10 +12057,11 @@ window.BANKMATF1 = [
     "s": "<p>Lägg först undan ett kanelbakverk och ett chokladbakverk. Då återstår 5 bakverk att fördela fritt mellan fyra sorter.</p><p>Fem markeringar och tre skiljestreck ger</p><p>\\[\\binom{8}{3}=56.\\]</p><p><strong>Det finns 56 olika val.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kombinationer_med_upprepning_och_tva_obligatoriska_sorter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(56\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.215",
@@ -11516,11 +12074,11 @@ window.BANKMATF1 = [
     "s": "<p>Ge först varje delområde 2 poäng. Då återstår 6 poäng att fördela.</p><p>Låt de extra poängen vara \\(x_1,x_2,x_3,x_4\\). Då</p><p>\\[x_1+x_2+x_3+x_4=6.\\]</p><p>Utan maxvillkoret finns \\(\\binom93=84\\) fördelningar.</p><p>Det första delområdet får högst 5 poäng totalt, alltså högst 3 extra poäng. Vi tar därför bort fallen \\(x_1\\ge4\\). Sätt \\(x_1=4+y\\). Då återstår</p><p>\\[y+x_2+x_3+x_4=2,\\]</p><p>vilket ger \\(\\binom53=10\\) fall.</p><p>Alltså</p><p>\\[84-10=74.\\]</p><p><strong>Svar: 74 fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_poangfordelning_med_minimi_och_maximivillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(74\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.216",
@@ -11533,10 +12091,11 @@ window.BANKMATF1 = [
     "s": "<p>Med 5 personer och minst 2 från varje avdelning finns bara två möjliga fördelningar:</p><p>2 från A och 3 från B, eller 3 från A och 2 från B.</p><p>Därför</p><p>\\[\\binom72\\binom63+\\binom73\\binom62\\]</p><p>\\[=21\\cdot20+35\\cdot15=420+525=945.\\]</p><p><strong>Svar: 945 grupper.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_grupp_med_minst_tva_fran_varje_kategori",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(945\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.217",
@@ -11549,10 +12108,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi delar upp efter hur många kombinatorikuppgifter och talteoriuppgifter som väljs. De möjliga fördelningarna \\((A,K,T)\\) är</p><p>\\[(3,2,1),(2,2,2),(1,2,3),(2,3,1),(1,3,2),(0,3,3),(1,4,1),(0,4,2).\\]</p><p>För varje fördelning väljer vi uppgifter inom respektive kategori och adderar fallen:</p><p>\\[\\binom53\\binom42\\binom31+\\binom52\\binom42\\binom32+\\binom51\\binom42\\binom33\\]</p><p>\\[+\\binom52\\binom43\\binom31+\\binom51\\binom43\\binom32+\\binom50\\binom43\\binom33\\]</p><p>\\[+\\binom51\\binom44\\binom31+\\binom50\\binom44\\binom32=592.\\]</p><p><strong>Svar: 592 olika prov.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_provuppgifter_med_flera_kategorivillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(592\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.218",
@@ -11565,10 +12125,11 @@ window.BANKMATF1 = [
     "s": "<p>Vokalerna är A, A, E och I. Betrakta dem först som ett block.</p><p>Då ska följande sex objekt ordnas:</p><p>vokalblocket, M, M, T, T, K.</p><p>Eftersom M och T förekommer två gånger vardera blir antalet yttre ordningar</p><p>\\[\\frac{6!}{2!2!}=180.\\]</p><p>Inne i vokalblocket kan A, A, E och I ordnas på</p><p>\\[\\frac{4!}{2!}=12\\]</p><p>sätt.</p><p>Multiplikationsprincipen ger</p><p>\\[180\\cdot12=2160.\\]</p><p><strong>Svar: 2160 ord.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_bokstaver_med_upprepning_och_vokaler_tillsammans",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2160\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.219",
@@ -11581,11 +12142,11 @@ window.BANKMATF1 = [
     "s": "<p>Se de tre matematikböckerna som ett block och de två fysikböckerna som ett annat block.</p><p>Tillsammans med de tre återstående böckerna har vi då 5 objekt att ordna:</p><p>\\[5!\\]</p><p>Matematikböckerna kan ordnas inom sitt block på \\(3!\\) sätt och fysikböckerna på \\(2!\\) sätt.</p><p>Totalt</p><p>\\[5!\\cdot3!\\cdot2!=120\\cdot6\\cdot2=1440.\\]</p><p><strong>Svar: 1440 ordningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_med_upprepning",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_ordna_bocker_med_tva_blockvillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1440\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.220",
@@ -11598,11 +12159,11 @@ window.BANKMATF1 = [
     "s": "<p><strong>Steg 1: välj stolarna.</strong> Antalet sätt att välja 4 platser bland 10 utan att två valda platser ligger intill varandra är</p><p>\\[\\binom{10-4+1}{4}=\\binom74=35.\\]</p><p>Ett sätt att förstå formeln är att först tänka en tom stol mellan varje par valda stolar. Då återstår 7 möjliga lägen för de 4 valda stolarna.</p><p><strong>Steg 2: placera eleverna.</strong> De fyra olika eleverna kan ordnas på de valda stolarna på</p><p>\\[4!=24\\]</p><p>sätt.</p><p>Totalt</p><p>\\[35\\cdot24=840.\\]</p><p><strong>Svar: 840 placeringar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_platser_utan_grannar_och_placera_personer",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(840\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.221",
@@ -11615,10 +12176,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi ska välja tre positioner bland åtta, men inga två får vara intill varandra.</p><p>För tre valda positioner behövs minst två mellanrum mellan ettorna. Standardräkningen för 3 icke angränsande positioner bland 8 ger</p><p>\\[\\binom{8-3+1}{3}=\\binom63=20.\\]</p><p><strong>Det finns 20 koder.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kod_med_exakt_antal_ettor_utan_angransande_ettor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(20\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.222",
@@ -11631,10 +12193,11 @@ window.BANKMATF1 = [
     "s": "<p>Välj först vilka 2 av kodens 6 positioner som ska innehålla bokstäver:</p><p>\\[\\binom62=15.\\]</p><p>De två olika bokstäverna kan väljas och ordnas på</p><p>\\[5\\cdot4=20\\]</p><p>sätt.</p><p>De fyra olika siffrorna kan väljas och ordnas på</p><p>\\[10\\cdot9\\cdot8\\cdot7=5040\\]</p><p>sätt.</p><p>Totalt</p><p>\\[15\\cdot20\\cdot5040=1\\,512\\,000.\\]</p><p><strong>Svar: 1 512 000 koder.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kod_med_exakta_typer_av_tecken_utan_upprepning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(1\\,512\\,000\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.223",
@@ -11647,10 +12210,11 @@ window.BANKMATF1 = [
     "s": "<p>Det är enklast att använda komplementmetoden.</p><p>Alla ordnade val av tre olika bokstäver:</p><p>\\[26\\cdot25\\cdot24=15600.\\]</p><p>Det finns 21 icke-vokaler. Koder utan någon vokal har därför</p><p>\\[21\\cdot20\\cdot19=7980\\]</p><p>möjliga bokstavsdelar.</p><p>Med minst en vokal återstår</p><p>\\[15600-7980=7620\\]</p><p>bokstavsdelar.</p><p>Sifferdelen kan bildas på</p><p>\\[10\\cdot9\\cdot8=720\\]</p><p>sätt.</p><p>Totalt</p><p>\\[7620\\cdot720=5\\,486\\,400.\\]</p><p><strong>Svar: 5 486 400 koder.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_registreringskod_med_minst_en_vokal_och_utan_upprepning",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(5\\,486\\,400\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.224",
@@ -11663,10 +12227,11 @@ window.BANKMATF1 = [
     "s": "<p>Först väljer vi två positioner för A som inte ligger intill varandra. Antalet sådana val bland 6 positioner är</p><p>\\[\\binom{6-2+1}{2}=\\binom52=10.\\]</p><p>På de fyra återstående positionerna får vi välja B, C eller D fritt:</p><p>\\[3^4=81.\\]</p><p>Multiplikationsprincipen ger</p><p>\\[10\\cdot81=810.\\]</p><p><strong>Svar: 810 koder.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kod_med_exakt_tva_bestamda_tecken_utan_att_de_star_intill",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(810\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.225",
@@ -11679,10 +12244,11 @@ window.BANKMATF1 = [
     "s": "<p>Utan begränsningen finns</p><p>\\[8\\cdot7\\cdot6=336\\]</p><p>ordnade prispallar.</p><p>Räkna de förbjudna fallen: A och B är båda med. Den tredje personen väljs bland de övriga 6 och de tre personerna kan ordnas på prispallen på \\(3!\\) sätt:</p><p>\\[6\\cdot3!=36.\\]</p><p>Tillåtna prispallar:</p><p>\\[336-36=300.\\]</p><p><strong>Svar: 300.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_prispall_med_forbjudet_par",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(300\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.226",
@@ -11695,10 +12261,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi måste skilja på två fall eftersom hjärter kung både är hjärter och kung.</p><p><strong>Fall 1: hjärter kung är med.</strong> Välj ytterligare 1 hjärter bland de 12 hjärter som inte är kung och 3 kort bland de 36 kort som varken är hjärter eller kung:</p><p>\\[12\\binom{36}{3}=85\\,680.\\]</p><p><strong>Fall 2: den enda kungen är inte hjärter kung.</strong> Välj 1 av de 3 kungarna utanför hjärter, 2 hjärter bland de 12 hjärter som inte är kung och 2 övriga kort bland de 36 kort som varken är hjärter eller kung:</p><p>\\[3\\binom{12}{2}\\binom{36}{2}=124\\,740.\\]</p><p>Totalt</p><p>\\[85\\,680+124\\,740=210\\,420.\\]</p><p><strong>Svar: 210 420 händer.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_kortkombination_med_exakt_antal_hjarter_och_kungar",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(210\\,420\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.227",
@@ -11711,10 +12278,11 @@ window.BANKMATF1 = [
     "s": "<p>Totalt finns \\(\\binom{52}{5}\\) femkortshänder.</p><p>Vi använder komplement och additionsprincipen. Från alla händer tar vi bort händer utan ess och händer utan kung, men då har händer utan både ess och kung tagits bort två gånger och måste läggas tillbaka:</p><p>\\[N=\\binom{52}{5}-2\\binom{48}{5}+\\binom{44}{5}=260\\,360.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{260360}{\\binom{52}{5}}\\approx0,1002.\\]</p><p><strong>Sannolikheten är cirka 10,0 %.</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "kombinatorik_sannolikhet__sannolikhet_med_kombinatorik_utan_aterlaggning",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "kombinatorik_sannolikhet_kortprobabilitet_med_minst_ett_ess_och_minst_en_kung",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,1002\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "id": "1.228",
@@ -11727,10 +12295,11 @@ window.BANKMATF1 = [
     "s": "<p>Från A till B krävs 5 steg åt höger och 4 steg uppåt, totalt 9 steg. Utan begränsning finns</p><p>\\[\\binom94=126\\]</p><p>kortaste vägar.</p><p>Räkna sedan vägarna som passerar P. Från A till P krävs 2 steg åt höger och 1 upp:</p><p>\\[\\binom31=3.\\]</p><p>Från P till B krävs 3 steg åt höger och 3 upp:</p><p>\\[\\binom63=20.\\]</p><p>Alltså passerar</p><p>\\[3\\cdot20=60\\]</p><p>vägar P.</p><p>Antalet tillåtna vägar är därför</p><p>\\[126-60=66.\\]</p><p><strong>Svar: 66 vägar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_kortaste_vagar_i_rutnat_med_forbjuden_punkt",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(66\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.229",
@@ -11743,11 +12312,11 @@ window.BANKMATF1 = [
     "s": "<p>Utan kravet kan varje av de 6 uppgifterna tilldelas någon av 3 elever:</p><p>\\[3^6=729.\\]</p><p>Vi tar bort fördelningar där minst en elev inte får någon uppgift. Om en bestämd elev saknas kan varje uppgift gå till någon av de två andra:</p><p>\\[2^6=64.\\]</p><p>Det finns 3 val av den elev som saknas, så vi drar bort \\(3\\cdot64\\).</p><p>Fördelningar där två bestämda elever saknas har då dragits bort två gånger. Det finns 3 sådana fall, ett för varje elev som får alla uppgifter, så de läggs tillbaka:</p><p>\\[729-3\\cdot64+3=540.\\]</p><p><strong>Svar: 540 fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "kombinatoriska_principer__kombinatoriska_principer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "kombinatoriska_principer_fordela_olika_uppgifter_sa_att_alla_far_minst_en",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(540\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.230",
@@ -11760,11 +12329,11 @@ window.BANKMATF1 = [
     "s": "<p>Lägg först en kula i varje låda. Då återstår 4 kulor att fördela fritt. Sätt \\(x_A,x_B,x_C,x_D\\) till antalet extra kulor. Då</p><p>\\[x_A+x_B+x_C+x_D=4.\\]</p><p>Utan maxvillkoret finns</p><p>\\[\\binom73=35\\]</p><p>fördelningar.</p><p>Låda A får högst 3 kulor totalt, alltså högst 2 extra. Vi tar bort fallen \\(x_A\\ge3\\). Lägg 3 extra kulor i A; då återstår 1 extra kula att placera mellan fyra lådor:</p><p>\\[\\binom43=4.\\]</p><p>Alltså</p><p>\\[35-4=31.\\]</p><p><strong>Svar: 31 fördelningar.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__permutationer_och_kombinationer_blandat",
-    "formaga": [
-      "problemlösning",
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_fordela_identiska_objekt_med_bade_minimi_och_maximivillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(31\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "1.231",
@@ -11777,10 +12346,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi delar upp i två fall.</p><p><strong>Exakt 1 chef:</strong></p><p>\\[\\binom31\\binom64=3\\cdot15=45.\\]</p><p><strong>Exakt 2 chefer:</strong></p><p>\\[\\binom32\\binom63=3\\cdot20=60.\\]</p><p>Fallen kan inte överlappa, så vi adderar:</p><p>\\[45+60=105.\\]</p><p><strong>Svar: 105 styrelser.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "permutationer_kombinationer__kombinationer_med_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "permutationer_kombinationer_valja_styrelse_med_minimi_och_maximivillkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(105\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "3.110",
@@ -11793,10 +12363,11 @@ window.BANKMATF1 = [
     "s": "<p>För en kvadrat gäller \\(A=\\frac{d^2}{2}\\), eftersom \\(d=s\\sqrt2\\).</p><p>Derivera:</p><p>\\[\\frac{dA}{dt}=d\\frac{dd}{dt}.\\]</p><p>Sätt in \\(d=10\\) cm och \\(dd/dt=0,80\\) cm/s:</p><p>\\[\\frac{dA}{dt}=10\\cdot0,80=8,0.\\]</p><p><strong>Svar: arean ökar med \\(8,0\\ \\text{cm}^2/\\text{s}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterad_forandringshastighet_for_kvadrat_via_diagonal",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(8,0\\ \\text{cm}^2/\\text{s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "3.111",
@@ -11809,10 +12380,11 @@ window.BANKMATF1 = [
     "s": "<p>Volymen av en cylinder är \\(V=\\pi r^2h\\). Här är \\(r=2\\) dm konstant, så</p><p>\\[V=4\\pi h.\\]</p><p>Derivera:</p><p>\\[\\frac{dV}{dt}=4\\pi\\frac{dh}{dt}.\\]</p><p>Sätt in \\(dV/dt=1,6\\) dm³/min:</p><p>\\[1,6=4\\pi\\frac{dh}{dt}\\Rightarrow \\frac{dh}{dt}=\\frac{0,4}{\\pi}.\\]</p><p><strong>Svar: \\(dh/dt=\\frac{0,4}{\\pi}\\ \\text{dm/min}\\approx0,127\\ \\text{dm/min}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_cylinder_med_kant_inflode",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,127\\ \\text{dm/min}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "id": "3.112",
@@ -11825,10 +12397,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 420 255\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Facitfigur till två fordon på vinkelräta vägar\">\n<rect x=\"15\" y=\"15\" width=\"390\" height=\"225\" rx=\"8\" fill=\"white\" stroke=\"#d0d0d0\"/>\n<rect x=\"182\" y=\"25\" width=\"56\" height=\"205\" fill=\"#ececec\" stroke=\"#777\"/>\n<rect x=\"25\" y=\"102\" width=\"370\" height=\"56\" fill=\"#ececec\" stroke=\"#777\"/>\n<rect x=\"170\" y=\"90\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.6\"/>\n<circle cx=\"210\" cy=\"70\" r=\"4.5\" fill=\"#8b1e3f\"/><rect x=\"198\" y=\"57\" width=\"24\" height=\"18\" rx=\"3\" fill=\"#c95477\" stroke=\"#8b1e3f\"/>\n<circle cx=\"318\" cy=\"130\" r=\"4.5\" fill=\"#0e5d9e\"/><rect x=\"306\" y=\"121\" width=\"24\" height=\"18\" rx=\"3\" fill=\"#5fa8dd\" stroke=\"#0e5d9e\"/>\n<line x1=\"210\" y1=\"130\" x2=\"210\" y2=\"70\" stroke=\"#8b1e3f\" stroke-width=\"2\"/>\n<line x1=\"210\" y1=\"130\" x2=\"318\" y2=\"130\" stroke=\"#0e5d9e\" stroke-width=\"2\"/>\n<line x1=\"210\" y1=\"70\" x2=\"318\" y2=\"130\" stroke=\"#b48a18\" stroke-width=\"2.2\"/>\n<text x=\"192\" y=\"103\" font-size=\"15\">x</text>\n<text x=\"260\" y=\"124\" font-size=\"15\">y</text>\n<text x=\"256\" y=\"96\" font-size=\"15\">s</text>\n<line x1=\"210\" y1=\"54\" x2=\"210\" y2=\"32\" stroke=\"#8b1e3f\" stroke-width=\"2\"/>\n<polygon points=\"210,28 205,38 215,38\" fill=\"#8b1e3f\"/>\n<line x1=\"334\" y1=\"130\" x2=\"356\" y2=\"130\" stroke=\"#0e5d9e\" stroke-width=\"2\"/>\n<polygon points=\"360,130 350,125 350,135\" fill=\"#0e5d9e\"/>\n<text x=\"116\" y=\"50\" font-size=\"12\">72 km/h</text><text x=\"307\" y=\"166\" font-size=\"12\">v km/h</text>\n<text x=\"223\" y=\"145\" font-size=\"13\">korsning</text>\n<text x=\"195\" y=\"50\" font-size=\"13\">A</text>\n<text x=\"334\" y=\"145\" font-size=\"13\">B</text>\n</svg></span><p>Vi räknar i km. Låt \\(x\\) vara bussens avstånd till korsningen och \\(y\\) lastbilens avstånd till korsningen. Då är \\(x=0,5\\), \\(y=1,2\\).</p><p>Bussen närmar sig korsningen, så \\(x'=-72\\). Lastbilen kör bort från korsningen, så \\(y'=v\\). Avståndet mellan dem betecknas \\(s\\), och \\(s'=84\\).</p><p>Pythagoras ger \\(s^2=x^2+y^2\\), alltså \\(ss'=xx'+yy'\\).</p><p>Först är \\(s=\\sqrt{0,5^2+1,2^2}=1,3\\) km.</p><p>Sätt in:</p><p>\\[1,3\\cdot84=0,5\\cdot(-72)+1,2v.\\]</p><p>Det ger \\(109,2=-36+1,2v\\), alltså \\(1,2v=145,2\\) och</p><p>\\[v=121.\\]</p><p><strong>Svar: lastbilen kör \\(121\\ \\text{km/h}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_tva_fordon_ny_variant",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(121\\ \\text{km/h}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "3.113",
@@ -11841,10 +12414,11 @@ window.BANKMATF1 = [
     "s": "<p>Volymen ges av \\(V=\\frac13\\pi r^2h\\). Med \\(r=2h\\) får vi</p><p>\\[V=\\frac13\\pi(2h)^2h=\\frac43\\pi h^3.\\]</p><p>Derivera:</p><p>\\[\\frac{dV}{dt}=4\\pi h^2\\frac{dh}{dt}.\\]</p><p>När \\(h=2,0\\) dm blir</p><p>\\[3,0=4\\pi\\cdot2,0^2\\frac{dh}{dt}=16\\pi\\frac{dh}{dt}.\\]</p><p>Alltså</p><p>\\[\\frac{dh}{dt}=\\frac{3}{16\\pi}.\\]</p><p><strong>Svar: \\(dh/dt=\\frac{3}{16\\pi}\\ \\text{dm/s}\\approx0,0597\\ \\text{dm/s}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_konisk_behallare_med_sambandet_r_lika_med_2h",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,0597\\ \\text{dm/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "id": "3.114",
@@ -11857,10 +12431,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"220\" viewBox=\"0 0 410 250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Facitfigur till strålkastare och vägg\">\n<rect x=\"10\" y=\"10\" width=\"390\" height=\"230\" rx=\"10\" fill=\"#fcfcfd\" stroke=\"#d8dde6\"/>\n<rect x=\"65\" y=\"205\" width=\"280\" height=\"8\" rx=\"4\" fill=\"#d6c7b2\"/>\n<rect x=\"305\" y=\"45\" width=\"8\" height=\"168\" rx=\"4\" fill=\"#d8dde6\"/>\n<circle cx=\"105\" cy=\"205\" r=\"6\" fill=\"#444\"/>\n<line x1=\"105\" y1=\"205\" x2=\"305\" y2=\"120\" stroke=\"#d8a62a\" stroke-width=\"3\"/>\n<circle cx=\"305\" cy=\"120\" r=\"5\" fill=\"#f3ca62\" stroke=\"#a77b13\"/>\n<line x1=\"105\" y1=\"205\" x2=\"305\" y2=\"205\" stroke=\"#2a72b5\" stroke-width=\"2.4\"/>\n<line x1=\"305\" y1=\"205\" x2=\"305\" y2=\"120\" stroke=\"#a92d51\" stroke-width=\"2.4\"/>\n<text x=\"194\" y=\"198\" font-size=\"14\" fill=\"#1f5687\">12 m</text>\n<text x=\"314\" y=\"166\" font-size=\"14\" fill=\"#7f1f3d\">y</text>\n<path d=\"M87 197 A18 18 0 0 1 96 181\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<text x=\"92\" y=\"186\" font-size=\"13\" fill=\"#333\">v</text>\n</svg></span><p>Låt \\(y\\) vara höjden på väggen och \\(v\\) vinkeln mellan marken och ljusstrålen. Av figuren gäller</p><p>\\[\\tan v=\\frac{y}{12}.\\]</p><p>Derivera med avseende på tiden:</p><p>\\[\\sec^2(v)\\,v'=\\frac{1}{12}y'.\\]</p><p>När \\(y=5,0\\) m gäller \\(\\tan v=5/12\\). Då får vi från en 5-12-13-triangel att</p><p>\\[\\sec^2(v)=\\left(\\frac{13}{12}\\right)^2=\\frac{169}{144}.\\]</p><p>Sätt in \\(y'=3,0\\) m/s:</p><p>\\[\\frac{169}{144}v'=\\frac{3,0}{12}=\\frac14.\\]</p><p>Alltså</p><p>\\[v'=\\frac14\\cdot\\frac{144}{169}=\\frac{36}{169}\\approx0,213.\\]</p><p><strong>Svar: vinkeln ändras med ungefär \\(0,213\\ \\text{rad/s}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_stralkastare_och_vagg",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(0,213\\ \\text{rad/s}\\)",
+    "tolerans": 0.01,
+    "självrättning": true
   },
   {
     "id": "3.115",
@@ -11873,10 +12448,11 @@ window.BANKMATF1 = [
     "s": "<span class=\"fig smal\"><svg width=\"360\" height=\"225\" viewBox=\"0 0 420 250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Facitfigur till helikopter\">\n<rect x=\"12\" y=\"12\" width=\"396\" height=\"226\" rx=\"8\" fill=\"white\" stroke=\"#d0d0d0\"/>\n<line x1=\"40\" y1=\"195\" x2=\"390\" y2=\"195\" stroke=\"#666\" stroke-width=\"2.5\"/>\n<circle cx=\"90\" cy=\"195\" r=\"4\" fill=\"#333\"/><text x=\"64\" y=\"212\" font-size=\"13\">O</text>\n<line x1=\"250\" y1=\"85\" x2=\"282\" y2=\"85\" stroke=\"#333\" stroke-width=\"3\"/>\n<rect x=\"250\" y=\"90\" width=\"34\" height=\"13\" rx=\"5\" fill=\"#5fa8dd\" stroke=\"#0e5d9e\"/>\n<line x1=\"267\" y1=\"85\" x2=\"267\" y2=\"72\" stroke=\"#333\" stroke-width=\"2\"/>\n<line x1=\"245\" y1=\"72\" x2=\"289\" y2=\"72\" stroke=\"#333\" stroke-width=\"2\"/>\n<line x1=\"250\" y1=\"195\" x2=\"250\" y2=\"98\" stroke=\"#8b1e3f\" stroke-width=\"2\"/>\n<line x1=\"90\" y1=\"195\" x2=\"250\" y2=\"195\" stroke=\"#0e5d9e\" stroke-width=\"2\"/>\n<line x1=\"90\" y1=\"195\" x2=\"267\" y2=\"96\" stroke=\"#b48a18\" stroke-width=\"2.2\"/>\n<text x=\"171\" y=\"188\" font-size=\"14\">x</text>\n<text x=\"254\" y=\"151\" font-size=\"14\">1,2 km</text>\n<text x=\"178\" y=\"136\" font-size=\"14\">s</text>\n</svg></span><p>Låt \\(x\\) vara det horisontella avståndet från observatören till punkten rakt under helikoptern och \\(s\\) avståndet till helikoptern. Höjden är konstant 1,2 km.</p><p>Vi har sambandet</p><p>\\[s^2=x^2+1,2^2.\\]</p><p>Derivera:</p><p>\\[2ss'=2xx'\\quad\\Rightarrow\\quad ss'=xx'.\\]</p><p>När \\(x=1,6\\) km blir</p><p>\\[s=\\sqrt{1,6^2+1,2^2}=2,0\\ \\text{km}.\\]</p><p>Eftersom \\(s'=150\\) km/h får vi</p><p>\\[2,0\\cdot150=1,6x'.\\]</p><p>Alltså</p><p>\\[x'=\\frac{300}{1,6}=187,5.\\]</p><p><strong>Svar: helikopterns hastighet är \\(187,5\\ \\text{km/h}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_relaterade_forandringshastigheter_helikopter",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(187,5\\ \\text{km/h}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "3.116",
@@ -11889,10 +12465,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi linjäriserar funktionen \\(f(x)=\\ln x\\) kring \\(x=1\\).</p><p>\\[f(1)=0,\\qquad f'(x)=\\frac1x\\Rightarrow f'(1)=1.\\]</p><p>Tangentlinjen blir därför</p><p>\\[L(x)=f(1)+f'(1)(x-1)=x-1.\\]</p><p>Sätt in \\(x=1,05\\):</p><p>\\[\\ln(1,05)\\approx L(1,05)=1,05-1=0,05.\\]</p><p><strong>Svar: \\(\\ln(1,05)\\approx0,05\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "derivata_tillampningar__approximation_med_derivata",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_linjar_approximation_av_logaritm_med_figur",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "3.117",
@@ -11905,10 +12482,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi använder först sambandet för arean:</p><p>\\[A=\\pi r^2\\Rightarrow \\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}.\\]</p><p>När \\(r=3,0\\) cm och \\(dA/dt=6\\pi\\) får vi</p><p>\\[6\\pi=2\\pi\\cdot3,0\\cdot\\frac{dr}{dt}.\\]</p><p>Därför är \\(dr/dt=1,0\\) cm/s.</p><p>Omkretsen är \\(O=2\\pi r\\), alltså</p><p>\\[\\frac{dO}{dt}=2\\pi\\frac{dr}{dt}=2\\pi\\cdot1,0=2\\pi.\\]</p><p><strong>Svar: omkretsen ökar med \\(2\\pi\\ \\text{cm/s}\\).</strong></p>",
     "miniräknare": true,
     "geogebra": false,
-    "familj": "derivata_tillampningar__fordjupade_derivataproblem",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "derivata_tillampningar_cirkelns_omkrets_fran_areaandring",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(2\\pi\\ \\text{cm/s}\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.209",
@@ -11921,10 +12499,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi delar steg för steg med primtal:</p><p>\\[840=84\\cdot10=(2\\cdot2\\cdot3\\cdot7)(2\\cdot5).\\]</p><p>Samla lika faktorer:</p><p>\\[840=2^3\\cdot3\\cdot5\\cdot7.\\]</p><p><strong>Svar: \\(840=2^3\\cdot3\\cdot5\\cdot7\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__primtal_och_primtalsfaktorisering",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_primtalsfaktorisering",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.210",
@@ -11937,10 +12516,11 @@ window.BANKMATF1 = [
     "s": "<p>Primtalsfaktorisera båda talen:</p><p>\\[672=2^5\\cdot3\\cdot7,\\qquad 840=2^3\\cdot3\\cdot5\\cdot7.\\]</p><p>Den största gemensamma delaren fås av de gemensamma primtalen med minsta exponent:</p><p>\\[\\mathrm{{sgd}}(672,840)=2^3\\cdot3\\cdot7=168.\\]</p><p><strong>Svar: \\(\\mathrm{{sgd}}(672,840)=168\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_gemensamma_delare_med_primtalsfaktorisering",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(168\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.211",
@@ -11953,10 +12533,11 @@ window.BANKMATF1 = [
     "s": "<p>Primtalsfaktorisera:</p><p>\\[45=3^2\\cdot5,\\qquad 72=2^3\\cdot3^2.\\]</p><p>För minsta gemensamma multipel tar vi med alla primtal med största exponent:</p><p>\\[\\mathrm{{mgm}}(45,72)=2^3\\cdot3^2\\cdot5=360.\\]</p><p><strong>Svar: minsta gemensamma multipel är \\(360\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__primtal_och_primtalsfaktorisering",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_gemensamma_multipel_med_primtalsfaktorisering",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(360\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.212",
@@ -11969,10 +12550,11 @@ window.BANKMATF1 = [
     "s": "<p>Använd divisionsalgoritmen steg för steg:</p><p>\\[714=546\\cdot1+168\\]</p><p>\\[546=168\\cdot3+42\\]</p><p>\\[168=42\\cdot4+0\\]</p><p>När resten blir 0 är den sista positiva resten största gemensamma delaren.</p><p><strong>Svar: \\(\\mathrm{{sgd}}(714,546)=42\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_euklides_algoritm",
+    "svarstyp": "text",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.213",
@@ -11985,10 +12567,11 @@ window.BANKMATF1 = [
     "s": "<p>Primtalsfaktorisera:</p><p>\\[90=2\\cdot3^2\\cdot5,\\qquad 168=2^3\\cdot3\\cdot7.\\]</p><p>För att \\(90k\\) ska vara delbart med \\(168\\) måste produkten innehålla minst faktorerna \\(2^3\\), \\(3\\) och \\(7\\).</p><p>Talet 90 innehåller redan \\(2\\) och \\(3^2\\), men saknar två extra tvåor och en sjua.</p><p>Alltså räcker</p><p>\\[k=2^2\\cdot7=28.\\]</p><p><strong>Svar: \\(k=28\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__delbarhetsregler_och_villkor",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_faktor_for_delbarhet",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(28\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.214",
@@ -12001,10 +12584,11 @@ window.BANKMATF1 = [
     "s": "<p>Antalet kassar måste dela alla tre talen. Vi bestämmer därför</p><p>\\[\\mathrm{{sgd}}(210,294,378).\\]</p><p>Först</p><p>\\[\\mathrm{{sgd}}(210,294)=42.\\]</p><p>Sedan</p><p>\\[\\mathrm{{sgd}}(42,378)=42.\\]</p><p>Alltså kan man göra som mest \\(42\\) kassar.</p><p>Innehållet i varje kasse blir</p><p>\\[210/42=5\\text{ bananer},\\quad 294/42=7\\text{ äpplen},\\quad 378/42=9\\text{ juicepaket}.\\]</p><p><strong>Svar: \\(42\\) matkassar, med \\(5\\) bananer, \\(7\\) äpplen och \\(9\\) juicepaket i varje.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_identiska_paket_med_storsta_gemensamma_delare",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(9\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.215",
@@ -12017,10 +12601,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi söker minsta gemensamma multipel till \\(14\\), \\(18\\) och \\(24\\).</p><p>Primtalsfaktorisera:</p><p>\\[14=2\\cdot7,\\qquad 18=2\\cdot3^2,\\qquad 24=2^3\\cdot3.\\]</p><p>Ta alla primtal med största exponent:</p><p>\\[\\mathrm{{mgm}}(14,18,24)=2^3\\cdot3^2\\cdot7=504.\\]</p><p><strong>Svar: de går igång samtidigt nästa gång efter \\(504\\) minuter, alltså efter \\(8\\) timmar och \\(24\\) minuter.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_minsta_gemensamma_multipel_i_tidsschema",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(24\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.216",
@@ -12033,10 +12618,11 @@ window.BANKMATF1 = [
     "s": "<p>Primtalsfaktorisera:</p><p>\\[900=9\\cdot100=3^2\\cdot2^2\\cdot5^2=2^2\\cdot3^2\\cdot5^2.\\]</p><p>En positiv delare kan då skrivas som \\(2^a3^b5^c\\), där</p><p>\\[a,b,c\\in\\{0,1,2\\}.\\]</p><p>Det finns alltså 3 val för \\(a\\), 3 val för \\(b\\) och 3 val för \\(c\\).</p><p>Med multiplikationsprincipen fås</p><p>\\[3\\cdot3\\cdot3=27.\\]</p><p><strong>Svar: talet \\(900\\) har \\(27\\) positiva delare.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_antal_positiva_delare",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(27\\)",
+    "tolerans": null,
+    "självrättning": true
   },
   {
     "id": "2.217",
@@ -12049,10 +12635,11 @@ window.BANKMATF1 = [
     "s": "<p>Vi börjar med Euklides algoritm:</p><p>\\[612=342\\cdot1+270\\]</p><p>\\[342=270\\cdot1+72\\]</p><p>\\[270=72\\cdot3+54\\]</p><p>\\[72=54\\cdot1+18\\]</p><p>\\[54=18\\cdot3+0\\]</p><p>Alltså är \\(\\mathrm{{sgd}}(612,342)=18\\).</p><p>Nu går vi baklänges:</p><p>\\[18=72-54\\]</p><p>och \\(54=270-72\\cdot3\\), alltså</p><p>\\[18=72-(270-72\\cdot3)=4\\cdot72-270.\\]</p><p>Vidare är \\(72=342-270\\), så</p><p>\\[18=4(342-270)-270=4\\cdot342-5\\cdot270.\\]</p><p>Slutligen är \\(270=612-342\\), alltså</p><p>\\[18=4\\cdot342-5(612-342)=-5\\cdot612+9\\cdot342.\\]</p><p><strong>Svar: \\(\\mathrm{{sgd}}(612,342)=18\\) och \\(18=-5\\cdot612+9\\cdot342\\).</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__sgd_och_euklides_algoritm",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_euklides_algoritm_och_heltalskombination",
+    "svarstyp": "flera_delar",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false
   },
   {
     "id": "2.218",
@@ -12065,9 +12652,10 @@ window.BANKMATF1 = [
     "s": "<p>Plattans sidlängd måste dela både 504 och 378. Den största möjliga sidlängden är därför</p><p>\\[\\mathrm{{sgd}}(504,378).\\]</p><p>Med Euklides algoritm:</p><p>\\[504=378+126,\\qquad 378=3\\cdot126.\\]</p><p>Alltså är \\(\\mathrm{{sgd}}(504,378)=126\\).</p><p>Varje platta blir alltså \\(126\\) cm \\(\\times\\) \\(126\\) cm.</p><p>Antalet plattor blir</p><p>\\[\\frac{504}{126}\\cdot\\frac{378}{126}=4\\cdot3=12.\\]</p><p><strong>Svar: sidlängden ska vara \\(126\\) cm och det behövs \\(12\\) plattor.</strong></p>",
     "miniräknare": false,
     "geogebra": false,
-    "familj": "delbarhet__heltalsaritmetik",
-    "formaga": [
-      "procedur"
-    ]
+    "familj": "delbarhet_storsta_mojlig_brickstorlek_i_kontext",
+    "svarstyp": "numeriskt",
+    "rättSvar": "\\(12\\)",
+    "tolerans": null,
+    "självrättning": true
   }
 ];
