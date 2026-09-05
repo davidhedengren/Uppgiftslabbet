@@ -6909,5 +6909,762 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ]
+  },
+  {
+    "id": "6.51",
+    "kap": 6,
+    "omr": "tidsdilatation",
+    "niva": "A",
+    "typ": "jämföra klassisk och relativistisk beräkning av hur många myoner som når marken",
+    "poang": "(0/2/2)",
+    "t": "<p>Myoner bildas högt uppe i atmosfären när kosmisk strålning träffar luftmolekyler. En myon bildas 15,0 km över marken och rör sig rakt nedåt med farten 0,995<em>c</em>. Myonens halveringstid är 1,50 μs mätt i myonens eget vilosystem.</p><p><strong>a)</strong> Hur lång tid tar färden till marken mätt från marken? Hur stor andel av myonerna skulle nå marken om man räknade helt klassiskt, utan relativitetsteori?</p><p><strong>b)</strong> Bestäm andelen som faktiskt når marken. Visa att du får samma svar oavsett om du räknar i markens eller i myonens vilosystem.</p><span class=\"fig\"><svg viewBox=\"0 0 250 205\" width=\"240\" height=\"196.8\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Myon som bildas 15,0 km över marken och rör sig rakt nedåt mot marken.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>Myon som bildas 15,0 km över marken och rör sig rakt nedåt mot marken.</title><rect x=\"30\" y=\"175\" width=\"200\" height=\"13\" fill=\"#EDEEF1\"/><line x1=\"30\" y1=\"175\" x2=\"230\" y2=\"175\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"92\" y1=\"32\" x2=\"230\" y2=\"32\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><text x=\"161\" y=\"22\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">myonen bildas här</text><circle cx=\"150\" cy=\"32\" r=\"4.6\" fill=\"#2B2527\"/><line x1=\"150\" y1=\"45\" x2=\"150\" y2=\"150\" stroke=\"#2A5D9E\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"150,161 154.4,151.5 145.6,151.5\" fill=\"#2A5D9E\"/><text x=\"160\" y=\"104\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v = 0,995c</text><line x1=\"70\" y1=\"32\" x2=\"70\" y2=\"175\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"65\" y1=\"32\" x2=\"75\" y2=\"32\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"175\" x2=\"75\" y2=\"175\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"63\" y=\"107\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">15,0 km</text><text x=\"130\" y=\"199\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">marken</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Färdtiden i markens system fås ur sträcka delat med fart.</p><div class=\"facit-matte\">\\[t=\\frac{15{,}0\\cdot10^3}{0{,}995\\cdot2{,}998\\cdot10^8}=5{,}03\\cdot10^{-5}\\ \\mathrm s=50{,}3\\ \\mathrm{\\mu s}\\]\\[n=\\frac{50{,}3}{1{,}50}=33{,}5\\ \\text{halveringstider}\\]\\[\\text{andel}=2^{-33{,}5}=8{,}1\\cdot10^{-11}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Färden tar \\(50{,}3\\ \\mathrm{\\mu s}\\). Klassiskt skulle bara ungefär \\(1\\) myon på \\(10^{10}\\) nå marken, alltså i praktiken ingen alls.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Sönderfallet styrs av myonens <em>egentid</em>. Gammafaktorn är</p><div class=\"facit-matte\">\\[\\gamma=\\frac1{\\sqrt{1-0{,}995^2}}=10{,}01\\]</div><p>I markens system: myonens klocka går långsamt, så egentiden blir</p><div class=\"facit-matte\">\\[\\tau=\\frac{t}{\\gamma}=\\frac{50{,}3}{10{,}01}=5{,}02\\ \\mathrm{\\mu s}\\]</div><p>I myonens system: sträckan är längdkontraherad, och myonen står stilla.</p><div class=\"facit-matte\">\\[L=\\frac{15{,}0}{10{,}01}=1{,}50\\ \\mathrm{km}\\]\\[\\tau=\\frac{1{,}50\\cdot10^3}{0{,}995\\cdot2{,}998\\cdot10^8}=5{,}02\\ \\mathrm{\\mu s}\\]</div><p>Båda systemen ger samma egentid. Antalet halveringstider blir</p><div class=\"facit-matte\">\\[n=\\frac{5{,}02}{1{,}50}=3{,}35\\]\\[\\text{andel}=2^{-3{,}35}=0{,}098\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(9{,}8\\ \\%\\) av myonerna når marken. Markens och myonens system ger samma svar.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> De två systemen förklarar samma sak på olika sätt. Från marken är det myonens klocka som går långsamt, från myonen är det atmosfären som är tunnare. Egentiden mellan bildning och nedslag är densamma, och det är den som bestämmer sönderfallet.</p></div>",
+    "familj": "tidsdilatation__tidsdilatation_och_egentid",
+    "formaga": [
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "6.52",
+    "kap": 6,
+    "omr": "langdkontraktion",
+    "niva": "A",
+    "typ": "analysera stångparadoxen i två referenssystem, ur figur, sökt tidsskillnad",
+    "poang": "(0/2/2)",
+    "t": "<p>En stång är 12,0 m lång när den ligger stilla. Stången far genom ett garage med farten 0,800<em>c</em>. Garaget är 8,00 m långt i sitt eget vilosystem och har en port i vardera änden.</p><p><strong>a)</strong> Visa att stången ryms helt inne i garaget i garagets vilosystem, men inte i stångens vilosystem.</p><p><strong>b)</strong> I garagets system stängs båda portarna samtidigt i det ögonblick stången ryms. Hur långt före varandra stängs portarna räknat i stångens vilosystem? Förklara med hjälp av resultatet hur båda beskrivningarna kan vara riktiga.</p><span class=\"fig\"><svg viewBox=\"0 0 250 210\" width=\"245\" height=\"205.8\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Stång och garage sedda i garagets vilosystem och i stångens vilosystem.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>Stång och garage sedda i garagets vilosystem och i stångens vilosystem.</title><text x=\"125\" y=\"28\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">garagets system</text><line x1=\"40\" y1=\"40\" x2=\"120.0\" y2=\"40\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"70\" x2=\"120.0\" y2=\"70\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"70\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40\" x2=\"120.0\" y2=\"70\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"55\" x2=\"116.0\" y2=\"55\" stroke=\"#B43123\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"175\" y=\"51\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">stång 7,20 m</text><text x=\"175\" y=\"65\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">garage 8,0 m</text><text x=\"125\" y=\"128\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">stångens system</text><line x1=\"76\" y1=\"140\" x2=\"124.0\" y2=\"140\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"170\" x2=\"124.0\" y2=\"170\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"140\" x2=\"76\" y2=\"170\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"140\" x2=\"124.0\" y2=\"170\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"155\" x2=\"160.0\" y2=\"155\" stroke=\"#B43123\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"175\" y=\"151\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">stång 12,0 m</text><text x=\"175\" y=\"165\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">garage 4,80 m</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\gamma=\\frac1{\\sqrt{1-0{,}800^2}}=\\frac1{0{,}600}=1{,}667\\]</div><p>I garagets system är stången kontraherad:</p><div class=\"facit-matte\">\\[L=\\frac{12{,}0}{1{,}667}=7{,}20\\ \\mathrm m&lt;8{,}00\\ \\mathrm m\\]</div><p>I stångens system är det i stället garaget som är kontraherat:</p><div class=\"facit-matte\">\\[L=\\frac{8{,}00}{1{,}667}=4{,}80\\ \\mathrm m&lt;12{,}0\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> I garagets system ryms stången med 0,80 m till godo. I stångens system är garaget bara 4,80 m långt, så stången ryms inte alls.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Händelser som är samtidiga i ett system är det inte i ett annat. Med \\(\\Delta t=0\\) och \\(\\Delta x=8{,}00\\ \\mathrm m\\) i garagets system blir tidsskillnaden i stångens system</p><div class=\"facit-matte\">\\[\\Delta t'=\\gamma\\frac{v\\,\\Delta x}{c^2}=\\frac{1{,}667\\cdot0{,}800\\cdot8{,}00}{2{,}998\\cdot10^8}=3{,}56\\cdot10^{-8}\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Portarna stängs \\(35{,}6\\ \\mathrm{ns}\\) före varandra i stångens system. Den bortre porten hinner stängas och öppnas igen innan den bakre stängs, så stången kläms aldrig. Båda beskrivningarna är riktiga.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Paradoxen löses inte av längdkontraktionen utan av att samtidighet är relativ. Frågan om stången ryms har inget svar förrän man säger i vilket system portarna stängs samtidigt.</p></div>",
+    "familj": "langdkontraktion__langdkontraktion_och_egenlangd",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "6.53",
+    "kap": 6,
+    "omr": "relativistisk_energi",
+    "niva": "A",
+    "typ": "beräkna gammafaktor, fart, kontraherad längd och egentid i en accelerator, ur text",
+    "poang": "(0/1/3)",
+    "t": "<p>I en linjäracceleratorn accelereras elektroner från vila till totalenergin 50,0 MeV. Acceleratorröret är 30,0 m långt mätt i laboratoriet. Elektronens viloenergi är 0,511 MeV.</p><p><strong>a)</strong> Bestäm gammafaktorn och elektronens fart.</p><p><strong>b)</strong> Hur långt är acceleratorröret mätt i elektronens vilosystem?</p><p><strong>c)</strong> Hur lång tid tar passagen mätt med laboratoriets klocka respektive med elektronens egen klocka? Kontrollera att de två tiderna hänger ihop som de ska.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\gamma=\\frac{E}{E_0}=\\frac{50{,}0}{0{,}511}=97{,}85\\]\\[v=c\\sqrt{1-\\frac1{\\gamma^2}}=c\\sqrt{1-\\frac1{97{,}85^2}}=0{,}999948c\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(\\gamma=97{,}9\\) och \\(v=0{,}999948c=2{,}9978\\cdot10^8\\ \\mathrm{m/s}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Röret rör sig i elektronens system och är därför kontraherat.</p><div class=\"facit-matte\">\\[L=\\frac{30{,}0}{97{,}85}=0{,}307\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Röret är bara \\(30{,}7\\ \\mathrm{cm}\\) långt för elektronen.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[t=\\frac{30{,}0}{2{,}9978\\cdot10^8}=1{,}001\\cdot10^{-7}\\ \\mathrm s=100{,}1\\ \\mathrm{ns}\\]\\[\\tau=\\frac{0{,}307}{2{,}9978\\cdot10^8}=1{,}02\\cdot10^{-9}\\ \\mathrm s=1{,}02\\ \\mathrm{ns}\\]</div><p>Kontrollen är att egentiden ska vara laboratorietiden delad med gammafaktorn:</p><div class=\"facit-matte\">\\[\\frac{t}{\\gamma}=\\frac{100{,}1}{97{,}85}=1{,}02\\ \\mathrm{ns}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Passagen tar \\(100{,}1\\ \\mathrm{ns}\\) i laboratoriet och \\(1{,}02\\ \\mathrm{ns}\\) för elektronen, vilket stämmer med \\(\\tau=t/\\gamma\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Längdkontraktion och tidsdilatation är inte två oberoende effekter. Räknar man sträckan i elektronens system måste man också använda elektronens egentid, och då blir farten densamma i båda systemen.</p></div>",
+    "familj": "relativistisk_energi__totalenergi_och_viloenergi",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "6.54",
+    "kap": 6,
+    "omr": "massa_och_energi",
+    "niva": "A",
+    "typ": "beräkna solens massförlust per sekund och bränslets livslängd, ur text",
+    "poang": "(0/2/2)",
+    "t": "<p>Solen strålar ut effekten 3,828·10<sup>26</sup> W. Energin kommer från fusion av väte till helium, en process där 0,71 % av det förbrukade vätets massa omvandlas till energi. Solens massa är 1,989·10<sup>30</sup> kg.</p><p><strong>a)</strong> Hur stor massa omvandlas till energi varje sekund?</p><p><strong>b)</strong> Hur mycket väte förbrukas varje sekund?</p><p><strong>c)</strong> Antag att 10 % av solens massa kan användas som bränsle. Hur länge räcker det? Jämför med solens nuvarande ålder på cirka 4,6 miljarder år.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Utstrålad energi per sekund motsvarar en massa enligt \\(E=mc^2\\).</p><div class=\"facit-matte\">\\[m=\\frac{P}{c^2}=\\frac{3{,}828\\cdot10^{26}}{(2{,}998\\cdot10^8)^2}=4{,}26\\cdot10^{9}\\ \\mathrm{kg}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(4{,}26\\cdot10^{9}\\ \\mathrm{kg}\\) per sekund, alltså drygt fyra miljoner ton.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Endast 0,71 % av vätets massa blir energi.</p><div class=\"facit-matte\">\\[m_{\\mathrm{väte}}=\\frac{4{,}26\\cdot10^{9}}{0{,}0071}=6{,}00\\cdot10^{11}\\ \\mathrm{kg}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(6{,}0\\cdot10^{11}\\ \\mathrm{kg}\\) väte per sekund.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[m_{\\mathrm{bränsle}}=0{,}10\\cdot1{,}989\\cdot10^{30}=1{,}989\\cdot10^{29}\\ \\mathrm{kg}\\]\\[t=\\frac{1{,}989\\cdot10^{29}}{6{,}00\\cdot10^{11}}=3{,}32\\cdot10^{17}\\ \\mathrm s\\]\\[t=1{,}05\\cdot10^{10}\\ \\mathrm{år}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Bränslet räcker i cirka \\(10{,}5\\) miljarder år. Solen har använt ungefär \\(4{,}6\\) av dem, så den har drygt hälften kvar.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Massförlusten på fyra miljoner ton i sekunden låter enorm, men på 4,6 miljarder år motsvarar den bara omkring 0,03 % av solens massa. Det är \\(c^2\\) som gör att en liten massa räcker till mycket energi.</p></div>",
+    "familj": "massa_och_energi__massa_energi_ekvivalens",
+    "formaga": [
+      "modellering",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "1.80",
+    "kap": 1,
+    "omr": "cirkel",
+    "niva": "C",
+    "typ": "bestämma minsta fart i högsta punkten och kraften i lägsta punkten för en hink i lodrät cirkel, ur figur, sökt fart och kraft",
+    "poang": "(1/2/0)",
+    "t": "<p>En hink med vatten svängs runt i en lodrät cirkel med radien 0,90 m. Hinken med innehåll har massan 1,8 kg.</p><p><strong>a)</strong> Hur stor måste farten minst vara i banans högsta punkt för att vattnet ska stanna kvar i hinken?</p><p><strong>b)</strong> Hinken svängs med den konstanta farten 4,0 m/s. Hur stor kraft måste handen utöva på hinken i banans lägsta punkt?</p><span class=\"fig\"><svg viewBox=\"0 0 250 205\" width=\"240\" height=\"196.8\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Hink med vatten som svängs i en lodrät cirkel med radien 0,90 m.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>Hink med vatten som svängs i en lodrät cirkel med radien 0,90 m.</title><circle cx=\"125\" cy=\"105\" r=\"62\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.4\" stroke-dasharray=\"6 5\"/><circle cx=\"125\" cy=\"105\" r=\"2.6\" fill=\"#2B2527\"/><line x1=\"125\" y1=\"105\" x2=\"187\" y2=\"105\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><text x=\"156\" y=\"100\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">r = 0,90 m</text><path d=\"M 116 30 L 134 30 L 138 46 L 112 46 Z\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"112\" y1=\"46\" x2=\"138\" y2=\"46\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"125\" y=\"20\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">högsta punkten</text><path d=\"M 112 164 L 138 164 L 134 180 L 116 180 Z\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"112\" y1=\"164\" x2=\"138\" y2=\"164\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"125\" y=\"196\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">lägsta punkten</text><line x1=\"150\" y1=\"52\" x2=\"176\" y2=\"72\" stroke=\"#2A5D9E\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"184,79 172,77 178,68\" fill=\"#2A5D9E\"/><text x=\"196\" y=\"62\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I gränsfallet räcker tyngdkraften ensam som centripetalkraft. Vattnet trycker då inte mot hinkens botten, alltså är normalkraften noll.</p><div class=\"facit-matte\">\\[mg=\\frac{mv^2}{r}\\quad\\Longrightarrow\\quad v=\\sqrt{gr}\\]\\[v=\\sqrt{9{,}82\\cdot0{,}90}=2{,}97\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten måste vara minst \\(2{,}97\\ \\mathrm{m/s}\\). Massan spelar ingen roll.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I lägsta punkten pekar centripetalaccelerationen uppåt, mot cirkelns mitt. Handens kraft uppåt minus tyngdkraften nedåt ger centripetalkraften.</p><div class=\"facit-matte\">\\[F-mg=\\frac{mv^2}{r}\\quad\\Longrightarrow\\quad F=m\\left(g+\\frac{v^2}{r}\\right)\\]\\[F=1{,}8\\left(9{,}82+\\frac{4{,}0^2}{0{,}90}\\right)=1{,}8\\cdot27{,}60=49{,}7\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Handen måste dra med kraften \\(49{,}7\\ \\mathrm N\\), nästan tre gånger tyngdkraften \\(mg=17{,}7\\ \\mathrm N\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Samma cirkelrörelse ger helt olika krafter i de två punkterna. I toppen hjälper tyngdkraften till, i botten motverkar den, och därför blir kraften störst längst ner.</p></div>",
+    "familj": "cirkel__lodrat_cirkelbana",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.172",
+    "kap": 2,
+    "omr": "ljud_horsel",
+    "niva": "C",
+    "typ": "beräkna ljudnivå ur ljudeffekt och bestämma avståndet för en given nivå, ur text, sökt ljudnivå och avstånd",
+    "poang": "(1/2/0)",
+    "t": "<p>En högtalare på ett torg avger ljudeffekten 0,80 W jämnt åt alla håll. Hörtröskeln är 1,0·10<sup>−12</sup> W/m<sup>2</sup>.</p><p><strong>a)</strong> Bestäm ljudnivån 4,0 m från högtalaren.</p><p><strong>b)</strong> På vilket avstånd har ljudnivån sjunkit till 70 dB?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Effekten fördelas jämnt över en klotyta.</p><div class=\"facit-matte\">\\[I=\\frac{P}{4\\pi r^2}=\\frac{0{,}80}{4\\pi\\cdot4{,}0^2}=3{,}98\\cdot10^{-3}\\ \\mathrm{W/m^2}\\]\\[\\beta=10\\log\\frac{I}{I_0}=10\\log\\frac{3{,}98\\cdot10^{-3}}{1{,}0\\cdot10^{-12}}=96{,}0\\ \\mathrm{dB}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ljudnivån är \\(96\\ \\mathrm{dB}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Räkna baklänges: först intensiteten som svarar mot 70 dB, sedan avståndet.</p><div class=\"facit-matte\">\\[I=I_0\\cdot10^{7{,}0}=1{,}0\\cdot10^{-5}\\ \\mathrm{W/m^2}\\]\\[r=\\sqrt{\\frac{P}{4\\pi I}}=\\sqrt{\\frac{0{,}80}{4\\pi\\cdot1{,}0\\cdot10^{-5}}}=79{,}8\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Nivån är nere i \\(70\\ \\mathrm{dB}\\) på cirka \\(80\\ \\mathrm m\\) avstånd.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> En sänkning med 26 dB motsvarar att intensiteten blir 400 gånger mindre. Eftersom intensiteten avtar med kvadraten på avståndet krävs bara 20 gånger längre avstånd.</p></div>",
+    "familj": "ljud_horsel__ljudintensitet_och_horsel",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.173",
+    "kap": 2,
+    "omr": "extrema_frekvenser",
+    "niva": "C",
+    "typ": "beräkna frekvens och våglängd för infraljud från en rotor och jämföra med hörselområdet, ur text, sökt frekvens och våglängd",
+    "poang": "(1/2/0)",
+    "t": "<p>Ett vindkraftverk har tre rotorblad och rotorn snurrar 12 varv per minut. Varje gång ett blad passerar tornet bildas en tryckpuls i luften. Ljudhastigheten är 340 m/s.</p><p><strong>a)</strong> Bestäm tryckpulsernas frekvens.</p><p><strong>b)</strong> Bestäm våglängden.</p><p><strong>c)</strong> Förklara varför en person intill verket inte hör pulserna som en ton, trots att de kan kännas.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Ett varv ger tre pulser eftersom rotorn har tre blad.</p><div class=\"facit-matte\">\\[f_{\\mathrm{varv}}=\\frac{12}{60}=0{,}20\\ \\mathrm{Hz}\\]\\[f=3\\cdot0{,}20=0{,}60\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är \\(0{,}60\\ \\mathrm{Hz}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\lambda=\\frac{v}{f}=\\frac{340}{0{,}60}=567\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är cirka \\(570\\ \\mathrm m\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Frekvensen 0,60 Hz ligger långt under hörselområdets nedre gräns på ungefär 20 Hz. Ljudet är infraljud, som örat inte uppfattar som en ton. Tryckvariationerna kan ändå kännas i kroppen och få föremål att vibrera.</p><p class=\"facit-svar\"><strong>Svar:</strong> Ljudet är infraljud och ligger under hörselområdet.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Våglängden på ett halvt kilometer är mycket längre än husväggar och plank. Därför böjer sig infraljud runt hinder i stället för att stoppas av dem, och når mycket längre än hörbart ljud.</p></div>",
+    "familj": "extrema_frekvenser__infraljud",
+    "formaga": [
+      "modellering",
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.103",
+    "kap": 3,
+    "omr": "induktion",
+    "niva": "C",
+    "typ": "beräkna medelinducerad spänning när en slinga vrids i ett fält och bestämma strömriktningen med Lenz lag, ur figur, sökt spänning ström och riktning",
+    "poang": "(1/2/0)",
+    "t": "<p>En kvadratisk spole med sidan 0,15 m och 40 varv ligger i ett homogent magnetfält på 0,25 T. Från början är spolens plan vinkelrätt mot fältet. Spolen vrids ett kvarts varv på 0,050 s, så att planet blir parallellt med fältet. Spolens resistans är 2,0 Ω.</p><p><strong>a)</strong> Bestäm medelvärdet av den inducerade spänningen.</p><p><strong>b)</strong> Bestäm medelströmmen och avgör åt vilket håll den går.</p><span class=\"fig\"><svg viewBox=\"0 0 250 148\" width=\"250\" height=\"148\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Kvadratisk slinga som vrids 90 grader i ett magnetfält riktat in i pappret.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>Kvadratisk slinga som vrids 90 grader i ett magnetfält riktat in i pappret.</title><path d=\"M 20.6 30.6 L 27.4 37.4 M 20.6 37.4 L 27.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 48.6 30.6 L 55.4 37.4 M 48.6 37.4 L 55.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 76.6 30.6 L 83.4 37.4 M 76.6 37.4 L 83.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 104.6 30.6 L 111.4 37.4 M 104.6 37.4 L 111.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 132.6 30.6 L 139.4 37.4 M 132.6 37.4 L 139.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 160.6 30.6 L 167.4 37.4 M 160.6 37.4 L 167.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 188.6 30.6 L 195.4 37.4 M 188.6 37.4 L 195.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 216.6 30.6 L 223.4 37.4 M 216.6 37.4 L 223.4 30.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 20.6 58.6 L 27.4 65.4 M 20.6 65.4 L 27.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 48.6 58.6 L 55.4 65.4 M 48.6 65.4 L 55.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 76.6 58.6 L 83.4 65.4 M 76.6 65.4 L 83.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 104.6 58.6 L 111.4 65.4 M 104.6 65.4 L 111.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 132.6 58.6 L 139.4 65.4 M 132.6 65.4 L 139.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 160.6 58.6 L 167.4 65.4 M 160.6 65.4 L 167.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 188.6 58.6 L 195.4 65.4 M 188.6 65.4 L 195.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 216.6 58.6 L 223.4 65.4 M 216.6 65.4 L 223.4 58.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 20.6 86.6 L 27.4 93.4 M 20.6 93.4 L 27.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 48.6 86.6 L 55.4 93.4 M 48.6 93.4 L 55.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 76.6 86.6 L 83.4 93.4 M 76.6 93.4 L 83.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 104.6 86.6 L 111.4 93.4 M 104.6 93.4 L 111.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 132.6 86.6 L 139.4 93.4 M 132.6 93.4 L 139.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 160.6 86.6 L 167.4 93.4 M 160.6 93.4 L 167.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 188.6 86.6 L 195.4 93.4 M 188.6 93.4 L 195.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 216.6 86.6 L 223.4 93.4 M 216.6 93.4 L 223.4 86.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 20.6 114.6 L 27.4 121.4 M 20.6 121.4 L 27.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 48.6 114.6 L 55.4 121.4 M 48.6 121.4 L 55.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 76.6 114.6 L 83.4 121.4 M 76.6 121.4 L 83.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 104.6 114.6 L 111.4 121.4 M 104.6 121.4 L 111.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 132.6 114.6 L 139.4 121.4 M 132.6 121.4 L 139.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 160.6 114.6 L 167.4 121.4 M 160.6 121.4 L 167.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 188.6 114.6 L 195.4 121.4 M 188.6 121.4 L 195.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 216.6 114.6 L 223.4 121.4 M 216.6 121.4 L 223.4 114.6\" stroke=\"#2A5D9E\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"52\" y=\"48\" width=\"56\" height=\"56\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#2B2527\" stroke-width=\"2.6\"/><text x=\"80\" y=\"140\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">före</text><line x1=\"128\" y1=\"76\" x2=\"152\" y2=\"76\" stroke=\"#B43123\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"162,76 150,80.4 150,71.6\" fill=\"#B43123\"/><text x=\"145\" y=\"62\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">vrids 90°</text><rect x=\"196\" y=\"48\" width=\"9\" height=\"56\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#2B2527\" stroke-width=\"2.6\"/><text x=\"200\" y=\"140\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">efter</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Flödet genom spolen går från maximalt till noll när planet vrids parallellt med fältet.</p><div class=\"facit-matte\">\\[A=0{,}15^2=0{,}0225\\ \\mathrm{m^2}\\]\\[\\Delta\\Phi=BA-0=0{,}25\\cdot0{,}0225=5{,}63\\cdot10^{-3}\\ \\mathrm{Wb}\\]\\[\\varepsilon=N\\frac{\\Delta\\Phi}{\\Delta t}=40\\cdot\\frac{5{,}63\\cdot10^{-3}}{0{,}050}=4{,}5\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Medelspänningen är \\(4{,}5\\ \\mathrm V\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[I=\\frac{\\varepsilon}{R}=\\frac{4{,}5}{2{,}0}=2{,}25\\ \\mathrm A\\]</div><p>Flödet genom spolen minskar. Enligt Lenz lag motverkar den inducerade strömmen förändringen, alltså försöker den upprätthålla flödet. Strömmen går därför åt det håll som ger ett eget magnetfält inuti spolen åt samma håll som det yttre fältet, det vill säga medurs sett i fältets riktning.</p><p class=\"facit-svar\"><strong>Svar:</strong> Medelströmmen är \\(2{,}3\\ \\mathrm A\\) och den går medurs sett i fältets riktning.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Spolen behöver inte flyttas för att en spänning ska induceras. Det räcker att flödet ändras, och här sker det genom att spolens riktning ändras medan fältet är konstant.</p></div>",
+    "familj": "induktion__faradays_och_lenz_lag",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "3.104",
+    "kap": 3,
+    "omr": "kondensatorer",
+    "niva": "C",
+    "typ": "beräkna laddning och undersöka hur kapacitans spänning och energi ändras när plattavståndet fördubblas, ur text, sökt laddning spänning och energi",
+    "poang": "(1/2/0)",
+    "t": "<p>En plattkondensator har kapacitansen 4,7 μF och laddas upp till spänningen 12 V.</p><p><strong>a)</strong> Bestäm laddningen på plattorna.</p><p><strong>b)</strong> Kondensatorn kopplas bort från spänningskällan och plattavståndet fördubblas. Bestäm den nya kapacitansen och den nya spänningen.</p><p><strong>c)</strong> Jämför den lagrade energin före och efter. Varifrån kommer skillnaden?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[Q=CU=4{,}7\\cdot10^{-6}\\cdot12=5{,}6\\cdot10^{-5}\\ \\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(56\\ \\mathrm{\\mu C}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Kapacitansen är omvänt proportionell mot plattavståndet. Eftersom kondensatorn är bortkopplad kan laddningen inte ändras.</p><div class=\"facit-matte\">\\[C_2=\\frac{C_1}{2}=2{,}35\\ \\mathrm{\\mu F}\\]\\[U_2=\\frac{Q}{C_2}=\\frac{5{,}6\\cdot10^{-5}}{2{,}35\\cdot10^{-6}}=24\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Kapacitansen halveras till \\(2{,}35\\ \\mathrm{\\mu F}\\) och spänningen fördubblas till \\(24\\ \\mathrm V\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[W_1=\\tfrac12C_1U_1^2=\\tfrac12\\cdot4{,}7\\cdot10^{-6}\\cdot12^2=3{,}4\\cdot10^{-4}\\ \\mathrm J\\]\\[W_2=\\tfrac12C_2U_2^2=\\tfrac12\\cdot2{,}35\\cdot10^{-6}\\cdot24^2=6{,}8\\cdot10^{-4}\\ \\mathrm J\\]</div><p>Energin fördubblas. Plattorna har olika laddning och drar därför till sig varandra, så man måste utföra ett arbete för att dra isär dem. Det arbetet lagras i kondensatorn.</p><p class=\"facit-svar\"><strong>Svar:</strong> Energin ökar från \\(0{,}34\\ \\mathrm{mJ}\\) till \\(0{,}68\\ \\mathrm{mJ}\\). Ökningen är det arbete som utförs när plattorna dras isär.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är avgörande att kondensatorn är bortkopplad. Hade den suttit kvar i kretsen hade spänningen varit låst och laddningen i stället halverats.</p></div>",
+    "familj": "kondensatorer__kapacitans_laddning_och_spanning",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "4.51",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "C",
+    "typ": "bestämma utträdesarbete och gränsvåglängd ur fotonenergi och elektronernas rörelseenergi, ur text, sökt utträdesarbete och gränsvåglängd",
+    "poang": "(1/2/0)",
+    "t": "<p>En metallyta belyses med ljus av våglängden 400 nm. De utsända elektronernas maximala rörelseenergi mäts till 0,80 eV. Använd att <em>hc</em> = 1240 eV·nm.</p><p><strong>a)</strong> Bestäm metallens utträdesarbete.</p><p><strong>b)</strong> Bestäm gränsvåglängden för metallen.</p><p><strong>c)</strong> Man byter till ljus med våglängden 600 nm och ökar samtidigt intensiteten kraftigt. Vad händer med elektronerna?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Fotonens energi går dels till att lösgöra elektronen, dels till dess rörelseenergi.</p><div class=\"facit-matte\">\\[E=\\frac{hc}{\\lambda}=\\frac{1240}{400}=3{,}10\\ \\mathrm{eV}\\]\\[W=E-E_k=3{,}10-0{,}80=2{,}30\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utträdesarbetet är \\(2{,}30\\ \\mathrm{eV}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Vid gränsvåglängden räcker fotonenergin precis till utträdesarbetet.</p><div class=\"facit-matte\">\\[\\lambda_0=\\frac{hc}{W}=\\frac{1240}{2{,}30}=539\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Gränsvåglängden är \\(539\\ \\mathrm{nm}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[E=\\frac{1240}{600}=2{,}07\\ \\mathrm{eV}&lt;2{,}30\\ \\mathrm{eV}\\]</div><p>Varje foton har för lite energi för att lösgöra en elektron. Att öka intensiteten ger fler fotoner men inte mer energi per foton, så inga elektroner sänds ut alls.</p><p class=\"facit-svar\"><strong>Svar:</strong> Inga elektroner sänds ut, hur stark belysningen än är.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det här är det avgörande argumentet för att ljus uppträder som partiklar. En vågmodell skulle förutsäga att tillräckligt starkt ljus alltid till slut river loss elektroner.</p></div>",
+    "familj": "ljus_partikelstrom__fotonenergi",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "5.44",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "C",
+    "typ": "bestämma planetens radie ur transitdjupet och banradien ur Keplers tredje lag, ur text, sökt radie och banradie",
+    "poang": "(1/2/0)",
+    "t": "<p>En stjärna med radien 1,10 solradier observeras under lång tid. Var 88:e dygn sjunker stjärnans ljusstyrka med 1,21 % under några timmar. Stjärnans massa är 1,05 solmassor.</p><p>Solradien är 6,957·10<sup>8</sup> m, solmassan 1,989·10<sup>30</sup> kg, jordradien 6,371·10<sup>6</sup> m och gravitationskonstanten 6,674·10<sup>−11</sup> N·m<sup>2</sup>/kg<sup>2</sup>.</p><p><strong>a)</strong> Bestäm planetens radie, uttryckt i jordradier.</p><p><strong>b)</strong> Bestäm planetens banradie.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Ljusminskningen svarar mot den andel av stjärnskivan som planeten täcker, alltså förhållandet mellan areorna.</p><div class=\"facit-matte\">\\[\\frac{\\Delta L}{L}=\\left(\\frac{R_p}{R_s}\\right)^2=0{,}0121\\quad\\Longrightarrow\\quad\\frac{R_p}{R_s}=0{,}110\\]\\[R_s=1{,}10\\cdot6{,}957\\cdot10^8=7{,}65\\cdot10^8\\ \\mathrm m\\]\\[R_p=0{,}110\\cdot7{,}65\\cdot10^8=8{,}42\\cdot10^7\\ \\mathrm m\\]\\[\\frac{R_p}{R_{\\mathrm{jord}}}=\\frac{8{,}42\\cdot10^7}{6{,}371\\cdot10^6}=13{,}2\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Planetens radie är \\(8{,}4\\cdot10^7\\ \\mathrm m\\), alltså cirka \\(13\\) jordradier. Det är en gasjätte.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Transiterna upprepas med planetens omloppstid. Keplers tredje lag ger banradien.</p><div class=\"facit-matte\">\\[T=88\\cdot86400=7{,}60\\cdot10^6\\ \\mathrm s\\]\\[M=1{,}05\\cdot1{,}989\\cdot10^{30}=2{,}089\\cdot10^{30}\\ \\mathrm{kg}\\]\\[a^3=\\frac{GMT^2}{4\\pi^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot2{,}089\\cdot10^{30}\\cdot(7{,}60\\cdot10^6)^2}{4\\pi^2}=2{,}04\\cdot10^{32}\\ \\mathrm{m^3}\\]\\[a=5{,}89\\cdot10^{10}\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Banradien är \\(5{,}9\\cdot10^{10}\\ \\mathrm m\\), alltså \\(0{,}39\\) astronomiska enheter — närmare sin stjärna än Merkurius är solen.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Transitmetoden ger planetens storlek men inte dess massa. Kombinerar man den med radialhastighetsmetoden, som ger massan, kan man räkna ut planetens densitet och avgöra om den är en klippplanet eller en gasjätte.</p></div>",
+    "familj": "exoplaneter__transitmetoden",
+    "formaga": [
+      "modellering",
+      "procedur"
+    ]
+  },
+  {
+    "id": "6.55",
+    "kap": 6,
+    "omr": "tidsdilatation",
+    "niva": "C",
+    "typ": "beräkna tidsdilatationen för en GPS-satellit och det positionsfel den skulle ge, ur text, sökt tidsskillnad och positionsfel",
+    "poang": "(1/2/0)",
+    "t": "<p>En GPS-satellit rör sig i sin bana med farten 3,87 km/s. Eftersom farten är liten jämfört med ljushastigheten kan gammafaktorn skrivas som γ ≈ 1 + <em>v</em><sup>2</sup>/2<em>c</em><sup>2</sup>.</p><p><strong>a)</strong> Hur mycket mindre tid visar satellitens klocka än en klocka på marken under ett dygn?</p><p><strong>b)</strong> GPS bestämmer avstånd genom att mäta hur länge en radiosignal är på väg. Hur stort positionsfel skulle tidsskillnaden i a) ge upphov till om den inte korrigerades?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\frac{v}{c}=\\frac{3{,}87\\cdot10^3}{2{,}998\\cdot10^8}=1{,}291\\cdot10^{-5}\\]\\[\\gamma-1=\\frac{v^2}{2c^2}=\\frac{(1{,}291\\cdot10^{-5})^2}{2}=8{,}33\\cdot10^{-11}\\]\\[\\Delta t=86400\\cdot8{,}33\\cdot10^{-11}=7{,}2\\cdot10^{-6}\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Satellitens klocka ligger efter med cirka \\(7{,}2\\ \\mathrm{\\mu s}\\) per dygn.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[s=c\\,\\Delta t=2{,}998\\cdot10^8\\cdot7{,}2\\cdot10^{-6}=2{,}2\\cdot10^3\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Felet skulle bli cirka \\(2{,}2\\ \\mathrm{km}\\) efter ett dygn.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Att en effekt är liten betyder inte att den är betydelselös. Gammafaktorn avviker här först i elfte decimalen, men eftersom ljuset hinner 300 m på varje mikrosekund blir felet snabbt oacceptabelt. GPS-systemet måste därför bygga på relativitetsteorin för att fungera. Utöver den här effekten finns också en motverkande effekt från den allmänna relativitetsteorin, eftersom satelliten befinner sig högre upp i jordens gravitationsfält.</p></div>",
+    "familj": "tidsdilatation__tidsdilatation_och_egentid",
+    "formaga": [
+      "modellering",
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.52",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "typ": "beräkna energinivåer i väteatomen ur formeln för nivåerna, ur text, sökta energinivåer",
+    "poang": "(2/0/0)",
+    "t": "<p>Väteatomens energinivåer ges av <em>E</em><sub>n</sub> = −13,6/<em>n</em><sup>2</sup> eV, där <em>n</em> = 1, 2, 3, …</p><p>Beräkna energin för nivåerna <em>n</em> = 2 och <em>n</em> = 3. Vilken av de två nivåerna ligger högst?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in respektive <em>n</em> i formeln.</p><div class=\"facit-matte\">\\[E_2=\\frac{-13{,}6}{2^2}=-3{,}40\\ \\mathrm{eV}\\]\\[E_3=\\frac{-13{,}6}{3^2}=-1{,}51\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(E_2=-3{,}40\\ \\mathrm{eV}\\) och \\(E_3=-1{,}51\\ \\mathrm{eV}\\). Nivån \\(n=3\\) ligger högst, eftersom \\(-1{,}51\\) är ett större tal än \\(-3{,}40\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Energierna är negativa därför att nollnivån lagts vid den fria elektronen. Ju närmare noll, desto lösare sitter elektronen. Nivåerna ligger tätare och tätare ju större n blir.</p></div>",
+    "familj": "atomstruktur__bohrs_atommodell",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.53",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "typ": "beräkna frekvensen för synligt ljus ur våglängden i vakuum, ur text, sökt frekvens",
+    "poang": "(2/0/0)",
+    "t": "<p>Grönt ljus har våglängden 550 nm i vakuum. Ljusets hastighet i vakuum är 2,998·10<sup>8</sup> m/s.</p><p>Bestäm ljusets frekvens.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet mellan våghastighet, frekvens och våglängd.</p><div class=\"facit-matte\">\\[\\lambda=550\\ \\mathrm{nm}=5{,}50\\cdot10^{-7}\\ \\mathrm m\\]\\[f=\\frac{c}{\\lambda}=\\frac{2{,}998\\cdot10^8}{5{,}50\\cdot10^{-7}}=5{,}45\\cdot10^{14}\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är \\(5{,}45\\cdot10^{14}\\ \\mathrm{Hz}\\), alltså \\(545\\ \\mathrm{THz}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Allt synligt ljus ligger kring \\(10^{14}\\ \\mathrm{Hz}\\). Det är därför man anger ljus med våglängd i stället för frekvens — talen blir hanterliga.</p></div>",
+    "familj": "em_vagor__em_vagors_fart_frekvens_och_vaglangd",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.54",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "E",
+    "typ": "beräkna utstrålad effekt per kvadratmeter med Stefan-Boltzmanns lag, ur text, sökt effekt per area",
+    "poang": "(2/0/0)",
+    "t": "<p>Solens yta har temperaturen 5800 K och kan behandlas som en svartkropp. Stefan–Boltzmanns konstant är σ = 5,67·10<sup>−8</sup> W/(m<sup>2</sup>·K<sup>4</sup>).</p><p>Bestäm hur stor effekt varje kvadratmeter av solytan strålar ut.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Stefan–Boltzmanns lag ger utstrålad effekt per ytenhet.</p><div class=\"facit-matte\">\\[\\frac{P}{A}=\\sigma T^4=5{,}67\\cdot10^{-8}\\cdot5800^4\\]\\[\\frac{P}{A}=5{,}67\\cdot10^{-8}\\cdot1{,}132\\cdot10^{15}=6{,}42\\cdot10^{7}\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Varje kvadratmeter strålar ut \\(6{,}42\\cdot10^{7}\\ \\mathrm{W}\\), alltså drygt \\(64\\ \\mathrm{MW}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Fjärdepotensen gör lagen mycket känslig. Dubblas temperaturen strålar ytan ut sexton gånger mer energi.</p></div>",
+    "familj": "temperaturstralning__stefan_boltzmanns_lag",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.55",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "typ": "beräkna brytningsvinkeln när ljus går från vatten ut i luft, ur figur, sökt brytningsvinkel",
+    "poang": "(2/0/0)",
+    "t": "<p>En ljusstråle går från vatten med brytningsindex 1,33 ut i luft. Infallsvinkeln i vattnet är 25°.</p><p>Bestäm brytningsvinkeln i luften. Bryts strålen mot eller från normalen?</p><span class=\"fig\"><svg viewBox=\"0 0 250 150\" width=\"245\" height=\"147\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Ljusstråle som går från vatten upp genom vattenytan ut i luft.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>Ljusstråle som går från vatten upp genom vattenytan ut i luft.</title><rect x=\"10\" y=\"80\" width=\"230\" height=\"66\" fill=\"#D6E2F0\" opacity=\"0.65\"/><line x1=\"10\" y1=\"80\" x2=\"240\" y2=\"80\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"26\" x2=\"125\" y2=\"134\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><text x=\"133\" y=\"24\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8.5\" font-weight=\"600\" fill=\"#9A959C\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">normal</text><line x1=\"101.7\" y1=\"130\" x2=\"119.4\" y2=\"92\" stroke=\"#B43123\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"125,80 116.7,89.6 122.9,94.2\" fill=\"#B43123\"/><line x1=\"125\" y1=\"80\" x2=\"152\" y2=\"40\" stroke=\"#2A5D9E\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"159,30 149.7,38.2 155.9,42.4\" fill=\"#2A5D9E\"/><text x=\"30\" y=\"46\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">luft</text><text x=\"30\" y=\"122\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">vatten</text><text x=\"113\" y=\"104\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">25°</text><text x=\"147\" y=\"56\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd brytningslagen med vattnet som medium 1 och luften som medium 2.</p><div class=\"facit-matte\">\\[n_1\\sin\\theta_1=n_2\\sin\\theta_2\\]\\[\\sin\\theta_2=\\frac{1{,}33\\cdot\\sin25^\\circ}{1{,}00}=0{,}562\\]\\[\\theta_2=34^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Brytningsvinkeln är \\(34^\\circ\\). Strålen bryts från normalen, eftersom ljuset går till ett medium med lägre brytningsindex och därmed högre hastighet.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Går ljuset åt andra hållet, från luft in i vatten, bryts det i stället mot normalen. Brytningen sker alltid bort från det medium där ljuset går långsammast.</p></div>",
+    "familj": "straloptik__snells_lag_och_brytning",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.56",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "E",
+    "typ": "beräkna gitterkonstanten ur antalet linjer per mm och resonera om tätare gitter, ur text, sökt gitterkonstant",
+    "poang": "(2/0/0)",
+    "t": "<p>Ett gitter har 300 linjer per millimeter.</p><p><strong>a)</strong> Bestäm gitterkonstanten, alltså avståndet mellan två intilliggande spalter, uttryckt i meter.</p><p><strong>b)</strong> Man byter till ett gitter med 600 linjer per millimeter och belyser det med samma ljus. Hamnar ordningarna längre från varandra eller närmare varandra?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Gitterkonstanten är bredden på en millimeter delad med antalet linjer.</p><div class=\"facit-matte\">\\[d=\\frac{1{,}00\\cdot10^{-3}}{300}=3{,}33\\cdot10^{-6}\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Gitterkonstanten är \\(3{,}33\\cdot10^{-6}\\ \\mathrm m\\), alltså cirka \\(3{,}3\\ \\mathrm{\\mu m}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>Fler linjer per millimeter ger mindre \\(d\\). Eftersom \\(\\sin\\theta=n\\lambda/d\\) blir vinkeln större när \\(d\\) minskar.</p><p class=\"facit-svar\"><strong>Svar:</strong> Ordningarna hamnar längre från varandra.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Ett tätare gitter sprider ljuset mer och skiljer därför närliggande våglängder bättre. Det är därför spektrometrar använder gitter med många linjer per millimeter.</p></div>",
+    "familj": "vagrorelselara__dubbelspalt_och_gitter",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "5.45",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "typ": "beräkna en galax flykthastighet med Hubbles lag, ur text, sökt flykthastighet",
+    "poang": "(2/0/0)",
+    "t": "<p>En galax befinner sig 340 Mpc från jorden. Använd Hubbles lag <em>v</em> = <em>H</em><sub>0</sub><em>d</em> med <em>H</em><sub>0</sub> = 70 km/(s·Mpc).</p><p>Beräkna galaxens flykthastighet.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in avståndet direkt i Hubbles lag. Enheterna är valda så att avståndet ska anges i megaparsec.</p><div class=\"facit-matte\">\\[v=H_0d=70\\cdot340=2{,}4\\cdot10^4\\ \\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Flykthastigheten är \\(2{,}4\\cdot10^4\\ \\mathrm{km/s}\\), alltså cirka \\(8\\ \\%\\) av ljushastigheten.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Galaxen rör sig inte genom rymden med den farten. Det är rymden mellan oss och galaxen som expanderar, och ju längre bort galaxen är desto mer rymd finns det som kan växa.</p></div>",
+    "familj": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "5.46",
+    "kap": 5,
+    "omr": "farg_ljusstyrka",
+    "niva": "E",
+    "typ": "bestämma en stjärnas yttemperatur ur våglängden för strålningsmaximum, ur text, sökt temperatur",
+    "poang": "(2/0/0)",
+    "t": "<p>Stjärnan Betelgeuse har sitt strålningsmaximum vid våglängden 970 nm. Wiens konstant är 2,898·10<sup>−3</sup> m·K.</p><p>Bestäm stjärnans yttemperatur. Stämmer resultatet med att Betelgeuse ser röd ut?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut temperaturen ur Wiens förskjutningslag.</p><div class=\"facit-matte\">\\[\\lambda_{\\max}T=2{,}898\\cdot10^{-3}\\quad\\Longrightarrow\\quad T=\\frac{2{,}898\\cdot10^{-3}}{\\lambda_{\\max}}\\]\\[T=\\frac{2{,}898\\cdot10^{-3}}{970\\cdot10^{-9}}=2{,}99\\cdot10^{3}\\ \\mathrm K\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Yttemperaturen är cirka \\(2990\\ \\mathrm K\\). Det stämmer med den röda färgen: temperaturen är ungefär halva solens, och maximum ligger i det infraröda strax utanför synligt ljus, så av det synliga ljuset dominerar den röda änden.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Svala stjärnor lyser rött och heta lyser blåvitt. Färgen är alltså en direkt avläsning av yttemperaturen, vilket är själva grunden för HR-diagrammet.</p></div>",
+    "familj": "farg_ljusstyrka__stjarnfarg_och_temperatur",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "5.47",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "typ": "beskriva huvudserien i ett HR-diagram och vad stjärnorna där har gemensamt, ur figur, sökt förklaring",
+    "poang": "(2/0/0)",
+    "t": "<p>Figuren visar ett HR-diagram. De flesta stjärnor ligger längs det markerade bandet.</p><p><strong>a)</strong> Vad kallas bandet, och vad har stjärnorna som ligger där gemensamt?</p><p><strong>b)</strong> En stjärna ligger långt upp till höger i diagrammet, alltså sval men mycket ljusstark. Hur kan den vara så ljusstark trots den låga yttemperaturen?</p><span class=\"fig\"><svg viewBox=\"0 0 250 185\" width=\"245\" height=\"181.3\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"HR-diagram med huvudserien som ett band från övre vänstra hörnet till nedre högra, och solen markerad.\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;height:auto\"><title>HR-diagram med huvudserien som ett band från övre vänstra hörnet till nedre högra, och solen markerad.</title><line x1=\"45\" y1=\"155\" x2=\"228\" y2=\"155\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><polygon points=\"236,155 226,159 226,151\" fill=\"#2B2527\"/><line x1=\"45\" y1=\"155\" x2=\"45\" y2=\"32\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><polygon points=\"45,24 41,34 49,34\" fill=\"#2B2527\"/><line x1=\"68\" y1=\"48\" x2=\"198\" y2=\"142\" stroke=\"#2A5D9E\" stroke-width=\"13\" stroke-linecap=\"round\" opacity=\"0.32\"/><circle cx=\"146\" cy=\"104\" r=\"4.6\" fill=\"#B43123\"/><text x=\"50\" y=\"20\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">luminositet</text><text x=\"136\" y=\"176\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">temperatur (avtar åt höger)</text><text x=\"104\" y=\"60\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">huvudserien</text><text x=\"158\" y=\"98\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">solen</text></svg></span>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p>Bandet kallas huvudserien. Stjärnorna där får sin energi genom att fusionera väte till helium i sin kärna. En stjärna tillbringar den största delen av sitt liv på huvudserien, vilket är anledningen till att de flesta stjärnor observeras just där. Ju längre upp till vänster en stjärna ligger, desto mer massiv och het är den.</p><p class=\"facit-svar\"><strong>Svar:</strong> Bandet är huvudserien, och stjärnorna där fusionerar väte till helium i kärnan.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>Luminositeten beror både på yttemperaturen och på ytans storlek. En sval stjärna strålar ut lite per kvadratmeter, men om radien är mycket stor blir den totala ytan enorm och luminositeten ändå hög.</p><p class=\"facit-svar\"><strong>Svar:</strong> Stjärnan måste vara mycket stor. Det är en röd jätte eller superjätte.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> HR-diagrammet är inte en karta över var stjärnor ligger i rymden utan över vilket utvecklingsstadium de befinner sig i. En stjärna vandrar i diagrammet under sitt liv.</p></div>",
+    "familj": "stjarnornas_utveckling__hr_diagram_och_huvudserien",
+    "formaga": [
+      "begrepp",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "5.48",
+    "kap": 5,
+    "omr": "farg_ljusstyrka",
+    "niva": "E",
+    "typ": "jämföra hur ljusstarka två stjärnor ser ut ur deras apparenta magnituder, ur text, sökt ljusstyrkeförhållande",
+    "poang": "(2/0/0)",
+    "t": "<p>Sirius har den apparenta magnituden −1,46 och Polstjärnan +1,98.</p><p>Vilken av stjärnorna ser ljusast ut från jorden, och hur många gånger ljusare ser den ut? En skillnad på 5 magnitudenheter motsvarar faktorn 100 i ljusstyrka.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lägre magnitud betyder ljusare. Skillnaden i magnitud räknas om till en faktor.</p><div class=\"facit-matte\">\\[\\Delta m=1{,}98-(-1{,}46)=3{,}44\\]\\[\\frac{I_1}{I_2}=100^{\\Delta m/5}=100^{3{,}44/5}=23{,}8\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Sirius ser ljusast ut, ungefär \\(24\\) gånger ljusare än Polstjärnan.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Skalan är omvänd och logaritmisk. Att Sirius har negativ magnitud betyder inte något konstigt utan bara att den är ljusare än det nollvärde skalan en gång lades vid.</p></div>",
+    "familj": "farg_ljusstyrka__magnitudskalan",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "1.81",
+    "kap": 1,
+    "omr": "cirkel",
+    "niva": "E",
+    "typ": "bestämma vid vilken fart en bil lättar från ett krön, ur text, sökt fart",
+    "poang": "(2/0/0)",
+    "t": "<p>En bil kör över ett rundat krön med krökningsradien 45 m.</p><p>Vid vilken fart lättar bilen från vägbanan? Svara också i km/h.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bilen lättar när normalkraften blir noll. Då är tyngdkraften ensam centripetalkraft.</p><div class=\"facit-matte\">\\[mg=\\frac{mv^2}{r}\\quad\\Longrightarrow\\quad v=\\sqrt{gr}\\]\\[v=\\sqrt{9{,}82\\cdot45}=21{,}0\\ \\mathrm{m/s}=75{,}7\\ \\mathrm{km/h}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Bilen lättar vid \\(21\\ \\mathrm{m/s}\\), alltså cirka \\(76\\ \\mathrm{km/h}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Massan försvinner ur ekvationen. En tung lastbil lättar vid exakt samma fart som en liten bil, så länge krönet har samma radie.</p></div>",
+    "familj": "cirkel__lodrat_cirkelbana",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "1.82",
+    "kap": 1,
+    "omr": "cirkel",
+    "niva": "E",
+    "typ": "bestämma cirkelbanans radie för en konisk pendel ur snörlängd och vinkel, ur text, sökt radie",
+    "poang": "(2/0/0)",
+    "t": "<p>En kula hänger i ett 0,80 m långt snöre och svängs runt i en vågrät cirkel. Snöret bildar vinkeln 20° mot lodlinjen.</p><p>Bestäm cirkelbanans radie och hur långt under upphängningspunkten kulan befinner sig.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Snöret är hypotenusan i en rätvinklig triangel. Radien är motstående katet till vinkeln och höjden är närliggande katet.</p><div class=\"facit-matte\">\\[r=L\\sin20^\\circ=0{,}80\\cdot0{,}342=0{,}27\\ \\mathrm m\\]\\[h=L\\cos20^\\circ=0{,}80\\cdot0{,}940=0{,}75\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Radien är \\(0{,}27\\ \\mathrm m\\) och kulan hänger \\(0{,}75\\ \\mathrm m\\) under upphängningspunkten.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Ju snabbare pendeln svängs, desto större blir vinkeln och desto större blir radien. Kulan kan aldrig komma upp i vågrätt läge, eftersom snöret då inte skulle kunna bära tyngdkraften.</p></div>",
+    "familj": "cirkel__konisk_pendel",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.174",
+    "kap": 2,
+    "omr": "fjadrar",
+    "niva": "E",
+    "typ": "beräkna sammanlagd fjäderkonstant vid parallell- och seriekoppling, ur text, sökt fjäderkonstant",
+    "poang": "(2/0/0)",
+    "t": "<p>Två fjädrar har fjäderkonstanterna 150 N/m och 250 N/m.</p><p><strong>a)</strong> Bestäm den sammanlagda fjäderkonstanten om de kopplas parallellt.</p><p><strong>b)</strong> Bestäm den sammanlagda fjäderkonstanten om de i stället kopplas i serie.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Parallella fjädrar dras ut lika mycket och krafterna adderas.</p><div class=\"facit-matte\">\\[k=k_1+k_2=150+250=400\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(400\\ \\mathrm{N/m}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I serie bär båda fjädrarna samma kraft och förlängningarna adderas.</p><div class=\"facit-matte\">\\[\\frac1k=\\frac1{150}+\\frac1{250}\\]\\[k=93{,}8\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(93{,}8\\ \\mathrm{N/m}\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Parallellkoppling ger alltid en styvare fjäder än den styvaste enskilda, seriekoppling alltid en vekare än den vekaste. Det är samma matematik som för resistorer, fast omvänt.</p></div>",
+    "familj": "fjadrar__fjadrar_i_serie_och_parallell",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.175",
+    "kap": 2,
+    "omr": "interferens",
+    "niva": "E",
+    "typ": "avgöra om två ljudvågor förstärker eller släcker varandra ur vägskillnaden, ur text, sökt interferenstyp",
+    "poang": "(2/0/0)",
+    "t": "<p>Två högtalare sänder samma ton i fas. Till en punkt P är avstånden 3,40 m respektive 4,08 m. Ljudets våglängd är 0,34 m.</p><p>Bestäm vägskillnaden och avgör om det blir förstärkning eller släckning i P.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Jämför vägskillnaden med våglängden.</p><div class=\"facit-matte\">\\[\\Delta r=4{,}08-3{,}40=0{,}68\\ \\mathrm m\\]\\[\\frac{\\Delta r}{\\lambda}=\\frac{0{,}68}{0{,}34}=2\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vägskillnaden är \\(0{,}68\\ \\mathrm m\\), vilket är exakt två hela våglängder. Vågorna kommer fram i fas och det blir förstärkning i P.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Ett helt antal våglängder ger alltid förstärkning när källorna sänder i fas. Hade vägskillnaden varit ett udda antal halva våglängder hade det i stället blivit släckning.</p></div>",
+    "familj": "interferens__interferens_fran_tva_kallor",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.176",
+    "kap": 2,
+    "omr": "pendlar",
+    "niva": "E",
+    "typ": "beräkna farten i pendelns lägsta läge med energiprincipen, ur text, sökt fart",
+    "poang": "(2/0/0)",
+    "t": "<p>En pendelkula lyfts 12 cm över sitt lägsta läge och släpps från vila. Luftmotståndet är försumbart.</p><p>Bestäm kulans fart när den passerar det lägsta läget.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">All lägesenergi omvandlas till rörelseenergi.</p><div class=\"facit-matte\">\\[mgh=\\tfrac12mv^2\\quad\\Longrightarrow\\quad v=\\sqrt{2gh}\\]\\[v=\\sqrt{2\\cdot9{,}82\\cdot0{,}12}=1{,}54\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är \\(1{,}5\\ \\mathrm{m/s}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Massan faller bort, och snörets längd spelar ingen roll. Det är bara fallhöjden som avgör farten i lägsta läget.</p></div>",
+    "familj": "pendlar__pendel_och_energi",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.105",
+    "kap": 3,
+    "omr": "kondensatorer",
+    "niva": "E",
+    "typ": "beräkna energin som lagras i en kondensator, ur text, sökt energi",
+    "poang": "(2/0/0)",
+    "t": "<p>En kondensator med kapacitansen 100 μF laddas upp till spänningen 24 V.</p><p>Bestäm den energi som lagras i kondensatorn.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-matte\">\\[W=\\tfrac12CU^2=\\tfrac12\\cdot100\\cdot10^{-6}\\cdot24^2=2{,}88\\cdot10^{-2}\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är \\(2{,}88\\cdot10^{-2}\\ \\mathrm J\\), alltså cirka \\(29\\ \\mathrm{mJ}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Energin växer med kvadraten på spänningen. Dubblad spänning ger fyra gånger så mycket lagrad energi, medan laddningen bara dubblas.</p></div>",
+    "familj": "kondensatorer__energi_i_kondensator",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.106",
+    "kap": 3,
+    "omr": "vaxelstrom",
+    "niva": "E",
+    "typ": "beräkna effektivvärdet ur toppvärdet för en sinusformad växelspänning, ur text, sökt effektivvärde",
+    "poang": "(2/0/0)",
+    "t": "<p>En sinusformad växelspänning har toppvärdet 325 V.</p><p>Bestäm spänningens effektivvärde.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en sinusformad växelspänning är effektivvärdet toppvärdet delat med roten ur två.</p><div class=\"facit-matte\">\\[U=\\frac{\\hat U}{\\sqrt2}=\\frac{325}{\\sqrt2}=230\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Effektivvärdet är \\(230\\ \\mathrm V\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är därför eluttaget kallas 230 V trots att spänningen varierar mellan +325 V och −325 V. Effektivvärdet är den likspänning som skulle ge samma effekt i ett motstånd.</p></div>",
+    "familj": "vaxelstrom__effektivvarde",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.107",
+    "kap": 3,
+    "omr": "induktion",
+    "niva": "E",
+    "typ": "förklara varför en roterande spole i ett magnetfält ger växelspänning, ur text, sökt förklaring",
+    "poang": "(2/0/0)",
+    "t": "<p>I en generator roterar en spole med konstant varvtal i ett homogent magnetfält.</p><p>Förklara varför spolen ger en växelspänning och inte en likspänning. Ange också i vilket läge spänningen är som störst.</p>",
+    "s": "<div class=\"facit-v2\"><p>Den inducerade spänningen bestäms av hur snabbt det magnetiska flödet genom spolen ändras. När spolen roterar växlar flödet riktning två gånger per varv: först ökar det, sedan minskar det, och därefter går det åt motsatt håll. Eftersom flödesändringen byter tecken byter också den inducerade spänningen tecken, och resultatet blir en spänning som växlar riktning — alltså växelspänning.</p><p>Spänningen är störst när flödet ändras snabbast. Det sker när spolens plan är parallellt med fältet, alltså när flödet just passerar noll. När spolens plan är vinkelrätt mot fältet är flödet som störst, men just då ändras det inte alls och spänningen är noll.</p><p class=\"facit-svar\"><strong>Svar:</strong> Spolen ger växelspänning eftersom flödesändringen byter tecken två gånger per varv. Spänningen är störst när spolens plan är parallellt med fältet.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är lätt att tro att spänningen är störst när flödet är störst. Men det är <em>ändringen</em> av flödet som inducerar spänning, inte flödet i sig.</p></div>",
+    "familj": "induktion__generatorprincipen",
+    "formaga": [
+      "begrepp",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "3.108",
+    "kap": 3,
+    "omr": "vaxelstrom_spole_kondensator",
+    "niva": "E",
+    "typ": "beräkna kapacitiv reaktans för en kondensator i en växelströmskrets, ur text, sökt reaktans",
+    "poang": "(2/0/0)",
+    "t": "<p>En kondensator med kapacitansen 22 μF ansluts till växelström med frekvensen 50 Hz.</p><p>Bestäm den kapacitiva reaktansen.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-matte\">\\[X_C=\\frac1{2\\pi fC}=\\frac1{2\\pi\\cdot50\\cdot22\\cdot10^{-6}}=145\\ \\mathrm\\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den kapacitiva reaktansen är \\(145\\ \\mathrm\\Omega\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Reaktansen minskar när frekvensen ökar. En kondensator släpper alltså igenom höga frekvenser lätt men blockerar låga, och vid likström är reaktansen oändlig.</p></div>",
+    "familj": "vaxelstrom_spole_kondensator__kapacitiv_reaktans",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.109",
+    "kap": 3,
+    "omr": "vaxelstrom_spole_kondensator",
+    "niva": "E",
+    "typ": "beräkna resonansfrekvensen för en LC-krets, ur text, sökt frekvens",
+    "poang": "(2/0/0)",
+    "t": "<p>En LC-krets består av en spole med induktansen 0,25 H och en kondensator på 40 μF.</p><p>Bestäm kretsens resonansfrekvens.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid resonans är den induktiva och den kapacitiva reaktansen lika stora.</p><div class=\"facit-matte\">\\[f_0=\\frac1{2\\pi\\sqrt{LC}}=\\frac1{2\\pi\\sqrt{0{,}25\\cdot40\\cdot10^{-6}}}=50{,}3\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Resonansfrekvensen är \\(50{,}3\\ \\mathrm{Hz}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är resonansen som gör att en radiomottagare kan välja ut en station. Genom att ändra kapacitansen flyttar man resonansfrekvensen till just den sändare man vill lyssna på.</p></div>",
+    "familj": "vaxelstrom_spole_kondensator__resonans_i_lc_eller_rlc_krets",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.110",
+    "kap": 3,
+    "omr": "jordens_magnetfalt",
+    "niva": "E",
+    "typ": "beräkna vågrät och lodrät komposant av jordens magnetfält ur inklinationsvinkeln, ur text, sökta komposanter",
+    "poang": "(2/0/0)",
+    "t": "<p>På en plats är jordens magnetfält 48 μT och inklinationen 70°, det vill säga fältet lutar 70° nedåt under horisontalplanet.</p><p>Bestäm fältets vågräta och lodräta komposant.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Dela upp fältet som en vektor. Inklinationen mäts från horisontalplanet.</p><div class=\"facit-matte\">\\[B_{\\text{vågrät}}=B\\cos70^\\circ=48\\cdot0{,}342=16{,}4\\ \\mathrm{\\mu T}\\]\\[B_{\\text{lodrät}}=B\\sin70^\\circ=48\\cdot0{,}940=45{,}1\\ \\mathrm{\\mu T}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den vågräta komposanten är \\(16\\ \\mathrm{\\mu T}\\) och den lodräta \\(45\\ \\mathrm{\\mu T}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är bara den vågräta komposanten som vrider en vanlig kompassnål. Nära polerna blir den komposanten mycket liten, och då fungerar kompassen dåligt.</p></div>",
+    "familj": "jordens_magnetfalt__inklination_och_deklination",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.111",
+    "kap": 3,
+    "omr": "elektriska_falt",
+    "niva": "C",
+    "typ": "bestämma en punktladdnings storlek ur fältstyrkan och avståndet där fältet nått ett givet värde, ur text, sökt laddning och avstånd",
+    "poang": "(1/2/0)",
+    "t": "<p>En punktladdning ger fältstyrkan 4,5·10<sup>4</sup> N/C på avståndet 8,0 cm från laddningen. Använd <em>k</em> = 8,99·10<sup>9</sup> N·m<sup>2</sup>/C<sup>2</sup>.</p><p><strong>a)</strong> Bestäm laddningens storlek.</p><p><strong>b)</strong> På vilket avstånd har fältstyrkan sjunkit till 1,0·10<sup>4</sup> N/C?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Lös ut laddningen ur uttrycket för fältet kring en punktladdning.</p><div class=\"facit-matte\">\\[E=\\frac{kQ}{r^2}\\quad\\Longrightarrow\\quad Q=\\frac{Er^2}{k}\\]\\[Q=\\frac{4{,}5\\cdot10^4\\cdot0{,}080^2}{8{,}99\\cdot10^9}=3{,}2\\cdot10^{-8}\\ \\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(32\\ \\mathrm{nC}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[r=\\sqrt{\\frac{kQ}{E}}=\\sqrt{\\frac{8{,}99\\cdot10^9\\cdot3{,}2\\cdot10^{-8}}{1{,}0\\cdot10^4}}=0{,}17\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältstyrkan är nere i \\(1{,}0\\cdot10^4\\ \\mathrm{N/C}\\) på \\(17\\ \\mathrm{cm}\\) avstånd.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Fältet avtar med kvadraten på avståndet. Att sänka fältet till knappt en fjärdedel kräver därför bara drygt dubbla avståndet.</p></div>",
+    "familj": "elektriska_falt__falt_fran_punktladdning",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.112",
+    "kap": 3,
+    "omr": "vaxelstrom_spole_kondensator",
+    "niva": "C",
+    "typ": "beräkna induktiv reaktans och ström samt undersöka hur de ändras med frekvensen, ur text, sökt reaktans och ström",
+    "poang": "(1/2/0)",
+    "t": "<p>En spole med induktansen 0,15 H och försumbar resistans ansluts till en växelspänning med effektivvärdet 230 V och frekvensen 50 Hz.</p><p><strong>a)</strong> Bestäm den induktiva reaktansen och strömmen genom spolen.</p><p><strong>b)</strong> Frekvensen fördubblas medan spänningen hålls oförändrad. Vad händer med strömmen?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[X_L=2\\pi fL=2\\pi\\cdot50\\cdot0{,}15=47{,}1\\ \\mathrm\\Omega\\]\\[I=\\frac{U}{X_L}=\\frac{230}{47{,}1}=4{,}88\\ \\mathrm A\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är \\(47{,}1\\ \\mathrm\\Omega\\) och strömmen \\(4{,}9\\ \\mathrm A\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>Reaktansen är proportionell mot frekvensen, så den fördubblas till \\(94{,}2\\ \\mathrm\\Omega\\). Eftersom spänningen är oförändrad halveras strömmen.</p><div class=\"facit-matte\">\\[I=\\frac{230}{94{,}2}=2{,}44\\ \\mathrm A\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Strömmen halveras till \\(2{,}4\\ \\mathrm A\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Spolen och kondensatorn beter sig tvärtom mot varandra. Spolen bromsar höga frekvenser medan kondensatorn släpper igenom dem, vilket är grunden för att bygga filter.</p></div>",
+    "familj": "vaxelstrom_spole_kondensator__induktiv_reaktans",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "4.57",
+    "kap": 4,
+    "omr": "partikelstralar",
+    "niva": "E",
+    "typ": "beräkna banradien för en jon i en masspektrometers magnetfält, ur text, sökt radie",
+    "poang": "(2/0/0)",
+    "t": "<p>I en masspektrometer rör sig en enkeljoniserad jon med massan 3,32·10<sup>−26</sup> kg och farten 1,5·10<sup>5</sup> m/s vinkelrätt mot ett magnetfält på 0,45 T. Jonens laddning är 1,602·10<sup>−19</sup> C.</p><p>Bestäm radien hos jonens cirkelbana.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den magnetiska kraften är centripetalkraft.</p><div class=\"facit-matte\">\\[qvB=\\frac{mv^2}{r}\\quad\\Longrightarrow\\quad r=\\frac{mv}{qB}\\]\\[r=\\frac{3{,}32\\cdot10^{-26}\\cdot1{,}5\\cdot10^5}{1{,}602\\cdot10^{-19}\\cdot0{,}45}=6{,}9\\cdot10^{-2}\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Banradien är \\(6{,}9\\ \\mathrm{cm}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Radien är proportionell mot massan när fart, laddning och fält är desamma. Det är precis den egenskapen som gör att en masspektrometer kan skilja isotoper åt.</p></div>",
+    "familj": "partikelstralar__masspektrometer",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "5.49",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "C",
+    "typ": "uppskatta en massiv stjärnas livstid på huvudserien och koppla den till slutprodukten, ur text, sökt livstid",
+    "poang": "(1/2/0)",
+    "t": "<p>Livstiden på huvudserien kan uppskattas som <em>t</em> ∝ <em>M</em>/<em>L</em>, eftersom bränslemängden är proportionell mot massan och förbrukningstakten mot luminositeten. För huvudseriestjärnor gäller ungefär <em>L</em> ∝ <em>M</em><sup>3,5</sup>. Solen ligger på huvudserien i cirka 10 miljarder år.</p><p><strong>a)</strong> Uppskatta hur länge en stjärna med 15 solmassor ligger på huvudserien.</p><p><strong>b)</strong> Vad innebär resultatet för vilken slutprodukt stjärnan får?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Sätt in luminositetssambandet i uttrycket för livstiden. Räkna i solenheter.</p><div class=\"facit-matte\">\\[t\\propto\\frac{M}{L}\\propto\\frac{M}{M^{3{,}5}}=M^{-2{,}5}\\]\\[\\frac{t}{t_{\\odot}}=15^{-2{,}5}=\\frac1{871}\\]\\[t=\\frac{10\\cdot10^9}{871}=1{,}1\\cdot10^{7}\\ \\mathrm{år}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Stjärnan ligger på huvudserien i bara cirka \\(11\\) miljoner år.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>En stjärna på 15 solmassor förbrukar sitt bränsle nästan tusen gånger snabbare än solen trots att den har femton gånger mer av det. Den hinner därför utveckla tyngre grundämnen ända fram till järn i sin kärna, och avslutar sitt liv som supernova. Kvar blir en neutronstjärna eller ett svart hål, inte en vit dvärg som för solen.</p><p class=\"facit-svar\"><strong>Svar:</strong> Stjärnan lever mycket kort och slutar som supernova, med en neutronstjärna eller ett svart hål som rest.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Ju massivare en stjärna är, desto kortare lever den. Det verkar bakvänt, men det höga trycket i en massiv kärna driver fusionen så mycket snabbare att det extra bränslet inte räcker långt.</p></div>",
+    "familj": "stjarnornas_utveckling__stjarnors_livscykel",
+    "formaga": [
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "5.50",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "C",
+    "typ": "bestämma en exoplanets banradie med Keplers tredje lag i solenheter, ur text, sökt banradie",
+    "poang": "(1/2/0)",
+    "t": "<p>En stjärna med massan 1,2 solmassor har en planet med omloppstiden 3,5 år. Keplers tredje lag kan i solenheter skrivas <em>a</em><sup>3</sup> = <em>M</em><em>T</em><sup>2</sup>, där <em>a</em> anges i astronomiska enheter, <em>M</em> i solmassor och <em>T</em> i år.</p><p><strong>a)</strong> Bestäm planetens banradie.</p><p><strong>b)</strong> En annan planet kring samma stjärna har banradien 1,0 AU. Bestäm dess omloppstid.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[a^3=MT^2=1{,}2\\cdot3{,}5^2=14{,}7\\]\\[a=2{,}45\\ \\mathrm{AU}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Banradien är \\(2{,}45\\ \\mathrm{AU}\\), alltså drygt två gånger jordens avstånd till solen.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[T^2=\\frac{a^3}{M}=\\frac{1{,}0^3}{1{,}2}=0{,}833\\]\\[T=0{,}913\\ \\mathrm{år}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Omloppstiden är \\(0{,}91\\) år, alltså cirka \\(11\\) månader.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Planeten på 1 AU går snabbare runt sin stjärna än jorden går runt solen, trots samma avstånd. Det beror på att stjärnan är tyngre och drar hårdare.</p></div>",
+    "familj": "exoplaneter__detektion_av_exoplaneter",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.177",
+    "kap": 2,
+    "omr": "pendlar",
+    "niva": "E",
+    "typ": "bestämma snörets vinkel i en konisk pendel ur snörkraften och tyngdkraften, ur text, sökt vinkel",
+    "poang": "(2/0/0)",
+    "t": "<p>En kula med massan 0,60 kg svängs runt i en vågrät cirkel i ett snöre. Snörkraften mäts till 8,0 N.</p><p>Bestäm den vinkel snöret bildar mot lodlinjen.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Kulan rör sig i en vågrät cirkel, så den har ingen acceleration i lodled. Snörkraftens lodräta komposant måste därför balansera tyngdkraften.</p><div class=\"facit-matte\">\\[F\\cos\\theta=mg\\quad\\Longrightarrow\\quad\\cos\\theta=\\frac{mg}{F}\\]\\[\\cos\\theta=\\frac{0{,}60\\cdot9{,}82}{8{,}0}=0{,}737\\]\\[\\theta=43^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Snöret bildar vinkeln \\(43^\\circ\\) mot lodlinjen.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Snörkraften är alltid större än tyngdkraften i en konisk pendel, eftersom bara en del av den går åt till att bära kulan. Resten är den centripetalkraft som håller kvar kulan i cirkeln.</p></div>",
+    "familj": "pendlar__konisk_pendel",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.113",
+    "kap": 3,
+    "omr": "laddade_partiklar",
+    "niva": "E",
+    "typ": "beräkna vilken fart som släpps igenom av en hastighetsväljare, ur text, sökt fart",
+    "poang": "(2/0/0)",
+    "t": "<p>I en hastighetsväljare är det elektriska fältet 2,4·10<sup>4</sup> V/m och magnetfältet 0,060 T. Fälten är vinkelräta mot varandra och mot partiklarnas rörelseriktning.</p><p>Vilken fart har de partiklar som går rakt igenom utan att böjas av?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Partikeln går rakt fram när den elektriska och den magnetiska kraften tar ut varandra.</p><div class=\"facit-matte\">\\[qE=qvB\\quad\\Longrightarrow\\quad v=\\frac EB\\]\\[v=\\frac{2{,}4\\cdot10^4}{0{,}060}=4{,}0\\cdot10^{5}\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är \\(4{,}0\\cdot10^{5}\\ \\mathrm{m/s}\\).</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Laddningen försvinner ur ekvationen. Hastighetsväljaren släpper igenom en bestämd fart oavsett partikelns laddning och massa, vilket är just vad man vill innan en masspektrometer.</p></div>",
+    "familj": "laddade_partiklar__partikel_i_korsade_falt",
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "3.114",
+    "kap": 3,
+    "omr": "laddade_partiklar",
+    "niva": "C",
+    "typ": "bestämma fältstyrka och spänning i en hastighetsväljare och resonera om partiklar med fel fart, ur text, sökt fältstyrka och spänning",
+    "poang": "(1/2/0)",
+    "t": "<p>En hastighetsväljare ska släppa igenom joner med farten 2,5·10<sup>5</sup> m/s. Magnetfältet är 0,080 T och plattavståndet 1,2 cm.</p><p><strong>a)</strong> Bestäm den elektriska fältstyrka som krävs.</p><p><strong>b)</strong> Bestäm spänningen mellan plattorna.</p><p><strong>c)</strong> Vad händer med joner som kommer in med högre fart än 2,5·10<sup>5</sup> m/s?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[E=vB=2{,}5\\cdot10^5\\cdot0{,}080=2{,}0\\cdot10^4\\ \\mathrm{V/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältstyrkan ska vara \\(2{,}0\\cdot10^4\\ \\mathrm{V/m}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[U=Ed=2{,}0\\cdot10^4\\cdot1{,}2\\cdot10^{-2}=240\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen är \\(240\\ \\mathrm V\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Den elektriska kraften \\(qE\\) är oberoende av farten, medan den magnetiska kraften \\(qvB\\) växer med farten. För en snabbare jon blir därför den magnetiska kraften störst, och jonen böjs av åt det håll den magnetiska kraften verkar. Den träffar en platta eller stoppas av spalten i stället för att gå rakt igenom.</p><p class=\"facit-svar\"><strong>Svar:</strong> Snabbare joner böjs av av den magnetiska kraften och släpps inte igenom.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Väljaren är inte ett filter som släpper igenom allt under en viss fart, utan bara den exakta fart där krafterna balanserar. Både snabbare och långsammare joner böjs av, fast åt olika håll.</p></div>",
+    "familj": "laddade_partiklar__partikel_i_korsade_falt",
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "5.51",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "typ": "beskriva de tänkbara scenarierna för universums framtid, ur text, sökt förklaring",
+    "poang": "(2/0/0)",
+    "t": "<p>Universums framtid brukar beskrivas med några olika scenarier beroende på hur expansionen utvecklas.</p><p>Beskriv kortfattat vad som menas med Big Crunch respektive Big Freeze, och ange vilken storhet som avgör vilket av dem som blir verklighet.</p>",
+    "s": "<div class=\"facit-v2\"><p><strong>Big Crunch:</strong> gravitationen bromsar expansionen så mycket att den till slut vänder. Universum börjar dra ihop sig och slutar i ett tillstånd med extremt hög täthet och temperatur, ungefär som en omvänd Big Bang.</p><p><strong>Big Freeze:</strong> expansionen fortsätter för alltid. Galaxerna glider allt längre ifrån varandra, stjärnorna förbrukar sitt bränsle och inga nya bildas. Universum blir till slut mörkt och närmar sig absoluta nollpunkten.</p><p>Vilket som inträffar avgörs av universums medeltäthet i förhållande till den kritiska tätheten, tillsammans med hur den mörka energin beter sig. Nuvarande observationer, som visar att expansionen accelererar, pekar mot Big Freeze.</p><p class=\"facit-svar\"><strong>Svar:</strong> Big Crunch är en framtida kollaps, Big Freeze en evig utspädning. Det är universums täthet i förhållande till den kritiska tätheten, tillsammans med den mörka energin, som avgör.</p><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Innan den mörka energin upptäcktes 1998 trodde man att enbart tätheten avgjorde saken. Att expansionen accelererar var en fullständig överraskning och gjorde Big Freeze till det mest sannolika scenariot.</p></div>",
+    "familj": "framtiden__kosmologiska_scenarier",
+    "formaga": [
+      "begrepp"
+    ]
+  },
+  {
+    "id": "4.58",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "A",
+    "typ": "beräkna våglängderna i Balmerserien och seriegränsen ur väteatomens energinivåer, ur text, sökta våglängder",
+    "poang": "(0/2/2)",
+    "t": "<p>Väteatomens energinivåer ges av <em>E</em><sub>n</sub> = −13,6/<em>n</em><sup>2</sup> eV. Balmerserien består av de övergångar som slutar på nivån <em>n</em> = 2. Använd <em>hc</em> = 1240 eV·nm.</p><p><strong>a)</strong> Beräkna våglängderna för övergångarna 3→2, 4→2 och 5→2. Vilka av dem ligger inom det synliga området 400–700 nm?</p><p><strong>b)</strong> Bestäm seriegränsen, alltså den kortaste våglängden i Balmerserien, och förklara vilken övergång den svarar mot.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Fotonens energi är skillnaden mellan nivåerna, och våglängden fås ur \\(\\lambda=hc/E\\).</p><div class=\"facit-matte\">\\[E_2=-3{,}400,\\quad E_3=-1{,}511,\\quad E_4=-0{,}850,\\quad E_5=-0{,}544\\ \\mathrm{eV}\\]\\[3\\to2:\\ \\Delta E=1{,}889\\ \\mathrm{eV}\\ \\Longrightarrow\\ \\lambda=\\frac{1240}{1{,}889}=656\\ \\mathrm{nm}\\]\\[4\\to2:\\ \\Delta E=2{,}550\\ \\mathrm{eV}\\ \\Longrightarrow\\ \\lambda=486\\ \\mathrm{nm}\\]\\[5\\to2:\\ \\Delta E=2{,}856\\ \\mathrm{eV}\\ \\Longrightarrow\\ \\lambda=434\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängderna är \\(656\\), \\(486\\) och \\(434\\ \\mathrm{nm}\\). Alla tre ligger inom det synliga området: rött, blågrönt respektive violett.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Seriegränsen svarar mot det största möjliga energisprånget ned till \\(n=2\\), alltså från en elektron som är precis fri.</p><div class=\"facit-matte\">\\[\\Delta E_{\\max}=0-(-3{,}400)=3{,}400\\ \\mathrm{eV}\\]\\[\\lambda_{\\min}=\\frac{1240}{3{,}400}=365\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Seriegränsen ligger vid \\(365\\ \\mathrm{nm}\\), i ultraviolett. Den svarar mot övergången \\(n=\\infty\\to2\\), alltså när en fri elektron fångas in direkt till nivå 2.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Att linjerna ligger tätare och tätare mot seriegränsen speglar att energinivåerna själva ligger tätare ju högre n blir. Det var precis det mönstret som gjorde att Bohr kunde gissa sig till modellen med kvantiserade banor.</p></div>",
+    "familj": "atomstruktur__bohrs_atommodell",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.59",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "A",
+    "typ": "kombinera Wiens lag och Stefan-Boltzmanns lag för att bestämma temperatur och luminositet, ur text, sökt temperatur och luminositet",
+    "poang": "(0/2/2)",
+    "t": "<p>En stjärna har sitt strålningsmaximum vid våglängden 290 nm och radien 2,4 solradier. Solens yttemperatur är 5772 K. Wiens konstant är 2,898·10<sup>−3</sup> m·K.</p><p><strong>a)</strong> Bestäm stjärnans yttemperatur.</p><p><strong>b)</strong> Bestäm stjärnans luminositet uttryckt i solens luminositet.</p><p><strong>c)</strong> Strålningsmaximum ligger utanför det synliga området. Betyder det att stjärnan är svag att se på? Motivera.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[T=\\frac{2{,}898\\cdot10^{-3}}{290\\cdot10^{-9}}=9{,}99\\cdot10^{3}\\ \\mathrm K\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Yttemperaturen är cirka \\(9990\\ \\mathrm K\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Luminositeten beror på ytan och på utstrålad effekt per ytenhet. Jämför med solen så faller konstanterna bort.</p><div class=\"facit-matte\">\\[\\frac{L}{L_{\\odot}}=\\left(\\frac{R}{R_{\\odot}}\\right)^2\\left(\\frac{T}{T_{\\odot}}\\right)^4\\]\\[\\frac{L}{L_{\\odot}}=2{,}4^2\\cdot\\left(\\frac{9990}{5772}\\right)^4=5{,}76\\cdot8{,}98=52\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Stjärnan lyser ungefär \\(52\\) gånger starkare än solen.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Nej. Att maximum ligger i ultraviolett betyder bara att fördelningen är förskjuten mot korta våglängder. Den totala utstrålade effekten är ändå 52 gånger solens, och en betydande del av den hamnar i det synliga området. Stjärnan lyser alltså starkt, och eftersom den blå änden dominerar ser den blåvit ut.</p><p class=\"facit-svar\"><strong>Svar:</strong> Nej, stjärnan är mycket ljusstark och ser blåvit ut. Läget för maximum säger något om färgen, inte om den totala ljusstyrkan.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> De två lagarna svarar på olika frågor. Wien ger färgen, Stefan–Boltzmann ger styrkan. En sval jättestjärna kan lysa starkare än en het dvärg trots att den strålar mycket mindre per kvadratmeter.</p></div>",
+    "familj": "temperaturstralning__stefan_boltzmanns_lag",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "4.60",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "A",
+    "typ": "bestämma Plancks konstant och utträdesarbetet ur stoppotentialer vid två våglängder, ur text, sökt konstant och utträdesarbete",
+    "poang": "(0/1/3)",
+    "t": "<p>I ett fotoelektriskt försök mäts den spänning som precis stoppar de snabbaste elektronerna. Vid våglängden 400 nm är stoppotentialen 1,20 V och vid 500 nm är den 0,58 V.</p><p><strong>a)</strong> Bestäm produkten <em>hc</em> ur mätningarna, och därmed Plancks konstant.</p><p><strong>b)</strong> Bestäm metallens utträdesarbete.</p><p><strong>c)</strong> Förklara varför man behöver två mätningar och inte klarar sig med en.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Sambandet är \\(eU=hc/\\lambda-W\\). Med två mätningar kan \\(W\\) elimineras genom subtraktion.</p><div class=\"facit-matte\">\\[eU_1=\\frac{hc}{\\lambda_1}-W,\\qquad eU_2=\\frac{hc}{\\lambda_2}-W\\]\\[U_1-U_2=\\frac{hc}{e}\\left(\\frac1{\\lambda_1}-\\frac1{\\lambda_2}\\right)\\]\\[1{,}20-0{,}58=0{,}62\\ \\mathrm V\\]\\[\\frac1{400}-\\frac1{500}=5{,}0\\cdot10^{-4}\\ \\mathrm{nm^{-1}}\\]\\[hc=\\frac{0{,}62}{5{,}0\\cdot10^{-4}}=1240\\ \\mathrm{eV\\cdot nm}\\]\\[h=\\frac{1240\\cdot1{,}602\\cdot10^{-19}\\cdot10^{-9}}{2{,}998\\cdot10^8}=6{,}63\\cdot10^{-34}\\ \\mathrm{J\\cdot s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(hc=1240\\ \\mathrm{eV\\cdot nm}\\), vilket ger \\(h=6{,}63\\cdot10^{-34}\\ \\mathrm{J\\cdot s}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[W=\\frac{hc}{\\lambda_1}-eU_1=\\frac{1240}{400}-1{,}20=3{,}10-1{,}20=1{,}90\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utträdesarbetet är \\(1{,}90\\ \\mathrm{eV}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>En enda mätning ger en ekvation med två okända, \\(h\\) och \\(W\\), och kan därför inte lösas. Med två våglängder får man två ekvationer. Subtraktionen tar bort \\(W\\), som är samma för båda mätningarna eftersom metallen är densamma, och kvar blir bara \\(h\\).</p><p class=\"facit-svar\"><strong>Svar:</strong> Två okända kräver två ekvationer. Utträdesarbetet elimineras genom att mätningarna görs på samma metall.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Det är så Plancks konstant faktiskt bestäms i skollaboratoriet. Lutningen på en graf över stoppotentialen mot frekvensen är \\(h/e\\), och den lutningen är densamma oavsett vilken metall man använder.</p></div>",
+    "familj": "ljus_partikelstrom__fotonenergi",
+    "formaga": [
+      "modellering",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "5.52",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "A",
+    "typ": "beräkna avstånd ur rödförskjutning och jämföra klassisk och relativistisk formel, ur text, sökt fart och avstånd",
+    "poang": "(0/2/2)",
+    "t": "<p>En kvasar har rödförskjutningen <em>z</em> = 0,25. Använd <em>H</em><sub>0</sub> = 70 km/(s·Mpc).</p><p><strong>a)</strong> Bestäm recessionsfarten med den enkla formeln <em>v</em> = <em>zc</em>, och beräkna avståndet med Hubbles lag.</p><p><strong>b)</strong> Den relativistiska formeln är 1 + <em>z</em> = √((1+β)/(1−β)) med β = <em>v</em>/<em>c</em>. Beräkna farten med den och jämför.</p><p><strong>c)</strong> Vad säger jämförelsen om när den enkla formeln duger?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v=zc=0{,}25\\cdot2{,}998\\cdot10^5=7{,}50\\cdot10^4\\ \\mathrm{km/s}\\]\\[d=\\frac{v}{H_0}=\\frac{7{,}50\\cdot10^4}{70}=1{,}07\\cdot10^{3}\\ \\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten blir \\(7{,}5\\cdot10^4\\ \\mathrm{km/s}\\) och avståndet \\(1{,}07\\ \\mathrm{Gpc}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Lös ut β ur den relativistiska formeln genom att kvadrera.</p><div class=\"facit-matte\">\\[(1+z)^2=\\frac{1+\\beta}{1-\\beta}\\quad\\Longrightarrow\\quad\\beta=\\frac{(1+z)^2-1}{(1+z)^2+1}\\]\\[\\beta=\\frac{1{,}5625-1}{1{,}5625+1}=\\frac{0{,}5625}{2{,}5625}=0{,}220\\]\\[v=0{,}220\\cdot2{,}998\\cdot10^5=6{,}58\\cdot10^4\\ \\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den relativistiska farten är \\(6{,}58\\cdot10^4\\ \\mathrm{km/s}\\), alltså cirka \\(12\\ \\%\\) lägre än den enkla formeln ger.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Skillnaden på 12 % visar att den enkla formeln \\(v=zc\\) redan vid \\(z=0{,}25\\) ger ett märkbart fel. För små rödförskjutningar, säg \\(z&lt;0{,}1\\), blir felet några få procent och formeln duger för överslag. För stora \\(z\\) blir den obrukbar — den skulle till exempel ge överljusfart redan vid \\(z=1\\).</p><p class=\"facit-svar\"><strong>Svar:</strong> Den enkla formeln duger bara för små rödförskjutningar, ungefär \\(z&lt;0{,}1\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Att båda formlerna finns är ingen motsägelse. Den enkla är den första termen i en utveckling av den relativistiska, precis som klassisk mekanik är gränsfallet av relativistisk mekanik vid låga farter.</p></div>",
+    "familj": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "5.53",
+    "kap": 5,
+    "omr": "avstandsmatning",
+    "niva": "A",
+    "typ": "bestämma en galax avstånd med en cepheids perioden-luminositetsrelation och avståndsmodulen, ur text, sökt avstånd",
+    "poang": "(0/2/2)",
+    "t": "<p>I en avlägsen galax observeras en cepheidvariabel med perioden 30 dygn och den apparenta magnituden +24,0. För cepheider gäller ungefär <em>M</em> = −2,81·log<em>P</em> − 1,43, där <em>P</em> anges i dygn.</p><p><strong>a)</strong> Bestäm cepheidens absoluta magnitud.</p><p><strong>b)</strong> Bestäm galaxens avstånd i megaparsec.</p><p><strong>c)</strong> Uppskatta galaxens recessionsfart med <em>H</em><sub>0</sub> = 70 km/(s·Mpc).</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[M=-2{,}81\\log30-1{,}43=-2{,}81\\cdot1{,}477-1{,}43=-5{,}58\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den absoluta magnituden är \\(-5{,}58\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Avståndsmodulen ger avståndet.</p><div class=\"facit-matte\">\\[m-M=24{,}0-(-5{,}58)=29{,}58\\]\\[d=10^{(m-M+5)/5}=10^{34{,}58/5}=10^{6{,}92}=8{,}2\\cdot10^{6}\\ \\mathrm{pc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är \\(8{,}2\\ \\mathrm{Mpc}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v=H_0d=70\\cdot8{,}2=5{,}8\\cdot10^{2}\\ \\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Recessionsfarten är cirka \\(580\\ \\mathrm{km/s}\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Cepheider fungerar som standardljus: perioden avslöjar den verkliga ljusstyrkan, och jämförelsen med den skenbara ger avståndet. Det var precis så Hubble kunde visa att Andromeda ligger utanför Vintergatan, och därmed att universum är fyllt av galaxer.</p></div>",
+    "familj": "avstandsmatning__astronomisk_avstandsmatning",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "5.54",
+    "kap": 5,
+    "omr": "farg_ljusstyrka",
+    "niva": "A",
+    "typ": "jämföra två komponenters luminositet och färg i en dubbelstjärna med Stefan-Boltzmanns och Wiens lagar, ur text, sökt luminositet och våglängder",
+    "poang": "(0/2/2)",
+    "t": "<p>En dubbelstjärna består av en het vit komponent med yttemperaturen 12 000 K och radien 1,8 solradier, och en sval röd komponent med yttemperaturen 3200 K och radien 25 solradier. Solens yttemperatur är 5772 K och Wiens konstant 2,898·10<sup>−3</sup> m·K.</p><p><strong>a)</strong> Beräkna varje komponents luminositet i solenheter. Vilken dominerar den totala luminositeten?</p><p><strong>b)</strong> Bestäm var vardera komponenten har sitt strålningsmaximum.</p><p><strong>c)</strong> Om systemet fotograferas genom ett blått filter, vilken komponent syns tydligast? Motivera.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\frac{L}{L_{\\odot}}=\\left(\\frac{R}{R_{\\odot}}\\right)^2\\left(\\frac{T}{T_{\\odot}}\\right)^4\\]\\[L_{\\text{vit}}=1{,}8^2\\cdot\\left(\\frac{12000}{5772}\\right)^4=3{,}24\\cdot18{,}7=61\\ L_{\\odot}\\]\\[L_{\\text{röd}}=25^2\\cdot\\left(\\frac{3200}{5772}\\right)^4=625\\cdot0{,}0945=59\\ L_{\\odot}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Komponenterna har nästan exakt samma luminositet, \\(61\\) respektive \\(59\\ L_{\\odot}\\). Ingen av dem dominerar.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\lambda_{\\text{vit}}=\\frac{2{,}898\\cdot10^{-3}}{12000}=242\\ \\mathrm{nm}\\]\\[\\lambda_{\\text{röd}}=\\frac{2{,}898\\cdot10^{-3}}{3200}=906\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den vita har maximum vid \\(242\\ \\mathrm{nm}\\) i ultraviolett, den röda vid \\(906\\ \\mathrm{nm}\\) i infrarött. Ingen av dem har alltså sitt maximum i det synliga området.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Den vita komponenten. Trots att den totala luminositeten är ungefär lika stor för båda är fördelningen helt olika. Den vita stjärnan strålar mest på korta våglängder och har därför en stor del av sin strålning i blått, medan den röda stjärnan har nästan hela sin strålning i infrarött och bidrar mycket lite i blått.</p><p class=\"facit-svar\"><strong>Svar:</strong> Den vita komponenten syns tydligast i blått ljus, eftersom dess strålning är förskjuten mot korta våglängder.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Samma system kan se helt olika ut i olika filter. Det är därför astronomer alltid anger vilket våglängdsområde en magnitud gäller för — en stjärna kan vara ljusast i blått och nästan osynlig i infrarött, eller tvärtom.</p></div>",
+    "familj": "farg_ljusstyrka__stjarnfarg_och_temperatur",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.178",
+    "kap": 2,
+    "omr": "vagrorelser",
+    "niva": "A",
+    "typ": "kombinera stående våg på sträng med greppläge och strängspänning, ur text, sökt våghastighet greppläge och kraft",
+    "poang": "(0/2/2)",
+    "t": "<p>En gitarrsträng är 0,650 m lång mellan sadeln och stallet och stäms så att grundtonen blir 330 Hz. Strängens massa per längdenhet är 0,40 g/m.</p><p><strong>a)</strong> Bestäm våghastigheten på strängen.</p><p><strong>b)</strong> Var ska gitarristen sätta fingret, räknat från sadeln, för att i stället få tonen 440 Hz?</p><p><strong>c)</strong> Bestäm kraften som strängen är spänd med. Våghastigheten på en sträng ges av <em>v</em> = √(<em>F</em>/<em>μ</em>), där <em>μ</em> är massan per längdenhet.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I grundtonen ryms en halv våglängd på strängen.</p><div class=\"facit-matte\">\\[\\lambda=2L=2\\cdot0{,}650=1{,}300\\ \\mathrm m\\]\\[v=f\\lambda=330\\cdot1{,}300=429\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våghastigheten är \\(429\\ \\mathrm{m/s}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Våghastigheten är densamma, eftersom spänning och sträng inte ändras. Det är den svängande längden som ändras.</p><div class=\"facit-matte\">\\[L\\'=\\frac{v}{2f}=\\frac{429}{2\\cdot440}=0{,}4875\\ \\mathrm m\\]\\[d=0{,}650-0{,}4875=0{,}1625\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fingret sätts \\(16{,}3\\ \\mathrm{cm}\\) från sadeln, så att \\(48{,}8\\ \\mathrm{cm}\\) blir kvar att svänga.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v=\\sqrt{\\frac F\\mu}\\quad\\Longrightarrow\\quad F=\\mu v^2\\]\\[F=0{,}40\\cdot10^{-3}\\cdot429^2=74\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Strängen är spänd med kraften \\(74\\ \\mathrm N\\).</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> De tre delarna hänger ihop via våghastigheten. Att greppa ändrar bara längden, medan att stämma ändrar spänningen och därmed hastigheten. Det är därför en gitarr kan ha sex strängar av samma längd men helt olika tonhöjd.</p></div>",
+    "familj": "vagrorelser__staende_vagor",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.179",
+    "kap": 2,
+    "omr": "ljudvagor",
+    "niva": "A",
+    "typ": "jämföra grundton och övertoner för en öppen och en halvöppen orgelpipa, ur text, sökt längd frekvens och klangjämförelse",
+    "poang": "(0/2/2)",
+    "t": "<p>En orgelpipa som är öppen i båda ändar har grundtonen 262 Hz. Ljudhastigheten är 340 m/s.</p><p><strong>a)</strong> Bestäm pipans längd.</p><p><strong>b)</strong> Pipan täpps till i ena änden utan att längden ändras. Bestäm den nya grundtonen och de två närmast följande resonanserna.</p><p><strong>c)</strong> Vilken av de två pipmodellerna låter mörkast, och vad skiljer klangen åt? Motivera utifrån dina resultat.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I en öppen pipa ryms en halv våglängd i grundtonen.</p><div class=\"facit-matte\">\\[L=\\frac{v}{2f_1}=\\frac{340}{2\\cdot262}=0{,}649\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Pipan är \\(0{,}649\\ \\mathrm m\\) lång.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I en halvöppen pipa ryms en fjärdedels våglängd i grundtonen, och bara udda multiplar av grundtonen är möjliga.</p><div class=\"facit-matte\">\\[f_1=\\frac{v}{4L}=\\frac{340}{4\\cdot0{,}649}=131\\ \\mathrm{Hz}\\]\\[f_3=3f_1=393\\ \\mathrm{Hz},\\qquad f_5=5f_1=655\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Grundtonen halveras till \\(131\\ \\mathrm{Hz}\\). De två följande resonanserna är \\(393\\ \\mathrm{Hz}\\) och \\(655\\ \\mathrm{Hz}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Den täppta pipan låter mörkast. Dess grundton är hälften så hög, alltså en oktav lägre, trots att pipan är exakt lika lång. Klangen skiljer sig också: den öppna pipan ger alla övertoner (262, 524, 786 Hz …), medan den täppta bara ger de udda (131, 393, 655 Hz …). Att varannan överton saknas ger den täppta pipan en ihåligare, mjukare klang.</p><p class=\"facit-svar\"><strong>Svar:</strong> Den täppta pipan låter en oktav lägre och saknar de jämna övertonerna, vilket ger en ihåligare klang.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Att täppa till ena änden sänker tonen en oktav utan att pipan blir längre. Det är därför orgelbyggare kan få djupa toner ur korta pipor, till priset av en annan klangfärg.</p></div>",
+    "familj": "ljudvagor__grundton_och_overtoner",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "6.56",
+    "kap": 6,
+    "omr": "relativistisk_energi",
+    "niva": "A",
+    "typ": "beräkna gammafaktor fart och kontraherad ringlängd för protoner i en acceleratorring, ur text, sökt gammafaktor och längd",
+    "poang": "(0/2/2)",
+    "t": "<p>I en stor acceleratorring accelereras protoner till rörelseenergin 6,5 TeV. Protonens viloenergi är 938 MeV och ringens omkrets är 27 km.</p><p><strong>a)</strong> Bestäm gammafaktorn.</p><p><strong>b)</strong> Hur nära ljushastigheten går protonerna? Använd att 1 − β ≈ 1/(2γ<sup>2</sup>) när γ är stort.</p><p><strong>c)</strong> Hur lång är ringen mätt i protonens vilosystem, och hur lång tid tar ett varv mätt med protonens egen klocka?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\gamma=1+\\frac{E_k}{E_0}=1+\\frac{6{,}5\\cdot10^{6}}{938}=6{,}93\\cdot10^{3}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Gammafaktorn är cirka \\(6930\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[1-\\beta\\approx\\frac1{2\\gamma^2}=\\frac1{2\\cdot(6{,}93\\cdot10^3)^2}=1{,}04\\cdot10^{-8}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Protonerna går med \\(\\beta=0{,}99999999\\), alltså cirka \\(3{,}1\\ \\mathrm{m/s}\\) långsammare än ljuset.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Ringen rör sig i protonens system och är därför kontraherad.</p><div class=\"facit-matte\">\\[L=\\frac{27\\cdot10^3}{6{,}93\\cdot10^3}=3{,}9\\ \\mathrm m\\]\\[\\tau=\\frac{L}{v}\\approx\\frac{3{,}9}{2{,}998\\cdot10^8}=1{,}3\\cdot10^{-8}\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ringen är bara \\(3{,}9\\ \\mathrm m\\) lång för protonen, och ett varv tar \\(13\\ \\mathrm{ns}\\) på protonens klocka mot \\(90\\ \\mathrm{\\mu s}\\) i laboratoriet.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Nästan hela accelerationsarbetet går till att öka energin, inte farten. Protonerna når 99,999999 % av ljushastigheten men kan aldrig nå ända fram — varje ytterligare TeV ökar bara gammafaktorn.</p></div>",
+    "familj": "relativistisk_energi__relativistisk_kinetisk_energi",
+    "formaga": [
+      "problemlösning",
+      "procedur"
+    ]
+  },
+  {
+    "id": "6.57",
+    "kap": 6,
+    "omr": "tid_och_langd",
+    "niva": "A",
+    "typ": "beräkna åldersskillnaden i tvillingparadoxen från båda systemen och förklara asymmetrin, ur text, sökt tid och förklaring",
+    "poang": "(0/2/2)",
+    "t": "<p>Två tvillingar är 25 år gamla. Den ena reser till en stjärna 8,0 ljusår bort med farten 0,80<em>c</em> och återvänder genast med samma fart. Den andra stannar på jorden.</p><p><strong>a)</strong> Hur gamla är tvillingarna vid återseendet?</p><p><strong>b)</strong> Visa att den resande tvillingen kommer fram till samma egentid genom att räkna i sitt eget system.</p><p><strong>c)</strong> Båda tvillingarna ser den andra röra sig. Varför blir situationen ändå inte symmetrisk?</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\gamma=\\frac1{\\sqrt{1-0{,}80^2}}=\\frac1{0{,}600}=1{,}667\\]\\[t=\\frac{2\\cdot8{,}0}{0{,}80}=20{,}0\\ \\mathrm{år}\\]\\[\\tau=\\frac t\\gamma=\\frac{20{,}0}{1{,}667}=12{,}0\\ \\mathrm{år}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Tvillingen på jorden blir \\(45\\) år och den resande \\(37\\) år. Skillnaden är \\(8{,}0\\) år.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I den resandes system är det sträckan som är kontraherad.</p><div class=\"facit-matte\">\\[L=\\frac{8{,}0}{1{,}667}=4{,}8\\ \\mathrm{ljusår}\\]\\[\\tau=\\frac{2\\cdot4{,}8}{0{,}80}=12{,}0\\ \\mathrm{år}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Samma svar, \\(12{,}0\\) år. De två räknesätten är två beskrivningar av samma sak.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Under själva utfärden och återfärden är situationen symmetrisk, och var och en ser den andras klocka gå långsamt. Men den resande tvillingen måste vända vid stjärnan. Då byter hon referenssystem, och hon känner accelerationen. Tvillingen på jorden stannar däremot i ett och samma inertialsystem hela tiden.</p><p>Det är den skillnaden som bryter symmetrin. Bara den resande har en resa som består av två olika inertialsystem, och det är hon som blir yngre.</p><p class=\"facit-svar\"><strong>Svar:</strong> Den resande byter referenssystem vid vändningen medan den kvarvarande stannar i ett enda. Därför är situationen inte symmetrisk.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Paradoxen är ingen motsägelse i teorin utan ett tecken på att man måste hålla reda på vem som accelererar. Tidsdilatation gäller mellan inertialsystem, och den resande tillhör inte ett enda sådant under hela resan.</p></div>",
+    "familj": "tid_och_langd__rumtid_och_referenssystem",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "6.58",
+    "kap": 6,
+    "omr": "massa_och_energi",
+    "niva": "A",
+    "typ": "beräkna tröskelenergi och våglängd för parbildning och förklara varför en atomkärna behövs, ur text, sökt energi våglängd och förklaring",
+    "poang": "(0/2/2)",
+    "t": "<p>Vid parbildning omvandlas en foton till ett elektron–positronpar. Elektronens och positronens viloenergi är 0,511 MeV vardera. Använd <em>hc</em> = 1240 eV·nm.</p><p><strong>a)</strong> Bestäm den minsta fotonenergi som krävs, och motsvarande våglängd.</p><p><strong>b)</strong> En foton med energin 2,50 MeV ger upphov till parbildning. Hur stor rörelseenergi får partiklarna dela på?</p><p><strong>c)</strong> Parbildning kan inte ske i tomma rymden utan måste ske nära en atomkärna. Förklara varför.</p>",
+    "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Fotonens energi måste minst räcka till båda partiklarnas viloenergi.</p><div class=\"facit-matte\">\\[E_{\\min}=2m_ec^2=2\\cdot0{,}511=1{,}022\\ \\mathrm{MeV}\\]\\[\\lambda=\\frac{hc}{E}=\\frac{1240}{1{,}022\\cdot10^6}=1{,}21\\cdot10^{-3}\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Tröskelenergin är \\(1{,}022\\ \\mathrm{MeV}\\), vilket svarar mot våglängden \\(1{,}21\\ \\mathrm{pm}\\). Det är gammastrålning.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[E_k=2{,}50-1{,}022=1{,}48\\ \\mathrm{MeV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Partiklarna delar på \\(1{,}48\\ \\mathrm{MeV}\\) rörelseenergi.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Både energi och rörelsemängd måste bevaras. En foton med energin \\(E\\) har rörelsemängden \\(E/c\\). Om paret skulle bildas ensamt skulle den minsta möjliga rörelsemängden hos paret vara mindre än fotonens, eftersom paret har vilomassa och därmed kan stå stilla i något system. Ekvationerna går helt enkelt inte ihop.</p><p>En närliggande atomkärna löser problemet genom att ta upp överskottet av rörelsemängd. Eftersom kärnan är mycket tyngre än paret tar den nästan ingen energi med sig, så energiräkningen ovan påverkas knappt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Rörelsemängden kan inte bevaras utan en tredje part. Atomkärnan tar upp överskottet utan att nämnvärt påverka energibalansen.</p></div></div><p class=\"facit-not\"><strong>Nyckelinsikt:</strong> Parbildning är den tydligaste demonstrationen av att massa är en form av energi. Ren strålningsenergi blir till materia, och gränsen 1,022 MeV är inget annat än prislappen i energi för två elektronmassor.</p></div>",
+    "familj": "massa_och_energi__massa_energi_ekvivalens",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ]
   }
 ];
