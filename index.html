@@ -4054,16 +4054,34 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .spararad{margin-top:7px!important}
 .spararad .knapp{padding:6px 10px!important;font-size:11.5px!important}
 
-/* Mätaren: samma information, halva höjden. */
-.mätare{padding:11px 18px 12px!important}
-.mätarhuvud{margin-bottom:8px!important;gap:8px!important}
-.summa{font-size:25px!important;letter-spacing:-.04em!important}
-.summa small{font-size:11px!important}
-.mätarhuvud .antal{font-size:11.5px!important;padding-bottom:1px!important}
-.stapel{height:6px!important}
-.mätarnyckel{margin-top:8px!important;gap:13px!important;font-size:11.5px!important}
+/* Mätaren: stapeln överst, och därunder en enda rad som bär både
+   nivåfördelningen och antalet uppgifter. Rubrikraden ovanför stapeln
+   utgår helt, vilket är den största höjdvinsten i panelen.
+   Ordningen sätts med grid – markupen är oförändrad. */
+.mätare{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:baseline!important;
+  row-gap:9px!important;column-gap:12px!important;
+  padding:12px 18px 13px!important;
+}
+.stapel{grid-column:1/-1!important;grid-row:1!important;height:6px!important;margin:0!important}
+.mätarnyckel{
+  grid-column:1!important;grid-row:2!important;margin:0!important;
+  gap:13px!important;font-size:11.5px!important;
+}
 .mätarnyckel i{width:7px!important;height:7px!important;margin-right:5px!important}
-.gränser{margin-top:10px!important}
+.mätarhuvud{
+  grid-column:2!important;grid-row:2!important;margin:0!important;
+  justify-self:end!important;align-items:baseline!important;gap:9px!important;
+}
+.summa{font-size:16px!important;font-weight:700!important;letter-spacing:-.03em!important}
+.summa small{font-size:10.5px!important;margin-left:1px!important}
+.mätarhuvud .antal{
+  margin-left:0!important;padding-bottom:0!important;
+  font-size:11.5px!important;color:var(--x-ink-4)!important;white-space:nowrap!important;
+}
+.gränser{grid-column:1/-1!important;grid-row:3!important;margin:0!important}
 .gränser .gränsrubrik{margin-bottom:5px!important;font-size:10.5px!important}
 .gränsrad{gap:5px!important}
 .chip{padding:4px 4px!important;border-radius:8px!important;font-size:11px!important}
