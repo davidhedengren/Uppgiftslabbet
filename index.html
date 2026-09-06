@@ -4039,6 +4039,75 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .poängred{border-radius:18px!important;box-shadow:var(--x-e3)!important;border:1px solid var(--x-line)!important}
 
 
+/* ═════════════════ 7b · HÖGERPANELEN · MER PLATS ÅT LISTAN ═════════════════
+   Mätaren och bottenraden är stödinformation. De krymps så att den tillagda
+   uppgiftslistan – panelens egentliga innehåll – får utrymmet i stället.
+   Rangordning i exportraden: PDF och Word är jämbördiga, Till analys är
+   klart sekundär och tar bara den plats etiketten kräver. */
+
+/* Dokumenthuvudet trimmas något av samma skäl. */
+.bladtopp{padding:14px 18px 13px!important}
+.bladtyp-rad{margin-bottom:0!important}
+.bladtyp-rad select{padding:7px 10px!important}
+.fält{gap:7px!important}
+.fält input{padding:8px 12px!important;font-size:13px!important}
+.spararad{margin-top:7px!important}
+.spararad .knapp{padding:6px 10px!important;font-size:11.5px!important}
+
+/* Mätaren: samma information, halva höjden. */
+.mätare{padding:11px 18px 12px!important}
+.mätarhuvud{margin-bottom:8px!important;gap:8px!important}
+.summa{font-size:25px!important;letter-spacing:-.04em!important}
+.summa small{font-size:11px!important}
+.mätarhuvud .antal{font-size:11.5px!important;padding-bottom:1px!important}
+.stapel{height:6px!important}
+.mätarnyckel{margin-top:8px!important;gap:13px!important;font-size:11.5px!important}
+.mätarnyckel i{width:7px!important;height:7px!important;margin-right:5px!important}
+.gränser{margin-top:10px!important}
+.gränser .gränsrubrik{margin-bottom:5px!important;font-size:10.5px!important}
+.gränsrad{gap:5px!important}
+.chip{padding:4px 4px!important;border-radius:8px!important;font-size:11px!important}
+.chip b{font-size:12px!important}
+
+/* Listan tar över det frigjorda utrymmet. */
+.bladlista{padding:8px 10px 14px!important}
+.brad{padding:8px 9px!important;gap:9px!important}
+.brad .num{width:20px!important;height:20px!important;font-size:10.5px!important}
+.brad .txt{line-height:1.45!important}
+
+/* Bottenraden: tätare växlar. */
+.bladfot{padding:12px 16px 14px!important}
+.växel{margin-bottom:8px!important;font-size:12.5px!important;gap:9px!important}
+.växel input{width:34px!important;height:20px!important}
+.växel input::after{top:2.5px!important;left:2.5px!important;width:15px!important;height:15px!important}
+.växel input:checked::after{transform:translateX(14px)!important}
+
+/* Exportraden. */
+.exportrad{gap:7px!important;align-items:stretch!important}
+.exportrad .knapp{
+  flex:1 1 0!important;min-width:0!important;
+  padding:9px 10px!important;border-radius:10px!important;
+  font-size:12.5px!important;font-weight:600!important;gap:6px!important;
+  white-space:nowrap!important;
+}
+.exportrad .knapp svg{width:14px!important;height:14px!important}
+/* Till analys är sekundär: minsta möjliga yta, ingen fyllnad. */
+.exportrad .knapp.till-analys{
+  flex:0 0 auto!important;
+  padding:6px 8px!important;border-radius:9px!important;
+  font-size:10.5px!important;font-weight:550!important;
+  line-height:1.15!important;gap:4px!important;
+  white-space:nowrap!important;
+  background:transparent!important;color:var(--x-ink-3)!important;
+  box-shadow:inset 0 0 0 1px var(--x-line)!important;
+}
+.exportrad .knapp.till-analys svg{width:13px!important;height:13px!important;opacity:.75}
+.exportrad .knapp.till-analys:hover{
+  background:#F2F5FA!important;color:#2A5A93!important;
+  box-shadow:inset 0 0 0 1px rgba(42,90,147,.22)!important;
+}
+.exportrad .knapp.till-analys:hover svg{opacity:1}
+
 /* ═════════════════ 8 · TELEFON ═════════════════ */
 @media(max-width:680px){
   .top{
