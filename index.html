@@ -3673,6 +3673,106 @@ body{
 .kv-sidfot b{color:var(--x-ink-2)!important}
 
 
+/* ═════════════════ 2b · KURSVÄLJAREN · CENTRERAD MASTHEAD ═════════════════
+   Sidans uppgift är att välja kurs, inte att läsa en rubrik. Logotypen och
+   ingressen sätts som ett centrerat, nedskalat huvud med en avslutande
+   hårfin linje, så att kurskorten kommer högre upp i bilden.
+   Rubriken tappar sin accentmarkering – färgen bor i kursernas ryggar. */
+
+.kv-inner{
+  padding:clamp(20px,2.8vh,32px) clamp(22px,4.5vw,52px) clamp(30px,4.5vh,52px)!important;
+}
+
+/* Logotypen centreras och måttsätts på höjden, inte på bredden. */
+.kv-nav{
+  display:flex!important;justify-content:center!important;align-items:center!important;
+  margin:0 0 clamp(16px,2.2vh,24px)!important;
+  padding-bottom:0!important;border-bottom:0!important;
+}
+.kv-nav .kv-brand{
+  display:block!important;width:auto!important;max-width:100%!important;
+}
+.kv-nav .kv-full-logo{
+  display:block!important;margin:0 auto!important;
+  width:auto!important;height:auto!important;
+  max-width:min(100%,400px)!important;
+  max-height:78px!important;
+  object-fit:contain!important;
+}
+/* logo.jpg har vit bakgrund. multiply låter den vita ytan smälta in i
+   pappret i stället för att bilda en synlig rektangel. */
+.kv-nav .kv-full-logo,
+.top .hem-logo img{mix-blend-mode:multiply}
+
+/* Ingressen: centrerad, nedskalad, avslutad med en linje mot kurslistan. */
+.kv-designhero{
+  display:block!important;text-align:center!important;
+  margin:0 0 clamp(24px,3.2vh,34px)!important;
+  padding:0 0 clamp(22px,2.8vh,30px)!important;
+  border-bottom:1px solid var(--x-line-soft)!important;
+}
+.kv-blad{display:none!important}
+.kv-designhero-copy{max-width:none!important;margin:0 auto!important}
+.kv-designhero h2{
+  margin:0 auto!important;max-width:none!important;
+  font-size:clamp(21px,1.95vw,27px)!important;
+  line-height:1.18!important;letter-spacing:-.026em!important;font-weight:620!important;
+  color:var(--x-ink)!important;text-wrap:balance;
+}
+.kv-designhero h2 span{
+  color:inherit!important;background-image:none!important;white-space:normal!important;
+}
+.kv-designhero .kv-designhero-sub{
+  margin:8px auto 0!important;max-width:44ch!important;
+  font-size:14px!important;line-height:1.5!important;color:var(--x-ink-4)!important;
+}
+.kv-fakta{
+  justify-content:center!important;margin-top:13px!important;
+  gap:6px 16px!important;font-size:12px!important;color:var(--x-ink-4)!important;
+}
+
+/* Bakgrundens ljus och topplinje flyttas mot mitten för att följa huvudet. */
+.kursval{
+  background:
+    radial-gradient(900px 480px at 50% -14%, color-mix(in oklab,var(--ed) 6%,transparent), transparent 64%),
+    radial-gradient(760px 560px at 100% 12%, rgba(44,98,168,.04), transparent 68%),
+    linear-gradient(180deg,#FCFCFD 0%,#F7F8FA 100%)!important;
+}
+.kursval::before{
+  -webkit-mask-image:radial-gradient(820px 460px at 50% -6%,#000,transparent 72%)!important;
+          mask-image:radial-gradient(820px 460px at 50% -6%,#000,transparent 72%)!important;
+}
+.kursval::after{
+  background:linear-gradient(90deg,transparent 0%,rgba(16,19,24,.10) 22%,
+    color-mix(in oklab,var(--ed) 70%,#fff) 44%,var(--ed) 50%,
+    color-mix(in oklab,var(--ed) 70%,#fff) 56%,rgba(16,19,24,.10) 78%,transparent 100%)!important;
+}
+
+/* Kurslistan skalas ned ett snäpp så att fler kort ryms i bild. */
+.kv-grupp + .kv-grupp{margin-top:clamp(20px,2.8vh,30px)!important}
+.kv-grupphuvud{margin:0 0 12px!important;gap:14px!important}
+.kv-grupphuvud h3{font-size:12px!important}
+.kv-grupphuvud span{font-size:11.5px!important}
+.kv-kortgrid{gap:15px!important}
+.kurskort{padding:20px 20px 16px 26px!important;border-radius:18px!important}
+.kurskort .kk-rygg{border-radius:18px 0 0 18px!important}
+.kk-index{font-size:12px!important}
+.kk-namn{margin-top:15px!important;font-size:22px!important;letter-spacing:-.032em!important}
+.kk-taggar{margin-top:9px!important;font-size:12.5px!important;min-height:2.8em!important}
+.kk-fot{padding-top:14px!important}
+.kk-action{width:32px!important;height:32px!important;flex:0 0 32px!important}
+.kk-action svg{width:15px!important;height:15px!important}
+.kk-status,.kk-meta{font-size:12px!important}
+.kv-sidfot{margin-top:clamp(28px,3.6vh,42px)!important;padding-top:18px!important;font-size:12px!important}
+
+@media(max-width:700px){
+  .kv-nav .kv-full-logo{max-width:min(82%,300px)!important;max-height:58px!important}
+  .kv-designhero{padding-bottom:20px!important;margin-bottom:22px!important}
+  .kv-designhero h2{font-size:clamp(20px,5.4vw,24px)!important;max-width:none!important}
+  .kv-designhero .kv-designhero-sub{font-size:14px!important;margin-top:8px!important}
+  .kk-taggar{min-height:0!important}
+}
+
 /* ═════════════════ 3 · KURSVYNS SKAL ═════════════════ */
 /* Toppraden är 112 px hög medan arbetsytan räknade med 80 px, vilket
    klippte panelernas nederkant. Skalet blir i stället en flexkolumn. */
