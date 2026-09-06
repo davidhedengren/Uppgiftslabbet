@@ -3315,6 +3315,764 @@ button,input,select,textarea{font-family:var(--ui)!important}
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<!-- Typsnitten som formgivningen redan förutsätter men aldrig laddade. -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   UPPGIFTSLABBET · FORMGIVNING v10 "INSTRUMENT"
+   Ett avslutande, rent visuellt lager. Ingen markup och ingen logik ändras.
+   Principer
+     1. Materialet bär hierarkin. Ytor ligger på tydliga plan: papper,
+        kort, upphöjd panel, glas. Ramar används sparsamt.
+     2. Färg är signal, inte dekor. Kursens accent finns i ryggen, i
+        aktiva tillstånd och i primärknappen – ingen annanstans.
+     3. Optisk typografi. Tätare spärrning ju större graden, siffror i
+        tabellversaler, versalgemener i stället för spärrade versaler.
+     4. Rörelse svarar på handling. Inga inledande animationer utom en
+        enda vid inloggning.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* Bläck och papper */
+  --x-ink:#101318;
+  --x-ink-2:#454C57;
+  --x-ink-3:#79808B;
+  --x-ink-4:#9BA1AA;
+  --x-paper:#EFF1F4;
+  --x-surface:#FFFFFF;
+  --x-sunken:#F5F6F9;
+
+  /* Hårfina linjer i två styrkor */
+  --x-line:rgba(16,19,24,.085);
+  --x-line-soft:rgba(16,19,24,.05);
+
+  /* Ljussättning: ett svagt omgivningsljus plus ett riktat ljus ovanifrån */
+  --x-e1:0 .5px 1px rgba(16,19,24,.045), 0 1px 2px rgba(16,19,24,.04);
+  --x-e2:0 1px 1px rgba(16,19,24,.035), 0 3px 8px -2px rgba(16,19,24,.05), 0 10px 24px -8px rgba(16,19,24,.07);
+  --x-e3:0 1px 2px rgba(16,19,24,.05), 0 10px 22px -8px rgba(16,19,24,.10), 0 30px 60px -22px rgba(16,19,24,.15);
+  --x-e4:0 20px 44px -12px rgba(16,19,24,.20), 0 60px 120px -40px rgba(16,19,24,.32);
+  --x-spec:inset 0 1px 0 rgba(255,255,255,.9);
+
+  /* Rörelse */
+  --x-out:cubic-bezier(.16,1,.3,1);
+  --x-io:cubic-bezier(.4,0,.2,1);
+
+  /* Radier */
+  --x-r1:9px; --x-r2:12px; --x-r3:16px; --x-r4:22px; --x-r5:28px;
+}
+
+/* Typsnitten laddas nu på riktigt. Utskrift och Word-export behåller
+   samma fallback som tidigare, så sidbrytningar inte förskjuts. */
+:root{
+  --las:'Atkinson Hyperlegible',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono','SFMono-Regular',ui-monospace,monospace;
+}
+@media print{ :root{ --las:system-ui,sans-serif; --mono:monospace } }
+/* Figurernas etiketter behåller sitt gamla mått så att inget hamnar snett. */
+.fig-num,.fig-namn,.fig-etikett{font-family:ui-monospace,'SFMono-Regular',monospace!important}
+
+/* ── Grund ───────────────────────────────────────────────────────────── */
+body{
+  font-feature-settings:"cv05" 1,"cv11" 1,"ss01" 1,"calt" 1;
+  letter-spacing:-.006em;
+  color:var(--x-ink)!important;
+  text-rendering:optimizeLegibility;
+}
+::selection{background:color-mix(in oklab,var(--ed) 22%,transparent);color:var(--x-ink)}
+
+/* Textfalt har redan en egen fokusstil; de ska inte fa ytterligare en ring ovanpa. */
+:where(input:not([type="checkbox"]):not([type="radio"]),select,textarea):focus-visible{
+  outline:none!important;
+}
+
+/* En enda, igenkännbar fokusmarkering i hela gränssnittet. */
+:where(button,a,[tabindex],summary):focus-visible,
+:where(input[type="checkbox"],input[type="radio"]):focus-visible{
+  outline:2px solid var(--ed)!important;
+  outline-offset:2px!important;
+  box-shadow:0 0 0 5px color-mix(in oklab,var(--ed) 15%,transparent)!important;
+  border-radius:var(--x-r1);
+}
+
+/* Rullningslister som inte tar plats i blickfånget. */
+.panel::-webkit-scrollbar,.bladlista::-webkit-scrollbar,
+.ru-body::-webkit-scrollbar,.sparmodal-body::-webkit-scrollbar{width:11px;height:11px}
+.panel::-webkit-scrollbar-thumb,.bladlista::-webkit-scrollbar-thumb,
+.ru-body::-webkit-scrollbar-thumb,.sparmodal-body::-webkit-scrollbar-thumb{
+  background:rgba(16,19,24,.16)!important;border:3.5px solid transparent!important;
+  background-clip:padding-box!important;border-radius:99px!important;
+  transition:background .2s;
+}
+.panel:hover::-webkit-scrollbar-thumb,.bladlista:hover::-webkit-scrollbar-thumb{
+  background:rgba(16,19,24,.28)!important;background-clip:padding-box!important;
+}
+.panel::-webkit-scrollbar-track,.bladlista::-webkit-scrollbar-track{background:transparent!important}
+
+/* Siffror i gränssnittet ska stå still när de räknas upp. */
+.summa,.mätarnyckel b,.chip b,.antal,.poäng,.bpoäng,.träffar b,.kk-meta,
+.brad .num,#slumpaAntal{font-variant-numeric:tabular-nums}
+
+
+/* ═════════════════ 1 · INLOGGNING ═════════════════
+   Första intrycket. Djup, tyst yta – kortet är det enda som lyser. */
+.password-gate{
+  background:
+    radial-gradient(760px 520px at 18% -8%, color-mix(in oklab,var(--ed) 42%,transparent), transparent 68%),
+    radial-gradient(680px 620px at 92% 108%, rgba(46,74,120,.34), transparent 70%),
+    radial-gradient(1000px 700px at 50% 50%, #1B1E25, #0B0D11 78%)!important;
+  padding:28px!important;
+}
+.password-gate::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(760px 520px at 50% 42%,#000,transparent 75%);
+          mask-image:radial-gradient(760px 520px at 50% 42%,#000,transparent 75%);
+}
+.password-card{
+  position:relative;
+  width:min(432px,100%)!important;
+  padding:34px 34px 30px!important;
+  background:linear-gradient(180deg,#FFFFFF 0%,#FCFCFD 100%)!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  border-radius:26px!important;
+  box-shadow:var(--x-e4),var(--x-spec)!important;
+  animation:x-gate .62s var(--x-out) both;
+}
+@keyframes x-gate{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+.password-brand{margin-bottom:26px!important;padding-bottom:22px;border-bottom:1px solid var(--x-line-soft)}
+.password-brand .password-full-logo{width:min(100%,300px)!important;margin:0!important}
+.password-card h1{
+  margin:0 0 6px!important;
+  font-size:26px!important;font-weight:640!important;
+  letter-spacing:-.035em!important;color:var(--x-ink)!important;
+}
+.password-card > p{
+  margin:0 0 24px!important;font-size:14.5px!important;line-height:1.5!important;
+  color:var(--x-ink-3)!important;
+}
+.password-card label{
+  margin-bottom:8px!important;font-size:12px!important;font-weight:600!important;
+  letter-spacing:.005em!important;color:var(--x-ink-2)!important;
+}
+.password-row{gap:9px!important}
+.password-row input{
+  height:48px!important;padding:0 15px!important;
+  background:var(--x-sunken)!important;
+  border:1px solid var(--x-line)!important;border-radius:13px!important;
+  font-size:15px!important;
+  transition:background .18s,border-color .18s,box-shadow .18s!important;
+}
+.password-row input:focus{
+  background:#fff!important;border-color:var(--ed)!important;
+  box-shadow:0 0 0 4px color-mix(in oklab,var(--ed) 16%,transparent)!important;
+  outline:none!important;
+}
+.password-row button{
+  height:48px!important;padding:0 22px!important;border-radius:13px!important;
+  font:600 14.5px/1 var(--ui)!important;letter-spacing:-.01em!important;
+  background:linear-gradient(180deg,color-mix(in oklab,var(--ed) 92%,#fff),var(--ed))!important;
+  box-shadow:0 1px 2px rgba(16,19,24,.12),0 6px 16px -6px color-mix(in oklab,var(--ed) 60%,transparent)!important;
+  transition:filter .18s,transform .18s var(--x-out),box-shadow .18s!important;
+}
+.password-row button:hover{filter:brightness(1.06)}
+.password-row button:active{transform:translateY(1px)}
+.password-error{font-size:13px!important;color:var(--ed-dark)!important}
+
+
+/* ═════════════════ 2 · KURSVÄLJAREN ═════════════════ */
+.kursval{
+  background:
+    radial-gradient(920px 520px at 8% -12%, color-mix(in oklab,var(--ed) 7%,transparent), transparent 62%),
+    radial-gradient(820px 620px at 100% 4%, rgba(44,98,168,.045), transparent 66%),
+    linear-gradient(180deg,#FCFCFD 0%,#F7F8FA 100%)!important;
+}
+.kursval::before{
+  background-image:
+    linear-gradient(rgba(16,19,24,.026) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(16,19,24,.026) 1px,transparent 1px)!important;
+  background-size:38px 38px!important;
+  -webkit-mask-image:radial-gradient(900px 560px at 16% -4%,#000,transparent 74%)!important;
+          mask-image:radial-gradient(900px 560px at 16% -4%,#000,transparent 74%)!important;
+}
+/* Accentlinjen tunnas till en hårfin ljusstrimma. */
+.kursval::after{
+  height:2px!important;
+  background:linear-gradient(90deg,var(--ed) 0%,color-mix(in oklab,var(--ed) 55%,#fff) 30%,rgba(16,19,24,.10) 66%,transparent 100%)!important;
+  opacity:.85;
+}
+.kv-inner{width:min(1200px,100%)!important}
+
+/* Varumärkesrad */
+.kv-nav{
+  margin:0 0 clamp(34px,5vh,54px)!important;
+  padding-bottom:20px!important;
+  border-bottom:1px solid var(--x-line-soft)!important;
+}
+.kv-nav .kv-brand{width:min(100%,560px)!important}
+
+/* Ingress: rubriken är sidans enda stora gest. */
+.kv-designhero{margin:0 0 clamp(34px,4.6vh,52px)!important}
+.kv-designhero h2{
+  font-size:clamp(36px,4.4vw,58px)!important;
+  line-height:1.0!important;letter-spacing:-.048em!important;
+  font-weight:660!important;color:var(--x-ink)!important;
+  max-width:16ch!important;
+}
+.kv-designhero h2 span{
+  color:var(--x-ink)!important;
+  background-image:linear-gradient(90deg,
+    color-mix(in oklab,var(--ed) 78%,transparent),
+    color-mix(in oklab,var(--ed) 30%,transparent) 78%,
+    transparent)!important;
+  background-size:100% 1.5px!important;
+  background-position:0 1.06em!important;
+}
+.kv-designhero .kv-designhero-sub{
+  margin:18px 0 0!important;
+  font-family:var(--las)!important;
+  font-size:16px!important;line-height:1.55!important;
+  color:var(--x-ink-3)!important;
+}
+.kv-fakta{
+  margin-top:24px!important;gap:8px 20px!important;
+  font-family:var(--ui)!important;font-size:12.5px!important;
+  letter-spacing:0!important;text-transform:none!important;
+  color:var(--x-ink-3)!important;
+}
+.kv-fakta b{color:var(--x-ink-2)!important;font-weight:600!important}
+.kv-fakta span::before{width:4px!important;height:4px!important;opacity:.7!important}
+
+/* Pappersstapeln bredvid rubriken */
+@media(min-width:1080px){
+  .kv-blad i{
+    border-radius:12px!important;border:1px solid var(--x-line)!important;
+    box-shadow:var(--x-e2)!important;
+  }
+}
+
+/* Ämnesrubriker: struktur, inte dekoration. */
+.kv-grupp + .kv-grupp{margin-top:clamp(34px,4.4vh,50px)!important}
+.kv-grupphuvud h3{
+  font-family:var(--ui)!important;font-size:12.5px!important;font-weight:640!important;
+  letter-spacing:.02em!important;text-transform:none!important;
+  color:var(--x-ink-2)!important;
+}
+.kv-grupphuvud::after{background:var(--x-line-soft)!important}
+.kv-grupphuvud span{
+  font-family:var(--ui)!important;font-size:12px!important;letter-spacing:0!important;
+  text-transform:none!important;color:var(--x-ink-4)!important;
+}
+.kv-kortgrid{gap:18px!important}
+
+/* ── Kurskort ── */
+.kurskort{
+  padding:24px 24px 20px 30px!important;
+  border:1px solid var(--x-line)!important;
+  border-radius:20px!important;
+  background:#fff!important;
+  box-shadow:var(--x-e2),var(--x-spec)!important;
+  transition:transform .42s var(--x-out),box-shadow .42s var(--x-out),border-color .3s var(--x-io)!important;
+}
+.kurskort:hover{
+  transform:translateY(-4px)!important;
+  border-color:color-mix(in oklab,var(--acc) 22%,var(--x-line))!important;
+  box-shadow:
+    0 1px 2px rgba(16,19,24,.05),
+    0 14px 28px -12px color-mix(in oklab,var(--acc) 26%,rgba(16,19,24,.14)),
+    0 34px 64px -28px color-mix(in oklab,var(--acc) 30%,rgba(16,19,24,.20)),
+    var(--x-spec)!important;
+}
+.kurskort::before{
+  background:radial-gradient(520px circle at var(--mx) var(--my),
+    color-mix(in oklab,var(--acc) 5%,transparent),transparent 44%)!important;
+}
+/* Ryggen: kursens färg som en smal ljusstav. */
+/* --rygg kan vara en hel background-shorthand (mattespårens randiga rygg),
+   därför rörs bakgrunden inte. Djupet läggs som ett separat glansskikt. */
+.kurskort .kk-rygg{
+  width:5px!important;border-radius:20px 0 0 20px!important;
+  box-shadow:none!important;
+  transition:width .42s var(--x-out)!important;
+}
+.kurskort .kk-rygg::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0) 40%,rgba(16,19,24,.16));
+}
+.kurskort:hover .kk-rygg{width:8px!important}
+
+.kk-top{min-height:26px!important}
+.kk-index{
+  font-family:var(--ui)!important;font-size:12.5px!important;font-weight:600!important;
+  letter-spacing:-.005em!important;text-transform:none!important;
+  color:var(--x-ink-2)!important;gap:9px!important;
+}
+.kk-index::before{
+  width:7px!important;height:7px!important;
+  box-shadow:0 0 0 4px color-mix(in oklab,var(--acc) 12%,transparent)!important;
+}
+.kk-spar i{
+  height:21px!important;padding:0 8px!important;
+  font-family:var(--ui)!important;font-size:11px!important;font-weight:600!important;
+  letter-spacing:0!important;
+  background:color-mix(in oklab,var(--sp) 9%,#fff)!important;
+  border-color:color-mix(in oklab,var(--sp) 22%,transparent)!important;
+}
+.kk-namn{
+  margin-top:18px!important;
+  font-size:25px!important;line-height:1.1!important;
+  font-weight:640!important;letter-spacing:-.036em!important;
+  color:var(--x-ink)!important;
+}
+.kk-taggar{
+  margin-top:10px!important;min-height:2.9em!important;
+  font-family:var(--las)!important;font-size:13px!important;line-height:1.48!important;
+  color:var(--x-ink-3)!important;
+}
+.kk-tag + .kk-tag::before{color:var(--x-ink-4)!important}
+.kk-mer{font-family:var(--ui)!important;font-size:12px!important;color:var(--x-ink-4)!important;letter-spacing:0!important}
+.kk-fot{padding-top:17px!important;border-top:1px solid var(--x-line-soft)!important}
+.kk-status,.kk-meta{
+  font-family:var(--ui)!important;font-size:12.5px!important;font-weight:500!important;
+  letter-spacing:0!important;text-transform:none!important;
+  color:var(--x-ink-3)!important;
+}
+.kk-action{
+  width:34px!important;height:34px!important;flex:0 0 34px!important;
+  border:1px solid var(--x-line)!important;
+  background:var(--x-sunken)!important;color:var(--x-ink-2)!important;
+  transition:background .26s var(--x-io),color .26s,border-color .26s,transform .42s var(--x-out),box-shadow .3s!important;
+}
+.kk-action svg{width:16px!important;height:16px!important}
+.kurskort:hover .kk-action{
+  background:var(--acc)!important;border-color:transparent!important;color:#fff!important;
+  transform:translateX(4px)!important;
+  box-shadow:0 4px 12px -3px color-mix(in oklab,var(--acc) 55%,transparent)!important;
+}
+.kk-byggstamp{
+  right:22px!important;top:24px!important;
+  padding:4px 10px!important;
+  font-family:var(--ui)!important;font-size:11px!important;font-weight:600!important;
+  letter-spacing:0!important;text-transform:none!important;
+  background:color-mix(in oklab,var(--ed) 7%,#fff)!important;
+  border-color:color-mix(in oklab,var(--ed) 20%,transparent)!important;
+}
+.kurskort[data-ready="false"]{background:#FCFCFD!important}
+
+.kv-sidfot{
+  border-top:1px solid var(--x-line-soft)!important;
+  padding-top:22px!important;
+  font-family:var(--ui)!important;font-size:12.5px!important;
+  letter-spacing:0!important;text-transform:none!important;
+  color:var(--x-ink-4)!important;
+}
+.kv-sidfot b{color:var(--x-ink-2)!important}
+
+
+/* ═════════════════ 3 · KURSVYNS SKAL ═════════════════ */
+/* Toppraden är 112 px hög medan arbetsytan räknade med 80 px, vilket
+   klippte panelernas nederkant. Skalet blir i stället en flexkolumn. */
+@media(min-width:961px){
+  body:has(.arbetsyta:not([hidden])){
+    display:flex!important;flex-direction:column!important;height:100vh!important;
+  }
+  body:has(.arbetsyta:not([hidden])) > .top{flex:0 0 auto!important}
+  body:has(.arbetsyta:not([hidden])) > .arbetsyta{
+    flex:1 1 auto!important;height:auto!important;min-height:0!important;
+  }
+}
+
+.top{
+  min-height:92px!important;
+  padding:14px 26px!important;
+  background:rgba(252,252,253,.82)!important;
+  backdrop-filter:blur(22px) saturate(1.7);
+  -webkit-backdrop-filter:blur(22px) saturate(1.7);
+  border-bottom:1px solid var(--x-line)!important;
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset!important;
+  gap:16px!important;
+}
+.top .hem-logo{width:min(320px,30vw)!important;border-radius:10px!important}
+.top .hem-logo img{max-height:62px!important}
+.top .hem-logo:hover{background:transparent!important;opacity:.78}
+.top .hem-logo{transition:opacity .2s}
+
+/* Kursnamnet togs bort tidigare. Det tas tillbaka som tyst orientering. */
+.top .titel{
+  display:none!important;
+}
+@media(min-width:1080px){
+  .top .titel{
+    display:flex!important;justify-content:center!important;
+    margin-left:20px!important;padding-left:20px!important;
+    border-left:1px solid var(--x-line)!important;min-height:40px!important;
+  }
+  .top .titel h1{display:none!important}
+  .top .titel span{
+    font-family:var(--ui)!important;font-size:13px!important;font-weight:500!important;
+    letter-spacing:-.005em!important;text-transform:none!important;
+    color:var(--x-ink-3)!important;white-space:nowrap!important;
+  }
+}
+
+.top .knapp{
+  min-height:38px!important;border-radius:10px!important;
+  padding:9px 13px!important;font-size:13px!important;font-weight:520!important;
+  letter-spacing:-.005em!important;
+}
+.knapp{
+  transition:background .18s var(--x-io),color .18s,box-shadow .22s,transform .18s var(--x-out)!important;
+}
+.knapp:active{transform:translateY(1px) scale(.99)!important}
+.knapp.primär{
+  background:linear-gradient(180deg,color-mix(in oklab,var(--ed) 93%,#fff),var(--ed))!important;
+  box-shadow:0 1px 2px rgba(16,19,24,.10),0 4px 12px -5px color-mix(in oklab,var(--ed) 62%,transparent)!important;
+}
+.knapp.primär:hover{filter:brightness(1.05);background:linear-gradient(180deg,color-mix(in oklab,var(--ed) 93%,#fff),var(--ed))!important}
+.knapp:not(.primär):not(.tyst){
+  background:var(--x-sunken)!important;
+  box-shadow:inset 0 0 0 1px var(--x-line)!important;
+}
+.knapp:not(.primär):not(.tyst):hover{background:#EDEFF3!important}
+
+.arbetsyta{background:var(--x-paper)!important}
+.slumppanel{
+  border:1px solid var(--x-line)!important;border-radius:16px!important;
+  box-shadow:var(--x-e3)!important;padding:16px!important;
+}
+.slumppanel label{font-size:12px!important;color:var(--x-ink-2)!important}
+.slumprad input{border-radius:10px!important;background:var(--x-sunken)!important}
+
+
+/* ═════════════════ 4 · VÄNSTERPANELEN ═════════════════ */
+.panel.vänster{
+  border-right:1px solid var(--x-line)!important;
+  padding:18px 14px 44px!important;
+}
+.sök{
+  border:1px solid var(--x-line)!important;border-radius:12px!important;
+  box-shadow:var(--x-e1)!important;min-height:42px!important;
+  transition:border-color .2s,box-shadow .2s,background .2s!important;
+}
+.sök:focus-within{
+  background:#fff!important;
+  border-color:color-mix(in oklab,var(--ed) 40%,var(--x-line))!important;
+  box-shadow:0 0 0 4px color-mix(in oklab,var(--ed) 12%,transparent)!important;
+}
+.sök input{font-size:13.5px!important}
+.sök input::placeholder{color:var(--x-ink-4)!important}
+
+.vänster .etikett{
+  font-family:var(--ui)!important;font-size:11.5px!important;font-weight:600!important;
+  letter-spacing:.01em!important;text-transform:none!important;
+  color:var(--x-ink-3)!important;
+  margin-top:18px!important;margin-bottom:8px!important;
+}
+
+/* Filterknappar som ett segmenterat reglage. */
+.nivåfilter{
+  gap:0!important;padding:3px!important;
+  background:var(--x-sunken)!important;
+  border:1px solid var(--x-line-soft)!important;border-radius:11px!important;
+  margin:0 4px 10px!important;
+}
+.nivåfilter button{
+  min-height:30px!important;height:30px!important;border:0!important;
+  border-radius:8px!important;background:transparent!important;
+  box-shadow:none!important;font-size:12px!important;font-weight:600!important;
+  color:var(--x-ink-4)!important;
+  transition:background .2s var(--x-io),color .2s,box-shadow .22s!important;
+}
+.nivåfilter button:hover{background:rgba(16,19,24,.04)!important;color:var(--x-ink-2)!important}
+.nivåfilter button.E[aria-pressed="true"]{
+  background:#fff!important;color:#14654A!important;
+  box-shadow:var(--x-e1),inset 0 0 0 1px rgba(20,101,74,.16)!important;
+}
+.nivåfilter button.C[aria-pressed="true"]{
+  background:#fff!important;color:#2A5A93!important;
+  box-shadow:var(--x-e1),inset 0 0 0 1px rgba(42,90,147,.16)!important;
+}
+.nivåfilter button.A[aria-pressed="true"]{
+  background:#fff!important;color:#743F86!important;
+  box-shadow:var(--x-e1),inset 0 0 0 1px rgba(116,63,134,.16)!important;
+}
+
+.hjälpval button,.variantfilter button{
+  border-radius:10px!important;
+  border:1px solid var(--x-line)!important;
+  background:#fff!important;
+  box-shadow:var(--x-e1)!important;
+  color:var(--x-ink-3)!important;
+  transition:border-color .18s,background .18s,color .18s,box-shadow .2s!important;
+}
+.hjälpval button:hover,.variantfilter button:hover{
+  background:#fff!important;color:var(--x-ink)!important;
+  box-shadow:var(--x-e2)!important;
+}
+.hjälpval button[aria-pressed="true"]{
+  background:color-mix(in oklab,var(--ed) 6%,#fff)!important;
+  border-color:color-mix(in oklab,var(--ed) 28%,transparent)!important;
+  color:var(--ed-dark)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--ed) 12%,transparent)!important;
+}
+.hjälpval button .urtag{stroke:#fff!important}
+.hjälpval button[aria-pressed="true"] .urtag{stroke:color-mix(in oklab,var(--ed) 6%,#fff)!important}
+.variantfilter button[aria-pressed="true"]{
+  box-shadow:inset 0 0 0 1.5px color-mix(in oklab,var(--spar) 42%,transparent)!important;
+}
+
+/* Kapitelträd: hierarki genom rytm och vikt, inte genom ramar. */
+#träd{margin-top:14px!important}
+.kapgrupp{margin-bottom:2px!important}
+.kaprad{
+  min-height:36px!important;border-radius:9px!important;padding:7px 9px!important;
+  font-size:13px!important;font-weight:600!important;letter-spacing:-.01em!important;
+  color:var(--x-ink)!important;
+  transition:background .16s var(--x-io)!important;
+}
+.kaprad .nr{font-family:var(--mono)!important;font-size:10.5px!important;color:var(--x-ink-4)!important}
+.kaprad .antal,.omrad .antal,.omrgruppfäll .antal{
+  font-family:var(--ui)!important;font-size:11.5px!important;color:var(--x-ink-4)!important;
+}
+.omrad{
+  min-height:32px!important;border-radius:8px!important;
+  padding:6px 9px 6px 15px!important;font-size:12.75px!important;
+  color:var(--x-ink-2)!important;
+  transition:background .16s var(--x-io),color .16s!important;
+}
+.omrad[aria-pressed="true"]{
+  font-weight:600!important;color:var(--x-ink)!important;
+}
+.omrad[aria-pressed="true"]::before{
+  left:4px!important;width:3px!important;top:8px!important;bottom:8px!important;
+  border-radius:99px!important;background:var(--track-accent,var(--ed))!important;
+}
+.omrad[aria-pressed="true"] .antal{color:var(--ed)!important}
+.omrgrupprad{border-radius:9px!important;background:transparent!important}
+.omrgruppfäll .gp-namn{font-size:12.25px!important;font-weight:600!important;color:var(--x-ink-2)!important}
+
+
+/* ═════════════════ 5 · UPPGIFTSLISTAN ═════════════════ */
+.mitten{background:transparent!important;padding:0 24px 64px!important}
+.mittopp{
+  background:linear-gradient(var(--x-paper) 62%,color-mix(in oklab,var(--x-paper) 55%,transparent))!important;
+  padding:14px 0 11px!important;
+}
+.träffar{font-size:12px!important;color:var(--x-ink-3)!important}
+.träffar b{font-size:12px!important;color:var(--x-ink-2)!important;font-weight:600!important}
+.formagefilter .formageetikett{
+  font-family:var(--ui)!important;font-size:11px!important;letter-spacing:0!important;
+  text-transform:none!important;color:var(--x-ink-4)!important;margin-right:3px!important;
+}
+.formagefilter button,#sorteraKnapp,.mittopp .kryss{
+  border-radius:8px!important;border:1px solid var(--x-line)!important;
+  background:#fff!important;box-shadow:var(--x-e1)!important;
+  color:var(--x-ink-3)!important;
+  transition:border-color .16s,color .16s,background .16s,box-shadow .18s!important;
+}
+.formagefilter button{min-height:28px!important;height:28px!important;font-size:11px!important;padding:3px 9px!important}
+.formagefilter button:hover,#sorteraKnapp:hover{color:var(--x-ink)!important;box-shadow:var(--x-e2)!important}
+.formagefilter button[aria-pressed="true"]{
+  background:color-mix(in oklab,var(--ed) 6%,#fff)!important;
+  border-color:color-mix(in oklab,var(--ed) 26%,transparent)!important;
+  color:var(--ed-dark)!important;box-shadow:none!important;
+}
+#sorteraKnapp{min-height:28px!important;height:28px!important;font-size:11px!important;padding:3px 9px!important}
+.mittopp .kryss{min-height:28px!important;font-size:11px!important;padding:3px 10px!important}
+.mittopp .kryss:has(input:checked){
+  background:color-mix(in oklab,var(--ed) 6%,#fff)!important;
+  border-color:color-mix(in oklab,var(--ed) 26%,transparent)!important;
+  color:var(--ed-dark)!important;
+}
+
+.kort{
+  border:1px solid var(--x-line)!important;
+  border-radius:15px!important;
+  padding:16px 18px 16px 16px!important;
+  margin-bottom:10px!important;
+  box-shadow:var(--x-e1)!important;
+  transition:border-color .2s var(--x-io),box-shadow .28s var(--x-out),transform .28s var(--x-out),background .2s!important;
+}
+.kort:hover{
+  border-color:rgba(16,19,24,.14)!important;
+  box-shadow:var(--x-e2)!important;
+  transform:translateY(-1px)!important;
+}
+.kort.vald{
+  border-color:color-mix(in oklab,var(--ed) 45%,transparent)!important;
+  background:color-mix(in oklab,var(--ed) 2.5%,#fff)!important;
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--ed) 13%,transparent),var(--x-e1)!important;
+}
+.bock{border-radius:7px!important;border-color:rgba(16,19,24,.18)!important}
+.kortmeta{gap:10px!important;margin-bottom:9px!important}
+.id{font-family:var(--mono)!important;font-size:11px!important;font-weight:500!important;color:var(--x-ink-4)!important}
+.kort.vald .id{color:var(--ed)!important}
+.nivå{
+  font-family:var(--ui)!important;font-size:11px!important;font-weight:650!important;
+  letter-spacing:0!important;padding:3px 8px!important;border-radius:7px!important;
+}
+.område{font-size:11.5px!important;color:var(--x-ink-3)!important}
+.poäng{font-size:11.5px!important;color:var(--x-ink-3)!important}
+.kroppen{font-size:14.5px!important;line-height:1.6!important;color:#1A1E24!important}
+.kroppen li::before{color:var(--ed)!important}
+.facitknapp{
+  margin-top:12px!important;
+  font-family:var(--ui)!important;font-size:12px!important;font-weight:550!important;
+  letter-spacing:0!important;text-transform:none!important;
+  color:var(--x-ink-3)!important;transition:color .16s!important;
+}
+.facit{
+  background:var(--x-sunken)!important;
+  border:1px solid var(--x-line-soft)!important;
+  border-radius:12px!important;padding:13px 15px!important;
+}
+.facit .stegnr{border-radius:6px!important;background:var(--ed)!important}
+.kortred{transition:background .16s,color .16s!important}
+table.data th{background:var(--x-sunken)!important}
+table.data th,table.data td{border-color:var(--x-line)!important}
+.tomt{padding:80px 20px!important}
+.tomt h3{font-size:16px!important;font-weight:620!important;letter-spacing:-.02em!important}
+
+
+/* ═════════════════ 6 · ÖVNINGSBLADET ═════════════════ */
+.höger{
+  background:var(--x-surface)!important;
+  border-left:1px solid var(--x-line)!important;
+  box-shadow:-1px 0 0 rgba(255,255,255,.8) inset;
+}
+.bladtopp{padding:20px 20px 18px!important;border-bottom:1px solid var(--x-line-soft)!important}
+.bladtyp-rad label{
+  font-family:var(--ui)!important;font-size:11.5px!important;font-weight:600!important;
+  letter-spacing:.01em!important;text-transform:none!important;color:var(--x-ink-3)!important;
+}
+.bladtyp-rad select,.fält input,.sparnamn input{
+  border:1px solid var(--x-line)!important;
+  background:var(--x-sunken)!important;
+  border-radius:11px!important;
+  transition:background .18s,border-color .18s,box-shadow .18s!important;
+}
+.fält input{padding:10px 13px!important;font-size:13.5px!important}
+.fält input:hover{background:#F1F2F6!important}
+.fält input:focus,.bladtyp-rad select:focus,.sparnamn input:focus{
+  background:#fff!important;border-color:color-mix(in oklab,var(--ed) 45%,transparent)!important;
+  box-shadow:0 0 0 4px color-mix(in oklab,var(--ed) 12%,transparent)!important;
+}
+.spararad .knapp{border-radius:9px!important}
+
+/* Poängmätaren är panelens huvudperson. */
+.mätare{padding:20px!important;border-bottom:1px solid var(--x-line-soft)!important}
+.summa{
+  font-size:40px!important;font-weight:680!important;letter-spacing:-.05em!important;
+  color:var(--x-ink)!important;
+}
+.summa small{font-size:14px!important;font-weight:550!important;color:var(--x-ink-4)!important}
+.mätarhuvud .antal{font-size:12.5px!important;color:var(--x-ink-3)!important}
+.stapel{
+  height:9px!important;background:rgba(16,19,24,.07)!important;
+  box-shadow:none!important;
+}
+.stapel span{border-radius:99px}
+.mätarnyckel{font-size:12.5px!important;color:var(--x-ink-3)!important;gap:18px!important}
+.mätarnyckel b{color:var(--x-ink)!important}
+.gränser .gränsrubrik{
+  font-family:var(--ui)!important;font-size:11.5px!important;font-weight:600!important;
+  letter-spacing:.01em!important;color:var(--x-ink-3)!important;
+}
+.chip{border-radius:10px!important;padding:7px 4px!important}
+
+.bladlista{padding:12px 12px 22px!important}
+.brad{border-radius:11px!important;padding:10px!important}
+.brad:hover{background:var(--x-sunken)!important}
+.brad .num{
+  background:var(--x-sunken)!important;box-shadow:inset 0 0 0 1px var(--x-line)!important;
+  color:var(--x-ink-2)!important;
+}
+.bid{font-family:var(--mono)!important;font-size:10.5px!important;color:var(--x-ink-2)!important}
+.bniva{font-family:var(--ui)!important;font-size:10px!important;font-weight:650!important;letter-spacing:0!important;border-radius:6px!important;padding:2px 6px!important}
+.brad .txt{font-size:12.5px!important;color:var(--x-ink-2)!important}
+
+.bladfot{padding:18px 20px 22px!important;border-top:1px solid var(--x-line-soft)!important}
+.växel{font-size:13px!important;color:var(--x-ink-2)!important;margin-bottom:12px!important}
+.växel input{box-shadow:inset 0 1px 2px rgba(16,19,24,.10)!important}
+.växel input::after{box-shadow:0 1px 3px rgba(16,19,24,.22),0 0 0 .5px rgba(16,19,24,.04)!important}
+.exportrad{gap:8px!important}
+.exportrad .knapp{
+  border-radius:12px!important;padding:12px 14px!important;font-weight:600!important;font-size:13px!important;
+}
+.exportrad .knapp.primär{
+  box-shadow:0 1px 2px rgba(16,19,24,.12),0 6px 16px -6px color-mix(in oklab,var(--ed) 60%,transparent)!important;
+}
+.exportrad .knapp.till-analys{
+  background:#F2F5FA!important;color:#2A5A93!important;
+  box-shadow:inset 0 0 0 1px rgba(42,90,147,.18)!important;border:0!important;
+}
+.exportrad .knapp.till-analys:hover{background:#E9EFF8!important}
+
+
+/* ═════════════════ 7 · DIALOGER ═════════════════ */
+.redigera-uppgift,.sparmodal{
+  background:rgba(12,14,18,.34)!important;
+  backdrop-filter:blur(14px) saturate(1.4)!important;
+  -webkit-backdrop-filter:blur(14px) saturate(1.4)!important;
+}
+.ru-dialog,.sparmodal-kort{
+  border:1px solid var(--x-line)!important;
+  border-radius:24px!important;
+  box-shadow:var(--x-e4),var(--x-spec)!important;
+  animation:x-sheet .34s var(--x-out) both;
+}
+@keyframes x-sheet{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:none}}
+.ru-topp,.sparmodal-huvud{padding:18px 22px!important;border-bottom:1px solid var(--x-line-soft)!important}
+.ru-topp h2,.sparmodal-huvud h2{font-size:17px!important;font-weight:640!important;letter-spacing:-.025em!important}
+.ru-id{font-family:var(--mono)!important;color:var(--x-ink-4)!important}
+.ru-stäng,.sparmodal-stang{border-radius:10px!important}
+.ru-text{border-radius:12px!important}
+.ru-facit-fäll{border:1px solid var(--x-line)!important;border-radius:14px!important}
+.ru-fot,.sparmodal-fot{border-top:1px solid var(--x-line-soft)!important;padding:14px 22px 18px!important}
+.sparpost{border:1px solid var(--x-line)!important;border-radius:13px!important;box-shadow:var(--x-e1)!important}
+.sparpost:hover{box-shadow:var(--x-e2)!important}
+.sparpost-knappar button{border-radius:8px!important;border-color:var(--x-line)!important}
+.poängred{border-radius:18px!important;box-shadow:var(--x-e3)!important;border:1px solid var(--x-line)!important}
+
+
+/* ═════════════════ 8 · TELEFON ═════════════════ */
+@media(max-width:680px){
+  .top{
+    min-height:0!important;padding:12px 16px 10px!important;
+    background:rgba(252,252,253,.9)!important;
+  }
+  .top .hem-logo{width:min(62vw,300px)!important}
+  .top .hem-logo img{max-height:52px!important}
+  .kv-designhero h2{font-size:clamp(32px,8.8vw,42px)!important;max-width:none!important}
+  .kv-designhero .kv-designhero-sub{font-size:15.5px!important}
+  .kurskort{padding:20px 20px 17px 26px!important;border-radius:17px!important}
+  .kk-namn{font-size:22px!important;margin-top:15px!important}
+  .kurskort .kk-rygg{border-radius:17px 0 0 17px!important}
+  .password-card{padding:26px 22px 24px!important;border-radius:22px!important}
+  .kort{border-radius:13px!important;padding:13px 12px!important}
+  .mitten{padding:0 10px 44px!important}
+}
+
+
+/* ═════════════════ 9 · TILLGÄNGLIGHET ═════════════════ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important;
+  }
+  .kurskort:hover,.kort:hover{transform:none!important}
+  .kurskort:hover .kk-action{transform:none!important}
+}
+
+/* Utskrift och export ska inte påverkas av skärmens material. */
+@media print{
+  .top,.arbetsyta,.kursval,.password-gate{display:none!important}
+}
+</style>
 </head>
 <body class="password-locked">
 
