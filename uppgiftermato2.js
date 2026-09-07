@@ -43519,5 +43519,845 @@ window.BANKMATO2 = [
   "tolerans": 0,
   "självrättning": true,
   "svarFormat": "numeriskt"
-}
+},
+  {
+    "id": "2.411",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=x^2 e^x\\).</p><p>Bestäm \\(f'(1)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd produktregeln. \\(f'(x)=2xe^x+x^2e^x\\).</p><p>Insättning ger \\(8.15485\\).</p>",
+    "familj": "Derivering med produkt- och kvotregeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.154845485377136,
+    "tolerans": 0.08154845485377137,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.412",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=sin(x)*x^2\\).</p><p>Bestäm \\(f'(1.571)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd produktregeln. \\(f'(x)=cos(x)x^2+2x sin(x)\\).</p><p>Insättning ger \\(3.14159\\).</p>",
+    "familj": "Derivering med produkt- och kvotregeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.141592653589793,
+    "tolerans": 0.031415926535897934,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.413",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=(x^2+1)/(x+1)\\).</p><p>Bestäm \\(f'(2)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd kvotregeln. \\(f'(x)=[2x(x+1)-(x^2+1)]/(x+1)^2\\).</p><p>Insättning ger \\(0.77778\\).</p>",
+    "familj": "Derivering med produkt- och kvotregeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.7777777777777778,
+    "tolerans": 0.007777777777777778,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.411",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Bestäm värdet av \\(sin(-30^\\circ)\\) med hjälp av symmetri och periodicitet.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera vinkeln till en standardvinkel i ett varv och använd rätt tecken.</p><p><strong>Svar:</strong> \\(-0.500000\\).</p>",
+    "familj": "Symmetrier och periodicitet i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.412",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Bestäm värdet av \\(cos(390^\\circ)\\) med hjälp av symmetri och periodicitet.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera vinkeln till en standardvinkel i ett varv och använd rätt tecken.</p><p><strong>Svar:</strong> \\(0.866025\\).</p>",
+    "familj": "Symmetrier och periodicitet i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.8660254037844386,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.413",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Bestäm värdet av \\(sin(750^\\circ)\\) med hjälp av symmetri och periodicitet.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera vinkeln till en standardvinkel i ett varv och använd rätt tecken.</p><p><strong>Svar:</strong> \\(0.500000\\).</p>",
+    "familj": "Symmetrier och periodicitet i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.414",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=\\frac{x^2+3x+5}{x+1}\\).</p><p>Den sneda asymptoten har formen \\(y=kx+m\\). Bestäm \\(m\\).</p>",
+    "s": "<p><strong>Metod:</strong> Polynomdivision ger kvoten \\(1x+2\\) samt en restterm som går mot 0 då \\(|x|\\to\\infty\\).</p><p><strong>Svar:</strong> \\(m=2\\).</p>",
+    "familj": "Asymptoter med polynomdivision",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.415",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=\\frac{2x^2-x+4}{x-2}\\).</p><p>Den sneda asymptoten har formen \\(y=kx+m\\). Bestäm \\(m\\).</p>",
+    "s": "<p><strong>Metod:</strong> Polynomdivision ger kvoten \\(2x+3\\) samt en restterm som går mot 0 då \\(|x|\\to\\infty\\).</p><p><strong>Svar:</strong> \\(m=3\\).</p>",
+    "familj": "Asymptoter med polynomdivision",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.416",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=\\frac{-x^2+4x+1}{x+3}\\).</p><p>Den sneda asymptoten har formen \\(y=kx+m\\). Bestäm \\(m\\).</p>",
+    "s": "<p><strong>Metod:</strong> Polynomdivision ger kvoten \\(-1x+7\\) samt en restterm som går mot 0 då \\(|x|\\to\\infty\\).</p><p><strong>Svar:</strong> \\(m=7\\).</p>",
+    "familj": "Asymptoter med polynomdivision",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 7.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.414",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln \\(v\\) ligger i kvadrant I och \\(sinv=0.600000\\).</p><p>Bestäm \\(cosv\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin^2v+\\cos^2v=1\\) och välj tecken från kvadranten. Därefter kan \\(\\tan v=\\sin v/\\cos v\\) användas vid behov.</p><p><strong>Svar:</strong> \\(0.800000\\).</p>",
+    "familj": "Bestäm trigonometriska värden från ett givet värde",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.8,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.415",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln \\(v\\) ligger i kvadrant II och \\(cosv=-0.384615\\).</p><p>Bestäm \\(sinv\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin^2v+\\cos^2v=1\\) och välj tecken från kvadranten. Därefter kan \\(\\tan v=\\sin v/\\cos v\\) användas vid behov.</p><p><strong>Svar:</strong> \\(0.923077\\).</p>",
+    "familj": "Bestäm trigonometriska värden från ett givet värde",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.9230769230769231,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.416",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln \\(v\\) ligger i kvadrant IV och \\(sinv=-0.470588\\).</p><p>Bestäm \\(tanv\\).</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin^2v+\\cos^2v=1\\) och välj tecken från kvadranten. Därefter kan \\(\\tan v=\\sin v/\\cos v\\) användas vid behov.</p><p><strong>Svar:</strong> \\(-0.533333\\).</p>",
+    "familj": "Bestäm trigonometriska värden från ett givet värde",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5333333333333333,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.417",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Punkten på enhetscirkeln motsvarar vinkeln 120°.</p><p>Bestäm punktens x-koordinat.</p>",
+    "s": "<p><strong>Metod:</strong> På enhetscirkeln är koordinaterna \\((\\cos v,\\sin v)\\). Använd referensvinkeln och kvadrantens tecken.</p><p><strong>Svar:</strong> \\(-0.500000\\).</p>",
+    "familj": "Koordinater och tecken i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.418",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Punkten på enhetscirkeln motsvarar vinkeln 225°.</p><p>Bestäm punktens y-koordinat.</p>",
+    "s": "<p><strong>Metod:</strong> På enhetscirkeln är koordinaterna \\((\\cos v,\\sin v)\\). Använd referensvinkeln och kvadrantens tecken.</p><p><strong>Svar:</strong> \\(-0.707107\\).</p>",
+    "familj": "Koordinater och tecken i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.7071067811865476,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.419",
+    "kap": 1,
+    "omr": "enhetscirkeln",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Punkten på enhetscirkeln motsvarar vinkeln 300°.</p><p>Bestäm punktens x-koordinat.</p>",
+    "s": "<p><strong>Metod:</strong> På enhetscirkeln är koordinaterna \\((\\cos v,\\sin v)\\). Använd referensvinkeln och kvadrantens tecken.</p><p><strong>Svar:</strong> \\(0.500000\\).</p>",
+    "familj": "Koordinater och tecken i enhetscirkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.420",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(sin(2x)=1\\) och ange den minsta icke-negativa lösningen \\(x\\) i radianer.</p>",
+    "s": "<p><strong>Metod:</strong> Lös först ekvationen för hela vinkeluttrycket och isolera sedan \\(x\\). Den minsta icke-negativa lösningen är \\(0.785398\\).</p>",
+    "familj": "Trigonometriska ekvationer med multipel vinkel och fas",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.7853981633974483,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.421",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(cos(3x)=0\\) och ange den minsta icke-negativa lösningen \\(x\\) i radianer.</p>",
+    "s": "<p><strong>Metod:</strong> Lös först ekvationen för hela vinkeluttrycket och isolera sedan \\(x\\). Den minsta icke-negativa lösningen är \\(0.523599\\).</p>",
+    "familj": "Trigonometriska ekvationer med multipel vinkel och fas",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5235987755982988,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.422",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(sin(2x+pi/6)=0\\) och ange den minsta icke-negativa lösningen \\(x\\) i radianer.</p>",
+    "s": "<p><strong>Metod:</strong> Lös först ekvationen för hela vinkeluttrycket och isolera sedan \\(x\\). Den minsta icke-negativa lösningen är \\(1.308997\\).</p>",
+    "familj": "Trigonometriska ekvationer med multipel vinkel och fas",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.3089969389957472,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.417",
+    "kap": 2,
+    "omr": "derivator_specialfunktioner",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=sin(3x)\\).</p><p>Bestäm \\(f'(0.00000)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera den yttre funktionen och multiplicera med den inre derivatan.</p><p><strong>Svar:</strong> \\(3.00000\\).</p>",
+    "familj": "Kedjeregeln för trigonometriska och exponentiella funktioner",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.03,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.418",
+    "kap": 2,
+    "omr": "derivator_specialfunktioner",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=e^(2x-1)\\).</p><p>Bestäm \\(f'(0.00000)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera den yttre funktionen och multiplicera med den inre derivatan.</p><p><strong>Svar:</strong> \\(0.73576\\).</p>",
+    "familj": "Kedjeregeln för trigonometriska och exponentiella funktioner",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.7357588823428847,
+    "tolerans": 0.007357588823428847,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.419",
+    "kap": 2,
+    "omr": "derivator_specialfunktioner",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>Funktionen är \\(f(x)=cos(x^2)\\).</p><p>Bestäm \\(f'(1.25331)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera den yttre funktionen och multiplicera med den inre derivatan.</p><p><strong>Svar:</strong> \\(-2.50663\\).</p>",
+    "familj": "Kedjeregeln för trigonometriska och exponentiella funktioner",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": -2.5066282746310002,
+    "tolerans": 0.025066282746310002,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.423",
+    "kap": 1,
+    "omr": "trig_formler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln är \\(v=30^\\circ\\).</p><p>Bestäm \\(sin(2v)\\) med en formel för dubbla vinkeln.</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin2v=2\\sin v\\cos v\\) eller \\(\\cos2v=\\cos^2v-\\sin^2v\\).</p><p><strong>Svar:</strong> \\(0.866025\\).</p>",
+    "familj": "Använda formler för dubbla vinkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.8660254037844386,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.424",
+    "kap": 1,
+    "omr": "trig_formler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln är \\(v=22.5^\\circ\\).</p><p>Bestäm \\(cos(2v)\\) med en formel för dubbla vinkeln.</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin2v=2\\sin v\\cos v\\) eller \\(\\cos2v=\\cos^2v-\\sin^2v\\).</p><p><strong>Svar:</strong> \\(0.707107\\).</p>",
+    "familj": "Använda formler för dubbla vinkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.7071067811865476,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.425",
+    "kap": 1,
+    "omr": "trig_formler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Vinkeln är \\(v=75^\\circ\\).</p><p>Bestäm \\(sin(2v)\\) med en formel för dubbla vinkeln.</p>",
+    "s": "<p><strong>Metod:</strong> Använd \\(\\sin2v=2\\sin v\\cos v\\) eller \\(\\cos2v=\\cos^2v-\\sin^2v\\).</p><p><strong>Svar:</strong> \\(0.500000\\).</p>",
+    "familj": "Använda formler för dubbla vinkeln",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.49999999999999994,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.420",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=e^x-3\\).</p><p>Bestäm x-skärning och ange dess x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Använd funktionens standardegenskaper och lös det relevanta villkoret.</p><p><strong>Svar:</strong> \\(x=1.098612\\).</p>",
+    "familj": "Grafanalys av specialfunktioner",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.0986122886681098,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.421",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=ln(x-2)\\).</p><p>Bestäm x-skärning och ange dess x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Använd funktionens standardegenskaper och lös det relevanta villkoret.</p><p><strong>Svar:</strong> \\(x=3.000000\\).</p>",
+    "familj": "Grafanalys av specialfunktioner",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.422",
+    "kap": 2,
+    "omr": "grafer_asymptoter",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>Funktionen är \\(f(x)=1/(x-4)+2\\).</p><p>Bestäm vertikal asymptot och ange dess x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Använd funktionens standardegenskaper och lös det relevanta villkoret.</p><p><strong>Svar:</strong> \\(x=4.000000\\).</p>",
+    "familj": "Grafanalys av specialfunktioner",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.406",
+    "kap": 3,
+    "omr": "sannolikhetsintegraler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>En täthetsfunktion ges av \\(f(x)=kx\\) på intervallet 0<=x<=2 och är 0 utanför.</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> En täthetsfunktion ska ha total integral 1. Här ger \\(\\int_0^2 kx\\,dx=2k=1\\).</p><p><strong>Svar:</strong> \\(k=0.5\\).</p>",
+    "familj": "Normalisera täthetsfunktion och bestäm parameter",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.407",
+    "kap": 3,
+    "omr": "sannolikhetsintegraler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>En täthetsfunktion ges av \\(f(x)=k(1-x)\\) på intervallet 0<=x<=1 och är 0 utanför.</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> En täthetsfunktion ska ha total integral 1. Här ger \\(\\int_0^1 k(1-x)\\,dx=k/2=1\\).</p><p><strong>Svar:</strong> \\(k=2\\).</p>",
+    "familj": "Normalisera täthetsfunktion och bestäm parameter",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.408",
+    "kap": 3,
+    "omr": "sannolikhetsintegraler",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "miniräknare": true,
+    "geogebra": false,
+    "t": "<p>En täthetsfunktion ges av \\(f(x)=kx(1-x)\\) på intervallet 0<=x<=1 och är 0 utanför.</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> En täthetsfunktion ska ha total integral 1. Här ger \\(\\int_0^1 kx(1-x)\\,dx=k/6=1\\).</p><p><strong>Svar:</strong> \\(k=6\\).</p>",
+    "familj": "Normalisera täthetsfunktion och bestäm parameter",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 6,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.423",
+    "kap": 2,
+    "omr": "tillampningar_derivata",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>En storhet beskrivs av \\(s(t)=t^3-6t^2+9t\\).</p><p>Bestäm tangentens lutning när variabeln är 1.</p>",
+    "s": "<p><strong>Metod:</strong> Tangentens lutning ges av derivatan i den aktuella punkten.</p><p><strong>Svar:</strong> \\(0.000000\\).</p>",
+    "familj": "Tangentproblem i tillämpningar",
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.424",
+    "kap": 2,
+    "omr": "tillampningar_derivata",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>En storhet beskrivs av \\(h(x)=ln(x)+x\\).</p><p>Bestäm tangentens lutning när variabeln är 1.</p>",
+    "s": "<p><strong>Metod:</strong> Tangentens lutning ges av derivatan i den aktuella punkten.</p><p><strong>Svar:</strong> \\(2.000000\\).</p>",
+    "familj": "Tangentproblem i tillämpningar",
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.02,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.425",
+    "kap": 2,
+    "omr": "tillampningar_derivata",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": true,
+    "geogebra": true,
+    "t": "<p>En storhet beskrivs av \\(A(r)=pi*r^2\\).</p><p>Bestäm tangentens lutning när variabeln är 3.</p>",
+    "s": "<p><strong>Metod:</strong> Tangentens lutning ges av derivatan i den aktuella punkten.</p><p><strong>Svar:</strong> \\(18.849556\\).</p>",
+    "familj": "Tangentproblem i tillämpningar",
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 18.84955592153876,
+    "tolerans": 0.1884955592153876,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.426",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(sin x=1/2\\) generellt och ange här den minsta positiva lösningen.</p>",
+    "s": "<p><strong>Metod:</strong> Utgå från enhetscirkeln och ta därefter med funktionens periodicitet i den generella lösningen.</p><p>Den minsta positiva lösningen är \\(0.523599\\).</p>",
+    "familj": "Trigonometriska ekvationer med generell lösning",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5235987755982988,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.427",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(cos x=-1\\) generellt och ange här den minsta positiva lösningen.</p>",
+    "s": "<p><strong>Metod:</strong> Utgå från enhetscirkeln och ta därefter med funktionens periodicitet i den generella lösningen.</p><p>Den minsta positiva lösningen är \\(3.141593\\).</p>",
+    "familj": "Trigonometriska ekvationer med generell lösning",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.141592653589793,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.428",
+    "kap": 1,
+    "omr": "trig_ekvationer",
+    "kurs": [
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "miniräknare": false,
+    "geogebra": false,
+    "t": "<p>Lös \\(tan x=sqrt(3)\\) generellt och ange här den minsta positiva lösningen.</p>",
+    "s": "<p><strong>Metod:</strong> Utgå från enhetscirkeln och ta därefter med funktionens periodicitet i den generella lösningen.</p><p>Den minsta positiva lösningen är \\(1.047198\\).</p>",
+    "familj": "Trigonometriska ekvationer med generell lösning",
+    "formaga": [
+      "procedur"
+    ],
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.0471975511965976,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  }
 ];

@@ -17062,5 +17062,616 @@ window.BANKMATF1 = [
     "modellering"
   ],
   "svarFormat": "numeriskt"
-}
+},
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Använd Eulers metod på differentialekvationen \\(y'=x+y\\) med \\(y(0)=1\\), steglängd \\(h=0.2\\) och 2 steg.</p><p>Bestäm det approximativa värdet efter 2 steg.</p>",
+    "s": "<p><strong>Metod:</strong> Eulersteget är \\(y_{n+1}=y_n+h f(x_n,y_n)\\).</p><p>Steg 1: \\(f=1.0000\\), så \\(y=1.2000\\).</p><p>Steg 2: \\(f=1.4000\\), så \\(y=1.4800\\).</p><p><strong>Svar:</strong> \\(1.4800\\).</p>",
+    "id": "4.305",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Eulers metod",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.48,
+    "tolerans": 0.0148,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Använd Eulers metod på differentialekvationen \\(y'=x+y\\) med \\(y(0)=2\\), steglängd \\(h=0.1\\) och 3 steg.</p><p>Bestäm det approximativa värdet efter 3 steg.</p>",
+    "s": "<p><strong>Metod:</strong> Eulersteget är \\(y_{n+1}=y_n+h f(x_n,y_n)\\).</p><p>Steg 1: \\(f=2.0000\\), så \\(y=2.2000\\).</p><p>Steg 2: \\(f=2.3000\\), så \\(y=2.4300\\).</p><p>Steg 3: \\(f=2.6300\\), så \\(y=2.6930\\).</p><p><strong>Svar:</strong> \\(2.6930\\).</p>",
+    "id": "4.306",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Eulers metod",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.693,
+    "tolerans": 0.026930000000000003,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Använd Eulers metod på differentialekvationen \\(y'=x+y\\) med \\(y(0)=0\\), steglängd \\(h=0.25\\) och 2 steg.</p><p>Bestäm det approximativa värdet efter 2 steg.</p>",
+    "s": "<p><strong>Metod:</strong> Eulersteget är \\(y_{n+1}=y_n+h f(x_n,y_n)\\).</p><p>Steg 1: \\(f=0.0000\\), så \\(y=0.0000\\).</p><p>Steg 2: \\(f=0.2500\\), så \\(y=0.0625\\).</p><p><strong>Svar:</strong> \\(0.0625\\).</p>",
+    "id": "4.307",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Eulers metod",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.0625,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 1,
+    "omr": "permutationer_kombinationer",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>8 identiska kulor ska fördelas mellan 3 märkta lådor. Varje låda ska innehålla minst 0 kulor.</p><p>På hur många sätt kan fördelningen göras?</p>",
+    "s": "<p><strong>Metod:</strong> Lägg först 0 kulor i varje låda. Då återstår 8 kulor. Antalet icke-negativa lösningar till summan av 3 variabler är \\(\\binom{10}{2}=45\\).</p>",
+    "id": "1.305",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Fördela identiska objekt med villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": 45,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 1,
+    "omr": "permutationer_kombinationer",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>10 identiska kulor ska fördelas mellan 4 märkta lådor. Varje låda ska innehålla minst 1 kulor.</p><p>På hur många sätt kan fördelningen göras?</p>",
+    "s": "<p><strong>Metod:</strong> Lägg först 1 kulor i varje låda. Då återstår 6 kulor. Antalet icke-negativa lösningar till summan av 4 variabler är \\(\\binom{9}{3}=84\\).</p>",
+    "id": "1.306",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Fördela identiska objekt med villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": 84,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 1,
+    "omr": "permutationer_kombinationer",
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>12 identiska kulor ska fördelas mellan 3 märkta lådor. Varje låda ska innehålla minst 2 kulor.</p><p>På hur många sätt kan fördelningen göras?</p>",
+    "s": "<p><strong>Metod:</strong> Lägg först 2 kulor i varje låda. Då återstår 6 kulor. Antalet icke-negativa lösningar till summan av 3 variabler är \\(\\binom{8}{2}=28\\).</p>",
+    "id": "1.307",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Fördela identiska objekt med villkor",
+    "svarstyp": "numeriskt",
+    "rättSvar": 28,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En population modelleras av \\(P'=kP\\) och fördubblas på 6 år.</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> Lösningen är \\(P=P_0e^{kt}\\). Fördubbling ger \\(2=e^{6k}\\), alltså \\(k=\\ln2/6=0.1155\\).</p>",
+    "id": "4.308",
+    "miniräknare": true,
+    "geogebra": false,
+    "familj": "Modellering med differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.11552453009332421,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "modellering",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En population följer \\(P'=0,30P(1-P/1200)\\).</p><p>Bestäm den positiva jämviktsnivån.</p>",
+    "s": "<p><strong>Metod:</strong> Jämvikt betyder \\(P'=0\\). Faktorerna ger \\(P=0\\) eller \\(1-P/1200=0\\).</p><p><strong>Svar:</strong> den positiva jämvikten är \\(P=1200\\).</p>",
+    "id": "4.309",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Modellering med differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1200,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "modellering",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>En kropp svalnar enligt \\(T'=-k(T-20)\\). Temperaturen är 80 °C vid start och 50 °C efter 10 min.</p><p>Bestäm \\(k\\) i min⁻¹.</p>",
+    "s": "<p><strong>Metod:</strong> \\(T-20=(80-20)e^{-kt}\\). Vid 10 min gäller \\(30=60e^{-10k}\\), så \\(e^{-10k}=1/2\\) och \\(k=\\ln2/10=0.0693\\).</p>",
+    "id": "4.310",
+    "miniräknare": true,
+    "geogebra": false,
+    "familj": "Modellering med differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.06931471805599453,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "modellering",
+      "problemlösning"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Visa med motsägelsebevis att det inte finns något största jämnt heltal.</p>",
+    "s": "<p><strong>Bevisidé:</strong> Anta att ett största jämnt heltal N finns. Då är N+2 också jämnt och större än N, vilket motsäger antagandet.</p>",
+    "id": "2.312",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Motsägelsebevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Visa med motsägelsebevis att \\(\\sqrt{3}\\) är irrationellt.</p>",
+    "s": "<p><strong>Bevisidé:</strong> Anta \\(\\sqrt3=p/q\\) i förkortad form. Då ger \\(p^2=3q^2\\) att p är delbart med 3. Sätt p=3r; då blir q också delbart med 3, motsägelse.</p>",
+    "id": "2.313",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Motsägelsebevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Visa med motsägelsebevis att två udda heltal inte kan ha en udda summa.</p>",
+    "s": "<p><strong>Bevisidé:</strong> Anta att två udda tal har udda summa. Skriv talen 2m+1 och 2n+1. Summan är 2(m+n+1), alltså jämn, motsägelse.</p>",
+    "id": "2.314",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Motsägelsebevis",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Ett riktningsfält hör till differentialekvationen \\(y'=x-y\\).</p><p>Vilken lutning har riktningsfältets linjeelement i punkten \\((2,1)\\)?</p>",
+    "s": "<p><strong>Metod:</strong> Sätt punktens koordinater i högerledet. Då fås \\(y'=1\\).</p>",
+    "id": "4.311",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Tolka riktningsfält och lösningskurvor",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Ett riktningsfält hör till differentialekvationen \\(y'=y(2-x)\\).</p><p>Vilken lutning har riktningsfältets linjeelement i punkten \\((1,3)\\)?</p>",
+    "s": "<p><strong>Metod:</strong> Sätt punktens koordinater i högerledet. Då fås \\(y'=3\\).</p>",
+    "id": "4.312",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Tolka riktningsfält och lösningskurvor",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "riktningsfalt_euler",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Ett riktningsfält hör till differentialekvationen \\(y'=x^2-y\\).</p><p>Vilken lutning har riktningsfältets linjeelement i punkten \\((2,5)\\)?</p>",
+    "s": "<p><strong>Metod:</strong> Sätt punktens koordinater i högerledet. Då fås \\(y'=-1\\).</p>",
+    "id": "4.313",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Tolka riktningsfält och lösningskurvor",
+    "svarstyp": "numeriskt",
+    "rättSvar": -1,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bevisa direkt att summan av två tal som är delbara med 5 också är delbar med 5.</p>",
+    "s": "<p><strong>Bevis:</strong> Skriv talen 5m och 5n. Summan är 5(m+n), alltså delbar med 5.</p>",
+    "id": "2.315",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Direkta bevis, kontraposition och metodval",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bevisa med kontraposition: Om \\(n^2\\) är udda så är \\(n\\) udda.</p>",
+    "s": "<p><strong>Bevis:</strong> Kontrapositionen är: om n är jämnt så är n² jämnt. Skriv n=2k, då n²=4k²=2(2k²).</p>",
+    "id": "2.316",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Direkta bevis, kontraposition och metodval",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 2,
+    "omr": "bevismetoder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Välj lämplig bevismetod och visa: om ett heltal är delbart med 6 så är det delbart med 3.</p>",
+    "s": "<p><strong>Bevis:</strong> Direkt bevis: n=6k=3(2k), alltså är n delbart med 3.</p>",
+    "id": "2.317",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Direkta bevis, kontraposition och metodval",
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "resonemang"
+    ]
+  },
+  {
+    "kap": 3,
+    "omr": "derivata_tillampningar",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Använd linjär approximation kring \\(x_0=4\\) för att approximera värdet av \\(sqrt(4.1)\\). Här är \\(f(4)=2\\) och \\(f'(4)=0.25\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(f(x_0+\\Delta x)\\approx f(x_0)+f'(x_0)\\Delta x\\).</p><p>\\(2+0.25\\cdot0.1=2.0250\\).</p>",
+    "id": "3.118",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Linjär approximation med derivata",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.025,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 3,
+    "omr": "derivata_tillampningar",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Använd linjär approximation kring \\(x_0=1\\) för att approximera värdet av \\(ln(1.03)\\). Här är \\(f(1)=0\\) och \\(f'(1)=1\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(f(x_0+\\Delta x)\\approx f(x_0)+f'(x_0)\\Delta x\\).</p><p>\\(0+1\\cdot0.03=0.0300\\).</p>",
+    "id": "3.119",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Linjär approximation med derivata",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.03,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 3,
+    "omr": "derivata_tillampningar",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Använd linjär approximation kring \\(x_0=0\\) för att approximera värdet av \\(e^0.05\\). Här är \\(f(0)=1\\) och \\(f'(0)=1\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(f(x_0+\\Delta x)\\approx f(x_0)+f'(x_0)\\Delta x\\).</p><p>\\(1+1\\cdot0.05=1.0500\\).</p>",
+    "id": "3.120",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Linjär approximation med derivata",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.05,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 2,
+    "omr": "kongruens",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm resten när \\(7^3\\) divideras med 5.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera basen modulo 5 och fortsätt med potensen. Resten blir <strong>3</strong>.</p>",
+    "id": "2.318",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Restklasser och tillämpningar av modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 2,
+    "omr": "kongruens",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bestäm resten när \\(23^7\\) divideras med 8.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera basen modulo 8 och fortsätt med potensen. Resten blir <strong>7</strong>.</p>",
+    "id": "2.319",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Restklasser och tillämpningar av modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": 7,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 2,
+    "omr": "kongruens",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bestäm resten när \\(2026^2\\) divideras med 11.</p>",
+    "s": "<p><strong>Metod:</strong> Reducera basen modulo 11 och fortsätt med potensen. Resten blir <strong>4</strong>.</p>",
+    "id": "2.320",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Restklasser och tillämpningar av modulo",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För \\(y'=y,\\ y(0)=1\\) används Eulers metod med \\(h=0.2\\) i 3 steg.</p><p>Bestäm absolutfelet jämfört med den exakta lösningen \\(y=e^x\\) vid slutpunkten.</p>",
+    "s": "<p><strong>Metod:</strong> Euler ger \\(y\\approx(1+h)^n=(1.2)^3=1.72800\\). Exakt värde är \\(e^{0.6000000000000001}=1.82212\\).</p><p>Absolutfelet är \\(0.09412\\).</p>",
+    "id": "4.314",
+    "miniräknare": true,
+    "geogebra": false,
+    "familj": "Tolka och kontrollera numeriska differentialekvationslösningar",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.09411880039050935,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>För \\(y'=y,\\ y(0)=1\\) används Eulers metod med \\(h=0.1\\) i 5 steg.</p><p>Bestäm absolutfelet jämfört med den exakta lösningen \\(y=e^x\\) vid slutpunkten.</p>",
+    "s": "<p><strong>Metod:</strong> Euler ger \\(y\\approx(1+h)^n=(1.1)^5=1.61051\\). Exakt värde är \\(e^{0.5}=1.64872\\).</p><p>Absolutfelet är \\(0.03821\\).</p>",
+    "id": "4.315",
+    "miniräknare": true,
+    "geogebra": false,
+    "familj": "Tolka och kontrollera numeriska differentialekvationslösningar",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.03821127070012764,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "modellering_digitalt",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>För \\(y'=y,\\ y(0)=1\\) används Eulers metod med \\(h=0.25\\) i 4 steg.</p><p>Bestäm absolutfelet jämfört med den exakta lösningen \\(y=e^x\\) vid slutpunkten.</p>",
+    "s": "<p><strong>Metod:</strong> Euler ger \\(y\\approx(1+h)^n=(1.25)^4=2.44141\\). Exakt värde är \\(e^{1.0}=2.71828\\).</p><p>Absolutfelet är \\(0.27688\\).</p>",
+    "id": "4.316",
+    "miniräknare": true,
+    "geogebra": false,
+    "familj": "Tolka och kontrollera numeriska differentialekvationslösningar",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.2768755784590451,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "resonemang"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "diffekv_grunder",
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För differentialekvationen \\(y'=3y-12\\), bestäm jämviktslösningen.</p>",
+    "s": "<p><strong>Metod:</strong> En jämvikt har \\(y'=0\\). Alltså \\(3y-12=0\\Rightarrow y=4\\).</p>",
+    "id": "4.317",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Grundläggande analys av differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "diffekv_grunder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En funktion \\(y=Ce^{2x}\\) ska uppfylla \\(y'=ky\\). Bestäm \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> Derivera: \\(y'=2Ce^{2x}=2y\\). Därför är \\(k=2\\).</p>",
+    "id": "4.318",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Grundläggande analys av differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "kap": 4,
+    "omr": "diffekv_grunder",
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Differentialekvationen är \\(y'=x^2-4\\).</p><p>Bestäm det positiva x-värde där lösningskurvorna har horisontell tangent.</p>",
+    "s": "<p><strong>Metod:</strong> Horisontell tangent betyder \\(y'=0\\). Lös \\(x^2-4=0\\). Det positiva värdet är \\(x=2\\).</p>",
+    "id": "4.319",
+    "miniräknare": false,
+    "geogebra": false,
+    "familj": "Grundläggande analys av differentialekvationer",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  }
 ];

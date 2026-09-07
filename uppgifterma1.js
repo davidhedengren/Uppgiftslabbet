@@ -65738,5 +65738,1029 @@ window.BANKMA1 = [
     "procedur"
   ],
   "svarFormat": "numeriskt"
-}
+},
+  {
+    "id": "1.410",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Utveckla och förenkla \\(3(x-5)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera talet utanför parentesen med varje term inuti parentesen.</p><p><strong>Svar:</strong> \\(3x-15\\).</p>",
+    "familj": "Multiplicera in i parentes",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "3x-15",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.411",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Utveckla och förenkla \\(-4(2x+3)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera talet utanför parentesen med varje term inuti parentesen.</p><p><strong>Svar:</strong> \\(-8x-12\\).</p>",
+    "familj": "Multiplicera in i parentes",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "-8x-12",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.412",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Utveckla och förenkla \\(5(3a-2)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera talet utanför parentesen med varje term inuti parentesen.</p><p><strong>Svar:</strong> \\(15a-10\\).</p>",
+    "familj": "Multiplicera in i parentes",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "15a-10",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.413",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Utveckla och förenkla \\(-2(4y-7)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera talet utanför parentesen med varje term inuti parentesen.</p><p><strong>Svar:</strong> \\(-8y+14\\).</p>",
+    "familj": "Multiplicera in i parentes",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "-8y+14",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "3.404",
+    "kap": 3,
+    "omr": "potensregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Beräkna \\((3,0\\cdot10^5)(4,0\\cdot10^{-3})\\). Svara i grundpotensform.</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera talfaktorerna och addera exponenterna.</p><p>\\(3,0\\cdot4,0=12\\) och \\(10^5\\cdot10^{-3}=10^2\\). Alltså \\(12\\cdot10^2=1,2\\cdot10^3\\).</p>",
+    "familj": "Skriva och räkna med grundpotensform",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1200,
+    "tolerans": 18,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.405",
+    "kap": 3,
+    "omr": "potensregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Beräkna \\((8,4\\cdot10^7)/(2,0\\cdot10^3)\\). Svara i grundpotensform.</p>",
+    "s": "<p><strong>Metod:</strong> Dividera talfaktorerna och subtrahera exponenterna.</p><p>\\(8,4/2,0=4,2\\) och \\(10^7/10^3=10^4\\), alltså \\(4,2\\cdot10^4\\).</p>",
+    "familj": "Skriva och räkna med grundpotensform",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 42000,
+    "tolerans": 630,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.406",
+    "kap": 3,
+    "omr": "potensregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Skriv \\(0,0000725\\) i grundpotensform. Ange talfaktorn framför tiopotensen.</p>",
+    "s": "<p><strong>Metod:</strong> Flytta decimaltecknet fem steg åt höger: \\(0,0000725=7,25\\cdot10^{-5}\\).</p><p><strong>Svar:</strong> talfaktorn är 7,25.</p>",
+    "familj": "Skriva och räkna med grundpotensform",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 7.25,
+    "tolerans": 0.01,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.407",
+    "kap": 3,
+    "omr": "potensregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Talet \\(6,3\\cdot10^n\\) är lika med 63 000. Bestäm \\(n\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(63\\,000=6,3\\cdot10^4\\), alltså är exponenten 4.</p>",
+    "familj": "Skriva och räkna med grundpotensform",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.412",
+    "kap": 4,
+    "omr": "vektorer",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Punkterna är \\(P(2,-1)\\) och \\(Q(7,3)\\).</p><p>Bestäm komponenterna i vektorn \\(\\overrightarrow{PQ}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Slutpunkt minus startpunkt komponent för komponent.</p><p>\\(\\overrightarrow{PQ}=(7-2,\\,3-(-1))=(5,4)\\).</p>",
+    "familj": "Bestämma vektor från start- och slutpunkt",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      4
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "x-komponent",
+      "y-komponent"
+    ]
+  },
+  {
+    "id": "4.413",
+    "kap": 4,
+    "omr": "vektorer",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Punkterna är \\(P(-4,5)\\) och \\(Q(1,-2)\\).</p><p>Bestäm komponenterna i vektorn \\(\\overrightarrow{PQ}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Slutpunkt minus startpunkt komponent för komponent.</p><p>\\(\\overrightarrow{PQ}=(1--4,\\,-2-(5))=(5,-7)\\).</p>",
+    "familj": "Bestämma vektor från start- och slutpunkt",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      -7
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "x-komponent",
+      "y-komponent"
+    ]
+  },
+  {
+    "id": "4.414",
+    "kap": 4,
+    "omr": "vektorer",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Punkterna är \\(P(3,6)\\) och \\(Q(-2,9)\\).</p><p>Bestäm komponenterna i vektorn \\(\\overrightarrow{PQ}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Slutpunkt minus startpunkt komponent för komponent.</p><p>\\(\\overrightarrow{PQ}=(-2-3,\\,9-(6))=(-5,3)\\).</p>",
+    "familj": "Bestämma vektor från start- och slutpunkt",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      -5,
+      3
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "x-komponent",
+      "y-komponent"
+    ]
+  },
+  {
+    "id": "4.415",
+    "kap": 4,
+    "omr": "vektorer",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Punkterna är \\(P(-5,-3)\\) och \\(Q(4,2)\\).</p><p>Bestäm komponenterna i vektorn \\(\\overrightarrow{PQ}\\).</p>",
+    "s": "<p><strong>Metod:</strong> Slutpunkt minus startpunkt komponent för komponent.</p><p>\\(\\overrightarrow{PQ}=(4--5,\\,2-(-3))=(9,5)\\).</p>",
+    "familj": "Bestämma vektor från start- och slutpunkt",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      9,
+      5
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "x-komponent",
+      "y-komponent"
+    ]
+  },
+  {
+    "id": "1.414",
+    "kap": 1,
+    "omr": "faktorisering",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Faktorisera genom att bryta ut största gemensamma faktor:</p><p>\\(12x^3+18x^2\\)</p>",
+    "s": "<p><strong>Metod:</strong> Hitta största gemensamma talfaktor och lägsta gemensamma potens av variablerna i alla termer.</p><p><strong>Svar:</strong> \\(6x^2(2x+3)\\).</p>",
+    "familj": "Bryta ut största gemensamma faktor",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "6x^2(2x+3)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.415",
+    "kap": 1,
+    "omr": "faktorisering",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Faktorisera genom att bryta ut största gemensamma faktor:</p><p>\\(15a^2b-25ab^2\\)</p>",
+    "s": "<p><strong>Metod:</strong> Hitta största gemensamma talfaktor och lägsta gemensamma potens av variablerna i alla termer.</p><p><strong>Svar:</strong> \\(5ab(3a-5b)\\).</p>",
+    "familj": "Bryta ut största gemensamma faktor",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "5ab(3a-5b)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.416",
+    "kap": 1,
+    "omr": "faktorisering",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Faktorisera genom att bryta ut största gemensamma faktor:</p><p>\\(28y^4-14y^2\\)</p>",
+    "s": "<p><strong>Metod:</strong> Hitta största gemensamma talfaktor och lägsta gemensamma potens av variablerna i alla termer.</p><p><strong>Svar:</strong> \\(14y^2(2y^2-1)\\).</p>",
+    "familj": "Bryta ut största gemensamma faktor",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "14y^2(2y^2-1)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.417",
+    "kap": 1,
+    "omr": "faktorisering",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Faktorisera genom att bryta ut största gemensamma faktor:</p><p>\\(18m^3n+24m^2n^2-30mn\\)</p>",
+    "s": "<p><strong>Metod:</strong> Hitta största gemensamma talfaktor och lägsta gemensamma potens av variablerna i alla termer.</p><p><strong>Svar:</strong> \\(6mn(3m^2+4mn-5)\\).</p>",
+    "familj": "Bryta ut största gemensamma faktor",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "6mn(3m^2+4mn-5)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "3.408",
+    "kap": 3,
+    "omr": "genomsnittlig_forandring",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En storhet minskar från 1000 till 810 på 2 år. Anta samma procentuella minskning varje år.</p><p>Bestäm den genomsnittliga årliga minskningen i procent.</p>",
+    "s": "<p><strong>Metod:</strong> Om förändringsfaktorn per år är \\(q\\), så gäller \\(1000q^2=810\\). Därför \\(q=(810/1000)^{1/2}=0.9000\\).</p><p>Minskningen är \\((1-q)\\cdot100\\approx 10.00\\,\\%\\).</p>",
+    "familj": "Genomsnittlig årlig minskning",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 9.999999999999998,
+    "tolerans": 0.14999999999999997,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.409",
+    "kap": 3,
+    "omr": "genomsnittlig_forandring",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En storhet minskar från 2400 till 1680 på 4 år. Anta samma procentuella minskning varje år.</p><p>Bestäm den genomsnittliga årliga minskningen i procent.</p>",
+    "s": "<p><strong>Metod:</strong> Om förändringsfaktorn per år är \\(q\\), så gäller \\(2400q^4=1680\\). Därför \\(q=(1680/2400)^{1/4}=0.9147\\).</p><p>Minskningen är \\((1-q)\\cdot100\\approx 8.53\\,\\%\\).</p>",
+    "familj": "Genomsnittlig årlig minskning",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.530878077130556,
+    "tolerans": 0.12796317115695832,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.410",
+    "kap": 3,
+    "omr": "genomsnittlig_forandring",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En storhet minskar från 500 till 320 på 5 år. Anta samma procentuella minskning varje år.</p><p>Bestäm den genomsnittliga årliga minskningen i procent.</p>",
+    "s": "<p><strong>Metod:</strong> Om förändringsfaktorn per år är \\(q\\), så gäller \\(500q^5=320\\). Därför \\(q=(320/500)^{1/5}=0.9146\\).</p><p>Minskningen är \\((1-q)\\cdot100\\approx 8.54\\,\\%\\).</p>",
+    "familj": "Genomsnittlig årlig minskning",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.538989614534731,
+    "tolerans": 0.12808484421802097,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.411",
+    "kap": 3,
+    "omr": "genomsnittlig_forandring",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>En storhet minskar från 12000 till 7800 på 6 år. Anta samma procentuella minskning varje år.</p><p>Bestäm den genomsnittliga årliga minskningen i procent.</p>",
+    "s": "<p><strong>Metod:</strong> Om förändringsfaktorn per år är \\(q\\), så gäller \\(12000q^6=7800\\). Därför \\(q=(7800/12000)^{1/6}=0.9307\\).</p><p>Minskningen är \\((1-q)\\cdot100\\approx 6.93\\,\\%\\).</p>",
+    "familj": "Genomsnittlig årlig minskning",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 6.928032934674533,
+    "tolerans": 0.10392049402011799,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "0.419",
+    "kap": 0,
+    "omr": "decimaltal_positionssystem",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Betrakta talen 0,58, 0,605, 0,6.</p><p>Vilket av talen ligger i mitten när de ordnas från minst till störst?</p>",
+    "s": "<p><strong>Metod:</strong> Skriv gärna talen med lika många decimaler och jämför platsvärde för platsvärde.</p><p><strong>Svar:</strong> 0,6.</p>",
+    "familj": "Jämföra och ordna decimaltal",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.6,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "0.420",
+    "kap": 0,
+    "omr": "decimaltal_positionssystem",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Betrakta talen 2,04, 2,4, 2,004.</p><p>Vilket tal är störst?</p>",
+    "s": "<p><strong>Metod:</strong> Skriv gärna talen med lika många decimaler och jämför platsvärde för platsvärde.</p><p><strong>Svar:</strong> 2,4.</p>",
+    "familj": "Jämföra och ordna decimaltal",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "0.421",
+    "kap": 0,
+    "omr": "decimaltal_positionssystem",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Betrakta talen -0,8, -0,75, -0,805.</p><p>Vilket tal är minst?</p>",
+    "s": "<p><strong>Metod:</strong> Skriv gärna talen med lika många decimaler och jämför platsvärde för platsvärde.</p><p><strong>Svar:</strong> -0,805.</p>",
+    "familj": "Jämföra och ordna decimaltal",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.805,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "0.422",
+    "kap": 0,
+    "omr": "decimaltal_positionssystem",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Betrakta talen 1,009, 1,09, 1,019.</p><p>Bestäm skillnaden mellan det största och det minsta talet.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv gärna talen med lika många decimaler och jämför platsvärde för platsvärde.</p><p><strong>Svar:</strong> 0,08100000000000018.</p>",
+    "familj": "Jämföra och ordna decimaltal",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.08100000000000018,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.418",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Utveckla och förenkla \\((x+4)(x-7)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera alla termer, eller använd en passande kvadrerings-/konjugatregel när strukturen tillåter det.</p><p><strong>Svar:</strong> \\(x^2-3x-28\\).</p>",
+    "familj": "Multiplicera två parenteser och använda identiteter",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "x^2-3x-28",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.419",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Utveckla och förenkla \\((2x-3)(x+5)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera alla termer, eller använd en passande kvadrerings-/konjugatregel när strukturen tillåter det.</p><p><strong>Svar:</strong> \\(2x^2+7x-15\\).</p>",
+    "familj": "Multiplicera två parenteser och använda identiteter",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "2x^2+7x-15",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.420",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Utveckla och förenkla \\((3a+2)^2\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera alla termer, eller använd en passande kvadrerings-/konjugatregel när strukturen tillåter det.</p><p><strong>Svar:</strong> \\(9a^2+12a+4\\).</p>",
+    "familj": "Multiplicera två parenteser och använda identiteter",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "9a^2+12a+4",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "1.421",
+    "kap": 1,
+    "omr": "multiplicera_uttryck",
+    "kurs": [
+      "1a",
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Utveckla och förenkla \\((5y-1)(5y+1)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Multiplicera alla termer, eller använd en passande kvadrerings-/konjugatregel när strukturen tillåter det.</p><p><strong>Svar:</strong> \\(25y^2-1\\).</p>",
+    "familj": "Multiplicera två parenteser och använda identiteter",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "25y^2-1",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "uttryck"
+  },
+  {
+    "id": "2.413",
+    "kap": 2,
+    "omr": "potensfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En storhet beskrivs av en potensfunktion \\(y=Cx^{2}\\). När \\(x\\) multipliceras med 1.5 är det ursprungliga värdet på \\(y\\) 20.</p><p>Bestäm det nya värdet på \\(y\\).</p>",
+    "s": "<p><strong>Metod:</strong> I en potensfunktion förändras \\(y\\) med faktorn \\(k^p\\).</p><p>Faktorn är \\(1.5^{2}=2.25\\), så det nya värdet blir \\(20\\cdot2.25=45\\).</p>",
+    "familj": "Skalning med potensfunktioner",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 45.0,
+    "tolerans": 0.6749999999999999,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.414",
+    "kap": 2,
+    "omr": "potensfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En storhet beskrivs av en potensfunktion \\(y=Cx^{3}\\). När \\(x\\) multipliceras med 2 är det ursprungliga värdet på \\(y\\) 4.</p><p>Bestäm det nya värdet på \\(y\\).</p>",
+    "s": "<p><strong>Metod:</strong> I en potensfunktion förändras \\(y\\) med faktorn \\(k^p\\).</p><p>Faktorn är \\(2^{3}=8\\), så det nya värdet blir \\(4\\cdot8=32\\).</p>",
+    "familj": "Skalning med potensfunktioner",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 32,
+    "tolerans": 0.48,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.415",
+    "kap": 2,
+    "omr": "potensfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En storhet beskrivs av en potensfunktion \\(y=Cx^{0.5}\\). När \\(x\\) multipliceras med 4 är det ursprungliga värdet på \\(y\\) 9.</p><p>Bestäm det nya värdet på \\(y\\).</p>",
+    "s": "<p><strong>Metod:</strong> I en potensfunktion förändras \\(y\\) med faktorn \\(k^p\\).</p><p>Faktorn är \\(4^{0.5}=2\\), så det nya värdet blir \\(9\\cdot2=18\\).</p>",
+    "familj": "Skalning med potensfunktioner",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 18.0,
+    "tolerans": 0.27,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.416",
+    "kap": 2,
+    "omr": "potensfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>En storhet beskrivs av en potensfunktion \\(y=Cx^{-1}\\). När \\(x\\) multipliceras med 3 är det ursprungliga värdet på \\(y\\) 30.</p><p>Bestäm det nya värdet på \\(y\\).</p>",
+    "s": "<p><strong>Metod:</strong> I en potensfunktion förändras \\(y\\) med faktorn \\(k^p\\).</p><p>Faktorn är \\(3^{-1}=0.3333\\), så det nya värdet blir \\(30\\cdot0.3333=10\\).</p>",
+    "familj": "Skalning med potensfunktioner",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10.0,
+    "tolerans": 0.15,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.417",
+    "kap": 2,
+    "omr": "exponentialfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En exponentialfunktion ges av \\(f(x)=3\\cdot 1,2^x\\).</p><p>Bestäm \\(f(4)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Sätt in \\(x=4\\) i funktionsuttrycket.</p><p>\\(f(4)=3\\cdot1.2^4=6.221\\).</p>",
+    "familj": "Bestämma och använda exponentialfunktion",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 6.2208,
+    "tolerans": 0.09331199999999999,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.418",
+    "kap": 2,
+    "omr": "exponentialfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En exponentialfunktion ges av \\(f(x)=80\\cdot 0,85^x\\).</p><p>Bestäm \\(f(3)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Sätt in \\(x=3\\) i funktionsuttrycket.</p><p>\\(f(3)=80\\cdot0.85^3=49.130\\).</p>",
+    "familj": "Bestämma och använda exponentialfunktion",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 49.129999999999995,
+    "tolerans": 0.7369499999999999,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.419",
+    "kap": 2,
+    "omr": "exponentialfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En exponentialfunktion har formen \\(f(x)=5\\cdot b^x\\) och \\(f(2)=20\\).</p><p>Bestäm förändringsfaktorn \\(b\\).</p>",
+    "s": "<p><strong>Metod:</strong> Sätt in den givna punkten och lös potensekvationen.</p><p>\\(5b^2=20\\Rightarrow b^{2}=4\\Rightarrow b=2.0000\\).</p>",
+    "familj": "Bestämma och använda exponentialfunktion",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.0,
+    "tolerans": 0.01,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.420",
+    "kap": 2,
+    "omr": "exponentialfunktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>En exponentialfunktion har formen \\(f(x)=100\\cdot b^x\\) och \\(f(3)=64\\).</p><p>Bestäm förändringsfaktorn \\(b\\).</p>",
+    "s": "<p><strong>Metod:</strong> Sätt in den givna punkten och lös potensekvationen.</p><p>\\(100b^3=64\\Rightarrow b^{3}=0.64\\Rightarrow b=0.8618\\).</p>",
+    "familj": "Bestämma och använda exponentialfunktion",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.8617738760127535,
+    "tolerans": 0.01,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.421",
+    "kap": 2,
+    "omr": "rata_linjens_ekvation",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Linjen \\(l\\) har riktningskoefficienten \\(k=2\\). En annan linje ska vara vinkelrät mot \\(l\\).</p><p>Bestäm den andra linjens riktningskoefficient.</p>",
+    "s": "<p><strong>Metod:</strong> Parallella linjer har samma riktningskoefficient. För vinkelräta linjer gäller \\(k_1k_2=-1\\).</p><p><strong>Svar:</strong> \\(k=-0.5\\).</p>",
+    "familj": "Parallella och vinkelräta linjer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.422",
+    "kap": 2,
+    "omr": "rata_linjens_ekvation",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Linjen \\(l\\) har riktningskoefficienten \\(k=-0.5\\). En annan linje ska vara vinkelrät mot \\(l\\).</p><p>Bestäm den andra linjens riktningskoefficient.</p>",
+    "s": "<p><strong>Metod:</strong> Parallella linjer har samma riktningskoefficient. För vinkelräta linjer gäller \\(k_1k_2=-1\\).</p><p><strong>Svar:</strong> \\(k=2\\).</p>",
+    "familj": "Parallella och vinkelräta linjer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.423",
+    "kap": 2,
+    "omr": "rata_linjens_ekvation",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Linjen \\(l\\) har riktningskoefficienten \\(k=3\\). En annan linje ska vara parallell mot \\(l\\).</p><p>Bestäm den andra linjens riktningskoefficient.</p>",
+    "s": "<p><strong>Metod:</strong> Parallella linjer har samma riktningskoefficient. För vinkelräta linjer gäller \\(k_1k_2=-1\\).</p><p><strong>Svar:</strong> \\(k=3\\).</p>",
+    "familj": "Parallella och vinkelräta linjer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.424",
+    "kap": 2,
+    "omr": "rata_linjens_ekvation",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Linjen \\(l\\) har riktningskoefficienten \\(k=-4\\). En annan linje ska vara parallell mot \\(l\\).</p><p>Bestäm den andra linjens riktningskoefficient.</p>",
+    "s": "<p><strong>Metod:</strong> Parallella linjer har samma riktningskoefficient. För vinkelräta linjer gäller \\(k_1k_2=-1\\).</p><p><strong>Svar:</strong> \\(k=-4\\).</p>",
+    "familj": "Parallella och vinkelräta linjer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  }
 ];

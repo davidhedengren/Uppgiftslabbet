@@ -46793,5 +46793,859 @@ window.BANKMATO1 = [
     "x",
     "x"
   ]
-}
+},
+  {
+    "id": "1.419",
+    "kap": 1,
+    "omr": "funktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=1x^2+(-6)x+(5)\\).</p><p>Bestäm symmetrilinjens x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Symmetrilinjen fås av \\(x=-b/(2a)=3\\). Insättning ger extremvärdet \\(f(3)=-4\\).</p><p><strong>Svar:</strong> \\(3\\).</p>",
+    "familj": "Kvadratkomplettera och tolka andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.420",
+    "kap": 1,
+    "omr": "funktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=1x^2+(4)x+(-1)\\).</p><p>Bestäm funktionens extremvärde.</p>",
+    "s": "<p><strong>Metod:</strong> Symmetrilinjen fås av \\(x=-b/(2a)=-2\\). Insättning ger extremvärdet \\(f(-2)=-5\\).</p><p><strong>Svar:</strong> \\(-5\\).</p>",
+    "familj": "Kvadratkomplettera och tolka andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -5.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.421",
+    "kap": 1,
+    "omr": "funktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=2x^2+(-8)x+(3)\\).</p><p>Bestäm symmetrilinjens x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Symmetrilinjen fås av \\(x=-b/(2a)=2\\). Insättning ger extremvärdet \\(f(2)=-5\\).</p><p><strong>Svar:</strong> \\(2\\).</p>",
+    "familj": "Kvadratkomplettera och tolka andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.422",
+    "kap": 1,
+    "omr": "funktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=-1x^2+(6)x+(2)\\).</p><p>Bestäm funktionens extremvärde.</p>",
+    "s": "<p><strong>Metod:</strong> Symmetrilinjen fås av \\(x=-b/(2a)=3\\). Insättning ger extremvärdet \\(f(3)=11\\).</p><p><strong>Svar:</strong> \\(11\\).</p>",
+    "familj": "Kvadratkomplettera och tolka andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 11.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.423",
+    "kap": 1,
+    "omr": "funktioner",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Funktionen är \\(f(x)=3x^2+(12)x+(-7)\\).</p><p>Bestäm symmetrilinjens x-värde.</p>",
+    "s": "<p><strong>Metod:</strong> Symmetrilinjen fås av \\(x=-b/(2a)=-2\\). Insättning ger extremvärdet \\(f(-2)=-19\\).</p><p><strong>Svar:</strong> \\(-2\\).</p>",
+    "familj": "Kvadratkomplettera och tolka andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -2.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.508",
+    "kap": 2,
+    "omr": "exponential_ln_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv om \\(2^x\\) på formen \\(e^{kx}\\).</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(b^x=e^{x\\ln b}\\). Därför är \\(k=\\ln(2)=0.69315\\).</p>",
+    "familj": "Skriva exponentialfunktioner med basen e",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.6931471805599453,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.509",
+    "kap": 2,
+    "omr": "exponential_ln_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv om \\(1.05^x\\) på formen \\(e^{kx}\\).</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(b^x=e^{x\\ln b}\\). Därför är \\(k=\\ln(1.05)=0.04879\\).</p>",
+    "familj": "Skriva exponentialfunktioner med basen e",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.04879016416943205,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.510",
+    "kap": 2,
+    "omr": "exponential_ln_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Skriv om \\(0.8^x\\) på formen \\(e^{kx}\\).</p><p>Bestäm konstanten \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> \\(b^x=e^{x\\ln b}\\). Därför är \\(k=\\ln(0.8)=-0.22314\\).</p>",
+    "familj": "Skriva exponentialfunktioner med basen e",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.2231435513142097,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.511",
+    "kap": 2,
+    "omr": "exponential_ln_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En storhet förändras med 3 % per tidsenhet och kan skrivas \\(A(t)=A_0e^{kt}\\).</p><p>Bestäm \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> Förändringsfaktorn är \\(b=1.0300\\) och \\(b=e^k\\). Alltså \\(k=\\ln b=0.02956\\).</p>",
+    "familj": "Skriva exponentialfunktioner med basen e",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.02955880224154443,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.512",
+    "kap": 2,
+    "omr": "exponential_ln_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>En storhet förändras med -4 % per tidsenhet och kan skrivas \\(A(t)=A_0e^{kt}\\).</p><p>Bestäm \\(k\\).</p>",
+    "s": "<p><strong>Metod:</strong> Förändringsfaktorn är \\(b=0.9600\\) och \\(b=e^k\\). Alltså \\(k=\\ln b=-0.04082\\).</p>",
+    "familj": "Skriva exponentialfunktioner med basen e",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.040821994520255166,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.411",
+    "kap": 4,
+    "omr": "enhetscirkeln_trig",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm det exakta värdet av \\(sin(150^\\circ)\\).</p><p>Skriv svaret numeriskt om det innehåller en rot.</p>",
+    "s": "<p><strong>Metod:</strong> Använd referensvinkel och rätt tecken i den aktuella kvadranten.</p><p><strong>Svar:</strong> \\(0.500000\\).</p>",
+    "familj": "Exakta trigonometriska värden och symmetri i enhetscirkeln",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.412",
+    "kap": 4,
+    "omr": "enhetscirkeln_trig",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm det exakta värdet av \\(cos(225^\\circ)\\).</p><p>Skriv svaret numeriskt om det innehåller en rot.</p>",
+    "s": "<p><strong>Metod:</strong> Använd referensvinkel och rätt tecken i den aktuella kvadranten.</p><p><strong>Svar:</strong> \\(-0.707107\\).</p>",
+    "familj": "Exakta trigonometriska värden och symmetri i enhetscirkeln",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.7071067811865476,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.413",
+    "kap": 4,
+    "omr": "enhetscirkeln_trig",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bestäm det exakta värdet av \\(sin(330^\\circ)\\).</p><p>Skriv svaret numeriskt om det innehåller en rot.</p>",
+    "s": "<p><strong>Metod:</strong> Använd referensvinkel och rätt tecken i den aktuella kvadranten.</p><p><strong>Svar:</strong> \\(-0.500000\\).</p>",
+    "familj": "Exakta trigonometriska värden och symmetri i enhetscirkeln",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.414",
+    "kap": 4,
+    "omr": "enhetscirkeln_trig",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Bestäm det exakta värdet av \\(cos(120^\\circ)\\).</p><p>Skriv svaret numeriskt om det innehåller en rot.</p>",
+    "s": "<p><strong>Metod:</strong> Använd referensvinkel och rätt tecken i den aktuella kvadranten.</p><p><strong>Svar:</strong> \\(-0.500000\\).</p>",
+    "familj": "Exakta trigonometriska värden och symmetri i enhetscirkeln",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.415",
+    "kap": 4,
+    "omr": "enhetscirkeln_trig",
+    "kurs": [
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Bestäm det exakta värdet av \\(sin(315^\\circ)\\).</p><p>Skriv svaret numeriskt om det innehåller en rot.</p>",
+    "s": "<p><strong>Metod:</strong> Använd referensvinkel och rätt tecken i den aktuella kvadranten.</p><p><strong>Svar:</strong> \\(-0.707107\\).</p>",
+    "familj": "Exakta trigonometriska värden och symmetri i enhetscirkeln",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.7071067811865476,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.513",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=x^2-4x+1\\).</p><p>Bestäm det största positiva nollstället till derivatan. Om inget positivt nollställe finns, svara 0.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och faktorisera. f'(x)=2x-4, så nollstället är x=2..</p><p><strong>Svar:</strong> \\(x=2\\).</p>",
+    "familj": "Analysera derivatans tecken och nollställen",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.514",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=x^3-3x\\).</p><p>Bestäm det största positiva nollstället till derivatan. Om inget positivt nollställe finns, svara 0.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och faktorisera. f'(x)=3x^2-3=3(x-1)(x+1).</p><p><strong>Svar:</strong> \\(x=1\\).</p>",
+    "familj": "Analysera derivatans tecken och nollställen",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.515",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=x^4-8x^2\\).</p><p>Bestäm det största positiva nollstället till derivatan. Om inget positivt nollställe finns, svara 0.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och faktorisera. f'(x)=4x^3-16x=4x(x-2)(x+2).</p><p><strong>Svar:</strong> \\(x=2\\).</p>",
+    "familj": "Analysera derivatans tecken och nollställen",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.516",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=x^3+3x^2\\).</p><p>Bestäm det största positiva nollstället till derivatan. Om inget positivt nollställe finns, svara 0.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och faktorisera. f'(x)=3x^2+6x=3x(x+2).</p><p><strong>Svar:</strong> \\(x=0\\).</p>",
+    "familj": "Analysera derivatans tecken och nollställen",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.517",
+    "kap": 2,
+    "omr": "deriveringsregler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Funktionen är \\(f(x)=x^4-4x^3\\).</p><p>Bestäm det största positiva nollstället till derivatan. Om inget positivt nollställe finns, svara 0.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och faktorisera. f'(x)=4x^3-12x^2=4x^2(x-3).</p><p><strong>Svar:</strong> \\(x=3\\).</p>",
+    "familj": "Analysera derivatans tecken och nollställen",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.713",
+    "kap": 3,
+    "omr": "integraler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Beräkna \\(\\int_{0}^{3} (x^2)\\,dx\\).</p>",
+    "s": "<p><strong>Metod:</strong> Bestäm en primitiv funktion och använd \\(F(b)-F(a)\\).</p><p><strong>Svar:</strong> \\(9\\).</p>",
+    "familj": "Använda integralkalkylens huvudsats",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 9.0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.714",
+    "kap": 3,
+    "omr": "integraler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Beräkna \\(\\int_{1}^{4} (2x+1)\\,dx\\).</p>",
+    "s": "<p><strong>Metod:</strong> Bestäm en primitiv funktion och använd \\(F(b)-F(a)\\).</p><p><strong>Svar:</strong> \\(18\\).</p>",
+    "familj": "Använda integralkalkylens huvudsats",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 18,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.715",
+    "kap": 3,
+    "omr": "integraler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Beräkna \\(\\int_{0}^{2} (3x^2-2x)\\,dx\\).</p>",
+    "s": "<p><strong>Metod:</strong> Bestäm en primitiv funktion och använd \\(F(b)-F(a)\\).</p><p><strong>Svar:</strong> \\(4\\).</p>",
+    "familj": "Använda integralkalkylens huvudsats",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.716",
+    "kap": 3,
+    "omr": "integraler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen definieras av \\(F(x)=\\int_0^{x^2} t^2\\,dt\\).</p><p>Bestäm \\(F'(2)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Huvudsatsen tillsammans med kedjeregeln ger \\(F'(x)=(x^2)^2\\cdot2x=2x^5\\).</p><p>\\(F'(2)=64\\).</p>",
+    "familj": "Använda integralkalkylens huvudsats",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 64,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.717",
+    "kap": 3,
+    "omr": "integraler",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Funktionen definieras av \\(F(x)=\\int_0^{x^2} t^2\\,dt\\).</p><p>Bestäm \\(F'(3)\\).</p>",
+    "s": "<p><strong>Metod:</strong> Huvudsatsen tillsammans med kedjeregeln ger \\(F'(x)=(x^2)^2\\cdot2x=2x^5\\).</p><p>\\(F'(3)=486\\).</p>",
+    "familj": "Använda integralkalkylens huvudsats",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 486,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.424",
+    "kap": 1,
+    "omr": "rationella_uttryck",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Det rationella uttrycket är \\((x+1)/(x-4)\\).</p><p>Bestäm summan av alla reella x-värden som måste uteslutas ur definitionsmängden.</p>",
+    "s": "<p><strong>Metod:</strong> Sätt nämnaren lika med noll. De förbjudna värdena är 4.</p><p>Summan är <strong>4</strong>.</p>",
+    "familj": "Bestämma definitionsmängd för rationella uttryck",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.425",
+    "kap": 1,
+    "omr": "rationella_uttryck",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Det rationella uttrycket är \\((2x-3)/(x^2-9)\\).</p><p>Bestäm summan av alla reella x-värden som måste uteslutas ur definitionsmängden.</p>",
+    "s": "<p><strong>Metod:</strong> Sätt nämnaren lika med noll. De förbjudna värdena är -3, 3.</p><p>Summan är <strong>0</strong>.</p>",
+    "familj": "Bestämma definitionsmängd för rationella uttryck",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.426",
+    "kap": 1,
+    "omr": "rationella_uttryck",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Det rationella uttrycket är \\((x^2+1)/(x^2-5x+6)\\).</p><p>Bestäm summan av alla reella x-värden som måste uteslutas ur definitionsmängden.</p>",
+    "s": "<p><strong>Metod:</strong> Sätt nämnaren lika med noll. De förbjudna värdena är 2, 3.</p><p>Summan är <strong>5</strong>.</p>",
+    "familj": "Bestämma definitionsmängd för rationella uttryck",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.427",
+    "kap": 1,
+    "omr": "rationella_uttryck",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Det rationella uttrycket är \\((x-7)/(x^2+x-12)\\).</p><p>Bestäm summan av alla reella x-värden som måste uteslutas ur definitionsmängden.</p>",
+    "s": "<p><strong>Metod:</strong> Sätt nämnaren lika med noll. De förbjudna värdena är -4, 3.</p><p>Summan är <strong>-1</strong>.</p>",
+    "familj": "Bestämma definitionsmängd för rationella uttryck",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -1,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "1.428",
+    "kap": 1,
+    "omr": "rationella_uttryck",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Det rationella uttrycket är \\((x+2)/(x^3-x)\\).</p><p>Bestäm summan av alla reella x-värden som måste uteslutas ur definitionsmängden.</p>",
+    "s": "<p><strong>Metod:</strong> Sätt nämnaren lika med noll. De förbjudna värdena är -1, 0, 1.</p><p>Summan är <strong>0</strong>.</p>",
+    "familj": "Bestämma definitionsmängd för rationella uttryck",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.718",
+    "kap": 3,
+    "omr": "grafanalys_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=x^2-6x+4\\).</p><p>Bestäm det positiva x-värdet för en lokal extrempunkt.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\). Här är \\(f'(x)=2x-6\\). Det efterfrågade positiva x-värdet är \\(3\\).</p>",
+    "familj": "Bestämma extrempunkter med derivata",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.719",
+    "kap": 3,
+    "omr": "grafanalys_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen är \\(f(x)=-x^2+8x-1\\).</p><p>Bestäm det positiva x-värdet för en lokal extrempunkt.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\). Här är \\(f'(x)=-2x+8\\). Det efterfrågade positiva x-värdet är \\(4\\).</p>",
+    "familj": "Bestämma extrempunkter med derivata",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.720",
+    "kap": 3,
+    "omr": "grafanalys_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=x^3-3x^2\\).</p><p>Bestäm det positiva x-värdet för en lokal extrempunkt.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\). Här är \\(f'(x)=3x(x-2)\\). Det efterfrågade positiva x-värdet är \\(2\\).</p>",
+    "familj": "Bestämma extrempunkter med derivata",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.721",
+    "kap": 3,
+    "omr": "grafanalys_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Funktionen är \\(f(x)=x^3-12x\\).</p><p>Bestäm det positiva x-värdet för en lokal extrempunkt.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\). Här är \\(f'(x)=3(x-2)(x+2)\\). Det efterfrågade positiva x-värdet är \\(2\\).</p>",
+    "familj": "Bestämma extrempunkter med derivata",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "3.722",
+    "kap": 3,
+    "omr": "grafanalys_derivata",
+    "kurs": [
+      "1b",
+      "1c"
+    ],
+    "niva": "A",
+    "poang": "0/0/2",
+    "t": "<p>Funktionen är \\(f(x)=x^4-8x^2\\).</p><p>Bestäm det positiva x-värdet för en lokal extrempunkt.</p>",
+    "s": "<p><strong>Metod:</strong> Derivera och lös \\(f'(x)=0\\). Här är \\(f'(x)=4x(x-2)(x+2)\\). Det efterfrågade positiva x-värdet är \\(2\\).</p>",
+    "familj": "Bestämma extrempunkter med derivata",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt"
+  }
 ];

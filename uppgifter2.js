@@ -17522,5 +17522,805 @@ window.BANK2 = [
   "svarFormat": "numeriskt",
   "miniräknare": false,
   "geogebra": false
-}
+},
+  {
+    "id": "4.324",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>I Bohrs modell för väte gäller \\(E_n=-13,6/n^2\\) eV.</p><p>Bestäm elektronens energi i nivån \\(n=2\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_2=\\frac{-13,6}{2^2}=-3.4\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-3.4\\,\\mathrm{eV}\\).</p></div>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": -3.4,
+    "tolerans": 0.051,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.325",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>I Bohrs modell för väte gäller \\(E_n=-13,6/n^2\\) eV.</p><p>Bestäm elektronens energi i nivån \\(n=4\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_4=\\frac{-13,6}{4^2}=-0.85\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-0.85\\,\\mathrm{eV}\\).</p></div>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.85,
+    "tolerans": 0.01275,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.326",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En väteatom går från nivån \\(n=3\\) till \\(n=2\\).</p><p>Vilken våglängd får den utsända fotonen? Använd \\(hc=1240\\,\\mathrm{eV\\,nm}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Skillnaden mellan energinivåerna blir fotonens energi. Använd sedan \\(E=hc/\\lambda\\).</p><div class=\"facit-matte\">\\[\\Delta E=13,6\\left(\\frac1{2^2}-\\frac1{3^2}\\right)=1.889\\,\\mathrm{eV}\\]\\[\\lambda=\\frac{1240}{1.889}=656.4\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(656\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 656.3869327058824,
+    "tolerans": 9.845803990588236,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.327",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En väteatom går från nivån \\(n=4\\) till \\(n=2\\).</p><p>Vilken våglängd får den utsända fotonen? Använd \\(hc=1240\\,\\mathrm{eV\\,nm}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Skillnaden mellan energinivåerna blir fotonens energi. Använd sedan \\(E=hc/\\lambda\\).</p><div class=\"facit-matte\">\\[\\Delta E=13,6\\left(\\frac1{2^2}-\\frac1{4^2}\\right)=2.550\\,\\mathrm{eV}\\]\\[\\lambda=\\frac{1240}{2.550}=486.2\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(486\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 486.21254274509806,
+    "tolerans": 7.29318814117647,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.328",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>I Bohrs modell är radien \\(r_n=n^2a_0\\), där \\(a_0=5,29\\cdot10^{-11}\\) m.</p><p>Bestäm radien för nivån \\(n=5\\). Ange svaret i nm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Radien växer med kvadraten på huvudkvanttalet.</p><div class=\"facit-matte\">\\[r_5=25\\cdot5,29\\cdot10^{-11}=1.322\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(1.32\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.3224999999999998,
+    "tolerans": 0.019837499999999997,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.329",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Monokromatiskt ljus med våglängden 600 nm passerar en dubbelspalt med spaltavståndet 20 μm. Skärmen står 1.5 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 1? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.5\\cdot1\\frac{600\\cdot10^{-9}}{20\\cdot10^{-6}}=0.0450\\,\\mathrm m=4.50\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4.50\\,\\mathrm{cm}\\).</p></div>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4.500000000000001,
+    "tolerans": 0.0675,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "cm"
+  },
+  {
+    "id": "4.330",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Monokromatiskt ljus med våglängden 520 nm passerar en dubbelspalt med spaltavståndet 25 μm. Skärmen står 2.0 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 2? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=2.0\\cdot2\\frac{520\\cdot10^{-9}}{25\\cdot10^{-6}}=0.0832\\,\\mathrm m=8.32\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8.32\\,\\mathrm{cm}\\).</p></div>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.32,
+    "tolerans": 0.1248,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "cm"
+  },
+  {
+    "id": "4.331",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Monokromatiskt ljus med våglängden 450 nm passerar en dubbelspalt med spaltavståndet 15 μm. Skärmen står 1.2 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 1? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.2\\cdot1\\frac{450\\cdot10^{-9}}{15\\cdot10^{-6}}=0.0360\\,\\mathrm m=3.60\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3.60\\,\\mathrm{cm}\\).</p></div>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.6000000000000005,
+    "tolerans": 0.054000000000000006,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "cm"
+  },
+  {
+    "id": "4.332",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ett optiskt gitter har 500 linjer per mm. Ljus med våglängden 632 nm träffar gittret vinkelrätt.</p><p>Bestäm vinkeln till första ordningens maximum.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{500\\cdot10^3}=2.000e-06\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{632\\cdot10^{-9}}{d}\\right)=18.42^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(18.4^\\circ\\).</p></div>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 18.421193432175752,
+    "tolerans": 0.27631790148263624,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.333",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>Ett optiskt gitter har 1200 linjer per mm. Ljus med våglängden 450 nm träffar gittret vinkelrätt.</p><p>Bestäm vinkeln till första ordningens maximum.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{1200\\cdot10^3}=8.333e-07\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{450\\cdot10^{-9}}{d}\\right)=32.68^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(32.7^\\circ\\).</p></div>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 32.68363884625795,
+    "tolerans": 0.49025458269386923,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.334",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En elektromagnetisk våg har frekvensen \\(1.00e+08\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{1.00e+08}=3\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3\\,\\mathrm m\\).</p></div>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.998,
+    "tolerans": 0.04497,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "m"
+  },
+  {
+    "id": "4.335",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En elektromagnetisk våg har frekvensen \\(2.45e+09\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{2.45e+09}=0.122\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.122\\,\\mathrm m\\).</p></div>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.1223673469387755,
+    "tolerans": 0.0018355102040816325,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "m"
+  },
+  {
+    "id": "4.336",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En elektromagnetisk våg har frekvensen \\(5.00e+14\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{5.00e+14}=6e-07\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(6e-07\\,\\mathrm m\\).</p></div>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 5.996e-07,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "m"
+  },
+  {
+    "id": "4.337",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En elektromagnetisk våg har våglängden 10 nm.</p><p>Bestäm frekvensen.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{10\\cdot10^{-9}}=2.998e+16\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3.00e+16\\,\\mathrm{Hz}\\).</p></div>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.998e+16,
+    "tolerans": 449700000000000.0,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Hz"
+  },
+  {
+    "id": "4.338",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>En elektromagnetisk våg har våglängden 0.15 nm.</p><p>Bestäm frekvensen.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{0.15\\cdot10^{-9}}=1.999e+18\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(2.00e+18\\,\\mathrm{Hz}\\).</p></div>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.9986666666666668e+18,
+    "tolerans": 2.998e+16,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Hz"
+  },
+  {
+    "id": "5.327",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vid en transit minskar en stjärnas ljusstyrka med 1.0 %. Anta att planeten passerar framför en jämnt lysande stjärnskiva. Stjärnans radie är 1.0 solradier.</p><p>Bestäm planetens radie i solradier.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Transitdjupet är ungefär kvadraten på radieförhållandet: \\(\\delta=(R_p/R_s)^2\\).</p><div class=\"facit-matte\">\\[R_p=R_s\\sqrt{\\delta}=1.0\\sqrt{0.0100}=0.1000R_\\odot\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.100R_\\odot\\).</p></div>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.1,
+    "tolerans": 0.0015,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "solradier"
+  },
+  {
+    "id": "5.328",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Vid en transit minskar en stjärnas ljusstyrka med 0.36 %. Anta att planeten passerar framför en jämnt lysande stjärnskiva. Stjärnans radie är 0.9 solradier.</p><p>Bestäm planetens radie i solradier.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Transitdjupet är ungefär kvadraten på radieförhållandet: \\(\\delta=(R_p/R_s)^2\\).</p><div class=\"facit-matte\">\\[R_p=R_s\\sqrt{\\delta}=0.9\\sqrt{0.0036}=0.0540R_\\odot\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.054R_\\odot\\).</p></div>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.054,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "solradier"
+  },
+  {
+    "id": "5.329",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Vid en transit minskar en stjärnas ljusstyrka med 2.25 %. Anta att planeten passerar framför en jämnt lysande stjärnskiva. Stjärnans radie är 0.7 solradier.</p><p>Bestäm planetens radie i solradier.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Transitdjupet är ungefär kvadraten på radieförhållandet: \\(\\delta=(R_p/R_s)^2\\).</p><div class=\"facit-matte\">\\[R_p=R_s\\sqrt{\\delta}=0.7\\sqrt{0.0225}=0.1050R_\\odot\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.105R_\\odot\\).</p></div>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.105,
+    "tolerans": 0.0015749999999999998,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "solradier"
+  },
+  {
+    "id": "5.330",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En exoplanets radie är 0.08 gånger stjärnans radie.</p><p>Hur stor procentuell ljusminskning förväntas vid en central transit?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Andelen av stjärnskivans area som täcks är ungefär \\(R_p^2/R_s^2\\).</p><div class=\"facit-matte\">\\[\\delta=(0.08)^2=0.0064=0.64\\,\\%\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(0.64\\,\\%\\).</p></div>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.64,
+    "tolerans": 0.0096,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "%"
+  },
+  {
+    "id": "5.331",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>En exoplanets radie är 0.12 gånger stjärnans radie.</p><p>Hur stor procentuell ljusminskning förväntas vid en central transit?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Andelen av stjärnskivans area som täcks är ungefär \\(R_p^2/R_s^2\\).</p><div class=\"facit-matte\">\\[\\delta=(0.12)^2=0.0144=1.44\\,\\%\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(1.44\\,\\%\\).</p></div>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.44,
+    "tolerans": 0.021599999999999998,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "%"
+  },
+  {
+    "id": "4.339",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En foton har våglängden 500 nm.</p><p>Bestäm fotonens energi i eV.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV, eller direkt \\(hc\\approx1240\\,\\mathrm{eV\\,nm}\\).</p><div class=\"facit-matte\">\\[E=\\frac{1240}{500}=2.480\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(2.48\\,\\mathrm{eV}\\).</p></div>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.479993508114856,
+    "tolerans": 0.03719990262172284,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.340",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En foton har våglängden 250 nm.</p><p>Bestäm fotonens energi i eV.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV, eller direkt \\(hc\\approx1240\\,\\mathrm{eV\\,nm}\\).</p><div class=\"facit-matte\">\\[E=\\frac{1240}{250}=4.960\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4.96\\,\\mathrm{eV}\\).</p></div>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4.959987016229712,
+    "tolerans": 0.07439980524344568,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.341",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En foton har våglängden 850 nm.</p><p>Bestäm fotonens energi i eV.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV, eller direkt \\(hc\\approx1240\\,\\mathrm{eV\\,nm}\\).</p><div class=\"facit-matte\">\\[E=\\frac{1240}{850}=1.459\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(1.46\\,\\mathrm{eV}\\).</p></div>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.4588197106557979,
+    "tolerans": 0.021882295659836966,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.342",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En laser med effekten 2.0 mW sänder ljus med våglängden 650 nm.</p><p>Hur många fotoner sänder lasern ut per sekund?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=3.056e-19\\,\\mathrm J\\]\\[N=\\frac{2.0\\cdot10^{-3}}{E_f}=6.544e+15\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(6.54e+15\\) fotoner/s.</p></div>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 6544256186889459.0,
+    "tolerans": 98163842803341.88,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "fotoner/s"
+  },
+  {
+    "id": "4.343",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>En laser med effekten 5.0 mW sänder ljus med våglängden 405 nm.</p><p>Hur många fotoner sänder lasern ut per sekund?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=4.905e-19\\,\\mathrm J\\]\\[N=\\frac{5.0\\cdot10^{-3}}{E_f}=1.019e+16\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(1.02e+16\\) fotoner/s.</p></div>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.0193937521885504e+16,
+    "tolerans": 152909062828282.56,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "fotoner/s"
+  },
+  {
+    "id": "5.332",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 50 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot50=3500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3500\\,\\mathrm{km/s}\\).</p></div>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3500,
+    "tolerans": 52.5,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "km/s"
+  },
+  {
+    "id": "5.333",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 120 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot120=8400\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8400\\,\\mathrm{km/s}\\).</p></div>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 8400,
+    "tolerans": 126.0,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "km/s"
+  },
+  {
+    "id": "5.334",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 450 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot450=31500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(31500\\,\\mathrm{km/s}\\).</p></div>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 31500,
+    "tolerans": 472.5,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "km/s"
+  },
+  {
+    "id": "5.335",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En galax har recessionshastigheten 8400 km/s. Använd \\(H_0=70\\,\\mathrm{km/s/Mpc}\\).</p><p>Uppskatta avståndet till galaxen med Hubbles lag.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{8400}{70}=120\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(120\\,\\mathrm{Mpc}\\).</p></div>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 120.0,
+    "tolerans": 1.7999999999999998,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Mpc"
+  },
+  {
+    "id": "5.336",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>En galax har recessionshastigheten 21000 km/s. Använd \\(H_0=70\\,\\mathrm{km/s/Mpc}\\).</p><p>Uppskatta avståndet till galaxen med Hubbles lag.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{21000}{70}=300\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(300\\,\\mathrm{Mpc}\\).</p></div>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 300.0,
+    "tolerans": 4.5,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Mpc"
+  },
+  {
+    "id": "4.344",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ljus går från ett medium med brytningsindex 1.0 till ett medium med brytningsindex 1.5. Infallsvinkeln är 30°.</p><p>Bestäm brytningsvinkeln.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 30^\\circ}{1.5}\\Rightarrow\\theta_2=19.47^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(19.5^\\circ\\).</p></div>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 19.47122063449069,
+    "tolerans": 0.29206830951736035,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.345",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ljus går från ett medium med brytningsindex 1.33 till ett medium med brytningsindex 1.0. Infallsvinkeln är 35°.</p><p>Bestäm brytningsvinkeln.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.33\\sin 35^\\circ}{1.0}\\Rightarrow\\theta_2=49.72^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(49.7^\\circ\\).</p></div>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 49.716686108898614,
+    "tolerans": 0.7457502916334792,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.346",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ljus går från ett medium med brytningsindex 1.0 till ett medium med brytningsindex 1.33. Infallsvinkeln är 50°.</p><p>Bestäm brytningsvinkeln.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 50^\\circ}{1.33}\\Rightarrow\\theta_2=35.17^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(35.2^\\circ\\).</p></div>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 35.16781910065805,
+    "tolerans": 0.5275172865098707,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.347",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ljus går från ett material med brytningsindex 1.50 till luft.</p><p>Bestäm gränsvinkeln för totalreflektion.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.50}\\right)=41.81^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(41.8^\\circ\\).</p></div>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 41.810314895778596,
+    "tolerans": 0.6271547234366789,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.348",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>Ljus går från ett material med brytningsindex 1.33 till luft.</p><p>Bestäm gränsvinkeln för totalreflektion.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.33}\\right)=48.75^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(48.8^\\circ\\).</p></div>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 48.753466631327235,
+    "tolerans": 0.7313019994699085,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°"
+  },
+  {
+    "id": "4.349",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 5800 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{5800}=500\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(500\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 499.65517241379314,
+    "tolerans": 7.494827586206897,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.350",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 3200 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{3200}=906\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(906\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 905.625,
+    "tolerans": 13.584375,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.351",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 10000 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{10000}=290\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(290\\,\\mathrm{nm}\\).</p></div>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 289.8,
+    "tolerans": 4.347,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm"
+  },
+  {
+    "id": "4.352",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En ideal svartkropp har temperaturen 450 K.</p><p>Hur stor strålningseffekt avges per kvadratmeter? Använd \\(P/A=\\sigma T^4\\) och \\(\\sigma=5,67\\cdot10^{-8}\\,\\mathrm{W/(m^2K^4)}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot450^4=2325.2\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(2325\\,\\mathrm{W/m^2}\\).</p></div>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2325.2079101911872,
+    "tolerans": 34.878118652867805,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "W/m²"
+  },
+  {
+    "id": "4.353",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "A",
+    "poang": "(0/2/1)",
+    "t": "<p>En ideal svartkropp har temperaturen 900 K.</p><p>Hur stor strålningseffekt avges per kvadratmeter? Använd \\(P/A=\\sigma T^4\\) och \\(\\sigma=5,67\\cdot10^{-8}\\,\\mathrm{W/(m^2K^4)}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot900^4=37203.3\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(37203\\,\\mathrm{W/m^2}\\).</p></div>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 37203.326563058996,
+    "tolerans": 558.0498984458849,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "W/m²"
+  }
 ];
