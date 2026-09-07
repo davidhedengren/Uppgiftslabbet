@@ -4259,6 +4259,71 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 @media print{
   .top,.arbetsyta,.kursval,.password-gate{display:none!important}
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   FIGURSTORLEK VID UTSKRIFT / PDF  ·  sista ordet i kaskaden
+
+   Figurbredden sätts på flera ställen tidigare i filen med !important och
+   olika standardvärden (120mm, 520px, 100%). Den regel som råkade stå sist
+   vann, och `.pdf-uppgiftstext .fig svg{max-width:100%}` tog dessutom bort
+   taket på 120mm helt. Resultatet blev figurer i nästan full spaltbredd.
+
+   Här samlas storleken på ett ställe. Vill du ha större eller mindre
+   figurer i PDF:en ändrar du bara måtten nedan.
+   ═══════════════════════════════════════════════════════════════════════ */
+@media print{
+  #utskrift{
+    --pdf-figbredd:88mm;    /* största bredd för en figur i en uppgift */
+    --pdf-fighojd:62mm;     /* största höjd – hindrar höga figurer från att äta upp sidan */
+    --pdf-figbredd-facit:66mm;
+    --pdf-fighojd-facit:46mm;
+  }
+
+  /* Grundstorlek: gäller alla figurer, oavsett vilka klasser de har. */
+  #utskrift .fig,
+  #utskrift .fig.smal,
+  #utskrift .fig.bred,
+  #utskrift .fig[style*="width"],
+  #utskrift .fig[data-bildskala]{
+    display:block!important;
+    width:auto!important;
+    max-width:var(--pdf-figbredd)!important;
+    margin:3pt 0 4pt!important;
+    break-inside:avoid;page-break-inside:avoid;
+  }
+
+  #utskrift .fig svg,
+  #utskrift .fig img,
+  #utskrift .fig[style*="width"] svg,
+  #utskrift .fig[style*="width"] img,
+  #utskrift .fig[data-bildskala] svg,
+  #utskrift .fig[data-bildskala] img,
+  #utskrift .pdf-uppgiftstext .fig svg,
+  #utskrift .pdf-uppgiftstext .fig img{
+    display:block!important;
+    width:auto!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:var(--pdf-fighojd)!important;
+  }
+
+  /* Figurer du själv har storleksändrat i redigeraren behåller sin storlek
+     så länge den ryms, men taket gäller alltid. Utan taket blev redigerarens
+     standardvärde 520px = 137mm i utskriften, alltså hela textspalten. */
+  #utskrift .fig[data-bildskala]{
+    width:min(var(--bildbredd,520px),var(--pdf-figbredd),100%)!important;
+    max-width:var(--pdf-figbredd)!important;
+  }
+  #utskrift .fig[data-bildskala] svg,
+  #utskrift .fig[data-bildskala] img{
+    width:100%!important;
+  }
+
+  /* Facit är tätare satt och får mindre figurer. */
+  #utskrift .fu .fig{ max-width:var(--pdf-figbredd-facit)!important; margin:2pt 0 3pt!important }
+  #utskrift .fu .fig svg,
+  #utskrift .fu .fig img{ max-height:var(--pdf-fighojd-facit)!important }
+}
 </style>
 </head>
 <body class="password-locked">
@@ -6522,7 +6587,7 @@ function trimmaUtskriftsFigurer(root){
     ].join(';');
   }
 
-  root.querySelectorAll('.fig[data-bildskala] svg,.fig[style*="width"] svg').forEach(svg=>{
+  root.querySelectorAll('.fig svg').forEach(svg=>{
     try{
       const b=svg.getBBox();
       if(!b||!isFinite(b.x)||!isFinite(b.y)||b.width<=0||b.height<=0)return;
@@ -6530,21 +6595,30 @@ function trimmaUtskriftsFigurer(root){
       /* getBBox mäter geometrin men inte linjebredd, pilspetsar eller textöverhäng; en extra marginal förhindrar beskärning. */
       const pad=Math.max(8,b.width*.04,b.height*.04);
 
-      /* Figurens egen viewBox behålls som minsta beskärningsområde för att bevara avsedda marginaler. */
-      const vb=(svg.getAttribute('viewBox')||'').split(/[\s,]+/).map(Number);
       let x=b.x-pad, y=b.y-pad, w=b.width+2*pad, h=b.height+2*pad;
+
+      /* Figurens egen viewBox är den yttre gränsen: trimningen får krympa
+         området men aldrig växa utanför ritytan. Tidigare togs unionen av de
+         två rutorna, vilket gjorde att figuren i praktiken aldrig trimmades –
+         den tomma ytan låg kvar och figuren tog mer plats än den behövde. */
+      const vb=(svg.getAttribute('viewBox')||'').split(/[\s,]+/).map(Number);
       if(vb.length===4&&vb.every(isFinite)&&vb[2]>0&&vb[3]>0){
-        const x2=Math.max(x+w,vb[0]+vb[2]), y2=Math.max(y+h,vb[1]+vb[3]);
-        x=Math.min(x,vb[0]); y=Math.min(y,vb[1]);
-        w=x2-x; h=y2-y;
+        const x1=Math.max(x,vb[0]), y1=Math.max(y,vb[1]);
+        const x2=Math.min(x+w,vb[0]+vb[2]), y2=Math.min(y+h,vb[1]+vb[3]);
+        if(x2-x1>0&&y2-y1>0){ x=x1; y=y1; w=x2-x1; h=y2-y1; }
       }
 
       svg.setAttribute('viewBox',`${x} ${y} ${w} ${h}`);
-      svg.removeAttribute('width');
-      svg.removeAttribute('height');
-      svg.setAttribute('preserveAspectRatio','xMinYMin meet');
-      svg.style.width='100%';
-      svg.style.height='auto';
+      svg.setAttribute('preserveAspectRatio','xMidYMid meet');
+
+      /* Egenstorleken sätts efter den trimmade rutan så att utskriftens
+         CSS (width:auto + max-width/max-height) kan skala figuren. Tidigare
+         togs width/height bort och svg:n tvingades till width:100%, vilket
+         gjorde att varje figur sträckte sig över hela textspalten. */
+      svg.setAttribute('width',Math.round(w));
+      svg.setAttribute('height',Math.round(h));
+      svg.style.removeProperty('width');
+      svg.style.removeProperty('height');
       svg.style.display='block';
     }catch(_){}
   });
@@ -6802,6 +6876,61 @@ let WORD_SANDLÅDA=null;
 const WORD_VERKTYGSCACHE=new Map();
 const WORD_MATTECACHE=new Map();
 
+/* ── Figurer i Word-exporten ────────────────────────────────────────────
+   Måtten är pixlar vid 96 dpi, alltså 96 px ≈ 2,54 cm. Textytan på ett A4
+   med 2,5 cm marginaler är ungefär 605 px bred.
+
+   WORD_FIG_MIN  Golv för figurbredden. Små figurer förstoras upp hit, så att
+                 texten inne i figuren blir läsbar. Det var den saknade delen
+                 tidigare: figuren lades in i exakt den storlek den råkade
+                 renderas i, och etiketterna blev därför pyttesmå.
+   WORD_FIG_MAX  Tak, så att en figur inte tar hela sidan.
+   WORD_FIG_DPI  Hur många gånger större rastret ritas än visningsstorleken.
+                 3× gör figuren skarp även när du beskär eller förstorar den.
+   WORD_BEHALL_SVG
+                 false = figurer bäddas in som PNG. Word behandlar dem då som
+                 vanliga foton, vilket gör Beskär tillgängligt. true bäddar in
+                 vektor-SVG i stället: skarpare, men Word gråmarkerar Beskär
+                 för SVG-objekt. */
+const WORD_FIG_MIN=330;
+const WORD_FIG_MAX=470;
+const WORD_FIG_DPI=3;
+const WORD_BEHALL_SVG=false;
+
+/* Egenskaper som måste följa med när en SVG bryts ut ur sidan. */
+const WORD_SVG_EGENSKAPER=[
+  'fill','fill-opacity','fill-rule','stroke','stroke-opacity','stroke-width',
+  'stroke-dasharray','stroke-dashoffset','stroke-linecap','stroke-linejoin',
+  'stroke-miterlimit','opacity','font-family','font-size','font-style',
+  'font-weight','text-anchor','dominant-baseline','letter-spacing','paint-order',
+  'marker-start','marker-mid','marker-end'
+];
+
+/* En fristående SVG tar inte med sidans stilmall. Klasserna .fig-axel,
+   .fig-kurva, .fig-etikett med flera ligger i <style> på sidan, så utan det
+   här steget tappar den utbrutna figuren linjebredder, färger och
+   teckenstorlekar. Här läses de färdigberäknade värdena av från den levande
+   figuren och skrivs in direkt på kopian. */
+function wordInlinaSvgStilar(orig,klon){
+  const vy=orig.ownerDocument?.defaultView||window;
+  const a=[orig,...orig.querySelectorAll('*')];
+  const b=[klon,...klon.querySelectorAll('*')];
+  const antal=Math.min(a.length,b.length);
+  for(let i=0;i<antal;i++){
+    let cs=null;
+    try{ cs=vy.getComputedStyle(a[i]); }catch(_){ continue; }
+    if(!cs) continue;
+    let stil='';
+    for(const p of WORD_SVG_EGENSKAPER){
+      const v=cs.getPropertyValue(p);
+      /* fill:none och stroke:none är betydelsebärande och får inte hoppas över. */
+      if(!v||v==='auto'||v==='normal') continue;
+      stil+=p+':'+v+';';
+    }
+    if(stil) b[i].setAttribute('style',stil+(b[i].getAttribute('style')||''));
+  }
+}
+
 /* Väntar på nästa bildruta men ger upp efter en kort stund. requestAnimationFrame
    pausas helt i bakgrundsflikar; utan tidsgränsen låser sig exporten om användaren
    byter flik medan Word-filen skapas. */
@@ -6984,21 +7113,48 @@ async function wordRenderElementTillPng(el,{maxWidth=640,scale=1.45,timeout=2500
 function wordSvgDataUri(svg){
   const clone=svg.cloneNode(true);
   if(!clone.getAttribute('xmlns')) clone.setAttribute('xmlns','http://www.w3.org/2000/svg');
+  wordInlinaSvgStilar(svg,clone);
   const text=new XMLSerializer().serializeToString(clone);
   const bytes=new TextEncoder().encode(text);
   return 'data:image/svg+xml;base64,'+wordBytesTillBase64(bytes);
 }
 
-async function wordSvgTillPngData(svg,maxWidth=640){
+/* Räknar ut vilken storlek figuren ska få i dokumentet. Små figurer förstoras
+   upp till WORD_FIG_MIN och stora begränsas till WORD_FIG_MAX, med
+   proportionerna bevarade. Höjden får inte heller skena. */
+function wordFigurMatt(w,h,{min=WORD_FIG_MIN,max=WORD_FIG_MAX}={}){
+  const proportion=(h>0&&w>0)?h/w:0.66;
+  let bredd=Math.min(max,Math.max(min,w));
+  let hojd=bredd*proportion;
+  const maxHojd=max*1.1;
+  if(hojd>maxHojd){ hojd=maxHojd; bredd=hojd/proportion; }
+  return {width:Math.max(1,Math.round(bredd)),height:Math.max(1,Math.round(hojd))};
+}
+
+async function wordSvgTillPngData(svg,val={}){
+  /* Bakåtkompatibelt: gamla anrop skickade in en maxbredd som tal. */
+  const {min=WORD_FIG_MIN,max=WORD_FIG_MAX,dpi=WORD_FIG_DPI}=
+    (typeof val==='number'?{max:val}:val)||{};
+
   const rect=svg.getBoundingClientRect();
   const vb=svg.viewBox?.baseVal;
-  let w=Math.max(40,Math.round(rect.width||vb?.width||500));
-  let h=Math.max(30,Math.round(rect.height||vb?.height||300));
-  const pxScale=Math.min(2.2,1300/w);
-  const cw=Math.max(1,Math.round(w*pxScale)), ch=Math.max(1,Math.round(h*pxScale));
+  const w=Math.max(20,Math.round(rect.width||vb?.width||Number(svg.getAttribute('width'))||500));
+  const h=Math.max(15,Math.round(rect.height||vb?.height||Number(svg.getAttribute('height'))||300));
+
+  const {width:bredd,height:hojd}=wordFigurMatt(w,h,{min,max});
+
+  /* Rastret ritas dpi gånger större än visningsstorleken, så figuren förblir
+     skarp även om du förstorar eller beskär den i Word. */
+  const cw=Math.max(1,Math.round(bredd*dpi)), ch=Math.max(1,Math.round(hojd*dpi));
+
   const clone=svg.cloneNode(true);
   if(!clone.getAttribute('xmlns')) clone.setAttribute('xmlns','http://www.w3.org/2000/svg');
-  clone.setAttribute('width',w); clone.setAttribute('height',h);
+  if(!clone.getAttribute('xmlns:xlink')) clone.setAttribute('xmlns:xlink','http://www.w3.org/1999/xlink');
+  if(!clone.getAttribute('viewBox')) clone.setAttribute('viewBox',`0 0 ${w} ${h}`);
+  wordInlinaSvgStilar(svg,clone);
+  clone.setAttribute('width',cw);
+  clone.setAttribute('height',ch);
+  clone.setAttribute('preserveAspectRatio','xMidYMid meet');
   const blob=new Blob([new XMLSerializer().serializeToString(clone)],{type:'image/svg+xml;charset=utf-8'});
   const url=URL.createObjectURL(blob);
   try{
@@ -7009,11 +7165,10 @@ async function wordSvgTillPngData(svg,maxWidth=640){
     const ctx=c.getContext('2d');
     ctx.fillStyle='#fff';ctx.fillRect(0,0,cw,ch);
     ctx.drawImage(im,0,0,cw,ch);
-    const ratio=Math.min(1,maxWidth/w);
     return {
       data:wordDataUrlBytes(c.toDataURL('image/png')),
-      width:Math.max(1,Math.round(w*ratio)),
-      height:Math.max(1,Math.round(h*ratio))
+      width:bredd,
+      height:hojd
     };
   }finally{ URL.revokeObjectURL(url); }
 }
@@ -7074,11 +7229,11 @@ async function wordRastreraSpecial(root){
      element, så figuren blir ett eget objekt i Word och kan storleksändras. */
   for(const svg of [...root.querySelectorAll('svg')]){
     try{
-      const svgData=wordSvgDataUri(svg);
-      const fallback=await wordSvgTillPngData(svg,620);
+      const svgData=WORD_BEHALL_SVG?wordSvgDataUri(svg):null;
+      const fallback=await wordSvgTillPngData(svg);
       const img=root.ownerDocument.createElement('img');
       img.src='data:image/png;base64,'+wordBytesTillBase64(fallback.data);
-      img.dataset.wordSvg=svgData;
+      if(svgData) img.dataset.wordSvg=svgData;
       img.dataset.wordWidth=fallback.width;
       img.dataset.wordHeight=fallback.height;
       img.alt=svg.getAttribute('aria-label')||svg.getAttribute('role')||'Figur';
@@ -7086,7 +7241,7 @@ async function wordRastreraSpecial(root){
     }catch(e){
       console.warn('Word-export: SVG föll tillbaka till PNG.',e);
       try{
-        const fallback=await wordSvgTillPngData(svg,620);
+        const fallback=await wordSvgTillPngData(svg);
         const img=root.ownerDocument.createElement('img');
         img.src='data:image/png;base64,'+wordBytesTillBase64(fallback.data);
         img.dataset.wordWidth=fallback.width;
@@ -7108,9 +7263,9 @@ async function wordRastreraSpecial(root){
         const r=img.getBoundingClientRect();
         const naturalW=img.naturalWidth||r.width||500;
         const naturalH=img.naturalHeight||r.height||300;
-        const ratio=Math.min(1,620/naturalW);
-        img.dataset.wordWidth=Math.max(1,Math.round(naturalW*ratio));
-        img.dataset.wordHeight=Math.max(1,Math.round(naturalH*ratio));
+        const matt=wordFigurMatt(naturalW,naturalH);
+        img.dataset.wordWidth=matt.width;
+        img.dataset.wordHeight=matt.height;
       }
     }catch(e){
       console.warn('Word-export: bild kunde inte hämtas.',e);
@@ -7144,9 +7299,10 @@ function wordRunsFranNod(node,docx,stil={}){
       const height=Math.max(8,Math.round(h0*(width/w0)));
       const pngData=wordDataUrlBytes(node.src);
 
-      if(node.dataset.wordSvg){
+      if(WORD_BEHALL_SVG&&node.dataset.wordSvg){
         /* docx.js stöder SVG direkt, men kräver en rasterfallback för
-           Word-versioner som saknar SVG-stöd. */
+           Word-versioner som saknar SVG-stöd. Observera att Word gråmarkerar
+           Beskär för SVG-objekt – därför är WORD_BEHALL_SVG av som standard. */
         out.push(new ImageRun({
           data:node.dataset.wordSvg,
           type:'svg',
