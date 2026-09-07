@@ -3104,13 +3104,19 @@ button,input,select,textarea{font-family:var(--ui)!important}
   background:color-mix(in oklab,var(--spar) 13%,#fff)!important;
   box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--spar) 16%,transparent)!important;
 }
-/* a-spårets knapp behåller den dubbla varma identiteten */
-.variantfilter button[data-spar$="a"],
-.variantfilter button[data-id$="a"]{
-  background:linear-gradient(135deg,
-    color-mix(in oklab,#E3B52B 9%,#fff),
-    color-mix(in oklab,#BF3A2E 7%,#fff))!important;
-  border-color:color-mix(in oklab,#BF3A2E 24%,#DDE0E5)!important;
+/* a-spåret ska vara neutralt när det inte är valt. Den varma identiteten
+   visas först vid aria-pressed, precis som för b- och c-spåren – annars
+   ser knappen ivald ut trots att den är av. */
+.variantfilter button[data-spar$="a"]:not([aria-pressed="true"]),
+.variantfilter button[data-id$="a"]:not([aria-pressed="true"]){
+  background:#fff!important;
+  border-color:var(--x-line)!important;
+  color:var(--x-ink-3)!important;
+}
+.variantfilter button[data-spar$="a"]:not([aria-pressed="true"]):hover,
+.variantfilter button[data-id$="a"]:not([aria-pressed="true"]):hover{
+  background:#fff!important;
+  border-color:color-mix(in oklab,#BF3A2E 30%,var(--x-line))!important;
   color:#A83429!important;
 }
 .variantfilter button[data-spar$="a"][aria-pressed="true"],
