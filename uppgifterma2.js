@@ -1,6 +1,7 @@
 /* uppgifterma2.js — Matematik nivå 2a, 2b och 2c.
-   Kunskapsgymmet QA 2026-09-07: slutlig specialfallsgranskning av självrättning.
-   Uppgiftstext, facit, nivå, poäng, kursspår, förmågor och pedagogiska familjer är bevarade.
+   QA 2026-09-07: kompletterad förmågemetadata + 60 nya E/C-uppgifter om logaritmer.
+   Befintliga förmågetaggar har bevarats. Den tidigare saknade taggen problemlösning har lagts till
+   där metodval/icke-rutinmässig problemlösning är central.
 */
 
 window.BANKMA2 = [
@@ -50,7 +51,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -105,7 +107,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -650,7 +653,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -909,7 +913,8 @@ window.BANKMA2 = [
     ],
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -1070,7 +1075,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -1105,7 +1111,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -1136,7 +1143,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -1769,7 +1777,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -1872,7 +1881,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -2011,7 +2021,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -2250,7 +2261,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -2359,7 +2371,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -2621,7 +2634,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -2823,7 +2837,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -3314,7 +3329,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -3520,7 +3536,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -3687,7 +3704,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -3792,7 +3810,8 @@ window.BANKMA2 = [
     ],
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -5392,7 +5411,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -5548,7 +5568,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -5637,7 +5658,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -5821,7 +5843,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -6301,7 +6324,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -6341,7 +6365,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -6447,7 +6472,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -6617,7 +6643,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -6800,7 +6827,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -7124,7 +7152,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -7167,7 +7196,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -7203,7 +7233,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -7928,7 +7959,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt",
     "manuellKomplettering": true
@@ -8103,7 +8135,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -8188,7 +8221,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "intervall"
   },
@@ -8312,7 +8346,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -8336,7 +8371,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -8362,7 +8398,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -8388,7 +8425,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -8444,7 +8482,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -8479,7 +8518,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -9079,7 +9119,8 @@ window.BANKMA2 = [
     "tolerans": 0.01,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -9222,7 +9263,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -9255,7 +9297,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -9333,7 +9376,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -9535,7 +9579,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -9721,7 +9766,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -10113,7 +10159,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -10369,7 +10416,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -10494,7 +10542,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -10618,7 +10667,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -10675,7 +10725,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -10867,7 +10918,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -12025,7 +12077,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -12050,7 +12103,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -12076,7 +12130,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -12102,7 +12157,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -12277,7 +12333,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -12335,7 +12392,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -12387,7 +12445,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -12953,7 +13012,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -13002,7 +13062,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -13073,7 +13134,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -13164,7 +13226,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -13883,7 +13946,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -13954,7 +14018,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -14051,7 +14116,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "begrepp"
+      "begrepp",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -14746,7 +14812,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -14978,7 +15045,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -15032,7 +15100,8 @@ window.BANKMA2 = [
     ],
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -15143,7 +15212,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -15356,7 +15426,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -15574,7 +15645,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -15599,7 +15671,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -15625,7 +15698,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -15650,7 +15724,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -15675,7 +15750,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -15706,7 +15782,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -15748,7 +15825,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -15788,7 +15866,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -15828,7 +15907,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -15862,7 +15942,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -17011,7 +17092,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -17038,7 +17120,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -17066,7 +17149,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -17092,7 +17176,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -17119,7 +17204,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -17154,7 +17240,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -17190,7 +17277,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -17217,7 +17305,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -17249,7 +17338,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -17290,7 +17380,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -18229,7 +18320,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -20042,7 +20134,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -20090,7 +20183,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -20348,7 +20442,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "intervall"
   },
@@ -20376,7 +20471,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "intervall"
   },
@@ -20850,7 +20946,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -21747,7 +21844,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -21787,7 +21885,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -21827,7 +21926,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -21959,7 +22059,8 @@ window.BANKMA2 = [
     "tolerans": 0.01,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -22009,7 +22110,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt",
     "manuellKomplettering": true
@@ -22187,7 +22289,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -22695,7 +22798,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -22842,7 +22946,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -22866,7 +22971,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -23112,7 +23218,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -23161,7 +23268,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "begrepp"
+      "begrepp",
+      "problemlösning"
     ]
   },
   {
@@ -23529,7 +23637,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -23686,7 +23795,8 @@ window.BANKMA2 = [
     ],
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -23889,7 +23999,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -24011,7 +24122,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -24142,7 +24254,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -24216,7 +24329,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "begrepp"
+      "begrepp",
+      "problemlösning"
     ]
   },
   {
@@ -24414,7 +24528,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -24573,7 +24688,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -24621,7 +24737,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -24769,7 +24886,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -25338,7 +25456,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -25444,7 +25563,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -25705,7 +25825,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -25922,7 +26043,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -27346,7 +27468,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": false,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ]
   },
   {
@@ -27695,7 +27818,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -27733,7 +27857,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -27782,7 +27907,8 @@ window.BANKMA2 = [
     "tolerans": null,
     "självrättning": true,
     "formaga": [
-      "procedur"
+      "procedur",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -33162,7 +33288,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33210,7 +33337,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33258,7 +33386,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33322,7 +33451,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33369,7 +33499,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33417,7 +33548,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33466,7 +33598,8 @@ window.BANKMA2 = [
     "formaga": [
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33515,7 +33648,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33564,7 +33698,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33626,7 +33761,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33674,7 +33810,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33723,7 +33860,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "uttryck",
@@ -33765,7 +33903,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33814,7 +33953,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33839,7 +33979,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33863,7 +34004,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -33888,7 +34030,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33913,7 +34056,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -33960,7 +34104,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34026,7 +34171,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34089,7 +34235,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34156,7 +34303,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34219,7 +34367,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34291,7 +34440,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -34351,7 +34501,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34413,7 +34564,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34461,7 +34613,8 @@ window.BANKMA2 = [
     "formaga": [
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34529,7 +34682,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -34580,7 +34734,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "uttryck",
@@ -34617,7 +34772,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34679,7 +34835,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34704,7 +34861,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34727,7 +34885,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34769,7 +34928,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       [
@@ -34806,7 +34966,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34873,7 +35034,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34897,7 +35059,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -34922,7 +35085,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -34965,7 +35129,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -35012,7 +35177,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -35070,7 +35236,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -35095,7 +35262,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35181,7 +35349,8 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -35231,7 +35400,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35255,7 +35425,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35318,7 +35489,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "procent"
   },
@@ -35367,7 +35539,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35390,7 +35563,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -35415,7 +35589,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35439,7 +35614,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -35494,7 +35670,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -35566,7 +35743,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35591,7 +35769,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35645,7 +35824,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -35716,7 +35896,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35778,7 +35959,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -35803,7 +35985,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35851,7 +36034,8 @@ window.BANKMA2 = [
     "formaga": [
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35915,7 +36099,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -35961,7 +36146,9 @@ window.BANKMA2 = [
     "självrättning": false,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "begrepp",
+      "problemlösning"
     ]
   },
   {
@@ -35986,7 +36173,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36033,7 +36221,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -36057,7 +36246,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36086,7 +36276,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -36124,7 +36315,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -36201,7 +36393,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36226,7 +36419,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36276,7 +36470,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36325,7 +36520,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36350,7 +36546,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36398,7 +36595,8 @@ window.BANKMA2 = [
     "formaga": [
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36421,7 +36619,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": "numeriskt"
   },
@@ -36446,7 +36645,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -36509,7 +36709,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36533,7 +36734,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36600,7 +36802,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -36649,7 +36852,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36699,7 +36903,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36724,7 +36929,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36773,7 +36979,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36821,7 +37028,8 @@ window.BANKMA2 = [
     "formaga": [
       "procedur",
       "begrepp",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ]
   },
   {
@@ -36870,7 +37078,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36895,7 +37104,8 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
-      "resonemang"
+      "resonemang",
+      "problemlösning"
     ]
   },
   {
@@ -36924,7 +37134,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -37001,7 +37212,8 @@ window.BANKMA2 = [
     "självrättning": true,
     "formaga": [
       "procedur",
-      "modellering"
+      "modellering",
+      "problemlösning"
     ],
     "svarFormat": [
       "numeriskt",
@@ -37035,7 +37247,1478 @@ window.BANKMA2 = [
       "procedur",
       "begrepp",
       "modellering",
+      "resonemang",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.530",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(\\lg 1\\).</p>",
+    "s": "<p>Eftersom \\(1=10^0\\) är <strong>\\(\\lg1=0\\)</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.531",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(\\lg 0,00001\\).</p>",
+    "s": "<p>\\(0,00001=10^{-5}\\). Alltså är <strong>\\(-5\\)</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.532",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(\\lg(10^{-7})\\).</p>",
+    "s": "<p>Logaritmen anger exponenten på 10. <strong>Svaret är \\(-7\\)</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -7,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.533",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(10^{\\lg 46}\\).</p>",
+    "s": "<p>Tiopotens och tiologaritm är inversa operationer. <strong>Svaret är 46.</strong></p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 46,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.534",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(x\\) om \\(\\lg x=4\\).</p>",
+    "s": "<p>\\(\\lg x=4\\iff x=10^4\\). <strong>Svaret är 10000.</strong></p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10000,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.535",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(x\\) om \\(\\lg x=-2\\).</p>",
+    "s": "<p>\\(x=10^{-2}=0,01\\). <strong>Svaret är 0,01.</strong></p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.01,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.536",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Vilket tal är \\(10^{\\lg 0,37}\\)?</p>",
+    "s": "<p>Operationerna tar ut varandra. <strong>Svaret är 0,37.</strong></p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.37,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.537",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Bestäm \\(\\lg(100\\cdot1000)\\).</p>",
+    "s": "<p>\\(100\\cdot1000=10^5\\). Därför är <strong>svaret 5</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.538",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>Bestäm.<br>a) \\(\\lg 10^3\\)<br>b) \\(\\lg 10^{-4}\\)</p>",
+    "s": "<p>a) <strong>3</strong><br>b) <strong>-4</strong></p>",
+    "familj": "Förstå sambandet mellan exponentialform och logaritm",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      3,
+      -4
+    ],
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarsstruktur": "ordnad"
+  },
+  {
+    "id": "2.539",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>Bestäm.<br>a) \\(10^{\\lg 12}\\)<br>b) \\(10^{\\lg 0,8}\\)</p>",
+    "s": "<p>a) <strong>12</strong><br>b) <strong>0,8</strong></p>",
+    "familj": "Förstå sambandet mellan exponentialform och logaritm",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      12,
+      0.8
+    ],
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "svarsstruktur": "ordnad"
+  },
+  {
+    "id": "2.540",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv \\(10^6=1\\,000\\,000\\) som ett logaritmsamband.</p>",
+    "s": "<p>Exponenten 6 är tiologaritmen av 1 000 000: <strong>\\(\\lg(1\\,000\\,000)=6\\)</strong>.</p>",
+    "familj": "Förstå sambandet mellan exponentialform och logaritm",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(1000000)=6",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.541",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv sambandet \\(\\lg 0,001=-3\\) på exponentialform.</p>",
+    "s": "<p>Det motsvarande sambandet är <strong>\\(10^{-3}=0,001\\)</strong>.</p>",
+    "familj": "Förstå sambandet mellan exponentialform och logaritm",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "10^(-3)=0.001",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.542",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/1/0",
+    "t": "<p>Bestäm \\(\\lg \\sqrt{1000}\\) exakt.</p>",
+    "s": "<p>\\(\\sqrt{1000}=(10^3)^{1/2}=10^{3/2}\\). Därför är <strong>\\(3/2\\)</strong>.</p>",
+    "familj": "Förstå sambandet mellan exponentialform och logaritm",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "3/2",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.543",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/1/0",
+    "t": "<p>Bestäm \\(x\\) om \\(10^{2x}=1000\\).</p>",
+    "s": "<p>\\(1000=10^3\\), så \\(2x=3\\). <strong>\\(x=1,5\\)</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.544",
+    "kap": 2,
+    "omr": "logaritmbegreppet",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/1/0",
+    "t": "<p>Bestäm \\(x\\) om \\(\\lg(x^2)=6\\) och \\(x&gt;0\\).</p>",
+    "s": "<p>\\(x^2=10^6\\). Eftersom \\(x&gt;0\\) fås <strong>\\(x=1000\\)</strong>.</p>",
+    "familj": "Bestämma logaritmvärden",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1000,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.545",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(\\lg 4+\\lg25\\).</p>",
+    "s": "<p>\\(\\lg(4\\cdot25)=\\lg100=\\)<strong>2</strong>.</p>",
+    "familj": "Förenkla uttryck med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.546",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(\\lg 80-\\lg8\\).</p>",
+    "s": "<p>\\(\\lg(80/8)=\\lg10=\\)<strong>1</strong>.</p>",
+    "familj": "Förenkla uttryck med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.547",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(2\\lg10+\\lg0,01\\).</p>",
+    "s": "<p>\\(2\\cdot1+(-2)=\\)<strong>0</strong>.</p>",
+    "familj": "Förenkla uttryck med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.548",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv som en enda logaritm: \\(\\lg3+\\lg7\\).</p>",
+    "s": "<p>Summalagen ger <strong>\\(\\lg21\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(21)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.549",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv som en enda logaritm: \\(\\lg42-\\lg6\\).</p>",
+    "s": "<p>Kvotlagen ger <strong>\\(\\lg7\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(7)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.550",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Skriv som en enda logaritm: \\(3\\lg x\\), där \\(x&gt;0\\).</p>",
+    "s": "<p>Potenslagen ger <strong>\\(\\lg(x^3)\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(x^3)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.551",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(\\lg(6x)-\\lg(2x)\\), där \\(x&gt;0\\).</p>",
+    "s": "<p>\\(\\lg((6x)/(2x))=\\)<strong>\\(\\lg3\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(3)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.552",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(\\lg(5x)+\\lg(2/x)\\), där \\(x&gt;0\\).</p>",
+    "s": "<p>Produkten blir 10, så uttrycket är \\(\\lg10=\\)<strong>1</strong>.</p>",
+    "familj": "Förenkla uttryck med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.553",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(2\\lg5+\\lg4\\).</p>",
+    "s": "<p>\\(2\\lg5=\\lg25\\), så summan är \\(\\lg100=\\)<strong>2</strong>.</p>",
+    "familj": "Förenkla uttryck med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.554",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Förenkla \\(\\lg72-\\lg8\\).</p>",
+    "s": "<p>Kvoten är 9. <strong>\\(\\lg9\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(9)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur"
+    ]
+  },
+  {
+    "id": "2.555",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Förenkla till en enda logaritm. Anta \\(x&gt;0\\).<br>\\(2\\lg(3x)-\\lg9\\)</p>",
+    "s": "<p>\\(2\\lg(3x)=\\lg(9x^2)\\). Efter subtraktionen fås <strong>\\(\\lg(x^2)\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(x^2)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.556",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Förenkla till en enda logaritm. Anta \\(a&gt;0,b&gt;0\\).<br>\\(2\\lg a+\\lg b-\\lg5\\)</p>",
+    "s": "<p>Uttrycket blir <strong>\\(\\lg(a^2b/5)\\)</strong>.</p>",
+    "familj": "Sammanfoga logaritmer",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "uttryck",
+    "rättSvar": "lg(a^2*b/5)",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.557",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg x+\\lg4=2\\).</p>",
+    "s": "<p>\\(\\lg(4x)=2\\Rightarrow4x=100\\). <strong>\\(x=25\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 25,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.558",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg(2x)-\\lg5=1\\).</p>",
+    "s": "<p>\\(\\lg(2x/5)=1\\Rightarrow2x/5=10\\). <strong>\\(x=25\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 25,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.559",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(2\\lg x=4\\), där \\(x&gt;0\\).</p>",
+    "s": "<p>\\(\\lg(x^2)=4\\Rightarrow x^2=10000\\). Positivt \\(x\\) ger <strong>100</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 100,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.560",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg x-\\lg(x-9)=1\\).</p>",
+    "s": "<p>Definitionsvillkor: \\(x&gt;9\\). Då \\(x/(x-9)=10\\), vilket ger <strong>\\(x=10\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
       "resonemang"
+    ]
+  },
+  {
+    "id": "2.561",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg x+\\lg(x-9)=1\\).</p>",
+    "s": "<p>\\(x(x-9)=10\\Rightarrow x^2-9x-10=0\\). Rötterna är 10 och -1, men definitionsvillkoret ger <strong>\\(x=10\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.562",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg(x+3)=2\\).</p>",
+    "s": "<p>\\(x+3=100\\). <strong>\\(x=97\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 97,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.563",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg(5x)+\\lg2=3\\).</p>",
+    "s": "<p>\\(\\lg(10x)=3\\Rightarrow10x=1000\\). <strong>\\(x=100\\)</strong>.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 100,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ]
+  },
+  {
+    "id": "2.564",
+    "kap": 2,
+    "omr": "logaritmlagar",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Lös ekvationen \\(\\lg(x-2)+\\lg(x+2)=\\lg21\\).</p>",
+    "s": "<p>Definitionsvillkoret är \\(x&gt;2\\). Då \\(x^2-4=21\\), alltså \\(x^2=25\\). Endast <strong>\\(x=5\\)</strong> är tillåtet.</p>",
+    "familj": "Lösa logaritmekvationer med logaritmlagar",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.565",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En bakteriekultur beskrivs av \\(N(t)=500\\cdot1,20^t\\). Efter hur många timmar är antalet 1000? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(500\\cdot1,20^t=1000\\Rightarrow t=\\lg2/\\lg1,20\\approx3,8\\).</p><p><strong>Svar:</strong> 3,8 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.8,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.566",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Värdet på en maskin beskrivs av \\(V(t)=240000\\cdot0,85^t\\). Efter hur många år är värdet 120000 kr? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(0,85^t=0,5\\Rightarrow t=\\lg0,5/\\lg0,85\\approx4,3\\).</p><p><strong>Svar:</strong> 4,3 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4.3,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.567",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Ett sparkapital beskrivs av \\(K(t)=20000\\cdot1,04^t\\). När når kapitalet 30000 kr? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(1,04^t=1,5\\Rightarrow t=\\lg1,5/\\lg1,04\\approx10,3\\).</p><p><strong>Svar:</strong> 10,3 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10.3,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.568",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En mängd minskar enligt \\(M(t)=80\\cdot0,90^t\\). När är mängden 40? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(0,90^t=0,5\\Rightarrow t=\\lg0,5/\\lg0,90\\approx6,6\\).</p><p><strong>Svar:</strong> 6,6 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 6.6,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.569",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En population ökar enligt \\(P(t)=1200\\cdot1,06^t\\). När passerar modellen 2000? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(1,06^t=2000/1200\\Rightarrow t\\approx8,8\\).</p><p><strong>Svar:</strong> 8,8 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.8,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.570",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Ett läkemedel minskar enligt \\(M(t)=75\\cdot0,82^t\\), där \\(t\\) är timmar. Efter hur lång tid är mängden mindre än 20 mg? Ange den första hela timmen.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Gränsen fås ur \\(75\\cdot0,82^t=20\\), vilket ger \\(t\\approx6,66\\). Första hela timmen därefter är 7.</p><p><strong>Svar:</strong> 7.</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 7,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.571",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En mobiltelefon kostar 9000 kr och värdet minskar med 18 % per år. Efter hur många hela år är värdet första gången under 4000 kr?</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Modellen är \\(9000\\cdot0,82^t\\). Gränsen nås vid \\(t\\approx4,09\\), så första hela året är 5.</p><p><strong>Svar:</strong> 5.</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.572",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En bakteriekultur växer med 14 % per timme. Den börjar med 350 bakterier. Efter hur många hela timmar finns det första gången minst 1000 bakterier?</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(350\\cdot1,14^t=1000\\) ger \\(t\\approx7,99\\). Gränstiden är cirka 8,01 timmar, så första hela timmen är 9.</p><p><strong>Svar:</strong> 9.</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 9,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.573",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Ett kapital på 15000 kr växer med 3,5 % per år. Efter hur många år har det ökat med 50 %? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(1,035^t=1,5\\Rightarrow t\\approx11,8\\).</p><p><strong>Svar:</strong> 11,8 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 11.8,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.574",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Temperaturskillnaden mot omgivningen beskrivs av \\(D(t)=60\\cdot0,75^t\\), där \\(t\\) är timmar. När är temperaturskillnaden 10 grader? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(0,75^t=1/6\\Rightarrow t\\approx6,2\\).</p><p><strong>Svar:</strong> 6,2 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 6.2,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.575",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Två abonnemang får antal användare enligt \\(A(t)=800\\cdot1,05^t\\) och \\(B(t)=500\\cdot1,10^t\\). När är modellerna lika stora? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Sätt modellerna lika: \\((1,10/1,05)^t=800/500\\). Då \\(t\\approx10,1\\).</p><p><strong>Svar:</strong> 10,1 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10.1,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.576",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En population är 2400 år 0 och 3600 år 5. Anta exponentiell tillväxt. Bestäm den årliga förändringsfaktorn. Svara med tre decimaler.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(2400a^5=3600\\Rightarrow a=(1,5)^{1/5}\\approx1,084\\).</p><p><strong>Svar:</strong> 1,084 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.084,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.577",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En population är 2400 år 0 och 3600 år 5. Anta exponentiell tillväxt. Efter hur många år från start når modellen 5000? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Först \\(a=(1,5)^{1/5}\\). Lös sedan \\(2400a^t=5000\\), vilket ger \\(t\\approx9,1\\).</p><p><strong>Svar:</strong> 9,1 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 9.1,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.578",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En vara sjunker från 18000 kr till 12000 kr på 3 år. Anta samma procentuella minskning varje år. Bestäm den årliga förändringsfaktorn. Svara med tre decimaler.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(18000a^3=12000\\Rightarrow a=(2/3)^{1/3}\\approx0,874\\).</p><p><strong>Svar:</strong> 0,874 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.874,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.579",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En vara sjunker från 18000 kr till 12000 kr på 3 år och fortsätter med samma procentuella minskning. När går värdet under 7000 kr? Ange första hela året från start.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Med \\(a=(2/3)^{1/3}\\) fås gränstiden \\(t\\approx6,98\\). Första hela året är 7.</p><p><strong>Svar:</strong> 7.</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 7,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.580",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En sjö har 9000 fiskar. Efter 4 år är antalet 10800. Anta exponentiell tillväxt. Hur stor är den årliga procentuella ökningen? Svara med en decimal procent.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(a^4=1,2\\Rightarrow a\\approx1,0466\\), alltså cirka 4,7 % per år.</p><p><strong>Svar:</strong> 4,7 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4.7,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.581",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En sjö har 9000 fiskar och ökar exponentiellt. Efter 4 år är antalet 10800. När når modellen 15000 fiskar? Svara med en decimal år.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Med \\(a=1,2^{1/4}\\) löses \\(9000a^t=15000\\), vilket ger \\(t\\approx11,2\\).</p><p><strong>Svar:</strong> 11,2 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 11.2,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.582",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En medicinsk markör halveras på 6 timmar. Startvärdet är 160. Efter hur många timmar är värdet 20? </p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Tre halveringar krävs: 160→80→40→20. Med logaritmer: \\(160\\cdot0,5^{t/6}=20\\Rightarrow t=18\\).</p><p><strong>Svar:</strong> 18.</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 18,
+    "tolerans": 0,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.583",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En medicinsk markör halveras på 6 timmar. Startvärdet är 160. När går värdet under 30? Svara med en decimal timme.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(160\\cdot0,5^{t/6}=30\\Rightarrow t=6\\lg(30/160)/\\lg0,5\\approx14,5\\).</p><p><strong>Svar:</strong> 14,5 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 14.5,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.584",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En investering växer från 50000 kr till 62000 kr på 4 år. Anta exponentiell tillväxt. Vilken årlig procentuell ökning motsvarar det? Svara med en decimal procent.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(a^4=62000/50000=1,24\\Rightarrow a\\approx1,0552\\), alltså 5,5 %.</p><p><strong>Svar:</strong> 5,5 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5.5,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.585",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En investering växer från 50000 kr till 62000 kr på 4 år med samma årliga procentuella ökning. När når den 80000 kr? Svara med en decimal år från start.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Med \\(a=(1,24)^{1/4}\\) löses \\(50000a^t=80000\\), vilket ger \\(t\\approx8,7\\).</p><p><strong>Svar:</strong> 8,7 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.7,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.586",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Modellen \\(H(t)=25+70\\cdot0,80^t\\) beskriver en temperatur. Efter hur många timmar är temperaturen 35 grader? Svara med en decimal.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(25+70\\cdot0,80^t=35\\Rightarrow0,80^t=1/7\\Rightarrow t\\approx8,7\\).</p><p><strong>Svar:</strong> 8,7 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 8.7,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.587",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En tjänst har 400 användare och växer med 9 % per månad. En annan har 650 användare och växer med 4 % per månad. När är modellerna lika stora? Svara med en decimal månad.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(400\\cdot1,09^t=650\\cdot1,04^t\\Rightarrow(1,09/1,04)^t=650/400\\), vilket ger \\(t\\approx10,3\\).</p><p><strong>Svar:</strong> 10,3 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10.3,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering",
+      "resonemang"
+    ]
+  },
+  {
+    "id": "2.588",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En mängd minskar exponentiellt. Den är 120 vid start och 75 efter 5 timmar. När är den 30? Svara med en decimal timme.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>Först \\(a^5=75/120\\Rightarrow a\\approx0,9103\\). Sedan \\(120a^t=30\\), vilket ger \\(t\\approx14,8\\).</p><p><strong>Svar:</strong> 14,8 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 14.8,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
+    ]
+  },
+  {
+    "id": "2.589",
+    "kap": 2,
+    "omr": "exponentialekvationer",
+    "kurs": [
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Ett företag har 2000 kunder. Efter 3 år har det 2700 kunder. Anta exponentiell tillväxt. När når modellen 5000 kunder? Svara med en decimal år.</p>",
+    "s": "<p><strong>Metod:</strong> Skriv situationen som en exponentialekvation och isolera exponenten med logaritmer.</p><p>\\(a^3=2700/2000\\). Med denna faktor ger \\(2000a^t=5000\\) att \\(t\\approx9,2\\).</p><p><strong>Svar:</strong> 9,2 (avrundat).</p>",
+    "familj": "Problemlösning med logaritmer",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 9.2,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "problemlösning",
+      "modellering"
     ]
   }
 ];

@@ -5732,9 +5732,16 @@ function urval(){
   return variantBank().filter(x=>{
     if(!state.nivåer.has(x.niva)) return false;
     const formagor=Array.isArray(x.formaga)?x.formaga:(x.formaga?[x.formaga]:[]);
-    /* Exkluderande logik: om en uppgift har en förmåga som användaren klickat ur
-       ska uppgiften döljas, även om den samtidigt har en annan aktiv förmåga. */
-    if(formagor.some(f=>!state.formagor.has(f))) return false;
+    /* Inkluderande förmågefilter:
+       - Alla förmågor aktiva: visa även äldre/otaggade uppgifter.
+       - Några förmågor aktiva: visa uppgiften om MINST EN av dess taggar är vald.
+       - Inga förmågor aktiva: visa inga uppgifter.
+       En uppgift med t.ex. ["procedur","resonemang"] ska alltså fortfarande
+       visas när endast Resonemang är aktivt. */
+    const allaFormagorAktiva=state.formagor.size===FORMAGOR.length;
+    if(state.formagor.size===0) return false;
+    if(!formagor.length && !allaFormagorAktiva) return false;
+    if(formagor.length && !formagor.some(f=>state.formagor.has(f))) return false;
     if(state.miniraknare!=='alla' && Boolean(x['miniräknare'])!==(state.miniraknare==='ja')) return false;
     if(state.geogebra && !x.geogebra) return false;
     if(state.omr.size && !state.omr.has(nyckel(x))) return false;
