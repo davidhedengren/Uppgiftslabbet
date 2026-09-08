@@ -1,4 +1,6 @@
-/* uppgifter2.js — Fysik nivå 2. Familjetaggning reviderad för Kunskapsgymmet 2026-09-07. */
+/* uppgifter2.js — Fysik 2.
+   Selektiv premiumrevision av facit S5 2026-09-08. Endast s ändrat. */
+
 window.BANK2 = [
   {
     "id": "1.1",
@@ -9,15 +11,17 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En vagn kör med konstant fart runt en cirkelbana. Figuren visar banan uppifrån.</p><span class=\"fig smal\"><svg viewBox=\"2.957 1.314 219.398 216.413\" width=\"380\" height=\"375\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Cirkelbana sedd uppifrån med en vagn och tre pilar A, B och C.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Cirkelbana sedd uppifrån med en vagn och tre pilar A, B och C.</title><g transform=\"translate(-119,-24.86)\"><circle cx=\"210\" cy=\"116\" r=\"78\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><path d=\"M 175.91 200.37 A 91 91 0 0 0 244.09 200.37\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"245.02,200 237.86,207.64 234.56,199.48\" fill=\"#2A5D9E\"/><text x=\"210\" y=\"234\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">rörelseriktning</text><circle cx=\"210\" cy=\"116\" r=\"4.4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><circle cx=\"210\" cy=\"116\" r=\"1.9\" fill=\"#2B2527\"/><line x1=\"288\" y1=\"116\" x2=\"288\" y2=\"68.1\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"288,58 292.4,67.5 283.6,67.5\" fill=\"#5C575E\"/><text x=\"288\" y=\"48\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><line x1=\"288\" y1=\"116\" x2=\"232.1\" y2=\"116\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"222,116 231.5,111.6 231.5,120.4\" fill=\"#5C575E\"/><text x=\"234\" y=\"138\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><line x1=\"288\" y1=\"116\" x2=\"311.97\" y2=\"92.03\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"319.11,84.89 315.51,94.72 309.28,88.49\" fill=\"#5C575E\"/><text x=\"332.11\" y=\"77.89\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><g transform=\"translate(288,116) rotate(-90) scale(0.88)\"><path d=\"M -16 -9.5 L 7 -9.5 Q 15 -9.5 17 -4.4 Q 18 0 17 4.4 Q 15 9.5 7 9.5 L -16 9.5 Q -18.5 9.5 -18.5 7 L -18.5 -7 Q -18.5 -9.5 -16 -9.5 Z\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M -8.6 -6.2 L 4.6 -6.2 Q 9.6 -6.2 9.6 -3 L 9.6 3 Q 9.6 6.2 4.6 6.2 L -8.6 6.2 Z\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><line x1=\"2.6\" y1=\"-6\" x2=\"2.6\" y2=\"6\" stroke=\"#2B2527\" stroke-width=\"1.3\"/><rect x=\"13.6\" y=\"-7.6\" width=\"2.8\" height=\"3.2\" rx=\"1.2\" fill=\"#2B2527\"/><rect x=\"13.6\" y=\"4.4\" width=\"2.8\" height=\"3.2\" rx=\"1.2\" fill=\"#2B2527\"/></g></g></svg></span>\n<ol><li>Vilken av pilarna A, B och C visar hastighetens riktning?</li>\n<li>Vilken av pilarna visar accelerationens riktning?</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Hastigheten är alltid tangent till banan och pekar i den riktning vagnen rör sig för ögonblicket.</p><p class=\"facit-svar\"><strong>Svar:</strong> Pil A visar hastighetens riktning.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>Vid likformig cirkelrörelse ändras hastighetens riktning. Accelerationen pekar därför in mot cirkelns mitt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Pil B visar accelerationens riktning.</p><p class=\"facit-not\">Hastighet och acceleration är vinkelräta mot varandra. Därför ändras riktningen men inte farten.</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.2",
@@ -28,17 +32,19 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En gokart kör med farten 14 m/s genom en kurva. Kurvans radie är 28 m.</p>\n<p>Hur stor är gokartens centripetalacceleration?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Centripetalaccelerationen är riktad in mot kurvans mitt.</p><div class=\"facit-matte\">\\[a_{\\mathrm c}=\\frac{v^2}{r}=\\frac{(14\\ \\mathrm{m/s})^2}{28\\ \\mathrm m}=7{,}0\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Centripetalaccelerationen är \\(7{,}0\\ \\mathrm{m/s^2}\\), riktad mot kurvans mitt.</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "numeriskt",
     "rättSvar": 7,
     "tolerans": 0.105,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.3",
@@ -49,11 +55,11 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En utsiktskarusell snurrar ett varv på 11 sekunder. En person står 5,5 m från mitten.</p>\n<ol><li>Hur lång sträcka går personen på ett varv?</li>\n<li>Vilken fart har personen?</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Sträckan under ett varv är cirkelns omkrets.</p><div class=\"facit-matte\">\\[s=2\\pi r=2\\pi\\cdot5{,}5=34{,}6\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Personen färdas ungefär \\(35\\ \\mathrm m\\) per varv.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v=\\frac{s}{T}=\\frac{34{,}6}{11}=3{,}14\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är \\(3{,}1\\ \\mathrm{m/s}\\).</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       35,
@@ -76,7 +82,9 @@ window.BANK2 = [
     "svarEtiketter": [
       "a",
       "b"
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.4",
@@ -87,11 +95,11 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En boll med massan 0,18 kg svängs runt i ett snöre. Den rör sig i en cirkel med radien 0,60 m och har farten 7,2 m/s.</p>\n<ol><li>Hur stor är bollens centripetalacceleration?</li>\n<li>Hur stor resulterande kraft verkar på bollen, och åt vilket håll?</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[a_{\\mathrm c}=\\frac{v^2}{r}=\\frac{7{,}2^2}{0{,}60}=86{,}4\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Centripetalaccelerationen är \\(86\\ \\mathrm{m/s^2}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Den resulterande kraften fås med Newtons andra lag.</p><div class=\"facit-matte\">\\[F_{\\mathrm{res}}=ma_{\\mathrm c}=0{,}18\\cdot86{,}4=15{,}6\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den resulterande kraften är \\(16\\ \\mathrm N\\), riktad in mot cirkelns mitt.</p><p class=\"facit-not\">Snöret ger kraften inåt. Om snöret klipps av fortsätter bollen tangentiellt, alltså rakt fram i det ögonblicket.</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       86,
@@ -118,7 +126,9 @@ window.BANK2 = [
     "manuellKomplettering": [
       false,
       true
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.5",
@@ -129,15 +139,17 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Två vagnar kör med samma fart. Vagn A kör i en bana med radien r och vagn B i en bana med radien 2r.</p>\n<ol><li>Vilken av vagnarna har störst centripetalacceleration?</li>\n<li>Hur många gånger större är den?</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Vid samma fart är centripetalaccelerationen omvänt proportionell mot radien.</p><div class=\"facit-matte\">\\[a_{\\mathrm c}=\\frac{v^2}{r}\\]</div><p>Den mindre radien ger därför den större accelerationen.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[a_A=\\frac{v^2}{r}\\]\\[a_B=\\frac{v^2}{2r}=\\frac12a_A\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> Vagn A har dubbelt så stor centripetalacceleration som vagn B.</p><p class=\"facit-not\">Jämförelsen gäller acceleration. För centripetalkraften \\(F_{\\mathrm c}=mv^2/r\\) måste även vagnarnas massor vara kända. Om massorna är lika får A också dubbelt så stor centripetalkraft.</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.6",
@@ -148,17 +160,19 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En robot kör längs en rundad bana. En sensor mäter farten till 9,0 m/s och centripetalaccelerationen till 3,6 m/s².</p>\n<p>Hur stor är banans radie?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut radien ur sambandet för centripetalacceleration.</p><div class=\"facit-matte\">\\[a_{\\mathrm c}=\\frac{v^2}{r}\\quad\\Longrightarrow\\quad r=\\frac{v^2}{a_{\\mathrm c}}\\]\\[r=\\frac{9{,}0^2}{3{,}6}=22{,}5\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Banans radie är ungefär \\(23\\ \\mathrm m\\).</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "numeriskt",
     "rättSvar": 23,
     "tolerans": 0.345,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.7",
@@ -190,11 +204,11 @@ window.BANK2 = [
     "poang": "(3/0/0)",
     "t": "<p>Kanten på en slipsten med radien 0,32 m rör sig med farten 6,4 m/s.</p>\n<ol><li>Hur lång sträcka går en punkt på kanten under ett varv?</li>\n<li>Hur lång tid tar ett varv?</li>\n<li>Hur många varv snurrar stenen per minut?</li></ol>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Börja med cirkelns omkrets. Den ger sträckan per varv och kan sedan användas för att bestämma periodtid och varvtal.</p><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[s=2\\pi r=2\\pi\\cdot0{,}32=2{,}01\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Sträckan per varv är \\(2{,}0\\ \\mathrm m\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[T=\\frac{s}{v}=\\frac{2{,}01}{6{,}4}=0{,}314\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ett varv tar \\(0{,}31\\ \\mathrm s\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[n=\\frac{60}{T}=\\frac{60}{0{,}314}=191\\ \\text{ varv}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Slipstenen snurrar ungefär \\(190\\) varv per minut.</p><p class=\"facit-not\">Frekvensen är \\(f=1/T=3{,}2\\ \\mathrm{Hz}\\).</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       2,
@@ -226,7 +240,9 @@ window.BANK2 = [
       "a",
       "b",
       "c"
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.9",
@@ -340,17 +356,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En sond går i cirkulär bana 140 km över ytan på en asteroid. Asteroidens radie är 260 km och massan 8,0·10²⁰ kg. Gravitationskonstanten är 6,674·10⁻¹¹ Nm²/kg².</p><span class=\"fig smal\"><svg viewBox=\"6.495 6.171 210.127 213.701\" width=\"380\" height=\"386\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Sond i cirkulär bana 140 km över en asteroids yta.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Sond i cirkulär bana 140 km över en asteroids yta.</title><g transform=\"translate(-56.41,-14.92)\"><circle cx=\"168\" cy=\"128\" r=\"95.38\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.4\" stroke-dasharray=\"6 5\"/><circle cx=\"168\" cy=\"128\" r=\"62\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"146\" cy=\"110\" r=\"12\" fill=\"#DCDEE3\" opacity=\"0.55\"/><circle cx=\"184\" cy=\"150\" r=\"8\" fill=\"#DCDEE3\" opacity=\"0.55\"/><circle cx=\"168\" cy=\"128\" r=\"3.6\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><circle cx=\"168\" cy=\"128\" r=\"1.9\" fill=\"#2B2527\"/><line x1=\"168\" y1=\"128\" x2=\"106\" y2=\"128\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"168\" y1=\"123\" x2=\"168\" y2=\"133\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"123\" x2=\"106\" y2=\"133\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"137\" y=\"149\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">260 km</text><line x1=\"106\" y1=\"128\" x2=\"72.62\" y2=\"128\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"106\" y1=\"123\" x2=\"106\" y2=\"133\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"72.62\" y1=\"123\" x2=\"72.62\" y2=\"133\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"89.31\" y=\"102\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">140 km</text><rect x=\"210.05\" y=\"41.11\" width=\"17\" height=\"12\" rx=\"2.6\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><rect x=\"198.55\" y=\"44.11\" width=\"11.5\" height=\"6\" rx=\"1.4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.4\"/><rect x=\"227.05\" y=\"44.11\" width=\"11.5\" height=\"6\" rx=\"1.4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.4\"/><text x=\"244.55\" y=\"37.11\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">sond</text></g></svg></span>\n<p>Hur lång tid tar ett varv?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Banradien ska mätas från asteroidens centrum.</p><div class=\"facit-matte\">\\[r=(260+140)\\ \\mathrm{km}=4{,}00\\cdot10^5\\ \\mathrm m\\]</div><p>Tyngdkraften från planeten ger centripetalkraften:</p><div class=\"facit-matte\">\\[\\frac{GMm}{r^2}=m\\frac{v^2}{r},\\qquad v=\\frac{2\\pi r}{T}\\]\\[T=2\\pi\\sqrt{\\frac{r^3}{GM}}\\]\\[T=2\\pi\\sqrt{\\frac{(4{,}00\\cdot10^5)^3}{6{,}674\\cdot10^{-11}\\cdot8{,}0\\cdot10^{20}}}=6{,}88\\cdot10^3\\ \\mathrm s\\]\\[T=\\frac{6{,}88\\cdot10^3}{3600}=1{,}91\\ \\mathrm h\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ett varv tar ungefär \\(1{,}9\\ \\mathrm h\\).</p><p class=\"facit-not\">Sondens massa förkortas bort. Alla föremål i samma cirkelbana har samma omloppstid.</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "numeriskt",
     "rättSvar": 1.9,
     "tolerans": 0.028499999999999998,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.14",
@@ -381,15 +399,17 @@ window.BANK2 = [
     "poang": "(0/1/2)",
     "t": "<p>Ett ringformat rymdhabitat har radien 120 m. Ringen roterar så att en person som står på golvet, alltså på ringens insida, känner en normalkraft som motsvarar 0,90 gånger tyngdkraften på jorden.</p><span class=\"fig smal\"><svg viewBox=\"0 0 244 278.19\" width=\"380\" height=\"433\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Roterande ringformat rymdhabitat med en person på insidan.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Roterande ringformat rymdhabitat med en person på insidan.</title><g transform=\"translate(-66,6.19)\"><circle cx=\"188\" cy=\"150\" r=\"108\" fill=\"#EDEEF1\" stroke=\"none\"/><circle cx=\"188\" cy=\"150\" r=\"94\" fill=\"#FFFFFF\" stroke=\"none\"/><circle cx=\"188\" cy=\"150\" r=\"94\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"188\" cy=\"150\" r=\"108\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"188\" cy=\"150\" r=\"4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><circle cx=\"188\" cy=\"150\" r=\"1.9\" fill=\"#2B2527\"/><line x1=\"188\" y1=\"150\" x2=\"188\" y2=\"244\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4.5\"/><text x=\"197\" y=\"201.7\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">R = 120 m</text><g transform=\"translate(188,244)\"><circle cx=\"0\" cy=\"-25\" r=\"5\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><path d=\"M -5.6 -2 L -5.6 -14 Q -5.6 -20 0 -20 Q 5.6 -20 5.6 -14 L 5.6 -2 Z\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><line x1=\"139.48\" y1=\"206.16\" x2=\"148.52\" y2=\"234.6\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"133.48\" y=\"210.16\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">golv</text><path d=\"M 105.7 58.59 A 123 123 0 0 1 270.3 58.59\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"271.05,59.26 261.04,56.18 266.93,49.64\" fill=\"#2A5D9E\"/><text x=\"188\" y=\"16\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">rotation</text></g></svg></span>\n<ol><li>Hur många varv per minut måste habitatet snurra?</li>\n<li>Personen är 1,8 m lång. Hur stor centripetalacceleration får huvudet, och hur många procent mindre är den än vid fötterna?</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Vid golvet ska centripetalaccelerationen vara \\(0{,}90g\\). Använd \\(v=2\\pi R/T\\).</p><div class=\"facit-matte\">\\[a=\\frac{v^2}{R}=\\frac{4\\pi^2R}{T^2}\\]\\[T=2\\pi\\sqrt{\\frac{R}{a}}=2\\pi\\sqrt{\\frac{120}{0{,}90\\cdot9{,}82}}=23{,}2\\ \\mathrm s\\]\\[n=\\frac{60}{T}=\\frac{60}{23{,}2}=2{,}59\\ \\mathrm{varv/min}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ringen ska rotera med ungefär \\(2{,}6\\) varv per minut.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Huvudet ligger på radien \\(120-1{,}8=118{,}2\\ \\mathrm m\\). Vid samma omloppstid är accelerationen proportionell mot radien.</p><div class=\"facit-matte\">\\[a_{\\mathrm{huvud}}=\\frac{4\\pi^2\\cdot118{,}2}{23{,}2^2}=8{,}71\\ \\mathrm{m/s^2}\\]\\[a_{\\mathrm{fötter}}=0{,}90\\cdot9{,}82=8{,}84\\ \\mathrm{m/s^2}\\]\\[\\frac{8{,}84-8{,}71}{8{,}84}\\cdot100=1{,}5\\,\\%\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vid huvudet är accelerationen \\(8{,}7\\ \\mathrm{m/s^2}\\), cirka \\(1{,}5\\,\\%\\) lägre än vid fötterna.</p></div></div><p class=\"facit-not\">Alla punkter i den stela ringen har samma vinkelhastighet. Därför gäller \\(a_c=\\omega^2r\\), så centripetalaccelerationen minskar linjärt när radien minskar från fötterna till huvudet.</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "problemlösning"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.16",
@@ -849,11 +869,11 @@ window.BANK2 = [
     "poang": "(3/0/0)",
     "t": "<p>En laboratoriecentrifug har radien 0,18 m och roterar med 2400 varv/min.</p><span class=\"fig smal\" style=\"max-width:430px\"><svg viewBox=\"27.714 7.755 138.571 160.644\" width=\"380\" height=\"441\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Provrör i en centrifug som roterar kring sin mittaxel.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Provrör i en centrifug som roterar kring sin mittaxel.</title><g transform=\"translate(-53,-3)\"><circle cx=\"150\" cy=\"100\" r=\"62\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.6\"/><circle cx=\"150\" cy=\"100\" r=\"3.6\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"100\" r=\"1.9\" fill=\"#2B2527\"/><rect x=\"177.53\" y=\"54.47\" width=\"10\" height=\"26\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\" transform=\"rotate(45 182.53 67.47)\"/><rect x=\"112.47\" y=\"54.47\" width=\"10\" height=\"26\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\" transform=\"rotate(-45 117.47 67.47)\"/><rect x=\"112.47\" y=\"119.53\" width=\"10\" height=\"26\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\" transform=\"rotate(-135 117.47 132.53)\"/><rect x=\"177.53\" y=\"119.53\" width=\"10\" height=\"26\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\" transform=\"rotate(-225 182.53 132.53)\"/><line x1=\"150\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#5C575E\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"181\" y=\"92\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">r</text><path d=\"M 104.11 34.47 A 80 80 0 0 1 195.89 34.47\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"196.71,35.04 186.4,33.2 191.45,25.99\" fill=\"#B43123\"/></g></svg></span><ol><li>Bestäm rotationsfrekvensen.</li><li>Bestäm vinkelhastigheten.</li><li>Beräkna farten och centripetalaccelerationen längst ut i centrifugen. Ange även accelerationen uttryckt i <em>g</em>.</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Frekvens är antal varv per sekund.</p><div class=\"facit-matte\">\\[f=\\frac{2400}{60}=40\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Rotationsfrekvensen är \\(40\\ \\mathrm{Hz}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\omega=2\\pi f=2\\pi\\cdot40=2{,}51\\cdot10^2\\ \\mathrm{rad/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkelhastigheten är \\(2{,}51\\cdot10^2\\ \\mathrm{rad/s}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v=\\omega r=251{,}3\\cdot0{,}18=45{,}2\\ \\mathrm{m/s}\\]\\[a_{\\mathrm c}=\\omega^2r=251{,}3^2\\cdot0{,}18=1{,}14\\cdot10^4\\ \\mathrm{m/s^2}\\]\\[\\frac{a_{\\mathrm c}}{g}=\\frac{1{,}14\\cdot10^4}{9{,}82}=1{,}16\\cdot10^3\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är \\(45\\ \\mathrm{m/s}\\) och accelerationen \\(1{,}14\\cdot10^4\\ \\mathrm{m/s^2}\\), motsvarande cirka \\(1{,}16\\cdot10^3g\\).</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       40,
@@ -881,7 +901,9 @@ window.BANK2 = [
       "a",
       "b",
       "c"
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.32",
@@ -892,11 +914,11 @@ window.BANK2 = [
     "poang": "(2/1/0)",
     "t": "<p>En karusell gör ett varv på 8,0 s. Person A står 2,0 m från mitten och person B står 5,0 m från mitten.</p><span class=\"fig smal\" style=\"max-width:430px\"><svg viewBox=\"98.400 12.000 191.400 185.400\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Karusell sedd uppifrån med punkterna A och B på olika avstånd från mitten.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"368\"><title>Karusell sedd uppifrån med punkterna A och B på olika avstånd från mitten.</title>\n<circle cx=\"190\" cy=\"105\" r=\"82\" fill=\"#F8F8F9\" stroke=\"#2B2527\" stroke-width=\"2.5\"/>\n<circle cx=\"190\" cy=\"105\" r=\"6\" fill=\"#2B2527\"/>\n<line x1=\"190\" y1=\"105\" x2=\"272\" y2=\"105\" stroke=\"#9A959C\" stroke-width=\"1.5\"/>\n<circle cx=\"223\" cy=\"105\" r=\"9\" fill=\"#2A5D9E\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<circle cx=\"272\" cy=\"105\" r=\"9\" fill=\"#B43123\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<text x=\"220\" y=\"88\" text-anchor=\"middle\" font-family=\"IBM Plex Mono\" font-size=\"13\" font-weight=\"600\" fill=\"#2A5D9E\">A</text>\n<text x=\"275\" y=\"88\" text-anchor=\"middle\" font-family=\"IBM Plex Mono\" font-size=\"13\" font-weight=\"600\" fill=\"#B43123\">B</text>\n<path d=\"M 115 67 A 82 82 0 0 1 165 27\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.2\"/>\n<polygon points=\"176,25 165,32 164,21\" fill=\"#B43123\"/>\n</svg></span><ol><li>Bestäm deras fart.</li><li>Bestäm deras centripetalacceleration.</li><li>Hur många gånger större är B:s fart respektive acceleration än A:s?</li></ol>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Båda personerna har samma omloppstid och därmed samma vinkelhastighet.</p><div class=\"facit-matte\">\\[\\omega=\\frac{2\\pi}{T}=\\frac{2\\pi}{8{,}0}=0{,}785\\ \\mathrm{rad/s}\\]</div><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[v_A=\\omega r_A=1{,}57\\ \\mathrm{m/s}\\]\\[v_B=\\omega r_B=3{,}93\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farterna är \\(1{,}6\\ \\mathrm{m/s}\\) för A och \\(3{,}9\\ \\mathrm{m/s}\\) för B.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[a_A=\\omega^2r_A=1{,}23\\ \\mathrm{m/s^2}\\]\\[a_B=\\omega^2r_B=3{,}08\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Accelerationerna är \\(1{,}2\\ \\mathrm{m/s^2}\\) för A och \\(3{,}1\\ \\mathrm{m/s^2}\\) för B.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\frac{r_B}{r_A}=\\frac{5{,}0}{2{,}0}=2{,}5\\]</div><p>Vid samma \\(\\omega\\) är både \\(v=\\omega r\\) och \\(a_{\\mathrm c}=\\omega^2r\\) proportionella mot radien.</p><p class=\"facit-svar\"><strong>Svar:</strong> B:s fart och acceleration är båda \\(2{,}5\\) gånger större än A:s.</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       3.9,
@@ -928,7 +950,9 @@ window.BANK2 = [
       "a",
       "b",
       "c"
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.33",
@@ -961,11 +985,11 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En bil kör i en cirkelbana med radien 40 m. I ett visst ögonblick är farten 16 m/s och ökar med 1,8 m/s varje sekund.</p><span class=\"fig smal\" style=\"max-width:430px\"><svg viewBox=\"5.484 6.786 161.041 148.515\" width=\"380\" height=\"350\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Bil som kör i en cirkelbana och samtidigt ökar farten.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Bil som kör i en cirkelbana och samtidigt ökar farten.</title><g transform=\"translate(-67,-27)\"><circle cx=\"146\" cy=\"108\" r=\"66\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.8\" stroke-dasharray=\"7 5\"/><circle cx=\"146\" cy=\"108\" r=\"3.4\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><circle cx=\"146\" cy=\"108\" r=\"1.9\" fill=\"#2B2527\"/><line x1=\"146\" y1=\"108\" x2=\"212\" y2=\"108\" stroke=\"#5C575E\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"179\" y=\"100\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">r</text><g transform=\"translate(212,108) rotate(-90)\"><rect x=\"-20\" y=\"-10\" width=\"40\" height=\"20\" rx=\"6\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><rect x=\"-6.4\" y=\"-6\" width=\"13.6\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><rect x=\"-15.5\" y=\"-12\" width=\"7\" height=\"4\" rx=\"1.4\" fill=\"#2B2527\"/><rect x=\"-15.5\" y=\"8\" width=\"7\" height=\"4\" rx=\"1.4\" fill=\"#2B2527\"/><rect x=\"8.5\" y=\"-12\" width=\"7\" height=\"4\" rx=\"1.4\" fill=\"#2B2527\"/><rect x=\"8.5\" y=\"8\" width=\"7\" height=\"4\" rx=\"1.4\" fill=\"#2B2527\"/></g><line x1=\"212\" y1=\"82\" x2=\"212\" y2=\"52.1\" stroke=\"#2B2527\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"212,42 216.4,51.5 207.6,51.5\" fill=\"#2B2527\"/><text x=\"222\" y=\"56\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v</text></g></svg></span><ol><li>Bestäm bilens centripetalacceleration och tangentiella acceleration.</li><li>Bestäm accelerationens storlek.</li><li>Bestäm accelerationens riktning i förhållande till riktningen rakt in mot cirkelns mitt.</li></ol>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Centripetalaccelerationen ändrar riktningen och den tangentiella accelerationen ändrar fartens storlek.</p><div class=\"facit-matte\">\\[a_{\\mathrm c}=\\frac{v^2}{r}=\\frac{16^2}{40}=6{,}4\\ \\mathrm{m/s^2}\\]\\[a_{\\mathrm t}=\\frac{\\Delta v}{\\Delta t}=1{,}8\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(a_{\\mathrm c}=6{,}4\\ \\mathrm{m/s^2}\\) inåt och \\(a_{\\mathrm t}=1{,}8\\ \\mathrm{m/s^2}\\) framåt.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p>Komposanterna är vinkelräta.</p><div class=\"facit-matte\">\\[a=\\sqrt{a_{\\mathrm c}^2+a_{\\mathrm t}^2}=\\sqrt{6{,}4^2+1{,}8^2}=6{,}65\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Accelerationens storlek är \\(6{,}6\\ \\mathrm{m/s^2}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[\\tan\\alpha=\\frac{a_{\\mathrm t}}{a_{\\mathrm c}}=\\frac{1{,}8}{6{,}4}\\]\\[\\alpha=15{,}7^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Accelerationen pekar \\(16^\\circ\\) framåt från riktningen rakt in mot mitten.</p></div></div></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       null,
@@ -997,7 +1021,9 @@ window.BANK2 = [
       "a",
       "b",
       "c"
-    ]
+    ],
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.35",
@@ -1809,18 +1835,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder med fjäderkonstanten 180 N/m dras ut 6,0 cm. Hur stor är fjäderkraften?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Hookes lag och skriv förlängningen i meter.</p><div class=\"facit-matte\">\\[x=6{,}0\\ \\mathrm{cm}=0{,}060\\ \\mathrm m\\]\\[F=kx=180\\cdot0{,}060=10{,}8\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderkraften är \\(10{,}8\\ \\mathrm N\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 10.8,
     "tolerans": 0.162,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.2",
@@ -1831,18 +1859,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En kraft på 3,6 N förlänger en fjäder 4,5 cm. Bestäm fjäderkonstanten.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut fjäderkonstanten ur Hookes lag.</p><div class=\"facit-matte\">\\[x=4{,}5\\ \\mathrm{cm}=0{,}045\\ \\mathrm m\\]\\[F=kx\\quad\\Longrightarrow\\quad k=\\frac{F}{x}=\\frac{3{,}6}{0{,}045}=80\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderkonstanten är \\(80\\ \\mathrm{N/m}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 80,
     "tolerans": 1.2,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.3",
@@ -1853,18 +1883,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En massa på 0,40 kg förlänger en lodrät fjäder 3,2 cm när den hänger stilla. Bestäm fjäderkonstanten.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Massan är i jämvikt, så fjäderkraften balanserar tyngdkraften.</p><div class=\"facit-matte\">\\[F_{\\mathrm f}=F_g\\quad\\Longrightarrow\\quad kx=mg\\]\\[x=3{,}2\\ \\mathrm{cm}=0{,}032\\ \\mathrm m\\]\\[k=\\frac{mg}{x}=\\frac{0{,}40\\cdot9{,}82}{0{,}032}=122{,}8\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderkonstanten är ungefär \\(123\\ \\mathrm{N/m}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 123,
     "tolerans": 1.845,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.4",
@@ -1875,18 +1907,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder med k = 95 N/m förlängs 7,5 cm av en hängande last. Bestäm lastens massa.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lasten hänger stilla, så fjäderkraft och tyngdkraft är lika stora.</p><div class=\"facit-matte\">\\[kx=mg\\quad\\Longrightarrow\\quad m=\\frac{kx}{g}\\]\\[m=\\frac{95\\cdot0{,}075}{9{,}82}=0{,}726\\ \\mathrm{kg}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Lastens massa är ungefär \\(0{,}73\\ \\mathrm{kg}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 0.73,
     "tolerans": 0.01095,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.5",
@@ -1897,18 +1931,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder med k = 250 N/m trycks ihop 0,12 m. Hur mycket energi lagras i fjädern?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den elastiska energin i en ideal fjäder är \\(kx^2/2\\).</p><div class=\"facit-matte\">\\[E_{\\mathrm f}=\\frac{kx^2}{2}=\\frac{250\\cdot0{,}12^2}{2}=1{,}80\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fjädern lagrar \\(1{,}8\\ \\mathrm J\\).</p><p class=\"facit-not\">Eftersom energin är proportionell mot \\(x^2\\) ger dubbla hoptryckningen fyra gånger så stor energi.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 1.8,
     "tolerans": 0.027,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.6",
@@ -1919,17 +1955,19 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Diagrammet visar F som funktion av x för två fjädrar. Vilken fjäder har störst fjäderkonstant? Motivera kort.</p><span class=\"fig smal\"><svg viewBox=\"10.529 5.239 248.102 163.820\" width=\"380\" height=\"251\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Kraft som funktion av förlängning för två fjädrar A och B.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Kraft som funktion av förlängning för två fjädrar A och B.</title><g transform=\"translate(-1,-19)\"><line x1=\"40\" y1=\"160\" x2=\"241.4\" y2=\"160\" stroke=\"#2B2527\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"250,160 242,163.8 242,156.2\" fill=\"#2B2527\"/><line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"40.6\" stroke=\"#2B2527\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"40,32 43.8,40 36.2,40\" fill=\"#2B2527\"/><text x=\"250\" y=\"179\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">förlängning x</text><g transform=\"rotate(-90 26 96)\"><text x=\"26\" y=\"96\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">kraft F</text></g><line x1=\"40\" y1=\"160\" x2=\"226\" y2=\"48\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"237\" y=\"52\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><line x1=\"40\" y1=\"160\" x2=\"226\" y2=\"102\" stroke=\"#2A5D9E\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"237\" y=\"106\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I ett diagram med \\(F\\) på y-axeln och \\(x\\) på x-axeln är lutningen fjäderkonstanten.</p><div class=\"facit-matte\">\\[F=kx\\quad\\Longrightarrow\\quad k=\\frac{\\Delta F}{\\Delta x}\\]</div><p>Linje A är brantare än linje B och har därför större lutning.</p><p class=\"facit-svar\"><strong>Svar:</strong> Fjäder A har störst fjäderkonstant och är alltså styvast.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.7",
@@ -1940,16 +1978,18 @@ window.BANK2 = [
     "poang": "(1/0/0)",
     "t": "<p>En kloss är dragen åt höger från fjäderns jämviktsläge. Åt vilket håll verkar fjäderkraften?</p><span class=\"fig bred\"><svg viewBox=\"0.000 5.971 298.600 144.684\" width=\"620\" height=\"300\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Kloss utdragen åt höger från fjäderns jämviktsläge.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Kloss utdragen åt höger från fjäderns jämviktsläge.</title><g transform=\"translate(-6.4,-23.2)\"><line x1=\"30\" y1=\"56\" x2=\"30\" y2=\"136\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"60\" x2=\"19.4\" y2=\"69\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"74.4\" x2=\"19.4\" y2=\"83.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"88.8\" x2=\"19.4\" y2=\"97.8\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"103.2\" x2=\"19.4\" y2=\"112.2\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"117.6\" x2=\"19.4\" y2=\"126.6\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28.4\" y1=\"132\" x2=\"19.4\" y2=\"141\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"30\" y=\"136\" width=\"262\" height=\"6\" fill=\"#E6E8EC\"/><line x1=\"30\" y1=\"136\" x2=\"292\" y2=\"136\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M 30 96 L 39 96 L 43.39 103.5 L 52.17 88.5 L 60.94 103.5 L 69.72 88.5 L 78.5 103.5 L 87.28 88.5 L 96.06 103.5 L 104.83 88.5 L 113.61 103.5 L 122.39 88.5 L 131.17 103.5 L 139.94 88.5 L 148.72 103.5 L 157.5 88.5 L 166.28 103.5 L 175.06 88.5 L 183.83 103.5 L 192.61 88.5 L 197 96 L 206 96\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"79\" width=\"58\" height=\"34\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"178\" y1=\"50\" x2=\"178\" y2=\"136\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"178\" y=\"44\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">jämviktsläge</text><line x1=\"178\" y1=\"154\" x2=\"235\" y2=\"154\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"178\" y1=\"149\" x2=\"178\" y2=\"159\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"235\" y1=\"149\" x2=\"235\" y2=\"159\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"206.5\" y=\"168\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Fjäderkraften är återförande och pekar motsatt förskjutningen.</p><div class=\"facit-matte\">\\[F_x=-kx\\]</div><p>Klossen är förskjuten åt höger, alltså är kraftens riktning åt vänster, mot jämviktsläget.</p><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderkraften verkar åt vänster.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.8",
@@ -1960,18 +2000,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder är 18,4 cm lång när den belastas med 2,0 N. Fjäderkonstanten är 125 N/m. Bestäm fjäderns obelastade längd.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Beräkna först förlängningen med Hookes lag.</p><div class=\"facit-matte\">\\[x=\\frac{F}{k}=\\frac{2{,}0}{125}=0{,}016\\ \\mathrm m=1{,}6\\ \\mathrm{cm}\\]</div><p>Den obelastade längden är den belastade längden minus förlängningen.</p><div class=\"facit-matte\">\\[L_0=18{,}4-1{,}6=16{,}8\\ \\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderns obelastade längd är \\(16{,}8\\ \\mathrm{cm}\\).</p><p class=\"facit-not\">I Hookes lag används förlängningen, inte fjäderns hela längd.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 16.8,
     "tolerans": 0.252,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.9",
@@ -1982,16 +2024,18 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En 6,0 kg plattform hänger i två parallella fjädrar med k₁ = 120 N/m och k₂ = 180 N/m. Hur långt sjunker plattformen från fjädrarnas obelastade läge?</p><span class=\"fig smal\"><svg viewBox=\"0 0 211 169\" width=\"380\" height=\"304\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Plattform som hänger i två parallella fjädrar.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Plattform som hänger i två parallella fjädrar.</title><g transform=\"translate(-50,-2)\"><line x1=\"68\" y1=\"26\" x2=\"248\" y2=\"26\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"72\" y1=\"24.4\" x2=\"63\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"86.33\" y1=\"24.4\" x2=\"77.33\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"100.67\" y1=\"24.4\" x2=\"91.67\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"24.4\" x2=\"106\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"129.33\" y1=\"24.4\" x2=\"120.33\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"143.67\" y1=\"24.4\" x2=\"134.67\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"158\" y1=\"24.4\" x2=\"149\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"172.33\" y1=\"24.4\" x2=\"163.33\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"186.67\" y1=\"24.4\" x2=\"177.67\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"201\" y1=\"24.4\" x2=\"192\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"215.33\" y1=\"24.4\" x2=\"206.33\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"229.67\" y1=\"24.4\" x2=\"220.67\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"244\" y1=\"24.4\" x2=\"235\" y2=\"15.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 108 26 L 108 35 L 114.5 38 L 101.5 44 L 114.5 50 L 101.5 56 L 114.5 62 L 101.5 68 L 114.5 74 L 101.5 80 L 114.5 86 L 101.5 92 L 114.5 98 L 101.5 104 L 114.5 110 L 101.5 116 L 108 119 L 108 128\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 208 26 L 208 35 L 214.5 38 L 201.5 44 L 214.5 50 L 201.5 56 L 214.5 62 L 201.5 68 L 214.5 74 L 201.5 80 L 214.5 86 L 201.5 92 L 214.5 98 L 201.5 104 L 214.5 110 L 201.5 116 L 208 119 L 208 128\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"82\" y=\"128\" width=\"152\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Parallellkopplade fjädrar får samma förlängning och deras krafter adderas.</p><div class=\"facit-matte\">\\[F_1+F_2=mg\\]\\[k_1x+k_2x=mg\\quad\\Longrightarrow\\quad x=\\frac{mg}{k_1+k_2}\\]\\[x=\\frac{6{,}0\\cdot9{,}82}{120+180}=0{,}1964\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Plattformen sjunker ungefär \\(0{,}20\\ \\mathrm m\\), alltså \\(20\\ \\mathrm{cm}\\).</p><p class=\"facit-not\">Den sammanlagda fjäderkonstanten är \\(k_{\\mathrm{eq}}=k_1+k_2=300\\ \\mathrm{N/m}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.10",
@@ -2002,16 +2046,18 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En fjäder är 21,0 cm lång vid kraften 2,0 N och 25,0 cm lång vid 5,0 N. Bestäm fjäderkonstanten och fjäderns obelastade längd.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Ta skillnaden mellan mätningarna; då försvinner den okända obelastade längden.</p><div class=\"facit-matte\">\\[\\Delta F=5{,}0-2{,}0=3{,}0\\ \\mathrm N\\]\\[\\Delta x=25{,}0-21{,}0=4{,}0\\ \\mathrm{cm}=0{,}040\\ \\mathrm m\\]\\[k=\\frac{\\Delta F}{\\Delta x}=\\frac{3{,}0}{0{,}040}=75\\ \\mathrm{N/m}\\]</div><p>Vid kraften \\(2{,}0\\ \\mathrm N\\) är förlängningen</p><div class=\"facit-matte\">\\[x=\\frac{F}{k}=\\frac{2{,}0}{75}=0{,}0267\\ \\mathrm m=2{,}67\\ \\mathrm{cm}\\]\\[L_0=21{,}0-2{,}67=18{,}33\\ \\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(k=75\\ \\mathrm{N/m}\\) och den obelastade längden är ungefär \\(18{,}3\\ \\mathrm{cm}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.11",
@@ -2022,17 +2068,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En 1,5 kg kloss skjuts uppför en friktionsfri ramp av en fjäder med k = 400 N/m som tryckts ihop 8,0 cm. Hur högt stiger klossen?</p><span class=\"fig bred\"><svg viewBox=\"0.000 5.651 389.679 134.755\" width=\"620\" height=\"214\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Kloss som skjuts iväg av en hoptryckt fjäder uppför en ramp.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Kloss som skjuts iväg av en hoptryckt fjäder uppför en ramp.</title><g transform=\"translate(-2.4,-79.88)\"><line x1=\"26\" y1=\"110\" x2=\"26\" y2=\"176\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"24.4\" y1=\"114\" x2=\"15.4\" y2=\"123\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"24.4\" y1=\"128.5\" x2=\"15.4\" y2=\"137.5\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"24.4\" y1=\"143\" x2=\"15.4\" y2=\"152\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"24.4\" y1=\"157.5\" x2=\"15.4\" y2=\"166.5\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"24.4\" y1=\"172\" x2=\"15.4\" y2=\"181\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"26\" y=\"176\" width=\"180\" height=\"6\" fill=\"#E6E8EC\"/><line x1=\"26\" y1=\"176\" x2=\"206\" y2=\"176\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"176\" x2=\"338\" y2=\"99.79\" stroke=\"#2B2527\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M 26 152 L 35 152 L 36.11 158 L 38.34 146 L 40.57 158 L 42.8 146 L 45.02 158 L 47.25 146 L 49.48 158 L 51.7 146 L 53.93 158 L 56.16 146 L 58.39 158 L 60.61 146 L 62.84 158 L 65.07 146 L 67.3 158 L 69.52 146 L 71.75 158 L 73.98 146 L 76.2 158 L 78.43 146 L 80.66 158 L 82.89 146 L 84 152 L 93 152\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"93\" y=\"137\" width=\"46\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"139\" y1=\"152\" x2=\"202\" y2=\"152\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"202\" y1=\"152\" x2=\"294\" y2=\"107.88\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><rect x=\"281\" y=\"98.88\" width=\"34\" height=\"22\" rx=\"3.5\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\" transform=\"rotate(-30 298 109.88)\"/><line x1=\"298\" y1=\"122.88\" x2=\"362\" y2=\"122.88\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"370\" y1=\"122.88\" x2=\"370\" y2=\"176\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"365\" y1=\"122.88\" x2=\"375\" y2=\"122.88\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"365\" y1=\"176\" x2=\"375\" y2=\"176\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"379\" y=\"153.44\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">h</text><line x1=\"93\" y1=\"198\" x2=\"139\" y2=\"198\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"93\" y1=\"193\" x2=\"93\" y2=\"203\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"139\" y1=\"193\" x2=\"139\" y2=\"203\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"116\" y=\"212\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">8,0 cm</text><path d=\"M 240 176 A 34 34 0 0 0 235.44 159\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.3\"/><text x=\"254\" y=\"167\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">30°</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Rampen är friktionsfri, så fjäderenergin omvandlas till lägesenergi.</p><div class=\"facit-matte\">\\[\\frac{kx^2}{2}=mgh\\]\\[h=\\frac{kx^2}{2mg}=\\frac{400\\cdot0{,}080^2}{2\\cdot1{,}5\\cdot9{,}82}=0{,}0869\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Klossen stiger ungefär \\(0{,}087\\ \\mathrm m\\), alltså \\(8{,}7\\ \\mathrm{cm}\\).</p><p class=\"facit-not\">Rampens lutning påverkar sträckan längs rampen, men inte den största höjden.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.12",
@@ -2043,11 +2091,11 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjädervåg ger 0 N vid 4,0 cm och 6,0 N vid 10,0 cm på skalan. Vilken kraft motsvarar 7,5 cm?</p><span class=\"fig smal\"><svg viewBox=\"9.905 1.065 104.345 219.871\" width=\"380\" height=\"801\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Fjädervåg med skala; 4,0 cm motsvarar 0 N och 10,0 cm motsvarar 6,0 N.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Fjädervåg med skala; 4,0 cm motsvarar 0 N och 10,0 cm motsvarar 6,0 N.</title><g transform=\"translate(-48.8,-11)\"><rect x=\"67\" y=\"24\" width=\"58\" height=\"196\" rx=\"7\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"76\" y1=\"44\" x2=\"89\" y2=\"44\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"47.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">0</text><line x1=\"76\" y1=\"57\" x2=\"83\" y2=\"57\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"70\" x2=\"89\" y2=\"70\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"73.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><line x1=\"76\" y1=\"83\" x2=\"83\" y2=\"83\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"96\" x2=\"89\" y2=\"96\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"99.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text><line x1=\"76\" y1=\"109\" x2=\"83\" y2=\"109\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"122\" x2=\"89\" y2=\"122\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"125.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text><line x1=\"76\" y1=\"135\" x2=\"83\" y2=\"135\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"148\" x2=\"89\" y2=\"148\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"151.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">8</text><line x1=\"76\" y1=\"161\" x2=\"83\" y2=\"161\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"174\" x2=\"89\" y2=\"174\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"177.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">10</text><line x1=\"76\" y1=\"187\" x2=\"83\" y2=\"187\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"200\" x2=\"89\" y2=\"200\" stroke=\"#5C575E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"72\" y=\"203.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">12</text><line x1=\"93\" y1=\"96\" x2=\"120\" y2=\"96\" stroke=\"#5C575E\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"130\" y=\"100\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">0 N</text><line x1=\"93\" y1=\"141.5\" x2=\"120\" y2=\"141.5\" stroke=\"#B43123\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"130\" y=\"145.5\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text><line x1=\"93\" y1=\"174\" x2=\"120\" y2=\"174\" stroke=\"#2A5D9E\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"130\" y=\"178\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">6,0 N</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Skalvärdet \\(4{,}0\\ \\mathrm{cm}\\) är nollpunkten. Förlängningen mäts från den.</p><div class=\"facit-matte\">\\[\\Delta x=10{,}0-4{,}0=6{,}0\\ \\mathrm{cm}\\]\\[\\frac{F}{x}=\\frac{6{,}0\\ \\mathrm N}{6{,}0\\ \\mathrm{cm}}=1{,}0\\ \\mathrm{N/cm}\\]</div><p>Vid skalvärdet \\(7{,}5\\ \\mathrm{cm}\\) är förlängningen \\(7{,}5-4{,}0=3{,}5\\ \\mathrm{cm}\\).</p><div class=\"facit-matte\">\\[F=1{,}0\\cdot3{,}5=3{,}5\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Skalvärdet motsvarar kraften \\(3{,}5\\ \\mathrm N\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 3.5,
     "tolerans": 0.0525,
@@ -2055,7 +2103,9 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "fjadrar__hookes_lag"
+    "familjNyckelTidigare": "fjadrar__hookes_lag",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.13",
@@ -2066,18 +2116,20 @@ window.BANK2 = [
     "poang": "(0/3/0)",
     "t": "<p>Två fjädrar med k₁ = 100 N/m och k₂ = 200 N/m kopplas i serie och belastas med 3,0 kg. Bestäm den totala förlängningen.</p><span class=\"fig smal\"><svg viewBox=\"7.990 0.510 104.040 242.490\" width=\"380\" height=\"886\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två seriekopplade fjädrar med en hängande massa.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två seriekopplade fjädrar med en hängande massa.</title><g transform=\"translate(-68,0)\"><line x1=\"86\" y1=\"24\" x2=\"174\" y2=\"24\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"22.4\" x2=\"81\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"22.4\" x2=\"97\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"122\" y1=\"22.4\" x2=\"113\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"138\" y1=\"22.4\" x2=\"129\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"22.4\" x2=\"145\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"22.4\" x2=\"161\" y2=\"13.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 130 24 L 130 33 L 136.5 35.92 L 123.5 41.75 L 136.5 47.58 L 123.5 53.42 L 136.5 59.25 L 123.5 65.08 L 136.5 70.92 L 123.5 76.75 L 136.5 82.58 L 123.5 88.42 L 136.5 94.25 L 123.5 100.08 L 130 103 L 130 112\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"130\" cy=\"112\" r=\"3.6\" fill=\"#2B2527\"/><path d=\"M 130 112 L 130 121 L 136.5 123.75 L 123.5 129.25 L 136.5 134.75 L 123.5 140.25 L 136.5 145.75 L 123.5 151.25 L 136.5 156.75 L 123.5 162.25 L 136.5 167.75 L 123.5 173.25 L 136.5 178.75 L 123.5 184.25 L 130 187 L 130 196\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"101\" y=\"198\" width=\"58\" height=\"32\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I en seriekoppling verkar samma kraft i båda fjädrarna, och förlängningarna adderas.</p><div class=\"facit-matte\">\\[F=mg=3{,}0\\cdot9{,}82=29{,}46\\ \\mathrm N\\]\\[x_1=\\frac{F}{k_1}=\\frac{29{,}46}{100}=0{,}2946\\ \\mathrm m\\]\\[x_2=\\frac{F}{k_2}=\\frac{29{,}46}{200}=0{,}1473\\ \\mathrm m\\]\\[x_{\\mathrm{tot}}=x_1+x_2=0{,}4419\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den totala förlängningen är ungefär \\(0{,}44\\ \\mathrm m\\).</p><p class=\"facit-not\">Det motsvarar \\(k_{\\mathrm{eq}}=66{,}7\\ \\mathrm{N/m}\\), som är mindre än båda fjäderkonstanterna.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "numeriskt",
     "rättSvar": 0.44,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.14",
@@ -2088,16 +2140,18 @@ window.BANK2 = [
     "poang": "(0/1/3)",
     "t": "<p>En 6,0 kg last ska ge 10–15 cm förlängning. Två fjädrar, 180 och 300 N/m, får kopplas i serie eller parallellt. Ingen fjäder får belastas med mer än 40 N. Vilken koppling fungerar?</p><span class=\"fig smal\"><svg viewBox=\"0 0 300 218.58\" width=\"380\" height=\"277\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två fjädrar kopplade parallellt respektive i serie med samma last.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två fjädrar kopplade parallellt respektive i serie med samma last.</title><g transform=\"translate(-14,3.58)\"><line x1=\"32\" y1=\"40\" x2=\"162\" y2=\"40\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"38.4\" x2=\"27\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"49.56\" y1=\"38.4\" x2=\"40.56\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"63.11\" y1=\"38.4\" x2=\"54.11\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"76.67\" y1=\"38.4\" x2=\"67.67\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"90.22\" y1=\"38.4\" x2=\"81.22\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"103.78\" y1=\"38.4\" x2=\"94.78\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"117.33\" y1=\"38.4\" x2=\"108.33\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"130.89\" y1=\"38.4\" x2=\"121.89\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"144.44\" y1=\"38.4\" x2=\"135.44\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"158\" y1=\"38.4\" x2=\"149\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 62 40 L 62 49 L 68 52.08 L 56 58.25 L 68 64.42 L 56 70.58 L 68 76.75 L 56 82.92 L 68 89.08 L 56 95.25 L 68 101.42 L 56 107.58 L 68 113.75 L 56 119.92 L 62 123 L 62 132\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 132 40 L 132 49 L 138 52.08 L 126 58.25 L 138 64.42 L 126 70.58 L 138 76.75 L 126 82.92 L 138 89.08 L 126 95.25 L 138 101.42 L 126 107.58 L 138 113.75 L 126 119.92 L 132 123 L 132 132\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"43\" y=\"132\" width=\"108\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"97\" y=\"18\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">parallellt</text><text x=\"37.16\" y=\"90\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">k</text><text x=\"43.46\" y=\"92.1\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><text x=\"146\" y=\"90\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">k</text><text x=\"152.3\" y=\"92.1\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><line x1=\"228\" y1=\"40\" x2=\"296\" y2=\"40\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"38.4\" x2=\"223\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"247\" y1=\"38.4\" x2=\"238\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"262\" y1=\"38.4\" x2=\"253\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"277\" y1=\"38.4\" x2=\"268\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"38.4\" x2=\"283\" y2=\"29.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 262 40 L 262 49 L 268 51.4 L 256 56.2 L 268 61 L 256 65.8 L 268 70.6 L 256 75.4 L 268 80.2 L 256 85 L 268 89.8 L 256 94.6 L 262 97 L 262 106\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"262\" cy=\"106\" r=\"3.2\" fill=\"#2B2527\"/><path d=\"M 262 106 L 262 115 L 268 117.4 L 256 122.2 L 268 127 L 256 131.8 L 268 136.6 L 256 141.4 L 268 146.2 L 256 151 L 268 155.8 L 256 160.6 L 262 163 L 262 172\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"223\" y=\"172\" width=\"78\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"262\" y=\"18\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">serie</text><text x=\"275\" y=\"77\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">k</text><text x=\"281.3\" y=\"79.1\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><text x=\"275\" y=\"143\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">k</text><text x=\"281.3\" y=\"145.1\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Pröva båda kopplingarna mot både förlängnings- och kraftkravet.</p><div class=\"facit-del\"><span class=\"facit-mark\">P</span><div class=\"facit-arbete\"><p>Parallellt adderas fjäderkonstanterna.</p><div class=\"facit-matte\">\\[k_{\\mathrm{eq}}=180+300=480\\ \\mathrm{N/m}\\]\\[x=\\frac{mg}{k_{\\mathrm{eq}}}=\\frac{6{,}0\\cdot9{,}82}{480}=0{,}1228\\ \\mathrm m\\]\\[F_1=180\\cdot0{,}1228=22{,}1\\ \\mathrm N,\\qquad F_2=300\\cdot0{,}1228=36{,}8\\ \\mathrm N\\]</div><p>Förlängningen är \\(12{,}3\\ \\mathrm{cm}\\) och båda krafterna är under \\(40\\ \\mathrm N\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">S</span><div class=\"facit-arbete\"><p>I serie verkar hela tyngdkraften i båda fjädrarna.</p><div class=\"facit-matte\">\\[F=mg=58{,}9\\ \\mathrm N&gt;40\\ \\mathrm N\\]\\[x=\\frac{58{,}9}{180}+\\frac{58{,}9}{300}=0{,}524\\ \\mathrm m\\]</div><p>Seriekopplingen bryter mot båda kraven.</p></div></div><p class=\"facit-svar\"><strong>Svar:</strong> Fjädrarna ska kopplas parallellt.</p><p class=\"facit-not\">I en seriekoppling går samma kraft genom båda fjädrarna, medan parallellkopplade fjädrar får samma förlängning. Därför måste både kraftgränsen och förlängningsintervallet kontrolleras separat för varje koppling.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "problemlösning"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.15",
@@ -2108,16 +2162,18 @@ window.BANK2 = [
     "poang": "(0/1/3)",
     "t": "<p>En 500 kg vagn kör 4,0 m/s mot en fjäderbuffert. Fjädern får tryckas ihop högst 0,30 m och kraften får aldrig överstiga 30 kN. Vilket intervall på k uppfyller båda kraven?</p><span class=\"fig bred\"><svg viewBox=\"0.000 5.329 338.600 131.268\" width=\"620\" height=\"240\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vagn som bromsas av en fjäderbuffert mot en vägg.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vagn som bromsas av en fjäderbuffert mot en vägg.</title><g transform=\"translate(-7,-41)\"><rect x=\"20\" y=\"130\" width=\"302\" height=\"6\" fill=\"#E6E8EC\"/><line x1=\"20\" y1=\"130\" x2=\"322\" y2=\"130\" stroke=\"#2B2527\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"322\" y1=\"54\" x2=\"322\" y2=\"130\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"58\" x2=\"332.6\" y2=\"67\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"75\" x2=\"332.6\" y2=\"84\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"92\" x2=\"332.6\" y2=\"101\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"109\" x2=\"332.6\" y2=\"118\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"126\" x2=\"332.6\" y2=\"135\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 214 104 L 223 104 L 225.5 111.5 L 230.5 96.5 L 235.5 111.5 L 240.5 96.5 L 245.5 111.5 L 250.5 96.5 L 255.5 111.5 L 260.5 96.5 L 265.5 111.5 L 270.5 96.5 L 275.5 111.5 L 280.5 96.5 L 285.5 111.5 L 290.5 96.5 L 295.5 111.5 L 300.5 96.5 L 305.5 111.5 L 310.5 96.5 L 313 104 L 322 104\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"77\" y=\"85\" width=\"62\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"122\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><circle cx=\"90\" cy=\"122\" r=\"2.2\" fill=\"#2B2527\"/><circle cx=\"126\" cy=\"122\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><circle cx=\"126\" cy=\"122\" r=\"2.2\" fill=\"#2B2527\"/><line x1=\"148\" y1=\"78\" x2=\"193.9\" y2=\"78\" stroke=\"#2A5D9E\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"204,78 194.5,82.4 194.5,73.6\" fill=\"#2A5D9E\"/><line x1=\"214\" y1=\"86\" x2=\"214\" y2=\"160\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"260\" y1=\"86\" x2=\"260\" y2=\"160\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"214\" y1=\"156\" x2=\"260\" y2=\"156\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"214\" y1=\"151\" x2=\"214\" y2=\"161\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"151\" x2=\"260\" y2=\"161\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"237\" y=\"170\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">0,30 m</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd energin för att koppla ihop stoppsträckan, fjäderkonstanten och den största kraften.</p><div class=\"facit-del\"><span class=\"facit-mark\">1</span><div class=\"facit-arbete\"><p>För att stoppa vagnen senast vid \\(x=0{,}30\\ \\mathrm m\\) krävs</p><div class=\"facit-matte\">\\[\\frac{kx^2}{2}\\ge\\frac{mv^2}{2}\\quad\\Longrightarrow\\quad k\\ge\\frac{mv^2}{x^2}\\]\\[k\\ge\\frac{500\\cdot4{,}0^2}{0{,}30^2}=8{,}89\\cdot10^4\\ \\mathrm{N/m}\\]</div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">2</span><div class=\"facit-arbete\"><p>Vid den verkliga maximala hoptryckningen gäller både \\(kx_{\\max}^2=mv^2\\) och \\(F_{\\max}=kx_{\\max}\\). Därför</p><div class=\"facit-matte\">\\[F_{\\max}=\\sqrt{kmv^2}\\le30000\\ \\mathrm N\\]\\[k\\le\\frac{(30000)^2}{500\\cdot4{,}0^2}=1{,}125\\cdot10^5\\ \\mathrm{N/m}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> Fjäderkonstanten måste ligga i intervallet \\(88{,}9\\le k\\le112{,}5\\ \\mathrm{kN/m}\\).</p><p class=\"facit-not\">Det tidigare gränsvärdet \\(100\\ \\mathrm{kN/m}\\) skulle felaktigt anta att alla fjädrar trycks ihop hela \\(0{,}30\\ \\mathrm m\\). En styvare fjäder stoppar vagnen tidigare.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "problemlösning"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.16",
@@ -2750,18 +2806,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En våg har frekvensen 6,0 Hz och våglängden 1,5 m. Bestäm vågens utbredningshastighet.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd vågens grundsamband.</p><div class=\"facit-matte\">\\[v=f\\lambda=6{,}0\\cdot1{,}5=9{,}0\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utbredningshastigheten är \\(9{,}0\\ \\mathrm{m/s}\\).</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 9,
     "tolerans": 0.135,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.47",
@@ -2772,18 +2830,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En våg rör sig med 12 m/s och har frekvensen 4,0 Hz. Bestäm våglängden.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut våglängden ur \\(v=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{v}{f}=\\frac{12}{4{,}0}=3{,}0\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(3{,}0\\ \\mathrm m\\).</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 3,
     "tolerans": 0.045,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.48",
@@ -2794,18 +2854,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En våg har periodtiden 0,25 s. Bestäm frekvensen.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Frekvensen är ett delat med periodtiden.</p><div class=\"facit-matte\">\\[f=\\frac{1}{T}=\\frac{1}{0{,}25}=4{,}0\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är \\(4{,}0\\ \\mathrm{Hz}\\).</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 4,
     "tolerans": 0.06,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.49",
@@ -2816,16 +2878,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En transversal våg rör sig åt höger. En markerad punkt på linan befinner sig exakt på en vågtopp. Vilken riktning har punktens momentana hastighet just då?</p><span class=\"fig bred\"><svg viewBox=\"8.234 8.170 251.286 123.864\" width=\"620\" height=\"306\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Transversell våg åt höger; en punkt ligger exakt på en vågtopp.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Transversell våg åt höger; en punkt ligger exakt på en vågtopp.</title><g transform=\"translate(-12.1,-15.59)\"><line x1=\"40\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 40 84 L 41 81.99 L 42 79.99 L 43 78 L 44 76.04 L 45 74.11 L 46 72.22 L 47 70.38 L 48 68.58 L 49 66.85 L 50 65.19 L 51 63.6 L 52 62.09 L 53 60.67 L 54 59.34 L 55 58.11 L 56 56.98 L 57 55.96 L 58 55.05 L 59 54.25 L 60 53.57 L 61 53.01 L 62 52.57 L 63 52.25 L 64 52.06 L 65 52 L 66 52.06 L 67 52.25 L 68 52.57 L 69 53.01 L 70 53.57 L 71 54.25 L 72 55.05 L 73 55.96 L 74 56.98 L 75 58.11 L 76 59.34 L 77 60.67 L 78 62.09 L 79 63.6 L 80 65.19 L 81 66.85 L 82 68.58 L 83 70.38 L 84 72.22 L 85 74.11 L 86 76.04 L 87 78 L 88 79.99 L 89 81.99 L 90 84 L 91 86.01 L 92 88.01 L 93 90 L 94 91.96 L 95 93.89 L 96 95.78 L 97 97.62 L 98 99.42 L 99 101.15 L 100 102.81 L 101 104.4 L 102 105.91 L 103 107.33 L 104 108.66 L 105 109.89 L 106 111.02 L 107 112.04 L 108 112.95 L 109 113.75 L 110 114.43 L 111 114.99 L 112 115.43 L 113 115.75 L 114 115.94 L 115 116 L 116 115.94 L 117 115.75 L 118 115.43 L 119 114.99 L 120 114.43 L 121 113.75 L 122 112.95 L 123 112.04 L 124 111.02 L 125 109.89 L 126 108.66 L 127 107.33 L 128 105.91 L 129 104.4 L 130 102.81 L 131 101.15 L 132 99.42 L 133 97.62 L 134 95.78 L 135 93.89 L 136 91.96 L 137 90 L 138 88.01 L 139 86.01 L 140 84 L 141 81.99 L 142 79.99 L 143 78 L 144 76.04 L 145 74.11 L 146 72.22 L 147 70.38 L 148 68.58 L 149 66.85 L 150 65.19 L 151 63.6 L 152 62.09 L 153 60.67 L 154 59.34 L 155 58.11 L 156 56.98 L 157 55.96 L 158 55.05 L 159 54.25 L 160 53.57 L 161 53.01 L 162 52.57 L 163 52.25 L 164 52.06 L 165 52 L 166 52.06 L 167 52.25 L 168 52.57 L 169 53.01 L 170 53.57 L 171 54.25 L 172 55.05 L 173 55.96 L 174 56.98 L 175 58.11 L 176 59.34 L 177 60.67 L 178 62.09 L 179 63.6 L 180 65.19 L 181 66.85 L 182 68.58 L 183 70.38 L 184 72.22 L 185 74.11 L 186 76.04 L 187 78 L 188 79.99 L 189 81.99 L 190 84 L 191 86.01 L 192 88.01 L 193 90 L 194 91.96 L 195 93.89 L 196 95.78 L 197 97.62 L 198 99.42 L 199 101.15 L 200 102.81 L 201 104.4 L 202 105.91 L 203 107.33 L 204 108.66 L 205 109.89 L 206 111.02 L 207 112.04 L 208 112.95 L 209 113.75 L 210 114.43 L 211 114.99 L 212 115.43 L 213 115.75 L 214 115.94 L 215 116 L 216 115.94 L 217 115.75 L 218 115.43 L 219 114.99 L 220 114.43 L 221 113.75 L 222 112.95 L 223 112.04 L 224 111.02 L 225 109.89 L 226 108.66 L 227 107.33 L 228 105.91 L 229 104.4 L 230 102.81 L 231 101.15 L 232 99.42 L 233 97.62 L 234 95.78 L 235 93.89 L 236 91.96 L 237 90 L 238 88.01 L 239 86.01 L 240 84 L 241 81.99 L 242 79.99 L 243 78 L 244 76.04 L 245 74.11 L 246 72.22 L 247 70.38 L 248 68.58 L 249 66.85 L 250 65.19 L 251 63.6 L 252 62.09 L 253 60.67 L 254 59.34 L 255 58.11 L 256 56.98 L 257 55.96 L 258 55.05 L 259 54.25 L 260 53.57\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"65\" cy=\"52\" r=\"6.5\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><text x=\"65\" y=\"36\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">markerad punkt</text><line x1=\"198\" y1=\"138\" x2=\"249.9\" y2=\"138\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"260,138 250.5,142.4 250.5,133.6\" fill=\"#2A5D9E\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">En punkt i linan svänger tvärs vågens utbredningsriktning. På en vågtopp befinner den sig i ett vändläge.</p><div class=\"facit-matte\">\\[v_y=0\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Punktens hastighet just då är noll.</p><p class=\"facit-not\">Vågmönstret rör sig åt höger, men materialet följer inte med vågen åt höger.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.50",
@@ -2836,17 +2900,19 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En triangulär puls rör sig åt höger mot en fast ände på en lina. Beskriv hur pulsen ser ut direkt efter reflektionen.</p><span class=\"fig bred\"><svg viewBox=\"0.000 10.050 292.163 91.289\" width=\"620\" height=\"194\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Triangulär puls på väg mot en fast ände.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Triangulär puls på väg mot en fast ände.</title><g transform=\"translate(-21,-32.03)\"><line x1=\"34\" y1=\"88\" x2=\"290\" y2=\"88\" stroke=\"#2B2527\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 68 88 L 100 48 L 132 88\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"290\" y1=\"52\" x2=\"290\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"56\" x2=\"300\" y2=\"64\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"68.8\" x2=\"300\" y2=\"76.8\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"81.6\" x2=\"300\" y2=\"89.6\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"94.4\" x2=\"300\" y2=\"102.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"107.2\" x2=\"300\" y2=\"115.2\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"291.8\" y1=\"120\" x2=\"300\" y2=\"128\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"152\" y1=\"62\" x2=\"199.9\" y2=\"62\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"210,62 200.5,66.4 200.5,57.6\" fill=\"#2A5D9E\"/><text x=\"181\" y=\"54\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid en fast ände måste linans ände hela tiden ha elongationen noll. Reflektionen får därför motsatt tecken.</p><p class=\"facit-svar\"><strong>Svar:</strong> Pulsen reflekteras inverterad: den blir nedåtriktad och rör sig åt vänster.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning"
+    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.51",
@@ -2857,18 +2923,20 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En sinusvåg med våglängden 4,0 m rör sig åt höger med 2,0 m/s. Vid t=0 befinner sig en viss materialpunkt i jämviktsläget och rör sig uppåt. Bestäm punktens läge efter 0,75 s om amplituden är 6,0 cm.</p><span class=\"fig smal\"><svg viewBox=\"0 0 252 148\" width=\"380\" height=\"223\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Sinusvåg med våglängden 4,0 m som rör sig åt höger med 2,0 m/s.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Sinusvåg med våglängden 4,0 m som rör sig åt höger med 2,0 m/s.</title><g transform=\"translate(-31,-33)\"><line x1=\"44\" y1=\"88\" x2=\"268\" y2=\"88\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 44 88 L 45 85.95 L 46 83.9 L 47 81.87 L 48 79.86 L 49 77.88 L 50 75.94 L 51 74.05 L 52 72.2 L 53 70.41 L 54 68.69 L 55 67.03 L 56 65.45 L 57 63.96 L 58 62.55 L 59 61.24 L 60 60.02 L 61 58.9 L 62 57.89 L 63 57 L 64 56.21 L 65 55.54 L 66 54.99 L 67 54.56 L 68 54.25 L 69 54.06 L 70 54 L 71 54.06 L 72 54.25 L 73 54.56 L 74 54.99 L 75 55.54 L 76 56.21 L 77 57 L 78 57.89 L 79 58.9 L 80 60.02 L 81 61.24 L 82 62.55 L 83 63.96 L 84 65.45 L 85 67.03 L 86 68.69 L 87 70.41 L 88 72.2 L 89 74.05 L 90 75.94 L 91 77.88 L 92 79.86 L 93 81.87 L 94 83.9 L 95 85.95 L 96 88 L 97 90.05 L 98 92.1 L 99 94.13 L 100 96.14 L 101 98.12 L 102 100.06 L 103 101.95 L 104 103.8 L 105 105.59 L 106 107.31 L 107 108.97 L 108 110.55 L 109 112.04 L 110 113.45 L 111 114.76 L 112 115.98 L 113 117.1 L 114 118.11 L 115 119 L 116 119.79 L 117 120.46 L 118 121.01 L 119 121.44 L 120 121.75 L 121 121.94 L 122 122 L 123 121.94 L 124 121.75 L 125 121.44 L 126 121.01 L 127 120.46 L 128 119.79 L 129 119 L 130 118.11 L 131 117.1 L 132 115.98 L 133 114.76 L 134 113.45 L 135 112.04 L 136 110.55 L 137 108.97 L 138 107.31 L 139 105.59 L 140 103.8 L 141 101.95 L 142 100.06 L 143 98.12 L 144 96.14 L 145 94.13 L 146 92.1 L 147 90.05 L 148 88 L 149 85.95 L 150 83.9 L 151 81.87 L 152 79.86 L 153 77.88 L 154 75.94 L 155 74.05 L 156 72.2 L 157 70.41 L 158 68.69 L 159 67.03 L 160 65.45 L 161 63.96 L 162 62.55 L 163 61.24 L 164 60.02 L 165 58.9 L 166 57.89 L 167 57 L 168 56.21 L 169 55.54 L 170 54.99 L 171 54.56 L 172 54.25 L 173 54.06 L 174 54 L 175 54.06 L 176 54.25 L 177 54.56 L 178 54.99 L 179 55.54 L 180 56.21 L 181 57 L 182 57.89 L 183 58.9 L 184 60.02 L 185 61.24 L 186 62.55 L 187 63.96 L 188 65.45 L 189 67.03 L 190 68.69 L 191 70.41 L 192 72.2 L 193 74.05 L 194 75.94 L 195 77.88 L 196 79.86 L 197 81.87 L 198 83.9 L 199 85.95 L 200 88 L 201 90.05 L 202 92.1 L 203 94.13 L 204 96.14 L 205 98.12 L 206 100.06 L 207 101.95 L 208 103.8 L 209 105.59 L 210 107.31 L 211 108.97 L 212 110.55 L 213 112.04 L 214 113.45 L 215 114.76 L 216 115.98 L 217 117.1 L 218 118.11 L 219 119 L 220 119.79 L 221 120.46 L 222 121.01 L 223 121.44 L 224 121.75 L 225 121.94 L 226 122 L 227 121.94 L 228 121.75 L 229 121.44 L 230 121.01 L 231 120.46 L 232 119.79 L 233 119 L 234 118.11 L 235 117.1 L 236 115.98 L 237 114.76 L 238 113.45 L 239 112.04 L 240 110.55 L 241 108.97 L 242 107.31 L 243 105.59 L 244 103.8 L 245 101.95 L 246 100.06 L 247 98.12 L 248 96.14 L 249 94.13 L 250 92.1 L 251 90.05 L 252 88 L 253 85.95 L 254 83.9 L 255 81.87 L 256 79.86 L 257 77.88 L 258 75.94 L 259 74.05 L 260 72.2 L 261 70.41 L 262 68.69 L 263 67.03 L 264 65.45 L 265 63.96 L 266 62.55 L 267 61.24 L 268 60.02\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"96\" cy=\"88\" r=\"5\" fill=\"#2B2527\"/><line x1=\"96\" y1=\"78\" x2=\"96\" y2=\"58.1\" stroke=\"#B43123\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"96,48 100.4,57.5 91.6,57.5\" fill=\"#B43123\"/><line x1=\"210\" y1=\"168\" x2=\"257.9\" y2=\"168\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"268,168 258.5,172.4 258.5,163.6\" fill=\"#2A5D9E\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först perioden. Eftersom punkten startar i jämviktsläget och rör sig uppåt används en sinusfunktion.</p><div class=\"facit-matte\">\\[T=\\frac{\\lambda}{v}=\\frac{4{,}0}{2{,}0}=2{,}0\\ \\mathrm s\\]\\[y(t)=A\\sin\\left(\\frac{2\\pi t}{T}\\right)\\]\\[y(0{,}75)=0{,}060\\sin\\left(\\frac{2\\pi\\cdot0{,}75}{2{,}0}\\right)=0{,}0424\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Punkten är \\(4{,}24\\ \\mathrm{cm}\\) över jämviktsläget.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 4.24,
     "tolerans": 0.0636,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "cm",
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.52",
@@ -2900,17 +2968,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Vattenvågor går från djupt till grunt vatten. Frekvensen ändras inte. I det djupa området är hastigheten 0,30 m/s och våglängden 10 cm. I det grunda området mäts våglängden till 6,5 cm. Bestäm våghastigheten där och förklara varför vågfronterna bryts när de går snett över gränsen.</p><span class=\"fig smal\"><svg viewBox=\"0 0 298 181.8\" width=\"380\" height=\"232\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vattenvågor som går snett från djupt till grunt vatten.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vattenvågor som går snett från djupt till grunt vatten.</title><g transform=\"translate(-21,-3.2)\"><rect x=\"34\" y=\"34\" width=\"138\" height=\"138\" fill=\"#EFF3F8\" opacity=\"0.5\"/><rect x=\"172\" y=\"34\" width=\"134\" height=\"138\" fill=\"#DCE4EE\" opacity=\"0.7\"/><line x1=\"57.79\" y1=\"34\" x2=\"34\" y2=\"64.45\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"95.86\" y1=\"34\" x2=\"34\" y2=\"113.18\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"133.93\" y1=\"34\" x2=\"34\" y2=\"161.9\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"34\" x2=\"64.18\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"34\" x2=\"172\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"82.73\" x2=\"102.25\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"82.73\" x2=\"193.28\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"131.46\" x2=\"140.32\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"131.46\" x2=\"214.56\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"175.57\" y1=\"172\" x2=\"235.83\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"196.85\" y1=\"172\" x2=\"257.11\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"218.13\" y1=\"172\" x2=\"278.39\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"239.41\" y1=\"172\" x2=\"299.67\" y2=\"34\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"260.69\" y1=\"172\" x2=\"306\" y2=\"68.23\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"34\" x2=\"172\" y2=\"172\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"24\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">djupt</text><text x=\"239\" y=\"24\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">grunt</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Frekvensen bestäms av källan och är oförändrad när vågen passerar gränsen.</p><div class=\"facit-matte\">\\[f=\\frac{v_1}{\\lambda_1}=\\frac{0{,}30}{0{,}10}=3{,}0\\ \\mathrm{Hz}\\]\\[v_2=f\\lambda_2=3{,}0\\cdot0{,}065=0{,}195\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> I det grunda området är våghastigheten \\(0{,}195\\ \\mathrm{m/s}\\).</p><p class=\"facit-not\">Den del av en sned vågfront som når det långsammare området först bromsas först. Därför vrids vågfronten och utbredningsriktningen bryts.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.54",
@@ -2941,17 +3011,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Parallella vattenvågor går från ett område där hastigheten är 0,50 m/s till ett område där hastigheten är 0,30 m/s. Infallsvinkeln mellan vågens utbredningsriktning och normalen är 40°. Bestäm brytningsvinkeln. Bestäm dessutom hur våglängden förändras om den är 12 cm före gränsen, och förklara varför frekvensen inte förändras.</p><span class=\"fig smal\"><svg viewBox=\"0 0 302 168\" width=\"380\" height=\"211\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vågfronter som bryts när hastigheten minskar från 0,50 till 0,30 m/s.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vågfronter som bryts när hastigheten minskar från 0,50 till 0,30 m/s.</title><g transform=\"translate(-21,-23)\"><rect x=\"34\" y=\"36\" width=\"140\" height=\"142\" fill=\"#EFF3F8\" opacity=\"0.5\"/><rect x=\"174\" y=\"36\" width=\"136\" height=\"142\" fill=\"#DCE4EE\" opacity=\"0.7\"/><line x1=\"40.85\" y1=\"36\" x2=\"34\" y2=\"44.16\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"85.23\" y1=\"36\" x2=\"34\" y2=\"97.06\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"129.62\" y1=\"36\" x2=\"34\" y2=\"149.95\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"36\" x2=\"54.85\" y2=\"178\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"36\" x2=\"174\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"88.89\" x2=\"99.23\" y2=\"178\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"88.89\" x2=\"196.11\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"141.79\" x2=\"143.62\" y2=\"178\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"141.79\" x2=\"218.22\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"180.97\" y1=\"178\" x2=\"240.33\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"203.08\" y1=\"178\" x2=\"262.44\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"225.2\" y1=\"178\" x2=\"284.55\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"247.31\" y1=\"178\" x2=\"306.66\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"269.42\" y1=\"178\" x2=\"310\" y2=\"80.91\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"36\" x2=\"174\" y2=\"178\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"107\" x2=\"228\" y2=\"107\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"234\" y=\"99\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">normal</text><line x1=\"126.51\" y1=\"67.15\" x2=\"160.13\" y2=\"95.37\" stroke=\"#2A5D9E\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"167.87,101.86 157.77,99.12 163.42,92.38\" fill=\"#2A5D9E\"/><line x1=\"181.38\" y1=\"110.09\" x2=\"221.88\" y2=\"127.02\" stroke=\"#B43123\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"231.2,130.91 220.74,131.31 224.14,123.19\" fill=\"#B43123\"/><text x=\"140\" y=\"91\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">40°</text><text x=\"191\" y=\"137\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Använd brytningslagen för vågor.</p><div class=\"facit-matte\">\\[\\frac{\\sin\\theta_1}{\\sin\\theta_2}=\\frac{v_1}{v_2}\\]\\[\\sin\\theta_2=\\frac{v_2}{v_1}\\sin40^\\circ=\\frac{0{,}30}{0{,}50}\\sin40^\\circ\\]\\[\\theta_2=22{,}7^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Brytningsvinkeln är \\(22{,}7^\\circ\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[f=\\frac{v_1}{\\lambda_1}=\\frac{0{,}50}{0{,}12}=4{,}17\\ \\mathrm{Hz}\\]\\[\\lambda_2=\\frac{v_2}{f}=\\frac{0{,}30}{4{,}17}=0{,}072\\ \\mathrm m=7{,}2\\ \\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden minskar till \\(7{,}2\\ \\mathrm{cm}\\).</p><p class=\"facit-not\">Frekvensen bestäms av källan och är densamma på båda sidor om gränsen.</p></div></div></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning"
+    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.56",
@@ -2962,18 +3034,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Figuren visar en våg. Avståndet som markerats motsvarar två hela våglängder. Bestäm våglängden.</p><span class=\"fig bred\"><svg viewBox=\"1.497 6.360 259.006 113.474\" width=\"620\" height=\"272\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Sträckan 3,6 m motsvarar exakt två våglängder.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Sträckan 3,6 m motsvarar exakt två våglängder.</title><g transform=\"translate(-21,-37.05)\"><line x1=\"34\" y1=\"82\" x2=\"270\" y2=\"82\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 44 82 L 45 80.14 L 46 78.29 L 47 76.44 L 48 74.62 L 49 72.82 L 50 71.06 L 51 69.33 L 52 67.64 L 53 66 L 54 64.42 L 55 62.89 L 56 61.43 L 57 60.04 L 58 58.72 L 59 57.49 L 60 56.33 L 61 55.26 L 62 54.29 L 63 53.4 L 64 52.62 L 65 51.93 L 66 51.34 L 67 50.86 L 68 50.49 L 69 50.22 L 70 50.05 L 71 50 L 72 50.05 L 73 50.22 L 74 50.49 L 75 50.86 L 76 51.34 L 77 51.93 L 78 52.62 L 79 53.4 L 80 54.29 L 81 55.26 L 82 56.33 L 83 57.49 L 84 58.72 L 85 60.04 L 86 61.43 L 87 62.89 L 88 64.42 L 89 66 L 90 67.64 L 91 69.33 L 92 71.06 L 93 72.82 L 94 74.62 L 95 76.44 L 96 78.29 L 97 80.14 L 98 82 L 99 83.86 L 100 85.71 L 101 87.56 L 102 89.38 L 103 91.18 L 104 92.94 L 105 94.67 L 106 96.36 L 107 98 L 108 99.58 L 109 101.11 L 110 102.57 L 111 103.96 L 112 105.28 L 113 106.51 L 114 107.67 L 115 108.74 L 116 109.71 L 117 110.6 L 118 111.38 L 119 112.07 L 120 112.66 L 121 113.14 L 122 113.51 L 123 113.78 L 124 113.95 L 125 114 L 126 113.95 L 127 113.78 L 128 113.51 L 129 113.14 L 130 112.66 L 131 112.07 L 132 111.38 L 133 110.6 L 134 109.71 L 135 108.74 L 136 107.67 L 137 106.51 L 138 105.28 L 139 103.96 L 140 102.57 L 141 101.11 L 142 99.58 L 143 98 L 144 96.36 L 145 94.67 L 146 92.94 L 147 91.18 L 148 89.38 L 149 87.56 L 150 85.71 L 151 83.86 L 152 82 L 153 80.14 L 154 78.29 L 155 76.44 L 156 74.62 L 157 72.82 L 158 71.06 L 159 69.33 L 160 67.64 L 161 66 L 162 64.42 L 163 62.89 L 164 61.43 L 165 60.04 L 166 58.72 L 167 57.49 L 168 56.33 L 169 55.26 L 170 54.29 L 171 53.4 L 172 52.62 L 173 51.93 L 174 51.34 L 175 50.86 L 176 50.49 L 177 50.22 L 178 50.05 L 179 50 L 180 50.05 L 181 50.22 L 182 50.49 L 183 50.86 L 184 51.34 L 185 51.93 L 186 52.62 L 187 53.4 L 188 54.29 L 189 55.26 L 190 56.33 L 191 57.49 L 192 58.72 L 193 60.04 L 194 61.43 L 195 62.89 L 196 64.42 L 197 66 L 198 67.64 L 199 69.33 L 200 71.06 L 201 72.82 L 202 74.62 L 203 76.44 L 204 78.29 L 205 80.14 L 206 82 L 207 83.86 L 208 85.71 L 209 87.56 L 210 89.38 L 211 91.18 L 212 92.94 L 213 94.67 L 214 96.36 L 215 98 L 216 99.58 L 217 101.11 L 218 102.57 L 219 103.96 L 220 105.28 L 221 106.51 L 222 107.67 L 223 108.74 L 224 109.71 L 225 110.6 L 226 111.38 L 227 112.07 L 228 112.66 L 229 113.14 L 230 113.51 L 231 113.78 L 232 113.95 L 233 114 L 234 113.95 L 235 113.78 L 236 113.51 L 237 113.14 L 238 112.66 L 239 112.07 L 240 111.38 L 241 110.6 L 242 109.71 L 243 108.74 L 244 107.67 L 245 106.51 L 246 105.28 L 247 103.96 L 248 102.57 L 249 101.11 L 250 99.58 L 251 98 L 252 96.36 L 253 94.67 L 254 92.94 L 255 91.18 L 256 89.38 L 257 87.56 L 258 85.71 L 259 83.86 L 260 82\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"44\" cy=\"82\" r=\"4\" fill=\"#2B2527\"/><circle cx=\"260\" cy=\"82\" r=\"4\" fill=\"#2B2527\"/><line x1=\"44\" y1=\"136\" x2=\"260\" y2=\"136\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"44\" y1=\"131\" x2=\"44\" y2=\"141\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"131\" x2=\"260\" y2=\"141\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"152\" y=\"150\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">3,6 m</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den markerade sträckan innehåller två hela våglängder.</p><div class=\"facit-matte\">\\[2\\lambda=3{,}6\\ \\mathrm m\\quad\\Longrightarrow\\quad \\lambda=\\frac{3{,}6}{2}=1{,}8\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(1{,}8\\ \\mathrm m\\).</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 1.8,
     "tolerans": 0.027,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.57",
@@ -2984,16 +3058,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Vågmönstret rör sig åt höger. Den markerade punkten på linan ligger på en del av vågen som lutar uppåt åt höger. Åt vilket håll rör sig punkten just nu?</p><span class=\"fig bred\"><svg viewBox=\"1.771 -1.349 242.686 109.747\" width=\"620\" height=\"280\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vågmönster åt höger; punkten ligger på en flank som lutar uppåt åt höger.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vågmönster åt höger; punkten ligger på en flank som lutar uppåt åt höger.</title><g transform=\"translate(-27,-39.06)\"><line x1=\"40\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 40 84 L 41 81.99 L 42 79.99 L 43 78 L 44 76.04 L 45 74.11 L 46 72.22 L 47 70.38 L 48 68.58 L 49 66.85 L 50 65.19 L 51 63.6 L 52 62.09 L 53 60.67 L 54 59.34 L 55 58.11 L 56 56.98 L 57 55.96 L 58 55.05 L 59 54.25 L 60 53.57 L 61 53.01 L 62 52.57 L 63 52.25 L 64 52.06 L 65 52 L 66 52.06 L 67 52.25 L 68 52.57 L 69 53.01 L 70 53.57 L 71 54.25 L 72 55.05 L 73 55.96 L 74 56.98 L 75 58.11 L 76 59.34 L 77 60.67 L 78 62.09 L 79 63.6 L 80 65.19 L 81 66.85 L 82 68.58 L 83 70.38 L 84 72.22 L 85 74.11 L 86 76.04 L 87 78 L 88 79.99 L 89 81.99 L 90 84 L 91 86.01 L 92 88.01 L 93 90 L 94 91.96 L 95 93.89 L 96 95.78 L 97 97.62 L 98 99.42 L 99 101.15 L 100 102.81 L 101 104.4 L 102 105.91 L 103 107.33 L 104 108.66 L 105 109.89 L 106 111.02 L 107 112.04 L 108 112.95 L 109 113.75 L 110 114.43 L 111 114.99 L 112 115.43 L 113 115.75 L 114 115.94 L 115 116 L 116 115.94 L 117 115.75 L 118 115.43 L 119 114.99 L 120 114.43 L 121 113.75 L 122 112.95 L 123 112.04 L 124 111.02 L 125 109.89 L 126 108.66 L 127 107.33 L 128 105.91 L 129 104.4 L 130 102.81 L 131 101.15 L 132 99.42 L 133 97.62 L 134 95.78 L 135 93.89 L 136 91.96 L 137 90 L 138 88.01 L 139 86.01 L 140 84 L 141 81.99 L 142 79.99 L 143 78 L 144 76.04 L 145 74.11 L 146 72.22 L 147 70.38 L 148 68.58 L 149 66.85 L 150 65.19 L 151 63.6 L 152 62.09 L 153 60.67 L 154 59.34 L 155 58.11 L 156 56.98 L 157 55.96 L 158 55.05 L 159 54.25 L 160 53.57 L 161 53.01 L 162 52.57 L 163 52.25 L 164 52.06 L 165 52 L 166 52.06 L 167 52.25 L 168 52.57 L 169 53.01 L 170 53.57 L 171 54.25 L 172 55.05 L 173 55.96 L 174 56.98 L 175 58.11 L 176 59.34 L 177 60.67 L 178 62.09 L 179 63.6 L 180 65.19 L 181 66.85 L 182 68.58 L 183 70.38 L 184 72.22 L 185 74.11 L 186 76.04 L 187 78 L 188 79.99 L 189 81.99 L 190 84 L 191 86.01 L 192 88.01 L 193 90 L 194 91.96 L 195 93.89 L 196 95.78 L 197 97.62 L 198 99.42 L 199 101.15 L 200 102.81 L 201 104.4 L 202 105.91 L 203 107.33 L 204 108.66 L 205 109.89 L 206 111.02 L 207 112.04 L 208 112.95 L 209 113.75 L 210 114.43 L 211 114.99 L 212 115.43 L 213 115.75 L 214 115.94 L 215 116 L 216 115.94 L 217 115.75 L 218 115.43 L 219 114.99 L 220 114.43 L 221 113.75 L 222 112.95 L 223 112.04 L 224 111.02 L 225 109.89 L 226 108.66 L 227 107.33 L 228 105.91 L 229 104.4 L 230 102.81 L 231 101.15 L 232 99.42 L 233 97.62 L 234 95.78 L 235 93.89 L 236 91.96 L 237 90 L 238 88.01 L 239 86.01 L 240 84 L 241 81.99 L 242 79.99 L 243 78 L 244 76.04 L 245 74.11 L 246 72.22 L 247 70.38 L 248 68.58 L 249 66.85 L 250 65.19 L 251 63.6 L 252 62.09 L 253 60.67 L 254 59.34 L 255 58.11 L 256 56.98 L 257 55.96 L 258 55.05 L 259 54.25 L 260 53.57\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"84\" r=\"6.5\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><text x=\"130\" y=\"50\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">markerad punkt</text><line x1=\"198\" y1=\"138\" x2=\"249.9\" y2=\"138\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"260,138 250.5,142.4 250.5,133.6\" fill=\"#2A5D9E\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en högerriktad våg \\(y(x,t)=F(x-vt)\\) har punktens tvärhastighet motsatt tecken mot kurvans lutning.</p><div class=\"facit-matte\">\\[\\frac{\\partial y}{\\partial t}=-v\\frac{\\partial y}{\\partial x}\\]</div><p>Här är lutningen positiv, alltså är tvärhastigheten negativ.</p><p class=\"facit-svar\"><strong>Svar:</strong> Punkten rör sig nedåt.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.58",
@@ -3004,18 +3080,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Pulsen i figuren rör sig mot en fri ände. Rita eller beskriv pulsens utseende direkt efter reflektionen.</p><span class=\"fig bred\"><svg viewBox=\"0.000 10.647 284.540 82.716\" width=\"620\" height=\"180\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Puls på väg mot en fri ände.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Puls på väg mot en fri ände.</title><g transform=\"translate(-21,-32.03)\"><line x1=\"34\" y1=\"88\" x2=\"286\" y2=\"88\" stroke=\"#2B2527\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 68 88 L 100 48 L 132 88\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"286\" y1=\"56\" x2=\"286\" y2=\"120\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"286\" cy=\"88\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"152\" y1=\"62\" x2=\"199.9\" y2=\"62\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"210,62 200.5,66.4 200.5,57.6\" fill=\"#2A5D9E\"/><text x=\"181\" y=\"54\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid en fri ände kan ändpunkten röra sig, så reflektionen behöver inte byta tecken.</p><p class=\"facit-svar\"><strong>Svar:</strong> Pulsen reflekteras utan invertering: den är fortfarande uppåtriktad men rör sig åt vänster.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning"
+    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.59",
@@ -3047,17 +3125,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Vattenvågorna i figuren går från område 1 till område 2. I område 1 är våglängden 12 cm och våghastigheten 0,48 m/s. I område 2 är våglängden 8,0 cm. Bestäm våghastigheten i område 2 och förklara varför frekvensen inte ändras vid gränsen.</p><span class=\"fig smal\"><svg viewBox=\"0 0 298 179.8\" width=\"380\" height=\"229\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vattenvågor från område 1 till område 2 med kortare våglängd.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vattenvågor från område 1 till område 2 med kortare våglängd.</title><g transform=\"translate(-21,-5.2)\"><rect x=\"34\" y=\"36\" width=\"138\" height=\"136\" fill=\"#EFF3F8\" opacity=\"0.5\"/><rect x=\"172\" y=\"36\" width=\"134\" height=\"136\" fill=\"#DCE4EE\" opacity=\"0.7\"/><line x1=\"48.97\" y1=\"36\" x2=\"34\" y2=\"58.19\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"89.98\" y1=\"36\" x2=\"34\" y2=\"118.99\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130.99\" y1=\"36\" x2=\"39.26\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"80.27\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"172\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"96.8\" x2=\"121.28\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"96.8\" x2=\"196.43\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"157.6\" x2=\"162.29\" y2=\"172\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"157.6\" x2=\"220.86\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"190.64\" y1=\"172\" x2=\"245.28\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"215.07\" y1=\"172\" x2=\"269.71\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"239.5\" y1=\"172\" x2=\"294.14\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"263.93\" y1=\"172\" x2=\"306\" y2=\"67.28\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"172\" y2=\"172\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"26\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">område 1</text><text x=\"239\" y=\"26\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">område 2</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först frekvensen i område 1. Samma frekvens gäller i område 2.</p><div class=\"facit-matte\">\\[f=\\frac{v_1}{\\lambda_1}=\\frac{0{,}48}{0{,}12}=4{,}0\\ \\mathrm{Hz}\\]\\[v_2=f\\lambda_2=4{,}0\\cdot0{,}080=0{,}32\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våghastigheten i område 2 är \\(0{,}32\\ \\mathrm{m/s}\\).</p><p class=\"facit-not\">Källan bestämmer frekvensen. Vågtoppar kan inte skapas eller försvinna vid gränsen.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.61",
@@ -3068,16 +3148,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Pulsen rör sig åt höger med en ruta per sekund. Var ligger pulsen efter 3,0 s?</p><span class=\"fig bred\"><svg viewBox=\"0.000 5.919 296.000 152.920\" width=\"620\" height=\"320\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Puls på en lina med rutnät; pulsen flyttas tre rutor på 3,0 s.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Puls på en lina med rutnät; pulsen flyttas tre rutor på 3,0 s.</title><g transform=\"translate(-21,-21)\"><line x1=\"34\" y1=\"34\" x2=\"34\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"64\" y1=\"34\" x2=\"64\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"94\" y1=\"34\" x2=\"94\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"124\" y1=\"34\" x2=\"124\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"154\" y1=\"34\" x2=\"154\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"184\" y1=\"34\" x2=\"184\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"214\" y1=\"34\" x2=\"214\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"244\" y1=\"34\" x2=\"244\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"274\" y1=\"34\" x2=\"274\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"304\" y1=\"34\" x2=\"304\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"34\" x2=\"304\" y2=\"34\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"64\" x2=\"304\" y2=\"64\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"94\" x2=\"304\" y2=\"94\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"124\" x2=\"304\" y2=\"124\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"#DFE1E6\" stroke-width=\"1\" opacity=\"0.75\"/><line x1=\"34\" y1=\"124\" x2=\"304\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 64 124 L 94 64 L 124 124\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"160\" y1=\"52\" x2=\"209.9\" y2=\"52\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"220,52 210.5,56.4 210.5,47.6\" fill=\"#2A5D9E\"/><text x=\"304\" y=\"174\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">bilden visar t = 0</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Pulsen förflyttas en ruta varje sekund.</p><div class=\"facit-matte\">\\[\\Delta x=(1\\text{ ruta/s})\\cdot3{,}0\\ \\mathrm s=3\\text{ rutor}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Efter \\(3{,}0\\ \\mathrm s\\) ligger hela pulsen tre rutor åt höger, med oförändrad form och amplitud.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.62",
@@ -3088,16 +3170,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En uppåtriktad puls närmar sig en fast ände. Hur ser den reflekterade pulsen ut?</p><span class=\"fig bred\"><svg viewBox=\"0.000 9.901 287.761 91.581\" width=\"620\" height=\"197\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Puls som närmar sig en fast ände.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Puls som närmar sig en fast ände.</title><g transform=\"translate(-21,-32.03)\"><line x1=\"34\" y1=\"88\" x2=\"286\" y2=\"88\" stroke=\"#2B2527\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 64 88 L 95 48 L 126 88\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"286\" y1=\"52\" x2=\"286\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"56\" x2=\"296\" y2=\"64\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"68.8\" x2=\"296\" y2=\"76.8\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"81.6\" x2=\"296\" y2=\"89.6\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"94.4\" x2=\"296\" y2=\"102.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"107.2\" x2=\"296\" y2=\"115.2\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"120\" x2=\"296\" y2=\"128\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"146\" y1=\"62\" x2=\"193.9\" y2=\"62\" stroke=\"#2A5D9E\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><polygon points=\"204,62 194.5,66.4 194.5,57.6\" fill=\"#2A5D9E\"/><text x=\"175\" y=\"54\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den fasta änden kan inte röra sig, så elongationen där måste hela tiden vara noll. För att den inkommande och reflekterade pulsen ska uppfylla detta måste den reflekterade pulsen få motsatt tecken.</p><p class=\"facit-svar\"><strong>Svar:</strong> Pulsen reflekteras inverterad: den blir nedåtriktad och rör sig tillbaka åt vänster.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning"
+    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.63",
@@ -3128,16 +3212,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Punkterna A och B på samma sinusvåg ligger en halv våglängd från varandra. Hur skiljer sig deras svängningar?</p><span class=\"fig bred\"><svg viewBox=\"0.743 8.342 258.514 156.314\" width=\"620\" height=\"375\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två punkter på en våg som ligger en halv våglängd isär.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två punkter på en våg som ligger en halv våglängd isär.</title><g transform=\"translate(-31,-19.64)\"><line x1=\"44\" y1=\"92\" x2=\"278\" y2=\"92\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 44 92 L 45 90.06 L 46 88.12 L 47 86.2 L 48 84.3 L 49 82.42 L 50 80.57 L 51 78.76 L 52 77 L 53 75.28 L 54 73.62 L 55 72.02 L 56 70.48 L 57 69.01 L 58 67.62 L 59 66.3 L 60 65.08 L 61 63.93 L 62 62.88 L 63 61.93 L 64 61.07 L 65 60.32 L 66 59.66 L 67 59.12 L 68 58.68 L 69 58.35 L 70 58.12 L 71 58.01 L 72 58.01 L 73 58.12 L 74 58.35 L 75 58.68 L 76 59.12 L 77 59.66 L 78 60.32 L 79 61.07 L 80 61.93 L 81 62.88 L 82 63.93 L 83 65.08 L 84 66.3 L 85 67.62 L 86 69.01 L 87 70.48 L 88 72.02 L 89 73.62 L 90 75.28 L 91 77 L 92 78.76 L 93 80.57 L 94 82.42 L 95 84.3 L 96 86.2 L 97 88.12 L 98 90.06 L 99 92 L 100 93.94 L 101 95.88 L 102 97.8 L 103 99.7 L 104 101.58 L 105 103.43 L 106 105.24 L 107 107 L 108 108.72 L 109 110.38 L 110 111.98 L 111 113.52 L 112 114.99 L 113 116.38 L 114 117.7 L 115 118.92 L 116 120.07 L 117 121.12 L 118 122.07 L 119 122.93 L 120 123.68 L 121 124.34 L 122 124.88 L 123 125.32 L 124 125.65 L 125 125.88 L 126 125.99 L 127 125.99 L 128 125.88 L 129 125.65 L 130 125.32 L 131 124.88 L 132 124.34 L 133 123.68 L 134 122.93 L 135 122.07 L 136 121.12 L 137 120.07 L 138 118.92 L 139 117.7 L 140 116.38 L 141 114.99 L 142 113.52 L 143 111.98 L 144 110.38 L 145 108.72 L 146 107 L 147 105.24 L 148 103.43 L 149 101.58 L 150 99.7 L 151 97.8 L 152 95.88 L 153 93.94 L 154 92 L 155 90.06 L 156 88.12 L 157 86.2 L 158 84.3 L 159 82.42 L 160 80.57 L 161 78.76 L 162 77 L 163 75.28 L 164 73.62 L 165 72.02 L 166 70.48 L 167 69.01 L 168 67.62 L 169 66.3 L 170 65.08 L 171 63.93 L 172 62.88 L 173 61.93 L 174 61.07 L 175 60.32 L 176 59.66 L 177 59.12 L 178 58.68 L 179 58.35 L 180 58.12 L 181 58.01 L 182 58.01 L 183 58.12 L 184 58.35 L 185 58.68 L 186 59.12 L 187 59.66 L 188 60.32 L 189 61.07 L 190 61.93 L 191 62.88 L 192 63.93 L 193 65.08 L 194 66.3 L 195 67.62 L 196 69.01 L 197 70.48 L 198 72.02 L 199 73.62 L 200 75.28 L 201 77 L 202 78.76 L 203 80.57 L 204 82.42 L 205 84.3 L 206 86.2 L 207 88.12 L 208 90.06 L 209 92 L 210 93.94 L 211 95.88 L 212 97.8 L 213 99.7 L 214 101.58 L 215 103.43 L 216 105.24 L 217 107 L 218 108.72 L 219 110.38 L 220 111.98 L 221 113.52 L 222 114.99 L 223 116.38 L 224 117.7 L 225 118.92 L 226 120.07 L 227 121.12 L 228 122.07 L 229 122.93 L 230 123.68 L 231 124.34 L 232 124.88 L 233 125.32 L 234 125.65 L 235 125.88 L 236 125.99 L 237 125.99 L 238 125.88 L 239 125.65 L 240 125.32 L 241 124.88 L 242 124.34 L 243 123.68 L 244 122.93 L 245 122.07 L 246 121.12 L 247 120.07 L 248 118.92 L 249 117.7 L 250 116.38 L 251 114.99 L 252 113.52 L 253 111.98 L 254 110.38 L 255 108.72 L 256 107 L 257 105.24 L 258 103.43 L 259 101.58 L 260 99.7 L 261 97.8 L 262 95.88 L 263 93.94 L 264 92 L 265 90.06 L 266 88.12 L 267 86.2 L 268 84.3 L 269 82.42 L 270 80.57 L 271 78.76 L 272 77 L 273 75.28 L 274 73.62 L 275 72.02 L 276 70.48 L 277 69.01 L 278 67.62\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"71.5\" cy=\"58\" r=\"6.5\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><circle cx=\"126.5\" cy=\"126\" r=\"6.5\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><text x=\"71.5\" y=\"42\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"126.5\" y=\"148\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><line x1=\"71.5\" y1=\"164\" x2=\"126.5\" y2=\"164\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"71.5\" y1=\"159\" x2=\"71.5\" y2=\"169\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"126.5\" y1=\"159\" x2=\"126.5\" y2=\"169\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"99\" y=\"178\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">λ/2</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Omvandla avståndet till en fasskillnad.</p><div class=\"facit-matte\">\\[\\Delta\\varphi=2\\pi\\frac{\\Delta x}{\\lambda}=2\\pi\\frac{\\lambda/2}{\\lambda}=\\pi\\ \\mathrm{rad}=180^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> A och B svänger i motfas. När A är maximalt uppåt är B maximalt nedåt.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.65",
@@ -3169,11 +3255,11 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Två ögonblicksbilder visar samma puls. På 0,30 s har pulsens topp flyttats 0,90 m åt höger. Bestäm våghastigheten och beskriv vad som har hänt med linans materialpunkter.</p><span class=\"fig smal\"><svg viewBox=\"0.496 4.464 340.543 173.907\" width=\"380\" height=\"194\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Samma puls vid t = 0 och t = 0,30 s.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Samma puls vid t = 0 och t = 0,30 s.</title><g transform=\"translate(-27,-13)\"><line x1=\"40\" y1=\"62\" x2=\"298\" y2=\"62\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 74 62 L 103 28 L 132 62\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"304\" y=\"66\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">t = 0</text><line x1=\"40\" y1=\"138\" x2=\"298\" y2=\"138\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M 170 138 L 199 104 L 228 138\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"304\" y=\"142\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">t = 0,30 s</text><line x1=\"103\" y1=\"26\" x2=\"103\" y2=\"160\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3.5\"/><line x1=\"199\" y1=\"102\" x2=\"199\" y2=\"160\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3.5\"/><line x1=\"103\" y1=\"168\" x2=\"199\" y2=\"168\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"103\" y1=\"163\" x2=\"103\" y2=\"173\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"199\" y1=\"163\" x2=\"199\" y2=\"173\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"151\" y=\"182\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">0,90 m</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Våghastigheten fås av pulsens förflyttning mellan ögonblicksbilderna.</p><div class=\"facit-matte\">\\[v=\\frac{\\Delta x}{\\Delta t}=\\frac{0{,}90}{0{,}30}=3{,}0\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Pulsen rör sig med \\(3{,}0\\ \\mathrm{m/s}\\) åt höger.</p><p class=\"facit-not\">Det är vågmönstret som fortplantas. Linans punkter rör sig upp och ned, tvärs utbredningsriktningen.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 3,
     "tolerans": 0.045,
@@ -3181,7 +3267,9 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": "m/s",
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.67",
@@ -3215,19 +3303,21 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En vattenvåg går snett från ett område där våghastigheten är 0,40 m/s till ett område där den är 0,25 m/s. Infallsvinkeln mot normalen är 35°. Bestäm brytningsvinkeln.</p><span class=\"fig smal\"><svg viewBox=\"0 0 298 166\" width=\"380\" height=\"212\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vågfronter som bryts från 0,40 m/s till 0,25 m/s.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Vågfronter som bryts från 0,40 m/s till 0,25 m/s.</title><g transform=\"translate(-21,-23)\"><rect x=\"34\" y=\"36\" width=\"138\" height=\"140\" fill=\"#EFF3F8\" opacity=\"0.5\"/><rect x=\"172\" y=\"36\" width=\"134\" height=\"140\" fill=\"#DCE4EE\" opacity=\"0.7\"/><line x1=\"47.48\" y1=\"36\" x2=\"34\" y2=\"55.25\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"88.99\" y1=\"36\" x2=\"34\" y2=\"114.53\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130.49\" y1=\"36\" x2=\"34\" y2=\"173.81\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"73.97\" y2=\"176\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"172\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"95.28\" x2=\"115.48\" y2=\"176\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"95.28\" x2=\"194.76\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"154.55\" x2=\"156.98\" y2=\"176\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"154.55\" x2=\"217.53\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"186.53\" y1=\"176\" x2=\"240.29\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"209.29\" y1=\"176\" x2=\"263.05\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"232.05\" y1=\"176\" x2=\"285.81\" y2=\"36\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"254.82\" y1=\"176\" x2=\"306\" y2=\"42.71\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"36\" x2=\"172\" y2=\"176\" stroke=\"#5C575E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"106\" x2=\"224\" y2=\"106\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"230\" y=\"98\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">normal</text><line x1=\"122.85\" y1=\"71.59\" x2=\"157.17\" y2=\"95.62\" stroke=\"#2A5D9E\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"165.45,101.41 155.14,99.57 160.19,92.36\" fill=\"#2A5D9E\"/><line x1=\"179.47\" y1=\"108.87\" x2=\"218.58\" y2=\"123.89\" stroke=\"#B43123\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"228.01,127.51 217.57,128.21 220.72,120\" fill=\"#B43123\"/><text x=\"138\" y=\"90\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">35°</text><text x=\"189\" y=\"136\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"12\" font-weight=\"700\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd brytningslagen och mät vinklarna mot normalen.</p><div class=\"facit-matte\">\\[\\frac{\\sin\\theta_1}{\\sin\\theta_2}=\\frac{v_1}{v_2}\\]\\[\\sin\\theta_2=\\frac{v_2}{v_1}\\sin\\theta_1=\\frac{0{,}25}{0{,}40}\\sin35^\\circ\\]\\[\\theta_2=21{,}0^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Brytningsvinkeln är \\(21{,}0^\\circ\\).</p><p class=\"facit-not\">Vågen bryts mot normalen eftersom hastigheten minskar.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 21,
     "tolerans": 0.315,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "°",
-    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning"
+    "familjNyckelTidigare": "vagrorelser__reflektion_och_brytning",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.69",
@@ -3258,18 +3348,20 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En sträng hålls lika lång och svänger i samma resonansform. Vid spänningen 64 N är resonansfrekvensen 120 Hz. Hur stor måste spänningen vara för att samma resonansform ska få frekvensen 150 Hz?</p><span class=\"fig bred\"><svg viewBox=\"0.000 5.779 287.761 109.379\" width=\"620\" height=\"236\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Samma resonansform på strängen före och efter att kraften ändras.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Samma resonansform på strängen före och efter att kraften ändras.</title><g transform=\"translate(-29,-29)\"><line x1=\"44\" y1=\"42\" x2=\"44\" y2=\"134\" stroke=\"#2B2527\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"46\" x2=\"54\" y2=\"54\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"62.8\" x2=\"54\" y2=\"70.8\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"79.6\" x2=\"54\" y2=\"87.6\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"96.4\" x2=\"54\" y2=\"104.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"113.2\" x2=\"54\" y2=\"121.2\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"130\" x2=\"54\" y2=\"138\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"42\" x2=\"294\" y2=\"134\" stroke=\"#2B2527\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"46\" x2=\"304\" y2=\"54\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"62.8\" x2=\"304\" y2=\"70.8\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"79.6\" x2=\"304\" y2=\"87.6\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"96.4\" x2=\"304\" y2=\"104.4\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"113.2\" x2=\"304\" y2=\"121.2\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"295.8\" y1=\"130\" x2=\"304\" y2=\"138\" stroke=\"#9A959C\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M 44 88 L 45 87.57 L 46 87.15 L 47 86.72 L 48 86.29 L 49 85.87 L 50 85.44 L 51 85.01 L 52 84.59 L 53 84.16 L 54 83.74 L 55 83.32 L 56 82.89 L 57 82.47 L 58 82.05 L 59 81.63 L 60 81.21 L 61 80.79 L 62 80.37 L 63 79.96 L 64 79.54 L 65 79.13 L 66 78.72 L 67 78.31 L 68 77.9 L 69 77.49 L 70 77.09 L 71 76.68 L 72 76.28 L 73 75.88 L 74 75.48 L 75 75.09 L 76 74.69 L 77 74.3 L 78 73.91 L 79 73.52 L 80 73.14 L 81 72.75 L 82 72.37 L 83 72 L 84 71.62 L 85 71.25 L 86 70.88 L 87 70.51 L 88 70.14 L 89 69.78 L 90 69.42 L 91 69.07 L 92 68.71 L 93 68.36 L 94 68.02 L 95 67.67 L 96 67.33 L 97 66.99 L 98 66.66 L 99 66.33 L 100 66 L 101 65.68 L 102 65.36 L 103 65.04 L 104 64.73 L 105 64.42 L 106 64.11 L 107 63.81 L 108 63.51 L 109 63.22 L 110 62.92 L 111 62.64 L 112 62.36 L 113 62.08 L 114 61.8 L 115 61.53 L 116 61.27 L 117 61 L 118 60.75 L 119 60.49 L 120 60.24 L 121 60 L 122 59.76 L 123 59.52 L 124 59.29 L 125 59.07 L 126 58.84 L 127 58.63 L 128 58.41 L 129 58.21 L 130 58 L 131 57.8 L 132 57.61 L 133 57.42 L 134 57.24 L 135 57.06 L 136 56.88 L 137 56.71 L 138 56.55 L 139 56.39 L 140 56.23 L 141 56.08 L 142 55.94 L 143 55.8 L 144 55.66 L 145 55.53 L 146 55.41 L 147 55.29 L 148 55.18 L 149 55.07 L 150 54.96 L 151 54.87 L 152 54.77 L 153 54.68 L 154 54.6 L 155 54.52 L 156 54.45 L 157 54.39 L 158 54.32 L 159 54.27 L 160 54.22 L 161 54.17 L 162 54.13 L 163 54.1 L 164 54.07 L 165 54.04 L 166 54.02 L 167 54.01 L 168 54 L 169 54 L 170 54 L 171 54.01 L 172 54.02 L 173 54.04 L 174 54.07 L 175 54.1 L 176 54.13 L 177 54.17 L 178 54.22 L 179 54.27 L 180 54.32 L 181 54.39 L 182 54.45 L 183 54.52 L 184 54.6 L 185 54.68 L 186 54.77 L 187 54.87 L 188 54.96 L 189 55.07 L 190 55.18 L 191 55.29 L 192 55.41 L 193 55.53 L 194 55.66 L 195 55.8 L 196 55.94 L 197 56.08 L 198 56.23 L 199 56.39 L 200 56.55 L 201 56.71 L 202 56.88 L 203 57.06 L 204 57.24 L 205 57.42 L 206 57.61 L 207 57.8 L 208 58 L 209 58.21 L 210 58.41 L 211 58.63 L 212 58.84 L 213 59.07 L 214 59.29 L 215 59.52 L 216 59.76 L 217 60 L 218 60.24 L 219 60.49 L 220 60.75 L 221 61 L 222 61.27 L 223 61.53 L 224 61.8 L 225 62.08 L 226 62.36 L 227 62.64 L 228 62.92 L 229 63.22 L 230 63.51 L 231 63.81 L 232 64.11 L 233 64.42 L 234 64.73 L 235 65.04 L 236 65.36 L 237 65.68 L 238 66 L 239 66.33 L 240 66.66 L 241 66.99 L 242 67.33 L 243 67.67 L 244 68.02 L 245 68.36 L 246 68.71 L 247 69.07 L 248 69.42 L 249 69.78 L 250 70.14 L 251 70.51 L 252 70.88 L 253 71.25 L 254 71.62 L 255 72 L 256 72.37 L 257 72.75 L 258 73.14 L 259 73.52 L 260 73.91 L 261 74.3 L 262 74.69 L 263 75.09 L 264 75.48 L 265 75.88 L 266 76.28 L 267 76.68 L 268 77.09 L 269 77.49 L 270 77.9 L 271 78.31 L 272 78.72 L 273 79.13 L 274 79.54 L 275 79.96 L 276 80.37 L 277 80.79 L 278 81.21 L 279 81.63 L 280 82.05 L 281 82.47 L 282 82.89 L 283 83.32 L 284 83.74 L 285 84.16 L 286 84.59 L 287 85.01 L 288 85.44 L 289 85.87 L 290 86.29 L 291 86.72 L 292 87.15 L 293 87.57 L 294 88\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 44 88 L 45 88.43 L 46 88.85 L 47 89.28 L 48 89.71 L 49 90.13 L 50 90.56 L 51 90.99 L 52 91.41 L 53 91.84 L 54 92.26 L 55 92.68 L 56 93.11 L 57 93.53 L 58 93.95 L 59 94.37 L 60 94.79 L 61 95.21 L 62 95.63 L 63 96.04 L 64 96.46 L 65 96.87 L 66 97.28 L 67 97.69 L 68 98.1 L 69 98.51 L 70 98.91 L 71 99.32 L 72 99.72 L 73 100.12 L 74 100.52 L 75 100.91 L 76 101.31 L 77 101.7 L 78 102.09 L 79 102.48 L 80 102.86 L 81 103.25 L 82 103.63 L 83 104 L 84 104.38 L 85 104.75 L 86 105.12 L 87 105.49 L 88 105.86 L 89 106.22 L 90 106.58 L 91 106.93 L 92 107.29 L 93 107.64 L 94 107.98 L 95 108.33 L 96 108.67 L 97 109.01 L 98 109.34 L 99 109.67 L 100 110 L 101 110.32 L 102 110.64 L 103 110.96 L 104 111.27 L 105 111.58 L 106 111.89 L 107 112.19 L 108 112.49 L 109 112.78 L 110 113.08 L 111 113.36 L 112 113.64 L 113 113.92 L 114 114.2 L 115 114.47 L 116 114.73 L 117 115 L 118 115.25 L 119 115.51 L 120 115.76 L 121 116 L 122 116.24 L 123 116.48 L 124 116.71 L 125 116.93 L 126 117.16 L 127 117.37 L 128 117.59 L 129 117.79 L 130 118 L 131 118.2 L 132 118.39 L 133 118.58 L 134 118.76 L 135 118.94 L 136 119.12 L 137 119.29 L 138 119.45 L 139 119.61 L 140 119.77 L 141 119.92 L 142 120.06 L 143 120.2 L 144 120.34 L 145 120.47 L 146 120.59 L 147 120.71 L 148 120.82 L 149 120.93 L 150 121.04 L 151 121.13 L 152 121.23 L 153 121.32 L 154 121.4 L 155 121.48 L 156 121.55 L 157 121.61 L 158 121.68 L 159 121.73 L 160 121.78 L 161 121.83 L 162 121.87 L 163 121.9 L 164 121.93 L 165 121.96 L 166 121.98 L 167 121.99 L 168 122 L 169 122 L 170 122 L 171 121.99 L 172 121.98 L 173 121.96 L 174 121.93 L 175 121.9 L 176 121.87 L 177 121.83 L 178 121.78 L 179 121.73 L 180 121.68 L 181 121.61 L 182 121.55 L 183 121.48 L 184 121.4 L 185 121.32 L 186 121.23 L 187 121.13 L 188 121.04 L 189 120.93 L 190 120.82 L 191 120.71 L 192 120.59 L 193 120.47 L 194 120.34 L 195 120.2 L 196 120.06 L 197 119.92 L 198 119.77 L 199 119.61 L 200 119.45 L 201 119.29 L 202 119.12 L 203 118.94 L 204 118.76 L 205 118.58 L 206 118.39 L 207 118.2 L 208 118 L 209 117.79 L 210 117.59 L 211 117.37 L 212 117.16 L 213 116.93 L 214 116.71 L 215 116.48 L 216 116.24 L 217 116 L 218 115.76 L 219 115.51 L 220 115.25 L 221 115 L 222 114.73 L 223 114.47 L 224 114.2 L 225 113.92 L 226 113.64 L 227 113.36 L 228 113.08 L 229 112.78 L 230 112.49 L 231 112.19 L 232 111.89 L 233 111.58 L 234 111.27 L 235 110.96 L 236 110.64 L 237 110.32 L 238 110 L 239 109.67 L 240 109.34 L 241 109.01 L 242 108.67 L 243 108.33 L 244 107.98 L 245 107.64 L 246 107.29 L 247 106.93 L 248 106.58 L 249 106.22 L 250 105.86 L 251 105.49 L 252 105.12 L 253 104.75 L 254 104.38 L 255 104 L 256 103.63 L 257 103.25 L 258 102.86 L 259 102.48 L 260 102.09 L 261 101.7 L 262 101.31 L 263 100.91 L 264 100.52 L 265 100.12 L 266 99.72 L 267 99.32 L 268 98.91 L 269 98.51 L 270 98.1 L 271 97.69 L 272 97.28 L 273 96.87 L 274 96.46 L 275 96.04 L 276 95.63 L 277 95.21 L 278 94.79 L 279 94.37 L 280 93.95 L 281 93.53 L 282 93.11 L 283 92.68 L 284 92.26 L 285 91.84 L 286 91.41 L 287 90.99 L 288 90.56 L 289 90.13 L 290 89.71 L 291 89.28 L 292 88.85 L 293 88.43 L 294 88\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"44\" cy=\"88\" r=\"3.4\" fill=\"#2B2527\"/><circle cx=\"294\" cy=\"88\" r=\"3.4\" fill=\"#2B2527\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Samma stränglängd och resonansform innebär oförändrad våglängd. Därför är \\(f\\propto v\\), och för strängen gäller \\(v\\propto\\sqrt F\\).</p><div class=\"facit-matte\">\\[\\frac{f_2}{f_1}=\\sqrt{\\frac{F_2}{F_1}}\\quad\\Longrightarrow\\quad F_2=F_1\\left(\\frac{f_2}{f_1}\\right)^2\\]\\[F_2=64\\left(\\frac{150}{120}\\right)^2=100\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen ska vara \\(100\\ \\mathrm N\\).</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "numeriskt",
     "rättSvar": 100,
     "tolerans": 1.5,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.71",
@@ -3280,18 +3372,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En ton har frekvensen 680 Hz. Använd ljudhastigheten 340 m/s och bestäm våglängden i luft.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut våglängden ur \\(v=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{v}{f}=\\frac{340}{680}=0{,}50\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(0{,}50\\ \\mathrm m\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 0.5,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.72",
@@ -3302,18 +3396,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Du står 102 m från en lodrät klippvägg och ropar. Hur lång tid tar det innan ekot kommer tillbaka? Använd ljudhastigheten 340 m/s.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Ekot innebär att ljudet färdas både till väggen och tillbaka.</p><div class=\"facit-matte\">\\[s=2d=2\\cdot102=204\\ \\mathrm m\\]\\[t=\\frac{s}{v}=\\frac{204}{340}=0{,}60\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ekot kommer tillbaka efter \\(0{,}60\\ \\mathrm s\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 0.6,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.73",
@@ -3489,19 +3585,21 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Figuren visar tre noder i ett rör som är öppet i båda ändar. Röret är 0,75 m långt. Bestäm ljudets våglängd.</p><span class=\"fig bred\"><svg viewBox=\"8.322 7.699 282.159 137.224\" width=\"620\" height=\"302\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Öppet rör med andra övertonen.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Öppet rör med andra övertonen.</title><g transform=\"translate(-19.5,-34.98)\"><line x1=\"46\" y1=\"65\" x2=\"292\" y2=\"65\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"127\" x2=\"292\" y2=\"127\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"46\" y=\"55\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><text x=\"292\" y=\"55\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><path d=\"M 46 70 L 47.23 70.03 L 48.46 70.12 L 49.69 70.26 L 50.92 70.46 L 52.15 70.72 L 53.38 71.03 L 54.61 71.4 L 55.84 71.83 L 57.07 72.3 L 58.3 72.83 L 59.53 73.42 L 60.76 74.05 L 61.99 74.73 L 63.22 75.46 L 64.45 76.23 L 65.68 77.05 L 66.91 77.91 L 68.14 78.81 L 69.37 79.74 L 70.6 80.72 L 71.83 81.73 L 73.06 82.76 L 74.29 83.83 L 75.52 84.93 L 76.75 86.05 L 77.98 87.19 L 79.21 88.35 L 80.44 89.53 L 81.67 90.73 L 82.9 91.93 L 84.13 93.15 L 85.36 94.37 L 86.59 95.59 L 87.82 96.82 L 89.05 98.04 L 90.28 99.26 L 91.51 100.47 L 92.74 101.67 L 93.97 102.86 L 95.2 104.03 L 96.43 105.19 L 97.66 106.33 L 98.89 107.44 L 100.12 108.53 L 101.35 109.58 L 102.58 110.61 L 103.81 111.61 L 105.04 112.57 L 106.27 113.5 L 107.5 114.38 L 108.73 115.23 L 109.96 116.03 L 111.19 116.79 L 112.42 117.5 L 113.65 118.17 L 114.88 118.78 L 116.11 119.35 L 117.34 119.86 L 118.57 120.32 L 119.8 120.73 L 121.03 121.08 L 122.26 121.37 L 123.49 121.61 L 124.72 121.79 L 125.95 121.92 L 127.18 121.99 L 128.41 122 L 129.64 121.95 L 130.87 121.84 L 132.1 121.68 L 133.33 121.46 L 134.56 121.18 L 135.79 120.85 L 137.02 120.46 L 138.25 120.02 L 139.48 119.53 L 140.71 118.98 L 141.94 118.38 L 143.17 117.73 L 144.4 117.03 L 145.63 116.29 L 146.86 115.5 L 148.09 114.67 L 149.32 113.8 L 150.55 112.89 L 151.78 111.94 L 153.01 110.95 L 154.24 109.93 L 155.47 108.88 L 156.7 107.8 L 157.93 106.7 L 159.16 105.57 L 160.39 104.42 L 161.62 103.25 L 162.85 102.07 L 164.08 100.87 L 165.31 99.66 L 166.54 98.45 L 167.77 97.22 L 169 96 L 170.23 94.78 L 171.46 93.55 L 172.69 92.34 L 173.92 91.13 L 175.15 89.93 L 176.38 88.75 L 177.61 87.58 L 178.84 86.43 L 180.07 85.3 L 181.3 84.2 L 182.53 83.12 L 183.76 82.07 L 184.99 81.05 L 186.22 80.06 L 187.45 79.11 L 188.68 78.2 L 189.91 77.33 L 191.14 76.5 L 192.37 75.71 L 193.6 74.97 L 194.83 74.27 L 196.06 73.62 L 197.29 73.02 L 198.52 72.47 L 199.75 71.98 L 200.98 71.54 L 202.21 71.15 L 203.44 70.82 L 204.67 70.54 L 205.9 70.32 L 207.13 70.16 L 208.36 70.05 L 209.59 70 L 210.82 70.01 L 212.05 70.08 L 213.28 70.21 L 214.51 70.39 L 215.74 70.63 L 216.97 70.92 L 218.2 71.27 L 219.43 71.68 L 220.66 72.14 L 221.89 72.65 L 223.12 73.22 L 224.35 73.83 L 225.58 74.5 L 226.81 75.21 L 228.04 75.97 L 229.27 76.77 L 230.5 77.62 L 231.73 78.5 L 232.96 79.43 L 234.19 80.39 L 235.42 81.39 L 236.65 82.42 L 237.88 83.47 L 239.11 84.56 L 240.34 85.67 L 241.57 86.81 L 242.8 87.97 L 244.03 89.14 L 245.26 90.33 L 246.49 91.53 L 247.72 92.74 L 248.95 93.96 L 250.18 95.18 L 251.41 96.41 L 252.64 97.63 L 253.87 98.85 L 255.1 100.07 L 256.33 101.27 L 257.56 102.47 L 258.79 103.65 L 260.02 104.81 L 261.25 105.95 L 262.48 107.07 L 263.71 108.17 L 264.94 109.24 L 266.17 110.27 L 267.4 111.28 L 268.63 112.26 L 269.86 113.19 L 271.09 114.09 L 272.32 114.95 L 273.55 115.77 L 274.78 116.54 L 276.01 117.27 L 277.24 117.95 L 278.47 118.58 L 279.7 119.17 L 280.93 119.7 L 282.16 120.17 L 283.39 120.6 L 284.62 120.97 L 285.85 121.28 L 287.08 121.54 L 288.31 121.74 L 289.54 121.88 L 290.77 121.97 L 292 122\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 46 122 L 47.23 121.97 L 48.46 121.88 L 49.69 121.74 L 50.92 121.54 L 52.15 121.28 L 53.38 120.97 L 54.61 120.6 L 55.84 120.17 L 57.07 119.7 L 58.3 119.17 L 59.53 118.58 L 60.76 117.95 L 61.99 117.27 L 63.22 116.54 L 64.45 115.77 L 65.68 114.95 L 66.91 114.09 L 68.14 113.19 L 69.37 112.26 L 70.6 111.28 L 71.83 110.27 L 73.06 109.24 L 74.29 108.17 L 75.52 107.07 L 76.75 105.95 L 77.98 104.81 L 79.21 103.65 L 80.44 102.47 L 81.67 101.27 L 82.9 100.07 L 84.13 98.85 L 85.36 97.63 L 86.59 96.41 L 87.82 95.18 L 89.05 93.96 L 90.28 92.74 L 91.51 91.53 L 92.74 90.33 L 93.97 89.14 L 95.2 87.97 L 96.43 86.81 L 97.66 85.67 L 98.89 84.56 L 100.12 83.47 L 101.35 82.42 L 102.58 81.39 L 103.81 80.39 L 105.04 79.43 L 106.27 78.5 L 107.5 77.62 L 108.73 76.77 L 109.96 75.97 L 111.19 75.21 L 112.42 74.5 L 113.65 73.83 L 114.88 73.22 L 116.11 72.65 L 117.34 72.14 L 118.57 71.68 L 119.8 71.27 L 121.03 70.92 L 122.26 70.63 L 123.49 70.39 L 124.72 70.21 L 125.95 70.08 L 127.18 70.01 L 128.41 70 L 129.64 70.05 L 130.87 70.16 L 132.1 70.32 L 133.33 70.54 L 134.56 70.82 L 135.79 71.15 L 137.02 71.54 L 138.25 71.98 L 139.48 72.47 L 140.71 73.02 L 141.94 73.62 L 143.17 74.27 L 144.4 74.97 L 145.63 75.71 L 146.86 76.5 L 148.09 77.33 L 149.32 78.2 L 150.55 79.11 L 151.78 80.06 L 153.01 81.05 L 154.24 82.07 L 155.47 83.12 L 156.7 84.2 L 157.93 85.3 L 159.16 86.43 L 160.39 87.58 L 161.62 88.75 L 162.85 89.93 L 164.08 91.13 L 165.31 92.34 L 166.54 93.55 L 167.77 94.78 L 169 96 L 170.23 97.22 L 171.46 98.45 L 172.69 99.66 L 173.92 100.87 L 175.15 102.07 L 176.38 103.25 L 177.61 104.42 L 178.84 105.57 L 180.07 106.7 L 181.3 107.8 L 182.53 108.88 L 183.76 109.93 L 184.99 110.95 L 186.22 111.94 L 187.45 112.89 L 188.68 113.8 L 189.91 114.67 L 191.14 115.5 L 192.37 116.29 L 193.6 117.03 L 194.83 117.73 L 196.06 118.38 L 197.29 118.98 L 198.52 119.53 L 199.75 120.02 L 200.98 120.46 L 202.21 120.85 L 203.44 121.18 L 204.67 121.46 L 205.9 121.68 L 207.13 121.84 L 208.36 121.95 L 209.59 122 L 210.82 121.99 L 212.05 121.92 L 213.28 121.79 L 214.51 121.61 L 215.74 121.37 L 216.97 121.08 L 218.2 120.73 L 219.43 120.32 L 220.66 119.86 L 221.89 119.35 L 223.12 118.78 L 224.35 118.17 L 225.58 117.5 L 226.81 116.79 L 228.04 116.03 L 229.27 115.23 L 230.5 114.38 L 231.73 113.5 L 232.96 112.57 L 234.19 111.61 L 235.42 110.61 L 236.65 109.58 L 237.88 108.53 L 239.11 107.44 L 240.34 106.33 L 241.57 105.19 L 242.8 104.03 L 244.03 102.86 L 245.26 101.67 L 246.49 100.47 L 247.72 99.26 L 248.95 98.04 L 250.18 96.82 L 251.41 95.59 L 252.64 94.37 L 253.87 93.15 L 255.1 91.93 L 256.33 90.73 L 257.56 89.53 L 258.79 88.35 L 260.02 87.19 L 261.25 86.05 L 262.48 84.93 L 263.71 83.83 L 264.94 82.76 L 266.17 81.73 L 267.4 80.72 L 268.63 79.74 L 269.86 78.81 L 271.09 77.91 L 272.32 77.05 L 273.55 76.23 L 274.78 75.46 L 276.01 74.73 L 277.24 74.05 L 278.47 73.42 L 279.7 72.83 L 280.93 72.3 L 282.16 71.83 L 283.39 71.4 L 284.62 71.03 L 285.85 70.72 L 287.08 70.46 L 288.31 70.26 L 289.54 70.12 L 290.77 70.03 L 292 70\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><circle cx=\"87\" cy=\"96\" r=\"3.2\" fill=\"#2B2527\"/><circle cx=\"169\" cy=\"96\" r=\"3.2\" fill=\"#2B2527\"/><circle cx=\"251\" cy=\"96\" r=\"3.2\" fill=\"#2B2527\"/><text x=\"169\" y=\"143\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">luftens förskjutning</text><line x1=\"46\" y1=\"159\" x2=\"292\" y2=\"159\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"46\" y1=\"154\" x2=\"46\" y2=\"164\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"154\" x2=\"292\" y2=\"164\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"169\" y=\"173\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L = 0,75 m</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Tre noder i det öppna röret betyder att mönstret är andra övertonen.</p><div class=\"facit-matte\">\\[L=3\\frac{\\lambda}{2}\\quad\\Longrightarrow\\quad \\lambda=\\frac{2L}{3}=\\frac{2\\cdot0{,}75}{3}=0{,}50\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(0{,}50\\ \\mathrm m\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 0.5,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.82",
@@ -3533,18 +3631,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Ett kort ljud skickas mot en stor vägg och ekot registreras 0,30 s senare. Avståndet till väggen är 51 m. Bestäm ljudhastigheten.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Ekot färdas sträckan till väggen två gånger.</p><div class=\"facit-matte\">\\[s=2d=2\\cdot51=102\\ \\mathrm m\\]\\[v=\\frac{s}{t}=\\frac{102}{0{,}30}=340\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ljudhastigheten är \\(340\\ \\mathrm{m/s}\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 340,
     "tolerans": 5.1,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.84",
@@ -3597,18 +3697,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Ett 0,60 m långt rör är öppet i båda ändar. Rita grundtonens stående vågmönster och markera noder och bukar.</p><span class=\"fig bred\"><svg viewBox=\"8.062 7.809 282.679 123.613\" width=\"620\" height=\"271\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tomt öppet rör att rita det stående vågmönstret i.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Tomt öppet rör att rita det stående vågmönstret i.</title><g transform=\"translate(-19.5,-34.98)\"><rect x=\"46\" y=\"65\" width=\"246\" height=\"62\" rx=\"3\" fill=\"#EDEEF1\"/><line x1=\"46\" y1=\"65\" x2=\"292\" y2=\"65\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"127\" x2=\"292\" y2=\"127\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"46\" y=\"55\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><text x=\"292\" y=\"55\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><line x1=\"46\" y1=\"96\" x2=\"292\" y2=\"96\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"46\" y1=\"147\" x2=\"292\" y2=\"147\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"46\" y1=\"142\" x2=\"46\" y2=\"152\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"142\" x2=\"292\" y2=\"152\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"169\" y=\"161\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För luftens förskjutning är öppna ändar bukar. Grundtonen har en nod mitt i röret.</p><span class=\"fig bred\"><svg preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 360 150\" width=\"620\" height=\"258\" role=\"img\" aria-label=\"Grundton i öppet rör med bukar vid ändarna och nod i mitten\" xmlns=\"http://www.w3.org/2000/svg\"><title>Grundton i öppet rör med bukar vid ändarna och nod i mitten</title><rect x=\"20\" y=\"35\" width=\"320\" height=\"80\" fill=\"#EFF3F8\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"20\" y1=\"75\" x2=\"340\" y2=\"75\" stroke=\"#9A959C\" stroke-width=\"1.4\"/><path d=\"M20 25 Q100 75 180 75 Q260 75 340 125\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"75\" r=\"5\" fill=\"#B43123\"/><text x=\"20\" y=\"20\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#2A5D9E\">buk</text><text x=\"180\" y=\"140\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#B43123\">nod</text><text x=\"340\" y=\"140\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#2A5D9E\">buk</text></svg></span><div class=\"facit-matte\">\\[L=\\frac{\\lambda}{2}\\quad\\Longrightarrow\\quad \\lambda=2L=1{,}20\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Grundtonen har bukar vid båda öppna ändarna och en nod i mitten.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.87",
@@ -3640,18 +3742,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>I ett Kundtrör ligger två noder 34 cm från varandra. Bestäm ljudets våglängd.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Avståndet mellan två intilliggande noder är en halv våglängd.</p><div class=\"facit-matte\">\\[\\frac{\\lambda}{2}=0{,}34\\ \\mathrm m\\quad\\Longrightarrow\\quad \\lambda=2\\cdot0{,}34=0{,}68\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(0{,}68\\ \\mathrm m\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 0.68,
     "tolerans": 0.0102,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.89",
@@ -3704,17 +3808,19 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>I ett 0,87 m långt Kundtrör är avståndet mellan intilliggande pulveransamlingar 14,5 cm när frekvensen är 1180 Hz. Bestäm ljudhastigheten och rörets grundton om båda ändarna är öppna.</p><span class=\"fig bred\"><svg viewBox=\"1.611 7.245 278.777 130.758\" width=\"620\" height=\"291\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Kundtrör: pulvret samlas i noderna.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Kundtrör: pulvret samlas i noderna.</title><g transform=\"translate(-31,-53)\"><rect x=\"46\" y=\"68\" width=\"252\" height=\"56\" rx=\"3\" fill=\"#EDEEF1\"/><line x1=\"46\" y1=\"68\" x2=\"298\" y2=\"68\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"124\" x2=\"298\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"68\" x2=\"46\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"68\" x2=\"298\" y2=\"124\" stroke=\"#2B2527\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M 48 122.6 Q 55 112 62 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 87 122.6 Q 94 112 101 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 126 122.6 Q 133 112 140 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 165 122.6 Q 172 112 179 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 204 122.6 Q 211 112 218 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 243 122.6 Q 250 112 257 122.6 Z\" fill=\"#8A7F6E\"/><path d=\"M 282 122.6 Q 289 112 296 122.6 Z\" fill=\"#8A7F6E\"/><line x1=\"55\" y1=\"142\" x2=\"94\" y2=\"142\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"55\" y1=\"137\" x2=\"55\" y2=\"147\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"137\" x2=\"94\" y2=\"147\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"74.5\" y=\"156\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">14,5 cm</text><line x1=\"46\" y1=\"170\" x2=\"298\" y2=\"170\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"46\" y1=\"165\" x2=\"46\" y2=\"175\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"165\" x2=\"298\" y2=\"175\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"172\" y=\"184\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L = 0,87 m</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Pulveransamlingarna markerar noder. Avståndet mellan intilliggande noder är \\(\\lambda/2\\).</p><div class=\"facit-matte\">\\[\\lambda=2\\cdot0{,}145=0{,}290\\ \\mathrm m\\]\\[v=f\\lambda=1180\\cdot0{,}290=342{,}2\\ \\mathrm{m/s}\\]\\[f_1=\\frac{v}{2L}=\\frac{342{,}2}{2\\cdot0{,}87}=196{,}7\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ljudhastigheten är \\(342\\ \\mathrm{m/s}\\) och grundtonen ungefär \\(197\\ \\mathrm{Hz}\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.92",
@@ -4288,16 +4394,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En plan vattenvåg passerar genom en smal öppning vars bredd är ungefär lika stor som våglängden. Vad händer bakom öppningen?</p><span class=\"fig smal\"><svg viewBox=\"0 0 288 207.41\" width=\"380\" height=\"274\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Plan våg som passerar en spalt lika bred som våglängden.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Plan våg som passerar en spalt lika bred som våglängden.</title><g transform=\"translate(-25,-1.59)\"><line x1=\"40\" y1=\"40\" x2=\"160\" y2=\"40\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"66\" x2=\"160\" y2=\"66\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"92\" x2=\"160\" y2=\"92\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"118\" x2=\"160\" y2=\"118\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"144\" x2=\"160\" y2=\"144\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"170\" x2=\"160\" y2=\"170\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"168\" y1=\"34\" x2=\"168\" y2=\"92\" stroke=\"#2B2527\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"168\" y1=\"118\" x2=\"168\" y2=\"176\" stroke=\"#2B2527\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M 173.41 79.57 A 26 26 0 0 1 173.41 130.43\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 178.81 54.14 A 52 52 0 0 1 178.81 155.86\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 184.22 28.7 A 78 78 0 0 1 184.22 181.3\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 189.62 3.27 A 104 104 0 0 1 189.62 206.73\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 195.03 -22.16 A 130 130 0 0 1 195.03 232.16\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"138\" y1=\"92\" x2=\"138\" y2=\"118\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"133\" y1=\"92\" x2=\"143\" y2=\"92\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"133\" y1=\"118\" x2=\"143\" y2=\"118\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"129\" y=\"109\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">≈ λ</text><text x=\"88\" y=\"22\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">plan våg</text><line x1=\"60\" y1=\"196\" x2=\"121.9\" y2=\"196\" stroke=\"#2A5D9E\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"132,196 122.5,200.4 122.5,191.6\" fill=\"#2A5D9E\"/></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Diffraktion blir tydlig när öppningens bredd är jämförbar med våglängden.</p><p class=\"facit-svar\"><strong>Svar:</strong> Bakom öppningen böjs vågen av och sprids åt flera håll. Fenomenet kallas diffraktion.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.120",
@@ -4308,16 +4416,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En våg går från ett medium till ett annat. Vad händer med frekvensen vid gränsen om vågkällan är oförändrad?</p><span class=\"fig bred\"><svg viewBox=\"0 0 286 133.41\" width=\"620\" height=\"289\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Våg som går från ett medium till ett annat vid en gräns.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Våg som går från ett medium till ett annat vid en gräns.</title><g transform=\"translate(-27,-17.59)\"><rect x=\"40\" y=\"46\" width=\"132\" height=\"92\" fill=\"#EFF3F8\" opacity=\"0.5\"/><rect x=\"172\" y=\"46\" width=\"128\" height=\"92\" fill=\"#DCE4EE\" opacity=\"0.7\"/><path d=\"M 40 92 L 41 88.58 L 42 85.24 L 43 82.03 L 44 79.02 L 45 76.28 L 46 73.86 L 47 71.81 L 48 70.17 L 49 68.97 L 50 68.24 L 51 68 L 52 68.24 L 53 68.97 L 54 70.17 L 55 71.81 L 56 73.86 L 57 76.28 L 58 79.02 L 59 82.03 L 60 85.24 L 61 88.58 L 62 92 L 63 95.42 L 64 98.76 L 65 101.97 L 66 104.98 L 67 107.72 L 68 110.14 L 69 112.19 L 70 113.83 L 71 115.03 L 72 115.76 L 73 116 L 74 115.76 L 75 115.03 L 76 113.83 L 77 112.19 L 78 110.14 L 79 107.72 L 80 104.98 L 81 101.97 L 82 98.76 L 83 95.42 L 84 92 L 85 88.58 L 86 85.24 L 87 82.03 L 88 79.02 L 89 76.28 L 90 73.86 L 91 71.81 L 92 70.17 L 93 68.97 L 94 68.24 L 95 68 L 96 68.24 L 97 68.97 L 98 70.17 L 99 71.81 L 100 73.86 L 101 76.28 L 102 79.02 L 103 82.03 L 104 85.24 L 105 88.58 L 106 92 L 107 95.42 L 108 98.76 L 109 101.97 L 110 104.98 L 111 107.72 L 112 110.14 L 113 112.19 L 114 113.83 L 115 115.03 L 116 115.76 L 117 116 L 118 115.76 L 119 115.03 L 120 113.83 L 121 112.19 L 122 110.14 L 123 107.72 L 124 104.98 L 125 101.97 L 126 98.76 L 127 95.42 L 128 92 L 129 88.58 L 130 85.24 L 131 82.03 L 132 79.02 L 133 76.28 L 134 73.86 L 135 71.81 L 136 70.17 L 137 68.97 L 138 68.24 L 139 68 L 140 68.24 L 141 68.97 L 142 70.17 L 143 71.81 L 144 73.86 L 145 76.28 L 146 79.02 L 147 82.03 L 148 85.24 L 149 88.58 L 150 92 L 151 95.42 L 152 98.76 L 153 101.97 L 154 104.98 L 155 107.72 L 156 110.14 L 157 112.19 L 158 113.83 L 159 115.03 L 160 115.76 L 161 116 L 162 115.76 L 163 115.03 L 164 113.83 L 165 112.19 L 166 110.14 L 167 107.72 L 168 104.98 L 169 101.97 L 170 98.76 L 171 95.42 L 172 92\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 172 92 L 173 86.84 L 174 81.92 L 175 77.48 L 176 73.71 L 177 70.8 L 178 68.87 L 179 68.04 L 180 68.32 L 181 69.7 L 182 72.14 L 183 75.5 L 184 79.63 L 185 84.34 L 186 89.41 L 187 94.59 L 188 99.66 L 189 104.37 L 190 108.5 L 191 111.86 L 192 114.3 L 193 115.68 L 194 115.96 L 195 115.13 L 196 113.2 L 197 110.29 L 198 106.52 L 199 102.08 L 200 97.16 L 201 92 L 202 86.84 L 203 81.92 L 204 77.48 L 205 73.71 L 206 70.8 L 207 68.87 L 208 68.04 L 209 68.32 L 210 69.7 L 211 72.14 L 212 75.5 L 213 79.63 L 214 84.34 L 215 89.41 L 216 94.59 L 217 99.66 L 218 104.37 L 219 108.5 L 220 111.86 L 221 114.3 L 222 115.68 L 223 115.96 L 224 115.13 L 225 113.2 L 226 110.29 L 227 106.52 L 228 102.08 L 229 97.16 L 230 92 L 231 86.84 L 232 81.92 L 233 77.48 L 234 73.71 L 235 70.8 L 236 68.87 L 237 68.04 L 238 68.32 L 239 69.7 L 240 72.14 L 241 75.5 L 242 79.63 L 243 84.34 L 244 89.41 L 245 94.59 L 246 99.66 L 247 104.37 L 248 108.5 L 249 111.86 L 250 114.3 L 251 115.68 L 252 115.96 L 253 115.13 L 254 113.2 L 255 110.29 L 256 106.52 L 257 102.08 L 258 97.16 L 259 92 L 260 86.84 L 261 81.92 L 262 77.48 L 263 73.71 L 264 70.8 L 265 68.87 L 266 68.04 L 267 68.32 L 268 69.7 L 269 72.14 L 270 75.5 L 271 79.63 L 272 84.34 L 273 89.41 L 274 94.59 L 275 99.66 L 276 104.37 L 277 108.5 L 278 111.86 L 279 114.3 L 280 115.68 L 281 115.96 L 282 115.13 L 283 113.2 L 284 110.29 L 285 106.52 L 286 102.08 L 287 97.16 L 288 92 L 289 86.84 L 290 81.92 L 291 77.48 L 292 73.71 L 293 70.8 L 294 68.87 L 295 68.04 L 296 68.32 L 297 69.7 L 298 72.14 L 299 75.5 L 300 79.63\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"172\" y1=\"46\" x2=\"172\" y2=\"138\" stroke=\"#5C575E\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"106\" y=\"38\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#2A5D9E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">medium 1</text><text x=\"236\" y=\"38\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">medium 2</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Frekvensen anger hur ofta vågtoppar lämnar källan och måste vara densamma på båda sidor om gränsen.</p><div class=\"facit-matte\">\\[v=f\\lambda\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen ändras inte. Om våghastigheten ändras är det i stället våglängden som ändras.</p></div>",
-    "familj": "Vågrörelser: fart, reflektion och brytning",
+    "familj": "Vågrörelsers fart, reflektion och brytning",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "vagrorelser__vagrorelser_fart_reflektion_och_brytning",
+    "familjNyckel": "vagrorelser__vagrorelsers_fart_reflektion_och_brytning",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "vagrorelser__vagfart_frekvens_och_vaglangd",
+    "familjTidigare": "Vågrörelser: fart, reflektion och brytning",
+    "familjNyckelFöreHierarki": "vagrorelser__vagrorelser_fart_reflektion_och_brytning"
   },
   {
     "id": "2.121",
@@ -4436,18 +4546,20 @@ window.BANK2 = [
     "poang": "(1/0/0)",
     "t": "<p>Figuren visar en pipa som är öppen i båda ändar. Rita hur luftens förskjutning varierar längs pipan när grundtonen ljuder. Markera noder (N) och bukar (B).</p><span class=\"fig bred\"><svg viewBox=\"29.396 38.177 301.693 95.958\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tom öppen pipa där vågmönstret ska ritas.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"197\"><title>Tom öppen pipa där vågmönstret ska ritas.</title>\n<rect x=\"55\" y=\"48\" width=\"250\" height=\"56\" rx=\"3\" fill=\"#EDEEF1\"/>\n<line x1=\"55\" y1=\"48\" x2=\"305\" y2=\"48\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"55\" y1=\"104\" x2=\"305\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"2.2\"/>\n<line x1=\"55\" y1=\"43\" x2=\"55\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><line x1=\"305\" y1=\"43\" x2=\"305\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/>\n<text x=\"55\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text><text x=\"305\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid öppna ändar finns förskjutningsbukar. Grundtonen har en nod i mitten.</p><span class=\"fig bred\"><svg preserveAspectRatio=\"xMidYMid meet\" viewBox=\"4.629 12.846 350.743 117.154\" width=\"620\" height=\"207\" role=\"img\" aria-label=\"Öppen pipa i grundtonen: B N B\" xmlns=\"http://www.w3.org/2000/svg\"><title>Öppen pipa i grundtonen: B N B</title><rect x=\"20\" y=\"30\" width=\"320\" height=\"70\" fill=\"#EFF3F8\" stroke=\"#2B2527\"/><path d=\"M20 20 Q100 65 180 65 Q260 65 340 110\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"3\"/><text x=\"20\" y=\"125\">B</text><text x=\"180\" y=\"125\" text-anchor=\"middle\">N</text><text x=\"340\" y=\"125\" text-anchor=\"end\">B</text></svg></span><div class=\"facit-matte\">\\[L=\\frac{\\lambda}{2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Mönstret är B–N–B.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.127",
@@ -4458,18 +4570,20 @@ window.BANK2 = [
     "poang": "(1/0/0)",
     "t": "<p>Figuren visar en pipa som är stängd i ena änden och öppen i den andra. Rita den stående vågen för grundtonen. Figuren ska visa luftens förskjutning. Markera nod (N) och buk (B).</p><span class=\"fig bred\"><svg viewBox=\"28.364 38.177 302.724 95.958\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tom halvöppen pipa där vågmönstret ska ritas.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"197\"><title>Tom halvöppen pipa där vågmönstret ska ritas.</title>\n<rect x=\"55\" y=\"48\" width=\"250\" height=\"56\" rx=\"3\" fill=\"#EDEEF1\"/>\n<line x1=\"55\" y1=\"48\" x2=\"305\" y2=\"48\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"55\" y1=\"104\" x2=\"305\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"2.2\"/>\n<line x1=\"55\" y1=\"48\" x2=\"55\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"7\"/><line x1=\"305\" y1=\"43\" x2=\"305\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/>\n<text x=\"55\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">stängd</text><text x=\"305\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den stängda änden är en förskjutningsnod och den öppna änden en förskjutningsbuk.</p><span class=\"fig bred\"><svg preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 360 130\" width=\"620\" height=\"224\" role=\"img\" aria-label=\"Halvöppen pipa i grundtonen: N B\" xmlns=\"http://www.w3.org/2000/svg\"><title>Halvöppen pipa i grundtonen: N B</title><rect x=\"20\" y=\"30\" width=\"320\" height=\"70\" fill=\"#EFF3F8\" stroke=\"#2B2527\"/><line x1=\"20\" y1=\"25\" x2=\"20\" y2=\"105\" stroke=\"#2B2527\" stroke-width=\"5\"/><path d=\"M20 65 Q180 65 340 15\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"3\"/><text x=\"20\" y=\"125\">N</text><text x=\"340\" y=\"125\" text-anchor=\"end\">B</text></svg></span><div class=\"facit-matte\">\\[L=\\frac{\\lambda}{4}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Mönstret är N–B.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.128",
@@ -4480,18 +4594,20 @@ window.BANK2 = [
     "poang": "(1/0/0)",
     "t": "<p>I den öppna pipan ljuder första övertonen. Rita den stående vågen som uppstår. Figuren ska visa luftens förskjutning. Markera samtliga noder (N) och bukar (B).</p><span class=\"fig bred\"><svg viewBox=\"29.396 38.177 301.693 95.958\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tom öppen pipa där vågmönstret ska ritas.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"197\"><title>Tom öppen pipa där vågmönstret ska ritas.</title>\n<rect x=\"55\" y=\"48\" width=\"250\" height=\"56\" rx=\"3\" fill=\"#EDEEF1\"/>\n<line x1=\"55\" y1=\"48\" x2=\"305\" y2=\"48\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"55\" y1=\"104\" x2=\"305\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"2.2\"/>\n<line x1=\"55\" y1=\"43\" x2=\"55\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><line x1=\"305\" y1=\"43\" x2=\"305\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/>\n<text x=\"55\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text><text x=\"305\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I första övertonen har luftens förskjutning bukar vid ändarna och i mitten.</p><span class=\"fig bred\"><svg preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 360 130\" width=\"620\" height=\"224\" role=\"img\" aria-label=\"Öppen pipa i första övertonen: B N B N B\" xmlns=\"http://www.w3.org/2000/svg\"><title>Öppen pipa i första övertonen: B N B N B</title><rect x=\"20\" y=\"30\" width=\"320\" height=\"70\" fill=\"#EFF3F8\" stroke=\"#2B2527\"/><path d=\"M20 15 Q60 65 100 65 Q140 65 180 115 Q220 65 260 65 Q300 65 340 15\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"3\"/><text x=\"180\" y=\"125\" text-anchor=\"middle\">B–N–B–N–B</text></svg></span><div class=\"facit-matte\">\\[L=\\lambda\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Mönstret är B–N–B–N–B.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.129",
@@ -4522,18 +4638,20 @@ window.BANK2 = [
     "poang": "(0/2/0)",
     "t": "<p>En halvöppen pipa ljuder med frekvensen 5f<sub>1</sub>, där <em>f</em><sub>1</sub> är grundtonens frekvens. Rita den stående vågen i pipan och markera samtliga noder (N) och bukar (B). Ange också vilken överton det är.</p><span class=\"fig bred\"><svg viewBox=\"28.364 38.177 302.724 95.958\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tom halvöppen pipa där vågmönstret ska ritas.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"197\"><title>Tom halvöppen pipa där vågmönstret ska ritas.</title>\n<rect x=\"55\" y=\"48\" width=\"250\" height=\"56\" rx=\"3\" fill=\"#EDEEF1\"/>\n<line x1=\"55\" y1=\"48\" x2=\"305\" y2=\"48\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"55\" y1=\"104\" x2=\"305\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"2.2\"/>\n<line x1=\"55\" y1=\"48\" x2=\"55\" y2=\"104\" stroke=\"#2B2527\" stroke-width=\"7\"/><line x1=\"305\" y1=\"43\" x2=\"305\" y2=\"109\" stroke=\"#9A959C\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/>\n<text x=\"55\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">stängd</text><text x=\"305\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#5C575E\">öppen</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">En halvöppen pipa har \\(f_1,3f_1,5f_1,\\ldots\\). Frekvensen \\(5f_1\\) är andra övertonen.</p><span class=\"fig bred\"><svg preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 360 130\" width=\"620\" height=\"224\" role=\"img\" aria-label=\"Halvöppen pipa vid 5f1: N B N B N B\" xmlns=\"http://www.w3.org/2000/svg\"><title>Halvöppen pipa vid 5f1: N B N B N B</title><rect x=\"20\" y=\"30\" width=\"320\" height=\"70\" fill=\"#EFF3F8\" stroke=\"#2B2527\"/><line x1=\"20\" y1=\"25\" x2=\"20\" y2=\"105\" stroke=\"#2B2527\" stroke-width=\"5\"/><path d=\"M20 65 Q52 15 84 65 Q116 115 148 65 Q180 15 212 65 Q244 115 276 65 Q308 15 340 15\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"3\"/><text x=\"180\" y=\"125\" text-anchor=\"middle\">N–B–N–B–N–B</text></svg></span><div class=\"facit-matte\">\\[L=\\frac{5\\lambda}{4}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Det är andra övertonen och mönstret är N–B–N–B–N–B.</p><p class=\"facit-not\">Halvöppna rör har bara udda harmoniska toner: \\(f_1,3f_1,5f_1,\\ldots\\). Därför är \\(5f_1\\) andra övertonen och mönstret måste börja med nod vid den stängda änden och sluta med buk vid den öppna.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.131",
@@ -4544,19 +4662,21 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En sträng är fixerad i båda ändar och har längden 0,65 m. Figuren visar den stående våg som uppstår. Våghastigheten i strängen är 156 m/s.</p><p>Bestäm tonens frekvens.</p><span class=\"fig bred\"><svg viewBox=\"22.409 28.739 295.209 118.852\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Stående våg på sträng med 3 bukar.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"250\"><title>Stående våg på sträng med 3 bukar.</title>\n<rect x=\"35\" y=\"35\" width=\"270\" height=\"73\" rx=\"8\" fill=\"#EDEEF1\" stroke=\"#EDEEF1\" stroke-width=\"1.2\"/>\n<rect x=\"38\" y=\"42\" width=\"6\" height=\"60\" rx=\"2\" fill=\"#E4E3E6\" stroke=\"#2B2527\" stroke-width=\"1.3\"/><rect x=\"296\" y=\"42\" width=\"6\" height=\"60\" rx=\"2\" fill=\"#E4E3E6\" stroke=\"#2B2527\" stroke-width=\"1.3\"/>\n<line x1=\"44\" y1=\"72\" x2=\"296\" y2=\"72\" stroke=\"#9A959C\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<path d=\"M 44.00 72.00 L 45.40 70.74 L 46.80 69.49 L 48.20 68.25 L 49.60 67.01 L 51.00 65.79 L 52.40 64.58 L 53.80 63.40 L 55.20 62.24 L 56.60 61.10 L 58.00 60.00 L 59.40 58.93 L 60.80 57.89 L 62.20 56.90 L 63.60 55.94 L 65.00 55.03 L 66.40 54.16 L 67.80 53.35 L 69.20 52.58 L 70.60 51.87 L 72.00 51.22 L 73.40 50.62 L 74.80 50.07 L 76.20 49.59 L 77.60 49.17 L 79.00 48.82 L 80.40 48.52 L 81.80 48.30 L 83.20 48.13 L 84.60 48.03 L 86.00 48.00 L 87.40 48.03 L 88.80 48.13 L 90.20 48.30 L 91.60 48.52 L 93.00 48.82 L 94.40 49.17 L 95.80 49.59 L 97.20 50.07 L 98.60 50.62 L 100.00 51.22 L 101.40 51.87 L 102.80 52.58 L 104.20 53.35 L 105.60 54.16 L 107.00 55.03 L 108.40 55.94 L 109.80 56.90 L 111.20 57.89 L 112.60 58.93 L 114.00 60.00 L 115.40 61.10 L 116.80 62.24 L 118.20 63.40 L 119.60 64.58 L 121.00 65.79 L 122.40 67.01 L 123.80 68.25 L 125.20 69.49 L 126.60 70.74 L 128.00 72.00 L 129.40 73.26 L 130.80 74.51 L 132.20 75.75 L 133.60 76.99 L 135.00 78.21 L 136.40 79.42 L 137.80 80.60 L 139.20 81.76 L 140.60 82.90 L 142.00 84.00 L 143.40 85.07 L 144.80 86.11 L 146.20 87.10 L 147.60 88.06 L 149.00 88.97 L 150.40 89.84 L 151.80 90.65 L 153.20 91.42 L 154.60 92.13 L 156.00 92.78 L 157.40 93.38 L 158.80 93.93 L 160.20 94.41 L 161.60 94.83 L 163.00 95.18 L 164.40 95.48 L 165.80 95.70 L 167.20 95.87 L 168.60 95.97 L 170.00 96.00 L 171.40 95.97 L 172.80 95.87 L 174.20 95.70 L 175.60 95.48 L 177.00 95.18 L 178.40 94.83 L 179.80 94.41 L 181.20 93.93 L 182.60 93.38 L 184.00 92.78 L 185.40 92.13 L 186.80 91.42 L 188.20 90.65 L 189.60 89.84 L 191.00 88.97 L 192.40 88.06 L 193.80 87.10 L 195.20 86.11 L 196.60 85.07 L 198.00 84.00 L 199.40 82.90 L 200.80 81.76 L 202.20 80.60 L 203.60 79.42 L 205.00 78.21 L 206.40 76.99 L 207.80 75.75 L 209.20 74.51 L 210.60 73.26 L 212.00 72.00 L 213.40 70.74 L 214.80 69.49 L 216.20 68.25 L 217.60 67.01 L 219.00 65.79 L 220.40 64.58 L 221.80 63.40 L 223.20 62.24 L 224.60 61.10 L 226.00 60.00 L 227.40 58.93 L 228.80 57.89 L 230.20 56.90 L 231.60 55.94 L 233.00 55.03 L 234.40 54.16 L 235.80 53.35 L 237.20 52.58 L 238.60 51.87 L 240.00 51.22 L 241.40 50.62 L 242.80 50.07 L 244.20 49.59 L 245.60 49.17 L 247.00 48.82 L 248.40 48.52 L 249.80 48.30 L 251.20 48.13 L 252.60 48.03 L 254.00 48.00 L 255.40 48.03 L 256.80 48.13 L 258.20 48.30 L 259.60 48.52 L 261.00 48.82 L 262.40 49.17 L 263.80 49.59 L 265.20 50.07 L 266.60 50.62 L 268.00 51.22 L 269.40 51.87 L 270.80 52.58 L 272.20 53.35 L 273.60 54.16 L 275.00 55.03 L 276.40 55.94 L 277.80 56.90 L 279.20 57.89 L 280.60 58.93 L 282.00 60.00 L 283.40 61.10 L 284.80 62.24 L 286.20 63.40 L 287.60 64.58 L 289.00 65.79 L 290.40 67.01 L 291.80 68.25 L 293.20 69.49 L 294.60 70.74 L 296.00 72.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/>\n<path d=\"M 44.00 72.00 L 45.40 73.26 L 46.80 74.51 L 48.20 75.75 L 49.60 76.99 L 51.00 78.21 L 52.40 79.42 L 53.80 80.60 L 55.20 81.76 L 56.60 82.90 L 58.00 84.00 L 59.40 85.07 L 60.80 86.11 L 62.20 87.10 L 63.60 88.06 L 65.00 88.97 L 66.40 89.84 L 67.80 90.65 L 69.20 91.42 L 70.60 92.13 L 72.00 92.78 L 73.40 93.38 L 74.80 93.93 L 76.20 94.41 L 77.60 94.83 L 79.00 95.18 L 80.40 95.48 L 81.80 95.70 L 83.20 95.87 L 84.60 95.97 L 86.00 96.00 L 87.40 95.97 L 88.80 95.87 L 90.20 95.70 L 91.60 95.48 L 93.00 95.18 L 94.40 94.83 L 95.80 94.41 L 97.20 93.93 L 98.60 93.38 L 100.00 92.78 L 101.40 92.13 L 102.80 91.42 L 104.20 90.65 L 105.60 89.84 L 107.00 88.97 L 108.40 88.06 L 109.80 87.10 L 111.20 86.11 L 112.60 85.07 L 114.00 84.00 L 115.40 82.90 L 116.80 81.76 L 118.20 80.60 L 119.60 79.42 L 121.00 78.21 L 122.40 76.99 L 123.80 75.75 L 125.20 74.51 L 126.60 73.26 L 128.00 72.00 L 129.40 70.74 L 130.80 69.49 L 132.20 68.25 L 133.60 67.01 L 135.00 65.79 L 136.40 64.58 L 137.80 63.40 L 139.20 62.24 L 140.60 61.10 L 142.00 60.00 L 143.40 58.93 L 144.80 57.89 L 146.20 56.90 L 147.60 55.94 L 149.00 55.03 L 150.40 54.16 L 151.80 53.35 L 153.20 52.58 L 154.60 51.87 L 156.00 51.22 L 157.40 50.62 L 158.80 50.07 L 160.20 49.59 L 161.60 49.17 L 163.00 48.82 L 164.40 48.52 L 165.80 48.30 L 167.20 48.13 L 168.60 48.03 L 170.00 48.00 L 171.40 48.03 L 172.80 48.13 L 174.20 48.30 L 175.60 48.52 L 177.00 48.82 L 178.40 49.17 L 179.80 49.59 L 181.20 50.07 L 182.60 50.62 L 184.00 51.22 L 185.40 51.87 L 186.80 52.58 L 188.20 53.35 L 189.60 54.16 L 191.00 55.03 L 192.40 55.94 L 193.80 56.90 L 195.20 57.89 L 196.60 58.93 L 198.00 60.00 L 199.40 61.10 L 200.80 62.24 L 202.20 63.40 L 203.60 64.58 L 205.00 65.79 L 206.40 67.01 L 207.80 68.25 L 209.20 69.49 L 210.60 70.74 L 212.00 72.00 L 213.40 73.26 L 214.80 74.51 L 216.20 75.75 L 217.60 76.99 L 219.00 78.21 L 220.40 79.42 L 221.80 80.60 L 223.20 81.76 L 224.60 82.90 L 226.00 84.00 L 227.40 85.07 L 228.80 86.11 L 230.20 87.10 L 231.60 88.06 L 233.00 88.97 L 234.40 89.84 L 235.80 90.65 L 237.20 91.42 L 238.60 92.13 L 240.00 92.78 L 241.40 93.38 L 242.80 93.93 L 244.20 94.41 L 245.60 94.83 L 247.00 95.18 L 248.40 95.48 L 249.80 95.70 L 251.20 95.87 L 252.60 95.97 L 254.00 96.00 L 255.40 95.97 L 256.80 95.87 L 258.20 95.70 L 259.60 95.48 L 261.00 95.18 L 262.40 94.83 L 263.80 94.41 L 265.20 93.93 L 266.60 93.38 L 268.00 92.78 L 269.40 92.13 L 270.80 91.42 L 272.20 90.65 L 273.60 89.84 L 275.00 88.97 L 276.40 88.06 L 277.80 87.10 L 279.20 86.11 L 280.60 85.07 L 282.00 84.00 L 283.40 82.90 L 284.80 81.76 L 286.20 80.60 L 287.60 79.42 L 289.00 78.21 L 290.40 76.99 L 291.80 75.75 L 293.20 74.51 L 294.60 73.26 L 296.00 72.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\" opacity=\".72\" stroke-linecap=\"round\"/>\n<circle cx=\"44.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><circle cx=\"128.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><circle cx=\"212.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><circle cx=\"296.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><line x1=\"44\" y1=\"121\" x2=\"296\" y2=\"121\" stroke=\"#9A959C\" stroke-width=\"1.1\"/><line x1=\"44\" y1=\"116\" x2=\"44\" y2=\"126\" stroke=\"#9A959C\"/><line x1=\"296\" y1=\"116\" x2=\"296\" y2=\"126\" stroke=\"#9A959C\"/><text x=\"170\" y=\"140\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\">0,65 m</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Tre bukar betyder \\(n=3\\), alltså andra övertonen.</p><div class=\"facit-matte\">\\[L=3\\frac{\\lambda}{2}\\quad\\Longrightarrow\\quad \\lambda=\\frac{2L}{3}=\\frac{2\\cdot0{,}65}{3}=0{,}433\\ \\mathrm m\\]\\[f=\\frac{v}{\\lambda}=\\frac{156}{0{,}433}=360\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Tonens frekvens är ungefär \\(360\\ \\mathrm{Hz}\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 360,
     "tolerans": 5.3999999999999995,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.132",
@@ -4567,18 +4687,20 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>I en laboration driver en vibrator en sträng med frekvensen 80 Hz. Mellan vibratorn och trissan är avståndet 1,20 m. Den stående vågen ser ut som i figuren.</p><p>Bestäm våghastigheten i strängen.</p><span class=\"fig\"><svg viewBox=\"0 0 391 206\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Vibrator och sträng med fyra bukar, trissa och hängande vikt.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"263\"><title>Vibrator och sträng med fyra bukar, trissa och hängande vikt.</title>\n<rect x=\"18\" y=\"63\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"1.9\"/><circle cx=\"42\" cy=\"87\" r=\"10\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"87\" x2=\"72\" y2=\"87\" stroke=\"#2B2527\" stroke-width=\"2\"/>\n<text x=\"42\" y=\"129\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9.5\" fill=\"#5C575E\">vibrator</text>\n<line x1=\"72\" y1=\"30\" x2=\"286\" y2=\"30\" stroke=\"#9A959C\"/><line x1=\"72\" y1=\"25\" x2=\"72\" y2=\"35\" stroke=\"#9A959C\"/><line x1=\"286\" y1=\"25\" x2=\"286\" y2=\"35\" stroke=\"#9A959C\"/><text x=\"179.0\" y=\"20\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" font-weight=\"600\" fill=\"#5C575E\">1,20 m</text>\n<line x1=\"72\" y1=\"86\" x2=\"286\" y2=\"86\" stroke=\"#9A959C\" stroke-dasharray=\"4 4\"/><path d=\"M 72.00 86.00 L 73.19 84.60 L 74.38 83.22 L 75.57 81.84 L 76.76 80.49 L 77.94 79.16 L 79.13 77.87 L 80.32 76.61 L 81.51 75.40 L 82.70 74.24 L 83.89 73.14 L 85.08 72.11 L 86.27 71.14 L 87.46 70.24 L 88.64 69.42 L 89.83 68.68 L 91.02 68.02 L 92.21 67.46 L 93.40 66.98 L 94.59 66.59 L 95.78 66.30 L 96.97 66.11 L 98.16 66.01 L 99.34 66.01 L 100.53 66.11 L 101.72 66.30 L 102.91 66.59 L 104.10 66.98 L 105.29 67.46 L 106.48 68.02 L 107.67 68.68 L 108.86 69.42 L 110.04 70.24 L 111.23 71.14 L 112.42 72.11 L 113.61 73.14 L 114.80 74.24 L 115.99 75.40 L 117.18 76.61 L 118.37 77.87 L 119.56 79.16 L 120.74 80.49 L 121.93 81.84 L 123.12 83.22 L 124.31 84.60 L 125.50 86.00 L 126.69 87.40 L 127.88 88.78 L 129.07 90.16 L 130.26 91.51 L 131.44 92.84 L 132.63 94.13 L 133.82 95.39 L 135.01 96.60 L 136.20 97.76 L 137.39 98.86 L 138.58 99.89 L 139.77 100.86 L 140.96 101.76 L 142.14 102.58 L 143.33 103.32 L 144.52 103.98 L 145.71 104.54 L 146.90 105.02 L 148.09 105.41 L 149.28 105.70 L 150.47 105.89 L 151.66 105.99 L 152.84 105.99 L 154.03 105.89 L 155.22 105.70 L 156.41 105.41 L 157.60 105.02 L 158.79 104.54 L 159.98 103.98 L 161.17 103.32 L 162.36 102.58 L 163.54 101.76 L 164.73 100.86 L 165.92 99.89 L 167.11 98.86 L 168.30 97.76 L 169.49 96.60 L 170.68 95.39 L 171.87 94.13 L 173.06 92.84 L 174.24 91.51 L 175.43 90.16 L 176.62 88.78 L 177.81 87.40 L 179.00 86.00 L 180.19 84.60 L 181.38 83.22 L 182.57 81.84 L 183.76 80.49 L 184.94 79.16 L 186.13 77.87 L 187.32 76.61 L 188.51 75.40 L 189.70 74.24 L 190.89 73.14 L 192.08 72.11 L 193.27 71.14 L 194.46 70.24 L 195.64 69.42 L 196.83 68.68 L 198.02 68.02 L 199.21 67.46 L 200.40 66.98 L 201.59 66.59 L 202.78 66.30 L 203.97 66.11 L 205.16 66.01 L 206.34 66.01 L 207.53 66.11 L 208.72 66.30 L 209.91 66.59 L 211.10 66.98 L 212.29 67.46 L 213.48 68.02 L 214.67 68.68 L 215.86 69.42 L 217.04 70.24 L 218.23 71.14 L 219.42 72.11 L 220.61 73.14 L 221.80 74.24 L 222.99 75.40 L 224.18 76.61 L 225.37 77.87 L 226.56 79.16 L 227.74 80.49 L 228.93 81.84 L 230.12 83.22 L 231.31 84.60 L 232.50 86.00 L 233.69 87.40 L 234.88 88.78 L 236.07 90.16 L 237.26 91.51 L 238.44 92.84 L 239.63 94.13 L 240.82 95.39 L 242.01 96.60 L 243.20 97.76 L 244.39 98.86 L 245.58 99.89 L 246.77 100.86 L 247.96 101.76 L 249.14 102.58 L 250.33 103.32 L 251.52 103.98 L 252.71 104.54 L 253.90 105.02 L 255.09 105.41 L 256.28 105.70 L 257.47 105.89 L 258.66 105.99 L 259.84 105.99 L 261.03 105.89 L 262.22 105.70 L 263.41 105.41 L 264.60 105.02 L 265.79 104.54 L 266.98 103.98 L 268.17 103.32 L 269.36 102.58 L 270.54 101.76 L 271.73 100.86 L 272.92 99.89 L 274.11 98.86 L 275.30 97.76 L 276.49 96.60 L 277.68 95.39 L 278.87 94.13 L 280.06 92.84 L 281.24 91.51 L 282.43 90.16 L 283.62 88.78 L 284.81 87.40 L 286.00 86.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.6\"/><path d=\"M 72.00 86.00 L 73.19 87.40 L 74.38 88.78 L 75.57 90.16 L 76.76 91.51 L 77.94 92.84 L 79.13 94.13 L 80.32 95.39 L 81.51 96.60 L 82.70 97.76 L 83.89 98.86 L 85.08 99.89 L 86.27 100.86 L 87.46 101.76 L 88.64 102.58 L 89.83 103.32 L 91.02 103.98 L 92.21 104.54 L 93.40 105.02 L 94.59 105.41 L 95.78 105.70 L 96.97 105.89 L 98.16 105.99 L 99.34 105.99 L 100.53 105.89 L 101.72 105.70 L 102.91 105.41 L 104.10 105.02 L 105.29 104.54 L 106.48 103.98 L 107.67 103.32 L 108.86 102.58 L 110.04 101.76 L 111.23 100.86 L 112.42 99.89 L 113.61 98.86 L 114.80 97.76 L 115.99 96.60 L 117.18 95.39 L 118.37 94.13 L 119.56 92.84 L 120.74 91.51 L 121.93 90.16 L 123.12 88.78 L 124.31 87.40 L 125.50 86.00 L 126.69 84.60 L 127.88 83.22 L 129.07 81.84 L 130.26 80.49 L 131.44 79.16 L 132.63 77.87 L 133.82 76.61 L 135.01 75.40 L 136.20 74.24 L 137.39 73.14 L 138.58 72.11 L 139.77 71.14 L 140.96 70.24 L 142.14 69.42 L 143.33 68.68 L 144.52 68.02 L 145.71 67.46 L 146.90 66.98 L 148.09 66.59 L 149.28 66.30 L 150.47 66.11 L 151.66 66.01 L 152.84 66.01 L 154.03 66.11 L 155.22 66.30 L 156.41 66.59 L 157.60 66.98 L 158.79 67.46 L 159.98 68.02 L 161.17 68.68 L 162.36 69.42 L 163.54 70.24 L 164.73 71.14 L 165.92 72.11 L 167.11 73.14 L 168.30 74.24 L 169.49 75.40 L 170.68 76.61 L 171.87 77.87 L 173.06 79.16 L 174.24 80.49 L 175.43 81.84 L 176.62 83.22 L 177.81 84.60 L 179.00 86.00 L 180.19 87.40 L 181.38 88.78 L 182.57 90.16 L 183.76 91.51 L 184.94 92.84 L 186.13 94.13 L 187.32 95.39 L 188.51 96.60 L 189.70 97.76 L 190.89 98.86 L 192.08 99.89 L 193.27 100.86 L 194.46 101.76 L 195.64 102.58 L 196.83 103.32 L 198.02 103.98 L 199.21 104.54 L 200.40 105.02 L 201.59 105.41 L 202.78 105.70 L 203.97 105.89 L 205.16 105.99 L 206.34 105.99 L 207.53 105.89 L 208.72 105.70 L 209.91 105.41 L 211.10 105.02 L 212.29 104.54 L 213.48 103.98 L 214.67 103.32 L 215.86 102.58 L 217.04 101.76 L 218.23 100.86 L 219.42 99.89 L 220.61 98.86 L 221.80 97.76 L 222.99 96.60 L 224.18 95.39 L 225.37 94.13 L 226.56 92.84 L 227.74 91.51 L 228.93 90.16 L 230.12 88.78 L 231.31 87.40 L 232.50 86.00 L 233.69 84.60 L 234.88 83.22 L 236.07 81.84 L 237.26 80.49 L 238.44 79.16 L 239.63 77.87 L 240.82 76.61 L 242.01 75.40 L 243.20 74.24 L 244.39 73.14 L 245.58 72.11 L 246.77 71.14 L 247.96 70.24 L 249.14 69.42 L 250.33 68.68 L 251.52 68.02 L 252.71 67.46 L 253.90 66.98 L 255.09 66.59 L 256.28 66.30 L 257.47 66.11 L 258.66 66.01 L 259.84 66.01 L 261.03 66.11 L 262.22 66.30 L 263.41 66.59 L 264.60 66.98 L 265.79 67.46 L 266.98 68.02 L 268.17 68.68 L 269.36 69.42 L 270.54 70.24 L 271.73 71.14 L 272.92 72.11 L 274.11 73.14 L 275.30 74.24 L 276.49 75.40 L 277.68 76.61 L 278.87 77.87 L 280.06 79.16 L 281.24 80.49 L 282.43 81.84 L 283.62 83.22 L 284.81 84.60 L 286.00 86.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"1.7\" stroke-dasharray=\"6 4\" opacity=\".72\"/>\n<circle cx=\"302\" cy=\"86\" r=\"16\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2\"/><circle cx=\"302\" cy=\"86\" r=\"4\" fill=\"#2B2527\"/>\n<path d=\"M 286 86 A 16 16 0 0 0 302 102 L 302 158\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"2.1\" stroke-linecap=\"round\"/>\n<rect x=\"287\" y=\"158\" width=\"30\" height=\"30\" rx=\"4\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"1.9\"/><text x=\"302\" y=\"177\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9\" fill=\"#2B2527\">vikt</text>\n<line x1=\"13\" y1=\"194\" x2=\"344\" y2=\"194\" stroke=\"#EDEEF1\" stroke-width=\"5\"/></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Fyra halva våglängder ryms på sträckan.</p><div class=\"facit-matte\">\\[L=4\\frac{\\lambda}{2}=2\\lambda\\quad\\Longrightarrow\\quad \\lambda=\\frac{1{,}20}{2}=0{,}60\\ \\mathrm m\\]\\[v=f\\lambda=80\\cdot0{,}60=48\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våghastigheten är \\(48\\ \\mathrm{m/s}\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 48,
     "tolerans": 0.72,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.133",
@@ -4589,12 +4711,12 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Samma öppna orgelpipa visas vid två olika toner. Den övre bilden visar grundtonen 340 Hz. Ljudhastigheten är 340 m/s.</p><ol><li>Vilken frekvens har tonen i den undre bilden?</li><li>Bestäm pipans längd.</li></ol><span class=\"fig\"><svg viewBox=\"34.290 1.634 311.331 178.667\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Samma öppna pipa vid grundton och andra övertonen.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"287\"><title>Samma öppna pipa vid grundton och andra övertonen.</title>\n<text x=\"190\" y=\"18\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9.5\" fill=\"#5C575E\">samma öppna pipa</text><rect x=\"48\" y=\"38\" width=\"284\" height=\"48\" rx=\"3\" fill=\"#EDEEF1\"/><line x1=\"48\" y1=\"38\" x2=\"332\" y2=\"38\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"48\" y1=\"86\" x2=\"332\" y2=\"86\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"48\" y1=\"34\" x2=\"48\" y2=\"90\" stroke=\"#9A959C\" stroke-dasharray=\"4 4\"/><line x1=\"332\" y1=\"34\" x2=\"332\" y2=\"90\" stroke=\"#9A959C\" stroke-dasharray=\"4 4\"/><path d=\"M 48.00 38.00 L 49.58 38.00 L 51.16 38.01 L 52.73 38.03 L 54.31 38.06 L 55.89 38.09 L 57.47 38.13 L 59.04 38.18 L 60.62 38.23 L 62.20 38.30 L 63.78 38.36 L 65.36 38.44 L 66.93 38.52 L 68.51 38.62 L 70.09 38.71 L 71.67 38.82 L 73.24 38.93 L 74.82 39.05 L 76.40 39.17 L 77.98 39.31 L 79.56 39.45 L 81.13 39.59 L 82.71 39.75 L 84.29 39.91 L 85.87 40.07 L 87.44 40.25 L 89.02 40.43 L 90.60 40.62 L 92.18 40.81 L 93.76 41.01 L 95.33 41.22 L 96.91 41.43 L 98.49 41.65 L 100.07 41.87 L 101.64 42.10 L 103.22 42.34 L 104.80 42.58 L 106.38 42.83 L 107.96 43.09 L 109.53 43.35 L 111.11 43.61 L 112.69 43.89 L 114.27 44.16 L 115.84 44.45 L 117.42 44.74 L 119.00 45.03 L 120.58 45.33 L 122.16 45.63 L 123.73 45.94 L 125.31 46.25 L 126.89 46.57 L 128.47 46.90 L 130.04 47.22 L 131.62 47.56 L 133.20 47.89 L 134.78 48.23 L 136.36 48.58 L 137.93 48.93 L 139.51 49.28 L 141.09 49.64 L 142.67 50.00 L 144.24 50.36 L 145.82 50.73 L 147.40 51.10 L 148.98 51.48 L 150.56 51.86 L 152.13 52.24 L 153.71 52.62 L 155.29 53.01 L 156.87 53.40 L 158.44 53.79 L 160.02 54.19 L 161.60 54.58 L 163.18 54.98 L 164.76 55.38 L 166.33 55.79 L 167.91 56.19 L 169.49 56.60 L 171.07 57.01 L 172.64 57.42 L 174.22 57.83 L 175.80 58.25 L 177.38 58.66 L 178.96 59.08 L 180.53 59.49 L 182.11 59.91 L 183.69 60.33 L 185.27 60.74 L 186.84 61.16 L 188.42 61.58 L 190.00 62.00 L 191.58 62.42 L 193.16 62.84 L 194.73 63.26 L 196.31 63.67 L 197.89 64.09 L 199.47 64.51 L 201.04 64.92 L 202.62 65.34 L 204.20 65.75 L 205.78 66.17 L 207.36 66.58 L 208.93 66.99 L 210.51 67.40 L 212.09 67.81 L 213.67 68.21 L 215.24 68.62 L 216.82 69.02 L 218.40 69.42 L 219.98 69.81 L 221.56 70.21 L 223.13 70.60 L 224.71 70.99 L 226.29 71.38 L 227.87 71.76 L 229.44 72.14 L 231.02 72.52 L 232.60 72.90 L 234.18 73.27 L 235.76 73.64 L 237.33 74.00 L 238.91 74.36 L 240.49 74.72 L 242.07 75.07 L 243.64 75.42 L 245.22 75.77 L 246.80 76.11 L 248.38 76.44 L 249.96 76.78 L 251.53 77.10 L 253.11 77.43 L 254.69 77.75 L 256.27 78.06 L 257.84 78.37 L 259.42 78.67 L 261.00 78.97 L 262.58 79.26 L 264.16 79.55 L 265.73 79.84 L 267.31 80.11 L 268.89 80.39 L 270.47 80.65 L 272.04 80.91 L 273.62 81.17 L 275.20 81.42 L 276.78 81.66 L 278.36 81.90 L 279.93 82.13 L 281.51 82.35 L 283.09 82.57 L 284.67 82.78 L 286.24 82.99 L 287.82 83.19 L 289.40 83.38 L 290.98 83.57 L 292.56 83.75 L 294.13 83.93 L 295.71 84.09 L 297.29 84.25 L 298.87 84.41 L 300.44 84.55 L 302.02 84.69 L 303.60 84.83 L 305.18 84.95 L 306.76 85.07 L 308.33 85.18 L 309.91 85.29 L 311.49 85.38 L 313.07 85.48 L 314.64 85.56 L 316.22 85.64 L 317.80 85.70 L 319.38 85.77 L 320.96 85.82 L 322.53 85.87 L 324.11 85.91 L 325.69 85.94 L 327.27 85.97 L 328.84 85.99 L 330.42 86.00 L 332.00 86.00\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.3\"/><path d=\"M 48.00 86.00 L 49.58 86.00 L 51.16 85.99 L 52.73 85.97 L 54.31 85.94 L 55.89 85.91 L 57.47 85.87 L 59.04 85.82 L 60.62 85.77 L 62.20 85.70 L 63.78 85.64 L 65.36 85.56 L 66.93 85.48 L 68.51 85.38 L 70.09 85.29 L 71.67 85.18 L 73.24 85.07 L 74.82 84.95 L 76.40 84.83 L 77.98 84.69 L 79.56 84.55 L 81.13 84.41 L 82.71 84.25 L 84.29 84.09 L 85.87 83.93 L 87.44 83.75 L 89.02 83.57 L 90.60 83.38 L 92.18 83.19 L 93.76 82.99 L 95.33 82.78 L 96.91 82.57 L 98.49 82.35 L 100.07 82.13 L 101.64 81.90 L 103.22 81.66 L 104.80 81.42 L 106.38 81.17 L 107.96 80.91 L 109.53 80.65 L 111.11 80.39 L 112.69 80.11 L 114.27 79.84 L 115.84 79.55 L 117.42 79.26 L 119.00 78.97 L 120.58 78.67 L 122.16 78.37 L 123.73 78.06 L 125.31 77.75 L 126.89 77.43 L 128.47 77.10 L 130.04 76.78 L 131.62 76.44 L 133.20 76.11 L 134.78 75.77 L 136.36 75.42 L 137.93 75.07 L 139.51 74.72 L 141.09 74.36 L 142.67 74.00 L 144.24 73.64 L 145.82 73.27 L 147.40 72.90 L 148.98 72.52 L 150.56 72.14 L 152.13 71.76 L 153.71 71.38 L 155.29 70.99 L 156.87 70.60 L 158.44 70.21 L 160.02 69.81 L 161.60 69.42 L 163.18 69.02 L 164.76 68.62 L 166.33 68.21 L 167.91 67.81 L 169.49 67.40 L 171.07 66.99 L 172.64 66.58 L 174.22 66.17 L 175.80 65.75 L 177.38 65.34 L 178.96 64.92 L 180.53 64.51 L 182.11 64.09 L 183.69 63.67 L 185.27 63.26 L 186.84 62.84 L 188.42 62.42 L 190.00 62.00 L 191.58 61.58 L 193.16 61.16 L 194.73 60.74 L 196.31 60.33 L 197.89 59.91 L 199.47 59.49 L 201.04 59.08 L 202.62 58.66 L 204.20 58.25 L 205.78 57.83 L 207.36 57.42 L 208.93 57.01 L 210.51 56.60 L 212.09 56.19 L 213.67 55.79 L 215.24 55.38 L 216.82 54.98 L 218.40 54.58 L 219.98 54.19 L 221.56 53.79 L 223.13 53.40 L 224.71 53.01 L 226.29 52.62 L 227.87 52.24 L 229.44 51.86 L 231.02 51.48 L 232.60 51.10 L 234.18 50.73 L 235.76 50.36 L 237.33 50.00 L 238.91 49.64 L 240.49 49.28 L 242.07 48.93 L 243.64 48.58 L 245.22 48.23 L 246.80 47.89 L 248.38 47.56 L 249.96 47.22 L 251.53 46.90 L 253.11 46.57 L 254.69 46.25 L 256.27 45.94 L 257.84 45.63 L 259.42 45.33 L 261.00 45.03 L 262.58 44.74 L 264.16 44.45 L 265.73 44.16 L 267.31 43.89 L 268.89 43.61 L 270.47 43.35 L 272.04 43.09 L 273.62 42.83 L 275.20 42.58 L 276.78 42.34 L 278.36 42.10 L 279.93 41.87 L 281.51 41.65 L 283.09 41.43 L 284.67 41.22 L 286.24 41.01 L 287.82 40.81 L 289.40 40.62 L 290.98 40.43 L 292.56 40.25 L 294.13 40.07 L 295.71 39.91 L 297.29 39.75 L 298.87 39.59 L 300.44 39.45 L 302.02 39.31 L 303.60 39.17 L 305.18 39.05 L 306.76 38.93 L 308.33 38.82 L 309.91 38.71 L 311.49 38.62 L 313.07 38.52 L 314.64 38.44 L 316.22 38.36 L 317.80 38.30 L 319.38 38.23 L 320.96 38.18 L 322.53 38.13 L 324.11 38.09 L 325.69 38.06 L 327.27 38.03 L 328.84 38.01 L 330.42 38.00 L 332.00 38.00\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\" opacity=\".72\"/><rect x=\"48\" y=\"122\" width=\"284\" height=\"48\" rx=\"3\" fill=\"#EDEEF1\"/><line x1=\"48\" y1=\"122\" x2=\"332\" y2=\"122\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"48\" y1=\"170\" x2=\"332\" y2=\"170\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><line x1=\"48\" y1=\"118\" x2=\"48\" y2=\"174\" stroke=\"#9A959C\" stroke-dasharray=\"4 4\"/><line x1=\"332\" y1=\"118\" x2=\"332\" y2=\"174\" stroke=\"#9A959C\" stroke-dasharray=\"4 4\"/><path d=\"M 48.00 122.00 L 49.58 122.03 L 51.16 122.13 L 52.73 122.30 L 54.31 122.52 L 55.89 122.82 L 57.47 123.17 L 59.04 123.59 L 60.62 124.07 L 62.20 124.62 L 63.78 125.22 L 65.36 125.87 L 66.93 126.58 L 68.51 127.35 L 70.09 128.16 L 71.67 129.03 L 73.24 129.94 L 74.82 130.90 L 76.40 131.89 L 77.98 132.93 L 79.56 134.00 L 81.13 135.10 L 82.71 136.24 L 84.29 137.40 L 85.87 138.58 L 87.44 139.79 L 89.02 141.01 L 90.60 142.25 L 92.18 143.49 L 93.76 144.74 L 95.33 146.00 L 96.91 147.26 L 98.49 148.51 L 100.07 149.75 L 101.64 150.99 L 103.22 152.21 L 104.80 153.42 L 106.38 154.60 L 107.96 155.76 L 109.53 156.90 L 111.11 158.00 L 112.69 159.07 L 114.27 160.11 L 115.84 161.10 L 117.42 162.06 L 119.00 162.97 L 120.58 163.84 L 122.16 164.65 L 123.73 165.42 L 125.31 166.13 L 126.89 166.78 L 128.47 167.38 L 130.04 167.93 L 131.62 168.41 L 133.20 168.83 L 134.78 169.18 L 136.36 169.48 L 137.93 169.70 L 139.51 169.87 L 141.09 169.97 L 142.67 170.00 L 144.24 169.97 L 145.82 169.87 L 147.40 169.70 L 148.98 169.48 L 150.56 169.18 L 152.13 168.83 L 153.71 168.41 L 155.29 167.93 L 156.87 167.38 L 158.44 166.78 L 160.02 166.13 L 161.60 165.42 L 163.18 164.65 L 164.76 163.84 L 166.33 162.97 L 167.91 162.06 L 169.49 161.10 L 171.07 160.11 L 172.64 159.07 L 174.22 158.00 L 175.80 156.90 L 177.38 155.76 L 178.96 154.60 L 180.53 153.42 L 182.11 152.21 L 183.69 150.99 L 185.27 149.75 L 186.84 148.51 L 188.42 147.26 L 190.00 146.00 L 191.58 144.74 L 193.16 143.49 L 194.73 142.25 L 196.31 141.01 L 197.89 139.79 L 199.47 138.58 L 201.04 137.40 L 202.62 136.24 L 204.20 135.10 L 205.78 134.00 L 207.36 132.93 L 208.93 131.89 L 210.51 130.90 L 212.09 129.94 L 213.67 129.03 L 215.24 128.16 L 216.82 127.35 L 218.40 126.58 L 219.98 125.87 L 221.56 125.22 L 223.13 124.62 L 224.71 124.07 L 226.29 123.59 L 227.87 123.17 L 229.44 122.82 L 231.02 122.52 L 232.60 122.30 L 234.18 122.13 L 235.76 122.03 L 237.33 122.00 L 238.91 122.03 L 240.49 122.13 L 242.07 122.30 L 243.64 122.52 L 245.22 122.82 L 246.80 123.17 L 248.38 123.59 L 249.96 124.07 L 251.53 124.62 L 253.11 125.22 L 254.69 125.87 L 256.27 126.58 L 257.84 127.35 L 259.42 128.16 L 261.00 129.03 L 262.58 129.94 L 264.16 130.90 L 265.73 131.89 L 267.31 132.93 L 268.89 134.00 L 270.47 135.10 L 272.04 136.24 L 273.62 137.40 L 275.20 138.58 L 276.78 139.79 L 278.36 141.01 L 279.93 142.25 L 281.51 143.49 L 283.09 144.74 L 284.67 146.00 L 286.24 147.26 L 287.82 148.51 L 289.40 149.75 L 290.98 150.99 L 292.56 152.21 L 294.13 153.42 L 295.71 154.60 L 297.29 155.76 L 298.87 156.90 L 300.44 158.00 L 302.02 159.07 L 303.60 160.11 L 305.18 161.10 L 306.76 162.06 L 308.33 162.97 L 309.91 163.84 L 311.49 164.65 L 313.07 165.42 L 314.64 166.13 L 316.22 166.78 L 317.80 167.38 L 319.38 167.93 L 320.96 168.41 L 322.53 168.83 L 324.11 169.18 L 325.69 169.48 L 327.27 169.70 L 328.84 169.87 L 330.42 169.97 L 332.00 170.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.3\"/><path d=\"M 48.00 170.00 L 49.58 169.97 L 51.16 169.87 L 52.73 169.70 L 54.31 169.48 L 55.89 169.18 L 57.47 168.83 L 59.04 168.41 L 60.62 167.93 L 62.20 167.38 L 63.78 166.78 L 65.36 166.13 L 66.93 165.42 L 68.51 164.65 L 70.09 163.84 L 71.67 162.97 L 73.24 162.06 L 74.82 161.10 L 76.40 160.11 L 77.98 159.07 L 79.56 158.00 L 81.13 156.90 L 82.71 155.76 L 84.29 154.60 L 85.87 153.42 L 87.44 152.21 L 89.02 150.99 L 90.60 149.75 L 92.18 148.51 L 93.76 147.26 L 95.33 146.00 L 96.91 144.74 L 98.49 143.49 L 100.07 142.25 L 101.64 141.01 L 103.22 139.79 L 104.80 138.58 L 106.38 137.40 L 107.96 136.24 L 109.53 135.10 L 111.11 134.00 L 112.69 132.93 L 114.27 131.89 L 115.84 130.90 L 117.42 129.94 L 119.00 129.03 L 120.58 128.16 L 122.16 127.35 L 123.73 126.58 L 125.31 125.87 L 126.89 125.22 L 128.47 124.62 L 130.04 124.07 L 131.62 123.59 L 133.20 123.17 L 134.78 122.82 L 136.36 122.52 L 137.93 122.30 L 139.51 122.13 L 141.09 122.03 L 142.67 122.00 L 144.24 122.03 L 145.82 122.13 L 147.40 122.30 L 148.98 122.52 L 150.56 122.82 L 152.13 123.17 L 153.71 123.59 L 155.29 124.07 L 156.87 124.62 L 158.44 125.22 L 160.02 125.87 L 161.60 126.58 L 163.18 127.35 L 164.76 128.16 L 166.33 129.03 L 167.91 129.94 L 169.49 130.90 L 171.07 131.89 L 172.64 132.93 L 174.22 134.00 L 175.80 135.10 L 177.38 136.24 L 178.96 137.40 L 180.53 138.58 L 182.11 139.79 L 183.69 141.01 L 185.27 142.25 L 186.84 143.49 L 188.42 144.74 L 190.00 146.00 L 191.58 147.26 L 193.16 148.51 L 194.73 149.75 L 196.31 150.99 L 197.89 152.21 L 199.47 153.42 L 201.04 154.60 L 202.62 155.76 L 204.20 156.90 L 205.78 158.00 L 207.36 159.07 L 208.93 160.11 L 210.51 161.10 L 212.09 162.06 L 213.67 162.97 L 215.24 163.84 L 216.82 164.65 L 218.40 165.42 L 219.98 166.13 L 221.56 166.78 L 223.13 167.38 L 224.71 167.93 L 226.29 168.41 L 227.87 168.83 L 229.44 169.18 L 231.02 169.48 L 232.60 169.70 L 234.18 169.87 L 235.76 169.97 L 237.33 170.00 L 238.91 169.97 L 240.49 169.87 L 242.07 169.70 L 243.64 169.48 L 245.22 169.18 L 246.80 168.83 L 248.38 168.41 L 249.96 167.93 L 251.53 167.38 L 253.11 166.78 L 254.69 166.13 L 256.27 165.42 L 257.84 164.65 L 259.42 163.84 L 261.00 162.97 L 262.58 162.06 L 264.16 161.10 L 265.73 160.11 L 267.31 159.07 L 268.89 158.00 L 270.47 156.90 L 272.04 155.76 L 273.62 154.60 L 275.20 153.42 L 276.78 152.21 L 278.36 150.99 L 279.93 149.75 L 281.51 148.51 L 283.09 147.26 L 284.67 146.00 L 286.24 144.74 L 287.82 143.49 L 289.40 142.25 L 290.98 141.01 L 292.56 139.79 L 294.13 138.58 L 295.71 137.40 L 297.29 136.24 L 298.87 135.10 L 300.44 134.00 L 302.02 132.93 L 303.60 131.89 L 305.18 130.90 L 306.76 129.94 L 308.33 129.03 L 309.91 128.16 L 311.49 127.35 L 313.07 126.58 L 314.64 125.87 L 316.22 125.22 L 317.80 124.62 L 319.38 124.07 L 320.96 123.59 L 322.53 123.17 L 324.11 122.82 L 325.69 122.52 L 327.27 122.30 L 328.84 122.13 L 330.42 122.03 L 332.00 122.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\" opacity=\".72\"/></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I en öppen pipa gäller \\(L=n\\lambda_n/2\\) och \\(f_n=nf_1\\). Den undre figuren har tre halva våglängder och visar därför den andra övertonen, \\(n=3\\).</p><div class=\"facit-matte\">\\[f_3=3f_1=3\\cdot340=1020\\ \\mathrm{Hz}\\]</div><p class=\"facit-metod\">Pipans längd bestäms enklast från grundtonen.</p><div class=\"facit-matte\">\\[\\lambda_1=\\frac{v}{f_1}=\\frac{340}{340}=1{,}00\\ \\mathrm m\\]\\[L=\\frac{\\lambda_1}{2}=0{,}50\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> a) \\(1020\\ \\mathrm{Hz}\\). b) Pipan är \\(0{,}50\\ \\mathrm m\\) lång.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "flera_delar",
     "rättSvar": [
       1020,
@@ -4618,7 +4740,9 @@ window.BANK2 = [
       "a",
       "b"
     ],
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.134",
@@ -4629,18 +4753,20 @@ window.BANK2 = [
     "poang": "(0/3/0)",
     "t": "<p>En sträng med längden 0,86 m svänger som figuren visar. Frekvensen är 110 Hz och strängens linjära densitet är μ = 6,0·10<sup>−3</sup> kg/m.</p><p>Bestäm spännkraften i strängen.</p><span class=\"fig bred\"><svg viewBox=\"22.409 28.739 295.209 118.852\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Stående våg på sträng med 2 bukar.\" xmlns=\"http://www.w3.org/2000/svg\" width=\"620\" height=\"250\"><title>Stående våg på sträng med 2 bukar.</title>\n<rect x=\"35\" y=\"35\" width=\"270\" height=\"73\" rx=\"8\" fill=\"#EDEEF1\" stroke=\"#EDEEF1\" stroke-width=\"1.2\"/>\n<rect x=\"38\" y=\"42\" width=\"6\" height=\"60\" rx=\"2\" fill=\"#E4E3E6\" stroke=\"#2B2527\" stroke-width=\"1.3\"/><rect x=\"296\" y=\"42\" width=\"6\" height=\"60\" rx=\"2\" fill=\"#E4E3E6\" stroke=\"#2B2527\" stroke-width=\"1.3\"/>\n<line x1=\"44\" y1=\"72\" x2=\"296\" y2=\"72\" stroke=\"#9A959C\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/>\n<path d=\"M 44.00 72.00 L 45.40 71.16 L 46.80 70.33 L 48.20 69.49 L 49.60 68.66 L 51.00 67.83 L 52.40 67.01 L 53.80 66.19 L 55.20 65.38 L 56.60 64.58 L 58.00 63.79 L 59.40 63.01 L 60.80 62.24 L 62.20 61.48 L 63.60 60.73 L 65.00 60.00 L 66.40 59.28 L 67.80 58.58 L 69.20 57.89 L 70.60 57.22 L 72.00 56.57 L 73.40 55.94 L 74.80 55.33 L 76.20 54.74 L 77.60 54.16 L 79.00 53.61 L 80.40 53.09 L 81.80 52.58 L 83.20 52.10 L 84.60 51.65 L 86.00 51.22 L 87.40 50.81 L 88.80 50.43 L 90.20 50.07 L 91.60 49.75 L 93.00 49.45 L 94.40 49.17 L 95.80 48.93 L 97.20 48.71 L 98.60 48.52 L 100.00 48.36 L 101.40 48.23 L 102.80 48.13 L 104.20 48.06 L 105.60 48.01 L 107.00 48.00 L 108.40 48.01 L 109.80 48.06 L 111.20 48.13 L 112.60 48.23 L 114.00 48.36 L 115.40 48.52 L 116.80 48.71 L 118.20 48.93 L 119.60 49.17 L 121.00 49.45 L 122.40 49.75 L 123.80 50.07 L 125.20 50.43 L 126.60 50.81 L 128.00 51.22 L 129.40 51.65 L 130.80 52.10 L 132.20 52.58 L 133.60 53.09 L 135.00 53.61 L 136.40 54.16 L 137.80 54.74 L 139.20 55.33 L 140.60 55.94 L 142.00 56.57 L 143.40 57.22 L 144.80 57.89 L 146.20 58.58 L 147.60 59.28 L 149.00 60.00 L 150.40 60.73 L 151.80 61.48 L 153.20 62.24 L 154.60 63.01 L 156.00 63.79 L 157.40 64.58 L 158.80 65.38 L 160.20 66.19 L 161.60 67.01 L 163.00 67.83 L 164.40 68.66 L 165.80 69.49 L 167.20 70.33 L 168.60 71.16 L 170.00 72.00 L 171.40 72.84 L 172.80 73.67 L 174.20 74.51 L 175.60 75.34 L 177.00 76.17 L 178.40 76.99 L 179.80 77.81 L 181.20 78.62 L 182.60 79.42 L 184.00 80.21 L 185.40 80.99 L 186.80 81.76 L 188.20 82.52 L 189.60 83.27 L 191.00 84.00 L 192.40 84.72 L 193.80 85.42 L 195.20 86.11 L 196.60 86.78 L 198.00 87.43 L 199.40 88.06 L 200.80 88.67 L 202.20 89.26 L 203.60 89.84 L 205.00 90.39 L 206.40 90.91 L 207.80 91.42 L 209.20 91.90 L 210.60 92.35 L 212.00 92.78 L 213.40 93.19 L 214.80 93.57 L 216.20 93.93 L 217.60 94.25 L 219.00 94.55 L 220.40 94.83 L 221.80 95.07 L 223.20 95.29 L 224.60 95.48 L 226.00 95.64 L 227.40 95.77 L 228.80 95.87 L 230.20 95.94 L 231.60 95.99 L 233.00 96.00 L 234.40 95.99 L 235.80 95.94 L 237.20 95.87 L 238.60 95.77 L 240.00 95.64 L 241.40 95.48 L 242.80 95.29 L 244.20 95.07 L 245.60 94.83 L 247.00 94.55 L 248.40 94.25 L 249.80 93.93 L 251.20 93.57 L 252.60 93.19 L 254.00 92.78 L 255.40 92.35 L 256.80 91.90 L 258.20 91.42 L 259.60 90.91 L 261.00 90.39 L 262.40 89.84 L 263.80 89.26 L 265.20 88.67 L 266.60 88.06 L 268.00 87.43 L 269.40 86.78 L 270.80 86.11 L 272.20 85.42 L 273.60 84.72 L 275.00 84.00 L 276.40 83.27 L 277.80 82.52 L 279.20 81.76 L 280.60 80.99 L 282.00 80.21 L 283.40 79.42 L 284.80 78.62 L 286.20 77.81 L 287.60 76.99 L 289.00 76.17 L 290.40 75.34 L 291.80 74.51 L 293.20 73.67 L 294.60 72.84 L 296.00 72.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/>\n<path d=\"M 44.00 72.00 L 45.40 72.84 L 46.80 73.67 L 48.20 74.51 L 49.60 75.34 L 51.00 76.17 L 52.40 76.99 L 53.80 77.81 L 55.20 78.62 L 56.60 79.42 L 58.00 80.21 L 59.40 80.99 L 60.80 81.76 L 62.20 82.52 L 63.60 83.27 L 65.00 84.00 L 66.40 84.72 L 67.80 85.42 L 69.20 86.11 L 70.60 86.78 L 72.00 87.43 L 73.40 88.06 L 74.80 88.67 L 76.20 89.26 L 77.60 89.84 L 79.00 90.39 L 80.40 90.91 L 81.80 91.42 L 83.20 91.90 L 84.60 92.35 L 86.00 92.78 L 87.40 93.19 L 88.80 93.57 L 90.20 93.93 L 91.60 94.25 L 93.00 94.55 L 94.40 94.83 L 95.80 95.07 L 97.20 95.29 L 98.60 95.48 L 100.00 95.64 L 101.40 95.77 L 102.80 95.87 L 104.20 95.94 L 105.60 95.99 L 107.00 96.00 L 108.40 95.99 L 109.80 95.94 L 111.20 95.87 L 112.60 95.77 L 114.00 95.64 L 115.40 95.48 L 116.80 95.29 L 118.20 95.07 L 119.60 94.83 L 121.00 94.55 L 122.40 94.25 L 123.80 93.93 L 125.20 93.57 L 126.60 93.19 L 128.00 92.78 L 129.40 92.35 L 130.80 91.90 L 132.20 91.42 L 133.60 90.91 L 135.00 90.39 L 136.40 89.84 L 137.80 89.26 L 139.20 88.67 L 140.60 88.06 L 142.00 87.43 L 143.40 86.78 L 144.80 86.11 L 146.20 85.42 L 147.60 84.72 L 149.00 84.00 L 150.40 83.27 L 151.80 82.52 L 153.20 81.76 L 154.60 80.99 L 156.00 80.21 L 157.40 79.42 L 158.80 78.62 L 160.20 77.81 L 161.60 76.99 L 163.00 76.17 L 164.40 75.34 L 165.80 74.51 L 167.20 73.67 L 168.60 72.84 L 170.00 72.00 L 171.40 71.16 L 172.80 70.33 L 174.20 69.49 L 175.60 68.66 L 177.00 67.83 L 178.40 67.01 L 179.80 66.19 L 181.20 65.38 L 182.60 64.58 L 184.00 63.79 L 185.40 63.01 L 186.80 62.24 L 188.20 61.48 L 189.60 60.73 L 191.00 60.00 L 192.40 59.28 L 193.80 58.58 L 195.20 57.89 L 196.60 57.22 L 198.00 56.57 L 199.40 55.94 L 200.80 55.33 L 202.20 54.74 L 203.60 54.16 L 205.00 53.61 L 206.40 53.09 L 207.80 52.58 L 209.20 52.10 L 210.60 51.65 L 212.00 51.22 L 213.40 50.81 L 214.80 50.43 L 216.20 50.07 L 217.60 49.75 L 219.00 49.45 L 220.40 49.17 L 221.80 48.93 L 223.20 48.71 L 224.60 48.52 L 226.00 48.36 L 227.40 48.23 L 228.80 48.13 L 230.20 48.06 L 231.60 48.01 L 233.00 48.00 L 234.40 48.01 L 235.80 48.06 L 237.20 48.13 L 238.60 48.23 L 240.00 48.36 L 241.40 48.52 L 242.80 48.71 L 244.20 48.93 L 245.60 49.17 L 247.00 49.45 L 248.40 49.75 L 249.80 50.07 L 251.20 50.43 L 252.60 50.81 L 254.00 51.22 L 255.40 51.65 L 256.80 52.10 L 258.20 52.58 L 259.60 53.09 L 261.00 53.61 L 262.40 54.16 L 263.80 54.74 L 265.20 55.33 L 266.60 55.94 L 268.00 56.57 L 269.40 57.22 L 270.80 57.89 L 272.20 58.58 L 273.60 59.28 L 275.00 60.00 L 276.40 60.73 L 277.80 61.48 L 279.20 62.24 L 280.60 63.01 L 282.00 63.79 L 283.40 64.58 L 284.80 65.38 L 286.20 66.19 L 287.60 67.01 L 289.00 67.83 L 290.40 68.66 L 291.80 69.49 L 293.20 70.33 L 294.60 71.16 L 296.00 72.00\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\" opacity=\".72\" stroke-linecap=\"round\"/>\n<circle cx=\"44.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><circle cx=\"170.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><circle cx=\"296.00\" cy=\"72\" r=\"2.8\" fill=\"#2B2527\"/><line x1=\"44\" y1=\"121\" x2=\"296\" y2=\"121\" stroke=\"#9A959C\" stroke-width=\"1.1\"/><line x1=\"44\" y1=\"116\" x2=\"44\" y2=\"126\" stroke=\"#9A959C\"/><line x1=\"296\" y1=\"116\" x2=\"296\" y2=\"126\" stroke=\"#9A959C\"/><text x=\"170\" y=\"140\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\">0,86 m</text></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Två bukar betyder andra harmoniska svängningen. För en sträng som är fixerad i båda ändar är då \\(L=\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=L=0{,}86\\ \\mathrm m\\]\\[v=f\\lambda=110\\cdot0{,}86=94{,}6\\ \\mathrm{m/s}\\]</div><p class=\"facit-metod\">Våghastigheten på en spänd sträng är \\(v=\\sqrt{F/\\mu}\\). Lös ut spännkraften.</p><div class=\"facit-matte\">\\[F=\\mu v^2=6{,}0\\cdot10^{-3}\\cdot(94{,}6)^2=53{,}7\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spännkraften är ungefär \\(54\\ \\mathrm N\\).</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 54,
     "tolerans": 0.8099999999999999,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd"
+    "familjNyckelTidigare": "ljudvagor__ljudfart_frekvens_och_vaglangd",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.135",
@@ -4754,19 +4880,21 @@ window.BANK2 = [
     "t": "<p>Figuren visar en stående våg i en pipa som är stängd i vänstra änden och öppen i den högra. Pipan är 0,45 m lång. Vilken överton är det? Bestäm frekvensen om ljudhastigheten är 340 m/s.</p><span class=\"fig bred\"><svg viewBox=\"8.603 7.619 284.624 133.916\" width=\"620\" height=\"292\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Stående våg i en pipa som är stängd i vänstra änden.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stående våg i en pipa som är stängd i vänstra änden.</title><g transform=\"translate(-16.8,-35.98)\"><line x1=\"46\" y1=\"66\" x2=\"292\" y2=\"66\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"126\" x2=\"292\" y2=\"126\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"66\" x2=\"46\" y2=\"126\" stroke=\"#2B2527\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"46\" y=\"56\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">sluten</text><text x=\"292\" y=\"56\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><path d=\"M 46 96 L 47.23 95.41 L 48.46 94.82 L 49.69 94.23 L 50.92 93.65 L 52.15 93.06 L 53.38 92.48 L 54.61 91.9 L 55.84 91.32 L 57.07 90.74 L 58.3 90.16 L 59.53 89.59 L 60.76 89.03 L 61.99 88.46 L 63.22 87.9 L 64.45 87.35 L 65.68 86.8 L 66.91 86.25 L 68.14 85.71 L 69.37 85.18 L 70.6 84.65 L 71.83 84.13 L 73.06 83.61 L 74.29 83.11 L 75.52 82.6 L 76.75 82.11 L 77.98 81.62 L 79.21 81.15 L 80.44 80.68 L 81.67 80.22 L 82.9 79.76 L 84.13 79.32 L 85.36 78.89 L 86.59 78.46 L 87.82 78.05 L 89.05 77.64 L 90.28 77.25 L 91.51 76.86 L 92.74 76.49 L 93.97 76.13 L 95.2 75.77 L 96.43 75.43 L 97.66 75.1 L 98.89 74.79 L 100.12 74.48 L 101.35 74.19 L 102.58 73.91 L 103.81 73.64 L 105.04 73.38 L 106.27 73.13 L 107.5 72.9 L 108.73 72.68 L 109.96 72.48 L 111.19 72.28 L 112.42 72.11 L 113.65 71.94 L 114.88 71.79 L 116.11 71.65 L 117.34 71.52 L 118.57 71.41 L 119.8 71.31 L 121.03 71.22 L 122.26 71.15 L 123.49 71.09 L 124.72 71.05 L 125.95 71.02 L 127.18 71 L 128.41 71 L 129.64 71.01 L 130.87 71.04 L 132.1 71.08 L 133.33 71.13 L 134.56 71.2 L 135.79 71.28 L 137.02 71.37 L 138.25 71.48 L 139.48 71.6 L 140.71 71.74 L 141.94 71.89 L 143.17 72.05 L 144.4 72.22 L 145.63 72.41 L 146.86 72.61 L 148.09 72.83 L 149.32 73.06 L 150.55 73.3 L 151.78 73.55 L 153.01 73.81 L 154.24 74.09 L 155.47 74.38 L 156.7 74.68 L 157.93 75 L 159.16 75.32 L 160.39 75.66 L 161.62 76.01 L 162.85 76.37 L 164.08 76.74 L 165.31 77.12 L 166.54 77.51 L 167.77 77.91 L 169 78.32 L 170.23 78.74 L 171.46 79.17 L 172.69 79.61 L 173.92 80.06 L 175.15 80.52 L 176.38 80.99 L 177.61 81.46 L 178.84 81.95 L 180.07 82.44 L 181.3 82.94 L 182.53 83.44 L 183.76 83.96 L 184.99 84.48 L 186.22 85 L 187.45 85.53 L 188.68 86.07 L 189.91 86.61 L 191.14 87.16 L 192.37 87.72 L 193.6 88.27 L 194.83 88.84 L 196.06 89.4 L 197.29 89.97 L 198.52 90.55 L 199.75 91.12 L 200.98 91.7 L 202.21 92.28 L 203.44 92.87 L 204.67 93.45 L 205.9 94.04 L 207.13 94.63 L 208.36 95.21 L 209.59 95.8 L 210.82 96.39 L 212.05 96.98 L 213.28 97.57 L 214.51 98.16 L 215.74 98.74 L 216.97 99.33 L 218.2 99.91 L 219.43 100.49 L 220.66 101.07 L 221.89 101.65 L 223.12 102.22 L 224.35 102.79 L 225.58 103.35 L 226.81 103.91 L 228.04 104.47 L 229.27 105.02 L 230.5 105.57 L 231.73 106.11 L 232.96 106.64 L 234.19 107.17 L 235.42 107.7 L 236.65 108.22 L 237.88 108.73 L 239.11 109.23 L 240.34 109.73 L 241.57 110.21 L 242.8 110.69 L 244.03 111.17 L 245.26 111.63 L 246.49 112.09 L 247.72 112.53 L 248.95 112.97 L 250.18 113.4 L 251.41 113.82 L 252.64 114.22 L 253.87 114.62 L 255.1 115.01 L 256.33 115.39 L 257.56 115.75 L 258.79 116.11 L 260.02 116.45 L 261.25 116.79 L 262.48 117.11 L 263.71 117.42 L 264.94 117.72 L 266.17 118 L 267.4 118.28 L 268.63 118.54 L 269.86 118.79 L 271.09 119.02 L 272.32 119.24 L 273.55 119.45 L 274.78 119.65 L 276.01 119.84 L 277.24 120.01 L 278.47 120.17 L 279.7 120.31 L 280.93 120.44 L 282.16 120.56 L 283.39 120.66 L 284.62 120.75 L 285.85 120.83 L 287.08 120.89 L 288.31 120.94 L 289.54 120.97 L 290.77 120.99 L 292 121\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 46 96 L 47.23 96.59 L 48.46 97.18 L 49.69 97.77 L 50.92 98.35 L 52.15 98.94 L 53.38 99.52 L 54.61 100.1 L 55.84 100.68 L 57.07 101.26 L 58.3 101.84 L 59.53 102.41 L 60.76 102.97 L 61.99 103.54 L 63.22 104.1 L 64.45 104.65 L 65.68 105.2 L 66.91 105.75 L 68.14 106.29 L 69.37 106.82 L 70.6 107.35 L 71.83 107.87 L 73.06 108.39 L 74.29 108.89 L 75.52 109.4 L 76.75 109.89 L 77.98 110.38 L 79.21 110.85 L 80.44 111.32 L 81.67 111.78 L 82.9 112.24 L 84.13 112.68 L 85.36 113.11 L 86.59 113.54 L 87.82 113.95 L 89.05 114.36 L 90.28 114.75 L 91.51 115.14 L 92.74 115.51 L 93.97 115.87 L 95.2 116.23 L 96.43 116.57 L 97.66 116.9 L 98.89 117.21 L 100.12 117.52 L 101.35 117.81 L 102.58 118.09 L 103.81 118.36 L 105.04 118.62 L 106.27 118.87 L 107.5 119.1 L 108.73 119.32 L 109.96 119.52 L 111.19 119.72 L 112.42 119.89 L 113.65 120.06 L 114.88 120.21 L 116.11 120.35 L 117.34 120.48 L 118.57 120.59 L 119.8 120.69 L 121.03 120.78 L 122.26 120.85 L 123.49 120.91 L 124.72 120.95 L 125.95 120.98 L 127.18 121 L 128.41 121 L 129.64 120.99 L 130.87 120.96 L 132.1 120.92 L 133.33 120.87 L 134.56 120.8 L 135.79 120.72 L 137.02 120.63 L 138.25 120.52 L 139.48 120.4 L 140.71 120.26 L 141.94 120.11 L 143.17 119.95 L 144.4 119.78 L 145.63 119.59 L 146.86 119.39 L 148.09 119.17 L 149.32 118.94 L 150.55 118.7 L 151.78 118.45 L 153.01 118.19 L 154.24 117.91 L 155.47 117.62 L 156.7 117.32 L 157.93 117 L 159.16 116.68 L 160.39 116.34 L 161.62 115.99 L 162.85 115.63 L 164.08 115.26 L 165.31 114.88 L 166.54 114.49 L 167.77 114.09 L 169 113.68 L 170.23 113.26 L 171.46 112.83 L 172.69 112.39 L 173.92 111.94 L 175.15 111.48 L 176.38 111.01 L 177.61 110.54 L 178.84 110.05 L 180.07 109.56 L 181.3 109.06 L 182.53 108.56 L 183.76 108.04 L 184.99 107.52 L 186.22 107 L 187.45 106.47 L 188.68 105.93 L 189.91 105.39 L 191.14 104.84 L 192.37 104.28 L 193.6 103.73 L 194.83 103.16 L 196.06 102.6 L 197.29 102.03 L 198.52 101.45 L 199.75 100.88 L 200.98 100.3 L 202.21 99.72 L 203.44 99.13 L 204.67 98.55 L 205.9 97.96 L 207.13 97.37 L 208.36 96.79 L 209.59 96.2 L 210.82 95.61 L 212.05 95.02 L 213.28 94.43 L 214.51 93.84 L 215.74 93.26 L 216.97 92.67 L 218.2 92.09 L 219.43 91.51 L 220.66 90.93 L 221.89 90.35 L 223.12 89.78 L 224.35 89.21 L 225.58 88.65 L 226.81 88.09 L 228.04 87.53 L 229.27 86.98 L 230.5 86.43 L 231.73 85.89 L 232.96 85.36 L 234.19 84.83 L 235.42 84.3 L 236.65 83.78 L 237.88 83.27 L 239.11 82.77 L 240.34 82.27 L 241.57 81.79 L 242.8 81.31 L 244.03 80.83 L 245.26 80.37 L 246.49 79.91 L 247.72 79.47 L 248.95 79.03 L 250.18 78.6 L 251.41 78.18 L 252.64 77.78 L 253.87 77.38 L 255.1 76.99 L 256.33 76.61 L 257.56 76.25 L 258.79 75.89 L 260.02 75.55 L 261.25 75.21 L 262.48 74.89 L 263.71 74.58 L 264.94 74.28 L 266.17 74 L 267.4 73.72 L 268.63 73.46 L 269.86 73.21 L 271.09 72.98 L 272.32 72.76 L 273.55 72.55 L 274.78 72.35 L 276.01 72.16 L 277.24 71.99 L 278.47 71.83 L 279.7 71.69 L 280.93 71.56 L 282.16 71.44 L 283.39 71.34 L 284.62 71.25 L 285.85 71.17 L 287.08 71.11 L 288.31 71.06 L 289.54 71.03 L 290.77 71.01 L 292 71\" fill=\"none\" stroke=\"#9A959C\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><circle cx=\"210\" cy=\"96\" r=\"3.2\" fill=\"#2B2527\"/><text x=\"169\" y=\"142\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">luftens förskjutning</text><line x1=\"46\" y1=\"158\" x2=\"292\" y2=\"158\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"46\" y1=\"153\" x2=\"46\" y2=\"163\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"153\" x2=\"292\" y2=\"163\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"169\" y=\"172\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">En halvöppen pipa har nod vid den stängda änden och buk vid den öppna. Figuren rymmer \\(3/4\\) våglängd, vilket betyder att den visar första övertonen.</p><div class=\"facit-matte\">\\[L=\\frac{3\\lambda}{4}\\Rightarrow\\lambda=\\frac{4L}{3}=\\frac{4\\cdot0{,}45}{3}=0{,}60\\ \\mathrm m\\]\\[f=\\frac{v}{\\lambda}=\\frac{340}{0{,}60}=5{,}67\\cdot10^2\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Figuren visar första övertonen och frekvensen är cirka \\(570\\ \\mathrm{Hz}\\).</p></div>",
     "kap": 2,
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "numeriskt",
     "rättSvar": 570,
     "tolerans": 8.549999999999999,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.141",
@@ -4879,18 +5007,20 @@ window.BANK2 = [
     "t": "<p>Figuren visar en pipa som är öppen i båda ändar. Rita hur luftens förskjutning varierar längs pipan när andra övertonen ljuder. Markera noderna. Hur många noder finns inuti pipan? Pipan är 0,66 m lång. Bestäm frekvensen med ljudhastigheten 340 m/s.</p><span class=\"fig bred\"><svg viewBox=\"8.240 7.701 282.323 133.818\" width=\"620\" height=\"294\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Tom öppen pipa att rita mönstret i.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Tom öppen pipa att rita mönstret i.</title><g transform=\"translate(-19.5,-35.98)\"><rect x=\"46\" y=\"66\" width=\"246\" height=\"60\" rx=\"3\" fill=\"#EDEEF1\"/><line x1=\"46\" y1=\"66\" x2=\"292\" y2=\"66\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"126\" x2=\"292\" y2=\"126\" stroke=\"#2B2527\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"46\" y=\"56\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><text x=\"292\" y=\"56\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">öppen</text><line x1=\"46\" y1=\"96\" x2=\"292\" y2=\"96\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"169\" y=\"142\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"400\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">luftens förskjutning</text><line x1=\"46\" y1=\"158\" x2=\"292\" y2=\"158\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"46\" y1=\"153\" x2=\"46\" y2=\"163\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"153\" x2=\"292\" y2=\"163\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"169\" y=\"172\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">När andra övertonen ljuder har luftens förskjutning buk vid båda öppningarna, och totalt tre halva våglängder ryms i röret.</p><div class=\"facit-matte\">\\[L=3\\frac{\\lambda}{2}\\Rightarrow\\lambda=\\frac{2L}{3}=\\frac{2\\cdot0{,}66}{3}=0{,}44\\ \\mathrm m\\]\\[f=\\frac{v}{\\lambda}=\\frac{340}{0{,}44}=772{,}7\\ \\mathrm{Hz}\\]</div><p class=\"facit-not\">Mönstret har fyra förskjutningsbukar (inklusive båda öppningarna) och tre inre noder.</p><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är cirka \\(770\\ \\mathrm{Hz}\\).</p></div>",
     "kap": 2,
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "begrepp",
       "procedur"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
     "spel": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "2.147",
@@ -5495,12 +5625,12 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En elektron befinner sig i ett homogent elektriskt fält med fältstyrkan 3,5·10⁴ N/C. Bestäm kraftens storlek på elektronen. Åt vilket håll verkar kraften jämfört med fältet?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Kraften på en laddning i ett elektriskt fält är \\(F=qE\\). Kraftens storlek fås med laddningens belopp.</p><div class=\"facit-matte\">\\[F=|q|E=1{,}602\\cdot10^{-19}\\cdot3{,}5\\cdot10^4=5{,}61\\cdot10^{-15}\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Kraftens storlek är \\(5{,}6\\cdot10^{-15}\\ \\mathrm N\\). Eftersom elektronen är negativ verkar kraften motsatt fältets riktning.</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "numeriskt",
     "rättSvar": 5.6e-15,
     "tolerans": 0.01,
@@ -5508,7 +5638,9 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "elektriska_falt__homogent_elektriskt_falt"
+    "familjNyckelTidigare": "elektriska_falt__homogent_elektriskt_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.2",
@@ -5519,11 +5651,11 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Två parallella plattor har spänningsskillnaden 2,4 kV och avståndet 3,0 cm. Mellan plattorna finns ett homogent elektriskt fält.</p><ol><li>Bestäm fältstyrkan.</li><li>Bestäm accelerationen för en proton i fältet. Protonmassan är 1,67·10⁻²⁷ kg.</li></ol>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Mellan parallella plattor är fältet homogent och \\(E=U/d\\). Omvandla \\(2{,}4\\ \\mathrm{kV}\\) till volt och \\(3{,}0\\ \\mathrm{cm}\\) till meter.</p><div class=\"facit-matte\">\\[E=\\frac{U}{d}=\\frac{2{,}4\\cdot10^3}{3{,}0\\cdot10^{-2}}=8{,}0\\cdot10^4\\ \\mathrm{N/C}\\]</div><p class=\"facit-metod\">Protonens kraft är \\(F=eE\\), och accelerationen fås ur \\(F=ma\\).</p><div class=\"facit-matte\">\\[F=eE=1{,}602\\cdot10^{-19}\\cdot8{,}0\\cdot10^4=1{,}28\\cdot10^{-14}\\ \\mathrm N\\]\\[a=\\frac{F}{m_p}=\\frac{1{,}28\\cdot10^{-14}}{1{,}67\\cdot10^{-27}}=7{,}68\\cdot10^{12}\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(E=8{,}0\\cdot10^4\\ \\mathrm{N/C}\\) och protonens acceleration är \\(7{,}7\\cdot10^{12}\\ \\mathrm{m/s^2}\\) i fältets riktning.</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       80000,
@@ -5547,7 +5679,9 @@ window.BANK2 = [
       "a",
       "b"
     ],
-    "familjNyckelTidigare": "elektriska_falt__homogent_elektriskt_falt"
+    "familjNyckelTidigare": "elektriska_falt__homogent_elektriskt_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.3",
@@ -5558,11 +5692,11 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En liten oljedroppe med massan 4,8·10⁻¹⁵ kg svävar stilla mellan två vågräta plattor. Det elektriska fältet är riktat nedåt och har storleken 1,5·10⁵ N/C.</p><ol><li>Bestäm droppens laddning inklusive tecken.</li><li>Hur många elementarladdningar motsvarar detta ungefär?</li></ol><span class=\"fig smal\"><svg viewBox=\"7.465 8.103 212.725 137.748\" width=\"380\" height=\"246\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Laddad oljedroppe som svävar mellan två vågräta plattor.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad oljedroppe som svävar mellan två vågräta plattor.</title><g transform=\"translate(-38,-20)\"><rect x=\"70\" y=\"35\" width=\"180\" height=\"11\" rx=\"2\" fill=\"#C4736B\"/><rect x=\"70\" y=\"148\" width=\"180\" height=\"11\" rx=\"2\" fill=\"#7FA4C9\"/><text x=\"60\" y=\"45.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#C4736B\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+</text><text x=\"60\" y=\"158.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#7FA4C9\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−</text><line x1=\"88\" y1=\"51\" x2=\"88\" y2=\"135.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"88,144 84.6,136 91.4,136\" fill=\"#2A5D9E\"/><line x1=\"124\" y1=\"51\" x2=\"124\" y2=\"135.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"124,144 120.6,136 127.4,136\" fill=\"#2A5D9E\"/><line x1=\"160\" y1=\"51\" x2=\"160\" y2=\"135.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"160,144 156.6,136 163.4,136\" fill=\"#2A5D9E\"/><line x1=\"196\" y1=\"51\" x2=\"196\" y2=\"135.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"196,144 192.6,136 199.4,136\" fill=\"#2A5D9E\"/><line x1=\"232\" y1=\"51\" x2=\"232\" y2=\"135.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"232,144 228.6,136 235.4,136\" fill=\"#2A5D9E\"/><circle cx=\"160\" cy=\"98\" r=\"8\" fill=\"#EDEEF1\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"160\" y1=\"98\" x2=\"160\" y2=\"133.9\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"160,144 155.6,134.5 164.4,134.5\" fill=\"#B43123\"/><text x=\"150\" y=\"128\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">mg</text><line x1=\"160\" y1=\"98\" x2=\"160\" y2=\"62.1\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"160,52 164.4,61.5 155.6,61.5\" fill=\"#B43123\"/><text x=\"171\" y=\"68\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#B43123\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">F</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Droppen svävar, så nettokraften är noll. Tyngdkraften är nedåt och den elektriska kraften måste vara uppåt. Eftersom fältet är riktat nedåt måste laddningen vara negativ.</p><div class=\"facit-matte\">\\[|q|E=mg\\Rightarrow |q|=\\frac{mg}{E}\\]\\[|q|=\\frac{4{,}8\\cdot10^{-15}\\cdot9{,}82}{1{,}5\\cdot10^5}=3{,}14\\cdot10^{-19}\\ \\mathrm C\\]\\[q=-3{,}14\\cdot10^{-19}\\ \\mathrm C\\]</div><p class=\"facit-metod\">Antalet elementarladdningar blir</p><div class=\"facit-matte\">\\[n=\\frac{|q|}{e}=\\frac{3{,}14\\cdot10^{-19}}{1{,}602\\cdot10^{-19}}=1{,}96\\approx2\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Droppens laddning är ungefär \\(-3{,}1\\cdot10^{-19}\\ \\mathrm C\\), vilket motsvarar cirka \\(-2e\\).</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "flera_delar",
     "rättSvar": [
       -3.1e-19,
@@ -5586,7 +5720,9 @@ window.BANK2 = [
       "a",
       "b"
     ],
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.4",
@@ -5712,7 +5848,8 @@ window.BANK2 = [
     "tolerans": 0.018,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.9",
@@ -6141,16 +6278,18 @@ window.BANK2 = [
     "typ": "beräkna spänning och avstånd vid gnistöverslag i luft, ur text, sökt spänning och avstånd",
     "t": "<p>Torr luft klarar ett elektriskt fält på högst 3,0·10⁶ V/m. Blir fältet starkare slår en gnista över. I en tändstiftsliknande uppställning är avståndet mellan två metallspetsar 2,0 mm. Hur stor spänning krävs för att en gnista ska slå över? Hur långt gap kan en spänning på 25 kV slå över?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid genomslag når fältstyrkan luftens gränsvärde. Använd \\(E=U/d\\).</p><div class=\"facit-matte\">\\[U=Ed=3{,}0\\cdot10^6\\cdot2{,}0\\cdot10^{-3}=6{,}0\\cdot10^3\\ \\mathrm V=6{,}0\\ \\mathrm{kV}\\]</div><p class=\"facit-metod\">För \\(25\\ \\mathrm{kV}\\) löses i stället avståndet ut.</p><div class=\"facit-matte\">\\[d=\\frac{U}{E}=\\frac{25\\cdot10^3}{3{,}0\\cdot10^6}=8{,}33\\cdot10^{-3}\\ \\mathrm m=8{,}3\\ \\mathrm{mm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Ett gap på \\(2{,}0\\ \\mathrm{mm}\\) kräver cirka \\(6{,}0\\ \\mathrm{kV}\\). \\(25\\ \\mathrm{kV}\\) kan slå över ungefär \\(8{,}3\\ \\mathrm{mm}\\).</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__potential_och_falt"
+    "familjNyckelTidigare": "elektriska_falt__potential_och_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.26",
@@ -6161,16 +6300,18 @@ window.BANK2 = [
     "typ": "kombinera elektrisk kraft med kaströrelse för att beräkna avböjning, ur figur, sökt avböjning",
     "t": "<p>I en bläckstråleskrivare skickas små laddade bläckdroppar mellan två plattor. En droppe har massan 1,3·10⁻¹⁰ kg och laddningen −1,5·10⁻¹³ C. Den kommer in vågrätt med farten 18 m/s mitt emellan plattorna, som är 1,6 cm långa. Fältet mellan plattorna är 1,4·10⁶ N/C och riktat nedåt. Hur långt har droppen avböjts när den lämnar plattorna? Visa också att tyngdkraften kan försummas i beräkningen.</p><span class=\"fig bred\"><svg viewBox=\"7.663 8.618 307.470 138.418\" width=\"620\" height=\"279\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Laddad bläckdroppe som avböjs mellan två plattor.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad bläckdroppe som avböjs mellan två plattor.</title><g transform=\"translate(7.4,-21.8)\"><rect x=\"96\" y=\"37\" width=\"140\" height=\"9\" rx=\"2\" fill=\"#C4736B\"/><rect x=\"96\" y=\"122\" width=\"140\" height=\"9\" rx=\"2\" fill=\"#7FA4C9\"/><text x=\"86\" y=\"46.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#C4736B\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+</text><text x=\"86\" y=\"131.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#7FA4C9\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−</text><line x1=\"113.5\" y1=\"51\" x2=\"113.5\" y2=\"109.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"113.5,118 110.1,110 116.9,110\" fill=\"#2A5D9E\"/><line x1=\"148.5\" y1=\"51\" x2=\"148.5\" y2=\"109.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"148.5,118 145.1,110 151.9,110\" fill=\"#2A5D9E\"/><line x1=\"183.5\" y1=\"51\" x2=\"183.5\" y2=\"109.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"183.5,118 180.1,110 186.9,110\" fill=\"#2A5D9E\"/><line x1=\"218.5\" y1=\"51\" x2=\"218.5\" y2=\"109.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"218.5,118 215.1,110 221.9,110\" fill=\"#2A5D9E\"/><line x1=\"40\" y1=\"84\" x2=\"81.9\" y2=\"84\" stroke=\"#2B2527\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"92,84 82.5,88.4 82.5,79.6\" fill=\"#2B2527\"/><text x=\"38\" y=\"75\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">droppe</text><path d=\"M 96 84 L 99.5 84.02 L 103 84.06 L 106.5 84.15 L 110 84.26 L 113.5 84.41 L 117 84.58 L 120.5 84.8 L 124 85.04 L 127.5 85.32 L 131 85.62 L 134.5 85.97 L 138 86.34 L 141.5 86.75 L 145 87.19 L 148.5 87.66 L 152 88.16 L 155.5 88.7 L 159 89.27 L 162.5 89.87 L 166 90.5 L 169.5 91.17 L 173 91.86 L 176.5 92.6 L 180 93.36 L 183.5 94.16 L 187 94.98 L 190.5 95.85 L 194 96.74 L 197.5 97.67 L 201 98.62 L 204.5 99.62 L 208 100.64 L 211.5 101.7 L 215 102.78 L 218.5 103.91 L 222 105.06 L 225.5 106.25 L 229 107.47 L 232.5 108.72 L 236 110\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"110\" x2=\"282\" y2=\"126\" stroke=\"#B43123\" stroke-width=\"2.2\" stroke-dasharray=\"5 4\"/><rect x=\"286\" y=\"70\" width=\"9\" height=\"70\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#2B2527\" stroke-width=\"1.8\"/><line x1=\"96\" y1=\"84\" x2=\"284\" y2=\"84\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3.5\"/><line x1=\"96\" y1=\"148\" x2=\"236\" y2=\"148\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"96\" y1=\"143\" x2=\"96\" y2=\"153\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"143\" x2=\"236\" y2=\"153\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"166\" y=\"162\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">1,6 cm</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den vågräta farten är konstant. Eftersom droppen är negativ och fältet pekar nedåt är den elektriska kraften och avböjningen uppåt.</p><div class=\"facit-matte\">\\[F_e=|q|E=1{,}5\\cdot10^{-13}\\cdot1{,}4\\cdot10^6=2{,}10\\cdot10^{-7}\\ \\mathrm N\\]\\[a=\\frac{F_e}{m}=\\frac{2{,}10\\cdot10^{-7}}{1{,}3\\cdot10^{-10}}=1{,}62\\cdot10^3\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-metod\">Tiden i fältet bestäms av plattornas längd.</p><div class=\"facit-matte\">\\[t=\\frac{L}{v_x}=\\frac{0{,}016}{18}=8{,}89\\cdot10^{-4}\\ \\mathrm s\\]\\[y=\\frac12at^2=\\frac12\\cdot1{,}62\\cdot10^3\\cdot(8{,}89\\cdot10^{-4})^2=6{,}38\\cdot10^{-4}\\ \\mathrm m\\]</div><p class=\"facit-metod\">Jämför tyngdkraften med den elektriska kraften.</p><div class=\"facit-matte\">\\[F_g=mg=1{,}28\\cdot10^{-9}\\ \\mathrm N,\\qquad\\frac{F_e}{F_g}\\approx164\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Droppen avböjs cirka \\(0{,}64\\ \\mathrm{mm}\\) uppåt. Tyngdkraften är ungefär \\(160\\) gånger mindre än den elektriska kraften och kan försummas.</p><p class=\"facit-not\">För en negativ laddning är den elektriska kraften motsatt fältets riktning. Tyngdkraften får försummas först efter en storleksjämförelse, inte bara därför att droppen är liten.</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "problemlösning"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.27",
@@ -6351,7 +6492,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.36",
@@ -6409,7 +6551,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.39",
@@ -6429,7 +6572,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.40",
@@ -6448,7 +6592,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.41",
@@ -6509,7 +6654,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "manuellKomplettering": true
+    "manuellKomplettering": true,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.44",
@@ -6532,7 +6678,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "manuellKomplettering": true
+    "manuellKomplettering": true,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.45",
@@ -6837,7 +6984,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.60",
@@ -6856,7 +7004,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.61",
@@ -6934,7 +7083,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.65",
@@ -6953,7 +7103,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.66",
@@ -7032,7 +7183,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.70",
@@ -7070,7 +7222,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.72",
@@ -7081,19 +7234,21 @@ window.BANK2 = [
     "t": "<p>Två små kulor har laddningarna Q₁ = 3,0 nC och Q₂ = 5,0 nC och ligger 4,0 cm från varandra. Bestäm kraften mellan dem. Dras kulorna mot varandra eller stöts de bort? Använd k = 8,99·10⁹ Nm²/C².</p><span class=\"fig bred\"><svg viewBox=\"5.554 8.850 204.891 86.907\" width=\"620\" height=\"263\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två punktladdningar på ett givet avstånd.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två punktladdningar på ett givet avstånd.</title><g transform=\"translate(-49,-42.81)\"><circle cx=\"78\" cy=\"90\" r=\"14\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"78\" y=\"94.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><circle cx=\"236\" cy=\"90\" r=\"14\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"236\" y=\"94.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><text x=\"78\" y=\"64\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">Q₁</text><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">Q₂</text><line x1=\"78\" y1=\"120\" x2=\"236\" y2=\"120\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"115\" x2=\"78\" y2=\"125\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"115\" x2=\"236\" y2=\"125\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"157\" y=\"134\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">r</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Coulombs lag och omvandla nanocoulomb till coulomb samt centimeter till meter.</p><div class=\"facit-matte\">\\[F=k\\frac{|Q_1Q_2|}{r^2}\\]\\[F=8{,}99\\cdot10^9\\frac{(3{,}0\\cdot10^{-9})(5{,}0\\cdot10^{-9})}{(4{,}0\\cdot10^{-2})^2}=8{,}43\\cdot10^{-5}\\ \\mathrm N\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Kraften är \\(8{,}4\\cdot10^{-5}\\ \\mathrm N\\). Båda laddningarna är positiva, så kulorna stöter bort varandra.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.00008400000000000001,
+    "rättSvar": 8.400000000000001e-05,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning"
+    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.73",
@@ -7104,16 +7259,18 @@ window.BANK2 = [
     "t": "<p>En punktladdning på 12 nC sitter fast i en punkt. Hur stor är den elektriska fältstyrkan 6,0 cm från laddningen? Hur stor blir fältstyrkan om man i stället går 12 cm bort?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Fältstyrkan kring en punktladdning är \\(E=k|Q|/r^2\\).</p><div class=\"facit-matte\">\\[E(0{,}060)=8{,}99\\cdot10^9\\frac{12\\cdot10^{-9}}{(0{,}060)^2}=3{,}00\\cdot10^4\\ \\mathrm{N/C}\\]</div><p class=\"facit-metod\">När avståndet fördubblas blir fältstyrkan en fjärdedel.</p><div class=\"facit-matte\">\\[E(0{,}12)=E(0{,}060)\\left(\\frac{0{,}060}{0{,}12}\\right)^2=7{,}49\\cdot10^3\\ \\mathrm{N/C}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältstyrkan är \\(3{,}0\\cdot10^4\\ \\mathrm{N/C}\\) på \\(6{,}0\\ \\mathrm{cm}\\) och \\(7{,}5\\cdot10^3\\ \\mathrm{N/C}\\) på \\(12\\ \\mathrm{cm}\\).</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning"
+    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.74",
@@ -7124,16 +7281,18 @@ window.BANK2 = [
     "t": "<p>En elektron startar från vila vid den negativa plattan i ett plattpar och dras mot den positiva plattan. Spänningen mellan plattorna är 350 V. Hur stort arbete utför det elektriska fältet på elektronen? Vilken fart har elektronen när den når den positiva plattan? Elektronmassan är 9,11·10⁻³¹ kg.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Det arbete som fältet utför är lika stort som minskningen av den elektriska lägesenergin. För en elektron som accelereras genom \\(350\\ \\mathrm V\\) är arbetets storlek \\(eU\\).</p><div class=\"facit-matte\">\\[W=eU=1{,}602\\cdot10^{-19}\\cdot350=5{,}61\\cdot10^{-17}\\ \\mathrm J=350\\ \\mathrm{eV}\\]</div><p class=\"facit-metod\">Elektronen startar från vila, så hela arbetet blir rörelseenergi.</p><div class=\"facit-matte\">\\[\\frac12m_ev^2=W\\Rightarrow v=\\sqrt{\\frac{2W}{m_e}}\\]\\[v=\\sqrt{\\frac{2\\cdot5{,}61\\cdot10^{-17}}{9{,}11\\cdot10^{-31}}}=1{,}11\\cdot10^7\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältet utför arbetet \\(5{,}6\\cdot10^{-17}\\ \\mathrm J\\) och slutfarten blir cirka \\(1{,}1\\cdot10^7\\ \\mathrm{m/s}\\).</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__potential_och_falt"
+    "familjNyckelTidigare": "elektriska_falt__potential_och_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.75",
@@ -7247,16 +7406,18 @@ window.BANK2 = [
     "t": "<p>En alfapartikel har laddningen +2e. Vilken spänning måste den accelereras genom för att få rörelseenergin 2,0 MeV? Vilken spänning hade krävts för en proton med samma energi?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Energin som en laddning får av en spänning är \\(E_k=|q|U\\). En alfapartikel har laddningsbeloppet \\(2e\\).</p><div class=\"facit-matte\">\\[U_{\\alpha}=\\frac{E_k}{2e}=\\frac{2{,}0\\ \\mathrm{MeV}}{2e}=1{,}0\\ \\mathrm{MV}\\]</div><p class=\"facit-metod\">Protonens laddningsbelopp är \\(e\\).</p><div class=\"facit-matte\">\\[U_p=\\frac{E_k}{e}=2{,}0\\ \\mathrm{MV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Alfapartikeln kräver \\(1{,}0\\ \\mathrm{MV}\\); protonen kräver \\(2{,}0\\ \\mathrm{MV}\\).</p><p class=\"facit-not\">För en given spänning bestäms energiökningen av laddningen, inte av partikelns massa.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__potential_och_falt"
+    "familjNyckelTidigare": "elektriska_falt__potential_och_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.81",
@@ -7267,16 +7428,18 @@ window.BANK2 = [
     "t": "<p>Figuren visar två laddningar mellan ett plattpar. A är positiv och B är negativ. Åt vilket håll accelereras vardera laddningen? Vilken av dem får störst acceleration om A är en proton och B en elektron?</p><span class=\"fig smal\"><svg viewBox=\"7.408 8.284 208.584 135.408\" width=\"380\" height=\"247\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två laddningar mellan plattor i ett homogent fält.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två laddningar mellan plattor i ett homogent fält.</title><g transform=\"translate(-42,-18)\"><rect x=\"74\" y=\"33\" width=\"176\" height=\"11\" rx=\"2\" fill=\"#C4736B\"/><rect x=\"74\" y=\"144\" width=\"176\" height=\"11\" rx=\"2\" fill=\"#7FA4C9\"/><text x=\"64\" y=\"43.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#C4736B\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+</text><text x=\"64\" y=\"154.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#7FA4C9\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−</text><line x1=\"91.6\" y1=\"49\" x2=\"91.6\" y2=\"131.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"91.6,140 88.2,132 95,132\" fill=\"#2A5D9E\"/><line x1=\"126.8\" y1=\"49\" x2=\"126.8\" y2=\"131.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"126.8,140 123.4,132 130.2,132\" fill=\"#2A5D9E\"/><line x1=\"162\" y1=\"49\" x2=\"162\" y2=\"131.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"162,140 158.6,132 165.4,132\" fill=\"#2A5D9E\"/><line x1=\"197.2\" y1=\"49\" x2=\"197.2\" y2=\"131.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"197.2,140 193.8,132 200.6,132\" fill=\"#2A5D9E\"/><line x1=\"232.4\" y1=\"49\" x2=\"232.4\" y2=\"131.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"232.4,140 229,132 235.8,132\" fill=\"#2A5D9E\"/><circle cx=\"124\" cy=\"94\" r=\"11\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"124\" y=\"98.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><circle cx=\"200\" cy=\"94\" r=\"11\" fill=\"#7FA4C9\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"200\" y=\"98.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">−</text><text x=\"124\" y=\"74\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"200\" y=\"74\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Det elektriska fältet pekar från den positiva plattan mot den negativa, alltså nedåt i figuren. En positiv laddning får en kraft åt samma håll som fältet, en negativ laddning åt motsatt håll.</p><div class=\"facit-matte\">\\[\\vec F=q\\vec E,\\qquad a=\\frac{F}{m}\\]</div><p class=\"facit-metod\">A, protonen, accelereras nedåt. B, elektronen, accelereras uppåt. Laddningsbeloppen är lika, så krafterna har samma storlek, men elektronens massa är ungefär \\(1836\\) gånger mindre.</p><p class=\"facit-svar\"><strong>Svar:</strong> A accelereras nedåt och B uppåt. Elektronen B får störst acceleration, ungefär \\(1800\\) gånger protonens.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.82",
@@ -7287,16 +7450,18 @@ window.BANK2 = [
     "t": "<p>I ett oscilloskop skjuts en elektron in vinkelrätt mitt emellan två plattor med farten 2,5·10⁷ m/s. Plattorna är 4,0 cm långa och ligger 1,2 cm från varandra, och spänningen mellan dem är 120 V. Hur långt har elektronen avböjts när den lämnar plattorna? Vilken vinkel bildar hastigheten med den ursprungliga riktningen?</p><span class=\"fig bred\"><svg viewBox=\"8.058 8.699 264.196 134.761\" width=\"620\" height=\"316\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Elektron som skjuts in vinkelrätt mellan två plattor.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Elektron som skjuts in vinkelrätt mellan två plattor.</title><g transform=\"translate(-18.4,-25.8)\"><rect x=\"110\" y=\"41\" width=\"136\" height=\"9\" rx=\"2\" fill=\"#C4736B\"/><rect x=\"110\" y=\"126\" width=\"136\" height=\"9\" rx=\"2\" fill=\"#7FA4C9\"/><text x=\"100\" y=\"50.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#C4736B\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+</text><text x=\"100\" y=\"135.5\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#7FA4C9\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−</text><line x1=\"127\" y1=\"54\" x2=\"127\" y2=\"112.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"127,121 130.4,113 123.6,113\" fill=\"#2A5D9E\"/><line x1=\"161\" y1=\"54\" x2=\"161\" y2=\"112.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"161,121 164.4,113 157.6,113\" fill=\"#2A5D9E\"/><line x1=\"195\" y1=\"54\" x2=\"195\" y2=\"112.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"195,121 198.4,113 191.6,113\" fill=\"#2A5D9E\"/><line x1=\"229\" y1=\"54\" x2=\"229\" y2=\"112.4\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"229,121 232.4,113 225.6,113\" fill=\"#2A5D9E\"/><line x1=\"46\" y1=\"88\" x2=\"95.9\" y2=\"88\" stroke=\"#2B2527\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"106,88 96.5,92.4 96.5,83.6\" fill=\"#2B2527\"/><text x=\"44\" y=\"78\" text-anchor=\"end\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v₀</text><circle cx=\"62\" cy=\"88\" r=\"8\" fill=\"#7FA4C9\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"62\" y=\"92.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">−</text><path d=\"M 110 88 L 113.4 87.98 L 116.8 87.94 L 120.2 87.85 L 123.6 87.74 L 127 87.59 L 130.4 87.42 L 133.8 87.2 L 137.2 86.96 L 140.6 86.68 L 144 86.38 L 147.4 86.03 L 150.8 85.66 L 154.2 85.25 L 157.6 84.81 L 161 84.34 L 164.4 83.84 L 167.8 83.3 L 171.2 82.73 L 174.6 82.13 L 178 81.5 L 181.4 80.83 L 184.8 80.14 L 188.2 79.4 L 191.6 78.64 L 195 77.84 L 198.4 77.02 L 201.8 76.15 L 205.2 75.26 L 208.6 74.33 L 212 73.38 L 215.4 72.38 L 218.8 71.36 L 222.2 70.3 L 225.6 69.22 L 229 68.09 L 232.4 66.94 L 235.8 65.75 L 239.2 64.53 L 242.6 63.28 L 246 62\" fill=\"none\" stroke=\"#B43123\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"88\" x2=\"276\" y2=\"88\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3.5\"/><line x1=\"246\" y1=\"62\" x2=\"270.76\" y2=\"51.08\" stroke=\"#B43123\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"280,47 273.08,54.86 269.53,46.81\" fill=\"#B43123\"/><line x1=\"256\" y1=\"62\" x2=\"256\" y2=\"88\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"251\" y1=\"62\" x2=\"261\" y2=\"62\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"251\" y1=\"88\" x2=\"261\" y2=\"88\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"265\" y=\"79\" text-anchor=\"start\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">y</text><line x1=\"110\" y1=\"150\" x2=\"246\" y2=\"150\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"110\" y1=\"145\" x2=\"110\" y2=\"155\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"246\" y1=\"145\" x2=\"246\" y2=\"155\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"178\" y=\"164\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">L</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Elektronens vågräta fart är konstant, medan fältet ger en konstant acceleration vinkelrätt mot rörelsen.</p><div class=\"facit-matte\">\\[E=\\frac{U}{d}=\\frac{120}{0{,}012}=1{,}0\\cdot10^4\\ \\mathrm{V/m}\\]\\[a=\\frac{eE}{m_e}=\\frac{1{,}602\\cdot10^{-19}\\cdot1{,}0\\cdot10^4}{9{,}11\\cdot10^{-31}}=1{,}76\\cdot10^{15}\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-metod\">Passagetiden bestäms av plattlängden och den vågräta farten.</p><div class=\"facit-matte\">\\[t=\\frac{0{,}040}{2{,}5\\cdot10^7}=1{,}60\\cdot10^{-9}\\ \\mathrm s\\]\\[y=\\frac12at^2=\\frac12\\cdot1{,}76\\cdot10^{15}\\cdot(1{,}60\\cdot10^{-9})^2=2{,}25\\cdot10^{-3}\\ \\mathrm m\\]</div><p class=\"facit-metod\">Vid utgången är den tvärgående hastigheten \\(v_y=at\\).</p><div class=\"facit-matte\">\\[v_y=1{,}76\\cdot10^{15}\\cdot1{,}60\\cdot10^{-9}=2{,}81\\cdot10^6\\ \\mathrm{m/s}\\]\\[\\theta=\\arctan\\!\\left(\\frac{v_y}{v_x}\\right)=\\arctan(0{,}1126)=6{,}4^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Elektronen avböjs cirka \\(2{,}3\\ \\mathrm{mm}\\) och utgångsvinkeln är cirka \\(6{,}4^\\circ\\).</p><p class=\"facit-not\">Avböjningen är mindre än halva plattavståndet, \\(6{,}0\\ \\mathrm{mm}\\), så elektronen träffar inte en platta.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__potential_och_falt"
+    "familjNyckelTidigare": "elektriska_falt__potential_och_falt",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.83",
@@ -7307,12 +7472,12 @@ window.BANK2 = [
     "t": "<p>Två laddningar, +Q och −Q med Q = 8,0 nC, sitter 6,0 cm från varandra. Bestäm den elektriska fältstyrkan i mittpunkten M. Förklara varför bidragen adderas i stället för att ta ut varandra.</p><span class=\"fig bred\"><svg viewBox=\"5.029 8.734 209.943 83.278\" width=\"620\" height=\"246\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två lika stora laddningar med motsatt tecken.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två lika stora laddningar med motsatt tecken.</title><g transform=\"translate(-48,-46.81)\"><circle cx=\"76\" cy=\"92\" r=\"13\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"76\" y=\"96.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><circle cx=\"240\" cy=\"92\" r=\"13\" fill=\"#7FA4C9\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"240\" y=\"96.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">−</text><text x=\"76\" y=\"68\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+Q</text><text x=\"240\" y=\"68\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−Q</text><circle cx=\"158\" cy=\"92\" r=\"4.6\" fill=\"#2B2527\"/><text x=\"158\" y=\"70\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"11\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">M</text><line x1=\"76\" y1=\"120\" x2=\"240\" y2=\"120\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"76\" y1=\"115\" x2=\"76\" y2=\"125\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"240\" y1=\"115\" x2=\"240\" y2=\"125\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"158\" y=\"134\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">d</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Mittpunkten ligger \\(r=3{,}0\\ \\mathrm{cm}\\) från vardera laddningen. Bidragen har samma storlek.</p><div class=\"facit-matte\">\\[E_1=E_2=k\\frac{Q}{r^2}=8{,}99\\cdot10^9\\frac{8{,}0\\cdot10^{-9}}{(0{,}030)^2}=7{,}99\\cdot10^4\\ \\mathrm{N/C}\\]</div><p class=\"facit-metod\">Fältet från \\(+Q\\) pekar bort från plusladdningen och fältet från \\(-Q\\) pekar mot minusladdningen. I M pekar båda från plus mot minus och ska därför adderas.</p><div class=\"facit-matte\">\\[E_{\\mathrm{res}}=E_1+E_2=2\\cdot7{,}99\\cdot10^4=1{,}60\\cdot10^5\\ \\mathrm{N/C}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältstyrkan i M är \\(1{,}6\\cdot10^5\\ \\mathrm{N/C}\\), riktad från den positiva mot den negativa laddningen.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur",
       "resonemang"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "numeriskt",
     "rättSvar": 160000,
     "tolerans": 2400,
@@ -7320,7 +7485,9 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.84",
@@ -7331,12 +7498,12 @@ window.BANK2 = [
     "t": "<p>Två positiva laddningar, Q₁ = 4,0 nC och Q₂ = 9,0 nC, sitter 20 cm från varandra. Någonstans på linjen mellan dem är det resulterande elektriska fältet noll. Hur långt från den mindre laddningen ligger den punkten? Kan fältet bli noll någonstans utanför laddningarna? Motivera.</p><span class=\"fig bred\"><svg viewBox=\"4.640 8.519 222.720 97.698\" width=\"620\" height=\"272\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Två positiva laddningar på ett givet avstånd.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Två positiva laddningar på ett givet avstånd.</title><g transform=\"translate(-44,-42.81)\"><circle cx=\"70\" cy=\"90\" r=\"11\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"70\" y=\"94.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><circle cx=\"246\" cy=\"90\" r=\"15\" fill=\"#C4736B\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"246\" y=\"94.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">+</text><text x=\"70\" y=\"68\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">Q₁</text><text x=\"246\" y=\"64\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">Q₂</text><circle cx=\"140.4\" cy=\"90\" r=\"5.6\" fill=\"none\" stroke=\"#2B2527\" stroke-width=\"2.2\"/><text x=\"140.4\" y=\"112\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">här är fältet noll</text><line x1=\"70\" y1=\"130\" x2=\"246\" y2=\"130\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"125\" x2=\"70\" y2=\"135\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"246\" y1=\"125\" x2=\"246\" y2=\"135\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"158\" y=\"144\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">d</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Mellan två positiva laddningar är fältbidragen motriktade. Sätt avståndet från den mindre laddningen \\(Q_1\\) till nollpunkten till \\(x\\); avståndet till \\(Q_2\\) är då \\(0{,}20-x\\).</p><div class=\"facit-matte\">\\[k\\frac{Q_1}{x^2}=k\\frac{Q_2}{(0{,}20-x)^2}\\]\\[\\frac{\\sqrt{4{,}0}}{x}=\\frac{\\sqrt{9{,}0}}{0{,}20-x}\\Rightarrow\\frac{2}{x}=\\frac{3}{0{,}20-x}\\]\\[2(0{,}20-x)=3x\\Rightarrow x=0{,}080\\ \\mathrm m\\]</div><p class=\"facit-metod\">Utanför de båda laddningarna pekar fältbidragen åt samma håll, bort från båda positiva laddningarna, och kan inte ta ut varandra.</p><p class=\"facit-svar\"><strong>Svar:</strong> Nollpunkten ligger \\(8{,}0\\ \\mathrm{cm}\\) från den mindre laddningen, mellan laddningarna. Det finns ingen nollpunkt utanför dem.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur",
       "resonemang"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "numeriskt",
     "rättSvar": 8,
     "tolerans": 0.12,
@@ -7344,7 +7511,9 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.85",
@@ -7355,17 +7524,19 @@ window.BANK2 = [
     "t": "<p>En elektron skjuts in med farten 3,0·10⁶ m/s rakt mot den negativa plattan i ett plattpar. Fältstyrkan mellan plattorna är 4,5·10³ N/C och bromsar elektronen. Hur långt hinner elektronen innan den vänder? Hur lång tid tar det innan den är tillbaka där den startade? Jämför rörelsen med ett lodrätt kast.</p><span class=\"fig smal\"><svg viewBox=\"6.134 9.514 213.731 159.792\" width=\"380\" height=\"284\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Elektron som skjuts in mot ett bromsande elektriskt fält.\" xmlns=\"http://www.w3.org/2000/svg\"><title>Elektron som skjuts in mot ett bromsande elektriskt fält.</title><g transform=\"translate(-58,-13.3)\"><rect x=\"73\" y=\"46\" width=\"11\" height=\"94\" rx=\"2\" fill=\"#C4736B\"/><rect x=\"258\" y=\"46\" width=\"11\" height=\"94\" rx=\"2\" fill=\"#7FA4C9\"/><text x=\"78.5\" y=\"38\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#C4736B\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">+</text><text x=\"263.5\" y=\"38\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"15\" font-weight=\"700\" fill=\"#7FA4C9\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">−</text><line x1=\"90\" y1=\"57.75\" x2=\"245.4\" y2=\"57.75\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"254,57.75 246,61.15 246,54.35\" fill=\"#2A5D9E\"/><line x1=\"90\" y1=\"81.25\" x2=\"245.4\" y2=\"81.25\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"254,81.25 246,84.65 246,77.85\" fill=\"#2A5D9E\"/><line x1=\"90\" y1=\"104.75\" x2=\"245.4\" y2=\"104.75\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"254,104.75 246,108.15 246,101.35\" fill=\"#2A5D9E\"/><line x1=\"90\" y1=\"128.25\" x2=\"245.4\" y2=\"128.25\" stroke=\"#2A5D9E\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><polygon points=\"254,128.25 246,131.65 246,124.85\" fill=\"#2A5D9E\"/><circle cx=\"108\" cy=\"93\" r=\"9\" fill=\"#7FA4C9\" stroke=\"#2B2527\" stroke-width=\"2\"/><text x=\"108\" y=\"97.4\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#FFFFFF\">−</text><line x1=\"120\" y1=\"93\" x2=\"169.9\" y2=\"93\" stroke=\"#2B2527\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><polygon points=\"180,93 170.5,97.4 170.5,88.6\" fill=\"#2B2527\"/><text x=\"150\" y=\"83\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">v₀</text><line x1=\"202\" y1=\"40\" x2=\"202\" y2=\"146\" stroke=\"#9A959C\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"202\" cy=\"93\" r=\"4.2\" fill=\"#B43123\"/><line x1=\"108\" y1=\"162\" x2=\"202\" y2=\"162\" stroke=\"#9A959C\" stroke-width=\"1.2\"/><line x1=\"108\" y1=\"157\" x2=\"108\" y2=\"167\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"202\" y1=\"157\" x2=\"202\" y2=\"167\" stroke=\"#9A959C\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"155\" y=\"176\" text-anchor=\"middle\" font-family=\"'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10.5\" font-weight=\"600\" fill=\"#5C575E\" paint-order=\"stroke\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linejoin=\"round\">s</text></g></svg></span>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Fältet ger elektronen en konstant acceleration motriktad begynnelsehastigheten.</p><div class=\"facit-matte\">\\[a=\\frac{eE}{m_e}=\\frac{1{,}602\\cdot10^{-19}\\cdot4{,}5\\cdot10^3}{9{,}11\\cdot10^{-31}}=7{,}91\\cdot10^{14}\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-metod\">Vid vändpunkten är \\(v=0\\). Använd \\(v^2=v_0^2-2as\\).</p><div class=\"facit-matte\">\\[s=\\frac{v_0^2}{2a}=\\frac{(3{,}0\\cdot10^6)^2}{2\\cdot7{,}91\\cdot10^{14}}=5{,}69\\cdot10^{-3}\\ \\mathrm m\\]</div><p class=\"facit-metod\">Tiden till vändpunkten är \\(v_0/a\\). Rörelsen tillbaka tar lika lång tid.</p><div class=\"facit-matte\">\\[t_{\\mathrm{tot}}=2\\frac{v_0}{a}=2\\frac{3{,}0\\cdot10^6}{7{,}91\\cdot10^{14}}=7{,}59\\cdot10^{-9}\\ \\mathrm s\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Elektronen vänder efter \\(5{,}7\\ \\mathrm{mm}\\) och är tillbaka efter \\(7{,}6\\ \\mathrm{ns}\\).</p><p class=\"facit-not\">Rörelsen motsvarar ett lodrätt kast: konstant motriktad acceleration, linjärt avtagande fart till vändpunkten och symmetrisk återfärd.</p></div>",
     "kap": 3,
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur",
       "resonemang"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft"
+    "familjNyckelTidigare": "elektriska_falt__faltstyrka_och_elektrisk_kraft",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.86",
@@ -7676,7 +7847,8 @@ window.BANK2 = [
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.101",
@@ -7699,7 +7871,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "manuellKomplettering": true
+    "manuellKomplettering": true,
+    "familjTidigare": "Magnetfält och magnetisk kraft"
   },
   {
     "id": "3.102",
@@ -7728,7 +7901,7 @@ window.BANK2 = [
     "typ": "beräkna magnetfält kring rak strömledare",
     "poang": "(2/0/0)",
     "t": "<p>En lång rak ledare leder strömmen 8 A. Bestäm magnetfältets storlek på avståndet 4 cm från ledaren.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång rak ledare gäller \\(B=\\mu_0 I/(2\\pi r)\\).</p><div class=\"facit-matte\">\\[B=\\frac{4\\pi\\cdot10^{-7}\\cdot8}{2\\pi\\cdot0.04}=4e-05\\ \\mathrm T=40.00\\ \\mu\\mathrm T\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältet är cirka \\(40\\ \\mu\\mathrm T\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång rak ledare gäller \\(B=\\mu_0 I/(2\\pi r)\\).</p><div class=\"facit-matte\">\\[B=\\frac{4\\pi\\cdot10^{-7}\\cdot8}{2\\pi\\cdot0.04}=4\\cdot10^{-5}\\ \\mathrm T=40.00\\ \\mu\\mathrm T\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältet är cirka \\(40\\ \\mu\\mathrm T\\).</p></div>",
     "familj": "Magnetfält kring strömledare",
     "familjNyckel": "magnetism__magnetfalt_kring_stromledare",
     "formaga": [
@@ -7749,7 +7922,7 @@ window.BANK2 = [
     "typ": "beräkna magnetfält kring rak strömledare",
     "poang": "(2/0/0)",
     "t": "<p>En lång rak ledare leder strömmen 25 A. Bestäm magnetfältets storlek på avståndet 10 cm från ledaren.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång rak ledare gäller \\(B=\\mu_0 I/(2\\pi r)\\).</p><div class=\"facit-matte\">\\[B=\\frac{4\\pi\\cdot10^{-7}\\cdot25}{2\\pi\\cdot0.1}=5e-05\\ \\mathrm T=50.00\\ \\mu\\mathrm T\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältet är cirka \\(50\\ \\mu\\mathrm T\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång rak ledare gäller \\(B=\\mu_0 I/(2\\pi r)\\).</p><div class=\"facit-matte\">\\[B=\\frac{4\\pi\\cdot10^{-7}\\cdot25}{2\\pi\\cdot0.1}=5\\cdot10^{-5}\\ \\mathrm T=50.00\\ \\mu\\mathrm T\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältet är cirka \\(50\\ \\mu\\mathrm T\\).</p></div>",
     "familj": "Magnetfält kring strömledare",
     "familjNyckel": "magnetism__magnetfalt_kring_stromledare",
     "formaga": [
@@ -7875,7 +8048,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En testledning leder ström ut ur pappret. Punkten P ligger ovanför ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"175\" cy=\"120\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"175\" y2=\"42\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"175\" cy=\"42\" r=\"5\" fill=\"#2B2527\"/><text x=\"185\" y=\"32\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning pekar magnetfältet i punkten P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -7897,7 +8070,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En tunn koppartråd leder ström in i pappret. Punkten P ligger under ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"155\" cy=\"110\" r=\"52\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"88\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"148.2\" y1=\"103.2\" x2=\"161.8\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"161.8\" y1=\"103.2\" x2=\"148.2\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"173\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"155\" cy=\"184\" r=\"5\" fill=\"#2B2527\"/><text x=\"165\" y=\"174\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilket alternativ beskriver magnetfältets riktning i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -7919,7 +8092,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>I en laboration går strömmen ut ur pappret i en rak ledare. Punkten P ligger till vänster om ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"195\" cy=\"132\" r=\"42\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"72\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"102\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"132\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"213\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"95\" cy=\"132\" r=\"5\" fill=\"#2B2527\"/><text x=\"103\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Hur är magnetfältet riktat i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -7941,7 +8114,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En strömförande metalltråd är riktad in i pappret. Punkten P ligger till höger om tråden.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"168.2\" y1=\"113.2\" x2=\"181.8\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"181.8\" y1=\"113.2\" x2=\"168.2\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"253\" y2=\"120\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"253\" cy=\"120\" r=\"5\" fill=\"#2B2527\"/><text x=\"263\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning verkar magnetfältet i punkten P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -7963,7 +8136,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En lång rak ledare ses framifrån. Strömmen går ut ur pappret och punkten P ligger under ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"155\" cy=\"110\" r=\"52\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"88\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"155\" cy=\"110\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"173\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"155\" cy=\"184\" r=\"5\" fill=\"#2B2527\"/><text x=\"165\" y=\"174\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -7985,7 +8158,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En ledare i ett experiment för ström in i pappret. Punkten P ligger till vänster om ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"195\" cy=\"132\" r=\"42\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"72\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"102\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"188.2\" y1=\"125.2\" x2=\"201.8\" y2=\"138.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"201.8\" y1=\"125.2\" x2=\"188.2\" y2=\"138.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"213\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"95\" cy=\"132\" r=\"5\" fill=\"#2B2527\"/><text x=\"103\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Välj rätt riktning för magnetfältet i P.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8007,7 +8180,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En testkabel leder ström ut ur pappret. Punkten P ligger på höger sida om kabeln.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"175\" cy=\"120\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"253\" y2=\"120\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"253\" cy=\"120\" r=\"5\" fill=\"#2B2527\"/><text x=\"263\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning är magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8029,7 +8202,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>I en apparat ser du en rak ledare med ström in i pappret. Punkten P ligger ovanför ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"155\" cy=\"110\" r=\"52\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"88\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"148.2\" y1=\"103.2\" x2=\"161.8\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"161.8\" y1=\"103.2\" x2=\"148.2\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"173\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"155\" cy=\"46\" r=\"5\" fill=\"#2B2527\"/><text x=\"165\" y=\"36\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilken riktning har magnetfältet där?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8051,7 +8224,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En vertikal genomskärning visar en ledare där strömmen går ut ur pappret. Punkten P är markerad ovanför.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"195\" cy=\"132\" r=\"42\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"72\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"102\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"132\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"213\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"195\" cy=\"50\" r=\"5\" fill=\"#2B2527\"/><text x=\"203\" y=\"40\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Bestäm riktningen på magnetfältet i P.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8073,7 +8246,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En rak tråd leder ström in i pappret. Punkterna runt tråden påverkas av ett cirkelformat magnetfält. P ligger under tråden.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"168.2\" y1=\"113.2\" x2=\"181.8\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"181.8\" y1=\"113.2\" x2=\"168.2\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"175\" y2=\"198\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"175\" cy=\"198\" r=\"5\" fill=\"#2B2527\"/><text x=\"185\" y=\"188\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Hur pekar magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8095,7 +8268,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En laboratorietråd för ström ut ur pappret. Punkten P ligger till vänster.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"155\" cy=\"110\" r=\"52\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"88\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"155\" cy=\"110\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"173\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"70\" cy=\"110\" r=\"5\" fill=\"#2B2527\"/><text x=\"80\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilken riktning får magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8117,7 +8290,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>Du tittar rakt mot en ledare där strömmen går in i pappret. Punkten P ligger till höger om ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"195\" cy=\"132\" r=\"42\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"72\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"102\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"188.2\" y1=\"125.2\" x2=\"201.8\" y2=\"138.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"201.8\" y1=\"125.2\" x2=\"188.2\" y2=\"138.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"213\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"295\" cy=\"132\" r=\"5\" fill=\"#2B2527\"/><text x=\"303\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar magnetfältet där?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8139,7 +8312,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En strömförande kabel har ström ut ur pappret. Punkten P ligger nedanför ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"175\" cy=\"120\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"175\" y2=\"198\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"175\" cy=\"198\" r=\"5\" fill=\"#2B2527\"/><text x=\"185\" y=\"188\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Bestäm magnetfältets riktning i P.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8161,7 +8334,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En rak ledare i ett kretskort leder ström in i pappret. Punkten P ligger till vänster om ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"155\" cy=\"110\" r=\"52\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"88\" fill=\"none\" stroke=\"#E2E8F0\" stroke-width=\"2.2\"/><circle cx=\"155\" cy=\"110\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"148.2\" y1=\"103.2\" x2=\"161.8\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"161.8\" y1=\"103.2\" x2=\"148.2\" y2=\"116.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"173\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"70\" cy=\"110\" r=\"5\" fill=\"#2B2527\"/><text x=\"80\" y=\"100\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilket svarsalternativ stämmer för magnetfältet?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8183,7 +8356,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>En metalltråd leder ström ut ur pappret. Punkten P ligger till höger om ledaren.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"195\" cy=\"132\" r=\"42\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"72\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"102\" fill=\"none\" stroke=\"#E5E7EB\" stroke-width=\"1.8\" stroke-dasharray=\"6 6\"/><circle cx=\"195\" cy=\"132\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"132\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"213\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><circle cx=\"295\" cy=\"132\" r=\"5\" fill=\"#2B2527\"/><text x=\"303\" y=\"122\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning pekar magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8205,7 +8378,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning kring rak ledare",
     "poang": "(2/0/0)",
     "t": "<p>I en försöksuppställning går strömmen in i pappret i en rak ledare. Punkten P ligger ovanför.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Rak ledare med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"175\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#CBD5E1\" stroke-width=\"2\" stroke-dasharray=\"7 7\"/><circle cx=\"175\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"168.2\" y1=\"113.2\" x2=\"181.8\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"181.8\" y1=\"113.2\" x2=\"168.2\" y2=\"126.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"193\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text><line x1=\"175\" y1=\"120\" x2=\"175\" y2=\"42\" stroke=\"#D1D5DB\" stroke-width=\"2.3\" stroke-dasharray=\"5 5\"/><circle cx=\"175\" cy=\"42\" r=\"5\" fill=\"#2B2527\"/><text x=\"185\" y=\"32\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilken riktning har magnetfältet i punkten P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för magnetfält kring en rak ledare.</p><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en rak strömledare. Tummen pekar i strömmens riktning och de böjda fingrarna visar magnetfältets riktning runt ledaren. I punkten P blir fältet därför riktat höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: magnetfält kring rak ledare",
     "familjNyckel": "magnetism__riktningsfragor_magnetfalt_kring_rak_ledare",
     "formaga": [
@@ -8227,7 +8400,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En rak ledare för ström åt höger i ett homogent magnetfält som pekar ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"124\" y1=\"118\" x2=\"240\" y2=\"118\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"240.0,118.0 230.0,112.0 230.0,124.0\" fill=\"#A23B2A\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>I vilken riktning verkar kraften på ledaren?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet ut ur pappret blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet ut ur pappret blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8249,7 +8422,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En metallstav för ström åt vänster. Hela staven ligger i ett homogent magnetfält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"240\" y1=\"118\" x2=\"124\" y2=\"118\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"124.0,118.0 134.0,124.0 134.0,112.0\" fill=\"#A23B2A\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Åt vilket håll blir kraften riktad?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen vänster och magnetfältet ut ur pappret blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen vänster och magnetfältet ut ur pappret blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8271,7 +8444,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En kort ledare för ström uppåt i ett homogent magnetfält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"88\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"182\" y1=\"186\" x2=\"182\" y2=\"50\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"182.0,50.0 176.0,60.0 188.0,60.0\" fill=\"#A23B2A\"/><text x=\"196.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Bestäm kraftens riktning på ledaren.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet ut ur pappret blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet ut ur pappret blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8293,7 +8466,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En strömförande stav leder ström nedåt i ett fält som pekar ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"182\" y1=\"60\" x2=\"182\" y2=\"176\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"182.0,176.0 188.0,166.0 176.0,166.0\" fill=\"#A23B2A\"/><text x=\"196.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Vilken riktning får kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen nedåt och magnetfältet ut ur pappret blir kraften riktad vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen nedåt och magnetfältet ut ur pappret blir kraften riktad vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8315,7 +8488,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En kopparstav för ström åt höger i ett homogent magnetfält in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"57.2\" x2=\"80.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"57.2\" x2=\"67.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"105.2\" x2=\"80.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"105.2\" x2=\"67.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"153.2\" x2=\"80.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"153.2\" x2=\"67.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"57.2\" x2=\"136.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"57.2\" x2=\"123.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"105.2\" x2=\"136.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"105.2\" x2=\"123.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"153.2\" x2=\"136.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"153.2\" x2=\"123.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"57.2\" x2=\"192.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"57.2\" x2=\"179.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"105.2\" x2=\"192.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"105.2\" x2=\"179.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"153.2\" x2=\"192.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"153.2\" x2=\"179.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"57.2\" x2=\"248.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"57.2\" x2=\"235.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"105.2\" x2=\"248.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"105.2\" x2=\"235.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"153.2\" x2=\"248.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"153.2\" x2=\"235.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"57.2\" x2=\"304.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"57.2\" x2=\"291.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"105.2\" x2=\"304.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"105.2\" x2=\"291.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"153.2\" x2=\"304.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"153.2\" x2=\"291.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"124\" y1=\"118\" x2=\"240\" y2=\"118\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"240.0,118.0 230.0,112.0 230.0,124.0\" fill=\"#A23B2A\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Hur verkar kraften på staven?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet in i pappret blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet in i pappret blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8337,7 +8510,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En ledarbit leder ström uppåt medan magnetfältet pekar in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"88\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"45.2\" x2=\"94.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"45.2\" x2=\"81.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"91.2\" x2=\"94.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"91.2\" x2=\"81.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"137.2\" x2=\"94.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"137.2\" x2=\"81.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"183.2\" x2=\"94.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"183.2\" x2=\"81.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"45.2\" x2=\"146.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"45.2\" x2=\"133.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"91.2\" x2=\"146.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"91.2\" x2=\"133.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"137.2\" x2=\"146.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"137.2\" x2=\"133.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"183.2\" x2=\"146.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"183.2\" x2=\"133.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"45.2\" x2=\"198.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"45.2\" x2=\"185.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"91.2\" x2=\"198.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"91.2\" x2=\"185.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"137.2\" x2=\"198.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"137.2\" x2=\"185.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"183.2\" x2=\"198.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"183.2\" x2=\"185.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"45.2\" x2=\"250.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"45.2\" x2=\"237.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"91.2\" x2=\"250.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"91.2\" x2=\"237.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"137.2\" x2=\"250.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"137.2\" x2=\"237.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"183.2\" x2=\"250.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"183.2\" x2=\"237.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"45.2\" x2=\"302.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"45.2\" x2=\"289.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"91.2\" x2=\"302.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"91.2\" x2=\"289.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"137.2\" x2=\"302.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"137.2\" x2=\"289.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"183.2\" x2=\"302.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"183.2\" x2=\"289.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"182\" y1=\"186\" x2=\"182\" y2=\"50\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"182.0,50.0 176.0,60.0 188.0,60.0\" fill=\"#A23B2A\"/><text x=\"196.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>I vilken riktning pekar kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet in i pappret blir kraften riktad vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet in i pappret blir kraften riktad vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8359,7 +8532,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(2/0/0)",
     "t": "<p>En rak ledare har ström ut ur pappret och ligger i ett homogent magnetfält åt höger.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"76\" y1=\"64\" x2=\"304\" y2=\"64\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,64.0 294.0,58.0 294.0,70.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"108\" x2=\"304\" y2=\"108\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,108.0 294.0,102.0 294.0,114.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"152\" x2=\"304\" y2=\"152\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,152.0 294.0,146.0 294.0,158.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"196\" x2=\"304\" y2=\"196\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,196.0 294.0,190.0 294.0,202.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"182\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"182\" cy=\"118\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"200\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Bestäm kraftens riktning.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen ut ur pappret och magnetfältet höger blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen ut ur pappret och magnetfältet höger blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8381,7 +8554,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(1/2/0)",
     "t": "<p>En ledare med ström in i pappret ligger i ett homogent magnetfält åt vänster.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"304\" y1=\"72\" x2=\"76\" y2=\"72\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,72.0 86.0,78.0 86.0,66.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"124\" x2=\"76\" y2=\"124\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,124.0 86.0,130.0 86.0,118.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"176\" x2=\"76\" y2=\"176\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,176.0 86.0,182.0 86.0,170.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"182\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"175.2\" y1=\"111.2\" x2=\"188.8\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"188.8\" y1=\"111.2\" x2=\"175.2\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"200\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Vilket alternativ ger kraftens riktning?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen in i pappret och magnetfältet vänster blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen in i pappret och magnetfältet vänster blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8403,7 +8576,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(1/2/0)",
     "t": "<p>I en motorliknande uppställning går strömmen åt höger och magnetfältet uppåt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"100\" y1=\"188\" x2=\"100\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"100.0,52.0 94.0,62.0 106.0,62.0\" fill=\"#94A3B8\"/><line x1=\"160\" y1=\"188\" x2=\"160\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"160.0,52.0 154.0,62.0 166.0,62.0\" fill=\"#94A3B8\"/><line x1=\"220\" y1=\"188\" x2=\"220\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"220.0,52.0 214.0,62.0 226.0,62.0\" fill=\"#94A3B8\"/><line x1=\"280\" y1=\"188\" x2=\"280\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"280.0,52.0 274.0,62.0 286.0,62.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"114\" y1=\"118\" x2=\"250\" y2=\"118\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"250.0,118.0 240.0,112.0 240.0,124.0\" fill=\"#A23B2A\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>I vilken riktning trycks ledaren?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet uppåt blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen höger och magnetfältet uppåt blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8425,7 +8598,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(1/2/0)",
     "t": "<p>En laboratorieledare leder ström åt vänster i ett magnetfält nedåt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"84\" y1=\"52\" x2=\"84\" y2=\"188\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"84.0,188.0 90.0,178.0 78.0,178.0\" fill=\"#94A3B8\"/><line x1=\"140\" y1=\"52\" x2=\"140\" y2=\"188\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"140.0,188.0 146.0,178.0 134.0,178.0\" fill=\"#94A3B8\"/><line x1=\"196\" y1=\"52\" x2=\"196\" y2=\"188\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"196.0,188.0 202.0,178.0 190.0,178.0\" fill=\"#94A3B8\"/><line x1=\"252\" y1=\"52\" x2=\"252\" y2=\"188\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"252.0,188.0 258.0,178.0 246.0,178.0\" fill=\"#94A3B8\"/><line x1=\"308\" y1=\"52\" x2=\"308\" y2=\"188\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"308.0,188.0 314.0,178.0 302.0,178.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"240\" y1=\"118\" x2=\"124\" y2=\"118\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"124.0,118.0 134.0,124.0 134.0,112.0\" fill=\"#A23B2A\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Åt vilket håll blir kraften riktad?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen vänster och magnetfältet nedåt blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen vänster och magnetfältet nedåt blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8447,7 +8620,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(1/2/0)",
     "t": "<p>En ledare mellan två kontakter för ström nedåt i ett homogent fält åt höger.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"76\" y1=\"72\" x2=\"304\" y2=\"72\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,72.0 294.0,66.0 294.0,78.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"124\" x2=\"304\" y2=\"124\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,124.0 294.0,118.0 294.0,130.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"176\" x2=\"304\" y2=\"176\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,176.0 294.0,170.0 294.0,182.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"182\" y1=\"60\" x2=\"182\" y2=\"176\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"182.0,176.0 188.0,166.0 176.0,166.0\" fill=\"#A23B2A\"/><text x=\"196.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Vilken riktning har kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen nedåt och magnetfältet höger blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen nedåt och magnetfältet höger blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8469,7 +8642,7 @@ window.BANK2 = [
     "typ": "avgöra kraftens riktning på strömförande ledare",
     "poang": "(1/2/0)",
     "t": "<p>En strömförande stav leder ström uppåt i ett magnetfält åt vänster.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Strömförande ledare i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"304\" y1=\"64\" x2=\"76\" y2=\"64\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,64.0 86.0,70.0 86.0,58.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"108\" x2=\"76\" y2=\"108\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,108.0 86.0,114.0 86.0,102.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"152\" x2=\"76\" y2=\"152\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,152.0 86.0,158.0 86.0,146.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"196\" x2=\"76\" y2=\"196\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,196.0 86.0,202.0 86.0,190.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><line x1=\"182\" y1=\"186\" x2=\"182\" y2=\"50\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"182.0,50.0 176.0,60.0 188.0,60.0\" fill=\"#A23B2A\"/><text x=\"196.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">I</text></svg></span><p>Bestäm kraftens riktning på ledaren.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm riktningen med vänsterhandsregeln för motorverkan.</p><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet vänster blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en strömförande ledare gäller \\(\\vec F = I\\vec l\\times \\vec B\\). Använd vänsterhandsregeln eller kryssprodukten. Med strömmen uppåt och magnetfältet vänster blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på ledare i magnetfält",
     "familjNyckel": "magnetism__riktningsfragor_kraft_pa_ledare_i_magnetfalt",
     "formaga": [
@@ -8491,7 +8664,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt in i öppningen på en spole. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 230.7 136.5 A 54 54 0 0 0 145.3 76.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"145.3,76.6 135.2,78.6 141.6,86.2\" fill=\"#A23B2A\"/><path d=\"M 213.9 139.2 A 40 40 0 0 0 158.8 84.1\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"158.8,84.1 148.5,84.6 153.8,93.1\" fill=\"#A23B2A\"/><path d=\"M 198.7 136.1 A 26 26 0 0 0 169.4 94.2\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"169.4,94.2 159.2,93.3 163.2,102.5\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning pekar magnetfältet i mitten P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8514,7 +8687,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnet ses rakt framifrån. Strömmen går medurs.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 129.3 136.5 A 54 54 0 0 1 221.4 83.3\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"221.4,83.3 223.3,93.4 231.0,87.0\" fill=\"#A23B2A\"/><path d=\"M 144.7 136.8 A 40 40 0 0 1 204.6 86.5\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"204.6,86.5 208.6,96.0 214.8,88.1\" fill=\"#A23B2A\"/><path d=\"M 159.0 133.3 A 26 26 0 0 1 191.4 94.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"191.4,94.6 197.3,103.1 201.7,94.1\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilken riktning har magnetfältet i punkten P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8537,7 +8710,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt mot en cirkulär strömslinga där strömmen går moturs.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 224.5 147.8 A 58 58 0 0 0 132.7 83.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"132.7,83.6 122.6,85.5 129.0,93.2\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Bestäm magnetfältets riktning i P.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8560,7 +8733,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(2/0/0)",
     "t": "<p>En ledarslinga betraktas framifrån. Strömmen går medurs.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 125.5 137.8 A 58 58 0 0 1 224.4 80.7\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"224.4,80.7 226.4,90.8 234.0,84.4\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar magnetfältet i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8583,7 +8756,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(2/0/0)",
     "t": "<p>I ett laborationskit syns en spole framifrån. Strömmen går moturs.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 230.7 136.5 A 54 54 0 0 0 145.3 76.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"145.3,76.6 135.2,78.6 141.6,86.2\" fill=\"#A23B2A\"/><path d=\"M 213.9 139.2 A 40 40 0 0 0 158.8 84.1\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"158.8,84.1 148.5,84.6 153.8,93.1\" fill=\"#A23B2A\"/><path d=\"M 198.7 136.1 A 26 26 0 0 0 169.4 94.2\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"169.4,94.2 159.2,93.3 163.2,102.5\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Vilket alternativ beskriver fältets riktning i centrum?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8606,7 +8779,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(1/2/0)",
     "t": "<p>En spole ses från den öppna änden. Strömmen går medurs.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 119.3 146.5 A 54 54 0 0 1 211.4 93.3\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"211.4,93.3 213.3,103.4 221.0,97.0\" fill=\"#A23B2A\"/><path d=\"M 134.7 146.8 A 40 40 0 0 1 194.6 96.5\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"194.6,96.5 198.6,106.0 204.8,98.1\" fill=\"#A23B2A\"/><path d=\"M 149.0 143.3 A 26 26 0 0 1 181.4 104.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"181.4,104.6 187.3,113.1 191.7,104.1\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>I vilken riktning går magnetfältet genom öppningen?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8629,7 +8802,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(1/2/0)",
     "t": "<p>En rund slinga ses rakt framifrån med moturs ström.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 234.5 137.8 A 58 58 0 0 0 142.7 73.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"142.7,73.6 132.6,75.5 139.0,83.2\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Hur är magnetfältet riktat i P?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8652,7 +8825,7 @@ window.BANK2 = [
     "typ": "avgöra magnetfältets riktning i spole eller strömslinga",
     "poang": "(1/2/0)",
     "t": "<p>En enkel strömslinga har medurs ström sedd framifrån.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 125.5 137.8 A 58 58 0 0 1 224.4 80.7\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"224.4,80.7 226.4,90.8 234.0,84.4\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Bestäm magnetfältets riktning i mitten.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd högerhandsregeln för spole eller strömslinga.</p><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln för en spole eller strömslinga. Låt fingrarna följa strömmen. Tummen visar då magnetfältets riktning genom öppningen. Här pekar fältet in i pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ E (in i pappret).</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8675,7 +8848,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt in i öppningen på en spole. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 230.7 136.5 A 54 54 0 0 0 145.3 76.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"145.3,76.6 135.2,78.6 141.6,86.2\" fill=\"#A23B2A\"/><path d=\"M 213.9 139.2 A 40 40 0 0 0 158.8 84.1\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"158.8,84.1 148.5,84.6 153.8,93.1\" fill=\"#A23B2A\"/><path d=\"M 198.7 136.1 A 26 26 0 0 0 169.4 94.2\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"169.4,94.2 159.2,93.3 163.2,102.5\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8698,7 +8871,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt in i öppningen på en spole. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 129.3 136.5 A 54 54 0 0 1 221.4 83.3\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"221.4,83.3 223.3,93.4 231.0,87.0\" fill=\"#A23B2A\"/><path d=\"M 144.7 136.8 A 40 40 0 0 1 204.6 86.5\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"204.6,86.5 208.6,96.0 214.8,88.1\" fill=\"#A23B2A\"/><path d=\"M 159.0 133.3 A 26 26 0 0 1 191.4 94.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"191.4,94.6 197.3,103.1 201.7,94.1\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8721,7 +8894,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt in i öppningen på en spole. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 234.5 137.8 A 58 58 0 0 0 142.7 73.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"142.7,73.6 132.6,75.5 139.0,83.2\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8744,7 +8917,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>Du ser rakt in i öppningen på en spole. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 125.5 137.8 A 58 58 0 0 1 224.4 80.7\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"224.4,80.7 226.4,90.8 234.0,84.4\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8767,7 +8940,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnet betraktas framifrån. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 230.7 136.5 A 54 54 0 0 0 145.3 76.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"145.3,76.6 135.2,78.6 141.6,86.2\" fill=\"#A23B2A\"/><path d=\"M 213.9 139.2 A 40 40 0 0 0 158.8 84.1\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"158.8,84.1 148.5,84.6 153.8,93.1\" fill=\"#A23B2A\"/><path d=\"M 198.7 136.1 A 26 26 0 0 0 169.4 94.2\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"169.4,94.2 159.2,93.3 163.2,102.5\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8790,7 +8963,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnet betraktas framifrån. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 129.3 136.5 A 54 54 0 0 1 221.4 83.3\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"221.4,83.3 223.3,93.4 231.0,87.0\" fill=\"#A23B2A\"/><path d=\"M 144.7 136.8 A 40 40 0 0 1 204.6 86.5\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"204.6,86.5 208.6,96.0 214.8,88.1\" fill=\"#A23B2A\"/><path d=\"M 159.0 133.3 A 26 26 0 0 1 191.4 94.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"191.4,94.6 197.3,103.1 201.7,94.1\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8813,7 +8986,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnet betraktas framifrån. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 234.5 137.8 A 58 58 0 0 0 142.7 73.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"142.7,73.6 132.6,75.5 139.0,83.2\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8836,7 +9009,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnet betraktas framifrån. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 125.5 137.8 A 58 58 0 0 1 224.4 80.7\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"224.4,80.7 226.4,90.8 234.0,84.4\" fill=\"#A23B2A\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8859,7 +9032,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 220.7 146.5 A 54 54 0 0 0 135.3 86.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"135.3,86.6 125.2,88.6 131.6,96.2\" fill=\"#A23B2A\"/><path d=\"M 203.9 149.2 A 40 40 0 0 0 148.8 94.1\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"148.8,94.1 138.5,94.6 143.8,103.1\" fill=\"#A23B2A\"/><path d=\"M 188.7 146.1 A 26 26 0 0 0 159.4 104.2\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"159.4,104.2 149.2,103.3 153.2,112.5\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8882,7 +9055,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"128\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 119.3 146.5 A 54 54 0 0 1 211.4 93.3\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"211.4,93.3 213.3,103.4 221.0,97.0\" fill=\"#A23B2A\"/><path d=\"M 134.7 146.8 A 40 40 0 0 1 194.6 96.5\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"194.6,96.5 198.6,106.0 204.8,98.1\" fill=\"#A23B2A\"/><path d=\"M 149.0 143.3 A 26 26 0 0 1 181.4 104.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"181.4,104.6 187.3,113.1 191.7,104.1\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8905,7 +9078,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Strömmen går moturs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 224.5 147.8 A 58 58 0 0 0 132.7 83.6\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"132.7,83.6 122.6,85.5 129.0,93.2\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså nordpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> nordpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8928,7 +9101,7 @@ window.BANK2 = [
     "typ": "avgöra om en coilända är nordpol eller sydpol",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Strömmen går medurs sedd från dig.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga sedd framifrån</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"170\" cy=\"128\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><path d=\"M 115.5 147.8 A 58 58 0 0 1 214.4 90.7\" fill=\"none\" stroke=\"#A23B2A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><polygon points=\"214.4,90.7 216.4,100.8 224.0,94.4\" fill=\"#A23B2A\"/><circle cx=\"170\" cy=\"128\" r=\"5\" fill=\"#2B2527\"/><text x=\"184\" y=\"118\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Är den synliga änden en nordpol eller en sydpol?</p><p><strong>nordpol</strong> eller <strong>sydpol</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Koppla strömriktningen till magnetfältets riktning med högerhandsregeln.</p><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Använd högerhandsregeln: när fingrarna följer strömmen visar tummen magnetfältets riktning genom öppningen. Om fältet kommer ut mot dig är änden en nordpol, och om fältet går in från dig är änden en sydpol. Här blir den synliga änden alltså sydpol.</p><p class=\"facit-svar\"><strong>Svar:</strong> sydpol.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8951,7 +9124,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en spole. Den synliga änden ska vara en nordpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#DC2626\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8974,7 +9147,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en spole. Den synliga änden ska vara en sydpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#2563EB\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -8997,7 +9170,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Den synliga änden ska vara en nordpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#DC2626\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9020,7 +9193,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Den synliga änden ska vara en sydpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#2563EB\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9043,7 +9216,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en spole. Den synliga änden ska vara en nordpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#DC2626\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9066,7 +9239,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en spole. Den synliga änden ska vara en sydpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>spole med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"54\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"26\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#2563EB\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9089,7 +9262,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Den synliga änden ska vara en nordpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#DC2626\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en nordpol måste magnetfältet genom öppningen peka ut mot dig. När du använder högerhandsregeln följer då att strömmen måste gå moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9112,7 +9285,7 @@ window.BANK2 = [
     "typ": "avgöra strömriktning från given polriktning",
     "poang": "(1/2/0)",
     "t": "<p>Du ser rakt mot en strömslinga. Den synliga änden ska vara en sydpol.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>strömslinga med markerad pol</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"58\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"118\" r=\"5\" fill=\"#2B2527\"/><text x=\"194\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text><rect x=\"154\" y=\"30\" width=\"52\" height=\"36\" rx=\"10\" fill=\"#2563EB\"/><text x=\"180\" y=\"54\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text></svg></span><p>Vilken riktning måste strömmen ha sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Arbeta baklänges från polriktningen med högerhandsregeln.</p><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Om den synliga änden ska vara en sydpol måste magnetfältet genom öppningen peka in från dig. När du använder högerhandsregeln följer då att strömmen måste gå medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor för spolar och strömslingor",
     "familjNyckel": "magnetism__riktningsfragor_for_spolar_och_stromslingor",
     "formaga": [
@@ -9298,7 +9471,7 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 970,
     "tolerans": 14.549999999999999,
@@ -9306,7 +9479,8 @@ window.BANK2 = [
     "svarFormat": "numeriskt",
     "svarEnhet": null,
     "manuellKomplettering": true,
-    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag"
+    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.8",
@@ -9321,12 +9495,13 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag"
+    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.9",
@@ -9342,12 +9517,13 @@ window.BANK2 = [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag"
+    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.10",
@@ -9736,12 +9912,13 @@ window.BANK2 = [
       "begrepp",
       "resonemang"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag"
+    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.25",
@@ -12186,13 +12363,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 0.511,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.32",
@@ -12207,13 +12385,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 940,
     "tolerans": 14.1,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.33",
@@ -12228,11 +12407,12 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.34",
@@ -12247,13 +12427,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 1.8e-30,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.35",
@@ -12268,13 +12449,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 4.7e-12,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.36",
@@ -12289,13 +12471,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 9.7e-12,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.37",
@@ -12310,13 +12493,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 3.6e-28,
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.38",
@@ -12331,11 +12515,12 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.39",
@@ -12350,11 +12535,12 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.40",
@@ -12369,13 +12555,14 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "numeriskt",
     "rättSvar": 8.4,
     "tolerans": 0.126,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": null
+    "svarEnhet": null,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.41",
@@ -12684,7 +12871,7 @@ window.BANK2 = [
     "typ": "bestäm fart från längdkontraktion",
     "poang": "(1/2/0)",
     "t": "<p>Ett snabbt föremål mäts till 80 % av sin egenlängd.</p><p>Bestäm farten som andel av c.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Eftersom \\(L/L_0=1/\\gamma=0{,}80\\) är \\(\\gamma=1/0{,}80=1{,}25\\).</p><div class=\"facit-matte\">\\[\\beta=\\sqrt{1-\\frac1{1{,}25^2}}=0.600\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är cirka \\(0,6c\\).</p></div>",
+    "s": "<p>Längdkontraktion skrivs \\(L=L_0/\\gamma\\), där \\(L_0\\) är egenlängden. Villkoret \\(L=0{,}80L_0\\) ger därför</p><p>\\[\\frac{1}{\\gamma}=0{,}80\\Rightarrow\\gamma=1{,}25.\\]</p><p>Använd sedan \\(\\gamma=1/\\sqrt{1-\\beta^2}\\), där \\(\\beta=v/c\\):</p><p>\\[\\beta=\\sqrt{1-\\frac{1}{\\gamma^2}}=\\sqrt{1-\\frac{1}{1{,}25^2}}=0{,}60.\\]</p><p><strong>Svar:</strong> \\(v\\approx0{,}60c\\).</p>",
     "familj": "Längdkontraktion och egenlängd",
     "familjNyckel": "langdkontraktion__langdkontraktion_och_egenlangd",
     "formaga": [
@@ -12732,11 +12919,12 @@ window.BANK2 = [
       "modellering",
       "problemlösning"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "1.80",
@@ -12787,15 +12975,15 @@ window.BANK2 = [
     "typ": "omvandla ljudnivå till intensitet",
     "poang": "(2/0/0)",
     "t": "<p>En ljudnivå är 60 dB. Referensintensiteten är \\(I_0=1{,}0\\cdot10^{-12}\\,\\mathrm{W/m^2}\\).</p><p>Bestäm ljudintensiteten.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(\\beta=10\\log_{10}(I/I_0)\\) och lös ut \\(I\\).</p><div class=\"facit-matte\">\\[I=I_0\\,10^{\\beta/10}=10^{-12}\\cdot10^{60/10}=1e-06\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är \\(1.0e-06\\ \\mathrm{W/m^2}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(\\beta=10\\log_{10}(I/I_0)\\) och lös ut \\(I\\).</p><div class=\"facit-matte\">\\[I=I_0\\,10^{\\beta/10}=10^{-12}\\cdot10^{60/10}=1\\cdot10^{-6}\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är \\(1{,}0\\cdot10^{-6}\\ \\mathrm{W/m^2}\\).</p></div>",
     "familj": "Ljudintensitet och ljudnivå",
     "familjNyckel": "ljud_horsel__ljudintensitet_och_ljudniva",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "numeriskt",
-    "rättSvar": 0.000001,
-    "tolerans": 2e-8,
+    "rättSvar": 1e-06,
+    "tolerans": 2e-08,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "W/m²",
@@ -12809,7 +12997,7 @@ window.BANK2 = [
     "typ": "omvandla ljudnivå till intensitet",
     "poang": "(2/0/0)",
     "t": "<p>En ljudnivå är 85 dB. Referensintensiteten är \\(I_0=1{,}0\\cdot10^{-12}\\,\\mathrm{W/m^2}\\).</p><p>Bestäm ljudintensiteten.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(\\beta=10\\log_{10}(I/I_0)\\) och lös ut \\(I\\).</p><div class=\"facit-matte\">\\[I=I_0\\,10^{\\beta/10}=10^{-12}\\cdot10^{85/10}=0.000316\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är \\(3.2e-04\\ \\mathrm{W/m^2}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(\\beta=10\\log_{10}(I/I_0)\\) och lös ut \\(I\\).</p><div class=\"facit-matte\">\\[I=I_0\\,10^{\\beta/10}=10^{-12}\\cdot10^{85/10}=0.000316\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är \\(3{,}2\\cdot10^{-4}\\ \\mathrm{W/m^2}\\).</p></div>",
     "familj": "Ljudintensitet och ljudnivå",
     "familjNyckel": "ljud_horsel__ljudintensitet_och_ljudniva",
     "formaga": [
@@ -12817,7 +13005,7 @@ window.BANK2 = [
     ],
     "svarstyp": "numeriskt",
     "rättSvar": 0.00031622776601683794,
-    "tolerans": 0.000006324555320336759,
+    "tolerans": 6.324555320336759e-06,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "W/m²",
@@ -12854,7 +13042,7 @@ window.BANK2 = [
     "typ": "bestäm intensitetsförhållande från skillnad i decibel",
     "poang": "(1/2/0)",
     "t": "<p>Två ljud skiljer 35 dB i ljudnivå.</p><p>Hur många gånger större är intensiteten för det starkare ljudet?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">En skillnad \\(\\Delta\\beta\\) motsvarar intensitetsförhållandet \\(I_2/I_1=10^{\\Delta\\beta/10}\\).</p><div class=\"facit-matte\">\\[\\frac{I_2}{I_1}=10^{35/10}=3162\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är cirka \\(3,16e+03\\) gånger större.</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">En skillnad \\(\\Delta\\beta\\) motsvarar intensitetsförhållandet \\(I_2/I_1=10^{\\Delta\\beta/10}\\).</p><div class=\"facit-matte\">\\[\\frac{I_2}{I_1}=10^{35/10}=3162\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Intensiteten är cirka \\(3,16\\cdot10^{3}\\) gånger större.</p></div>",
     "familj": "Ljudintensitet och ljudnivå",
     "familjNyckel": "ljud_horsel__ljudintensitet_och_ljudniva",
     "formaga": [
@@ -13107,7 +13295,7 @@ window.BANK2 = [
     "typ": "beräkna våglängd för elektromagnetisk våg",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnetisk våg i vakuum har frekvensen 100 MHz.</p><p>Bestäm våglängden.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I vakuum gäller \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{1e+08}=3\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(3\\ \\mathrm m\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">I vakuum gäller \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{1\\cdot10^{8}}=3\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(3\\ \\mathrm m\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
     "formaga": [
@@ -13129,7 +13317,7 @@ window.BANK2 = [
     "typ": "beräkna våglängd för elektromagnetisk våg",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnetisk våg i vakuum har frekvensen 2400 MHz.</p><p>Bestäm våglängden.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I vakuum gäller \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{2.4e+09}=0.125\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(0,125\\ \\mathrm m\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">I vakuum gäller \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{2{,}4\\cdot10^{9}}=0.125\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är \\(0,125\\ \\mathrm m\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
     "formaga": [
@@ -13151,7 +13339,7 @@ window.BANK2 = [
     "typ": "beräkna frekvens från våglängd för elektromagnetisk våg",
     "poang": "(1/2/0)",
     "t": "<p>En infraröd ljussignal har våglängden 850 nm i vakuum.</p><p>Bestäm frekvensen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och omvandla nm till meter.</p><div class=\"facit-matte\">\\[f=\\frac{3{,}00\\cdot10^8}{850\\cdot10^{-9}}=3.53e+14\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är cirka \\(3.53e+14\\ \\mathrm{Hz}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och omvandla nm till meter.</p><div class=\"facit-matte\">\\[f=\\frac{3{,}00\\cdot10^8}{850\\cdot10^{-9}}=3{,}53\\cdot10^{14}\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Frekvensen är cirka \\(3{,}53\\cdot10^{14}\\ \\mathrm{Hz}\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
     "formaga": [
@@ -13178,12 +13366,13 @@ window.BANK2 = [
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag"
+    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.55",
@@ -13235,7 +13424,7 @@ window.BANK2 = [
     "typ": "beräkna diffraktionsvinkel med gitter",
     "poang": "(2/0/0)",
     "t": "<p>Ett gitter har 500 linjer/mm och belyses vinkelrätt med ljus av våglängden 600 nm.</p><p>Bestäm vinkeln till maximum av ordning 1.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{500}=2e-06\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{1\\cdot600\\cdot10^{-9}}{2e-06}\\right)=17.46^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(17,46^\\circ\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{500}=2\\cdot10^{-6}\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{1\\cdot600\\cdot10^{-9}}{2\\cdot10^{-6}}\\right)=17.46^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(17,46^\\circ\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
     "formaga": [
@@ -13256,7 +13445,7 @@ window.BANK2 = [
     "typ": "beräkna diffraktionsvinkel med gitter",
     "poang": "(2/0/0)",
     "t": "<p>Ett gitter har 1000 linjer/mm och belyses vinkelrätt med ljus av våglängden 405 nm.</p><p>Bestäm vinkeln till maximum av ordning 1.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{1000}=1e-06\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{1\\cdot405\\cdot10^{-9}}{1e-06}\\right)=23.89^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(23,89^\\circ\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{1000}=1\\cdot10^{-6}\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{1\\cdot405\\cdot10^{-9}}{1\\cdot10^{-6}}\\right)=23.89^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(23,89^\\circ\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
     "formaga": [
@@ -13277,7 +13466,7 @@ window.BANK2 = [
     "typ": "beräkna diffraktionsvinkel med gitter",
     "poang": "(1/2/0)",
     "t": "<p>Ett gitter har 300 linjer/mm och belyses vinkelrätt med ljus av våglängden 650 nm.</p><p>Bestäm vinkeln till maximum av ordning 2.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{300}=3.33e-06\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{2\\cdot650\\cdot10^{-9}}{3.33e-06}\\right)=22.95^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(22,95^\\circ\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är \\(d=1/N\\). För vinkelrätt infall gäller \\(d\\sin\\theta=m\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac{10^{-3}}{300}=3{,}33\\cdot10^{-6}\\ \\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{2\\cdot650\\cdot10^{-9}}{3{,}33\\cdot10^{-6}}\\right)=22.95^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Vinkeln är cirka \\(22,95^\\circ\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
     "formaga": [
@@ -13514,8 +13703,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En karusellstol rör sig med farten 7,5 m/s i en cirkel med radien 5 m.</p><p>Bestäm centripetalaccelerationen.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(a_c=v^2/r\\).</p><div class=\"facit-matte\">\\[a_c=\\frac{7.5^2}{5.0}=11.250\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Centripetalaccelerationen är \\(11,25\\ \\mathrm{m/s^2}\\).</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "formaga": [
       "procedur"
     ],
@@ -13524,7 +13713,9 @@ window.BANK2 = [
     "tolerans": 0.1,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "m/s²"
+    "svarEnhet": "m/s²",
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.87",
@@ -13535,8 +13726,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En provkapsel i en centrifug rör sig med farten 32 m/s i en cirkel med radien 2,4 m.</p><p>Bestäm centripetalaccelerationen.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(a_c=v^2/r\\).</p><div class=\"facit-matte\">\\[a_c=\\frac{32^2}{2.4}=426.667\\ \\mathrm{m/s^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Centripetalaccelerationen är \\(426,7\\ \\mathrm{m/s^2}\\).</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "formaga": [
       "procedur"
     ],
@@ -13545,7 +13736,9 @@ window.BANK2 = [
     "tolerans": 0.1,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "m/s²"
+    "svarEnhet": "m/s²",
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "1.88",
@@ -13556,8 +13749,8 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En träningscentrifug har radien 12 m och gör ett varv på 8,0 s.</p><p>Bestäm kapselns fart.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">På ett varv färdas kapseln sträckan \\(2\\pi r\\). Farten är sträcka delat med periodtid.</p><div class=\"facit-matte\">\\[v=\\frac{2\\pi r}{T}=\\frac{2\\pi\\cdot12}{8{,}0}=9.425\\ \\mathrm{m/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är cirka \\(9,425\\ \\mathrm{m/s}\\).</p></div>",
-    "familj": "Centripetalkraft och centripetalacceleration",
-    "familjNyckel": "cirkel__centripetalkraft_och_centripetalacceleration",
+    "familj": "Centripetalacceleration och centripetalkraft",
+    "familjNyckel": "cirkel__centripetalacceleration_och_centripetalkraft",
     "formaga": [
       "procedur"
     ],
@@ -13566,7 +13759,9 @@ window.BANK2 = [
     "tolerans": 0.1,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "m/s"
+    "svarEnhet": "m/s",
+    "familjTidigare": "Centripetalkraft och centripetalacceleration",
+    "familjNyckelFöreHierarki": "cirkel__centripetalkraft_och_centripetalacceleration"
   },
   {
     "id": "2.174",
@@ -13577,16 +13772,18 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Två fjädrar har fjäderkonstanterna 150 N/m och 250 N/m.</p><p><strong>a)</strong> Bestäm den sammanlagda fjäderkonstanten om de kopplas parallellt.</p><p><strong>b)</strong> Bestäm den sammanlagda fjäderkonstanten om de i stället kopplas i serie.</p>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Parallella fjädrar dras ut lika mycket och krafterna adderas.</p><div class=\"facit-matte\">\\[k=k_1+k_2=150+250=400\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(400\\ \\mathrm{N/m}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I serie bär båda fjädrarna samma kraft och förlängningarna adderas.</p><div class=\"facit-matte\">\\[\\frac1k=\\frac1{150}+\\frac1{250}\\]\\[k=93{,}8\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(93{,}8\\ \\mathrm{N/m}\\).</p></div></div><p class=\"facit-not\">Parallellkoppling ger alltid en styvare fjäder än den styvaste enskilda, seriekoppling alltid en vekare än den vekaste. Det är samma matematik som för resistorer, fast omvänt.</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.180",
@@ -13597,8 +13794,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder med fjäderkonstanten 180 N/m sträcks 12 cm.</p><p>Hur mycket elastisk energi lagras?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den elastiska energin är \\(E=\\tfrac12kx^2\\). Sträckningen måste anges i meter.</p><div class=\"facit-matte\">\\[E=\\frac12\\cdot180\\cdot(0.12)^2=1.2960\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den lagrade energin är cirka \\(1,296\\ \\mathrm J\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur"
     ],
@@ -13608,7 +13805,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "J",
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.181",
@@ -13619,8 +13818,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>En fjäder med fjäderkonstanten 650 N/m sträcks 4,5 cm.</p><p>Hur mycket elastisk energi lagras?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Den elastiska energin är \\(E=\\tfrac12kx^2\\). Sträckningen måste anges i meter.</p><div class=\"facit-matte\">\\[E=\\frac12\\cdot650\\cdot(0.045)^2=0.6581\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den lagrade energin är cirka \\(0,6581\\ \\mathrm J\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur"
     ],
@@ -13630,7 +13829,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "J",
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.182",
@@ -13641,8 +13842,8 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En fjäder med fjäderkonstanten 420 N/m lagrar 3,0 J elastisk energi.</p><p>Hur långt är fjädern utdragen från jämviktsläget?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(x\\) ur \\(E=\\tfrac12kx^2\\).</p><div class=\"facit-matte\">\\[x=\\sqrt{\\frac{2E}{k}}=\\sqrt{\\frac{2\\cdot3{,}0}{420}}=0.1195\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utsträckningen är cirka \\(11,95\\ \\mathrm{cm}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur"
     ],
@@ -13652,7 +13853,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "cm",
-    "familjNyckelTidigare": "fjadrar__fjaderenergi"
+    "familjNyckelTidigare": "fjadrar__fjaderenergi",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.183",
@@ -13663,8 +13866,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Två fjädrar med fjäderkonstanterna 120 N/m och 180 N/m kopplas i serie.</p><p>Bestäm systemets effektiva fjäderkonstant.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För seriekoppling gäller \\(1/k=1/k_1+1/k_2\\); för parallellkoppling gäller \\(k=k_1+k_2\\).</p><div class=\"facit-matte\">\\[k=\\frac{120\\cdot180}{120+180}=72.0\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den effektiva fjäderkonstanten är \\(72\\ \\mathrm{N/m}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur",
       "begrepp"
@@ -13675,7 +13878,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "N/m",
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.184",
@@ -13686,8 +13891,8 @@ window.BANK2 = [
     "poang": "(2/0/0)",
     "t": "<p>Två fjädrar med fjäderkonstanterna 150 N/m och 250 N/m kopplas i parallell.</p><p>Bestäm systemets effektiva fjäderkonstant.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För seriekoppling gäller \\(1/k=1/k_1+1/k_2\\); för parallellkoppling gäller \\(k=k_1+k_2\\).</p><div class=\"facit-matte\">\\[k=150+250=400\\ \\mathrm{N/m}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den effektiva fjäderkonstanten är \\(400\\ \\mathrm{N/m}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur",
       "begrepp"
@@ -13698,7 +13903,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "N/m",
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.185",
@@ -13709,8 +13916,8 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>Fjädrar på 200 N/m och 300 N/m kopplas i serie och belastas med en massa på 1,5 kg.</p><p>Bestäm den totala utsträckningen i jämvikt.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Beräkna först seriekopplingens effektiva fjäderkonstant och använd sedan \\(mg=kx\\).</p><div class=\"facit-matte\">\\[k=\\frac{200\\cdot300}{200+300}=120\\ \\mathrm{N/m}\\]\\[x=\\frac{1{,}5\\cdot9{,}82}{120}=0.1227\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utsträckningen är cirka \\(12,28\\ \\mathrm{cm}\\).</p></div>",
-    "familj": "Fjädrar: Hookes lag, energi och kopplingar",
-    "familjNyckel": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar",
+    "familj": "Hookes lag, fjäderenergi och kopplingar",
+    "familjNyckel": "fjadrar__hookes_lag_fjaderenergi_och_kopplingar",
     "formaga": [
       "procedur"
     ],
@@ -13720,7 +13927,9 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "cm",
-    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell"
+    "familjNyckelTidigare": "fjadrar__fjadrar_i_serie_och_parallell",
+    "familjTidigare": "Fjädrar: Hookes lag, energi och kopplingar",
+    "familjNyckelFöreHierarki": "fjadrar__fjadrar_hookes_lag_energi_och_kopplingar"
   },
   {
     "id": "2.175",
@@ -13793,7 +14002,7 @@ window.BANK2 = [
     "typ": "beräkna laddning i kondensator",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator har kapacitansen 22 μF och laddas till 9 V.</p><p>Hur stor laddning lagras?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=22\\cdot9=198\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(198\\ \\mu\\mathrm C\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kapacitansen kopplar laddning och spänning genom \\(Q=CU\\). Lös ut den efterfrågade storheten och skriv mikro-prefix som \\(10^{-6}\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=22\\cdot9=198\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(198\\ \\mu\\mathrm C\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13815,7 +14024,7 @@ window.BANK2 = [
     "typ": "beräkna laddning i kondensator",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator har kapacitansen 100 μF och laddas till 5 V.</p><p>Hur stor laddning lagras?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=100\\cdot5=500\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(500\\ \\mu\\mathrm C\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kapacitansen kopplar laddning och spänning genom \\(Q=CU\\). Lös ut den efterfrågade storheten och skriv mikro-prefix som \\(10^{-6}\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=100\\cdot5=500\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(500\\ \\mu\\mathrm C\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13837,7 +14046,7 @@ window.BANK2 = [
     "typ": "beräkna laddning i kondensator",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator har kapacitansen 470 μF och laddas till 12 V.</p><p>Hur stor laddning lagras?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=470\\cdot12=5640\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(5640\\ \\mu\\mathrm C\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kapacitansen kopplar laddning och spänning genom \\(Q=CU\\). Lös ut den efterfrågade storheten och skriv mikro-prefix som \\(10^{-6}\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(Q=CU\\). Med C i μF blir Q direkt i μC när U anges i volt.</p><div class=\"facit-matte\">\\[Q=470\\cdot12=5640\\ \\mu\\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(5640\\ \\mu\\mathrm C\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13859,7 +14068,7 @@ window.BANK2 = [
     "typ": "bestäm kapacitans från laddning och spänning",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator bär laddningen 360 μC när spänningen är 12 V.</p><p>Bestäm kapacitansen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut kapacitansen ur \\(Q=CU\\).</p><div class=\"facit-matte\">\\[C=\\frac{Q}{U}=\\frac{360\\ \\mu C}{12\\ \\mathrm V}=30\\ \\mu\\mathrm F\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Kapacitansen är \\(30\\ \\mu\\mathrm F\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kapacitansen kopplar laddning och spänning genom \\(Q=CU\\). Lös ut den efterfrågade storheten och skriv mikro-prefix som \\(10^{-6}\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut kapacitansen ur \\(Q=CU\\).</p><div class=\"facit-matte\">\\[C=\\frac{Q}{U}=\\frac{360\\ \\mu C}{12\\ \\mathrm V}=30\\ \\mu\\mathrm F\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Kapacitansen är \\(30\\ \\mu\\mathrm F\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13881,7 +14090,7 @@ window.BANK2 = [
     "typ": "bestäm spänning från laddning och kapacitans",
     "poang": "(1/2/0)",
     "t": "<p>En 25 μF-kondensator har laddningen 150 μC.</p><p>Bestäm spänningen över kondensatorn.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut spänningen ur \\(Q=CU\\).</p><div class=\"facit-matte\">\\[U=\\frac{Q}{C}=\\frac{150}{25}=6.0\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen är \\(6\\ \\mathrm V\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kapacitansen kopplar laddning och spänning genom \\(Q=CU\\). Lös ut den efterfrågade storheten och skriv mikro-prefix som \\(10^{-6}\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut spänningen ur \\(Q=CU\\).</p><div class=\"facit-matte\">\\[U=\\frac{Q}{C}=\\frac{150}{25}=6.0\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen är \\(6\\ \\mathrm V\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13903,7 +14112,7 @@ window.BANK2 = [
     "typ": "beräkna energi i laddad kondensator",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator på 220 μF laddas till 12 V.</p><p>Hur mycket energi lagras?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(W=\\tfrac12CU^2\\) och omvandla μF till F.</p><div class=\"facit-matte\">\\[W=\\frac12\\cdot220\\cdot10^{-6}\\cdot12^2=0.01584\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(15,84\\ \\mathrm{mJ}\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kondensatorns energi kopplas till kapacitans och spänning genom \\(E=\\tfrac12CU^2\\). Lös ut den efterfrågade storheten före insättning och kontrollera mikro-/milliprefix.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(W=\\tfrac12CU^2\\) och omvandla μF till F.</p><div class=\"facit-matte\">\\[W=\\frac12\\cdot220\\cdot10^{-6}\\cdot12^2=0.01584\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(15,84\\ \\mathrm{mJ}\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13925,7 +14134,7 @@ window.BANK2 = [
     "typ": "beräkna energi i laddad kondensator",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator på 47 μF laddas till 24 V.</p><p>Hur mycket energi lagras?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(W=\\tfrac12CU^2\\) och omvandla μF till F.</p><div class=\"facit-matte\">\\[W=\\frac12\\cdot47\\cdot10^{-6}\\cdot24^2=0.01354\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(13,54\\ \\mathrm{mJ}\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kondensatorns energi kopplas till kapacitans och spänning genom \\(E=\\tfrac12CU^2\\). Lös ut den efterfrågade storheten före insättning och kontrollera mikro-/milliprefix.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(W=\\tfrac12CU^2\\) och omvandla μF till F.</p><div class=\"facit-matte\">\\[W=\\frac12\\cdot47\\cdot10^{-6}\\cdot24^2=0.01354\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(13,54\\ \\mathrm{mJ}\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -13947,7 +14156,7 @@ window.BANK2 = [
     "typ": "bestäm spänning från kondensatorenergi",
     "poang": "(1/2/0)",
     "t": "<p>En kondensator på 100 μF lagrar 20 mJ.</p><p>Vilken spänning ligger över kondensatorn?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut U ur \\(W=\\tfrac12CU^2\\).</p><div class=\"facit-matte\">\\[U=\\sqrt{\\frac{2W}{C}}=\\sqrt{\\frac{2\\cdot20\\cdot10^{-3}}{100\\cdot10^{-6}}}=20.00\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen är cirka \\(20\\ \\mathrm V\\).</p></div>",
+    "s": "<p><strong>Val av samband:</strong> Kondensatorns energi kopplas till kapacitans och spänning genom \\(E=\\tfrac12CU^2\\). Lös ut den efterfrågade storheten före insättning och kontrollera mikro-/milliprefix.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut U ur \\(W=\\tfrac12CU^2\\).</p><div class=\"facit-matte\">\\[U=\\sqrt{\\frac{2W}{C}}=\\sqrt{\\frac{2\\cdot20\\cdot10^{-3}}{100\\cdot10^{-6}}}=20.00\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningen är cirka \\(20\\ \\mathrm V\\).</p></div>",
     "familj": "Kondensatorer: kapacitans och energi",
     "familjNyckel": "kondensatorer__kondensatorer_kapacitans_och_energi",
     "formaga": [
@@ -14122,7 +14331,7 @@ window.BANK2 = [
     "typ": "beräkna inducerad spänning från flödesändring",
     "poang": "(2/0/0)",
     "t": "<p>Magnetflödet genom en spole med 250 varv ändras med 3.0e-04 Wb på 0,04 s.</p><p>Bestäm den inducerade spänningens storlek.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=250\\frac{3.0e-04}{0.04}=1.875\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(1,875\\ \\mathrm V\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=250\\frac{3{,}0\\cdot10^{-4}}{0.04}=1.875\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(1,875\\ \\mathrm V\\).</p></div>",
     "familj": "Faradays lag, magnetiskt flöde och induktion",
     "familjNyckel": "induktion__faradays_lag_magnetiskt_flode_och_induktion",
     "formaga": [
@@ -14144,7 +14353,7 @@ window.BANK2 = [
     "typ": "beräkna inducerad spänning från flödesändring",
     "poang": "(2/0/0)",
     "t": "<p>Magnetflödet genom en spole med 500 varv ändras med 1.2e-04 Wb på 0,015 s.</p><p>Bestäm den inducerade spänningens storlek.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=500\\frac{1.2e-04}{0.015}=4.000\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(4\\ \\mathrm V\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=500\\frac{1{,}2\\cdot10^{-4}}{0.015}=4.000\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(4\\ \\mathrm V\\).</p></div>",
     "familj": "Faradays lag, magnetiskt flöde och induktion",
     "familjNyckel": "induktion__faradays_lag_magnetiskt_flode_och_induktion",
     "formaga": [
@@ -14166,7 +14375,7 @@ window.BANK2 = [
     "typ": "beräkna inducerad spänning från flödesändring",
     "poang": "(2/0/0)",
     "t": "<p>Magnetflödet genom en spole med 120 varv ändras med 8.0e-04 Wb på 0,08 s.</p><p>Bestäm den inducerade spänningens storlek.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=120\\frac{8.0e-04}{0.08}=1.200\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(1,2\\ \\mathrm V\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Faradays lag ger \\(|\\varepsilon|=N|\\Delta\\Phi|/\\Delta t\\).</p><div class=\"facit-matte\">\\[|\\varepsilon|=120\\frac{8{,}0\\cdot10^{-4}}{0.08}=1.200\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Spänningens storlek är \\(1,2\\ \\mathrm V\\).</p></div>",
     "familj": "Faradays lag, magnetiskt flöde och induktion",
     "familjNyckel": "induktion__faradays_lag_magnetiskt_flode_och_induktion",
     "formaga": [
@@ -14232,7 +14441,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En ledarslinga ligger i ett magnetfält som ändras med tiden. Magnetfältet genom slingan är riktat ut ur pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"118\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Vilken riktning får den inducerade strömmen sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14254,7 +14463,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En ledarslinga ligger i ett magnetfält som ändras med tiden. Magnetfältet genom slingan är riktat ut ur pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"118\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Hur måste den inducerade strömmen gå för att motverka förändringen?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14276,7 +14485,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En ledarslinga ligger i ett magnetfält som ändras med tiden. Magnetfältet genom slingan är riktat in i pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"89.2\" x2=\"160.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"89.2\" x2=\"147.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"89.2\" x2=\"212.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"89.2\" x2=\"199.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"133.2\" x2=\"160.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"133.2\" x2=\"147.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"133.2\" x2=\"212.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"133.2\" x2=\"199.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"111.2\" x2=\"186.8\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"111.2\" x2=\"173.2\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Bestäm strömriktningen i slingan.</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14298,7 +14507,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En ledarslinga ligger i ett magnetfält som ändras med tiden. Magnetfältet genom slingan är riktat in i pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"89.2\" x2=\"160.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"89.2\" x2=\"147.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"89.2\" x2=\"212.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"89.2\" x2=\"199.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"133.2\" x2=\"160.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"133.2\" x2=\"147.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"133.2\" x2=\"212.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"133.2\" x2=\"199.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"111.2\" x2=\"186.8\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"111.2\" x2=\"173.2\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Går den inducerade strömmen medurs eller moturs?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14320,7 +14529,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En metallring befinner sig i ett område där magnetflödet förändras. Magnetfältet genom slingan är riktat ut ur pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"146\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"146\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"214\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"214\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"146\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"146\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"214\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"214\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Hur måste den inducerade strömmen gå för att motverka förändringen?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14342,7 +14551,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En metallring befinner sig i ett område där magnetflödet förändras. Magnetfältet genom slingan är riktat ut ur pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"146\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"146\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"214\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"214\" cy=\"92\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"146\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"146\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"214\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"214\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Bestäm strömriktningen i slingan.</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14364,7 +14573,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En metallring befinner sig i ett område där magnetflödet förändras. Magnetfältet genom slingan är riktat in i pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"146\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"139.2\" y1=\"85.2\" x2=\"152.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"152.8\" y1=\"85.2\" x2=\"139.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"85.2\" x2=\"186.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"85.2\" x2=\"173.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"214\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"207.2\" y1=\"85.2\" x2=\"220.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"220.8\" y1=\"85.2\" x2=\"207.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"146\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"139.2\" y1=\"137.2\" x2=\"152.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"152.8\" y1=\"137.2\" x2=\"139.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"137.2\" x2=\"186.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"137.2\" x2=\"173.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"214\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"207.2\" y1=\"137.2\" x2=\"220.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"220.8\" y1=\"137.2\" x2=\"207.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Går den inducerade strömmen medurs eller moturs?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14386,7 +14595,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(2/0/0)",
     "t": "<p>En metallring befinner sig i ett område där magnetflödet förändras. Magnetfältet genom slingan är riktat in i pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"146\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"139.2\" y1=\"85.2\" x2=\"152.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"152.8\" y1=\"85.2\" x2=\"139.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"85.2\" x2=\"186.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"85.2\" x2=\"173.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"214\" cy=\"92\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"207.2\" y1=\"85.2\" x2=\"220.8\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"220.8\" y1=\"85.2\" x2=\"207.2\" y2=\"98.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"146\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"139.2\" y1=\"137.2\" x2=\"152.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"152.8\" y1=\"137.2\" x2=\"139.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"137.2\" x2=\"186.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"137.2\" x2=\"173.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"214\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"207.2\" y1=\"137.2\" x2=\"220.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"220.8\" y1=\"137.2\" x2=\"207.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Vilken riktning får den inducerade strömmen sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14408,7 +14617,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>En cirkulär slinga utsätts för ett yttre magnetfält som ändras. Magnetfältet genom slingan är riktat ut ur pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"152\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"152\" cy=\"90\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"208\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"208\" cy=\"90\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"152\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"152\" cy=\"146\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"208\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"208\" cy=\"146\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Bestäm strömriktningen i slingan.</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14430,7 +14639,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>En cirkulär slinga utsätts för ett yttre magnetfält som ändras. Magnetfältet genom slingan är riktat ut ur pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"152\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"152\" cy=\"90\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"208\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"208\" cy=\"90\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"152\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"152\" cy=\"146\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"208\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"208\" cy=\"146\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Går den inducerade strömmen medurs eller moturs?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14452,7 +14661,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>En cirkulär slinga utsätts för ett yttre magnetfält som ändras. Magnetfältet genom slingan är riktat in i pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"152\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"145.2\" y1=\"83.2\" x2=\"158.8\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"158.8\" y1=\"83.2\" x2=\"145.2\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"208\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"201.2\" y1=\"83.2\" x2=\"214.8\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"214.8\" y1=\"83.2\" x2=\"201.2\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"152\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"145.2\" y1=\"139.2\" x2=\"158.8\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"158.8\" y1=\"139.2\" x2=\"145.2\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"208\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"201.2\" y1=\"139.2\" x2=\"214.8\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"214.8\" y1=\"139.2\" x2=\"201.2\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Vilken riktning får den inducerade strömmen sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14474,7 +14683,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>En cirkulär slinga utsätts för ett yttre magnetfält som ändras. Magnetfältet genom slingan är riktat in i pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"152\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"145.2\" y1=\"83.2\" x2=\"158.8\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"158.8\" y1=\"83.2\" x2=\"145.2\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"208\" cy=\"90\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"201.2\" y1=\"83.2\" x2=\"214.8\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"214.8\" y1=\"83.2\" x2=\"201.2\" y2=\"96.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"152\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"145.2\" y1=\"139.2\" x2=\"158.8\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"158.8\" y1=\"139.2\" x2=\"145.2\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"208\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"201.2\" y1=\"139.2\" x2=\"214.8\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"214.8\" y1=\"139.2\" x2=\"201.2\" y2=\"152.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Hur måste den inducerade strömmen gå för att motverka förändringen?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14496,7 +14705,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>I en laboration ändras magnetfältet genom en ledarslinga. Magnetfältet genom slingan är riktat ut ur pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"118\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Går den inducerade strömmen medurs eller moturs?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14518,7 +14727,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>I en laboration ändras magnetfältet genom en ledarslinga. Magnetfältet genom slingan är riktat ut ur pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"96\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"154\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"206\" cy=\"140\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"180\" cy=\"118\" r=\"4.8\" fill=\"#2A5D9E\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Vilken riktning får den inducerade strömmen sedd framifrån?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14540,7 +14749,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>I en laboration ändras magnetfältet genom en ledarslinga. Magnetfältet genom slingan är riktat in i pappret och ökar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"89.2\" x2=\"160.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"89.2\" x2=\"147.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"89.2\" x2=\"212.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"89.2\" x2=\"199.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"133.2\" x2=\"160.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"133.2\" x2=\"147.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"133.2\" x2=\"212.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"133.2\" x2=\"199.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"111.2\" x2=\"186.8\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"111.2\" x2=\"173.2\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"180\" x2=\"296\" y2=\"60\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,60.0 290.0,70.0 302.0,70.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"46\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">+</text></svg></span><p>Hur måste den inducerade strömmen gå för att motverka förändringen?</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält ut ur pappret. Med högerhandsregeln följer då att strömmen går moturs.</p><p class=\"facit-svar\"><strong>Svar:</strong> moturs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14562,7 +14771,7 @@ window.BANK2 = [
     "typ": "avgöra inducerad strömriktning i ledarslinga",
     "poang": "(1/2/0)",
     "t": "<p>I en laboration ändras magnetfältet genom en ledarslinga. Magnetfältet genom slingan är riktat in i pappret och minskar i styrka.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Ledarslinga i förändrat magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"180\" cy=\"118\" r=\"68\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"5\"/><circle cx=\"154\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"89.2\" x2=\"160.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"89.2\" x2=\"147.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"96\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"89.2\" x2=\"212.8\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"89.2\" x2=\"199.2\" y2=\"102.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"154\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"147.2\" y1=\"133.2\" x2=\"160.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"160.8\" y1=\"133.2\" x2=\"147.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"206\" cy=\"140\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"199.2\" y1=\"133.2\" x2=\"212.8\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"212.8\" y1=\"133.2\" x2=\"199.2\" y2=\"146.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"180\" cy=\"118\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"173.2\" y1=\"111.2\" x2=\"186.8\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"186.8\" y1=\"111.2\" x2=\"173.2\" y2=\"124.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"296\" y1=\"60\" x2=\"296\" y2=\"180\" stroke=\"#A23B2A\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"296.0,180.0 302.0,170.0 290.0,170.0\" fill=\"#A23B2A\"/><text x=\"296\" y=\"198\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#A23B2A\">−</text></svg></span><p>Bestäm strömriktningen i slingan.</p><p><strong>medurs</strong> eller <strong>moturs</strong></p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Lenz lag och koppla sedan till högerhandsregeln för en slinga.</p><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Enligt Lenz lag måste den inducerade strömmen skapa ett magnetfält som motverkar förändringen av flödet. Det betyder att slingan måste skapa ett fält in i pappret. Med högerhandsregeln följer då att strömmen går medurs.</p><p class=\"facit-svar\"><strong>Svar:</strong> medurs.</p></div>",
     "familj": "Riktningsfrågor: inducerad ström enligt Lenz lag",
     "familjNyckel": "induktion__riktningsfragor_inducerad_strom_enligt_lenz_lag",
     "formaga": [
@@ -14648,7 +14857,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En stångmagnet har nordpol till vänster och sydpol till höger. En kompass placeras i punkten P.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"110\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#2563EB\"/><text x=\"145.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"215.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"64\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"76\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14671,7 +14880,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En stavmagnet ligger horisontellt med nordpol till vänster. Punkten P ligger till höger om magneten.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"105\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#2563EB\"/><text x=\"142.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"217.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"296\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"308\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14694,7 +14903,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En horisontell stångmagnet har N till vänster och S till höger. En liten kompass placeras ovanför magneten i P.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"110\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#2563EB\"/><text x=\"145.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"215.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"180\" cy=\"50\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"42\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14717,7 +14926,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En kompass ligger i punkten P under en horisontell magnet med N till vänster och S till höger.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"105\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#2563EB\"/><text x=\"142.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"217.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"180\" cy=\"184\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"176\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14740,7 +14949,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En stångmagnet har sydpol till vänster och nordpol till höger. Punkten P ligger till vänster om magneten.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"105\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#2563EB\"/><text x=\"142.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><text x=\"217.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><circle cx=\"64\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"76\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14763,7 +14972,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En horisontell magnet har S till vänster och N till höger. Kompassen står till höger om magneten.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"110\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#2563EB\"/><text x=\"145.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><text x=\"215.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><circle cx=\"296\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"308\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet höger, och då pekar även kompassens nordända höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14786,7 +14995,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En stavmagnet ligger horisontellt med sydpol till vänster och nordpol till höger. Punkterna ovanför magneten påverkas av dess fält. P är en sådan punkt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"105\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"86\" width=\"75.0\" height=\"56\" rx=\"8\" fill=\"#2563EB\"/><text x=\"142.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><text x=\"217.5\" y=\"121.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><circle cx=\"180\" cy=\"50\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"42\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14809,7 +15018,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(2/0/0)",
     "t": "<p>En kompass placeras under en horisontell magnet med S till vänster och N till höger.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"110\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"180.0\" y=\"92\" width=\"70.0\" height=\"48\" rx=\"8\" fill=\"#2563EB\"/><text x=\"145.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><text x=\"215.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><circle cx=\"180\" cy=\"184\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"176\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet vänster, och då pekar även kompassens nordända vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14832,7 +15041,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(1/2/0)",
     "t": "<p>En stångmagnet står vertikalt med nordpol uppåt och sydpol nedåt. Punkten P ligger ovanför magneten.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"156\" y=\"40\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"156\" y=\"114.0\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#2563EB\"/><text x=\"180.0\" y=\"72\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"180.0\" y=\"154\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"180\" cy=\"24\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"16\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet uppåt, och då pekar även kompassens nordända uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet uppåt, och då pekar även kompassens nordända uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14855,7 +15064,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(1/2/0)",
     "t": "<p>En kompass placeras under en vertikal stångmagnet där N är överst och S nederst.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"156\" y=\"40\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"156\" y=\"114.0\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#2563EB\"/><text x=\"180.0\" y=\"72\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"180.0\" y=\"154\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"180\" cy=\"206\" r=\"5\" fill=\"#2B2527\"/><text x=\"192\" y=\"198\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet uppåt, och då pekar även kompassens nordända uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet uppåt, och då pekar även kompassens nordända uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14878,7 +15087,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(1/2/0)",
     "t": "<p>En vertikal stavmagnet har N överst och S nederst. Punkten P ligger till vänster om magneten.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"156\" y=\"40\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"156\" y=\"114.0\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#2563EB\"/><text x=\"180.0\" y=\"72\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"180.0\" y=\"154\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"92\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"104\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet nedåt, och då pekar även kompassens nordända nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet nedåt, och då pekar även kompassens nordända nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14901,7 +15110,7 @@ window.BANK2 = [
     "typ": "avgöra kompassens riktning nära stångmagnet",
     "poang": "(1/2/0)",
     "t": "<p>En kompass placeras till höger om en vertikal magnet med nordpol uppåt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Stångmagnet med punkt P</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><rect x=\"156\" y=\"40\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#DC2626\"/><rect x=\"156\" y=\"114.0\" width=\"48\" height=\"74.0\" rx=\"8\" fill=\"#2563EB\"/><text x=\"180.0\" y=\"72\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">N</text><text x=\"180.0\" y=\"154\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#fff\">S</text><circle cx=\"268\" cy=\"116\" r=\"5\" fill=\"#2B2527\"/><text x=\"280\" y=\"108\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">P</text></svg></span><p>Åt vilket håll pekar kompassens nordända?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först magnetfältets riktning utanför stångmagneten.</p><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet nedåt, och då pekar även kompassens nordända nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Kompassens nordända ställer in sig i samma riktning som magnetfältet. Utanför en stångmagnet går fältlinjerna från nordpol till sydpol. I punkten P pekar därför fältet nedåt, och då pekar även kompassens nordända nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Jordens magnetfält och kompass",
     "familjNyckel": "jordens_magnetfalt__jordens_magnetfalt_och_kompass",
     "formaga": [
@@ -14925,16 +15134,18 @@ window.BANK2 = [
     "poang": "(1/2/0)",
     "t": "<p>En punktladdning ger fältstyrkan 4,5·10<sup>4</sup> N/C på avståndet 8,0 cm från laddningen. Använd <em>k</em> = 8,99·10<sup>9</sup> N·m<sup>2</sup>/C<sup>2</sup>.</p><p><strong>a)</strong> Bestäm laddningens storlek.</p><p><strong>b)</strong> På vilket avstånd har fältstyrkan sjunkit till 1,0·10<sup>4</sup> N/C?</p>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">Lös ut laddningen ur uttrycket för fältet kring en punktladdning.</p><div class=\"facit-matte\">\\[E=\\frac{kQ}{r^2}\\quad\\Longrightarrow\\quad Q=\\frac{Er^2}{k}\\]\\[Q=\\frac{4{,}5\\cdot10^4\\cdot0{,}080^2}{8{,}99\\cdot10^9}=3{,}2\\cdot10^{-8}\\ \\mathrm C\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Laddningen är \\(32\\ \\mathrm{nC}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><div class=\"facit-matte\">\\[r=\\sqrt{\\frac{kQ}{E}}=\\sqrt{\\frac{8{,}99\\cdot10^9\\cdot3{,}2\\cdot10^{-8}}{1{,}0\\cdot10^4}}=0{,}17\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fältstyrkan är nere i \\(1{,}0\\cdot10^4\\ \\mathrm{N/C}\\) på \\(17\\ \\mathrm{cm}\\) avstånd.</p></div></div><p class=\"facit-not\">Fältet avtar med kvadraten på avståndet. Att sänka fältet till knappt en fjärdedel kräver därför bara drygt dubbla avståndet.</p></div>",
-    "familj": "Elektriska fält, potential och kraft",
+    "familj": "Elektriskt fält, potential och kraft",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "elektriska_falt__elektriska_falt_potential_och_kraft",
+    "familjNyckel": "elektriska_falt__elektriskt_falt_potential_och_kraft",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning"
+    "familjNyckelTidigare": "elektriska_falt__falt_fran_punktladdning",
+    "familjTidigare": "Elektriska fält, potential och kraft",
+    "familjNyckelFöreHierarki": "elektriska_falt__elektriska_falt_potential_och_kraft"
   },
   {
     "id": "3.112",
@@ -14965,7 +15176,7 @@ window.BANK2 = [
     "typ": "beräkna induktiv reaktans",
     "poang": "(2/0/0)",
     "t": "<p>En ideal spole har induktansen 0,2 H och ansluts till växelström med frekvensen 50 Hz.</p><p>Bestäm den induktiva reaktansen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_L=2\\pi fL\\).</p><div class=\"facit-matte\">\\[X_L=2\\pi\\cdot50\\cdot0.2=62.83\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(62,83\\ \\Omega\\).</p></div>",
+    "s": "<p><strong>Spole i växelström:</strong> Den induktiva reaktansen är \\(X_L=2\\pi fL\\). Högre frekvens eller större induktans ger alltså större reaktans.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_L=2\\pi fL\\).</p><div class=\"facit-matte\">\\[X_L=2\\pi\\cdot50\\cdot0.2=62.83\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(62,83\\ \\Omega\\).</p></div>",
     "familj": "Spole, kondensator och resonans i växelström",
     "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
     "formaga": [
@@ -14987,7 +15198,7 @@ window.BANK2 = [
     "typ": "beräkna induktiv reaktans",
     "poang": "(2/0/0)",
     "t": "<p>En ideal spole har induktansen 0,01 H och ansluts till växelström med frekvensen 400 Hz.</p><p>Bestäm den induktiva reaktansen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_L=2\\pi fL\\).</p><div class=\"facit-matte\">\\[X_L=2\\pi\\cdot400\\cdot0.01=25.13\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(25,13\\ \\Omega\\).</p></div>",
+    "s": "<p><strong>Spole i växelström:</strong> Den induktiva reaktansen är \\(X_L=2\\pi fL\\). Högre frekvens eller större induktans ger alltså större reaktans.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_L=2\\pi fL\\).</p><div class=\"facit-matte\">\\[X_L=2\\pi\\cdot400\\cdot0.01=25.13\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(25,13\\ \\Omega\\).</p></div>",
     "familj": "Spole, kondensator och resonans i växelström",
     "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
     "formaga": [
@@ -15009,7 +15220,7 @@ window.BANK2 = [
     "typ": "beräkna kapacitiv reaktans",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator på 100 μF ansluts till växelström med frekvensen 50 Hz.</p><p>Bestäm den kapacitiva reaktansen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_C=1/(2\\pi fC)\\).</p><div class=\"facit-matte\">\\[X_C=\\frac{1}{2\\pi\\cdot50\\cdot0.0001}=31.83\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(31,83\\ \\Omega\\).</p></div>",
+    "s": "<p><strong>Kondensator i växelström:</strong> Den kapacitiva reaktansen är \\(X_C=1/(2\\pi fC)\\). Högre frekvens eller större kapacitans ger mindre reaktans.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_C=1/(2\\pi fC)\\).</p><div class=\"facit-matte\">\\[X_C=\\frac{1}{2\\pi\\cdot50\\cdot0.0001}=31.83\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(31,83\\ \\Omega\\).</p></div>",
     "familj": "Spole, kondensator och resonans i växelström",
     "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
     "formaga": [
@@ -15031,7 +15242,7 @@ window.BANK2 = [
     "typ": "beräkna kapacitiv reaktans",
     "poang": "(2/0/0)",
     "t": "<p>En kondensator på 4.7 μF ansluts till växelström med frekvensen 1000 Hz.</p><p>Bestäm den kapacitiva reaktansen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_C=1/(2\\pi fC)\\).</p><div class=\"facit-matte\">\\[X_C=\\frac{1}{2\\pi\\cdot1000\\cdot4.7e-06}=33.86\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(33,86\\ \\Omega\\).</p></div>",
+    "s": "<p><strong>Kondensator i växelström:</strong> Den kapacitiva reaktansen är \\(X_C=1/(2\\pi fC)\\). Högre frekvens eller större kapacitans ger mindre reaktans.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(X_C=1/(2\\pi fC)\\).</p><div class=\"facit-matte\">\\[X_C=\\frac{1}{2\\pi\\cdot1000\\cdot4{,}7\\cdot10^{-6}}=33.86\\ \\Omega\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Reaktansen är cirka \\(33,86\\ \\Omega\\).</p></div>",
     "familj": "Spole, kondensator och resonans i växelström",
     "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
     "formaga": [
@@ -15053,7 +15264,7 @@ window.BANK2 = [
     "typ": "bestäm resonansfrekvens i LC-krets",
     "poang": "(1/2/0)",
     "t": "<p>En ideal LC-krets har L = 0,12 H och C = 22 μF.</p><p>Bestäm resonansfrekvensen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Resonansfrekvensen är \\(f_0=1/(2\\pi\\sqrt{LC})\\).</p><div class=\"facit-matte\">\\[f_0=\\frac{1}{2\\pi\\sqrt{0{,}12\\cdot22\\cdot10^{-6}}}=97.95\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Resonansfrekvensen är cirka \\(97,95\\ \\mathrm{Hz}\\).</p></div>",
+    "s": "<p><strong>Resonans:</strong> Vid resonans gäller \\(X_L=X_C\\), vilket ger \\(f=1/(2\\pi\\sqrt{LC})\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Resonansfrekvensen är \\(f_0=1/(2\\pi\\sqrt{LC})\\).</p><div class=\"facit-matte\">\\[f_0=\\frac{1}{2\\pi\\sqrt{0{,}12\\cdot22\\cdot10^{-6}}}=97.95\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Resonansfrekvensen är cirka \\(97,95\\ \\mathrm{Hz}\\).</p></div>",
     "familj": "Spole, kondensator och resonans i växelström",
     "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
     "formaga": [
@@ -15295,7 +15506,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En proton rör sig åt höger i ett homogent magnetfält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"56\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"100\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"188\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><line x1=\"204\" y1=\"116\" x2=\"258\" y2=\"116\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"258.0,116.0 248.0,110.0 248.0,122.0\" fill=\"#A23B2A\"/><text x=\"231.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>I vilken riktning verkar den magnetiska kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15317,7 +15528,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En positiv jon rör sig uppåt i ett magnetfält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><line x1=\"176\" y1=\"88\" x2=\"176\" y2=\"34\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"176.0,34.0 170.0,44.0 182.0,44.0\" fill=\"#A23B2A\"/><text x=\"190.0\" y=\"61.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Åt vilket håll böjs partikeln först?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15339,7 +15550,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En alfapartikel rör sig åt vänster medan magnetfältet pekar in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"88\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"45.2\" x2=\"94.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"45.2\" x2=\"81.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"91.2\" x2=\"94.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"91.2\" x2=\"81.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"137.2\" x2=\"94.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"137.2\" x2=\"81.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"88\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"81.2\" y1=\"183.2\" x2=\"94.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"94.8\" y1=\"183.2\" x2=\"81.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"45.2\" x2=\"146.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"45.2\" x2=\"133.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"91.2\" x2=\"146.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"91.2\" x2=\"133.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"137.2\" x2=\"146.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"137.2\" x2=\"133.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"140\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"133.2\" y1=\"183.2\" x2=\"146.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"146.8\" y1=\"183.2\" x2=\"133.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"45.2\" x2=\"198.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"45.2\" x2=\"185.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"91.2\" x2=\"198.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"91.2\" x2=\"185.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"137.2\" x2=\"198.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"137.2\" x2=\"185.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"192\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"185.2\" y1=\"183.2\" x2=\"198.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"198.8\" y1=\"183.2\" x2=\"185.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"45.2\" x2=\"250.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"45.2\" x2=\"237.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"91.2\" x2=\"250.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"91.2\" x2=\"237.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"137.2\" x2=\"250.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"137.2\" x2=\"237.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"244\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"237.2\" y1=\"183.2\" x2=\"250.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"250.8\" y1=\"183.2\" x2=\"237.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"45.2\" x2=\"302.8\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"45.2\" x2=\"289.2\" y2=\"58.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"91.2\" x2=\"302.8\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"91.2\" x2=\"289.2\" y2=\"104.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"137.2\" x2=\"302.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"137.2\" x2=\"289.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"296\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"289.2\" y1=\"183.2\" x2=\"302.8\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"302.8\" y1=\"183.2\" x2=\"289.2\" y2=\"196.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"190\" cy=\"120\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"190\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><line x1=\"162\" y1=\"120\" x2=\"108\" y2=\"120\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"108.0,120.0 118.0,126.0 118.0,114.0\" fill=\"#A23B2A\"/><text x=\"135.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Vilken riktning har Lorentzkraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad nedåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ D (nedåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15361,7 +15572,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En proton rör sig nedåt i ett homogent fält in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"49.2\" x2=\"80.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"49.2\" x2=\"67.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"93.2\" x2=\"80.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"93.2\" x2=\"67.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"137.2\" x2=\"80.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"137.2\" x2=\"67.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"181.2\" x2=\"80.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"181.2\" x2=\"67.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"49.2\" x2=\"136.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"49.2\" x2=\"123.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"93.2\" x2=\"136.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"93.2\" x2=\"123.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"137.2\" x2=\"136.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"137.2\" x2=\"123.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"181.2\" x2=\"136.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"181.2\" x2=\"123.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"49.2\" x2=\"192.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"49.2\" x2=\"179.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"93.2\" x2=\"192.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"93.2\" x2=\"179.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"137.2\" x2=\"192.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"137.2\" x2=\"179.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"181.2\" x2=\"192.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"181.2\" x2=\"179.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"49.2\" x2=\"248.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"49.2\" x2=\"235.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"93.2\" x2=\"248.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"93.2\" x2=\"235.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"137.2\" x2=\"248.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"137.2\" x2=\"235.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"181.2\" x2=\"248.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"181.2\" x2=\"235.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"49.2\" x2=\"304.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"49.2\" x2=\"291.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"93.2\" x2=\"304.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"93.2\" x2=\"291.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"137.2\" x2=\"304.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"137.2\" x2=\"291.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"181.2\" x2=\"304.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"181.2\" x2=\"291.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><line x1=\"176\" y1=\"144\" x2=\"176\" y2=\"198\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"176.0,198.0 182.0,188.0 170.0,188.0\" fill=\"#A23B2A\"/><text x=\"190.0\" y=\"171.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Bestäm den magnetiska kraftens riktning.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad höger.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ A (höger).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15383,7 +15594,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En elektron rör sig åt höger i ett fält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"74\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"74\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"130\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"186\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"186\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"242\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"242\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"64\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"112\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"298\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"298\" cy=\"160\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><line x1=\"204\" y1=\"116\" x2=\"258\" y2=\"116\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"258.0,116.0 248.0,110.0 248.0,122.0\" fill=\"#A23B2A\"/><text x=\"231.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>I vilken riktning verkar kraften på elektronen?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15405,7 +15616,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(2/0/0)",
     "t": "<p>En negativ jon rör sig uppåt i ett magnetfält ut ur pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"88\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"88\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"88\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"140\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"192\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"192\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"244\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"52\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"52\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"98\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"98\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"144\" r=\"4.8\" fill=\"#2A5D9E\"/><circle cx=\"296\" cy=\"190\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"296\" cy=\"190\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"190\" cy=\"120\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"190\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><line x1=\"190\" y1=\"92\" x2=\"190\" y2=\"38\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"190.0,38.0 184.0,48.0 196.0,48.0\" fill=\"#A23B2A\"/><text x=\"204.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Hur blir den första avböjningen?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15427,7 +15638,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En elektron rör sig åt vänster medan magnetfältet pekar in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"49.2\" x2=\"80.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"49.2\" x2=\"67.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"93.2\" x2=\"80.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"93.2\" x2=\"67.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"137.2\" x2=\"80.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"137.2\" x2=\"67.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"181.2\" x2=\"80.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"181.2\" x2=\"67.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"49.2\" x2=\"136.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"49.2\" x2=\"123.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"93.2\" x2=\"136.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"93.2\" x2=\"123.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"137.2\" x2=\"136.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"137.2\" x2=\"123.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"181.2\" x2=\"136.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"181.2\" x2=\"123.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"49.2\" x2=\"192.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"49.2\" x2=\"179.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"93.2\" x2=\"192.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"93.2\" x2=\"179.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"137.2\" x2=\"192.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"137.2\" x2=\"179.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"181.2\" x2=\"192.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"181.2\" x2=\"179.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"49.2\" x2=\"248.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"49.2\" x2=\"235.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"93.2\" x2=\"248.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"93.2\" x2=\"235.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"137.2\" x2=\"248.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"137.2\" x2=\"235.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"181.2\" x2=\"248.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"181.2\" x2=\"235.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"56\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"49.2\" x2=\"304.8\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"49.2\" x2=\"291.2\" y2=\"62.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"100\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"93.2\" x2=\"304.8\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"93.2\" x2=\"291.2\" y2=\"106.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"144\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"137.2\" x2=\"304.8\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"137.2\" x2=\"291.2\" y2=\"150.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"188\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"181.2\" x2=\"304.8\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"181.2\" x2=\"291.2\" y2=\"194.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><line x1=\"148\" y1=\"116\" x2=\"94\" y2=\"116\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"94.0,116.0 104.0,122.0 104.0,110.0\" fill=\"#A23B2A\"/><text x=\"121.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Vilken riktning har den magnetiska kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15449,7 +15660,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En β⁻-partikel rör sig nedåt i ett homogent fält in i pappret.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><circle cx=\"74\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"57.2\" x2=\"80.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"57.2\" x2=\"67.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"105.2\" x2=\"80.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"105.2\" x2=\"67.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"74\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"67.2\" y1=\"153.2\" x2=\"80.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"80.8\" y1=\"153.2\" x2=\"67.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"57.2\" x2=\"136.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"57.2\" x2=\"123.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"105.2\" x2=\"136.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"105.2\" x2=\"123.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"130\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"123.2\" y1=\"153.2\" x2=\"136.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"136.8\" y1=\"153.2\" x2=\"123.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"57.2\" x2=\"192.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"57.2\" x2=\"179.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"105.2\" x2=\"192.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"105.2\" x2=\"179.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"186\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"179.2\" y1=\"153.2\" x2=\"192.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"192.8\" y1=\"153.2\" x2=\"179.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"57.2\" x2=\"248.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"57.2\" x2=\"235.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"105.2\" x2=\"248.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"105.2\" x2=\"235.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"242\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"235.2\" y1=\"153.2\" x2=\"248.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"248.8\" y1=\"153.2\" x2=\"235.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"64\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"57.2\" x2=\"304.8\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"57.2\" x2=\"291.2\" y2=\"70.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"112\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"105.2\" x2=\"304.8\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"105.2\" x2=\"291.2\" y2=\"118.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><circle cx=\"298\" cy=\"160\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"291.2\" y1=\"153.2\" x2=\"304.8\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"304.8\" y1=\"153.2\" x2=\"291.2\" y2=\"166.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><line x1=\"176\" y1=\"144\" x2=\"176\" y2=\"198\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"176.0,198.0 182.0,188.0 170.0,188.0\" fill=\"#A23B2A\"/><text x=\"190.0\" y=\"171.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Bestäm kraftens riktning.</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15471,7 +15682,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En positivt laddad partikel rör sig ut ur pappret i ett magnetfält åt höger.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"76\" y1=\"64\" x2=\"304\" y2=\"64\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,64.0 294.0,58.0 294.0,70.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"108\" x2=\"304\" y2=\"108\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,108.0 294.0,102.0 294.0,114.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"152\" x2=\"304\" y2=\"152\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,152.0 294.0,146.0 294.0,158.0\" fill=\"#94A3B8\"/><line x1=\"76\" y1=\"196\" x2=\"304\" y2=\"196\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"304.0,196.0 294.0,190.0 294.0,202.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"190\" cy=\"120\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"190\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><circle cx=\"244\" cy=\"120\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><circle cx=\"244\" cy=\"120\" r=\"4.8\" fill=\"#2A5D9E\"/><text x=\"262\" y=\"110\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Åt vilket håll verkar kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad uppåt.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ C (uppåt).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15493,7 +15704,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En negativt laddad partikel rör sig in i pappret i ett magnetfält uppåt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"84\" y1=\"188\" x2=\"84\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"84.0,52.0 78.0,62.0 90.0,62.0\" fill=\"#94A3B8\"/><line x1=\"140\" y1=\"188\" x2=\"140\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"140.0,52.0 134.0,62.0 146.0,62.0\" fill=\"#94A3B8\"/><line x1=\"196\" y1=\"188\" x2=\"196\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"196.0,52.0 190.0,62.0 202.0,62.0\" fill=\"#94A3B8\"/><line x1=\"252\" y1=\"188\" x2=\"252\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"252.0,52.0 246.0,62.0 258.0,62.0\" fill=\"#94A3B8\"/><line x1=\"308\" y1=\"188\" x2=\"308\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"308.0,52.0 302.0,62.0 314.0,62.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><circle cx=\"230\" cy=\"116\" r=\"13\" fill=\"#fff\" stroke=\"#2B2527\" stroke-width=\"2.4\"/><line x1=\"223.2\" y1=\"109.2\" x2=\"236.8\" y2=\"122.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><line x1=\"236.8\" y1=\"109.2\" x2=\"223.2\" y2=\"122.8\" stroke=\"#A23B2A\" stroke-width=\"2.8\"/><text x=\"248\" y=\"106\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2B2527\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Vilken riktning får Lorentzkraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ B (vänster).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15515,7 +15726,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En proton rör sig åt höger i ett magnetfält uppåt.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"100\" y1=\"188\" x2=\"100\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"100.0,52.0 94.0,62.0 106.0,62.0\" fill=\"#94A3B8\"/><line x1=\"160\" y1=\"188\" x2=\"160\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"160.0,52.0 154.0,62.0 166.0,62.0\" fill=\"#94A3B8\"/><line x1=\"220\" y1=\"188\" x2=\"220\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"220.0,52.0 214.0,62.0 226.0,62.0\" fill=\"#94A3B8\"/><line x1=\"280\" y1=\"188\" x2=\"280\" y2=\"52\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"280.0,52.0 274.0,62.0 286.0,62.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"176\" cy=\"116\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"176\" y=\"123\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">+</text><line x1=\"204\" y1=\"116\" x2=\"258\" y2=\"116\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"258.0,116.0 248.0,110.0 248.0,122.0\" fill=\"#A23B2A\"/><text x=\"231.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>I vilken riktning påverkas protonen?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>För en positiv laddning gäller att kraftens riktning fås direkt av \\(\\vec F=q\\,\\vec v\\times\\vec B\\) och högerhandsregeln. Här blir kraften riktad ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15537,7 +15748,7 @@ window.BANK2 = [
     "typ": "avgöra Lorentzkraftens riktning",
     "poang": "(1/2/0)",
     "t": "<p>En elektron rör sig nedåt i ett magnetfält åt vänster.</p><span class=\"fig smal\"><svg viewBox=\"0 0 360 230\" width=\"420\" height=\"268\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\"><title>Laddad partikel i magnetfält</title><rect x=\"10\" y=\"10\" width=\"340\" height=\"210\" rx=\"14\" fill=\"#fff\" stroke=\"#E5E7EB\"/><line x1=\"304\" y1=\"64\" x2=\"76\" y2=\"64\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,64.0 86.0,70.0 86.0,58.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"108\" x2=\"76\" y2=\"108\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,108.0 86.0,114.0 86.0,102.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"152\" x2=\"76\" y2=\"152\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,152.0 86.0,158.0 86.0,146.0\" fill=\"#94A3B8\"/><line x1=\"304\" y1=\"196\" x2=\"76\" y2=\"196\" stroke=\"#94A3B8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"76.0,196.0 86.0,202.0 86.0,190.0\" fill=\"#94A3B8\"/><text x=\"40\" y=\"34\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#2563EB\">B</text><circle cx=\"190\" cy=\"120\" r=\"28\" fill=\"#FFF7ED\" stroke=\"#C2410C\" stroke-width=\"2.6\"/><text x=\"190\" y=\"127\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"24\" font-weight=\"700\" fill=\"#C2410C\">−</text><line x1=\"190\" y1=\"148\" x2=\"190\" y2=\"202\" stroke=\"#A23B2A\" stroke-width=\"3.3\" stroke-linecap=\"round\"/><polygon points=\"190.0,202.0 196.0,192.0 184.0,192.0\" fill=\"#A23B2A\"/><text x=\"204.0\" y=\"175.0\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, Arial, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#A23B2A\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4\">v</text></svg></span><p>Åt vilket håll pekar kraften?</p><p><strong>A</strong> höger, <strong>B</strong> vänster, <strong>C</strong> uppåt, <strong>D</strong> nedåt, <strong>E</strong> in i pappret, <strong>F</strong> ut ur pappret.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd sambandet för Lorentzkraften på en laddad partikel.</p><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
+    "s": "<div class=\"facit-v2\"><p>Beräkna först riktningen på \\(\\vec v\\times\\vec B\\) med högerhandsregeln. Eftersom laddningen är negativ blir kraften motsatt riktning. Här blir den därför ut ur pappret.</p><p class=\"facit-svar\"><strong>Svar:</strong> Alternativ F (ut ur pappret).</p></div>",
     "familj": "Riktningsfrågor: kraft på laddad partikel",
     "familjNyckel": "laddade_partiklar__riktningsfragor_kraft_pa_laddad_partikel",
     "formaga": [
@@ -15605,12 +15816,13 @@ window.BANK2 = [
       "problemlösning",
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag"
+    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.68",
@@ -15620,9 +15832,9 @@ window.BANK2 = [
     "typ": "beräkna intensitetsmaximum med Wiens lag",
     "poang": "(2/0/0)",
     "t": "<p>En stjärna kan approximeras som en svartkropp med yttemperaturen 4500 K.</p><p>Vid vilken våglängd ligger intensitetsmaximum?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Wiens förskjutningslag är \\(\\lambda_\\max T=2{,}90\\cdot10^{-3}\\,\\mathrm{m\\,K}\\).</p><div class=\"facit-matte\">\\[\\lambda_\\max=\\frac{2{,}90\\cdot10^{-3}}{4500}=6.44e-07\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Maximum ligger vid cirka \\(644,4\\ \\mathrm{nm}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Wiens förskjutningslag är \\(\\lambda_\\max T=2{,}90\\cdot10^{-3}\\,\\mathrm{m\\,K}\\).</p><div class=\"facit-matte\">\\[\\lambda_\\max=\\frac{2{,}90\\cdot10^{-3}}{4500}=6{,}44\\cdot10^{-7}\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Maximum ligger vid cirka \\(644,4\\ \\mathrm{nm}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "formaga": [
       "procedur"
     ],
@@ -15632,7 +15844,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "nm",
-    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag"
+    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.69",
@@ -15642,9 +15855,9 @@ window.BANK2 = [
     "typ": "beräkna intensitetsmaximum med Wiens lag",
     "poang": "(2/0/0)",
     "t": "<p>En stjärna kan approximeras som en svartkropp med yttemperaturen 7200 K.</p><p>Vid vilken våglängd ligger intensitetsmaximum?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Wiens förskjutningslag är \\(\\lambda_\\max T=2{,}90\\cdot10^{-3}\\,\\mathrm{m\\,K}\\).</p><div class=\"facit-matte\">\\[\\lambda_\\max=\\frac{2{,}90\\cdot10^{-3}}{7200}=4.03e-07\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Maximum ligger vid cirka \\(402,8\\ \\mathrm{nm}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Wiens förskjutningslag är \\(\\lambda_\\max T=2{,}90\\cdot10^{-3}\\,\\mathrm{m\\,K}\\).</p><div class=\"facit-matte\">\\[\\lambda_\\max=\\frac{2{,}90\\cdot10^{-3}}{7200}=4{,}03\\cdot10^{-7}\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Maximum ligger vid cirka \\(402,8\\ \\mathrm{nm}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "formaga": [
       "procedur"
     ],
@@ -15654,7 +15867,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "nm",
-    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag"
+    "familjNyckelTidigare": "temperaturstralning__wiens_forskjutningslag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.70",
@@ -15664,9 +15878,9 @@ window.BANK2 = [
     "typ": "beräkna utstrålad effekt per area från svartkropp",
     "poang": "(2/0/0)",
     "t": "<p>En svartkropp har temperaturen 3500 K.</p><p>Hur stor effekt strålar varje kvadratmeter av ytan ut? Använd σ = 5,67·10⁻⁸ W/(m²K⁴).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Stefan–Boltzmanns lag per ytenhet är \\(P/A=\\sigma T^4\\).</p><div class=\"facit-matte\">\\[\\frac{P}{A}=5{,}67\\cdot10^{-8}\\cdot3500^4=8.51e+06\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utstrålningen är cirka \\(8.51e+06\\ \\mathrm{W/m^2}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Stefan–Boltzmanns lag per ytenhet är \\(P/A=\\sigma T^4\\).</p><div class=\"facit-matte\">\\[\\frac{P}{A}=5{,}67\\cdot10^{-8}\\cdot3500^4=8{,}51\\cdot10^{6}\\ \\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Utstrålningen är cirka \\(8{,}51\\cdot10^{6}\\ \\mathrm{W/m^2}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "formaga": [
       "procedur"
     ],
@@ -15676,7 +15890,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "W/m²",
-    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag"
+    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.71",
@@ -15688,7 +15903,7 @@ window.BANK2 = [
     "t": "<p>Två stjärnor har samma radie men yttemperaturerna 4000 K respektive 6000 K.</p><p>Hur många gånger större total effekt strålar den varmare stjärnan ut?</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid samma radie är arean lika och Stefan–Boltzmann ger \\(P\\propto T^4\\).</p><div class=\"facit-matte\">\\[\\frac{P_2}{P_1}=\\left(\\frac{6000}{4000}\\right)^4=5.062\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Den varmare stjärnan strålar ut cirka \\(5,062\\) gånger större effekt.</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "formaga": [
       "begrepp",
       "procedur"
@@ -15699,7 +15914,8 @@ window.BANK2 = [
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": null,
-    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag"
+    "familjNyckelTidigare": "temperaturstralning__stefan_boltzmanns_lag",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.60",
@@ -15729,7 +15945,7 @@ window.BANK2 = [
     "typ": "beräkna fotonenergi från våglängd",
     "poang": "(2/0/0)",
     "t": "<p>En foton har våglängden 450 nm.</p><p>Bestäm fotonens energi i eV.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{450\\cdot10^{-9}}=4.42e-19\\ \\mathrm J\\]\\[E=2.757\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(2,757\\ \\mathrm{eV}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{450\\cdot10^{-9}}=4{,}42\\cdot10^{-19}\\ \\mathrm J\\]\\[E=2.757\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(2,757\\ \\mathrm{eV}\\).</p></div>",
     "familj": "Fotonenergi",
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "formaga": [
@@ -15750,7 +15966,7 @@ window.BANK2 = [
     "typ": "beräkna fotonenergi från våglängd",
     "poang": "(2/0/0)",
     "t": "<p>En foton har våglängden 650 nm.</p><p>Bestäm fotonens energi i eV.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{650\\cdot10^{-9}}=3.06e-19\\ \\mathrm J\\]\\[E=1.909\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(1,909\\ \\mathrm{eV}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{650\\cdot10^{-9}}=3{,}06\\cdot10^{-19}\\ \\mathrm J\\]\\[E=1.909\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(1,909\\ \\mathrm{eV}\\).</p></div>",
     "familj": "Fotonenergi",
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "formaga": [
@@ -15771,7 +15987,7 @@ window.BANK2 = [
     "typ": "beräkna fotonenergi från våglängd",
     "poang": "(1/2/0)",
     "t": "<p>En foton har våglängden 250 nm.</p><p>Bestäm fotonens energi i eV.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{250\\cdot10^{-9}}=7.95e-19\\ \\mathrm J\\]\\[E=4.963\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(4,963\\ \\mathrm{eV}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(E=hc/\\lambda\\) och omvandla joule till eV.</p><div class=\"facit-matte\">\\[E=\\frac{6{,}626\\cdot10^{-34}\\cdot3{,}00\\cdot10^8}{250\\cdot10^{-9}}=7{,}95\\cdot10^{-19}\\ \\mathrm J\\]\\[E=4.963\\ \\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Fotonenergin är cirka \\(4,963\\ \\mathrm{eV}\\).</p></div>",
     "familj": "Fotonenergi",
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "formaga": [
@@ -15792,7 +16008,7 @@ window.BANK2 = [
     "typ": "bestäm fotonvåglängd från energi",
     "poang": "(1/2/0)",
     "t": "<p>En foton har energin 3,1 eV.</p><p>Bestäm våglängden i nm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Omvandla först eV till joule och använd sedan \\(\\lambda=hc/E\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{hc}{E}=4e-07\\ \\mathrm m=400.3\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är cirka \\(400,3\\ \\mathrm{nm}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Omvandla först eV till joule och använd sedan \\(\\lambda=hc/E\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{hc}{E}=4\\cdot10^{-7}\\ \\mathrm m=400.3\\ \\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Våglängden är cirka \\(400,3\\ \\mathrm{nm}\\).</p></div>",
     "familj": "Fotonenergi",
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "formaga": [
@@ -15833,7 +16049,7 @@ window.BANK2 = [
     "typ": "bestäm galaxavstånd med Hubbles lag",
     "poang": "(2/0/0)",
     "t": "<p>En galax har recessionsfarten 3500 km/s. Använd \\(H_0=70\\,\\mathrm{km/(s\\cdot Mpc)}\\).</p><p>Uppskatta avståndet till galaxen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\). Lös ut d.</p><div class=\"facit-matte\">\\[d=\\frac{v}{H_0}=\\frac{3500}{70}=50.0\\ \\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(50\\ \\mathrm{Mpc}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) säger att recessionsfarten är proportionell mot avståndet. När farten är given löses därför \\(d=v/H_0\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\). Lös ut d.</p><div class=\"facit-matte\">\\[d=\\frac{v}{H_0}=\\frac{3500}{70}=50.0\\ \\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(50\\ \\mathrm{Mpc}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "formaga": [
@@ -15855,7 +16071,7 @@ window.BANK2 = [
     "typ": "bestäm galaxavstånd med Hubbles lag",
     "poang": "(2/0/0)",
     "t": "<p>En galax har recessionsfarten 14000 km/s. Använd \\(H_0=70\\,\\mathrm{km/(s\\cdot Mpc)}\\).</p><p>Uppskatta avståndet till galaxen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\). Lös ut d.</p><div class=\"facit-matte\">\\[d=\\frac{v}{H_0}=\\frac{14000}{70}=200.0\\ \\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(200\\ \\mathrm{Mpc}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) säger att recessionsfarten är proportionell mot avståndet. När farten är given löses därför \\(d=v/H_0\\).</p><div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\). Lös ut d.</p><div class=\"facit-matte\">\\[d=\\frac{v}{H_0}=\\frac{14000}{70}=200.0\\ \\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(200\\ \\mathrm{Mpc}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "formaga": [
@@ -15877,7 +16093,7 @@ window.BANK2 = [
     "typ": "bestäm recessionsfart med Hubbles lag",
     "poang": "(1/2/0)",
     "t": "<p>En galax uppskattas ligga 180 Mpc bort. Använd H₀ = 70 km/(s·Mpc).</p><p>Vilken recessionsfart förutsäger Hubbles lag?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot180=12600\\ \\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är cirka \\(12600\\ \\mathrm{km/s}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot180=12600\\ \\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Farten är cirka \\(12600\\ \\mathrm{km/s}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "formaga": [
@@ -15942,7 +16158,7 @@ window.BANK2 = [
     "typ": "bestäm stjärnavstånd med avståndsmodul",
     "poang": "(1/2/0)",
     "t": "<p>En stjärna har apparent magnitud \\(m=15\\) och absolut magnitud \\(M=0\\).</p><p>Bestäm avståndet i parsec. Använd \\(m-M=5\\log_{10}(d/10\\,\\mathrm{pc})\\).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in magnituderna i avståndsmodulen och lös ut d.</p><div class=\"facit-matte\">\\[15=5\\log_{10}(d/10)\\]\\[d=10000.0\\ \\mathrm{pc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(1e+04\\ \\mathrm{pc}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in magnituderna i avståndsmodulen och lös ut d.</p><div class=\"facit-matte\">\\[15=5\\log_{10}(d/10)\\]\\[d=10000.0\\ \\mathrm{pc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet är cirka \\(1\\cdot10^{4}\\ \\mathrm{pc}\\).</p></div>",
     "familj": "Astronomisk avståndsmätning",
     "familjNyckel": "avstandsmatning__astronomisk_avstandsmatning",
     "formaga": [
@@ -16214,17 +16430,19 @@ window.BANK2 = [
     "poang": "(0/2/2)",
     "t": "<p>En orgelpipa som är öppen i båda ändar har grundtonen 262 Hz. Ljudhastigheten är 340 m/s.</p><p><strong>a)</strong> Bestäm pipans längd.</p><p><strong>b)</strong> Pipan täpps till i ena änden utan att längden ändras. Bestäm den nya grundtonen och de två närmast följande resonanserna.</p><p><strong>c)</strong> Vilken av de två pipmodellerna låter mörkast, och vad skiljer klangen åt? Motivera utifrån dina resultat.</p>",
     "s": "<div class=\"facit-v2\"><div class=\"facit-del\"><span class=\"facit-mark\">a</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I en öppen pipa ryms en halv våglängd i grundtonen.</p><div class=\"facit-matte\">\\[L=\\frac{v}{2f_1}=\\frac{340}{2\\cdot262}=0{,}649\\ \\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Pipan är \\(0{,}649\\ \\mathrm m\\) lång.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b</span><div class=\"facit-arbete\"><p class=\"facit-metod\">I en halvöppen pipa ryms en fjärdedels våglängd i grundtonen, och bara udda multiplar av grundtonen är möjliga.</p><div class=\"facit-matte\">\\[f_1=\\frac{v}{4L}=\\frac{340}{4\\cdot0{,}649}=131\\ \\mathrm{Hz}\\]\\[f_3=3f_1=393\\ \\mathrm{Hz},\\qquad f_5=5f_1=655\\ \\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Grundtonen halveras till \\(131\\ \\mathrm{Hz}\\). De två följande resonanserna är \\(393\\ \\mathrm{Hz}\\) och \\(655\\ \\mathrm{Hz}\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c</span><div class=\"facit-arbete\"><p>Den täppta pipan låter mörkast. Dess grundton är hälften så hög, alltså en oktav lägre, trots att pipan är exakt lika lång. Klangen skiljer sig också: den öppna pipan ger alla övertoner (262, 524, 786 Hz …), medan den täppta bara ger de udda (131, 393, 655 Hz …). Att varannan överton saknas ger den täppta pipan en ihåligare, mjukare klang.</p><p class=\"facit-svar\"><strong>Svar:</strong> Den täppta pipan låter en oktav lägre och saknar de jämna övertonerna, vilket ger en ihåligare klang.</p></div></div><p class=\"facit-not\">När ena änden täpps till ändras randvillkoren: grundfrekvensen halveras och endast udda harmoniska resonanser återstår.</p></div>",
-    "familj": "Ljudvågor: fart, grundton och övertoner",
+    "familj": "Ljudvågors fart, grundton och övertoner",
     "formaga": [
       "problemlösning",
       "resonemang"
     ],
-    "familjNyckel": "ljudvagor__ljudvagor_fart_grundton_och_overtoner",
+    "familjNyckel": "ljudvagor__ljudvagors_fart_grundton_och_overtoner",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
     "självrättning": false,
-    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner"
+    "familjNyckelTidigare": "ljudvagor__grundton_och_overtoner",
+    "familjTidigare": "Ljudvågor: fart, grundton och övertoner",
+    "familjNyckelFöreHierarki": "ljudvagor__ljudvagor_fart_grundton_och_overtoner"
   },
   {
     "id": "6.56",
@@ -16303,11 +16521,12 @@ window.BANK2 = [
       "problemlösning",
       "resonemang"
     ],
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "svarstyp": "manuell",
     "rättSvar": null,
     "tolerans": null,
-    "självrättning": false
+    "självrättning": false,
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.65",
@@ -16317,9 +16536,9 @@ window.BANK2 = [
     "typ": "beräkna viloenergi från massa",
     "poang": "(2/0/0)",
     "t": "<p>En massa på 2,0 mg omvandlas fullständigt till energi.</p><p>Hur mycket energi motsvarar massan?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Einsteins samband \\(E=mc^2\\). 2,0 mg = 2,0·10⁻⁶ kg.</p><div class=\"facit-matte\">\\[E=2{,}0\\cdot10^{-6}(3{,}00\\cdot10^8)^2=1.8e+11\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är \\(180\\ \\mathrm{GJ}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Einsteins samband \\(E=mc^2\\). 2,0 mg = 2,0·10⁻⁶ kg.</p><div class=\"facit-matte\">\\[E=2{,}0\\cdot10^{-6}(3{,}00\\cdot10^8)^2=1{,}8\\cdot10^{11}\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är \\(180\\ \\mathrm{GJ}\\).</p></div>",
     "familj": "Massa–energi-ekvivalens",
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "formaga": [
       "procedur"
     ],
@@ -16328,7 +16547,8 @@ window.BANK2 = [
     "tolerans": 0.01,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "GJ"
+    "svarEnhet": "GJ",
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
   {
     "id": "6.67",
@@ -16338,9 +16558,9 @@ window.BANK2 = [
     "typ": "beräkna energi från massdefekt",
     "poang": "(1/2/0)",
     "t": "<p>I en kärnreaktion minskar den sammanlagda massan med 5,0·10⁻¹² kg.</p><p>Hur mycket energi frigörs?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Massdefekten omvandlas till energi enligt \\(E=\\Delta mc^2\\).</p><div class=\"facit-matte\">\\[E=5{,}0\\cdot10^{-12}(3{,}00\\cdot10^8)^2=4.5e+05\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(450\\ \\mathrm{kJ}\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Massdefekten omvandlas till energi enligt \\(E=\\Delta mc^2\\).</p><div class=\"facit-matte\">\\[E=5{,}0\\cdot10^{-12}(3{,}00\\cdot10^8)^2=4{,}5\\cdot10^{5}\\ \\mathrm J\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Energin är cirka \\(450\\ \\mathrm{kJ}\\).</p></div>",
     "familj": "Massa–energi-ekvivalens",
-    "familjNyckel": "massa_och_energi__massa_energi_ekvivalens",
+    "familjNyckel": "massa_och_energi__massaenergi_ekvivalens",
     "formaga": [
       "procedur"
     ],
@@ -16349,1180 +16569,1183 @@ window.BANK2 = [
     "tolerans": 0.5,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "kJ"
+    "svarEnhet": "kJ",
+    "familjNyckelFöreHierarki": "massa_och_energi__massa_energi_ekvivalens"
   },
-{
-  "id": "4.301",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Ljus går från luft till vatten med brytningsindex 1,33. Infallsvinkeln är 40°.</p><p>Bestäm brytningsvinkeln.</p>",
-  "s": "<p><strong>Metod:</strong> Snells lag ger \\(n_1\\sin i=n_2\\sin r\\).</p><p>\\[\\sin r=\\frac{\\sin40^\\circ}{1{,}33}\\Rightarrow r\\approx28{,}9^\\circ\\]</p><p><strong>Svar:</strong> Cirka 29°.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 28.9,
-  "tolerans": 0.7,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "°",
-  "miniräknare": true
-},
-{
-  "id": "4.302",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Ljus går från vatten, \\(n=1{,}33\\), till luft. Infallsvinkeln i vattnet är 30°.</p><p>Bestäm brytningsvinkeln i luften.</p>",
-  "s": "<p>\\[1{,}33\\sin30^\\circ=1{,}00\\sin r\\Rightarrow r\\approx41{,}7^\\circ\\]</p><p><strong>Svar:</strong> Cirka 42°.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 41.7,
-  "tolerans": 0.8,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "°",
-  "miniräknare": true
-},
-{
-  "id": "4.303",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Glas har brytningsindex 1,50. Bestäm gränsvinkeln för totalreflektion när ljus går från glas till luft.</p>",
-  "s": "<p><strong>Metod:</strong> Vid gränsvinkeln är brytningsvinkeln 90°.</p><p>\\[\\sin i_g=\\frac{1{,}00}{1{,}50}\\Rightarrow i_g\\approx41{,}8^\\circ\\]</p><p><strong>Svar:</strong> Cirka 42°.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "procedur",
-    "begrepp"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 41.8,
-  "tolerans": 0.8,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "°",
-  "miniräknare": true
-},
-{
-  "id": "4.304",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Ljus går från luft in i ett genomskinligt material. Infallsvinkeln är 45° och brytningsvinkeln 28°.</p><p>Bestäm materialets brytningsindex.</p>",
-  "s": "<p>\\[n=\\frac{\\sin45^\\circ}{\\sin28^\\circ}\\approx1{,}51\\]</p><p><strong>Svar:</strong> \\(n\\approx1{,}51\\).</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1.51,
-  "tolerans": 0.03,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": true
-},
-{
-  "id": "4.305",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En ljusstråle går från luft in i glas. Vilket påstående är korrekt?</p><p>A. Strålen bryts från normalen.<br>B. Strålen bryts mot normalen.<br>C. Strålen ändrar inte riktning oavsett infallsvinkel.<br>D. Totalreflektion sker alltid.</p>",
-  "s": "<p>Glas har större brytningsindex än luft. När ljus går in i ett medium med större brytningsindex bryts strålen <strong>mot normalen</strong>.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "4.306",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Ljus går från glas med \\(n=1{,}50\\) till vatten med \\(n=1{,}33\\). Infallsvinkeln i glaset är 35°.</p><p>Bestäm brytningsvinkeln i vattnet.</p>",
-  "s": "<p>\\[1{,}50\\sin35^\\circ=1{,}33\\sin r\\Rightarrow r\\approx40{,}3^\\circ\\]</p><p><strong>Svar:</strong> Cirka 40°.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 40.3,
-  "tolerans": 0.8,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "°",
-  "miniräknare": true
-},
-{
-  "id": "4.307",
-  "kap": 4,
-  "omr": "straloptik",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En stråle går från glas mot luft med en infallsvinkel som är större än gränsvinkeln.</p><p>Vad händer?</p><p>A. Strålen bryts mot normalen.<br>B. Strålen går rakt fram.<br>C. Totalreflektion sker.<br>D. Ljuset stannar i gränsytan.</p>",
-  "s": "<p>När ljus går från större till mindre brytningsindex och infallsvinkeln överstiger gränsvinkeln sker <strong>totalreflektion</strong>.</p><p><strong>Svar:</strong> C.</p>",
-  "familj": "Snells lag och brytning",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "straloptik__snells_lag_och_brytning",
-  "svarstyp": "val",
-  "rättSvar": "C",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "4.308",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>I väteatomen gäller \\(E_n=-13{,}6/n^2\\) eV. Bestäm energin för nivån \\(n=4\\).</p>",
-  "s": "<p>\\[E_4=-\\frac{13{,}6}{16}=-0{,}85\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> −0,85 eV.</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "numeriskt",
-  "rättSvar": -0.85,
-  "tolerans": 0.02,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "eV"
-},
-{
-  "id": "4.309",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En elektron i väte går från \\(n=3\\) till \\(n=2\\). Hur stor energi har den foton som avges?</p>",
-  "s": "<p>\\[E_3=-1{,}51\\ \\mathrm{eV},\\quad E_2=-3{,}40\\ \\mathrm{eV}\\]</p><p>Fotonenergin är skillnaden: \\(1{,}89\\) eV.</p><p><strong>Svar:</strong> 1,89 eV.</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1.89,
-  "tolerans": 0.03,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "eV"
-},
-{
-  "id": "4.310",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Hur mycket energi krävs för att jonisera en väteatom vars elektron befinner sig på nivån \\(n=2\\)?</p>",
-  "s": "<p>På \\(n=2\\) är energin −3,40 eV. Jonisationsgränsen är 0 eV.</p><p><strong>Svar:</strong> Det krävs 3,40 eV.</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "begrepp",
-    "procedur"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "numeriskt",
-  "rättSvar": 3.4,
-  "tolerans": 0.05,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "eV"
-},
-{
-  "id": "4.311",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En väteatom absorberar en foton och elektronen går från \\(n=2\\) till \\(n=4\\). Bestäm fotonens energi.</p>",
-  "s": "<p>\\[E_2=-3{,}40\\ \\mathrm{eV},\\quad E_4=-0{,}85\\ \\mathrm{eV}\\]</p><p>\\[E_\\gamma=E_4-E_2=2{,}55\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> 2,55 eV.</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "numeriskt",
-  "rättSvar": 2.55,
-  "tolerans": 0.04,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "eV"
-},
-{
-  "id": "4.312",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En väteelektron har energin −0,85 eV. Vilket huvudkvanttal \\(n\\) motsvarar detta i Bohrs modell?</p>",
-  "s": "<p>\\[-0{,}85=-13{,}6/n^2\\Rightarrow n^2=16\\Rightarrow n=4\\]</p><p><strong>Svar:</strong> \\(n=4\\).</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "numeriskt",
-  "rättSvar": 4,
-  "tolerans": 0,
-  "självrättning": true,
-  "svarFormat": "numeriskt"
-},
-{
-  "id": "4.313",
-  "kap": 4,
-  "omr": "atomstruktur",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilken övergång i väte ger en foton med störst energi?</p><p>A. \\(n=3\\to2\\)<br>B. \\(n=2\\to1\\)<br>C. \\(n=4\\to3\\)<br>D. \\(n=5\\to4\\)</p>",
-  "s": "<p>Fotonenergin är skillnaden mellan energinivåerna. Skillnaden är klart störst för övergången \\(n=2\\to1\\).</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Bohrs atommodell",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "atomstruktur__bohrs_atommodell",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "4.314",
-  "kap": 4,
-  "omr": "em_vagor",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En elektromagnetisk våg i vakuum har frekvensen 3,0 GHz. Bestäm våglängden.</p>",
-  "s": "<p>\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{3{,}0\\cdot10^9}=0{,}100\\ \\mathrm m\\]</p><p><strong>Svar:</strong> 0,10 m.</p>",
-  "familj": "Elektromagnetiska vågor och spektrum",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
-  "svarstyp": "numeriskt",
-  "rättSvar": 0.1,
-  "tolerans": 0.003,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "m",
-  "miniräknare": true
-},
-{
-  "id": "4.315",
-  "kap": 4,
-  "omr": "em_vagor",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En elektromagnetisk våg har våglängden 600 nm i vakuum. Bestäm frekvensen.</p>",
-  "s": "<p>\\[f=\\frac{c}{\\lambda}=\\frac{3{,}00\\cdot10^8}{600\\cdot10^{-9}}=5{,}0\\cdot10^{14}\\ \\mathrm{Hz}\\]</p><p><strong>Svar:</strong> \\(5{,}0\\cdot10^{14}\\) Hz.</p>",
-  "familj": "Elektromagnetiska vågor och spektrum",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
-  "svarstyp": "numeriskt",
-  "rättSvar": 500000000000000.0,
-  "tolerans": 10000000000000.0,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "Hz",
-  "miniräknare": true
-},
-{
-  "id": "4.316",
-  "kap": 4,
-  "omr": "em_vagor",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilken ordning går från lägst till högst frekvens?</p><p>A. radio – mikrovåg – infrarött – synligt – ultraviolett<br>B. ultraviolett – synligt – infrarött – mikrovåg – radio<br>C. radio – infrarött – mikrovåg – synligt – ultraviolett<br>D. mikrovåg – radio – synligt – infrarött – ultraviolett</p>",
-  "s": "<p>Frekvensen ökar från radio via mikrovågor och infrarött till synligt och ultraviolett.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Elektromagnetiska vågor och spektrum",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "4.317",
-  "kap": 4,
-  "omr": "em_vagor",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilket påstående om elektromagnetiska vågor i vakuum är korrekt?</p><p>A. Radiovågor går långsammare än synligt ljus.<br>B. Alla elektromagnetiska vågor har samma hastighet i vakuum.<br>C. Gammastrålning går snabbare än ljus.<br>D. Endast synligt ljus kan färdas i vakuum.</p>",
-  "s": "<p>Alla elektromagnetiska vågor färdas med ljushastigheten \\(c\\) i vakuum.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Elektromagnetiska vågor och spektrum",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "4.318",
-  "kap": 4,
-  "omr": "vagrorelselara",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Laserljus med våglängden 500 nm går genom en dubbelspalt med spaltavståndet 0,25 mm. Skärmen står 2,0 m bort.</p><p>Bestäm avståndet mellan närliggande ljusa band nära mitten.</p>",
-  "s": "<p>\\[\\Delta y=\\frac{\\lambda L}{d}=\\frac{500\\cdot10^{-9}\\cdot2{,}0}{0{,}25\\cdot10^{-3}}=0{,}0040\\ \\mathrm m\\]</p><p><strong>Svar:</strong> 4,0 mm.</p>",
-  "familj": "Dubbelspalt och gitter",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
-  "svarstyp": "numeriskt",
-  "rättSvar": 4.0,
-  "tolerans": 0.1,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "mm",
-  "miniräknare": true
-},
-{
-  "id": "4.319",
-  "kap": 4,
-  "omr": "vagrorelselara",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Ett gitter har 500 linjer/mm och belyses med ljus med våglängden 600 nm. Bestäm vinkeln till första ordningens maximum.</p>",
-  "s": "<p>Gitterkonstanten är \\(d=1/(500\\cdot10^3)=2{,}0\\cdot10^{-6}\\) m.</p><p>\\[d\\sin\\theta=\\lambda\\Rightarrow\\sin\\theta=0{,}300\\Rightarrow\\theta\\approx17{,}5^\\circ\\]</p><p><strong>Svar:</strong> Cirka 17,5°.</p>",
-  "familj": "Dubbelspalt och gitter",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
-  "svarstyp": "numeriskt",
-  "rättSvar": 17.5,
-  "tolerans": 0.5,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "°",
-  "miniräknare": true
-},
-{
-  "id": "4.320",
-  "kap": 4,
-  "omr": "vagrorelselara",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Ett gitter har spaltavståndet \\(2{,}0\\,\\mu\\mathrm m\\) och belyses med ljus med våglängden 600 nm.</p><p>Vilken är den högsta möjliga ordningen \\(m\\) för ett maximum?</p>",
-  "s": "<p>För ett maximum gäller \\(m\\lambda=d\\sin\\theta\\), och \\(|\\sin\\theta|\\le1\\). Därför \\(m\\le d/\\lambda=2{,}0/0{,}600=3{,}33\\).</p><p><strong>Svar:</strong> Högsta heltalsordningen är \\(m=3\\).</p>",
-  "familj": "Dubbelspalt och gitter",
-  "formaga": [
-    "begrepp",
-    "procedur"
-  ],
-  "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
-  "svarstyp": "numeriskt",
-  "rättSvar": 3,
-  "tolerans": 0,
-  "självrättning": true,
-  "svarFormat": "numeriskt"
-},
-{
-  "id": "4.321",
-  "kap": 4,
-  "omr": "temperaturstralning",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En stjärna har temperaturen 5800 K. Använd Wiens lag \\(\\lambda_{max}T=2{,}90\\cdot10^{-3}\\ \\mathrm{mK}\\).</p><p>Bestäm våglängden för intensitetsmaximum i nm.</p>",
-  "s": "<p>\\[\\lambda_{max}=\\frac{2{,}90\\cdot10^{-3}}{5800}=5{,}0\\cdot10^{-7}\\ \\mathrm m=500\\ \\mathrm{nm}\\]</p><p><strong>Svar:</strong> Cirka 500 nm.</p>",
-  "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
-  "svarstyp": "numeriskt",
-  "rättSvar": 500,
-  "tolerans": 10,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "nm",
-  "miniräknare": true
-},
-{
-  "id": "4.322",
-  "kap": 4,
-  "omr": "temperaturstralning",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Två svartkroppar har samma area. Kropp B har dubbelt så hög absolut temperatur som kropp A.</p><p>Hur många gånger större effekt strålar B ut?</p>",
-  "s": "<p>Stefan–Boltzmanns lag ger \\(P\\propto T^4\\).</p><p>\\[P_B/P_A=2^4=16\\]</p><p><strong>Svar:</strong> 16 gånger större effekt.</p>",
-  "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
-  "formaga": [
-    "begrepp",
-    "procedur"
-  ],
-  "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
-  "svarstyp": "numeriskt",
-  "rättSvar": 16,
-  "tolerans": 0,
-  "självrättning": true,
-  "svarFormat": "numeriskt"
-},
-{
-  "id": "4.323",
-  "kap": 4,
-  "omr": "ljus_partikelstrom",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Bestäm energin i elektronvolt för en foton med våglängden 620 nm.</p>",
-  "s": "<p>Använd \\(E=hc/\\lambda\\), eller den praktiska relationen \\(E(\\mathrm{eV})\\approx1240/\\lambda(\\mathrm{nm})\\).</p><p>\\[E\\approx1240/620=2{,}00\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> 2,00 eV.</p>",
-  "familj": "Fotonenergi",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "ljus_partikelstrom__fotonenergi",
-  "svarstyp": "numeriskt",
-  "rättSvar": 2.0,
-  "tolerans": 0.04,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "eV",
-  "miniräknare": true
-},
-{
-  "id": "3.301",
-  "kap": 3,
-  "omr": "magnetism",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En lång solenoid är 0,40 m lång, har 800 varv och leder strömmen 1,5 A. Använd \\(B=\\mu_0NI/L\\) och \\(\\mu_0=4\\pi\\cdot10^{-7}\\).</p><p>Bestäm magnetfältet inuti spolen i mT.</p>",
-  "s": "<p>\\[B=4\\pi\\cdot10^{-7}\\frac{800\\cdot1{,}5}{0{,}40}=3{,}77\\cdot10^{-3}\\ \\mathrm T\\]</p><p><strong>Svar:</strong> Cirka 3,77 mT.</p>",
-  "familj": "Magnetfält i spole",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "magnetism__magnetfalt_i_spole",
-  "svarstyp": "numeriskt",
-  "rättSvar": 3.77,
-  "tolerans": 0.08,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "mT",
-  "miniräknare": true
-},
-{
-  "id": "3.302",
-  "kap": 3,
-  "omr": "magnetism",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En solenoid behåller samma längd men får dubbelt så många varv och strömmen halveras.</p><p>Hur ändras magnetfältet inuti spolen?</p><p>A. Halveras<br>B. Oförändrat<br>C. Fördubblas<br>D. Fyrdubblas</p>",
-  "s": "<p>Eftersom \\(B\\propto NI/L\\) ger dubbla \\(N\\) och halva \\(I\\) samma produkt \\(NI\\).</p><p><strong>Svar:</strong> B, fältet är oförändrat.</p>",
-  "familj": "Magnetfält i spole",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "magnetism__magnetfalt_i_spole",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "3.303",
-  "kap": 3,
-  "omr": "vaxelstrom_spole_kondensator",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En ideal LC-krets har \\(L=0{,}20\\ \\mathrm H\\) och \\(C=50\\,\\mu\\mathrm F\\). Bestäm resonansfrekvensen.</p>",
-  "s": "<p>\\[f_0=\\frac{1}{2\\pi\\sqrt{LC}}=\\frac{1}{2\\pi\\sqrt{0{,}20\\cdot50\\cdot10^{-6}}}\\approx50{,}3\\ \\mathrm{Hz}\\]</p><p><strong>Svar:</strong> Cirka 50 Hz.</p>",
-  "familj": "Spole, kondensator och resonans i växelström",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
-  "svarstyp": "numeriskt",
-  "rättSvar": 50.3,
-  "tolerans": 1.0,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "Hz",
-  "miniräknare": true
-},
-{
-  "id": "2.301",
-  "kap": 2,
-  "omr": "extrema_frekvenser",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Ett ljud har frekvensen 15 Hz. Hur klassificeras det?</p><p>A. Infraljud<br>B. Hörbart ljud<br>C. Ultraljud<br>D. Elektromagnetisk strålning</p>",
-  "s": "<p>Människans ungefärliga hörselområde börjar kring 20 Hz. 15 Hz ligger under detta.</p><p><strong>Svar:</strong> A, infraljud.</p>",
-  "familj": "Infraljud och ultraljud",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "extrema_frekvenser__infraljud_och_ultraljud",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "6.301",
-  "kap": 6,
-  "omr": "tid_och_langd",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Ett rymdskepp rör sig med farten \\(0{,}80c\\) relativt jorden. Bestäm Lorentzfaktorn \\(\\gamma=1/\\sqrt{1-v^2/c^2}\\).</p>",
-  "s": "<p>\\[\\gamma=\\frac1{\\sqrt{1-0{,}80^2}}=\\frac1{0{,}60}=1{,}67\\]</p><p><strong>Svar:</strong> \\(\\gamma\\approx1{,}67\\).</p>",
-  "familj": "Rumtid och referenssystem",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "tid_och_langd__rumtid_och_referenssystem",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1.67,
-  "tolerans": 0.03,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": true
-},
-{
-  "id": "5.301",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilket scenario stämmer bäst med observationen att universums expansion accelererar?</p><p>A. Expansionen bromsar in mot stillastående<br>B. Expansionen fortsätter och avlägsna galaxer blir allt mer isolerade<br>C. Alla galaxer börjar snart falla mot Vintergatan<br>D. Universum har redan slutat expandera</p>",
-  "s": "<p>Accelererande expansion innebär i den enklaste moderna modellen att avlägsna galaxer med tiden blir allt mer separerade.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.302",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vad händer med den genomsnittliga materietätheten när universum expanderar?</p><p>A. Den ökar<br>B. Den är exakt konstant<br>C. Den minskar<br>D. Den blir alltid noll direkt</p>",
-  "s": "<p>Samma mängd materia fördelas över en större volym, så den genomsnittliga materietätheten minskar.</p><p><strong>Svar:</strong> C.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "C",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.303",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilken term används ofta för ett framtidsscenario där universum fortsätter expandera och blir kallare och glesare?</p><p>A. Big Freeze<br>B. Big Crunch<br>C. Big Bang<br>D. Solvind</p>",
-  "s": "<p>Ett fortsatt expanderande, kallare och glesare universum brukar kallas Big Freeze.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.304",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vad krävs för ett Big Crunch-scenario?</p><p>A. Att expansionen någon gång vänder till kontraktion<br>B. Att ljushastigheten minskar<br>C. Att alla stjärnor blir blå<br>D. Att Hubbles konstant blir exakt 70 för alltid</p>",
-  "s": "<p>Big Crunch innebär att expansionen upphör och ersätts av en kontraktion.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.305",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilket påstående om mörk energi är mest relevant för universums framtida utveckling?</p><p>A. Dess egenskaper påverkar hur expansionen förändras med tiden<br>B. Den påverkar bara planetsystem<br>C. Den finns endast inne i stjärnor<br>D. Den bestämmer ljusets färg</p>",
-  "s": "<p>Mörk energis egenskaper är centrala för hur den kosmiska expansionen utvecklas.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.306",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>I ett universum som fortsätter expandera mycket länge, vad händer i grova drag med avståndet mellan gravitationellt obundna galaxgrupper?</p><p>A. Det minskar alltid<br>B. Det ökar<br>C. Det blir exakt noll<br>D. Det påverkas inte av expansionen</p>",
-  "s": "<p>Kosmisk expansion ökar avståndet mellan system som inte är gravitationellt bundna till varandra.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.307",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vad betyder ”värmedöd” i kosmologiska framtidsscenarier närmast?</p><p>A. Att universum blir varmare utan gräns<br>B. Att användbara energiskillnader gradvis försvinner<br>C. Att alla atomer omedelbart sönderfaller<br>D. Att gravitation upphör</p>",
-  "s": "<p>Värmedöd syftar på att systemen närmar sig termodynamisk jämvikt och att användbara energiskillnader blir allt mindre.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.308",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilket påstående är mest korrekt i modern kosmologi?</p><p>A. Universums framtid avgörs enbart av geometrisk krökning<br>B. Både materieinnehåll och mörk energis egenskaper spelar roll<br>C. Endast antalet stjärnor spelar roll<br>D. Framtiden kan bestämmas från en enda galax</p>",
-  "s": "<p>Med mörk energi i modellen räcker det inte att bara känna till geometrisk krökning; energiinnehållets egenskaper spelar också roll.</p><p><strong>Svar:</strong> B.</p>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.309",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilken slutprodukt får en stjärna med ungefär solens massa efter röd-jättefasen?</p><p>A. Vit dvärg<br>B. Neutronstjärna<br>C. Svart hål<br>D. Pulsar direkt</p>",
-  "s": "<p>En solmassestjärna lämnar en vit dvärg efter att de yttre lagren stötts bort.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.310",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Vilken händelse är typisk i slutet av livet för en mycket massiv stjärna?</p><p>A. Supernova<br>B. Den blir alltid en planet<br>C. Den övergår direkt till en vit dvärg utan kraftig explosion<br>D. Den slutar fusionera efter en dag</p>",
-  "s": "<p>Massiva stjärnor kan avsluta sina liv i en supernova.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.311",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>På ett vanligt HR-diagram ökar stjärnornas yttemperatur åt vilket håll?</p><p>A. Åt vänster<br>B. Åt höger<br>C. Nedåt<br>D. Den visas inte</p>",
-  "s": "<p>På HR-diagram brukar temperaturen vara högst till vänster.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.312",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En röd jätte är relativt sval men mycket ljusstark. Vad säger det om dess radie?</p><p>A. Den måste vara stor<br>B. Den måste vara mindre än jorden<br>C. Radien är alltid noll<br>D. Luminositet säger inget alls</p>",
-  "s": "<p>Stor luminositet trots låg temperatur kräver stor strålande yta, alltså stor radie.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.313",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En vit dvärg kan vara het men ändå ha låg luminositet. Vad är den viktigaste förklaringen?</p><p>A. Den har mycket liten radie<br>B. Den saknar all massa<br>C. Den ligger alltid bakom stoft<br>D. Den avger bara radiovågor</p>",
-  "s": "<p>Den lilla radien ger liten strålande yta och därmed låg total luminositet.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.314",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Var finns solen ungefär i HR-diagrammet?</p><p>A. På huvudserien<br>B. Bland de kallaste superjättarna<br>C. Bland vita dvärgar<br>D. Utanför diagrammet</p>",
-  "s": "<p>Solen är en huvudseriestjärna.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.315",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Varför har mycket massiva huvudseriestjärnor kortare livslängd än solen trots att de har mer bränsle?</p><p>A. De förbrukar bränslet mycket snabbare eftersom luminositeten är mycket större<br>B. De har ingen fusion<br>C. De innehåller inget väte<br>D. De är kallare än alla andra stjärnor</p>",
-  "s": "<p>Massiva stjärnor har mycket hög energiproduktion och förbrukar därför sitt bränsle snabbare.</p><p><strong>Svar:</strong> A.</p>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "A",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val"
-},
-{
-  "id": "5.316",
-  "kap": 5,
-  "omr": "kosmologi",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Använd \\(H_0=70\\ \\mathrm{km/(s\\cdot Mpc)}\\). En galax ligger 50 Mpc bort.</p><p>Vilken recessionsfart ger Hubbles lag?</p>",
-  "s": "<p>\\[v=H_0d=70\\cdot50=3500\\ \\mathrm{km/s}\\]</p><p><strong>Svar:</strong> 3500 km/s.</p>",
-  "familj": "Hubbles lag och rödförskjutning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 3500,
-  "tolerans": 70,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "km/s",
-  "miniräknare": true
-},
-{
-  "id": "5.317",
-  "kap": 5,
-  "omr": "kosmologi",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En galax har recessionsfarten 7000 km/s. Använd \\(H_0=70\\ \\mathrm{km/(s\\cdot Mpc)}\\).</p><p>Uppskatta avståndet.</p>",
-  "s": "<p>\\[d=\\frac v{H_0}=\\frac{7000}{70}=100\\ \\mathrm{Mpc}\\]</p><p><strong>Svar:</strong> 100 Mpc.</p>",
-  "familj": "Hubbles lag och rödförskjutning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 100,
-  "tolerans": 2,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "Mpc",
-  "miniräknare": true
-},
-{
-  "id": "5.318",
-  "kap": 5,
-  "omr": "kosmologi",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>För små rödförskjutningar kan \\(z\\approx v/c\\). En galax har \\(z=0{,}020\\).</p><p>Uppskatta recessionsfarten i km/s. Använd \\(c=3{,}00\\cdot10^5\\ \\mathrm{km/s}\\).</p>",
-  "s": "<p>\\[v\\approx zc=0{,}020\\cdot3{,}00\\cdot10^5=6000\\ \\mathrm{km/s}\\]</p><p><strong>Svar:</strong> Cirka 6000 km/s.</p>",
-  "familj": "Hubbles lag och rödförskjutning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 6000,
-  "tolerans": 120,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "km/s",
-  "miniräknare": true
-},
-{
-  "id": "5.319",
-  "kap": 5,
-  "omr": "kosmologi",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En spektrallinje har laboratorievåglängden 500 nm men observeras från en galax vid 510 nm.</p><p>Bestäm rödförskjutningen \\(z=(\\lambda-\\lambda_0)/\\lambda_0\\).</p>",
-  "s": "<p>\\[z=\\frac{510-500}{500}=0{,}020\\]</p><p><strong>Svar:</strong> \\(z=0{,}020\\).</p>",
-  "familj": "Hubbles lag och rödförskjutning",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
-  "svarstyp": "numeriskt",
-  "rättSvar": 0.02,
-  "tolerans": 0.001,
-  "självrättning": true,
-  "svarFormat": "numeriskt"
-},
-{
-  "id": "5.320",
-  "kap": 5,
-  "omr": "exoplaneter",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>En transit minskar en stjärnas ljusstyrka med 0,25 %. Anta jämn ljusstyrka över stjärnskivan.</p><p>Bestäm planetens radie som andel av stjärnans radie.</p>",
-  "s": "<p>Transitdjupet är ungefär \\(\\delta=(R_p/R_s)^2\\).</p><p>\\[R_p/R_s=\\sqrt{0{,}0025}=0{,}050\\]</p><p><strong>Svar:</strong> Planetens radie är cirka 5,0 % av stjärnans radie.</p>",
-  "familj": "Exoplaneter och transitmetoden",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
-  "svarstyp": "numeriskt",
-  "rättSvar": 5.0,
-  "tolerans": 0.15,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "%",
-  "miniräknare": true
-},
-{
-  "id": "5.321",
-  "kap": 5,
-  "omr": "exoplaneter",
-  "niva": "E",
-  "poang": "(2/0/0)",
-  "t": "<p>Ljusstyrkan från en stjärna visar likadana transitdippar var 18:e dygn.</p><p>Vilken omloppstid har planeten enligt den enklaste tolkningen?</p>",
-  "s": "<p>Tiden mellan återkommande transitpassager är planetens omloppstid.</p><p><strong>Svar:</strong> 18 dygn.</p>",
-  "familj": "Exoplaneter och transitmetoden",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
-  "svarstyp": "numeriskt",
-  "rättSvar": 18,
-  "tolerans": 0,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "dygn"
-},
-{
-  "id": "5.322",
-  "kap": 5,
-  "omr": "exoplaneter",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En exoplanet kretsar kring en stjärna med ungefär solens massa. Omloppstiden är 8,0 år. Använd \\(T^2=a^3\\), där \\(a\\) anges i AU.</p><p>Bestäm medelavståndet.</p>",
-  "s": "<p>\\[a=\\sqrt[3]{T^2}=\\sqrt[3]{64}=4{,}0\\ \\mathrm{AU}\\]</p><p><strong>Svar:</strong> 4,0 AU.</p>",
-  "familj": "Exoplaneter och transitmetoden",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
-  "svarstyp": "numeriskt",
-  "rättSvar": 4.0,
-  "tolerans": 0.08,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "svarEnhet": "AU",
-  "miniräknare": true
-},
-{
-  "id": "3.304",
-  "kap": 3,
-  "omr": "magnetism",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En lång spole har 800 varv, längden 0,40 m och strömmen 0,75 A.</p><p>Bestäm magnetfältet inne i spolen. Använd \\(\\mu_0=4\\pi\\cdot10^{-7}\\ \\mathrm{Tm/A}\\).</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång spole gäller \\(B=\\mu_0NI/l\\).</p><div class=\"facit-matte\">\\[B=4\\pi\\cdot10^{-7}\\cdot\\frac{800\\cdot0{,}75}{0{,}40}=1{,}88\\cdot10^{-3}\\ \\mathrm T\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(1{,}9\\ \\mathrm{mT}\\).</p></div>",
-  "familj": "Magnetfält i spole",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "magnetism__magnetfalt_i_spole",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1.9,
-  "tolerans": 0.04,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": true,
-  "geogebra": false,
-  "svarEnhet": "mT"
-},
-{
-  "id": "3.305",
-  "kap": 3,
-  "omr": "magnetism",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En lång spole ger magnetfältet 2,5 mT när strömmen är 1,0 A. Spolen är 0,50 m lång.</p><p>Ungefär hur många varv har spolen? Använd \\(\\mu_0=4\\pi\\cdot10^{-7}\\ \\mathrm{Tm/A}\\).</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut antalet varv ur \\(B=\\mu_0NI/l\\).</p><div class=\"facit-matte\">\\[N=\\frac{Bl}{\\mu_0I}=\\frac{2{,}5\\cdot10^{-3}\\cdot0{,}50}{4\\pi\\cdot10^{-7}\\cdot1{,}0}\\approx995\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(1{,}0\\cdot10^3\\) varv.</p></div>",
-  "familj": "Magnetfält i spole",
-  "formaga": [
-    "procedur",
-    "problemlösning"
-  ],
-  "familjNyckel": "magnetism__magnetfalt_i_spole",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1000,
-  "tolerans": 20,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": true,
-  "geogebra": false,
-  "svarEnhet": "varv"
-},
-{
-  "id": "3.306",
-  "kap": 3,
-  "omr": "vaxelstrom",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En sinusformad växelspänning har toppvärdet 325 V.</p><p>Bestäm effektivvärdet.</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För sinusformad spänning gäller \\(U_{eff}=U_{max}/\\sqrt2\\).</p><div class=\"facit-matte\">\\[U_{eff}=\\frac{325}{\\sqrt2}=230\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Cirka \\(230\\ \\mathrm V\\).</p></div>",
-  "familj": "Sinusformad växelström och effektivvärde",
-  "formaga": [
-    "procedur"
-  ],
-  "familjNyckel": "vaxelstrom__sinusformad_vaxelstrom_och_effektivvarde",
-  "svarstyp": "numeriskt",
-  "rättSvar": 230,
-  "tolerans": 3.5,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": true,
-  "geogebra": false,
-  "svarEnhet": "V"
-},
-{
-  "id": "3.307",
-  "kap": 3,
-  "omr": "vaxelstrom",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>En resistor på 46 Ω ansluts till en sinusformad växelspänning med effektivvärdet 230 V.</p><p>Bestäm strömmens effektivvärde.</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en ren resistor kan Ohms lag användas direkt med effektivvärden.</p><div class=\"facit-matte\">\\[I_{eff}=\\frac{U_{eff}}R=\\frac{230}{46}=5{,}0\\ \\mathrm A\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(5{,}0\\ \\mathrm A\\).</p></div>",
-  "familj": "Sinusformad växelström och effektivvärde",
-  "formaga": [
-    "procedur",
-    "begrepp"
-  ],
-  "familjNyckel": "vaxelstrom__sinusformad_vaxelstrom_och_effektivvarde",
-  "svarstyp": "numeriskt",
-  "rättSvar": 5.0,
-  "tolerans": 0.08,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": false,
-  "geogebra": false,
-  "svarEnhet": "A"
-},
-{
-  "id": "5.323",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Två huvudseriestjärnor har samma yttemperatur, men stjärna A har hundra gånger större luminositet än stjärna B.</p><p>Hur många gånger större radie har A? Använd sambandet \\(L\\propto R^2T^4\\).</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">När temperaturen är samma gäller \\(L\\propto R^2\\).</p><div class=\"facit-matte\">\\[\\frac{R_A}{R_B}=\\sqrt{\\frac{L_A}{L_B}}=\\sqrt{100}=10\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> A har 10 gånger större radie.</p></div>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp",
-    "procedur"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "numeriskt",
-  "rättSvar": 10,
-  "tolerans": 0,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": false,
-  "geogebra": false
-},
-{
-  "id": "5.324",
-  "kap": 5,
-  "omr": "stjarnornas_utveckling",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Vilken stjärna ligger typiskt längst upp till vänster i ett HR-diagram?</p><p>A. Kall och ljussvag<br>B. Varm och ljusstark<br>C. Kall och ljusstark<br>D. Varm och ljussvag</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I ett HR-diagram ökar luminositeten uppåt, medan temperaturen är högre åt vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> B, varm och ljusstark.</p></div>",
-  "familj": "Stjärnors utveckling och HR-diagram",
-  "formaga": [
-    "begrepp"
-  ],
-  "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val",
-  "miniräknare": false,
-  "geogebra": false
-},
-{
-  "id": "5.325",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>Observationer visar att universums expansion accelererar. Vilken framtidsbild ligger närmast den enklaste modellen där denna acceleration fortsätter?</p><p>A. Expansionen bromsar och universum kollapsar snart.<br>B. Expansionen fortsätter och avlägsna galaxer blir allt mer separerade.<br>C. Alla galaxer stannar på fasta avstånd.<br>D. Universums skala börjar oscillera regelbundet.</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Om den accelererande expansionen fortsätter växer avstånden mellan gravitationellt obundna strukturer allt snabbare.</p><p class=\"facit-svar\"><strong>Svar:</strong> B.</p></div>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp",
-    "resonemang"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "val",
-  "rättSvar": "B",
-  "tolerans": null,
-  "självrättning": true,
-  "svarFormat": "val",
-  "miniräknare": false,
-  "geogebra": false
-},
-{
-  "id": "5.326",
-  "kap": 5,
-  "omr": "framtiden",
-  "niva": "C",
-  "poang": "(1/2/0)",
-  "t": "<p>I en modell expanderar universum så att skalfaktorn ökar från 1,0 till 1,5 medan två galaxer följer expansionen utan egen rörelse relativt den kosmiska expansionen.</p><p>Hur förändras deras inbördes avstånd?</p>",
-  "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För galaxer som följer expansionen är det kosmologiska avståndet proportionellt mot skalfaktorn.</p><div class=\"facit-matte\">\\[\\frac{d_2}{d_1}=\\frac{a_2}{a_1}=1{,}5\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet blir 1,5 gånger så stort, alltså ökar det med 50 %.</p></div>",
-  "familj": "Universums framtida utveckling",
-  "formaga": [
-    "begrepp",
-    "procedur"
-  ],
-  "familjNyckel": "framtiden__universums_framtida_utveckling",
-  "svarstyp": "numeriskt",
-  "rättSvar": 1.5,
-  "tolerans": 0.02,
-  "självrättning": true,
-  "svarFormat": "numeriskt",
-  "miniräknare": false,
-  "geogebra": false
-},
+  {
+    "id": "4.301",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ljus går från luft till vatten med brytningsindex 1,33. Infallsvinkeln är 40°.</p><p>Bestäm brytningsvinkeln.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p><strong>Metod:</strong> Snells lag ger \\(n_1\\sin i=n_2\\sin r\\).</p><p>\\[\\sin r=\\frac{\\sin40^\\circ}{1{,}33}\\Rightarrow r\\approx28{,}9^\\circ\\]</p><p><strong>Svar:</strong> Cirka 29°.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 28.9,
+    "tolerans": 0.7,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°",
+    "miniräknare": true
+  },
+  {
+    "id": "4.302",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ljus går från vatten, \\(n=1{,}33\\), till luft. Infallsvinkeln i vattnet är 30°.</p><p>Bestäm brytningsvinkeln i luften.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p>\\[1{,}33\\sin30^\\circ=1{,}00\\sin r\\Rightarrow r\\approx41{,}7^\\circ\\]</p><p><strong>Svar:</strong> Cirka 42°.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 41.7,
+    "tolerans": 0.8,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°",
+    "miniräknare": true
+  },
+  {
+    "id": "4.303",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Glas har brytningsindex 1,50. Bestäm gränsvinkeln för totalreflektion när ljus går från glas till luft.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p><strong>Metod:</strong> Vid gränsvinkeln är brytningsvinkeln 90°.</p><p>\\[\\sin i_g=\\frac{1{,}00}{1{,}50}\\Rightarrow i_g\\approx41{,}8^\\circ\\]</p><p><strong>Svar:</strong> Cirka 42°.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 41.8,
+    "tolerans": 0.8,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°",
+    "miniräknare": true
+  },
+  {
+    "id": "4.304",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ljus går från luft in i ett genomskinligt material. Infallsvinkeln är 45° och brytningsvinkeln 28°.</p><p>Bestäm materialets brytningsindex.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p>\\[n=\\frac{\\sin45^\\circ}{\\sin28^\\circ}\\approx1{,}51\\]</p><p><strong>Svar:</strong> \\(n\\approx1{,}51\\).</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.51,
+    "tolerans": 0.03,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": true
+  },
+  {
+    "id": "4.305",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En ljusstråle går från luft in i glas. Vilket påstående är korrekt?</p><p>A. Strålen bryts från normalen.<br>B. Strålen bryts mot normalen.<br>C. Strålen ändrar inte riktning oavsett infallsvinkel.<br>D. Totalreflektion sker alltid.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p>Glas har större brytningsindex än luft. När ljus går in i ett medium med större brytningsindex bryts strålen <strong>mot normalen</strong>.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "4.306",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ljus går från glas med \\(n=1{,}50\\) till vatten med \\(n=1{,}33\\). Infallsvinkeln i glaset är 35°.</p><p>Bestäm brytningsvinkeln i vattnet.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p>\\[1{,}50\\sin35^\\circ=1{,}33\\sin r\\Rightarrow r\\approx40{,}3^\\circ\\]</p><p><strong>Svar:</strong> Cirka 40°.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 40.3,
+    "tolerans": 0.8,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°",
+    "miniräknare": true
+  },
+  {
+    "id": "4.307",
+    "kap": 4,
+    "omr": "straloptik",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En stråle går från glas mot luft med en infallsvinkel som är större än gränsvinkeln.</p><p>Vad händer?</p><p>A. Strålen bryts mot normalen.<br>B. Strålen går rakt fram.<br>C. Totalreflektion sker.<br>D. Ljuset stannar i gränsytan.</p>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><p>När ljus går från större till mindre brytningsindex och infallsvinkeln överstiger gränsvinkeln sker <strong>totalreflektion</strong>.</p><p><strong>Svar:</strong> C.</p>",
+    "familj": "Snells lag och brytning",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "straloptik__snells_lag_och_brytning",
+    "svarstyp": "val",
+    "rättSvar": "C",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "4.308",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>I väteatomen gäller \\(E_n=-13{,}6/n^2\\) eV. Bestäm energin för nivån \\(n=4\\).</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> I Bohrs modell är energin negativ för en bunden elektron. Ju större \\(n\\) är, desto närmare 0 ligger nivån.</p><p>\\[E_4=-\\frac{13{,}6}{16}=-0{,}85\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> −0,85 eV.</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": -0.85,
+    "tolerans": 0.02,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.309",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En elektron i väte går från \\(n=3\\) till \\(n=2\\). Hur stor energi har den foton som avges?</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> En foton tar upp eller avger exakt energiskillnaden mellan två tillåtna nivåer. Använd därför \\(E_\\gamma=|E_{slut}-E_{start}|\\).</p><p>\\[E_3=-1{,}51\\ \\mathrm{eV},\\quad E_2=-3{,}40\\ \\mathrm{eV}\\]</p><p>Fotonenergin är skillnaden: \\(1{,}89\\) eV.</p><p><strong>Svar:</strong> 1,89 eV.</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.89,
+    "tolerans": 0.03,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.310",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Hur mycket energi krävs för att jonisera en väteatom vars elektron befinner sig på nivån \\(n=2\\)?</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Jonisation betyder att elektronen förs från en bunden nivå med negativ energi upp till \\(0\\,\\mathrm{eV}\\). Energin som krävs är därför avståndet från nivån till 0.</p><p>På \\(n=2\\) är energin −3,40 eV. Jonisationsgränsen är 0 eV.</p><p><strong>Svar:</strong> Det krävs 3,40 eV.</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.4,
+    "tolerans": 0.05,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.311",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En väteatom absorberar en foton och elektronen går från \\(n=2\\) till \\(n=4\\). Bestäm fotonens energi.</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> En foton tar upp eller avger exakt energiskillnaden mellan två tillåtna nivåer. Använd därför \\(E_\\gamma=|E_{slut}-E_{start}|\\).</p><p>\\[E_2=-3{,}40\\ \\mathrm{eV},\\quad E_4=-0{,}85\\ \\mathrm{eV}\\]</p><p>\\[E_\\gamma=E_4-E_2=2{,}55\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> 2,55 eV.</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.55,
+    "tolerans": 0.04,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV"
+  },
+  {
+    "id": "4.312",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En väteelektron har energin −0,85 eV. Vilket huvudkvanttal \\(n\\) motsvarar detta i Bohrs modell?</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> I Bohrs modell är energin negativ för en bunden elektron. Ju större \\(n\\) är, desto närmare 0 ligger nivån.</p><p>\\[-0{,}85=-13{,}6/n^2\\Rightarrow n^2=16\\Rightarrow n=4\\]</p><p><strong>Svar:</strong> \\(n=4\\).</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.313",
+    "kap": 4,
+    "omr": "atomstruktur",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilken övergång i väte ger en foton med störst energi?</p><p>A. \\(n=3\\to2\\)<br>B. \\(n=2\\to1\\)<br>C. \\(n=4\\to3\\)<br>D. \\(n=5\\to4\\)</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> En foton tar upp eller avger exakt energiskillnaden mellan två tillåtna nivåer. Använd därför \\(E_\\gamma=|E_{slut}-E_{start}|\\).</p><p>Fotonenergin är skillnaden mellan energinivåerna. Skillnaden är klart störst för övergången \\(n=2\\to1\\).</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Bohrs atommodell",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "atomstruktur__bohrs_atommodell",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "4.314",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En elektromagnetisk våg i vakuum har frekvensen 3,0 GHz. Bestäm våglängden.</p>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><p>\\[\\lambda=\\frac{c}{f}=\\frac{3{,}00\\cdot10^8}{3{,}0\\cdot10^9}=0{,}100\\ \\mathrm m\\]</p><p><strong>Svar:</strong> 0,10 m.</p>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.1,
+    "tolerans": 0.003,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "m",
+    "miniräknare": true
+  },
+  {
+    "id": "4.315",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En elektromagnetisk våg har våglängden 600 nm i vakuum. Bestäm frekvensen.</p>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><p>\\[f=\\frac{c}{\\lambda}=\\frac{3{,}00\\cdot10^8}{600\\cdot10^{-9}}=5{,}0\\cdot10^{14}\\ \\mathrm{Hz}\\]</p><p><strong>Svar:</strong> \\(5{,}0\\cdot10^{14}\\) Hz.</p>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "numeriskt",
+    "rättSvar": 500000000000000,
+    "tolerans": 10000000000000,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Hz",
+    "miniräknare": true
+  },
+  {
+    "id": "4.316",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilken ordning går från lägst till högst frekvens?</p><p>A. radio – mikrovåg – infrarött – synligt – ultraviolett<br>B. ultraviolett – synligt – infrarött – mikrovåg – radio<br>C. radio – infrarött – mikrovåg – synligt – ultraviolett<br>D. mikrovåg – radio – synligt – infrarött – ultraviolett</p>",
+    "s": "<p><strong>Begrepp:</strong> Alla elektromagnetiska vågor har samma fart \\(c\\) i vakuum. Högre frekvens betyder därför kortare våglängd; spektrumordningen kan jämföras med \\(c=f\\lambda\\).</p><p>Frekvensen ökar från radio via mikrovågor och infrarött till synligt och ultraviolett.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "4.317",
+    "kap": 4,
+    "omr": "em_vagor",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilket påstående om elektromagnetiska vågor i vakuum är korrekt?</p><p>A. Radiovågor går långsammare än synligt ljus.<br>B. Alla elektromagnetiska vågor har samma hastighet i vakuum.<br>C. Gammastrålning går snabbare än ljus.<br>D. Endast synligt ljus kan färdas i vakuum.</p>",
+    "s": "<p><strong>Begrepp:</strong> Alla elektromagnetiska vågor har samma fart \\(c\\) i vakuum. Högre frekvens betyder därför kortare våglängd; spektrumordningen kan jämföras med \\(c=f\\lambda\\).</p><p>Alla elektromagnetiska vågor färdas med ljushastigheten \\(c\\) i vakuum.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Elektromagnetiska vågor och spektrum",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "4.318",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Laserljus med våglängden 500 nm går genom en dubbelspalt med spaltavståndet 0,25 mm. Skärmen står 2,0 m bort.</p><p>Bestäm avståndet mellan närliggande ljusa band nära mitten.</p>",
+    "s": "<p><strong>Dubbelspalt nära mitten:</strong> För små vinklar kan läget på skärmen beräknas med \\(y_m\\approx m\\lambda L/d\\). Skriv först alla längder i samma enhet.</p><p>\\[\\Delta y=\\frac{\\lambda L}{d}=\\frac{500\\cdot10^{-9}\\cdot2{,}0}{0{,}25\\cdot10^{-3}}=0{,}0040\\ \\mathrm m\\]</p><p><strong>Svar:</strong> 4,0 mm.</p>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.1,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "mm",
+    "miniräknare": true
+  },
+  {
+    "id": "4.319",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ett gitter har 500 linjer/mm och belyses med ljus med våglängden 600 nm. Bestäm vinkeln till första ordningens maximum.</p>",
+    "s": "<p><strong>Gittermaximum:</strong> Använd \\(d\\sin\\theta=m\\lambda\\). Ordningstalet \\(m\\) är ett heltal och villkoret \\(|\\sin\\theta|\\le1\\) sätter gränsen för högsta möjliga ordning.</p><p>Gitterkonstanten är \\(d=1/(500\\cdot10^3)=2{,}0\\cdot10^{-6}\\) m.</p><p>\\[d\\sin\\theta=\\lambda\\Rightarrow\\sin\\theta=0{,}300\\Rightarrow\\theta\\approx17{,}5^\\circ\\]</p><p><strong>Svar:</strong> Cirka 17,5°.</p>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 17.5,
+    "tolerans": 0.5,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "°",
+    "miniräknare": true
+  },
+  {
+    "id": "4.320",
+    "kap": 4,
+    "omr": "vagrorelselara",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ett gitter har spaltavståndet \\(2{,}0\\,\\mu\\mathrm m\\) och belyses med ljus med våglängden 600 nm.</p><p>Vilken är den högsta möjliga ordningen \\(m\\) för ett maximum?</p>",
+    "s": "<p><strong>Gittermaximum:</strong> Använd \\(d\\sin\\theta=m\\lambda\\). Ordningstalet \\(m\\) är ett heltal och villkoret \\(|\\sin\\theta|\\le1\\) sätter gränsen för högsta möjliga ordning.</p><p>För ett maximum gäller \\(m\\lambda=d\\sin\\theta\\), och \\(|\\sin\\theta|\\le1\\). Därför \\(m\\le d/\\lambda=2{,}0/0{,}600=3{,}33\\).</p><p><strong>Svar:</strong> Högsta heltalsordningen är \\(m=3\\).</p>",
+    "familj": "Dubbelspalt och gitter",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "familjNyckel": "vagrorelselara__dubbelspalt_och_gitter",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "4.321",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En stjärna har temperaturen 5800 K. Använd Wiens lag \\(\\lambda_{max}T=2{,}90\\cdot10^{-3}\\ \\mathrm{mK}\\).</p><p>Bestäm våglängden för intensitetsmaximum i nm.</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Wiens lag \\(\\lambda_{max}T=b\\) kopplar toppvåglängden till temperaturen: högre temperatur ger kortare toppvåglängd.</p><p>\\[\\lambda_{max}=\\frac{2{,}90\\cdot10^{-3}}{5800}=5{,}0\\cdot10^{-7}\\ \\mathrm m=500\\ \\mathrm{nm}\\]</p><p><strong>Svar:</strong> Cirka 500 nm.</p>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 500,
+    "tolerans": 10,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "nm",
+    "miniräknare": true,
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
+  },
+  {
+    "id": "4.322",
+    "kap": 4,
+    "omr": "temperaturstralning",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Två svartkroppar har samma area. Kropp B har dubbelt så hög absolut temperatur som kropp A.</p><p>Hur många gånger större effekt strålar B ut?</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Stefan–Boltzmanns lag ger \\(P/A=\\sigma T^4\\). Fjärdepotensen gör att även en måttlig temperaturökning kan ge en stor effektökning.</p><p>Stefan–Boltzmanns lag ger \\(P\\propto T^4\\).</p><p>\\[P_B/P_A=2^4=16\\]</p><p><strong>Svar:</strong> 16 gånger större effekt.</p>",
+    "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
+    "svarstyp": "numeriskt",
+    "rättSvar": 16,
+    "tolerans": 0,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
+  },
+  {
+    "id": "4.323",
+    "kap": 4,
+    "omr": "ljus_partikelstrom",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Bestäm energin i elektronvolt för en foton med våglängden 620 nm.</p>",
+    "s": "<p>Använd \\(E=hc/\\lambda\\), eller den praktiska relationen \\(E(\\mathrm{eV})\\approx1240/\\lambda(\\mathrm{nm})\\).</p><p>\\[E\\approx1240/620=2{,}00\\ \\mathrm{eV}\\]</p><p><strong>Svar:</strong> 2,00 eV.</p>",
+    "familj": "Fotonenergi",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "ljus_partikelstrom__fotonenergi",
+    "svarstyp": "numeriskt",
+    "rättSvar": 2,
+    "tolerans": 0.04,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "eV",
+    "miniräknare": true
+  },
+  {
+    "id": "3.301",
+    "kap": 3,
+    "omr": "magnetism",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En lång solenoid är 0,40 m lång, har 800 varv och leder strömmen 1,5 A. Använd \\(B=\\mu_0NI/L\\) och \\(\\mu_0=4\\pi\\cdot10^{-7}\\).</p><p>Bestäm magnetfältet inuti spolen i mT.</p>",
+    "s": "<p>För en lång solenoid gäller \\(B=\\mu_0NI/L\\). Sätt in antalet varv, strömmen och spolens längd:</p><p>\\[B=4\\pi\\cdot10^{-7}\\frac{800\\cdot1{,}5}{0{,}40}=3{,}77\\cdot10^{-3}\\ \\mathrm T.\\]</p><p>Eftersom \\(1\\ \\mathrm{mT}=10^{-3}\\ \\mathrm T\\) blir detta</p><p>\\[B=3{,}77\\ \\mathrm{mT}.\\]</p><p><strong>Svar:</strong> cirka \\(3{,}77\\ \\mathrm{mT}\\).</p>",
+    "familj": "Magnetfält i spole",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "magnetism__magnetfalt_i_spole",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.77,
+    "tolerans": 0.08,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "mT",
+    "miniräknare": true
+  },
+  {
+    "id": "3.302",
+    "kap": 3,
+    "omr": "magnetism",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En solenoid behåller samma längd men får dubbelt så många varv och strömmen halveras.</p><p>Hur ändras magnetfältet inuti spolen?</p><p>A. Halveras<br>B. Oförändrat<br>C. Fördubblas<br>D. Fyrdubblas</p>",
+    "s": "<p>Eftersom \\(B\\propto NI/L\\) ger dubbla \\(N\\) och halva \\(I\\) samma produkt \\(NI\\).</p><p><strong>Svar:</strong> B, fältet är oförändrat.</p>",
+    "familj": "Magnetfält i spole",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "magnetism__magnetfalt_i_spole",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "3.303",
+    "kap": 3,
+    "omr": "vaxelstrom_spole_kondensator",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En ideal LC-krets har \\(L=0{,}20\\ \\mathrm H\\) och \\(C=50\\,\\mu\\mathrm F\\). Bestäm resonansfrekvensen.</p>",
+    "s": "<p><strong>Resonans:</strong> Vid resonans gäller \\(X_L=X_C\\), vilket ger \\(f=1/(2\\pi\\sqrt{LC})\\).</p><p>\\[f_0=\\frac{1}{2\\pi\\sqrt{LC}}=\\frac{1}{2\\pi\\sqrt{0{,}20\\cdot50\\cdot10^{-6}}}\\approx50{,}3\\ \\mathrm{Hz}\\]</p><p><strong>Svar:</strong> Cirka 50 Hz.</p>",
+    "familj": "Spole, kondensator och resonans i växelström",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vaxelstrom_spole_kondensator__spole_kondensator_och_resonans_i_vaxelstrom",
+    "svarstyp": "numeriskt",
+    "rättSvar": 50.3,
+    "tolerans": 1,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Hz",
+    "miniräknare": true
+  },
+  {
+    "id": "2.301",
+    "kap": 2,
+    "omr": "extrema_frekvenser",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ett ljud har frekvensen 15 Hz. Hur klassificeras det?</p><p>A. Infraljud<br>B. Hörbart ljud<br>C. Ultraljud<br>D. Elektromagnetisk strålning</p>",
+    "s": "<p>Människans ungefärliga hörselområde börjar kring 20 Hz. 15 Hz ligger under detta.</p><p><strong>Svar:</strong> A, infraljud.</p>",
+    "familj": "Infraljud och ultraljud",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "extrema_frekvenser__infraljud_och_ultraljud",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "6.301",
+    "kap": 6,
+    "omr": "tid_och_langd",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Ett rymdskepp rör sig med farten \\(0{,}80c\\) relativt jorden. Bestäm Lorentzfaktorn \\(\\gamma=1/\\sqrt{1-v^2/c^2}\\).</p>",
+    "s": "<p>Eftersom farten anges som \\(0{,}80c\\) blir kvoten \\(v/c=0{,}80\\). Sätt den direkt i Lorentzfaktorn:</p><p>\\[\\gamma=\\frac{1}{\\sqrt{1-(v/c)^2}}=\\frac{1}{\\sqrt{1-0{,}80^2}}=\\frac{1}{0{,}60}\\approx1{,}67.\\]</p><p><strong>Svar:</strong> \\(\\gamma\\approx1{,}67\\). Att \\(\\gamma>1\\) är väntat för varje fart större än noll.</p>",
+    "familj": "Rumtid och referenssystem",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "tid_och_langd__rumtid_och_referenssystem",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.67,
+    "tolerans": 0.03,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": true
+  },
+  {
+    "id": "5.301",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilket scenario stämmer bäst med observationen att universums expansion accelererar?</p><p>A. Expansionen bromsar in mot stillastående<br>B. Expansionen fortsätter och avlägsna galaxer blir allt mer isolerade<br>C. Alla galaxer börjar snart falla mot Vintergatan<br>D. Universum har redan slutat expandera</p>",
+    "s": "<p>Accelererande expansion innebär i den enklaste moderna modellen att avlägsna galaxer med tiden blir allt mer separerade.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.302",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vad händer med den genomsnittliga materietätheten när universum expanderar?</p><p>A. Den ökar<br>B. Den är exakt konstant<br>C. Den minskar<br>D. Den blir alltid noll direkt</p>",
+    "s": "<p>Samma mängd materia fördelas över en större volym, så den genomsnittliga materietätheten minskar.</p><p><strong>Svar:</strong> C.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "C",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.303",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilken term används ofta för ett framtidsscenario där universum fortsätter expandera och blir kallare och glesare?</p><p>A. Big Freeze<br>B. Big Crunch<br>C. Big Bang<br>D. Solvind</p>",
+    "s": "<p>Ett fortsatt expanderande, kallare och glesare universum brukar kallas Big Freeze.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.304",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vad krävs för ett Big Crunch-scenario?</p><p>A. Att expansionen någon gång vänder till kontraktion<br>B. Att ljushastigheten minskar<br>C. Att alla stjärnor blir blå<br>D. Att Hubbles konstant blir exakt 70 för alltid</p>",
+    "s": "<p>Big Crunch innebär att expansionen upphör och ersätts av en kontraktion.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.305",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilket påstående om mörk energi är mest relevant för universums framtida utveckling?</p><p>A. Dess egenskaper påverkar hur expansionen förändras med tiden<br>B. Den påverkar bara planetsystem<br>C. Den finns endast inne i stjärnor<br>D. Den bestämmer ljusets färg</p>",
+    "s": "<p>Mörk energis egenskaper är centrala för hur den kosmiska expansionen utvecklas.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.306",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>I ett universum som fortsätter expandera mycket länge, vad händer i grova drag med avståndet mellan gravitationellt obundna galaxgrupper?</p><p>A. Det minskar alltid<br>B. Det ökar<br>C. Det blir exakt noll<br>D. Det påverkas inte av expansionen</p>",
+    "s": "<p>Kosmisk expansion ökar avståndet mellan system som inte är gravitationellt bundna till varandra.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.307",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vad betyder ”värmedöd” i kosmologiska framtidsscenarier närmast?</p><p>A. Att universum blir varmare utan gräns<br>B. Att användbara energiskillnader gradvis försvinner<br>C. Att alla atomer omedelbart sönderfaller<br>D. Att gravitation upphör</p>",
+    "s": "<p>Värmedöd syftar på att systemen närmar sig termodynamisk jämvikt och att användbara energiskillnader blir allt mindre.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.308",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilket påstående är mest korrekt i modern kosmologi?</p><p>A. Universums framtid avgörs enbart av geometrisk krökning<br>B. Både materieinnehåll och mörk energis egenskaper spelar roll<br>C. Endast antalet stjärnor spelar roll<br>D. Framtiden kan bestämmas från en enda galax</p>",
+    "s": "<p>Med mörk energi i modellen räcker det inte att bara känna till geometrisk krökning; energiinnehållets egenskaper spelar också roll.</p><p><strong>Svar:</strong> B.</p>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.309",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilken slutprodukt får en stjärna med ungefär solens massa efter röd-jättefasen?</p><p>A. Vit dvärg<br>B. Neutronstjärna<br>C. Svart hål<br>D. Pulsar direkt</p>",
+    "s": "<p>En solmassestjärna lämnar en vit dvärg efter att de yttre lagren stötts bort.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.310",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Vilken händelse är typisk i slutet av livet för en mycket massiv stjärna?</p><p>A. Supernova<br>B. Den blir alltid en planet<br>C. Den övergår direkt till en vit dvärg utan kraftig explosion<br>D. Den slutar fusionera efter en dag</p>",
+    "s": "<p>Massiva stjärnor kan avsluta sina liv i en supernova.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.311",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>På ett vanligt HR-diagram ökar stjärnornas yttemperatur åt vilket håll?</p><p>A. Åt vänster<br>B. Åt höger<br>C. Nedåt<br>D. Den visas inte</p>",
+    "s": "<p>På HR-diagram brukar temperaturen vara högst till vänster.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.312",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En röd jätte är relativt sval men mycket ljusstark. Vad säger det om dess radie?</p><p>A. Den måste vara stor<br>B. Den måste vara mindre än jorden<br>C. Radien är alltid noll<br>D. Luminositet säger inget alls</p>",
+    "s": "<p>Stor luminositet trots låg temperatur kräver stor strålande yta, alltså stor radie.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.313",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En vit dvärg kan vara het men ändå ha låg luminositet. Vad är den viktigaste förklaringen?</p><p>A. Den har mycket liten radie<br>B. Den saknar all massa<br>C. Den ligger alltid bakom stoft<br>D. Den avger bara radiovågor</p>",
+    "s": "<p>Den lilla radien ger liten strålande yta och därmed låg total luminositet.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.314",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Var finns solen ungefär i HR-diagrammet?</p><p>A. På huvudserien<br>B. Bland de kallaste superjättarna<br>C. Bland vita dvärgar<br>D. Utanför diagrammet</p>",
+    "s": "<p>Solen omvandlar fortfarande väte till helium i kärnan och befinner sig därför i den långa stabila fas som kallas <strong>huvudserien</strong>. I ett HR-diagram ligger den alltså på huvudserien, inte bland vita dvärgar eller superjättar.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.315",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Varför har mycket massiva huvudseriestjärnor kortare livslängd än solen trots att de har mer bränsle?</p><p>A. De förbrukar bränslet mycket snabbare eftersom luminositeten är mycket större<br>B. De har ingen fusion<br>C. De innehåller inget väte<br>D. De är kallare än alla andra stjärnor</p>",
+    "s": "<p>Massiva stjärnor har mycket hög energiproduktion och förbrukar därför sitt bränsle snabbare.</p><p><strong>Svar:</strong> A.</p>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "A",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val"
+  },
+  {
+    "id": "5.316",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Använd \\(H_0=70\\ \\mathrm{km/(s\\cdot Mpc)}\\). En galax ligger 50 Mpc bort.</p><p>Vilken recessionsfart ger Hubbles lag?</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><p>\\[v=H_0d=70\\cdot50=3500\\ \\mathrm{km/s}\\]</p><p><strong>Svar:</strong> 3500 km/s.</p>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 3500,
+    "tolerans": 70,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "km/s",
+    "miniräknare": true
+  },
+  {
+    "id": "5.317",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En galax har recessionsfarten 7000 km/s. Använd \\(H_0=70\\ \\mathrm{km/(s\\cdot Mpc)}\\).</p><p>Uppskatta avståndet.</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) säger att recessionsfarten är proportionell mot avståndet. När farten är given löses därför \\(d=v/H_0\\).</p><p>\\[d=\\frac v{H_0}=\\frac{7000}{70}=100\\ \\mathrm{Mpc}\\]</p><p><strong>Svar:</strong> 100 Mpc.</p>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 100,
+    "tolerans": 2,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "Mpc",
+    "miniräknare": true
+  },
+  {
+    "id": "5.318",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>För små rödförskjutningar kan \\(z\\approx v/c\\). En galax har \\(z=0{,}020\\).</p><p>Uppskatta recessionsfarten i km/s. Använd \\(c=3{,}00\\cdot10^5\\ \\mathrm{km/s}\\).</p>",
+    "s": "<p><strong>Fysikalisk idé:</strong> För små rödförskjutningar gäller approximationen \\(v\\approx zc\\). Den omvandlar den dimensionslösa rödförskjutningen till recessionsfart.</p><p>\\[v\\approx zc=0{,}020\\cdot3{,}00\\cdot10^5=6000\\ \\mathrm{km/s}\\]</p><p><strong>Svar:</strong> Cirka 6000 km/s.</p>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 6000,
+    "tolerans": 120,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "km/s",
+    "miniräknare": true
+  },
+  {
+    "id": "5.319",
+    "kap": 5,
+    "omr": "kosmologi",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En spektrallinje har laboratorievåglängden 500 nm men observeras från en galax vid 510 nm.</p><p>Bestäm rödförskjutningen \\(z=(\\lambda-\\lambda_0)/\\lambda_0\\).</p>",
+    "s": "<p><strong>Rödförskjutning:</strong> Jämför den observerade våglängden med laboratorievärdet: \\(z=(\\lambda-\\lambda_0)/\\lambda_0\\). Ett positivt \\(z\\) betyder förskjutning mot längre våglängd.</p><p>\\[z=\\frac{510-500}{500}=0{,}020\\]</p><p><strong>Svar:</strong> \\(z=0{,}020\\).</p>",
+    "familj": "Hubbles lag och rödförskjutning",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
+    "svarstyp": "numeriskt",
+    "rättSvar": 0.02,
+    "tolerans": 0.001,
+    "självrättning": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "5.320",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>En transit minskar en stjärnas ljusstyrka med 0,25 %. Anta jämn ljusstyrka över stjärnskivan.</p><p>Bestäm planetens radie som andel av stjärnans radie.</p>",
+    "s": "<p>Transitdjupet är ungefär \\(\\delta=(R_p/R_s)^2\\).</p><p>\\[R_p/R_s=\\sqrt{0{,}0025}=0{,}050\\]</p><p><strong>Svar:</strong> Planetens radie är cirka 5,0 % av stjärnans radie.</p>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": 0.15,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "%",
+    "miniräknare": true
+  },
+  {
+    "id": "5.321",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "E",
+    "poang": "(2/0/0)",
+    "t": "<p>Ljusstyrkan från en stjärna visar likadana transitdippar var 18:e dygn.</p><p>Vilken omloppstid har planeten enligt den enklaste tolkningen?</p>",
+    "s": "<p>Tiden mellan återkommande transitpassager är planetens omloppstid.</p><p><strong>Svar:</strong> 18 dygn.</p>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 18,
+    "tolerans": 0,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "dygn"
+  },
+  {
+    "id": "5.322",
+    "kap": 5,
+    "omr": "exoplaneter",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En exoplanet kretsar kring en stjärna med ungefär solens massa. Omloppstiden är 8,0 år. Använd \\(T^2=a^3\\), där \\(a\\) anges i AU.</p><p>Bestäm medelavståndet.</p>",
+    "s": "<p>För en planet kring en stjärna med ungefär solens massa kan Keplers tredje lag skrivas \\(T^2=a^3\\) när \\(T\\) mäts i år och \\(a\\) i AU.</p><p>\\[a^3=T^2=8{,}0^2=64\\]</p><p>Ta kubikroten:</p><p>\\[a=\\sqrt[3]{64}=4{,}0\\ \\mathrm{AU}.\\]</p><p><strong>Svar:</strong> medelavståndet är \\(4{,}0\\ \\mathrm{AU}\\).</p>",
+    "familj": "Exoplaneter och transitmetoden",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "exoplaneter__exoplaneter_och_transitmetoden",
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": 0.08,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "svarEnhet": "AU",
+    "miniräknare": true
+  },
+  {
+    "id": "3.304",
+    "kap": 3,
+    "omr": "magnetism",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En lång spole har 800 varv, längden 0,40 m och strömmen 0,75 A.</p><p>Bestäm magnetfältet inne i spolen. Använd \\(\\mu_0=4\\pi\\cdot10^{-7}\\ \\mathrm{Tm/A}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en lång spole är fältet proportionellt mot både varvtätheten \\(N/l\\) och strömmen: \\(B=\\mu_0NI/l\\).</p><div class=\"facit-matte\">\\[B=4\\pi\\cdot10^{-7}\\cdot\\frac{800\\cdot0{,}75}{0{,}40}=1{,}88\\cdot10^{-3}\\ \\mathrm T\\]</div><p class=\"facit-metod\">Omvandla till millitesla:</p><div class=\"facit-matte\">\\[1{,}88\\cdot10^{-3}\\ \\mathrm T=1{,}88\\ \\mathrm{mT}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(1{,}9\\ \\mathrm{mT}\\).</p></div>",
+    "familj": "Magnetfält i spole",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "magnetism__magnetfalt_i_spole",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.9,
+    "tolerans": 0.04,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": true,
+    "geogebra": false,
+    "svarEnhet": "mT"
+  },
+  {
+    "id": "3.305",
+    "kap": 3,
+    "omr": "magnetism",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En lång spole ger magnetfältet 2,5 mT när strömmen är 1,0 A. Spolen är 0,50 m lång.</p><p>Ungefär hur många varv har spolen? Använd \\(\\mu_0=4\\pi\\cdot10^{-7}\\ \\mathrm{Tm/A}\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Utgå från \\(B=\\mu_0NI/l\\) och lös ut antalet varv \\(N\\):</p><div class=\"facit-matte\">\\[N=\\frac{Bl}{\\mu_0I}.\\]</div><p class=\"facit-metod\">Magnetfältet måste skrivas i tesla: \\(2{,}5\\ \\mathrm{mT}=2{,}5\\cdot10^{-3}\\ \\mathrm T\\).</p><div class=\"facit-matte\">\\[N=\\frac{2{,}5\\cdot10^{-3}\\cdot0{,}50}{4\\pi\\cdot10^{-7}\\cdot1{,}0}\\approx995.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> ungefär \\(1{,}0\\cdot10^3\\) varv.</p></div>",
+    "familj": "Magnetfält i spole",
+    "formaga": [
+      "procedur",
+      "problemlösning"
+    ],
+    "familjNyckel": "magnetism__magnetfalt_i_spole",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1000,
+    "tolerans": 20,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": true,
+    "geogebra": false,
+    "svarEnhet": "varv"
+  },
+  {
+    "id": "3.306",
+    "kap": 3,
+    "omr": "vaxelstrom",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En sinusformad växelspänning har toppvärdet 325 V.</p><p>Bestäm effektivvärdet.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en sinusformad växelspänning är effektivvärdet det likspänningsvärde som skulle ge samma effekt i en resistor. Sambandet är \\(U_\\mathrm{eff}=U_\\mathrm{max}/\\sqrt2\\).</p><div class=\"facit-matte\">\\[U_\\mathrm{eff}=\\frac{325}{\\sqrt2}=229{,}8\\ \\mathrm V\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(230\\ \\mathrm V\\).</p></div>",
+    "familj": "Sinusformad växelström och effektivvärde",
+    "formaga": [
+      "procedur"
+    ],
+    "familjNyckel": "vaxelstrom__sinusformad_vaxelstrom_och_effektivvarde",
+    "svarstyp": "numeriskt",
+    "rättSvar": 230,
+    "tolerans": 3.5,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": true,
+    "geogebra": false,
+    "svarEnhet": "V"
+  },
+  {
+    "id": "3.307",
+    "kap": 3,
+    "omr": "vaxelstrom",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>En resistor på 46 Ω ansluts till en sinusformad växelspänning med effektivvärdet 230 V.</p><p>Bestäm strömmens effektivvärde.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För en ren resistor kan Ohms lag användas direkt med effektivvärden.</p><div class=\"facit-matte\">\\[I_{eff}=\\frac{U_{eff}}R=\\frac{230}{46}=5{,}0\\ \\mathrm A\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(5{,}0\\ \\mathrm A\\).</p></div>",
+    "familj": "Sinusformad växelström och effektivvärde",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "familjNyckel": "vaxelstrom__sinusformad_vaxelstrom_och_effektivvarde",
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": 0.08,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": false,
+    "geogebra": false,
+    "svarEnhet": "A"
+  },
+  {
+    "id": "5.323",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Två huvudseriestjärnor har samma yttemperatur, men stjärna A har hundra gånger större luminositet än stjärna B.</p><p>Hur många gånger större radie har A? Använd sambandet \\(L\\propto R^2T^4\\).</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">När temperaturen är samma gäller \\(L\\propto R^2\\).</p><div class=\"facit-matte\">\\[\\frac{R_A}{R_B}=\\sqrt{\\frac{L_A}{L_B}}=\\sqrt{100}=10\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> A har 10 gånger större radie.</p></div>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "numeriskt",
+    "rättSvar": 10,
+    "tolerans": 0,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": false,
+    "geogebra": false
+  },
+  {
+    "id": "5.324",
+    "kap": 5,
+    "omr": "stjarnornas_utveckling",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Vilken stjärna ligger typiskt längst upp till vänster i ett HR-diagram?</p><p>A. Kall och ljussvag<br>B. Varm och ljusstark<br>C. Kall och ljusstark<br>D. Varm och ljussvag</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">I ett HR-diagram ökar luminositeten uppåt, medan temperaturen är högre åt vänster.</p><p class=\"facit-svar\"><strong>Svar:</strong> B, varm och ljusstark.</p></div>",
+    "familj": "Stjärnors utveckling och HR-diagram",
+    "formaga": [
+      "begrepp"
+    ],
+    "familjNyckel": "stjarnornas_utveckling__stjarnors_utveckling_och_hr_diagram",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val",
+    "miniräknare": false,
+    "geogebra": false
+  },
+  {
+    "id": "5.325",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>Observationer visar att universums expansion accelererar. Vilken framtidsbild ligger närmast den enklaste modellen där denna acceleration fortsätter?</p><p>A. Expansionen bromsar och universum kollapsar snart.<br>B. Expansionen fortsätter och avlägsna galaxer blir allt mer separerade.<br>C. Alla galaxer stannar på fasta avstånd.<br>D. Universums skala börjar oscillera regelbundet.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Om den accelererande expansionen fortsätter växer avstånden mellan gravitationellt obundna strukturer allt snabbare.</p><p class=\"facit-svar\"><strong>Svar:</strong> B.</p></div>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp",
+      "resonemang"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "val",
+    "rättSvar": "B",
+    "tolerans": null,
+    "självrättning": true,
+    "svarFormat": "val",
+    "miniräknare": false,
+    "geogebra": false
+  },
+  {
+    "id": "5.326",
+    "kap": 5,
+    "omr": "framtiden",
+    "niva": "C",
+    "poang": "(1/2/0)",
+    "t": "<p>I en modell expanderar universum så att skalfaktorn ökar från 1,0 till 1,5 medan två galaxer följer expansionen utan egen rörelse relativt den kosmiska expansionen.</p><p>Hur förändras deras inbördes avstånd?</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För galaxer som följer expansionen är det kosmologiska avståndet proportionellt mot skalfaktorn.</p><div class=\"facit-matte\">\\[\\frac{d_2}{d_1}=\\frac{a_2}{a_1}=1{,}5\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> Avståndet blir 1,5 gånger så stort, alltså ökar det med 50 %.</p></div>",
+    "familj": "Universums framtida utveckling",
+    "formaga": [
+      "begrepp",
+      "procedur"
+    ],
+    "familjNyckel": "framtiden__universums_framtida_utveckling",
+    "svarstyp": "numeriskt",
+    "rättSvar": 1.5,
+    "tolerans": 0.02,
+    "självrättning": true,
+    "svarFormat": "numeriskt",
+    "miniräknare": false,
+    "geogebra": false
+  },
   {
     "id": "4.324",
     "kap": 4,
@@ -17530,7 +17753,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>I Bohrs modell för väte gäller \\(E_n=-13,6/n^2\\) eV.</p><p>Bestäm elektronens energi i nivån \\(n=2\\).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_2=\\frac{-13,6}{2^2}=-3.4\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-3.4\\,\\mathrm{eV}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> I Bohrs modell är energin negativ för en bunden elektron. Ju större \\(n\\) är, desto närmare 0 ligger nivån.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_2=\\frac{-13,6}{2^2}=-3.4\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-3.4\\,\\mathrm{eV}\\).</p></div>",
     "familj": "Bohrs atommodell",
     "formaga": [
       "procedur"
@@ -17550,7 +17773,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>I Bohrs modell för väte gäller \\(E_n=-13,6/n^2\\) eV.</p><p>Bestäm elektronens energi i nivån \\(n=4\\).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_4=\\frac{-13,6}{4^2}=-0.85\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-0.85\\,\\mathrm{eV}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> I Bohrs modell är energin negativ för en bunden elektron. Ju större \\(n\\) är, desto närmare 0 ligger nivån.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Sätt in huvudkvanttalet i uttrycket för energinivåerna.</p><div class=\"facit-matte\">\\[E_4=\\frac{-13,6}{4^2}=-0.85\\,\\mathrm{eV}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(-0.85\\,\\mathrm{eV}\\).</p></div>",
     "familj": "Bohrs atommodell",
     "formaga": [
       "procedur"
@@ -17610,7 +17833,7 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>I Bohrs modell är radien \\(r_n=n^2a_0\\), där \\(a_0=5,29\\cdot10^{-11}\\) m.</p><p>Bestäm radien för nivån \\(n=5\\). Ange svaret i nm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Radien växer med kvadraten på huvudkvanttalet.</p><div class=\"facit-matte\">\\[r_5=25\\cdot5,29\\cdot10^{-11}=1.322\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(1.32\\,\\mathrm{nm}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> I Bohrs modell är energin negativ för en bunden elektron. Ju större \\(n\\) är, desto närmare 0 ligger nivån.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Radien växer med kvadraten på huvudkvanttalet.</p><div class=\"facit-matte\">\\[r_5=25\\cdot5,29\\cdot10^{-11}=1.322\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(1.32\\,\\mathrm{nm}\\).</p></div>",
     "familj": "Bohrs atommodell",
     "formaga": [
       "procedur"
@@ -17630,7 +17853,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Monokromatiskt ljus med våglängden 600 nm passerar en dubbelspalt med spaltavståndet 20 μm. Skärmen står 1.5 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 1? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.5\\cdot1\\frac{600\\cdot10^{-9}}{20\\cdot10^{-6}}=0.0450\\,\\mathrm m=4.50\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4.50\\,\\mathrm{cm}\\).</p></div>",
+    "s": "<p><strong>Dubbelspalt nära mitten:</strong> För små vinklar kan läget på skärmen beräknas med \\(y_m\\approx m\\lambda L/d\\). Skriv först alla längder i samma enhet.</p><div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.5\\cdot1\\frac{600\\cdot10^{-9}}{20\\cdot10^{-6}}=0.0450\\,\\mathrm m=4.50\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4.50\\,\\mathrm{cm}\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "formaga": [
       "procedur"
@@ -17650,7 +17873,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>Monokromatiskt ljus med våglängden 520 nm passerar en dubbelspalt med spaltavståndet 25 μm. Skärmen står 2.0 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 2? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=2.0\\cdot2\\frac{520\\cdot10^{-9}}{25\\cdot10^{-6}}=0.0832\\,\\mathrm m=8.32\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8.32\\,\\mathrm{cm}\\).</p></div>",
+    "s": "<p><strong>Dubbelspalt nära mitten:</strong> För små vinklar kan läget på skärmen beräknas med \\(y_m\\approx m\\lambda L/d\\). Skriv först alla längder i samma enhet.</p><div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=2.0\\cdot2\\frac{520\\cdot10^{-9}}{25\\cdot10^{-6}}=0.0832\\,\\mathrm m=8.32\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8.32\\,\\mathrm{cm}\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "formaga": [
       "procedur"
@@ -17670,7 +17893,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Monokromatiskt ljus med våglängden 450 nm passerar en dubbelspalt med spaltavståndet 15 μm. Skärmen står 1.2 m bort.</p><p>Hur långt från centralmaximum ligger maximum av ordning 1? Använd småvinkelapproximationen. Ange svaret i cm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.2\\cdot1\\frac{450\\cdot10^{-9}}{15\\cdot10^{-6}}=0.0360\\,\\mathrm m=3.60\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3.60\\,\\mathrm{cm}\\).</p></div>",
+    "s": "<p><strong>Dubbelspalt nära mitten:</strong> För små vinklar kan läget på skärmen beräknas med \\(y_m\\approx m\\lambda L/d\\). Skriv först alla längder i samma enhet.</p><div class=\"facit-v2\"><p class=\"facit-metod\">För små vinklar gäller \\(y_m\\approx Lm\\lambda/d\\).</p><div class=\"facit-matte\">\\[y=1.2\\cdot1\\frac{450\\cdot10^{-9}}{15\\cdot10^{-6}}=0.0360\\,\\mathrm m=3.60\\,\\mathrm{cm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3.60\\,\\mathrm{cm}\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "formaga": [
       "procedur"
@@ -17690,7 +17913,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>Ett optiskt gitter har 500 linjer per mm. Ljus med våglängden 632 nm träffar gittret vinkelrätt.</p><p>Bestäm vinkeln till första ordningens maximum.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{500\\cdot10^3}=2.000e-06\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{632\\cdot10^{-9}}{d}\\right)=18.42^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(18.4^\\circ\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{500\\cdot10^3}=2{,}000\\cdot10^{-6}\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{632\\cdot10^{-9}}{d}\\right)=18.42^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(18.4^\\circ\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "formaga": [
       "procedur"
@@ -17710,7 +17933,7 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>Ett optiskt gitter har 1200 linjer per mm. Ljus med våglängden 450 nm träffar gittret vinkelrätt.</p><p>Bestäm vinkeln till första ordningens maximum.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{1200\\cdot10^3}=8.333e-07\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{450\\cdot10^{-9}}{d}\\right)=32.68^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(32.7^\\circ\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Gitterkonstanten är avståndet mellan två linjer. För första ordningen gäller \\(d\\sin\\theta=\\lambda\\).</p><div class=\"facit-matte\">\\[d=\\frac1{1200\\cdot10^3}=8{,}333\\cdot10^{-7}\\,\\mathrm m\\]\\[\\theta=\\arcsin\\left(\\frac{450\\cdot10^{-9}}{d}\\right)=32.68^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(32.7^\\circ\\).</p></div>",
     "familj": "Dubbelspalt och gitter",
     "formaga": [
       "procedur"
@@ -17730,7 +17953,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnetisk våg har frekvensen \\(1.00e+08\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{1.00e+08}=3\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3\\,\\mathrm m\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{1{,}00\\cdot10^{8}}=3\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3\\,\\mathrm m\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "formaga": [
       "procedur"
@@ -17750,7 +17973,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>En elektromagnetisk våg har frekvensen \\(2.45e+09\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{2.45e+09}=0.122\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.122\\,\\mathrm m\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{2{,}45\\cdot10^{9}}=0.122\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(0.122\\,\\mathrm m\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "formaga": [
       "procedur"
@@ -17770,7 +17993,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En elektromagnetisk våg har frekvensen \\(5.00e+14\\) Hz.</p><p>Bestäm våglängden i vakuum.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{5.00e+14}=6e-07\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(6e-07\\,\\mathrm m\\).</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Alla elektromagnetiska vågor färdas med ljusets hastighet i vakuum, så \\(c=f\\lambda\\).</p><div class=\"facit-matte\">\\[\\lambda=\\frac{2,998\\cdot10^8}{5{,}00\\cdot10^{14}}=6\\cdot10^{-7}\\,\\mathrm m\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(6\\cdot10^{-7}\\,\\mathrm m\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "formaga": [
       "procedur"
@@ -17790,15 +18013,15 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En elektromagnetisk våg har våglängden 10 nm.</p><p>Bestäm frekvensen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{10\\cdot10^{-9}}=2.998e+16\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3.00e+16\\,\\mathrm{Hz}\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{10\\cdot10^{-9}}=2{,}998\\cdot10^{16}\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3{,}00\\cdot10^{16}\\,\\mathrm{Hz}\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
     "svarstyp": "numeriskt",
-    "rättSvar": 2.998e+16,
-    "tolerans": 449700000000000.0,
+    "rättSvar": 29980000000000000,
+    "tolerans": 449700000000000,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "Hz"
@@ -17810,15 +18033,15 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>En elektromagnetisk våg har våglängden 0.15 nm.</p><p>Bestäm frekvensen.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{0.15\\cdot10^{-9}}=1.999e+18\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(2.00e+18\\,\\mathrm{Hz}\\).</p></div>",
+    "s": "<p><strong>Enhetssteg:</strong> Skriv frekvensen i Hz innan \\(c=f\\lambda\\) används. Då fås våglängden direkt i meter.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd \\(f=c/\\lambda\\) och skriv våglängden i meter.</p><div class=\"facit-matte\">\\[f=\\frac{2,998\\cdot10^8}{0.15\\cdot10^{-9}}=1{,}999\\cdot10^{18}\\,\\mathrm{Hz}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(2{,}00\\cdot10^{18}\\,\\mathrm{Hz}\\).</p></div>",
     "familj": "Elektromagnetiska vågor och spektrum",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "em_vagor__elektromagnetiska_vagor_och_spektrum",
     "svarstyp": "numeriskt",
-    "rättSvar": 1.9986666666666668e+18,
-    "tolerans": 2.998e+16,
+    "rättSvar": 1998666666666666800,
+    "tolerans": 29980000000000000,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "Hz"
@@ -17990,14 +18213,14 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En laser med effekten 2.0 mW sänder ljus med våglängden 650 nm.</p><p>Hur många fotoner sänder lasern ut per sekund?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=3.056e-19\\,\\mathrm J\\]\\[N=\\frac{2.0\\cdot10^{-3}}{E_f}=6.544e+15\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(6.54e+15\\) fotoner/s.</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=3{,}056\\cdot10^{-19}\\,\\mathrm J\\]\\[N=\\frac{2.0\\cdot10^{-3}}{E_f}=6{,}544\\cdot10^{15}\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(6{,}54\\cdot10^{15}\\) fotoner/s.</p></div>",
     "familj": "Fotonenergi",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "svarstyp": "numeriskt",
-    "rättSvar": 6544256186889459.0,
+    "rättSvar": 6544256186889459,
     "tolerans": 98163842803341.88,
     "självrättning": true,
     "svarFormat": "numeriskt",
@@ -18010,14 +18233,14 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>En laser med effekten 5.0 mW sänder ljus med våglängden 405 nm.</p><p>Hur många fotoner sänder lasern ut per sekund?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=4.905e-19\\,\\mathrm J\\]\\[N=\\frac{5.0\\cdot10^{-3}}{E_f}=1.019e+16\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(1.02e+16\\) fotoner/s.</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Bestäm först energin per foton. Antalet fotoner per sekund fås sedan av \\(N=P/E_f\\).</p><div class=\"facit-matte\">\\[E_f=\\frac{hc}{\\lambda}=4{,}905\\cdot10^{-19}\\,\\mathrm J\\]\\[N=\\frac{5.0\\cdot10^{-3}}{E_f}=1{,}019\\cdot10^{16}\\,\\mathrm{s^{-1}}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(1{,}02\\cdot10^{16}\\) fotoner/s.</p></div>",
     "familj": "Fotonenergi",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "ljus_partikelstrom__fotonenergi",
     "svarstyp": "numeriskt",
-    "rättSvar": 1.0193937521885504e+16,
+    "rättSvar": 10193937521885504,
     "tolerans": 152909062828282.56,
     "självrättning": true,
     "svarFormat": "numeriskt",
@@ -18030,7 +18253,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 50 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot50=3500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3500\\,\\mathrm{km/s}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot50=3500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(3500\\,\\mathrm{km/s}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "formaga": [
       "procedur"
@@ -18050,7 +18273,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 120 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot120=8400\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8400\\,\\mathrm{km/s}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot120=8400\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(8400\\,\\mathrm{km/s}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "formaga": [
       "procedur"
@@ -18058,7 +18281,7 @@ window.BANK2 = [
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "svarstyp": "numeriskt",
     "rättSvar": 8400,
-    "tolerans": 126.0,
+    "tolerans": 126,
     "självrättning": true,
     "svarFormat": "numeriskt",
     "svarEnhet": "km/s"
@@ -18070,7 +18293,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>Anta Hubbles konstant \\(H_0=70\\,\\mathrm{km/s/Mpc}\\). En galax ligger 450 Mpc bort.</p><p>Vilken recessionshastighet förutsäger Hubbles lag?</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot450=31500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(31500\\,\\mathrm{km/s}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Hubbles lag är \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[v=70\\cdot450=31500\\,\\mathrm{km/s}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(31500\\,\\mathrm{km/s}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "formaga": [
       "procedur"
@@ -18090,14 +18313,14 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En galax har recessionshastigheten 8400 km/s. Använd \\(H_0=70\\,\\mathrm{km/s/Mpc}\\).</p><p>Uppskatta avståndet till galaxen med Hubbles lag.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{8400}{70}=120\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(120\\,\\mathrm{Mpc}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{8400}{70}=120\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(120\\,\\mathrm{Mpc}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "svarstyp": "numeriskt",
-    "rättSvar": 120.0,
+    "rättSvar": 120,
     "tolerans": 1.7999999999999998,
     "självrättning": true,
     "svarFormat": "numeriskt",
@@ -18110,14 +18333,14 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>En galax har recessionshastigheten 21000 km/s. Använd \\(H_0=70\\,\\mathrm{km/s/Mpc}\\).</p><p>Uppskatta avståndet till galaxen med Hubbles lag.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{21000}{70}=300\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(300\\,\\mathrm{Mpc}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Hubbles lag \\(v=H_0d\\) ger recessionsfarten direkt när avståndet är känt.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut avståndet ur \\(v=H_0d\\).</p><div class=\"facit-matte\">\\[d=\\frac{21000}{70}=300\\,\\mathrm{Mpc}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(300\\,\\mathrm{Mpc}\\).</p></div>",
     "familj": "Hubbles lag och rödförskjutning",
     "formaga": [
       "procedur"
     ],
     "familjNyckel": "kosmologi__hubbles_lag_och_rodforskjutning",
     "svarstyp": "numeriskt",
-    "rättSvar": 300.0,
+    "rättSvar": 300,
     "tolerans": 4.5,
     "självrättning": true,
     "svarFormat": "numeriskt",
@@ -18130,7 +18353,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Ljus går från ett medium med brytningsindex 1.0 till ett medium med brytningsindex 1.5. Infallsvinkeln är 30°.</p><p>Bestäm brytningsvinkeln.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 30^\\circ}{1.5}\\Rightarrow\\theta_2=19.47^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(19.5^\\circ\\).</p></div>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 30^\\circ}{1.5}\\Rightarrow\\theta_2=19.47^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(19.5^\\circ\\).</p></div>",
     "familj": "Snells lag och brytning",
     "formaga": [
       "procedur"
@@ -18150,7 +18373,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>Ljus går från ett medium med brytningsindex 1.33 till ett medium med brytningsindex 1.0. Infallsvinkeln är 35°.</p><p>Bestäm brytningsvinkeln.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.33\\sin 35^\\circ}{1.0}\\Rightarrow\\theta_2=49.72^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(49.7^\\circ\\).</p></div>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.33\\sin 35^\\circ}{1.0}\\Rightarrow\\theta_2=49.72^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(49.7^\\circ\\).</p></div>",
     "familj": "Snells lag och brytning",
     "formaga": [
       "procedur"
@@ -18170,7 +18393,7 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>Ljus går från ett medium med brytningsindex 1.0 till ett medium med brytningsindex 1.33. Infallsvinkeln är 50°.</p><p>Bestäm brytningsvinkeln.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 50^\\circ}{1.33}\\Rightarrow\\theta_2=35.17^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(35.2^\\circ\\).</p></div>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Använd Snells lag \\(n_1\\sin\\theta_1=n_2\\sin\\theta_2\\).</p><div class=\"facit-matte\">\\[\\sin\\theta_2=\\frac{1.0\\sin 50^\\circ}{1.33}\\Rightarrow\\theta_2=35.17^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(35.2^\\circ\\).</p></div>",
     "familj": "Snells lag och brytning",
     "formaga": [
       "procedur"
@@ -18190,7 +18413,7 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>Ljus går från ett material med brytningsindex 1.50 till luft.</p><p>Bestäm gränsvinkeln för totalreflektion.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.50}\\right)=41.81^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(41.8^\\circ\\).</p></div>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.50}\\right)=41.81^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(41.8^\\circ\\).</p></div>",
     "familj": "Snells lag och brytning",
     "formaga": [
       "procedur"
@@ -18210,7 +18433,7 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>Ljus går från ett material med brytningsindex 1.33 till luft.</p><p>Bestäm gränsvinkeln för totalreflektion.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.33}\\right)=48.75^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(48.8^\\circ\\).</p></div>",
+    "s": "<p><strong>Rimlighetskontroll:</strong> Vinklarna i Snells lag mäts från normalen. Till större brytningsindex ska vinkeln minska; till mindre brytningsindex ska den öka.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Vid gränsvinkeln är brytningsvinkeln 90°. Snells lag ger därför \\(n\\sin\\theta_c=1\\).</p><div class=\"facit-matte\">\\[\\theta_c=\\arcsin\\left(\\frac1{1.33}\\right)=48.75^\\circ\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(48.8^\\circ\\).</p></div>",
     "familj": "Snells lag och brytning",
     "formaga": [
       "procedur"
@@ -18230,18 +18453,19 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 5800 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{5800}=500\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(500\\,\\mathrm{nm}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Wiens lag \\(\\lambda_{max}T=b\\) kopplar toppvåglängden till temperaturen: högre temperatur ger kortare toppvåglängd.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{5800}=500\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(500\\,\\mathrm{nm}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 499.65517241379314,
     "tolerans": 7.494827586206897,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "nm"
+    "svarEnhet": "nm",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.350",
@@ -18250,18 +18474,19 @@ window.BANK2 = [
     "niva": "E",
     "poang": "(2/0/0)",
     "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 3200 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{3200}=906\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(906\\,\\mathrm{nm}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Wiens lag \\(\\lambda_{max}T=b\\) kopplar toppvåglängden till temperaturen: högre temperatur ger kortare toppvåglängd.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{3200}=906\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(906\\,\\mathrm{nm}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 905.625,
     "tolerans": 13.584375,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "nm"
+    "svarEnhet": "nm",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.351",
@@ -18270,18 +18495,19 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En kropp kan approximeras som en svartkropp med temperaturen 10000 K.</p><p>Vid vilken våglängd ligger strålningsmaximum? Använd Wiens lag \\(\\lambda_{max}T=2,898\\cdot10^{-3}\\,\\mathrm{mK}\\). Ange svaret i nm.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{10000}=290\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(290\\,\\mathrm{nm}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Wiens lag \\(\\lambda_{max}T=b\\) kopplar toppvåglängden till temperaturen: högre temperatur ger kortare toppvåglängd.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Lös ut \\(\\lambda_{max}\\) ur Wiens lag.</p><div class=\"facit-matte\">\\[\\lambda_{max}=\\frac{2,898\\cdot10^{-3}}{10000}=290\\,\\mathrm{nm}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(290\\,\\mathrm{nm}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 289.8,
     "tolerans": 4.347,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "nm"
+    "svarEnhet": "nm",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.352",
@@ -18290,18 +18516,19 @@ window.BANK2 = [
     "niva": "C",
     "poang": "(1/2/0)",
     "t": "<p>En ideal svartkropp har temperaturen 450 K.</p><p>Hur stor strålningseffekt avges per kvadratmeter? Använd \\(P/A=\\sigma T^4\\) och \\(\\sigma=5,67\\cdot10^{-8}\\,\\mathrm{W/(m^2K^4)}\\).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot450^4=2325.2\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(2325\\,\\mathrm{W/m^2}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Stefan–Boltzmanns lag ger \\(P/A=\\sigma T^4\\). Fjärdepotensen gör att även en måttlig temperaturökning kan ge en stor effektökning.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot450^4=2325.2\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(2325\\,\\mathrm{W/m^2}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 2325.2079101911872,
     "tolerans": 34.878118652867805,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "W/m²"
+    "svarEnhet": "W/m²",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   },
   {
     "id": "4.353",
@@ -18310,17 +18537,18 @@ window.BANK2 = [
     "niva": "A",
     "poang": "(0/2/1)",
     "t": "<p>En ideal svartkropp har temperaturen 900 K.</p><p>Hur stor strålningseffekt avges per kvadratmeter? Använd \\(P/A=\\sigma T^4\\) och \\(\\sigma=5,67\\cdot10^{-8}\\,\\mathrm{W/(m^2K^4)}\\).</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot900^4=37203.3\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(37203\\,\\mathrm{W/m^2}\\).</p></div>",
+    "s": "<p><strong>Fysikalisk idé:</strong> Stefan–Boltzmanns lag ger \\(P/A=\\sigma T^4\\). Fjärdepotensen gör att även en måttlig temperaturökning kan ge en stor effektökning.</p><div class=\"facit-v2\"><p class=\"facit-metod\">Sätt temperaturen i kelvin direkt i Stefan–Boltzmanns lag.</p><div class=\"facit-matte\">\\[\\frac PA=5,67\\cdot10^{-8}\\cdot900^4=37203.3\\,\\mathrm{W/m^2}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> cirka \\(37203\\,\\mathrm{W/m^2}\\).</p></div>",
     "familj": "Temperaturstrålning: Wien och Stefan–Boltzmann",
     "formaga": [
       "procedur"
     ],
-    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann",
+    "familjNyckel": "temperaturstralning__temperaturstralning_wien_och_stefanboltzmann",
     "svarstyp": "numeriskt",
     "rättSvar": 37203.326563058996,
     "tolerans": 558.0498984458849,
     "självrättning": true,
     "svarFormat": "numeriskt",
-    "svarEnhet": "W/m²"
+    "svarEnhet": "W/m²",
+    "familjNyckelFöreHierarki": "temperaturstralning__temperaturstralning_wien_och_stefan_boltzmann"
   }
 ];
