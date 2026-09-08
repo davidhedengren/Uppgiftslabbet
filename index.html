@@ -4277,6 +4277,53 @@ table.data th,table.data td{border-color:var(--x-line)!important}
    Här samlas storleken på ett ställe. Vill du ha större eller mindre
    figurer i PDF:en ändrar du bara måtten nedan.
    ═══════════════════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════════════════
+   FIGURSTORLEK I UPPGIFTSLISTAN · skärm
+
+   Uppgiftsbankens SVG:er har olika inbyggda width/height. Tidigare fanns
+   bara ett breddtak på webben, så höga figurer kunde bli flera hundra
+   pixlar höga trots att PDF-exporten såg normal ut. Här sätts ett separat
+   skärmtak utan att röra själva SVG-koden eller utskriftsreglerna.
+   ═══════════════════════════════════════════════════════════════════════ */
+@media screen{
+  .kroppen{
+    --web-figbredd:520px;
+    --web-fighojd:380px;
+  }
+
+  /* Vanliga bankfigurer: behåll naturliga proportioner men låt dem aldrig
+     dominera ett uppgiftskort på höjden. */
+  .kroppen .fig:not([data-bildskala]):not([style*="width"]) svg,
+  .kroppen .fig:not([data-bildskala]):not([style*="width"]) img{
+    display:block!important;
+    width:auto!important;
+    height:auto!important;
+    max-width:min(100%,var(--web-figbredd))!important;
+    max-height:var(--web-fighojd)!important;
+  }
+
+  /* Smala/breda figurer får fortfarande sin avsedda karaktär, men samma
+     höjdtak gäller så att även stående figurer hålls kompakta. */
+  .kroppen .fig.smal:not([data-bildskala]):not([style*="width"]) svg,
+  .kroppen .fig.smal:not([data-bildskala]):not([style*="width"]) img{
+    max-width:min(100%,380px)!important;
+  }
+  .kroppen .fig.bred:not([data-bildskala]):not([style*="width"]) svg,
+  .kroppen .fig.bred:not([data-bildskala]):not([style*="width"]) img{
+    max-width:min(100%,560px)!important;
+  }
+
+  /* Manuellt storleksändrade figurer respekterar fortsatt vald bredd, men
+     får ett säkerhetstak på höjden så att de inte kan spränga listvyn. */
+  .kroppen .fig[data-bildskala] svg,
+  .kroppen .fig[data-bildskala] img,
+  .kroppen .fig[style*="width"] svg,
+  .kroppen .fig[style*="width"] img{
+    max-height:var(--web-fighojd)!important;
+    object-fit:contain;
+  }
+}
+
 @media print{
   #utskrift{
     --pdf-figbredd:88mm;    /* största bredd för en figur i en uppgift */
