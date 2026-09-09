@@ -744,7 +744,7 @@ button,input,select{font-family:inherit;font-size:inherit;color:inherit}
 .kryssgrupp{display:flex;gap:8px;flex-wrap:wrap}
 
 /* ── tre paneler ── */
-.arbetsyta{display:grid;grid-template-columns:272px minmax(0,1fr) 360px;
+.arbetsyta{display:grid;grid-template-columns:272px minmax(0,1fr) var(--hogerbredd,404px);
   height:calc(100vh - 80px);overflow:hidden}
 /* Grid- och flexbarn får annars en osynlig min-width satt av sitt eget
    innehåll (t.ex. en rad knappar eller etiketter som inte vill radbryta).
@@ -1442,7 +1442,7 @@ table.data th{background:var(--sunken);font-weight:600}
   #utskrift .ph img{height:40px}
   #utskrift h1{font-family:var(--ui);font-size:17pt;margin:0;font-weight:700}
   #utskrift .pm{font-family:var(--mono);font-size:9.5pt;color:#444;margin-top:2px}
-  #utskrift .pu{margin-bottom:16pt;break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
+  #utskrift .pu{margin-bottom:var(--pdf-uppgiftsavstand,16pt);break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
   #utskrift .pu.pdf-pu{
     display:grid!important;
     grid-template-columns:25pt minmax(0,1fr) 78pt!important;
@@ -1493,7 +1493,7 @@ table.data th{background:var(--sunken);font-weight:600}
   #utskrift .fig svg,#utskrift .fig img{max-width:120mm;max-height:90mm;width:auto;height:auto}
 }
 @media (max-width:1180px){
-  .arbetsyta{grid-template-columns:240px minmax(0,1fr) 320px}
+  .arbetsyta{grid-template-columns:236px minmax(0,1fr) 348px}
 }
 @media (max-width:960px){
   body{overflow:auto}
@@ -4378,6 +4378,157 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   #utskrift .fu .fig img{ max-height:var(--pdf-fighojd-facit)!important }
 }
 </style>
+
+<style id="layoutlageStil">
+/* ── dra-och-släpp i bladlistan ──────────────────────────────────────────── */
+.brad{position:relative;touch-action:pan-y;padding-left:21px}
+.brad .greppa{position:absolute;left:3px;top:0;bottom:0;width:14px;display:grid;place-items:center;
+  cursor:grab;color:var(--muted);opacity:0;transition:opacity .13s}
+.brad:hover .greppa{opacity:.65}
+.brad .greppa:active{cursor:grabbing}
+.brad .btext{cursor:grab}
+.brad .greppa svg{width:11px;height:11px}
+.brad.dras{opacity:.45}
+.brad.slappzon{box-shadow:inset 0 2px 0 var(--ed)}
+.bladlista.drar .brad{transition:none}
+
+/* ── liten verktygsrad ovanför bladet ────────────────────────────────────── */
+.bladverktyg{display:flex;align-items:center;gap:10px;justify-content:space-between;
+  padding:9px 16px 0}
+.bladverktyg .minivaxel{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;
+  font-weight:600;color:var(--ink-2);cursor:pointer;user-select:none}
+.bladverktyg .minivaxel input{width:14px;height:14px;accent-color:var(--ed);cursor:pointer}
+.bladverktyg .knapp{padding:7px 11px;font-size:11.5px;border-radius:9px}
+.bladverktyg .knapp svg{width:13px;height:13px}
+
+/* ── slumpalternativ ─────────────────────────────────────────────────────── */
+.slumppanel{width:246px!important}
+.slumpval{margin-top:12px;padding-top:11px;border-top:1px solid var(--line-2);
+  display:flex;flex-direction:column;gap:8px}
+.slumpval label{display:flex!important;align-items:center;gap:8px;margin:0!important;
+  font-size:11.5px;font-weight:500;color:var(--ink-2);cursor:pointer}
+.slumpval input{width:14px;height:14px;accent-color:var(--ed);cursor:pointer;flex:none}
+
+/* ── layoutläget ─────────────────────────────────────────────────────────── */
+.layoutred{position:fixed;inset:0;z-index:2000;background:rgba(24,22,26,.55);
+  display:flex;align-items:stretch;justify-content:center;padding:22px}
+.layoutred[hidden]{display:none}
+.lr-dialog{background:var(--canvas,#F4F3F5);border-radius:18px;overflow:hidden;width:min(1180px,100%);
+  display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.lr-topp{display:flex;align-items:center;gap:18px;justify-content:space-between;flex-wrap:wrap;
+  padding:14px 18px;background:var(--surface,#fff);border-bottom:1px solid var(--line-2,#E4E3E6)}
+.lr-topp h2{margin:0;font-size:15.5px;font-weight:700;color:var(--ink)}
+.lr-under{margin:2px 0 0;font-size:11.5px;color:var(--muted)}
+.lr-verktyg{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.lr-glid{display:flex;align-items:center;gap:9px;font-size:11.5px;font-weight:600;color:var(--ink-2)}
+.lr-glid input[type=range]{width:126px;accent-color:var(--ed)}
+.lr-glid b{font-family:var(--mono);font-weight:600;color:var(--ink);min-width:42px;text-align:right}
+.lr-body{flex:1;overflow:auto;padding:26px 20px 60px;display:flex;justify-content:center;
+  background:repeating-linear-gradient(45deg,#EDECEF,#EDECEF 12px,#F2F1F4 12px,#F2F1F4 24px)}
+.lr-ark{position:relative;flex:none}
+.lr-papper{position:relative;width:210mm;min-height:297mm;background:#fff;
+  padding:20mm 15mm 22mm;box-shadow:0 6px 26px rgba(0,0,0,.16);
+  --pdf-figbredd:88mm;--pdf-fighojd:62mm;--pdf-figbredd-facit:66mm;--pdf-fighojd-facit:46mm}
+@media(max-width:1120px){
+  .lr-ark{transform:scale(.78);transform-origin:top center}
+  .lr-body{padding-bottom:0}
+}
+.lr-sidlinje{position:absolute;left:0;right:0;border-top:1px dashed #C6C2CB;pointer-events:none}
+.lr-sidlinje::after{content:attr(data-sida);position:absolute;right:4px;top:4px;
+  font:600 9px/1 var(--mono,monospace);color:#A9A5AE;letter-spacing:.06em}
+.lr-pu{position:relative}
+.lr-pu.markerad{outline:2px solid var(--ed);outline-offset:6px;border-radius:4px}
+.lr-pu.dras{opacity:.4}
+.lr-pu.slappzon::before{content:"";position:absolute;left:-10px;right:-10px;top:-7px;
+  border-top:2.5px solid var(--ed);border-radius:2px}
+.lr-handtag{position:absolute;top:-13px;right:-6px;display:flex;gap:1px;padding:3px;
+  background:var(--surface,#fff);border:1px solid var(--line-2,#E4E3E6);border-radius:9px;
+  box-shadow:0 3px 10px rgba(0,0,0,.09);opacity:0;transition:opacity .12s;z-index:5}
+.lr-pu:hover .lr-handtag,.lr-pu:focus-within .lr-handtag{opacity:1}
+.lr-handtag button{width:24px;height:24px;border:none;background:none;border-radius:6px;cursor:pointer;
+  color:var(--muted);display:grid;place-items:center;font:600 11px/1 var(--ui,system-ui)}
+.lr-handtag button:hover{background:var(--sunken,#F0EFF2);color:var(--ink)}
+.lr-handtag button.pa{background:var(--ed-tint,#E6F0EC);color:var(--ed,#0F6B4F)}
+.lr-handtag button.bort:hover{background:#FBE9E7;color:#B43123}
+.lr-handtag button svg{width:13px;height:13px}
+.lr-handtag .lr-flytt{cursor:grab;color:var(--ink-2)}
+.lr-handtag .lr-flytt:active{cursor:grabbing}
+.lr-bryt{position:relative}
+.lr-bryt::after{content:"ny sida";position:absolute;left:0;right:0;top:-14px;
+  border-top:2px dashed #B43123;font:600 8.5px/1 var(--mono,monospace);color:#B43123;
+  padding-top:3px;letter-spacing:.08em}
+.lr-fot{padding:11px 18px;background:var(--surface,#fff);border-top:1px solid var(--line-2,#E4E3E6);
+  font-size:11.5px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.lr-fot kbd{font:600 10.5px/1 var(--mono,monospace);background:var(--sunken,#F0EFF2);
+  border-radius:5px;padding:3px 5px;color:var(--ink-2)}
+
+/* Spegling av utskriftsreglerna så att förhandsvisningen blir identisk med PDF:en.
+   Genererad från #utskrift-reglerna – ändra inte här utan i utskrifts-CSS:en. */
+.lr-papper .fig[data-bildskala]{display:block!important;
+    width:min(var(--bildbredd,120mm),100%)!important;
+    max-width:100%!important;}
+.lr-papper .fig[data-bildskala] svg,.lr-papper .fig[data-bildskala] img{width:100%!important;max-width:none!important;height:auto!important;}
+.lr-papper{font-family:var(--las);font-size:11.5pt;line-height:1.6;color:#000}
+.lr-papper .ph{display:flex;align-items:center;gap:14px;border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:22px}
+.lr-papper .ph img{height:40px}
+.lr-papper h1{font-family:var(--ui);font-size:17pt;margin:0;font-weight:700}
+.lr-papper .pm{font-family:var(--mono);font-size:9.5pt;color:#444;margin-top:2px}
+.lr-papper .pu{margin-bottom:16pt;break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
+.lr-papper .pu.pdf-pu{display:grid!important;
+    grid-template-columns:25pt minmax(0,1fr) 78pt!important;
+    column-gap:0!important;
+    align-items:start!important}
+.lr-papper .pu.pdf-pu .pdf-uppgiftsmeta{grid-column:3!important;
+    grid-row:1!important;
+    text-align:right!important;
+    justify-self:stretch!important;
+    white-space:nowrap!important;
+    padding-top:1pt!important}
+.lr-papper .pn{font-family:var(--mono);font-weight:600}
+.lr-papper .pu p{margin:0 0 6pt}
+.lr-papper .pu p:last-child{margin-bottom:0}
+.lr-papper .pu .fig{margin-top:2pt!important}
+.lr-papper .fu p{margin:0 0 3pt}
+.lr-papper .utskriftsmeta{float:right;display:inline-flex;align-items:center;gap:5pt;margin-left:10pt;white-space:nowrap}
+.lr-papper .utskriftsverktyg{display:inline-flex;align-items:center;gap:3.5pt;color:#444}
+.lr-papper .utskriftsikon{display:inline-flex;align-items:center;justify-content:center;width:14pt;height:14pt}
+.lr-papper .utskriftsikon svg{display:block;width:13pt;height:13pt;overflow:visible}
+.lr-papper .pp{float:none;font-family:var(--mono);font-size:9.5pt;color:#444;margin-left:0}
+.lr-papper .nivåmärke{float:none;margin-left:0;-webkit-print-color-adjust:exact;print-color-adjust:exact;
+    font-family:var(--mono);font-size:9pt;font-weight:700;letter-spacing:.03em;
+    border-radius:4pt;padding:1.5pt 6pt;line-height:1.5}
+.lr-papper .nivåmärke.E{background:var(--nE-bg);color:var(--nE)}
+.lr-papper .nivåmärke.C{background:var(--nC-bg);color:var(--nC)}
+.lr-papper .nivåmärke.A{background:var(--nA-bg);color:var(--nA)}
+.lr-papper ol{margin:6pt 0;padding-left:0;list-style:none;counter-reset:d}
+.lr-papper li{padding-left:20pt;position:relative;margin-bottom:3pt}
+.lr-papper li::before{counter-increment:d;content:counter(d,lower-alpha) ")";position:absolute;left:0;font-family:var(--mono)}
+.lr-papper .fk{page-break-before:always;border-top:2px solid #000;padding-top:14pt}
+.lr-papper .fk h1{break-after:avoid;page-break-after:avoid}
+.lr-papper .fu{margin-bottom:12pt;font-family:var(--mono);font-size:9.5pt;line-height:1.7}
+.lr-papper .fu .fig{break-inside:avoid;page-break-inside:avoid;max-width:90mm;margin:3pt 0}
+.lr-papper .fu .fig svg,.lr-papper .fu .fig img{max-width:90mm;max-height:60mm;width:auto;height:auto}
+.lr-papper .fu .steg{padding-left:0;margin:3pt 0}
+.lr-papper .fu .stegnr{display:inline-block;min-width:15pt;font-weight:700;color:#B43123}
+.lr-papper .fu .komm{padding-left:15pt;font-family:var(--las);font-size:9.5pt;color:#333}
+.lr-papper table.data th{background:#eee}
+.lr-papper .fig{max-width:120mm;margin:2pt 0 3pt}
+.lr-papper .fig svg,.lr-papper .fig img{max-width:120mm;max-height:90mm;width:auto;height:auto}
+.lr-papper .fig[data-bildskala]{display:block!important;
+    width:min(var(--bildbredd,520px),100%)!important;
+    max-width:100%!important;
+    margin:2pt 0 3pt!important;}
+.lr-papper .fig[data-bildskala] svg,.lr-papper .fig[data-bildskala] img{display:block!important;width:100%!important;max-width:none!important;height:auto!important;}
+.lr-papper{--pdf-figbredd:88mm;    /* största bredd för en figur i en uppgift */
+    --pdf-fighojd:62mm;     /* största höjd – hindrar höga figurer från att äta upp sidan */
+    --pdf-figbredd-facit:66mm;
+    --pdf-fighojd-facit:46mm;}
+.lr-papper .fig[data-bildskala]{width:min(var(--bildbredd,520px),var(--pdf-figbredd),100%)!important;
+    max-width:var(--pdf-figbredd)!important;}
+.lr-papper .fig[data-bildskala] svg,.lr-papper .fig[data-bildskala] img{width:100%!important;}
+.lr-papper .fu .fig{max-width:var(--pdf-figbredd-facit)!important; margin:2pt 0 3pt!important}
+.lr-papper .fu .fig svg,.lr-papper .fu .fig img{max-height:var(--pdf-fighojd-facit)!important}
+</style>
 </head>
 <body class="password-locked">
 
@@ -4501,6 +4652,11 @@ table.data th,table.data td{border-color:var(--x-line)!important}
         <input type="number" id="slumpaAntal" min="1" max="40" value="12">
         <button class="knapp primär" id="slumpaKör" type="button">Slumpa</button>
       </div>
+      <div class="slumpval">
+        <label><input type="checkbox" id="slumpFormaga" checked> Blanda förmågor</label>
+        <label><input type="checkbox" id="slumpTyp" checked> Blanda uppgiftstyp</label>
+        <label><input type="checkbox" id="slumpOrdna" checked> Ordna E → C → A</label>
+      </div>
     </div>
   </div>
   <button class="knapp tyst" id="bytKurs" type="button">
@@ -4613,6 +4769,16 @@ table.data th,table.data td{border-color:var(--x-line)!important}
         <span><i style="background:var(--nA)"></i><b id="pA">0</b> A</span>
       </div>
       <div class="gränser" id="gränser"></div>
+    </div>
+
+    <div class="bladverktyg">
+      <label class="minivaxel" title="Nya uppgifter läggs in i nivåordning">
+        <input type="checkbox" id="ordnaNiva" checked> Ordna E → C → A
+      </label>
+      <button class="knapp liten tyst" id="oppnaLayout" type="button" title="Visa och redigera hur provet ser ut på pappret">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        Layout
+      </button>
     </div>
 
     <div class="panel bladlista" id="blad"></div>
@@ -4786,6 +4952,34 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   <div class="prfot">
     <button class="knapp tyst liten" id="prÅterställ" type="button">Återställ</button>
     <button class="knapp primär liten" id="prKlar" type="button">Klar</button>
+  </div>
+</div>
+
+
+<div class="layoutred" id="layoutred" role="dialog" aria-modal="true" aria-labelledby="lrRubrik" hidden>
+  <div class="lr-dialog">
+    <div class="lr-topp">
+      <div>
+        <h2 id="lrRubrik">Layout</h2>
+        <p class="lr-under" id="lrUnder"></p>
+      </div>
+      <div class="lr-verktyg">
+        <label class="lr-glid">Avstånd
+          <input type="range" id="lrAvstand" min="6" max="60" step="1" value="16">
+          <b id="lrAvstandVal">16 pt</b>
+        </label>
+        <button class="knapp liten tyst" id="lrSortera" type="button">Ordna E → C → A</button>
+        <button class="knapp liten tyst" id="lrNollstall" type="button">Nollställ utrymmen</button>
+        <button class="knapp primär" id="lrKlar" type="button">Klar</button>
+      </div>
+    </div>
+    <div class="lr-body"><div class="lr-ark"><div class="lr-papper" id="lrPapper"></div></div></div>
+    <div class="lr-fot">
+      <span>Dra i <b>⠿</b> för att flytta en uppgift.</span>
+      <span><b>+</b> och <b>−</b> ändrar skrivutrymmet under uppgiften.</span>
+      <span>Streckade linjer visar var sidorna bryts.</span>
+      <span><kbd>Esc</kbd> stänger</span>
+    </div>
   </div>
 </div>
 
@@ -4970,7 +5164,8 @@ function sparInstallningar(){
     includeSolutions:Boolean($('#taMedFacit')?.checked),
     totalPointsOnly:Boolean($('#visaTotalpoangExport')?.checked),
     showAidSymbols:Boolean($('#visaHjälpmedelExport')?.checked),
-    showPoints:Boolean(state.visaPoäng)
+    showPoints:Boolean(state.visaPoäng),
+    taskSpacing:(typeof LAYOUT!=='undefined'?LAYOUT.avstand:16)
   };
 }
 function sparSnapshotUppgift(x){
@@ -5108,6 +5303,7 @@ function sparAppliceraInstallningar(d){
   if($('#visaTotalpoangExport')) $('#visaTotalpoangExport').checked=Boolean(st.totalPointsOnly);
   if($('#visaHjälpmedelExport')) $('#visaHjälpmedelExport').checked=st.showAidSymbols!==false;
   state.visaPoäng=Boolean(st.showPoints); if($('#visaPoäng')) $('#visaPoäng').checked=state.visaPoäng;
+  if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
 }
 async function sparLaddaDokument(doc,{manuell=true}={}){
   if(!doc) return;
@@ -6545,6 +6741,9 @@ function körSlumpa(){
   const ut=[];
   const valdaId=new Set();
   const anvandaFamiljer=new Set();
+  const antalFamilj=new Map();
+  const antalFormaga=new Map();
+  const antalSvarstyp=new Map();
   const antalNiva={E:0,C:0,A:0};
 
   const behov=niv=>Math.max(0,(kvot[niv]||0)-(antalNiva[niv]||0));
@@ -6570,10 +6769,26 @@ function körSlumpa(){
       const nv=nivaNyckel(x), fam=famNyckel(x), omr=omrNyckel(x);
       let poang=0;
       if(behov(nv)>0) poang+=1000+behov(nv)*25;
-      if(!anvandaFamiljer.has(fam)) poang+=300;
+      if(!anvandaFamiljer.has(fam)) poang+=300; else poang-=(antalFamilj.get(fam)||0)*130;
       poang-= (antalOmrade.get(omr)||0)*45;
-      /* liten slumpterm bryter likvärdiga kandidater utan att slå ut balansen */
-      poang+=Math.random()*10;
+      /* Styr förmågefördelningen mot målen i FORMAGEMAL: en uppgift lyfts om
+         dess förmågor ligger under sin målandel och tyngs ned om de ligger över.
+         Förmågor utan mål (t.ex. begrepp) styrs inte alls. */
+      if((typeof SLUMPVAL==='undefined'?1:SLUMPVAL.formaga)){
+        poang+=formagePoang(x,antalFormaga);
+      }
+      /* Sprid över uppgiftstyp (svarstyp) så att inte allt blir kortsvar. */
+      if((typeof SLUMPVAL==='undefined'?1:SLUMPVAL.typ)){
+        const ty=String(x.svarstyp||'');
+        const c=antalSvarstyp.get(ty)||0;
+        poang+= c? -c*70 : 130;
+      }
+      /* Slumpterm som bryter likvärdiga kandidater. Den styr hur mycket två
+         slumpningar med samma filter skiljer sig åt. Med 10 blir valet nästan
+         deterministiskt och samma uppgifter återkommer; 40 ger tydligt fler
+         olika uppgifter (mätt: 261 → 409 olika över 400 prov) utan att
+         förmågeprofilen påverkas nämnvärt. */
+      poang+=Math.random()*40;
       if(poang>bast+1e-9){ bast=poang; basta=[x]; }
       else if(Math.abs(poang-bast)<1e-9) basta.push(x);
     }
@@ -6582,13 +6797,18 @@ function körSlumpa(){
     ut.push(x);
     valdaId.add(x.id);
     anvandaFamiljer.add(famNyckel(x));
+    antalFamilj.set(famNyckel(x),(antalFamilj.get(famNyckel(x))||0)+1);
+    for(const f of formagorAv(x)) antalFormaga.set(f,(antalFormaga.get(f)||0)+1);
+    const ty=String(x.svarstyp||'');
+    antalSvarstyp.set(ty,(antalSvarstyp.get(ty)||0)+1);
     const nv=nivaNyckel(x);
     if(nv) antalNiva[nv]=(antalNiva[nv]||0)+1;
     const omr=omrNyckel(x);
     antalOmrade.set(omr,(antalOmrade.get(omr)||0)+1);
   }
 
-  state.blad=ut; rita(); ritaBlad();
+  state.blad=(typeof SLUMPVAL!=='undefined'&&!SLUMPVAL.ordna)?ut:sorteraNivaordning(ut);
+  rita(); ritaBlad();
   $('#slumppanel').classList.remove('öppen');
   $('#slumpaKnapp').setAttribute('aria-expanded','false');
 }
@@ -8003,5 +8223,366 @@ if(DIREKTKURS){
     </div>
   </div>
 </div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   Layoutläge, nivåordning och spridning vid slumpning.
+   Ligger sist så att funktioner ovan kan skrivas över efter att de definierats.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── inställningar ───────────────────────────────────────────────────────── */
+/* var: sparInstallningar kan anropas innan det här skriptet har körts,
+   och då måste typeof-kontrollen fungera utan att kasta. */
+var SLUMPVAL={formaga:true,typ:true,ordna:true};
+var LAYOUT={avstand:16};
+const NIVARANG={E:0,C:1,A:2};
+
+function nivaRang(n){
+  const v=String(n||'').trim().toUpperCase()[0];
+  return NIVARANG[v]??3;
+}
+function formagorAv(x){
+  if(Array.isArray(x?.formaga)) return x.formaga.map(String);
+  return x?.formaga?[String(x.formaga)]:[];
+}
+
+/* ── önskad förmågefördelning vid slumpning ─────────────────────────────────
+   Målprofil i det färdiga provet:
+       procedur 40 %, resonemang 15 %, modellering 10 %, resten problemlösning.
+   Andelarna räknas bara på förmågorna nedan. Begrepp styrs inte alls utan
+   följer med de uppgifter som väljs.
+
+   Vikterna är avsiktligt INTE samma siffror som målprofilen. Förmågorna hänger
+   ihop i banken – nästan varje problemlösningsuppgift är också taggad
+   resonemang – så resonemang måste viktas ned och problemlösning upp för att
+   utfallet ska landa rätt. Uppmätt utfall med vikterna nedan, 800 slumpade
+   prov à 12 uppgifter: 41 / 19 / 10 / 30.
+
+   Problemlösning kan inte nå 35 %: bara omkring 7 % av alla förmågetaggar i
+   banken är problemlösning, så cirka 30 % är taket. Vill du högre måste
+   fler uppgifter taggas med problemlösning.
+
+   Ändra vikterna, inte målprofilen i kommentaren, och mät om. */
+var FORMAGEMAL={
+  procedur:0.42,
+  resonemang:0.08,
+  modellering:0.05,
+  'problemlösning':0.45
+};
+
+function formagePoang(x,antalFormaga){
+  const mal=Object.keys(FORMAGEMAL);
+  const fs=formagorAv(x).filter(f=>FORMAGEMAL[f]!=null);
+  if(!fs.length) return 0;
+  let total=0;
+  for(const f of mal) total+=antalFormaga.get(f)||0;
+  let brist=0;
+  for(const f of fs){
+    const andel=total?(antalFormaga.get(f)||0)/total:0;
+    brist+=FORMAGEMAL[f]-andel;
+  }
+  return (brist/fs.length)*650;
+}
+/* Stabil sortering: nivå först, inbördes ordning i övrigt oförändrad. */
+function sorteraNivaordning(lista){
+  return lista.map((x,i)=>({x,i}))
+    .sort((a,b)=>nivaRang(a.x.niva)-nivaRang(b.x.niva)||a.i-b.i)
+    .map(o=>o.x);
+}
+function satUppgiftsavstand(pt){
+  LAYOUT.avstand=Math.max(4,Math.min(80,Math.round(pt)));
+  document.documentElement.style.setProperty('--pdf-uppgiftsavstand',LAYOUT.avstand+'pt');
+  const gl=document.getElementById('lrAvstand'), et=document.getElementById('lrAvstandVal');
+  if(gl) gl.value=LAYOUT.avstand;
+  if(et) et.textContent=LAYOUT.avstand+' pt';
+}
+satUppgiftsavstand(LAYOUT.avstand);
+
+/* ── extra utrymme och sidbrytning per uppgift ───────────────────────────── */
+function extraUtrymme(x){ return Math.max(0,Math.min(140,+(x?._utrymme||0))); }
+function harSidbryt(x){ return Boolean(x?._sidbryt); }
+
+/* bladHTML kompletteras med utrymme och sidbrytningar. Originalet lämnas orört
+   så att all övrig utskriftslogik fortsätter att gälla. */
+const _bladHTML=bladHTML;
+bladHTML=function(opt){
+  const html=_bladHTML(opt);
+  if(!state.blad.some(x=>extraUtrymme(x)||harSidbryt(x))) return html;
+  const doc=new DOMParser().parseFromString('<div id="rot">'+html+'</div>','text/html');
+  const rot=doc.getElementById('rot');
+  rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i)=>{
+    const x=state.blad[i]; if(!x) return;
+    const u=extraUtrymme(x);
+    if(u) el.style.paddingBottom=u+'mm';
+    if(harSidbryt(x)&&i>0){ el.style.breakBefore='page'; el.style.pageBreakBefore='always'; }
+  });
+  return rot.innerHTML;
+};
+
+/* ── nivåordning när en uppgift kryssas i ────────────────────────────────── */
+function ordnaAktiv(){ return document.getElementById('ordnaNiva')?.checked!==false; }
+
+vippa=function(id){
+  const i=state.blad.findIndex(x=>x.id===id);
+  if(i>=0){
+    state.blad.splice(i,1);
+  }else{
+    const x=DB.bank.find(y=>y.id===id);
+    if(!x) return;
+    if(ordnaAktiv()){
+      let pos=state.blad.length;
+      for(let k=0;k<state.blad.length;k++){
+        if(nivaRang(state.blad[k].niva)>nivaRang(x.niva)){ pos=k; break; }
+      }
+      state.blad.splice(pos,0,x);
+    }else{
+      state.blad.push(x);
+    }
+  }
+  const k=document.querySelector('.kort[data-id="'+id+'"]');
+  if(k){ k.classList.toggle('vald',i<0); k.setAttribute('aria-pressed',i<0); }
+  ritaBlad();
+};
+
+document.getElementById('ordnaNiva')?.addEventListener('change',e=>{
+  if(e.target.checked && state.blad.length){
+    state.blad=sorteraNivaordning(state.blad);
+    ritaBlad();
+  }
+});
+
+/* ── slumpalternativen ───────────────────────────────────────────────────── */
+[['slumpFormaga','formaga'],['slumpTyp','typ'],['slumpOrdna','ordna']].forEach(([id,nyckel])=>{
+  const el=document.getElementById(id);
+  if(!el) return;
+  SLUMPVAL[nyckel]=el.checked;
+  el.addEventListener('change',()=>{ SLUMPVAL[nyckel]=el.checked; });
+  el.addEventListener('click',e=>e.stopPropagation());
+});
+document.getElementById('slumppanel')?.addEventListener('click',e=>e.stopPropagation());
+
+/* ── generell dra-och-släpp ──────────────────────────────────────────────────
+   Flyttar bara DOM-noder under dragningen och läser av ordningen när musen
+   släpps. Inget ritas om medan man drar, vilket gör det mjukt även med KaTeX. */
+function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
+  let dragen=null, senaste=null;
+
+  function nodUnder(y){
+    return [...behallare.querySelectorAll(valjare)]
+      .filter(el=>el!==dragen)
+      .find(el=>{ const r=el.getBoundingClientRect(); return y<r.top+r.height/2; })||null;
+  }
+  function rensa(){
+    behallare.querySelectorAll('.slappzon').forEach(e=>e.classList.remove('slappzon'));
+  }
+
+  behallare.addEventListener('pointerdown',e=>{
+    const grepp=e.target.closest(greppValjare);
+    if(!grepp||e.button!==0) return;
+    dragen=grepp.closest(valjare);
+    if(!dragen) return;
+    e.preventDefault();
+    grepp.setPointerCapture(e.pointerId);
+    dragen.classList.add('dras');
+    behallare.classList.add('drar');
+
+    const flytta=ev=>{
+      const mal=nodUnder(ev.clientY);
+      if(mal===senaste) return;
+      senaste=mal;
+      rensa();
+      if(mal){ mal.classList.add('slappzon'); behallare.insertBefore(dragen,mal); }
+      else{ behallare.appendChild(dragen); }
+      if(klass?.numrera) klass.numrera(behallare);
+    };
+    const slut=()=>{
+      grepp.removeEventListener('pointermove',flytta);
+      grepp.removeEventListener('pointerup',slut);
+      grepp.removeEventListener('pointercancel',slut);
+      dragen.classList.remove('dras');
+      behallare.classList.remove('drar');
+      rensa();
+      dragen=null; senaste=null;
+      vidSlapp();
+    };
+    grepp.addEventListener('pointermove',flytta);
+    grepp.addEventListener('pointerup',slut);
+    grepp.addEventListener('pointercancel',slut);
+  });
+}
+
+/* ── bladlistan: grepp och dragning ──────────────────────────────────────── */
+const GREPPIKON='<span class="greppa" title="Dra för att flytta"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="6" r="1.7"/><circle cx="15" cy="6" r="1.7"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><circle cx="9" cy="18" r="1.7"/><circle cx="15" cy="18" r="1.7"/></svg></span>';
+
+const _ritaBlad=ritaBlad;
+ritaBlad=function(){
+  _ritaBlad();
+  const lista=document.getElementById('blad');
+  const rader=[...lista.querySelectorAll('.brad')];
+  rader.forEach((rad,i)=>{
+    rad.dataset.i=i;
+    if(!rad.querySelector('.greppa')) rad.insertAdjacentHTML('afterbegin',GREPPIKON);
+  });
+  const layoutKnapp=document.getElementById('oppnaLayout');
+  if(layoutKnapp) layoutKnapp.disabled=!state.blad.length;
+  if(!document.getElementById('layoutred')?.hidden) layoutRita();
+};
+
+gorSorterbar({
+  behallare:document.getElementById('blad'),
+  valjare:'.brad',
+  greppValjare:'.greppa,.btext',
+  klass:{numrera(b){ b.querySelectorAll('.brad .num').forEach((n,i)=>n.textContent=i+1); }},
+  vidSlapp(){
+    const lista=document.getElementById('blad');
+    const ordning=[...lista.querySelectorAll('.brad')].map(r=>+r.dataset.i);
+    if(ordning.some(Number.isNaN)) return;
+    const gammal=state.blad.slice();
+    state.blad=ordning.map(i=>gammal[i]).filter(Boolean);
+    ritaBlad();
+  }
+});
+
+/* ── layoutläget ─────────────────────────────────────────────────────────── */
+const LR=document.getElementById('layoutred');
+
+function mmTillPx(){
+  const p=document.createElement('div');
+  p.style.cssText='position:absolute;visibility:hidden;height:100mm';
+  document.body.appendChild(p);
+  const px=p.getBoundingClientRect().height/100;
+  p.remove();
+  return px;
+}
+
+function layoutSidlinjer(){
+  const papper=document.getElementById('lrPapper');
+  if(!papper) return;
+  papper.querySelectorAll('.lr-sidlinje').forEach(e=>e.remove());
+  const px=mmTillPx();
+  const topp=20*px, botten=22*px, sidhojd=297*px;
+  const brukbar=sidhojd-topp-botten;      /* textyta per sida */
+  papper.style.minHeight='';
+  const innehall=Math.max(0,papper.scrollHeight-topp-botten);
+  const sidor=Math.max(1,Math.min(40,Math.ceil(innehall/brukbar)));
+  papper.style.minHeight=(topp+botten+sidor*brukbar)+'px';
+  for(let k=1;k<sidor;k++){
+    const l=document.createElement('div');
+    l.className='lr-sidlinje';
+    l.style.top=(topp+k*brukbar)+'px';
+    l.dataset.sida='SIDA '+(k+1);
+    papper.appendChild(l);
+  }
+}
+
+const LR_HANDTAG=`<div class="lr-handtag" contenteditable="false">
+  <button class="lr-flytt" title="Dra för att flytta" aria-label="Flytta"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="6" r="1.7"/><circle cx="15" cy="6" r="1.7"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><circle cx="9" cy="18" r="1.7"/><circle cx="15" cy="18" r="1.7"/></svg></button>
+  <button data-lr="upp" title="Flytta upp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"/></svg></button>
+  <button data-lr="ner" title="Flytta ned"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+  <button data-lr="minus" title="Mindre skrivutrymme">−</button>
+  <button data-lr="plus" title="Mer skrivutrymme">+</button>
+  <button data-lr="bryt" title="Börja ny sida här"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V4h16v4"/><path d="M2 12h20"/><path d="M4 16v4h16v-4"/></svg></button>
+  <button data-lr="bort" class="bort" title="Ta bort ur bladet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>`;
+
+function layoutRita(){
+  const papper=document.getElementById('lrPapper');
+  if(!papper) return;
+  papper.innerHTML=bladHTML({
+    facit:false,
+    hjalpmedel:document.getElementById('visaHjälpmedelExport')?.checked!==false,
+    totalEndast:Boolean(document.getElementById('visaTotalpoangExport')?.checked),
+    typ:dokumentTyp()
+  });
+  if(typeof renderKatex==='function') renderKatex(papper);
+  if(typeof stabiliseraPdfDeluppgifter==='function') stabiliseraPdfDeluppgifter(papper);
+
+  [...papper.querySelectorAll('.pdf-uppgifter > .pu')].forEach((el,i)=>{
+    el.classList.add('lr-pu');
+    el.dataset.i=i;
+    if(harSidbryt(state.blad[i])&&i>0) el.classList.add('lr-bryt');
+    el.insertAdjacentHTML('beforeend',LR_HANDTAG);
+  });
+
+  const p={E:0,C:0,A:0};
+  state.blad.forEach(x=>{
+    const m=String(x.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+    if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
+  });
+  const tot=p.E+p.C+p.A;
+  const u=document.getElementById('lrUnder');
+  if(u) u.textContent=state.blad.length+' uppgifter · '+tot+' poäng · '+
+    p.E+' E, '+p.C+' C, '+p.A+' A';
+
+  requestAnimationFrame(layoutSidlinjer);
+}
+
+function layoutOppna(){
+  if(!state.blad.length){ alert('Lägg först till minst en uppgift i bladet.'); return; }
+  LR.hidden=false;
+  document.body.style.overflow='hidden';
+  layoutRita();
+}
+function layoutStang(){
+  LR.hidden=true;
+  document.body.style.overflow='';
+}
+
+document.getElementById('oppnaLayout')?.addEventListener('click',layoutOppna);
+document.getElementById('lrKlar')?.addEventListener('click',layoutStang);
+LR?.addEventListener('pointerdown',e=>{ if(e.target===LR) layoutStang(); });
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&LR&&!LR.hidden){ e.preventDefault(); layoutStang(); }
+});
+
+document.getElementById('lrAvstand')?.addEventListener('input',e=>{
+  satUppgiftsavstand(+e.target.value);
+  requestAnimationFrame(layoutSidlinjer);
+});
+document.getElementById('lrSortera')?.addEventListener('click',()=>{
+  state.blad=sorteraNivaordning(state.blad);
+  ritaBlad();
+});
+document.getElementById('lrNollstall')?.addEventListener('click',()=>{
+  state.blad.forEach(x=>{ delete x._utrymme; delete x._sidbryt; });
+  satUppgiftsavstand(16);
+  layoutRita();
+});
+
+/* knappar på varje uppgift i layoutläget */
+document.getElementById('lrPapper')?.addEventListener('click',e=>{
+  const k=e.target.closest('[data-lr]');
+  if(!k) return;
+  const block=k.closest('.lr-pu');
+  const i=+block.dataset.i;
+  const x=state.blad[i];
+  if(!x) return;
+  const g=k.dataset.lr;
+  if(g==='upp'&&i>0){ [state.blad[i-1],state.blad[i]]=[state.blad[i],state.blad[i-1]]; }
+  else if(g==='ner'&&i<state.blad.length-1){ [state.blad[i+1],state.blad[i]]=[state.blad[i],state.blad[i+1]]; }
+  else if(g==='plus'){ x._utrymme=Math.min(140,extraUtrymme(x)+10); }
+  else if(g==='minus'){ x._utrymme=Math.max(0,extraUtrymme(x)-10); if(!x._utrymme) delete x._utrymme; }
+  else if(g==='bryt'){ if(harSidbryt(x)) delete x._sidbryt; else x._sidbryt=true; }
+  else if(g==='bort'){ state.blad.splice(i,1); }
+  else return;
+  ritaBlad();
+  if(!state.blad.length) layoutStang();
+});
+
+gorSorterbar({
+  behallare:document.querySelector('#lrPapper'),
+  valjare:'.lr-pu',
+  greppValjare:'.lr-flytt',
+  klass:{numrera(b){ b.querySelectorAll('.lr-pu .pn').forEach((n,i)=>n.textContent=(i+1)+'.'); }},
+  vidSlapp(){
+    const papper=document.getElementById('lrPapper');
+    const ordning=[...papper.querySelectorAll('.lr-pu')].map(el=>+el.dataset.i);
+    if(ordning.some(Number.isNaN)) return;
+    const gammal=state.blad.slice();
+    state.blad=ordning.map(i=>gammal[i]).filter(Boolean);
+    ritaBlad();
+  }
+});
+</script>
 </body>
 </html>
