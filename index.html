@@ -6739,7 +6739,7 @@ function körSlumpa(){
   };
 
   /* Målfördelning:
-     E+C+A = 50/30/20
+     E+C+A = NIVAMAL (55/31/14), se konstanten längre ned
      E+C   = 60/40
      C+A   = 60/40 (C/A)
      E+A   = 70/30
@@ -6748,7 +6748,7 @@ function körSlumpa(){
   const tillgangligaNivaer=['E','C','A'].filter(nv=>pool.some(x=>nivaNyckel(x)===nv));
   const vikter=(()=>{
     const k=tillgangligaNivaer.join('');
-    if(k==='ECA') return (typeof NIVAMAL!=='undefined')?NIVAMAL:{E:.50,C:.35,A:.15};
+    if(k==='ECA') return (typeof NIVAMAL!=='undefined')?NIVAMAL:{E:.55,C:.31,A:.14};
     if(k==='EC')  return {E:.60,C:.40};
     if(k==='CA')  return {C:.60,A:.40};
     if(k==='EA')  return {E:.70,A:.30};
@@ -8312,9 +8312,23 @@ function formagorAv(x){
    Ändra vikterna, inte målprofilen i kommentaren, och mät om. */
 /* ── önskad nivåfördelning när E, C och A alla finns i urvalet ──────────────
    Summan ska vara 1. Fördelningen görs om till exakta antal med Hamiltons
-   metod, så 20 uppgifter blir 10 E, 7 C och 3 A. Finns bara två nivåer i
-   urvalet gäller de inbyggda fallen längre ned i körSlumpa. */
-var NIVAMAL={E:0.50,C:0.35,A:0.15};
+   metod. Finns bara två nivåer i urvalet gäller de inbyggda fallen längre
+   ned i körSlumpa.
+
+   Förskjuten mot E jämfört med den tidigare 50/35/15. Utfall:
+       antal   E    C    A
+          12    6    4    2
+          15    8    5    2
+          18   10    6    2
+          20   11    6    3
+          24   13    8    3
+   18 uppgifter ger alltså en A-uppgift färre än förut.
+
+   Målet gäller ANTAL uppgifter, inte poäng. Hur många A-poäng de två
+   A-uppgifterna bär beror på banken. Ligger utfallet över 7–8 A-poäng på
+   18 uppgifter är A nedan talet att sänka – varje hundradel motsvarar
+   ungefär en femtedels uppgift på ett prov av den storleken. */
+var NIVAMAL={E:0.55,C:0.31,A:0.14};
 
 var FORMAGEMAL={
   procedur:0.42,
@@ -8358,11 +8372,23 @@ function harSidbryt(x){ return Boolean(x?._sidbryt); }
 /* ── betygsgränser ──────────────────────────────────────────────────────────
    Standardgränserna räknas på olika underlag:
      E  57 % av provets E-poäng
-     C  68 % av E- och C-poängen tillsammans
-     A  90 % av totalpoängen
+     C  66 % av E- och C-poängen tillsammans
+     A  79 % av totalpoängen
+
+   Kalibrerat mot referensprovet 19 E / 16 C / 8 A (max 43 p) med gränserna
+   11 / 23 / 34. Procentsatserna nedan återger de tre talen exakt.
+   På 22/17/8 (max 47 p) ger de E 13, C 26, A 37 – E-gränsen hamnar i det
+   vanliga spannet 10–14 p.
+
+   Uttryckt som andel av totalpoängen landar gränserna på ungefär
+   28 / 55 / 79 %, alltså samma nivå som tumregeln 28/55/78 som
+   högerpanelen använde innan gränserna infördes. C och A räknas ändå på
+   sina egna underlag, så ett prov med tung A-del får rätt gränser i stället
+   för gränser som bara följer totalen.
+
    Ett värde som skrivits in för hand ligger kvar i GRANSER och används i
    stället, tills fältet töms igen. */
-var GRANSPROCENT={E:0.57,C:0.68,A:0.90};
+var GRANSPROCENT={E:0.57,C:0.66,A:0.79};
 var GRANSER={E:null,C:null,A:null};
 
 function bladPoang(){
