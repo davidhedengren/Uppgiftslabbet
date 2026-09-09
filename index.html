@@ -4551,6 +4551,12 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .lr-papper .fu .fig{max-width:var(--pdf-figbredd-facit)!important; margin:2pt 0 3pt!important}
 .lr-papper .fu .fig svg,.lr-papper .fu .fig img{max-height:var(--pdf-fighojd-facit)!important}
 </style>
+<style>
+.listnav{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:14px 4px;color:var(--ink-2);font-size:13px}
+.listnav select{font:inherit;padding:5px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+.listnav button:disabled{opacity:.4;cursor:default}
+#lista{scroll-margin-top:90px}
+</style>
 </head>
 <body class="password-locked">
 
@@ -5590,8 +5596,7 @@ function ritaKursval(){
       <div class="kv-kortgrid">${g.kurser.map(kortHTML).join('')}</div>
     </section>`).join('');
 
-  /* Faktaraden fylls i först när uppgiftsfilerna har lästs in i bakgrunden,
-     så att antalet alltid stämmer med bankens faktiska innehåll. */
+  /* Visa totalsiffran först när samtliga kurser faktiskt har öppnats. */
   räknaUppgifter();
   const ver=$('#kvVersion');
   if(ver){
@@ -5612,90 +5617,16 @@ function ritaKursval(){
   });
 }
 
-/* Läser in kursernas uppgiftsfiler i bakgrunden för att kunna visa det totala
-   antalet uppgifter. Inläsningen sker en kurs i taget efter att sidan ritats,
-   så att den inte fördröjer första visningen. Som bieffekt öppnas kurserna
-   direkt när man klickar, eftersom data redan finns i minnet.
-
-   Om någon kursfil inte går att läsa visas ingen siffra alls – ett ofullständigt
-   "totalt" vore missvisande. */
-var RÄKNING_PÅGÅR=false;      /* var, eftersom funktionen kan anropas innan raden nåtts */
+/* Räkna endast redan inlästa banker. Kursvalet hämtar inga kursfiler. */
 var AVBRYT_RÄKNING=false;
-
-/* Bakgrundsinläsningen är en bekvämlighet, inte en funktion sidan behöver.
-   Den ska därför aldrig konkurrera med det användaren faktiskt vill göra.
-   Tre spärrar finns:
-
-   1. Uppkopplingen kontrolleras innan något hämtas. Har webbläsaren
-      datasparläge på, eller rapporterar den 2G/3G, hoppas räkningen över.
-   2. Den första kursfilen tidtas. Tar den för lång tid är nätet eller
-      servern belastad, och resten av inläsningen ställs in.
-   3. En total tidsbudget gäller för hela genomgången.
-
-   Avbryts räkningen visas ingen siffra alls. En delsumma vore missvisande. */
-const RÄKNA_FÖRSTA_MAX = 1500;   /* ms för första kursen innan vi ger upp */
-const RÄKNA_TOTAL_MAX  = 8000;   /* ms för hela genomgången */
-
-function uppkopplingenÄrLångsam(){
-  const c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-  if(!c) return false;                       /* okänt läge behandlas som normalt */
-  if(c.saveData) return true;                /* användaren har bett om att spara data */
-  return ['slow-2g','2g','3g'].includes(c.effectiveType);
-}
-
-/* Utan tidsgräns kan en hängande begäran lämna löftet oinfriat för alltid. */
-function laddaSkriptMedGräns(src, ms){
-  return Promise.race([
-    laddaSkript(src),
-    new Promise((_,fel)=>setTimeout(()=>fel(new Error('tidsgräns: '+src)), ms))
-  ]);
-}
-
-async function räknaUppgifter(){
+function räknaUppgifter(){
   const fakta=$('#kvFakta');
-  if(!fakta || RÄKNING_PÅGÅR) return;
+  if(!fakta) return;
   fakta.hidden=true;
-  if(uppkopplingenÄrLångsam()) return;
-
-  RÄKNING_PÅGÅR=true; AVBRYT_RÄKNING=false;
-  const start=performance.now();
-  let allaLästes=true;
-
-  for(const kurs of KURSER){
-    if(AVBRYT_RÄKNING || performance.now()-start > RÄKNA_TOTAL_MAX){ allaLästes=false; break; }
-    if(!kurs.data){
-      /* Den första kursen får en snävare gräns och fungerar som mätning av
-         hur snabbt nätet svarar just nu. */
-      const gräns = KURSER.indexOf(kurs)===0 ? RÄKNA_FÖRSTA_MAX : RÄKNA_TOTAL_MAX;
-      try{
-        for(const f of kurs.filer) await laddaSkriptMedGräns(f, gräns);
-        const bank=hämtaGlobal(kurs.globaler.bank);
-        const kapnamn=hämtaGlobal(kurs.globaler.kapnamn);
-        const omr=hämtaGlobal(kurs.globaler.omr);
-        if(!Array.isArray(bank)||!kapnamn||!omr) throw new Error('data saknas');
-        kurs.data={
-          bank, kapnamn, omr,
-          kapnamnSpar: kurs.globaler.kapnamnSpar?hämtaGlobal(kurs.globaler.kapnamnSpar):null,
-          spar: kurs.globaler.spar?hämtaGlobal(kurs.globaler.spar):null,
-          grupp: kurs.globaler.grupp?hämtaGlobal(kurs.globaler.grupp):null
-        };
-      }catch(e){ allaLästes=false; break; }
-    }
-    /* Kortets fot byter från antal områden till antal uppgifter. */
-    const kort=document.querySelector(`.kurskort[data-kurs="${kurs.id}"]`);
-    if(kort){
-      kort.dataset.ready='true';
-      const meta=kort.querySelector('.kk-meta');
-      if(meta) meta.textContent=`${kurs.data.bank.length.toLocaleString('sv-SE')} uppgifter`;
-    }
-  }
-
-  if(allaLästes && !AVBRYT_RÄKNING){
-    const summa=KURSER.reduce((n,k)=>n+(k.data?k.data.bank.length:0),0);
-    fakta.innerHTML=`<span><b>${summa.toLocaleString('sv-SE')}</b>&nbsp;uppgifter i banken</span>`;
+  if(KURSER.every(k=>k.data)){
+    fakta.innerHTML=`<span><b>${KURSER.reduce((n,k)=>n+k.data.bank.length,0).toLocaleString('sv-SE')}</b>&nbsp;uppgifter i banken</span>`;
     fakta.hidden=false;
   }
-  RÄKNING_PÅGÅR=false;
 }
 
 /* Ett enda delegerat klicklyssnare på kursytan är robustare än att binda om
@@ -5717,22 +5648,29 @@ const BANK_VERSION=(()=>{
   const två=n=>String(n).padStart(2,'0');
   return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}`;
 })();
+const skriptLöften=new Map();
 function laddaSkript(src){
-  return new Promise((ok,fel)=>{
+  if(skriptLöften.has(src)) return skriptLöften.get(src);
+  const löfte=new Promise((ok,fel)=>{
     const s=document.createElement('script');
-    /* Versionsparametern hindrar webbläsaren/GitHub Pages från att återanvända
-       en gammal struktur- eller uppgiftsfil efter en ny commit. */
     s.src=src+(src.includes('?')?'&':'?')+'v='+encodeURIComponent(BANK_VERSION);
-    s.onload=()=>ok(); s.onerror=()=>fel(new Error(src));
+    s.onload=()=>ok();
+    s.onerror=()=>{ skriptLöften.delete(src); s.remove(); fel(new Error(src)); };
     document.head.appendChild(s);
   });
+  skriptLöften.set(src,löfte);
+  return löfte;
 }
 /* Läser kursens globala data oavsett om den exponeras via window eller global deklaration. */
 function hämtaGlobal(namn){
   if(namn in window && window[namn]!==undefined) return window[namn];
   try{ return (0,eval)(namn); }catch(e){ return undefined; }
 }
+let kursvalPågår=false;
 async function väljKurs(kurs,kort){
+  if(kursvalPågår) return;
+  kursvalPågår=true;
+  try{
   /* Användarens klick har företräde framför bakgrundsräkningen. */
   AVBRYT_RÄKNING=true;
   $('#kvFel').hidden=true;
@@ -5779,6 +5717,7 @@ async function väljKurs(kurs,kort){
   kort.classList.remove('laddar');
   status.textContent=`${kurs.data.bank.length} uppgifter redo`;
   startaKurs(kurs);
+  }finally{ kursvalPågår=false; }
 }
 function visaKursval(){
   AKTIV=null;
@@ -6012,6 +5951,7 @@ function förvärmSökindex(){
   else setTimeout(jobb,250);
 }
 
+const idSortering=new Intl.Collator('sv',{numeric:true});
 function urval(){
   const termer=state.sök ? state.sök.split(' ').filter(Boolean) : [];
   return variantBank().filter(x=>{
@@ -6038,13 +5978,30 @@ function urval(){
     return true;
   }).sort((a,b)=>{
     if(state.sorteraNivå && a.niva!==b.niva) return NIVÅORDNING[a.niva]-NIVÅORDNING[b.niva];
-    return a.id.localeCompare(b.id,'sv',{numeric:true});
+    return idSortering.compare(a.id,b.id);
   });
 }
 
 /* ── mittenlistan ── */
-function rita(){
+const UPPGIFTER_PER_SIDA=40;
+let listsida=0, senasteListfilter='';
+function rita(sida){
+  const filter=JSON.stringify([AKTIV?.id,state.spår,state.sök,[...state.omr].sort(),[...state.nivåer].sort(),[...state.formagor].sort(),state.miniraknare,state.geogebra,state.sorteraNivå]);
+  if(filter!==senasteListfilter) listsida=0;
+  senasteListfilter=filter;
+  if(Number.isInteger(sida)) listsida=sida;
   const u=urval(), vald=new Set(state.blad.map(x=>x.id));
+  const sidor=Math.max(1,Math.ceil(u.length/UPPGIFTER_PER_SIDA));
+  listsida=Math.max(0,Math.min(listsida,sidor-1));
+  const start=listsida*UPPGIFTER_PER_SIDA;
+  const synliga=u.slice(start,start+UPPGIFTER_PER_SIDA);
+  const navigation=u.length>UPPGIFTER_PER_SIDA ? `<nav class="listnav" aria-label="Sidor med uppgifter">
+    <button type="button" class="knapp" data-listsida="${listsida-1}" ${listsida===0?'disabled':''}>← Föregående</button>
+    <span>Visar ${start+1}–${Math.min(start+UPPGIFTER_PER_SIDA,u.length)} av ${u.length.toLocaleString('sv-SE')}</span>
+    <label>Sida <select aria-label="Välj sida" class="listsidval">${Array.from({length:sidor},(_,i)=>`<option value="${i}" ${i===listsida?'selected':''}>${i+1}</option>`).join('')}</select> av ${sidor}</label>
+    <button type="button" class="knapp" data-listsida="${listsida+1}" ${listsida===sidor-1?'disabled':''}>Nästa →</button>
+  </nav>` : '';
+  if(katexListaObserver) katexListaObserver.disconnect();
   $('#träffar').innerHTML=`<b>${u.length}</b> ${u.length===1?'uppgift':'uppgifter'}`;
 
   if(!u.length){
@@ -6052,7 +6009,7 @@ function rita(){
       <p>Prova ett annat område, en annan nivå eller en kortare sökning.</p></div>`;
     return;
   }
-  $('#lista').innerHTML=u.map(x=>`
+  $('#lista').innerHTML=navigation+synliga.map(x=>`
     <article class="kort${vald.has(x.id)?' vald':''}" data-id="${x.id}" tabindex="0" role="button"
       aria-pressed="${vald.has(x.id)}">
       <div class="bock">${svgBock}</div>
@@ -6061,7 +6018,7 @@ function rita(){
           <span class="id">${x.id}</span>
           <span class="nivå ${x.niva.split('/')[0]}${ändrad(x)?' ändrad':''}" data-red="${x.id}" role="button"
             tabindex="0" title="${REDTITEL}">${x.niva}</span>
-          <span class="område">${DB.omr[x.kap][x.omr]}</span>
+          <span class="område">${DB.omr?.[x.kap]?.[x.omr]||x.omr}</span>
           ${verktygsIkoner(x)}
           ${state.visaPoäng?`<span class="poäng${ändrad(x)?' ändrad':''}" data-red="${x.id}" role="button"
             tabindex="0" title="${REDTITEL}">${x.poang}</span>`:''}
@@ -6071,11 +6028,15 @@ function rita(){
             Redigera
           </button>
         </div>
-        <div class="kroppen">${x.t}</div>
+        <div class="kroppen">${x.t.replace(/<img\b/gi,'<img loading="lazy" decoding="async"')}</div>
         <button class="facitknapp" data-facit="${x.id}">Visa facit</button>
         <div class="facit" data-fbox="${x.id}"></div>
       </div>
-    </article>`).join('');
+    </article>`).join('')+navigation;
+  $$('#lista img').forEach(img=>{img.loading='lazy';img.decoding='async';});
+  const bytListsida=sida=>{rita(sida);$('#lista').scrollIntoView({block:'start'});const knapp=$('#lista [data-listsida]:not([disabled])');if(knapp)knapp.focus({preventScroll:true});};
+  $$('#lista [data-listsida]').forEach(b=>b.addEventListener('click',()=>bytListsida(Number(b.dataset.listsida))));
+  $$('#lista .listsidval').forEach(b=>b.addEventListener('change',()=>bytListsida(Number(b.value))));
 
   /* KaTeX renderas endast för kort som är nära den synliga delen av sidan.
      Det gör stor skillnad när banken innehåller hundratals uppgifter. */
@@ -6084,7 +6045,7 @@ function rita(){
   $$('.kort').forEach(k=>{
     const växla=()=>vippa(k.dataset.id);
     k.addEventListener('click',e=>{ if(e.target.closest('.facitknapp,[data-red],[data-redigera]'))return; växla(); });
-    k.addEventListener('keydown',e=>{ if(e.target.closest('[data-red],[data-redigera]'))return;
+    k.addEventListener('keydown',e=>{ if(e.target.closest('.facitknapp,[data-red],[data-redigera]'))return;
       if(e.key===' '||e.key==='Enter'){e.preventDefault();växla();} });
   });
   $$('[data-redigera]').forEach(b=>{
@@ -8173,7 +8134,7 @@ function renderKatex(root){
   });
 }
 /* Initierar KaTeX efter att skriptet har laddats. */
-window.addEventListener('load',()=>{ if(window.renderMathInElement) renderKatex(); });
+window.addEventListener('load',()=>{ renderKatexLista($('#lista')); });
 
 /* ── spara/ladda · händelser ──
    Modalen ligger efter huvudskriptet i HTML. Händelserna måste därför bindas
