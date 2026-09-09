@@ -1442,7 +1442,7 @@ table.data th{background:var(--sunken);font-weight:600}
   #utskrift .ph img{height:40px}
   #utskrift h1{font-family:var(--ui);font-size:17pt;margin:0;font-weight:700}
   #utskrift .pm{font-family:var(--mono);font-size:9.5pt;color:#444;margin-top:2px}
-  #utskrift .pu{margin-bottom:var(--pdf-uppgiftsavstand,16pt);break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
+  #utskrift .pu{margin-bottom:var(--pdf-uppgiftsavstand,9pt);break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
   #utskrift .pu.pdf-pu{
     display:grid!important;
     grid-template-columns:25pt minmax(0,1fr) 78pt!important;
@@ -2461,7 +2461,9 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
 .pdf-ovningsantal{font-size:8.8pt;color:#555}
 .pdf-pu{
   display:grid!important;grid-template-columns:25pt minmax(0,1fr) 78pt;
-  gap:0;padding:0 0 9pt!important;margin:0 0 9pt!important;
+  gap:0;
+  padding:0 0 var(--pdf-uppgiftsutrymme,var(--pdf-basutrymme,9pt))!important;
+  margin:0 0 var(--pdf-uppgiftsavstand,9pt)!important;
   border-bottom:.55pt solid #b8b8b8;break-inside:avoid;page-break-inside:avoid
 }
 .pdf-pu>.pn{width:auto!important;padding:1pt 8pt 0 1pt!important}
@@ -4380,6 +4382,8 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 </style>
 
 <style id="layoutlageStil">
+:root{--pdf-basutrymme:9pt}
+
 /* ── dra-och-släpp i bladlistan ──────────────────────────────────────────── */
 .brad{position:relative;touch-action:pan-y;padding-left:21px}
 .brad .greppa{position:absolute;left:3px;top:0;bottom:0;width:14px;display:grid;place-items:center;
@@ -4491,7 +4495,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .lr-papper .ph img{height:40px}
 .lr-papper h1{font-family:var(--ui);font-size:17pt;margin:0;font-weight:700}
 .lr-papper .pm{font-family:var(--mono);font-size:9.5pt;color:#444;margin-top:2px}
-.lr-papper .pu{margin-bottom:16pt;break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
+.lr-papper .pu{margin-bottom:var(--pdf-uppgiftsavstand,9pt);break-inside:avoid;display:grid;grid-template-columns:24pt 1fr;gap:6pt}
 .lr-papper .pu.pdf-pu{display:grid!important;
     grid-template-columns:25pt minmax(0,1fr) 78pt!important;
     column-gap:0!important;
@@ -4983,8 +4987,8 @@ table.data th,table.data td{border-color:var(--x-line)!important}
       </div>
       <div class="lr-verktyg">
         <label class="lr-glid">Avstånd
-          <input type="range" id="lrAvstand" min="6" max="60" step="1" value="16">
-          <b id="lrAvstandVal">16 pt</b>
+          <input type="range" id="lrAvstand" min="3" max="60" step="1" value="9">
+          <b id="lrAvstandVal">9 pt</b>
         </label>
         <button class="knapp liten tyst" id="lrSortera" type="button">Ordna E → C → A</button>
         <button class="knapp liten tyst" id="lrNollstall" type="button">Nollställ utrymmen</button>
@@ -6744,7 +6748,7 @@ function körSlumpa(){
   const tillgangligaNivaer=['E','C','A'].filter(nv=>pool.some(x=>nivaNyckel(x)===nv));
   const vikter=(()=>{
     const k=tillgangligaNivaer.join('');
-    if(k==='ECA') return {E:.50,C:.30,A:.20};
+    if(k==='ECA') return (typeof NIVAMAL!=='undefined')?NIVAMAL:{E:.50,C:.35,A:.15};
     if(k==='EC')  return {E:.60,C:.40};
     if(k==='CA')  return {C:.60,A:.40};
     if(k==='EA')  return {E:.70,A:.30};
@@ -8277,7 +8281,7 @@ if(DIREKTKURS){
 /* var: sparInstallningar kan anropas innan det här skriptet har körts,
    och då måste typeof-kontrollen fungera utan att kasta. */
 var SLUMPVAL={formaga:true,typ:true,ordna:true};
-var LAYOUT={avstand:16};
+var LAYOUT={avstand:9};
 const NIVARANG={E:0,C:1,A:2};
 
 function nivaRang(n){
@@ -8306,6 +8310,12 @@ function formagorAv(x){
    fler uppgifter taggas med problemlösning.
 
    Ändra vikterna, inte målprofilen i kommentaren, och mät om. */
+/* ── önskad nivåfördelning när E, C och A alla finns i urvalet ──────────────
+   Summan ska vara 1. Fördelningen görs om till exakta antal med Hamiltons
+   metod, så 20 uppgifter blir 10 E, 7 C och 3 A. Finns bara två nivåer i
+   urvalet gäller de inbyggda fallen längre ned i körSlumpa. */
+var NIVAMAL={E:0.50,C:0.35,A:0.15};
+
 var FORMAGEMAL={
   procedur:0.42,
   resonemang:0.08,
@@ -8333,7 +8343,7 @@ function sorteraNivaordning(lista){
     .map(o=>o.x);
 }
 function satUppgiftsavstand(pt){
-  LAYOUT.avstand=Math.max(4,Math.min(80,Math.round(pt)));
+  LAYOUT.avstand=Math.max(3,Math.min(80,Math.round(pt)));
   document.documentElement.style.setProperty('--pdf-uppgiftsavstand',LAYOUT.avstand+'pt');
   const gl=document.getElementById('lrAvstand'), et=document.getElementById('lrAvstandVal');
   if(gl) gl.value=LAYOUT.avstand;
@@ -8398,7 +8408,9 @@ bladHTML=function(opt){
   rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i)=>{
     const x=state.blad[i]; if(!x) return;
     const u=extraUtrymme(x);
-    if(u) el.style.paddingBottom=u+'mm';
+    /* Egen variabel i stället för padding: .pdf-pu sätter padding med
+       !important, och en inline-padding hade inte vunnit över den. */
+    if(u) el.style.setProperty('--pdf-uppgiftsutrymme','calc(var(--pdf-basutrymme,9pt) + '+u+'mm)');
     if(harSidbryt(x)&&i>0){ el.style.breakBefore='page'; el.style.pageBreakBefore='always'; }
   });
   return rot.innerHTML;
@@ -8660,7 +8672,7 @@ document.getElementById('lrSortera')?.addEventListener('click',()=>{
 document.getElementById('lrNollstall')?.addEventListener('click',()=>{
   state.blad.forEach(x=>{ delete x._utrymme; delete x._sidbryt; });
   GRANSER={E:null,C:null,A:null};
-  satUppgiftsavstand(16);
+  satUppgiftsavstand(9);
   ritaBlad();
 });
 
