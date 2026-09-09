@@ -1436,7 +1436,7 @@ table.data th{background:var(--sunken);font-weight:600}
 #utskrift{display:none}
 @media print{
   html,body{overflow:visible;background:#fff}
-  .kursval,.top,.arbetsyta{display:none!important}
+  .kursval,.top,.arbetsyta,.layoutred{display:none!important}
   #utskrift{display:block;font-family:var(--las);font-size:11.5pt;line-height:1.6;color:#000}
   #utskrift .ph{display:flex;align-items:center;gap:14px;border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:22px}
   #utskrift .ph img{height:40px}
@@ -4423,6 +4423,24 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .lr-glid{display:flex;align-items:center;gap:9px;font-size:11.5px;font-weight:600;color:var(--ink-2)}
 .lr-glid input[type=range]{width:126px;accent-color:var(--ed)}
 .lr-glid b{font-family:var(--mono);font-weight:600;color:var(--ink);min-width:42px;text-align:right}
+.lr-avdelare{width:1px;height:22px;background:var(--line-2,#E4E3E6)}
+
+/* ── betygsgränser i provhuvudet ─────────────────────────────────────────── */
+.pdf-granser{font-family:Arial,Helvetica,sans-serif;font-size:8.8pt;margin:6pt 0 0;color:#111}
+.pdf-granser.sist{margin-bottom:20pt}
+.pdf-gransrubrik{text-transform:uppercase;font-weight:700;font-size:8.6pt;margin-bottom:1pt}
+.pdf-gransrad{display:flex;gap:5pt;line-height:1.45}
+.pdf-gransrad b{min-width:14pt;font-weight:700}
+.lr-papper .pdf-gransvarde{border-bottom:1px dashed #9A96A0;cursor:text;padding:0 2px;
+  border-radius:2px;transition:background .12s}
+.lr-papper .pdf-gransvarde:hover{background:var(--ed-tint,#E6F0EC)}
+.lr-papper .pdf-gransvarde:focus{outline:none;background:#fff;box-shadow:0 0 0 2px var(--ed,#0F6B4F)}
+.lr-papper .pdf-gransvarde.andrad{font-weight:700}
+.lr-verktyg .minivaxel{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;
+  font-weight:600;color:var(--ink-2);cursor:pointer;user-select:none}
+.lr-verktyg .minivaxel input{width:14px;height:14px;accent-color:var(--ed);cursor:pointer}
+.lr-verktyg .knapp svg{width:13px;height:13px}
+.lr-verktyg .knapp[disabled]{opacity:.45;pointer-events:none}
 .lr-body{flex:1;overflow:auto;padding:26px 20px 60px;display:flex;justify-content:center;
   background:repeating-linear-gradient(45deg,#EDECEF,#EDECEF 12px,#F2F1F4 12px,#F2F1F4 24px)}
 .lr-ark{position:relative;flex:none}
@@ -4970,6 +4988,18 @@ table.data th,table.data td{border-color:var(--x-line)!important}
         </label>
         <button class="knapp liten tyst" id="lrSortera" type="button">Ordna E → C → A</button>
         <button class="knapp liten tyst" id="lrNollstall" type="button">Nollställ utrymmen</button>
+        <span class="lr-avdelare"></span>
+        <label class="minivaxel" title="Samma inställning som i bladets fot">
+          <input type="checkbox" id="lrFacit"> Facit
+        </label>
+        <button class="knapp liten" id="lrPdf" type="button" title="Exportera till PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V4h12v5M6 18H4v-6h16v6h-2M8 14h8v7H8z"/></svg>
+          PDF
+        </button>
+        <button class="knapp liten" id="lrWord" type="button" title="Exportera till Word">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          Word
+        </button>
         <button class="knapp primär" id="lrKlar" type="button">Klar</button>
       </div>
     </div>
@@ -5165,7 +5195,8 @@ function sparInstallningar(){
     totalPointsOnly:Boolean($('#visaTotalpoangExport')?.checked),
     showAidSymbols:Boolean($('#visaHjälpmedelExport')?.checked),
     showPoints:Boolean(state.visaPoäng),
-    taskSpacing:(typeof LAYOUT!=='undefined'?LAYOUT.avstand:16)
+    taskSpacing:(typeof LAYOUT!=='undefined'?LAYOUT.avstand:16),
+    gradeLimits:(typeof GRANSER!=='undefined'?GRANSER:null)
   };
 }
 function sparSnapshotUppgift(x){
@@ -5304,6 +5335,7 @@ function sparAppliceraInstallningar(d){
   if($('#visaHjälpmedelExport')) $('#visaHjälpmedelExport').checked=st.showAidSymbols!==false;
   state.visaPoäng=Boolean(st.showPoints); if($('#visaPoäng')) $('#visaPoäng').checked=state.visaPoäng;
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
+  if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
 }
 async function sparLaddaDokument(doc,{manuell=true}={}){
   if(!doc) return;
@@ -7837,9 +7869,20 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
       text:'BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.',
       size:17,font:'Arial'
     })]}));
-    children.push(new Paragraph({spacing:{after:totalEndast?200:30},children:[
+    children.push(new Paragraph({spacing:{after:30},children:[
       new TextRun({text:`MAX: ${meta.tot} POÄNG`,bold:true,size:19,font:'Arial'})
     ]}));
+    /* Samma gränser som i PDF:en, inklusive manuellt justerade värden. */
+    if(typeof granserNu==='function'){
+      const g=granserNu();
+      children.push(new Paragraph({spacing:{after:20},children:[
+        new TextRun({text:'GRÄNSER:',bold:true,size:17,font:'Arial'})
+      ]}));
+      ['E','C','A'].forEach((n,i)=>children.push(new Paragraph({
+        spacing:{after:i===2?(totalEndast?200:60):20},
+        children:[new TextRun({text:`${n}: ${g[n]} p`,size:18,font:'Arial'})]
+      })));
+    }
     if(!totalEndast){
       children.push(new Paragraph({spacing:{after:210},children:[
         new TextRun({text:`Poängfördelning: ${meta.p.E} E  ·  ${meta.p.C} C  ·  ${meta.p.A} A`,size:18,font:'Arial'})
@@ -8302,14 +8345,56 @@ satUppgiftsavstand(LAYOUT.avstand);
 function extraUtrymme(x){ return Math.max(0,Math.min(140,+(x?._utrymme||0))); }
 function harSidbryt(x){ return Boolean(x?._sidbryt); }
 
-/* bladHTML kompletteras med utrymme och sidbrytningar. Originalet lämnas orört
-   så att all övrig utskriftslogik fortsätter att gälla. */
+/* ── betygsgränser ──────────────────────────────────────────────────────────
+   Standardgränserna räknas på olika underlag:
+     E  57 % av provets E-poäng
+     C  68 % av E- och C-poängen tillsammans
+     A  90 % av totalpoängen
+   Ett värde som skrivits in för hand ligger kvar i GRANSER och används i
+   stället, tills fältet töms igen. */
+var GRANSPROCENT={E:0.57,C:0.68,A:0.90};
+var GRANSER={E:null,C:null,A:null};
+
+function bladPoang(){
+  const p={E:0,C:0,A:0};
+  state.blad.forEach(x=>{
+    const m=String(x.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+    if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
+  });
+  p.tot=p.E+p.C+p.A;
+  return p;
+}
+function granserNu(){
+  const p=bladPoang();
+  return {
+    E:Number.isFinite(GRANSER.E)?GRANSER.E:Math.round(GRANSPROCENT.E*p.E),
+    C:Number.isFinite(GRANSER.C)?GRANSER.C:Math.round(GRANSPROCENT.C*(p.E+p.C)),
+    A:Number.isFinite(GRANSER.A)?GRANSER.A:Math.round(GRANSPROCENT.A*p.tot),
+    p
+  };
+}
+function gransHTML(medFordelning){
+  const g=granserNu();
+  const rad=n=>'<div class="pdf-gransrad"><b>'+n+':</b> <span class="pdf-gransvarde'+
+    (Number.isFinite(GRANSER[n])?' andrad':'')+'" data-niva="'+n+'">'+g[n]+'</span> p</div>';
+  return '<div class="pdf-granser'+(medFordelning?'':' sist')+'">'+
+    '<div class="pdf-gransrubrik">Gränser:</div>'+rad('E')+rad('C')+rad('A')+'</div>';
+}
+
+/* bladHTML kompletteras med gränser, utrymme och sidbrytningar. Originalet
+   lämnas orört så att all övrig utskriftslogik fortsätter att gälla. */
 const _bladHTML=bladHTML;
 bladHTML=function(opt){
   const html=_bladHTML(opt);
-  if(!state.blad.some(x=>extraUtrymme(x)||harSidbryt(x))) return html;
+  const typ=(opt&&opt.typ)||dokumentTyp();
+  const harJusteringar=state.blad.some(x=>extraUtrymme(x)||harSidbryt(x));
+  if(!harJusteringar&&typ!=='prov') return html;
   const doc=new DOMParser().parseFromString('<div id="rot">'+html+'</div>','text/html');
   const rot=doc.getElementById('rot');
+  const max=rot.querySelector('.pdf-max');
+  if(typ==='prov'&&max&&!rot.querySelector('.pdf-granser')){
+    max.insertAdjacentHTML('afterend',gransHTML(Boolean(rot.querySelector('.pdf-fordelning'))));
+  }
   rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i)=>{
     const x=state.blad[i]; if(!x) return;
     const u=extraUtrymme(x);
@@ -8417,6 +8502,14 @@ const GREPPIKON='<span class="greppa" title="Dra för att flytta"><svg viewBox="
 const _ritaBlad=ritaBlad;
 ritaBlad=function(){
   _ritaBlad();
+  /* Panelens förslag ska vara samma tal som hamnar på provet. */
+  const rutan=document.getElementById('gränser');
+  const g=granserNu();
+  if(rutan&&g.p.tot&&state.visaPoäng){
+    rutan.innerHTML='<span class="gränsrubrik">Förslag på gränser</span>'+
+      '<div class="gränsrad">'+['E','C','A'].map(n=>
+        '<span class="chip '+n+'">'+n+' <b>'+g[n]+'p</b></span>').join('')+'</div>';
+  }
   const lista=document.getElementById('blad');
   const rader=[...lista.querySelectorAll('.brad')];
   rader.forEach((rad,i)=>{
@@ -8497,6 +8590,25 @@ function layoutRita(){
   if(typeof renderKatex==='function') renderKatex(papper);
   if(typeof stabiliseraPdfDeluppgifter==='function') stabiliseraPdfDeluppgifter(papper);
 
+  /* Gränserna går att skriva i direkt på pappret. Tomt fält återgår till
+     det automatiskt beräknade värdet. */
+  papper.querySelectorAll('.pdf-gransvarde').forEach(el=>{
+    el.setAttribute('contenteditable','true');
+    el.setAttribute('spellcheck','false');
+    el.title='Klicka och skriv en egen gräns. Töm fältet för automatiskt värde.';
+    el.addEventListener('keydown',ev=>{
+      if(ev.key==='Enter'){ ev.preventDefault(); el.blur(); }
+      if(ev.key==='Escape'){ ev.preventDefault(); layoutRita(); }
+    });
+    el.addEventListener('blur',()=>{
+      const txt=(el.textContent||'').replace(/[^0-9]/g,'');
+      const n=el.dataset.niva;
+      GRANSER[n]=txt===''?null:Math.max(0,Math.min(999,parseInt(txt,10)));
+      ritaBlad();
+      layoutRita();
+    });
+  });
+
   [...papper.querySelectorAll('.pdf-uppgifter > .pu')].forEach((el,i)=>{
     el.classList.add('lr-pu');
     el.dataset.i=i;
@@ -8521,6 +8633,8 @@ function layoutOppna(){
   if(!state.blad.length){ alert('Lägg först till minst en uppgift i bladet.'); return; }
   LR.hidden=false;
   document.body.style.overflow='hidden';
+  const f=document.getElementById('lrFacit'), b=document.getElementById('taMedFacit');
+  if(f&&b) f.checked=b.checked;
   layoutRita();
 }
 function layoutStang(){
@@ -8545,8 +8659,9 @@ document.getElementById('lrSortera')?.addEventListener('click',()=>{
 });
 document.getElementById('lrNollstall')?.addEventListener('click',()=>{
   state.blad.forEach(x=>{ delete x._utrymme; delete x._sidbryt; });
+  GRANSER={E:null,C:null,A:null};
   satUppgiftsavstand(16);
-  layoutRita();
+  ritaBlad();
 });
 
 /* knappar på varje uppgift i layoutläget */
@@ -8568,6 +8683,22 @@ document.getElementById('lrPapper')?.addEventListener('click',e=>{
   ritaBlad();
   if(!state.blad.length) layoutStang();
 });
+
+/* Export direkt från layoutläget. Vyn stängs först: utskriften sker mot
+   #utskrift, och en öppen dialog gör bara att man inte ser dialogrutan. */
+function lrExportera(knappId){
+  const k=document.getElementById(knappId);
+  if(!k||k.disabled) return;
+  layoutStang();
+  requestAnimationFrame(()=>k.click());
+}
+document.getElementById('lrPdf')?.addEventListener('click',()=>lrExportera('expPdf'));
+document.getElementById('lrWord')?.addEventListener('click',()=>lrExportera('expWord'));
+
+/* Facitväxeln speglar den i bladets fot åt båda håll. */
+const lrFacit=document.getElementById('lrFacit'), bladFacit=document.getElementById('taMedFacit');
+lrFacit?.addEventListener('change',()=>{ if(bladFacit) bladFacit.checked=lrFacit.checked; });
+bladFacit?.addEventListener('change',()=>{ if(lrFacit) lrFacit.checked=bladFacit.checked; });
 
 gorSorterbar({
   behallare:document.querySelector('#lrPapper'),
