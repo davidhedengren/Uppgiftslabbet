@@ -3246,15 +3246,6 @@ button,input,select,textarea{font-family:var(--ui)!important}
   gap:4px!important;
   flex-wrap:nowrap!important;
 }
-#sorteraKnapp{
-  min-height:26px!important;
-  height:26px!important;
-  padding:3px 6px!important;
-  border-radius:7px!important;
-  font-size:10px!important;
-  white-space:nowrap!important;
-}
-#sorteraKnapp svg{width:13px!important;height:13px!important}
 .mittopp .kryss{
   min-height:26px!important;
   padding:3px 7px!important;
@@ -3309,11 +3300,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
     min-height:24px!important;height:24px!important;
     padding:2px 5px!important;font-size:8.8px!important;border-radius:6px!important;
   }
-  #sorteraKnapp{
-    min-height:24px!important;height:24px!important;
-    padding:2px 5px!important;font-size:9px!important;
-  }
-  .mittopp .kryss{
+    .mittopp .kryss{
     min-height:24px!important;padding:2px 5px!important;font-size:9px!important;
   }
 }
@@ -3976,20 +3963,19 @@ body{
   font-family:var(--ui)!important;font-size:11px!important;letter-spacing:0!important;
   text-transform:none!important;color:var(--x-ink-4)!important;margin-right:3px!important;
 }
-.formagefilter button,#sorteraKnapp,.mittopp .kryss{
+.formagefilter button,.mittopp .kryss{
   border-radius:8px!important;border:1px solid var(--x-line)!important;
   background:#fff!important;box-shadow:var(--x-e1)!important;
   color:var(--x-ink-3)!important;
   transition:border-color .16s,color .16s,background .16s,box-shadow .18s!important;
 }
 .formagefilter button{min-height:28px!important;height:28px!important;font-size:11px!important;padding:3px 9px!important}
-.formagefilter button:hover,#sorteraKnapp:hover{color:var(--x-ink)!important;box-shadow:var(--x-e2)!important}
+.formagefilter button:hover{color:var(--x-ink)!important;box-shadow:var(--x-e2)!important}
 .formagefilter button[aria-pressed="true"]{
   background:color-mix(in oklab,var(--ed) 6%,#fff)!important;
   border-color:color-mix(in oklab,var(--ed) 26%,transparent)!important;
   color:var(--ed-dark)!important;box-shadow:none!important;
 }
-#sorteraKnapp{min-height:28px!important;height:28px!important;font-size:11px!important;padding:3px 9px!important}
 .mittopp .kryss{min-height:28px!important;font-size:11px!important;padding:3px 10px!important}
 .mittopp .kryss:has(input:checked){
   background:color-mix(in oklab,var(--ed) 6%,#fff)!important;
@@ -4556,6 +4542,39 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .listnav select{font:inherit;padding:5px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
 .listnav button:disabled{opacity:.4;cursor:default}
 #lista{scroll-margin-top:90px}
+
+/* Verktygsraden anpassas efter mittpanelens tillgängliga bredd. */
+.mitten{container-type:inline-size;container-name:uppgiftslista}
+.mittopp{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:8px 12px!important;
+}
+.mittopp .träffar{
+  grid-column:1;grid-row:1;
+  font-size:10.5px!important;
+  margin:0!important;
+}
+.mittopp .träffar b{font-size:10.5px!important}
+.mittopp .kryssgrupp{
+  grid-column:2;grid-row:1;
+  justify-self:end;
+  min-width:0;
+}
+.mittopp .formagefilter{
+  grid-column:1 / -1;grid-row:2;
+  min-width:0;max-width:100%;
+  flex-wrap:wrap!important;
+  gap:6px!important;
+  margin:0!important;
+}
+.mittopp .formagefilter button{flex:0 0 auto}
+@container uppgiftslista (min-width:780px){
+  .mittopp{grid-template-columns:auto minmax(0,1fr) auto}
+  .mittopp .formagefilter{grid-column:2;grid-row:1}
+  .mittopp .kryssgrupp{grid-column:3}
+}
 </style>
 </head>
 <body class="password-locked">
@@ -4683,7 +4702,6 @@ table.data th,table.data td{border-color:var(--x-line)!important}
       <div class="slumpval">
         <label><input type="checkbox" id="slumpFormaga" checked> Blanda förmågor</label>
         <label><input type="checkbox" id="slumpTyp" checked> Blanda uppgiftstyp</label>
-        <label><input type="checkbox" id="slumpOrdna" checked> Ordna E → C → A</label>
       </div>
     </div>
   </div>
@@ -4736,12 +4754,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
         <button type="button" data-formaga="modellering" aria-pressed="true">Modellering</button>
         <button type="button" data-formaga="problemlösning" aria-pressed="true">Problemlösning</button>
       </div>
-      <div class="fyll"></div>
       <div class="kryssgrupp">
-        <button class="knapp tyst liten" id="sorteraKnapp" type="button" aria-pressed="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
-          <span id="sorteraLabel">Sortera: ID</span>
-        </button>
         <label class="kryss" for="visaPoäng">
           <input type="checkbox" id="visaPoäng">
           <span class="ruta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
@@ -4800,9 +4813,6 @@ table.data th,table.data td{border-color:var(--x-line)!important}
     </div>
 
     <div class="bladverktyg">
-      <label class="minivaxel" title="Nya uppgifter läggs in i nivåordning">
-        <input type="checkbox" id="ordnaNiva" checked> Ordna E → C → A
-      </label>
       <button class="knapp liten tyst" id="oppnaLayout" type="button" title="Visa och redigera hur provet ser ut på pappret">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
         Layout
@@ -4996,7 +5006,6 @@ table.data th,table.data td{border-color:var(--x-line)!important}
           <input type="range" id="lrAvstand" min="3" max="60" step="1" value="9">
           <b id="lrAvstandVal">9 pt</b>
         </label>
-        <button class="knapp liten tyst" id="lrSortera" type="button">Ordna E → C → A</button>
         <button class="knapp liten tyst" id="lrNollstall" type="button">Nollställ utrymmen</button>
         <span class="lr-avdelare"></span>
         <label class="minivaxel" title="Samma inställning som i bladets fot">
@@ -5172,7 +5181,7 @@ let LOGO='logo.png';
 let AKTIV=null;                                   /* vald kurs */
 let DB={bank:[],kapnamn:{},omr:{}};               /* kursens data */
 const FORMAGOR=['begrepp','procedur','resonemang','modellering','problemlösning'];
-const state={omr:new Set(),nivåer:new Set(['E','C','A']),formagor:new Set(FORMAGOR),sök:'',blad:[],visaPoäng:false,sorteraNivå:false,spår:null,
+const state={omr:new Set(),nivåer:new Set(['E','C','A']),formagor:new Set(FORMAGOR),sök:'',blad:[],visaPoäng:false,spår:null,
   /* Hjälpmedelsfiltret är av/på: true = visa bara uppgifter där
      hjälpmedlet är tillåtet, false = filtrera inte alls. */
   miniraknare:'alla',geogebra:false};
@@ -5642,6 +5651,16 @@ $('#kvKort').addEventListener('click',e=>{
    Last-Modified-värde. På GitHub Pages uppdateras det när den publicerade
    sidan uppdateras, så datumet i sidfoten behöver inte ändras manuellt.
    Samma värde används för cache-busting av struktur- och uppgiftsfiler. */
+/* Uppgifter som bara ska visas i Kunskapsgymmet, aldrig här. */
+function synligaUppgifter(bank){
+  if(!Array.isArray(bank)) return bank;
+  return bank.filter(x=>{
+    if(!x || typeof x!=='object') return true;
+    if(x.endastKunskapsgymmet) return false;
+    return String(x.niva||'').toUpperCase()!=='G';
+  });
+}
+
 const BANK_VERSION=(()=>{
   const d=new Date(document.lastModified);
   if(Number.isNaN(d.getTime())) return 'auto';
@@ -5690,11 +5709,18 @@ async function väljKurs(kurs,kort){
   }
   status.textContent='Läser in…';
 
+  /* Banken delas med Kunskapsgymmet, som har en grundnivå under E — nivå 0,
+     märkt niva:"G" och endastKunskapsgymmet:true. De uppgifterna hör inte
+     hemma här och sållas bort direkt vid inläsningen, innan något annat
+     rör banken. Då stämmer även uppgiftsräknare, filter och slumpning.
+
+     Filtret tittar på båda märkningarna, så en uppgift som bara har den
+     ena av dem också fastnar. */
   /* Felhanteringen omfattar endast filinläsningen. Kursstarten hanteras separat
      så att fel i bankvyn inte rapporteras som saknade kursfiler. */
   try{
     for(const f of kurs.filer) await laddaSkript(f);
-    const bank=hämtaGlobal(kurs.globaler.bank);
+    const bank=synligaUppgifter(hämtaGlobal(kurs.globaler.bank));
     const kapnamn=hämtaGlobal(kurs.globaler.kapnamn);
     const omr=hämtaGlobal(kurs.globaler.omr);
     const spar=kurs.globaler.spar?hämtaGlobal(kurs.globaler.spar):null;
@@ -5756,12 +5782,10 @@ function startaKurs(kurs){
       if(!x.familj) x.familj=String(x.id??'').replace(/[a-z]$/,'');
     });
     state.omr.clear(); state.blad=[]; state.sök='';
-    state.nivåer=new Set(['E','C','A']); state.formagor=new Set(FORMAGOR); state.sorteraNivå=false; state.visaPoäng=false;
+    state.nivåer=new Set(['E','C','A']); state.formagor=new Set(FORMAGOR); state.visaPoäng=false;
     state.miniraknare='alla'; state.geogebra=false;
     state.spår=kurs.defaultSpår||(kurs.spår?.[0]?.id||null);
     $('#sökfält').value=''; $('#visaPoäng').checked=false;
-    $('#sorteraKnapp').setAttribute('aria-pressed','false');
-    $('#sorteraLabel').textContent='Sortera: ID';
     $$('.nivåfilter button').forEach(b=>b.setAttribute('aria-pressed','true'));
     $('#slumpaAntal').value=12;
   }catch(err){
@@ -5898,12 +5922,6 @@ $('#sökfält').addEventListener('input',e=>{
     rita();
   },140);
 });
-$('#sorteraKnapp').addEventListener('click',()=>{
-  state.sorteraNivå=!state.sorteraNivå;
-  $('#sorteraKnapp').setAttribute('aria-pressed',state.sorteraNivå);
-  $('#sorteraLabel').textContent=state.sorteraNivå?'Sortera: Nivå':'Sortera: ID';
-  rita();
-});
 $('#visaPoäng').addEventListener('change',e=>{state.visaPoäng=e.target.checked;rita();ritaBlad();});
 $('#bytKurs').addEventListener('click',visaKursval);
 $('#logoHem').addEventListener('click',visaKursval);
@@ -5977,7 +5995,7 @@ function urval(){
     }
     return true;
   }).sort((a,b)=>{
-    if(state.sorteraNivå && a.niva!==b.niva) return NIVÅORDNING[a.niva]-NIVÅORDNING[b.niva];
+    if(a.niva!==b.niva) return (NIVÅORDNING[a.niva]??3)-(NIVÅORDNING[b.niva]??3);
     return idSortering.compare(a.id,b.id);
   });
 }
@@ -5986,7 +6004,7 @@ function urval(){
 const UPPGIFTER_PER_SIDA=40;
 let listsida=0, senasteListfilter='';
 function rita(sida){
-  const filter=JSON.stringify([AKTIV?.id,state.spår,state.sök,[...state.omr].sort(),[...state.nivåer].sort(),[...state.formagor].sort(),state.miniraknare,state.geogebra,state.sorteraNivå]);
+  const filter=JSON.stringify([AKTIV?.id,state.spår,state.sök,[...state.omr].sort(),[...state.nivåer].sort(),[...state.formagor].sort(),state.miniraknare,state.geogebra ]);
   if(filter!==senasteListfilter) listsida=0;
   senasteListfilter=filter;
   if(Number.isInteger(sida)) listsida=sida;
@@ -6657,10 +6675,8 @@ PR.addEventListener('click',e=>{
 /* ── knappar ── */
 $('#rensaAllt').addEventListener('click',()=>{
   state.blad=[]; state.omr.clear(); state.sök=''; state.nivåer=new Set(['E','C','A']);
-  state.sorteraNivå=false; state.visaPoäng=false;
+  state.visaPoäng=false;
   $('#sökfält').value='';
-  $('#sorteraKnapp').setAttribute('aria-pressed','false');
-  $('#sorteraLabel').textContent='Sortera: ID';
   $('#visaPoäng').checked=false;
   $('#slumpaAntal').value=12;
   $$('.omrad').forEach(b=>b.setAttribute('aria-pressed','false'));
@@ -6804,7 +6820,7 @@ function körSlumpa(){
     antalOmrade.set(omr,(antalOmrade.get(omr)||0)+1);
   }
 
-  state.blad=(typeof SLUMPVAL!=='undefined'&&!SLUMPVAL.ordna)?ut:sorteraNivaordning(ut);
+  state.blad=sorteraNivaordning(ut);
   rita(); ritaBlad();
   $('#slumppanel').classList.remove('öppen');
   $('#slumpaKnapp').setAttribute('aria-expanded','false');
@@ -8241,7 +8257,7 @@ if(DIREKTKURS){
 /* ── inställningar ───────────────────────────────────────────────────────── */
 /* var: sparInstallningar kan anropas innan det här skriptet har körts,
    och då måste typeof-kontrollen fungera utan att kasta. */
-var SLUMPVAL={formaga:true,typ:true,ordna:true};
+var SLUMPVAL={formaga:true,typ:true};
 var LAYOUT={avstand:9};
 const NIVARANG={E:0,C:1,A:2};
 
@@ -8404,7 +8420,6 @@ bladHTML=function(opt){
 };
 
 /* ── nivåordning när en uppgift kryssas i ────────────────────────────────── */
-function ordnaAktiv(){ return document.getElementById('ordnaNiva')?.checked!==false; }
 
 vippa=function(id){
   const i=state.blad.findIndex(x=>x.id===id);
@@ -8413,30 +8428,20 @@ vippa=function(id){
   }else{
     const x=DB.bank.find(y=>y.id===id);
     if(!x) return;
-    if(ordnaAktiv()){
-      let pos=state.blad.length;
-      for(let k=0;k<state.blad.length;k++){
-        if(nivaRang(state.blad[k].niva)>nivaRang(x.niva)){ pos=k; break; }
-      }
-      state.blad.splice(pos,0,x);
-    }else{
-      state.blad.push(x);
+    let pos=state.blad.length;
+    for(let k=0;k<state.blad.length;k++){
+      if(nivaRang(state.blad[k].niva)>nivaRang(x.niva)){ pos=k; break; }
     }
+    state.blad.splice(pos,0,x);
   }
   const k=document.querySelector('.kort[data-id="'+id+'"]');
   if(k){ k.classList.toggle('vald',i<0); k.setAttribute('aria-pressed',i<0); }
   ritaBlad();
 };
 
-document.getElementById('ordnaNiva')?.addEventListener('change',e=>{
-  if(e.target.checked && state.blad.length){
-    state.blad=sorteraNivaordning(state.blad);
-    ritaBlad();
-  }
-});
 
 /* ── slumpalternativen ───────────────────────────────────────────────────── */
-[['slumpFormaga','formaga'],['slumpTyp','typ'],['slumpOrdna','ordna']].forEach(([id,nyckel])=>{
+[['slumpFormaga','formaga'],['slumpTyp','typ']].forEach(([id,nyckel])=>{
   const el=document.getElementById(id);
   if(!el) return;
   SLUMPVAL[nyckel]=el.checked;
@@ -8651,10 +8656,6 @@ document.addEventListener('keydown',e=>{
 document.getElementById('lrAvstand')?.addEventListener('input',e=>{
   satUppgiftsavstand(+e.target.value);
   requestAnimationFrame(layoutSidlinjer);
-});
-document.getElementById('lrSortera')?.addEventListener('click',()=>{
-  state.blad=sorteraNivaordning(state.blad);
-  ritaBlad();
 });
 document.getElementById('lrNollstall')?.addEventListener('click',()=>{
   state.blad.forEach(x=>{ delete x._utrymme; delete x._sidbryt; });
