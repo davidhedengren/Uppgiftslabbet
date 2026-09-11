@@ -4238,6 +4238,24 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   .mitten{padding:0 10px 44px!important}
 }
 
+/* På lägre laptopskärmar får hela bladpanelen en egen vertikal scroll.
+   Därmed går exportknapparna alltid att nå utan att listan behöver krympas bort. */
+.bladlista{min-height:0!important}
+@media (min-width:681px) and (max-height:820px){
+  .höger{
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+    scrollbar-gutter:stable;
+  }
+  .bladlista{
+    flex:0 0 auto!important;
+    min-height:160px!important;
+    max-height:40vh!important;
+    overflow-y:auto!important;
+  }
+  .bladfot{flex:0 0 auto!important}
+}
+
 
 /* ═════════════════ 9 · TILLGÄNGLIGHET ═════════════════ */
 @media (prefers-reduced-motion:reduce){

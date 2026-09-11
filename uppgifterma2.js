@@ -1,5 +1,5 @@
 /* Kvalitets- och nivåreviderad 2026-09-10.
- * Kompletterad mot Gy25 med riktade kvalitetsuppgifter. */
+ * Ma2-komplettering med enhettliga systemklamrar och riktade A-uppgifter. */
 window.BANKMA2 = [
   {
     "id": "1.01",
@@ -1227,7 +1227,7 @@ window.BANKMA2 = [
     "niva": "C",
     "poang": "0/3/0",
     "t": "<p>En förening blandar två sorters sportdryck. Sort A innehåller 12 % koncentrat och sort B 30 %. Man vill göra 18 liter blandning som innehåller 22 % koncentrat.</p><p>a) Bestäm hur många liter av varje sort som behövs.</p><p>b) Föreningen upptäcker att det bara finns 8 liter av sort B. Kan målet 22 % ändå nås om den totala mängden fortfarande ska vara 18 liter? Motivera.</p>",
-    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>a) Låt \\(x\\) och \\(y\\) vara liter av A respektive B.</p><p>\\[\\begin{cases}x+y=18\\0,12x+0,30y=0,22\\cdot18\\end{cases}\\]</p><p>Högerledet i den andra ekvationen är 3,96. Sätt \\(x=18-y\\):</p><p>\\(0,12(18-y)+0,30y=3,96\\Rightarrow2,16+0,18y=3,96\\Rightarrow y=10\\).</p><p>Då \\(x=8\\). <strong>8 liter A och 10 liter B.</strong></p><p>b) Om högst 8 liter B används blir koncentratmängden som mest \\(0,12\\cdot10+0,30\\cdot8=3,60\\) liter. Det motsvarar \\(3,60/18=0,20=20\\%\\).</p><p><strong>Nej. Med bara 8 liter B kan blandningen som mest bli 20 %.</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>a) Låt \\(x\\) och \\(y\\) vara liter av A respektive B.</p><p>\\[\\begin{cases}x+y=18\\\\0{,}12x+0{,}30y=0{,}22\\cdot18\\end{cases}\\]</p><p>Högerledet i den andra ekvationen är 3,96. Sätt \\(x=18-y\\):</p><p>\\(0,12(18-y)+0,30y=3,96\\Rightarrow2,16+0,18y=3,96\\Rightarrow y=10\\).</p><p>Då \\(x=8\\). <strong>8 liter A och 10 liter B.</strong></p><p>b) Om högst 8 liter B används blir koncentratmängden som mest \\(0,12\\cdot10+0,30\\cdot8=3,60\\) liter. Det motsvarar \\(3,60/18=0,20=20\\%\\).</p><p><strong>Nej. Med bara 8 liter B kan blandningen som mest bli 20 %.</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Tillämpningar med ekvationssystem",
     "geogebra": false,
     "miniräknare": true,
@@ -2673,7 +2673,7 @@ window.BANKMA2 = [
     "niva": "C",
     "poang": "0/2/0",
     "t": "<p>På en skolteater säljs 86 biljetter. En vuxenbiljett kostar 140 kr och en ungdomsbiljett 90 kr. Intäkten blir 9 390 kr.</p><p>Hur många biljetter av varje sort såldes?</p>",
-    "s": "<p>Låt \\(x\\) vara vuxenbiljetter och \\(y\\) ungdomsbiljetter.</p><p>\\[\\begin{cases}x+y=86\\140x+90y=9390\\end{cases}\\]</p><p>Multiplicera första ekvationen med 90: \\(90x+90y=7740\\).</p><p>Subtraktion ger \\(50x=1650\\Rightarrow x=33\\).</p><p>Då \\(y=86-33=53\\).</p><p><strong>33 vuxenbiljetter och 53 ungdomsbiljetter.</strong></p>",
+    "s": "<p>Låt \\(x\\) vara vuxenbiljetter och \\(y\\) ungdomsbiljetter.</p><p>\\[\\begin{cases}x+y=86\\\\140x+90y=9390\\end{cases}\\]</p><p>Multiplicera första ekvationen med 90: \\(90x+90y=7740\\).</p><p>Subtraktion ger \\(50x=1650\\Rightarrow x=33\\).</p><p>Då \\(y=86-33=53\\).</p><p><strong>33 vuxenbiljetter och 53 ungdomsbiljetter.</strong></p>",
     "familj": "Tillämpningar med ekvationssystem",
     "geogebra": false,
     "miniräknare": true,
@@ -2715,7 +2715,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "3/0/0",
-    "t": "<p>Bestäm om varje ekvationssystem har en lösning, ingen lösning eller oändligt många lösningar.</p><p>a) \\(y=2x+3\\) och \\(2y=4x+6\\)<br>b) \\(y=-x+4\\) och \\(y=-x-1\\)<br>c) \\(x+y=5\\) och \\(2x-y=1\\)</p>",
+    "t": "<p>Bestäm om varje ekvationssystem har en lösning, ingen lösning eller oändligt många lösningar.</p>\n  <p>a) \\[\\begin{cases}y=2x+3\\\\2y=4x+6\\end{cases}\\]</p>\n  <p>b) \\[\\begin{cases}y=-x+4\\\\y=-x-1\\end{cases}\\]</p>\n  <p>c) \\[\\begin{cases}x+y=5\\\\2x-y=1\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>a) Den andra ekvationen förenklas till \\(y=2x+3\\). Linjerna är samma: <strong>oändligt många lösningar</strong>.</p><p>b) Linjerna har samma riktningskoefficient men olika skärning med \\(y\\)-axeln: <strong>ingen lösning</strong>.</p><p>c) Linjerna har olika riktningskoefficient och skär varandra en gång: <strong>en lösning</strong>.</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Ingen eller oändligt många lösningar",
     "geogebra": false,
@@ -4448,7 +4448,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Betrakta systemet</p><p>\\[\\begin{cases}7x-2y=18\\3x+4y=2\\end{cases}\\]</p><p>En elev vill multiplicera den första ekvationen med 2. En annan vill multiplicera den andra med \\(\\tfrac12\\).</p><p>Visa att båda idéerna kan leda till samma eliminering och lös systemet.</p>",
+    "t": "<p>Betrakta systemet</p><p>\\[\\begin{cases}7x-2y=18\\\\3x+4y=2\\end{cases}\\]</p><p>En elev vill multiplicera den första ekvationen med 2. En annan vill multiplicera den andra med \\(\\tfrac12\\).</p><p>Visa att båda idéerna kan leda till samma eliminering och lös systemet.</p>",
     "s": "<p>Första elevens väg: multiplicera första ekvationen med 2:</p><p>\\(14x-4y=36\\). Addera med \\(3x+4y=2\\): \\(17x=38\\Rightarrow x=38/17\\).</p><p>Andra elevens väg: multiplicera andra ekvationen med \\(1/2\\): \\(1,5x+2y=1\\). Addera med första ekvationen: \\(8,5x=19\\Rightarrow x=38/17\\).</p><p>Insättning ger \\(y=-20/17\\).</p><p><strong>Båda metoderna ger \\((38/17,-20/17)\\).</strong></p>",
     "familj": "Additionsmetoden",
     "geogebra": false,
@@ -4518,7 +4518,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Lös med additionsmetoden.</p><p>\\[\\begin{cases}4x+3y=17\\6x-5y=7\\end{cases}\\]</p>",
+    "t": "<p>Lös med additionsmetoden.</p><p>\\[\\begin{cases}4x+3y=17\\\\6x-5y=7\\end{cases}\\]</p>",
     "s": "<p>För att eliminera \\(y\\) multiplicerar vi den första ekvationen med 5 och den andra med 3:</p><p>\\(20x+15y=85\\)</p><p>\\(18x-15y=21\\).</p><p>Addition ger \\(38x=106\\Rightarrow x=\\frac{53}{19}\\).</p><p>Sätt in i första ekvationen:</p><p>\\(4\\cdot\\frac{53}{19}+3y=17\\Rightarrow3y=\\frac{111}{19}\\Rightarrow y=\\frac{37}{19}\\).</p><p><strong>\\((x,y)=(53/19,37/19)\\).</strong></p>",
     "familj": "Additionsmetoden",
     "geogebra": false,
@@ -4668,7 +4668,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Lös ekvationssystemet med substitutionsmetoden.</p><p>\\[\\begin{cases}y=\\frac32x-4\\2x+y=10\\end{cases}\\]</p>",
+    "t": "<p>Lös ekvationssystemet med substitutionsmetoden.</p><p>\\[\\begin{cases}y=\\frac32x-4\\\\2x+y=10\\end{cases}\\]</p>",
     "s": "<p><strong>Nyckelidé:</strong> Gör en variabel ensam i den ena ekvationen och sätt in uttrycket i den andra. Bestäm därefter den återstående variabeln genom insättning.</p><p><strong>Steg 1:</strong> Eftersom \\(y\\) redan är frilöst i den första ekvationen sätter vi in \\(\\frac32x-4\\) i den andra:</p><p>\\(2x+\\frac32x-4=10\\).</p><p>\\(\\frac72x=14\\Rightarrow x=4\\).</p><p>Sätt tillbaka: \\(y=\\frac32\\cdot4-4=2\\).</p><p><strong>\\((x,y)=(4,2)\\).</strong></p>",
     "familj": "Substitutionsmetoden",
     "geogebra": false,
@@ -4750,7 +4750,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>En elev löser systemet</p><p>\\[\\begin{cases}3x+y=11\\y=2x-4\\end{cases}\\]</p><p>och skriver efter substitution: \\(3x+2x=11-4\\).</p><p>Förklara felet och lös sedan systemet korrekt.</p>",
+    "t": "<p>En elev löser systemet</p><p>\\[\\begin{cases}3x+y=11\\\\y=2x-4\\end{cases}\\]</p><p>och skriver efter substitution: \\(3x+2x=11-4\\).</p><p>Förklara felet och lös sedan systemet korrekt.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Vid substitution ska hela uttrycket \\(2x-4\\) ersätta \\(y\\):</p><p>\\(3x+(2x-4)=11\\).</p><p>Elevens fel är att konstanten \\(-4\\) har flyttats till högerledet med fel tecken.</p><p>Förenkla: \\(5x-4=11\\Rightarrow5x=15\\Rightarrow x=3\\).</p><p>Då \\(y=2\\cdot3-4=2\\).</p><p><strong>Systemets lösning är \\((3,2)\\).</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Substitutionsmetoden",
     "geogebra": false,
@@ -6626,7 +6626,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Ett ekvationssystem består av linjerna \\(y=1,4x-2\\) och \\(y=-0,6x+11\\).</p><p>a) Bestäm lösningen med GeoGebra.<br>b) Förklara varför lösningen inte kan vara \\((6,6)\\) utan att göra en ny graf.</p>",
+    "t": "<p>Lös ekvationssystemet med GeoGebra:</p><p>\\[\\begin{cases}y=1{,}4x-2\\\\y=-0{,}6x+11\\end{cases}\\]</p><p>a) Bestäm lösningen.<br>b) Förklara utan en ny graf varför \\((6,6)\\) inte kan vara lösningen.</p>",
     "s": "<p><strong>GeoGebra:</strong> rita båda linjerna. Skärningspunkten blir \\((6{,}5;\\,7{,}1)\\).</p><p>För punkten \\((6;6)\\) ger den första linjen \\(1,4\\cdot6-2=6,4\\), inte 6.</p><p><strong>Alltså är lösningen \\((6{,}5;\\,7{,}1)\\), och \\((6;6)\\) ligger inte på båda linjerna.</strong></p>",
     "familj": "Grafisk lösning",
     "geogebra": true,
@@ -6682,7 +6682,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/3/0",
-    "t": "<p>I GeoGebra syns bara en linje trots att ekvationerna \\(4x-2y=8\\) och \\(2x-y=4\\) har skrivits in.</p><p>Förklara vad detta innebär för ekvationssystemet.</p>",
+    "t": "<p>I GeoGebra syns bara en linje när ekvationssystemet skrivs in:</p><p>\\[\\begin{cases}4x-2y=8\\\\2x-y=4\\end{cases}\\]</p><p>Förklara vad detta innebär för systemets lösningar.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Använd en potens- eller logaritmlag i taget och skriv mellanled. Det gör tecken, exponenter och eventuella villkor synliga.</p><div class=\"facit-arbete\"><p>Dividera den första ekvationen med 2:</p><p>\\(2x-y=4\\).</p><p>Det är exakt samma ekvation som den andra.</p><p><strong>Linjerna sammanfaller och systemet har oändligt många lösningar.</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt gärna tillbaka svaret. Vid en jämn rot måste du kontrollera både positiv och negativ möjlighet när du löser en ekvation.</p></div>",
     "familj": "Grafisk lösning",
     "geogebra": true,
@@ -8908,7 +8908,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(x+y=8\\)<br>\\(x-y=2\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}x+y=8\\\\x-y=2\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Addera ekvationerna. Då försvinner \\(y\\):</p><p>\\[(x+y)+(x-y)=8+2\\Rightarrow2x=10\\Rightarrow x=5.\\]</p><p>Sätt in i \\(x+y=8\\): \\(5+y=8\\Rightarrow y=3\\).</p><p><strong>Svar:</strong> \\((x,y)=(5,3)\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -8948,7 +8948,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(2x+y=11\\)<br>\\(x-y=1\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}2x+y=11\\\\x-y=1\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Addera ekvationerna så att \\(y\\) försvinner:</p><p>\\[(2x+y)+(x-y)=11+1\\Rightarrow3x=12\\Rightarrow x=4.\\]</p><p>Sätt in i \\(x-y=1\\): \\(4-y=1\\Rightarrow y=3\\).</p><p><strong>Svar:</strong> \\((x,y)=(4,3)\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -8988,7 +8988,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(3x-y=7\\)<br>\\(x+y=5\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}3x-y=7\\\\x+y=5\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Addera ekvationerna; termerna \\(-y\\) och \\(+y\\) tar ut varandra:</p><p>\\[(3x-y)+(x+y)=7+5\\Rightarrow4x=12\\Rightarrow x=3.\\]</p><p>Sätt in i \\(x+y=5\\): \\(3+y=5\\Rightarrow y=2\\).</p><p><strong>Svar:</strong> \\((x,y)=(3,2)\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -9028,7 +9028,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(2x-y=4\\)<br>\\(x+2y=7\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}2x-y=4\\\\x+2y=7\\end{cases}\\]</p>",
     "s": "<p>Från första ekvationen får vi \\(y=2x-4\\). Sätt in detta i den andra:</p><p>\\[x+2(2x-4)=7\\Rightarrow5x-8=7\\Rightarrow5x=15\\Rightarrow x=3.\\]</p><p>Då är \\(y=2\\cdot3-4=2\\).</p><p><strong>Svar:</strong> \\((x,y)=(3,2)\\).</p>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -9068,7 +9068,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(x+2y=10\\)<br>\\(2x-y=5\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}x+2y=10\\\\2x-y=5\\end{cases}\\]</p>",
     "s": "<p>Multiplicera den första ekvationen med 2:</p><p>\\[2x+4y=20.\\]</p><p>Subtrahera sedan \\(2x-y=5\\):</p><p>\\[5y=15\\Rightarrow y=3.\\]</p><p>Sätt in i \\(x+2y=10\\): \\(x+6=10\\Rightarrow x=4\\).</p><p><strong>Svar:</strong> \\((x,y)=(4,3)\\).</p>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -9108,7 +9108,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet:</p><p>\\(3x+2y=16\\)<br>\\(x-y=2\\)</p>",
+    "t": "<p>Lös ekvationssystemet:</p><p>\\[\\begin{cases}3x+2y=16\\\\x-y=2\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Från \\(x-y=2\\) får vi \\(x=y+2\\). Sätt in i den första ekvationen:</p><p>\\[3(y+2)+2y=16\\Rightarrow5y+6=16\\Rightarrow y=2.\\]</p><p>Då är \\(x=y+2=4\\).</p><p><strong>Svar:</strong> \\((x,y)=(4,2)\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -9148,7 +9148,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(3,2)\\) en lösning till systemet \\(2x+3y=12\\), \\(x-y=1\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(3,2)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}2x+3y=12\\\\x-y=1\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<p><strong>Steg 1:</strong> Sätt in \\(x=3\\) och \\(y=2\\) i båda ekvationerna.</p><p>Första: \\(2\\cdot3+3\\cdot2=12\\), alltså stämmer den.</p><p>Andra: \\(3-2=1\\), alltså stämmer även den.</p><p><strong>Svar:</strong> Ja, punkten är en lösning till systemet.</p>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -9175,7 +9175,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(3,2)\\) en lösning till systemet \\(x+2y=7\\), \\(3x-y=7\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(3,2)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}x+2y=7\\\\3x-y=7\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p><strong>Steg 1:</strong> Sätt in \\(x=3\\) och \\(y=2\\) i båda ekvationerna.</p><p>Första: \\(3+2\\cdot2=7\\).</p><p>Andra: \\(3\\cdot3-2=7\\).</p><p>Båda ekvationerna är uppfyllda.</p><p><strong>Svar:</strong> Ja.</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -9202,7 +9202,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(3,1)\\) en lösning till systemet \\(2x-y=4\\), \\(x+y=5\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(3,1)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}2x-y=4\\\\x+y=5\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<p><strong>Steg 1:</strong> Sätt in \\(x=3\\) och \\(y=1\\).</p><p>Redan i första ekvationen fås \\(2\\cdot3-1=5\\), men högerledet är 4.</p><p>En punkt måste uppfylla båda ekvationerna för att vara en lösning.</p><p><strong>Svar:</strong> Nej.</p>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -9229,7 +9229,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(1,3)\\) en lösning till systemet \\(-x+2y=5\\), \\(2x+y=4\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(1,3)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}-x+2y=5\\\\2x+y=4\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p><strong>Steg 1:</strong> Sätt in \\(x=1\\) och \\(y=3\\).</p><p>Första ekvationen stämmer: \\(-1+2\\cdot3=5\\).</p><p>Den andra gör det inte: \\(2\\cdot1+3=5\\neq4\\).</p><p><strong>Svar:</strong> Nej.</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -9256,7 +9256,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(3,1)\\) en lösning till systemet \\(3x+y=10\\), \\(x-2y=-1\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(3,1)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}3x+y=10\\\\x-2y=-1\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p><strong>Steg 1:</strong> Sätt in \\(x=3\\) och \\(y=1\\).</p><p>Första ekvationen stämmer: \\(3\\cdot3+1=10\\).</p><p>Den andra ger \\(3-2=1\\), inte \\(-1\\).</p><p><strong>Svar:</strong> Nej.</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -9283,7 +9283,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Är \\((x,y)=(2,3)\\) en lösning till systemet \\(2x+5y=19\\), \\(3x-y=7\\)? Svara ja eller nej.</p>",
+    "t": "<p>Är \\((x,y)=(2,3)\\) en lösning till ekvationssystemet?</p><p>\\[\\begin{cases}2x+5y=19\\\\3x-y=7\\end{cases}\\]</p><p>Svara ja eller nej.</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p><strong>Steg 1:</strong> Sätt in \\(x=2\\) och \\(y=3\\).</p><p>Första ekvationen stämmer: \\(2\\cdot2+5\\cdot3=19\\).</p><p>Den andra ger \\(3\\cdot2-3=3\\), inte 7.</p><p><strong>Svar:</strong> Nej.</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Kontrollera lösning till ekvationssystem",
     "geogebra": false,
@@ -10312,7 +10312,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[x+y=7,\\qquad 2x-y=2.\\]</p>",
+    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[\\begin{cases}x+y=7\\\\2x-y=2\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Addition passar direkt eftersom \\(+y\\) och \\(-y\\) tar ut varandra:</p><p>\\[(x+y)+(2x-y)=7+2\\Rightarrow3x=9\\Rightarrow x=3.\\]</p><p><strong>Svar:</strong> \\(x=3\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -10338,7 +10338,7 @@ window.BANKMA2 = [
     ],
     "niva": "E",
     "poang": "1/0/0",
-    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[2x+y=8,\\qquad x-y=1.\\]</p>",
+    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[\\begin{cases}2x+y=8\\\\x-y=1\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Adderar vi ekvationerna försvinner \\(y\\):</p><p>\\[(2x+y)+(x-y)=8+1\\Rightarrow3x=9\\Rightarrow x=3.\\]</p><p><strong>Svar:</strong> \\(x=3\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -10364,7 +10364,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[3x-2y=4,\\qquad x+y=5.\\]</p>",
+    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[\\begin{cases}3x-2y=4\\\\x+y=5\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Ur \\(x+y=5\\) får vi \\(y=5-x\\). Sätt in det i den första ekvationen:</p><p>\\[3x-2(5-x)=4\\Rightarrow5x=14\\Rightarrow x=2{,}8.\\]</p><p><strong>Svar:</strong> \\(x=2{,}8\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -10390,7 +10390,7 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[4x+3y=18,\\qquad 2x-y=1.\\]</p>",
+    "t": "<p>Lös ekvationssystemet och ange värdet på \\(x\\):</p><p>\\[\\begin{cases}4x+3y=18\\\\2x-y=1\\end{cases}\\]</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Gör samma tillåtna operation i båda leden och håll en tydlig ekvivalenskedja. För system väljer du den metod som enklast tar bort en variabel.</p><div class=\"facit-arbete\"><p>Ur \\(2x-y=1\\) får vi \\(y=2x-1\\). Sätt in i den första ekvationen:</p><p>\\[4x+3(2x-1)=18\\Rightarrow10x=21\\Rightarrow x=2{,}1.\\]</p><p><strong>Svar:</strong> \\(x=2{,}1\\).</p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> Sätt tillbaka varje lösning i ursprungsekvationen. Vid olikheter ska tecknet vändas när du multiplicerar eller dividerar med ett negativt tal.</p></div>",
     "familj": "Lösa linjära ekvationssystem",
     "geogebra": false,
@@ -54210,8 +54210,8 @@ window.BANKMA2 = [
     "omr": "modellval_regression",
     "niva": "A",
     "poang": "0/1/2",
-    "t": "<p>Ett datamaterial för \\(0\\le x\\le10\\) passar nästan lika bra med en linjär och en exponentiell modell. Den linjära modellen har \\(R^2=0{,}993\\) och den exponentiella \\(R^2=0{,}995\\). En elev väljer exponentiell modell enbart för att \\(R^2\\) är större. Granska valet.</p>",
-    "s": "<p>Skillnaden i \\(R^2\\) är mycket liten och räcker inte ensam för modellval. Residualerna behöver undersökas: ett systematiskt mönster visar att modellen missar struktur även om \\(R^2\\) är högt.</p><p>Modellens innebörd spelar också roll. En exponentiell modell antar ungefär konstant procentuell förändring och kan ge orimlig långsiktig extrapolation. En linjär modell antar konstant absolut förändring.</p><p><strong>Slutsats:</strong> Välj utifrån residualer, processens mekanism, giltighetsintervall och rimlighet — inte bara det största \\(R^2\\)-värdet.</p>",
+    "t": "<p>Ett datamaterial för \\(0\\le x\\le10\\) kan beskrivas med både en linjär och en exponentiell modell. Residualerna för den linjära modellen ligger slumpmässigt kring noll. För exponentialmodellen är residualerna först positiva, sedan negativa och till sist positiva igen. Vilken modell är rimligast inom mätintervallet? Motivera och diskutera extrapolation.</p>",
+    "s": "<p><strong>Steg 1 – granska residualerna:</strong> Slumpmässig spridning kring noll betyder att den linjära modellen inte lämnar något tydligt mönster oförklarat.</p><p><strong>Steg 2 – tolka mönstret:</strong> Teckenföljden positiv–negativ–positiv för exponentialmodellen visar en systematisk böjning. Modellen ligger alltså återkommande på fel sida om mätvärdena.</p><p><strong>Slutsats:</strong> Den linjära modellen är rimligast inom intervallet. Utanför intervallet måste båda modellerna användas försiktigt: en linjär modell kan så småningom ge orimliga värden och en exponentialmodell kan växa eller avta alltför snabbt.</p>",
     "familj": "Välja och granska regressionsmodeller",
     "formaga": [
       "begrepp",
@@ -54223,7 +54223,7 @@ window.BANKMA2 = [
     "självrättning": false,
     "miniräknare": false,
     "geogebra": false,
-    "ledtrad": "<p>Jämför modellernas antaganden och residualer. Fundera särskilt på extrapolation utanför mätintervallet.</p>",
+    "ledtrad": "<p>En lämplig modell lämnar residualer utan ett tydligt mönster. Skilj också mellan anpassning inom intervallet och prognoser utanför det.</p>",
     "kurs": [
       "2a",
       "2b",
@@ -54445,7 +54445,7 @@ window.BANKMA2 = [
     "niva": "A",
     "poang": "0/1/2",
     "t": "<p>Lös ekvationen \\(\\lg(x-1)+\\lg(x+1)=1\\) och kontrollera definitionsvillkoren.</p>",
-    "s": "<p>Logaritmernas argument måste vara positiva. Villkoren ger \\(x-1>0\\) och \\(x+1>0\\), alltså \\(x>1\\).</p><p>Använd logaritmlagen:</p><p>\\[\\lg((x-1)(x+1))=1\\Rightarrow x^2-1=10.\\]</p><p>\\[x^2=11\\Rightarrow x=\\pm\\sqrt{11}.\\]</p><p>Endast \\(x=\\sqrt{11}\\) uppfyller \\(x>1\\). Den negativa roten måste förkastas.</p>",
+    "s": "<p>Logaritmernas argument måste vara positiva. Villkoren ger \\(x-1>0\\) och \\(x+1>0\\), alltså \\(x>1\\).</p><p>Använd logaritmlagen:</p><p>\\[\\lg((x-1)(x+1))=1\\Rightarrow x^2-1=10.\\]</p><p>\\[x^2=11\\Rightarrow x=\\pm\\sqrt{11}.\\]</p><p>Endast \\(x=\\sqrt{11}\\) uppfyller \\(x>1\\). Värdet \\(x=-\\sqrt{11}\\) är därför en falsk rot till den ursprungliga ekvationen.</p>",
     "familj": "Logaritmlagar",
     "formaga": [
       "begrepp",
@@ -54541,5 +54541,1193 @@ window.BANKMA2 = [
       "2b",
       "2c"
     ]
+  },
+  {
+    "id": "MA2-AK-01",
+    "kap": 1,
+    "omr": "linjara_representationer",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En rät linje går genom \\((2,7)\\). När \\(x\\) ökar med 3 minskar \\(y\\) med 6.</p><p>a) Bestäm linjens ekvation.<br>b) En annan linje är \\(y=(a-1)x+5\\). Bestäm \\(a\\) så att linjerna är parallella och förklara varför de då inte sammanfaller.</p>",
+    "s": "<p><strong>Bestäm lutningen:</strong> Förändringen är \\(\\Delta y=-6\\) när \\(\\Delta x=3\\), alltså</p><p>\\[k=\\frac{-6}{3}=-2.\\]</p><p>Sätt punkten \\((2,7)\\) i \\(y=-2x+m\\):</p><p>\\[7=-2\\cdot2+m\\Rightarrow m=11.\\]</p><p>Linjen är därför \\(y=-2x+11\\).</p><p>Parallellitet kräver samma lutning: \\(a-1=-2\\Rightarrow a=-1\\). Den andra linjen blir då \\(y=-2x+5\\). Konstanttermerna 11 och 5 är olika, så linjerna är parallella men inte samma linje.</p>",
+    "familj": "Tolka och växla mellan linjära representationer",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Översätt först förändringen till \\(k=\\Delta y/\\Delta x\\). Parallella olika linjer har samma \\(k\\) men olika \\(m\\).</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-02",
+    "kap": 1,
+    "omr": "ekvationssystem_tillampningar",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En förening ska blanda en 20-procentig och en 50-procentig lösning till 30 liter. Den färdiga blandningen ska innehålla 12 liter av det verksamma ämnet.</p><p>a) Ställ upp och lös ett ekvationssystem.<br>b) Förklara varför målet inte kan nås om högst 15 liter av den 50-procentiga lösningen finns.</p>",
+    "s": "<p>Låt \\(x\\) vara liter 20-procentig lösning och \\(y\\) liter 50-procentig lösning. Då gäller</p><p>\\[\\begin{cases}x+y=30\\\\0{,}20x+0{,}50y=12\\end{cases}\\]</p><p>Sätt \\(x=30-y\\) i den andra ekvationen:</p><p>\\[0{,}20(30-y)+0{,}50y=12\\Rightarrow6+0{,}30y=12\\Rightarrow y=20.\\]</p><p>Därför är \\(x=10\\). Blandningen kräver alltså 10 liter av den svagare och 20 liter av den starkare lösningen.</p><p>Om högst 15 liter av den starkare lösningen används blir mängden verksamt ämne som mest \\(0{,}20\\cdot15+0{,}50\\cdot15=10{,}5\\) liter. Det är mindre än 12 liter, så målet är omöjligt.</p>",
+    "familj": "Tillämpningar med ekvationssystem",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Låt variablerna stå för volymerna. Den ena ekvationen beskriver total volym och den andra mängden verksamt ämne.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-03",
+    "kap": 2,
+    "omr": "losningsformel_andragrad",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Bestäm alla värden på \\(a\\) för vilka ekvationen \\(x^2-6x+a=0\\) har två olika positiva rötter.</p>",
+    "s": "<p>Skriv ekvationen på pq-form. Här är \\(p=-6\\) och \\(q=a\\):</p><p>\\[x=3\\pm\\sqrt{9-a}.\\]</p><p>Två olika reella rötter kräver \\(9-a>0\\), alltså \\(a<9\\).</p><p>Den mindre roten måste dessutom vara positiv:</p><p>\\[3-\\sqrt{9-a}>0\\Rightarrow\\sqrt{9-a}<3\\Rightarrow a>0.\\]</p><p><strong>Svar:</strong> Båda kraven gäller precis när \\(0<a<9\\).</p><p>Vid \\(a=0\\) är den ena roten noll, och vid \\(a=9\\) sammanfaller rötterna. Ändpunkterna ska därför inte tas med.</p>",
+    "familj": "Lösningsformeln",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Använd pq-formeln. Kontrollera separat att roten ur är positiv och att den mindre av de två rötterna är större än noll.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-04",
+    "kap": 2,
+    "omr": "fran_graf_till_formel",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En andragradsfunktion har nollställena \\(x=-2\\) och \\(x=6\\). Dess minsta värde är \\(-16\\).</p><p>Bestäm funktionen och visa hur du vet var minimipunkten ligger.</p>",
+    "s": "<p>Nollställena ger faktorformen</p><p>\\[f(x)=a(x+2)(x-6).\\]</p><p>Symmetrilinjen ligger mitt emellan nollställena:</p><p>\\[x=\\frac{-2+6}{2}=2.\\]</p><p>Minimipunkten har därför x-koordinaten 2. Eftersom minimivärdet är \\(-16\\) gäller</p><p>\\[-16=f(2)=a(2+2)(2-6)=-16a,\\]</p><p>så \\(a=1\\). Funktionen är</p><p>\\[f(x)=(x+2)(x-6)=x^2-4x-12.\\]</p><p>Eftersom \\(a>0\\) öppnar parabeln uppåt, vilket bekräftar att punkten \\((2,-16)\\) är en minimipunkt.</p>",
+    "familj": "Bestämma andragradsfunktion från graf",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Börja i faktorform. Symmetrilinjen ligger mitt emellan nollställena och minimivärdet bestämmer faktorn framför parenteserna.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-05",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En boll kastas från en balkong. Höjden modelleras av \\(h(t)=-5t^2+15t+20\\), där \\(t\\) mäts i sekunder.</p><p>a) Bestäm bollens största höjd.<br>b) Bestäm när bollen träffar marken.<br>c) Ange ett rimligt definitionsintervall för modellen.</p>",
+    "s": "<p><strong>Största höjden:</strong> Dividera andragradsdelen med \\(-5\\): \\(t^2-3t-4\\). Då är \\(p=-3\\), så symmetrilinjen ligger vid</p><p>\\[t=-\\frac p2=1{,}5.\\]</p><p>Höjden blir \\(h(1{,}5)=-5\\cdot1{,}5^2+15\\cdot1{,}5+20=31{,}25\\) m.</p><p><strong>Marken:</strong> Sätt \\(h(t)=0\\) och dividera med \\(-5\\):</p><p>\\[t^2-3t-4=0\\Rightarrow(t-4)(t+1)=0.\\]</p><p>Rötterna är \\(t=4\\) och \\(t=-1\\). Negativ tid hör inte till situationen, så bollen träffar marken efter 4 s.</p><p><strong>Definitionsintervall:</strong> Modellen beskriver kastet från start till markträff: \\(0\\le t\\le4\\).</p>",
+    "familj": "Tillämpa andragradsmodeller",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Högsta punkten ligger på symmetrilinjen. Markträffen fås av \\(h(t)=0\\), men lösningarna måste också passa tidsintervallet.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-06",
+    "kap": 2,
+    "omr": "rotekvationer",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Lös ekvationen \\(\\sqrt{2x+3}=x\\) och visa tydligt om någon falsk rot uppstår.</p>",
+    "s": "<p>Eftersom en kvadratrot aldrig är negativ måste \\(x\\ge0\\). Kvadrera båda led:</p><p>\\[2x+3=x^2\\Rightarrow x^2-2x-3=0.\\]</p><p>Faktorisera:</p><p>\\[(x-3)(x+1)=0\\Rightarrow x=3\\text{ eller }x=-1.\\]</p><p>Pröva i ursprungsekvationen. För \\(x=3\\) blir \\(\\sqrt9=3\\), så den roten fungerar. För \\(x=-1\\) blir vänsterledet \\(\\sqrt1=1\\), inte \\(-1\\). Därför är \\(x=-1\\) en <strong>falsk rot</strong>.</p><p><strong>Svar:</strong> \\(x=3\\).</p>",
+    "familj": "Rotekvationer och falska rötter",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Skriv först villkoret på högerledet. Efter kvadrering måste varje möjlig lösning prövas i den ursprungliga ekvationen.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-07",
+    "kap": 2,
+    "omr": "exponentialfunktioner",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En odling innehåller 800 bakterier efter 2 timmar och 1 800 bakterier efter 4 timmar. Anta exponentiell tillväxt.</p><p>a) Bestäm en modell \\(N(t)=C\\cdot a^t\\).<br>b) Bestäm när antalet först överstiger 5 000.</p>",
+    "s": "<p>De två mätningarna ger \\(Ca^2=800\\) och \\(Ca^4=1800\\). Dividera ekvationerna:</p><p>\\[a^2=\\frac{1800}{800}=2{,}25\\Rightarrow a=1{,}5.\\]</p><p>Då är \\(C=800/1{,}5^2=3200/9\\approx355{,}6\\). Modellen blir</p><p>\\[N(t)=\\frac{3200}{9}\\cdot1{,}5^t.\\]</p><p>Lös \\(N(t)>5000\\):</p><p>\\[1{,}5^t>14{,}0625\\Rightarrow t>\\frac{\\lg14{,}0625}{\\lg1{,}5}\\approx6{,}52.\\]</p><p>Antalet passerar alltså 5 000 efter ungefär 6,52 timmar. Om man bara räknar hela timmar är den första hela timmen \\(t=7\\).</p>",
+    "familj": "Bestämma och tolka exponentialfunktioner",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": true,
+    "geogebra": false,
+    "ledtrad": "<p>Dividera de två mätningsekvationerna så försvinner startvärdet. Tänk sedan på skillnaden mellan exakt tid och första hela timme.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-08",
+    "kap": 2,
+    "omr": "exponentialgraf",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>En avtagande exponentialfunktion går genom punkterna \\((0,320)\\) och \\((3,40)\\).</p><p>a) Bestäm funktionens förändringsfaktor per x-enhet.<br>b) Förklara varför grafen aldrig når y = 0 enligt modellen.</p>",
+    "s": "<p>Skriv \\(f(x)=320\\cdot a^x\\). Punkten \\((3,40)\\) ger</p><p>\\[40=320a^3\\Rightarrow a^3=\\frac18\\Rightarrow a=\\frac12.\\]</p><p>Förändringsfaktorn är alltså 0,5, vilket betyder en minskning med 50 % per x-enhet.</p><p>För varje ändligt x är \\(0{,}5^x>0\\). Produkten \\(320\\cdot0{,}5^x\\) kan därför bli hur liten som helst men aldrig exakt noll. x-axeln är en asymptot till grafen.</p>",
+    "familj": "Tolka exponentialfunktion från graf",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Använd punkten vid x = 0 som startvärde. Den andra punkten visar den sammanlagda förändringen under tre steg.</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-09",
+    "kap": 2,
+    "omr": "potensfunktioner",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Två likformiga cylindrar har samma proportioner. Den större cylinderns volym är 27 gånger den mindres.</p><p>Bestäm förhållandet mellan deras höjder och mellan deras mantelytor. Motivera med potenssamband.</p>",
+    "s": "<p>För likformiga kroppar växer volymen med längdskalans tredje potens. Om längdskalan är \\(k\\) gäller</p><p>\\[k^3=27\\Rightarrow k=3.\\]</p><p>Den större cylinderns höjd är därför 3 gånger den mindres.</p><p>Areor växer med längdskalans andra potens:</p><p>\\[k^2=3^2=9.\\]</p><p>Mantelytan är alltså 9 gånger så stor. Skillnaden beror på att höjd är en längd, mantelyta en area och volym en tredimensionell storhet.</p>",
+    "familj": "Potensfunktioner",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Inför en längdskala k. Volymen följer \\(k^3\\), medan arean följer \\(k^2\\).</p>",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-10",
+    "kap": 3,
+    "omr": "bevis_likformighet",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>I triangeln ABC ligger D på AB och E på AC. Man vet att \\(AD/AB=AE/AC\\).</p><p>Visa att \\(DE\\parallel BC\\) och förklara varför villkoret om samma förhållande behövs.</p>",
+    "s": "<p>Trianglarna ADE och ABC har den gemensamma vinkeln A. Dessutom är de två sidorna runt vinkeln proportionella:</p><p>\\[\\frac{AD}{AB}=\\frac{AE}{AC}.\\]</p><p>Trianglarna är därför likformiga enligt sida–vinkel–sida.</p><p>Likformigheten ger att motsvarande vinklar är lika, till exempel \\(\\angle ADE=\\angle ABC\\). När två linjer bildar lika motsvarande vinklar med en transversal är linjerna parallella. Alltså är \\(DE\\parallel BC\\).</p><p>Om förhållandena inte vore lika skulle sida–vinkel–sida inte kunna användas. D och E kunde då ligga på olika relativa avstånd, och DE behövde inte vara parallell med BC.</p>",
+    "familj": "Bevis med likformighet",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Jämför den lilla triangeln ADE med hela triangeln ABC. De delar vinkeln vid A.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-11",
+    "kap": 3,
+    "omr": "randvinkel_medelpunkt",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Punkterna A, B, C och D ligger på samma cirkel. Randvinkeln \\(\\angle ACB=38^\\circ\\), och D ligger på motsatt cirkelbåge från C.</p><p>Bestäm den mindre medelpunktsvinkeln över bågen AB och vinkeln \\(\\angle ADB\\). Motivera.</p>",
+    "s": "<p>Medelpunktsvinkeln över samma båge är dubbelt så stor som randvinkeln:</p><p>\\[\\angle AOB=2\\cdot38^\\circ=76^\\circ.\\]</p><p>C och D ligger på motsatta bågar. Randvinklarna \\(\\angle ACB\\) och \\(\\angle ADB\\) spänner därför över de två kompletterande bågarna AB. Motsatta vinklar i en cyklisk fyrhörning har summan \\(180^\\circ\\):</p><p>\\[\\angle ADB=180^\\circ-38^\\circ=142^\\circ.\\]</p><p><strong>Svar:</strong> Den mindre medelpunktsvinkeln är \\(76^\\circ\\) och \\(\\angle ADB=142^\\circ\\).</p>",
+    "familj": "Randvinkel och medelpunktsvinkel",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Avgör först vilken båge varje randvinkel spänner över. Randvinklar på samma båge är lika; på motsatta bågar blir de supplementvinklar.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-12",
+    "kap": 4,
+    "omr": "standardavvikelse",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Ett datamaterial består av talen 4, 6, 8, 10 och 12. Talet 12 ersätts med 22.</p><p>Förklara utan att först räkna ut standardavvikelserna exakt hur medelvärde, median och standardavvikelse påverkas. Kontrollera sedan medelvärdena.</p>",
+    "s": "<p>Medianen är mittentalet 8 både före och efter ändringen, eftersom ordningen kring mitten inte förändras.</p><p>Summan ökar med 10 och materialet har fem värden. Medelvärdet ökar därför med \\(10/5=2\\):</p><p>\\[\\bar x_{före}=\\frac{40}{5}=8,\\qquad \\bar x_{efter}=\\frac{50}{5}=10.\\]</p><p>Standardavvikelsen ökar. Det nya värdet 22 ligger mycket längre från det nya medelvärdet än 12 låg från det gamla. Även flera av de andra värdenas avstånd från medelvärdet förändras. Sammantaget blir den typiska spridningen större.</p><p><strong>Insikt:</strong> Medianen är robust mot en förändring i ett extremvärde, medan medelvärde och standardavvikelse påverkas tydligt.</p>",
+    "familj": "Standardavvikelse",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Medianen beror på det mittersta läget. Medelvärdet beror på summan. Standardavvikelsen reagerar på avstånd från medelvärdet.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-13",
+    "kap": 4,
+    "omr": "normalfordelning_digitala_verktyg",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Resultaten på ett test är normalfördelade med medelvärdet 72 och standardavvikelsen 8. De 10 % bästa får ett särskilt intyg.</p><p>Bestäm den lägsta poäng som ungefär krävs och förklara vilket område under normalkurvan du använder.</p>",
+    "s": "<p>De 10 % bästa ligger i den högra svansen. Gränsen har därför 90 % av resultaten till vänster. Den 90:e percentilen i standardnormalfördelningen är ungefär \\(z=1{,}282\\).</p><p>Översätt tillbaka till testpoäng:</p><p>\\[x=\\mu+z\\sigma=72+1{,}282\\cdot8\\approx82{,}3.\\]</p><p>Den teoretiska gränsen är alltså cirka 82,3 poäng. Om bara heltalspoäng används krävs normalt minst 83 poäng för att ligga över gränsen.</p><p>Det viktiga områdesvalet är \\(P(X\\le x)=0{,}90\\), vilket är samma sak som \\(P(X>x)=0{,}10\\).</p>",
+    "familj": "Bestämma gränsvärde i normalfördelning från sannolikhet",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": true,
+    "geogebra": false,
+    "ledtrad": "<p>10 % ska ligga till höger om gränsen. Sök därför värdet som har 90 % till vänster.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-14",
+    "kap": 4,
+    "omr": "linjar_regression",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Ett spridningsdiagram för temperatur och glassförsäljning följer ungefär en stigande rät linje mellan 12 °C och 28 °C. En elev använder regressionslinjen för att förutsäga försäljningen vid 60 °C.</p><p>Bedöm prognosen och förklara hur en extrem mätpunkt vid 40 °C skulle kunna påverka den anpassade linjen.</p>",
+    "s": "<p>Prognosen vid 60 °C är en långtgående extrapolation eftersom den ligger långt utanför mätintervallet 12–28 °C. Sambandet behöver inte fortsätta linjärt: butiken kan få slut på varor, människor kan stanna inne och 60 °C kan ligga utanför situationens rimliga villkor.</p><p>En ensam punkt vid 40 °C ligger långt från de övriga x-värdena och får därför stor möjlighet att vrida regressionslinjen. Om punktens y-värde ligger högt kan lutningen öka; ligger det lågt kan lutningen minska eller till och med ändra tecken.</p><p><strong>Slutsats:</strong> Visa alltid mätintervallet, granska extrema punkter och skilj interpolation från extrapolation. Sambandet visar dessutom inte ensamt att temperaturen orsakar hela förändringen.</p>",
+    "familj": "Kritisk granskning av korrelation och regressionsmodeller",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Jämför 60 °C med det intervall där data faktiskt finns. Fundera sedan på varför en punkt långt åt höger påverkar linjens lutning mycket.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
+  },
+  {
+    "id": "MA2-AK-15",
+    "kap": 3,
+    "omr": "koordinatgeometri_problemlosning",
+    "niva": "A",
+    "poang": "0/1/2",
+    "t": "<p>Punkten \\(P=(a,2a-1)\\) ligger lika långt från \\(A=(-1,4)\\) som från \\(B=(5,0)\\).</p><p>Bestäm P och visa varför det räcker att jämföra de kvadrerade avstånden.</p>",
+    "s": "<p>Avstånd är icke-negativa. Därför är två avstånd lika precis när deras kvadrater är lika; vi slipper då kvadratrötterna.</p><p>\\[PA^2=(a+1)^2+(2a-5)^2\\]</p><p>\\[PB^2=(a-5)^2+(2a-1)^2.\\]</p><p>Sätt uttrycken lika och utveckla:</p><p>\\[a^2+2a+1+4a^2-20a+25=a^2-10a+25+4a^2-4a+1.\\]</p><p>Termerna \\(5a^2\\) och konstanterna tar ut varandra:</p><p>\\[-18a=-14a\\Rightarrow a=0.\\]</p><p>Då är \\(P=(0,-1)\\). Kontroll ger \\(PA^2=PB^2=26\\), alltså är båda avstånden \\(\\sqrt{26}\\).</p>",
+    "familj": "Koordinatgeometrisk problemlösning",
+    "formaga": [
+      "problemlösning",
+      "resonemang"
+    ],
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "miniräknare": false,
+    "geogebra": false,
+    "ledtrad": "<p>Skriv avståndsformeln till A och B, men sätt de kvadrerade uttrycken lika innan du tar någon rot.</p>",
+    "kurs": [
+      "2b",
+      "2c"
+    ]
   }
 ];
+
+/* Provbanksrevision 2026-09-11.
+ * Repetitiva serier i kapitel 1–2 ersätts med varierade uppgifter utan att
+ * bankens storlek eller stabila id:n ändras. Deluppgifter får egen nivå. */
+(() => {
+  const bank = window.BANKMA2;
+  const byId = new Map(bank.map(u => [String(u.id), u]));
+  const rensa = u => {
+    ["spelDelning","spelDelar","svarFormat","svarsstruktur","svarEtiketter"].forEach(k => delete u[k]);
+  };
+  const satt = (id, data) => {
+    const u = byId.get(String(id));
+    if (!u) throw new Error("Saknat uppgifts-id i provbanksrevisionen: " + id);
+    rensa(u);
+    Object.assign(u, data);
+    return u;
+  };
+  const delar = (u, lista) => {
+    u.spelDelning = "deluppgifter";
+    u.spelDelar = lista;
+    u.svarstyp = "flera_delar";
+    u.självrättning = false;
+    u.rättSvar = null;
+  };
+  const facit = (ide, arbete, svar, insikt) => '<div class="facit-v2"><p class="facit-metod"><strong>Tänk så här:</strong> '+ide+'</p><div class="facit-arbete">'+arbete+'<p><strong>'+svar+'</strong></p></div><p class="facit-not"><strong>Kontroll och insikt:</strong> '+insikt+'</p></div>';
+
+  /* Kapitel 1: linjära samband och ekvationssystem. */
+  let u = satt("1.281", {
+    niva:"C", poang:"1/1/0", omr:"rata_linjens_ekvation",
+    t:'<p>Ett cykelabonnemang kostar enligt modellen \\(K(x)=85+12x\\) kronor, där \\(x\\) är antalet timmar som cykeln används.</p><p>a) Vad betyder talet 85 i modellen?</p><p>b) Hur många timmar har cykeln använts när kostnaden är 265 kr?</p>',
+    s:facit("Skilj på startvärdet och den del som förändras med x.",'<p>a) När \\(x=0\\) är \\(K(0)=85\\). Det är den fasta avgiften.</p><p>b) Sätt kostnaden lika med 265:</p><p>\\[85+12x=265\\Rightarrow12x=180\\Rightarrow x=15.\\]</p>',"a) 85 kr är den fasta avgiften. b) 15 timmar.","Sätt in x=15: 85+12·15=265 kr."),
+    familj:"Använda linjens ekvation och beräkna värden", formaga:["begrepp","procedur"], ledtrad:"<p>a) Beräkna kostnaden när \\(x=0\\). b) Sätt \\(K(x)=265\\).</p>", svarstyp:"flera_delar", rättSvar:null, självrättning:false
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>Ett cykelabonnemang kostar enligt \\(K(x)=85+12x\\).</p><div class="spel-en-del">Vad betyder talet 85?</div>',s:"<p><strong>Svar:</strong> Den fasta avgiften är 85 kr.</p>",ledtrad:"<p>Undersök K(0).</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>Ett cykelabonnemang kostar enligt \\(K(x)=85+12x\\).</p><div class="spel-en-del">Hur många timmar har cykeln använts när kostnaden är 265 kr?</div>',s:"<p><strong>Svar:</strong> 15 timmar.</p>",ledtrad:"<p>Sätt K(x)=265 och lös ekvationen.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  u = satt("1.282", {
+    niva:"C",poang:"1/1/0",omr:"rata_linjens_ekvation",
+    t:'<p>Två taxibolag använder modellerna \\(A(x)=69+2{,}40x\\) och \\(B(x)=129+1{,}20x\\), där \\(x\\) är resans längd i kilometer.</p><p>a) Vilket bolag är billigast vid 30 km?</p><p>b) Vid vilken reslängd kostar bolagen lika mycket? Tolka svaret.</p>',
+    s:facit("Jämför först funktionsvärden. Likhet mellan priserna ger sedan en ekvation.",'<p>a) \\(A(30)=141\\) och \\(B(30)=165\\), så A är billigast.</p><p>b) \\(69+2{,}40x=129+1{,}20x\\), alltså \\(1{,}20x=60\\) och \\(x=50\\).</p>',"a) A är billigast vid 30 km. b) Priserna är lika vid 50 km.","Före 50 km väger A:s lägre startavgift tyngst; efter 50 km väger B:s lägre kilometerpris tyngst."),
+    familj:"Använda linjens ekvation och beräkna värden",formaga:["procedur","problemlösning","resonemang"],ledtrad:"<p>Beräkna båda priserna vid 30 km. Sätt sedan A(x)=B(x).</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>För \\(A(x)=69+2{,}40x\\) och \\(B(x)=129+1{,}20x\\):</p><div class="spel-en-del">Vilket bolag är billigast vid 30 km?</div>',s:"<p><strong>Svar:</strong> A, 141 kr mot 165 kr.</p>",ledtrad:"<p>Beräkna A(30) och B(30).</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>För \\(A(x)=69+2{,}40x\\) och \\(B(x)=129+1{,}20x\\):</p><div class="spel-en-del">När kostar bolagen lika mycket, och vad betyder svaret?</div>',s:"<p><strong>Svar:</strong> Vid 50 km.</p>",ledtrad:"<p>Sätt modellerna lika.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  satt("1.283", {
+    niva:"E",poang:"1/0/0",omr:"linjara_representationer",
+    t:'<p>Vilken av tabellerna kan <em>inte</em> beskriva en linjär funktion?</p><table class="data"><tr><th>x</th><th>0</th><th>1</th><th>2</th><th>3</th></tr><tr><th>A</th><td>4</td><td>7</td><td>10</td><td>13</td></tr><tr><th>B</th><td>4</td><td>7</td><td>11</td><td>14</td></tr></table>',
+    s:facit("I en linjär tabell är förändringen i y lika stor för varje lika stort steg i x.",'<p>Tabell A ökar med 3 varje gång. Tabell B ökar med 3, sedan 4 och sedan 3.</p>',"Tabell B kan inte vara linjär.","En enda avvikande differens räcker för att tabellen inte ska vara exakt linjär."),
+    familj:"Tolka och växla mellan linjära representationer",formaga:["begrepp","resonemang"],svarstyp:"text",rättSvar:"B",självrättning:true,ledtrad:"<p>Jämför förändringen mellan intilliggande y-värden.</p>"
+  });
+
+  satt("1.284", {
+    niva:"C",poang:"0/2/0",omr:"bestamma_linjara_funktioner",
+    t:'<p>En elev beräknar riktningskoefficienten mellan punkterna \\((-2,5)\\) och \\((4,-7)\\) som</p><p>\\[k=\\frac{-7-5}{-2-4}=2.\\]</p><p>Förklara felet och bestäm linjens korrekta ekvation.</p>',
+    s:facit("Ordningen i täljarens och nämnarens differenser måste vara densamma.",'<p>Eleven går från den första punkten till den andra i täljaren, men åt motsatt håll i nämnaren. Korrekt blir</p><p>\\[k=\\frac{-7-5}{4-(-2)}=\\frac{-12}{6}=-2.\\]</p><p>Sätt in \\((-2,5)\\): \\(5=-2(-2)+m\\), så \\(m=1\\).</p>',"Felet är inkonsekvent subtraktionsordning; linjen är y=-2x+1.","Båda givna punkterna uppfyller y=-2x+1."),
+    familj:"Bestämma linjär funktion från två punkter",formaga:["procedur","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Använd k=(y₂-y₁)/(x₂-x₁) med samma punktordning uppe och nere.</p>"
+  });
+
+  u = satt("1.285", {
+    niva:"C",poang:"1/1/0",omr:"rata_linjens_ekvation",
+    t:'<p>Linjen har ekvationen \\(y=-2x+12\\).</p><p>a) Bestäm linjens skärningar med koordinataxlarna.</p><p>b) Linjen och de positiva koordinataxlarna bildar en triangel. Bestäm triangelns area.</p>',
+    s:facit("Axelskärningar fås genom att sätta den andra koordinaten till noll.",'<p>a) När \\(x=0\\) fås \\(y=12\\). När \\(y=0\\) fås \\(x=6\\).</p><p>b) Triangelns bas är 6 och höjd 12:</p><p>\\[A=\\frac{6\\cdot12}{2}=36.\\]</p>',"a) (0,12) och (6,0). b) 36 areaenheter.","Skärningarna ger direkt triangelns vinkelräta bas och höjd."),
+    familj:"Bestämma skärningar med koordinataxlar",formaga:["procedur","problemlösning"],ledtrad:"<p>Sätt först x=0 och sedan y=0.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>Linjen är \\(y=-2x+12\\).</p><div class="spel-en-del">Bestäm skärningarna med koordinataxlarna.</div>',s:"<p><strong>Svar:</strong> (0,12) och (6,0).</p>",ledtrad:"<p>Sätt x=0 respektive y=0.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>Linjen \\(y=-2x+12\\) och de positiva axlarna bildar en triangel.</p><div class="spel-en-del">Bestäm triangelns area.</div>',s:"<p><strong>Svar:</strong> 36 areaenheter.</p>",ledtrad:"<p>Använd axelskärningarna som bas och höjd.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  satt("1.286", {
+    niva:"C",poang:"0/2/0",omr:"bestamma_linjara_funktioner",
+    t:'<p>Ge ett exempel på en linjär funktion vars graf går genom \\((2,5)\\), är växande och skär \\(y\\)-axeln ovanför origo. Förklara varför flera svar är möjliga.</p>',
+    s:facit("Skriv y=kx+m. Växande betyder k>0, och positiv y-skärning betyder m>0.",'<p>Punkten ger \\(5=2k+m\\). Välj exempelvis \\(k=2\\); då blir \\(m=1\\), så \\(y=2x+1\\).</p><p>Alla val \\(0<k<2{,}5\\) ger \\(m=5-2k>0\\).</p>',"Ett möjligt svar är y=2x+1; det finns oändligt många svar.","En konstruktionsuppgift kan ha flera korrekta svar när villkoren inte bestämmer både koefficienterna entydigt."),
+    familj:"Bestämma linjär funktion från villkor",formaga:["begrepp","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Utgå från y=kx+m och översätt varje villkor till en olikhet eller ekvation.</p>"
+  });
+
+  u = satt("1.287", {
+    niva:"C",poang:"1/2/0",omr:"linjara_representationer",
+    t:'<p>En vattentank innehåller 420 liter. Därefter tappas 18 liter per minut ur tanken.</p><p>a) Skriv en linjär modell \\(V(t)\\) för volymen efter \\(t\\) minuter.</p><p>b) Modellen får bara användas så länge den beskriver en möjlig volym. Bestäm modellens definitionsintervall och motivera.</p>',
+    s:facit("Startvärdet är volymen vid t=0 och den negativa lutningen är minskningen per minut.",'<p>a) \\(V(t)=420-18t\\).</p><p>b) Tid kan inte vara negativ och volymen måste vara minst noll. \\(420-18t\\ge0\\) ger \\(t\\le 70/3\\approx23{,}3\\).</p>',"a) V(t)=420-18t. b) 0≤t≤70/3 minuter.","Den algebraiska linjen fortsätter efter att tanken blivit tom, men då har modellen förlorat sin verkliga betydelse."),
+    familj:"Tolka och växla mellan linjära representationer",formaga:["modellering","problemlösning","resonemang"],ledtrad:"<p>Bestäm V(0) och förändringen per minut. Kräv sedan V(t)≥0.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>En tank innehåller 420 liter och töms med 18 liter per minut.</p><div class="spel-en-del">Skriv modellen V(t).</div>',s:"<p><strong>Svar:</strong> V(t)=420-18t.</p>",ledtrad:"<p>Startvärde minus minskning per minut gånger tiden.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>Modellen är \\(V(t)=420-18t\\).</p><div class="spel-en-del">Bestäm ett verklighetsanpassat definitionsintervall och motivera.</div>',s:"<p><strong>Svar:</strong> 0≤t≤70/3 minuter.</p>",ledtrad:"<p>Tid och volym får inte vara negativa.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  satt("1.288", {
+    niva:"E",poang:"1/0/0",omr:"linjara_representationer",
+    t:'<p>En linjär funktion har värdena \\(f(1)=7\\) och \\(f(5)=19\\). Vilket värde saknas?</p><table class="data"><tr><th>x</th><th>1</th><th>3</th><th>5</th></tr><tr><th>f(x)</th><td>7</td><td>?</td><td>19</td></tr></table>',
+    s:facit("För en linjär funktion ligger mittpunkten i x också mitt emellan funktionsvärdena.",'<p>x=3 ligger mitt emellan 1 och 5. Därför ligger f(3) mitt emellan 7 och 19:</p><p>\\[f(3)=\\frac{7+19}{2}=13.\\]</p>',"Det saknade värdet är 13.","Samma resultat fås med k=(19-7)/(5-1)=3 och f(x)=3x+4."),
+    familj:"Bestämma linjär funktion från tabell",formaga:["begrepp","procedur"],svarstyp:"numeriskt",rättSvar:13,självrättning:true,ledtrad:"<p>x=3 ligger precis mitt emellan de två givna x-värdena.</p>"
+  });
+
+  satt("1.289", {
+    niva:"C",poang:"0/2/0",omr:"bestamma_linjara_funktioner",
+    t:'<p>Punkterna \\(A=(-1,8)\\), \\(B=(2,2)\\) och \\(C=(5,-5)\\) påstås ligga på samma räta linje. Undersök påståendet utan att rita.</p>',
+    s:facit("Tre punkter är kollineära om riktningskoefficienten är densamma mellan två olika punktpar.",'<p>\\[k_{AB}=\\frac{2-8}{2-(-1)}=-2,\\qquad k_{BC}=\\frac{-5-2}{5-2}=-\\frac73.\\]</p><p>Lutningarna är olika.</p>',"Påståendet är falskt; punkterna ligger inte på samma räta linje.","Det räcker inte att punkterna ser ut att följa en trend. Exakt linjäritet kräver samma förändringskvot."),
+    familj:"Bestämma linjär funktion från två punkter",formaga:["procedur","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Jämför lutningen AB med lutningen BC.</p>"
+  });
+
+  satt("1.290", {
+    niva:"C",poang:"0/2/0",omr:"rata_linjens_ekvation",
+    t:'<p>Linjen \\(L\\) skär \\(y\\)-axeln i \\((0,6)\\). Punkten \\(P=(4,-2)\\) ligger på linjen.</p><p>Bestäm linjens ekvation och dess skärning med \\(x\\)-axeln.</p>',
+    s:facit("Y-skärningen ger m direkt. Punkten bestämmer sedan k.",'<p>Sätt \\(y=kx+6\\). Punkten P ger \\(-2=4k+6\\), alltså \\(k=-2\\). Linjen är \\(y=-2x+6\\).</p><p>Sätt \\(y=0\\): \\(0=-2x+6\\Rightarrow x=3\\).</p>',"Linjen är y=-2x+6 och skär x-axeln i (3,0).","Både (0,6) och (4,-2) uppfyller ekvationen."),
+    familj:"Bestämma linjens ekvation från villkor",formaga:["procedur","begrepp"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Skriv först y=kx+6 och sätt in punkten P.</p>"
+  });
+
+  u = satt("1.291", {
+    niva:"C",poang:"1/1/0",omr:"linjara_ekvationssystem",
+    t:'<p>Betrakta systemet</p><p>\\[\\begin{cases}2x+y=11\\\\3x-y=9.\\end{cases}\\]</p><p>a) Lös systemet.</p><p>b) Utan att lösa om systemet: förklara vad lösningen betyder geometriskt.</p>',
+    s:facit("Addering tar bort y direkt.",'<p>a) Ekvationerna adderas: \\(5x=20\\), så \\(x=4\\). Då är \\(y=3\\).</p><p>b) Punkten \\((4,3)\\) är den enda punkt som ligger på båda linjerna, alltså deras skärningspunkt.</p>',"a) (x,y)=(4,3). b) Punkten är linjernas skärningspunkt.","En algebraisk lösning och en grafisk skärningspunkt är två representationer av samma sak."),
+    familj:"Lösa linjära ekvationssystem",formaga:["procedur","begrepp"],ledtrad:"<p>Addera ekvationerna så försvinner y.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>Lös systemet \\(\\begin{cases}2x+y=11\\\\3x-y=9.\\end{cases}\\)</p>',s:"<p><strong>Svar:</strong> (4,3).</p>",ledtrad:"<p>Addera ekvationerna.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>Systemet har lösningen \\((4,3)\\).</p><div class="spel-en-del">Förklara lösningen geometriskt.</div>',s:"<p><strong>Svar:</strong> Det är linjernas skärningspunkt.</p>",ledtrad:"<p>Varje ekvation beskriver en rät linje.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  satt("1.292", {
+    niva:"C",poang:"0/2/0",omr:"linjara_ekvationssystem",
+    t:'<p>En elev löser systemet</p><p>\\[\\begin{cases}x+y=7\\\\2x-y=5\\end{cases}\\]</p><p>genom att addera ekvationerna och skriver \\(3x=2\\). Förklara felet och bestäm den korrekta lösningen.</p>',
+    s:facit("När hela vänsterleden adderas måste hela högerleden också adderas.",'<p>Högerleden ger \\(7+5=12\\), inte \\(7-5=2\\). Alltså \\(3x=12\\) och \\(x=4\\). Första ekvationen ger \\(y=3\\).</p>',"Felet ligger i högerledets addition; lösningen är (4,3).","Kontroll: 4+3=7 och 2·4-3=5."),
+    familj:"Lösa linjära ekvationssystem",formaga:["procedur","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Skriv additionen av båda ekvationernas vänster- och högerled på var sin rad.</p>"
+  });
+
+  u = satt("1.293", {
+    niva:"C",poang:"1/2/0",omr:"ekvationssystem_tillampningar",
+    t:'<p>På ett museum säljs vuxenbiljetter för 120 kr och ungdomsbiljetter för 70 kr. Under en timme säljs 38 biljetter.</p><p>a) Låt \\(x\\) vara antalet vuxenbiljetter och \\(y\\) antalet ungdomsbiljetter. Skriv en ekvation för antalet biljetter.</p><p>b) Intäkten blev 3 410 kr. Bestäm hur många biljetter av varje sort som såldes.</p>',
+    s:facit("Översätt antalet och intäkten till var sin ekvation.",'<p>a) \\(x+y=38\\).</p><p>b) Intäkten ger \\(120x+70y=3410\\). Sätt \\(y=38-x\\):</p><p>\\[120x+70(38-x)=3410\\Rightarrow50x=750\\Rightarrow x=15.\\]</p><p>Då är \\(y=23\\).</p>',"a) x+y=38. b) 15 vuxenbiljetter och 23 ungdomsbiljetter.","15+23=38 och 120·15+70·23=3410."),
+    familj:"Tillämpningar med ekvationssystem",formaga:["modellering","procedur","problemlösning"],ledtrad:"<p>Antalet ger en ekvation; pris gånger antal ger intäktsekvationen.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>38 vuxen- och ungdomsbiljetter säljs. Låt x och y vara antalen.</p><div class="spel-en-del">Skriv ekvationen för det totala antalet.</div>',s:"<p><strong>Svar:</strong> x+y=38.</p>",ledtrad:"<p>De två antalen ska tillsammans bli 38.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>Vuxenbiljetter kostar 120 kr, ungdomsbiljetter 70 kr, 38 biljetter säljs och intäkten är 3 410 kr.</p><div class="spel-en-del">Bestäm antalet av varje sort.</div>',s:"<p><strong>Svar:</strong> 15 vuxen- och 23 ungdomsbiljetter.</p>",ledtrad:"<p>Använd x+y=38 och skriv en ekvation för intäkten.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  satt("1.294", {
+    niva:"C",poang:"0/2/0",omr:"speciella_ekvationssystem",
+    t:'<p>Bestäm värdet på \\(a\\) så att systemet saknar lösning:</p><p>\\[\\begin{cases}y=3x+2\\\\y=ax-5.\\end{cases}\\]</p><p>Förklara också hur du kan se detta utan att lösa systemet.</p>',
+    s:facit("Två olika parallella linjer skär aldrig varandra.",'<p>Linjerna måste ha samma riktningskoefficient, alltså \\(a=3\\). Deras skärningar med y-axeln är 2 och -5, så de är olika linjer.</p>',"a=3; då är linjerna parallella och systemet saknar lösning.","Samma lutning och olika konstantterm betyder ingen skärningspunkt."),
+    familj:"Ingen eller oändligt många lösningar",formaga:["begrepp","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Vilket villkor gör två räta linjer parallella?</p>"
+  });
+
+  satt("1.303", {
+    niva:"E",poang:"2/0/0",
+    t:'<p>Lös ekvationssystemet. Välj själv en lämplig algebraisk metod.</p><p>\\[\\begin{cases}x+2y=11\\\\3x-2y=9.\\end{cases}\\]</p>',
+    s:facit("Här försvinner y om ekvationerna adderas, men en annan korrekt metod går också bra.",'<p>Addering ger \\(4x=20\\), så \\(x=5\\). Då ger första ekvationen \\(5+2y=11\\), alltså \\(y=3\\).</p>',"(x,y)=(5,3).","Kontrollera svaret i båda ursprungsekvationerna."),
+    familj:"Lösa linjära ekvationssystem",formaga:["procedur"],svarstyp:"flera_delar",rättSvar:[5,3],svarFormat:["numeriskt","numeriskt"],svarsstruktur:"ordnad",svarEtiketter:["x","y"],självrättning:true,ledtrad:"<p>Addera ekvationerna.</p>"
+  });
+
+  satt("1.304", {
+    niva:"C",poang:"0/2/0",
+    t:'<p>Vilken metod är mest effektiv för systemet nedan: substitution eller addition? Motivera valet och lös sedan systemet.</p><p>\\[\\begin{cases}y=4x-7\\\\2x+3y=13.\\end{cases}\\]</p>',
+    s:facit("När en variabel redan är frilagd kräver substitution minst förarbete.",'<p>Sätt \\(y=4x-7\\) i den andra ekvationen:</p><p>\\[2x+3(4x-7)=13\\Rightarrow14x=34\\Rightarrow x=\\frac{17}{7}.\\]</p><p>Då \\(y=4·17/7-7=19/7\\).</p>',"Substitution är naturligast; lösningen är (17/7,19/7).","Metodvalet bedöms efter tydlighet och effektivitet, inte efter att bara nämna ett metodnamn."),
+    familj:"Lösa linjära ekvationssystem",formaga:["procedur","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Observera att y redan står ensamt i den första ekvationen.</p>"
+  });
+
+  satt("1.305", {
+    niva:"C",poang:"0/2/0",omr:"linjara_ekvationssystem",
+    t:'<p>Konstruera ett ekvationssystem med två olika räta linjer som har lösningen \\((2,3)\\). Visa att din lösning fungerar.</p>',
+    s:facit("Välj två olika linjer genom den givna punkten.",'<p>Ett exempel är \\(y=x+1\\) och \\(y=-2x+7\\). Båda ger y=3 när x=2, och lutningarna är olika, så punkten är deras enda skärning.</p>',"Ett möjligt system är y=x+1 och y=-2x+7.","Det finns många korrekta svar. Kraven är att båda ekvationerna uppfylls av punkten och att linjerna inte sammanfaller."),
+    familj:"Lösa linjära ekvationssystem",formaga:["begrepp","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Välj två olika k-värden i y-3=k(x-2).</p>"
+  });
+
+  u = satt("1.306", {
+    niva:"C",poang:"1/2/0",omr:"ekvationssystem_tillampningar",
+    t:'<p>En blandning ska innehålla totalt 10 liter vätska. Den görs av en 20-procentig och en 50-procentig lösning.</p><p>a) Skriv en ekvation för den totala volymen om \\(x\\) och \\(y\\) är antalet liter av respektive lösning.</p><p>b) Blandningen ska innehålla 3,8 liter av det lösta ämnet. Bestäm \\(x\\) och \\(y\\).</p>',
+    s:facit("En koncentration på 20 % betyder att varje liter bidrar med 0,20 liter löst ämne.",'<p>a) \\(x+y=10\\).</p><p>b) Ämnesmängden ger \\(0{,}20x+0{,}50y=3{,}8\\). Med \\(x=10-y\\):</p><p>\\[2-0{,}20y+0{,}50y=3{,}8\\Rightarrow0{,}30y=1{,}8\\Rightarrow y=6.\\]</p><p>Då är x=4.</p>',"a) x+y=10. b) 4 liter 20-procentig och 6 liter 50-procentig lösning.","0,20·4+0,50·6=3,8 liter löst ämne."),
+    familj:"Tillämpningar med ekvationssystem",formaga:["modellering","procedur","problemlösning"],ledtrad:"<p>Volymerna summeras till 10. Skriv sedan bidraget av löst ämne från varje lösning.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>Totalt ska x liter och y liter blandas till 10 liter.</p><div class="spel-en-del">Skriv volymekvationen.</div>',s:"<p><strong>Svar:</strong> x+y=10.</p>",ledtrad:"<p>Summera delvolymerna.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>10 liter blandas av 20-procentig och 50-procentig lösning. Blandningen innehåller 3,8 liter löst ämne.</p><div class="spel-en-del">Bestäm volymen av varje lösning.</div>',s:"<p><strong>Svar:</strong> 4 liter respektive 6 liter.</p>",ledtrad:"<p>Använd x+y=10 och 0,20x+0,50y=3,8.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  satt("1.307", {
+    niva:"E",poang:"1/0/0",omr:"linjara_ekvationssystem",
+    t:'<p>Punkten \\((3,2)\\) uppfyller den första ekvationen i systemet men inte den andra:</p><p>\\[\\begin{cases}x+y=5\\\\2x-y=1.\\end{cases}\\]</p><p>Är punkten en lösning till systemet? Förklara kort.</p>',
+    s:facit("En lösning till ett ekvationssystem måste uppfylla alla ekvationer samtidigt.",'<p>Det räcker inte att punkten ligger på den ena linjen. Eftersom den andra ekvationen inte stämmer är punkten inte linjernas gemensamma skärningspunkt.</p>',"Nej, punkten är inte en lösning.","Ordet system betyder att samtliga villkor ska gälla samtidigt."),
+    familj:"Kontrollera lösning till ekvationssystem",formaga:["begrepp","resonemang"],svarstyp:"text",rättSvar:"nej",självrättning:true,ledtrad:"<p>Hur många av ekvationerna måste en lösning uppfylla?</p>"
+  });
+
+  satt("1.308", {
+    niva:"C",poang:"0/2/0",omr:"speciella_ekvationssystem",
+    t:'<p>För vilka värden på \\(a\\) har systemet exakt en lösning?</p><p>\\[\\begin{cases}y=ax+4\\\\y=2x-1.\\end{cases}\\]</p>',
+    s:facit("Två räta linjer har exakt en skärningspunkt när deras riktningskoefficienter är olika.",'<p>Om \\(a=2\\) är linjerna parallella eftersom konstanttermerna är olika. För alla andra a-värden är lutningarna olika och linjerna skär varandra exakt en gång.</p>',"Systemet har exakt en lösning för alla a≠2.","Här kan linjerna aldrig sammanfalla eftersom y-skärningarna 4 och -1 är olika."),
+    familj:"Ingen eller oändligt många lösningar",formaga:["begrepp","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Jämför linjernas riktningskoefficienter.</p>"
+  });
+
+  u = satt("1.309", {
+    niva:"C",poang:"1/1/0",omr:"linjara_ekvationssystem",
+    t:'<p>Systemet är</p><p>\\[\\begin{cases}x+2y=8\\\\3x-y=7.\\end{cases}\\]</p><p>a) Kontrollera om \\((2,3)\\) är en lösning.</p><p>b) Behåll \\(x=2\\). Finns det något y-värde som gör punkten till en lösning till hela systemet? Motivera.</p>',
+    s:facit("Pröva punkten i båda ekvationerna var för sig.",'<p>a) Första: 2+2·3=8, sant. Andra: 3·2-3=3, inte 7. Punkten är inte en lösning.</p><p>b) Första ekvationen kräver y=3, medan den andra kräver y=-1. Kraven motsäger varandra.</p>',"a) Nej. b) Nej, inget y-värde fungerar när x=2.","En given x-koordinat kan ge olika y-krav från de två linjerna."),
+    familj:"Kontrollera lösning till ekvationssystem",formaga:["procedur","resonemang"],ledtrad:"<p>Sätt x=2 i varje ekvation separat.</p>"
+  });
+  delar(u,[
+    {etikett:"a",t:'<p>Kontrollera om (2,3) löser \\(\\begin{cases}x+2y=8\\\\3x-y=7.\\end{cases}\\)</p>',s:"<p><strong>Svar:</strong> Nej.</p>",ledtrad:"<p>Pröva i båda ekvationerna.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:'<p>I samma system ska x=2 behållas.</p><div class="spel-en-del">Finns något y som uppfyller båda ekvationerna? Motivera.</div>',s:"<p><strong>Svar:</strong> Nej; ekvationerna kräver y=3 respektive y=-1.</p>",ledtrad:"<p>Lös båda ekvationerna för y när x=2.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  satt("1.310", {
+    niva:"C",poang:"0/2/0",omr:"grafisk_losning_ekvationssystem",
+    t:'<p>Två räta linjer har tabellvärdena nedan.</p><table class="data"><tr><th>x</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><th>y₁</th><td>1</td><td>3</td><td>5</td><td>7</td><td>9</td></tr><tr><th>y₂</th><td>9</td><td>7</td><td>5</td><td>3</td><td>1</td></tr></table><p>Bestäm skärningspunkten och förklara hur tabellen visar att den är unik.</p>',
+    s:facit("I en skärningspunkt har funktionerna samma x- och y-värde.",'<p>Vid x=2 är båda funktionsvärdena 5, så skärningspunkten är (2,5). Den första raden ökar med 2 och den andra minskar med 2; efter mötet rör de sig därför åt olika håll och kan inte mötas igen.</p>',"Skärningspunkten är (2,5), och den är unik.","Olika riktningskoefficienter innebär exakt en skärningspunkt."),
+    familj:"Grafisk lösning",formaga:["begrepp","resonemang"],svarstyp:"resonemang",rättSvar:null,självrättning:false,ledtrad:"<p>Sök kolumnen där y₁=y₂ och jämför sedan förändringarna.</p>"
+  });
+
+  window.BANKMA2 = bank;
+})();
+
+/* Ersätter den kvarvarande serien "bestäm en linje från två punkter"
+   med provvänliga varianter som prövar olika kunskaper. */
+(() => {
+  const bank=window.BANKMA2;
+  const get=id=>bank.find(q=>String(q.id)===String(id));
+  const set=(id,data)=>{
+    const q=get(id); if(!q) throw new Error("Saknar uppgift "+id);
+    ["spelDelning","spelDelar","svarFormat","svarsstruktur","svarEtiketter"].forEach(k=>delete q[k]);
+    Object.assign(q,{geogebra:false,miniräknare:false,tolerans:null},data); return q;
+  };
+  const parts=(q,list)=>Object.assign(q,{spelDelning:"deluppgifter",spelDelar:list,svarstyp:"resonemang",rättSvar:null,självrättning:false});
+  const facit=(idea,work,answer,insight)=>'<div class="facit-v2"><p class="facit-metod"><strong>Tänk så här:</strong> '+idea+'</p><div class="facit-arbete">'+work+'</div><p><strong>Svar:</strong> '+answer+'</p><p class="facit-not"><strong>Insikt:</strong> '+insight+'</p></div>';
+
+  let q=set("1.295",{
+    omr:"linjara_funktioner",niva:"C",poang:"1/2/0",familj:"Jämföra linjära modeller",formaga:["begrepp","procedur","problemlösning"],
+    t:'<p>Två vattentankar töms enligt modellerna \\(A(t)=180-12t\\) och \\(B(t)=120-6t\\), där volymen mäts i liter och tiden i minuter.</p><p>a) Hur mycket vatten finns i tank A efter 5 minuter?</p><p>b) När innehåller tankarna lika mycket vatten?</p>',
+    s:facit("Använd först en modell direkt och jämför sedan modellerna genom att sätta dem lika.",'<p>a) \\(A(5)=180-12\\cdot5=120\\) liter.</p><p>b) \\(180-12t=120-6t\\) ger \\(60=6t\\), alltså t=10. Då innehåller båda 60 liter.</p>',"a) 120 liter. b) Efter 10 minuter.","En skärningspunkt mellan två linjära modeller betyder samma värde vid samma tid."),
+    ledtrad:"<p>b) Sätt A(t)=B(t).</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Bestäm A(5) om \\(A(t)=180-12t\\).</p>",s:"<p><strong>Svar:</strong> 120 liter.</p>",ledtrad:"<p>Sätt t=5 i modellen.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>När är \\(A(t)=180-12t\\) och \\(B(t)=120-6t\\) lika stora?</p>",s:"<p><strong>Svar:</strong> Efter 10 minuter; då är båda 60 liter.</p>",ledtrad:"<p>Sätt uttrycken lika.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  set("1.296",{
+    omr:"linjara_funktioner",niva:"E",poang:"1/0/0",familj:"Parallella linjer",formaga:["begrepp","procedur"],
+    t:'<p>Bestäm ekvationen för den linje som är parallell med \\(y=3x-7\\) och går genom punkten \\((2,4)\\).</p>',
+    s:facit("Parallella linjer har samma riktningskoefficient.",'<p>Skriv \\(y=3x+m\\). Punkten (2,4) ger \\(4=3\\cdot2+m\\), alltså m=-2.</p>',"\\(y=3x-2\\).","Lutningen kopieras från den parallella linjen; punkten bestämmer konstanttermen."),
+    ledtrad:"<p>Använd k=3 och sätt in punkten för att bestämma m.</p>",svarstyp:"uttryck",rättSvar:"3x-2",självrättning:true
+  });
+
+  set("1.297",{
+    omr:"linjara_funktioner",niva:"C",poang:"0/1/0",familj:"Granska en linjär lösning",formaga:["procedur","resonemang"],
+    t:'<p>En elev påstår att linjen genom \\((-1,5)\\) och \\((3,13)\\) har ekvationen \\(y=2x+5\\). Undersök påståendet och rätta det om det är fel.</p>',
+    s:facit("Kontrollera både lutningen och om en given punkt ligger på den föreslagna linjen.",'<p>Lutningen är \\((13-5)/(3-(-1))=8/4=2\\). Formen är alltså \\(y=2x+m\\). Punkten (-1,5) ger \\(5=-2+m\\), så m=7. Elevens lutning är rätt men konstanttermen är fel.</p>',"Rätt ekvation är \\(y=2x+7\\).","Det räcker inte att riktningskoefficienten stämmer; linjen måste också gå genom punkterna."),
+    ledtrad:"<p>Beräkna k och sätt sedan in en av punkterna för att kontrollera m.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("1.298",{
+    omr:"linjara_funktioner",niva:"E",poang:"1/0/0",familj:"Saknad koordinat",formaga:["procedur"],
+    t:'<p>Punkten \\((a,11)\\) ligger på linjen \\(y=2x+3\\). Bestäm a.</p>',
+    s:facit("En punkt på linjen måste uppfylla linjens ekvation.",'<p>Sätt y=11 och x=a: \\(11=2a+3\\). Då \\(2a=8\\), så a=4.</p>',"\\(a=4\\).","Kontroll: punkten (4,11) ger \\(2\\cdot4+3=11\\)."),
+    ledtrad:"<p>Sätt in y=11 i linjens ekvation.</p>",svarstyp:"numeriskt",rättSvar:4,självrättning:true
+  });
+
+  set("1.299",{
+    omr:"linjara_modeller",niva:"C",poang:"0/2/0",familj:"Bestäm modell från två mätningar",formaga:["modellering","procedur"],
+    t:'<p>Ett stearinljus är 24 cm långt efter 2 timmar och 15 cm långt efter 5 timmar. Anta att längden minskar linjärt.</p><p>Bestäm en modell \\(L(t)\\) och tolka modellens konstantterm.</p>',
+    s:facit("Förändringen per timme ger lutningen. En punkt bestämmer sedan startvärdet.",'<p>\\(k=(15-24)/(5-2)=-9/3=-3\\) cm per timme. Sätt \\(L(t)=-3t+m\\). Punkten (2,24) ger \\(24=-6+m\\), så m=30.</p>',"\\(L(t)=30-3t\\). Konstanttermen 30 är ljusets längd vid start.","Modellen skiljer mellan förändringstakt (-3 cm/h) och startvärde (30 cm)."),
+    ledtrad:"<p>Beräkna först förändringen i längd dividerad med förändringen i tid.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("1.300",{
+    omr:"linjara_funktioner",niva:"E",poang:"1/0/0",familj:"Proportionellt eller linjärt",formaga:["begrepp","resonemang"],
+    t:'<p>Sambandet \\(y=4x+12\\) är linjärt men inte proportionellt. Förklara varför.</p>',
+    s:facit("Ett proportionellt samband måste ha formen \\(y=kx\\) och gå genom origo.",'<p>Här finns konstanttermen 12. När x=0 är y=12, inte 0. Grafen går därför inte genom origo.</p>',"Sambandet är inte proportionellt eftersom konstanttermen är 12.","Alla proportionella samband är linjära, men alla linjära samband är inte proportionella."),
+    ledtrad:"<p>Beräkna y när x=0.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("1.301",{
+    omr:"linjara_funktioner",niva:"C",poang:"0/2/0",familj:"Konstruera en linjär funktion",formaga:["begrepp","resonemang"],
+    t:'<p>Konstruera en linjär funktion som är avtagande, har ett positivt nollställe och uppfyller \\(f(0)=6\\). Ange också funktionens nollställe.</p>',
+    s:facit("Välj en negativ lutning och behåll konstanttermen 6.",'<p>Ett möjligt val är \\(f(x)=-2x+6\\). Lutningen -2 gör funktionen avtagande och \\(f(0)=6\\). Nollstället fås av \\(-2x+6=0\\), alltså x=3.</p>',"Ett möjligt svar är \\(f(x)=-2x+6\\), med nollstället x=3.","Många svar är möjliga; kraven styr tecknet på k och värdet på m."),
+    ledtrad:"<p>Skriv \\(f(x)=kx+6\\) och välj ett negativt k.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  q=set("1.302",{
+    omr:"linjara_modeller",niva:"C",poang:"1/2/0",familj:"Välja mellan två abonnemang",formaga:["problemlösning","modellering","resonemang"],
+    t:'<p>Abonnemang A kostar \\(A(x)=99+1{,}50x\\) kr och B kostar \\(B(x)=39+2{,}50x\\) kr, där x är antalet samtalsminuter.</p><p>a) Vilket abonnemang är billigast vid 20 minuter?</p><p>b) För vilka antal minuter är A billigare än B?</p>',
+    s:facit("Jämför enskilda värden i a och lös en olikhet i b.",'<p>a) \\(A(20)=129\\) kr och \\(B(20)=89\\) kr, så B är billigast.</p><p>b) \\(99+1{,}50x<39+2{,}50x\\) ger \\(60<x\\). A är alltså billigare när x&gt;60 minuter.</p>',"a) B. b) A är billigare vid mer än 60 minuter.","Vid exakt 60 minuter kostar abonnemangen lika mycket."),
+    ledtrad:"<p>b) Skriv olikheten A(x)&lt;B(x).</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Vilket abonnemang är billigast vid 20 minuter?</p>",s:"<p><strong>Svar:</strong> B; A kostar 129 kr och B 89 kr.</p>",ledtrad:"<p>Beräkna A(20) och B(20).</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>För vilka antal minuter är A billigare än B?</p>",s:"<p><strong>Svar:</strong> När x&gt;60 minuter.</p>",ledtrad:"<p>Lös \\(99+1{,}50x<39+2{,}50x\\).</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  window.BANKMA2=bank;
+})();
+
+/* Riktad revision av de tidiga uppgifter som syns först i Uppgiftslabbet,
+   samt den tidigare serien av nästan identiska x²=c-uppgifter. */
+(() => {
+  const bank = window.BANKMA2;
+  const get = id => bank.find(q => String(q.id) === String(id));
+  const reset = (id, data) => {
+    const q = get(id);
+    if (!q) throw new Error("Saknar uppgift " + id);
+    ["spelDelning","spelDelar","svarFormat","svarsstruktur","svarEtiketter"].forEach(k => delete q[k]);
+    Object.assign(q, {geogebra:false,miniräknare:false,tolerans:null}, data);
+    return q;
+  };
+  const split = (q, list) => Object.assign(q, {
+    spelDelning:"deluppgifter",spelDelar:list,svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+  const facit = (idea, work, answer, insight) =>
+    '<div class="facit-v2"><p class="facit-metod"><strong>Tänk så här:</strong> '+idea+'</p><div class="facit-arbete">'+work+'</div><p><strong>Svar:</strong> '+answer+'</p><p class="facit-not"><strong>Insikt:</strong> '+insight+'</p></div>';
+
+  reset("2.53", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Uppskatta logaritmer",formaga:["begrepp"],
+    t:'<p>Vilket är det bästa närmevärdet till \\(\\lg800\\)?</p><p><strong>A</strong> 0,08 &nbsp; <strong>B</strong> 0,9 &nbsp; <strong>C</strong> 1,8 &nbsp; <strong>D</strong> 2,9 &nbsp; <strong>E</strong> 3,8 &nbsp; <strong>F</strong> 8,0</p><p>Svara med bokstaven.</p>',
+    s:facit("Lokalisera först svaret mellan två heltal.",'<p>\\(10^2=100\\) och \\(10^3=1000\\), så \\(\\lg800\\) ligger mellan 2 och 3. Med miniräknare, eller en noggrann uppskattning, fås \\(\\lg800\\approx2{,}903\\).</p>',"D, alltså 2,9.","Logaritmens värde är exponenten som 10 ska upphöjas till."),
+    ledtrad:"<p>Jämför 800 med 100 och 1000.</p>",svarstyp:"text",rättSvar:"d",självrättning:true
+  });
+
+  reset("2.54", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Rimlighetsbedöma logaritmer",formaga:["begrepp","resonemang"],
+    t:'<p>Utan att beräkna exakt: ligger \\(\\lg30\\) närmare 1 eller 2? Motivera.</p>',
+    s:facit("Jämför 30 med tiopotenserna och gärna med den geometriska mittpunkten.",'<p>\\(\\lg30\\approx1{,}477\\), alltså strax under mitten 1,5 och därmed närmare 1. Ett annat sätt är att jämföra 30 med \\(10^{1{,}5}=\\sqrt{1000}\\approx31{,}6\\).</p>',"Närmare 1.","På en logaritmisk skala ligger mittpunkten mellan 10 och 100 vid \\(\\sqrt{10\\cdot100}\\), inte vid 55."),
+    ledtrad:"<p>Mitt emellan exponenterna 1 och 2 ligger exponenten 1,5. Jämför 30 med \\(10^{1,5}\\).</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  reset("2.93", {
+    omr:"logaritmbegreppet",niva:"E",poang:"2/0/0",familj:"Potensform och logaritmform",formaga:["begrepp"],
+    t:'<p>Fyll i de två tomma rutorna så att påståendena betyder samma sak:</p><p>\\[10^{\\square}=250 \\qquad\\Longleftrightarrow\\qquad \\lg250=\\square.\\]</p>',
+    s:facit("Samma exponent ska stå i båda rutorna.",'<p>Exponenten är \\(\\lg250\\). Om ett decimalvärde önskas är \\(\\lg250\\approx2{,}398\\).</p>',"Båda rutorna ska innehålla \\(\\lg250\\) (ungefär 2,398).","Potensform och logaritmform är två skrivsätt för samma relation."),
+    ledtrad:"<p>\\(\\lg250\\) är just den exponent som ger \\(10^{\\text{exponenten}}=250\\).</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  reset("2.94", {
+    omr:"logaritmlagar",niva:"C",poang:"0/1/0",familj:"Välja tillåtna logaritmsteg",formaga:["begrepp","resonemang"],
+    t:'<p>Vilka av följande omskrivningar är korrekta för positiva a och b?</p><p>I. \\(\\lg(ab)=\\lg a+\\lg b\\)</p><p>II. \\(\\lg(a+b)=\\lg a+\\lg b\\)</p><p>III. \\(\\lg(a/b)=\\lg a-\\lg b\\)</p><p>Motivera ditt val.</p>',
+    s:facit("Skilj noga mellan produkt, summa och kvot inuti logaritmen.",'<p>Produktlagen gör I korrekt och kvotlagen gör III korrekt. Det finns ingen motsvarande lag som delar upp en summa, så II är fel. Exempelvis ger a=b=1 olika värden i II.</p>',"I och III är korrekta.","Logaritmlagarna följer potenslagarna: multiplikation hör ihop med addition av exponenter."),
+    ledtrad:"<p>Pröva II med a=b=1 och jämför sedan med produkt- och kvotlagen.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  reset("2.181", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Storleksordning med logaritmer",formaga:["begrepp"],
+    t:'<p>Ett positivt heltal N uppfyller \\(4<\\lg N<5\\). Hur många siffror har N?</p>',
+    s:facit("Översätt logaritmgränserna till tiopotenser.",'<p>Villkoret ger \\(10^4<N<10^5\\), alltså \\(10\\,000<N<100\\,000\\). Alla heltal i det intervallet har fem siffror.</p>',"N har fem siffror.","Heltalsdelen av en positiv tiologaritm avslöjar talets storleksordning."),
+    ledtrad:"<p>Vilka vanliga tal är \\(10^4\\) och \\(10^5\\)?</p>",svarstyp:"numeriskt",rättSvar:5,självrättning:true
+  });
+
+  reset("2.182", {
+    omr:"logaritmbegreppet",niva:"C",poang:"0/1/0",familj:"Bestäm intervall från logaritm",formaga:["begrepp","resonemang"],
+    t:'<p>Man vet att \\(\\lg x=3{,}62\\). Mellan vilka två hundratal ligger x? Visa hur du tänker.</p>',
+    s:facit("Gå tillbaka till potensform och uppskatta talet.",'<p>\\(x=10^{3{,}62}\\approx4169\\). Talet ligger därför mellan 4100 och 4200.</p>',"Mellan 4100 och 4200.","Exponentens heltalsdel visar tusentalet; decimaldelen finbestämmer läget."),
+    ledtrad:"<p>Beräkna \\(10^{3,62}\\) och placera resultatet mellan närmaste hundratal.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false,miniräknare:true
+  });
+
+  let q = reset("2.183", {
+    omr:"logaritmbegreppet",niva:"C",poang:"1/2/0",familj:"Tolka och använda logaritmer",formaga:["begrepp","procedur"],
+    t:'<p>a) Bestäm \\(\\lg0{,}01\\).</p><p>b) Bestäm x om \\(\\lg x-\\lg2=2\\).</p>',
+    s:facit("a använder definitionen; b kombinerar definitionen med kvotlagen.",'<p>a) \\(0{,}01=10^{-2}\\), alltså \\(\\lg0{,}01=-2\\).</p><p>b) \\(\\lg x-\\lg2=\\lg(x/2)=2\\). Då \\(x/2=10^2=100\\), så x=200.</p>',"a) -2. b) \\(x=200\\).","Den andra delen prövar om logaritmlagen kan användas i en ekvation, inte bara återges."),
+    ledtrad:"<p>b) Skriv vänsterledet som en enda logaritm.</p>"
+  });
+  split(q,[
+    {etikett:"a",t:"<p>Bestäm \\(\\lg0{,}01\\).</p>",s:"<p><strong>Svar:</strong> -2, eftersom \\(0{,}01=10^{-2}\\).</p>",ledtrad:"<p>Skriv 0,01 som en tiopotens.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Bestäm x om \\(\\lg x-\\lg2=2\\).</p>",s:"<p><strong>Svar:</strong> \\(x=200\\). Kvotlagen ger \\(\\lg(x/2)=2\\).</p>",ledtrad:"<p>Använd kvotlagen och gå sedan till potensform.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  reset("2.184", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Tecknet på en logaritm",formaga:["begrepp","resonemang"],
+    t:'<p>Utan miniräknare: är \\(\\lg0{,}4\\) positivt, negativt eller noll? Motivera.</p>',
+    s:facit("Jämför talet 0,4 med 1.",'<p>\\(0{,}4\\) ligger mellan \\(10^{-1}=0{,}1\\) och \\(10^0=1\\). Därför ligger \\(\\lg0{,}4\\) mellan -1 och 0 och är negativt.</p>',"Negativt.","Tiologaritmen är noll vid 1, positiv över 1 och negativ mellan 0 och 1."),
+    ledtrad:"<p>Mellan vilka exponenter ligger ett tal mellan 0,1 och 1?</p>",svarstyp:"text",rättSvar:"negativt",självrättning:true
+  });
+
+  reset("2.612", {
+    omr:"andragradsekvationer",niva:"E",poang:"2/0/0",familj:"Nollproduktmetoden",formaga:["procedur"],
+    t:'<p>Lös ekvationen \\((x+1)(x-6)=0\\).</p>',
+    s:facit("Använd nollproduktmetoden direkt.",'<p>Produkten är noll när minst en faktor är noll. \\(x+1=0\\) ger x=-1 och \\(x-6=0\\) ger x=6.</p>',"\\(x=-1\\) eller \\(x=6\\).","Multiplicera inte ut ett redan faktoriserat uttryck i onödan."),
+    ledtrad:"<p>Sätt varje faktor lika med noll.</p>",svarstyp:"flera_delar",rättSvar:[-1,6],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lösning","lösning"],svarsstruktur:"mängd",självrättning:true
+  });
+
+  reset("2.613", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/1/0",familj:"Bestäm saknad koefficient",formaga:["begrepp","procedur"],
+    t:'<p>Ekvationen \\(x^2-5x+c=0\\) har lösningen x=2. Bestäm c och den andra lösningen.</p>',
+    s:facit("Sätt först in den kända roten.",'<p>\\(2^2-5\\cdot2+c=0\\) ger \\(4-10+c=0\\), alltså c=6. Ekvationen blir \\(x^2-5x+6=(x-2)(x-3)=0\\), så den andra roten är 3.</p>',"\\(c=6\\) och den andra lösningen är x=3.","En känd rot ger ett villkor som bestämmer den saknade koefficienten."),
+    ledtrad:"<p>En lösning gör vänsterledet lika med noll. Sätt in x=2.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  q = reset("2.614", {
+    omr:"andragradsmodeller",niva:"C",poang:"1/2/0",familj:"Area och andragradsekvation",formaga:["modellering","problemlösning"],
+    t:'<p>En rektangel har sidorna x meter och \\(x+3\\) meter.</p><p>a) Skriv ett uttryck för arean.</p><p>b) Arean är 40 m². Bestäm rektangelns sidlängder.</p>',
+    s:facit("Översätt först geometrin till algebra.",'<p>a) \\(A=x(x+3)=x^2+3x\\).</p><p>b) \\(x(x+3)=40\\) ger \\(x^2+3x-40=0=(x+8)(x-5)\\). Kandidaterna är -8 och 5. En längd kan inte vara negativ, så x=5 och den andra sidan är 8.</p>',"a) \\(A=x(x+3)\\). b) 5 m och 8 m.","I en textuppgift måste algebraiska rötter alltid kontrolleras mot situationen."),
+    ledtrad:"<p>b) Sätt areauttrycket lika med 40 och kontrollera vilka rötter som kan vara längder.</p>"
+  });
+  split(q,[
+    {etikett:"a",t:"<p>En rektangel har sidorna x och x+3 meter. Skriv ett uttryck för arean.</p>",s:"<p><strong>Svar:</strong> \\(A=x(x+3)=x^2+3x\\).</p>",ledtrad:"<p>Area är längd gånger bredd.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Rektangelns area är 40 m². Bestäm sidlängderna.</p>",s:"<p><strong>Svar:</strong> 5 m och 8 m. Den negativa roten är inte en möjlig längd.</p>",ledtrad:"<p>Lös \\(x(x+3)=40\\).</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  reset("2.615", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/2/0",familj:"Antal lösningar med parameter",formaga:["begrepp","resonemang"],
+    t:'<p>För vilka värden på k har ekvationen \\(x^2+2x+k=0\\) två olika reella lösningar?</p>',
+    s:facit("Två olika rötter kräver att uttrycket under rottecknet är positivt.",'<p>Pq-formeln ger \\(x=-1\\pm\\sqrt{1-k}\\). Två olika reella värden fås när \\(1-k>0\\), alltså när k&lt;1.</p>',"\\(k<1\\).","Vid k=1 sammanfaller rötterna; vid k&gt;1 finns inga reella rötter."),
+    ledtrad:"<p>Vilket villkor ska \\(1-k\\) uppfylla för att roten ska ge två olika värden?</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  reset("2.616", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/2/0",familj:"Gemensam rot",formaga:["procedur","resonemang"],
+    t:'<p>Ekvationerna \\(x^2-5x+6=0\\) och \\(x^2-7x+12=0\\) har en gemensam lösning. Bestäm den utan att använda någon lösningsformel.</p>',
+    s:facit("Faktorisera båda uttrycken och jämför deras faktorer.",'<p>\\(x^2-5x+6=(x-2)(x-3)\\), så rötterna är 2 och 3. \\(x^2-7x+12=(x-3)(x-4)\\), så rötterna är 3 och 4. Den gemensamma roten är 3.</p>',"\\(x=3\\).","En gemensam faktor ger en gemensam rot."),
+    ledtrad:"<p>Sök två tal vars summa och produkt passar i respektive ekvation.</p>",svarstyp:"numeriskt",rättSvar:3,självrättning:true
+  });
+
+  reset("2.617", {
+    omr:"andragradsekvationer",niva:"A",poang:"0/0/2",familj:"Ekvation med substitution",formaga:["problemlösning","procedur"],
+    t:'<p>Lös ekvationen \\(x^4-5x^2+4=0\\).</p>',
+    s:facit("Uttrycket är en andragradsekvation i storheten \\(x^2\\).",'<p>Sätt \\(u=x^2\\). Då fås \\(u^2-5u+4=0=(u-1)(u-4)\\), så u=1 eller u=4. Gå tillbaka: \\(x^2=1\\) ger x=±1 och \\(x^2=4\\) ger x=±2.</p>',"\\(x=-2,-1,1\\) eller 2.","Substitutionen förenklar strukturen, men varje positivt u-värde ger två x-värden."),
+    ledtrad:"<p>Sätt \\(u=x^2\\), lös andragradsekvationen i u och byt sedan tillbaka.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  reset("2.618", {
+    omr:"andragradsfunktioner",niva:"C",poang:"0/2/0",familj:"Bestäm funktion från toppunkt",formaga:["begrepp","procedur"],
+    t:'<p>En parabel har maximipunkten \\((2,5)\\) och går genom punkten \\((0,1)\\). Bestäm ett funktionsuttryck.</p>',
+    s:facit("Toppunktsformen gör den givna maximipunkten synlig.",'<p>Skriv \\(f(x)=a(x-2)^2+5\\). Punkten (0,1) ger \\(1=4a+5\\), alltså a=-1. Därför \\(f(x)=-(x-2)^2+5\\).</p>',"\\(f(x)=-(x-2)^2+5\\).","Det negativa a-värdet stämmer med att toppunkten är ett maximum."),
+    ledtrad:"<p>Använd formen \\(f(x)=a(x-2)^2+5\\) och sätt in punkten (0,1).</p>",svarstyp:"uttryck",rättSvar:"-(x-2)^2+5",självrättning:true
+  });
+
+  reset("2.619", {
+    omr:"andragradsfunktioner",niva:"E",poang:"2/0/0",familj:"Symmetri i en parabel",formaga:["begrepp","resonemang"],
+    t:'<p>En andragradsfunktion har symmetrilinjen x=4 och ett nollställe x=1. Bestäm det andra nollstället och förklara hur du vet.</p>',
+    s:facit("Nollställena ligger lika långt från symmetrilinjen.",'<p>Avståndet från 1 till 4 är 3. Det andra nollstället ligger därför 3 steg på andra sidan: \\(4+3=7\\).</p>',"Det andra nollstället är x=7.","Symmetrilinjen ligger mitt emellan nollställena."),
+    ledtrad:"<p>Hur långt är det från x=1 till symmetrilinjen x=4?</p>",svarstyp:"numeriskt",rättSvar:7,självrättning:true
+  });
+
+  reset("2.620", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/1/0",familj:"Jämföra lösningsmetoder",formaga:["procedur","resonemang"],
+    t:'<p>Vilken av ekvationerna löser du enklast med nollproduktmetoden, kvadratrotmetoden respektive pq-formeln?</p><p>I. \\((x-2)(x+5)=0\\)</p><p>II. \\((x-3)^2=7\\)</p><p>III. \\(x^2+4x-1=0\\)</p><p>Para ihop och motivera kort.</p>',
+    s:facit("Välj metod efter den form ekvationen redan har.",'<p>I är faktoriserad och passar nollproduktmetoden. II har ett isolerat kvadrerat uttryck och passar kvadratrotmetoden. III står på formen \\(x^2+px+q=0\\) utan enkel heltalsfaktorisering och passar pq-formeln.</p>',"I: nollproduktmetoden. II: kvadratrotmetoden. III: pq-formeln.","Ett klokt metodval minskar antalet steg och risken för fel."),
+    ledtrad:"<p>Titta på ekvationernas form innan du börjar räkna.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  q = reset("2.621", {
+    omr:"andragradsmodeller",niva:"A",poang:"1/1/2",familj:"Analysera en andragradsmodell",formaga:["modellering","problemlösning","resonemang"],miniräknare:true,
+    t:'<p>Vinsten i tusen kronor vid försäljning av x hundra produkter modelleras av \\(V(x)=-2x^2+24x-40\\).</p><p>a) Bestäm nollställena och tolka dem.</p><p>b) Bestäm den största möjliga vinsten enligt modellen.</p><p>c) Företaget kan högst sälja 500 produkter. Hur förändrar det svaret i b? Motivera.</p>',
+    s:facit("Räkna först i modellen och lägg sedan på situationens begränsning.",'<p>a) \\(-2x^2+24x-40=0\\) ger \\(x^2-12x+20=0\\), alltså x=2 eller x=10. Det motsvarar 200 respektive 1000 produkter och vinst 0.</p><p>b) Symmetrilinjen är x=6. \\(V(6)=32\\), alltså 32 000 kr.</p><p>c) Högst 500 produkter betyder \\(0\\le x\\le5\\). Parabeln växer fram till x=6, så största tillåtna värdet fås vid x=5: \\(V(5)=30\\), alltså 30 000 kr.</p>',"a) 200 och 1000 produkter. b) 32 000 kr. c) 30 000 kr vid 500 produkter.","Ett obundet matematiskt maximum behöver inte vara möjligt inom modellens definitionsområde."),
+    ledtrad:"<p>a) Sätt V=0. b) Bestäm symmetrilinjen. c) Begränsa x till intervallet 0–5.</p>"
+  });
+  split(q,[
+    {etikett:"a",t:"<p>Bestäm modellens nollställen och tolka dem.</p>",s:"<p><strong>Svar:</strong> x=2 och x=10, alltså 200 och 1000 produkter ger nollresultat.</p>",ledtrad:"<p>Sätt V(x)=0 och kom ihåg att x mäts i hundratal.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Bestäm den största möjliga vinsten enligt den obundna modellen.</p>",s:"<p><strong>Svar:</strong> 32 000 kr vid 600 produkter.</p>",ledtrad:"<p>Bestäm symmetrilinjen och beräkna V där.</p>",niva:"C",poang:"0/1/0"},
+    {etikett:"c",t:"<p>Företaget kan högst sälja 500 produkter. Bestäm nu den största möjliga vinsten och motivera.</p>",s:"<p><strong>Svar:</strong> 30 000 kr vid 500 produkter.</p>",ledtrad:"<p>Nu gäller x≤5. Var är en nedåtvänd parabel störst på det intervallet?</p>",niva:"A",poang:"0/0/2"}
+  ]);
+
+  window.BANKMA2 = bank;
+})();
+
+/* Metoden ska väljas av eleven om uppgiften inte uttryckligen prövar metodval. */
+(() => {
+  const ids = new Set(["2.02","2.42","2.82","2.96","2.99","2.132","2.135","2.170","2.270"]);
+  for (const q of window.BANKMA2) {
+    if (!ids.has(String(q.id))) continue;
+    q.t = q.t
+      .replace(/Lös med pq-formeln:\s*/i, "Lös ekvationen ")
+      .replace(/Lös med pq-formeln\./i, "Lös ekvationen.")
+      .replace(/ med pq-formeln/gi, "");
+  }
+})();
+
+/* Provbanksrevision 2026-09: större variation i kapitel 2.
+   Befintliga id:n återanvänds så att urval och sparade prov fortsätter fungera. */
+(() => {
+  const bank = window.BANKMA2;
+  const byId = id => bank.find(q => String(q.id) === String(id));
+  const clean = q => {
+    ["spelDelning","spelDelar","svarFormat","svarsstruktur","svarEtiketter"].forEach(k => delete q[k]);
+    return q;
+  };
+  const set = (id, data) => {
+    const q = byId(id);
+    if (!q) throw new Error("Saknar uppgift " + id);
+    clean(q);
+    Object.assign(q, {geogebra:false,miniräknare:false,tolerans:null}, data);
+    return q;
+  };
+  const parts = (q, list) => {
+    q.spelDelning = "deluppgifter";
+    q.spelDelar = list;
+    q.svarstyp = "resonemang";
+    q.rättSvar = null;
+    q.självrättning = false;
+    return q;
+  };
+  const solution = (idea, work, answer, insight) =>
+    '<div class="facit-v2"><p class="facit-metod"><strong>Tänk så här:</strong> ' + idea + '</p><div class="facit-arbete">' + work + '</div><p><strong>Svar:</strong> ' + answer + '</p>' + (insight ? '<p class="facit-not"><strong>Insikt:</strong> ' + insight + '</p>' : '') + '</div>';
+
+  set("2.530", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Uppskatta logaritmer",formaga:["begrepp"],
+    t:'<p>Vilket är det bästa närmevärdet till \\(\\lg 800\\)?</p><p><strong>A</strong> 0,08 &nbsp; <strong>B</strong> 0,9 &nbsp; <strong>C</strong> 1,8 &nbsp; <strong>D</strong> 2,9 &nbsp; <strong>E</strong> 3,8 &nbsp; <strong>F</strong> 8,0</p><p>Svara med bokstaven.</p>',
+    s:solution("Jämför 800 med potenser av 10.",'<p>Eftersom \\(10^2=100\\) och \\(10^3=1000\\) ligger \\(\\lg800\\) mellan 2 och 3. Talet 800 ligger nära 1000 på en logaritmisk skala, och \\(\\lg800\\approx2{,}90\\).</p>',"D, alltså 2,9.","En logaritm är en exponent, inte talet 800 dividerat med 100."),
+    ledtrad:"<p>Mellan vilka två heltal ligger svaret? Jämför med 100 och 1000.</p>",svarstyp:"text",rättSvar:"d",självrättning:true
+  });
+
+  set("2.531", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Jämföra logaritmer",formaga:["begrepp","resonemang"],
+    t:'<p>Ordna talen från minst till störst utan miniräknare:</p><p>\\[\\lg0{,}08,\\quad \\lg80,\\quad \\lg0{,}8,\\quad \\lg8.\\]</p>',
+    s:solution("Funktionen \\(\\lg x\\) är växande: större positivt tal inuti logaritmen ger större logaritm.",'<p>Först ordnar vi talen inuti logaritmerna: \\(0{,}08&lt;0{,}8&lt;8&lt;80\\). Logaritmerna kommer i samma ordning.</p>',"\\(\\lg0{,}08&lt;\\lg0{,}8&lt;\\lg8&lt;\\lg80\\).","Du behöver inte beräkna ett enda decimalvärde."),
+    ledtrad:"<p>Ordna först 0,08; 0,8; 8 och 80.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.532", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Växla mellan potens- och logaritmform",formaga:["begrepp"],
+    t:'<p>Skriv sambandet \\(10^{-2{,}5}=x\\) med en logaritm.</p>',
+    s:solution("\\(\\lg x\\) frågar: Vilken exponent på 10 ger x?",'<p>I potensformen är exponenten \\(-2{,}5\\). Därför blir den logaritmiska formen direkt \\(\\lg x=-2{,}5\\).</p>',"\\(\\lg x=-2{,}5\\).","Potensformen och logaritmformen uttrycker exakt samma samband."),
+    ledtrad:"<p>I \\(10^b=a\\) gäller \\(\\lg a=b\\).</p>",svarstyp:"uttryck",rättSvar:"lg(x)=-2.5",självrättning:false
+  });
+
+  set("2.533", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Uppskatta logaritmer",formaga:["begrepp","resonemang"],
+    t:'<p>Utan att beräkna decimalvärdet: mellan vilka två heltal ligger \\(\\lg250\\)? Motivera.</p>',
+    s:solution("Hitta två närliggande tiopotenser som omsluter 250.",'<p>Vi har \\(10^2=100&lt;250&lt;1000=10^3\\). Eftersom lg är växande följer \\(2&lt;\\lg250&lt;3\\).</p>',"Mellan 2 och 3.","Samma metod fungerar för att rimlighetsbedöma alla tiologaritmer."),
+    ledtrad:"<p>Jämför 250 med \\(10^2\\) och \\(10^3\\).</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.534", {
+    omr:"logaritmbegreppet",niva:"C",poang:"0/1/0",familj:"Tolka en logaritm",formaga:["begrepp","procedur"],miniräknare:true,
+    t:'<p>Ett positivt tal x uppfyller \\(\\lg x=2{,}7\\). Bestäm x med tre värdesiffror.</p>',
+    s:solution("Gå tillbaka till potensformen.",'<p>\\(\\lg x=2{,}7\\) betyder \\(x=10^{2{,}7}\\). Med miniräknare får vi \\(x\\approx501{,}187\\).</p>',"\\(x\\approx501\\).","Svaret måste ligga mellan 100 och 1000 eftersom exponenten ligger mellan 2 och 3."),
+    ledtrad:"<p>Skriv om till \\(x=10^{\\ldots}\\).</p>",svarstyp:"numeriskt",rättSvar:501,tolerans:1,självrättning:true
+  });
+
+  let q = set("2.535", {
+    omr:"logaritmbegreppet",niva:"C",poang:"1/1/0",familj:"Från logaritm till ekvation",formaga:["begrepp","procedur"],
+    t:'<p>a) Bestäm \\(\\lg0{,}001\\).</p><p>b) Lös ekvationen \\(\\lg(x-1)=2\\).</p>',
+    s:solution("Översätt varje logaritm till en tiopotens.",'<p>a) \\(0{,}001=10^{-3}\\), alltså \\(\\lg0{,}001=-3\\).</p><p>b) \\(\\lg(x-1)=2\\) betyder \\(x-1=10^2=100\\). Därför är \\(x=101\\). Villkoret \\(x&gt;1\\) är uppfyllt.</p>',"a) -3. b) \\(x=101\\).","I b måste uttrycket x−1 vara positivt."),
+    ledtrad:"<p>Använd sambandet \\(\\lg a=b\\iff a=10^b\\).</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Bestäm \\(\\lg0{,}001\\).</p>",s:"<p><strong>Svar:</strong> -3, eftersom \\(0{,}001=10^{-3}\\).</p>",ledtrad:"<p>Skriv talet som en tiopotens.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Lös \\(\\lg(x-1)=2\\).</p>",s:"<p><strong>Svar:</strong> \\(x=101\\). Logaritmen ger \\(x-1=100\\).</p>",ledtrad:"<p>Översätt först till potensform.</p>",niva:"C",poang:"0/1/0"}
+  ]);
+
+  set("2.536", {
+    omr:"logaritmlagar",niva:"C",poang:"0/1/0",familj:"Granska en logaritmlag",formaga:["begrepp","resonemang"],
+    t:'<p>Sam påstår att \\(\\lg(a+b)=\\lg a+\\lg b\\) för alla positiva a och b. Visa med ett enkelt motexempel att påståendet är fel.</p>',
+    s:solution("Ett enda motexempel räcker för att motbevisa ett påstående som sägs gälla för alla tal.",'<p>Välj till exempel \\(a=b=1\\). Vänsterledet blir \\(\\lg(1+1)=\\lg2\\), medan högerledet blir \\(\\lg1+\\lg1=0+0=0\\). Eftersom \\(\\lg2\\neq0\\) är påståendet falskt.</p>',"Påståendet är fel; a=b=1 är ett motexempel.","Produktlagen gäller för \\(\\lg(ab)\\), inte för en summa inne i logaritmen."),
+    ledtrad:"<p>Pröva a=1 och b=1.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.537", {
+    omr:"logaritmlagar",niva:"E",poang:"1/0/0",familj:"Känna igen logaritmlagar",formaga:["begrepp"],
+    t:'<p>Vilket uttryck är lika med \\(\\lg12\\)?</p><p><strong>A</strong> \\(\\lg3+\\lg4\\) &nbsp; <strong>B</strong> \\(\\lg3\\cdot\\lg4\\) &nbsp; <strong>C</strong> \\(\\lg8+\\lg4\\) &nbsp; <strong>D</strong> \\(12\\lg1\\)</p><p>Svara med bokstaven.</p>',
+    s:solution("En summa av logaritmer motsvarar logaritmen av en produkt.",'<p>\\(\\lg3+\\lg4=\\lg(3\\cdot4)=\\lg12\\).</p>',"A.","Lagen säger \\(\\lg a+\\lg b=\\lg(ab)\\)."),
+    ledtrad:"<p>Vilka två tal i alternativen har produkten 12?</p>",svarstyp:"text",rättSvar:"a",självrättning:true
+  });
+
+  set("2.538", {
+    omr:"logaritmer_tillampningar",niva:"C",poang:"0/2/0",familj:"Logaritmisk skala",formaga:["problemlösning","begrepp"],
+    t:'<p>På en logaritmisk skala definieras ett värde som \\(M=\\lg(A/A_0)\\). Två mätningar skiljer 2 enheter i M. Hur många gånger större är amplituden A för den större mätningen?</p>',
+    s:solution("En skillnad i logaritmen blir en kvot i den ursprungliga storheten.",'<p>\\(M_2-M_1=\\lg(A_2/A_0)-\\lg(A_1/A_0)=\\lg(A_2/A_1)\\). Skillnaden är 2, så \\(\\lg(A_2/A_1)=2\\). Därför är \\(A_2/A_1=10^2=100\\).</p>',"Amplituden är 100 gånger större.","Två steg på en tiologaritmisk skala betyder en faktor \\(10^2\\), inte en fördubbling."),
+    ledtrad:"<p>Sätt amplitudkvoten till k och lös \\(\\lg k=2\\).</p>",svarstyp:"numeriskt",rättSvar:100,självrättning:true
+  });
+
+  set("2.539", {
+    omr:"logaritmbegreppet",niva:"C",poang:"0/1/0",familj:"Jämföra logaritmer",formaga:["resonemang"],
+    t:'<p>Är \\(\\lg499\\) mindre än eller större än 2,7? Motivera utan att först beräkna \\(\\lg499\\).</p>',
+    s:solution("Jämför 499 med talet som har logaritmen 2,7.",'<p>\\(10^{2{,}7}\\approx501{,}2\\). Eftersom \\(499&lt;501{,}2\\) och lg är växande gäller \\(\\lg499&lt;2{,}7\\).</p>',"\\(\\lg499&lt;2{,}7\\).","Att jämföra i potensform kan vara enklare än att beräkna båda logaritmerna."),
+    ledtrad:"<p>Beräkna eller uppskatta \\(10^{2{,}7}\\).</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false,miniräknare:true
+  });
+
+  set("2.540", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Konstruera exempel",formaga:["begrepp","resonemang"],
+    t:'<p>Ge exempel på ett heltal x som uppfyller \\(3&lt;\\lg x&lt;4\\). Förklara kort varför ditt tal fungerar.</p>',
+    s:solution("Översätt gränserna till tiopotenser.",'<p>Villkoret betyder \\(10^3&lt;x&lt;10^4\\), alltså \\(1000&lt;x&lt;10000\\). Exempelvis fungerar x=2000.</p>',"Ett möjligt svar är x=2000.","Det finns många rätta svar; alla heltal mellan 1000 och 10000 fungerar."),
+    ledtrad:"<p>Vilka tal har logaritmerna 3 respektive 4?</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.541", {
+    omr:"logaritmbegreppet",niva:"E",poang:"1/0/0",familj:"Logaritm som invers",formaga:["begrepp"],
+    t:'<p>Tabellen visar några värden för \\(y=10^x\\).</p><table class="data"><tr><th>x</th><td>-2</td><td>-1</td><td>0</td><td>1</td><td>2</td></tr><tr><th>y</th><td>0,01</td><td>0,1</td><td>1</td><td>10</td><td>100</td></tr></table><p>Använd tabellen för att bestämma \\(\\lg0{,}1\\) och \\(\\lg100\\).</p>',
+    s:solution("I den inversa funktionen byter in- och utvärden plats.",'<p>I tabellen ger exponenten -1 värdet 0,1, så \\(\\lg0{,}1=-1\\). Exponenten 2 ger 100, så \\(\\lg100=2\\).</p>',"-1 respektive 2.","Logaritmen letar efter x-värdet i exponentialtabellen."),
+    ledtrad:"<p>Vilket x-värde står ovanför 0,1 respektive 100?</p>",svarstyp:"flera_delar",rättSvar:[-1,2],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lg 0,1","lg 100"],svarsstruktur:"ordnad",självrättning:true
+  });
+
+  set("2.542", {
+    omr:"logaritmlagar",niva:"E",poang:"1/0/0",familj:"Potenser i logaritmer",formaga:["begrepp","procedur"],
+    t:'<p>Bestäm exakt \\(\\lg\\sqrt{1000}\\).</p>',
+    s:solution("Skriv roten som en potens av 10.",'<p>\\(\\sqrt{1000}=\\sqrt{10^3}=10^{3/2}\\). Därför är \\(\\lg\\sqrt{1000}=3/2=1{,}5\\).</p>',"1,5.","Kvadratroten halverar exponenten."),
+    ledtrad:"<p>Skriv \\(1000=10^3\\) och använd att en kvadratrot är en halv exponent.</p>",svarstyp:"numeriskt",rättSvar:1.5,självrättning:true
+  });
+
+  set("2.543", {
+    omr:"exponentialekvationer",niva:"E",poang:"1/0/0",familj:"Exponentialekvationer med samma bas",formaga:["procedur"],
+    t:'<p>Lös ekvationen \\(10^{2x}=1000\\).</p>',
+    s:solution("Skriv båda leden som potenser med basen 10.",'<p>Eftersom \\(1000=10^3\\) får vi \\(10^{2x}=10^3\\). Då måste exponenterna vara lika: \\(2x=3\\), så \\(x=1{,}5\\).</p>',"\\(x=1{,}5\\).","När baserna är lika behövs ingen miniräknare eller logaritmlag."),
+    ledtrad:"<p>Skriv 1000 som en tiopotens.</p>",svarstyp:"numeriskt",rättSvar:1.5,självrättning:true
+  });
+
+  set("2.544", {
+    omr:"logaritmekvationer",niva:"C",poang:"0/2/0",familj:"Logaritmekvationer och villkor",formaga:["procedur","resonemang"],
+    t:'<p>Lös ekvationen \\(\\lg(x^2)=6\\). Kontrollera vilka lösningar som är tillåtna.</p>',
+    s:solution("Ta först bort logaritmen och lös sedan andragradsekvationen.",'<p>\\(\\lg(x^2)=6\\) ger \\(x^2=10^6=1\\,000\\,000\\). Alltså \\(x=\\pm1000\\). Båda fungerar eftersom \\(x^2\\) är positivt för båda värdena.</p>',"\\(x=-1000\\) eller \\(x=1000\\).","Villkoret gäller uttrycket inne i logaritmen, alltså \\(x^2&gt;0\\), inte att x självt måste vara positivt."),
+    ledtrad:"<p>Översätt till potensform. Kom ihåg båda rötterna till \\(x^2=10^6\\).</p>",svarstyp:"flera_delar",rättSvar:[-1000,1000],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lösning","lösning"],svarsstruktur:"mängd",självrättning:true
+  });
+
+  set("2.545", {
+    omr:"logaritmlagar",niva:"E",poang:"1/0/0",familj:"Kombinera logaritmlagar",formaga:["procedur"],
+    t:'<p>Skriv som en enda logaritm och förenkla så långt som möjligt:</p><p>\\[\\lg18-\\lg2+\\lg5.\\]</p>',
+    s:solution("Differens betyder kvot och summa betyder produkt.",'<p>\\(\\lg18-\\lg2+\\lg5=\\lg(18/2)+\\lg5=\\lg9+\\lg5=\\lg45\\).</p>',"\\(\\lg45\\).","Arbeta i den ordning uttrycket står och håll reda på om talen ska multipliceras eller divideras."),
+    ledtrad:"<p>Börja med \\(\\lg18-\\lg2=\\lg(18/2)\\).</p>",svarstyp:"uttryck",rättSvar:"lg(45)",självrättning:true
+  });
+
+  set("2.546", {
+    omr:"logaritmlagar",niva:"E",poang:"1/0/0",familj:"Saknad faktor i en logaritm",formaga:["begrepp","procedur"],
+    t:'<p>Bestäm det positiva talet a så att</p><p>\\[\\lg12+\\lg a=\\lg60.\\]</p>',
+    s:solution("Slå ihop vänsterledet med produktlagen.",'<p>\\(\\lg12+\\lg a=\\lg(12a)\\). Då \\(\\lg(12a)=\\lg60\\) måste \\(12a=60\\), vilket ger \\(a=5\\).</p>',"\\(a=5\\).","Du kan kontrollera direkt: \\(\\lg12+\\lg5=\\lg60\\)."),
+    ledtrad:"<p>Vilken faktor saknas i produkten \\(12a=60\\)?</p>",svarstyp:"numeriskt",rättSvar:5,självrättning:true
+  });
+
+  set("2.547", {
+    omr:"logaritmekvationer",niva:"C",poang:"0/2/0",familj:"Logaritmekvationer och falska rötter",formaga:["procedur","resonemang"],
+    t:'<p>Lös ekvationen \\(\\lg(x-4)+\\lg(x+4)=\\lg9\\). Kontrollera villkoren.</p>',
+    s:solution("Bestäm definitionsvillkoret innan du använder produktlagen.",'<p>Vi måste ha \\(x-4&gt;0\\), alltså \\(x&gt;4\\). Produktlagen ger \\(\\lg((x-4)(x+4))=\\lg9\\), så \\(x^2-16=9\\). Då \\(x^2=25\\), vilket ger x=5 eller x=-5. Bara x=5 uppfyller x&gt;4; x=-5 är en falsk rot.</p>',"\\(x=5\\).","Algebran kan ge kandidater som inte ligger i logaritmens definitionsmängd."),
+    ledtrad:"<p>Skriv först villkoret för båda logaritmernas argument. Slå sedan ihop dem.</p>",svarstyp:"numeriskt",rättSvar:5,självrättning:true
+  });
+
+  set("2.548", {
+    omr:"logaritmlagar",niva:"C",poang:"0/1/0",familj:"Upptäck ett logaritmfel",formaga:["resonemang","begrepp"],
+    t:'<p>En elev skriver \\(2\\lg x=\\lg(2x)\\). Förklara felet och skriv ett korrekt högerled.</p>',
+    s:solution("En faktor framför en logaritm blir en exponent, inte en faktor inuti.",'<p>Potenslagen ger \\(2\\lg x=\\lg(x^2)\\) för x&gt;0. Exempelvis vid x=10 är vänsterledet 2, medan \\(\\lg(2x)=\\lg20\\neq2\\).</p>',"Korrekt är \\(2\\lg x=\\lg(x^2)\\), x&gt;0.","Ett numeriskt test kan snabbt avslöja en felaktig räknelag."),
+    ledtrad:"<p>Jämför med regeln \\(k\\lg x=\\lg(x^k)\\).</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  q = set("2.549", {
+    omr:"logaritmlagar",niva:"C",poang:"1/2/0",familj:"Logaritmlagar i ekvationer",formaga:["procedur","resonemang"],
+    t:'<p>a) Förenkla \\(\\lg50-\\lg2\\).</p><p>b) Lös \\(\\lg x+\\lg(x-4)=\\lg5\\).</p>',
+    s:solution("Använd samma kvot- och produktlag, men kontrollera definitionsvillkoret i ekvationen.",'<p>a) \\(\\lg(50/2)=\\lg25\\).</p><p>b) Villkoret är x&gt;4. Produktlagen ger \\(\\lg(x(x-4))=\\lg5\\), alltså \\(x^2-4x-5=0\\). Faktorisering ger \\((x-5)(x+1)=0\\). Kandidaterna är 5 och -1, men bara 5 uppfyller villkoret.</p>',"a) \\(\\lg25\\). b) \\(x=5\\).","b-delen kräver både algebra och kontroll av definitionsmängden."),
+    ledtrad:"<p>a) Differens blir kvot. b) Skriv x&gt;4 innan du slår ihop logaritmerna.</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Förenkla \\(\\lg50-\\lg2\\).</p>",s:"<p><strong>Svar:</strong> \\(\\lg25\\).</p>",ledtrad:"<p>Använd kvotlagen.</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Lös \\(\\lg x+\\lg(x-4)=\\lg5\\).</p>",s:"<p><strong>Svar:</strong> \\(x=5\\). Roten -1 är inte tillåten eftersom x måste vara större än 4.</p>",ledtrad:"<p>Använd produktlagen och kontrollera villkoret x&gt;4.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  set("2.550", {
+    omr:"logaritmlagar",niva:"C",poang:"0/1/0",familj:"Konstruera med logaritmlagar",formaga:["begrepp","resonemang"],
+    t:'<p>Ge två olika par positiva heltal \\((a,b)\\) som båda uppfyller \\(\\lg a+\\lg b=2\\). Förklara hur du vet att de fungerar.</p>',
+    s:solution("Produktlagen gör villkoret till ett enkelt produktvillkor.",'<p>\\(\\lg a+\\lg b=\\lg(ab)=2\\) betyder \\(ab=10^2=100\\). Två möjliga par är (2,50) och (4,25).</p>',"Exempel: (2,50) och (4,25).","Alla positiva faktorpar till 100 fungerar."),
+    ledtrad:"<p>Vilken produkt måste a och b ha?</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.565", {
+    omr:"exponentialfunktioner",niva:"C",poang:"0/2/0",familj:"Bestäm exponentialfunktion från punkter",formaga:["modellering","procedur"],
+    t:'<p>En exponentialfunktion \\(y=C\\cdot a^x\\) går genom punkterna \\((0,2)\\) och \\((2,128)\\). Bestäm funktionen.</p>',
+    s:solution("Punkten med x=0 bestämmer startvärdet direkt.",'<p>Vid x=0 är \\(2=C\\cdot a^0=C\\), alltså C=2. Punkten (2,128) ger \\(128=2a^2\\), så \\(a^2=64\\). För en exponentialfunktion är a positiv, alltså a=8.</p>',"\\(y=2\\cdot8^x\\).","Kontroll: vid x=2 blir värdet \\(2\\cdot64=128\\)."),
+    ledtrad:"<p>Sätt först in punkten med x=0. Använd sedan den andra punkten.</p>",svarstyp:"uttryck",rättSvar:"2*8^x",självrättning:true
+  });
+
+  q = set("2.566", {
+    omr:"exponentialmodeller",niva:"C",poang:"1/2/0",familj:"Tolka och använda en exponentialmodell",formaga:["begrepp","problemlösning","modellering"],miniräknare:true,
+    t:'<p>Mängden läkemedel i kroppen beskrivs av \\(M(t)=80\\cdot0{,}82^t\\), där t är antal timmar.</p><p>a) Tolka talen 80 och 0,82.</p><p>b) När är mängden första gången mindre än 20 mg? Svara i hela timmar.</p>',
+    s:solution("Skilj på startvärde och förändringsfaktor. I b löser du först gränsekvationen.",'<p>a) 80 mg är mängden vid t=0. Faktorn 0,82 betyder att 82 % återstår varje timme, alltså en minskning med 18 % per timme.</p><p>b) \\(80\\cdot0{,}82^t=20\\) ger \\(t=\\lg(0{,}25)/\\lg(0{,}82)\\approx6{,}99\\). Vid t=7 är mängden strax under 20 mg.</p>',"a) 80 mg från början och 18 % minskning per timme. b) Efter 7 timmar.","När frågan gäller första hela timmen måste avrundningen passa situationen."),
+    ledtrad:"<p>b) Sätt modellen lika med 20 och lös exponenten med logaritmer.</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Tolka talen 80 och 0,82 i \\(M(t)=80\\cdot0{,}82^t\\).</p>",s:"<p><strong>Svar:</strong> 80 mg är startvärdet; 0,82 betyder att 82 % återstår, alltså 18 % minskning per timme.</p>",ledtrad:"<p>Vad är M(0), och hur mycket saknas från faktorn 1?</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>När är mängden första gången mindre än 20 mg? Svara i hela timmar.</p>",s:"<p><strong>Svar:</strong> Efter 7 timmar.</p>",ledtrad:"<p>Lös först M(t)=20 och tolka decimalvärdet.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  set("2.567", {
+    omr:"exponentialfunktioner",niva:"E",poang:"2/0/0",familj:"Känna igen exponentiell förändring",formaga:["begrepp","modellering"],
+    t:'<p>En funktion har tabellen:</p><table class="data"><tr><th>x</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>y</th><td>3</td><td>6</td><td>12</td><td>24</td></tr></table><p>Förklara varför sambandet är exponentiellt och skriv en formel.</p>',
+    s:solution("Vid exponentiell förändring är kvoten mellan två värden med samma x-steg konstant.",'<p>Varje y-värde är dubbelt så stort som det föregående: \\(6/3=12/6=24/12=2\\). Startvärdet vid x=0 är 3 och förändringsfaktorn är 2.</p>',"\\(y=3\\cdot2^x\\).","En konstant differens hade i stället visat ett linjärt samband."),
+    ledtrad:"<p>Beräkna kvoten mellan två y-värden i följd.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.568", {
+    omr:"exponentialekvationer",niva:"A",poang:"0/0/2",familj:"Jämföra exponentialmodeller",formaga:["problemlösning","modellering"],miniräknare:true,
+    t:'<p>Två populationer beskrivs av \\(A(t)=500\\cdot1{,}10^t\\) och \\(B(t)=800\\cdot1{,}04^t\\).</p><p>När är populationerna lika stora? Svara med en decimal och förklara hur du ställer upp ekvationen.</p>',
+    s:solution("När två modeller ska jämföras sätter du deras funktionsvärden lika.",'<p>\\(500\\cdot1{,}10^t=800\\cdot1{,}04^t\\). Dividera med \\(500\\cdot1{,}04^t\\):</p><p>\\[(1{,}10/1{,}04)^t=1{,}6.\\]</p><p>Därför \\(t=\\lg1{,}6/\\lg(1{,}10/1{,}04)\\approx8{,}38\\).</p>',"Efter ungefär 8,4 tidsenheter.","Det räcker inte att jämföra procentsatserna; olika startvärden måste också vägas in."),
+    ledtrad:"<p>Sätt A(t)=B(t) och samla de båda potensuttrycken i en kvot.</p>",svarstyp:"numeriskt",rättSvar:8.4,tolerans:0.1,självrättning:true
+  });
+
+  set("2.569", {
+    omr:"exponentialmodeller",niva:"C",poang:"0/2/0",familj:"Bestäm halveringstid ur mätdata",formaga:["problemlösning","resonemang"],
+    t:'<p>Efter 12 timmar har en mängd minskat från 160 mg till 20 mg. Minskningen är exponentiell. Bestäm halveringstiden.</p>',
+    s:solution("Räkna hur många halveringar som behövs för att gå från 160 till 20.",'<p>\\(160\\to80\\to40\\to20\\) är tre halveringar. Dessa tre halveringar tar tillsammans 12 timmar, så en halvering tar \\(12/3=4\\) timmar.</p>',"Halveringstiden är 4 timmar.","När mätvärdena är tydliga potenser behövs inga logaritmer."),
+    ledtrad:"<p>Halvera 160 steg för steg tills du når 20.</p>",svarstyp:"numeriskt",rättSvar:4,självrättning:true
+  });
+
+  set("2.570", {
+    omr:"exponentialmodeller",niva:"A",poang:"0/0/2",familj:"Bedöma en exponentialmodell",formaga:["modellering","resonemang"],
+    t:'<p>En app hade 200 användare när den lanserades och ökade med 50 % första månaden. En elev använder modellen \\(N(t)=200\\cdot1{,}5^t\\) för att förutsäga antalet användare om tio år.</p><p>Förklara varför beräkningen kan göras matematiskt men ändå ge en osäker prognos.</p>',
+    s:solution("Skilj mellan en korrekt beräkning i modellen och frågan om modellen är rimlig långt utanför mätperioden.",'<p>Formeln antar att ökningen är exakt 50 % varje månad under hela perioden. Det är ett mycket starkt antagande, byggt på bara en månads förändring. Marknaden är begränsad och tillväxttakten kan ändras. Därför blir en tioårsprognos en extrem extrapolation.</p>',"Prognosen är osäker eftersom modellen förlänger en kortvarig tillväxttakt långt utanför det observerade området.","En modell kan vara algebraiskt korrekt utan att vara realistisk för alla tider."),
+    ledtrad:"<p>Vilket antagande om procentökningen gör modellen varje månad?</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.600", {
+    omr:"andragradsekvationer",niva:"E",poang:"2/0/0",familj:"Lösa andragradsekvationer",formaga:["procedur"],
+    t:'<p>Lös ekvationen \\(x^2-6x+5=0\\).</p>',
+    s:solution("Välj en metod som passar uttrycket; här går faktorisering snabbt.",'<p>Vi söker två tal med produkten 5 och summan -6. Talen är -1 och -5, så \\(x^2-6x+5=(x-1)(x-5)\\). En produkt är noll om minst en faktor är noll.</p>',"\\(x=1\\) eller \\(x=5\\).","Uppgiften kräver en lösning, inte en särskild namngiven metod."),
+    ledtrad:"<p>Kan uttrycket faktoriseras med hjälp av talen 1 och 5?</p>",svarstyp:"flera_delar",rättSvar:[1,5],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lösning","lösning"],svarsstruktur:"mängd",självrättning:true
+  });
+
+  set("2.601", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/1/0",familj:"Antal reella lösningar",formaga:["begrepp","resonemang"],
+    t:'<p>Hur många reella lösningar har ekvationen \\(x^2+4x+8=0\\)? Motivera utan att försöka gissa rötter.</p>',
+    s:solution("Undersök uttrycket under rottecknet i en lösningsformel, eller skriv om uttrycket till en kvadrat.",'<p>Kvadratkomplettering ger \\(x^2+4x+8=(x+2)^2+4\\). Detta är alltid minst 4 och kan därför aldrig bli 0 för reella x.</p>',"Ekvationen saknar reella lösningar.","Att ett andragradsuttryck saknar nollställen betyder att dess graf inte skär x-axeln."),
+    ledtrad:"<p>Skriv \\(x^2+4x+8\\) som \\((x+2)^2+\\ldots\\).</p>",svarstyp:"text",rättSvar:"0",självrättning:true
+  });
+
+  set("2.602", {
+    omr:"andragradsfunktioner",niva:"E",poang:"1/0/0",familj:"Konstruera en andragradsfunktion",formaga:["begrepp","resonemang"],
+    t:'<p>Ge exempel på en andragradsfunktion som har en minimipunkt. Förklara hur du ser att den har ett minimum.</p>',
+    s:solution("En positiv koefficient framför \\(x^2\\) gör att parabeln öppnar uppåt.",'<p>Ett enkelt exempel är \\(f(x)=x^2\\). Eftersom \\(x^2\\ge0\\) för alla reella x och blir 0 när x=0 har grafen minimipunkten (0,0).</p>',"Ett möjligt svar är \\(f(x)=x^2\\), med minimipunkt (0,0).","Det finns oändligt många rätta exempel; huvudkoefficienten ska vara positiv."),
+    ledtrad:"<p>Tänk på den enklaste uppåtvända parabeln.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.603", {
+    omr:"andragradsfunktioner",niva:"C",poang:"0/2/0",familj:"Bestäm funktion från villkor",formaga:["begrepp","procedur"],
+    t:'<p>En andragradsfunktion har nollställena -2 och 5 samt skär y-axeln i -20. Bestäm funktionen på utvecklad form.</p>',
+    s:solution("Nollställena ger faktorerna, men en okänd konstant behövs framför produkten.",'<p>Skriv \\(f(x)=a(x+2)(x-5)\\). Y-skärningen ger \\(f(0)=a\\cdot2\\cdot(-5)=-10a=-20\\), alltså a=2. Utveckling ger \\(f(x)=2(x^2-3x-10)=2x^2-6x-20\\).</p>',"\\(f(x)=2x^2-6x-20\\).","Nollställena bestämmer formen men inte den vertikala skalan; därför behövs y-skärningen."),
+    ledtrad:"<p>Börja med \\(f(x)=a(x+2)(x-5)\\) och sätt x=0.</p>",svarstyp:"uttryck",rättSvar:"2x^2-6x-20",självrättning:true
+  });
+
+  set("2.604", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/1/0",familj:"Upptäck fel i en lösning",formaga:["procedur","resonemang"],
+    t:'<p>En elev löser \\(x^2-6x-7=0\\) och skriver \\(x=3\\pm\\sqrt{9-7}\\). Förklara felet och bestäm de korrekta lösningarna.</p>',
+    s:solution("I pq-formeln ska q behålla sitt tecken.",'<p>Ekvationen har p=-6 och q=-7. Då blir \\(-p/2=3\\) och uttrycket under roten \\((p/2)^2-q=9-(-7)=16\\), inte 9-7. Därför \\(x=3\\pm4\\).</p>',"\\(x=-1\\) eller \\(x=7\\).","Ett negativt q subtraheras i formeln och ger därför ett plustecken."),
+    ledtrad:"<p>Identifiera q inklusive dess minustecken.</p>",svarstyp:"flera_delar",rättSvar:[-1,7],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lösning","lösning"],svarsstruktur:"mängd",självrättning:true
+  });
+
+  q = set("2.605", {
+    omr:"andragradsekvationer",niva:"C",poang:"2/2/0",familj:"Lösningar och parameter",formaga:["procedur","resonemang"],
+    t:'<p>a) Lös \\(x^2-4x-5=0\\).</p><p>b) Bestäm k så att \\(x^2-4x+k=0\\) har exakt en reell lösning.</p>',
+    s:solution("a tränar själva lösningen; b undersöker när de två rötterna sammanfaller.",'<p>a) \\(x^2-4x-5=(x-5)(x+1)\\), så x=5 eller x=-1.</p><p>b) Med pq-formeln blir \\(x=2\\pm\\sqrt{4-k}\\). Exakt en lösning fås när rotuttrycket är 0: \\(4-k=0\\), alltså k=4.</p>',"a) \\(x=-1\\) eller \\(x=5\\). b) \\(k=4\\).","När rotuttrycket är noll ligger parabelns enda nollställe i symmetrilinjen."),
+    ledtrad:"<p>b) När ger tecknet ± ändå bara ett enda värde?</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Lös \\(x^2-4x-5=0\\).</p>",s:"<p><strong>Svar:</strong> \\(x=-1\\) eller \\(x=5\\).</p>",ledtrad:"<p>Försök faktorisera.</p>",niva:"E",poang:"2/0/0"},
+    {etikett:"b",t:"<p>Bestäm k så att \\(x^2-4x+k=0\\) har exakt en reell lösning.</p>",s:"<p><strong>Svar:</strong> \\(k=4\\), eftersom rotuttrycket då är noll.</p>",ledtrad:"<p>Använd pq-formeln och sätt uttrycket under rottecknet till noll.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  const parabola = '<div class="graf-wrap"><svg viewBox="0 0 520 430" role="img" aria-label="Koordinatsystem med en nedåtvänd parabel, nollställen ett och fem samt toppunkt tre komma fyra"><rect width="520" height="430" rx="18" fill="#f8fafc"/><g stroke="#cbd5e1" stroke-width="1">' +
+    [30,90,150,210,270,330,390,450,510].map(x=>'<line x1="'+x+'" y1="24" x2="'+x+'" y2="410"/>').join('') +
+    [40,75,110,145,180,215,250,285,320,355,390,425].map(y=>'<line x1="20" y1="'+y+'" x2="500" y2="'+y+'"/>').join('') +
+    '</g><g stroke="#334155" stroke-width="2.5"><line x1="20" y1="250" x2="500" y2="250"/><line x1="90" y1="410" x2="90" y2="24"/></g><g fill="#475569" font-size="15" font-family="system-ui">' +
+    [1,2,3,4,5,6].map(n=>'<text x="'+(90+60*n)+'" y="272" text-anchor="middle">'+n+'</text>').join('') +
+    [1,2,3,4,5].map(n=>'<text x="78" y="'+(250-35*n+5)+'" text-anchor="end">'+n+'</text>').join('') +
+    '</g><path d="M90 425 Q270 -205 450 425" fill="none" stroke="#2563eb" stroke-width="5"/><g fill="#ef4444" stroke="#fff" stroke-width="3"><circle cx="150" cy="250" r="7"/><circle cx="390" cy="250" r="7"/><circle cx="270" cy="110" r="7"/></g><g fill="#0f172a" font-size="16" font-weight="700" font-family="system-ui"><text x="160" y="238">(1, 0)</text><text x="398" y="238">(5, 0)</text><text x="280" y="100">(3, 4)</text><text x="484" y="240">x</text><text x="101" y="38">y</text></g></svg></div>';
+  q = set("2.606", {
+    omr:"andragradsfunktioner",niva:"C",poang:"4/2/0",familj:"Läsa och bestämma en andragradsfunktion",formaga:["begrepp","procedur","resonemang"],
+    t:'<p>Grafen visar andragradsfunktionen f.</p>'+parabola+'<p>a) Bestäm \\(f(2)\\), funktionens nollställen, symmetrilinje och största värde.</p><p>b) Bestäm ett funktionsuttryck för f.</p>',
+    s:solution("Läs först av grafens egenskaper. Använd sedan nollställena som faktorer.",'<p>a) Vid x=2 är y=3. Nollställena är 1 och 5, symmetrilinjen ligger mitt emellan: x=3, och största värdet är 4.</p><p>b) Skriv \\(f(x)=a(x-1)(x-5)\\). Punkten (3,4) ger \\(4=a\\cdot2\\cdot(-2)=-4a\\), så a=-1. Därför \\(f(x)=-(x-1)(x-5)=-x^2+6x-5\\).</p>',"a) 3; 1 och 5; x=3; 4. b) \\(f(x)=-x^2+6x-5\\).","Nollställena räcker inte ensamma för att bestämma skalan; en tredje punkt bestämmer a."),
+    ledtrad:"<p>a) Läs av markerade punkter och använd parabelns symmetri. b) Börja med \\(a(x-1)(x-5)\\).</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:'<p>Använd grafen.</p>'+parabola+'<p>Bestäm \\(f(2)\\), nollställena, symmetrilinjen och största värdet.</p>',s:"<p><strong>Svar:</strong> \\(f(2)=3\\), nollställena är 1 och 5, symmetrilinjen är x=3 och största värdet är 4.</p>",ledtrad:"<p>Symmetrilinjen går genom toppunkten och mitt emellan nollställena.</p>",niva:"E",poang:"4/0/0"},
+    {etikett:"b",t:'<p>Använd samma graf.</p>'+parabola+'<p>Bestäm ett funktionsuttryck för f.</p>',s:"<p><strong>Svar:</strong> \\(f(x)=-(x-1)(x-5)=-x^2+6x-5\\).</p>",ledtrad:"<p>Sätt \\(f(x)=a(x-1)(x-5)\\) och använd punkten (3,4).</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  q = set("2.607", {
+    omr:"andragradsmodeller",niva:"C",poang:"2/2/0",familj:"Kaströrelse som andragradsmodell",formaga:["problemlösning","modellering","procedur"],miniräknare:true,
+    t:'<p>En bolls höjd över marken beskrivs av \\(h(x)=-0{,}020x^2+0{,}55x+1{,}65\\), där både x och h mäts i meter.</p><p>a) Hur långt från kastpunkten landar bollen?</p><p>b) Bestäm bollens största höjd.</p>',
+    s:solution("Markkontakt betyder h=0. Den största höjden finns i parabelns toppunkt.",'<p>a) Lös \\(-0{,}020x^2+0{,}55x+1{,}65=0\\). Rötterna är ungefär -2,73 och 30,23. Den negativa roten beskriver inte sträckan efter kastet, så bollen landar cirka 30,2 m bort.</p><p>b) Toppunktens x-värde är \\(-b/(2a)=-0{,}55/(2\\cdot-0{,}020)=13{,}75\\). Insättning ger \\(h(13{,}75)\\approx5{,}43\\).</p>',"a) Cirka 30,2 m. b) Cirka 5,43 m.","Varje algebraiskt svar måste tolkas i situationen; den negativa roten ligger bakom kastpunkten."),
+    ledtrad:"<p>a) Sätt h(x)=0. b) Bestäm symmetrilinjen och sätt in dess x-värde i h.</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Hur långt från kastpunkten landar bollen enligt \\(h(x)=-0{,}020x^2+0{,}55x+1{,}65\\)?</p>",s:"<p><strong>Svar:</strong> Cirka 30,2 m. Den andra roten är negativ och passar inte situationen.</p>",ledtrad:"<p>Marken motsvarar h(x)=0.</p>",niva:"E",poang:"2/0/0"},
+    {etikett:"b",t:"<p>Bestäm bollens största höjd.</p>",s:"<p><strong>Svar:</strong> Cirka 5,43 m, vid x=13,75 m.</p>",ledtrad:"<p>Bestäm först symmetrilinjen med \\(x=-b/(2a)\\).</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  q = set("2.608", {
+    omr:"andragradsfunktioner",niva:"C",poang:"1/2/0",familj:"Rötter, summa och produkt",formaga:["begrepp","resonemang","procedur"],
+    t:'<p>En andragradsekvation har rötterna 2 och 7.</p><p>a) Skriv en andragradsekvation med dessa rötter.</p><p>b) Förklara hur koefficienterna framför x och konstanttermen hänger ihop med rötternas summa och produkt.</p>',
+    s:solution("Bygg ekvationen av de faktorer som blir noll vid rötterna.",'<p>a) \\((x-2)(x-7)=0\\), alltså \\(x^2-9x+14=0\\).</p><p>b) Summan av rötterna är 2+7=9 och syns med motsatt tecken framför x. Produkten är \\(2\\cdot7=14\\) och blir konstanttermen.</p>',"a) Exempelvis \\(x^2-9x+14=0\\). b) x-koefficienten är minus rotsumman och konstanttermen är rotprodukten.","Sambandet följer direkt när faktorerna multipliceras ut."),
+    ledtrad:"<p>Börja med \\((x-2)(x-7)=0\\) och multiplicera ut.</p>"
+  });
+  parts(q,[
+    {etikett:"a",t:"<p>Skriv en andragradsekvation med rötterna 2 och 7.</p>",s:"<p><strong>Svar:</strong> Exempelvis \\(x^2-9x+14=0\\).</p>",ledtrad:"<p>Vilka två faktorer blir noll vid x=2 och x=7?</p>",niva:"E",poang:"1/0/0"},
+    {etikett:"b",t:"<p>Förklara hur ekvationens koefficienter hänger ihop med rötternas summa och produkt.</p>",s:"<p><strong>Svar:</strong> -9 är motsatsen till summan 2+7 och 14 är produkten 2·7.</p>",ledtrad:"<p>Multiplicera ut faktorerna och jämför term för term.</p>",niva:"C",poang:"0/2/0"}
+  ]);
+
+  set("2.609", {
+    omr:"andragradsfunktioner",niva:"C",poang:"0/2/0",familj:"Skärning mellan linje och parabel",formaga:["procedur","problemlösning"],
+    t:'<p>Bestäm skärningspunkterna mellan parabeln \\(y=x^2-4x+3\\) och linjen \\(y=x-1\\).</p>',
+    s:solution("I en skärningspunkt är funktionernas y-värden lika.",'<p>Sätt \\(x^2-4x+3=x-1\\). Då får vi \\(x^2-5x+4=0=(x-1)(x-4)\\), så x=1 eller x=4. Linjen ger y=0 respektive y=3.</p>',"Skärningspunkterna är (1,0) och (4,3).","När x-värdena är funna måste de sättas in för att få hela koordinaterna."),
+    ledtrad:"<p>Sätt de två uttrycken för y lika. Bestäm sedan y för varje x-lösning.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  set("2.610", {
+    omr:"andragradsekvationer",niva:"E",poang:"2/0/0",familj:"Lösa med faktorisering",formaga:["procedur"],
+    t:'<p>Lös ekvationen \\(2x^2-8x=0\\).</p>',
+    s:solution("När alla termer innehåller x kan x brytas ut.",'<p>\\(2x^2-8x=2x(x-4)\\). Nollproduktmetoden ger \\(2x=0\\) eller \\(x-4=0\\).</p>',"\\(x=0\\) eller \\(x=4\\).","Dividera inte bort x innan du har tagit hand om lösningen x=0."),
+    ledtrad:"<p>Bryt ut största gemensamma faktorn 2x.</p>",svarstyp:"flera_delar",rättSvar:[0,4],svarFormat:["numeriskt","numeriskt"],svarEtiketter:["lösning","lösning"],svarsstruktur:"mängd",självrättning:true
+  });
+
+  set("2.611", {
+    omr:"andragradsekvationer",niva:"C",poang:"0/1/0",familj:"Välja lösningsmetod",formaga:["procedur","resonemang"],
+    t:'<p>Lös ekvationen \\((x-3)^2=20\\). Visa en effektiv lösningsmetod och ge exakta svar.</p>',
+    s:solution("Det kvadrerade uttrycket är redan isolerat, så kvadratrotmetoden är direkt.",'<p>Ta kvadratroten i båda leden: \\(x-3=\\pm\\sqrt{20}=\\pm2\\sqrt5\\). Addera 3.</p>',"\\(x=3-2\\sqrt5\\) eller \\(x=3+2\\sqrt5\\).","Att utveckla parentesen och använda pq-formeln fungerar, men skapar onödigt arbete här."),
+    ledtrad:"<p>Ta kvadratroten och kom ihåg både plus- och minusfallet.</p>",svarstyp:"resonemang",rättSvar:null,självrättning:false
+  });
+
+  window.BANKMA2 = bank;
+})();
