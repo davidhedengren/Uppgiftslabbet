@@ -5425,7 +5425,8 @@ async function sparSakerstallKurs(courseId){
 }
 function sparAppliceraInstallningar(d){
   const st=d.settings||{};
-  if($('#bladTyp')) $('#bladTyp').value=st.documentType==='prov'?'prov':'ovning';
+  const dokumenttyp=st.documentType||d.kind||d.type;
+  if($('#bladTyp')) $('#bladTyp').value=dokumenttyp==='prov'?'prov':'ovning';
   if($('#bTitel')) $('#bTitel').value=st.title||d.name||'';
   if($('#bKlass')) $('#bKlass').value=st.className||'';
   if($('#bDatum')) $('#bDatum').value=st.date||'';
@@ -5433,22 +5434,38 @@ function sparAppliceraInstallningar(d){
   if($('#visaTotalpoangExport')) $('#visaTotalpoangExport').checked=Boolean(st.totalPointsOnly);
   if($('#visaHjälpmedelExport')) $('#visaHjälpmedelExport').checked=st.showAidSymbols!==false;
   state.visaPoäng=Boolean(st.showPoints); if($('#visaPoäng')) $('#visaPoäng').checked=state.visaPoäng;
-  if(typeof provLaddaDelar==='function') provLaddaDelar(st.examParts);
+  if(typeof provLaddaDelar==='function'){
+    /* Äldre sparningar saknar examParts. Om uppgifterna ändå har fått en
+       provdel återskapas rätt antal delar; annars blir dokumentet ett säkert
+       endelsprov i stället för att laddningen avbryts. */
+    let delar=st.examParts||st.provdelar||null;
+    if(!Array.isArray(delar)||!delar.length){
+      const hogsta=state.blad.reduce((m,x)=>Math.max(m,Math.max(0,Math.round(+x?._provdel||0))),0);
+      delar=Array.from({length:Math.min(4,hogsta+1)},(_,i)=>({digitala:i>0}));
+    }
+    provLaddaDelar(delar);
+  }
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
   if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
 }
 async function sparLaddaDokument(doc,{manuell=true}={}){
   if(!doc) return;
   try{
-    await sparSakerstallKurs(doc.course);
+    const kursId=doc.course||doc.courseId||AKTIV?.id;
+    if(!kursId) throw new Error('Det sparade dokumentet saknar kursinformation. Öppna rätt kurs och försök igen.');
+    await sparSakerstallKurs(kursId);
     state.spår=doc.track||state.spår;
     if(typeof byggSpårfilter==='function') byggSpårfilter();
     if(typeof uppdateraKursTema==='function') uppdateraKursTema();
     if(typeof uppdateraKursRubriker==='function') uppdateraKursRubriker();
-    state.blad=(Array.isArray(doc.tasks)?doc.tasks:[]).sort((a,b)=>(a.order??0)-(b.order??0)).map(t=>{
-      if(t.snapshot) return sparSnapshotUppgift(t.snapshot);
-      return DB.bank.find(x=>String(x.id)===String(t.bankId));
-    }).filter(Boolean);
+    const sparade=Array.isArray(doc.tasks)?doc.tasks:(Array.isArray(doc.blad)?doc.blad:[]);
+    state.blad=sparade.slice().sort((a,b)=>(a?.order??0)-(b?.order??0)).map(t=>{
+      const snapshot=t?.snapshot||(t&&typeof t==='object'&&(t.t||t.poang)?t:null);
+      const bankId=t?.bankId??t?.id??(typeof t==='string'||typeof t==='number'?t:null);
+      const bank=bankId==null?null:DB.bank.find(x=>String(x.id)===String(bankId));
+      if(snapshot) return Object.assign({},bank||{},sparSnapshotUppgift(snapshot));
+      return bank;
+    }).filter(x=>x&&x.id!=null&&x.t!=null&&x.poang!=null);
     sparAppliceraInstallningar(doc);
     AKTIV_SPAR_ID=manuell?doc.id:(doc.activeSaveId||null);
     byggTräd(); rita(); ritaBlad(); sparStangModal();
@@ -8397,7 +8414,9 @@ function provSakerstallDelar(antal=provDelAntal()){
 }
 function provLaddaDelar(lista){
   PROVDELAR=Array.isArray(lista)&&lista.length
-    ? lista.slice(0,4).map(x=>({digitala:Boolean(x?.digitala)}))
+    ? lista.slice(0,4).map((x,i)=>({digitala:typeof x==='boolean'
+        ? x
+        : Boolean(x?.digitala??x?.digitalaVerktyg??x?.digitalTools??x?.allowDigitalTools??(i>0))}))
     : [{digitala:false}];
   provSakerstallDelar(PROVDELAR.length);
   const val=document.getElementById('antalProvdelar');
