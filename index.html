@@ -1082,6 +1082,41 @@ table.data th{background:var(--sunken);font-weight:600}
 }
 .bladtyp-rad select:focus{outline:none;border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring)}
 
+.provdelar-panel{
+  margin:8px 0 10px;padding:9px 10px 10px;border:1px solid var(--line-2);
+  border-radius:11px;background:color-mix(in srgb,var(--sunken) 72%,transparent)
+}
+.provdelar-panel[hidden]{display:none}
+.provdelar-rubrik{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}
+.provdelar-rubrik label{
+  font-size:11px;font-weight:700;letter-spacing:.035em;text-transform:uppercase;color:var(--muted)
+}
+.provdelar-rubrik select{
+  width:76px;border:1px solid var(--line);background:var(--surface);border-radius:8px;
+  padding:5px 8px;font:650 11.5px/1.2 var(--ui);color:var(--ink);cursor:pointer
+}
+.provdelar-lista{display:grid;gap:5px}
+.provdel-rad{
+  display:grid;grid-template-columns:42px minmax(0,1fr);align-items:center;gap:7px;
+  min-height:28px;font-size:11.5px;color:var(--ink-2)
+}
+.provdel-namn{font-weight:720;color:var(--ink)}
+.provdel-vaxel{
+  display:flex;align-items:center;gap:7px;min-width:0;cursor:pointer;user-select:none
+}
+.provdel-vaxel input{width:14px;height:14px;accent-color:var(--ed);flex:none;cursor:pointer}
+.provdel-vaxel span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.bmeta .bdelval{
+  max-width:70px;border:1px solid var(--line-2);background:var(--sunken);border-radius:6px;
+  padding:2px 5px;font:650 9.5px/1.2 var(--ui);color:var(--ink-2);cursor:pointer
+}
+.blad-delrubrik{
+  display:flex;align-items:center;gap:8px;margin:10px 3px 5px;
+  font:700 10.5px/1.2 var(--ui);color:var(--ink-2);letter-spacing:.035em;text-transform:uppercase
+}
+.blad-delrubrik::after{content:"";height:1px;flex:1;background:var(--line-2)}
+
 .fält input{border:1px solid transparent;background:var(--sunken);border-radius:11px;padding:10px 13px;
   font-size:13.5px;color:var(--ink);transition:background .15s,border-color .15s,box-shadow .15s}
 .fält input::placeholder{color:var(--muted)}
@@ -2451,6 +2486,15 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
   background:#e4e4e4;border-top:1.1pt solid #222;border-bottom:1.1pt solid #222;
   font-size:9.5pt;font-weight:700;line-height:1.15;text-transform:uppercase
 }
+.pdf-delhuvud{
+  box-sizing:border-box;width:100%;margin:3pt 0 12pt;padding:7pt 8pt 6pt;
+  background:#dedede;border-top:1pt solid #333;border-bottom:1pt solid #333;
+  color:#111;font:700 10.5pt/1.2 Arial,Helvetica,sans-serif;
+  break-inside:avoid;page-break-inside:avoid;break-after:avoid;page-break-after:avoid;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact
+}
+.pdf-delhuvud + .pdf-pu{break-before:avoid;page-break-before:avoid}
+.pdf-delhuvud.tom{margin-bottom:18pt}
 .pdf-ovningshuvud{
   display:grid;grid-template-columns:82px 1fr;gap:12pt;align-items:start;
   border-bottom:1.1pt solid #222;padding-bottom:10pt;margin-bottom:17pt
@@ -4479,6 +4523,9 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .lr-handtag button svg{width:13px;height:13px}
 .lr-handtag .lr-flytt{cursor:grab;color:var(--ink-2)}
 .lr-handtag .lr-flytt:active{cursor:grabbing}
+.lr-handtag .lr-delval{height:24px;min-width:66px;padding:0 22px 0 7px;border:0;border-radius:6px;
+  background:transparent;color:var(--ink-2);font:700 11px/1 var(--font);cursor:pointer}
+.lr-handtag .lr-delval:hover,.lr-handtag .lr-delval:focus{background:var(--sunken,#F0EFF2);color:var(--ink);outline:none}
 .lr-bryt{position:relative}
 .lr-bryt::after{content:"ny sida";position:absolute;left:0;right:0;top:-14px;
   border-top:2px dashed #B43123;font:600 8.5px/1 var(--mono,monospace);color:#B43123;
@@ -4791,6 +4838,18 @@ table.data th,table.data td{border-color:var(--x-line)!important}
           <option value="ovning" selected>Övningsblad</option>
           <option value="prov">Prov</option>
         </select>
+      </div>
+      <div class="provdelar-panel" id="provdelarPanel" hidden>
+        <div class="provdelar-rubrik">
+          <label for="antalProvdelar">Antal delar</label>
+          <select id="antalProvdelar" aria-label="Antal delar i provet">
+            <option value="1">1 del</option>
+            <option value="2">2 delar</option>
+            <option value="3">3 delar</option>
+            <option value="4">4 delar</option>
+          </select>
+        </div>
+        <div class="provdelar-lista" id="provdelarLista"></div>
       </div>
       <div class="fält">
         <input id="bTitel" value="Övningsblad" aria-label="Rubrik">
@@ -5232,6 +5291,9 @@ function sparInstallningar(){
     totalPointsOnly:Boolean($('#visaTotalpoangExport')?.checked),
     showAidSymbols:Boolean($('#visaHjälpmedelExport')?.checked),
     showPoints:Boolean(state.visaPoäng),
+    examParts:(typeof PROVDELAR!=='undefined'
+      ? PROVDELAR.map(x=>({digitala:Boolean(x.digitala)}))
+      : [{digitala:false}]),
     taskSpacing:(typeof LAYOUT!=='undefined'?LAYOUT.avstand:16),
     gradeLimits:(typeof GRANSER!=='undefined'?GRANSER:null)
   };
@@ -5371,6 +5433,7 @@ function sparAppliceraInstallningar(d){
   if($('#visaTotalpoangExport')) $('#visaTotalpoangExport').checked=Boolean(st.totalPointsOnly);
   if($('#visaHjälpmedelExport')) $('#visaHjälpmedelExport').checked=st.showAidSymbols!==false;
   state.visaPoäng=Boolean(st.showPoints); if($('#visaPoäng')) $('#visaPoäng').checked=state.visaPoäng;
+  if(typeof provLaddaDelar==='function') provLaddaDelar(st.examParts);
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
   if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
 }
@@ -5803,6 +5866,7 @@ function startaKurs(kurs){
     state.nivåer=new Set(['E','C','A']); state.formagor=new Set(FORMAGOR); state.visaPoäng=false;
     state.miniraknare='alla'; state.geogebra=false;
     state.spår=kurs.defaultSpår||(kurs.spår?.[0]?.id||null);
+    if(typeof provAterstallDelar==='function') provAterstallDelar();
     $('#sökfält').value=''; $('#visaPoäng').checked=false;
     $$('.nivåfilter button').forEach(b=>b.setAttribute('aria-pressed','true'));
     $('#slumpaAntal').value=12;
@@ -6693,6 +6757,7 @@ PR.addEventListener('click',e=>{
 /* ── knappar ── */
 $('#rensaAllt').addEventListener('click',()=>{
   state.blad=[]; state.omr.clear(); state.sök=''; state.nivåer=new Set(['E','C','A']);
+  if(typeof provAterstallDelar==='function') provAterstallDelar();
   state.visaPoäng=false;
   $('#sökfält').value='';
   $('#visaPoäng').checked=false;
@@ -7834,8 +7899,28 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
   const datum=wordDatum($('#bDatum').value);
   const meta=wordProvMeta();
   const children=[];
+  const wordLista=typ==='prov'?provOrdnadeUppgifter():state.blad.slice();
   const logoRun=await wordBildRunFranUrl(LOGO,docx,68);
   const noBorder=wordCellBorders(docx);
+  const wordDelruta=i=>new Table({
+    width:{size:100,type:WidthType.PERCENTAGE},
+    borders:{
+      top:{style:BorderStyle.SINGLE,size:5,color:'A8A8A8'},
+      bottom:{style:BorderStyle.SINGLE,size:5,color:'A8A8A8'},
+      left:{style:BorderStyle.SINGLE,size:5,color:'A8A8A8'},
+      right:{style:BorderStyle.SINGLE,size:5,color:'A8A8A8'},
+      insideHorizontal:{style:BorderStyle.NIL,size:0,color:'FFFFFF'},
+      insideVertical:{style:BorderStyle.NIL,size:0,color:'FFFFFF'}
+    },
+    rows:[new TableRow({children:[new TableCell({
+      shading:{fill:'E4E4E4',type:ShadingType.CLEAR},
+      margins:{top:105,bottom:95,left:120,right:120},
+      children:[new Paragraph({spacing:{before:0,after:0},children:[
+        new TextRun({text:provDelNamn(i)+'. ',bold:true,size:20,font:'Arial'}),
+        new TextRun({text:provDelText(i),size:20,font:'Arial'})
+      ]})]
+    })]})]
+  });
 
   if(typ==='prov'){
     children.push(new Table({
@@ -7940,10 +8025,20 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     children.push(new Paragraph({spacing:{after:110},children:[new TextRun('')]}));
   }
 
-  const antalSteg=state.blad.length*(facit?2:1);
+  const antalSteg=wordLista.length*(facit?2:1);
   let steg=0;
-  for(let i=0;i<state.blad.length;i++){
-    const x=state.blad[i];
+  let senasteDel=-1;
+  for(let i=0;i<wordLista.length;i++){
+    const x=wordLista[i];
+    if(typ==='prov'){
+      const d=provDelIndex(x);
+      if(d!==senasteDel){
+        if(i>0) children.push(new Paragraph({spacing:{after:70},children:[new TextRun('')]}));
+        children.push(wordDelruta(d));
+        children.push(new Paragraph({spacing:{after:65},children:[new TextRun('')]}));
+        senasteDel=d;
+      }
+    }
     rapportera(++steg,antalSteg);
     let taskParas;
     try{
@@ -8035,14 +8130,14 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
   if(facit){
     children.push(new Paragraph({children:[new PageBreak()]}));
     children.push(new Paragraph({spacing:{after:140},children:[new TextRun({text:'Facit',bold:true,size:32,font:'Arial'})]}));
-    for(let i=0;i<state.blad.length;i++){
+    for(let i=0;i<wordLista.length;i++){
       rapportera(++steg,antalSteg);
       children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:`${i+1}.`,bold:true,size:22,font:'Arial'})]}));
       try{
-        children.push(...await wordHtmlTillParagrapher(LOS(state.blad[i].s),docx,{indent:220}));
+        children.push(...await wordHtmlTillParagrapher(LOS(wordLista[i].s),docx,{indent:220}));
       }catch(e){
-        console.warn('Word-export: facit '+(state.blad[i].id||i+1)+' föll tillbaka till ren text.',e);
-        const plain=(new DOMParser().parseFromString(LOS(state.blad[i].s)||'','text/html').body.textContent||'').trim();
+        console.warn('Word-export: facit '+(wordLista[i].id||i+1)+' föll tillbaka till ren text.',e);
+        const plain=(new DOMParser().parseFromString(LOS(wordLista[i].s)||'','text/html').body.textContent||'').trim();
         children.push(new Paragraph({
           indent:{left:220},
           children:[new TextRun({text:plain,size:22,font:'Arial'})]
@@ -8125,6 +8220,8 @@ function uppdateraDokumenttyp(){
     if(total) total.checked=false;
     if(hjalp) hjalp.checked=true;
   }
+  if(typeof provRitaKontroller==='function') provRitaKontroller();
+  ritaBlad();
 }
 $('#bladTyp').addEventListener('change',uppdateraDokumenttyp);
 
@@ -8208,7 +8305,7 @@ function initSparaLaddaUI(){
     if(e.key==='Escape' && !modal.hidden) sparStangModal();
   });
 
-  ['bTitel','bKlass','bDatum','bladTyp','taMedFacit','visaTotalpoangExport','visaHjälpmedelExport'].forEach(id=>{
+  ['bTitel','bKlass','bDatum','bladTyp','antalProvdelar','taMedFacit','visaTotalpoangExport','visaHjälpmedelExport'].forEach(id=>{
     const el=$('#'+id);
     if(!el) return;
     el.addEventListener(el.matches('input[type="checkbox"],select')?'change':'input',sparSchemalaggAutospar);
@@ -8277,7 +8374,89 @@ if(DIREKTKURS){
    och då måste typeof-kontrollen fungera utan att kasta. */
 var SLUMPVAL={formaga:true,typ:true};
 var LAYOUT={avstand:9};
+var PROVDELAR=[{digitala:false}];
 const NIVARANG={E:0,C:1,A:2};
+
+const PROVDEL_BOKSTAVER=['A','B','C','D'];
+function provDelAntal(){ return Math.max(1,Math.min(4,PROVDELAR.length||1)); }
+function provDelNamn(i){ return 'Del '+(PROVDEL_BOKSTAVER[i]||String(i+1)); }
+function provDelText(i){
+  return PROVDELAR[i]?.digitala
+    ? 'Digitala hjälpmedel tillåtna'
+    : 'Digitala hjälpmedel ej tillåtna';
+}
+function provSakerstallDelar(antal=provDelAntal()){
+  antal=Math.max(1,Math.min(4,Math.round(+antal||1)));
+  while(PROVDELAR.length<antal) PROVDELAR.push({digitala:PROVDELAR.length>0});
+  if(PROVDELAR.length>antal) PROVDELAR.length=antal;
+  state.blad.forEach(x=>{
+    const d=Math.max(0,Math.min(antal-1,Math.round(+x._provdel||0)));
+    if(d) x._provdel=d; else delete x._provdel;
+  });
+  return antal;
+}
+function provLaddaDelar(lista){
+  PROVDELAR=Array.isArray(lista)&&lista.length
+    ? lista.slice(0,4).map(x=>({digitala:Boolean(x?.digitala)}))
+    : [{digitala:false}];
+  provSakerstallDelar(PROVDELAR.length);
+  const val=document.getElementById('antalProvdelar');
+  if(val) val.value=String(PROVDELAR.length);
+}
+function provAterstallDelar(){
+  PROVDELAR=[{digitala:false}];
+  [...(DB?.bank||[]),...state.blad].forEach(x=>{ if(x) delete x._provdel; });
+  const val=document.getElementById('antalProvdelar');
+  if(val) val.value='1';
+  provRitaKontroller();
+}
+function provDelIndex(x){
+  return Math.max(0,Math.min(provDelAntal()-1,Math.round(+x?._provdel||0)));
+}
+function provNormaliseraUppgifter(){
+  if(dokumentTyp()!=='prov') return;
+  provSakerstallDelar();
+  state.blad=state.blad.map((x,i)=>({x,i,d:provDelIndex(x)}))
+    .sort((a,b)=>a.d-b.d||a.i-b.i).map(o=>o.x);
+}
+function provOrdnadeUppgifter(){
+  if(dokumentTyp()!=='prov') return state.blad.slice();
+  return state.blad.map((x,i)=>({x,i,d:provDelIndex(x)}))
+    .sort((a,b)=>a.d-b.d||a.i-b.i).map(o=>o.x);
+}
+function provDelRubrikHTML(i,tom=false){
+  return '<div class="pdf-delhuvud'+(tom?' tom':'')+'" data-provdel="'+i+'">'+
+    '<strong>'+provDelNamn(i)+'.</strong> '+provDelText(i)+'</div>';
+}
+function provRitaKontroller(){
+  const panel=document.getElementById('provdelarPanel');
+  const lista=document.getElementById('provdelarLista');
+  const val=document.getElementById('antalProvdelar');
+  if(!panel||!lista||!val) return;
+  const prov=dokumentTyp()==='prov';
+  panel.hidden=!prov;
+  if(!prov) return;
+  provSakerstallDelar(PROVDELAR.length);
+  val.value=String(PROVDELAR.length);
+  lista.innerHTML=PROVDELAR.map((del,i)=>
+    '<div class="provdel-rad"><span class="provdel-namn">'+provDelNamn(i)+'</span>'+
+    '<label class="provdel-vaxel"><input type="checkbox" data-provdel-digital="'+i+'" '+
+    (del.digitala?'checked':'')+'><span>'+provDelText(i)+'</span></label></div>'
+  ).join('');
+  lista.querySelectorAll('[data-provdel-digital]').forEach(k=>k.addEventListener('change',()=>{
+    const i=+k.dataset.provdelDigital;
+    if(PROVDELAR[i]) PROVDELAR[i].digitala=k.checked;
+    provRitaKontroller();
+    ritaBlad();
+    sparSchemalaggAutospar();
+  }));
+}
+document.getElementById('antalProvdelar')?.addEventListener('change',e=>{
+  provSakerstallDelar(+e.target.value);
+  provRitaKontroller();
+  ritaBlad();
+  sparSchemalaggAutospar();
+});
 
 function nivaRang(n){
   const v=String(n||'').trim().toUpperCase()[0];
@@ -8416,8 +8595,9 @@ function gransHTML(medFordelning){
    lämnas orört så att all övrig utskriftslogik fortsätter att gälla. */
 const _bladHTML=bladHTML;
 bladHTML=function(opt){
-  const html=_bladHTML(opt);
   const typ=(opt&&opt.typ)||dokumentTyp();
+  if(typ==='prov') provNormaliseraUppgifter();
+  const html=_bladHTML(opt);
   const harJusteringar=state.blad.some(x=>extraUtrymme(x)||harSidbryt(x));
   if(!harJusteringar&&typ!=='prov') return html;
   const doc=new DOMParser().parseFromString('<div id="rot">'+html+'</div>','text/html');
@@ -8425,6 +8605,24 @@ bladHTML=function(opt){
   const max=rot.querySelector('.pdf-max');
   if(typ==='prov'&&max&&!rot.querySelector('.pdf-granser')){
     max.insertAdjacentHTML('afterend',gransHTML(Boolean(rot.querySelector('.pdf-fordelning'))));
+  }
+  if(typ==='prov'){
+    const behallare=rot.querySelector('.pdf-uppgifter');
+    if(behallare){
+      const uppgifter=[...behallare.querySelectorAll(':scope > .pu')];
+      const perDel=PROVDELAR.map(()=>[]);
+      uppgifter.forEach((el,i)=>perDel[provDelIndex(state.blad[i])].push(el));
+      behallare.innerHTML='';
+      let nummer=1;
+      perDel.forEach((lista,d)=>{
+        behallare.insertAdjacentHTML('beforeend',provDelRubrikHTML(d,!lista.length));
+        lista.forEach(el=>{
+          const n=el.querySelector('.pn');
+          if(n) n.textContent=(nummer++)+'.';
+          behallare.appendChild(el);
+        });
+      });
+    }
   }
   rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i)=>{
     const x=state.blad[i]; if(!x) return;
@@ -8523,7 +8721,9 @@ const GREPPIKON='<span class="greppa" title="Dra för att flytta"><svg viewBox="
 
 const _ritaBlad=ritaBlad;
 ritaBlad=function(){
+  if(dokumentTyp()==='prov') provNormaliseraUppgifter();
   _ritaBlad();
+  provRitaKontroller();
   /* Panelens förslag ska vara samma tal som hamnar på provet. */
   const rutan=document.getElementById('gränser');
   const g=granserNu();
@@ -8537,6 +8737,28 @@ ritaBlad=function(){
   rader.forEach((rad,i)=>{
     rad.dataset.i=i;
     if(!rad.querySelector('.greppa')) rad.insertAdjacentHTML('afterbegin',GREPPIKON);
+    if(dokumentTyp()==='prov'){
+      const meta=rad.querySelector('.bmeta');
+      if(meta&&!meta.querySelector('.bdelval')){
+        const val=provDelIndex(state.blad[i]);
+        const sel=document.createElement('select');
+        sel.className='bdelval';
+        sel.setAttribute('aria-label','Välj provdel för uppgift '+(i+1));
+        sel.innerHTML=PROVDELAR.map((_,d)=>'<option value="'+d+'">'+provDelNamn(d)+'</option>').join('');
+        sel.value=String(val);
+        sel.addEventListener('pointerdown',e=>e.stopPropagation());
+        sel.addEventListener('change',()=>{
+          const d=+sel.value;
+          if(d) state.blad[i]._provdel=d; else delete state.blad[i]._provdel;
+          ritaBlad();
+        });
+        meta.appendChild(sel);
+      }
+      const d=provDelIndex(state.blad[i]);
+      if(i===0||provDelIndex(state.blad[i-1])!==d){
+        rad.insertAdjacentHTML('beforebegin','<div class="blad-delrubrik">'+provDelNamn(d)+'</div>');
+      }
+    }
   });
   const layoutKnapp=document.getElementById('oppnaLayout');
   if(layoutKnapp) layoutKnapp.disabled=!state.blad.length;
@@ -8592,6 +8814,7 @@ function layoutSidlinjer(){
 
 const LR_HANDTAG=`<div class="lr-handtag" contenteditable="false">
   <button class="lr-flytt" title="Dra för att flytta" aria-label="Flytta"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="6" r="1.7"/><circle cx="15" cy="6" r="1.7"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><circle cx="9" cy="18" r="1.7"/><circle cx="15" cy="18" r="1.7"/></svg></button>
+  <select class="lr-delval" data-lr-del title="Välj provdel" aria-label="Välj provdel"></select>
   <button data-lr="upp" title="Flytta upp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"/></svg></button>
   <button data-lr="ner" title="Flytta ned"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
   <button data-lr="minus" title="Mindre skrivutrymme">−</button>
@@ -8636,6 +8859,14 @@ function layoutRita(){
     el.dataset.i=i;
     if(harSidbryt(state.blad[i])&&i>0) el.classList.add('lr-bryt');
     el.insertAdjacentHTML('beforeend',LR_HANDTAG);
+    const delval=el.querySelector('[data-lr-del]');
+    if(delval){
+      if(dokumentTyp()!=='prov') delval.hidden=true;
+      else{
+        delval.innerHTML=PROVDELAR.map((_,d)=>'<option value="'+d+'">'+provDelNamn(d)+'</option>').join('');
+        delval.value=String(provDelIndex(state.blad[i]));
+      }
+    }
   });
 
   const p={E:0,C:0,A:0};
@@ -8701,6 +8932,17 @@ document.getElementById('lrPapper')?.addEventListener('click',e=>{
   ritaBlad();
   if(!state.blad.length) layoutStang();
 });
+document.getElementById('lrPapper')?.addEventListener('change',e=>{
+  const val=e.target.closest('[data-lr-del]');
+  if(!val) return;
+  const block=val.closest('.lr-pu');
+  const i=+block?.dataset.i;
+  const x=state.blad[i];
+  if(!x) return;
+  const d=+val.value;
+  if(d) x._provdel=d; else delete x._provdel;
+  ritaBlad();
+});
 
 /* Export direkt från layoutläget. Vyn stängs först: utskriften sker mot
    #utskrift, och en öppen dialog gör bara att man inte ser dialogrutan. */
@@ -8732,6 +8974,7 @@ gorSorterbar({
     ritaBlad();
   }
 });
+provRitaKontroller();
 </script>
 </body>
 </html>
