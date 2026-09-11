@@ -55142,6 +55142,18 @@ window.BANKMA2 = [
   window.BANKMA2 = bank;
 })();
 
+/* Eleverna väljer själva algebraisk metod för ekvationssystemen. */
+(() => {
+  const metodstyrning = /<p>Lös (?:ekvationssystemet |systemet )?med (?:substitutionsmetoden|additionsmetoden)\.<\/p>/i;
+  for (const uppgift of window.BANKMA2) {
+    if (typeof uppgift.t !== "string" || !metodstyrning.test(uppgift.t)) continue;
+    uppgift.t = uppgift.t.replace(
+      metodstyrning,
+      "<p>Lös ekvationssystemet algebraiskt.</p>"
+    );
+  }
+})();
+
 /* Ersätter den kvarvarande serien "bestäm en linje från två punkter"
    med provvänliga varianter som prövar olika kunskaper. */
 (() => {
