@@ -4905,6 +4905,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
     <div class="bladfot">
       <label class="växel"><input type="checkbox" id="taMedFacit" checked> Ta med facit</label>
       <label class="växel"><input type="checkbox" id="visaTotalpoangExport"> Visa bara totalpoäng</label>
+      <label class="växel"><input type="checkbox" id="doljNivaExport"> Dölj nivå/poäng på uppgifterna</label>
       <label class="växel"><input type="checkbox" id="visaHjälpmedelExport" checked> Visa symbol för digitalt hjälpmedel</label>
       <div class="exportrad">
         <button class="knapp primär" id="expPdf">
@@ -5297,6 +5298,7 @@ function sparInstallningar(){
     documentType:dokumentTyp(),
     includeSolutions:Boolean($('#taMedFacit')?.checked),
     totalPointsOnly:Boolean($('#visaTotalpoangExport')?.checked),
+    hideTaskLevel:Boolean($('#doljNivaExport')?.checked),
     showAidSymbols:Boolean($('#visaHjälpmedelExport')?.checked),
     showPoints:Boolean(state.visaPoäng),
     examParts:(typeof PROVDELAR!=='undefined'
@@ -5491,6 +5493,7 @@ function sparAppliceraInstallningar(d){
   if($('#bDatum')) $('#bDatum').value=st.date||'';
   if($('#taMedFacit')) $('#taMedFacit').checked=st.includeSolutions!==false;
   if($('#visaTotalpoangExport')) $('#visaTotalpoangExport').checked=Boolean(st.totalPointsOnly);
+  if($('#doljNivaExport')) $('#doljNivaExport').checked=Boolean(st.hideTaskLevel);
   if($('#visaHjälpmedelExport')) $('#visaHjälpmedelExport').checked=st.showAidSymbols!==false;
   state.visaPoäng=Boolean(st.showPoints); if($('#visaPoäng')) $('#visaPoäng').checked=state.visaPoäng;
   if(typeof provLaddaDelar==='function'){
@@ -7106,13 +7109,14 @@ function totalpoang(x){
   const m=String(x?.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
   return m ? (+m[1]+ +m[2]+ +m[3]) : 0;
 }
-function exportMärke(x,totalEndast=false){
+function exportMärke(x,totalEndast=false,doljMarke=false){
+  if(doljMarke) return '';
   if(totalEndast) return `<span class="pp">${totalpoang(x)} p</span>`;
   if(state.visaPoäng) return `<span class="pp">${x.poang}</span>`;
   return `<span class="nivåmärke ${x.niva}">${x.niva}</span>`;
 }
 
-function bladHTML({facit,hjalpmedel=true,totalEndast=false,typ=dokumentTyp()}){
+function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=dokumentTyp()}){
   const fallback=typ==='prov'?'Prov':'Övningsblad';
   const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
   const datum=wordDatum(da);
@@ -7158,11 +7162,13 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,typ=dokumentTyp()}){
   h+=`<div class="pdf-uppgifter">`;
   state.blad.forEach((x,i)=>{
     const verktyg=hjalpmedel?utskriftsVerktyg(x):'';
-    const marke=totalEndast
-      ? `<span class="pp">(${totalpoang(x)} p)</span>`
-      : (state.visaPoäng
-          ? `<span class="pp">(${x.poang})</span>`
-          : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`);
+    const marke=doljMarke
+      ? ''
+      : (totalEndast
+          ? `<span class="pp">(${totalpoang(x)} p)</span>`
+          : (state.visaPoäng
+              ? `<span class="pp">(${x.poang})</span>`
+              : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`));
     h+=`<div class="pu pdf-pu">
       <div class="pn">${i+1}.</div>
       <div class="pdf-uppgiftstext">${x.t}</div>
@@ -7284,6 +7290,7 @@ $('#expPdf').addEventListener('click',()=>{
       facit:$('#taMedFacit').checked,
       hjalpmedel:$('#visaHjälpmedelExport').checked,
       totalEndast:$('#visaTotalpoangExport').checked,
+      doljMarke:$('#doljNivaExport').checked,
       typ:dokumentTyp()
     });
     renderKatex(u);
@@ -7463,7 +7470,8 @@ function wordProvMeta(){
   });
   return {p,tot:p.E+p.C+p.A};
 }
-function wordMetaText(x,totalEndast=false){
+function wordMetaText(x,totalEndast=false,doljMarke=false){
+  if(doljMarke) return '';
   if(totalEndast) return `${totalpoang(x)} p`;
   if(state.visaPoäng) return x.poang||'';
   return x.niva||'';
@@ -7971,6 +7979,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
 
   const typ=dokumentTyp();
   const totalEndast=$('#visaTotalpoangExport').checked;
+  const doljMarke=$('#doljNivaExport').checked;
   const hjalpmedel=$('#visaHjälpmedelExport').checked;
   const facit=$('#taMedFacit').checked;
   const titel=($('#bTitel').value||(typ==='prov'?'Prov':'Övningsblad')).trim();
@@ -8175,7 +8184,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
       children:firstRuns
     });
 
-    const metaText=wordMetaText(x,totalEndast);
+    const metaText=wordMetaText(x,totalEndast,doljMarke);
     const poangRad=metaText ? new Paragraph({
       alignment:AlignmentType.RIGHT,
       spacing:{before:20,after:0},
@@ -8304,6 +8313,11 @@ function uppdateraDokumenttyp(){
 }
 $('#bladTyp').addEventListener('change',uppdateraDokumenttyp);
 
+['visaTotalpoangExport','doljNivaExport','visaHjälpmedelExport'].forEach(id=>{
+  document.getElementById(id)?.addEventListener('change',()=>{
+    if(!document.getElementById('layoutred')?.hidden && typeof layoutRita==='function') layoutRita();
+  });
+});
 
 /* ── KaTeX · snabb rendering av uppgiftslistan ── */
 let katexListaObserver=null;
@@ -8390,7 +8404,7 @@ function initSparaLaddaUI(){
     sparNyttDokument();
   });
 
-  ['bTitel','bKlass','bDatum','bladTyp','antalProvdelar','taMedFacit','visaTotalpoangExport','visaHjälpmedelExport'].forEach(id=>{
+  ['bTitel','bKlass','bDatum','bladTyp','antalProvdelar','taMedFacit','visaTotalpoangExport','doljNivaExport','visaHjälpmedelExport'].forEach(id=>{
     const el=$('#'+id);
     if(!el) return;
     el.addEventListener(el.matches('input[type="checkbox"],select')?'change':'input',sparSchemalaggAutospar);
@@ -8925,6 +8939,7 @@ function layoutRita(){
     facit:false,
     hjalpmedel:document.getElementById('visaHjälpmedelExport')?.checked!==false,
     totalEndast:Boolean(document.getElementById('visaTotalpoangExport')?.checked),
+    doljMarke:Boolean(document.getElementById('doljNivaExport')?.checked),
     typ:dokumentTyp()
   });
   if(typeof renderKatex==='function') renderKatex(papper);
