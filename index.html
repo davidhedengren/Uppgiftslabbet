@@ -4866,6 +4866,10 @@ table.data th,table.data td{border-color:var(--x-line)!important}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h6l2 2h10v10H3z"/><path d="m12 12-3 3 3 3"/><path d="M9 15h7"/></svg>
             Ladda
           </button>
+          <button class="knapp liten tyst" id="nyttDokument" type="button" title="Töm arbetsytan och börja på ett nytt dokument">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"/><path d="M12 11h6"/><path d="M15 8v6"/></svg>
+            Nytt
+          </button>
           <span class="sparstatus" id="sparstatus" aria-live="polite"></span>
         </div>
       </div>
@@ -5266,9 +5270,13 @@ const NIVÅORDNING={E:0,C:1,A:2};
 
 /* ═══ lokal sparning av prov/övningsblad ═══ */
 const SPAR_KEY='uppgiftslabbet_saved_documents_v1';
-const UTKAST_KEY='uppgiftslabbet_current_draft_v1';
+const UTKAST_KEY='uppgiftslabbet_current_draft_v1';        /* äldre format: ett enda utkast */
+const UTKAST_KURS_KEY='uppgiftslabbet_course_drafts_v1';   /* ett pågående utkast per kurs */
 let AKTIV_SPAR_ID=null;
 let sparTimer=null;
+/* Sätts när en kurs öppnas som ett led i att ladda ett sparat dokument.
+   Då ska kursens utkast inte återställas, eftersom dokumentet ändå skriver över det. */
+let sparHoppaAterstall=false;
 
 function sparUuid(){
   if(globalThis.crypto?.randomUUID) return crypto.randomUUID();
@@ -5339,16 +5347,64 @@ function sparSparaManuellt(namn){
     alert('Dokumentet kunde inte sparas.'+quota); throw e;
   }
 }
+/* Utkasten ligger som en karta kursId → utkast, så att varje kurs har sitt eget
+   pågående prov/övningsblad. Ett gammalt enskilt utkast flyttas över en gång. */
+function sparLasaUtkast(){
+  let karta={};
+  try{
+    const x=JSON.parse(localStorage.getItem(UTKAST_KURS_KEY)||'{}');
+    if(x && typeof x==='object' && !Array.isArray(x)) karta=x;
+  }catch(e){ console.warn('Kunde inte läsa kursutkast',e); }
+  try{
+    const gammalt=localStorage.getItem(UTKAST_KEY);
+    if(gammalt){
+      const d=JSON.parse(gammalt);
+      if(d?.course && !karta[d.course]) karta[d.course]=d;
+      localStorage.removeItem(UTKAST_KEY);
+      localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta));
+    }
+  }catch(e){}
+  return karta;
+}
+function sparUtkastForKurs(id){ return id?(sparLasaUtkast()[id]||null):null; }
+function sparRensaUtkast(id){
+  const karta=sparLasaUtkast();
+  if(!id || !(id in karta)) return;
+  delete karta[id];
+  try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta));}catch(e){}
+}
 function sparAutosparaNu(){
+  clearTimeout(sparTimer);
   if(!AKTIV) return;
   const draft={
-    version:1,activeSaveId:AKTIV_SPAR_ID,course:AKTIV.id,track:state.spår||null,
+    version:2,activeSaveId:AKTIV_SPAR_ID,course:AKTIV.id,track:state.spår||null,
     settings:sparInstallningar(),
     tasks:state.blad.map((x,i)=>({bankId:x.id||null,order:i,snapshot:sparSnapshotUppgift(x)})),
     updatedAt:new Date().toISOString()
   };
-  try{localStorage.setItem(UTKAST_KEY,JSON.stringify(draft));}
-  catch(e){console.warn('Autosparning kunde inte genomföras',e);}
+  const karta=sparLasaUtkast(); karta[AKTIV.id]=draft;
+  try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta));}
+  catch(e){
+    /* Är lagringen full offras övriga kursers utkast hellre än det pågående. */
+    try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify({[AKTIV.id]:draft}));}
+    catch(e2){console.warn('Autosparning kunde inte genomföras',e2);}
+  }
+}
+/* Töm arbetsytan och börja om i den aktuella kursen. */
+function sparNyttDokument(){
+  if(!AKTIV) return;
+  state.blad=[];
+  AKTIV_SPAR_ID=null;
+  if(typeof provAterstallDelar==='function') provAterstallDelar();
+  sparRensaUtkast(AKTIV.id);
+  rita(); ritaBlad();
+  sparStatus('Nytt dokument');
+}
+/* Återställ kursens pågående dokument när kursen öppnas igen. */
+async function sparAterstallUtkast(kurs){
+  const d=sparUtkastForKurs(kurs?.id);
+  if(!d || !Array.isArray(d.tasks) || !d.tasks.length) return;
+  await sparLaddaDokument(d,{manuell:false});
 }
 function sparSchemalaggAutospar(){ clearTimeout(sparTimer); sparTimer=setTimeout(sparAutosparaNu,350); }
 function sparStangModal(){ $('#sparmodal').hidden=true; }
@@ -5419,8 +5475,11 @@ async function sparSakerstallKurs(courseId){
   if(!kurs) throw new Error('Den sparade kursen finns inte längre.');
   if(AKTIV?.id===courseId) return kurs;
   const kort=document.querySelector(`.kurskort[data-kurs="${courseId}"]`);
-  if(kurs.data) startaKurs(kurs); else await väljKurs(kurs,kort);
-  if(!(await sparVantaKurs(courseId))) throw new Error('Kursen hann inte läsas in.');
+  sparHoppaAterstall=true;
+  try{
+    if(kurs.data) startaKurs(kurs); else await väljKurs(kurs,kort);
+    if(!(await sparVantaKurs(courseId))) throw new Error('Kursen hann inte läsas in.');
+  }finally{ sparHoppaAterstall=false; }
   return kurs;
 }
 function sparAppliceraInstallningar(d){
@@ -5445,6 +5504,7 @@ function sparAppliceraInstallningar(d){
     }
     provLaddaDelar(delar);
   }
+  if(typeof provRitaKontroller==='function') provRitaKontroller();
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
   if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
 }
@@ -5844,6 +5904,7 @@ async function väljKurs(kurs,kort){
   }finally{ kursvalPågår=false; }
 }
 function visaKursval(){
+  sparAutosparaNu();   /* kursens utkast skrivs innan kursen lämnas */
   AKTIV=null;
   renStartadress();
   document.documentElement.style.setProperty('--ed','#B43123');
@@ -5903,6 +5964,7 @@ function startaKurs(kurs){
       byggTräd();
       rita();
       ritaBlad();
+      if(!sparHoppaAterstall) sparAterstallUtkast(kurs);
     }catch(err){
       console.error('Kunde inte starta kursen',err);
       $('#lista').innerHTML=`<div class="tomt"><h3>Kursen kunde inte öppnas</h3><p>${String(err?.message||err)}</p></div>`;
@@ -8322,10 +8384,24 @@ function initSparaLaddaUI(){
     if(e.key==='Escape' && !modal.hidden) sparStangModal();
   });
 
+  $('#nyttDokument')?.addEventListener('click',()=>{
+    if(!AKTIV) return;
+    if(state.blad.length && !confirm('Töm arbetsytan och börja på ett nytt dokument?')) return;
+    sparNyttDokument();
+  });
+
   ['bTitel','bKlass','bDatum','bladTyp','antalProvdelar','taMedFacit','visaTotalpoangExport','visaHjälpmedelExport'].forEach(id=>{
     const el=$('#'+id);
     if(!el) return;
     el.addEventListener(el.matches('input[type="checkbox"],select')?'change':'input',sparSchemalaggAutospar);
+  });
+
+  /* Vid omladdning, bakåtknapp eller när fliken lämnas skrivs utkastet direkt,
+     utan att vänta in fördröjningen i sparSchemalaggAutospar. */
+  window.addEventListener('pagehide',()=>{ if(AKTIV) sparAutosparaNu(); });
+  window.addEventListener('beforeunload',()=>{ if(AKTIV) sparAutosparaNu(); });
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='hidden' && AKTIV) sparAutosparaNu();
   });
 }
 if(document.readyState==='loading'){
