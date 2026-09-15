@@ -4527,9 +4527,10 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   background:transparent;color:var(--ink-2);font:700 11px/1 var(--font);cursor:pointer}
 .lr-handtag .lr-delval:hover,.lr-handtag .lr-delval:focus{background:var(--sunken,#F0EFF2);color:var(--ink);outline:none}
 .lr-bryt{position:relative}
-.lr-bryt::after{content:"ny sida";position:absolute;left:0;right:0;top:-14px;
-  border-top:2px dashed #B43123;font:600 8.5px/1 var(--mono,monospace);color:#B43123;
-  padding-top:3px;letter-spacing:.08em}
+.lr-fyll{pointer-events:none}
+.lr-bryt::after{content:"ny sida efter";position:absolute;left:0;right:0;bottom:-15px;
+  border-bottom:2px dashed #B43123;font:600 8.5px/1 var(--mono,monospace);color:#B43123;
+  padding-bottom:3px;text-align:right;letter-spacing:.08em}
 .lr-fot{padding:11px 18px;background:var(--surface,#fff);border-top:1px solid var(--line-2,#E4E3E6);
   font-size:11.5px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .lr-fot kbd{font:600 10.5px/1 var(--mono,monospace);background:var(--sunken,#F0EFF2);
@@ -6767,6 +6768,25 @@ function sättPoäng(x,p){
 }
 function ändrad(x){ return x.origPoang!==undefined && x.poang!==x.origPoang; }
 
+/* Bladet innehåller inte alltid samma objekt som DB.bank. När ett sparat
+   dokument laddas byggs varje uppgift om till en egen kopia, och då skrev
+   poängredigeraren bara i bankens objekt. Märket i listan ändrades medan
+   provet, PDF:en och Word-filen behöll de gamla poängen. Här skrivs
+   ändringen till alla objekt med samma id, åt båda hållen. */
+function synkaPoäng(x){
+  if(!x||x.id==null) return;
+  const id=String(x.id);
+  const träffar=[];
+  (state.blad||[]).forEach(o=>{ if(o&&o!==x&&String(o.id)===id) träffar.push(o); });
+  (DB.bank||[]).forEach(o=>{ if(o&&o!==x&&String(o.id)===id) träffar.push(o); });
+  träffar.forEach(o=>{
+    if(x.origPoang===undefined){ delete o.origPoang; delete o.origNiva; }
+    else if(o.origPoang===undefined){ o.origPoang=x.origPoang; o.origNiva=x.origNiva; }
+    o.poang=x.poang;
+    o.niva=x.niva;
+  });
+}
+
 function ritaPR(){
   const x=redigerar; if(!x) return;
   const p=poängAv(x);
@@ -6791,7 +6811,12 @@ function patchaMärken(x){
 }
 let nivåFörst=null;
 function öppnaPoäng(id,ankare){
-  const x=DB.bank.find(u=>u.id===id); if(!x) return;
+  /* Ligger uppgiften i bladet är det den kopian provet och exporten läser,
+     så den redigeras i första hand. synkaPoäng skriver sedan tillbaka till
+     banken. */
+  const x=(state.blad||[]).find(u=>u&&String(u.id)===String(id))
+        || DB.bank.find(u=>String(u.id)===String(id));
+  if(!x) return;
   redigerar=x; nivåFörst=x.niva;
   PR.hidden=false;
   ritaPR();
@@ -6833,6 +6858,7 @@ PR.addEventListener('click',e=>{
     if(b.dataset.minus) p[b.dataset.minus]=Math.max(0,p[b.dataset.minus]-1);
     sättPoäng(x,p);
   }
+  synkaPoäng(x);
   ritaPR(); patchaMärken(x); ritaBlad();
 });
 
@@ -8534,7 +8560,11 @@ function provOrdnadeUppgifter(){
     .sort((a,b)=>a.d-b.d||a.i-b.i).map(o=>o.x);
 }
 function provDelRubrikHTML(i,tom=false){
-  return '<div class="pdf-delhuvud'+(tom?' tom':'')+'" data-provdel="'+i+'">'+
+  /* Varje ny del börjar på en ny sida. Stilen skrivs inline i stället för i
+     stilmallen, så den följer med till både PDF-utskriften och Word-filen.
+     Del A står först i dokumentet och ska förstås inte brytas dit. */
+  const bryt=i>0?' style="break-before:page;page-break-before:always"':'';
+  return '<div class="pdf-delhuvud'+(tom?' tom':'')+'" data-provdel="'+i+'"'+bryt+'>'+
     '<strong>'+provDelNamn(i)+'.</strong> '+provDelText(i)+'</div>';
 }
 function provRitaKontroller(){
@@ -8733,13 +8763,16 @@ bladHTML=function(opt){
       });
     }
   }
-  rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i)=>{
+  rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i,lista)=>{
     const x=state.blad[i]; if(!x) return;
     const u=extraUtrymme(x);
     /* Egen variabel i stället för padding: .pdf-pu sätter padding med
        !important, och en inline-padding hade inte vunnit över den. */
     if(u) el.style.setProperty('--pdf-uppgiftsutrymme','calc(var(--pdf-basutrymme,9pt) + '+u+'mm)');
-    if(harSidbryt(x)&&i>0){ el.style.breakBefore='page'; el.style.pageBreakBefore='always'; }
+    /* Sidbrytningen läggs efter uppgiften: uppgiften stannar kvar på sidan
+       och nästa uppgift börjar högst upp på en ny sida. På den sista
+       uppgiften vore brytningen bara en tom sida. */
+    if(harSidbryt(x)&&i<lista.length-1){ el.style.breakAfter='page'; el.style.pageBreakAfter='always'; }
   });
   return rot.innerHTML;
 };
@@ -8904,11 +8937,37 @@ function mmTillPx(){
 function layoutSidlinjer(){
   const papper=document.getElementById('lrPapper');
   if(!papper) return;
-  papper.querySelectorAll('.lr-sidlinje').forEach(e=>e.remove());
+  papper.querySelectorAll('.lr-sidlinje,.lr-fyll').forEach(e=>e.remove());
   const px=mmTillPx();
   const topp=20*px, botten=22*px, sidhojd=297*px;
   const brukbar=sidhojd-topp-botten;      /* textyta per sida */
   papper.style.minHeight='';
+  if(brukbar>20){
+    /* Förhandsvisningen ritade tidigare sidlinjer med jämna mellanrum och
+       tog ingen hänsyn till tvingade brytningar. Nu skjuts de element som
+       måste börja på ny sida ned till närmaste sidgräns med en utfyllnad,
+       så linjerna visar var sidorna faktiskt bryts. Utfyllnaden finns bara
+       här i förhandsvisningen; utskriften använder riktiga sidbrytningar. */
+    const noder=[...papper.querySelectorAll('.pdf-uppgifter > .pdf-delhuvud, .pdf-uppgifter > .pu')];
+    const tvingade=[];
+    noder.forEach((el,idx)=>{
+      if(el.classList.contains('pdf-delhuvud')){
+        if(el.previousElementSibling) tvingade.push(el);
+      }else if(el.classList.contains('lr-bryt')){
+        if(noder[idx+1]) tvingade.push(noder[idx+1]);
+      }
+    });
+    tvingade.forEach(el=>{
+      const pos=el.getBoundingClientRect().top-papper.getBoundingClientRect().top-topp;
+      if(pos<1) return;
+      const rest=pos%brukbar;
+      if(rest<1||brukbar-rest<1) return;
+      const fyll=document.createElement('div');
+      fyll.className='lr-fyll';
+      fyll.style.height=(brukbar-rest)+'px';
+      el.parentNode.insertBefore(fyll,el);
+    });
+  }
   const innehall=Math.max(0,papper.scrollHeight-topp-botten);
   const sidor=Math.max(1,Math.min(40,Math.ceil(innehall/brukbar)));
   papper.style.minHeight=(topp+botten+sidor*brukbar)+'px';
@@ -8928,7 +8987,7 @@ const LR_HANDTAG=`<div class="lr-handtag" contenteditable="false">
   <button data-lr="ner" title="Flytta ned"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
   <button data-lr="minus" title="Mindre skrivutrymme">−</button>
   <button data-lr="plus" title="Mer skrivutrymme">+</button>
-  <button data-lr="bryt" title="Börja ny sida här"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V4h16v4"/><path d="M2 12h20"/><path d="M4 16v4h16v-4"/></svg></button>
+  <button data-lr="bryt" title="Ny sida efter denna uppgift"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V4h16v4"/><path d="M2 12h20"/><path d="M4 16v4h16v-4"/></svg></button>
   <button data-lr="bort" class="bort" title="Ta bort ur bladet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
 </div>`;
 
@@ -8967,7 +9026,7 @@ function layoutRita(){
   [...papper.querySelectorAll('.pdf-uppgifter > .pu')].forEach((el,i)=>{
     el.classList.add('lr-pu');
     el.dataset.i=i;
-    if(harSidbryt(state.blad[i])&&i>0) el.classList.add('lr-bryt');
+    if(harSidbryt(state.blad[i])&&i<state.blad.length-1) el.classList.add('lr-bryt');
     el.insertAdjacentHTML('beforeend',LR_HANDTAG);
     const delval=el.querySelector('[data-lr-del]');
     if(delval){
