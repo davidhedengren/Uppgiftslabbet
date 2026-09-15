@@ -60206,5 +60206,460 @@ window.BANKMA2 = [
       "2c"
     ],
     "familj": "Linjär regression och prognoser"
+  },
+  {
+    "id": "2.813",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>Höjden \\(h\\) meter för en kula som rör sig \\(x\\) meter framåt beskrivs av</p><p>\\[h(x)=x-0,04x^2\\]</p><p>Hur långt bort slår kulan ner?</p>",
+    "s": "<p>Kulan är nere när höjden är noll, alltså när \\(h(x)=0\\).</p><p>\\(x-0,04x^2=0\\)</p><p>Bryt ut \\(x\\):</p><p>\\(x(1-0,04x)=0\\)</p><p>Det ger \\(x=0\\) eller \\(1-0,04x=0\\), alltså \\(x=\\dfrac{1}{0,04}=25\\).</p><p>\\(x=0\\) är startpunkten, så nedslaget sker vid det andra nollstället.</p><p><strong>Kulan slår ner 25 m bort.</strong></p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 25,
+    "tolerans": 0.05,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Vad gäller för höjden i det ögonblick kulan slår ner? Bryt ut \\(x\\) ur uttrycket.</p>",
+    "traningsniva": 2,
+    "arbetsinsats": 1,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.814",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>Bob står på en klippa och kastar en sten. Efter \\(t\\) sekunder är stenens höjd över vattenytan</p><p>\\[h(t)=8,5+9,8t-4,9t^2\\]</p><p>där \\(h\\) är höjden i meter.</p><p><strong>a)</strong> Efter hur lång tid befinner sig stenen på sin högsta höjd?</p><p><strong>b)</strong> Hur högt över vattenytan kommer stenen som högst?</p>",
+    "s": "<p><strong>a)</strong> Grafen är en parabel som vänder nedåt, eftersom koefficienten framför \\(t^2\\) är negativ. Högsta punkten ligger på symmetrilinjen.</p><p>\\(t=-\\dfrac{b}{2a}=-\\dfrac{9,8}{2\\cdot(-4,9)}=\\dfrac{9,8}{9,8}=1\\)</p><p>Stenen är högst upp efter <strong>1,0 sekund</strong>.</p><p><strong>b)</strong> Sätt in \\(t=1\\) i modellen:</p><p>\\(h(1)=8,5+9,8\\cdot1-4,9\\cdot1^2=8,5+9,8-4,9=13,4\\)</p><p><strong>Stenen når 13,4 m över vattenytan.</strong></p><p>Lägg märke till att 8,5 m är klippans höjd: stenen stiger 4,9 m över utkastpunkten.</p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      1,
+      13.4
+    ],
+    "tolerans": 0.05,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering"
+    ],
+    "ledtrad": "<p>Var ligger symmetrilinjen för en parabel \\(at^2+bt+c\\)? Räkna ut höjden först när du vet tiden.</p>",
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEtiketter": [
+      "a) tid (s)",
+      "b) höjd (m)"
+    ],
+    "svarsstruktur": "ordnad"
+  },
+  {
+    "id": "2.815",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>En boll sparkas rakt uppåt från marken. Efter \\(t\\) sekunder är höjden</p><p>\\[h(t)=-4,9t^2+14,7t\\]</p><p>meter över marken.</p><p>Efter hur lång tid är bollen tillbaka på marken?</p>",
+    "s": "<p>Bollen är på marken när \\(h(t)=0\\).</p><p>\\(-4,9t^2+14,7t=0\\)</p><p>Bryt ut \\(t\\):</p><p>\\(t(-4,9t+14,7)=0\\)</p><p>\\(t=0\\) är sparken. Det andra nollstället ger</p><p>\\(t=\\dfrac{14,7}{4,9}=3\\)</p><p><strong>Bollen är tillbaka på marken efter 3,0 sekunder.</strong></p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": 0.05,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering"
+    ],
+    "ledtrad": "<p>Bryt ut \\(t\\). Vilket av de två nollställena är svaret på frågan?</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.816",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "2/0/0",
+    "t": "<p>En rektangel har ett hörn i origo och sidorna längs koordinataxlarna. Det motsatta hörnet \\(P=(x,\\;y)\\) ligger på linjen \\(y=5-2x\\) i första kvadranten.</p><span class=\"fig smal\"><svg width=\"420\" height=\"260\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rektangel med ett hörn i origo och motsatt hörn P på linjen y = 5 minus 2x\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"10\" fill=\"#fff\" stroke=\"#E4E3E6\"/><line x1=\"62.0\" y1=\"212.0\" x2=\"366.0\" y2=\"212.0\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"62.0\" y1=\"212.0\" x2=\"62.0\" y2=\"30.0\" stroke=\"#2B2527\" stroke-width=\"2\"/><polygon points=\"366,212.0 358,208.0 358,216.0\" fill=\"#2B2527\"/><polygon points=\"62.0,30 58.0,38 66.0,38\" fill=\"#2B2527\"/><rect x=\"62.0\" y=\"127.0\" width=\"110.0\" height=\"85.0\" fill=\"#E7F3E7\" stroke=\"#3C8A3C\" stroke-width=\"2\"/><line x1=\"62.0\" y1=\"42.0\" x2=\"282.0\" y2=\"212.0\" stroke=\"#B43123\" stroke-width=\"2.4\"/><text x=\"134.2\" y=\"81.1\" font-family=\"IBM Plex Mono,monospace\" font-size=\"12\" fill=\"#B43123\">y = 5 − 2x</text><circle cx=\"172.0\" cy=\"127.0\" r=\"4.5\" fill=\"#2A5D9E\"/><text x=\"181.0\" y=\"120.0\" font-family=\"IBM Plex Mono,monospace\" font-size=\"12\" fill=\"#2A5D9E\">P = (x, y)</text><text x=\"117.0\" y=\"229.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"12\" fill=\"#2B6B2B\">x</text><text x=\"55.0\" y=\"173.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"12\" fill=\"#2B6B2B\">y</text></svg></span><p>Bestäm rektangelns maximala area.</p>",
+    "s": "<p>Rektangelns sidor är \\(x\\) och \\(y\\), och \\(y=5-2x\\). Arean blir därför en funktion av \\(x\\) ensam:</p><p>\\(A(x)=x(5-2x)=-2x^2+5x\\)</p><p>Det här är en nedåtvänd parabel, så största arean finns på symmetrilinjen:</p><p>\\(x=-\\dfrac{5}{2\\cdot(-2)}=\\dfrac{5}{4}=1,25\\)</p><p>Då är \\(y=5-2\\cdot1,25=2,5\\).</p><p>\\(A=1,25\\cdot2,5=3,125\\)</p><p><strong>Största arean är 3,125 areaenheter.</strong></p><p>Kontroll: både \\(x\\) och \\(y\\) är positiva, så punkten ligger verkligen i första kvadranten.</p>",
+    "familj": "Optimera area med andragradsmodell",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3.125,
+    "tolerans": 0.005,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Uttryck arean med bara \\(x\\) genom att byta ut \\(y\\) mot \\(5-2x\\). Var ligger toppen på den parabeln?</p>",
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.817",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>Stenen i Bobs kast har höjden</p><p>\\[h(t)=8,5+9,8t-4,9t^2\\]</p><p>meter över vattenytan efter \\(t\\) sekunder.</p><p>När slår stenen i vattnet? Svara i sekunder med två decimaler.</p>",
+    "s": "<p>Stenen är i vattnet när \\(h(t)=0\\):</p><p>\\(-4,9t^2+9,8t+8,5=0\\)</p><p>Multiplicera med \\(-1\\) och dela med 4,9:</p><p>\\(t^2-2t-1,7347...=0\\)</p><p>Det är bekvämare att använda lösningsformeln direkt på \\(4,9t^2-9,8t-8,5=0\\):</p><p>\\(t=\\dfrac{9,8\\pm\\sqrt{9,8^2+4\\cdot4,9\\cdot8,5}}{2\\cdot4,9}=\\dfrac{9,8\\pm\\sqrt{96,04+166,6}}{9,8}\\)</p><p>\\(\\sqrt{262,64}\\approx16,21\\), vilket ger</p><p>\\(t\\approx\\dfrac{9,8+16,21}{9,8}\\approx2,65\\) eller \\(t\\approx-0,65\\)</p><p>Negativ tid saknar mening här, eftersom \\(t=0\\) är kastögonblicket.</p><p><strong>Stenen slår i vattnet efter cirka 2,65 sekunder.</strong></p><p>Rimlighet: stenen var högst upp efter 1 s, så nedfärden tar drygt 1,6 s. Den faller längre än den steg, eftersom den startar 8,5 m upp.</p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 2.65,
+    "tolerans": 0.02,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Vilket värde har \\(h\\) när stenen träffar vattenytan? Använd lösningsformeln och förkasta den rot som inte kan inträffa.</p>",
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.818",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En rektangulär hage ska byggas längs en rak ladugårdsvägg. Väggen utgör hela ena långsidan, så staket behövs bara på de tre övriga sidorna.</p><p>Det finns 60 m staket.</p><p>Vilka mått ger den största hagen, och hur stor blir arean?</p>",
+    "s": "<p>Kalla de två sidorna vinkelrätt mot väggen för \\(x\\) meter. Då går det åt \\(2x\\) meter staket till dem, och sidan parallell med väggen blir \\(60-2x\\) meter.</p><p>\\(A(x)=x(60-2x)=-2x^2+60x\\)</p><p>Parabeln vänder nedåt, så maximum ligger på symmetrilinjen:</p><p>\\(x=-\\dfrac{60}{2\\cdot(-2)}=15\\)</p><p>Den tredje sidan blir \\(60-2\\cdot15=30\\) m.</p><p>\\(A=15\\cdot30=450\\)</p><p><strong>Hagen blir störst som 15 m × 30 m, med arean 450 m².</strong></p><p>Lägg märke till att sidan längs väggen blir dubbelt så lång som de andra. Det är inte en kvadrat som är bäst här, till skillnad från när staket behövs runt om.</p>",
+    "familj": "Optimera area med andragradsmodell",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 450,
+    "tolerans": 0.5,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Låt de två sidorna vinkelrätt mot väggen vara \\(x\\). Hur lång blir då den tredje sidan, uttryckt i \\(x\\)?</p>",
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.819",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En förening säljer biljetter till en konsert. Antalet sålda biljetter beror på priset \\(p\\) kronor enligt</p><p>\\[q(p)=400-8p\\]</p><p>Vilket pris ger den största intäkten, och hur stor blir den?</p>",
+    "s": "<p>Intäkten är pris gånger antal:</p><p>\\(I(p)=p\\,(400-8p)=-8p^2+400p\\)</p><p>I faktorform syns nollställena direkt: \\(p=0\\) och \\(p=50\\). Symmetrilinjen ligger mitt emellan dem:</p><p>\\(p=\\dfrac{0+50}{2}=25\\)</p><p>Antal sålda blir \\(q(25)=400-8\\cdot25=200\\) biljetter.</p><p>\\(I(25)=25\\cdot200=5000\\)</p><p><strong>Priset 25 kr ger största intäkten, 5 000 kr.</strong></p><p>Vid \\(p=50\\) kr säljs inga biljetter alls, och vid \\(p=0\\) blir intäkten noll trots 400 sålda. Optimum ligger precis mitt emellan.</p>",
+    "familj": "Tillämpa andragradsmodeller",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5000,
+    "tolerans": 1,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Skriv intäkten som pris gånger antal. Var ligger parabelns topp om du känner de två nollställena?</p>",
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.820",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En tunnelöppning har formen av en parabel. Höjden \\(h\\) meter på avståndet \\(x\\) meter från vänstra kanten ges av</p><p>\\[h(x)=-0,1x^2+2x\\]</p><span class=\"fig smal\"><svg width=\"420\" height=\"260\" viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Tunnelns höjd som funktion av avståndet, med nivån 7,5 meter markerad\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"10\" fill=\"#fff\" stroke=\"#E4E3E6\"/><line x1=\"58.0\" y1=\"220.0\" x2=\"58.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"120.0\" y1=\"220.0\" x2=\"120.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"182.0\" y1=\"220.0\" x2=\"182.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"244.0\" y1=\"220.0\" x2=\"244.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"306.0\" y1=\"220.0\" x2=\"306.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"368.0\" y1=\"220.0\" x2=\"368.0\" y2=\"30\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"220.0\" x2=\"368.0\" y2=\"220.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"186.0\" x2=\"368.0\" y2=\"186.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"152.0\" x2=\"368.0\" y2=\"152.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"118.0\" x2=\"368.0\" y2=\"118.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"84.0\" x2=\"368.0\" y2=\"84.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"50.0\" x2=\"368.0\" y2=\"50.0\" stroke=\"#EEE\"/><line x1=\"58.0\" y1=\"220.0\" x2=\"391.2\" y2=\"220.0\" stroke=\"#2B2527\" stroke-width=\"2\"/><line x1=\"58.0\" y1=\"220.0\" x2=\"58.0\" y2=\"36\" stroke=\"#2B2527\" stroke-width=\"2\"/><path d=\"M 58.0 220.0 L 59.5 216.6 L 61.1 213.3 L 62.6 210.0 L 64.2 206.7 L 65.8 203.4 L 67.3 200.2 L 68.8 197.0 L 70.4 193.9 L 72.0 190.8 L 73.5 187.7 L 75.0 184.7 L 76.6 181.6 L 78.2 178.7 L 79.7 175.7 L 81.2 172.8 L 82.8 170.0 L 84.3 167.1 L 85.9 164.3 L 87.5 161.5 L 89.0 158.8 L 90.6 156.1 L 92.1 153.4 L 93.7 150.8 L 95.2 148.2 L 96.8 145.6 L 98.3 143.1 L 99.8 140.6 L 101.4 138.1 L 103.0 135.7 L 104.5 133.3 L 106.1 130.9 L 107.6 128.6 L 109.2 126.3 L 110.7 124.1 L 112.2 121.8 L 113.8 119.6 L 115.3 117.5 L 116.9 115.3 L 118.5 113.3 L 120.0 111.2 L 121.6 109.2 L 123.1 107.2 L 124.6 105.2 L 126.2 103.3 L 127.8 101.4 L 129.3 99.6 L 130.9 97.8 L 132.4 96.0 L 133.9 94.2 L 135.5 92.5 L 137.1 90.8 L 138.6 89.2 L 140.2 87.6 L 141.7 86.0 L 143.2 84.4 L 144.8 82.9 L 146.4 81.4 L 147.9 80.0 L 149.4 78.6 L 151.0 77.2 L 152.6 75.9 L 154.1 74.5 L 155.7 73.3 L 157.2 72.0 L 158.8 70.8 L 160.3 69.7 L 161.9 68.5 L 163.4 67.4 L 164.9 66.3 L 166.5 65.3 L 168.1 64.3 L 169.6 63.3 L 171.2 62.4 L 172.7 61.5 L 174.2 60.6 L 175.8 59.8 L 177.4 59.0 L 178.9 58.2 L 180.4 57.5 L 182.0 56.8 L 183.6 56.1 L 185.1 55.5 L 186.7 54.9 L 188.2 54.4 L 189.8 53.8 L 191.3 53.3 L 192.9 52.9 L 194.4 52.4 L 196.0 52.1 L 197.5 51.7 L 199.0 51.4 L 200.6 51.1 L 202.2 50.8 L 203.7 50.6 L 205.2 50.4 L 206.8 50.3 L 208.4 50.2 L 209.9 50.1 L 211.5 50.0 L 213.0 50.0 L 214.6 50.0 L 216.1 50.1 L 217.7 50.2 L 219.2 50.3 L 220.8 50.4 L 222.3 50.6 L 223.9 50.8 L 225.4 51.1 L 227.0 51.4 L 228.5 51.7 L 230.1 52.1 L 231.6 52.4 L 233.2 52.9 L 234.7 53.3 L 236.2 53.8 L 237.8 54.4 L 239.4 54.9 L 240.9 55.5 L 242.5 56.1 L 244.0 56.8 L 245.6 57.5 L 247.1 58.2 L 248.7 59.0 L 250.2 59.8 L 251.8 60.6 L 253.3 61.5 L 254.9 62.4 L 256.4 63.3 L 258.0 64.3 L 259.5 65.3 L 261.1 66.3 L 262.6 67.4 L 264.1 68.5 L 265.7 69.7 L 267.2 70.8 L 268.8 72.0 L 270.4 73.3 L 271.9 74.5 L 273.5 75.9 L 275.0 77.2 L 276.6 78.6 L 278.1 80.0 L 279.6 81.4 L 281.2 82.9 L 282.8 84.4 L 284.3 86.0 L 285.9 87.6 L 287.4 89.2 L 289.0 90.8 L 290.5 92.5 L 292.1 94.2 L 293.6 96.0 L 295.1 97.8 L 296.7 99.6 L 298.2 101.4 L 299.8 103.3 L 301.4 105.2 L 302.9 107.2 L 304.5 109.2 L 306.0 111.2 L 307.6 113.3 L 309.1 115.3 L 310.6 117.5 L 312.2 119.6 L 313.8 121.8 L 315.3 124.1 L 316.8 126.3 L 318.4 128.6 L 320.0 130.9 L 321.5 133.3 L 323.1 135.7 L 324.6 138.1 L 326.2 140.6 L 327.7 143.1 L 329.2 145.6 L 330.8 148.2 L 332.3 150.8 L 333.9 153.4 L 335.5 156.1 L 337.0 158.8 L 338.6 161.5 L 340.1 164.3 L 341.7 167.1 L 343.2 170.0 L 344.8 172.8 L 346.3 175.7 L 347.8 178.7 L 349.4 181.6 L 351.0 184.7 L 352.5 187.7 L 354.1 190.8 L 355.6 193.9 L 357.2 197.0 L 358.7 200.2 L 360.2 203.4 L 361.8 206.7 L 363.4 210.0 L 364.9 213.3 L 366.5 216.6 L 368.0 220.0\" fill=\"none\" stroke=\"#2A5D9E\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"92.5\" x2=\"375.8\" y2=\"92.5\" stroke=\"#B43123\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/><text x=\"380.4\" y=\"96.5\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#B43123\">7,5 m</text><text x=\"120.0\" y=\"235.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">4</text><text x=\"182.0\" y=\"235.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">8</text><text x=\"244.0\" y=\"235.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">12</text><text x=\"306.0\" y=\"235.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">16</text><text x=\"368.0\" y=\"235.0\" text-anchor=\"middle\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">20</text><text x=\"52.0\" y=\"189.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">2</text><text x=\"52.0\" y=\"155.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">4</text><text x=\"52.0\" y=\"121.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">6</text><text x=\"52.0\" y=\"87.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">8</text><text x=\"52.0\" y=\"53.5\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"10\" fill=\"#5C575E\">10</text><text x=\"388.2\" y=\"252.0\" text-anchor=\"end\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#5C575E\">x (m)</text><text x=\"64.0\" y=\"44.0\" font-family=\"IBM Plex Mono,monospace\" font-size=\"11\" fill=\"#5C575E\">h (m)</text></svg></span><p>En transport kräver fri höjd 7,5 m. Hur bred är den del av öppningen där tunneln är minst 7,5 m hög?</p>",
+    "s": "<p>Sök först var höjden är exakt 7,5 m:</p><p>\\(-0,1x^2+2x=7,5\\)</p><p>Multiplicera med \\(-10\\):</p><p>\\(x^2-20x+75=0\\)</p><p>\\(x=10\\pm\\sqrt{100-75}=10\\pm5\\)</p><p>Gränserna är \\(x=5\\) och \\(x=15\\).</p><p>Mellan dem ligger parabeln ovanför nivån 7,5 m, vilket också syns i figuren.</p><p><strong>Den fria bredden är \\(15-5=10\\) m.</strong></p><p>Observera att frågan gäller bredden, inte gränspunkterna. Ett vanligt misstag är att svara 15.</p>",
+    "familj": "Tillämpa andragradsmodeller",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 10,
+    "tolerans": 0.05,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Lös först ekvationen \\(h(x)=7,5\\). Vad är avståndet mellan de två lösningarna?</p>",
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.821",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "C",
+    "poang": "0/2/0",
+    "t": "<p>En boll kastas från en höjd av 1,5 m. Höjden \\(h\\) meter på avståndet \\(x\\) meter framåt beskrivs av</p><p>\\[h(x)=-0,02x^2+0,8x+1,5\\]</p><p>Hur långt bort landar bollen? Svara i meter med en decimal.</p>",
+    "s": "<p>Bollen landar när \\(h(x)=0\\):</p><p>\\(-0,02x^2+0,8x+1,5=0\\)</p><p>Multiplicera med \\(-50\\):</p><p>\\(x^2-40x-75=0\\)</p><p>\\(x=20\\pm\\sqrt{400+75}=20\\pm\\sqrt{475}\\)</p><p>\\(\\sqrt{475}\\approx21,79\\), vilket ger \\(x\\approx41,79\\) eller \\(x\\approx-1,79\\).</p><p>Negativt avstånd saknar mening, eftersom bollen kastas framåt.</p><p><strong>Bollen landar cirka 41,8 m bort.</strong></p><p>Jämför med en kastare som släpper bollen vid marknivå: konstanttermen 1,5 skjuter fram nedslaget ett par meter.</p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "numeriskt",
+    "rättSvar": 41.8,
+    "tolerans": 0.15,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "modellering",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Sätt höjden till noll. Konstanttermen 1,5 betyder att bollen inte startar på marken, så nollstället ligger inte symmetriskt.</p>",
+    "traningsniva": 4,
+    "arbetsinsats": 2,
+    "spel": true,
+    "svarFormat": "numeriskt"
+  },
+  {
+    "id": "2.822",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/1/3",
+    "t": "<p>En sten kastas uppåt från höjden \\(h_0\\) meter med utgångsfarten \\(v_0\\) m/s. Höjden efter \\(t\\) sekunder är</p><p>\\[h(t)=h_0+v_0t-4,9t^2\\]</p><p><strong>a)</strong> Visa att tiden till högsta punkten är \\(t=\\dfrac{v_0}{9,8}\\), och att den inte beror på \\(h_0\\).</p><p><strong>b)</strong> Visa att den högsta höjden är \\(h_0+\\dfrac{v_0^2}{19,6}\\).</p><p><strong>c)</strong> Bob står på en klippa och kastar med \\(v_0=9,8\\) m/s. Han vill att stenen ska nå 5 m högre än vad den gör nu. En kompis säger: ”Kasta dubbelt så hårt, då kommer den dubbelt så högt.” Undersök om det är ett bra råd, och avgör vad som krävs för att nå just 5 m högre.</p>",
+    "s": "<p><strong>Nyckelidé:</strong> \\(h_0\\) är en konstantterm. Den flyttar hela parabeln uppåt utan att ändra dess form, och därmed inte heller symmetrilinjens läge.</p><p><strong>a)</strong> Symmetrilinjen för \\(at^2+bt+c\\) ligger vid \\(t=-\\dfrac{b}{2a}\\). Här är \\(a=-4,9\\) och \\(b=v_0\\):</p><p>\\(t=-\\dfrac{v_0}{2\\cdot(-4,9)}=\\dfrac{v_0}{9,8}\\)</p><p>Uttrycket innehåller inte \\(h_0\\). Konstanttermen påverkar bara \\(c\\), och \\(c\\) förekommer inte i formeln för symmetrilinjen. Stenen vänder alltså vid samma tidpunkt oavsett hur hög klippan är.</p><p><strong>b)</strong> Sätt in tiden i modellen:</p><p>\\(h\\!\\left(\\dfrac{v_0}{9,8}\\right)=h_0+v_0\\cdot\\dfrac{v_0}{9,8}-4,9\\cdot\\dfrac{v_0^2}{9,8^2}\\)</p><p>\\(=h_0+\\dfrac{v_0^2}{9,8}-\\dfrac{4,9v_0^2}{96,04}=h_0+\\dfrac{v_0^2}{9,8}-\\dfrac{v_0^2}{19,6}\\)</p><p>\\(=h_0+\\dfrac{2v_0^2-v_0^2}{19,6}=h_0+\\dfrac{v_0^2}{19,6}\\)</p><p><strong>c)</strong> Stighöjden över utkastpunkten är \\(\\dfrac{v_0^2}{19,6}\\), alltså <em>kvadratiskt</em> beroende av farten.</p><p>Med \\(v_0=9,8\\) blir stighöjden \\(\\dfrac{96,04}{19,6}=4,9\\) m.</p><p>Dubbel fart ger \\(\\dfrac{19,6^2}{19,6}=19,6\\) m, alltså fyra gånger så högt, inte dubbelt. Kompisens råd bygger på ett linjärt samband som inte finns här.</p><p>För 5 m mer krävs stighöjden \\(4,9+5=9,9\\) m:</p><p>\\(\\dfrac{v_0^2}{19,6}=9,9\\Rightarrow v_0=\\sqrt{194,04}\\approx13,9\\) m/s</p><p>Det är en ökning med ungefär 42 %, inte 100 %.</p><p><strong>a) och b) visade ovan. c) Nej, dubbel fart ger fyrdubbel stighöjd. För 5 m mer krävs \\(v_0\\approx13,9\\) m/s.</strong></p><p>Insikten är att \\(h_0\\) förskjuter banan medan \\(v_0\\) formar den. Därför kan man ändra klippans höjd utan att ändra kastets tidsförlopp, men inte utan vidare skala höjden genom att skala farten.</p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "resonemang",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>I formeln \\(t=-\\dfrac{b}{2a}\\) ingår inte konstanttermen. Vad säger det om \\(h_0\\)? I c) är det stighöjden över utkastpunkten som ska jämföras, inte den totala höjden.</p>",
+    "traningsniva": 5,
+    "arbetsinsats": 3,
+    "spel": false,
+    "manuellKomplettering": true
+  },
+  {
+    "id": "2.823",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/1/3",
+    "t": "<p>En rektangel har ett hörn i origo och sidorna längs koordinataxlarna. Det motsatta hörnet ligger på linjen \\(y=k-mx\\) i första kvadranten, där \\(k>0\\) och \\(m>0\\).</p><p><strong>a)</strong> Visa att den största arean är \\(\\dfrac{k^2}{4m}\\).</p><p><strong>b)</strong> Visa att det optimala hörnet alltid ligger i mittpunkten på den del av linjen som ligger i första kvadranten.</p><p><strong>c)</strong> Två elever ritar var sin linje. Den ena har dubbelt så stort \\(k\\) som den andra, men samma \\(m\\). Hur förhåller sig deras största areor till varandra? Förklara varför svaret inte är två.</p>",
+    "s": "<p><strong>Nyckelidé:</strong> Arean blir en andragradsfunktion i \\(x\\) med nollställena \\(x=0\\) och \\(x=k/m\\). Toppen ligger alltid mitt emellan nollställena.</p><p><strong>a)</strong> Hörnet är \\((x,\\;k-mx)\\), så</p><p>\\(A(x)=x(k-mx)=-mx^2+kx\\)</p><p>Eftersom \\(m>0\\) vänder parabeln nedåt. Maximum ligger vid</p><p>\\(x=-\\dfrac{k}{2\\cdot(-m)}=\\dfrac{k}{2m}\\)</p><p>\\(A\\!\\left(\\dfrac{k}{2m}\\right)=\\dfrac{k}{2m}\\left(k-m\\cdot\\dfrac{k}{2m}\\right)=\\dfrac{k}{2m}\\cdot\\dfrac{k}{2}=\\dfrac{k^2}{4m}\\)</p><p><strong>b)</strong> Linjen skär axlarna i \\((0,\\;k)\\) och \\(\\left(\\dfrac{k}{m},\\;0\\right)\\). Mittpunkten mellan dessa är</p><p>\\(\\left(\\dfrac{k}{2m},\\;\\dfrac{k}{2}\\right)\\)</p><p>Det är exakt det optimala hörnet från a), eftersom \\(y=k-m\\cdot\\dfrac{k}{2m}=\\dfrac{k}{2}\\).</p><p>Detta gäller oberoende av \\(k\\) och \\(m\\): det är alltid halva basen och halva höjden som ger störst rektangel.</p><p><strong>c)</strong> Med \\(k\\to2k\\) blir arean \\(\\dfrac{(2k)^2}{4m}=\\dfrac{4k^2}{4m}\\), alltså <strong>fyra gånger</strong> så stor.</p><p>Anledningen är att en fördubbling av \\(k\\) förlänger både basen \\(k/m\\) och höjden \\(k\\) med faktorn 2. Arean är en produkt av två längder som båda dubbleras, och \\(2\\cdot2=4\\).</p><p>Den som svarar två har behandlat arean som om den vore en längd.</p><p><strong>a) och b) visade ovan. c) Fyra gånger så stor, eftersom både bas och höjd fördubblas.</strong></p>",
+    "familj": "Optimera area med andragradsmodell",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "resonemang",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Skriv arean som en funktion av \\(x\\) och håll \\(k\\) och \\(m\\) som bokstäver hela vägen. Var skär linjen axlarna?</p>",
+    "traningsniva": 5,
+    "arbetsinsats": 3,
+    "spel": false,
+    "manuellKomplettering": true
+  },
+  {
+    "id": "2.824",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/2/2",
+    "t": "<p>En rektangulär hage ska byggas med \\(L\\) meter staket.</p><p><strong>a)</strong> Byggs hagen längs en rak vägg behövs staket bara på tre sidor. Visa att den största arean då är \\(\\dfrac{L^2}{8}\\).</p><p><strong>b)</strong> Byggs hagen fritt behövs staket runt om. Visa att den största arean då är \\(\\dfrac{L^2}{16}\\).</p><p><strong>c)</strong> En lantbrukare säger: ”Väggen sparar ju bara en av fyra sidor, alltså en fjärdedel av staketet. Då borde hagen bli en fjärdedel större.” Förklara varför resonemanget inte stämmer, och vad som faktiskt vinns.</p>",
+    "s": "<p><strong>a)</strong> Låt de två sidorna vinkelrätt mot väggen vara \\(x\\). Sidan längs väggen blir \\(L-2x\\).</p><p>\\(A(x)=x(L-2x)=-2x^2+Lx\\)</p><p>Nollställena är \\(x=0\\) och \\(x=\\dfrac{L}{2}\\), så maximum ligger vid \\(x=\\dfrac{L}{4}\\).</p><p>\\(A=\\dfrac{L}{4}\\left(L-\\dfrac{L}{2}\\right)=\\dfrac{L}{4}\\cdot\\dfrac{L}{2}=\\dfrac{L^2}{8}\\)</p><p>Hagen blir \\(\\dfrac{L}{4}\\times\\dfrac{L}{2}\\), alltså dubbelt så lång som bred.</p><p><strong>b)</strong> Nu är omkretsen \\(2x+2y=L\\), så \\(y=\\dfrac{L}{2}-x\\).</p><p>\\(A(x)=x\\left(\\dfrac{L}{2}-x\\right)\\)</p><p>Nollställena är \\(x=0\\) och \\(x=\\dfrac{L}{2}\\), så maximum ligger vid \\(x=\\dfrac{L}{4}\\) igen, men nu blir</p><p>\\(A=\\dfrac{L}{4}\\cdot\\dfrac{L}{4}=\\dfrac{L^2}{16}\\)</p><p>Här blir hagen en kvadrat.</p><p><strong>c)</strong> Kvoten är</p><p>\\(\\dfrac{L^2/8}{L^2/16}=\\dfrac{16}{8}=2\\)</p><p>Väggen ger alltså <strong>dubbelt så stor</strong> hage, inte en fjärdedel större.</p><p>Felet i resonemanget är att räkna sidor i stället för staketlängd. Väggen sparar inte en fjärdedel av materialet, den frigör en hel sida vars längd kan läggas på de övriga. Och eftersom arean är en produkt av två längder växer den snabbare än materialet.</p><p>Lägg också märke till att den optimala formen ändras: kvadrat utan vägg, men dubbelt så lång som bred med vägg. Den som bara antar ”kvadrat är alltid bäst” får fel i a).</p><p><strong>a) \\(L^2/8\\)  b) \\(L^2/16\\)  c) Väggen dubblar arean, och den optimala formen är inte längre en kvadrat.</strong></p>",
+    "familj": "Optimera area med andragradsmodell",
+    "geogebra": false,
+    "miniräknare": true,
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "resonemang",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Inför \\(x\\) på samma sätt i båda fallen och håll \\(L\\) som bokstav. Jämför sedan de två uttrycken genom att dela dem.</p>",
+    "traningsniva": 5,
+    "arbetsinsats": 3,
+    "spel": false,
+    "manuellKomplettering": true
+  },
+  {
+    "id": "2.825",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/1/3",
+    "t": "<p>En kulas höjd \\(h\\) meter efter \\(x\\) meter framåt beskrivs av</p><p>\\[h(x)=x-kx^2\\]</p><p>där \\(k>0\\).</p><p><strong>a)</strong> Visa att räckvidden är \\(\\dfrac{1}{k}\\) och att den högsta höjden är \\(\\dfrac{1}{4k}\\).</p><p><strong>b)</strong> Visa att den högsta höjden alltid är en fjärdedel av räckvidden, oavsett \\(k\\).</p><p><strong>c)</strong> En elev påstår att man kan se på en kastbana av den här typen om den är ritad i rätt skala, utan att veta några tal. Förklara hur, och vad som händer med slutsatsen om modellen i stället vore \\(h(x)=cx-kx^2\\) med \\(c\\ne1\\).</p>",
+    "s": "<p><strong>a)</strong> Nollställena fås ur \\(x-kx^2=0\\), alltså \\(x(1-kx)=0\\).</p><p>Det ger \\(x=0\\) (utkastet) och \\(x=\\dfrac{1}{k}\\) (nedslaget). Räckvidden är alltså \\(\\dfrac{1}{k}\\).</p><p>Toppen ligger mitt emellan nollställena, vid \\(x=\\dfrac{1}{2k}\\):</p><p>\\(h\\!\\left(\\dfrac{1}{2k}\\right)=\\dfrac{1}{2k}-k\\cdot\\dfrac{1}{4k^2}=\\dfrac{1}{2k}-\\dfrac{1}{4k}=\\dfrac{1}{4k}\\)</p><p><strong>b)</strong> Bilda kvoten:</p><p>\\(\\dfrac{\\text{högsta höjd}}{\\text{räckvidd}}=\\dfrac{1/(4k)}{1/k}=\\dfrac{1}{4k}\\cdot k=\\dfrac{1}{4}\\)</p><p>Parametern \\(k\\) försvinner. Alla banor av formen \\(x-kx^2\\) är alltså formlika: de är samma kurva i olika skala.</p><p><strong>c)</strong> Eleven har rätt. Mäter man höjd och räckvidd i figuren och kvoten inte är \\(1{:}4\\), kan banan inte komma från modellen \\(h(x)=x-kx^2\\). Man behöver inga tal, bara förhållandet.</p><p>Med \\(h(x)=cx-kx^2\\) blir nollställena 0 och \\(\\dfrac{c}{k}\\), toppen ligger vid \\(x=\\dfrac{c}{2k}\\) och den högsta höjden blir</p><p>\\(h\\!\\left(\\dfrac{c}{2k}\\right)=\\dfrac{c^2}{2k}-\\dfrac{c^2}{4k}=\\dfrac{c^2}{4k}\\)</p><p>Kvoten blir \\(\\dfrac{c^2/(4k)}{c/k}=\\dfrac{c}{4}\\).</p><p>Nu beror förhållandet på \\(c\\) men fortfarande inte på \\(k\\). Slutsatsen överlever alltså i modifierad form: \\(k\\) styr bara skalan, medan \\(c\\) styr formen. Geometriskt är \\(c\\) banans lutning i utkastögonblicket, alltså kastvinkeln.</p><p><strong>a) och b) visade ovan. c) Ja, kvoten höjd/räckvidd är \\(1{:}4\\) oberoende av \\(k\\). Med \\(cx-kx^2\\) blir kvoten \\(c/4\\), fortfarande oberoende av \\(k\\).</strong></p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "resonemang",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Bryt ut \\(x\\) för att hitta nollställena. Toppen ligger mitt emellan dem. Bilda sedan kvoten och se vad som förkortas bort.</p>",
+    "traningsniva": 5,
+    "arbetsinsats": 3,
+    "spel": false,
+    "manuellKomplettering": true
+  },
+  {
+    "id": "2.826",
+    "kap": 2,
+    "omr": "andragradsfunktioner_tillampningar",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "A",
+    "poang": "0/2/2",
+    "t": "<p>En boll kastas rakt uppåt från marken med utgångsfarten \\(v_0\\) m/s. Höjden efter \\(t\\) sekunder är</p><p>\\[h(t)=v_0t-4,9t^2\\]</p><p><strong>a)</strong> Bestäm den högsta höjden och den totala flygtiden, båda uttryckta i \\(v_0\\).</p><p><strong>b)</strong> Två personer kastar, den ena med dubbelt så stor utgångsfart som den andra. Jämför deras högsta höjder och deras flygtider.</p><p><strong>c)</strong> En tredje person vill att bollen ska vara i luften dubbelt så länge som den första. Hur mycket högre kommer hennes boll? Förklara varför höjd och tid inte skalar likadant.</p>",
+    "s": "<p><strong>a)</strong> Nollställena är \\(t=0\\) och, ur \\(t(v_0-4,9t)=0\\), \\(t=\\dfrac{v_0}{4,9}\\). Det är flygtiden.</p><p>Toppen ligger mitt emellan, vid \\(t=\\dfrac{v_0}{9,8}\\):</p><p>\\(h\\!\\left(\\dfrac{v_0}{9,8}\\right)=\\dfrac{v_0^2}{9,8}-4,9\\cdot\\dfrac{v_0^2}{96,04}=\\dfrac{v_0^2}{9,8}-\\dfrac{v_0^2}{19,6}=\\dfrac{v_0^2}{19,6}\\)</p><p><strong>b)</strong> Med \\(v_0\\to2v_0\\):</p><p>Höjden blir \\(\\dfrac{(2v_0)^2}{19,6}=\\dfrac{4v_0^2}{19,6}\\), alltså <strong>fyra gånger</strong> så hög.</p><p>Flygtiden blir \\(\\dfrac{2v_0}{4,9}\\), alltså bara <strong>dubbelt så lång</strong>.</p><p><strong>c)</strong> Dubbel flygtid kräver dubbel utgångsfart, eftersom tiden \\(\\dfrac{v_0}{4,9}\\) är proportionell mot \\(v_0\\). Enligt b) blir höjden då fyra gånger så stor.</p><p>Orsaken är att tiden beror linjärt på \\(v_0\\) medan höjden beror på \\(v_0^2\\). Under uppstigningen minskar farten hela tiden, men den genomsnittliga farten är också dubbelt så stor. Dubbelt så lång tid gånger dubbelt så hög medelfart ger fyra gånger sträckan.</p><p><strong>a) \\(h_{max}=\\dfrac{v_0^2}{19,6}\\), flygtid \\(\\dfrac{v_0}{4,9}\\)  b) fyra gånger höjden, dubbla tiden  c) fyra gånger så högt</strong></p><p>Insikten är att en parabels bredd och höjd inte växer i takt. Det är samma sak som att en dubbelt så stor kvadrat har fyra gånger arean.</p>",
+    "familj": "Kastbanor och räckvidd",
+    "geogebra": true,
+    "miniräknare": true,
+    "svarstyp": "resonemang",
+    "rättSvar": null,
+    "tolerans": null,
+    "självrättning": false,
+    "formaga": [
+      "procedur",
+      "begrepp",
+      "modellering",
+      "resonemang",
+      "problemlösning"
+    ],
+    "ledtrad": "<p>Hitta flygtiden ur nollställena och höjden ur symmetrilinjen. Titta sedan på vilken potens av \\(v_0\\) som står i respektive uttryck.</p>",
+    "traningsniva": 4,
+    "arbetsinsats": 3,
+    "spel": false,
+    "manuellKomplettering": true
   }
 ];
