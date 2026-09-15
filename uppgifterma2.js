@@ -3328,8 +3328,14 @@ window.BANKMA2 = [
     "familj": "Ingen eller oändligt många lösningar",
     "geogebra": false,
     "miniräknare": false,
-    "svarstyp": "val",
-    "rättSvar": "ingen lösning",
+    "svarstyp": "kort_text",
+    "rättSvar": [
+      "ingen lösning",
+      "systemet har ingen lösning",
+      "saknar lösning",
+      "0 lösningar",
+      "noll lösningar"
+    ],
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -29491,8 +29497,8 @@ window.BANKMA2 = [
     ],
     "niva": "C",
     "poang": "0/2/0",
-    "t": "<p>Den positiva lösningen till \\(x^2=20\\) ligger mellan två på varandra följande heltal. Bestäm vilka, utan räknare, och motivera ditt svar.</p>",
-    "s": "<p>\\(4^2=16\\) och \\(5^2=25\\).</p><p>Eftersom \\(16&lt;20&lt;25\\) och kvadrering är växande för positiva tal ligger den positiva lösningen mellan 4 och 5.</p><p>Den ligger närmare 4, eftersom 20 ligger närmare 16 än 25.</p><p><strong>Svar:</strong> Mellan \\(4\\) och \\(5\\)</p>",
+    "t": "<p>Utan räknare: mellan vilka två på varandra följande heltal ligger \\(\\sqrt{20}\\)?</p><p>Skriv det mindre heltalet i den första svarsrutan och det större heltalet i den andra.</p>",
+    "s": "<p>\\(4^2=16\\) och \\(5^2=25\\).</p><p>Eftersom \\(16&lt;20&lt;25\\) gäller \\(4&lt;\\sqrt{20}&lt;5\\).</p><p><strong>Svar:</strong> Det mindre heltalet är \\(4\\) och det större är \\(5\\).</p>",
     "familj": "Kvadratrotmetoden",
     "geogebra": false,
     "miniräknare": false,
@@ -29517,7 +29523,7 @@ window.BANKMA2 = [
       "övre heltal"
     ],
     "familjTidigare": "Lösa enkla andragradsekvationer med kvadratrotmetoden",
-    "ledtrad": "<p>Vilka heltal har kvadrater strax under och strax över 20?</p>",
+    "ledtrad": "<p>Jämför 20 med kvadraterna av heltalen omkring \\(\\sqrt{20}\\): \\(4^2\\) och \\(5^2\\).</p>",
     "traningsniva": 3,
     "arbetsinsats": 1,
     "spel": true
@@ -58953,7 +58959,7 @@ window.BANKMA2 = [
     "omr": "mer_om_andragradsekvationer",
     "niva": "C",
     "poang": "0/3/0",
-    "t": "<p>Lös ekvationerna och ange för varje deluppgift vilken metod du valde och varför.</p><p>a)&nbsp;\\(x^2=45\\)<br>b)&nbsp;\\(x^2-9x=0\\)<br>c)&nbsp;\\(2x^2+6x-8=0\\)</p>",
+    "t": "<p>Lös ekvationerna. Svara exakt eller avrunda till två decimaler där det behövs.</p><p>a)&nbsp;\\(x^2=45\\)<br>b)&nbsp;\\(x^2-9x=0\\)<br>c)&nbsp;\\(2x^2+6x-8=0\\)</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Metodvalet är en del av svaret här. Motivera kort varför din metod passar ekvationens form.</p><div class=\"facit-arbete\"><p>a) Kvadratrotmetoden, eftersom \\(x^2\\) står ensamt: \\(x=\\pm\\sqrt{45}=\\pm3\\sqrt5\\approx\\pm6{,}71\\).</p><p>b) Nollproduktmetoden efter utbrytning, eftersom konstanttermen saknas: \\(x(x-9)=0\\) ger \\(x=0\\) eller \\(x=9\\).</p><p>c) Dividera först med 2 så att koefficienten framför \\(x^2\\) blir 1: \\(x^2+3x-4=0\\). Uttrycket går att faktorisera, \\((x+4)(x-1)=0\\), men pq-formeln ger samma svar: \\(x=-1{,}5\\pm\\sqrt{2{,}25+4}=-1{,}5\\pm2{,}5\\), alltså \\(x=1\\) eller \\(x=-4\\).</p><p><strong>a) \\(\\pm3\\sqrt5\\approx\\pm6{,}71\\) &nbsp; b) \\(0\\) och \\(9\\) &nbsp; c) \\(1\\) och \\(-4\\)</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> pq-formeln kräver att koefficienten framför \\(x^2\\) är 1. Dividera alltid först om den inte är det.</p></div>",
     "geogebra": false,
     "miniräknare": false,
@@ -58972,8 +58978,8 @@ window.BANKMA2 = [
     ],
     "rättSvar": [
       [
-        -6.708203932499369,
-        6.708203932499369
+        -6.71,
+        6.71
       ],
       [
         0,
@@ -60661,5 +60667,253 @@ window.BANKMA2 = [
     "arbetsinsats": 3,
     "spel": false,
     "manuellKomplettering": true
+  },
+  {
+    "id": "2.827",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För \\(f(x)=2x^2-3x-5\\), bestäm funktionens skärning med y-axeln.</p>",
+    "s": "<p>På y-axeln är \\(x=0\\).</p><p>\\[f(0)=2\\cdot0^2-3\\cdot0-5=-5.\\]</p><p><strong>Grafen skär y-axeln vid \\(y=-5\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Vilket x-värde har alla punkter på y-axeln?</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.828",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Funktionen \\(g(x)=-3x^2+4x+2\\) har en graf som är en parabel. Öppnar parabeln uppåt eller nedåt?</p>",
+    "s": "<p>Koefficienten framför \\(x^2\\) är \\(-3\\), alltså negativ.</p><p><strong>Parabeln öppnar nedåt.</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "val",
+    "rättSvar": "nedåt",
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp"
+    ],
+    "svarFormat": "kort_text",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Titta på tecknet framför \\(x^2\\).</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.829",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>Punkten \\((2,7)\\) ligger på grafen till \\(f(x)=x^2+k\\). Bestäm \\(k\\).</p>",
+    "s": "<p>Eftersom punkten ligger på grafen gäller \\(f(2)=7\\).</p><p>\\[2^2+k=7\\Rightarrow4+k=7\\Rightarrow k=3.\\]</p><p><strong>\\(k=3\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 3,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Sätt in punktens x- och y-koordinat i funktionsuttrycket.</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.830",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För \\(f(x)=x^2-4x+1\\), vilket är störst: \\(f(0)\\) eller \\(f(3)\\)? Svara med det största funktionsvärdet.</p>",
+    "s": "<p>\\(f(0)=1\\).</p><p>\\(f(3)=9-12+1=-2\\).</p><p>Eftersom \\(1>-2\\) är <strong>det största funktionsvärdet 1</strong>.</p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 1,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Beräkna de båda funktionsvärdena var för sig och jämför dem.</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.831",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För \\(f(x)=(x-3)^2-4\\), bestäm funktionens minsta värde.</p>",
+    "s": "<p>En kvadrat är alltid minst 0. Därför är \\((x-3)^2\\) minst 0, vilket sker när \\(x=3\\).</p><p>Då är \\(f(x)=0-4=-4\\).</p><p><strong>Minsta värdet är \\(-4\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": -4,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>I formen \\(a(x-h)^2+k\\) kan extremvärdet läsas av direkt när kvadraten är 0.</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.832",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En andragradsfunktion har nollställena \\(x=1\\) och \\(x=7\\). Bestäm symmetrilinjens x-värde.</p>",
+    "s": "<p>Symmetrilinjen ligger mitt emellan nollställena.</p><p>\\[x=\\frac{1+7}{2}=4.\\]</p><p><strong>Symmetrilinjen är \\(x=4\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Symmetrilinjen ligger mitt emellan de två nollställena.</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.833",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>För \\(f(x)=x^2-6x+8\\) vet du att \\(f(2)=0\\). Vilket är det andra nollstället om symmetrilinjen är \\(x=3\\)?</p>",
+    "s": "<p>Nollställena ligger lika långt från symmetrilinjen. Talet 2 ligger 1 steg till vänster om 3, så det andra nollstället ligger 1 steg till höger.</p><p><strong>Det andra nollstället är \\(x=4\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 4,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "resonemang"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Använd symmetrin kring \\(x=3\\).</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
+  },
+  {
+    "id": "2.834",
+    "kap": 2,
+    "omr": "andragradsfunktioner",
+    "kurs": [
+      "2a",
+      "2b",
+      "2c"
+    ],
+    "niva": "E",
+    "poang": "1/0/0",
+    "t": "<p>En andragradsfunktion uppfyller \\(f(1)=5\\). Vilket värde har \\(f(5)\\) om funktionens symmetrilinje är \\(x=3\\)?</p>",
+    "s": "<p>Talen 1 och 5 ligger båda 2 steg från symmetrilinjen \\(x=3\\).</p><p>En parabel är symmetrisk kring sin symmetrilinje, därför är \\(f(5)=f(1)\\).</p><p><strong>\\(f(5)=5\\).</strong></p>",
+    "familj": "Grundegenskaper hos andragradsfunktioner",
+    "geogebra": false,
+    "miniräknare": false,
+    "svarstyp": "numeriskt",
+    "rättSvar": 5,
+    "tolerans": null,
+    "självrättning": true,
+    "formaga": [
+      "begrepp",
+      "resonemang"
+    ],
+    "svarFormat": "numeriskt",
+    "familjTidigare": "Tolka och bestämma andragradsfunktioner",
+    "ledtrad": "<p>Jämför avståndet från \\(x=1\\) och \\(x=5\\) till symmetrilinjen.</p>",
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "spel": true
   }
+
 ];
