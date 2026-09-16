@@ -6196,15 +6196,21 @@ const BANK_VERSION=(()=>{
 })();
 const skriptLöften=new Map();
 function laddaSkript(src){
-  if(skriptLöften.has(src)) return skriptLöften.get(src);
+  /* Kursadressen ändras med history.replaceState, till exempel till /ma2/.
+     Relativa skriptadresser skulle då felaktigt sökas under den kursmappen
+     vid ett senare kursbyte. Lös alltid kursfiler mot appens faktiska rot. */
+  const relativ=String(src||'').replace(/^\/+/, '');
+  const bas=new URL(APP_ROOT,location.origin);
+  const url=new URL(relativ,bas).href;
+  if(skriptLöften.has(url)) return skriptLöften.get(url);
   const löfte=new Promise((ok,fel)=>{
     const s=document.createElement('script');
-    s.src=src+(src.includes('?')?'&':'?')+'v='+encodeURIComponent(BANK_VERSION);
+    s.src=url+(url.includes('?')?'&':'?')+'v='+encodeURIComponent(BANK_VERSION);
     s.onload=()=>ok();
-    s.onerror=()=>{ skriptLöften.delete(src); s.remove(); fel(new Error(src)); };
+    s.onerror=()=>{ skriptLöften.delete(url); s.remove(); fel(new Error(url)); };
     document.head.appendChild(s);
   });
-  skriptLöften.set(src,löfte);
+  skriptLöften.set(url,löfte);
   return löfte;
 }
 /* Läser kursens globala data oavsett om den exponeras via window eller global deklaration. */
