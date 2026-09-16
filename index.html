@@ -4875,6 +4875,27 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .mina-dela .ul-länk input{font-size:11.5px;padding:7px 9px}
 .mina-dela .ul-länk .knapp{flex:none}
 .mina-dela .ul-laddar{padding:2px 0}
+.mina-dela-skola{font-size:11px;font-weight:700;color:var(--ink-2)}
+.mina-kollegor,.ul-skolkollegor{display:grid;gap:6px}
+.ul-kollega{display:flex;align-items:center;gap:9px;padding:8px 9px;border:1px solid var(--line);border-radius:9px;background:var(--surface)}
+.ul-kollega .dr-person{flex:none}
+.ul-kollega-text{display:grid;min-width:0;flex:1;line-height:1.25}
+.ul-kollega-text b{font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ul-kollega-text span{font-size:10.8px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ul-kollega-status{font-size:10.5px;font-weight:700;color:var(--ink-2);padding:4px 7px;border-radius:7px;background:var(--canvas);white-space:nowrap}
+.ul-kollega-status.skickad{background:#EEF3FA;color:#2C4F80}
+.ul-skola-namn{margin:0 0 5px!important;font-weight:700;color:var(--ink-2)!important}
+.ul-lankalternativ{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+.ul-lankalternativ summary{cursor:pointer;font-size:11.5px;font-weight:650;color:var(--ink-2);margin-bottom:8px}
+.mina-dela-lankdel{padding-top:5px;border-top:1px solid #dbe9e1}
+.mina-inbjudningar{margin:0 0 18px;padding:13px;border:1px solid #cbd9ec;border-radius:13px;background:#f4f7fb}
+.mina-inbjudningar-rubrik{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.mina-inbjudningar-rubrik>div{display:grid;gap:1px}.mina-inbjudningar-rubrik b{font-size:13.5px}.mina-inbjudningar-rubrik span{font-size:11.5px;color:var(--ink-2)}
+.mina-inbjudningar-lista{display:grid;gap:7px}
+.mina-inbjudan{display:flex;align-items:center;gap:10px;padding:9px 10px;border:1px solid #dbe4f0;border-radius:10px;background:var(--surface)}
+.mina-inbjudan-text{display:grid;gap:2px;min-width:0;flex:1}.mina-inbjudan-text b{font-size:12.5px}.mina-inbjudan-text span{font-size:11px;color:var(--muted)}
+.mina-inbjudan-knappar{display:flex;gap:5px;flex:none}
+@media(max-width:620px){.mina-inbjudan{align-items:flex-start;flex-wrap:wrap}.mina-inbjudan-knappar{width:100%;padding-left:34px}.mina-inbjudan-knappar .knapp{flex:1;justify-content:center}}
 .mina-post:hover .mina-atg,.mina-post:focus-within .mina-atg,.mina-post.delar .mina-atg{opacity:1}
 .mina-atg button{border:0;background:var(--surface);padding:3px 7px;border-radius:7px;font:inherit;font-size:11.5px;
   font-weight:600;color:var(--ink-2);cursor:pointer}
@@ -9608,6 +9629,10 @@ const UL_FEL={
   for_stort:'Dokumentet är för stort för att delas. Minska storleken på inklistrade bilder.',
   bara_agaren:'Bara den som skapade det delade dokumentet kan göra det.',
   agare_kan_inte_lamna:'Du äger dokumentet och kan inte lämna det. Radera det i stället.',
+  skola_saknas:'Din skola saknas på lärarkontot. Skolkollegor kan därför inte visas ännu.',
+  inte_samma_skola:'Den läraren tillhör inte samma skola som du.',
+  redan_medlem:'Läraren har redan tillgång till dokumentet.',
+  inbjudan_saknas:'Delningsförfrågan finns inte längre.',
   ogiltigt_namn:'Ange ett namn.',
   eget_konto:'Byt ditt eget lösenord via kontomenyn.',
   kort_losenord:'Lösenordet måste ha minst 8 tecken.',
@@ -10047,7 +10072,7 @@ function delningRitaStatus(extra={}){
 const UL_IKON_MOLN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.4 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg>';
 const UL_IKON_DELA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>';
 let ulModalLäge={kod:null,fel:null,länk:null,laddar:false,vy:null};
-/* Svar från ul_min_behorighet: {larare, admin, vantande, ansokan}. */
+/* Svar från ul_min_behorighet: lärarbehörighet, adminstatus, väntande kontoärenden och delningsförfrågningar. */
 let ulBehörighet=null, ulBehörighetTid=0;
 
 function delningÖppnaModal(opt={}){
@@ -10159,7 +10184,7 @@ async function delningRitaModal(){
           <input id="ulDelaNamn" maxlength="120" autocomplete="off" value="${ulEsc(förslag)}">
           <button type="button" class="knapp primär" data-ul="dela">Dela dokumentet</button>
         </div>
-        <p class="ul-liten">Dokumentet (${state.blad.length} ${state.blad.length===1?'uppgift':'uppgifter'}, ${ulEsc(AKTIV.titel)}) sparas på ditt konto och du får en länk att skicka till kollegor. Kollegor som öppnar länken ser varandras ändringar efter några sekunder.</p>
+        <p class="ul-liten">Dokumentet (${state.blad.length} ${state.blad.length===1?'uppgift':'uppgifter'}, ${ulEsc(AKTIV.titel)}) sparas på ditt konto. Därefter kan du bjuda in en lärare på din skola direkt, eller skapa en länk som tidigare.</p>
       </div>`:''}
       <div class="ul-sektion">
         <label class="ul-etikett" for="ulKod">Har du fått en kod?</label>
@@ -10174,7 +10199,7 @@ async function delningRitaModal(){
 
   const delatMed=(DELNING.medlemmar??1)>1;
   titel.textContent=delatMed?'Delat dokument':'Dela dokumentet';
-  underrubrik.textContent=!delatMed?'Dokumentet ligger på ditt konto. Bjud in kollegor med en länk.'
+  underrubrik.textContent=!delatMed?'Dokumentet ligger på ditt konto. Bjud in en lärare på skolan eller dela med länk.'
     :DELNING.roll==='agare'?'Du äger dokumentet.':'Du redigerar tillsammans med kollegor.';
   const länk=ulModalLäge.länk;
   ulSätt(`${fel}${adminRad}
@@ -10185,14 +10210,18 @@ async function delningRitaModal(){
       <p class="ul-liten" id="ulStatusText"></p>
     </div>
     <div class="ul-sektion">
-      <div class="ul-etikett">Bjud in kollegor</div>
-      ${länk?`<div class="ul-länk">
-          <input id="ulLänk" readonly value="${ulEsc(länk.url)}" aria-label="Inbjudningslänk">
-          <button type="button" class="knapp primär" data-ul="kopiera">Kopiera länk</button>
-        </div>
-        <p class="ul-liten">Kod: <b class="ul-kod">${ulEsc(länk.kod.replace(/(.{5})/,'$1-'))}</b> · gäller till ${ulEsc(ulTid(länk.giltig_till))}. Alla med länken som har ett lärarkonto kan gå med.</p>`
-      :`<button type="button" class="knapp primär" data-ul="bjud-in">Skapa inbjudningslänk</button>
-        <p class="ul-liten">Länken gäller i 14 dagar och kan användas av flera kollegor.</p>`}
+      <div class="ul-etikett">Bjud in lärare på din skola</div>
+      <div id="ulSkolLarare" class="ul-skolkollegor"><div class="ul-laddar">Hämtar lärare…</div></div>
+      <details class="ul-lankalternativ"${länk?' open':''}>
+        <summary>Dela med länk i stället</summary>
+        ${länk?`<div class="ul-länk">
+            <input id="ulLänk" readonly value="${ulEsc(länk.url)}" aria-label="Inbjudningslänk">
+            <button type="button" class="knapp primär" data-ul="kopiera">Kopiera länk</button>
+          </div>
+          <p class="ul-liten">Kod: <b class="ul-kod">${ulEsc(länk.kod.replace(/(.{5})/,'$1-'))}</b> · gäller till ${ulEsc(ulTid(länk.giltig_till))}. Alla med länken som har ett lärarkonto kan gå med.</p>`
+        :`<button type="button" class="knapp tyst" data-ul="bjud-in">Skapa inbjudningslänk</button>
+          <p class="ul-liten">Länkdelning finns kvar för kollegor som inte dyker upp i skollistan.</p>`}
+      </details>
     </div>
     <div class="ul-sektion">
       <div class="ul-etikett">Medlemmar</div>
@@ -10211,6 +10240,7 @@ async function delningRitaModal(){
     </div>
     ${delningKontoRad()}`);
   delningUppdateraModalStatus();
+  delningFyllSkollärare();
   delningFyllMedlemmar();
 }
 function delningRitaAnsökan(beh){
@@ -10341,6 +10371,34 @@ function delningUppdateraModalStatus(){
   if(DELNING.aktiva?.length) delar.push('Har dokumentet öppet just nu: '+DELNING.aktiva.join(', ')+'.');
   el.textContent=delar.join(' ');
 }
+async function delningFyllSkollärare(){
+  const el=document.getElementById('ulSkolLarare');
+  if(!el||!DELNING.id) return;
+  el.innerHTML='<div class="ul-laddar">Hämtar lärare…</div>';
+  try{
+    const r=await ulRpc('ul_skola_larare',{p_id:DELNING.id});
+    const lista=Array.isArray(r?.larare)?r.larare:[];
+    const skola=r?.skola||'';
+    if(!skola){ el.innerHTML='<p class="ul-liten">Din skola saknas på kontot, så skollistan kan inte visas.</p>'; return; }
+    if(!lista.length){
+      el.innerHTML=`<p class="ul-liten">Inga andra godkända Uppgiftslabbet-konton hittades för <b>${ulEsc(skola)}</b>. Du kan fortfarande dela med länk nedan.</p>`;
+      return;
+    }
+    el.innerHTML=`<p class="ul-liten ul-skola-namn">${ulEsc(skola)}</p>`+lista.map(x=>{
+      const status=x.status||'ledig';
+      const knapp=status==='medlem'
+        ?'<span class="ul-kollega-status">Har tillgång</span>'
+        :status==='vantar'
+          ?'<span class="ul-kollega-status skickad">Inbjuden</span>'
+          :`<button type="button" class="knapp liten primär" data-bjud-larare="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">Bjud in</button>`;
+      return `<div class="ul-kollega"><span class="dr-person">${ulEsc(ulInitialer(x.namn))}</span>
+        <span class="ul-kollega-text"><b>${ulEsc(x.namn)}</b><span>${ulEsc(x.epost||'')}</span></span>${knapp}</div>`;
+    }).join('');
+  }catch(e){
+    el.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`;
+  }
+}
+
 async function delningFyllMedlemmar(){
   const el=document.getElementById('ulMedlemmar'); if(!el||!DELNING.id) return;
   try{
@@ -10472,8 +10530,8 @@ async function delningDelaAktuellt(namn){
   const data=delningByggData();
   const r=await ulRpc('ul_skapa',{p_namn:namn,p_kurs:AKTIV.id,p_data:data});
   delningAktivera({id:r.id,namn,roll:'agare',kurs:AKTIV.id,medlemmar:1},data,r.revision,delningKanon(data));
-  await delningSkapaLänk();
-  ulMeddela(`”${namn}” är delat. Skicka länken till dina kollegor.`);
+  ulModalLäge.länk=null;
+  ulMeddela(`”${namn}” är sparat för delning. Välj en kollega på din skola eller skapa en länk.`);
 }
 async function delningSkapaLänk(){
   const r=await ulRpc('ul_skapa_inbjudan',{p_id:DELNING.id});
@@ -10481,7 +10539,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort],[data-konto-bort-alla]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort],[data-konto-bort-alla],[data-bjud-larare]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -10495,6 +10553,13 @@ async function delningModalKlick(e){
     }
     finally{ knapp.disabled=false; delningRitaModal(); }
   };
+  if(knapp.dataset.bjudLarare){
+    const namn=knapp.dataset.namn||'läraren';
+    return kör(async()=>{
+      await ulRpc('ul_bjud_in_larare',{p_id:DELNING.id,p_user:knapp.dataset.bjudLarare});
+      ulMeddela(`Inbjudan skickad till ${namn}.`);
+    });
+  }
   if(knapp.dataset.beslut){
     const st=knapp.dataset.beslut, namn=knapp.dataset.namn;
     if(st==='avslagen'&&knapp.textContent==='Återkalla'&&
@@ -10671,7 +10736,7 @@ const UL_KLAR=(async()=>{
   delningRitaStatus();
   ulUppdateraBricka();
   setInterval(()=>{
-    if(ulSession&&ulBehörighet?.admin&&document.visibilityState==='visible') ulUppdateraBricka();
+    if(ulSession&&document.visibilityState==='visible') ulUppdateraBricka();
   },60000);
 })();
 
@@ -11140,7 +11205,9 @@ function kontoRitaChip(){
   const läge=KONTO.lage;
   const konto=läge==='konto';
   const b=kontoBeh();
-  const antal=konto&&b?.admin?(b.vantande||0):0;
+  const adminAntal=konto&&b?.admin?(b.vantande||0):0;
+  const delningsAntal=konto?(b?.delningsinbjudningar||0):0;
+  const antal=adminAntal+delningsAntal;
   const lokala=konto?sparLasaAlla().length:0;
   const namn=konto?kontoVisningsnamn():'Gemensamt lösenord';
   const kort=konto?String(namn).split(/\s+/)[0]:'Lösenord';
@@ -11148,7 +11215,8 @@ function kontoRitaChip(){
       <div class="konto-meny-huvud"><b>${ulEsc(namn)}</b><span>${ulEsc(kontoEpost())}</span>
         <span>Dokumenten sparas på ditt konto.</span></div>
       <button type="button" role="menuitem" data-konto-val="mina"><span>Mina prov och övningsblad</span></button>
-      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${antal?`<span class="ul-bricka">${antal}</span>`:''}</button>`:''}
+      ${delningsAntal?`<button type="button" role="menuitem" data-konto-val="inbjudningar"><span>Delningsförfrågningar</span><span class="ul-bricka">${delningsAntal}</span></button>`:''}
+      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button>`:''}
       ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
       ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
       <button type="button" role="menuitem" data-konto-val="logga-ut">Logga ut</button>`
@@ -11169,6 +11237,7 @@ function kontoMenyVal(val){
   switch(val){
     case 'admin': delningÖppnaModal({vy:'admin'}); break;
     case 'mina': minaÖppna(); break;
+    case 'inbjudningar': minaÖppna({fokusInbjudningar:true}); break;
     case 'flytt': kontoErbjudFlytt(true); break;
     case 'losenord': grindLås(); grindRita('byt',{tvingad:false}); break;
     case 'logga-ut': ulLoggaUt(); break;
@@ -11370,7 +11439,7 @@ async function kontoFlyttaIn(){
 /* ── Mina prov och övningsblad ──────────────────────────────────────────── */
 const UL_IKON_PROV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg>';
 const UL_IKON_OVNING='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
-const MINA={lista:null,fel:null,sök:'',laddar:false,dela:null};
+const MINA={lista:null,inbjudningar:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false};
 
 function minaTid(iso){
   const d=new Date(iso); if(Number.isNaN(d.getTime())) return '';
@@ -11383,21 +11452,29 @@ function minaTid(iso){
   if(d.getFullYear()!==new Date().getFullYear()) opt.year='numeric';
   return d.toLocaleDateString('sv-SE',opt);
 }
-async function minaÖppna(){
+async function minaÖppna({fokusInbjudningar=false}={}){
   if(!kontoAktivt()) return;
   const m=document.getElementById('minamodal');
-  MINA.sök=''; MINA.fel=null; MINA.dela=null;
+  MINA.sök=''; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar;
   document.getElementById('minaSok').value='';
   m.hidden=false;
   minaRita();
   await minaHämta();
-  setTimeout(()=>document.getElementById('minaSok')?.focus(),0);
+  if(MINA.fokusInbjudningar&&MINA.inbjudningar?.length){
+    setTimeout(()=>document.getElementById('minaInbjudningar')?.scrollIntoView({block:'start',behavior:'smooth'}),30);
+  }else setTimeout(()=>document.getElementById('minaSok')?.focus(),0);
 }
 function minaStäng(){ document.getElementById('minamodal').hidden=true; }
 async function minaHämta(){
   MINA.laddar=true;
   if(!MINA.lista) minaRita();
-  try{ MINA.lista=await ulRpc('ul_mina'); MINA.fel=null; }
+  try{
+    const [lista,inbjudningar]=await Promise.all([
+      ulRpc('ul_mina'),
+      ulRpc('ul_mina_delninginbjudningar').catch(e=>{ if(e.kod==='saknas') return []; throw e; })
+    ]);
+    MINA.lista=lista; MINA.inbjudningar=Array.isArray(inbjudningar)?inbjudningar:[]; MINA.fel=null;
+  }
   catch(e){ MINA.fel=e.kod==='saknas'?UL_FEL.saknas:e.message; }
   finally{ MINA.laddar=false; }
   minaRita();
@@ -11413,16 +11490,31 @@ function minaPost(d){
   const etikett=!ägare?`<span class="mina-etikett delad">Delat av ${ulEsc(d.agare)}</span>`
     :delat?`<span class="mina-etikett delad">Delat med ${d.medlemmar-1}</span>`:'';
   const dela=MINA.dela?.id===d.id?MINA.dela:null;
-  const delaPanel=!dela?'':`<div class="mina-dela" role="status">
-      <div class="mina-dela-topp"><b>Bjud in kollegor till ”${ulEsc(d.namn)}”</b>
+  const delaPanel=!dela?'':(()=>{
+    const larare=Array.isArray(dela.larare)?dela.larare:[];
+    const personer=dela.laddar?'<div class="ul-laddar">Hämtar lärare…</div>'
+      :larare.length?larare.map(x=>{
+        const status=x.status||'ledig';
+        const knapp=status==='medlem'?'<span class="ul-kollega-status">Har tillgång</span>'
+          :status==='vantar'?'<span class="ul-kollega-status skickad">Inbjuden</span>'
+          :`<button type="button" class="knapp liten primär" data-mina-bjud-larare="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">Bjud in</button>`;
+        return `<div class="ul-kollega"><span class="dr-person">${ulEsc(ulInitialer(x.namn))}</span>
+          <span class="ul-kollega-text"><b>${ulEsc(x.namn)}</b><span>${ulEsc(x.epost||'')}</span></span>${knapp}</div>`;
+      }).join(''):(dela.skola?`<span>Inga andra godkända konton hittades för ${ulEsc(dela.skola)}.</span>`:'<span>Din skola saknas på kontot. Du kan fortfarande dela med länk.</span>');
+    const lank=dela.lank;
+    return `<div class="mina-dela" role="status">
+      <div class="mina-dela-topp"><b>Dela ”${ulEsc(d.namn)}”</b>
         <button type="button" class="ul-textknapp" data-mina-dela-stang aria-label="Stäng">Stäng</button></div>
-      ${dela.fel?`<div class="ul-fel" style="margin:0">${ulEsc(dela.fel)}</div>`
-      :!dela.url?'<div class="ul-laddar">Skapar länk…</div>'
-      :`<div class="ul-länk"><input readonly value="${ulEsc(dela.url)}" aria-label="Inbjudningslänk" data-mina-dela-falt>
-          <button type="button" class="knapp primär liten" data-mina-dela-kopiera>${dela.kopierad?'Kopierad!':'Kopiera länk'}</button></div>
-        <span>Kod <b class="ul-kod">${ulEsc(dela.kod.replace(/(.{5})/,'$1-'))}</b> · gäller till ${ulEsc(ulTid(dela.giltig_till))}.
-          Kollegor med lärarkonto som öppnar länken kan redigera dokumentet tillsammans med dig.</span>`}
+      ${dela.fel?`<div class="ul-fel" style="margin:0">${ulEsc(dela.fel)}</div>`:''}
+      ${dela.skola?`<span class="mina-dela-skola">Lärare på ${ulEsc(dela.skola)}</span>`:''}
+      <div class="mina-kollegor">${personer}</div>
+      <div class="mina-dela-lankdel">
+        ${lank?`<div class="ul-länk"><input readonly value="${ulEsc(lank.url)}" aria-label="Inbjudningslänk" data-mina-dela-falt>
+            <button type="button" class="knapp tyst liten" data-mina-dela-kopiera>${dela.kopierad?'Kopierad!':'Kopiera länk'}</button></div>`
+          :'<button type="button" class="ul-textknapp" data-mina-dela-lank>Dela med länk i stället</button>'}
+      </div>
     </div>`;
+  })();
   return `<div class="mina-post${aktuell?' aktuell':''}${dela?' delar':''}">
     <div class="mina-huvud">
     <button type="button" class="mina-kort" data-mina-oppna="${ulEsc(d.id)}" style="--k:${ulEsc(färg)}"
@@ -11460,13 +11552,23 @@ function minaRita(){
   const prov=lista.filter(d=>d.typ==='prov');
   const övning=lista.filter(d=>d.typ!=='prov');
   const lokala=sparLasaAlla().length;
+  const inbjudningar=Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
+  const inbjudanHtml=!inbjudningar.length?'':`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
+      <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
+      <div class="mina-inbjudningar-lista">${inbjudningar.map(x=>{
+        const kurs=KURSER.find(k=>k.id===x.kurs);
+        const kursnamn=kurs?.titel||x.kurs||'Okänd kurs';
+        return `<div class="mina-inbjudan"><span class="dr-person aktiv">${ulEsc(ulInitialer(x.fran_namn||'?'))}</span>
+          <span class="mina-inbjudan-text"><b>${ulEsc(x.fran_namn||'En kollega')} vill dela ”${ulEsc(x.namn)}”</b><span>${ulEsc(kursnamn)} · ${x.antal_uppgifter||0} ${(x.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(minaTid(x.skapad))}</span></span>
+          <span class="mina-inbjudan-knappar"><button type="button" class="knapp liten primär" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="ja">Acceptera</button><button type="button" class="knapp liten tyst" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="nej">Avböj</button></span></div>`;
+      }).join('')}</div></section>`;
   const kolumn=(typ,rubrik,ikon,poster,tom)=>`<section class="mina-kolumn" aria-label="${rubrik}">
       <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span>
         <h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
       <div class="mina-lista">${poster.length?poster.map(minaPost).join('')
         :`<div class="mina-tom">${q?'<b>Inga träffar</b>':tom}</div>`}</div>
     </section>`;
-  el.innerHTML=`${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span>
+  el.innerHTML=`${inbjudanHtml}${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span>
       <button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
     <div class="mina-kolumner">
       ${kolumn('prov','Prov',UL_IKON_PROV,prov,'<b>Inga prov ännu</b>Välj Prov som dokumenttyp och tryck på Spara.')}
@@ -11477,27 +11579,60 @@ async function minaKlick(e){
   const öppna=e.target.closest('[data-mina-oppna]');
   const kopiera=e.target.closest('[data-mina-kopiera]');
   const radera=e.target.closest('[data-mina-radera]');
+  const inbjudanSvar=e.target.closest('[data-mina-inbjudan-svar]');
+  if(inbjudanSvar){
+    const acceptera=inbjudanSvar.dataset.svar==='ja';
+    inbjudanSvar.disabled=true;
+    try{
+      await ulRpc('ul_svara_delninginbjudan',{p_inbjudan:inbjudanSvar.dataset.minaInbjudanSvar,p_acceptera:acceptera});
+      await ulHämtaBehörighet(true).catch(()=>{});
+      await minaHämta();
+      ulMeddela(acceptera?'Inbjudan accepterad. Dokumentet finns nu på ditt konto.':'Inbjudan avböjd.');
+    }catch(err){ alert(err.message); inbjudanSvar.disabled=false; }
+    return;
+  }
   if(e.target.closest('[data-mina-flytt]')){ minaStäng(); kontoErbjudFlytt(true); return; }
   if(e.target.closest('[data-mina-dela-stang]')){ MINA.dela=null; minaRita(); return; }
   const kopieraLänk=e.target.closest('[data-mina-dela-kopiera]');
-  if(kopieraLänk&&MINA.dela?.url){
+  if(kopieraLänk&&MINA.dela?.lank?.url){
     const fält=kopieraLänk.parentElement.querySelector('[data-mina-dela-falt]');
-    try{ await navigator.clipboard.writeText(MINA.dela.url); }
+    try{ await navigator.clipboard.writeText(MINA.dela.lank.url); }
     catch(_){ fält?.select(); document.execCommand('copy'); }
     MINA.dela.kopierad=true; minaRita();
+    return;
+  }
+  const bjudLarare=e.target.closest('[data-mina-bjud-larare]');
+  if(bjudLarare&&MINA.dela){
+    bjudLarare.disabled=true;
+    try{
+      await ulRpc('ul_bjud_in_larare',{p_id:MINA.dela.id,p_user:bjudLarare.dataset.minaBjudLarare});
+      const x=MINA.dela.larare?.find(y=>y.user_id===bjudLarare.dataset.minaBjudLarare);
+      if(x) x.status='vantar';
+      ulMeddela(`Inbjudan skickad till ${bjudLarare.dataset.namn||'läraren'}.`);
+      minaRita();
+    }catch(err){ alert(err.message); bjudLarare.disabled=false; }
+    return;
+  }
+  const skapaLank=e.target.closest('[data-mina-dela-lank]');
+  if(skapaLank&&MINA.dela){
+    skapaLank.disabled=true;
+    try{
+      const r=await ulRpc('ul_skapa_inbjudan',{p_id:MINA.dela.id});
+      MINA.dela.lank={kod:r.kod,giltig_till:r.giltig_till,url:location.origin+APP_ROOT+'?dela='+r.kod};
+      minaRita();
+    }catch(err){ MINA.dela.fel=err.message; minaRita(); }
     return;
   }
   const delaKnapp=e.target.closest('[data-mina-dela]');
   if(delaKnapp){
     const id=delaKnapp.dataset.minaDela;
     if(MINA.dela?.id===id){ MINA.dela=null; minaRita(); return; }
-    const läge={id};
+    const läge={id,laddar:true,skola:null,larare:[],lank:null,kopierad:false};
     MINA.dela=läge; minaRita();
     try{
-      const r=await ulRpc('ul_skapa_inbjudan',{p_id:id});
-      Object.assign(läge,{kod:r.kod,giltig_till:r.giltig_till,url:location.origin+APP_ROOT+'?dela='+r.kod});
-      try{ await navigator.clipboard.writeText(läge.url); läge.kopierad=true; }catch(_){}
-    }catch(err){ läge.fel=err.message; }
+      const r=await ulRpc('ul_skola_larare',{p_id:id});
+      Object.assign(läge,{skola:r?.skola||null,larare:Array.isArray(r?.larare)?r.larare:[],laddar:false});
+    }catch(err){ läge.fel=err.message; läge.laddar=false; }
     if(MINA.dela===läge) minaRita();
     return;
   }
