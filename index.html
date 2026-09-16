@@ -4866,6 +4866,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .mina-etikett{display:inline-flex;align-items:center;gap:4px;padding:1px 7px;border-radius:999px;font-size:10.5px;
   font-weight:700;background:var(--canvas);border:1px solid var(--line);color:var(--ink-2)}
 .mina-etikett.delad{background:#EEF3FA;border-color:#D3DFEF;color:#2C4F80}
+.mina-etikett.skolbank{background:#F1F8F4;border-color:#CFE3D8;color:#285E43}
 .mina-huvud{position:relative}
 .mina-atg{position:absolute;right:8px;bottom:8px;display:flex;gap:2px;opacity:0;transition:opacity .15s}
 .mina-dela{display:grid;gap:7px;margin:0 10px 10px;padding:10px 11px;border-radius:10px;background:#f1f8f4;
@@ -4901,6 +4902,20 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   font-weight:600;color:var(--ink-2);cursor:pointer}
 .mina-atg button:hover{background:var(--sunken)}
 .mina-atg .radera{color:var(--ed-dark)}
+.mina-atg .skolbank.aktiv{background:#F1F8F4;color:#285E43}
+.mina-skolbank{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.mina-skolbank-rubrik{display:flex;align-items:center;gap:9px;margin-bottom:5px}
+.mina-skolbank-rubrik h3{margin:0;font-size:14.5px;letter-spacing:-.01em}
+.mina-skolbank-rubrik .mina-antal{margin-left:auto;min-width:22px;height:20px;padding:0 7px;border-radius:10px;display:grid;place-items:center;background:var(--canvas);border:1px solid var(--line);font-size:11px;font-weight:700;color:var(--ink-2)}
+.mina-skolbank-lead{margin:0 0 11px;font-size:11.8px;line-height:1.5;color:var(--muted)}
+.mina-skolbank-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mina-bankpost{display:flex;align-items:center;gap:11px;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+.mina-bankpost .mina-rygg{align-self:stretch;margin-left:-13px}
+.mina-banktext{display:grid;gap:3px;min-width:0;flex:1}
+.mina-banktext b{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mina-banktext span{font-size:11px;color:var(--muted)}
+.mina-bankpost .knapp{flex:none}
+@media(max-width:720px){.mina-skolbank-grid{grid-template-columns:1fr}}
 .mina-tom{padding:22px 14px;border:1px dashed var(--line);border-radius:12px;text-align:center;font-size:12.5px;
   line-height:1.5;color:var(--muted)}
 .mina-tom b{display:block;margin-bottom:2px;color:var(--ink-2)}
@@ -11436,10 +11451,10 @@ async function kontoFlyttaIn(){
   ulMeddela(`${klara.length} ${klara.length===1?'dokument är flyttat':'dokument är flyttade'} till kontot. Du hittar dem under Ladda.`);
 }
 
-/* ── Mina prov och övningsblad ──────────────────────────────────────────── */
+/* ── Mina prov, övningsblad och skolans gemensamma bank ────────────────── */
 const UL_IKON_PROV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg>';
 const UL_IKON_OVNING='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
-const MINA={lista:null,inbjudningar:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false};
+const MINA={lista:null,inbjudningar:null,bank:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false};
 
 function minaTid(iso){
   const d=new Date(iso); if(Number.isNaN(d.getTime())) return '';
@@ -11469,11 +11484,12 @@ async function minaHämta(){
   MINA.laddar=true;
   if(!MINA.lista) minaRita();
   try{
-    const [lista,inbjudningar]=await Promise.all([
+    const [lista,inbjudningar,bank]=await Promise.all([
       ulRpc('ul_mina'),
-      ulRpc('ul_mina_delninginbjudningar').catch(e=>{ if(e.kod==='saknas') return []; throw e; })
+      ulRpc('ul_mina_delninginbjudningar').catch(e=>{ if(e.kod==='saknas') return []; throw e; }),
+      ulRpc('ul_skolbank').catch(e=>{ if(e.kod==='saknas') return null; throw e; })
     ]);
-    MINA.lista=lista; MINA.inbjudningar=Array.isArray(inbjudningar)?inbjudningar:[]; MINA.fel=null;
+    MINA.lista=lista; MINA.inbjudningar=Array.isArray(inbjudningar)?inbjudningar:[]; MINA.bank=bank; MINA.fel=null;
   }
   catch(e){ MINA.fel=e.kod==='saknas'?UL_FEL.saknas:e.message; }
   finally{ MINA.laddar=false; }
@@ -11487,8 +11503,11 @@ function minaPost(d){
   const aktuell=DELNING.id===d.id&&AKTIV?.id===d.kurs;
   const delat=d.medlemmar>1;
   const ägare=d.roll==='agare';
-  const etikett=!ägare?`<span class="mina-etikett delad">Delat av ${ulEsc(d.agare)}</span>`
-    :delat?`<span class="mina-etikett delad">Delat med ${d.medlemmar-1}</span>`:'';
+  const etikett=[
+    !ägare?`<span class="mina-etikett delad">Delat av ${ulEsc(d.agare)}</span>`:'',
+    ägare&&delat?`<span class="mina-etikett delad">Delat med ${d.medlemmar-1}</span>`:'',
+    d.skolbank?`<span class="mina-etikett skolbank">Skolans bank</span>`:''
+  ].filter(Boolean).join('');
   const dela=MINA.dela?.id===d.id?MINA.dela:null;
   const delaPanel=!dela?'':(()=>{
     const larare=Array.isArray(dela.larare)?dela.larare:[];
@@ -11528,6 +11547,7 @@ function minaPost(d){
       </span>
     </button>
     <div class="mina-atg">
+      ${ägare?`<button type="button" class="skolbank${d.skolbank?' aktiv':''}" data-mina-skolbank="${ulEsc(d.id)}" data-delad="${d.skolbank?'1':'0'}" title="${d.skolbank?'Sluta dela med skolan':'Publicera en kopierbar mall för alla lärare på skolan'}">${d.skolbank?'Delad med alla':'Dela med alla'}</button>`:''}
       <button type="button" data-mina-dela="${ulEsc(d.id)}">Dela</button>
       <button type="button" data-mina-kopiera="${ulEsc(d.id)}">Duplicera</button>
       <button type="button" class="radera" data-mina-radera="${ulEsc(d.id)}">${ägare?'Ta bort':'Lämna'}</button>
@@ -11536,6 +11556,20 @@ function minaPost(d){
     ${delaPanel}
   </div>`;
 }
+function minaBankPost(d){
+  const kurs=KURSER.find(k=>k.id===d.kurs);
+  const spår=kurs?.spår?.find(x=>x.id===d.spar);
+  const färg=spår?.färg||kurs?.färg||'#8A8791';
+  const kursnamn=(kurs?.titel||d.kurs||'Okänd kurs')+(spår?` · ${spår.etikett||spår.id}`:'');
+  return `<div class="mina-bankpost" style="--k:${ulEsc(färg)}">
+    <span class="mina-rygg" aria-hidden="true"></span>
+    <span class="mina-banktext"><b>${ulEsc(d.namn)}</b>
+      <span>${ulEsc(kursnamn)} · ${d.antal_uppgifter||0} ${(d.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(d.agare||'Kollega')}</span>
+      <span>Ändrat ${ulEsc(minaTid(d.uppdaterad))}</span></span>
+    <button type="button" class="knapp liten tyst" data-mina-bank-kopiera="${ulEsc(d.id)}" data-namn="${ulEsc(d.namn)}">Skapa kopia</button>
+  </div>`;
+}
+
 function minaRita(){
   const el=document.getElementById('minaInnehall');
   if(!el||document.getElementById('minamodal').hidden) return;
@@ -11553,6 +11587,20 @@ function minaRita(){
   const övning=lista.filter(d=>d.typ!=='prov');
   const lokala=sparLasaAlla().length;
   const inbjudningar=Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
+  const bankObj=MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
+  const bankLista=(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]).filter(d=>{
+    if(!q) return true;
+    const kurs=KURSER.find(k=>k.id===d.kurs);
+    return [d.namn,d.agare,kurs?.titel,d.kurs,d.spar].some(t=>String(t||'').toLowerCase().includes(q));
+  });
+  const bankHtml=!bankObj?'':`<section class="mina-skolbank" aria-label="Skolans gemensamma bank">
+      <div class="mina-skolbank-rubrik"><span class="mina-ikon ovning" aria-hidden="true">${UL_IKON_OVNING}</span>
+        <h3>Skolans gemensamma bank${bankObj.skola?' · '+ulEsc(bankObj.skola):''}</h3><span class="mina-antal">${bankLista.length}</span></div>
+      <p class="mina-skolbank-lead">Här visas prov och övningsblad som kollegor har delat med hela skolan. Du arbetar alltid vidare i en egen kopia; originalet kan bara redigeras av dem som fått personlig delning.</p>
+      ${!bankObj.skola?'<div class="mina-tom"><b>Skola saknas på kontot</b>Lägg till skola på lärarkontot för att använda den gemensamma banken.</div>'
+        :bankLista.length?`<div class="mina-skolbank-grid">${bankLista.map(minaBankPost).join('')}</div>`
+        :`<div class="mina-tom">${q?'<b>Inga träffar i skolbanken</b>':'<b>Skolbanken är tom</b>När en kollega väljer Dela med alla visas dokumentet här.'}</div>`}
+    </section>`;
   const inbjudanHtml=!inbjudningar.length?'':`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
       <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
       <div class="mina-inbjudningar-lista">${inbjudningar.map(x=>{
@@ -11573,7 +11621,8 @@ function minaRita(){
     <div class="mina-kolumner">
       ${kolumn('prov','Prov',UL_IKON_PROV,prov,'<b>Inga prov ännu</b>Välj Prov som dokumenttyp och tryck på Spara.')}
       ${kolumn('ovning','Övningsblad',UL_IKON_OVNING,övning,'<b>Inga övningsblad ännu</b>Tryck på Spara när du byggt ett övningsblad.')}
-    </div>`;
+    </div>
+    ${bankHtml}`;
 }
 async function minaKlick(e){
   const öppna=e.target.closest('[data-mina-oppna]');
@@ -11592,6 +11641,31 @@ async function minaKlick(e){
     return;
   }
   if(e.target.closest('[data-mina-flytt]')){ minaStäng(); kontoErbjudFlytt(true); return; }
+  const skolbankKnapp=e.target.closest('[data-mina-skolbank]');
+  if(skolbankKnapp){
+    const id=skolbankKnapp.dataset.minaSkolbank;
+    const delad=skolbankKnapp.dataset.delad==='1';
+    const d=MINA.lista?.find(x=>x.id===id);
+    if(delad&&!confirm(`Sluta dela ”${d?.namn||'dokumentet'}” med alla lärare på skolan? Kollegors redan skapade kopior påverkas inte.`)) return;
+    skolbankKnapp.disabled=true;
+    try{
+      const r=await ulRpc('ul_dela_med_skola',{p_id:id,p_dela:!delad});
+      await minaHämta();
+      ulMeddela(!delad?`Delat med alla lärare${r?.skola?' på '+r.skola:''}. De kan nu skapa egna kopior.`:'Dokumentet är borttaget från skolans gemensamma bank.');
+    }catch(err){ alert(err.message); skolbankKnapp.disabled=false; }
+    return;
+  }
+  const bankKopiera=e.target.closest('[data-mina-bank-kopiera]');
+  if(bankKopiera){
+    bankKopiera.disabled=true;
+    const gammal=bankKopiera.textContent; bankKopiera.textContent='Skapar…';
+    try{
+      const r=await ulRpc('ul_kopiera_fran_skolbank',{p_id:bankKopiera.dataset.minaBankKopiera});
+      await minaHämta();
+      ulMeddela(`Kopian ”${r?.namn||bankKopiera.dataset.namn||'Dokument'}” finns nu bland dina dokument.`);
+    }catch(err){ alert(err.message); bankKopiera.disabled=false; bankKopiera.textContent=gammal; }
+    return;
+  }
   if(e.target.closest('[data-mina-dela-stang]')){ MINA.dela=null; minaRita(); return; }
   const kopieraLänk=e.target.closest('[data-mina-dela-kopiera]');
   if(kopieraLänk&&MINA.dela?.lank?.url){
