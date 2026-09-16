@@ -11561,12 +11561,16 @@ function minaBankPost(d){
   const spår=kurs?.spår?.find(x=>x.id===d.spar);
   const färg=spår?.färg||kurs?.färg||'#8A8791';
   const kursnamn=(kurs?.titel||d.kurs||'Okänd kurs')+(spår?` · ${spår.etikett||spår.id}`:'');
+  const ägareText=d.egen?'Ditt original':(d.agare||'Kollega');
+  const åtgärd=d.egen
+    ? `<button type="button" class="knapp liten tyst" data-mina-oppna="${ulEsc(d.id)}">Öppna original</button>`
+    : `<button type="button" class="knapp liten tyst" data-mina-bank-kopiera="${ulEsc(d.id)}" data-namn="${ulEsc(d.namn)}">Skapa kopia</button>`;
   return `<div class="mina-bankpost" style="--k:${ulEsc(färg)}">
     <span class="mina-rygg" aria-hidden="true"></span>
     <span class="mina-banktext"><b>${ulEsc(d.namn)}</b>
-      <span>${ulEsc(kursnamn)} · ${d.antal_uppgifter||0} ${(d.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(d.agare||'Kollega')}</span>
+      <span>${ulEsc(kursnamn)} · ${d.antal_uppgifter||0} ${(d.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(ägareText)}</span>
       <span>Ändrat ${ulEsc(minaTid(d.uppdaterad))}</span></span>
-    <button type="button" class="knapp liten tyst" data-mina-bank-kopiera="${ulEsc(d.id)}" data-namn="${ulEsc(d.namn)}">Skapa kopia</button>
+    ${åtgärd}
   </div>`;
 }
 
@@ -11596,10 +11600,10 @@ function minaRita(){
   const bankHtml=!bankObj?'':`<section class="mina-skolbank" aria-label="Skolans gemensamma bank">
       <div class="mina-skolbank-rubrik"><span class="mina-ikon ovning" aria-hidden="true">${UL_IKON_OVNING}</span>
         <h3>Skolans gemensamma bank${bankObj.skola?' · '+ulEsc(bankObj.skola):''}</h3><span class="mina-antal">${bankLista.length}</span></div>
-      <p class="mina-skolbank-lead">Här visas prov och övningsblad som kollegor har delat med hela skolan. Du arbetar alltid vidare i en egen kopia; originalet kan bara redigeras av dem som fått personlig delning.</p>
+      <p class="mina-skolbank-lead">Här visas prov och övningsblad som har delats med hela skolan, även dina egna. Kollegor arbetar vidare i egna kopior; originalet kan bara redigeras av ägaren och dem som fått personlig delning.</p>
       ${!bankObj.skola?'<div class="mina-tom"><b>Skola saknas på kontot</b>Lägg till skola på lärarkontot för att använda den gemensamma banken.</div>'
         :bankLista.length?`<div class="mina-skolbank-grid">${bankLista.map(minaBankPost).join('')}</div>`
-        :`<div class="mina-tom">${q?'<b>Inga träffar i skolbanken</b>':'<b>Skolbanken är tom</b>När en kollega väljer Dela med alla visas dokumentet här.'}</div>`}
+        :`<div class="mina-tom">${q?'<b>Inga träffar i skolbanken</b>':'<b>Skolbanken är tom</b>När någon på skolan väljer Dela med alla visas dokumentet här.'}</div>`}
     </section>`;
   const inbjudanHtml=!inbjudningar.length?'':`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
       <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
