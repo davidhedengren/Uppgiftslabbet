@@ -4752,63 +4752,145 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .ul-ansokan-knappar{display:flex;gap:6px;flex:none}
 @media (max-width:560px){ .ul-rad,.ul-länk{flex-direction:column} .ul-ansokan{flex-direction:column;align-items:stretch} }
 @media print{ .delningsrad,.ul-toast,#delamodal{display:none!important} }
+
+/* ── Inloggningsgrinden: konton ── */
+.grind-vy[hidden]{display:none!important}
+.grind-vy > p{margin:0 0 20px;font-size:14px;line-height:1.5;color:var(--muted)}
+.grind-vy h1{outline:none}
+.grind-knappar{display:grid;gap:10px}
+.grind-knapp{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:48px;padding:0 18px;
+  border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);cursor:pointer;
+  font:600 14.5px/1 var(--ui);letter-spacing:-.01em;transition:background .15s,border-color .15s,box-shadow .15s}
+.grind-knapp:hover{background:var(--canvas);border-color:color-mix(in srgb,var(--ink) 22%,transparent)}
+.grind-knapp:disabled{opacity:.6;cursor:progress}
+.grind-knapp svg{width:19px;height:19px;flex:none}
+.grind-knapp.primär{border-color:transparent;color:#fff;
+  background:linear-gradient(180deg,color-mix(in oklab,var(--ed) 92%,#fff),var(--ed))}
+.grind-knapp.primär:hover{background:var(--ed-dark)}
+.grind-form{display:grid;gap:4px;margin-bottom:16px}
+.grind-form label{display:block;margin:10px 0 6px;font-size:12px;font-weight:600;color:var(--ink-2)}
+.grind-form label:first-child{margin-top:0}
+.grind-form input{height:46px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--canvas);
+  color:var(--ink);font:inherit;font-size:15px;outline:none;min-width:0}
+.grind-form input:focus{background:#fff;border-color:var(--ed);box-shadow:0 0 0 4px color-mix(in oklab,var(--ed) 16%,transparent)}
+.grind-par{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grind-par > div{display:grid}
+.grind-lank{display:inline-block;margin:14px 0 0;padding:4px 0;border:0;background:none;cursor:pointer;
+  font:inherit;font-size:13px;font-weight:600;color:var(--ed-dark)}
+.grind-lank:hover{text-decoration:underline}
+.grind-fot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 14px;margin-top:18px;
+  padding-top:14px;border-top:1px solid var(--line-2,#EFEEF0);font-size:12.5px;color:var(--muted)}
+.grind-fot .grind-lank{margin:0}
+.grind-eller{display:flex;align-items:center;gap:10px;margin:4px 0;font-size:12px;color:var(--muted)}
+.grind-eller::before,.grind-eller::after{content:"";flex:1;height:1px;background:var(--line)}
+.grind-fel{margin:0 0 14px;padding:10px 12px;border-radius:10px;background:var(--ed-tint);color:var(--ed-dark);
+  font-size:13px;line-height:1.45}
+.grind-info{margin:0 0 14px;padding:11px 13px;border-radius:12px;background:var(--canvas);border:1px solid var(--line);
+  font-size:13px;line-height:1.5;color:var(--ink-2)}
+.grind-info b{color:var(--ink)}
+.grind-info.ok{background:#f1f8f4;border-color:#cfe3d8}
+.grind-snurr{display:flex;align-items:center;gap:10px;margin:4px 0 6px;color:var(--muted);font-size:14px}
+.grind-snurr::before{content:"";width:14px;height:14px;border-radius:50%;border:2px solid var(--line);
+  border-top-color:var(--ed);animation:kvspin .7s linear infinite}
+@media (max-width:480px){ .grind-par{grid-template-columns:1fr} }
+
+/* ── Kontomenyn ── */
+.konto-plats{position:relative;flex:none}
+.konto-plats:empty{display:none}
+.konto-knapp{display:inline-flex;align-items:center;gap:8px;max-width:220px;padding:5px 10px 5px 5px!important;
+  border:1px solid var(--line)!important;border-radius:999px!important;background:var(--surface)!important;
+  color:var(--ink)!important;cursor:pointer;font:600 12.5px/1 var(--ui)}
+.konto-knapp:hover{background:var(--canvas)!important}
+.konto-knapp .konto-namn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.konto-knapp .ul-bricka{margin-left:-2px}
+.konto-av{width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:10.5px;
+  font-weight:700;letter-spacing:.02em;color:#fff;background:var(--ed)}
+.konto-av.lokal{background:var(--muted)}
+.konto-meny{position:absolute;right:0;top:calc(100% + 8px);z-index:950;width:280px;padding:8px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 48px rgba(20,22,28,.18)}
+.konto-meny[hidden]{display:none}
+.konto-meny-huvud{display:grid;gap:3px;padding:8px 10px 10px;border-bottom:1px solid var(--line-2,#EFEEF0);margin-bottom:6px}
+.konto-meny-huvud b{font-size:13.5px;color:var(--ink);overflow-wrap:anywhere}
+.konto-meny-huvud span{font-size:12px;color:var(--muted);line-height:1.4;overflow-wrap:anywhere}
+.konto-meny button{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:9px 10px;
+  border:0;border-radius:9px;background:none;color:var(--ink);cursor:pointer;font:500 13px/1.2 var(--ui);text-align:left}
+.konto-meny button:hover{background:var(--canvas)}
+@media (max-width:760px){ .konto-knapp .konto-namn{display:none} .konto-knapp{padding:4px!important} }
+
+/* ── Sparat på kontot ── */
+.delningsrad.privat .dr-ikon{background:var(--canvas);color:var(--ink-2)}
+.sparpost-knappar .radera{color:var(--ed-dark)}
+.spar-kontoinfo{margin:12px 0 0;font-size:12px;line-height:1.45;color:var(--muted)}
+.spar-flytt{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px;padding:10px 12px;
+  border:1px solid var(--line);border-radius:12px;background:var(--canvas);font-size:12.5px;color:var(--ink-2)}
+.ul-tillfalligt{display:grid;gap:6px;margin:6px 0 10px;padding:11px 13px;border-radius:12px;background:#f1f8f4;
+  border:1px solid #cfe3d8;font-size:12.5px;color:var(--ink-2)}
+.ul-tillfalligt .ul-länk input{font-size:14px;letter-spacing:.04em;color:var(--ink)}
 </style>
 </head>
 <body class="password-locked">
 
-<section class="password-gate" id="passwordGate" aria-labelledby="passwordTitle">
-  <form class="password-card" id="passwordForm">
+<section class="password-gate" id="passwordGate" aria-labelledby="grindTitel">
+  <div class="password-card">
     <div class="password-brand">
       <img class="password-full-logo" src="logo.jpg" alt="Uppgiftslabbet – Erik Dahlbergsgymnasiets uppgiftsbank i matematik och fysik">
     </div>
-    <h1 id="passwordTitle">Ange lösenord</h1>
-    <p>Skriv lösenordet för att öppna uppgiftsbanken.</p>
-    <label for="passwordInput">Lösenord</label>
-    <div class="password-row">
-      <input id="passwordInput" name="password" type="password" autocomplete="current-password" required autofocus>
-      <button type="submit">Öppna sidan</button>
+    <div class="grind-vy" id="grindInnehall" aria-live="polite">
+      <h1 id="grindTitel">Uppgiftslabbet</h1>
+      <p>Kontrollerar inloggningen…</p>
     </div>
-    <p class="password-error" id="passwordError" role="alert" aria-live="polite"></p>
-  </form>
+    <form class="grind-vy" id="passwordForm" hidden>
+      <h1 id="passwordTitle">Ange lösenord</h1>
+      <p>Med det gemensamma lösenordet sparas dokumenten bara i den här webbläsaren.</p>
+      <label for="passwordInput">Lösenord</label>
+      <div class="password-row">
+        <input id="passwordInput" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Öppna sidan</button>
+      </div>
+      <p class="password-error" id="passwordError" role="alert" aria-live="polite"></p>
+      <button type="button" class="grind-lank" id="grindTillKonto">← Logga in med konto i stället</button>
+    </form>
+  </div>
 </section>
 
 <script>
+/* ── Inloggningsgrinden ──
+   Appen öppnas med ett godkänt lärarkonto (se KONTO längst ned i filen).
+   Det gemensamma lösenordet finns kvar som tillfällig reserv så länge
+   UL_TILLAT_LOSENORD är true. Sätt den till false när alla har konton. */
+const UL_TILLAT_LOSENORD = true;
+const UL_LOSENORD_KEY = 'ed-uppgiftsbank-auth-v1';
+let ulGrindLös = null;
+/* Löses med 'konto' eller 'losenord' när sidan öppnas första gången. */
+const UL_GRIND = new Promise(ok => { ulGrindLös = ok; });
+function ulLösenordUpplåst(){
+  if(!UL_TILLAT_LOSENORD) return false;
+  try{ return sessionStorage.getItem(UL_LOSENORD_KEY)==='1'; }catch{ return false; }
+}
 (() => {
-  const SESSION_KEY = 'ed-uppgiftsbank-auth-v1';
   const PASSWORD_HASH = 'e745af8533088ae5a3fd104c17f2d4434e51c0372c1f0b95910f6506814bbfed';
-  const gate = document.getElementById('passwordGate');
   const form = document.getElementById('passwordForm');
   const input = document.getElementById('passwordInput');
   const error = document.getElementById('passwordError');
 
-  function arUpplast(){
-    try{return sessionStorage.getItem(SESSION_KEY)==='1'}catch{return false}
-  }
-  function markeraUpplast(){
-    try{sessionStorage.setItem(SESSION_KEY,'1')}catch{}
-  }
-  function oppnaSidan(){
-    document.body.classList.remove('password-locked');
-    gate.hidden = true;
-  }
   async function sha256(text){
     const data = new TextEncoder().encode(text.normalize('NFC'));
     const digest = await crypto.subtle.digest('SHA-256',data);
     return Array.from(new Uint8Array(digest),byte => byte.toString(16).padStart(2,'0')).join('');
   }
-
-  if(arUpplast()){
-    oppnaSidan();
-    return;
-  }
-
+  document.getElementById('grindTillKonto').addEventListener('click',() => {
+    form.hidden = true;
+    document.getElementById('grindInnehall').hidden = false;
+  });
   form.addEventListener('submit',async event => {
     event.preventDefault();
     error.textContent = '';
+    if(!UL_TILLAT_LOSENORD) return;
     try{
       if(await sha256(input.value)===PASSWORD_HASH){
-        markeraUpplast();
-        oppnaSidan();
+        try{ sessionStorage.setItem(UL_LOSENORD_KEY,'1'); }catch{}
+        input.value = '';
+        if(typeof grindÖppna==='function') grindÖppna('losenord');
       }else{
         input.value = '';
         error.textContent = 'Fel lösenord. Försök igen.';
@@ -4828,6 +4910,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
       <div class="kv-brand kv-brand-logo">
         <img class="kv-full-logo" src="logo.jpg" alt="Uppgiftslabbet – Erik Dahlbergsgymnasiets uppgiftsbank i matematik och fysik">
       </div>
+      <div class="konto-plats" data-konto-plats></div>
     </header>
 
     <section class="kv-designhero" aria-label="Introduktion">
@@ -4887,6 +4970,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
     Byt kurs
   </button>
   <button class="knapp tyst" id="rensaAllt">Börja om</button>
+  <div class="konto-plats" data-konto-plats></div>
 </header>
 
 <div class="arbetsyta" hidden>
@@ -5492,23 +5576,37 @@ function sparRensaUtkast(id){
   delete karta[id];
   try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta));}catch(e){}
 }
+/* Medan kursens utkast hämtas från kontot skrivs inget, så att en tom
+   arbetsyta inte hinner ersätta utkastet lokalt eller på kontot. */
+let sparÅterställerKurs=null;
+const sparUtkastKanon=d=>{
+  const x={...(d||{}),updatedAt:null};
+  return typeof delningKanon==='function'?delningKanon(x):JSON.stringify(x);
+};
 function sparAutosparaNu(){
   clearTimeout(sparTimer);
   if(!AKTIV) return;
+  if(sparÅterställerKurs===AKTIV.id) return;
   const draft={
     version:2,activeSaveId:AKTIV_SPAR_ID,course:AKTIV.id,track:state.spår||null,
     settings:sparInstallningar(),
     tasks:state.blad.map((x,i)=>({bankId:x.id||null,order:i,snapshot:sparSnapshotUppgift(x)})),
     shared:(typeof delningUtkastInfo==='function'?delningUtkastInfo():null),
+    konto:(typeof kontoId==='function'?kontoId():null),
     updatedAt:new Date().toISOString()
   };
-  const karta=sparLasaUtkast(); karta[AKTIV.id]=draft;
+  const karta=sparLasaUtkast();
+  const förra=karta[AKTIV.id];
+  const oförändrat=Boolean(förra&&förra.updatedAt&&sparUtkastKanon(förra)===sparUtkastKanon(draft));
+  if(oförändrat) draft.updatedAt=förra.updatedAt;
+  karta[AKTIV.id]=draft;
   try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta));}
   catch(e){
     /* Är lagringen full offras övriga kursers utkast hellre än det pågående. */
     try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify({[AKTIV.id]:draft}));}
     catch(e2){console.warn('Autosparning kunde inte genomföras',e2);}
   }
+  if(!oförändrat&&typeof kontoUtkastÄndrat==='function') kontoUtkastÄndrat(AKTIV.id);
   if(typeof delningLokalAndring==='function') delningLokalAndring();
 }
 /* Töm arbetsytan och börja om i den aktuella kursen. */
@@ -5520,23 +5618,61 @@ function sparNyttDokument(){
   if(typeof provAterstallDelar==='function') provAterstallDelar();
   sparRensaUtkast(AKTIV.id);
   rita(); ritaBlad();
+  sparAutosparaNu();
   sparStatus('Nytt dokument');
 }
 /* Återställ kursens pågående dokument när kursen öppnas igen. */
 async function sparAterstallUtkast(kurs){
-  const d=sparUtkastForKurs(kurs?.id);
-  if(!d || !Array.isArray(d.tasks) || !d.tasks.length) return;
+  const id=kurs?.id; if(!id) return;
+  const lokalt=sparUtkastForKurs(id);   /* läses innan något hinner skriva över det */
+  sparÅterställerKurs=id;
+  let d=null;
+  try{
+    const läge=await UL_GRIND;
+    const konto=läge==='konto'&&typeof kontoId==='function'?kontoId():null;
+    /* Ett utkast som tillhör ett annat konto på samma dator används inte. */
+    if(lokalt&&(!lokalt.konto||lokalt.konto===konto)) d=lokalt;
+    if(konto&&typeof kontoHämtaUtkast==='function'){
+      const fjärr=await kontoHämtaUtkast(id);
+      const tid=x=>Date.parse(x?.updatedAt||'')||0;
+      if(fjärr&&(!d||tid(fjärr)>tid(d))){
+        d=fjärr;
+        const karta=sparLasaUtkast(); karta[id]=fjärr;
+        try{ localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta)); }catch(_){}
+      }
+    }
+  }finally{
+    if(sparÅterställerKurs===id) sparÅterställerKurs=null;
+  }
+  /* Kursen kan ha bytts, eller läraren hunnit börja på något nytt under tiden. */
+  if(AKTIV?.id!==id) return;
+  if(state.blad.length){ sparAutosparaNu(); return; }
+  if(!d || !Array.isArray(d.tasks) || !d.tasks.length){ sparAutosparaNu(); return; }
   await sparLaddaDokument(d,{manuell:false});
 }
 function sparSchemalaggAutospar(){ clearTimeout(sparTimer); sparTimer=setTimeout(sparAutosparaNu,350); }
 function sparStangModal(){ $('#sparmodal').hidden=true; }
 function sparOppnaSpara(){
   if(!AKTIV) return;
-  $('#sparmodalTitel').textContent=AKTIV_SPAR_ID?'Spara ändringar':'Spara dokument';
-  $('#sparmodalText').textContent=AKTIV_SPAR_ID?'Det sparade dokumentet uppdateras.':'Dokumentet sparas i den här webbläsaren.';
+  const påKonto=typeof kontoAktivt==='function'&&kontoAktivt();
+  const kopplat=påKonto&&typeof DELNING!=='undefined'&&Boolean(DELNING.id);
+  $('#sparmodalTitel').textContent=kopplat?'Sparat på kontot':påKonto?'Spara på kontot':AKTIV_SPAR_ID?'Spara ändringar':'Spara dokument';
+  $('#sparmodalText').textContent=kopplat
+    ?(DELNING.medlemmar>1?'Ändringarna sparas automatiskt och syns för kollegorna.':'Ändringarna sparas automatiskt.')
+    :påKonto?'Du kommer åt dokumentet från vilken dator som helst.'
+    :AKTIV_SPAR_ID?'Det sparade dokumentet uppdateras.':'Dokumentet sparas i den här webbläsaren.';
+  $('#sparBekrafta').textContent=kopplat?'Byt namn':'Spara';
+  $('#sparSomKopia').hidden=!kopplat;
+  const info=$('#sparKontoInfo');
+  if(info){
+    info.hidden=!påKonto;
+    info.textContent=kopplat
+      ?'Vill du behålla det här dokumentet som det är och fortsätta ändra i en ny version, välj Spara som kopia.'
+      :'Efter att du sparat sparas ändringarna automatiskt. Tidigare versioner finns kvar under Dela.';
+  }
   $('#sparmodalSpara').hidden=false; $('#sparmodalLadda').hidden=true; $('#sparmodalFot').hidden=false;
   const current=sparLasaAlla().find(x=>x.id===AKTIV_SPAR_ID);
-  $('#sparnamnInput').value=current?.name||($('#bTitel').value||'').trim()||'Dokument';
+  $('#sparnamnInput').value=(kopplat?DELNING.namn:current?.name)||($('#bTitel').value||'').trim()||'Dokument';
   $('#sparmodal').hidden=false;
   setTimeout(()=>{$('#sparnamnInput').focus();$('#sparnamnInput').select();},0);
 }
@@ -5557,11 +5693,16 @@ function sparDuplicera(id){
 function sparRenderLista(){
   const list=$('#sparlista');
   const docs=sparLasaAlla().sort((a,b)=>String(b.updatedAt).localeCompare(String(a.updatedAt)));
+  const påKonto=typeof kontoAktivt==='function'&&kontoAktivt();
+  const rubrik=$('#sparlistaRubrik');
+  if(rubrik) rubrik.hidden=påKonto&&!docs.length;
   if(!docs.length){
-    list.innerHTML='<div class="spartomt"><strong>Inga sparade dokument ännu</strong><span>Spara ett prov eller övningsblad så visas det här.</span></div>'; return;
+    list.innerHTML=påKonto?'':'<div class="spartomt"><strong>Inga sparade dokument ännu</strong><span>Spara ett prov eller övningsblad så visas det här.</span></div>'; return;
   }
   const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  list.innerHTML=docs.map(d=>{
+  const flytt=påKonto?`<div class="spar-flytt"><span>Dokumenten nedan finns bara i den här webbläsaren.</span>
+    <button type="button" class="knapp liten primär" data-spar-flytta>Flytta in på kontot</button></div>`:'';
+  list.innerHTML=flytt+docs.map(d=>{
     const kurs=KURSER.find(k=>k.id===d.course), typ=d.kind==='prov'?'Prov':'Övningsblad';
     const sp=d.track?` · ${esc(d.track)}`:'', antal=Array.isArray(d.tasks)?d.tasks.length:0;
     return `<div class="sparpost">
@@ -5577,10 +5718,14 @@ function sparRenderLista(){
   $$('[data-spar-ladda]',list).forEach(b=>b.addEventListener('click',()=>sparLaddaId(b.dataset.sparLadda)));
   $$('[data-spar-kopiera]',list).forEach(b=>b.addEventListener('click',()=>sparDuplicera(b.dataset.sparKopiera)));
   $$('[data-spar-radera]',list).forEach(b=>b.addEventListener('click',()=>sparRadera(b.dataset.sparRadera)));
+  list.querySelector('[data-spar-flytta]')?.addEventListener('click',()=>{ sparStangModal(); kontoErbjudFlytt(true); });
 }
 function sparOppnaLadda(){
+  const påKonto=typeof kontoAktivt==='function'&&kontoAktivt();
   $('#sparmodalTitel').textContent='Öppna dokument';
-  $('#sparmodalText').textContent='Delade dokument och dokument sparade i den här webbläsaren.';
+  $('#sparmodalText').textContent=påKonto?'Dina dokument och dokument som kollegor delat med dig.':'Dokument sparade i den här webbläsaren.';
+  const kontoRubrik=$('#delningListaRubrik');
+  if(kontoRubrik) kontoRubrik.textContent=påKonto?'På ditt konto':'Konto';
   $('#sparmodalSpara').hidden=true; $('#sparmodalLadda').hidden=false; $('#sparmodalFot').hidden=true;
   sparRenderLista(); $('#sparmodal').hidden=false;
   if(typeof delningRitaLista==='function') delningRitaLista();
@@ -8535,13 +8680,28 @@ function initSparaLaddaUI(){
   ladda.addEventListener('click',sparOppnaLadda);
   stang.addEventListener('click',sparStangModal);
   avbryt.addEventListener('click',sparStangModal);
-  bekrafta.addEventListener('click',()=>{
+  bekrafta.addEventListener('click',async()=>{
     try{
       const namn=(namnInput.value||'').trim();
       if(!namn){namnInput.focus();return;}
+      if(typeof kontoAktivt==='function'&&kontoAktivt()){
+        bekrafta.disabled=true;
+        try{ await kontoSpara(namn); }finally{ bekrafta.disabled=false; }
+        sparStangModal();
+        return;
+      }
       sparSparaManuellt(namn);
       sparStangModal();
     }catch(e){}
+  });
+  $('#sparSomKopia')?.addEventListener('click',async e=>{
+    const k=e.currentTarget;
+    const namn=(namnInput.value||'').trim();
+    if(!namn){namnInput.focus();return;}
+    k.disabled=true;
+    try{ await kontoSpara(namn,{kopia:true}); sparStangModal(); }
+    catch(_){}
+    finally{ k.disabled=false; }
   });
   namnInput.addEventListener('keydown',e=>{
     if(e.key==='Enter'){e.preventDefault();bekrafta.click();}
@@ -8583,8 +8743,8 @@ const DIREKTKURS=kursFrånAdress();
 ritaKursval();
 
 /* Direktlänkar som /ma1/ och /fysik2/ öppnar samma kurs som ett klick på
-   motsvarande kurskort. Lösenordsgrinden ligger kvar ovanpå tills sessionen
-   är upplåst, så direktlänken kringgår inte lösenordsskyddet. */
+   motsvarande kurskort. Inloggningsgrinden ligger kvar ovanpå tills kontot
+   är godkänt, så direktlänken kringgår inte inloggningen. */
 if(DIREKTKURS){
   requestAnimationFrame(()=>{
     const kort=document.querySelector(`.kurskort[data-kurs="${DIREKTKURS.id}"]`);
@@ -8611,18 +8771,20 @@ if(DIREKTKURS){
           <label for="sparnamnInput">Namn på dokumentet</label>
           <input id="sparnamnInput" autocomplete="off" maxlength="100">
         </div>
+        <p class="spar-kontoinfo" id="sparKontoInfo" hidden></p>
       </div>
       <div id="sparmodalLadda" hidden>
         <div id="delningListaSektion" hidden>
-          <div class="sparlista-rubrik">Delade med kollegor</div>
+          <div class="sparlista-rubrik" id="delningListaRubrik">På ditt konto</div>
           <div class="sparlista" id="delningLista"></div>
         </div>
-        <div class="sparlista-rubrik">Sparade i den här webbläsaren</div>
+        <div class="sparlista-rubrik" id="sparlistaRubrik">Sparade i den här webbläsaren</div>
         <div class="sparlista" id="sparlista"></div>
       </div>
     </div>
     <div class="sparmodal-fot" id="sparmodalFot">
       <button class="knapp tyst" id="sparAvbryt" type="button">Avbryt</button>
+      <button class="knapp tyst" id="sparSomKopia" type="button" hidden>Spara som kopia</button>
       <button class="knapp primär" id="sparBekrafta" type="button">Spara</button>
     </div>
   </div>
@@ -9307,6 +9469,7 @@ const UL_URL='https://lynobdhncyhnogiafsdb.supabase.co';
 const UL_NYCKEL='sb_publishable_Goz662Lr8mb0-h3J6GzdKQ_v8Zq4apt';   /* publik nyckel; behörigheter ligger i databasen */
 const UL_SESSION_KEY='uppgiftslabbet-delning-session-v1';
 const UL_INTERVALL=4000;
+const UL_INTERVALL_PRIVAT=15000;   /* dokument som bara du har: mer sällan */
 
 const UL_FEL={
   ej_inloggad:'Du behöver logga in för att dela dokument.',
@@ -9324,13 +9487,17 @@ const UL_FEL={
   bara_agaren:'Bara den som skapade det delade dokumentet kan göra det.',
   agare_kan_inte_lamna:'Du äger dokumentet och kan inte lämna det. Radera det i stället.',
   ogiltigt_namn:'Ange ett namn.',
+  eget_konto:'Byt ditt eget lösenord via kontomenyn.',
+  kort_losenord:'Lösenordet måste ha minst 8 tecken.',
+  langt_losenord:'Lösenordet får ha högst 72 tecken.',
+  inget_losenord:'Kontot loggar in med Google och har inget lösenord.',
   saknas:'Delning är inte installerad i databasen ännu.',
   natverk:'Ingen kontakt med servern. Kontrollera internetanslutningen.'
 };
 
 const DELNING={id:null,namn:'',roll:null,kurs:null,revision:null,bas:null,synkad:null,
   upptagen:false,igen:false,timer:null,poll:null,aktiva:[],fel:null,felAntal:0,
-  skickar:false,senast:null,senastAv:null};
+  skickar:false,senast:null,senastAv:null,medlemmar:null,senastStatus:0};
 let ulSession=null;
 let ulInloggningsfel=null;
 
@@ -9470,10 +9637,10 @@ async function ulTaEmotInloggning(){
     if(r.ok){ s.user=await r.json(); ulSparaSession(s); }
   }catch(_){}
 }
-function ulLoggaIn(){
+function ulLoggaIn({dela=false}={}){
   try{
     if(AKTIV) sparAutosparaNu();
-    sessionStorage.setItem('ul-efter-inloggning',JSON.stringify({dela:true}));
+    if(dela) sessionStorage.setItem('ul-efter-inloggning',JSON.stringify({dela:true}));
   }catch(_){}
   /* Tillbaka till appens rot med kursen i adressen, så att kursen och dess
      utkast öppnas igen. Adressen måste finnas bland Supabase Redirect URLs. */
@@ -9481,22 +9648,25 @@ function ulLoggaIn(){
   location.href=UL_URL+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(retur);
 }
 async function ulLoggaUt(){
-  let vilande=null;
-  if(DELNING.id){
-    await delningSynka(false).catch(()=>{});
-    vilande=delningUtkastInfo();
-    delningKoppla(null,{tyst:true});
-  }
+  const vänta=(p,ms)=>Promise.race([p,new Promise(ok=>setTimeout(ok,ms))]);
+  if(AKTIV) sparAutosparaNu();
+  if(DELNING.id) await vänta(delningSynka(false).catch(()=>{}),2500);
+  if(typeof kontoSkickaUtkast==='function') await vänta(kontoSkickaUtkast().catch(()=>{}),2500);
   const token=ulSession?.access_token;
   ulSparaSession(null);
   ulGlömBehörighet();
-  if(token){ try{ await fetch(UL_URL+'/auth/v1/logout',{method:'POST',headers:{...ulHuvud(false),Authorization:'Bearer '+token}}); }catch(_){} }
-  delningRitaModal(); delningRitaStatus(vilande?{vilande}:{});
-  ulMeddela('Utloggad. Dokumentet finns kvar här som en lokal kopia.');
+  try{ sessionStorage.removeItem(UL_LOSENORD_KEY); localStorage.removeItem('ul-godkand-cache'); }catch(_){}
+  if(token){ try{ await vänta(fetch(UL_URL+'/auth/v1/logout',{method:'POST',headers:{...ulHuvud(false),Authorization:'Bearer '+token}}),2000); }catch(_){} }
+  /* Sidan laddas om så att inget från kontot ligger kvar på skärmen. */
+  location.replace(location.origin+APP_ROOT);
 }
 
 async function ulRpc(namn,args={},opt={}){
-  if(!(await ulGiltigSession())){ const e=new Error(UL_FEL.ej_inloggad); e.kod='ej_inloggad'; throw e; }
+  if(!(await ulGiltigSession())){
+    if(ulSession){ const e=new Error(UL_FEL.natverk); e.kod='natverk'; throw e; }
+    if(typeof kontoTappat==='function') kontoTappat('ej_inloggad');
+    const e=new Error(UL_FEL.ej_inloggad); e.kod='ej_inloggad'; throw e;
+  }
   let r;
   try{
     r=await fetch(UL_URL+'/rest/v1/rpc/'+namn,{method:'POST',headers:ulHuvud(true),
@@ -9510,6 +9680,7 @@ async function ulRpc(namn,args={},opt={}){
     else if(r.status===401){ kod='ej_inloggad'; ulSparaSession(null); }
     else kod='okant';
   }
+  if((kod==='ej_larare'||kod==='ej_inloggad')&&typeof kontoTappat==='function') kontoTappat(kod);
   const e=new Error(UL_FEL[kod]||('Servern svarade med ett fel ('+r.status+').'));
   e.kod=kod; e.status=r.status; throw e;
 }
@@ -9547,8 +9718,14 @@ function delningAktivera(info,bas,revision,synkad){
   DELNING.aktiva=[]; DELNING.fel=null; DELNING.felAntal=0;
   DELNING.senast=info.uppdaterad?new Date(info.uppdaterad):null;
   DELNING.senastAv=info.uppdaterad_av||null;
+  DELNING.medlemmar=info.medlemmar??DELNING.medlemmar??null;
+  DELNING.senastStatus=0;
   clearInterval(DELNING.poll);
-  DELNING.poll=setInterval(()=>{ if(document.visibilityState==='visible') delningSynka(true); },UL_INTERVALL);
+  DELNING.poll=setInterval(()=>{
+    if(document.visibilityState!=='visible') return;
+    const intervall=(DELNING.medlemmar??2)>1?UL_INTERVALL:UL_INTERVALL_PRIVAT;
+    if(Date.now()-DELNING.senastStatus>=intervall-500) delningSynka(true);
+  },UL_INTERVALL);
   sparAutosparaNu();          /* kopplingen sparas i kursens utkast */
   delningRitaStatus();
   delningSynka(true);
@@ -9558,7 +9735,7 @@ function delningKoppla(_id,{tyst=false}={}){
   clearInterval(DELNING.poll); clearTimeout(DELNING.timer);
   const namn=DELNING.namn;
   Object.assign(DELNING,{id:null,namn:'',roll:null,kurs:null,revision:null,bas:null,synkad:null,
-    aktiva:[],fel:null,felAntal:0,skickar:false,senast:null,senastAv:null});
+    aktiva:[],fel:null,felAntal:0,skickar:false,senast:null,senastAv:null,medlemmar:null,senastStatus:0});
   delningRitaStatus();
   if(!tyst&&namn) ulMeddela(`Synken med ”${namn}” är avslutad på den här datorn.`);
 }
@@ -9654,9 +9831,11 @@ async function delningSynka(medStatus){
       DELNING.igen=false;
       if(AKTIV?.id!==DELNING.kurs){ delningKoppla(null,{tyst:true}); return; }
       if(status){
+        DELNING.senastStatus=Date.now();
         const st=await ulRpc('ul_status',{p_id:id});
         if(id!==DELNING.id) return;
         DELNING.aktiva=st.aktiva||[]; DELNING.namn=st.namn||DELNING.namn; DELNING.roll=st.roll||DELNING.roll;
+        if(st.medlemmar!=null) DELNING.medlemmar=st.medlemmar;
         if(st.revision!==DELNING.revision){
           const h=await ulRpc('ul_hamta',{p_id:id});
           if(id!==DELNING.id) return;
@@ -9703,7 +9882,8 @@ function delningSkickaVidStängning(){
 function delningRitaStatus(extra={}){
   const rad=document.getElementById('delningsrad');
   const knapp=document.getElementById('delaDokument');
-  if(knapp) knapp.classList.toggle('delat',!!DELNING.id);
+  const delat=!!DELNING.id&&(DELNING.medlemmar??1)>1;
+  if(knapp) knapp.classList.toggle('delat',delat);
   if(!rad) return;
   if(!DELNING.id&&!extra.vilande){ rad.hidden=true; rad.innerHTML=''; return; }
   rad.hidden=false;
@@ -9714,7 +9894,7 @@ function delningRitaStatus(extra={}){
       <span>${ulSession?ulEsc(extra.fel?.message||'Synken är pausad.'):'Logga in för att fortsätta synka.'}</span></span>
       <button type="button" class="dr-knapp" data-dr-ateruppta>${ulSession?'Försök igen':'Logga in'}</button>`;
     rad.querySelector('[data-dr-ateruppta]').addEventListener('click',()=>{
-      if(!ulSession) ulLoggaIn(); else { rad.hidden=true; delningÅteruppta(extra.vilande); }
+      if(!ulSession) kontoVisaInloggning(); else { rad.hidden=true; delningÅteruppta(extra.vilande); }
     });
     return;
   }
@@ -9723,8 +9903,15 @@ function delningRitaStatus(extra={}){
     klass='fel';
     text=DELNING.fel.kod==='natverk'?'Offline – ändringarna skickas när anslutningen är tillbaka':DELNING.fel.message;
   }else if(DELNING.skickar) text='Sparar…';
+  else if(!delat) text=DELNING.senast?`Sparat på kontot ${ulKlock(DELNING.senast)}`:'Sparat på kontot';
   else if(DELNING.senastAv&&DELNING.senast) text=`Uppdaterat av ${DELNING.senastAv} ${ulKlock(DELNING.senast)}`;
   else text='Alla ändringar är synkade';
+  if(!delat){
+    rad.className='delningsrad privat'+(klass?' '+klass:'');
+    rad.innerHTML=`<span class="dr-ikon" aria-hidden="true">${UL_IKON_MOLN}</span>
+      <span class="dr-text"><b title="Sparat på ditt konto">${ulEsc(DELNING.namn||'Dokument')}</b><span>${ulEsc(text)}</span></span>`;
+    return;
+  }
   const aktiva=(DELNING.aktiva||[]).slice(0,4).map(n=>
     `<span class="dr-person" title="${ulEsc(n)} har dokumentet öppet">${ulEsc(ulInitialer(n))}</span>`).join('');
   const fler=(DELNING.aktiva||[]).length>4?`<span class="dr-person fler">+${DELNING.aktiva.length-4}</span>`:'';
@@ -9735,6 +9922,7 @@ function delningRitaStatus(extra={}){
 }
 
 /* ── dela-dialogen ──────────────────────────────────────────────────────── */
+const UL_IKON_MOLN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.4 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg>';
 const UL_IKON_DELA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>';
 let ulModalLäge={kod:null,fel:null,länk:null,laddar:false,vy:null};
 /* Svar från ul_min_behorighet: {larare, admin, vantande, ansokan}. */
@@ -9743,7 +9931,7 @@ let ulBehörighet=null, ulBehörighetTid=0;
 function delningÖppnaModal(opt={}){
   const m=document.getElementById('delamodal');
   if(!m) return;
-  ulModalLäge={kod:opt.kod||null,fel:opt.fel||null,länk:null,laddar:false,vy:null};
+  ulModalLäge={kod:opt.kod||null,fel:opt.fel||null,länk:null,laddar:false,vy:opt.vy||null};
   m.hidden=false;
   delningRitaModal();
 }
@@ -9768,6 +9956,7 @@ function ulRitaBricka(){
   if(!knapp) return;
   let b=document.getElementById('delaBricka');
   const antal=ulSession&&ulBehörighet?.admin?(ulBehörighet.vantande||0):0;
+  if(typeof kontoRitaChip==='function') kontoRitaChip();
   if(!antal){ if(b) b.remove(); return; }
   if(!b){ b=document.createElement('span'); b.id='delaBricka'; b.className='ul-bricka'; knapp.appendChild(b); }
   b.textContent=antal>99?'99+':String(antal);
@@ -9787,15 +9976,13 @@ async function delningRitaModal(){
 
   if(!ulSession){
     titel.textContent=ulModalLäge.kod?'Gå med i ett delat dokument':'Dela med kollegor';
-    underrubrik.textContent='Arbeta i samma prov eller övningsblad samtidigt.';
+    underrubrik.textContent='Delning kräver ett godkänt lärarkonto.';
     ulSätt(`${inloggfel}${fel}
       <div class="ul-intro">
-        <p>När ett dokument är delat sparas det på servern i stället för bara i den här webbläsaren. Kollegor du bjuder in kan öppna det, lägga till och ändra uppgifter, och ser varandras ändringar efter några sekunder.</p>
-        ${ulModalLäge.kod?'<p><b>Du har fått en inbjudan.</b> Logga in med ditt skolkonto för att öppna dokumentet.</p>':''}
+        <p>Du använder det gemensamma lösenordet, så dokumenten sparas bara i den här webbläsaren. Med ett konto sparas de på servern. Du kommer åt dem från vilken dator som helst och kan arbeta i samma prov som kollegor.</p>
+        ${ulModalLäge.kod?'<p><b>Du har fått en inbjudan.</b> Logga in för att öppna dokumentet.</p>':''}
       </div>
-      <button type="button" class="knapp primär ul-google" data-ul="logga-in">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>
-        Logga in med Google</button>
+      <button type="button" class="knapp primär" data-ul="logga-in">Logga in eller skapa konto</button>
       <p class="ul-liten">Det du har på arbetsytan finns kvar.</p>`);
     return;
   }
@@ -9810,6 +9997,7 @@ async function delningRitaModal(){
     return;
   }
   if(ulModalLäge.vy==='admin'&&beh.admin){ delningRitaAdmin(); return; }
+  if(ulModalLäge.vy==='flytt'&&beh.larare){ kontoRitaFlytt(); return; }
   if(!beh.larare){ delningRitaAnsökan(beh); return; }
   const adminRad=beh.admin?`<div class="ul-adminrad">
       <span><b>Lärarförfrågningar</b>${beh.vantande?` <span class="ul-bricka statisk">${beh.vantande}</span>`:''}
@@ -9840,7 +10028,7 @@ async function delningRitaModal(){
 
   if(!DELNING.id){
     titel.textContent='Dela med kollegor';
-    underrubrik.textContent=AKTIV?'Gör det här dokumentet gemensamt.':'Öppna en kurs för att dela ett dokument.';
+    underrubrik.textContent=AKTIV?'Arbeta i samma prov eller övningsblad samtidigt.':'Öppna en kurs för att dela ett dokument.';
     const förslag=(document.getElementById('bTitel')?.value||'').trim()||'Dokument';
     ulSätt(`${fel}${adminRad}
       ${AKTIV?`<div class="ul-sektion">
@@ -9849,7 +10037,7 @@ async function delningRitaModal(){
           <input id="ulDelaNamn" maxlength="120" autocomplete="off" value="${ulEsc(förslag)}">
           <button type="button" class="knapp primär" data-ul="dela">Dela dokumentet</button>
         </div>
-        <p class="ul-liten">Innehållet på arbetsytan (${state.blad.length} ${state.blad.length===1?'uppgift':'uppgifter'}, ${ulEsc(AKTIV.titel)}) laddas upp. Därefter får du en länk att skicka till kollegor.</p>
+        <p class="ul-liten">Dokumentet (${state.blad.length} ${state.blad.length===1?'uppgift':'uppgifter'}, ${ulEsc(AKTIV.titel)}) sparas på ditt konto och du får en länk att skicka till kollegor. Kollegor som öppnar länken ser varandras ändringar efter några sekunder.</p>
       </div>`:''}
       <div class="ul-sektion">
         <label class="ul-etikett" for="ulKod">Har du fått en kod?</label>
@@ -9858,14 +10046,14 @@ async function delningRitaModal(){
           <button type="button" class="knapp tyst" data-ul="ga-med">Gå med</button>
         </div>
       </div>
-      <div class="ul-sektion"><div class="ul-etikett">Mina delade dokument</div><div id="ulMinaDelade" class="sparlista"><div class="ul-laddar">Hämtar…</div></div></div>
       ${delningKontoRad()}`);
-    delningFyllLista(document.getElementById('ulMinaDelade'));
     return;
   }
 
-  titel.textContent='Delat dokument';
-  underrubrik.textContent=DELNING.roll==='agare'?'Du äger dokumentet.':'Du redigerar tillsammans med kollegor.';
+  const delatMed=(DELNING.medlemmar??1)>1;
+  titel.textContent=delatMed?'Delat dokument':'Dela dokumentet';
+  underrubrik.textContent=!delatMed?'Dokumentet ligger på ditt konto. Bjud in kollegor med en länk.'
+    :DELNING.roll==='agare'?'Du äger dokumentet.':'Du redigerar tillsammans med kollegor.';
   const länk=ulModalLäge.länk;
   ulSätt(`${fel}${adminRad}
     <div class="ul-sektion">
@@ -9893,10 +10081,10 @@ async function delningRitaModal(){
       <div id="ulVersionLista"><div class="ul-laddar">Hämtar…</div></div>
     </details>
     <div class="ul-sektion ul-farlig">
-      <button type="button" class="knapp tyst" data-ul="koppla">Sluta synka på den här datorn</button>
+      ${delatMed?'<button type="button" class="knapp tyst" data-ul="koppla">Sluta synka på den här datorn</button>':''}
       ${länk?'<button type="button" class="knapp tyst" data-ul="aterkalla">Återkalla inbjudningslänkar</button>':''}
       ${DELNING.roll==='agare'
-        ?'<button type="button" class="knapp tyst ul-rod" data-ul="radera">Radera det delade dokumentet</button>'
+        ?`<button type="button" class="knapp tyst ul-rod" data-ul="radera">${delatMed?'Radera det delade dokumentet':'Radera dokumentet från kontot'}</button>`
         :'<button type="button" class="knapp tyst ul-rod" data-ul="lamna">Lämna dokumentet</button>'}
     </div>
     ${delningKontoRad()}`);
@@ -9916,7 +10104,7 @@ function delningRitaAnsökan(beh){
       <div class="ul-status-kort">
         <b>Din ansökan väntar på godkännande</b>
         <span>Skickad ${ulEsc(ulTid(a.skapad))} · ${ulEsc(a.namn)}, ${ulEsc(a.skola)} · ${ulEsc(a.jobbmejl)}</span>
-        <span>När ansökan är godkänd kan du dela dokument och gå med i kollegors dokument.</span>
+        <span>När ansökan är godkänd kan du spara dokument på kontot, dela dem och gå med i kollegors dokument.</span>
       </div>
       <div class="ul-knapprad">
         <button type="button" class="knapp primär" data-ul="kolla-igen">Kontrollera igen</button>
@@ -9927,10 +10115,10 @@ function delningRitaAnsökan(beh){
   }
   const namn=a?.namn||ulSession?.user?.user_metadata?.full_name||ulSession?.user?.user_metadata?.name||'';
   titel.textContent='Ansök om lärarkonto';
-  underrubrik.textContent='Delning är till för lärare.';
+  underrubrik.textContent='Uppgiftslabbet är till för lärare.';
   ulSätt(`${fel}${inbjudan}
     ${a?.status==='avslagen'?'<div class="ul-status-kort avslagen"><b>Din tidigare ansökan har inte godkänts.</b><span>Kontrollera uppgifterna och skicka en ny ansökan om du tror att det blivit fel.</span></div>':''}
-    <p class="ul-intro-text">Innan du kan dela prov och övningsblad behöver ditt konto godkännas. Fyll i uppgifterna nedan så granskas ansökan.</p>
+    <p class="ul-intro-text">Innan du kan spara och dela prov och övningsblad behöver ditt konto godkännas. Fyll i uppgifterna nedan så granskas ansökan.</p>
     <div class="ul-formular">
       <label class="ul-etikett" for="ulAnsNamn">Namn</label>
       <input id="ulAnsNamn" maxlength="120" autocomplete="name" value="${ulEsc(namn)}">
@@ -9950,7 +10138,7 @@ async function delningRitaAdmin(){
   const underrubrik=document.getElementById('delamodalText');
   const fel=ulModalLäge.fel?`<div class="ul-fel" role="alert">${ulEsc(ulModalLäge.fel)}</div>`:'';
   titel.textContent='Lärarförfrågningar';
-  underrubrik.textContent='Godkänn lärare som ska kunna dela dokument.';
+  underrubrik.textContent='Godkänn lärare som ska kunna använda Uppgiftslabbet.';
   const el=ulSätt(`${fel}<button type="button" class="ul-textknapp ul-tillbaka" data-ul="admin-tillbaka">← Tillbaka</button>
     <div id="ulAdminLista"><div class="ul-laddar">Hämtar förfrågningar…</div></div>`);
   let lista;
@@ -9963,23 +10151,32 @@ async function delningRitaAdmin(){
     ['godkand','Godkända',[['avslagen','Återkalla','tyst']]],
     ['avslagen','Avslagna och återkallade',[['godkand','Godkänn','tyst']]],
   ];
+  const tf=ulModalLäge.tillfälligt;
   const kort=(x,knappar)=>`<div class="ul-ansokan">
       <div class="ul-ansokan-text">
         <b>${ulEsc(x.namn)}</b>
         <span>${ulEsc(x.skola)} · ${ulEsc(x.jobbmejl)}</span>
-        <span class="ul-liten">Loggar in som ${ulEsc(x.konto||'okänt konto')} · ${x.status==='vantar'?'ansökte '+ulEsc(ulTid(x.skapad)):ulEsc((x.status==='godkand'?'godkänd ':'avslagen ')+ulTid(x.beslutad)+(x.beslutad_av?' av '+x.beslutad_av:''))}</span>
+        <span class="ul-liten">Loggar in ${x.har_losenord?'med e-post':'med Google'} som ${ulEsc(x.konto||'okänt konto')} · ${x.status==='vantar'?'ansökte '+ulEsc(ulTid(x.skapad)):ulEsc((x.status==='godkand'?'godkänd ':'avslagen ')+ulTid(x.beslutad)+(x.beslutad_av?' av '+x.beslutad_av:''))}${x.byt_losenord?' · har ett tillfälligt lösenord':''}</span>
+        ${x.har_losenord&&x.status!=='avslagen'?`<span><button type="button" class="ul-textknapp" style="margin-left:-6px" data-tillfalligt="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">Ge tillfälligt lösenord</button></span>`:''}
       </div>
       <div class="ul-ansokan-knappar">${knappar.map(([st,txt,stil])=>
         `<button type="button" class="knapp liten ${stil}" data-beslut="${st}" data-anvandare="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">${txt}</button>`).join('')}</div>
-    </div>`;
+    </div>
+    ${tf&&tf.user_id===x.user_id?`<div class="ul-tillfalligt" role="status">
+      <b>Tillfälligt lösenord för ${ulEsc(x.namn)}</b>
+      <div class="ul-länk"><input id="ulTillfalligt" readonly value="${ulEsc(tf.losen)}" aria-label="Tillfälligt lösenord">
+        <button type="button" class="knapp primär liten" data-ul="kopiera-tillfalligt">Kopiera</button></div>
+      <span>Ge lösenordet till läraren. Hen loggar in med ${ulEsc(x.konto||'sin adress')} och väljer ett nytt lösenord direkt. Lösenordet visas bara nu.</span>
+    </div>`:''}`;
   l.innerHTML=grupper.map(([st,rubrik,knappar])=>{
     const rader=lista.filter(x=>x.status===st);
     if(st!=='vantar'&&!rader.length) return '';
     return `<div class="ul-sektion"><div class="ul-etikett">${rubrik} (${rader.length})</div>
       ${rader.length?rader.map(x=>kort(x,knappar)).join(''):'<p class="ul-liten">Inga väntande förfrågningar.</p>'}</div>`;
-  }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här.</p>`;
+  }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här. Den som glömt sitt lösenord får ett tillfälligt av dig.</p>`;
 }
 function delningKontoRad(){
+  if(typeof kontoAktivt==='function'&&kontoAktivt()) return '';
   return `<div class="ul-konto"><span>Inloggad som <b>${ulEsc(ulAnvandarnamn())}</b></span>
     <button type="button" class="ul-textknapp" data-ul="logga-ut">Logga ut</button></div>`;
 }
@@ -10014,28 +10211,34 @@ async function delningFyllVersioner(){
       </div>`).join('')||'<p class="ul-liten">Inga versioner ännu.</p>';
   }catch(e){ el.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`; }
 }
-async function delningFyllLista(el,{iLaddaDialog=false}={}){
+async function delningFyllLista(el){
   if(!el) return;
-  if(!ulSession){
-    el.innerHTML=iLaddaDialog?`<p class="ul-liten">Logga in under <b>Dela</b> för att se dokument som delats med dig.</p>`:'';
+  if(!kontoAktivt()){
+    el.innerHTML=`<p class="ul-liten">Du använder det gemensamma lösenordet. <button type="button" class="ul-textknapp" data-konto-in>Logga in</button> för att spara dokument på ett konto och se dokument som kollegor delat med dig.</p>`;
+    el.querySelector('[data-konto-in]')?.addEventListener('click',()=>{ sparStangModal(); kontoVisaInloggning(); });
     return;
   }
+  el.innerHTML='<div class="ul-laddar">Hämtar…</div>';
   try{
     const lista=await ulRpc('ul_mina');
     if(!lista.length){
-      el.innerHTML='<p class="ul-liten">Inga delade dokument ännu.</p>'; return;
+      el.innerHTML='<div class="spartomt"><strong>Inga dokument på kontot ännu</strong><span>Tryck på Spara så hamnar dokumentet här.</span></div>'; return;
     }
     el.innerHTML=lista.map(d=>{
       const kurs=KURSER.find(k=>k.id===d.kurs);
       const aktuellt=d.id===DELNING.id;
+      const delat=d.medlemmar>1;
       return `<div class="sparpost">
         <div><div class="sparpost-namn">${ulEsc(d.namn)}</div>
         <div class="sparpost-meta"><span>${ulEsc(kurs?.titel||d.kurs||'')}</span>
           <span>${d.antal_uppgifter} ${d.antal_uppgifter===1?'uppgift':'uppgifter'}</span>
-          <span>${d.medlemmar} ${d.medlemmar===1?'lärare':'lärare'}</span>
-          <span>${d.roll==='agare'?'Du äger':'Ägs av '+ulEsc(d.agare)}</span>
-          <span>${ulEsc(ulTid(d.uppdaterad))}</span></div></div>
-        <div class="sparpost-knappar">${aktuellt?'<span class="ul-liten">Öppet</span>':`<button type="button" data-oppna-delat="${ulEsc(d.id)}">Öppna</button>`}</div>
+          <span>${d.roll==='agare'?(delat?`Delat med ${d.medlemmar-1} ${d.medlemmar===2?'kollega':'kollegor'}`:'Bara du'):'Delat av '+ulEsc(d.agare)}</span>
+          <span>${ulEsc(ulTid(d.uppdaterad))}${delat&&d.uppdaterad_av?' · '+ulEsc(d.uppdaterad_av):''}</span></div></div>
+        <div class="sparpost-knappar">
+          ${aktuellt?'<span class="ul-liten" style="margin:0">Öppet</span>':`<button type="button" data-oppna-delat="${ulEsc(d.id)}">Öppna</button>`}
+          <button type="button" data-kopiera-delat="${ulEsc(d.id)}">Duplicera</button>
+          <button type="button" class="radera" data-radera-delat="${ulEsc(d.id)}" data-roll="${ulEsc(d.roll)}" data-namn="${ulEsc(d.namn)}" data-medlemmar="${d.medlemmar}">${d.roll==='agare'?'Ta bort':'Lämna'}</button>
+        </div>
       </div>`;
     }).join('');
     el.querySelectorAll('[data-oppna-delat]').forEach(b=>b.addEventListener('click',async()=>{
@@ -10048,6 +10251,29 @@ async function delningFyllLista(el,{iLaddaDialog=false}={}){
         b.disabled=false; b.textContent='Öppna';
       }
     }));
+    el.querySelectorAll('[data-kopiera-delat]').forEach(b=>b.addEventListener('click',async()=>{
+      b.disabled=true;
+      try{
+        const h=await ulRpc('ul_hamta',{p_id:b.dataset.kopieraDelat});
+        await ulRpc('ul_skapa',{p_namn:(h.namn+' – kopia').slice(0,120),p_kurs:h.kurs,p_data:h.data});
+        delningFyllLista(el);
+      }catch(e){ alert(e.message); b.disabled=false; }
+    }));
+    el.querySelectorAll('[data-radera-delat]').forEach(b=>b.addEventListener('click',async()=>{
+      const {radera:id,roll,namn}=b.dataset, andra=(+b.dataset.medlemmar||1)-1;
+      const ägare=roll==='agare';
+      const fråga=ägare
+        ?`Ta bort ”${namn}” från kontot?`+(andra?` ${andra===1?'En kollega':andra+' kollegor'} förlorar också åtkomst.`:'')
+        :`Lämna ”${namn}”? Du behöver en ny inbjudan för att öppna det igen.`;
+      if(!confirm(fråga)) return;
+      b.disabled=true;
+      try{
+        if(ägare) await ulRpc('ul_radera',{p_id:id});
+        else await ulRpc('ul_ta_bort_medlem',{p_id:id,p_user:ulSession.user?.id});
+        if(DELNING.id===id){ delningKoppla(null,{tyst:true}); sparAutosparaNu(); ulMeddela('Dokumentet finns kvar på arbetsytan, men sparas inte längre på kontot.'); }
+        delningFyllLista(el);
+      }catch(e){ alert(e.message); b.disabled=false; }
+    }));
   }catch(e){
     el.innerHTML=`<p class="ul-liten">${ulEsc(e.kod==='saknas'?UL_FEL.saknas:e.message)}</p>`;
   }
@@ -10057,7 +10283,7 @@ function delningRitaLista(){
   const sek=document.getElementById('delningListaSektion');
   if(!sek) return;
   sek.hidden=false;
-  delningFyllLista(document.getElementById('delningLista'),{iLaddaDialog:true});
+  delningFyllLista(document.getElementById('delningLista'));
 }
 
 /* ── åtgärder ───────────────────────────────────────────────────────────── */
@@ -10072,8 +10298,8 @@ async function delningÖppna(id){
   await sparLaddaDokument({...h.data,id:null,name:h.namn,updatedAt:h.uppdaterad},{manuell:true,delat:true});
   if(AKTIV?.id!==h.kurs) throw new Error('Kursen för det delade dokumentet kunde inte öppnas.');
   delningAktivera(h,h.data,h.revision);
-  sparStatus('Delat dokument öppnat',true);
-  ulMeddela(`”${h.namn}” är öppet. Ändringar synkas med kollegorna.`);
+  sparStatus(h.medlemmar>1?'Delat dokument öppnat':'Öppnat från kontot',true);
+  if(h.medlemmar>1) ulMeddela(`”${h.namn}” är öppet. Ändringar synkas med kollegorna.`);
 }
 async function delningGåMed(kod){
   const r=await ulRpc('ul_ga_med',{p_kod:kod});
@@ -10083,7 +10309,7 @@ async function delningDelaAktuellt(namn){
   if(!AKTIV) return;
   const data=delningByggData();
   const r=await ulRpc('ul_skapa',{p_namn:namn,p_kurs:AKTIV.id,p_data:data});
-  delningAktivera({id:r.id,namn,roll:'agare',kurs:AKTIV.id},data,r.revision,delningKanon(data));
+  delningAktivera({id:r.id,namn,roll:'agare',kurs:AKTIV.id,medlemmar:1},data,r.revision,delningKanon(data));
   await delningSkapaLänk();
   ulMeddela(`”${namn}” är delat. Skicka länken till dina kollegor.`);
 }
@@ -10093,7 +10319,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -10117,6 +10343,15 @@ async function delningModalKlick(e){
       ulMeddela(st==='godkand'?`${namn} är godkänd som lärare.`:`${namn} har inte behörighet.`);
     });
   }
+  if(knapp.dataset.tillfalligt){
+    const namn=knapp.dataset.namn;
+    if(!confirm(`Ge ${namn} ett tillfälligt lösenord? Det nuvarande lösenordet slutar fungera.`)) return;
+    return kör(async()=>{
+      const losen=kontoSlumpaLösenord();
+      await ulRpc('ul_tillfalligt_losenord',{p_user:knapp.dataset.tillfalligt,p_losenord:losen});
+      ulModalLäge.tillfälligt={user_id:knapp.dataset.tillfalligt,losen};
+    });
+  }
   if(knapp.dataset.taBort){
     if(!confirm(`Ta bort ${knapp.dataset.namn} från dokumentet?`)) return;
     return kör(()=>ulRpc('ul_ta_bort_medlem',{p_id:DELNING.id,p_user:knapp.dataset.taBort}));
@@ -10132,13 +10367,23 @@ async function delningModalKlick(e){
     });
   }
   switch(åtgärd){
-    case 'logga-in': ulLoggaIn(); break;
+    case 'logga-in': delningStängModal(); kontoVisaInloggning(); break;
+    case 'kopiera-tillfalligt': {
+      const inp=document.getElementById('ulTillfalligt');
+      try{ await navigator.clipboard.writeText(inp.value); }
+      catch(_){ inp.select(); document.execCommand('copy'); }
+      knapp.textContent='Kopierat!';
+      setTimeout(()=>{ if(knapp.isConnected) knapp.textContent='Kopiera'; },1500);
+      return;
+    }
+    case 'flytta': return kör(kontoFlyttaIn);
+    case 'flytt-inte-nu': kontoAvböjFlytt(); delningStängModal(); return;
     case 'logga-ut': ulGlömBehörighet(); await ulLoggaUt(); break;
     case 'admin': ulModalLäge.vy='admin'; delningRitaModal(); return;
-    case 'admin-tillbaka': ulModalLäge.vy=null; await ulHämtaBehörighet(true).catch(()=>{}); delningRitaModal(); return;
+    case 'admin-tillbaka': ulModalLäge.vy=null; ulModalLäge.tillfälligt=null; await ulHämtaBehörighet(true).catch(()=>{}); delningRitaModal(); return;
     case 'kolla-igen': return kör(async()=>{
       const b=await ulHämtaBehörighet(true);
-      if(b.larare) ulMeddela('Ditt konto är godkänt. Nu kan du dela dokument.');
+      if(b.larare) ulMeddela('Ditt konto är godkänt. Logga ut och in igen för att spara dokument på kontot.');
       else ulMeddela('Ansökan väntar fortfarande på godkännande.');
     });
     case 'andra-ansokan': ulModalLäge.ändra=true; delningRitaModal(); return;
@@ -10231,11 +10476,12 @@ const UL_KLAR=(async()=>{
   if(document.readyState==='loading') await new Promise(ok=>document.addEventListener('DOMContentLoaded',ok,{once:true}));
   initDelning();
   await UL_KLAR;
+  await UL_GRIND;
   let efter=null, kod=null;
   try{ efter=JSON.parse(sessionStorage.getItem('ul-efter-inloggning')||'null'); sessionStorage.removeItem('ul-efter-inloggning'); }catch(_){}
   try{ kod=sessionStorage.getItem('ul-dela-kod'); }catch(_){}
   if(kod) delningÖppnaModal({kod});
-  else if(efter?.dela||ulInloggningsfel) delningÖppnaModal();
+  else if(efter?.dela) delningÖppnaModal();
   delningRitaStatus();
   ulUppdateraBricka();
   setInterval(()=>{
@@ -10243,6 +10489,683 @@ const UL_KLAR=(async()=>{
   },60000);
 })();
 
+</script>
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   KONTO
+   Inloggningen till appen. Ett godkänt lärarkonto krävs (se ul_ar_larare i
+   uppgiftslabbet-delning.sql). Dokument som sparas läggs på kontot och sparas
+   sedan automatiskt, och varje kurs pågående utkast följer med mellan datorer.
+   En kopia ligger alltid kvar i webbläsaren.
+   Det gemensamma lösenordet (UL_TILLAT_LOSENORD överst i filen) ger ett
+   läge där allt sparas bara i webbläsaren, som förut.
+   ═══════════════════════════════════════════════════════════════════════════ */
+const UL_GODKAND_CACHE='ul-godkand-cache';
+const UL_FLYTT_AVBOJD='ul-flytt-avbojd';
+const SPAR_BACKUP_KEY='uppgiftslabbet_saved_documents_flyttade_v1';
+const UL_IKON_GOOGLE='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>';
+const UL_IKON_MEJL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>';
+const UL_IKON_LAS='<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+
+const KONTO={lage:null,uid:null,beh:null,vy:null,osända:new Set(),utkastTimer:null,skickar:false,
+  vantaTimer:null,senastKoll:0};
+
+/* ── hjälpare ───────────────────────────────────────────────────────────── */
+function ulAnvändarId(){
+  if(ulSession?.user?.id) return ulSession.user.id;
+  try{
+    const p=ulSession.access_token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/');
+    return JSON.parse(atob(p.padEnd(Math.ceil(p.length/4)*4,'='))).sub||null;
+  }catch(_){ return null; }
+}
+function kontoAktivt(){ return KONTO.lage==='konto'&&Boolean(ulSession); }
+function kontoId(){ return kontoAktivt()?ulAnvändarId():null; }
+function kontoBeh(){ return ulBehörighet||KONTO.beh||null; }
+function kontoVisningsnamn(){ return kontoBeh()?.ansokan?.namn||ulAnvandarnamn(); }
+function kontoEpost(){ return kontoBeh()?.epost||ulSession?.user?.email||''; }
+function kontoCacheSätt(){ try{ localStorage.setItem(UL_GODKAND_CACHE,JSON.stringify({uid:ulAnvändarId(),tid:Date.now()})); }catch(_){} }
+function kontoCacheRensa(){ try{ localStorage.removeItem(UL_GODKAND_CACHE); }catch(_){} }
+function kontoCacheOk(){
+  try{
+    const c=JSON.parse(localStorage.getItem(UL_GODKAND_CACHE)||'null');
+    return Boolean(c&&c.uid&&c.uid===ulAnvändarId()&&Date.now()-c.tid<30*864e5);
+  }catch(_){ return false; }
+}
+function kontoSlumpaLösenord(){
+  const a='abcdefghjkmnpqrstuvwxyz23456789';
+  let s='';
+  crypto.getRandomValues(new Uint8Array(12)).forEach((x,i)=>{ if(i&&i%4===0) s+='-'; s+=a[x%a.length]; });
+  return s;
+}
+const kontoMejlOk=m=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m);
+
+/* ── Supabase Auth med e-post ───────────────────────────────────────────── */
+function ulAuthFel(status,d){
+  const text=String(d?.msg||d?.error_description||d?.message||'');
+  const t=(String(d?.error_code||d?.code||d?.error||'')+' '+text).toLowerCase();
+  if(/invalid_credentials|invalid login credentials|invalid_grant/.test(t)) return 'Fel e-postadress eller lösenord.';
+  if(/email_not_confirmed|not confirmed/.test(t)) return 'E-postadressen är inte bekräftad. Be administratören kontrollera inställningen för e-postbekräftelse.';
+  if(/user_already_exists|already registered|already been registered/.test(t)) return 'Det finns redan ett konto med den adressen. Logga in i stället.';
+  if(/weak_password|password should/.test(t)) return 'Lösenordet är för svagt. Välj ett längre lösenord, gärna med siffror.';
+  if(status===429||/rate_limit|too many/.test(t)) return 'För många försök. Vänta en stund och försök igen.';
+  if(/provider_disabled|signup_disabled|signups not allowed|logins are disabled/.test(t)) return 'Inloggning med e-post är inte aktiverad ännu.';
+  if(/email_address_invalid|unable to validate email|invalid format/.test(t)) return 'Ange en giltig e-postadress.';
+  return text?'Inloggningen misslyckades: '+text:`Inloggningen misslyckades (${status}).`;
+}
+async function ulAuth(väg,body){
+  let r;
+  try{ r=await fetch(UL_URL+'/auth/v1/'+väg,{method:'POST',headers:ulHuvud(false),body:JSON.stringify(body)}); }
+  catch(_){ throw new Error(UL_FEL.natverk); }
+  let d={}; try{ d=await r.json(); }catch(_){}
+  if(r.ok) return d;
+  throw new Error(ulAuthFel(r.status,d));
+}
+function ulSessionFrånSvar(d){
+  return {access_token:d.access_token,refresh_token:d.refresh_token,
+    expires_at:d.expires_at||Math.floor(Date.now()/1000)+(d.expires_in||3600),user:d.user||null};
+}
+
+/* ── grinden ────────────────────────────────────────────────────────────── */
+const grindEl=()=>document.getElementById('grindInnehall');
+function grindLås(){
+  kontoStängMeny();
+  document.body.classList.add('password-locked');
+  document.getElementById('passwordGate').hidden=false;
+  document.getElementById('passwordForm').hidden=true;
+  grindEl().hidden=false;
+}
+function grindÖppna(läge){
+  KONTO.lage=läge;
+  KONTO.uid=läge==='konto'?ulAnvändarId():null;
+  KONTO.vy=null;
+  clearInterval(KONTO.vantaTimer);
+  document.body.classList.remove('password-locked');
+  document.getElementById('passwordGate').hidden=true;
+  ulGrindLös?.(läge);
+  kontoRitaChip();
+  if(typeof delningRitaStatus==='function') delningRitaStatus();
+}
+function grindRita(vy,opt={}){
+  KONTO.vy=vy;
+  clearInterval(KONTO.vantaTimer);
+  const el=grindEl();
+  el.hidden=false;
+  document.getElementById('passwordForm').hidden=true;
+  const fel=opt.fel?`<div class="grind-fel" role="alert">${ulEsc(opt.fel)}</div>`:'';
+  const info=opt.info?`<div class="grind-info ok" role="status">${ulEsc(opt.info)}</div>`:'';
+  const v=opt.värden||{};
+  const lösenLänk=UL_TILLAT_LOSENORD?'<button type="button" class="grind-lank" data-g="losenord">Använd lösenord i stället</button>':'';
+  const utloggad=`<span>Inloggad som <b>${ulEsc(kontoEpost()||kontoVisningsnamn())}</b></span>
+    <button type="button" class="grind-lank" data-g="logga-ut">Logga ut</button>`;
+  let inbjudan=false; try{ inbjudan=Boolean(sessionStorage.getItem('ul-dela-kod')); }catch(_){}
+  const inbjudanInfo=inbjudan?'<div class="grind-info"><b>Du har fått en inbjudan till ett delat dokument.</b> Det öppnas när du har loggat in.</div>':'';
+  let h='';
+  switch(vy){
+    case 'laddar':
+      h=`<h1 id="grindTitel">Uppgiftslabbet</h1><div class="grind-snurr">${ulEsc(opt.text||'Kontrollerar kontot…')}</div>`;
+      break;
+    case 'val':
+      h=`<h1 id="grindTitel">Logga in</h1>
+        <p>Uppgiftslabbet är till för lärare. Dina prov och övningsblad sparas på kontot, så att du når dem från vilken dator som helst.</p>
+        ${fel}${info}${inbjudanInfo}
+        <div class="grind-knappar">
+          <button type="button" class="grind-knapp" data-g="google">${UL_IKON_GOOGLE}Logga in med Google</button>
+          <button type="button" class="grind-knapp" data-g="epost">${UL_IKON_MEJL}Logga in med e-post</button>
+        </div>
+        <div class="grind-fot"><span>Ny här? <button type="button" class="grind-lank" data-g="ny">Skapa konto</button></span>${lösenLänk}</div>`;
+      break;
+    case 'epost':
+      h=`<h1 id="grindTitel">Logga in med e-post</h1>
+        ${fel}${info}
+        <form class="grind-form" data-g-form="in" novalidate>
+          <label for="gEpost">E-postadress</label>
+          <input id="gEpost" type="email" autocomplete="username" value="${ulEsc(v.epost||'')}">
+          <label for="gLosen">Lösenord</label>
+          <input id="gLosen" type="password" autocomplete="current-password">
+          <button type="submit" class="grind-knapp primär" style="margin-top:14px">Logga in</button>
+        </form>
+        <div class="grind-fot"><button type="button" class="grind-lank" data-g="val">← Tillbaka</button>
+          <button type="button" class="grind-lank" data-g="glomt">Glömt lösenordet?</button></div>`;
+      break;
+    case 'glomt':
+      h=`<h1 id="grindTitel">Glömt lösenordet?</h1>
+        <p>Kontakta administratören för Uppgiftslabbet. Du får ett tillfälligt lösenord och väljer ett eget direkt när du har loggat in.</p>
+        <div class="grind-fot"><button type="button" class="grind-lank" data-g="epost">← Tillbaka till inloggningen</button></div>`;
+      break;
+    case 'ny':
+      h=`<h1 id="grindTitel">Skapa konto</h1>
+        <p>Kontot kan användas när det har godkänts. Har du ett Google-konto kan du i stället <button type="button" class="grind-lank" style="margin:0;padding:0" data-g="google">logga in med Google</button>.</p>
+        ${fel}
+        <form class="grind-form" data-g-form="ny" novalidate>
+          <label for="gNamn">Namn</label>
+          <input id="gNamn" autocomplete="name" maxlength="120" value="${ulEsc(v.namn||'')}">
+          <label for="gSkola">Skola</label>
+          <input id="gSkola" autocomplete="organization" maxlength="160" placeholder="T.ex. Erik Dahlbergsgymnasiet" value="${ulEsc(v.skola||'')}">
+          <label for="gNyEpost">Jobbmejl</label>
+          <input id="gNyEpost" type="email" autocomplete="email" maxlength="200" placeholder="fornamn.efternamn@jonkoping.se" value="${ulEsc(v.epost||'')}">
+          <div class="grind-par">
+            <div><label for="gNyLosen">Lösenord</label><input id="gNyLosen" type="password" autocomplete="new-password"></div>
+            <div><label for="gNyLosen2">Upprepa lösenordet</label><input id="gNyLosen2" type="password" autocomplete="new-password"></div>
+          </div>
+          <p class="ul-liten">Minst 8 tecken. Du loggar in med jobbmejlen.</p>
+          <button type="submit" class="grind-knapp primär" style="margin-top:12px">Skapa konto och skicka ansökan</button>
+        </form>
+        <div class="grind-fot"><button type="button" class="grind-lank" data-g="val">← Tillbaka</button>
+          <span>Har du ett konto? <button type="button" class="grind-lank" data-g="epost">Logga in</button></span></div>`;
+      break;
+    case 'ansokan': {
+      const b=kontoBeh(), a=b?.ansokan;
+      const m=ulSession?.user?.user_metadata||{};
+      h=`<h1 id="grindTitel">Ansök om lärarkonto</h1>
+        ${a?.status==='avslagen'?'<div class="grind-info"><b>Kontot är inte godkänt.</b> Kontrollera uppgifterna och skicka en ny ansökan om du tror att det blivit fel.</div>':''}
+        <p>Uppgiftslabbet är till för lärare. Fyll i uppgifterna så granskas ansökan. Du kommer in när kontot har godkänts.</p>
+        ${fel}${inbjudanInfo}
+        <form class="grind-form" data-g-form="ansok" novalidate>
+          <label for="gAnsNamn">Namn</label>
+          <input id="gAnsNamn" autocomplete="name" maxlength="120" value="${ulEsc(v.namn??a?.namn??m.full_name??m.name??'')}">
+          <label for="gAnsSkola">Skola</label>
+          <input id="gAnsSkola" autocomplete="organization" maxlength="160" placeholder="T.ex. Erik Dahlbergsgymnasiet" value="${ulEsc(v.skola??a?.skola??'')}">
+          <label for="gAnsMejl">Jobbmejl</label>
+          <input id="gAnsMejl" type="email" autocomplete="email" maxlength="200" placeholder="fornamn.efternamn@jonkoping.se" value="${ulEsc(v.epost??a?.jobbmejl??'')}">
+          <button type="submit" class="grind-knapp primär" style="margin-top:14px">Skicka ansökan</button>
+        </form>
+        ${a?.status==='vantar'?'<button type="button" class="grind-lank" style="margin-top:0" data-g="vantar">← Avbryt</button>':''}
+        <div class="grind-fot">${utloggad}</div>
+        ${lösenLänk}`;
+      break;
+    }
+    case 'vantar': {
+      const a=kontoBeh()?.ansokan||{};
+      h=`<h1 id="grindTitel">Ansökan skickad</h1>
+        ${fel}${info}
+        <div class="grind-info"><b>Din ansökan väntar på godkännande.</b><br>
+          ${ulEsc(a.namn||'')}, ${ulEsc(a.skola||'')} · ${ulEsc(a.jobbmejl||'')}<br>
+          <span style="color:var(--muted)">Skickad ${ulEsc(ulTid(a.skapad))}</span></div>
+        <p>Du kommer in så snart kontot har godkänts. Sidan kontrollerar det automatiskt medan den är öppen.</p>
+        ${inbjudanInfo}
+        <div class="grind-knappar">
+          <button type="button" class="grind-knapp primär" data-g="kolla">Kontrollera igen</button>
+          <button type="button" class="grind-knapp" data-g="andra">Ändra ansökan</button>
+        </div>
+        <div class="grind-fot">${utloggad}</div>
+        ${lösenLänk}`;
+      KONTO.vantaTimer=setInterval(()=>{
+        if(document.visibilityState==='visible'&&KONTO.vy==='vantar') kontoKontrollera({tyst:true});
+      },30000);
+      break;
+    }
+    case 'byt':
+      h=`<h1 id="grindTitel">${opt.tvingad?'Välj ett nytt lösenord':'Byt lösenord'}</h1>
+        <p>${opt.tvingad?'Du har loggat in med ett tillfälligt lösenord. Välj ett eget innan du fortsätter.':'Det nya lösenordet gäller från nästa inloggning.'}</p>
+        ${fel}
+        <form class="grind-form" data-g-form="${opt.tvingad?'byt-tvingad':'byt'}" novalidate>
+          <input type="email" autocomplete="username" value="${ulEsc(kontoEpost())}" hidden>
+          <label for="gBytLosen">Nytt lösenord</label>
+          <input id="gBytLosen" type="password" autocomplete="new-password">
+          <label for="gBytLosen2">Upprepa lösenordet</label>
+          <input id="gBytLosen2" type="password" autocomplete="new-password">
+          <p class="ul-liten">Minst 8 tecken.</p>
+          <button type="submit" class="grind-knapp primär" style="margin-top:12px">Spara lösenordet</button>
+        </form>
+        <div class="grind-fot">${opt.tvingad?utloggad:'<button type="button" class="grind-lank" data-g="avbryt-byt">← Avbryt</button>'}</div>`;
+      break;
+    default:
+      h=`<h1 id="grindTitel">Något gick fel</h1>
+        ${fel}
+        <div class="grind-knappar"><button type="button" class="grind-knapp primär" data-g="kolla">Försök igen</button></div>
+        <div class="grind-fot">${ulSession?utloggad:''}</div>
+        ${lösenLänk}`;
+  }
+  el.innerHTML=h;
+  const först=el.querySelector('input:not([hidden]):not([value]), input:not([hidden])[value=""]')||el.querySelector('input:not([hidden])');
+  if(först) setTimeout(()=>först.focus(),0);
+}
+
+async function grindKlick(e){
+  const b=e.target.closest('[data-g]'); if(!b) return;
+  switch(b.dataset.g){
+    case 'google': b.disabled=true; ulLoggaIn(); return;
+    case 'epost': grindRita('epost'); return;
+    case 'ny': grindRita('ny'); return;
+    case 'val': grindRita('val'); return;
+    case 'glomt': grindRita('glomt'); return;
+    case 'vantar': grindRita('vantar'); return;
+    case 'andra': grindRita('ansokan'); return;
+    case 'losenord': {
+      grindEl().hidden=true;
+      const f=document.getElementById('passwordForm');
+      f.hidden=false;
+      document.getElementById('passwordError').textContent='';
+      setTimeout(()=>document.getElementById('passwordInput').focus(),0);
+      return;
+    }
+    case 'logga-ut': b.disabled=true; await ulLoggaUt(); return;
+    case 'kolla': grindRita('laddar'); await kontoKontrollera(); return;
+    case 'avbryt-byt': grindÖppna(KONTO.lage); return;
+  }
+}
+async function grindSkicka(e){
+  const f=e.target.closest('[data-g-form]'); if(!f) return;
+  e.preventDefault();
+  const knapp=f.querySelector('[type="submit"]');
+  if(knapp.disabled) return;
+  const v=id=>(f.querySelector('#'+id)?.value||'').trim();
+  const fokus=id=>{ f.querySelector('#'+id)?.focus(); };
+  const form=f.dataset.gForm;
+  knapp.disabled=true;
+  try{
+    if(form==='in'){
+      const epost=v('gEpost'), losen=f.querySelector('#gLosen').value;
+      if(!epost) return fokus('gEpost');
+      if(!losen) return fokus('gLosen');
+      try{
+        const r=await ulAuth('token?grant_type=password',{email:epost,password:losen});
+        ulSparaSession(ulSessionFrånSvar(r));
+      }catch(err){ return grindRita('epost',{fel:err.message,värden:{epost}}); }
+      grindRita('laddar');
+      return kontoKontrollera();
+    }
+    if(form==='ny'){
+      const värden={namn:v('gNamn'),skola:v('gSkola'),epost:v('gNyEpost')};
+      const l1=f.querySelector('#gNyLosen').value, l2=f.querySelector('#gNyLosen2').value;
+      const stopp=(fel,id)=>{ grindRita('ny',{fel,värden}); setTimeout(()=>grindEl().querySelector('#'+id)?.focus(),0); };
+      if(!värden.namn) return stopp('Fyll i ditt namn.','gNamn');
+      if(!värden.skola) return stopp('Fyll i din skola.','gSkola');
+      if(!kontoMejlOk(värden.epost)) return stopp('Ange en giltig e-postadress.','gNyEpost');
+      if(l1.length<8) return stopp('Lösenordet måste ha minst 8 tecken.','gNyLosen');
+      if(l1.length>72) return stopp('Lösenordet får ha högst 72 tecken.','gNyLosen');
+      if(l1!==l2) return stopp('Lösenorden är inte lika.','gNyLosen2');
+      let r;
+      try{ r=await ulAuth('signup',{email:värden.epost,password:l1,data:{full_name:värden.namn}}); }
+      catch(err){
+        if(/redan ett konto/.test(err.message)) return grindRita('epost',{fel:err.message,värden});
+        return stopp(err.message,'gNyEpost');
+      }
+      if(!r?.access_token){
+        return grindRita('epost',{värden,info:'Kontot är skapat, men e-postadressen behöver bekräftas innan du kan logga in. Öppna mejlet från Supabase eller be administratören stänga av e-postbekräftelsen.'});
+      }
+      ulSparaSession(ulSessionFrånSvar(r));
+      grindRita('laddar',{text:'Skickar ansökan…'});
+      try{ await ulRpc('ul_ansok',{p_namn:värden.namn,p_skola:värden.skola,p_jobbmejl:värden.epost}); }
+      catch(err){
+        ulGlömBehörighet();
+        KONTO.beh=null;
+        return grindRita('ansokan',{fel:err.message,värden});
+      }
+      return kontoKontrollera();
+    }
+    if(form==='ansok'){
+      const värden={namn:v('gAnsNamn'),skola:v('gAnsSkola'),epost:v('gAnsMejl')};
+      const stopp=(fel,id)=>{ grindRita('ansokan',{fel,värden}); setTimeout(()=>grindEl().querySelector('#'+id)?.focus(),0); };
+      if(!värden.namn) return stopp('Fyll i ditt namn.','gAnsNamn');
+      if(!värden.skola) return stopp('Fyll i din skola.','gAnsSkola');
+      if(!kontoMejlOk(värden.epost)) return stopp('Ange en giltig jobbmejl.','gAnsMejl');
+      try{ await ulRpc('ul_ansok',{p_namn:värden.namn,p_skola:värden.skola,p_jobbmejl:värden.epost}); }
+      catch(err){ return stopp(err.message,'gAnsNamn'); }
+      grindRita('laddar');
+      return kontoKontrollera();
+    }
+    if(form==='byt'||form==='byt-tvingad'){
+      const tvingad=form==='byt-tvingad';
+      const l1=f.querySelector('#gBytLosen').value, l2=f.querySelector('#gBytLosen2').value;
+      if(l1.length<8) return grindRita('byt',{tvingad,fel:'Lösenordet måste ha minst 8 tecken.'});
+      if(l1.length>72) return grindRita('byt',{tvingad,fel:'Lösenordet får ha högst 72 tecken.'});
+      if(l1!==l2) return grindRita('byt',{tvingad,fel:'Lösenorden är inte lika.'});
+      try{ await ulRpc('ul_byt_losenord',{p_nytt:l1}); }
+      catch(err){ return grindRita('byt',{tvingad,fel:err.message}); }
+      if(tvingad){ grindRita('laddar'); await kontoKontrollera(); }
+      else grindÖppna(KONTO.lage);
+      ulMeddela('Lösenordet är bytt.');
+    }
+  }finally{
+    if(knapp.isConnected) knapp.disabled=false;
+  }
+}
+
+/* Avgör vad grinden ska visa för den inloggade. */
+async function kontoKontrollera({tyst=false}={}){
+  let beh;
+  try{ beh=await ulHämtaBehörighet(true); }
+  catch(e){
+    if(tyst) return;
+    if(e.kod==='natverk'&&kontoCacheOk()) return kontoInloggad({offline:true});
+    if(ulLösenordUpplåst()) return grindÖppna('losenord');
+    if(e.kod==='ej_inloggad'||!ulSession) return grindRita('val',{fel:'Inloggningen har gått ut. Logga in igen.'});
+    return grindRita('fel',{fel:e.kod==='saknas'
+      ?'Kontona är inte installerade i databasen ännu. Kör den senaste SQL-filen i Supabase.'
+      :e.message});
+  }
+  KONTO.beh=beh;
+  if(beh.larare){
+    kontoCacheSätt();
+    if(beh.byt_losenord) return grindRita('byt',{tvingad:true});
+    return kontoInloggad();
+  }
+  kontoCacheRensa();
+  if(ulLösenordUpplåst()) return grindÖppna('losenord');
+  if(tyst&&KONTO.vy==='vantar'&&beh.ansokan?.status==='vantar') return;
+  if(beh.ansokan?.status==='vantar') return grindRita('vantar');
+  grindRita('ansokan');
+}
+function kontoInloggad({offline=false}={}){
+  const uid=ulAnvändarId();
+  if(KONTO.uid&&uid&&KONTO.uid!==uid){ location.reload(); return; }
+  const förra=KONTO.lage;
+  grindÖppna('konto');
+  if(offline) ulMeddela('Ingen kontakt med servern. Ändringarna sparas i webbläsaren och skickas när anslutningen är tillbaka.');
+  if(förra){
+    /* Inloggning utan omladdning: arbetsytan knyts till kontot. */
+    if(AKTIV){
+      sparAutosparaNu();
+      const d=sparUtkastForKurs(AKTIV.id);
+      if(d?.shared?.id&&!DELNING.id) delningÅteruppta(d.shared);
+    }
+    if(förra==='losenord') ulMeddela('Inloggad. Dokumenten sparas nu på ditt konto.');
+  }
+  if(!offline) setTimeout(()=>kontoErbjudFlytt(false),700);
+  if(KONTO.osända.size) kontoSkickaUtkast();
+}
+/* Anropas från ulRpc när servern säger att kontot inte längre är inloggat
+   eller godkänt. Arbetsytan finns kvar under grinden. */
+function kontoTappat(kod){
+  if(KONTO.lage!=='konto'||document.body.classList.contains('password-locked')) return;
+  if(AKTIV){ try{ sparAutosparaNu(); }catch(_){} }
+  grindLås();
+  if(kod==='ej_larare'){
+    ulGlömBehörighet(); kontoCacheRensa();
+    grindRita('laddar');
+    kontoKontrollera();
+  }else{
+    grindRita('val',{fel:'Du har blivit utloggad. Logga in igen. Det du har på arbetsytan finns kvar.'});
+  }
+}
+/* Från lösenordsläget: visa inloggningen utan att ladda om sidan. */
+function kontoVisaInloggning(){
+  if(AKTIV) sparAutosparaNu();
+  try{ sessionStorage.removeItem(UL_LOSENORD_KEY); }catch(_){}
+  grindLås();
+  if(ulSession){ grindRita('laddar'); kontoKontrollera(); }
+  else grindRita('val');
+}
+
+/* ── kontomenyn ─────────────────────────────────────────────────────────── */
+function kontoStängMeny(){
+  document.querySelectorAll('.konto-meny').forEach(m=>{ m.hidden=true; });
+  document.querySelectorAll('[data-konto-knapp]').forEach(k=>k.setAttribute('aria-expanded','false'));
+}
+function kontoRitaChip(){
+  if([...document.querySelectorAll('.konto-meny')].some(m=>!m.hidden)) return;
+  const läge=KONTO.lage;
+  const konto=läge==='konto';
+  const b=kontoBeh();
+  const antal=konto&&b?.admin?(b.vantande||0):0;
+  const lokala=konto?sparLasaAlla().length:0;
+  const namn=konto?kontoVisningsnamn():'Gemensamt lösenord';
+  const kort=konto?String(namn).split(/\s+/)[0]:'Lösenord';
+  const meny=konto?`
+      <div class="konto-meny-huvud"><b>${ulEsc(namn)}</b><span>${ulEsc(kontoEpost())}</span>
+        <span>Dokumenten sparas på ditt konto.</span></div>
+      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${antal?`<span class="ul-bricka">${antal}</span>`:''}</button>`:''}
+      ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
+      ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
+      <button type="button" role="menuitem" data-konto-val="logga-ut">Logga ut</button>`
+    :`
+      <div class="konto-meny-huvud"><b>Gemensamt lösenord</b>
+        <span>Dokumenten sparas bara i den här webbläsaren och kan inte delas.</span></div>
+      <button type="button" role="menuitem" data-konto-val="logga-in">Logga in med konto</button>`;
+  document.querySelectorAll('[data-konto-plats]').forEach(p=>{
+    if(!läge){ p.innerHTML=''; return; }
+    p.innerHTML=`<button type="button" class="konto-knapp" aria-haspopup="menu" aria-expanded="false" data-konto-knapp
+        title="${konto?'Ditt konto':'Du använder det gemensamma lösenordet'}">
+        <span class="konto-av${konto?'':' lokal'}">${konto?ulEsc(ulInitialer(namn)):UL_IKON_LAS}</span>
+        <span class="konto-namn">${ulEsc(kort)}</span>${antal?`<span class="ul-bricka">${antal>99?'99+':antal}</span>`:''}</button>
+      <div class="konto-meny" role="menu" hidden>${meny}</div>`;
+  });
+}
+function kontoMenyVal(val){
+  switch(val){
+    case 'admin': delningÖppnaModal({vy:'admin'}); break;
+    case 'flytt': kontoErbjudFlytt(true); break;
+    case 'losenord': grindLås(); grindRita('byt',{tvingad:false}); break;
+    case 'logga-ut': ulLoggaUt(); break;
+    case 'logga-in': kontoVisaInloggning(); break;
+  }
+}
+
+/* ── utkast på kontot ───────────────────────────────────────────────────── */
+function kontoUtkastÄndrat(kurs){
+  if(!kontoAktivt()||!kurs) return;
+  KONTO.osända.add(kurs);
+  if(KONTO.skickar) return;
+  clearTimeout(KONTO.utkastTimer);
+  KONTO.utkastTimer=setTimeout(kontoSkickaUtkast,2500);
+}
+async function kontoSkickaUtkast(){
+  if(!kontoAktivt()||KONTO.skickar||!KONTO.osända.size) return;
+  clearTimeout(KONTO.utkastTimer);
+  KONTO.skickar=true;
+  let fel=null;
+  try{
+    for(const kurs of [...KONTO.osända]){
+      KONTO.osända.delete(kurs);
+      const d=sparUtkastForKurs(kurs);
+      if(!d||(d.konto&&d.konto!==kontoId())) continue;
+      try{ await ulRpc('ul_spara_utkast',{p_kurs:kurs,p_data:d}); }
+      catch(e){
+        fel=e;
+        if(!['for_stort','ogiltig_data'].includes(e.kod)) KONTO.osända.add(kurs);
+        break;
+      }
+    }
+  }finally{
+    KONTO.skickar=false;
+    if(KONTO.osända.size){
+      clearTimeout(KONTO.utkastTimer);
+      KONTO.utkastTimer=setTimeout(kontoSkickaUtkast,!fel?1500:fel.kod==='natverk'?30000:60000);
+    }
+  }
+  if(fel&&!['natverk','ej_inloggad','ej_larare'].includes(fel.kod)) console.warn('Utkastet kunde inte sparas på kontot',fel);
+}
+function kontoSkickaVidStängning(){
+  if(!kontoAktivt()||!AKTIV||!KONTO.osända.has(AKTIV.id)||!ulSession?.access_token) return;
+  const d=sparUtkastForKurs(AKTIV.id);
+  if(!d||(d.konto&&d.konto!==kontoId())) return;
+  const body=JSON.stringify({p_kurs:AKTIV.id,p_data:d});
+  if(body.length>60000) return;   /* keepalive tillåter bara små anrop */
+  try{
+    fetch(UL_URL+'/rest/v1/rpc/ul_spara_utkast',{method:'POST',headers:ulHuvud(true),body,keepalive:true})
+      .then(r=>{ if(r.ok) KONTO.osända.delete(d.course); }).catch(()=>{});
+  }catch(_){}
+}
+async function kontoHämtaUtkast(kurs){
+  if(!kontoAktivt()) return null;
+  try{
+    const r=await Promise.race([
+      ulRpc('ul_hamta_utkast',{p_kurs:kurs}),
+      new Promise(ok=>setTimeout(()=>ok(null),6000))
+    ]);
+    const d=r?.data;
+    if(!d||typeof d!=='object') return null;
+    if(d.konto&&d.konto!==kontoId()) return null;
+    return d;
+  }catch(_){ return null; }
+}
+/* När fliken blir aktiv igen: har utkastet ändrats på en annan dator? */
+async function kontoKollaUtkast(){
+  if(!kontoAktivt()||!AKTIV||DELNING.id||sparÅterställerKurs) return;
+  if(KONTO.osända.has(AKTIV.id)||Date.now()-KONTO.senastKoll<8000) return;
+  KONTO.senastKoll=Date.now();
+  const kurs=AKTIV.id;
+  const fjärr=await kontoHämtaUtkast(kurs);
+  if(!fjärr||AKTIV?.id!==kurs||DELNING.id||KONTO.osända.has(kurs)) return;
+  const lokalt=sparUtkastForKurs(kurs);
+  const tid=x=>Date.parse(x?.updatedAt||'')||0;
+  if(tid(fjärr)<=tid(lokalt)) return;
+  const utanKonto=x=>sparUtkastKanon({...x,konto:null});
+  if(lokalt&&utanKonto(lokalt)===utanKonto(fjärr)) return;
+  const karta=sparLasaUtkast(); karta[kurs]=fjärr;
+  try{ localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify(karta)); }catch(_){}
+  await sparLaddaDokument(fjärr,{manuell:false});
+  ulMeddela('Arbetsytan har uppdaterats med det du gjorde på en annan dator.');
+}
+
+/* ── spara på kontot ────────────────────────────────────────────────────── */
+async function kontoSpara(namn,{kopia=false}={}){
+  if(!AKTIV) return;
+  try{
+    if(DELNING.id&&!kopia){
+      if(namn!==DELNING.namn){ await ulRpc('ul_byt_namn',{p_id:DELNING.id,p_namn:namn}); DELNING.namn=namn; }
+      await delningSynka(false);
+      sparStatus('Sparat på kontot',true);
+      delningRitaStatus();
+      return;
+    }
+    if(kopia&&DELNING.id){
+      await delningSynka(false).catch(()=>{});
+      if(namn===DELNING.namn) namn=(namn+' – kopia').slice(0,120);
+    }
+    const data=delningByggData();
+    const r=await ulRpc('ul_skapa',{p_namn:namn,p_kurs:AKTIV.id,p_data:data});
+    if(DELNING.id) delningKoppla(null,{tyst:true});
+    AKTIV_SPAR_ID=null;
+    delningAktivera({id:r.id,namn,roll:'agare',kurs:AKTIV.id,medlemmar:1,uppdaterad:new Date().toISOString()},
+      data,r.revision,delningKanon(data));
+    sparStatus(kopia?'Kopia sparad på kontot':'Sparat på kontot',true);
+    ulMeddela(kopia
+      ?`Du arbetar nu i kopian ”${namn}”. Originalet finns kvar under Ladda.`
+      :`”${namn}” är sparat på kontot. Ändringar sparas automatiskt.`);
+  }catch(e){
+    if(e.kod==='natverk'&&!DELNING.id){
+      sparSparaManuellt(namn);
+      ulMeddela('Ingen kontakt med servern. Dokumentet sparades i webbläsaren. Flytta in det på kontot via Ladda när anslutningen är tillbaka.');
+      return;
+    }
+    alert(e.message);
+    throw e;
+  }
+}
+
+/* ── flytta in dokument från webbläsaren ────────────────────────────────── */
+function kontoAvböjFlytt(){
+  try{ localStorage.setItem(UL_FLYTT_AVBOJD+':'+kontoId(),String(Date.now())); }catch(_){}
+  kontoRitaChip();
+}
+function kontoErbjudFlytt(manuellt){
+  if(!kontoAktivt()||!sparLasaAlla().length) return;
+  if(!manuellt){
+    try{
+      if(localStorage.getItem(UL_FLYTT_AVBOJD+':'+kontoId())) return;
+      if(sessionStorage.getItem('ul-dela-kod')) return;
+    }catch(_){}
+    if(document.getElementById('delamodal')?.hidden===false) return;
+    if(document.getElementById('sparmodal')?.hidden===false) return;
+  }
+  delningÖppnaModal({vy:'flytt'});
+}
+function kontoRitaFlytt(){
+  document.getElementById('delamodalTitel').textContent='Flytta in dina dokument';
+  document.getElementById('delamodalText').textContent='Spara dem på kontot i stället för i webbläsaren.';
+  const fel=ulModalLäge.fel?`<div class="ul-fel" role="alert">${ulEsc(ulModalLäge.fel)}</div>`:'';
+  const docs=sparLasaAlla().sort((a,b)=>String(b.updatedAt).localeCompare(String(a.updatedAt)));
+  const n=docs.length;
+  if(!n){ ulSätt(`${fel}<p class="ul-intro-text">Det finns inga dokument kvar i webbläsaren.</p>`); return; }
+  const visas=docs.slice(0,8).map(d=>{
+    const kurs=KURSER.find(k=>k.id===d.course);
+    const antal=Array.isArray(d.tasks)?d.tasks.length:0;
+    return `<div class="sparpost"><div><div class="sparpost-namn">${ulEsc(d.name)}</div>
+      <div class="sparpost-meta"><span>${ulEsc(kurs?.titel||d.course||'Okänd kurs')}</span>
+      <span>${antal} ${antal===1?'uppgift':'uppgifter'}</span><span>${ulEsc(ulTid(d.updatedAt))}</span></div></div></div>`;
+  }).join('');
+  ulSätt(`${fel}
+    <p class="ul-intro-text">Det finns ${n} dokument sparade i den här webbläsaren. Flyttar du in dem når du dem från vilken dator som helst och kan dela dem med kollegor.</p>
+    <div class="sparlista">${visas}${n>8?`<p class="ul-liten">… och ${n-8} till.</p>`:''}</div>
+    <div class="ul-knapprad" style="margin-top:16px">
+      <button type="button" class="knapp primär" data-ul="flytta">Flytta in ${n} dokument</button>
+      <button type="button" class="knapp tyst" data-ul="flytt-inte-nu">Inte nu</button>
+    </div>
+    <p class="ul-liten">En säkerhetskopia sparas i webbläsaren. Du kan också flytta in dokumenten senare via kontomenyn eller Ladda.</p>`);
+}
+async function kontoFlyttaIn(){
+  const docs=sparLasaAlla();
+  const klara=[];
+  let fel=0, senasteFel=null;
+  for(const d of docs){
+    try{
+      if(!d?.course) throw new Error('Dokumentet saknar kurs.');
+      const data={version:1,kind:d.kind||d.settings?.documentType||'ovning',course:d.course,track:d.track||null,
+        settings:d.settings||{},tasks:Array.isArray(d.tasks)?d.tasks:[]};
+      await ulRpc('ul_importera',{p_namn:(d.name||'Dokument').slice(0,120),p_kurs:d.course,p_data:data,
+        p_skapad:d.createdAt||null,p_uppdaterad:d.updatedAt||null});
+      klara.push(d.id);
+    }catch(e){
+      if(['natverk','saknas','ej_inloggad','ej_larare'].includes(e.kod)&&!klara.length) throw e;
+      fel++; senasteFel=e;
+      if(['natverk','ej_inloggad','ej_larare'].includes(e.kod)) break;
+    }
+  }
+  if(klara.length){
+    const flyttade=docs.filter(d=>klara.includes(d.id));
+    try{
+      let gamla=JSON.parse(localStorage.getItem(SPAR_BACKUP_KEY)||'[]');
+      if(!Array.isArray(gamla)) gamla=[];
+      localStorage.setItem(SPAR_BACKUP_KEY,JSON.stringify([...flyttade,...gamla].slice(0,200)));
+    }catch(_){}
+    sparSkrivAlla(sparLasaAlla().filter(d=>!klara.includes(d.id)));
+    if(klara.includes(AKTIV_SPAR_ID)){ AKTIV_SPAR_ID=null; sparStatus(''); sparAutosparaNu(); }
+  }
+  kontoAvböjFlytt();
+  const kvar=docs.length-klara.length;
+  if(kvar){
+    throw new Error(`${klara.length} dokument flyttades. ${kvar} ligger kvar i webbläsaren`
+      +(senasteFel?.message?`: ${senasteFel.message}`:'.'));
+  }
+  delningStängModal();
+  ulMeddela(`${klara.length} ${klara.length===1?'dokument är flyttat':'dokument är flyttade'} till kontot. Du hittar dem under Ladda.`);
+}
+
+/* ── start ──────────────────────────────────────────────────────────────── */
+(async()=>{
+  const el=grindEl();
+  el.addEventListener('click',grindKlick);
+  el.addEventListener('submit',grindSkicka);
+  document.addEventListener('click',e=>{
+    const val=e.target.closest('[data-konto-val]');
+    if(val){ kontoStängMeny(); kontoMenyVal(val.dataset.kontoVal); return; }
+    const knapp=e.target.closest('[data-konto-knapp]');
+    if(knapp){
+      const plats=knapp.closest('[data-konto-plats]');
+      const öppna=knapp.nextElementSibling.hidden;
+      kontoStängMeny();
+      if(öppna){
+        kontoRitaChip();   /* aktuella siffror i menyn */
+        const k=plats.querySelector('[data-konto-knapp]');
+        k.nextElementSibling.hidden=false; k.setAttribute('aria-expanded','true');
+      }
+      return;
+    }
+    if(!e.target.closest('.konto-meny')) kontoStängMeny();
+  });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') kontoStängMeny(); });
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='hidden') kontoSkickaVidStängning();
+    else kontoKollaUtkast();
+  });
+  window.addEventListener('pagehide',kontoSkickaVidStängning);
+  window.addEventListener('focus',()=>kontoKollaUtkast());
+  window.addEventListener('online',()=>{ if(KONTO.osända.size) kontoSkickaUtkast(); });
+
+  await UL_KLAR;
+  if(ulInloggningsfel){
+    const f=ulInloggningsfel; ulInloggningsfel=null;
+    return grindRita('val',{fel:'Inloggningen med Google misslyckades: '+f});
+  }
+  if(!ulSession){
+    if(ulLösenordUpplåst()) return grindÖppna('losenord');
+    return grindRita('val');
+  }
+  grindRita('laddar');
+  await kontoKontrollera();
+})();
 </script>
 </body>
 </html>
