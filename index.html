@@ -10226,8 +10226,13 @@ async function delningRitaAdmin(){
   underrubrik.textContent='Godkänn lärare som ska kunna använda Uppgiftslabbet.';
   const el=ulSätt(`${fel}<button type="button" class="ul-textknapp ul-tillbaka" data-ul="admin-tillbaka">← Tillbaka</button>
     <div id="ulAdminLista"><div class="ul-laddar">Hämtar förfrågningar…</div></div>`);
-  let lista;
-  try{ lista=await ulRpc('ul_ansokningar'); }
+  let lista, utan=[];
+  try{
+    [lista,utan]=await Promise.all([
+      ulRpc('ul_ansokningar'),
+      ulRpc('ul_konton_utan_ansokan').catch(e=>{ if(e.kod==='saknas') return []; throw e; })
+    ]);
+  }
   catch(e){ const l=document.getElementById('ulAdminLista'); if(l) l.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`; return; }
   const l=document.getElementById('ulAdminLista');
   if(!l||ulModalLäge.vy!=='admin') return;
@@ -10253,9 +10258,26 @@ async function delningRitaAdmin(){
         <button type="button" class="knapp primär liten" data-ul="kopiera-tillfalligt">Kopiera</button></div>
       <span>Ge lösenordet till läraren. Hen loggar in med ${ulEsc(x.konto||'sin adress')} och väljer ett nytt lösenord direkt. Lösenordet visas bara nu.</span>
     </div>`:''}`;
-  l.innerHTML=grupper.map(([st,rubrik,knappar])=>{
+  const utanKort=x=>`<div class="ul-ansokan">
+      <div class="ul-ansokan-text">
+        <b>${ulEsc(x.namn)}</b>
+        <span>${x.skola?ulEsc(x.skola)+' · ':''}${ulEsc(x.konto)}</span>
+        <span class="ul-liten">Skapade kontot ${ulEsc(ulTid(x.skapad))} · ${x.bekraftad
+          ?(x.inloggad?'har loggat in men inte skickat någon ansökan':'har inte loggat in ännu')
+          :'e-postadressen är inte bekräftad, så hen kan inte logga in'}</span>
+      </div>
+      <div class="ul-ansokan-knappar">
+        <button type="button" class="knapp liten primär" data-konto-godkann="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">Godkänn</button>
+        <button type="button" class="knapp liten tyst" data-konto-bort="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}" data-konto="${ulEsc(x.konto)}">Ta bort</button>
+      </div>
+    </div>`;
+  const utanSektion=utan.length?`<div class="ul-sektion"><div class="ul-etikett">Konton utan ansökan (${utan.length})</div>
+      ${utan.map(utanKort).join('')}
+      <p class="ul-liten">Lärare som skapat konto med e-post men inte kommit vidare till ansökan. Godkänn bekräftar också e-postadressen, så att hen kan logga in direkt.</p></div>`:'';
+  l.innerHTML=utanSektion+grupper.map(([st,rubrik,knappar])=>{
     const rader=lista.filter(x=>x.status===st);
     if(st!=='vantar'&&!rader.length) return '';
+    if(st==='vantar'&&!rader.length&&utan.length) return '';
     return `<div class="ul-sektion"><div class="ul-etikett">${rubrik} (${rader.length})</div>
       ${rader.length?rader.map(x=>kort(x,knappar)).join(''):'<p class="ul-liten">Inga väntande förfrågningar.</p>'}</div>`;
   }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här. Den som glömt sitt lösenord får ett tillfälligt av dig.</p>`;
@@ -10405,7 +10427,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -10427,6 +10449,21 @@ async function delningModalKlick(e){
       await ulRpc('ul_besluta',{p_user:knapp.dataset.anvandare,p_status:st});
       await ulHämtaBehörighet(true);
       ulMeddela(st==='godkand'?`${namn} är godkänd som lärare.`:`${namn} har inte behörighet.`);
+    });
+  }
+  if(knapp.dataset.kontoGodkann){
+    const namn=knapp.dataset.namn;
+    return kör(async()=>{
+      await ulRpc('ul_godkann_konto',{p_user:knapp.dataset.kontoGodkann});
+      await ulHämtaBehörighet(true);
+      ulMeddela(`${namn} är godkänd och kan logga in.`);
+    });
+  }
+  if(knapp.dataset.kontoBort){
+    if(!confirm(`Ta bort kontot ${knapp.dataset.konto}? Personen kan skapa ett nytt konto senare.`)) return;
+    return kör(async()=>{
+      await ulRpc('ul_ta_bort_konto',{p_user:knapp.dataset.kontoBort});
+      await ulHämtaBehörighet(true);
     });
   }
   if(knapp.dataset.tillfalligt){
@@ -10630,7 +10667,7 @@ function ulAuthFel(status,d){
   const text=String(d?.msg||d?.error_description||d?.message||'');
   const t=(String(d?.error_code||d?.code||d?.error||'')+' '+text).toLowerCase();
   if(/invalid_credentials|invalid login credentials|invalid_grant/.test(t)) return 'Fel e-postadress eller lösenord.';
-  if(/email_not_confirmed|not confirmed/.test(t)) return 'E-postadressen är inte bekräftad. Be administratören kontrollera inställningen för e-postbekräftelse.';
+  if(/email_not_confirmed|not confirmed/.test(t)) return 'Kontot är inte godkänt ännu. Öppna bekräftelsemejlet om du har fått ett, eller försök igen när kontot är godkänt.';
   if(/user_already_exists|already registered|already been registered/.test(t)) return 'Det finns redan ett konto med den adressen. Logga in i stället.';
   if(/weak_password|password should/.test(t)) return 'Lösenordet är för svagt. Välj ett längre lösenord, gärna med siffror.';
   if(status===429||/rate_limit|too many/.test(t)) return 'För många försök. Vänta en stund och försök igen.';
@@ -10750,9 +10787,9 @@ function grindRita(vy,opt={}){
           <label for="gAnsNamn">Namn</label>
           <input id="gAnsNamn" autocomplete="name" maxlength="120" value="${ulEsc(v.namn??a?.namn??m.full_name??m.name??'')}">
           <label for="gAnsSkola">Skola</label>
-          <input id="gAnsSkola" autocomplete="organization" maxlength="160" placeholder="T.ex. Erik Dahlbergsgymnasiet" value="${ulEsc(v.skola??a?.skola??'')}">
+          <input id="gAnsSkola" autocomplete="organization" maxlength="160" placeholder="T.ex. Erik Dahlbergsgymnasiet" value="${ulEsc(v.skola??a?.skola??m.skola??'')}">
           <label for="gAnsMejl">Jobbmejl</label>
-          <input id="gAnsMejl" type="email" autocomplete="email" maxlength="200" placeholder="fornamn.efternamn@jonkoping.se" value="${ulEsc(v.epost??a?.jobbmejl??'')}">
+          <input id="gAnsMejl" type="email" autocomplete="email" maxlength="200" placeholder="fornamn.efternamn@jonkoping.se" value="${ulEsc(v.epost??a?.jobbmejl??m.jobbmejl??'')}">
           <button type="submit" class="grind-knapp primär" style="margin-top:14px">Skicka ansökan</button>
         </form>
         ${a?.status==='vantar'?'<button type="button" class="grind-lank" style="margin-top:0" data-g="vantar">← Avbryt</button>':''}
@@ -10862,13 +10899,14 @@ async function grindSkicka(e){
       if(l1.length>72) return stopp('Lösenordet får ha högst 72 tecken.','gNyLosen');
       if(l1!==l2) return stopp('Lösenorden är inte lika.','gNyLosen2');
       let r;
-      try{ r=await ulAuth('signup',{email:värden.epost,password:l1,data:{full_name:värden.namn}}); }
+      try{ r=await ulAuth('signup',{email:värden.epost,password:l1,
+        data:{full_name:värden.namn,skola:värden.skola,jobbmejl:värden.epost,app:'uppgiftslabbet'}}); }
       catch(err){
         if(/redan ett konto/.test(err.message)) return grindRita('epost',{fel:err.message,värden});
         return stopp(err.message,'gNyEpost');
       }
       if(!r?.access_token){
-        return grindRita('epost',{värden,info:'Kontot är skapat, men e-postadressen behöver bekräftas innan du kan logga in. Öppna mejlet från Supabase eller be administratören stänga av e-postbekräftelsen.'});
+        return grindRita('epost',{värden,info:'Kontot är skapat och väntar på att godkännas. Har du fått ett mejl med en bekräftelselänk kan du öppna den. Annars kan du logga in här när kontot är godkänt.'});
       }
       ulSparaSession(ulSessionFrånSvar(r));
       grindRita('laddar',{text:'Skickar ansökan…'});
@@ -10928,6 +10966,16 @@ async function kontoKontrollera({tyst=false}={}){
     return kontoInloggad();
   }
   kontoCacheRensa();
+  /* Kontot skapades här men ansökan hann inte skickas (e-postbekräftelse).
+     Uppgifterna från registreringen finns på kontot och skickas nu. */
+  const meta=ulSession?.user?.user_metadata||{};
+  if(!beh.ansokan&&meta.app==='uppgiftslabbet'&&meta.full_name&&meta.skola&&kontoMejlOk(meta.jobbmejl||'')&&!KONTO.autoAnsökt){
+    KONTO.autoAnsökt=true;
+    try{
+      await ulRpc('ul_ansok',{p_namn:meta.full_name,p_skola:meta.skola,p_jobbmejl:meta.jobbmejl});
+      return kontoKontrollera({tyst});
+    }catch(_){}
+  }
   if(ulLösenordUpplåst()) return grindÖppna('losenord');
   if(tyst&&KONTO.vy==='vantar'&&beh.ansokan?.status==='vantar') return;
   if(beh.ansokan?.status==='vantar') return grindRita('vantar');
