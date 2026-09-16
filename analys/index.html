@@ -671,6 +671,19 @@ h1 .swash{color:var(--ed,#B43123)}
 .meta-note{font-size:12px;color:var(--faint);margin:7px 0 0}
 @media(max-width:620px){.analysis-logo{width:42px;height:42px;flex-basis:42px}.analysis-logo img{width:38px;height:38px}}
 
+
+/* ── Konto och molnsparning ── */
+.analysis-actions{display:flex;align-items:center;gap:10px;flex:none}
+.cloud-account{display:flex;align-items:center;gap:8px;min-height:38px;padding:7px 11px;border:1px solid var(--line-strong);border-radius:11px;background:var(--card);font-size:12px;color:var(--muted);white-space:nowrap}
+.cloud-account .cloud-dot{width:7px;height:7px;border-radius:50%;background:var(--faint);flex:none}
+.cloud-account.cloud-ok .cloud-dot{background:var(--good)}
+.cloud-account.cloud-warn .cloud-dot{background:var(--mid)}
+.cloud-account.cloud-error .cloud-dot{background:var(--weak)}
+.cloud-account strong{font-weight:600;color:var(--ink)}
+.cloud-account a{color:var(--indigo-d);text-decoration:none;font-weight:600}
+.cloud-account a:hover{text-decoration:underline}
+@media(max-width:720px){.cloud-account{max-width:48vw;white-space:normal;line-height:1.25}.analysis-actions{align-items:flex-start}}
+
 </style>
 </head>
 <body>
@@ -684,7 +697,10 @@ h1 .swash{color:var(--ed,#B43123)}
         <div class="spectrum-rule" aria-hidden="true"></div>
       </div>
     </div>
-    <button id="themeToggle" class="theme-toggle" title="Växla ljust/mörkt läge" aria-label="Växla ljust/mörkt läge">🌙</button>
+    <div class="analysis-actions">
+      <div id="cloudAccount" class="cloud-account" role="status" aria-live="polite"><span class="cloud-dot" aria-hidden="true"></span><span>Kontrollerar konto…</span></div>
+      <button id="themeToggle" class="theme-toggle" title="Växla ljust/mörkt läge" aria-label="Växla ljust/mörkt läge">🌙</button>
+    </div>
   </header>
   <nav class="tabs" aria-label="Arbetsgång"><div class="tabbar">
     <button class="tab active" data-tab="build"><span class="n">1</span><span class="tx"><span class="tt">Skapa prov</span></span></button>
@@ -879,7 +895,7 @@ h1 .swash{color:var(--ed,#B43123)}
       </div>
     </div>
   </section>
-  <footer class="foot">Allt du skriver sparas i den här webbläsaren. Spara resultaten till fil så finns de kvar på din dator även om webbläsarens historik rensas.</footer>
+  <footer class="foot" id="storageFoot">Allt du skriver sparas i den här webbläsaren. När du är inloggad i Uppgiftslabbet sparas klasser och resultat även på ditt konto.</footer>
 </div>
 <datalist id="areaPool"></datalist>
 <div id="printArea"></div>
@@ -911,8 +927,24 @@ function defaultState(){ return {testName:"",areas:[],tasks:[],grades:{e:"",d:""
 const WORKKEY="pa_work_v1";
 let work={groups:[],tests:[],curGid:null,curTid:null,legacy:[]};
 
+/* Samma Supabase-session används på hela uppgiftslabbet.se. Resultatanalyseraren
+   läser därför lärarens befintliga inloggning och behöver ingen separat login. */
+const UL_URL='https://lynobdhncyhnogiafsdb.supabase.co';
+const UL_NYCKEL='sb_publishable_Goz662Lr8mb0-h3J6GzdKQ_v8Zq4apt';
+const UL_SESSION_KEY='uppgiftslabbet-delning-session-v1';
+const CLOUD_DIRTY_KEY='pa_cloud_dirty_v1';
+let cloudSession=null, cloudReady=false, cloudBooting=true, cloudSaveTimer=null, cloudSaving=false, cloudPending=false;
+
+
 function newId(pre){ return pre+Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
-function saveWork(){ try{ localStorage.setItem(WORKKEY,JSON.stringify(work)); }catch(e){} }
+function saveWork(mark=true){
+  if(mark) work.updatedAt=Date.now();
+  try{ localStorage.setItem(WORKKEY,JSON.stringify(work)); }catch(e){}
+  if(!cloudBooting && cloudSession?.access_token){
+    try{ localStorage.setItem(CLOUD_DIRTY_KEY,'1'); }catch(e){}
+    cloudScheduleSave();
+  }
+}
 function curTest(){ return work.tests.find(t=>t.id===work.curTid)||null; }
 function curGroup(){ return work.groups.find(g=>g.id===work.curGid)||null; }
 /* Ordningen är den i listan, inte den kronologiska, eftersom prov ofta läggs in
@@ -973,7 +1005,7 @@ function loadWork(){
   work.curGid=work.groups[0].id;
   const first=groupTests(work.curGid)[0];
   work.curTid=first?first.id:null;
-  saveWork();
+  saveWork(false);
   return true;
 }
 
@@ -1091,6 +1123,137 @@ function normalizeState(s){ const d=defaultState(); s=Object.assign(d,s||{}); s.
     return {id:t.id,areas:Array.isArray(t.areas)?t.areas:[],level:t.level||null,weights:(t.weights&&typeof t.weights==="object")?t.weights:{},parts,
       source:(t.source&&typeof t.source==="object")?t.source:null}; });
   s.students=(s.students||[]).map(st=>({id:st.id,name:st.name||"",scores:st.scores||{},absent:!!st.absent,comment:st.comment||""})); return s; }
+
+/* ═════════ MOLNSPARNING MED SAMMA LÄRARKONTO ═════════ */
+function cloudLasSession(){
+  try{ cloudSession=JSON.parse(localStorage.getItem(UL_SESSION_KEY))||null; }catch(_){ cloudSession=null; }
+  return cloudSession;
+}
+function cloudSparaSession(s){
+  cloudSession=s;
+  try{ s?localStorage.setItem(UL_SESSION_KEY,JSON.stringify(s)):localStorage.removeItem(UL_SESSION_KEY); }catch(_){}
+}
+function cloudHeaders(auth=true){
+  const h={apikey:UL_NYCKEL,'Content-Type':'application/json'};
+  if(auth&&cloudSession?.access_token) h.Authorization='Bearer '+cloudSession.access_token;
+  return h;
+}
+function cloudNamn(){
+  const u=cloudSession?.user, m=u?.user_metadata||{};
+  return m.full_name||m.name||u?.email||'ditt konto';
+}
+function cloudStatus(kind,text,html=false){
+  const el=document.getElementById('cloudAccount'); if(!el) return;
+  el.className='cloud-account'+(kind?' cloud-'+kind:'');
+  const dot='<span class="cloud-dot" aria-hidden="true"></span>';
+  if(html) el.innerHTML=dot+'<span>'+text+'</span>';
+  else { el.innerHTML=dot+'<span></span>'; el.lastElementChild.textContent=text; }
+}
+function cloudFoot(text){ const el=document.getElementById('storageFoot'); if(el) el.textContent=text; }
+async function cloudGiltigSession(){
+  cloudLasSession();
+  if(!cloudSession?.access_token) return false;
+  const kvar=(cloudSession.expires_at||0)-Date.now()/1000;
+  if(kvar<=90){
+    if(!cloudSession.refresh_token) return false;
+    try{
+      const r=await fetch(UL_URL+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:cloudHeaders(false),body:JSON.stringify({refresh_token:cloudSession.refresh_token})});
+      if(!r.ok) return kvar>0;
+      const d=await r.json();
+      cloudSparaSession({access_token:d.access_token,refresh_token:d.refresh_token||cloudSession.refresh_token,
+        expires_at:d.expires_at||Math.floor(Date.now()/1000)+(d.expires_in||3600),user:d.user||cloudSession.user||null});
+    }catch(_){ return kvar>0; }
+  }
+  if(!cloudSession.user){
+    try{
+      const r=await fetch(UL_URL+'/auth/v1/user',{headers:cloudHeaders(true)});
+      if(r.ok){ cloudSession.user=await r.json(); cloudSparaSession(cloudSession); }
+    }catch(_){}
+  }
+  return !!(cloudSession?.access_token && cloudSession?.user?.id);
+}
+function cloudHarLokaltInnehall(){
+  return !!((work.groups||[]).some(g=>(g.cls||'').trim()&&g.cls!=='Namnlös klass') || (work.tests||[]).some(t=>{
+    const st=t.state||{}; return (st.testName||'').trim() || (st.students||[]).some(x=>(x.name||'').trim()) || (st.tasks||[]).length>2;
+  }));
+}
+async function cloudHamta(){
+  const uid=cloudSession?.user?.id; if(!uid) return null;
+  const q=UL_URL+'/rest/v1/analysis_workspaces?user_id=eq.'+encodeURIComponent(uid)+'&select=data,updated_at';
+  const r=await fetch(q,{headers:cloudHeaders(true)});
+  if(r.status===404) { const e=new Error('Molnlagringen är inte installerad ännu.'); e.code='missing'; throw e; }
+  if(!r.ok){ const e=new Error('Kunde inte läsa dina sparade analyser.'); e.status=r.status; throw e; }
+  const rows=await r.json(); return rows[0]||null;
+}
+async function cloudSparaNu(){
+  if(!cloudReady||cloudSaving||!cloudSession?.user?.id) { if(cloudSaving) cloudPending=true; return; }
+  cloudSaving=true;
+  try{
+    const uid=cloudSession.user.id;
+    const body=[{user_id:uid,data:work}];
+    const r=await fetch(UL_URL+'/rest/v1/analysis_workspaces?on_conflict=user_id',{method:'POST',headers:{...cloudHeaders(true),Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify(body)});
+    if(r.status===404){ const e=new Error('Molnlagringen är inte installerad ännu.'); e.code='missing'; throw e; }
+    if(!r.ok) throw new Error('Kunde inte spara till kontot.');
+    try{ localStorage.removeItem(CLOUD_DIRTY_KEY); }catch(_){}
+    cloudStatus('ok','Sparat · '+cloudNamn());
+    cloudFoot('Klasser, prov och elevresultat sparas både i den här webbläsaren och på ditt lärarkonto.');
+  }catch(e){
+    try{ localStorage.setItem(CLOUD_DIRTY_KEY,'1'); }catch(_){}
+    cloudStatus(e.code==='missing'?'warn':'error',e.code==='missing'?'Molnsparning behöver installeras':'Lokalt sparat · synkfel');
+    cloudFoot('Arbetet är sparat i den här webbläsaren. Molnsynkningen kunde inte slutföras just nu.');
+  }finally{
+    cloudSaving=false;
+    if(cloudPending){ cloudPending=false; cloudScheduleSave(150); }
+  }
+}
+function cloudScheduleSave(ms=900){
+  if(!cloudReady||!cloudSession?.access_token) return;
+  clearTimeout(cloudSaveTimer); cloudSaveTimer=setTimeout(()=>cloudSparaNu(),ms);
+}
+function cloudNormaliseraWork(w){
+  if(!w||!Array.isArray(w.groups)||!Array.isArray(w.tests)) return null;
+  w=Object.assign({groups:[],tests:[],curGid:null,curTid:null,legacy:[],updatedAt:0},w);
+  w.groups=w.groups.map(g=>({id:g.id||newId('g'),cls:g.cls||'Namnlös klass',course:g.course||''}));
+  if(!w.groups.length) w.groups.push({id:newId('g'),cls:'Namnlös klass',course:''});
+  const gids=new Set(w.groups.map(g=>g.id));
+  w.tests=w.tests.filter(t=>gids.has(t.gid)).map(t=>({id:t.id||newId('t'),gid:t.gid,savedAt:t.savedAt||Date.now(),updatedAt:t.updatedAt||t.savedAt||Date.now(),state:normalizeState(t.state)}));
+  if(!gids.has(w.curGid)) w.curGid=w.groups[0].id;
+  const current=w.tests.find(t=>t.id===w.curTid&&t.gid===w.curGid);
+  if(!current) w.curTid=(w.tests.find(t=>t.gid===w.curGid)||{}).id||null;
+  return w;
+}
+async function cloudInit(){
+  if(!(await cloudGiltigSession())){
+    cloudBooting=false; cloudReady=false;
+    cloudStatus('', 'Endast den här webbläsaren', true);
+    cloudFoot('Allt du skriver sparas i den här webbläsaren. Logga in i Uppgiftslabbet för att även spara klasser och resultat på ditt konto.');
+    return;
+  }
+  cloudStatus('warn','Synkar · '+cloudNamn());
+  let dirty=false; try{ dirty=localStorage.getItem(CLOUD_DIRTY_KEY)==='1'; }catch(_){}
+  try{
+    const row=await cloudHamta();
+    const remote=cloudNormaliseraWork(row?.data);
+    if(remote && !dirty){
+      work=remote;
+      saveWork(false);
+    }else if(!remote || dirty){
+      if(!work.updatedAt) work.updatedAt=Date.now();
+    }
+    cloudBooting=false; cloudReady=true;
+    if(!remote || dirty) await cloudSparaNu();
+    else {
+      cloudStatus('ok','Sparat · '+cloudNamn());
+      cloudFoot('Klasser, prov och elevresultat sparas både i den här webbläsaren och på ditt lärarkonto.');
+    }
+  }catch(e){
+    cloudBooting=false; cloudReady=false;
+    cloudStatus(e.code==='missing'?'warn':'error',e.code==='missing'?'Molnsparning behöver installeras':'Endast lokalt · synkfel');
+    cloudFoot(e.code==='missing'
+      ?'Allt sparas lokalt. Kör SQL-filen för Resultatanalyserarens molnlagring i Supabase för att aktivera kontosparning.'
+      :'Allt sparas lokalt tills kontakten med kontot fungerar igen.');
+  }
+}
 
 /* ===== 2. HJÄLP ===== */
 const $=s=>document.querySelector(s);
@@ -1793,9 +1956,9 @@ function renderDetails(){
    Jämförelsen räknas från varje sparat prov. Därmed kan även återkommande
    förmågor följas över tid när provet kommer från Uppgiftslabbet.
 
-   Allt ligger i webbläsarens eget lagringsutrymme och lämnar aldrig datorn. Den
-   som vill flytta historiken till en annan dator exporterar den till fil. Därför
-   finns också en knapp för att radera en klass helt. */
+   Arbetsytan sparas alltid lokalt. När ett lärarkonto är aktivt synkas samma
+   arbetsyta även till kontots privata Supabase-rad med RLS. Export till fil finns
+   kvar som portabel säkerhetskopia och för manuell överföring. */
 /* ═════════ UTVECKLING ÖVER TID ═════════
    Jämförelsen räknas fram ur klassens prov varje gång fliken visas. Ingenting
    sparas separat, så en rättad poäng slår igenom direkt i utvecklingen. */
@@ -2342,9 +2505,10 @@ function importeraFranUppgiftslabbet(p){
   return true;
 }
 
-function init(){
+async function init(){
   const fresh=loadWork();
   wire(); initTheme();
+  await cloudInit();
 
   const incoming=hamtaUppgiftslabbetOverforing();
   if(incoming && importeraFranUppgiftslabbet(incoming)) return;
@@ -2359,7 +2523,7 @@ function init(){
   }
   renderLibrary(); renderWorkbar(); renderPipeline();
 }
-init();
+init().catch(e=>{ console.error(e); cloudStatus('error','Analysen kunde inte starta'); });
 </script>
 </body>
 </html>
