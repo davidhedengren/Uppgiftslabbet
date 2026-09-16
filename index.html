@@ -45,6 +45,19 @@
 }
 </script>
 <script>
+/* Delning: inbjudningskod (?dela=) och inloggningssvar (#access_token=) sparas
+   innan appen skriver om adressen till en ren kursadress. */
+(()=>{try{
+  const u=new URL(location.href);
+  const kod=u.searchParams.get('dela');
+  if(kod){ sessionStorage.setItem('ul-dela-kod',kod); u.searchParams.delete('dela'); }
+  if(/(^#|&)(access_token|error|error_description)=/.test(location.hash)){
+    sessionStorage.setItem('ul-oauth-svar',location.hash); u.hash='';
+  }
+  if(u.href!==location.href) history.replaceState(history.state,'',u.pathname+u.search+u.hash);
+}catch(_){}})();
+</script>
+<script>
 (function(){
   const routes={
     "/": {
@@ -4642,6 +4655,74 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   .mittopp .kryssgrupp{grid-column:3}
 }
 </style>
+<style>
+/* ═══ delade dokument ═══ */
+.spararad #delaDokument.delat{color:var(--ed-dark);border-color:color-mix(in srgb,var(--ed) 35%,transparent);background:var(--ed-tint)}
+.delningsrad{display:flex;align-items:center;gap:9px;margin-top:9px;padding:8px 10px;border:1px solid var(--line);
+  border-radius:11px;background:var(--surface);font-size:11.5px;line-height:1.3;min-width:0}
+.delningsrad[hidden]{display:none}
+.delningsrad .dr-ikon{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
+  background:var(--ed-tint);color:var(--ed-dark)}
+.delningsrad .dr-ikon svg{width:16px;height:16px}
+.delningsrad .dr-text{display:grid;min-width:0;flex:1}
+.delningsrad .dr-text b{font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.delningsrad .dr-text span{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.delningsrad.fel .dr-text span{color:var(--ed-dark)}
+.delningsrad.vilande{background:var(--canvas)}
+.delningsrad .dr-knapp{flex:none;border:1px solid var(--line);background:var(--surface);border-radius:8px;
+  padding:5px 9px;font:inherit;font-weight:600;cursor:pointer}
+.dr-personer{display:flex;flex:none}
+.dr-person{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:10px;font-weight:700;
+  color:#fff;background:#5B6B8C;border:2px solid var(--surface);margin-left:-6px;letter-spacing:.02em}
+.dr-person:first-child{margin-left:0}
+.dr-person.fler{background:var(--muted)}
+.dr-person.aktiv{background:#2E7D52}
+.ul-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  z-index:900;max-width:min(520px,calc(100vw - 32px));padding:11px 16px;border-radius:12px;background:#22262e;
+  color:#fff;font-size:13px;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:.25s ease}
+.ul-toast.synlig{opacity:1;transform:translate(-50%,0)}
+#delamodal .sparmodal-kort{width:min(600px,100%)}
+.ul-sektion{padding:14px 0;border-top:1px solid var(--line-2,#EFEEF0)}
+.ul-sektion:first-child{padding-top:2px;border-top:0}
+.ul-etikett{display:block;margin-bottom:7px;font-size:12px;font-weight:700;color:var(--ink)}
+.ul-rad,.ul-länk{display:flex;gap:8px}
+.ul-rad input,.ul-länk input{flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 11px;
+  font:inherit;font-size:13.5px;background:var(--surface);color:var(--ink)}
+.ul-rad input:focus,.ul-länk input:focus{outline:0;border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring)}
+.ul-länk input{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--ink-2)}
+.ul-liten{margin:7px 0 0;font-size:11.5px;color:var(--muted);line-height:1.45}
+.ul-kod{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;color:var(--ink)}
+.ul-intro p{margin:0 0 10px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.ul-google{display:inline-flex;align-items:center;gap:9px;margin-top:6px}
+.ul-google svg{width:18px;height:18px;background:#fff;border-radius:50%;padding:2px}
+.ul-fel{margin:0 0 12px;padding:10px 12px;border-radius:10px;background:var(--ed-tint);color:var(--ed-dark);
+  font-size:12.5px;line-height:1.45}
+.ul-laddar{padding:14px 0;color:var(--muted);font-size:12.5px}
+.ul-medlemmar{display:grid;gap:8px}
+.ul-medlem{display:flex;align-items:center;gap:10px;min-width:0}
+.ul-medlem .dr-person{margin-left:0;width:30px;height:30px;font-size:11px}
+.ul-medlem-text{display:grid;flex:1;min-width:0;font-size:12.5px}
+.ul-medlem-text span{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ul-roll{font-size:11px;color:var(--muted)}
+.ul-textknapp{border:0;background:none;padding:4px 6px;border-radius:7px;font:inherit;font-size:12px;
+  font-weight:600;color:var(--ed-dark);cursor:pointer}
+.ul-textknapp:hover{background:var(--sunken)}
+.ul-versioner summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--ink)}
+.ul-versioner[open] summary{margin-bottom:8px}
+.ul-version{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 0;font-size:12px;
+  color:var(--ink-2);border-bottom:1px solid var(--line-2,#EFEEF0)}
+.ul-version .ul-liten{margin:0}
+.ul-farlig{display:flex;flex-wrap:wrap;gap:8px}
+.ul-farlig .knapp{font-size:12px;padding:7px 11px}
+.ul-rod{color:var(--ed-dark)!important}
+.ul-konto{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px;
+  border-top:1px solid var(--line-2,#EFEEF0);font-size:12px;color:var(--muted)}
+.sparlista-rubrik{margin:2px 0 8px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#delningListaSektion{margin-bottom:18px}
+#delningLista .ul-liten{margin:0 0 4px}
+@media (max-width:560px){ .ul-rad,.ul-länk{flex-direction:column} }
+@media print{ .delningsrad,.ul-toast,#delamodal{display:none!important} }
+</style>
 </head>
 <body class="password-locked">
 
@@ -4871,8 +4952,13 @@ table.data th,table.data td{border-color:var(--x-line)!important}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"/><path d="M12 11h6"/><path d="M15 8v6"/></svg>
             Nytt
           </button>
+          <button class="knapp liten tyst" id="delaDokument" type="button" title="Dela dokumentet med kollegor och arbeta i det samtidigt">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>
+            Dela
+          </button>
           <span class="sparstatus" id="sparstatus" aria-live="polite"></span>
         </div>
+        <div class="delningsrad" id="delningsrad" hidden aria-live="polite"></div>
       </div>
     </div>
 
@@ -5383,6 +5469,7 @@ function sparAutosparaNu(){
     version:2,activeSaveId:AKTIV_SPAR_ID,course:AKTIV.id,track:state.spår||null,
     settings:sparInstallningar(),
     tasks:state.blad.map((x,i)=>({bankId:x.id||null,order:i,snapshot:sparSnapshotUppgift(x)})),
+    shared:(typeof delningUtkastInfo==='function'?delningUtkastInfo():null),
     updatedAt:new Date().toISOString()
   };
   const karta=sparLasaUtkast(); karta[AKTIV.id]=draft;
@@ -5392,10 +5479,12 @@ function sparAutosparaNu(){
     try{localStorage.setItem(UTKAST_KURS_KEY,JSON.stringify({[AKTIV.id]:draft}));}
     catch(e2){console.warn('Autosparning kunde inte genomföras',e2);}
   }
+  if(typeof delningLokalAndring==='function') delningLokalAndring();
 }
 /* Töm arbetsytan och börja om i den aktuella kursen. */
 function sparNyttDokument(){
   if(!AKTIV) return;
+  if(typeof delningKoppla==='function') delningKoppla(null,{tyst:true});
   state.blad=[];
   AKTIV_SPAR_ID=null;
   if(typeof provAterstallDelar==='function') provAterstallDelar();
@@ -5460,10 +5549,11 @@ function sparRenderLista(){
   $$('[data-spar-radera]',list).forEach(b=>b.addEventListener('click',()=>sparRadera(b.dataset.sparRadera)));
 }
 function sparOppnaLadda(){
-  $('#sparmodalTitel').textContent='Sparade dokument';
-  $('#sparmodalText').textContent='Sparade lokalt i den här webbläsaren.';
+  $('#sparmodalTitel').textContent='Öppna dokument';
+  $('#sparmodalText').textContent='Delade dokument och dokument sparade i den här webbläsaren.';
   $('#sparmodalSpara').hidden=true; $('#sparmodalLadda').hidden=false; $('#sparmodalFot').hidden=true;
   sparRenderLista(); $('#sparmodal').hidden=false;
+  if(typeof delningRitaLista==='function') delningRitaLista();
 }
 async function sparVantaKurs(id,timeout=8000){
   const start=Date.now();
@@ -5488,10 +5578,11 @@ async function sparSakerstallKurs(courseId){
 function sparAppliceraInstallningar(d){
   const st=d.settings||{};
   const dokumenttyp=st.documentType||d.kind||d.type;
-  if($('#bladTyp')) $('#bladTyp').value=dokumenttyp==='prov'?'prov':'ovning';
-  if($('#bTitel')) $('#bTitel').value=st.title||d.name||'';
-  if($('#bKlass')) $('#bKlass').value=st.className||'';
-  if($('#bDatum')) $('#bDatum').value=st.date||'';
+  const sättVärde=(sel,v)=>{ const el=$(sel); if(el&&el.value!==v) el.value=v; };
+  sättVärde('#bladTyp',dokumenttyp==='prov'?'prov':'ovning');
+  sättVärde('#bTitel',st.title||d.name||'');
+  sättVärde('#bKlass',st.className||'');
+  sättVärde('#bDatum',st.date||'');
   if($('#taMedFacit')) $('#taMedFacit').checked=st.includeSolutions!==false;
   if($('#visaTotalpoangExport')) $('#visaTotalpoangExport').checked=Boolean(st.totalPointsOnly);
   if($('#doljNivaExport')) $('#doljNivaExport').checked=Boolean(st.hideTaskLevel);
@@ -5512,8 +5603,20 @@ function sparAppliceraInstallningar(d){
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
   if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
 }
-async function sparLaddaDokument(doc,{manuell=true}={}){
+/* Bygger bladets uppgifter ur ett sparat eller delat dokument. */
+function sparUppgifterUrDokument(doc){
+  const sparade=Array.isArray(doc?.tasks)?doc.tasks:(Array.isArray(doc?.blad)?doc.blad:[]);
+  return sparade.slice().sort((a,b)=>(a?.order??0)-(b?.order??0)).map(t=>{
+    const snapshot=t?.snapshot||(t&&typeof t==='object'&&(t.t||t.poang)?t:null);
+    const bankId=t?.bankId??t?.id??(typeof t==='string'||typeof t==='number'?t:null);
+    const bank=bankId==null?null:DB.bank.find(x=>String(x.id)===String(bankId));
+    if(snapshot) return Object.assign({},bank||{},sparSnapshotUppgift(snapshot));
+    return bank;
+  }).filter(x=>x&&x.id!=null&&x.t!=null&&x.poang!=null);
+}
+async function sparLaddaDokument(doc,{manuell=true,delat=false}={}){
   if(!doc) return;
+  if(typeof delningFöreLaddning==='function') delningFöreLaddning(doc,{manuell,delat});
   try{
     const kursId=doc.course||doc.courseId||AKTIV?.id;
     if(!kursId) throw new Error('Det sparade dokumentet saknar kursinformation. Öppna rätt kurs och försök igen.');
@@ -5522,19 +5625,13 @@ async function sparLaddaDokument(doc,{manuell=true}={}){
     if(typeof byggSpårfilter==='function') byggSpårfilter();
     if(typeof uppdateraKursTema==='function') uppdateraKursTema();
     if(typeof uppdateraKursRubriker==='function') uppdateraKursRubriker();
-    const sparade=Array.isArray(doc.tasks)?doc.tasks:(Array.isArray(doc.blad)?doc.blad:[]);
-    state.blad=sparade.slice().sort((a,b)=>(a?.order??0)-(b?.order??0)).map(t=>{
-      const snapshot=t?.snapshot||(t&&typeof t==='object'&&(t.t||t.poang)?t:null);
-      const bankId=t?.bankId??t?.id??(typeof t==='string'||typeof t==='number'?t:null);
-      const bank=bankId==null?null:DB.bank.find(x=>String(x.id)===String(bankId));
-      if(snapshot) return Object.assign({},bank||{},sparSnapshotUppgift(snapshot));
-      return bank;
-    }).filter(x=>x&&x.id!=null&&x.t!=null&&x.poang!=null);
+    state.blad=sparUppgifterUrDokument(doc);
     sparAppliceraInstallningar(doc);
     AKTIV_SPAR_ID=manuell?doc.id:(doc.activeSaveId||null);
     byggTräd(); rita(); ritaBlad(); sparStangModal();
     sparStatus(manuell?'Laddat · '+sparFormatTid(doc.updatedAt):'Utkast återställt',true);
     sparAutosparaNu();
+    if(typeof delningEfterLaddning==='function') delningEfterLaddning(doc,{manuell,delat});
   }catch(e){
     console.error('Kunde inte ladda dokument',e);
     alert('Dokumentet kunde inte laddas. '+(e?.message||e));
@@ -8486,6 +8583,11 @@ if(DIREKTKURS){
         </div>
       </div>
       <div id="sparmodalLadda" hidden>
+        <div id="delningListaSektion" hidden>
+          <div class="sparlista-rubrik">Delade med kollegor</div>
+          <div class="sparlista" id="delningLista"></div>
+        </div>
+        <div class="sparlista-rubrik">Sparade i den här webbläsaren</div>
         <div class="sparlista" id="sparlista"></div>
       </div>
     </div>
@@ -8493,6 +8595,22 @@ if(DIREKTKURS){
       <button class="knapp tyst" id="sparAvbryt" type="button">Avbryt</button>
       <button class="knapp primär" id="sparBekrafta" type="button">Spara</button>
     </div>
+  </div>
+</div>
+
+<div class="sparmodal" id="delamodal" hidden aria-modal="true" role="dialog" aria-labelledby="delamodalTitel">
+  <div class="sparmodal-kort">
+    <div class="sparmodal-huvud">
+      <div>
+        <h2 id="delamodalTitel">Dela med kollegor</h2>
+        <p id="delamodalText"></p>
+      </div>
+      <div class="fyll"></div>
+      <button class="sparmodal-stang" id="delamodalStang" type="button" aria-label="Stäng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="sparmodal-body" id="delaInnehall"></div>
   </div>
 </div>
 
@@ -9073,6 +9191,7 @@ document.addEventListener('keydown',e=>{
 
 document.getElementById('lrAvstand')?.addEventListener('input',e=>{
   satUppgiftsavstand(+e.target.value);
+  sparSchemalaggAutospar();
   requestAnimationFrame(layoutSidlinjer);
 });
 document.getElementById('lrNollstall')?.addEventListener('click',()=>{
@@ -9144,6 +9263,814 @@ gorSorterbar({
   }
 });
 provRitaKontroller();
+</script>
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   DELADE PROV OCH ÖVNINGSBLAD
+   Flera lärare kan arbeta i samma dokument. Dokumentet ligger i Supabase
+   (samma projekt som Kunskapsgymmet) och varje webbläsare synkar med några
+   sekunders mellanrum. Ändringar som görs samtidigt slås ihop per uppgift och
+   per inställning (se delningSammanfoga). Databasdelen finns i
+   uppgiftslabbet-delning.sql och måste vara installerad.
+   ═══════════════════════════════════════════════════════════════════════════ */
+const UL_URL='https://lynobdhncyhnogiafsdb.supabase.co';
+const UL_NYCKEL='sb_publishable_Goz662Lr8mb0-h3J6GzdKQ_v8Zq4apt';   /* publik nyckel; behörigheter ligger i databasen */
+const UL_SESSION_KEY='uppgiftslabbet-delning-session-v1';
+const UL_INTERVALL=4000;
+
+const UL_FEL={
+  ej_inloggad:'Du behöver logga in för att dela dokument.',
+  ej_larare:'Ditt konto är inte registrerat som lärarkonto. Kontakta den som administrerar Uppgiftslabbet.',
+  finns_inte:'Det delade dokumentet finns inte längre. Ägaren kan ha raderat det.',
+  ej_medlem:'Du har inte längre tillgång till det delade dokumentet.',
+  ogiltig_kod:'Länken eller koden är ogiltig eller har gått ut. Be kollegan om en ny.',
+  ogiltig_data:'Dokumentet kunde inte sparas eftersom innehållet är ogiltigt.',
+  for_stort:'Dokumentet är för stort för att delas. Minska storleken på inklistrade bilder.',
+  bara_agaren:'Bara den som skapade det delade dokumentet kan göra det.',
+  agare_kan_inte_lamna:'Du äger dokumentet och kan inte lämna det. Radera det i stället.',
+  ogiltigt_namn:'Ange ett namn.',
+  saknas:'Delning är inte installerad i databasen ännu.',
+  natverk:'Ingen kontakt med servern. Kontrollera internetanslutningen.'
+};
+
+const DELNING={id:null,namn:'',roll:null,kurs:null,revision:null,bas:null,synkad:null,
+  upptagen:false,igen:false,timer:null,poll:null,aktiva:[],fel:null,felAntal:0,
+  skickar:false,senast:null,senastAv:null};
+let ulSession=null;
+let ulInloggningsfel=null;
+
+/* ── sammanslagning ─────────────────────────────────────────────────────── */
+/* ── Trevägssammanslagning ────────────────────────────────────────────────
+   bas   = senaste version som både den här webbläsaren och servern kände till
+   lokal = det som finns på skärmen nu
+   fjarr = serverns nyaste version (någon annan har sparat)
+   Regler:
+   • Inställningar jämförs fält för fält. Har fältet ändrats lokalt vinner den
+     lokala ändringen, annars används serverns värde.
+   • Uppgifter identifieras med sitt id. En uppgift som någon har tagit bort
+     försvinner. En uppgift som någon har lagt till kommer med.
+   • Har samma uppgift ändrats på båda håll vinner den lokala ändringen.
+   • Ordningen: har den lokala ordningen ändrats används den, annars serverns.
+     Nya uppgifter från andra hållet placeras efter sin närmaste föregångare. */
+function delningKanon(v){
+  if(Array.isArray(v)) return '['+v.map(delningKanon).join(',')+']';
+  if(v&&typeof v==='object'){
+    return '{'+Object.keys(v).filter(k=>v[k]!==undefined).sort()
+      .map(k=>JSON.stringify(k)+':'+delningKanon(v[k])).join(',')+'}';
+  }
+  return JSON.stringify(v===undefined?null:v);
+}
+function delningSammanfoga(bas,lokal,fjarr){
+  bas=bas||{}; lokal=lokal||{}; fjarr=fjarr||{};
+  const lika=(a,b)=>delningKanon(a)===delningKanon(b);
+  const välj=(b,l,f)=>lika(l,b)?f:l;
+  const ut={};
+  const nycklar=new Set([...Object.keys(bas),...Object.keys(lokal),...Object.keys(fjarr)]);
+  nycklar.delete('tasks'); nycklar.delete('settings');
+  nycklar.forEach(k=>{ const v=välj(bas[k],lokal[k],fjarr[k]); if(v!==undefined) ut[k]=v; });
+
+  const bs=bas.settings||{}, ls=lokal.settings||{}, fs=fjarr.settings||{};
+  ut.settings={};
+  new Set([...Object.keys(bs),...Object.keys(ls),...Object.keys(fs)]).forEach(k=>{
+    const v=välj(bs[k],ls[k],fs[k]); if(v!==undefined) ut.settings[k]=v;
+  });
+
+  const idAv=t=>String(t?.bankId??t?.snapshot?.id??'');
+  const karta=l=>{ const m=new Map(); (Array.isArray(l)?l:[]).forEach(t=>{ const id=idAv(t); if(id&&!m.has(id)) m.set(id,t); }); return m; };
+  const B=karta(bas.tasks), L=karta(lokal.tasks), F=karta(fjarr.tasks);
+  const behåll=id=>(L.has(id)&&F.has(id)) || (L.has(id)&&!B.has(id)) || (F.has(id)&&!B.has(id));
+  const innehåll=id=>{
+    if(L.has(id)&&F.has(id)) return B.has(id)&&lika(L.get(id),B.get(id))?F.get(id):L.get(id);
+    return L.get(id)||F.get(id);
+  };
+  const ordning=m=>[...m.keys()];
+  const gemensam=(a,b)=>a.filter(id=>b.has(id));
+  const lokalOmflyttad=!lika(gemensam(ordning(L),B),gemensam(ordning(B),L));
+  const primär=lokalOmflyttad?ordning(L):ordning(F);
+  const sekundär=lokalOmflyttad?ordning(F):ordning(L);
+  const resultat=primär.filter(behåll);
+  const finns=new Set(resultat);
+  sekundär.forEach((id,i)=>{
+    if(finns.has(id)||!behåll(id)) return;
+    let pos=0;
+    for(let j=i-1;j>=0;j--){
+      const k=resultat.indexOf(sekundär[j]);
+      if(k>=0){ pos=k+1; break; }
+    }
+    resultat.splice(pos,0,id); finns.add(id);
+  });
+  ut.tasks=resultat.map((id,i)=>({...innehåll(id),order:i}));
+  return ut;
+}
+
+/* ── hjälpare ───────────────────────────────────────────────────────────── */
+const ulEsc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ulTid=d=>{ const x=new Date(d); return Number.isNaN(x.getTime())?'':x.toLocaleString('sv-SE',{dateStyle:'short',timeStyle:'short'}); };
+const ulKlock=d=>{ const x=new Date(d); return Number.isNaN(x.getTime())?'':x.toLocaleTimeString('sv-SE',{hour:'2-digit',minute:'2-digit'}); };
+const ulInitialer=namn=>String(namn||'?').split(/\s+/).filter(Boolean).slice(0,2).map(s=>s[0].toUpperCase()).join('')||'?';
+function ulMeddela(text){
+  let el=document.getElementById('ulToast');
+  if(!el){ el=document.createElement('div'); el.id='ulToast'; el.className='ul-toast'; el.setAttribute('role','status'); document.body.appendChild(el); }
+  el.textContent=text; el.classList.add('synlig');
+  clearTimeout(ulMeddela.t); ulMeddela.t=setTimeout(()=>el.classList.remove('synlig'),4200);
+}
+
+/* ── inloggning ─────────────────────────────────────────────────────────── */
+function ulLasSession(){
+  try{ ulSession=JSON.parse(localStorage.getItem(UL_SESSION_KEY))||null; }catch(_){ ulSession=null; }
+  return ulSession;
+}
+function ulSparaSession(s){
+  ulSession=s;
+  try{ s?localStorage.setItem(UL_SESSION_KEY,JSON.stringify(s)):localStorage.removeItem(UL_SESSION_KEY); }catch(_){}
+}
+function ulHuvud(auth=true){
+  const h={apikey:UL_NYCKEL,'Content-Type':'application/json'};
+  if(auth&&ulSession?.access_token) h.Authorization='Bearer '+ulSession.access_token;
+  return h;
+}
+function ulAnvandarnamn(){
+  const u=ulSession?.user, m=u?.user_metadata||{};
+  return m.full_name||m.name||u?.email||'ditt konto';
+}
+let ulFornyar=null;
+async function ulGiltigSession(){
+  if(!ulSession?.access_token) return false;
+  const kvar=(ulSession.expires_at||0)-Date.now()/1000;
+  if(kvar>90) return true;
+  if(!ulSession.refresh_token){ ulSparaSession(null); return false; }
+  if(!ulFornyar) ulFornyar=(async()=>{
+    try{
+      const r=await fetch(UL_URL+'/auth/v1/token?grant_type=refresh_token',{
+        method:'POST',headers:ulHuvud(false),body:JSON.stringify({refresh_token:ulSession.refresh_token})});
+      if(!r.ok){
+        if(r.status>=400&&r.status<500){ ulSparaSession(null); return false; }
+        return kvar>0;
+      }
+      const d=await r.json();
+      ulSparaSession({access_token:d.access_token,refresh_token:d.refresh_token,
+        expires_at:d.expires_at||Math.floor(Date.now()/1000)+(d.expires_in||3600),user:d.user||ulSession?.user||null});
+      return true;
+    }catch(_){ return kvar>0; }
+    finally{ ulFornyar=null; }
+  })();
+  return ulFornyar;
+}
+async function ulTaEmotInloggning(){
+  let hash=null;
+  try{ hash=sessionStorage.getItem('ul-oauth-svar'); sessionStorage.removeItem('ul-oauth-svar'); }catch(_){}
+  if(!hash) return;
+  const p=new URLSearchParams(hash.replace(/^#/,''));
+  if(p.get('error')||p.get('error_description')){
+    ulInloggningsfel=(p.get('error_description')||p.get('error')||'').replace(/\+/g,' ');
+    return;
+  }
+  const token=p.get('access_token');
+  if(!token) return;
+  const s={access_token:token,refresh_token:p.get('refresh_token'),
+    expires_at:+p.get('expires_at')||Math.floor(Date.now()/1000)+(+p.get('expires_in')||3600),user:null};
+  ulSparaSession(s);
+  try{
+    const r=await fetch(UL_URL+'/auth/v1/user',{headers:ulHuvud(true)});
+    if(r.ok){ s.user=await r.json(); ulSparaSession(s); }
+  }catch(_){}
+}
+function ulLoggaIn(){
+  try{
+    if(AKTIV) sparAutosparaNu();
+    sessionStorage.setItem('ul-efter-inloggning',JSON.stringify({dela:true}));
+  }catch(_){}
+  /* Tillbaka till appens rot med kursen i adressen, så att kursen och dess
+     utkast öppnas igen. Adressen måste finnas bland Supabase Redirect URLs. */
+  const retur=location.origin+APP_ROOT+(AKTIV?'?kurs='+encodeURIComponent(AKTIV.id):'');
+  location.href=UL_URL+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(retur);
+}
+async function ulLoggaUt(){
+  let vilande=null;
+  if(DELNING.id){
+    await delningSynka(false).catch(()=>{});
+    vilande=delningUtkastInfo();
+    delningKoppla(null,{tyst:true});
+  }
+  const token=ulSession?.access_token;
+  ulSparaSession(null);
+  if(token){ try{ await fetch(UL_URL+'/auth/v1/logout',{method:'POST',headers:{...ulHuvud(false),Authorization:'Bearer '+token}}); }catch(_){} }
+  delningRitaModal(); delningRitaStatus(vilande?{vilande}:{});
+  ulMeddela('Utloggad. Dokumentet finns kvar här som en lokal kopia.');
+}
+
+async function ulRpc(namn,args={},opt={}){
+  if(!(await ulGiltigSession())){ const e=new Error(UL_FEL.ej_inloggad); e.kod='ej_inloggad'; throw e; }
+  let r;
+  try{
+    r=await fetch(UL_URL+'/rest/v1/rpc/'+namn,{method:'POST',headers:ulHuvud(true),
+      body:JSON.stringify(args),keepalive:!!opt.keepalive});
+  }catch(_){ const e=new Error(UL_FEL.natverk); e.kod='natverk'; throw e; }
+  if(r.ok){ const t=await r.text(); return t?JSON.parse(t):null; }
+  let info={}; try{ info=await r.json(); }catch(_){}
+  let kod=(String(info.message||'').match(/ul:([a-z_]+)/)||[])[1];
+  if(!kod){
+    if(r.status===404||info.code==='PGRST202') kod='saknas';
+    else if(r.status===401){ kod='ej_inloggad'; ulSparaSession(null); }
+    else kod='okant';
+  }
+  const e=new Error(UL_FEL[kod]||('Servern svarade med ett fel ('+r.status+').'));
+  e.kod=kod; e.status=r.status; throw e;
+}
+
+/* ── dokumentdata ───────────────────────────────────────────────────────── */
+function delningByggData(){
+  return {
+    version:1,kind:dokumentTyp(),course:AKTIV?.id||null,track:state.spår||null,
+    settings:sparInstallningar(),
+    tasks:state.blad.map((x,i)=>({bankId:x.id??null,order:i,snapshot:sparSnapshotUppgift(x)}))
+  };
+}
+function delningTillämpa(data){
+  const spår=data.track||state.spår;
+  const nyttSpår=spår!==state.spår;
+  state.spår=spår;
+  if(nyttSpår){
+    if(typeof byggSpårfilter==='function') byggSpårfilter();
+    if(typeof uppdateraKursTema==='function') uppdateraKursTema();
+    if(typeof uppdateraKursRubriker==='function') uppdateraKursRubriker();
+  }
+  state.blad=sparUppgifterUrDokument(data);
+  sparAppliceraInstallningar(data);
+  if(nyttSpår) byggTräd();
+  rita(); ritaBlad();
+  try{ if(typeof LR!=='undefined'&&LR&&!LR.hidden&&typeof layoutRita==='function') layoutRita(); }catch(_){}
+}
+
+/* ── koppla ett dokument till synken ────────────────────────────────────── */
+function delningAktivera(info,bas,revision,synkad){
+  DELNING.id=info.id; DELNING.namn=info.namn||''; DELNING.roll=info.roll||null;
+  DELNING.kurs=info.kurs||AKTIV?.id||null;
+  DELNING.bas=bas; DELNING.revision=revision;
+  DELNING.synkad=synkad??delningKanon(delningByggData());
+  DELNING.aktiva=[]; DELNING.fel=null; DELNING.felAntal=0;
+  DELNING.senast=info.uppdaterad?new Date(info.uppdaterad):null;
+  DELNING.senastAv=info.uppdaterad_av||null;
+  clearInterval(DELNING.poll);
+  DELNING.poll=setInterval(()=>{ if(document.visibilityState==='visible') delningSynka(true); },UL_INTERVALL);
+  sparAutosparaNu();          /* kopplingen sparas i kursens utkast */
+  delningRitaStatus();
+  delningSynka(true);
+}
+function delningKoppla(_id,{tyst=false}={}){
+  if(!DELNING.id) return;
+  clearInterval(DELNING.poll); clearTimeout(DELNING.timer);
+  const namn=DELNING.namn;
+  Object.assign(DELNING,{id:null,namn:'',roll:null,kurs:null,revision:null,bas:null,synkad:null,
+    aktiva:[],fel:null,felAntal:0,skickar:false,senast:null,senastAv:null});
+  delningRitaStatus();
+  if(!tyst&&namn) ulMeddela(`Synken med ”${namn}” är avslutad på den här datorn.`);
+}
+/* Anropas från sparLaddaDokument. */
+function delningFöreLaddning(doc,{manuell,delat}){
+  if(manuell&&!delat) delningKoppla(null,{tyst:true});
+}
+function delningEfterLaddning(doc,{manuell}){
+  if(!manuell&&doc?.shared?.id) delningÅteruppta(doc.shared);
+}
+function delningUtkastInfo(){
+  if(!DELNING.id||DELNING.kurs!==AKTIV?.id) return null;
+  return {id:DELNING.id,revision:DELNING.revision,namn:DELNING.namn};
+}
+function delningLokalAndring(){
+  if(!DELNING.id) return;
+  if(AKTIV?.id!==DELNING.kurs){ delningKoppla(null,{tyst:true}); return; }
+  clearTimeout(DELNING.timer);
+  DELNING.timer=setTimeout(()=>delningSynka(false),600);
+  if(delningKanon(delningByggData())!==DELNING.synkad){ DELNING.skickar=true; delningRitaStatus(); }
+}
+
+/* Ett utkast som var kopplat till ett delat dokument kopplas in igen när kursen
+   öppnas. Osparade lokala ändringar slås ihop med det kollegorna gjort under
+   tiden, med den version utkastet utgick från som gemensam bas. */
+async function delningÅteruppta(info){
+  await UL_KLAR;
+  if(!info?.id||DELNING.id===info.id) return;
+  if(!ulSession){ delningRitaStatus({vilande:info}); return; }
+  const kurs=AKTIV?.id;
+  try{
+    const h=await ulRpc('ul_hamta',{p_id:info.id});
+    if(AKTIV?.id!==kurs||h.kurs!==kurs||DELNING.id) return;
+    if(info.revision===h.revision){
+      delningAktivera(h,h.data,h.revision,delningKanon(h.data));
+      return;
+    }
+    let bas=null;
+    try{ bas=await ulRpc('ul_hamta_version',{p_id:info.id,p_revision:info.revision}); }catch(_){}
+    if(AKTIV?.id!==kurs||DELNING.id) return;
+    if(bas){
+      /* Gammal bas och gammal revision: nästa synk hämtar nyheterna och slår ihop. */
+      delningAktivera(h,bas,info.revision,delningKanon(bas));
+    }else{
+      const lokalt=delningByggData();
+      const ändrat=delningKanon(lokalt)!==delningKanon(h.data);
+      delningTillämpa(h.data);
+      delningAktivera(h,h.data,h.revision);
+      if(ändrat) ulMeddela('Dokumentet har ändrats mycket sedan du senast var här. Den senaste delade versionen visas.');
+    }
+  }catch(e){
+    if(['ej_medlem','finns_inte'].includes(e.kod)){
+      ulMeddela(e.message+' Det du ser är nu en lokal kopia.');
+      sparAutosparaNu();
+    }else delningRitaStatus({vilande:info,fel:e});
+  }
+}
+
+/* ── synk ───────────────────────────────────────────────────────────────── */
+function delningTaEmot(data,revision,av){
+  const nu=delningByggData(), kNu=delningKanon(nu);
+  const lokalt=kNu!==DELNING.synkad;
+  const ny=lokalt?delningSammanfoga(DELNING.bas,nu,data):data;
+  if(delningKanon(ny)!==kNu) delningTillämpa(ny);
+  DELNING.bas=data; DELNING.revision=revision;
+  DELNING.synkad=lokalt?delningKanon(data):delningKanon(delningByggData());
+  if(av){ DELNING.senastAv=av; DELNING.senast=new Date(); }
+}
+async function delningSkicka(id){
+  for(let varv=0;varv<6;varv++){
+    if(id!==DELNING.id||AKTIV?.id!==DELNING.kurs) return;
+    const data=delningByggData(), k=delningKanon(data);
+    if(k===DELNING.synkad){ DELNING.skickar=false; return; }
+    DELNING.skickar=true; delningRitaStatus();
+    const svar=await ulRpc('ul_spara',{p_id:id,p_data:data,p_revision:DELNING.revision});
+    if(id!==DELNING.id) return;
+    if(svar?.ok){
+      DELNING.revision=svar.revision; DELNING.bas=data; DELNING.synkad=k;
+      DELNING.senast=new Date(); DELNING.senastAv=null;
+    }else if(svar?.kod==='konflikt'){
+      delningTaEmot(svar.data,svar.revision,svar.uppdaterad_av);
+    }else throw new Error('Oväntat svar från servern.');
+  }
+}
+async function delningSynka(medStatus){
+  if(!DELNING.id) return;
+  if(DELNING.upptagen){ DELNING.igen=true; return; }
+  DELNING.upptagen=true;
+  const id=DELNING.id;
+  try{
+    let status=medStatus;
+    do{
+      DELNING.igen=false;
+      if(AKTIV?.id!==DELNING.kurs){ delningKoppla(null,{tyst:true}); return; }
+      if(status){
+        const st=await ulRpc('ul_status',{p_id:id});
+        if(id!==DELNING.id) return;
+        DELNING.aktiva=st.aktiva||[]; DELNING.namn=st.namn||DELNING.namn; DELNING.roll=st.roll||DELNING.roll;
+        if(st.revision!==DELNING.revision){
+          const h=await ulRpc('ul_hamta',{p_id:id});
+          if(id!==DELNING.id) return;
+          if(AKTIV?.id!==DELNING.kurs) continue;
+          delningTaEmot(h.data,h.revision,h.uppdaterad_av);
+        }
+      }
+      await delningSkicka(id);
+      status=false;
+    }while(DELNING.igen&&DELNING.id===id);
+    if(id===DELNING.id){ DELNING.fel=null; DELNING.felAntal=0; DELNING.skickar=false; }
+  }catch(e){
+    if(id!==DELNING.id) return;
+    if(['ej_medlem','finns_inte'].includes(e.kod)){
+      const namn=DELNING.namn;
+      delningKoppla(null,{tyst:true});
+      sparAutosparaNu();
+      ulMeddela(`${e.message} ”${namn}” finns kvar här som en lokal kopia.`);
+      return;
+    }
+    DELNING.fel=e; DELNING.felAntal++;
+    clearTimeout(DELNING.timer);
+    DELNING.timer=setTimeout(()=>delningSynka(true),Math.min(30000,2000*2**Math.min(DELNING.felAntal,4)));
+  }finally{
+    DELNING.upptagen=false;
+    delningRitaStatus();
+    if(document.getElementById('delamodal')?.hidden===false) delningUppdateraModalStatus();
+  }
+}
+/* Sista försök att få iväg ändringar när fliken stängs. Misslyckas det finns
+   de kvar i kursens utkast och slås ihop nästa gång. */
+function delningSkickaVidStängning(){
+  if(!DELNING.id||AKTIV?.id!==DELNING.kurs||!ulSession?.access_token) return;
+  const data=delningByggData();
+  if(delningKanon(data)===DELNING.synkad) return;
+  try{
+    fetch(UL_URL+'/rest/v1/rpc/ul_spara',{method:'POST',headers:ulHuvud(true),keepalive:true,
+      body:JSON.stringify({p_id:DELNING.id,p_data:data,p_revision:DELNING.revision})}).catch(()=>{});
+  }catch(_){}
+}
+
+/* ── statusraden under Spara/Ladda ──────────────────────────────────────── */
+function delningRitaStatus(extra={}){
+  const rad=document.getElementById('delningsrad');
+  const knapp=document.getElementById('delaDokument');
+  if(knapp) knapp.classList.toggle('delat',!!DELNING.id);
+  if(!rad) return;
+  if(!DELNING.id&&!extra.vilande){ rad.hidden=true; rad.innerHTML=''; return; }
+  rad.hidden=false;
+  if(!DELNING.id){
+    rad.className='delningsrad vilande';
+    rad.innerHTML=`<span class="dr-ikon" aria-hidden="true">${UL_IKON_DELA}</span>
+      <span class="dr-text"><b>${ulEsc(extra.vilande.namn||'Delat dokument')}</b>
+      <span>${ulSession?ulEsc(extra.fel?.message||'Synken är pausad.'):'Logga in för att fortsätta synka.'}</span></span>
+      <button type="button" class="dr-knapp" data-dr-ateruppta>${ulSession?'Försök igen':'Logga in'}</button>`;
+    rad.querySelector('[data-dr-ateruppta]').addEventListener('click',()=>{
+      if(!ulSession) ulLoggaIn(); else { rad.hidden=true; delningÅteruppta(extra.vilande); }
+    });
+    return;
+  }
+  let text, klass='';
+  if(DELNING.fel){
+    klass='fel';
+    text=DELNING.fel.kod==='natverk'?'Offline – ändringarna skickas när anslutningen är tillbaka':DELNING.fel.message;
+  }else if(DELNING.skickar) text='Sparar…';
+  else if(DELNING.senastAv&&DELNING.senast) text=`Uppdaterat av ${DELNING.senastAv} ${ulKlock(DELNING.senast)}`;
+  else text='Alla ändringar är synkade';
+  const aktiva=(DELNING.aktiva||[]).slice(0,4).map(n=>
+    `<span class="dr-person" title="${ulEsc(n)} har dokumentet öppet">${ulEsc(ulInitialer(n))}</span>`).join('');
+  const fler=(DELNING.aktiva||[]).length>4?`<span class="dr-person fler">+${DELNING.aktiva.length-4}</span>`:'';
+  rad.className='delningsrad'+(klass?' '+klass:'');
+  rad.innerHTML=`<span class="dr-ikon" aria-hidden="true">${UL_IKON_DELA}</span>
+    <span class="dr-text"><b title="Delat dokument">${ulEsc(DELNING.namn||'Delat dokument')}</b><span>${ulEsc(text)}</span></span>
+    <span class="dr-personer" aria-label="${ulEsc((DELNING.aktiva||[]).join(', ')||'Ingen annan har dokumentet öppet')}">${aktiva}${fler}</span>`;
+}
+
+/* ── dela-dialogen ──────────────────────────────────────────────────────── */
+const UL_IKON_DELA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>';
+let ulModalLäge={kod:null,fel:null,länk:null,laddar:false};
+let ulLärare=null;   /* null = okänt, true/false efter kontroll */
+
+function delningÖppnaModal(opt={}){
+  const m=document.getElementById('delamodal');
+  if(!m) return;
+  ulModalLäge={kod:opt.kod||null,fel:opt.fel||null,länk:null,laddar:false};
+  m.hidden=false;
+  delningRitaModal();
+}
+function delningStängModal(){
+  const m=document.getElementById('delamodal'); if(m) m.hidden=true;
+}
+function ulSätt(html){
+  const el=document.getElementById('delaInnehall'); if(el) el.innerHTML=html;
+  return el;
+}
+async function ulKontrolleraLärare(){
+  if(ulLärare!==null) return ulLärare;
+  ulLärare=(await ulRpc('ul_ar_larare'))===true;
+  return ulLärare;
+}
+async function delningRitaModal(){
+  const m=document.getElementById('delamodal');
+  if(!m||m.hidden) return;
+  const titel=document.getElementById('delamodalTitel');
+  const underrubrik=document.getElementById('delamodalText');
+  const fel=ulModalLäge.fel?`<div class="ul-fel" role="alert">${ulEsc(ulModalLäge.fel)}</div>`:'';
+  const inloggfel=ulInloggningsfel?`<div class="ul-fel" role="alert">Inloggningen misslyckades: ${ulEsc(ulInloggningsfel)}</div>`:'';
+
+  if(!ulSession){
+    titel.textContent=ulModalLäge.kod?'Gå med i ett delat dokument':'Dela med kollegor';
+    underrubrik.textContent='Arbeta i samma prov eller övningsblad samtidigt.';
+    ulSätt(`${inloggfel}${fel}
+      <div class="ul-intro">
+        <p>När ett dokument är delat sparas det på servern i stället för bara i den här webbläsaren. Kollegor du bjuder in kan öppna det, lägga till och ändra uppgifter, och ser varandras ändringar efter några sekunder.</p>
+        ${ulModalLäge.kod?'<p><b>Du har fått en inbjudan.</b> Logga in med ditt skolkonto för att öppna dokumentet.</p>':''}
+      </div>
+      <button type="button" class="knapp primär ul-google" data-ul="logga-in">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>
+        Logga in med Google</button>
+      <p class="ul-liten">Du loggas in med samma lärarkonto som i Kunskapsgymmet. Det du har på arbetsytan finns kvar.</p>`);
+    return;
+  }
+
+  ulSätt(`${fel}<div class="ul-laddar">Kontrollerar kontot…</div>`);
+  try{
+    if(!(await ulKontrolleraLärare())){
+      titel.textContent='Dela med kollegor'; underrubrik.textContent='';
+      ulSätt(`<div class="ul-fel">${ulEsc(UL_FEL.ej_larare)}</div>${delningKontoRad()}`);
+      return;
+    }
+  }catch(e){
+    titel.textContent='Dela med kollegor'; underrubrik.textContent='';
+    ulSätt(`<div class="ul-fel">${ulEsc(e.message)}</div>${ulSession?delningKontoRad():''}`);
+    if(e.kod==='ej_inloggad') delningRitaModal();
+    return;
+  }
+
+  if(ulModalLäge.kod){
+    titel.textContent='Gå med i ett delat dokument';
+    underrubrik.textContent='En kollega har bjudit in dig.';
+    ulSätt(`${fel}<div class="ul-laddar">Öppnar det delade dokumentet…</div>`);
+    if(ulModalLäge.laddar) return;
+    ulModalLäge.laddar=true;
+    const kod=ulModalLäge.kod;
+    let stäng=false;
+    try{
+      await delningGåMed(kod);
+      try{ sessionStorage.removeItem('ul-dela-kod'); }catch(_){}
+      ulModalLäge.kod=null;
+    }catch(e){
+      if(e.kod==='avbrutet'||e.kod==='ogiltig_kod'){ try{ sessionStorage.removeItem('ul-dela-kod'); }catch(_){} ulModalLäge.kod=null; }
+      if(e.kod==='avbrutet') stäng=true;
+      else ulModalLäge.fel=e.message;
+    }finally{ ulModalLäge.laddar=false; }
+    if(stäng) delningStängModal(); else delningRitaModal();
+    return;
+  }
+
+  if(!DELNING.id){
+    titel.textContent='Dela med kollegor';
+    underrubrik.textContent=AKTIV?'Gör det här dokumentet gemensamt.':'Öppna en kurs för att dela ett dokument.';
+    const förslag=(document.getElementById('bTitel')?.value||'').trim()||'Dokument';
+    ulSätt(`${fel}
+      ${AKTIV?`<div class="ul-sektion">
+        <label class="ul-etikett" for="ulDelaNamn">Namn på det delade dokumentet</label>
+        <div class="ul-rad">
+          <input id="ulDelaNamn" maxlength="120" autocomplete="off" value="${ulEsc(förslag)}">
+          <button type="button" class="knapp primär" data-ul="dela">Dela dokumentet</button>
+        </div>
+        <p class="ul-liten">Innehållet på arbetsytan (${state.blad.length} ${state.blad.length===1?'uppgift':'uppgifter'}, ${ulEsc(AKTIV.titel)}) laddas upp. Därefter får du en länk att skicka till kollegor.</p>
+      </div>`:''}
+      <div class="ul-sektion">
+        <label class="ul-etikett" for="ulKod">Har du fått en kod?</label>
+        <div class="ul-rad">
+          <input id="ulKod" maxlength="20" autocomplete="off" placeholder="T.ex. K7QM-2XRPA" spellcheck="false">
+          <button type="button" class="knapp tyst" data-ul="ga-med">Gå med</button>
+        </div>
+      </div>
+      <div class="ul-sektion"><div class="ul-etikett">Mina delade dokument</div><div id="ulMinaDelade" class="sparlista"><div class="ul-laddar">Hämtar…</div></div></div>
+      ${delningKontoRad()}`);
+    delningFyllLista(document.getElementById('ulMinaDelade'));
+    return;
+  }
+
+  titel.textContent='Delat dokument';
+  underrubrik.textContent=DELNING.roll==='agare'?'Du äger dokumentet.':'Du redigerar tillsammans med kollegor.';
+  const länk=ulModalLäge.länk;
+  ulSätt(`${fel}
+    <div class="ul-sektion">
+      <label class="ul-etikett" for="ulNamn">Namn</label>
+      <div class="ul-rad"><input id="ulNamn" maxlength="120" autocomplete="off" value="${ulEsc(DELNING.namn)}">
+      <button type="button" class="knapp tyst" data-ul="byt-namn">Byt namn</button></div>
+      <p class="ul-liten" id="ulStatusText"></p>
+    </div>
+    <div class="ul-sektion">
+      <div class="ul-etikett">Bjud in kollegor</div>
+      ${länk?`<div class="ul-länk">
+          <input id="ulLänk" readonly value="${ulEsc(länk.url)}" aria-label="Inbjudningslänk">
+          <button type="button" class="knapp primär" data-ul="kopiera">Kopiera länk</button>
+        </div>
+        <p class="ul-liten">Kod: <b class="ul-kod">${ulEsc(länk.kod.replace(/(.{5})/,'$1-'))}</b> · gäller till ${ulEsc(ulTid(länk.giltig_till))}. Alla med länken som har ett lärarkonto kan gå med.</p>`
+      :`<button type="button" class="knapp primär" data-ul="bjud-in">Skapa inbjudningslänk</button>
+        <p class="ul-liten">Länken gäller i 14 dagar och kan användas av flera kollegor.</p>`}
+    </div>
+    <div class="ul-sektion">
+      <div class="ul-etikett">Medlemmar</div>
+      <div id="ulMedlemmar" class="ul-medlemmar"><div class="ul-laddar">Hämtar…</div></div>
+    </div>
+    <details class="ul-sektion ul-versioner" id="ulVersioner">
+      <summary>Tidigare versioner</summary>
+      <div id="ulVersionLista"><div class="ul-laddar">Hämtar…</div></div>
+    </details>
+    <div class="ul-sektion ul-farlig">
+      <button type="button" class="knapp tyst" data-ul="koppla">Sluta synka på den här datorn</button>
+      ${länk?'<button type="button" class="knapp tyst" data-ul="aterkalla">Återkalla inbjudningslänkar</button>':''}
+      ${DELNING.roll==='agare'
+        ?'<button type="button" class="knapp tyst ul-rod" data-ul="radera">Radera det delade dokumentet</button>'
+        :'<button type="button" class="knapp tyst ul-rod" data-ul="lamna">Lämna dokumentet</button>'}
+    </div>
+    ${delningKontoRad()}`);
+  delningUppdateraModalStatus();
+  delningFyllMedlemmar();
+}
+function delningKontoRad(){
+  return `<div class="ul-konto"><span>Inloggad som <b>${ulEsc(ulAnvandarnamn())}</b></span>
+    <button type="button" class="ul-textknapp" data-ul="logga-ut">Logga ut</button></div>`;
+}
+function delningUppdateraModalStatus(){
+  const el=document.getElementById('ulStatusText'); if(!el) return;
+  const delar=[];
+  if(DELNING.fel) delar.push(DELNING.fel.message);
+  else if(DELNING.skickar) delar.push('Sparar…');
+  else delar.push('Alla ändringar är synkade.');
+  if(DELNING.aktiva?.length) delar.push('Har dokumentet öppet just nu: '+DELNING.aktiva.join(', ')+'.');
+  el.textContent=delar.join(' ');
+}
+async function delningFyllMedlemmar(){
+  const el=document.getElementById('ulMedlemmar'); if(!el||!DELNING.id) return;
+  try{
+    const lista=await ulRpc('ul_medlemmar',{p_id:DELNING.id});
+    el.innerHTML=lista.map(m=>`<div class="ul-medlem">
+        <span class="dr-person${m.aktiv||m.jag?' aktiv':''}">${ulEsc(ulInitialer(m.namn))}</span>
+        <span class="ul-medlem-text"><b>${ulEsc(m.namn)}${m.jag?' (du)':''}</b><span>${ulEsc(m.epost||'')}</span></span>
+        <span class="ul-roll">${m.roll==='agare'?'Ägare':'Redigerar'}</span>
+        ${DELNING.roll==='agare'&&!m.jag?`<button type="button" class="ul-textknapp" data-ta-bort="${ulEsc(m.user_id)}" data-namn="${ulEsc(m.namn)}">Ta bort</button>`:''}
+      </div>`).join('')||'<p class="ul-liten">Inga medlemmar.</p>';
+  }catch(e){ el.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`; }
+}
+async function delningFyllVersioner(){
+  const el=document.getElementById('ulVersionLista'); if(!el||!DELNING.id) return;
+  try{
+    const lista=await ulRpc('ul_versioner',{p_id:DELNING.id});
+    el.innerHTML=lista.map((v,i)=>`<div class="ul-version">
+        <span><b>${ulEsc(ulTid(v.sparad))}</b> · ${ulEsc(v.av)} · ${v.antal_uppgifter} ${v.antal_uppgifter===1?'uppgift':'uppgifter'}</span>
+        ${i===0?'<span class="ul-liten">Aktuell</span>':`<button type="button" class="ul-textknapp" data-aterstall="${v.revision}">Återställ</button>`}
+      </div>`).join('')||'<p class="ul-liten">Inga versioner ännu.</p>';
+  }catch(e){ el.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`; }
+}
+async function delningFyllLista(el,{iLaddaDialog=false}={}){
+  if(!el) return;
+  if(!ulSession){
+    el.innerHTML=iLaddaDialog?`<p class="ul-liten">Logga in under <b>Dela</b> för att se dokument som delats med dig.</p>`:'';
+    return;
+  }
+  try{
+    const lista=await ulRpc('ul_mina');
+    if(!lista.length){
+      el.innerHTML='<p class="ul-liten">Inga delade dokument ännu.</p>'; return;
+    }
+    el.innerHTML=lista.map(d=>{
+      const kurs=KURSER.find(k=>k.id===d.kurs);
+      const aktuellt=d.id===DELNING.id;
+      return `<div class="sparpost">
+        <div><div class="sparpost-namn">${ulEsc(d.namn)}</div>
+        <div class="sparpost-meta"><span>${ulEsc(kurs?.titel||d.kurs||'')}</span>
+          <span>${d.antal_uppgifter} ${d.antal_uppgifter===1?'uppgift':'uppgifter'}</span>
+          <span>${d.medlemmar} ${d.medlemmar===1?'lärare':'lärare'}</span>
+          <span>${d.roll==='agare'?'Du äger':'Ägs av '+ulEsc(d.agare)}</span>
+          <span>${ulEsc(ulTid(d.uppdaterad))}</span></div></div>
+        <div class="sparpost-knappar">${aktuellt?'<span class="ul-liten">Öppet</span>':`<button type="button" data-oppna-delat="${ulEsc(d.id)}">Öppna</button>`}</div>
+      </div>`;
+    }).join('');
+    el.querySelectorAll('[data-oppna-delat]').forEach(b=>b.addEventListener('click',async()=>{
+      b.disabled=true; b.textContent='Öppnar…';
+      try{
+        await delningÖppna(b.dataset.oppnaDelat);
+        sparStangModal(); delningStängModal();
+      }catch(e){
+        if(e.kod!=='avbrutet') alert(e.message);
+        b.disabled=false; b.textContent='Öppna';
+      }
+    }));
+  }catch(e){
+    el.innerHTML=`<p class="ul-liten">${ulEsc(e.kod==='saknas'?UL_FEL.saknas:e.message)}</p>`;
+  }
+}
+/* Laddadialogen visar delade dokument ovanför de lokalt sparade. */
+function delningRitaLista(){
+  const sek=document.getElementById('delningListaSektion');
+  if(!sek) return;
+  sek.hidden=false;
+  delningFyllLista(document.getElementById('delningLista'),{iLaddaDialog:true});
+}
+
+/* ── åtgärder ───────────────────────────────────────────────────────────── */
+async function delningÖppna(id){
+  if(DELNING.id===id) return;
+  if(state.blad.length&&!DELNING.id&&!AKTIV_SPAR_ID&&
+     !confirm('Det du har på arbetsytan ersätts av det delade dokumentet. Spara det först om du vill behålla det.\n\nFortsätta?')){
+    const e=new Error('Avbrutet'); e.kod='avbrutet'; throw e;
+  }
+  const h=await ulRpc('ul_hamta',{p_id:id});
+  delningKoppla(null,{tyst:true});
+  await sparLaddaDokument({...h.data,id:null,name:h.namn,updatedAt:h.uppdaterad},{manuell:true,delat:true});
+  if(AKTIV?.id!==h.kurs) throw new Error('Kursen för det delade dokumentet kunde inte öppnas.');
+  delningAktivera(h,h.data,h.revision);
+  sparStatus('Delat dokument öppnat',true);
+  ulMeddela(`”${h.namn}” är öppet. Ändringar synkas med kollegorna.`);
+}
+async function delningGåMed(kod){
+  const r=await ulRpc('ul_ga_med',{p_kod:kod});
+  await delningÖppna(r.id);
+}
+async function delningDelaAktuellt(namn){
+  if(!AKTIV) return;
+  const data=delningByggData();
+  const r=await ulRpc('ul_skapa',{p_namn:namn,p_kurs:AKTIV.id,p_data:data});
+  delningAktivera({id:r.id,namn,roll:'agare',kurs:AKTIV.id},data,r.revision,delningKanon(data));
+  await delningSkapaLänk();
+  ulMeddela(`”${namn}” är delat. Skicka länken till dina kollegor.`);
+}
+async function delningSkapaLänk(){
+  const r=await ulRpc('ul_skapa_inbjudan',{p_id:DELNING.id});
+  ulModalLäge.länk={kod:r.kod,giltig_till:r.giltig_till,url:location.origin+APP_ROOT+'?dela='+r.kod};
+}
+
+async function delningModalKlick(e){
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall]');
+  if(!knapp) return;
+  const åtgärd=knapp.dataset.ul;
+  ulModalLäge.fel=null;
+  const kör=async fn=>{
+    knapp.disabled=true;
+    try{ await fn(); }
+    catch(err){
+      if(err.kod==='avbrutet') return;
+      ulModalLäge.fel=err.message;
+      if(err.kod==='ej_inloggad') ulLärare=null;
+    }
+    finally{ knapp.disabled=false; delningRitaModal(); }
+  };
+  if(knapp.dataset.taBort){
+    if(!confirm(`Ta bort ${knapp.dataset.namn} från dokumentet?`)) return;
+    return kör(()=>ulRpc('ul_ta_bort_medlem',{p_id:DELNING.id,p_user:knapp.dataset.taBort}));
+  }
+  if(knapp.dataset.aterstall){
+    if(!confirm('Ersätt dokumentets innehåll med den här versionen? Den nuvarande versionen finns kvar i historiken.')) return;
+    return kör(async()=>{
+      const data=await ulRpc('ul_hamta_version',{p_id:DELNING.id,p_revision:+knapp.dataset.aterstall});
+      if(!data) throw new Error('Versionen finns inte längre.');
+      delningTillämpa(data);
+      await delningSynka(false);
+      ulMeddela('Versionen är återställd.');
+    });
+  }
+  switch(åtgärd){
+    case 'logga-in': ulLoggaIn(); break;
+    case 'logga-ut': ulLärare=null; await ulLoggaUt(); break;
+    case 'dela': {
+      const namn=(document.getElementById('ulDelaNamn')?.value||'').trim();
+      if(!namn){ document.getElementById('ulDelaNamn')?.focus(); return; }
+      return kör(()=>delningDelaAktuellt(namn));
+    }
+    case 'ga-med': {
+      const kod=(document.getElementById('ulKod')?.value||'').trim();
+      if(!kod){ document.getElementById('ulKod')?.focus(); return; }
+      return kör(async()=>{ await delningGåMed(kod); });
+    }
+    case 'bjud-in': return kör(delningSkapaLänk);
+    case 'kopiera': {
+      const inp=document.getElementById('ulLänk');
+      try{ await navigator.clipboard.writeText(inp.value); }
+      catch(_){ inp.select(); document.execCommand('copy'); }
+      knapp.textContent='Kopierad!';
+      setTimeout(()=>{ if(knapp.isConnected) knapp.textContent='Kopiera länk'; },1500);
+      return;
+    }
+    case 'aterkalla':
+      if(!confirm('Befintliga inbjudningslänkar slutar fungera. Kollegor som redan gått med påverkas inte.')) return;
+      return kör(async()=>{ await ulRpc('ul_aterkalla_inbjudningar',{p_id:DELNING.id}); ulModalLäge.länk=null; });
+    case 'byt-namn': {
+      const namn=(document.getElementById('ulNamn')?.value||'').trim();
+      return kör(async()=>{ await ulRpc('ul_byt_namn',{p_id:DELNING.id,p_namn:namn}); DELNING.namn=namn; delningRitaStatus(); });
+    }
+    case 'koppla':
+      if(!confirm('Dokumentet finns kvar här som en lokal kopia, men dina ändringar synkas inte längre. Du kan öppna det delade dokumentet igen via Ladda.')) return;
+      await delningSynka(false).catch(()=>{});
+      delningKoppla(null); sparAutosparaNu(); ulModalLäge.länk=null; delningRitaModal(); return;
+    case 'lamna':
+      if(!confirm('Lämna dokumentet? Du behåller en lokal kopia men kan inte öppna det delade dokumentet igen utan en ny inbjudan.')) return;
+      return kör(async()=>{
+        await delningSynka(false).catch(()=>{});
+        await ulRpc('ul_ta_bort_medlem',{p_id:DELNING.id,p_user:ulSession.user?.id});
+        delningKoppla(null,{tyst:true}); sparAutosparaNu(); ulModalLäge.länk=null;
+      });
+    case 'radera':
+      if(!confirm(`Radera ”${DELNING.namn}” för alla? Kollegorna förlorar åtkomst. Du behåller en lokal kopia på den här datorn.`)) return;
+      return kör(async()=>{
+        await ulRpc('ul_radera',{p_id:DELNING.id});
+        delningKoppla(null,{tyst:true}); sparAutosparaNu(); ulModalLäge.länk=null;
+      });
+  }
+}
+
+/* ── start ──────────────────────────────────────────────────────────────── */
+function initDelning(){
+  const m=document.getElementById('delamodal');
+  document.getElementById('delaDokument')?.addEventListener('click',()=>delningÖppnaModal());
+  document.getElementById('delamodalStang')?.addEventListener('click',delningStängModal);
+  m?.addEventListener('click',e=>{ if(e.target===m) delningStängModal(); else delningModalKlick(e); });
+  m?.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){ delningStängModal(); return; }
+    if(e.key==='Enter'&&e.target.id==='ulDelaNamn'){ e.preventDefault(); m.querySelector('[data-ul="dela"]')?.click(); }
+    if(e.key==='Enter'&&e.target.id==='ulKod'){ e.preventDefault(); m.querySelector('[data-ul="ga-med"]')?.click(); }
+    if(e.key==='Enter'&&e.target.id==='ulNamn'){ e.preventDefault(); m.querySelector('[data-ul="byt-namn"]')?.click(); }
+  });
+  m?.addEventListener('toggle',e=>{ if(e.target.id==='ulVersioner'&&e.target.open) delningFyllVersioner(); },true);
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='visible'&&DELNING.id) delningSynka(true);
+    if(document.visibilityState==='hidden') delningSkickaVidStängning();
+  });
+  window.addEventListener('pagehide',delningSkickaVidStängning);
+  window.addEventListener('online',()=>{ if(DELNING.id) delningSynka(true); });
+}
+const UL_KLAR=(async()=>{
+  ulLasSession();
+  await ulTaEmotInloggning();
+})();
+(async()=>{
+  if(document.readyState==='loading') await new Promise(ok=>document.addEventListener('DOMContentLoaded',ok,{once:true}));
+  initDelning();
+  await UL_KLAR;
+  let efter=null, kod=null;
+  try{ efter=JSON.parse(sessionStorage.getItem('ul-efter-inloggning')||'null'); sessionStorage.removeItem('ul-efter-inloggning'); }catch(_){}
+  try{ kod=sessionStorage.getItem('ul-dela-kod'); }catch(_){}
+  if(kod) delningÖppnaModal({kod});
+  else if(efter?.dela||ulInloggningsfel) delningÖppnaModal();
+  delningRitaStatus();
+})();
+
 </script>
 </body>
 </html>
