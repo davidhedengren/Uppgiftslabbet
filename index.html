@@ -4720,7 +4720,37 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .sparlista-rubrik{margin:2px 0 8px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 #delningListaSektion{margin-bottom:18px}
 #delningLista .ul-liten{margin:0 0 4px}
-@media (max-width:560px){ .ul-rad,.ul-länk{flex-direction:column} }
+#delaDokument{position:relative}
+.ul-bricka{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:9px;
+  background:#C0392B;color:#fff;font-size:10.5px;font-weight:700;line-height:1}
+#delaDokument .ul-bricka{position:absolute;top:-7px;right:-7px;box-shadow:0 0 0 2px var(--surface)}
+.ul-bricka.statisk{vertical-align:1px;margin-left:4px}
+.ul-adminrad{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px;padding:11px 13px;
+  border:1px solid var(--line);border-radius:12px;background:var(--canvas);font-size:13px}
+.ul-adminrad > span{display:grid;gap:2px}
+.ul-adminrad .ul-liten{margin:0}
+.ul-intro-text{margin:0 0 14px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.ul-info{margin:0 0 12px;padding:10px 12px;border-radius:10px;background:var(--canvas);font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.ul-formular{display:grid;gap:4px;margin-bottom:14px}
+.ul-formular .ul-etikett{margin:8px 0 3px}
+.ul-formular input{border:1px solid var(--line);border-radius:10px;padding:9px 11px;font:inherit;font-size:13.5px;
+  background:var(--surface);color:var(--ink)}
+.ul-formular input:focus{outline:0;border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring)}
+.ul-knapprad{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.ul-status-kort{display:grid;gap:4px;margin:0 0 14px;padding:13px 14px;border-radius:12px;border:1px solid #cfe3d8;
+  background:#f1f8f4;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.ul-status-kort b{color:var(--ink);font-size:13.5px}
+.ul-status-kort.avslagen{border-color:color-mix(in srgb,var(--ed) 25%,transparent);background:var(--ed-tint)}
+.ul-tillbaka{margin:-4px 0 6px -6px}
+.ul-ansokan{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;
+  border-bottom:1px solid var(--line-2,#EFEEF0)}
+.ul-ansokan:last-child{border-bottom:0}
+.ul-ansokan-text{display:grid;gap:2px;min-width:0;font-size:12.5px;color:var(--ink-2)}
+.ul-ansokan-text b{color:var(--ink);font-size:13.5px}
+.ul-ansokan-text span{overflow-wrap:anywhere}
+.ul-ansokan-text .ul-liten{margin:0}
+.ul-ansokan-knappar{display:flex;gap:6px;flex:none}
+@media (max-width:560px){ .ul-rad,.ul-länk{flex-direction:column} .ul-ansokan{flex-direction:column;align-items:stretch} }
 @media print{ .delningsrad,.ul-toast,#delamodal{display:none!important} }
 </style>
 </head>
@@ -9280,7 +9310,12 @@ const UL_INTERVALL=4000;
 
 const UL_FEL={
   ej_inloggad:'Du behöver logga in för att dela dokument.',
-  ej_larare:'Ditt konto är inte registrerat som lärarkonto. Kontakta den som administrerar Uppgiftslabbet.',
+  ej_larare:'Ditt konto är inte godkänt som lärarkonto ännu.',
+  ej_admin:'Bara administratören kan göra det.',
+  ansokan_ofullstandig:'Fyll i både namn och skola.',
+  ogiltig_mejl:'Ange en giltig e-postadress.',
+  ogiltig_status:'Ogiltigt beslut.',
+  ansokan_saknas:'Ansökan finns inte längre.',
   finns_inte:'Det delade dokumentet finns inte längre. Ägaren kan ha raderat det.',
   ej_medlem:'Du har inte längre tillgång till det delade dokumentet.',
   ogiltig_kod:'Länken eller koden är ogiltig eller har gått ut. Be kollegan om en ny.',
@@ -9454,6 +9489,7 @@ async function ulLoggaUt(){
   }
   const token=ulSession?.access_token;
   ulSparaSession(null);
+  ulGlömBehörighet();
   if(token){ try{ await fetch(UL_URL+'/auth/v1/logout',{method:'POST',headers:{...ulHuvud(false),Authorization:'Bearer '+token}}); }catch(_){} }
   delningRitaModal(); delningRitaStatus(vilande?{vilande}:{});
   ulMeddela('Utloggad. Dokumentet finns kvar här som en lokal kopia.');
@@ -9634,8 +9670,9 @@ async function delningSynka(medStatus){
     if(id===DELNING.id){ DELNING.fel=null; DELNING.felAntal=0; DELNING.skickar=false; }
   }catch(e){
     if(id!==DELNING.id) return;
-    if(['ej_medlem','finns_inte'].includes(e.kod)){
+    if(['ej_medlem','finns_inte','ej_larare'].includes(e.kod)){
       const namn=DELNING.namn;
+      if(e.kod==='ej_larare') ulGlömBehörighet();
       delningKoppla(null,{tyst:true});
       sparAutosparaNu();
       ulMeddela(`${e.message} ”${namn}” finns kvar här som en lokal kopia.`);
@@ -9699,13 +9736,14 @@ function delningRitaStatus(extra={}){
 
 /* ── dela-dialogen ──────────────────────────────────────────────────────── */
 const UL_IKON_DELA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>';
-let ulModalLäge={kod:null,fel:null,länk:null,laddar:false};
-let ulLärare=null;   /* null = okänt, true/false efter kontroll */
+let ulModalLäge={kod:null,fel:null,länk:null,laddar:false,vy:null};
+/* Svar från ul_min_behorighet: {larare, admin, vantande, ansokan}. */
+let ulBehörighet=null, ulBehörighetTid=0;
 
 function delningÖppnaModal(opt={}){
   const m=document.getElementById('delamodal');
   if(!m) return;
-  ulModalLäge={kod:opt.kod||null,fel:opt.fel||null,länk:null,laddar:false};
+  ulModalLäge={kod:opt.kod||null,fel:opt.fel||null,länk:null,laddar:false,vy:null};
   m.hidden=false;
   delningRitaModal();
 }
@@ -9716,10 +9754,28 @@ function ulSätt(html){
   const el=document.getElementById('delaInnehall'); if(el) el.innerHTML=html;
   return el;
 }
-async function ulKontrolleraLärare(){
-  if(ulLärare!==null) return ulLärare;
-  ulLärare=(await ulRpc('ul_ar_larare'))===true;
-  return ulLärare;
+async function ulHämtaBehörighet(tvinga=false){
+  if(!tvinga&&ulBehörighet&&Date.now()-ulBehörighetTid<20000) return ulBehörighet;
+  ulBehörighet=await ulRpc('ul_min_behorighet');
+  ulBehörighetTid=Date.now();
+  ulRitaBricka();
+  return ulBehörighet;
+}
+function ulGlömBehörighet(){ ulBehörighet=null; ulBehörighetTid=0; ulRitaBricka(); }
+/* Siffran på Dela-knappen: väntande lärarförfrågningar (bara för administratören). */
+function ulRitaBricka(){
+  const knapp=document.getElementById('delaDokument');
+  if(!knapp) return;
+  let b=document.getElementById('delaBricka');
+  const antal=ulSession&&ulBehörighet?.admin?(ulBehörighet.vantande||0):0;
+  if(!antal){ if(b) b.remove(); return; }
+  if(!b){ b=document.createElement('span'); b.id='delaBricka'; b.className='ul-bricka'; knapp.appendChild(b); }
+  b.textContent=antal>99?'99+':String(antal);
+  b.title=`${antal} ${antal===1?'lärare väntar':'lärare väntar'} på godkännande`;
+}
+async function ulUppdateraBricka(){
+  if(!ulSession) { ulRitaBricka(); return; }
+  try{ await ulHämtaBehörighet(true); }catch(_){}
 }
 async function delningRitaModal(){
   const m=document.getElementById('delamodal');
@@ -9740,23 +9796,26 @@ async function delningRitaModal(){
       <button type="button" class="knapp primär ul-google" data-ul="logga-in">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>
         Logga in med Google</button>
-      <p class="ul-liten">Du loggas in med samma lärarkonto som i Kunskapsgymmet. Det du har på arbetsytan finns kvar.</p>`);
+      <p class="ul-liten">Det du har på arbetsytan finns kvar.</p>`);
     return;
   }
 
-  ulSätt(`${fel}<div class="ul-laddar">Kontrollerar kontot…</div>`);
-  try{
-    if(!(await ulKontrolleraLärare())){
-      titel.textContent='Dela med kollegor'; underrubrik.textContent='';
-      ulSätt(`<div class="ul-fel">${ulEsc(UL_FEL.ej_larare)}</div>${delningKontoRad()}`);
-      return;
-    }
-  }catch(e){
+  if(!ulBehörighet) ulSätt(`${fel}<div class="ul-laddar">Kontrollerar kontot…</div>`);
+  let beh;
+  try{ beh=await ulHämtaBehörighet(); }
+  catch(e){
     titel.textContent='Dela med kollegor'; underrubrik.textContent='';
-    ulSätt(`<div class="ul-fel">${ulEsc(e.message)}</div>${ulSession?delningKontoRad():''}`);
+    ulSätt(`<div class="ul-fel">${ulEsc(e.kod==='saknas'?UL_FEL.saknas+' Kör den senaste SQL-filen i Supabase.':e.message)}</div>${ulSession?delningKontoRad():''}`);
     if(e.kod==='ej_inloggad') delningRitaModal();
     return;
   }
+  if(ulModalLäge.vy==='admin'&&beh.admin){ delningRitaAdmin(); return; }
+  if(!beh.larare){ delningRitaAnsökan(beh); return; }
+  const adminRad=beh.admin?`<div class="ul-adminrad">
+      <span><b>Lärarförfrågningar</b>${beh.vantande?` <span class="ul-bricka statisk">${beh.vantande}</span>`:''}
+      <span class="ul-liten">${beh.vantande?(beh.vantande===1?'En lärare väntar på godkännande.':beh.vantande+' lärare väntar på godkännande.'):'Inga nya förfrågningar.'}</span></span>
+      <button type="button" class="knapp liten tyst" data-ul="admin">Hantera</button>
+    </div>`:'';
 
   if(ulModalLäge.kod){
     titel.textContent='Gå med i ett delat dokument';
@@ -9783,7 +9842,7 @@ async function delningRitaModal(){
     titel.textContent='Dela med kollegor';
     underrubrik.textContent=AKTIV?'Gör det här dokumentet gemensamt.':'Öppna en kurs för att dela ett dokument.';
     const förslag=(document.getElementById('bTitel')?.value||'').trim()||'Dokument';
-    ulSätt(`${fel}
+    ulSätt(`${fel}${adminRad}
       ${AKTIV?`<div class="ul-sektion">
         <label class="ul-etikett" for="ulDelaNamn">Namn på det delade dokumentet</label>
         <div class="ul-rad">
@@ -9808,7 +9867,7 @@ async function delningRitaModal(){
   titel.textContent='Delat dokument';
   underrubrik.textContent=DELNING.roll==='agare'?'Du äger dokumentet.':'Du redigerar tillsammans med kollegor.';
   const länk=ulModalLäge.länk;
-  ulSätt(`${fel}
+  ulSätt(`${fel}${adminRad}
     <div class="ul-sektion">
       <label class="ul-etikett" for="ulNamn">Namn</label>
       <div class="ul-rad"><input id="ulNamn" maxlength="120" autocomplete="off" value="${ulEsc(DELNING.namn)}">
@@ -9843,6 +9902,82 @@ async function delningRitaModal(){
     ${delningKontoRad()}`);
   delningUppdateraModalStatus();
   delningFyllMedlemmar();
+}
+function delningRitaAnsökan(beh){
+  const titel=document.getElementById('delamodalTitel');
+  const underrubrik=document.getElementById('delamodalText');
+  const fel=ulModalLäge.fel?`<div class="ul-fel" role="alert">${ulEsc(ulModalLäge.fel)}</div>`:'';
+  const a=beh.ansokan;
+  const inbjudan=ulModalLäge.kod?`<p class="ul-info">Du har fått en inbjudan till ett delat dokument. Det öppnas när ditt konto är godkänt. Har du stängt fliken öppnar du länken igen.</p>`:'';
+  if(a?.status==='vantar'&&!ulModalLäge.ändra){
+    titel.textContent='Ansökan skickad';
+    underrubrik.textContent='Väntar på godkännande.';
+    ulSätt(`${fel}${inbjudan}
+      <div class="ul-status-kort">
+        <b>Din ansökan väntar på godkännande</b>
+        <span>Skickad ${ulEsc(ulTid(a.skapad))} · ${ulEsc(a.namn)}, ${ulEsc(a.skola)} · ${ulEsc(a.jobbmejl)}</span>
+        <span>När ansökan är godkänd kan du dela dokument och gå med i kollegors dokument.</span>
+      </div>
+      <div class="ul-knapprad">
+        <button type="button" class="knapp primär" data-ul="kolla-igen">Kontrollera igen</button>
+        <button type="button" class="knapp tyst" data-ul="andra-ansokan">Ändra ansökan</button>
+      </div>
+      ${delningKontoRad()}`);
+    return;
+  }
+  const namn=a?.namn||ulSession?.user?.user_metadata?.full_name||ulSession?.user?.user_metadata?.name||'';
+  titel.textContent='Ansök om lärarkonto';
+  underrubrik.textContent='Delning är till för lärare.';
+  ulSätt(`${fel}${inbjudan}
+    ${a?.status==='avslagen'?'<div class="ul-status-kort avslagen"><b>Din tidigare ansökan har inte godkänts.</b><span>Kontrollera uppgifterna och skicka en ny ansökan om du tror att det blivit fel.</span></div>':''}
+    <p class="ul-intro-text">Innan du kan dela prov och övningsblad behöver ditt konto godkännas. Fyll i uppgifterna nedan så granskas ansökan.</p>
+    <div class="ul-formular">
+      <label class="ul-etikett" for="ulAnsNamn">Namn</label>
+      <input id="ulAnsNamn" maxlength="120" autocomplete="name" value="${ulEsc(namn)}">
+      <label class="ul-etikett" for="ulAnsSkola">Skola</label>
+      <input id="ulAnsSkola" maxlength="160" autocomplete="organization" value="${ulEsc(a?.skola||'')}" placeholder="T.ex. Erik Dahlbergsgymnasiet">
+      <label class="ul-etikett" for="ulAnsMejl">Jobbmejl</label>
+      <input id="ulAnsMejl" type="email" maxlength="200" autocomplete="email" value="${ulEsc(a?.jobbmejl||'')}" placeholder="fornamn.efternamn@jonkoping.se">
+    </div>
+    <div class="ul-knapprad">
+      <button type="button" class="knapp primär" data-ul="ansok">Skicka ansökan</button>
+      ${a?.status==='vantar'?'<button type="button" class="knapp tyst" data-ul="avbryt-andring">Avbryt</button>':''}
+    </div>
+    ${delningKontoRad()}`);
+}
+async function delningRitaAdmin(){
+  const titel=document.getElementById('delamodalTitel');
+  const underrubrik=document.getElementById('delamodalText');
+  const fel=ulModalLäge.fel?`<div class="ul-fel" role="alert">${ulEsc(ulModalLäge.fel)}</div>`:'';
+  titel.textContent='Lärarförfrågningar';
+  underrubrik.textContent='Godkänn lärare som ska kunna dela dokument.';
+  const el=ulSätt(`${fel}<button type="button" class="ul-textknapp ul-tillbaka" data-ul="admin-tillbaka">← Tillbaka</button>
+    <div id="ulAdminLista"><div class="ul-laddar">Hämtar förfrågningar…</div></div>`);
+  let lista;
+  try{ lista=await ulRpc('ul_ansokningar'); }
+  catch(e){ const l=document.getElementById('ulAdminLista'); if(l) l.innerHTML=`<div class="ul-fel">${ulEsc(e.message)}</div>`; return; }
+  const l=document.getElementById('ulAdminLista');
+  if(!l||ulModalLäge.vy!=='admin') return;
+  const grupper=[
+    ['vantar','Väntar',[['godkand','Godkänn','primär'],['avslagen','Avslå','tyst']]],
+    ['godkand','Godkända',[['avslagen','Återkalla','tyst']]],
+    ['avslagen','Avslagna och återkallade',[['godkand','Godkänn','tyst']]],
+  ];
+  const kort=(x,knappar)=>`<div class="ul-ansokan">
+      <div class="ul-ansokan-text">
+        <b>${ulEsc(x.namn)}</b>
+        <span>${ulEsc(x.skola)} · ${ulEsc(x.jobbmejl)}</span>
+        <span class="ul-liten">Loggar in som ${ulEsc(x.konto||'okänt konto')} · ${x.status==='vantar'?'ansökte '+ulEsc(ulTid(x.skapad)):ulEsc((x.status==='godkand'?'godkänd ':'avslagen ')+ulTid(x.beslutad)+(x.beslutad_av?' av '+x.beslutad_av:''))}</span>
+      </div>
+      <div class="ul-ansokan-knappar">${knappar.map(([st,txt,stil])=>
+        `<button type="button" class="knapp liten ${stil}" data-beslut="${st}" data-anvandare="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">${txt}</button>`).join('')}</div>
+    </div>`;
+  l.innerHTML=grupper.map(([st,rubrik,knappar])=>{
+    const rader=lista.filter(x=>x.status===st);
+    if(st!=='vantar'&&!rader.length) return '';
+    return `<div class="ul-sektion"><div class="ul-etikett">${rubrik} (${rader.length})</div>
+      ${rader.length?rader.map(x=>kort(x,knappar)).join(''):'<p class="ul-liten">Inga väntande förfrågningar.</p>'}</div>`;
+  }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här.</p>`;
 }
 function delningKontoRad(){
   return `<div class="ul-konto"><span>Inloggad som <b>${ulEsc(ulAnvandarnamn())}</b></span>
@@ -9958,7 +10093,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -9968,10 +10103,20 @@ async function delningModalKlick(e){
     catch(err){
       if(err.kod==='avbrutet') return;
       ulModalLäge.fel=err.message;
-      if(err.kod==='ej_inloggad') ulLärare=null;
+      if(err.kod==='ej_inloggad'||err.kod==='ej_larare'||err.kod==='ej_admin') ulGlömBehörighet();
     }
     finally{ knapp.disabled=false; delningRitaModal(); }
   };
+  if(knapp.dataset.beslut){
+    const st=knapp.dataset.beslut, namn=knapp.dataset.namn;
+    if(st==='avslagen'&&knapp.textContent==='Återkalla'&&
+       !confirm(`Återkalla lärarbehörigheten för ${namn}? Personen kommer inte längre åt delade dokument.`)) return;
+    return kör(async()=>{
+      await ulRpc('ul_besluta',{p_user:knapp.dataset.anvandare,p_status:st});
+      await ulHämtaBehörighet(true);
+      ulMeddela(st==='godkand'?`${namn} är godkänd som lärare.`:`${namn} har inte behörighet.`);
+    });
+  }
   if(knapp.dataset.taBort){
     if(!confirm(`Ta bort ${knapp.dataset.namn} från dokumentet?`)) return;
     return kör(()=>ulRpc('ul_ta_bort_medlem',{p_id:DELNING.id,p_user:knapp.dataset.taBort}));
@@ -9988,7 +10133,29 @@ async function delningModalKlick(e){
   }
   switch(åtgärd){
     case 'logga-in': ulLoggaIn(); break;
-    case 'logga-ut': ulLärare=null; await ulLoggaUt(); break;
+    case 'logga-ut': ulGlömBehörighet(); await ulLoggaUt(); break;
+    case 'admin': ulModalLäge.vy='admin'; delningRitaModal(); return;
+    case 'admin-tillbaka': ulModalLäge.vy=null; await ulHämtaBehörighet(true).catch(()=>{}); delningRitaModal(); return;
+    case 'kolla-igen': return kör(async()=>{
+      const b=await ulHämtaBehörighet(true);
+      if(b.larare) ulMeddela('Ditt konto är godkänt. Nu kan du dela dokument.');
+      else ulMeddela('Ansökan väntar fortfarande på godkännande.');
+    });
+    case 'andra-ansokan': ulModalLäge.ändra=true; delningRitaModal(); return;
+    case 'avbryt-andring': ulModalLäge.ändra=false; delningRitaModal(); return;
+    case 'ansok': {
+      const v=id=>(document.getElementById(id)?.value||'').trim();
+      const namn=v('ulAnsNamn'), skola=v('ulAnsSkola'), mejl=v('ulAnsMejl');
+      if(!namn){ document.getElementById('ulAnsNamn')?.focus(); return; }
+      if(!skola){ document.getElementById('ulAnsSkola')?.focus(); return; }
+      if(!mejl){ document.getElementById('ulAnsMejl')?.focus(); return; }
+      return kör(async()=>{
+        await ulRpc('ul_ansok',{p_namn:namn,p_skola:skola,p_jobbmejl:mejl});
+        ulModalLäge.ändra=false;
+        await ulHämtaBehörighet(true);
+        ulMeddela('Ansökan är skickad.');
+      });
+    }
     case 'dela': {
       const namn=(document.getElementById('ulDelaNamn')?.value||'').trim();
       if(!namn){ document.getElementById('ulDelaNamn')?.focus(); return; }
@@ -10045,6 +10212,7 @@ function initDelning(){
     if(e.key==='Escape'){ delningStängModal(); return; }
     if(e.key==='Enter'&&e.target.id==='ulDelaNamn'){ e.preventDefault(); m.querySelector('[data-ul="dela"]')?.click(); }
     if(e.key==='Enter'&&e.target.id==='ulKod'){ e.preventDefault(); m.querySelector('[data-ul="ga-med"]')?.click(); }
+    if(e.key==='Enter'&&/^ulAns/.test(e.target.id)){ e.preventDefault(); m.querySelector('[data-ul="ansok"]')?.click(); }
     if(e.key==='Enter'&&e.target.id==='ulNamn'){ e.preventDefault(); m.querySelector('[data-ul="byt-namn"]')?.click(); }
   });
   m?.addEventListener('toggle',e=>{ if(e.target.id==='ulVersioner'&&e.target.open) delningFyllVersioner(); },true);
@@ -10069,6 +10237,10 @@ const UL_KLAR=(async()=>{
   if(kod) delningÖppnaModal({kod});
   else if(efter?.dela||ulInloggningsfel) delningÖppnaModal();
   delningRitaStatus();
+  ulUppdateraBricka();
+  setInterval(()=>{
+    if(ulSession&&ulBehörighet?.admin&&document.visibilityState==='visible') ulUppdateraBricka();
+  },60000);
 })();
 
 </script>
