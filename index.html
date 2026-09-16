@@ -4754,6 +4754,19 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 @media print{ .delningsrad,.ul-toast,#delamodal{display:none!important} }
 
 /* ── Inloggningsgrinden: konton ── */
+/* Grinden scrollar när kortet är högre än fönstret. Flex med margin:auto
+   centrerar kortet utan att toppen klipps bort när det inte får plats. */
+.password-gate:not([hidden]){
+  display:flex!important;flex-direction:column;
+  overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch
+}
+.password-gate::before{position:fixed!important}
+.password-gate .password-card{margin:auto!important;flex:none;max-width:100%}
+@media (max-height:720px),(max-width:480px){
+  .password-gate{padding:16px 12px!important}
+  .password-card{padding:24px 22px 22px!important}
+  .password-brand{margin-bottom:18px!important;padding-bottom:16px!important}
+}
 .grind-vy[hidden]{display:none!important}
 .grind-vy > p{margin:0 0 20px;font-size:14px;line-height:1.5;color:var(--muted)}
 .grind-vy h1{outline:none}
@@ -4816,6 +4829,56 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   border:0;border-radius:9px;background:none;color:var(--ink);cursor:pointer;font:500 13px/1.2 var(--ui);text-align:left}
 .konto-meny button:hover{background:var(--canvas)}
 @media (max-width:760px){ .konto-knapp .konto-namn{display:none} .konto-knapp{padding:4px!important} }
+
+/* ── Mina prov och övningsblad ── */
+#minamodal .sparmodal-kort{width:min(880px,100%);max-height:min(820px,90vh)}
+.mina-verktyg{padding:12px 20px;border-bottom:1px solid var(--line)}
+.mina-sok{display:flex;align-items:center;gap:8px;height:38px;padding:0 12px;border:1px solid var(--line);
+  border-radius:10px;background:var(--canvas);color:var(--muted)}
+.mina-sok:focus-within{border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring);background:#fff}
+.mina-sok svg{width:16px;height:16px;flex:none}
+.mina-sok input{flex:1;min-width:0;border:0;outline:0;background:none;font:inherit;font-size:13.5px;color:var(--ink)}
+.mina-kolumner{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.mina-kolumn{min-width:0}
+.mina-rubrik{display:flex;align-items:center;gap:9px;margin:0 0 10px;padding-bottom:9px;border-bottom:2px solid var(--ink)}
+.mina-rubrik h3{margin:0;font-size:14.5px;letter-spacing:-.01em}
+.mina-rubrik .mina-antal{margin-left:auto;min-width:22px;height:20px;padding:0 7px;border-radius:10px;display:grid;
+  place-items:center;background:var(--canvas);border:1px solid var(--line);font-size:11px;font-weight:700;color:var(--ink-2)}
+.mina-ikon{width:28px;height:28px;flex:none;border-radius:8px;display:grid;place-items:center;color:#fff}
+.mina-ikon svg{width:16px;height:16px}
+.mina-ikon.prov{background:#8E2519}
+.mina-ikon.ovning{background:#2C62A8}
+.mina-lista{display:grid;gap:8px}
+.mina-post{position:relative;border:1px solid var(--line);border-radius:12px;background:var(--surface);
+  transition:border-color .15s,box-shadow .15s,transform .15s}
+.mina-post:hover{border-color:color-mix(in srgb,var(--ink) 22%,transparent);box-shadow:0 6px 18px rgba(20,22,28,.08)}
+.mina-post.aktuell{border-color:color-mix(in srgb,var(--ed) 45%,transparent);background:var(--ed-tint)}
+.mina-kort{display:flex;align-items:stretch;gap:12px;width:100%;padding:11px 12px 11px 0;border:0;background:none;
+  cursor:pointer;text-align:left;font:inherit;color:inherit;border-radius:12px}
+.mina-kort:focus-visible{outline:2px solid var(--ed);outline-offset:2px}
+.mina-kort:disabled{cursor:progress;opacity:.65}
+.mina-rygg{width:4px;flex:none;margin-left:-1px;border-radius:0 3px 3px 0;background:var(--k,#888)}
+.mina-text{display:grid;gap:3px;min-width:0;flex:1}
+.mina-text b{font-size:13.5px;font-weight:650;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  padding-right:4px}
+.mina-meta{display:flex;flex-wrap:wrap;gap:3px 10px;font-size:11.5px;color:var(--muted)}
+.mina-meta .mina-kurs{color:var(--ink-2);font-weight:600}
+.mina-etikett{display:inline-flex;align-items:center;gap:4px;padding:1px 7px;border-radius:999px;font-size:10.5px;
+  font-weight:700;background:var(--canvas);border:1px solid var(--line);color:var(--ink-2)}
+.mina-etikett.delad{background:#EEF3FA;border-color:#D3DFEF;color:#2C4F80}
+.mina-atg{position:absolute;right:8px;bottom:8px;display:flex;gap:2px;opacity:0;transition:opacity .15s}
+.mina-post:hover .mina-atg,.mina-post:focus-within .mina-atg{opacity:1}
+.mina-atg button{border:0;background:var(--surface);padding:3px 7px;border-radius:7px;font:inherit;font-size:11.5px;
+  font-weight:600;color:var(--ink-2);cursor:pointer}
+.mina-atg button:hover{background:var(--sunken)}
+.mina-atg .radera{color:var(--ed-dark)}
+.mina-tom{padding:22px 14px;border:1px dashed var(--line);border-radius:12px;text-align:center;font-size:12.5px;
+  line-height:1.5;color:var(--muted)}
+.mina-tom b{display:block;margin-bottom:2px;color:var(--ink-2)}
+.mina-lokal{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px;padding:10px 12px;
+  border:1px solid var(--line);border-radius:12px;background:var(--canvas);font-size:12.5px;color:var(--ink-2)}
+@media (hover:none){ .mina-atg{opacity:1} }
+@media (max-width:720px){ .mina-kolumner{grid-template-columns:1fr;gap:20px} }
 
 /* ── Sparat på kontot ── */
 .delningsrad.privat .dr-ikon{background:var(--canvas);color:var(--ink-2)}
@@ -8806,6 +8869,28 @@ if(DIREKTKURS){
   </div>
 </div>
 
+<div class="sparmodal" id="minamodal" hidden aria-modal="true" role="dialog" aria-labelledby="minamodalTitel">
+  <div class="sparmodal-kort">
+    <div class="sparmodal-huvud">
+      <div>
+        <h2 id="minamodalTitel">Mina prov och övningsblad</h2>
+        <p>Sparade på ditt konto. Dokumentet öppnas i sin kurs.</p>
+      </div>
+      <div class="fyll"></div>
+      <button class="sparmodal-stang" id="minamodalStang" type="button" aria-label="Stäng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mina-verktyg">
+      <label class="mina-sok">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+        <input id="minaSok" type="search" placeholder="Sök på namn eller kurs" autocomplete="off" aria-label="Sök bland dokumenten">
+      </label>
+    </div>
+    <div class="sparmodal-body" id="minaInnehall"></div>
+  </div>
+</div>
+
 <script>
 /* ═══════════════════════════════════════════════════════════════════════════
    Layoutläge, nivåordning och spridning vid slumpning.
@@ -10288,12 +10373,13 @@ function delningRitaLista(){
 
 /* ── åtgärder ───────────────────────────────────────────────────────────── */
 async function delningÖppna(id){
-  if(DELNING.id===id) return;
-  if(state.blad.length&&!DELNING.id&&!AKTIV_SPAR_ID&&
-     !confirm('Det du har på arbetsytan ersätts av det delade dokumentet. Spara det först om du vill behålla det.\n\nFortsätta?')){
+  if(DELNING.id===id&&AKTIV?.id===DELNING.kurs) return;
+  const h=await ulRpc('ul_hamta',{p_id:id});
+  /* I en annan kurs ligger arbetsytan kvar i den kursens utkast. */
+  if(AKTIV?.id===h.kurs&&state.blad.length&&!DELNING.id&&!AKTIV_SPAR_ID&&
+     !confirm('Det du har på arbetsytan ersätts av dokumentet. Spara det först om du vill behålla det.\n\nFortsätta?')){
     const e=new Error('Avbrutet'); e.kod='avbrutet'; throw e;
   }
-  const h=await ulRpc('ul_hamta',{p_id:id});
   delningKoppla(null,{tyst:true});
   await sparLaddaDokument({...h.data,id:null,name:h.namn,updatedAt:h.uppdaterad},{manuell:true,delat:true});
   if(AKTIV?.id!==h.kurs) throw new Error('Kursen för det delade dokumentet kunde inte öppnas.');
@@ -10905,6 +10991,7 @@ function kontoRitaChip(){
   const meny=konto?`
       <div class="konto-meny-huvud"><b>${ulEsc(namn)}</b><span>${ulEsc(kontoEpost())}</span>
         <span>Dokumenten sparas på ditt konto.</span></div>
+      <button type="button" role="menuitem" data-konto-val="mina"><span>Mina prov och övningsblad</span></button>
       ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${antal?`<span class="ul-bricka">${antal}</span>`:''}</button>`:''}
       ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
       ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
@@ -10925,6 +11012,7 @@ function kontoRitaChip(){
 function kontoMenyVal(val){
   switch(val){
     case 'admin': delningÖppnaModal({vy:'admin'}); break;
+    case 'mina': minaÖppna(); break;
     case 'flytt': kontoErbjudFlytt(true); break;
     case 'losenord': grindLås(); grindRita('byt',{tvingad:false}); break;
     case 'logga-ut': ulLoggaUt(); break;
@@ -11123,8 +11211,152 @@ async function kontoFlyttaIn(){
   ulMeddela(`${klara.length} ${klara.length===1?'dokument är flyttat':'dokument är flyttade'} till kontot. Du hittar dem under Ladda.`);
 }
 
+/* ── Mina prov och övningsblad ──────────────────────────────────────────── */
+const UL_IKON_PROV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg>';
+const UL_IKON_OVNING='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
+const MINA={lista:null,fel:null,sök:'',laddar:false};
+
+function minaTid(iso){
+  const d=new Date(iso); if(Number.isNaN(d.getTime())) return '';
+  const klocka=d.toLocaleTimeString('sv-SE',{hour:'2-digit',minute:'2-digit'});
+  const dag=x=>new Date(x.getFullYear(),x.getMonth(),x.getDate()).getTime();
+  const skillnad=Math.round((dag(new Date())-dag(d))/864e5);
+  if(skillnad===0) return 'i dag '+klocka;
+  if(skillnad===1) return 'i går '+klocka;
+  const opt={day:'numeric',month:'short'};
+  if(d.getFullYear()!==new Date().getFullYear()) opt.year='numeric';
+  return d.toLocaleDateString('sv-SE',opt);
+}
+async function minaÖppna(){
+  if(!kontoAktivt()) return;
+  const m=document.getElementById('minamodal');
+  MINA.sök=''; MINA.fel=null;
+  document.getElementById('minaSok').value='';
+  m.hidden=false;
+  minaRita();
+  await minaHämta();
+  setTimeout(()=>document.getElementById('minaSok')?.focus(),0);
+}
+function minaStäng(){ document.getElementById('minamodal').hidden=true; }
+async function minaHämta(){
+  MINA.laddar=true;
+  if(!MINA.lista) minaRita();
+  try{ MINA.lista=await ulRpc('ul_mina'); MINA.fel=null; }
+  catch(e){ MINA.fel=e.kod==='saknas'?UL_FEL.saknas:e.message; }
+  finally{ MINA.laddar=false; }
+  minaRita();
+}
+function minaPost(d){
+  const kurs=KURSER.find(k=>k.id===d.kurs);
+  const spår=kurs?.spår?.find(x=>x.id===d.spar);
+  const färg=spår?.färg||kurs?.färg||'#8A8791';
+  const kursnamn=(kurs?.titel||d.kurs||'Okänd kurs')+(spår?` · ${spår.etikett||spår.id}`:'');
+  const aktuell=DELNING.id===d.id&&AKTIV?.id===d.kurs;
+  const delat=d.medlemmar>1;
+  const ägare=d.roll==='agare';
+  const etikett=!ägare?`<span class="mina-etikett delad">Delat av ${ulEsc(d.agare)}</span>`
+    :delat?`<span class="mina-etikett delad">Delat med ${d.medlemmar-1}</span>`:'';
+  return `<div class="mina-post${aktuell?' aktuell':''}">
+    <button type="button" class="mina-kort" data-mina-oppna="${ulEsc(d.id)}" style="--k:${ulEsc(färg)}"
+      title="Öppna ${ulEsc(d.namn)} i ${ulEsc(kursnamn)}">
+      <span class="mina-rygg" aria-hidden="true"></span>
+      <span class="mina-text">
+        <b>${ulEsc(d.namn)}</b>
+        <span class="mina-meta"><span class="mina-kurs">${ulEsc(kursnamn)}</span>
+          <span>${d.antal_uppgifter} ${d.antal_uppgifter===1?'uppgift':'uppgifter'}</span>${etikett}</span>
+        <span class="mina-meta"><span>${aktuell?'Öppet nu':'Ändrat '+ulEsc(minaTid(d.uppdaterad))}${delat&&d.uppdaterad_av?' av '+ulEsc(d.uppdaterad_av):''}</span></span>
+      </span>
+    </button>
+    <div class="mina-atg">
+      <button type="button" data-mina-kopiera="${ulEsc(d.id)}">Duplicera</button>
+      <button type="button" class="radera" data-mina-radera="${ulEsc(d.id)}">${ägare?'Ta bort':'Lämna'}</button>
+    </div>
+  </div>`;
+}
+function minaRita(){
+  const el=document.getElementById('minaInnehall');
+  if(!el||document.getElementById('minamodal').hidden) return;
+  if(MINA.fel){ el.innerHTML=`<div class="ul-fel" role="alert">${ulEsc(MINA.fel)}</div>`; return; }
+  if(!MINA.lista){ el.innerHTML='<div class="ul-laddar">Hämtar dina dokument…</div>'; return; }
+  const q=MINA.sök.trim().toLowerCase();
+  const träff=d=>{
+    if(!q) return true;
+    const kurs=KURSER.find(k=>k.id===d.kurs);
+    return [d.namn,kurs?.titel,d.kurs,d.spar].some(t=>String(t||'').toLowerCase().includes(q));
+  };
+  const lista=MINA.lista.filter(träff)
+    .sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+  const prov=lista.filter(d=>d.typ==='prov');
+  const övning=lista.filter(d=>d.typ!=='prov');
+  const lokala=sparLasaAlla().length;
+  const kolumn=(typ,rubrik,ikon,poster,tom)=>`<section class="mina-kolumn" aria-label="${rubrik}">
+      <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span>
+        <h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
+      <div class="mina-lista">${poster.length?poster.map(minaPost).join('')
+        :`<div class="mina-tom">${q?'<b>Inga träffar</b>':tom}</div>`}</div>
+    </section>`;
+  el.innerHTML=`${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span>
+      <button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
+    <div class="mina-kolumner">
+      ${kolumn('prov','Prov',UL_IKON_PROV,prov,'<b>Inga prov ännu</b>Välj Prov som dokumenttyp och tryck på Spara.')}
+      ${kolumn('ovning','Övningsblad',UL_IKON_OVNING,övning,'<b>Inga övningsblad ännu</b>Tryck på Spara när du byggt ett övningsblad.')}
+    </div>`;
+}
+async function minaKlick(e){
+  const öppna=e.target.closest('[data-mina-oppna]');
+  const kopiera=e.target.closest('[data-mina-kopiera]');
+  const radera=e.target.closest('[data-mina-radera]');
+  if(e.target.closest('[data-mina-flytt]')){ minaStäng(); kontoErbjudFlytt(true); return; }
+  if(öppna){
+    const id=öppna.dataset.minaOppna;
+    öppna.disabled=true;
+    öppna.querySelector('.mina-meta:last-child span').textContent='Öppnar…';
+    try{
+      if(!(DELNING.id===id&&AKTIV?.id===DELNING.kurs)) await delningÖppna(id);
+      minaStäng();
+    }catch(err){
+      if(err.kod!=='avbrutet') alert(err.message);
+      minaRita();
+    }
+    return;
+  }
+  const d=MINA.lista?.find(x=>x.id===(kopiera||radera)?.dataset[kopiera?'minaKopiera':'minaRadera']);
+  if(!d) return;
+  const knapp=kopiera||radera;
+  if(kopiera){
+    knapp.disabled=true;
+    try{
+      const h=await ulRpc('ul_hamta',{p_id:d.id});
+      await ulRpc('ul_skapa',{p_namn:(h.namn+' – kopia').slice(0,120),p_kurs:h.kurs,p_data:h.data});
+      await minaHämta();
+    }catch(err){ alert(err.message); knapp.disabled=false; }
+    return;
+  }
+  const ägare=d.roll==='agare', andra=(d.medlemmar||1)-1;
+  const fråga=ägare
+    ?`Ta bort ”${d.namn}” från kontot?`+(andra?` ${andra===1?'En kollega':andra+' kollegor'} förlorar också åtkomst.`:'')
+    :`Lämna ”${d.namn}”? Du behöver en ny inbjudan för att öppna det igen.`;
+  if(!confirm(fråga)) return;
+  knapp.disabled=true;
+  try{
+    if(ägare) await ulRpc('ul_radera',{p_id:d.id});
+    else await ulRpc('ul_ta_bort_medlem',{p_id:d.id,p_user:ulSession.user?.id});
+    if(DELNING.id===d.id){
+      delningKoppla(null,{tyst:true}); sparAutosparaNu();
+      ulMeddela('Dokumentet finns kvar på arbetsytan, men sparas inte längre på kontot.');
+    }
+    await minaHämta();
+  }catch(err){ alert(err.message); knapp.disabled=false; }
+}
+
 /* ── start ──────────────────────────────────────────────────────────────── */
 (async()=>{
+  const mina=document.getElementById('minamodal');
+  document.getElementById('minamodalStang').addEventListener('click',minaStäng);
+  mina.addEventListener('click',e=>{ if(e.target===mina) minaStäng(); else minaKlick(e); });
+  mina.addEventListener('keydown',e=>{ if(e.key==='Escape') minaStäng(); });
+  document.getElementById('minaSok').addEventListener('input',e=>{ MINA.sök=e.target.value; minaRita(); });
+
   const el=grindEl();
   el.addEventListener('click',grindKlick);
   el.addEventListener('submit',grindSkicka);
