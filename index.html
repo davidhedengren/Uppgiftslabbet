@@ -4898,6 +4898,19 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   border:1px solid #cfe3d8;font-size:12.5px;color:var(--ink-2)}
 .ul-tillfalligt .ul-länk input{font-size:14px;letter-spacing:.04em;color:var(--ink)}
 </style>
+
+<style>
+/* Kontoskydd och administrativ gruppering. */
+.grind-captcha{min-height:66px;margin:14px 0 2px;display:flex;align-items:center;justify-content:center}
+.grind-captcha[hidden]{display:none}
+.ul-externa{border:1px solid var(--line);border-radius:var(--r-m);padding:0;background:var(--surface);overflow:hidden}
+.ul-externa>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;padding:12px 14px;font-weight:650;color:var(--ink-2);background:var(--canvas)}
+.ul-externa>summary::-webkit-details-marker{display:none}
+.ul-externa>summary::after{content:'›';font-size:18px;line-height:1;transform:rotate(90deg);transition:transform .16s}
+.ul-externa[open]>summary::after{transform:rotate(-90deg)}
+.ul-externa-innehall{padding:10px 12px 12px}
+.ul-externa-actions{display:flex;justify-content:flex-end;margin:10px 0 2px}
+</style>
 </head>
 <body class="password-locked">
 
@@ -5801,23 +5814,17 @@ function sparOppnaLadda(){
   sparRenderLista(); $('#sparmodal').hidden=false;
   if(typeof delningRitaLista==='function') delningRitaLista();
 }
-async function sparVantaKurs(id,timeout=8000){
-  const start=Date.now();
-  while(Date.now()-start<timeout){
-    if(AKTIV?.id===id && Array.isArray(DB?.bank)) return true;
-    await new Promise(ok=>setTimeout(ok,40));
-  }
-  return false;
-}
 async function sparSakerstallKurs(courseId){
   const kurs=KURSER.find(k=>k.id===courseId);
   if(!kurs) throw new Error('Den sparade kursen finns inte längre.');
-  if(AKTIV?.id===courseId) return kurs;
+  if(AKTIV?.id===courseId && Array.isArray(DB?.bank)) return kurs;
   const kort=document.querySelector(`.kurskort[data-kurs="${courseId}"]`);
+  if(AKTIV?.id&&AKTIV.id!==courseId) sparAutosparaNu();
   sparHoppaAterstall=true;
   try{
-    if(kurs.data) startaKurs(kurs); else await väljKurs(kurs,kort);
-    if(!(await sparVantaKurs(courseId))) throw new Error('Kursen hann inte läsas in.');
+    const ok=kurs.data?await startaKurs(kurs):await väljKurs(kurs,kort);
+    if(!ok || AKTIV?.id!==courseId || !Array.isArray(DB?.bank))
+      throw new Error('Kursen kunde inte öppnas färdigt. Försök igen.');
   }finally{ sparHoppaAterstall=false; }
   return kurs;
 }
@@ -5861,11 +5868,19 @@ function sparUppgifterUrDokument(doc){
   }).filter(x=>x&&x.id!=null&&x.t!=null&&x.poang!=null);
 }
 async function sparLaddaDokument(doc,{manuell=true,delat=false}={}){
-  if(!doc) return;
-  if(typeof delningFöreLaddning==='function') delningFöreLaddning(doc,{manuell,delat});
+  if(!doc) return false;
   try{
     const kursId=doc.course||doc.courseId||AKTIV?.id;
     if(!kursId) throw new Error('Det sparade dokumentet saknar kursinformation. Öppna rätt kurs och försök igen.');
+    if(manuell&&AKTIV?.id&&AKTIV.id!==kursId){
+      const mål=KURSER.find(k=>k.id===kursId);
+      const från=AKTIV?.titel||AKTIV?.id||'den aktuella kursen';
+      const till=mål?.titel||kursId;
+      if(!confirm(`Dokumentet hör till ${till}, men du är inne i ${från}.\n\nByta kurs och öppna dokumentet?`)){
+        const e=new Error('Avbrutet'); e.kod='avbrutet'; throw e;
+      }
+    }
+    if(typeof delningFöreLaddning==='function') delningFöreLaddning(doc,{manuell,delat});
     await sparSakerstallKurs(kursId);
     state.spår=doc.track||state.spår;
     if(typeof byggSpårfilter==='function') byggSpårfilter();
@@ -5878,9 +5893,16 @@ async function sparLaddaDokument(doc,{manuell=true,delat=false}={}){
     sparStatus(manuell?'Laddat · '+sparFormatTid(doc.updatedAt):'Utkast återställt',true);
     sparAutosparaNu();
     if(typeof delningEfterLaddning==='function') delningEfterLaddning(doc,{manuell,delat});
+    return true;
   }catch(e){
+    if(e?.kod==='avbrutet'){
+      if(delat) throw e;
+      return false;
+    }
     console.error('Kunde inte ladda dokument',e);
+    if(delat) throw e;
     alert('Dokumentet kunde inte laddas. '+(e?.message||e));
+    return false;
   }
 }
 async function sparLaddaId(id){
@@ -6201,8 +6223,7 @@ async function väljKurs(kurs,kort){
 
   /* Hoppar över filinläsning för kurser som redan är laddade. */
   if(kurs.data){
-    startaKurs(kurs);
-    return;
+    return await startaKurs(kurs);
   }
 
   kort.classList.add('laddar');
@@ -6241,13 +6262,13 @@ async function väljKurs(kurs,kort){
       Kontrollera att <code>${kurs.filer.join('</code> och <code>')}</code> ligger i samma mapp
       som sidan. Tekniskt fel: <code>${String(e?.message||e)}</code>`;
     $('#kvFel').hidden=false;
-    return;
+    return false;
   }
 
-  /* När filinläsningen är klar öppnas banken direkt utan omrendering av kursväljaren. */
+  /* När filinläsningen är klar öppnas banken och initieringen inväntas. */
   kort.classList.remove('laddar');
   status.textContent=`${kurs.data.bank.length} uppgifter redo`;
-  startaKurs(kurs);
+  return await startaKurs(kurs);
   }finally{ kursvalPågår=false; }
 }
 function visaKursval(){
@@ -6298,10 +6319,10 @@ function startaKurs(kurs){
   }catch(err){
     console.error('Fel vid initiering av kursen',err);
     $('#lista').innerHTML=`<div class="tomt"><h3>Kursen kunde inte initieras</h3><p>${String(err?.message||err)}</p></div>`;
-    return;
+    return Promise.resolve(false);
   }
 
-  requestAnimationFrame(()=>{
+  return new Promise(resolve=>requestAnimationFrame(()=>{
     try{
       byggSpårfilter();
       byggHjälpmedelsfilter();
@@ -6312,11 +6333,13 @@ function startaKurs(kurs){
       rita();
       ritaBlad();
       if(!sparHoppaAterstall) sparAterstallUtkast(kurs);
+      resolve(true);
     }catch(err){
       console.error('Kunde inte starta kursen',err);
       $('#lista').innerHTML=`<div class="tomt"><h3>Kursen kunde inte öppnas</h3><p>${String(err?.message||err)}</p></div>`;
+      resolve(false);
     }
-  });
+  }));
 }
 
 /* Förmågefiltret visas bara i banker som faktiskt har förmågemetadata.
@@ -10279,13 +10302,21 @@ async function delningRitaAdmin(){
         <button type="button" class="knapp liten tyst" data-konto-bort="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}" data-konto="${ulEsc(x.konto)}">Ta bort</button>
       </div>
     </div>`;
-  const utanSektion=utan.length?`<div class="ul-sektion"><div class="ul-etikett">Konton utan ansökan (${utan.length})</div>
-      ${utan.map(utanKort).join('')}
-      <p class="ul-liten">Lärare som skapat konto med e-post men inte kommit vidare till ansökan. Godkänn bekräftar också e-postadressen, så att hen kan logga in direkt.</p></div>`:'';
+  const harFormularFlagga=utan.some(x=>Object.prototype.hasOwnProperty.call(x,'formular'));
+  const viaFormular=harFormularFlagga?utan.filter(x=>x.formular):utan;
+  const externa=harFormularFlagga?utan.filter(x=>!x.formular):[];
+  const formularSektion=viaFormular.length?`<div class="ul-sektion"><div class="ul-etikett">Påbörjade registreringar (${viaFormular.length})</div>
+      ${viaFormular.map(utanKort).join('')}
+      <p class="ul-liten">Konton som skapats via Uppgiftslabbets formulär men ännu inte har skickat en ansökan.</p></div>`:'';
+  const externaSektion=externa.length?`<details class="ul-sektion ul-externa"><summary>Konton som inte skapats via formuläret (${externa.length})</summary>
+      <div class="ul-externa-innehall">${externa.map(utanKort).join('')}
+      <div class="ul-externa-actions"><button type="button" class="knapp liten tyst" data-konto-bort-alla="${externa.length}">Ta bort alla externa konton</button></div>
+      <p class="ul-liten">De här e-postkontona saknar Uppgiftslabbets registreringsmärkning. De kan tas bort utan att påverka godkända lärarkonton.</p></div></details>`:'';
+  const utanSektion=harFormularFlagga?(externaSektion+formularSektion):(utan.length?`<div class="ul-sektion"><div class="ul-etikett">Konton utan ansökan (${utan.length})</div>${utan.map(utanKort).join('')}</div>`:'');
   l.innerHTML=utanSektion+grupper.map(([st,rubrik,knappar])=>{
     const rader=lista.filter(x=>x.status===st);
     if(st!=='vantar'&&!rader.length) return '';
-    if(st==='vantar'&&!rader.length&&utan.length) return '';
+    if(st==='vantar'&&!rader.length&&(viaFormular.length||externa.length)) return '';
     return `<div class="ul-sektion"><div class="ul-etikett">${rubrik} (${rader.length})</div>
       ${rader.length?rader.map(x=>kort(x,knappar)).join(''):'<p class="ul-liten">Inga väntande förfrågningar.</p>'}</div>`;
   }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här. Den som glömt sitt lösenord får ett tillfälligt av dig.</p>`;
@@ -10384,7 +10415,7 @@ async function delningFyllLista(el){
       b.disabled=true;
       try{
         if(ägare) await ulRpc('ul_radera',{p_id:id});
-        else await ulRpc('ul_ta_bort_medlem',{p_id:id,p_user:ulSession.user?.id});
+        else await delningLämna(id);
         if(DELNING.id===id){ delningKoppla(null,{tyst:true}); sparAutosparaNu(); ulMeddela('Dokumentet finns kvar på arbetsytan, men sparas inte längre på kontot.'); }
         delningFyllLista(el);
       }catch(e){ alert(e.message); b.disabled=false; }
@@ -10417,6 +10448,15 @@ async function delningÖppna(id){
   sparStatus(h.medlemmar>1?'Delat dokument öppnat':'Öppnat från kontot',true);
   if(h.medlemmar>1) ulMeddela(`”${h.namn}” är öppet. Ändringar synkas med kollegorna.`);
 }
+async function delningLämna(id){
+  try{
+    return await ulRpc('ul_lamna',{p_id:id});
+  }catch(e){
+    /* Bakåtkompatibilitet med databasversioner som ännu bara har tvåparametersfunktionen. */
+    if(e?.kod!=='saknas') throw e;
+    return ulRpc('ul_ta_bort_medlem',{p_id:id,p_user:ulSession.user?.id});
+  }
+}
 async function delningGåMed(kod){
   const r=await ulRpc('ul_ga_med',{p_kod:kod});
   await delningÖppna(r.id);
@@ -10435,7 +10475,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort],[data-konto-bort-alla]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -10472,6 +10512,15 @@ async function delningModalKlick(e){
     return kör(async()=>{
       await ulRpc('ul_ta_bort_konto',{p_user:knapp.dataset.kontoBort});
       await ulHämtaBehörighet(true);
+    });
+  }
+  if(knapp.dataset.kontoBortAlla!==undefined){
+    const antal=Number(knapp.dataset.kontoBortAlla)||0;
+    if(!confirm(`Ta bort ${antal} ${antal===1?'konto':'konton'} som inte skapats via Uppgiftslabbets formulär?`)) return;
+    return kör(async()=>{
+      const r=await ulRpc('ul_ta_bort_externa_konton');
+      await ulHämtaBehörighet(true);
+      ulMeddela(`${r?.antal??antal} ${Number(r?.antal??antal)===1?'konto togs':'konton togs'} bort.`);
     });
   }
   if(knapp.dataset.tillfalligt){
@@ -10566,7 +10615,7 @@ async function delningModalKlick(e){
       if(!confirm('Lämna dokumentet? Du behåller en lokal kopia men kan inte öppna det delade dokumentet igen utan en ny inbjudan.')) return;
       return kör(async()=>{
         await delningSynka(false).catch(()=>{});
-        await ulRpc('ul_ta_bort_medlem',{p_id:DELNING.id,p_user:ulSession.user?.id});
+        await delningLämna(DELNING.id);
         delningKoppla(null,{tyst:true}); sparAutosparaNu(); ulModalLäge.länk=null;
       });
     case 'radera':
@@ -10632,6 +10681,45 @@ const UL_KLAR=(async()=>{
    läge där allt sparas bara i webbläsaren, som förut.
    ═══════════════════════════════════════════════════════════════════════════ */
 const UL_GODKAND_CACHE='ul-godkand-cache';
+/* Cloudflare Turnstile Site Key. Secret key läggs endast i Supabase. */
+const UL_TURNSTILE_SITE_KEY='';
+let ulTurnstileLöfte=null;
+function ulCaptchaAktiv(){ return Boolean(String(UL_TURNSTILE_SITE_KEY||'').trim()); }
+function ulLaddaTurnstile(){
+  if(window.turnstile) return Promise.resolve(window.turnstile);
+  if(ulTurnstileLöfte) return ulTurnstileLöfte;
+  ulTurnstileLöfte=new Promise((resolve,reject)=>{
+    const s=document.createElement('script');
+    s.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    s.async=true; s.defer=true; s.dataset.ulTurnstile='1';
+    s.onload=()=>window.turnstile?resolve(window.turnstile):reject(new Error('Turnstile kunde inte startas.'));
+    s.onerror=()=>reject(new Error('Bot-skyddet kunde inte laddas. Kontrollera internetanslutningen.'));
+    document.head.appendChild(s);
+  });
+  return ulTurnstileLöfte;
+}
+async function ulCaptchaMontera(root){
+  const box=root?.querySelector?.('[data-ul-captcha]');
+  if(!box||!ulCaptchaAktiv()) return;
+  box.hidden=false;
+  try{
+    const t=await ulLaddaTurnstile();
+    if(!box.isConnected) return;
+    const token=root.querySelector('[data-ul-captcha-token]');
+    t.render(box,{sitekey:UL_TURNSTILE_SITE_KEY,
+      callback:v=>{ if(token) token.value=v||''; },
+      'expired-callback':()=>{ if(token) token.value=''; },
+      'error-callback':()=>{ if(token) token.value=''; }});
+  }catch(e){
+    if(box.isConnected) box.innerHTML='<span class="ul-liten">Bot-skyddet kunde inte laddas. Ladda om sidan och försök igen.</span>';
+  }
+}
+function ulCaptchaBody(f,body){
+  if(!ulCaptchaAktiv()) return body;
+  const token=(f?.querySelector?.('[data-ul-captcha-token]')?.value||'').trim();
+  if(!token){ const e=new Error('Bekräfta bot-skyddet och försök igen.'); e.kod='captcha'; throw e; }
+  return {...body,gotrue_meta_security:{captcha_token:token}};
+}
 const UL_FLYTT_AVBOJD='ul-flytt-avbojd';
 const SPAR_BACKUP_KEY='uppgiftslabbet_saved_documents_flyttade_v1';
 const UL_IKON_GOOGLE='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>';
@@ -10678,6 +10766,7 @@ function ulAuthFel(status,d){
   if(/email_not_confirmed|not confirmed/.test(t)) return 'Kontot är inte godkänt ännu. Öppna bekräftelsemejlet om du har fått ett, eller försök igen när kontot är godkänt.';
   if(/user_already_exists|already registered|already been registered/.test(t)) return 'Det finns redan ett konto med den adressen. Logga in i stället.';
   if(/weak_password|password should/.test(t)) return 'Lösenordet är för svagt. Välj ett längre lösenord, gärna med siffror.';
+  if(/captcha|turnstile/.test(t)) return 'Bot-skyddet kunde inte verifieras. Försök igen.';
   if(status===429||/rate_limit|too many/.test(t)) return 'För många försök. Vänta en stund och försök igen.';
   if(/provider_disabled|signup_disabled|signups not allowed|logins are disabled/.test(t)) return 'Inloggning med e-post är inte aktiverad ännu.';
   if(/email_address_invalid|unable to validate email|invalid format/.test(t)) return 'Ange en giltig e-postadress.';
@@ -10753,6 +10842,8 @@ function grindRita(vy,opt={}){
           <input id="gEpost" type="email" autocomplete="username" value="${ulEsc(v.epost||'')}">
           <label for="gLosen">Lösenord</label>
           <input id="gLosen" type="password" autocomplete="current-password">
+          <div class="grind-captcha" data-ul-captcha hidden></div>
+          <input type="hidden" data-ul-captcha-token>
           <button type="submit" class="grind-knapp primär" style="margin-top:14px">Logga in</button>
         </form>
         <div class="grind-fot"><button type="button" class="grind-lank" data-g="val">← Tillbaka</button>
@@ -10779,6 +10870,8 @@ function grindRita(vy,opt={}){
             <div><label for="gNyLosen2">Upprepa lösenordet</label><input id="gNyLosen2" type="password" autocomplete="new-password"></div>
           </div>
           <p class="ul-liten">Minst 8 tecken. Du loggar in med jobbmejlen.</p>
+          <div class="grind-captcha" data-ul-captcha hidden></div>
+          <input type="hidden" data-ul-captcha-token>
           <button type="submit" class="grind-knapp primär" style="margin-top:12px">Skapa konto och skicka ansökan</button>
         </form>
         <div class="grind-fot"><button type="button" class="grind-lank" data-g="val">← Tillbaka</button>
@@ -10848,6 +10941,7 @@ function grindRita(vy,opt={}){
         ${lösenLänk}`;
   }
   el.innerHTML=h;
+  ulCaptchaMontera(el);
   const först=el.querySelector('input:not([hidden]):not([value]), input:not([hidden])[value=""]')||el.querySelector('input:not([hidden])');
   if(först) setTimeout(()=>först.focus(),0);
 }
@@ -10890,7 +10984,7 @@ async function grindSkicka(e){
       if(!epost) return fokus('gEpost');
       if(!losen) return fokus('gLosen');
       try{
-        const r=await ulAuth('token?grant_type=password',{email:epost,password:losen});
+        const r=await ulAuth('token?grant_type=password',ulCaptchaBody(f,{email:epost,password:losen}));
         ulSparaSession(ulSessionFrånSvar(r));
       }catch(err){ return grindRita('epost',{fel:err.message,värden:{epost}}); }
       grindRita('laddar');
@@ -10907,8 +11001,8 @@ async function grindSkicka(e){
       if(l1.length>72) return stopp('Lösenordet får ha högst 72 tecken.','gNyLosen');
       if(l1!==l2) return stopp('Lösenorden är inte lika.','gNyLosen2');
       let r;
-      try{ r=await ulAuth('signup',{email:värden.epost,password:l1,
-        data:{full_name:värden.namn,skola:värden.skola,jobbmejl:värden.epost,app:'uppgiftslabbet'}}); }
+      try{ r=await ulAuth('signup',ulCaptchaBody(f,{email:värden.epost,password:l1,
+        data:{full_name:värden.namn,skola:värden.skola,jobbmejl:värden.epost,app:'uppgiftslabbet',registrering:'formular-v1'}})); }
       catch(err){
         if(/redan ett konto/.test(err.message)) return grindRita('epost',{fel:err.message,värden});
         return stopp(err.message,'gNyEpost');
@@ -11434,7 +11528,7 @@ async function minaKlick(e){
   knapp.disabled=true;
   try{
     if(ägare) await ulRpc('ul_radera',{p_id:d.id});
-    else await ulRpc('ul_ta_bort_medlem',{p_id:d.id,p_user:ulSession.user?.id});
+    else await delningLämna(d.id);
     if(DELNING.id===d.id){
       delningKoppla(null,{tyst:true}); sparAutosparaNu();
       ulMeddela('Dokumentet finns kvar på arbetsytan, men sparas inte längre på kontot.');
