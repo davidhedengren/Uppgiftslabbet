@@ -9648,6 +9648,9 @@ const UL_FEL={
   inte_samma_skola:'Den läraren tillhör inte samma skola som du.',
   redan_medlem:'Läraren har redan tillgång till dokumentet.',
   inbjudan_saknas:'Delningsförfrågan finns inte längre.',
+  inte_uppgiftslabbet_formular:'Kontot har inte skapats via Uppgiftslabbets lärarformulär.',
+  konto_anvands_i_kunskapsgymmet:'Kontot används i Kunskapsgymmet och kan därför inte raderas här.',
+  massradering_avstangd:'Massradering av Auth-konton är avstängd för att skydda Kunskapsgymmet-konton.',
   ogiltigt_namn:'Ange ett namn.',
   eget_konto:'Byt ditt eget lösenord via kontomenyn.',
   kort_losenord:'Lösenordet måste ha minst 8 tecken.',
@@ -10345,32 +10348,35 @@ async function delningRitaAdmin(){
         <b>${ulEsc(x.namn)}</b>
         <span>${x.skola?ulEsc(x.skola)+' · ':''}${ulEsc(x.konto)}</span>
         <span class="ul-liten">Skapade kontot ${ulEsc(ulTid(x.skapad))} · ${x.bekraftad
-          ?(x.inloggad?'har loggat in men inte skickat någon ansökan':'har inte loggat in ännu')
-          :'e-postadressen är inte bekräftad, så hen kan inte logga in'}</span>
+          ?(x.inloggad?'har loggat in men ännu inte skickat någon ansökan':'har inte loggat in ännu')
+          :'e-postadressen är inte bekräftad, så hen kan inte logga in'}${x.kunskapsgymmet?' · används även i Kunskapsgymmet':''}</span>
       </div>
       <div class="ul-ansokan-knappar">
         <button type="button" class="knapp liten primär" data-konto-godkann="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}">Godkänn</button>
-        <button type="button" class="knapp liten tyst" data-konto-bort="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}" data-konto="${ulEsc(x.konto)}">Ta bort</button>
+        ${x.kan_raderas?`<button type="button" class="knapp liten tyst" data-konto-bort="${ulEsc(x.user_id)}" data-namn="${ulEsc(x.namn)}" data-konto="${ulEsc(x.konto)}">Ta bort</button>`:''}
       </div>
     </div>`;
-  const harFormularFlagga=utan.some(x=>Object.prototype.hasOwnProperty.call(x,'formular'));
-  const viaFormular=harFormularFlagga?utan.filter(x=>x.formular):utan;
-  const externa=harFormularFlagga?utan.filter(x=>!x.formular):[];
-  const formularSektion=viaFormular.length?`<div class="ul-sektion"><div class="ul-etikett">Påbörjade registreringar (${viaFormular.length})</div>
+  const viaFormular=utan.filter(x=>x.formular);
+  const kgSkyddade=utan.filter(x=>!x.formular&&x.kunskapsgymmet);
+  const okanda=utan.filter(x=>!x.formular&&!x.kunskapsgymmet);
+  const formularSektion=viaFormular.length?`<div class="ul-sektion"><div class="ul-etikett">Påbörjade lärarregistreringar (${viaFormular.length})</div>
       ${viaFormular.map(utanKort).join('')}
-      <p class="ul-liten">Konton som skapats via Uppgiftslabbets formulär men ännu inte har skickat en ansökan.</p></div>`:'';
-  const externaSektion=externa.length?`<details class="ul-sektion ul-externa"><summary>Konton som inte skapats via formuläret (${externa.length})</summary>
-      <div class="ul-externa-innehall">${externa.map(utanKort).join('')}
-      <div class="ul-externa-actions"><button type="button" class="knapp liten tyst" data-konto-bort-alla="${externa.length}">Ta bort alla externa konton</button></div>
-      <p class="ul-liten">De här e-postkontona saknar Uppgiftslabbets registreringsmärkning. De kan tas bort utan att påverka godkända lärarkonton.</p></div></details>`:'';
-  const utanSektion=harFormularFlagga?(externaSektion+formularSektion):(utan.length?`<div class="ul-sektion"><div class="ul-etikett">Konton utan ansökan (${utan.length})</div>${utan.map(utanKort).join('')}</div>`:'');
+      <p class="ul-liten">Endast konton som faktiskt har fyllt i Uppgiftslabbets formulär visas här för godkännande.</p></div>`:'';
+  const andraAntal=kgSkyddade.length+okanda.length;
+  const skyddadSektion=andraAntal?`<details class="ul-sektion ul-externa"><summary>Övriga Supabase-konton (${andraAntal})</summary>
+      <div class="ul-externa-innehall">
+        ${kgSkyddade.length?`<p class="ul-liten"><b>Kunskapsgymmet:</b> ${kgSkyddade.length} ${kgSkyddade.length===1?'konto':'konton'}. De visas inte som lärarförfrågningar och kan inte raderas här.</p>`:''}
+        ${okanda.length?`<p class="ul-liten"><b>Okänd app:</b> ${okanda.length} ${okanda.length===1?'konto':'konton'}. De godkänns eller raderas inte från Uppgiftslabbet eftersom de kan tillhöra en annan tjänst i samma Supabase-projekt.</p>`:''}
+        <p class="ul-liten">Själva e-postadresserna döljs här medvetet. Uppgiftslabbets läraradministration ska bara hantera Uppgiftslabbet-konton.</p>
+      </div></details>`:'';
+  const utanSektion=formularSektion+skyddadSektion;
   l.innerHTML=utanSektion+grupper.map(([st,rubrik,knappar])=>{
     const rader=lista.filter(x=>x.status===st);
     if(st!=='vantar'&&!rader.length) return '';
-    if(st==='vantar'&&!rader.length&&(viaFormular.length||externa.length)) return '';
+    if(st==='vantar'&&!rader.length&&(viaFormular.length||andraAntal)) return '';
     return `<div class="ul-sektion"><div class="ul-etikett">${rubrik} (${rader.length})</div>
       ${rader.length?rader.map(x=>kort(x,knappar)).join(''):'<p class="ul-liten">Inga väntande förfrågningar.</p>'}</div>`;
-  }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Lärare som godkänts via Kunskapsgymmet eller via adresslistan i databasen syns inte här. Den som glömt sitt lösenord får ett tillfälligt av dig.</p>`;
+  }).join('')+`<p class="ul-liten">Jämför namn, skola och jobbmejl med vem du vet att personen är. ”Loggar in som” är adressen på det konto personen faktiskt använder. Kunskapsgymmet-elever och andra Auth-konton hålls åtskilda från lärarregistreringarna. Den som glömt sitt lösenord får ett tillfälligt av dig.</p>`;
 }
 function delningKontoRad(){
   if(typeof kontoAktivt==='function'&&kontoAktivt()) return '';
@@ -10554,7 +10560,7 @@ async function delningSkapaLänk(){
 }
 
 async function delningModalKlick(e){
-  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort],[data-konto-bort-alla],[data-bjud-larare]');
+  const knapp=e.target.closest('[data-ul],[data-ta-bort],[data-aterstall],[data-beslut],[data-tillfalligt],[data-konto-godkann],[data-konto-bort],[data-bjud-larare]');
   if(!knapp) return;
   const åtgärd=knapp.dataset.ul;
   ulModalLäge.fel=null;
@@ -10598,15 +10604,6 @@ async function delningModalKlick(e){
     return kör(async()=>{
       await ulRpc('ul_ta_bort_konto',{p_user:knapp.dataset.kontoBort});
       await ulHämtaBehörighet(true);
-    });
-  }
-  if(knapp.dataset.kontoBortAlla!==undefined){
-    const antal=Number(knapp.dataset.kontoBortAlla)||0;
-    if(!confirm(`Ta bort ${antal} ${antal===1?'konto':'konton'} som inte skapats via Uppgiftslabbets formulär?`)) return;
-    return kör(async()=>{
-      const r=await ulRpc('ul_ta_bort_externa_konton');
-      await ulHämtaBehörighet(true);
-      ulMeddela(`${r?.antal??antal} ${Number(r?.antal??antal)===1?'konto togs':'konton togs'} bort.`);
     });
   }
   if(knapp.dataset.tillfalligt){
@@ -11137,7 +11134,7 @@ async function grindSkicka(e){
 /* Avgör vad grinden ska visa för den inloggade. */
 async function kontoKontrollera({tyst=false}={}){
   let beh;
-  try{ beh=await ulHämtaBehörighet(true); }
+  try{ await ulRpc('ul_markera_anvandare').catch(()=>{}); beh=await ulHämtaBehörighet(true); }
   catch(e){
     if(tyst) return;
     if(e.kod==='natverk'&&kontoCacheOk()) return kontoInloggad({offline:true});
