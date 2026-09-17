@@ -4957,6 +4957,19 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   max-width:none!important;max-height:none!important;
   margin:0!important;
 }
+
+/* ── Felrapportering för lärare ───────────────────────────────────────── */
+.rapportknapp{margin-left:auto;border:0;background:transparent;color:#756d70;font:600 11px var(--ui);padding:4px 7px;border-radius:7px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.rapportknapp:hover{background:#f3efef;color:#8b3d3d}.rapportknapp svg{width:14px;height:14px}
+.rapportmodal[hidden]{display:none}.rapportmodal{position:fixed;inset:0;z-index:12000;background:rgba(30,25,27,.48);display:grid;place-items:center;padding:18px}
+.rapportdialog{width:min(620px,100%);max-height:min(86vh,760px);overflow:auto;background:#fff;border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.22);padding:22px}
+.rapporttop{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.rapporttop h2{margin:0 0 4px;font-size:21px}.rapporttop p{margin:0;color:#6d6668;font-size:13px}
+.rapportstang{border:0;background:#f3f0f0;border-radius:9px;width:34px;height:34px;cursor:pointer;font-size:20px}.rapportval{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0}
+.rapportval label{display:flex;gap:9px;align-items:flex-start;border:1px solid #ddd7d8;border-radius:10px;padding:10px 11px;font-size:13px;cursor:pointer}.rapportval input{margin-top:2px}
+.rapportniva{border:1px solid #ddd7d8;border-radius:12px;padding:12px;margin:0 0 14px;background:#faf9f9}.rapportniva[hidden]{display:none}.rapportniva b{font-size:13px}.rapportpoang{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.rapportpoang label{font-size:12px;color:#655f61}.rapportpoang input{width:100%;box-sizing:border-box;margin-top:4px;padding:8px;border:1px solid #ccc4c6;border-radius:8px}
+.rapportkommentar{width:100%;box-sizing:border-box;min-height:90px;resize:vertical;border:1px solid #ccc4c6;border-radius:10px;padding:10px;font:13px var(--ui)}.rapportfot{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}.rapportfel{color:#9a3030;font-size:12px;margin-top:8px}.rapportsuccess{padding:24px 4px;text-align:center}.rapportsuccess b{display:block;font-size:18px;margin-bottom:5px}
+.ul-rapportkort{border:1px solid #ddd7d8;border-radius:12px;padding:12px;margin:9px 0;background:#fff}.ul-rapportkort.rapport-fixad{opacity:.68}.ul-rapport-huvud{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.ul-rapport-meta{display:grid;gap:3px}.ul-rapport-meta b{font-size:14px}.ul-rapport-meta span{font-size:12px;color:#6d6668}.ul-rapport-taggar{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.ul-rapport-tagg{font-size:11px;font-weight:650;background:#f3efef;border-radius:999px;padding:4px 7px}.ul-rapport-kommentar{font-size:13px;margin:8px 0;white-space:pre-wrap}.ul-rapport-poang{font-size:12px;background:#faf8f8;border-radius:8px;padding:7px 9px;margin:7px 0}.ul-rapport-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.ul-rapport-toolbar{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:10px 0 14px}.ul-rapport-filter{display:flex;gap:6px;flex-wrap:wrap}
+@media(max-width:620px){.rapportval{grid-template-columns:1fr}.rapportdialog{padding:16px}.rapportpoang{grid-template-columns:1fr 1fr 1fr}}
 </style>
 </head>
 <body class="password-locked">
@@ -6624,6 +6637,9 @@ function rita(sida){
           ${verktygsIkoner(x)}
           ${state.visaPoäng?`<span class="poäng${ändrad(x)?' ändrad':''}" data-red="${x.id}" role="button"
             tabindex="0" title="${REDTITEL}">${x.poang}</span>`:''}
+          <button class="rapportknapp" type="button" data-rapportera="${x.id}" title="Rapportera ett fel i uppgiften" aria-label="Rapportera fel i uppgift ${x.id}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 5h11l-2 4 2 4H5"/></svg>Rapportera fel
+          </button>
           <button class="kortred" type="button" data-redigera="${x.id}" title="Redigera uppgiften före tillägg">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg>
@@ -10173,6 +10189,7 @@ async function delningRitaModal(){
     return;
   }
   if(ulModalLäge.vy==='admin'&&beh.admin){ delningRitaAdmin(); return; }
+  if(ulModalLäge.vy==='admin-rapporter'&&beh.admin){ ulRitaFelrapporter(); return; }
   if(ulModalLäge.vy==='flytt'&&beh.larare){ kontoRitaFlytt(); return; }
   if(!beh.larare){ delningRitaAnsökan(beh); return; }
   const adminRad=beh.admin?`<div class="ul-adminrad">
@@ -10321,6 +10338,7 @@ async function delningRitaAdmin(){
   titel.textContent='Lärarförfrågningar';
   underrubrik.textContent='Godkänn lärare som ska kunna använda Uppgiftslabbet.';
   const el=ulSätt(`${fel}<button type="button" class="ul-textknapp ul-tillbaka" data-ul="admin-tillbaka">← Tillbaka</button>
+    <div class="ul-adminrad"><span><b>Felrapporter</b><span class="ul-liten">Rapporter från lärare om uppgifter, nivåer och facit.</span></span><button type="button" class="knapp liten tyst" data-ul="admin-rapporter">Öppna logg</button></div>
     <div id="ulAdminLista"><div class="ul-laddar">Hämtar förfrågningar…</div></div>`);
   let lista, utan=[];
   try{
@@ -10654,6 +10672,8 @@ async function delningModalKlick(e){
     case 'flytt-inte-nu': kontoAvböjFlytt(); delningStängModal(); return;
     case 'logga-ut': ulGlömBehörighet(); await ulLoggaUt(); break;
     case 'admin': ulModalLäge.vy='admin'; delningRitaModal(); return;
+    case 'admin-rapporter': ulModalLäge.vy='admin-rapporter'; delningRitaModal(); return;
+    case 'rapport-till-admin': ulModalLäge.vy='admin'; delningRitaModal(); return;
     case 'admin-tillbaka': ulModalLäge.vy=null; ulModalLäge.tillfälligt=null; await ulHämtaBehörighet(true).catch(()=>{}); delningRitaModal(); return;
     case 'kolla-igen': return kör(async()=>{
       const b=await ulHämtaBehörighet(true);
@@ -11813,6 +11833,84 @@ async function minaKlick(e){
   grindRita('laddar');
   await kontoKontrollera();
 })();
+</script>
+
+<div class="rapportmodal" id="rapportModal" hidden aria-modal="true" role="dialog" aria-labelledby="rapportTitel">
+  <div class="rapportdialog" id="rapportDialog"></div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   FELRAPPORTERING · UPPGIFTSLABBET
+   Godkända lärarkonton kan rapportera fel. Administratören hanterar loggen.
+   ═══════════════════════════════════════════════════════════════════════════ */
+const UL_RAPPORT_TAGGAR={
+  fel_niva:'Fel nivå / poäng',
+  otydlig:'Konstigt eller otydligt formulerad',
+  facit_svar:'Fel svar i facit',
+  facit_metod:'Fel lösningsmetod i facit',
+  bild:'Fel eller saknad figur',
+  annat:'Annat'
+};
+let ulRapportUppgift=null, ulRapportFilter='oppen';
+function ulRapportPoang(x){
+  const m=String(x?.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+  return m?{E:+m[1],C:+m[2],A:+m[3]}:{E:0,C:0,A:0};
+}
+function ulRapportStang(){ const m=document.getElementById('rapportModal'); if(m)m.hidden=true; ulRapportUppgift=null; }
+async function ulRapportOppna(id){
+  const x=(DB?.uppgifter||[]).find(u=>String(u.id)===String(id)); if(!x)return;
+  if(!ulSession){ if(typeof kontoVisaInloggning==='function') kontoVisaInloggning(); else alert('Logga in med ett lärarkonto för att rapportera fel.'); return; }
+  let beh; try{ beh=await ulHämtaBehörighet(); }catch(e){ alert(e.message); return; }
+  if(!beh?.larare){ alert('Ett godkänt lärarkonto krävs för att rapportera fel.'); return; }
+  ulRapportUppgift=x; const p=ulRapportPoang(x), omrade=DB.omr?.[x.kap]?.[x.omr]||x.omr||'';
+  const m=document.getElementById('rapportModal'), d=document.getElementById('rapportDialog'); m.hidden=false;
+  d.innerHTML=`<div class="rapporttop"><div><h2 id="rapportTitel">Rapportera fel</h2><p>${ulEsc(AKTIV?.titel||AKTIV?.id||'')} · uppgift ${ulEsc(x.id)} · ${ulEsc(omrade)}</p></div><button class="rapportstang" type="button" data-rapport-stang aria-label="Stäng">×</button></div>
+    <div class="rapportval">${Object.entries(UL_RAPPORT_TAGGAR).map(([k,v])=>`<label><input type="checkbox" value="${k}" data-rapport-tagg> <span>${v}</span></label>`).join('')}</div>
+    <div class="rapportniva" id="rapportNiva" hidden><b>Din bedömning av poängen</b><div class="ul-liten">Nuvarande: nivå ${ulEsc(x.niva||'–')}, poäng ${ulEsc(x.poang||'–')}. Ange hur många E-, C- och A-poäng du bedömer att uppgiften bör ge.</div>
+      <div class="rapportpoang"><label>E-poäng<input id="rapportE" type="number" min="0" max="20" step="1" value="${p.E}"></label><label>C-poäng<input id="rapportC" type="number" min="0" max="20" step="1" value="${p.C}"></label><label>A-poäng<input id="rapportA" type="number" min="0" max="20" step="1" value="${p.A}"></label></div></div>
+    <label class="ul-etikett" for="rapportKommentar">Kommentar <span class="ul-liten">(valfri)</span></label><textarea class="rapportkommentar" id="rapportKommentar" maxlength="1500" placeholder="Beskriv gärna vad som bör ändras…"></textarea><div class="rapportfel" id="rapportFel"></div>
+    <div class="rapportfot"><button type="button" class="knapp tyst" data-rapport-stang>Avbryt</button><button type="button" class="knapp primär" data-rapport-skicka>Skicka rapport</button></div>`;
+}
+async function ulRapportSkicka(knapp){
+  const x=ulRapportUppgift; if(!x)return;
+  const taggar=[...document.querySelectorAll('[data-rapport-tagg]:checked')].map(e=>e.value), fel=document.getElementById('rapportFel');
+  if(!taggar.length){ fel.textContent='Välj minst en typ av fel.'; return; }
+  const poang=taggar.includes('fel_niva')?{E:+document.getElementById('rapportE').value||0,C:+document.getElementById('rapportC').value||0,A:+document.getElementById('rapportA').value||0}:null;
+  knapp.disabled=true; fel.textContent='';
+  try{
+    await ulRpc('ul_rapportera_fel',{p_kurs:AKTIV?.id||'',p_spar:state.spår||null,p_uppgift_id:String(x.id),p_kapitel:x.kap==null?null:String(x.kap),p_omrade:DB.omr?.[x.kap]?.[x.omr]||x.omr||null,p_taggar:taggar,p_kommentar:(document.getElementById('rapportKommentar').value||'').trim()||null,p_nuvarande_niva:x.niva||null,p_nuvarande_poang:x.poang||null,p_foreslagen_poang:poang});
+    document.getElementById('rapportDialog').innerHTML='<div class="rapportsuccess"><b>Tack – rapporten är skickad.</b><span>Den finns nu i administratörens rapportlogg.</span><div class="rapportfot"><button type="button" class="knapp primär" data-rapport-stang>Stäng</button></div></div>';
+  }catch(e){ fel.textContent=e.kod==='saknas'?'Rapporteringssystemet saknas i databasen. Kör SQL-filen för felrapportering i Supabase.':e.message; knapp.disabled=false; }
+}
+function ulRapportDatum(v){ try{return new Intl.DateTimeFormat('sv-SE',{dateStyle:'short',timeStyle:'short'}).format(new Date(v));}catch(_){return String(v||'');} }
+function ulRapportStatusText(s){return s==='atgardad'?'Åtgärdad':s==='ignorerad'?'Ignorerad':'Öppen';}
+function ulRapportLoggText(lista){
+  const datum=new Date().toLocaleDateString('sv-SE'); let out=`Felrapporterade uppgifter · Uppgiftslabbet · ${datum}\n\n`;
+  const grupper=new Map(); for(const r of lista){const k=r.kurs||'okand';if(!grupper.has(k))grupper.set(k,[]);grupper.get(k).push(r);}
+  for(const [kurs,rs] of grupper){out+=`${kurs}\n`; for(const r of rs){out+=`  #${r.uppgift_id}${r.spar?'  spår '+r.spar:''}  ${ulRapportStatusText(r.status)}  ${ulRapportDatum(r.skapad)}\n`;out+=`      taggar: ${(r.taggar||[]).map(t=>UL_RAPPORT_TAGGAR[t]||t).join(', ')}\n`;if(r.nuvarande_niva||r.nuvarande_poang)out+=`      nuvarande: ${r.nuvarande_niva||'–'} · ${r.nuvarande_poang||'–'}\n`;if(r.foreslagen_poang)out+=`      lärarbedömning: (${r.foreslagen_poang.E||0}/${r.foreslagen_poang.C||0}/${r.foreslagen_poang.A||0})\n`;if(r.kommentar)out+=`      lärarkommentar: "${String(r.kommentar).replace(/\s+/g,' ').trim()}"\n`;out+='\n';}out+='\n';}
+  return out;
+}
+async function ulRitaFelrapporter(){
+  const titel=document.getElementById('delamodalTitel'), under=document.getElementById('delamodalText'); titel.textContent='Felrapporter'; under.textContent='Rapporter från lärare om uppgifter i Uppgiftslabbet.';
+  ulSätt(`<button type="button" class="ul-textknapp ul-tillbaka" data-ul="rapport-till-admin">← Läraradministration</button><div id="ulRapportAdmin"><div class="ul-laddar">Hämtar rapporter…</div></div>`);
+  let lista; try{lista=await ulRpc('ul_felrapport_logg');}catch(e){document.getElementById('ulRapportAdmin').innerHTML=`<div class="ul-fel">${ulEsc(e.kod==='saknas'?'Kör SQL-filen för felrapportering i Supabase.':e.message)}</div>`;return;}
+  lista=Array.isArray(lista)?lista:[]; const syn=lista.filter(r=>ulRapportFilter==='alla'||r.status===ulRapportFilter), el=document.getElementById('ulRapportAdmin'); if(!el)return;
+  el.innerHTML=`<div class="ul-rapport-toolbar"><div class="ul-rapport-filter">${[['oppen','Öppna'],['atgardad','Åtgärdade'],['ignorerad','Ignorerade'],['alla','Alla']].map(([v,t])=>`<button class="knapp liten ${ulRapportFilter===v?'primär':'tyst'}" type="button" data-rapport-filter="${v}">${t}</button>`).join('')}</div><button class="knapp liten tyst" type="button" data-rapport-kopiera>Kopiera logg</button></div>
+    ${syn.length?syn.map(r=>`<div class="ul-rapportkort ${r.status!=='oppen'?'rapport-fixad':''}"><div class="ul-rapport-huvud"><div class="ul-rapport-meta"><b>${ulEsc(r.kurs)} · #${ulEsc(r.uppgift_id)}</b><span>${ulEsc(r.omrade||'')}${r.spar?' · spår '+ulEsc(r.spar):''} · ${ulEsc(ulRapportDatum(r.skapad))}</span><span>Rapporterad av ${ulEsc(r.rapportor_namn||'Okänd')}${r.rapportor_skola?' · '+ulEsc(r.rapportor_skola):''}</span></div><span class="ul-rapport-tagg">${ulEsc(ulRapportStatusText(r.status))}</span></div><div class="ul-rapport-taggar">${(r.taggar||[]).map(t=>`<span class="ul-rapport-tagg">${ulEsc(UL_RAPPORT_TAGGAR[t]||t)}</span>`).join('')}</div>${r.nuvarande_niva||r.nuvarande_poang||r.foreslagen_poang?`<div class="ul-rapport-poang">Nuvarande: <b>${ulEsc(r.nuvarande_niva||'–')}</b> · ${ulEsc(r.nuvarande_poang||'–')}${r.foreslagen_poang?` → lärarens förslag: <b>(${r.foreslagen_poang.E||0}/${r.foreslagen_poang.C||0}/${r.foreslagen_poang.A||0})</b>`:''}</div>`:''}${r.kommentar?`<div class="ul-rapport-kommentar">${ulEsc(r.kommentar)}</div>`:''}<div class="ul-rapport-actions">${r.status!=='atgardad'?`<button class="knapp liten primär" type="button" data-rapport-status="atgardad" data-rapport-id="${r.id}">Markera åtgärdad</button>`:''}${r.status!=='ignorerad'?`<button class="knapp liten tyst" type="button" data-rapport-status="ignorerad" data-rapport-id="${r.id}">Ignorera</button>`:''}${r.status!=='oppen'?`<button class="knapp liten tyst" type="button" data-rapport-status="oppen" data-rapport-id="${r.id}">Öppna igen</button>`:''}</div></div>`).join(''):'<p class="ul-liten">Inga rapporter i den här kategorin.</p>'}`;
+  el.dataset.rapportLista=JSON.stringify(lista);
+}
+document.addEventListener('click',async e=>{
+  const rb=e.target.closest('[data-rapportera]'); if(rb){e.preventDefault();e.stopPropagation();return ulRapportOppna(rb.dataset.rapportera);}
+  if(e.target.closest('[data-rapport-stang]')){e.preventDefault();return ulRapportStang();}
+  const sk=e.target.closest('[data-rapport-skicka]'); if(sk){e.preventDefault();return ulRapportSkicka(sk);}
+  const tg=e.target.closest('[data-rapport-tagg]'); if(tg){const n=document.getElementById('rapportNiva');if(n)n.hidden=!document.querySelector('[data-rapport-tagg][value="fel_niva"]')?.checked;}
+  const fi=e.target.closest('[data-rapport-filter]'); if(fi){ulRapportFilter=fi.dataset.rapportFilter;return ulRitaFelrapporter();}
+  const st=e.target.closest('[data-rapport-status]'); if(st){st.disabled=true;try{await ulRpc('ul_felrapport_status',{p_id:st.dataset.rapportId,p_status:st.dataset.rapportStatus});await ulRitaFelrapporter();}catch(err){alert(err.message);st.disabled=false;}return;}
+  if(e.target.closest('[data-rapport-kopiera]')){const el=document.getElementById('ulRapportAdmin');let lista=[];try{lista=JSON.parse(el?.dataset.rapportLista||'[]')}catch(_){}const text=ulRapportLoggText(lista);try{await navigator.clipboard.writeText(text);ulMeddela('Rapportloggen är kopierad.');}catch(_){prompt('Kopiera rapportloggen:',text);}return;}
+},true);
+document.getElementById('rapportModal')?.addEventListener('click',e=>{if(e.target.id==='rapportModal')ulRapportStang();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('rapportModal')?.hidden)ulRapportStang();});
 </script>
 </body>
 </html>
