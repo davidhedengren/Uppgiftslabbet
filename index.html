@@ -11259,7 +11259,7 @@ function kontoRitaChip(){
         <span>Dokumenten sparas på ditt konto.</span></div>
       <button type="button" role="menuitem" data-konto-val="mina"><span>Mina prov och övningsblad</span></button>
       ${delningsAntal?`<button type="button" role="menuitem" data-konto-val="inbjudningar"><span>Delningsförfrågningar</span><span class="ul-bricka">${delningsAntal}</span></button>`:''}
-      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button>`:''}
+      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="felrapporter"><span>Fellogg</span></button>`:''}
       ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
       ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
       <button type="button" role="menuitem" data-konto-val="logga-ut">Logga ut</button>`
@@ -11279,6 +11279,7 @@ function kontoRitaChip(){
 function kontoMenyVal(val){
   switch(val){
     case 'admin': delningÖppnaModal({vy:'admin'}); break;
+    case 'felrapporter': delningÖppnaModal({vy:'admin-rapporter'}); break;
     case 'mina': minaÖppna(); break;
     case 'inbjudningar': minaÖppna({fokusInbjudningar:true}); break;
     case 'flytt': kontoErbjudFlytt(true); break;
@@ -11859,7 +11860,7 @@ function ulRapportPoang(x){
 }
 function ulRapportStang(){ const m=document.getElementById('rapportModal'); if(m)m.hidden=true; ulRapportUppgift=null; }
 async function ulRapportOppna(id){
-  const x=(DB?.uppgifter||[]).find(u=>String(u.id)===String(id)); if(!x)return;
+  const x=(DB?.bank||[]).find(u=>String(u.id)===String(id)); if(!x){ alert('Uppgiften kunde inte hittas i den aktuella banken.'); return; }
   if(!ulSession){ if(typeof kontoVisaInloggning==='function') kontoVisaInloggning(); else alert('Logga in med ett lärarkonto för att rapportera fel.'); return; }
   let beh; try{ beh=await ulHämtaBehörighet(); }catch(e){ alert(e.message); return; }
   if(!beh?.larare){ alert('Ett godkänt lärarkonto krävs för att rapportera fel.'); return; }
