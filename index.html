@@ -2038,7 +2038,7 @@ body.password-locked > :not(#passwordGate){visibility:hidden}
 
   .kroppen .fig svg,
   .kroppen .fig img,
-  .kroppen svg,
+  .kroppen svg:not(.katex svg),
   .kroppen img,
   .kroppen .fig[style*="width"] svg,
   .kroppen .fig[style*="width"] img,
@@ -4946,6 +4946,17 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .ul-externa[open]>summary::after{transform:rotate(-90deg)}
 .ul-externa-innehall{padding:10px 12px 12px}
 .ul-externa-actions{display:flex;justify-content:flex-end;margin:10px 0 2px}
+
+/* KaTeX ritar rottecken, pilar och breda klamrar som inbyggda SVG:er.
+   Figurreglerna för uppgiftstexten (height:auto, max-width) får inte
+   träffa dem, annars krymper t.ex. rottecknet till höjden 0 på mobilen.
+   Bredden lämnas åt KaTeX, som ibland sätter den i style-attributet. */
+.kroppen .katex svg,.fig .katex svg,.katex svg{
+  display:block!important;position:absolute!important;
+  height:inherit!important;
+  max-width:none!important;max-height:none!important;
+  margin:0!important;
+}
 </style>
 </head>
 <body class="password-locked">
