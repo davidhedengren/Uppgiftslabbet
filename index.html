@@ -10190,6 +10190,7 @@ async function delningRitaModal(){
   }
   if(ulModalLäge.vy==='admin'&&beh.admin){ delningRitaAdmin(); return; }
   if(ulModalLäge.vy==='admin-rapporter'&&beh.admin){ ulRitaFelrapporter(); return; }
+  if(ulModalLäge.vy==='admin-onskemal'&&beh.admin){ ulRitaOnskemalAdmin(); return; }
   if(ulModalLäge.vy==='flytt'&&beh.larare){ kontoRitaFlytt(); return; }
   if(!beh.larare){ delningRitaAnsökan(beh); return; }
   const adminRad=beh.admin?`<div class="ul-adminrad">
@@ -11258,8 +11259,9 @@ function kontoRitaChip(){
       <div class="konto-meny-huvud"><b>${ulEsc(namn)}</b><span>${ulEsc(kontoEpost())}</span>
         <span>Dokumenten sparas på ditt konto.</span></div>
       <button type="button" role="menuitem" data-konto-val="mina"><span>Mina prov och övningsblad</span></button>
+      ${b?.larare?`<button type="button" role="menuitem" data-konto-val="onskemal"><span>Skicka in önskemål</span></button>`:''}
       ${delningsAntal?`<button type="button" role="menuitem" data-konto-val="inbjudningar"><span>Delningsförfrågningar</span><span class="ul-bricka">${delningsAntal}</span></button>`:''}
-      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="felrapporter"><span>Fellogg</span></button>`:''}
+      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="felrapporter"><span>Rapporterade fel</span></button><button type="button" role="menuitem" data-konto-val="inskickade-onskemal"><span>Inskickade önskemål</span></button>`:''}
       ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
       ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
       <button type="button" role="menuitem" data-konto-val="logga-ut">Logga ut</button>`
@@ -11280,6 +11282,8 @@ function kontoMenyVal(val){
   switch(val){
     case 'admin': delningÖppnaModal({vy:'admin'}); break;
     case 'felrapporter': delningÖppnaModal({vy:'admin-rapporter'}); break;
+    case 'onskemal': ulOnskemalOppna(); break;
+    case 'inskickade-onskemal': delningÖppnaModal({vy:'admin-onskemal'}); break;
     case 'mina': minaÖppna(); break;
     case 'inbjudningar': minaÖppna({fokusInbjudningar:true}); break;
     case 'flytt': kontoErbjudFlytt(true); break;
@@ -11836,6 +11840,11 @@ async function minaKlick(e){
 })();
 </script>
 
+
+<div class="rapportmodal" id="onskemalModal" hidden aria-modal="true" role="dialog" aria-labelledby="onskemalTitel">
+  <div class="rapportdialog" id="onskemalDialog"></div>
+</div>
+
 <div class="rapportmodal" id="rapportModal" hidden aria-modal="true" role="dialog" aria-labelledby="rapportTitel">
   <div class="rapportdialog" id="rapportDialog"></div>
 </div>
@@ -11912,6 +11921,52 @@ document.addEventListener('click',async e=>{
 },true);
 document.getElementById('rapportModal')?.addEventListener('click',e=>{if(e.target.id==='rapportModal')ulRapportStang();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('rapportModal')?.hidden)ulRapportStang();});
+
+
+/* ── Önskemål från lärare ─────────────────────────────────────────────── */
+let ulOnskemalFilter='oppen';
+function ulOnskemalStang(){ const m=document.getElementById('onskemalModal'); if(m)m.hidden=true; }
+function ulOnskemalKurser(){ return (typeof KURSER!=='undefined'?KURSER:[]).map(k=>`<option value="${ulEsc(k.id)}" ${AKTIV?.id===k.id?'selected':''}>${ulEsc(k.titel)}</option>`).join(''); }
+async function ulOnskemalOppna(){
+  if(!ulSession){ kontoVisaInloggning(); return; }
+  let beh; try{beh=await ulHämtaBehörighet();}catch(e){alert(e.message);return;}
+  if(!beh?.larare){alert('Ett godkänt lärarkonto krävs för att skicka önskemål.');return;}
+  const m=document.getElementById('onskemalModal'),d=document.getElementById('onskemalDialog'); m.hidden=false;
+  d.innerHTML=`<div class="rapporttop"><div><h2 id="onskemalTitel">Skicka in önskemål</h2><p>Skicka förslag på innehåll eller funktioner i Uppgiftslabbet.</p></div><button class="rapportstang" type="button" data-onskemal-stang aria-label="Stäng">×</button></div>
+    <label class="ul-etikett">Vad gäller önskemålet?</label><div class="rapportval"><label><input type="radio" name="onskemalTyp" value="fler_uppgifter" checked data-onskemal-typ> <span>Fler uppgifter</span></label><label><input type="radio" name="onskemalTyp" value="funktion" data-onskemal-typ> <span>Fler funktioner / annan förbättring</span></label></div>
+    <div id="onskemalUppgifter"><label class="ul-etikett">Kurs<select id="onskemalKurs" class="ul-input">${ulOnskemalKurser()}</select></label><label class="ul-etikett">Område<input id="onskemalOmrade" class="ul-input" type="text" maxlength="160" placeholder="T.ex. Problemlösning – Andragradsfunktioner"></label><label class="ul-etikett">Nivå<select id="onskemalNiva" class="ul-input"><option value="E">E-nivå</option><option value="C">C-nivå</option><option value="A" selected>A-nivå</option><option value="blandad">Blandade nivåer</option></select></label></div>
+    <label class="ul-etikett" for="onskemalText">Beskriv önskemålet</label><textarea class="rapportkommentar" id="onskemalText" maxlength="2000" placeholder="Beskriv vad du saknar eller hur du skulle vilja att funktionen fungerar…"></textarea><div class="rapportfel" id="onskemalFel"></div>
+    <div class="rapportfot"><button type="button" class="knapp tyst" data-onskemal-stang>Avbryt</button><button type="button" class="knapp primär" data-onskemal-skicka>Skicka önskemål</button></div>`;
+}
+async function ulOnskemalSkicka(knapp){
+  const typ=document.querySelector('[data-onskemal-typ]:checked')?.value||'fler_uppgifter', text=(document.getElementById('onskemalText')?.value||'').trim(), fel=document.getElementById('onskemalFel');
+  const omrade=(document.getElementById('onskemalOmrade')?.value||'').trim();
+  if(typ==='fler_uppgifter'&&!omrade){fel.textContent='Ange vilket område du vill ha fler uppgifter inom.';return;}
+  if(typ==='funktion'&&!text){fel.textContent='Beskriv vilken funktion eller förbättring du önskar.';return;}
+  knapp.disabled=true; fel.textContent='';
+  try{
+    await ulRpc('ul_skicka_onskemal',{p_typ:typ,p_kurs:typ==='fler_uppgifter'?document.getElementById('onskemalKurs').value:null,p_omrade:typ==='fler_uppgifter'?omrade:null,p_niva:typ==='fler_uppgifter'?document.getElementById('onskemalNiva').value:null,p_beskrivning:text||null});
+    document.getElementById('onskemalDialog').innerHTML='<div class="rapportsuccess"><b>Tack – önskemålet är inskickat.</b><span>Det finns nu i administratörens önskemålslogg.</span><div class="rapportfot"><button type="button" class="knapp primär" data-onskemal-stang>Stäng</button></div></div>';
+  }catch(e){fel.textContent=e.kod==='saknas'?'Önskemålssystemet saknas i databasen. Kör den nya SQL-patchen i Supabase.':e.message;knapp.disabled=false;}
+}
+function ulOnskemalTypText(t){return t==='fler_uppgifter'?'Fler uppgifter':'Funktion / förbättring';}
+async function ulRitaOnskemalAdmin(){
+  const titel=document.getElementById('delamodalTitel'),under=document.getElementById('delamodalText'); titel.textContent='Inskickade önskemål';under.textContent='Önskemål från lärare i Uppgiftslabbet.';
+  ulSätt('<button type="button" class="ul-textknapp ul-tillbaka" data-ul="admin">← Läraradministration</button><div id="ulOnskemalAdmin"><div class="ul-laddar">Hämtar önskemål…</div></div>');
+  let lista;try{lista=await ulRpc('ul_onskemal_logg');}catch(e){document.getElementById('ulOnskemalAdmin').innerHTML=`<div class="ul-fel">${ulEsc(e.kod==='saknas'?'Kör SQL-patchen för önskemål i Supabase.':e.message)}</div>`;return;}
+  lista=Array.isArray(lista)?lista:[];const syn=lista.filter(r=>ulOnskemalFilter==='alla'||r.status===ulOnskemalFilter),el=document.getElementById('ulOnskemalAdmin');if(!el)return;
+  el.innerHTML=`<div class="ul-rapport-toolbar"><div class="ul-rapport-filter">${[['oppen','Öppna'],['atgardad','Åtgärdade'],['ignorerad','Ignorerade'],['alla','Alla']].map(([v,t])=>`<button class="knapp liten ${ulOnskemalFilter===v?'primär':'tyst'}" type="button" data-onskemal-filter="${v}">${t}</button>`).join('')}</div><button class="knapp liten tyst" type="button" data-onskemal-kopiera>Kopiera logg</button></div>${syn.length?syn.map(r=>`<div class="ul-rapportkort ${r.status!=='oppen'?'rapport-fixad':''}"><div class="ul-rapport-huvud"><div class="ul-rapport-meta"><b>${ulEsc(ulOnskemalTypText(r.typ))}${r.kurs?' · '+ulEsc(r.kurs):''}</b><span>${r.omrade?ulEsc(r.omrade)+' · ':''}${r.niva?'nivå '+ulEsc(r.niva)+' · ':''}${ulEsc(ulRapportDatum(r.skapad))}</span><span>Inskickat av ${ulEsc(r.rapportor_namn||'Okänd')}${r.rapportor_skola?' · '+ulEsc(r.rapportor_skola):''}</span></div><span class="ul-rapport-tagg">${ulEsc(ulRapportStatusText(r.status))}</span></div>${r.beskrivning?`<div class="ul-rapport-kommentar">${ulEsc(r.beskrivning)}</div>`:''}<div class="ul-rapport-actions">${r.status!=='atgardad'?`<button class="knapp liten primär" type="button" data-onskemal-status="atgardad" data-onskemal-id="${r.id}">Markera åtgärdad</button>`:''}${r.status!=='ignorerad'?`<button class="knapp liten tyst" type="button" data-onskemal-status="ignorerad" data-onskemal-id="${r.id}">Ignorera</button>`:''}${r.status!=='oppen'?`<button class="knapp liten tyst" type="button" data-onskemal-status="oppen" data-onskemal-id="${r.id}">Öppna igen</button>`:''}</div></div>`).join(''):'<p class="ul-liten">Inga önskemål i den här kategorin.</p>'}`;el.dataset.onskemalLista=JSON.stringify(lista);
+}
+function ulOnskemalLoggText(lista){let out=`Inskickade önskemål · Uppgiftslabbet · ${new Date().toLocaleDateString('sv-SE')}\n\n`;for(const r of lista){if(r.typ==='fler_uppgifter')out+=`${r.kurs||'–'} - ${r.omrade||'–'} - fler uppgifter på ${r.niva||'–'}-nivå\n`;else out+=`Funktion / förbättring - ${r.beskrivning||'–'}\n`;if(r.typ==='fler_uppgifter'&&r.beskrivning)out+=`  kommentar: ${r.beskrivning}\n`;out+=`  från: ${r.rapportor_namn||'Okänd'}${r.rapportor_skola?' · '+r.rapportor_skola:''} · ${ulRapportDatum(r.skapad)} · ${ulRapportStatusText(r.status)}\n\n`;}return out;}
+document.addEventListener('click',async e=>{
+  if(e.target.closest('[data-onskemal-stang]')){e.preventDefault();ulOnskemalStang();return;}
+  const typ=e.target.closest('[data-onskemal-typ]');if(typ){const u=document.getElementById('onskemalUppgifter');if(u)u.hidden=document.querySelector('[data-onskemal-typ]:checked')?.value!=='fler_uppgifter';return;}
+  const sk=e.target.closest('[data-onskemal-skicka]');if(sk){e.preventDefault();await ulOnskemalSkicka(sk);return;}
+  const fi=e.target.closest('[data-onskemal-filter]');if(fi){ulOnskemalFilter=fi.dataset.onskemalFilter;await ulRitaOnskemalAdmin();return;}
+  const st=e.target.closest('[data-onskemal-status]');if(st){st.disabled=true;try{await ulRpc('ul_onskemal_status',{p_id:st.dataset.onskemalId,p_status:st.dataset.onskemalStatus});await ulRitaOnskemalAdmin();}catch(err){alert(err.message);st.disabled=false;}return;}
+  if(e.target.closest('[data-onskemal-kopiera]')){let lista=[];try{lista=JSON.parse(document.getElementById('ulOnskemalAdmin')?.dataset.onskemalLista||'[]')}catch(_){}const text=ulOnskemalLoggText(lista);try{await navigator.clipboard.writeText(text);ulMeddela('Önskemålsloggen är kopierad.');}catch(_){prompt('Kopiera önskemålsloggen:',text);}return;}
+},true);
+document.getElementById('onskemalModal')?.addEventListener('click',e=>{if(e.target.id==='onskemalModal')ulOnskemalStang();});
 </script>
 </body>
 </html>
