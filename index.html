@@ -3361,6 +3361,14 @@ button,input,select,textarea{font-family:var(--ui)!important}
     min-height:24px!important;padding:2px 5px!important;font-size:9px!important;
   }
 }
+
+/* Navigering och dokumentgenvägar */
+.kursrad{display:flex;align-items:center;gap:8px;min-width:0}.byt-kurs-inline{border:0;background:transparent;color:var(--ed-dark);font:inherit;font-size:11px;font-weight:700;padding:2px 5px;border-radius:6px;cursor:pointer;white-space:nowrap}.byt-kurs-inline:hover{background:var(--ed-tint)}
+.topp-dokumentknappar{display:flex;gap:8px;align-items:center}.topp-dokumentknappar .knapp{white-space:nowrap}
+.hogerverktyg{display:flex;gap:8px;padding:10px 12px 0;align-items:center}.hogerverktyg .knapp{flex:1;justify-content:center}.hogerverktyg .slumpwrap{flex:1}.hogerverktyg .slumpwrap>.knapp{width:100%}
+#slumpwrapTop{display:none!important}
+@media(max-width:1050px){.topp-dokumentknappar button{font-size:0}.topp-dokumentknappar button:first-child:after{content:'Mina dokument';font-size:12px}.topp-dokumentknappar button:last-child:after{content:'Delade';font-size:12px}}
+@media(max-width:760px){.topp-dokumentknappar{gap:4px}.topp-dokumentknappar .knapp{padding:7px 8px}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -5088,11 +5096,15 @@ function ulLösenordUpplåst(){
     </button>
     <div class="titel">
       <h1>Uppgiftslabbet</h1>
-      <span id="banktal"></span>
+      <div class="kursrad"><span id="banktal"></span><button class="byt-kurs-inline" id="bytKurs" type="button">Byt kurs</button></div>
     </div>
   </div>
   <div class="fyll"></div>
-  <div class="slumpwrap">
+  <div class="topp-dokumentknappar" data-konto-dokument hidden>
+    <button class="knapp tyst" type="button" data-topp-dokument="mina">Mina prov och övningsblad</button>
+    <button class="knapp tyst" type="button" data-topp-dokument="delade">Delade prov och övningsblad</button>
+  </div>
+  <div class="slumpwrap" id="slumpwrapTop">
     <button class="knapp tyst" id="slumpaKnapp" type="button" aria-expanded="false" aria-controls="slumppanel">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
       Slumpa
@@ -5109,11 +5121,6 @@ function ulLösenordUpplåst(){
       </div>
     </div>
   </div>
-  <button class="knapp tyst" id="bytKurs" type="button">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M20 9A8 8 0 0 0 6.3 5.3L4 7.5M4 15a8 8 0 0 0 13.7 3.7L20 16.5"/></svg>
-    Byt kurs
-  </button>
-  <button class="knapp tyst" id="rensaAllt">Börja om</button>
   <div class="konto-plats" data-konto-plats></div>
 </header>
 
@@ -5171,6 +5178,12 @@ function ulLösenordUpplåst(){
   </main>
 
   <aside class="höger">
+    <div class="hogerverktyg">
+      <div class="slumpwrap">
+        <button class="knapp tyst" id="slumpaKnappHoger" type="button" aria-expanded="false" aria-controls="slumppanel">Slumpa</button>
+      </div>
+      <button class="knapp tyst" id="rensaAllt">Börja om</button>
+    </div>
     <div class="bladtopp">
       <div class="bladtyp-rad">
         <label for="bladTyp">Dokument</label>
@@ -8974,7 +8987,7 @@ if(DIREKTKURS){
     <div class="sparmodal-huvud">
       <div>
         <h2 id="minamodalTitel">Mina prov och övningsblad</h2>
-        <p>Sparade på ditt konto. Dokumentet öppnas i sin kurs.</p>
+        <p id="minamodalText">Dokumentet öppnas i sin kurs.</p>
       </div>
       <div class="fyll"></div>
       <button class="sparmodal-stang" id="minamodalStang" type="button" aria-label="Stäng">
@@ -10149,6 +10162,7 @@ function ulRitaBricka(){
   let b=document.getElementById('delaBricka');
   const antal=ulSession&&ulBehörighet?.admin?(ulBehörighet.vantande||0):0;
   if(typeof kontoRitaChip==='function') kontoRitaChip();
+  if(ulBehörighet?.admin) setTimeout(()=>kontoHamtaAdminNotiser(),0);
   if(!antal){ if(b) b.remove(); return; }
   if(!b){ b=document.createElement('span'); b.id='delaBricka'; b.className='ul-bricka'; knapp.appendChild(b); }
   b.textContent=antal>99?'99+':String(antal);
@@ -11239,6 +11253,12 @@ function kontoVisaInloggning(){
   else grindRita('val');
 }
 
+const UL_ADMIN_NOTIS={fel:0,onskemal:0};
+async function kontoHamtaAdminNotiser(){
+  const b=kontoBeh(); if(!kontoAktivt()||!b?.admin){ UL_ADMIN_NOTIS.fel=UL_ADMIN_NOTIS.onskemal=0; return; }
+  try{ const [f,o]=await Promise.all([ulRpc('ul_felrapport_logg'),ulRpc('ul_onskemal_logg')]); UL_ADMIN_NOTIS.fel=(f||[]).filter(x=>x.status==='oppen').length; UL_ADMIN_NOTIS.onskemal=(o||[]).filter(x=>x.status==='oppen').length; kontoRitaChip(); }catch(_){}
+}
+
 /* ── kontomenyn ─────────────────────────────────────────────────────────── */
 function kontoStängMeny(){
   document.querySelectorAll('.konto-meny').forEach(m=>{ m.hidden=true; });
@@ -11250,18 +11270,18 @@ function kontoRitaChip(){
   const konto=läge==='konto';
   const b=kontoBeh();
   const adminAntal=konto&&b?.admin?(b.vantande||0):0;
+  const felAntal=konto&&b?.admin?UL_ADMIN_NOTIS.fel:0, onskemalAntal=konto&&b?.admin?UL_ADMIN_NOTIS.onskemal:0;
   const delningsAntal=konto?(b?.delningsinbjudningar||0):0;
-  const antal=adminAntal+delningsAntal;
+  const antal=adminAntal+delningsAntal+felAntal+onskemalAntal;
   const lokala=konto?sparLasaAlla().length:0;
   const namn=konto?kontoVisningsnamn():'Gemensamt lösenord';
   const kort=konto?String(namn).split(/\s+/)[0]:'Lösenord';
   const meny=konto?`
       <div class="konto-meny-huvud"><b>${ulEsc(namn)}</b><span>${ulEsc(kontoEpost())}</span>
         <span>Dokumenten sparas på ditt konto.</span></div>
-      <button type="button" role="menuitem" data-konto-val="mina"><span>Mina prov och övningsblad</span></button>
       ${b?.larare?`<button type="button" role="menuitem" data-konto-val="onskemal"><span>Skicka in önskemål</span></button>`:''}
       ${delningsAntal?`<button type="button" role="menuitem" data-konto-val="inbjudningar"><span>Delningsförfrågningar</span><span class="ul-bricka">${delningsAntal}</span></button>`:''}
-      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="felrapporter"><span>Rapporterade fel</span></button><button type="button" role="menuitem" data-konto-val="inskickade-onskemal"><span>Inskickade önskemål</span></button>`:''}
+      ${b?.admin?`<button type="button" role="menuitem" data-konto-val="admin"><span>Lärarförfrågningar</span>${adminAntal?`<span class="ul-bricka">${adminAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="felrapporter"><span>Rapporterade fel</span>${felAntal?`<span class="ul-bricka">${felAntal}</span>`:''}</button><button type="button" role="menuitem" data-konto-val="inskickade-onskemal"><span>Inskickade önskemål</span>${onskemalAntal?`<span class="ul-bricka">${onskemalAntal}</span>`:''}</button>`:''}
       ${lokala?`<button type="button" role="menuitem" data-konto-val="flytt"><span>Flytta in webbläsarens dokument</span><span class="ul-liten" style="margin:0">${lokala}</span></button>`:''}
       ${b?.har_losenord?'<button type="button" role="menuitem" data-konto-val="losenord">Byt lösenord</button>':''}
       <button type="button" role="menuitem" data-konto-val="logga-ut">Logga ut</button>`
@@ -11269,6 +11289,7 @@ function kontoRitaChip(){
       <div class="konto-meny-huvud"><b>Gemensamt lösenord</b>
         <span>Dokumenten sparas bara i den här webbläsaren och kan inte delas.</span></div>
       <button type="button" role="menuitem" data-konto-val="logga-in">Logga in med konto</button>`;
+  document.querySelectorAll('[data-konto-dokument]').forEach(el=>el.hidden=!konto);
   document.querySelectorAll('[data-konto-plats]').forEach(p=>{
     if(!läge){ p.innerHTML=''; return; }
     p.innerHTML=`<button type="button" class="konto-knapp" aria-haspopup="menu" aria-expanded="false" data-konto-knapp
@@ -11284,8 +11305,8 @@ function kontoMenyVal(val){
     case 'felrapporter': delningÖppnaModal({vy:'admin-rapporter'}); break;
     case 'onskemal': ulOnskemalOppna(); break;
     case 'inskickade-onskemal': delningÖppnaModal({vy:'admin-onskemal'}); break;
-    case 'mina': minaÖppna(); break;
-    case 'inbjudningar': minaÖppna({fokusInbjudningar:true}); break;
+    case 'mina': minaÖppna({lage:'mina'}); break;
+    case 'inbjudningar': minaÖppna({fokusInbjudningar:true,lage:'delade'}); break;
     case 'flytt': kontoErbjudFlytt(true); break;
     case 'losenord': grindLås(); grindRita('byt',{tvingad:false}); break;
     case 'logga-ut': ulLoggaUt(); break;
@@ -11487,7 +11508,7 @@ async function kontoFlyttaIn(){
 /* ── Mina prov, övningsblad och skolans gemensamma bank ────────────────── */
 const UL_IKON_PROV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg>';
 const UL_IKON_OVNING='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
-const MINA={lista:null,inbjudningar:null,bank:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false};
+const MINA={lista:null,inbjudningar:null,bank:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false,lage:'mina'};
 
 function minaTid(iso){
   const d=new Date(iso); if(Number.isNaN(d.getTime())) return '';
@@ -11500,10 +11521,11 @@ function minaTid(iso){
   if(d.getFullYear()!==new Date().getFullYear()) opt.year='numeric';
   return d.toLocaleDateString('sv-SE',opt);
 }
-async function minaÖppna({fokusInbjudningar=false}={}){
+async function minaÖppna({fokusInbjudningar=false,lage='mina'}={}){
   if(!kontoAktivt()) return;
   const m=document.getElementById('minamodal');
-  MINA.sök=''; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar;
+  MINA.sök=''; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar; MINA.lage=lage;
+  const mt=document.getElementById('minamodalTitel'); if(mt) mt.textContent=lage==='delade'?'Delade prov och övningsblad':'Mina prov och övningsblad'; const ms=document.getElementById('minamodalText'); if(ms) ms.textContent=lage==='delade'?'Personligt delade dokument, delningsförfrågningar och skolans gemensamma bank.':'Dokument som du äger och sparar på ditt konto.';
   document.getElementById('minaSok').value='';
   m.hidden=false;
   minaRita();
@@ -11618,13 +11640,13 @@ function minaRita(){
     const kurs=KURSER.find(k=>k.id===d.kurs);
     return [d.namn,kurs?.titel,d.kurs,d.spar].some(t=>String(t||'').toLowerCase().includes(q));
   };
-  const lista=MINA.lista.filter(träff)
+  const lista=MINA.lista.filter(d=>MINA.lage==='delade'?d.roll!=='agare':d.roll==='agare').filter(träff)
     .sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
   const prov=lista.filter(d=>d.typ==='prov');
   const övning=lista.filter(d=>d.typ!=='prov');
-  const lokala=sparLasaAlla().length;
-  const inbjudningar=Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
-  const bankObj=MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
+  const lokala=MINA.lage==='mina'?sparLasaAlla().length:0;
+  const inbjudningar=MINA.lage==='delade'&&Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
+  const bankObj=MINA.lage==='delade'&&MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
   const bankLista=(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]).filter(d=>{
     if(!q) return true;
     const kurs=KURSER.find(k=>k.id===d.kurs);
@@ -11800,7 +11822,13 @@ async function minaKlick(e){
   const el=grindEl();
   el.addEventListener('click',grindKlick);
   el.addEventListener('submit',grindSkicka);
-  document.addEventListener('click',e=>{
+  
+document.addEventListener('click',e=>{
+  const d=e.target.closest('[data-topp-dokument]');
+  if(d){ minaÖppna({lage:d.dataset.toppDokument==='delade'?'delade':'mina'}); return; }
+  if(e.target.closest('#slumpaKnappHoger')) document.getElementById('slumpaKnapp')?.click();
+});
+document.addEventListener('click',e=>{
     const val=e.target.closest('[data-konto-val]');
     if(val){ kontoStängMeny(); kontoMenyVal(val.dataset.kontoVal); return; }
     const knapp=e.target.closest('[data-konto-knapp]');
