@@ -5081,6 +5081,27 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .exportrad .knapp{min-height:39px!important;border-radius:11px!important;font-weight:680!important;letter-spacing:-.01em!important}
 .lr-verktyg #lrPdf,.lr-verktyg #lrWord,.lr-verktyg #lrKlar{border-radius:10px!important;font-weight:650!important}
 
+/* Redigera är huvudvägen till dokumentredigering och ligger direkt under poängmätaren. */
+.redigera-dokument-wrap{padding:0 0 10px}
+.redigera-dokument-knapp{
+  width:100%;min-height:44px;border-radius:12px!important;display:flex!important;align-items:center;justify-content:center;gap:8px;
+  font-size:12.5px!important;font-weight:760!important;letter-spacing:-.01em!important;
+  border:1px solid color-mix(in oklab,var(--ed) 48%,#B8C5C0)!important;
+  background:linear-gradient(180deg,#F7FCFA 0%,color-mix(in oklab,var(--ed-tint,#E6F0EC) 88%,#F5F8F7) 100%)!important;
+  color:var(--ed-dark,#0B5942)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.98),0 2px 0 color-mix(in oklab,var(--ed) 28%,#C8D0CD),0 6px 14px rgba(15,107,79,.10)!important;
+}
+.redigera-dokument-knapp:hover{transform:translateY(-1px)!important;box-shadow:inset 0 1px 0 #fff,0 3px 0 color-mix(in oklab,var(--ed) 26%,#C8D0CD),0 9px 18px rgba(15,107,79,.13)!important}
+.redigera-dokument-knapp:active{transform:translateY(2px)!important;box-shadow:inset 0 1px 2px rgba(15,107,79,.12),0 1px 0 rgba(15,107,79,.18)!important}
+.redigera-dokument-knapp svg{width:15px!important;height:15px!important}
+
+/* Förhandsvisningen i dokumentlistan visar renderad matematik i stället för rå LaTeX-kod. */
+.brad .btext p,.brad .btext div{display:inline;margin:0;padding:0}
+.brad .btext p+p::before,.brad .btext div+div::before{content:' '}
+.brad .btext .katex{font-size:.96em}
+.brad .btext .katex-display{display:inline-block!important;margin:0 3px!important;vertical-align:middle}
+.brad .btext .katex-display>.katex{display:inline-block}
+
 /* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
 .mätarnyckel span{display:inline-flex!important;align-items:center!important;gap:3px!important;white-space:nowrap}
 .mätarnyckel b{font-variant-numeric:tabular-nums!important}
@@ -5356,17 +5377,13 @@ function ulLösenordUpplåst(){
           <div class="dokumenthuvud-rubrikrad">
             <div class="dokumenthuvud-namn" id="bTitelVisa">Övningsblad</div>
             <div class="dokumenthuvud-actions">
-              <button class="knapp liten tyst dokument-action" id="oppnaLayout" type="button" title="Redigera dokumentets layout och uppgifter">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
-                Layout
-              </button>
               <button class="knapp liten dokument-action analys-mini" id="tillAnalys" type="button" title="Skicka provets uppgifter direkt till resultatanalysen">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v7.2l-4.7 7.2A2.3 2.3 0 0 0 7.2 21h9.6a2.3 2.3 0 0 0 1.9-3.6L14 10.2V3"/><path d="M7.7 16h8.6"/><path d="M10 13.2h4"/></svg>
                 Till analys
               </button>
             </div>
           </div>
-          <div class="dokumenthuvud-meta" id="bMetaVisa">Ändra namn, klass och datum i Layout.</div>
+          <div class="dokumenthuvud-meta" id="bMetaVisa">Ändra namn, klass och datum under Redigera.</div>
         </div>
         <div class="spararad" aria-label="Spara och ladda dokument">
           <button class="knapp liten" id="sparaDokument" type="button" title="Spara prov eller övningsblad">
@@ -5407,6 +5424,13 @@ function ulLösenordUpplåst(){
         <span><i style="background:var(--nA)"></i>A <b id="pA">0 p</b></span>
       </div>
       <div class="gränser" id="gränser"></div>
+    </div>
+
+    <div class="redigera-dokument-wrap">
+      <button class="knapp redigera-dokument-knapp" id="oppnaLayout" type="button" title="Redigera dokumentets innehåll, rubriker och layout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg>
+        <span>Redigera</span>
+      </button>
     </div>
 
     <div class="panel bladlista" id="blad"></div>
@@ -5580,7 +5604,7 @@ function ulLösenordUpplåst(){
   <div class="lr-dialog">
     <div class="lr-topp">
       <div>
-        <h2 id="lrRubrik">Layout</h2>
+        <h2 id="lrRubrik">Redigera dokument</h2>
         <p class="lr-under" id="lrUnder"></p>
       </div>
       <div class="lr-verktyg">
@@ -6870,6 +6894,14 @@ function vippa(id){
 }
 
 /* ── övningsbladet ── */
+function bladFörhandsvisning(html){
+  const d=document.createElement('div');
+  d.innerHTML=String(html||'');
+  d.querySelectorAll('script,style,svg,img,canvas,video,iframe,table,.fig,.figur').forEach(el=>el.remove());
+  d.querySelectorAll('[style]').forEach(el=>el.removeAttribute('style'));
+  d.querySelectorAll('br').forEach(el=>el.replaceWith(document.createTextNode(' ')));
+  return d.innerHTML.trim();
+}
 function ritaBlad(){
   if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
   const b=state.blad, vp=state.visaPoäng;
@@ -6909,7 +6941,7 @@ function ritaBlad(){
           ${vp?`<span class="bpoäng${ändrad(x)?' ändrad':''}" data-red="${x.id}" role="button"
             tabindex="0" title="${REDTITEL}">${x.poang}</span>`:''}
         </span>
-        <span class="btext">${x.t.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,90)}…</span>
+        <span class="btext">${bladFörhandsvisning(x.t)}</span>
       </span>
       <span class="bverktyg">
         <button class="redigera" data-redigera-blad="${i}" title="Redigera uppgift">
@@ -6923,6 +6955,8 @@ function ritaBlad(){
     </div>`).join('')
     : `<div class="tomt" style="padding:44px 16px"><h3>Bladet är tomt</h3>
        <p>Klicka på uppgifterna i mitten för att lägga till dem här.</p></div>`;
+
+  if(typeof renderKatex==='function') renderKatex($('#blad'));
 
   $$('[data-redigera-blad]').forEach(k=>{
     k.addEventListener('pointerdown',e=>e.stopPropagation());
@@ -7768,7 +7802,7 @@ function uppdateraDokumentidentitet(){
     const delar=[];
     if(klass) delar.push('Klass '+klass);
     if(datum) delar.push(datum);
-    m.textContent=delar.join(' · ')||'Ändra namn, klass och datum i Layout.';
+    m.textContent=delar.join(' · ')||'Ändra namn, klass och datum under Redigera.';
   }
 }
 
@@ -9013,7 +9047,7 @@ function renderKatex(root){
   });
 }
 /* Initierar KaTeX efter att skriptet har laddats. */
-window.addEventListener('load',()=>{ renderKatexLista($('#lista')); });
+window.addEventListener('load',()=>{ renderKatexLista($('#lista')); renderKatex($('#blad')); });
 
 /* ── spara/ladda · händelser ──
    Modalen ligger efter huvudskriptet i HTML. Händelserna måste därför bindas
