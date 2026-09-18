@@ -3364,11 +3364,17 @@ button,input,select,textarea{font-family:var(--ui)!important}
 
 /* Navigering och dokumentgenvägar */
 .kursrad{display:flex;align-items:center;gap:8px;min-width:0}.byt-kurs-inline{border:0;background:transparent;color:var(--ed-dark);font:inherit;font-size:11px;font-weight:700;padding:2px 5px;border-radius:6px;cursor:pointer;white-space:nowrap}.byt-kurs-inline:hover{background:var(--ed-tint)}
-.topp-dokumentknappar{display:flex;gap:8px;align-items:center}.topp-dokumentknappar .knapp{white-space:nowrap}
+.topp-dokumentknappar{display:flex;gap:10px;align-items:center}
+.topp-dokumentknapp{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:8px 13px;border:1px solid #cfd3da;border-radius:11px;background:linear-gradient(180deg,#fff 0%,#f7f8fa 100%);color:var(--ink);font:650 12px/1 var(--ui);white-space:nowrap;cursor:pointer;box-shadow:0 2px 0 #c9cdd4,0 5px 12px rgba(25,31,40,.08),inset 0 1px 0 rgba(255,255,255,.95);transition:transform .14s,box-shadow .14s,border-color .14s,background .14s}
+.topp-dokumentknapp svg{width:16px;height:16px;flex:none;color:var(--ed-dark)}
+.topp-dokumentknapp:hover{transform:translateY(-1px);border-color:#b7bdc7;background:linear-gradient(180deg,#fff 0%,#f1f3f6 100%);box-shadow:0 3px 0 #c4c8cf,0 7px 16px rgba(25,31,40,.11),inset 0 1px 0 #fff}
+.topp-dokumentknapp:active{transform:translateY(2px);box-shadow:0 0 0 #c4c8cf,0 2px 6px rgba(25,31,40,.08),inset 0 1px 2px rgba(25,31,40,.06)}
+.topp-dokumentknapp:focus-visible{outline:3px solid var(--ed-ring);outline-offset:2px}
 .hogerverktyg{display:flex;gap:8px;padding:10px 12px 0;align-items:center}.hogerverktyg .knapp{flex:1;justify-content:center}.hogerverktyg .slumpwrap{flex:1}.hogerverktyg .slumpwrap>.knapp{width:100%}
 #slumpwrapTop{display:none!important}
-@media(max-width:1050px){.topp-dokumentknappar button{font-size:0}.topp-dokumentknappar button:first-child:after{content:'Mina dokument';font-size:12px}.topp-dokumentknappar button:last-child:after{content:'Delade';font-size:12px}}
-@media(max-width:760px){.topp-dokumentknappar{gap:4px}.topp-dokumentknappar .knapp{padding:7px 8px}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
+@media(max-width:1050px){.topp-dokumentknapp span{display:none}.topp-dokumentknapp{padding:8px 10px}.topp-dokumentknapp:first-child:after{content:'Mina dokument';font-size:11.5px}.topp-dokumentknapp:last-child:after{content:'Gemensam bank';font-size:11.5px}}
+@media(max-width:760px){.topp-dokumentknappar{gap:5px}.topp-dokumentknapp{min-height:35px;padding:7px 8px}.topp-dokumentknapp:after{display:none}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
+
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -4979,6 +4985,51 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .ul-rapportkort{border:1px solid #ddd7d8;border-radius:12px;padding:12px;margin:9px 0;background:#fff}.ul-rapportkort.rapport-fixad{opacity:.68}.ul-rapport-huvud{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.ul-rapport-meta{display:grid;gap:3px}.ul-rapport-meta b{font-size:14px}.ul-rapport-meta span{font-size:12px;color:#6d6668}.ul-rapport-taggar{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.ul-rapport-tagg{font-size:11px;font-weight:650;background:#f3efef;border-radius:999px;padding:4px 7px}.ul-rapport-kommentar{font-size:13px;margin:8px 0;white-space:pre-wrap}.ul-rapport-poang{font-size:12px;background:#faf8f8;border-radius:8px;padding:7px 9px;margin:7px 0}.ul-rapport-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.ul-rapport-toolbar{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:10px 0 14px}.ul-rapport-filter{display:flex;gap:6px;flex-wrap:wrap}
 @media(max-width:620px){.rapportval{grid-template-columns:1fr}.rapportdialog{padding:16px}.rapportpoang{grid-template-columns:1fr 1fr 1fr}}
 </style>
+
+<style>
+/* Premiumvyer för sparade dokument och skolans gemensamma bank */
+#minamodal{backdrop-filter:blur(4px)}
+#minamodal .sparmodal-kort{width:min(960px,calc(100vw - 28px));max-height:min(860px,92vh);border:1px solid rgba(111,119,132,.28);border-radius:20px;background:linear-gradient(180deg,#fbfcfd 0,#f6f7f9 100%);box-shadow:0 28px 80px rgba(18,23,31,.24),0 2px 0 rgba(255,255,255,.9) inset;overflow:hidden}
+#minamodal .sparmodal-huvud{padding:20px 22px 16px;background:linear-gradient(180deg,#fff 0,#fafbfc 100%);border-bottom:1px solid #e4e7eb}
+#minamodal .sparmodal-huvud h2{font-family:var(--display,var(--ui));font-size:20px;letter-spacing:-.025em}
+#minamodal .sparmodal-huvud p{margin-top:5px;max-width:680px;color:var(--ink-2);line-height:1.45}
+#minamodal .sparmodal-stang{border:1px solid #d8dce2;background:linear-gradient(#fff,#f5f6f8);box-shadow:0 2px 0 #d2d6dc,0 4px 10px rgba(20,25,34,.07)}
+#minamodal .mina-verktyg{padding:13px 22px;background:#f7f8fa;border-bottom:1px solid #e4e7eb}
+#minamodal .mina-sok{height:42px;border-color:#d3d8df;border-radius:12px;background:#fff;box-shadow:0 1px 2px rgba(20,25,34,.04),inset 0 1px 0 #fff}
+#minamodal .sparmodal-body{padding:20px 22px 24px}
+.mina-kolumner{gap:20px}
+.mina-rubrik{border-bottom:0;margin-bottom:11px;padding:0 1px 8px}
+.mina-rubrik h3{font-size:15px}
+.mina-post{border-color:#d9dde3;border-radius:14px;background:linear-gradient(180deg,#fff 0,#fbfbfc 100%);box-shadow:0 2px 0 #d6dae0,0 6px 16px rgba(20,25,34,.055);overflow:visible;transition:transform .15s,box-shadow .15s,border-color .15s}
+.mina-post:hover{transform:translateY(-1px);border-color:#c7ccd4;box-shadow:0 3px 0 #d1d5dc,0 10px 22px rgba(20,25,34,.09)}
+.mina-post.aktuell{border-color:color-mix(in srgb,var(--ed) 42%,#cfd4dc);background:linear-gradient(180deg,#fff 0,var(--ed-tint) 140%)}
+.mina-kort{padding:13px 13px 13px 0}
+.mina-text{gap:5px}
+.mina-text b{font-size:14px;letter-spacing:-.01em}
+.mina-meta{font-size:11.5px}
+.mina-omraden{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.mina-omrade{display:inline-flex;align-items:center;max-width:210px;padding:3px 7px;border:1px solid #dfe3e8;border-radius:7px;background:#f5f6f8;color:#555d69;font-size:10.5px;font-weight:600;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mina-omrade.fler{background:#fff;color:var(--muted)}
+.mina-skolbank{margin:0;padding:0;border:0}
+.mina-skolbank-rubrik{padding:1px 1px 10px;margin:0 0 8px;border-bottom:1px solid #e2e5e9}
+.mina-skolbank-rubrik h3{font-size:16px}
+.mina-skolbank-lead{margin:0 0 17px;font-size:12.5px;color:var(--ink-2)}
+.mina-skolbank-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.mina-bankkolumn{min-width:0}
+.mina-banklista{display:grid;gap:10px}
+.mina-bankpost{position:relative;align-items:flex-start;gap:12px;padding:13px 12px 13px 15px;border:1px solid #d9dde3;border-radius:14px;background:linear-gradient(180deg,#fff 0,#fafbfc 100%);box-shadow:0 2px 0 #d6dae0,0 6px 16px rgba(20,25,34,.055);transition:transform .15s,box-shadow .15s,border-color .15s}
+.mina-bankpost:hover{transform:translateY(-1px);border-color:#c7ccd4;box-shadow:0 3px 0 #d1d5dc,0 10px 22px rgba(20,25,34,.09)}
+.mina-bankpost .mina-rygg{position:absolute;left:0;top:10px;bottom:10px;width:4px;margin:0;border-radius:0 4px 4px 0;background:var(--k,#888)}
+.mina-banktext{gap:5px;padding-left:2px}
+.mina-banktext b{font-size:14px;color:var(--ink);letter-spacing:-.01em}
+.mina-banktext>span{font-size:11.5px;line-height:1.35}
+.mina-bankpost .knapp{align-self:center;border:1px solid #d1d6dd!important;background:linear-gradient(#fff,#f4f5f7)!important;box-shadow:0 2px 0 #d0d4da,0 3px 8px rgba(20,25,34,.06)}
+.mina-bankpost .knapp:active{transform:translateY(2px);box-shadow:none}
+.mina-bank-kortmeta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;color:var(--muted)}
+.mina-bank-agare{font-weight:650;color:var(--ink-2)}
+.mina-premium-empty{padding:34px 18px;border:1px dashed #cfd4db;border-radius:15px;background:rgba(255,255,255,.64)}
+@media(max-width:720px){#minamodal .sparmodal-huvud{padding:16px 16px 13px}#minamodal .mina-verktyg{padding:10px 14px}#minamodal .sparmodal-body{padding:15px 14px 20px}.mina-skolbank-grid{grid-template-columns:1fr}.mina-omrade{max-width:170px}}
+</style>
 </head>
 <body class="password-locked">
 
@@ -5101,8 +5152,14 @@ function ulLösenordUpplåst(){
   </div>
   <div class="fyll"></div>
   <div class="topp-dokumentknappar" data-konto-dokument hidden>
-    <button class="knapp tyst" type="button" data-topp-dokument="mina">Mina prov och övningsblad</button>
-    <button class="knapp tyst" type="button" data-topp-dokument="delade">Delade prov och övningsblad</button>
+    <button class="topp-dokumentknapp" type="button" data-topp-dokument="mina" title="Mina prov och övningsblad">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+      <span>Mina prov och övningsblad</span>
+    </button>
+    <button class="topp-dokumentknapp" type="button" data-topp-dokument="bank" title="Gemensamma banken">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-6h8v6M9 10h.01M15 10h.01"/></svg>
+      <span>Gemensamma banken</span>
+    </button>
   </div>
   <div class="slumpwrap" id="slumpwrapTop">
     <button class="knapp tyst" id="slumpaKnapp" type="button" aria-expanded="false" aria-controls="slumppanel">
@@ -5670,6 +5727,15 @@ function sparSnapshotUppgift(x){
   try{return structuredClone(x);}
   catch(e){return JSON.parse(JSON.stringify(x));}
 }
+function dokumentOmraden(lista=state.blad){
+  const sett=new Set(), ut=[];
+  for(const x of (Array.isArray(lista)?lista:[])){
+    const namn=String(DB.omr?.[x?.kap]?.[x?.omr]||x?.omr||'').trim();
+    if(!namn||sett.has(namn)) continue;
+    sett.add(namn); ut.push(namn);
+  }
+  return ut;
+}
 function sparByggDokument(namn,id=AKTIV_SPAR_ID||sparUuid()){
   const now=new Date().toISOString();
   const tidigare=sparLasaAlla().find(x=>x.id===id);
@@ -5682,6 +5748,7 @@ function sparByggDokument(namn,id=AKTIV_SPAR_ID||sparUuid()){
     createdAt:tidigare?.createdAt||now,
     updatedAt:now,
     settings:sparInstallningar(),
+    areas:dokumentOmraden(),
     tasks:state.blad.map((x,i)=>({bankId:x.id||null,order:i,snapshot:sparSnapshotUppgift(x)}))
   };
 }
@@ -5747,6 +5814,7 @@ function sparAutosparaNu(){
   const draft={
     version:2,activeSaveId:AKTIV_SPAR_ID,course:AKTIV.id,track:state.spår||null,
     settings:sparInstallningar(),
+    areas:dokumentOmraden(),
     tasks:state.blad.map((x,i)=>({bankId:x.id||null,order:i,snapshot:sparSnapshotUppgift(x)})),
     shared:(typeof delningUtkastInfo==='function'?delningUtkastInfo():null),
     konto:(typeof kontoId==='function'?kontoId():null),
@@ -9895,6 +9963,7 @@ function delningByggData(){
   return {
     version:1,kind:dokumentTyp(),course:AKTIV?.id||null,track:state.spår||null,
     settings:sparInstallningar(),
+    areas:dokumentOmraden(),
     tasks:state.blad.map((x,i)=>({bankId:x.id??null,order:i,snapshot:sparSnapshotUppgift(x)}))
   };
 }
@@ -11306,7 +11375,7 @@ function kontoMenyVal(val){
     case 'onskemal': ulOnskemalOppna(); break;
     case 'inskickade-onskemal': delningÖppnaModal({vy:'admin-onskemal'}); break;
     case 'mina': minaÖppna({lage:'mina'}); break;
-    case 'inbjudningar': minaÖppna({fokusInbjudningar:true,lage:'delade'}); break;
+    case 'inbjudningar': minaÖppna({fokusInbjudningar:true,lage:'inbjudningar'}); break;
     case 'flytt': kontoErbjudFlytt(true); break;
     case 'losenord': grindLås(); grindRita('byt',{tvingad:false}); break;
     case 'logga-ut': ulLoggaUt(); break;
@@ -11521,12 +11590,40 @@ function minaTid(iso){
   if(d.getFullYear()!==new Date().getFullYear()) opt.year='numeric';
   return d.toLocaleDateString('sv-SE',opt);
 }
+function minaOmradesLista(d){
+  let a=d?.omraden??d?.areas??[];
+  if(typeof a==='string'){ try{ a=JSON.parse(a); }catch(_){ a=[a]; } }
+  if(!Array.isArray(a)) a=[];
+  const sett=new Set(), ut=[];
+  for(let namn of a){
+    namn=String(namn??'').trim(); if(!namn) continue;
+    /* Äldre dokument kan bara ha områdesnyckeln. Gör den läsbar tills dokumentet sparas om. */
+    if(!/\s/.test(namn)) namn=namn.replace(/[_-]+/g,' ').replace(/^./,c=>c.toUpperCase());
+    if(!sett.has(namn)){ sett.add(namn); ut.push(namn); }
+  }
+  return ut;
+}
+function minaOmradesHtml(d,max=3){
+  const a=minaOmradesLista(d); if(!a.length) return '';
+  const syn=a.slice(0,max), fler=a.length-syn.length;
+  return `<span class="mina-omraden" aria-label="Områden">${syn.map(x=>`<span class="mina-omrade">${ulEsc(x)}</span>`).join('')}${fler?`<span class="mina-omrade fler">+${fler}</span>`:''}</span>`;
+}
 async function minaÖppna({fokusInbjudningar=false,lage='mina'}={}){
   if(!kontoAktivt()) return;
   const m=document.getElementById('minamodal');
   MINA.sök=''; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar; MINA.lage=lage;
-  const mt=document.getElementById('minamodalTitel'); if(mt) mt.textContent=lage==='delade'?'Delade prov och övningsblad':'Mina prov och övningsblad'; const ms=document.getElementById('minamodalText'); if(ms) ms.textContent=lage==='delade'?'Personligt delade dokument, delningsförfrågningar och skolans gemensamma bank.':'Dokument som du äger och sparar på ditt konto.';
-  document.getElementById('minaSok').value='';
+  const mt=document.getElementById('minamodalTitel'), ms=document.getElementById('minamodalText');
+  if(lage==='bank'){
+    if(mt) mt.textContent='Gemensamma banken';
+    if(ms) ms.textContent='Prov och övningsblad som lärare på din skola har delat med alla.';
+  }else if(lage==='inbjudningar'){
+    if(mt) mt.textContent='Delningsförfrågningar';
+    if(ms) ms.textContent='Personliga inbjudningar till dokument som kollegor vill dela med dig.';
+  }else{
+    if(mt) mt.textContent='Mina prov och övningsblad';
+    if(ms) ms.textContent='Dina sparade dokument, samlade efter typ och med innehållet synligt direkt i listan.';
+  }
+  const sok=document.getElementById('minaSok'); if(sok){ sok.value=''; sok.placeholder=lage==='bank'?'Sök i gemensamma banken':'Sök på namn, kurs eller område'; }
   m.hidden=false;
   minaRita();
   await minaHämta();
@@ -11561,7 +11658,7 @@ function minaPost(d){
   const etikett=[
     !ägare?`<span class="mina-etikett delad">Delat av ${ulEsc(d.agare)}</span>`:'',
     ägare&&delat?`<span class="mina-etikett delad">Delat med ${d.medlemmar-1}</span>`:'',
-    d.skolbank?`<span class="mina-etikett skolbank">Skolans bank</span>`:''
+    d.skolbank?`<span class="mina-etikett skolbank">Gemensamma banken</span>`:''
   ].filter(Boolean).join('');
   const dela=MINA.dela?.id===d.id?MINA.dela:null;
   const delaPanel=!dela?'':(()=>{
@@ -11598,11 +11695,12 @@ function minaPost(d){
         <b>${ulEsc(d.namn)}</b>
         <span class="mina-meta"><span class="mina-kurs">${ulEsc(kursnamn)}</span>
           <span>${d.antal_uppgifter} ${d.antal_uppgifter===1?'uppgift':'uppgifter'}</span>${etikett}</span>
+        ${minaOmradesHtml(d)}
         <span class="mina-meta"><span>${aktuell?'Öppet nu':'Ändrat '+ulEsc(minaTid(d.uppdaterad))}${delat&&d.uppdaterad_av?' av '+ulEsc(d.uppdaterad_av):''}</span></span>
       </span>
     </button>
     <div class="mina-atg">
-      ${ägare?`<button type="button" class="skolbank${d.skolbank?' aktiv':''}" data-mina-skolbank="${ulEsc(d.id)}" data-delad="${d.skolbank?'1':'0'}" title="${d.skolbank?'Sluta dela med skolan':'Publicera en kopierbar mall för alla lärare på skolan'}">${d.skolbank?'Delad med alla':'Dela med alla'}</button>`:''}
+      ${ägare?`<button type="button" class="skolbank${d.skolbank?' aktiv':''}" data-mina-skolbank="${ulEsc(d.id)}" data-delad="${d.skolbank?'1':'0'}" title="${d.skolbank?'Ta bort från gemensamma banken':'Publicera en kopierbar mall för alla lärare på skolan'}">${d.skolbank?'I gemensamma banken':'Dela med alla'}</button>`:''}
       <button type="button" data-mina-dela="${ulEsc(d.id)}">Dela</button>
       <button type="button" data-mina-kopiera="${ulEsc(d.id)}">Duplicera</button>
       <button type="button" class="radera" data-mina-radera="${ulEsc(d.id)}">${ägare?'Ta bort':'Lämna'}</button>
@@ -11618,12 +11716,13 @@ function minaBankPost(d){
   const kursnamn=(kurs?.titel||d.kurs||'Okänd kurs')+(spår?` · ${spår.etikett||spår.id}`:'');
   const ägareText=d.egen?'Ditt original':(d.agare||'Kollega');
   const åtgärd=d.egen
-    ? `<button type="button" class="knapp liten tyst" data-mina-oppna="${ulEsc(d.id)}">Öppna original</button>`
+    ? `<button type="button" class="knapp liten tyst" data-mina-oppna="${ulEsc(d.id)}">Öppna</button>`
     : `<button type="button" class="knapp liten tyst" data-mina-bank-kopiera="${ulEsc(d.id)}" data-namn="${ulEsc(d.namn)}">Skapa kopia</button>`;
   return `<div class="mina-bankpost" style="--k:${ulEsc(färg)}">
     <span class="mina-rygg" aria-hidden="true"></span>
     <span class="mina-banktext"><b>${ulEsc(d.namn)}</b>
-      <span>${ulEsc(kursnamn)} · ${d.antal_uppgifter||0} ${(d.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(ägareText)}</span>
+      <span class="mina-bank-kortmeta"><span>${ulEsc(kursnamn)}</span><span>${d.antal_uppgifter||0} ${(d.antal_uppgifter||0)===1?'uppgift':'uppgifter'}</span><span class="mina-bank-agare">${ulEsc(ägareText)}</span></span>
+      ${minaOmradesHtml(d)}
       <span>Ändrat ${ulEsc(minaTid(d.uppdaterad))}</span></span>
     ${åtgärd}
   </div>`;
@@ -11633,55 +11732,58 @@ function minaRita(){
   const el=document.getElementById('minaInnehall');
   if(!el||document.getElementById('minamodal').hidden) return;
   if(MINA.fel){ el.innerHTML=`<div class="ul-fel" role="alert">${ulEsc(MINA.fel)}</div>`; return; }
-  if(!MINA.lista){ el.innerHTML='<div class="ul-laddar">Hämtar dina dokument…</div>'; return; }
+  if(!MINA.lista){ el.innerHTML='<div class="ul-laddar">Hämtar dokument…</div>'; return; }
   const q=MINA.sök.trim().toLowerCase();
   const träff=d=>{
     if(!q) return true;
     const kurs=KURSER.find(k=>k.id===d.kurs);
-    return [d.namn,kurs?.titel,d.kurs,d.spar].some(t=>String(t||'').toLowerCase().includes(q));
+    return [d.namn,kurs?.titel,d.kurs,d.spar,...minaOmradesLista(d)].some(t=>String(t||'').toLowerCase().includes(q));
   };
-  const lista=MINA.lista.filter(d=>MINA.lage==='delade'?d.roll!=='agare':d.roll==='agare').filter(träff)
-    .sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
-  const prov=lista.filter(d=>d.typ==='prov');
-  const övning=lista.filter(d=>d.typ!=='prov');
-  const lokala=MINA.lage==='mina'?sparLasaAlla().length:0;
-  const inbjudningar=MINA.lage==='delade'&&Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
-  const bankObj=MINA.lage==='delade'&&MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
-  const bankLista=(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]).filter(d=>{
-    if(!q) return true;
-    const kurs=KURSER.find(k=>k.id===d.kurs);
-    return [d.namn,d.agare,kurs?.titel,d.kurs,d.spar].some(t=>String(t||'').toLowerCase().includes(q));
-  });
-  const bankHtml=!bankObj?'':`<section class="mina-skolbank" aria-label="Skolans gemensamma bank">
-      <div class="mina-skolbank-rubrik"><span class="mina-ikon ovning" aria-hidden="true">${UL_IKON_OVNING}</span>
-        <h3>Skolans gemensamma bank${bankObj.skola?' · '+ulEsc(bankObj.skola):''}</h3><span class="mina-antal">${bankLista.length}</span></div>
-      <p class="mina-skolbank-lead">Här visas prov och övningsblad som har delats med hela skolan, även dina egna. Kollegor arbetar vidare i egna kopior; originalet kan bara redigeras av ägaren och dem som fått personlig delning.</p>
-      ${!bankObj.skola?'<div class="mina-tom"><b>Skola saknas på kontot</b>Lägg till skola på lärarkontot för att använda den gemensamma banken.</div>'
-        :bankLista.length?`<div class="mina-skolbank-grid">${bankLista.map(minaBankPost).join('')}</div>`
-        :`<div class="mina-tom">${q?'<b>Inga träffar i skolbanken</b>':'<b>Skolbanken är tom</b>När någon på skolan väljer Dela med alla visas dokumentet här.'}</div>`}
-    </section>`;
-  const inbjudanHtml=!inbjudningar.length?'':`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
-      <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
-      <div class="mina-inbjudningar-lista">${inbjudningar.map(x=>{
-        const kurs=KURSER.find(k=>k.id===x.kurs);
-        const kursnamn=kurs?.titel||x.kurs||'Okänd kurs';
-        return `<div class="mina-inbjudan"><span class="dr-person aktiv">${ulEsc(ulInitialer(x.fran_namn||'?'))}</span>
-          <span class="mina-inbjudan-text"><b>${ulEsc(x.fran_namn||'En kollega')} vill dela ”${ulEsc(x.namn)}”</b><span>${ulEsc(kursnamn)} · ${x.antal_uppgifter||0} ${(x.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(minaTid(x.skapad))}</span></span>
-          <span class="mina-inbjudan-knappar"><button type="button" class="knapp liten primär" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="ja">Acceptera</button><button type="button" class="knapp liten tyst" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="nej">Avböj</button></span></div>`;
-      }).join('')}</div></section>`;
   const kolumn=(typ,rubrik,ikon,poster,tom)=>`<section class="mina-kolumn" aria-label="${rubrik}">
       <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span>
         <h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
       <div class="mina-lista">${poster.length?poster.map(minaPost).join('')
-        :`<div class="mina-tom">${q?'<b>Inga träffar</b>':tom}</div>`}</div>
+        :`<div class="mina-tom mina-premium-empty">${q?'<b>Inga träffar</b>':tom}</div>`}</div>
     </section>`;
-  el.innerHTML=`${inbjudanHtml}${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span>
-      <button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
+
+  if(MINA.lage==='bank'){
+    const bankObj=MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
+    const alla=(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]).filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+    const prov=alla.filter(d=>d.typ==='prov'), ovning=alla.filter(d=>d.typ!=='prov');
+    const bankKolumn=(typ,rubrik,ikon,poster)=>`<section class="mina-bankkolumn" aria-label="${rubrik}">
+      <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span><h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
+      <div class="mina-banklista">${poster.length?poster.map(minaBankPost).join(''):`<div class="mina-tom mina-premium-empty"><b>${q?'Inga träffar':'Inga '+rubrik.toLowerCase()+' ännu'}</b>${q?'Prova ett annat sökord.':'När någon på skolan delar med alla visas dokumentet här.'}</div>`}</div>
+    </section>`;
+    el.innerHTML=`<section class="mina-skolbank" aria-label="Gemensamma banken">
+      <div class="mina-skolbank-rubrik"><span class="mina-ikon ovning" aria-hidden="true">${UL_IKON_OVNING}</span>
+        <h3>Gemensamma banken${bankObj?.skola?' · '+ulEsc(bankObj.skola):''}</h3><span class="mina-antal">${alla.length}</span></div>
+      <p class="mina-skolbank-lead">Här ligger bara material som har publicerats för hela skolan. Kollegor skapar egna kopior; originalet stannar hos den som skapade det.</p>
+      ${!bankObj?'<div class="ul-laddar">Hämtar gemensamma banken…</div>':!bankObj.skola?'<div class="mina-tom mina-premium-empty"><b>Skola saknas på kontot</b>Lägg till skola på lärarkontot för att använda den gemensamma banken.</div>':`<div class="mina-skolbank-grid">${bankKolumn('prov','Prov',UL_IKON_PROV,prov)}${bankKolumn('ovning','Övningsblad',UL_IKON_OVNING,ovning)}</div>`}
+    </section>`;
+    return;
+  }
+
+  const inbjudningar=Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
+  if(MINA.lage==='inbjudningar'){
+    el.innerHTML=inbjudningar.length?`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
+      <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
+      <div class="mina-inbjudningar-lista">${inbjudningar.map(x=>{
+        const kurs=KURSER.find(k=>k.id===x.kurs); const kursnamn=kurs?.titel||x.kurs||'Okänd kurs';
+        return `<div class="mina-inbjudan"><span class="dr-person aktiv">${ulEsc(ulInitialer(x.fran_namn||'?'))}</span>
+          <span class="mina-inbjudan-text"><b>${ulEsc(x.fran_namn||'En kollega')} vill dela ”${ulEsc(x.namn)}”</b><span>${ulEsc(kursnamn)} · ${x.antal_uppgifter||0} ${(x.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(minaTid(x.skapad))}</span></span>
+          <span class="mina-inbjudan-knappar"><button type="button" class="knapp liten primär" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="ja">Acceptera</button><button type="button" class="knapp liten tyst" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="nej">Avböj</button></span></div>`;
+      }).join('')}</div></section>`:'<div class="mina-tom mina-premium-empty"><b>Inga delningsförfrågningar</b>Du har inga väntande personliga inbjudningar.</div>';
+    return;
+  }
+
+  const lista=MINA.lista.filter(d=>d.roll==='agare').filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+  const prov=lista.filter(d=>d.typ==='prov'), ovning=lista.filter(d=>d.typ!=='prov');
+  const lokala=sparLasaAlla().length;
+  el.innerHTML=`${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span><button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
     <div class="mina-kolumner">
       ${kolumn('prov','Prov',UL_IKON_PROV,prov,'<b>Inga prov ännu</b>Välj Prov som dokumenttyp och tryck på Spara.')}
-      ${kolumn('ovning','Övningsblad',UL_IKON_OVNING,övning,'<b>Inga övningsblad ännu</b>Tryck på Spara när du byggt ett övningsblad.')}
-    </div>
-    ${bankHtml}`;
+      ${kolumn('ovning','Övningsblad',UL_IKON_OVNING,ovning,'<b>Inga övningsblad ännu</b>Tryck på Spara när du byggt ett övningsblad.')}
+    </div>`;
 }
 async function minaKlick(e){
   const öppna=e.target.closest('[data-mina-oppna]');
@@ -11825,7 +11927,7 @@ async function minaKlick(e){
   
 document.addEventListener('click',e=>{
   const d=e.target.closest('[data-topp-dokument]');
-  if(d){ minaÖppna({lage:d.dataset.toppDokument==='delade'?'delade':'mina'}); return; }
+  if(d){ minaÖppna({lage:d.dataset.toppDokument==='bank'?'bank':'mina'}); return; }
   if(e.target.closest('#slumpaKnappHoger')) document.getElementById('slumpaKnapp')?.click();
 });
 document.addEventListener('click',e=>{
