@@ -5029,6 +5029,93 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .mina-bank-agare{font-weight:650;color:var(--ink-2)}
 .mina-premium-empty{padding:34px 18px;border:1px dashed #cfd4db;border-radius:15px;background:rgba(255,255,255,.64)}
 @media(max-width:720px){#minamodal .sparmodal-huvud{padding:16px 16px 13px}#minamodal .mina-verktyg{padding:10px 14px}#minamodal .sparmodal-body{padding:15px 14px 20px}.mina-skolbank-grid{grid-template-columns:1fr}.mina-omrade{max-width:170px}}
+
+/* ═════════════════ 2026-09-18 · PREMIUMKNAPPAR + REDIGERBAR LAYOUT ═══════ */
+.dokumentfält{gap:9px!important}
+.dokumenthuvud-kompakt{
+  padding:10px 11px 9px;border:1px solid rgba(42,48,58,.12);border-radius:13px;
+  background:linear-gradient(180deg,#fff 0%,#FAFBFC 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 1px 2px rgba(16,19,24,.05);
+}
+.dokumenthuvud-rubrikrad{display:flex;align-items:center;gap:8px;min-width:0}
+.dokumenthuvud-namn{min-width:0;flex:1;font-family:var(--ui);font-size:13.5px;font-weight:720;
+  letter-spacing:-.015em;color:var(--x-ink-1,#20242A);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dokumenthuvud-actions{display:flex;align-items:center;gap:6px;flex:none}
+.dokumenthuvud-meta{margin-top:5px;color:var(--x-ink-4,#7A808A);font-size:10.5px;line-height:1.3;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Tydlig fysisk knappkänsla: ljus kant, bottenkant och en liten lyftning. */
+#sparaDokument,#laddaDokument,#nyttDokument,#delaDokument,#oppnaLayout,#tillAnalys,
+#expPdf,#expWord,#lrPdf,#lrWord,#lrKlar{
+  border:1px solid rgba(31,38,48,.18)!important;
+  background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F7 100%)!important;
+  color:#2D333B!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 2px 0 rgba(96,104,116,.22),0 4px 10px rgba(31,38,48,.09)!important;
+  transform:translateY(0);transition:transform .14s ease,box-shadow .14s ease,background .14s ease,border-color .14s ease!important;
+}
+#sparaDokument:hover,#laddaDokument:hover,#nyttDokument:hover,#delaDokument:hover,#oppnaLayout:hover,#tillAnalys:hover,
+#expPdf:hover,#expWord:hover,#lrPdf:hover,#lrWord:hover,#lrKlar:hover{
+  transform:translateY(-1px);border-color:rgba(31,38,48,.26)!important;
+  background:linear-gradient(180deg,#FFFFFF 0%,#ECEFF3 100%)!important;
+  box-shadow:inset 0 1px 0 #fff,0 3px 0 rgba(96,104,116,.20),0 7px 14px rgba(31,38,48,.11)!important;
+}
+#sparaDokument:active,#laddaDokument:active,#nyttDokument:active,#delaDokument:active,#oppnaLayout:active,#tillAnalys:active,
+#expPdf:active,#expWord:active,#lrPdf:active,#lrWord:active,#lrKlar:active{
+  transform:translateY(2px);box-shadow:inset 0 1px 2px rgba(31,38,48,.10),0 1px 0 rgba(96,104,116,.15)!important;
+}
+#expPdf,#lrPdf,#lrKlar{
+  border-color:color-mix(in oklab,var(--ed) 48%,#BDC4CA)!important;
+  background:linear-gradient(180deg,color-mix(in oklab,var(--ed-tint,#E6F0EC) 45%,#fff) 0%,color-mix(in oklab,var(--ed-tint,#E6F0EC) 82%,#F1F5F3) 100%)!important;
+  color:var(--ed-dark,#0B5942)!important;
+}
+#tillAnalys{
+  border-color:rgba(42,90,147,.25)!important;
+  background:linear-gradient(180deg,#F9FCFF 0%,#E9F1FA 100%)!important;
+  color:#27588F!important;
+}
+.dokument-action{padding:6px 8px!important;border-radius:9px!important;font-size:10.5px!important;gap:4px!important;line-height:1!important;white-space:nowrap}
+.dokument-action svg{width:13px!important;height:13px!important}
+.spararad{gap:7px!important;flex-wrap:wrap}
+.spararad .knapp{border-radius:9px!important}
+.exportrad{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9px!important}
+.exportrad .knapp{min-height:39px!important;border-radius:11px!important;font-weight:680!important;letter-spacing:-.01em!important}
+.lr-verktyg #lrPdf,.lr-verktyg #lrWord,.lr-verktyg #lrKlar{border-radius:10px!important;font-weight:650!important}
+
+/* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
+.mätarnyckel span{display:inline-flex!important;align-items:center!important;gap:3px!important;white-space:nowrap}
+.mätarnyckel b{font-variant-numeric:tabular-nums!important}
+.mätarhuvud .antal{font-weight:650!important;color:var(--x-ink-3,#5F6670)!important}
+
+/* I layoutläget fungerar pappret också som dokumenteditor. */
+.lr-papper .lr-redigerbar{
+  cursor:text;border-radius:3px;outline:1px dashed transparent;outline-offset:3px;
+  transition:background .12s ease,outline-color .12s ease,box-shadow .12s ease;
+}
+.lr-papper .lr-redigerbar:hover{background:rgba(15,107,79,.055);outline-color:rgba(15,107,79,.26)}
+.lr-papper .lr-redigerbar:focus{background:#fff;outline:2px solid rgba(15,107,79,.55);box-shadow:0 0 0 4px rgba(15,107,79,.08)}
+.lr-papper .lr-redigerbar:empty{display:inline-block;min-width:52px;min-height:1em}
+.lr-papper .lr-redigerbar:empty::before{content:attr(data-placeholder);color:#A2A7AE;font-style:italic;font-weight:400}
+.lr-papper .pdf-provdatum.lr-redigerbar:empty{display:block;min-width:140px}
+.lr-papper .pdf-notice.lr-redigerbar,.lr-papper .pdf-instruktion.lr-redigerbar{display:block}
+.lr-papper [data-provdeltext].lr-redigerbar{display:inline;min-width:100px}
+.pdf-provdatum:empty{display:none}
+.lr-papper .pdf-provdatum:empty{display:block}
+
+@media(max-width:1120px){
+  .dokumenthuvud-rubrikrad{align-items:flex-start;flex-wrap:wrap}
+  .dokumenthuvud-namn{flex-basis:100%}
+  .dokumenthuvud-actions{width:100%}
+}
+@media(max-width:680px){
+  .dokumenthuvud-actions{width:auto}
+  .dokumenthuvud-rubrikrad{flex-wrap:nowrap;align-items:center}
+  .dokumenthuvud-namn{flex-basis:auto}
+  .dokument-action{padding:6px!important}
+  .dokument-action svg{margin:0!important}
+}
+
+.pdf-ovningsmeta .pdf-meta-class:not(:empty)::before,.pdf-ovningsmeta .pdf-meta-date:not(:empty)::before{content:" · ";}
+.lr-papper .pdf-ovningsmeta .lr-redigerbar:empty::before{content:attr(data-placeholder);}
 </style>
 </head>
 <body class="password-locked">
@@ -5261,11 +5348,25 @@ function ulLösenordUpplåst(){
         </div>
         <div class="provdelar-lista" id="provdelarLista"></div>
       </div>
-      <div class="fält">
-        <input id="bTitel" value="Övningsblad" aria-label="Rubrik">
-        <div class="rad">
-          <input id="bKlass" placeholder="Klass" aria-label="Klass">
-          <input id="bDatum" placeholder="Datum" aria-label="Datum">
+      <div class="fält dokumentfält">
+        <input type="hidden" id="bTitel" value="Övningsblad">
+        <input type="hidden" id="bKlass" value="">
+        <input type="hidden" id="bDatum" value="">
+        <div class="dokumenthuvud-kompakt" aria-label="Aktuellt dokument">
+          <div class="dokumenthuvud-rubrikrad">
+            <div class="dokumenthuvud-namn" id="bTitelVisa">Övningsblad</div>
+            <div class="dokumenthuvud-actions">
+              <button class="knapp liten tyst dokument-action" id="oppnaLayout" type="button" title="Redigera dokumentets layout och uppgifter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+                Layout
+              </button>
+              <button class="knapp liten dokument-action analys-mini" id="tillAnalys" type="button" title="Skicka provets uppgifter direkt till resultatanalysen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v7.2l-4.7 7.2A2.3 2.3 0 0 0 7.2 21h9.6a2.3 2.3 0 0 0 1.9-3.6L14 10.2V3"/><path d="M7.7 16h8.6"/><path d="M10 13.2h4"/></svg>
+                Till analys
+              </button>
+            </div>
+          </div>
+          <div class="dokumenthuvud-meta" id="bMetaVisa">Ändra namn, klass och datum i Layout.</div>
         </div>
         <div class="spararad" aria-label="Spara och ladda dokument">
           <button class="knapp liten" id="sparaDokument" type="button" title="Spara prov eller övningsblad">
@@ -5293,7 +5394,7 @@ function ulLösenordUpplåst(){
     <div class="mätare">
       <div class="mätarhuvud">
         <span class="summa" id="summa">0<small>p</small></span>
-        <span class="antal" id="bAntal">inga uppgifter</span>
+        <span class="antal" id="bAntal">0 poäng</span>
       </div>
       <div class="stapel">
         <span class="sE" id="stE" style="width:0"></span>
@@ -5301,18 +5402,11 @@ function ulLösenordUpplåst(){
         <span class="sA" id="stA" style="width:0"></span>
       </div>
       <div class="mätarnyckel">
-        <span><i style="background:var(--nE)"></i><b id="pE">0</b> E</span>
-        <span><i style="background:var(--nC)"></i><b id="pC">0</b> C</span>
-        <span><i style="background:var(--nA)"></i><b id="pA">0</b> A</span>
+        <span><i style="background:var(--nE)"></i>E <b id="pE">0 p</b></span>
+        <span><i style="background:var(--nC)"></i>C <b id="pC">0 p</b></span>
+        <span><i style="background:var(--nA)"></i>A <b id="pA">0 p</b></span>
       </div>
       <div class="gränser" id="gränser"></div>
-    </div>
-
-    <div class="bladverktyg">
-      <button class="knapp liten tyst" id="oppnaLayout" type="button" title="Visa och redigera hur provet ser ut på pappret">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
-        Layout
-      </button>
     </div>
 
     <div class="panel bladlista" id="blad"></div>
@@ -5326,15 +5420,6 @@ function ulLösenordUpplåst(){
         <button class="knapp primär" id="expPdf">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V4h12v5M6 18H4v-6h16v6h-2M8 14h8v7H8z"/></svg>
           PDF
-        </button>
-        <button class="knapp till-analys" id="tillAnalys" type="button" title="Skicka provets uppgifter direkt till resultatanalysen">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 3h6"/>
-            <path d="M10 3v7.2l-4.7 7.2A2.3 2.3 0 0 0 7.2 21h9.6a2.3 2.3 0 0 0 1.9-3.6L14 10.2V3"/>
-            <path d="M7.7 16h8.6"/>
-            <path d="M10 13.2h4"/>
-          </svg>
-          Till analys
         </button>
         <button class="knapp" id="expWord">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
@@ -5717,8 +5802,9 @@ function sparInstallningar(){
     showAidSymbols:Boolean($('#visaHjälpmedelExport')?.checked),
     showPoints:Boolean(state.visaPoäng),
     examParts:(typeof PROVDELAR!=='undefined'
-      ? PROVDELAR.map(x=>({digitala:Boolean(x.digitala)}))
-      : [{digitala:false}]),
+      ? PROVDELAR.map(x=>({digitala:Boolean(x.digitala),text:x.text??null}))
+      : [{digitala:false,text:null}]),
+    customTexts:(typeof DOKTEXT!=='undefined'?{notice:DOKTEXT.notice,instruction:DOKTEXT.instruction}:null),
     taskSpacing:(typeof LAYOUT!=='undefined'?LAYOUT.avstand:16),
     gradeLimits:(typeof GRANSER!=='undefined'?GRANSER:null)
   };
@@ -5841,6 +5927,7 @@ function sparNyttDokument(){
   state.blad=[];
   AKTIV_SPAR_ID=null;
   if(typeof provAterstallDelar==='function') provAterstallDelar();
+  if(typeof DOKTEXT!=='undefined') DOKTEXT={notice:null,instruction:null};
   sparRensaUtkast(AKTIV.id);
   rita(); ritaBlad();
   sparAutosparaNu();
@@ -5996,6 +6083,8 @@ function sparAppliceraInstallningar(d){
   if(typeof provRitaKontroller==='function') provRitaKontroller();
   if(typeof satUppgiftsavstand==='function' && Number.isFinite(+st.taskSpacing)) satUppgiftsavstand(+st.taskSpacing);
   if(typeof GRANSER!=='undefined') GRANSER=Object.assign({E:null,C:null,A:null},st.gradeLimits||{});
+  if(typeof DOKTEXT!=='undefined') DOKTEXT=Object.assign({notice:null,instruction:null},st.customTexts||st.texts||{});
+  if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
 }
 /* Bygger bladets uppgifter ur ett sparat eller delat dokument. */
 function sparUppgifterUrDokument(doc){
@@ -6175,6 +6264,7 @@ function uppdateraKursRubriker(){
   const namn=kursnamnMedSpår(), n=variantBank().length;
   $('#banktal').textContent=`${namn} · ${n} uppgifter`;
   $('#bTitel').value=`${dokumentTyp()==='prov'?'Prov':'Övningsblad'} ${namn}`;
+  if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
 }
 
 /* Strukturerar ett facit.
@@ -6460,6 +6550,7 @@ function startaKurs(kurs){
     state.miniraknare='alla'; state.geogebra=false;
     state.spår=kurs.defaultSpår||(kurs.spår?.[0]?.id||null);
     if(typeof provAterstallDelar==='function') provAterstallDelar();
+    if(typeof DOKTEXT!=='undefined') DOKTEXT={notice:null,instruction:null};
     $('#sökfält').value=''; $('#visaPoäng').checked=false;
     $$('.nivåfilter button').forEach(b=>b.setAttribute('aria-pressed','true'));
     $('#slumpaAntal').value=12;
@@ -6780,20 +6871,21 @@ function vippa(id){
 
 /* ── övningsbladet ── */
 function ritaBlad(){
+  if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
   const b=state.blad, vp=state.visaPoäng;
-  const p={E:0,C:0,A:0}, antalN={E:0,C:0,A:0};
-  b.forEach(x=>{const m=x.poang.match(/(\d+)\/(\d+)\/(\d+)/);p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];antalN[x.niva]++;});
+  const p={E:0,C:0,A:0};
+  b.forEach(x=>{
+    const m=String(x?.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
+    if(m){p.E+=+m[1];p.C+=+m[2];p.A+=+m[3];}
+  });
   const tot=p.E+p.C+p.A;
-  const antalTot=b.length;
-  $('#summa').style.display=vp?'':'none';
+  $('#summa').style.display='none';
   $('#summa').innerHTML=tot+'<small>p</small>';
-  $('#bAntal').textContent=b.length?b.length+(b.length===1?' uppgift':' uppgifter'):'inga uppgifter';
+  $('#bAntal').textContent=tot+(tot===1?' poäng':' poäng');
   document.querySelector('.stapel').style.display='';
   ['E','C','A'].forEach(n=>{
-    const bas=vp?tot:antalTot;
-    const värde=vp?p[n]:antalN[n];
-    $('#st'+n).style.width=(bas?värde/bas*100:0)+'%';
-    $('#p'+n).textContent=vp?p[n]:antalN[n];
+    $('#st'+n).style.width=(tot?p[n]/tot*100:0)+'%';
+    $('#p'+n).textContent=p[n]+' p';
   });
   $('#gränser').style.display=vp?'':'none';
   $('#gränser').innerHTML=tot
@@ -7382,6 +7474,7 @@ PR.addEventListener('click',e=>{
 $('#rensaAllt').addEventListener('click',()=>{
   state.blad=[]; state.omr.clear(); state.sök=''; state.nivåer=new Set(['E','C','A']);
   if(typeof provAterstallDelar==='function') provAterstallDelar();
+  if(typeof DOKTEXT!=='undefined') DOKTEXT={notice:null,instruction:null};
   state.visaPoäng=false;
   $('#sökfält').value='';
   $('#visaPoäng').checked=false;
@@ -7658,6 +7751,27 @@ function exportMärke(x,totalEndast=false,doljMarke=false){
   return `<span class="nivåmärke ${x.niva}">${x.niva}</span>`;
 }
 
+const PROV_NOTICE_STANDARD='BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.';
+const PROV_INSTRUKTION_STANDARD='REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.';
+var DOKTEXT={notice:null,instruction:null};
+function provNoticeText(){ return DOKTEXT.notice===null?PROV_NOTICE_STANDARD:String(DOKTEXT.notice??''); }
+function provInstruktionText(){ return DOKTEXT.instruction===null?PROV_INSTRUKTION_STANDARD:String(DOKTEXT.instruction??''); }
+
+function uppdateraDokumentidentitet(){
+  const titel=(document.getElementById('bTitel')?.value||'').trim()|| (dokumentTyp()==='prov'?'Prov':'Övningsblad');
+  const klass=(document.getElementById('bKlass')?.value||'').trim();
+  const datumRaw=(document.getElementById('bDatum')?.value||'').trim();
+  const datum=datumRaw?(typeof wordDatum==='function'?wordDatum(datumRaw):datumRaw):'';
+  const t=document.getElementById('bTitelVisa'); if(t) t.textContent=titel;
+  const m=document.getElementById('bMetaVisa');
+  if(m){
+    const delar=[];
+    if(klass) delar.push('Klass '+klass);
+    if(datum) delar.push(datum);
+    m.textContent=delar.join(' · ')||'Ändra namn, klass och datum i Layout.';
+  }
+}
+
 function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=dokumentTyp()}){
   const fallback=typ==='prov'?'Prov':'Övningsblad';
   const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
@@ -7676,26 +7790,24 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
         <div class="pdf-provlogo"><img src="${LOGO}" alt="Erik Dahlbergsgymnasiet"></div>
         <div class="pdf-ident">
           <div><b>Namn:</b><span></span></div>
-          <div><b>Klass:</b><span>${wordEsc(kl)}</span></div>
+          <div><b>Klass:</b><span data-doc-field="class">${wordEsc(kl)}</span></div>
         </div>
       </div>
-      <h1>${wordEsc(t)}</h1>
-      ${datum?`<div class="pdf-provdatum">${wordEsc(datum)}</div>`:''}
+      <h1 data-doc-field="title">${wordEsc(t)}</h1>
+      <div class="pdf-provdatum" data-doc-field="date">${wordEsc(datum)}</div>
       <div class="pdf-huvudlinje"></div>
-      <div class="pdf-notice">BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER
-      KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS
-      SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.</div>
+      <div class="pdf-notice" data-doc-field="notice">${wordEsc(provNoticeText())}</div>
       <div class="pdf-max"><b>MAX:</b> ${tot} POÄNG</div>
       ${totalEndast?'':`<div class="pdf-fordelning">Poängfördelning: ${p.E} E &nbsp;·&nbsp; ${p.C} C &nbsp;·&nbsp; ${p.A} A</div>`}
-      <div class="pdf-instruktion">REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.</div>
+      <div class="pdf-instruktion" data-doc-field="instruction">${wordEsc(provInstruktionText())}</div>
     </div>`;
   }else{
-    const meta=[AKTIV?AKTIV.titel:'',kl,datum].filter(Boolean).join(' · ');
+    const kursMeta=AKTIV?AKTIV.titel:'';
     h=`<div class="pdf-ovningshuvud">
       <img src="${LOGO}" alt="Erik Dahlbergsgymnasiet">
       <div>
-        <h1>${wordEsc(t)}</h1>
-        ${meta?`<div class="pdf-ovningsmeta">${wordEsc(meta)}</div>`:''}
+        <h1 data-doc-field="title">${wordEsc(t)}</h1>
+        <div class="pdf-ovningsmeta"><span class="pdf-meta-course">${wordEsc(kursMeta)}</span><span class="pdf-meta-class" data-doc-field="class">${wordEsc(kl)}</span><span class="pdf-meta-date" data-doc-field="date">${wordEsc(datum)}</span></div>
         <div class="pdf-ovningsantal">${state.blad.length} uppgifter${totalEndast?` · ${tot} poäng`:''}</div>
       </div>
     </div>`;
@@ -8580,7 +8692,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     if(datum) children.push(new Paragraph({spacing:{after:100},children:[new TextRun({text:datum,bold:true,size:23,font:'Arial'})]}));
     children.push(new Paragraph({border:{bottom:{style:BorderStyle.SINGLE,size:8,color:'222222'}},spacing:{after:220},children:[new TextRun('')]}));
     children.push(new Paragraph({spacing:{after:120},children:[new TextRun({
-      text:'BETYGET PÅ DETTA PROV ÄR EN RIKTLINJE, EN PROGNOS, PÅ HUR VÄL ELEVEN UPPFYLLER KRITERIERNA FÖR ETT BETYG VID KURSENS SLUT. ETT BETYG PÅ HELA KURSEN SÄTTS VID KURSENS SLUT, INNAN DESS FINNS ALLTID MÖJLIGHET TILL FÖRBÄTTRING.',
+      text:provNoticeText(),
       size:17,font:'Arial'
     })]}));
     children.push(new Paragraph({spacing:{after:30},children:[
@@ -8620,7 +8732,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
             spacing:{before:0,after:0},
             indent:{left:70,right:70},
             children:[new TextRun({
-              text:'REDOVISA MED FULLSTÄNDIGA LÖSNINGAR OM INGET ANNAT ANGES. SKRIV SVAR.',
+              text:provInstruktionText(),
               bold:true,size:19,font:'Arial'
             })]
           })]
@@ -8851,6 +8963,7 @@ function uppdateraDokumenttyp(){
     if(hjalp) hjalp.checked=true;
   }
   if(typeof provRitaKontroller==='function') provRitaKontroller();
+  if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
   ritaBlad();
 }
 $('#bladTyp').addEventListener('change',uppdateraDokumenttyp);
@@ -8983,6 +9096,7 @@ if(document.readyState==='loading'){
 
 /* ── Initiering ── */
 $('#bDatum').value=new Date().toLocaleDateString('sv-SE');
+if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
 const DIREKTKURS=kursFrånAdress();
 ritaKursval();
 
@@ -9083,20 +9197,22 @@ if(DIREKTKURS){
    och då måste typeof-kontrollen fungera utan att kasta. */
 var SLUMPVAL={formaga:true,typ:true};
 var LAYOUT={avstand:9};
-var PROVDELAR=[{digitala:false}];
+var PROVDELAR=[{digitala:false,text:null}];
 const NIVARANG={E:0,C:1,A:2};
 
 const PROVDEL_BOKSTAVER=['A','B','C','D'];
 function provDelAntal(){ return Math.max(1,Math.min(4,PROVDELAR.length||1)); }
 function provDelNamn(i){ return 'Del '+(PROVDEL_BOKSTAVER[i]||String(i+1)); }
 function provDelText(i){
+  const egen=String(PROVDELAR[i]?.text??'').trim();
+  if(egen) return egen;
   return PROVDELAR[i]?.digitala
     ? 'Digitala hjälpmedel tillåtna'
     : 'Digitala hjälpmedel ej tillåtna';
 }
 function provSakerstallDelar(antal=provDelAntal()){
   antal=Math.max(1,Math.min(4,Math.round(+antal||1)));
-  while(PROVDELAR.length<antal) PROVDELAR.push({digitala:PROVDELAR.length>0});
+  while(PROVDELAR.length<antal) PROVDELAR.push({digitala:PROVDELAR.length>0,text:null});
   if(PROVDELAR.length>antal) PROVDELAR.length=antal;
   state.blad.forEach(x=>{
     const d=Math.max(0,Math.min(antal-1,Math.round(+x._provdel||0)));
@@ -9106,16 +9222,19 @@ function provSakerstallDelar(antal=provDelAntal()){
 }
 function provLaddaDelar(lista){
   PROVDELAR=Array.isArray(lista)&&lista.length
-    ? lista.slice(0,4).map((x,i)=>({digitala:typeof x==='boolean'
-        ? x
-        : Boolean(x?.digitala??x?.digitalaVerktyg??x?.digitalTools??x?.allowDigitalTools??(i>0))}))
-    : [{digitala:false}];
+    ? lista.slice(0,4).map((x,i)=>({
+        digitala:typeof x==='boolean'
+          ? x
+          : Boolean(x?.digitala??x?.digitalaVerktyg??x?.digitalTools??x?.allowDigitalTools??(i>0)),
+        text:typeof x==='object'&&x?((x.text??x.label??null)):null
+      }))
+    : [{digitala:false,text:null}];
   provSakerstallDelar(PROVDELAR.length);
   const val=document.getElementById('antalProvdelar');
   if(val) val.value=String(PROVDELAR.length);
 }
 function provAterstallDelar(){
-  PROVDELAR=[{digitala:false}];
+  PROVDELAR=[{digitala:false,text:null}];
   [...(DB?.bank||[]),...state.blad].forEach(x=>{ if(x) delete x._provdel; });
   const val=document.getElementById('antalProvdelar');
   if(val) val.value='1';
@@ -9141,7 +9260,7 @@ function provDelRubrikHTML(i,tom=false){
      Del A står först i dokumentet och ska förstås inte brytas dit. */
   const bryt=i>0?' style="break-before:page;page-break-before:always"':'';
   return '<div class="pdf-delhuvud'+(tom?' tom':'')+'" data-provdel="'+i+'"'+bryt+'>'+
-    '<strong>'+provDelNamn(i)+'.</strong> '+provDelText(i)+'</div>';
+    '<strong>'+provDelNamn(i)+'.</strong> <span data-provdeltext="'+i+'">'+wordEsc(provDelText(i))+'</span></div>';
 }
 function provRitaKontroller(){
   const panel=document.getElementById('provdelarPanel');
@@ -9479,7 +9598,7 @@ ritaBlad=function(){
     }
   });
   const layoutKnapp=document.getElementById('oppnaLayout');
-  if(layoutKnapp) layoutKnapp.disabled=!state.blad.length;
+  if(layoutKnapp) layoutKnapp.disabled=false;
   if(!document.getElementById('layoutred')?.hidden) layoutRita();
 };
 
@@ -9567,6 +9686,62 @@ const LR_HANDTAG=`<div class="lr-handtag" contenteditable="false">
   <button data-lr="bort" class="bort" title="Ta bort ur bladet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
 </div>`;
 
+function layoutAktiveraTextredigering(papper){
+  const fält={
+    title:{input:'bTitel',placeholder:'Dokumentets namn'},
+    class:{input:'bKlass',placeholder:'Klass'},
+    date:{input:'bDatum',placeholder:'Datum'},
+    notice:{state:'notice',placeholder:'Informationstext'},
+    instruction:{state:'instruction',placeholder:'Instruktion till eleverna'}
+  };
+  papper.querySelectorAll('[data-doc-field]').forEach(el=>{
+    const nyckel=el.dataset.docField, cfg=fält[nyckel];
+    if(!cfg) return;
+    el.contentEditable='true';
+    el.spellcheck=true;
+    el.classList.add('lr-redigerbar');
+    el.dataset.placeholder=cfg.placeholder||'';
+    el.title='Klicka för att redigera';
+    el.addEventListener('keydown',ev=>{
+      if(ev.key==='Enter'){ ev.preventDefault(); el.blur(); }
+      if(ev.key==='Escape'){ ev.preventDefault(); layoutRita(); }
+    });
+    el.addEventListener('blur',()=>{
+      const värde=(el.textContent||'').replace(/\s+/g,' ').trim();
+      if(cfg.input){
+        const input=document.getElementById(cfg.input);
+        if(input) input.value=värde;
+      }else if(cfg.state){
+        DOKTEXT[cfg.state]=värde;
+      }
+      uppdateraDokumentidentitet();
+      sparSchemalaggAutospar();
+      layoutRita();
+    });
+  });
+
+  papper.querySelectorAll('[data-provdeltext]').forEach(el=>{
+    const i=+el.dataset.provdeltext;
+    if(!PROVDELAR[i]) return;
+    el.contentEditable='true';
+    el.spellcheck=true;
+    el.classList.add('lr-redigerbar');
+    el.dataset.placeholder='Text för '+provDelNamn(i);
+    el.title='Klicka för att redigera texten för '+provDelNamn(i);
+    el.addEventListener('keydown',ev=>{
+      if(ev.key==='Enter'){ ev.preventDefault(); el.blur(); }
+      if(ev.key==='Escape'){ ev.preventDefault(); layoutRita(); }
+    });
+    el.addEventListener('blur',()=>{
+      const värde=(el.textContent||'').replace(/\s+/g,' ').trim();
+      PROVDELAR[i].text=värde||null;
+      provRitaKontroller();
+      sparSchemalaggAutospar();
+      layoutRita();
+    });
+  });
+}
+
 function layoutRita(){
   const papper=document.getElementById('lrPapper');
   if(!papper) return;
@@ -9579,6 +9754,7 @@ function layoutRita(){
   });
   if(typeof renderKatex==='function') renderKatex(papper);
   if(typeof stabiliseraPdfDeluppgifter==='function') stabiliseraPdfDeluppgifter(papper);
+  layoutAktiveraTextredigering(papper);
 
   /* Gränserna går att skriva i direkt på pappret. Tomt fält återgår till
      det automatiskt beräknade värdet. */
@@ -9628,7 +9804,6 @@ function layoutRita(){
 }
 
 function layoutOppna(){
-  if(!state.blad.length){ alert('Lägg först till minst en uppgift i bladet.'); return; }
   LR.hidden=false;
   document.body.style.overflow='hidden';
   const f=document.getElementById('lrFacit'), b=document.getElementById('taMedFacit');
