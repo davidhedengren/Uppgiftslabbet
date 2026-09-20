@@ -1,0 +1,1026 @@
+# Granskningslogg för Uppgiftslabbet
+
+- Skapad: 2026-09-20T19:03:48.365Z
+- Projektrot: `C:\Users\david\Documents\Agenten\GitHub\Uppgiftslabbet`
+- Kontrollerade banker: 7
+- Kontrollerade uppgifter: 13870
+- **ERROR:** 157
+- **WARNING:** 260
+- **INFO:** 1188
+
+## Allvarsnivåer
+
+- **ERROR**: hög säkerhet; brutet format, saknad obligatorisk metadata eller referens som inte kan lösas.
+- **WARNING**: sannolik avvikelse som behöver mänsklig bedömning.
+- **INFO**: osäker kvalitets-, likhets- eller tillgänglighetsobservation; aldrig ett säkert fel.
+
+## Format som kontrollerna bygger på
+
+- Kärnfält i samtliga sju banker: `id`, `kap`, `omr`, `niva`, `poang`, `t`, `s`, `familj`, `formaga`, `miniräknare`, `geogebra` och självrättningsmetadata.
+- Matematikbankernas spår lagras i arrayen `kurs`; fysikbankerna och Matematik fördjupning saknar normalt detta fält.
+- Poäng godtas både som `1/0/0` och `(1/0/0)`.
+- Nästlade arrayer tillåts i bland annat `rättSvar`, `självrättning`, `tolerans` och svarmetadata.
+- Deluppgifter kan använda `t` eller `fraga`; osäkra antalsskillnader rapporteras som WARNING.
+- Textlikhet är en heuristik: exakta normaliserade dubbletter är WARNING och talvarierade textmallar är INFO.
+
+## Sammanställning per bank
+
+| Bank | Struktur | Uppgifter | ERROR | WARNING | INFO |
+|---|---|---:|---:|---:|---:|
+| uppgifter.js | struktur.js | 2473 | 0 | 2 | 656 |
+| uppgifter2.js | struktur2.js | 854 | 0 | 0 | 30 |
+| uppgifterma1.js | strukturma1.js | 3371 | 0 | 23 | 164 |
+| uppgifterma2.js | strukturma2.js | 1779 | 9 | 184 | 87 |
+| uppgiftermatf1.js | strukturmatf1.js | 1136 | 0 | 1 | 68 |
+| uppgiftermato1.js | strukturmato1.js | 2632 | 148 | 38 | 139 |
+| uppgiftermato2.js | strukturmato2.js | 1625 | 0 | 12 | 44 |
+
+## Sammanställning per kontroll
+
+| Allvar | Kod | Antal |
+|---|---|---:|
+| ERROR | `UNKNOWN_CHAPTER_AREA` | 157 |
+| INFO | `SUSPECT_HTML` | 3 |
+| INFO | `SVG_ACCESSIBILITY` | 630 |
+| INFO | `VERY_SIMILAR_TEXT` | 555 |
+| WARNING | `ANSWER_METADATA_COUNT_MISMATCH` | 6 |
+| WARNING | `BROKEN_LATEX` | 1 |
+| WARNING | `COURSE_TAG_OUTSIDE_STRUCTURE_TRACK` | 25 |
+| WARNING | `EXACT_TEXT_DUPLICATE` | 64 |
+| WARNING | `MISSING_TOLERANCE_METADATA` | 2 |
+| WARNING | `RAW_DOLLAR_LATEX` | 5 |
+| WARNING | `SUBTASK_ANSWER_COUNT_MISMATCH` | 4 |
+| WARNING | `SUBTASK_SOLUTION_MISSING` | 153 |
+
+## ERROR
+
+### UNKNOWN_CHAPTER_AREA (157)
+
+- `uppgifterma2.js` · `2.666` · position 939: Kapitel/område 2/konjugatregeln finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.667` · position 940: Kapitel/område 2/konjugatregeln finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.668` · position 941: Kapitel/område 2/kvadreringsreglerna finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.669` · position 942: Kapitel/område 2/kvadreringsreglerna finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.670` · position 943: Kapitel/område 2/konjugatregeln finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.671` · position 944: Kapitel/område 2/konjugatregeln finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.672` · position 945: Kapitel/område 2/konjugatregeln finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.673` · position 946: Kapitel/område 2/kvadreringsreglerna finns inte som exakt par i strukturfilen.
+- `uppgifterma2.js` · `2.692` · position 965: Kapitel/område 2/andragradsekvationer finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.351` · position 690: Kapitel/område 2/extremvarden finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.521` · position 782: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.524` · position 784: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.527` · position 787: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.530` · position 790: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.531` · position 791: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.533` · position 793: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.03` · position 807: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.09` · position 813: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.15` · position 819: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.21` · position 825: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.27` · position 831: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.33` · position 837: Kapitel/område 3/polynom finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.39` · position 843: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.45` · position 849: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.51` · position 855: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.57` · position 861: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.63` · position 867: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.75` · position 879: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.99` · position 903: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.201` · position 1005: Kapitel/område 3/deriveringsregler finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.202` · position 1006: Kapitel/område 3/deriveringsregler finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.204` · position 1008: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.205` · position 1009: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.208` · position 1012: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.209` · position 1013: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.210` · position 1014: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.211` · position 1015: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.216` · position 1020: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.217` · position 1021: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.218` · position 1022: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.555` · position 1359: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.645` · position 1449: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.726` · position 1484: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.418` · position 1834: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.545` · position 1854: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.425` · position 1860: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.552` · position 1868: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `1.455` · position 1880: Kapitel/område 1/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `1.456` · position 1881: Kapitel/område 1/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.761` · position 1885: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.762` · position 1886: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.759` · position 1892: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.576` · position 1907: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.577` · position 1908: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.768` · position 1910: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.769` · position 1911: Kapitel/område 3/exponential_ln_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.770` · position 1912: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.771` · position 1913: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.774` · position 1916: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.776` · position 1918: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.688` · position 2108: Kapitel/område 2/extremvarden finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.689` · position 2109: Kapitel/område 2/extremvarden finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.710` · position 2130: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.711` · position 2131: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.718` · position 2138: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.719` · position 2139: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.723` · position 2143: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.727` · position 2147: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.728` · position 2148: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.791` · position 2165: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.795` · position 2169: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.798` · position 2172: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.799` · position 2173: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.803` · position 2177: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.804` · position 2178: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.807` · position 2181: Kapitel/område 3/polynom finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.808` · position 2182: Kapitel/område 3/polynom finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.812` · position 2186: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.816` · position 2190: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.817` · position 2191: Kapitel/område 3/gransvarde_kontinuitet finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.849` · position 2223: Kapitel/område 3/deriveringsregler finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.851` · position 2225: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.855` · position 2229: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.856` · position 2230: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.857` · position 2231: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.858` · position 2232: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.859` · position 2233: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.860` · position 2234: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.869` · position 2243: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.870` · position 2244: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.871` · position 2245: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1019` · position 2393: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1020` · position 2394: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1032` · position 2406: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1033` · position 2407: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.459` · position 2464: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.460` · position 2465: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.754` · position 2491: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.755` · position 2492: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.468` · position 2497: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.763` · position 2506: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `1.548` · position 2522: Kapitel/område 1/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `1.549` · position 2523: Kapitel/område 1/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `1.550` · position 2524: Kapitel/område 1/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1068` · position 2530: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1069` · position 2531: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1070` · position 2532: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1071` · position 2533: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1072` · position 2541: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1073` · position 2542: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.776` · position 2554: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.777` · position 2555: Kapitel/område 2/derivata_tillampningar finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.778` · position 2556: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `2.779` · position 2557: Kapitel/område 2/grafanalys_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1077` · position 2560: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1078` · position 2561: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1079` · position 2562: Kapitel/område 3/exponential_ln_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1080` · position 2563: Kapitel/område 3/exponential_ln_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1081` · position 2564: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1082` · position 2565: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1083` · position 2566: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1084` · position 2567: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1089` · position 2572: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1090` · position 2573: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1093` · position 2576: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1094` · position 2577: Kapitel/område 3/tangenter_derivata finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.473` · position 2602: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.474` · position 2603: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.475` · position 2604: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.476` · position 2605: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.477` · position 2606: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1119` · position 2607: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1120` · position 2608: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1121` · position 2609: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1122` · position 2610: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1123` · position 2611: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1124` · position 2612: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1125` · position 2613: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1126` · position 2614: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1127` · position 2615: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1128` · position 2616: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1129` · position 2617: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1130` · position 2618: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1131` · position 2619: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1132` · position 2620: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1133` · position 2621: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1134` · position 2622: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1135` · position 2623: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1136` · position 2624: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1137` · position 2625: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1138` · position 2626: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1139` · position 2627: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.478` · position 2628: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `4.479` · position 2629: Kapitel/område 4/analytisk_geometri finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1140` · position 2630: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1141` · position 2631: Kapitel/område 3/integral_egenskaper finns inte som exakt par i strukturfilen.
+- `uppgiftermato1.js` · `3.1142` · position 2632: Kapitel/område 3/area_med_integral finns inte som exakt par i strukturfilen.
+
+
+## WARNING
+
+### ANSWER_METADATA_COUNT_MISMATCH (6)
+
+- `uppgifterma1.js` · `4.24` · position 1515: 2 svar men 3 svarsetiketter.
+- `uppgifterma1.js` · `4.26` · position 1517: 1 svar men 2 svarsetiketter.
+- `uppgifterma1.js` · `4.44` · position 1534: 1 svar men 2 svarsetiketter.
+- `uppgifterma1.js` · `4.46` · position 1536: 1 svar men 3 svarsetiketter.
+- `uppgifterma1.js` · `4.107` · position 1596: 1 svar men 4 svarsetiketter.
+- `uppgifterma2.js` · `3.175` · position 1152: 2 svar men 3 svarsetiketter.
+
+### BROKEN_LATEX (1)
+
+- `uppgiftermato2.js` · `1.208` · position 214: s: obalanserade klamrar kan tyda på trasig LaTeX.
+
+### COURSE_TAG_OUTSIDE_STRUCTURE_TRACK (25)
+
+- `uppgifterma2.js` · `2.630` · position 903: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.383` · position 1360: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.384` · position 1361: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.385` · position 1362: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.386` · position 1363: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.387` · position 1364: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.388` · position 1365: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.389` · position 1366: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.390` · position 1367: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.391` · position 1368: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.392` · position 1369: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgifterma2.js` · `3.393` · position 1370: Taggen 2a används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `1.451` · position 338: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.416` · position 1832: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.417` · position 1833: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.426` · position 1875: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.427` · position 1876: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `1.462` · position 1888: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.428` · position 1890: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `1.534` · position 1995: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.442` · position 2447: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.469` · position 2515: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.470` · position 2516: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.471` · position 2517: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+- `uppgiftermato1.js` · `4.472` · position 2538: Taggen 1b används av uppgiften men saknas för området i SPAR-strukturen.
+
+### EXACT_TEXT_DUPLICATE (64)
+
+- `uppgifter.js` · `3.240` · position 239: Exakt normaliserad uppgiftstext delas av 3.240, 3.242.
+- `uppgifter.js` · `3.265` · position 2248: Exakt normaliserad uppgiftstext delas av 3.265, 3.268.
+- `uppgifterma1.js` · `1.959` · position 772: Exakt normaliserad uppgiftstext delas av 1.959, 1.1073.
+- `uppgifterma1.js` · `2.100` · position 882: Exakt normaliserad uppgiftstext delas av 2.100, 2.136.
+- `uppgifterma1.js` · `2.177` · position 959: Exakt normaliserad uppgiftstext delas av 2.177, 2.206.
+- `uppgifterma1.js` · `5.71` · position 1813: Exakt normaliserad uppgiftstext delas av 5.71, 5.77, 5.166.
+- `uppgifterma1.js` · `2.458` · position 2792: Exakt normaliserad uppgiftstext delas av 2.458, 2.461.
+- `uppgifterma1.js` · `2.459` · position 2793: Exakt normaliserad uppgiftstext delas av 2.459, 2.462.
+- `uppgifterma1.js` · `2.464` · position 2798: Exakt normaliserad uppgiftstext delas av 2.464, 2.465, 2.466, 2.467, 2.468.
+- `uppgifterma1.js` · `2.469` · position 2803: Exakt normaliserad uppgiftstext delas av 2.469, 2.470.
+- `uppgifterma1.js` · `2.471` · position 2805: Exakt normaliserad uppgiftstext delas av 2.471, 2.472, 2.473.
+- `uppgifterma1.js` · `2.477` · position 2811: Exakt normaliserad uppgiftstext delas av 2.477, 2.478, 2.479.
+- `uppgifterma1.js` · `4.423` · position 3001: Exakt normaliserad uppgiftstext delas av 4.423, 4.424, 4.425, 4.426, 4.427.
+- `uppgifterma1.js` · `4.428` · position 3006: Exakt normaliserad uppgiftstext delas av 4.428, 4.429.
+- `uppgifterma1.js` · `4.436` · position 3014: Exakt normaliserad uppgiftstext delas av 4.436, 4.437, 4.438, 4.439, 4.440, 4.441, 4.442.
+- `uppgifterma2.js` · `1.57` · position 57: Exakt normaliserad uppgiftstext delas av 1.57, 1.103.
+- `uppgifterma2.js` · `1.88` · position 88: Exakt normaliserad uppgiftstext delas av 1.88, 1.312.
+- `uppgifterma2.js` · `1.303` · position 264: Exakt normaliserad uppgiftstext delas av 1.303, 1.304, 1.305.
+- `uppgifterma2.js` · `2.19` · position 292: Exakt normaliserad uppgiftstext delas av 2.19, 2.376.
+- `uppgifterma2.js` · `2.86` · position 359: Exakt normaliserad uppgiftstext delas av 2.86, 2.144.
+- `uppgifterma2.js` · `2.167` · position 440: Exakt normaliserad uppgiftstext delas av 2.167, 2.572.
+- `uppgifterma2.js` · `2.229` · position 502: Exakt normaliserad uppgiftstext delas av 2.229, 2.702.
+- `uppgifterma2.js` · `2.235` · position 508: Exakt normaliserad uppgiftstext delas av 2.235, 2.695.
+- `uppgifterma2.js` · `2.293` · position 566: Exakt normaliserad uppgiftstext delas av 2.293, 2.704.
+- `uppgifterma2.js` · `2.530` · position 803: Exakt normaliserad uppgiftstext delas av 2.530, 2.589.
+- `uppgifterma2.js` · `3.10` · position 988: Exakt normaliserad uppgiftstext delas av 3.10, 3.20, 3.49, 3.70, 3.89, 3.166.
+- `uppgifterma2.js` · `3.306` · position 1283: Exakt normaliserad uppgiftstext delas av 3.306, 3.330, 3.384.
+- `uppgifterma2.js` · `3.309` · position 1286: Exakt normaliserad uppgiftstext delas av 3.309, 3.353.
+- `uppgifterma2.js` · `3.363` · position 1340: Exakt normaliserad uppgiftstext delas av 3.363, 3.364, 3.365, 3.366, 3.367, 3.368, 3.369, 3.370, 3.371, 3.372, 3.379, 3.381.
+- `uppgifterma2.js` · `3.373` · position 1350: Exakt normaliserad uppgiftstext delas av 3.373, 3.374, 3.378, 3.380.
+- `uppgifterma2.js` · `4.194` · position 1563: Exakt normaliserad uppgiftstext delas av 4.194, 4.209.
+- `uppgiftermatf1.js` · `1.480` · position 874: Exakt normaliserad uppgiftstext delas av 1.480, 1.568.
+- `uppgiftermato1.js` · `1.27` · position 27: Exakt normaliserad uppgiftstext delas av 1.27, 1.32.
+- `uppgiftermato1.js` · `1.69` · position 69: Exakt normaliserad uppgiftstext delas av 1.69, 1.74.
+- `uppgiftermato1.js` · `1.107` · position 107: Exakt normaliserad uppgiftstext delas av 1.107, 1.281.
+- `uppgiftermato1.js` · `2.39` · position 378: Exakt normaliserad uppgiftstext delas av 2.39, 2.43.
+- `uppgiftermato1.js` · `2.55` · position 394: Exakt normaliserad uppgiftstext delas av 2.55, 2.79.
+- `uppgiftermato1.js` · `2.85` · position 424: Exakt normaliserad uppgiftstext delas av 2.85, 2.90, 2.95, 2.100, 2.105, 2.110, 2.115, 2.120.
+- `uppgiftermato1.js` · `2.113` · position 452: Exakt normaliserad uppgiftstext delas av 2.113, 2.415.
+- `uppgiftermato1.js` · `3.29` · position 833: Exakt normaliserad uppgiftstext delas av 3.29, 3.35.
+- `uppgiftermato1.js` · `3.73` · position 877: Exakt normaliserad uppgiftstext delas av 3.73, 3.79.
+- `uppgiftermato1.js` · `3.107` · position 911: Exakt normaliserad uppgiftstext delas av 3.107, 3.316.
+- `uppgiftermato1.js` · `4.31` · position 1532: Exakt normaliserad uppgiftstext delas av 4.31, 4.36.
+- `uppgiftermato1.js` · `2.555` · position 1873: Exakt normaliserad uppgiftstext delas av 2.555, 2.556.
+- `uppgiftermato1.js` · `2.627` · position 2047: Exakt normaliserad uppgiftstext delas av 2.627, 2.634.
+- `uppgiftermato1.js` · `2.647` · position 2067: Exakt normaliserad uppgiftstext delas av 2.647, 2.655.
+- `uppgiftermato1.js` · `2.727` · position 2147: Exakt normaliserad uppgiftstext delas av 2.727, 3.824.
+- `uppgiftermato1.js` · `3.862` · position 2236: Exakt normaliserad uppgiftstext delas av 3.862, 3.997.
+- `uppgiftermato1.js` · `3.864` · position 2238: Exakt normaliserad uppgiftstext delas av 3.864, 3.945.
+- `uppgiftermato1.js` · `3.888` · position 2262: Exakt normaliserad uppgiftstext delas av 3.888, 3.926.
+- `uppgiftermato1.js` · `3.899` · position 2273: Exakt normaliserad uppgiftstext delas av 3.899, 3.1011.
+- `uppgiftermato1.js` · `3.1015` · position 2389: Exakt normaliserad uppgiftstext delas av 3.1015, 3.1063.
+- `uppgiftermato1.js` · `3.1033` · position 2407: Exakt normaliserad uppgiftstext delas av 3.1033, 3.1078.
+- `uppgiftermato2.js` · `1.215` · position 124: Exakt normaliserad uppgiftstext delas av 1.215, 1.253.
+- `uppgiftermato2.js` · `1.06` · position 160: Exakt normaliserad uppgiftstext delas av 1.06, 1.197, 1.242, 1.243, 1.244.
+- `uppgiftermato2.js` · `1.198` · position 202: Exakt normaliserad uppgiftstext delas av 1.198, 1.245.
+- `uppgiftermato2.js` · `1.200` · position 204: Exakt normaliserad uppgiftstext delas av 1.200, 1.241.
+- `uppgiftermato2.js` · `1.201` · position 206: Exakt normaliserad uppgiftstext delas av 1.201, 1.240, 1.290.
+- `uppgiftermato2.js` · `3.436` · position 1192: Exakt normaliserad uppgiftstext delas av 3.436, 3.194.
+- `uppgiftermato2.js` · `3.440` · position 1207: Exakt normaliserad uppgiftstext delas av 3.440, 3.197.
+- `uppgiftermato2.js` · `4.224` · position 1272: Exakt normaliserad uppgiftstext delas av 4.224, 4.232.
+- `uppgiftermato2.js` · `4.247` · position 1423: Exakt normaliserad uppgiftstext delas av 4.247, 4.248, 4.249.
+- `uppgiftermato2.js` · `4.259` · position 1499: Exakt normaliserad uppgiftstext delas av 4.259, 4.261.
+- `uppgiftermato2.js` · `4.260` · position 1500: Exakt normaliserad uppgiftstext delas av 4.260, 4.262.
+
+### MISSING_TOLERANCE_METADATA (2)
+
+- `uppgifterma2.js` · `2.537` · position 810: Fältet tolerans saknas; använd null när tolerans inte är relevant.
+- `uppgifterma2.js` · `2.538` · position 811: Fältet tolerans saknas; använd null när tolerans inte är relevant.
+
+### RAW_DOLLAR_LATEX (5)
+
+- `uppgifterma1.js` · `6.46` · position 2077: s: rå dollar-LaTeX avviker från projektets delimiterformat.
+- `uppgifterma1.js` · `7.118` · position 2307: t: rå dollar-LaTeX avviker från projektets delimiterformat.
+- `uppgifterma1.js` · `7.118` · position 2307: s: rå dollar-LaTeX avviker från projektets delimiterformat.
+- `uppgifterma1.js` · `7.119` · position 2308: t: rå dollar-LaTeX avviker från projektets delimiterformat.
+- `uppgifterma1.js` · `7.119` · position 2308: s: rå dollar-LaTeX avviker från projektets delimiterformat.
+
+### SUBTASK_ANSWER_COUNT_MISMATCH (4)
+
+- `uppgiftermato1.js` · `1.02` · position 2: 2 spelDelar men 3 svar på toppnivå.
+- `uppgiftermato1.js` · `1.19` · position 19: 2 spelDelar men 3 svar på toppnivå.
+- `uppgiftermato1.js` · `1.27` · position 27: 2 spelDelar men 3 svar på toppnivå.
+- `uppgiftermato1.js` · `1.32` · position 32: 2 spelDelar men 3 svar på toppnivå.
+
+### SUBTASK_SOLUTION_MISSING (153)
+
+- `uppgifterma2.js` · `2.261` · position 534: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.261` · position 534: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.261` · position 534: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.273` · position 546: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.273` · position 546: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.273` · position 546: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.297` · position 570: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.297` · position 570: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.297` · position 570: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.300` · position 573: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.300` · position 573: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.300` · position 573: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.300` · position 573: Deluppgift 4 saknar facitfältet s.
+- `uppgifterma2.js` · `2.308` · position 581: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.308` · position 581: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.310` · position 583: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.310` · position 583: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.311` · position 584: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.311` · position 584: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.313` · position 586: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.313` · position 586: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.313` · position 586: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.313` · position 586: Deluppgift 4 saknar facitfältet s.
+- `uppgifterma2.js` · `2.319` · position 592: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.319` · position 592: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.330` · position 603: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.330` · position 603: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.333` · position 606: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.333` · position 606: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.336` · position 609: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.336` · position 609: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.347` · position 620: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.347` · position 620: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.354` · position 627: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.354` · position 627: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.361` · position 634: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.361` · position 634: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.363` · position 636: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.363` · position 636: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.363` · position 636: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.365` · position 638: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.365` · position 638: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.370` · position 643: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.370` · position 643: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.385` · position 658: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.385` · position 658: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.387` · position 660: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.387` · position 660: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.389` · position 662: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.389` · position 662: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.390` · position 663: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.390` · position 663: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.393` · position 666: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.393` · position 666: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.393` · position 666: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.395` · position 668: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.395` · position 668: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.397` · position 670: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.397` · position 670: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.397` · position 670: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.401` · position 674: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.401` · position 674: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.402` · position 675: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.402` · position 675: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.402` · position 675: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.404` · position 677: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.404` · position 677: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.404` · position 677: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.407` · position 680: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.407` · position 680: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.411` · position 684: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.411` · position 684: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.413` · position 686: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.413` · position 686: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.414` · position 687: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.414` · position 687: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.414` · position 687: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.416` · position 689: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.416` · position 689: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.416` · position 689: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.419` · position 692: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.419` · position 692: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.419` · position 692: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.420` · position 693: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.420` · position 693: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.421` · position 694: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.421` · position 694: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.425` · position 698: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.425` · position 698: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.425` · position 698: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.426` · position 699: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.426` · position 699: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.426` · position 699: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.427` · position 700: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.427` · position 700: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.427` · position 700: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.428` · position 701: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.428` · position 701: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.428` · position 701: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.429` · position 702: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.429` · position 702: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.430` · position 703: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.430` · position 703: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.431` · position 704: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.431` · position 704: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.433` · position 706: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.433` · position 706: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.433` · position 706: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.434` · position 707: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.434` · position 707: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.434` · position 707: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.436` · position 709: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.436` · position 709: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.436` · position 709: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.437` · position 710: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.437` · position 710: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.437` · position 710: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.439` · position 712: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.439` · position 712: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.444` · position 717: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.444` · position 717: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.445` · position 718: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.445` · position 718: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.459` · position 732: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.459` · position 732: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.460` · position 733: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.460` · position 733: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.461` · position 734: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.461` · position 734: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.462` · position 735: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.462` · position 735: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.463` · position 736: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.463` · position 736: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.463` · position 736: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.464` · position 737: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.464` · position 737: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.493` · position 766: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.493` · position 766: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.495` · position 768: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.495` · position 768: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.495` · position 768: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.506` · position 779: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.506` · position 779: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.507` · position 780: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.507` · position 780: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.507` · position 780: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `2.521` · position 794: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `2.521` · position 794: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `2.521` · position 794: Deluppgift 3 saknar facitfältet s.
+- `uppgifterma2.js` · `3.03` · position 981: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `3.03` · position 981: Deluppgift 2 saknar facitfältet s.
+- `uppgifterma2.js` · `3.05` · position 983: Deluppgift 1 saknar facitfältet s.
+- `uppgifterma2.js` · `3.05` · position 983: Deluppgift 2 saknar facitfältet s.
+
+
+## INFO
+
+### SUSPECT_HTML (3)
+
+- `uppgifter.js` · `4.79` · position 525: s: blockelement ligger inuti <p> och är browser-tolererat men formellt misstänkt.
+- `uppgifter.js` · `6.117` · position 1227: t: blockelement ligger inuti <p> och är browser-tolererat men formellt misstänkt.
+- `uppgifter.js` · `6.117` · position 1227: spelIntro: blockelement ligger inuti <p> och är browser-tolererat men formellt misstänkt.
+
+### SVG_ACCESSIBILITY (630)
+
+- `uppgifter.js` · `2.23` · position 51: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.24` · position 52: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.25` · position 53: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.31` · position 66: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.31` · position 66: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.40` · position 79: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.43` · position 82: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.50` · position 107: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.83` · position 154: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.88` · position 159: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.123` · position 195: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.126` · position 198: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.128` · position 200: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.129` · position 201: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.133` · position 205: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.134` · position 206: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.139` · position 211: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.143` · position 215: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `2.143` · position 215: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.1` · position 224: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.1` · position 224: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.4` · position 228: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.5` · position 229: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.8` · position 233: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.10` · position 235: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.11` · position 236: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.11` · position 236: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.13` · position 238: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.13` · position 238: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.15` · position 241: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.15` · position 241: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.16` · position 242: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.16` · position 242: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.20` · position 247: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.20` · position 247: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.21` · position 249: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.21` · position 249: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.23` · position 251: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.23` · position 251: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.25` · position 253: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.26` · position 254: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.26` · position 254: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.27` · position 255: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.29` · position 257: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.33` · position 262: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.33` · position 262: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.34` · position 263: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.34` · position 263: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.35` · position 265: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.35` · position 265: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.36` · position 266: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.36` · position 266: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.37` · position 267: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.37` · position 267: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.39` · position 269: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.39` · position 269: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.40` · position 270: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.40` · position 270: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.41` · position 272: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.45` · position 277: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.47` · position 279: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.47` · position 279: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.50` · position 283: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.50` · position 283: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.55` · position 289: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.55` · position 289: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.61` · position 296: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.62` · position 297: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.62` · position 297: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.66` · position 302: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.66` · position 302: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.69` · position 305: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.70` · position 306: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.71` · position 307: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.71` · position 307: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.73` · position 309: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.73` · position 309: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.75` · position 311: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.76` · position 312: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.77` · position 313: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.77` · position 313: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.80` · position 316: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.80` · position 316: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.84` · position 320: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.84` · position 320: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.87` · position 323: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.87` · position 323: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.91` · position 327: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.91` · position 327: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.93` · position 329: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.93` · position 329: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.106` · position 344: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.106` · position 344: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.107` · position 346: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.107` · position 346: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.109` · position 348: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.110` · position 349: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.111` · position 350: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.117` · position 358: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.120` · position 362: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.120` · position 362: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.121` · position 363: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.121` · position 363: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.122` · position 364: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.123` · position 365: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.131` · position 374: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.131` · position 374: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.135` · position 379: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.135` · position 379: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.137` · position 381: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.137` · position 381: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.138` · position 382: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.138` · position 382: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.139` · position 383: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.140` · position 385: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.140` · position 385: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.141` · position 386: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.143` · position 389: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.143` · position 389: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.144` · position 390: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.145` · position 391: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.145` · position 391: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.146` · position 392: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.146` · position 392: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.147` · position 393: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.148` · position 394: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.148` · position 394: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.150` · position 396: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.152` · position 398: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.160` · position 406: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.161` · position 407: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.163` · position 409: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.163` · position 409: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.166` · position 412: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.166` · position 412: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.168` · position 414: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.168` · position 414: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.169` · position 415: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `3.169` · position 415: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.1` · position 420: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.1` · position 420: s: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.2` · position 421: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.2` · position 421: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.4` · position 423: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.4` · position 423: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.6` · position 425: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.7` · position 426: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.10` · position 432: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.10` · position 432: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.11` · position 433: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.11` · position 433: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.12` · position 434: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.14` · position 436: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.15` · position 437: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.20` · position 444: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.20` · position 444: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.31` · position 464: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.31` · position 464: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.33` · position 466: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.33` · position 466: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.38` · position 473: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.39` · position 476: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.40` · position 479: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.41` · position 480: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.44` · position 485: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.44` · position 485: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.45` · position 486: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.45` · position 486: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.46` · position 487: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.46` · position 487: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.49` · position 490: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.50` · position 492: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.50` · position 492: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.51` · position 493: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.51` · position 493: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.52` · position 494: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.53` · position 495: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.53` · position 495: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.55` · position 497: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.56` · position 498: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.59` · position 501: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.59` · position 501: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.61` · position 504: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.61` · position 504: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.62` · position 505: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.62` · position 505: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.63` · position 506: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.63` · position 506: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.66` · position 510: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.67` · position 511: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.68` · position 512: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.69` · position 513: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.70` · position 514: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.70` · position 514: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.71` · position 515: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.71` · position 515: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.73` · position 517: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.73` · position 517: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.76` · position 522: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.76` · position 522: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.78` · position 524: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.79` · position 525: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.83` · position 528: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.85` · position 530: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.85` · position 530: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.86` · position 531: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.87` · position 532: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.87` · position 532: s: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.88` · position 533: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.88` · position 533: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.90` · position 535: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.92` · position 537: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.93` · position 538: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.93` · position 538: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.94` · position 539: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.95` · position 541: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.96` · position 542: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.96` · position 542: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.98` · position 544: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.98` · position 544: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.100` · position 546: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.106` · position 553: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.108` · position 555: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.109` · position 556: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.109` · position 556: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.110` · position 558: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.114` · position 562: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.115` · position 563: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.115` · position 563: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.116` · position 564: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.120` · position 569: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.123` · position 573: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.123` · position 573: s: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.125` · position 576: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.126` · position 577: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.128` · position 579: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.130` · position 580: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.130` · position 580: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.131` · position 582: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.131` · position 582: spelIntro: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.132` · position 583: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.133` · position 585: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.134` · position 586: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.135` · position 588: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.136` · position 590: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.137` · position 592: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.139` · position 594: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.141` · position 597: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.142` · position 599: t: SVG saknar role="img", aria-label och <title>.
+- `uppgifter.js` · `4.143` · position 600: t: SVG saknar role="img", aria-label och <title>.
+- … 380 ytterligare fynd utelämnade ur detaljlistan; totalsiffran ovan omfattar dem.
+
+### VERY_SIMILAR_TEXT (555)
+
+- `uppgifter.js` · `2.230` · position 7: Mycket lik textmall (främst tal skiljer) delas av 2.230, 2.231.
+- `uppgifter.js` · `5.278` · position 838: Mycket lik textmall (främst tal skiljer) delas av 5.278, 5.310.
+- `uppgifter.js` · `6.222` · position 1030: Mycket lik textmall (främst tal skiljer) delas av 6.222, 6.223.
+- `uppgifter.js` · `6.235` · position 1129: Mycket lik textmall (främst tal skiljer) delas av 6.235, 6.243.
+- `uppgifter.js` · `7.72` · position 1313: Mycket lik textmall (främst tal skiljer) delas av 7.72, 7.55.
+- `uppgifter.js` · `8.244` · position 1399: Mycket lik textmall (främst tal skiljer) delas av 8.244, 8.246, 8.248.
+- `uppgifter.js` · `8.245` · position 1404: Mycket lik textmall (främst tal skiljer) delas av 8.245, 8.247.
+- `uppgifter.js` · `8.222` · position 1453: Mycket lik textmall (främst tal skiljer) delas av 8.222, 8.224, 8.226, 8.228, 8.230, 8.232.
+- `uppgifter.js` · `8.223` · position 1486: Mycket lik textmall (främst tal skiljer) delas av 8.223, 8.225, 8.227, 8.229, 8.231, 8.233.
+- `uppgifter.js` · `8.305` · position 1496: Mycket lik textmall (främst tal skiljer) delas av 8.305, 8.306, 8.307, 8.308, 8.309.
+- `uppgifter.js` · `8.196` · position 1520: Mycket lik textmall (främst tal skiljer) delas av 8.196, 8.198, 8.200.
+- `uppgifter.js` · `8.83` · position 1521: Mycket lik textmall (främst tal skiljer) delas av 8.83, 8.110.
+- `uppgifter.js` · `8.197` · position 1523: Mycket lik textmall (främst tal skiljer) delas av 8.197, 8.199.
+- `uppgifter.js` · `8.249` · position 1527: Mycket lik textmall (främst tal skiljer) delas av 8.249, 8.250, 8.251.
+- `uppgifter.js` · `8.234` · position 1547: Mycket lik textmall (främst tal skiljer) delas av 8.234, 8.237, 8.240, 8.243.
+- `uppgifter.js` · `8.235` · position 1548: Mycket lik textmall (främst tal skiljer) delas av 8.235, 8.238, 8.241.
+- `uppgifter.js` · `8.337` · position 1555: Mycket lik textmall (främst tal skiljer) delas av 8.337, 8.339, 8.341, 8.343, 8.345.
+- `uppgifter.js` · `8.338` · position 1556: Mycket lik textmall (främst tal skiljer) delas av 8.338, 8.340, 8.342, 8.344, 8.346.
+- `uppgifter.js` · `8.349` · position 1575: Mycket lik textmall (främst tal skiljer) delas av 8.349, 8.352, 8.355, 8.358.
+- `uppgifter.js` · `8.350` · position 1576: Mycket lik textmall (främst tal skiljer) delas av 8.350, 8.353, 8.356, 8.359.
+- `uppgifter.js` · `8.351` · position 1587: Mycket lik textmall (främst tal skiljer) delas av 8.351, 8.354, 8.357, 8.360.
+- `uppgifter.js` · `8.272` · position 1600: Mycket lik textmall (främst tal skiljer) delas av 8.272, 8.274.
+- `uppgifter.js` · `8.313` · position 1607: Mycket lik textmall (främst tal skiljer) delas av 8.313, 8.316, 8.319.
+- `uppgifter.js` · `8.252` · position 1616: Mycket lik textmall (främst tal skiljer) delas av 8.252, 8.253, 8.254, 8.255, 8.256.
+- `uppgifter.js` · `8.273` · position 1634: Mycket lik textmall (främst tal skiljer) delas av 8.273, 8.275, 8.277, 8.279, 8.281, 8.283.
+- `uppgifter.js` · `8.284` · position 1651: Mycket lik textmall (främst tal skiljer) delas av 8.284, 8.287, 8.290, 8.293.
+- `uppgifter.js` · `8.286` · position 1655: Mycket lik textmall (främst tal skiljer) delas av 8.286, 8.289, 8.292.
+- `uppgifter.js` · `8.314` · position 1669: Mycket lik textmall (främst tal skiljer) delas av 8.314, 8.317, 8.320.
+- `uppgifter.js` · `9.133` · position 1784: Mycket lik textmall (främst tal skiljer) delas av 9.133, 9.135.
+- `uppgifter.js` · `9.134` · position 1789: Mycket lik textmall (främst tal skiljer) delas av 9.134, 9.136, 9.138.
+- `uppgifter.js` · `9.169` · position 1797: Mycket lik textmall (främst tal skiljer) delas av 9.169, 9.171.
+- `uppgifter.js` · `9.144` · position 1865: Mycket lik textmall (främst tal skiljer) delas av 9.144, 9.147, 9.150.
+- `uppgifter.js` · `9.170` · position 1880: Mycket lik textmall (främst tal skiljer) delas av 9.170, 9.174, 9.178, 9.182.
+- `uppgifter.js` · `9.172` · position 1883: Mycket lik textmall (främst tal skiljer) delas av 9.172, 9.176, 9.180.
+- `uppgifter.js` · `9.184` · position 1899: Mycket lik textmall (främst tal skiljer) delas av 9.184, 9.187, 9.190, 9.193.
+- `uppgifter.js` · `9.185` · position 1901: Mycket lik textmall (främst tal skiljer) delas av 9.185, 9.188, 9.191, 9.194.
+- `uppgifter.js` · `9.186` · position 1902: Mycket lik textmall (främst tal skiljer) delas av 9.186, 9.189.
+- `uppgifter.js` · `8.202` · position 1963: Mycket lik textmall (främst tal skiljer) delas av 8.202, 8.205.
+- `uppgifter.js` · `8.203` · position 1966: Mycket lik textmall (främst tal skiljer) delas av 8.203, 8.206.
+- `uppgifter.js` · `9.100` · position 1982: Mycket lik textmall (främst tal skiljer) delas av 9.100, 9.101.
+- `uppgifter.js` · `9.199` · position 1984: Mycket lik textmall (främst tal skiljer) delas av 9.199, 9.200, 9.201.
+- `uppgifter.js` · `8.183` · position 2043: Mycket lik textmall (främst tal skiljer) delas av 8.183, 8.184.
+- `uppgifter.js` · `8.185` · position 2046: Mycket lik textmall (främst tal skiljer) delas av 8.185, 8.186.
+- `uppgifter2.js` · `2.117` · position 181: Mycket lik textmall (främst tal skiljer) delas av 2.117, 2.118.
+- `uppgifter2.js` · `3.123` · position 337: Mycket lik textmall (främst tal skiljer) delas av 3.123, 3.124, 3.125.
+- `uppgifter2.js` · `3.127` · position 341: Mycket lik textmall (främst tal skiljer) delas av 3.127, 3.128.
+- `uppgifter2.js` · `6.62` · position 545: Mycket lik textmall (främst tal skiljer) delas av 6.62, 6.63.
+- `uppgifter2.js` · `2.194` · position 552: Mycket lik textmall (främst tal skiljer) delas av 2.194, 2.195.
+- `uppgifter2.js` · `2.196` · position 554: Mycket lik textmall (främst tal skiljer) delas av 2.196, 2.197.
+- `uppgifter2.js` · `6.59` · position 562: Mycket lik textmall (främst tal skiljer) delas av 6.59, 6.60.
+- `uppgifter2.js` · `4.64` · position 572: Mycket lik textmall (främst tal skiljer) delas av 4.64, 4.65, 4.66.
+- `uppgifter2.js` · `1.83` · position 582: Mycket lik textmall (främst tal skiljer) delas av 1.83, 1.84.
+- `uppgifter2.js` · `2.180` · position 589: Mycket lik textmall (främst tal skiljer) delas av 2.180, 2.181.
+- `uppgifter2.js` · `3.115` · position 598: Mycket lik textmall (främst tal skiljer) delas av 3.115, 3.116, 3.117.
+- `uppgifter2.js` · `3.120` · position 603: Mycket lik textmall (främst tal skiljer) delas av 3.120, 3.121.
+- `uppgifter2.js` · `3.137` · position 608: Mycket lik textmall (främst tal skiljer) delas av 3.137, 3.138.
+- `uppgifter2.js` · `3.130` · position 612: Mycket lik textmall (främst tal skiljer) delas av 3.130, 3.131, 3.132.
+- `uppgifter2.js` · `3.133` · position 615: Mycket lik textmall (främst tal skiljer) delas av 3.133, 3.134.
+- `uppgifter2.js` · `3.140` · position 642: Mycket lik textmall (främst tal skiljer) delas av 3.140, 3.141.
+- `uppgifter2.js` · `3.142` · position 644: Mycket lik textmall (främst tal skiljer) delas av 3.142, 3.143.
+- `uppgifter2.js` · `4.68` · position 671: Mycket lik textmall (främst tal skiljer) delas av 4.68, 4.69.
+- `uppgifter2.js` · `4.72` · position 676: Mycket lik textmall (främst tal skiljer) delas av 4.72, 4.73, 4.339, 4.341.
+- `uppgifter2.js` · `5.61` · position 684: Mycket lik textmall (främst tal skiljer) delas av 5.61, 5.62.
+- `uppgifter2.js` · `2.186` · position 689: Mycket lik textmall (främst tal skiljer) delas av 2.186, 2.187, 2.188.
+- `uppgifter2.js` · `2.189` · position 692: Mycket lik textmall (främst tal skiljer) delas av 2.189, 2.190, 2.191.
+- `uppgifter2.js` · `4.326` · position 761: Mycket lik textmall (främst tal skiljer) delas av 4.326, 4.327.
+- `uppgifter2.js` · `4.329` · position 764: Mycket lik textmall (främst tal skiljer) delas av 4.329, 4.330, 4.331.
+- `uppgifter2.js` · `4.332` · position 767: Mycket lik textmall (främst tal skiljer) delas av 4.332, 4.333.
+- `uppgifter2.js` · `4.337` · position 770: Mycket lik textmall (främst tal skiljer) delas av 4.337, 4.338.
+- `uppgifter2.js` · `4.342` · position 776: Mycket lik textmall (främst tal skiljer) delas av 4.342, 4.343.
+- `uppgifter2.js` · `4.345` · position 780: Mycket lik textmall (främst tal skiljer) delas av 4.345, 4.346.
+- `uppgifter2.js` · `4.350` · position 783: Mycket lik textmall (främst tal skiljer) delas av 4.350, 4.351.
+- `uppgifter2.js` · `4.352` · position 785: Mycket lik textmall (främst tal skiljer) delas av 4.352, 4.353.
+- `uppgifterma1.js` · `0.01` · position 1: Mycket lik textmall (främst tal skiljer) delas av 0.01, 0.04, 0.07, 0.10, 0.13.
+- `uppgifterma1.js` · `0.02` · position 2: Mycket lik textmall (främst tal skiljer) delas av 0.02, 0.32.
+- `uppgifterma1.js` · `0.08` · position 8: Mycket lik textmall (främst tal skiljer) delas av 0.08, 0.11, 0.17.
+- `uppgifterma1.js` · `0.15` · position 15: Mycket lik textmall (främst tal skiljer) delas av 0.15, 0.18, 0.39, 0.42, 0.120.
+- `uppgifterma1.js` · `0.21` · position 21: Mycket lik textmall (främst tal skiljer) delas av 0.21, 0.24.
+- `uppgifterma1.js` · `0.57` · position 57: Mycket lik textmall (främst tal skiljer) delas av 0.57, 0.75, 0.78.
+- `uppgifterma1.js` · `0.79` · position 79: Mycket lik textmall (främst tal skiljer) delas av 0.79, 0.82.
+- `uppgifterma1.js` · `0.97` · position 97: Mycket lik textmall (främst tal skiljer) delas av 0.97, 0.100.
+- `uppgifterma1.js` · `0.143` · position 143: Mycket lik textmall (främst tal skiljer) delas av 0.143, 1.272.
+- `uppgifterma1.js` · `0.176` · position 176: Mycket lik textmall (främst tal skiljer) delas av 0.176, 0.177.
+- `uppgifterma1.js` · `0.178` · position 178: Mycket lik textmall (främst tal skiljer) delas av 0.178, 0.179, 0.718, 0.719.
+- `uppgifterma1.js` · `0.180` · position 180: Mycket lik textmall (främst tal skiljer) delas av 0.180, 0.185, 0.717, 0.721.
+- `uppgifterma1.js` · `0.181` · position 181: Mycket lik textmall (främst tal skiljer) delas av 0.181, 0.720.
+- `uppgifterma1.js` · `0.182` · position 182: Mycket lik textmall (främst tal skiljer) delas av 0.182, 0.722.
+- `uppgifterma1.js` · `0.183` · position 183: Mycket lik textmall (främst tal skiljer) delas av 0.183, 0.726.
+- `uppgifterma1.js` · `0.184` · position 184: Mycket lik textmall (främst tal skiljer) delas av 0.184, 0.725.
+- `uppgifterma1.js` · `0.195` · position 195: Mycket lik textmall (främst tal skiljer) delas av 0.195, 0.196.
+- `uppgifterma1.js` · `0.212` · position 212: Mycket lik textmall (främst tal skiljer) delas av 0.212, 0.549.
+- `uppgifterma1.js` · `0.213` · position 213: Mycket lik textmall (främst tal skiljer) delas av 0.213, 0.229, 0.550, 0.620.
+- `uppgifterma1.js` · `0.214` · position 214: Mycket lik textmall (främst tal skiljer) delas av 0.214, 0.312, 0.510, 0.613.
+- `uppgifterma1.js` · `0.215` · position 215: Mycket lik textmall (främst tal skiljer) delas av 0.215, 0.537.
+- `uppgifterma1.js` · `0.216` · position 216: Mycket lik textmall (främst tal skiljer) delas av 0.216, 0.224.
+- `uppgifterma1.js` · `0.217` · position 217: Mycket lik textmall (främst tal skiljer) delas av 0.217, 0.517.
+- `uppgifterma1.js` · `0.219` · position 219: Mycket lik textmall (främst tal skiljer) delas av 0.219, 0.618.
+- `uppgifterma1.js` · `0.222` · position 222: Mycket lik textmall (främst tal skiljer) delas av 0.222, 0.250, 0.502, 0.616.
+- `uppgifterma1.js` · `0.223` · position 223: Mycket lik textmall (främst tal skiljer) delas av 0.223, 0.243, 0.503.
+- `uppgifterma1.js` · `0.225` · position 225: Mycket lik textmall (främst tal skiljer) delas av 0.225, 0.515, 0.614.
+- `uppgifterma1.js` · `0.231` · position 231: Mycket lik textmall (främst tal skiljer) delas av 0.231, 0.521.
+- `uppgifterma1.js` · `0.232` · position 232: Mycket lik textmall (främst tal skiljer) delas av 0.232, 0.593.
+- `uppgifterma1.js` · `0.233` · position 233: Mycket lik textmall (främst tal skiljer) delas av 0.233, 0.235, 0.414, 3.205, 0.594, 0.596, 0.598, 0.600.
+- `uppgifterma1.js` · `0.234` · position 234: Mycket lik textmall (främst tal skiljer) delas av 0.234, 0.413, 0.597.
+- `uppgifterma1.js` · `0.236` · position 236: Mycket lik textmall (främst tal skiljer) delas av 0.236, 0.237, 0.238, 0.239, 0.331, 0.333.
+- `uppgifterma1.js` · `0.242` · position 242: Mycket lik textmall (främst tal skiljer) delas av 0.242, 0.615.
+- `uppgifterma1.js` · `0.251` · position 251: Mycket lik textmall (främst tal skiljer) delas av 0.251, 0.514.
+- `uppgifterma1.js` · `0.292` · position 292: Mycket lik textmall (främst tal skiljer) delas av 0.292, 0.293, 0.294, 0.295, 0.296, 0.297, 0.299.
+- `uppgifterma1.js` · `0.300` · position 300: Mycket lik textmall (främst tal skiljer) delas av 0.300, 0.303, 0.304.
+- `uppgifterma1.js` · `0.330` · position 330: Mycket lik textmall (främst tal skiljer) delas av 0.330, 0.653, 0.655, 0.657, 0.659, 0.661.
+- `uppgifterma1.js` · `0.332` · position 332: Mycket lik textmall (främst tal skiljer) delas av 0.332, 0.663, 0.665.
+- `uppgifterma1.js` · `0.415` · position 349: Mycket lik textmall (främst tal skiljer) delas av 0.415, 0.416, 0.752, 0.753.
+- `uppgifterma1.js` · `0.417` · position 351: Mycket lik textmall (främst tal skiljer) delas av 0.417, 0.683, 0.684, 0.685, 0.686, 0.687, 0.688, 0.689, 0.690, 0.691, 0.692.
+- `uppgifterma1.js` · `1.01` · position 357: Mycket lik textmall (främst tal skiljer) delas av 1.01, 1.1032, 1.1033, 1.1034.
+- `uppgifterma1.js` · `1.03` · position 359: Mycket lik textmall (främst tal skiljer) delas av 1.03, 1.407.
+- `uppgifterma1.js` · `1.24` · position 380: Mycket lik textmall (främst tal skiljer) delas av 1.24, 1.414.
+- `uppgifterma1.js` · `1.25` · position 381: Mycket lik textmall (främst tal skiljer) delas av 1.25, 1.31, 1.90, 1.94, 1.160, 1.165, 1.217, 1.911, 1.912, 1.913, 1.918.
+- `uppgifterma1.js` · `1.29` · position 385: Mycket lik textmall (främst tal skiljer) delas av 1.29, 1.259.
+- `uppgifterma1.js` · `1.30` · position 386: Mycket lik textmall (främst tal skiljer) delas av 1.30, 1.406, 1.415.
+- `uppgifterma1.js` · `1.61` · position 416: Mycket lik textmall (främst tal skiljer) delas av 1.61, 1.239, 1.1074.
+- `uppgifterma1.js` · `1.63` · position 418: Mycket lik textmall (främst tal skiljer) delas av 1.63, 1.65, 1.127, 1.236, 1.237, 1.1070.
+- `uppgifterma1.js` · `1.120` · position 475: Mycket lik textmall (främst tal skiljer) delas av 1.120, 1.1064.
+- `uppgifterma1.js` · `1.129` · position 484: Mycket lik textmall (främst tal skiljer) delas av 1.129, 1.955, 1.959, 1.1072, 1.1073.
+- `uppgifterma1.js` · `1.131` · position 486: Mycket lik textmall (främst tal skiljer) delas av 1.131, 1.241, 1.278.
+- `uppgifterma1.js` · `1.133` · position 488: Mycket lik textmall (främst tal skiljer) delas av 1.133, 1.953, 1.954, 1.1071.
+- `uppgifterma1.js` · `1.153` · position 508: Mycket lik textmall (främst tal skiljer) delas av 1.153, 1.419.
+- `uppgifterma1.js` · `1.207` · position 561: Mycket lik textmall (främst tal skiljer) delas av 1.207, 1.1059.
+- `uppgifterma1.js` · `1.238` · position 592: Mycket lik textmall (främst tal skiljer) delas av 1.238, 1.240, 1.1075.
+- `uppgifterma1.js` · `1.279` · position 633: Mycket lik textmall (främst tal skiljer) delas av 1.279, 1.280.
+- `uppgifterma1.js` · `1.408` · position 649: Mycket lik textmall (främst tal skiljer) delas av 1.408, 1.969.
+- `uppgifterma1.js` · `1.409` · position 650: Mycket lik textmall (främst tal skiljer) delas av 1.409, 1.459.
+- `uppgifterma1.js` · `1.410` · position 651: Mycket lik textmall (främst tal skiljer) delas av 1.410, 1.960, 1.961, 1.965.
+- `uppgifterma1.js` · `1.411` · position 652: Mycket lik textmall (främst tal skiljer) delas av 1.411, 1.962.
+- `uppgifterma1.js` · `1.902` · position 715: Mycket lik textmall (främst tal skiljer) delas av 1.902, 1.1035.
+- `uppgifterma1.js` · `2.28` · position 810: Mycket lik textmall (främst tal skiljer) delas av 2.28, 2.140.
+- `uppgifterma1.js` · `2.89` · position 871: Mycket lik textmall (främst tal skiljer) delas av 2.89, 2.258.
+- `uppgifterma1.js` · `2.163` · position 945: Mycket lik textmall (främst tal skiljer) delas av 2.163, 2.181.
+- `uppgifterma1.js` · `2.308` · position 1089: Mycket lik textmall (främst tal skiljer) delas av 2.308, 2.309, 2.310.
+- `uppgifterma1.js` · `2.336` · position 1117: Mycket lik textmall (främst tal skiljer) delas av 2.336, 2.338.
+- `uppgifterma1.js` · `2.350` · position 1131: Mycket lik textmall (främst tal skiljer) delas av 2.350, 2.352, 2.354.
+- `uppgifterma1.js` · `2.355` · position 1136: Mycket lik textmall (främst tal skiljer) delas av 2.355, 2.357.
+- `uppgifterma1.js` · `2.359` · position 1140: Mycket lik textmall (främst tal skiljer) delas av 2.359, 2.361.
+- `uppgifterma1.js` · `2.362` · position 1143: Mycket lik textmall (främst tal skiljer) delas av 2.362, 2.363, 2.364, 2.365.
+- `uppgifterma1.js` · `2.417` · position 1188: Mycket lik textmall (främst tal skiljer) delas av 2.417, 2.418.
+- `uppgifterma1.js` · `3.05` · position 1228: Mycket lik textmall (främst tal skiljer) delas av 3.05, 3.29, 3.33, 3.244, 3.472, 3.477.
+- `uppgifterma1.js` · `3.16` · position 1239: Mycket lik textmall (främst tal skiljer) delas av 3.16, 3.178.
+- `uppgifterma1.js` · `3.17` · position 1240: Mycket lik textmall (främst tal skiljer) delas av 3.17, 3.52, 3.170.
+- `uppgifterma1.js` · `3.151` · position 1374: Mycket lik textmall (främst tal skiljer) delas av 3.151, 3.155, 3.156, 3.471, 3.475, 3.476.
+- `uppgifterma1.js` · `3.209` · position 1431: Mycket lik textmall (främst tal skiljer) delas av 3.209, 3.432.
+- `uppgifterma1.js` · `3.225` · position 1446: Mycket lik textmall (främst tal skiljer) delas av 3.225, 3.226.
+- `uppgifterma1.js` · `3.404` · position 1484: Mycket lik textmall (främst tal skiljer) delas av 3.404, 3.405.
+- `uppgifterma1.js` · `4.07` · position 1498: Mycket lik textmall (främst tal skiljer) delas av 4.07, 4.482, 4.484.
+- `uppgifterma1.js` · `4.25` · position 1516: Mycket lik textmall (främst tal skiljer) delas av 4.25, 4.124, 4.483.
+- `uppgifterma1.js` · `4.39` · position 1529: Mycket lik textmall (främst tal skiljer) delas av 4.39, 4.88.
+- `uppgifterma1.js` · `4.73` · position 1562: Mycket lik textmall (främst tal skiljer) delas av 4.73, 4.75, 4.197, 4.198.
+- `uppgifterma1.js` · `4.82` · position 1571: Mycket lik textmall (främst tal skiljer) delas av 4.82, 4.89.
+- `uppgifterma1.js` · `4.133` · position 1622: Mycket lik textmall (främst tal skiljer) delas av 4.133, 4.189.
+- `uppgifterma1.js` · `4.200` · position 1688: Mycket lik textmall (främst tal skiljer) delas av 4.200, 4.203, 4.204.
+- `uppgifterma1.js` · `4.209` · position 1697: Mycket lik textmall (främst tal skiljer) delas av 4.209, 4.210.
+- `uppgifterma1.js` · `4.211` · position 1699: Mycket lik textmall (främst tal skiljer) delas av 4.211, 4.212.
+- `uppgifterma1.js` · `4.213` · position 1701: Mycket lik textmall (främst tal skiljer) delas av 4.213, 4.214.
+- `uppgifterma1.js` · `4.217` · position 1705: Mycket lik textmall (främst tal skiljer) delas av 4.217, 4.218.
+- `uppgifterma1.js` · `6.22` · position 2053: Mycket lik textmall (främst tal skiljer) delas av 6.22, 6.109.
+- `uppgifterma1.js` · `6.65` · position 2096: Mycket lik textmall (främst tal skiljer) delas av 6.65, 6.71.
+- `uppgifterma1.js` · `7.04` · position 2193: Mycket lik textmall (främst tal skiljer) delas av 7.04, 7.106.
+- `uppgifterma1.js` · `7.152` · position 2341: Mycket lik textmall (främst tal skiljer) delas av 7.152, 7.154.
+- `uppgifterma1.js` · `7.153` · position 2342: Mycket lik textmall (främst tal skiljer) delas av 7.153, 7.158.
+- `uppgifterma1.js` · `7.210` · position 2399: Mycket lik textmall (främst tal skiljer) delas av 7.210, 7.212.
+- `uppgifterma1.js` · `7.211` · position 2400: Mycket lik textmall (främst tal skiljer) delas av 7.211, 7.213.
+- `uppgifterma1.js` · `0.506` · position 2426: Mycket lik textmall (främst tal skiljer) delas av 0.506, 0.538.
+- `uppgifterma1.js` · `0.507` · position 2427: Mycket lik textmall (främst tal skiljer) delas av 0.507, 0.539.
+- `uppgifterma1.js` · `0.508` · position 2428: Mycket lik textmall (främst tal skiljer) delas av 0.508, 0.532, 0.545.
+- `uppgifterma1.js` · `0.509` · position 2429: Mycket lik textmall (främst tal skiljer) delas av 0.509, 0.533, 0.546, 0.552.
+- `uppgifterma1.js` · `0.534` · position 2454: Mycket lik textmall (främst tal skiljer) delas av 0.534, 0.547.
+- `uppgifterma1.js` · `0.535` · position 2455: Mycket lik textmall (främst tal skiljer) delas av 0.535, 0.548.
+- `uppgifterma1.js` · `0.560` · position 2480: Mycket lik textmall (främst tal skiljer) delas av 0.560, 0.562.
+- `uppgifterma1.js` · `0.561` · position 2481: Mycket lik textmall (främst tal skiljer) delas av 0.561, 0.569.
+- `uppgifterma1.js` · `0.603` · position 2523: Mycket lik textmall (främst tal skiljer) delas av 0.603, 0.604, 0.605, 0.606, 0.607, 0.608, 0.609, 0.610, 0.611, 0.612.
+- `uppgifterma1.js` · `0.654` · position 2574: Mycket lik textmall (främst tal skiljer) delas av 0.654, 0.658, 0.662.
+- `uppgifterma1.js` · `0.656` · position 2576: Mycket lik textmall (främst tal skiljer) delas av 0.656, 0.660.
+- `uppgifterma1.js` · `0.664` · position 2584: Mycket lik textmall (främst tal skiljer) delas av 0.664, 0.670.
+- `uppgifterma1.js` · `0.666` · position 2586: Mycket lik textmall (främst tal skiljer) delas av 0.666, 0.669, 0.672.
+- `uppgifterma1.js` · `0.696` · position 2686: Mycket lik textmall (främst tal skiljer) delas av 0.696, 0.697, 0.698.
+- `uppgifterma1.js` · `0.705` · position 2695: Mycket lik textmall (främst tal skiljer) delas av 0.705, 0.707, 0.708.
+- `uppgifterma1.js` · `0.732` · position 2722: Mycket lik textmall (främst tal skiljer) delas av 0.732, 0.735.
+- `uppgifterma1.js` · `0.734` · position 2724: Mycket lik textmall (främst tal skiljer) delas av 0.734, 0.738, 0.739.
+- `uppgifterma1.js` · `1.1039` · position 2755: Mycket lik textmall (främst tal skiljer) delas av 1.1039, 1.1041.
+- `uppgifterma1.js` · `1.1065` · position 2781: Mycket lik textmall (främst tal skiljer) delas av 1.1065, 1.1066.
+- `uppgifterma1.js` · `2.458` · position 2792: Mycket lik textmall (främst tal skiljer) delas av 2.458, 2.459, 2.460, 2.461, 2.462, 2.463.
+- `uppgifterma1.js` · `2.480` · position 2814: Mycket lik textmall (främst tal skiljer) delas av 2.480, 2.481, 2.482.
+- `uppgifterma1.js` · `2.483` · position 2817: Mycket lik textmall (främst tal skiljer) delas av 2.483, 2.484, 2.485.
+- `uppgifterma1.js` · `2.486` · position 2820: Mycket lik textmall (främst tal skiljer) delas av 2.486, 2.487, 2.488.
+- `uppgifterma1.js` · `2.489` · position 2823: Mycket lik textmall (främst tal skiljer) delas av 2.489, 2.490, 2.491.
+- `uppgifterma1.js` · `2.501` · position 2835: Mycket lik textmall (främst tal skiljer) delas av 2.501, 2.502, 2.503.
+- `uppgifterma1.js` · `2.504` · position 2838: Mycket lik textmall (främst tal skiljer) delas av 2.504, 2.507.
+- `uppgifterma1.js` · `2.505` · position 2839: Mycket lik textmall (främst tal skiljer) delas av 2.505, 2.506.
+- `uppgifterma1.js` · `2.538` · position 2872: Mycket lik textmall (främst tal skiljer) delas av 2.538, 2.539, 2.540.
+- `uppgifterma1.js` · `2.541` · position 2875: Mycket lik textmall (främst tal skiljer) delas av 2.541, 2.542, 2.543.
+- `uppgifterma1.js` · `3.426` · position 2885: Mycket lik textmall (främst tal skiljer) delas av 3.426, 3.428.
+- `uppgifterma1.js` · `3.436` · position 2895: Mycket lik textmall (främst tal skiljer) delas av 3.436, 3.437.
+- `uppgifterma1.js` · `3.455` · position 2914: Mycket lik textmall (främst tal skiljer) delas av 3.455, 3.456, 3.458.
+- `uppgifterma1.js` · `3.459` · position 2918: Mycket lik textmall (främst tal skiljer) delas av 3.459, 3.460, 3.461, 3.462, 3.463.
+- `uppgifterma1.js` · `3.464` · position 2923: Mycket lik textmall (främst tal skiljer) delas av 3.464, 3.466, 3.467.
+- `uppgifterma1.js` · `3.474` · position 2933: Mycket lik textmall (främst tal skiljer) delas av 3.474, 3.481.
+- `uppgifterma1.js` · `3.482` · position 2941: Mycket lik textmall (främst tal skiljer) delas av 3.482, 3.483, 3.485.
+- `uppgifterma1.js` · `3.486` · position 2945: Mycket lik textmall (främst tal skiljer) delas av 3.486, 3.487, 3.488.
+- `uppgifterma1.js` · `3.494` · position 2953: Mycket lik textmall (främst tal skiljer) delas av 3.494, 3.495, 3.497.
+- `uppgifterma1.js` · `3.498` · position 2957: Mycket lik textmall (främst tal skiljer) delas av 3.498, 3.500, 3.502.
+- `uppgifterma1.js` · `3.499` · position 2958: Mycket lik textmall (främst tal skiljer) delas av 3.499, 3.501.
+- `uppgifterma1.js` · `3.503` · position 2962: Mycket lik textmall (främst tal skiljer) delas av 3.503, 3.508.
+- `uppgifterma1.js` · `3.504` · position 2963: Mycket lik textmall (främst tal skiljer) delas av 3.504, 3.506.
+- `uppgifterma1.js` · `3.505` · position 2964: Mycket lik textmall (främst tal skiljer) delas av 3.505, 3.507.
+- `uppgifterma1.js` · `3.509` · position 2968: Mycket lik textmall (främst tal skiljer) delas av 3.509, 3.510.
+- `uppgifterma1.js` · `3.514` · position 2973: Mycket lik textmall (främst tal skiljer) delas av 3.514, 3.516.
+- `uppgifterma1.js` · `3.518` · position 2977: Mycket lik textmall (främst tal skiljer) delas av 3.518, 3.519, 3.521.
+- `uppgifterma1.js` · `3.522` · position 2981: Mycket lik textmall (främst tal skiljer) delas av 3.522, 3.524.
+- `uppgifterma1.js` · `3.527` · position 2986: Mycket lik textmall (främst tal skiljer) delas av 3.527, 3.528.
+- `uppgifterma1.js` · `3.529` · position 2988: Mycket lik textmall (främst tal skiljer) delas av 3.529, 3.530.
+- `uppgifterma1.js` · `3.531` · position 2990: Mycket lik textmall (främst tal skiljer) delas av 3.531, 3.532.
+- `uppgifterma1.js` · `4.416` · position 2994: Mycket lik textmall (främst tal skiljer) delas av 4.416, 4.417.
+- `uppgifterma1.js` · `4.419` · position 2997: Mycket lik textmall (främst tal skiljer) delas av 4.419, 4.421.
+- `uppgifterma1.js` · `4.428` · position 3006: Mycket lik textmall (främst tal skiljer) delas av 4.428, 4.429, 4.431, 4.432, 4.433, 4.434, 4.435.
+- `uppgifterma1.js` · `4.455` · position 3033: Mycket lik textmall (främst tal skiljer) delas av 4.455, 4.456, 4.457, 4.458, 4.459.
+- `uppgifterma1.js` · `4.460` · position 3038: Mycket lik textmall (främst tal skiljer) delas av 4.460, 4.461, 4.462.
+- `uppgifterma1.js` · `4.463` · position 3041: Mycket lik textmall (främst tal skiljer) delas av 4.463, 4.464, 4.465, 4.466, 4.467.
+- `uppgifterma1.js` · `4.468` · position 3046: Mycket lik textmall (främst tal skiljer) delas av 4.468, 4.469, 4.470.
+- `uppgifterma1.js` · `4.471` · position 3049: Mycket lik textmall (främst tal skiljer) delas av 4.471, 4.472, 4.473, 4.474, 4.475, 4.476.
+- `uppgifterma1.js` · `4.478` · position 3056: Mycket lik textmall (främst tal skiljer) delas av 4.478, 4.479.
+- `uppgifterma1.js` · `4.499` · position 3077: Mycket lik textmall (främst tal skiljer) delas av 4.499, 4.500, 4.501.
+- `uppgifterma1.js` · `4.503` · position 3081: Mycket lik textmall (främst tal skiljer) delas av 4.503, 4.504, 4.505.
+- `uppgifterma1.js` · `4.516` · position 3094: Mycket lik textmall (främst tal skiljer) delas av 4.516, 4.518.
+- `uppgifterma1.js` · `5.433` · position 3128: Mycket lik textmall (främst tal skiljer) delas av 5.433, 5.434, 5.435.
+- `uppgifterma1.js` · `5.436` · position 3131: Mycket lik textmall (främst tal skiljer) delas av 5.436, 5.437, 5.438.
+- `uppgifterma1.js` · `5.439` · position 3134: Mycket lik textmall (främst tal skiljer) delas av 5.439, 5.440, 5.441.
+- `uppgifterma1.js` · `5.442` · position 3137: Mycket lik textmall (främst tal skiljer) delas av 5.442, 5.443, 5.444.
+- `uppgifterma1.js` · `5.449` · position 3144: Mycket lik textmall (främst tal skiljer) delas av 5.449, 5.450, 5.451.
+- `uppgifterma1.js` · `5.473` · position 3168: Mycket lik textmall (främst tal skiljer) delas av 5.473, 5.474.
+- `uppgifterma2.js` · `1.23` · position 23: Mycket lik textmall (främst tal skiljer) delas av 1.23, 1.49, 1.249.
+- `uppgifterma2.js` · `1.31` · position 31: Mycket lik textmall (främst tal skiljer) delas av 1.31, 1.115.
+- `uppgifterma2.js` · `1.33` · position 33: Mycket lik textmall (främst tal skiljer) delas av 1.33, 1.168.
+- `uppgifterma2.js` · `1.51` · position 51: Mycket lik textmall (främst tal skiljer) delas av 1.51, 1.143.
+- `uppgifterma2.js` · `1.87` · position 87: Mycket lik textmall (främst tal skiljer) delas av 1.87, 1.264.
+- `uppgifterma2.js` · `1.96` · position 96: Mycket lik textmall (främst tal skiljer) delas av 1.96, 1.254.
+- `uppgifterma2.js` · `1.109` · position 104: Mycket lik textmall (främst tal skiljer) delas av 1.109, 1.152.
+- `uppgifterma2.js` · `1.110` · position 105: Mycket lik textmall (främst tal skiljer) delas av 1.110, 1.148, 1.150, 1.169, 1.173, 1.175, 1.176, 1.237, 1.276.
+- `uppgifterma2.js` · `1.134` · position 123: Mycket lik textmall (främst tal skiljer) delas av 1.134, 1.196.
+- `uppgifterma2.js` · `1.146` · position 132: Mycket lik textmall (främst tal skiljer) delas av 1.146, 1.275.
+- `uppgifterma2.js` · `1.147` · position 133: Mycket lik textmall (främst tal skiljer) delas av 1.147, 1.171, 1.172.
+- `uppgifterma2.js` · `1.154` · position 140: Mycket lik textmall (främst tal skiljer) delas av 1.154, 1.182.
+- `uppgifterma2.js` · `1.164` · position 144: Mycket lik textmall (främst tal skiljer) delas av 1.164, 1.289, 1.290, 1.291, 1.292, 1.293, 1.294, 1.295.
+- … 305 ytterligare fynd utelämnade ur detaljlistan; totalsiffran ovan omfattar dem.
+
+## Körning
+
+```text
+node --test tools/granska-uppgifter.test.js
+node tools/granska-uppgifter.js --output GRANSKNINGSLOGG.md
+```
