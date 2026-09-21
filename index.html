@@ -3372,6 +3372,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
 .topp-dokumentknapp:focus-visible{outline:3px solid var(--ed-ring);outline-offset:2px}
 .hogerverktyg{display:flex;gap:8px;padding:10px 12px 0;align-items:center}.hogerverktyg .knapp{flex:1;justify-content:center}.hogerverktyg .slumpwrap{flex:1}.hogerverktyg .slumpwrap>.knapp{width:100%}
 #slumpwrapTop{display:none!important}
+.hogerverktyg .slumppanel{left:0;right:auto;width:min(246px,calc(100% + 120px))!important}
 @media(max-width:1050px){.topp-dokumentknapp span{display:none}.topp-dokumentknapp{padding:8px 10px}.topp-dokumentknapp:first-child:after{content:'Mina dokument';font-size:11.5px}.topp-dokumentknapp:last-child:after{content:'Gemensam bank';font-size:11.5px}}
 @media(max-width:760px){.topp-dokumentknappar{gap:5px}.topp-dokumentknapp{min-height:35px;padding:7px 8px}.topp-dokumentknapp:after{display:none}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
 
@@ -5374,17 +5375,6 @@ function ulLösenordUpplåst(){
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
       Slumpa
     </button>
-    <div class="slumppanel" id="slumppanel">
-      <label for="slumpaAntal">Antal uppgifter</label>
-      <div class="slumprad">
-        <input type="number" id="slumpaAntal" min="1" max="40" value="12">
-        <button class="knapp primär" id="slumpaKör" type="button">Slumpa</button>
-      </div>
-      <div class="slumpval">
-        <label><input type="checkbox" id="slumpFormaga" checked> Blanda förmågor</label>
-        <label><input type="checkbox" id="slumpTyp" checked> Blanda uppgiftstyp</label>
-      </div>
-    </div>
   </div>
   <div class="konto-plats" data-konto-plats></div>
 </header>
@@ -5446,6 +5436,17 @@ function ulLösenordUpplåst(){
     <div class="hogerverktyg">
       <div class="slumpwrap">
         <button class="knapp tyst" id="slumpaKnappHoger" type="button" aria-expanded="false" aria-controls="slumppanel">Slumpa</button>
+        <div class="slumppanel" id="slumppanel">
+          <label for="slumpaAntal">Antal uppgifter</label>
+          <div class="slumprad">
+            <input type="number" id="slumpaAntal" min="1" max="40" value="12">
+            <button class="knapp primär" id="slumpaKör" type="button">Slumpa</button>
+          </div>
+          <div class="slumpval">
+            <label><input type="checkbox" id="slumpFormaga" checked> Blanda förmågor</label>
+            <label><input type="checkbox" id="slumpTyp" checked> Blanda uppgiftstyp</label>
+          </div>
+        </div>
       </div>
       <button class="knapp tyst" id="rensaAllt">Börja om</button>
     </div>
@@ -7617,17 +7618,22 @@ $('#rensaAllt').addEventListener('click',()=>{
   $$('.nivåfilter button').forEach(b=>b.setAttribute('aria-pressed','true'));
   rita(); ritaBlad();
 });
-$('#slumpaKnapp').addEventListener('click',e=>{
-  e.stopPropagation();
-  const öppen=$('#slumppanel').classList.toggle('öppen');
-  $('#slumpaKnapp').setAttribute('aria-expanded',öppen);
+function slumpSättÖppen(öppen){
+  $('#slumppanel').classList.toggle('öppen',öppen);
+  ['#slumpaKnapp','#slumpaKnappHoger'].forEach(id=>{
+    const b=document.querySelector(id);
+    if(b) b.setAttribute('aria-expanded',String(öppen));
+  });
   if(öppen) $('#slumpaAntal').select();
-});
+}
+function slumpVäxla(e){
+  e.stopPropagation();
+  slumpSättÖppen(!$('#slumppanel').classList.contains('öppen'));
+}
+$('#slumpaKnapp').addEventListener('click',slumpVäxla);
+$('#slumpaKnappHoger').addEventListener('click',slumpVäxla);
 document.addEventListener('click',e=>{
-  if(!e.target.closest('.slumpwrap')){
-    $('#slumppanel').classList.remove('öppen');
-    $('#slumpaKnapp').setAttribute('aria-expanded','false');
-  }
+  if(!e.target.closest('.slumpwrap')) slumpSättÖppen(false);
 });
 function körSlumpa(){
   const pool=urval();
@@ -7756,8 +7762,7 @@ function körSlumpa(){
 
   state.blad=sorteraNivaordning(ut);
   rita(); ritaBlad();
-  $('#slumppanel').classList.remove('öppen');
-  $('#slumpaKnapp').setAttribute('aria-expanded','false');
+  slumpSättÖppen(false);
 }
 $('#slumpaKör').addEventListener('click',körSlumpa);
 $('#slumpaAntal').addEventListener('keydown',e=>{ if(e.key==='Enter'){e.preventDefault();körSlumpa();} });
@@ -12244,7 +12249,6 @@ async function minaKlick(e){
 document.addEventListener('click',e=>{
   const d=e.target.closest('[data-topp-dokument]');
   if(d){ minaÖppna({lage:d.dataset.toppDokument==='bank'?'bank':'mina'}); return; }
-  if(e.target.closest('#slumpaKnappHoger')) document.getElementById('slumpaKnapp')?.click();
 });
 document.addEventListener('click',e=>{
     const val=e.target.closest('[data-konto-val]');
