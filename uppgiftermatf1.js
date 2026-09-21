@@ -82,7 +82,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{-3,-2,-1,0,1,2,3\\}",
+    "rättSvar": "{-3,-2,-1,0,1,2,3}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -153,8 +153,8 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{3,4,5,6,8\\}",
-      "\\{1,3,4,5,6,7,8,9\\}"
+      "{3,4,5,6,8}",
+      "{1,3,4,5,6,7,8,9}"
     ],
     "tolerans": null,
     "självrättning": [
@@ -178,14 +178,14 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Låt \\(A=\\{1,3,4,5,6,8\\}\\) och \\(B=\\{3,4,5,6,7,8,9\\}\\).</p><div class=\"spel-en-del\"><strong>a)</strong> Bestäm \\(A\\cap B\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Snittet innehåller bara de element som finns i båda mängderna.</p><p>De gemensamma elementen är 3, 4, 5, 6 och 8.</p><p><strong>Svar:</strong> (A\\cap B=\\{3,4,5,6,8\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Snittet innehåller bara de element som finns i båda mängderna.</p><p>De gemensamma elementen är 3, 4, 5, 6 och 8.</p><p><strong>Svar:</strong> \\(A\\cap B=\\{3,4,5,6,8\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>Låt \\(A=\\{1,3,4,5,6,8\\}\\) och \\(B=\\{3,4,5,6,7,8,9\\}\\).</p><div class=\"spel-en-del\"><strong>b)</strong> Bestäm \\(A\\cup B\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Unionen innehåller alla element som finns i minst en av mängderna. Dubbletter skrivs bara en gång.</p><p><strong>Svar:</strong> (A\\cup B=\\{1,3,4,5,6,7,8,9\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Unionen innehåller alla element som finns i minst en av mängderna. Dubbletter skrivs bara en gång.</p><p><strong>Svar:</strong> \\(A\\cup B=\\{1,3,4,5,6,7,8,9\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       }
@@ -254,10 +254,10 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{1,2,3,4,5,6,7\\}",
-      "\\{\\}",
-      "\\{1,2,3,4,5,6,7\\}",
-      "\\{1,3,5,7\\}"
+      "{1,2,3,4,5,6,7}",
+      "{}",
+      "{1,2,3,4,5,6,7}",
+      "{1,3,5,7}"
     ],
     "tolerans": null,
     "självrättning": [
@@ -287,28 +287,28 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Låt \\(A=\\{1,2,3,4,5,6,7\\}\\), \\(B=\\{1,3,5,7\\}\\) och \\(C=\\varnothing\\). Bestäm</p><div class=\"spel-en-del\"><strong>a)</strong> \\(A\\cup B\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Eftersom (B\\subseteq A) tillför (B) inga nya element till unionen.</p><p><strong>Svar:</strong> (A\\cup B=\\{1,2,3,4,5,6,7\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Eftersom \\(B\\subseteq A\\) tillför \\(B\\) inga nya element till unionen.</p><p><strong>Svar:</strong> \\(A\\cup B=\\{1,2,3,4,5,6,7\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>Låt \\(A=\\{1,2,3,4,5,6,7\\}\\), \\(B=\\{1,3,5,7\\}\\) och \\(C=\\varnothing\\). Bestäm</p><div class=\"spel-en-del\"><strong>b)</strong> \\(B\\cap C\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Den tomma mängden har inga element och kan därför inte ha något gemensamt element med (B).</p><p><strong>Svar:</strong> (B\\cap C=\\varnothing).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Den tomma mängden har inga element och kan därför inte ha något gemensamt element med \\(B\\).</p><p><strong>Svar:</strong> \\(B\\cap C=\\varnothing\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "c",
         "t": "<p>Låt \\(A=\\{1,2,3,4,5,6,7\\}\\), \\(B=\\{1,3,5,7\\}\\) och \\(C=\\varnothing\\). Bestäm</p><div class=\"spel-en-del\"><strong>c)</strong> \\(C\\cup A\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Att ta union med den tomma mängden förändrar inte mängden.</p><p><strong>Svar:</strong> (C\\cup A=A=\\{1,2,3,4,5,6,7\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Att ta union med den tomma mängden förändrar inte mängden.</p><p><strong>Svar:</strong> \\(C\\cup A=A=\\{1,2,3,4,5,6,7\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "d",
         "t": "<p>Låt \\(A=\\{1,2,3,4,5,6,7\\}\\), \\(B=\\{1,3,5,7\\}\\) och \\(C=\\varnothing\\). Bestäm</p><div class=\"spel-en-del\"><strong>d)</strong> \\(B\\cap(A\\cup C)\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Först är (A\\cup C=A). Därefter blir (B\\cap A=B), eftersom (B\\subseteq A).</p><p><strong>Svar:</strong> (\\{1,3,5,7\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Först är \\(A\\cup C=A\\). Därefter blir \\(B\\cap A=B\\), eftersom \\(B\\subseteq A\\).</p><p><strong>Svar:</strong> \\(\\{1,3,5,7\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       }
@@ -353,10 +353,10 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{0\\}",
-      "\\{1,2,4,5,6,8,9,10,12,13,15,16,17,18,19,20\\}",
-      "\\{0,2,3,4,6,7,9,10,11,12,14,15,16,17,18,19\\}",
-      "\\{3,7,11,14\\}"
+      "{0}",
+      "{1,2,4,5,6,8,9,10,12,13,15,16,17,18,19,20}",
+      "{0,2,3,4,6,7,9,10,11,12,14,15,16,17,18,19}",
+      "{3,7,11,14}"
     ],
     "tolerans": null,
     "självrättning": [
@@ -386,25 +386,25 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Låt grundmängden vara \\(G=\\{0,1,2,\\ldots,20\\}\\), \\(A=\\{0,1,5,8,13,20\\}\\) och \\(M=\\{0,3,7,11,14\\}\\). Bestäm</p><div class=\"spel-en-del\"><strong>a)</strong> \\(A\\cap M\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Snittet består av de element som finns i både (A) och (M).</p><p>Det enda gemensamma elementet är 0.</p><p><strong>Svar:</strong> (\\{0\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Snittet består av de element som finns i både \\(A\\) och \\(M\\).</p><p>Det enda gemensamma elementet är 0.</p><p><strong>Svar:</strong> \\(\\{0\\}\\).</p>",
         "niva": "E"
       },
       {
         "etikett": "b",
         "t": "<p>Låt grundmängden vara \\(G=\\{0,1,2,\\ldots,20\\}\\), \\(A=\\{0,1,5,8,13,20\\}\\) och \\(M=\\{0,3,7,11,14\\}\\). Bestäm</p><div class=\"spel-en-del\"><strong>b)</strong> \\(M^c\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> (M^c) består av alla element i grundmängden (G) som inte ligger i (M).</p><p><strong>Svar:</strong> (\\{1,2,4,5,6,8,9,10,12,13,15,16,17,18,19,20\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> \\(M^c\\) består av alla element i grundmängden \\(G\\) som inte ligger i \\(M\\).</p><p><strong>Svar:</strong> \\(\\{1,2,4,5,6,8,9,10,12,13,15,16,17,18,19,20\\}\\).</p>",
         "niva": "E"
       },
       {
         "etikett": "c",
         "t": "<p>Låt grundmängden vara \\(G=\\{0,1,2,\\ldots,20\\}\\), \\(A=\\{0,1,5,8,13,20\\}\\) och \\(M=\\{0,3,7,11,14\\}\\). Bestäm</p><div class=\"spel-en-del\"><strong>c)</strong> \\(M\\cup A^c\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Bilda först (A^c=G\\setminus A), och lägg sedan till elementen i (M). Varje element skrivs bara en gång.</p><p><strong>Svar:</strong> (\\{0,2,3,4,6,7,9,10,11,12,14,15,16,17,18,19\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Bilda först \\(A^c=G\\setminus A\\), och lägg sedan till elementen i \\(M\\). Varje element skrivs bara en gång.</p><p><strong>Svar:</strong> \\(\\{0,2,3,4,6,7,9,10,11,12,14,15,16,17,18,19\\}\\).</p>",
         "niva": "E"
       },
       {
         "etikett": "d",
         "t": "<p>Låt grundmängden vara \\(G=\\{0,1,2,\\ldots,20\\}\\), \\(A=\\{0,1,5,8,13,20\\}\\) och \\(M=\\{0,3,7,11,14\\}\\). Bestäm</p><div class=\"spel-en-del\"><strong>d)</strong> \\(M\\setminus A\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> (M\\setminus A) betyder elementen som ligger i (M) men inte i (A). Elementet 0 tas därför bort.</p><p><strong>Svar:</strong> (\\{3,7,11,14\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> \\(M\\setminus A\\) betyder elementen som ligger i \\(M\\) men inte i \\(A\\). Elementet 0 tas därför bort.</p><p><strong>Svar:</strong> \\(\\{3,7,11,14\\}\\).</p>",
         "niva": "E"
       }
     ],
@@ -446,7 +446,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{3,5,7,8,10\\}",
+    "rättSvar": "{3,5,7,8,10}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -853,9 +853,9 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{5,7\\}",
-      "\\{1,3\\}",
-      "\\{11\\}"
+      "{5,7}",
+      "{1,3}",
+      "{11}"
     ],
     "tolerans": null,
     "självrättning": true,
@@ -1028,8 +1028,8 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{1,3,4,5,6,7,9\\}",
-      "\\{3,5\\}"
+      "{1,3,4,5,6,7,9}",
+      "{3,5}"
     ],
     "tolerans": null,
     "självrättning": true,
@@ -1079,8 +1079,8 @@ window.BANKMATF1 = [
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "\\{1,3,5,7\\}",
-      "\\{1,3,5,7\\}"
+      "{1,3,5,7}",
+      "{1,3,5,7}"
     ],
     "tolerans": null,
     "självrättning": [
@@ -1104,14 +1104,14 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Grundmängden är \\(U=\\{1,2,3,4,5,6,7,8\\}\\) och \\(A=\\{2,4,6,8\\}\\).</p><div class=\"spel-en-del\"><strong>a)</strong> Bestäm \\(U\\setminus A\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Ta bort alla element i (A) från grundmängden (U).</p><p><strong>Svar:</strong> (U\\setminus A=\\{1,3,5,7\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Ta bort alla element i \\(A\\) från grundmängden \\(U\\).</p><p><strong>Svar:</strong> \\(U\\setminus A=\\{1,3,5,7\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>Grundmängden är \\(U=\\{1,2,3,4,5,6,7,8\\}\\) och \\(A=\\{2,4,6,8\\}\\).</p><div class=\"spel-en-del\"><strong>b)</strong> Bestäm komplementet \\(A^c\\).</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Komplementet (A^c) tas här i förhållande till (U). Det är därför samma mängd som (U\\setminus A).</p><p><strong>Svar:</strong> (A^c=\\{1,3,5,7\\}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Komplementet \\(A^c\\) tas här i förhållande till \\(U\\). Det är därför samma mängd som \\(U\\setminus A\\).</p><p><strong>Svar:</strong> \\(A^c=\\{1,3,5,7\\}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       }
@@ -1156,7 +1156,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,2,5,6\\}",
+    "rättSvar": "{1,2,5,6}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -1173,8 +1173,8 @@ window.BANKMATF1 = [
     "niva": "A",
     "typ": "bevisa mängdidentitet med symmetrisk differens",
     "poang": "0/1/2",
-    "t": "<p>Visa med elementmetoden att</p><p>\\[(A\\setminus B)\\cup(B\\setminus A)=(A\\cup B)\\setminus(A\\cap B).\\]</p>",
-    "s": "<p>Välj ett godtyckligt element \\(x\\). Vänsterledet betyder att \\(x\\) ligger i exakt en av \\(A\\) och \\(B\\). Högerledet betyder att \\(x\\) ligger i unionen men inte i snittet, vilket är samma villkor. Därför är mängderna lika.</p><p><strong>Slutsats:</strong> De två sidorna beskriver samma element/regioner, och därför gäller identiteten.</p>",
+    "t": "<p>De två mängduttrycken nedan påstås beskriva samma mängd:</p><p>\\[(A\\setminus B)\\cup(B\\setminus A)=(A\\cup B)\\setminus(A\\cap B).\\]</p><p>Visa att påståendet stämmer. Utgå från ett godtyckligt element \\(x\\): förklara först vad det innebär att \\(x\\) tillhör vänsterledet och visa sedan att det är exakt samma villkor som att \\(x\\) tillhör högerledet.</p>",
+    "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Idé:</strong> Visa att ett godtyckligt element \\(x\\) tillhör vänsterledet precis i samma fall som det tillhör högerledet.</p><div class=\"facit-arbete\"><p>Om \\(x\\) tillhör vänsterledet gäller</p><p>\\[x\\in(A\\setminus B)\\cup(B\\setminus A).\\]</p><p>Det betyder att antingen \\(x\\in A\\) och \\(x\\notin B\\), eller att \\(x\\in B\\) och \\(x\\notin A\\). Med ord: <strong>\\(x\\) ligger i exakt en av mängderna \\(A\\) och \\(B\\)</strong>.</p><p>Högerledet är</p><p>\\[(A\\cup B)\\setminus(A\\cap B).\\]</p><p>Här måste \\(x\\) ligga i minst en av mängderna, eftersom \\(x\\in A\\cup B\\), men inte i båda, eftersom \\(x\\notin A\\cap B\\). Det betyder också att \\(x\\) ligger i exakt en av \\(A\\) och \\(B\\).</p><p><strong>Slutsats:</strong> Båda leden innehåller exakt samma element, alltså är mängderna lika.</p></div></div>",
     "id": "1.331",
     "miniräknare": false,
     "geogebra": false,
@@ -1187,7 +1187,7 @@ window.BANKMATF1 = [
       "begrepp",
       "resonemang"
     ],
-    "ledtrad": "<p>Välj ett godtyckligt element \\(x\\). Översätt sedan medlemskap i union till ”eller”, medlemskap i snitt till ”och” och komplement till ”inte”. Visa att båda leden ger samma villkor.</p>",
+    "ledtrad": "<p>Översätt vänsterledet till ord: \\(A\\setminus B\\) betyder ”i A men inte i B”. Vad betyder då hela vänsterledet? Gör sedan samma sak med högerledet.</p>",
     "traningsniva": 5
   },
   {
@@ -3637,13 +3637,13 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Av 33 elever ska 9 delta i en aktivitet.</p><div class=\"spel-en-del\"><strong>a)</strong> Hur många olika köordningar kan 9 av eleverna bilda?</div>",
-        "s": "<p><strong>Nyckelidé:</strong> I en kö spelar ordningen roll, så använd ett ordnat urval.</p><p>[P(33,9)=\\frac{33!}{24!}=13\\,995\\,229\\,248\\,000.]</p><p><strong>Svar:</strong> (13\\,995\\,229\\,248\\,000).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> I en kö spelar ordningen roll, så använd ett ordnat urval.</p><p>\\[P(33,9)=\\frac{33!}{24!}=13\\,995\\,229\\,248\\,000.\\]</p><p><strong>Svar:</strong> \\(13\\,995\\,229\\,248\\,000\\).</p>",
         "niva": "E"
       },
       {
         "etikett": "b",
         "t": "<p>Av 33 elever ska 9 delta i en aktivitet.</p><div class=\"spel-en-del\"><strong>b)</strong> Hur många olika grupper om 9 elever kan väljas om ordningen inte spelar roll?</div>",
-        "s": "<p><strong>Nyckelidé:</strong> I en grupp spelar ordningen inte roll, så använd en kombination.</p><p>[\\binom{33}{9}=38\\,567\\,100.]</p><p><strong>Svar:</strong> (38\\,567\\,100).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> I en grupp spelar ordningen inte roll, så använd en kombination.</p><p>\\[\\binom{33}{9}=38\\,567\\,100.\\]</p><p><strong>Svar:</strong> \\(38\\,567\\,100\\).</p>",
         "niva": "E"
       }
     ],
@@ -4804,7 +4804,7 @@ window.BANKMATF1 = [
         "traningsniva": 2,
         "poang": "0/1/0",
         "fraga": "<p><strong>a)</strong> På hur många sätt kan 12 burkar väljas om en smak får förekomma 0 gånger?</p>",
-        "s": "<p>Låt (x_1+x_2+x_3+x_4=12), där alla (x_ige0). Med stjärnor och streck fås</p><p>[\\binom{12+4-1}{4-1}=\\binom{15}{3}=455.]</p><p><strong>Svar:</strong> 455.</p>"
+        "s": "<p>Låt \\(x_1+x_2+x_3+x_4=12\\), där alla \\(x_i\\ge 0\\). Med stjärnor och streck fås</p><p>\\[\\binom{12+4-1}{4-1}=\\binom{15}{3}=455.\\]</p><p><strong>Svar:</strong> 455.</p>"
       },
       {
         "etikett": "b",
@@ -4812,7 +4812,7 @@ window.BANKMATF1 = [
         "traningsniva": 3,
         "poang": "0/2/0",
         "fraga": "<p><strong>b)</strong> På hur många sätt kan 12 burkar väljas om minst en av varje smak måste ingå?</p>",
-        "s": "<p>Lägg först undan en burk av varje smak. Då återstår 8 burkar att fördela fritt mellan fyra smaker:</p><p>[\\binom{8+4-1}{4-1}=\\binom{11}{3}=165.]</p><p><strong>Svar:</strong> 165.</p>"
+        "s": "<p>Lägg först undan en burk av varje smak. Då återstår 8 burkar att fördela fritt mellan fyra smaker:</p><p>\\[\\binom{8+4-1}{4-1}=\\binom{11}{3}=165.\\]</p><p><strong>Svar:</strong> 165.</p>"
       }
     ]
   },
@@ -5689,7 +5689,7 @@ window.BANKMATF1 = [
     "typ": "bestämma exponent och parameter från två koefficienter",
     "poang": "0/1/2",
     "t": "<p>Ett polynom har formen \\((1+ax)^n\\) där \\(a>0\\) och \\(n\\) är ett heltal större än 2. Koefficienterna framför \\(x\\) och \\(x^2\\) är 22 respektive 220.</p><p>Bestäm \\(a\\) och \\(n\\).</p>",
-    "s": "<p>Koefficienten framför (x) är (na), alltså</p><p>[na=22.]</p><p>Koefficienten framför (x^2) är (\\binom n2a^2), alltså</p><p>[\\frac{n(n-1)}2a^2=220.]</p><p>Dividera den andra ekvationen med ((na)^2=22^2):</p><p>[\\frac{n-1}{2n}=\\frac{220}{484}=\\frac5{11}.]</p><p>Därför (11(n-1)=10n), så (n=11). Ur (na=22) fås sedan (a=2).</p><p><strong>Svar:</strong> (a=2) och (n=11).</p>",
+    "s": "<p>Koefficienten framför \\(x\\) är \\(na\\), alltså</p><p>\\[na=22.\\]</p><p>Koefficienten framför \\(x^2\\) är \\(\\binom{n}{2}a^2\\), alltså</p><p>\\[\\frac{n(n-1)}{2}a^2=220.\\]</p><p>Dividera den andra ekvationen med \\((na)^2=22^2\\):</p><p>\\[\\frac{n-1}{2n}=\\frac{220}{484}=\\frac5{11}.\\]</p><p>Därför \\(11(n-1)=10n\\), så \\(n=11\\). Ur \\(na=22\\) fås sedan \\(a=2\\).</p><p><strong>Svar:</strong> \\(a=2\\) och \\(n=11\\).</p>",
     "id": "1.403",
     "miniräknare": false,
     "geogebra": false,
@@ -6239,33 +6239,30 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "hypergeometrisk sannolikhet i lotteri",
     "poang": "2/2/0",
-    "t": "<p>I ett lotteri väljer man 5 olika nummer av 25. Därefter dras 5 vinnarnummer.</p><ol type=\"a\"><li>Bestäm sannolikheten att få alla 5 rätt.</li><li>Bestäm sannolikheten att få minst 3 rätt.</li></ol>",
-    "s": "<p>Antalet möjliga femmängder är \\(\\binom{25}{5}=53\\,130\\).</p><ol type=\"a\"><li>Endast en rad ger fem rätt: <strong>\\(1/53\\,130\\approx0,00188\\%\\)</strong>.</li><li>För exakt \\(r\\) rätt väljs \\(r\\) av de 5 egna numren och \\(5-r\\) av de 20 andra. Därför</li></ol><p>\\[\\frac{\\binom53\\binom{20}2+\\binom54\\binom{20}1+\\binom55}{\\binom{25}5}=\\frac{2001}{53130}\\approx\\mathbf{3,77\\%}.\\]</p>",
+    "t": "<p>I ett lotteri väljer man 5 olika nummer av 25. Därefter dras 5 vinnarnummer.</p><ol type=\"a\"><li>Bestäm sannolikheten att få alla 5 rätt.</li><li>Bestäm sannolikheten att få minst 3 rätt.</li></ol><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Antalet möjliga femmängder är \\(\\binom{25}{5}=53\\,130\\).</p><ol type=\"a\"><li>Endast en rad ger fem rätt: <strong>\\(1/53\\,130\\approx0,00188\\%\\)</strong>.</li><li>För exakt \\(r\\) rätt väljs \\(r\\) av de 5 egna numren och \\(5-r\\) av de 20 andra. Därför</li></ol><p>\\[\\frac{\\binom53\\binom{20}2+\\binom54\\binom{20}1+\\binom55}{\\binom{25}5}=\\frac{2001}{53130}\\approx\\mathbf{3,77\\%}.\\]</p><div class=\"facit-svar\"><p><strong>Godtagbara svar:</strong></p><p>a) \\(\\frac{1}{53130}\\) = \\(0,00001882\\) ≈ \\(0,001882\\,\\%\\)</p><p>b) \\(\\frac{29}{770}\\) = \\(0,03766\\) ≈ \\(3,77\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent är likvärdiga svar.</p></div>",
     "id": "1.35",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "flera_delar",
     "rättSvar": [
-      0.0018821757952192735,
-      3.766233766233766
+      "1/53130",
+      "29/770"
     ],
     "tolerans": [
-      5e-05,
-      0.02
+      null,
+      null
     ],
-    "självrättning": [
-      true,
-      true
-    ],
+    "självrättning": true,
     "formaga": [
       "procedur",
       "begrepp",
       "problemlösning"
     ],
     "svarFormat": [
-      "procent",
-      "procent"
+      "sannolikhet",
+      "sannolikhet"
     ],
     "svarsstruktur": "ordnad",
     "svarEtiketter": [
@@ -6277,7 +6274,7 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>I ett lotteri väljer man 5 olika nummer av 25. Därefter dras 5 vinnarnummer.</p><div class=\"spel-en-del\"><strong>a)</strong> Bestäm sannolikheten att få alla 5 rätt.</div>",
-        "s": "<p>Det finns (\\binom{25}{5}=53\\,130) lika sannolika femmängder och exakt en av dem ger fem rätt.</p><p>\\[P=\\frac1{53130}\\approx0,00188\\%.\\]</p><p><strong>Svar:</strong> cirka (0,00188\\%).</p>",
+        "s": "<p>Det finns \\(\\binom{25}{5}=53\\,130\\) lika sannolika femmängder och exakt en av dem ger fem rätt.</p><p>\\[P=\\frac1{53130}\\approx0,00188\\%.\\]</p><p><strong>Svar:</strong> cirka \\(0,00188\\%\\).</p>",
         "niva": "E",
         "poang": "2/0/0",
         "traningsniva": 2
@@ -6285,7 +6282,7 @@ window.BANKMATF1 = [
       {
         "etikett": "b",
         "t": "<p>I ett lotteri väljer man 5 olika nummer av 25. Därefter dras 5 vinnarnummer.</p><div class=\"spel-en-del\"><strong>b)</strong> Bestäm sannolikheten att få minst 3 rätt.</div>",
-        "s": "<p>”Minst 3 rätt” är de disjunkta fallen 3, 4 eller 5 rätt:</p><p>\\[P=\\frac{\\binom53\\binom{20}2+\\binom54\\binom{20}1+\\binom55}{\\binom{25}5}\\approx0,03766.\\]</p><p><strong>Svar:</strong> cirka (3,77\\%).</p>",
+        "s": "<p>”Minst 3 rätt” är de disjunkta fallen 3, 4 eller 5 rätt:</p><p>\\[P=\\frac{\\binom53\\binom{20}2+\\binom54\\binom{20}1+\\binom55}{\\binom{25}5}\\approx0,03766.\\]</p><p><strong>Svar:</strong> cirka \\(3,77\\%\\).</p>",
         "niva": "C",
         "poang": "0/2/0",
         "traningsniva": 3
@@ -6300,14 +6297,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "villkorad kombinatorisk sannolikhet",
     "poang": "0/3/0",
-    "t": "<p>Ur en grupp med 8 kvinnor och 6 män väljs slumpmässigt 5 personer. Givet att gruppen innehåller minst 3 kvinnor, bestäm sannolikheten att den innehåller exakt 4 kvinnor.</p>",
-    "s": "<p>Villkoret begränsar utfallsrummet till grupper med 3, 4 eller 5 kvinnor.</p><p>\\[P=\\frac{\\binom84\\binom61}{\\binom83\\binom62+\\binom84\\binom61+\\binom85\\binom60}=\\frac{420}{840+420+56}=\\frac{105}{329}\\approx\\mathbf{0,319}.\\]</p>",
+    "t": "<p>Ur en grupp med 8 kvinnor och 6 män väljs slumpmässigt 5 personer. Givet att gruppen innehåller minst 3 kvinnor, bestäm sannolikheten att den innehåller exakt 4 kvinnor.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Villkoret begränsar utfallsrummet till grupper med 3, 4 eller 5 kvinnor.</p><p>\\[P=\\frac{\\binom84\\binom61}{\\binom83\\binom62+\\binom84\\binom61+\\binom85\\binom60}=\\frac{420}{840+420+56}=\\frac{105}{329}\\approx\\mathbf{0,319}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{15}{47}\\) = \\(0,3191\\) ≈ \\(31,9\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.45",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.319,
+    "rättSvar": "15/47",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6316,7 +6313,7 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Villkoret skapar ett nytt utfallsrum. Räkna först hur många utfall som uppfyller villkoret och därefter hur många av dessa som också uppfyller det som efterfrågas.</p>",
     "traningsniva": 4
   },
@@ -6326,22 +6323,22 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "villkorad sannolikhet med kombinatorisk räkning",
     "poang": "0/3/0",
-    "t": "<p>Ur en samling med 44 olika kort, varav 4 är märkta, väljs två kort utan återläggning. Man vet att minst ett av de två är märkt.</p><p>Vad är sannolikheten att båda är märkta?</p>",
-    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>När villkoret ”minst ett märkt” redan är känt begränsas utfallsrummet. Antalet möjliga par som uppfyller villkoret är</p><p>\\[\\binom{44}2-\\binom{40}2.\\]</p><p>Gynnsamma par är \\(\\binom{4}2\\). Därför</p><p>\\[P=\\frac{\\binom{4}2}{\\binom{44}2-\\binom{40}2}=0.036145.\\]</p><p><strong>Svar:</strong> 0,0361.</p>",
+    "t": "<p>Ur en samling med 44 olika kort, varav 4 är märkta, väljs två kort utan återläggning. Man vet att minst ett av de två är märkt.</p><p>Vad är sannolikheten att båda är märkta?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>När villkoret ”minst ett märkt” redan är känt begränsas utfallsrummet. Antalet möjliga par som uppfyller villkoret är</p><p>\\[\\binom{44}2-\\binom{40}2.\\]</p><p>Gynnsamma par är \\(\\binom{4}2\\). Därför</p><p>\\[P=\\frac{\\binom{4}2}{\\binom{44}2-\\binom{40}2}=0.036145.\\]</p><p><strong>Svar:</strong> 0,0361.</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{3}{83}\\) = \\(0,03614\\) ≈ \\(3,61\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.433",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.03614457831325301,
-    "tolerans": 0.002,
+    "rättSvar": "3/83",
+    "tolerans": null,
     "självrättning": true,
     "formaga": [
       "begrepp",
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Villkoret skapar ett nytt utfallsrum. Räkna först hur många utfall som uppfyller villkoret och därefter hur många av dessa som också uppfyller det som efterfrågas.</p>",
     "traningsniva": 4
   },
@@ -6351,14 +6348,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "kombinatorisk sannolikhet med flera villkor",
     "poang": "0/3/0",
-    "t": "<p>En låda innehåller 8 röda, 6 blå och 4 gröna kulor. Fem kulor dras samtidigt utan återläggning.</p><p>Bestäm sannolikheten att exakt två av kulorna är röda och att minst en av de övriga tre är grön.</p>",
-    "s": "<p>Totalt finns \\(\\binom{18}{5}\\) möjliga femgrupper.</p><p>Välj först exakt två röda: \\(\\binom{8}{2}\\). Bland de tre återstående ska minst en vara grön. Från de 10 icke-röda kulorna finns totalt \\(\\binom{10}{3}\\) val, men \\(\\binom63\\) av dem innehåller bara blå kulor.</p><p>\\[P=\\frac{\\binom{8}{2}\\left(\\binom{10}{3}-\\binom63\\right)}{\\binom{18}{5}}=\\frac{28(120-20)}{8568}=\\frac{350}{1071}\\approx\\mathbf{0,327}.\\]</p>",
+    "t": "<p>En låda innehåller 8 röda, 6 blå och 4 gröna kulor. Fem kulor dras samtidigt utan återläggning.</p><p>Bestäm sannolikheten att exakt två av kulorna är röda och att minst en av de övriga tre är grön.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{18}{5}\\) möjliga femgrupper.</p><p>Välj först exakt två röda: \\(\\binom{8}{2}\\). Bland de tre återstående ska minst en vara grön. Från de 10 icke-röda kulorna finns totalt \\(\\binom{10}{3}\\) val, men \\(\\binom63\\) av dem innehåller bara blå kulor.</p><p>\\[P=\\frac{\\binom{8}{2}\\left(\\binom{10}{3}-\\binom63\\right)}{\\binom{18}{5}}=\\frac{28(120-20)}{8568}=\\frac{350}{1071}\\approx\\mathbf{0,327}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{50}{153}\\) = \\(0,3268\\) ≈ \\(32,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.50",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.327,
+    "rättSvar": "50/153",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6367,7 +6364,7 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Dela upp händelsen i disjunkta fall eller använd ett komplement inom det givna villkoret. Addera först när fallen inte överlappar.</p>",
     "traningsniva": 4
   },
@@ -6377,22 +6374,22 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "kombinatorisk sannolikhet med flera disjunkta fall",
     "poang": "0/3/0",
-    "t": "<p>En urna innehåller 5 röda och 7 gröna kulor. 4 kulor dras utan återläggning.</p><p>Bestäm sannolikheten att minst 2 av de dragna är röda. Redovisa hur du delar upp händelsen i disjunkta fall.</p>",
-    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>Dela upp efter exakt antal röda. Fallen är disjunkta, så deras antal kan adderas.</p><p>\\[P=\\frac{\\sum_{k=2}^4\\binom{5}k\\binom{7}{4-k}}{\\binom{12}{4}}=0.575758.\\]</p><p><strong>Svar:</strong> 0,5758.</p>",
+    "t": "<p>En urna innehåller 5 röda och 7 gröna kulor. 4 kulor dras utan återläggning.</p><p>Bestäm sannolikheten att minst 2 av de dragna är röda. Redovisa hur du delar upp händelsen i disjunkta fall.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>Dela upp efter exakt antal röda. Fallen är disjunkta, så deras antal kan adderas.</p><p>\\[P=\\frac{\\sum_{k=2}^4\\binom{5}k\\binom{7}{4-k}}{\\binom{12}{4}}=0.575758.\\]</p><p><strong>Svar:</strong> 0,5758.</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{19}{33}\\) = \\(0,5758\\) ≈ \\(57,6\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.435",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.5757575757575758,
-    "tolerans": 0.002,
+    "rättSvar": "19/33",
+    "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Dela upp händelsen i disjunkta fall eller använd ett komplement inom det givna villkoret. Addera först när fallen inte överlappar.</p>",
     "traningsniva": 4
   },
@@ -6402,13 +6399,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "två särskilda personer i slumpmässigt lag",
     "poang": "1/0/0",
-    "t": "<p>Fyra personer väljs slumpmässigt ur en grupp med 10 personer. Hur stor är sannolikheten att två bestämda personer, A och B, båda blir valda?</p>",
-    "s": "<p>Alla fyrgrupper är lika sannolika. Totalt finns \\(\\binom{10}{4}=210\\) grupper.</p><p>Om A och B måste vara med återstår två platser bland de övriga 8: \\(\\binom{8}{2}=28\\).</p><p>\\[P=\\frac{28}{210}=\\mathbf{\\frac{2}{15}}\\approx0,133.\\]</p>",
+    "t": "<p>Fyra personer väljs slumpmässigt ur en grupp med 10 personer. Hur stor är sannolikheten att två bestämda personer, A och B, båda blir valda?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Alla fyrgrupper är lika sannolika. Totalt finns \\(\\binom{10}{4}=210\\) grupper.</p><p>Om A och B måste vara med återstår två platser bland de övriga 8: \\(\\binom{8}{2}=28\\).</p><p>\\[P=\\frac{28}{210}=\\mathbf{\\frac{2}{15}}\\approx0,133.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{2}{15}\\) = \\(0,1333\\) ≈ \\(13,3\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.102",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "2/15",
     "tolerans": null,
     "självrättning": true,
@@ -6416,7 +6413,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 2
   },
@@ -6426,13 +6423,13 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "defekta komponenter i stickprov",
     "poang": "0/2/0",
-    "t": "<span class=\"fig\"><svg height=\"235\" width=\"430\" viewBox=\"0 0 430 235\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Låda med tolv komponenter varav tre markerade som defekta\">\n<rect width=\"430\" height=\"235\" fill=\"white\"/>\n<rect x=\"55\" y=\"30\" width=\"320\" height=\"165\" rx=\"8\" fill=\"none\" stroke=\"#333\" stroke-width=\"2.5\"/>\n<g stroke=\"#333\" stroke-width=\"1.8\">\n<circle cx=\"100\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"175\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"250\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"325\" cy=\"70\" r=\"15\" fill=\"white\"/>\n<circle cx=\"100\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"175\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"250\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"325\" cy=\"120\" r=\"15\" fill=\"white\"/>\n<circle cx=\"100\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"175\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"250\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"325\" cy=\"170\" r=\"15\" fill=\"white\"/>\n</g>\n<text x=\"80\" y=\"220\" font-size=\"14\">3 markerade komponenter är defekta</text>\n</svg></span><p>En låda innehåller 12 komponenter, varav 3 är defekta. Fyra komponenter väljs slumpmässigt utan återläggning.</p><p>Bestäm sannolikheten att exakt en av de valda komponenterna är defekt.</p>",
-    "s": "<p>Totalt finns \\(\\binom{12}{4}\\) lika sannolika fyrgrupper.</p><p>För ett gynnsamt urval väljs 1 av de 3 defekta och 3 av de 9 fungerande:</p><p>\\[P=\\frac{\\binom{3}{1}\\binom93}{\\binom{12}{4}}=\\frac{3\\cdot84}{495}=\\mathbf{\\frac{28}{55}}\\approx0,509.\\]</p>",
+    "t": "<span class=\"fig\"><svg height=\"235\" width=\"430\" viewBox=\"0 0 430 235\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Låda med tolv komponenter varav tre markerade som defekta\">\n<rect width=\"430\" height=\"235\" fill=\"white\"/>\n<rect x=\"55\" y=\"30\" width=\"320\" height=\"165\" rx=\"8\" fill=\"none\" stroke=\"#333\" stroke-width=\"2.5\"/>\n<g stroke=\"#333\" stroke-width=\"1.8\">\n<circle cx=\"100\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"175\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"250\" cy=\"70\" r=\"15\" fill=\"#aaa\"/><circle cx=\"325\" cy=\"70\" r=\"15\" fill=\"white\"/>\n<circle cx=\"100\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"175\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"250\" cy=\"120\" r=\"15\" fill=\"white\"/><circle cx=\"325\" cy=\"120\" r=\"15\" fill=\"white\"/>\n<circle cx=\"100\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"175\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"250\" cy=\"170\" r=\"15\" fill=\"white\"/><circle cx=\"325\" cy=\"170\" r=\"15\" fill=\"white\"/>\n</g>\n<text x=\"80\" y=\"220\" font-size=\"14\">3 markerade komponenter är defekta</text>\n</svg></span><p>En låda innehåller 12 komponenter, varav 3 är defekta. Fyra komponenter väljs slumpmässigt utan återläggning.</p><p>Bestäm sannolikheten att exakt en av de valda komponenterna är defekt.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{12}{4}\\) lika sannolika fyrgrupper.</p><p>För ett gynnsamt urval väljs 1 av de 3 defekta och 3 av de 9 fungerande:</p><p>\\[P=\\frac{\\binom{3}{1}\\binom93}{\\binom{12}{4}}=\\frac{3\\cdot84}{495}=\\mathbf{\\frac{28}{55}}\\approx0,509.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{28}{55}\\) = \\(0,5091\\) ≈ \\(50,9\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.103",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "28/55",
     "tolerans": null,
     "självrättning": true,
@@ -6440,7 +6437,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6450,13 +6447,13 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "slumpmässig jury",
     "poang": "0/2/0",
-    "t": "<p>En jury med 7 personer väljs slumpmässigt bland 9 vuxna och 5 ungdomar. Bestäm sannolikheten att juryn innehåller exakt 2 ungdomar.</p>",
-    "s": "<p>Totalt finns \\(\\binom{14}{7}\\) juryer. För exakt 2 ungdomar väljs 2 av de 5 ungdomarna och 5 av de 9 vuxna:</p><p>\\[P=\\frac{\\binom{5}{2}\\binom95}{\\binom{14}{7}}=\\frac{1260}{3432}=\\mathbf{\\frac{105}{286}}\\approx0,367.\\]</p>",
+    "t": "<p>En jury med 7 personer väljs slumpmässigt bland 9 vuxna och 5 ungdomar. Bestäm sannolikheten att juryn innehåller exakt 2 ungdomar.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{14}{7}\\) juryer. För exakt 2 ungdomar väljs 2 av de 5 ungdomarna och 5 av de 9 vuxna:</p><p>\\[P=\\frac{\\binom{5}{2}\\binom95}{\\binom{14}{7}}=\\frac{1260}{3432}=\\mathbf{\\frac{105}{286}}\\approx0,367.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{105}{286}\\) = \\(0,3671\\) ≈ \\(36,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.104",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "105/286",
     "tolerans": null,
     "självrättning": true,
@@ -6464,7 +6461,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6474,21 +6471,21 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "kortlek exakt två hjärter",
     "poang": "0/2/0",
-    "t": "<p>Fem kort dras slumpmässigt ur en vanlig kortlek med 52 kort. Bestäm sannolikheten att exakt två av korten är hjärter.</p>",
-    "s": "<p>Totalt finns \\(\\binom{52}{5}\\) femkortshänder.</p><p>För exakt två hjärter väljs 2 av de 13 hjärterkorten och 3 av de 39 övriga:</p><p>\\[P=\\frac{\\binom{13}{2}\\binom{39}{3}}{\\binom{52}{5}}\\approx\\mathbf{0,274}.\\]</p><p>Det är ungefär <strong>27,4 %</strong>.</p>",
+    "t": "<p>Fem kort dras slumpmässigt ur en vanlig kortlek med 52 kort. Bestäm sannolikheten att exakt två av korten är hjärter.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{52}{5}\\) femkortshänder.</p><p>För exakt två hjärter väljs 2 av de 13 hjärterkorten och 3 av de 39 övriga:</p><p>\\[P=\\frac{\\binom{13}{2}\\binom{39}{3}}{\\binom{52}{5}}\\approx\\mathbf{0,274}.\\]</p><p>Det är ungefär <strong>27,4 %</strong>.</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{9139}{33320}\\) = \\(0,2743\\) ≈ \\(27,4\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.105",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.274,
+    "rättSvar": "9139/33320",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6498,13 +6495,13 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "villkorad sannolikhet i lagurval",
     "poang": "0/3/0",
-    "t": "<p>Fem personer väljs slumpmässigt bland 7 personer från grupp A och 6 från grupp B. Givet att den valda gruppen innehåller minst 2 personer från grupp B, bestäm sannolikheten att den innehåller exakt 3 personer från grupp B.</p>",
-    "s": "<p><strong>Viktigt:</strong> Eftersom sannolikheten är villkorad ska nämnaren bara innehålla grupper som uppfyller villkoret ”minst 2 från B”.</p><p>Exakt 3 från B: \\[\\binom63\\binom72=420.\\]</p><p>Villkoret tillåter 2, 3, 4 eller 5 från B:</p><p>\\[N=\\binom62\\binom73+\\binom63\\binom72+\\binom{6}{4}\\binom71+\\binom65\\binom70=1056.\\]</p><p>\\[P=\\frac{420}{1056}=\\mathbf{\\frac{35}{88}}\\approx0,398.\\]</p>",
+    "t": "<p>Fem personer väljs slumpmässigt bland 7 personer från grupp A och 6 från grupp B. Givet att den valda gruppen innehåller minst 2 personer från grupp B, bestäm sannolikheten att den innehåller exakt 3 personer från grupp B.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Viktigt:</strong> Eftersom sannolikheten är villkorad ska nämnaren bara innehålla grupper som uppfyller villkoret ”minst 2 från B”.</p><p>Exakt 3 från B: \\[\\binom63\\binom72=420.\\]</p><p>Villkoret tillåter 2, 3, 4 eller 5 från B:</p><p>\\[N=\\binom62\\binom73+\\binom63\\binom72+\\binom{6}{4}\\binom71+\\binom65\\binom70=1056.\\]</p><p>\\[P=\\frac{420}{1056}=\\mathbf{\\frac{35}{88}}\\approx0,398.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{35}{88}\\) = \\(0,3977\\) ≈ \\(39,8\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.106",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "35/88",
     "tolerans": null,
     "självrättning": true,
@@ -6514,7 +6511,7 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Villkoret skapar ett nytt utfallsrum. Räkna först hur många utfall som uppfyller villkoret och därefter hur många av dessa som också uppfyller det som efterfrågas.</p>",
     "traningsniva": 4
   },
@@ -6524,14 +6521,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "minst en av viss typ",
     "poang": "0/2/0",
-    "t": "<p>Fem uppgifter väljs slumpmässigt ur 8 algebrauppgifter och 6 kombinatorikuppgifter. Bestäm sannolikheten att minst en kombinatorikuppgift väljs.</p>",
-    "s": "<p><strong>Komplementmetod:</strong> Räkna sannolikheten för motsatsen: att alla fem är algebrauppgifter.</p><p>\\[P=1-\\frac{\\binom85}{\\binom{14}{5}}=1-\\frac{56}{2002}=\\mathbf{\\frac{973}{1001}}\\approx0,972.\\]</p>",
+    "t": "<p>Fem uppgifter väljs slumpmässigt ur 8 algebrauppgifter och 6 kombinatorikuppgifter. Bestäm sannolikheten att minst en kombinatorikuppgift väljs.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Komplementmetod:</strong> Räkna sannolikheten för motsatsen: att alla fem är algebrauppgifter.</p><p>\\[P=1-\\frac{\\binom85}{\\binom{14}{5}}=1-\\frac{56}{2002}=\\mathbf{\\frac{973}{1001}}\\approx0,972.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{139}{143}\\) = \\(0,972\\) ≈ \\(97,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.107",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
-    "rättSvar": "973/1001",
+    "svarstyp": "numeriskt",
+    "rättSvar": "139/143",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6540,8 +6537,8 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
-    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och ta (1-P(\\text{ingen})).</p>",
+    "svarFormat": "sannolikhet",
+    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och använd \\(1-P(\\text{ingen})\\).</p>",
     "traningsniva": 3
   },
   {
@@ -6550,13 +6547,13 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "två personer bredvid varandra i slumpmässigt led",
     "poang": "0/2/0",
-    "t": "<p>Åtta personer ställer sig slumpmässigt på led. Bestäm sannolikheten att två bestämda personer, A och B, hamnar bredvid varandra.</p>",
-    "s": "<p>Totalt finns \\(8!\\) ordningar.</p><p>Om A och B står bredvid varandra behandlas de som ett block: \\(7!\\) ordningar av blocket och de sex andra, och 2 ordningar inom blocket.</p><p>\\[P=\\frac{2\\cdot7!}{8!}=\\mathbf{\\frac14}.\\]</p>",
+    "t": "<p>Åtta personer ställer sig slumpmässigt på led. Bestäm sannolikheten att två bestämda personer, A och B, hamnar bredvid varandra.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(8!\\) ordningar.</p><p>Om A och B står bredvid varandra behandlas de som ett block: \\(7!\\) ordningar av blocket och de sex andra, och 2 ordningar inom blocket.</p><p>\\[P=\\frac{2\\cdot7!}{8!}=\\mathbf{\\frac14}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{4}\\) = \\(0,25\\) ≈ \\(25\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.108",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/4",
     "tolerans": null,
     "självrättning": true,
@@ -6564,7 +6561,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna ordningar där de två bestämda personerna behandlas som ett block och dividera med antalet möjliga ordningar.</p>",
     "traningsniva": 3
   },
@@ -6574,21 +6571,21 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "lotteri exakt fyra rätt",
     "poang": "0/2/0",
-    "t": "<p>I ett lotteri väljer en spelare 6 olika nummer av 30. Sex vinnarnummer dras slumpmässigt. Bestäm sannolikheten att spelaren får exakt 4 rätt.</p>",
-    "s": "<p>Totalt finns \\(\\binom{30}{6}\\) möjliga vinnarrader.</p><p>För exakt 4 rätt väljs 4 av spelarens 6 nummer och 2 av de 24 nummer spelaren inte valde:</p><p>\\[P=\\frac{\\binom{6}{4}\\binom{24}{2}}{\\binom{30}{6}}\\approx\\mathbf{0,00697}.\\]</p><p>Det motsvarar ungefär <strong>0,697 %</strong>.</p>",
+    "t": "<p>I ett lotteri väljer en spelare 6 olika nummer av 30. Sex vinnarnummer dras slumpmässigt. Bestäm sannolikheten att spelaren får exakt 4 rätt.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{30}{6}\\) möjliga vinnarrader.</p><p>För exakt 4 rätt väljs 4 av spelarens 6 nummer och 2 av de 24 nummer spelaren inte valde:</p><p>\\[P=\\frac{\\binom{6}{4}\\binom{24}{2}}{\\binom{30}{6}}\\approx\\mathbf{0,00697}.\\]</p><p>Det motsvarar ungefär <strong>0,697 %</strong>.</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{92}{13195}\\) = \\(0,006972\\) ≈ \\(0,6972\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.109",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.00697,
+    "rättSvar": "92/13195",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 4
   },
@@ -6598,21 +6595,21 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "kombinatorisk sannolikhet med urval eller ordning",
     "poang": "0/2/0",
-    "t": "<p>En urna innehåller 10 röda och 12 blå kulor. Tre kulor dras utan återläggning.</p><p>Bestäm sannolikheten att båda färgerna förekommer.</p>",
-    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>De gynnsamma fallen är två röda och en blå eller en röd och två blå:</p><p>\\[P=\\frac{\\binom{10}2\\binom{12}1+\\binom{10}1\\binom{12}2}{\\binom{22}3}\\approx 0,77922.\\]</p>",
+    "t": "<p>En urna innehåller 10 röda och 12 blå kulor. Tre kulor dras utan återläggning.</p><p>Bestäm sannolikheten att båda färgerna förekommer.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>De gynnsamma fallen är två röda och en blå eller en röd och två blå:</p><p>\\[P=\\frac{\\binom{10}2\\binom{12}1+\\binom{10}1\\binom{12}2}{\\binom{22}3}\\approx 0,77922.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{60}{77}\\) = \\(0,7792\\) ≈ \\(77,9\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.444",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.7792207792207793,
-    "tolerans": 0.0002,
+    "rättSvar": "60/77",
+    "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "resonemang"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6622,14 +6619,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "minst två premiumobjekt",
     "poang": "0/2/0",
-    "t": "<p>Fem produkter väljs slumpmässigt ur ett parti med 15 produkter, varav 4 är premiumprodukter. Bestäm sannolikheten att minst 2 premiumprodukter väljs.</p>",
-    "s": "<p>Totalt finns \\(\\binom{15}{5}\\) femgrupper.</p><p>”Minst 2” innebär 2, 3 eller 4 premiumprodukter:</p><p>\\[N=\\binom42\\binom{11}{3}+\\binom43\\binom{11}{2}+\\binom44\\binom{11}{1}=1221.\\]</p><p>\\[P=\\frac{1221}{\\binom{15}{5}}=\\frac{1221}{3003}\\approx\\mathbf{0,407}.\\]</p>",
+    "t": "<p>Fem produkter väljs slumpmässigt ur ett parti med 15 produkter, varav 4 är premiumprodukter. Bestäm sannolikheten att minst 2 premiumprodukter väljs.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{15}{5}\\) femgrupper.</p><p>”Minst 2” innebär 2, 3 eller 4 premiumprodukter:</p><p>\\[N=\\binom42\\binom{11}{3}+\\binom43\\binom{11}{2}+\\binom44\\binom{11}{1}=1221.\\]</p><p>\\[P=\\frac{1221}{\\binom{15}{5}}=\\frac{1221}{3003}\\approx\\mathbf{0,407}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{37}{91}\\) = \\(0,4066\\) ≈ \\(40,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.110",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.407,
+    "rättSvar": "37/91",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6638,7 +6635,7 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Dela upp händelsen i disjunkta fall eller använd ett komplement inom det givna villkoret. Addera först när fallen inte överlappar.</p>",
     "traningsniva": 4
   },
@@ -6649,12 +6646,12 @@ window.BANKMATF1 = [
     "typ": "sannolikhet med kombinationer",
     "poang": "2/0/0",
     "id": "1.128",
-    "t": "<p>I en låda finns 5 röda och 3 blå kulor. Två kulor dras samtidigt.</p><p>Bestäm sannolikheten att båda är röda.</p>",
-    "s": "<p>Totalt antal sätt att välja 2 kulor av 8 är</p><p>\\[\\binom{8}{2}=28.\\]</p><p>Gynnsamma val är att välja 2 av de 5 röda:</p><p>\\[\\binom{5}{2}=10.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{10}{28}=\\frac{5}{14}.\\]</p><p><strong>Sannolikheten är \\(5/14\\).</strong></p>",
+    "t": "<p>I en låda finns 5 röda och 3 blå kulor. Två kulor dras samtidigt.</p><p>Bestäm sannolikheten att båda är röda.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt antal sätt att välja 2 kulor av 8 är</p><p>\\[\\binom{8}{2}=28.\\]</p><p>Gynnsamma val är att välja 2 av de 5 röda:</p><p>\\[\\binom{5}{2}=10.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{10}{28}=\\frac{5}{14}.\\]</p><p><strong>Sannolikheten är \\(5/14\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{5}{14}\\) = \\(0,3571\\) ≈ \\(35,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "5/14",
     "tolerans": null,
     "självrättning": true,
@@ -6662,7 +6659,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 1
   },
@@ -6711,7 +6708,7 @@ window.BANKMATF1 = [
       {
         "etikett": "b",
         "t": "<span class=\"fig\"><svg width=\"340\" height=\"235\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Rutnät med tre steg åt höger och två steg uppåt från A till B\">\n<rect width=\"350\" height=\"240\" fill=\"white\"/>\n<g stroke=\"#666\" stroke-width=\"1.5\"><line x1=\"60\" y1=\"45\" x2=\"60\" y2=\"185\"/><line x1=\"130\" y1=\"45\" x2=\"130\" y2=\"185\"/><line x1=\"200\" y1=\"45\" x2=\"200\" y2=\"185\"/><line x1=\"270\" y1=\"45\" x2=\"270\" y2=\"185\"/><line x1=\"60\" y1=\"45\" x2=\"270\" y2=\"45\"/><line x1=\"60\" y1=\"115\" x2=\"270\" y2=\"115\"/><line x1=\"60\" y1=\"185\" x2=\"270\" y2=\"185\"/></g>\n<circle cx=\"60\" cy=\"185\" r=\"5\" fill=\"#222\"/><circle cx=\"270\" cy=\"45\" r=\"5\" fill=\"#222\"/>\n<circle cx=\"200\" cy=\"115\" r=\"4.5\" fill=\"#B23A2E\"/>\n<text x=\"40\" y=\"204\" font-size=\"16\">A</text><text x=\"278\" y=\"41\" font-size=\"16\">B</text>\n<text x=\"208\" y=\"110\" font-size=\"13\" fill=\"#B23A2E\">M</text>\n<text x=\"60\" y=\"225\" font-size=\"14\">endast steg åt höger eller uppåt</text>\n</svg></span><p>Man går från punkt A till punkt B i rutnätet genom att bara gå åt höger eller uppåt.</p><div class=\"spel-en-del\"><strong>b)</strong> Hur många av dessa vägar passerar genom punkten mitt i rutnätet, alltså punkten som ligger 2 steg åt höger och 1 steg upp från A?</div>",
-        "s": "<p>Från A till M behövs 2 högersteg och 1 uppsteg: (\\binom31=3) vägar. Från M till B behövs 1 högersteg och 1 uppsteg: (\\binom21=2) vägar.</p><p>Multiplikationsprincipen ger (3\\cdot2=6).</p><p><strong>Svar:</strong> 6.</p>",
+        "s": "<p>Från A till M behövs 2 högersteg och 1 uppsteg: \\(\\binom31=3\\) vägar. Från M till B behövs 1 högersteg och 1 uppsteg: \\(\\binom21=2\\) vägar.</p><p>Multiplikationsprincipen ger \\(3\\cdot2=6\\).</p><p><strong>Svar:</strong> 6.</p>",
         "niva": "C",
         "poang": "0/1/0",
         "traningsniva": 3
@@ -6726,22 +6723,22 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "avancerad kombinatorisk sannolikhet",
     "poang": "0/3/0",
-    "t": "<p>Ur 22 personer, där 5 tillhör en särskild grupp, väljs 6 personer slumpmässigt.</p><p>Bestäm sannolikheten att minst tre från den särskilda gruppen väljs.</p>",
-    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>Dela upp i de disjunkta fallen 3, 4 och 5 särskilda personer:</p><p>\\[P=\\frac{\\sum_{k=3}^5\\binom5k\\binom{17}{6-k}}{\\binom{22}{6}}\\approx 0,10048.\\]</p>",
+    "t": "<p>Ur 22 personer, där 5 tillhör en särskild grupp, väljs 6 personer slumpmässigt.</p><p>Bestäm sannolikheten att minst tre från den särskilda gruppen väljs.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Beskriv utfallsrummet och de gynnsamma fallen med samma typ av urval. Vid urval utan återläggning är kombinationer ofta naturliga; vid minst-villkor kan komplementhändelsen förenkla.</p><p>Dela upp i de disjunkta fallen 3, 4 och 5 särskilda personer:</p><p>\\[P=\\frac{\\sum_{k=3}^5\\binom5k\\binom{17}{6-k}}{\\binom{22}{6}}\\approx 0,10048.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{21}{209}\\) = \\(0,1005\\) ≈ \\(10\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.448",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.10047846889952153,
-    "tolerans": 0.0002,
+    "rättSvar": "21/209",
+    "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna ordningar där de två bestämda personerna behandlas som ett block och dividera med antalet möjliga ordningar.</p>",
     "traningsniva": 4
   },
@@ -6751,13 +6748,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "hypergeometrisk exakt en",
     "poang": "2/0/0",
-    "t": "<p>En låda innehåller 6 vita och 4 svarta kulor. Tre kulor dras samtidigt. Bestäm sannolikheten att exakt en är svart.</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Gynnsamma val: välj 1 svart av 4 och 2 vita av 6. Totalt väljs 3 av 10:</p><p>\\[P=\\frac{\\binom41\\binom62}{\\binom{10}{3}}=\\frac{60}{120}=\\frac12.\\]</p>",
+    "t": "<p>En låda innehåller 6 vita och 4 svarta kulor. Tre kulor dras samtidigt. Bestäm sannolikheten att exakt en är svart.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Gynnsamma val: välj 1 svart av 4 och 2 vita av 6. Totalt väljs 3 av 10:</p><p>\\[P=\\frac{\\binom41\\binom62}{\\binom{10}{3}}=\\frac{60}{120}=\\frac12.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{2}\\) = \\(0,5\\) ≈ \\(50\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.159",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/2",
     "tolerans": null,
     "självrättning": true,
@@ -6766,7 +6763,7 @@ window.BANKMATF1 = [
       "begrepp",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 2
   },
@@ -6776,14 +6773,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "minst en med komplement",
     "poang": "0/2/0",
-    "t": "<p>Fyra kort dras ur en vanlig kortlek. Bestäm sannolikheten att minst ett kort är ett ess.</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Det är enklare att använda komplementet: inga ess. Det finns 48 icke-ess.</p><p>\\[P(\\text{minst ett ess})=1-\\frac{\\binom{48}{4}}{\\binom{52}{4}}\\approx0,281.\\]</p>",
+    "t": "<p>Fyra kort dras ur en vanlig kortlek. Bestäm sannolikheten att minst ett kort är ett ess.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Det är enklare att använda komplementet: inga ess. Det finns 48 icke-ess.</p><p>\\[P(\\text{minst ett ess})=1-\\frac{\\binom{48}{4}}{\\binom{52}{4}}\\approx0,281.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{15229}{54145}\\) = \\(0,2813\\) ≈ \\(28,1\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.160",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.281,
+    "rättSvar": "15229/54145",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6792,8 +6789,8 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
-    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och ta (1-P(\\text{ingen})).</p>",
+    "svarFormat": "sannolikhet",
+    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och använd \\(1-P(\\text{ingen})\\).</p>",
     "traningsniva": 3
   },
   {
@@ -6802,13 +6799,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "sannolikhet båda jämna utan återläggning",
     "poang": "2/0/0",
-    "t": "<p>Två olika tal väljs slumpmässigt ur \\(\\{1,2,\\ldots,10\\}\\). Vad är sannolikheten att båda talen är jämna?</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Det finns \\(\\binom{10}{2}=45\\) möjliga par. Fem av talen är jämna, så gynnsamma par är \\(\\binom52=10\\).</p><p>\\[P=\\frac{10}{45}=\\frac29.\\]</p><p><strong>Svar: \\(\\frac29\\).</strong></p>",
+    "t": "<p>Två olika tal väljs slumpmässigt ur \\(\\{1,2,\\ldots,10\\}\\). Vad är sannolikheten att båda talen är jämna?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Det finns \\(\\binom{10}{2}=45\\) möjliga par. Fem av talen är jämna, så gynnsamma par är \\(\\binom52=10\\).</p><p>\\[P=\\frac{10}{45}=\\frac29.\\]</p><p><strong>Svar: \\(\\frac29\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{2}{9}\\) = \\(0,2222\\) ≈ \\(22,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.197",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "2/9",
     "tolerans": null,
     "självrättning": true,
@@ -6816,7 +6813,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 1
   },
@@ -6826,21 +6823,21 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "sannolikhet två från viss grupp",
     "poang": "2/0/0",
-    "t": "<p>I en klass finns 8 flickor och 12 pojkar. Två elever väljs slumpmässigt.</p><p>Vad är sannolikheten att båda är flickor?</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla par: \\(\\binom{20}{2}=190\\). Gynnsamma par: \\(\\binom82=28\\).</p><p>\\[P=\\frac{28}{190}=\\frac{14}{95}.\\]</p>",
+    "t": "<p>I en klass finns 8 flickor och 12 pojkar. Två elever väljs slumpmässigt.</p><p>Vad är sannolikheten att båda är flickor?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla par: \\(\\binom{20}{2}=190\\). Gynnsamma par: \\(\\binom82=28\\).</p><p>\\[P=\\frac{28}{190}=\\frac{14}{95}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{14}{95}\\) = \\(0,1474\\) ≈ \\(14,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.198",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": "\\frac{14}{95}",
+    "svarstyp": "numeriskt",
+    "rättSvar": "14/95",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 1
   },
@@ -6850,13 +6847,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "alla röda utan återläggning",
     "poang": "2/0/0",
-    "t": "<p>En påse innehåller 6 röda och 4 blå kulor. Tre kulor väljs utan återläggning.</p><p>Vad är sannolikheten att alla tre är röda?</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla möjliga tregrupper: \\(\\binom{10}{3}=120\\). Tre röda kan väljas på \\(\\binom63=20\\) sätt.</p><p>\\[P=\\frac{20}{120}=\\frac16.\\]</p><p><strong>Svar: \\(\\frac16\\).</strong></p>",
+    "t": "<p>En påse innehåller 6 röda och 4 blå kulor. Tre kulor väljs utan återläggning.</p><p>Vad är sannolikheten att alla tre är röda?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla möjliga tregrupper: \\(\\binom{10}{3}=120\\). Tre röda kan väljas på \\(\\binom63=20\\) sätt.</p><p>\\[P=\\frac{20}{120}=\\frac16.\\]</p><p><strong>Svar: \\(\\frac16\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{6}\\) = \\(0,1667\\) ≈ \\(16,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.199",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/6",
     "tolerans": null,
     "självrättning": true,
@@ -6864,7 +6861,7 @@ window.BANKMATF1 = [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 1
   },
@@ -6874,21 +6871,21 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "sannolikhet att bestämd person väljs",
     "poang": "2/0/0",
-    "t": "<p>Ur 10 personer väljs en grupp med 3 personer slumpmässigt. Vad är sannolikheten att en bestämd person, Alex, kommer med?</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla grupper: \\(\\binom{10}{3}=120\\).</p><p>Om Alex ska vara med väljer vi de två andra bland de återstående 9:</p><p>\\[\\binom92=36.\\]</p><p>\\[P=\\frac{36}{120}=\\frac3{10}.\\]</p>",
+    "t": "<p>Ur 10 personer väljs en grupp med 3 personer slumpmässigt. Vad är sannolikheten att en bestämd person, Alex, kommer med?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla grupper: \\(\\binom{10}{3}=120\\).</p><p>Om Alex ska vara med väljer vi de två andra bland de återstående 9:</p><p>\\[\\binom92=36.\\]</p><p>\\[P=\\frac{36}{120}=\\frac3{10}.\\]</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{3}{10}\\) = \\(0,3\\) ≈ \\(30\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.200",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": "\\frac{3}{10}",
+    "svarstyp": "numeriskt",
+    "rättSvar": "3/10",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 1
   },
@@ -6898,21 +6895,21 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "exakt två röda",
     "poang": "0/2/0",
-    "t": "<p>En låda innehåller 5 röda och 7 blå komponenter. Fyra komponenter väljs slumpmässigt utan återläggning.</p><p>Vad är sannolikheten att exakt två är röda?</p>",
-    "s": "<p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>För exakt två röda väljer vi 2 av 5 röda och 2 av 7 blå:</p><p>\\[\\binom52\\binom72=10\\cdot21=210.\\]</p><p>\\[P=\\frac{210}{495}=\\frac{14}{33}.\\]</p><p><strong>Svar: \\(\\frac{14}{33}\\approx42,4\\%\\).</strong></p>",
+    "t": "<p>En låda innehåller 5 röda och 7 blå komponenter. Fyra komponenter väljs slumpmässigt utan återläggning.</p><p>Vad är sannolikheten att exakt två är röda?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>För exakt två röda väljer vi 2 av 5 röda och 2 av 7 blå:</p><p>\\[\\binom52\\binom72=10\\cdot21=210.\\]</p><p>\\[P=\\frac{210}{495}=\\frac{14}{33}.\\]</p><p><strong>Svar: \\(\\frac{14}{33}\\approx42,4\\%\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{14}{33}\\) = \\(0,4242\\) ≈ \\(42,4\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.201",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": 42.4,
+    "svarstyp": "numeriskt",
+    "rättSvar": "14/33",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "procent",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6922,14 +6919,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "minst en defekt via komplement",
     "poang": "0/2/0",
-    "t": "<p>I ett parti med 20 produkter är 2 defekta. Tre produkter väljs slumpmässigt utan återläggning.</p><p>Bestäm sannolikheten att minst en av de valda produkterna är defekt.</p>",
-    "s": "<p>Det är enklast att använda komplementhändelsen ”ingen defekt”.</p><p>\\[P(\\text{ingen defekt})=\\frac{\\binom{18}{3}}{\\binom{20}{3}}=\\frac{816}{1140}.\\]</p><p>Därför</p><p>\\[P(\\text{minst en defekt})=1-\\frac{816}{1140}=\\frac{324}{1140}=\\frac{27}{95}.\\]</p><p><strong>\\(\\frac{27}{95}\\approx28,4\\%\\).</strong></p>",
+    "t": "<p>I ett parti med 20 produkter är 2 defekta. Tre produkter väljs slumpmässigt utan återläggning.</p><p>Bestäm sannolikheten att minst en av de valda produkterna är defekt.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Det är enklast att använda komplementhändelsen ”ingen defekt”.</p><p>\\[P(\\text{ingen defekt})=\\frac{\\binom{18}{3}}{\\binom{20}{3}}=\\frac{816}{1140}.\\]</p><p>Därför</p><p>\\[P(\\text{minst en defekt})=1-\\frac{816}{1140}=\\frac{324}{1140}=\\frac{27}{95}.\\]</p><p><strong>\\(\\frac{27}{95}\\approx28,4\\%\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{27}{95}\\) = \\(0,2842\\) ≈ \\(28,4\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.202",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": 28.4,
+    "svarstyp": "numeriskt",
+    "rättSvar": "27/95",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6938,8 +6935,8 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "procent",
-    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och ta (1-P(\\text{ingen})).</p>",
+    "svarFormat": "sannolikhet",
+    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och använd \\(1-P(\\text{ingen})\\).</p>",
     "traningsniva": 3
   },
   {
@@ -6948,21 +6945,21 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "exakt en kvinna i urval",
     "poang": "0/2/0",
-    "t": "<p>En grupp består av 7 kvinnor och 5 män. Fyra personer väljs slumpmässigt.</p><p>Vad är sannolikheten att exakt en kvinna väljs?</p>",
-    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>Gynnsamt: välj 1 av 7 kvinnor och 3 av 5 män:</p><p>\\[\\binom71\\binom53=7\\cdot10=70.\\]</p><p>\\[P=\\frac{70}{495}=\\frac{14}{99}.\\]</p><p><strong>\\(P\\approx14,1\\%\\).</strong></p>",
+    "t": "<p>En grupp består av 7 kvinnor och 5 män. Fyra personer väljs slumpmässigt.</p><p>Vad är sannolikheten att exakt en kvinna väljs?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Nyckelidé:</strong> Räkna först antalet lika sannolika utfall i hela urvalet och därefter antalet gynnsamma utfall. Sannolikheten fås som gynnsamma utfall dividerat med samtliga möjliga utfall.</p><p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>Gynnsamt: välj 1 av 7 kvinnor och 3 av 5 män:</p><p>\\[\\binom71\\binom53=7\\cdot10=70.\\]</p><p>\\[P=\\frac{70}{495}=\\frac{14}{99}.\\]</p><p><strong>\\(P\\approx14,1\\%\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{14}{99}\\) = \\(0,1414\\) ≈ \\(14,1\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.203",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": 14.1,
+    "svarstyp": "numeriskt",
+    "rättSvar": "14/99",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
       "procedur",
       "problemlösning"
     ],
-    "svarFormat": "procent",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Räkna alla lika sannolika urval med kombinationstal. För exakt (k) av en viss typ väljs (k) från den typen och resten från de övriga.</p>",
     "traningsniva": 3
   },
@@ -6972,14 +6969,14 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "minst två särskilda objekt",
     "poang": "0/3/0",
-    "t": "<p>Av 12 böcker är 4 signerade. Fyra böcker väljs slumpmässigt.</p><p>Vad är sannolikheten att minst två signerade böcker väljs?</p>",
-    "s": "<p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>”Minst två” betyder exakt 2, exakt 3 eller exakt 4 signerade:</p><p>\\[\\binom42\\binom82+\\binom43\\binom81+\\binom44\\binom80\\]</p><p>\\[=6\\cdot28+4\\cdot8+1=201.\\]</p><p>\\[P=\\frac{201}{495}=\\frac{67}{165}.\\]</p><p><strong>\\(P\\approx40,6\\%\\).</strong></p>",
+    "t": "<p>Av 12 böcker är 4 signerade. Fyra böcker väljs slumpmässigt.</p><p>Vad är sannolikheten att minst två signerade böcker väljs?</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Alla fyrgrupper: \\(\\binom{12}{4}=495\\).</p><p>”Minst två” betyder exakt 2, exakt 3 eller exakt 4 signerade:</p><p>\\[\\binom42\\binom82+\\binom43\\binom81+\\binom44\\binom80\\]</p><p>\\[=6\\cdot28+4\\cdot8+1=201.\\]</p><p>\\[P=\\frac{201}{495}=\\frac{67}{165}.\\]</p><p><strong>\\(P\\approx40,6\\%\\).</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{67}{165}\\) = \\(0,4061\\) ≈ \\(40,6\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.204",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "text",
-    "rättSvar": 40.6,
+    "svarstyp": "numeriskt",
+    "rättSvar": "67/165",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -6988,7 +6985,7 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "procent",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Dela upp händelsen i disjunkta fall eller använd ett komplement inom det givna villkoret. Addera först när fallen inte överlappar.</p>",
     "traningsniva": 4
   },
@@ -7025,13 +7022,13 @@ window.BANKMATF1 = [
     "niva": "C",
     "typ": "kortprobabilitet med minst ett ess och minst en kung",
     "poang": "0/3/0",
-    "t": "<p>Fem kort dras slumpmässigt ur en vanlig kortlek med 52 kort.</p><p>Bestäm sannolikheten att handen innehåller minst ett ess och minst en kung.</p>",
-    "s": "<p>Totalt finns \\(\\binom{52}{5}\\) femkortshänder.</p><p>Vi använder komplement och additionsprincipen. Från alla händer tar vi bort händer utan ess och händer utan kung, men då har händer utan både ess och kung tagits bort två gånger och måste läggas tillbaka:</p><p>\\[N=\\binom{52}{5}-2\\binom{48}{5}+\\binom{44}{5}=260\\,360.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{260360}{\\binom{52}{5}}\\approx0,1002.\\]</p><p><strong>Sannolikheten är cirka 10,0 %.</strong></p>",
+    "t": "<p>Fem kort dras slumpmässigt ur en vanlig kortlek med 52 kort.</p><p>Bestäm sannolikheten att handen innehåller minst ett ess och minst en kung.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p>Totalt finns \\(\\binom{52}{5}\\) femkortshänder.</p><p>Vi använder komplement och additionsprincipen. Från alla händer tar vi bort händer utan ess och händer utan kung, men då har händer utan både ess och kung tagits bort två gånger och måste läggas tillbaka:</p><p>\\[N=\\binom{52}{5}-2\\binom{48}{5}+\\binom{44}{5}=260\\,360.\\]</p><p>Sannolikheten blir</p><p>\\[P=\\frac{260360}{\\binom{52}{5}}\\approx0,1002.\\]</p><p><strong>Sannolikheten är cirka 10,0 %.</strong></p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{6509}{64974}\\) = \\(0,1002\\) ≈ \\(10\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "miniräknare": true,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
     "svarstyp": "numeriskt",
-    "rättSvar": 0.1002,
+    "rättSvar": "6509/64974",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -7040,8 +7037,8 @@ window.BANKMATF1 = [
       "resonemang",
       "problemlösning"
     ],
-    "svarFormat": "numeriskt",
-    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och ta (1-P(\\text{ingen})).</p>",
+    "svarFormat": "sannolikhet",
+    "ledtrad": "<p>För ”minst en” är komplementet ofta enklast: räkna sannolikheten för ingen och använd \\(1-P(\\text{ingen})\\).</p>",
     "traningsniva": 4
   },
   {
@@ -9450,28 +9447,28 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Förenkla.</p><div class=\"spel-en-del\"><strong>a)</strong> \\(21+15+38\\pmod5\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Ersätt varje term med dess rest modulo 5.</p><p>[21+15+38\\equiv1+0+3=4\\pmod5.]</p><p><strong>Svar:</strong> 4.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Ersätt varje term med dess rest modulo 5.</p><p>\\[21+15+38\\equiv1+0+3=4\\pmod5.\\]</p><p><strong>Svar:</strong> 4.</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>Förenkla.</p><div class=\"spel-en-del\"><strong>b)</strong> \\(13\\cdot11\\pmod5\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Reducera faktorerna före multiplikationen.</p><p>[13\\cdot11\\equiv3\\cdot1=3\\pmod5.]</p><p><strong>Svar:</strong> 3.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Reducera faktorerna före multiplikationen.</p><p>\\[13\\cdot11\\equiv3\\cdot1=3\\pmod5.\\]</p><p><strong>Svar:</strong> 3.</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "c",
         "t": "<p>Förenkla.</p><div class=\"spel-en-del\"><strong>c)</strong> \\(2^{30}\\pmod3\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Modulo 3 är (2\\equiv-1). En jämn exponent ger därför resten 1.</p><p>[2^{30}\\equiv(-1)^{30}=1\\pmod3.]</p><p><strong>Svar:</strong> 1.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Modulo 3 är \\(2\\equiv-1\\). En jämn exponent ger därför resten 1.</p><p>\\[2^{30}\\equiv(-1)^{30}=1\\pmod3.\\]</p><p><strong>Svar:</strong> 1.</p>",
         "niva": "C",
         "poang": "0/1/0"
       },
       {
         "etikett": "d",
         "t": "<p>Förenkla.</p><div class=\"spel-en-del\"><strong>d)</strong> \\(2^{30}\\pmod5\\)</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Potenserna av 2 upprepas med period 4 modulo 5 eftersom (2^4\\equiv1).</p><p>[30=7\\cdot4+2,\\qquad 2^{30}\\equiv2^2=4\\pmod5.]</p><p><strong>Svar:</strong> 4.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Potenserna av 2 upprepas med period 4 modulo 5 eftersom \\(2^4\\equiv1\\).</p><p>\\[30=7\\cdot4+2,\\qquad 2^{30}\\equiv2^2=4\\pmod5.\\]</p><p><strong>Svar:</strong> 4.</p>",
         "niva": "C",
         "poang": "0/1/0"
       }
@@ -11149,14 +11146,14 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>Talföljden \\(1,3,9,\\ldots,19683\\) innehåller 10 termer.</p><div class=\"spel-en-del\"><strong>a)</strong> Ange en formel för den \\(n\\):te termen.</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Följden är geometrisk med första termen (a_1=1) och kvoten (q=3).</p><p>[a_n=a_1q^{n-1}=3^{n-1}.]</p><p><strong>Svar:</strong> (a_n=3^{n-1}).</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Följden är geometrisk med första termen \\(a_1=1\\) och kvoten \\(q=3\\).</p><p>\\[a_n=a_1q^{n-1}=3^{n-1}.\\]</p><p><strong>Svar:</strong> \\(a_n=3^{n-1}\\).</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>Talföljden \\(1,3,9,\\ldots,19683\\) innehåller 10 termer.</p><div class=\"spel-en-del\"><strong>b)</strong> Beräkna summan av de 10 termerna.</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Använd summan av de första (n) termerna i en geometrisk talföljd.</p><p>[S_{10}=\\frac{1(3^{10}-1)}{3-1}=29\\,524.]</p><p><strong>Svar:</strong> 29 524.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Använd summan av de första \\(n\\) termerna i en geometrisk talföljd.</p><p>\\[S_{10}=\\frac{1(3^{10}-1)}{3-1}=29\\,524.\\]</p><p><strong>Svar:</strong> 29 524.</p>",
         "niva": "E",
         "poang": "1/0/0"
       }
@@ -11264,14 +11261,14 @@ window.BANKMATF1 = [
       {
         "etikett": "a",
         "t": "<p>En aritmetisk talföljd har 10 termer. De två första är 4 och 11.</p><div class=\"spel-en-del\"><strong>a)</strong> Bestäm de två sista termerna.</div>",
-        "s": "<p><strong>Nyckelidé:</strong> Differensen är (d=11-4=7). Den n:te termen är (a_n=4+(n-1)7).</p><p>[a_9=60,\\qquad a_{10}=67.]</p><p><strong>Svar:</strong> 60 och 67.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> Differensen är \\(d=11-4=7\\). Den n:te termen är \\(a_n=4+(n-1)7\\).</p><p>\\[a_9=60,\\qquad a_{10}=67.\\]</p><p><strong>Svar:</strong> 60 och 67.</p>",
         "niva": "E",
         "poang": "1/0/0"
       },
       {
         "etikett": "b",
         "t": "<p>En aritmetisk talföljd har 10 termer. De två första är 4 och 11.</p><div class=\"spel-en-del\"><strong>b)</strong> Bestäm summan av alla termer.</div>",
-        "s": "<p><strong>Nyckelidé:</strong> För en aritmetisk summa kan första och sista termen paras ihop.</p><p>Den sista termen är (a_{10}=67), så</p><p>[S_{10}=\\frac{10(4+67)}2=355.]</p><p><strong>Svar:</strong> 355.</p>",
+        "s": "<p><strong>Nyckelidé:</strong> För en aritmetisk summa kan första och sista termen paras ihop.</p><p>Den sista termen är \\(a_{10}=67\\), så</p><p>\\[S_{10}=\\frac{10(4+67)}2=355.\\]</p><p><strong>Svar:</strong> 355.</p>",
         "niva": "E",
         "poang": "1/0/0"
       }
@@ -16471,7 +16468,7 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "linjär approximation av logaritm med figur",
     "poang": "2/0/0",
-    "t": "<span class=\"fig smal\"><svg width=\"360\" height=\"205\" viewBox=\"0 0 420 235\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Graf till y = ln x med tangent i x = 1\">\n<rect x=\"12\" y=\"12\" width=\"396\" height=\"211\" rx=\"8\" fill=\"white\" stroke=\"#d0d0d0\"/>\n<line x1=\"50\" y1=\"190\" x2=\"380\" y2=\"190\" stroke=\"#555\" stroke-width=\"2\"/>\n<line x1=\"50\" y1=\"190\" x2=\"50\" y2=\"35\" stroke=\"#555\" stroke-width=\"2\"/>\n<path d=\"M 70 170 C 130 135, 180 120, 325 84\" fill=\"none\" stroke=\"#0e5d9e\" stroke-width=\"2.5\"/>\n<line x1=\"82\" y1=\"158\" x2=\"340\" y2=\"93\" stroke=\"#b45f32\" stroke-width=\"2\"/>\n<circle cx=\"210\" cy=\"126\" r=\"4\" fill=\"#333\"/>\n<text x=\"217\" y=\"121\" font-size=\"12\">x = 1</text>\n<text x=\"280\" y=\"79\" font-size=\"13\">y = \\ln x</text>\n<text x=\"288\" y=\"103\" font-size=\"13\">tangent</text>\n</svg></span><p>Använd tangentlinjen till \\(y=\\ln x\\) vid \\(x=1\\) för att uppskatta \\(\\ln(1,05)\\).</p>",
+    "t": "<span class=\"fig smal\"><svg width=\"360\" height=\"205\" viewBox=\"0 0 420 235\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Graf till y = ln x med tangent i x = 1\">\n<rect x=\"12\" y=\"12\" width=\"396\" height=\"211\" rx=\"8\" fill=\"white\" stroke=\"#d0d0d0\"/>\n<line x1=\"50\" y1=\"190\" x2=\"380\" y2=\"190\" stroke=\"#555\" stroke-width=\"2\"/>\n<line x1=\"50\" y1=\"190\" x2=\"50\" y2=\"35\" stroke=\"#555\" stroke-width=\"2\"/>\n<path d=\"M 70 170 C 130 135, 180 120, 325 84\" fill=\"none\" stroke=\"#0e5d9e\" stroke-width=\"2.5\"/>\n<line x1=\"82\" y1=\"158\" x2=\"340\" y2=\"93\" stroke=\"#b45f32\" stroke-width=\"2\"/>\n<circle cx=\"210\" cy=\"126\" r=\"4\" fill=\"#333\"/>\n<text x=\"217\" y=\"121\" font-size=\"12\">x = 1</text>\n<text x=\"280\" y=\"79\" font-size=\"13\">y = ln x</text>\n<text x=\"288\" y=\"103\" font-size=\"13\">tangent</text>\n</svg></span><p>Använd tangentlinjen till \\(y=\\ln x\\) vid \\(x=1\\) för att uppskatta \\(\\ln(1,05)\\).</p>",
     "s": "<div class=\"facit-v2\"><p class=\"facit-metod\"><strong>Tänk så här:</strong> Använd en potens- eller logaritmlag i taget och skriv mellanled. Det gör tecken, exponenter och eventuella villkor synliga.</p><div class=\"facit-arbete\"><p>Vi linjäriserar funktionen \\(f(x)=\\ln x\\) kring \\(x=1\\).</p><p>\\[f(1)=0,\\qquad f'(x)=\\frac{1}{x}\\Rightarrow f'(1)=1.\\]</p><p>Tangentlinjen blir därför</p><p>\\[L(x)=f(1)+f'(1)(x-1)=x-1.\\]</p><p>Sätt in \\(x=1,05\\):</p><p>\\[\\ln(1,05)\\approx L(1,05)=1,05-1=0,05.\\]</p><p><strong>Svar: \\(\\ln(1,05)\\approx0,05\\).</strong></p></div><p class=\"facit-not\"><strong>Kontroll och insikt:</strong> En linjär approximation ska ligga nära funktionsvärdet när x ligger nära utvecklingspunkten. Jämför gärna tecken och storleksordning.</p></div>",
     "miniräknare": false,
     "geogebra": false,
@@ -22743,7 +22740,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,3,5,7\\}",
+    "rättSvar": "{1,3,5,7}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22766,7 +22763,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{2,3,4,5,6\\}",
+    "rättSvar": "{2,3,4,5,6}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22835,7 +22832,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{3,4\\}",
+    "rättSvar": "{3,4}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22858,7 +22855,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,2,3,4,5\\}",
+    "rättSvar": "{1,2,3,4,5}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22881,7 +22878,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,3,5\\}",
+    "rättSvar": "{1,3,5}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22905,7 +22902,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{0,1,2,3,4\\}",
+    "rättSvar": "{0,1,2,3,4}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -22929,7 +22926,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{-1,0,1,2\\}",
+    "rättSvar": "{-1,0,1,2}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -24505,13 +24502,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 4 gånger. Bestäm sannolikheten för exakt 4 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{16}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 4 gånger. Bestäm sannolikheten för exakt 4 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{16}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{16}\\) = \\(0,0625\\) ≈ \\(6,25\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.548",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/16",
     "tolerans": null,
     "självrättning": true,
@@ -24520,7 +24517,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 1,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24529,13 +24526,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 4 gånger. Bestäm sannolikheten för exakt 3 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{4}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 4 gånger. Bestäm sannolikheten för exakt 3 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{4}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{4}\\) = \\(0,25\\) ≈ \\(25\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.549",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/4",
     "tolerans": null,
     "självrättning": true,
@@ -24544,7 +24541,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 1,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24553,13 +24550,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 5 gånger. Bestäm sannolikheten för exakt 2 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 5 gånger. Bestäm sannolikheten för exakt 2 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{5}{16}\\) = \\(0,3125\\) ≈ \\(31,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.550",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "5/16",
     "tolerans": null,
     "självrättning": true,
@@ -24568,7 +24565,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 1,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24577,13 +24574,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 5 gånger. Bestäm sannolikheten för exakt 3 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 5 gånger. Bestäm sannolikheten för exakt 3 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{5}{16}\\) = \\(0,3125\\) ≈ \\(31,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.551",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "5/16",
     "tolerans": null,
     "självrättning": true,
@@ -24592,7 +24589,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 1,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24601,13 +24598,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 6 gånger. Bestäm sannolikheten för exakt 3 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 6 gånger. Bestäm sannolikheten för exakt 3 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{5}{16}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{5}{16}\\) = \\(0,3125\\) ≈ \\(31,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.552",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "5/16",
     "tolerans": null,
     "självrättning": true,
@@ -24616,7 +24613,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24625,13 +24622,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 6 gånger. Bestäm sannolikheten för exakt 1 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3}{32}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 6 gånger. Bestäm sannolikheten för exakt 1 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3}{32}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{3}{32}\\) = \\(0,09375\\) ≈ \\(9,38\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.553",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "3/32",
     "tolerans": null,
     "självrättning": true,
@@ -24640,7 +24637,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24649,13 +24646,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 3 gånger. Bestäm sannolikheten för exakt 2 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3}{8}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 3 gånger. Bestäm sannolikheten för exakt 2 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3}{8}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{3}{8}\\) = \\(0,375\\) ≈ \\(37,5\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.554",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "3/8",
     "tolerans": null,
     "självrättning": true,
@@ -24664,7 +24661,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 1,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24673,13 +24670,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>Ett rättvist mynt kastas 7 gånger. Bestäm sannolikheten för exakt 0 krona.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{128}\\).</p>",
+    "t": "<p>Ett rättvist mynt kastas 7 gånger. Bestäm sannolikheten för exakt 0 krona.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{1}{128}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{1}{128}\\) = \\(0,007812\\) ≈ \\(0,7812\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.555",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "1/128",
     "tolerans": null,
     "självrättning": true,
@@ -24688,7 +24685,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24697,13 +24694,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En vanlig tärning kastas 3 gånger. Bestäm sannolikheten för exakt 1 etta.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{25}{72}\\).</p>",
+    "t": "<p>En vanlig tärning kastas 3 gånger. Bestäm sannolikheten för exakt 1 etta.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{25}{72}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{25}{72}\\) = \\(0,3472\\) ≈ \\(34,7\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.556",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "25/72",
     "tolerans": null,
     "självrättning": true,
@@ -24712,7 +24709,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24721,13 +24718,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En vanlig tärning kastas 4 gånger. Bestäm sannolikheten för exakt 2 etta.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{25}{216}\\).</p>",
+    "t": "<p>En vanlig tärning kastas 4 gånger. Bestäm sannolikheten för exakt 2 etta.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{25}{216}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{25}{216}\\) = \\(0,1157\\) ≈ \\(11,6\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.557",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "25/216",
     "tolerans": null,
     "självrättning": true,
@@ -24736,7 +24733,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24745,13 +24742,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En vanlig tärning kastas 4 gånger. Bestäm sannolikheten för exakt 0 etta.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{625}{1296}\\).</p>",
+    "t": "<p>En vanlig tärning kastas 4 gånger. Bestäm sannolikheten för exakt 0 etta.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{625}{1296}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{625}{1296}\\) = \\(0,4823\\) ≈ \\(48,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.558",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "625/1296",
     "tolerans": null,
     "självrättning": true,
@@ -24760,7 +24757,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24769,13 +24766,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En vanlig tärning kastas 5 gånger. Bestäm sannolikheten för exakt 1 etta.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3125}{7776}\\).</p>",
+    "t": "<p>En vanlig tärning kastas 5 gånger. Bestäm sannolikheten för exakt 1 etta.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{3125}{7776}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{3125}{7776}\\) = \\(0,4019\\) ≈ \\(40,2\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.559",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "3125/7776",
     "tolerans": null,
     "självrättning": true,
@@ -24784,7 +24781,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24793,13 +24790,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En grupp har 8 personer, varav 3 tillhör grupp A. 2 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 1 av de valda tillhör A.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{15}{28}\\).</p>",
+    "t": "<p>En grupp har 8 personer, varav 3 tillhör grupp A. 2 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 1 av de valda tillhör A.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{15}{28}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{15}{28}\\) = \\(0,5357\\) ≈ \\(53,6\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.560",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "15/28",
     "tolerans": null,
     "självrättning": true,
@@ -24808,7 +24805,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24817,13 +24814,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En grupp har 10 personer, varav 4 tillhör grupp A. 2 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 2 av de valda tillhör A.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{2}{15}\\).</p>",
+    "t": "<p>En grupp har 10 personer, varav 4 tillhör grupp A. 2 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 2 av de valda tillhör A.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{2}{15}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{2}{15}\\) = \\(0,1333\\) ≈ \\(13,3\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.561",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "2/15",
     "tolerans": null,
     "självrättning": true,
@@ -24832,7 +24829,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -24841,13 +24838,13 @@ window.BANKMATF1 = [
     "niva": "E",
     "typ": "grundläggande kombinatorisk sannolikhet",
     "poang": "1/0/0",
-    "t": "<p>En grupp har 9 personer, varav 3 tillhör grupp A. 3 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 1 av de valda tillhör A.</p>",
-    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{15}{28}\\).</p>",
+    "t": "<p>En grupp har 9 personer, varav 3 tillhör grupp A. 3 personer väljs slumpmässigt utan återläggning. Bestäm sannolikheten att exakt 1 av de valda tillhör A.</p><p class=\"svarformat-info\"><em>Du kan svara med exakt bråk, decimaltal eller procent.</em></p>",
+    "s": "<p><strong>Metod:</strong> Räkna gynnsamma utfall och dividera med alla lika sannolika utfall.</p><p><strong>Svar:</strong> \\(\\frac{15}{28}\\).</p><div class=\"facit-svar\"><p><strong>Svar i likvärdiga former:</strong> \\(\\frac{15}{28}\\) = \\(0,5357\\) ≈ \\(53,6\\,\\%\\)</p><p>Exakt bråk, motsvarande decimaltal och motsvarande procent godtas.</p></div>",
     "id": "1.562",
     "miniräknare": false,
     "geogebra": false,
     "familj": "Kombinatorisk sannolikhet",
-    "svarstyp": "bråk",
+    "svarstyp": "numeriskt",
     "rättSvar": "15/28",
     "tolerans": null,
     "självrättning": true,
@@ -24856,7 +24853,7 @@ window.BANKMATF1 = [
       "begrepp"
     ],
     "traningsniva": 2,
-    "svarFormat": "bråk",
+    "svarFormat": "sannolikhet",
     "ledtrad": "<p>Identifiera först vad som räknas som ett gynnsamt utfall. Använd kombinationstal när ordningen inte spelar roll.</p>"
   },
   {
@@ -26264,7 +26261,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{2,4\\}",
+    "rättSvar": "{2,4}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -26288,7 +26285,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,2,3,4,5\\}",
+    "rättSvar": "{1,2,3,4,5}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -26312,7 +26309,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,3,4\\}",
+    "rättSvar": "{1,3,4}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
@@ -26336,7 +26333,7 @@ window.BANKMATF1 = [
     "geogebra": false,
     "familj": "Mängder och Venn-diagram",
     "svarstyp": "mängd",
-    "rättSvar": "\\{1,3,5\\}",
+    "rättSvar": "{1,3,5}",
     "tolerans": null,
     "självrättning": true,
     "formaga": [
