@@ -528,7 +528,7 @@ tr.absent-row td.tot-col{color:var(--faint);}
   font-family:'JetBrains Mono',monospace;margin-top:2px;}
 .bar-row{align-items:flex-start;}
 
-/* Växling mellan de två sätten att läsa områdeslistan. */
+/* Växling mellan de två sätten att läsa innehållslistan. */
 .viewsw{display:inline-flex;gap:2px;background:var(--card-2);border:1px solid var(--line);
   border-radius:10px;padding:2px;margin-bottom:14px;}
 .vw{background:transparent;border:0;border-radius:8px;padding:6px 12px;font-size:12.5px;
@@ -684,6 +684,31 @@ h1 .swash{color:var(--ed,#B43123)}
 .cloud-account a:hover{text-decoration:underline}
 @media(max-width:720px){.cloud-account{max-width:48vw;white-space:normal;line-height:1.25}.analysis-actions{align-items:flex-start}}
 
+/* ═════════ Professionell resultatanalys 2026-09 ═════════ */
+:root{--surface-strong:#FFFFFF;--accent-soft:color-mix(in srgb,var(--indigo) 8%,var(--card));}
+body{font-size:14.5px;line-height:1.55;}
+.wrap{max-width:1240px;padding-left:28px;padding-right:28px;}
+header.top{padding-top:24px;padding-bottom:14px;}
+.analysis-brand{gap:16px}.analysis-logo{width:52px;height:52px;flex-basis:52px;border-radius:14px}
+h1{font-size:clamp(23px,2.8vw,31px);font-weight:750;letter-spacing:-.035em;}
+.workbar{margin-top:10px;padding:16px 18px;border-radius:16px;box-shadow:0 8px 28px -28px rgba(27,30,39,.75);}
+.tabs{position:sticky;top:0;z-index:30;padding-top:8px}.tabbar{border-radius:16px;box-shadow:0 10px 30px -28px rgba(27,30,39,.8)}
+.tab{padding:16px 18px}.tab .tt{font-weight:650}.tab.active{background:var(--accent-soft)}
+.panel{border-radius:18px;margin-top:22px;box-shadow:0 14px 34px -34px rgba(27,30,39,.8);overflow:hidden}
+.phead{padding:23px 28px 16px}.phead h2{font-size:19px;font-weight:720;letter-spacing:-.02em}.pbody{padding:24px 28px 28px}
+.grades{background:var(--card-2);padding:18px;border-radius:14px}.task{padding:18px 18px 16px;border-radius:15px;background:var(--surface-strong)}
+.task-head{margin-bottom:14px}.task-head .tnum{font-size:15.5px;font-weight:750}.task-fields{grid-template-columns:1fr}.parts{margin-top:16px;padding-top:14px}
+.prow{grid-template-columns:72px minmax(100px,130px) minmax(170px,220px) 34px;gap:10px}.part-level{min-width:0}.part-level select{padding:8px 10px}
+.col-head-parts{display:grid;grid-template-columns:72px minmax(100px,130px) minmax(170px,220px) 34px;gap:10px;margin-bottom:5px}
+.col-head-parts span{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:650}
+.task-source{margin-top:12px}.source-chip{font-size:11px;font-weight:500;padding:5px 9px}.source-chip.content{background:#F2F5FB;color:#314E7C;border-color:#DCE4F1}
+:root[data-theme="dark"] .source-chip.content{background:#273142;color:#B8CAE6;border-color:#36445C}
+.ov-grid{grid-template-columns:repeat(3,1fr);gap:14px}.ov-card{padding:17px 18px;border-radius:14px}.ov-card .v{font-size:30px;font-weight:700}.overview-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}.overview-block{min-width:0}.overview-title{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);font-weight:700;margin-bottom:7px}
+table.ov th{background:var(--card-2)}table.ov th,table.ov td{padding:10px 11px}.lvldist{gap:8px}.lvlchip{background:var(--card-2);border-color:var(--line);padding:8px 11px}
+.meta-note{font-size:12.5px;line-height:1.55}.summary-box{box-shadow:0 8px 26px -28px rgba(27,30,39,.8)}
+@media(max-width:800px){.overview-split{grid-template-columns:1fr}.ov-grid{grid-template-columns:1fr 1fr}.wrap{padding-left:16px;padding-right:16px}.prow,.col-head-parts{grid-template-columns:54px 92px minmax(145px,1fr) 30px}.pbody{padding:20px 18px}.phead{padding-left:18px;padding-right:18px}}
+@media(max-width:520px){.ov-grid{grid-template-columns:1fr}.prow{grid-template-columns:46px 88px 1fr 28px}.col-head-parts{display:none}.analysis-actions .cloud-account{display:none}}
+
 </style>
 </head>
 <body>
@@ -740,7 +765,7 @@ h1 .swash{color:var(--ed,#B43123)}
     <div class="panel">
       <div class="phead"><h2>Uppgifter</h2></div>
       <div class="pbody">
-        <div style="font-size:12.5px;color:var(--faint);margin-bottom:12px">Klicka på ett område för att ändra hur stor del av uppgiften det utgör. Ett område som bara är en mindre del av uppgiften räknas lägre.</div>
+        <div style="font-size:12.5px;color:var(--faint);margin-bottom:12px">Innehåll och förmågor följer med automatiskt från Uppgiftslabbet när provet skickas hit. För manuellt tillagda uppgifter kan du ange innehåll här. Nivå sätts på varje deluppgift så att E-, C- och A-poäng kan analyseras korrekt även inom samma uppgift.</div>
         <div id="taskList"></div>
         <div id="taskEmpty" class="empty">Inga uppgifter än. Lägg till den första nedan.</div>
         <div class="btn-row">
@@ -756,17 +781,20 @@ h1 .swash{color:var(--ed,#B43123)}
         <div class="ov-grid">
           <div class="ov-card"><div class="k">Antal uppgifter</div><div class="v" id="ovTasks">0</div></div>
           <div class="ov-card"><div class="k">Total maxpoäng</div><div class="v" id="ovMax">0</div></div>
+          <div class="ov-card"><div class="k">Bedömda deluppgifter</div><div class="v" id="ovParts">0</div></div>
         </div>
-        <table class="ov"><thead><tr><th>Område</th><th class="n">Antal uppgifter</th><th class="n">Poäng</th></tr></thead><tbody id="ovBody"></tbody></table>
-        <div id="ovEmpty" class="empty" style="margin-top:12px">Lägg till uppgifter med områden för att se fördelningen.</div>
-        <label class="field" style="margin-top:20px">Antal uppgifter per svårighetsnivå</label>
+        <div class="overview-split">
+          <div class="overview-block"><div class="overview-title">Innehåll</div><table class="ov"><thead><tr><th>Innehåll</th><th class="n">Uppgifter</th><th class="n">Poäng</th></tr></thead><tbody id="ovBody"></tbody></table><div id="ovEmpty" class="empty" style="margin-top:12px">Lägg till uppgifter med innehåll för att se fördelningen.</div></div>
+          <div class="overview-block"><div class="overview-title">Förmågor</div><table class="ov"><thead><tr><th>Förmåga</th><th class="n">Uppgifter</th><th class="n">Poäng</th></tr></thead><tbody id="ovAbilityBody"></tbody></table><div id="ovAbilityEmpty" class="empty" style="margin-top:12px">Förmågor från Uppgiftslabbet visas här när metadata finns.</div></div>
+        </div>
+        <label class="field" style="margin-top:22px">Poäng per svårighetsnivå</label>
         <div class="lvldist" id="lvlDist"></div>
       </div>
     </div>
     <details class="panel collapsible">
       <summary><h2>Provmallar</h2><span class="chev">▸</span></summary>
       <div class="pbody">
-        <div class="save-lead">En provmall innehåller uppgifterna, områdena och betygsgränserna. Spara den när du vill återanvända provet eller dela det med en kollega.</div>
+        <div class="save-lead">En provmall innehåller uppgifterna, innehållet, förmågorna, deluppgifternas nivåer och betygsgränserna. Spara den när du vill återanvända provet eller dela det med en kollega.</div>
         <label class="field" style="margin-top:18px">Provmallar i den här webbläsaren</label>
         <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
           <div style="flex:1;min-width:200px"><select id="libSelect" aria-label="Välj sparat prov"><option value="">Välj provmall</option></select></div>
@@ -839,7 +867,7 @@ h1 .swash{color:var(--ed,#B43123)}
             <button class="btn btn-out" id="exportBtn">Exportera till Excel</button>
             <button class="btn btn-out" id="printBtn">Skriv ut eller spara som PDF</button>
           </div>
-          <details class="dinline"><summary>Klassens resultat per område<span class="chev">▸</span></summary><div class="dbody"><div class="viewsw" role="group" aria-label="Visning"><button class="vw on" data-areaview="area">Per område</button><button class="vw" data-areaview="level">Delat på svårighet</button></div><div id="detArea"></div></div></details>
+          <details class="dinline"><summary>Klassens resultat per innehåll<span class="chev">▸</span></summary><div class="dbody"><div class="viewsw" role="group" aria-label="Visning"><button class="vw on" data-areaview="area">Per innehåll</button><button class="vw" data-areaview="level">Delat på svårighet</button></div><div id="detArea"></div></div></details>
           <details class="dinline" id="detAbilityWrap"><summary>Klassens resultat per förmåga<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">En uppgift med två förmågor delas lika mellan dem, så att samma poäng inte räknas dubbelt.</div><div id="detAbility"></div></div></details>
           <details class="dinline" id="detFamilyWrap"><summary>Klassens resultat per uppgiftstyp<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">Uppgiftstyper visar mer specifikt vilken typ av färdighet uppgifterna prövar. Uppgifter som lagts in manuellt utan metadata för uppgiftstyp räknas inte här.</div><div id="detFamily"></div></div></details>
           <details class="dinline"><summary>Klassens resultat per uppgift<span class="chev">▸</span></summary><div class="dbody"><div id="detTask"></div></div></details>
@@ -910,7 +938,7 @@ h1 .swash{color:var(--ed,#B43123)}
 <script>
 "use strict";
 /* ===== 1. DATAMODELL + LAGRING =====
-   task = {id, areas:[], level, parts:[{id, max}]}  // parts = deluppgifter a,b,c
+   task = {id, areas:[], parts:[{id, max, level}], source}  // nivå hör till varje deluppgift/poängdel
    En uppgift räknas alltid som EN uppgift; parts delar bara upp poängen. */
 const LSKEY="provanalys_v2", LIBKEY="provanalys_library";
 const THR=0.4, BORDERLINE=2;
@@ -1119,9 +1147,20 @@ function renderWorkbar(){
   const rm=$("#removeTest"); if(rm) rm.disabled=!list.length;
 }
 function normalizeState(s){ const d=defaultState(); s=Object.assign(d,s||{}); s.grades=Object.assign({e:"",d:"",c:"",b:"",a:""},s.grades||{}); s.areas=Array.isArray(s.areas)?s.areas:[];
-  s.tasks=(s.tasks||[]).map(t=>{ let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:p.id,max:p.max??""})); else parts=[{id:t.id,max:t.max??""}];
-    return {id:t.id,areas:Array.isArray(t.areas)?t.areas:[],level:t.level||null,weights:(t.weights&&typeof t.weights==="object")?t.weights:{},parts,
-      source:(t.source&&typeof t.source==="object")?t.source:null}; });
+  s.tasks=(s.tasks||[]).map(t=>{
+    const legacyLevel=t.level||null;
+    let parts;
+    if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:p.id,max:p.max??"",level:p.level||p.niva||p["nivå"]||legacyLevel||null}));
+    else parts=[{id:t.id,max:t.max??"",level:legacyLevel}];
+    const src=(t.source&&typeof t.source==="object")?Object.assign({},t.source):{};
+    if(!Array.isArray(src.abilities)){
+      const raw=src.formaga||src.formåga||t.abilities||t.formaga||t.formåga;
+      src.abilities=Array.isArray(raw)?raw:(raw?[raw]:[]);
+    }
+    const incomingAreas=Array.isArray(t.areas)?t.areas:(Array.isArray(src.areas)?src.areas:(Array.isArray(src.content)?src.content:(Array.isArray(src.innehall)?src.innehall:[])));
+    return {id:t.id,areas:incomingAreas,level:legacyLevel,weights:(t.weights&&typeof t.weights==="object")?t.weights:{},parts,source:Object.keys(src).length?src:null};
+  });
+  s.tasks.forEach(t=>t.areas.forEach(a=>{ if(a&&!s.areas.includes(a)) s.areas.push(a); }));
   s.students=(s.students||[]).map(st=>({id:st.id,name:st.name||"",scores:st.scores||{},absent:!!st.absent,comment:st.comment||""})); return s; }
 
 /* ═════════ MOLNSPARNING MED SAMMA LÄRARKONTO ═════════ */
@@ -1265,7 +1304,9 @@ function joinSv(a){ if(!a.length) return ""; if(a.length===1) return a[0]; retur
 function qual(p){ if(p>=0.8) return "ett mycket gott resultat"; if(p>=0.6) return "ett godkänt resultat"; return "ett svagt resultat"; }
 function bucketOf(l){ if(!l) return null; return l<=2?"grund":(l===3?"medel":"avancerat"); }
 function letter(i){ return String.fromCharCode(97+i); }
-function partLabel(t,pi){ return t.parts.length>1 ? letter(pi)+")" : "Maxpoäng"; }
+function partLabel(t,pi){ return t.parts.length>1 ? letter(pi)+")" : "Poäng"; }
+function partLevel(p,t){ return +(p&&p.level||t&&t.level||0)||null; }
+function levelOptions(level){ return '<option value="" '+(!level?'selected':'')+' disabled hidden>Välj nivå</option>'+[1,2,3,4,5].map(l=>`<option value="${l}" ${+level===l?"selected":""}>Nivå ${l}${l===1?" · grund":l===3?" · medel":l===5?" · avancerad":""}</option>`).join(""); }
 function partCode(ti,pi,pc){ return (ti+1)+(pc>1?letter(pi):""); }
 function taskMax(t){ return t.parts.reduce((a,p)=>a+num(p.max),0); }
 function validTasks(){ return state.tasks.filter(t=>taskMax(t)>0); }
@@ -1279,7 +1320,8 @@ function studentTaskPoints(s,t){ return t.parts.reduce((a,p)=>a+num(s.scores[p.i
 function usedAreas(){ const o=[]; validTasks().forEach(t=>taskAreas(t).forEach(a=>{ if(!o.includes(a)) o.push(a); })); return o; }
 const ABILITY_LABELS={begrepp:"Begrepp",procedur:"Procedur",resonemang:"Resonemang",modellering:"Modellering","problemlösning":"Problemlösning"};
 const ABILITY_ORDER=["begrepp","procedur","resonemang","modellering","problemlösning"];
-function taskAbilities(t){ return (t.source&&Array.isArray(t.source.abilities))?t.source.abilities.filter(a=>ABILITY_LABELS[a]):[]; }
+function normalizeAbility(a){ if(!a) return null; const x=String(a).trim().toLowerCase().replace(/ö/g,"o").replace(/å/g,"a").replace(/ä/g,"a"); const map={begrepp:"begrepp",procedur:"procedur",resonemang:"resonemang",modellering:"modellering",problemlosning:"problemlösning",problemloesning:"problemlösning"}; return map[x]||null; }
+function taskAbilities(t){ const raw=(t.source&&Array.isArray(t.source.abilities))?t.source.abilities:[]; return [...new Set(raw.map(normalizeAbility).filter(Boolean))]; }
 function taskFamily(t){ return (t.source&&typeof t.source.family==="string"&&t.source.family)?t.source.family:null; }
 function familyLabel(f){
   if(!f) return "";
@@ -1289,6 +1331,7 @@ function familyLabel(f){
 }
 function usedAbilities(){ return ABILITY_ORDER.filter(a=>validTasks().some(t=>taskAbilities(t).includes(a))); }
 function abilityTaskCount(a){ return validTasks().filter(t=>taskAbilities(t).includes(a)).length; }
+function classAbilityMaxOnly(a){ let m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(w) m+=taskMax(t)*w; }); return m; }
 function abilityWInTask(t,a){ const aa=taskAbilities(t); return aa.includes(a)?1/aa.length:0; }
 function studentAbilityPct(st,a){ let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; g+=studentTaskPoints(st,t)*w; m+=taskMax(t)*w; }); return m?g/m:0; }
 function classAbilityAvg(a){ const act=activeStudents(),n=act.length||1; let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; act.forEach(st=>g+=studentTaskPoints(st,t)*w); m+=taskMax(t)*w; }); return {got:g/n,max:m,pct:m?(g/n)/m:0}; }
@@ -1314,9 +1357,7 @@ function classAreaSplit(a){
   const act=activeStudents(), n=act.length||1;
   const easy={got:0,max:0}, hard={got:0,max:0};
   validTasks().filter(t=>taskAreas(t).includes(a)).forEach(t=>{
-    const b=(+t.level<=2)?easy:hard;
-    act.forEach(s=>b.got+=studentTaskPoints(s,t));
-    b.max+=taskMax(t);
+    t.parts.forEach(p=>{ const lvl=partLevel(p,t); if(!lvl) return; const b=(lvl<=2)?easy:hard; act.forEach(s=>b.got+=num(s.scores[p.id])); b.max+=num(p.max); });
   });
   easy.got/=n; hard.got/=n;
   return {easy,hard};
@@ -1364,9 +1405,9 @@ function gradeLineHTML(s,tt){
   h+=`<div class="gl-marker" style="left:${sx}%;border-top-color:${col}"></div>`;
   return h+'</div></div>';
 }
-function levelStatsFor(fn){ const b={grund:{got:0,poss:0},medel:{got:0,poss:0},avancerat:{got:0,poss:0}}; validTasks().forEach(t=>{ const r=fn(t); if(!r) return; const k=bucketOf(t.level); if(!k) return; b[k].got+=r.got; b[k].poss+=r.poss; }); return b; }
-function studentLevelStats(s){ return levelStatsFor(t=>({got:studentTaskPoints(s,t),poss:taskMax(t)})); }
-function classLevelStats(){ const act=activeStudents(); return levelStatsFor(t=>({got:act.reduce((a,st)=>a+studentTaskPoints(st,t),0),poss:taskMax(t)*act.length})); }
+function levelStatsForPart(fn){ const b={grund:{got:0,poss:0},medel:{got:0,poss:0},avancerat:{got:0,poss:0}}; validTasks().forEach(t=>t.parts.forEach(p=>{ const k=bucketOf(partLevel(p,t)); if(!k) return; const r=fn(t,p); if(!r) return; b[k].got+=r.got; b[k].poss+=r.poss; })); return b; }
+function studentLevelStats(s){ return levelStatsForPart((t,p)=>({got:num(s.scores[p.id]),poss:num(p.max)})); }
+function classLevelStats(){ const act=activeStudents(); return levelStatsForPart((t,p)=>({got:act.reduce((a,st)=>a+num(st.scores[p.id]),0),poss:num(p.max)*act.length})); }
 function gradeDistribution(){ const d={A:0,B:0,C:0,D:0,E:0,F:0}; activeStudents().forEach(s=>{ const g=gradeFor(studentTotals(s).pts); if(g) d[g]++; }); return d; }
 /* Enbart slutsatsen. Poängen per nivå står redan som en egen rad i
    sammanfattningen, så att upprepa dem i löptext gör bara stycket längre. */
@@ -1388,8 +1429,7 @@ const FEEDBACK_MAX_AREAS = 3; /* fler än så blir ingen lista, utan en helhetsb
 function areaSplit(s,a){
   const easy={got:0,poss:0}, hard={got:0,poss:0};
   validTasks().filter(t=>taskAreas(t).includes(a)).forEach(t=>{
-    const b=(+t.level<=2)?easy:hard;
-    b.got+=studentTaskPoints(s,t); b.poss+=taskMax(t);
+    t.parts.forEach(p=>{ const lvl=partLevel(p,t); if(!lvl) return; const b=(lvl<=2)?easy:hard; b.got+=num(s.scores[p.id]); b.poss+=num(p.max); });
   });
   return {easy,hard};
 }
@@ -1467,8 +1507,7 @@ function strengthNote(s){
    områden, eftersom ett stort område väger tyngre än ett litet. */
 function lostByLevel(s){
   let easy=0, hard=0;
-  validTasks().forEach(t=>{ const d=taskMax(t)-studentTaskPoints(s,t);
-    if(+t.level<=2) easy+=d; else hard+=d; });
+  validTasks().forEach(t=>t.parts.forEach(p=>{ const lvl=partLevel(p,t); if(!lvl) return; const d=num(p.max)-num(s.scores[p.id]); if(lvl<=2) easy+=d; else hard+=d; }));
   return {easy,hard};
 }
 
@@ -1519,7 +1558,7 @@ function feedbackNote(s,thr){
 function weakDescriptor(s,area,thr){
   const inArea=validTasks().filter(t=>taskAreas(t).includes(area));
   const buckets={grund:{got:0,poss:0},medel:{got:0,poss:0},avancerat:{got:0,poss:0}};
-  inArea.forEach(t=>{ const k=bucketOf(t.level); if(!k) return; buckets[k].got+=studentTaskPoints(s,t); buckets[k].poss+=taskMax(t); });
+  inArea.forEach(t=>t.parts.forEach(p=>{ const k=bucketOf(partLevel(p,t)); if(!k) return; buckets[k].got+=num(s.scores[p.id]); buckets[k].poss+=num(p.max); }));
   let ag=0,am=0; inArea.forEach(t=>{ ag+=studentTaskPoints(s,t); am+=taskMax(t); });
   const order=["grund","medel","avancerat"], present=order.filter(k=>buckets[k].poss>0);
   const areaPct=studentAreaPct(s,area);
@@ -1653,31 +1692,30 @@ function renderTasks(){
   const list=$("#taskList"); list.innerHTML=""; $("#taskEmpty").style.display=state.tasks.length?"none":"block";
   state.tasks.forEach((t,i)=>{
     const card=document.createElement("div"); card.className="task";
-    const lvlOpts='<option value="" '+(!t.level?'selected':'')+' disabled hidden>svårighetsgrad</option>'+[1,2,3,4,5].map(l=>`<option value="${l}" ${+t.level===+l?"selected":""}>Nivå ${l}${l===1?" (grundläggande)":l===5?" (avancerad)":""}</option>`).join("");
     const pc=t.parts.length;
     const partsHtml=t.parts.map((p,pi)=>`<div class="prow"><span class="plabel">${partLabel(t,pi)}</span>
       <input class="num pmax" data-pid="${p.id}" type="number" min="0" step="0.5" placeholder="poäng" value="${p.max}">
+      <div class="part-level"><select class="plevel" data-pid="${p.id}" aria-label="Nivå för ${pc>1?letter(pi)+')':'uppgiften'}">${levelOptions(partLevel(p,t))}</select></div>
       ${pc>1?`<button class="btn-mini del" data-rmpart="${p.id}" title="Ta bort deluppgift">✕</button>`:'<span></span>'}</div>`).join("");
+    const contentChips=(t.areas||[]).map(a=>{ const w=(t.weights&&t.weights[a]!=null)?t.weights[a]:1; return `<span class="tag primary tag-w" data-area="${esc(a)}" style="opacity:${(0.5+0.5*w).toFixed(2)}" title="Vikt ${Math.round(w*100)} %. Klicka för att ändra.">${esc(a)} <small class="tagpct">${Math.round(w*100)}%</small><button data-area="${esc(a)}">×</button></span>`; }).join("");
     card.innerHTML=`<div class="task-head"><span class="tnum">Uppgift ${i+1}</span>${taskMax(t)>0?"":'<span class="tflag">saknar maxpoäng</span>'}<span style="flex:1"></span>
       <button class="btn-mini" data-act="up" title="Flytta upp">↑</button><button class="btn-mini" data-act="down" title="Flytta ner">↓</button>
       <button class="btn-mini del" data-act="del" title="Ta bort">✕</button></div>
-      <div class="task-fields"><div><div class="tags" data-act="tags">
-        ${(t.areas||[]).map(a=>{ const w=(t.weights&&t.weights[a]!=null)?t.weights[a]:1; return `<span class="tag primary tag-w" data-area="${esc(a)}" style="opacity:${(0.5+0.5*w).toFixed(2)}" title="Vikt ${Math.round(w*100)} %. Klicka för att ändra.">${esc(a)} <small class="tagpct">${Math.round(w*100)}%</small><button data-area="${esc(a)}">×</button></span>`; }).join("")}
-        <input class="tag-input" list="areaPool" placeholder="${(t.areas||[]).length?'lägg till…':'område'}"></div></div>
-        <div><select data-act="lvl">${lvlOpts}</select></div></div>
-      ${(taskAbilities(t).length||taskFamily(t))?`<div class="task-source">
+      <div class="task-fields"><div><label class="field">Innehåll</label><div class="tags" data-act="tags">${contentChips}<input class="tag-input" list="areaPool" placeholder="${(t.areas||[]).length?'lägg till innehåll…':'innehåll'}"></div></div></div>
+      ${(taskAbilities(t).length||taskFamily(t)||t.source&&t.source.bankId)?`<div class="task-source">
+        ${(t.areas||[]).map(a=>`<span class="source-chip content"><strong>Innehåll</strong> ${esc(a)}</span>`).join("")}
         ${taskAbilities(t).map(a=>`<span class="source-chip ability"><strong>Förmåga</strong> ${esc(ABILITY_LABELS[a])}</span>`).join("")}
         ${taskFamily(t)?`<span class="source-chip family"><strong>Uppgiftstyp</strong> ${esc(familyLabel(taskFamily(t)))}</span>`:""}
         ${t.source&&t.source.bankId?`<span class="source-chip">Bank-ID ${esc(t.source.bankId)}</span>`:""}
       </div>`:""}
-      <div class="parts">${pc>1?'<div class="col-head-parts">Deluppgifter · poäng</div>':''}${partsHtml}
-        <button class="btn-ghost addpart" data-act="addpart">+ Lägg till deluppgift (a, b, c…)</button></div>`;
+      <div class="parts"><div class="col-head-parts"><span>Del</span><span>Maxpoäng</span><span>Svårighetsnivå</span><span></span></div>${partsHtml}
+        <button class="btn-ghost addpart" data-act="addpart">+ Lägg till deluppgift / poängdel</button></div>`;
     card.querySelector('[data-act="del"]').addEventListener("click",()=>{ t.parts.forEach(p=>state.students.forEach(s=>delete s.scores[p.id])); state.tasks=state.tasks.filter(x=>x.id!==t.id); commitBuild(); });
     card.querySelector('[data-act="up"]').addEventListener("click",()=>moveTask(i,-1));
     card.querySelector('[data-act="down"]').addEventListener("click",()=>moveTask(i,1));
-    card.querySelector('[data-act="addpart"]').addEventListener("click",()=>{ t.parts.push({id:nextId++,max:""}); commitBuild(); });
-    card.querySelector('[data-act="lvl"]').addEventListener("change",e=>{ t.level=+e.target.value; commitBuild(); });
-    card.querySelectorAll(".pmax").forEach(inp=>inp.addEventListener("input",e=>{ const p=t.parts.find(x=>String(x.id)===inp.dataset.pid); if(p){ p.max=e.target.value; renderOverview(); renderGradeScale(); renderGrid(); scheduleSave(); } }));
+    card.querySelector('[data-act="addpart"]').addEventListener("click",()=>{ t.parts.push({id:nextId++,max:"",level:null}); commitBuild(); });
+    card.querySelectorAll(".pmax").forEach(inp=>inp.addEventListener("input",e=>{ const p=t.parts.find(x=>String(x.id)===inp.dataset.pid); if(p){ p.max=e.target.value; renderOverview(); renderGradeScale(); renderGrid(); renderAnalysis(); scheduleSave(); } }));
+    card.querySelectorAll(".plevel").forEach(sel=>sel.addEventListener("change",()=>{ const p=t.parts.find(x=>String(x.id)===sel.dataset.pid); if(p){ p.level=+sel.value; renderOverview(); renderAnalysis(); scheduleSave(); } }));
     card.querySelectorAll("[data-rmpart]").forEach(b=>b.addEventListener("click",()=>{ const pid=b.dataset.rmpart; state.students.forEach(s=>delete s.scores[pid]); t.parts=t.parts.filter(x=>String(x.id)!==pid); commitBuild(); }));
     const tagsBox=card.querySelector('[data-act="tags"]'), tagInput=tagsBox.querySelector(".tag-input");
     tagsBox.querySelectorAll(".tag button").forEach(b=>b.addEventListener("click",e=>{ e.stopPropagation(); const a=b.dataset.area; t.areas=t.areas.filter(x=>x!==a); if(t.weights) delete t.weights[a]; focusTaskId=t.id; commitBuild(); }));
@@ -1689,7 +1727,7 @@ function renderTasks(){
   if(focusTaskId!=null){ const idx=state.tasks.findIndex(x=>x.id===focusTaskId); if(idx>=0){ const inp=list.children[idx].querySelector(".tag-input"); if(inp) inp.focus(); } focusTaskId=null; }
 }
 function moveTask(i,dir){ const j=i+dir; if(j<0||j>=state.tasks.length) return; const tmp=state.tasks[i]; state.tasks[i]=state.tasks[j]; state.tasks[j]=tmp; commitBuild(); }
-function dupTask(i){ const t=state.tasks[i]; state.tasks.splice(i+1,0,{id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),parts:t.parts.map(p=>({id:nextId++,max:p.max})),source:t.source?JSON.parse(JSON.stringify(t.source)):null}); commitBuild(); }
+function dupTask(i){ const t=state.tasks[i]; state.tasks.splice(i+1,0,{id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),parts:t.parts.map(p=>({id:nextId++,max:p.max,level:partLevel(p,t)})),source:t.source?JSON.parse(JSON.stringify(t.source)):null}); commitBuild(); }
 function addAreaToTask(t,raw){ const name=(raw||"").trim(); if(!name) return; if(!state.areas.some(a=>a.toLowerCase()===name.toLowerCase())) state.areas.push(name);
   const canon=state.areas.find(a=>a.toLowerCase()===name.toLowerCase()); if(!t.areas.includes(canon)) t.areas.push(canon); focusTaskId=t.id; commitBuild(); }
 function commitBuild(){ renderAreaPool(); renderTasks(); renderOverview(); renderGradeScale(); renderGrid(); renderAnalysis(); save(); }
@@ -1703,12 +1741,13 @@ function renderPipeline(){
   if(el) el.style.width=(done/3*100)+"%";
 }
 function renderOverview(){
-  const areas=usedAreas(), tot=totalMax(); $("#ovTasks").textContent=validTasks().length; $("#ovMax").textContent=fmt(tot)||"0";
+  const areas=usedAreas(), tot=totalMax(), vt=validTasks(); $("#ovTasks").textContent=vt.length; $("#ovMax").textContent=fmt(tot)||"0";
+  const assessedParts=vt.reduce((n,t)=>n+t.parts.filter(p=>num(p.max)>0).length,0); const op=$("#ovParts"); if(op) op.textContent=assessedParts;
   const body=$("#ovBody"); body.innerHTML=""; $("#ovEmpty").style.display=areas.length?"none":"block";
-  areas.forEach(a=>{ const p=areaMax(a); const tr=document.createElement("tr");
-    tr.innerHTML=`<td>${esc(a)}</td><td class="n">${areaTaskCount(a)}</td><td class="n">${fmt(p)} p</td>`; body.appendChild(tr); });
-  const counts={1:0,2:0,3:0,4:0,5:0}; validTasks().forEach(t=>{ if(t.level) counts[t.level]++; });
-  $("#lvlDist").innerHTML=[1,2,3,4,5].map(l=>`<span class="lvlchip">Nivå ${l}: <b>${counts[l]}</b></span>`).join("");
+  areas.forEach(a=>{ const p=areaMax(a); const tr=document.createElement("tr"); tr.innerHTML=`<td>${esc(a)}</td><td class="n">${areaTaskCount(a)}</td><td class="n">${fmt(p)} p</td>`; body.appendChild(tr); });
+  const ab=usedAbilities(), abody=$("#ovAbilityBody"), aempty=$("#ovAbilityEmpty"); if(abody){ abody.innerHTML=""; aempty.style.display=ab.length?"none":"block"; ab.forEach(a=>{ const v=classAbilityMaxOnly(a),tr=document.createElement("tr"); tr.innerHTML=`<td>${esc(ABILITY_LABELS[a])}</td><td class="n">${abilityTaskCount(a)}</td><td class="n">${fmt(v)} p</td>`; abody.appendChild(tr); }); }
+  const pts={1:0,2:0,3:0,4:0,5:0}; vt.forEach(t=>t.parts.forEach(p=>{ const l=partLevel(p,t); if(l) pts[l]+=num(p.max); }));
+  $("#lvlDist").innerHTML=[1,2,3,4,5].map(l=>`<span class="lvlchip">Nivå ${l}: <b>${fmt(pts[l])} p</b></span>`).join("");
 }
 function renderGradeScale(){
   const host=$("#gradeScale"), max=totalMax(); $("#maxPts").textContent=fmt(max)||"0";
@@ -1733,7 +1772,7 @@ function renderGrid(){
   validTasks().forEach(t=>{ r1+=`<th class="area-h grp" colspan="${t.parts.length}">${taskNo(t)}.<span class="mx">${esc(taskAreas(t).join(", "))}</span></th>`; });
   r1+=`<th class="tot-col" rowspan="2">Totalt<span class="mx">av ${fmt(totalMax())||"0"}</span></th>`;
   r1+=`<th class="rm-col" rowspan="2"></th></tr>`;
-  let r2="<tr>"; cols.forEach(c=>{ r2+=`<th class="${c.pi===0?'grp':''}">${c.pc>1?letter(c.pi)+")":""}<span class="mx">max ${fmt(c.p.max)||"?"}</span></th>`; }); r2+="</tr>";
+  let r2="<tr>"; cols.forEach(c=>{ r2+=`<th class="${c.pi===0?'grp':''}">${c.pc>1?letter(c.pi)+")":""}<span class="mx">max ${fmt(c.p.max)||"?"}${partLevel(c.p,c.t)?" · N"+partLevel(c.p,c.t):""}</span></th>`; }); r2+="</tr>";
   const table=document.createElement("table"); table.className="grid"; table.innerHTML="<thead>"+r1+r2+"</thead>"; const tbody=document.createElement("tbody");
   state.students.forEach((s,r)=>{
     const tr=document.createElement("tr"); if(s.absent) tr.className="absent-row";
@@ -1865,7 +1904,7 @@ function renderDetails(){
   if(!aEl) return;
   const act=activeStudents(), nm=s=>esc(s.name||"(namnlös)"), vt=validTasks();
   if(!vt.length||!act.length){ [aEl,abEl,famEl,tEl,lEl,sEl].forEach(e=>{ if(e) e.innerHTML='<div class="empty">Ingen data ännu.</div>'; }); if(lWrap) lWrap.style.display=""; return; }
-  // Klassens resultat per område
+  // Klassens resultat per innehåll
   const ua=usedAreas(); let ah='<div class="ld-bars">';
   const barRow=(label,sub,got,max)=>{ const pct=max?got/max:0, b=band(pct);
     return `<div class="bar-row"><span class="bar-label">${esc(label)}${sub?`<span class="bar-sub">${esc(sub)}</span>`:""}</span>`
@@ -1919,7 +1958,7 @@ function renderDetails(){
   const cl=classLevelStats(), present=order.filter(k=>cl[k].poss>0);
   if(present.length){
     if(lWrap) lWrap.style.display="";
-    const lvlCount=b=>vt.filter(t=>bucketOf(t.level)===b).length;
+    const lvlCount=b=>vt.reduce((n,t)=>n+t.parts.filter(p=>bucketOf(partLevel(p,t))===b&&num(p.max)>0).length,0);
     let h='<div class="ld-bars">';
     present.forEach(k=>{ const p=cl[k].got/cl[k].poss, b=band(p), avg=cl[k].got/(act.length||1), mx=cl[k].poss/(act.length||1); h+=`<div class="bar-row"><span class="bar-label">${lbl[k]}</span><div class="bar-track"><div class="bar-fill" style="width:${(p*100).toFixed(0)}%;background:${b.fg}"></div></div><span class="bar-meta"><b style="color:${b.fg}">${fmt(avg)} av ${fmt(mx)} p</b> (${(p*100).toFixed(0)} %)</span></div>`; });
     h+='</div>';
@@ -2184,7 +2223,7 @@ function renderStudentDetail(hs){
   const areaRows=areaNames.map(a=>({label:a, v:hs.map(x=>{
     const f=x.students.find(s=>nameKey(s.name)===key); const o=f&&f.areas&&f.areas[a];
     return (o&&o.max)?o.got/o.max:null; })})).filter(r=>r.v.filter(v=>v!=null).length>=1);
-  h+='<div class="stu-lead" style="margin-top:20px">Per område</div>';
+  h+='<div class="stu-lead" style="margin-top:20px">Per innehåll</div>';
   h+= areaRows.length ? histTable(areaRows,hs,"Område")
     : '<div class="empty">De sparade proven saknar områdesresultat för enskilda elever. Spara om proven för att få med dem.</div>';
 
@@ -2296,7 +2335,7 @@ async function exportXlsx(){
     ["A","B","C","D","E","F"].forEach(gl=>{ const rr=ws6.addRow([gl,dist[gl],dist[gl]/den]); const gx=GRADE_XL[gl]||GRADE_XL[""]; const c1=rr.getCell(1); c1.fill={type:"pattern",pattern:"solid",fgColor:{argb:gx.bg}}; c1.font={bold:true,color:{argb:gx.fg}}; c1.alignment={horizontal:"center"}; rr.getCell(2).alignment={horizontal:"center"}; rr.getCell(3).numFmt="0 %"; rr.getCell(3).alignment={horizontal:"center"}; });
     ws6.addRow([]);
   }
-  secTitle("Klassens resultat per område");
+  secTitle("Klassens resultat per innehåll");
   let hrA=ws6.addRow(["Område","Antal uppgifter","Klassens resultat"]); styleHeader(ws6,hrA.number);
   usedAreas().forEach(a=>{ const rr=ws6.addRow([a,areaTaskCount(a),null]); rr.getCell(2).alignment={horizontal:"center"}; pctCell(rr,3,classAreaPct(a)); });
   ws6.addRow([]);
@@ -2308,7 +2347,7 @@ async function exportXlsx(){
   if(lvPresent.length){
     secTitle("Klassens resultat per svårighetsnivå");
     let hrL=ws6.addRow(["Nivå","Antal uppgifter","Klassens resultat"]); styleHeader(ws6,hrL.number);
-    const lvlCount=b=>vt.filter(t=>bucketOf(t.level)===b).length;
+    const lvlCount=b=>vt.reduce((n,t)=>n+t.parts.filter(p=>bucketOf(partLevel(p,t))===b&&num(p.max)>0).length,0);
     lvPresent.forEach(k=>{ const rr=ws6.addRow([lvLbl[k],lvlCount(k),null]); rr.getCell(2).alignment={horizontal:"center"}; pctCell(rr,3,clv[k].got/clv[k].poss); });
     ws6.addRow([]);
     if(clv.grund.poss){ const strug=act.filter(s=>{const x=studentLevelStats(s).grund; return x.poss&&x.got/x.poss<0.6;}); const rr=ws6.addRow(["Når inte 60 % på grunderna:",strug.length?strug.map(nmx).join(", "):"ingen"]); rr.getCell(1).font={bold:true}; ws6.mergeCells(rr.number,2,rr.number,4); rr.getCell(2).alignment={wrapText:true,vertical:"top"}; }
@@ -2332,7 +2371,7 @@ async function exportXlsx(){
   ws3.addRow(["Område","Antal uppgifter","Poäng"]); styleHeader(ws3,1); const tot=totalMax();
   areas.forEach(a=>{ const p=areaMax(a); const r=ws3.addRow([a,areaTaskCount(a),p]); r.getCell(2).alignment={horizontal:"center"}; r.getCell(3).alignment={horizontal:"center"}; });
   ws3.addRow([]); const sr=ws3.addRow(["Totalt",validTasks().length,tot]); sr.font={bold:true};
-  ws3.addRow([]); const cl=[0,0,0,0,0,0]; vt.forEach(t=>{ if(t.level) cl[t.level]++; }); ws3.addRow(["Svårighetsnivå","Antal uppgifter"]).font={bold:true};
+  ws3.addRow([]); const cl=[0,0,0,0,0,0]; vt.forEach(t=>t.parts.forEach(p=>{ const l=partLevel(p,t); if(l&&num(p.max)>0) cl[l]++; })); ws3.addRow(["Svårighetsnivå","Antal deluppgifter/poängdelar"]).font={bold:true};
   for(let l=1;l<=5;l++){ const r=ws3.addRow(["Nivå "+l,cl[l]]); r.getCell(2).alignment={horizontal:"center"}; }
   const ws4=wb.addWorksheet("Per elev och område",{views:[{state:"frozen",xSplit:1,ySplit:1}]}); ws4.columns=[{width:24},...areas.map(()=>({width:15})),{width:11}];
   ws4.addRow(["Elev",...areas,"Totalt"]); styleHeader(ws4,1);
@@ -2361,9 +2400,9 @@ function buildPrint(){
 function printStudents(){ if(!validTasks().length||!activeStudents().length){ alert("Det finns inga elevresultat att skriva ut."); return; } buildPrint(); window.print(); }
 
 /* ===== Provfil + bibliotek ===== */
-function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,max:p.max})),source:t.source||null}))}; }
+function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level||null,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,max:p.max,level:partLevel(p,t)})),source:t.source||null}))}; }
 function applyTestData(d){ state.testName=d.testName||""; state.grades=Object.assign({e:"",d:"",c:"",b:"",a:""},d.grades||{}); state.areas=d.areas||[]; nextId=1;
-  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,max:p.max??""})); else parts=[{id:nextId++,max:t.max??""}]; return {id:tid,areas:t.areas||[],level:t.level||null,weights:t.weights||{},parts,source:t.source||null}; });
+  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; const legacy=t.level||null; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,max:p.max??"",level:p.level||p.niva||p["nivå"]||legacy})); else parts=[{id:nextId++,max:t.max??"",level:legacy}]; return {id:tid,areas:t.areas||[],level:legacy,weights:t.weights||{},parts,source:t.source||null}; });
   renderAll(); save(); }
 function saveTestFile(){ const blob=new Blob([JSON.stringify(currentTestData(),null,2)],{type:"application/json"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=((state.testName||"prov").replace(/[^\w åäöÅÄÖ-]/g,"").trim()||"prov")+".prov.json"; a.click(); URL.revokeObjectURL(a.href); }
 function loadTestFile(file){ const r=new FileReader(); r.onload=()=>{ try{ applyTestData(JSON.parse(r.result)); }catch(e){ alert("Filen kunde inte läsas. Är det en sparad provmall?"); } }; r.readAsText(file); }
@@ -2394,7 +2433,7 @@ function initTheme(){ let t="light"; try{ t=localStorage.getItem(THEMEKEY)||"lig
 /* ===== 7. INIT + WIRE ===== */
 function switchTab(name){ document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name)); document.querySelectorAll(".tabpanel").forEach(p=>p.classList.toggle("hidden",p.id!=="tab-"+name)); if(name==="analyze") renderAnalysis();
   if(name==="history") renderHistory(); if(name==="results") renderGrid(); window.scrollTo({top:0,behavior:"smooth"}); }
-function addTask(){ state.tasks.push({id:nextId++,areas:[],level:null,weights:{},parts:[{id:nextId++,max:""}]}); commitBuild(); }
+function addTask(){ state.tasks.push({id:nextId++,areas:[],level:null,weights:{},parts:[{id:nextId++,max:"",level:null}],source:null}); commitBuild(); }
 function addStudent(){ state.students.push({id:nextStudentId++,name:"",scores:{},absent:false,comment:""}); renderGrid(); renderAnalysis(); save(); }
 function addStudentsBulk(text){ const names=text.split(/\r?\n/).map(line=>line.split(/\t|;/).map(c=>c.trim()).filter(Boolean).join(" ").trim()).filter(Boolean); if(!names.length){ alert("Klistra in minst ett namn."); return; }
   names.forEach(n=>state.students.push({id:nextStudentId++,name:n,scores:{},absent:false,comment:""})); $("#pasteArea").value=""; $("#pasteBox").classList.add("hidden"); renderGrid(); renderAnalysis(); save(); }
