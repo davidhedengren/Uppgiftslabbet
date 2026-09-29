@@ -22,6 +22,8 @@ Reglerna i `agent/` gäller Claude på samma sätt som de gällde Hermes.
 
 ## Modellbudget för Claude
 
+Inled varje nytt arbete med ”För det här jobbet föreslår jag …” (Sonnet eller Opus) med en kort motivering. Byt inte modell mitt i en lång session, eftersom det kräver en dyr omläsning utan cache. Föreslå i stället att användaren startar en ny session med rätt modell för jobbet. Sonnet räcker för mekaniskt och deterministiskt arbete. Opus behövs för svår matematik- och fysikgranskning, pedagogiska bedömningar, geometriskt SVG-arbete och komplex kod.
+
 Avsnitt 7 i ARBETSINSTRUKTION (Luna/Sol/Astra) översätts så här: använd deterministiska verktyg först, starta inga subagenter för rutinkontroller, och fråga användaren innan en bred AI-granskning av många uppgifter.
 
 ## Miljö på datorn `Hedav`
