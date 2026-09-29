@@ -5,6 +5,7 @@ Detta dokument är den övergripande instruktionen för agentarbete i Uppgiftsla
 Kompletterande regler:
 
 - [PEDAGOGISKA_REGLER.md](PEDAGOGISKA_REGLER.md) – självständig matematisk och pedagogisk bedömning.
+- [INNEHALLSREGLER.md](INNEHALLSREGLER.md) – kontrollkedja för uppgifter, facit, ledtrådar, Kunskapsgymmet-kort och SVG.
 - [GIT_OCH_BACKUP.md](GIT_OCH_BACKUP.md) – säkert arbete från flera datorer, synkronisering och framtida backup.
 - [KVALITETSKONTROLL.md](KVALITETSKONTROLL.md) – kontroller före och efter ändringar.
 - Avsnitt 7 i detta dokument – modellpolicy, kostnadskontroll och eskaleringsordning före delegering.
