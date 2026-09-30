@@ -6404,6 +6404,35 @@ function plattaListor(html){
       '<p>'+String.fromCharCode(97+(i++))+') '+t.trim()+'</p>');
   });
 }
+/* Alternativuppgifter har sina svarsalternativ i fältet alternativ, som
+   Kunskapsgymmet visar som knappar. När uppgiftstexten hänvisar till
+   alternativ ("Markera det korrekta alternativet") utan att själv lista dem
+   visas de här som A., B., … (skärm, PDF och Word), och rätt alternativ
+   läggs till i facit. Öppna frågor, där alternativen bara är Kunskapsgymmets
+   flervalsversion, och texter med egen lista lämnas orörda. */
+function altVisas(x){
+  const alt=Array.isArray(x?.alternativ)?x.alternativ:[];
+  if(!alt.length) return false;
+  if(alt.every(a=>/^\s*[A-H]\s*$/.test(String(a?.txt??'')))) return false;
+  const t=String(x.t||'').replace(/<svg[\s\S]*?<\/svg>/gi,'').replace(/&nbsp;/g,' ');
+  if(!/alternativ|markera|kryssa|ringa in/i.test(t)) return false;
+  const post=f=>new RegExp('(?:^|<p>|<br\\s*/?>|<li>|\\s)\\s*(?:<strong>)?'+f+'(?:</strong>)?\\s*[.):]\\s').test(t);
+  if(/<ol|<ul/i.test(t) || ((post('A')||post('1')) && (post('B')||post('2')))) return false;
+  const ren=s=>String(s??'').replace(/<[^>]+>/g,'').replace(/\s+/g,'');
+  return !alt.every(a=>ren(t).includes(ren(a?.txt)));
+}
+const altBokstav=i=>String.fromCharCode(65+i);
+function uppgiftsText(x){
+  const t=x?.t||'';
+  if(!altVisas(x)) return t;
+  return t+x.alternativ.map((a,i)=>`<p class="ul-alt"><strong>${altBokstav(i)}.</strong> ${a.txt}</p>`).join('');
+}
+function altFacit(x){
+  if(!altVisas(x)) return '';
+  const ratt=x.alternativ.map((a,i)=>a?.ratt?`${altBokstav(i)}. ${a.txt}`:null).filter(Boolean);
+  return ratt.length?`<p class="facit-svar"><strong>Rätt svar:</strong> ${ratt.join('; ')}</p>`:'';
+}
+
 function LOS(html){
   if(!html) return '';
   html=plattaListor(html);
@@ -6943,7 +6972,7 @@ function rita(sida){
             Redigera
           </button>
         </div>
-        <div class="kroppen">${x.t.replace(/<img\b/gi,'<img loading="lazy" decoding="async"')}</div>
+        <div class="kroppen">${uppgiftsText(x).replace(/<img\b/gi,'<img loading="lazy" decoding="async"')}</div>
         <button class="facitknapp" data-facit="${x.id}">Visa facit</button>
         <div class="facit" data-fbox="${x.id}"></div>
       </div>
@@ -6979,7 +7008,7 @@ function rita(sida){
     b.textContent=på?'Dölj facit':'Visa facit';
     if(på && box.dataset.laddad!=='1'){
       const uppgift=DB.bank.find(x=>x.id===id);
-      box.innerHTML=LOS(uppgift?.s||'');
+      box.innerHTML=LOS(uppgift?.s||'')+altFacit(uppgift);
       box.dataset.laddad='1';
       renderKatex(box);
     }
@@ -7964,7 +7993,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
               : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`));
     h+=`<div class="pu pdf-pu">
       <div class="pn">${i+1}.</div>
-      <div class="pdf-uppgiftstext">${x.t}</div>
+      <div class="pdf-uppgiftstext">${uppgiftsText(x)}</div>
       <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>
     </div>`;
   });
@@ -7972,7 +8001,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
 
   if(facit){
     h+=`<div class="fk"><h1 style="font-size:14pt;margin-bottom:12pt">Facit</h1>`;
-    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${i+1}.</b><div>${LOS(x.s)}</div></div>`;});
+    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${i+1}.</b><div>${LOS(x.s)}${altFacit(x)}</div></div>`;});
     h+=`</div>`;
   }
   return h;
@@ -8923,10 +8952,10 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     rapportera(++steg,antalSteg);
     let taskParas;
     try{
-      taskParas=await wordHtmlTillParagrapher(x.t,docx,{indent:360});
+      taskParas=await wordHtmlTillParagrapher(uppgiftsText(x),docx,{indent:360});
     }catch(e){
       console.warn('Word-export: uppgift '+(x.id||i+1)+' föll tillbaka till ren text.',e);
-      const plain=(new DOMParser().parseFromString(x.t||'','text/html').body.textContent||'').trim();
+      const plain=(new DOMParser().parseFromString(uppgiftsText(x),'text/html').body.textContent||'').trim();
       taskParas=[new Paragraph({
         spacing:{after:35},
         indent:{left:360},
@@ -9015,10 +9044,10 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
       rapportera(++steg,antalSteg);
       children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:`${i+1}.`,bold:true,size:22,font:'Arial'})]}));
       try{
-        children.push(...await wordHtmlTillParagrapher(LOS(wordLista[i].s),docx,{indent:220}));
+        children.push(...await wordHtmlTillParagrapher((LOS(wordLista[i].s)+altFacit(wordLista[i])),docx,{indent:220}));
       }catch(e){
         console.warn('Word-export: facit '+(wordLista[i].id||i+1)+' föll tillbaka till ren text.',e);
-        const plain=(new DOMParser().parseFromString(LOS(wordLista[i].s)||'','text/html').body.textContent||'').trim();
+        const plain=(new DOMParser().parseFromString((LOS(wordLista[i].s)+altFacit(wordLista[i]))||'','text/html').body.textContent||'').trim();
         children.push(new Paragraph({
           indent:{left:220},
           children:[new TextRun({text:plain,size:22,font:'Arial'})]
