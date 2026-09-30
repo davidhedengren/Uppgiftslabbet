@@ -1671,9 +1671,88 @@ function studentSummary(s,thr){
 }
 /* Ren text för kopiering, utskrift och Excel. */
 function classSummaryText(thr){ return summaryText(classSummary(thr)); }
+/* Elevtexten som kopieras och klistras in i Vklass. Den ska gå att läsa för
+   eleven utan förklaring: inga poäng, inget betyg, bara vad som fungerar, vad
+   som ska tränas och vad nästa steg är. Vanlig text med tankstreck, eftersom
+   den ska se likadan ut var den än klistras in. Allt byggs ur samma underlag
+   som areaNeed, så listorna och nästa steg kan inte säga emot varandra. */
+const FEEDBACK_LINES = 4;   /* högst så många rader under "träna mer på" */
 function studentSummaryText(s,thr){
   const name=(s.name||"").trim()||"Eleven";
-  return name+"\n"+summaryText(studentSummary(s,thr));
+  const head=name+(state.testName&&state.testName.trim()?" – "+state.testName.trim():"");
+  if(s.absent) return head+"\n\nDu var frånvarande vid provet.";
+  const out=[head];
+  const areas=usedAreas().filter(a=>areaTaskCount(a)>=UNDERLAG);
+  const split=areas.map(a=>{ const sp=areaSplit(s,a);
+    return {a, e:sp.easy.poss?sp.easy.got/sp.easy.poss:null, h:sp.hard.poss?sp.hard.got/sp.hard.poss:null,
+      eg:sp.easy.got, hg:sp.hard.got, lost:(sp.easy.poss+sp.hard.poss)-(sp.easy.got+sp.hard.got)}; });
+  const ok=v=>v!=null&&v>=STRENGTH_LIMIT;
+
+  /* Det här kan du. Hela området när alla nivåer som finns går bra, annars nivån. */
+  const whole=split.filter(x=>(x.e!=null||x.h!=null)&&(x.e==null||ok(x.e))&&(x.h==null||ok(x.h))&&x.e!=null&&x.h!=null);
+  const easyOnly=split.filter(x=>ok(x.e)&&!whole.includes(x));
+  const hardOnly=split.filter(x=>ok(x.h)&&!ok(x.e)&&x.e!=null);
+  const can=[];
+  if(whole.length && whole.length===areas.length && areas.length>=2) can.push("Alla områden på provet, både de enklare och de svårare uppgifterna");
+  else if(whole.length) can.push(joinSv(whole.map(x=>x.a)));
+  const allEasy=split.filter(x=>x.e!=null);
+  if(allEasy.length>=3 && allEasy.every(x=>ok(x.e)) && easyOnly.length) can.push("De enklare uppgifterna i alla områden");
+  else if(easyOnly.length) can.push("De enklare uppgifterna om "+joinSv(easyOnly.map(x=>x.a)));
+  if(hardOnly.length) can.push("De svårare uppgifterna om "+joinSv(hardOnly.map(x=>x.a)));
+  if(can.length){
+    out.push("","Det här kan du:"); can.forEach(c=>out.push("– "+c));
+  } else {
+    /* Inget når gränsen. Nämn ändå det som börjat fungera, så att texten inte
+       bara handlar om det som saknas. */
+    const started=split.filter(x=>x.eg>0).sort((x,y)=>(y.e||0)-(x.e||0)).slice(0,3);
+    if(started.length){ out.push("","Det här har du börjat få grepp om:","– Några av de enklare uppgifterna om "+joinSv(started.map(x=>x.a))); }
+  }
+
+  /* Det här behöver du träna mer på. Samma nivå blir en rad, och de rader där
+     flest poäng tappas kommer först. */
+  const needs=areas.map(a=>areaNeed(s,a)).filter(Boolean).sort((x,y)=>y.lost-x.lost);
+  const lines=[];
+  if(needs.length){
+    if(areas.length>=5 && needs.length>=Math.ceil(areas.length*0.8)){
+      lines.push("Lite i alla områden. Det är bredden som behöver övas, inte ett enskilt moment.");
+    } else {
+      /* Sitter inte grunderna pekar texten mot de enklare uppgifterna även där
+         allt behöver övas, eftersom det är där eleven ska börja. */
+      const gls=studentLevelStats(s).grund, basicsWeak=gls.poss>0&&gls.got/gls.poss<FEEDBACK_LIMIT;
+      const groups=[];
+      needs.forEach(n=>{
+        const kind=(n.kind==="both"&&basicsWeak)?"easy":n.kind;
+        if(kind==="both"){ groups.push({lost:n.lost,text:n.area}); return; }
+        n={...n,kind};
+        let g=groups.find(x=>x.kind===n.kind);
+        if(!g){ g={kind:n.kind,lost:0,areas:[]}; groups.push(g); }
+        g.areas.push(n.area); g.lost+=n.lost;
+      });
+      groups.forEach(g=>{ if(g.areas) g.text="De "+(g.kind==="easy"?"enklare":"svårare")+" uppgifterna om "+joinSv(g.areas); });
+      groups.sort((x,y)=>y.lost-x.lost);
+      if(groups.length>FEEDBACK_LINES){ groups.slice(0,FEEDBACK_LINES-1).forEach(g=>lines.push(g.text)); lines.push("Även andra områden, men börja med de här"); }
+      else groups.forEach(g=>lines.push(g.text));
+    }
+    out.push("","Det här behöver du träna mer på:"); lines.forEach(l=>out.push("– "+l));
+  }
+
+  /* Nästa steg: helhetsbilden om den finns, annars utifrån var poängen tappas. */
+  let next=levelPattern(s).replace("De enklare uppgifterna sitter. ","")
+    .replace("Du klarar de svårare uppgifterna bättre än de enklare. ","")
+    .replace(", det brukar handla om småfel snarare än om något du inte kan.",". Det handlar ofta om småfel, inte om att du inte kan.")
+    .replace("Du klarar uppgifter på alla nivåer bra. ","")
+    .replace("Nästa steg är uppgifter där","Träna på uppgifter där");
+  if(!next){
+    const easyN=needs.filter(n=>n.kind==="easy").length, hardN=needs.filter(n=>n.kind==="hard"||n.kind==="both").length;
+    if(!needs.length) next="Fortsätt träna på de svårare uppgifterna som kombinerar flera moment.";
+    else if(easyN>hardN) next="Börja med de enklare uppgifterna och bygg vidare därifrån.";
+    else next="Träna på uppgifter där flera saker ska kombineras.";
+  }
+  /* Nästan full pott: då är nästa steg att utmanas, inte att repetera. */
+  if(studentTotals(s).pct>=0.95) next="Utmana dig med ännu svårare problem, gärna sådana som kombinerar flera områden.";
+  out.push("","Nästa steg: "+next);
+  if(s.comment&&s.comment.trim()) out.push("",s.comment.trim());
+  return out.join("\n");
 }
 
 /* ===== 5. RENDERING ===== */
@@ -2366,7 +2445,7 @@ async function exportXlsx(){
   ws2.mergeCells("A2:B2"); const c2=ws2.getCell("A2"); c2.value=classSummaryText(thr2); c2.alignment={wrapText:true,vertical:"top"}; ws2.getRow(2).height=Math.max(40,Math.ceil(c2.value.length/115)*15);
   ws2.addRow([]); ws2.addRow(["Elev","Feedback"]); styleHeader(ws2,4);
   state.students.forEach(s=>{ const fb=studentSummaryText(s,thr2), tt=studentTotals(s); const r=ws2.addRow([(s.name||"(namnlös)")+(!s.absent&&tt.grade?"  ["+tt.grade+"]":""),fb]);
-    r.getCell(1).font={bold:true}; r.getCell(1).alignment={vertical:"top"}; r.getCell(2).alignment={wrapText:true,vertical:"top"}; r.height=Math.max(30,Math.ceil(fb.length/100)*15); });
+    r.getCell(1).font={bold:true}; r.getCell(1).alignment={vertical:"top"}; r.getCell(2).alignment={wrapText:true,vertical:"top"}; r.height=Math.max(30,fb.split("\n").reduce((n,l)=>n+Math.max(1,Math.ceil(l.length/100)),0)*15); });
   const ws3=wb.addWorksheet("Provöversikt",{views:[{state:"frozen",ySplit:1}]}); ws3.columns=[{width:26},{width:16},{width:10}];
   ws3.addRow(["Område","Antal uppgifter","Poäng"]); styleHeader(ws3,1); const tot=totalMax();
   areas.forEach(a=>{ const p=areaMax(a); const r=ws3.addRow([a,areaTaskCount(a),p]); r.getCell(2).alignment={horizontal:"center"}; r.getCell(3).alignment={horizontal:"center"}; });
