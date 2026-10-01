@@ -68,7 +68,7 @@ Lärarens planeringar ligger i OneDrive: `C:\Users\Hedav\OneDrive - Jönköpings
 
 ## Pågående omstrukturering: moment och delmoment
 
-Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett kort i Kunskapsgymmet), *delmoment* = `familj` (2–5 per moment, minst 8 uppgifter var). Ordning: Fysik 1 → Ma1 → Ma2c → övriga. Gamla namn sparas i `omrTidigare`/`familjTidigare`; Kunskapsgymmets `migreraFamiljer()` flyttar elevresultat och räknar om historiken. Vid synk av `struktur*.js` måste Kunskapsgymmets avslutande `window.GRUPP… = {};` finnas kvar (saknas i master för ma2). Fysik 1, Ma1 och Ma2 är klara och pushade 2026-10-01; kvar: fy2, mato1 (Ma3c), mato2 (Ma4), matf1 (Ma5). Översikter: `C:\Users\Hedav\code\struktur-forslag\` (`fysik1.md`, `ma1.md`).
+Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett kort i Kunskapsgymmet), *delmoment* = `familj` (2–5 per moment, minst 8 uppgifter var). Ordning: Fysik 1 → Ma1 → Ma2c → övriga. Gamla namn sparas i `omrTidigare`/`familjTidigare`; Kunskapsgymmets `migreraFamiljer()` flyttar elevresultat och räknar om historiken. Vid synk av `struktur*.js` måste Kunskapsgymmets avslutande `window.GRUPP… = {};` finnas kvar (saknas i master för ma2). Fysik 1, Ma1, Ma2, Fysik 2, Ma3c (mato1) och Ma4 (mato2) är klara och pushade 2026-10-01; kvar: matf1 (Ma5, gamla Ma5-planeringar VT22). Ma4 följer Planering Ma4 24-25/25-26; trigonometriska kurvor i radianer ligger i ett eget moment efter Cirkelsektorn. Vid omstrukturering: peka också om genomgångarna i Kunskapsgymmets `typuppgifter-<bank>.js` (block sist i filen) och höj `BANK_VERSION`. Översikter: `C:\Users\Hedav\code\struktur-forslag\` (`fysik1.md`, `ma1.md`, `fy2.md`, `mato1.md`, `mato2.md`).
 
 ## Arbetssätt med användaren
 
