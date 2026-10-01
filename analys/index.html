@@ -1677,9 +1677,12 @@ function classSummaryText(thr){ return summaryText(classSummary(thr)); }
    den ska se likadan ut var den än klistras in. Allt byggs ur samma underlag
    som areaNeed, så listorna och nästa steg kan inte säga emot varandra. */
 const FEEDBACK_LINES = 4;   /* högst så många rader under "träna mer på" */
-function studentSummaryText(s,thr){
-  const name=(s.name||"").trim()||"Eleven";
-  const head=name+(state.testName&&state.testName.trim()?" – "+state.testName.trim():"");
+/* Rubriken är bara "Kommentar", utan namn och provnamn, så att texten kan klistras in hos eleven som den är.
+   Med medNamn står elevens namn och provet, för listor där flera elevers texter följer på varandra. */
+function studentSummaryText(s,thr,medNamn=false){
+  const head=medNamn
+    ? ((s.name||"").trim()||"Eleven")+(state.testName&&state.testName.trim()?" – "+state.testName.trim():"")
+    : "Kommentar";
   if(s.absent) return head+"\n\nDu var frånvarande vid provet.";
   const out=[head];
   const areas=usedAreas().filter(a=>areaTaskCount(a)>=UNDERLAG);
@@ -2571,7 +2574,7 @@ function wire(){
   $("#grpRename").addEventListener("click",renameGroup);
   $("#grpRemove").addEventListener("click",removeGroup);
   $("#libSave").addEventListener("click",libSaveCurrent); $("#libOpen").addEventListener("click",libOpen); $("#libDelete").addEventListener("click",libDelete);
-  $("#copyStudents").addEventListener("click",()=>copyText(state.students.map(s=>studentSummaryText(s,THR)).join("\n\n"),$("#copyStudents")));
+  $("#copyStudents").addEventListener("click",()=>copyText(state.students.map(s=>studentSummaryText(s,THR,true)).join("\n\n"),$("#copyStudents")));
   $("#clearBuild").addEventListener("click",clearAll);
   $("#exportAll").addEventListener("click",exportAllFile);
   $("#importAll").addEventListener("click",()=>$("#importAllInput").click());
