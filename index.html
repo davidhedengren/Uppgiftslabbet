@@ -12374,11 +12374,40 @@ async function ulRapportSkicka(knapp){
 }
 function ulRapportDatum(v){ try{return new Intl.DateTimeFormat('sv-SE',{dateStyle:'short',timeStyle:'short'}).format(new Date(v));}catch(_){return String(v||'');} }
 function ulRapportStatusText(s){return s==='atgardad'?'Åtgärdad':s==='ignorerad'?'Ignorerad':'Öppen';}
+/* Samma format som Kunskapsgymmets logg: en rad per uppgift (och spår) med antal
+   rapporter och senaste datum, grupperat per kurs med kursens namn och kod. */
+const UL_LOGG_KURSNAMN={fy1:'Fysik nivå 1',fy2:'Fysik nivå 2',ma1:'Matematik nivå 1',ma2:'Matematik nivå 2',
+  mato1:'Matematik – fortsättning nivå 1',mato2:'Matematik – fortsättning nivå 2',matf1:'Matematik – fördjupning nivå 1'};
 function ulRapportLoggText(lista){
-  const datum=new Date().toLocaleDateString('sv-SE'); let out=`Felrapporterade uppgifter · Uppgiftslabbet · ${datum}\n\n`;
-  const grupper=new Map(); for(const r of lista){const k=r.kurs||'okand';if(!grupper.has(k))grupper.set(k,[]);grupper.get(k).push(r);}
-  for(const [kurs,rs] of grupper){out+=`${kurs}\n`; for(const r of rs){out+=`  #${r.uppgift_id}${r.spar?'  spår '+r.spar:''}  ${ulRapportStatusText(r.status)}  ${ulRapportDatum(r.skapad)}\n`;out+=`      taggar: ${(r.taggar||[]).map(t=>UL_RAPPORT_TAGGAR[t]||t).join(', ')}\n`;if(r.nuvarande_niva||r.nuvarande_poang)out+=`      nuvarande: ${r.nuvarande_niva||'–'} · ${r.nuvarande_poang||'–'}\n`;if(r.foreslagen_poang)out+=`      lärarbedömning: (${r.foreslagen_poang.E||0}/${r.foreslagen_poang.C||0}/${r.foreslagen_poang.A||0})\n`;if(r.kommentar)out+=`      lärarkommentar: "${String(r.kommentar).replace(/\s+/g,' ').trim()}"\n`;out+='\n';}out+='\n';}
-  return out;
+  const rader=['Felrapporterade uppgifter · Uppgiftslabbet · '+new Date().toLocaleDateString('sv-SE'),''];
+  const synliga=(lista||[]).filter(r=>ulRapportFilter==='alla'||r.status===ulRapportFilter);
+  const per=new Map();
+  for(const r of synliga){
+    const k=(r.kurs||'okand')+'|'+r.uppgift_id+'|'+(r.spar||'');
+    if(!per.has(k)) per.set(k,{kurs:r.kurs||'okand',uppgift:r.uppgift_id,spar:r.spar||'',rapporter:[]});
+    per.get(k).rapporter.push(r);
+  }
+  let kurs=null;
+  for(const g of per.values()){
+    if(g.kurs!==kurs){
+      kurs=g.kurs;
+      rader.push('',(UL_LOGG_KURSNAMN[kurs]||KURSER.find(x=>x.id===kurs)?.titel||kurs)+'  ['+kurs+']');
+    }
+    const rs=g.rapporter, antal=rs.length;
+    const senast=rs.map(r=>String(r.skapad||'')).sort().pop()||'';
+    const taggar=[...new Set(rs.flatMap(r=>r.taggar||[]))].map(t=>UL_RAPPORT_TAGGAR[t]||t).join(', ');
+    const status=[...new Set(rs.map(r=>r.status).filter(s=>s&&s!=='oppen'))].map(ulRapportStatusText).join(', ');
+    const nu=rs.find(r=>r.nuvarande_niva||r.nuvarande_poang);
+    const bed=[...new Set(rs.filter(r=>r.foreslagen_poang).map(r=>`(${r.foreslagen_poang.E||0}/${r.foreslagen_poang.C||0}/${r.foreslagen_poang.A||0})`))].join(' ');
+    const komm=rs.map(r=>String(r.kommentar||'').replace(/\s+/g,' ').trim()).filter(Boolean).map(x=>'"'+x+'"').join(' ');
+    rader.push(`  #${g.uppgift}${g.spar?'  spår '+g.spar:''}  ${antal} rapport${antal===1?'':'er'}`
+      +`${senast?'  senast '+senast.slice(0,10):''}${status?'  ('+status.toLowerCase()+')':''}`
+      +`${taggar?'\n      taggar: '+taggar:''}`
+      +`${nu?'\n      nuvarande: '+(nu.nuvarande_niva||'–')+' · '+(nu.nuvarande_poang||'–'):''}`
+      +`${bed?'\n      lärarbedömning: '+bed:''}`
+      +`${komm?'\n      lärarkommentarer: '+komm:''}`);
+  }
+  return rader.join('\n');
 }
 async function ulRitaFelrapporter(){
   const titel=document.getElementById('delamodalTitel'), under=document.getElementById('delamodalText'); titel.textContent='Felrapporter'; under.textContent='Rapporter från lärare om uppgifter i Uppgiftslabbet.';
