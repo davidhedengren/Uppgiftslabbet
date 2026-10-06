@@ -29,7 +29,7 @@ Avsnitt 7 i ARBETSINSTRUKTION (Luna/Sol/Astra) översätts så här: använd det
 ## Miljö på datorn `Hedav`
 
 - Repona ligger i `C:\Users\Hedav\code\Uppgiftslabbet` och `C:\Users\Hedav\code\kunskapsgymmet`.
-- **Node.js finns inte** och får inte installeras (IT-policy). `tools/*.js` och `node --check` kan därför inte köras direkt. Använd i stället parsning i den inbyggda webbläsaren eller PowerShell, och redovisa att Node-testerna inte har körts.
+- Node.js v24 finns (`C:\Program Files\nodejs\node.exe`, på PATH). Kör `node --check`, `node tools/granska-uppgifter.js` och `node tools/granska-svg.js` (använder Chrome i `C:\Program Files\Google\Chrome\Application\`, tar ca 3 min, skriver `SVG_GRANSKNING.html/.json` som är gitignorerade). Testerna: `node tools/granska-uppgifter.test.js` och `node tools/granska-svg.test.js`.
 - Backupsystemet i `GIT_OCH_BACKUP.md` finns på den andra datorn (`C:\Users\david\...`), inte här.
 
 ## Felrapporter från Kunskapsgymmet
@@ -44,7 +44,7 @@ Användaren klistrar in en logg ("Felrapporterade uppgifter · Kunskapsgymmet ·
    - *Något annat* / kommentar om svårighet: bedöm kommentaren mot uppgiften (t.ex. `miniräknare`-flaggan, svarsformat, bildfel i SVG).
    - Elevens kommentar om en formulering gäller ofta **fler uppgifter**. Användaren vill då att liknande formuleringar tas bort i alla banker/uppgifter ("och ta bort liknande i andra uppgifter"). Sök brett med regex, räkna förekomster, ändra deterministiskt med ett Python-skript (utf-8, `newline=''`), ändra bara `t` (aldrig facit `s` utan skäl) och kontrollera diffen.
 4. Redigera bara master i Uppgiftslabbet, kopiera därefter de ändrade bankfilerna till `kunskapsgymmet` (`cp`) och kontrollera med `cmp` att de är identiska.
-5. Kontrollera att filen fortfarande är giltig JSON (Python: `json.loads` på `[`…`]`), `git diff --check` och att ingen tom `<p></p>` uppstått. Node finns inte.
+5. Kontrollera att filen fortfarande är giltig JSON (Python: `json.loads` på `[`…`]`), `git diff --check`, `node --check` på bankfilen och att ingen tom `<p></p>` uppstått.
 6. Fråga användaren innan commit/push. Efter ja: `git fetch`, jämför mot upstream, commit i båda repona (Uppgiftslabbet först), `git pull --rebase` i Kunskapsgymmet om remote ligger före (den får ofta ändringar i `index.html`/`sql/` från andra sessioner), push, hämta och verifiera `0 0` mot upstream.
 7. Avsluta med en kort lista per uppgift: vad som ändrades, vad som lämnades orört och varför.
 
@@ -74,5 +74,5 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 
 - Svara på svenska, kortfattat; rapportera per uppgift vad som ändrats och vad som inte gjorts.
 - Fråga innan commit/push, men när användaren sagt ja: gör båda repona i ett svep och verifiera mot remote.
-- Verktyg på `Hedav`: Python och Bash fungerar (skriv hjälpskript i sessionens scratchpad/`$TEMP`), Node saknas. Läs/skriv bankfiler som utf-8; konsolutskrift av å/ä/ö kan se trasig ut utan att filen är det.
+- Verktyg på `Hedav`: Python, Bash och Node fungerar (skriv hjälpskript i sessionens scratchpad/`$TEMP`). Skriv Python-skript med filverktyget, inte via bash-heredoc, eftersom backslashes i LaTeX annars kan halveras. Läs/skriv bankfiler som utf-8; konsolutskrift av å/ä/ö kan se trasig ut utan att filen är det.
 - Instruktionerna ovan ersätter inte kontrollen mot `agent/*.md`; läs dem vid innehållsändringar.
