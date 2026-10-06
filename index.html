@@ -12379,7 +12379,7 @@ function ulRapportStatusText(s){return s==='atgardad'?'Åtgärdad':s==='ignorera
 const UL_LOGG_KURSNAMN={fy1:'Fysik nivå 1',fy2:'Fysik nivå 2',ma1:'Matematik nivå 1',ma2:'Matematik nivå 2',
   mato1:'Matematik – fortsättning nivå 1',mato2:'Matematik – fortsättning nivå 2',matf1:'Matematik – fördjupning nivå 1'};
 function ulRapportLoggText(lista){
-  const rader=['Felrapporterade uppgifter · Uppgiftslabbet · '+new Date().toLocaleDateString('sv-SE'),''];
+  const rader=['Felrapporterade uppgifter · Uppgiftslabbet · '+ulRapportDatum(new Date()),''];
   const synliga=(lista||[]).filter(r=>ulRapportFilter==='alla'||r.status===ulRapportFilter);
   const per=new Map();
   for(const r of synliga){
@@ -12394,14 +12394,14 @@ function ulRapportLoggText(lista){
       rader.push('',(UL_LOGG_KURSNAMN[kurs]||KURSER.find(x=>x.id===kurs)?.titel||kurs)+'  ['+kurs+']');
     }
     const rs=g.rapporter, antal=rs.length;
-    const senast=rs.map(r=>String(r.skapad||'')).sort().pop()||'';
+    const tider=rs.map(r=>String(r.skapad||'')).filter(Boolean).sort(), forst=tider[0]||'', senast=tider[tider.length-1]||'';
     const taggar=[...new Set(rs.flatMap(r=>r.taggar||[]))].map(t=>UL_RAPPORT_TAGGAR[t]||t).join(', ');
     const status=[...new Set(rs.map(r=>r.status).filter(s=>s&&s!=='oppen'))].map(ulRapportStatusText).join(', ');
     const nu=rs.find(r=>r.nuvarande_niva||r.nuvarande_poang);
     const bed=[...new Set(rs.filter(r=>r.foreslagen_poang).map(r=>`(${r.foreslagen_poang.E||0}/${r.foreslagen_poang.C||0}/${r.foreslagen_poang.A||0})`))].join(' ');
-    const komm=rs.map(r=>String(r.kommentar||'').replace(/\s+/g,' ').trim()).filter(Boolean).map(x=>'"'+x+'"').join(' ');
+    const komm=rs.filter(r=>String(r.kommentar||'').trim()).map(r=>'"'+String(r.kommentar).replace(/\s+/g,' ').trim()+'"'+(antal>1&&r.skapad?' ('+ulRapportDatum(r.skapad)+')':'')).join(' ');
     rader.push(`  #${g.uppgift}${g.spar?'  spår '+g.spar:''}  ${antal} rapport${antal===1?'':'er'}`
-      +`${senast?'  senast '+senast.slice(0,10):''}${status?'  ('+status.toLowerCase()+')':''}`
+      +`${forst&&antal>1&&ulRapportDatum(forst)!==ulRapportDatum(senast)?'  först '+ulRapportDatum(forst):''}${senast?'  senast '+ulRapportDatum(senast):''}${status?'  ('+status.toLowerCase()+')':''}`
       +`${taggar?'\n      taggar: '+taggar:''}`
       +`${nu?'\n      nuvarande: '+(nu.nuvarande_niva||'–')+' · '+(nu.nuvarande_poang||'–'):''}`
       +`${bed?'\n      lärarbedömning: '+bed:''}`
