@@ -29,7 +29,8 @@ function setup(){
     $:()=>({value:'Prov',checked:false}),sparLasaAlla:()=>[],sparInstallningar:()=>({}),AKTIV_SPAR_ID:null,
     dokumentOmraden:()=>[]});
   load(c,html,['sparSnapshotUppgift','bladDelbokstav','bladGrupper','bladNumrering',
-    'bladNormaliseraGrupper','bladSlappUppgift','bladSeparera','bladFlytta','bladOrdna','bladSattProvdel',
+    'bladNormaliseraGrupper','bladSlappUppgift','bladSeparera','bladFlytta','bladOrdna',
+    'bladOrdnaDelar','bladFlyttaGrupp','bladSattProvdel',
     'sparByggDokument','sparUppgifterUrDokument','analysNiva','analysPoangSumma','analysDelar','byggAnalysOverforing']);
   return c;
 }
@@ -98,6 +99,55 @@ test('En grupp håller ihop i samma provdel både vid tillägg och byte av provd
   await c.bladSlappUppgift('b','a');assert.equal(c.state.blad[1]._provdel,1);
   c.bladSattProvdel(1,2);assert.equal(c.state.blad[0]._provdel,2);assert.equal(c.state.blad[1]._provdel,2);
   c.bladSattProvdel(0,0);assert.ok(c.state.blad.every(x=>!x._provdel));
+});
+test('Dragning inom en grupp ändrar delarnas ordning utan att flytta andra uppgifter',async()=>{
+  const c=setup();await c.bladSlappUppgift('b','a');await c.bladSlappUppgift('c','a');
+  c.bladOrdnaDelar([2,0,1]);
+  assert.deepEqual(plain(c.state.blad.map(t=>t.id)),['c','a','b','d']);
+  assert.deepEqual(plain(c.bladNumrering().map(n=>n.etikett)),['1 a)','1 b)','1 c)','2.']);
+  const before=plain(c.state.blad);
+  for(const invalid of [[0,0,1],[0,1],[0,1,3],[]]) c.bladOrdnaDelar(invalid);
+  assert.deepEqual(plain(c.state.blad),before,'Ofullständiga ordningar får inte tappa eller dubblera delar');
+});
+test('Layoutens flyttpilar flyttar hela gruppen även från dess första del',async()=>{
+  const c=setup();await c.bladSlappUppgift('b','a');await c.bladSlappUppgift('c','a');
+  c.bladFlyttaGrupp(0,1);
+  assert.deepEqual(plain(c.state.blad.map(t=>t.id)),['d','a','b','c']);
+  c.bladFlyttaGrupp(2,-1);
+  assert.deepEqual(plain(c.state.blad.map(t=>t.id)),['a','b','c','d']);
+  c.bladFlyttaGrupp(0,-1);
+  assert.deepEqual(plain(c.state.blad.map(t=>t.id)),['a','b','c','d']);
+});
+test('Dokumentet och facit har huvudnumret en gång och delarna i ett gemensamt block',async()=>{
+  const c=setup();await c.bladSlappUppgift('b','a');await c.bladSlappUppgift('c','a');
+  Object.assign(c,{wordDatum:x=>x,wordEsc:x=>x,LOGO:'logo.png',uppgiftsText:x=>x.t,
+    utskriftsVerktyg:()=>'',LOS:x=>x,altFacit:()=>''});
+  load(c,html,['bladHTML','totalpoang']);
+  c.state.visaPoäng=true;
+  const output=c.bladHTML({facit:true,hjalpmedel:false});
+  assert.deepEqual([...output.matchAll(/class="pn">([^<]+)/g)].map(m=>m[1]),['1.','2.']);
+  assert.equal([...output.matchAll(/class="pu pdf-pu pdf-grupp"/g)].length,1);
+  assert.deepEqual([...output.matchAll(/class="pdf-delbokstav">([^<]+)/g)].map(m=>m[1]),['a)','b)','c)']);
+  assert.deepEqual([...output.matchAll(/class="pdf-deluppgift" data-i="(\d+)"/g)].map(m=>+m[1]),[0,1,2]);
+  assert.match(output,/class="pu pdf-pu" data-i="3"/,'Nästa uppgift behåller sitt index i den platta datamodellen');
+  assert.match(output,/<div class="fu fu-grupp"><b>1\.<\/b>/);
+  assert.deepEqual([...output.matchAll(/class="fu-del"><b>([^<]+)/g)].map(m=>m[1]),['a)','b)','c)']);
+  for(const task of c.state.blad){
+    assert.ok(output.includes(task.t));assert.ok(output.includes(task.s));assert.ok(output.includes('('+task.poang+')'));
+  }
+});
+test('Gemensamma hjälpmedel visas en gång; olika tillåtelser visas för respektive del',async()=>{
+  const c=setup();await c.bladSlappUppgift('b','a');
+  Object.assign(c,{wordDatum:x=>x,wordEsc:x=>x,LOGO:'logo.png',uppgiftsText:x=>x.t,
+    utskriftsVerktyg:x=>`<span class="verktyg">${x.miniräknare?'räknare':'utan räknare'}</span>`});
+  load(c,html,['bladHTML','totalpoang']);
+  let output=c.bladHTML({facit:false});
+  assert.equal([...output.matchAll(/class="verktyg"/g)].length,2,'En symbol för gruppen och en för den vanliga uppgiften');
+  c.state.blad[1].miniräknare=true;
+  output=c.bladHTML({facit:false});
+  assert.equal([...output.matchAll(/class="verktyg"/g)].length,3);
+  assert.ok(output.includes('>räknare</span>'));
+  assert.ok(!c.bladHTML({facit:false,hjalpmedel:false}).includes('class="verktyg"'));
 });
 test('Sparade snapshots återskapar grupperna; äldre dokument behåller vanlig numrering',async()=>{
   const c=setup();await c.bladSlappUppgift('b','a');

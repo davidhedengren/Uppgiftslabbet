@@ -4537,22 +4537,24 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .lr-sidlinje{position:absolute;left:0;right:0;border-top:1px dashed #C6C2CB;pointer-events:none}
 .lr-sidlinje::after{content:attr(data-sida);position:absolute;right:4px;top:4px;
   font:600 9px/1 var(--mono,monospace);color:#A9A5AE;letter-spacing:.06em}
-.lr-pu{position:relative}
+.lr-pu,.lr-deluppgift{position:relative}
 .lr-pu.markerad{outline:2px solid var(--ed);outline-offset:6px;border-radius:4px}
-.lr-pu.dras{opacity:.4}
-.lr-pu.slappzon::before{content:"";position:absolute;left:-10px;right:-10px;top:-7px;
+.lr-pu.dras,.lr-deluppgift.dras{opacity:.4}
+.lr-pu.slappzon::before,.lr-deluppgift.slappzon::before{content:"";position:absolute;left:-10px;right:-10px;top:-7px;
   border-top:2.5px solid var(--ed);border-radius:2px}
 .lr-handtag{position:absolute;top:-13px;right:-6px;display:flex;gap:1px;padding:3px;
   background:var(--surface,#fff);border:1px solid var(--line-2,#E4E3E6);border-radius:9px;
   box-shadow:0 3px 10px rgba(0,0,0,.09);opacity:0;transition:opacity .12s;z-index:5}
-.lr-pu:hover .lr-handtag,.lr-pu:focus-within .lr-handtag{opacity:1}
+.lr-pu:hover>.lr-handtag,.lr-pu:focus-within>.lr-handtag,
+.lr-deluppgift:hover>.lr-handtag,.lr-deluppgift:focus-within>.lr-handtag{opacity:1}
+.lr-handtag-del{top:0;right:-64px}
 .lr-handtag button{width:24px;height:24px;border:none;background:none;border-radius:6px;cursor:pointer;
   color:var(--muted);display:grid;place-items:center;font:600 11px/1 var(--ui,system-ui)}
 .lr-handtag button:hover{background:var(--sunken,#F0EFF2);color:var(--ink)}
 .lr-handtag button.pa{background:var(--ed-tint,#E6F0EC);color:var(--ed,#0F6B4F)}
 .lr-handtag button.bort:hover{background:#FBE9E7;color:#B43123}
 .lr-handtag button svg{width:13px;height:13px}
-.lr-handtag .lr-flytt{cursor:grab;color:var(--ink-2)}
+.lr-handtag .lr-flytt{cursor:grab;color:var(--ink-2);touch-action:none}
 .lr-handtag .lr-flytt:active{cursor:grabbing}
 .lr-handtag .lr-delval{height:24px;min-width:66px;padding:0 22px 0 7px;border:0;border-radius:6px;
   background:transparent;color:var(--ink-2);font:700 11px/1 var(--font);cursor:pointer}
@@ -5119,8 +5121,16 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .brad.del-slapp::after{content:'Lägg till som deluppgift';position:absolute;right:8px;bottom:-7px;
   z-index:2;background:var(--ed);color:#fff;padding:2px 7px;border-radius:5px;font-size:10px}
 .brad .separera{font-size:10px;color:var(--ed);padding:2px 5px;min-height:22px}
-#utskrift .pu.pdf-pu.deluppgift,.lr-papper .pu.pdf-pu.deluppgift{
-  grid-template-columns:max-content minmax(0,1fr) 78pt!important}
+#utskrift .pu.pdf-pu.pdf-grupp,.lr-papper .pu.pdf-pu.pdf-grupp{
+  grid-template-columns:25pt minmax(0,1fr)!important}
+.pdf-delar{min-width:0;grid-column:2}
+.pdf-deluppgift{display:grid;grid-template-columns:20pt minmax(0,1fr) 78pt;
+  align-items:start;margin:.18em 0;break-inside:avoid;page-break-inside:avoid}
+.pdf-deluppgift:first-child{margin-top:0}
+.pdf-deluppgift:last-child{margin-bottom:0}
+.pdf-delbokstav{font-family:var(--mono);padding-top:1pt;white-space:nowrap}
+.fu-grupp{display:grid;grid-template-columns:25pt minmax(0,1fr)}
+.fu-del{display:grid;grid-template-columns:20pt minmax(0,1fr);margin-bottom:5pt}
 .pdf-pu>.pn,.fu>b{white-space:nowrap}
 
 /* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
@@ -5757,7 +5767,7 @@ function ulLösenordUpplåst(){
     </div>
     <div class="lr-body"><div class="lr-ark"><div class="lr-papper" id="lrPapper"></div></div></div>
     <div class="lr-fot">
-      <span>Dra i <b>⠿</b> för att flytta en uppgift.</span>
+      <span>Dra i <b>⠿</b> för att flytta en uppgift eller ändra delarnas ordning.</span>
       <span><b>+</b> och <b>−</b> ändrar skrivutrymmet under uppgiften.</span>
       <span>Streckade linjer visar var sidorna bryts.</span>
       <span><kbd>Esc</kbd> stänger</span>
@@ -7282,6 +7292,19 @@ function bladOrdna(ordning,flyttad){
   nya.splice(pos,0,g);
   state.blad=nya.flatMap(g=>g.uppgifter);
 }
+function bladOrdnaDelar(ordning){
+  const g=bladGrupper().find(g=>g.index.includes(ordning[0]));
+  if(!g||g.index.length!==ordning.length||new Set(ordning).size!==ordning.length||
+    ordning.some(i=>!g.index.includes(i))) return;
+  const delar=ordning.map(i=>state.blad[i]);
+  g.index.forEach((i,j)=>{state.blad[i]=delar[j];});
+}
+function bladFlyttaGrupp(i,riktning){
+  const grupper=bladGrupper(),gi=grupper.findIndex(g=>g.index.includes(i));
+  if(gi<0||!grupper[gi+riktning]) return;
+  [grupper[gi],grupper[gi+riktning]]=[grupper[gi+riktning],grupper[gi]];
+  state.blad=grupper.flatMap(g=>g.uppgifter);
+}
 function bladSattProvdel(i,d){
   const grupp=bladGrupper().find(g=>g.index.includes(i));
   if(!grupp) return;
@@ -8236,7 +8259,7 @@ function uppdateraDokumentidentitet(){
 }
 
 function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=dokumentTyp()}){
-  const nummer=bladNumrering();
+  const grupper=bladGrupper();
   const fallback=typ==='prov'?'Prov':'Övningsblad';
   const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
   const datum=wordDatum(da);
@@ -8278,8 +8301,8 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
   }
 
   h+=`<div class="pdf-uppgifter">`;
-  state.blad.forEach((x,i)=>{
-    const verktyg=hjalpmedel?utskriftsVerktyg(x):'';
+  const uppgiftsHTML=(x,visaVerktyg=true)=>{
+    const verktyg=hjalpmedel&&visaVerktyg?utskriftsVerktyg(x):'';
     const marke=doljMarke
       ? ''
       : (totalEndast
@@ -8287,17 +8310,37 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
           : (state.visaPoäng
               ? `<span class="pp">(${x.poang})</span>`
               : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`));
-    h+=`<div class="pu pdf-pu${nummer[i].del?' deluppgift':''}">
-      <div class="pn">${nummer[i].etikett}</div>
-      <div class="pdf-uppgiftstext">${uppgiftsText(x)}</div>
-      <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>
-    </div>`;
+    return `<div class="pdf-uppgiftstext">${uppgiftsText(x)}</div>
+      <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>`;
+  };
+  grupper.forEach((g,n)=>{
+    const delar=g.uppgifter.length>1;
+    h+=`<div class="pu pdf-pu${delar?' pdf-grupp':''}" data-i="${g.index[0]}">
+      <div class="pn">${n+1}.</div>`;
+    if(delar){
+      const sammaVerktyg=g.uppgifter.every(x=>utskriftsVerktyg(x)===utskriftsVerktyg(g.uppgifter[0]));
+      h+='<div class="pdf-delar">';
+      g.uppgifter.forEach((x,j)=>{
+        h+=`<div class="pdf-deluppgift" data-i="${g.index[j]}">
+          <div class="pdf-delbokstav">${bladDelbokstav(j)})</div>${uppgiftsHTML(x,!sammaVerktyg||j===0)}</div>`;
+      });
+      h+='</div>';
+    }else h+=uppgiftsHTML(g.uppgifter[0]);
+    h+='</div>';
   });
   h+=`</div>`;
 
   if(facit){
     h+=`<div class="fk"><h1 style="font-size:14pt;margin-bottom:12pt">Facit</h1>`;
-    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${nummer[i].etikett}</b><div>${LOS(x.s)}${altFacit(x)}</div></div>`;});
+    grupper.forEach((g,n)=>{
+      h+=`<div class="fu${g.uppgifter.length>1?' fu-grupp':''}"><b>${n+1}.</b><div>`;
+      g.uppgifter.forEach((x,j)=>{
+        h+=g.uppgifter.length>1
+          ?`<div class="fu-del"><b>${bladDelbokstav(j)})</b><div>${LOS(x.s)}${altFacit(x)}</div></div>`
+          :LOS(x.s)+altFacit(x);
+      });
+      h+='</div></div>';
+    });
     h+=`</div>`;
   }
   return h;
@@ -9236,8 +9279,11 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
   const antalSteg=wordLista.length*(facit?2:1);
   let steg=0;
   let senasteDel=-1;
+  let wordGruppRader=[];
   for(let i=0;i<wordLista.length;i++){
     const x=wordLista[i];
+    const nummer=wordNummer[i],grupperad=Boolean(nummer.del);
+    const sistaDel=i===nummer.grupp.index.at(-1);
     if(typ==='prov'){
       const d=provDelIndex(x);
       if(d!==senasteDel){
@@ -9250,19 +9296,20 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     rapportera(++steg,antalSteg);
     let taskParas;
     try{
-      taskParas=await wordHtmlTillParagrapher(uppgiftsText(x),docx,{indent:360});
+      taskParas=await wordHtmlTillParagrapher(uppgiftsText(x),docx,{indent:grupperad?0:360});
     }catch(e){
       console.warn('Word-export: uppgift '+(x.id||i+1)+' föll tillbaka till ren text.',e);
       const plain=(new DOMParser().parseFromString(uppgiftsText(x),'text/html').body.textContent||'').trim();
       taskParas=[new Paragraph({
         spacing:{after:35},
-        indent:{left:360},
+        indent:{left:grupperad?0:360},
         children:[new TextRun({text:plain,size:22,font:'Arial'})]
       })];
     }
 
     let toolRun=null;
-    if(hjalpmedel){
+    const sammaVerktyg=grupperad&&nummer.grupp.uppgifter.every(y=>utskriftsVerktyg(y)===utskriftsVerktyg(x));
+    if(hjalpmedel&&(!sammaVerktyg||nummer.del==='a')){
       const toolHtml=utskriftsVerktyg(x);
       if(toolHtml){
         /* Symbolerna är bara ett fåtal varianter. De rasteriseras en gång och
@@ -9315,24 +9362,47 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
       })]
     }) : null;
 
-    /* Poängen ligger efter själva uppgiften i stället för i uppgiftens
-       överkant. Den högerställs och skrivs inom parentes. */
-    const inner=[header,...taskParas];
-    if(poangRad) inner.push(poangRad);
+    /* Grupperna får en gemensam tabell med delbokstäver och utan inre
+       kantlinjer. Varje del behåller sina egna hjälpmedel och poäng. */
     const border=wordCellBorders(docx,{bottom:true});
-    children.push(new Table({
-      width:{size:100,type:WidthType.PERCENTAGE},
-      borders:border,
-      rows:[new TableRow({
-        cantSplit:true,
-        children:[new TableCell({
-          borders:border,
-          margins:{top:80,bottom:110,left:15,right:15},
-          children:inner
+    if(grupperad){
+      const cellBorder=sistaDel?border:noBorder;
+      const cell=(width,children)=>new TableCell({
+        width:{size:width,type:WidthType.DXA},borders:cellBorder,
+        margins:{top:30,bottom:30,left:0,right:0},verticalAlign:VerticalAlign.TOP,children
+      });
+      const etikett=text=>new Paragraph({spacing:{after:0},children:[new TextRun({text,size:22,font:'Arial'})]});
+      const meta=[];
+      if(toolRun) meta.push(new Paragraph({alignment:AlignmentType.RIGHT,spacing:{after:20},children:[toolRun]}));
+      if(poangRad) meta.push(poangRad);
+      wordGruppRader.push(new TableRow({cantSplit:true,children:[
+        cell(360,[etikett(nummer.del==='a'?`${nummer.nummer}.`:'')]),
+        cell(360,[etikett(`${nummer.del})`)]),
+        cell(8146,taskParas),
+        cell(1200,meta.length?meta:[etikett('')])
+      ]}));
+      if(sistaDel){
+        children.push(new Table({width:{size:100,type:WidthType.PERCENTAGE},
+          columnWidths:[360,360,8146,1200],borders:border,rows:wordGruppRader}));
+        wordGruppRader=[];
+      }
+    }else{
+      const inner=[header,...taskParas];
+      if(poangRad) inner.push(poangRad);
+      children.push(new Table({
+        width:{size:100,type:WidthType.PERCENTAGE},
+        borders:border,
+        rows:[new TableRow({
+          cantSplit:true,
+          children:[new TableCell({
+            borders:border,
+            margins:{top:80,bottom:110,left:15,right:15},
+            children:inner
+          })]
         })]
-      })]
-    }));
-    children.push(new Paragraph({spacing:{after:55},children:[new TextRun('')]}));
+      }));
+    }
+    if(sistaDel) children.push(new Paragraph({spacing:{after:55},children:[new TextRun('')]}));
   }
 
   if(facit){
@@ -9340,7 +9410,9 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     children.push(new Paragraph({spacing:{after:140},children:[new TextRun({text:'Facit',bold:true,size:32,font:'Arial'})]}));
     for(let i=0;i<wordLista.length;i++){
       rapportera(++steg,antalSteg);
-      children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:wordNummer[i].etikett,bold:true,size:22,font:'Arial'})]}));
+      const nummer=wordNummer[i];
+      if(nummer.del==='a') children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:`${nummer.nummer}.`,bold:true,size:22,font:'Arial'})]}));
+      children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:nummer.del?`${nummer.del})`:nummer.etikett,bold:true,size:22,font:'Arial'})]}));
       try{
         children.push(...await wordHtmlTillParagrapher((LOS(wordLista[i].s)+altFacit(wordLista[i])),docx,{indent:220}));
       }catch(e){
@@ -9351,7 +9423,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
           children:[new TextRun({text:plain,size:22,font:'Arial'})]
         }));
       }
-      children.push(new Paragraph({
+      if(i===nummer.grupp.index.at(-1)) children.push(new Paragraph({
         border:{bottom:{style:BorderStyle.SINGLE,size:3,color:'D0D0D0'}},
         spacing:{after:70},
         children:[new TextRun('')]
@@ -9943,30 +10015,30 @@ bladHTML=function(opt){
     if(behallare){
       const uppgifter=[...behallare.querySelectorAll(':scope > .pu')];
       const perDel=PROVDELAR.map(()=>[]);
-      uppgifter.forEach((el,i)=>perDel[provDelIndex(state.blad[i])].push(el));
+      uppgifter.forEach(el=>perDel[provDelIndex(state.blad[+el.dataset.i])].push(el));
       behallare.innerHTML='';
-      const nummer=bladNumrering();let ni=0;
       perDel.forEach((lista,d)=>{
         behallare.insertAdjacentHTML('beforeend',provDelRubrikHTML(d,!lista.length));
-        lista.forEach(el=>{
-          const n=el.querySelector('.pn');
-          if(n) n.textContent=nummer[ni].etikett;
-          ni++;
-          behallare.appendChild(el);
-        });
+        lista.forEach(el=>behallare.appendChild(el));
       });
     }
   }
   rot.querySelectorAll('.pdf-uppgifter > .pu').forEach((el,i,lista)=>{
-    const x=state.blad[i]; if(!x) return;
-    const u=extraUtrymme(x);
+    const grupp=bladGrupper().find(g=>g.index[0]===+el.dataset.i);
+    if(!grupp) return;
+    const x=grupp.uppgifter[0],u=extraUtrymme(x);
     /* Egen variabel i stället för padding: .pdf-pu sätter padding med
        !important, och en inline-padding hade inte vunnit över den. */
-    if(u) el.style.setProperty('--pdf-uppgiftsutrymme','calc(var(--pdf-basutrymme,9pt) + '+u+'mm)');
+    if(grupp.uppgifter.length>1){
+      el.querySelectorAll('.pdf-deluppgift').forEach(del=>{
+        const extra=extraUtrymme(state.blad[+del.dataset.i]);
+        if(extra) del.style.paddingBottom=extra+'mm';
+      });
+    }else if(u) el.style.setProperty('--pdf-uppgiftsutrymme','calc(var(--pdf-basutrymme,9pt) + '+u+'mm)');
     /* Sidbrytningen läggs efter uppgiften: uppgiften stannar kvar på sidan
        och nästa uppgift börjar högst upp på en ny sida. På den sista
        uppgiften vore brytningen bara en tom sida. */
-    if(harSidbryt(x)&&i<lista.length-1){ el.style.breakAfter='page'; el.style.pageBreakAfter='always'; }
+    if(grupp.uppgifter.some(harSidbryt)&&i<lista.length-1){ el.style.breakAfter='page'; el.style.pageBreakAfter='always'; }
   });
   return rot.innerHTML;
 };
@@ -10005,12 +10077,12 @@ document.getElementById('slumppanel')?.addEventListener('click',e=>e.stopPropaga
 /* ── generell dra-och-släpp ──────────────────────────────────────────────────
    Flyttar bara DOM-noder under dragningen och läser av ordningen när musen
    släpps. Inget ritas om medan man drar, vilket gör det mjukt även med KaTeX. */
-function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
-  let dragen=null, senaste=null;
+function gorSorterbar({behallare,valjare,malValjare=valjare,greppValjare,klass,vidSlapp}){
+  let dragen=null, senaste;
 
   function nodUnder(y){
-    return [...behallare.querySelectorAll(valjare)]
-      .filter(el=>el!==dragen)
+    return [...dragen.parentElement.children]
+      .filter(el=>el!==dragen&&el.matches(malValjare))
       .find(el=>{ const r=el.getBoundingClientRect(); return y<r.top+r.height/2; })||null;
   }
   function rensa(){
@@ -10021,7 +10093,7 @@ function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
     const grepp=e.target.closest(greppValjare);
     if(!grepp||e.button!==0) return;
     dragen=grepp.closest(valjare);
-    if(!dragen) return;
+    if(!dragen||!behallare.contains(dragen)) return;
     e.preventDefault();
     // Greppet flyttas i DOM under dragningen. Fånga pekaren på den fasta
     // behållaren så att flytten inte tappar fortsatt rörelse och pointerup.
@@ -10034,8 +10106,9 @@ function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
       if(mal===senaste) return;
       senaste=mal;
       rensa();
-      if(mal){ mal.classList.add('slappzon'); behallare.insertBefore(dragen,mal); }
-      else{ behallare.appendChild(dragen); }
+      const förälder=dragen.parentElement;
+      if(mal){ mal.classList.add('slappzon'); förälder.insertBefore(dragen,mal); }
+      else{ förälder.appendChild(dragen); }
       if(klass?.numrera) klass.numrera(behallare);
     };
     const slut=()=>{
@@ -10047,7 +10120,7 @@ function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
       behallare.classList.remove('drar');
       rensa();
       const flyttad=+dragen.dataset.i;
-      dragen=null; senaste=null;
+      dragen=null; senaste=undefined;
       vidSlapp(flyttad);
     };
     behallare.addEventListener('pointermove',flytta);
@@ -10176,7 +10249,7 @@ function layoutSidlinjer(){
   }
 }
 
-const LR_HANDTAG=`<div class="lr-handtag" contenteditable="false">
+const LR_HANDTAG=`<div class="lr-handtag lr-handtag-grupp" contenteditable="false">
   <button class="lr-flytt" title="Dra för att flytta" aria-label="Flytta"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="6" r="1.7"/><circle cx="15" cy="6" r="1.7"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><circle cx="9" cy="18" r="1.7"/><circle cx="15" cy="18" r="1.7"/></svg></button>
   <select class="lr-delval" data-lr-del title="Välj provdel" aria-label="Välj provdel"></select>
   <button data-lr="upp" title="Flytta upp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"/></svg></button>
@@ -10276,11 +10349,14 @@ function layoutRita(){
     });
   });
 
-  [...papper.querySelectorAll('.pdf-uppgifter > .pu')].forEach((el,i)=>{
+  const grupper=bladGrupper();
+  [...papper.querySelectorAll('.pdf-uppgifter > .pu')].forEach(el=>{
+    const i=+el.dataset.i,grupp=grupper.find(g=>g.index[0]===i);
+    if(!grupp) return;
     el.classList.add('lr-pu');
-    el.dataset.i=i;
-    if(harSidbryt(state.blad[i])&&i<state.blad.length-1) el.classList.add('lr-bryt');
+    if(grupp.uppgifter.some(harSidbryt)&&grupp.index.at(-1)<state.blad.length-1) el.classList.add('lr-bryt');
     el.insertAdjacentHTML('beforeend',LR_HANDTAG);
+    el.querySelector('.lr-handtag-grupp .lr-flytt').title='Dra för att flytta hela uppgiften';
     const delval=el.querySelector('[data-lr-del]');
     if(delval){
       if(dokumentTyp()!=='prov') delval.hidden=true;
@@ -10288,6 +10364,23 @@ function layoutRita(){
         delval.innerHTML=PROVDELAR.map((_,d)=>'<option value="'+d+'">'+provDelNamn(d)+'</option>').join('');
         delval.value=String(provDelIndex(state.blad[i]));
       }
+    }
+    const delar=el.querySelector('.pdf-delar');
+    if(delar){
+      delar.querySelectorAll('.pdf-deluppgift').forEach(del=>{
+        del.classList.add('lr-deluppgift');
+        del.insertAdjacentHTML('beforeend',`<div class="lr-handtag lr-handtag-del" contenteditable="false">
+          <button class="lr-flytt" title="Dra för att ändra deluppgifternas ordning" aria-label="Flytta deluppgift">${el.querySelector('.lr-flytt').innerHTML}</button>
+          <button data-lr="bort" class="bort" title="Ta bort deluppgiften" aria-label="Ta bort deluppgift">${el.querySelector('[data-lr="bort"]').innerHTML}</button>
+        </div>`);
+      });
+      gorSorterbar({
+        behallare:delar,valjare:'.lr-deluppgift',greppValjare:'.lr-handtag-del .lr-flytt',
+        vidSlapp(){
+          bladOrdnaDelar([...delar.children].map(del=>+del.dataset.i));
+          ritaBlad();
+        }
+      });
     }
   });
 
@@ -10339,17 +10432,26 @@ document.getElementById('lrNollstall')?.addEventListener('click',()=>{
 document.getElementById('lrPapper')?.addEventListener('click',e=>{
   const k=e.target.closest('[data-lr]');
   if(!k) return;
-  const block=k.closest('.lr-pu');
+  const del=k.closest('.lr-deluppgift'),block=del||k.closest('.lr-pu');
   const i=+block.dataset.i;
-  const x=state.blad[i];
-  if(!x) return;
+  const grupp=bladGrupper().find(g=>g.index.includes(i));
+  if(!grupp) return;
+  const utrymmesIndex=grupp.index.at(-1);
+  const x=state.blad[utrymmesIndex]={...state.blad[utrymmesIndex]};
   const g=k.dataset.lr;
-  if(g==='upp'&&i>0){ bladFlytta(i,-1); }
-  else if(g==='ner'&&i<state.blad.length-1){ bladFlytta(i,1); }
+  if(g==='upp'){ bladFlyttaGrupp(i,-1); }
+  else if(g==='ner'){ bladFlyttaGrupp(i,1); }
   else if(g==='plus'){ x._utrymme=Math.min(140,extraUtrymme(x)+10); }
   else if(g==='minus'){ x._utrymme=Math.max(0,extraUtrymme(x)-10); if(!x._utrymme) delete x._utrymme; }
-  else if(g==='bryt'){ if(harSidbryt(x)) delete x._sidbryt; else x._sidbryt=true; }
-  else if(g==='bort'){ state.blad.splice(i,1); }
+  else if(g==='bryt'){
+    const hadeBryt=grupp.uppgifter.some(harSidbryt);
+    for(const j of grupp.index){state.blad[j]={...state.blad[j]};delete state.blad[j]._sidbryt;}
+    if(!hadeBryt) state.blad[utrymmesIndex]._sidbryt=true;
+  }
+  else if(g==='bort'){
+    const index=del?[i]:grupp.index;
+    state.blad=state.blad.filter((_,j)=>!index.includes(j));
+  }
   else return;
   ritaBlad();
   if(!state.blad.length) layoutStang();
@@ -10385,11 +10487,20 @@ bladFacit?.addEventListener('change',()=>{ if(lrFacit) lrFacit.checked=bladFacit
 gorSorterbar({
   behallare:document.querySelector('#lrPapper'),
   valjare:'.lr-pu',
-  greppValjare:'.lr-flytt',
+  malValjare:'.lr-pu,.pdf-delhuvud',
+  greppValjare:'.lr-handtag-grupp .lr-flytt',
   vidSlapp(flyttad){
     const papper=document.getElementById('lrPapper');
-    const ordning=[...papper.querySelectorAll('.lr-pu')].map(el=>+el.dataset.i);
+    const grupper=bladGrupper();
+    const ordning=[...papper.querySelectorAll('.lr-pu')]
+      .flatMap(el=>grupper.find(g=>g.index[0]===+el.dataset.i)?.index||[NaN]);
     if(ordning.some(Number.isNaN)) return;
+    if(dokumentTyp()==='prov'){
+      const dragen=papper.querySelector('.lr-pu[data-i="'+flyttad+'"]');
+      let rubrik=dragen?.previousElementSibling;
+      while(rubrik&&!rubrik.matches('.pdf-delhuvud')) rubrik=rubrik.previousElementSibling;
+      bladSattProvdel(flyttad,rubrik?+rubrik.dataset.provdel:0);
+    }
     bladOrdna(ordning,flyttad);
     ritaBlad();
   }
