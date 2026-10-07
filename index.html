@@ -1034,6 +1034,24 @@ table.data th{background:var(--sunken);font-weight:600}
 .facit .stegprick{background:none;color:var(--ed);font-size:15px}
 .facit .komm{padding-left:27px;font-family:var(--las);font-size:13px;color:var(--ink-2);line-height:1.55}
 .facit strong{color:var(--ed-dark)}
+
+/* Fysikfacit: lästext, tydliga beräkningssteg och separat slutsvar. */
+.facit .facit-stegvis{font-family:var(--las);font-size:14px;line-height:1.7}
+.facit .facit-stegvis p{font-family:inherit;font-size:inherit;line-height:inherit;margin:.25em 0}
+.facit-stegvis .facit-del{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.facit-stegvis .facit-mark{flex:0 0 auto;min-width:25px;font-weight:700;color:var(--ed)}
+.facit-stegvis .facit-arbete{flex:1;min-width:0}
+.facit-stegvis .facit-steglista{list-style:none;counter-reset:facit-steg;margin:0;padding:0}
+.facit-stegvis .facit-steglista > li{position:relative;counter-increment:facit-steg;padding:2px 0 2px 34px;margin:12px 0;min-width:0}
+.facit-stegvis .facit-steglista > li::before{content:counter(facit-steg);position:absolute;left:0;top:3px;width:23px;height:23px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--ed);color:white;font:600 12px var(--las)}
+.facit-stegvis .facit-matte{margin:8px 0;overflow-x:auto;max-width:100%}
+.facit-stegvis .katex-display{text-align:left;margin:.5em 0}
+.facit-stegvis .katex-display > .katex{text-align:left}
+.facit-stegvis .facit-svar{margin:14px 0 4px;padding:10px 14px;border-left:3px solid var(--ed);border-radius:6px;background:var(--surface);font-weight:600}
+.facit-stegvis .facit-rubrik{font-weight:700}
+.facit-stegvis > ol:not(.facit-steglista){padding-left:24px}
+.facit-stegvis > ol:not(.facit-steglista) > li{padding-left:6px;margin:18px 0}
+@media print{.facit-stegvis .facit-steglista > li{break-inside:avoid}.facit-stegvis .facit-steglista > li::before{background:none;color:#222;border:1px solid #bbb}.facit-stegvis .facit-svar{break-inside:avoid;background:none}}
 .tomt{text-align:center;padding:70px 20px;color:var(--muted)}
 .tomt h3{font-size:15px;font-weight:600;color:var(--ink-2);margin:0 0 5px}
 .tomt p{margin:0;font-size:13.5px;max-width:34ch;margin-inline:auto}
@@ -5133,6 +5151,13 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .fu-grupp{display:grid;grid-template-columns:25pt minmax(0,1fr)}
 .fu-del{display:grid;grid-template-columns:20pt minmax(0,1fr);margin-bottom:5pt}
 .pdf-pu>.pn,.fu>b{white-space:nowrap}
+/* Dokumentets lösningssteg använder siffror; a), b) hör till deluppgifterna. */
+#utskrift .fu .facit-stegvis,.lr-papper .fu .facit-stegvis{font-family:var(--las);font-size:10pt;line-height:1.65}
+#utskrift .facit-steglista,.lr-papper .facit-steglista{counter-reset:facit-steg;margin:0;padding:0}
+#utskrift .facit-steglista > li,.lr-papper .facit-steglista > li{counter-increment:facit-steg;padding-left:28pt;margin:9pt 0}
+#utskrift .facit-steglista > li::before,.lr-papper .facit-steglista > li::before{counter-increment:none;content:counter(facit-steg);font-family:var(--las);font-size:9pt;width:18pt;height:18pt;top:1pt;background:none;color:#222;border:1px solid #bbb}
+#utskrift .facit-stegvis .facit-svar,.lr-papper .facit-stegvis .facit-svar{margin:10pt 0 4pt;padding:7pt 10pt;background:none}
+@media print{html,body,#utskrift{background:#fff!important}}
 
 /* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
 .mätarnyckel span{display:inline-flex!important;align-items:center!important;gap:3px!important;white-space:nowrap}
@@ -6597,6 +6622,9 @@ function altFacit(x){
 
 function LOS(html){
   if(!html) return '';
+  /* Den nya bankstrukturen har redan delbokstäver och lösningssteg.
+     Behåll listorna även i dokument, PDF och Word. */
+  if(/class=["'][^"']*\bfacit-stegvis\b/.test(html)) return html;
   html=plattaListor(html);
   if(!/<p>/i.test(html)) return html;
   const bokstav=b=>/^\s*<?[a-z]?>?\s*([a-e])\)/.exec(b.replace(/<[^>]+>/g,'').trim());
@@ -7494,7 +7522,9 @@ function facitTillText(html){
   d.querySelectorAll('li').forEach(li=>{
     const p=li.parentElement;
     const idx=[...p.children].indexOf(li);
-    li.insertAdjacentText('afterbegin',String.fromCharCode(97+idx)+') ');
+    if(!p.classList.contains('facit-steglista')){
+      li.insertAdjacentText('afterbegin',String.fromCharCode(97+idx)+') ');
+    }
     li.append('\n');
   });
   d.querySelectorAll('p').forEach(p=>p.append('\n'));
@@ -9057,6 +9087,26 @@ async function wordHtmlTillParagrapher(html,docx,{indent=0}={}){
 
       if(tag==='ul'||tag==='ol'){
         const lis=[...node.children].filter(x=>x.tagName?.toLowerCase()==='li');
+        if(node.closest('.facit-stegvis')){
+          /* Lösningssteg och deluppgifter behåller sina egna stycken.
+             Formeln får vara ett separat Word-objekt efter förklaringen. */
+          lis.forEach((li,j)=>{
+            const letter=node.getAttribute('type')==='a';
+            if(letter){
+              const heading=root.ownerDocument.createElement('p');
+              heading.textContent=String.fromCharCode(97+j)+')';
+              blocks.push(heading);
+            }
+            const start=blocks.length;
+            for(const ch of [...li.childNodes]) addBlock(ch);
+            const prefix=tag==='ol'?(letter?`${String.fromCharCode(97+j)}) `:`${j+1}. `):'• ';
+            if(!letter&&blocks.length>start){
+              const first=blocks[start];
+              first.insertBefore(root.ownerDocument.createTextNode(prefix),first.firstChild);
+            }
+          });
+          return;
+        }
         lis.forEach((li,j)=>{
           const q=root.ownerDocument.createElement('p');
           const prefix=tag==='ol'?`${j+1}. `:'• ';
