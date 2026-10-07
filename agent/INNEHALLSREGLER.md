@@ -110,12 +110,16 @@ Träningsnivå 1–5 hålls isär från E/C/A:
 
 | Träningsnivå | Innebörd |
 |---|---|
-| 1 | Mycket grundläggande |
-| 2 | Etablerad E-nivå |
+| 1 | Enkel E-uppgift |
+| 2 | Mer krävande E-uppgift, ännu inte C |
 | 3 | Börjar bli C |
 | 4–5 | Tydligt svårare |
 
 A-uppgifter ska vara korrekt kalibrerade.
+
+Fler räknesteg gör inte i sig en uppgift till C. En mer krävande rutinuppgift kan
+fortfarande vara E och ska då få träningsnivå 2, inte höjas till C enbart för att
+skiljas från de enklaste uppgifterna. Arbetsinsats bedöms separat från nivån.
 
 ### 3.11 Progression och variation
 
