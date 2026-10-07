@@ -5157,7 +5157,9 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 #utskrift .facit-steglista > li,.lr-papper .facit-steglista > li{counter-increment:facit-steg;padding-left:28pt;margin:9pt 0}
 #utskrift .facit-steglista > li::before,.lr-papper .facit-steglista > li::before{counter-increment:none;content:counter(facit-steg);font-family:var(--las);font-size:9pt;width:18pt;height:18pt;top:1pt;background:none;color:#222;border:1px solid #bbb}
 #utskrift .facit-stegvis .facit-svar,.lr-papper .facit-stegvis .facit-svar{margin:10pt 0 4pt;padding:7pt 10pt;background:none}
-@media print{html,body,#utskrift{background:#fff!important}}
+@media print{html,body,#utskrift{background:#fff!important}
+  #utskrift .facit-steglista,#utskrift .facit-steglista > li:last-child{break-after:avoid;page-break-after:avoid}
+  #utskrift .facit-svar{break-before:avoid;page-break-before:avoid}}
 
 /* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
 .mätarnyckel span{display:inline-flex!important;align-items:center!important;gap:3px!important;white-space:nowrap}
