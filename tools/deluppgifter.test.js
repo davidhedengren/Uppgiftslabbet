@@ -28,7 +28,7 @@ function setup(){
     rita:()=>{},ritaBlad:()=>{},dokumentTyp:()=> 'ovning',
     $:()=>({value:'Prov',checked:false}),sparLasaAlla:()=>[],sparInstallningar:()=>({}),AKTIV_SPAR_ID:null,
     dokumentOmraden:()=>[]});
-  load(c,html,['sparSnapshotUppgift','bladDelbokstav','bladGrupper','bladNumrering',
+  load(c,html,['sparSnapshotUppgift','bladDelbokstav','bladGrupper','bladGemensamInstruktion','bladNumrering',
     'bladNormaliseraGrupper','bladSlappUppgift','bladSeparera','bladFlytta','bladOrdna',
     'bladOrdnaDelar','bladFlyttaGrupp','bladSattProvdel',
     'sparByggDokument','sparUppgifterUrDokument','analysNiva','analysPoangSumma','analysDelar','byggAnalysOverforing']);
@@ -148,6 +148,46 @@ test('Gemensamma hjälpmedel visas en gång; olika tillåtelser visas för respe
   assert.equal([...output.matchAll(/class="verktyg"/g)].length,3);
   assert.ok(output.includes('>räknare</span>'));
   assert.ok(!c.bladHTML({facit:false,hjalpmedel:false}).includes('class="verktyg"'));
+});
+test('Gemensam instruktion lyfts från enkla uttryck utan att ändra uppgifterna',()=>{
+  const c=setup();c.uppgiftsText=x=>x.t;
+  const tasks=[{t:'<p>Förenkla \\(3(x-5)\\).</p>'},
+    {t:'<p>Förenkla uttrycket \\(-4(2x+3)\\).</p>'}];
+  const before=plain(tasks);
+  assert.deepEqual(plain(c.bladGemensamInstruktion({uppgifter:tasks})),{
+    rubrik:'Förenkla:',texter:['<p>\\(3(x-5)\\).</p>','<p>\\(-4(2x+3)\\).</p>']
+  });
+  assert.deepEqual(tasks,before);
+  assert.equal(c.bladGemensamInstruktion({uppgifter:[tasks[0]]}),null);
+  const equations=[{t:'<p>Lös ekvationen \\(x+2=5\\).</p>'},{t:'<p>Lös ekvationen \\(2x=8\\).</p>'}];
+  assert.equal(c.bladGemensamInstruktion({uppgifter:equations}).rubrik,'Lös ekvationerna:');
+});
+test('Olika instruktioner och särskilda villkor får inte förkortas',()=>{
+  const c=setup();c.uppgiftsText=x=>x.t;
+  const first={t:'<p>Förenkla \\(x+2x\\).</p>'};
+  for(const t of [
+    '<p>Beräkna \\(3+2\\).</p>',
+    '<p>Förenkla \\(x/x\\). Ange förbjudna värden.</p>',
+    '<p>Förenkla \\(x/x\\).</p><p>Anta att x inte är noll.</p>',
+    '<p>Förenkla \\(x+x\\) och \\(y+y\\).</p>',
+    '<p>Förenkla \\(x+x\\).</p><svg></svg>',
+    '<p>Förenkla uttrycket och förklara ditt svar.</p>'
+  ])assert.equal(c.bladGemensamInstruktion({uppgifter:[first,{t}]}),null,t);
+});
+test('Dokumentets gemensamma rubrik bevarar delnummer och enskilda uppgifters instruktioner',async()=>{
+  const c=setup();await c.bladSlappUppgift('b','a');
+  c.state.blad[0].t='<p>Förenkla \\(3(x-5)\\).</p>';
+  c.state.blad[1].t='<p>Förenkla \\(-4(2x+3)\\).</p>';
+  c.state.blad[2].t='<p>Förenkla \\(x+x\\).</p>';
+  Object.assign(c,{wordDatum:x=>x,wordEsc:x=>x,LOGO:'logo.png',uppgiftsText:x=>x.t,
+    utskriftsVerktyg:()=>'',LOS:x=>x,altFacit:()=>''});
+  load(c,html,['bladHTML','totalpoang']);
+  const before=plain(c.state.blad),output=c.bladHTML({facit:true});
+  assert.match(output,/class="pdf-gruppinstruktion">Förenkla:<\/div>/);
+  assert.deepEqual([...output.matchAll(/class="pdf-delbokstav">([^<]+)/g)].map(m=>m[1]),['a)','b)']);
+  assert.equal((output.match(/Förenkla/g)||[]).length,2,'En gemensam rubrik och en fristående uppgift');
+  assert.match(output,/data-i="2"[\s\S]*Förenkla \\\(/);
+  assert.deepEqual(plain(c.state.blad),before);
 });
 test('Sparade snapshots återskapar grupperna; äldre dokument behåller vanlig numrering',async()=>{
   const c=setup();await c.bladSlappUppgift('b','a');

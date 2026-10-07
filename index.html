@@ -5123,7 +5123,8 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .brad .separera{font-size:10px;color:var(--ed);padding:2px 5px;min-height:22px}
 #utskrift .pu.pdf-pu.pdf-grupp,.lr-papper .pu.pdf-pu.pdf-grupp{
   grid-template-columns:25pt minmax(0,1fr)!important}
-.pdf-delar{min-width:0;grid-column:2}
+.pdf-gruppinnehall,.pdf-delar{min-width:0;grid-column:2}
+.pdf-gruppinstruktion{margin-bottom:.35em}
 .pdf-deluppgift{display:grid;grid-template-columns:20pt minmax(0,1fr) 78pt;
   align-items:start;margin:.18em 0;break-inside:avoid;page-break-inside:avoid}
 .pdf-deluppgift:first-child{margin-top:0}
@@ -7206,6 +7207,24 @@ function bladGrupper(lista=state.blad){
   }
   return grupper;
 }
+function bladGemensamInstruktion(grupp){
+  if(grupp.uppgifter.length<2) return null;
+  const delar=grupp.uppgifter.map(x=>{
+    /* Lyft bara en enkel instruktion framför ett enda matteuttryck.
+       Villkor, figurer och mer sammansatta frågor behåller hela sin text. */
+    const text=uppgiftsText(x).trim();
+    const match=text.match(/^<p>\s*(Förenkla(?: uttrycket)?|Beräkna(?: uttrycket| värdet av)?|Faktorisera(?: uttrycket)?|Lös ekvationen)\s*:?\s+([\s\S]+?)\s*<\/p>$/i);
+    if(!match) return null;
+    const rest=match[2];
+    if(!/^(?:\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])\s*\.?$/.test(rest)
+      || (rest.match(/\\[()[\]]/g)||[]).length!==2 || /[<>]/.test(rest)) return null;
+    const verb=match[1].split(' ')[0].toLowerCase();
+    const rubrik={förenkla:'Förenkla:',beräkna:'Beräkna:',faktorisera:'Faktorisera:',lös:'Lös ekvationerna:'}[verb];
+    return {rubrik,text:`<p>${rest}</p>`};
+  });
+  if(delar.some(x=>!x)||delar.some(x=>x.rubrik!==delar[0].rubrik)) return null;
+  return {rubrik:delar[0].rubrik,texter:delar.map(x=>x.text)};
+}
 function bladNumrering(lista=state.blad){
   const nummer=[];
   bladGrupper(lista).forEach((g,i)=>g.uppgifter.forEach((x,j)=>{
@@ -8301,7 +8320,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
   }
 
   h+=`<div class="pdf-uppgifter">`;
-  const uppgiftsHTML=(x,visaVerktyg=true)=>{
+  const uppgiftsHTML=(x,visaVerktyg=true,text=uppgiftsText(x))=>{
     const verktyg=hjalpmedel&&visaVerktyg?utskriftsVerktyg(x):'';
     const marke=doljMarke
       ? ''
@@ -8310,7 +8329,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
           : (state.visaPoäng
               ? `<span class="pp">(${x.poang})</span>`
               : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`));
-    return `<div class="pdf-uppgiftstext">${uppgiftsText(x)}</div>
+    return `<div class="pdf-uppgiftstext">${text}</div>
       <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>`;
   };
   grupper.forEach((g,n)=>{
@@ -8318,13 +8337,16 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
     h+=`<div class="pu pdf-pu${delar?' pdf-grupp':''}" data-i="${g.index[0]}">
       <div class="pn">${n+1}.</div>`;
     if(delar){
+      const gemensam=bladGemensamInstruktion(g);
       const sammaVerktyg=g.uppgifter.every(x=>utskriftsVerktyg(x)===utskriftsVerktyg(g.uppgifter[0]));
+      h+='<div class="pdf-gruppinnehall">';
+      if(gemensam) h+=`<div class="pdf-gruppinstruktion">${gemensam.rubrik}</div>`;
       h+='<div class="pdf-delar">';
       g.uppgifter.forEach((x,j)=>{
         h+=`<div class="pdf-deluppgift" data-i="${g.index[j]}">
-          <div class="pdf-delbokstav">${bladDelbokstav(j)})</div>${uppgiftsHTML(x,!sammaVerktyg||j===0)}</div>`;
+          <div class="pdf-delbokstav">${bladDelbokstav(j)})</div>${uppgiftsHTML(x,!sammaVerktyg||j===0,gemensam?gemensam.texter[j]:uppgiftsText(x))}</div>`;
       });
-      h+='</div>';
+      h+='</div></div>';
     }else h+=uppgiftsHTML(g.uppgifter[0]);
     h+='</div>';
   });
@@ -9280,10 +9302,13 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
   let steg=0;
   let senasteDel=-1;
   let wordGruppRader=[];
+  const wordInstruktioner=new Map(bladGrupper(wordLista).map(g=>[g.index[0],bladGemensamInstruktion(g)]));
   for(let i=0;i<wordLista.length;i++){
     const x=wordLista[i];
     const nummer=wordNummer[i],grupperad=Boolean(nummer.del);
     const sistaDel=i===nummer.grupp.index.at(-1);
+    const gemensam=wordInstruktioner.get(nummer.grupp.index[0]);
+    const taskHTML=gemensam?gemensam.texter[nummer.grupp.index.indexOf(i)]:uppgiftsText(x);
     if(typ==='prov'){
       const d=provDelIndex(x);
       if(d!==senasteDel){
@@ -9296,10 +9321,10 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     rapportera(++steg,antalSteg);
     let taskParas;
     try{
-      taskParas=await wordHtmlTillParagrapher(uppgiftsText(x),docx,{indent:grupperad?0:360});
+      taskParas=await wordHtmlTillParagrapher(taskHTML,docx,{indent:grupperad?0:360});
     }catch(e){
       console.warn('Word-export: uppgift '+(x.id||i+1)+' föll tillbaka till ren text.',e);
-      const plain=(new DOMParser().parseFromString(uppgiftsText(x),'text/html').body.textContent||'').trim();
+      const plain=(new DOMParser().parseFromString(taskHTML,'text/html').body.textContent||'').trim();
       taskParas=[new Paragraph({
         spacing:{after:35},
         indent:{left:grupperad?0:360},
@@ -9367,16 +9392,24 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     const border=wordCellBorders(docx,{bottom:true});
     if(grupperad){
       const cellBorder=sistaDel?border:noBorder;
-      const cell=(width,children)=>new TableCell({
-        width:{size:width,type:WidthType.DXA},borders:cellBorder,
+      const cell=(width,children,columnSpan=1)=>new TableCell({
+        width:{size:width,type:WidthType.DXA},borders:cellBorder,columnSpan,
         margins:{top:30,bottom:30,left:0,right:0},verticalAlign:VerticalAlign.TOP,children
       });
       const etikett=text=>new Paragraph({spacing:{after:0},children:[new TextRun({text,size:22,font:'Arial'})]});
       const meta=[];
       if(toolRun) meta.push(new Paragraph({alignment:AlignmentType.RIGHT,spacing:{after:20},children:[toolRun]}));
       if(poangRad) meta.push(poangRad);
+      if(gemensam&&nummer.del==='a'){
+        const rubrik=new Paragraph({keepNext:true,spacing:{after:20},
+          children:[new TextRun({text:gemensam.rubrik,size:22,font:'Arial'})]});
+        wordGruppRader.push(new TableRow({cantSplit:true,children:[
+          cell(360,[etikett(`${nummer.nummer}.`)]),
+          cell(8506,[rubrik],2),cell(1200,[etikett('')])
+        ]}));
+      }
       wordGruppRader.push(new TableRow({cantSplit:true,children:[
-        cell(360,[etikett(nummer.del==='a'?`${nummer.nummer}.`:'')]),
+        cell(360,[etikett(!gemensam&&nummer.del==='a'?`${nummer.nummer}.`:'')]),
         cell(360,[etikett(`${nummer.del})`)]),
         cell(8146,taskParas),
         cell(1200,meta.length?meta:[etikett('')])
