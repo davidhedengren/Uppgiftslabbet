@@ -2,6 +2,15 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const {facitMatte}=require('./formatera-fysikfacit');
+const {facitAvslutandeMatte}=require('./formatera-fysikfacit');
+
+test('En avslutande beräkning kan skiljas från sin instruktion utan att flera formler slås ihop',()=>{
+  assert.deepEqual(facitAvslutandeMatte(String.raw`Dividera med 4: \((x-1)^2=25/4\).`),
+    {prefix:'Dividera med 4:',tex:'(x-1)^2=25/4',suffix:'.'});
+  assert.deepEqual(facitAvslutandeMatte(String.raw`pq-formeln ger \(x=-5/4\pm7/4\).`),
+    {prefix:'pq-formeln ger',tex:String.raw`x=-5/4\pm7/4`,suffix:'.'});
+  for(const s of [String.raw`För \(x=2\) blir \(y=4\).`,String.raw`Ta \(\lg\).`,String.raw`Här är \(x\).`])assert.equal(facitAvslutandeMatte(s),null);
+});
 
 test('Gaslagen får bråkstreck, index och decimalkomma utan nya tal',()=>{
   assert.equal(facitMatte('V₂=98,0·50,0/103≈47,573 liter.'),String.raw`V_{2}=\frac{98{,}0\cdot 50{,}0}{103}\approx 47{,}573\, \mathrm{liter}`);

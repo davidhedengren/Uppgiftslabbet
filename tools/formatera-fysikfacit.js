@@ -1,4 +1,4 @@
-/* Formatering av befintliga fysiklösningar i en DOM-miljö.
+/* Formatering av befintliga matematik- och fysiklösningar i en DOM-miljö.
  * Ändrar bara presentation: okänd matematisk syntax lämnas orörd.
  * struktureraFacit kontrollerar att ursprunglig text kan återvinnas.
  * Kör inte en bankändring utan den fulla innehålls- och konsumentkontrollen.
@@ -81,6 +81,12 @@ function facitMatte(raw){
 }
 if(typeof module!=='undefined')module.exports={facitMatte};
 
+function facitAvslutandeMatte(html){
+ const match=html.match(/^([\s\S]+?)\\\(([^]*?)\\\)\s*([.,;:]?)\s*$/);
+ if(!match||/\\[()[\]]/.test(match[1]+match[2])||!/[=≈]|\\(?:Rightarrow|implies)/.test(match[2]))return null;
+ return {prefix:match[1].trim(),tex:match[2],suffix:match[3]};
+}
+
 function struktureraFacit(source){
  if(/class=["'][^"']*\bfacit-stegvis\b/.test(source))return {html:source,ledger:[],unconverted:[],preserved:true};
  const protectedSvg=[];
@@ -102,6 +108,11 @@ function struktureraFacit(source){
   // Redan skriven matematik: flytta fristående beräkningar till egen rad.
   const tex=html.match(/^\s*\\\(([\s\S]+)\\\)\s*([.,;:]?)\s*$/);
   if(tex&&!/\\[()[\]]/.test(tex[1])&&/[=≈^_]|\\(?:frac|dfrac|sqrt|cdot)/.test(tex[1]))return '<div class="facit-matte">\\['+tex[1]+'\\]'+tex[2]+'</div>';
+  // En förklaring med en enda avslutande beräkning hålls i samma steg.
+  const trailing=facitAvslutandeMatte(html);
+  if(trailing){
+   return '<div class="facit-berakning"><p>'+trailing.prefix+'</p><div class="facit-matte">\\['+trailing.tex+'\\]'+trailing.suffix+'</div></div>';
+  }
   if(/<[^>]*>/.test(html)||html.includes('\\'))return null;
   // Endast en helt igenkänd formel eller ett formelslut efter förklaringen.
   const starts=[0];for(const m of raw.matchAll(/\s+/g))starts.push(m.index+m[0].length);
@@ -141,6 +152,7 @@ function struktureraFacit(source){
  // Formatera stycken innan listorna ordnas. Inline-markering och figurer bevaras.
  for(const p of [...root.querySelectorAll('p')]){
   if(p.closest('.facit-matte'))continue;
+  p.innerHTML=p.innerHTML.replace(/<(strong|b)>\s*([a-h])\)\s*<\/\1>/gi,'$2) ');
   if(p.classList.contains('facit-svar')||answer(p.innerHTML)){p.replaceWith(...paragraph(p));continue;}
   const segments=chunks(p.innerHTML),nodes=[];let body=null;
   for(const html of segments){
@@ -166,6 +178,10 @@ function struktureraFacit(source){
    if(node.nodeType===3&&!node.textContent.trim())continue;
    if(node.nodeType===1&&node.matches('p:not(.facit-svar),.facit-matte,.facit-berakning')){
     if(!list){list=document.createElement('ol');list.className='facit-steglista';list.setAttribute('role','list');parent.insertBefore(list,node);}
+    const previous=list.lastElementChild;
+    if(node.matches('.facit-matte')&&previous?.lastElementChild?.matches('p')&&/:\s*$/.test(previous.lastElementChild.textContent)){
+     previous.append(node);continue;
+    }
     const item=document.createElement('li');item.append(node);list.append(item);
    }else list=null;
   }
@@ -185,4 +201,4 @@ function struktureraFacit(source){
  return {html:output,ledger,unconverted,preserved:canonical(original)===canonical(reverted),before:canonical(original),after:canonical(reverted)};
 }
 
-if(typeof module!=="undefined")module.exports.struktureraFacit=struktureraFacit;
+if(typeof module!=="undefined")Object.assign(module.exports,{struktureraFacit,facitAvslutandeMatte});
