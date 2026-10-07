@@ -5106,6 +5106,23 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .brad .btext .katex-display{display:inline-block!important;margin:0 3px!important;vertical-align:middle}
 .brad .btext .katex-display>.katex{display:inline-block}
 
+/* Deluppgifter på lärarens dokument, med egna poäng och facit. */
+.kort[draggable="true"]{cursor:grab}
+.kort.bank-dras{opacity:.5}
+.blad-draghjalp{padding:8px 12px;color:var(--ink-3);font-size:11px;line-height:1.5}
+.blad-ny{margin:10px 8px;padding:13px;border:1px dashed var(--line);border-radius:10px;
+  text-align:center;font-size:12px;color:var(--ink-3)}
+#blad.bank-slapp .blad-ny{background:var(--ed-tint);border-color:var(--ed);color:var(--ed)}
+.brad.deluppgift{grid-template-columns:42px 1fr auto;border-left:3px solid var(--ed)!important}
+.brad.deluppgift .num{width:auto!important;min-width:34px;border-radius:6px!important}
+.brad.del-slapp{outline:2px solid var(--ed);background:var(--ed-tint)!important}
+.brad.del-slapp::after{content:'Lägg till som deluppgift';position:absolute;right:8px;bottom:-7px;
+  z-index:2;background:var(--ed);color:#fff;padding:2px 7px;border-radius:5px;font-size:10px}
+.brad .separera{font-size:10px;color:var(--ed);padding:2px 5px;min-height:22px}
+#utskrift .pu.pdf-pu.deluppgift,.lr-papper .pu.pdf-pu.deluppgift{
+  grid-template-columns:max-content minmax(0,1fr) 78pt!important}
+.pdf-pu>.pn,.fu>b{white-space:nowrap}
+
 /* Mätaren beskriver alltid poängfördelning, aldrig antal uppgifter. */
 .mätarnyckel span{display:inline-flex!important;align-items:center!important;gap:3px!important;white-space:nowrap}
 .mätarnyckel b{font-variant-numeric:tabular-nums!important}
@@ -5542,6 +5559,7 @@ function ulLösenordUpplåst(){
       </button>
     </div>
 
+    <div class="blad-draghjalp">Dra uppgifter från mitten. Släpp på en uppgift i bladet för att skapa a), b), c).</div>
     <div class="panel bladlista" id="blad"></div>
 
     <div class="bladfot">
@@ -7084,7 +7102,7 @@ function rita(sida){
     return;
   }
   $('#lista').innerHTML=navigation+synliga.map(x=>`
-    <article class="kort${vald.has(x.id)?' vald':''}" data-id="${x.id}" tabindex="0" role="button"
+    <article class="kort${vald.has(x.id)?' vald':''}" data-id="${x.id}" draggable="true" tabindex="0" role="button"
       aria-pressed="${vald.has(x.id)}">
       <div class="bock">${svgBock}</div>
       <div>
@@ -7121,6 +7139,12 @@ function rita(sida){
 
   $$('.kort').forEach(k=>{
     const växla=()=>vippa(k.dataset.id);
+    k.addEventListener('dragstart',e=>{
+      e.dataTransfer.setData('application/x-uppgiftslabbet-task',JSON.stringify({course:AKTIV.id,id:k.dataset.id}));
+      e.dataTransfer.effectAllowed='copyMove';
+      k.classList.add('bank-dras');
+    });
+    k.addEventListener('dragend',()=>{k.classList.remove('bank-dras');bladRensaSlapp();});
     k.addEventListener('click',e=>{ if(e.target.closest('.facitknapp,[data-red],[data-redigera]'))return; växla(); });
     k.addEventListener('keydown',e=>{ if(e.target.closest('.facitknapp,[data-red],[data-redigera]'))return;
       if(e.key===' '||e.key==='Enter'){e.preventDefault();växla();} });
@@ -7157,6 +7181,139 @@ function vippa(id){
 }
 
 /* ── övningsbladet ── */
+function bladDelbokstav(i){
+  let text='';
+  for(let n=i+1;n>0;n=Math.floor((n-1)/26)) text=String.fromCharCode(97+(n-1)%26)+text;
+  return text;
+}
+function bladGrupper(lista=state.blad){
+  const grupper=[];
+  for(let i=0;i<lista.length;i++){
+    const x=lista[i],fore=grupper[grupper.length-1];
+    if(x._delgrupp&&fore?.id===x._delgrupp&&fore.provdel===(x._provdel||0)){
+      fore.uppgifter.push(x);fore.index.push(i);
+    }else grupper.push({id:x._delgrupp||null,provdel:x._provdel||0,uppgifter:[x],index:[i]});
+  }
+  return grupper;
+}
+function bladNumrering(lista=state.blad){
+  const nummer=[];
+  bladGrupper(lista).forEach((g,i)=>g.uppgifter.forEach((x,j)=>{
+    const del=g.uppgifter.length>1?bladDelbokstav(j):'';
+    nummer.push({nummer:i+1,del,etikett:del?`${i+1} ${del})`:`${i+1}.`,grupp:g});
+  }));
+  return nummer;
+}
+function bladNormaliseraGrupper(){
+  const använda=new Set();
+  for(const g of bladGrupper()){
+    if(!g.id) continue;
+    // En flyttad eller borttagen del får inte lämna två skilda grupper med samma ID.
+    const id=g.uppgifter.length>1?(använda.has(g.id)?sparUuid():g.id):null;
+    använda.add(g.id);
+    for(const i of g.index){
+      const x={...state.blad[i]};
+      if(id) x._delgrupp=id;else delete x._delgrupp;
+      state.blad[i]=x;
+    }
+  }
+}
+async function bladSlappUppgift(id,malId=null){
+  const kursId=AKTIV?.id;
+  const befintlig=state.blad.find(x=>x.id===id);
+  const bank=befintlig||DB.bank.find(x=>x.id===id);
+  const mal=malId===null?null:state.blad.find(x=>x.id===malId);
+  if(!bank||(malId!==null&&!mal)||id===malId) return false;
+  if(mal&&befintlig?._delgrupp&&befintlig._delgrupp===mal._delgrupp) return false;
+  if(!(await skyddaSparat())) return false;
+  if(AKTIV?.id!==kursId) return false;
+  // Läs målet igen efter skyddsdialogen: dokumentet kan ha laddats om under tiden.
+  if(mal&&state.blad.find(x=>x.id===malId)!==mal) return false;
+  if(state.blad.find(x=>x.id===id)!==befintlig) return false;
+  const ny=sparSnapshotUppgift(bank);
+  state.blad=state.blad.filter(x=>x.id!==id);
+  if(mal){
+    const grupp=bladGrupper().find(g=>g.uppgifter.includes(mal));
+    const gruppId=grupp.id||sparUuid();
+    for(const i of grupp.index) state.blad[i]={...state.blad[i],_delgrupp:gruppId};
+    ny._delgrupp=gruppId;
+    if(mal._provdel) ny._provdel=mal._provdel;else delete ny._provdel;
+    state.blad.splice(grupp.index.at(-1)+1,0,ny);
+  }else{
+    delete ny._delgrupp;
+    state.blad.push(ny);
+  }
+  bladNormaliseraGrupper();
+  rita();ritaBlad();
+  return true;
+}
+async function bladSeparera(id){
+  const grupp=bladGrupper().find(g=>g.uppgifter.some(x=>x.id===id));
+  if(!grupp?.id||!(await skyddaSparat())) return;
+  state.blad=state.blad.map(x=>{
+    if(x._delgrupp!==grupp.id) return x;
+    const kopia={...x};delete kopia._delgrupp;return kopia;
+  });
+  ritaBlad();
+}
+function bladFlytta(i,riktning){
+  const grupper=bladGrupper(),gi=grupper.findIndex(g=>g.index.includes(i)),g=grupper[gi];
+  if(!g) return;
+  const j=g.index.indexOf(i),nasta=j+riktning;
+  if(nasta>=0&&nasta<g.index.length){
+    const k=g.index[nasta];[state.blad[i],state.blad[k]]=[state.blad[k],state.blad[i]];
+  }else if(grupper[gi+riktning]){
+    [grupper[gi],grupper[gi+riktning]]=[grupper[gi+riktning],grupper[gi]];
+    state.blad=grupper.flatMap(x=>x.uppgifter);
+  }
+}
+function bladOrdna(ordning,flyttad){
+  const grupper=bladGrupper(),g=grupper.find(g=>g.index.includes(flyttad));
+  if(!g) return;
+  const utan=ordning.filter(i=>!g.index.includes(i));
+  const nästa=ordning.slice(ordning.indexOf(flyttad)+1).find(i=>!g.index.includes(i));
+  const nya=[];
+  for(const i of utan){
+    const grupp=grupper.find(g=>g.index.includes(i));
+    if(grupp&&!nya.includes(grupp)) nya.push(grupp);
+  }
+  const mål=grupper.find(g=>g.index.includes(nästa));
+  const pos=mål?nya.indexOf(mål):nya.length;
+  nya.splice(pos,0,g);
+  state.blad=nya.flatMap(g=>g.uppgifter);
+}
+function bladSattProvdel(i,d){
+  const grupp=bladGrupper().find(g=>g.index.includes(i));
+  if(!grupp) return;
+  for(const k of grupp.index){
+    const x={...state.blad[k]};
+    if(d) x._provdel=d;else delete x._provdel;
+    state.blad[k]=x;
+  }
+}
+function bladRensaSlapp(){
+  document.getElementById('blad')?.classList.remove('bank-slapp');
+  document.querySelectorAll('#blad .del-slapp').forEach(el=>el.classList.remove('del-slapp'));
+}
+document.getElementById('blad').addEventListener('dragover',e=>{
+  if(!e.dataTransfer.types.includes('application/x-uppgiftslabbet-task')) return;
+  e.preventDefault();e.dataTransfer.dropEffect='copy';
+  bladRensaSlapp();
+  const rad=e.target.closest('.brad');
+  if(rad) rad.classList.add('del-slapp');else document.getElementById('blad').classList.add('bank-slapp');
+});
+document.getElementById('blad').addEventListener('dragleave',e=>{
+  if(!e.currentTarget.contains(e.relatedTarget)) bladRensaSlapp();
+});
+document.getElementById('blad').addEventListener('drop',async e=>{
+  if(!e.dataTransfer.types.includes('application/x-uppgiftslabbet-task')) return;
+  e.preventDefault();bladRensaSlapp();
+  try{
+    const data=JSON.parse(e.dataTransfer.getData('application/x-uppgiftslabbet-task'));
+    if(data.course!==AKTIV?.id) return;
+    await bladSlappUppgift(data.id,e.target.closest('.brad')?.dataset.bankId??null);
+  }catch(fel){console.error('Uppgiften kunde inte läggas till',fel);}
+});
 function bladFörhandsvisning(html){
   const d=document.createElement('div');
   d.innerHTML=String(html||'');
@@ -7166,8 +7323,9 @@ function bladFörhandsvisning(html){
   return d.innerHTML.trim();
 }
 function ritaBlad(){
+  bladNormaliseraGrupper();
   if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
-  const b=state.blad, vp=state.visaPoäng;
+  const b=state.blad, vp=state.visaPoäng,nummer=bladNumrering();
   const p={E:0,C:0,A:0};
   b.forEach(x=>{
     const m=String(x?.poang||'').match(/(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/);
@@ -7193,8 +7351,8 @@ function ritaBlad(){
     : '<span class="gränsrubrik">Kryssa i uppgifter så räknas poängen ihop här.</span>';
 
   $('#blad').innerHTML=b.length ? b.map((x,i)=>`
-    <div class="brad">
-      <span class="num">${i+1}</span>
+    <div class="brad${nummer[i].del?' deluppgift':''}" data-bank-id="${x.id}">
+      <span class="num">${nummer[i].del?nummer[i].etikett:nummer[i].nummer}</span>
       <span class="txt">
         <span class="bmeta">
           <span class="bid">${x.id}</span>
@@ -7203,6 +7361,7 @@ function ritaBlad(){
           ${verktygsIkoner(x)}
           ${vp?`<span class="bpoäng${ändrad(x)?' ändrad':''}" data-red="${x.id}" role="button"
             tabindex="0" title="${REDTITEL}">${x.poang}</span>`:''}
+          ${nummer[i].del==='a'?`<button type="button" class="knapp separera" data-separera="${x.id}" title="Gör deluppgifterna till egna uppgifter">Separera</button>`:''}
         </span>
         <span class="btext">${bladFörhandsvisning(x.t)}</span>
       </span>
@@ -7215,9 +7374,9 @@ function ritaBlad(){
         <button data-ner="${i}" title="Flytta ned" ${i===b.length-1?'disabled':''}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <button class="bort" data-bort="${x.id}" title="Ta bort"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
       </span>
-    </div>`).join('')
+    </div>`).join('')+'<div class="blad-ny">Släpp här som ny uppgift</div>'
     : `<div class="tomt" style="padding:44px 16px"><h3>Bladet är tomt</h3>
-       <p>Klicka på uppgifterna i mitten för att lägga till dem här.</p></div>`;
+       <p>Klicka eller dra en uppgift från mitten för att lägga till den här.</p></div>`;
 
   if(typeof renderKatex==='function') renderKatex($('#blad'));
 
@@ -7228,10 +7387,9 @@ function ritaBlad(){
       öppnaUppgiftsredigering(state.blad[+k.dataset.redigeraBlad],true);
     });
   });
-  $$('[data-upp]').forEach(k=>k.addEventListener('click',()=>{const i=+k.dataset.upp;
-    [state.blad[i-1],state.blad[i]]=[state.blad[i],state.blad[i-1]];ritaBlad();}));
-  $$('[data-ner]').forEach(k=>k.addEventListener('click',()=>{const i=+k.dataset.ner;
-    [state.blad[i+1],state.blad[i]]=[state.blad[i],state.blad[i+1]];ritaBlad();}));
+  $$('[data-upp]').forEach(k=>k.addEventListener('click',()=>{bladFlytta(+k.dataset.upp,-1);ritaBlad();}));
+  $$('[data-ner]').forEach(k=>k.addEventListener('click',()=>{bladFlytta(+k.dataset.ner,1);ritaBlad();}));
+  $$('[data-separera]').forEach(k=>k.addEventListener('click',()=>bladSeparera(k.dataset.separera)));
   $$('[data-bort]').forEach(k=>k.addEventListener('click',()=>vippa(k.dataset.bort)));
   $('#expPdf').disabled=$('#expWord').disabled=!b.length;
   sparSchemalaggAutospar();
@@ -8078,6 +8236,7 @@ function uppdateraDokumentidentitet(){
 }
 
 function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=dokumentTyp()}){
+  const nummer=bladNumrering();
   const fallback=typ==='prov'?'Prov':'Övningsblad';
   const t=$('#bTitel').value||fallback, kl=$('#bKlass').value, da=$('#bDatum').value;
   const datum=wordDatum(da);
@@ -8113,7 +8272,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
       <div>
         <h1 data-doc-field="title">${wordEsc(t)}</h1>
         <div class="pdf-ovningsmeta"><span class="pdf-meta-course">${wordEsc(kursMeta)}</span><span class="pdf-meta-class" data-doc-field="class">${wordEsc(kl)}</span><span class="pdf-meta-date" data-doc-field="date">${wordEsc(datum)}</span></div>
-        <div class="pdf-ovningsantal">${state.blad.length} uppgifter${totalEndast?` · ${tot} poäng`:''}</div>
+        <div class="pdf-ovningsantal">${bladGrupper().length} uppgifter${totalEndast?` · ${tot} poäng`:''}</div>
       </div>
     </div>`;
   }
@@ -8128,8 +8287,8 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
           : (state.visaPoäng
               ? `<span class="pp">(${x.poang})</span>`
               : `<span class="nivåmärke ${x.niva}">${x.niva}</span>`));
-    h+=`<div class="pu pdf-pu">
-      <div class="pn">${i+1}.</div>
+    h+=`<div class="pu pdf-pu${nummer[i].del?' deluppgift':''}">
+      <div class="pn">${nummer[i].etikett}</div>
       <div class="pdf-uppgiftstext">${uppgiftsText(x)}</div>
       <div class="pdf-uppgiftsmeta">${verktyg}${marke}</div>
     </div>`;
@@ -8138,7 +8297,7 @@ function bladHTML({facit,hjalpmedel=true,totalEndast=false,doljMarke=false,typ=d
 
   if(facit){
     h+=`<div class="fk"><h1 style="font-size:14pt;margin-bottom:12pt">Facit</h1>`;
-    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${i+1}.</b><div>${LOS(x.s)}${altFacit(x)}</div></div>`;});
+    state.blad.forEach((x,i)=>{h+=`<div class="fu"><b>${nummer[i].etikett}</b><div>${LOS(x.s)}${altFacit(x)}</div></div>`;});
     h+=`</div>`;
   }
   return h;
@@ -8189,7 +8348,8 @@ function byggAnalysOverforing(){
         family:x.familj||null,
         abilities:Array.isArray(x.formaga)?[...x.formaga]:[],
         course:AKTIV?.id||null,
-        track:state.spår||null
+        track:state.spår||null,
+        documentGroup:x._delgrupp||null
       }
     });
   });
@@ -8947,6 +9107,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
   const meta=wordProvMeta();
   const children=[];
   const wordLista=typ==='prov'?provOrdnadeUppgifter():state.blad.slice();
+  const wordNummer=bladNumrering(wordLista);
   const logoRun=await wordBildRunFranUrl(LOGO,docx,68);
   const noBorder=wordCellBorders(docx);
   const wordDelruta=i=>new Table({
@@ -9064,7 +9225,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
             text:[AKTIV?AKTIV.titel:'',klass,datum].filter(Boolean).join(' · '),size:19,color:'444444',font:'Arial'
           })]}),
           new Paragraph({children:[new TextRun({
-            text:`${state.blad.length} uppgifter${totalEndast?` · ${meta.tot} poäng`:''}`,size:18,color:'666666',font:'Arial'
+            text:`${bladGrupper(wordLista).length} uppgifter${totalEndast?` · ${meta.tot} poäng`:''}`,size:18,color:'666666',font:'Arial'
           })]})
         ]})
       ]})]
@@ -9131,7 +9292,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     }
 
     const firstRuns=[
-      new TextRun({text:`${i+1}.`,size:22,font:'Arial'})
+      new TextRun({text:wordNummer[i].etikett,size:22,font:'Arial'})
     ];
     if(toolRun){ firstRuns.push(new TextRun({text:'  '}),toolRun); }
 
@@ -9179,7 +9340,7 @@ async function wordSkapaNativeDocx(rapportera=()=>{}){
     children.push(new Paragraph({spacing:{after:140},children:[new TextRun({text:'Facit',bold:true,size:32,font:'Arial'})]}));
     for(let i=0;i<wordLista.length;i++){
       rapportera(++steg,antalSteg);
-      children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:`${i+1}.`,bold:true,size:22,font:'Arial'})]}));
+      children.push(new Paragraph({spacing:{before:60,after:40},children:[new TextRun({text:wordNummer[i].etikett,bold:true,size:22,font:'Arial'})]}));
       try{
         children.push(...await wordHtmlTillParagrapher((LOS(wordLista[i].s)+altFacit(wordLista[i])),docx,{indent:220}));
       }catch(e){
@@ -9784,12 +9945,13 @@ bladHTML=function(opt){
       const perDel=PROVDELAR.map(()=>[]);
       uppgifter.forEach((el,i)=>perDel[provDelIndex(state.blad[i])].push(el));
       behallare.innerHTML='';
-      let nummer=1;
+      const nummer=bladNumrering();let ni=0;
       perDel.forEach((lista,d)=>{
         behallare.insertAdjacentHTML('beforeend',provDelRubrikHTML(d,!lista.length));
         lista.forEach(el=>{
           const n=el.querySelector('.pn');
-          if(n) n.textContent=(nummer++)+'.';
+          if(n) n.textContent=nummer[ni].etikett;
+          ni++;
           behallare.appendChild(el);
         });
       });
@@ -9820,10 +9982,8 @@ vippa=async function(id){
   }else{
     const x=DB.bank.find(y=>y.id===id);
     if(!x) return;
-    let pos=state.blad.length;
-    for(let k=0;k<state.blad.length;k++){
-      if(nivaRang(state.blad[k].niva)>nivaRang(x.niva)){ pos=k; break; }
-    }
+    const högre=bladGrupper().find(g=>g.uppgifter.some(y=>nivaRang(y.niva)>nivaRang(x.niva)));
+    const pos=högre?högre.index[0]:state.blad.length;
     state.blad.splice(pos,0,x);
   }
   const k=document.querySelector('.kort[data-id="'+id+'"]');
@@ -9863,7 +10023,9 @@ function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
     dragen=grepp.closest(valjare);
     if(!dragen) return;
     e.preventDefault();
-    grepp.setPointerCapture(e.pointerId);
+    // Greppet flyttas i DOM under dragningen. Fånga pekaren på den fasta
+    // behållaren så att flytten inte tappar fortsatt rörelse och pointerup.
+    behallare.setPointerCapture(e.pointerId);
     dragen.classList.add('dras');
     behallare.classList.add('drar');
 
@@ -9877,18 +10039,20 @@ function gorSorterbar({behallare,valjare,greppValjare,klass,vidSlapp}){
       if(klass?.numrera) klass.numrera(behallare);
     };
     const slut=()=>{
-      grepp.removeEventListener('pointermove',flytta);
-      grepp.removeEventListener('pointerup',slut);
-      grepp.removeEventListener('pointercancel',slut);
+      behallare.removeEventListener('pointermove',flytta);
+      behallare.removeEventListener('pointerup',slut);
+      behallare.removeEventListener('pointercancel',slut);
+      if(behallare.hasPointerCapture(e.pointerId)) behallare.releasePointerCapture(e.pointerId);
       dragen.classList.remove('dras');
       behallare.classList.remove('drar');
       rensa();
+      const flyttad=+dragen.dataset.i;
       dragen=null; senaste=null;
-      vidSlapp();
+      vidSlapp(flyttad);
     };
-    grepp.addEventListener('pointermove',flytta);
-    grepp.addEventListener('pointerup',slut);
-    grepp.addEventListener('pointercancel',slut);
+    behallare.addEventListener('pointermove',flytta);
+    behallare.addEventListener('pointerup',slut);
+    behallare.addEventListener('pointercancel',slut);
   });
 }
 
@@ -9925,7 +10089,7 @@ ritaBlad=function(){
         sel.addEventListener('pointerdown',e=>e.stopPropagation());
         sel.addEventListener('change',()=>{
           const d=+sel.value;
-          if(d) state.blad[i]._provdel=d; else delete state.blad[i]._provdel;
+          bladSattProvdel(i,d);
           ritaBlad();
         });
         meta.appendChild(sel);
@@ -9945,13 +10109,11 @@ gorSorterbar({
   behallare:document.getElementById('blad'),
   valjare:'.brad',
   greppValjare:'.greppa,.btext',
-  klass:{numrera(b){ b.querySelectorAll('.brad .num').forEach((n,i)=>n.textContent=i+1); }},
-  vidSlapp(){
+  vidSlapp(flyttad){
     const lista=document.getElementById('blad');
     const ordning=[...lista.querySelectorAll('.brad')].map(r=>+r.dataset.i);
     if(ordning.some(Number.isNaN)) return;
-    const gammal=state.blad.slice();
-    state.blad=ordning.map(i=>gammal[i]).filter(Boolean);
+    bladOrdna(ordning,flyttad);
     ritaBlad();
   }
 });
@@ -10136,7 +10298,7 @@ function layoutRita(){
   });
   const tot=p.E+p.C+p.A;
   const u=document.getElementById('lrUnder');
-  if(u) u.textContent=state.blad.length+' uppgifter · '+tot+' poäng · '+
+  if(u) u.textContent=bladGrupper().length+' uppgifter · '+tot+' poäng · '+
     p.E+' E, '+p.C+' C, '+p.A+' A';
 
   requestAnimationFrame(layoutSidlinjer);
@@ -10182,8 +10344,8 @@ document.getElementById('lrPapper')?.addEventListener('click',e=>{
   const x=state.blad[i];
   if(!x) return;
   const g=k.dataset.lr;
-  if(g==='upp'&&i>0){ [state.blad[i-1],state.blad[i]]=[state.blad[i],state.blad[i-1]]; }
-  else if(g==='ner'&&i<state.blad.length-1){ [state.blad[i+1],state.blad[i]]=[state.blad[i],state.blad[i+1]]; }
+  if(g==='upp'&&i>0){ bladFlytta(i,-1); }
+  else if(g==='ner'&&i<state.blad.length-1){ bladFlytta(i,1); }
   else if(g==='plus'){ x._utrymme=Math.min(140,extraUtrymme(x)+10); }
   else if(g==='minus'){ x._utrymme=Math.max(0,extraUtrymme(x)-10); if(!x._utrymme) delete x._utrymme; }
   else if(g==='bryt'){ if(harSidbryt(x)) delete x._sidbryt; else x._sidbryt=true; }
@@ -10200,7 +10362,7 @@ document.getElementById('lrPapper')?.addEventListener('change',e=>{
   const x=state.blad[i];
   if(!x) return;
   const d=+val.value;
-  if(d) x._provdel=d; else delete x._provdel;
+  bladSattProvdel(i,d);
   ritaBlad();
 });
 
@@ -10224,13 +10386,11 @@ gorSorterbar({
   behallare:document.querySelector('#lrPapper'),
   valjare:'.lr-pu',
   greppValjare:'.lr-flytt',
-  klass:{numrera(b){ b.querySelectorAll('.lr-pu .pn').forEach((n,i)=>n.textContent=(i+1)+'.'); }},
-  vidSlapp(){
+  vidSlapp(flyttad){
     const papper=document.getElementById('lrPapper');
     const ordning=[...papper.querySelectorAll('.lr-pu')].map(el=>+el.dataset.i);
     if(ordning.some(Number.isNaN)) return;
-    const gammal=state.blad.slice();
-    state.blad=ordning.map(i=>gammal[i]).filter(Boolean);
+    bladOrdna(ordning,flyttad);
     ritaBlad();
   }
 });

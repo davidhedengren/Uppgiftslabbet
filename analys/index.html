@@ -1303,18 +1303,37 @@ function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",
 function joinSv(a){ if(!a.length) return ""; if(a.length===1) return a[0]; return a.slice(0,-1).join(", ")+" och "+a[a.length-1]; }
 function qual(p){ if(p>=0.8) return "ett mycket gott resultat"; if(p>=0.6) return "ett godkänt resultat"; return "ett svagt resultat"; }
 function bucketOf(l){ if(!l) return null; return l<=2?"grund":(l===3?"medel":"avancerat"); }
-function letter(i){ return String.fromCharCode(97+i); }
+function letter(i){
+  let text='';
+  for(let n=i+1;n>0;n=Math.floor((n-1)/26)) text=String.fromCharCode(97+(n-1)%26)+text;
+  return text;
+}
 function partLabel(t,pi){ return t.parts.length>1 ? letter(pi)+")" : "Poäng"; }
 function partLevel(p,t){ return +(p&&p.level||t&&t.level||0)||null; }
 function levelOptions(level){ return '<option value="" '+(!level?'selected':'')+' disabled hidden>Välj nivå</option>'+[1,2,3,4,5].map(l=>`<option value="${l}" ${+level===l?"selected":""}>Nivå ${l}${l===1?" · grund":l===3?" · medel":l===5?" · avancerad":""}</option>`).join(""); }
-function partCode(ti,pi,pc){ return (ti+1)+(pc>1?letter(pi):""); }
+function partCode(ti,pi,pc){
+  const n=taskNo(validTasks()[ti]);
+  return String(n)+(pc>1?(typeof n==='string'?'.':'')+letter(pi):'');
+}
 function taskMax(t){ return t.parts.reduce((a,p)=>a+num(p.max),0); }
 function validTasks(){ return state.tasks.filter(t=>taskMax(t)>0); }
 /* Uppgiftens nummer är dess plats i provet, inte dess plats bland de ifyllda.
    En uppgift utan maxpoäng räknas inte med i analysen, och utan den här
    numreringen skulle alla följande uppgifter byta nummer i inmatningen och i
    analysen medan de behöll sitt nummer i steg 1. */
-function taskNo(t){ return state.tasks.indexOf(t)+1; }
+function taskNo(t){
+  let nummer=0;
+  for(let i=0;i<state.tasks.length;){
+    const grupp=state.tasks[i].source?.documentGroup;
+    let slut=i+1;
+    if(grupp) while(slut<state.tasks.length&&state.tasks[slut].source?.documentGroup===grupp) slut++;
+    nummer++;
+    const pos=state.tasks.slice(i,slut).indexOf(t);
+    if(pos>=0) return slut-i>1?String(nummer)+letter(pos):nummer;
+    i=slut;
+  }
+  return state.tasks.indexOf(t)+1;
+}
 function taskAreas(t){ return (t.areas&&t.areas.length)?t.areas:["(utan område)"]; }
 function studentTaskPoints(s,t){ return t.parts.reduce((a,p)=>a+num(s.scores[p.id]),0); }
 function usedAreas(){ const o=[]; validTasks().forEach(t=>taskAreas(t).forEach(a=>{ if(!o.includes(a)) o.push(a); })); return o; }
@@ -1780,7 +1799,7 @@ function renderTasks(){
       <div class="part-level"><select class="plevel" data-pid="${p.id}" aria-label="Nivå för ${pc>1?letter(pi)+')':'uppgiften'}">${levelOptions(partLevel(p,t))}</select></div>
       ${pc>1?`<button class="btn-mini del" data-rmpart="${p.id}" title="Ta bort deluppgift">✕</button>`:'<span></span>'}</div>`).join("");
     const contentChips=(t.areas||[]).map(a=>{ const w=(t.weights&&t.weights[a]!=null)?t.weights[a]:1; return `<span class="tag primary tag-w" data-area="${esc(a)}" style="opacity:${(0.5+0.5*w).toFixed(2)}" title="Vikt ${Math.round(w*100)} %. Klicka för att ändra.">${esc(a)} <small class="tagpct">${Math.round(w*100)}%</small><button data-area="${esc(a)}">×</button></span>`; }).join("");
-    card.innerHTML=`<div class="task-head"><span class="tnum">Uppgift ${i+1}</span>${taskMax(t)>0?"":'<span class="tflag">saknar maxpoäng</span>'}<span style="flex:1"></span>
+    card.innerHTML=`<div class="task-head"><span class="tnum">Uppgift ${taskNo(t)}</span>${taskMax(t)>0?"":'<span class="tflag">saknar maxpoäng</span>'}<span style="flex:1"></span>
       <button class="btn-mini" data-act="up" title="Flytta upp">↑</button><button class="btn-mini" data-act="down" title="Flytta ner">↓</button>
       <button class="btn-mini del" data-act="del" title="Ta bort">✕</button></div>
       <div class="task-fields"><div><label class="field">Innehåll</label><div class="tags" data-act="tags">${contentChips}<input class="tag-input" list="areaPool" placeholder="${(t.areas||[]).length?'lägg till innehåll…':'innehåll'}"></div></div></div>
@@ -1809,7 +1828,16 @@ function renderTasks(){
   if(focusTaskId!=null){ const idx=state.tasks.findIndex(x=>x.id===focusTaskId); if(idx>=0){ const inp=list.children[idx].querySelector(".tag-input"); if(inp) inp.focus(); } focusTaskId=null; }
 }
 function moveTask(i,dir){ const j=i+dir; if(j<0||j>=state.tasks.length) return; const tmp=state.tasks[i]; state.tasks[i]=state.tasks[j]; state.tasks[j]=tmp; commitBuild(); }
-function dupTask(i){ const t=state.tasks[i]; state.tasks.splice(i+1,0,{id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),parts:t.parts.map(p=>({id:nextId++,max:p.max,level:partLevel(p,t)})),source:t.source?JSON.parse(JSON.stringify(t.source)):null}); commitBuild(); }
+function dupTask(i){
+  const t=state.tasks[i],source=t.source?JSON.parse(JSON.stringify(t.source)):null;
+  if(source) delete source.documentGroup;
+  const copy={id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),
+    parts:t.parts.map(p=>({id:nextId++,max:p.max,level:partLevel(p,t)})),source};
+  let pos=i+1;
+  const group=t.source?.documentGroup;
+  if(group) while(pos<state.tasks.length&&state.tasks[pos].source?.documentGroup===group) pos++;
+  state.tasks.splice(pos,0,copy);commitBuild();
+}
 function addAreaToTask(t,raw){ const name=(raw||"").trim(); if(!name) return; if(!state.areas.some(a=>a.toLowerCase()===name.toLowerCase())) state.areas.push(name);
   const canon=state.areas.find(a=>a.toLowerCase()===name.toLowerCase()); if(!t.areas.includes(canon)) t.areas.push(canon); focusTaskId=t.id; commitBuild(); }
 function commitBuild(){ renderAreaPool(); renderTasks(); renderOverview(); renderGradeScale(); renderGrid(); renderAnalysis(); save(); }
