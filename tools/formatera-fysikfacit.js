@@ -92,6 +92,19 @@ function struktureraFacit(source){
  const protectedSvg=[];
  source=source.replace(/<svg\b[\s\S]*?<\/svg>/gi,s=>{protectedSvg.push(s);return '<span data-facit-figur="'+(protectedSvg.length-1)+'"></span>';});
  const root=document.createElement('div');root.innerHTML=source;
+ // Äldre delkort kan sakna stycken eller ha ogiltiga p/div-kombinationer.
+ // Samla bara fristående inline-innehåll; figurer och andra block flyttas inte.
+ for(const parent of [root,...root.querySelectorAll('.spel-en-del')]){
+  let paragraph=null;
+  for(const node of [...parent.childNodes]){
+   const inline=node.nodeType===3||(node.nodeType===1&&/^(STRONG|B|EM|I|SPAN|BR|A|SUB|SUP|CODE)$/.test(node.tagName)
+    &&!node.matches('.fig,[data-facit-figur]')&&!node.querySelector('[data-facit-figur]'));
+   if(inline){
+    if(!paragraph){paragraph=document.createElement('p');parent.insertBefore(paragraph,node);}
+    paragraph.append(node);
+   }else paragraph=null;
+  }
+ }
  const ledger=[],unconverted=[];
  const plainHtml=h=>{const d=document.createElement('div');d.innerHTML=h;return d.textContent;};
  const escape=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
