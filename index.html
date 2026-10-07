@@ -1047,6 +1047,9 @@ table.data th{background:var(--sunken);font-weight:600}
 .spararad .sparstatus{margin-left:auto;min-width:0;font-size:10.5px;color:var(--muted);
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .spararad .sparstatus.sparad{color:#28725b}
+.spararad .sparstatus .sparsenast{font:inherit;color:var(--ed-dark,#7a2a1f);background:none;border:0;padding:0;
+  text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.spararad .sparstatus .sparsenast:disabled{opacity:.5;cursor:default}
 .sparmodal{position:fixed;inset:0;z-index:600;display:grid;place-items:center;padding:24px;
   background:rgba(25,22,24,.38);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
 .sparmodal[hidden]{display:none!important}
@@ -4672,7 +4675,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 </style>
 <style>
 /* ═══ delade dokument ═══ */
-.spararad #delaDokument.delat{color:var(--ed-dark);border-color:color-mix(in srgb,var(--ed) 35%,transparent);background:var(--ed-tint)}
+.spararad #delaMedAlla.delat,.spararad #delaDokument.delat{color:var(--ed-dark);border-color:color-mix(in srgb,var(--ed) 35%,transparent);background:var(--ed-tint)}
 .delningsrad{display:flex;align-items:center;gap:9px;margin-top:9px;padding:8px 10px;border:1px solid var(--line);
   border-radius:11px;background:var(--surface);font-size:11.5px;line-height:1.3;min-width:0}
 .delningsrad[hidden]{display:none}
@@ -5046,7 +5049,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* Tydlig fysisk knappkänsla: ljus kant, bottenkant och en liten lyftning. */
-#sparaDokument,#laddaDokument,#nyttDokument,#delaDokument,#oppnaLayout,#tillAnalys,
+#sparaDokument,#laddaDokument,#nyttDokument,#delaDokument,#delaMedAlla,#oppnaLayout,#tillAnalys,
 #expPdf,#expWord,#lrPdf,#lrWord,#lrKlar{
   border:1px solid rgba(31,38,48,.18)!important;
   background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F7 100%)!important;
@@ -5054,13 +5057,13 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 2px 0 rgba(96,104,116,.22),0 4px 10px rgba(31,38,48,.09)!important;
   transform:translateY(0);transition:transform .14s ease,box-shadow .14s ease,background .14s ease,border-color .14s ease!important;
 }
-#sparaDokument:hover,#laddaDokument:hover,#nyttDokument:hover,#delaDokument:hover,#oppnaLayout:hover,#tillAnalys:hover,
+#sparaDokument:hover,#laddaDokument:hover,#nyttDokument:hover,#delaDokument:hover,#delaMedAlla:hover,#oppnaLayout:hover,#tillAnalys:hover,
 #expPdf:hover,#expWord:hover,#lrPdf:hover,#lrWord:hover,#lrKlar:hover{
   transform:translateY(-1px);border-color:rgba(31,38,48,.26)!important;
   background:linear-gradient(180deg,#FFFFFF 0%,#ECEFF3 100%)!important;
   box-shadow:inset 0 1px 0 #fff,0 3px 0 rgba(96,104,116,.20),0 7px 14px rgba(31,38,48,.11)!important;
 }
-#sparaDokument:active,#laddaDokument:active,#nyttDokument:active,#delaDokument:active,#oppnaLayout:active,#tillAnalys:active,
+#sparaDokument:active,#laddaDokument:active,#nyttDokument:active,#delaDokument:active,#delaMedAlla:active,#oppnaLayout:active,#tillAnalys:active,
 #expPdf:active,#expWord:active,#lrPdf:active,#lrWord:active,#lrKlar:active{
   transform:translateY(2px);box-shadow:inset 0 1px 2px rgba(31,38,48,.10),0 1px 0 rgba(96,104,116,.15)!important;
 }
@@ -5502,6 +5505,10 @@ function ulLösenordUpplåst(){
           <button class="knapp liten tyst" id="delaDokument" type="button" title="Dela dokumentet med kollegor och arbeta i det samtidigt">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4-.2 4.1 1.4 4.6 4.3"/></svg>
             Dela
+          </button>
+          <button class="knapp liten tyst" id="delaMedAlla" type="button" title="Publicera dokumentet i skolans gemensamma bank så att alla lärare kan skapa en egen kopia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>
+            Dela med alla
           </button>
           <span class="sparstatus" id="sparstatus" aria-live="polite"></span>
         </div>
@@ -6051,6 +6058,7 @@ function sparNyttDokument(){
   if(typeof delningKoppla==='function') delningKoppla(null,{tyst:true});
   state.blad=[];
   AKTIV_SPAR_ID=null;
+  SKYDD_BEKRÄFTAT=null;
   if(typeof provAterstallDelar==='function') provAterstallDelar();
   if(typeof DOKTEXT!=='undefined') DOKTEXT={notice:null,instruction:null};
   sparRensaUtkast(AKTIV.id);
@@ -6085,6 +6093,13 @@ async function sparAterstallUtkast(kurs){
   if(AKTIV?.id!==id) return;
   if(state.blad.length){ sparAutosparaNu(); return; }
   if(!d || !Array.isArray(d.tasks) || !d.tasks.length){ sparAutosparaNu(); return; }
+  /* Ett sparat dokument läggs inte upp igen; arbetsytan börjar tom. */
+  if(sparParkeraSparatUtkast(d)){
+    AKTIV_SPAR_ID=null;
+    sparRensaUtkast(id);
+    sparAutosparaNu();
+    return;
+  }
   await sparLaddaDokument(d,{manuell:false});
 }
 function sparSchemalaggAutospar(){ clearTimeout(sparTimer); sparTimer=setTimeout(sparAutosparaNu,350); }
@@ -6244,6 +6259,7 @@ async function sparLaddaDokument(doc,{manuell=true,delat=false}={}){
     state.blad=sparUppgifterUrDokument(doc);
     sparAppliceraInstallningar(doc);
     AKTIV_SPAR_ID=manuell?doc.id:(doc.activeSaveId||null);
+    SKYDD_BEKRÄFTAT=null;
     byggTräd(); rita(); ritaBlad(); sparStangModal();
     sparStatus(manuell?'Laddat · '+sparFormatTid(doc.updatedAt):'Utkast återställt',true);
     sparAutosparaNu();
@@ -6262,6 +6278,102 @@ async function sparLaddaDokument(doc,{manuell=true,delat=false}={}){
 }
 async function sparLaddaId(id){
   const doc=sparLasaAlla().find(x=>x.id===id); if(doc) await sparLaddaDokument(doc,{manuell:true});
+}
+
+/* ── skydd mot att råka ändra ett sparat dokument ──────────────────────────
+   När ett sparat dokument är öppet frågar labbet innan en uppgift läggs till:
+   ändra i dokumentet, fortsätt i en osparad kopia eller avbryt. Svaret gäller
+   tills ett annat dokument öppnas eller sidan laddas om. */
+let SKYDD_BEKRÄFTAT=null;
+function sparatDokument(){
+  if(typeof DELNING!=='undefined'&&DELNING.id&&DELNING.kurs===AKTIV?.id)
+    return {id:'konto:'+DELNING.id,namn:DELNING.namn||'dokumentet',konto:true};
+  if(AKTIV_SPAR_ID){
+    const d=sparLasaAlla().find(x=>x.id===AKTIV_SPAR_ID);
+    if(d) return {id:'lokal:'+d.id,namn:d.name||'dokumentet',konto:false};
+  }
+  return null;
+}
+function skyddaSparat(){
+  const d=sparatDokument();
+  if(!d||SKYDD_BEKRÄFTAT===d.id) return Promise.resolve(true);
+  return new Promise(klar=>{
+    const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const el=document.createElement('div');
+    el.className='sparmodal'; el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true');
+    el.innerHTML=`<div class="sparmodal-kort">
+      <div class="sparmodal-huvud"><div>
+        <h2>Ändra i ett sparat dokument?</h2>
+        <p>Du har ”${esc(d.namn)}” öppet. ${d.konto
+          ?'Det du lägger till sparas direkt i dokumentet på kontot.'
+          :'Det du lägger till hamnar i dokumentet nästa gång du sparar.'}
+          Vill du ändra i det, eller fortsätta i en kopia så att det sparade dokumentet lämnas orört?</p>
+      </div></div>
+      <div class="sparmodal-fot">
+        <button class="knapp tyst" type="button" data-skydd="avbryt">Avbryt</button>
+        <span class="fyll"></span>
+        <button class="knapp tyst" type="button" data-skydd="kopia">Fortsätt i en kopia</button>
+        <button class="knapp primär" type="button" data-skydd="andra">Ändra i dokumentet</button>
+      </div></div>`;
+    const stäng=val=>{ document.removeEventListener('keydown',tangent,true); el.remove(); klar(val); };
+    const tangent=e=>{ if(e.key==='Escape'){ e.stopPropagation(); stäng(false); } };
+    el.addEventListener('click',e=>{
+      if(e.target===el) return stäng(false);
+      const val=e.target.closest('[data-skydd]')?.dataset.skydd;
+      if(val==='avbryt') stäng(false);
+      else if(val==='andra'){ SKYDD_BEKRÄFTAT=d.id; stäng(true); }
+      else if(val==='kopia'){
+        if(typeof delningKoppla==='function') delningKoppla(null,{tyst:true});
+        AKTIV_SPAR_ID=null; SKYDD_BEKRÄFTAT=null;
+        sparAutosparaNu();
+        sparStatus(`Kopia av ”${d.namn}” – inte sparad ännu`);
+        stäng(true);
+      }
+    });
+    document.addEventListener('keydown',tangent,true);
+    document.body.appendChild(el);
+    el.querySelector('[data-skydd="andra"]')?.focus();
+  });
+}
+
+/* När en kurs öppnas igen läggs ett sparat dokument inte upp automatiskt, eftersom
+   det då är lätt att råka spara över det. Det finns kvar under Ladda, och statusraden
+   har en knapp som öppnar det. Osparade ändringar i ett lokalt sparat dokument
+   sparas som ett eget dokument i stället för att försvinna. */
+function sparSammaInnehåll(a,b){
+  try{ return JSON.stringify([a?.tasks||[],a?.settings||{}])===JSON.stringify([b?.tasks||[],b?.settings||{}]); }
+  catch(_){ return false; }
+}
+function sparVisaSenast(namn,öppna){
+  const el=$('#sparstatus'); if(!el) return;
+  el.classList.remove('sparad');
+  el.textContent='';
+  const knapp=document.createElement('button');
+  knapp.type='button'; knapp.className='sparsenast';
+  knapp.textContent=`Öppna ”${namn}”`;
+  knapp.title='Ditt senaste dokument finns också under Ladda';
+  knapp.addEventListener('click',async()=>{ knapp.disabled=true; try{ await öppna(); }catch(e){ if(e?.kod!=='avbrutet') alert(e?.message||e); knapp.disabled=false; } });
+  el.append('Senast: ',knapp);
+}
+function sparParkeraSparatUtkast(d){
+  const lokal=d.activeSaveId?sparLasaAlla().find(x=>x.id===d.activeSaveId):null;
+  const delat=d.shared?.id?d.shared:null;
+  if(!lokal&&!delat) return false;
+  if(lokal&&!sparSammaInnehåll(d,lokal)){
+    const kopia=JSON.parse(JSON.stringify(lokal));
+    kopia.id=sparUuid();
+    kopia.name=`${lokal.name} – osparade ändringar ${sparFormatTid(d.updatedAt||new Date().toISOString())}`;
+    kopia.tasks=d.tasks; kopia.settings=d.settings; kopia.track=d.track??kopia.track; kopia.areas=d.areas??kopia.areas;
+    kopia.createdAt=kopia.updatedAt=d.updatedAt||new Date().toISOString();
+    const docs=sparLasaAlla(); docs.unshift(kopia);
+    try{ sparSkrivAlla(docs); }catch(e){ console.warn('Osparade ändringar kunde inte sparas som kopia',e); return false; }
+    sparVisaSenast(kopia.name,()=>sparLaddaId(kopia.id));
+  }else if(lokal){
+    sparVisaSenast(lokal.name,()=>sparLaddaId(lokal.id));
+  }else{
+    sparVisaSenast(delat.namn||'dokumentet',()=>delningÖppna(delat.id));
+  }
+  return true;
 }
 
 const nyckel=x=>x.kap+':'+x.omr;
@@ -7358,8 +7470,10 @@ function stängUppgiftsredigering(){
   if($('#ruFacitPreview')) $('#ruFacitPreview').innerHTML='';
   $('#ruFacitFäll').open=false;
 }
-function sparaUppgiftsredigering(){
+async function sparaUppgiftsredigering(){
   if(!urOriginal||!urKopia) return;
+  /* En redigerad bankuppgift som läggs till i ett sparat dokument kräver samma bekräftelse som ett kortklick. */
+  if(!urRedigerarBlad && state.blad.findIndex(x=>x.id===urOriginal.id)<0 && !(await skyddaSparat())) return;
   const nyText=redigerbarTextTillHTML($('#ruText').value.trim());
   const nyFacit=textTillFacitHTML($('#ruFacit').value.trim());
   const sparadBild=urBildHTML
@@ -7664,7 +7778,8 @@ $('#slumpaKnappHoger').addEventListener('click',slumpVäxla);
 document.addEventListener('click',e=>{
   if(!e.target.closest('.slumpwrap')) slumpSättÖppen(false);
 });
-function körSlumpa(){
+async function körSlumpa(){
+  if(!(await skyddaSparat())) return;
   const pool=urval();
   const n=Math.max(1,Math.min(40,parseInt($('#slumpaAntal').value,10)||12));
   $('#slumpaAntal').value=n;
@@ -9236,6 +9351,35 @@ function initSparaLaddaUI(){
     if(e.key==='Escape' && !modal.hidden) sparStangModal();
   });
 
+  /* Dela med alla: publicerar dokumentet i skolans gemensamma bank (samma som i Mina dokument). */
+  $('#delaMedAlla')?.addEventListener('click',async e=>{
+    const k=e.currentTarget;
+    if(!AKTIV) return;
+    if(!(typeof kontoAktivt==='function'&&kontoAktivt())){
+      alert('Logga in med ditt lärarkonto för att dela dokumentet med alla lärare på skolan.'); return;
+    }
+    if(!state.blad.length){ alert('Lägg till uppgifter innan du delar dokumentet.'); return; }
+    if(!DELNING.id||DELNING.kurs!==AKTIV.id){
+      alert('Spara dokumentet på kontot först. Därefter kan du dela det med alla.');
+      sparOppnaSpara(); return;
+    }
+    if(DELNING.roll!=='agare'){ alert('Bara den som skapade dokumentet kan dela det med alla lärare.'); return; }
+    k.disabled=true;
+    try{
+      let delad=false;
+      try{ const lista=await ulRpc('ul_mina'); delad=Boolean(Array.isArray(lista)&&lista.find(x=>x.id===DELNING.id)?.skolbank); }catch(_){}
+      const namn=DELNING.namn||'dokumentet';
+      if(delad){
+        if(!confirm(`”${namn}” finns redan i skolans gemensamma bank.\n\nSluta dela det med alla? Kollegors redan skapade kopior påverkas inte.`)) return;
+      }else if(!confirm(`Dela ”${namn}” med alla lärare på skolan?\n\nDe kan skapa egna kopior av det. Ditt dokument påverkas inte av deras ändringar.`)) return;
+      const r=await ulRpc('ul_dela_med_skola',{p_id:DELNING.id,p_dela:!delad});
+      ulMeddela(!delad?`Delat med alla lärare${r?.skola?' på '+r.skola:''}. De kan nu skapa egna kopior.`:'Dokumentet är borttaget från skolans gemensamma bank.');
+      k.classList.toggle('delat',!delad);
+      if(typeof MINA!=='undefined') MINA.lista=null;
+    }catch(err){ alert(err?.message||err); }
+    finally{ k.disabled=false; }
+  });
+
   $('#nyttDokument')?.addEventListener('click',()=>{
     if(!AKTIV) return;
     if(state.blad.length && !confirm('Töm arbetsytan och börja på ett nytt dokument?')) return;
@@ -9642,7 +9786,9 @@ bladHTML=function(opt){
 
 /* ── nivåordning när en uppgift kryssas i ────────────────────────────────── */
 
-vippa=function(id){
+vippa=async function(id){
+  /* Att lägga till en uppgift i ett sparat dokument kräver en bekräftelse (skyddaSparat). */
+  if(state.blad.findIndex(x=>x.id===id)<0 && !(await skyddaSparat())) return;
   const i=state.blad.findIndex(x=>x.id===id);
   if(i>=0){
     state.blad.splice(i,1);
