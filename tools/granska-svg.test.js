@@ -380,7 +380,11 @@ test('real-bank provenance keeps same numeric IDs in uppgifter.js and uppgifterm
   assert.equal(ma22120.length, 0, 'Ma2 2.120 är fyrverkeriuppgiften och har ingen SVG');
 
   assert.equal(basic4133.length, 2);
-  assert.equal(basic4133[1].taskIndex, 584);
+  const bankContext = { window: {} };
+  require('node:vm').runInNewContext(fs.readFileSync(path.join(repoRoot, 'uppgifter.js'), 'utf8'), bankContext);
+  const sourceBank = Object.values(bankContext.window).find(Array.isArray);
+  assert.equal(basic4133[1].taskIndex, sourceBank.findIndex((task) => task.id === '4.133'));
+  assert.equal(sourceBank[basic4133[1].taskIndex].id, '4.133');
   assert.deepEqual(basic4133[1].paths, ['s[svg:0]']);
   assert.match(basic4133[1].svg, /5,0 kg/);
   assert.match(basic4133[1].svg, />golv</);

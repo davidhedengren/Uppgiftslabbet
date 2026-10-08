@@ -110,8 +110,8 @@ Träningsnivå 1–5 hålls isär från E/C/A:
 
 | Träningsnivå | Innebörd |
 |---|---|
-| 1 | Enkel E-uppgift |
-| 2 | Mer krävande E-uppgift, ännu inte C |
+| 1 | De allra enklaste uppgifterna: ett grundbegrepp eller ett direkt samband med enkla tal |
+| 2 | Lite svårare E-uppgift: fler beroende steg, en proportion eller mer krävande beräkningar, ännu inte C |
 | 3 | Börjar bli C |
 | 4–5 | Tydligt svårare |
 
@@ -120,6 +120,9 @@ A-uppgifter ska vara korrekt kalibrerade.
 Fler räknesteg gör inte i sig en uppgift till C. En mer krävande rutinuppgift kan
 fortfarande vara E och ska då få träningsnivå 2, inte höjas till C enbart för att
 skiljas från de enklaste uppgifterna. Arbetsinsats bedöms separat från nivån.
+
+Den konkreta gränsen mellan nivå 1 och 2, även för separata spelkort, beskrivs i
+[PEDAGOGISKA_REGLER.md](PEDAGOGISKA_REGLER.md#träningsnivå-1-och-2).
 
 ### 3.11 Progression och variation
 

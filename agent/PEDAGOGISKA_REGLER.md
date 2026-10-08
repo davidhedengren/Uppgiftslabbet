@@ -57,6 +57,26 @@ Nivån ska bedömas oberoende av aktuell etikett. Beakta bland annat:
 
 Ändra inte nivå enbart för att rättningsformatet ändras.
 
+### Träningsnivå 1 och 2
+
+**Träningsnivå 1 ska innehålla de allra enklaste uppgifterna.** Eleven ska kunna
+känna igen ett grundbegrepp eller använda ett direkt, tydligt samband med enkla
+tal. Exempel är att identifiera en sträcka, läsa av en motsvarande vinkel,
+halvera en given medelpunktsvinkel eller multiplicera en sida med en given enkel
+längdskala. Nivå 1 ska vara en trygg ingång till ett nytt delmoment.
+
+**Träningsnivå 2 är lite svårare men kan fortfarande vara E.** Hit hör till
+exempel att först bestämma en längdskala och sedan använda den, summera en hel
+sida före topptriangelsatsen, lösa en proportion med kordasatsen eller
+bisektrissatsen, kombinera två vinkelregler eller beräkna koordinatskillnader
+före avståndsformeln. Krångligare tal eller flera beroende steg kan också
+motivera nivå 2. Fler rutinberäkningar är inte i sig skäl att ändra E till C.
+
+Bedöm varje uppgift och varje delkort för sig. Ett kort som redan anger
+längdskalan eller ett mellanresultat kan vara nivå 1 även när hela uppgiften
+är svårare. Ett nivå 1-kort får inte kräva att eleven först löser en osynlig
+tidigare del. Alla nödvändiga givna uppgifter och figurer ska följa med kortet.
+
 ## Självrättning
 
 En uppgift lämpar sig för självrättning när samtliga godtagbara slutsvar kan representeras utan att det matematiska innehållet förvanskas. Bedöm särskilt:
