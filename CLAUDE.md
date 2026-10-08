@@ -50,6 +50,8 @@ Användaren klistrar in en logg ("Felrapporterade uppgifter · Kunskapsgymmet ·
 
 ### Formuleringar och mönster att undvika i uppgifter
 
+- Fysikkort på träningsnivå 1–2 ska bara visa de givna tal och materialdata som behövs för just den frågan. Ange nödvändiga mellanresultat direkt, med tillräcklig precision, och låt delens facit använda dem. Behåll nödvändiga villkor, riktning och nollnivå. Kontrollera frågans svarsenhet mot `svarEnhet` i det faktiskt visade delkortet.
+
 Eleverna är gymnasieelever; texten ska vara enkel och konkret.
 
 - Onödig modelljargong i uppgiftstexten, t.ex. "Försumma yttre horisontell impuls", "försumma yttre impuls", "masslösa kolvar och inkompressibel vätska", "samma lufttryck verkar ovanpå båda kolvarna". Det krånglar till uppgiften utan att hjälpa. Behåll bara förenklingar som verkligen behövs (luftmotstånd, friktion, hjulens rotationsenergi) och skriv dem i vardagligt språk. Impuls- och rörelsemängdsresonemang hör hemma i lösningen/ledtråden, inte som förbehåll i frågan. Ett bortstruket förbehåll ska inte ändra svaret.

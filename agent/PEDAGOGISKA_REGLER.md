@@ -77,6 +77,17 @@ längdskalan eller ett mellanresultat kan vara nivå 1 även när hela uppgiften
 är svårare. Ett nivå 1-kort får inte kräva att eleven först löser en osynlig
 tidigare del. Alla nödvändiga givna uppgifter och figurer ska följa med kortet.
 
+I fysik ska nivå 1–2 ha en kort, konkret situation och en tydlig fråga.
+Visa bara de tal och materialdata som behövs för den aktuella frågan.
+Ett kort om fjäderenergi behöver exempelvis inte uppgifterna för ett senare
+kast, och ett kort om uppvärmning behöver inte smältvärmet. Om ett tidigare
+mellanresultat behövs, ange det direkt och med tillräcklig precision för
+självrättningen. Facit ska då utgå från det givna mellanresultatet.
+Behåll nödvändiga fysikaliska villkor, referensriktning och nollnivå.
+Säg vem kraften verkar på och vad eleven ska bestämma. Förklara skillnaden
+mellan övertryck och absolut tryck när den annars kan missförstås.
+Kontrollera alltid den visade svarsenheten mot `svarEnhet`.
+
 ## Självrättning
 
 En uppgift lämpar sig för självrättning när samtliga godtagbara slutsvar kan representeras utan att det matematiska innehållet förvanskas. Bedöm särskilt:
