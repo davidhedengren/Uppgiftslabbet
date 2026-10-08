@@ -1,0 +1,3217 @@
+{
+  "date": "2026-10-08",
+  "counts": {
+    "fy1": {
+      "parents": 43,
+      "changedCards": 71
+    },
+    "matf1": {
+      "parents": 113,
+      "changedCards": 129
+    }
+  },
+  "changes": [
+    {
+      "bank": "fy1",
+      "id": "5.30",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.30a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.37",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.37a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.55",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.55a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.151",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "5.151"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.55",
+      "area": "tryck",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.55a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.190",
+      "area": "rorelseenergi",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "onödig bromstid borttagen"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.583",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.583: jämn acceleration behövs för maximal effekt"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.590",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.590a",
+        "5.590b",
+        "5.590c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.591",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.591a",
+        "5.591b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.592",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.592a",
+        "5.592b",
+        "5.592c",
+        "5.592d"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.598",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.598a",
+        "5.598b",
+        "5.598c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.481",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.481a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.483",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.483a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.485",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.485b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.486",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.486: start från vila och trissmodell angivna"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.488",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.488a",
+        "5.488b",
+        "5.488c",
+        "5.488d"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.493",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.493a",
+        "5.493b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.494",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad"
+      ],
+      "notes": [
+        "5.494"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.495",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.495c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.503",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.503b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.505",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.505b",
+        "5.505c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.509",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.509a",
+        "5.509c",
+        "5.509d"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.511b",
+        "5.511c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.513",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.513a",
+        "5.513b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.517",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.517a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.548",
+      "area": "rorelseenergi",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.548a",
+        "5.548b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.549",
+      "area": "rorelseenergi",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "5.549: medeleffekt skiljs från konstant momentan effekt"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.421",
+      "area": "tryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.421a",
+        "6.421b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.422",
+      "area": "tryck",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.422b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.424",
+      "area": "tryck",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.424b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.431",
+      "area": "tryck",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "6.431"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.435",
+      "area": "tryck",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "6.435"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.440",
+      "area": "vatsketryck",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.440b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.442",
+      "area": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.442a: rättat felräknat mellanled"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.443",
+      "area": "vatsketryck",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.443a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.455",
+      "area": "vatsketryck",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.455b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "6.458",
+      "area": "vatsketryck",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.458c",
+        "6.458a",
+        "6.458b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.502",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "5.502"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.520",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.520b",
+        "5.520c",
+        "5.520d"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.525",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.525a"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.527",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.527b"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.528",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.528c"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.535",
+      "area": "arbete",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.535b"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.37",
+      "area": "mult_add_principen",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "1.37"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.60",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.60"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.62",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.62"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.64",
+      "area": "ladprincipen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.64"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.65",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.65"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.68",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.68"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.133",
+      "area": "ladprincipen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.134",
+      "area": "ladprincipen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.135",
+      "area": "ladprincipen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.150",
+      "area": "ladprincipen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.151",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad",
+        "1.151: tydligare vad som ska visas"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.39",
+      "area": "mult_add_principen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.39"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.53",
+      "area": "mult_add_principen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.393",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.393"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.130",
+      "area": "mult_add_principen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.131",
+      "area": "mult_add_principen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.131"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.396",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.396"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.132",
+      "area": "mult_add_principen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.148",
+      "area": "mult_add_principen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.149",
+      "area": "mult_add_principen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.75",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.121",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.121: bokstavsordningar, inte ordboksord",
+        "1.121"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.466",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "1.466"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.125",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.125a",
+        "1.125b",
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.156",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.188",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.189",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.191",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.192",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.211",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.214",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.214"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.215",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.218",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.218: bokstavsordningar, inte ordboksord"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.222",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "1.222"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.223",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "1.223"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.301",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.301"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.302",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.302"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.143",
+      "area": "binomialsatsen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.143"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.435",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "manuellKomplettering"
+      ],
+      "notes": [
+        "1.435",
+        "resonemanget bedöms manuellt; självrättningen gäller talet",
+        "radbrytning mellan fallen för läsbarhet på mobil"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.128",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.128"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.448",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "1.448",
+        "radbrytning mellan fallen för läsbarhet på mobil"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.197",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.197"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.198",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.198"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.199",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.199"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.200",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.200"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.504",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.504"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.505",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.505"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.507",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.507"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.508",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.508"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.515",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.515: bokstavsordningar, inte ordboksord"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.516",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.516: bokstavsordningar, inte ordboksord"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.517",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.517: bokstavsordningar, inte ordboksord"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.533",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.533"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.534",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.534"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.535",
+      "area": "binomialsatsen",
+      "fields": [
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.535",
+        "1.535"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.538",
+      "area": "binomialsatsen",
+      "fields": [
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.538",
+        "1.538"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.540",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.540"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.541",
+      "area": "binomialsatsen",
+      "fields": [
+        "t",
+        "manuellKomplettering"
+      ],
+      "notes": [
+        "resonemanget bedöms manuellt; självrättningen gäller talet",
+        "1.541: tydlig skillnad mellan talet och förklaringen"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.543",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.543"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.545",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.545"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.547",
+      "area": "binomialsatsen",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.547"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.549",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "språk: antal kronor/ettor"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.550",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "språk: antal kronor/ettor"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.552",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "språk: antal kronor/ettor"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.557",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "språk: antal kronor/ettor"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.558",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.558"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.559",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "språk: antal kronor/ettor"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.633",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.633"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.696",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.696c: antal i stället för sannolikhetsformat"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.708",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.708c: antal i stället för sannolikhetsformat",
+        "1.708d: antal i stället för sannolikhetsformat"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.711",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "notes": [
+        "1.711"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.725",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.725b: antal i stället för sannolikhetsformat"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.728",
+      "area": "kombinatorik_sannolikhet",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.728c: antal i stället för sannolikhetsformat"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.578",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.578: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.579",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.579: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.580",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.580: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.583",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.583: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.584",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.584: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.616",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.616"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.626",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.626"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.627",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.627"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.641",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.641"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.735",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.735: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.736",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.736: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.745",
+      "area": "mult_add_principen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.745: tydligt om tillåtna siffror och upprepning"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.589",
+      "area": "permutationer",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.589: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.590",
+      "area": "permutationer",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.590: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.591",
+      "area": "permutationer",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "1.591: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.663",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.663: bokstavskoder i huvudfråga och delkort"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.668",
+      "area": "permutationer",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "1.668b"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.669",
+      "area": "permutationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.669a"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.739",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.739: bokstavskoder i huvudfråga och delkort",
+        "1.739b",
+        "1.739c",
+        "1.739d"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.740",
+      "area": "permutationer",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.740: bokstavskoder i huvudfråga och delkort",
+        "1.740a",
+        "1.740b",
+        "1.740c"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.742",
+      "area": "permutationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.742"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.596",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.596"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.597",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.597"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.598",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.598"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.599",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.599"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.600",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.600"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.601",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "1.601"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.618",
+      "area": "kombinationer",
+      "fields": [
+        "s"
+      ],
+      "notes": [
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.642",
+      "area": "kombinationer",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.642"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.643",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.643b"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.644",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.644b",
+        "1.644c"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.647",
+      "area": "kombinationer",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "1.647c"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.652",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.652b",
+        "1.652c",
+        "1.652d"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.654",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.654a",
+        "1.654b",
+        "1.654d"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.657",
+      "area": "kombinationer",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.657c",
+        "kortat exakt upprepad metodtext; beräkningen bevarad"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.659",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.659a",
+        "1.659c"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.660",
+      "area": "kombinationer",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "1.660a"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.661",
+      "area": "kombinationer",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "1.661b",
+        "1.661c",
+        "1.661d"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.617",
+      "area": "ladprincipen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "1.617"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.780",
+      "area": "ladprincipen",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "1.780"
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "bank": "fy1",
+      "id": "6.458c",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "fy1",
+      "id": "6.455b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "fy1",
+      "id": "5.37a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511c",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "fy1",
+      "id": "5.495c",
+      "before": 3,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.199",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.627",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.535",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.143",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.538",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.633",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.739b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.396",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.197",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.780",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.125a",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.617",
+      "before": 5,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.647c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.198",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.62",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.616",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.642",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.641",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.128",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.64",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.660a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.65",
+      "before": 4,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.121",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "bank": "matf1",
+      "id": "1.626",
+      "before": 3,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.668b",
+      "before": 1,
+      "after": 2
+    }
+  ],
+  "answers": [
+    {
+      "bank": "fy1",
+      "id": "6.458c",
+      "before": 0.07976923076923077,
+      "after": 0.07989973366755444
+    },
+    {
+      "bank": "fy1",
+      "id": "5.591b",
+      "before": 2663.6225266362253,
+      "after": 2664
+    },
+    {
+      "bank": "fy1",
+      "id": "6.422b",
+      "before": 30947.046843177188,
+      "after": 30549.898167006108
+    },
+    {
+      "bank": "fy1",
+      "id": "5.493a",
+      "before": 4339.5,
+      "after": -4339.5
+    },
+    {
+      "bank": "fy1",
+      "id": "6.455b",
+      "before": 3615.5319038020925,
+      "after": 3564.1547861507124
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511b",
+      "before": 136638.3744855967,
+      "after": 136666.66666666666
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511c",
+      "before": 700.7096127466497,
+      "after": 700.8547008547008
+    },
+    {
+      "bank": "fy1",
+      "id": "5.495c",
+      "before": 596.6679842375655,
+      "after": 600
+    },
+    {
+      "bank": "fy1",
+      "id": "5.485b",
+      "before": 11.965829938900207,
+      "after": 11.922708757637475
+    },
+    {
+      "bank": "fy1",
+      "id": "5.494",
+      "before": 12.403799999999999,
+      "after": -12.403799999999999
+    }
+  ],
+  "calculations": [
+    {
+      "bank": "fy1",
+      "id": "5.493a",
+      "calculated": -4339.5,
+      "before": 4339.5,
+      "after": -4339.5,
+      "tolerance": 65.1
+    },
+    {
+      "bank": "fy1",
+      "id": "5.493b",
+      "calculated": 36.932370625238775,
+      "before": 36.932370625238775,
+      "after": 36.932370625238775,
+      "tolerance": 0.554
+    },
+    {
+      "bank": "fy1",
+      "id": "5.494",
+      "calculated": -12.403799999999999,
+      "before": 12.403799999999999,
+      "after": -12.403799999999999,
+      "tolerance": 0.51
+    },
+    {
+      "bank": "fy1",
+      "id": "5.495c",
+      "calculated": 600,
+      "before": 596.6679842375655,
+      "after": 600,
+      "tolerance": 8.95
+    },
+    {
+      "bank": "fy1",
+      "id": "5.520b",
+      "calculated": 12500,
+      "before": 12500,
+      "after": 12500,
+      "tolerance": 510.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.520c",
+      "calculated": 2326.358,
+      "before": 2326.358,
+      "after": 2326.358,
+      "tolerance": 51.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.520d",
+      "calculated": 280.8,
+      "before": 280.8,
+      "after": 280.8,
+      "tolerance": 5.46
+    },
+    {
+      "bank": "fy1",
+      "id": "5.502",
+      "calculated": 0.17922606924643583,
+      "before": 0.17922606924643583,
+      "after": 0.17922606924643583,
+      "tolerance": 0.0051
+    },
+    {
+      "bank": "fy1",
+      "id": "5.503b",
+      "calculated": 296296.2962962963,
+      "before": 296296.2962962963,
+      "after": 296296.2962962963,
+      "tolerance": 5100.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.505b",
+      "calculated": 1220,
+      "before": 1220,
+      "after": 1220,
+      "tolerance": 18.3
+    },
+    {
+      "bank": "fy1",
+      "id": "5.505c",
+      "calculated": 76.25,
+      "before": 76.25,
+      "after": 76.25,
+      "tolerance": 1.14
+    },
+    {
+      "bank": "fy1",
+      "id": "5.509a",
+      "calculated": 322072.7237654321,
+      "before": 322072.7237654321,
+      "after": 322072.7237654321,
+      "tolerance": 5100.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.509c",
+      "calculated": 28.8,
+      "before": 28.8,
+      "after": 28.8,
+      "tolerance": 0.432
+    },
+    {
+      "bank": "fy1",
+      "id": "5.509d",
+      "calculated": 0.44000000000000006,
+      "before": 0.44,
+      "after": 0.44,
+      "tolerance": 0.0066
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511b",
+      "calculated": 136666.66666666666,
+      "before": 136638.3744855967,
+      "after": 136666.66666666666,
+      "tolerance": 2050.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.511c",
+      "calculated": 700.8547008547008,
+      "before": 700.7096127466497,
+      "after": 700.8547008547008,
+      "tolerance": 10.5
+    },
+    {
+      "bank": "fy1",
+      "id": "5.513a",
+      "calculated": 37500.0,
+      "before": 37500,
+      "after": 37500,
+      "tolerance": 562.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.513b",
+      "calculated": 62500.0,
+      "before": 62500,
+      "after": 62500,
+      "tolerance": 938.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.517a",
+      "calculated": 9.868520269406773,
+      "before": 9.868520269406773,
+      "after": 9.868520269406773,
+      "tolerance": 0.148
+    },
+    {
+      "bank": "fy1",
+      "id": "5.525a",
+      "calculated": 114.89399999999999,
+      "before": 114.894,
+      "after": 114.894,
+      "tolerance": 1.73
+    },
+    {
+      "bank": "fy1",
+      "id": "5.527b",
+      "calculated": 0.051555,
+      "before": 0.051555,
+      "after": 0.051555,
+      "tolerance": 0.00223
+    },
+    {
+      "bank": "fy1",
+      "id": "5.528c",
+      "calculated": -459.57599999999996,
+      "before": -459.57599999999996,
+      "after": -459.57599999999996,
+      "tolerance": 6.89
+    },
+    {
+      "bank": "fy1",
+      "id": "6.421a",
+      "calculated": 397887.3577297384,
+      "before": 397887.3577297384,
+      "after": 397887.3577297384,
+      "tolerance": 5970.0
+    },
+    {
+      "bank": "fy1",
+      "id": "6.421b",
+      "calculated": 70735530.26306461,
+      "before": 70735530.26306461,
+      "after": 70735530.26306461,
+      "tolerance": 1060000.0
+    },
+    {
+      "bank": "fy1",
+      "id": "6.422b",
+      "calculated": 30549.898167006108,
+      "before": 30947.046843177188,
+      "after": 30549.898167006108,
+      "tolerance": 510.0
+    },
+    {
+      "bank": "fy1",
+      "id": "6.431",
+      "calculated": 0.0966049607215595,
+      "before": 0.0966049607215595,
+      "after": 0.0966049607215595,
+      "tolerance": 0.00145
+    },
+    {
+      "bank": "fy1",
+      "id": "6.435",
+      "calculated": 9476615.000000002,
+      "before": 9476615.000000002,
+      "after": 9476615.000000002,
+      "tolerance": 142000.0
+    },
+    {
+      "bank": "fy1",
+      "id": "6.440b",
+      "calculated": 884.0792807113407,
+      "before": 884.0792807113407,
+      "after": 884.0792807113407,
+      "tolerance": 13.3
+    },
+    {
+      "bank": "fy1",
+      "id": "6.442a",
+      "calculated": 101499.52,
+      "after": 101499.52
+    },
+    {
+      "bank": "fy1",
+      "id": "6.443a",
+      "calculated": 0.13278223713110499,
+      "before": 0.13278223713110499,
+      "after": 0.13278223713110499,
+      "tolerance": 0.00199
+    },
+    {
+      "bank": "fy1",
+      "id": "6.455b",
+      "calculated": 3564.1547861507124,
+      "before": 3615.5319038020925,
+      "after": 3564.1547861507124,
+      "tolerance": 54.2
+    },
+    {
+      "bank": "fy1",
+      "id": "6.458c",
+      "calculated": 0.07989973366755444,
+      "before": 0.07976923076923077,
+      "after": 0.07989973366755444,
+      "tolerance": 0.0012
+    },
+    {
+      "bank": "fy1",
+      "id": "5.548a",
+      "calculated": 1.0179999999999998,
+      "before": 1.0179999999999998,
+      "after": 1.0179999999999998,
+      "tolerance": 0.051
+    },
+    {
+      "bank": "fy1",
+      "id": "5.548b",
+      "calculated": 130.47238458785637,
+      "before": 130.47238458785637,
+      "after": 130.47238458785637,
+      "tolerance": 2.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.591a",
+      "calculated": 23652000.0,
+      "before": 23652000.0,
+      "after": 23652000.0,
+      "tolerance": 510000.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.591b",
+      "calculated": 2664,
+      "before": 2663.6225266362253,
+      "after": 2664,
+      "tolerance": 51.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.590a",
+      "calculated": 6.384,
+      "before": 6.384,
+      "after": 6.384,
+      "tolerance": 0.0958
+    },
+    {
+      "bank": "fy1",
+      "id": "5.590b",
+      "calculated": 2.94,
+      "before": 2.94,
+      "after": 2.94,
+      "tolerance": 0.051
+    },
+    {
+      "bank": "fy1",
+      "id": "5.590c",
+      "calculated": 201600.0,
+      "before": 201600.0,
+      "after": 201600.0,
+      "tolerance": 5100.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.592a",
+      "calculated": 5915.66265060241,
+      "before": 5915.6626506024095,
+      "after": 5915.6626506024095,
+      "tolerance": 88.7
+    },
+    {
+      "bank": "fy1",
+      "id": "5.592b",
+      "calculated": 6554.849999999999,
+      "before": 6554.849999999999,
+      "after": 6554.849999999999,
+      "tolerance": 98.3
+    },
+    {
+      "bank": "fy1",
+      "id": "5.592c",
+      "calculated": 5.545411764705882,
+      "before": 5.545411764705882,
+      "after": 5.545411764705882,
+      "tolerance": 0.0832
+    },
+    {
+      "bank": "fy1",
+      "id": "5.592d",
+      "calculated": 0.29938900203665986,
+      "before": 0.29938900203665986,
+      "after": 0.29938900203665986,
+      "tolerance": 0.0051
+    },
+    {
+      "bank": "fy1",
+      "id": "6.424b",
+      "calculated": 4875.0625,
+      "before": 4875.0625,
+      "after": 4875.0625,
+      "tolerance": 73.1
+    },
+    {
+      "bank": "fy1",
+      "id": "6.458a",
+      "calculated": 5626.86,
+      "before": 5626.86,
+      "after": 5626.86,
+      "tolerance": 84.4
+    },
+    {
+      "bank": "fy1",
+      "id": "6.458b",
+      "calculated": 1018.3340000000001,
+      "before": 1018.3340000000001,
+      "after": 1018.3340000000001,
+      "tolerance": 51.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.488a",
+      "calculated": 11567.960000000001,
+      "before": 11567.960000000001,
+      "after": 11567.960000000001,
+      "tolerance": 510.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.488b",
+      "calculated": 32209.600000000002,
+      "before": 32209.600000000002,
+      "after": 32209.600000000002,
+      "tolerance": 510.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.488c",
+      "calculated": 2356.8,
+      "before": 2356.8,
+      "after": 2356.8,
+      "tolerance": 51.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.488d",
+      "calculated": 3322.433333333333,
+      "before": 3322.433333333333,
+      "after": 3322.433333333333,
+      "tolerance": 51.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.485b",
+      "calculated": 11.922708757637475,
+      "before": 11.965829938900207,
+      "after": 11.922708757637475,
+      "tolerance": 0.179
+    },
+    {
+      "bank": "fy1",
+      "id": "5.481a",
+      "calculated": 13.318708646111304,
+      "before": 13.318708646111304,
+      "after": 13.318708646111304,
+      "tolerance": 0.51
+    },
+    {
+      "bank": "fy1",
+      "id": "5.483a",
+      "calculated": 0.6691882455629911,
+      "before": 0.6691882455629911,
+      "after": 0.6691882455629911,
+      "tolerance": 0.01
+    },
+    {
+      "bank": "fy1",
+      "id": "5.535b",
+      "calculated": 5.999999999999999,
+      "before": 6.0,
+      "after": 6.0,
+      "tolerance": 0.09
+    },
+    {
+      "bank": "fy1",
+      "id": "5.55a",
+      "calculated": 0.025,
+      "before": 0.025,
+      "after": 0.025,
+      "tolerance": 0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.37a",
+      "calculated": 0,
+      "before": 0,
+      "after": 0,
+      "tolerance": 0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.30a",
+      "calculated": 23.57,
+      "before": 23.57,
+      "after": 23.57,
+      "tolerance": 0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.151",
+      "calculated": 206.22000000000003,
+      "before": 206.22,
+      "after": 206.22,
+      "tolerance": 0
+    },
+    {
+      "bank": "fy1",
+      "id": "6.55a",
+      "calculated": 44.19,
+      "before": 44.19,
+      "after": 44.19,
+      "tolerance": 0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.598a",
+      "calculated": 5600.0,
+      "before": 5600.0,
+      "after": 5600.0,
+      "tolerance": 84.0
+    },
+    {
+      "bank": "fy1",
+      "id": "5.598b",
+      "calculated": 640.0000000000001,
+      "before": 640.0000000000001,
+      "after": 640.0000000000001,
+      "tolerance": 9.6
+    },
+    {
+      "bank": "fy1",
+      "id": "5.598c",
+      "calculated": 90.9090909090909,
+      "before": 90.9090909090909,
+      "after": 90.9090909090909,
+      "tolerance": 1.36
+    },
+    {
+      "bank": "matf1",
+      "id": "1.37",
+      "calculated": 27984100,
+      "before": 27984100,
+      "after": 27984100,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.39",
+      "calculated": 608400,
+      "before": 608400,
+      "after": 608400,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.131",
+      "calculated": 180000,
+      "before": 180000,
+      "after": 180000,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.222",
+      "calculated": 1512000,
+      "before": 1512000,
+      "after": 1512000,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.223",
+      "calculated": 5486400,
+      "before": 5486400,
+      "after": 5486400,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.125a",
+      "calculated": 455,
+      "before": 455,
+      "after": 455,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.125b",
+      "calculated": 165,
+      "before": 165,
+      "after": 165,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.466",
+      "calculated": 455,
+      "before": 455,
+      "after": 455,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.301",
+      "calculated": 45,
+      "before": 45,
+      "after": 45,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.302",
+      "calculated": 84,
+      "before": 84,
+      "after": 84,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.214",
+      "calculated": 56,
+      "before": 56,
+      "after": 56,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.435",
+      "calculated": 0.5757575757575758,
+      "before": "19/33",
+      "after": "19/33",
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.448",
+      "calculated": 0.10047846889952153,
+      "before": "21/209",
+      "after": "21/209",
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.128",
+      "calculated": 0.35714285714285715,
+      "before": "5/14",
+      "after": "5/14",
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.200",
+      "calculated": 0.3,
+      "before": "3/10",
+      "after": "3/10",
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.657c",
+      "calculated": 70,
+      "before": 70,
+      "after": 70,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.711",
+      "calculated": 0.009,
+      "before": "9/1000",
+      "after": "9/1000",
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.504",
+      "calculated": 2,
+      "before": 2,
+      "after": 2,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.505",
+      "calculated": 2,
+      "before": 2,
+      "after": 2,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.507",
+      "calculated": 4,
+      "before": 4,
+      "after": 4,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.508",
+      "calculated": 3,
+      "before": 3,
+      "after": 3,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.780",
+      "calculated": 7,
+      "before": 7,
+      "after": 7,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.596",
+      "calculated": 6724520,
+      "before": 6724520,
+      "after": 6724520,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.597",
+      "calculated": 60,
+      "before": 60,
+      "after": 60,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.598",
+      "calculated": 10,
+      "before": 10,
+      "after": 10,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.599",
+      "calculated": 70,
+      "before": 70,
+      "after": 70,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.600",
+      "calculated": 61425,
+      "before": 61425,
+      "after": 61425,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.601",
+      "calculated": 2025,
+      "before": 2025,
+      "after": 2025,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.643b",
+      "calculated": 35,
+      "before": 35,
+      "after": 35,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.644b",
+      "calculated": 70,
+      "before": 70,
+      "after": 70,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.644c",
+      "calculated": 145,
+      "before": 145,
+      "after": 145,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.652b",
+      "calculated": 10,
+      "before": 10,
+      "after": 10,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.652c",
+      "calculated": 6,
+      "before": 6,
+      "after": 6,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.652d",
+      "calculated": 14,
+      "before": 14,
+      "after": 14,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.654a",
+      "calculated": 406,
+      "before": 406,
+      "after": 406,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.654b",
+      "calculated": 3654,
+      "before": 3654,
+      "after": 3654,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.654d",
+      "calculated": 36,
+      "before": 36,
+      "after": 36,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.659a",
+      "calculated": 286,
+      "before": 286,
+      "after": 286,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.659c",
+      "calculated": 1430,
+      "before": 1430,
+      "after": 1430,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.661b",
+      "calculated": 26,
+      "before": 26,
+      "after": 26,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.661c",
+      "calculated": 8192,
+      "before": 8192,
+      "after": 8192,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.661d",
+      "calculated": 11440,
+      "before": 11440,
+      "after": 11440,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.669a",
+      "calculated": 725760,
+      "before": 725760,
+      "after": 725760,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.739c",
+      "calculated": 360,
+      "before": 360,
+      "after": 360,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.739d",
+      "calculated": 720,
+      "before": 720,
+      "after": 720,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.740a",
+      "calculated": 12,
+      "before": 12,
+      "after": 12,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.740b",
+      "calculated": 60,
+      "before": 60,
+      "after": 60,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.740c",
+      "calculated": 45360.0,
+      "before": 45360,
+      "after": 45360,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.742",
+      "calculated": 1260.0,
+      "before": 1260,
+      "after": 1260,
+      "tolerance": 0
+    },
+    {
+      "bank": "matf1",
+      "id": "1.558",
+      "calculated": 0.4822530864197532,
+      "before": "625/1296",
+      "after": "625/1296",
+      "tolerance": 0
+    }
+  ],
+  "bankValidation": [
+    {
+      "file": "uppgifter.js",
+      "before": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "added": []
+    },
+    {
+      "file": "uppgiftermatf1.js",
+      "before": {
+        "ERROR": 0,
+        "WARNING": 10,
+        "INFO": 72
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 10,
+        "INFO": 71
+      },
+      "added": []
+    }
+  ],
+  "browser": {
+    "tasks": 156,
+    "cards": 268,
+    "formulas": 837,
+    "bad": [],
+    "errors": [],
+    "checks": [
+      {
+        "id": "5.493a",
+        "input": "-4339,5 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.493a",
+        "input": "4339,5 J",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.494",
+        "input": "-12,4 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.495c",
+        "input": "600 N",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.591b",
+        "input": "2664",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.591b",
+        "input": "2663",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.591b",
+        "input": "2663.62",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.422b",
+        "input": "30549,9 kg",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.435",
+        "input": "19/33",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.435",
+        "input": "57.6%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.448",
+        "input": "21/209",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.657c",
+        "input": "70",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.657c",
+        "input": "140",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.711",
+        "input": "0.9%",
+        "want": true,
+        "actual": true
+      }
+    ],
+    "manual": [
+      {
+        "id": "1.435",
+        "ok": true
+      },
+      {
+        "id": "1.541",
+        "ok": true
+      }
+    ]
+  }
+}
