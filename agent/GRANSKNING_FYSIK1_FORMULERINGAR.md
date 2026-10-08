@@ -206,3 +206,17 @@ Kunskapsgymmets rättare använder den befintliga kalkylatorns parser om Nerdame
 | 5.447 | kollisioner | spelDelar | Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt. |
 | 8.485 | coulomb | spelDelar | Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt. |
 | 8.486 | coulomb | spelDelar | Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt. |
+
+## Fortsatt granskning, omgång 2
+
+Ytterligare sju uppgifter har förtydligats efter första pushen. Svar, toleranser och nivåer bevaras. Nya givna mellanresultat har räknats om och kontrollerats mot svarstoleransen.
+
+- **4.593**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **4.574**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **4.632**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **5.110**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **5.209**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **4.630**: Delkort visar bara relevanta givna data; referensriktning, villkor, avrundning och befintliga figurer bevaras. Facit anpassat när ett mellanresultat ges direkt.
+- **3.60**: Flyttat nollnivå och rörelsevillkor före tabell och frågor; undvikit upprepning och förtydligat lägesaxeln.
+
+Omgång 2 verifierad: 26 mastertester och 18 delkortstester godkända. Chromium renderar 2013 formler i samtliga 162 ändrade uppgifter utan fel. Alla 2498 nivå 1–2-kort och de 391 korten i de ändrade uppgifterna godkänner facitsvaren med och utan enhet. Bankerna är byte-identiska; inga ändrade rättSvar, toleranser eller nivåer. Omgången pushas enligt användarens godkännande.
