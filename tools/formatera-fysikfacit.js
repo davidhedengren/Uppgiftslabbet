@@ -14,6 +14,10 @@ function facitMatte(raw){
   const u=s.match(/\s+(°C|°|%|(?:[kMGTmunµμc]?)(?:kg|g|m|s|N|J|W|Pa|bar|K|V|A|C|Ω|Bq|Gy|Sv|eV|u|liter|l|h|min)(?:[²³]|\^(?:2|3))?(?:[·/](?:kg|m|s|K|mol|år|h|min)(?:[²³]|\^(?:2|3))?)*)([.]?)$/);
   // Ett g efter en variabel är tyngdaccelerationen, inte en gram-enhet.
   if(u&&/[0-9⁰¹²³⁴⁵⁶⁷⁸⁹)]$/.test(s.slice(0,u.index).trim())){unit=u[1];s=s.slice(0,u.index).trim();}
+  // Enheter inne i en likhetskedja får inte tolkas som variabler.
+  // T.ex. g/cm³ blev tidigare g/c gånger m³. Lämna sådana kedjor som text.
+  if(/(?:^|[0-9)\s])(?:g\/cm[³²]|kg\/m[³²]|cm[³²]?|dm[³²]?|mm[³²]?|km(?:\/h)?|kg|ml|dl|ms|Hz|Pa|Gy|mA|mV|kV|mg|hg)(?=$|[^A-Za-zåäö])/u.test(s))return null;
+  if(/(?:^|\s)(?:ur|är|av|på|en)(?=\s|$)/u.test(s))return null;
   const tokens=[];
   for(let i=0;i<s.length;){
     if(/\s/.test(s[i])){i++;continue;}

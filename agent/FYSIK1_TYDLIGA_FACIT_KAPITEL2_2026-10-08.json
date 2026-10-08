@@ -1,0 +1,1765 @@
+{
+  "scope": "Fysik 1: presentation hela banken, manuell text- och facitgranskning från kapitel 2",
+  "mainTasks": 3715,
+  "chapter2Tasks": 365,
+  "editorialChanges": [
+    {
+      "id": "2.1",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.2",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.3",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.4",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.233",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.234",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.5",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.6",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.7",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.10",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.11",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.13",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.14",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.239",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.241",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.242",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.15",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.16",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.246",
+      "kap": 2,
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.248",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.17",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.18",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.19",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.208",
+      "kap": 2,
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.21",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.22",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.23",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.24",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.25",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.26",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.27",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.28",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.249",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.250",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.251",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.30",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.31",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.35",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.36",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.38",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.39",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.40",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.41",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.42",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.43",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.256",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.45",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.260",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.262",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.46",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.264",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.265",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.47",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.266",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.268",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.48",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.272",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.49",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.50",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.51",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.52",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.54",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.55",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.56",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.57",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.59",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.60",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.217",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.61",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.62",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.63",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.64",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.65",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.66",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.67",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.223",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.72",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.225",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.226",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.74",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.75",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.227",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.76",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.77",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.78",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.79",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.80",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.81",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.82",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.83",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.84",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.85",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.86",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.87",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.89",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.90",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.91",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.94",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.100",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.101",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.106",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.107",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.108",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.109",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.111",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.112",
+      "kap": 2,
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "2.113",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.115",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.117",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.118",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.126",
+      "kap": 2,
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "2.142",
+      "kap": 2,
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.143",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.276",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.149",
+      "kap": 2,
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "2.150",
+      "kap": 2,
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.1",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.2",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.3",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.229",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.8",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.9",
+      "kap": 2,
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.19",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.20",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.21",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.49",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.50",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.51",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.53",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.54",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.55",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.234",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.96",
+      "kap": 2,
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.97",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.99",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.101",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.103",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.104",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.125",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.236",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.127",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.128",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.129",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.131",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.237",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.132",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.133",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.134",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.172",
+      "kap": 3,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "5.142",
+      "kap": 5,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "arbetsinsats"
+      ]
+    },
+    {
+      "id": "5.160",
+      "kap": 5,
+      "fields": [
+        "familj",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "6.64",
+      "kap": 6,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "3.238",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.179",
+      "kap": 2,
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "5.209",
+      "kap": 5,
+      "fields": [
+        "omr",
+        "t",
+        "s",
+        "familj",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.256",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.257",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.258",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.260",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.261",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.262",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.291",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.292",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.293",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.294",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.295",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.296",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.297",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.299",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.300",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.301",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.302",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.303",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.304",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.305",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.306",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.307",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.308",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.309",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.310",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.311",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.312",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.313",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.314",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.315",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.316",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.317",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.318",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.319",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.320",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.154",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.157",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.158",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.159",
+      "kap": 2,
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.161",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.162",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.163",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.167",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.169",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.170",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.173",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "2.174",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.175",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.176",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.177",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.180",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.181",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.182",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.184",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.187",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.188",
+      "kap": 2,
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "2.189",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.190",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.191",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.192",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.194",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.195",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.196",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.197",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.198",
+      "kap": 2,
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "2.279",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.280",
+      "kap": 2,
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.284",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.285",
+      "kap": 2,
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "2.286",
+      "kap": 2,
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "2.289",
+      "kap": 2,
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    }
+  ],
+  "allPresentationChanges": 3715,
+  "answersIndependentlyCalculated": 185,
+  "calculatedTasks": 133,
+  "activeCards": 4977,
+  "gradingChecks": 13966,
+  "renderedFormulasPerApp": 25635,
+  "masterTests": 140,
+  "consumerTests": 64
+}

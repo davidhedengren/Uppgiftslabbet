@@ -49,3 +49,9 @@ test('Dokumentets facit bevarar lösningsstegen och deras separata slutsvar',()=
   const solution='<div class="facit-v2 facit-stegvis"><ol class="facit-steglista"><li><p>Välj samband.</p></li><li><div class="facit-matte">\\[Q=mc\\Delta T\\]</div></li></ol><p class="facit-svar">Svar: 25,1 kJ.</p></div>';
   assert.equal(c.LOS(solution),solution);
 });
+
+// Preserve intermediate units instead of generating physically meaningless fractions.
+test('Enheter inne i en likhetskedja blir aldrig lösa variabler',()=>{
+  for(const text of ['ρ=84/8=10,5 g/cm³=10500 kg/m³','1 kg=1000 g','480 ms=0,480 s','22 cm=0,22 m','ur m=ρV'])assert.equal(facitMatte(text),null,text);
+  assert.equal(facitMatte('ρ=84/8=10,5 g/cm³'),null);
+});

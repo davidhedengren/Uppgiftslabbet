@@ -111,3 +111,7 @@ Oberoende AI-granskningar ska endast göras när en konkret risknivå motiverar 
 - En lätt modell får inte ensam godkänna en osäker matematisk ändring, en säkerhetskritisk operation eller en automatisk bankändring.
 - Heuristiska fynd får aldrig automatiskt ändra uppgifter eller SVG-figurer, oavsett modell.
 - Om osäkerheten inte kan lösas inom den tillåtna modellbudgeten ska agenten stoppa och begära ett redaktionellt beslut i stället för att starta bredare eller dyrare AI-arbete utan godkännande.
+
+## 8. Fysik: språk och lösningar
+
+Användarens instruktion 2026-10-08: fysikfacit ska vara sammanhängande förklaringar och tydliga beräkningar utan numrerade lösningssteg. Visa de mellanled som behövs för att förstå svaret, särskilt enhetsomvandlingar, reaktionssträcka, bromssträcka och deras summa. Deluppgifter a), b) osv. ska stå på egna rader. Nivå 1 ska innehålla de allra enklaste uppgifterna med korta, konkreta formuleringar. Granska själva fysiken och varje berört delkort manuellt innan innehåll ändras; enbart presentation eller automatiska kontroller innebär inte att en uppgift är färdiggranskad.
