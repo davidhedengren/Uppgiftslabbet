@@ -1,0 +1,2099 @@
+{
+  "scope": "Kapitel 4: tyngdkraft, normalkraft, Newton 1 och 3, fjädrar och gravitation",
+  "manually_read_main_tasks": 277,
+  "cards_including_undivided": 409,
+  "numerical_main_tasks": 180,
+  "independently_checked_answers": 317,
+  "changed_records": 227,
+  "changes": [
+    {
+      "id": "4.8",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.9",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.346",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.16",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.17",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.18",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.20",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.21",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.348",
+      "area": "gravitation",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "4.22",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.351",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.23",
+      "area": "tyngdkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.354",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.24",
+      "area": "tyngdkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.357",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.32",
+      "area": "newton1",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.36",
+      "area": "normalkraft",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.37",
+      "area": "tyngdkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.362",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.363",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.364",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.39",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.365",
+      "area": "gravitation",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.367",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.41",
+      "area": "fjadrar",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.327",
+      "area": "fjadrar",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.42",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.328",
+      "area": "fjadrar",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.43",
+      "area": "fjadrar",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.52",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.63",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.64",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.65",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.66",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.69",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.73",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.74",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.368",
+      "area": "gravitation",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.369",
+      "area": "gravitation",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.84",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.86",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.87",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.90",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.91",
+      "area": "newton1",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.92",
+      "area": "newton3",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.94",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.95",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.96",
+      "area": "newton1",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.97",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.98",
+      "area": "normalkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t"
+      ]
+    },
+    {
+      "id": "4.99",
+      "area": "newton3",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.102",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.107",
+      "area": "newton1",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.111",
+      "area": "newton1",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "4.115",
+      "area": "normalkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.133",
+      "area": "normalkraft",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.134",
+      "area": "newton3",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.135",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.137",
+      "area": "newton1",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.139",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.141",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.405",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.142",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.150",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.171",
+      "area": "newton1",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.172",
+      "area": "newton1",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "4.175",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.181",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.182",
+      "area": "fjadrar",
+      "fields": [
+        "poang",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.183",
+      "area": "fjadrar",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.185",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.186",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.370",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.187",
+      "area": "tyngdkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.372",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.188",
+      "area": "gravitation",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.374",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.375",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.189",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.190",
+      "area": "tyngdkraft",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.378",
+      "area": "gravitation",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.379",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.199",
+      "area": "normalkraft",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.207",
+      "area": "normalkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.208",
+      "area": "tyngdkraft",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.212",
+      "area": "fjadrar",
+      "fields": [
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.213",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.214",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.215",
+      "area": "tyngdkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.381",
+      "area": "gravitation",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.216",
+      "area": "gravitation",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.217",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.385",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.735",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.736",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.737",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.738",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.739",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.740",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.741",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.742",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.743",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.744",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.745",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.746",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.747",
+      "area": "gravitation",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.748",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.749",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.750",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.751",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.752",
+      "area": "gravitation",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.753",
+      "area": "gravitation",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.229",
+      "area": "normalkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.230",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.231",
+      "area": "newton3",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.232",
+      "area": "newton1",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "4.233",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.236",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.238",
+      "area": "newton3",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.241",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.259",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.260",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.421",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.267",
+      "area": "fjadrar",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.268",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.269",
+      "area": "fjadrar",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "4.270",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.271",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.272",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.340",
+      "area": "fjadrar",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.273",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.341",
+      "area": "fjadrar",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.274",
+      "area": "fjadrar",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.275",
+      "area": "fjadrar",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.292",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.293",
+      "area": "newton3",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.303",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.313",
+      "area": "newton1",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.314",
+      "area": "newton1",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.315",
+      "area": "newton1",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.316",
+      "area": "newton1",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.317",
+      "area": "newton1",
+      "fields": [
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.500",
+      "area": "newton1",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.671",
+      "area": "newton1",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.672",
+      "area": "newton1",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.673",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.674",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.286",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.287",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.288",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.289",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.290",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.291",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.292",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.293",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.301",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.302",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.303",
+      "area": "newton1",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.304",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.305",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.306",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.307",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.308",
+      "area": "newton1",
+      "fields": [
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.314",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.315",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.316",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.319",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.321",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.322",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.323",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.324",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.325",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.327",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.328",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.329",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.331",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.332",
+      "area": "newton1",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.334",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.335",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.336",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.337",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.338",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.339",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.341",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.342",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.343",
+      "area": "newton1",
+      "fields": [
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.344",
+      "area": "newton1",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.366",
+      "area": "newton1",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.463",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.464",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.465",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.466",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.467",
+      "area": "tyngdkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.468",
+      "area": "tyngdkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.470",
+      "area": "tyngdkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.471",
+      "area": "tyngdkraft",
+      "fields": [
+        "rättSvar",
+        "t"
+      ]
+    },
+    {
+      "id": "4.472",
+      "area": "tyngdkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.474",
+      "area": "tyngdkraft",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "4.498",
+      "area": "tyngdkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.503",
+      "area": "tyngdkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.504",
+      "area": "tyngdkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.475",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "t"
+      ]
+    },
+    {
+      "id": "4.476",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "t"
+      ]
+    },
+    {
+      "id": "4.477",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "t"
+      ]
+    },
+    {
+      "id": "4.478",
+      "area": "normalkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.480",
+      "area": "normalkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.481",
+      "area": "normalkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.482",
+      "area": "normalkraft",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.484",
+      "area": "normalkraft",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.497",
+      "area": "normalkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.502",
+      "area": "normalkraft",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.636",
+      "area": "normalkraft",
+      "fields": [
+        "s",
+        "spelDelar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.637",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.638",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.639",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.640",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.641",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.642",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.644",
+      "area": "normalkraft",
+      "fields": [
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.645",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.646",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.647",
+      "area": "normalkraft",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.493",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.494",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.495",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.496",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.501",
+      "area": "newton3",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    }
+  ]
+}

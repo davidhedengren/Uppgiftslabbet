@@ -396,7 +396,9 @@ test('real-bank provenance keeps same numeric IDs in uppgifter.js and uppgifterm
   const verified = verifyFindingTraceability({ ...extraction, figures: selected }, analyzed);
   assert.equal(verified.figures, 3);
   assert.ok(analyzed[0].findings.some((item) => item.code === 'ANGLE_ARC_OFF_CENTER'));
-  assert.ok(analyzed[1].findings.some((item) => item.code === 'TEXT_TEXT_COLLISION'));
+  // Kraftetiketterna i Fysik 1 4.133 har flyttats efter visuell granskning.
+  // Proveniensen ska fortfarande kontrolleras även när figuren har rättats.
+  assert.ok(!analyzed[1].findings.some((item) => item.code === 'TEXT_TEXT_COLLISION'));
   assert.equal(analyzed[2].findings.length, 0);
 });
 
