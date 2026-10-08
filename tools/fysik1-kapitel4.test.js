@@ -65,3 +65,25 @@ test('Kapitel 4 newton1: samtliga numeriska svar kontrolleras från oberoende kr
  for(const[id,expect]of newton1){const t=q(id),a=Array.isArray(expect)?expect:[expect],b=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(a.length,b.length,id);
  a.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-b[i])<=(tol||0)+Number.EPSILON*16*Math.max(Math.abs(v),Math.abs(b[i])),`${id} del ${i}: ${v} jämfört med ${b[i]}`);});}
 });
+// Friction givens transcribed independently from the questions during the manual review.
+const a534=(7000-.22*3000*g)/3000,a535=(39600-790)/2910,b535=790/2910,v535=a535*3;
+const a541=(145-.22*45*g)/45,v541=a541*5,k543=.350*(.75+.28*g)/.15;
+const mu547=88*cos(45)/(14*g+88*sin(45)),mu551=300*cos(20)/(1000+300*sin(20));
+const friction=[
+ ['4.13',160/(50*g)],['4.387',.18*80],['4.28',20],['4.29',[42,42/(9.5*g)]],['4.30',[25*g,.1*25*g,.6*25*g,.6/.2]],['4.388',.21*10*g],['4.44',[1.5*g-3.5,3.5/(1.5*g)]],['4.389',28/.20],['4.57',[1400*g/1000,.8*1400*g/1000,.8*g,.1*g]],['4.390',.3*140],['4.71',[.25*.1*g,.25*(.2+.1)*g]],['4.391',[.3*16*g,-.3*g]],['4.109',[90,60,90/(20*g),60/(20*g)]],['4.116',.32*10*g/(cos(30)+.32*sin(30))],['4.117',[52/(.35*g),52*.2/.35]],['4.120',2*9.2/(g*2.3**2)],['4.122',[8*g,.3*8*g,.3*8*g]],['4.126',.300/1.2],['4.138',2*g/.25],['4.449',(200*cos(35)-40*2.4)/(40*g-200*sin(35))],['4.396',(110*cos(20)-.24*(25*g-110*sin(20)))/25],['4.177',[.32/(.12*g),.32*(.12+.3)/.12]],['4.178',9/(2.8+.35*g)],['4.211',[90*(30+10)/30,30*150/90-30]],['4.398',[(130*cos(30)-.28*(35*g-130*sin(30)))/35,(130*cos(30)-.28*(35*g+130*sin(30)))/35]],['4.499',6**2/(2*g*(sin(20)+.25*cos(20)))],
+ ['4.516',[Math.min(70,.15*55*g),.15*55*g]],['4.517',[210/(43*g),(240-210)/43]],['4.518',3.21/(.0168*g)],['4.519',[300/(120*g),300*2,300]],['4.520',.60*91*g],['4.521',450/(65*g)],['4.522',7.8*(3.4+2.5)/3.4],['4.523',.350*2700*.250**3*g],['4.524',52/(8960*.15*.124*.086*g)],['4.525',(.42-.05)*g],['4.526',[9.2/(1.97*g),.25*8.8*g,75/(.67*g)]],['4.527',[.35*120*g,(540-.35*120*g)/120,540/120,540-.35*120*g]],['4.528',85*(.80+.070*g)],['4.529',[.09*g,(.09*97*g+.25*(52/3.6)**2)/97]],['4.530',[51*.75,.75/g]],['4.531',22**2/(2*.085*g)],['4.532',Math.sqrt(2*.13*g*36.21)],['4.533',20**2/(2*g*112)],['4.534',[Math.sqrt(2*25/a534),Math.sqrt(2*a534*25)]],['4.535',[v535,v535/b535,a535*3**2/2+v535**2/(2*b535)]],['4.536',[4**2/(2*15),4**2/(2*15*g)]],['4.537',[(120/3.6)**2/(2*.68*g),(240/3.6)**2/(2*.68*g),(120/3.6)**2/(2*.34*g)]],['4.538',Math.sqrt(2*.8*g*72)*3.6],['4.539',2*1000/(12**2*g)],['4.540',Math.sqrt(20**2-2*.7*g*15)],['4.541',a541*5**2/2+v541**2/(2*.22*g)],['4.542',8**2/(2*g*(5+2))],['4.543',[k543,.28*.350*g/k543]],['4.544',.013/.045],['4.545',[25*g,60*cos(25)/25,25*g+60*sin(25),25*g-60*sin(25)]],['4.546',[(400*cos(38)-125)/310,125/(310*g-400*sin(38))]],['4.547',[88*cos(45),14*g+88*sin(45),14*(1.5/2.5+mu547*g)/(cos(45)-mu547*sin(45))]],['4.548',.38*32*g/(cos(37)-.38*sin(37))],['4.549',[.110*(60*g-100*sin(30)),(100*cos(30)-.110*(60*g-100*sin(30)))/60]],['4.550',(80*cos(25)-.125*(30*g+80*sin(25)))/30],['4.551',[mu551,(300*cos(20)-mu551*(1000-300*sin(20)))/(1000/g)]],['4.552',[(82*cos(23)+65*cos(37))/25,(82*cos(23)+65*cos(37)-.15*(25*g+82*sin(23)-65*sin(37)))/25]],['4.553',40*g/(2*.8)],['4.554',3.5*g/(2*.4)],['4.555',[38*cos(50),(38*sin(50)-1.2*g-.15*38*cos(50))/1.2]],['4.556',[5.8*g/(sin(55)+.3*cos(55)),5.8*g/(sin(55)-.3*cos(55))]],['4.563',(2*(70/55)*11)/(2*(.3*g-70/55))],['4.576',[35/(6*g),(35-6*.60)/(6*g)]],['4.577',[.18*(250+200),.15*(250+200)]]
+];
+test('Kapitel 4 friktion: samtliga numeriska svar kontrolleras från givna värden utan mellanavrundning',()=>{
+ const tasks=c.window.BANK.filter(x=>x.kap===4&&x.omr==='friktion'&&x.rättSvar!=null);assert.equal(new Set(friction.map(x=>x[0])).size,tasks.length);
+ for(const[id,expected]of friction){const t=q(id),want=Array.isArray(expected)?expected:[expected],actual=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(actual.length,want.length,id);
+ want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-actual[i])<=(tol||0)+Number.EPSILON*16*Math.max(Math.abs(v),Math.abs(actual[i])),`${id} del ${i}: ${v} jämfört med ${actual[i]}`);});}
+});
+test('Friktionskort anger sin sträcka och rörelseriktning och visar båda stoppsträckorna',()=>{
+ assert.match(q('4.534').spelDelar[1].t,/25 m/);
+ assert.match(q('4.555').spelDelar[1].t,/glider uppåt/);
+ assert.match(q('4.516').t,/både vid vila och glidning/);
+ for(const id of ['4.535','4.541']){assert.match(q(id).s,/s_1=/);assert.match(q(id).s,/s_2=/);assert.match(q(id).s,/s_1\+s_2/);}
+ assert.doesNotMatch(q('4.44').spelDelar[1].t,/<svg|lodrätt uppåt/);
+ for(const id of ['4.57','4.122','4.449'])assert.doesNotMatch(q(id).s,/mu_\{\\mathrm\{(?:sN|sg|kN)\}\}/);
+ assert.equal(q('4.109').spelDelar[0].traningsniva,1);assert.equal(q('4.563').traningsniva,4);
+});
