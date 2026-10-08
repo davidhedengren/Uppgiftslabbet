@@ -1,0 +1,4791 @@
+{
+  "date": "2026-10-08",
+  "scope": "Komplettering efter variation och luckor; grafteori ingår inte längre i matf1",
+  "newTasks": [
+    {
+      "bank": "fy1",
+      "id": "5.601",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "impuls från rektangulär kraftpuls"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.602",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "impuls från triangulär kontaktkraft"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.603",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "jämföra impuls i två kraftgrafer"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.604",
+      "expected": 4,
+      "type": "numeriskt",
+      "goal": "impuls från två kraftnivåer"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.605",
+      "expected": 40,
+      "type": "numeriskt",
+      "goal": "medelkraft från triangulär kraftpuls"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.606",
+      "expected": 0,
+      "type": "numeriskt",
+      "goal": "impuls med motsatta kraftriktningar"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.607",
+      "expected": 3,
+      "type": "numeriskt",
+      "goal": "slutfart från kraftgraf"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.608",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "kontakttid och kraft vid mjukare stopp"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.609",
+      "expected": 2,
+      "type": "numeriskt",
+      "goal": "rörelseenergi vid dubblerad massa"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.610",
+      "expected": 4,
+      "type": "numeriskt",
+      "goal": "rörelseenergi vid dubblerad fart"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.611",
+      "expected": 45,
+      "type": "numeriskt",
+      "goal": "läsa energifördelning i staplar"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.612",
+      "expected": 15,
+      "type": "numeriskt",
+      "goal": "rörelseenergi som återstående energi"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.613",
+      "expected": 150,
+      "type": "numeriskt",
+      "goal": "energiförlust under färd nedför backe"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.614",
+      "expected": 55,
+      "type": "numeriskt",
+      "goal": "läsa energiförlust vid inbromsning"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.615",
+      "expected": 9,
+      "type": "numeriskt",
+      "goal": "rörelseenergi vid halverad fart"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.616",
+      "expected": 40,
+      "type": "numeriskt",
+      "goal": "nettoarbete i energiflödesbild"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.617",
+      "expected": 4,
+      "type": "numeriskt",
+      "goal": "fart från energi i en mätbild"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.618",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "jämföra energi i slät och sträv backe"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.619",
+      "expected": -18,
+      "type": "numeriskt",
+      "goal": "negativt arbete i kraft–sträcka-graf"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.620",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "jämföra arbete i olika grafytor"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.621",
+      "expected": 0,
+      "type": "numeriskt",
+      "goal": "arbete av kraft vinkelrät mot förflyttning"
+    },
+    {
+      "bank": "fy1",
+      "id": "5.622",
+      "expected": 60,
+      "type": "numeriskt",
+      "goal": "arbete i ett valt intervall av grafen"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.549",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "välja störst tryck från två kontaktytor"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.550",
+      "expected": 300,
+      "type": "numeriskt",
+      "goal": "kontakttryck från last och markerad yta"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.551",
+      "expected": 5000,
+      "type": "numeriskt",
+      "goal": "tryck från sammanlagd kontaktyta"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.552",
+      "expected": 5,
+      "type": "numeriskt",
+      "goal": "jämföra tryck med och utan snösko"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.553",
+      "expected": 2,
+      "type": "numeriskt",
+      "goal": "tryck under en eller två staplade klossar"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.554",
+      "expected": 300,
+      "type": "numeriskt",
+      "goal": "kraft från tryck och kontaktyta"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.555",
+      "expected": 0.2,
+      "type": "numeriskt",
+      "goal": "kontaktyta för ett givet tryck"
+    },
+    {
+      "bank": "fy1",
+      "id": "6.556",
+      "expected": 200,
+      "type": "numeriskt",
+      "goal": "trycköverföring mellan två kolvar"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.792",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "välja metod för en grupp utan roller"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.793",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "välja metod för olika roller"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.794",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "hitta dubbelräknade par"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.795",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "välja metod när kodtecken får upprepas"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.796",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "koder utan upprepade siffror"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.797",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "välja additionsprincipen för ett enda val"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.798",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "hitta felaktig addition i valtabell"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.799",
+      "expected": 6,
+      "type": "numeriskt",
+      "goal": "urval med en bestämd person"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.800",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "förklara skillnaden mellan kod och grupp"
+    },
+    {
+      "bank": "matf1",
+      "id": "1.801",
+      "expected": "1/6",
+      "type": "numeriskt",
+      "goal": "upptäcka ändrad sannolikhet utan återläggning"
+    },
+    {
+      "bank": "fy1",
+      "id": "4.754",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "identifiera vilket föremål en kraft verkar på"
+    },
+    {
+      "bank": "fy1",
+      "id": "4.755",
+      "expected": 20,
+      "type": "numeriskt",
+      "goal": "kraft och motkraft har samma storlek"
+    },
+    {
+      "bank": "fy1",
+      "id": "4.756",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "förklara varför kraft och motkraft inte tar ut varandra på en vagn"
+    },
+    {
+      "bank": "fy1",
+      "id": "4.757",
+      "expected": null,
+      "type": "alternativ",
+      "goal": "jämföra acceleration vid samma kraft men olika massa"
+    }
+  ],
+  "newLevels": {
+    "2": 21,
+    "1": 23
+  },
+  "tests": {
+    "Uppgiftslabbet": 74,
+    "Kunskapsgymmet": 62
+  },
+  "browser": {
+    "tasks": 44,
+    "cards": 44,
+    "formulas": 57,
+    "bad": [],
+    "errors": [],
+    "checks": [
+      {
+        "id": "5.601",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.601",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.601",
+        "input": "6 N·s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.601",
+        "input": "6 Ns",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.601",
+        "input": "6 N s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.601",
+        "input": "6 kg m/s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.601",
+        "input": "6 N",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.602",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.602",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.602",
+        "input": "6 N·s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.603",
+        "input": "De ger lika stor impuls.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.603",
+        "input": "A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.603",
+        "input": "De ger lika stor impuls.; A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.604",
+        "input": "4",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.604",
+        "input": "5",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.604",
+        "input": "4 N·s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.605",
+        "input": "40",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.605",
+        "input": "41",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.605",
+        "input": "40 N",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.606",
+        "input": "0",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.606",
+        "input": "1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.606",
+        "input": "0 N·s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.607",
+        "input": "3",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.607",
+        "input": "4",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.607",
+        "input": "3 m/s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.608",
+        "input": "Graf B.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.608",
+        "input": "Graf A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.608",
+        "input": "Graf B.; Graf A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.609",
+        "input": "2",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.609",
+        "input": "3",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.610",
+        "input": "4",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.610",
+        "input": "5",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.611",
+        "input": "45",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.611",
+        "input": "46",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.611",
+        "input": "45 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.612",
+        "input": "15",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.612",
+        "input": "16",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.612",
+        "input": "15 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.613",
+        "input": "150",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.613",
+        "input": "151",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.613",
+        "input": "150 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.614",
+        "input": "55",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.614",
+        "input": "56",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.614",
+        "input": "55 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.615",
+        "input": "9",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.615",
+        "input": "10",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.615",
+        "input": "9 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.616",
+        "input": "40",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.616",
+        "input": "41",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.616",
+        "input": "40 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.617",
+        "input": "4",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.617",
+        "input": "5",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.617",
+        "input": "4 m/s",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.618",
+        "input": "Kloss A.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.618",
+        "input": "Kloss B.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.618",
+        "input": "Kloss A.; Kloss B.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.619",
+        "input": "-18",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.619",
+        "input": "-17",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.619",
+        "input": "-18 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.619",
+        "input": "−18 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.619",
+        "input": "18 J",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.620",
+        "input": "De utför lika stort arbete.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.620",
+        "input": "Båda utför noll arbete.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.620",
+        "input": "De utför lika stort arbete.; Båda utför noll arbete.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.621",
+        "input": "0",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.621",
+        "input": "1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.621",
+        "input": "0 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.622",
+        "input": "60",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.622",
+        "input": "61",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.622",
+        "input": "60 J",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.549",
+        "input": "Läge B.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.549",
+        "input": "Läge A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.549",
+        "input": "Läge B.; Läge A.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.550",
+        "input": "300",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.550",
+        "input": "301",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.550",
+        "input": "300 Pa",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.551",
+        "input": "5000",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.551",
+        "input": "5001",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.551",
+        "input": "5000 Pa",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.552",
+        "input": "5",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.552",
+        "input": "6",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.553",
+        "input": "2",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.553",
+        "input": "3",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.554",
+        "input": "300",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.554",
+        "input": "301",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.554",
+        "input": "300 N",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.555",
+        "input": "0.2",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.555",
+        "input": "1.2",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.555",
+        "input": "0.2 m²",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.556",
+        "input": "200",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "6.556",
+        "input": "201",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "6.556",
+        "input": "200 N",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.754",
+        "input": "Pilen åt höger, märkt A på B.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.754",
+        "input": "Ingen av pilarna.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.754",
+        "input": "Pilen åt höger, märkt A på B.; Ingen av pilarna.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.755",
+        "input": "20",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.755",
+        "input": "21",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.755",
+        "input": "20 N",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.756",
+        "input": "De verkar på olika vagnar.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.756",
+        "input": "Krafter åt olika håll kan aldrig ta ut varandra.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.756",
+        "input": "De verkar på olika vagnar.; Krafter åt olika håll kan aldrig ta ut varandra.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.757",
+        "input": "Vagn A.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "4.757",
+        "input": "De får lika stor acceleration.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "4.757",
+        "input": "Vagn A.; De får lika stor acceleration.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.792",
+        "input": "\\(\\binom63\\)",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.792",
+        "input": "\\(6^3\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.792",
+        "input": "\\(\\binom63\\); \\(6^3\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.793",
+        "input": "\\(6\\cdot5\\cdot4\\)",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.793",
+        "input": "\\(\\binom63\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.793",
+        "input": "\\(6\\cdot5\\cdot4\\); \\(\\binom63\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.794",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.794",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.795",
+        "input": "\\(3^2\\)",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.795",
+        "input": "\\(\\binom32\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.795",
+        "input": "\\(3^2\\); \\(\\binom32\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.796",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.796",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.797",
+        "input": "\\(3+2\\)",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.797",
+        "input": "\\(2^3\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.797",
+        "input": "\\(3+2\\); \\(2^3\\)",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.798",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.798",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.799",
+        "input": "6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.799",
+        "input": "7",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.800",
+        "input": "AB och BA är olika eftersom bokstäverna står på olika platser.",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.800",
+        "input": "En kod räknas bara om den bildar ett riktigt ord.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.800",
+        "input": "AB och BA är olika eftersom bokstäverna står på olika platser.; En kod räknas bara om den bildar ett riktigt ord.",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.801",
+        "input": "1/6",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.801",
+        "input": "1.1666666666666667",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.801",
+        "input": "0.167",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.801",
+        "input": "16.7%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.801",
+        "input": "1/4",
+        "want": false,
+        "actual": false
+      }
+    ]
+  },
+  "existingCards": {
+    "cards": [
+      {
+        "id": "8.40a",
+        "level": 1,
+        "answer": 550,
+        "auto": true
+      },
+      {
+        "id": "8.40b",
+        "level": 2,
+        "answer": 20,
+        "auto": true
+      },
+      {
+        "id": "8.40c",
+        "level": 2,
+        "answer": null,
+        "auto": false
+      },
+      {
+        "id": "8.40d",
+        "level": 1,
+        "answer": 0.22,
+        "auto": true
+      },
+      {
+        "id": "8.124a",
+        "level": 1,
+        "answer": null,
+        "auto": false
+      },
+      {
+        "id": "8.124b",
+        "level": 1,
+        "answer": 300,
+        "auto": true
+      },
+      {
+        "id": "8.124c",
+        "level": 1,
+        "answer": 0.03,
+        "auto": true
+      }
+    ],
+    "bad": [],
+    "errors": [],
+    "checks": [
+      {
+        "id": "8.40a",
+        "input": "550",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40a",
+        "input": "550 Ω",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40a",
+        "input": "551",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "8.40b",
+        "input": "20",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40b",
+        "input": "20 mA",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40b",
+        "input": "21",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "8.40d",
+        "input": "0.22",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40d",
+        "input": "0.22 W",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.40d",
+        "input": "1.22",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "8.124b",
+        "input": "300",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.124b",
+        "input": "300 Ω",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.124b",
+        "input": "301",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "8.124c",
+        "input": "0.03",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.124c",
+        "input": "0.03 A",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "8.124c",
+        "input": "1.03",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "8.40b",
+        "input": "0.020 A",
+        "want": true,
+        "actual": true
+      }
+    ]
+  },
+  "layouts": [
+    {
+      "id": "5.601",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "5",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "10",
+          "width": 14.890594482421875,
+          "height": 14.999969482421875
+        },
+        {
+          "text": "12",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "15",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,25",
+          "width": 26.046875,
+          "height": 15
+        },
+        {
+          "text": "0,5",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.602",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "40",
+          "width": 14.890594482421875,
+          "height": 14.999969482421875
+        },
+        {
+          "text": "60",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,1",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.603",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "A",
+          "width": 13,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "10",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "0,2",
+          "width": 18.59368896484375,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "0,4",
+          "width": 19.154541015625,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        },
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.12493896484375,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "10",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "0,4",
+          "width": 19.154541015625,
+          "height": 15.000030517578125
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.604",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "10",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,1",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,3",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.605",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "40",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "80",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,1",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,3",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,4",
+          "width": 19.15447998046875,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.606",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "-20",
+          "width": 19.34375,
+          "height": 14.999969482421875
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890594482421875,
+          "height": 14.999969482421875
+        },
+        {
+          "text": "40",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,1",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,3",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.607",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "30",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "40",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "0,1",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "0,2",
+          "width": 18.59375,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.608",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "A",
+          "width": 13,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "50",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "100",
+          "width": 22.328125,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "0,02",
+          "width": 26.04681396484375,
+          "height": 15
+        },
+        {
+          "text": "0,04",
+          "width": 26.59307861328125,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        },
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.12493896484375,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "50",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "100",
+          "width": 22.328125,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "0,02",
+          "width": 26.046875,
+          "height": 15
+        },
+        {
+          "text": "0,04",
+          "width": 26.593017578125,
+          "height": 15
+        },
+        {
+          "text": "t (s)",
+          "width": 26.34375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.609",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "v = 5 m/s",
+          "width": 70.28128051757812,
+          "height": 20
+        },
+        {
+          "text": "m = 2 kg",
+          "width": 66.45315551757812,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "v = 5 m/s",
+          "width": 70.28125,
+          "height": 20
+        },
+        {
+          "text": "m = 4 kg",
+          "width": 66.453125,
+          "height": 19.999969482421875
+        }
+      ]
+    },
+    {
+      "id": "5.610",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "v = 2 m/s",
+          "width": 70.28128051757812,
+          "height": 20
+        },
+        {
+          "text": "m = 1 kg",
+          "width": 66.45315551757812,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "v = 4 m/s",
+          "width": 70.28125,
+          "height": 20
+        },
+        {
+          "text": "m = 1 kg",
+          "width": 66.453125,
+          "height": 19.999969482421875
+        }
+      ]
+    },
+    {
+      "id": "5.611",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "Eₚ = 40 J",
+          "width": 62.671875,
+          "height": 18
+        },
+        {
+          "text": "Eₖ = 20 J",
+          "width": 61.859375,
+          "height": 17
+        },
+        {
+          "text": "Totalt 60 J",
+          "width": 69.73434448242188,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "Eₚ = 15 J",
+          "width": 62.671875,
+          "height": 18
+        },
+        {
+          "text": "Eₖ = ?",
+          "width": 41.453125,
+          "height": 17
+        },
+        {
+          "text": "Totalt 60 J",
+          "width": 69.734375,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "5.612",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Nollnivå: marken",
+          "width": 113.921875,
+          "height": 17
+        },
+        {
+          "text": "A",
+          "width": 12,
+          "height": 20
+        },
+        {
+          "text": "Eₚ = 20 J",
+          "width": 70.484375,
+          "height": 20
+        },
+        {
+          "text": "Eₖ = 0 J",
+          "width": 60,
+          "height": 20
+        },
+        {
+          "text": "B",
+          "width": 11.484375,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "Eₚ = 5 J",
+          "width": 60.921875,
+          "height": 20.000030517578125
+        },
+        {
+          "text": "Eₖ = ?",
+          "width": 46.625,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "5.613",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Åkarens energi",
+          "width": 115.71875,
+          "height": 20
+        },
+        {
+          "text": "Startar från vila",
+          "width": 97.1800537109375,
+          "height": 15.999969482421875
+        },
+        {
+          "text": "Frigjord: 180 J",
+          "width": 97.78125,
+          "height": 17
+        },
+        {
+          "text": "Förlust: 30 J",
+          "width": 84.171875,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "5.614",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "Eₖ = 80 J",
+          "width": 61.859375,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "Eₖ = 25 J",
+          "width": 61.859375,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "5.615",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "v = 6 m/s",
+          "width": 70.28128051757812,
+          "height": 20
+        },
+        {
+          "text": "Samma massa",
+          "width": 115.15078735351562,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "v = 3 m/s",
+          "width": 70.28125,
+          "height": 20
+        },
+        {
+          "text": "Samma massa",
+          "width": 115.1507568359375,
+          "height": 19.999969482421875
+        }
+      ]
+    },
+    {
+      "id": "5.616",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagnens Eₖ",
+          "width": 88.890380859375,
+          "height": 20
+        },
+        {
+          "text": "Från början: 20 J",
+          "width": 108.328125,
+          "height": 15.999969482421875
+        },
+        {
+          "text": "Arbete in: 30 J",
+          "width": 98.640625,
+          "height": 17
+        },
+        {
+          "text": "Förlust: 10 J",
+          "width": 84.171875,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "5.617",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "v = ?",
+          "width": 37.78125,
+          "height": 20
+        },
+        {
+          "text": "m = 4 kg, Eₖ = 32 J",
+          "width": 145.578125,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "5.618",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "Utan friktion",
+          "width": 81.62503051757812,
+          "height": 17
+        },
+        {
+          "text": "Start: vila",
+          "width": 64.24954223632812,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "Med friktion",
+          "width": 79.0625,
+          "height": 17
+        },
+        {
+          "text": "Start: vila",
+          "width": 64.24951171875,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "5.619",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "-6",
+          "width": 11.906219482421875,
+          "height": 15
+        },
+        {
+          "text": "-3",
+          "width": 11.906219482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "1",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "2",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "3",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "s (m)",
+          "width": 34.84375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.620",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "A",
+          "width": 13,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "40",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "2",
+          "width": 7.45306396484375,
+          "height": 15
+        },
+        {
+          "text": "4",
+          "width": 8,
+          "height": 15
+        },
+        {
+          "text": "s (m)",
+          "width": 34.84375,
+          "height": 16.99993896484375
+        },
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "B",
+          "width": 12.12493896484375,
+          "height": 20
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "40",
+          "width": 14.890625,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "2",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "4",
+          "width": 8,
+          "height": 15
+        },
+        {
+          "text": "s (m)",
+          "width": 34.84368896484375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "5.621",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Handens kraft",
+          "width": 101.65097045898438,
+          "height": 18
+        },
+        {
+          "text": "Förflyttning",
+          "width": 80.390625,
+          "height": 18
+        }
+      ]
+    },
+    {
+      "id": "5.622",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 34.84375,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "10",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "20",
+          "width": 14.890594482421875,
+          "height": 15
+        },
+        {
+          "text": "0",
+          "width": 7.453094482421875,
+          "height": 15
+        },
+        {
+          "text": "1",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "2",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "3",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "4",
+          "width": 7.99993896484375,
+          "height": 15
+        },
+        {
+          "text": "5",
+          "width": 7.453125,
+          "height": 15
+        },
+        {
+          "text": "s (m)",
+          "width": 34.84375,
+          "height": 16.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "6.549",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "12 N",
+          "width": 32.3125,
+          "height": 17
+        },
+        {
+          "text": "12 N",
+          "width": 32.3125,
+          "height": 17
+        },
+        {
+          "text": "Area: 0,04 m²",
+          "width": 92.67190551757812,
+          "height": 17
+        },
+        {
+          "text": "Area: 0,02 m²",
+          "width": 92.671875,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "6.550",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = 12 N",
+          "width": 66.45306396484375,
+          "height": 20
+        },
+        {
+          "text": "Kontaktarea: 0,04 m²",
+          "width": 160.920654296875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.551",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Kontakt med marken, sett uppifrån",
+          "width": 262.9687194824219,
+          "height": 20
+        },
+        {
+          "text": "Sammanlagd kontaktarea: 0,12 m²",
+          "width": 264.18988037109375,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.552",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Utan snösko",
+          "width": 95.64059448242188,
+          "height": 20
+        },
+        {
+          "text": "Med snösko",
+          "width": 92.765625,
+          "height": 20
+        },
+        {
+          "text": "200 cm²",
+          "width": 62.4141845703125,
+          "height": 20
+        },
+        {
+          "text": "1000 cm²",
+          "width": 71.98175048828125,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.553",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 13,
+          "height": 21
+        },
+        {
+          "text": "B",
+          "width": 12.765625,
+          "height": 21
+        },
+        {
+          "text": "Alla klossar är likadana.",
+          "width": 181.6875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.554",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = ?",
+          "width": 39.68743896484375,
+          "height": 20
+        },
+        {
+          "text": "Kontaktarea: 0,03 m²",
+          "width": 160.920654296875,
+          "height": 20
+        },
+        {
+          "text": "Tryck: 10 kPa",
+          "width": 104.9530029296875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.555",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = 100 N",
+          "width": 76.03125,
+          "height": 20
+        },
+        {
+          "text": "Kontaktarea: ?",
+          "width": 111.90625,
+          "height": 20
+        },
+        {
+          "text": "Tryck: 500 Pa",
+          "width": 105.91900634765625,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "id": "6.556",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "20 N",
+          "width": 36.34375,
+          "height": 20
+        },
+        {
+          "text": "F = ?",
+          "width": 39.6875,
+          "height": 20
+        },
+        {
+          "text": "Area: 0,01 m²",
+          "width": 92.67190551757812,
+          "height": 17
+        },
+        {
+          "text": "Area: 0,10 m²",
+          "width": 92.671875,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "id": "4.754",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 60.503692626953125,
+          "height": 21
+        },
+        {
+          "text": "Vagn B",
+          "width": 61.328125,
+          "height": 21
+        },
+        {
+          "text": "8 N",
+          "width": 26.781280517578125,
+          "height": 20
+        },
+        {
+          "text": "8 N",
+          "width": 26.78125,
+          "height": 20
+        },
+        {
+          "text": "B på A",
+          "width": 51.219085693359375,
+          "height": 20
+        },
+        {
+          "text": "A på B",
+          "width": 50.703125,
+          "height": 20
+        },
+        {
+          "text": "Fjäder",
+          "width": 43.359375,
+          "height": 17
+        },
+        {
+          "text": "Kraft på A",
+          "width": 76.07461547851562,
+          "height": 19.99993896484375
+        },
+        {
+          "text": "Kraft på B",
+          "width": 76.5,
+          "height": 19.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "4.755",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 60.503692626953125,
+          "height": 21
+        },
+        {
+          "text": "Vagn B",
+          "width": 61.328125,
+          "height": 21
+        },
+        {
+          "text": "?",
+          "width": 9.578125,
+          "height": 20
+        },
+        {
+          "text": "20 N",
+          "width": 36.34375,
+          "height": 20
+        },
+        {
+          "text": "B på A",
+          "width": 51.219085693359375,
+          "height": 20
+        },
+        {
+          "text": "A på B",
+          "width": 50.703125,
+          "height": 20
+        },
+        {
+          "text": "Fjäder",
+          "width": 43.359375,
+          "height": 17
+        },
+        {
+          "text": "Kraft på A",
+          "width": 76.07461547851562,
+          "height": 19.99993896484375
+        },
+        {
+          "text": "Kraft på B",
+          "width": 76.5,
+          "height": 19.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "4.756",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 60.503692626953125,
+          "height": 21
+        },
+        {
+          "text": "Vagn B",
+          "width": 61.328125,
+          "height": 21
+        },
+        {
+          "text": "8 N",
+          "width": 26.781280517578125,
+          "height": 20
+        },
+        {
+          "text": "8 N",
+          "width": 26.78125,
+          "height": 20
+        },
+        {
+          "text": "B på A",
+          "width": 51.219085693359375,
+          "height": 20
+        },
+        {
+          "text": "A på B",
+          "width": 50.703125,
+          "height": 20
+        },
+        {
+          "text": "Fjäder",
+          "width": 43.359375,
+          "height": 17
+        },
+        {
+          "text": "Kraft på A",
+          "width": 76.07461547851562,
+          "height": 19.99993896484375
+        },
+        {
+          "text": "Kraft på B",
+          "width": 76.5,
+          "height": 19.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "4.757",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 60.503692626953125,
+          "height": 21
+        },
+        {
+          "text": "Vagn B",
+          "width": 61.328125,
+          "height": 21
+        },
+        {
+          "text": "8 N",
+          "width": 26.781280517578125,
+          "height": 20
+        },
+        {
+          "text": "8 N",
+          "width": 26.78125,
+          "height": 20
+        },
+        {
+          "text": "B på A",
+          "width": 51.219085693359375,
+          "height": 20
+        },
+        {
+          "text": "A på B",
+          "width": 50.703125,
+          "height": 20
+        },
+        {
+          "text": "Fjäder",
+          "width": 43.359375,
+          "height": 17
+        },
+        {
+          "text": "m = 2 kg",
+          "width": 66.45315551757812,
+          "height": 19.99993896484375
+        },
+        {
+          "text": "m = 4 kg",
+          "width": 66.453125,
+          "height": 19.99993896484375
+        }
+      ]
+    },
+    {
+      "id": "1.792",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.793",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.794",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.795",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.796",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.797",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.798",
+      "width": 1280,
+      "body": 1280,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Pålägg",
+          "width": 53.578125,
+          "height": 20
+        },
+        {
+          "text": "Bröd",
+          "width": 36.34375,
+          "height": 20
+        },
+        {
+          "text": "X",
+          "width": 12,
+          "height": 20
+        },
+        {
+          "text": "Y",
+          "width": 12,
+          "height": 20
+        },
+        {
+          "text": "A",
+          "width": 12,
+          "height": 20
+        },
+        {
+          "text": "AX",
+          "width": 23.474365234375,
+          "height": 20
+        },
+        {
+          "text": "AY",
+          "width": 22.19708251953125,
+          "height": 20
+        },
+        {
+          "text": "B",
+          "width": 11.484375,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "BX",
+          "width": 23.474365234375,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "BY",
+          "width": 23.47430419921875,
+          "height": 19.999969482421875
+        },
+        {
+          "text": "C",
+          "width": 12.4375,
+          "height": 20.000030517578125
+        },
+        {
+          "text": "CX",
+          "width": 24.423583984375,
+          "height": 20.000030517578125
+        },
+        {
+          "text": "CY",
+          "width": 24.42352294921875,
+          "height": 20.000030517578125
+        }
+      ]
+    },
+    {
+      "id": "1.799",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.800",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.801",
+      "width": 1280,
+      "body": 1280,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "5.601",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "5",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "10",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "12",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "15",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,25",
+          "width": 17.765640258789062,
+          "height": 10
+        },
+        {
+          "text": "0,5",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.602",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "40",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "60",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,1",
+          "width": 12.687515258789062,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.603",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.734375,
+          "height": 11
+        },
+        {
+          "text": "A",
+          "width": 9,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "10",
+          "width": 10.156253814697266,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "20",
+          "width": 10.156253814697266,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.687507629394531,
+          "height": 10
+        },
+        {
+          "text": "0,4",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953125,
+          "height": 11
+        },
+        {
+          "text": "F (N)",
+          "width": 23.734359741210938,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.265625,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "10",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "0,4",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953125,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.604",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "10",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,1",
+          "width": 12.687484741210938,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.687484741210938,
+          "height": 10
+        },
+        {
+          "text": "0,3",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.605",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "40",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "80",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,1",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.687515258789062,
+          "height": 10
+        },
+        {
+          "text": "0,3",
+          "width": 12.687469482421875,
+          "height": 10
+        },
+        {
+          "text": "0,4",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.606",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "-20",
+          "width": 13.203125,
+          "height": 10
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "40",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,1",
+          "width": 12.687484741210938,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.687484741210938,
+          "height": 10
+        },
+        {
+          "text": "0,3",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.607",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "30",
+          "width": 10.15625,
+          "height": 10
+        },
+        {
+          "text": "40",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,1",
+          "width": 12.687515258789062,
+          "height": 10
+        },
+        {
+          "text": "0,2",
+          "width": 12.6875,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953094482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.608",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.734375,
+          "height": 11
+        },
+        {
+          "text": "A",
+          "width": 9,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "50",
+          "width": 10.156253814697266,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "100",
+          "width": 15.234378814697266,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,02",
+          "width": 17.76563262939453,
+          "height": 10
+        },
+        {
+          "text": "0,04",
+          "width": 17.765625,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953125,
+          "height": 11
+        },
+        {
+          "text": "F (N)",
+          "width": 23.734359741210938,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.265625,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "50",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "100",
+          "width": 15.234375,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0,02",
+          "width": 17.765625,
+          "height": 10
+        },
+        {
+          "text": "0,04",
+          "width": 17.765625,
+          "height": 10
+        },
+        {
+          "text": "t (s)",
+          "width": 17.953125,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.609",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9.000007629394531,
+          "height": 15
+        },
+        {
+          "text": "v = 5 m/s",
+          "width": 48.00553894042969,
+          "height": 13
+        },
+        {
+          "text": "m = 2 kg",
+          "width": 45.28123474121094,
+          "height": 13.00006103515625
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "v = 5 m/s",
+          "width": 48.00555419921875,
+          "height": 13
+        },
+        {
+          "text": "m = 4 kg",
+          "width": 45.28123474121094,
+          "height": 13.00006103515625
+        }
+      ]
+    },
+    {
+      "id": "5.610",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9.000007629394531,
+          "height": 15
+        },
+        {
+          "text": "v = 2 m/s",
+          "width": 48.00553894042969,
+          "height": 13
+        },
+        {
+          "text": "m = 1 kg",
+          "width": 45.28123474121094,
+          "height": 13.000030517578125
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "v = 4 m/s",
+          "width": 48.00555419921875,
+          "height": 13
+        },
+        {
+          "text": "m = 1 kg",
+          "width": 45.28123474121094,
+          "height": 13.000030517578125
+        }
+      ]
+    },
+    {
+      "id": "5.611",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9,
+          "height": 15
+        },
+        {
+          "text": "Eₚ = 40 J",
+          "width": 42.703125,
+          "height": 10.999969482421875
+        },
+        {
+          "text": "Eₖ = 20 J",
+          "width": 42.15625,
+          "height": 11
+        },
+        {
+          "text": "Totalt 60 J",
+          "width": 47.515625,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "Eₚ = 15 J",
+          "width": 42.703155517578125,
+          "height": 11
+        },
+        {
+          "text": "Eₖ = ?",
+          "width": 28.445037841796875,
+          "height": 11
+        },
+        {
+          "text": "Totalt 60 J",
+          "width": 47.51560974121094,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.612",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Nollnivå: marken",
+          "width": 77.81842041015625,
+          "height": 11
+        },
+        {
+          "text": "A",
+          "width": 8,
+          "height": 13
+        },
+        {
+          "text": "Eₚ = 20 J",
+          "width": 48.015625,
+          "height": 14
+        },
+        {
+          "text": "Eₖ = 0 J",
+          "width": 40.875,
+          "height": 13.000030517578125
+        },
+        {
+          "text": "B",
+          "width": 8,
+          "height": 13
+        },
+        {
+          "text": "Eₚ = 5 J",
+          "width": 41.50001525878906,
+          "height": 13.999969482421875
+        },
+        {
+          "text": "Eₖ = ?",
+          "width": 32.23796081542969,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "5.613",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Åkarens energi",
+          "width": 78.82810974121094,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Startar från vila",
+          "width": 66.78250122070312,
+          "height": 11
+        },
+        {
+          "text": "Frigjord: 180 J",
+          "width": 66.625,
+          "height": 11
+        },
+        {
+          "text": "Förlust: 30 J",
+          "width": 57.34375,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.614",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9,
+          "height": 15
+        },
+        {
+          "text": "Eₖ = 80 J",
+          "width": 42.15625,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "Eₖ = 25 J",
+          "width": 42.156280517578125,
+          "height": 11.00006103515625
+        }
+      ]
+    },
+    {
+      "id": "5.615",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9.000007629394531,
+          "height": 15
+        },
+        {
+          "text": "v = 6 m/s",
+          "width": 48.00553894042969,
+          "height": 13
+        },
+        {
+          "text": "Samma massa",
+          "width": 78.62857818603516,
+          "height": 13.00006103515625
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "v = 3 m/s",
+          "width": 48.00555419921875,
+          "height": 13
+        },
+        {
+          "text": "Samma massa",
+          "width": 78.62855529785156,
+          "height": 13.00006103515625
+        }
+      ]
+    },
+    {
+      "id": "5.616",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagnens Eₖ",
+          "width": 60.53125,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Från början: 20 J",
+          "width": 73.94122314453125,
+          "height": 11
+        },
+        {
+          "text": "Arbete in: 30 J",
+          "width": 67.203125,
+          "height": 11
+        },
+        {
+          "text": "Förlust: 10 J",
+          "width": 57.34375,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.617",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "v = ?",
+          "width": 26.214630126953125,
+          "height": 13
+        },
+        {
+          "text": "m = 4 kg, Eₖ = 32 J",
+          "width": 99.17185974121094,
+          "height": 13.000030517578125
+        }
+      ]
+    },
+    {
+      "id": "5.618",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9.000007629394531,
+          "height": 15
+        },
+        {
+          "text": "Utan friktion",
+          "width": 55.80931091308594,
+          "height": 11
+        },
+        {
+          "text": "Start: vila",
+          "width": 43.64195251464844,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "Med friktion",
+          "width": 54.068939208984375,
+          "height": 11
+        },
+        {
+          "text": "Start: vila",
+          "width": 43.6419677734375,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.619",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "-6",
+          "width": 8.125,
+          "height": 9.99993896484375
+        },
+        {
+          "text": "-3",
+          "width": 8.125,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "1",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "2",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "3",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "s (m)",
+          "width": 23.734344482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.620",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.734375,
+          "height": 11
+        },
+        {
+          "text": "A",
+          "width": 9,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "20",
+          "width": 10.156253814697266,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "40",
+          "width": 10.156253814697266,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "2",
+          "width": 5.078132629394531,
+          "height": 10
+        },
+        {
+          "text": "4",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "s (m)",
+          "width": 23.734375,
+          "height": 11
+        },
+        {
+          "text": "F (N)",
+          "width": 23.734359741210938,
+          "height": 11
+        },
+        {
+          "text": "B",
+          "width": 8.265625,
+          "height": 14
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "40",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "2",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "4",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "s (m)",
+          "width": 23.734375,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "5.621",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Handens kraft",
+          "width": 68.96875762939453,
+          "height": 12
+        },
+        {
+          "text": "Förflyttning",
+          "width": 54.79685974121094,
+          "height": 12
+        }
+      ]
+    },
+    {
+      "id": "5.622",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F (N)",
+          "width": 23.73438262939453,
+          "height": 11
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "10",
+          "width": 10.15625,
+          "height": 9.999969482421875
+        },
+        {
+          "text": "20",
+          "width": 10.15625,
+          "height": 10.000030517578125
+        },
+        {
+          "text": "0",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "1",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "2",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "3",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "4",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "5",
+          "width": 5.078125,
+          "height": 10
+        },
+        {
+          "text": "s (m)",
+          "width": 23.734344482421875,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "6.549",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9,
+          "height": 15
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "12 N",
+          "width": 22.01563262939453,
+          "height": 11
+        },
+        {
+          "text": "12 N",
+          "width": 22.015655517578125,
+          "height": 11
+        },
+        {
+          "text": "Area: 0,04 m²",
+          "width": 63.66632843017578,
+          "height": 11
+        },
+        {
+          "text": "Area: 0,02 m²",
+          "width": 63.66632080078125,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "6.550",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = 12 N",
+          "width": 45.28123474121094,
+          "height": 13
+        },
+        {
+          "text": "Kontaktarea: 0,04 m²",
+          "width": 109.53170776367188,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.551",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Kontakt med marken, sett uppifrån",
+          "width": 179.140625,
+          "height": 13
+        },
+        {
+          "text": "Sammanlagd kontaktarea: 0,12 m²",
+          "width": 179.8785400390625,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.552",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Utan snösko",
+          "width": 65.62235260009766,
+          "height": 13
+        },
+        {
+          "text": "Med snösko",
+          "width": 63.6654052734375,
+          "height": 13
+        },
+        {
+          "text": "200 cm²",
+          "width": 42.42926025390625,
+          "height": 13
+        },
+        {
+          "text": "1000 cm²",
+          "width": 48.94667053222656,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.553",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "A",
+          "width": 9,
+          "height": 15
+        },
+        {
+          "text": "B",
+          "width": 8.703125,
+          "height": 15
+        },
+        {
+          "text": "Alla klossar är likadana.",
+          "width": 123.765625,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.554",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = ?",
+          "width": 27.513519287109375,
+          "height": 13
+        },
+        {
+          "text": "Kontaktarea: 0,03 m²",
+          "width": 109.53170776367188,
+          "height": 13
+        },
+        {
+          "text": "Tryck: 10 kPa",
+          "width": 71.68159484863281,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.555",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "F = 100 N",
+          "width": 51.79685974121094,
+          "height": 13
+        },
+        {
+          "text": "Kontaktarea: ?",
+          "width": 76.70594787597656,
+          "height": 13
+        },
+        {
+          "text": "Tryck: 500 Pa",
+          "width": 72.33961486816406,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "6.556",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "20 N",
+          "width": 24.765625,
+          "height": 13
+        },
+        {
+          "text": "F = ?",
+          "width": 27.5135498046875,
+          "height": 13
+        },
+        {
+          "text": "Area: 0,01 m²",
+          "width": 63.66632843017578,
+          "height": 11
+        },
+        {
+          "text": "Area: 0,10 m²",
+          "width": 63.66632080078125,
+          "height": 11
+        }
+      ]
+    },
+    {
+      "id": "4.754",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 41.36698913574219,
+          "height": 15
+        },
+        {
+          "text": "Vagn B",
+          "width": 41.78125,
+          "height": 15
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "B på A",
+          "width": 34.715606689453125,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "A på B",
+          "width": 34.71562194824219,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Fjäder",
+          "width": 30.069992065429688,
+          "height": 11
+        },
+        {
+          "text": "Kraft på A",
+          "width": 51.64714050292969,
+          "height": 13
+        },
+        {
+          "text": "Kraft på B",
+          "width": 52.29435729980469,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "4.755",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 41.36698913574219,
+          "height": 15
+        },
+        {
+          "text": "Vagn B",
+          "width": 41.78125,
+          "height": 15
+        },
+        {
+          "text": "?",
+          "width": 7,
+          "height": 13
+        },
+        {
+          "text": "20 N",
+          "width": 24.765625,
+          "height": 13
+        },
+        {
+          "text": "B på A",
+          "width": 34.715606689453125,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "A på B",
+          "width": 34.71562194824219,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Fjäder",
+          "width": 30.069992065429688,
+          "height": 11
+        },
+        {
+          "text": "Kraft på A",
+          "width": 51.64714050292969,
+          "height": 13
+        },
+        {
+          "text": "Kraft på B",
+          "width": 52.29435729980469,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "4.756",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 41.36698913574219,
+          "height": 15
+        },
+        {
+          "text": "Vagn B",
+          "width": 41.78125,
+          "height": 15
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "B på A",
+          "width": 34.715606689453125,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "A på B",
+          "width": 34.71562194824219,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Fjäder",
+          "width": 30.069992065429688,
+          "height": 11
+        },
+        {
+          "text": "Kraft på A",
+          "width": 51.64714050292969,
+          "height": 13
+        },
+        {
+          "text": "Kraft på B",
+          "width": 52.29435729980469,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "4.757",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Vagn A",
+          "width": 41.36698913574219,
+          "height": 15
+        },
+        {
+          "text": "Vagn B",
+          "width": 41.78125,
+          "height": 15
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "8 N",
+          "width": 18.25,
+          "height": 13
+        },
+        {
+          "text": "B på A",
+          "width": 34.715606689453125,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "A på B",
+          "width": 34.71562194824219,
+          "height": 12.999969482421875
+        },
+        {
+          "text": "Fjäder",
+          "width": 30.069992065429688,
+          "height": 11
+        },
+        {
+          "text": "m = 2 kg",
+          "width": 45.28123474121094,
+          "height": 13
+        },
+        {
+          "text": "m = 4 kg",
+          "width": 45.28125,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "1.792",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.793",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.794",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.795",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.796",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.797",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.798",
+      "width": 390,
+      "body": 390,
+      "svg": 1,
+      "labels": [
+        {
+          "text": "Pålägg",
+          "width": 36.5,
+          "height": 13
+        },
+        {
+          "text": "Bröd",
+          "width": 24.765621185302734,
+          "height": 13
+        },
+        {
+          "text": "X",
+          "width": 7.9999847412109375,
+          "height": 13.000030517578125
+        },
+        {
+          "text": "Y",
+          "width": 8,
+          "height": 13.000030517578125
+        },
+        {
+          "text": "A",
+          "width": 8,
+          "height": 13
+        },
+        {
+          "text": "AX",
+          "width": 15.816314697265625,
+          "height": 13
+        },
+        {
+          "text": "AY",
+          "width": 14.94573974609375,
+          "height": 13
+        },
+        {
+          "text": "B",
+          "width": 8,
+          "height": 13
+        },
+        {
+          "text": "BX",
+          "width": 15.816314697265625,
+          "height": 13
+        },
+        {
+          "text": "BY",
+          "width": 15.816314697265625,
+          "height": 13
+        },
+        {
+          "text": "C",
+          "width": 9,
+          "height": 13
+        },
+        {
+          "text": "CX",
+          "width": 16.462905883789062,
+          "height": 13
+        },
+        {
+          "text": "CY",
+          "width": 16.462905883789062,
+          "height": 13
+        }
+      ]
+    },
+    {
+      "id": "1.799",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.800",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    },
+    {
+      "id": "1.801",
+      "width": 390,
+      "body": 390,
+      "svg": 0,
+      "labels": []
+    }
+  ],
+  "svg": [
+    {
+      "bank": "fy1",
+      "id": "5.601",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.602",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.603",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.604",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.605",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.606",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.607",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.608",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.609",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.610",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.611",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.612",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.613",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.614",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.615",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.616",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.617",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.618",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.619",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.620",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.621",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "5.622",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.549",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.550",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.551",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.552",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.553",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.554",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.555",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "6.556",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "4.754",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "4.755",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "4.756",
+      "findings": []
+    },
+    {
+      "bank": "fy1",
+      "id": "4.757",
+      "findings": []
+    },
+    {
+      "bank": "matf1",
+      "id": "1.798",
+      "findings": []
+    }
+  ],
+  "validator": {
+    "fy1": {
+      "before": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "newFindings": [],
+      "changedOld": [
+        "8.40",
+        "8.124"
+      ],
+      "newTaskFindings": [],
+      "total": 3715
+    },
+    "matf1": {
+      "before": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 71
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 71
+      },
+      "newFindings": [],
+      "changedOld": [],
+      "newTaskFindings": [],
+      "total": 1541
+    }
+  }
+}

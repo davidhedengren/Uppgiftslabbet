@@ -3,6 +3,10 @@
 Inventering och riktad innehållsgranskning, 2026-10-08. Fortsättning på
 `GRANSKNING_ENERGI_KOMBINATORIK_2026-10-08.md`.
 
+Kompletteringarna är nu genomförda i
+[KOMPLETTERING_VARIATION_2026-10-08.md](KOMPLETTERING_VARIATION_2026-10-08.md).
+Antalen nedan gäller inventeringen före den kompletteringen.
+
 ## Bedömning
 
 Det finns gott om grundläggande räkneövningar i de prioriterade fysikmomenten
@@ -10,12 +14,9 @@ och kombinatoriken. Nästa komplettering bör främst tillföra andra sätt att
 använda kunskaperna: tolka figurer, jämföra situationer, välja metod och
 förklara ett vanligt fel. Fler talvarianter av samma formel ger mindre nytta.
 
-En tydlig innehållslucka är **grafteori i matf1**. Strukturfilens inledning
-anger uttryckligen att grafteori saknar uppgifter och därför inte har något
-moment. Det är en separat utbyggnad: begrepp som nod, kant och väg behöver
-introduceras före mer krävande problem om exempelvis Eulerkretsar och träd.
-Denna arbetsomgång har inte skapat ett nytt kapitel eller bedömt hela bankens
-täckning mot kursplanen.
+**Grafteori ingår inte längre i matf1**, enligt lärarens kursavgränsning
+2026-10-08. Det utelämnade momentet är därför ingen innehållslucka och ska
+inte läggas till. Kompletteringarna gäller fysikområdena och kombinatoriken.
 
 ## Prioriterade kompletteringar
 
@@ -95,8 +96,7 @@ procenttal och toleransens enhet.
 
 Inventeringen läser hela Fysik 1-banken (3681 huvuduppgifter) och matf1-banken
 (1531). Alla befintliga moment i deras struktur har uppgifter. Grafteori är
-uttryckligen utelämnat ur matf1-strukturen och kan därför inte hittas genom
-att bara leta efter tomma moment.
+uttryckligen utelämnat ur matf1-strukturen enligt kursavgränsningen.
 
 Kort räknas med Kunskapsgymmets faktiska `expandGameTask` efter att
 huvuduppgifter med `spel:false` har uteslutits. Ett figurkort betyder att den
