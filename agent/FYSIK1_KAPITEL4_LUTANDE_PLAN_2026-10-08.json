@@ -1,0 +1,693 @@
+{
+  "course": "fy1",
+  "chapter": 4,
+  "area": "lutande_plan",
+  "manual_read_rounds": 2,
+  "main_tasks_reviewed": 95,
+  "cards_reviewed": 136,
+  "main_tasks_changed": 93,
+  "cards_changed": 134,
+  "independent_numeric_tasks": 72,
+  "independent_numeric_answers": 113,
+  "independent_student_card_case_sets": 5,
+  "actual_consumer_independent_checks": 124,
+  "changed_fields_by_id": {
+    "4.26": [
+      "t",
+      "s"
+    ],
+    "4.27": [
+      "t",
+      "s"
+    ],
+    "4.38": [
+      "t",
+      "s"
+    ],
+    "4.45": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "traningsniva",
+      "spelDelar"
+    ],
+    "4.46": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.47": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.58": [
+      "t"
+    ],
+    "4.59": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.67": [
+      "t",
+      "s"
+    ],
+    "4.103": [
+      "t",
+      "s"
+    ],
+    "4.104": [
+      "t",
+      "s",
+      "spelIntro"
+    ],
+    "4.392": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.114": [
+      "t",
+      "s"
+    ],
+    "4.393": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.121": [
+      "t"
+    ],
+    "4.394": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.124": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.125": [
+      "t",
+      "s"
+    ],
+    "4.132": [
+      "t",
+      "traningsniva"
+    ],
+    "4.144": [
+      "t",
+      "traningsniva"
+    ],
+    "4.407": [
+      "t",
+      "traningsniva"
+    ],
+    "4.176": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "traningsniva",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.397": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.180": [
+      "t",
+      "s"
+    ],
+    "4.209": [
+      "t",
+      "s"
+    ],
+    "4.210": [
+      "t",
+      "s"
+    ],
+    "4.222": [
+      "t",
+      "s"
+    ],
+    "4.417": [
+      "t",
+      "s",
+      "traningsniva"
+    ],
+    "4.318": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.319": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.320": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.321": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.322": [
+      "t"
+    ],
+    "4.485": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.486": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.487": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.488": [
+      "s",
+      "alternativ",
+      "ledtrad"
+    ],
+    "4.489": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans"
+    ],
+    "4.490": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.491": [
+      "t",
+      "s",
+      "alternativ",
+      "ledtrad"
+    ],
+    "4.492": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.578": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.579": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.580": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.581": [
+      "t",
+      "s",
+      "tolerans",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "4.582": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.583": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "4.584": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.585": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.586": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "4.587": [
+      "t",
+      "s",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.588": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.589": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.590": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.591": [
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.592": [
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.593": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.594": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.595": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.600": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.601": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.602": [
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.603": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.604": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.605": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.606": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.607": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.608": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.609": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.610": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad"
+    ],
+    "4.611": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.612": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.613": [
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.614": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "4.615": [
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.616": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.617": [
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.618": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.619": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "4.620": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad"
+    ],
+    "4.621": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.622": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.623": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad"
+    ],
+    "4.624": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad"
+    ],
+    "4.625": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.626": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "traningsniva"
+    ],
+    "4.627": [
+      "t",
+      "s",
+      "tolerans",
+      "ledtrad"
+    ],
+    "4.628": [
+      "t",
+      "s",
+      "tolerans",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "4.629": [
+      "niva",
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar",
+      "ledtrad"
+    ],
+    "4.631": [
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.633": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ],
+    "4.634": [
+      "t",
+      "s",
+      "tolerans"
+    ],
+    "4.635": [
+      "poang",
+      "t",
+      "s",
+      "tolerans",
+      "spelIntro",
+      "spelDelar"
+    ]
+  },
+  "levels_before": {
+    "3": 57,
+    "5": 5,
+    "1": 3,
+    "2": 61,
+    "4": 10
+  },
+  "levels_after": {
+    "3": 71,
+    "5": 3,
+    "1": 3,
+    "2": 46,
+    "4": 13
+  },
+  "svg_reviewed": 21,
+  "svg_fields_changed": [
+    [
+      "4.407",
+      "t"
+    ],
+    [
+      "4.222",
+      "s"
+    ],
+    [
+      "4.417",
+      "t"
+    ],
+    [
+      "4.417",
+      "s"
+    ]
+  ],
+  "whole_bank_grading": {
+    "cards": 4977,
+    "checks": 32822,
+    "failures": 0
+  },
+  "render_formulas_per_repo": 23823,
+  "validation": {
+    "ERROR": 0,
+    "WARNING": 8,
+    "INFO": 655
+  },
+  "tests": {
+    "master": 118,
+    "svg": 47,
+    "consumer": 65
+  },
+  "scope_limit": "Övriga områden i Fysik 1 är inte färdiggranskade genom denna rapport."
+}
