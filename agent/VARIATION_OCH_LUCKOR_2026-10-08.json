@@ -1,0 +1,5584 @@
+{
+  "date": "2026-10-08",
+  "scope": "Helbanksinventering och riktad innehållsgranskning; ingen fullständig facitkontroll av alla bankuppgifter.",
+  "inventory": {
+    "fy1": {
+      "parents": 3681,
+      "areas": [
+        {
+          "key": "enheter",
+          "title": "Måttenheter och prefix",
+          "chapter": "2",
+          "parents": 59,
+          "cards": 125,
+          "levels": {
+            "1": 59,
+            "2": 60,
+            "3": 6,
+            "4": 0,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 125,
+          "families": [
+            {
+              "name": "Enhetsomvandling",
+              "cards": 41,
+              "parents": 15,
+              "levels": {
+                "1": 13,
+                "2": 26,
+                "3": 2,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Prefix och tiopotenser",
+              "cards": 53,
+              "parents": 14,
+              "levels": {
+                "1": 44,
+                "2": 9,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Area- och volymenheter",
+              "cards": 22,
+              "parents": 10,
+              "levels": {
+                "1": 2,
+                "2": 20,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Rimlighet och enhetskontroll",
+              "cards": 9,
+              "parents": 3,
+              "levels": {
+                "1": 0,
+                "2": 5,
+                "3": 4,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": [
+            {
+              "text": "omvandla # kg/m³ till g/cm³.",
+              "ids": [
+                "2.1d",
+                "2.58b",
+                "2.58d",
+                "2.58f"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "medelhastighet",
+          "title": "Medelhastighet",
+          "chapter": "2",
+          "parents": 76,
+          "cards": 147,
+          "levels": {
+            "1": 13,
+            "2": 65,
+            "3": 50,
+            "4": 17,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 20,
+          "self": 147,
+          "families": [
+            {
+              "name": "Sträcka, tid och fart",
+              "cards": 116,
+              "parents": 49,
+              "levels": {
+                "1": 11,
+                "2": 48,
+                "3": 41,
+                "4": 14,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 20
+            },
+            {
+              "name": "Medelhastighet och medelfart",
+              "cards": 31,
+              "parents": 16,
+              "levels": {
+                "1": 2,
+                "2": 17,
+                "3": 9,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "densitet",
+          "title": "Densitet",
+          "chapter": "2",
+          "parents": 170,
+          "cards": 149,
+          "levels": {
+            "1": 20,
+            "2": 70,
+            "3": 51,
+            "4": 7,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 49,
+          "self": 149,
+          "families": [
+            {
+              "name": "Densitet med geometri",
+              "cards": 53,
+              "parents": 38,
+              "levels": {
+                "1": 4,
+                "2": 24,
+                "3": 23,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 30
+            },
+            {
+              "name": "Densitet ur diagram och mätdata",
+              "cards": 12,
+              "parents": 7,
+              "levels": {
+                "1": 4,
+                "2": 6,
+                "3": 2,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 11
+            },
+            {
+              "name": "Sammansatta och ihåliga föremål",
+              "cards": 27,
+              "parents": 23,
+              "levels": {
+                "1": 0,
+                "2": 3,
+                "3": 19,
+                "4": 4,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Massa, volym och densitet",
+              "cards": 48,
+              "parents": 41,
+              "levels": {
+                "1": 11,
+                "2": 33,
+                "3": 4,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Densitet, flytförmåga och modeller",
+              "cards": 9,
+              "parents": 9,
+              "levels": {
+                "1": 1,
+                "2": 4,
+                "3": 3,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "matnogg",
+          "title": "Mätningar och experiment",
+          "chapter": "2",
+          "parents": 60,
+          "cards": 49,
+          "levels": {
+            "1": 15,
+            "2": 20,
+            "3": 11,
+            "4": 3,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 49,
+          "families": [
+            {
+              "name": "Värdesiffror och avrundning",
+              "cards": 13,
+              "parents": 11,
+              "levels": {
+                "1": 7,
+                "2": 6,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Mätosäkerhet och felgränser",
+              "cards": 22,
+              "parents": 18,
+              "levels": {
+                "1": 4,
+                "2": 8,
+                "3": 10,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Mätmetod, spridning och fel",
+              "cards": 14,
+              "parents": 14,
+              "levels": {
+                "1": 4,
+                "2": 6,
+                "3": 1,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "vektorer",
+          "title": "Hastighet som vektor",
+          "chapter": "3",
+          "parents": 49,
+          "cards": 79,
+          "levels": {
+            "1": 4,
+            "2": 22,
+            "3": 25,
+            "4": 23,
+            "5": 5,
+            "?": 0
+          },
+          "figures": 43,
+          "self": 79,
+          "families": [
+            {
+              "name": "Relativ hastighet",
+              "cards": 34,
+              "parents": 18,
+              "levels": {
+                "1": 0,
+                "2": 12,
+                "3": 12,
+                "4": 10,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Dela upp vektorer i komposanter",
+              "cards": 21,
+              "parents": 14,
+              "levels": {
+                "1": 2,
+                "2": 5,
+                "3": 8,
+                "4": 6,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 16
+            },
+            {
+              "name": "Addera vektorer",
+              "cards": 24,
+              "parents": 12,
+              "levels": {
+                "1": 2,
+                "2": 5,
+                "3": 5,
+                "4": 7,
+                "5": 5,
+                "?": 0
+              },
+              "figures": 20
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "st_diagram",
+          "title": "s-t-diagram",
+          "chapter": "3",
+          "parents": 24,
+          "cards": 32,
+          "levels": {
+            "1": 2,
+            "2": 23,
+            "3": 5,
+            "4": 2,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 30,
+          "self": 32,
+          "families": [
+            {
+              "name": "Hastighet ur s-t-diagram",
+              "cards": 26,
+              "parents": 11,
+              "levels": {
+                "1": 2,
+                "2": 18,
+                "3": 4,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 24
+            },
+            {
+              "name": "Tolka och rita s-t-diagram",
+              "cards": 6,
+              "parents": 2,
+              "levels": {
+                "1": 0,
+                "2": 5,
+                "3": 1,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 6
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "acceleration",
+          "title": "Acceleration",
+          "chapter": "3",
+          "parents": 45,
+          "cards": 82,
+          "levels": {
+            "1": 4,
+            "2": 28,
+            "3": 48,
+            "4": 0,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 82,
+          "families": [
+            {
+              "name": "Medelacceleration",
+              "cards": 35,
+              "parents": 17,
+              "levels": {
+                "1": 3,
+                "2": 5,
+                "3": 27,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Hastighet och tid vid konstant acceleration",
+              "cards": 47,
+              "parents": 23,
+              "levels": {
+                "1": 1,
+                "2": 23,
+                "3": 21,
+                "4": 0,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "vt_diagram",
+          "title": "v-t-diagram",
+          "chapter": "3",
+          "parents": 51,
+          "cards": 61,
+          "levels": {
+            "1": 6,
+            "2": 34,
+            "3": 20,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 60,
+          "self": 61,
+          "families": [
+            {
+              "name": "Acceleration ur v-t-diagram",
+              "cards": 12,
+              "parents": 5,
+              "levels": {
+                "1": 1,
+                "2": 10,
+                "3": 1,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 12
+            },
+            {
+              "name": "Sträcka och förflyttning ur v-t-diagram",
+              "cards": 41,
+              "parents": 19,
+              "levels": {
+                "1": 3,
+                "2": 20,
+                "3": 17,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 40
+            },
+            {
+              "name": "Tolka och rita v-t-diagram",
+              "cards": 8,
+              "parents": 7,
+              "levels": {
+                "1": 2,
+                "2": 4,
+                "3": 2,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 8
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "at_diagram",
+          "title": "a-t-diagram",
+          "chapter": "3",
+          "parents": 19,
+          "cards": 25,
+          "levels": {
+            "1": 4,
+            "2": 12,
+            "3": 7,
+            "4": 0,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 23,
+          "self": 25,
+          "families": [
+            {
+              "name": "Tolka a-t-diagram",
+              "cards": 18,
+              "parents": 10,
+              "levels": {
+                "1": 4,
+                "2": 9,
+                "3": 4,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 16
+            },
+            {
+              "name": "Hastighetsändring ur a-t-diagram",
+              "cards": 7,
+              "parents": 7,
+              "levels": {
+                "1": 0,
+                "2": 3,
+                "3": 3,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 7
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "konstacc",
+          "title": "Rörelse med konstant acceleration",
+          "chapter": "3",
+          "parents": 133,
+          "cards": 257,
+          "levels": {
+            "1": 9,
+            "2": 114,
+            "3": 106,
+            "4": 24,
+            "5": 4,
+            "?": 0
+          },
+          "figures": 61,
+          "self": 257,
+          "families": [
+            {
+              "name": "Fritt fall och lodrät kast",
+              "cards": 90,
+              "parents": 39,
+              "levels": {
+                "1": 6,
+                "2": 27,
+                "3": 47,
+                "4": 7,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 15
+            },
+            {
+              "name": "Sträcka vid konstant acceleration",
+              "cards": 103,
+              "parents": 35,
+              "levels": {
+                "1": 2,
+                "2": 61,
+                "3": 34,
+                "4": 6,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 24
+            },
+            {
+              "name": "Möte och ikapp",
+              "cards": 17,
+              "parents": 9,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 4,
+                "4": 10,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 6
+            },
+            {
+              "name": "Tidlösa formeln",
+              "cards": 22,
+              "parents": 9,
+              "levels": {
+                "1": 0,
+                "2": 11,
+                "3": 11,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 6
+            },
+            {
+              "name": "Reaktions- och bromssträcka",
+              "cards": 25,
+              "parents": 13,
+              "levels": {
+                "1": 1,
+                "2": 13,
+                "3": 10,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 10
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "newton1",
+          "title": "Newtons första lag",
+          "chapter": "4",
+          "parents": 95,
+          "cards": 124,
+          "levels": {
+            "1": 3,
+            "2": 25,
+            "3": 57,
+            "4": 29,
+            "5": 10,
+            "?": 0
+          },
+          "figures": 104,
+          "self": 124,
+          "families": [
+            {
+              "name": "Snörkrafter och jämvikt",
+              "cards": 25,
+              "parents": 15,
+              "levels": {
+                "1": 3,
+                "2": 8,
+                "3": 7,
+                "4": 6,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 8
+            },
+            {
+              "name": "Kraftresultant och kraftjämvikt",
+              "cards": 10,
+              "parents": 4,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 8,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 8
+            },
+            {
+              "name": "Krafter i komposanter",
+              "cards": 44,
+              "parents": 20,
+              "levels": {
+                "1": 0,
+                "2": 6,
+                "3": 25,
+                "4": 13,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 44
+            },
+            {
+              "name": "Addera krafter som vektorer",
+              "cards": 45,
+              "parents": 21,
+              "levels": {
+                "1": 0,
+                "2": 9,
+                "3": 17,
+                "4": 10,
+                "5": 9,
+                "?": 0
+              },
+              "figures": 44
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "newton2",
+          "title": "Newtons andra lag",
+          "chapter": "4",
+          "parents": 159,
+          "cards": 311,
+          "levels": {
+            "1": 17,
+            "2": 168,
+            "3": 102,
+            "4": 19,
+            "5": 5,
+            "?": 0
+          },
+          "figures": 53,
+          "self": 311,
+          "families": [
+            {
+              "name": "F = ma",
+              "cards": 156,
+              "parents": 70,
+              "levels": {
+                "1": 11,
+                "2": 99,
+                "3": 45,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 42
+            },
+            {
+              "name": "Motståndskrafter och kopplade kroppar",
+              "cards": 155,
+              "parents": 65,
+              "levels": {
+                "1": 6,
+                "2": 69,
+                "3": 57,
+                "4": 18,
+                "5": 5,
+                "?": 0
+              },
+              "figures": 11
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "newton3",
+          "title": "Newtons tredje lag",
+          "chapter": "4",
+          "parents": 25,
+          "cards": 17,
+          "levels": {
+            "1": 4,
+            "2": 3,
+            "3": 8,
+            "4": 2,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 17,
+          "families": [
+            {
+              "name": "Kraft och motkraft",
+              "cards": 9,
+              "parents": 9,
+              "levels": {
+                "1": 4,
+                "2": 3,
+                "3": 1,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Tredje lagen och rörelse",
+              "cards": 8,
+              "parents": 8,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 7,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "tyngdkraft",
+          "title": "Tyngdkraft",
+          "chapter": "4",
+          "parents": 21,
+          "cards": 28,
+          "levels": {
+            "1": 10,
+            "2": 14,
+            "3": 2,
+            "4": 2,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 4,
+          "self": 28,
+          "families": [
+            {
+              "name": "Massa och tyngd",
+              "cards": 28,
+              "parents": 19,
+              "levels": {
+                "1": 10,
+                "2": 14,
+                "3": 2,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 4
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "normalkraft",
+          "title": "Normalkraft",
+          "chapter": "4",
+          "parents": 40,
+          "cards": 39,
+          "levels": {
+            "1": 3,
+            "2": 26,
+            "3": 8,
+            "4": 1,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 6,
+          "self": 39,
+          "families": [
+            {
+              "name": "Normalkraft vid vila",
+              "cards": 12,
+              "parents": 8,
+              "levels": {
+                "1": 2,
+                "2": 7,
+                "3": 2,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Normalkraft i hiss",
+              "cards": 27,
+              "parents": 18,
+              "levels": {
+                "1": 1,
+                "2": 19,
+                "3": 6,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "gravitation",
+          "title": "Gravitationskraft",
+          "chapter": "4",
+          "parents": 45,
+          "cards": 56,
+          "levels": {
+            "1": 1,
+            "2": 27,
+            "3": 22,
+            "4": 6,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 56,
+          "families": [
+            {
+              "name": "Tyngdacceleration på olika höjd och himlakroppar",
+              "cards": 33,
+              "parents": 22,
+              "levels": {
+                "1": 0,
+                "2": 15,
+                "3": 14,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Gravitationslagen",
+              "cards": 23,
+              "parents": 15,
+              "levels": {
+                "1": 1,
+                "2": 12,
+                "3": 8,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "fjadrar",
+          "title": "Hookes lag",
+          "chapter": "4",
+          "parents": 47,
+          "cards": 58,
+          "levels": {
+            "1": 5,
+            "2": 25,
+            "3": 28,
+            "4": 0,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 20,
+          "self": 58,
+          "families": [
+            {
+              "name": "Hookes lag och fjäderkonstant",
+              "cards": 23,
+              "parents": 14,
+              "levels": {
+                "1": 1,
+                "2": 17,
+                "3": 5,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 9
+            },
+            {
+              "name": "Fjäderdiagram, mätdata och kalibrering",
+              "cards": 18,
+              "parents": 5,
+              "levels": {
+                "1": 2,
+                "2": 6,
+                "3": 10,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 11
+            },
+            {
+              "name": "Fjädrar i serie och parallellt",
+              "cards": 17,
+              "parents": 12,
+              "levels": {
+                "1": 2,
+                "2": 2,
+                "3": 13,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "friktion",
+          "title": "Friktion",
+          "chapter": "4",
+          "parents": 88,
+          "cards": 120,
+          "levels": {
+            "1": 7,
+            "2": 61,
+            "3": 37,
+            "4": 13,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 11,
+          "self": 120,
+          "families": [
+            {
+              "name": "Vilo- och glidfriktion",
+              "cards": 55,
+              "parents": 32,
+              "levels": {
+                "1": 5,
+                "2": 31,
+                "3": 17,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 6
+            },
+            {
+              "name": "Friktion och Newtons andra lag",
+              "cards": 65,
+              "parents": 38,
+              "levels": {
+                "1": 2,
+                "2": 30,
+                "3": 20,
+                "4": 11,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 5
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "lutande_plan",
+          "title": "Lutande plan",
+          "chapter": "4",
+          "parents": 95,
+          "cards": 115,
+          "levels": {
+            "1": 3,
+            "2": 61,
+            "3": 41,
+            "4": 8,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 10,
+          "self": 115,
+          "families": [
+            {
+              "name": "Vilofriktion och friktionsgräns på lutande plan",
+              "cards": 17,
+              "parents": 11,
+              "levels": {
+                "1": 1,
+                "2": 9,
+                "3": 7,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Glidning på lutande plan",
+              "cards": 64,
+              "parents": 42,
+              "levels": {
+                "1": 0,
+                "2": 27,
+                "3": 28,
+                "4": 7,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Krafter på lutande plan",
+              "cards": 34,
+              "parents": 21,
+              "levels": {
+                "1": 2,
+                "2": 25,
+                "3": 6,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "moment",
+          "title": "Kraftmoment",
+          "chapter": "4",
+          "parents": 72,
+          "cards": 77,
+          "levels": {
+            "1": 8,
+            "2": 24,
+            "3": 38,
+            "4": 6,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 51,
+          "self": 77,
+          "families": [
+            {
+              "name": "Momentjämvikt och hävstänger",
+              "cards": 30,
+              "parents": 18,
+              "levels": {
+                "1": 3,
+                "2": 13,
+                "3": 13,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 23
+            },
+            {
+              "name": "Kraftmoment och momentarm",
+              "cards": 16,
+              "parents": 7,
+              "levels": {
+                "1": 4,
+                "2": 4,
+                "3": 8,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 10
+            },
+            {
+              "name": "Tyngdpunkt och tippning",
+              "cards": 13,
+              "parents": 10,
+              "levels": {
+                "1": 1,
+                "2": 3,
+                "3": 6,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Stödkrafter och balkar",
+              "cards": 18,
+              "parents": 9,
+              "levels": {
+                "1": 0,
+                "2": 4,
+                "3": 11,
+                "4": 2,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 11
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "blandat_kraft",
+          "title": "Blandat – rörelse och kraft",
+          "chapter": "4",
+          "parents": 53,
+          "cards": 84,
+          "levels": {
+            "1": 0,
+            "2": 22,
+            "3": 54,
+            "4": 8,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 44,
+          "self": 84,
+          "families": [
+            {
+              "name": "Blandat – rörelse och kraft",
+              "cards": 84,
+              "parents": 36,
+              "levels": {
+                "1": 0,
+                "2": 22,
+                "3": 54,
+                "4": 8,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 44
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "arbete",
+          "title": "Arbete och lägesenergi",
+          "chapter": "5",
+          "parents": 103,
+          "cards": 145,
+          "levels": {
+            "1": 31,
+            "2": 71,
+            "3": 40,
+            "4": 3,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 30,
+          "self": 145,
+          "families": [
+            {
+              "name": "Fjäderenergi",
+              "cards": 18,
+              "parents": 14,
+              "levels": {
+                "1": 2,
+                "2": 10,
+                "3": 4,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 14
+            },
+            {
+              "name": "Lägesenergi och lyftarbete",
+              "cards": 50,
+              "parents": 24,
+              "levels": {
+                "1": 7,
+                "2": 30,
+                "3": 12,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            },
+            {
+              "name": "Arbete W = F·s",
+              "cards": 70,
+              "parents": 35,
+              "levels": {
+                "1": 22,
+                "2": 29,
+                "3": 19,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Arbete ur kraftdiagram",
+              "cards": 7,
+              "parents": 7,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 5,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "rorelseenergi",
+          "title": "Rörelseenergi",
+          "chapter": "5",
+          "parents": 104,
+          "cards": 205,
+          "levels": {
+            "1": 12,
+            "2": 66,
+            "3": 96,
+            "4": 28,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 17,
+          "self": 205,
+          "families": [
+            {
+              "name": "Nettoarbete och energiförluster",
+              "cards": 117,
+              "parents": 58,
+              "levels": {
+                "1": 4,
+                "2": 28,
+                "3": 58,
+                "4": 25,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 11
+            },
+            {
+              "name": "Energiprincipen",
+              "cards": 60,
+              "parents": 23,
+              "levels": {
+                "1": 2,
+                "2": 23,
+                "3": 32,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 6
+            },
+            {
+              "name": "Rörelseenergi Ek = mv²/2",
+              "cards": 28,
+              "parents": 14,
+              "levels": {
+                "1": 6,
+                "2": 15,
+                "3": 6,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "effekt",
+          "title": "Effekt och verkningsgrad",
+          "chapter": "5",
+          "parents": 110,
+          "cards": 175,
+          "levels": {
+            "1": 18,
+            "2": 69,
+            "3": 66,
+            "4": 15,
+            "5": 7,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 175,
+          "families": [
+            {
+              "name": "Effekt P = W/t",
+              "cards": 46,
+              "parents": 25,
+              "levels": {
+                "1": 7,
+                "2": 27,
+                "3": 9,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Effekt och fart (P = F·v)",
+              "cards": 49,
+              "parents": 29,
+              "levels": {
+                "1": 4,
+                "2": 5,
+                "3": 25,
+                "4": 8,
+                "5": 7,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Verkningsgrad",
+              "cards": 54,
+              "parents": 25,
+              "levels": {
+                "1": 4,
+                "2": 22,
+                "3": 25,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Energi i kWh och vardagen",
+              "cards": 26,
+              "parents": 11,
+              "levels": {
+                "1": 3,
+                "2": 15,
+                "3": 7,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "rorelsemangd",
+          "title": "Rörelsemängd och impuls",
+          "chapter": "5",
+          "parents": 84,
+          "cards": 115,
+          "levels": {
+            "1": 32,
+            "2": 68,
+            "3": 13,
+            "4": 1,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 1,
+          "self": 115,
+          "families": [
+            {
+              "name": "Rörelsemängd p = mv",
+              "cards": 23,
+              "parents": 19,
+              "levels": {
+                "1": 15,
+                "2": 8,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Impuls och medelkraft",
+              "cards": 92,
+              "parents": 60,
+              "levels": {
+                "1": 17,
+                "2": 60,
+                "3": 13,
+                "4": 1,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 1
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kollisioner",
+          "title": "Kollisioner",
+          "chapter": "5",
+          "parents": 112,
+          "cards": 135,
+          "levels": {
+            "1": 2,
+            "2": 54,
+            "3": 69,
+            "4": 6,
+            "5": 4,
+            "?": 0
+          },
+          "figures": 15,
+          "self": 135,
+          "families": [
+            {
+              "name": "Stötar där kropparna fastnar",
+              "cards": 80,
+              "parents": 55,
+              "levels": {
+                "1": 2,
+                "2": 32,
+                "3": 39,
+                "4": 4,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 15
+            },
+            {
+              "name": "Rekyl och isärskjutning",
+              "cards": 38,
+              "parents": 27,
+              "levels": {
+                "1": 0,
+                "2": 17,
+                "3": 19,
+                "4": 1,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Elastisk stöt och energikontroll",
+              "cards": 17,
+              "parents": 13,
+              "levels": {
+                "1": 0,
+                "2": 5,
+                "3": 11,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "blandat_energi",
+          "title": "Blandat – energi och rörelsemängd",
+          "chapter": "5",
+          "parents": 72,
+          "cards": 77,
+          "levels": {
+            "1": 0,
+            "2": 29,
+            "3": 40,
+            "4": 8,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 16,
+          "self": 77,
+          "families": [
+            {
+              "name": "Blandat – energi och rörelsemängd",
+              "cards": 77,
+              "parents": 37,
+              "levels": {
+                "1": 0,
+                "2": 29,
+                "3": 40,
+                "4": 8,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 16
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "tryck",
+          "title": "Tryck",
+          "chapter": "6",
+          "parents": 100,
+          "cards": 112,
+          "levels": {
+            "1": 20,
+            "2": 54,
+            "3": 34,
+            "4": 4,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 13,
+          "self": 112,
+          "families": [
+            {
+              "name": "Tryck i vardag och teknik",
+              "cards": 13,
+              "parents": 8,
+              "levels": {
+                "1": 1,
+                "2": 8,
+                "3": 3,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Tryck p = F/A",
+              "cards": 56,
+              "parents": 41,
+              "levels": {
+                "1": 13,
+                "2": 33,
+                "3": 10,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Hydraulik",
+              "cards": 24,
+              "parents": 18,
+              "levels": {
+                "1": 2,
+                "2": 4,
+                "3": 16,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 13
+            },
+            {
+              "name": "Övertryck och sugkoppar",
+              "cards": 19,
+              "parents": 16,
+              "levels": {
+                "1": 4,
+                "2": 9,
+                "3": 5,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "vatsketryck",
+          "title": "Vätsketryck och lufttryck",
+          "chapter": "6",
+          "parents": 97,
+          "cards": 124,
+          "levels": {
+            "1": 13,
+            "2": 57,
+            "3": 50,
+            "4": 3,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 35,
+          "self": 124,
+          "families": [
+            {
+              "name": "U-rör och manometrar",
+              "cards": 24,
+              "parents": 16,
+              "levels": {
+                "1": 0,
+                "2": 5,
+                "3": 16,
+                "4": 2,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 15
+            },
+            {
+              "name": "Vätsketryck p = ρgh",
+              "cards": 64,
+              "parents": 45,
+              "levels": {
+                "1": 10,
+                "2": 34,
+                "3": 19,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Absoluttryck, övertryck och lufttryck",
+              "cards": 36,
+              "parents": 19,
+              "levels": {
+                "1": 3,
+                "2": 18,
+                "3": 15,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 13
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "arkimedes",
+          "title": "Arkimedes princip",
+          "chapter": "6",
+          "parents": 134,
+          "cards": 178,
+          "levels": {
+            "1": 20,
+            "2": 69,
+            "3": 71,
+            "4": 14,
+            "5": 4,
+            "?": 0
+          },
+          "figures": 34,
+          "self": 178,
+          "families": [
+            {
+              "name": "Lyftkraft och undanträngd volym",
+              "cards": 29,
+              "parents": 21,
+              "levels": {
+                "1": 4,
+                "2": 23,
+                "3": 1,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Flytande kroppar",
+              "cards": 50,
+              "parents": 34,
+              "levels": {
+                "1": 5,
+                "2": 28,
+                "3": 13,
+                "4": 1,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 14
+            },
+            {
+              "name": "Ballonger och lastförmåga",
+              "cards": 35,
+              "parents": 21,
+              "levels": {
+                "1": 2,
+                "2": 3,
+                "3": 20,
+                "4": 9,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 6
+            },
+            {
+              "name": "Lyftkraft och kraftjämvikt",
+              "cards": 27,
+              "parents": 19,
+              "levels": {
+                "1": 4,
+                "2": 6,
+                "3": 15,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Vägning i vätska",
+              "cards": 37,
+              "parents": 18,
+              "levels": {
+                "1": 5,
+                "2": 9,
+                "3": 22,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 9
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "gaslagen",
+          "title": "Allmänna gaslagen",
+          "chapter": "6",
+          "parents": 171,
+          "cards": 228,
+          "levels": {
+            "1": 29,
+            "2": 69,
+            "3": 95,
+            "4": 35,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 27,
+          "self": 228,
+          "families": [
+            {
+              "name": "Kelvin, tryck- och volymenheter",
+              "cards": 27,
+              "parents": 13,
+              "levels": {
+                "1": 25,
+                "2": 2,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Allmänna gaslagen",
+              "cards": 49,
+              "parents": 36,
+              "levels": {
+                "1": 0,
+                "2": 7,
+                "3": 24,
+                "4": 18,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 12
+            },
+            {
+              "name": "Boyles lag",
+              "cards": 47,
+              "parents": 33,
+              "levels": {
+                "1": 2,
+                "2": 19,
+                "3": 19,
+                "4": 7,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 13
+            },
+            {
+              "name": "Tryck, volym och temperatur",
+              "cards": 58,
+              "parents": 50,
+              "levels": {
+                "1": 2,
+                "2": 29,
+                "3": 21,
+                "4": 6,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            },
+            {
+              "name": "Ideala gaslagen och gasmängd",
+              "cards": 47,
+              "parents": 30,
+              "levels": {
+                "1": 0,
+                "2": 12,
+                "3": 31,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "varme",
+          "title": "Värmeöverföring",
+          "chapter": "7",
+          "parents": 121,
+          "cards": 143,
+          "levels": {
+            "1": 10,
+            "2": 50,
+            "3": 69,
+            "4": 14,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 10,
+          "self": 143,
+          "families": [
+            {
+              "name": "Specifik värmekapacitet",
+              "cards": 50,
+              "parents": 37,
+              "levels": {
+                "1": 5,
+                "2": 31,
+                "3": 12,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Värmeledning och strålning",
+              "cards": 5,
+              "parents": 3,
+              "levels": {
+                "1": 1,
+                "2": 1,
+                "3": 2,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            },
+            {
+              "name": "Effekt och verkningsgrad vid uppvärmning",
+              "cards": 43,
+              "parents": 31,
+              "levels": {
+                "1": 1,
+                "2": 15,
+                "3": 26,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Värmebalans och termisk jämvikt",
+              "cards": 45,
+              "parents": 36,
+              "levels": {
+                "1": 3,
+                "2": 3,
+                "3": 29,
+                "4": 10,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "fasandring",
+          "title": "Fasändringar",
+          "chapter": "7",
+          "parents": 103,
+          "cards": 124,
+          "levels": {
+            "1": 19,
+            "2": 35,
+            "3": 62,
+            "4": 7,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 11,
+          "self": 124,
+          "families": [
+            {
+              "name": "Fasövergångar och värmekurvor",
+              "cards": 15,
+              "parents": 12,
+              "levels": {
+                "1": 5,
+                "2": 6,
+                "3": 3,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 4
+            },
+            {
+              "name": "Latent värme",
+              "cards": 36,
+              "parents": 31,
+              "levels": {
+                "1": 12,
+                "2": 11,
+                "3": 13,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Energikedjor och värmebalans med fasövergång",
+              "cards": 73,
+              "parents": 52,
+              "levels": {
+                "1": 2,
+                "2": 18,
+                "3": 46,
+                "4": 6,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 7
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "laddning",
+          "title": "Laddning",
+          "chapter": "8",
+          "parents": 25,
+          "cards": 26,
+          "levels": {
+            "1": 8,
+            "2": 13,
+            "3": 4,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 24,
+          "families": [
+            {
+              "name": "Laddning och elementarladdning",
+              "cards": 26,
+              "parents": 24,
+              "levels": {
+                "1": 8,
+                "2": 13,
+                "3": 4,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "coulomb",
+          "title": "Coulombs lag och ledare",
+          "chapter": "8",
+          "parents": 66,
+          "cards": 79,
+          "levels": {
+            "1": 1,
+            "2": 16,
+            "3": 49,
+            "4": 12,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 41,
+          "self": 68,
+          "families": [
+            {
+              "name": "Coulombs lag",
+              "cards": 55,
+              "parents": 34,
+              "levels": {
+                "1": 0,
+                "2": 15,
+                "3": 38,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 28
+            },
+            {
+              "name": "Kraftresultant från flera laddningar",
+              "cards": 14,
+              "parents": 11,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 7,
+                "4": 7,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 13
+            },
+            {
+              "name": "Ledare, influens och laddningsutjämning",
+              "cards": 10,
+              "parents": 9,
+              "levels": {
+                "1": 1,
+                "2": 1,
+                "3": 4,
+                "4": 3,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "strom",
+          "title": "Kretsar och ström",
+          "chapter": "8",
+          "parents": 30,
+          "cards": 40,
+          "levels": {
+            "1": 6,
+            "2": 14,
+            "3": 17,
+            "4": 3,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 37,
+          "families": [
+            {
+              "name": "Ström och laddning i kretsar",
+              "cards": 31,
+              "parents": 22,
+              "levels": {
+                "1": 4,
+                "2": 12,
+                "3": 13,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Kretsar och mätinstrument",
+              "cards": 9,
+              "parents": 7,
+              "levels": {
+                "1": 2,
+                "2": 2,
+                "3": 4,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kretsar",
+          "title": "Spänning och resistans",
+          "chapter": "8",
+          "parents": 68,
+          "cards": 71,
+          "levels": {
+            "1": 5,
+            "2": 25,
+            "3": 33,
+            "4": 8,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 66,
+          "families": [
+            {
+              "name": "Resistivitet och ledarresistans",
+              "cards": 57,
+              "parents": 47,
+              "levels": {
+                "1": 0,
+                "2": 21,
+                "3": 28,
+                "4": 8,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Ohms lag",
+              "cards": 14,
+              "parents": 12,
+              "levels": {
+                "1": 5,
+                "2": 4,
+                "3": 5,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "seriekoppling",
+          "title": "Seriekoppling",
+          "chapter": "8",
+          "parents": 23,
+          "cards": 53,
+          "levels": {
+            "1": 7,
+            "2": 0,
+            "3": 44,
+            "4": 0,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 44,
+          "self": 39,
+          "families": [
+            {
+              "name": "Ersättningsresistans och ström i serie",
+              "cards": 35,
+              "parents": 15,
+              "levels": {
+                "1": 6,
+                "2": 0,
+                "3": 28,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 31
+            },
+            {
+              "name": "Spänningsdelning i seriekoppling",
+              "cards": 18,
+              "parents": 7,
+              "levels": {
+                "1": 1,
+                "2": 0,
+                "3": 16,
+                "4": 0,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 13
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "parallellkoppling",
+          "title": "Parallellkoppling",
+          "chapter": "8",
+          "parents": 26,
+          "cards": 54,
+          "levels": {
+            "1": 5,
+            "2": 2,
+            "3": 46,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 48,
+          "self": 39,
+          "families": [
+            {
+              "name": "Strömfördelning i parallellkoppling",
+              "cards": 33,
+              "parents": 12,
+              "levels": {
+                "1": 4,
+                "2": 0,
+                "3": 29,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 29
+            },
+            {
+              "name": "Ersättningsresistans vid parallellkoppling",
+              "cards": 21,
+              "parents": 11,
+              "levels": {
+                "1": 1,
+                "2": 2,
+                "3": 17,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 19
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kopplingar",
+          "title": "Komplexa kopplingar och effektutveckling",
+          "chapter": "8",
+          "parents": 135,
+          "cards": 177,
+          "levels": {
+            "1": 10,
+            "2": 46,
+            "3": 93,
+            "4": 28,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 59,
+          "self": 157,
+          "families": [
+            {
+              "name": "Ems, polspänning och inre resistans",
+              "cards": 57,
+              "parents": 40,
+              "levels": {
+                "1": 7,
+                "2": 18,
+                "3": 23,
+                "4": 9,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 23
+            },
+            {
+              "name": "Elektrisk effekt och energi",
+              "cards": 81,
+              "parents": 47,
+              "levels": {
+                "1": 3,
+                "2": 25,
+                "3": 44,
+                "4": 9,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Effekt och verkningsgrad med inre resistans",
+              "cards": 17,
+              "parents": 14,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 10,
+                "4": 5,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 15
+            },
+            {
+              "name": "Blandade kopplingar",
+              "cards": 22,
+              "parents": 11,
+              "levels": {
+                "1": 0,
+                "2": 1,
+                "3": 16,
+                "4": 5,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 21
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "falt",
+          "title": "Elektriska fält och fältstyrka",
+          "chapter": "8",
+          "parents": 61,
+          "cards": 74,
+          "levels": {
+            "1": 2,
+            "2": 17,
+            "3": 36,
+            "4": 19,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 32,
+          "self": 63,
+          "families": [
+            {
+              "name": "Homogent fält mellan plattor (E = U/d)",
+              "cards": 18,
+              "parents": 9,
+              "levels": {
+                "1": 0,
+                "2": 3,
+                "3": 11,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 18
+            },
+            {
+              "name": "Fältstyrka och kraft (E = F/q)",
+              "cards": 21,
+              "parents": 21,
+              "levels": {
+                "1": 2,
+                "2": 14,
+                "3": 5,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Laddade partiklar i elektriska fält",
+              "cards": 17,
+              "parents": 8,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 10,
+                "4": 7,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Punktladdningens fält",
+              "cards": 18,
+              "parents": 16,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 10,
+                "4": 8,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 9
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "potential",
+          "title": "Potential",
+          "chapter": "8",
+          "parents": 60,
+          "cards": 75,
+          "levels": {
+            "1": 10,
+            "2": 5,
+            "3": 43,
+            "4": 17,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 31,
+          "self": 61,
+          "families": [
+            {
+              "name": "Potentialskillnad och energi (W = qU)",
+              "cards": 30,
+              "parents": 28,
+              "levels": {
+                "1": 9,
+                "2": 5,
+                "3": 5,
+                "4": 11,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Potentialvandring i kretsar",
+              "cards": 34,
+              "parents": 14,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 31,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 31
+            },
+            {
+              "name": "Elektronvolt och accelererade partiklar",
+              "cards": 11,
+              "parents": 9,
+              "levels": {
+                "1": 1,
+                "2": 0,
+                "3": 7,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "standardmodellen",
+          "title": "Standardmodellen",
+          "chapter": "9",
+          "parents": 16,
+          "cards": 11,
+          "levels": {
+            "1": 4,
+            "2": 4,
+            "3": 2,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 11,
+          "families": [
+            {
+              "name": "Kvarkarnas laddning",
+              "cards": 6,
+              "parents": 6,
+              "levels": {
+                "1": 1,
+                "2": 2,
+                "3": 2,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Elementarpartiklar och kvarkar",
+              "cards": 5,
+              "parents": 5,
+              "levels": {
+                "1": 3,
+                "2": 2,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "fyra_krafterna",
+          "title": "De fyra krafterna",
+          "chapter": "9",
+          "parents": 12,
+          "cards": 12,
+          "levels": {
+            "1": 3,
+            "2": 4,
+            "3": 3,
+            "4": 1,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 12,
+          "families": [
+            {
+              "name": "De fyra fundamentala krafterna",
+              "cards": 12,
+              "parents": 12,
+              "levels": {
+                "1": 3,
+                "2": 4,
+                "3": 3,
+                "4": 1,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "nuklider",
+          "title": "Isotoper och nuklider",
+          "chapter": "9",
+          "parents": 78,
+          "cards": 87,
+          "levels": {
+            "1": 24,
+            "2": 16,
+            "3": 33,
+            "4": 14,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 80,
+          "families": [
+            {
+              "name": "Nuklidbeteckning och isotoper",
+              "cards": 31,
+              "parents": 27,
+              "levels": {
+                "1": 20,
+                "2": 3,
+                "3": 7,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Massdefekt och bindningsenergi",
+              "cards": 56,
+              "parents": 38,
+              "levels": {
+                "1": 4,
+                "2": 13,
+                "3": 26,
+                "4": 13,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "karnreaktioner",
+          "title": "Kärnreaktioner och alfasönderfall",
+          "chapter": "9",
+          "parents": 47,
+          "cards": 26,
+          "levels": {
+            "1": 6,
+            "2": 3,
+            "3": 16,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 24,
+          "families": [
+            {
+              "name": "Alfasönderfall",
+              "cards": 15,
+              "parents": 12,
+              "levels": {
+                "1": 4,
+                "2": 0,
+                "3": 10,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Reaktionsformler och bevarandelagar",
+              "cards": 5,
+              "parents": 5,
+              "levels": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Energi i kärnreaktioner",
+              "cards": 6,
+              "parents": 4,
+              "levels": {
+                "1": 0,
+                "2": 1,
+                "3": 5,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "sonderfall",
+          "title": "Sönderfall",
+          "chapter": "9",
+          "parents": 23,
+          "cards": 15,
+          "levels": {
+            "1": 6,
+            "2": 2,
+            "3": 6,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 14,
+          "families": [
+            {
+              "name": "Beta-plus-sönderfall, elektroninfångning och gamma",
+              "cards": 8,
+              "parents": 6,
+              "levels": {
+                "1": 2,
+                "2": 1,
+                "3": 4,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Beta-minus-sönderfall",
+              "cards": 7,
+              "parents": 7,
+              "levels": {
+                "1": 4,
+                "2": 1,
+                "3": 2,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "aktivitet",
+          "title": "Aktivitet och halveringstid",
+          "chapter": "9",
+          "parents": 101,
+          "cards": 131,
+          "levels": {
+            "1": 17,
+            "2": 19,
+            "3": 76,
+            "4": 16,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 7,
+          "self": 117,
+          "families": [
+            {
+              "name": "Halveringstid i hela steg",
+              "cards": 28,
+              "parents": 22,
+              "levels": {
+                "1": 12,
+                "2": 10,
+                "3": 6,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Halveringstid ur diagram och mätdata",
+              "cards": 14,
+              "parents": 9,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 13,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Aktivitet och antal kärnor",
+              "cards": 48,
+              "parents": 27,
+              "levels": {
+                "1": 5,
+                "2": 8,
+                "3": 31,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Sönderfallslagen och datering",
+              "cards": 41,
+              "parents": 32,
+              "levels": {
+                "1": 0,
+                "2": 1,
+                "3": 26,
+                "4": 11,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "stralning_materia",
+          "title": "Strålning möter materia",
+          "chapter": "9",
+          "parents": 19,
+          "cards": 20,
+          "levels": {
+            "1": 3,
+            "2": 4,
+            "3": 9,
+            "4": 4,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 18,
+          "families": [
+            {
+              "name": "Skärmning och halveringstjocklek",
+              "cards": 14,
+              "parents": 10,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 8,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Joniserande strålning och genomträngning",
+              "cards": 6,
+              "parents": 6,
+              "levels": {
+                "1": 3,
+                "2": 2,
+                "3": 1,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "fusion",
+          "title": "Fusion",
+          "chapter": "9",
+          "parents": 19,
+          "cards": 34,
+          "levels": {
+            "1": 2,
+            "2": 15,
+            "3": 14,
+            "4": 3,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 34,
+          "families": [
+            {
+              "name": "Fusion och energi",
+              "cards": 34,
+              "parents": 18,
+              "levels": {
+                "1": 2,
+                "2": 15,
+                "3": 14,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "medicinska_metoder",
+          "title": "Medicinska metoder",
+          "chapter": "9",
+          "parents": 13,
+          "cards": 17,
+          "levels": {
+            "1": 3,
+            "2": 5,
+            "3": 3,
+            "4": 6,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 14,
+          "families": [
+            {
+              "name": "Strålning i medicin",
+              "cards": 17,
+              "parents": 11,
+              "levels": {
+                "1": 3,
+                "2": 5,
+                "3": 3,
+                "4": 6,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "straldoser",
+          "title": "Stråldoser",
+          "chapter": "9",
+          "parents": 77,
+          "cards": 89,
+          "levels": {
+            "1": 18,
+            "2": 13,
+            "3": 44,
+            "4": 11,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 83,
+          "families": [
+            {
+              "name": "Absorberad dos (Gy)",
+              "cards": 24,
+              "parents": 19,
+              "levels": {
+                "1": 7,
+                "2": 9,
+                "3": 7,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Ekvivalent dos (Sv)",
+              "cards": 38,
+              "parents": 32,
+              "levels": {
+                "1": 7,
+                "2": 3,
+                "3": 24,
+                "4": 2,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Dosrat, avstånd och strålskydd",
+              "cards": 27,
+              "parents": 20,
+              "levels": {
+                "1": 4,
+                "2": 1,
+                "3": 13,
+                "4": 8,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "fission",
+          "title": "Fission",
+          "chapter": "9",
+          "parents": 26,
+          "cards": 42,
+          "levels": {
+            "1": 1,
+            "2": 13,
+            "3": 20,
+            "4": 8,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 41,
+          "families": [
+            {
+              "name": "Fission och energiutvinning",
+              "cards": 42,
+              "parents": 24,
+              "levels": {
+                "1": 1,
+                "2": 13,
+                "3": 20,
+                "4": 8,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "em_stralning",
+          "title": "Elektromagnetisk strålning",
+          "chapter": "9",
+          "parents": 19,
+          "cards": 14,
+          "levels": {
+            "1": 2,
+            "2": 5,
+            "3": 6,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 14,
+          "families": [
+            {
+              "name": "Det elektromagnetiska spektrumet",
+              "cards": 7,
+              "parents": 7,
+              "levels": {
+                "1": 2,
+                "2": 5,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Fotonenergi",
+              "cards": 7,
+              "parents": 7,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 6,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        }
+      ]
+    },
+    "matf1": {
+      "parents": 1531,
+      "areas": [
+        {
+          "key": "ladprincipen",
+          "title": "Lådprincipen",
+          "chapter": "1",
+          "parents": 41,
+          "cards": 45,
+          "levels": {
+            "1": 10,
+            "2": 23,
+            "3": 7,
+            "4": 4,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 29,
+          "families": [
+            {
+              "name": "Använda lådprincipen",
+              "cards": 45,
+              "parents": 41,
+              "levels": {
+                "1": 10,
+                "2": 23,
+                "3": 7,
+                "4": 4,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "mult_add_principen",
+          "title": "Multiplikationsprincipen och additionsprincipen",
+          "chapter": "1",
+          "parents": 72,
+          "cards": 84,
+          "levels": {
+            "1": 34,
+            "2": 28,
+            "3": 15,
+            "4": 5,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 5,
+          "self": 83,
+          "families": [
+            {
+              "name": "Multiplikations- och additionsprincipen",
+              "cards": 84,
+              "parents": 72,
+              "levels": {
+                "1": 34,
+                "2": 28,
+                "3": 15,
+                "4": 5,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 5
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "permutationer",
+          "title": "Permutationer",
+          "chapter": "1",
+          "parents": 79,
+          "cards": 102,
+          "levels": {
+            "1": 23,
+            "2": 22,
+            "3": 44,
+            "4": 11,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 8,
+          "self": 101,
+          "families": [
+            {
+              "name": "Permutationer och ordnade urval",
+              "cards": 67,
+              "parents": 52,
+              "levels": {
+                "1": 22,
+                "2": 19,
+                "3": 21,
+                "4": 4,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Permutationer och ordningar med placeringsvillkor",
+              "cards": 35,
+              "parents": 27,
+              "levels": {
+                "1": 1,
+                "2": 3,
+                "3": 23,
+                "4": 7,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kombinationer",
+          "title": "Kombinationer",
+          "chapter": "1",
+          "parents": 84,
+          "cards": 112,
+          "levels": {
+            "1": 20,
+            "2": 44,
+            "3": 31,
+            "4": 14,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 5,
+          "self": 111,
+          "families": [
+            {
+              "name": "Kombinationer och urval",
+              "cards": 103,
+              "parents": 75,
+              "levels": {
+                "1": 20,
+                "2": 44,
+                "3": 29,
+                "4": 10,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 5
+            },
+            {
+              "name": "Fördela identiska objekt med villkor",
+              "cards": 9,
+              "parents": 8,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 2,
+                "4": 4,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kombinatorik_sannolikhet",
+          "title": "Sannolikhetslära och kombinatorik",
+          "chapter": "1",
+          "parents": 107,
+          "cards": 169,
+          "levels": {
+            "1": 17,
+            "2": 56,
+            "3": 64,
+            "4": 22,
+            "5": 10,
+            "?": 0
+          },
+          "figures": 1,
+          "self": 169,
+          "families": [
+            {
+              "name": "Kombinatorisk sannolikhet",
+              "cards": 169,
+              "parents": 107,
+              "levels": {
+                "1": 17,
+                "2": 56,
+                "3": 64,
+                "4": 22,
+                "5": 10,
+                "?": 0
+              },
+              "figures": 1
+            }
+          ],
+          "clusters": [
+            {
+              "text": "ett rättvist mynt kastas # gånger. bestäm sannolikheten för exakt # kronor. du kan svara med exakt bråk, decimaltal eller procent.",
+              "ids": [
+                "1.549",
+                "1.550",
+                "1.552",
+                "1.559"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "binomialsatsen",
+          "title": "Binomialsatsen",
+          "chapter": "1",
+          "parents": 78,
+          "cards": 88,
+          "levels": {
+            "1": 8,
+            "2": 20,
+            "3": 43,
+            "4": 14,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 1,
+          "self": 86,
+          "families": [
+            {
+              "name": "Använda binomialsatsen",
+              "cards": 88,
+              "parents": 78,
+              "levels": {
+                "1": 8,
+                "2": 20,
+                "3": 43,
+                "4": 14,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 1
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "mangdlara_grund",
+          "title": "Mängdlära – grundbegrepp",
+          "chapter": "1",
+          "parents": 30,
+          "cards": 39,
+          "levels": {
+            "1": 18,
+            "2": 16,
+            "3": 4,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 2,
+          "self": 32,
+          "families": [
+            {
+              "name": "Mängder, element och mängdbyggare",
+              "cards": 39,
+              "parents": 28,
+              "levels": {
+                "1": 18,
+                "2": 16,
+                "3": 4,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "mangdoperatorer",
+          "title": "Mängdoperatorer",
+          "chapter": "1",
+          "parents": 24,
+          "cards": 43,
+          "levels": {
+            "1": 18,
+            "2": 16,
+            "3": 6,
+            "4": 2,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 41,
+          "families": [
+            {
+              "name": "Union, snitt, differens och komplement",
+              "cards": 43,
+              "parents": 24,
+              "levels": {
+                "1": 18,
+                "2": 16,
+                "3": 6,
+                "4": 2,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "venndiagram",
+          "title": "Venndiagram",
+          "chapter": "1",
+          "parents": 67,
+          "cards": 72,
+          "levels": {
+            "1": 7,
+            "2": 31,
+            "3": 20,
+            "4": 13,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 22,
+          "self": 63,
+          "families": [
+            {
+              "name": "Inklusion–exklusion och antal i mängder",
+              "cards": 57,
+              "parents": 54,
+              "levels": {
+                "1": 4,
+                "2": 22,
+                "3": 17,
+                "4": 13,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 7
+            },
+            {
+              "name": "Venndiagram och områden",
+              "cards": 15,
+              "parents": 9,
+              "levels": {
+                "1": 3,
+                "2": 9,
+                "3": 3,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 15
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "delbarhet_primtal",
+          "title": "Delbarhet och primtal",
+          "chapter": "2",
+          "parents": 44,
+          "cards": 49,
+          "levels": {
+            "1": 11,
+            "2": 19,
+            "3": 16,
+            "4": 1,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 42,
+          "families": [
+            {
+              "name": "Delbarhet, delbarhetsregler och primtalsfaktorisering",
+              "cards": 49,
+              "parents": 44,
+              "levels": {
+                "1": 11,
+                "2": 19,
+                "3": 16,
+                "4": 1,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": [
+            {
+              "text": "hur många positiva delare har talet #?",
+              "ids": [
+                "2.164",
+                "2.517",
+                "2.549",
+                "2.584"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "gemensamma_faktorer",
+          "title": "Gemensamma och icke gemensamma faktorer",
+          "chapter": "2",
+          "parents": 45,
+          "cards": 52,
+          "levels": {
+            "1": 6,
+            "2": 21,
+            "3": 18,
+            "4": 5,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 46,
+          "families": [
+            {
+              "name": "Största gemensamma delare och minsta gemensamma multipel",
+              "cards": 52,
+              "parents": 45,
+              "levels": {
+                "1": 6,
+                "2": 21,
+                "3": 18,
+                "4": 5,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "kongruens",
+          "title": "Kongruens och moduloräkning",
+          "chapter": "2",
+          "parents": 86,
+          "cards": 108,
+          "levels": {
+            "1": 28,
+            "2": 45,
+            "3": 25,
+            "4": 9,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 101,
+          "families": [
+            {
+              "name": "Räkna med modularitet och kongruenser",
+              "cards": 69,
+              "parents": 56,
+              "levels": {
+                "1": 23,
+                "2": 22,
+                "3": 17,
+                "4": 6,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Restklasser och tillämpningar av modulo",
+              "cards": 39,
+              "parents": 30,
+              "levels": {
+                "1": 5,
+                "2": 23,
+                "3": 8,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": [
+            {
+              "text": "bestäm resten när \\(#^#\\) divideras med #.",
+              "ids": [
+                "2.197",
+                "2.318",
+                "2.319",
+                "2.320",
+                "2.567"
+              ]
+            },
+            {
+              "text": "bestäm resten när \\(#^{#}\\) divideras med #.",
+              "ids": [
+                "2.387",
+                "2.93",
+                "2.559",
+                "2.560"
+              ]
+            },
+            {
+              "text": "bestäm slutsiffran i \\(#^{#}\\).",
+              "ids": [
+                "2.30",
+                "2.121",
+                "2.561",
+                "2.562"
+              ]
+            },
+            {
+              "text": "bestäm den minsta icke-negativa resten då # divideras med #.",
+              "ids": [
+                "2.525",
+                "2.526",
+                "2.527",
+                "2.528"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "talbaser",
+          "title": "Talsystem med olika baser",
+          "chapter": "2",
+          "parents": 44,
+          "cards": 49,
+          "levels": {
+            "1": 8,
+            "2": 20,
+            "3": 16,
+            "4": 2,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 1,
+          "self": 48,
+          "families": [
+            {
+              "name": "Talbaser och basomvandling",
+              "cards": 49,
+              "parents": 44,
+              "levels": {
+                "1": 8,
+                "2": 20,
+                "3": 16,
+                "4": 2,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 1
+            }
+          ],
+          "clusters": [
+            {
+              "text": "omvandla \\(#_#\\) till bas tio.",
+              "ids": [
+                "2.63",
+                "2.83",
+                "2.85",
+                "2.116"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "inledning_talfoljder",
+          "title": "Inledning talföljder",
+          "chapter": "2",
+          "parents": 37,
+          "cards": 45,
+          "levels": {
+            "1": 11,
+            "2": 18,
+            "3": 12,
+            "4": 3,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 34,
+          "families": [
+            {
+              "name": "Talföljder och sigmanotation",
+              "cards": 45,
+              "parents": 37,
+              "levels": {
+                "1": 11,
+                "2": 18,
+                "3": 12,
+                "4": 3,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "rekursionsformler",
+          "title": "Rekursionsformler",
+          "chapter": "2",
+          "parents": 38,
+          "cards": 49,
+          "levels": {
+            "1": 8,
+            "2": 20,
+            "3": 12,
+            "4": 6,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 38,
+          "families": [
+            {
+              "name": "Rekursiva talföljder och modeller",
+              "cards": 49,
+              "parents": 38,
+              "levels": {
+                "1": 8,
+                "2": 20,
+                "3": 12,
+                "4": 6,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "aritm_geom_talfoljder",
+          "title": "Aritmetiska och geometriska talföljder",
+          "chapter": "2",
+          "parents": 37,
+          "cards": 45,
+          "levels": {
+            "1": 17,
+            "2": 12,
+            "3": 12,
+            "4": 3,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 41,
+          "families": [
+            {
+              "name": "Aritmetiska och geometriska talföljder och summor",
+              "cards": 45,
+              "parents": 37,
+              "levels": {
+                "1": 17,
+                "2": 12,
+                "3": 12,
+                "4": 3,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "talfoljder_tillampningar",
+          "title": "Tillämpningar av talföljder",
+          "chapter": "2",
+          "parents": 56,
+          "cards": 105,
+          "levels": {
+            "1": 7,
+            "2": 43,
+            "3": 32,
+            "4": 21,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 9,
+          "self": 105,
+          "families": [
+            {
+              "name": "Talföljder i ekonomi, natur och samhälle",
+              "cards": 105,
+              "parents": 56,
+              "levels": {
+                "1": 7,
+                "2": 43,
+                "3": 32,
+                "4": 21,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 9
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "induktionsbevis",
+          "title": "Induktionsbevis",
+          "chapter": "2",
+          "parents": 22,
+          "cards": 22,
+          "levels": {
+            "1": 3,
+            "2": 5,
+            "3": 6,
+            "4": 3,
+            "5": 5,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 5,
+          "families": [
+            {
+              "name": "Matematiska induktionsbevis",
+              "cards": 22,
+              "parents": 22,
+              "levels": {
+                "1": 3,
+                "2": 5,
+                "3": 6,
+                "4": 3,
+                "5": 5,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "direkta_bevis",
+          "title": "Direkta bevis",
+          "chapter": "2",
+          "parents": 21,
+          "cards": 21,
+          "levels": {
+            "1": 7,
+            "2": 8,
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 11,
+          "families": [
+            {
+              "name": "Direkta bevis och metodval",
+              "cards": 21,
+              "parents": 21,
+              "levels": {
+                "1": 7,
+                "2": 8,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "indirekta_bevis",
+          "title": "Indirekta bevis",
+          "chapter": "2",
+          "parents": 25,
+          "cards": 25,
+          "levels": {
+            "1": 5,
+            "2": 13,
+            "3": 1,
+            "4": 4,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 12,
+          "families": [
+            {
+              "name": "Motsägelsebevis",
+              "cards": 15,
+              "parents": 15,
+              "levels": {
+                "1": 4,
+                "2": 6,
+                "3": 1,
+                "4": 2,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Kontraposition och motexempel",
+              "cards": 10,
+              "parents": 10,
+              "levels": {
+                "1": 1,
+                "2": 7,
+                "3": 0,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "repetition_derivator",
+          "title": "Repetition derivator",
+          "chapter": "3",
+          "parents": 10,
+          "cards": 6,
+          "levels": {
+            "1": 0,
+            "2": 2,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 6,
+          "families": [
+            {
+              "name": "Derivata och ekvationer med digitala verktyg",
+              "cards": 6,
+              "parents": 6,
+              "levels": {
+                "1": 0,
+                "2": 2,
+                "3": 3,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "linjar_approximation",
+          "title": "Tangenter och linjär approximation",
+          "chapter": "3",
+          "parents": 33,
+          "cards": 42,
+          "levels": {
+            "1": 9,
+            "2": 21,
+            "3": 10,
+            "4": 1,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 2,
+          "self": 40,
+          "families": [
+            {
+              "name": "Linjär approximation med derivata",
+              "cards": 42,
+              "parents": 33,
+              "levels": {
+                "1": 9,
+                "2": 21,
+                "3": 10,
+                "4": 1,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 2
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "forandringshastigheter",
+          "title": "Förändringshastigheter och derivator",
+          "chapter": "3",
+          "parents": 80,
+          "cards": 84,
+          "levels": {
+            "1": 23,
+            "2": 20,
+            "3": 25,
+            "4": 13,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 26,
+          "self": 84,
+          "families": [
+            {
+              "name": "Relaterade förändringshastigheter",
+              "cards": 84,
+              "parents": 80,
+              "levels": {
+                "1": 23,
+                "2": 20,
+                "3": 25,
+                "4": 13,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 26
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "integraler_area",
+          "title": "Primitiva funktioner, integraler och area",
+          "chapter": "3",
+          "parents": 23,
+          "cards": 20,
+          "levels": {
+            "1": 7,
+            "2": 5,
+            "3": 5,
+            "4": 3,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 4,
+          "self": 17,
+          "families": [
+            {
+              "name": "Integraler, area och medelvärde",
+              "cards": 20,
+              "parents": 20,
+              "levels": {
+                "1": 7,
+                "2": 5,
+                "3": 5,
+                "4": 3,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 4
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "partiell_integration",
+          "title": "Partiell integration",
+          "chapter": "3",
+          "parents": 31,
+          "cards": 39,
+          "levels": {
+            "1": 3,
+            "2": 13,
+            "3": 11,
+            "4": 10,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 39,
+          "families": [
+            {
+              "name": "Partiell integration",
+              "cards": 39,
+              "parents": 31,
+              "levels": {
+                "1": 3,
+                "2": 13,
+                "3": 11,
+                "4": 10,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "generaliserade_integraler",
+          "title": "Generaliserade integraler",
+          "chapter": "3",
+          "parents": 40,
+          "cards": 42,
+          "levels": {
+            "1": 11,
+            "2": 13,
+            "3": 9,
+            "4": 6,
+            "5": 3,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 35,
+          "families": [
+            {
+              "name": "Generaliserade integraler",
+              "cards": 42,
+              "parents": 38,
+              "levels": {
+                "1": 11,
+                "2": 13,
+                "3": 9,
+                "4": 6,
+                "5": 3,
+                "?": 0
+              },
+              "figures": 3
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "vad_ar_diffekv",
+          "title": "Vad är en differentialekvation?",
+          "chapter": "4",
+          "parents": 20,
+          "cards": 16,
+          "levels": {
+            "1": 9,
+            "2": 5,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 11,
+          "families": [
+            {
+              "name": "Grundläggande analys av differentialekvationer",
+              "cards": 16,
+              "parents": 13,
+              "levels": {
+                "1": 9,
+                "2": 5,
+                "3": 1,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "verifiering",
+          "title": "Verifiering av en lösning",
+          "chapter": "4",
+          "parents": 15,
+          "cards": 8,
+          "levels": {
+            "1": 1,
+            "2": 1,
+            "3": 4,
+            "4": 2,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 8,
+          "families": [
+            {
+              "name": "Verifiera och bestämma differentialekvation från lösning",
+              "cards": 8,
+              "parents": 8,
+              "levels": {
+                "1": 1,
+                "2": 1,
+                "3": 4,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "homogena_forsta",
+          "title": "Differentialekvationen y' + ay = 0",
+          "chapter": "4",
+          "parents": 21,
+          "cards": 23,
+          "levels": {
+            "1": 8,
+            "2": 9,
+            "3": 4,
+            "4": 2,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 22,
+          "families": [
+            {
+              "name": "Lösa y' = ky och begynnelsevärdesproblem",
+              "cards": 23,
+              "parents": 21,
+              "levels": {
+                "1": 8,
+                "2": 9,
+                "3": 4,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "homogena_andra",
+          "title": "Differentialekvationen y'' + ay' + by = 0",
+          "chapter": "4",
+          "parents": 37,
+          "cards": 33,
+          "levels": {
+            "1": 6,
+            "2": 11,
+            "3": 12,
+            "4": 3,
+            "5": 1,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 31,
+          "families": [
+            {
+              "name": "Begynnelsevärdesproblem",
+              "cards": 19,
+              "parents": 19,
+              "levels": {
+                "1": 0,
+                "2": 4,
+                "3": 11,
+                "4": 3,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Homogena differentialekvationer av andra ordningen",
+              "cards": 14,
+              "parents": 14,
+              "levels": {
+                "1": 6,
+                "2": 7,
+                "3": 1,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": [
+            {
+              "text": "lös \\(y''+#y'+#y=#\\).",
+              "ids": [
+                "4.74",
+                "4.75",
+                "4.99",
+                "4.77"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "inhomogena_forsta",
+          "title": "Inhomogena differentialekvationer av första ordningen",
+          "chapter": "4",
+          "parents": 16,
+          "cards": 16,
+          "levels": {
+            "1": 0,
+            "2": 10,
+            "3": 4,
+            "4": 0,
+            "5": 2,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 16,
+          "families": [
+            {
+              "name": "Lösa inhomogena ekvationer av första ordningen",
+              "cards": 16,
+              "parents": 16,
+              "levels": {
+                "1": 0,
+                "2": 10,
+                "3": 4,
+                "4": 0,
+                "5": 2,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "inhomogena_andra",
+          "title": "Inhomogena differentialekvationer av andra ordningen",
+          "chapter": "4",
+          "parents": 28,
+          "cards": 23,
+          "levels": {
+            "1": 0,
+            "2": 9,
+            "3": 6,
+            "4": 8,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 21,
+          "families": [
+            {
+              "name": "Inhomogena differentialekvationer av andra ordningen",
+              "cards": 18,
+              "parents": 18,
+              "levels": {
+                "1": 0,
+                "2": 8,
+                "3": 6,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            },
+            {
+              "name": "Begynnelsevärdesproblem",
+              "cards": 5,
+              "parents": 5,
+              "levels": {
+                "1": 0,
+                "2": 1,
+                "3": 0,
+                "4": 4,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "forandringsmodeller",
+          "title": "Förändringsmodeller – blandning, avsvalning och fritt fall",
+          "chapter": "4",
+          "parents": 76,
+          "cards": 78,
+          "levels": {
+            "1": 11,
+            "2": 24,
+            "3": 28,
+            "4": 10,
+            "5": 5,
+            "?": 0
+          },
+          "figures": 3,
+          "self": 76,
+          "families": [
+            {
+              "name": "Tillväxt, sönderfall och avsvalning med differentialekvationer",
+              "cards": 54,
+              "parents": 43,
+              "levels": {
+                "1": 5,
+                "2": 17,
+                "3": 22,
+                "4": 6,
+                "5": 4,
+                "?": 0
+              },
+              "figures": 2
+            },
+            {
+              "name": "Modellering med differentialekvationer",
+              "cards": 24,
+              "parents": 19,
+              "levels": {
+                "1": 6,
+                "2": 7,
+                "3": 6,
+                "4": 4,
+                "5": 1,
+                "?": 0
+              },
+              "figures": 1
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "riktningsfalt_euler",
+          "title": "Riktningsfält och Eulers stegmetod",
+          "chapter": "4",
+          "parents": 36,
+          "cards": 30,
+          "levels": {
+            "1": 9,
+            "2": 10,
+            "3": 7,
+            "4": 4,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 6,
+          "self": 26,
+          "families": [
+            {
+              "name": "Eulers metod",
+              "cards": 12,
+              "parents": 10,
+              "levels": {
+                "1": 2,
+                "2": 6,
+                "3": 4,
+                "4": 0,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 2
+            },
+            {
+              "name": "Tolka riktningsfält och lösningskurvor",
+              "cards": 13,
+              "parents": 9,
+              "levels": {
+                "1": 7,
+                "2": 4,
+                "3": 0,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 4
+            },
+            {
+              "name": "Tolka och kontrollera digitala differentialekvationslösningar",
+              "cards": 5,
+              "parents": 4,
+              "levels": {
+                "1": 0,
+                "2": 0,
+                "3": 3,
+                "4": 2,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        },
+        {
+          "key": "tillvaxt_begransning",
+          "title": "Tillväxt med begränsningar",
+          "chapter": "4",
+          "parents": 28,
+          "cards": 50,
+          "levels": {
+            "1": 7,
+            "2": 22,
+            "3": 20,
+            "4": 1,
+            "5": 0,
+            "?": 0
+          },
+          "figures": 0,
+          "self": 50,
+          "families": [
+            {
+              "name": "Logistisk tillväxt",
+              "cards": 50,
+              "parents": 26,
+              "levels": {
+                "1": 7,
+                "2": 22,
+                "3": 20,
+                "4": 1,
+                "5": 0,
+                "?": 0
+              },
+              "figures": 0
+            }
+          ],
+          "clusters": []
+        }
+      ]
+    }
+  },
+  "changes": [
+    {
+      "bank": "fy1",
+      "id": "5.593",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "svarFormat",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.596",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.597",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600",
+      "area": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.377",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.379",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.381",
+      "area": "mult_add_principen",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.528",
+      "area": "kombinationer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.531",
+      "area": "kombinationer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.536",
+      "area": "binomialsatsen",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.542",
+      "area": "binomialsatsen",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "ledtrad",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.546",
+      "area": "binomialsatsen",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.603",
+      "area": "binomialsatsen",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "traningsniva",
+        "ledtrad"
+      ]
+    }
+  ],
+  "changedCards": [
+    {
+      "bank": "fy1",
+      "id": "5.593",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "svarFormat"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594a",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594b",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594c",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594d",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595a",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595b",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595c",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595d",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.596",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.597a",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.597b",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599a",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599b",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600a",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600b",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600c",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.377",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.379",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.381",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.528",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.531",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.536",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.542",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.546",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ]
+    },
+    {
+      "bank": "matf1",
+      "id": "1.603",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva",
+        "rättSvar"
+      ]
+    }
+  ],
+  "levelChanges": [
+    {
+      "bank": "fy1",
+      "id": "5.595a",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599b",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "bank": "matf1",
+      "id": "1.377",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.379",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.381",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.528",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.531",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.542",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "bank": "matf1",
+      "id": "1.603",
+      "before": 2,
+      "after": 1
+    }
+  ],
+  "calculationChecks": [
+    {
+      "bank": "fy1",
+      "id": "5.593",
+      "before": 133,
+      "calculated": 133,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594a",
+      "before": 0.7553846153846154,
+      "calculated": 75.53846153846153,
+      "percentConversion": true
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594b",
+      "before": 36.825,
+      "calculated": 36.825,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594c",
+      "before": 18.329938900203665,
+      "calculated": 18.329938900203665,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.594d",
+      "before": 0.20987909427966103,
+      "calculated": 20.987909427966102,
+      "percentConversion": true
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595a",
+      "before": 298282500.0,
+      "calculated": 298282500.0,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595b",
+      "before": 26.111024074364195,
+      "calculated": 26.111024074364195,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595c",
+      "before": 170486.11111111112,
+      "calculated": 170486.11111111112,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.595d",
+      "before": 0.15218803324709637,
+      "calculated": 0.15218803324709637,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.596",
+      "before": 581200.0,
+      "calculated": 581200.0,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.597a",
+      "before": 5187397.789607466,
+      "calculated": 5187397.789607466,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.597b",
+      "before": 244845.17566947243,
+      "calculated": 244845.17566947243,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599a",
+      "before": 13705.042408152225,
+      "calculated": 13705.042408152225,
+      "percentConversion": false
+    },
+    {
+      "bank": "fy1",
+      "id": "5.599b",
+      "before": 0.32121193144106774,
+      "calculated": 32.10937499999999,
+      "percentConversion": true
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600a",
+      "before": 0.375,
+      "calculated": 37.5,
+      "percentConversion": true
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600b",
+      "before": 0.13304347826086957,
+      "calculated": 13.304347826086957,
+      "percentConversion": true
+    },
+    {
+      "bank": "fy1",
+      "id": "5.600c",
+      "before": 0.14549198674903752,
+      "calculated": 14.54919867490375,
+      "percentConversion": true
+    },
+    {
+      "bank": "matf1",
+      "id": "1.542",
+      "before": 40,
+      "calculated": 10,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.603",
+      "before": 40,
+      "calculated": 10,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.536",
+      "before": 40,
+      "calculated": 4,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.546",
+      "before": 64,
+      "calculated": 32,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.377",
+      "before": 24,
+      "calculated": 24,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.379",
+      "before": 160,
+      "calculated": 160,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.381",
+      "before": 63,
+      "calculated": 63,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.528",
+      "before": 36,
+      "calculated": 36,
+      "percentConversion": false
+    },
+    {
+      "bank": "matf1",
+      "id": "1.531",
+      "before": 21,
+      "calculated": 21,
+      "percentConversion": false
+    }
+  ],
+  "browser": {
+    "tasks": 16,
+    "cards": 27,
+    "formulas": 63,
+    "bad": [],
+    "errors": [],
+    "checks": [
+      {
+        "id": "5.593",
+        "input": "133",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.593",
+        "input": "133.3",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.594a",
+        "input": "76%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.594a",
+        "input": "0.76",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.594a",
+        "input": "46%",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.594a",
+        "input": "0.76%",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.594a",
+        "input": "7553.85%",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "5.594d",
+        "input": "21%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.595a",
+        "input": "298282500 W",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.599a",
+        "input": "13719 W",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.599b",
+        "input": "32%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.600a",
+        "input": "37.5%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.600b",
+        "input": "13%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "5.600c",
+        "input": "15%",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.542",
+        "input": "10",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.603",
+        "input": "10",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.603",
+        "input": "40",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.536",
+        "input": "4",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.536",
+        "input": "40",
+        "want": false,
+        "actual": false
+      },
+      {
+        "id": "1.546",
+        "input": "32",
+        "want": true,
+        "actual": true
+      },
+      {
+        "id": "1.546",
+        "input": "64",
+        "want": false,
+        "actual": false
+      }
+    ],
+    "numericChecks": [
+      {
+        "id": "5.593",
+        "expected": 133,
+        "stored": 133,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.594a",
+        "expected": 75.53846153846153,
+        "stored": 75.53846153846153,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.594b",
+        "expected": 36.825,
+        "stored": 36.825,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.594c",
+        "expected": 18.329938900203665,
+        "stored": 18.329938900203665,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.594d",
+        "expected": 20.987909427966102,
+        "stored": 20.987909427966102,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.595a",
+        "expected": 298282500,
+        "stored": 298282500,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.595b",
+        "expected": 26.111024074364195,
+        "stored": 26.111024074364195,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.595c",
+        "expected": 170486.11111111112,
+        "stored": 170486.11111111112,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.595d",
+        "expected": 0.15218803324709637,
+        "stored": 0.15218803324709637,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.596",
+        "expected": 581200,
+        "stored": 581200,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.597a",
+        "expected": 5187397.789607466,
+        "stored": 5187397.789607466,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.597b",
+        "expected": 244845.17566947243,
+        "stored": 244845.17566947243,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.599a",
+        "expected": 13705.042408152225,
+        "stored": 13705.042408152225,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.599b",
+        "expected": 32.10937499999999,
+        "stored": 32.10937499999999,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.600a",
+        "expected": 37.5,
+        "stored": 37.5,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.600b",
+        "expected": 13.304347826086957,
+        "stored": 13.304347826086957,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "5.600c",
+        "expected": 14.54919867490375,
+        "stored": 14.54919867490375,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.542",
+        "expected": 10,
+        "stored": 10,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.603",
+        "expected": 10,
+        "stored": 10,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.536",
+        "expected": 4,
+        "stored": 4,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.546",
+        "expected": 32,
+        "stored": 32,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.377",
+        "expected": 24,
+        "stored": 24,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.379",
+        "expected": 160,
+        "stored": 160,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.381",
+        "expected": 63,
+        "stored": 63,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.528",
+        "expected": 36,
+        "stored": 36,
+        "consistent": true,
+        "accepted": true
+      },
+      {
+        "id": "1.531",
+        "expected": 21,
+        "stored": 21,
+        "consistent": true,
+        "accepted": true
+      }
+    ]
+  },
+  "validator": {
+    "fy1": {
+      "before": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 655
+      },
+      "changedFindings": []
+    },
+    "matf1": {
+      "before": {
+        "ERROR": 0,
+        "WARNING": 10,
+        "INFO": 71
+      },
+      "after": {
+        "ERROR": 0,
+        "WARNING": 8,
+        "INFO": 71
+      },
+      "changedFindings": [
+        {
+          "allvar": "INFO",
+          "kod": "VERY_SIMILAR_TEXT",
+          "fil": "uppgiftermatf1.js",
+          "index": 1290,
+          "id": "1.602",
+          "ren": "bestäm koefficienten framför x 2 i x 1 4",
+          "meddelande": "Mycket lik textmall (främst tal skiljer) delas av 1.602, 1.607.",
+          "relateradeId": [
+            "1.602",
+            "1.607"
+          ]
+        }
+      ]
+    }
+  },
+  "tests": {
+    "masterPassed": 65,
+    "consumerPassed": 62
+  },
+  "bankVersion": "2026-10-08-variation-vattenkraft",
+  "applicationChange": {
+    "repository": "kunskapsgymmet",
+    "file": "index.html",
+    "function": "delSvarRattBas",
+    "description": "Procentenheten jämförs före generella talgenvägar; ett uttryckligt procenttal skalas inte igen.",
+    "regressionTests": "tools/procent-enheter.test.js",
+    "testsPassed": 3
+  }
+}
