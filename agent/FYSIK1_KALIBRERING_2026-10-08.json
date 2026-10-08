@@ -1,0 +1,8984 @@
+{
+  "date": "2026-10-08",
+  "bank": "fy1",
+  "parentTasks": 3681,
+  "cards": 5847,
+  "reviewScope": "Alla ursprungliga nivå 1-kort; alla nivå 2-kort i tryck, vätsketryck, Arkimedes, gaslagen, arbete, effekt, rörelseenergi, blandad energi, rörelsemängd och kollisioner. Därutöver utvalda högre kort i samma moment. Dessutom 61 kortare prioriterade kort på nivå 3–4 och 115 kort som flaggats vid sökning efter språkproblem och hänvisningar genom hela banken. Övriga kort är inte fullständigt redaktionellt granskade i denna omgång.",
+  "reviewedCardIds": [
+    "2.107",
+    "2.108",
+    "2.109",
+    "2.110",
+    "2.111",
+    "2.113",
+    "2.115",
+    "2.118",
+    "2.121",
+    "2.131",
+    "2.154",
+    "2.155",
+    "2.173b",
+    "2.17a",
+    "2.204",
+    "2.206",
+    "2.207",
+    "2.209",
+    "2.20a",
+    "2.20b",
+    "2.20c",
+    "2.20d",
+    "2.20e",
+    "2.20f",
+    "2.21",
+    "2.210",
+    "2.213",
+    "2.228",
+    "2.229",
+    "2.22a",
+    "2.22b",
+    "2.22c",
+    "2.22d",
+    "2.22e",
+    "2.22f",
+    "2.230",
+    "2.231",
+    "2.233",
+    "2.234",
+    "2.235",
+    "2.238",
+    "2.239",
+    "2.240",
+    "2.241",
+    "2.242",
+    "2.243",
+    "2.245",
+    "2.247",
+    "2.257",
+    "2.26a",
+    "2.26b",
+    "2.278",
+    "2.279",
+    "2.280",
+    "2.281",
+    "2.282",
+    "2.283",
+    "2.284",
+    "2.291b",
+    "2.291d",
+    "2.292a",
+    "2.295a",
+    "2.29a",
+    "2.305b",
+    "2.31a",
+    "2.31b",
+    "2.32a",
+    "2.32b",
+    "2.32c",
+    "2.32d",
+    "2.32e",
+    "2.32f",
+    "2.33a",
+    "2.33b",
+    "2.33c",
+    "2.33d",
+    "2.33e",
+    "2.38a",
+    "2.39a",
+    "2.44a",
+    "2.44b",
+    "2.55a",
+    "2.57a",
+    "2.57b",
+    "2.57c",
+    "2.57d",
+    "2.57e",
+    "2.57f",
+    "2.58a",
+    "2.58b",
+    "2.58c",
+    "2.58d",
+    "2.58e",
+    "2.58f",
+    "2.5a",
+    "2.5b",
+    "2.5c",
+    "2.5d",
+    "2.5e",
+    "2.5f",
+    "2.60a",
+    "2.60b",
+    "2.60c",
+    "2.60d",
+    "2.60e",
+    "2.60f",
+    "2.61e",
+    "2.66a",
+    "2.66b",
+    "2.66c",
+    "2.66d",
+    "2.66e",
+    "2.66f",
+    "2.68a",
+    "2.68b",
+    "2.68c",
+    "2.68d",
+    "2.68e",
+    "2.68f",
+    "2.76a",
+    "2.76c",
+    "2.76d",
+    "2.76f",
+    "3.102",
+    "3.135a",
+    "3.140a",
+    "3.151a",
+    "3.165a",
+    "3.165b",
+    "3.16a",
+    "3.190",
+    "3.1a",
+    "3.219a",
+    "3.219b",
+    "3.21a",
+    "3.240",
+    "3.241",
+    "3.256",
+    "3.257",
+    "3.258",
+    "3.259",
+    "3.260",
+    "3.261",
+    "3.264",
+    "3.265",
+    "3.266",
+    "3.267",
+    "3.270",
+    "3.271",
+    "3.272",
+    "3.273",
+    "3.274",
+    "3.275",
+    "3.279",
+    "3.280",
+    "3.281",
+    "3.28a",
+    "3.28b",
+    "3.297",
+    "3.298",
+    "3.301a",
+    "3.301b",
+    "3.301c",
+    "3.302a",
+    "3.302b",
+    "3.302c",
+    "3.303a",
+    "3.303b",
+    "3.303c",
+    "3.346",
+    "3.347",
+    "3.356",
+    "3.368b",
+    "3.368c",
+    "3.374a",
+    "3.375a",
+    "3.376a",
+    "3.380a",
+    "3.380b",
+    "3.380c",
+    "3.380d",
+    "3.381a",
+    "3.381c",
+    "3.381d",
+    "3.382c",
+    "3.382d",
+    "3.383c",
+    "3.384b",
+    "3.384c",
+    "3.392a",
+    "3.392b",
+    "3.392c",
+    "3.393a",
+    "3.393b",
+    "3.393c",
+    "3.394a",
+    "3.394b",
+    "3.398a",
+    "3.409a",
+    "3.53a",
+    "3.53b",
+    "3.53c",
+    "4.102b",
+    "4.109a",
+    "4.10a",
+    "4.11a",
+    "4.127a",
+    "4.127b",
+    "4.127c",
+    "4.130a",
+    "4.130d",
+    "4.151a",
+    "4.160a",
+    "4.173a",
+    "4.187c",
+    "4.190a",
+    "4.206a",
+    "4.208a",
+    "4.208b",
+    "4.208c",
+    "4.214a",
+    "4.220a",
+    "4.237a",
+    "4.237b",
+    "4.240b",
+    "4.241a",
+    "4.28",
+    "4.286b",
+    "4.298a",
+    "4.305",
+    "4.307",
+    "4.309",
+    "4.31c",
+    "4.323",
+    "4.333",
+    "4.33a",
+    "4.346",
+    "4.347",
+    "4.35a",
+    "4.35b",
+    "4.387",
+    "4.390",
+    "4.400",
+    "4.401",
+    "4.402",
+    "4.403",
+    "4.404",
+    "4.406",
+    "4.408",
+    "4.409",
+    "4.410",
+    "4.411",
+    "4.412",
+    "4.414",
+    "4.434",
+    "4.455",
+    "4.456",
+    "4.459",
+    "4.45a",
+    "4.460",
+    "4.467",
+    "4.468",
+    "4.469",
+    "4.473",
+    "4.475",
+    "4.479",
+    "4.488",
+    "4.491",
+    "4.517a",
+    "4.519a",
+    "4.519b",
+    "4.51a",
+    "4.51b",
+    "4.520",
+    "4.521",
+    "4.526a",
+    "4.526b",
+    "4.526c",
+    "4.527a",
+    "4.530a",
+    "4.545a",
+    "4.547a",
+    "4.55",
+    "4.559c",
+    "4.562a",
+    "4.565a",
+    "4.572a",
+    "4.576a",
+    "4.577a",
+    "4.577b",
+    "4.579a",
+    "4.579b",
+    "4.584a",
+    "4.585a",
+    "4.587",
+    "4.590a",
+    "4.5a",
+    "4.5b",
+    "4.5d",
+    "4.61a",
+    "4.623a",
+    "4.623b",
+    "4.624a",
+    "4.624b",
+    "4.625a",
+    "4.636a",
+    "4.647a",
+    "4.64a",
+    "4.671a",
+    "4.672a",
+    "4.675a",
+    "4.675b",
+    "4.675c",
+    "4.678a",
+    "4.678b",
+    "4.679a",
+    "4.679b",
+    "4.681a",
+    "4.681b",
+    "4.682c",
+    "4.683c",
+    "4.684b",
+    "4.685a",
+    "4.685b",
+    "4.685c",
+    "4.686b",
+    "4.686c",
+    "4.687a",
+    "4.687b",
+    "4.688",
+    "4.689a",
+    "4.689c",
+    "4.690",
+    "4.691a",
+    "4.691b",
+    "4.692",
+    "4.693",
+    "4.700a",
+    "4.704a",
+    "4.704b",
+    "4.704c",
+    "4.704d",
+    "4.705a",
+    "4.705b",
+    "4.705c",
+    "4.705d",
+    "4.70a",
+    "4.714c",
+    "4.715a",
+    "4.716a",
+    "4.716b",
+    "4.717a",
+    "4.717b",
+    "4.720b",
+    "4.729a",
+    "4.73a",
+    "4.74a",
+    "4.83",
+    "4.85a",
+    "4.85b",
+    "4.88a",
+    "4.89a",
+    "4.89b",
+    "4.89c",
+    "5.108a",
+    "5.108c",
+    "5.110a",
+    "5.115a",
+    "5.117a",
+    "5.117b",
+    "5.118a",
+    "5.118b",
+    "5.11a",
+    "5.12",
+    "5.124a",
+    "5.125a",
+    "5.125b",
+    "5.125c",
+    "5.126a",
+    "5.126b",
+    "5.131a",
+    "5.131b",
+    "5.132a",
+    "5.132b",
+    "5.132d",
+    "5.133a",
+    "5.133b",
+    "5.138a",
+    "5.138b",
+    "5.140a",
+    "5.142",
+    "5.147a",
+    "5.147b",
+    "5.147c",
+    "5.149a",
+    "5.149b",
+    "5.149c",
+    "5.14a",
+    "5.14b",
+    "5.14c",
+    "5.151",
+    "5.152a",
+    "5.152b",
+    "5.152c",
+    "5.157a",
+    "5.157b",
+    "5.158a",
+    "5.158b",
+    "5.158c",
+    "5.160a",
+    "5.160b",
+    "5.160c",
+    "5.161a",
+    "5.161b",
+    "5.161c",
+    "5.162a",
+    "5.162b",
+    "5.16a",
+    "5.16b",
+    "5.170a",
+    "5.170b",
+    "5.170c",
+    "5.170d",
+    "5.175",
+    "5.177",
+    "5.181",
+    "5.182",
+    "5.183",
+    "5.184",
+    "5.188",
+    "5.189a",
+    "5.189b",
+    "5.189c",
+    "5.18c",
+    "5.19",
+    "5.192",
+    "5.193",
+    "5.194a",
+    "5.195",
+    "5.197",
+    "5.198",
+    "5.202",
+    "5.209a",
+    "5.209b",
+    "5.209c",
+    "5.20a",
+    "5.20b",
+    "5.21a",
+    "5.21b",
+    "5.21c",
+    "5.226a",
+    "5.228a",
+    "5.228b",
+    "5.233",
+    "5.236",
+    "5.23a",
+    "5.23b",
+    "5.23c",
+    "5.24a",
+    "5.24b",
+    "5.251",
+    "5.257",
+    "5.261",
+    "5.262",
+    "5.264a",
+    "5.264b",
+    "5.267",
+    "5.270",
+    "5.277",
+    "5.278",
+    "5.279",
+    "5.280",
+    "5.281",
+    "5.282",
+    "5.283",
+    "5.288",
+    "5.291",
+    "5.298",
+    "5.299",
+    "5.300",
+    "5.301",
+    "5.302",
+    "5.303",
+    "5.304",
+    "5.305",
+    "5.306",
+    "5.307",
+    "5.308",
+    "5.309",
+    "5.30a",
+    "5.30b",
+    "5.30c",
+    "5.310",
+    "5.311",
+    "5.312",
+    "5.313",
+    "5.314",
+    "5.315",
+    "5.316",
+    "5.317",
+    "5.318",
+    "5.319",
+    "5.320",
+    "5.321",
+    "5.322",
+    "5.323",
+    "5.324",
+    "5.325",
+    "5.326",
+    "5.327",
+    "5.328",
+    "5.329",
+    "5.32a",
+    "5.32b",
+    "5.32c",
+    "5.330",
+    "5.331",
+    "5.332",
+    "5.333",
+    "5.334",
+    "5.335",
+    "5.336",
+    "5.337",
+    "5.338",
+    "5.339",
+    "5.340",
+    "5.341",
+    "5.342",
+    "5.343",
+    "5.344",
+    "5.345",
+    "5.346",
+    "5.347",
+    "5.348",
+    "5.349",
+    "5.34a",
+    "5.350",
+    "5.351",
+    "5.352",
+    "5.353",
+    "5.354",
+    "5.355",
+    "5.356",
+    "5.357",
+    "5.358",
+    "5.359",
+    "5.367",
+    "5.368a",
+    "5.368b",
+    "5.368c",
+    "5.369",
+    "5.36a",
+    "5.36c",
+    "5.370a",
+    "5.370b",
+    "5.371a",
+    "5.371b",
+    "5.371c",
+    "5.372",
+    "5.373a",
+    "5.373b",
+    "5.374",
+    "5.375",
+    "5.376",
+    "5.377",
+    "5.378",
+    "5.379",
+    "5.37a",
+    "5.37b",
+    "5.37c",
+    "5.37d",
+    "5.38",
+    "5.380a",
+    "5.380b",
+    "5.381a",
+    "5.381b",
+    "5.382a",
+    "5.384a",
+    "5.384b",
+    "5.385",
+    "5.386a",
+    "5.386b",
+    "5.387a",
+    "5.387b",
+    "5.388a",
+    "5.388b",
+    "5.388c",
+    "5.389",
+    "5.39",
+    "5.390",
+    "5.391",
+    "5.392a",
+    "5.392b",
+    "5.393",
+    "5.395a",
+    "5.397a",
+    "5.397b",
+    "5.398a",
+    "5.398b",
+    "5.399a",
+    "5.399b",
+    "5.400a",
+    "5.400b",
+    "5.401",
+    "5.402",
+    "5.403",
+    "5.404",
+    "5.405a",
+    "5.405b",
+    "5.405c",
+    "5.406",
+    "5.409",
+    "5.410",
+    "5.411",
+    "5.412a",
+    "5.412b",
+    "5.412c",
+    "5.415",
+    "5.416",
+    "5.417",
+    "5.418a",
+    "5.419a",
+    "5.420a",
+    "5.420b",
+    "5.422",
+    "5.423a",
+    "5.423b",
+    "5.426a",
+    "5.426b",
+    "5.427",
+    "5.429",
+    "5.42a",
+    "5.42b",
+    "5.42c",
+    "5.433a",
+    "5.433b",
+    "5.433c",
+    "5.434a",
+    "5.435",
+    "5.438a",
+    "5.438b",
+    "5.439a",
+    "5.439b",
+    "5.44",
+    "5.440a",
+    "5.440b",
+    "5.440c",
+    "5.443",
+    "5.444",
+    "5.445",
+    "5.447a",
+    "5.447b",
+    "5.448b",
+    "5.453a",
+    "5.45a",
+    "5.45b",
+    "5.45c",
+    "5.460a",
+    "5.461a",
+    "5.461b",
+    "5.46a",
+    "5.46b",
+    "5.46c",
+    "5.470b",
+    "5.473a",
+    "5.473b",
+    "5.474a",
+    "5.475a",
+    "5.475b",
+    "5.476a",
+    "5.476b",
+    "5.476c",
+    "5.477a",
+    "5.477b",
+    "5.477c",
+    "5.480a",
+    "5.480b",
+    "5.481b",
+    "5.492a",
+    "5.497a",
+    "5.497b",
+    "5.497c",
+    "5.497d",
+    "5.499a",
+    "5.499b",
+    "5.499c",
+    "5.4a",
+    "5.501a",
+    "5.503a",
+    "5.503b",
+    "5.503c",
+    "5.503d",
+    "5.504a",
+    "5.504b",
+    "5.504c",
+    "5.504d",
+    "5.505a",
+    "5.505b",
+    "5.505c",
+    "5.505d",
+    "5.509a",
+    "5.509b",
+    "5.509c",
+    "5.509d",
+    "5.510a",
+    "5.510b",
+    "5.511a",
+    "5.511d",
+    "5.512",
+    "5.513a",
+    "5.513b",
+    "5.514b",
+    "5.515a",
+    "5.515b",
+    "5.515c",
+    "5.515d",
+    "5.516",
+    "5.520a",
+    "5.520b",
+    "5.520c",
+    "5.520d",
+    "5.521",
+    "5.523a",
+    "5.523b",
+    "5.523c",
+    "5.524a",
+    "5.524b",
+    "5.525a",
+    "5.525b",
+    "5.525c",
+    "5.525d",
+    "5.526a",
+    "5.526b",
+    "5.527a",
+    "5.527b",
+    "5.527c",
+    "5.528a",
+    "5.528b",
+    "5.529a",
+    "5.529b",
+    "5.529c",
+    "5.52a",
+    "5.52b",
+    "5.530a",
+    "5.530b",
+    "5.532a",
+    "5.532b",
+    "5.532d",
+    "5.533a",
+    "5.533b",
+    "5.533c",
+    "5.534a",
+    "5.535a",
+    "5.535b",
+    "5.535c",
+    "5.536b",
+    "5.536c",
+    "5.53a",
+    "5.53b",
+    "5.546b",
+    "5.551a",
+    "5.551b",
+    "5.551c",
+    "5.551d",
+    "5.552a",
+    "5.552b",
+    "5.552c",
+    "5.552d",
+    "5.553",
+    "5.555a",
+    "5.555c",
+    "5.556a",
+    "5.556b",
+    "5.556c",
+    "5.556d",
+    "5.557a",
+    "5.557b",
+    "5.558a",
+    "5.558b",
+    "5.559a",
+    "5.559b",
+    "5.559c",
+    "5.559d",
+    "5.55a",
+    "5.55b",
+    "5.55c",
+    "5.560",
+    "5.561",
+    "5.562a",
+    "5.562c",
+    "5.562d",
+    "5.563a",
+    "5.563b",
+    "5.564a",
+    "5.564b",
+    "5.564c",
+    "5.56a",
+    "5.56b",
+    "5.573a",
+    "5.575a",
+    "5.57a",
+    "5.581",
+    "5.582a",
+    "5.588a",
+    "5.588b",
+    "5.588c",
+    "5.588d",
+    "5.590a",
+    "5.590b",
+    "5.590c",
+    "5.591a",
+    "5.592a",
+    "5.592b",
+    "5.592c",
+    "5.592d",
+    "5.595a",
+    "5.597a",
+    "5.597b",
+    "5.598a",
+    "5.598b",
+    "5.598c",
+    "5.600a",
+    "5.600b",
+    "5.600c",
+    "5.600d",
+    "5.65a",
+    "5.65b",
+    "5.66a",
+    "5.66b",
+    "5.67a",
+    "5.67b",
+    "5.67c",
+    "5.69a",
+    "5.69b",
+    "5.71a",
+    "5.71b",
+    "5.71c",
+    "5.71d",
+    "5.72a",
+    "5.72b",
+    "5.72c",
+    "5.73",
+    "5.76",
+    "5.77a",
+    "5.77b",
+    "5.77c",
+    "5.79a",
+    "5.79b",
+    "5.79c",
+    "5.81a",
+    "5.81b",
+    "5.81c",
+    "5.82a",
+    "5.82b",
+    "5.82c",
+    "5.84a",
+    "5.84b",
+    "5.86a",
+    "5.91a",
+    "5.91b",
+    "5.95a",
+    "5.97a",
+    "5.9a",
+    "5.9b",
+    "6.101a",
+    "6.101b",
+    "6.104a",
+    "6.105",
+    "6.107a",
+    "6.107b",
+    "6.109a",
+    "6.109b",
+    "6.112",
+    "6.113a",
+    "6.114a",
+    "6.114b",
+    "6.115a",
+    "6.115b",
+    "6.117a",
+    "6.117b",
+    "6.118a",
+    "6.118b",
+    "6.119a",
+    "6.119b",
+    "6.11a",
+    "6.11b",
+    "6.11c",
+    "6.11d",
+    "6.12",
+    "6.122a",
+    "6.125a",
+    "6.126a",
+    "6.126b",
+    "6.129a",
+    "6.133a",
+    "6.138a",
+    "6.138b",
+    "6.138c",
+    "6.138d",
+    "6.141",
+    "6.142",
+    "6.143",
+    "6.144",
+    "6.145",
+    "6.146",
+    "6.147",
+    "6.148",
+    "6.149",
+    "6.152a",
+    "6.158",
+    "6.159",
+    "6.15b",
+    "6.160",
+    "6.163",
+    "6.16a",
+    "6.16b",
+    "6.171",
+    "6.17a",
+    "6.17b",
+    "6.192",
+    "6.202a",
+    "6.204",
+    "6.214",
+    "6.215",
+    "6.216",
+    "6.217",
+    "6.219",
+    "6.21a",
+    "6.220a",
+    "6.221",
+    "6.222",
+    "6.223",
+    "6.224",
+    "6.225",
+    "6.226",
+    "6.227",
+    "6.228",
+    "6.229",
+    "6.230",
+    "6.231",
+    "6.232",
+    "6.233",
+    "6.235",
+    "6.236",
+    "6.237",
+    "6.239",
+    "6.23a",
+    "6.23b",
+    "6.241",
+    "6.243",
+    "6.248",
+    "6.250",
+    "6.251",
+    "6.252",
+    "6.253",
+    "6.254",
+    "6.255",
+    "6.256",
+    "6.257",
+    "6.259",
+    "6.260",
+    "6.263",
+    "6.264",
+    "6.266",
+    "6.268",
+    "6.269",
+    "6.26a",
+    "6.26b",
+    "6.26c",
+    "6.270",
+    "6.271",
+    "6.272",
+    "6.273",
+    "6.274",
+    "6.275",
+    "6.277",
+    "6.279",
+    "6.288",
+    "6.290",
+    "6.291",
+    "6.292",
+    "6.293",
+    "6.294",
+    "6.295",
+    "6.296",
+    "6.297",
+    "6.298",
+    "6.299",
+    "6.2a",
+    "6.2b",
+    "6.2c",
+    "6.300",
+    "6.301",
+    "6.302",
+    "6.303",
+    "6.304",
+    "6.305",
+    "6.306",
+    "6.307",
+    "6.308",
+    "6.309",
+    "6.310",
+    "6.311",
+    "6.312",
+    "6.313",
+    "6.314",
+    "6.315",
+    "6.316",
+    "6.317",
+    "6.318",
+    "6.319",
+    "6.320",
+    "6.321",
+    "6.322",
+    "6.323",
+    "6.324",
+    "6.325",
+    "6.326",
+    "6.327",
+    "6.328",
+    "6.329",
+    "6.32a",
+    "6.32b",
+    "6.330",
+    "6.331",
+    "6.332",
+    "6.333",
+    "6.334",
+    "6.335",
+    "6.336",
+    "6.337",
+    "6.338",
+    "6.339",
+    "6.340",
+    "6.341",
+    "6.342",
+    "6.343",
+    "6.344",
+    "6.345",
+    "6.346",
+    "6.347",
+    "6.348",
+    "6.349",
+    "6.350",
+    "6.351",
+    "6.352",
+    "6.353",
+    "6.354",
+    "6.355",
+    "6.356",
+    "6.357",
+    "6.358",
+    "6.359",
+    "6.360",
+    "6.361",
+    "6.362",
+    "6.363",
+    "6.364",
+    "6.365",
+    "6.366",
+    "6.38a",
+    "6.38b",
+    "6.38c",
+    "6.41",
+    "6.419a",
+    "6.419b",
+    "6.419c",
+    "6.419d",
+    "6.421a",
+    "6.421b",
+    "6.422a",
+    "6.422b",
+    "6.423a",
+    "6.423b",
+    "6.424a",
+    "6.427",
+    "6.428",
+    "6.42a",
+    "6.42b",
+    "6.430a",
+    "6.430b",
+    "6.431",
+    "6.432",
+    "6.436a",
+    "6.436b",
+    "6.437a",
+    "6.437b",
+    "6.438",
+    "6.439a",
+    "6.442a",
+    "6.442c",
+    "6.443a",
+    "6.444a",
+    "6.445a",
+    "6.448a",
+    "6.45",
+    "6.454a",
+    "6.457a",
+    "6.458a",
+    "6.458b",
+    "6.463a",
+    "6.464a",
+    "6.464b",
+    "6.466a",
+    "6.466b",
+    "6.467",
+    "6.468a",
+    "6.469a",
+    "6.469b",
+    "6.469c",
+    "6.46a",
+    "6.46b",
+    "6.47",
+    "6.470b",
+    "6.470c",
+    "6.471",
+    "6.474a",
+    "6.474b",
+    "6.478",
+    "6.480a",
+    "6.480b",
+    "6.480c",
+    "6.480d",
+    "6.482a",
+    "6.483a",
+    "6.483b",
+    "6.486",
+    "6.487a",
+    "6.489",
+    "6.490a",
+    "6.50",
+    "6.505b",
+    "6.508a",
+    "6.508b",
+    "6.513a",
+    "6.513b",
+    "6.513c",
+    "6.513d",
+    "6.514a",
+    "6.514b",
+    "6.514c",
+    "6.515",
+    "6.516",
+    "6.517",
+    "6.51a",
+    "6.51b",
+    "6.51c",
+    "6.527",
+    "6.52a",
+    "6.52b",
+    "6.530a",
+    "6.530b",
+    "6.530c",
+    "6.530d",
+    "6.531b",
+    "6.533",
+    "6.534",
+    "6.535a",
+    "6.53a",
+    "6.53b",
+    "6.543a",
+    "6.544a",
+    "6.544b",
+    "6.545b",
+    "6.55a",
+    "6.55b",
+    "6.55c",
+    "6.56",
+    "6.59a",
+    "6.65a",
+    "6.67",
+    "6.69",
+    "6.6a",
+    "6.6b",
+    "6.6c",
+    "6.70a",
+    "6.70b",
+    "6.71a",
+    "6.72a",
+    "6.73a",
+    "6.73b",
+    "6.74a",
+    "6.74b",
+    "6.76a",
+    "6.76b",
+    "6.76c",
+    "6.77a",
+    "6.77b",
+    "6.82",
+    "6.83a",
+    "6.84",
+    "6.87a",
+    "6.88a",
+    "6.88b",
+    "6.89a",
+    "6.89b",
+    "6.89c",
+    "6.89d",
+    "6.8a",
+    "6.8b",
+    "6.95a",
+    "6.95b",
+    "6.96",
+    "6.97",
+    "6.98a",
+    "7.121",
+    "7.122",
+    "7.123",
+    "7.125",
+    "7.126",
+    "7.128",
+    "7.129",
+    "7.130",
+    "7.131",
+    "7.132",
+    "7.134",
+    "7.135",
+    "7.137a",
+    "7.137b",
+    "7.137c",
+    "7.139b",
+    "7.139c",
+    "7.140a",
+    "7.144a",
+    "7.150a",
+    "7.190a",
+    "7.190b",
+    "7.193",
+    "7.197b",
+    "7.31a",
+    "7.31b",
+    "7.40a",
+    "7.45b",
+    "7.5",
+    "7.51",
+    "7.54",
+    "7.57",
+    "7.64",
+    "7.65",
+    "7.66",
+    "7.67",
+    "7.85",
+    "7.87",
+    "7.88",
+    "7.89",
+    "7.94",
+    "7.95",
+    "7.97",
+    "7.98",
+    "8.109",
+    "8.175",
+    "8.188",
+    "8.189",
+    "8.190",
+    "8.191",
+    "8.192",
+    "8.193",
+    "8.194",
+    "8.207",
+    "8.208",
+    "8.211",
+    "8.212",
+    "8.216",
+    "8.217",
+    "8.218",
+    "8.219",
+    "8.244",
+    "8.245",
+    "8.246",
+    "8.247",
+    "8.248",
+    "8.257",
+    "8.26",
+    "8.260",
+    "8.261",
+    "8.262",
+    "8.263",
+    "8.265",
+    "8.266",
+    "8.267",
+    "8.268",
+    "8.270",
+    "8.271",
+    "8.295",
+    "8.296",
+    "8.299",
+    "8.300",
+    "8.301",
+    "8.321",
+    "8.322",
+    "8.324",
+    "8.325",
+    "8.328",
+    "8.329",
+    "8.331",
+    "8.333",
+    "8.361",
+    "8.362",
+    "8.363",
+    "8.364",
+    "8.365",
+    "8.366",
+    "8.367",
+    "8.368",
+    "8.369",
+    "8.371",
+    "8.372",
+    "8.373",
+    "8.377",
+    "8.378",
+    "8.382",
+    "8.383",
+    "8.390",
+    "8.402b",
+    "8.410",
+    "8.411",
+    "8.412",
+    "8.413",
+    "8.416b",
+    "8.418",
+    "8.420",
+    "8.421",
+    "8.425",
+    "8.426",
+    "8.427",
+    "8.428",
+    "8.429",
+    "8.436a",
+    "8.439",
+    "8.445a",
+    "8.446a",
+    "8.446b",
+    "8.462a",
+    "8.464a",
+    "8.464b",
+    "8.465a",
+    "8.465b",
+    "8.466",
+    "8.473a",
+    "9.100",
+    "9.114",
+    "9.120",
+    "9.121",
+    "9.122",
+    "9.124",
+    "9.125",
+    "9.126",
+    "9.127",
+    "9.129",
+    "9.130",
+    "9.131",
+    "9.152",
+    "9.153",
+    "9.155",
+    "9.156",
+    "9.157",
+    "9.158",
+    "9.159",
+    "9.160",
+    "9.161",
+    "9.162",
+    "9.163",
+    "9.164",
+    "9.165",
+    "9.166",
+    "9.167",
+    "9.168",
+    "9.195",
+    "9.196",
+    "9.202",
+    "9.203",
+    "9.204",
+    "9.205",
+    "9.206",
+    "9.208",
+    "9.209",
+    "9.210",
+    "9.211",
+    "9.212",
+    "9.213",
+    "9.214",
+    "9.215",
+    "9.216",
+    "9.217",
+    "9.241",
+    "9.242",
+    "9.243",
+    "9.244",
+    "9.245",
+    "9.246",
+    "9.247",
+    "9.248",
+    "9.249",
+    "9.250",
+    "9.251",
+    "9.252",
+    "9.253",
+    "9.254",
+    "9.255",
+    "9.256",
+    "9.257",
+    "9.258",
+    "9.259",
+    "9.260",
+    "9.261",
+    "9.266",
+    "9.267",
+    "9.270",
+    "9.271",
+    "9.272",
+    "9.274",
+    "9.287",
+    "9.298",
+    "9.303",
+    "9.304",
+    "9.307",
+    "9.308",
+    "9.314",
+    "9.315",
+    "9.340",
+    "9.343",
+    "9.345a",
+    "9.362",
+    "9.365b",
+    "9.371a",
+    "9.372",
+    "9.373c",
+    "9.374a",
+    "9.380a",
+    "9.380b",
+    "9.385a",
+    "9.385b",
+    "9.388a",
+    "9.388b",
+    "9.394b",
+    "9.395b",
+    "9.3b",
+    "9.407c",
+    "9.410d",
+    "9.411a",
+    "9.415a",
+    "9.419c",
+    "9.420b",
+    "9.44a",
+    "9.44b",
+    "9.97a",
+    "9.97b",
+    "GY25-FY1-EN-01",
+    "KG-FY1-ALFA-01",
+    "KG-FY1-BM-01",
+    "KG-FY1-BP-01"
+  ],
+  "changedTasks": [
+    {
+      "id": "2.239",
+      "omr": "matnogg",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.239: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "2.240",
+      "omr": "matnogg",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.240: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "2.29",
+      "omr": "enheter",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "2.29a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "2.257",
+      "omr": "matnogg",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.257: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "2.58",
+      "omr": "enheter",
+      "fields": [
+        "traningsniva",
+        "spelDelar"
+      ],
+      "notes": [
+        "2.58a: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten",
+        "2.58b: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten",
+        "2.58c: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten",
+        "2.58d: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten",
+        "2.58e: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten",
+        "2.58f: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.107",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.107: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.108",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.108: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.111",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.111: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.113",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.113: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.115",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.115: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.118",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.118: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "3.28",
+      "omr": "konstacc",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "3.28b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "Förklarat accelerationen med enklare formulering"
+      ]
+    },
+    {
+      "id": "3.165",
+      "omr": "konstacc",
+      "fields": [
+        "traningsniva",
+        "spelDelar"
+      ],
+      "notes": [
+        "3.165a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.323",
+      "omr": "fjadrar",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "4.323: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.45",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.45a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.51",
+      "omr": "moment",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.51a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.61",
+      "omr": "moment",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.61a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.85",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.85a: kortare, självbärande frågetext",
+        "4.85b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.400",
+      "omr": "newton1",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Konkret instruktion för kraftdiagram"
+      ]
+    },
+    {
+      "id": "4.401",
+      "omr": "newton1",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Konkret instruktion för kraftdiagram"
+      ]
+    },
+    {
+      "id": "4.402",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Konkret instruktion för kraftdiagram"
+      ]
+    },
+    {
+      "id": "4.403",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Konkret instruktion för kraftdiagram"
+      ]
+    },
+    {
+      "id": "4.404",
+      "omr": "newton1",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.406",
+      "omr": "normalkraft",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.408",
+      "omr": "newton1",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.410",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.411",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.151",
+      "omr": "blandat_kraft",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.151a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.434",
+      "omr": "blandat_kraft",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "4.434: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.333",
+      "omr": "arbete",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "4.333: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "4.187",
+      "omr": "tyngdkraft",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.187c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.190",
+      "omr": "tyngdkraft",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.190a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.412",
+      "omr": "normalkraft",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.414",
+      "omr": "newton1",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat ritinstruktionen med vanliga ord"
+      ]
+    },
+    {
+      "id": "4.208",
+      "omr": "tyngdkraft",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.208a: kortare, självbärande frågetext",
+        "4.208b: kortare, självbärande frågetext",
+        "4.208c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.241",
+      "omr": "newton1",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.241a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.517",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.517a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.517a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.519",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.519a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.519a: kortare, självbärande frågetext",
+        "4.519b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.520",
+      "omr": "friktion",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "4.520: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.520: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.521",
+      "omr": "friktion",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "4.521: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.521: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.526",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "4.526a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.526b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.526c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.526a: kortare, självbärande frågetext",
+        "4.526b: kortare, självbärande frågetext",
+        "4.526c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.527",
+      "omr": "friktion",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "4.527a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.527a: kortare, självbärande frågetext; förklarande facit",
+        "Förtydligat hur Oscars kraft och vilofriktionen ska tolkas"
+      ]
+    },
+    {
+      "id": "4.530",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.530a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.545",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.545a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.547",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.547a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.547a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.576",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.576a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.577",
+      "omr": "friktion",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "4.577a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.577b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.577a: kortare, självbärande frågetext",
+        "4.577b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.298",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.298a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.559",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.559c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.562",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.562a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.562a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.565",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.565a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.572",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.572a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.572a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.678",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Angett konstant kraft när tidsberäkningen kräver konstant acceleration",
+        "4.678a: kortare, självbärande frågetext",
+        "4.678b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.679",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.679a: kortare, självbärande frågetext",
+        "4.679b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.681",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "4.681a: kortare, självbärande frågetext",
+        "4.681b: kortare, självbärande frågetext",
+        "4.681c: kortare, självbärande frågetext",
+        "4.681d: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.685",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "4.685a: kortare, självbärande frågetext",
+        "4.685b: kortare, självbärande frågetext",
+        "4.685c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.687",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Angett konstant kraft när tidsberäkningen kräver konstant acceleration",
+        "4.687b: kortare, självbärande frågetext",
+        "4.687c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.688",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "4.688: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.689",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Angett konstant kraft när tidsberäkningen kräver konstant acceleration",
+        "4.689a: kortare, självbärande frågetext",
+        "4.689c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.690",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "4.690: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.692",
+      "omr": "newton2",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "4.692: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.700",
+      "omr": "newton2",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "4.700a: kortare, självbärande frågetext",
+        "4.700b: kortare, självbärande frågetext",
+        "Tagit bort ett generellt påstående om människors tålighet"
+      ]
+    },
+    {
+      "id": "4.714",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.714c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.715",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.715a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.716",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.716a: kortare, självbärande frågetext",
+        "4.716b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.717",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.717a: kortare, självbärande frågetext",
+        "4.717b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.720",
+      "omr": "newton2",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.720b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.4",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.4a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.11",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.11a: träningsnivå 2; mer krävande tal, kvadrering eller procent än i ingångsuppgifterna"
+      ]
+    },
+    {
+      "id": "5.14",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.14a: kortare, självbärande frågetext",
+        "5.14b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.16",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.16a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.279",
+      "omr": "rorelsemangd",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.279: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.312",
+      "omr": "rorelsemangd",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.312: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.20",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.20a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.21",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.21a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.21b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.21c: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.21a: kortare, självbärande frågetext",
+        "5.21b: kortare, självbärande frågetext",
+        "5.21c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.32",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.32a: kortare, självbärande frågetext",
+        "5.32b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.280",
+      "omr": "rorelsemangd",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.280: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.313",
+      "omr": "rorelsemangd",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.313: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.42",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.42c: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.45",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.45a: kortare, självbärande frågetext",
+        "5.45b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.46",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.46b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.46c: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.52",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.52a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.57",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.57a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.65",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.65b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.65b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.67",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.67a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.71",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.71a: kortare, självbärande frågetext",
+        "5.71b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.72",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.72a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.262",
+      "omr": "effekt",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.262: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.77",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.77a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.82",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.82b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.95",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.95a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.108",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.108a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.115",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.115a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.117",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.117a: kortare, självbärande frågetext",
+        "5.117b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.125",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.125c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.131",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.131a: kortare, självbärande frågetext",
+        "5.131b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.140",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.140a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.147",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.147a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.147b: kortare, självbärande frågetext",
+        "5.147c: träningsnivå 1; Ett direkt samband P=E/t med Wh och timmar, utan enhetsomvandling"
+      ]
+    },
+    {
+      "id": "5.149",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.149a: kortare, självbärande frågetext",
+        "5.149b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.157",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.157a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.157b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.157a: kortare, självbärande frågetext",
+        "5.157b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.161",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.161a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.161b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.161c: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.162",
+      "omr": "rorelsemangd",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.162a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.170",
+      "omr": "blandat_energi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.170a: kortare, självbärande frågetext",
+        "5.170b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.2",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.2a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.2a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.6",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.6a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.8",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.8a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.304",
+      "omr": "vatsketryck",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.15",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.15b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.16",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.16a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.16b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.16a: kortare, självbärande frågetext",
+        "6.16b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.17",
+      "omr": "arkimedes",
+      "fields": [
+        "t",
+        "spelDelar"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.32",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.32b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.42",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.42b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.42a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.46",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.46a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.46b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.51",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.51a: kortare, självbärande frågetext",
+        "6.51b: kortare, självbärande frågetext",
+        "6.51c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.55",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.55b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.69",
+      "omr": "vatsketryck",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.70",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.70a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.71",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.71a: träningsnivå 2; känd rutinmetod; ingen ny problemlösningsstrategi behövs"
+      ]
+    },
+    {
+      "id": "6.72",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.72a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.74",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.74a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.76",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.76b: kortare, självbärande frågetext",
+        "6.76c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.82",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.82: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.83",
+      "omr": "gaslagen",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.83a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.299",
+      "omr": "tryck",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.299: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.298",
+      "omr": "tryck",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.298: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.244",
+      "omr": "tryck",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.244: träningsnivå 2; känd rutinmetod; ingen ny problemlösningsstrategi behövs"
+      ]
+    },
+    {
+      "id": "6.101",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.101a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.104",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.104a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.105",
+      "omr": "vatsketryck",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "6.105: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.107",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.107b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.107b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.112",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "6.112: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.113",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.113a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.114",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.114a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "6.114b: träningsnivå 2; känd rutinmetod; ingen ny problemlösningsstrategi behövs"
+      ]
+    },
+    {
+      "id": "6.117",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.117b: träningsnivå 2; känd rutinmetod; ingen ny problemlösningsstrategi behövs"
+      ]
+    },
+    {
+      "id": "6.126",
+      "omr": "gaslagen",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.126a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.133",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.133a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.64",
+      "omr": "varme",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "7.64: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.65",
+      "omr": "varme",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "7.65: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.85",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.87",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.88",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.66",
+      "omr": "varme",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "7.66: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.67",
+      "omr": "varme",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "7.67: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.89",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.94",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Namngivit materialdata i frågan"
+      ]
+    },
+    {
+      "id": "7.95",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Namngivit materialdata i frågan"
+      ]
+    },
+    {
+      "id": "7.97",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Namngivit materialdata i frågan"
+      ]
+    },
+    {
+      "id": "7.98",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "7.98: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.51",
+      "omr": "fasandring",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "7.51: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "Namngivit materialdata i frågan"
+      ]
+    },
+    {
+      "id": "7.54",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Namngivit materialdata i frågan"
+      ]
+    },
+    {
+      "id": "8.207",
+      "omr": "kopplingar",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "8.207: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "Förklarat ems vid första användningen"
+      ]
+    },
+    {
+      "id": "8.257",
+      "omr": "potential",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.257: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.321",
+      "omr": "falt",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.321: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.322",
+      "omr": "falt",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.322: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.216",
+      "omr": "kopplingar",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "8.216: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "Förklarat ems vid första användningen"
+      ]
+    },
+    {
+      "id": "8.245",
+      "omr": "parallellkoppling",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.245: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.26",
+      "omr": "strom",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "8.26: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.26: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "8.247",
+      "omr": "parallellkoppling",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.247: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.109",
+      "omr": "kopplingar",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.109: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "6.141",
+      "omr": "gaslagen",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "6.141: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.144",
+      "omr": "gaslagen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "4.309",
+      "omr": "moment",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "4.309: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "6.336",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.336: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "8.413",
+      "omr": "kretsar",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.413: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.416",
+      "omr": "kretsar",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.416b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.439",
+      "omr": "kretsar",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.439: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.473",
+      "omr": "kretsar",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.473a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.473a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.100",
+      "omr": "karnreaktioner",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "9.100: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.671",
+      "omr": "newton1",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.671a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.672",
+      "omr": "newton1",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.672a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.368",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.369",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.369: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.370",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.370a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.370b: kortare, självbärande frågetext; förklarande facit",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.371",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.372",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.373",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.374",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.375",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.375: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.375: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.376",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.376: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.376: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.377",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.377: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.378",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.378: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.379",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.380",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.381",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.382",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.383",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.384",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.384b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.384b: kortare, självbärande frågetext",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.384b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.385",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.386",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.386a: kortare, självbärande frågetext; förklarande facit",
+        "5.386b: kortare, självbärande frågetext; förklarande facit",
+        "Facitfel rättat: golvets impuls 8,99568 Ns och medelkraft 449,784 N, inklusive tyngdkraften",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.387",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.388",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.389",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.389: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.389: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.390",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.391",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.391: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.391: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.392",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.393",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.394",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "ledtrad"
+      ],
+      "notes": [
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.394: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.395",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.395a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.397",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.397a: kortare, självbärande frågetext",
+        "5.397b: kortare, självbärande frågetext",
+        "Huvuduppgift: uttryckliga villkor för fall och inbromsning",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.397c: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "5.398",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.398a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.398a: kortare, självbärande frågetext",
+        "5.398b: kortare, självbärande frågetext",
+        "Tagit bort återkommande formelrubrik ur frågetexten"
+      ]
+    },
+    {
+      "id": "5.399",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.399a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.399a: kortare, självbärande frågetext",
+        "5.399b: kortare, självbärande frågetext",
+        "Huvuduppgift: uttryckliga villkor för fall och inbromsning",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.399b: facit förklarar metod, enhetsomvandling och svar",
+        "5.399c: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "5.400",
+      "omr": "rorelsemangd",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.400a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.400a: kortare, självbärande frågetext",
+        "5.400b: kortare, självbärande frågetext",
+        "Huvuduppgift: uttryckliga villkor för fall och inbromsning",
+        "Tagit bort återkommande formelrubrik ur frågetexten",
+        "5.400c: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "7.137",
+      "omr": "varme",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "7.137a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.137b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.137c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.137c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.139",
+      "omr": "varme",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "7.139b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.139c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.140",
+      "omr": "varme",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "7.140a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.140a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.144",
+      "omr": "varme",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "7.144a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.144a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.150",
+      "omr": "varme",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "7.150a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "7.132",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.134",
+      "omr": "fasandring",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Enklare etablerade namn på smältvärme och ångbildningsvärme"
+      ]
+    },
+    {
+      "id": "7.190",
+      "omr": "fasandring",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "7.190b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "7.190a: kortare, självbärande frågetext",
+        "7.190b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "7.193",
+      "omr": "fasandring",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "7.193: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.402",
+      "omr": "kopplingar",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.402b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "8.445",
+      "omr": "kopplingar",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.445a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.445a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "8.446",
+      "omr": "kopplingar",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.446a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.446b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.446a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.189",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.189a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.189b: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.189c: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.209",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.209a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling",
+        "5.209c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.345",
+      "omr": "gaslagen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.291",
+      "omr": "tryck",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.202",
+      "omr": "gaslagen",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.202a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "2.291",
+      "omr": "medelhastighet",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "2.291b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "2.291d: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "2.295",
+      "omr": "medelhastighet",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "2.295a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "2.295a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "2.305",
+      "omr": "medelhastighet",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "2.305b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.271",
+      "omr": "acceleration",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "3.271: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.375",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.375a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.380",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.380a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.380d: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.381",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.381a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.392",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.392a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.392b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.392c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.392a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "3.393",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "3.393a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.393b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.393c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.393c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "3.394",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.394a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.394b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.398",
+      "omr": "konstacc",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.398a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.279",
+      "omr": "acceleration",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "3.279: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "3.368",
+      "omr": "acceleration",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "3.368b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.368c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "3.368b: kortare, självbärande frågetext",
+        "3.368c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.228",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.228a: kortare, självbärande frågetext",
+        "5.228b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.233",
+      "omr": "arbete",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.233: träningsnivå 2; mer krävande tal, kvadrering eller procent än i ingångsuppgifterna"
+      ]
+    },
+    {
+      "id": "2.282",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.282: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "2.283",
+      "omr": "densitet",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "2.283: träningsnivå 2; omvandling av både massenhet och volymenhet i densiteten"
+      ]
+    },
+    {
+      "id": "5.551",
+      "omr": "effekt",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.551b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.551c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.551b: kortare, självbärande frågetext",
+        "5.551c: kortare, självbärande frågetext",
+        "5.551b: facit förklarar metod, enhetsomvandling och svar",
+        "5.551c: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.556",
+      "omr": "effekt",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.556a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.556a: kortare, självbärande frågetext",
+        "5.556a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.560",
+      "omr": "effekt",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Angett att effekten är konstant under accelerationen"
+      ]
+    },
+    {
+      "id": "5.562",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.562c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.563",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.563b: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.573",
+      "omr": "effekt",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.573a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.588",
+      "omr": "effekt",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.588a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.588c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.588a: kortare, självbärande frågetext",
+        "5.588b: kortare, självbärande frågetext",
+        "5.588c: kortare, självbärande frågetext",
+        "5.588d: kortare, självbärande frågetext",
+        "5.588b: träningsnivå 2; mer krävande tal, kvadrering eller procent än i ingångsuppgifterna",
+        "5.588a: facit förklarar metod, enhetsomvandling och svar",
+        "5.588b: facit förklarar metod, enhetsomvandling och svar",
+        "5.588c: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.600",
+      "omr": "effekt",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.600d: kortare, självbärande frågetext; förklarande facit",
+        "5.600d: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.346",
+      "omr": "arbete",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.346: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.347",
+      "omr": "arbete",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.347: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.476",
+      "omr": "rorelseenergi",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.476a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.476a: kortare, självbärande frågetext",
+        "5.476a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.477",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.477a: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.477b: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.477a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.480",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.480a: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.480b: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.480a: kortare, självbärande frågetext",
+        "5.480b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.481",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.481b: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet"
+      ]
+    },
+    {
+      "id": "5.503",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.503c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.505",
+      "omr": "rorelseenergi",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.505a: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.505d: kortare, självbärande frågetext; förklarande facit",
+        "5.505d: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.509",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.509c: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet",
+        "5.509d: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.510",
+      "omr": "rorelseenergi",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.510a: kortare, självbärande frågetext",
+        "5.510b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.511",
+      "omr": "rorelseenergi",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.511d: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.511d: kortare, självbärande frågetext",
+        "5.511d: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.514",
+      "omr": "rorelseenergi",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.514b: kortare, självbärande frågetext; förklarande facit",
+        "5.514b: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.515",
+      "omr": "rorelseenergi",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.515d: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "5.546",
+      "omr": "rorelseenergi",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.546b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.546b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.394",
+      "omr": "nuklider",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.394b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.395",
+      "omr": "nuklider",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.395b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.407",
+      "omr": "fission",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.407c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "9.407c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.410",
+      "omr": "fission",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.410d: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.411",
+      "omr": "fission",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.411a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.345",
+      "omr": "aktivitet",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "9.345a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "9.345a: kortare, självbärande frågetext",
+        "9.345a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "9.365",
+      "omr": "straldoser",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "9.365b: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "9.373",
+      "omr": "straldoser",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.373c: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.374",
+      "omr": "straldoser",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.374a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.380",
+      "omr": "straldoser",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "9.380b: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "9.385",
+      "omr": "straldoser",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.385a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.315",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.319",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.317",
+      "omr": "arkimedes",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.317: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.318",
+      "omr": "arkimedes",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.318: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.323",
+      "omr": "arkimedes",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.323: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.329",
+      "omr": "arkimedes",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.329: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.332",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.332: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.333",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.333: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.335",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.335: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.337",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.337: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.338",
+      "omr": "gaslagen",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.338: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.342",
+      "omr": "gaslagen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.344",
+      "omr": "gaslagen",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.352",
+      "omr": "tryck",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.352: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "6.419",
+      "omr": "tryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.419a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.419b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.419d: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.419a: kortare, självbärande frågetext",
+        "6.419b: kortare, självbärande frågetext",
+        "6.419c: kortare, självbärande frågetext",
+        "6.419d: kortare, självbärande frågetext",
+        "6.419a: facit förklarar metod, enhetsomvandling och svar",
+        "6.419b: facit förklarar metod, enhetsomvandling och svar",
+        "6.419c: facit förklarar metod, enhetsomvandling och svar",
+        "6.419d: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.421",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.421a: kortare, självbärande frågetext",
+        "6.421b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.422",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "6.422a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.422b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.422b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.423",
+      "omr": "tryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.423b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.430",
+      "omr": "tryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.430b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.430b: kortare, självbärande frågetext",
+        "6.430b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.431",
+      "omr": "tryck",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "6.431: kortare, självbärande frågetext",
+        "6.431: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "6.436",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.436a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.437",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.437b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.437b: kortare, självbärande frågetext",
+        "6.437b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.438",
+      "omr": "vatsketryck",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "notes": [
+        "6.438: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "6.439",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.439a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.439a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.442",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.442a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.442a: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "6.444",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.444a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.444a: kortare, självbärande frågetext",
+        "6.444a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.454",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.454a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.454a: kortare, självbärande frågetext",
+        "6.454a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.457",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.457a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.457a: kortare, självbärande frågetext",
+        "6.457a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.463",
+      "omr": "vatsketryck",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.463a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.463a: kortare, självbärande frågetext",
+        "6.463a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.464",
+      "omr": "vatsketryck",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.464a: kortare, självbärande frågetext",
+        "6.464b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.358",
+      "omr": "arkimedes",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "6.358: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.361",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Kontrollerade formuleringar ersatta med enklare svenska"
+      ]
+    },
+    {
+      "id": "6.466",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.466a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.466a: kortare, självbärande frågetext",
+        "6.466a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.469",
+      "omr": "arkimedes",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.469a: kortare, självbärande frågetext",
+        "6.469b: kortare, självbärande frågetext",
+        "6.469c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.470",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.470b: kortare, självbärande frågetext",
+        "6.470c: kortare, självbärande frågetext",
+        "6.470b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.471",
+      "omr": "arkimedes",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "6.471: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.474",
+      "omr": "arkimedes",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.474a: kortare, självbärande frågetext",
+        "6.474b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.482",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.482a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.482a: kortare, självbärande frågetext",
+        "6.482a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.483",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.483a: kortare, självbärande frågetext",
+        "6.483b: kortare, självbärande frågetext; förklarande facit",
+        "6.483b: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "6.486",
+      "omr": "arkimedes",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "notes": [
+        "6.486: kortare, självbärande frågetext; förklarande facit",
+        "6.486: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "6.487",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.487a: kortare, självbärande frågetext",
+        "6.487a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.490",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.490a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "6.505",
+      "omr": "arkimedes",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "6.505b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "6.508",
+      "omr": "arkimedes",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.508a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.508b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.508a: kortare, självbärande frågetext",
+        "6.508b: kortare, självbärande frågetext",
+        "6.508a: facit förklarar metod, enhetsomvandling och svar",
+        "6.508b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "6.544",
+      "omr": "gaslagen",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "6.544a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "6.544a: kortare, självbärande frågetext",
+        "6.544a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "4.647",
+      "omr": "normalkraft",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.647a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.579",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.579a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.579b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.584",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.584a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.585",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.585a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.585a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.587",
+      "omr": "lutande_plan",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "4.587: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.590",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.590a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "4.623",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.623a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.623b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.623a: kortare, självbärande frågetext",
+        "4.623b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.624",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "4.624a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.624b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "4.624b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "4.625",
+      "omr": "lutande_plan",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "4.625a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.378",
+      "omr": "strom",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "8.378: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "8.464",
+      "omr": "strom",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "8.464a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.464b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.464b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "8.465",
+      "omr": "strom",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "8.465b: kortare, självbärande frågetext",
+        "8.465b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "8.466",
+      "omr": "strom",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "8.466: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut",
+        "8.466: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "9.415",
+      "omr": "fusion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.415a: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.420",
+      "omr": "fusion",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "9.420b: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "9.298",
+      "omr": "medicinska_metoder",
+      "fields": [
+        "t",
+        "traningsniva"
+      ],
+      "notes": [
+        "Förklarat annihilation med vanliga ord",
+        "9.298: träningsnivå 1; Addition av två givna energier utan enhetsomvandling"
+      ]
+    },
+    {
+      "id": "9.304",
+      "omr": "em_stralning",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "9.304: träningsnivå 2; enhetsomvandling, flera beräkningar eller ett samband som behöver lösas ut"
+      ]
+    },
+    {
+      "id": "5.497",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.497b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.497c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.497d: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.499",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.499c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.499a: kortare, självbärande frågetext",
+        "5.499c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.520",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.520a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.523",
+      "omr": "arbete",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.523b: kortare, självbärande frågetext",
+        "5.523c: kortare, självbärande frågetext",
+        "5.523b: facit förklarar metod, enhetsomvandling och svar",
+        "5.523c: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.525",
+      "omr": "arbete",
+      "fields": [
+        "s",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.525a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.525b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.525a: facit förklarar metod, enhetsomvandling och svar",
+        "5.525b: facit förklarar metod, enhetsomvandling och svar",
+        "5.525d: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.528",
+      "omr": "arbete",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.528b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.528a: kortare, självbärande frågetext",
+        "5.528b: kortare, självbärande frågetext",
+        "5.528a: facit förklarar metod, enhetsomvandling och svar",
+        "5.528b: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.530",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.530b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.532",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.532d: träningsnivå 2; eleven behöver kombinera samband eller lösa ut en storhet",
+        "5.532a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.533",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.533a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.533a: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.535",
+      "omr": "arbete",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.535a: träningsnivå 2; mer krävande tal, kvadrering eller procent än i ingångsuppgifterna",
+        "5.535b: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet",
+        "5.535c: träningsnivå 2; Rutinberäkning med högst ett par steg eller enhetsomvandling på det visade kortet"
+      ]
+    },
+    {
+      "id": "5.401",
+      "omr": "kollisioner",
+      "fields": [
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.401: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "5.401: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.402",
+      "omr": "kollisioner",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.402: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    },
+    {
+      "id": "5.403",
+      "omr": "kollisioner",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.403: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    },
+    {
+      "id": "5.405",
+      "omr": "kollisioner",
+      "fields": [
+        "s",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.405a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.405b: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "5.405c: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "5.405a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.406",
+      "omr": "kollisioner",
+      "fields": [
+        "traningsniva"
+      ],
+      "notes": [
+        "5.406: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    },
+    {
+      "id": "5.411",
+      "omr": "kollisioner",
+      "fields": [
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.411: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.411: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.412",
+      "omr": "kollisioner",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.412a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.412b: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.412c: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.412a: kortare, självbärande frågetext; förklarande facit",
+        "5.412b: kortare, självbärande frågetext; förklarande facit",
+        "5.412c: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.423",
+      "omr": "kollisioner",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.423a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.423a: kortare, självbärande frågetext; förklarande facit",
+        "5.423b: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.426",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.426a: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    },
+    {
+      "id": "5.427",
+      "omr": "kollisioner",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.427: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "5.427: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "5.434",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.434a: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    },
+    {
+      "id": "5.435",
+      "omr": "kollisioner",
+      "fields": [
+        "s",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.435: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.435: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.438",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.438a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar"
+      ]
+    },
+    {
+      "id": "5.440",
+      "omr": "kollisioner",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "notes": [
+        "5.440a: träningsnivå 2; enhetsomvandling, proportion eller flera beroende rutinberäkningar",
+        "5.440a: facit förklarar metod, enhetsomvandling och svar"
+      ]
+    },
+    {
+      "id": "5.447",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.447a: träningsnivå 1; ett grundbegrepp eller ett direkt samband utan extra omvandling"
+      ]
+    },
+    {
+      "id": "5.461",
+      "omr": "kollisioner",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "notes": [
+        "5.461a: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "5.461b: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi",
+        "Förklarat vad pendeln består av",
+        "5.461a: kortare, självbärande frågetext; förklarande facit",
+        "5.461b: kortare, självbärande frågetext; förklarande facit"
+      ]
+    },
+    {
+      "id": "5.462",
+      "omr": "kollisioner",
+      "fields": [
+        "t",
+        "ledtrad"
+      ],
+      "notes": [
+        "Förklarat vad pendeln består av",
+        "5.462: kortare, självbärande frågetext"
+      ]
+    },
+    {
+      "id": "5.463",
+      "omr": "kollisioner",
+      "fields": [
+        "t"
+      ],
+      "notes": [
+        "Förklarat vad pendeln består av"
+      ]
+    },
+    {
+      "id": "5.470",
+      "omr": "kollisioner",
+      "fields": [
+        "spelDelar"
+      ],
+      "notes": [
+        "5.470b: träningsnivå 3; samordna flera kroppar, riktningar eller både rörelsemängd och energi"
+      ]
+    }
+  ],
+  "levelChanges": [
+    {
+      "id": "2.239",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.240",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.257",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58e",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.58f",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.107",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.108",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.111",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.113",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.115",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.118",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.28b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.165a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.323",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.151a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.434",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.333",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.517a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.519a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.520",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.521",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.526a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.526b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.526c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.527a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.547a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.576a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.577a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.577b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.562a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.565a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.572a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.4a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.11a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.16a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.279",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.312",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.20a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.21a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.21b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.21c",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.280",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.313",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.42c",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.46b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.46c",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.52a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.65b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.67a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.262",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.82b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.147a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.147c",
+      "before": 3,
+      "after": 1
+    },
+    {
+      "id": "5.157a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.157b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.161a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.161b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.161c",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.162a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.2a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.16a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.16b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.42a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.42b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.46a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.46b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.71a",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.72a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.82",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.299",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.298",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.244",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.107b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.114a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.114b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.117b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "7.64",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.65",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.66",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.67",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.51",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.207",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.257",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.321",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.322",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.216",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.245",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.26",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.247",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.109",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.141",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.309",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.336",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.413",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.416b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.439",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.473a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.100",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.369",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.370a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.375",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.376",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.377",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.378",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.384b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.389",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.391",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.395a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.398a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.399a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.400a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.137a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.137b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.137c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.139b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.139c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.140a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.144a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.150a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.190b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "7.193",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.445a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.446a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.446b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.189a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.189b",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.189c",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.209a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "2.291b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.291d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.295a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.305b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.271",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.375a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.380a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.380d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.381a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.392a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.392b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.392c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.393a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.393b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.393c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.394a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.394b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.398a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.279",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.368b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "3.368c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.233",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.282",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "2.283",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.551b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.551c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.556a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.562c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.563b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.588a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.588b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.588c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.600d",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.346",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.347",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.476a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.477a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.477b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.480a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.480b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.481b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.503c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.505a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.505d",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.509c",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.509d",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.511d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.514b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.546b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.407c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.410d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.411a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.345a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.373c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.374a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.317",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.318",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.323",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.329",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.332",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.333",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.335",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.337",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.338",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.352",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "6.419a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.419b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.419d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.422a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.422b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.430b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.431",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.437b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.439a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.442a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.444a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.454a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.457a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.463a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.358",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.466a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.482a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.483b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.486",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "6.505b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.508a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.508b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "6.544a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.647a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.579a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.579b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.584a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.585a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.587",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.590a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.623a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.623b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.624a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.624b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "4.625a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.378",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.464a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.464b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "8.466",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.415a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.420b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "9.298",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "9.304",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.497b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.497c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.497d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.499c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.525a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.525b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.528b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.530b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.532d",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.533a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.535a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.535b",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.535c",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "5.401",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "id": "5.402",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.403",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.405a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.405b",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.405c",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.406",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.411",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.412a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.412b",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.412c",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.423a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.426a",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.427",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.434a",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "id": "5.435",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.438a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.440a",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "id": "5.447a",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "5.461a",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.461b",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "5.470b",
+      "before": 2,
+      "after": 3
+    }
+  ],
+  "changedQuestionCards": [
+    "2.29a",
+    "3.28a",
+    "3.28b",
+    "4.45a",
+    "4.51a",
+    "4.61a",
+    "4.85a",
+    "4.85b",
+    "4.400",
+    "4.401",
+    "4.402",
+    "4.403",
+    "4.404",
+    "4.406",
+    "4.408",
+    "4.410",
+    "4.411",
+    "4.187c",
+    "4.190a",
+    "4.412",
+    "4.414",
+    "4.208a",
+    "4.208b",
+    "4.208c",
+    "4.241a",
+    "4.517a",
+    "4.519a",
+    "4.519b",
+    "4.520",
+    "4.521",
+    "4.526a",
+    "4.526b",
+    "4.526c",
+    "4.527a",
+    "4.527d",
+    "4.530a",
+    "4.545a",
+    "4.547a",
+    "4.577a",
+    "4.577b",
+    "4.298a",
+    "4.559c",
+    "4.562a",
+    "4.572a",
+    "4.678a",
+    "4.678b",
+    "4.679a",
+    "4.679b",
+    "4.681a",
+    "4.681b",
+    "4.681c",
+    "4.681d",
+    "4.685a",
+    "4.685b",
+    "4.685c",
+    "4.687a",
+    "4.687b",
+    "4.687c",
+    "4.688",
+    "4.689a",
+    "4.689b",
+    "4.689c",
+    "4.690",
+    "4.692",
+    "4.700a",
+    "4.700b",
+    "4.714c",
+    "4.715a",
+    "4.716a",
+    "4.716b",
+    "4.717a",
+    "4.717b",
+    "4.720b",
+    "5.14a",
+    "5.14b",
+    "5.21a",
+    "5.21b",
+    "5.21c",
+    "5.32a",
+    "5.32b",
+    "5.45a",
+    "5.45b",
+    "5.57a",
+    "5.65b",
+    "5.71a",
+    "5.71b",
+    "5.72a",
+    "5.77a",
+    "5.95a",
+    "5.108a",
+    "5.115a",
+    "5.117a",
+    "5.117b",
+    "5.125c",
+    "5.131a",
+    "5.131b",
+    "5.140a",
+    "5.147b",
+    "5.149a",
+    "5.149b",
+    "5.157a",
+    "5.157b",
+    "5.170a",
+    "5.170b",
+    "6.2a",
+    "6.6a",
+    "6.8a",
+    "6.304",
+    "6.15b",
+    "6.16a",
+    "6.16b",
+    "6.17b",
+    "6.32b",
+    "6.51a",
+    "6.51b",
+    "6.51c",
+    "6.55b",
+    "6.69",
+    "6.70a",
+    "6.74a",
+    "6.76b",
+    "6.76c",
+    "6.83a",
+    "6.101a",
+    "6.104a",
+    "6.105",
+    "6.107b",
+    "6.112",
+    "6.113a",
+    "6.126a",
+    "6.133a",
+    "7.85",
+    "7.87",
+    "7.88",
+    "7.89",
+    "7.94",
+    "7.95",
+    "7.97",
+    "7.98",
+    "7.51",
+    "7.54",
+    "8.207",
+    "8.216",
+    "8.26",
+    "6.141",
+    "6.144",
+    "8.473a",
+    "4.671a",
+    "4.672a",
+    "5.368a",
+    "5.368b",
+    "5.368c",
+    "5.369",
+    "5.370a",
+    "5.370b",
+    "5.371a",
+    "5.371b",
+    "5.371c",
+    "5.372",
+    "5.373a",
+    "5.373b",
+    "5.374",
+    "5.375",
+    "5.376",
+    "5.377",
+    "5.378",
+    "5.379",
+    "5.380a",
+    "5.380b",
+    "5.381a",
+    "5.381b",
+    "5.382a",
+    "5.382b",
+    "5.383",
+    "5.384a",
+    "5.384b",
+    "5.385",
+    "5.386a",
+    "5.386b",
+    "5.387a",
+    "5.387b",
+    "5.388a",
+    "5.388b",
+    "5.388c",
+    "5.389",
+    "5.390",
+    "5.391",
+    "5.392a",
+    "5.392b",
+    "5.393",
+    "5.394",
+    "5.395a",
+    "5.395b",
+    "5.395c",
+    "5.397a",
+    "5.397b",
+    "5.397c",
+    "5.398a",
+    "5.398b",
+    "5.399a",
+    "5.399b",
+    "5.399c",
+    "5.400a",
+    "5.400b",
+    "5.400c",
+    "7.137c",
+    "7.140a",
+    "7.144a",
+    "7.132",
+    "7.134",
+    "7.190a",
+    "7.190b",
+    "8.402b",
+    "8.445a",
+    "8.446a",
+    "5.209c",
+    "6.345",
+    "6.291",
+    "6.202a",
+    "2.295a",
+    "3.392a",
+    "3.393c",
+    "3.368b",
+    "3.368c",
+    "5.228a",
+    "5.228b",
+    "5.551b",
+    "5.551c",
+    "5.556a",
+    "5.560",
+    "5.573a",
+    "5.588a",
+    "5.588b",
+    "5.588c",
+    "5.588d",
+    "5.600d",
+    "5.476a",
+    "5.477a",
+    "5.480a",
+    "5.480b",
+    "5.505d",
+    "5.510a",
+    "5.510b",
+    "5.511d",
+    "5.514b",
+    "5.515d",
+    "5.546b",
+    "9.394b",
+    "9.395b",
+    "9.407c",
+    "9.345a",
+    "9.365b",
+    "9.380b",
+    "9.385a",
+    "6.315",
+    "6.319",
+    "6.342",
+    "6.344",
+    "6.419a",
+    "6.419b",
+    "6.419c",
+    "6.419d",
+    "6.421a",
+    "6.421b",
+    "6.422b",
+    "6.423b",
+    "6.430b",
+    "6.431",
+    "6.436a",
+    "6.437b",
+    "6.438",
+    "6.439a",
+    "6.442a",
+    "6.444a",
+    "6.454a",
+    "6.457a",
+    "6.463a",
+    "6.464a",
+    "6.464b",
+    "6.361",
+    "6.466a",
+    "6.469a",
+    "6.469b",
+    "6.469c",
+    "6.470b",
+    "6.470c",
+    "6.471",
+    "6.474a",
+    "6.474b",
+    "6.482a",
+    "6.483a",
+    "6.483b",
+    "6.486",
+    "6.487a",
+    "6.490a",
+    "6.508a",
+    "6.508b",
+    "6.544a",
+    "4.585a",
+    "4.623a",
+    "4.623b",
+    "4.624b",
+    "8.464b",
+    "8.465b",
+    "8.466",
+    "9.298",
+    "5.499a",
+    "5.499c",
+    "5.520a",
+    "5.523b",
+    "5.523c",
+    "5.528a",
+    "5.528b",
+    "5.532a",
+    "5.533a",
+    "5.412a",
+    "5.412b",
+    "5.412c",
+    "5.423a",
+    "5.423b",
+    "5.427",
+    "5.461a",
+    "5.461b",
+    "5.462",
+    "5.463"
+  ],
+  "changedSolutionCards": [
+    "4.527a",
+    "5.370b",
+    "5.375",
+    "5.376",
+    "5.384b",
+    "5.386a",
+    "5.386b",
+    "5.389",
+    "5.391",
+    "5.397c",
+    "5.399b",
+    "5.399c",
+    "5.400c",
+    "5.551b",
+    "5.551c",
+    "5.556a",
+    "5.588a",
+    "5.588b",
+    "5.588c",
+    "5.600d",
+    "5.476a",
+    "5.505d",
+    "5.511d",
+    "5.514b",
+    "5.515d",
+    "9.345a",
+    "9.365b",
+    "9.380b",
+    "6.419a",
+    "6.419b",
+    "6.419c",
+    "6.419d",
+    "6.430b",
+    "6.437b",
+    "6.438",
+    "6.442a",
+    "6.444a",
+    "6.454a",
+    "6.457a",
+    "6.463a",
+    "6.466a",
+    "6.470b",
+    "6.482a",
+    "6.483b",
+    "6.486",
+    "6.487a",
+    "6.508a",
+    "6.508b",
+    "6.544a",
+    "8.465b",
+    "5.523b",
+    "5.523c",
+    "5.525a",
+    "5.525b",
+    "5.525d",
+    "5.528a",
+    "5.528b",
+    "5.401",
+    "5.405a",
+    "5.411",
+    "5.412a",
+    "5.412b",
+    "5.423a",
+    "5.427",
+    "5.435",
+    "5.440a",
+    "5.461a",
+    "5.461b"
+  ],
+  "numericChecks": [
+    {
+      "id": "6.2a",
+      "calculated": 638.3,
+      "stored": 638.3,
+      "tolerance": 0
+    },
+    {
+      "id": "6.6a",
+      "calculated": 0.00025,
+      "stored": 0.00025,
+      "tolerance": 0
+    },
+    {
+      "id": "6.8a",
+      "calculated": 147.01,
+      "stored": 147.01,
+      "tolerance": 0
+    },
+    {
+      "id": "6.15b",
+      "calculated": 0.254,
+      "stored": 0.254,
+      "tolerance": 0
+    },
+    {
+      "id": "6.16a",
+      "calculated": 3.87,
+      "stored": 3.87,
+      "tolerance": 0
+    },
+    {
+      "id": "6.16b",
+      "calculated": 3.0,
+      "stored": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "6.32b",
+      "calculated": 19.6,
+      "stored": 19.6,
+      "tolerance": 0
+    },
+    {
+      "id": "6.51a",
+      "calculated": 20000.0,
+      "stored": 20000,
+      "tolerance": 0
+    },
+    {
+      "id": "6.51b",
+      "calculated": 400.0,
+      "stored": 400,
+      "tolerance": 0
+    },
+    {
+      "id": "6.51c",
+      "calculated": 40.73,
+      "stored": 40.73,
+      "tolerance": 0
+    },
+    {
+      "id": "6.55b",
+      "calculated": 0.48,
+      "stored": 0.48,
+      "tolerance": 0
+    },
+    {
+      "id": "6.70a",
+      "calculated": 294.0,
+      "stored": 294,
+      "tolerance": 0
+    },
+    {
+      "id": "6.74a",
+      "calculated": 7.84,
+      "stored": 7.84,
+      "tolerance": 0
+    },
+    {
+      "id": "6.76b",
+      "calculated": 35.3,
+      "stored": 35.3,
+      "tolerance": 0
+    },
+    {
+      "id": "6.76c",
+      "calculated": 49.9,
+      "stored": 49.9,
+      "tolerance": 0
+    },
+    {
+      "id": "6.83a",
+      "calculated": 252.5,
+      "stored": 252.5,
+      "tolerance": 0
+    },
+    {
+      "id": "6.101a",
+      "calculated": 24.5,
+      "stored": 24.5,
+      "tolerance": 0
+    },
+    {
+      "id": "6.104a",
+      "calculated": 1.807,
+      "stored": 1.807,
+      "tolerance": 0
+    },
+    {
+      "id": "6.107b",
+      "calculated": 202.6,
+      "stored": 202.6,
+      "tolerance": 0
+    },
+    {
+      "id": "6.112",
+      "calculated": 29.4,
+      "stored": 29.4,
+      "tolerance": 0
+    },
+    {
+      "id": "6.113a",
+      "calculated": 11.44,
+      "stored": 11.44,
+      "tolerance": 0
+    },
+    {
+      "id": "6.126a",
+      "calculated": 20.0,
+      "stored": 20,
+      "tolerance": 0
+    },
+    {
+      "id": "6.133a",
+      "calculated": 14.7,
+      "stored": 14.7,
+      "tolerance": 0
+    },
+    {
+      "id": "6.202a",
+      "calculated": 1018.0,
+      "stored": 1018,
+      "tolerance": 0
+    },
+    {
+      "id": "6.419a",
+      "calculated": 2000000.0,
+      "stored": 2000000.0,
+      "tolerance": 51000.0
+    },
+    {
+      "id": "6.419b",
+      "calculated": 44190.0,
+      "stored": 44190.0,
+      "tolerance": 663.0
+    },
+    {
+      "id": "6.419c",
+      "calculated": 12220444.444444446,
+      "stored": 12220444.444444446,
+      "tolerance": 510000.0
+    },
+    {
+      "id": "6.419d",
+      "calculated": 343700.0,
+      "stored": 343700.0,
+      "tolerance": 5160.0
+    },
+    {
+      "id": "6.421a",
+      "calculated": 397887.3577297384,
+      "stored": 397887.3577297384,
+      "tolerance": 5970.0
+    },
+    {
+      "id": "6.421b",
+      "calculated": 70735530.26306461,
+      "stored": 70735530.26306461,
+      "tolerance": 1060000.0
+    },
+    {
+      "id": "6.422b",
+      "calculated": 30549.898167006108,
+      "stored": 30947.046843177188,
+      "tolerance": 510.0
+    },
+    {
+      "id": "6.430b",
+      "calculated": 7058.77378435518,
+      "stored": 7058.77378435518,
+      "tolerance": 106.0
+    },
+    {
+      "id": "6.436a",
+      "calculated": 98003.6,
+      "stored": 98003.6,
+      "tolerance": 1470.0
+    },
+    {
+      "id": "6.437b",
+      "calculated": 32209600.0,
+      "stored": 32209600.0,
+      "tolerance": 510000.0
+    },
+    {
+      "id": "6.439a",
+      "calculated": 1851290.0,
+      "stored": 1900000,
+      "tolerance": 51000.0
+    },
+    {
+      "id": "6.444a",
+      "calculated": 13889.408,
+      "stored": 13889.408,
+      "tolerance": 208.0
+    },
+    {
+      "id": "6.454a",
+      "calculated": 4026.2000000000003,
+      "stored": 4026.2000000000003,
+      "tolerance": 60.4
+    },
+    {
+      "id": "6.457a",
+      "calculated": 1964.0,
+      "stored": 1964.0,
+      "tolerance": 51.0
+    },
+    {
+      "id": "6.463a",
+      "calculated": 0.2,
+      "stored": 0.2,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "6.466a",
+      "calculated": 1.2275000000000003,
+      "stored": 1.2275000000000003,
+      "tolerance": 0.051
+    },
+    {
+      "id": "6.470b",
+      "calculated": 392.8,
+      "stored": 392.8,
+      "tolerance": 5.89
+    },
+    {
+      "id": "6.470c",
+      "calculated": 687.4,
+      "stored": 687.4,
+      "tolerance": 10.3
+    },
+    {
+      "id": "6.471",
+      "calculated": 700.5587999999999,
+      "stored": 700.5587999999999,
+      "tolerance": 10.5
+    },
+    {
+      "id": "6.482a",
+      "calculated": 89.46341463414635,
+      "stored": 89.46341463414635,
+      "tolerance": 1.34
+    },
+    {
+      "id": "6.483a",
+      "calculated": 8.838000000000001,
+      "stored": 8.838000000000001,
+      "tolerance": 0.133
+    },
+    {
+      "id": "6.487a",
+      "calculated": 0.030416666666666665,
+      "stored": 0.030416666666666665,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "6.490a",
+      "calculated": 966.2880000000001,
+      "stored": 966.2880000000001,
+      "tolerance": 14.5
+    },
+    {
+      "id": "6.508a",
+      "calculated": 0.025335600000000003,
+      "stored": 0.025335600000000003,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "6.508b",
+      "calculated": 19.64,
+      "stored": 19.64,
+      "tolerance": 0.51
+    },
+    {
+      "id": "6.544a",
+      "calculated": 857.1428571428571,
+      "stored": 857.142857143,
+      "tolerance": 12.9
+    },
+    {
+      "id": "6.438",
+      "calculated": 412.44,
+      "stored": 412.44,
+      "tolerance": 6.19
+    },
+    {
+      "id": "6.442a",
+      "calculated": 101499.52,
+      "stored": 101499.52,
+      "tolerance": 1520.0
+    },
+    {
+      "id": "6.464a",
+      "calculated": 125339.36,
+      "stored": 125339.36,
+      "tolerance": 1880.0
+    },
+    {
+      "id": "6.464b",
+      "calculated": 93954.64,
+      "stored": 93954.64,
+      "tolerance": 1410.0
+    },
+    {
+      "id": "5.14a",
+      "calculated": 24.0,
+      "stored": 24,
+      "tolerance": 0
+    },
+    {
+      "id": "5.14b",
+      "calculated": 8.0,
+      "stored": 8,
+      "tolerance": 0
+    },
+    {
+      "id": "5.21a",
+      "calculated": 600.0,
+      "stored": 600,
+      "tolerance": 0
+    },
+    {
+      "id": "5.21b",
+      "calculated": 10000.0,
+      "stored": 10000,
+      "tolerance": 0
+    },
+    {
+      "id": "5.21c",
+      "calculated": 180.0,
+      "stored": 180,
+      "tolerance": 0
+    },
+    {
+      "id": "5.32a",
+      "calculated": 3.0,
+      "stored": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "5.32b",
+      "calculated": -3.75,
+      "stored": -3.75,
+      "tolerance": 0
+    },
+    {
+      "id": "5.45a",
+      "calculated": 117.84,
+      "stored": 117.84,
+      "tolerance": 0
+    },
+    {
+      "id": "5.45b",
+      "calculated": 235.68,
+      "stored": 235.68,
+      "tolerance": 0
+    },
+    {
+      "id": "5.57a",
+      "calculated": 133.2,
+      "stored": 133.2,
+      "tolerance": 0
+    },
+    {
+      "id": "5.65b",
+      "calculated": 0.0,
+      "stored": 0,
+      "tolerance": 0
+    },
+    {
+      "id": "5.71a",
+      "calculated": 0.0,
+      "stored": 0,
+      "tolerance": 0
+    },
+    {
+      "id": "5.71b",
+      "calculated": 29.46,
+      "stored": 29.46,
+      "tolerance": 0
+    },
+    {
+      "id": "5.72a",
+      "calculated": 245.5,
+      "stored": 245.5,
+      "tolerance": 0
+    },
+    {
+      "id": "5.77a",
+      "calculated": 1500.0,
+      "stored": 1500,
+      "tolerance": 0
+    },
+    {
+      "id": "5.95a",
+      "calculated": 9427.2,
+      "stored": 9427.2,
+      "tolerance": 0
+    },
+    {
+      "id": "5.108a",
+      "calculated": 30.98,
+      "stored": 30.98,
+      "tolerance": 0
+    },
+    {
+      "id": "5.115a",
+      "calculated": 12.53,
+      "stored": 12.53,
+      "tolerance": 0
+    },
+    {
+      "id": "5.117a",
+      "calculated": 8750.0,
+      "stored": 8750,
+      "tolerance": 0
+    },
+    {
+      "id": "5.117b",
+      "calculated": 52500.0,
+      "stored": 52500,
+      "tolerance": 0
+    },
+    {
+      "id": "5.125c",
+      "calculated": 75.0,
+      "stored": 75,
+      "tolerance": 0
+    },
+    {
+      "id": "5.131a",
+      "calculated": 660.0,
+      "stored": 660,
+      "tolerance": 0
+    },
+    {
+      "id": "5.131b",
+      "calculated": -360.0,
+      "stored": -360,
+      "tolerance": 0
+    },
+    {
+      "id": "5.140a",
+      "calculated": 114.89,
+      "stored": 114.89,
+      "tolerance": 0
+    },
+    {
+      "id": "5.147b",
+      "calculated": 1.6,
+      "stored": 1.6,
+      "tolerance": 0
+    },
+    {
+      "id": "5.149a",
+      "calculated": 36000.0,
+      "stored": 36000,
+      "tolerance": 0
+    },
+    {
+      "id": "5.149b",
+      "calculated": 0.24,
+      "stored": 0.24,
+      "tolerance": 0
+    },
+    {
+      "id": "5.157a",
+      "calculated": 7.5,
+      "stored": 7.5,
+      "tolerance": 0
+    },
+    {
+      "id": "5.157b",
+      "calculated": 30.0,
+      "stored": 30,
+      "tolerance": 0
+    },
+    {
+      "id": "5.170a",
+      "calculated": 5.95,
+      "stored": 5.95,
+      "tolerance": 0
+    },
+    {
+      "id": "5.170b",
+      "calculated": 4.65,
+      "stored": 4.65,
+      "tolerance": 0
+    },
+    {
+      "id": "5.209c",
+      "calculated": 736.5,
+      "stored": 736.5,
+      "tolerance": 0
+    },
+    {
+      "id": "5.228a",
+      "calculated": 0.0737,
+      "stored": 0.0737,
+      "tolerance": 0
+    },
+    {
+      "id": "5.228b",
+      "calculated": -0.2946,
+      "stored": -0.2946,
+      "tolerance": 0
+    },
+    {
+      "id": "5.384b",
+      "calculated": 7250.0,
+      "stored": 7250.0,
+      "tolerance": 109.0
+    },
+    {
+      "id": "5.398a",
+      "calculated": 7500.0,
+      "stored": 7500,
+      "tolerance": 112.0
+    },
+    {
+      "id": "5.398b",
+      "calculated": 0.16666666666666666,
+      "stored": 0.16666666666666666,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "5.476a",
+      "calculated": 33.88,
+      "stored": 33.88,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.511d",
+      "calculated": 7011480000.0,
+      "stored": 7011480000.0,
+      "tolerance": 105000000.0
+    },
+    {
+      "id": "5.546b",
+      "calculated": 42000.0,
+      "stored": 42009.42,
+      "tolerance": 630.0
+    },
+    {
+      "id": "5.499a",
+      "calculated": -54255.50000000001,
+      "stored": -54255.50000000001,
+      "tolerance": 814.0
+    },
+    {
+      "id": "5.499c",
+      "calculated": 2506.6583111389627,
+      "stored": 2506.6583111389627,
+      "tolerance": 37.6
+    },
+    {
+      "id": "5.523b",
+      "calculated": 3.3,
+      "stored": 3.3,
+      "tolerance": 0.0495
+    },
+    {
+      "id": "5.523c",
+      "calculated": 256.6666666666667,
+      "stored": 256.666666667,
+      "tolerance": 3.85
+    },
+    {
+      "id": "5.528a",
+      "calculated": 707.04,
+      "stored": 707.04,
+      "tolerance": 10.6
+    },
+    {
+      "id": "5.528b",
+      "calculated": 459.57599999999996,
+      "stored": 459.57599999999996,
+      "tolerance": 6.89
+    },
+    {
+      "id": "5.532a",
+      "calculated": 1473.0,
+      "stored": 1473.0,
+      "tolerance": 22.1
+    },
+    {
+      "id": "5.533a",
+      "calculated": 0.07365,
+      "stored": 0.07365,
+      "tolerance": 0.0011
+    },
+    {
+      "id": "5.551b",
+      "calculated": 240.0,
+      "stored": 240,
+      "tolerance": 5.1
+    },
+    {
+      "id": "5.551c",
+      "calculated": 166000,
+      "stored": 166000,
+      "tolerance": 5100.0
+    },
+    {
+      "id": "5.556a",
+      "calculated": 25.0,
+      "stored": 25,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.573a",
+      "calculated": 450.0,
+      "stored": 450,
+      "tolerance": 6.75
+    },
+    {
+      "id": "5.588a",
+      "calculated": 151.7241379310345,
+      "stored": 151.7241379310345,
+      "tolerance": 5.1
+    },
+    {
+      "id": "5.588b",
+      "calculated": 0.358974358974359,
+      "stored": 0.358974358974359,
+      "tolerance": 0.00538
+    },
+    {
+      "id": "5.588c",
+      "calculated": 1600.0,
+      "stored": 1600,
+      "tolerance": 51.0
+    },
+    {
+      "id": "5.588d",
+      "calculated": 12.0,
+      "stored": 12,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.515d",
+      "calculated": 17500.0,
+      "stored": 17500.0,
+      "tolerance": 510.0
+    },
+    {
+      "id": "5.520a",
+      "calculated": 57.6,
+      "stored": 57.6,
+      "tolerance": 0.864
+    },
+    {
+      "id": "5.477a",
+      "calculated": 10.487325683891008,
+      "stored": 10.487325683891008,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.480a",
+      "calculated": 9.909591313469996,
+      "stored": 9.909591313469996,
+      "tolerance": 0.149
+    },
+    {
+      "id": "5.480b",
+      "calculated": 14.01427843308388,
+      "stored": 14.01427843308388,
+      "tolerance": 0.21
+    },
+    {
+      "id": "5.397a",
+      "calculated": 29.327902240325866,
+      "stored": 29.327902240325866,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.397b",
+      "calculated": 0.08333333333333333,
+      "stored": 0.08333333333333333,
+      "tolerance": 0.00125
+    },
+    {
+      "id": "5.399a",
+      "calculated": 15.351872849916392,
+      "stored": 15.351872849916392,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.399b",
+      "calculated": 0.03908794788273615,
+      "stored": 0.03908317935314763,
+      "tolerance": 0.000586
+    },
+    {
+      "id": "5.400a",
+      "calculated": 65.9877800407332,
+      "stored": 65.9877800407332,
+      "tolerance": 0.99
+    },
+    {
+      "id": "5.400b",
+      "calculated": 0.2222222222222222,
+      "stored": 0.2222222222222222,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "5.370b",
+      "calculated": 61.875,
+      "stored": 61.875,
+      "tolerance": 0.928
+    },
+    {
+      "id": "5.386a",
+      "calculated": 8.99568,
+      "stored": 8.99568,
+      "tolerance": 0.131
+    },
+    {
+      "id": "5.386b",
+      "calculated": 450.0,
+      "stored": 449.784,
+      "tolerance": 6.57
+    },
+    {
+      "id": "5.412a",
+      "calculated": 1.75,
+      "stored": 1.75,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.412b",
+      "calculated": 0.8983050847457628,
+      "stored": 0.8983050847457628,
+      "tolerance": 0.0135
+    },
+    {
+      "id": "5.412c",
+      "calculated": 810.0,
+      "stored": 810.0,
+      "tolerance": 12.2
+    },
+    {
+      "id": "5.423a",
+      "calculated": 1.28,
+      "stored": 1.28,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.423b",
+      "calculated": 153.6,
+      "stored": 153.6,
+      "tolerance": 5.1
+    },
+    {
+      "id": "6.105",
+      "calculated": 71.4,
+      "stored": 71.4,
+      "tolerance": 0
+    },
+    {
+      "id": "6.419a",
+      "calculated": 2000000.0,
+      "stored": 2000000.0,
+      "tolerance": 51000.0
+    },
+    {
+      "id": "6.419b",
+      "calculated": 44190.0,
+      "stored": 44190.0,
+      "tolerance": 663.0
+    },
+    {
+      "id": "6.419c",
+      "calculated": 12220444.444444446,
+      "stored": 12220444.444444446,
+      "tolerance": 510000.0
+    },
+    {
+      "id": "6.419d",
+      "calculated": 343700.0,
+      "stored": 343700.0,
+      "tolerance": 5160.0
+    },
+    {
+      "id": "6.430b",
+      "calculated": 7058.77378435518,
+      "stored": 7058.77378435518,
+      "tolerance": 106.0
+    },
+    {
+      "id": "6.437b",
+      "calculated": 32209600.0,
+      "stored": 32209600.0,
+      "tolerance": 510000.0
+    },
+    {
+      "id": "6.444a",
+      "calculated": 13889.408,
+      "stored": 13889.408,
+      "tolerance": 208.0
+    },
+    {
+      "id": "6.454a",
+      "calculated": 4026.2000000000003,
+      "stored": 4026.2000000000003,
+      "tolerance": 60.4
+    },
+    {
+      "id": "6.457a",
+      "calculated": 1964.0,
+      "stored": 1964.0,
+      "tolerance": 51.0
+    },
+    {
+      "id": "6.463a",
+      "calculated": 0.2,
+      "stored": 0.2,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "6.466a",
+      "calculated": 1.2275000000000003,
+      "stored": 1.2275000000000003,
+      "tolerance": 0.051
+    },
+    {
+      "id": "6.470b",
+      "calculated": 392.8,
+      "stored": 392.8,
+      "tolerance": 5.89
+    },
+    {
+      "id": "6.482a",
+      "calculated": 89.46341463414635,
+      "stored": 89.46341463414635,
+      "tolerance": 1.34
+    },
+    {
+      "id": "6.487a",
+      "calculated": 0.030416666666666665,
+      "stored": 0.030416666666666665,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "6.508a",
+      "calculated": 0.025335600000000003,
+      "stored": 0.025335600000000003,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "6.508b",
+      "calculated": 19.64,
+      "stored": 19.64,
+      "tolerance": 0.51
+    },
+    {
+      "id": "6.544a",
+      "calculated": 857.1428571428571,
+      "stored": 857.142857143,
+      "tolerance": 12.9
+    },
+    {
+      "id": "5.375",
+      "calculated": 562.5,
+      "stored": 562.5,
+      "tolerance": 8.44
+    },
+    {
+      "id": "5.376",
+      "calculated": 2.5,
+      "stored": 2.5,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.384b",
+      "calculated": 7250,
+      "stored": 7250.0,
+      "tolerance": 109.0
+    },
+    {
+      "id": "5.389",
+      "calculated": 105,
+      "stored": 105.0,
+      "tolerance": 5.1
+    },
+    {
+      "id": "5.391",
+      "calculated": 2917.2222222222226,
+      "stored": 2917.2222222222226,
+      "tolerance": 51.0
+    },
+    {
+      "id": "5.399b",
+      "calculated": 0.03908794788273615,
+      "stored": 0.03908317935314763,
+      "tolerance": 0.000586
+    },
+    {
+      "id": "5.401",
+      "calculated": 1.0929936305732486,
+      "stored": 1.0929936305732486,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.405a",
+      "calculated": 2.027027027027027,
+      "stored": 2.027027027027027,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.411",
+      "calculated": 1.5340909090909092,
+      "stored": 1.5340909090909092,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.435",
+      "calculated": 8,
+      "stored": 8.0,
+      "tolerance": 0.12
+    },
+    {
+      "id": "5.440a",
+      "calculated": 3.033707865168539,
+      "stored": 3.033707865168539,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.476a",
+      "calculated": 33.88,
+      "stored": 33.88,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.511d",
+      "calculated": 7011480000.0,
+      "stored": 7011480000.0,
+      "tolerance": 105000000.0
+    },
+    {
+      "id": "5.523b",
+      "calculated": 3.3,
+      "stored": 3.3,
+      "tolerance": 0.0495
+    },
+    {
+      "id": "5.523c",
+      "calculated": 256.6666666666667,
+      "stored": 256.666666667,
+      "tolerance": 3.85
+    },
+    {
+      "id": "5.525a",
+      "calculated": 114.89399999999999,
+      "stored": 114.894,
+      "tolerance": 1.73
+    },
+    {
+      "id": "5.525b",
+      "calculated": 24746.4,
+      "stored": 24746.4,
+      "tolerance": 371.0
+    },
+    {
+      "id": "5.525d",
+      "calculated": 35.075809006562565,
+      "stored": 35.0758090066,
+      "tolerance": 0.526
+    },
+    {
+      "id": "5.528a",
+      "calculated": 707.04,
+      "stored": 707.04,
+      "tolerance": 10.6
+    },
+    {
+      "id": "5.528b",
+      "calculated": 459.57599999999996,
+      "stored": 459.57599999999996,
+      "tolerance": 6.89
+    },
+    {
+      "id": "5.551b",
+      "calculated": 240,
+      "stored": 240,
+      "tolerance": 5.1
+    },
+    {
+      "id": "5.551c",
+      "calculated": 166000,
+      "stored": 166000,
+      "tolerance": 5100.0
+    },
+    {
+      "id": "5.556a",
+      "calculated": 25,
+      "stored": 25,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.588a",
+      "calculated": 151.7241379310345,
+      "stored": 151.7241379310345,
+      "tolerance": 5.1
+    },
+    {
+      "id": "5.588b",
+      "calculated": 0.358974358974359,
+      "stored": 0.358974358974359,
+      "tolerance": 0.00538
+    },
+    {
+      "id": "5.588c",
+      "calculated": 1600,
+      "stored": 1600,
+      "tolerance": 51.0
+    },
+    {
+      "id": "5.394",
+      "calculated": 1.3945441522756212,
+      "stored": 1.3945441522756212,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.427",
+      "calculated": 62.5,
+      "stored": 62.5,
+      "tolerance": 0.938
+    },
+    {
+      "id": "5.461a",
+      "calculated": 0.029292083134567087,
+      "stored": 0.029292083134567087,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "5.461b",
+      "calculated": 1.72934131736527,
+      "stored": 1.72934131736527,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.462",
+      "calculated": 896.8114439501761,
+      "stored": 896.8114439501761,
+      "tolerance": 13.5
+    },
+    {
+      "id": "2.29a",
+      "calculated": 8368000,
+      "stored": 8368000,
+      "tolerance": 0
+    },
+    {
+      "id": "2.295a",
+      "calculated": 33.333333333333336,
+      "stored": 33.3,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.45a",
+      "calculated": 49.1,
+      "stored": 49.1,
+      "tolerance": 0
+    },
+    {
+      "id": "4.51a",
+      "calculated": 157.12,
+      "stored": 157.12,
+      "tolerance": 0
+    },
+    {
+      "id": "4.61a",
+      "calculated": 294.6,
+      "stored": 294.6,
+      "tolerance": 0
+    },
+    {
+      "id": "4.187c",
+      "calculated": 65,
+      "stored": 65,
+      "tolerance": 0
+    },
+    {
+      "id": "4.190a",
+      "calculated": 289.38,
+      "stored": 289.38,
+      "tolerance": 0
+    },
+    {
+      "id": "4.208a",
+      "calculated": 1178.4,
+      "stored": 1178.4,
+      "tolerance": 0
+    },
+    {
+      "id": "4.208b",
+      "calculated": 194.4,
+      "stored": 194.4,
+      "tolerance": 0
+    },
+    {
+      "id": "4.208c",
+      "calculated": 120,
+      "stored": 120,
+      "tolerance": 0
+    },
+    {
+      "id": "4.241a",
+      "calculated": 343.7,
+      "stored": 343.7,
+      "tolerance": 0
+    },
+    {
+      "id": "4.545a",
+      "calculated": 245.5,
+      "stored": 245.5,
+      "tolerance": 3.68
+    },
+    {
+      "id": "4.559c",
+      "calculated": 19.823788546255507,
+      "stored": 19.82961222091659,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.562a",
+      "calculated": 1.7999999999999996,
+      "stored": 1.8,
+      "tolerance": 0.051
+    },
+    {
+      "id": "4.572a",
+      "calculated": 0.375,
+      "stored": 0.375,
+      "tolerance": 0.00562
+    },
+    {
+      "id": "4.577a",
+      "calculated": 81.0,
+      "stored": 81.0,
+      "tolerance": 1.21
+    },
+    {
+      "id": "4.577b",
+      "calculated": 67.5,
+      "stored": 67.5,
+      "tolerance": 1.01
+    },
+    {
+      "id": "4.585a",
+      "calculated": 4.150111330293669,
+      "stored": 4.150111330293669,
+      "tolerance": 0.0623
+    },
+    {
+      "id": "4.623a",
+      "calculated": 318.4156044035252,
+      "stored": 318.4156044035252,
+      "tolerance": 5.1
+    },
+    {
+      "id": "4.623b",
+      "calculated": 788.1062763817694,
+      "stored": 788.1062763817694,
+      "tolerance": 11.8
+    },
+    {
+      "id": "4.624b",
+      "calculated": 1.705225104689256,
+      "stored": 1.705225104689256,
+      "tolerance": 0.051
+    },
+    {
+      "id": "4.671a",
+      "calculated": 589.2,
+      "stored": 589.2,
+      "tolerance": 8.84
+    },
+    {
+      "id": "4.672a",
+      "calculated": 39.28,
+      "stored": 39.28,
+      "tolerance": 0.589
+    },
+    {
+      "id": "7.190a",
+      "calculated": 476400.0,
+      "stored": 476400.0,
+      "tolerance": 7150.0
+    },
+    {
+      "id": "7.190b",
+      "calculated": 21000.0,
+      "stored": 21000.0,
+      "tolerance": 510.0
+    },
+    {
+      "id": "8.26",
+      "calculated": 4.5,
+      "stored": 4.5,
+      "tolerance": 0.0675
+    },
+    {
+      "id": "8.402b",
+      "calculated": 1.5168000000000001,
+      "stored": 1.51789327688,
+      "tolerance": 0.0228
+    },
+    {
+      "id": "8.445a",
+      "calculated": 9936000,
+      "stored": 9936000,
+      "tolerance": 149000.0
+    },
+    {
+      "id": "8.446a",
+      "calculated": 9000000000,
+      "stored": 9000000000.0,
+      "tolerance": 135000000.0
+    },
+    {
+      "id": "8.464b",
+      "calculated": 120600.0,
+      "stored": 120600.0,
+      "tolerance": 5100.0
+    },
+    {
+      "id": "8.465b",
+      "calculated": 3.75,
+      "stored": 3.75,
+      "tolerance": 0.0562
+    },
+    {
+      "id": "8.466",
+      "calculated": 12500.0,
+      "stored": 12500.0,
+      "tolerance": 510.0
+    },
+    {
+      "id": "8.473a",
+      "calculated": 1.5e-11,
+      "stored": 1.5e-11,
+      "tolerance": 5.1e-13
+    },
+    {
+      "id": "9.394b",
+      "calculated": 5.333333333333333,
+      "stored": 5.3322834553333,
+      "tolerance": 0.08
+    },
+    {
+      "id": "9.395b",
+      "calculated": 7.87378640776699,
+      "stored": 7.875306170519511,
+      "tolerance": 0.118
+    },
+    {
+      "id": "9.407c",
+      "calculated": 0.14285714285714285,
+      "stored": 0.14285714285714285,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "9.345a",
+      "calculated": 0.0005665744487166464,
+      "stored": 0.0005665744487166464,
+      "tolerance": 8.5e-06
+    },
+    {
+      "id": "9.385a",
+      "calculated": 17.142857142857142,
+      "stored": 17.142857142857142,
+      "tolerance": 0.51
+    },
+    {
+      "id": "8.465b",
+      "calculated": 3.75,
+      "stored": 3.75,
+      "tolerance": 0.0562
+    },
+    {
+      "id": "9.345a",
+      "calculated": 0.0005665744487166464,
+      "stored": 0.0005665744487166464,
+      "tolerance": 8.5e-06
+    },
+    {
+      "id": "7.98",
+      "calculated": 114.2,
+      "stored": 114.2,
+      "tolerance": 1.713
+    },
+    {
+      "id": "3.368b",
+      "calculated": 2.1875,
+      "stored": 2.1875,
+      "tolerance": 0.051
+    },
+    {
+      "id": "3.368c",
+      "calculated": 64.5,
+      "stored": 64.5,
+      "tolerance": 0.967
+    },
+    {
+      "id": "3.392a",
+      "calculated": 1.131264,
+      "stored": 1.131264,
+      "tolerance": 0.051
+    },
+    {
+      "id": "3.393c",
+      "calculated": 3.601579276576588,
+      "stored": 3.601579276576588,
+      "tolerance": 0.054
+    },
+    {
+      "id": "4.298a",
+      "calculated": 39.28,
+      "stored": 39.28,
+      "tolerance": 0
+    },
+    {
+      "id": "4.714c",
+      "calculated": 2.946,
+      "stored": 2.946,
+      "tolerance": 0.051
+    },
+    {
+      "id": "4.715a",
+      "calculated": 0.20366598778004072,
+      "stored": 0.20366598778004072,
+      "tolerance": 0.00305
+    },
+    {
+      "id": "4.720b",
+      "calculated": 915,
+      "stored": 915,
+      "tolerance": 13.7
+    },
+    {
+      "id": "4.527a",
+      "calculated": 412.44,
+      "stored": 412.44,
+      "tolerance": 6.19
+    },
+    {
+      "id": "4.517a",
+      "calculated": 0.4973239236489367,
+      "stored": 0.4973239236489367,
+      "tolerance": 0.00746
+    },
+    {
+      "id": "4.519a",
+      "calculated": 0.2545824847250509,
+      "stored": 0.2545824847250509,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "4.519b",
+      "calculated": 600,
+      "stored": 600,
+      "tolerance": 9.0
+    },
+    {
+      "id": "4.520",
+      "calculated": 536.172,
+      "stored": 536.172,
+      "tolerance": 8.04
+    },
+    {
+      "id": "4.521",
+      "calculated": 0.7049976500078332,
+      "stored": 0.7049976500078332,
+      "tolerance": 0.0106
+    },
+    {
+      "id": "4.526a",
+      "calculated": 0.47556525065390215,
+      "stored": 0.47556525065390215,
+      "tolerance": 0.00713
+    },
+    {
+      "id": "4.526b",
+      "calculated": 21.604000000000003,
+      "stored": 21.604000000000003,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.526c",
+      "calculated": 11.399215733957503,
+      "stored": 11.399215733957503,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.547a",
+      "calculated": 62.22539674441619,
+      "stored": 62.22539674441619,
+      "tolerance": 0.933
+    },
+    {
+      "id": "4.530a",
+      "calculated": 38.25,
+      "stored": 38.25,
+      "tolerance": 0.574
+    },
+    {
+      "id": "7.137c",
+      "calculated": 6019200,
+      "stored": 6019200,
+      "tolerance": 90300.0
+    },
+    {
+      "id": "7.140a",
+      "calculated": 13200.0,
+      "stored": 13200.0,
+      "tolerance": 510.0
+    },
+    {
+      "id": "7.144a",
+      "calculated": 35.71428571428571,
+      "stored": 35.71428571428571,
+      "tolerance": 0.536
+    },
+    {
+      "id": "5.397c",
+      "calculated": 22345.143457382954,
+      "stored": 22336.5,
+      "tolerance": 510.0
+    },
+    {
+      "id": "5.399c",
+      "calculated": 31396.885000000002,
+      "stored": 31404.360000000004,
+      "tolerance": 510.0
+    },
+    {
+      "id": "5.400c",
+      "calculated": 13745.599999999999,
+      "stored": 13745.6,
+      "tolerance": 510.0
+    },
+    {
+      "id": "4.678a",
+      "calculated": 0.29069767441860467,
+      "stored": 0.29069767441860467,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "4.678b",
+      "calculated": 0.43499999999999994,
+      "stored": 0.436046511627907,
+      "tolerance": 0.00654
+    },
+    {
+      "id": "4.679a",
+      "calculated": 0.2909090909090909,
+      "stored": 0.2909090909090909,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "4.679b",
+      "calculated": 17.32,
+      "stored": 17.327272727272728,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.681a",
+      "calculated": 625.0,
+      "stored": 625,
+      "tolerance": 9.38
+    },
+    {
+      "id": "4.681b",
+      "calculated": 13.75,
+      "stored": 13.75,
+      "tolerance": 0.51
+    },
+    {
+      "id": "4.681c",
+      "calculated": 6.545454545454546,
+      "stored": 6.545454545454546,
+      "tolerance": 0.0982
+    },
+    {
+      "id": "4.681d",
+      "calculated": 0.8402777777777778,
+      "stored": 0.8402777777777778,
+      "tolerance": 0.0126
+    },
+    {
+      "id": "4.685a",
+      "calculated": 29433.962264150945,
+      "stored": 29433.962264150945,
+      "tolerance": 442.0
+    },
+    {
+      "id": "4.685b",
+      "calculated": 593.6,
+      "stored": 593.6,
+      "tolerance": 8.9
+    },
+    {
+      "id": "4.685c",
+      "calculated": 16620.8,
+      "stored": 16620.8,
+      "tolerance": 510.0
+    },
+    {
+      "id": "4.687b",
+      "calculated": 0.3029201502483945,
+      "stored": 0.30303030303030304,
+      "tolerance": 0.0051
+    },
+    {
+      "id": "4.687c",
+      "calculated": 4.20722430900548,
+      "stored": 4.2087542087542085,
+      "tolerance": 0.0631
+    },
+    {
+      "id": "4.689a",
+      "calculated": 7185628742.514969,
+      "stored": 7185628742.514969,
+      "tolerance": 108000000.0
+    },
+    {
+      "id": "4.689c",
+      "calculated": 6780170.0,
+      "stored": 6781447.039688196,
+      "tolerance": 102000.0
+    },
+    {
+      "id": "4.688",
+      "calculated": 3600.0,
+      "stored": 3600,
+      "tolerance": 54.0
+    },
+    {
+      "id": "4.690",
+      "calculated": 35357.142857142855,
+      "stored": 35357.142857142855,
+      "tolerance": 530.0
+    },
+    {
+      "id": "4.692",
+      "calculated": 0.019999999999999993,
+      "stored": 0.02,
+      "tolerance": 0.00051
+    },
+    {
+      "id": "4.700a",
+      "calculated": 20032.8,
+      "stored": 20032.800000000003,
+      "tolerance": 510.0
+    },
+    {
+      "id": "4.700b",
+      "calculated": 1.1818965661746832,
+      "stored": 1.1818965661746832,
+      "tolerance": 0.051
+    },
+    {
+      "id": "4.716a",
+      "calculated": 5250,
+      "stored": 5250,
+      "tolerance": 78.8
+    },
+    {
+      "id": "4.716b",
+      "calculated": 6800,
+      "stored": 6800,
+      "tolerance": 102.0
+    },
+    {
+      "id": "4.717a",
+      "calculated": 1800.0,
+      "stored": 1800,
+      "tolerance": 51.0
+    },
+    {
+      "id": "4.717b",
+      "calculated": 1200,
+      "stored": 1200,
+      "tolerance": 51.0
+    },
+    {
+      "id": "9.365b",
+      "calculated": 0.4784688995215311,
+      "stored": 0.4784688995215311,
+      "tolerance": 0.00718
+    },
+    {
+      "id": "9.380b",
+      "calculated": 2.1,
+      "stored": 2.125,
+      "tolerance": 0.051
+    },
+    {
+      "id": "5.514b",
+      "calculated": 0.34541751527494907,
+      "stored": 0.3454488485038383,
+      "tolerance": 0.00518
+    },
+    {
+      "id": "6.483b",
+      "calculated": 9.63794983642312,
+      "stored": 9.63794983642312,
+      "tolerance": 0.145
+    },
+    {
+      "id": "5.600d",
+      "calculated": 25.910931174089068,
+      "stored": 25.910931174089068,
+      "tolerance": 0.51
+    },
+    {
+      "id": "5.505d",
+      "calculated": 14.142135623730951,
+      "stored": 14.142135623730951,
+      "tolerance": 0.51
+    },
+    {
+      "id": "6.423b",
+      "calculated": 1140.529531568228,
+      "stored": 1140.529531568228,
+      "tolerance": 51.0
+    },
+    {
+      "id": "6.431",
+      "calculated": 0.0966049607215595,
+      "stored": 0.0966049607215595,
+      "tolerance": 0.00145
+    },
+    {
+      "id": "6.486",
+      "calculated": 0.82,
+      "stored": 0.82,
+      "tolerance": 0.0123
+    },
+    {
+      "id": "6.469a",
+      "calculated": 7800.000000000004,
+      "stored": 7800.0,
+      "tolerance": 117.0
+    },
+    {
+      "id": "6.469b",
+      "calculated": 2938.7096774193556,
+      "stored": 2938.7096774193546,
+      "tolerance": 44.1
+    },
+    {
+      "id": "6.469c",
+      "calculated": 12000.0,
+      "stored": 12000,
+      "tolerance": 510.0
+    },
+    {
+      "id": "6.474a",
+      "calculated": 7.856000000000001,
+      "stored": 7.856000000000001,
+      "tolerance": 0.118
+    },
+    {
+      "id": "6.474b",
+      "calculated": 51.555,
+      "stored": 51.555,
+      "tolerance": 0.773
+    },
+    {
+      "id": "5.510a",
+      "calculated": 296.96,
+      "stored": 296.96,
+      "tolerance": 4.45
+    },
+    {
+      "id": "5.510b",
+      "calculated": 0.8296521739130424,
+      "stored": 0.8296521739130424,
+      "tolerance": 0.0124
+    }
+  ]
+}

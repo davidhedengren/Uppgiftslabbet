@@ -88,6 +88,24 @@ Säg vem kraften verkar på och vad eleven ska bestämma. Förklara skillnaden
 mellan övertryck och absolut tryck när den annars kan missförstås.
 Kontrollera alltid den visade svarsenheten mot `svarEnhet`.
 
+I Fysik 1 ska nivå 1 till exempel kunna vara en direkt beräkning av tryck från
+kraft och area i rätt enheter, rörelsemängd från massa och fart, eller effekt
+från arbete och tid. En direkt energi- eller lyftkraftsformel med enkla tal kan
+också vara nivå 1. En kvadrering är alltså inte ensam skäl att höja nivån.
+Enhetsomvandling tillsammans med en fysikberäkning, flera beroende steg,
+procenter eller mer krävande tal hör normalt till nivå 2. Även dessa kan vara E.
+Stötar med två rörliga kroppar och riktningsval, eller problem som kombinerar
+rörelsemängd vid en stöt med energibevarande efteråt, kan motivera nivå 3.
+Givna mellanresultat ska vägas in när nivån på ett separat kort bedöms.
+
+Fackord som eleven behöver lära sig får användas, men förklara dem när de annars
+gör frågan svår att förstå. Skriv till exempel ”pilar som visar krafterna” i en
+ritinstruktion och ”utan att temperaturen ändras” i stället för ”isotermt”.
+Ange vad en fart mäts i förhållande till i kast- och rekylproblem. Skilj kraften
+från ett visst föremål, exempelvis golvet, från summan av alla krafter.
+Medelfart som medelvärdet av start- och slutfart förutsätter konstant acceleration;
+det villkoret ska stå i uppgiften när beräkningen kräver det.
+
 ## Självrättning
 
 En uppgift lämpar sig för självrättning när samtliga godtagbara slutsvar kan representeras utan att det matematiska innehållet förvanskas. Bedöm särskilt:
