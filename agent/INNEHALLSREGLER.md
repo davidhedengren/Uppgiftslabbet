@@ -79,6 +79,10 @@ Funktioner, modeller, tabeller, diagram, SVG-figurer, givna konstanter, koordina
 - Arraylängderna måste stämma.
 - `rättSvar:null` får inte kombineras med `självrättning:true`.
 - Om ett korrekt uttryck kan skrivas på flera naturliga sätt måste svarstypen och parsern stödja dem. Eleven ska aldrig behöva imitera typografin i facit.
+- Vid faktorisering används `svarFormat:"faktoriserat"`: ekvivalenta produkter godtas, men en utvecklad summa eller en kvarvarande faktor av högre grad än facits faktorer besvarar inte frågan. Testa också omordnade faktorer och alternativa minustecken.
+- En fråga om en primitiv funktion använder `svarFormat:"primitiv"` när ingen konstant bestäms av ett villkor. En extra konstant får stå var som helst i svaret. Med ett givet villkor används `uttryck`, så att fel konstant underkänns. Frågor om **alla** primitiva funktioner använder `primitiva` och kräver en fri integrationskonstant. `K+x²` och `x²+2K` beskriver hela familjen, medan `x²`, `x²+K²` och `x²+sin(K)` inte gör det.
+- Symboliska funktionsvärden som `f(a+h)` använder `svarFormat:"funktionsuttryck"`. De får inte tolkas som multiplikationen `f*(a+h)`.
+- Kontrollera nivå 1 för varje område och varje tillämpligt kursspår på de kort som faktiskt visas i Kunskapsgymmet. Ett enklare a-kort ska inte ärva nivån från en svårare huvuduppgift.
 
 ### 3.8 LaTeX/MathJax ska vara renderingssäkert
 
