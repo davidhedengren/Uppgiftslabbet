@@ -1,0 +1,2684 @@
+{
+  "coverage": {
+    "mainTasks": 321,
+    "independentCardsIncludingSingles": 607,
+    "svgsVisuallyInspected": 143,
+    "numericTasksIndependentlyCalculated": 246
+  },
+  "changes": [
+    {
+      "id": "3.4",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.5",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.6",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.7",
+      "area": "vektorer",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.230",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.10",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.11",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.12",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.13",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.14",
+      "area": "at_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.15",
+      "area": "at_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.16",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.17",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.18",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.231",
+      "area": "vektorer",
+      "fields": [
+        "poang",
+        "t",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.22",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.23",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.24",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.25",
+      "area": "vt_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.26",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.27",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.28",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.29",
+      "area": "konstacc",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "3.30",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.31",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.32",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.33",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.34",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.243",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.35",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.36",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.37",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.39",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.40",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.244",
+      "area": "st_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.41",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.42",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.43",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.44",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.232",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.45",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.46",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.47",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.48",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.233",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.56",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.57",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.59",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.60",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.61",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.62",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.63",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.64",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.252",
+      "area": "konstacc",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.65",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.66",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.67",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.68",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.69",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.70",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.71",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.72",
+      "area": "konstacc",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.73",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.74",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.76",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.77",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.78",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.79",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.80",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.81",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.82",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.83",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.84",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.86",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.87",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.88",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.89",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.90",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.91",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.92",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.93",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.94",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.98",
+      "area": "vektorer",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.100",
+      "area": "vektorer",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.105",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.106",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.107",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.108",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.109",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.110",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.111",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.112",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.113",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.115",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.116",
+      "area": "at_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.117",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.253",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.118",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.119",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.120",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.121",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.122",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.123",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.124",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.135",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.137",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.138",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.139",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.250",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.140",
+      "area": "at_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.142",
+      "area": "st_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.251",
+      "area": "vt_diagram",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.143",
+      "area": "at_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.145",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.146",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.147",
+      "area": "vt_diagram",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.148",
+      "area": "vt_diagram",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.149",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.150",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.151",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.152",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.153",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.154",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.155",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.157",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.158",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.159",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.160",
+      "area": "st_diagram",
+      "fields": [
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.161",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.162",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.163",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.164",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.165",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.166",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.167",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.168",
+      "area": "at_diagram",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.169",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.170",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.171",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.173",
+      "area": "vektorer",
+      "fields": [
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.174",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.175",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.176",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.177",
+      "area": "konstacc",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.180",
+      "area": "vektorer",
+      "fields": [
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.181",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.182",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.239",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.184",
+      "area": "vektorer",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.185",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.186",
+      "area": "konstacc",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.188",
+      "area": "konstacc",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.190",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.191",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.192",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.193",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.194",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.195",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.196",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.197",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.198",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.199",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.200",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.201",
+      "area": "acceleration",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.202",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.203",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.204",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.205",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.206",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.207",
+      "area": "acceleration",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.208",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.209",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.210",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.211",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.212",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "3.255",
+      "area": "konstacc",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "3.213",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.214",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.215",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.216",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.217",
+      "area": "acceleration",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.218",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.219",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.220",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.221",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.222",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.223",
+      "area": "acceleration",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.225",
+      "area": "acceleration",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.227",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.228",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.263",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.362",
+      "area": "st_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.365",
+      "area": "st_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.270",
+      "area": "acceleration",
+      "fields": [
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.271",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "tolerans",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "3.272",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.273",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.274",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.275",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.276",
+      "area": "konstacc",
+      "fields": [
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.277",
+      "area": "konstacc",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "id": "3.278",
+      "area": "konstacc",
+      "fields": [
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.369",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.370",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.371",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.372",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.373",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.374",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.375",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.376",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.377",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.378",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.379",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.380",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.381",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.382",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.383",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.384",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.385",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.386",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.387",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.388",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.389",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.390",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.391",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.392",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.393",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.394",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.395",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.396",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.397",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.398",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.399",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.400",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.401",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.402",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.403",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.404",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.405",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.406",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.407",
+      "area": "konstacc",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.408",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.409",
+      "area": "konstacc",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.279",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.360",
+      "area": "acceleration",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva",
+        "arbetsinsats",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.363",
+      "area": "acceleration",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva",
+        "arbetsinsats",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.368",
+      "area": "acceleration",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "3.282",
+      "area": "vektorer",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.283",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.285",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.294",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.295",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.296",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.299",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.300",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.309",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.310",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.311",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.312",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.313",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.317",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.318",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.320",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.326",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.330",
+      "area": "vektorer",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.333",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.340",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.345",
+      "area": "vektorer",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "3.351",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.352",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.354",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.355",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.361",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.364",
+      "area": "at_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva",
+        "rättSvar",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "3.357",
+      "area": "vt_diagram",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.358",
+      "area": "vt_diagram",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.359",
+      "area": "vt_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "3.367",
+      "area": "vt_diagram",
+      "fields": [
+        "niva",
+        "poang",
+        "traningsniva",
+        "tolerans"
+      ]
+    }
+  ]
+}
