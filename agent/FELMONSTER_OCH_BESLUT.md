@@ -137,3 +137,30 @@ användarens instruktion. Kontrollera facit på mobil och dator.
 andra ämnesspecifika loggar. Sök alltid även där. Detta register ersätter inte
 historiken eller ämnesreglerna. Rapportstatus i appen är skild från Git-historik;
 en push innebär inte att rapporter har markerats som avslutade.
+
+## FP-07: Elektronöverskott, influens och Coulombs lag
+
+**Sök efter:** ”hur många elektroner har avlägsnats” utan känt utgångsläge,
+`rättSvar:null` på numeriska elektronfrågor, saknade elektron-enheter,
+slutrader som bara anger elementarladdningen, långa enhetsomvandlingar,
+A/C-märkta direkta halveringar och ord som ”repellerande” på enkla kort.
+
+**Beslut:** skilj tidigare överföring från aktuellt elektronunderskott.
+Visa tecken, nödvändiga enhetsomvandlingar och mellanled utan nummersteg.
+En direkt halvering är normalt E/nivå 1; Q/e med enhetsomvandling normalt E/2.
+Rutinuppgifter blir inte C bara för att de innehåller två kontakter.
+Numeriska kort kräver inte manuell komplettering om ingen motivering efterfrågas.
+
+**Influens:** omfördelning inom ett isolerat föremål ändrar inte nettoladdningen.
+Håll isär laddningsförskjutning i papper och rörliga elektroner i metall.
+Vid jordning/separation ska ordningen framgå. Attraktion ensam bevisar inte
+motsatt nettoladdning. Lika stora krafter tar bara ut varandra vid motsatt riktning.
+
+**Miniräknare:** användarbeslut 2026-10-09: alltid tillåten i fysik, även på
+begreppskort. Återställ inte `miniräknare:false` med hänvisning till låg nivå.
+
+**Exempel och skydd:** [fullständig logg](LADDNING_FYSIK1_2026-10-09.md).
+8.35 b saknade självrättning; 8.56 hade missvisande kortslutsvar;
+8.182/8.315 låg för högt; 8.475 behöver mellanledet 3−(−2)=5 µC.
+Kunskapsgymmets `tools/laddning-fy1-2026-10-09.browser.py` prövar berörda
+kort, alternativ, korrekta avrundningar, felaktiga tecken och mobila facit.

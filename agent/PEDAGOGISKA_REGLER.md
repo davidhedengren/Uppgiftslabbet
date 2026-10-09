@@ -198,3 +198,10 @@ som en gemensam grupp, men varje uppgift ska bedömas individuellt. Nya feltyper
 som hittas under granskningen ska också följas upp med en sökning efter
 liknande fall. Bevara skillnaden mellan fullständig granskning och en
 avgränsad kontroll, exempelvis enbart svarsfält eller delkortens facit.
+
+## Miniräknare i fysik
+
+Användarbeslut 2026-10-09: miniräknare är alltid tillåten i Fysik 1 och Fysik 2,
+även för enkla begreppsuppgifter. Använd `miniräknare:true` i fysikbankerna.
+Bedöm uppgiftens nivå efter förståelsen och beräkningen, inte efter om eleven
+använder räknare. Detta ändrar inte reglerna för matematikuppgifter.
