@@ -136,3 +136,20 @@ Uppgifts-ID ska bevaras när uppgiftens identitet i huvudsak är densamma. Nytt 
 ## Heuristiska fynd
 
 Validatorer får påvisa misstänkta avvikelser, men osäkra regler får inte presenteras som säkra matematiska fel. Heuristiska fynd ska klassificeras med rätt osäkerhetsnivå och får inte masskorrigeras utan redaktionell granskning.
+
+## Kort och naturligt språk i fysikuppgifter
+
+Skriv som i en vanlig gymnasieuppgift. Lägg inte till formella modellförklaringar
+som inte hjälper eleven att förstå frågan. I vanliga uppgifter om tryck mot en
+yta räcker ”trycket”; skriv inte ”medeltrycket” och lägg inte till ”anta jämnt
+tryck över respektive kontaktyta”. Fråga hellre ”hur många gånger större är
+trycket?” än ”bestäm kvoten av trycken”. Tekniska inledningar som ”alla effekter
+avser nyttig mekanisk effekt i rörelseriktningen” ska ersättas med en konkret
+beskrivning när det behövs för att skilja motorns effekt från tillförd el eller
+bränsleenergi.
+
+Behåll villkor som påverkar svaret, men skriv dem enkelt. ”Bortse från luftens
+massa” är tydligare än ”luften har försumbar massa”. När trycket faktiskt varierar
+med djupet kan frågan behöva ett medelvärde; skilj då detta från trycket vid en
+viss punkt. Viktiga fackord som eleven ska lära sig får användas. Granska varje
+träff i sitt sammanhang och kontrollera även de fristående spelkorten.
