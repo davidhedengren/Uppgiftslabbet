@@ -183,3 +183,18 @@ bedöms som **Granskad – inget fel**. Hitta inte på elevens inmatning när de
 Skilj mellan föreslagen rapportstatus och status som faktiskt har sparats i
 rapportsystemet. Påstå inte att rapporter har avslutats eller att kommentarer
 har skickats enbart därför att kod eller bankfiler har ändrats och pushats.
+
+## Följdgranskning av liknande fel
+
+Användarens instruktion 2026-10-09: för varje upptäckt fel ska agenten försöka
+hitta minst fem liknande uppgifter i banken och granska dem i sitt sammanhang.
+Sök efter samma felorsak, även utanför det aktuella kapitlet eller kursen när
+det är relevant. En liknande uppgift är inte automatiskt felaktig.
+
+Redovisa ursprungsfelet, jämförelseuppgifternas ID:n, vad som kontrollerats och
+utfallet för varje uppgift. Om färre än fem relevanta jämförelser hittas ska
+sökningen och begränsningen anges. Uppgifter med samma felorsak får granskas
+som en gemensam grupp, men varje uppgift ska bedömas individuellt. Nya feltyper
+som hittas under granskningen ska också följas upp med en sökning efter
+liknande fall. Bevara skillnaden mellan fullständig granskning och en
+avgränsad kontroll, exempelvis enbart svarsfält eller delkortens facit.
