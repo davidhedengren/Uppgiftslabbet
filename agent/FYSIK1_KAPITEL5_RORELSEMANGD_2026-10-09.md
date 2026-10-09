@@ -14,6 +14,7 @@ Samtliga 92 huvuduppgifter har lästs manuellt två gånger med delkort, lösnin
 - 5.374 använder glidfriktion för en släde. En frikopplad motorcykel ger inte automatiskt bromskraften μmg.
 - 5.395 anger vila före fallet, konstant acceleration och stopp utan studs. Frågan gäller tyngdpunktens sträcka under stoppet i stället för en otillräckligt bestämd deformation. 5.396 har motsvarande tydlig modell; påståendet om att äpplet blir brunt vid en viss kraft har tagits bort.
 - 5.397c har samma uttryckligen givna stopptid i lärarblad och elevkort. 5.399c frågar nu efter kontaktkraften jämfört med tyngdkraften; 5.400c efter största massa vid given kraftgräns. Det ger variation bland tidigare mycket lika fall- och bromsuppgifter.
+- 5.393 frågar efter kontakttid vid given medelkraft i stället för att duplicera kraftberäkningen i 5.385. Nivå 3 speglar kombinationen av massomvandling, riktningsbyte och beräkning av tid.
 - Avrundningskrav och toleranser stämmer överens. Bland annat godtas 3,35 i 5.16b och 6,7 m/s i 5.48. Långa formler har radbrutits för mobilskärmar.
 
 ## Verifiering
@@ -23,7 +24,7 @@ Samtliga 92 huvuduppgifter har lästs manuellt två gånger med delkort, lösnin
 - Hela Fysik 1: 4978 självrättande kort, 32 821 kontroller utan fel. Detta verifierar rättningsfunktionen och innebär inte att ännu ogranskade områden är pedagogiskt godkända.
 - Alla områdets elevkort och lärarblad har kontrollerats vid 390 px utan för breda visningsformler. Utvalda kort har inspekterats visuellt vid 390 och 1174 px.
 - Alla tio SVG-figurer har inspekterats visuellt. Grafskalor och areor stämmer med frågorna och lösningarna. Ingen figur har ändrats.
-- Full KaTeX-rendering i båda apparna har kontrollerats utan renderingsfel. Uppgiftsvalidering: 0 ERROR, 8 WARNING och 731 INFO. Den ytterligare INFO-posten följer av att 5.365 har delats i två kort.
+- Full KaTeX-rendering i båda apparna har kontrollerats utan renderingsfel. Uppgiftsvalidering: 0 ERROR, 8 WARNING och 730 INFO. Textlikhetsobservationen för 5.385 och 5.393 är löst genom att frågetyperna skiljer sig.
 - 137 tester i Uppgiftslabbet, 65 i Kunskapsgymmet och 47 SVG-tester är godkända.
 - Gemensam bankfil är byteidentisk i båda repona.
 
