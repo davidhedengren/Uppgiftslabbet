@@ -39,7 +39,7 @@ test('Blandad geometri har egen struktur, en enkel ingång och nivåer 1–5',()
   const group=c.window.GRUPPMA2[3].find(g=>g.id==='geometri_problemlosning');
   assert.equal(group.namn,'Problemlösning');
   const qs=c.window.BANKMA2.filter(q=>q.omr==='geometri_problemlosning');
-  assert.equal(qs.length,15);
+  assert.equal(qs.length,30);
   assert.deepEqual([...new Set(qs.map(q=>q.traningsniva))].sort(),[1,2,3,4,5]);
   for(const q of qs){assert.doesNotMatch(q.s,/facit-steglista/,q.id);assert.match(q.t,/<svg/,q.id);}
 });
