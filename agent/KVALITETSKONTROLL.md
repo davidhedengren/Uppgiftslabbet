@@ -104,3 +104,8 @@ Slutrapporten ska ange:
 - renderings-/konsumentverifiering när relevant,
 - Git-status samt om commit och push utfördes,
 - kvarstående risker, konflikter eller beslut som krävs.
+
+Efter varje granskning ska slutrapporten dessutom innehålla samtliga granskade
+uppgifts-ID:n, en lista över åtgärdade fel, en lista med **Granskad – inget fel**
+och färdiga kommentarsförslag per rapport. Även tomma utfallslistor redovisas.
+Se [PEDAGOGISKA_REGLER.md](PEDAGOGISKA_REGLER.md#obligatorisk-återrapportering-efter-granskning).
