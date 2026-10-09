@@ -1,0 +1,496 @@
+{
+  "scope": {
+    "course": "fy1",
+    "chapter": 4,
+    "area": "blandat_kraft",
+    "manual_readings": 2,
+    "main_tasks": 53,
+    "cards": 101
+  },
+  "changes": [
+    {
+      "id": "4.151",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.425",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.152",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.153",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.154",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.155",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.427",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.156",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.157",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.158",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.429",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.159",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.160",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.430",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.161",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.162",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.163",
+      "fields": [
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.164",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.165",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.166",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.167",
+      "fields": [
+        "ledtrad",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.434",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.168",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.169",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.435",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.170",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.436",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.201",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.202",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.437",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.203",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.204",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.205",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.224",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.439",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.225",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.226",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.277",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.441",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.278",
+      "fields": [
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.279",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.442",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.280",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.443",
+      "fields": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.281",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.282",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.444",
+      "fields": [
+        "s",
+        "t"
+      ]
+    },
+    {
+      "id": "4.283",
+      "fields": [
+        "ledtrad",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.284",
+      "fields": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.445",
+      "fields": [
+        "arbetsinsats",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.285",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    {
+      "id": "4.286",
+      "fields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "4.446",
+      "fields": [
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    }
+  ]
+}
