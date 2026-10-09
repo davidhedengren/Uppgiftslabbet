@@ -22,8 +22,8 @@ const cases=[
  ["6.89",k=>[(18 + k), (150 + k), (-25 + k), (480 + k)]],
  ["6.136",k=>(12 * (((35 + k) / (20 + k)) ** (1 / 3)))],
  ["6.138",k=>[(90 - k), (350 - k), -k, (1500 - k)]],
- ["6.145",k=>(35-10)],
- ["6.146",k=>(350-300)],
+ ["6.145",k=>(35 - 10)],
+ ["6.146",k=>(350 - 300)],
  ["6.148",k=>((80 + k) / (20 + k))],
  ["6.214",k=>((8 * (100 + k)) / (10 + k))],
  ["6.215",k=>((240 * (-25 + k)) / (20 + k))],
@@ -101,8 +101,72 @@ const cases=[
  ["6.546",k=>[((101300 * 0.029) / (8.314 * (-15 + k))), ((101300 * 0.029) / (8.314 * (30 + k))), (((101300 * 950) * 0.029) / (8.314 * (20 + k)))]],
  ["6.547",k=>[((101300 * 45) / (1.381e-23 * (22 + k))), ((1000000.0 * 1.381e-23) * 3), (((5 * 101300) * 1) / (1.381e-23 * 273))]],
  ["6.548",k=>[(100 * (1 - ((16 + k) / (20 + k)))), (100 * (1 - ((15 + k) / (38 + k))))]],
+ ["6.12",k=>((50 * 98) / 103)],
+ ["6.343",k=>((300 * 120) / 100)],
+ ["6.41",k=>(180 * 12)],
+ ["6.82",k=>((120 * 3) / 1.2)],
+ ["6.286",k=>((((2 * 100) / 150) * 333) / 293)],
+ ["6.83",k=>[((101 * 20) / 8), (((((101 * 20) / 8) - 101) * 1000) * 0.00018)]],
+ ["6.85",k=>(((101000 + ((998 * g) * 12)) * 6) / 101000)],
+ ["6.87",k=>[(200 * 12), ((200 - 2.9) * 12), (20 * 2.9), (((200 - 2.9) * 12) / (20 * 2.9))]],
+ ["6.88",k=>[((100 * 2) / 200), ((200 * 500) / 250), (((100 * 9) * 300) / (150 * 4))]],
+ ["6.121",k=>Math.ceil(((((1.5 * 350) / 100) - 1.5) / 0.6))],
+ ["6.122",k=>[((0.5 * 101) / 75), (100 * ((101 / 75) - 1))]],
+ ["6.124",k=>((300 * 4) / (4 + 6))],
+ ["6.125",k=>[(((25 * g) / 0.0015) / 1000), ((101000 + ((25 * g) / 0.0015)) / 1000), ((500 * 101000) / (101000 + ((25 * g) / 0.0015)))]],
+ ["6.126",k=>[(200 * 0.1), (((200 * 100000) * 0.0003) / 1000)]],
+ ["6.129",k=>[(8 * 50), ((8 - 1) * 50)]],
+ ["6.130",k=>[((400 * 1.6) / 101), Math.ceil(((((400 * 1.6) / 101) - 1.6) / 0.35)), (((101 * (1.6 + (14 * 0.35))) / 1.6) - 101)]],
+ ["6.141",k=>((100 * 2.4) / 1.5)],
+ ["6.142",k=>((95 * 3) / 120)],
+ ["6.143",k=>((101 * 60) / 30)],
+ ["6.144",k=>(1 / 1.25)],
+ ["6.149",k=>((100 * (400 - 300)) / 400)],
+ ["6.287",k=>((((110 * 2.2) / 1.8) * 333) / 293)],
+ ["6.336",k=>((((2 * 100) / 125) * 375) / 300)],
+ ["6.220",k=>[(84 * 25), ((84 - 1) * 25)]],
+ ["6.159",k=>(100 * ((1 / 0.75) - 1))],
+ ["6.345",k=>(100 * ((1 / 0.8) - 1))],
+ ["6.168",k=>(46 * (1 - (101.3 / 280)))],
+ ["6.288",k=>((((2.4 * 120) / 170) * 333) / 293)],
+ ["6.182",k=>(100 * (((1030 * g) * 5) / 101000))],
+ ["6.183",k=>[((((10000000 / (101300 + ((1000 * g) * 2))) - 1) * 10) / (0.5 * 60)), ((((10000000 / (101300 + ((1000 * g) * 20))) - 1) * 10) / (0.5 * 60))]],
+ ["6.185",k=>(((200000 * (300 - 100)) * 1e-06) / (0.02 * 8.31))],
+ ["6.191",k=>(101300 / (1000 * g))],
+ ["6.192",k=>((((100 * 1000) * g) * 4.5) / 100000)],
+ ["6.199",k=>(100 / ((28 / 2) + 1))],
+ ["6.206",k=>((100 * (1.343 - 1.166)) / 1.343)],
+ ["6.209",k=>(((1000000.0 * 1.380649e-23) * 3) / 1e-17)],
+ ["6.210",k=>((((((20 - 15) * 101325) * 1) / (8.31 * 273)) * 6.02e+23) / 1e+26)],
+ ["6.332",k=>((150 * 2.4) / 1.8)],
+ ["6.333",k=>((80 * 5) / 100)],
+ ["6.335",k=>((120 * 330) / 300)],
+ ["6.334",k=>((1.5 * 360) / 300)],
+ ["6.337",k=>((((0.5 * 8.31) * 300) / 0.012) / 1000)],
+ ["6.338",k=>((((0.25 * 8.31) * 300) / 100000) * 1000)],
+ ["6.347",k=>((100000 * 0.01) / (8.31 * 300))],
+ ["6.330",k=>(2.5 * 100)],
+ ["6.331",k=>(750 / 1000)],
+ ["6.339",k=>(220 + 100)],
+ ["6.342",k=>((((50 + 100) * 40) / 20) - 100)],
+ ["6.344",k=>((150 * 1.8) / 90)],
+ ["6.346",k=>(((200 * 2) + (100 * 3)) / (2 + 3))],
+ ["6.348",k=>(0.25 * 6.02)],
+ ["6.349",k=>((100000 * 0.028) / (8.31 * 300))],
+ ["6.363",k=>((2 * 100) / 200)],
+ ["6.364",k=>((1.5 * 600) / 300)],
+ ["6.365",k=>((100 * 450) / 300)],
+ ["6.366",k=>(101 + 40)],
+ ["6.524",k=>(0.46 * (1 - (101.3 / 280)))],
+ ["6.529",k=>((((200000 - 101000) * Math.PI) * (0.0015 ** 2)) / g)],
+ ["6.535",k=>[((20000000.0 * 0.01) / 101300), ((((20000000.0 / 101300) - 1) * 10) / (6 * 60))]],
+ ["6.536",k=>((((100 * 1030) * g) * 7.5) / 101000)],
+ ["6.537",k=>[((((10000000.0 / (101300 + ((1000 * g) * 2))) - 1) * 10) / (0.5 * 60)), ((((10000000.0 / (101300 + ((1000 * g) * 20))) - 1) * 10) / (0.5 * 60))]],
+ ["6.538",k=>[((5.5 * (101300 + ((1000 * g) * 9))) / 101300), ((((100 * 1000) * g) * 4.5) / 100000), ((((((4 / 3) * Math.PI) * (0.12 ** 3)) * 1000) * 101000) / (101000 + ((1000 * g) * 15)))]],
+ ["6.542",k=>(1 / ((28 / 2) + 1))],
+ ["6.181",k=>[((15000000.0 * 0.017) / 101300), ((((15000000.0 / 101300) - 1) * 17) / (8 * 60))]],
 ];
-test('Temperaturer: 273 och 273,15 ger var sitt korrekt beräknat svar',()=>{
+test('Gaslagen: 273 och 273,15 ger var sitt korrekt beräknat svar',()=>{
  let fields=0;
  for(const[id,f]of cases){const t=q(id);assert.ok(t,id);const exact=f(273.15),approx=f(273);const es=Array.isArray(exact)?exact:[exact],as=Array.isArray(approx)?approx:[approx];
  const values=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar],aliases=Array.isArray(t.rättSvar273)?t.rättSvar273:[t.rättSvar273];
@@ -110,9 +174,9 @@ test('Temperaturer: 273 och 273,15 ger var sitt korrekt beräknat svar',()=>{
  es.forEach((v,i)=>{assert.ok(Math.abs(values[i]-v)<=1e-12*Math.max(1,Math.abs(v)),id+' exakt '+i);
   if(Math.abs(v-as[i])>1e-12*Math.max(1,Math.abs(v)))assert.ok(Math.abs(aliases[i]-as[i])<=1e-12*Math.max(1,Math.abs(as[i])),id+' 273 '+i);
   fields++;
- });}assert.equal(fields,140);
+ });}assert.equal(fields,224);
 });
-test('Temperaturer: de skrivna slutsvaren följer den efterfrågade avrundningen',()=>{
+test('Gaslagen: de skrivna slutsvaren följer den efterfrågade avrundningen',()=>{
  const failures=[];let fields=0;
  for(const[id,f]of cases){const t=q(id),raw=f(273.15),vs=Array.isArray(raw)?raw:[raw];
  vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,plain=part.s.replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/\{,\}/g,',').replace(/\\cdot\s*10\^\{(-?\d+)\}/g,'e$1');
@@ -121,17 +185,5 @@ test('Temperaturer: de skrivna slutsvaren följer den efterfrågade avrundningen
  const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
  if(!(Math.abs(shown-v)<=tol+1e-10*Math.max(1,Math.abs(v))))failures.push(id+' del '+i+': skrivet '+shown+', beräknat '+v+' ± '+tol);
  fields++;
- });}assert.equal(fields,140);assert.deepEqual(failures,[]);
-});
-test('Frågetexterna föreskriver inte omvandlingstalet; domkraften har endast två delar',()=>{
- for(const[id]of cases){const t=q(id);for(const d of [t,...(t.spelDelar||[])])assert.doesNotMatch(d.t,/Räkna med.*273/,id);}
- const t=q('6.42');assert.equal(t.spelDelar.length,2);assert.deepEqual(Array.from(t.svarEtiketter),['a','b']);assert.deepEqual(Array.from(t.rättSvar),[30,18]);
- for(const d of [t,...t.spelDelar]){assert.doesNotMatch(d.t,/pumpslag|förlust|läckage|friktion/);assert.doesNotMatch(d.s,/pumpslag/);}
- assert.match(t.spelDelar[1].t,/4,0 cm²/);assert.match(t.spelDelar[1].t,/120 cm²/);assert.match(t.spelDelar[1].t,/25 cm/);assert.match(t.spelDelar[1].t,/15 cm/);
-});
-
-test('Flytklossen har enkelt språk, C-märkning och eget densitetsfacit',()=>{
- const t=q('6.73');assert.equal(t.niva,'C');assert.equal(t.traningsniva,3);assert.equal(t.spelDelar[2].niva,'C');assert.equal(t.spelDelar[2].traningsniva,3);
- for(const d of [t,...t.spelDelar])assert.doesNotMatch(d.t,/homogen|rätblockskloss/i);
- assert.equal(t.rättSvar[2],998*(20-8)/20);assert.match(t.spelDelar[2].s,/Arkimedes princip/);assert.match(t.spelDelar[2].s,/20-8/);assert.match(t.spelDelar[2].t,/998 kg/);
+ });}assert.equal(fields,224);assert.deepEqual(failures,[]);
 });

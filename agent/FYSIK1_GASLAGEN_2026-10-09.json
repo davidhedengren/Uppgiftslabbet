@@ -1,0 +1,1907 @@
+{
+  "course": "fy1",
+  "area": "gaslagen",
+  "manualRounds": 2,
+  "mainTasks": 171,
+  "independentNumericTasks": 158,
+  "numericAnswers": 224,
+  "choices": 4,
+  "manualTasks": 9,
+  "changedTasks": 163,
+  "changes": [
+    {
+      "id": "2.20",
+      "fields": [
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.4",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.12",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.19",
+      "fields": [
+        "poang",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.20",
+      "fields": [
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.21",
+      "fields": [
+        "poang",
+        "s",
+        "spelDelar",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.22",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "spelDelar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.39",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.40",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.343",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.41",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.50",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.54",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "s",
+        "spelDelar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.81",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.82",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.286",
+      "fields": [
+        "poang",
+        "tolerans",
+        "niva",
+        "rättSvar"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.83",
+      "fields": [
+        "spelIntro",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.84",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.85",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.86",
+      "fields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.87",
+      "fields": [
+        "spelIntro",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.88",
+      "fields": [
+        "spelIntro",
+        "poang",
+        "s",
+        "tolerans",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.121",
+      "fields": [
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.122",
+      "fields": [
+        "spelIntro",
+        "poang",
+        "s",
+        "tolerans",
+        "spelDelar",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.123",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.124",
+      "fields": [
+        "traningsniva",
+        "ledtrad",
+        "poang",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.125",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.126",
+      "fields": [
+        "spelIntro",
+        "ledtrad",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.127",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.128",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.129",
+      "fields": [
+        "poang",
+        "s",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.130",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "s",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.136",
+      "fields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.141",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.142",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.143",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.144",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.145",
+      "fields": [
+        "ledtrad",
+        "s",
+        "tolerans",
+        "rättSvar273",
+        "rättSvar",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.146",
+      "fields": [
+        "ledtrad",
+        "s",
+        "tolerans",
+        "rättSvar273",
+        "rättSvar",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.147",
+      "fields": [
+        "traningsniva"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.287",
+      "fields": [
+        "poang",
+        "s",
+        "tolerans",
+        "niva",
+        "rättSvar"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.336",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.148",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.149",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.214",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.215",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.216",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.217",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.218",
+      "fields": [
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.219",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.220",
+      "fields": [
+        "poang",
+        "s",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.221",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.158",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.159",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.345",
+      "fields": [
+        "traningsniva",
+        "s",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.160",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.161",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.162",
+      "fields": [
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.163",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.164",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.165",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.166",
+      "fields": [
+        "poang",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.167",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.168",
+      "fields": [
+        "poang",
+        "s",
+        "tolerans",
+        "niva",
+        "rättSvar"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.169",
+      "fields": [
+        "poang",
+        "arbetsinsats"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.170",
+      "fields": [
+        "poang",
+        "arbetsinsats"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.171",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.172",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.174",
+      "fields": [
+        "poang",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.288",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.175",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.176",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.177",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.178",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.179",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.180",
+      "fields": [
+        "poang",
+        "s",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.181",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.182",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.183",
+      "fields": [
+        "spelIntro",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.184",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.185",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.186",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.187",
+      "fields": [
+        "traningsniva",
+        "poang"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.188",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.189",
+      "fields": [
+        "poang",
+        "s",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.190",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats"
+      ],
+      "level": 5,
+      "niva": "A"
+    },
+    {
+      "id": "6.191",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.192",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.193",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.194",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.195",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.196",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.197",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.198",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.199",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.200",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.289",
+      "fields": [
+        "traningsniva",
+        "poang"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.201",
+      "fields": [
+        "spelIntro",
+        "poang",
+        "s",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.202",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.203",
+      "fields": [
+        "poang",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.204",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.205",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.206",
+      "fields": [
+        "traningsniva",
+        "ledtrad",
+        "poang",
+        "s",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.207",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.208",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.209",
+      "fields": [
+        "poang",
+        "s",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.210",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.211",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.212",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.213",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.332",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.333",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.335",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.340",
+      "fields": [
+        "traningsniva",
+        "s",
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.334",
+      "fields": [
+        "s",
+        "tolerans",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.341",
+      "fields": [
+        "traningsniva",
+        "s",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.337",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.338",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.347",
+      "fields": [
+        "traningsniva",
+        "tolerans",
+        "rättSvar"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.330",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.331",
+      "fields": [
+        "s",
+        "tolerans",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.339",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.342",
+      "fields": [
+        "traningsniva",
+        "s",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.344",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.346",
+      "fields": [
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.348",
+      "fields": [
+        "traningsniva",
+        "s",
+        "tolerans",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.349",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.363",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.364",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.365",
+      "fields": [
+        "s",
+        "arbetsinsats",
+        "t"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.366",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.513",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "spelDelar",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.514",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.515",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.516",
+      "fields": [
+        "typ",
+        "ledtrad",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "formaga",
+        "alternativ",
+        "svarFormat",
+        "t",
+        "svarEnhet",
+        "familjNyckel",
+        "svarstyp"
+      ],
+      "level": 2,
+      "niva": "E"
+    },
+    {
+      "id": "6.517",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.518",
+      "fields": [
+        "typ",
+        "traningsniva",
+        "ledtrad",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "formaga",
+        "alternativ",
+        "svarFormat",
+        "t",
+        "svarEnhet",
+        "familjNyckel",
+        "svarstyp"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.519",
+      "fields": [
+        "poang",
+        "spelDelar",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.523",
+      "fields": [
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.524",
+      "fields": [
+        "s",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.525",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.526",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.527",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.528",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.529",
+      "fields": [
+        "s",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.530",
+      "fields": [
+        "spelIntro",
+        "arbetsinsats",
+        "spelDelar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.531",
+      "fields": [
+        "spelIntro",
+        "spelDelar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.533",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.534",
+      "fields": [
+        "traningsniva",
+        "ledtrad",
+        "s",
+        "tolerans",
+        "rättSvar273",
+        "rättSvar",
+        "svarEnhet",
+        "t"
+      ],
+      "level": 1,
+      "niva": "E"
+    },
+    {
+      "id": "6.535",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.536",
+      "fields": [
+        "traningsniva",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.537",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.538",
+      "fields": [
+        "spelIntro",
+        "traningsniva",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "spelDelar",
+        "rättSvar",
+        "svarEnhet",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.539",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "spelDelar",
+        "niva"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.540",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.541",
+      "fields": [
+        "poang",
+        "arbetsinsats",
+        "niva"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.542",
+      "fields": [
+        "poang",
+        "s",
+        "arbetsinsats",
+        "tolerans",
+        "niva",
+        "rättSvar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.543",
+      "fields": [
+        "poang",
+        "spelDelar"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.544",
+      "fields": [
+        "traningsniva",
+        "poang",
+        "s",
+        "arbetsinsats",
+        "spelDelar",
+        "t"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.545",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.546",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 4,
+      "niva": "C"
+    },
+    {
+      "id": "6.547",
+      "fields": [
+        "spelDelar",
+        "t"
+      ],
+      "level": 3,
+      "niva": "C"
+    },
+    {
+      "id": "6.548",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats",
+        "spelDelar"
+      ],
+      "level": 4,
+      "niva": "C"
+    }
+  ],
+  "levels": {
+    "1": 20,
+    "4": 52,
+    "2": 22,
+    "3": 76,
+    "5": 1
+  },
+  "remainingWholeFy1MainTasks": 1399,
+  "scopeNote": "Två rundor gäller gaslagen; hela Fysik 1 är ännu inte färdiggranskad."
+}
