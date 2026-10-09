@@ -7,8 +7,8 @@ test('Massan ur rörelseenergin godtar två värdesiffror och avvisar nästa hel
 });
 test('Arbetet av en sned kraft avrundas konsekvent i text, facit och maskinsvar',()=>{
  const q=get('5.209'),w=100*5*Math.cos(Math.PI/6);
- assert.equal(q.rättSvar[1],433);assert.ok(Math.abs(w-433)<q.tolerans[1]);assert.ok(Math.abs(432-433)>q.tolerans[1]);
- assert.match(q.spelDelar[1].t,/tre värdesiffror/);assert.match(q.spelDelar[1].s,/433 J/);assert.equal(q.omr,'arbete');
+ assert.ok(Math.abs(q.rättSvar[1]-w)<1e-9);assert.ok(Math.abs(433-q.rättSvar[1])<q.tolerans[1]);assert.ok(Math.abs(432-q.rättSvar[1])>q.tolerans[1]);
+ assert.match(q.spelDelar[1].t,/tre värdesiffror/);assert.match(q.spelDelar[1].s,/433(?: J|\\,\\mathrm J)/);assert.equal(q.omr,'arbete');
 });
 test('Rörelsemängdskortet a innehåller bara sin egen vagn och tydlig teckenriktning',()=>{
  const q=get('5.160'),a=q.spelDelar[0];assert.equal(q.rättSvar[0],3*2.5);assert.equal(a.traningsniva,1);
