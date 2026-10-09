@@ -156,6 +156,13 @@ Håll isär laddningsförskjutning i papper och rörliga elektroner i metall.
 Vid jordning/separation ska ordningen framgå. Attraktion ensam bevisar inte
 motsatt nettoladdning. Lika stora krafter tar bara ut varandra vid motsatt riktning.
 
+8.73 kräver att elektroskopet är oladdat från början. Ange detta utgångsläge
+utan att överförklara i frågan. Om ett korts facit avslöjar nästa svar kan
+delarna förenas på spelkortet, samtidigt som lärarbladets delar bevaras.
+Utelämnade spelkort kräver entydig bokstavsmappning till originalets metadata.
+8.306–309 varierar Coulombgruppen med avstånd, Newtons tredje lag och
+förändringsfaktorer i stället för fyra nästan identiska uträkningar.
+
 **Miniräknare:** användarbeslut 2026-10-09: alltid tillåten i fysik, även på
 begreppskort. Återställ inte `miniräknare:false` med hänvisning till låg nivå.
 
@@ -181,6 +188,10 @@ förklaringar. Läraruppgiftens fria resonemang får finnas kvar.
 
 **Exempel:** 8.49, 8.103, 8.117, 8.144, 8.149, 8.150, 8.40, 8.55,
 8.131, 8.132 och 8.135. Se [granskningslogg](ELEKTRICITET_FYSIK1_2026-10-09.md).
+Samma mönster är rättat i parallelluppgifterna 8.16, 8.19, 8.91, 8.136,
+8.142 och 8.155. 8.141 visar att en storhet given bara i a måste flyttas till
+gemensam information när även b/c behöver den. Facitets blockelement ska
+vara syskon till delrubrikernas stycken, aldrig en div inuti ett p-element.
 `tools/delkort.test.js` och `tools/elektricitet-fy1-svar.browser.py` i
 Kunskapsgymmet skyddar fältordning, enheter och rättning. Fysikmodeller finns
 i masterrepots `tools/fysik1-elektricitet.test.js`.

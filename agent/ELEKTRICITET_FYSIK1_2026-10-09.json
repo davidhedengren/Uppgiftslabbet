@@ -3,11 +3,11 @@
     "course": "fy1",
     "chapter": 8,
     "tasks": 517,
-    "reviewed": 116,
-    "changed": 103,
-    "unchanged": 10,
+    "reviewed": 152,
+    "changed": 134,
+    "unchanged": 15,
     "added": 3,
-    "remaining": 401
+    "remaining": 365
   },
   "reviews": {
     "8.78": {
@@ -730,7 +730,7 @@
     },
     "8.49": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: batteriets polaritet i figuren var omvänd. Båda delspänningarna och potentialerna får namngivna svarsfält, kompletta facit och självständiga kort. Nivå 2 för heluppgiften.",
+      "comment": "Åtgärdad: batteriets polaritet i figuren var omvänd. Båda delspänningarna och potentialerna får namngivna svarsfält, kompletta facit och självständiga kort. Nivå 2 för heluppgiften. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -750,7 +750,7 @@
     },
     "8.103": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: del b:s slutsvar saknade R₁:s spänning. Namngivna fält för 4 och 8 V, rätt enheter, självständiga delkort och nivå 1–2.",
+      "comment": "Åtgärdad: del b:s slutsvar saknade R₁:s spänning. Namngivna fält för 4 och 8 V, rätt enheter, självständiga delkort och nivå 1–2. Andra figurkontrollen: batteriets vita täckruta krymps till avståndet mellan polerna så att ingen liten ledningslucka döljs. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -760,15 +760,17 @@
         "s",
         "självrättning",
         "spelDelar",
+        "spelIntro",
         "svarEnhet",
         "svarFormat",
+        "t",
         "tolerans",
         "traningsniva"
       ]
     },
     "8.117": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: tre efterfrågade effekter får tre märkta svarsfält och fullständig energibalans. Strömmen finns uttryckligen på effektkortet.",
+      "comment": "Åtgärdad: tre efterfrågade effekter får tre märkta svarsfält och fullständig energibalans. Strömmen finns uttryckligen på effektkortet. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -784,7 +786,7 @@
     },
     "8.144": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: även strömriktningen kontrolleras. Ny jordpunkt ger två ordnade svarsfält för A och B. Facit visar hur båda potentialerna ändras.",
+      "comment": "Åtgärdad: även strömriktningen kontrolleras. Ny jordpunkt ger två ordnade svarsfält för A och B. Facit visar hur båda potentialerna ändras. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -802,7 +804,7 @@
     },
     "8.148": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: del c får numerisk rättning med korrekt negativ potential. Varje kort visar egen beräkning av ström och spänningsfall.",
+      "comment": "Åtgärdad: del c får numerisk rättning med korrekt negativ potential. Varje kort visar egen beräkning av ström och spänningsfall. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -820,7 +822,7 @@
     },
     "8.149": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: båda spänningarna och båda polpotentialerna får ordnade, namngivna numeriska fält. Negativ potential för minuspolen förklaras utan hänvisning till föregående kort.",
+      "comment": "Åtgärdad: båda spänningarna och båda polpotentialerna får ordnade, namngivna numeriska fält. Negativ potential för minuspolen förklaras utan hänvisning till föregående kort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -838,7 +840,7 @@
     },
     "8.150": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: strömriktningen ingår i rättningen och omjordningen får tre märkta fält. Nivå 1 för enkla potentialskillnader, nivå 2 för övriga kort.",
+      "comment": "Åtgärdad: strömriktningen ingår i rättningen och omjordningen får tre märkta fält. Nivå 1 för enkla potentialskillnader, nivå 2 för övriga kort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -856,7 +858,7 @@
     },
     "8.151": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: begreppskort har förklarade svarsalternativ. Läraruppgiften ber fortfarande om potentialvandringen; spelkortet rättar strömmen och visar hela ekvationen. Två delspänningar får egna fält.",
+      "comment": "Åtgärdad: begreppskort har förklarade svarsalternativ. Läraruppgiften ber fortfarande om potentialvandringen; spelkortet rättar strömmen och visar hela ekvationen. Två delspänningar får egna fält. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -874,7 +876,7 @@
     },
     "8.143": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: rätt enheter för energi och fart. Sista delen frågar tydligt efter fartkvoten och rättar den, inte bara protonens fart. Eget energiunderlag på fartkortet. Nivå 1, 2 respektive 3. Självrättningen godtar även den korrekta avrundningen 43.",
+      "comment": "Åtgärdad: rätt enheter för energi och fart. Sista delen frågar tydligt efter fartkvoten och rättar den, inte bara protonens fart. Eget energiunderlag på fartkortet. Nivå 1, 2 respektive 3. Självrättningen godtar även den korrekta avrundningen 43. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -894,7 +896,7 @@
     },
     "8.146": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: rutinberäkningar låg felaktigt på nivå 5. Nivå 1–2, tre självrättande kort med tydliga enheter och egna givna värden. Energi, fart och procent jämförs i korta facit.",
+      "comment": "Åtgärdad: rutinberäkningar låg felaktigt på nivå 5. Nivå 1–2, tre självrättande kort med tydliga enheter och egna givna värden. Energi, fart och procent jämförs i korta facit. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -936,7 +938,7 @@
     },
     "8.116": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: batteripolaritet och ström 0.03 A är rätt. Spänningskortet får strömmen angiven och nivå 1, utan behov av svaret från föregående kort.",
+      "comment": "Åtgärdad: batteripolaritet och ström 0.03 A är rätt. Spänningskortet får strömmen angiven och nivå 1, utan behov av svaret från föregående kort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -945,7 +947,7 @@
     },
     "8.165": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: batteripolaritet och ström 0.03 A är rätt. Spänningskortet får strömmen angiven och nivå 1, utan behov av svaret från föregående kort.",
+      "comment": "Åtgärdad: batteripolaritet och ström 0.03 A är rätt. Spänningskortet får strömmen angiven och nivå 1, utan behov av svaret från föregående kort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -954,7 +956,7 @@
     },
     "8.12": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: energin 2,0 GJ var rätt. Delkort b anger egen energi och facit använder ett konkret 1 kW-exempel. Molnhöjd och modell ges i c. Fria förklaringar markeras som manuell komplettering, så numerisk träff inte godkänner resonemang automatiskt. Långa beräkningskedjor radbryts för mobilvisning.",
+      "comment": "Åtgärdad: energin 2,0 GJ var rätt. Delkort b anger egen energi och facit använder ett konkret 1 kW-exempel. Molnhöjd och modell ges i c. Fria förklaringar markeras som manuell komplettering, så numerisk träff inte godkänner resonemang automatiskt. Långa beräkningskedjor radbryts för mobilvisning. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -967,7 +969,7 @@
     },
     "8.31": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: alla tre strömmar var rätt. Facit visar hur ekvationssystemet löses och ger fullständiga slutsvar. Följdkort får egna strömvärden. Läraruppgift med fri energikontroll bevaras.",
+      "comment": "Åtgärdad: alla tre strömmar var rätt. Facit visar hur ekvationssystemet löses och ger fullständiga slutsvar. Följdkort får egna strömvärden. Läraruppgift med fri energikontroll bevaras. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -976,7 +978,7 @@
     },
     "8.50": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: ekvationer och strömmar är korrekta, men del a hade slutsvaret 0 och del b bara en av tre strömmar. Slutsvaren rättas. Tolkningskortet anger strömmarna självt.",
+      "comment": "Åtgärdad: ekvationer och strömmar är korrekta, men del a hade slutsvaret 0 och del b bara en av tre strömmar. Slutsvaren rättas. Tolkningskortet anger strömmarna självt. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -985,7 +987,7 @@
     },
     "8.118": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: alla beräkningar är rätt, men slutsvar a saknade I₁ och slutsvar b var bara I₃. Kompletta slutsvar och givna strömmar på kontrollkortet.",
+      "comment": "Åtgärdad: alla beräkningar är rätt, men slutsvar a saknade I₁ och slutsvar b var bara I₃. Kompletta slutsvar och givna strömmar på kontrollkortet. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -994,7 +996,7 @@
     },
     "8.145": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: strömmarna och laddningseffekten 0,160 W är rätt. Facit visar insättning och lösning av systemet samt alla tre strömmar. Effektkortet anger sin ström. Långa beräkningskedjor radbryts för mobilvisning.",
+      "comment": "Åtgärdad: strömmarna och laddningseffekten 0,160 W är rätt. Facit visar insättning och lösning av systemet samt alla tre strömmar. Effektkortet anger sin ström. Långa beräkningskedjor radbryts för mobilvisning. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -1003,7 +1005,7 @@
     },
     "8.167": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: beräkningarna är rätt. Facit visar ekvationslösning, alla strömmar och korrekt jämförelse utan HTML-kod i matematiken. Följdkorten innehåller egen ström respektive nodspänning.",
+      "comment": "Åtgärdad: beräkningarna är rätt. Facit visar ekvationslösning, alla strömmar och korrekt jämförelse utan HTML-kod i matematiken. Följdkorten innehåller egen ström respektive nodspänning. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -1012,7 +1014,7 @@
     },
     "8.152": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: energisvaren var rätt. Antaganden för halvvägsarbete anges i frågan, positiv laddning finns på eget kort och vägoberoendet avgränsas till det stillastående fältet. Nivå 2 i stället för 5. Fri motivering bevaras som läraruppgift. Långa beräkningskedjor radbryts för mobilvisning.",
+      "comment": "Åtgärdad: energisvaren var rätt. Antaganden för halvvägsarbete anges i frågan, positiv laddning finns på eget kort och vägoberoendet avgränsas till det stillastående fältet. Nivå 2 i stället för 5. Fri motivering bevaras som läraruppgift. Långa beräkningskedjor radbryts för mobilvisning. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "niva",
@@ -1026,7 +1028,7 @@
     },
     "8.166": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: 4 och 8 V är rätt, men frågan saknade svarens ordning och del b:s slutsvar gav bara 8 V. Båda anges med placering. Enkel begreppsuppgift nivå 1–2; fri förklaring bevaras.",
+      "comment": "Åtgärdad: 4 och 8 V är rätt, men frågan saknade svarens ordning och del b:s slutsvar gav bara 8 V. Båda anges med placering. Enkel begreppsuppgift nivå 1–2; fri förklaring bevaras. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "niva",
@@ -1186,7 +1188,7 @@
     },
     "8.20": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad nivå och facit: 150 Ω, 7,5 V och 250 Ω är rätt. Nivå 1–2 i stället för 3, och R₂-kortet visar hur dess spänning beräknas.",
+      "comment": "Åtgärdad nivå och facit: 150 Ω, 7,5 V och 250 Ω är rätt. Nivå 1–2 i stället för 3, och R₂-kortet visar hur dess spänning beräknas. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1219,7 +1221,7 @@
     },
     "8.55": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: båda delspänningarna får rättning och fullständigt slutsvar. Strömmen ges på spänningskortet. Enkla kort nivå 1–2, inte C/3.",
+      "comment": "Åtgärdad: båda delspänningarna får rättning och fullständigt slutsvar. Strömmen ges på spänningskortet. Enkla kort nivå 1–2, inte C/3. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1237,7 +1239,7 @@
     },
     "8.138": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: båda delspänningarna får rättning och fullständigt slutsvar. Strömmen ges på spänningskortet. Enkla kort nivå 1–2, inte C/3.",
+      "comment": "Åtgärdad: båda delspänningarna får rättning och fullständigt slutsvar. Strömmen ges på spänningskortet. Enkla kort nivå 1–2, inte C/3. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1255,7 +1257,7 @@
     },
     "8.62": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: korrekta resultat 450 Ω, 20 mA, 3 V och 30 mA. Nivå 1–2 och varje kort räknar sin egen resistans. Enhetsomvandlingen till mA visas korrekt även i delens facit. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort.",
+      "comment": "Åtgärdad: korrekta resultat 450 Ω, 20 mA, 3 V och 30 mA. Nivå 1–2 och varje kort räknar sin egen resistans. Enhetsomvandlingen till mA visas korrekt även i delens facit. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1287,7 +1289,7 @@
     },
     "8.85": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: resultaten var rätt, men c:s slutsvar saknade R₁ och följdkorten krävde R₂ från b. Båda spänningarna och eget R₂-värde anges. Fri motivering behålls som läraruppgift. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort.",
+      "comment": "Åtgärdad: resultaten var rätt, men c:s slutsvar saknade R₁ och följdkorten krävde R₂ från b. Båda spänningarna och eget R₂-värde anges. Fri motivering behålls som läraruppgift. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "s",
@@ -1298,7 +1300,7 @@
     },
     "8.89": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: alla energier och effekter är rätt. Följdkort får egna givna värden och nödvändiga mellanled; fråga d ber tydligt om energimängd i J, inte en andel. Nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort.",
+      "comment": "Åtgärdad: alla energier och effekter är rätt. Följdkort får egna givna värden och nödvändiga mellanled; fråga d ber tydligt om energimängd i J, inte en andel. Nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1348,7 +1350,7 @@
     },
     "8.128": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: lika spänningsdelning kräver likadana lampor, vilket nu anges. Konstant resistans behövs för modellen vid kortslutning. 11,5 V och cirka 176 Ω får rättning; förklaringskortets slutsvar besvarar frågan.",
+      "comment": "Åtgärdad: lika spänningsdelning kräver likadana lampor, vilket nu anges. Konstant resistans behövs för modellen vid kortslutning. 11,5 V och cirka 176 Ω får rättning; förklaringskortets slutsvar besvarar frågan. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1366,7 +1368,7 @@
     },
     "8.131": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: facit skrev felaktigt 5/10 = 50 %. Nu visas 0,50 och omvandling till procent. Alla tre delspänningar och procent får rättning och egna data; nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort.",
+      "comment": "Åtgärdad: facit skrev felaktigt 5/10 = 50 %. Nu visas 0,50 och omvandling till procent. Alla tre delspänningar och procent får rättning och egna data; nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1386,7 +1388,7 @@
     },
     "8.132": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: båda delspänningar 4,5 och 7,5 V får märkta fält och komplett slutsvar. Kontrollkortet är självständigt med egna spänningar och förklarade alternativ. Nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort.",
+      "comment": "Åtgärdad: båda delspänningar 4,5 och 7,5 V får märkta fält och komplett slutsvar. Kontrollkortet är självständigt med egna spänningar och förklarade alternativ. Nivå 1–2. Figurens ledningar ansluts till båda batteripolerna; de tidigare glappen tas bort. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1406,7 +1408,7 @@
     },
     "8.135": {
       "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
-      "comment": "Åtgärdad: effektkortet saknade den okända resistorns värde och slutsvaret innehöll bara en effekt. Eget värde, två märkta fält och korrekt fullständigt facit. Nivå 2.",
+      "comment": "Åtgärdad: effektkortet saknade den okända resistorns värde och slutsvaret innehöll bara en effekt. Eget värde, två märkta fält och korrekt fullständigt facit. Nivå 2. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
       "status": "Åtgärdad",
       "changedFields": [
         "manuellKomplettering",
@@ -1442,40 +1444,548 @@
         "s",
         "traningsniva"
       ]
+    },
+    "8.16": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 5 V och [100, 1000] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.19": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 6 V och [200, 300] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.51": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 4.7 V och [470, 470] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Figurens två batteriledningar förlängs fram till polerna. Tre parallella 470 Ω-resistorer godtar även avrundningen 160 Ω. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.91": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 9 V och [300, 600] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.142": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 12 V och [100, 150] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.155": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: parallellvärden räknade från 6 V och [100, 200, 200] Ω. Alla efterfrågade grenstorheter har fullständiga slutsvar, märkta fält och enheter. Varje del visar egen beräkning; nivå 1–2. Fria motiveringar/två metoder kräver manuell komplettering där de efterfrågas. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.17": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad enheter och nivå: 60 mA före, 120 Ω och 100 mA efter, fortfarande 60 mA genom första resistorn. Tidigare saknades samtliga svarsenheter. En fri motivering i d ska kontrolleras manuellt; övriga kort rättas direkt.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "självrättning",
+        "spelDelar",
+        "svarEnhet",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.245": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad pedagogik: rätt ersättningsresistans 3.4285714285714284 Ω. Facit visar insatta resistansvärden och hur svaret fås, i stället för en allmän instruktion utan beräkning. Nivå 2 behålls. Ledningen genom batterisymbolen delas så att batteriet inte ritas kortslutet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "rättSvar",
+        "s",
+        "t"
+      ]
+    },
+    "8.247": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad pedagogik: rätt ersättningsresistans 5.454545454545454 Ω. Facit visar insatta resistansvärden och hur svaret fås, i stället för en allmän instruktion utan beräkning. Nivå 2 behålls. Ledningen genom batterisymbolen delas så att batteriet inte ritas kortslutet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "rättSvar",
+        "s",
+        "t"
+      ]
+    },
+    "8.249": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad nivå och facit: totalström 12/8 + 12/12 = 2.5 A är rätt. Grenströmmar gör metoden tydligare; två rutinberäkningar på nivå 2, inte C/3. Ledningen genom batterisymbolen delas så att batteriet inte ritas kortslutet. Spänningsetiketten flyttas bort från batteripolerna efter geometrikontroll.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    "8.250": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad nivå och facit: totalström 12/10 + 12/14 = 2.057142857142857 A är rätt. Grenströmmar gör metoden tydligare; två rutinberäkningar på nivå 2, inte C/3. Ledningen genom batterisymbolen delas så att batteriet inte ritas kortslutet. Spänningsetiketten flyttas bort från batteripolerna efter geometrikontroll.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.251": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad nivå och facit: totalström 12/12 + 12/16 = 1.75 A är rätt. Grenströmmar gör metoden tydligare; två rutinberäkningar på nivå 2, inte C/3. Ledningen genom batterisymbolen delas så att batteriet inte ritas kortslutet. Spänningsetiketten flyttas bort från batteripolerna efter geometrikontroll.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.88": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: numeriska kort får självrättning och märkta fält. Grenströmmarna beräknas i facit, inte bara anges. Den fria kontrollen i c kräver manuell komplettering. Rätt fysik och nivå 1–2. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.136": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: lampornas effekt anges vid 12 V. Båda spänningarna, strömmarna och resistanserna får märkta svarsfält. Egen beräkning per kort utan tidigare delresultat. Nivå 1–2. Andra figurkontrollen: batteriets vita täckruta krymps till avståndet mellan polerna så att ingen liten ledningslucka döljs. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.141": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: strömmen fanns bara i a, men behövdes även i b/c. Den läggs i gemensamt underlag. Två spänningar bevaras i uttrycklig ordning med märkta fält. Nivå 1 för given U/I, 2 för spänningsfall, 3 för okänt parallellvärde. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ]
+    },
+    "8.137": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: sista resistanssvaret saknade rättning. Varje följdkort visar egen beräkning av tidigare ström/resistans. Rätt resultat 30 mA, 15 mA, 800 Ω och 266,7 Ω; nivå 2. Fri kontroll i d bevaras. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.139": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: strömsvaret är konsekvent i mA även i facit. Härledning av resistans på eget kort och enkel förklaring utan HTML-entiteter i matematik. Nivå 2, fri motivering endast i c. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.42": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: effektkortet får det okända R₃-värdet som eget givet värde och visar hur parallelldelens spänning fås. 600 Ω och 0,1067 W är rätt. Strategidelen behåller nivå 3. Figurens två batteriledningar förlängs fram till polerna. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t"
+      ]
+    },
+    "8.41": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: R₂ och R₃ ger 80 Ω, totalt 180 Ω, I = 0,100 A och 8 V över parallelldelen. Effekterna är 1,00, 0,64 och 0,16 W. R₁ ger mest effekt. Blandad strategisk koppling på nivå 3 och fri läraruppgift passar. Figurens två batteriledningar förlängs fram till polerna.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t"
+      ]
+    },
+    "8.129": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad nivå: härledningen är rätt och bevaras som fri läraruppgift. Samma spänning, strömsumma och Ohms lag räcker; nivå 3/C är rimligare än 5/A.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ]
+    },
+    "8.362": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad språkförenkling: Alla parallellgrenar har samma spänning, medan ström, resistans och effekt kan skilja sig. Precis ett korrekt alternativ. Onödigt antagande om batteriets inre resistans tas bort: samma två anslutningspunkter räcker.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t"
+      ]
+    },
+    "8.364": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: Två lika 15 Ω-grenar ger 7,5 Ω. Fråga, facit och nivå stämmer.",
+      "status": "Granskad – inget fel",
+      "changedFields": []
+    },
+    "8.366": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: Strömmen är 12/8,2 = 1,4634 A i den givna grenen. Fråga, facit och nivå stämmer.",
+      "status": "Granskad – inget fel",
+      "changedFields": []
+    },
+    "8.367": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: Grenströmmarna summeras: 2,0 + 1,5 = 3,5 A. Fråga, facit och nivå stämmer.",
+      "status": "Granskad – inget fel",
+      "changedFields": []
+    },
+    "8.368": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: Lika grenar delar 3,4 A lika: 1,7 A. Fråga, facit och nivå stämmer.",
+      "status": "Granskad – inget fel",
+      "changedFields": []
+    },
+    "8.395": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: Alla fyra uppgivna resistanser stämmer: 22/3, (44·22)/(44+22), 11+22 och 3·22. Att hitta alla kopplingar motiverar nivå 4; fri svarsmängd ska inte kräva en viss ordning. Fråga, facit och nivå stämmer.",
+      "status": "Granskad – inget fel",
+      "changedFields": []
+    },
+    "8.73": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: oladdat utgångsläge anges och en tydlig elektroskopfigur läggs till. Flyttad till laddning/influens och nivå 1–2. Läraruppgiftens tre delar bevaras; a+b kombineras till ett självrättande begreppskort så att dess facit inte avslöjar ett separat b-kort. C-kortet har eget underlag och förklarade alternativ. Facitets delrubriker och lösningar har också giltig HTML-struktur.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "familj",
+        "familjNyckel",
+        "manuellKomplettering",
+        "niva",
+        "omr",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.302": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: kraften räknad med uttrycklig k = 8,99·10⁹. Facit visar laddningsomvandling, produkt och beräkning utan långa likhetskedjor. Rutinberäkning på nivå 2.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "t"
+      ]
+    },
+    "8.304": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: kraften räknad med uttrycklig k = 8,99·10⁹. Facit visar laddningsomvandling, produkt och beräkning utan långa likhetskedjor. Rutinberäkning på nivå 2.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ]
+    },
+    "8.305": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: kraften räknad med uttrycklig k = 8,99·10⁹. Facit visar laddningsomvandling, produkt och beräkning utan långa likhetskedjor. Rutinberäkning på nivå 2.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    "8.310": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad: kraften räknad med uttrycklig k = 8,99·10⁹. Facit visar laddningsomvandling, produkt och beräkning utan långa likhetskedjor. Rutinberäkning på nivå 2.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "traningsniva"
+      ]
+    },
+    "8.303": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad nivå och språk: dubbelt avstånd ger en fjärdedel så stor kraft. Enkel förändringsfråga nivå 1 och förklaring utan ordet proportionell.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "s",
+        "traningsniva"
+      ]
+    },
+    "8.306": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Reviderad variation: tidigare nästan samma kraftberäkning som 8.305/307/308/309. Nu söks avståndet från en given kraft. Figuren märker avståndet r i stället för att visa svaret. Korrekt modell ger 27,5034 cm och godtar även 28 cm. Ny SVG skiljer tydligt på utgångsläget och den sökta storheten; ingen onödig avståndsuppgift på Newton-kortet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.307": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Reviderad variation: tränar lika stora krafter trots olika laddningar, i stället för ännu en identisk insättning. Nivå 1 och korrekt kraft 0,599 N på båda kulorna, motsatt riktning. Ny SVG skiljer tydligt på utgångsläget och den sökta storheten; ingen onödig avståndsuppgift på Newton-kortet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.308": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Reviderad variation: utgår från en uppmätt kraft och dubblerar avståndet, nivå 1. Figuren beskriver utgångsläget. 0,1275 N och den korrekta avrundningen 0,13 N godtas. Ny SVG skiljer tydligt på utgångsläget och den sökta storheten; ingen onödig avståndsuppgift på Newton-kortet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
+    },
+    "8.309": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Reviderad variation: ett begreppskort prövar två samtidiga laddningsändringar, med förklarade alternativ. Ersätter en orimligt laddad dammpartikel och ännu en likadan kraftberäkning. Nivå 2. Ny SVG skiljer tydligt på utgångsläget och den sökta storheten; ingen onödig avståndsuppgift på Newton-kortet.",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ]
     }
   },
   "verification": {
-    "manualScope": "Samtliga 30 strömuppgifter, 60 potentialuppgifter och 23 serieuppgifter samt 3 nykonstruerade uppgifter. Separat felrapport 5.364 och sex jämförelser. Hela kapitel 8 är inte färdiggranskat.",
-    "physics": "Oberoende handräkning per granskad uppgift; 22 numeriska regressionsexempel i tools/fysik1-elektricitet.test.js.",
+    "manualScope": "Alla 30 ström-, 60 potential-, 23 serie- och 26 parallelluppgifter; 8.73; nio Coulombuppgifter 8.302–310; tre nya 8.515–517. Separat felrapport 5.364 och sex jämförelser. Hela kapitlet är inte färdiggranskat.",
+    "physics": "Oberoende handräkning för granskade uppgifter; 39 numeriska modellfall i tools/fysik1-elektricitet.test.js.",
     "nodeMaster": {
-      "passed": 102,
-      "failed": 0
+      "passed": 112,
+      "failed": 0,
+      "command": "node --test tools/fysik1*.test.js tools/granska-uppgifter.test.js"
     },
     "nodeApp": {
-      "passed": 95,
-      "failed": 0
+      "passed": 96,
+      "failed": 0,
+      "command": "node --test tools/*.test.js"
     },
     "answerUI": {
-      "numeric": 28,
-      "alternatives": 33
+      "numeric": 47,
+      "alternatives": 47,
+      "tool": "kunskapsgymmet/tools/elektricitet-fy1-svar.browser.py"
+    },
+    "renderUI": {
+      "parents": 152,
+      "numericContractChecks": 502,
+      "cards": 271,
+      "views": 1084,
+      "failures": []
     },
     "svg": {
-      "figures": 39,
+      "figures": 66,
       "warnings": 3,
-      "info": 3,
-      "disposition": "Tre A-texter ligger avsiktligt inuti amperemeterns cirkel och täcks av dess vita bakgrund; geometrikontrollen räknar bakomliggande ledningsboundingbox. Kontrollerade visuellt i 8.20, 8.64 och 8.140: inget synligt överlapp. Tre INFO gäller avsiktlig vit bakgrund ända till viewBox-kanten i 8.244, 8.246 och 8.248."
+      "info": 8,
+      "disposition": "Tre A-texter ligger avsiktligt inuti amperemeterns cirkel; den vita bakgrunden döljer ledningen bakom (8.20, 8.64, 8.140 visuellt kontrollerade). Åtta INFO gäller avsiktlig bakgrund vid viewBox-kant, 8.244–251. Verkliga etikettkollisioner 8.249–251 korrigerade och omkontrollerade."
     },
     "bankValidator": {
       "errors": 0,
       "warnings": 8,
+      "info": 698,
       "existingWarnings": true
-    },
-    "render": {
-      "parents": 116,
-      "numericContractChecks": 340,
-      "cards": 201,
-      "views": 804,
-      "failures": 0
     }
   },
   "remainingIds": [
@@ -1507,11 +2017,7 @@
     "8.216",
     "8.15",
     "8.217",
-    "8.16",
-    "8.17",
     "8.18",
-    "8.19",
-    "8.245",
     "8.21",
     "8.296",
     "8.22",
@@ -1537,14 +2043,11 @@
     "8.34",
     "8.301",
     "8.35",
-    "8.302",
     "8.36",
     "8.37",
     "8.38",
     "8.39",
     "8.192",
-    "8.41",
-    "8.42",
     "8.43",
     "8.44",
     "8.218",
@@ -1560,16 +2063,12 @@
     "8.48",
     "8.329",
     "8.330",
-    "8.51",
     "8.52",
     "8.53",
-    "8.247",
     "8.54",
     "8.56",
     "8.57",
-    "8.303",
     "8.58",
-    "8.304",
     "8.59",
     "8.331",
     "8.332",
@@ -1586,19 +2085,12 @@
     "8.66",
     "8.225",
     "8.67",
-    "8.305",
     "8.68",
     "8.69",
-    "8.306",
     "8.70",
-    "8.307",
     "8.71",
-    "8.308",
     "8.72",
-    "8.309",
-    "8.73",
     "8.74",
-    "8.310",
     "8.75",
     "8.193",
     "8.76",
@@ -1611,11 +2103,7 @@
     "8.196",
     "8.84",
     "8.87",
-    "8.249",
-    "8.88",
     "8.90",
-    "8.91",
-    "8.250",
     "8.92",
     "8.226",
     "8.227",
@@ -1680,25 +2168,17 @@
     "8.313",
     "8.123",
     "8.126",
-    "8.251",
     "8.127",
-    "8.129",
     "8.252",
     "8.130",
     "8.133",
     "8.253",
     "8.134",
-    "8.136",
     "8.254",
-    "8.137",
-    "8.139",
     "8.255",
-    "8.141",
-    "8.142",
     "8.153",
     "8.154",
     "8.256",
-    "8.155",
     "8.156",
     "8.157",
     "8.158",
@@ -1790,12 +2270,6 @@
     "8.186",
     "8.206",
     "8.187",
-    "8.362",
-    "8.364",
-    "8.366",
-    "8.367",
-    "8.368",
-    "8.395",
     "8.370",
     "8.398",
     "8.399",
@@ -1880,5 +2354,6 @@
     "8.512",
     "8.513",
     "8.514"
-  ]
+  ],
+  "baselineCommit": "cf717540a33ab81ff0b55eb8f48959ad9df90cc6"
 }

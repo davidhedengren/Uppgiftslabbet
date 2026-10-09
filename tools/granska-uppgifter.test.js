@@ -84,6 +84,20 @@ test('svarsantal jämförs på topnivå och nästlade strukturer tillåts', () =
   assert.ok(harKod(r,'ANSWER_METADATA_COUNT_MISMATCH','WARNING'));
 });
 
+test('bortvald deluppgift kräver entydig bokstavsmappning till originalets svar', () => {
+  const del = etikett => ({etikett,t:'<p>Fråga</p>',s:'<p>Svar</p>'});
+  const bra=uppgift({svarstyp:'flera_delar',rättSvar:[2,3,4],svarEtiketter:['a','b','c'],spelDelar:[del('a'),del('c')]});
+  const granska=q=>granskaBank('test.js',[q],projektrot,struktur);
+  assert.ok(!harKod(granska(bra),'SUBTASK_ANSWER_COUNT_MISMATCH'));
+  for (const overrides of [
+    {svarEtiketter:undefined},
+    {svarEtiketter:['a','c','d']},
+    {spelDelar:[del('a'),del('d')]},
+    {spelDelar:[del('a'),del('a')]},
+    {spelDelar:[del('a'),del('')]},
+  ]) assert.ok(harKod(granska({...bra,...overrides}),'SUBTASK_ANSWER_COUNT_MISMATCH'));
+});
+
 test('LaTeX-kontrollen godtar radbrytning med mått och hittar oavslutad matematik', () => {
   const bra=uppgift({t:'<p>\\(x^2\\)</p><p>\\[\\begin{cases}x=1\\\\[2pt]y=2\\end{cases}\\]</p>'});
   assert.ok(!harKod(granskaBank('test.js',[bra],projektrot,struktur),'BROKEN_LATEX'));

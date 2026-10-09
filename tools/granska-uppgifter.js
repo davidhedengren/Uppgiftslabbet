@@ -194,7 +194,15 @@ function granskaBank(filnamn, bank, projektrot, struktur = null) {
     if (u.spelDelning === 'deluppgifter' && (!Array.isArray(u.spelDelar) || !u.spelDelar.length)) laggTill(resultat,'ERROR','SUBTASKS_MISSING',kort,'spelDelning anger deluppgifter men spelDelar saknas eller är tom.');
     if (Array.isArray(u.spelDelar)) {
       u.spelDelar.forEach((del,i)=>{ if (!arObjekt(del)||!Object.keys(del).length) laggTill(resultat,'ERROR','EMPTY_SUBTASK',kort,`Deluppgift ${i+1} är tom eller inte ett objekt.`,{delIndex:i+1}); if (arObjekt(del)&&!textFinns(del.t)&&!textFinns(del.fraga)) laggTill(resultat,'WARNING','SUBTASK_QUESTION_MISSING',kort,`Deluppgift ${i+1} saknar både t och fraga.`,{delIndex:i+1}); if (arObjekt(del)&&!textFinns(del.s)) laggTill(resultat,'WARNING','SUBTASK_SOLUTION_MISSING',kort,`Deluppgift ${i+1} saknar facitfältet s.`,{delIndex:i+1}); });
-      if (Array.isArray(u.rättSvar)&&u.spelDelar.length!==u.rättSvar.length&&u.svarstyp!=='manuell') laggTill(resultat,'WARNING','SUBTASK_ANSWER_COUNT_MISMATCH',kort,`${u.spelDelar.length} spelDelar men ${u.rättSvar.length} svar på toppnivå.`);
+      // Gymmet kan välja bort en deluppgift, men behålla originalets a/b/c-metadata.
+      // Acceptera bara en entydig delmängd med samma bokstavsmappning som expandGameTask.
+      const etiketter = Array.isArray(u.svarEtiketter) ? u.svarEtiketter.map(e=>String(e).trim().toLowerCase()) : [];
+      const delEtiketter = u.spelDelar.map(d=>arObjekt(d) ? String(d.etikett || '').trim().toLowerCase() : '');
+      const giltigDelmangd = Array.isArray(u.rättSvar) && etiketter.length === u.rättSvar.length
+        && etiketter.every((e,i)=>e===String.fromCharCode(97+i))
+        && delEtiketter.every(e=>e && etiketter.includes(e))
+        && new Set(delEtiketter).size===delEtiketter.length;
+      if (Array.isArray(u.rättSvar)&&u.spelDelar.length!==u.rättSvar.length&&u.svarstyp!=='manuell'&&!giltigDelmangd) laggTill(resultat,'WARNING','SUBTASK_ANSWER_COUNT_MISMATCH',kort,`${u.spelDelar.length} spelDelar men ${u.rättSvar.length} svar på toppnivå.`);
     }
     if (Array.isArray(u.rättSvar)&&Array.isArray(u.svarEtiketter)&&u.rättSvar.length!==u.svarEtiketter.length) laggTill(resultat,'WARNING','ANSWER_METADATA_COUNT_MISMATCH',kort,`${u.rättSvar.length} svar men ${u.svarEtiketter.length} svarsetiketter.`);
     if (!giltigBoolestruktur(u.självrättning)) laggTill(resultat,'ERROR','INVALID_SELFCHECK_STRUCTURE',kort,'självrättning ska vara boolean eller en nästlad boolean-array.'); else if (Array.isArray(u.självrättning)&&!formMatchar(u.självrättning,u.rättSvar)) laggTill(resultat,'WARNING','SELFCHECK_SHAPE_MISMATCH',kort,'Strukturen i självrättning motsvarar inte strukturen i rättSvar.');
