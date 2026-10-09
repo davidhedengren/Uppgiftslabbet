@@ -20,7 +20,7 @@ const cases=[
  ["6.227",((650 / (450 * 0.0001)) / 1000)],
  ["6.228",(35000 * 0.02)],
  ["6.229",(400 / 16000)],
- ["6.42",[(120 / 4), (120 * 15), ((120 * 15) / (4 * 25))]],
+ ["6.42",[(120 / 4), ((120 * 15) / (4 * 25))]],
  ["6.230",((450 / (0.2 * 0.15)) / 1000)],
  ["6.231",((500 / (0.035 * 2)) / 1000)],
  ["6.232",(((550 * 1.2) / 0.04) / 1000)],
@@ -113,7 +113,7 @@ test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  if(m&&m[2])shown*=10**Number(m[2]);
  const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
  if(!(Math.abs(shown-v)<=tol+1e-10*Math.max(1,Math.abs(v))))failures.push(`${id} del ${i}: skrivet ${shown}, beräknat ${v} ± ${tol}`);checked++;
- });}assert.equal(checked,121);assert.deepEqual(failures,[]);
+ });}assert.equal(checked,120);assert.deepEqual(failures,[]);
 });
 
 test('Tryck: gränsvärden, fysikmodeller och delkort har tillräckliga egna data',()=>{
@@ -133,9 +133,9 @@ test('Tryck: gränsvärden, fysikmodeller och delkort har tillräckliga egna dat
   assert.equal(q(id).spelDelning,'deluppgifter');assert.equal(q(id).spelDelar.length,2);
   for(const p of q(id).spelDelar){assert.ok(p.ledtrad);assert.match(p.t,/cm/);assert.match(p.s,/Svar:/);}
  }
- assert.match(q('6.42').spelDelar[2].s,/120\\cdot15=1800/);
- assert.match(q('6.42').spelDelar[2].s,/4\{,\}0\\cdot25=100/);
- assert.doesNotMatch(q('6.42').spelDelar[0].t+q('6.42').spelDelar[1].t,/<svg/);
+ assert.match(q('6.42').spelDelar[1].s,/120\\cdot15=1800/);
+ assert.match(q('6.42').spelDelar[1].s,/4\{,\}0\\cdot25=100/);
+ assert.doesNotMatch(q('6.42').spelDelar[0].t,/<svg/);
  assert.match(q('6.51').spelDelar[2].t,/400 N/);
  assert.doesNotMatch(q('6.51').spelDelar[2].s,/20000|20 000|0\{,\}020/);
  assert.match(q('6.98').spelDelar[1].t,/24 N/);assert.doesNotMatch(q('6.98').spelDelar[1].ledtrad,/Tryck och area/);
