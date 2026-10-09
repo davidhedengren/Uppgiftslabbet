@@ -78,3 +78,8 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 - Fråga innan commit/push, men när användaren sagt ja: gör båda repona i ett svep och verifiera mot remote.
 - Verktyg på `Hedav`: Python, Bash och Node fungerar (skriv hjälpskript i sessionens scratchpad/`$TEMP`). Skriv Python-skript med filverktyget, inte via bash-heredoc, eftersom backslashes i LaTeX annars kan halveras. Läs/skriv bankfiler som utf-8; konsolutskrift av å/ä/ö kan se trasig ut utan att filen är det.
 - Instruktionerna ovan ersätter inte kontrollen mot `agent/*.md`; läs dem vid innehållsändringar.
+
+## Tidigare granskningar och skydd mot återkommande fel
+
+Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
+berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.

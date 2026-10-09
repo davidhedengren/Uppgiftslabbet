@@ -33,6 +33,7 @@ Före redigering:
 4. Läs befintliga lokala ändringar innan nya filer ändras. Bevara pågående, ej committat arbete som ligger utanför uppdraget.
 5. Integrera remoteändringar säkert innan redigering om de påverkar arbetet. Skriv aldrig över dem blint.
 6. Läs relevanta regler i `agent/` och de filer vars faktiska körbeteende påverkar uppgiften.
+7. Läs `agent/FELMONSTER_OCH_BESLUT.md` och sök berörda ID:n i tidigare granskningsloggar och tester. Dokumentera skälet om ett tidigare beslut behöver ersättas.
 
 ## 3. Analys före ändring
 
