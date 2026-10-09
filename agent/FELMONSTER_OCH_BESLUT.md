@@ -164,3 +164,37 @@ begreppskort. Återställ inte `miniräknare:false` med hänvisning till låg ni
 8.182/8.315 låg för högt; 8.475 behöver mellanledet 3−(−2)=5 µC.
 Kunskapsgymmets `tools/laddning-fy1-2026-10-09.browser.py` prövar berörda
 kort, alternativ, korrekta avrundningar, felaktiga tecken och mobila facit.
+
+
+## FP-08: Flera fysikstorheter på samma delkort
+
+**Sök efter:** ”varje resistor”, ”båda polerna”, ”potentialerna” eller flera
+namngivna effekter, där `rättSvar` är null, en ensam storhet eller kortets
+slutrad bara innehåller det sista värdet. Sök även efter beroenden som
+”den energin” eller ”samma punkt” utan egna data på spelkortet.
+
+**Beslut:** ordnade storheter får delens `svarsstruktur: "ordnad"` och egna
+`svarEtiketter`. Kunskapsgymmet bevarar dessa vid `expandGameTask`; rotmängder
+utan uttrycklig ordning fortsätter vara mängder. Fria motiveringar måste
+bedömas manuellt eller ersättas på spelkortet av genomtänkta alternativ med
+förklaringar. Läraruppgiftens fria resonemang får finnas kvar.
+
+**Exempel:** 8.49, 8.103, 8.117, 8.144, 8.149, 8.150, 8.40, 8.55,
+8.131, 8.132 och 8.135. Se [granskningslogg](ELEKTRICITET_FYSIK1_2026-10-09.md).
+`tools/delkort.test.js` och `tools/elektricitet-fy1-svar.browser.py` i
+Kunskapsgymmet skyddar fältordning, enheter och rättning. Fysikmodeller finns
+i masterrepots `tools/fysik1-elektricitet.test.js`.
+
+**Figurer:** kontrollera faktisk förbindelse till batteripolerna. En ledning
+får varken sluta med ett glapp eller fortsätta genom batteriets två plattor.
+8.49 visar varför polaritet också måste kontrolleras mot jordpunkt och facit.
+Geometrikontroll räcker inte för elektrisk korrekthet.
+
+## FP-09: Sant alternativ som inte definierar begreppet
+
+En envalsfråga får inte använda ett också sant påstående som tydligt fel
+utan att avgränsa vad frågan efterfrågar. I 5.364 var sammanlagd
+rörelseenergi rätt definition av elastisk stöt, men rörelsemängdens
+bevarande var också sant under det givna antagandet. Ersättningen skiljer
+varje bolls rörelsemängd från deras summa. Fysikfacit om elastisk stöt
+ska inte ändras. Se [rapport och sex jämförelser](FELRAPPORT_5364_2026-10-09.md).

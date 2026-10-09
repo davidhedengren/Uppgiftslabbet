@@ -1,0 +1,37 @@
+{
+  "scope": {
+    "course": "fy1",
+    "report": "5.364"
+  },
+  "reviews": {
+    "5.364": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Åtgärdad formulering: facit om bevarad rörelseenergi var rätt. Ett annat alternativ var också sant enligt uppgiftens antagande, men definierade inte en elastisk stöt. Det ersätts av ett tydligt felaktigt påstående om varje boll för sig."
+    },
+    "5.362": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: lika massor ger mv = mu, alltså 0,80 m/s. Uppgiften ger slutläget och kräver inte att rörelseenergi antas bevarad."
+    },
+    "5.363": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: vagnarnas energier är 1 J och 8 J, sammanlagt 9 J. Inga uppgifter om tidigare hastigheter behövs."
+    },
+    "5.33": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: rörelsemängden ger den andra massan 3,0 kg. Både före och efter är rörelseenergin 8,64 J; stöten är elastisk i modellen."
+    },
+    "5.85": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: första vagnens sluthastighet är +0,90 m/s. Energin minskar från 31,25 till 29,65 J, alltså 1,60 J; stöten är inte elastisk."
+    },
+    "5.88": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: två kulor med v/2 bevarar rörelsemängd men bara hälften av rörelseenergin. Under det uttryckliga slutlägesantagandet ger nu=v och nu²=v² att n=1."
+    },
+    "5.155": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Granskad – inget fel: bevarandelagarna ger (0; 2,4) och (2,4; 0) m/s. Bara det första paret innebär att vagnarna skiljs åt efter stöten."
+    }
+  },
+  "verification": {}
+}
