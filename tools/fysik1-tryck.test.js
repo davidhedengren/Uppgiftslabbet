@@ -107,7 +107,7 @@ test('Tryck: alla numeriska uppgifter räknas från givna värden',()=>{
 test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  let checked=0;const failures=[];
  for(const[id,values]of cases){const t=q(id),vs=Array.isArray(values)?values:[values];
- vs.forEach((v,i)=>{const p=t.spelDelar?t.spelDelar[i]:t,plain=p.s.replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/\{,\}/g,',').replace(/\\cdot10\^\{(-?\d+)\}/g,'e$1'),answer=plain.split('Svar:').at(-1);
+ vs.forEach((v,i)=>{const p=t.spelDelar?t.spelDelar[i]:t,plain=p.s.replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/\\,/g,' ').replace(/\{,\}/g,',').replace(/\\cdot10\^\{(-?\d+)\}/g,'e$1'),answer=plain.split('Svar:').at(-1);
  const m=answer.match(/([−+-]?\d+(?:[ \u00a0]\d{3})*(?:[,.]\d+)?)(?:e([+-]?\d+))?/);
  let shown=m?Number(m[1].replace(/\s/g,'').replace('−','-').replace(',','.')):NaN;
  if(m&&m[2])shown*=10**Number(m[2]);
