@@ -445,3 +445,19 @@ Exakt matchning av ett avrundat facittal avvisar korrekt extra precision. Använ
 2.12b anger egna 19,8 bildpunkter/mm och rättar 50,5 µm; lärarens kedja rättar 50,6 µm från de fullständiga skärmdata. 2.11, 2.29, 2.35 och 2.36 visar bara relevanta givna data per kort. 2.66 ska inte kalla volt/ohm SI-grundenheter. 2.226/227 ger märkta fält för samtliga exponenter/faktor och förklarar jämförelsen med meter/sekundexponenter. Fri lärarjämförelse av bilarnas tillförda energi bevaras i 2.36; ovidkommande klimat/kostnadsförbehåll behövs inte.
 
 Långa likhetskedjor delas för mobil med alla mellanled kvar (2.205, 2.210, 2.29, 2.218, 2.63, 2.219, 2.67, 2.72, 2.75, 2.76). Modellpelaren i 2.63 har begripligare språk men behåller massa ∝ längd³, maxkraft ∝ area och kvoten maxkraft/tyngd. Tester: tools/fysik1-enheter-avrundning.test.js och konsumentens tools/enheter-fy1-2026-10-10.browser.py. Helbankens tekniska kontroll finns nu i konsumentens tools/fysik1-hela-banken.browser.py; den ersätter inte manuell fysikgranskning.
+
+## FP24 – funktionsvänsterled, relativa ordsvar och LaTeX i rätt-svar-raden (2026-10-10)
+
+Nio rapporter och fem analoger per rapport är granskade: [FELRAPPORTER_2026-10-10_1542.md](FELRAPPORTER_2026-10-10_1542.md) och motsvarande JSON listar samtliga 54 ID, 12 åtgärdade och 42 utan fel samt kommentarsförslag. Detta avslutar inte hela bankens manuella andra varv.
+
+Pröva faktiskt elevens naturliga svar i `checkAnswer`, inte bara bankens eget facit genom parsern. #5.564 b godtar redan 11 200 W/11,2 kW och #6.241 godtar 48,0 kg; toleransen ska inte vidgas utan belägg. #6.65 a hade rätt facit men frågan förtydligar nu att lufttrycket ingår. Granskade tryckanalogier omfattar #6.66–70 och #6.240/#6.242–245.
+
+#2.378 använder fullprecisionsmålet lg(20/3)/lg(1,4), numeriskt format och tolerans 0,005. `5,64`, `x=5,64`, `x≈5,64` och logaritmuttrycket godtas, 5,65 avvisas. LaTeX `\approx` och `{,}` normaliseras även i facit. #2.137 b och #2.141 c får uttrycksformat så funktionsvänsterled godtas; a:s faktorisering jämför högerleden innan produktformen kontrolleras. Självständigt b-kort i #2.137 får faktorformen direkt och visar multiplikation/samling i facit. Analoger: #2.139/#2.141/#2.143–145 och #2.375/#2.377/#2.379/#2.381/#2.382.
+
+#2.731:s matematik och rotparser var korrekta. Den oordnade svarsvägen visade däremot rå LaTeX efter ett felaktigt försök. Även denna väg måste använda `facitText`/`visatSvar` och `renderMath`; oordnade rötter får inte passera som dubblerade svar. Fem kontrollerade analoger: #2.32/#2.132/#2.193/#2.198/#2.242. Lägg inte nya specialskrivkrav i uppgiftstexten för att dölja ett presentationsfel.
+
+`multipel` är ett uttryckligt format för storleksförhållanden (#6.553/#6.534/#6.552), där exempelvis "dubbelt" och "dubbelt så stort" betyder 2. Det ska inte aktiveras för antal, kraft, tryck eller andra mått med enheter. Ordigenkänningen är förankrad till hela svaret och avvisar negationer/motsägelser. Även #6.42/#6.94/#6.95 kontrollerade utan ändrat matematiskt svar.
+
+Delmängdsfrågor på ingångsnivå ska tydliggöra att tomma och hela mängden ingår. #1.565–567 (matf1) får konkreta mängder, ledtråd om med/inte med och konsekvent nivå 2. Ändra inte till propera eller icke-tomma delmängder av misstag. Analoger #1.169/#1.614/#1.784 är räknade med sina villkor.
+
+Regressioner: master `tools/felrapporter-2026-10-10.test.js`; konsument `tools/multipel.test.js` och `tools/felrapporter-2026-10-10.browser.py`. De faktiska fälten, ordningsoberoende rötter och LaTeX-korrigeringen kontrolleras utan XP/databasskrivningar. Ingen elevkontakt eller Supabase-statusändring ingår.

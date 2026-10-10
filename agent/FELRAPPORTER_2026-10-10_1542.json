@@ -1,0 +1,661 @@
+{
+  "date": "2026-10-10",
+  "scope": "Nio felrapporter och fem manuellt kontrollerade analoger per rapport. Ingen slutmarkering av hela banken.",
+  "reviewed": 54,
+  "changedTasks": 12,
+  "groups": [
+    {
+      "course": "fy1",
+      "reportedId": "5.564",
+      "analogues": [
+        "5.563",
+        "5.565",
+        "5.566",
+        "5.567",
+        "5.568"
+      ]
+    },
+    {
+      "course": "fy1",
+      "reportedId": "6.553",
+      "analogues": [
+        "6.552",
+        "6.534",
+        "6.42",
+        "6.95",
+        "6.94"
+      ]
+    },
+    {
+      "course": "matf1",
+      "reportedId": "1.565",
+      "analogues": [
+        "1.169",
+        "1.566",
+        "1.567",
+        "1.614",
+        "1.784"
+      ]
+    },
+    {
+      "course": "ma2",
+      "reportedId": "2.378",
+      "analogues": [
+        "2.375",
+        "2.377",
+        "2.379",
+        "2.381",
+        "2.382"
+      ]
+    },
+    {
+      "course": "ma2",
+      "reportedId": "3.286",
+      "analogues": [
+        "3.22",
+        "3.26",
+        "3.52",
+        "3.60",
+        "3.81"
+      ]
+    },
+    {
+      "course": "ma2",
+      "reportedId": "2.137",
+      "analogues": [
+        "2.141",
+        "2.144",
+        "2.145",
+        "2.139",
+        "2.143"
+      ]
+    },
+    {
+      "course": "ma2",
+      "reportedId": "2.731",
+      "analogues": [
+        "2.32",
+        "2.132",
+        "2.193",
+        "2.198",
+        "2.242"
+      ]
+    },
+    {
+      "course": "fy1",
+      "reportedId": "6.241",
+      "analogues": [
+        "6.240",
+        "6.242",
+        "6.243",
+        "6.244",
+        "6.245"
+      ]
+    },
+    {
+      "course": "fy1",
+      "reportedId": "6.65",
+      "analogues": [
+        "6.66",
+        "6.67",
+        "6.68",
+        "6.69",
+        "6.70"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "course": "fy1",
+      "id": "5.564",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": true,
+      "comment": "Granskad – inget fel: 11 200 W är korrekt med tre värdesiffror och godkänns redan. Även 11,2 kW godkänns."
+    },
+    {
+      "course": "fy1",
+      "id": "5.563",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "5.565",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "5.566",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "5.567",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "5.568",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.553",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "svarFormat"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: både 2, dubbelt och dubbelt så stort godkänns nu."
+    },
+    {
+      "course": "fy1",
+      "id": "6.552",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "svarFormat"
+      ],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Svarsformat, självständigt kort eller ledtråd förbättrat."
+    },
+    {
+      "course": "fy1",
+      "id": "6.534",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "svarFormat"
+      ],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Svarsformat, självständigt kort eller ledtråd förbättrat."
+    },
+    {
+      "course": "fy1",
+      "id": "6.42",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.95",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.94",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "matf1",
+      "id": "1.565",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva",
+        "ledtrad"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: frågan anger en konkret mängd och att den tomma mängden och hela mängden räknas. Lösningen och ledtråden har förtydligats."
+    },
+    {
+      "course": "matf1",
+      "id": "1.169",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "matf1",
+      "id": "1.566",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva",
+        "ledtrad"
+      ],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Svarsformat, självständigt kort eller ledtråd förbättrat."
+    },
+    {
+      "course": "matf1",
+      "id": "1.567",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Svarsformat, självständigt kort eller ledtråd förbättrat."
+    },
+    {
+      "course": "matf1",
+      "id": "1.614",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "matf1",
+      "id": "1.784",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.378",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: 5,64 godkänns med eller utan x=. Det exakta logaritmuttrycket godkänns också."
+    },
+    {
+      "course": "ma2",
+      "id": "2.375",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.377",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.379",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.381",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.382",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "3.286",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: den oförklarade förkortningen V–V har ersatts av en fråga om motsvarande vinklar. Regeln förklaras i facit."
+    },
+    {
+      "course": "ma2",
+      "id": "3.22",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "3.26",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "3.52",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "3.60",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "3.81",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.137",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "spelDelar",
+        "traningsniva",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: funktionssvar med f(x)= eller y= godkänns, liksom rätt uttryck utan vänsterled. Del b har fått ett tydligare, självständigt kort och en förklarande lösning."
+    },
+    {
+      "course": "ma2",
+      "id": "2.141",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "svarFormat"
+      ],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Svarsformat, självständigt kort eller ledtråd förbättrat."
+    },
+    {
+      "course": "ma2",
+      "id": "2.144",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.145",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.139",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.143",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.731",
+      "status": "Åtgärdad",
+      "changedFields": [],
+      "reported": true,
+      "comment": "Åtgärdad: rätt svar efter ett felaktigt försök visas nu som en formel. sqrt(3)+sqrt(2) och sqrt(3)-sqrt(2) godkänns redan i valfri ordning; x= får skrivas framför."
+    },
+    {
+      "course": "ma2",
+      "id": "2.32",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.132",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.193",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.198",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "ma2",
+      "id": "2.242",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.241",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": true,
+      "comment": "Granskad – inget fel: massan är 48,0 kg och det svaret godkänns redan med en decimal."
+    },
+    {
+      "course": "fy1",
+      "id": "6.240",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.242",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.243",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.244",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.245",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.65",
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t",
+        "spelDelar"
+      ],
+      "reported": true,
+      "comment": "Åtgärdad: frågan säger tydligare att lufttrycket ska ingå. Facit 135,60 kPa var korrekt och är oförändrat."
+    },
+    {
+      "course": "fy1",
+      "id": "6.66",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.67",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.68",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.69",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    },
+    {
+      "course": "fy1",
+      "id": "6.70",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "reported": false,
+      "comment": "Rätt beräkning och svar. Ingen ändring behövs för det granskade felmönstret."
+    }
+  ],
+  "verification": {
+    "independentModels": "Effekt/energi/tryck och ekvationer räknade oberoende. Delmängder räknas som binära urval; 128 fria val och 32/4 i analogerna. Likformighetsbevis kontrollerade mot parallellitet, sidkvoter och areaskala.",
+    "browser": {
+      "reportedChecks": 57,
+      "analogueAndRootChecks": 51,
+      "mobileDesktopViews": 18,
+      "failures": 0
+    },
+    "physicsValidator": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 833
+    },
+    "limitations": "Rapporter i Supabase har inte ändrats. Noll reproducerade fel gäller den aktuella versionen och de provade svaren; elevernas exakta tidigare inmatning saknas. SVG är oförändrade.",
+    "tests": {
+      "master": {
+        "passed": 291,
+        "failed": 0
+      },
+      "consumer": {
+        "passed": 108,
+        "failed": 0
+      }
+    },
+    "fullPhysicsBrowser": {
+      "cards": 5271,
+      "answerChecks": 14979,
+      "gradingFailures": 0,
+      "katexErrors": 0
+    },
+    "bankValidators": [
+      {
+        "file": "uppgifter.js",
+        "before": {
+          "INFO": 833,
+          "WARNING": 8
+        },
+        "after": {
+          "INFO": 833,
+          "WARNING": 8
+        },
+        "newFindings": []
+      },
+      {
+        "file": "uppgifterma2.js",
+        "before": {
+          "WARNING": 2287,
+          "INFO": 95,
+          "ERROR": 4
+        },
+        "after": {
+          "WARNING": 2287,
+          "INFO": 95,
+          "ERROR": 4
+        },
+        "newFindings": []
+      },
+      {
+        "file": "uppgiftermatf1.js",
+        "before": {
+          "WARNING": 8,
+          "INFO": 71
+        },
+        "after": {
+          "WARNING": 8,
+          "INFO": 70
+        },
+        "newFindings": []
+      }
+    ],
+    "bankHashes": {
+      "uppgifter.js": "8da7ebd28538bb3dd200552a932e97aef89b64f7d131a98e9b125758ba5c331c",
+      "uppgifterma2.js": "4a453935743177f0cea821f2e2b4aa101a4d3e5f1686f8469bae38fb628c9e0c",
+      "uppgiftermatf1.js": "6804335749ae46e8645b4f792f92ecbf84297d6b30573f37e93359a13daba564"
+    }
+  }
+}
