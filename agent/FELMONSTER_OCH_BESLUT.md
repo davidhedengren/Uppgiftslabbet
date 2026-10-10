@@ -341,3 +341,15 @@ Ett värmeproblem behöver veta vart energin går, kort och tydligt: 8.451, 8.45
 Rutinuppgifter klassas efter fysikvalet, inte antalet multiplikationer eller ursprungliga A-markeringen: 8.202, 8.205, 8.203, 8.206, 8.235, 8.238, 8.241 och 8.447. Direkt formel nivå 1; vanliga omvandlingar/bekanta samband nivå 2. Fri grafritning 8.10 och generellt symboliskt resonemang 8.153 bevaras hos läraren. För optimering 8.13 behövs en verklig motivering till R = r; numeriskt optimalvärde ensamt ersätter inte lärarens resonemang.
 
 Kretsfigurer har kontrollerad topologi och större Arial-etiketter med marginaler. Ändra inte polaritet, amperemeterns seriekoppling eller voltmeterns parallellkoppling när figurer förbättras. A/V ligger avsiktligt inne i instrumentcirklar. De äldre små/överlappande etiketterna i bland annat 8.52, 8.95, 8.123, 8.130, 8.134 och 8.154 ska inte återinföras.
+
+## FP14 – nuklidantal, massjämförelse och energi per nukleon (2026-10-10)
+
+Alla 78 nukliduppgifter är manuellt genomlästa. ID-för-ID-beslut och kommentar finns i [NUKLIDER_FYSIK1_2026-10-10.md](NUKLIDER_FYSIK1_2026-10-10.md) och motsvarande JSON. Aktuell kapitelstatus finns i KARNFYSIK_GRANSKNINGSSTATUS.json; övriga kärnfysikområden är ännu inte färdiggranskade.
+
+Exakta partikelantal rättas med tolerans 0 (9.202, 9.203, 9.207, 9.214, 9.231, 9.241). Enkla subtraktioner och direkta energiomvandlingar är nivå 1, inte automatiskt C eller A (9.218, 9.220, 9.221, 9.224, 9.228, 9.230). Omvänd massdefekt med mycket små masskillnader behöver uttrycklig precision: 9.235 fem decimaler, 9.389a och 9.392 fyra, 9.397 tre. En tvåprocentstolerans på själva atommassan skulle gömma hela massdefekten och får inte ersätta dessa snäva toleranser.
+
+Skilj kärnmassa från atommassa. Jämför med proton/neutron för kärnmassa; med väteatom/neutron för atommassa så att elektronbidragen balanserar (9.20, 9.31, 9.35, 9.61, 9.62, 9.68, 9.398). Insatta massor i facit ska behålla givna decimaler. Irrelevant elektronmassa ska inte läggas tillbaka i dessa kort. Facit visar masskillnad och energiomvandling före slutsvar.
+
+Optin-formatet energi_per_nukleon godtar MeV och MeV/nukleon samt korrekt omräknade eV/keV/GeV/J. Det får inte godta energi per sekund eller fel dimension. Använd bara för energi per nukleon, inte total energi (9.219 och 9.223 söker nu total energi). Granskade analoger är 9.218, 9.220, 9.227, 9.230, 9.236, 9.394, 9.395. Regressioner: tools/fysik1-nuklider.test.js i master och tools/energi-per-nukleon.test.js samt tools/nuklider-fy1-2026-10-10.browser.py i konsumenten.
+
+Alla efterfrågade antal/storheter får namngivna fält: 9.22, 9.34, 9.36, 9.61, 9.66. Kort med eget avrundat mellanvärde använder detta värde, medan lärarens sammanhängande lösning får räkna med full precision (9.19b, 9.31d, 9.32b, 9.66b/c, 9.393b, 9.394b, 9.395b). Lärarens fria motiveringar bevaras och rättas manuellt; de ska inte skapa beroende spelkort som redan fått sitt svar. Plusmärken i protoncirklarna i 9.36 är avsiktliga och korrekt placerade. Radien i 9.66 går från centrum till kanten.
