@@ -1,0 +1,2017 @@
+{
+  "baseline": "eb47f82",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "area": "aktivitet",
+    "ids": [
+      "9.1",
+      "9.120",
+      "9.121",
+      "9.4",
+      "9.122",
+      "9.5",
+      "9.123",
+      "9.124",
+      "9.11",
+      "9.125",
+      "9.18",
+      "9.126",
+      "9.27",
+      "9.127",
+      "9.128",
+      "9.29",
+      "9.129",
+      "9.30",
+      "9.130",
+      "9.37",
+      "9.131",
+      "9.132",
+      "9.38",
+      "9.133",
+      "9.41",
+      "9.134",
+      "9.43",
+      "9.135",
+      "9.55",
+      "9.136",
+      "9.137",
+      "9.57",
+      "9.138",
+      "9.58",
+      "9.139",
+      "9.140",
+      "9.79",
+      "9.141",
+      "9.80",
+      "9.142",
+      "9.81",
+      "9.143",
+      "9.82",
+      "9.144",
+      "9.83",
+      "9.145",
+      "9.84",
+      "9.146",
+      "9.85",
+      "9.147",
+      "9.148",
+      "9.86",
+      "9.149",
+      "9.87",
+      "9.150",
+      "9.88",
+      "9.151",
+      "9.251",
+      "9.252",
+      "9.253",
+      "9.254",
+      "9.255",
+      "9.330",
+      "9.331",
+      "9.332",
+      "9.333",
+      "9.334",
+      "9.335",
+      "9.336",
+      "9.337",
+      "9.338",
+      "9.339",
+      "9.340",
+      "9.341",
+      "9.342",
+      "9.343",
+      "9.344",
+      "9.345",
+      "9.346",
+      "9.347",
+      "9.348",
+      "9.349",
+      "9.350",
+      "9.351",
+      "9.352",
+      "9.353",
+      "9.354",
+      "9.355",
+      "9.356",
+      "9.357",
+      "9.358",
+      "9.359",
+      "9.360",
+      "9.361",
+      "9.421",
+      "9.422",
+      "9.423",
+      "9.424",
+      "9.425",
+      "9.426",
+      "9.427"
+    ]
+  },
+  "reviews": {
+    "9.120": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "tolerans"
+      ],
+      "comment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "suggestedComment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.121": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "tolerans"
+      ],
+      "comment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "suggestedComment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.129": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "tolerans"
+      ],
+      "comment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "suggestedComment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.130": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "tolerans"
+      ],
+      "comment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "suggestedComment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.254": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "tolerans"
+      ],
+      "comment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "suggestedComment": "Korrekt direkt halvering på nivå 1. Rimligt avrundade aktivitetsvärden godtas; ingen generisk ledtråd.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.122": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.132": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.255": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.340": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.123": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.124": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.125": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.128": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.134": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.136": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.138": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.145": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.146": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.253": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.331": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.332": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.336": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.127": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.252": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.126": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "suggestedComment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.131": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "suggestedComment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.251": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad"
+      ],
+      "comment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "suggestedComment": "Begrepp, korrekta alternativ och förklaring kontrollerade. Relevant ledtråd och språklig rättning; nivå 1.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.135": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.133": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.137": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.140": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.141": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.333": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.347": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.356": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.361": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.421": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.422": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Irrelevant C-14/C-12-kvot borttagen. Facit använder 16,79 Bq utan för tidig avrundning till 16,8 och visar hur aktiviteten per gram ger provets startaktivitet.",
+      "suggestedComment": "Irrelevant C-14/C-12-kvot borttagen. Facit använder 16,79 Bq utan för tidig avrundning till 16,8 och visar hur aktiviteten per gram ger provets startaktivitet.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.87": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.57": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.346": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.142": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.337": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.143": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.139": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.423": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.144": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.147": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.149": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.150": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.349": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.425": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.1": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "A/nivå 5 ersatt med konkreta rutinberäkningar och begrepp nivå 1–2. Självrättande fristående kort, lärarens fria radonförklaring bevarad.",
+      "suggestedComment": "A/nivå 5 ersatt med konkreta rutinberäkningar och begrepp nivå 1–2. Självrättande fristående kort, lärarens fria radonförklaring bevarad.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.5": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Guidad mol–aktivitetkedja nivå 3/C, inte A/5. Korta självständiga delkort nivå 1–2; relevant data och facit i varje kort.",
+      "suggestedComment": "Guidad mol–aktivitetkedja nivå 3/C, inte A/5. Korta självständiga delkort nivå 1–2; relevant data och facit i varje kort.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.18": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "suggestedComment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.81": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "suggestedComment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.85": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "fraga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "suggestedComment": "Felaktiga gamla slutsvar och saknade rättningsmål ersatta med rätt λ, aktivitet/antal. Varje kort har bara relevanta egna data; mellanvärden i kortet används i dess facit.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.30": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "b behöver inte beräkna λ från föregående del. Precisa rättningsmål och förklarad kBq-omvandling; hela kedjan nivå 2.",
+      "suggestedComment": "b behöver inte beräkna λ från föregående del. Precisa rättningsmål och förklarad kBq-omvandling; hela kedjan nivå 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.27": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Delarnas felaktiga slutsvar 5,0/2,5 µg rättade till 4,5/2,25 µg. Blylåda och personnamn borttagna. Frågan gäller isotopen, inte preparatets sammanlagda massa.",
+      "suggestedComment": "Delarnas felaktiga slutsvar 5,0/2,5 µg rättade till 4,5/2,25 µg. Blylåda och personnamn borttagna. Frågan gäller isotopen, inte preparatets sammanlagda massa.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.41": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Fristående frågor med rätt enhet och mål. 10,5 och 15,8 är ungefär, inte exakt två/tre halveringstider; facit använder den givna modellen utan att låtsas exakt.",
+      "suggestedComment": "Fristående frågor med rätt enhet och mål. 10,5 och 15,8 är ungefär, inte exakt två/tre halveringstider; facit använder den givna modellen utan att låtsas exakt.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.43": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "comment": "a:s motstridiga slutsvar 1 sönderfall/s borttaget. Begreppsförklaring bevarad hos läraren och korrekt alternativ i spelet; b har given årsomvandling.",
+      "suggestedComment": "a:s motstridiga slutsvar 1 sönderfall/s borttaget. Begreppsförklaring bevarad hos läraren och korrekt alternativ i spelet; b har given årsomvandling.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.58": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "b:s felaktiga rättningsmål 500 ersatt med den sökta tiden 60 min. a:s kBq och b:s min anges tydligt; fristående kort och nivå 2.",
+      "suggestedComment": "b:s felaktiga rättningsmål 500 ersatt med den sökta tiden 60 min. a:s kBq och b:s min anges tydligt; fristående kort och nivå 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.86": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Numeriska enkla delkort blir självrättande med egna givna data. Nivå 1, inga onödiga ledtrådar om andra formler.",
+      "suggestedComment": "Numeriska enkla delkort blir självrättande med egna givna data. Nivå 1, inga onödiga ledtrådar om andra formler.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.82": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "b:s motstridiga slutsvar 7,0 h rättat till 7,5 h. a/c får saknade numeriska mål och egna data. Alla kort nivå 1.",
+      "suggestedComment": "b:s motstridiga slutsvar 7,0 h rättat till 7,5 h. a/c får saknade numeriska mål och egna data. Alla kort nivå 1.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.88": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "b:s gamla slutsvar 50 Bq besvarade fel storhet. Nu rättas fyra halveringstider; alla tre mål har rätt innebörd och eget kort.",
+      "suggestedComment": "b:s gamla slutsvar 50 Bq besvarade fel storhet. Nu rättas fyra halveringstider; alla tre mål har rätt innebörd och eget kort.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.330": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Tidpunkten 40 s skiljs från 40 sekunder senare. Framåt-/bakåtmodellen förklaras; nivå 1 respektive 2.",
+      "suggestedComment": "Tidpunkten 40 s skiljs från 40 sekunder senare. Framåt-/bakåtmodellen förklaras; nivå 1 respektive 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.11": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Kurvan är verkligt exponentiell, inte raka segment. b får saknat korrekt mål och egna givna värden; modellens skillnad från sista verkliga kärnans sönderfall förklaras. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "suggestedComment": "Kurvan är verkligt exponentiell, inte raka segment. b får saknat korrekt mål och egna givna värden; modellens skillnad från sista verkliga kärnans sönderfall förklaras. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.37": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Alla avlästa/beräknade storheter får rättningsmål; enkla nivå 1-kort, grafen bara där den behövs. Exponentiell SVG med rätt 6-timmarshalvering. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "suggestedComment": "Alla avlästa/beräknade storheter får rättningsmål; enkla nivå 1-kort, grafen bara där den behövs. Exponentiell SVG med rätt 6-timmarshalvering. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.84": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Felaktigt facit 26 dygn ersätts med cirka 16 (fysikmodell 15,60). Gamla räta segment gav dessutom fel skärning. Båda SVG-kurvorna följer nu sina halveringstider; rimlig avläsningstolerans och nivå 1–2. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "suggestedComment": "Felaktigt facit 26 dygn ersätts med cirka 16 (fysikmodell 15,60). Gamla räta segment gav dessutom fel skärning. Båda SVG-kurvorna följer nu sina halveringstider; rimlig avläsningstolerans och nivå 1–2. Axelnamn och kurvnamn har extra marginal till skalor och stödlinjer.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.4": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Numeriska tabellfrågor behöver inte stängas av från självrättning. Varje kort har relevanta egna data; nivå 1–2 och komplett enhetsomvandling.",
+      "suggestedComment": "Numeriska tabellfrågor behöver inte stängas av från självrättning. Varje kort har relevanta egna data; nivå 1–2 och komplett enhetsomvandling.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.38": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tabellens enkla radberäkningar är nu självrättande med tre namngivna fält per kort. Fullt facit och nivå 1; inga oanvändbara manuella kort.",
+      "suggestedComment": "Tabellens enkla radberäkningar är nu självrättande med tre namngivna fält per kort. Fullt facit och nivå 1; inga oanvändbara manuella kort.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.334": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.339": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.344": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.355": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.358": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.148": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.29": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.343": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.350": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.353": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.341": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "c saknade instrumentbrädans aktivitet och halveringstid på sitt kort. Alla kort har nu relevanta data och facit med insatta mellanvärden.",
+      "suggestedComment": "c saknade instrumentbrädans aktivitet och halveringstid på sitt kort. Alla kort har nu relevanta data och facit med insatta mellanvärden.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.354": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit visar omvandling till kg, beräknat kärnantal och sekunder till år. Varje nuklidkort har egna data; C/nivå 3.",
+      "suggestedComment": "Facit visar omvandling till kg, beräknat kärnantal och sekunder till år. Varje nuklidkort har egna data; C/nivå 3.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.342": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.335": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Halveringstid och sönderfallskonstant förklaras åt båda håll; respektive kort har bara egna givna data. Korta mellanled, nivå 2.",
+      "suggestedComment": "Halveringstid och sönderfallskonstant förklaras åt båda håll; respektive kort har bara egna givna data. Korta mellanled, nivå 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.338": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kol-14 och uran-238 ges inte på varandras kort. Facit visar λ och kopplingen till aktivitet eller antal; nivå 2.",
+      "suggestedComment": "Kol-14 och uran-238 ges inte på varandras kort. Facit visar λ och kopplingen till aktivitet eller antal; nivå 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.345": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "c/d:s facit beräknas från kortets egna avrundade värden. Irrelevanta massor/data borttagna från kort c/d. Alla mellanled och tidsomvandlingen visas, inga steglistor.",
+      "suggestedComment": "c/d:s facit beräknas från kortets egna avrundade värden. Irrelevanta massor/data borttagna från kort c/d. Alla mellanled och tidsomvandlingen visas, inga steglistor.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.359": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständiga kort med egna avrundade A/P, korrekta mål och insatta värden. Värmeeffekt efterfrågas tydligt; alfapartikelns energi blandas inte ihop med all sönderfallsenergi eller elektrisk effekt.",
+      "suggestedComment": "Självständiga kort med egna avrundade A/P, korrekta mål och insatta värden. Värmeeffekt efterfrågas tydligt; alfapartikelns energi blandas inte ihop med all sönderfallsenergi eller elektrisk effekt.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.360": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständiga kort med egna avrundade A/P, korrekta mål och insatta värden. Värmeeffekt efterfrågas tydligt; alfapartikelns energi blandas inte ihop med all sönderfallsenergi eller elektrisk effekt.",
+      "suggestedComment": "Självständiga kort med egna avrundade A/P, korrekta mål och insatta värden. Värmeeffekt efterfrågas tydligt; alfapartikelns energi blandas inte ihop med all sönderfallsenergi eller elektrisk effekt.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.424": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan anger vad som dateras och jämförs. Oanvänd kvot/aktivitet borttagen från varje kort. 9.426c anger 200 g KOL, inte 200 g trä; annars saknades kolmassan. Tygfrågan söker ålder vid mätningen, inte tillverkningsår.",
+      "suggestedComment": "Frågan anger vad som dateras och jämförs. Oanvänd kvot/aktivitet borttagen från varje kort. 9.426c anger 200 g KOL, inte 200 g trä; annars saknades kolmassan. Tygfrågan söker ålder vid mätningen, inte tillverkningsår.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.426": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan anger vad som dateras och jämförs. Oanvänd kvot/aktivitet borttagen från varje kort. 9.426c anger 200 g KOL, inte 200 g trä; annars saknades kolmassan. Tygfrågan söker ålder vid mätningen, inte tillverkningsår.",
+      "suggestedComment": "Frågan anger vad som dateras och jämförs. Oanvänd kvot/aktivitet borttagen från varje kort. 9.426c anger 200 g KOL, inte 200 g trä; annars saknades kolmassan. Tygfrågan söker ålder vid mätningen, inte tillverkningsår.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.55": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "En tillämpning av dateringsvillkoren är nivå 2, inte A/5. Ett självständigt alternativkort ersätter gammal följdfråga som saknade innehåll; lärarens motivering bevaras.",
+      "suggestedComment": "En tillämpning av dateringsvillkoren är nivå 2, inte A/5. Ett självständigt alternativkort ersätter gammal följdfråga som saknade innehåll; lärarens motivering bevaras.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.79": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "b får saknat numeriskt mål och komplett fristående fråga. Begreppsförklaring bevaras utan oklart vad säger det; nivå 2.",
+      "suggestedComment": "b får saknat numeriskt mål och komplett fristående fråga. Begreppsförklaring bevaras utan oklart vad säger det; nivå 2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.80": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "a:s felaktiga slutsvar 2⁻² ersatt med antalet 2. De två enkla korten nivå 1, metodvillkoret nivå 3; varje kort har sammanhang och lärarens fria resonemang bevaras.",
+      "suggestedComment": "a:s felaktiga slutsvar 2⁻² ersatt med antalet 2. De två enkla korten nivå 1, metodvillkoret nivå 3; varje kort har sammanhang och lärarens fria resonemang bevaras.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.83": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "c:s gamla procentslutsvar ersätts av den efterfrågade förklaringen. a/b får självrättande mål; år⁻¹ är medvetet en annan tidsenhet än s⁻¹. Nivå 1/3/2.",
+      "suggestedComment": "c:s gamla procentslutsvar ersätts av den efterfrågade förklaringen. a/b får självrättande mål; år⁻¹ är medvetet en annan tidsenhet än s⁻¹. Nivå 1/3/2.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.151": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.348": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.352": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.351": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.357": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    },
+    "9.427": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "suggestedComment": "Självständig fysik- och kortgranskning. Nivå, givna data, avrundning, enhet och förklarande facit stämmer med den sökta storheten.",
+      "method": "Manuell genomläsning, självständig fysikberäkning, oberoende testmodeller och faktisk kort-/rättningskontroll."
+    }
+  },
+  "verification": {
+    "independentPhysics": "3 regressionstester: samtliga numeriska föräldrasvar och 12 särskilt kontrollräknade fristående kort med egna givna mellanvärden.",
+    "actualAppGrading": {
+      "numeric": 753,
+      "alternatives": 27,
+      "failures": 0
+    },
+    "render": {
+      "parents": 101,
+      "cards": 158,
+      "views": 632,
+      "numericContracts": 312,
+      "failures": 0
+    },
+    "svg": {
+      "figures": 3,
+      "findings": 0,
+      "visualReview": "9.11: 800 till 400 på 20 min; 9.37: 400 till 200 på 6 h; 9.84: X 600/20 dygn, Y 400/80 dygn och skärning cirka 15,6 dygn. Etiketter och skalor kontrollerade."
+    },
+    "masterTests": 272,
+    "appTests": 106,
+    "wholeBankValidator": {
+      "errors": 0,
+      "warnings": 8,
+      "info": 719
+    },
+    "previousAreaRegression": {
+      "nuklider": {
+        "numeric": 564,
+        "alternatives": 57,
+        "failures": 0
+      },
+      "kopplingar": {
+        "numeric": 1077,
+        "alternatives": 60,
+        "failures": 0
+      }
+    },
+    "wholePhysicsBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "slutsvar eller rättningsmål beskriver annan storhet": [
+      "9.27",
+      "9.43",
+      "9.58",
+      "9.80",
+      "9.81",
+      "9.82",
+      "9.83",
+      "9.88"
+    ],
+    "enkla uppgifter övergraderade": [
+      "9.123",
+      "9.134",
+      "9.135",
+      "9.136",
+      "9.143",
+      "9.145",
+      "9.146"
+    ],
+    "kort utan egna givna data": [
+      "9.18",
+      "9.30",
+      "9.58",
+      "9.81",
+      "9.85",
+      "9.341",
+      "9.345",
+      "9.359",
+      "9.360"
+    ],
+    "irrelevant information": [
+      "9.27",
+      "9.343",
+      "9.347",
+      "9.421",
+      "9.423",
+      "9.424",
+      "9.426"
+    ],
+    "massor eller andelar saknas/förväxlas": [
+      "9.27",
+      "9.151",
+      "9.342",
+      "9.357",
+      "9.426"
+    ],
+    "enhetsexponenter och invers tidsenhet": [
+      "9.83",
+      "9.143",
+      "9.335",
+      "9.85",
+      "9.81",
+      "9.345"
+    ]
+  }
+}
