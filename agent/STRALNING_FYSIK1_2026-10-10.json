@@ -1,0 +1,681 @@
+{
+  "baseline": "024d410",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "areas": [
+      "stralning_materia",
+      "em_stralning"
+    ],
+    "ids": [
+      "9.2",
+      "9.7",
+      "9.13",
+      "9.93",
+      "9.183",
+      "9.184",
+      "9.187",
+      "9.190",
+      "9.193",
+      "GY25-FY1-EM-01",
+      "GY25-FY1-EM-02",
+      "GY25-FY1-EM-03",
+      "GY25-FY1-EM-04",
+      "GY25-FY1-VET-01",
+      "GY25-FY1-VET-02",
+      "9.256",
+      "9.257",
+      "9.260",
+      "9.281",
+      "9.282",
+      "9.283",
+      "9.284",
+      "9.285",
+      "9.286",
+      "9.304",
+      "9.305",
+      "9.306",
+      "9.307",
+      "9.308",
+      "9.309",
+      "9.310",
+      "9.311",
+      "9.312",
+      "9.313",
+      "9.323",
+      "9.324",
+      "9.325",
+      "9.327"
+    ]
+  },
+  "reviews": {
+    "9.2": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Rätt andel och eventuell skärmtjocklek rättas. 9.13c saknade numeriskt mål trots entydigt 7,97 cm. Alla kort har halveringstjocklek; irrelevant dosledtråd borttagen. Rutin a/b nivå 2.",
+      "suggestedComment": "Rätt andel och eventuell skärmtjocklek rättas. 9.13c saknade numeriskt mål trots entydigt 7,97 cm. Alla kort har halveringstjocklek; irrelevant dosledtråd borttagen. Rutin a/b nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.13": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Rätt andel och eventuell skärmtjocklek rättas. 9.13c saknade numeriskt mål trots entydigt 7,97 cm. Alla kort har halveringstjocklek; irrelevant dosledtråd borttagen. Rutin a/b nivå 2.",
+      "suggestedComment": "Rätt andel och eventuell skärmtjocklek rättas. 9.13c saknade numeriskt mål trots entydigt 7,97 cm. Alla kort har halveringstjocklek; irrelevant dosledtråd borttagen. Rutin a/b nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.93": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.183": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.184": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.187": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.190": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.193": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.260": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Granskad – rätt sakbegrepp och alternativ. Endast generell ledtråd ersatt med relevant fråga.",
+      "suggestedComment": "Granskad – rätt sakbegrepp och alternativ. Endast generell ledtråd ersatt med relevant fråga.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.257": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Granskad – rätt sakbegrepp och alternativ. Endast generell ledtråd ersatt med relevant fråga.",
+      "suggestedComment": "Granskad – rätt sakbegrepp och alternativ. Endast generell ledtråd ersatt med relevant fråga.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.256": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad"
+      ],
+      "comment": "Synligt ljus togs bort som svarsalternativ: papper kan även stoppa det, så frågan gav en tvetydig jämförelse. Beta ger entydig strålskyddsfråga.",
+      "suggestedComment": "Synligt ljus togs bort som svarsalternativ: papper kan även stoppa det, så frågan gav en tvetydig jämförelse. Beta ger entydig strålskyddsfråga.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.281": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "traningsniva"
+      ],
+      "comment": "Direkt begrepp nivå 1. Alternativkommentar skiljer jonisation från aktivering utan absolut påstående om all joniserande strålning.",
+      "suggestedComment": "Direkt begrepp nivå 1. Alternativkommentar skiljer jonisation från aktivering utan absolut påstående om all joniserande strålning.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.282": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "s",
+        "traningsniva"
+      ],
+      "comment": "Enkel materialjämförelse nivå 1; svar gäller de angivna alternativen, inte en ovillkorlig rangordning av alla material.",
+      "suggestedComment": "Enkel materialjämförelse nivå 1; svar gäller de angivna alternativen, inte en ovillkorlig rangordning av alla material.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.283": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Begreppsfrågan är kort och entydig. Facit förklarar rätt alternativ utan onödiga fackord; nivå 2.",
+      "suggestedComment": "Begreppsfrågan är kort och entydig. Facit förklarar rätt alternativ utan onödiga fackord; nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.284": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.286": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.285": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "tolerans"
+      ],
+      "comment": "Tre halveringar ger 6,0 cm. Fråga och lösning var tydliga; vanlig avrundning tolereras utan att annan skärmtjocklek godtas.",
+      "suggestedComment": "Tre halveringar ger 6,0 cm. Fråga och lösning var tydliga; vanlig avrundning tolereras utan att annan skärmtjocklek godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-VET-02": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "comment": "Två tidsnormaliseringar och begränsad slutsats passar C/nivå 3, inte A/5. Separata formler fungerar på mobil. Fri argumentation bevaras hos läraren.",
+      "suggestedComment": "Två tidsnormaliseringar och begränsad slutsats passar C/nivå 3, inte A/5. Separata formler fungerar på mobil. Fri argumentation bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.7": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Lärarens motivering bevaras; spelet har tre egna tydliga begreppskort. Ny stor SVG utan krockande betaetikett visar att bly dämpar gamma men inte stoppar allt. Nivå 1/1/2.",
+      "suggestedComment": "Lärarens motivering bevaras; spelet har tre egna tydliga begreppskort. Ny stor SVG utan krockande betaetikett visar att bly dämpar gamma men inte stoppar allt. Nivå 1/1/2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-EM-02": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.304": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.305": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.306": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.310": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.311": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.323": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.325": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.324": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.327": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.309": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "comment": "Direkt begreppsfråga om joniserande strålning eller ljusets hastighet: nivå 1. Korrekt alternativ och förklarande facit bevaras.",
+      "suggestedComment": "Direkt begreppsfråga om joniserande strålning eller ljusets hastighet: nivå 1. Korrekt alternativ och förklarande facit bevaras.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.312": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "comment": "Direkt begreppsfråga om joniserande strålning eller ljusets hastighet: nivå 1. Korrekt alternativ och förklarande facit bevaras.",
+      "suggestedComment": "Direkt begreppsfråga om joniserande strålning eller ljusets hastighet: nivå 1. Korrekt alternativ och förklarande facit bevaras.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.313": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Absolut påstående att radiovågor inte kan skada hud ersatt av tydlig jämförelse av enskilda fotoners kemiska verkan. Ingen sammanblandning med uppvärmning. Nivå 2.",
+      "suggestedComment": "Absolut påstående att radiovågor inte kan skada hud ersatt av tydlig jämförelse av enskilda fotoners kemiska verkan. Ingen sammanblandning med uppvärmning. Nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-EM-01": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Enklaste ordningsfrågan är nivå 1. Fri ordningsinmatning bevaras hos läraren; korrekt radiovågor–ljus–UV–gamma.",
+      "suggestedComment": "Enklaste ordningsfrågan är nivå 1. Fri ordningsinmatning bevaras hos läraren; korrekt radiovågor–ljus–UV–gamma.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-EM-03": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Förklara E=hf i en direkt jämförelse är E/nivå 2. Korrekt förklaring bevaras hos läraren.",
+      "suggestedComment": "Förklara E=hf i en direkt jämförelse är E/nivå 2. Korrekt förklaring bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-EM-04": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Kvalitativ granskning av ett odefinierat strålningspåstående kalibreras till C/nivå 3. Fri lärarbedömning kvar.",
+      "suggestedComment": "Kvalitativ granskning av ett odefinierat strålningspåstående kalibreras till C/nivå 3. Fri lärarbedömning kvar.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "GY25-FY1-VET-01": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "s"
+      ],
+      "comment": "Förklaringen förenklas utan avancerade ord som dos–respons och evidens. Skillnaden mellan samtidighet och orsak bevaras; fri läraruppgift.",
+      "suggestedComment": "Förklaringen förenklas utan avancerade ord som dos–respons och evidens. Skillnaden mellan samtidighet och orsak bevaras; fri läraruppgift.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.307": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: rätt ordning i den vanliga spektrumöversikten, tydlig fråga och korrekt alternativ på nivå 1.",
+      "suggestedComment": "Granskad – inget fel: rätt ordning i den vanliga spektrumöversikten, tydlig fråga och korrekt alternativ på nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.308": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: rätt ordning i den vanliga spektrumöversikten, tydlig fråga och korrekt alternativ på nivå 1.",
+      "suggestedComment": "Granskad – inget fel: rätt ordning i den vanliga spektrumöversikten, tydlig fråga och korrekt alternativ på nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    }
+  },
+  "verification": {
+    "independentPhysics": "Samtliga numeriska föräldrasvar verifierade; 2 regressionstester godkända.",
+    "actualAppGrading": {
+      "numeric": 126,
+      "alternatives": 45,
+      "failures": 0
+    },
+    "render": {
+      "parents": 38,
+      "cards": 44,
+      "views": 176,
+      "numericContracts": 48,
+      "initialOverflowCards": 3,
+      "finalAffectedViews": 24,
+      "failuresAfterCorrections": 0
+    },
+    "svg": {
+      "figures": 1,
+      "findings": 0,
+      "visualReview": "9.7: stora etiketter separat från linjer, alfa stoppas av papper, beta av aluminium, gamma dämpas men en del passerar bly."
+    },
+    "masterTests": 277,
+    "appTests": 106,
+    "wholeBankValidator": {
+      "errors": 0,
+      "warnings": 8,
+      "info": 776
+    },
+    "wholePhysicsBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "halveringstjocklek och för höga nivåer": [
+      "9.2",
+      "9.13",
+      "9.93",
+      "9.184",
+      "9.187",
+      "9.190",
+      "9.193",
+      "9.284",
+      "9.286"
+    ],
+    "fotonformler, givna data och omvandlingar": [
+      "9.310",
+      "9.311",
+      "9.323",
+      "9.324",
+      "9.325",
+      "9.327"
+    ],
+    "entydiga sakbegrepp och jämförelser": [
+      "9.7",
+      "9.256",
+      "9.281",
+      "9.282",
+      "9.283",
+      "9.309",
+      "9.313"
+    ]
+  }
+}
