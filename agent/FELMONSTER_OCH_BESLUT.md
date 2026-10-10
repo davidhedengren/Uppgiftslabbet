@@ -163,6 +163,19 @@ Utelämnade spelkort kräver entydig bokstavsmappning till originalets metadata.
 8.306–309 varierar Coulombgruppen med avstånd, Newtons tredje lag och
 förändringsfaktorer i stället för fyra nästan identiska uträkningar.
 
+8.71 b hade 0 i rättningsmetadata men ett felaktigt kortslutsvar 84,3 µN:
+det senare gällde bara en granne. Visa kraftsumman, 0 N, och förklara
+symmetrin. 8.68/74 visar att storlek och riktning måste prövas var för sig
+när båda efterfrågas. 8.21:s lärar-d bevaras men utelämnas i spelet eftersom
+c:s facit redan förklarar sambandet. Se
+[Coulomb- och fältgranskning 2026-10-10](COULOMB_OCH_FALT_FYSIK1_2026-10-10.md).
+
+**Enheter:** N/C och V/m är likvärdiga. Kunskapsgymmets dimensionsjämförelse
+utvecklar C = A·s och V = J/C. Bevara prefix och avvisa fel dimension.
+`tools/elektriska-enheter.test.js` och det faktiska elevflödet i
+`tools/coulomb-falt-fy1-2026-10-10.browser.py` skyddar detta.
+Ledtrådar om ΣF = ma ska inte återinföras i rena E = F/q- eller U = Ed-frågor.
+
 **Miniräknare:** användarbeslut 2026-10-09: alltid tillåten i fysik, även på
 begreppskort. Återställ inte `miniräknare:false` med hänvisning till låg nivå.
 
