@@ -461,3 +461,7 @@ Pröva faktiskt elevens naturliga svar i `checkAnswer`, inte bara bankens eget f
 Delmängdsfrågor på ingångsnivå ska tydliggöra att tomma och hela mängden ingår. #1.565–567 (matf1) får konkreta mängder, ledtråd om med/inte med och konsekvent nivå 2. Ändra inte till propera eller icke-tomma delmängder av misstag. Analoger #1.169/#1.614/#1.784 är räknade med sina villkor.
 
 Regressioner: master `tools/felrapporter-2026-10-10.test.js`; konsument `tools/multipel.test.js` och `tools/felrapporter-2026-10-10.browser.py`. De faktiska fälten, ordningsoberoende rötter och LaTeX-korrigeringen kontrolleras utan XP/databasskrivningar. Ingen elevkontakt eller Supabase-statusändring ingår.
+
+### Uppföljning: fy1 #5.385 (2026-10-10 16:56)
+
+[Granskningslista och kommentarsförslag](FELRAPPORT_5_385_2026-10-10.md), med motsvarande JSON: #5.385 samt fem analoger #5.381/#5.382/#5.383/#5.384/#5.393 är granskade utan fel. Bollen vänder, så Δv är 50 − (−40) = 90 m/s och medelkraftens storlek 180 N. Behåll omvandlingarna 60 g → 0,060 kg och 30 ms → 0,030 s. Blanda inte ihop kraftens storlek med en tecknad komponent eller beräkna 50 − 40 vid riktningsbyte. Självrättningen godtar 180, 180 N, 180,0 N, 0,180 kN och 1.80e2 N; fel storlek/tecken avvisas. Inga innehålls- eller rättningsändringar behövs. Rörelsemängdstester 3/3 och faktiska svarsfält 26/26, 18 mobil-/datorvisningar utan KaTeX-fel; reproducerbar kontroll i konsumentens `tools/felrapport-5-385.browser.py`. Ingen elevinmatning finns i rapporten, så orsaken till den tidigare rapporteringen är okänd.

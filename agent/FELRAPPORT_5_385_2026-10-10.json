@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-10",
+  "reportedId": "5.385",
+  "course": "fy1",
+  "reviewed": [
+    "5.385",
+    "5.381",
+    "5.382",
+    "5.383",
+    "5.384",
+    "5.393"
+  ],
+  "changed": [],
+  "reviewedNoError": [
+    "5.385",
+    "5.381",
+    "5.382",
+    "5.383",
+    "5.384",
+    "5.393"
+  ],
+  "comment": "Granskad – inget fel: 180 N är korrekt. Bollen byter riktning, så hastighetsändringen är 50 − (−40) = 90 m/s. Medelkraften blir 0,060 · 90/0,030 = 180 N. Både 180 N och 0,180 kN godkänns.",
+  "verification": {
+    "regressionTestsPassed": 3,
+    "regressionTestsFailed": 0,
+    "browser": {
+      "checks": [
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "180",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "180 N",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "180,0 N",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "0,180 kN",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "1.80e2 N",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "-180 N",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "20 N",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "1800 N",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "0,180 N",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.385",
+          "i": 0,
+          "input": "179 N",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.381",
+          "i": 0,
+          "input": "-2.835",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.381",
+          "i": 0,
+          "input": "2.835",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.381",
+          "i": 1,
+          "input": "-51.63636363636363",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.381",
+          "i": 1,
+          "input": "51.63636363636363",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.382",
+          "i": 0,
+          "input": "0.011630769230769231",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.382",
+          "i": 0,
+          "input": "0.023261538461538462",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.382",
+          "i": 1,
+          "input": "0.02003076923076923",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.382",
+          "i": 1,
+          "input": "0.003230769230769231",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.383",
+          "i": 0,
+          "input": "8800.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.383",
+          "i": 0,
+          "input": "6200.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.384",
+          "i": 0,
+          "input": "14.499999999999998",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.384",
+          "i": 0,
+          "input": "1.45",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.384",
+          "i": 1,
+          "input": "7250.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.384",
+          "i": 1,
+          "input": "725.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "5.393",
+          "i": 0,
+          "input": "0.05",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "5.393",
+          "i": 0,
+          "input": "0.021428571428571425",
+          "want": false,
+          "actual": false
+        }
+      ],
+      "views": [
+        {
+          "id": "5.385",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.381a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.381b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.382a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.382b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.383",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.384a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.384b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.393",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.385",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.381a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.381b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.382a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.382b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.383",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.384a",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.384b",
+          "katexErrors": 0
+        },
+        {
+          "id": "5.393",
+          "katexErrors": 0
+        }
+      ],
+      "failures": []
+    }
+  },
+  "limitations": "Ingen elevinmatning är angiven. Supabase-status och kommentarer är inte ändrade. Bankerna är oförändrade."
+}
