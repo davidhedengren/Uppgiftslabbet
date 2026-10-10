@@ -407,3 +407,11 @@ Med neutrala atommassor: beta-minus och elektroninfångning använder masskillna
 En ändring av atomnummer är nivå 1 (9.248, 9.314, 9.315, 9.317, 9.318, 9.319). Dotterkärnans neutronantal kräver också A−Z och är nivå 2 (9.316). Reaktionsformler och fria förklaringar kan behållas som läraruppgifter utan spelkort (9.74, 9.77, KG-FY1-BM-02/03/04, KG-FY1-BP-02/03). Ledtråden ska gälla aktuell betatyp, inte alfa, friktion eller ett allmänt stegupplägg.
 
 Tester: tools/fysik1-sonderfall.test.js och konsumentens tools/sonderfall-fy1-2026-10-10.browser.py. Ett felaktigt escape i beta-kommandot fångades av både kontrollteckenregression och faktisk KaTeX-visning, och rättades före leverans.
+
+## FP20 – fission: enheter, massprecision och självständiga energikedjor (2026-10-10)
+
+Alla 26 uppgifter manuellt granskade: [FISSION_FYSIK1_2026-10-10.md](FISSION_FYSIK1_2026-10-10.md) och JSON med alla ID, ändrade fält och kommentarer. Kapitelstatus 384 av 450; hela banken och andra varvet pågår.
+
+9.16b visade km fast rättningen väntade mil. 9.412 söker massflöde och rättas i kg/s. Skilj massan som klyvs från massan som omvandlas till energi (9.104, 9.199, 9.200, 9.407, 9.409). Behåll atommassornas decimaler fram till massdefekten; allmän procenttolerans får inte dölja det sökta resultatet (9.401–9.403). 9.402 får märkta fält för både neutronantal och energi; antalet är exakt. 9.403 visar 232,79 u och tolerans 0,005 u. Hela kollisioner/markytor avrundas uppåt och rättas exakt (9.404, 9.406b).
+
+Fristående kort räknar med sina egna givna mellanvärden (9.9, 9.16, 9.42, 9.407, 9.408, 9.410, 9.411), inte förälderns osynliga fullprecision. Varje kort har bara nödvändiga data. El och värmeeffekt skiljs åt. Formelrader delas för mobil utan att nödvändiga beräkningar hoppas över. SVG 9.70:s axel anger bindningsenergi per nukleon, inte total energi. Tester: tools/fysik1-fission.test.js samt konsumentens tools/fission-fy1-2026-10-10.browser.py.

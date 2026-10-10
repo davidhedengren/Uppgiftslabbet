@@ -1,0 +1,591 @@
+{
+  "baseline": "6fa4d90",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "areas": [
+      "fission"
+    ],
+    "ids": [
+      "9.9",
+      "9.16",
+      "9.24",
+      "9.42",
+      "9.70",
+      "9.99",
+      "9.199",
+      "9.102",
+      "9.103",
+      "9.104",
+      "9.200",
+      "9.201",
+      "9.250",
+      "9.401",
+      "9.402",
+      "9.403",
+      "9.404",
+      "9.405",
+      "9.406",
+      "9.407",
+      "9.408",
+      "9.409",
+      "9.410",
+      "9.411",
+      "9.412",
+      "9.413"
+    ]
+  },
+  "reviews": {
+    "9.9": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Omvandlingsfaktor är given. b/c använder sina egna 3,20·10⁻¹¹ J; föräldern räknar med full precision. Relevant ledtråd och nivå 2/1/1.",
+      "suggestedComment": "Omvandlingsfaktor är given. b/c använder sina egna 3,20·10⁻¹¹ J; föräldern räknar med full precision. Relevant ledtråd och nivå 2/1/1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.16": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "b hade slutsvar i km men rättning i mil. Nu anges mil genomgående. Fristående b använder egna 2560 liter. Rutin nivå 2/1/1 i stället för A/4.",
+      "suggestedComment": "b hade slutsvar i km men rättning i mil. Nu anges mil genomgående. Fristående b använder egna 2560 liter. Rutin nivå 2/1/1 i stället för A/4.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.24": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Två numeriska heltal kan nu rättas och varje kort har hela reaktionen. Enkel bevarandelag nivå 1; förklaring bevarad hos läraren.",
+      "suggestedComment": "Två numeriska heltal kan nu rättas och varje kort har hela reaktionen. Enkel bevarandelag nivå 1; förklaring bevarad hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.42": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "comment": "El- och värmeeffekt skiljs tydligt. Kort b/c har egna givna mellanvärden med egna mål. Facit visar omvandlingen till W och ton.",
+      "suggestedComment": "El- och värmeeffekt skiljs tydligt. Kort b/c har egna givna mellanvärden med egna mål. Facit visar omvandlingen till W och ton.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.99": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.102": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.103": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.104": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.199": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.200": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.201": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.250": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Fission och alternativ var korrekta. Ledtråden kopplas nu direkt till frågans begrepp.",
+      "suggestedComment": "Fission och alternativ var korrekta. Ledtråden kopplas nu direkt till frågans begrepp.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.401": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.402": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Både efterfrågat neutronantal och energi får egna märkta fält. Fullprecision i produktmassan och massdefekten visas innan Q.",
+      "suggestedComment": "Både efterfrågat neutronantal och energi får egna märkta fält. Fullprecision i produktmassan och massdefekten visas innan Q.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.403": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.404": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.405": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.406": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Hela markytor och minst 1 kg uttrycks tydligt så fyra är entydigt. Densitetsomvandling och uranandel visas; b får inga oanvända markdata.",
+      "suggestedComment": "Hela markytor och minst 1 kg uttrycks tydligt så fyra är entydigt. Densitetsomvandling och uranandel visas; b får inga oanvända markdata.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.407": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Målet använder hela givna atommassan, inte avkortade 235,04 u. b har bara eget antal och energi per klyvning. Inga dolda tidigare värden.",
+      "suggestedComment": "Målet använder hela givna atommassan, inte avkortade 235,04 u. b har bara eget antal och energi per klyvning. Inga dolda tidigare värden.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.408": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Alla kort använder sina givna 7,50·10¹⁸, 2,92 mg och 92,2 kg, med egna mål. Värmeeffekt, antal och massor skiljs tydligt.",
+      "suggestedComment": "Alla kort använder sina givna 7,50·10¹⁸, 2,92 mg och 92,2 kg, med egna mål. Värmeeffekt, antal och massor skiljs tydligt.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.409": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Felaktig historisk uppgift om första bomben/TNT-ekvivalens ersätts av given energimodell. Klyvd massa skiljs från massdefekt. Båda fulla energi-/kg-omvandlingarna visas.",
+      "suggestedComment": "Felaktig historisk uppgift om första bomben/TNT-ekvivalens ersätts av given energimodell. Klyvd massa skiljs från massdefekt. Båda fulla energi-/kg-omvandlingarna visas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.410": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "a/b behöver inte kärnmassor, c inte villa-/årdata, d inte atomdata. c/d använder egna avrundade mål. Fullprecision i lärarkedjan; vardagligt språk för spillvärme.",
+      "suggestedComment": "a/b behöver inte kärnmassor, c inte villa-/årdata, d inte atomdata. c/d använder egna avrundade mål. Fullprecision i lärarkedjan; vardagligt språk för spillvärme.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.411": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Reservmängden är given modell, inte dateringslös sanning om världens brytvärda uran. c använder eget 2,5·10²¹ J. Korta fristående kort med fulla mellanled.",
+      "suggestedComment": "Reservmängden är given modell, inte dateringslös sanning om världens brytvärda uran. c använder eget 2,5·10²¹ J. Korta fristående kort med fulla mellanled.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.412": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.413": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.70": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Korrekt bindningskurva granskas visuellt separat. Känd avläsning och energiförklaring E/nivå 2; inga numeriska svar som ersätter fri argumentation.",
+      "suggestedComment": "Korrekt bindningskurva granskas visuellt separat. Känd avläsning och energiförklaring E/nivå 2; inga numeriska svar som ersätter fri argumentation.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    }
+  },
+  "verification": {
+    "independentPhysicsTests": 2,
+    "masterTests": 283,
+    "actualGrading": {
+      "numeric": 213,
+      "alternatives": 9,
+      "failures": []
+    },
+    "render": {
+      "parents": 26,
+      "numericContractChecks": 82,
+      "cards": 48,
+      "views": 192,
+      "failures": []
+    },
+    "svg": "9.70 visuellt granskad. Axeln anger energi per nukleon; läsbara graderingar. Slutlig SVG-kontroll i Chromium utan anmärkning.",
+    "wholeBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "fristående mellanvärden": [
+      "9.9",
+      "9.16",
+      "9.42",
+      "9.407",
+      "9.408",
+      "9.410",
+      "9.411"
+    ],
+    "beräkning med massdefekt och full precision": [
+      "9.401",
+      "9.402",
+      "9.403",
+      "9.407",
+      "9.409",
+      "9.410"
+    ],
+    "tydlig sökt enhet": [
+      "9.16",
+      "9.42",
+      "9.103",
+      "9.104",
+      "9.201",
+      "9.412"
+    ],
+    "nivå efter antal samband": [
+      "9.9",
+      "9.24",
+      "9.99",
+      "9.102",
+      "9.103",
+      "9.406",
+      "9.412"
+    ]
+  }
+}
