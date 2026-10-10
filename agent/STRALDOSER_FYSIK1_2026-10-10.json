@@ -1,0 +1,1533 @@
+{
+  "baseline": "9466ba8",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "area": "straldoser",
+    "ids": [
+      "9.152",
+      "9.153",
+      "9.154",
+      "9.155",
+      "9.156",
+      "9.157",
+      "9.158",
+      "9.159",
+      "9.160",
+      "9.161",
+      "9.14",
+      "9.162",
+      "9.163",
+      "9.164",
+      "9.15",
+      "9.165",
+      "9.166",
+      "9.44",
+      "9.167",
+      "9.168",
+      "9.169",
+      "9.89",
+      "9.170",
+      "9.171",
+      "9.90",
+      "9.172",
+      "9.173",
+      "9.174",
+      "9.91",
+      "9.175",
+      "9.176",
+      "9.177",
+      "9.178",
+      "9.179",
+      "9.180",
+      "9.181",
+      "9.94",
+      "9.182",
+      "9.95",
+      "9.185",
+      "9.186",
+      "9.96",
+      "9.188",
+      "9.189",
+      "9.97",
+      "9.191",
+      "9.98",
+      "9.192",
+      "9.194",
+      "9.258",
+      "9.259",
+      "9.362",
+      "9.363",
+      "9.364",
+      "9.365",
+      "9.366",
+      "9.367",
+      "9.368",
+      "9.369",
+      "9.370",
+      "9.371",
+      "9.372",
+      "9.373",
+      "9.374",
+      "9.375",
+      "9.376",
+      "9.377",
+      "9.378",
+      "9.379",
+      "9.380",
+      "9.381",
+      "9.382",
+      "9.383",
+      "9.384",
+      "9.385",
+      "9.386",
+      "9.387"
+    ]
+  },
+  "reviews": {
+    "9.152": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.173": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.153": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.168": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.154": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.362": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.157": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.158": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.159": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.160": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.170": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.172": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.174": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.176": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.177": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.178": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tidigare identisk med 9.159. Två undersökningar i samma vävnad ger en enkel summering före viktningen och tydligare variation. Rätt svar 2,5 mSv.",
+      "suggestedComment": "Tidigare identisk med 9.159. Två undersökningar i samma vävnad ger en enkel summering före viktningen och tydligare variation. Rätt svar 2,5 mSv.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.180": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.181": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.182": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.161": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.162": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.165": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.179": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.259": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.166": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.155": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.156": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.163": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.164": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.167": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.258": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "suggestedComment": "Definition, korrekt alternativ och nivå 1 kontrollerade. Sakbegreppen behålls och förklaras med enkelt språk; relevant ledtråd.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.169": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.171": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.175": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.185": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.188": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.191": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.194": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.192": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.186": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.189": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.15": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tidigare summerades lungdos och helkroppsdos felaktigt. Nu gäller båda bidrag samma lungvävnad. a har två ordnade fält, b egna värden och c begriplig förklaring; nivå 1–2.",
+      "suggestedComment": "Tidigare summerades lungdos och helkroppsdos felaktigt. Nu gäller båda bidrag samma lungvävnad. a har två ordnade fält, b egna värden och c begriplig förklaring; nivå 1–2.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.89": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två olika frågor skiljs i a/b och spelkort. Totalsumma avser samma vävnad. Det största absoluta bidraget förväxlas inte med bidrag per absorberad dos.",
+      "suggestedComment": "Två olika frågor skiljs i a/b och spelkort. Totalsumma avser samma vävnad. Det största absoluta bidraget förväxlas inte med bidrag per absorberad dos.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.44": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Rimlig omvandling, rätt enheter och självständiga numeriska kort. Onödigt jämnt fördelad över kroppen borttaget.",
+      "suggestedComment": "Rimlig omvandling, rätt enheter och självständiga numeriska kort. Onödigt jämnt fördelad över kroppen borttaget.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.90": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Alla tabellstorheter kan rättas i fristående kort med rätt enheter. Direkt multiplication/division är nivå 1.",
+      "suggestedComment": "Alla tabellstorheter kan rättas i fristående kort med rätt enheter. Direkt multiplication/division är nivå 1.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.95": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "b behöver inte data från a. Begreppet förklaras med kort vardagligt språk och korrekt energi-per-kg-resonemang; fria lärarsvar bevaras.",
+      "suggestedComment": "b behöver inte data från a. Begreppet förklaras med kort vardagligt språk och korrekt energi-per-kg-resonemang; fria lärarsvar bevaras.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.97": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Irrelevant ledtråd om arbete/friktion borttagen. a:s numeriska mål saknades. b är fristående omvandling med sitt givna värde; båda nivå 1.",
+      "suggestedComment": "Irrelevant ledtråd om arbete/friktion borttagen. a:s numeriska mål saknades. b är fristående omvandling med sitt givna värde; båda nivå 1.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.94": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Sverige-påstående ersätts med given jämförelsedos. Saknade numeriska mål fylls; kort har egen dygnsdos. Lärarens jämförelse behålls men spelkortet söker tydligt antal dygn.",
+      "suggestedComment": "Sverige-påstående ersätts med given jämförelsedos. Saknade numeriska mål fylls; kort har egen dygnsdos. Lärarens jämförelse behålls men spelkortet söker tydligt antal dygn.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.98": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Sverige-påstående ersätts med given jämförelsedos. Saknade numeriska mål fylls; kort har egen dygnsdos. Lärarens jämförelse behålls men spelkortet söker tydligt antal dygn.",
+      "suggestedComment": "Sverige-påstående ersätts med given jämförelsedos. Saknade numeriska mål fylls; kort har egen dygnsdos. Lärarens jämförelse behålls men spelkortet söker tydligt antal dygn.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.14": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.91": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "a saknade numeriskt mål. c kunde inte avgöra billigast utan kostnadsdata; ersatt med ett tydligt strålskyddsresonemang. Rätt avståndsmodell och egen data i varje kort.",
+      "suggestedComment": "a saknade numeriskt mål. c kunde inte avgöra billigast utan kostnadsdata; ersatt med ett tydligt strålskyddsresonemang. Rätt avståndsmodell och egen data i varje kort.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.96": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Alla tre kort är självrättande och fristående. Figuren har en jämnt graderad avståndsskala från källan; gamla missvisande bågar ersatta. Avståndslagen ger 50 och 12,5 µSv/h samt 5 m.",
+      "suggestedComment": "Alla tre kort är självrättande och fristående. Figuren har en jämnt graderad avståndsskala från källan; gamla missvisande bågar ersatta. Avståndslagen ger 50 och 12,5 µSv/h samt 5 m.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.363": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.364": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.365": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "b har endast dos och värmekapacitet, utan fotondata från a. Temperaturändring godtar samma tal i K eller °C utan 273-omvandling.",
+      "suggestedComment": "b har endast dos och värmekapacitet, utan fotondata från a. Temperaturändring godtar samma tal i K eller °C utan 273-omvandling.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.366": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.369": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.371": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "a har bara dos och viktfaktor, b sin egen absorberade dos. Toleransen snävas från fem till rimliga få procent; alla energi-/massomvandlingar visas.",
+      "suggestedComment": "a har bara dos och viktfaktor, b sin egen absorberade dos. Toleransen snävas från fem till rimliga få procent; alla energi-/massomvandlingar visas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.372": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.376": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.377": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.380": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Föräldern använder full dosprecision, b-kortets egna 14 Gy ger 2,1 J. Dolda föräldramål ersätts av korrekt eget mål. Båda direkta samband nivå 1.",
+      "suggestedComment": "Föräldern använder full dosprecision, b-kortets egna 14 Gy ger 2,1 J. Dolda föräldramål ersätts av korrekt eget mål. Båda direkta samband nivå 1.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.381": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.383": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.367": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Dosmodellen avser en angiven vävnadsmassa. Tidigare lungdos räknades på helkroppsmassan. Bara modellisotopens egna sönderfall ingår; konstant mängd uttrycks där radon kräver tillförsel. Facit visar hela omvända energi–aktivitetskedjan.",
+      "suggestedComment": "Dosmodellen avser en angiven vävnadsmassa. Tidigare lungdos räknades på helkroppsmassan. Bara modellisotopens egna sönderfall ingår; konstant mängd uttrycks där radon kräver tillförsel. Facit visar hela omvända energi–aktivitetskedjan.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.384": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Dosmodellen avser en angiven vävnadsmassa. Tidigare lungdos räknades på helkroppsmassan. Bara modellisotopens egna sönderfall ingår; konstant mängd uttrycks där radon kräver tillförsel. Facit visar hela omvända energi–aktivitetskedjan.",
+      "suggestedComment": "Dosmodellen avser en angiven vävnadsmassa. Tidigare lungdos räknades på helkroppsmassan. Bara modellisotopens egna sönderfall ingår; konstant mängd uttrycks där radon kräver tillförsel. Facit visar hela omvända energi–aktivitetskedjan.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.368": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.379": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.387": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.370": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Sönderfallsantal måste summeras när dosraten avtar. Facit räknar dos per sönderfall utan grov mellanavrundning och visar kvarvarande andel innan tiden löses. A/nivå 5 för omvänd kumulativ modell.",
+      "suggestedComment": "Sönderfallsantal måste summeras när dosraten avtar. Facit räknar dos per sönderfall utan grov mellanavrundning och visar kvarvarande andel innan tiden löses. A/nivå 5 för omvänd kumulativ modell.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.373": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Kort a använder bara sönderfallsdata; b/c använder egna givna antal/energi. Föräldern använder full precision. Alla mellanled förklaras; nivå 4/2/2.",
+      "suggestedComment": "Kort a använder bara sönderfallsdata; b/c använder egna givna antal/energi. Föräldern använder full precision. Alla mellanled förklaras; nivå 4/2/2.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.374": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "A-markering för rutinuppgifter ersätts av E/1 och C/3. Ekvivalent dos kopplas tydligt till viktfaktor och avståndsmodellen anges utan onödiga ord.",
+      "suggestedComment": "A-markering för rutinuppgifter ersätts av E/1 och C/3. Ekvivalent dos kopplas tydligt till viktfaktor och avståndsmodellen anges utan onödiga ord.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.375": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Masskort har endast atom-/halveringsdata; doskort bara energi, tid, aktivitet och vävnadsmassa. Facit visar energi och dos, med korrekta prefix och absorption.",
+      "suggestedComment": "Masskort har endast atom-/halveringsdata; doskort bara energi, tid, aktivitet och vävnadsmassa. Facit visar energi och dos, med korrekta prefix och absorption.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.378": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Masskort har endast atom-/halveringsdata; doskort bara energi, tid, aktivitet och vävnadsmassa. Facit visar energi och dos, med korrekta prefix och absorption.",
+      "suggestedComment": "Masskort har endast atom-/halveringsdata; doskort bara energi, tid, aktivitet och vävnadsmassa. Facit visar energi och dos, med korrekta prefix och absorption.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.382": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.385": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Kort b/c använder egna givna 17,1 Gy och 0,257 J, inte förälderns dolda fullprecisionsresultat. Energiomvandling, effekt och tid förklaras.",
+      "suggestedComment": "Kort b/c använder egna givna 17,1 Gy och 0,257 J, inte förälderns dolda fullprecisionsresultat. Energiomvandling, effekt och tid förklaras.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    },
+    "9.386": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Genomsnittlig energi per sönderfall anges utan att göra fasta betaenergier till naturfakta. a saknar onödig kroppsmassa/tid och b använder eget 6,1 µW. Nödvändiga mellanled visas.",
+      "suggestedComment": "Genomsnittlig energi per sönderfall anges utan att göra fasta betaenergier till naturfakta. a saknar onödig kroppsmassa/tid och b använder eget 6,1 µW. Nödvändiga mellanled visas.",
+      "method": "Manuell genomläsning och självständig fysikberäkning; separata numeriska modeller, faktisk självrättning och mobil-/datorvisning."
+    }
+  },
+  "verification": {
+    "independentPhysics": "Alla numeriska föräldrasvar och 10 delkort med egna givna mellanvärden: 3 godkända regressionstester.",
+    "actualAppGrading": {
+      "numeric": 493,
+      "alternatives": 30,
+      "failures": 0
+    },
+    "render": {
+      "parents": 77,
+      "cards": 106,
+      "views": 424,
+      "numericContracts": 194,
+      "initialOverflowCases": 2,
+      "finalAffectedCards": 6,
+      "finalAffectedViews": 24,
+      "failuresAfterCorrections": 0
+    },
+    "svg": {
+      "figures": 1,
+      "visualReview": "9.96: jämnt graderad avståndsskala från källan. Gamla missvisande bågar ersatta. EDGE_CLIPPING avser avsiktlig bakgrundsrektangel vid viewBox-kanten; inga etiketter eller objekt klipps."
+    },
+    "wholeBankValidator": {
+      "errors": 0,
+      "warnings": 8,
+      "info": 772
+    },
+    "appTests": 106,
+    "masterTests": {
+      "fullRun": {
+        "tests": 275,
+        "pass": 274,
+        "fail": 1
+      },
+      "correctedFailure": "9.385b behövde facit-v2-omslag. Därefter 10/10 godkända i berörda prosa- och dosregressioner. Övriga 274 tester hade redan godkänts."
+    },
+    "wholePhysicsBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "enkla nivåer": [
+      "9.153",
+      "9.154",
+      "9.168",
+      "9.170",
+      "9.176",
+      "9.179",
+      "9.259"
+    ],
+    "fristående avrundade kort": [
+      "9.94",
+      "9.97",
+      "9.98",
+      "9.373",
+      "9.380",
+      "9.385",
+      "9.386"
+    ],
+    "energi till dos med mellanled": [
+      "9.365",
+      "9.366",
+      "9.368",
+      "9.369",
+      "9.371",
+      "9.375",
+      "9.378",
+      "9.379",
+      "9.387"
+    ],
+    "samma bestrålade vävnad och dosmodell": [
+      "9.15",
+      "9.89",
+      "9.178",
+      "9.186",
+      "9.189",
+      "9.367",
+      "9.384"
+    ],
+    "variation i stället för talbyten": [
+      "9.174",
+      "9.176",
+      "9.178",
+      "9.180",
+      "9.182",
+      "9.188",
+      "9.194"
+    ]
+  }
+}
