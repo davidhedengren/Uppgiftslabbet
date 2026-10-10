@@ -1,0 +1,416 @@
+{
+  "baseline": "f9ea870",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "areas": [
+      "fusion"
+    ],
+    "ids": [
+      "9.46",
+      "9.53",
+      "9.71",
+      "9.287",
+      "9.288",
+      "9.289",
+      "9.290",
+      "9.291",
+      "9.292",
+      "9.293",
+      "9.294",
+      "9.295",
+      "9.414",
+      "9.415",
+      "9.416",
+      "9.417",
+      "9.418",
+      "9.419",
+      "9.420"
+    ]
+  },
+  "reviews": {
+    "9.46": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "c och årslängd ges i uppgiften. Konstant effekt anges som modell. Hela facit visas utan sönderklippta mattefragment; egna b/c-värden styr kortens mål. Nivå 2/1/2.",
+      "suggestedComment": "c och årslängd ges i uppgiften. Konstant effekt anges som modell. Hela facit visas utan sönderklippta mattefragment; egna b/c-värden styr kortens mål. Nivå 2/1/2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.53": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Separata kort får bara givna data som behövs. Facit visar massan före och skillnaden utan tidig avrundning. Direkt energiomvandling nivå 1.",
+      "suggestedComment": "Separata kort får bara givna data som behövs. Facit visar massan före och skillnaden utan tidig avrundning. Direkt energiomvandling nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.71": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två märkta fält för massminskning/energi. Bränsleblandningen är given; tidigare oklart kg bränsle. Alla tre kort självrättas självständigt. Nivå 3, inte 5.",
+      "suggestedComment": "Två märkta fält för massminskning/energi. Bränsleblandningen är given; tidigare oklart kg bränsle. Alla tre kort självrättas självständigt. Nivå 3, inte 5.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.287": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: tydlig fusionsdefinition, korrekt alternativ och nivå 1.",
+      "suggestedComment": "Granskad – inget fel: tydlig fusionsdefinition, korrekt alternativ och nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.288": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "comment": "Felaktig universell temperaturgräns borttagen. Solens fusion sker vid lägre temperatur än D–T-reaktorer. Enkelt språk utan repulsion eller absolut klassisk barriär.",
+      "suggestedComment": "Felaktig universell temperaturgräns borttagen. Solens fusion sker vid lägre temperatur än D–T-reaktorer. Enkelt språk utan repulsion eller absolut klassisk barriär.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.289": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.290": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.291": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.292": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.293": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Korrekt bindningsförklaring. Känd jämförelse nivå 2, inte 3.",
+      "suggestedComment": "Korrekt bindningsförklaring. Känd jämförelse nivå 2, inte 3.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.294": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.295": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad",
+        "s",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Ogrundad generell garanti om kortlivat avfall borttagen. Frågan gäller tydligt tillgången på deuterium, inte även tritium. Enkel nivå 1.",
+      "suggestedComment": "Ogrundad generell garanti om kortlivat avfall borttagen. Frågan gäller tydligt tillgången på deuterium, inte även tritium. Enkel nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.414": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Råa LaTeX-komman i vanlig text borttagna. Varje kort har bara sina egna tre massor. Gamma har ingen vilomassa; fulla mellanled visas.",
+      "suggestedComment": "Råa LaTeX-komman i vanlig text borttagna. Varje kort har bara sina egna tre massor. Gamma har ingen vilomassa; fulla mellanled visas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.415": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Väteatom i het joniserad sol ersatt av proton. Farten är den som motsvarar medelenergin, inte medelfarten. b räknar med egna 4,1·10⁻¹⁶ J.",
+      "suggestedComment": "Väteatom i het joniserad sol ersatt av proton. Farten är den som motsvarar medelenergin, inte medelfarten. b räknar med egna 4,1·10⁻¹⁶ J.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.416": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "suggestedComment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.417": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "suggestedComment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.418": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "suggestedComment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.419": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "suggestedComment": "Fulla mass-/energi-/antal-/massled visas. Fristående kort har bara relevanta givna data och räknar med egna mellanvärden. Frigjord energi skiljs från el och verkningsgrad; massflöde i kg/s när det efterfrågas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.420": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Tidigare avrundat fullprecisionsmål korrigerat. b räknar med sitt eget 1,4·10¹⁷ kg och är nivå 1; inga onödiga soldata på kort a.",
+      "suggestedComment": "Tidigare avrundat fullprecisionsmål korrigerat. b räknar med sitt eget 1,4·10¹⁷ kg och är nivå 1; inga onödiga soldata på kort a.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    }
+  },
+  "verification": {
+    "independentPhysicsTests": 2,
+    "masterTests": 285,
+    "actualGrading": {
+      "numeric": 174,
+      "alternatives": 12,
+      "failures": []
+    },
+    "render": {
+      "parents": 19,
+      "numericContractChecks": 68,
+      "cards": 37,
+      "views": 148,
+      "failures": []
+    },
+    "svg": "Ny 9.71 visuellt granskad: D 1p/1n, T 1p/2n, He 2p/2n plus neutron. EDGE_CLIPPING avser avsiktlig bakgrundsrektangel. Inga etiketter klipps.",
+    "wholeBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "egna mellanvärden": [
+      "9.46",
+      "9.71",
+      "9.415",
+      "9.416",
+      "9.417",
+      "9.418",
+      "9.419",
+      "9.420"
+    ],
+    "pedagogiska massenergiantal": [
+      "9.53",
+      "9.71",
+      "9.291",
+      "9.414",
+      "9.416",
+      "9.417",
+      "9.418",
+      "9.419"
+    ],
+    "nivå efter samband": [
+      "9.46",
+      "9.53",
+      "9.289",
+      "9.292",
+      "9.293",
+      "9.295",
+      "9.415",
+      "9.420"
+    ]
+  }
+}

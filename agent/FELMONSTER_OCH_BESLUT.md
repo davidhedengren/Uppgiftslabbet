@@ -415,3 +415,13 @@ Alla 26 uppgifter manuellt granskade: [FISSION_FYSIK1_2026-10-10.md](FISSION_FYS
 9.16b visade km fast rättningen väntade mil. 9.412 söker massflöde och rättas i kg/s. Skilj massan som klyvs från massan som omvandlas till energi (9.104, 9.199, 9.200, 9.407, 9.409). Behåll atommassornas decimaler fram till massdefekten; allmän procenttolerans får inte dölja det sökta resultatet (9.401–9.403). 9.402 får märkta fält för både neutronantal och energi; antalet är exakt. 9.403 visar 232,79 u och tolerans 0,005 u. Hela kollisioner/markytor avrundas uppåt och rättas exakt (9.404, 9.406b).
 
 Fristående kort räknar med sina egna givna mellanvärden (9.9, 9.16, 9.42, 9.407, 9.408, 9.410, 9.411), inte förälderns osynliga fullprecision. Varje kort har bara nödvändiga data. El och värmeeffekt skiljs åt. Formelrader delas för mobil utan att nödvändiga beräkningar hoppas över. SVG 9.70:s axel anger bindningsenergi per nukleon, inte total energi. Tester: tools/fysik1-fission.test.js samt konsumentens tools/fission-fy1-2026-10-10.browser.py.
+
+## FP21 – fusion: bränsleblandning, medelenergi och kortdata (2026-10-10)
+
+Alla 19 uppgifter manuellt granskade: [FUSION_FYSIK1_2026-10-10.md](FUSION_FYSIK1_2026-10-10.md) och motsvarande JSON. Kapitelstatus 403 av 450.
+
+Påstå inte att all fusion kräver över hundra miljoner kelvin: solens fusion sker vid lägre temperatur. 9.288 gäller hög temperatur i en D–T-reaktor och den ökade chansen att kärnorna kommer nära. 9.295 skiljer tillgången på deuterium i vatten från tritium som behöver framställas; ingen generell avfallsgaranti. 9.415 avser fria protoner, inte neutrala atomer i solens inre. Farten som motsvarar genomsnittlig rörelseenergi är inte medelfarten.
+
+9.71 anger lika antal D och T och fullständig reaktion; ett kilo bränsle utan blandning är otydligt. Två märkta fält rättar massminskning och energi. Figurens nukleoner bevaras: två protoner och tre neutroner. Frigjord energi får inte jämställas med el utan verkningsgrad (9.416–9.418); massflöde anges i kg/s. Kort räknar med egna givna mellanvärden (9.46, 9.71, 9.415–9.420). Råa LaTeX-komman får inte ligga i vanlig text; procenttecken måste escape:as i matte.
+
+Lösningar visar massor före/efter, massminskning, energi per reaktion, antal och förbrukad massa där sambanden behövs (9.53, 9.71, 9.414, 9.416–9.419). Undvik tidig massavrundning. 9.290 kräver sex decimaler och har toleransen 0,0000005 u. Tester: tools/fysik1-fusion.test.js och konsumentens tools/fusion-fy1-2026-10-10.browser.py.
