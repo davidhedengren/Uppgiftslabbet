@@ -1,0 +1,826 @@
+{
+  "baseline": "8b95989",
+  "scope": {
+    "course": "fy1",
+    "chapter": 2,
+    "areas": [
+      "enheter"
+    ],
+    "ids": [
+      "2.1",
+      "2.204",
+      "2.5",
+      "2.9",
+      "2.205",
+      "2.10",
+      "2.206",
+      "2.11",
+      "2.12",
+      "2.207",
+      "2.19",
+      "2.208",
+      "2.21",
+      "2.209",
+      "2.22",
+      "2.210",
+      "2.29",
+      "2.32",
+      "2.211",
+      "2.33",
+      "2.212",
+      "2.34",
+      "2.213",
+      "2.35",
+      "2.36",
+      "2.214",
+      "2.57",
+      "2.215",
+      "2.58",
+      "2.59",
+      "2.216",
+      "2.60",
+      "2.217",
+      "2.61",
+      "2.62",
+      "2.218",
+      "2.63",
+      "2.219",
+      "2.64",
+      "2.220",
+      "2.65",
+      "2.66",
+      "2.221",
+      "2.67",
+      "2.222",
+      "2.68",
+      "2.69",
+      "2.223",
+      "2.70",
+      "2.224",
+      "2.71",
+      "2.72",
+      "2.225",
+      "2.73",
+      "2.226",
+      "2.74",
+      "2.75",
+      "2.227",
+      "2.76"
+    ]
+  },
+  "reviews": {
+    "2.1": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.204": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.5": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.9": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.205": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.10": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.206": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.11": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "tolerans"
+      ],
+      "comment": "Ovidkommande jorddiameter/avstånd borttaget på respektive kort. Skalan räknas från egna givna soldiametrar; rimligt avrundningsintervall, nivå 2/2/3.",
+      "suggestedComment": "Ovidkommande jorddiameter/avstånd borttaget på respektive kort. Skalan räknas från egna givna soldiametrar; rimligt avrundningsintervall, nivå 2/2/3.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.12": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "tolerans"
+      ],
+      "comment": "b får eget givna mellanvärde 19,8 bildpunkter/mm och motsvarande 50,5 µm; lärarens kedja behåller 50,6 µm från full precision. Överflödiga skärmdata borttagna på b. Avrundningsintervallet fungerar.",
+      "suggestedComment": "b får eget givna mellanvärde 19,8 bildpunkter/mm och motsvarande 50,5 µm; lärarens kedja behåller 50,6 µm från full precision. Överflödiga skärmdata borttagna på b. Avrundningsintervallet fungerar.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.207": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.19": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.208": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "comment": "En enda direkt omvandling av km/h till m/s är nivå 1, som liknande 2.68. Facit 17,5 m/s och tolerans 0,05 korrekta.",
+      "suggestedComment": "En enda direkt omvandling av km/h till m/s är nivå 1, som liknande 2.68. Facit 17,5 m/s och tolerans 0,05 korrekta.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.21": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.209": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.22": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.210": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.29": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "spelDelar",
+        "tolerans"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.32": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.211": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.33": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.212": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.34": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Korrekt förklaring: areafaktor 100² ger 7500 cm². Känd areaomvandling med kort motivering är nivå 2, inte 3.",
+      "suggestedComment": "Korrekt förklaring: areafaktor 100² ger 7500 cm². Känd areaomvandling med kort motivering är nivå 2, inte 3.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.213": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.35": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Arealjämförelsen är redan tydlig. Överflödig text om överlappning och spill borttagen; a har inte planmåtten, b får given arkarea. Föreskriven heltalsavrundning bevarad.",
+      "suggestedComment": "Arealjämförelsen är redan tydlig. Överflödig text om överlappning och spill borttagen; a har inte planmåtten, b får given arkarea. Föreskriven heltalsavrundning bevarad.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.36": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Tre självständiga enkla kort med full energi-/volymberäkning. Fri lärarjämförelse bevaras; onödiga kostnads-/klimatförbehåll ersätts av kort distinktion mellan tillförd energi och arbete.",
+      "suggestedComment": "Tre självständiga enkla kort med full energi-/volymberäkning. Fri lärarjämförelse bevaras; onödiga kostnads-/klimatförbehåll ersätts av kort distinktion mellan tillförd energi och arbete.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.214": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "tolerans"
+      ],
+      "comment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "suggestedComment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.57": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.215": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.58": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.59": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "tolerans"
+      ],
+      "comment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "suggestedComment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.216": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.60": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.217": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.61": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.62": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.218": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.63": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "s",
+        "t"
+      ],
+      "comment": "Formuleringarna om geometrisk likformighet, knäckning och hållfasthet förenklade. g ges; mass-/area-/kraftkvoter visas stegvis utan numrerad steglista. Fysikmodell och fri resonemangsuppgift bevarade, nivå 4/C.",
+      "suggestedComment": "Formuleringarna om geometrisk likformighet, knäckning och hållfasthet förenklade. g ges; mass-/area-/kraftkvoter visas stegvis utan numrerad steglista. Fysikmodell och fri resonemangsuppgift bevarade, nivå 4/C.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.219": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "tolerans"
+      ],
+      "comment": "Korrekt cirkelarea; tydligare mobilrader och avrundningsintervall i stället för krav på exakt facittal.",
+      "suggestedComment": "Korrekt cirkelarea; tydligare mobilrader och avrundningsintervall i stället för krav på exakt facittal.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.64": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.220": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.65": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.66": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "t"
+      ],
+      "comment": "Ampere är en SI-grundenhet, men volt och ohm är härledda enheter. Felaktig gemensam beteckning grundenhet rättad utan extra teori i frågan.",
+      "suggestedComment": "Ampere är en SI-grundenhet, men volt och ohm är härledda enheter. Felaktig gemensam beteckning grundenhet rättad utan extra teori i frågan.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.221": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "tolerans"
+      ],
+      "comment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "suggestedComment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.67": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.222": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "tolerans"
+      ],
+      "comment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "suggestedComment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.68": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "spelDelar",
+        "tolerans"
+      ],
+      "comment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "suggestedComment": "Exakt matchning av avrundat facit ersatt av halva avrundningssteget. Rätt slutsvar och korrekt extra precision godtas; angränsande felaktigt avrundat svar avvisas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.69": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.223": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.70": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.224": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.71": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.72": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.225": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.73": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.226": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Enheterna ges och båda/alla sökta värden får märkta fält. Facit jämför meter- och sekundexponenter och visar ekvationslösning. Nivå 4/C i stället för 5/A.",
+      "suggestedComment": "Enheterna ges och båda/alla sökta värden får märkta fält. Facit jämför meter- och sekundexponenter och visar ekvationslösning. Nivå 4/C i stället för 5/A.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.74": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "suggestedComment": "Granskad – inget fel: enhets-/prefix-/skalberäkning, angivna värden, frågetext och facit manuellt kontrollerade. En direkt omvandling är nivå 1; area/volym och två samband nivå 2. Fria motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.75": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.227": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Enheterna ges och båda/alla sökta värden får märkta fält. Facit jämför meter- och sekundexponenter och visar ekvationslösning. Nivå 4/C i stället för 5/A.",
+      "suggestedComment": "Enheterna ges och båda/alla sökta värden får märkta fält. Facit jämför meter- och sekundexponenter och visar ekvationslösning. Nivå 4/C i stället för 5/A.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "2.76": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "comment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "suggestedComment": "Manuellt kontrollerad beräkning; långa likhetskedjor delade för mobil med alla nödvändiga mellanled kvar. Inga siffersvar ändrade av visningsrättningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    }
+  },
+  "verification": {
+    "independentPhysicsTests": "Befintligt tools/fysik1-kapitel2.test.js samt två nya tester för avrundningsgränser och egna kortdata.",
+    "actualGrading": {
+      "numeric": 648,
+      "alternatives": 0,
+      "failures": [],
+      "roundingChecks": [
+        {
+          "id": "2.11a",
+          "input": "6327272727.27",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.11a",
+          "input": "6340000000",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.11b",
+          "input": "23.6436781609 m",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.11b",
+          "input": "23.7",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.12a",
+          "input": "19.751029278553064",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.12a",
+          "input": "19.9",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.12b",
+          "input": "50.5050505051 µm",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.12b",
+          "input": "50.6",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.29b",
+          "input": "2.32444444444 kWh",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.29b",
+          "input": "2.33",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.35b",
+          "input": "114477.312810646",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.35b",
+          "input": "115000",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.59a",
+          "input": "40.744",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.59a",
+          "input": "40.8",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.59b",
+          "input": "11.31777777778",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.59b",
+          "input": "11.4",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.68c",
+          "input": "1.38888888889",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.68c",
+          "input": "1.40",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.214",
+          "input": "0.000015625",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.214",
+          "input": "0.0000157",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.219",
+          "input": "0.000452389342",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.219",
+          "input": "0.000453",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.221",
+          "input": "0.2361111111 kg/s",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.221",
+          "input": "0.237",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "2.222",
+          "input": "1.6666666667",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "2.222",
+          "input": "1.68",
+          "want": false,
+          "actual": false
+        }
+      ]
+    },
+    "render": {
+      "parents": 59,
+      "numericContractChecks": 256,
+      "cards": 144,
+      "views": 576,
+      "failures": []
+    },
+    "wholeBankValidator": {
+      "errors": 0,
+      "warnings": 8,
+      "info": 833
+    },
+    "wholeBankComplete": false,
+    "secondManualPassComplete": false,
+    "masterTests": 289,
+    "consumerTests": 106
+  },
+  "analogues": {
+    "avrundat facit och extra precision": [
+      "2.11",
+      "2.12",
+      "2.29",
+      "2.35",
+      "2.59",
+      "2.68",
+      "2.214",
+      "2.219",
+      "2.221",
+      "2.222"
+    ],
+    "rader som passar mobil": [
+      "2.205",
+      "2.210",
+      "2.29",
+      "2.218",
+      "2.63",
+      "2.219",
+      "2.67",
+      "2.72",
+      "2.75",
+      "2.76"
+    ],
+    "självständiga kort med relevanta data": [
+      "2.11",
+      "2.12",
+      "2.29",
+      "2.35",
+      "2.36"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-10",
+  "course": "fy1",
+  "bankTasks": 3738,
+  "activeCards": 5271,
+  "actualGradingChecks": 14979,
+  "gradingFailures": 0,
+  "activeCardFormulas": 13281,
+  "activeCardMathErrors": 0,
+  "teacherAndStudentMath": [
+    {
+      "port": 8071,
+      "mainTasks": 3738,
+      "formulas": 23364,
+      "errors": 0
+    },
+    {
+      "port": 8072,
+      "mainTasks": 3738,
+      "formulas": 23365,
+      "errors": 0
+    }
+  ],
+  "scope": "Teknisk kontroll av hela banken efter enhetsrevideringen. Alla frågor är inte manuellt genomräknade i detta test.",
+  "chapter9FirstManualPassComplete": true,
+  "wholeBankSecondManualPassComplete": false,
+  "masterTests": 289,
+  "consumerTests": 106
+}
