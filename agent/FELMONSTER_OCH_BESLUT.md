@@ -222,3 +222,34 @@ rörelseenergi rätt definition av elastisk stöt, men rörelsemängdens
 bevarande var också sant under det givna antagandet. Ersättningen skiljer
 varje bolls rörelsemängd från deras summa. Fysikfacit om elastisk stöt
 ska inte ändras. Se [rapport och sex jämförelser](FELRAPPORT_5364_2026-10-09.md).
+
+## FP-10: Fält, kraft och vardagligt riktningstänkande
+
+Ett spelkort ska fråga efter samma storhet som lärarfrågan. 8.106 frågade
+fältstyrka i huvuduppgiften men kraft på en ny testladdning i spelkortet; de två
+numeriska korten och N/C-enheterna är nu samstämmiga. Jämför med 8.65, 8.321,
+8.326, 8.328 och 8.336. Kraftens storlek använder laddningens belopp; en
+uttryckligen efterfrågad kraftkomponent behåller sitt tecken.
+
+Kraftens riktning avgör inte ensam rörelsens riktning utan startvillkor.
+8.11, 8.60 och 8.105 frågar därför kraftens riktning. En negativ laddning
+påverkas motsatt fältet; en positiv i fältets riktning. 8.47 har däremot
+uttryckliga horisontella och lodräta startvillkor, och dess avvikelse är
+beräkningsbar. 8.69 skiljer svävande jämvikt från fallet när fältet stängs av.
+
+Punktladdning: dubbelt avstånd ger en fjärdedel (8.59, 8.106, 8.115).
+Parallella plattor vid oförändrad spänning: dubbelt avstånd ger hälften
+(8.168). Återanvänd inte en generell avståndsledtråd mellan dessa modeller.
+
+Rutinberäkning med omvandling är E/nivå 2; den blir inte C/A av stora
+exponenter eller en kvadratrot. 8.337, 8.341, 8.343, 8.345 och 8.347 är
+exempel. Givna vinkelräta fält som summeras med Pythagoras är också E/2 i
+8.350, 8.353, 8.356 och 8.359. Sammanhängande strategi/härledning bedöms
+separat, liksom nivån på ett fristående kort med givna mellanresultat.
+
+Se [fullständig fältlogg](FALT_HELA_FYSIK1_2026-10-10.md),
+`tools/fysik1-falt-hela.test.js` och Kunskapsgymmets
+`tools/falt-hela-fy1-2026-10-10.browser.py`. Två värdesiffror godtas bland
+annat för 8.47 c och 8.115 d. Geometrivarningar för minus inuti
+laddningssymboler måste bedömas visuellt; en verklig text–fältlinjekollision
+som 8.60:s laddningsetikett behöver däremot rättas.

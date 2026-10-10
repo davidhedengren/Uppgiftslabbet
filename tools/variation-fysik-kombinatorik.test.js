@@ -79,13 +79,16 @@ test('Newtons tredje lag visar lika stora, motsatta krafter på olika föremål'
  assert.match(fy.get('4.756').alternativ.find(a=>a.ratt).txt,/olika vagnar/);
  assert.ok(8/2>8/4);assert.equal(fy.get('4.757').alternativ.find(a=>a.ratt).txt,'Vagn A.');
 });
-test('Seriekopplingskort använder egna data och visar båda effekterna i det manuella kortet',()=>{
+test('Seriekopplingskort använder egna data och rättar båda effekterna i ordnade fält',()=>{
  const a=fy.get('8.40'),b=fy.get('8.124');
  near(a.rättSvar[0],220+330);near(a.rättSvar[1],11/(220+330)*1000);near(a.rättSvar[3],11*.020);
  near(b.rättSvar[1],120+180);near(b.rättSvar[2],9/(120+180));
  near(220*.020**2,.088);near(330*.020**2,.132);
  assert.match(a.spelDelar[2].t,/0,020 A/);assert.match(a.spelDelar[2].s,/0\{,\}088/);assert.match(a.spelDelar[2].s,/0\{,\}132/);
- assert.equal(a.självrättning[2],false);assert.equal(b.självrättning[0],false);
+ assert.equal(a.självrättning[2],true);assert.equal(b.självrättning[0],true);
+ assert.equal(a.rättSvar[2].length,2);near(a.rättSvar[2][0],.088);near(a.rättSvar[2][1],.132);
+ assert.equal(a.spelDelar[2].svarsstruktur,'ordnad');
+ assert.deepEqual(Array.from(a.spelDelar[2].svarEtiketter),['220 Ω','330 Ω']);
  assert.match(a.spelDelar[1].t,/550 Ω/);assert.match(b.spelDelar[2].t,/300 Ω/);
  assert.deepEqual(Array.from(a.spelDelar,d=>d.traningsniva),[1,2,2,1]);assert.deepEqual(Array.from(b.spelDelar,d=>d.traningsniva),[1,1,1]);
 });
