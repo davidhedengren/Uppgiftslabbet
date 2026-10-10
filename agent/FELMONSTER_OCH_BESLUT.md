@@ -290,3 +290,42 @@ Se [fullständig logg och återkopplingslista](COULOMB_RESTERANDE_FYSIK1_2026-10
 ID:n och loggproveniens finns i `agent/ELEKTRICITET_GRANSKNINGSSTATUS.json`.
 Det registret säger uttryckligen att hela banken och hela andra manuella
 rundan ännu inte är klara.
+
+## FP-12 – resistansgeometri, fristående kort och temperaturändring
+
+2026-10-10: 68 manuella kretsgranskningar finns i
+[KRETSAR_FYSIK1_2026-10-10.md](KRETSAR_FYSIK1_2026-10-10.md).
+
+Kvadrera hela radien efter omvandling till meter. Skriv exempelvis
+`A=π(2,0·10⁻⁴)²`, aldrig `π·0,20·10^{-3\,2}`. 8.410, 8.412,
+8.413, 8.425, 8.427, 8.428 och 8.436 hade den senare feltypen.
+Det numeriska svaret kunde ändå vara rätt. Visa area och relevanta
+mellanresultat i facit; dela långa ekvationskedjor över rader för mobil.
+
+Ett fristående spelkort med givna avrundade mellanresultat ska använda
+sina egna `rättSvar`, `tolerans`, `svarEnhet`, `svarFormat`,
+`självrättning` och `manuellKomplettering`. Uttryckliga delvärden har
+företräde i `expandGameTask`; när delvärden saknas används huvuduppgiftens
+metadata och originaletikett som tidigare. Flerfältslayout bestäms efter
+prioriteringen. Kontrolljämförelser: 8.8, 8.28, 8.61, 8.157, 8.424
+ och 8.436. Ursprungligt lärarfacit får fortfarande använda full precision.
+
+Förväxla inte en lampas märkström med strömmen när kabelresistans ingår
+(8.84), och skriv inget maximivillkor om frågan egentligen söker exakt
+önskad lampspänning (8.438). 3:1 innebär fyra delar, inte fem (8.416).
+Kopparresistivitet behöver anges när den krävs; 8.196, 8.198 och 8.200
+saknade den. Två av tre kloner blev inversa area-/längdfrågor.
+
+`svarFormat:"temperaturandring"` är ett uttryckligt opt-in för en
+**temperaturdifferens**. Samma tal i K och °C godtas, utan 273-offset.
+Detta får inte användas för absolut temperatur. Jämför 8.440 med
+8.439 och 8.441–8.444. Regressioner prövar både rätt tal i båda enheterna,
+fel enhet, fel 273-omvandling och oförändrad absolut temperaturrättning.
+
+Grafritning och fri linjeanpassning ska fortsatt kunna vara läraruppgifter
+(8.81, 8.108). Metodjämförelsen i 8.158 c bevaras hos läraren men ska inte
+bli ett andra spelkort som redan fått samma slutsvar från b.
+Se `tools/fysik1-kretsar.test.js`, Kunskapsgymmets
+`tools/temperaturandring.test.js`, `tools/delkort.test.js` och
+`tools/kretsar-fy1-2026-10-10.browser.py`. Alla granskade ID:n och
+återstående uppgifter registreras i `ELEKTRICITET_GRANSKNINGSSTATUS.json`.
