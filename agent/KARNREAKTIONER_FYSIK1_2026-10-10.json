@@ -1,0 +1,858 @@
+{
+  "baseline": "eb45364",
+  "scope": {
+    "course": "fy1",
+    "chapter": 9,
+    "areas": [
+      "karnreaktioner"
+    ],
+    "ids": [
+      "9.6",
+      "9.10",
+      "9.195",
+      "9.17",
+      "9.23",
+      "9.25",
+      "9.39",
+      "9.196",
+      "9.48",
+      "9.49",
+      "9.50",
+      "9.51",
+      "9.197",
+      "9.52",
+      "9.54",
+      "9.69",
+      "9.73",
+      "9.198",
+      "9.75",
+      "9.76",
+      "9.78",
+      "9.100",
+      "9.101",
+      "9.105",
+      "9.106",
+      "9.107",
+      "9.108",
+      "9.109",
+      "9.110",
+      "9.111",
+      "9.112",
+      "9.113",
+      "9.114",
+      "9.115",
+      "9.116",
+      "9.117",
+      "9.118",
+      "9.119",
+      "KG-FY1-ALFA-01",
+      "KG-FY1-ALFA-02",
+      "KG-FY1-ALFA-03",
+      "KG-FY1-ALFA-04",
+      "9.246",
+      "9.247",
+      "9.320",
+      "9.321",
+      "9.322"
+    ]
+  },
+  "reviews": {
+    "9.6": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.17": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.23": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "spelDelar"
+      ],
+      "comment": "Fria svar bevarade. Kort facit med en förklaring per sönderfallstyp; gamma beskrivs med lägre energinivå i stället för exciterat tillstånd. Ledtråden gäller partikeln.",
+      "suggestedComment": "Fria svar bevarade. Kort facit med en förklaring per sönderfallstyp; gamma beskrivs med lägre energinivå i stället för exciterat tillstånd. Ledtråden gäller partikeln.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.25": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Enkel förklaring av massminskning och kärnans massdefekt med nödvändigt energisamband. Vilomassa/fria nukleoner ersatta av vardagligare ord. Fri motivering behålls.",
+      "suggestedComment": "Enkel förklaring av massminskning och kärnans massdefekt med nödvändigt energisamband. Vilomassa/fria nukleoner ersatta av vardagligare ord. Fri motivering behålls.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.39": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.48": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.50": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "spelDelar"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.51": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Figuren visar nu exakta enhetssteg ΔN/ΔZ och alla kärnor ligger över axlarna. LaTeX-tabellens felaktiga HTML-entiteter rättade. Fri tabell och förklaring bevarade.",
+      "suggestedComment": "Figuren visar nu exakta enhetssteg ΔN/ΔZ och alla kärnor ligger över axlarna. LaTeX-tabellens felaktiga HTML-entiteter rättade. Fri tabell och förklaring bevarade.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.52": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "comment": "Förhållandet 3:1 av totalt 4n ger 3n alfa och n beta-minus. Kontrollerade uttryck A−12n och Z−5n. Algebra och bevarandelagar nivå 3, inte 5; fri symboluppgift bevarad.",
+      "suggestedComment": "Förhållandet 3:1 av totalt 4n ger 3n alfa och n beta-minus. Kontrollerade uttryck A−12n och Z−5n. Algebra och bevarandelagar nivå 3, inte 5; fri symboluppgift bevarad.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.54": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "comment": "Kontrollerade uttryck A−12 och Z−4; beta-minus ändrar proton/neutron men inte deras sammanlagda antal. Kända förändringar nivå 2. Fri symboluppgift bevarad.",
+      "suggestedComment": "Kontrollerade uttryck A−12 och Z−4; beta-minus ändrar proton/neutron men inte deras sammanlagda antal. Kända förändringar nivå 2. Fri symboluppgift bevarad.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.75": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "spelDelar"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.78": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Sönderfallstyperna och grundämnena ges, så uppgiften inte kräver en extern kedja. Tre kända reaktionsformler nivå 3 i stället för 5.",
+      "suggestedComment": "Sönderfallstyperna och grundämnena ges, så uppgiften inte kräver en extern kedja. Tre kända reaktionsformler nivå 3 i stället för 5.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.105": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "spelDelar"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.106": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.107": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.108": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "spelDelar",
+        "t"
+      ],
+      "comment": "B-8 till Li-4 genom direkt alfa var inte ett realistiskt sönderfall. Ersatt av Po-216 till Pb-212; övriga fyra A/Z-balansuppgifter bevarade. Ovidkommande energitext borttagen.",
+      "suggestedComment": "B-8 till Li-4 genom direkt alfa var inte ett realistiskt sönderfall. Ersatt av Po-216 till Pb-212; övriga fyra A/Z-balansuppgifter bevarade. Ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.112": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "spelDelar"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.113": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang",
+        "s",
+        "spelDelar"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "KG-FY1-ALFA-02": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "poang"
+      ],
+      "comment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "suggestedComment": "Reaktionsformeln kontrollerad med A/Z. Fri läraruppgift bevaras utan felaktig automatisk rättning. Nivå efter samband; relevant ledtråd och ovidkommande energitext borttagen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.195": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Neutronantal kontrollerat och rättas exakt, utan decimalavvikelse. Lösningen visar masstalsbalansen.",
+      "suggestedComment": "Neutronantal kontrollerat och rättas exakt, utan decimalavvikelse. Lösningen visar masstalsbalansen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.196": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Neutronantal kontrollerat och rättas exakt, utan decimalavvikelse. Lösningen visar masstalsbalansen.",
+      "suggestedComment": "Neutronantal kontrollerat och rättas exakt, utan decimalavvikelse. Lösningen visar masstalsbalansen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.320": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "traningsniva"
+      ],
+      "comment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "suggestedComment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.321": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "suggestedComment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.322": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "suggestedComment": "Korrekt exakt antal kontrollerat. Direkt A/Z-balans nivå 1; två okända sönderfallstyper nivå 3. Relevant ledtråd och kortare bakgrund.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "KG-FY1-ALFA-01": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "suggestedComment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.246": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "suggestedComment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.247": {
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "suggestedComment": "Granskad – inget fel: korrekt A−4 eller Z−2, exakt heltalsrättning och tydlig nivå 1.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.114": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Frågan gäller given masstalsändring, utan ogrundat påstående om en verklig ren sönderfallskedja. Antalet 8 rättas exakt.",
+      "suggestedComment": "Frågan gäller given masstalsändring, utan ogrundat påstående om en verklig ren sönderfallskedja. Antalet 8 rättas exakt.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.197": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "alternativ",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarstyp",
+        "t",
+        "typ"
+      ],
+      "comment": "Tidigare fri partikelidentifiering får tydliga alternativ i spelet och full A/Z-balans i lösningen.",
+      "suggestedComment": "Tidigare fri partikelidentifiering får tydliga alternativ i spelet och full A/Z-balans i lösningen.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.100": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "comment": "c ges i frågan; full målprecision i stället för förkortat svar. Samma två rutinomvandlingar nivå 2 för båda uppgifterna.",
+      "suggestedComment": "c ges i frågan; full målprecision i stället för förkortat svar. Samma två rutinomvandlingar nivå 2 för båda uppgifterna.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.101": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "c ges i frågan; full målprecision i stället för förkortat svar. Samma två rutinomvandlingar nivå 2 för båda uppgifterna.",
+      "suggestedComment": "c ges i frågan; full målprecision i stället för förkortat svar. Samma två rutinomvandlingar nivå 2 för båda uppgifterna.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.198": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.76": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Tidigare bara energin rättades fast reaktionsformel också efterfrågades. Läraren behåller formelsvaret, spelet identifierar dotterkärnan separat. Rutin nivå 2, inte 4.",
+      "suggestedComment": "Tidigare bara energin rättades fast reaktionsformel också efterfrågades. Läraren behåller formelsvaret, spelet identifierar dotterkärnan separat. Rutin nivå 2, inte 4.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.109": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.115": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "KG-FY1-ALFA-03": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.116": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Tidigare tolerans på flera u godkände svar som missade hela energiskillnaden. Fem decimaler anges tydligt och toleransen är 0,000005 u.",
+      "suggestedComment": "Tidigare tolerans på flera u godkände svar som missade hela energiskillnaden. Fem decimaler anges tydligt och toleransen är 0,000005 u.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.117": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Tidigare tolerans på flera u godkände svar som missade hela energiskillnaden. Fem decimaler anges tydligt och toleransen är 0,000005 u.",
+      "suggestedComment": "Tidigare tolerans på flera u godkände svar som missade hela energiskillnaden. Fem decimaler anges tydligt och toleransen är 0,000005 u.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.118": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "suggestedComment": "Manuell fysik-/kortgranskning: sökt storhet, enhet, förklarande lösning och nivå kalibrerade. Rimlig avrundning godtas.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.73": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Atomnummer ges i frågan. b har egna sex alfa. Exakta heltal, komplett beräkningskedja och fri lärarförklaring. Nivå 3, inte 5.",
+      "suggestedComment": "Atomnummer ges i frågan. b har egna sex alfa. Exakta heltal, komplett beräkningskedja och fri lärarförklaring. Nivå 3, inte 5.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "KG-FY1-ALFA-04": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två märkta svarsfält rättar båda heltalsantalen. Kända bevarandelagar nivå 3, inte 5.",
+      "suggestedComment": "Två märkta svarsfält rättar båda heltalsantalen. Kända bevarandelagar nivå 3, inte 5.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.10": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tidigare masstolerans 3,39 u dolde energiskillnaden. Sex decimaler och 0,0000005 u. Alla kort har egna relevanta massor/mellanvärden; fri reaktionsformel bevarad.",
+      "suggestedComment": "Tidigare masstolerans 3,39 u dolde energiskillnaden. Sex decimaler och 0,0000005 u. Alla kort har egna relevanta massor/mellanvärden; fri reaktionsformel bevarad.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.69": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "MeV/J-faktorn ges i frågan. Egna b-kortets 5,2 MeV styr målet. Enkel omvandling nivå 1, förståelse nivå 2.",
+      "suggestedComment": "MeV/J-faktorn ges i frågan. Egna b-kortets 5,2 MeV styr målet. Enkel omvandling nivå 1, förståelse nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.49": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två efterfrågade energiandelar får märkta fält och tydlig procentfråga. Facit härleder lika stor rörelsemängd och Eₖ = p²/(2m). Numerisk a nivå 2, resonemang 3, hela 4 i stället för 5. Fristående c använder egna 4/206 u.",
+      "suggestedComment": "Två efterfrågade energiandelar får märkta fält och tydlig procentfråga. Facit härleder lika stor rörelsemängd och Eₖ = p²/(2m). Numerisk a nivå 2, resonemang 3, hela 4 i stället för 5. Fristående c använder egna 4/206 u.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.110": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Otydlig data-meningsdel ersatt av direkt fråga. Massdefekt och energi visas, sedan antal sönderfall. b/c kan självrättas; lärarens reaktionsformel bevaras. E per sönderfall är total frigjord energi, inte endast alfaenergi.",
+      "suggestedComment": "Otydlig data-meningsdel ersatt av direkt fråga. Massdefekt och energi visas, sedan antal sönderfall. b/c kan självrättas; lärarens reaktionsformel bevaras. E per sönderfall är total frigjord energi, inte endast alfaenergi.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.111": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tidigare facit hoppade till farterna. Nu visas energifördelning, MeV/J, kg och båda farterna med märkta fält. Egna e-kortets 5,24 MeV används. Fria reaktionsformler och motiveringar bevaras hos läraren.",
+      "suggestedComment": "Tidigare facit hoppade till farterna. Nu visas energifördelning, MeV/J, kg och båda farterna med märkta fält. Egna e-kortets 5,24 MeV används. Fria reaktionsformler och motiveringar bevaras hos läraren.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    },
+    "9.119": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Alfaenergin 4,785 MeV var felaktigt kallad hela energin. Nu inkluderas radonkärnans rekyl: totalt cirka 4,87 MeV och gamma cirka 0,186 MeV, inte 0,183. Figuren och texten anger alfaenergier; alla kort är självständiga. Sannolikhet avser ungefärligt förväntat antal.",
+      "suggestedComment": "Alfaenergin 4,785 MeV var felaktigt kallad hela energin. Nu inkluderas radonkärnans rekyl: totalt cirka 4,87 MeV och gamma cirka 0,186 MeV, inte 0,183. Figuren och texten anger alfaenergier; alla kort är självständiga. Sannolikhet avser ungefärligt förväntat antal.",
+      "method": "Manuell uppgifts-/facitläsning, självständig fysikberäkning, kort- och nivåanalys; visnings- och rättningskontroll före slutmarkering."
+    }
+  },
+  "verification": {
+    "independentPhysicsTests": 2,
+    "masterTests": 287,
+    "actualGrading": {
+      "numeric": 190,
+      "alternatives": 30,
+      "failures": []
+    },
+    "render": {
+      "parents": 47,
+      "numericContractChecks": 76,
+      "cards": 93,
+      "views": 372,
+      "failures": []
+    },
+    "svg": "9.49 bevarad och visuellt kontrollerad. 9.51 och 9.119 ombyggda och visuellt kontrollerade. EDGE_CLIPPING gäller avsiktliga bakgrundsrektanglar; inga etiketter klipps.",
+    "wholeBankValidator": {
+      "errors": 0,
+      "warnings": 8,
+      "info": 828
+    },
+    "wholeBankComplete": false,
+    "secondManualPassComplete": false
+  },
+  "analogues": {
+    "exakta antal": [
+      "9.195",
+      "9.196",
+      "9.114",
+      "9.73",
+      "KG-FY1-ALFA-04",
+      "9.320",
+      "9.321",
+      "9.322"
+    ],
+    "energi och fulla mellanled": [
+      "9.10",
+      "9.49",
+      "9.69",
+      "9.76",
+      "9.109",
+      "9.110",
+      "9.111",
+      "9.115",
+      "9.118",
+      "9.119"
+    ],
+    "rätt atommassprecision över flera områden": [
+      "9.10",
+      "9.116",
+      "9.117",
+      "9.290",
+      "9.403"
+    ],
+    "självständiga kortdata": [
+      "9.10",
+      "9.49",
+      "9.69",
+      "9.73",
+      "9.110",
+      "9.111",
+      "9.119"
+    ],
+    "ingen ovidkommande energitext i reaktionsformler": [
+      "9.105",
+      "9.106",
+      "9.107",
+      "9.108",
+      "9.112",
+      "9.113"
+    ]
+  }
+}

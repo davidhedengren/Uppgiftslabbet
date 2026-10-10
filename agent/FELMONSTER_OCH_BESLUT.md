@@ -425,3 +425,13 @@ Påstå inte att all fusion kräver över hundra miljoner kelvin: solens fusion 
 9.71 anger lika antal D och T och fullständig reaktion; ett kilo bränsle utan blandning är otydligt. Två märkta fält rättar massminskning och energi. Figurens nukleoner bevaras: två protoner och tre neutroner. Frigjord energi får inte jämställas med el utan verkningsgrad (9.416–9.418); massflöde anges i kg/s. Kort räknar med egna givna mellanvärden (9.46, 9.71, 9.415–9.420). Råa LaTeX-komman får inte ligga i vanlig text; procenttecken måste escape:as i matte.
 
 Lösningar visar massor före/efter, massminskning, energi per reaktion, antal och förbrukad massa där sambanden behövs (9.53, 9.71, 9.414, 9.416–9.419). Undvik tidig massavrundning. 9.290 kräver sex decimaler och har toleransen 0,0000005 u. Tester: tools/fysik1-fusion.test.js och konsumentens tools/fusion-fy1-2026-10-10.browser.py.
+
+## FP22 – kärnreaktioner: rekyl, precisa massor och alla sökta svar (2026-10-10)
+
+Alla 47 uppgifter manuellt granskade: [KARNREAKTIONER_FYSIK1_2026-10-10.md](KARNREAKTIONER_FYSIK1_2026-10-10.md) och JSON med alla ID, bedömningar och kommentarer. Kapitel 9:s första manuella pass är klart: 450 av 450. Hela banken och andra varvet är inte slutmarkerade.
+
+Atommassetolerans får inte dölja massdefekten: 9.10b rättas till sex decimaler med 0,0000005 u; 9.116/117 till fem decimaler med 0,000005 u. Liknande redan kontrollerat i 9.290 och 9.403. Neutron-/sönderfallsantal är exakta heltal (9.195, 9.196, 9.114, 9.73, KG-FY1-ALFA-04, 9.320–9.322). 9.100/101 får fulla mål 0,072 respektive 0,1035 TJ och given c.
+
+Alfapartikelns energi är inte hela reaktionsenergin. Dotterkärnan får rekylenergi. 9.119:s uppmätta alfaenergier 4,785/4,602 MeV ger cirka 4,87 MeV totalenergi och 0,186 MeV gamma i den givna massmodellen. Gammaformeln ges där den behövs. 9.49/111 härleder lika stora motriktade rörelsemängder och Eₖ = p²/(2m), fördelar energin och räknar båda farterna i kg/J. Två efterfrågade svar får två märkta fält, fri lärarhärledning förblir manuell. Kontrollerade energikedjor: 9.10, 9.49, 9.69, 9.76, 9.109–9.111, 9.115, 9.118/119.
+
+Eget avrundat mellanvärde styr kortets mål (9.10, 9.49, 9.69, 9.73, 9.110, 9.111, 9.119). Reaktionsformeluppgifter ska inte innehålla ovidkommande energiberäkning (9.105–9.108, 9.112/113). 9.108:s orealistiska B-8 till Li-4 genom direkt alfa ersatt av Po-216 till Pb-212. 9.78 anger sönderfallstyper och nödvändiga grundämnen. 9.51:s figur visar exakta ΔN/ΔZ, tabellen använder HTML för mobil läsbarhet. 9.119:s figur skiljer alfaenergi och energinivåer och är uttryckligen schematisk. Tester: tools/fysik1-karnreaktioner.test.js och konsumentens tools/karnreaktioner-fy1-2026-10-10.browser.py.
