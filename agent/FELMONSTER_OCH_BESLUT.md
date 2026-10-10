@@ -253,3 +253,40 @@ Se [fullständig fältlogg](FALT_HELA_FYSIK1_2026-10-10.md),
 annat för 8.47 c och 8.115 d. Geometrivarningar för minus inuti
 laddningssymboler måste bedömas visuellt; en verklig text–fältlinjekollision
 som 8.60:s laddningsetikett behöver däremot rättas.
+
+## FP-11: Coulombkort med dold föregående beräkning eller ofullständigt slutsvar
+
+Kontrollera om kortet använder en redan beräknad laddning, kraft eller
+fältkomponent som inte visas. Ge mellanresultatet på just det kortet och
+beräkna dess target och facit från det givna värdet, även när värdet är
+avrundat. 8.58 c/d, 8.119 b, 8.121 c, 8.33 c, 8.160 c, 8.161 c,
+8.479 b, 8.485 b, 8.486 b, 8.488 b och 8.493 b är jämförelser.
+Lärarens huvuduppgift får behålla sin sammanhängande beräkning.
+
+8.121 b frågar efter två krafter; 8.33/8.160 c efter storlek och riktning.
+Alla efterfrågade svar ska ha egna namngivna ordnade fält. Storlek och
+vinkel behöver olika enheter. Att bara lägga sista värdet i facitets
+slutrad tappar en del av frågan. Jämför FP-08:s 8.49, 8.103, 8.117,
+8.40 och 8.131. 8.488 a ska visa endast den större roten; nästa korts
+mindre laddning får inte stå i a-facit.
+
+Lika laddningsfördelning vid kontakt kräver likadana metallkulor; 8.119
+saknade det villkoret. Nollpunktens svar måste ange vilken källaddning
+avståndet räknas från. Nollpunktsalgebra kräver en förklaring av varför
+de motriktade fälten sätts lika, följd av kvadratroten och lösningen.
+32/34/314/320/484 i kapitel 8 visar modellen. Enkel symmetri är däremot
+E/nivå 2 i 8.313, inte A.
+
+SVG-avstånd för små laddade kulor ska gå mellan mittpunkterna. I 8.160
+låg det gamla måttstrecket mellan cirkelkanterna; den nya figuren har
+mått till mittpunkterna. Kontrollera att hjälplinjer slutar före kulorna
+eller ligger bakom deras bakgrund, och att laddningsetiketter har plats
+även nära lodräta linjer. 8.33, 8.160, 8.316, 8.317, 8.319 och 8.489
+är visuellt granskade jämförelser.
+
+Se [fullständig logg och återkopplingslista](COULOMB_RESTERANDE_FYSIK1_2026-10-10.md),
+`tools/fysik1-coulomb-hela.test.js` och Kunskapsgymmets
+`tools/coulomb-hela-fy1-2026-10-10.browser.py`. Granskningsstatus med
+ID:n och loggproveniens finns i `agent/ELEKTRICITET_GRANSKNINGSSTATUS.json`.
+Det registret säger uttryckligen att hela banken och hela andra manuella
+rundan ännu inte är klara.

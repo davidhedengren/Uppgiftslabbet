@@ -1,0 +1,1064 @@
+{
+  "date": "2026-10-10",
+  "baselineCommit": "6e6f4a125f0c2b7eeae225838757bf11d7cd0eae",
+  "course": "fy1",
+  "originalArea": "coulomb",
+  "reviews": {
+    "8.22": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Båda ursprungliga krafterna är korrekta. Saknade konstanter och gravitationssamband anges. Tre självbärande numeriska kort ersätter avstängd speluppgift; jämförelsen preciseras som antal gånger. Rutin med givna samband: E/2, inte A/5.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Båda ursprungliga krafterna är korrekta. Saknade konstanter och gravitationssamband anges. Tre självbärande numeriska kort ersätter avstängd speluppgift; jämförelsen preciseras som antal gånger. Rutin med givna samband: E/2, inte A/5."
+    },
+    "8.24": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "87,4028 µN, frånstötande: rätt fysik. Begrepps-a får alternativ, b egen Coulombledning, explicit konstant. E/2, inte C/3. Ny större figur markerar avstånd mellan kulornas mittpunkter.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 87,4028 µN, frånstötande: rätt fysik. Begrepps-a får alternativ, b egen Coulombledning, explicit konstant. E/2, inte C/3. Ny större figur markerar avstånd mellan kulornas mittpunkter."
+    },
+    "8.159": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "42,1406 µN och 10,5352 µN, bortstötning. Alla tre delar får rättning, egna ledtrådar och nivå 2/1/1. Avståndskortet anger startkraft; läraruppgiftens beroende delar behålls.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 42,1406 µN och 10,5352 µN, bortstötning. Alla tre delar får rättning, egna ledtrådar och nivå 2/1/1. Avståndskortet anger startkraft; läraruppgiftens beroende delar behålls."
+    },
+    "8.119": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Facit +2 nC/22,475 µN kräver likadana metallkulor, vilket huvudtexten inte angav. Villkoret tillagt; b får egna +2 nC-data. E/2, rättning i båda korten.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Facit +2 nC/22,475 µN kräver likadana metallkulor, vilket huvudtexten inte angav. Villkoret tillagt; b får egna +2 nC-data. E/2, rättning i båda korten."
+    },
+    "8.161": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "57,536 N → 89,9 N är korrekt. Facit visar varför laddningsprodukten ökar. Tre självrättande kort med b:s kontaktdata och c:s egna +5 µC; c:s tidigare slutsvar var bara en produkt, inte efterfrågad kraft. E/2 rutin; lärarens motivering bedöms separat.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 57,536 N → 89,9 N är korrekt. Facit visar varför laddningsprodukten ökar. Tre självrättande kort med b:s kontaktdata och c:s egna +5 µC; c:s tidigare slutsvar var bara en produkt, inte efterfrågad kraft. E/2 rutin; lärarens motivering bedöms separat."
+    },
+    "8.58": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Rätt laddning cirka 14,15 nC. Nya nC-/elektron-enheter, ingen dold q²-uppgift eller föregående q i spelkorten. Lärarens fria formel-a/b bevaras, spelkort c/d har egna mellanresultat. E/2 i stället för C/3; ledtrådar ger nästa metod, inte hela svaret. Spelkort c använder det givna avrundade q²-värdet; d använder egna +14 nC, så deras targets beräknas från just dessa data.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Rätt laddning cirka 14,15 nC. Nya nC-/elektron-enheter, ingen dold q²-uppgift eller föregående q i spelkorten. Lärarens fria formel-a/b bevaras, spelkort c/d har egna mellanresultat. E/2 i stället för C/3; ledtrådar ger nästa metod, inte hela svaret. Spelkort c använder det givna avrundade q²-värdet; d använder egna +14 nC, så deras targets beräknas från just dessa data."
+    },
+    "8.121": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "99,8889 och 28,768 µN ger 128,657 µN åt höger. b:s tidigare slutsvar tappade vänsterkraften: nu två namngivna ordnade fält. a alternativ, c egna båda krafter. Heluppgift C/3; enkla kort 1–2.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 99,8889 och 28,768 µN ger 128,657 µN åt höger. b:s tidigare slutsvar tappade vänsterkraften: nu två namngivna ordnade fält. a alternativ, c egna båda krafter. Heluppgift C/3; enkla kort 1–2."
+    },
+    "8.33": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Krafter 8.428125e-05 och 0.000149833333 N ger 171.9109 µN,60.64225°. Ursprunglig fysik korrekt; c tappade storleken i slutsvaret. Nu två ordnade fält med olika enheter. Egna kraftkomponenter ges i c. Båda directkort E/2, helstrategi C/3 i stället för A/5. Figuren ritas om med tydliga mittpunktsmått.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Krafter 8.428125e-05 och 0.000149833333 N ger 171.9109 µN,60.64225°. Ursprunglig fysik korrekt; c tappade storleken i slutsvaret. Nu två ordnade fält med olika enheter. Egna kraftkomponenter ges i c. Båda directkort E/2, helstrategi C/3 i stället för A/5. Figuren ritas om med tydliga mittpunktsmått."
+    },
+    "8.160": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Krafter 0.000199777778 och 0.0001685625 N ger 261.3895 µN,40.156°. Ursprunglig fysik korrekt; c tappade storleken i slutsvaret. Nu två ordnade fält med olika enheter. Egna kraftkomponenter ges i c. Båda directkort E/2, helstrategi C/3 i stället för A/5. Figuren ritas om med tydliga mittpunktsmått.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Krafter 0.000199777778 och 0.0001685625 N ger 261.3895 µN,40.156°. Ursprunglig fysik korrekt; c tappade storleken i slutsvaret. Nu två ordnade fält med olika enheter. Egna kraftkomponenter ges i c. Båda directkort E/2, helstrategi C/3 i stället för A/5. Figuren ritas om med tydliga mittpunktsmått."
+    },
+    "8.120": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Influensens fysik var korrekt men neutralitet saknades och ledtråden handlade felaktigt om elementarladdning. Oladdat metallblock, ingen kontakt och ingen jordning preciseras. Tre tydliga begreppskort med förklarande alternativ, E/1–2, i laddning. Ny SVG visar situationen utan att avslöja var elektronerna samlas.",
+      "changedFields": [
+        "familj",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "omr",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Influensens fysik var korrekt men neutralitet saknades och ledtråden handlade felaktigt om elementarladdning. Oladdat metallblock, ingen kontakt och ingen jordning preciseras. Tre tydliga begreppskort med förklarande alternativ, E/1–2, i laddning. Ny SVG visar situationen utan att avslöja var elektronerna samlas."
+    },
+    "8.122": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Influens med positiv stav ger variation mot 8.120. Elektroner dras mot staven, inga protoner vandrar genom metallen och nettoladdningen är fortfarande noll. Tidigare fri avstängd uppgift blir tre begripliga begreppskort E/1–2 med egna situationer och ledtrådar. Område laddning.",
+      "changedFields": [
+        "arbetsinsats",
+        "familj",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "omr",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Influens med positiv stav ger variation mot 8.120. Elektroner dras mot staven, inga protoner vandrar genom metallen och nettoladdningen är fortfarande noll. Tidigare fri avstängd uppgift blir tre begripliga begreppskort E/1–2 med egna situationer och ledtrådar. Område laddning."
+    },
+    "8.32": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Nollpunkten 6 cm från den större laddningen är korrekt. Svaret preciserar referensladdning. Fristående b förklarar att en testladdnings tecken inte flyttar nollpunkten. Kort med numeriskt svar och tydliga alternativ blir spelbara. C/3 heluppgift, a 3/b 2.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Nollpunkten 6 cm från den större laddningen är korrekt. Svaret preciserar referensladdning. Fristående b förklarar att en testladdnings tecken inte flyttar nollpunkten. Kort med numeriskt svar och tydliga alternativ blir spelbara. C/3 heluppgift, a 3/b 2."
+    },
+    "8.34": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Nollpunkten 8 cm från den större laddningen är korrekt. Svaret preciserar referensladdning. Fristående b förklarar varför nollpunkten ligger närmare den svagare laddningen. Kort med numeriskt svar och tydliga alternativ blir spelbara. C/3 heluppgift, a 3/b 2.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Nollpunkten 8 cm från den större laddningen är korrekt. Svaret preciserar referensladdning. Fristående b förklarar varför nollpunkten ligger närmare den svagare laddningen. Kort med numeriskt svar och tydliga alternativ blir spelbara. C/3 heluppgift, a 3/b 2."
+    },
+    "8.314": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Nollpunkten 0,50 m är korrekt, men facit hoppade över roten och ekvationslösningen. Fyra tydliga mellanled; C/3, inte A/4. Ingen konstant behövs eftersom k förkortas bort.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Nollpunkten 0,50 m är korrekt, men facit hoppade över roten och ekvationslösningen. Fyra tydliga mellanled; C/3, inte A/4. Ingen konstant behövs eftersom k förkortas bort."
+    },
+    "8.320": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Nästan identisk 2:1-nollpunkt blir 9:4-laddningsvariant. x=0,39 m från+9 µC. Ekvationens kvadratrot och lösning förklaras; C/3, tydlig svarspunkt. Figurens värden stämmer med frågan.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Nästan identisk 2:1-nollpunkt blir 9:4-laddningsvariant. x=0,39 m från+9 µC. Ekvationens kvadratrot och lösning förklaras; C/3, tydlig svarspunkt. Figurens värden stämmer med frågan."
+    },
+    "8.317": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Omvänd variant i klongruppen: ett nollfält 0,40 m från+4µC och 0,20 m från den andra positiva laddningen ger+1µC. C/3 med självständig fältmodell och kort facit. Ny figur har båda avstånden och okänd laddning korrekt placerade.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Omvänd variant i klongruppen: ett nollfält 0,40 m från+4µC och 0,20 m från den andra positiva laddningen ger+1µC. C/3 med självständig fältmodell och kort facit. Ny figur har båda avstånden och okänd laddning korrekt placerade."
+    },
+    "8.313": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Nollkraften i mitten är korrekt. Enkel symmetri E/2, inte A/4. Ingen laddningsstorlek behövs för testpartikeln; det framgår varför båda bidragen tar ut varandra.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Nollkraften i mitten är korrekt. Enkel symmetri E/2, inte A/4. Ingen laddningsstorlek behövs för testpartikeln; det framgår varför båda bidragen tar ut varandra."
+    },
+    "8.316": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Klongruppens symmetrifall varierat: högerladdningen dubbelt så stor, testladdning+1nC mitt emellan och höger positiv riktning. F_x=−0,000351171875 N. C/3, laddningar och avstånd angivna, tecknet motiverat. Figuren ändras till rätt laddningar.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Klongruppens symmetrifall varierat: högerladdningen dubbelt så stor, testladdning+1nC mitt emellan och höger positiv riktning. F_x=−0,000351171875 N. C/3, laddningar och avstånd angivna, tecknet motiverat. Figuren ändras till rätt laddningar."
+    },
+    "8.319": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Tredje symmetriklonen blir riktningsfråga med negativ testladdning närmare den högra av två lika positiva grannar. Närmaste grannen ger starkare attraktion: åt höger. E/2, varierad begreppsförståelse; ny figur visar båda olika avstånden.",
+      "changedFields": [
+        "alternativ",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Tredje symmetriklonen blir riktningsfråga med negativ testladdning närmare den högra av två lika positiva grannar. Närmaste grannen ger starkare attraktion: åt höger. E/2, varierad begreppsförståelse; ny figur visar båda olika avstånden."
+    },
+    "8.484": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "0,95096 m från+3q är korrekt. Facit visar separata ekvationsled och förklarar motriktade fält. Liten testladdning uttryckligen angiven; C/3, inte A/4.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 0,95096 m från+3q är korrekt. Facit visar separata ekvationsled och förklarar motriktade fält. Liten testladdning uttryckligen angiven; C/3, inte A/4."
+    },
+    "8.311": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "r=0,199889 m med den uttryckliga konstanten 8,99e 9. Det tidigare facit använde 8,988e 9 och för många siffror; inget större matematikfel. Roten och insättningen visas, E/2 i stället för C/3.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: r=0,199889 m med den uttryckliga konstanten 8,99e 9. Det tidigare facit använde 8,988e 9 och för många siffror; inget större matematikfel. Roten och insättningen visas, E/2 i stället för C/3."
+    },
+    "8.312": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Båda krafter åt höger,0,749167 N med 8,99e 9. Tidigare facit hoppade över båda beräkningarna. Nu visas vardera insättning, summa och riktning. C/3 och relevanta data i figuren.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Båda krafter åt höger,0,749167 N med 8,99e 9. Tidigare facit hoppade över båda beräkningarna. Nu visas vardera insättning, summa och riktning. C/3 och relevanta data i figuren."
+    },
+    "8.318": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Efter kontakt+3µC vardera, F=0,899 N med explicit konstant. E/2 rutin, inte A/4. Enkel text och båda beräkningarna visas.",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Efter kontakt+3µC vardera, F=0,899 N med explicit konstant. E/2 rutin, inte A/4. Enkel text och båda beräkningarna visas."
+    },
+    "8.174": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "B får−40,05 pC: ursprungligt avrundat svar−40,1pC korrekt. Konstant angiven, elektronöverskott och enhetsomvandling förklaras. E/2, flyttat från Coulomb till laddning.",
+      "changedFields": [
+        "familj",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "omr",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: B får−40,05 pC: ursprungligt avrundat svar−40,1pC korrekt. Konstant angiven, elektronöverskott och enhetsomvandling förklaras. E/2, flyttat från Coulomb till laddning."
+    },
+    "8.476": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Totalladdning−6,4 µC ger−1,6 µC per klot och 9,9875e 12 överskottselektroner. Summans tecken och C-omvandling visas. E/2, inte C/3; elektron-enhet och rättningsformat.",
+      "changedFields": [
+        "familj",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "omr",
+        "poang",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Totalladdning−6,4 µC ger−1,6 µC per klot och 9,9875e 12 överskottselektroner. Summans tecken och C-omvandling visas. E/2, inte C/3; elektron-enhet och rättningsformat."
+    },
+    "8.477": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Laddningen−7,30462 µC är korrekt. Attraktion avgör tecknet. Omvänd Coulombrutin E/2 i stället för C/3; svar i µC, både isolering och insättning visas.",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Laddningen−7,30462 µC är korrekt. Attraktion avgör tecknet. Omvänd Coulombrutin E/2 i stället för C/3; svar i µC, både isolering och insättning visas."
+    },
+    "8.478": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "14384 N och 0,821127 m är korrekta. Delarna är två olika situationer och skrivs tydligt så. Facit visar 2,50cm→0,0250m, laddningsprodukt och kvadratroten för b. Kort på E/2, egna data och specifika ledtrådar.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: 14384 N och 0,821127 m är korrekta. Delarna är två olika situationer och skrivs tydligt så. Facit visar 2,50cm→0,0250m, laddningsprodukt och kvadratroten för b. Kort på E/2, egna data och specifika ledtrådar."
+    },
+    "8.479": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Q=0,126561 µC och 10Q=1,26561 µC. Facit visade Q² men hoppade över både division med 10 och roten. Nu alla viktiga mellanled. b egetQ=0,12656µC och nivå 1; huvudstrategi C/3.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Q=0,126561 µC och 10Q=1,26561 µC. Facit visade Q² men hoppade över både division med 10 och roten. Nu alla viktiga mellanled. b egetQ=0,12656µC och nivå 1; huvudstrategi C/3."
+    },
+    "8.480": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "F=3,07626e−8 N är korrekt. Förklarar kärnans+3e och 150pm→1,50e−10m. Laddningsprodukt och insättning visas. Två rutinomvandlingar E/2, inte C/3.",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: F=3,07626e−8 N är korrekt. Förklarar kärnans+3e och 150pm→1,50e−10m. Laddningsprodukt och insättning visas. Två rutinomvandlingar E/2, inte C/3."
+    },
+    "8.481": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Varje klot får laddningsbelopp 2,0826e−10 C, F=1,559665e−7 N. Ursprungligt svar korrekt. Båda sambanden och tecknen visas; E/2, inte C/3. Spelkort självständigt.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Varje klot får laddningsbelopp 2,0826e−10 C, F=1,559665e−7 N. Ursprungligt svar korrekt. Båda sambanden och tecknen visas; E/2, inte C/3. Spelkort självständigt."
+    },
+    "8.482": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "T=0,1153636 N och d_min=0,0172691 m är korrekta. Stillastående kula och mittpunktsavstånd uttryckliga. Facit visar tyngd, elektrisk kraft, jämvikt och största elektriska kraft före roten. C/3–4, inga A-poäng för givna rutinmodeller. Ny kraftfigur.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: T=0,1153636 N och d_min=0,0172691 m är korrekta. Stillastående kula och mittpunktsavstånd uttryckliga. Facit visar tyngd, elektrisk kraft, jämvikt och största elektriska kraft före roten. C/3–4, inga A-poäng för givna rutinmodeller. Ny kraftfigur."
+    },
+    "8.483": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Fjäderkonstanter 49,3166/5154,2667 N/m är korrekta. a förklarar att tyngden redan var balanserad före den extra förlängningen. b anger fjäderns fäste och jämvikt. Två fristående C/3 respektiveE/2-kort med egna data; enhet och viktiga mellanled.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Fjäderkonstanter 49,3166/5154,2667 N/m är korrekta. a förklarar att tyngden redan var balanserad före den extra förlängningen. b anger fjäderns fäste och jämvikt. Två fristående C/3 respektiveE/2-kort med egna data; enhet och viktiga mellanled."
+    },
+    "8.485": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "F=0,00899 N/a=0,00899 m/s² i huvuduppgiften. Spelkort b använder sin givna 9,0mN och rättas mot 0,0090, inte ett dolt mer exakt a-resultat. Kort a 2/b 1 med enkel färdig N-enhet. Facit beskriver acceleration när föremålen släpps, inte konstant acceleration senare.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: F=0,00899 N/a=0,00899 m/s² i huvuduppgiften. Spelkort b använder sin givna 9,0mN och rättas mot 0,0090, inte ett dolt mer exakt a-resultat. Kort a 2/b 1 med enkel färdig N-enhet. Facit beskriver acceleration när föremålen släpps, inte konstant acceleration senare."
+    },
+    "8.486": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "F=0,0561875 N, huvudkvot 2,86087. Spelkort b hade 56mN i frågan men 56,2mN i facit; nu används exakt givna 0,056N och target 2,851324. E/2 i båda rutinfrågorna, inte C. Massan tas bort från a-kortet där den inte behövs.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: F=0,0561875 N, huvudkvot 2,86087. Spelkort b hade 56mN i frågan men 56,2mN i facit; nu används exakt givna 0,056N och target 2,851324. E/2 i båda rutinfrågorna, inte C. Massan tas bort från a-kortet där den inte behövs."
+    },
+    "8.487": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "r=0,0256477 m korrekt. Facit visar hur r² löses ut före roten, nC-omvandling och 0,026m. E/2; gamla resultat och rimlig precision bevaras.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: r=0,0256477 m korrekt. Facit visar hur r² löses ut före roten, nC-omvandling och 0,026m. E/2; gamla resultat och rimlig precision bevaras."
+    },
+    "8.488": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Givna data ger 14,9664/10,0336nC, vilket korrekt avrundas till 15/10nC. Tidigare avrundat facit var rätt men andragradslösningen saknades. Nu förklaras summa, produkt, ekvation och båda rötterna. b självständigt med given större laddning 15nC och enkel nivå 1; huvud-A/5 för kombinerad strategi behålls. a-kortet visar bara den större roten och avslöjar inte b-kortets svar.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Givna data ger 14,9664/10,0336nC, vilket korrekt avrundas till 15/10nC. Tidigare avrundat facit var rätt men andragradslösningen saknades. Nu förklaras summa, produkt, ekvation och båda rötterna. b självständigt med given större laddning 15nC och enkel nivå 1; huvud-A/5 för kombinerad strategi behålls. a-kortet visar bara den större roten och avslöjar inte b-kortets svar."
+    },
+    "8.489": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Q=+10,0111 nC är korrekt. Riktningen på kraften förklarar positivt tecken. Facit visar isolering, SI-laddning ochnC. E/2 i stället för C/3; ny figur visar kraften på glaskulan.",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Q=+10,0111 nC är korrekt. Riktningen på kraften förklarar positivt tecken. Facit visar isolering, SI-laddning ochnC. E/2 i stället för C/3; ny figur visar kraften på glaskulan."
+    },
+    "8.490": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "F=0,004495N på vardera föremålet är korrekt. Koordinater och origo togs bort eftersom de inte behövs för kraftstorleken; enkel situation med 2,0cm. SI-omvandling, insättning och kraft–motkraft förklaras. E/2.",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: F=0,004495N på vardera föremålet är korrekt. Koordinater och origo togs bort eftersom de inte behövs för kraftstorleken; enkel situation med 2,0cm. SI-omvandling, insättning och kraft–motkraft förklaras. E/2."
+    },
+    "8.491": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "a_e=3,161796e 17/a_p=1,721695e 14m/s² är korrekta. Den elektriska kraftens beräkning visas förea=F/m; riktning skiljs från storlek. Självbärande b får egen kraft, inte dold elektronberäkning. E/2 på korten; heluppgift tydlig utan lösryckt”för en”.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: a_e=3,161796e 17/a_p=1,721695e 14m/s² är korrekta. Den elektriska kraftens beräkning visas förea=F/m; riktning skiljs från storlek. Självbärande b får egen kraft, inte dold elektronberäkning. E/2 på korten; heluppgift tydlig utan lösryckt”för en”."
+    },
+    "8.492": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "q=100,0556 nC korrekt. Det måste framgå att elektrisk kraft ger den angivna accelerationen, annars saknas modellvillkor. Vågrätt friktionsfritt bord anges. Facit visarF=0,225N, q² och roten. C/3 strategi, tydlig nC-enhet.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: q=100,0556 nC korrekt. Det måste framgå att elektrisk kraft ger den angivna accelerationen, annars saknas modellvillkor. Vågrätt friktionsfritt bord anges. Facit visarF=0,225N, q² och roten. C/3 strategi, tydlig nC-enhet."
+    },
+    "8.493": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "B≈0,500278µC och A≈1,000556µC korrekt. a fårprodukt 2q² och roten fullständigt förklarade. b hade inget synligtq_B men använde det: nu egetgivet 0,50µC, rättat mot 1,0µC och nivå 1. Huvudstrategi C/3.",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: B≈0,500278µC och A≈1,000556µC korrekt. a fårprodukt 2q² och roten fullständigt förklarade. b hade inget synligtq_B men använde det: nu egetgivet 0,50µC, rättat mot 1,0µC och nivå 1. Huvudstrategi C/3."
+    },
+    "8.494": {
+      "method": "Manuell fysik-, språk-, nivå- och kortgranskning",
+      "comment": "Fjäderkonstant 0,982N/m, elektrisk kraft 0,00491N ochq=33,2563nC korrekt. Viktiga skillnader mellan total fjäderlängd, förlängning och laddningsavstånd förklaras. Tydlig text, fastsatt situation och jämvikt. C/4 i stället för A/4.",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "status": "Åtgärdad",
+      "commentProposal": "Åtgärdad: Fjäderkonstant 0,982N/m, elektrisk kraft 0,00491N ochq=33,2563nC korrekt. Viktiga skillnader mellan total fjäderlängd, förlängning och laddningsavstånd förklaras. Tydlig text, fastsatt situation och jämvikt. C/4 i stället för A/4."
+    }
+  },
+  "models": {
+    "8.22": [
+      2.307197196e-24,
+      1.8680052146e-60,
+      1.2351128240795864e+36
+    ],
+    "8.24": [
+      null,
+      8.740277777777779e-05
+    ],
+    "8.159": [
+      4.2140624999999996e-05,
+      null,
+      1.0535156249999999e-05
+    ],
+    "8.119": [
+      2,
+      2.2475e-05
+    ],
+    "8.161": [
+      57.53599999999999,
+      5,
+      89.89999999999999
+    ],
+    "8.58": [
+      null,
+      null,
+      14.149998919097346,
+      88327084388.87233
+    ],
+    "8.121": [
+      null,
+      [
+        99.88888888888891,
+        28.768
+      ],
+      128.65688888888891
+    ],
+    "8.33": [
+      8.428124999999999e-05,
+      0.00014983333333333333,
+      [
+        171.91089808194323,
+        60.642246457208735
+      ]
+    ],
+    "8.160": [
+      0.0001997777777777778,
+      0.00016856249999999998,
+      [
+        261.38951184023654,
+        40.15599962491932
+      ]
+    ],
+    "8.120": [
+      null,
+      null,
+      null
+    ],
+    "8.122": [
+      null,
+      null,
+      null
+    ],
+    "8.32": [
+      6.0,
+      null
+    ],
+    "8.34": [
+      8.0,
+      null
+    ],
+    "8.314": 0.5,
+    "8.320": 0.39,
+    "8.317": 1,
+    "8.313": 0,
+    "8.316": -0.000351171875,
+    "8.319": null,
+    "8.484": 0.9509618943233421,
+    "8.311": 0.19988885800753267,
+    "8.312": 0.7491666666666665,
+    "8.318": 0.8990000000000001,
+    "8.174": -40.05,
+    "8.476": 9987515605493.133,
+    "8.477": -7.304624185603052,
+    "8.478": [
+      14384.0,
+      0.821127273935046
+    ],
+    "8.479": [
+      0.12656143785860086,
+      1.2656143785860086
+    ],
+    "8.480": 3.076262928e-08,
+    "8.481": 1.5596653044959995e-07,
+    "8.482": [
+      0.11536359999999998,
+      0.01726911362022496
+    ],
+    "8.483": [
+      49.316571428571415,
+      5154.266666666666
+    ],
+    "8.485": [
+      0.00899,
+      0.00899
+    ],
+    "8.486": [
+      0.05618749999999999,
+      2.860870672097759
+    ],
+    "8.487": 0.025647707071954417,
+    "8.488": [
+      14.966403848147728,
+      10.033596151852272
+    ],
+    "8.489": 10.011123470522802,
+    "8.490": 0.004495,
+    "8.491": [
+      3.161795828759605e+17,
+      172169515839808.72
+    ],
+    "8.492": 100.05560189476051,
+    "8.493": [
+      0.5002780094738026,
+      1.0005560189476053
+    ],
+    "8.494": 33.256260544535166
+  },
+  "verification": {
+    "physicsRegressionTests": {
+      "file": "tools/fysik1-coulomb-hela.test.js",
+      "passed": 5
+    },
+    "actualGrader": {
+      "numeric": 70,
+      "alternatives": 36,
+      "failures": []
+    },
+    "browser": {
+      "parents": 42,
+      "numericContractChecks": 126,
+      "cards": 72,
+      "views": 288,
+      "failures": []
+    },
+    "latestChangedCardViews": {
+      "parents": 7,
+      "numericContractChecks": 26,
+      "cards": 12,
+      "views": 48,
+      "failures": []
+    },
+    "latestFigureViews": {
+      "parents": 1,
+      "numericContractChecks": 8,
+      "cards": 3,
+      "views": 12,
+      "failures": []
+    },
+    "masterSuite": {
+      "passed": 259,
+      "failed": 0,
+      "command": "CHROME_PATH=/tmp/charge-chrome-playwright node --test tools/*.test.js"
+    },
+    "consumerSuite": {
+      "passed": 99,
+      "failed": 0
+    },
+    "svg": {
+      "figures": 24,
+      "confirmedRemainingErrors": 0,
+      "heuristicWarnings": 2,
+      "disposition": "Endast plus/minus inne i kulornas cirklar i8.482; båda avsiktliga laddningssymboler. Samtliga figurer visuellt kontrollerade."
+    },
+    "bankValidator": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 685
+    },
+    "reviewRounds": "Manuell huvudgranskning och efterkontroll av fysikmodeller, facit, egna kortdata, rättning och figurer. Detta är inte två hela-bank-rundor.",
+    "lastFacitViews": {
+      "parents": 1,
+      "numericContractChecks": 4,
+      "cards": 2,
+      "views": 8,
+      "failures": []
+    }
+  }
+}
