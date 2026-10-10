@@ -329,3 +329,15 @@ Se `tools/fysik1-kretsar.test.js`, Kunskapsgymmets
 `tools/temperaturandring.test.js`, `tools/delkort.test.js` och
 `tools/kretsar-fy1-2026-10-10.browser.py`. Alla granskade ID:n och
 återstående uppgifter registreras i `ELEKTRICITET_GRANSKNINGSSTATUS.json`.
+
+## FP13 – efterfrågad storhet, fristående batterikort och omöjliga energimodeller (2026-10-10)
+
+135 kopplingsuppgifter är genomlästa och omräknade, med ID-för-ID-kommentarer i [KOPPLINGAR_FYSIK1_2026-10-10.md](KOPPLINGAR_FYSIK1_2026-10-10.md) och maskinläsbart ändringsunderlag i motsvarande JSON. Se särskilt 8.39, 8.112, 8.97, 8.164, 8.99, 8.13 och 8.402: ett korrekt mellanled gör inte ett gammalt motstridigt slutsvar korrekt. Facit och rättning måste svara på den storhet frågan faktiskt efterfrågar. En fråga om kopplingstyp ska inte rättas som effekt i W.
+
+Delkort med avrundade givna mellanvärden ska ha egna numeriska mål: exempelvis 8.43, 8.94, 8.162, 8.402, 8.403, 8.407 och 8.409. Föräldralösningen kan samtidigt använda full precision. Bevara denna avsiktliga skillnad och förklaring; återställ inte gamla föräldravärden i barnkort. Två efterfrågade strömmar/spänningar ska ha två namngivna fält och ordnad rättning: 8.18, 8.87, 8.90, 8.98, 8.162, 8.164. Numeriska kort ska inte blockeras av gammal manuellKomplettering, som i 8.154.
+
+Ett värmeproblem behöver veta vart energin går, kort och tydligt: 8.451, 8.455, 8.457, 8.458, 8.459, 8.460 och 8.462. Temperaturökning, exempelvis 8.452b, använder temperaturandring så att samma tal i K och °C godtas utan 273-omvandling. Energi som fås tillbaka vid batteriurladdning är inte automatiskt all kemiskt lagrad energi. 8.98 använder för låg spänning för en extrapolering där förlusten överstiger tillförseln; detta granskas som orimlig modell, inte som ett möjligt driftfall. En säkrings märkström är inte en exakt utlösningstid (8.96). Högre inre resistans kan göra bilstart svårare, men utan startgräns kan man inte säkert säga att bilen inte startar (8.162).
+
+Rutinuppgifter klassas efter fysikvalet, inte antalet multiplikationer eller ursprungliga A-markeringen: 8.202, 8.205, 8.203, 8.206, 8.235, 8.238, 8.241 och 8.447. Direkt formel nivå 1; vanliga omvandlingar/bekanta samband nivå 2. Fri grafritning 8.10 och generellt symboliskt resonemang 8.153 bevaras hos läraren. För optimering 8.13 behövs en verklig motivering till R = r; numeriskt optimalvärde ensamt ersätter inte lärarens resonemang.
+
+Kretsfigurer har kontrollerad topologi och större Arial-etiketter med marginaler. Ändra inte polaritet, amperemeterns seriekoppling eller voltmeterns parallellkoppling när figurer förbättras. A/V ligger avsiktligt inne i instrumentcirklar. De äldre små/överlappande etiketterna i bland annat 8.52, 8.95, 8.123, 8.130, 8.134 och 8.154 ska inte återinföras.

@@ -4,7 +4,7 @@
   "chapter": 8,
   "total": 517,
   "firstManualPass": {
-    "reviewedCount": 382,
+    "reviewedCount": 517,
     "reviewedIdsWithProvenance": {
       "8.78": [
         "ELEKTRICITET_FYSIK1_2026-10-09.json"
@@ -1151,145 +1151,414 @@
       ],
       "8.474": [
         "KRETSAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.2": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.207": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.208": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.3": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.4": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.5": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.209": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.6": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.210": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.211": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.10": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.212": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.13": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.213": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.214": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.14": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.215": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.216": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.15": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.217": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.18": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.27": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.36": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.37": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.39": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.43": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.44": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.218": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.219": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.45": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.220": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.46": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.221": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.222": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.52": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.53": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.54": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.63": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.223": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.224": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.66": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.225": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.75": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.193": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.77": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.194": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.87": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.90": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.92": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.226": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.227": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.93": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.228": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.229": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.94": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.230": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.95": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.231": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.232": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.96": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.233": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.97": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.234": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.235": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.98": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.236": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.237": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.99": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.238": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.109": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.111": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.112": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.123": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.126": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.127": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.252": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.130": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.133": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.253": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.134": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.254": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.255": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.153": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.154": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.256": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.156": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.162": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.239": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.240": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.163": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.241": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.164": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.242": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.243": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.202": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.203": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.183": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.184": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.205": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.185": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.186": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.206": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.187": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.370": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.398": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.399": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.400": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.401": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.402": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.403": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.404": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.405": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.406": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.407": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.408": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.409": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.445": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.446": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.447": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.448": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.449": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.450": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.451": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.452": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.453": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.454": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.455": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.456": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.457": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.458": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.459": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.460": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.461": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.462": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
+      ],
+      "8.463": [
+        "KOPPLINGAR_FYSIK1_2026-10-10.json"
       ]
     },
-    "pendingIds": [
-      "8.2",
-      "8.207",
-      "8.208",
-      "8.3",
-      "8.4",
-      "8.5",
-      "8.209",
-      "8.6",
-      "8.210",
-      "8.211",
-      "8.10",
-      "8.212",
-      "8.13",
-      "8.213",
-      "8.214",
-      "8.14",
-      "8.215",
-      "8.216",
-      "8.15",
-      "8.217",
-      "8.18",
-      "8.27",
-      "8.36",
-      "8.37",
-      "8.39",
-      "8.43",
-      "8.44",
-      "8.218",
-      "8.219",
-      "8.45",
-      "8.220",
-      "8.46",
-      "8.221",
-      "8.222",
-      "8.52",
-      "8.53",
-      "8.54",
-      "8.63",
-      "8.223",
-      "8.224",
-      "8.66",
-      "8.225",
-      "8.75",
-      "8.193",
-      "8.77",
-      "8.194",
-      "8.87",
-      "8.90",
-      "8.92",
-      "8.226",
-      "8.227",
-      "8.93",
-      "8.228",
-      "8.229",
-      "8.94",
-      "8.230",
-      "8.95",
-      "8.231",
-      "8.232",
-      "8.96",
-      "8.233",
-      "8.97",
-      "8.234",
-      "8.235",
-      "8.98",
-      "8.236",
-      "8.237",
-      "8.99",
-      "8.238",
-      "8.109",
-      "8.111",
-      "8.112",
-      "8.123",
-      "8.126",
-      "8.127",
-      "8.252",
-      "8.130",
-      "8.133",
-      "8.253",
-      "8.134",
-      "8.254",
-      "8.255",
-      "8.153",
-      "8.154",
-      "8.256",
-      "8.156",
-      "8.162",
-      "8.239",
-      "8.240",
-      "8.163",
-      "8.241",
-      "8.164",
-      "8.242",
-      "8.243",
-      "8.202",
-      "8.203",
-      "8.183",
-      "8.184",
-      "8.205",
-      "8.185",
-      "8.186",
-      "8.206",
-      "8.187",
-      "8.370",
-      "8.398",
-      "8.399",
-      "8.400",
-      "8.401",
-      "8.402",
-      "8.403",
-      "8.404",
-      "8.405",
-      "8.406",
-      "8.407",
-      "8.408",
-      "8.409",
-      "8.445",
-      "8.446",
-      "8.447",
-      "8.448",
-      "8.449",
-      "8.450",
-      "8.451",
-      "8.452",
-      "8.453",
-      "8.454",
-      "8.455",
-      "8.456",
-      "8.457",
-      "8.458",
-      "8.459",
-      "8.460",
-      "8.461",
-      "8.462",
-      "8.463"
-    ]
+    "pendingIds": []
   },
   "wholeBankComplete": false,
   "wholeBankSecondManualPassComplete": false

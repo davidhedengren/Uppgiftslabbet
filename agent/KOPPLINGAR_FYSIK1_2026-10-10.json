@@ -1,0 +1,2880 @@
+{
+  "baseline": "08f8443",
+  "scope": {
+    "course": "fy1",
+    "chapter": 8,
+    "area": "kopplingar",
+    "ids": [
+      "8.2",
+      "8.207",
+      "8.208",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.209",
+      "8.6",
+      "8.210",
+      "8.211",
+      "8.10",
+      "8.212",
+      "8.13",
+      "8.213",
+      "8.214",
+      "8.14",
+      "8.215",
+      "8.216",
+      "8.15",
+      "8.217",
+      "8.18",
+      "8.27",
+      "8.36",
+      "8.37",
+      "8.39",
+      "8.43",
+      "8.44",
+      "8.218",
+      "8.219",
+      "8.45",
+      "8.220",
+      "8.46",
+      "8.221",
+      "8.222",
+      "8.52",
+      "8.53",
+      "8.54",
+      "8.63",
+      "8.223",
+      "8.224",
+      "8.66",
+      "8.225",
+      "8.75",
+      "8.193",
+      "8.77",
+      "8.194",
+      "8.87",
+      "8.90",
+      "8.92",
+      "8.226",
+      "8.227",
+      "8.93",
+      "8.228",
+      "8.229",
+      "8.94",
+      "8.230",
+      "8.95",
+      "8.231",
+      "8.232",
+      "8.96",
+      "8.233",
+      "8.97",
+      "8.234",
+      "8.235",
+      "8.98",
+      "8.236",
+      "8.237",
+      "8.99",
+      "8.238",
+      "8.109",
+      "8.111",
+      "8.112",
+      "8.123",
+      "8.126",
+      "8.127",
+      "8.252",
+      "8.130",
+      "8.133",
+      "8.253",
+      "8.134",
+      "8.254",
+      "8.255",
+      "8.153",
+      "8.154",
+      "8.256",
+      "8.156",
+      "8.162",
+      "8.239",
+      "8.240",
+      "8.163",
+      "8.241",
+      "8.164",
+      "8.242",
+      "8.243",
+      "8.202",
+      "8.203",
+      "8.183",
+      "8.184",
+      "8.205",
+      "8.185",
+      "8.186",
+      "8.206",
+      "8.187",
+      "8.370",
+      "8.398",
+      "8.399",
+      "8.400",
+      "8.401",
+      "8.402",
+      "8.403",
+      "8.404",
+      "8.405",
+      "8.406",
+      "8.407",
+      "8.408",
+      "8.409",
+      "8.445",
+      "8.446",
+      "8.447",
+      "8.448",
+      "8.449",
+      "8.450",
+      "8.451",
+      "8.452",
+      "8.453",
+      "8.454",
+      "8.455",
+      "8.456",
+      "8.457",
+      "8.458",
+      "8.459",
+      "8.460",
+      "8.461",
+      "8.462",
+      "8.463"
+    ]
+  },
+  "reviews": {
+    "8.207": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.216": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.228": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Korrekt polspänning med tydlig batterimodell och specifik ledtråd. Onödigt avancerad klassning ersätts vid behov med E/nivå 2; rimliga avrundningar godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.209": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.210": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.220": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.400": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E.",
+      "suggestedComment": "Frågan och facit är korta och visar först det inre spänningsfallet, sedan efterfrågad storhet. Svaret är beräknat från givna data på nivå 2/E.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.208": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "suggestedComment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.217": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "suggestedComment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.219": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "suggestedComment": "Direkt samband med tydliga data på nivå 1. Fysik och facit var korrekta; ledtråden görs uppgiftsspecifik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.211": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "suggestedComment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.212": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "suggestedComment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.218": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "suggestedComment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.221": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad"
+      ],
+      "comment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "suggestedComment": "Begrepp, rätt alternativ och facit kontrollerade. Ir ger rätt resonemang; generisk ledtråd om tecken ersatt. Tidigare korrekt fysik.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.213": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "suggestedComment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.235": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "suggestedComment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.238": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "suggestedComment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.241": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "suggestedComment": "Kortslutningsmodellen ger en direkt Ohms lag-beräkning, nivå 1/E. Tidigare A/nivå 4 för några sådana frågor var missvisande. Facit använder modellens givna värden.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.214": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "suggestedComment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.222": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "suggestedComment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.224": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "suggestedComment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.226": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "suggestedComment": "Onödig ems/spänning och överflödig figur borttagna från frågan om I²r. Direkt effektberäkning på nivå 1/E. Facit visar insättningen utan svåra förlusttermer.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.223": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två serieresistanser och Ohms lag är nivå 2/E, inte C. Facit visar varför resistanserna adderas. Avrundning till två värdesiffror möjlig. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Två serieresistanser och Ohms lag är nivå 2/E, inte C. Facit visar varför resistanserna adderas. Avrundning till två värdesiffror möjlig. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.225": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "En strömklon blir en tydlig invers fråga om yttre resistans. Egna data och korrekt 7,30 Ω; E/nivå 2. Den gamla figuren visar en redan känd yttre resistans och har därför ersatts av den rena frågan.",
+      "suggestedComment": "En strömklon blir en tydlig invers fråga om yttre resistans. Egna data och korrekt 7,30 Ω; E/nivå 2. Den gamla figuren visar en redan känd yttre resistans och har därför ersatts av den rena frågan.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.227": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två serieresistanser och Ohms lag är nivå 2/E, inte C. Facit visar varför resistanserna adderas. Avrundning till två värdesiffror möjlig. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Två serieresistanser och Ohms lag är nivå 2/E, inte C. Facit visar varför resistanserna adderas. Avrundning till två värdesiffror möjlig. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.215": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit förklarar varför spänningskvoten motsvarar effektandelen. Korrekta avrundade procenttal godkänns. E/nivå 2.",
+      "suggestedComment": "Facit förklarar varför spänningskvoten motsvarar effektandelen. Korrekta avrundade procenttal godkänns. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.234": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Lång definition och överflödig ems ersätts med tydlig fråga om effektandel. Facit motiverar resistanskvoten. Rutin på nivå 2/E, inte A/nivå 4.",
+      "suggestedComment": "Lång definition och överflödig ems ersätts med tydlig fråga om effektandel. Facit motiverar resistanskvoten. Rutin på nivå 2/E, inte A/nivå 4.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.237": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Variant av effektandelsfrågorna söker förlustandelen 20 %, inte ännu en likadan verkningsgrad. Kort fråga, tydlig jämförelse och E/nivå 2.",
+      "suggestedComment": "Variant av effektandelsfrågorna söker förlustandelen 20 %, inte ännu en likadan verkningsgrad. Kort fråga, tydlig jämförelse och E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.240": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Lång definition och överflödig ems ersätts med tydlig fråga om effektandel. Facit motiverar resistanskvoten. Rutin på nivå 2/E, inte A/nivå 4.",
+      "suggestedComment": "Lång definition och överflödig ems ersätts med tydlig fråga om effektandel. Facit motiverar resistanskvoten. Rutin på nivå 2/E, inte A/nivå 4.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.229": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Två rutinberäkningar på E/nivå 2, med fullständigt ström-mellanresultat. Voltmeterns spänning preciseras till polspänning. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Två rutinberäkningar på E/nivå 2, med fullständigt ström-mellanresultat. Voltmeterns spänning preciseras till polspänning. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.230": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar total resistans innan den inre dras bort. Korrekt rutin E/nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar total resistans innan den inre dras bort. Korrekt rutin E/nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.231": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit skiljer total resistans i strömberäkningen från yttre resistans i effektberäkningen. E/nivå 2; 16 W godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit skiljer total resistans i strömberäkningen från yttre resistans i effektberäkningen. E/nivå 2; 16 W godkänns. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.232": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit förklarar kopplingen mellan polspänning och yttre effekt. E/nivå 2 i stället för C; data behållna. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit förklarar kopplingen mellan polspänning och yttre effekt. E/nivå 2 i stället för C; data behållna. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.233": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit gör två tydliga beräkningar och förväxlar inte inre spänningsfall med polspänning. E/nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit gör två tydliga beräkningar och förväxlar inte inre spänningsfall med polspänning. E/nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.236": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Avancerad kvotalgebra ersätts med de två naturliga Ohms lag-beräkningarna. Tydlig E/nivå 2 i stället för A/nivå 4. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Avancerad kvotalgebra ersätts med de två naturliga Ohms lag-beräkningarna. Tydlig E/nivå 2 i stället för A/nivå 4. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.239": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit förklarar varför differenserna kan divideras och varför ems försvinner. Två mätningar med modell kräver C/nivå 3, inte A/nivå 4.",
+      "suggestedComment": "Facit förklarar varför differenserna kan divideras och varför ems försvinner. Två mätningar med modell kräver C/nivå 3, inte A/nivå 4.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.242": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Effektkvoten och innebörden av 20 % förklaras. Jämförelse av två effekter bedöms C/nivå 3 i stället för A/nivå 4. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Effektkvoten och innebörden av 20 % förklaras. Jämförelse av två effekter bedöms C/nivå 3 i stället för A/nivå 4. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.243": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig ems och lång definition borttagna. Facit visar de tidigare överhoppade ekvationsleden. C/nivå 3 för invers effektandel.",
+      "suggestedComment": "Onödig ems och lång definition borttagna. Facit visar de tidigare överhoppade ekvationsleden. C/nivå 3 för invers effektandel.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.193": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.194": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.183": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.184": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.202": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.205": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.203": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.206": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering. Sökt storhet ändrad för variation.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering. Sökt storhet ändrad för variation.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.185": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.186": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering. Sökt storhet ändrad för variation.",
+      "suggestedComment": "Kortare text och facit med insatta värden. Direkt samband nivå 1; omvandling eller omvänt samband nivå 2. Ingen otillbörlig C/A-gradering. Sökt storhet ändrad för variation.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.187": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Facit visar kWh till kW och W före strömberäkningen. Rutin på nivå 2, inte A/nivå 4. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Facit visar kWh till kW och W före strömberäkningen. Rutin på nivå 2, inte A/nivå 4. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.399": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit räknar samman ems och inre resistanser och delar slutligen på fyra. E/nivå 2.",
+      "suggestedComment": "Facit räknar samman ems och inre resistanser och delar slutligen på fyra. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.401": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit motiverar strömdelningen och använder varje batteris ström, inte den sammanlagda. C/nivå 3.",
+      "suggestedComment": "Facit motiverar strömdelningen och använder varje batteris ström, inte den sammanlagda. C/nivå 3.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.404": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Nödvändiga mellanberäkningar visas. Två bekanta samband: E/nivå 2.",
+      "suggestedComment": "Nödvändiga mellanberäkningar visas. Två bekanta samband: E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.408": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Båda batterierna ingår i kretsberäkningen. Facit visar ström och effekt; E/nivå 2.",
+      "suggestedComment": "Båda batterierna ingår i kretsberäkningen. Facit visar ström och effekt; E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.447": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit skiljer tillförd mekanisk effekt från elektrisk effekt och visar omvandlingen hk till W. E/nivå 2.",
+      "suggestedComment": "Facit skiljer tillförd mekanisk effekt från elektrisk effekt och visar omvandlingen hk till W. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.448": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Effekt, energi och kostnad redovisas med respektive enhet. Två värdesiffror godkänns. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Effekt, energi och kostnad redovisas med respektive enhet. Två värdesiffror godkänns. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.450": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Jämförelsen gäller lika starkt ljus. Facit visar skillnad i effekt, årstid och besparing. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Jämförelsen gäller lika starkt ljus. Facit visar skillnad i effekt, årstid och besparing. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.451": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Värmemodellen anges kort. Energi och effekt beräknas före tiden; nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Värmemodellen anges kort. Energi och effekt beräknas före tiden; nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.453": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "kWh omvandlas till joule innan laddningen beräknas. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "kWh omvandlas till joule innan laddningen beräknas. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.454": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Maximal tjocklek är en fysisk övre gräns, inte ett ogrundat exakt verklighetsvärde. Facit visar energi, massa, volym och tjocklek. C/nivå 4. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Maximal tjocklek är en fysisk övre gräns, inte ett ogrundat exakt verklighetsvärde. Facit visar energi, massa, volym och tjocklek. C/nivå 4. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.455": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Saknat villkor om energins väg ges i frågan. Enheten är kg/min, inte en fristående massa. Facit visar minutenergin. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Saknat villkor om energins väg ges i frågan. Enheten är kg/min, inte en fristående massa. Facit visar minutenergin. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.457": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Verkningsgraden hanteras åt rätt håll; energi, minutomvandling och ström visas. E/nivå 2.",
+      "suggestedComment": "Verkningsgraden hanteras åt rätt håll; energi, minutomvandling och ström visas. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.458": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar båda energisambanden. Värmemodellen anges och en rimligt avrundad tid godkänns. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Facit visar båda energisambanden. Värmemodellen anges och en rimligt avrundad tid godkänns. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.459": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Saknat antagande om värme till vattnet tillagt. Facit visar energi, tid och resistans; nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Saknat antagande om värme till vattnet tillagt. Facit visar energi, tid och resistans; nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.460": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Saknad värmemodell tillagd utan lång friskrivning. Facit omvandlar massan och visar energi och effekt. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Saknad värmemodell tillagd utan lång friskrivning. Facit omvandlar massan och visar energi och effekt. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.463": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar den tidigare överhoppade tvärsnittsarean. Radie/diameter och alla SI-enheter är tydliga. E/nivå 2.",
+      "suggestedComment": "Facit visar den tidigare överhoppade tvärsnittsarean. Radie/diameter och alla SI-enheter är tydliga. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.109": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Granskad – inget fel: sambanden, numeriken och lösningens förklaring är korrekta. Givna värden räcker till en självständig lösning. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Granskad – inget fel: sambanden, numeriken och lösningens förklaring är korrekta. Givna värden räcker till en självständig lösning. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.370": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Granskad – inget fel: sambanden, numeriken och lösningens förklaring är korrekta. Givna värden räcker till en självständig lösning. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Granskad – inget fel: sambanden, numeriken och lösningens förklaring är korrekta. Givna värden räcker till en självständig lösning. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.3": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.6": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.14": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.15": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.27": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.156": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.36": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.39": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Felaktiga gamla slutsvar 6,0/180/450/8,70 har ersatts med 6,3/189/472,5/7,83. Självständiga kort och rätt effekt, energi och ström.",
+      "suggestedComment": "Felaktiga gamla slutsvar 6,0/180/450/8,70 har ersatts med 6,3/189/472,5/7,83. Självständiga kort och rätt effekt, energi och ström.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.44": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.45": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.63": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.66": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.75": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.77": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.87": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "De två första delarna kräver två svar, inte bara det sist nämnda värdet. Båda rättas nu i namngivna fält. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "De två första delarna kräver två svar, inte bara det sist nämnda värdet. Båda rättas nu i namngivna fält. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.92": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.111": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.112": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Felaktiga slutsvar 9,0 V och 5,56 h ersatta med 9,33 V och 5,68 h. Enheter, omvandlingar och fristående kort fungerar.",
+      "suggestedComment": "Felaktiga slutsvar 9,0 V och 5,56 h ersatta med 9,33 V och 5,68 h. Enheter, omvandlingar och fristående kort fungerar.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.43": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.53": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.133": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.123": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.127": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.130": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.4": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.52": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.252": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.254": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.255": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.256": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Facit visar resistans, ström och de spännings-/effektberäkningar som frågan kräver. Rätt numerik och kortare formulering; rutinuppgifter flyttade från A till nivå 2. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.253": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "En upprepning har blivit en omvänd kretsfråga om källspänning. Figuren visar U = ?, inte det sökta svaret. Facit visar varför grenströmmarna adderas. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "En upprepning har blivit en omvänd kretsfråga om källspänning. Figuren visar U = ?, inte det sökta svaret. Facit visar varför grenströmmarna adderas. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.134": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "poang",
+        "s",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Den omvända kretsberäkningen 8,4 V är korrekt. Ledtråden pekar på den uppmätta grenströmmen; rättningsbar på C/nivå 3. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Den omvända kretsberäkningen 8,4 V är korrekt. Ledtråden pekar på den uppmätta grenströmmen; rättningsbar på C/nivå 3. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.154": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEnhet",
+        "svarFormat",
+        "svarstyp",
+        "t",
+        "tolerans"
+      ],
+      "comment": "0,010 A genom R₄ är korrekt. Den avbrutna ledtråden är ersatt med en sammanhängande förklaring. C/nivå 3 för tre parallellgrenar. Långa ekvationskedjor delas över rader för läsbarhet på mobil. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi. Kvarvarande manuell-markering borttagen så det numeriska spelkortet kan slutföras. Kvarvarande manuell-markering borttagen så det numeriska spelkortet kan slutföras. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "0,010 A genom R₄ är korrekt. Den avbrutna ledtråden är ersatt med en sammanhängande förklaring. C/nivå 3 för tre parallellgrenar. Långa ekvationskedjor delas över rader för läsbarhet på mobil. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi. Kvarvarande manuell-markering borttagen så det numeriska spelkortet kan slutföras. Kvarvarande manuell-markering borttagen så det numeriska spelkortet kan slutföras. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.10": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Lärarens fria grafanpassning bevarad. Facit skiljer linjens intercept, negativa lutning och positiv inre resistans. Rimlig C/nivå 3 i stället för A/5.",
+      "suggestedComment": "Lärarens fria grafanpassning bevarad. Facit skiljer linjens intercept, negativa lutning och positiv inre resistans. Rimlig C/nivå 3 i stället för A/5.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.153": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "t",
+        "traningsniva"
+      ],
+      "comment": "Den symboliska läraruppgiften bevaras utanför spelet. Positivt n och samma källspänning anges. Facit förklarar I/n respektive nI; C/nivå 3.",
+      "suggestedComment": "Den symboliska läraruppgiften bevaras utanför spelet. Positivt n och samma källspänning anges. Facit förklarar I/n respektive nI; C/nivå 3.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.13": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans"
+      ],
+      "comment": "Del a svarar nu med resistans 0,60 Ω, inte ett effektuttryck. Facit motiverar varför R = r ger maximum. Rutin-b är nivå 2, optimering-a nivå 4/A; fri motivering finns kvar hos läraren. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Del a svarar nu med resistans 0,60 Ω, inte ett effektuttryck. Facit motiverar varför R = r ger maximum. Rutin-b är nivå 2, optimering-a nivå 4/A; fri motivering finns kvar hos läraren. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.2": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelDelning",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Otydlig lång berättelse ersatt med konkret modellfråga. Verklig inre resistans förklarar avvikelsen; ingen okänd inre resistans används som given siffra. E/nivå 2.",
+      "suggestedComment": "Otydlig lång berättelse ersatt med konkret modellfråga. Verklig inre resistans förklarar avvikelsen; ingen okänd inre resistans används som given siffra. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.5": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.46": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Det felaktiga påståendet att 5 000 V är ofarligt är borttaget. Facit förklarar relevanta fysikstorheter utan att lova ofarlighet. Fristående effektkort behöver inte pulsspänningen.",
+      "suggestedComment": "Det felaktiga påståendet att 5 000 V är ofarligt är borttaget. Facit förklarar relevanta fysikstorheter utan att lova ofarlighet. Fristående effektkort behöver inte pulsspänningen.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.37": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.18": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Brytarens förbikoppling förklaras. Alla efterfrågade strömmar/spänningar får egna svarsfält. Effektfrågan efterfrågar tydligt en faktor, inte en oklar förändring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Brytarens förbikoppling förklaras. Alla efterfrågade strömmar/spänningar får egna svarsfält. Effektfrågan efterfrågar tydligt en faktor, inte en oklar förändring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.90": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Brytarens förbikoppling förklaras. Alla efterfrågade strömmar/spänningar får egna svarsfält. Effektfrågan efterfrågar tydligt en faktor, inte en oklar förändring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Brytarens förbikoppling förklaras. Alla efterfrågade strömmar/spänningar får egna svarsfält. Effektfrågan efterfrågar tydligt en faktor, inte en oklar förändring. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.54": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Knutpunktsprincipen förklaras med laddningsbevarande. Fristående kort har sina egna data; oförändrad spänning anges där slutsatsen kräver det. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Knutpunktsprincipen förklaras med laddningsbevarande. Fristående kort har sina egna data; oförändrad spänning anges där slutsatsen kräver det. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.93": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Del d är en förklaring och rättas som förståelsefråga, inte som det oombedda talet 7,5 W. Numeriska kort har sina egna data. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Del d är en förklaring och rättas som förståelsefråga, inte som det oombedda talet 7,5 W. Numeriska kort har sina egna data. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.94": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.95": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "c tränar nu varför polspänningen är samma spänning, i stället för att upprepa b:s exakta svar. Fristående b använder sitt givna strömvärde. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "c tränar nu varför polspänningen är samma spänning, i stället för att upprepa b:s exakta svar. Fristående b använder sitt givna strömvärde. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.96": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Märkström är inte en exakt omedelbar utlösningsgräns. Frågan och facit skiljer på märkström, överström och ledningsskydd. E/nivå 1–2.",
+      "suggestedComment": "Märkström är inte en exakt omedelbar utlösningsgräns. Frågan och facit skiljer på märkström, överström och ledningsskydd. E/nivå 1–2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.97": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "b:s felaktiga rättningsvärde 100 ersatt med 2,5 kWh. Facit visar restid och värmeenergi. Alla tre kort har egna data; c anger den totala förbrukningen.",
+      "suggestedComment": "b:s felaktiga rättningsvärde 100 ersatt med 2,5 kWh. Facit visar restid och värmeenergi. Alla tre kort har egna data; c anger den totala förbrukningen.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.99": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "c rättas som efterfrågad koppling, inte som oombedd effekt 0,359 W. Facit jämför strömmarna och visar varför större ström ger större effekt i samma resistor.",
+      "suggestedComment": "c rättas som efterfrågad koppling, inte som oombedd effekt 0,359 W. Facit jämför strömmarna och visar varför större ström ger större effekt i samma resistor.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.126": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Båda korrekta figurerna bevarade. Samma batterispänning anges; serie/parallell, effekt och avbrott tränas i fristående begripliga kort. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "Båda korrekta figurerna bevarade. Samma batterispänning anges; serie/parallell, effekt och avbrott tränas i fristående begripliga kort. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.445": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.446": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Konstanta blixtvärden presenteras som förenklad modell. Årsenergin räknas utan för tidig avrundning; separat c-facit använder sitt uttryckligen givna 4,7 GJ. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Konstanta blixtvärden presenteras som förenklad modell. Årsenergin räknas utan för tidig avrundning; separat c-facit använder sitt uttryckligen givna 4,7 GJ. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.449": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.452": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Tillbaka given elektrisk energi skiljs från okänd kemiskt lagrad energi. Båda energierna och värmeskillnaden visas. Temperaturökning accepterar både °C och K utan 273-offset. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Tillbaka given elektrisk energi skiljs från okänd kemiskt lagrad energi. Båda energierna och värmeskillnaden visas. Temperaturökning accepterar både °C och K utan 273-offset. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.456": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.461": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Onödig nätspänning borttagen. Facit visar dubbel ledarlängd, radie, area, resistans och energi. Delkort b är fristående och använder sitt givna 18,5 W.",
+      "suggestedComment": "Onödig nätspänning borttagen. Facit visar dubbel ledarlängd, radie, area, resistans och energi. Delkort b är fristående och använder sitt givna 18,5 W.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.462": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Facit visar separata energier för uppvärmning och smältning. Värmemodellen finns även på det fristående kortet. a nivå 1; fasövergång b nivå 3. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Facit visar separata energier för uppvärmning och smältning. Värmemodellen finns även på det fristående kortet. a nivå 1; fasövergång b nivå 3. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.398": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.162": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Två strömmar och två spänningar rättas i märkta fält. Frågan påstår inte längre att bilen säkert inte startar utan att en startgräns är given. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Två strömmar och två spänningar rättas i märkta fält. Frågan påstår inte längre att bilen säkert inte startar utan att en startgräns är given. E/nivå 2. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.163": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.164": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "a/b får alla efterfrågade storheter i märkta fält. b rättas med polspänningarna 3,75 och 3,46 V, inte oombedd lampeffekt. Figuren med tre lampor används inte för a:s enda lampa. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "suggestedComment": "a/b får alla efterfrågade storheter i märkta fält. b rättas med polspänningarna 3,75 och 3,46 V, inte oombedd lampeffekt. Figuren med tre lampor används inte för a:s enda lampa. Figuren har större läsbara etiketter, tillräckliga marginaler och oförändrat kontrollerad topologi.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.402": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "d:s tidigare 9,3 W motsade kortets avrundade givna r = 0,10 Ω. Kortfacit ger nu 9,47 W; hela lärarlösningen använder oavrundad r och ger 9,35 W. Alla mellanvärden visas. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "suggestedComment": "d:s tidigare 9,3 W motsade kortets avrundade givna r = 0,10 Ω. Kortfacit ger nu 9,47 W; hela lärarlösningen använder oavrundad r och ger 9,35 W. Alla mellanvärden visas. Långa ekvationskedjor delas över rader för läsbarhet på mobil.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.403": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.405": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.406": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "b kräver en ekvation eftersom lampströmmen beror på polspänningen. Facit visar grenströmmar, totalström och hela lösningen till 9,65 V. C/nivå 4; a E/2.",
+      "suggestedComment": "b kräver en ekvation eftersom lampströmmen beror på polspänningen. Facit visar grenströmmar, totalström och hela lösningen till 9,65 V. C/nivå 4; a E/2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.407": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "niva",
+        "poang",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "t",
+        "tolerans",
+        "traningsniva",
+        "typ"
+      ],
+      "comment": "Strömkvotens ordning anges. Facit räknar både ursprunglig och ny ström; delkort får sin egen referensström. E/nivå 2.",
+      "suggestedComment": "Strömkvotens ordning anges. Facit räknar både ursprunglig och ny ström; delkort får sin egen referensström. E/nivå 2.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.409": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "formaga",
+        "ledtrad",
+        "manuellKomplettering",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spelDelar",
+        "spelIntro",
+        "t",
+        "tolerans",
+        "typ"
+      ],
+      "comment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "suggestedComment": "Varje delkort har egna givna värden, enheter och facit. Nivån kalibrerad efter de samband som behövs; generella stegtexter ersatta med beräkningar och kort förklaring.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    },
+    "8.98": {
+      "status": "Åtgärdad",
+      "changedFields": [
+        "arbetsinsats",
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "comment": "Alla tvåsvarsdelar rättas. 250 MW värme vid bara 100 MW tillförsel presenteras som orimlig modell, inte ett verkligt driftfall. Ny d tränar energibevarande och modellkritik utan avancerade ord.",
+      "suggestedComment": "Alla tvåsvarsdelar rättas. 250 MW värme vid bara 100 MW tillförsel presenteras som orimlig modell, inte ett verkligt driftfall. Ny d tränar energibevarande och modellkritik utan avancerade ord.",
+      "method": "Manuell uppgifts-/facitläsning och modell-/nivåanalys; oberoende numerisk beräkning; fristående kort; faktisk rättning och mobil/datorvisning."
+    }
+  },
+  "verification": {
+    "completeForThisScope": true,
+    "parentPhysicsModels": 127,
+    "additionalCardModels": 22,
+    "actualBrowser": {
+      "numeric": 1077,
+      "alternatives": 60,
+      "failures": 0
+    },
+    "cardRendering": {
+      "parents": 135,
+      "cards": 237,
+      "views": 948,
+      "numericContractChecks": 444,
+      "remainingFailures": 0,
+      "lastChangedTaskRetest": {
+        "id": "8.154",
+        "views": 4,
+        "failures": 0
+      }
+    },
+    "svg": {
+      "figures": 41,
+      "visualReview": "Alla 41 visuellt granskade; topologi, polaritet, amperemeter i serie och voltmeter parallellt kontrollerade. Marginaler och etiketter förbättrade.",
+      "meaningfulFindings": 0,
+      "intentionalFindings": "A och V är instrumentbeteckningar inuti cirklar, inte kolliderande punktetiketter."
+    },
+    "masterTests": {
+      "passed": 266,
+      "failed": 0
+    },
+    "consumerTests": {
+      "passed": 102,
+      "failed": 0
+    },
+    "wholeBankValidator": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 659
+    },
+    "wholeBankComplete": false,
+    "wholeBankSecondManualPassComplete": false
+  },
+  "confirmedIssues": {
+    "8.39": "Gamla delkortslutsvar motsade beräkningarna: 6,0/180/450/8,70 ersatta.",
+    "8.112": "Delkortslutsvar 9,0 och 5,56 ersatta med 9,33 och 5,68.",
+    "8.97": "Rättningsvärde 100 för värmarenergi ersatt med 2,5 kWh.",
+    "8.164": "b:s facit gav lampeffekt när två polspänningar efterfrågades.",
+    "8.99": "c:s facit gav watt när typ av batterikoppling efterfrågades.",
+    "8.13": "a:s facit svarade med effektuttryck i stället för optimal resistans.",
+    "8.402": "d:s avrundade givna inre resistans och dess facit var inkonsekventa.",
+    "8.154": "Numeriskt rättningsvärde blockerat av gammal manuellKomplettering-markering.",
+    "8.452": "Återvunnen elektrisk energi kan inte utan fler data likställas med kemiskt lagrad energi.",
+    "8.98": "250 MW ledningsvärme från 100 MW tillförsel är orimlig extrapolering, inte verkligt driftfall.",
+    "8.162": "Ingen given startgräns motiverade påståendet att bilen inte startar.",
+    "8.455": "Energi till kylvatten var endast ett dolt antagande.",
+    "8.459": "Energi till vattnet saknade tydligt modellvillkor.",
+    "8.460": "Energi till korven saknade tydligt modellvillkor."
+  },
+  "analogueGroups": {
+    "motstridiga slutsvar/efterfrågad storhet": [
+      "8.39",
+      "8.112",
+      "8.97",
+      "8.164",
+      "8.99",
+      "8.13",
+      "8.402"
+    ],
+    "flera efterfrågade svar men gammal enkel rättning": [
+      "8.18",
+      "8.87",
+      "8.90",
+      "8.98",
+      "8.162",
+      "8.164"
+    ],
+    "självständiga delkort med egna mellanvärden": [
+      "8.27",
+      "8.39",
+      "8.43",
+      "8.44",
+      "8.45",
+      "8.156",
+      "8.163",
+      "8.402",
+      "8.409"
+    ],
+    "för hög nivå för rutin": [
+      "8.202",
+      "8.205",
+      "8.203",
+      "8.206",
+      "8.235",
+      "8.238",
+      "8.241",
+      "8.447"
+    ],
+    "värmemodell och energins väg": [
+      "8.451",
+      "8.455",
+      "8.457",
+      "8.458",
+      "8.459",
+      "8.460",
+      "8.462"
+    ],
+    "figurtexter och marginaler": [
+      "8.52",
+      "8.95",
+      "8.123",
+      "8.130",
+      "8.134",
+      "8.154"
+    ],
+    "onödiga eller otillräckliga givna data": [
+      "8.214",
+      "8.222",
+      "8.224",
+      "8.226",
+      "8.243",
+      "8.461"
+    ]
+  }
+}
