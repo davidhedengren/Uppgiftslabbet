@@ -397,3 +397,13 @@ E=hf och E=hc/λ med rutinomvandlingar är nivå 2, inte automatiskt C/3. Använ
 Gammastrålning väljs för att en del kan registreras utanför kroppen, inte för att varje sönderfall ovillkorligt ger lägre dos (9.297). Doser adderas i all bestrålad vävnad; tre riktningar kan koncentrera hög sammanlagd dos i tumören (9.301 med ny SVG). 9.92 anger värmekapacitet och att energin blir värme; temperaturandring används för K och °C. 9.298 har korrekt summa 1022 keV och godtar normal avrundning.
 
 Direkt partikelklassificering och kvarkladdning är nivå 1 (9.261–9.263, 9.268, 9.269, 9.273, 9.275, 9.279). Antikvarkars teckenbyte nivå 2. Omvänt kvarkantal 9.329 får två fristående kort på C/3 med exakt heltalsrättning; samma svar får inte godtas med decimalavvikelse. 9.326/9.328 visar att 1/r² förkortas bort och har delade beräkningsrader för mobil. Tester: tools/fysik1-partiklar-medicin.test.js och konsumentens tools/partiklar-medicin-fy1-2026-10-10.browser.py.
+
+## FP19 – beta-/elektroninfångningsenergi och alla efterfrågade svar (2026-10-10)
+
+Alla 23 uppgifter i sönderfall granskade manuellt; se [SONDERFALL_FYSIK1_2026-10-10.md](SONDERFALL_FYSIK1_2026-10-10.md) och motsvarande JSON. Kapitelstatus 358 av 450; hela banken och andra varvet pågår.
+
+Med neutrala atommassor: beta-minus och elektroninfångning använder masskillnaden direkt, beta-plus drar bort två elektronmassor. Positronens massa och skillnaden i de neutrala atomernas elektronantal måste båda förklaras (9.26, 9.45, 9.72, KG-FY1-BP-04). Den sistnämnda frågan krävde förklaringen men facit hade tidigare bara beräkningen. 9.72b söker både beta-plus och elektroninfångning och får två namngivna svarsfält i den ordningen. Fri lärarmotivering får inte bli numeriskt självrättande. 9.8c använder sitt eget givna 2,62 MeV; föräldern använder full energi från massdefekten. Den givna massdefekten kopplas inte längre till ett ogrundat specifikt aluminium-26-sönderfall.
+
+En ändring av atomnummer är nivå 1 (9.248, 9.314, 9.315, 9.317, 9.318, 9.319). Dotterkärnans neutronantal kräver också A−Z och är nivå 2 (9.316). Reaktionsformler och fria förklaringar kan behållas som läraruppgifter utan spelkort (9.74, 9.77, KG-FY1-BM-02/03/04, KG-FY1-BP-02/03). Ledtråden ska gälla aktuell betatyp, inte alfa, friktion eller ett allmänt stegupplägg.
+
+Tester: tools/fysik1-sonderfall.test.js och konsumentens tools/sonderfall-fy1-2026-10-10.browser.py. Ett felaktigt escape i beta-kommandot fångades av både kontrollteckenregression och faktisk KaTeX-visning, och rättades före leverans.
