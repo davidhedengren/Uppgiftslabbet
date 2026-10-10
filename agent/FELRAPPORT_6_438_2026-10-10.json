@@ -1,0 +1,1356 @@
+{
+  "date": "2026-10-10",
+  "course": "fy1",
+  "reportedId": "6.438",
+  "reviewed": [
+    "6.438",
+    "6.436",
+    "6.437",
+    "6.444",
+    "6.445",
+    "6.464"
+  ],
+  "changedSelfGrading": [
+    "6.438",
+    "6.436",
+    "6.437",
+    "6.444",
+    "6.445",
+    "6.464"
+  ],
+  "reviewedNoError": [],
+  "bankChanges": [],
+  "verification": {
+    "regressionTestsPassed": 6,
+    "browser": {
+      "checks": [
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412,44 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "0,412 kPa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "4.12e2 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "413 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "400 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "4120 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "-412 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98003.6",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "196007.2",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297307.2",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "594614.4",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.376618818084232",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.4",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "50.753237636168464",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "654902.5",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "655000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "1309805.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32209600.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32200000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "64419200.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10054.01619392976",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10100.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "20108.03238785952",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13889.408",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13900.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "27778.816",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28150.012000000002",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28200.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "56300.024000000005",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9933.912",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9930.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "19867.824",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17175.18",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17200.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "34350.36",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.6168",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.62",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "3.2336",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125339.36",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "250678.72",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "93954.64",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "94000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "187909.28",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.5518449742422428",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.552",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "1.1036899484844855",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98003.6 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297307.2 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.376618818084232 km",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "654902.5 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32209600.0 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10054.01619392976 km",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13889.408 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28150.012000000002 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9933.912 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17175.18 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.6168 kN",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125339.36 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "93954.64 kPa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.5518449742422428 km",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1,6 N",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1,7 N",
+          "want": false,
+          "actual": false
+        }
+      ],
+      "views": [
+        {
+          "id": "6.438",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.438",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464c",
+          "katexErrors": 0
+        }
+      ],
+      "failures": []
+    },
+    "consumerTests": {
+      "passed": 110,
+      "failed": 0
+    },
+    "fullPhysics1Browser": {
+      "cards": 5271,
+      "answerChecks": 14979,
+      "gradingFailures": 0,
+      "katexErrors": 0
+    },
+    "previousEngine": {
+      "checks": [
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412,44 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "0,412 kPa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "4.12e2 Pa",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "413 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "400 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "4120 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "-412 Pa",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98003.6",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "196007.2",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297307.2",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "594614.4",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.376618818084232",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.4",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "50.753237636168464",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "654902.5",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "655000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "1309805.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32209600.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32200000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "64419200.0",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10054.01619392976",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10100.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "20108.03238785952",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13889.408",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13900.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "27778.816",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28150.012000000002",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28200.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "56300.024000000005",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9933.912",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9930.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "19867.824",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17175.18",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17200.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "34350.36",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.6168",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.62",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "3.2336",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125339.36",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "250678.72",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "93954.64",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "94000.0",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "187909.28",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.5518449742422428",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.552",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "1.1036899484844855",
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98003.6 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297307.2 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.376618818084232 km",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "654902.5 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32209600.0 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10054.01619392976 km",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13889.408 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28150.012000000002 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9933.912 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17175.18 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.6168 kN",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125339.36 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "93954.64 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.5518449742422428 km",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1,6 N",
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1,7 N",
+          "want": false,
+          "actual": false
+        }
+      ],
+      "views": [
+        {
+          "id": "6.438",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.438",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.436c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.437c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.444c",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.445b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464a",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464b",
+          "katexErrors": 0
+        },
+        {
+          "id": "6.464c",
+          "katexErrors": 0
+        }
+      ],
+      "failures": [
+        {
+          "id": "6.438",
+          "i": 0,
+          "input": "412 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 0,
+          "input": "98003.6 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 1,
+          "input": "297307.2 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.436",
+          "i": 2,
+          "input": "25.376618818084232 km",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 0,
+          "input": "654902.5 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 1,
+          "input": "32209600.0 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.437",
+          "i": 2,
+          "input": "10054.01619392976 km",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 0,
+          "input": "13889.408 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 1,
+          "input": "28150.012000000002 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.444",
+          "i": 2,
+          "input": "9933.912 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 0,
+          "input": "17175.18 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.445",
+          "i": 1,
+          "input": "1.6168 kN",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 0,
+          "input": "125339.36 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 1,
+          "input": "93954.64 kPa",
+          "want": false,
+          "actual": true
+        },
+        {
+          "id": "6.464",
+          "i": 2,
+          "input": "0.5518449742422428 km",
+          "want": false,
+          "actual": true
+        }
+      ]
+    },
+    "fullPhysics2Browser": {
+      "cards": 1986,
+      "answerChecks": 4191,
+      "gradingFailures": 0,
+      "katexErrors": 0
+    }
+  },
+  "comment": "Åtgärdad: facit 412 Pa är korrekt. Lufttrycket minskar med 1,20 · 9,82 · 35,0 = 412,44 Pa, alltså 412 Pa med tre värdesiffror. Självrättningen har förbättrats så att Pa och kPa alltid räknas om korrekt.",
+  "limitations": "Elevinmatning saknas. Supabase-statusar är inte uppdaterade."
+}
