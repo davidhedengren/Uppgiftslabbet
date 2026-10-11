@@ -1,0 +1,1535 @@
+{
+  "date": "2026-10-11",
+  "source": "Felrapporter 2026-10-11 10:09",
+  "reviewed": [
+    "matf1:1.510",
+    "matf1:1.528",
+    "fy1:4.346",
+    "matf1:1.509",
+    "matf1:1.511",
+    "matf1:1.512",
+    "matf1:1.513",
+    "matf1:1.514",
+    "fy1:4.9",
+    "fy1:4.364",
+    "fy1:4.367",
+    "fy1:4.372",
+    "fy1:4.363",
+    "fy1:4.375"
+  ],
+  "changedBank": [
+    {
+      "id": "4.9",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ],
+      "before": {
+        "id": "4.9",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "poang": "(2/0/0)",
+        "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><ol type=\"a\"><li>Bestäm tyngdaccelerationen vid ytan. Svara i m/s². Avrunda vid behov till två decimaler.</li><li>Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N. Avrunda vid behov till två decimaler.</li></ol>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Använd radien i kvadrat i nämnaren.</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Svar: 10,68 m/s².</p></div><p><strong>b)</strong></p><div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Beräkna först planetens tyngdacceleration:</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Personens massa är 70 kg även på den här planeten.</p>\\[F_g=mg=70\\cdot10{,}6784=747{,}488\\,\\mathrm{N}\\]<p>Svar: 747,49 N.</p></div></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "gravitation-vid-planetytan",
+        "svarstyp": "flera_delar",
+        "rättSvar": [
+          10.68,
+          747.49
+        ],
+        "tolerans": [
+          0.005,
+          0.005
+        ],
+        "självrättning": true,
+        "familjNyckelTidigare": "gravitation__gravitation_och_cirkular_bana",
+        "ledtrad": "<p>Vilken enhet måste radien ha i den givna formeln?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 2,
+        "miniräknare": true,
+        "geogebra": false,
+        "spel": true,
+        "svarEnhet": [
+          "m/s²",
+          "N"
+        ],
+        "svarFormat": [
+          "numeriskt",
+          "numeriskt"
+        ],
+        "svarsstruktur": "ordnad",
+        "svarEtiketter": [
+          "a",
+          "b"
+        ],
+        "spelDelning": "deluppgifter",
+        "spelIntro": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p>",
+        "spelDelar": [
+          {
+            "etikett": "a",
+            "fraga": "Bestäm tyngdaccelerationen vid ytan. Svara i m/s². Avrunda vid behov till två decimaler.",
+            "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><p>Bestäm tyngdaccelerationen vid ytan. Svara i m/s². Avrunda vid behov till två decimaler.</p>",
+            "s": "<div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Använd radien i kvadrat i nämnaren.</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Svar: 10,68 m/s².</p></div>",
+            "ledtrad": "<p>Vilken enhet måste radien ha i den givna formeln?</p>",
+            "niva": "E",
+            "traningsniva": 2,
+            "arbetsinsats": 1,
+            "poang": "(1/0/0)"
+          },
+          {
+            "etikett": "b",
+            "fraga": "Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N. Avrunda vid behov till två decimaler.",
+            "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><p>Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N. Avrunda vid behov till två decimaler.</p>",
+            "s": "<div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Beräkna först planetens tyngdacceleration:</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Personens massa är 70 kg även på den här planeten.</p>\\[F_g=mg=70\\cdot10{,}6784=747{,}488\\,\\mathrm{N}\\]<p>Svar: 747,49 N.</p></div>",
+            "ledtrad": "<p>Bestäm planetens g innan du räknar personens tyngdkraft.</p>",
+            "niva": "E",
+            "traningsniva": 2,
+            "arbetsinsats": 2,
+            "poang": "(1/0/0)"
+          }
+        ],
+        "typfamilj": "Gravitation vid planetytan",
+        "familjTidigare": [
+          "Gravitation vid planetytan"
+        ]
+      },
+      "after": {
+        "id": "4.9",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "poang": "(2/0/0)",
+        "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><ol type=\"a\"><li>Bestäm tyngdaccelerationen vid ytan. Svara i m/s² med tre värdesiffror.</li><li>Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N med tre värdesiffror.</li></ol>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Använd radien i kvadrat i nämnaren.</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Svar: 10,7 m/s².</p></div><p><strong>b)</strong></p><div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Beräkna först planetens tyngdacceleration:</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Personens massa är 70 kg även på den här planeten.</p>\\[F_g=mg=70\\cdot10{,}6784=747{,}488\\,\\mathrm{N}\\]<p>Svar: 747 N.</p></div></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "gravitation-vid-planetytan",
+        "svarstyp": "flera_delar",
+        "rättSvar": [
+          10.678399999999998,
+          747.4879999999998
+        ],
+        "tolerans": [
+          0.05,
+          0.5
+        ],
+        "självrättning": true,
+        "familjNyckelTidigare": "gravitation__gravitation_och_cirkular_bana",
+        "ledtrad": "<p>Vilken enhet måste radien ha i den givna formeln?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 2,
+        "miniräknare": true,
+        "geogebra": false,
+        "spel": true,
+        "svarEnhet": [
+          "m/s²",
+          "N"
+        ],
+        "svarFormat": [
+          "numeriskt",
+          "numeriskt"
+        ],
+        "svarsstruktur": "ordnad",
+        "svarEtiketter": [
+          "a",
+          "b"
+        ],
+        "spelDelning": "deluppgifter",
+        "spelIntro": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p>",
+        "spelDelar": [
+          {
+            "etikett": "a",
+            "fraga": "Bestäm tyngdaccelerationen vid ytan. Svara i m/s² med tre värdesiffror.",
+            "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><p>Bestäm tyngdaccelerationen vid ytan. Svara i m/s² med tre värdesiffror.</p>",
+            "s": "<div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Använd radien i kvadrat i nämnaren.</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Svar: 10,7 m/s².</p></div>",
+            "ledtrad": "<p>Vilken enhet måste radien ha i den givna formeln?</p>",
+            "niva": "E",
+            "traningsniva": 2,
+            "arbetsinsats": 1,
+            "poang": "(1/0/0)"
+          },
+          {
+            "etikett": "b",
+            "fraga": "Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N med tre värdesiffror.",
+            "t": "<p>En modellplanet har massan M = 4,0 · 10²⁴ kg och radien R = 5000 km. Behandla planeten som sfäriskt symmetrisk och bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg² och g = GM/R².</p><p>Bestäm tyngdkraften på en person med massan 70 kg vid ytan. Svara i N med tre värdesiffror.</p>",
+            "s": "<div class=\"facit-v2 facit-stegvis\"><p>Radien 5000 km är R = 5,0 · 10⁶ m. Beräkna först planetens tyngdacceleration:</p>\\[g=\\frac{GM}{R^2}=\\frac{6{,}674\\cdot10^{-11}\\cdot4{,}0\\cdot10^{24}}{(5{,}0\\cdot10^6)^2}=10{,}6784\\,\\mathrm{m/s^2}\\]<p>Personens massa är 70 kg även på den här planeten.</p>\\[F_g=mg=70\\cdot10{,}6784=747{,}488\\,\\mathrm{N}\\]<p>Svar: 747 N.</p></div>",
+            "ledtrad": "<p>Bestäm planetens g innan du räknar personens tyngdkraft.</p>",
+            "niva": "E",
+            "traningsniva": 2,
+            "arbetsinsats": 2,
+            "poang": "(1/0/0)"
+          }
+        ],
+        "typfamilj": "Gravitation vid planetytan",
+        "familjTidigare": [
+          "Gravitation vid planetytan"
+        ]
+      }
+    },
+    {
+      "id": "4.346",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "before": {
+        "id": "4.346",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "beräkna gravitationskraft mellan två massor",
+        "poang": "(2/0/0)",
+        "t": "<p>Två klot har massorna 50 kg och 80 kg. Massan är jämnt fördelad i kloten. Avståndet mellan deras mittpunkter är 1,5 m och kloten berör inte varandra. Använd F = Gm₁m₂/r² och G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm gravitationskraftens storlek i nanonewton (1 nN = 10⁻⁹ N). Svara i nN. Avrunda vid behov till två decimaler.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><div class=\"facit-matte\">\\[F=\\frac{6{,}674\\cdot 10^{-11}\\cdot 50\\cdot 80}{1{,}5^{2}}\\approx 1{,}186489\\cdot 10^{-7}\\, \\mathrm{N}\\]</div></div></div><div class=\"facit-stycke\"><p>Dividera med 10⁻⁹ för nN: cirka 118,6489 nN.</p></div></div><p class=\"facit-svar\">Svaret är 118,65 nN.</p></div>",
+        "familj": "Gravitationslagen",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "gravitationskraft-mellan-kroppar",
+        "svarstyp": "numeriskt",
+        "rättSvar": 118.65,
+        "tolerans": 0.005,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Centrumavståndet ska kvadreras. Hur många nanonewton är en newton?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "spel": true,
+        "svarEnhet": "nN",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Gravitationskraft mellan kroppar",
+        "familjTidigare": [
+          "Gravitationskraft mellan kroppar"
+        ]
+      },
+      "after": {
+        "id": "4.346",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "beräkna gravitationskraft mellan två massor",
+        "poang": "(2/0/0)",
+        "t": "<p>Två klot har massorna 50 kg och 80 kg. Massan är jämnt fördelad i kloten. Avståndet mellan deras mittpunkter är 1,5 m och kloten berör inte varandra. Använd F = Gm₁m₂/r² och G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm gravitationskraftens storlek i nanonewton (1 nN = 10⁻⁹ N). Svara i nN med tre värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><div class=\"facit-matte\">\\[F=\\frac{6{,}674\\cdot 10^{-11}\\cdot 50\\cdot 80}{1{,}5^{2}}\\approx 1{,}186489\\cdot 10^{-7}\\, \\mathrm{N}\\]</div></div></div><div class=\"facit-stycke\"><p>Dividera med 10⁻⁹ för nN: cirka 118,6489 nN.</p></div></div><p class=\"facit-svar\">Svaret är 119 nN.</p></div>",
+        "familj": "Gravitationslagen",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "gravitationskraft-mellan-kroppar",
+        "svarstyp": "numeriskt",
+        "rättSvar": 118.64888888888886,
+        "tolerans": 0.5,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Centrumavståndet ska kvadreras. Hur många nanonewton är en newton?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "spel": true,
+        "svarEnhet": "nN",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Gravitationskraft mellan kroppar",
+        "familjTidigare": [
+          "Gravitationskraft mellan kroppar"
+        ]
+      }
+    },
+    {
+      "id": "4.363",
+      "fields": [
+        "t",
+        "rättSvar"
+      ],
+      "before": {
+        "id": "4.363",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "C",
+        "typ": "kombinera densitet med gravitationsfält",
+        "poang": "(0/2/0)",
+        "t": "<p>En klotformad asteroid har radien 240 km och densiteten 3200 kg/m³. Densiteten är densamma i hela asteroiden. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm tyngdaccelerationen vid ytan. Svara i m/s². Avrunda vid behov till två decimaler.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><div class=\"facit-matte\">\\[R=240\\,000\\, \\mathrm{m}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Massan är</p><div class=\"facit-matte\">\\[M=\\frac{\\rho\\cdot 4 \\pi R^{3}}{3}\\approx 1{,}853\\cdot 10^{20}\\, \\mathrm{kg}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Gravitationen ger</p><div class=\"facit-matte\">\\[g=\\frac{G M}{R^{2}}\\approx 0{,}2147\\, \\mathrm{m/s^2}\\]</div></div></div></div><p class=\"facit-svar\">Svaret är 0,21 m/s².</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "gravitation-och-densitet",
+        "svarstyp": "numeriskt",
+        "rättSvar": 0.21,
+        "tolerans": 0.005,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilken uppgift ger densiteten om du först bestämmer volymen?</p>",
+        "traningsniva": 3,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "m/s²",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Gravitation och densitet",
+        "familjTidigare": [
+          "Gravitation och densitet"
+        ]
+      },
+      "after": {
+        "id": "4.363",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "C",
+        "typ": "kombinera densitet med gravitationsfält",
+        "poang": "(0/2/0)",
+        "t": "<p>En klotformad asteroid har radien 240 km och densiteten 3200 kg/m³. Densiteten är densamma i hela asteroiden. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm tyngdaccelerationen vid ytan. Svara i m/s² med två värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><div class=\"facit-matte\">\\[R=240\\,000\\, \\mathrm{m}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Massan är</p><div class=\"facit-matte\">\\[M=\\frac{\\rho\\cdot 4 \\pi R^{3}}{3}\\approx 1{,}853\\cdot 10^{20}\\, \\mathrm{kg}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Gravitationen ger</p><div class=\"facit-matte\">\\[g=\\frac{G M}{R^{2}}\\approx 0{,}2147\\, \\mathrm{m/s^2}\\]</div></div></div></div><p class=\"facit-svar\">Svaret är 0,21 m/s².</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "gravitation-och-densitet",
+        "svarstyp": "numeriskt",
+        "rättSvar": 0.21470197114939674,
+        "tolerans": 0.005,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilken uppgift ger densiteten om du först bestämmer volymen?</p>",
+        "traningsniva": 3,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "m/s²",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Gravitation och densitet",
+        "familjTidigare": [
+          "Gravitation och densitet"
+        ]
+      }
+    },
+    {
+      "id": "4.364",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "before": {
+        "id": "4.364",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "bestämma planetmassa från radie och g",
+        "poang": "(2/0/0)",
+        "t": "<p>En sfäriskt symmetrisk modellplanet har radien R = 3,0 · 10⁶ m och tyngdaccelerationen 6,6 m/s² vid ytan. Bortse från rotation. Använd g = GM/R².</p><p>Använd G = 6,674 · 10⁻¹¹ N m²/kg². Svara i kg med tre värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Lös ut M:</p><div class=\"facit-matte\">\\[M=\\frac{g R^{2}}{G}=\\frac{6{,}6\\cdot \\left(3{,}0\\cdot 10^{6}\\right)^{2}}{6{,}674\\cdot 10^{-11}}\\approx 8{,}90021\\cdot 10^{23}\\, \\mathrm{kg}\\]</div></div></div></div><p class=\"facit-svar\">Svaret är 8,90 · 10²³ kg.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "planetmassa-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 8.9e+23,
+        "tolerans": 5e+20,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilken storhet behöver du lösa ut ur den givna formeln?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "spel": true,
+        "svarEnhet": "kg",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Planetmassa ur gravitation",
+        "familjTidigare": [
+          "Planetmassa ur gravitation"
+        ]
+      },
+      "after": {
+        "id": "4.364",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "bestämma planetmassa från radie och g",
+        "poang": "(2/0/0)",
+        "t": "<p>En sfäriskt symmetrisk modellplanet har radien R = 3,0 · 10⁶ m och tyngdaccelerationen 6,6 m/s² vid ytan. Bortse från rotation. Använd g = GM/R².</p><p>Använd G = 6,674 · 10⁻¹¹ N m²/kg². Svara i kg med två värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Lös ut M:</p><div class=\"facit-matte\">\\[M=\\frac{g R^{2}}{G}=\\frac{6{,}6\\cdot \\left(3{,}0\\cdot 10^{6}\\right)^{2}}{6{,}674\\cdot 10^{-11}}\\approx 8{,}90021\\cdot 10^{23}\\, \\mathrm{kg}\\]</div></div></div></div><p class=\"facit-svar\">Svaret är 8,9 · 10²³ kg.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "begrepp",
+          "procedur"
+        ],
+        "familjNyckel": "planetmassa-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 8.900209769253821e+23,
+        "tolerans": 5e+21,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilken storhet behöver du lösa ut ur den givna formeln?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "spel": true,
+        "svarEnhet": "kg",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Planetmassa ur gravitation",
+        "familjTidigare": [
+          "Planetmassa ur gravitation"
+        ]
+      }
+    },
+    {
+      "id": "4.367",
+      "fields": [
+        "typ",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "before": {
+        "id": "4.367",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "bestämma planetmassa från radie och g",
+        "poang": "(2/0/0)",
+        "t": "<p>En sfäriskt symmetrisk modellplanet har massan M = 1,2 · 10²⁴ kg och tyngdaccelerationen g = 5,0 m/s² vid ytan. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm planetens radie. Svara i km. Avrunda vid behov till två decimaler.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">g = GM/R² ger</p><div class=\"facit-matte\">\\[R=\\sqrt{\\frac{G M}{g}}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Insättning ger</p><div class=\"facit-matte\">\\[R=\\sqrt{\\frac{\\left(6{,}674\\cdot 10^{-11}\\cdot 1{,}2\\cdot 10^{24}\\right)}{5{,}0}} m\\]</div></div></div><div class=\"facit-stycke\"><p>Dividera med 1000 för km.</p></div></div><p class=\"facit-svar\">Svaret är 4002,2 km.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "planetradie-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 4002.2,
+        "tolerans": 0.005,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilket avstånd i gravitationslagen motsvarar planetens yta?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "km",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Planetradie ur gravitation",
+        "familjTidigare": [
+          "Planetradie ur gravitation"
+        ]
+      },
+      "after": {
+        "id": "4.367",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "E",
+        "typ": "bestämma planetradie från massa och g",
+        "poang": "(2/0/0)",
+        "t": "<p>En sfäriskt symmetrisk modellplanet har massan M = 1,2 · 10²⁴ kg och tyngdaccelerationen g = 5,0 m/s² vid ytan. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm planetens radie. Svara i km med två värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">g = GM/R² ger</p><div class=\"facit-matte\">\\[R=\\sqrt{\\frac{G M}{g}}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Insättning ger</p><div class=\"facit-matte\">\\[R=\\sqrt{\\frac{\\left(6{,}674\\cdot 10^{-11}\\cdot 1{,}2\\cdot 10^{24}\\right)}{5{,}0}} m\\]</div></div></div><div class=\"facit-stycke\"><p>Dividera med 1000 för km.</p></div></div><p class=\"facit-svar\">Svaret är 4,0 · 10³ km.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "planetradie-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 4002.1993953325214,
+        "tolerans": 50,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Vilket avstånd i gravitationslagen motsvarar planetens yta?</p>",
+        "traningsniva": 2,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "km",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Planetradie ur gravitation",
+        "familjTidigare": [
+          "Planetradie ur gravitation"
+        ]
+      }
+    },
+    {
+      "id": "4.372",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "before": {
+        "id": "4.372",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "C",
+        "typ": "kombinera densitet med gravitationsfält",
+        "poang": "(0/2/0)",
+        "t": "<p>En klotformad asteroid har radien 220 km och tyngdaccelerationen 0,21 m/s² vid ytan. Densiteten är densamma i hela asteroiden. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm asteroidens densitet. Svara i kg/m³. Avrunda vid behov till två decimaler.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Med M = ρ · 4πR³/3 i g = GM/R² fås</p><div class=\"facit-matte\">\\[g=\\frac{4 \\pi G \\rho R}{3}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Därför ρ = 3g/(4πGR), med</p><div class=\"facit-matte\">\\[R=220\\,000\\, \\mathrm{m}\\]</div></div></div></div><p class=\"facit-svar\">Svaret är 3414,46 kg/m³.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "densitet-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 3414.46,
+        "tolerans": 0.005,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Kan du kombinera en volymformel med gravitationslagen så att massan försvinner?</p>",
+        "traningsniva": 4,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "kg/m³",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Densitet ur gravitation",
+        "familjTidigare": [
+          "Densitet ur gravitation"
+        ]
+      },
+      "after": {
+        "id": "4.372",
+        "kap": 4,
+        "omr": "gravitation",
+        "niva": "C",
+        "typ": "kombinera densitet med gravitationsfält",
+        "poang": "(0/2/0)",
+        "t": "<p>En klotformad asteroid har radien 220 km och tyngdaccelerationen 0,21 m/s² vid ytan. Densiteten är densamma i hela asteroiden. Bortse från rotation. Använd G = 6,674 · 10⁻¹¹ N m²/kg².</p><p>Bestäm asteroidens densitet. Svara i kg/m³ med två värdesiffror.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Med M = ρ · 4πR³/3 i g = GM/R² fås</p><div class=\"facit-matte\">\\[g=\\frac{4 \\pi G \\rho R}{3}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Därför ρ = 3g/(4πGR), med</p><div class=\"facit-matte\">\\[R=220\\,000\\, \\mathrm{m}\\]</div></div></div><div class=\"facit-matte\">\\[\\rho=\\frac{3\\cdot0{,}21}{4\\pi\\cdot6{,}674\\cdot10^{-11}\\cdot220\\,000}\\approx3414\\,\\mathrm{kg/m^3}\\]</div></div><p class=\"facit-svar\">Svaret är 3,4 · 10³ kg/m³.</p></div>",
+        "familj": "Tyngdacceleration på olika höjd och himlakroppar",
+        "formaga": [
+          "modellering",
+          "procedur"
+        ],
+        "familjNyckel": "densitet-ur-gravitation",
+        "svarstyp": "numeriskt",
+        "rättSvar": 3414.4582146421008,
+        "tolerans": 50,
+        "självrättning": true,
+        "miniräknare": true,
+        "geogebra": false,
+        "ledtrad": "<p>Kan du kombinera en volymformel med gravitationslagen så att massan försvinner?</p>",
+        "traningsniva": 4,
+        "arbetsinsats": 2,
+        "spel": true,
+        "svarEnhet": "kg/m³",
+        "svarFormat": "numeriskt",
+        "typfamilj": "Densitet ur gravitation",
+        "familjTidigare": [
+          "Densitet ur gravitation"
+        ]
+      }
+    }
+  ],
+  "changedGrading": [
+    "matf1:1.510",
+    "matf1:1.509",
+    "matf1:1.511",
+    "matf1:1.512",
+    "matf1:1.513",
+    "matf1:1.514"
+  ],
+  "changedInterface": [
+    "matf1:1.528"
+  ],
+  "reviewedNoError": [
+    "fy1:4.363",
+    "fy1:4.375"
+  ],
+  "comments": {
+    "matf1:1.510": "Åtgärdad: 6! är ett korrekt svar och godkänns nu, liksom 720. Facit var rätt; felet låg i tolkningen av fakultetstecknet.",
+    "matf1:1.528": "Åtgärdad: när formelbladet är inzoomat kan du nu hålla nere vänster musknapp och dra sidan åt sidan eller uppåt och nedåt.",
+    "fy1:4.346": "Åtgärdad: svarsprecisionen och självrättningen har anpassats. Både G = 6,67 · 10⁻¹¹ och 6,674 · 10⁻¹¹ ger godtagbara svar. Svaret är cirka 119 nN. Det tidigare facits beräkning var korrekt.",
+    "matf1:1.509": "Åtgärdad: självrättningen godkänner nu korrekta fakultetsuttryck och fakultetskvoter, utöver det uträknade antalet. Facit var korrekt.",
+    "matf1:1.511": "Åtgärdad: självrättningen godkänner nu korrekta fakultetsuttryck och fakultetskvoter, utöver det uträknade antalet. Facit var korrekt.",
+    "matf1:1.512": "Åtgärdad: självrättningen godkänner nu korrekta fakultetsuttryck och fakultetskvoter, utöver det uträknade antalet. Facit var korrekt.",
+    "matf1:1.513": "Åtgärdad: självrättningen godkänner nu korrekta fakultetsuttryck och fakultetskvoter, utöver det uträknade antalet. Facit var korrekt.",
+    "matf1:1.514": "Åtgärdad: självrättningen godkänner nu korrekta fakultetsuttryck och fakultetskvoter, utöver det uträknade antalet. Facit var korrekt.",
+    "fy1:4.9": "Åtgärdad: svarsprecision och tolerans har anpassats så att vanliga avrundade tabellvärden för gravitationskonstanten ger godtagbara svar. Beräkningen i facit är korrekt.",
+    "fy1:4.364": "Åtgärdad: svarsprecision och tolerans har anpassats så att vanliga avrundade tabellvärden för gravitationskonstanten ger godtagbara svar. Beräkningen i facit är korrekt.",
+    "fy1:4.367": "Åtgärdad: svarsprecision och tolerans har anpassats så att vanliga avrundade tabellvärden för gravitationskonstanten ger godtagbara svar. Beräkningen i facit är korrekt.",
+    "fy1:4.372": "Åtgärdad: svarsprecision och tolerans har anpassats så att vanliga avrundade tabellvärden för gravitationskonstanten ger godtagbara svar. Beräkningen i facit är korrekt.",
+    "fy1:4.363": "Granskad – inget fel i tidigare rättning: båda vanliga tabellvärdena för G godtas. Precisionen uttrycks nu med två värdesiffror och rättningsmålet lagras med full precision. Svaret är 0,21 m/s².",
+    "fy1:4.375": "Granskad – inget fel: båda vanliga tabellvärdena för G ger ett godtagbart svar. Tyngdaccelerationen är cirka 0,31 m/s²."
+  },
+  "browser": {
+    "checks": [
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "6!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "720",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "721",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "6!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "i": 0,
+        "input": "5!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "i": 0,
+        "input": "120",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "i": 0,
+        "input": "121",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "i": 0,
+        "input": "5!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "i": 0,
+        "input": "7!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "i": 0,
+        "input": "5040",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "i": 0,
+        "input": "5041",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "i": 0,
+        "input": "7!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "i": 0,
+        "input": "8!/5!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "i": 0,
+        "input": "336",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "i": 0,
+        "input": "337",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "i": 0,
+        "input": "8!/5!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "i": 0,
+        "input": "4!/2!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "i": 0,
+        "input": "12",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "i": 0,
+        "input": "13",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "i": 0,
+        "input": "4!/2!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "i": 0,
+        "input": "4!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "i": 0,
+        "input": "24",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "i": 0,
+        "input": "25",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "i": 0,
+        "input": "4!+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "i": 0,
+        "input": "9!/(2!*7!)",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "i": 0,
+        "input": "36",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "i": 0,
+        "input": "37",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "i": 0,
+        "input": "9!/(2!*7!)+1",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "(3+3)!",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "6!!",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "2.5!",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "i": 0,
+        "input": "6!x",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "118.57777777777778",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "119",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "237.15555555555557",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "10.672",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "10.7",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "21.344",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "747.0400000000001",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "747",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "1494.0800000000002",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.2145732915143058",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.21",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.4291465830286116",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "8.905547226386807e+23",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "8.9e+23",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "1.7811094452773614e+24",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "4000.99987503124",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "4e+03",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "8001.99975006248",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "3416.5058657453337",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "3.4e+03",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "6833.011731490667",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.3129193834583625",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.31",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.625838766916725",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "118.64888888888886",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "119",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "237.29777777777772",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "10.678399999999998",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "10.7",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 0,
+        "input": "21.356799999999996",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "747.4879999999998",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "747",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.9",
+        "i": 1,
+        "input": "1494.9759999999997",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.21470197114939674",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.21",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "i": 0,
+        "input": "0.4294039422987935",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "8.900209769253821e+23",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "8.9e+23",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "i": 0,
+        "input": "1.7800419538507642e+24",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "4002.1993953325214",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "4e+03",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "i": 0,
+        "input": "8004.398790665043",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "3414.4582146421008",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "3.4e+03",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "i": 0,
+        "input": "6828.9164292842015",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.313107041259537",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.31",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "i": 0,
+        "input": "0.626214082519074",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "118,58 nN",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "119 nN",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "0,119 µN",
+        "want": true,
+        "actual": true
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "118 nN",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "120 nN",
+        "want": false,
+        "actual": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "i": 0,
+        "input": "119 N",
+        "want": false,
+        "actual": false
+      }
+    ],
+    "views": [
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.9a",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.9b",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.509",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.511",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.512",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.513",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.514",
+        "katexErrors": 0
+      },
+      {
+        "course": "matf1",
+        "id": "1.528",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.9a",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.9b",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.363",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.364",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.367",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.372",
+        "katexErrors": 0
+      },
+      {
+        "course": "fy1",
+        "id": "4.375",
+        "katexErrors": 0
+      }
+    ],
+    "pans": [
+      {
+        "course": "matf1",
+        "before": [
+          100,
+          200
+        ],
+        "after": [
+          160,
+          280
+        ],
+        "clean": true,
+        "ok": true
+      },
+      {
+        "course": "ma1",
+        "before": [
+          100,
+          200
+        ],
+        "after": [
+          160,
+          280
+        ],
+        "clean": true,
+        "ok": true
+      },
+      {
+        "course": "ma2",
+        "before": [
+          100,
+          200
+        ],
+        "after": [
+          160,
+          280
+        ],
+        "clean": true,
+        "ok": true
+      },
+      {
+        "course": "mato1",
+        "before": [
+          100,
+          200
+        ],
+        "after": [
+          160,
+          280
+        ],
+        "clean": true,
+        "ok": true
+      },
+      {
+        "course": "mato2",
+        "before": [
+          100,
+          200
+        ],
+        "after": [
+          160,
+          280
+        ],
+        "clean": true,
+        "ok": true
+      }
+    ],
+    "failures": []
+  },
+  "structure": {
+    "rootTasks": 3738,
+    "uniqueIds": 3738,
+    "masterConsumerIdentical": true
+  },
+  "supabaseChanged": false,
+  "notes": [
+    "4.363 har inget reproducerat rättningsfel; dess precision och fullständiga numeriska mål har förbättrats.",
+    "Nivåerna och E/C/A har bedömts i denna avgränsade grupp och behållits.",
+    "Hela Fysik 1:s andra manuella pass är inte färdigt.",
+    "Ingen separat generell bankvalidator finns tillgänglig i denna checkout; strukturell före/efter-kontroll och tester har körts."
+  ],
+  "validation": {
+    "consumerNode": {
+      "tests": 111,
+      "passed": 111
+    },
+    "masterNode": {
+      "total": 292,
+      "firstRunPassed": 249,
+      "browserEnvironmentFailures": 43,
+      "svgRerunTests": 47,
+      "svgRerunPassed": 47,
+      "remainingFailures": 0
+    },
+    "fy1TechnicalFull": {
+      "cards": 5271,
+      "checks": 14979,
+      "failures": 0,
+      "katexErrors": 0
+    },
+    "beforeActualUi": [
+      {
+        "course": "matf1",
+        "id": "1.510",
+        "input": "6!",
+        "accepted": false
+      },
+      {
+        "course": "fy1",
+        "id": "4.346",
+        "input": "118,58 nN",
+        "accepted": false
+      }
+    ]
+  }
+}
