@@ -496,3 +496,15 @@ Granskade/åtgärdade genom samma rättarfix: #6.438/#6.436/#6.437/#6.444/#6.445
 #1.528 rapporterar en gränssnittsfunktion, inte fel i facit 36. Alla fem riktiga PDF-formelblad har testats med musdragning i två riktningar, avslut, hjulrullning och zoom. Vänster musknapp får panorera vid zoom över 100 %. Rätta inte bankinnehåll på grund av ett allmänt gränssnittsönskemål.
 
 FY1 #4.346: givet G = 6,674·10⁻¹¹ gav korrekt facit 118,6489 nN men för snävt tvådecimalskrav; G = 6,67·10⁻¹¹ gav 118,5778 nN. Kräv nu tre värdesiffror (119 nN) och lagra fullständigt numeriskt mål med halva avrundningsstegets tolerans. #4.9/#4.364/#4.367/#4.372 får rimligare precision med både tabellvärdena verifierade. #4.363/#4.375 avvisade inte dessa svar före ändring; den förstnämnda har ändå harmoniserad precision och fullständigt numeriskt mål. Blanda inte konstantskillnad med felaktiga kraftenheter, tecken eller fysikmodeller. #4.367:s typtext måste avse planetradie. #4.9:s egna delar ska bevara alla planetdata och fullständiga uträkningar; #4.372 visar insättning i densitetsformeln. Skydd: master tools/gravitationskonstant-precision.test.js och befintliga tools/fysik1-kapitel4.test.js samt konsumentens riktade webbläsartest.
+
+## FP27 – statistikfigurer, lodräta tabeller och namngivna delkort (2026-10-11)
+
+[Alla 40 granskade kontrollfall, åtgärder och kommentarsförslag](FELRAPPORTER_2026-10-11_1618.md) samt motsvarande JSON. Sju rapporter, minst fem analogier per bekräftat mönster. Detta är en riktad omgång; helbankens granskning slutmarkeras inte.
+
+Normalfördelningens frågetecken får inte ha samma koordinater som μ+σ eller μ+2σ (#4.50/#4.196/#4.214). Kontrollera verklig textstorlek i mobilen. Breda datatabeller vänds med samtliga datapars koppling bevarad (#4.300 och nio analogier). Parvisa Alva/Bea-tider behåller loppordningen. Underliggande matematik ändras inte för att lösa ett layoutfel.
+
+FP-02/FP-08 gäller även matematikkort: #4.95 c behöver sina egna 10 %-områden, #4.26 b sin egen andel, #4.72 b/#4.87 c intervallets beskrivning. Fristående namngivna storheter kräver delens egna `svarsstruktur:"ordnad"` och `svarEtiketter`; förälderns ordning räcker inte när `expandGameTask` skapar en mängd som standard. #2.711 och nio analogier rättade. Ändra inte denna standard generellt: rötter ska fortsatt vara oordnade. #2.407/#2.436 får lokala facit utan läckor.
+
+#4.299:s bortstrukna sämsta tid ger σ = 0,554977… → 0,55 s. #4.302:s ”alltid minskar” gäller inte redan noll spridning. #4.300:s r = −0,985079881… rättas från full precision med 0,005; #4.95:s percentilgränser får 0,05 för en decimal. Fysik #5.99 a är rätt kurs och #6.300 har korrekt 7 856 Pa med angivet g/heltalskrav. Vid rapport utan elevinmatning ska okänd tidigare orsak redovisas; vidga inte toleransen utan belägg.
+
+Skydd: master `tools/felrapporter-2026-10-11-1618.test.js`, konsument `tools/delkort.test.js` och `tools/felrapporter-2026-10-11-1618.browser.py`. Browserkontrollen måste verkligen ladda KaTeX innan rå LaTeX/överbredd bedöms.

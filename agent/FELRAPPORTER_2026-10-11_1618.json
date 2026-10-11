@@ -1,0 +1,552 @@
+{
+  "date": "2026-10-11",
+  "sourceReport": "16:18",
+  "scope": "Sju rapporter och riktad uppföljning; inte en fullständig granskning av alla banker.",
+  "reviewed": [
+    {
+      "course": "ma2",
+      "id": "1.313"
+    },
+    {
+      "course": "ma2",
+      "id": "2.141"
+    },
+    {
+      "course": "ma2",
+      "id": "2.146"
+    },
+    {
+      "course": "ma2",
+      "id": "2.407"
+    },
+    {
+      "course": "ma2",
+      "id": "2.436"
+    },
+    {
+      "course": "ma2",
+      "id": "2.707"
+    },
+    {
+      "course": "ma2",
+      "id": "2.711"
+    },
+    {
+      "course": "ma2",
+      "id": "2.718"
+    },
+    {
+      "course": "ma2",
+      "id": "4.06"
+    },
+    {
+      "course": "ma2",
+      "id": "4.08"
+    },
+    {
+      "course": "ma2",
+      "id": "4.13"
+    },
+    {
+      "course": "ma2",
+      "id": "4.20"
+    },
+    {
+      "course": "ma2",
+      "id": "4.26"
+    },
+    {
+      "course": "ma2",
+      "id": "4.27"
+    },
+    {
+      "course": "ma2",
+      "id": "4.38"
+    },
+    {
+      "course": "ma2",
+      "id": "4.44"
+    },
+    {
+      "course": "ma2",
+      "id": "4.45"
+    },
+    {
+      "course": "ma2",
+      "id": "4.50"
+    },
+    {
+      "course": "ma2",
+      "id": "4.57"
+    },
+    {
+      "course": "ma2",
+      "id": "4.66"
+    },
+    {
+      "course": "ma2",
+      "id": "4.72"
+    },
+    {
+      "course": "ma2",
+      "id": "4.80"
+    },
+    {
+      "course": "ma2",
+      "id": "4.87"
+    },
+    {
+      "course": "ma2",
+      "id": "4.95"
+    },
+    {
+      "course": "ma2",
+      "id": "4.136"
+    },
+    {
+      "course": "ma2",
+      "id": "4.138"
+    },
+    {
+      "course": "ma2",
+      "id": "4.139"
+    },
+    {
+      "course": "ma2",
+      "id": "4.146"
+    },
+    {
+      "course": "ma2",
+      "id": "4.150"
+    },
+    {
+      "course": "ma2",
+      "id": "4.162"
+    },
+    {
+      "course": "ma2",
+      "id": "4.196"
+    },
+    {
+      "course": "ma2",
+      "id": "4.214"
+    },
+    {
+      "course": "ma2",
+      "id": "4.290"
+    },
+    {
+      "course": "ma2",
+      "id": "4.299"
+    },
+    {
+      "course": "ma2",
+      "id": "4.300"
+    },
+    {
+      "course": "ma2",
+      "id": "4.302"
+    },
+    {
+      "course": "ma2",
+      "id": "4.303"
+    },
+    {
+      "course": "ma2",
+      "id": "4.306"
+    },
+    {
+      "course": "fy1",
+      "id": "5.99",
+      "part": "a"
+    },
+    {
+      "course": "fy1",
+      "id": "6.300"
+    }
+  ],
+  "changed": [
+    {
+      "course": "ma2",
+      "id": "2.141",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.146",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.407",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.436",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "1.313",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.707",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.711",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.718",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.26",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.50",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.72",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.87",
+      "changedFields": [
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.95",
+      "changedFields": [
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.136",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.138",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.139",
+      "changedFields": [
+        "t",
+        "spelIntro"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.146",
+      "changedFields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.162",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.196",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.214",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.290",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.300",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelIntro"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.299",
+      "changedFields": [
+        "t",
+        "s",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.302",
+      "changedFields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.303",
+      "changedFields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.306",
+      "changedFields": [
+        "t",
+        "spelIntro"
+      ]
+    }
+  ],
+  "reviewedNoError": [
+    {
+      "course": "ma2",
+      "id": "4.06"
+    },
+    {
+      "course": "ma2",
+      "id": "4.08"
+    },
+    {
+      "course": "ma2",
+      "id": "4.13"
+    },
+    {
+      "course": "ma2",
+      "id": "4.20"
+    },
+    {
+      "course": "ma2",
+      "id": "4.27"
+    },
+    {
+      "course": "ma2",
+      "id": "4.38"
+    },
+    {
+      "course": "ma2",
+      "id": "4.44"
+    },
+    {
+      "course": "ma2",
+      "id": "4.45"
+    },
+    {
+      "course": "ma2",
+      "id": "4.57"
+    },
+    {
+      "course": "ma2",
+      "id": "4.66"
+    },
+    {
+      "course": "ma2",
+      "id": "4.80"
+    },
+    {
+      "course": "ma2",
+      "id": "4.150"
+    },
+    {
+      "course": "fy1",
+      "id": "5.99",
+      "part": "a",
+      "status": "Granskad – inget fel",
+      "comment": "Uppgiften hör till Fysik 1: fjäderns energi omvandlas till rörelseenergi. Farten blir 2,12 m/s och svaret godkänns."
+    },
+    {
+      "course": "fy1",
+      "id": "6.300",
+      "status": "Granskad – inget fel",
+      "comment": "Med g = 9,82 som anges i uppgiften blir tryckökningen 800 · 9,82 · 1,0 = 7 856 Pa. Frågan ber om ett heltal; 7856 och motsvarande svar med enhet godkänns."
+    }
+  ],
+  "reports": [
+    {
+      "course": "ma2",
+      "id": "4.300",
+      "part": "b",
+      "status": "Åtgärdad",
+      "comment": "Tabellen visas nu lodrätt så att alla tal får plats, även på mobilen. Uppgiftens data och slutsats är oförändrade."
+    },
+    {
+      "course": "ma2",
+      "id": "4.50",
+      "status": "Åtgärdad",
+      "comment": "Figurens frågetecken har flyttats till en egen rad under rätt markering. Texten ligger inte längre ovanpå varandra."
+    },
+    {
+      "course": "ma2",
+      "id": "4.95",
+      "part": "c",
+      "status": "Åtgärdad",
+      "comment": "Del c har fått en egen figur och all information som behövs. Det syns att 10 % ligger på vardera sidan om det sökta området."
+    },
+    {
+      "course": "ma2",
+      "id": "4.196",
+      "status": "Åtgärdad",
+      "comment": "Figurens frågetecken har flyttats så att alla beteckningar går att läsa. Medelvärdet och det sökta värdet har tydliga, separata markeringar."
+    },
+    {
+      "course": "fy1",
+      "id": "5.99",
+      "part": "a",
+      "status": "Granskad – inget fel",
+      "comment": "Uppgiften hör till Fysik 1: fjäderns energi omvandlas till rörelseenergi. Farten blir 2,12 m/s och svaret godkänns."
+    },
+    {
+      "course": "ma2",
+      "id": "2.711",
+      "part": "a",
+      "status": "Åtgärdad",
+      "comment": "Koefficienterna har nu egna märkta svarsfält för a, b och c. Rättningen kopplar varje värde till rätt koefficient."
+    },
+    {
+      "course": "fy1",
+      "id": "6.300",
+      "status": "Granskad – inget fel",
+      "comment": "Med g = 9,82 som anges i uppgiften blir tryckökningen 800 · 9,82 · 1,0 = 7 856 Pa. Frågan ber om ett heltal; 7856 och motsvarande svar med enhet godkänns."
+    }
+  ],
+  "comparisonGroups": {
+    "Lodräta tabeller": [
+      "4.136",
+      "4.138",
+      "4.139",
+      "4.146",
+      "4.150",
+      "4.162",
+      "4.290",
+      "4.299",
+      "4.300",
+      "4.303",
+      "4.306"
+    ],
+    "Normalfördelningsfigurer": [
+      "4.06",
+      "4.08",
+      "4.20",
+      "4.38",
+      "4.44",
+      "4.50",
+      "4.66",
+      "4.72",
+      "4.80",
+      "4.196",
+      "4.214"
+    ],
+    "Självständiga normalfördelningskort": [
+      "4.13",
+      "4.26",
+      "4.27",
+      "4.45",
+      "4.57",
+      "4.72",
+      "4.87",
+      "4.95"
+    ],
+    "Namngivna ordnade svar": [
+      "2.711",
+      "2.407",
+      "2.436",
+      "1.313",
+      "2.707",
+      "2.718",
+      "2.141",
+      "2.146",
+      "4.299",
+      "4.302"
+    ]
+  },
+  "verification": {
+    "masterTests": 45,
+    "consumerTests": 119,
+    "browserMathInputs": 40,
+    "browserPhysicsInputs": 9,
+    "mobileDesktopViews": 30,
+    "uniqueSvgFigures": 12,
+    "svgFindings": 0,
+    "bankTaskCount": 2121,
+    "bankValidator": {
+      "ERROR": 4,
+      "WARNING": 161,
+      "INFO": 95,
+      "newFindings": 0,
+      "fixedMissingCardSolutions": 5
+    }
+  },
+  "limitations": [
+    "Elevens faktiska inmatning saknas för fy1 6.300; tidigare felorsak är okänd.",
+    "Supabase-rapportstatus och kommentarer har inte skrivits till databasen.",
+    "Ma2 2.636/2.637 har sedan tidigare fyra strukturella validatorfel utanför denna omgång."
+  ]
+}
