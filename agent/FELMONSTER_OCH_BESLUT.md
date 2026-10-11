@@ -560,3 +560,13 @@ När hela uppgiften rättades kunde b:s lokala svarindex läsa a:s `rättSvar273
 Följdgranskade heluppgifter #6.4/#6.54/#6.513 godkände redan kontrollfallen genom sin ordinarie tolerans. Enkla analoger #6.19/#6.20/#6.50/#6.84/#6.214/#6.221 är också kontrollerade med båda omvandlingarna. Uppgiftstexten får fortsatt inte föreskriva 273 eller 273,15; facit kan räkna med 273,15. En faktiskt given kelvintemperatur ska behållas.
 
 Skydd: konsumentens `tools/delkort.test.js` och `tools/felrapport-2026-10-11-1939.browser.py` testar riktiga svarsfält, heluppgifter, oavrundade/avrundade värden, enheter och nästlade metadata. Mastertester och tidigare temperatur-/gaslagskontroller behålls. Inga bankobjekt ändras i denna runda.
+
+## FP32 – x/X i numerisk grundpotensform och hela enhetsprefixet (2026-10-11)
+
+[Rapport 21:46: alla sex granskade ID, åtgärder och kommentarsförslag](FELRAPPORT_2026-10-11_2146.md) samt motsvarande JSON. Fy1 #6.445 a har korrekt facit: 17 175,18 Pa → 17 200 Pa. Vanlig avrundning godkändes redan, men `1,72x10^4` underkändes. Elevens exakta inmatning saknas; påstå inte att den bekräftade parserbristen säkert orsakade just rapporten.
+
+Bokstaven x/X får beteckna gånger endast mellan en numerisk koefficient och en tiopotens. Normalisera före både strikt talrättning och tal-/enhetsdelning: annars kan prefix försvinna när målenheten tas bort. Tal-/enhetsfunktionerna ska läsa hela exponenten även med +. Ändra inte generell symbolisk multiplikation, toleranser eller svarsenheter. Fel dimension, tusen gånger fel svar och ofullständig syntax ska fortfarande avvisas. Originalkedjan godkände redan *-skrivna positiva exponenter genom en annan rättningsväg; dess lägre parserbrist är inte samma sak som att alla sådana svar underkändes.
+
+Fem analoger #6.436/#6.437/#6.438/#6.444/#6.464 är självständigt räknade. Alla sex fysikfacit är korrekta. Åtta jämförelsekorts breda formelrader delas med alla mellanled bevarade, även i huvudfacit. #6.445 b behåller sina egna 17,2 kPa och 0,94 cm²: 1,6168 N → 1,6 N. Det är fortfarande nivå 2, a nivå 1.
+
+Skydd: konsumentens `tools/numeriska-enhetsprefix.test.js` och `tools/felrapport-6-445.browser.py` (202 fältkontroller, 30 mobil-/datorvisningar och kortfacit), samt master `tools/fysik1-vatsketryck.test.js`. Gamla tester och rättningsmål behålls. Ingen rapportstatus eller elevkommentar sparas genom en Git-push.

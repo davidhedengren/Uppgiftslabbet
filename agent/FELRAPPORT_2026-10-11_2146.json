@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-11",
+  "sourceReport": "21:46",
+  "scope": "Riktad kontroll av sex fysikuppgifter och 15 delkort: oberoende beräkningar, facit, självrättning och mobil-/datorvisning. Inte en granskning av hela banken.",
+  "counts": {
+    "uniqueTaskIds": 6,
+    "cards": 15,
+    "changedViaConsumerFix": 6,
+    "bankObjectsChanged": 5,
+    "layoutCardsChanged": 8,
+    "noErrorInPhysics": 6,
+    "unchangedOverall": 0
+  },
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "6.445",
+      "parts": "a–b",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [],
+      "layoutParts": [],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "17 200 Pa, alltså 1,72·10⁴ Pa, är rätt med tre värdesiffror. Självrättningen godkänner nu även exempelvis 1,72x10^4. Facit var redan korrekt."
+    },
+    {
+      "course": "fy1",
+      "id": "6.436",
+      "parts": "a–c",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [
+        "s",
+        "spelDelar[].s"
+      ],
+      "layoutParts": [
+        "b"
+      ],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "Facit är korrekt: a) 98 000 Pa, b) 297 000 Pa och c) 25,4 m. Grundpotensform med x godkänns nu också. Långa beräkningar har delats upp för mobilen."
+    },
+    {
+      "course": "fy1",
+      "id": "6.437",
+      "parts": "a–c",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [
+        "s",
+        "spelDelar[].s"
+      ],
+      "layoutParts": [
+        "a",
+        "b"
+      ],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "Facit är korrekt: a) 655 000 Pa, b) 32 200 000 Pa och c) 10 100 m. Grundpotensform med x godkänns nu också. Beräkningarna ryms bättre på mobilen."
+    },
+    {
+      "course": "fy1",
+      "id": "6.438",
+      "parts": "hela",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [
+        "s"
+      ],
+      "layoutParts": [
+        "hela"
+      ],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "Tryckminskningen är 1,20·9,82·35,0 = 412,44 Pa, alltså 412 Pa. Även 4,12x10^2 godkänns nu. Lösningens beräkning är uppdelad för mobilen."
+    },
+    {
+      "course": "fy1",
+      "id": "6.444",
+      "parts": "a–c",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [
+        "s",
+        "spelDelar[].s"
+      ],
+      "layoutParts": [
+        "b",
+        "c"
+      ],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "Facit är korrekt: a) 13 900 Pa, b) 28 200 Pa och c) 9 930 Pa. Grundpotensform med x godkänns nu också. Långa beräkningsrader har delats upp för mobilen."
+    },
+    {
+      "course": "fy1",
+      "id": "6.464",
+      "parts": "a–c",
+      "status": "Åtgärdad",
+      "contentStatus": "Granskad – inget fel",
+      "changedFields": [
+        "s",
+        "spelDelar[].s"
+      ],
+      "layoutParts": [
+        "a",
+        "b"
+      ],
+      "consumerChange": "Godkänner x/X som multiplikation framför en numerisk tiopotens; hela exponenten och enheten följer med rättningen.",
+      "comment": "Facit är korrekt: a) 125 000 Pa, b) 94 000 Pa och c) 0,552 m. Grundpotensform med x godkänns nu också. Beräkningarna ryms bättre på mobilen."
+    }
+  ],
+  "reportedInputKnown": false,
+  "tests": {
+    "masterTests": 6,
+    "consumerTests": 129,
+    "actualAnswerFields": 202,
+    "mobileDesktopViews": 30,
+    "shortAnswerDisplays": 1,
+    "beforeFixRejectedValidAnswers": 49,
+    "beforeFixAcceptedWrong": 0,
+    "javascriptErrors": 0
+  },
+  "reportStatusSaved": false
+}
