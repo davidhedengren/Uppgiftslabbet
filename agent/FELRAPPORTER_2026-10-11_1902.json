@@ -1,0 +1,1040 @@
+{
+  "date": "2026-10-11",
+  "sourceReport": "19:02",
+  "scope": "Fyra rapporter, minst fem analoger per felmönster och alla 16 identifierade exakta halvsteg i kapitel 5–6 med tre värdesiffror. 43 uppgifter, vissa endast angivet delkort. Ingen fullständig helbanksgranskning slutmarkeras.",
+  "counts": {
+    "reviewed": 43,
+    "changed": 33,
+    "noError": 10
+  },
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "5.224",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Bromskraften avrundas nu först i slutsvaret. Del b ger 3,48 m. Det fristående b-kortet anger 1,4457 N, så det kan lösas utan a. Tidigare gav det grövre angivna värdet 1,45 N korrekt 3,47 m; skillnaden kom från mellanvärdet.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.105",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan säger nu direkt att trycket är 700 kPa högre än vid vattenytan. Djupet är 700000/(998·9,82) ≈ 71,4 m. Behållarens in- och utsida behövs inte för beräkningen.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.55",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 25 g = 25/1000 = 0,025 kg. Frågan gäller bara denna omvandling. 0,025, 0.025 kg och 2,5·10⁻² kg godkänns. Rapporten saknar den exakta elevinmatningen, så den tidigare orsaken är okänd.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.485",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: b anger uttryckligen en annan beräkning med 14,1 m/s och ger 11,9 m. Det värdet ska användas på kortet; 12,0 m från den andra startfarten 14,13 är inte samma givna scenario.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.508",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a ger 5,66 m/s. b anger själv 5,66 m/s och ger 11,32 ≈ 11,3 m/s. Det avrundade givna värdet ändrar inte slutsiffran.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.514",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Del d: det oavrundade värdet är 4805 N. Med tre värdesiffror blir det 4810 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 4800 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.537",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a ger 3,96 N. Den givna bromskraften 3,96 N i b ger 13,7 m/s. Friktionen arbetar mot fallet; tecken och energi är korrekta.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.543",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 1,22 N och 2,82 m är korrekt med de egna givna uppgifterna. b:s breda formel delas genom att tyngdkraftens del längs planet räknas separat. Mellanleden är kvar.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.254",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: tryckökningen 29,46 kPa ger 3,0 m djup. Lufttrycket ska inte läggas till.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.305",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 3928/(1000·9,82) = 0,40 m. Tryckskillnaden anges redan i Pa.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.261",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 8,0 m är korrekt efter att 101,3 kPa dragits från totaltrycket 179,86 kPa. Subtraktion, enhetsomvandling och formelinsättning är E/nivå 2, tidigare C/nivå 3.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.264",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 2,81 m är korrekt: 24000/(870·9,82). Lösningsformeln har delats i kortare rader för mobilen.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.356",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: tryckökningen 19,64 kPa ger djupet 2,00 m. Det korta facit visar tre värdesiffror.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.52",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "De tre energierna 2,08 kJ, 264,66 kJ och 56,25 nJ är korrekta. Insektens massa och fart omvandlas rätt. Den breda formeln i c delas utan ändrad beräkning.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.474",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 19,3 J, 42,9 m och 29,0 m/s är korrekt. Fartformeln i c har fått egna rader för uttrycket och slutsvaret.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.492",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 0,177 J, 0,136 J och 112000 J är korrekt. De långa energiuträkningarna i b är delade i kortare rader, med båda energierna och skillnaden kvar.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.494",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Luftmotståndets arbete är −12,4 J. Båda rörelseenergierna, höjdökningen och energiskillnaden är kvar, men formlerna har delats för mobilen.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.987",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 23,5 är korrekt. Uträkningarna för a och b står på egna formelrader för mobil. Den enkla proportionen och summan kalibreras till E/nivå 2.",
+      "changedFields": [
+        "s",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.988",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 96 bullar är korrekt: 40/2,5·6 = 96. Den direkta proportionen kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.989",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 30 cm är korrekt: 26,1/87 = 0,3 m. Skala med enhetsomvandling kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.990",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 833 g är korrekt avrundat till heltal. Den direkta proportionen kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.991",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu två decimaler. Bil A förbrukar 5,5 liter per 100 km, så besparingen blir (6,8−5,5)·2,5 = 3,25 liter. Beräkningen kalibreras till E/nivå 2.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.992",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu en decimal, och 3,1 timmar godkänns. Beräkningen är 25·135/18 = 187,5 minuter = 3,125 timmar. Även 3,125 godkänns. Det framgår att poolen är tom från början; rutinen är E/nivå 2.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.993",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 25 är korrekt. Ökningen ger k = 7,5/3 = 2,5 och y = 2,5·10. Detta är en rutinberäkning på E/nivå 2, tidigare C/nivå 4.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.994",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 24 är korrekt: c = 20 ger b = 16, vilket ger a = 24. Att koppla ihop två proportioner i symbolisk form kalibreras till C/nivå 3, tidigare A/nivå 5.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.995",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 42,195 km avrundas till 42 hela kilometer. Formuleringen anger precisionen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.996",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 1849 kr avrundas till 1800 kr vid hundratal. Formuleringen anger precisionen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.997",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 0,125·68 = 8,5 mg. Frågan anger en decimal och självrättningen godkänner 8,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.72",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 245,5 N. Med tre värdesiffror blir det 246 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 245 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.270",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 17,55 kWh. Med tre värdesiffror blir det 17,6 kWh. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 17,5 kWh.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.160",
+      "parts": [
+        "d"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del d: det oavrundade värdet är 1,125 m/s. Med tre värdesiffror blir det 1,13 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 1,12 m/s.",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.370",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 41,25 m/s. Med tre värdesiffror blir det 41,3 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 41,2 m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.375",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 562,5 N. Med tre värdesiffror blir det 563 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 562 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.381",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är -2,835 kg*m/s. Med tre värdesiffror blir det -2,84 kg*m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen -2,83 kg*m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.209",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 736,5 J. Med tre värdesiffror blir det 737 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 736 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.578",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 3525 N. Med tre värdesiffror blir det 3530 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 3520 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.505",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 76,25 J. Med tre värdesiffror blir det 76,3 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 76,2 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.509",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 370,5 J. Med tre värdesiffror blir det 371 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 370 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "6.457",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 245,5 Pa. Med tre värdesiffror blir det 246 Pa. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 245 Pa.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.529",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 212,5 J. Med tre värdesiffror blir det 213 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 212 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.533",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 0,07365 N. Med tre värdesiffror blir det 0,0737 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,0736 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.418",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 0,002275 J. Med tre värdesiffror blir det 0,00228 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,00227 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.440",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 0,7875 m/s. Med tre värdesiffror blir det 0,788 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,787 m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    }
+  ],
+  "changed": [
+    {
+      "course": "fy1",
+      "id": "5.224",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Bromskraften avrundas nu först i slutsvaret. Del b ger 3,48 m. Det fristående b-kortet anger 1,4457 N, så det kan lösas utan a. Tidigare gav det grövre angivna värdet 1,45 N korrekt 3,47 m; skillnaden kom från mellanvärdet.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.105",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan säger nu direkt att trycket är 700 kPa högre än vid vattenytan. Djupet är 700000/(998·9,82) ≈ 71,4 m. Behållarens in- och utsida behövs inte för beräkningen.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.514",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Del d: det oavrundade värdet är 4805 N. Med tre värdesiffror blir det 4810 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 4800 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.543",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 1,22 N och 2,82 m är korrekt med de egna givna uppgifterna. b:s breda formel delas genom att tyngdkraftens del längs planet räknas separat. Mellanleden är kvar.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.261",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 8,0 m är korrekt efter att 101,3 kPa dragits från totaltrycket 179,86 kPa. Subtraktion, enhetsomvandling och formelinsättning är E/nivå 2, tidigare C/nivå 3.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.264",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 2,81 m är korrekt: 24000/(870·9,82). Lösningsformeln har delats i kortare rader för mobilen.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.52",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "De tre energierna 2,08 kJ, 264,66 kJ och 56,25 nJ är korrekta. Insektens massa och fart omvandlas rätt. Den breda formeln i c delas utan ändrad beräkning.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.474",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 19,3 J, 42,9 m och 29,0 m/s är korrekt. Fartformeln i c har fått egna rader för uttrycket och slutsvaret.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.492",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 0,177 J, 0,136 J och 112000 J är korrekt. De långa energiuträkningarna i b är delade i kortare rader, med båda energierna och skillnaden kvar.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.494",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Luftmotståndets arbete är −12,4 J. Båda rörelseenergierna, höjdökningen och energiskillnaden är kvar, men formlerna har delats för mobilen.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.987",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 23,5 är korrekt. Uträkningarna för a och b står på egna formelrader för mobil. Den enkla proportionen och summan kalibreras till E/nivå 2.",
+      "changedFields": [
+        "s",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.988",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 96 bullar är korrekt: 40/2,5·6 = 96. Den direkta proportionen kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.989",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 30 cm är korrekt: 26,1/87 = 0,3 m. Skala med enhetsomvandling kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.990",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 833 g är korrekt avrundat till heltal. Den direkta proportionen kalibreras från nivå 3 till E/nivå 2.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.991",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu två decimaler. Bil A förbrukar 5,5 liter per 100 km, så besparingen blir (6,8−5,5)·2,5 = 3,25 liter. Beräkningen kalibreras till E/nivå 2.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.992",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu en decimal, och 3,1 timmar godkänns. Beräkningen är 25·135/18 = 187,5 minuter = 3,125 timmar. Även 3,125 godkänns. Det framgår att poolen är tom från början; rutinen är E/nivå 2.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.993",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 25 är korrekt. Ökningen ger k = 7,5/3 = 2,5 och y = 2,5·10. Detta är en rutinberäkning på E/nivå 2, tidigare C/nivå 4.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.994",
+      "parts": "alla",
+      "status": "Åtgärdad",
+      "comment": "Facit 24 är korrekt: c = 20 ger b = 16, vilket ger a = 24. Att koppla ihop två proportioner i symbolisk form kalibreras till C/nivå 3, tidigare A/nivå 5.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.72",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 245,5 N. Med tre värdesiffror blir det 246 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 245 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.270",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 17,55 kWh. Med tre värdesiffror blir det 17,6 kWh. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 17,5 kWh.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.160",
+      "parts": [
+        "d"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del d: det oavrundade värdet är 1,125 m/s. Med tre värdesiffror blir det 1,13 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 1,12 m/s.",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "spelDelar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.370",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 41,25 m/s. Med tre värdesiffror blir det 41,3 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 41,2 m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.375",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 562,5 N. Med tre värdesiffror blir det 563 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 562 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.381",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är -2,835 kg*m/s. Med tre värdesiffror blir det -2,84 kg*m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen -2,83 kg*m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.209",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 736,5 J. Med tre värdesiffror blir det 737 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 736 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.578",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 3525 N. Med tre värdesiffror blir det 3530 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 3520 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.505",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 76,25 J. Med tre värdesiffror blir det 76,3 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 76,2 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.509",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 370,5 J. Med tre värdesiffror blir det 371 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 370 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "6.457",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 245,5 Pa. Med tre värdesiffror blir det 246 Pa. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 245 Pa.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.529",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 212,5 J. Med tre värdesiffror blir det 213 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 212 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.533",
+      "parts": [
+        "a"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del a: det oavrundade värdet är 0,07365 N. Med tre värdesiffror blir det 0,0737 N. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,0736 N.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.418",
+      "parts": [
+        "b"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del b: det oavrundade värdet är 0,002275 J. Med tre värdesiffror blir det 0,00228 J. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,00227 J.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    },
+    {
+      "course": "fy1",
+      "id": "5.440",
+      "parts": [
+        "c"
+      ],
+      "status": "Åtgärdad",
+      "comment": "Del c: det oavrundade värdet är 0,7875 m/s. Med tre värdesiffror blir det 0,788 m/s. Rättningen godtar både detta och fullvärdet, men inte den felaktiga avrundningen 0,787 m/s.",
+      "changedFields": [
+        "rättSvar"
+      ],
+      "scope": "Angivet delkorts fysik, avrundning, svarsfält och mobilvisning; andra delar slutmarkeras inte"
+    }
+  ],
+  "noError": [
+    {
+      "course": "fy1",
+      "id": "5.55",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 25 g = 25/1000 = 0,025 kg. Frågan gäller bara denna omvandling. 0,025, 0.025 kg och 2,5·10⁻² kg godkänns. Rapporten saknar den exakta elevinmatningen, så den tidigare orsaken är okänd.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.485",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: b anger uttryckligen en annan beräkning med 14,1 m/s och ger 11,9 m. Det värdet ska användas på kortet; 12,0 m från den andra startfarten 14,13 är inte samma givna scenario.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.508",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a ger 5,66 m/s. b anger själv 5,66 m/s och ger 11,32 ≈ 11,3 m/s. Det avrundade givna värdet ändrar inte slutsiffran.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.537",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a ger 3,96 N. Den givna bromskraften 3,96 N i b ger 13,7 m/s. Friktionen arbetar mot fallet; tecken och energi är korrekta.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.254",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: tryckökningen 29,46 kPa ger 3,0 m djup. Lufttrycket ska inte läggas till.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.305",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 3928/(1000·9,82) = 0,40 m. Tryckskillnaden anges redan i Pa.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.356",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: tryckökningen 19,64 kPa ger djupet 2,00 m. Det korta facit visar tre värdesiffror.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.995",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 42,195 km avrundas till 42 hela kilometer. Formuleringen anger precisionen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.996",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 1849 kr avrundas till 1800 kr vid hundratal. Formuleringen anger precisionen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    },
+    {
+      "course": "ma1",
+      "id": "0.997",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 0,125·68 = 8,5 mg. Frågan anger en decimal och självrättningen godkänner 8,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, enheter, precision, självständiga kort, nivå och mobilvisning"
+    }
+  ],
+  "verification": {
+    "answerChecks": 118,
+    "views": 118,
+    "viewIssues": [],
+    "shortDisplays": 16,
+    "javascriptErrors": []
+  },
+  "supabaseStatusChanged": false
+}

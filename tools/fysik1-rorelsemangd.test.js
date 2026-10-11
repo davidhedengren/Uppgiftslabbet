@@ -98,7 +98,13 @@ test('Rörelsemängd: alla numeriska uppgifter räknas från givna värden',()=>
  const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='rorelsemangd'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));
  assert.equal(tasks.length,85);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
  for(const[id,values]of cases){const t=q(id),want=Array.isArray(values)?values:[values],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);
- want.forEach((v,i)=>assert.ok(Math.abs(v-got[i])<=1e-10*Math.max(1,Math.abs(v)),`${id} del ${i}: ${v} mot ${got[i]}`));}
+ want.forEach((v,i)=>{
+  // Kontrollera både fysikens fullvärde och rätt avrundningscentrum vid exakt halvsteg.
+  const half={'5.370:0':[41.25,41.3],'5.375:0':[562.5,563],'5.381:0':[-2.835,-2.84]}[id+':'+i];
+  if(half)assert.ok(Math.abs(v-half[0])<1e-10,`${id}: oberoende fullvärde`);
+  const target=half?half[1]:v;
+  assert.ok(Math.abs(target-got[i])<=1e-10*Math.max(1,Math.abs(target)),`${id} del ${i}: ${target} mot ${got[i]}`);
+ });}
 });
 test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  let checked=0;const failures=[];
