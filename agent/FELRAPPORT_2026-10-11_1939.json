@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-11",
+  "sourceReport": "19:39",
+  "scope": "Riktad kontroll av temperaturberäkning, facit och faktisk självrättning i 13 uppgifter, 24 numeriska delkort/svar och sju heluppgifter. Inte en full pedagogisk eller nivågranskning av jämförelseuppgifterna.",
+  "counts": {
+    "uniqueTaskIds": 13,
+    "reviewEntries": 14,
+    "changed": 4,
+    "noError": 10
+  },
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "6.21",
+      "parts": "a",
+      "status": "Granskad – inget fel",
+      "comment": "Både 273 och 273,15 godkänns. Med 273,15 blir trycket 150·333,15/293,15 ≈ 170,467 bar, alltså 170,5 bar. Även 273 ger 170,5 bar. Den rapporterade underkänningen i a kan inte återskapas utan den exakta inmatningen.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.21",
+      "parts": "b, heluppgift",
+      "status": "Åtgärdad",
+      "comment": "Heluppgiftens b-del godkänner nu också 13,7 %, som fås med 273. Med 273,15 blir det 13,6 %. Det fristående b-kortet fungerade redan.",
+      "changedFields": [],
+      "consumerChange": "Korrekt alternativt temperatursvar kopplas till varje del i heluppgiftens rättningsplan."
+    },
+    {
+      "course": "fy1",
+      "id": "6.19",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Båda kelvinomvandlingarna ger 110,7 kPa efter avrundning och godkänns, även med enhet.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.20",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Gaslagen använder det absoluta starttrycket 1,260 bar. Efter uppvärmningen dras lufttrycket 1,010 bar bort. Båda kelvinomvandlingarna ger 0,340 bar och godkänns.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.50",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Konstant tryck ger V₂ = 3,00·T₂/T₁. Både 273 och 273,15 ger 3,19 dm³ och godkänns.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.84",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Vid konstant tryck blir volymen 2,00·T₂/T₁ ≈ 1,74 liter. Båda kelvinomvandlingarna godkänns.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.214",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Konstant volym ger p₂ = 8,00·T₂/T₁ ≈ 10,54 MPa. Båda kelvinomvandlingarna godkänns.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.221",
+      "parts": "numeriskt svar",
+      "status": "Granskad – inget fel",
+      "comment": "Konstant volym ger p₂ = 115·T₂/T₁ ≈ 135 kPa. Båda kelvinomvandlingarna godkänns.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.4",
+      "parts": "a–c, heluppgift",
+      "status": "Granskad – inget fel",
+      "comment": "Trycket är 174,65 kPa; volymen cirka 0,836 liter och kolvens sänkning 18,2 cm. Båda kelvinomvandlingarna fungerade redan även i heluppgiften.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.22",
+      "parts": "a–b, särskilt b i heluppgift",
+      "status": "Åtgärdad",
+      "comment": "Heluppgiftens b-del godkänner nu även det korrekt avrundade svaret 92,2 °C från omvandlingen med 273. Luftens densitet och temperatursambandet är oförändrade.",
+      "changedFields": [],
+      "consumerChange": "Korrekt alternativt temperatursvar kopplas till varje del i heluppgiftens rättningsplan."
+    },
+    {
+      "course": "fy1",
+      "id": "6.54",
+      "parts": "a–c, heluppgift",
+      "status": "Granskad – inget fel",
+      "comment": "Tryckkvoten ger 1,87, temperaturkvoten 0,87 och tillsammans en slutvolym på 3,26 liter. Båda kelvinomvandlingarna fungerade redan.",
+      "changedFields": [],
+      "consumerChange": null
+    },
+    {
+      "course": "fy1",
+      "id": "6.201",
+      "parts": "a–b, särskilt b i heluppgift",
+      "status": "Åtgärdad",
+      "comment": "Heluppgiftens b-del godkänner nu även det oavrundade 273-svaret 131,285714… °C. Korrekt avrundning med 273 är 131,3 °C; med 273,15 blir det 131,4 °C. Delkorten fungerade redan.",
+      "changedFields": [],
+      "consumerChange": "Korrekt alternativt temperatursvar kopplas till varje del i heluppgiftens rättningsplan."
+    },
+    {
+      "course": "fy1",
+      "id": "6.213",
+      "parts": "a–b, särskilt b i heluppgift",
+      "status": "Åtgärdad",
+      "comment": "Heluppgiftens b-del godkänner nu 7,40 % från omvandlingen med 273. Med 273,15 blir det 7,39 %. Båda alternativen är korrekta och delkortet fungerade redan.",
+      "changedFields": [],
+      "consumerChange": "Korrekt alternativt temperatursvar kopplas till varje del i heluppgiftens rättningsplan."
+    },
+    {
+      "course": "fy1",
+      "id": "6.513",
+      "parts": "a–d, heluppgift",
+      "status": "Granskad – inget fel",
+      "comment": "Alla fyra trycken är kontrollerade med båda kelvinomvandlingarna. Oavrundade svar och korrekt avrundning till tre värdesiffror godkänns redan.",
+      "changedFields": [],
+      "consumerChange": null
+    }
+  ],
+  "tests": {
+    "masterTests": 6,
+    "consumerTests": 122,
+    "actualAnswerFields": 88,
+    "wholeQuestionChecks": 34,
+    "mobileDesktopViews": 16,
+    "gasNumericChecks": 1806,
+    "gasChoiceChecks": 14,
+    "oldTemperatureChecks": 40,
+    "javascriptErrors": 0
+  },
+  "reportStatusSaved": false
+}

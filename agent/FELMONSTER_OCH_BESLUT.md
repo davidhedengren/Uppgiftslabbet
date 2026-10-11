@@ -550,3 +550,13 @@ Halvsteg: #5.72 a/#5.270/#5.160 d/#5.370 a/#5.375/#5.381 a/#5.209 c/#5.578 a/#5.
 Ma1 #0.992 anger nu en decimal och tom startpool: 3,125 h → 3,1 h, fullprecision godtas, 3,0/3,2 avvisas. #0.991 anger två decimaler. Grundläggande proportionalitetsrutiner #0.987–993 är E/nivå 2; #0.994:s två symboliska proportioner är C/nivå 3, inte A/5. Fy1 #6.105 behöver bara tryckökningen från vattenytan; fem djupanalogier är kontrollerade. #6.261:s subtraktion och formelinsättning är E/2. #5.55 a var redan korrekt och tydligt efter den tidigare granskningen: 25 g = 0,025 kg. Ingen elevinmatning finns i rapporten, så dess tidigare orsak är okänd.
 
 Åtta breda mobilformler delas med alla nödvändiga mellanled kvar (#5.543 b/#6.264/#5.52 c/#5.474 c/#5.492 b/#5.494/#5.160 d och ma1 #0.987). Skydd: master `tools/felrapporter-2026-10-11-1902.test.js`, berörda äldre fysiktester och konsument `tools/felrapporter-2026-10-11-1902.browser.py`: 118 svarskontroller, 16 kortfacitvisningar och 118 mobil-/datorvisningar. Ingen Supabase-status eller elevkommentar ändras.
+
+## FP31 – alternativa kelvinsvar ska följa rätt del även i heluppgiften (2026-10-11)
+
+[Rapport 19:39: alla granskade ID, åtgärder och kommentarsförslag](FELRAPPORT_2026-10-11_1939.md) och motsvarande JSON. #6.21 a är korrekt: både 273 och 273,15 ger 170,5 bar och godkänns. Elevens exakta svar saknas, så den rapporterade underkänningen i a har inte återskapats.
+
+När hela uppgiften rättades kunde b:s lokala svarindex läsa a:s `rättSvar273`. Det underkände giltiga alternativa svar i #6.21 b (13,7 %), #6.22 b (92,2 °C), #6.201 b (oavrundat 131,285714… °C) och #6.213 b (7,40 %). Fristående kort fungerade redan. `svarsPlan` måste bära alternativ per del och per svar; `checkAnswer` ska använda delens metadata. Ändra inte facit eller vidga toleransen för att dölja ett indexfel.
+
+Följdgranskade heluppgifter #6.4/#6.54/#6.513 godkände redan kontrollfallen genom sin ordinarie tolerans. Enkla analoger #6.19/#6.20/#6.50/#6.84/#6.214/#6.221 är också kontrollerade med båda omvandlingarna. Uppgiftstexten får fortsatt inte föreskriva 273 eller 273,15; facit kan räkna med 273,15. En faktiskt given kelvintemperatur ska behållas.
+
+Skydd: konsumentens `tools/delkort.test.js` och `tools/felrapport-2026-10-11-1939.browser.py` testar riktiga svarsfält, heluppgifter, oavrundade/avrundade värden, enheter och nästlade metadata. Mastertester och tidigare temperatur-/gaslagskontroller behålls. Inga bankobjekt ändras i denna runda.
