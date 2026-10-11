@@ -49,6 +49,14 @@ och relevant ledtråd. Om ett tidigare resultat behövs för den avsedda nivån,
 ge det direkt. Kalibrera kortets nivå efter den information som faktiskt visas.
 Huvuduppgiftens och spelkortens delar ska ha entydig koppling till svaren.
 
+**Tillägg 2026-10-11:** 3.311 hade sin vektorfigur i huvuduppgiften men inte i
+c-kortet. Egna korttexter ersätter `spelIntro`; kontrollera därför den faktiskt
+renderade frågan. Alla delar får riktningarna i egen SVG, medan c behåller
+enbart sina behövliga tal 50 s och 0,9 m/s. ”Överfarten” ersätts med resan
+till andra stranden, även i jämförelsen 3.131. Se
+[rapporter 11:31](FELRAPPORTER_2026-10-11_1131.md) och
+`tools/felrapporter-2026-10-11-1131.test.js`; konsumentens browsertest har samma datum.
+
 **Exempel:** ma2 1.271 b får kilometerpriset och c hela taximodellen. 2.11 b får
 förändringsfaktorn. 2.361, 2.363 och 2.365 har egna delfacit. 2.195 b får
 kvadratkompletterad form i sitt kort och en förklaring till minsta värdet.
@@ -153,6 +161,12 @@ Numeriska kort kräver inte manuell komplettering om ingen motivering efterfråg
 
 **Influens:** omfördelning inom ett isolerat föremål ändrar inte nettoladdningen.
 Håll isär laddningsförskjutning i papper och rörliga elektroner i metall.
+
+**Tillägg 2026-10-11:** i 8.503 prövas också missuppfattningen att elektroner
+sitter fast i metallkulan. Alternativet är felaktigt och får egen återkoppling:
+en del av metallens elektroner kan röra sig genom metallen. Lägg inte samma
+förklaring om fri elektronrörelse på pappers-/isolatoruppgifter.
+Se [rapporter 11:31](FELRAPPORTER_2026-10-11_1131.md).
 Vid jordning/separation ska ordningen framgå. Attraktion ensam bevisar inte
 motsatt nettoladdning. Lika stora krafter tar bara ut varandra vid motsatt riktning.
 
