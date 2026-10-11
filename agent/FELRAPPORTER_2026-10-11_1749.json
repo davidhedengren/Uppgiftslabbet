@@ -1,0 +1,453 @@
+{
+  "date": "2026-10-11",
+  "sourceReport": "17:49",
+  "scope": "Fyra rapporter och minst fem analoger per mönster. Ingen fullständig helbanksgranskning slutmarkeras.",
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "5.575",
+      "status": "Åtgärdad",
+      "comment": "Facit är 120/4 = 30 N. Visningen är rättad och visar nu 30,0 N med tre värdesiffror. 30, 30,0 och motsvarande svar med enhet godkänns.",
+      "changedFields": [
+        "s",
+        "spelDelar"
+      ],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.497",
+      "status": "Åtgärdad",
+      "comment": "Arbetet är 17 676 J, vilket med tre värdesiffror blir 1,77 · 10⁴ J. Det korta facit visar nu den avrundningen. 17700 J, 17,7 kJ och svaret med extra precision godkänns.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "ma2",
+      "id": "5.162",
+      "status": "Åtgärdad",
+      "comment": "Frågan förklarar nu att x är utomhustemperaturen i °C och T(x) är vattnets temperatur ut till radiatorerna i °C. Vid −5 °C ute ger modellen 42 °C.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.94",
+      "status": "Åtgärdad",
+      "comment": "Uppgiften anger nu tydligt att temperaturerna är ett stickprov. Standardavvikelsen beräknas med Sx och division med n−1. Medelvärdet är 21,00 °C och standardavvikelsen 0,32 °C.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "ledtrad",
+        "svarEtiketter"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "fy1",
+      "id": "5.14",
+      "status": "Åtgärdad",
+      "comment": "Beräkningarna är korrekta. Det korta facit visar nu tre värdesiffror även för heltal: 24,0 kg m/s, 8,00 kg och 3,00 m/s.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.20",
+      "status": "Åtgärdad",
+      "comment": "Beräkningen 5400/45 = 120 m är korrekt. Visningen följer nu värdesifferkravet även för heltalsmål.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.42",
+      "status": "Åtgärdad",
+      "comment": "Lyftarbetet är 79 542 J. Det korta facit visar nu 7,95 · 10⁴ J med tre värdesiffror; korrekt avrundning godkänns.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.46",
+      "status": "Åtgärdad",
+      "comment": "Arbetet är 1200 J. Det korta facit visar nu 1,20 · 10³ J med tre värdesiffror, och 8,00 s i tidsdelen.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.145",
+      "status": "Åtgärdad",
+      "comment": "Den nyttiga pumpeffekten är 1473 W. Det korta facit visar nu 1,47 · 10³ W med tre värdesiffror.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "fy1",
+      "id": "5.67",
+      "status": "Åtgärdad",
+      "comment": "Beräkningarna är korrekta. Det korta facit bevarar nu värdesiffrorna: 10,0 kJ, 20,0 kJ och 5,00 s.",
+      "changedFields": [],
+      "gradingUiChanged": true,
+      "scope": "Numeriskt facit, avrundning, kortdata och kortfacit"
+    },
+    {
+      "course": "ma2",
+      "id": "5.92",
+      "status": "Åtgärdad",
+      "comment": "Modellens variabler och enheter är nu definierade. Facit visar k = −1, m = 40 och T(−7) = 47 °C, med kortare formelrader för mobilen.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.90",
+      "status": "Åtgärdad",
+      "comment": "Frågan förklarar nu att P(x) är pumpens effekt i W och x är en reglageinställning. Maxeffekten 64 W har fått rätt svarsenhet.",
+      "changedFields": [
+        "t",
+        "s",
+        "svarEnhet"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.121",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu att t mäts i månader sedan starten och att D(t) är antalet dokument. Svaret är 5 månader.",
+      "changedFields": [
+        "t",
+        "s",
+        "svarEnhet"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.79",
+      "status": "Granskad – inget fel",
+      "comment": "Modellen definierar redan reglageinställningen x och effekten P(x) i kW. Maximum är 7,04 kW vid x = 4; P(x) = 6,4 ger x = 0 eller 8.",
+      "changedFields": [],
+      "gradingUiChanged": false,
+      "scope": "Modellens definitioner och beräkningar"
+    },
+    {
+      "course": "ma2",
+      "id": "5.91",
+      "status": "Granskad – inget fel",
+      "comment": "Modellen definierar redan isoleringstjockleken x i cm och den årliga nettobesparingen N(x) i kr. Maximum är 426,25 kr vid x = 11,25 cm.",
+      "changedFields": [],
+      "gradingUiChanged": false,
+      "scope": "Modellens definitioner och beräkningar"
+    },
+    {
+      "course": "ma2",
+      "id": "5.71",
+      "status": "Åtgärdad",
+      "comment": "Temperaturerna är nu tydligt stickprov. Båda medelvärdena är 21,00 °C och Sx blir 0,71 °C respektive 1,41 °C. Rum A har mindre spridning.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "ledtrad"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.66",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu att spridningen ska beskrivas för de visade värdena med σx. Tabellen är lodrät. Standardavvikelserna är fortfarande 1,22 och 5,47 min.",
+      "changedFields": [
+        "t"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "5.110",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu att σx används för att beskriva spridningen i de angivna svaren. Medelvärdet är 5 i båda grupperna och standardavvikelserna 0,63 och 2.",
+      "changedFields": [
+        "t"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "4.299",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu uttryckligen σx för de visade tiderna. De tidigare korrigerade värdena är oförändrade: 0,23 s, 0,65 s och 0,55 s när Beas sämsta tid tas bort.",
+      "changedFields": [
+        "t",
+        "spelDelar"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    },
+    {
+      "course": "ma2",
+      "id": "4.306",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu stickprovsstandardavvikelsen Sx. Den är cirka 3,15 slag och intervallet med en standardavvikelse blir 275,44–281,73 slag. 9 av 12, alltså 75 %, ligger i intervallet.",
+      "changedFields": [
+        "t",
+        "s",
+        "spelDelar"
+      ],
+      "gradingUiChanged": false,
+      "scope": "Angivet felmönster, facit, rättning och mobilvisning"
+    }
+  ],
+  "reports": [
+    {
+      "course": "fy1",
+      "id": "5.575",
+      "part": "a",
+      "status": "Åtgärdad",
+      "comment": "Facit är 120/4 = 30 N. Visningen är rättad och visar nu 30,0 N med tre värdesiffror. 30, 30,0 och motsvarande svar med enhet godkänns."
+    },
+    {
+      "course": "fy1",
+      "id": "5.497",
+      "part": "b",
+      "status": "Åtgärdad",
+      "comment": "Arbetet är 17 676 J, vilket med tre värdesiffror blir 1,77 · 10⁴ J. Det korta facit visar nu den avrundningen. 17700 J, 17,7 kJ och svaret med extra precision godkänns."
+    },
+    {
+      "course": "ma2",
+      "id": "5.162",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Frågan förklarar nu att x är utomhustemperaturen i °C och T(x) är vattnets temperatur ut till radiatorerna i °C. Vid −5 °C ute ger modellen 42 °C."
+    },
+    {
+      "course": "ma2",
+      "id": "5.94",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Uppgiften anger nu tydligt att temperaturerna är ett stickprov. Standardavvikelsen beräknas med Sx och division med n−1. Medelvärdet är 21,00 °C och standardavvikelsen 0,32 °C."
+    }
+  ],
+  "changedBankObjects": [
+    {
+      "course": "fy1",
+      "id": "5.575",
+      "fields": [
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.299",
+      "fields": [
+        "t",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "4.306",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.66",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.71",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.90",
+      "fields": [
+        "t",
+        "s",
+        "svarEnhet"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.92",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.94",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "ledtrad",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.110",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.121",
+      "fields": [
+        "t",
+        "s",
+        "svarEnhet"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "5.162",
+      "fields": [
+        "t",
+        "s"
+      ]
+    }
+  ],
+  "fixed": [
+    {
+      "course": "fy1",
+      "id": "5.575"
+    },
+    {
+      "course": "fy1",
+      "id": "5.497"
+    },
+    {
+      "course": "ma2",
+      "id": "5.162"
+    },
+    {
+      "course": "ma2",
+      "id": "5.94"
+    },
+    {
+      "course": "fy1",
+      "id": "5.14"
+    },
+    {
+      "course": "fy1",
+      "id": "5.20"
+    },
+    {
+      "course": "fy1",
+      "id": "5.42"
+    },
+    {
+      "course": "fy1",
+      "id": "5.46"
+    },
+    {
+      "course": "fy1",
+      "id": "5.145"
+    },
+    {
+      "course": "fy1",
+      "id": "5.67"
+    },
+    {
+      "course": "ma2",
+      "id": "5.92"
+    },
+    {
+      "course": "ma2",
+      "id": "5.90"
+    },
+    {
+      "course": "ma2",
+      "id": "5.121"
+    },
+    {
+      "course": "ma2",
+      "id": "5.71"
+    },
+    {
+      "course": "ma2",
+      "id": "5.66"
+    },
+    {
+      "course": "ma2",
+      "id": "5.110"
+    },
+    {
+      "course": "ma2",
+      "id": "4.299"
+    },
+    {
+      "course": "ma2",
+      "id": "4.306"
+    }
+  ],
+  "reviewedNoError": [
+    {
+      "course": "ma2",
+      "id": "5.79",
+      "comment": "Modellen definierar redan reglageinställningen x och effekten P(x) i kW. Maximum är 7,04 kW vid x = 4; P(x) = 6,4 ger x = 0 eller 8."
+    },
+    {
+      "course": "ma2",
+      "id": "5.91",
+      "comment": "Modellen definierar redan isoleringstjockleken x i cm och den årliga nettobesparingen N(x) i kr. Maximum är 426,25 kr vid x = 11,25 cm."
+    }
+  ],
+  "verification": {
+    "masterTests": 57,
+    "consumerTests": 121,
+    "browserPhysicsInputs": 23,
+    "browserQuickAnswerDisplays": 8,
+    "browserMathInputs": 14,
+    "browserViews": 28,
+    "previousRoundBrowserInputs": 49,
+    "previousRoundBrowserViews": 30,
+    "supabaseStatusesChanged": false
+  }
+}

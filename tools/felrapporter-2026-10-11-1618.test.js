@@ -47,7 +47,7 @@ test('Spridningsfacit har korrekt avrundning och tar hänsyn till spridning noll
  assert.equal(sd(b.filter(x=>x!==32)).toFixed(2),'0.55');assert.match(ma('4.299').spelDelar[3].s,/0\{,\}55/);
  assert.equal(sd(a).toFixed(2),'0.23');assert.equal(sd(b).toFixed(2),'0.65');
  const golf=[276,279,279,277,278,278,280,282,285,272,279,278];
- const sample=sd(golf)*Math.sqrt(12/11);assert.equal(sample.toFixed(1),'3.1');assert.match(ma('4.306').s,/s\\approx3\{,\}1/);
+ const sample=sd(golf)*Math.sqrt(12/11);assert.equal(sample.toFixed(1),'3.1');assert.match(ma('4.306').s,/s\\approx3\{,\}15/);assert.match(ma('4.306').t,/Sx/);
  assert.match(ma('4.302').spelDelar[1].s,/redan är noll/);assert.doesNotMatch(ma('4.302').t,/alltid minskar/);
 });
 test('De två fysikrapporterna har oförändrade, oberoende verifierade facit',()=>{

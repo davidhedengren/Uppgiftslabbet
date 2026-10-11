@@ -508,3 +508,17 @@ FP-02/FP-08 gäller även matematikkort: #4.95 c behöver sina egna 10 %-område
 #4.299:s bortstrukna sämsta tid ger σ = 0,554977… → 0,55 s. #4.302:s ”alltid minskar” gäller inte redan noll spridning. #4.300:s r = −0,985079881… rättas från full precision med 0,005; #4.95:s percentilgränser får 0,05 för en decimal. Fysik #5.99 a är rätt kurs och #6.300 har korrekt 7 856 Pa med angivet g/heltalskrav. Vid rapport utan elevinmatning ska okänd tidigare orsak redovisas; vidga inte toleransen utan belägg.
 
 Skydd: master `tools/felrapporter-2026-10-11-1618.test.js`, konsument `tools/delkort.test.js` och `tools/felrapporter-2026-10-11-1618.browser.py`. Browserkontrollen måste verkligen ladda KaTeX innan rå LaTeX/överbredd bedöms.
+
+## FP28 – precisionsvisning för heltal, modelldefinitioner och explicit Sx/σx (2026-10-11)
+
+[Alla 20 granskade ID, 18 åtgärdade/förtydligade och 2 utan fel samt kommentarsförslag](FELRAPPORTER_2026-10-11_1749.md) och motsvarande JSON. Fyra rapporter, sex analoger för precisionsvisning och fem vardera för modelldefinitioner och standardavvikelse. 11 bankobjekt ändras; sju ytterligare fysikuppgifter får förbättrad kortfacitvisning genom samma kodfix. Detta är en riktad omgång.
+
+Kortfacit måste tillämpa precision innan det returnerar heltal. Betydelsefulla nollor får inte försvinna genom Number(...). 30 N med tre värdesiffror visas som 30,0 N; 17 676 J visas som 1,77·10⁴ J. Kontrollera exponentbyte efter avrundning, exempelvis 999,9 → 1,00·10³. Självrättningen behåller fullprecisionsmål och accepterar både rätt avrundning och extra precision. #5.575 a:s fysik och #5.497 b:s fulla lösning var redan korrekta. Ingen elevinmatning fanns i rapporterna; beskriv det demonstrerade visningsfelet utan att påstå att det säkert orsakade elevens tidigare rapport.
+
+Ett funktionstecken förklarar inte storheten: definiera x/t, T/P/D och enheter i frågan (#5.162/#5.92/#5.90/#5.121). #5.79/#5.91 hade redan definitioner. Behåll matematiknivån och låt svarsenheten följa den definierade storheten. Nödvändiga insättningar och mellanled ska finnas kvar när formelrader delas för mobil.
+
+Att datamaterialet kommer från mätningar avgör inte ensamt om frågan söker Sx eller σx. σx beskriver spridningen i alla angivna värden; Sx används här för uppskattning från ett stickprov. Ange målet uttryckligen. #5.94:s temperaturstickprov använder n−1 och ger 0,32 °C. #5.71:s tidigare s-beteckningar stämde inte med division med n; nu ges konsekvent Sx, 0,71/1,41 °C. #5.66/#5.110/#4.299 beskriver uttryckligen σx i de visade värdena, utan förändrade rättningsmål. #5.66:s tabell vänds med dataparen bevarade.
+
+**Precisering av FP27/#4.306:** golfstickprovet får nu Sx som uttrycklig huvudmetod: 3,15 slag och intervallet 275,44–281,73. Andelen är fortfarande 75 %. Den tidigare beskrivande σx-metoden var inte felräknad; uppgiftens statistiska mål preciseras nu. Återställ inte metoden utan att samtidigt ändra fråga, facit och regressionstest.
+
+Skydd: master `tools/felrapporter-2026-10-11-1749.test.js`, konsument `tools/prov-talformat.test.js` och `tools/felrapporter-2026-10-11-1749.browser.py`. Browserkontrollen laddar riktig KaTeX och testar verkliga svarsfält, kortfacit, prefixenheter och mobilformler. Ingen Supabase-status eller elevkommentar ändras genom push.
