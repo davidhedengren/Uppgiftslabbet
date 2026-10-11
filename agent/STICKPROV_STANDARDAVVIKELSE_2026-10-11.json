@@ -1,0 +1,3146 @@
+{
+  "date": "2026-10-11",
+  "scope": "Helbankssökning i sju banker efter stickprov, urval och standardavvikelse. Samtliga 54 ursprungliga uttryckliga stickprovsträffar samt hela ma1-områdena urvalsmetoder/signifikans, hela ma2-standardavvikelse och relaterade frågor. Detta slutmarkerar inte övriga delar av bankerna.",
+  "counts": {
+    "reviewed": 177,
+    "changed": 41,
+    "noError": 136,
+    "explicitStickprovAtStart": 54
+  },
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "2.175",
+      "status": "Åtgärdad",
+      "comment": "Vätskeprovet är en densitetsuppgift, inte en Sx-beräkning. Fullprecisionsmål 5142,857… kg med tolerans 5 kg godtar 5140 och extra precision; uppgiften kalibreras till E/nivå 2.",
+      "changedFields": [
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.09",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Morgontid är en systematisk avgränsning. Om morgonkunder skiljer sig från andra kunder riskerar urvalet att inte representera hela dagens kundgrupp. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.10",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) Urvalet är inte representativt — hälsomedvetna personer är överrepresenterade, vilket snedvrider resultatet b) Social önskvärdhet. Deltagare kan svara det som anses mer accepterat snarare än sanningen, eftersom svaret inte är anonymt c) Systematiskt mätfel (kalibreringsfel). Alla mätningar blir för höga med samma belopp, vilket skiljer sig från slumpmässig mätosäkerhet",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.11",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Båda studierna visar 5 procentenheters skillnad, men i studie X motsvarar några få personer en stor del av varje grupp. Slumpvariation får därför mycket större betydelse där. Med 2 000 personer per grupp blir andelarna normalt stabilare, så samma observerade skillnad ger starkare statistiskt underlag.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.27",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej. En mycket liten skillnad kan vara statistiskt signifikant, särskilt i en stor undersökning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.28",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Styrka: urvalet görs enligt en tydlig regel och väljer inte bara personer undersökaren själv föredrar. Svaghet: endast en ingång och en timme täcks. Besökare vid andra tider eller ingångar kan skilja sig.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.29",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen är hela den grupp undersökningen vill uttala sig om: alla 16–19-åringar i kommunen. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.30",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) En ledande fråga. b) Frasen \"tycker du inte också\" antyder att det förväntade svaret är ja, vilket kan få fler att svara ja än vad de egentligen tycker — svaren blir snedvridna åt det håll frågan pekar c) Till exempel: \"Anser du att kommunen bör satsa mer, mindre eller lika mycket pengar på parker som i dag?\"",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.60",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det nya läkemedlet hjälper 45/60 = 75 %, jämfört med 52/80 = 65 %. En observerad skillnad bevisar inte ensam en säker skillnad i effekt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.61",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Större stickprov ger normalt mindre slumpmässig variation i skattade andelar, allt annat lika. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.62",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att uppskatta träningsmängd ett helt år bakåt är känsligt för att deltagarna inte minns exakt. Svar: D – minnesfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.63",
+      "status": "Åtgärdad",
+      "comment": "Facit skiljer nu tydligt mellan två felkällor: tidpunkten och vilka invånare som nås. Varje felkälla har en egen förbättring.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.64",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När många utvalda personer inte svarar kan de svarande skilja sig systematiskt från dem som inte svarar. Svar: A – bortfallsfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.65",
+      "status": "Åtgärdad",
+      "comment": "Population, stickprov och skälet till urval är grundläggande begrepp: E/nivå 2. Frågan säger personer, eftersom urvalet är 15-åringar, inte enbart elever.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "formaga",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.66",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det slumpade urvalet från elevregistret ger elever från hela skolan möjlighet att bli valda. Självurval på ett socialt konto kan både missa elever och gynna dem som själva vill svara. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.90",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans handlar om hur förenligt resultatet är med slumpvariation under en statistisk nollmodell. Det säger inte automatiskt att skillnaden är stor, praktiskt viktig eller att urvalet är representativt. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.91",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar gruppstorlekens betydelse genom mindre slumpvariation i medelvärden, utan att ge en sannolikhet för att hypotesen är sann.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.92",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Två stickprov från samma population får sällan exakt samma medelvärde. En liten observerad skillnad kan därför uppstå genom slumpvariation även om gruppernas bakomliggande populationer inte skiljer sig.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Signifikansen kan säga att skillnaden på 2 procentenheter är svår att förklara med enbart slumpvariation bland de svar som faktiskt samlats in . Den tar däremot inte bort självurvalet. Om forumets användare inte representerar hela befolkningen kan resultatet fortfarande vara systematiskt snedvridet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.94",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: ”Statistiskt signifikant” betyder inte ”stor”. Med ett mycket stort stickprov kan även 0,4 procentenheters skillnad bli statistiskt tydlig, men den praktiska betydelsen kan ändå vara liten.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.95",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I små stickprov får enskilda observationer stor påverkan och slumpvariation blir större. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.96",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med få deltagare kan variationen inom grupperna vara stor i förhållande till antalet observationer. Då blir osäkerheten stor. Svar: Studien kan helt enkelt ha för svagt underlag för att skilja en verklig skillnad från slumpvariation.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.97",
+      "status": "Åtgärdad",
+      "comment": "Ledtrådarna ger nu en relevant tankefråga för det aktuella kortet i stället för att tala om svaren på båda delarna. Facit är fortfarande falskt respektive sant.",
+      "changedFields": [
+        "ledtrad",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.98",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej, informationen räcker inte. Skola A har en större observerad effekt (8 poäng), medan skola B har mycket fler observationer. Båda sakerna kan påverka den statistiska säkerheten. För att bedöma signifikansen behövs också information om exempelvis spridningen i resultaten och hur undersökningen genomfördes. Man kan därför inte avgöra signifikansen enbart från medelvärdesförändringen och antalet elever.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.99",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett urval på 90 av 900 elever är 10 %. Det ger 30, 33 och 27 elever. De tre fälten har namngiven ordning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.100",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Genom att dela populationen i relevanta grupper och sedan slumpa inom varje grupp säkerställer man representation samtidigt som urvalet fortfarande bygger på slumpning. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.101",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej. Det ursprungliga urvalet kan vara bra, men olika svarsfrekvens skapar snedvridning på grund av bortfall. Äldre personer riskerar att bli underrepresenterade bland de faktiska svaren. En förbättring är att följa upp grupper med lågt deltagande, använda flera svarssätt och kontrollera hur de svarande fördelar sig jämfört med hela gruppen som undersökningen ska uttala sig om.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.102",
+      "status": "Åtgärdad",
+      "comment": "Del a anger nu att alla faktiskt svarar. Då är ja entydigt; att bara skicka en enkät till alla garanterar inte representativa svar. Grundläggande bedömning är nivå 2.",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.103",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med en enda slumpning finns risk att den lilla gruppen 65+ får mycket få deltagare. Genom att välja personer inom varje åldersgrupp säkerställer man att alla viktiga grupper finns representerade och kan jämföras.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.104",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalsmetoden utesluter elever som går, åker buss eller bil. Därför kan den inte representera hela skolans resvanor. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.105",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett proportionellt urval ger 42, 30 och 18 elever. Därför går det inte samtidigt att kräva minst 25 från varje program med totalt 90 elever. Det är uppgiftens avsedda slutsats.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.106",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.107",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Platsen där urvalet görs gynnar personer som redan ägnar sig åt en fysisk aktivitet. Det kan ge en systematisk överskattning av motionsvanorna. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.108",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett slumpmässigt urval ger alla elever möjlighet att bli valda och minskar systematisk snedvridning. Det garanterar däremot inte att ett enskilt stickprov exakt speglar varje egenskap i populationen. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.109",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Exempel: • Vilka som väljer att svara: personer som väljer att svara kan ha särskilt starka åsikter. • Utlottningen kan göra att vissa personer svarar främst för tävlingen och kanske inte lika noggrant. QR-koden når dessutom bara personer som faktiskt handlar och får kvitto.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.110",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ordet ”utmärkta” värderar kundservicen redan i frågan och kan påverka svaren. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.111",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Orden ”också” och ”fantastiska” gör frågan ledande. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.112",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om en person kan skicka in flera röster får deltagarna olika stor påverkan och resultatet speglar inte längre en röst per person. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.113",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Mättiden är sannolikt inte representativ för hela veckan. Trafiken kan vara mycket lägre en söndag morgon. En bättre plan är att mäta vid flera tider, veckodagar och gärna under flera veckor .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.114",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalet är starkt snedvridet: personer som befinner sig vid cykelparkeringar är mycket mer benägna att vara cyklister än kommuninvånare i allmänhet. Ett stort antal svar minskar inte ett systematiskt urvalsfel. Ett bättre upplägg är att slumpa personer från hela målpopulationen, använda flera kontaktvägar och följa upp bortfall.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.115",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) Vissa personer kan få större påverkan än andra, så svaren blir inte oberoende bidrag från olika personer. b) Exempelvis unika inloggningar eller engångskoder .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.116",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Flera saker har ändrats samtidigt: elevgrupperna kan skilja sig, frågorna är andra och provformatet är annat. Svar: Skillnaden kan därför inte säkert kopplas till en enda förklaring.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.117",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Vågen förskjuter alla mätningar åt samma håll med samma belopp. Svar: D – systematiskt mätfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.118",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De ärenden som tar längst tid har större risk att fortfarande vara öppna och därmed uteslutas. Urvalet av endast avslutade ärenden överrepresenterar snabbare ärenden . Den beräknade genomsnittstiden blir därför sannolikt för låg jämfört med alla kunder.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.174",
+      "status": "Åtgärdad",
+      "comment": "Självurval skiljs nu från bortfall. De elever som själva väljer att svara kan skilja sig från övriga elever.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.175",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar nu varför vågens återkommande fel på +0,4 kg är systematiskt. Rätt alternativ C är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.176",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ordet ”visst” signalerar vilket svar frågeställaren väntar sig, så fler svarar ja än om frågan varit neutral, t.ex. ”Vad tycker du om skolmaten?”. Svar: B : Ledande fråga",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.177",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Elever i idrottsklasser tränar troligen mer än andra elever. Resultatet blir därför för högt om det ska gälla hela skolan. Svar: A : Urvalsfel",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.178",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att minnas exakt vad man åt för sex månader sedan är svårt och kan ge minnesfel . Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.179",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar hur olika avläsningar gör mätvärdet osäkert och skiljer detta från urvalsfel. Rätt alternativ C är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.180",
+      "status": "Åtgärdad",
+      "comment": "Uteblivna svar kallas bortfall. Facit skiljer det från bortfallsfel, som uppstår om bortfallet snedvrider resultatet.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.181",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar att centimetermarkeringar inte ger stöd för fyra decimaler. Rätt alternativ B är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.182",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.183",
+      "status": "Åtgärdad",
+      "comment": "Facit kopplar de olika instruktionerna till möjlig påverkan på testresultaten. Rätt alternativ B är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.206",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Allt annat lika ger 2 000 deltagare mindre slumpmässig osäkerhet än 20. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.207",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans säger något om hur starkt stödet är mot att resultatet bara beror på slumpvariation. Den säger inte att skillnaden måste vara stor eller viktig i praktiken. Svar: B – Falskt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.208",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med ett mycket stort stickprov blir den slumpmässiga osäkerheten mindre. Då kan även en liten skillnad bli statistiskt tydlig. Svar: A – Sant.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.209",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När fler observationer ingår tenderar slumpmässiga variationer att jämna ut sig bättre. Ett större stickprov minskar därför normalt den relativa slumpmässiga osäkerheten. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.210",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med små grupper kan en skillnad på 1 procentenhet mycket väl bero på slumpvariation. Svar: B – nej.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.211",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans används för att bedöma om ett observerat resultat är svårt att förklara enbart med slumpvariation under en given nollhypotes. Svar: A – Sant.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.212",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En skillnad kan vara statistiskt tydlig men ändå så liten att den har liten praktisk betydelse. Begreppen är alltså inte samma sak. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.213",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Stor spridning inom grupperna gör det svårare att skilja en liten skillnad mellan grupperna från den variation som redan finns i data. Svar: B – Ja.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.214",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett större stickprov kan minska slumpfelet, men det tar inte bort ett systematiskt fel i hur deltagarna valdes. Ett stort snedvridet urval kan fortfarande vara icke-representativt. Svar: B – Falskt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.215",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.216",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När populationen först delas i relevanta grupper och man sedan gör slumpurval inom varje grupp kallas det stratifierat urval . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.217",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om alla individer i populationen faktiskt undersöks är det en totalundersökning , inte ett stickprov. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.218",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen är hela den grupp som undersökningen vill kunna säga något om. Här är det alla kommuninvånare över 18 år. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.219",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De 200 personer som faktiskt väljs ut och intervjuas utgör urvalet . Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.220",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett slumpmässigt urval från hela elevregistret ger elever från hela skolan möjlighet att väljas och minskar risken för självselektion. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.221",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.222",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att välja var k:te person efter en startpunkt är ett systematiskt urval . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.223",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När personer själva bestämmer om de vill gå in och svara får man ett självurval . Sådana deltagare kan skilja sig systematiskt från dem som inte svarar. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.224",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett välgjort stickprov kan ge användbar information om populationen med betydligt mindre tid och kostnad än att undersöka alla. Det eliminerar däremot inte alla felkällor. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.225",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De utvalda personer som inte lämnar svar utgör undersökningens bortfall . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.228",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.280",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Olika slumpmässiga stickprov innehåller normalt inte exakt samma individer och kan därför ge olika skattningar. Skillnaden 48 % mot 54 % kan alltså bero på slumpvariation. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.281",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.282",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När felmarginalen är proportionell mot 1/√n behöver urvalet bli fyra gånger så stort för att halvera felmarginalen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.283",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett stort stickprov minskar slumpmässig osäkerhet, men ett snedvridet urval kan fortfarande ge systematiska fel. Storlek ensam garanterar inte representativitet. Svar: A .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.284",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Större stickprov ger mer information och minskar normalt slumpvariationen. De andra alternativen skapar inte mer data. Svar: A .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.511",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.514",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Exempel: sjuka personer tar mer medicin, men medicinen orsakar inte sjukdomen. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.518",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Stickprovet är den del av populationen som faktiskt undersöks. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.519",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I ett obundet slumpmässigt urval har varje individ samma sannolikhet att komma med. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.520",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Man väljer de som är lätta att nå, vilket kan ge ett skevt urval. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.521",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett fast intervall i en lista kallas systematiskt urval. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.522",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I en totalundersökning ingår hela populationen. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.523",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen delas i grupper (strata) och urval görs inom varje grupp. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.524",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Självselektion ger ofta ett urval som inte representerar populationen. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.525",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.526",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.527",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.528",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Slumpning ur hela registret ger alla samma chans att väljas. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.529",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som valts ut men inte deltar kallas bortfall. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.530",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan antyder vilket svar som förväntas. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.531",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Felet är lika stort och åt samma håll varje gång. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.532",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Reaktionstiden varierar slumpmässigt mellan mätningarna. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.533",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som inte svarar utgör bortfallet. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.534",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Slumpmässiga fel tar delvis ut varandra när man beräknar medelvärdet av många mätningar. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.535",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.536",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om t.ex. missnöjda svarar oftare än nöjda blir resultatet skevt. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.537",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Man svarar som man tror är socialt accepterat. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.538",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett systematiskt fel försvinner inte när man tar medelvärde. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.539",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Avläsningsfel uppstår när mätvärdet läses av felaktigt, t.ex. på grund av parallax. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.540",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Vanor kan skilja sig mellan årstider. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.541",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Tidigare frågor kan påverka hur man svarar på senare frågor. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.542",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Kända felkällor hjälper läsaren att tolka resultatet rätt. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.543",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett större stickprov ger säkrare skattningar och därmed mindre felmarginal. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.544",
+      "status": "Åtgärdad",
+      "comment": "Undersökningarna anges vara oberoende slumpmässiga urval. Facit jämför förändringen med osäkerheten utan en allmän regel om överlappande intervall.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.545",
+      "status": "Åtgärdad",
+      "comment": "Signifikans förklaras nu utan att förväxlas med sannolikheten att en verklig skillnad finns. Begreppstolkningen är nivå 2.",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.546",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Felmarginalen beskriver slumpmässig osäkerhet i urvalet, inte alla typer av fel. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.547",
+      "status": "Åtgärdad",
+      "comment": "Målgrupp och oberoende slumpmässiga urval anges. Slutsatsen skiljs från en garanti om att inga felkällor finns.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.548",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med mycket stora stickprov kan även små skillnader bli signifikanta. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.549",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den undre gränsen är 34 − 2,5 = 31,5 %. Svaret 31,5 godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.550",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den övre gränsen är 34 + 2,5 = 36,5 %. Svaret 36,5 godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.551",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Intervallet går från 55 % till 61 %, vilket är 6 procentenheter brett. Svar: 6",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.552",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Avståndet från 12 till både 10,4 och 13,6 är 1,6 procentenheter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.553",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: För att 1/√n ska halveras måste √n fördubblas, alltså n bli 4 gånger större. Svar: 4",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.554",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett fyra gånger större stickprov halverar felmarginalen från 3 till 1,5 procentenheter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.555",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Intervallet 43–51 % innehåller 50 %, så det är inte säkerställt att andelen är under hälften. Svar: Nej",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.563",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som står först i kön en viss dag är inte slumpmässigt valda. Elever som sällan äter i matsalen kommer inte med alls. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.564",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det är ett självselekterat urval. De som har starka åsikter ringer oftare än andra, så resultatet blir inte representativt. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.565",
+      "status": "Åtgärdad",
+      "comment": "Den information som behövs om golfklubbens inkomster anges nu i frågan; eleven behöver inte anta en viss grupps ekonomi.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.566",
+      "status": "Åtgärdad",
+      "comment": "Facit lovar inte längre samma urvalssannolikhet för alla elever när antal per skola/program inte anges.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.567",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.571",
+      "status": "Åtgärdad",
+      "comment": "Procentsiffrorna i urvalet motsvarar nu hela elever: 20 av 32, 14 av 28 och 6 av 20. Uppskattningen blir 50,0 %. Viktning förklaras med antal ja-svar; uppgiften kalibreras till C/nivå 3 och procentfältet har rätt enhet.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarEnhet"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.40",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Personer som besöker en viss webbplats – och dessutom väljer att svara – kan skilja sig mycket från hela befolkningen. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 18/20 är 90 %. Men stickprovet är mycket litet , och vi vet inte hur personerna valdes. Därför är generaliseringen osäker.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.137",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 8 är verkligen dubbelt 4, men totalt deltog bara 12 personer. Resultatet kan därför vara mycket känsligt för slumpvariation, och representativiteten beror dessutom på hur personerna valdes. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.04",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: A har mindre spridning och jämnare tider. Lika medeltider betyder att A inte är snabbare i genomsnitt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.05",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.10",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.14",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen 5,7 betyder större spridning än 2,1.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.21",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Omvandlingen 3x − 7 ger medelvärdet 29 och standardavvikelsen 15. Förskjutningen ändrar inte spridningen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.28",
+      "status": "Åtgärdad",
+      "comment": "σx anges uttryckligen. Fullprecisionsmål √12 och tolerans 0,05 godtar 3,5 samt extra precision men avvisar 3,4 och 3,6. Facit visar beräkningen.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.35",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: B varierar mindre men ligger fel i genomsnitt. Man behöver både läge och spridning för att bedöma vilken maskin som passar bäst.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.36",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Material A har mindre standardavvikelse och är mer samlat kring sitt medelvärde.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.43",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Omvandlingen 1,5x − 7 ger medelvärdet 23 och standardavvikelsen 6.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.46",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.49",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att lägga till 100 till varje värde ändrar inte spridningen. Standardavvikelsen är fortfarande 6.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.56",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet blir −4·25 + 10 = −90. Standardavvikelsen multipliceras med 4 och blir 12, aldrig negativ.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.65",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Grupp A har mindre standardavvikelse och är mest samlad.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.68",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Centimeter till millimeter multiplicerar både medelvärde och standardavvikelse med 10. Svaren är 180 mm och 40 mm.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.75",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Samma tillägg till alla värden flyttar även medelvärdet. Avstånden till medelvärdet och standardavvikelsen ändras inte.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.84",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Förhållandet mellan standardavvikelserna är 8/2 = 4.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.86",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När varje värde multipliceras med 3 blir också standardavvikelsen tre gånger så stor.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.90",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet ökar från 12 till 17. Standardavvikelsen är fortfarande 3 eftersom alla värden flyttas lika långt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En fördubbling av alla värden fördubblar både medelvärdet och standardavvikelsen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.97",
+      "status": "Åtgärdad",
+      "comment": "σx anges och slutberäkningen använder oavrundad standardavvikelse. 3 · 3,35 är 10,05, medan 3√11,25 avrundas till 10,06.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.102",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Multiplikation med 0,5 halverar standardavvikelsen från 4 till 2.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.106",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den givna normalmodellen har medelvärde 250 och standardavvikelse 30. Andelen över 288 är cirka 10,3 % och 95:e percentilen cirka 299,35. Här beräknas ingen Sx från rådata.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.109",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 47 = 2μ + 7 ger μ = 20 och 8 = 2σ ger σ = 4. Tillägget 7 ändrar inte spridningen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.114",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet ökar med 5 men standardavvikelsen är oförändrad.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.121",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En mindre standardavvikelse betyder mindre spridning som helhet, inte att varje enskilt värde måste ligga närmare medelvärdet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.156",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: A har jämnare resultat, men standardavvikelsen ensam bestämmer inte hela fördelningens form.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.157",
+      "status": "Åtgärdad",
+      "comment": "σx och två decimaler anges; rättningen använder √(26/5) och √(26/6) med tolerans 0,005, så rätt avrundning och extra precision godtas.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.173",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: B har större spridning eftersom 4,9 är större än 1,8.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.174",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet blir 3·35 − 10 = 95 och standardavvikelsen 3·6 = 18.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.175",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Materialen 0,0,0,3,3 och 0,0,1,1,4 har samma medelvärde 1,2 och standardavvikelse, men olika medianer, 0 och 1.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.195",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Material A har mindre standardavvikelse och därmed mindre spridning kring medelvärdet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.201",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett lika stort tillägg till alla värden ändrar inte spridningen. Standardavvikelsen är 3,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.211",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Alla värden flyttas lika långt, så standardavvikelsen är fortfarande 3,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.212",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen blir 2,4·5 = 12.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.213",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Grupp A har mindre standardavvikelse och därmed mindre spridning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.235",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett lika stort tillägg till alla värden ändrar inte spridningen. Standardavvikelsen är 4,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.236",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen blir 2·3,2 = 6,4.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.241",
+      "status": "Åtgärdad",
+      "comment": "Skrivarnas delkort har nu egna namngivna, ordnade svarsfält. A och B kan inte bytas vid rättningen. Facit visar hur kvadratsummorna 8 och 16 fås och varför A har minst spridning. Del a slipper standardavvikelseformeln som bara behövs i b.",
+      "changedFields": [
+        "s",
+        "ledtrad",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.283",
+      "status": "Åtgärdad",
+      "comment": "Facit delar de breda formlerna i läsbara rader och förklarar bidragen inom och mellan klasserna. Medelvärdet 66 och standardavvikelsen 7 är oförändrade.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.284",
+      "status": "Åtgärdad",
+      "comment": "Facit visar kvadratsumman 64, det nya medelvärdet och varför variansen blir oförändrad för 47 eller 53. Beräkningen delas i korta rader för mobil. Svaret är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.299",
+      "status": "Åtgärdad",
+      "comment": "σx-frågan godkänner inte längre de andra Sx-värdena genom för bred tolerans. Fullprecision och tolerans 0,005 används. Facit fokuserar på efterfrågat mått; tidigare rättad 0,55 s i d bevaras.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.302",
+      "status": "Åtgärdad",
+      "comment": "Fullprecisionsmålen √(34/4) och √(34/5) samt tvådecimalstolerans ersätter grova toleranser. σx och det tidigare nollspridningsundantaget bevaras.",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.306",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Golfresultaten behandlas uttryckligen som ett stickprov: Sx ≈ 3,15 slag. Intervallet är cirka 275,44–281,73; 9 av 12 resultat ligger där, alltså 75 %. Den tidigare rättningen bevaras.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.66",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan anger σx för de visade värdena. Båda materialen har median 14 och kvartilavstånd 2, men standardavvikelserna är cirka 1,22 och 5,47 minuter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.71",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De uttryckliga temperaturstickproven använder Sx och n−1. Båda medelvärdena är 21,00 °C och standardavvikelserna 0,71 respektive 1,41 °C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.94",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Temperaturerna är uttryckligen ett stickprov. Medelvärdet är 21,00 °C; kvadratsumman 0,40 delas med 4 och ger Sx ≈ 0,32 °C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.110",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan anger σx för gruppernas angivna svar. Båda medelvärdena är 5; standardavvikelserna är cirka 0,63 och 2,00. A har mest samlade svar.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "matf1",
+      "id": "1.103",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalet görs utan återläggning. Exakt en defekt av fyra ger 3·84/495 = 28/55 ≈ 50,9 %. Bråk, decimal och procent godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    }
+  ],
+  "changed": [
+    {
+      "course": "fy1",
+      "id": "2.175",
+      "status": "Åtgärdad",
+      "comment": "Vätskeprovet är en densitetsuppgift, inte en Sx-beräkning. Fullprecisionsmål 5142,857… kg med tolerans 5 kg godtar 5140 och extra precision; uppgiften kalibreras till E/nivå 2.",
+      "changedFields": [
+        "rättSvar",
+        "tolerans",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.63",
+      "status": "Åtgärdad",
+      "comment": "Facit skiljer nu tydligt mellan två felkällor: tidpunkten och vilka invånare som nås. Varje felkälla har en egen förbättring.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.65",
+      "status": "Åtgärdad",
+      "comment": "Population, stickprov och skälet till urval är grundläggande begrepp: E/nivå 2. Frågan säger personer, eftersom urvalet är 15-åringar, inte enbart elever.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "formaga",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.91",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar gruppstorlekens betydelse genom mindre slumpvariation i medelvärden, utan att ge en sannolikhet för att hypotesen är sann.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.97",
+      "status": "Åtgärdad",
+      "comment": "Ledtrådarna ger nu en relevant tankefråga för det aktuella kortet i stället för att tala om svaren på båda delarna. Facit är fortfarande falskt respektive sant.",
+      "changedFields": [
+        "ledtrad",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.102",
+      "status": "Åtgärdad",
+      "comment": "Del a anger nu att alla faktiskt svarar. Då är ja entydigt; att bara skicka en enkät till alla garanterar inte representativa svar. Grundläggande bedömning är nivå 2.",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.106",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.174",
+      "status": "Åtgärdad",
+      "comment": "Självurval skiljs nu från bortfall. De elever som själva väljer att svara kan skilja sig från övriga elever.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.175",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar nu varför vågens återkommande fel på +0,4 kg är systematiskt. Rätt alternativ C är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.179",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar hur olika avläsningar gör mätvärdet osäkert och skiljer detta från urvalsfel. Rätt alternativ C är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.180",
+      "status": "Åtgärdad",
+      "comment": "Uteblivna svar kallas bortfall. Facit skiljer det från bortfallsfel, som uppstår om bortfallet snedvrider resultatet.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.181",
+      "status": "Åtgärdad",
+      "comment": "Facit förklarar att centimetermarkeringar inte ger stöd för fyra decimaler. Rätt alternativ B är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.182",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.183",
+      "status": "Åtgärdad",
+      "comment": "Facit kopplar de olika instruktionerna till möjlig påverkan på testresultaten. Rätt alternativ B är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.215",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.221",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.228",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.281",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.511",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.525",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.526",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.527",
+      "status": "Åtgärdad",
+      "comment": "En direkt begreppsfråga kalibreras till nivå 1. Rätt svar är oförändrat.",
+      "changedFields": [
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.535",
+      "status": "Åtgärdad",
+      "comment": "Målgruppen är nu uttryckligen alla kommuninvånare. Facit förklarar varför den begränsade gruppen kan ge ett snedvridet urval.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.544",
+      "status": "Åtgärdad",
+      "comment": "Undersökningarna anges vara oberoende slumpmässiga urval. Facit jämför förändringen med osäkerheten utan en allmän regel om överlappande intervall.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.545",
+      "status": "Åtgärdad",
+      "comment": "Signifikans förklaras nu utan att förväxlas med sannolikheten att en verklig skillnad finns. Begreppstolkningen är nivå 2.",
+      "changedFields": [
+        "t",
+        "s",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.547",
+      "status": "Åtgärdad",
+      "comment": "Målgrupp och oberoende slumpmässiga urval anges. Slutsatsen skiljs från en garanti om att inga felkällor finns.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.565",
+      "status": "Åtgärdad",
+      "comment": "Den information som behövs om golfklubbens inkomster anges nu i frågan; eleven behöver inte anta en viss grupps ekonomi.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.566",
+      "status": "Åtgärdad",
+      "comment": "Facit lovar inte längre samma urvalssannolikhet för alla elever när antal per skola/program inte anges.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.567",
+      "status": "Åtgärdad",
+      "comment": "Grundläggande tolkning av urval eller slumpvariation kalibreras från C till E/nivå 2. Svaret och motiveringen är oförändrade.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "traningsniva"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.571",
+      "status": "Åtgärdad",
+      "comment": "Procentsiffrorna i urvalet motsvarar nu hela elever: 20 av 32, 14 av 28 och 6 av 20. Uppskattningen blir 50,0 %. Viktning förklaras med antal ja-svar; uppgiften kalibreras till C/nivå 3 och procentfältet har rätt enhet.",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "traningsniva",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarEnhet"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.05",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.10",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.28",
+      "status": "Åtgärdad",
+      "comment": "σx anges uttryckligen. Fullprecisionsmål √12 och tolerans 0,05 godtar 3,5 samt extra precision men avvisar 3,4 och 3,6. Facit visar beräkningen.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelIntro",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.46",
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu σx för spridningen i de givna värdena, så att Sx och σx inte ger två olika möjliga facit.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.97",
+      "status": "Åtgärdad",
+      "comment": "σx anges och slutberäkningen använder oavrundad standardavvikelse. 3 · 3,35 är 10,05, medan 3√11,25 avrundas till 10,06.",
+      "changedFields": [
+        "t",
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.157",
+      "status": "Åtgärdad",
+      "comment": "σx och två decimaler anges; rättningen använder √(26/5) och √(26/6) med tolerans 0,005, så rätt avrundning och extra precision godtas.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.241",
+      "status": "Åtgärdad",
+      "comment": "Skrivarnas delkort har nu egna namngivna, ordnade svarsfält. A och B kan inte bytas vid rättningen. Facit visar hur kvadratsummorna 8 och 16 fås och varför A har minst spridning. Del a slipper standardavvikelseformeln som bara behövs i b.",
+      "changedFields": [
+        "s",
+        "ledtrad",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.283",
+      "status": "Åtgärdad",
+      "comment": "Facit delar de breda formlerna i läsbara rader och förklarar bidragen inom och mellan klasserna. Medelvärdet 66 och standardavvikelsen 7 är oförändrade.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.284",
+      "status": "Åtgärdad",
+      "comment": "Facit visar kvadratsumman 64, det nya medelvärdet och varför variansen blir oförändrad för 47 eller 53. Beräkningen delas i korta rader för mobil. Svaret är oförändrat.",
+      "changedFields": [
+        "s"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.299",
+      "status": "Åtgärdad",
+      "comment": "σx-frågan godkänner inte längre de andra Sx-värdena genom för bred tolerans. Fullprecision och tolerans 0,005 används. Facit fokuserar på efterfrågat mått; tidigare rättad 0,55 s i d bevaras.",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.302",
+      "status": "Åtgärdad",
+      "comment": "Fullprecisionsmålen √(34/4) och √(34/5) samt tvådecimalstolerans ersätter grova toleranser. σx och det tidigare nollspridningsundantaget bevaras.",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelDelar"
+      ],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    }
+  ],
+  "noError": [
+    {
+      "course": "ma1",
+      "id": "5.09",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Morgontid är en systematisk avgränsning. Om morgonkunder skiljer sig från andra kunder riskerar urvalet att inte representera hela dagens kundgrupp. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.10",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) Urvalet är inte representativt — hälsomedvetna personer är överrepresenterade, vilket snedvrider resultatet b) Social önskvärdhet. Deltagare kan svara det som anses mer accepterat snarare än sanningen, eftersom svaret inte är anonymt c) Systematiskt mätfel (kalibreringsfel). Alla mätningar blir för höga med samma belopp, vilket skiljer sig från slumpmässig mätosäkerhet",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.11",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Båda studierna visar 5 procentenheters skillnad, men i studie X motsvarar några få personer en stor del av varje grupp. Slumpvariation får därför mycket större betydelse där. Med 2 000 personer per grupp blir andelarna normalt stabilare, så samma observerade skillnad ger starkare statistiskt underlag.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.27",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej. En mycket liten skillnad kan vara statistiskt signifikant, särskilt i en stor undersökning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.28",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Styrka: urvalet görs enligt en tydlig regel och väljer inte bara personer undersökaren själv föredrar. Svaghet: endast en ingång och en timme täcks. Besökare vid andra tider eller ingångar kan skilja sig.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.29",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen är hela den grupp undersökningen vill uttala sig om: alla 16–19-åringar i kommunen. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.30",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) En ledande fråga. b) Frasen \"tycker du inte också\" antyder att det förväntade svaret är ja, vilket kan få fler att svara ja än vad de egentligen tycker — svaren blir snedvridna åt det håll frågan pekar c) Till exempel: \"Anser du att kommunen bör satsa mer, mindre eller lika mycket pengar på parker som i dag?\"",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.60",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det nya läkemedlet hjälper 45/60 = 75 %, jämfört med 52/80 = 65 %. En observerad skillnad bevisar inte ensam en säker skillnad i effekt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.61",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Större stickprov ger normalt mindre slumpmässig variation i skattade andelar, allt annat lika. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.62",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att uppskatta träningsmängd ett helt år bakåt är känsligt för att deltagarna inte minns exakt. Svar: D – minnesfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.64",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När många utvalda personer inte svarar kan de svarande skilja sig systematiskt från dem som inte svarar. Svar: A – bortfallsfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.66",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det slumpade urvalet från elevregistret ger elever från hela skolan möjlighet att bli valda. Självurval på ett socialt konto kan både missa elever och gynna dem som själva vill svara. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.90",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans handlar om hur förenligt resultatet är med slumpvariation under en statistisk nollmodell. Det säger inte automatiskt att skillnaden är stor, praktiskt viktig eller att urvalet är representativt. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.92",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Två stickprov från samma population får sällan exakt samma medelvärde. En liten observerad skillnad kan därför uppstå genom slumpvariation även om gruppernas bakomliggande populationer inte skiljer sig.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Signifikansen kan säga att skillnaden på 2 procentenheter är svår att förklara med enbart slumpvariation bland de svar som faktiskt samlats in . Den tar däremot inte bort självurvalet. Om forumets användare inte representerar hela befolkningen kan resultatet fortfarande vara systematiskt snedvridet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.94",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: ”Statistiskt signifikant” betyder inte ”stor”. Med ett mycket stort stickprov kan även 0,4 procentenheters skillnad bli statistiskt tydlig, men den praktiska betydelsen kan ändå vara liten.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.95",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I små stickprov får enskilda observationer stor påverkan och slumpvariation blir större. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.96",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med få deltagare kan variationen inom grupperna vara stor i förhållande till antalet observationer. Då blir osäkerheten stor. Svar: Studien kan helt enkelt ha för svagt underlag för att skilja en verklig skillnad från slumpvariation.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.98",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej, informationen räcker inte. Skola A har en större observerad effekt (8 poäng), medan skola B har mycket fler observationer. Båda sakerna kan påverka den statistiska säkerheten. För att bedöma signifikansen behövs också information om exempelvis spridningen i resultaten och hur undersökningen genomfördes. Man kan därför inte avgöra signifikansen enbart från medelvärdesförändringen och antalet elever.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.99",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett urval på 90 av 900 elever är 10 %. Det ger 30, 33 och 27 elever. De tre fälten har namngiven ordning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.100",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Genom att dela populationen i relevanta grupper och sedan slumpa inom varje grupp säkerställer man representation samtidigt som urvalet fortfarande bygger på slumpning. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.101",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Nej. Det ursprungliga urvalet kan vara bra, men olika svarsfrekvens skapar snedvridning på grund av bortfall. Äldre personer riskerar att bli underrepresenterade bland de faktiska svaren. En förbättring är att följa upp grupper med lågt deltagande, använda flera svarssätt och kontrollera hur de svarande fördelar sig jämfört med hela gruppen som undersökningen ska uttala sig om.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.103",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med en enda slumpning finns risk att den lilla gruppen 65+ får mycket få deltagare. Genom att välja personer inom varje åldersgrupp säkerställer man att alla viktiga grupper finns representerade och kan jämföras.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.104",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalsmetoden utesluter elever som går, åker buss eller bil. Därför kan den inte representera hela skolans resvanor. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.105",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett proportionellt urval ger 42, 30 och 18 elever. Därför går det inte samtidigt att kräva minst 25 från varje program med totalt 90 elever. Det är uppgiftens avsedda slutsats.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.107",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Platsen där urvalet görs gynnar personer som redan ägnar sig åt en fysisk aktivitet. Det kan ge en systematisk överskattning av motionsvanorna. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.108",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett slumpmässigt urval ger alla elever möjlighet att bli valda och minskar systematisk snedvridning. Det garanterar däremot inte att ett enskilt stickprov exakt speglar varje egenskap i populationen. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.109",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Exempel: • Vilka som väljer att svara: personer som väljer att svara kan ha särskilt starka åsikter. • Utlottningen kan göra att vissa personer svarar främst för tävlingen och kanske inte lika noggrant. QR-koden når dessutom bara personer som faktiskt handlar och får kvitto.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.110",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ordet ”utmärkta” värderar kundservicen redan i frågan och kan påverka svaren. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.111",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Orden ”också” och ”fantastiska” gör frågan ledande. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.112",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om en person kan skicka in flera röster får deltagarna olika stor påverkan och resultatet speglar inte längre en röst per person. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.113",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Mättiden är sannolikt inte representativ för hela veckan. Trafiken kan vara mycket lägre en söndag morgon. En bättre plan är att mäta vid flera tider, veckodagar och gärna under flera veckor .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.114",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalet är starkt snedvridet: personer som befinner sig vid cykelparkeringar är mycket mer benägna att vara cyklister än kommuninvånare i allmänhet. Ett stort antal svar minskar inte ett systematiskt urvalsfel. Ett bättre upplägg är att slumpa personer från hela målpopulationen, använda flera kontaktvägar och följa upp bortfall.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.115",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: a) Vissa personer kan få större påverkan än andra, så svaren blir inte oberoende bidrag från olika personer. b) Exempelvis unika inloggningar eller engångskoder .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.116",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Flera saker har ändrats samtidigt: elevgrupperna kan skilja sig, frågorna är andra och provformatet är annat. Svar: Skillnaden kan därför inte säkert kopplas till en enda förklaring.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.117",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Vågen förskjuter alla mätningar åt samma håll med samma belopp. Svar: D – systematiskt mätfel.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.118",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De ärenden som tar längst tid har större risk att fortfarande vara öppna och därmed uteslutas. Urvalet av endast avslutade ärenden överrepresenterar snabbare ärenden . Den beräknade genomsnittstiden blir därför sannolikt för låg jämfört med alla kunder.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.176",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ordet ”visst” signalerar vilket svar frågeställaren väntar sig, så fler svarar ja än om frågan varit neutral, t.ex. ”Vad tycker du om skolmaten?”. Svar: B : Ledande fråga",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.177",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Elever i idrottsklasser tränar troligen mer än andra elever. Resultatet blir därför för högt om det ska gälla hela skolan. Svar: A : Urvalsfel",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.178",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att minnas exakt vad man åt för sex månader sedan är svårt och kan ge minnesfel . Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.206",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Allt annat lika ger 2 000 deltagare mindre slumpmässig osäkerhet än 20. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.207",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans säger något om hur starkt stödet är mot att resultatet bara beror på slumpvariation. Den säger inte att skillnaden måste vara stor eller viktig i praktiken. Svar: B – Falskt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.208",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med ett mycket stort stickprov blir den slumpmässiga osäkerheten mindre. Då kan även en liten skillnad bli statistiskt tydlig. Svar: A – Sant.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.209",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När fler observationer ingår tenderar slumpmässiga variationer att jämna ut sig bättre. Ett större stickprov minskar därför normalt den relativa slumpmässiga osäkerheten. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.210",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med små grupper kan en skillnad på 1 procentenhet mycket väl bero på slumpvariation. Svar: B – nej.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.211",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Statistisk signifikans används för att bedöma om ett observerat resultat är svårt att förklara enbart med slumpvariation under en given nollhypotes. Svar: A – Sant.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.212",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En skillnad kan vara statistiskt tydlig men ändå så liten att den har liten praktisk betydelse. Begreppen är alltså inte samma sak. Svar: A.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.213",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Stor spridning inom grupperna gör det svårare att skilja en liten skillnad mellan grupperna från den variation som redan finns i data. Svar: B – Ja.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.214",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett större stickprov kan minska slumpfelet, men det tar inte bort ett systematiskt fel i hur deltagarna valdes. Ett stort snedvridet urval kan fortfarande vara icke-representativt. Svar: B – Falskt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.216",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När populationen först delas i relevanta grupper och man sedan gör slumpurval inom varje grupp kallas det stratifierat urval . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.217",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om alla individer i populationen faktiskt undersöks är det en totalundersökning , inte ett stickprov. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.218",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen är hela den grupp som undersökningen vill kunna säga något om. Här är det alla kommuninvånare över 18 år. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.219",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De 200 personer som faktiskt väljs ut och intervjuas utgör urvalet . Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.220",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett slumpmässigt urval från hela elevregistret ger elever från hela skolan möjlighet att väljas och minskar risken för självselektion. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.222",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att välja var k:te person efter en startpunkt är ett systematiskt urval . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.223",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När personer själva bestämmer om de vill gå in och svara får man ett självurval . Sådana deltagare kan skilja sig systematiskt från dem som inte svarar. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.224",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett välgjort stickprov kan ge användbar information om populationen med betydligt mindre tid och kostnad än att undersöka alla. Det eliminerar däremot inte alla felkällor. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.225",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De utvalda personer som inte lämnar svar utgör undersökningens bortfall . Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.280",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Olika slumpmässiga stickprov innehåller normalt inte exakt samma individer och kan därför ge olika skattningar. Skillnaden 48 % mot 54 % kan alltså bero på slumpvariation. Svar: D.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.282",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När felmarginalen är proportionell mot 1/√n behöver urvalet bli fyra gånger så stort för att halvera felmarginalen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.283",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett stort stickprov minskar slumpmässig osäkerhet, men ett snedvridet urval kan fortfarande ge systematiska fel. Storlek ensam garanterar inte representativitet. Svar: A .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.284",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Större stickprov ger mer information och minskar normalt slumpvariationen. De andra alternativen skapar inte mer data. Svar: A .",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.514",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Exempel: sjuka personer tar mer medicin, men medicinen orsakar inte sjukdomen. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.518",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Stickprovet är den del av populationen som faktiskt undersöks. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.519",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I ett obundet slumpmässigt urval har varje individ samma sannolikhet att komma med. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.520",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Man väljer de som är lätta att nå, vilket kan ge ett skevt urval. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.521",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett fast intervall i en lista kallas systematiskt urval. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.522",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: I en totalundersökning ingår hela populationen. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.523",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Populationen delas i grupper (strata) och urval görs inom varje grupp. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.524",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Självselektion ger ofta ett urval som inte representerar populationen. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.528",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Slumpning ur hela registret ger alla samma chans att väljas. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.529",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som valts ut men inte deltar kallas bortfall. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.530",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan antyder vilket svar som förväntas. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.531",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Felet är lika stort och åt samma håll varje gång. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.532",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Reaktionstiden varierar slumpmässigt mellan mätningarna. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.533",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som inte svarar utgör bortfallet. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.534",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Slumpmässiga fel tar delvis ut varandra när man beräknar medelvärdet av många mätningar. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.536",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Om t.ex. missnöjda svarar oftare än nöjda blir resultatet skevt. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.537",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Man svarar som man tror är socialt accepterat. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.538",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett systematiskt fel försvinner inte när man tar medelvärde. Svar: D",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.539",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Avläsningsfel uppstår när mätvärdet läses av felaktigt, t.ex. på grund av parallax. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.540",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Vanor kan skilja sig mellan årstider. Svar: B",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.541",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Tidigare frågor kan påverka hur man svarar på senare frågor. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.542",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Kända felkällor hjälper läsaren att tolka resultatet rätt. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.543",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett större stickprov ger säkrare skattningar och därmed mindre felmarginal. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.546",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Felmarginalen beskriver slumpmässig osäkerhet i urvalet, inte alla typer av fel. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.548",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Med mycket stora stickprov kan även små skillnader bli signifikanta. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.549",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den undre gränsen är 34 − 2,5 = 31,5 %. Svaret 31,5 godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.550",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den övre gränsen är 34 + 2,5 = 36,5 %. Svaret 36,5 godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.551",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Intervallet går från 55 % till 61 %, vilket är 6 procentenheter brett. Svar: 6",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.552",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Avståndet från 12 till både 10,4 och 13,6 är 1,6 procentenheter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.553",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: För att 1/√n ska halveras måste √n fördubblas, alltså n bli 4 gånger större. Svar: 4",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.554",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett fyra gånger större stickprov halverar felmarginalen från 3 till 1,5 procentenheter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.555",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Intervallet 43–51 % innehåller 50 %, så det är inte säkerställt att andelen är under hälften. Svar: Nej",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.563",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De som står först i kön en viss dag är inte slumpmässigt valda. Elever som sällan äter i matsalen kommer inte med alls. Svar: C",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "5.564",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Det är ett självselekterat urval. De som har starka åsikter ringer oftare än andra, så resultatet blir inte representativt. Svar: A",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.40",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Personer som besöker en viss webbplats – och dessutom väljer att svara – kan skilja sig mycket från hela befolkningen. Svar: B.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 18/20 är 90 %. Men stickprovet är mycket litet , och vi vet inte hur personerna valdes. Därför är generaliseringen osäker.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma1",
+      "id": "6.137",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 8 är verkligen dubbelt 4, men totalt deltog bara 12 personer. Resultatet kan därför vara mycket känsligt för slumpvariation, och representativiteten beror dessutom på hur personerna valdes. Svar: C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.04",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: A har mindre spridning och jämnare tider. Lika medeltider betyder att A inte är snabbare i genomsnitt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.14",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen 5,7 betyder större spridning än 2,1.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.21",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Omvandlingen 3x − 7 ger medelvärdet 29 och standardavvikelsen 15. Förskjutningen ändrar inte spridningen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.35",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: B varierar mindre men ligger fel i genomsnitt. Man behöver både läge och spridning för att bedöma vilken maskin som passar bäst.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.36",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Material A har mindre standardavvikelse och är mer samlat kring sitt medelvärde.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.43",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Omvandlingen 1,5x − 7 ger medelvärdet 23 och standardavvikelsen 6.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.49",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Att lägga till 100 till varje värde ändrar inte spridningen. Standardavvikelsen är fortfarande 6.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.56",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet blir −4·25 + 10 = −90. Standardavvikelsen multipliceras med 4 och blir 12, aldrig negativ.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.65",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Grupp A har mindre standardavvikelse och är mest samlad.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.68",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Centimeter till millimeter multiplicerar både medelvärde och standardavvikelse med 10. Svaren är 180 mm och 40 mm.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.75",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Samma tillägg till alla värden flyttar även medelvärdet. Avstånden till medelvärdet och standardavvikelsen ändras inte.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.84",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Förhållandet mellan standardavvikelserna är 8/2 = 4.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.86",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: När varje värde multipliceras med 3 blir också standardavvikelsen tre gånger så stor.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.90",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet ökar från 12 till 17. Standardavvikelsen är fortfarande 3 eftersom alla värden flyttas lika långt.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.93",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En fördubbling av alla värden fördubblar både medelvärdet och standardavvikelsen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.102",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Multiplikation med 0,5 halverar standardavvikelsen från 4 till 2.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.106",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Den givna normalmodellen har medelvärde 250 och standardavvikelse 30. Andelen över 288 är cirka 10,3 % och 95:e percentilen cirka 299,35. Här beräknas ingen Sx från rådata.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.109",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: 47 = 2μ + 7 ger μ = 20 och 8 = 2σ ger σ = 4. Tillägget 7 ändrar inte spridningen.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.114",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet ökar med 5 men standardavvikelsen är oförändrad.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.121",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: En mindre standardavvikelse betyder mindre spridning som helhet, inte att varje enskilt värde måste ligga närmare medelvärdet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.156",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: A har jämnare resultat, men standardavvikelsen ensam bestämmer inte hela fördelningens form.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.173",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: B har större spridning eftersom 4,9 är större än 1,8.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.174",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Medelvärdet blir 3·35 − 10 = 95 och standardavvikelsen 3·6 = 18.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.175",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Materialen 0,0,0,3,3 och 0,0,1,1,4 har samma medelvärde 1,2 och standardavvikelse, men olika medianer, 0 och 1.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.195",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Material A har mindre standardavvikelse och därmed mindre spridning kring medelvärdet.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.201",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett lika stort tillägg till alla värden ändrar inte spridningen. Standardavvikelsen är 3,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.211",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Alla värden flyttas lika långt, så standardavvikelsen är fortfarande 3,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.212",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen blir 2,4·5 = 12.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.213",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Grupp A har mindre standardavvikelse och därmed mindre spridning.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.235",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Ett lika stort tillägg till alla värden ändrar inte spridningen. Standardavvikelsen är 4,5.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.236",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Standardavvikelsen blir 2·3,2 = 6,4.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "4.306",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Golfresultaten behandlas uttryckligen som ett stickprov: Sx ≈ 3,15 slag. Intervallet är cirka 275,44–281,73; 9 av 12 resultat ligger där, alltså 75 %. Den tidigare rättningen bevaras.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.66",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan anger σx för de visade värdena. Båda materialen har median 14 och kvartilavstånd 2, men standardavvikelserna är cirka 1,22 och 5,47 minuter.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.71",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: De uttryckliga temperaturstickproven använder Sx och n−1. Båda medelvärdena är 21,00 °C och standardavvikelserna 0,71 respektive 1,41 °C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.94",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Temperaturerna är uttryckligen ett stickprov. Medelvärdet är 21,00 °C; kvadratsumman 0,40 delas med 4 och ger Sx ≈ 0,32 °C.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "ma2",
+      "id": "5.110",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Frågan anger σx för gruppernas angivna svar. Båda medelvärdena är 5; standardavvikelserna är cirka 0,63 och 2,00. A har mest samlade svar.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    },
+    {
+      "course": "matf1",
+      "id": "1.103",
+      "status": "Granskad – inget fel",
+      "comment": "Granskad – inget fel: Urvalet görs utan återläggning. Exakt en defekt av fyra ger 3·84/495 = 28/55 ≈ 50,9 %. Bråk, decimal och procent godkänns.",
+      "changedFields": [],
+      "scope": "Fråga, facit, nivå, urvals-/spridningsbegrepp och kortens rättnings-/visningskontrakt"
+    }
+  ],
+  "verification": {
+    "masterTests": 40,
+    "consumerTests": 121,
+    "independentBrowserAnswerChecks": 50,
+    "answerContractChecks": 149,
+    "mobileDesktopViews": 388,
+    "olderBrowserRegressionAnswerChecks": 86,
+    "olderBrowserRegressionViews": 58,
+    "olderShortAnswerDisplays": 8,
+    "newValidatorFindings": 0,
+    "supabaseStatusChanged": false
+  }
+}
