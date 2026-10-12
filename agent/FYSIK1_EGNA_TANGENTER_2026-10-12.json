@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-12",
+  "course": "fy1",
+  "scope": "15 nya uppgifter med egen tangentritning",
+  "reviewed": [
+    "3.425",
+    "3.426",
+    "3.427",
+    "3.428",
+    "3.429",
+    "3.430",
+    "3.431",
+    "3.432",
+    "3.433",
+    "3.434",
+    "3.435",
+    "3.436",
+    "3.437",
+    "3.438",
+    "3.439"
+  ],
+  "created": [
+    {
+      "id": "3.425",
+      "level": 2,
+      "topic": "egen tangent till hissens höjdkurva",
+      "answer": "v ≈ 2,5 m/s uppåt",
+      "comment": "Läs två punkter på tangenten och beräkna höjdskillnaden per sekund.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.426",
+      "level": 2,
+      "topic": "negativ momentanhastighet när en båt närmar sig bryggan",
+      "answer": "v ≈ −4 m/s; fart ≈ 4 m/s",
+      "comment": "Hastighetens tecken visar riktningen; farten saknar tecken.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.427",
+      "level": 2,
+      "topic": "jämföra hastighet före och vid en vändning på skateboard",
+      "answer": "v(2) ≈ 2 m/s, v(6) = 0; stilla bara i vändögonblicket",
+      "comment": "En vågrät tangent vid en tidpunkt betyder inte stillastående under ett helt intervall.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.428",
+      "level": 3,
+      "topic": "momentanhastighet jämförd med medelhastighet under ett sprintlopp",
+      "answer": "v(4) ≈ 6 m/s; medelhastighet 2 m/s; kvot 3",
+      "comment": "Räkna bort startläget när du beräknar förflyttningen.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.429",
+      "level": 3,
+      "topic": "noll hastighet utan riktningsbyte för en programmerad robot",
+      "answer": "v(3) = 0; ingen vändning",
+      "comment": "Noll hastighet innebär inte alltid ett riktningsbyte.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.430",
+      "level": 3,
+      "topic": "en motorbåt ökar farten allt långsammare",
+      "answer": "a(2) ≈ 1,5 m/s²; a(6) ≈ 0,5 m/s²; kvot 3",
+      "comment": "Farten kan fortsätta öka även när accelerationen blir mindre.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.431",
+      "level": 2,
+      "topic": "momentanacceleration när en cykel rullar och bromsas av motstånd",
+      "answer": "a(4) ≈ −0,75 m/s²",
+      "comment": "Tangentens punkt vid 0 s är inte den verkliga starthastigheten.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.432",
+      "level": 3,
+      "topic": "jämföra fart och hastighet uppåt och nedåt för en kastad boll",
+      "answer": "v(0,5) ≈ +4,9 m/s; v(1,5) ≈ −4,9 m/s; samma fart",
+      "comment": "Lika stor fart kan ha motsatta hastighetstecken.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.433",
+      "level": 2,
+      "topic": "hitta nollacceleration utan att förväxla den med stopp",
+      "answer": "a = 0 vid cirka 4 s; v ≈ 8 m/s",
+      "comment": "Noll acceleration betyder inte noll hastighet.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.434",
+      "level": 3,
+      "topic": "jämföra två båtar: snabbast är inte samma som störst acceleration",
+      "answer": "B snabbast: 11 mot 6 m/s. A accelererar mer: 2 mot 0,5 m/s²",
+      "comment": "Grafens höjd visar hastigheten, dess lutning visar accelerationen.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.435",
+      "level": 4,
+      "topic": "kort bollstöt: tangent, millisekunder och kraft",
+      "answer": "a ≈ −625 m/s²; kraft cirka 125 N bort från väggen",
+      "comment": "Omvandla millisekunder till sekunder före lutningsberäkningen.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.436",
+      "level": 4,
+      "topic": "bestäm när en gräns för bromsacceleration överskrids",
+      "answer": "Gränsen överskrids efter cirka 6,3 s till 10 s",
+      "comment": "Sök en tangent med lutningen −2,5 m/s² och jämför lutningarna runt den.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.437",
+      "level": 5,
+      "topic": "hastighetsgräns: granska ett påstående med tangenter och uppskatta tiden över gränsen",
+      "answer": "Cirka 34 km/h vid 5,5 s; över gränsen sista cirka 1 s",
+      "comment": "Låg medelfart utesluter inte att hastighetsgränsen överskrids.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.438",
+      "level": 3,
+      "topic": "två drönare med olika tids- och höjdskalor",
+      "answer": "A: 4 m/s; B: 120 m/min = 2 m/s; A dubbelt så snabb",
+      "comment": "Jämför lutningar efter enhetsomvandling, inte bara vinklarna på papperet.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    },
+    {
+      "id": "3.439",
+      "level": 5,
+      "topic": "uppskatta acceleration ur två tangenter till en svängande vagns lägeskurva",
+      "answer": "Båda v ≈ −2,9 cm/s; uppskattad acceleration vid 4 s ≈ 0 cm/s²",
+      "comment": "Två hastigheter ger en uppskattning av accelerationen; lägeskurvans branthet visar fart.",
+      "status": "nykonstruerad och granskad",
+      "labOnly": true
+    }
+  ],
+  "fixedExisting": [],
+  "reviewedNoErrorExisting": [],
+  "tests": {
+    "nodePassed": 13,
+    "browserViews": 30,
+    "svgFigures": 38,
+    "svgErrors": 0,
+    "svgWarnings": 0,
+    "svgInfo": 38
+  },
+  "reportStatusesChanged": false
+}
