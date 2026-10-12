@@ -4877,6 +4877,14 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .mina-sok:focus-within{border-color:var(--ed);box-shadow:0 0 0 3px var(--ed-ring);background:#fff}
 .mina-sok svg{width:16px;height:16px;flex:none}
 .mina-sok input{flex:1;min-width:0;border:0;outline:0;background:none;font:inherit;font-size:13.5px;color:var(--ink)}
+.mina-filterrad{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,.65fr);gap:10px;margin-top:10px}
+.mina-filterrad[hidden]{display:none}
+.mina-filterrad label{display:grid;gap:4px;font-size:11.5px;font-weight:600;color:var(--ink-2)}
+.mina-filterrad select{width:100%;min-width:0;height:38px;padding:0 10px;border:1px solid var(--line);
+  border-radius:10px;background:var(--canvas);font:inherit;font-size:13px;color:var(--ink)}
+.mina-filterrad select:focus-visible{outline:2px solid var(--ed);outline-offset:2px}
+.mina-traffar{margin:8px 0 0;font-size:11.5px;color:var(--muted)}
+@media(max-width:520px){.mina-filterrad{grid-template-columns:1fr}}
 .mina-kolumner{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
 .mina-kolumn{min-width:0}
 .mina-rubrik{display:flex;align-items:center;gap:9px;margin:0 0 10px;padding-bottom:9px;border-bottom:2px solid var(--ink)}
@@ -9837,6 +9845,13 @@ if(DIREKTKURS){
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
         <input id="minaSok" type="search" placeholder="Sök på namn eller kurs" autocomplete="off" aria-label="Sök bland dokumenten">
       </label>
+      <div class="mina-filterrad" id="minaFilterrad">
+        <label for="minaKurs">Kurs och spår<select id="minaKurs"><option value="">Alla kurser</option></select></label>
+        <label for="minaSortering">Sortera<select id="minaSortering">
+          <option value="senast">Senast ändrad</option><option value="kurs">Kurs A–Ö</option><option value="namn">Namn A–Ö</option>
+        </select></label>
+      </div>
+      <p class="mina-traffar" id="minaTraffar" aria-live="polite"></p>
     </div>
     <div class="sparmodal-body" id="minaInnehall"></div>
   </div>
@@ -12463,7 +12478,52 @@ async function kontoFlyttaIn(){
 /* ── Mina prov, övningsblad och skolans gemensamma bank ────────────────── */
 const UL_IKON_PROV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg>';
 const UL_IKON_OVNING='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>';
-const MINA={lista:null,inbjudningar:null,bank:null,fel:null,sök:'',laddar:false,dela:null,fokusInbjudningar:false,lage:'mina'};
+const MINA={lista:null,inbjudningar:null,bank:null,fel:null,sök:'',kurs:'',sortering:'senast',laddar:false,dela:null,fokusInbjudningar:false,lage:'mina'};
+
+function minaKursEtikett(d,medSpar=true){
+  const kurs=KURSER.find(k=>k.id===d.kurs), spar=kurs?.spår?.find(s=>s.id===d.spar);
+  return (kurs?.titel||d.kurs||'Okänd kurs')+(medSpar&&d.spar?' · '+(spar?.etikett||d.spar):'');
+}
+function minaSorteradLista(lista){
+  const ord=String(MINA.sök||'').trim().toLocaleLowerCase('sv').split(/\s+/).filter(Boolean);
+  let vald=null;try{vald=MINA.kurs?JSON.parse(MINA.kurs):null;}catch(_){}
+  const jamfor=(a,b)=>String(a||'').localeCompare(String(b||''),'sv',{numeric:true,sensitivity:'base'});
+  const datum=d=>Date.parse(d.uppdaterad||d.skapad||'')||0;
+  return lista.filter(d=>{
+    if(vald&&(d.kurs!==vald[0]||(vald[1]&&d.spar!==vald[1])))return false;
+    const alias=/^ma[12]$/.test(d.kurs)&&/^[12][abc]$/.test(d.spar||'')
+      ?d.kurs+String(d.spar).slice(-1):'';
+    const text=[d.namn,minaKursEtikett(d),d.kurs,d.spar,alias,d.agare,d.fran_namn,...minaOmradesLista(d)]
+      .join(' ').toLocaleLowerCase('sv');
+    return ord.every(o=>text.includes(o));
+  }).sort((a,b)=>{
+    const namn=()=>jamfor(a.namn,b.namn)||jamfor(a.id,b.id);
+    if(MINA.sortering==='namn')return namn();
+    if(MINA.sortering==='kurs')return jamfor(minaKursEtikett(a),minaKursEtikett(b))||namn();
+    return datum(b)-datum(a)||namn();
+  });
+}
+function minaRitaVerktyg(lista){
+  const val=new Map();
+  for(const d of lista){
+    if(!d.kurs)continue;
+    val.set(JSON.stringify([d.kurs,null]),minaKursEtikett(d,false));
+    if(d.spar)val.set(JSON.stringify([d.kurs,d.spar]),minaKursEtikett(d));
+  }
+  const alternativ=[...val].sort((a,b)=>a[1].localeCompare(b[1],'sv',{numeric:true,sensitivity:'base'}));
+  if(!val.has(MINA.kurs))MINA.kurs='';
+  if(!['senast','namn','kurs'].includes(MINA.sortering))MINA.sortering='senast';
+  const kurs=document.getElementById('minaKurs');
+  if(kurs){
+    const html='<option value="">Alla kurser</option>'+alternativ.map(([v,n])=>`<option value="${ulEsc(v)}">${ulEsc(n)}</option>`).join('');
+    if(kurs._minaAlternativ!==html){kurs.innerHTML=html;kurs._minaAlternativ=html;}
+    kurs.value=MINA.kurs;
+  }
+  const sort=document.getElementById('minaSortering');if(sort)sort.value=MINA.sortering;
+  const rad=document.getElementById('minaFilterrad');if(rad)rad.hidden=MINA.lage==='inbjudningar';
+  const antal=document.getElementById('minaTraffar');
+  if(antal)antal.textContent=`Visar ${minaSorteradLista(lista).length} av ${lista.length} ${MINA.lage==='inbjudningar'?'förfrågningar':'dokument'}`;
+}
 
 function minaTid(iso){
   const d=new Date(iso); if(Number.isNaN(d.getTime())) return '';
@@ -12497,7 +12557,7 @@ function minaOmradesHtml(d,max=3){
 async function minaÖppna({fokusInbjudningar=false,lage='mina'}={}){
   if(!kontoAktivt()) return;
   const m=document.getElementById('minamodal');
-  MINA.sök=''; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar; MINA.lage=lage;
+  MINA.sök=''; MINA.kurs=''; MINA.sortering='senast'; MINA.fel=null; MINA.dela=null; MINA.fokusInbjudningar=fokusInbjudningar; MINA.lage=lage;
   const mt=document.getElementById('minamodalTitel'), ms=document.getElementById('minamodalText');
   if(lage==='bank'){
     if(mt) mt.textContent='Gemensamma banken';
@@ -12619,26 +12679,23 @@ function minaRita(){
   if(!el||document.getElementById('minamodal').hidden) return;
   if(MINA.fel){ el.innerHTML=`<div class="ul-fel" role="alert">${ulEsc(MINA.fel)}</div>`; return; }
   if(!MINA.lista){ el.innerHTML='<div class="ul-laddar">Hämtar dokument…</div>'; return; }
-  const q=MINA.sök.trim().toLowerCase();
-  const träff=d=>{
-    if(!q) return true;
-    const kurs=KURSER.find(k=>k.id===d.kurs);
-    return [d.namn,kurs?.titel,d.kurs,d.spar,...minaOmradesLista(d)].some(t=>String(t||'').toLowerCase().includes(q));
-  };
+  const alla=MINA.lage==='bank'?(MINA.bank?.dokument||[]):MINA.lage==='inbjudningar'?(MINA.inbjudningar||[]):MINA.lista;
+  minaRitaVerktyg(Array.isArray(alla)?alla:[]);
+  const harFilter=Boolean(MINA.sök.trim()||MINA.kurs);
   const kolumn=(typ,rubrik,ikon,poster,tom)=>`<section class="mina-kolumn" aria-label="${rubrik}">
       <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span>
         <h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
       <div class="mina-lista">${poster.length?poster.map(minaPost).join('')
-        :`<div class="mina-tom mina-premium-empty">${q?'<b>Inga träffar</b>':tom}</div>`}</div>
+        :`<div class="mina-tom mina-premium-empty">${harFilter?'<b>Inga träffar</b>Prova en annan kurs eller ett annat sökord.':tom}</div>`}</div>
     </section>`;
 
   if(MINA.lage==='bank'){
     const bankObj=MINA.bank&&typeof MINA.bank==='object'?MINA.bank:null;
-    const alla=(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]).filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+    const alla=minaSorteradLista(Array.isArray(bankObj?.dokument)?bankObj.dokument:[]);
     const prov=alla.filter(d=>d.typ==='prov'), ovning=alla.filter(d=>d.typ!=='prov');
     const bankKolumn=(typ,rubrik,ikon,poster)=>`<section class="mina-bankkolumn" aria-label="${rubrik}">
       <div class="mina-rubrik"><span class="mina-ikon ${typ}" aria-hidden="true">${ikon}</span><h3>${rubrik}</h3><span class="mina-antal">${poster.length}</span></div>
-      <div class="mina-banklista">${poster.length?poster.map(minaBankPost).join(''):`<div class="mina-tom mina-premium-empty"><b>${q?'Inga träffar':'Inga '+rubrik.toLowerCase()+' ännu'}</b>${q?'Prova ett annat sökord.':'När någon på skolan delar med alla visas dokumentet här.'}</div>`}</div>
+      <div class="mina-banklista">${poster.length?poster.map(minaBankPost).join(''):`<div class="mina-tom mina-premium-empty"><b>${harFilter?'Inga träffar':'Inga '+rubrik.toLowerCase()+' ännu'}</b>${harFilter?'Prova en annan kurs eller ett annat sökord.':'När någon på skolan delar med alla visas dokumentet här.'}</div>`}</div>
     </section>`;
     el.innerHTML=`<section class="mina-skolbank" aria-label="Gemensamma banken">
       <div class="mina-skolbank-rubrik"><span class="mina-ikon ovning" aria-hidden="true">${UL_IKON_OVNING}</span>
@@ -12649,7 +12706,7 @@ function minaRita(){
     return;
   }
 
-  const inbjudningar=Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[];
+  const inbjudningar=minaSorteradLista(Array.isArray(MINA.inbjudningar)?MINA.inbjudningar:[]);
   if(MINA.lage==='inbjudningar'){
     el.innerHTML=inbjudningar.length?`<section class="mina-inbjudningar" id="minaInbjudningar" aria-label="Delningsförfrågningar">
       <div class="mina-inbjudningar-rubrik"><div><b>Delningsförfrågningar</b><span>${inbjudningar.length===1?'En kollega vill dela ett dokument med dig.':inbjudningar.length+' kollegor vill dela dokument med dig.'}</span></div><span class="ul-bricka statisk">${inbjudningar.length}</span></div>
@@ -12658,11 +12715,11 @@ function minaRita(){
         return `<div class="mina-inbjudan"><span class="dr-person aktiv">${ulEsc(ulInitialer(x.fran_namn||'?'))}</span>
           <span class="mina-inbjudan-text"><b>${ulEsc(x.fran_namn||'En kollega')} vill dela ”${ulEsc(x.namn)}”</b><span>${ulEsc(kursnamn)} · ${x.antal_uppgifter||0} ${(x.antal_uppgifter||0)===1?'uppgift':'uppgifter'} · ${ulEsc(minaTid(x.skapad))}</span></span>
           <span class="mina-inbjudan-knappar"><button type="button" class="knapp liten primär" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="ja">Acceptera</button><button type="button" class="knapp liten tyst" data-mina-inbjudan-svar="${ulEsc(x.id)}" data-svar="nej">Avböj</button></span></div>`;
-      }).join('')}</div></section>`:'<div class="mina-tom mina-premium-empty"><b>Inga delningsförfrågningar</b>Du har inga väntande personliga inbjudningar.</div>';
+      }).join('')}</div></section>`:harFilter?'<div class="mina-tom mina-premium-empty"><b>Inga träffar</b>Prova ett annat sökord.</div>':'<div class="mina-tom mina-premium-empty"><b>Inga delningsförfrågningar</b>Du har inga väntande personliga inbjudningar.</div>';
     return;
   }
 
-  const lista=MINA.lista.filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+  const lista=minaSorteradLista(MINA.lista);
   const prov=lista.filter(d=>d.typ==='prov'), ovning=lista.filter(d=>d.typ!=='prov');
   const lokala=sparLasaAlla().length;
   el.innerHTML=`${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span><button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
@@ -12807,6 +12864,8 @@ async function minaKlick(e){
   mina.addEventListener('click',e=>{ if(e.target===mina) minaStäng(); else minaKlick(e); });
   mina.addEventListener('keydown',e=>{ if(e.key==='Escape') minaStäng(); });
   document.getElementById('minaSok').addEventListener('input',e=>{ MINA.sök=e.target.value; minaRita(); });
+  document.getElementById('minaKurs').addEventListener('change',e=>{MINA.kurs=e.target.value;minaRita();});
+  document.getElementById('minaSortering').addEventListener('change',e=>{MINA.sortering=e.target.value;minaRita();});
 
   const el=grindEl();
   el.addEventListener('click',grindKlick);

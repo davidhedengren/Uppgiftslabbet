@@ -592,3 +592,7 @@ Behåll OMR-nycklarna `randvinkel_medelpunkt` och `kordasatsen_biskarningssatsen
 ## UI01 – mottagna dokument ska visas i Mina prov (2026-10-12)
 
 [Orsak, rättning och verifiering](DELADE_DOKUMENT_2026-10-12.md). Uppgiftslabbets `ul_mina`-lista får inte filtreras till `roll==='agare'` i Mina-vyn: det gömmer dokument som mottagaren redan har accepterat. Visa den befintliga RPC-listan och behåll ägarkontroller för rollberoende åtgärder. Personliga delningar och skolans gemensamma bank har separata listor. Efter lyckad acceptans ska Mina-vyn öppnas och uppdateras; avböjning stannar i förfrågningsvyn och fel återaktiverar knappen. Inga databasbehörigheter eller medlemskap ändras av denna rättning. Skydd: `tools/delade-dokument.test.js`, `tools/delade-dokument.browser.py` och befintliga `tools/sparskydd.test.js` i master.
+
+## UI02 – kursfilter och sortering av prov/övningsblad (2026-10-12)
+
+[Genomförande och verifiering](DOKUMENT_FILTER_SORTERING_2026-10-12.md). Mina-vyn och Gemensamma banken ska erbjuda kurs/spår-filter och sortering på datum, kurs eller namn. Sökning kombinerar flera ord över namn, kurs, områden och kollega. Bygg kursval från aktuell ofiltrerad lista, behåll UI01:s mottagna dokument och ändra aldrig källistan vid sortering. Uppdatering behåller val; ny öppning och lyckad acceptans återställer filter så delade dokument syns. Skydd: `tools/delade-dokument.test.js`, `tools/delade-dokument.browser.py` och `tools/sparskydd.test.js`.

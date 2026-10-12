@@ -35,13 +35,15 @@ with sync_playwright() as p:
       const owned={id:'owned',namn:'Mitt eget prov',kurs:'ma2',spar:'2c',typ:'prov',roll:'agare',medlemmar:1,antal_uppgifter:1,uppdaterad:'2026-10-12T08:00:00Z'};
       const received={...owned,id:'received',namn:'Mottaget geometriprov',roll:'medlem',agare:'Testkollega',medlemmar:2,omraden:['Likformighet']};
       const exercise={...received,id:'exercise',typ:'ovning',namn:'Mottaget övningsblad'};
+      const otherTrack={...owned,id:'other-track',namn:'Algebra 2b',spar:'2b',uppdaterad:'2026-10-11T08:00:00Z'};
+      const physics={...owned,id:'physics',namn:'Arbete och energi',kurs:'fy1',spar:null,uppdaterad:'2026-10-13T08:00:00Z'};
       const newlyAccepted={...received,id:'accepted',namn:'Nytt delat prov'};
       const invitation=(id,name)=>({id,namn:name,kurs:'ma2',fran_namn:'Testkollega',antal_uppgifter:1,skapad:'2026-10-12T08:00:00Z'});
       window.sharedFixture={accepted:false,declined:false,calls:[],owned,received,exercise,newlyAccepted};
       ulRpc=async(name,args={})=>{
         const f=window.sharedFixture;f.calls.push({name,args});
         if(name==='ul_min_behorighet')return{larare:true,admin:false};
-        if(name==='ul_mina')return[owned,received,exercise,...(f.accepted?[newlyAccepted]:[])];
+        if(name==='ul_mina')return[owned,received,exercise,otherTrack,physics,...(f.accepted?[newlyAccepted]:[])];
         if(name==='ul_mina_delninginbjudningar')return[
           ...(f.accepted?[]:[invitation('invite-accept','Nytt delat prov')]),
           ...(f.declined?[]:[invitation('invite-decline','Prov att avböja')]),invitation('invite-fail','Förfrågan med tillfälligt fel')];
@@ -79,12 +81,38 @@ with sync_playwright() as p:
         assert page.locator('[data-mina-oppna="received"]').is_visible()
     page.locator('#minaSok').fill('')
 
+    # Verkliga filter/sorteringskontroller med olika kurser och spår.
+    page.locator('#minaKurs').select_option(json.dumps(['ma2', None], separators=(',', ':')))
+    assert page.locator('[data-mina-oppna="other-track"]').is_visible()
+    assert page.locator('[data-mina-oppna="physics"]').count() == 0
+    page.locator('#minaKurs').select_option(json.dumps(['ma2', '2c'], separators=(',', ':')))
+    assert page.locator('[data-mina-oppna="other-track"]').count() == 0
+    page.locator('#minaSok').fill('ma2c likformighet testkollega')
+    assert page.locator('[data-mina-oppna="received"]').is_visible()
+    assert page.locator('#minaTraffar').inner_text() == 'Visar 2 av 5 dokument'
+    page.locator('#minaSok').fill('saknas')
+    assert 'Inga träffar' in page.locator('#minaInnehall').inner_text()
+    page.locator('#minaSok').fill('')
+    page.locator('#minaKurs').select_option('')
+    page.locator('#minaSortering').select_option('senast')
+    def prov_ids():
+        return page.locator('.mina-kolumn[aria-label="Prov"] [data-mina-oppna]').evaluate_all('(nodes)=>nodes.map(n=>n.dataset.minaOppna)')
+    assert prov_ids()[0] == 'physics'
+    page.locator('#minaSortering').select_option('namn')
+    assert prov_ids() == ['other-track', 'physics', 'owned', 'received']
+    page.locator('#minaSortering').select_option('kurs')
+    assert prov_ids() == ['physics', 'other-track', 'owned', 'received']
+    page.evaluate('async()=>await minaHämta()')
+    assert page.locator('#minaSortering').input_value() == 'kurs'
+
     # Acceptera via den riktiga knappen: byt till Mina prov, uppdatera och visa dokumentet.
     page.evaluate("async()=>await minaÖppna({lage:'inbjudningar'})")
     page.locator('[data-mina-inbjudan-svar="invite-accept"][data-svar="ja"]').click()
     page.wait_for_function("MINA.lage==='mina' && document.querySelector('[data-mina-oppna=accepted]')")
     assert page.locator('#minamodalTitel').inner_text() == 'Mina prov och övningsblad'
     assert page.locator('[data-mina-oppna="accepted"]').is_visible()
+    assert page.locator('#minaKurs').input_value() == ''
+    assert page.locator('#minaSok').input_value() == ''
     page.evaluate('async()=>await minaHämta()')
     assert page.locator('[data-mina-oppna="accepted"]').is_visible()
 
@@ -99,6 +127,7 @@ with sync_playwright() as p:
     assert page.evaluate("MINA.lage==='inbjudningar'")
 
     page.evaluate("async()=>await minaÖppna({lage:'bank'})")
+    assert 'Fysik' not in page.locator('#minaKurs').inner_text()
     assert 'Publicerad skolmall' in page.locator('#minaInnehall').inner_text()
     assert 'Mottaget geometriprov' not in page.locator('#minaInnehall').inner_text()
     page.evaluate('async()=>await minaÖppna()')
@@ -106,6 +135,9 @@ with sync_playwright() as p:
     for width in [390, 1280]:
         page.set_viewport_size({'width': width, 'height': 1000})
         assert page.locator('[data-mina-oppna="received"]').is_visible()
+        for control in ['minaKurs', 'minaSortering']:
+            box = page.locator('#'+control).bounding_box()
+            assert box['x'] >= 0 and box['x'] + box['width'] <= width
         page.locator('#minamodal').screenshot(path=f'/tmp/ul-delade-dokument-{width}.png')
         views.append(width)
 
@@ -115,6 +147,6 @@ with sync_playwright() as p:
     assert page.evaluate("state.blad[0].id==='3.17' && DELNING.roll==='medlem'")
     page.evaluate('delningKoppla(null,{tyst:true})')
     assert not errors, errors
-    print(json.dumps({'receivedVisible': True, 'acceptAndDecline': True, 'failureRetryEnabled': True,
+    print(json.dumps({'courseTrackSearchSort': True, 'receivedVisible': True, 'acceptAndDecline': True, 'failureRetryEnabled': True,
                       'receivedDocumentOpened': True, 'views': views, 'javascriptErrors': errors}))
     browser.close()
