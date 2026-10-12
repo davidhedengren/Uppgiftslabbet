@@ -1,0 +1,714 @@
+{
+  "date": "2026-10-12",
+  "sourceReport": "09:58",
+  "counts": {
+    "uniqueTaskIds": 42,
+    "changed": 34,
+    "noError": 8,
+    "reportedTasks": 8,
+    "reportedChanged": 7,
+    "reportedNoError": 1
+  },
+  "scope": "Riktad granskning av åtta rapporter med minst fem jämförelseuppgifter per mönster. Detta slutmarkerar inte hela banken. 3.86 avser bara avgiftens tidpunkt och saldoformler.",
+  "reviewed": [
+    {
+      "course": "ma1",
+      "id": "7.01",
+      "parts": "a–b (rapport a)",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågorna anger nu kg och svarsfältet visar samma enhet. En portion kräver 1,8/12 = 0,15 kg, och 30 portioner kräver 4,5 kg. Även motsvarande mängd i gram godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.39",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet"
+      ],
+      "comment": "Svarsfältet visar nu kr och frågan anger hela kronor. Startkapitalet är 16 439,38/1,055³ ≈ 14 000 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.126",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger nu årsräntan i procent med en decimal och svarsfältet visar %. Svaret är 3,0 %; både 3 och 3 % godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.40",
+      "parts": "a–c (rapport c)",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Startbeloppet 12 000 kr finns nu även på det fristående c-kortet. Efter fem år finns 12 000·1,024⁵ ≈ 13 510,80 kr. Enhet och avrundning är tydliga.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.258",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t"
+      ],
+      "comment": "Det står nu att årsavgiften dras efter att räntan lagts till. Konto A ger 1 986 kr och konto B 2 032 kr. B är fortfarande rätt svar.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.08",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger nu årsräntan i procent och svarsfältet visar %. Ökningen 500 kr av 10 000 kr är 5 %. Både 5 och 5 % godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.223",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger nu hela kronor och 7 772 kr godkänns. Beräkningen ger 7 500·1,018² = 7 772,43 kr; även det oavrundade svaret godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "7.03",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfälten visar cm, m och cm. Facit förklarar varje omvandling: 245 cm, 1,25 m och 3,2 cm. Vid en uttrycklig enhetsomvandling ska svaret skrivas i den efterfrågade enheten.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "7.06",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Det står nu tydligt att 8 % läggs till nettobehovet. Beställningen är 36·1,08 = 38,88 m², med två decimaler.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "7.07",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Alla tre svarsfält visar kr. Svaren är 2 030 kr, 121,80 kr och 2 151,80 kr. Avgift och totalsumma anges med två decimaler; summakortet har bara de data som behövs.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "7.08",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan och svarsfältet anger nu kg. Tillåten last är 0,75·120 = 90 kg.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "7.10",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger liter och svarsfältet l. 2,5/10·18 = 4,5 liter. Både 4,5 l och 4,5 liter godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.81",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan och svarsfältet anger kr. Första årets ränta är 5 000·0,04 = 200 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.85",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfältet visar nu kr. Årsräntan i kronor är 18 000·0,03 = 540 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.87",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfältet visar nu kr. Andra årets ränta beräknas på 20 400 kr och är 408 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.112",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan och svarsfältet anger kr. Månadens ränta är 900 000·0,04/12 = 3 000 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.80",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Räntan efterfrågas nu i procent med en decimal. Efter första året och insättningen finns 25 400 kr. Andra årets faktor är 1,03, alltså 3,0 % ränta.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.82",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "traningsniva",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger procent med två decimaler. De sista årens faktor är √(1,21275/1,05), vilket ger 7,47 % per år. Facit skiljer tydligt på förändringsfaktor och procentsats.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.89",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfältet visar % och frågan anger en decimal. Räntesatsen är 384/12 000·100 = 3,2 %.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.07",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfältet visar % och frågan anger en decimal. Den årliga faktorn är femte roten ur 178 000/260 000. Minskningen är 7,3 % per år.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.127",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "formaga",
+        "traningsniva",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Enheter och avrundning är tydliga: 162 000 kr, 42 000 kr och 57,8 %. Varje del har egen förklaring; c-kortet visar bara betalningen 1 350 kr och räntan 780 kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.25",
+      "parts": "a–b",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfälten visar kr och %. Indexpriset är 112,50 kr. Det fristående jämförelsekortet anger detta belopp direkt och förklarar varför det verkliga priset är 20 % högre.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.26",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Svarsfälten visar % och kr. Svaren är 43 %, 357,50 kr och 300 kr. B-kortet anger nu också två decimaler.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.28",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Momsbeloppets eget kort anger nu uttryckligen att 1 875 kr är priset med moms. Priset utan moms är 1 500 kr och momsen är 375 kr. Alla svarsfält visar kr.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.38",
+      "parts": "a–b",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "B-kortet anger inköpspriset 550 000 kr direkt och frågar efter procent med två decimaler. Värdeökningen är cirka 5,45 % per år.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.88",
+      "parts": "a–c",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "tolerans",
+        "spelDelar",
+        "svarEnhet"
+      ],
+      "comment": "Båda beloppskorten anger kr och två decimaler. Den nya hyran är 8 908,27 kr och ökningen 708,27 kr. Beräkningen behåller full precision före sista avrundningen.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.256",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t"
+      ],
+      "comment": "Det står nu att årsavgiften dras efter räntan. Konto A ger 10 300 kr och B 10 250 kr. A är fortfarande rätt svar.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.203",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger hela kronor och svarsfältet kr. Efter fem år finns cirka 11 314,08 kr, alltså 11 314 kr. Extra precision godkänns också.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.217",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Frågan anger hela kronor och svarsfältet kr. Efter två år finns 8 487,20 kr, alltså 8 487 kr. Extra precision godkänns också.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.518",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "comment": "Rättningen utgår från 11 592,740743 kr. Det korrekt avrundade svaret 11 593 kr och extra precision godkänns; angränsande felaktiga heltal underkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.519",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "comment": "Rättningen utgår från cirka 30 474,860500 kr. 30 475 kr och extra precision godkänns; angränsande felaktiga heltal underkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.520",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "comment": "Rättningen utgår från 4 564,6645 kr. 4 565 kr och extra precision godkänns; angränsande felaktiga heltal underkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.84",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ],
+      "comment": "Avgiften anges redan efter räntan. Konto B blir bättre när K > 120/0,007. Det minsta hela kapitalet är 17 143 kr. Svarsfältet visar nu kr och kräver ett heltal.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.86",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel i avgiftsmodellen: startavgiften dras direkt, så B räknas som (K−300)·1,045²·1,022³. A räknas som K·1,03⁵. Granskningen här avser tidpunkten och saldoformlerna, inte parsern för gränsvärdesolikheten.",
+      "scope": "Avgiftens tidpunkt och saldoformler; olikhetsparser ej granskad"
+    },
+    {
+      "course": "ma1",
+      "id": "3.255",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: samma startbelopp och inga avgifter gör att 2,4 % ger högre saldo än 2,0 %. Konto B är rätt.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "ma1",
+      "id": "3.83",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: 2,4 % av 8 000 kr är 192 kr och 2,1 % är 168 kr. Konto A ger mest ränta.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.470",
+      "parts": "c (rapport); a–b numerisk jämförelse",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel i c: 70·9,82 = 687,4 N, alltså 690 N med två värdesiffror. Både 690 N och 687,4 N godkänns, även med grundpotensform och korrekt enhetsprefix. Elevens exakta inmatning saknas.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.312",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: ett föremål som flyter stilla har lyftkraften mg = 19,64 N, alltså 20 N med två värdesiffror. Båda svaren godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.359",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: lyftkraften är 3,0·9,82 = 29,46 N, alltså 29 N med två värdesiffror. Båda svaren godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.324",
+      "parts": "hela uppgiften",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel: trådens kraft är 2,0·9,82−7,0 = 12,64 N. Rätt enhet och tvådecimalssvar godkänns.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.468",
+      "parts": "a–b",
+      "status": "Granskad – inget fel",
+      "changedFields": [],
+      "comment": "Granskad – inget fel i beräkning och rättning: kraftmätaren visar 8,74 N i luft och 7,63 N under vatten. Kortens egna givna värden räcker till båda beräkningarna.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    },
+    {
+      "course": "fy1",
+      "id": "6.473",
+      "parts": "hela uppgiften",
+      "status": "Åtgärdad/förtydligad",
+      "changedFields": [
+        "s"
+      ],
+      "comment": "Facit var korrekt: 0,79542−0,25041 = 0,54501 N, alltså 0,545 N. Volymomvandlingen och kraftberäkningarna är nu uppdelade så att de ryms på mobilen.",
+      "scope": "Uppgift/delkort, självständig beräkning, facit, enheter/precision och riktad rättning"
+    }
+  ],
+  "followupGroups": {
+    "Saknad enhetsmärkning/otillåten annan dimension": [
+      "7.01",
+      "3.39",
+      "7.03",
+      "7.06",
+      "7.07",
+      "7.08",
+      "7.10",
+      "3.81",
+      "3.85",
+      "3.87",
+      "3.112",
+      "3.217",
+      "3.84"
+    ],
+    "Procent och uttalad precision": [
+      "3.08",
+      "3.126",
+      "3.80",
+      "3.82",
+      "3.89",
+      "3.127",
+      "3.07"
+    ],
+    "Självständiga givna data/precision i delkort": [
+      "3.40",
+      "3.25",
+      "3.26",
+      "3.28",
+      "3.38",
+      "3.88"
+    ],
+    "Årsavgiftens tidpunkt": [
+      "3.258",
+      "3.84",
+      "3.86",
+      "3.256",
+      "3.255",
+      "3.83"
+    ],
+    "Hela kronor, fullprecision och rätt avrundningsgranne": [
+      "3.223",
+      "3.203",
+      "3.217",
+      "3.518",
+      "3.519",
+      "3.520"
+    ],
+    "Fysikfacit med två värdesiffror och kraftbalans": [
+      "6.470",
+      "6.312",
+      "6.359",
+      "6.324",
+      "6.468",
+      "6.473"
+    ],
+    "Mobilformler och mellanled": [
+      "3.07",
+      "3.88",
+      "6.473",
+      "3.40",
+      "3.126",
+      "3.38",
+      "6.470",
+      "6.468"
+    ]
+  },
+  "tests": {
+    "masterTests": 15,
+    "consumerTests": 129,
+    "actualAnswerFields": 399,
+    "wholeQuestionChecks": 12,
+    "mobileDesktopViews": 124,
+    "beforeRejectedNowValid": 19,
+    "beforeAcceptedNowWrong": 57,
+    "javascriptErrors": 0,
+    "validator": {
+      "uppgifter.js": {
+        "INFO": 833,
+        "WARNING": 8
+      },
+      "uppgifter2.js": {
+        "ERROR": 1587,
+        "INFO": 40
+      },
+      "uppgifterma1.js": {
+        "WARNING": 17,
+        "INFO": 181
+      },
+      "uppgifterma2.js": {
+        "INFO": 95,
+        "WARNING": 161,
+        "ERROR": 4
+      },
+      "uppgiftermatf1.js": {
+        "WARNING": 8,
+        "INFO": 70
+      },
+      "uppgiftermato1.js": {
+        "WARNING": 51,
+        "INFO": 182
+      },
+      "uppgiftermato2.js": {
+        "ERROR": 2,
+        "WARNING": 14,
+        "INFO": 57
+      }
+    }
+  },
+  "reportStatusSaved": false
+}
