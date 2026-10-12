@@ -596,3 +596,11 @@ Behåll OMR-nycklarna `randvinkel_medelpunkt` och `kordasatsen_biskarningssatsen
 ## UI02 – kursfilter och sortering av prov/övningsblad (2026-10-12)
 
 [Genomförande och verifiering](DOKUMENT_FILTER_SORTERING_2026-10-12.md). Mina-vyn och Gemensamma banken ska erbjuda kurs/spår-filter och sortering på datum, kurs eller namn. Sökning kombinerar flera ord över namn, kurs, områden och kollega. Bygg kursval från aktuell ofiltrerad lista, behåll UI01:s mottagna dokument och ändra aldrig källistan vid sortering. Uppdatering behåller val; ny öppning och lyckad acceptans återställer filter så delade dokument syns. Skydd: `tools/delade-dokument.test.js`, `tools/delade-dokument.browser.py` och `tools/sparskydd.test.js`.
+
+## FYM01 – momentanhastighet, momentanacceleration och tangenter (2026-10-12)
+
+[15 nya uppgifter, nivåmotivering, facitkontroll och kommentarer](FYSIK1_MOMENTAN_2026-10-12.md), med maskinläsbar JSON-lista. Fysik 1 #3.410–3.424 ligger i befintliga s-t-/v-t-områden. En färdig tangent ska finnas i spelbara diagram där eleven ska bestämma en momentan lutning. Uppgifter som kräver egen tangentritning (#3.421–3.424) har `spel:false` och manuell bedömning; ändra inte detta bara för att facit också innehåller ett numeriskt värde. Bankkopiorna ska ändå vara identiska.
+
+Hastigheten fås från lägeskurvans tangent och accelerationen från hastighetskurvans tangent. Två avlästa tangentpunkter behöver inte ligga på själva kurvan. Skilj grafens höjd från lutningen, fart från tecknad hastighet och medelvärde från momentanvärde. Handritade tangenter ger rimliga uppskattningar och ska inte rättas med en snäv numerisk tolerans. Nivå 1 gäller enkla begrepp, avläsning/koordinatskillnader och enhetsomvandling är normalt nivå 2; fler rutinberäkningar gör inte automatiskt en uppgift till C.
+
+I Uppgiftslabbet kräver `altVisas()` att huvudtexten uttryckligen efterfrågar alternativ, exempelvis ”Välj ett alternativ”, för att alternativen ska följa med i lärarvyn. Nya #3.415/#3.420 kontrolleras i båda apparna. Skydd: `tools/fysik1-momentan.test.js`, `tools/fysik1-momentan.browser.py` och den utökade fullständiga inventeringen i `tools/fysik1-kapitel3.test.js`. Miniräknare tillåts i samtliga fysikuppgifter.
