@@ -12507,7 +12507,7 @@ async function minaÖppna({fokusInbjudningar=false,lage='mina'}={}){
     if(ms) ms.textContent='Personliga inbjudningar till dokument som kollegor vill dela med dig.';
   }else{
     if(mt) mt.textContent='Mina prov och övningsblad';
-    if(ms) ms.textContent='Dina sparade dokument, samlade efter typ och med innehållet synligt direkt i listan.';
+    if(ms) ms.textContent='Dina sparade dokument och dokument som kollegor delat med dig, samlade efter typ.';
   }
   const sok=document.getElementById('minaSok'); if(sok){ sok.value=''; sok.placeholder=lage==='bank'?'Sök i gemensamma banken':'Sök på namn, kurs eller område'; }
   m.hidden=false;
@@ -12662,7 +12662,7 @@ function minaRita(){
     return;
   }
 
-  const lista=MINA.lista.filter(d=>d.roll==='agare').filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
+  const lista=MINA.lista.filter(träff).sort((a,b)=>String(b.uppdaterad).localeCompare(String(a.uppdaterad)));
   const prov=lista.filter(d=>d.typ==='prov'), ovning=lista.filter(d=>d.typ!=='prov');
   const lokala=sparLasaAlla().length;
   el.innerHTML=`${lokala?`<div class="mina-lokal"><span>${lokala} ${lokala===1?'dokument finns':'dokument finns'} bara i den här webbläsaren.</span><button type="button" class="knapp liten primär" data-mina-flytt>Flytta in på kontot</button></div>`:''}
@@ -12682,7 +12682,8 @@ async function minaKlick(e){
     try{
       await ulRpc('ul_svara_delninginbjudan',{p_inbjudan:inbjudanSvar.dataset.minaInbjudanSvar,p_acceptera:acceptera});
       await ulHämtaBehörighet(true).catch(()=>{});
-      await minaHämta();
+      if(acceptera) await minaÖppna();
+      else await minaHämta();
       ulMeddela(acceptera?'Inbjudan accepterad. Dokumentet finns nu på ditt konto.':'Inbjudan avböjd.');
     }catch(err){ alert(err.message); inbjudanSvar.disabled=false; }
     return;
