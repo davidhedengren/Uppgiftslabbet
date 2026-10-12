@@ -205,3 +205,9 @@ Användarbeslut 2026-10-09: miniräknare är alltid tillåten i Fysik 1 och Fysi
 även för enkla begreppsuppgifter. Använd `miniräknare:true` i fysikbankerna.
 Bedöm uppgiftens nivå efter förståelsen och beräkningen, inte efter om eleven
 använder räknare. Detta ändrar inte reglerna för matematikuppgifter.
+
+## Formelsamling i fysik – inga standardkonstanter eller formelledningar i frågan
+
+Användarbeslut 2026-10-12: eleverna ska träna på att hitta standardkonstanter och välja formel. Ange inte exempelvis ”Använd g = 9,82”, Coulombs konstant, gravitationskonstanten eller en färdig lösningsformel i uppgiftstexten. Regeln gäller Fysik 1 och 2, läraruppgift, `spelIntro` och alla separata kort (`t`/`fraga`). Facit ska förklara formelvalet och visa konstanter och insättningar. Ledtrådar bakom separat knapp hålls åtskilda från frågan.
+
+Nödvändiga situationsdata, experimentvärden, fjäderkonstanter, material-/isotopdata och lokala/modelldefinierade värden får inte raderas. Behåll även fysikaliska antaganden, positiv riktning och nollnivå. Formler som är själva föremålet för en felsökning eller härledning ingår i uppgiften. Skriv modelluppgifter som givna fakta utan extra uppmaningar att använda en bestämd formel. Kontrollera att självrättningen godtar de relevanta tabellvärdenas svar med rätt enhet och avrundning; använd granskade mål per uppgift, inte en allmän procenttolerans. Se FP34 och `FYSIK_FORMELSAMLING_2026-10-12.md`.

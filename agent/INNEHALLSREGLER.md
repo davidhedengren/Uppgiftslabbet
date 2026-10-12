@@ -47,10 +47,12 @@ Detta är en av de viktigaste reglerna. När en uppgift med a), b), c) delas med
 
 ### 3.3 Gemensam information ska följa med
 
-Funktioner, modeller, tabeller, diagram, SVG-figurer, givna konstanter, koordinater och villkor måste finnas i `spelIntro` eller på själva delkortet. Kontrollera bland annat:
+Funktioner, modeller, tabeller, diagram, SVG-figurer, nödvändiga situationsdata, koordinater och villkor måste finnas i `spelIntro` eller på själva delkortet. Kontrollera bland annat:
 
 - att delkortet har figuren när huvuduppgiften innehåller en SVG,
 - att svarsalternativ A–D inte försvinner när uppgiften delas.
+
+Standardkonstanter och färdiga formelledningar ska däremot inte skrivas i frågan eller delkortet enligt användarbeslut 2026-10-12. Eleven ska söka dem i formelsamlingen. Behåll experiment- och modellvärden som behövs för just situationen; se FP34 och PEDAGOGISKA_REGLER.
 
 ### 3.4 Ingen facitläcka mellan delar
 
