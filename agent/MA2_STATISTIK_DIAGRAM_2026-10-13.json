@@ -1,0 +1,1980 @@
+{
+  "datum": "2026-10-13",
+  "uppdrag": "Önskemål från Linnea Lundkvist 2026-10-12: fler Ma2-statistikuppgifter med tabeller och diagram där eleverna läser ut värden.",
+  "granskadeId": [
+    "4.307",
+    "4.308",
+    "4.309",
+    "4.310",
+    "4.311",
+    "4.312",
+    "4.313",
+    "4.314",
+    "4.315",
+    "4.316",
+    "4.317",
+    "4.318",
+    "4.319",
+    "4.320",
+    "4.321"
+  ],
+  "tillagdaId": [
+    "4.307",
+    "4.308",
+    "4.309",
+    "4.310",
+    "4.311",
+    "4.312",
+    "4.313",
+    "4.314",
+    "4.315",
+    "4.316",
+    "4.317",
+    "4.318",
+    "4.319",
+    "4.320",
+    "4.321"
+  ],
+  "atgardadeBefintligaFel": [],
+  "granskadIngetFelBefintliga": [],
+  "inventeringEjFullstandigGranskning": [
+    "4.303",
+    "4.03",
+    "4.12",
+    "4.127",
+    "4.129"
+  ],
+  "uppgifter": [
+    {
+      "id": "4.307",
+      "status": "Tillagd och granskad",
+      "innehall": "Husdjur: frekvenstabell",
+      "svar": "5",
+      "kontroll": "Avläs raden 0 husdjur; frekvensen är 5.",
+      "nivamotivering": "En enda tydlig tabellavläsning.",
+      "niva": "E",
+      "traningsniva": 1,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 5,
+      "svarFormat": "numeriskt",
+      "svarEnhet": null,
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "7ced50272246eb3f95e84c0828605f831cce83215a75270065a793f82c691d32"
+    },
+    {
+      "id": "4.308",
+      "status": "Tillagd och granskad",
+      "innehall": "Resor till skolan: stolpdiagram",
+      "svar": "18",
+      "kontroll": "Stolpen Buss når 18 på en skala med steg om 2.",
+      "nivamotivering": "En enda tydlig diagramavläsning.",
+      "niva": "E",
+      "traningsniva": 1,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 18,
+      "svarFormat": "numeriskt",
+      "svarEnhet": null,
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "95c6390fea6c473dfbfdfcca2c896190a7e30b28623c0f020347a1ff78c0d68c"
+    },
+    {
+      "id": "4.309",
+      "status": "Tillagd och granskad",
+      "innehall": "Biblioteksbesök: linjediagram",
+      "svar": "Torsdag",
+      "kontroll": "Värdena är 40, 60, 50, 80, 70; maximum 80 ligger på torsdag.",
+      "nivamotivering": "Identifiera den högsta punkten, utan beräkning.",
+      "niva": "E",
+      "traningsniva": 1,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": "Torsdag",
+      "svarFormat": "kort_text",
+      "svarEnhet": null,
+      "tolerans": null,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "69d0e4d9b21f1d4f4e8d789a8a6b6bbea0f70c5ced5e0ceedb326f25c0840650"
+    },
+    {
+      "id": "4.310",
+      "status": "Tillagd och granskad",
+      "innehall": "Väntetid: tabell och median",
+      "svar": "7 min",
+      "kontroll": "Sortering av 4, 8, 6, 10, 7 ger 4, 6, 7, 8, 10.",
+      "nivamotivering": "Avläsning och en rutinmässig medianberäkning.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 7,
+      "svarFormat": "numeriskt",
+      "svarEnhet": "min",
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "41b3ecf5fad84ba0fefb7e12aae079178cf3b5e7a50c4e119018e5b8b52ab384"
+    },
+    {
+      "id": "4.311",
+      "status": "Tillagd och granskad",
+      "innehall": "Lästa böcker: frekvenstabell",
+      "svar": "a) 1 bok; b) 1,3 böcker",
+      "kontroll": "20 värden; plats 10 och 11 är båda 1. Summan är 0·4+1·8+2·6+3·2=26; 26/20=1,3.",
+      "nivamotivering": "Median och frekvensviktat medelvärde är två separata rutiner.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "2/0/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 2,
+      "rattSvar": [
+        1,
+        1.3
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarEnhet": [
+        null,
+        null
+      ],
+      "tolerans": [
+        0,
+        0
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b"
+      ],
+      "innehallSha256": "084df7ec556533beb5846cdad1774cf30bab142a75f0451df1751f2fe966ec52"
+    },
+    {
+      "id": "4.312",
+      "status": "Tillagd och granskad",
+      "innehall": "Färdsätt: staplat diagram",
+      "svar": "a) A; b) 20 procentenheter",
+      "kontroll": "A: 20/40=50 %. B: 24/80=30 %. Skillnaden är 20 procentenheter.",
+      "nivamotivering": "Rutinmässiga andelar och skillnad i procentenheter; klasserna har olika storlek.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "2/0/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 2,
+      "rattSvar": [
+        "A",
+        20
+      ],
+      "svarFormat": [
+        "kort_text",
+        "numeriskt"
+      ],
+      "svarEnhet": [
+        null,
+        "procentenheter"
+      ],
+      "tolerans": [
+        0,
+        0
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b"
+      ],
+      "innehallSha256": "a00c12e6645f0e8dad2670d285e0b71b07de172ad406e80440081865d43c967c"
+    },
+    {
+      "id": "4.313",
+      "status": "Tillagd och granskad",
+      "innehall": "Aktiviteter: cirkeldiagram",
+      "svar": "60",
+      "kontroll": "Sektorerna är 25, 40, 20 och 15 %. Simning: 0,25·240=60.",
+      "nivamotivering": "Avläs en andel och beräkna antalet.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 60,
+      "svarFormat": "numeriskt",
+      "svarEnhet": null,
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "63903f0e49d6de5e957d7d5314c566ba052378cee680277c0b083667221bd948"
+    },
+    {
+      "id": "4.314",
+      "status": "Tillagd och granskad",
+      "innehall": "Vårdcentral: histogram",
+      "svar": "16",
+      "kontroll": "Intervallen 0–4 och 5–9 har frekvenserna 6 och 10; 6+10=16.",
+      "nivamotivering": "Välj två relevanta intervall och addera.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 16,
+      "svarFormat": "numeriskt",
+      "svarEnhet": null,
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "1dcad5f86b5439c0cfaea937635abbe7661a31c62e652336f7864d1fb25b2522"
+    },
+    {
+      "id": "4.315",
+      "status": "Tillagd och granskad",
+      "innehall": "Restid: kumulativ kurva",
+      "svar": "40 min",
+      "kontroll": "Kurvans punkt (40 min, 75 %) ger den 75:e percentilen.",
+      "nivamotivering": "Koppla percentilbegreppet till två axlar.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "kvartiler_percentiler",
+      "familj": "Percentiler",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 40,
+      "svarFormat": "numeriskt",
+      "svarEnhet": "min",
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "3681893a450b3eaff5a895a2932615df2f8317c496190663d5d25d9811253cb3"
+    },
+    {
+      "id": "4.316",
+      "status": "Tillagd och granskad",
+      "innehall": "Restider: två lådagram",
+      "svar": "a) A; b) 6 min",
+      "kontroll": "Medianerna är 24 och 26. Kvartilavstånden är 28−20=8 respektive 32−18=14; 14−8=6.",
+      "nivamotivering": "a) ren avläsning nivå 1; b) kvartilavstånd och jämförelse nivå 2.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "ladagram",
+      "familj": "Jämföra och rita lådagram",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "2/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 2,
+      "rattSvar": [
+        "A",
+        6
+      ],
+      "svarFormat": [
+        "kort_text",
+        "numeriskt"
+      ],
+      "svarEnhet": [
+        null,
+        "min"
+      ],
+      "tolerans": [
+        0,
+        0
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b"
+      ],
+      "innehallSha256": "2c320b117933e8fd8aa59e414ec590a2e305e21193ad60d3029ae498be3aed72"
+    },
+    {
+      "id": "4.317",
+      "status": "Tillagd och granskad",
+      "innehall": "Bussväntan: prickdiagram",
+      "svar": "5 min",
+      "kontroll": "Tiderna är 2,2,4,4,4,6,6,6,6,8. (4+6)/2=5.",
+      "nivamotivering": "Räkna och ordna prickar; hantera ett jämnt antal observationer.",
+      "niva": "E",
+      "traningsniva": 2,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "poang": "1/0/0",
+      "miniraknare": false,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 5,
+      "svarFormat": "numeriskt",
+      "svarEnhet": "min",
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "406b545d7c2ce5fe26029bea4d0fc4bc529d064980b2bd30032d32a65779964d"
+    },
+    {
+      "id": "4.318",
+      "status": "Tillagd och granskad",
+      "innehall": "Cykelförsäljning: bruten skala",
+      "svar": "Butiken har fel; ökningen är 20 %",
+      "kontroll": "Skalan börjar på 90. Försäljning 100→120 ger (120−100)/100=20 %; synlig stolphöjd 10→30 beskriver inte förhållandet mellan antalen.",
+      "nivamotivering": "Kritiskt resonemang om en missvisande figur och relativ förändring.",
+      "niva": "C",
+      "traningsniva": 3,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "resonemang"
+      ],
+      "poang": "0/2/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": "Butiken har fel: försäljningen ökade med 20 %.",
+      "svarFormat": "kort_text",
+      "svarEnhet": null,
+      "tolerans": null,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "8acd149e98370ac08c56d6bcfd8d1976e32123f27cbf2dff9c1c841de2523f0d"
+    },
+    {
+      "id": "4.319",
+      "status": "Tillagd och granskad",
+      "innehall": "Träningspass: saknad frekvens",
+      "svar": "7",
+      "kontroll": "(11+x)/(8+x)=1,2 ger 11+x=9,6+1,2x, alltså x=7. Kontroll: 18/15=1,2.",
+      "nivamotivering": "Eleven behöver bygga en modell där både summa och antal beror på samma okända värde.",
+      "niva": "C",
+      "traningsniva": 3,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "lagesmatt",
+      "familj": "Viktat medelvärde och saknade värden",
+      "formaga": [
+        "procedur",
+        "problemlösning"
+      ],
+      "poang": "0/2/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": 7,
+      "svarFormat": "numeriskt",
+      "svarEnhet": null,
+      "tolerans": 0,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "6cf78425516ba77d2ee907cab42bd31171ec7dfa13e294e1c5b7ff0314ca50b2"
+    },
+    {
+      "id": "4.320",
+      "status": "Tillagd och granskad",
+      "innehall": "Utbildningspass: grupper med olika vikter",
+      "svar": "B: cirka 79 %; A: 70 %",
+      "kontroll": "A har 9/10>32/40 och 12/20>1/2, men sammanlagt A=21/30=70 % och B=33/42≈78,6 %.",
+      "nivamotivering": "Dra slutsats om sammanvägda andelar när gruppfördelningen skiljer sig.",
+      "niva": "C",
+      "traningsniva": 3,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "tabeller_diagram",
+      "familj": "Avläsa tabeller och diagram",
+      "formaga": [
+        "begrepp",
+        "resonemang"
+      ],
+      "poang": "0/2/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": "Nej, B har ungefär 79 % klara totalt, medan A har 70 %.",
+      "svarFormat": "kort_text",
+      "svarEnhet": null,
+      "tolerans": null,
+      "svarsstruktur": null,
+      "svarEtiketter": null,
+      "innehallSha256": "52f6e530bd69a9a874bc14bc28ba00079bb8ce353e357bfa7d69bda3c15382c7"
+    },
+    {
+      "id": "4.321",
+      "status": "Tillagd och granskad",
+      "innehall": "Grupperade väntetider: möjliga medelvärden",
+      "svar": "Minst 5 min; högst 9 min",
+      "kontroll": "Tio heltalstider. Minimum (3·0+4·5+3·10)/10=5. Maximum (3·4+4·9+3·14)/10=9. Båda gränserna kan uppnås.",
+      "nivamotivering": "Bygg två extrema datamängder; inse att histogrammet inte bestämmer ett exakt medelvärde.",
+      "niva": "C",
+      "traningsniva": 3,
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "omr": "lagesmatt",
+      "familj": "Viktat medelvärde och saknade värden",
+      "formaga": [
+        "begrepp",
+        "problemlösning"
+      ],
+      "poang": "0/2/0",
+      "miniraknare": true,
+      "geogebra": false,
+      "spel": true,
+      "spelDelar": 1,
+      "rattSvar": [
+        5,
+        9
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarEnhet": [
+        "min",
+        "min"
+      ],
+      "tolerans": [
+        0,
+        0
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "Minsta medelvärde",
+        "Största medelvärde"
+      ],
+      "innehallSha256": "8af9c1aef278a30004ec7be90e278479ff9a6273bde66d683817b57d6126eb93"
+    }
+  ],
+  "onskemal": {
+    "foreslagenStatus": "Åtgärdad",
+    "kommentarsforslag": "15 nya statistikuppgifter (#4.307–4.321) med tabeller och diagram är tillagda för Ma2a, b och c. De tränar avläsning, lägesmått, andelar och kritisk tolkning. Tabeller och diagram har ett eget avsnitt. Figurer, facit och självrättning är kontrollerade.",
+    "statusSparadIApp": false
+  },
+  "verifiering": {
+    "masterTester": 70,
+    "konsumentTester": 144,
+    "browser": {
+      "numericCases": [
+        {
+          "id": "4.307",
+          "part": 0,
+          "inputs": [
+            "5"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.307",
+          "part": 0,
+          "inputs": [
+            "9"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.308",
+          "part": 0,
+          "inputs": [
+            "18"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.308",
+          "part": 0,
+          "inputs": [
+            "6"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.310",
+          "part": 0,
+          "inputs": [
+            "7 min"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.310",
+          "part": 0,
+          "inputs": [
+            "6"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 0,
+          "inputs": [
+            "1"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 0,
+          "inputs": [
+            "1.3"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 1,
+          "inputs": [
+            "1,3"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 1,
+          "inputs": [
+            "13/10"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 1,
+          "inputs": [
+            "1.3 böcker"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.311",
+          "part": 1,
+          "inputs": [
+            "1"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 0,
+          "inputs": [
+            "A"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 0,
+          "inputs": [
+            "a"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 0,
+          "inputs": [
+            "B"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 1,
+          "inputs": [
+            "20"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 1,
+          "inputs": [
+            "20 procentenheter"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 1,
+          "inputs": [
+            "20%"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.312",
+          "part": 1,
+          "inputs": [
+            "0.2"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.313",
+          "part": 0,
+          "inputs": [
+            "60"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.313",
+          "part": 0,
+          "inputs": [
+            "240*0.25"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.313",
+          "part": 0,
+          "inputs": [
+            "25"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.313",
+          "part": 0,
+          "inputs": [
+            "60.1"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.314",
+          "part": 0,
+          "inputs": [
+            "16"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.314",
+          "part": 0,
+          "inputs": [
+            "28"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.315",
+          "part": 0,
+          "inputs": [
+            "40 min"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.315",
+          "part": 0,
+          "inputs": [
+            "75"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 0,
+          "inputs": [
+            "A"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 0,
+          "inputs": [
+            "B"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 1,
+          "inputs": [
+            "6 min"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 1,
+          "inputs": [
+            "360 s"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 1,
+          "inputs": [
+            "8"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.316",
+          "part": 1,
+          "inputs": [
+            "14"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.317",
+          "part": 0,
+          "inputs": [
+            "5"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.317",
+          "part": 0,
+          "inputs": [
+            "300 s"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.317",
+          "part": 0,
+          "inputs": [
+            "4"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.317",
+          "part": 0,
+          "inputs": [
+            "6"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.319",
+          "part": 0,
+          "inputs": [
+            "7"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.319",
+          "part": 0,
+          "inputs": [
+            "x=7"
+          ],
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "4.319",
+          "part": 0,
+          "inputs": [
+            "7.01"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.319",
+          "part": 0,
+          "inputs": [
+            "15"
+          ],
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "4.321",
+          "part": 0,
+          "inputs": [
+            "5",
+            "9"
+          ],
+          "actual": [
+            true,
+            true
+          ]
+        },
+        {
+          "id": "4.321",
+          "part": 0,
+          "inputs": [
+            "5 min",
+            "9 min"
+          ],
+          "actual": [
+            true,
+            true
+          ]
+        },
+        {
+          "id": "4.321",
+          "part": 0,
+          "inputs": [
+            "9",
+            "5"
+          ],
+          "actual": [
+            false,
+            false
+          ]
+        },
+        {
+          "id": "4.321",
+          "part": 0,
+          "inputs": [
+            "7",
+            "7"
+          ],
+          "actual": [
+            false,
+            false
+          ]
+        },
+        {
+          "id": "4.321",
+          "part": 0,
+          "inputs": [
+            "5.1",
+            "9.1"
+          ],
+          "actual": [
+            false,
+            false
+          ]
+        }
+      ],
+      "choiceCases": [
+        {
+          "id": "4.309",
+          "original": 0,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.309",
+          "original": 1,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.309",
+          "original": 2,
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "4.309",
+          "original": 3,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.318",
+          "original": 0,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.318",
+          "original": 1,
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "4.318",
+          "original": 2,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.318",
+          "original": 3,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.320",
+          "original": 0,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.320",
+          "original": 1,
+          "want": true,
+          "actual": true
+        },
+        {
+          "id": "4.320",
+          "original": 2,
+          "want": false,
+          "actual": false
+        },
+        {
+          "id": "4.320",
+          "original": 3,
+          "want": false,
+          "actual": false
+        }
+      ],
+      "views": [
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.307",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.308",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.309",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.310",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.311",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.311",
+          "part": 1,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.312",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.312",
+          "part": 1,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.313",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.314",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.315",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.316",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.316",
+          "part": 1,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.317",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.318",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.319",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.320",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.321",
+          "part": 0,
+          "width": 390,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.307",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.308",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.309",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.310",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.311",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.311",
+          "part": 1,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.312",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.312",
+          "part": 1,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.313",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.314",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.315",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.316",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.316",
+          "part": 1,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.317",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.318",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.319",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 4
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.320",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 3
+        },
+        {
+          "app": "Kunskapsgymmet",
+          "id": "4.321",
+          "part": 0,
+          "width": 1280,
+          "katex": 0,
+          "overflow": false,
+          "wideTables": 0,
+          "wideMath": 0,
+          "figures": 5
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.307",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.308",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.309",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.310",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.311",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 2
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.312",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 5
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.313",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.314",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.315",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.316",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.317",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.318",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.319",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 9
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.320",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 6
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 390,
+          "id": "4.321",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 3
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.307",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.308",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.309",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.310",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.311",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 2
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.312",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 5
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.313",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.314",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.315",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.316",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 0
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.317",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.318",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 1
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.319",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 9
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.320",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 6
+        },
+        {
+          "app": "Uppgiftslabbet",
+          "width": 1280,
+          "id": "4.321",
+          "katex": 0,
+          "overflow": false,
+          "mathNodes": 3
+        }
+      ],
+      "tracks": [
+        {
+          "track": "2a",
+          "cards": 18,
+          "missing": []
+        },
+        {
+          "track": "2b",
+          "cards": 18,
+          "missing": []
+        },
+        {
+          "track": "2c",
+          "cards": 18,
+          "missing": []
+        }
+      ],
+      "teacherAreas": [
+        {
+          "track": "2a",
+          "text": "\n      Tabeller och diagram8"
+        },
+        {
+          "track": "2b",
+          "text": "\n      Tabeller och diagram8"
+        },
+        {
+          "track": "2c",
+          "text": "\n      Tabeller och diagram8"
+        }
+      ],
+      "javascriptErrors": []
+    },
+    "svgAntal": 10,
+    "svgFynd": [
+      {
+        "id": "4.313",
+        "fynd": [
+          {
+            "severity": "INFO",
+            "code": "ANGLE_ARC_REVIEW",
+            "reason": "Liten båge med vinkelutseende saknar tydligt identifierbara vinkelben.",
+            "elements": [
+              1
+            ]
+          },
+          {
+            "severity": "INFO",
+            "code": "ANGLE_ARC_REVIEW",
+            "reason": "Liten båge med vinkelutseende saknar tydligt identifierbara vinkelben.",
+            "elements": [
+              3
+            ]
+          },
+          {
+            "severity": "INFO",
+            "code": "ANGLE_ARC_REVIEW",
+            "reason": "Liten båge med vinkelutseende saknar tydligt identifierbara vinkelben.",
+            "elements": [
+              5
+            ]
+          },
+          {
+            "severity": "INFO",
+            "code": "ANGLE_ARC_REVIEW",
+            "reason": "Liten båge med vinkelutseende saknar tydligt identifierbara vinkelben.",
+            "elements": [
+              7
+            ]
+          }
+        ]
+      }
+    ],
+    "bank": {
+      "master": {
+        "oldTasksUnchanged": 2121,
+        "newTasks": 15,
+        "oldStructureUnchangedExceptNewArea": true
+      },
+      "consumer": {
+        "oldTasksUnchanged": 2121,
+        "newTasks": 15,
+        "oldStructureUnchangedExceptNewArea": true
+      },
+      "validator": {
+        "beforeErrors": [
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_ANSWER_TYPE",
+            "fil": "uppgifterma2.js",
+            "index": 941,
+            "id": "2.636",
+            "meddelande": "svarstyp saknas eller är tom."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_RIGHT_ANSWER_METADATA",
+            "fil": "uppgifterma2.js",
+            "index": 941,
+            "id": "2.636",
+            "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_ANSWER_TYPE",
+            "fil": "uppgifterma2.js",
+            "index": 942,
+            "id": "2.637",
+            "meddelande": "svarstyp saknas eller är tom."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_RIGHT_ANSWER_METADATA",
+            "fil": "uppgifterma2.js",
+            "index": 942,
+            "id": "2.637",
+            "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+          }
+        ],
+        "afterErrors": [
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_ANSWER_TYPE",
+            "fil": "uppgifterma2.js",
+            "index": 941,
+            "id": "2.636",
+            "meddelande": "svarstyp saknas eller är tom."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_RIGHT_ANSWER_METADATA",
+            "fil": "uppgifterma2.js",
+            "index": 941,
+            "id": "2.636",
+            "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_ANSWER_TYPE",
+            "fil": "uppgifterma2.js",
+            "index": 942,
+            "id": "2.637",
+            "meddelande": "svarstyp saknas eller är tom."
+          },
+          {
+            "allvar": "ERROR",
+            "kod": "MISSING_RIGHT_ANSWER_METADATA",
+            "fil": "uppgifterma2.js",
+            "index": 942,
+            "id": "2.637",
+            "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+          }
+        ],
+        "newTaskFindings": [],
+        "beforeCount": 2121,
+        "afterCount": 2136
+      }
+    },
+    "fullProjektValidator": {
+      "resultat": {
+        "INFO": 1460,
+        "WARNING": 258,
+        "ERROR": 1593
+      },
+      "lasfel": [],
+      "systemfynd": [],
+      "avgransning": "1593 befintliga ERROR i övrig metadata; inga nya fynd för de 15 uppgifterna. Ma2:s 4 ERROR på #2.636/#2.637 är identiska före/efter. Övriga banker är oförändrade."
+    }
+  },
+  "filerMaster": [
+    "uppgifterma2.js",
+    "strukturma2.js",
+    "tools/ma2-statistik-diagram.test.js",
+    "tools/ma2-statistik-diagram.browser.py",
+    "agent/MA2_STATISTIK_DIAGRAM_2026-10-13.md",
+    "agent/MA2_STATISTIK_DIAGRAM_2026-10-13.json",
+    "agent/FELMONSTER_OCH_BESLUT.md"
+  ],
+  "filerKonsument": [
+    "uppgifterma2.js",
+    "strukturma2.js",
+    "index.html"
+  ]
+}
