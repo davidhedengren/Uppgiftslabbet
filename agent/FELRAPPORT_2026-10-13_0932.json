@@ -1,0 +1,561 @@
+{
+  "report": "2026-10-13 09:32",
+  "reportedTask": "matf1 #1.136",
+  "reportedInputKnown": false,
+  "sourceReportComment": "Rätt svar blev fel",
+  "reviewed": [
+    "1.136",
+    "1.509",
+    "1.510",
+    "1.511",
+    "1.70",
+    "1.72"
+  ],
+  "fixed": [
+    "1.136",
+    "1.509",
+    "1.510",
+    "1.511",
+    "1.70",
+    "1.72"
+  ],
+  "reviewedNoError": [],
+  "numericalAnswersAlreadyCorrect": [
+    "1.136",
+    "1.509",
+    "1.510",
+    "1.511",
+    "1.70",
+    "1.72"
+  ],
+  "tasks": [
+    {
+      "id": "1.136",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 6!=720 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Alla sex personer är olika och alla platser används: 6·5·4·3·2·1.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "ordna personer i rad",
+        "poang": "2/0/0",
+        "t": "<p>Sex olika personer ställer sig i en kö. På hur många sätt kan de stå?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p>Alla sex personer är olika och alla platser används. Antalet permutationer är</p><div class=\"facit-matte\">\\[6!=720\\]</div><p><strong>720 sätt</strong>.</p></div>",
+        "id": "1.136",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 720,
+        "tolerans": null,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>Fråga först: spelar ordningen roll? Om ja används permutation/ordnat urval; om nej används kombination.</p>",
+        "traningsniva": 1,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "ordna personer i rad",
+        "poang": "2/0/0",
+        "t": "<p>Sex olika personer ställer sig i en kö. På hur många sätt kan de stå?</p>",
+        "s": "<div class=\"facit-v2\"><p>Första platsen i kön kan tas av någon av de 6 personerna. När den är fylld finns 5 personer kvar till nästa plats, sedan 4 och så vidare.</p><p>Multiplicera antalet val för de sex platserna:</p><div class=\"facit-matte\">\\[6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=6!=720.\\]</div><p><strong>Svar:</strong> 720 sätt.</p></div>",
+        "id": "1.136",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 720,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>Hur många personer kan stå först? Hur många finns sedan kvar till nästa plats?</p>",
+        "traningsniva": 1,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "s",
+        "tolerans",
+        "svarFormat",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "1.509",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 5!=120 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Fem olika personer ordnas på 5·4·3·2·1 sätt.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 5 personer stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 5 val, på nästa 4 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[5!=5\\cdot4\\cdot3\\cdot2\\cdot1=120\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 120 ordningar.</p></div>",
+        "id": "1.509",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 120,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 1,
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 5 personer stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 5 val, på nästa 4 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[5!=5\\cdot4\\cdot3\\cdot2\\cdot1=120\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 120 ordningar.</p></div>",
+        "id": "1.509",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 120,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 1,
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "1.510",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 6!=720 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Sex olika personer ordnas på 6·5·4·3·2·1 sätt.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 6 personer stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 6 val, på nästa 5 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[6!=6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=720\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 720 ordningar.</p></div>",
+        "id": "1.510",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 720,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 1,
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 6 personer stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 6 val, på nästa 5 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[6!=6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=720\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 720 ordningar.</p></div>",
+        "id": "1.510",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 720,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 1,
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "1.511",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 7!=5040 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Sju olika elever ordnas på 7·6·5·4·3·2·1 sätt.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 7 elever stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 7 val, på nästa 6 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[7!=7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=5040\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 5040 ordningar.</p></div>",
+        "id": "1.511",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 5040,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 2,
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "permutationer och fakultet",
+        "poang": "1/0/0",
+        "t": "<p>Hur många olika ordningar kan 7 elever stå i en kö?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-rubrik\">Resonemang och beräkning</p><p>På första platsen finns 7 val, på nästa 6 och så vidare ned till 1. Alla är olika och används en gång.</p><div class=\"facit-matte\">\\[7!=7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=5040\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 5040 ordningar.</p></div>",
+        "id": "1.511",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 5040,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur",
+          "begrepp"
+        ],
+        "traningsniva": 2,
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>När ordningen spelar roll använder du permutationer/fakultet. Skriv gärna ut de första faktorerna innan du räknar.</p>",
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "1.70",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 7!=5040 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Sju olika låtar används en gång vardera och alla ordnas.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "spellista",
+        "poang": "1/0/0",
+        "t": "<p>Sju olika låtar ska placeras i en spellista. På hur många olika sätt kan hela spellistan ordnas?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>Idé:</strong> Alla sju låtar används och varje ny ordning ger en ny spellista. Det är därför en permutation av 7 olika objekt.</p><div class=\"facit-matte\">\\[7!=7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=\\mathbf{5040}\\]</div></div>",
+        "id": "1.70",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 5040,
+        "tolerans": null,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>Fråga först: spelar ordningen roll? Om ja används permutation/ordnat urval; om nej används kombination.</p>",
+        "traningsniva": 1,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "E",
+        "typ": "spellista",
+        "poang": "1/0/0",
+        "t": "<p>Sju olika låtar ska placeras i en spellista. På hur många olika sätt kan hela spellistan ordnas?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>Idé:</strong> Alla sju låtar används och varje ny ordning ger en ny spellista. Det är därför en permutation av 7 olika objekt.</p><div class=\"facit-matte\">\\[7!=7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=\\mathbf{5040}\\]</div></div>",
+        "id": "1.70",
+        "miniräknare": false,
+        "geogebra": false,
+        "familj": "Permutationer och ordnade urval",
+        "svarstyp": "numeriskt",
+        "rättSvar": 5040,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>Fråga först: spelar ordningen roll? Om ja används permutation/ordnat urval; om nej används kombination.</p>",
+        "traningsniva": 1,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "tolerans",
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "1.72",
+      "course": "matf1",
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är förbättrad. 2·8!=80640 godkänns nu som ett helt svar, liksom det uträknade talet och fakultetsuttrycket. Facit var korrekt.",
+      "reasoning": "Två bestämda böcker behandlas som ett block: blocket och sju övriga böcker ordnas på 8! sätt. Blocket har två interna ordningar.",
+      "before": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "C",
+        "typ": "två objekt intill",
+        "poang": "0/2/0",
+        "t": "<p>Nio olika böcker ska ställas på en hylla. Två bestämda böcker ska stå bredvid varandra.</p><p>På hur många sätt kan böckerna ordnas?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>Idé:</strong> Betrakta de två bestämda böckerna som ett block. Då har vi blocket plus sju andra böcker, alltså 8 objekt att ordna. De 8 objekten kan ordnas på \\(8!\\) sätt. Inuti blocket kan böckerna ligga i 2 ordningar.</p><div class=\"facit-matte\">\\[2\\cdot8!=\\mathbf{80\\,640}\\]</div></div>",
+        "id": "1.72",
+        "miniräknare": true,
+        "geogebra": false,
+        "familj": "Permutationer och ordningar med placeringsvillkor",
+        "svarstyp": "numeriskt",
+        "rättSvar": 80640,
+        "tolerans": null,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "numeriskt",
+        "ledtrad": "<p>Fråga först: spelar ordningen roll? Om ja används permutation/ordnat urval; om nej används kombination.</p>",
+        "traningsniva": 3,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "after": {
+        "kap": 1,
+        "omr": "permutationer",
+        "niva": "C",
+        "typ": "två objekt intill",
+        "poang": "0/2/0",
+        "t": "<p>Nio olika böcker ska ställas på en hylla. Två bestämda böcker ska stå bredvid varandra.</p><p>På hur många sätt kan böckerna ordnas?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>Idé:</strong> Betrakta de två bestämda böckerna som ett block. Då har vi blocket plus sju andra böcker, alltså 8 objekt att ordna. De 8 objekten kan ordnas på \\(8!\\) sätt. Inuti blocket kan böckerna ligga i 2 ordningar.</p><div class=\"facit-matte\">\\[2\\cdot8!=\\mathbf{80\\,640}\\]</div></div>",
+        "id": "1.72",
+        "miniräknare": true,
+        "geogebra": false,
+        "familj": "Permutationer och ordningar med placeringsvillkor",
+        "svarstyp": "numeriskt",
+        "rättSvar": 80640,
+        "tolerans": 0,
+        "självrättning": true,
+        "formaga": [
+          "procedur"
+        ],
+        "svarFormat": "antal_satt",
+        "ledtrad": "<p>Fråga först: spelar ordningen roll? Om ja används permutation/ordnat urval; om nej används kombination.</p>",
+        "traningsniva": 3,
+        "omrTidigare": [
+          "permutationer_kombinationer"
+        ]
+      },
+      "fields": [
+        "tolerans",
+        "svarFormat"
+      ]
+    }
+  ],
+  "baselineChecks": [
+    {
+      "id": "1.136",
+      "input": "6!",
+      "ok": true
+    },
+    {
+      "id": "1.136",
+      "input": "6! = 720",
+      "ok": false
+    },
+    {
+      "id": "1.509",
+      "input": "5!",
+      "ok": true
+    },
+    {
+      "id": "1.509",
+      "input": "5! = 120",
+      "ok": false
+    },
+    {
+      "id": "1.510",
+      "input": "6!",
+      "ok": true
+    },
+    {
+      "id": "1.510",
+      "input": "6! = 720",
+      "ok": false
+    },
+    {
+      "id": "1.511",
+      "input": "7!",
+      "ok": true
+    },
+    {
+      "id": "1.511",
+      "input": "7! = 5040",
+      "ok": false
+    },
+    {
+      "id": "1.70",
+      "input": "7!",
+      "ok": true
+    },
+    {
+      "id": "1.70",
+      "input": "7! = 5040",
+      "ok": false
+    },
+    {
+      "id": "1.72",
+      "input": "2*8!",
+      "ok": true
+    },
+    {
+      "id": "1.72",
+      "input": "2*8! = 80640",
+      "ok": false
+    }
+  ],
+  "legacyClientCompatibilityChecks": [
+    {
+      "id": "1.136",
+      "input": "6!",
+      "ok": true
+    },
+    {
+      "id": "1.136",
+      "input": "720",
+      "ok": true
+    },
+    {
+      "id": "1.509",
+      "input": "5!",
+      "ok": true
+    },
+    {
+      "id": "1.509",
+      "input": "120",
+      "ok": true
+    },
+    {
+      "id": "1.510",
+      "input": "6!",
+      "ok": true
+    },
+    {
+      "id": "1.510",
+      "input": "720",
+      "ok": true
+    },
+    {
+      "id": "1.511",
+      "input": "7!",
+      "ok": true
+    },
+    {
+      "id": "1.511",
+      "input": "5040",
+      "ok": true
+    },
+    {
+      "id": "1.70",
+      "input": "7!",
+      "ok": true
+    },
+    {
+      "id": "1.70",
+      "input": "5040",
+      "ok": true
+    },
+    {
+      "id": "1.72",
+      "input": "2*8!",
+      "ok": true
+    },
+    {
+      "id": "1.72",
+      "input": "80640",
+      "ok": true
+    }
+  ],
+  "verification": {
+    "masterTests": 47,
+    "consumerTests": 144,
+    "browserAnswerChecks": 117,
+    "browserViews": 12,
+    "legacyCompatibilityChecks": 12,
+    "bankCountBefore": 1541,
+    "bankCountAfter": 1541,
+    "validatorBefore": {
+      "ERROR": 0,
+      "WARNING": 7,
+      "INFO": 69
+    },
+    "validatorAfter": {
+      "ERROR": 0,
+      "WARNING": 7,
+      "INFO": 69
+    },
+    "databaseWrites": 0,
+    "bankCopiesIdentical": true
+  }
+}

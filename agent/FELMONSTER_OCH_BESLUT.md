@@ -648,3 +648,13 @@ Ma2 #1.54/#1.347 är korrekta: vinkelrätheten bestämmer lutningen och den angi
 Säkerhetsfaktor måste definieras i Ma1:s enkla tillämpningsuppgifter. Tillåten last beräknas med division, nödvändig kapacitet med multiplikation. ”Frakt295kr. Total?” blir hela meningar och en tydlig fråga om kostnaden inklusive frakt. En enkel introduktionsuppgift får vara nivå1, men en ledning som uttryckligen ger hela svaret ska tas bort.
 
 Skydd för FP35–39: master `tools/felrapporter-2026-10-13.test.js`, konsument `tools/felrapporter-2026-10-13.test.js` och `tools/felrapporter-2026-10-13.browser.py`, samt tidigare delkort-, exakt-tal-, kelvin-/tabellvariant- och passhistoriktester. Inga rapportstatusar eller elevkommentarer sparas genom Git-pushen.
+
+## FP40 – diskreta ordningsantal och hela fakultetskedjor (2026-10-13)
+
+[Rapport09:32, samtliga sex granskade ID, före/efter och kommentarer](FELRAPPORT_2026-10-13_0932.md), även i JSON. Matf1 #1.136:s facit720 var korrekt. `720` och `6!` fungerade redan genom FP26, medan `6!=720` och `6! sätt` underkändes. Dessutom godtog en numerisk standardtolerans720,01, som inte är ett antal ordningar. Fem analoger #1.509/#1.510/#1.511/#1.70/#1.72 är självständigt räknade; deras korrekta likhetskedjor underkändes också före ändring. Elevens exakta svar saknas, så den reproducerade bristen bevisar inte den historiska inmatningen.
+
+Använd `svarFormat:"antal_satt"` och `tolerans:0` för de granskade dimensionlösa heltalsantalen. Potens, produkt, fakultet, numeriskt svar och en fullständig likhetskedja med samma korrekta antal ska godtas. Varje led kontrolleras; kasta aldrig bara bort vänsterledet i `5!=720`. Valfri ”sätt”/”ordningar” godtas, även efter ett uttryck. Okända suffix, bråkiga antal, `!!`, öppna uttryck och variabler underkänns. Vanliga svarsetiketter får vara frivilliga, men funktionsnamn som `sin(0)` får inte behandlas som en etikett och dölja ett felaktigt led.
+
+Detta format använder säkert representerbara icke-negativa heltal. Applicera inte slentrianmässigt på mätetal, sannolikheter, primtalsfaktorisering eller stora heltal utanför det säkra området. Bevara FP26:s generella fakultetsparser och alla fysiktoleranser. `svarEnhet` ska vara tomt för dessa antal; en teknisk SI-enhetsväg får inte blockera tidigare giltiga fakulteter i äldre öppna flikar. Kompatibilitet med gamla klienten och nya banken är verifierad för tal/fakultet i samtliga sex uppgifter. Nivåer/frågor bevaras. #1.136:s facit och ledtråd förklarar antalet val per plats.
+
+Skydd: master `tools/felrapport-1-136.test.js`, konsument `tools/antal-satt.test.js` och `tools/antal-satt.browser.py`; tidigare `tools/exakta-talsvar.test.js` och FP35–39-testen kvarstår. Ingen rapportstatus eller elevkommentar sparas genom Git-pushen.
