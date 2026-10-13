@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-13",
+  "reviewed": [
+    "0.189",
+    "0.193",
+    "0.566",
+    "0.587",
+    "0.592",
+    "0.186",
+    "0.203",
+    "7.500"
+  ],
+  "fixed": [
+    "0.189",
+    "0.193",
+    "0.566",
+    "0.587",
+    "0.592"
+  ],
+  "reviewedNoError": [
+    "0.186",
+    "0.203",
+    "7.500"
+  ],
+  "items": [
+    {
+      "course": "ma1",
+      "id": "0.189",
+      "part": null,
+      "status": "Åtgärdad – formulering",
+      "comment": "Ledningen om avrundningsregeln är borttagen. Uppgiften lyder nu: Avrunda 2,675 till två decimaler. Svaret är fortfarande 2,68.",
+      "verification": "2,675 ligger mitt mellan 2,67 och 2,68; vanlig skolavrundning ger 2,68.",
+      "level": 1,
+      "changedFields": [
+        "t"
+      ],
+      "beforeQuestion": "<p>Avrunda <strong>2,675</strong> till två decimaler. Använd regeln att en avslutande 5 avrundas uppåt för positiva tal.</p>",
+      "afterQuestion": "<p>Avrunda <strong>2,675</strong> till två decimaler.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.193",
+      "part": null,
+      "status": "Åtgärdad – formulering",
+      "comment": "Påminnelsen om avrundning vid halva steg är borttagen ur frågan. Förklaringen och exemplet finns kvar i facit.",
+      "verification": "Varje avrundningsfel har belopp högst 0,05 m. Två fel i samma riktning kan ge 0,10 m. Exemplet 1,25 + 2,35 ger 3,60 före och 3,70 efter avrundning.",
+      "level": 4,
+      "changedFields": [
+        "t"
+      ],
+      "beforeQuestion": "<p>Två positiva längder avrundas var för sig till närmaste tiondels meter. Därefter adderas de avrundade värdena. Bestäm hur stort felet i summan högst kan vara och förklara varför. Ge ett exempel där det största felet uppstår. Vid exakt halva steget avrundas uppåt.</p>",
+      "afterQuestion": "<p>Två positiva längder avrundas var för sig till närmaste tiondels meter. Därefter adderas de avrundade värdena. Bestäm hur stort felet i summan högst kan vara och förklara varför. Ge ett exempel där det största felet uppstår.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.566",
+      "part": null,
+      "status": "Åtgärdad – formulering",
+      "comment": "Påminnelsen om halvcentimeter är borttagen. Frågan behåller måttens noggrannhet; volymgränserna förklaras i facit.",
+      "verification": "19,5 ≤ x < 20,5 och 29,5 ≤ y < 30,5. Positiva mått och exakt höjd ger 5,7525 ≤ V < 6,2525 liter. Sex liter ryms inte säkert.",
+      "level": 5,
+      "changedFields": [
+        "t"
+      ],
+      "beforeQuestion": "<p>En rektangulär behållares invändiga bottenmått anges till 20 cm och 30 cm, båda avrundade till närmaste hela centimeter. Vid exakt halv centimeter avrundas uppåt. Höjden är exakt 10 cm. Undersök vilka volymer i liter som är möjliga och om man säkert kan hälla i 6 l utan att det rinner över.</p>",
+      "afterQuestion": "<p>En rektangulär behållares invändiga bottenmått anges till 20 cm och 30 cm, båda avrundade till närmaste hela centimeter. Höjden är exakt 10 cm. Undersök vilka volymer i liter som är möjliga och om man säkert kan hälla i 6 l utan att det rinner över.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.587",
+      "part": null,
+      "status": "Åtgärdad – formulering",
+      "comment": "Påminnelsen om halva steg är borttagen. Sträckans och tidens noggrannhet finns kvar.",
+      "verification": "1150 ≤ s < 1250 m och 210 ≤ t < 270 s ger 115/27 < v < 125/21 m/s. Ändpunkterna uppnås inte. Övre gränsen är mindre än 6 m/s.",
+      "level": 5,
+      "changedFields": [
+        "t"
+      ],
+      "beforeQuestion": "<p>En sträcka anges till 1,2 km avrundat till närmaste tiondels kilometer. Tiden anges till 4 min avrundat till närmaste hela minut. Halva steg avrundas uppåt. Undersök vilka medelhastigheter i m/s som är möjliga och om uppgifterna garanterar en hastighet under 6 m/s.</p>",
+      "afterQuestion": "<p>En sträcka anges till 1,2 km avrundat till närmaste tiondels kilometer. Tiden anges till 4 min avrundat till närmaste hela minut. Undersök vilka medelhastigheter i m/s som är möjliga och om uppgifterna garanterar en hastighet under 6 m/s.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.592",
+      "part": null,
+      "status": "Åtgärdad – formulering",
+      "comment": "Regelpåminnelsen är borttagen. De två metoder som ska jämföras finns kvar; gränserna motiveras i facit.",
+      "verification": "Direkt avrundning byter heltal vid n+0,5; dubbelavrundning byter vid n+0,45. Skillnad precis på [n+0,45; n+0,5). Metod II ger aldrig lägre heltal.",
+      "level": 5,
+      "changedFields": [
+        "t"
+      ],
+      "beforeQuestion": "<p>Ett positivt decimaltal avrundas på två sätt:</p><p>Metod I: direkt till närmaste heltal.<br>Metod II: först till närmaste tiondel, sedan till närmaste heltal.</p><p>Vid exakt halva avståndet avrundar båda metoderna uppåt. Bestäm alla tal \\(x\\) med \\(7\\le x&lt;8\\) som ger olika resultat. Motivera båda gränserna.</p><p>Generalisera till \\(n\\le x&lt;n+1\\), där \\(n\\) är ett icke-negativt heltal och \\(x&gt;0\\). Kan metod II ge ett mindre heltal än metod I? Bevisa ditt svar.</p>",
+      "afterQuestion": "<p>Ett positivt decimaltal avrundas på två sätt:</p><p>Metod I: direkt till närmaste heltal.<br>Metod II: först till närmaste tiondel, sedan till närmaste heltal.</p><p>Bestäm alla tal \\(x\\) med \\(7\\le x&lt;8\\) som ger olika resultat. Motivera båda gränserna.</p><p>Generalisera till \\(n\\le x&lt;n+1\\), där \\(n\\) är ett icke-negativt heltal och \\(x&gt;0\\). Kan metod II ge ett mindre heltal än metod I? Bevisa ditt svar.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.186",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Metoderna ingår i resonemangsfrågan och behöver stå kvar. Direkt avrundning ger 15,0; rätt alternativ är C.",
+      "verification": "15,049 avrundat direkt till en decimal är 15,0. Via 15,05 blir det 15,1. Endast C förklarar den direkta avrundningen korrekt.",
+      "level": 2,
+      "changedFields": [],
+      "beforeQuestion": "<p>Leo avrundar 15,049 först till två decimaler och sedan till en decimal och får 15,1. Vad gäller vid direkt avrundning till en decimal?</p><p>A. 15,1 är rätt eftersom varje avrundning måste höja talets värde.<br>B. 15,1 är rätt eftersom tusendelssiffran i ursprungstalet är 9.<br>C. 15,0 är rätt eftersom hundradelssiffran i ursprungstalet är 4.<br>D. 15,0 är rätt eftersom man alltid ska ta bort de sista siffrorna.</p>",
+      "afterQuestion": "<p>Leo avrundar 15,049 först till två decimaler och sedan till en decimal och får 15,1. Vad gäller vid direkt avrundning till en decimal?</p><p>A. 15,1 är rätt eftersom varje avrundning måste höja talets värde.<br>B. 15,1 är rätt eftersom tusendelssiffran i ursprungstalet är 9.<br>C. 15,0 är rätt eftersom hundradelssiffran i ursprungstalet är 4.<br>D. 15,0 är rätt eftersom man alltid ska ta bort de sista siffrorna.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "0.203",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Avrundningsriktningarna är svarsalternativ som eleven ska bedöma. D ger en säker övre uppskattning på 420 kr.",
+      "verification": "80 ≥ 74, 130 ≥ 128 och 210 ≥ 203. Summan 420 är under 500; inget pris underskattas. Övriga alternativ uppfyller inte villkoret för varje pris.",
+      "level": 2,
+      "changedFields": [],
+      "beforeQuestion": "<p>Du har 500 kr och vill köpa tre varor för 74 kr, 128 kr och 203 kr. Vilket överslag avrundar varje pris så att inget pris underskattas och visar därmed säkert att pengarna räcker?</p><p>A. 70 + 120 + 200 = 390 kr, där alla priser avrundas nedåt.<br>B. 70 + 130 + 210 = 410 kr, där priserna avrundas åt olika håll.<br>C. 70 + 130 + 200 = 400 kr, där priserna avrundas åt olika håll.<br>D. 80 + 130 + 210 = 420 kr, där alla priser avrundas uppåt.</p>",
+      "afterQuestion": "<p>Du har 500 kr och vill köpa tre varor för 74 kr, 128 kr och 203 kr. Vilket överslag avrundar varje pris så att inget pris underskattas och visar därmed säkert att pengarna räcker?</p><p>A. 70 + 120 + 200 = 390 kr, där alla priser avrundas nedåt.<br>B. 70 + 130 + 210 = 410 kr, där priserna avrundas åt olika håll.<br>C. 70 + 130 + 200 = 400 kr, där priserna avrundas åt olika håll.<br>D. 80 + 130 + 210 = 420 kr, där alla priser avrundas uppåt.</p>"
+    },
+    {
+      "course": "ma1",
+      "id": "7.500",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Frågan prövar säker avrundning och alternativen behövs. Högst 8 hela personer är tillåtna; rätt alternativ är A.",
+      "verification": "Ett helt antal personer får inte överstiga gränsen 8,4. Största möjliga heltal är 8.",
+      "level": 1,
+      "changedFields": [],
+      "beforeQuestion": "<p>En hiss får ta 8,4 personer enligt beräkningen. Hur ska svaret avrundas?</p><p>A: Nedåt till 8, eftersom maxlasten inte får överskridas<br>B: Till närmaste heltal, alltså 8 eller 9 beroende på avrundningsregeln<br>C: Det spelar ingen roll<br>D: Uppåt till 9</p>",
+      "afterQuestion": "<p>En hiss får ta 8,4 personer enligt beräkningen. Hur ska svaret avrundas?</p><p>A: Nedåt till 8, eftersom maxlasten inte får överskridas<br>B: Till närmaste heltal, alltså 8 eller 9 beroende på avrundningsregeln<br>C: Det spelar ingen roll<br>D: Uppåt till 9</p>"
+    }
+  ],
+  "reportStatusSaved": false
+}

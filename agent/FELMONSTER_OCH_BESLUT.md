@@ -696,3 +696,11 @@ Percentilgränser ger ungefärliga andelar/antal, särskilt när observationer k
 #4.359 kräver en ritad figur och ska därför förbli `spel:false`/manuell i Uppgiftslabbet tills ett riktigt ritverktyg kan bedöma svaret. Ingen osynlig deluppgift får behövas för de övriga korten. Flervalsfrågor måste få med alternativen även i lärarvy/export. #4.374 har tre rätta alternativ; delvis rätt och extra felval provas via verkliga alternativknappar.
 
 Skydd: `tools/ma2-statistik-referenser.test.js` gör oberoende beräkningar, uttömmande kontroller och SVG-geometrikontroller. `tools/ma2-statistik-referenser.browser.py` provar 263 svarskombinationer och 190 mobil-/datorvyer, med Supabase/XP-skrivning blockerad. Data finns i `tools/fixtures/ma2-statistik-referenser.json`. Ingen rapportstatus eller elevkommentar sparas genom Git-pushen.
+
+## FP41 – avrundningsledningar hör inte hemma i frågetexten (2026-10-13)
+
+[Granskade ID:n, åtgärder och kommentarsförslag](MA1_AVRUNDNINGSLEDNINGAR_2026-10-13.md), även som JSON. Användarrapport Ma1 #0.189: behåll ”Avrunda 2,675 till två decimaler”, ta bort påminnelsen om hur femman avrundas. Samma redaktionella ändring görs i #0.193/#0.566/#0.587/#0.592. Bara `t` ändras; facit, separat ledtråd, nivå, svar och rättningsmetadata bevaras. #0.189 är fortsatt nivå 1 och har svaret 2,68.
+
+Vanlig skolavrundning av positiva tal används fortsatt, även vid intervallgränser. Återinför inte regelpåminnelser i frågorna; förklaringar finns i facit. Efterfrågad precision ska stå kvar. #0.186/#0.203/#7.500 är granskade utan fel: avrundningsmetoderna finns där som innehåll att bedöma, inte som extra hjälptext. Ta inte bort deras alternativ. Ändra inte heller givna situationsvillkor om uppåt-/nedåtavrundning.
+
+Kontroll: endast de fem `t`-fälten skiljer sig från föreversionen; 29 befintliga regressionstester, 12 verkliga svarsinmatningar och 24 elev-/lärarvyer passerar. Exakta decimalberäkningar verifierar 2,675→2,68 och manuella intervallfacit. Dubbelavrundningen i #0.592 kontrolleras också på 10 000 decimalvärden, utöver gränsargumentet. Ingen generell tolerans ändras och inga rapportstatusar sparas i appen.
