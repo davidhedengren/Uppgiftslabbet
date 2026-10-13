@@ -1,0 +1,517 @@
+[
+  {
+    "id": "4.322",
+    "type": "basic",
+    "values": [
+      2,
+      4,
+      4,
+      4,
+      6
+    ],
+    "representation": "raw",
+    "unit": null
+  },
+  {
+    "id": "4.323",
+    "type": "basic",
+    "values": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "representation": "bars",
+    "unit": null
+  },
+  {
+    "id": "4.324",
+    "type": "basic",
+    "values": [
+      -4,
+      -2,
+      0,
+      -2,
+      3
+    ],
+    "representation": "raw",
+    "unit": "°C"
+  },
+  {
+    "id": "4.325",
+    "type": "basic",
+    "values": [
+      14,
+      8,
+      12,
+      8,
+      18
+    ],
+    "representation": "raw",
+    "unit": null
+  },
+  {
+    "id": "4.326",
+    "type": "basic",
+    "values": [
+      36,
+      37,
+      37,
+      37,
+      38,
+      38,
+      38,
+      38,
+      38,
+      39,
+      39,
+      40
+    ],
+    "representation": "bars",
+    "unit": null
+  },
+  {
+    "id": "4.327",
+    "type": "categorical",
+    "rows": [
+      [
+        "Blå",
+        6
+      ],
+      [
+        "Grön",
+        4
+      ],
+      [
+        "Röd",
+        3
+      ]
+    ]
+  },
+  {
+    "id": "4.328",
+    "type": "measures",
+    "values": [
+      2,
+      3,
+      3,
+      4,
+      5,
+      7
+    ],
+    "representation": "raw",
+    "unit": "min",
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.329",
+    "type": "measures",
+    "values": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      4
+    ],
+    "representation": "bars",
+    "unit": null,
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.330",
+    "type": "measures",
+    "values": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      2,
+      3,
+      8
+    ],
+    "representation": "dots",
+    "unit": "min",
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.331",
+    "type": "measures",
+    "values": [
+      8,
+      10,
+      10,
+      10,
+      11,
+      11
+    ],
+    "representation": "frequency",
+    "unit": null,
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.332",
+    "type": "measures",
+    "values": [
+      8,
+      9,
+      9,
+      10,
+      11,
+      13
+    ],
+    "representation": "raw",
+    "unit": "h",
+    "sample": true,
+    "quartiles": false
+  },
+  {
+    "id": "4.333",
+    "type": "measures",
+    "values": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4,
+      5,
+      7
+    ],
+    "representation": "bars",
+    "unit": null,
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.334",
+    "type": "measures",
+    "values": [
+      12,
+      14,
+      14,
+      16,
+      19
+    ],
+    "representation": "raw",
+    "unit": "cm",
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.335",
+    "type": "measures",
+    "values": [
+      98,
+      100,
+      100,
+      101,
+      103
+    ],
+    "representation": "raw",
+    "unit": "g",
+    "sample": true,
+    "quartiles": false
+  },
+  {
+    "id": "4.336",
+    "type": "measures",
+    "values": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      4,
+      5
+    ],
+    "representation": "bars",
+    "unit": null,
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.337",
+    "type": "measures",
+    "values": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      5
+    ],
+    "representation": "frequency",
+    "unit": null,
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.338",
+    "type": "measures",
+    "values": [
+      -3,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      3,
+      4
+    ],
+    "representation": "dots",
+    "unit": "mm",
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.339",
+    "type": "measures",
+    "values": [
+      12.2,
+      12.4,
+      12.4,
+      12.8,
+      13,
+      13.4
+    ],
+    "representation": "raw",
+    "unit": "s",
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.340",
+    "type": "measures",
+    "values": [
+      180,
+      185,
+      190,
+      190,
+      195,
+      200
+    ],
+    "representation": "frequency",
+    "unit": "ml",
+    "sample": true,
+    "quartiles": false
+  },
+  {
+    "id": "4.341",
+    "type": "measures",
+    "values": [
+      1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      6,
+      8
+    ],
+    "representation": "bars",
+    "unit": "år",
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.342",
+    "type": "measures",
+    "values": [
+      1,
+      1.5,
+      2,
+      2,
+      2,
+      2.5,
+      3,
+      4
+    ],
+    "representation": "raw",
+    "unit": "h",
+    "sample": false,
+    "quartiles": true
+  },
+  {
+    "id": "4.343",
+    "type": "measures",
+    "values": [
+      19.8,
+      20,
+      20,
+      20.1,
+      20.4
+    ],
+    "representation": "raw",
+    "unit": "mm",
+    "sample": true,
+    "quartiles": false
+  },
+  {
+    "id": "4.344",
+    "type": "measures",
+    "values": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "representation": "raw",
+    "unit": "kg",
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.345",
+    "type": "measures",
+    "values": [
+      1,
+      2,
+      2,
+      3,
+      4,
+      4,
+      5
+    ],
+    "representation": "bars",
+    "unit": null,
+    "sample": false,
+    "quartiles": false
+  },
+  {
+    "id": "4.346",
+    "type": "comparison",
+    "A": [
+      18,
+      20,
+      20,
+      20,
+      22
+    ],
+    "B": [
+      16,
+      20,
+      20,
+      20,
+      24
+    ],
+    "unit": "mm"
+  },
+  {
+    "id": "4.347",
+    "type": "outlier",
+    "values": [
+      20,
+      20,
+      30,
+      30,
+      40,
+      400
+    ],
+    "representation": "raw",
+    "unit": "kr"
+  },
+  {
+    "id": "4.348",
+    "type": "comparison",
+    "A": [
+      2,
+      4,
+      4,
+      6,
+      9
+    ],
+    "B": [
+      7,
+      9,
+      9,
+      11,
+      14
+    ],
+    "unit": "cm"
+  },
+  {
+    "id": "4.349",
+    "type": "comparison",
+    "A": [
+      1,
+      3,
+      3,
+      4,
+      9
+    ],
+    "B": [
+      2,
+      6,
+      6,
+      8,
+      18
+    ],
+    "unit": "m"
+  },
+  {
+    "id": "4.350",
+    "type": "comparison",
+    "A": [
+      0,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      4
+    ],
+    "B": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      2,
+      3,
+      4,
+      4,
+      4
+    ],
+    "representation": "frequency"
+  },
+  {
+    "id": "4.351",
+    "type": "weighted",
+    "values": [
+      10,
+      10,
+      20,
+      20,
+      20,
+      30,
+      40,
+      50
+    ],
+    "representation": "frequency"
+  }
+]

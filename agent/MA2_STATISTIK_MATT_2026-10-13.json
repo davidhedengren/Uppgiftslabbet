@@ -1,0 +1,2963 @@
+{
+  "datum": "2026-10-13",
+  "uppdrag": "Fler uppgifter med tabeller/diagram, flera deluppgifter, lägesmått och standardavvikelse.",
+  "granskadeId": [
+    "4.322",
+    "4.323",
+    "4.324",
+    "4.325",
+    "4.326",
+    "4.327",
+    "4.328",
+    "4.329",
+    "4.330",
+    "4.331",
+    "4.332",
+    "4.333",
+    "4.334",
+    "4.335",
+    "4.336",
+    "4.337",
+    "4.338",
+    "4.339",
+    "4.340",
+    "4.341",
+    "4.342",
+    "4.343",
+    "4.344",
+    "4.345",
+    "4.346",
+    "4.347",
+    "4.348",
+    "4.349",
+    "4.350",
+    "4.351"
+  ],
+  "tillagdaId": [
+    "4.322",
+    "4.323",
+    "4.324",
+    "4.325",
+    "4.326",
+    "4.327",
+    "4.328",
+    "4.329",
+    "4.330",
+    "4.331",
+    "4.332",
+    "4.333",
+    "4.334",
+    "4.335",
+    "4.336",
+    "4.337",
+    "4.338",
+    "4.339",
+    "4.340",
+    "4.341",
+    "4.342",
+    "4.343",
+    "4.344",
+    "4.345",
+    "4.346",
+    "4.347",
+    "4.348",
+    "4.349",
+    "4.350",
+    "4.351"
+  ],
+  "atgardadeBefintligaFel": [],
+  "granskadIngetFelBefintliga": [],
+  "uppgifter": [
+    {
+      "id": "4.322",
+      "status": "Tillagd och granskad",
+      "titel": "Lästa serieböcker",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 1,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet. Avrunda vid behov till två decimaler.</p>",
+          "svar": 4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0.005
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.322",
+        "type": "basic",
+        "values": [
+          2,
+          4,
+          4,
+          4,
+          6
+        ],
+        "representation": "raw",
+        "unit": null
+      },
+      "innehallSha256": "d487182864a8ca47c7a968ec23f60f967c647fb7ad949896e8986451deefc12e"
+    },
+    {
+      "id": "4.323",
+      "status": "Tillagd och granskad",
+      "titel": "Mål per match",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet. Avrunda vid behov till två decimaler.</p>",
+          "svar": 0.8333333333333334,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0.005
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 1,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 1,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.323",
+        "type": "basic",
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "representation": "bars",
+        "unit": null
+      },
+      "innehallSha256": "8a38a11da4afb22cbe81e63aa74972e1edee667bf8c9e6a88c63aac6e5a39be8"
+    },
+    {
+      "id": "4.324",
+      "status": "Tillagd och granskad",
+      "titel": "Morgontemperaturer",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet. Svara i °C. Avrunda vid behov till två decimaler.</p>",
+          "svar": -1,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "°C",
+          "tolerans": 0.005
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen. Svara i °C.</p>",
+          "svar": -2,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "°C",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet. Svara i °C.</p>",
+          "svar": -2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "°C",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.324",
+        "type": "basic",
+        "values": [
+          -4,
+          -2,
+          0,
+          -2,
+          3
+        ],
+        "representation": "raw",
+        "unit": "°C"
+      },
+      "innehallSha256": "47e5f9b40d7af9600ac36d76abd3ebdc7309d4b128eac21b87b87c0ddb22a8d3"
+    },
+    {
+      "id": "4.325",
+      "status": "Tillagd och granskad",
+      "titel": "Besök i cykelverkstaden",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet. Avrunda vid behov till två decimaler.</p>",
+          "svar": 12,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0.005
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 12,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 8,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.325",
+        "type": "basic",
+        "values": [
+          14,
+          8,
+          12,
+          8,
+          18
+        ],
+        "representation": "raw",
+        "unit": null
+      },
+      "innehallSha256": "365708345669d939f9a5889f5b995847ebca826b8535c7e1e247d23b32825071"
+    },
+    {
+      "id": "4.326",
+      "status": "Tillagd och granskad",
+      "titel": "Skostorlekar",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet. Avrunda vid behov till två decimaler.</p>",
+          "svar": 37.916666666666664,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0.005
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 38,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 38,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.326",
+        "type": "basic",
+        "values": [
+          36,
+          37,
+          37,
+          37,
+          38,
+          38,
+          38,
+          38,
+          38,
+          39,
+          39,
+          40
+        ],
+        "representation": "bars",
+        "unit": null
+      },
+      "innehallSha256": "c601c7ee383830b743217aa323b3d827ec7f7f37045347d7f2694d4c246b4bee"
+    },
+    {
+      "id": "4.327",
+      "status": "Tillagd och granskad",
+      "titel": "Typvärde för kategorier",
+      "omr": "lagesmatt",
+      "familj": "Beräkna lägesmått",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Vilken färg är typvärdet?</p>",
+          "svar": "Blå",
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Hur många röster kom in totalt?</p>",
+          "svar": 13,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Hur många procent valde blå? Avrunda till en decimal.</p>",
+          "svar": 46.15384615384615,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "%",
+          "tolerans": 0.05
+        }
+      ],
+      "modell": {
+        "id": "4.327",
+        "type": "categorical",
+        "rows": [
+          [
+            "Blå",
+            6
+          ],
+          [
+            "Grön",
+            4
+          ],
+          [
+            "Röd",
+            3
+          ]
+        ]
+      },
+      "innehallSha256": "439b192b4b3e982a50cd57a4d7e0c6f8b25c3ccbf2aa4427f4c7abf80ef23565"
+    },
+    {
+      "id": "4.328",
+      "status": "Tillagd och granskad",
+      "titel": "Väntetider vid kiosken",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i min.</p>",
+          "svar": 3.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i min.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i min. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            4,
+            1.632993161855452
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "min",
+            "min"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i min.</p>",
+          "svar": 5,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.328",
+        "type": "measures",
+        "values": [
+          2,
+          3,
+          3,
+          4,
+          5,
+          7
+        ],
+        "representation": "raw",
+        "unit": "min",
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "adc8d13849d5dc90f2c83c75573fa415ff1d24c5f1f791e55a6b50cda9af4f79"
+    },
+    {
+      "id": "4.329",
+      "status": "Tillagd och granskad",
+      "titel": "Antal syskon",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 1,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 1,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            1.5,
+            1.2041594578792296
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden.</p>",
+          "svar": 4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.329",
+        "type": "measures",
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4
+        ],
+        "representation": "bars",
+        "unit": null,
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "c68e0b79028567e1c8244fd4be8f66d5bf89d6226aaf31cc6808668657b92c07"
+    },
+    {
+      "id": "4.330",
+      "status": "Tillagd och granskad",
+      "titel": "Bussförseningar",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i min.</p>",
+          "svar": 1.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i min.</p>",
+          "svar": 0,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i min. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2,
+            2.5
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "min",
+            "min"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet. Svara i min.</p>",
+          "svar": 2.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "min",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.330",
+        "type": "measures",
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          8
+        ],
+        "representation": "dots",
+        "unit": "min",
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "dd66ce84deba36a6d4b65b1863fb16672d55e62ee4bf8178a40b9c33096ea3ed"
+    },
+    {
+      "id": "4.331",
+      "status": "Tillagd och granskad",
+      "titel": "Pennor i askar",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 10,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 10,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            10,
+            1
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.331",
+        "type": "measures",
+        "values": [
+          8,
+          10,
+          10,
+          10,
+          11,
+          11
+        ],
+        "representation": "frequency",
+        "unit": null,
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "394363e38962ab8674cf9e2f887cbf265e0b7c4b9a7c2f116b89550ed52fbb02"
+    },
+    {
+      "id": "4.332",
+      "status": "Tillagd och granskad",
+      "titel": "Batteriers drifttid",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i h.</p>",
+          "svar": 9.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i h.</p>",
+          "svar": 9,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och uppskatta standardavvikelsen med Sx för stickprovet. Svara i h. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            10,
+            1.7888543819998317
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "h",
+            "h"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i h.</p>",
+          "svar": 5,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.332",
+        "type": "measures",
+        "values": [
+          8,
+          9,
+          9,
+          10,
+          11,
+          13
+        ],
+        "representation": "raw",
+        "unit": "h",
+        "sample": true,
+        "quartiles": false
+      },
+      "innehallSha256": "cd3c1f0136327494ac4521311363d342eae360d5b32ae58aedc8fee0a4a0661e"
+    },
+    {
+      "id": "4.333",
+      "status": "Tillagd och granskad",
+      "titel": "Poäng på ett quiz",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            3.4,
+            1.624807680927192
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.333",
+        "type": "measures",
+        "values": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          5,
+          7
+        ],
+        "representation": "bars",
+        "unit": null,
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "8982b6752bc5e5668a57a6282821cf21267bd389c6b375833ca3586296953282"
+    },
+    {
+      "id": "4.334",
+      "status": "Tillagd och granskad",
+      "titel": "Längder på plantor",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i cm.</p>",
+          "svar": 14,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "cm",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i cm.</p>",
+          "svar": 14,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "cm",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i cm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            15,
+            2.3664319132398464
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "cm",
+            "cm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i cm.</p>",
+          "svar": 7,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "cm",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.334",
+        "type": "measures",
+        "values": [
+          12,
+          14,
+          14,
+          16,
+          19
+        ],
+        "representation": "raw",
+        "unit": "cm",
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "c48168cda68cda3b870348fcf400b231f198fd329d6e96b7ede71318140dfb8b"
+    },
+    {
+      "id": "4.335",
+      "status": "Tillagd och granskad",
+      "titel": "Fyllnadsvikt i påsar",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i g.</p>",
+          "svar": 100,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "g",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i g.</p>",
+          "svar": 100,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "g",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och uppskatta standardavvikelsen med Sx för stickprovet. Svara i g. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            100.4,
+            1.816590212458495
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "g",
+            "g"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i g.</p>",
+          "svar": 5,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "g",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.335",
+        "type": "measures",
+        "values": [
+          98,
+          100,
+          100,
+          101,
+          103
+        ],
+        "representation": "raw",
+        "unit": "g",
+        "sample": true,
+        "quartiles": false
+      },
+      "innehallSha256": "50e1ca0ab97ca5ba652f2c8f5c2dfe7623d12b6fefa4441a2b3b10dd337d8ce7"
+    },
+    {
+      "id": "4.336",
+      "status": "Tillagd och granskad",
+      "titel": "Träningstillfällen",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2.4,
+            1.4966629547095767
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.336",
+        "type": "measures",
+        "values": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5
+        ],
+        "representation": "bars",
+        "unit": null,
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "ab3918ee0d6b2f194e81431b1c9806359a0166325a8c3dd19107f5a992e91e28"
+    },
+    {
+      "id": "4.337",
+      "status": "Tillagd och granskad",
+      "titel": "Boklån",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2,
+            1.5491933384829668
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden.</p>",
+          "svar": 5,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.337",
+        "type": "measures",
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          4,
+          5
+        ],
+        "representation": "frequency",
+        "unit": null,
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "1a71e1985f576edd5a4c69ed7f9f4e8f0be07021138920a647c8a796dc464f1d"
+    },
+    {
+      "id": "4.338",
+      "status": "Tillagd och granskad",
+      "titel": "Avvikelse från en mållängd",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i mm.</p>",
+          "svar": 0,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i mm.</p>",
+          "svar": 0,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i mm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            0.5,
+            2.0615528128088303
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "mm",
+            "mm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet. Svara i mm.</p>",
+          "svar": 2.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.338",
+        "type": "measures",
+        "values": [
+          -3,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          3,
+          4
+        ],
+        "representation": "dots",
+        "unit": "mm",
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "0bba581ced341bf9db0bed8906f0905953aa5da218896a91bb609a7fdc2574ac"
+    },
+    {
+      "id": "4.339",
+      "status": "Tillagd och granskad",
+      "titel": "Löptider",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i s.</p>",
+          "svar": 12.600000000000001,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "s",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i s.</p>",
+          "svar": 12.4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "s",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i s. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            12.7,
+            0.41231056256176624
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "s",
+            "s"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i s.</p>",
+          "svar": 1.200000000000001,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "s",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.339",
+        "type": "measures",
+        "values": [
+          12.2,
+          12.4,
+          12.4,
+          12.8,
+          13,
+          13.4
+        ],
+        "representation": "raw",
+        "unit": "s",
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "715148ba7b06676b9ca3c3c65b88afd9319d7fb075347b8055fef378764b0b4c"
+    },
+    {
+      "id": "4.340",
+      "status": "Tillagd och granskad",
+      "titel": "Kaffekoppars volym",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i ml.</p>",
+          "svar": 190,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "ml",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i ml.</p>",
+          "svar": 190,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "ml",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och uppskatta standardavvikelsen med Sx för stickprovet. Svara i ml. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            190,
+            7.0710678118654755
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "ml",
+            "ml"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i ml.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "ml",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.340",
+        "type": "measures",
+        "values": [
+          180,
+          185,
+          190,
+          190,
+          195,
+          200
+        ],
+        "representation": "frequency",
+        "unit": "ml",
+        "sample": true,
+        "quartiles": false
+      },
+      "innehallSha256": "47db5762d27427c7ca963955d11607245e96d37087b4ae9817cecc2f512ef71b"
+    },
+    {
+      "id": "4.341",
+      "status": "Tillagd och granskad",
+      "titel": "Hundars ålder",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i år.</p>",
+          "svar": 2.5,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "år",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i år.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "år",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i år. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            3.5,
+            2.23606797749979
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "år",
+            "år"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet. Svara i år.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "år",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.341",
+        "type": "measures",
+        "values": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "representation": "bars",
+        "unit": "år",
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "4fc0f54ca19a1320413c38db160f30091b8d1a716174be2c698577c52fdf5e28"
+    },
+    {
+      "id": "4.342",
+      "status": "Tillagd och granskad",
+      "titel": "Skärmtid",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i h.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i h.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i h. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2.25,
+            0.8660254037844386
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "h",
+            "h"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet. Svara i h.</p>",
+          "svar": 1,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "h",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.342",
+        "type": "measures",
+        "values": [
+          1,
+          1.5,
+          2,
+          2,
+          2,
+          2.5,
+          3,
+          4
+        ],
+        "representation": "raw",
+        "unit": "h",
+        "sample": false,
+        "quartiles": true
+      },
+      "innehallSha256": "4cac5b32b9c6f494f1309947e5ee57dd12ec580952d120f07ad5ddcd26687931"
+    },
+    {
+      "id": "4.343",
+      "status": "Tillagd och granskad",
+      "titel": "Skruvars längd",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i mm.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i mm.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och uppskatta standardavvikelsen med Sx för stickprovet. Svara i mm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            20.06,
+            0.21908902300206576
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "mm",
+            "mm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i mm.</p>",
+          "svar": 0.5999999999999979,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "mm",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.343",
+        "type": "measures",
+        "values": [
+          19.8,
+          20,
+          20,
+          20.1,
+          20.4
+        ],
+        "representation": "raw",
+        "unit": "mm",
+        "sample": true,
+        "quartiles": false
+      },
+      "innehallSha256": "ef80c869d68b3f808c6ea564b555e0e0341fa88c5ada18a362073d25ddbe594d"
+    },
+    {
+      "id": "4.344",
+      "status": "Tillagd och granskad",
+      "titel": "Lika stora paket",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 1,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i kg.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "kg",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm typvärdet. Svara i kg.</p>",
+          "svar": 2,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "kg",
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i kg. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2,
+            0
+          ],
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "kg",
+            "kg"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden. Svara i kg.</p>",
+          "svar": 0,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "kg",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.344",
+        "type": "measures",
+        "values": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "representation": "raw",
+        "unit": "kg",
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "eddbf9c94ec5f5cdc06d015e334da6e1bc24de9fa7520e29564de73ff15cdb2b"
+    },
+    {
+      "id": "4.345",
+      "status": "Tillagd och granskad",
+      "titel": "Betyg i en kundundersökning",
+      "omr": "standardavvikelse",
+      "familj": "Beräkna och tolka standardavvikelse",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "4/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 3,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm de två typvärdena.</p>",
+          "svar": [
+            2,
+            4
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "mängd",
+          "etiketter": [
+            "Typvärde 1",
+            "Typvärde 2"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0,
+            0
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            3,
+            1.3093073414159544
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm variationsbredden.</p>",
+          "svar": 4,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.345",
+        "type": "measures",
+        "values": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5
+        ],
+        "representation": "bars",
+        "unit": null,
+        "sample": false,
+        "quartiles": false
+      },
+      "innehallSha256": "b585cb06c3f2eddff4546f5f6dff50348455e0d808f290b3bea309e1bb1d9f13"
+    },
+    {
+      "id": "4.346",
+      "status": "Tillagd och granskad",
+      "titel": "Samma medelvärde, olika precision",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur"
+      ],
+      "niva": "E",
+      "traningsniva": 2,
+      "poang": "3/0/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>För A: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i mm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            20,
+            1.2649110640673518
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "mm",
+            "mm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "b",
+          "fraga": "<p>För B: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i mm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            20,
+            2.5298221281347035
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "mm",
+            "mm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Vilken maskin har minst spridning? Svara A eller B.</p>",
+          "svar": "A",
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.346",
+        "type": "comparison",
+        "A": [
+          18,
+          20,
+          20,
+          20,
+          22
+        ],
+        "B": [
+          16,
+          20,
+          20,
+          20,
+          24
+        ],
+        "unit": "mm"
+      },
+      "innehallSha256": "063720c4e2cfd733efb5d31a5bd6e2b22cab12c722c90b2ef5f4065753fa84b1"
+    },
+    {
+      "id": "4.347",
+      "status": "Tillagd och granskad",
+      "titel": "Gåvor med ett extremvärde",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur",
+        "resonemang"
+      ],
+      "niva": "C",
+      "traningsniva": 3,
+      "poang": "3/1/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medianen. Svara i kr.</p>",
+          "svar": 30,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "kr",
+          "tolerans": 0
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm de två typvärdena. Svara i kr.</p>",
+          "svar": [
+            20,
+            30
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "mängd",
+          "etiketter": [
+            "Typvärde 1",
+            "Typvärde 2"
+          ],
+          "enhet": [
+            "kr",
+            "kr"
+          ],
+          "tolerans": [
+            0,
+            0
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i kr. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            90,
+            138.80441875771342
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "kr",
+            "kr"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Vilket lägesmått påverkas minst om gåvan på 400 kr höjs till 4 000 kr: medelvärdet eller medianen? Svara median eller medelvärde.</p>",
+          "svar": "median",
+          "niva": "C",
+          "traningsniva": 3,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.347",
+        "type": "outlier",
+        "values": [
+          20,
+          20,
+          30,
+          30,
+          40,
+          400
+        ],
+        "representation": "raw",
+        "unit": "kr"
+      },
+      "innehallSha256": "cf90b54fc34d00140709bc60e4fa597365c678857b6ad63be8f2276e9c9d10bd"
+    },
+    {
+      "id": "4.348",
+      "status": "Tillagd och granskad",
+      "titel": "En konstant läggs till",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur",
+        "resonemang"
+      ],
+      "niva": "C",
+      "traningsniva": 3,
+      "poang": "2/1/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>För A: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i cm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            5,
+            2.3664319132398464
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "cm",
+            "cm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "b",
+          "fraga": "<p>För B: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i cm. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            10,
+            2.3664319132398464
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "cm",
+            "cm"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Hur mycket förändras variationsbredden från A till B? Svara i cm.</p>",
+          "svar": 0,
+          "niva": "C",
+          "traningsniva": 3,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": "cm",
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.348",
+        "type": "comparison",
+        "A": [
+          2,
+          4,
+          4,
+          6,
+          9
+        ],
+        "B": [
+          7,
+          9,
+          9,
+          11,
+          14
+        ],
+        "unit": "cm"
+      },
+      "innehallSha256": "4efdd850aef2f1e7b2e091c1283a89e1e438a824ee4289a9285caa33f0eb3e98"
+    },
+    {
+      "id": "4.349",
+      "status": "Tillagd och granskad",
+      "titel": "Alla värden fördubblas",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur",
+        "resonemang"
+      ],
+      "niva": "C",
+      "traningsniva": 3,
+      "poang": "2/1/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>För A: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i m. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            4,
+            2.6832815729997477
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "m",
+            "m"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "b",
+          "fraga": "<p>För B: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Svara i m. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            8,
+            5.366563145999495
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            "m",
+            "m"
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Hur många gånger så stor är standardavvikelsen i B som i A?</p>",
+          "svar": 2,
+          "niva": "C",
+          "traningsniva": 3,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.349",
+        "type": "comparison",
+        "A": [
+          1,
+          3,
+          3,
+          4,
+          9
+        ],
+        "B": [
+          2,
+          6,
+          6,
+          8,
+          18
+        ],
+        "unit": "m"
+      },
+      "innehallSha256": "f8164a48c7bac3c6c343028d53b23a59eaac3fb48c21e50d4449d54e590e66a1"
+    },
+    {
+      "id": "4.350",
+      "status": "Tillagd och granskad",
+      "titel": "Samma variationsbredd, olika spridning",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur",
+        "resonemang"
+      ],
+      "niva": "C",
+      "traningsniva": 3,
+      "poang": "2/1/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>För grupp A: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2,
+            1
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "b",
+          "fraga": "<p>För grupp B: bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            2,
+            1.6124515496597098
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Båda grupperna har samma variationsbredd. Vilken grupp har ändå störst standardavvikelse? Svara A eller B.</p>",
+          "svar": "B",
+          "niva": "C",
+          "traningsniva": 3,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.350",
+        "type": "comparison",
+        "A": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4
+        ],
+        "B": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          4,
+          4
+        ],
+        "representation": "frequency"
+      },
+      "innehallSha256": "bf4429b1bb2f32442d0c4b75bb4e6638492a2652dd93e18d9fbcd6309da6352d"
+    },
+    {
+      "id": "4.351",
+      "status": "Tillagd och granskad",
+      "titel": "Frekvenser med olika vikt",
+      "omr": "standardavvikelse",
+      "familj": "Jämföra spridning och förändring",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "formaga": [
+        "begrepp",
+        "procedur",
+        "resonemang"
+      ],
+      "niva": "C",
+      "traningsniva": 3,
+      "poang": "4/1/0",
+      "miniraknare": true,
+      "spel": true,
+      "delar": [
+        {
+          "del": "a",
+          "fraga": "<p>Bestäm medelvärdet och standardavvikelsen σx för de visade värdena. Avrunda vid behov till två decimaler.</p>",
+          "svar": [
+            25,
+            13.228756555322953
+          ],
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": "ordnad",
+          "etiketter": [
+            "Medelvärde",
+            "Standardavvikelse"
+          ],
+          "enhet": [
+            null,
+            null
+          ],
+          "tolerans": [
+            0.005,
+            0.005
+          ]
+        },
+        {
+          "del": "b",
+          "fraga": "<p>Bestäm medianen.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "c",
+          "fraga": "<p>Bestäm typvärdet.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 1,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "d",
+          "fraga": "<p>Bestäm kvartilavståndet.</p>",
+          "svar": 20,
+          "niva": "E",
+          "traningsniva": 2,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        },
+        {
+          "del": "e",
+          "fraga": "<p>En elev tar medelvärdet av de fem olika värdena i första kolumnen och får 30. Ska varje rad väga lika mycket? Svara ja eller nej.</p>",
+          "svar": "nej",
+          "niva": "C",
+          "traningsniva": 3,
+          "svarsstruktur": null,
+          "etiketter": null,
+          "enhet": null,
+          "tolerans": 0
+        }
+      ],
+      "modell": {
+        "id": "4.351",
+        "type": "weighted",
+        "values": [
+          10,
+          10,
+          20,
+          20,
+          20,
+          30,
+          40,
+          50
+        ],
+        "representation": "frequency"
+      },
+      "innehallSha256": "65bdb7abb906baf7ae7d68155fdc6fc61f6dfe8076e6a5bfd92470e5dba737c7"
+    }
+  ],
+  "kommentarsforslag": "Ytterligare 30 uppgifter (#4.322–4.351) är tillagda för Ma2a, b och c. Alla har tabell eller diagram och flera deluppgifter. De tränar medelvärde, median, typvärde, standardavvikelse och andra spridningsmått. Facit, nivåer och självrättning är granskade.",
+  "appStatusSparad": false,
+  "verifiering": {
+    "masterTester": 48,
+    "konsumentTester": 144,
+    "browserSvarskombinationer": 375,
+    "browserVyer": 282,
+    "spår": [
+      {
+        "track": "2a",
+        "cards": 111,
+        "missing": []
+      },
+      {
+        "track": "2b",
+        "cards": 111,
+        "missing": []
+      },
+      {
+        "track": "2c",
+        "cards": 111,
+        "missing": []
+      }
+    ],
+    "javascriptFel": [],
+    "svgAntal": 9,
+    "svgFynd": [],
+    "bank": {
+      "before": 2136,
+      "after": 2166,
+      "oldTasksUnchanged": true,
+      "bankCopiesIdentical": true,
+      "newFindings": [],
+      "baselineErrors": [
+        {
+          "allvar": "ERROR",
+          "kod": "MISSING_ANSWER_TYPE",
+          "fil": "uppgifterma2.js",
+          "index": 941,
+          "id": "2.636",
+          "meddelande": "svarstyp saknas eller är tom."
+        },
+        {
+          "allvar": "ERROR",
+          "kod": "MISSING_RIGHT_ANSWER_METADATA",
+          "fil": "uppgifterma2.js",
+          "index": 941,
+          "id": "2.636",
+          "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+        },
+        {
+          "allvar": "ERROR",
+          "kod": "MISSING_ANSWER_TYPE",
+          "fil": "uppgifterma2.js",
+          "index": 942,
+          "id": "2.637",
+          "meddelande": "svarstyp saknas eller är tom."
+        },
+        {
+          "allvar": "ERROR",
+          "kod": "MISSING_RIGHT_ANSWER_METADATA",
+          "fil": "uppgifterma2.js",
+          "index": 942,
+          "id": "2.637",
+          "meddelande": "Fältet rättSvar saknas; använd null när uppgiften ska bedömas manuellt."
+        }
+      ]
+    }
+  },
+  "avgransning": "Alla 30 nya uppgifter och deras 111 kort är granskade. Befintliga uppgifter är bara regressionskontrollerade i denna omgång. Detta slutmarkerar inte hela Ma2-banken."
+}
