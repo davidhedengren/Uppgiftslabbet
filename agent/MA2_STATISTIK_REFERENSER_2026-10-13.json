@@ -1,0 +1,2156 @@
+{
+  "date": "2026-10-13",
+  "scope": "Ma2a/b/c: 24 nya och 11 varierade statistikuppgifter",
+  "reviewed": [
+    "4.352",
+    "4.353",
+    "4.354",
+    "4.355",
+    "4.356",
+    "4.357",
+    "4.358",
+    "4.359",
+    "4.360",
+    "4.361",
+    "4.362",
+    "4.363",
+    "4.364",
+    "4.365",
+    "4.366",
+    "4.367",
+    "4.368",
+    "4.369",
+    "4.370",
+    "4.371",
+    "4.372",
+    "4.373",
+    "4.374",
+    "4.375",
+    "4.40",
+    "4.48",
+    "4.63",
+    "4.71",
+    "4.78",
+    "4.98",
+    "4.202",
+    "4.208",
+    "4.92",
+    "4.171",
+    "4.183"
+  ],
+  "added": [
+    "4.352",
+    "4.353",
+    "4.354",
+    "4.355",
+    "4.356",
+    "4.357",
+    "4.358",
+    "4.359",
+    "4.360",
+    "4.361",
+    "4.362",
+    "4.363",
+    "4.364",
+    "4.365",
+    "4.366",
+    "4.367",
+    "4.368",
+    "4.369",
+    "4.370",
+    "4.371",
+    "4.372",
+    "4.373",
+    "4.374",
+    "4.375"
+  ],
+  "revised": [
+    "4.40",
+    "4.48",
+    "4.63",
+    "4.71",
+    "4.78",
+    "4.98",
+    "4.202",
+    "4.208",
+    "4.92",
+    "4.171",
+    "4.183"
+  ],
+  "reviewedNoError": [],
+  "note": "Inventeringen av övriga kvartil-/percentiluppgifter och regressionstester är inte en ny fullständig redaktionell granskning av dessa. Inga appstatusar eller kommentarer har sparats.",
+  "tasks": [
+    {
+      "id": "4.352",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Lönespridning i en organisation. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Lönespridning i en organisation",
+      "level": 2,
+      "partLevels": [
+        1,
+        2,
+        2
+      ],
+      "answer": [
+        34000,
+        50,
+        250
+      ],
+      "answerDescription": "a) 34000; b) 50; c) 250",
+      "model": {
+        "id": "4.352",
+        "type": "percentiles",
+        "N": 500,
+        "percentiles": [
+          [
+            10,
+            26000
+          ],
+          [
+            25,
+            30000
+          ],
+          [
+            50,
+            34000
+          ],
+          [
+            75,
+            42000
+          ],
+          [
+            90,
+            56000
+          ]
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "454f286aae890ba240ba70d243314e46434c6fc70b3be6859e5b1edeb13b82a5"
+    },
+    {
+      "id": "4.353",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Restider i en kommun. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Restider i en kommun",
+      "level": 2,
+      "partLevels": [
+        1,
+        2,
+        1
+      ],
+      "answer": [
+        20,
+        160,
+        10
+      ],
+      "answerDescription": "a) 20; b) 160; c) 10",
+      "model": {
+        "id": "4.353",
+        "type": "percentiles",
+        "N": 200,
+        "percentiles": [
+          [
+            10,
+            8
+          ],
+          [
+            25,
+            15
+          ],
+          [
+            50,
+            22
+          ],
+          [
+            75,
+            35
+          ],
+          [
+            90,
+            50
+          ]
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "db330143f31f58767c544e71f7c7bc0c82c44d5844ee7e62535bdf4015d4f0b1"
+    },
+    {
+      "id": "4.354",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Samma andel i olika stora grupper. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Samma andel i olika stora grupper",
+      "level": 2,
+      "partLevels": [
+        1,
+        2
+      ],
+      "answer": [
+        [
+          12,
+          15
+        ],
+        [
+          20,
+          30
+        ]
+      ],
+      "answerDescription": "a) (12; 15); b) (20; 30)",
+      "model": {
+        "id": "4.354",
+        "type": "group_percentiles",
+        "sizes": [
+          80,
+          120
+        ],
+        "rows": [
+          [
+            25,
+            8,
+            10
+          ],
+          [
+            50,
+            12,
+            15
+          ],
+          [
+            75,
+            18,
+            21
+          ]
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "9ccf9fd78c8d9c3e166028d18362376ca6ab05dce44eeb4c8a0d20d65f541bf5"
+    },
+    {
+      "id": "4.355",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Hitta percentiltalet. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Hitta percentiltalet",
+      "level": 2,
+      "partLevels": [],
+      "answer": 75,
+      "answerDescription": "75",
+      "model": {
+        "id": "4.355",
+        "type": "inverse_percentile",
+        "N": 240,
+        "between": 60,
+        "base": 50
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "e38b66170b3a46baf36aa066a3b03409a2b63cbb3b670969f2e875f28e4ceb4f"
+    },
+    {
+      "id": "4.356",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Åldrar i två föreningar. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Åldrar i två föreningar",
+      "level": 2,
+      "partLevels": [
+        2,
+        2,
+        1
+      ],
+      "answer": [
+        "A",
+        [
+          30,
+          30
+        ],
+        [
+          60,
+          70
+        ]
+      ],
+      "answerDescription": "a) A; b) (30; 30); c) (60; 70)",
+      "model": {
+        "id": "4.356",
+        "type": "boxes",
+        "rows": [
+          [
+            "A",
+            [
+              10,
+              20,
+              30,
+              50,
+              70
+            ]
+          ],
+          [
+            "B",
+            [
+              10,
+              30,
+              50,
+              60,
+              80
+            ]
+          ]
+        ],
+        "axis": [
+          0,
+          90,
+          10
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "2f75d69578772475791f33e6140ddba43363bdcc850dfe79389642ecd3aa2360"
+    },
+    {
+      "id": "4.357",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Leveranstider för två företag. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Leveranstider för två företag",
+      "level": 2,
+      "partLevels": [
+        1,
+        1,
+        2
+      ],
+      "answer": [
+        "B",
+        "B",
+        "nej"
+      ],
+      "answerDescription": "a) B; b) B; c) nej",
+      "model": {
+        "id": "4.357",
+        "type": "boxes",
+        "rows": [
+          [
+            "A",
+            [
+              20,
+              30,
+              40,
+              50,
+              70
+            ]
+          ],
+          [
+            "B",
+            [
+              10,
+              20,
+              45,
+              60,
+              80
+            ]
+          ]
+        ],
+        "axis": [
+          0,
+          90,
+          10
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "ad9da221119a22f8f399fa2add75bb8261a2a9136ff0fcf36140f3313c33820b"
+    },
+    {
+      "id": "4.358",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Percentilstreck är inte yttervärden. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Percentilstreck är inte yttervärden",
+      "level": 2,
+      "partLevels": [
+        1,
+        2,
+        1
+      ],
+      "answer": [
+        50,
+        20,
+        "nej"
+      ],
+      "answerDescription": "a) 50; b) 20; c) nej",
+      "model": {
+        "id": "4.358",
+        "type": "percentile_box",
+        "rows": [
+          [
+            "",
+            [
+              15,
+              20,
+              35,
+              50,
+              65
+            ]
+          ]
+        ],
+        "axis": [
+          0,
+          70,
+          10
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "741a247bcf61e9126f9d7e0fcc582cbd0b5fc74a0550c18d74e5ac0d21edbcd4"
+    },
+    {
+      "id": "4.359",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Rita från sammanfattande mått. Tabell/figur, facit, nivå och manuell bedömning är granskade.",
+      "title": "Rita från sammanfattande mått",
+      "level": 2,
+      "partLevels": [],
+      "answer": null,
+      "answerDescription": "Eget lådagram: 10; 20; 28; 35; 50",
+      "model": {
+        "id": "4.359",
+        "type": "construct_box",
+        "five": [
+          10,
+          20,
+          28,
+          35,
+          50
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "68f7b4f1a2af79500bbb91fdc41f0b9c707fd4c06fc81b7f4b6c9abca006644c"
+    },
+    {
+      "id": "4.360",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Fem värden bakom en låda. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Fem värden bakom en låda",
+      "level": 3,
+      "partLevels": [],
+      "answer": 7.4,
+      "answerDescription": "7,4",
+      "model": {
+        "id": "4.360",
+        "type": "five_from_box",
+        "five": [
+          2,
+          3,
+          7,
+          12,
+          14
+        ],
+        "values": [
+          2,
+          4,
+          7,
+          10,
+          14
+        ],
+        "axis": [
+          0,
+          16,
+          2
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "fdb141e91e6ab8fc740e1a53ebd41499cad4b9910e0b5d1726558d6019a6bb2c"
+    },
+    {
+      "id": "4.361",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Samma kvartiler, olika medelvärden. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Samma kvartiler, olika medelvärden",
+      "level": 3,
+      "partLevels": [
+        2,
+        3
+      ],
+      "answer": [
+        [
+          8,
+          8.222222222222221
+        ],
+        "ja"
+      ],
+      "answerDescription": "a) (8; 8,22); b) ja",
+      "model": {
+        "id": "4.361",
+        "type": "same_box",
+        "A": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        "B": [
+          0,
+          1,
+          5,
+          7,
+          8,
+          11,
+          11,
+          15,
+          16
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "61bcaeddc2180a7c9ac40ca07cec6a3f1a7d09674ac23096e4e5da8015c23868"
+    },
+    {
+      "id": "4.362",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Vilket tal kan ha tagits bort?. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Vilket tal kan ha tagits bort?",
+      "level": 3,
+      "partLevels": [],
+      "answer": [
+        4,
+        5
+      ],
+      "answerDescription": "(4; 5)",
+      "model": {
+        "id": "4.362",
+        "type": "remove",
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "rows": [
+          [
+            "Före",
+            [
+              1,
+              3,
+              6,
+              9,
+              12
+            ]
+          ],
+          [
+            "Efter",
+            [
+              1,
+              3,
+              6.5,
+              9,
+              12
+            ]
+          ]
+        ],
+        "axis": [
+          0,
+          14,
+          2
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "0f30dab645f483b4f1b19c000c5b5f9f99396cc3817b3bffb610dbb823018b38"
+    },
+    {
+      "id": "4.363",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Halvvägs mellan två kvartiler. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Halvvägs mellan två kvartiler",
+      "level": 3,
+      "partLevels": [],
+      "answer": null,
+      "answerDescription": "Nej, resultaten kan vara ojämnt fördelade mellan kvartilerna.",
+      "model": {
+        "id": "4.363",
+        "type": "nonuniform_quartiles",
+        "quartiles": [
+          12,
+          20,
+          36
+        ],
+        "score": 28
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "alternativ",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "82dbad92c3dd269ef3851d90c4ec160a4653b5f641f62e0de4c1e77be465e486"
+    },
+    {
+      "id": "4.364",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Surhetsgrad på odlingsplatser. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Surhetsgrad på odlingsplatser",
+      "level": 2,
+      "partLevels": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "answer": [
+        7.5,
+        7.5,
+        [
+          7.4,
+          0.5537749241945383
+        ],
+        1
+      ],
+      "answerDescription": "a) 7,5; b) 7,5; c) (7,4; 0,55); d) 1",
+      "model": {
+        "id": "4.364",
+        "type": "data",
+        "values": [
+          6.5,
+          6.5,
+          6.5,
+          6.5,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8.5,
+          8.5
+        ],
+        "sample": false
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "088033b593dc25f7a39d4e4d6002ea0ec66d2d8d29c9d6ee420ec80b4dfb24da"
+    },
+    {
+      "id": "4.365",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Lådors vikter i intervall. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Lådors vikter i intervall",
+      "level": 2,
+      "partLevels": [
+        2,
+        2
+      ],
+      "answer": [
+        [
+          60.333333333333336,
+          8.844332774281066
+        ],
+        "nej"
+      ],
+      "answerDescription": "a) (60,33; 8,84); b) nej",
+      "model": {
+        "id": "4.365",
+        "type": "histogram",
+        "edges": [
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "counts": [
+          4,
+          10,
+          12,
+          4
+        ],
+        "values": [
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          55.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          65.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0
+        ],
+        "unit": "kg"
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "6eee6cc3dd71b970b95c010dc5265848ec0ac8a06d4db224cfce060711b07f84"
+    },
+    {
+      "id": "4.366",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Väntetider i intervall. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Väntetider i intervall",
+      "level": 2,
+      "partLevels": [
+        2,
+        2
+      ],
+      "answer": [
+        [
+          8.5,
+          4.163331998932265
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "answerDescription": "a) (8,5; 4,16); b) (5; 10)",
+      "model": {
+        "id": "4.366",
+        "type": "histogram",
+        "edges": [
+          0,
+          5,
+          10,
+          15,
+          20
+        ],
+        "counts": [
+          6,
+          14,
+          8,
+          2
+        ],
+        "values": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          12.5,
+          12.5,
+          12.5,
+          12.5,
+          12.5,
+          12.5,
+          12.5,
+          12.5,
+          17.5,
+          17.5
+        ],
+        "unit": "min"
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "c88bdc45ae7dabd8f0a3a81f92e1f440c578bda62bb8a779bf23a2abf38d3e5f"
+    },
+    {
+      "id": "4.367",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Slå ihop två vägningar. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Slå ihop två vägningar",
+      "level": 2,
+      "partLevels": [
+        2,
+        2
+      ],
+      "answer": [
+        490,
+        "nej"
+      ],
+      "answerDescription": "a) 490; b) nej",
+      "model": {
+        "id": "4.367",
+        "type": "pooled_mean",
+        "counts": [
+          12,
+          8
+        ],
+        "means": [
+          480,
+          505
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "c097af4b59e6be1c3baafde43d0d9b7a0a55c9b221935df08a23c9cf50bf4adf"
+    },
+    {
+      "id": "4.368",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Sista minigolfbanan. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Sista minigolfbanan",
+      "level": 2,
+      "partLevels": [],
+      "answer": 1,
+      "answerDescription": "1",
+      "model": {
+        "id": "4.368",
+        "type": "missing_mean",
+        "known": [
+          5,
+          4,
+          6
+        ],
+        "N": 4,
+        "mean": 4
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "7c5a76ed5bc64cec296f7cb51678e6d0b77813faca60ff0e5207cf9b1aee4eae"
+    },
+    {
+      "id": "4.369",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: En ny medlem ändrar medelåldern. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "En ny medlem ändrar medelåldern",
+      "level": 2,
+      "partLevels": [],
+      "answer": 28,
+      "answerDescription": "28",
+      "model": {
+        "id": "4.369",
+        "type": "new_member",
+        "before": [
+          5,
+          16
+        ],
+        "after": [
+          6,
+          18
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "0fb9cd595a0d3853ffcf35407239f1eb3dc749b792bdb2fab4b035dfc731d054"
+    },
+    {
+      "id": "4.370",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Största talet med given median. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Största talet med given median",
+      "level": 3,
+      "partLevels": [],
+      "answer": 16,
+      "answerDescription": "16",
+      "model": {
+        "id": "4.370",
+        "type": "max_integer",
+        "N": 5,
+        "mean": 6,
+        "median": 6,
+        "example": [
+          1,
+          1,
+          6,
+          6,
+          16
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "ff9e091a7c70dc3c421487464064f6a685a35d64d054a1d032c41d5d39d014c9"
+    },
+    {
+      "id": "4.371",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Lägga till värden nära mitten. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Lägga till värden nära mitten",
+      "level": 3,
+      "partLevels": [
+        2,
+        3
+      ],
+      "answer": [
+        [
+          7,
+          2.1908902300206643
+        ],
+        "mindre"
+      ],
+      "answerDescription": "a) (7; 2,19); b) mindre",
+      "model": {
+        "id": "4.371",
+        "type": "append_values",
+        "values": [
+          4,
+          6,
+          6,
+          9,
+          10
+        ],
+        "added": [
+          6,
+          8
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "5a83d6b32e8be433a5e74d9277ba3b6a7277aafce198a9944f680228d1341e09"
+    },
+    {
+      "id": "4.372",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Byta skala på mätvärden. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Byta skala på mätvärden",
+      "level": 3,
+      "partLevels": [
+        2,
+        3,
+        2
+      ],
+      "answer": [
+        8,
+        4,
+        7.333333333333333
+      ],
+      "answerDescription": "a) 8; b) 4; c) 7,33",
+      "model": {
+        "id": "4.372",
+        "type": "transform_summary",
+        "mean": 84,
+        "median": 82,
+        "sd": 12,
+        "shift": -60,
+        "scale": 0.3333333333333333
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "4850e7da79f0dac86812c6eaf7b2556028907a68544f758a85cbb46d6271f38f"
+    },
+    {
+      "id": "4.373",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Biljetter köpta vid olika tillfällen. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Biljetter köpta vid olika tillfällen",
+      "level": 2,
+      "partLevels": [
+        2,
+        2,
+        1
+      ],
+      "answer": [
+        [
+          157.5,
+          32.69174207655505
+        ],
+        150,
+        150
+      ],
+      "answerDescription": "a) (157,5; 32,69); b) 150; c) 150",
+      "model": {
+        "id": "4.373",
+        "type": "weighted_data",
+        "values": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          150,
+          150,
+          150,
+          150,
+          150,
+          150,
+          150,
+          150,
+          150,
+          150,
+          210,
+          210,
+          210,
+          210,
+          210
+        ],
+        "prices": [
+          120,
+          150,
+          210
+        ],
+        "counts": [
+          5,
+          10,
+          5
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "spelDelning",
+        "spelIntro",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarsstruktur",
+        "spelDelar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "801a9aa790cb3a7f8c4d28dde47a5861eeef201a7a346efc28d39c53aa6c725b"
+    },
+    {
+      "id": "4.374",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Vilka mått ändras inte?. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Vilka mått ändras inte?",
+      "level": 3,
+      "partLevels": [],
+      "answer": null,
+      "answerDescription": "Variationsbredd / Kvartilavstånd / Standardavvikelse σx",
+      "model": {
+        "id": "4.374",
+        "type": "invariants",
+        "A": [
+          3,
+          5,
+          8,
+          9
+        ],
+        "B": [
+          -1,
+          1,
+          4,
+          5
+        ]
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "alternativ",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "89df495526f3b00515031627b5c2377837c27d031389b4dd6933c279a3461395"
+    },
+    {
+      "id": "4.375",
+      "status": "Tillagd",
+      "comment": "Ny uppgift: Hitta en möjlig datamängd. Tabell/figur, facit, nivå och självrättning är granskade.",
+      "title": "Hitta en möjlig datamängd",
+      "level": 3,
+      "partLevels": [],
+      "answer": null,
+      "answerDescription": "1, 6, 7, 8, 8",
+      "model": {
+        "id": "4.375",
+        "type": "choose_data",
+        "lists": [
+          [
+            1,
+            6,
+            7,
+            8,
+            8
+          ],
+          [
+            2,
+            4,
+            7,
+            8,
+            8
+          ],
+          [
+            1,
+            6,
+            6,
+            8,
+            9
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            9
+          ]
+        ],
+        "mean": 6,
+        "median": 7,
+        "mode": 8
+      },
+      "changedFields": [
+        "familj",
+        "självrättning",
+        "arbetsinsats",
+        "geogebra",
+        "kap",
+        "svarFormat",
+        "s",
+        "omr",
+        "ledtrad",
+        "alternativ",
+        "id",
+        "formaga",
+        "t",
+        "svarEnhet",
+        "miniräknare",
+        "rättSvar",
+        "svarstyp",
+        "tolerans",
+        "poang",
+        "typ",
+        "spel",
+        "svarEtiketter",
+        "niva",
+        "kurs",
+        "traningsniva"
+      ],
+      "beforeLevel": null,
+      "sha256": "72919b9ec051a06426136e25b74270a2f82fa25198f2eb2cd09ba271b9989fdc"
+    },
+    {
+      "id": "4.40",
+      "status": "Reviderad",
+      "comment": "Omvänd percentilfråga med tabell: bestäm percentilen från antalet ovanför gränsen. Svar 84 i stället för tidigare antalsfråga.",
+      "title": "Percentil från antal över gränsen",
+      "level": 2,
+      "partLevels": [],
+      "answer": 84,
+      "answerDescription": "84",
+      "model": {
+        "id": "4.40",
+        "type": "inverse_count",
+        "N": 250,
+        "above": 40
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "rättSvar",
+        "poang",
+        "svarEtiketter",
+        "typ"
+      ],
+      "beforeLevel": 2,
+      "sha256": "6d7c955b94f2f52da0faa0a7bde72066643bb7e99db884fe86b63d6d1ab41db8"
+    },
+    {
+      "id": "4.48",
+      "status": "Reviderad",
+      "comment": "Läs P95 i en tabell och beräkna antalet över gränsen. Svaret 30 behålls; nivån höjs från 1 till 2.",
+      "title": "Antal över en tabellpercentil",
+      "level": 2,
+      "partLevels": [],
+      "answer": 30,
+      "answerDescription": "30",
+      "model": {
+        "id": "4.48",
+        "type": "count_above",
+        "N": 600,
+        "percentile": 95
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "svarEnhet",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "4f0efc79039551004b2e744cc25b5ac42362e9b661116dd5eab056f3c96a9449"
+    },
+    {
+      "id": "4.63",
+      "status": "Reviderad",
+      "comment": "Frekvenstabell ersätter en rå lista. Kvartiler och median blir 4, 8 och 10; nivå 2 i alla delar.",
+      "title": "Kvartiler från frekvenstabell",
+      "level": 2,
+      "partLevels": [
+        2,
+        2,
+        2
+      ],
+      "answer": [
+        4,
+        8,
+        10
+      ],
+      "answerDescription": "a) 4; b) 8; c) 10",
+      "model": {
+        "id": "4.63",
+        "type": "quartiles_frequency",
+        "values": [
+          2,
+          4,
+          4,
+          8,
+          8,
+          10,
+          10,
+          16
+        ]
+      },
+      "changedFields": [
+        "svarEnhet",
+        "spelDelar",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "t",
+        "formaga",
+        "rättSvar",
+        "poang",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "99c22b5624c49a0a967b28cdd3c6ca78c2ab1c546a2f4e2feb38ffdd81f6ce84"
+    },
+    {
+      "id": "4.71",
+      "status": "Reviderad",
+      "comment": "Prickdiagram ersätter en rå lista. Median 4; Q1, Q3 och kvartilavstånd får namngivna fält: 2, 7 och 5. Nivå 2.",
+      "title": "Kvartiler från prickdiagram",
+      "level": 2,
+      "partLevels": [
+        2,
+        2
+      ],
+      "answer": [
+        4,
+        [
+          2,
+          7,
+          5
+        ]
+      ],
+      "answerDescription": "a) 4; b) (2; 7; 5)",
+      "model": {
+        "id": "4.71",
+        "type": "quartiles_dots",
+        "values": [
+          1,
+          2,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "changedFields": [
+        "svarEnhet",
+        "spelDelar",
+        "tolerans",
+        "självrättning",
+        "svarFormat",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "t",
+        "formaga",
+        "rättSvar",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "9a9a41989bfc86664e165a09dbc621c323db20da8225ee64ffc11558ad423975"
+    },
+    {
+      "id": "4.78",
+      "status": "Reviderad",
+      "comment": "Percentilbegreppet prövas med löneuppgift och tabell. Alternativen skiljer andel från antal och andel av maxvärdet. Nivå 1 behålls.",
+      "title": "Tolka en lönepercentil",
+      "level": 1,
+      "partLevels": [],
+      "answer": null,
+      "answerDescription": "Ungefär 80 % har en månadslön på högst 32 000 kr.",
+      "model": {
+        "id": "4.78",
+        "type": "interpret_percentile",
+        "p": 80,
+        "value": 32000
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "alternativ",
+        "svarFormat",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "svarEtiketter",
+        "typ"
+      ],
+      "beforeLevel": 1,
+      "sha256": "58a0d6e0538e8d9f924007a24ee580efe2a7bd828043f18a65a92d1e082a0997"
+    },
+    {
+      "id": "4.98",
+      "status": "Reviderad",
+      "comment": "Direkt koppling mellan Q1 och P25 i tabell ersätter ytterligare en nästan likadan definitionsfråga. Svar 18, nivå 1.",
+      "title": "Kvartil som percentil",
+      "level": 1,
+      "partLevels": [],
+      "answer": 18,
+      "answerDescription": "18",
+      "model": {
+        "id": "4.98",
+        "type": "quartile_as_percentile",
+        "quartiles": [
+          18,
+          25,
+          40
+        ]
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "alternativ",
+        "tolerans",
+        "svarFormat",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "rättSvar",
+        "svarstyp",
+        "svarEtiketter",
+        "typ"
+      ],
+      "beforeLevel": 1,
+      "sha256": "58a00974a6eae67e29668e163ea2014296ae2ed092d07eaf3929c3cf4200d14e"
+    },
+    {
+      "id": "4.202",
+      "status": "Reviderad",
+      "comment": "Frågar efter antalet mellan P20 och P80 i stället för ännu en övre svans. Svar 180; nivå 2.",
+      "title": "Antal mellan två percentiler",
+      "level": 2,
+      "partLevels": [],
+      "answer": 180,
+      "answerDescription": "180",
+      "model": {
+        "id": "4.202",
+        "type": "between_percentiles",
+        "N": 300,
+        "p": [
+          20,
+          80
+        ]
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "miniräknare",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "rättSvar",
+        "svarEtiketter",
+        "typ"
+      ],
+      "beforeLevel": 2,
+      "sha256": "f603c2a2d7e61bc5069e44c44360882e333435857d4bb06dec8603cbe1043122"
+    },
+    {
+      "id": "4.208",
+      "status": "Reviderad",
+      "comment": "En enkel omvänd kvartilfråga med tabell: Q1 + kvartilavstånd = Q3. Svar 27; nivå 1.",
+      "title": "Övre kvartil från kvartilavstånd",
+      "level": 1,
+      "partLevels": [],
+      "answer": 27,
+      "answerDescription": "27",
+      "model": {
+        "id": "4.208",
+        "type": "missing_quartile",
+        "Q1": 15,
+        "IQR": 12
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "miniräknare",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "rättSvar",
+        "poang",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 2,
+      "sha256": "993d49ae44eaa59c856f1472f50ce7adf57fd8dd72c01a5c9237642fd5023c4d"
+    },
+    {
+      "id": "4.92",
+      "status": "Reviderad",
+      "comment": "Percentil och deltagarantal får tabell. Svaret 78 behålls; två beräkningssteg ger nivå 2.",
+      "title": "Antal över percentilgräns",
+      "level": 2,
+      "partLevels": [],
+      "answer": 78,
+      "answerDescription": "78",
+      "model": {
+        "id": "4.92",
+        "type": "count_above",
+        "N": 600,
+        "percentile": 87
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "svarEnhet",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "00910baebe5f917497b85eb4d5112ef26f1f024d58187a56e5fbcf6f33d9c704"
+    },
+    {
+      "id": "4.171",
+      "status": "Reviderad",
+      "comment": "Nytt sammanhang med löptider: antal under P8 i stället för antal över P92. Svaret 68 behålls; nivå 2.",
+      "title": "Snabba tider i ett lopp",
+      "level": 2,
+      "partLevels": [],
+      "answer": 68,
+      "answerDescription": "68",
+      "model": {
+        "id": "4.171",
+        "type": "count_below",
+        "N": 850,
+        "percentile": 8
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "svarEnhet",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "b4bf40bd9793597baa74c9ac35fee959f167eb81b9d8d5dfddcb51c40dae15bf"
+    },
+    {
+      "id": "4.183",
+      "status": "Reviderad",
+      "comment": "Tabell för placering och deltagarantal. Svaret P90 behålls; omvänd procent-/percentilberäkning får nivå 2.",
+      "title": "Andel under en resultatgräns",
+      "level": 2,
+      "partLevels": [],
+      "answer": 90,
+      "answerDescription": "90",
+      "model": {
+        "id": "4.183",
+        "type": "inverse_count",
+        "N": 320,
+        "above": 32
+      },
+      "changedFields": [
+        "arbetsinsats",
+        "svarEnhet",
+        "tolerans",
+        "s",
+        "ledtrad",
+        "t",
+        "formaga",
+        "svarEtiketter",
+        "typ",
+        "traningsniva"
+      ],
+      "beforeLevel": 1,
+      "sha256": "673f0bee252150b814509ae9a2bb893c12caf3c27145fb687b4c44bf8a790123"
+    }
+  ]
+}
