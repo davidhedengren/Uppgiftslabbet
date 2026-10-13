@@ -31,10 +31,10 @@
       "status": "Åtgärdad – formulering/facit",
       "comment": "Frågan använder nu ”konstant lösning”. Det tidigare begreppet krävde förkunskap som inte behövs för uppgiften. Svaret är fortfarande y(x)=3.",
       "changedFields": [
+        "typ",
         "ledtrad",
         "s",
-        "t",
-        "typ"
+        "t"
       ],
       "answer": 3,
       "level": 1,
@@ -47,10 +47,10 @@
       "status": "Åtgärdad – formulering/facit",
       "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
       "changedFields": [
+        "typ",
         "ledtrad",
         "s",
-        "t",
-        "typ"
+        "t"
       ],
       "answer": 2.5,
       "level": 2,
@@ -77,8 +77,8 @@
       "status": "Åtgärdad – formulering/facit",
       "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
       "changedFields": [
-        "svarEtiketter",
-        "t"
+        "t",
+        "svarEtiketter"
       ],
       "answer": [
         0,
@@ -133,8 +133,8 @@
       "changedFields": [
         "ledtrad",
         "s",
-        "svarEtiketter",
-        "t"
+        "t",
+        "svarEtiketter"
       ],
       "answer": [
         [
@@ -156,8 +156,8 @@
       "changedFields": [
         "ledtrad",
         "s",
-        "svarEtiketter",
-        "t"
+        "t",
+        "svarEtiketter"
       ],
       "answer": [
         [
@@ -176,12 +176,12 @@
       "status": "Åtgärdad – formulering/facit",
       "comment": "Benämningen är ändrad till indirekt bevis. Facit förklarar att denna variant kallas kontraposition. Uppgiften har även flyttats från induktionsbevis till indirekta bevis.",
       "changedFields": [
-        "ledtrad",
-        "s",
-        "t",
-        "omr",
         "familj",
-        "familjTidigare"
+        "ledtrad",
+        "familjTidigare",
+        "s",
+        "omr",
+        "t"
       ],
       "answer": "B",
       "level": 1,
@@ -349,11 +349,11 @@
       "status": "Åtgärdad – formulering/facit",
       "comment": "C-kortet är omskrivet till en fristående fråga om en fjäder med fjäderkonstanten 350 N/m som dras ut med 28 N. Svaret är 0,08 m, alltså 8 cm. Samma förenkling har gjorts i a- och b-korten.",
       "changedFields": [
+        "typ",
         "s",
-        "t",
-        "spelDelar",
         "spelIntro",
-        "typ"
+        "spelDelar",
+        "t"
       ],
       "answer": [
         30,
