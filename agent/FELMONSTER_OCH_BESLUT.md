@@ -704,3 +704,11 @@ Skydd: `tools/ma2-statistik-referenser.test.js` gör oberoende beräkningar, utt
 Vanlig skolavrundning av positiva tal används fortsatt, även vid intervallgränser. Återinför inte regelpåminnelser i frågorna; förklaringar finns i facit. Efterfrågad precision ska stå kvar. #0.186/#0.203/#7.500 är granskade utan fel: avrundningsmetoderna finns där som innehåll att bedöma, inte som extra hjälptext. Ta inte bort deras alternativ. Ändra inte heller givna situationsvillkor om uppåt-/nedåtavrundning.
 
 Kontroll: endast de fem `t`-fälten skiljer sig från föreversionen; 29 befintliga regressionstester, 12 verkliga svarsinmatningar och 24 elev-/lärarvyer passerar. Exakta decimalberäkningar verifierar 2,675→2,68 och manuella intervallfacit. Dubbelavrundningen i #0.592 kontrolleras också på 10 000 decimalvärden, utöver gränsargumentet. Ingen generell tolerans ändras och inga rapportstatusar sparas i appen.
+
+## KG01 – fristående önskemål och allmänna appproblem (2026-10-13)
+
+[Genomförande, tester, aktivering och kommentarsförslag](KUNSKAPSGYMMET_ONSKEMAL_2026-10-13.md). Funktionsönskemål inkom via matf1 #1.622; det är ingen matematisk felrapport. ”Skicka in önskemål” finns i Kunskapsgymmets kontomeny utan krav på aktuell uppgift. Alla inloggade användare kan skicka, även elever och vanliga lärare. Admin får en separat lista med status, valfri inlinekommentar, filtrering och kopierbar logg. Användaren kan läsa sina egna inskick och återkoppling.
+
+Databasen använder `kg_private.onskemal` och serverbehöriga RPC:er. Behåll avgränsningen: endast admin får läsa/granska hela listan, användare får endast egna rader. Kontobyte rensar listor, utkast och modalvyer. Behåll dubblettskydd vid nätverksförsök och fungerande tom kommentar. Inga inskick ska kopplas till ett godtyckligt uppgifts-ID eller ge XP/felrapportsbonus. Visa bekräftelse bara efter ett lyckat serversvar.
+
+Aktivering kräver `kunskapsgymmet/sql/2026-10-13-onskemal.sql` i Supabase. SQL är lokalt testad men inte körd i produktion av agenten. Skydd: konsumentens `tools/onskemal.test.js`, `tools/onskemal.integration.js` och `tools/onskemal.browser.py`. Ingen bankändring, rapportstatus eller elevkommentar har sparats genom arbetet.
