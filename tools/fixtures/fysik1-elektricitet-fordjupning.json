@@ -1,0 +1,164 @@
+[
+  {
+    "id": "8.518",
+    "level": 3,
+    "type": "contacts",
+    "charges": [
+      12,
+      -4,
+      0
+    ],
+    "contacts": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "id": "8.519",
+    "level": 4,
+    "type": "null_force",
+    "charges": [
+      1.5e-09,
+      -6e-09
+    ],
+    "positions": [
+      0,
+      0.4
+    ]
+  },
+  {
+    "id": "8.520",
+    "level": 4,
+    "type": "vector_force",
+    "k": 8990000000.0,
+    "charges": [
+      2e-09,
+      3e-09,
+      -4e-09
+    ],
+    "positions": [
+      [
+        0,
+        0
+      ],
+      [
+        -0.2,
+        0
+      ],
+      [
+        0,
+        0.3
+      ]
+    ]
+  },
+  {
+    "id": "8.521",
+    "level": 3,
+    "type": "ground_order",
+    "orders": [
+      [
+        "ground",
+        "rod"
+      ],
+      [
+        "rod",
+        "ground"
+      ]
+    ]
+  },
+  {
+    "id": "8.522",
+    "level": 4,
+    "type": "cavity_ground",
+    "insideCharge": 6e-09
+  },
+  {
+    "id": "8.523",
+    "level": 3,
+    "type": "contact_force_ratio",
+    "charges": [
+      8,
+      -2
+    ],
+    "distance": 0.1
+  },
+  {
+    "id": "8.524",
+    "level": 4,
+    "type": "switch_inference",
+    "seriesR": 10,
+    "knownR": 30,
+    "currents": [
+      0.3,
+      0.6
+    ]
+  },
+  {
+    "id": "8.525",
+    "level": 4,
+    "type": "battery_inference",
+    "loads": [
+      5,
+      3
+    ],
+    "terminalVoltages": [
+      10,
+      9
+    ]
+  },
+  {
+    "id": "8.526",
+    "level": 3,
+    "type": "meter_loading",
+    "sourceU": 6,
+    "seriesR": 1000,
+    "loadR": 1000,
+    "meterR": 1000
+  },
+  {
+    "id": "8.527",
+    "level": 3,
+    "type": "wire_design",
+    "desiredPower": 25,
+    "heaterR": 4,
+    "wireRs": [
+      0.4,
+      0.4
+    ]
+  },
+  {
+    "id": "8.528",
+    "level": 4,
+    "type": "series_lamps",
+    "sourceU": 12,
+    "ratedU": [
+      6,
+      6
+    ],
+    "ratedP": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "8.529",
+    "level": 5,
+    "type": "balanced_bridge",
+    "sourceU": 12,
+    "leftRs": [
+      6,
+      3
+    ],
+    "rightLowerR": 4
+  }
+]

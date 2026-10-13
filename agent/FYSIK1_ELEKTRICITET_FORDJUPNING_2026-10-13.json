@@ -1,0 +1,503 @@
+{
+  "date": "2026-10-13",
+  "added": [
+    "8.518",
+    "8.519",
+    "8.520",
+    "8.521",
+    "8.522",
+    "8.523",
+    "8.524",
+    "8.525",
+    "8.526",
+    "8.527",
+    "8.528",
+    "8.529"
+  ],
+  "reviewed": [
+    "8.518",
+    "8.519",
+    "8.520",
+    "8.521",
+    "8.522",
+    "8.523",
+    "8.524",
+    "8.525",
+    "8.526",
+    "8.527",
+    "8.528",
+    "8.529"
+  ],
+  "fixedExisting": [],
+  "reviewedNoErrorExisting": [],
+  "reportStatusesSaved": false,
+  "tasks": [
+    {
+      "id": "8.518",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 3,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "procedur"
+      ],
+      "title": "Tre kontakter mellan metallkulor",
+      "area": "laddning",
+      "answer": [
+        3,
+        2,
+        3
+      ],
+      "unit": [
+        "nC",
+        "nC",
+        "nC"
+      ],
+      "tolerance": [
+        0,
+        0,
+        0
+      ],
+      "levelReason": "Laddningens bevarande måste följas genom tre kontakter, med rätt oförändrad tredje kula i varje skede. Svårigheten är att följa processen, inte själva divisionen.",
+      "model": {
+        "id": "8.518",
+        "level": 3,
+        "type": "contacts",
+        "charges": [
+          12,
+          -4,
+          0
+        ],
+        "contacts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "5c32935bca223f70b0891b948f75151efaef8f605bba1d0ac236f0b3c21333dd"
+    },
+    {
+      "id": "8.519",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "problemlösning",
+        "resonemang",
+        "procedur"
+      ],
+      "title": "Var tar krafterna ut varandra?",
+      "area": "coulomb",
+      "answer": -0.4,
+      "unit": "m",
+      "tolerance": 0.005,
+      "levelReason": "Kraftriktningar måste prövas i tre områden innan storleksekvationen löses. En algebraisk rot mellan laddningarna är inte fysiskt giltig.",
+      "model": {
+        "id": "8.519",
+        "level": 4,
+        "type": "null_force",
+        "charges": [
+          1.5e-09,
+          -6e-09
+        ],
+        "positions": [
+          0,
+          0.4
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "63ddc73658f481b30947be87674e9b93fed0f7bb6b1cb3418dfb8e4ebd367d8f"
+    },
+    {
+      "id": "8.520",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "procedur"
+      ],
+      "title": "Två elektriska krafter i olika riktningar",
+      "area": "coulomb",
+      "answer": [
+        1.5674918876668018,
+        30.650667957052878
+      ],
+      "unit": [
+        "µN",
+        "°"
+      ],
+      "tolerance": [
+        0.05,
+        0.05
+      ],
+      "levelReason": "Attraktion och repulsion ger två vinkelräta komponenter. Eleven måste välja riktningar och förena Coulombs lag med vektorstorlek och vinkel.",
+      "model": {
+        "id": "8.520",
+        "level": 4,
+        "type": "vector_force",
+        "k": 8990000000.0,
+        "charges": [
+          2e-09,
+          3e-09,
+          -4e-09
+        ],
+        "positions": [
+          [
+            0,
+            0
+          ],
+          [
+            -0.2,
+            0
+          ],
+          [
+            0,
+            0.3
+          ]
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "b92ec6592ad34772f791dd68177e6cda9667ea76d53333ca8900d09c73199c98"
+    },
+    {
+      "id": "8.521",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 3,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "resonemang"
+      ],
+      "title": "Jordningen bryts i olika ordning",
+      "area": "laddning",
+      "answer": null,
+      "unit": null,
+      "tolerance": null,
+      "levelReason": "Två ordningsföljder jämförs. Eleven behöver avgöra när elektroner fortfarande kan återvända genom jordledningen.",
+      "model": {
+        "id": "8.521",
+        "level": 3,
+        "type": "ground_order",
+        "orders": [
+          [
+            "ground",
+            "rod"
+          ],
+          [
+            "rod",
+            "ground"
+          ]
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "b6b18cda9f920acfd54541e6ffa6e18d3be4036d381d00b8c9a605dc1826c1e8"
+    },
+    {
+      "id": "8.522",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "resonemang"
+      ],
+      "title": "En laddning lämnar en metallåda",
+      "area": "laddning",
+      "answer": -6,
+      "unit": "nC",
+      "tolerance": 0,
+      "levelReason": "Skiljer inducerad laddningsfördelning från nettoladdning och följer vad jordning, isolering och borttagning utan kontakt gör.",
+      "model": {
+        "id": "8.522",
+        "level": 4,
+        "type": "cavity_ground",
+        "insideCharge": 6e-09
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "3c5cc63e8055a9f0a1315b032547d9c7fb432662366ebbda10d46b249a7d62f1"
+    },
+    {
+      "id": "8.523",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 3,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "procedur"
+      ],
+      "title": "Kraften efter att kulorna har rört vid varandra",
+      "area": "coulomb",
+      "answer": 0.563,
+      "unit": null,
+      "tolerance": 0.0005,
+      "levelReason": "Kombinerar kontaktutjämning med laddningsprodukterna i Coulombs lag och skiljer kraftens storlek från dess riktning.",
+      "model": {
+        "id": "8.523",
+        "level": 3,
+        "type": "contact_force_ratio",
+        "charges": [
+          8,
+          -2
+        ],
+        "distance": 0.1
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "959d83846cfdff3e99e3d53fed77b2fd671eb2757047be9e2dde4c5781f94a39"
+    },
+    {
+      "id": "8.524",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "problemlösning",
+        "procedur"
+      ],
+      "title": "En strömbrytare avslöjar två okända värden",
+      "area": "kopplingar",
+      "answer": [
+        12,
+        15
+      ],
+      "unit": [
+        "V",
+        "Ω"
+      ],
+      "tolerance": [
+        0,
+        0
+      ],
+      "levelReason": "Två okända värden härleds ur två strömbrytarlägen. Eleven måste välja rätt kretsmodell i varje läge och använda öppen krets för att hitta källspänningen.",
+      "model": {
+        "id": "8.524",
+        "level": 4,
+        "type": "switch_inference",
+        "seriesR": 10,
+        "knownR": 30,
+        "currents": [
+          0.3,
+          0.6
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "00feb278add7a0b357bc294b83e6798a561b1fbb2f1e84f85788cf1b5db33035"
+    },
+    {
+      "id": "8.525",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "problemlösning",
+        "procedur"
+      ],
+      "title": "Batteriet provas med två belastningar",
+      "area": "kopplingar",
+      "answer": [
+        12,
+        1
+      ],
+      "unit": [
+        "V",
+        "Ω"
+      ],
+      "tolerance": [
+        0,
+        0
+      ],
+      "levelReason": "Två polspänningsmätningar ger strömmar som måste kopplas till samma ems och inre resistans. Två samband behövs, inte en direkt standardinsättning.",
+      "model": {
+        "id": "8.525",
+        "level": 4,
+        "type": "battery_inference",
+        "loads": [
+          5,
+          3
+        ],
+        "terminalVoltages": [
+          10,
+          9
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "6583bf676884a7b8a559a1a7eb05313e662119f2f4ac9bc2865da7070eda9f84"
+    },
+    {
+      "id": "8.526",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 3,
+      "grade": "C",
+      "ability": [
+        "begrepp",
+        "procedur"
+      ],
+      "title": "Voltmetern ändrar den spänning den mäter",
+      "area": "kopplingar",
+      "answer": [
+        2,
+        4
+      ],
+      "unit": [
+        "V",
+        "mA"
+      ],
+      "tolerance": [
+        0,
+        0
+      ],
+      "levelReason": "Mätaren är en del av kretsen och ändrar belastningen. Modellvalet är centralt; ideal-voltmeter-antagandet ger ett annat svar.",
+      "model": {
+        "id": "8.526",
+        "level": 3,
+        "type": "meter_loading",
+        "sourceU": 6,
+        "seriesR": 1000,
+        "loadR": 1000,
+        "meterR": 1000
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "44a6c6f9cc46f7d402599537bf486a5051e66ec14da2029d140e03e75de7eda5"
+    },
+    {
+      "id": "8.527",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 3,
+      "grade": "C",
+      "ability": [
+        "problemlösning",
+        "procedur"
+      ],
+      "title": "Vilken spänning behövs för värmaren?",
+      "area": "kopplingar",
+      "answer": [
+        12,
+        83.33333333333334
+      ],
+      "unit": [
+        "V",
+        "%"
+      ],
+      "tolerance": [
+        0.05,
+        0.05
+      ],
+      "levelReason": "En omvänd dimensioneringsfråga: effektkravet bestämmer strömmen, och båda ledningarnas spänningsfall måste tas med för att bestämma minsta källspänning.",
+      "model": {
+        "id": "8.527",
+        "level": 3,
+        "type": "wire_design",
+        "desiredPower": 25,
+        "heaterR": 4,
+        "wireRs": [
+          0.4,
+          0.4
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "c9764f61e37c35370c5a4e9955adcf3efcf7613570c2ec98aea6e15cae50fc9f"
+    },
+    {
+      "id": "8.528",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 4,
+      "grade": "C",
+      "ability": [
+        "problemlösning",
+        "procedur"
+      ],
+      "title": "Vilken lampa får högst effekt i serie?",
+      "area": "seriekoppling",
+      "answer": [
+        5.333333333333333,
+        2.6666666666666665
+      ],
+      "unit": [
+        "W",
+        "W"
+      ],
+      "tolerance": [
+        0.005,
+        0.005
+      ],
+      "levelReason": "Märkdata måste först omvandlas till resistans. Den faktiska seriebelastningen ger andra spänningar och effekter än märkdata.",
+      "model": {
+        "id": "8.528",
+        "level": 4,
+        "type": "series_lamps",
+        "sourceU": 12,
+        "ratedU": [
+          6,
+          6
+        ],
+        "ratedP": [
+          3,
+          6
+        ]
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "0531ca528c6e33a526ab744f6daed16b7bcaff9fd64cbad0a502d28e777f9e13"
+    },
+    {
+      "id": "8.529",
+      "course": "fy1",
+      "status": "Tillagd och granskad",
+      "level": 5,
+      "grade": "A",
+      "ability": [
+        "problemlösning",
+        "resonemang",
+        "procedur"
+      ],
+      "title": "Nollström i förbindelsen mellan grenarna",
+      "area": "kopplingar",
+      "answer": [
+        8,
+        2.3333333333333335
+      ],
+      "unit": [
+        "Ω",
+        "A"
+      ],
+      "tolerance": [
+        0.005,
+        0.005
+      ],
+      "levelReason": "Nollströmmen måste tolkas som lika potential vid mittpunkterna. Det gör grenarna beräkningsbara trots att kopplingen först inte är en enkel serie-/parallellförenkling.",
+      "model": {
+        "id": "8.529",
+        "level": 5,
+        "type": "balanced_bridge",
+        "sourceU": 12,
+        "leftRs": [
+          6,
+          3
+        ],
+        "rightLowerR": 4
+      },
+      "comment": "Ny uppgift med egen figur. Fråga, fysik, facit, nivå och självrättning är granskade.",
+      "sha256": "bd0f112baf04b0839bdc27b02c05ee9d19139f5f620050be5a58d7324845215a"
+    }
+  ]
+}
