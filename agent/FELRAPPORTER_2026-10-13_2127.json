@@ -1,0 +1,480 @@
+{
+  "date": "2026-10-13",
+  "reported": [
+    [
+      "matf1",
+      "4.326"
+    ],
+    [
+      "matf1",
+      "2.305"
+    ],
+    [
+      "matf1",
+      "2.541"
+    ],
+    [
+      "fy1",
+      "4.64",
+      "c"
+    ],
+    [
+      "matf1",
+      "1.478"
+    ]
+  ],
+  "reviewed": [
+    {
+      "course": "matf1",
+      "id": "4.326",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu ”konstant lösning”. Det tidigare begreppet krävde förkunskap som inte behövs för uppgiften. Svaret är fortfarande y(x)=3.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t",
+        "typ"
+      ],
+      "answer": 3,
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.346",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t",
+        "typ"
+      ],
+      "answer": 2.5,
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.123",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "s",
+        "t"
+      ],
+      "answer": null,
+      "level": 5,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.518",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "svarEtiketter",
+        "t"
+      ],
+      "answer": [
+        0,
+        4,
+        2
+      ],
+      "level": 4,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.109",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.135",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.138",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "svarEtiketter",
+        "t"
+      ],
+      "answer": [
+        [
+          0,
+          2
+        ],
+        null,
+        null
+      ],
+      "level": 4,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "4.174",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu konstanta lösningar och lösningen är kontrollerad.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "svarEtiketter",
+        "t"
+      ],
+      "answer": [
+        [
+          -2,
+          1
+        ],
+        null
+      ],
+      "level": 4,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.305",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Benämningen är ändrad till indirekt bevis. Facit förklarar att denna variant kallas kontraposition. Uppgiften har även flyttats från induktionsbevis till indirekta bevis.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t",
+        "omr",
+        "familj",
+        "familjTidigare"
+      ],
+      "answer": "B",
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.541",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis, och lösningen förklarar metoden. Rätt alternativ är fortfarande A.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": "A",
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.144",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis. Bevisets matematik och lösningen är kontrollerade.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": null,
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.148",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis. Bevisets matematik och lösningen är kontrollerade.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": null,
+      "level": 4,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.316",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis. Bevisets matematik och lösningen är kontrollerade.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": null,
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.572",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis. Bevisets matematik och lösningen är kontrollerade.",
+      "changedFields": [
+        "ledtrad",
+        "t"
+      ],
+      "answer": "D",
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "2.577",
+      "parts": null,
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "Frågan använder nu indirekt bevis. Bevisets matematik och lösningen är kontrollerade.",
+      "changedFields": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "answer": "C",
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.478",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Ett extra avslutande kommatecken eller semikolon godtas nu i mängdsvar. Både {3,4}, och 3,4, fungerar. Saknade eller extra element blir fortfarande fel.",
+      "changedFields": [],
+      "answer": "{3,4}",
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.474",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Mängdens element är korrekta. Självrättningen godtar nu ett extra avslutande listskiljetecken.",
+      "changedFields": [],
+      "answer": "{1,3,5,7}",
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.475",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Mängdens element är korrekta. Självrättningen godtar nu ett extra avslutande listskiljetecken.",
+      "changedFields": [],
+      "answer": "{2,3,4,5,6}",
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.479",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Mängdens element är korrekta. Självrättningen godtar nu ett extra avslutande listskiljetecken.",
+      "changedFields": [],
+      "answer": "{1,2,3,4,5}",
+      "level": 1,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.480",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Mängdens element är korrekta. Självrättningen godtar nu ett extra avslutande listskiljetecken.",
+      "changedFields": [],
+      "answer": "{1,3,5}",
+      "level": 2,
+      "partLevels": []
+    },
+    {
+      "course": "matf1",
+      "id": "1.146",
+      "parts": null,
+      "status": "Åtgärdad – självrättning",
+      "comment": "Mängdens element är korrekta. Självrättningen godtar nu ett extra avslutande listskiljetecken.",
+      "changedFields": [],
+      "answer": "{1,2,5,6}",
+      "level": 3,
+      "partLevels": []
+    },
+    {
+      "course": "fy1",
+      "id": "4.64",
+      "parts": "alla",
+      "status": "Åtgärdad – formulering/facit",
+      "comment": "C-kortet är omskrivet till en fristående fråga om en fjäder med fjäderkonstanten 350 N/m som dras ut med 28 N. Svaret är 0,08 m, alltså 8 cm. Samma förenkling har gjorts i a- och b-korten.",
+      "changedFields": [
+        "s",
+        "t",
+        "spelDelar",
+        "spelIntro",
+        "typ"
+      ],
+      "answer": [
+        30,
+        180,
+        0.08
+      ],
+      "level": 2,
+      "partLevels": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "course": "fy1",
+      "id": "4.20",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Alla delkort har nödvändiga givna uppgifter. Fjäderberäkningarna och självrättningen är kontrollerade utan att något fel hittats.",
+      "changedFields": [],
+      "answer": [
+        2.46,
+        61.38,
+        9.78,
+        0.63
+      ],
+      "level": 2,
+      "partLevels": [
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "course": "fy1",
+      "id": "4.63",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Alla delkort har nödvändiga givna uppgifter. Fjäderberäkningarna och självrättningen är kontrollerade utan att något fel hittats.",
+      "changedFields": [],
+      "answer": [
+        29.46,
+        29.46,
+        4.91,
+        15.09
+      ],
+      "level": 2,
+      "partLevels": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "course": "fy1",
+      "id": "4.65",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Alla delkort har nödvändiga givna uppgifter. Fjäderberäkningarna och självrättningen är kontrollerade utan att något fel hittats.",
+      "changedFields": [],
+      "answer": [
+        80,
+        20,
+        37.5,
+        1.63
+      ],
+      "level": 2,
+      "partLevels": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "course": "fy1",
+      "id": "4.73",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Alla delkort har nödvändiga givna uppgifter. Fjäderberäkningarna och självrättningen är kontrollerade utan att något fel hittats.",
+      "changedFields": [],
+      "answer": [
+        6,
+        4.91,
+        81.83,
+        34.4
+      ],
+      "level": 2,
+      "partLevels": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "course": "fy1",
+      "id": "4.181",
+      "parts": "alla",
+      "status": "Granskad – inget fel",
+      "comment": "Alla delkort har nödvändiga givna uppgifter. Fjäderberäkningarna och självrättningen är kontrollerade utan att något fel hittats.",
+      "changedFields": [],
+      "answer": [
+        4.91,
+        16.37,
+        10.91,
+        27.28
+      ],
+      "level": 3,
+      "partLevels": [
+        2,
+        2,
+        2,
+        3
+      ]
+    }
+  ],
+  "changedBankTasks": 16,
+  "parserChanged": true,
+  "reportStatusesSaved": false,
+  "note": "Granskning av fem rapporter och 22 jämförelseuppgifter. Matematik, texter och relevanta kort/svarsfält ingår. Befintlig SVG-geometri är oförändrad; någon ny geometrisk figurgranskning har inte gjorts."
+}

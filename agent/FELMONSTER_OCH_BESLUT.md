@@ -712,3 +712,13 @@ Kontroll: endast de fem `t`-fälten skiljer sig från föreversionen; 29 befintl
 Databasen använder `kg_private.onskemal` och serverbehöriga RPC:er. Behåll avgränsningen: endast admin får läsa/granska hela listan, användare får endast egna rader. Kontobyte rensar listor, utkast och modalvyer. Behåll dubblettskydd vid nätverksförsök och fungerande tom kommentar. Inga inskick ska kopplas till ett godtyckligt uppgifts-ID eller ge XP/felrapportsbonus. Visa bekräftelse bara efter ett lyckat serversvar.
 
 Aktivering kräver `kunskapsgymmet/sql/2026-10-13-onskemal.sql` i Supabase. SQL är lokalt testad men inte körd i produktion av agenten. Skydd: konsumentens `tools/onskemal.test.js`, `tools/onskemal.integration.js` och `tools/onskemal.browser.py`. Ingen bankändring, rapportstatus eller elevkommentar har sparats genom arbetet.
+
+## FP42 – begripliga bevisbegrepp, konstanta lösningar och mängdskiljetecken (2026-10-13)
+
+[Fem rapporter, alla 27 granskade uppgifter och kommentarsförslag](FELRAPPORTER_2026-10-13_2127.md), även som JSON. Matf1 #4.326 frågar nu efter en konstant lösning; ytterligare sju frågor förtydligas. Matf1 #2.305/#2.541 använder indirekt bevis och facit förklarar kontraposition; fem analoga bevisfrågor följs upp. Kontraposition är en variant av indirekt bevis och ska inte felaktigt likställas med samma metod som motsägelsebevis. #2.305 hör till indirekta bevis, inte induktionsbevis. Matematiska slutsvar är oförändrade.
+
+Fy1 #4.64:s a/b/c är självständiga fjäderfrågor utan en onödig hänvisning till tre andra fjädrar; egna förklaringar och enheter följer med. c ger 28/350=0,08 m och har nivå 1 som direkt beräkning. Bevara tidigare FP34: inga allmänna fysikkonstanter eller färdiga formelledningar återinförs i frågan.
+
+Matf1 #1.478 och fem andra mängdfrågor får tolerant hantering av ett avslutande komma/semikolon i explicit mängdformat, t.ex. {3,4}, eller 3,4,. Rätt element krävs fortfarande; saknade/extra element avvisas. Avgränsa ändringen till mängd-/lösningsmängdsformatet och ändra inte generellt tal, koordinater eller numeriska toleranser. {3,4,} godtogs redan. Tre för långa mobilformler i #4.123/#2.144/#2.148 delas med alla mellanled kvar.
+
+Skydd: master `tools/felrapporter-2026-10-13-2127.test.js` och konsument `tools/felrapporter-2026-10-13-2127.browser.py`; 30 riktade mastertester, 150 konsumenttester, 125 svarskombinationer och 128 vyer. Ingen rapportstatus eller elevkommentar har sparats genom Git-pushen.
