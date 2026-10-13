@@ -618,3 +618,33 @@ Kontrollera fysisk lutning med båda axlarnas skalor, särskilt ms/s, min/s och 
 Behåll nödvändiga situations- och experimentdata, materialvärden, fjäderkonstanter, modellplaneters g, lokala jämförelsevärden, riktning och fysikaliska villkor. En formel som eleven ska kritisera eller härleda är själva uppgiften och ska inte raderas. Granska träffar i sammanhanget; radera inte efter en bred regex på ”konstant”, ”=” eller ”använd”. Nivåer höjs inte automatiskt för att eleven söker en formel.
 
 Åtta fy1-uppgifter har särskilt beräknade `svarTabell` per fält. Samma enhet, format och tolerans används för varje mål; inga generella toleranser vidgas. Vid uppdelning följer varianten rätt etikett. Ett delkort med egna `rättSvar`/mellanresultat måste ange egna varianter. `svarsPlan` måste koppla heluppgiftens tabellvariant till aktuell del. FP26 kompletteras eftersom givet G tas bort: 4.74/4.740/4.742 måste godta de två vanliga G-värdenas avrundningar. Kontrollera också olika cal-/hk-omvandlingar och partikelkonstanter. Skydd: master `tools/fysik-formelsamling.test.js` och konsumentens `tools/tabellkonstanter.test.js`/`tools/fysik-formelsamling.browser.py`.
+
+## FP35 – LaTeX-lg och korrekt avrundade sannolikheter (2026-10-13)
+
+[19 rapporter, alla 107 granskade ID, ändrade fält och kommentarsförslag](FELRAPPORTER_2026-10-13.md), även i JSON. `latexToPlain` ska normalisera `\lg` precis som ln/log även när argumentet följer direkt: ma2 #2.219 och fem analoger. Ändra inte rätt facit för att kringgå parserfelet.
+
+Vid sannolikhetsformatet godtas exakta uttryck och korrekt avrundade decimaler/procent med minst två värdesiffror. Ett symmetriskt halvt avrundningsintervall godkände tidigare båda grannvärdena vid exakt mittpunkt: 1/16 ska bli 0,063, inte 0,062. Jämför med det faktiskt avrundade målet och en relativ flyttalsmarginal; en absolut epsilon får inte godkänna noll för små sannolikheter. Bevara explicit tolerans. Numeriska decimalsträngar ska visas lika avrundat som numeriska facit; exakta bråk ska behålla bråkformen. Ändra inte alla exakta bråk till decimaltal. Rapporterna saknar elevens exakta inmatning, så ett bekräftat parserfynd bevisar inte alltid orsaken till just elevens historiska fel.
+
+## FP36 – primtalsfaktorisering kräver primtal men potenser är valfria (2026-10-13)
+
+Matf1 #2.79/#2.157/#2.209 använder `primtalsfaktorisering`. Upprepade faktorer, ändrad faktorordning och positiva heltalspotenser är likvärdiga. Enbart ursprungstalet eller sammansatta faktorer är fel form, även om uttryckets numeriska värde stämmer. Formatet ska fånga svaret före generell uttrycksekvivalens och läsa hela inmatningen. Noll/negativa exponenter, addition och division ska inte smita igenom. SGD/MGM behåller numeriskt svar: att en metod använder primtalsfaktorisering innebär inte att slutsvaret måste ha denna form. Kompletterar FP03, ingen tidigare rättning tas bort.
+
+## FP37 – fasvinklar, namngivna fält och fullständiga delkort (2026-10-13)
+
+Mato2 #1.131/#1.81/#1.149 anger grader och avrundning när fasvinkeln inte är en standardvinkel. Bestäm R och v i tydliga fält; kontrollera R cos v och R sin v mot originalkoefficienterna. Bevara exakta radianer när uppgiften uttryckligen tränar dem. Flytta inte slentrianmässigt alla vinkeluppgifter till grader. #1.81 ligger nu i asinx_bcosx och ska inte flyttas tillbaka till radianernas kurvområde enbart på grund av äldre metadata.
+
+En del med `svarsstruktur:"ordnad"` måste rätta sina inre fält i ordning också i heluppgiften; parentens a/b-etiketter bestämmer inte automatiskt ordningen på en nästlad lösningsmängd. R/v och max/min är ordnade; två ekvationsrötter och asymptoter kan vara oordnade. Använd konsumentens etablerade `svarsstruktur:"mängd"` för fria rötter, inte den okända strängen ”oordnad”. Fragment som ”medellinje och” ska bli kompletta frågor i både huvudtext och kort. Varje delfacit ska förklara just den delen utan att blanda in andra svar.
+
+## FP38 – verklig variation och balanserad repetition (2026-10-13)
+
+Mato1 #1.99 hade korrekt facit men flera andra ID:n innehöll samma kontinuitetsproblem. ID-spärrar räcker inte mot innehållskopior. Fem funktioner har varierats med självständigt verifierade gränsvärden, inklusive faktor2 i nämnaren och tredjegrad (C/nivå3).
+
+Urvalet ska använda hela `passHistory`, inte enbart de senaste60 `lastIds`. Så länge ett tillgängligt kort inte visats ska det prioriteras före repetition. När hela poolen visats väljs bland korten med minst antal visningar i passet; undvik också direkt återkomst om alternativ finns. Felsvarskön får fortfarande repetera av pedagogiska skäl. Bakåtträning ska fortsatt ge0XP och får inte logga nya resultat. Ändra inte facit eller alla nivåer för att dölja ett urvalsproblem. Historiska elevpass kan inte förklaras säkert utan deras faktiska urval och svar.
+
+## FP39 – båda linjevillkoren och begripliga nybörjarbegrepp (2026-10-13)
+
+Ma2 #1.54/#1.347 är korrekta: vinkelrätheten bestämmer lutningen och den angivna punkten bestämmer m=9 respektive−1. Godkänn inte godtyckligt m när punkten är ett villkor. Föreslå **Granskad – inget fel** även om texten förtydligas. Matf1 #1.164:s union36 var rätt; konferensens ”föredrag” i #1.77 var också korrekt och betyder presentation, inte företag.
+
+Säkerhetsfaktor måste definieras i Ma1:s enkla tillämpningsuppgifter. Tillåten last beräknas med division, nödvändig kapacitet med multiplikation. ”Frakt295kr. Total?” blir hela meningar och en tydlig fråga om kostnaden inklusive frakt. En enkel introduktionsuppgift får vara nivå1, men en ledning som uttryckligen ger hela svaret ska tas bort.
+
+Skydd för FP35–39: master `tools/felrapporter-2026-10-13.test.js`, konsument `tools/felrapporter-2026-10-13.test.js` och `tools/felrapporter-2026-10-13.browser.py`, samt tidigare delkort-, exakt-tal-, kelvin-/tabellvariant- och passhistoriktester. Inga rapportstatusar eller elevkommentarer sparas genom Git-pushen.

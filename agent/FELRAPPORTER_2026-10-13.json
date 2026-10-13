@@ -1,0 +1,1786 @@
+{
+  "date": "2026-10-13",
+  "scope": "19 rapporter och avgränsade analoggranskningar; ingen fullständig granskning av dessa fem banker",
+  "reports": [
+    {
+      "course": "matf1",
+      "id": "1.15",
+      "part": "a",
+      "status": "Åtgärdad",
+      "comment": "Frågan skiljer nu tydligt mellan talet 2 och mängden {2}. Lösningen förklarar varför påståendet är falskt."
+    },
+    {
+      "course": "matf1",
+      "id": "1.347",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Frågan och ledtråden är förtydligade. De som väljer båda räknas en gång: 36 + 31 − 8 = 59."
+    },
+    {
+      "course": "matf1",
+      "id": "1.164",
+      "part": "a",
+      "status": "Granskad – inget fel",
+      "comment": "Facit 36 är korrekt: 18 + 7 + 11. De 4 utanför cirklarna ingår inte i unionen. Frågan och förklaringen har förtydligats."
+    },
+    {
+      "course": "mato2",
+      "id": "1.149",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Alternativen visar nu vinkeln i grader med en decimal. Rätt alternativ är fortfarande B."
+    },
+    {
+      "course": "mato2",
+      "id": "1.131",
+      "part": "b",
+      "status": "Åtgärdad",
+      "comment": "Det står nu att v ska anges i grader med en decimal. R och v har egna svarsfält: R = 13, v ≈ −67,4°."
+    },
+    {
+      "course": "mato2",
+      "id": "1.59",
+      "part": "b",
+      "status": "Åtgärdad",
+      "comment": "Det överblivna ordet är borttaget. Frågan är nu: Bestäm en ekvation för funktionens medellinje. Svaret är y = 2."
+    },
+    {
+      "course": "matf1",
+      "id": "1.727",
+      "part": "a",
+      "status": "Åtgärdad",
+      "comment": "Facit visas nu avrundat. Korrekt avrundade svar med minst två värdesiffror godtas, exempelvis 0,16 eller 15,5 %. Det tidigare sannolikhetsvärdet var korrekt."
+    },
+    {
+      "course": "matf1",
+      "id": "1.77",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Föredrag betyder en presentation och var korrekt i konferenssituationen. Texten använder nu presentationer. AB räknas som ett block, så antalet är 5! = 120."
+    },
+    {
+      "course": "matf1",
+      "id": "1.625",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Miniräknare är nu tillåten. Varje bokstavsplats har 6 val, så antalet koder är 6⁴ = 1 296."
+    },
+    {
+      "course": "mato1",
+      "id": "1.99",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Flera likadana kontinuitetsuppgifter har varierats, och urvalet undviker återkomst tills alternativen har använts. När urvalet är slut fördelas repetitionerna jämnt. Extra repetition av felsvar är avsiktlig."
+    },
+    {
+      "course": "mato1",
+      "id": "4.495",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Ledningen som gav hela svaret har tagits bort. Uppgiften är kvar som en enkel introduktion på nivå 1."
+    },
+    {
+      "course": "ma2",
+      "id": "2.219",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Självrättningen är korrigerad. Både lg8 och lg(8) godkänns nu."
+    },
+    {
+      "course": "ma2",
+      "id": "1.54",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Lutningen −2 gör linjen vinkelrät, men den ska också gå genom (4, 1). Insättning ger 1 = −8 + m, alltså m = 9. Båda villkoren är nu tydligare i frågan."
+    },
+    {
+      "course": "ma2",
+      "id": "1.347",
+      "part": null,
+      "status": "Granskad – inget fel",
+      "comment": "Lutningen 3 gör linjen vinkelrät, men linjen ska också gå genom (2, 5). Därför är 5 = 6 + m och m = −1. Båda villkoren är nu tydligare i frågan."
+    },
+    {
+      "course": "matf1",
+      "id": "1.548",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Frågan anger nu noggrannheten för avrundade svar. 1/16, 0,0625, 0,063 och 6,25 % godkänns. 0,06 har bara en värdesiffra. Det tidigare exakta facit var korrekt."
+    },
+    {
+      "course": "ma2",
+      "id": "2.57",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Båda lösningarna skrivs nu i separata svarsfält. Du kan skriva 2 och −3 i valfri ordning."
+    },
+    {
+      "course": "ma1",
+      "id": "7.490",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Frågan förklarar nu vad säkerhetsfaktorn betyder. Med faktorn 2 får kranen lyfta halva kapaciteten, alltså 2,5 ton."
+    },
+    {
+      "course": "ma1",
+      "id": "7.163",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Texten är omskriven till hela meningar och anger att kostnaden ska inkludera frakt. Svaret är 1 051 kr."
+    },
+    {
+      "course": "matf1",
+      "id": "2.79",
+      "part": null,
+      "status": "Åtgärdad",
+      "comment": "Potenser är valfria. Både 2³·3²·5 och 2·2·2·3·3·5 godkänns. Svaret måste bestå av primtalsfaktorer; enbart 360 är ingen faktorisering."
+    }
+  ],
+  "comparisons": {
+    "element_och_mangd": {
+      "course": "matf1",
+      "reported": [
+        "1.15"
+      ],
+      "analogues": [
+        "1.476",
+        "1.477",
+        "1.474",
+        "1.475",
+        "1.481",
+        "1.02"
+      ],
+      "finding": "Enda uppgiften med en mängd som element. Jämförd med sex medlemskaps- och uppräkningsuppgifter. Fem ledtrådar hänvisade felaktigt till mängdoperationer och har anpassats."
+    },
+    "Venn_union": {
+      "course": "matf1",
+      "reported": [
+        "1.347",
+        "1.164"
+      ],
+      "analogues": [
+        "1.308",
+        "1.309",
+        "1.318",
+        "1.319",
+        "1.310",
+        "1.320"
+      ],
+      "finding": "36+31−8=59. Venn-diagrammets områden ger union36, exakt-en29, utanför4. Två ledtrådar om mängdbyggare ersatta med dubbelräkning."
+    },
+    "blockordning": {
+      "course": "matf1",
+      "reported": [
+        "1.77"
+      ],
+      "analogues": [
+        "1.72",
+        "1.74",
+        "1.76",
+        "1.138",
+        "1.195"
+      ],
+      "finding": "Föredrag var ett korrekt ord för konferenspresentationer. AB-block ger5!=120; med fri intern ordning måste man också multiplicera med2."
+    },
+    "potens_och_raknare": {
+      "course": "matf1",
+      "reported": [
+        "1.625"
+      ],
+      "analogues": [
+        "1.24",
+        "1.501",
+        "1.576",
+        "1.580",
+        "1.582"
+      ],
+      "finding": "6^4=1296. Fem jämförbara större potensberäkningar får också räknare. Dubbelt villkor om upprepade siffror i1.580 borttaget."
+    },
+    "sannolikhet_avrundning": {
+      "course": "matf1",
+      "reported": [
+        "1.727",
+        "1.548"
+      ],
+      "analogues": [
+        "1.549",
+        "1.550",
+        "1.551",
+        "1.552",
+        "1.553",
+        "1.554",
+        "1.725",
+        "1.726",
+        "1.719",
+        "1.720",
+        "1.728"
+      ],
+      "finding": "Kortare korrekt avrundade svar godkändes redan. Numeric-strängar visades med onödiga decimaler; halvstegsavrundningen godtog fel grannsvar. Minst två värdesiffror klargörs, exakt bråk/potens bevaras."
+    },
+    "primtalsprodukt": {
+      "course": "matf1",
+      "reported": [
+        "2.79"
+      ],
+      "analogues": [
+        "2.157",
+        "2.209",
+        "2.649",
+        "2.650",
+        "2.80",
+        "2.158",
+        "2.210"
+      ],
+      "finding": "Endast två andra direkta primtalsfaktoriseringar finns. Fem SGD/MGM-jämförelser behåller numeriskt svar eftersom de efterfrågar ett tal. Upprepade primtal är tillåtna, sammansatta faktorer och talet utan faktorisering underkänns."
+    },
+    "fasvinkel": {
+      "course": "mato2",
+      "reported": [
+        "1.149",
+        "1.131"
+      ],
+      "analogues": [
+        "1.81",
+        "1.178",
+        "1.119",
+        "1.148",
+        "1.669",
+        "1.670",
+        "2.564"
+      ],
+      "finding": "R=hypot(a,b), v=atan2(b,a) i grader. Vinklarna anges ungefärligt när de inte är standardvinklar; två namngivna fält. Övriga fem exempel har korrekt amplitud/extremvärde/angiven vinkelenhet."
+    },
+    "fullstandiga_delkort": {
+      "course": "mato2",
+      "reported": [
+        "1.59"
+      ],
+      "analogues": [
+        "1.01",
+        "1.17",
+        "1.72",
+        "1.93",
+        "1.56"
+      ],
+      "finding": "Fragment som medellinje och ersätts av fullständiga meningar. Delens facit renodlas. I1.72 var flera delsvar blandade i huvudfacit; ordnade max/min-fält förtydligas."
+    },
+    "kontinuitet_variation": {
+      "course": "mato1",
+      "reported": [
+        "1.99"
+      ],
+      "analogues": [
+        "1.518",
+        "3.57",
+        "3.799",
+        "1.523",
+        "3.812"
+      ],
+      "finding": "Identisk matematisk kärna under flera ID:n. Fem funktioner varierade, inklusive linjär faktor, andragrad, tredjegrad och faktor2 i nämnaren. Urvalet balanserar antal visningar över hela passhistoriken när poolen är slut."
+    },
+    "facitledning": {
+      "course": "mato1",
+      "reported": [
+        "4.495"
+      ],
+      "analogues": [
+        "4.31",
+        "4.36",
+        "4.41",
+        "4.46",
+        "4.409"
+      ],
+      "finding": "cos0=1-ledningen avslöjade hela svaret. Borttagen; nivå1 behålls. Jämförelserna kräver fortfarande att hitta hela lösningsmängden."
+    },
+    "lg_LaTeX": {
+      "course": "ma2",
+      "reported": [
+        "2.219"
+      ],
+      "analogues": [
+        "2.217",
+        "2.241",
+        "2.26",
+        "2.109",
+        "2.250"
+      ],
+      "finding": "LaTeX-normalisering saknade lg. Båda regexlistorna kompletterade, korrekt elevsvar accepteras utan att facitvärden ändras."
+    },
+    "vinkelrat_och_punkt": {
+      "course": "ma2",
+      "reported": [
+        "1.54",
+        "1.347"
+      ],
+      "analogues": [
+        "1.317",
+        "1.329",
+        "1.17",
+        "1.348",
+        "1.82"
+      ],
+      "finding": "Facit9 respektive−1 är rätt när linjen också passerar punkten. Endast lutningsuppgiften1.317 saknar punktvillkor och kräver inget m."
+    },
+    "tva_rotter": {
+      "course": "ma2",
+      "reported": [
+        "2.57"
+      ],
+      "analogues": [
+        "2.01",
+        "2.81",
+        "2.128",
+        "2.129",
+        "2.49"
+      ],
+      "finding": "Två separata rutfält och uttryckligt valfri ordning för sex ekvationer. Varje rot substituerad i originalekvationen."
+    },
+    "sakerhetsfaktor": {
+      "course": "ma1",
+      "reported": [
+        "7.490"
+      ],
+      "analogues": [
+        "7.488",
+        "7.491",
+        "7.493",
+        "7.499",
+        "7.525",
+        "7.536"
+      ],
+      "finding": "Definition behövs på nivå1. Division när tillåten last söks, multiplikation när kapaciteten ska dimensioneras. De två senare hade redan tydlig definition."
+    },
+    "hela_meningar_kostnad": {
+      "course": "ma1",
+      "reported": [
+        "7.163"
+      ],
+      "analogues": [
+        "7.162",
+        "7.165",
+        "7.167",
+        "7.168",
+        "7.169"
+      ],
+      "finding": "Fullständiga meningar, definierad frakt/momsordning och svarsenhet. 18*42+295=1051kr; momsexempel180*24*.88*1.25=4752kr."
+    }
+  },
+  "reviewed": {
+    "matf1": [
+      "1.02",
+      "1.15",
+      "1.24",
+      "1.72",
+      "1.74",
+      "1.76",
+      "1.77",
+      "1.138",
+      "1.164",
+      "1.195",
+      "1.308",
+      "1.309",
+      "1.310",
+      "1.318",
+      "1.319",
+      "1.320",
+      "1.347",
+      "1.474",
+      "1.475",
+      "1.476",
+      "1.477",
+      "1.481",
+      "1.501",
+      "1.548",
+      "1.549",
+      "1.550",
+      "1.551",
+      "1.552",
+      "1.553",
+      "1.554",
+      "1.576",
+      "1.580",
+      "1.582",
+      "1.625",
+      "1.719",
+      "1.720",
+      "1.725",
+      "1.726",
+      "1.727",
+      "1.728",
+      "2.79",
+      "2.80",
+      "2.157",
+      "2.158",
+      "2.209",
+      "2.210",
+      "2.649",
+      "2.650"
+    ],
+    "mato2": [
+      "1.01",
+      "1.17",
+      "1.56",
+      "1.59",
+      "1.72",
+      "1.81",
+      "1.93",
+      "1.119",
+      "1.131",
+      "1.148",
+      "1.149",
+      "1.178",
+      "1.669",
+      "1.670",
+      "2.564"
+    ],
+    "mato1": [
+      "1.99",
+      "1.518",
+      "1.523",
+      "3.57",
+      "3.799",
+      "3.812",
+      "4.31",
+      "4.36",
+      "4.41",
+      "4.46",
+      "4.409",
+      "4.495"
+    ],
+    "ma2": [
+      "1.17",
+      "1.54",
+      "1.82",
+      "1.317",
+      "1.329",
+      "1.347",
+      "1.348",
+      "2.01",
+      "2.26",
+      "2.49",
+      "2.57",
+      "2.81",
+      "2.109",
+      "2.128",
+      "2.129",
+      "2.217",
+      "2.219",
+      "2.241",
+      "2.250"
+    ],
+    "ma1": [
+      "7.162",
+      "7.163",
+      "7.165",
+      "7.167",
+      "7.168",
+      "7.169",
+      "7.488",
+      "7.490",
+      "7.491",
+      "7.493",
+      "7.499",
+      "7.525",
+      "7.536"
+    ]
+  },
+  "changed": [
+    {
+      "course": "ma1",
+      "id": "7.162",
+      "fields": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.163",
+      "fields": [
+        "t",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.165",
+      "fields": [
+        "t",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.167",
+      "fields": [
+        "t",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.168",
+      "fields": [
+        "t",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.488",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.490",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.491",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.493",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma1",
+      "id": "7.499",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "1.54",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.01",
+      "fields": [
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.49",
+      "fields": [
+        "t",
+        "svarstyp",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.57",
+      "fields": [
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.81",
+      "fields": [
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.128",
+      "fields": [
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "2.129",
+      "fields": [
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    },
+    {
+      "course": "ma2",
+      "id": "1.347",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.308",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.318",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.15",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar",
+        "ledtrad",
+        "traningsniva"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.347",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.164",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.24",
+      "fields": [
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.77",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "2.79",
+      "fields": [
+        "t",
+        "svarstyp",
+        "svarFormat",
+        "traningsniva"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "2.157",
+      "fields": [
+        "t",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "2.209",
+      "fields": [
+        "t",
+        "svarFormat"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.474",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.475",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.476",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.477",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.481",
+      "fields": [
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.501",
+      "fields": [
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.548",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.549",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.550",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.551",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.552",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.553",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.554",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.719",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.720",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.725",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.726",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.727",
+      "fields": [
+        "t",
+        "rättSvar",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.728",
+      "fields": [
+        "t",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.576",
+      "fields": [
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.580",
+      "fields": [
+        "t",
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.582",
+      "fields": [
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "matf1",
+      "id": "1.625",
+      "fields": [
+        "miniräknare"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "3.57",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "1.518",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "1.523",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "3.799",
+      "fields": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad",
+        "traningsniva",
+        "arbetsinsats"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "3.812",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "ledtrad"
+      ]
+    },
+    {
+      "course": "mato1",
+      "id": "4.495",
+      "fields": [
+        "t"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.01",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar",
+        "ledtrad",
+        "spelIntro"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.17",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar",
+        "ledtrad",
+        "spelIntro"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.56",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.59",
+      "fields": [
+        "t",
+        "s",
+        "spelDelar",
+        "spelIntro"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.72",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.81",
+      "fields": [
+        "omr",
+        "poang",
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "spelDelar",
+        "familjNyckel",
+        "spelIntro",
+        "omrTidigare",
+        "svarEnhet"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.93",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.131",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "spelDelar",
+        "spelIntro",
+        "svarEnhet"
+      ]
+    },
+    {
+      "course": "mato2",
+      "id": "1.149",
+      "fields": [
+        "t",
+        "s"
+      ]
+    }
+  ],
+  "databaseStatusesChanged": false,
+  "outcomes": [
+    {
+      "course": "matf1",
+      "id": "1.02",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.15",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.24",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.72",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.74",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.76",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.77",
+      "status": "Granskad – inget fel",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.138",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.164",
+      "status": "Granskad – inget fel",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.195",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.308",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.309",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.310",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.318",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.319",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.320",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "1.347",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.474",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.475",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.476",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.477",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.481",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.501",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.548",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.549",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.550",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.551",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.552",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.553",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.554",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.576",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.580",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.582",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.625",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.719",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.720",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.725",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.726",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.727",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "1.728",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "2.79",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "2.80",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "2.157",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "2.158",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "2.209",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "matf1",
+      "id": "2.210",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "2.649",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "matf1",
+      "id": "2.650",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "1.01",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.17",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.56",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.59",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.72",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.81",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.93",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.119",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "1.131",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.148",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "1.149",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato2",
+      "id": "1.178",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "1.669",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "1.670",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato2",
+      "id": "2.564",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "1.99",
+      "status": "Åtgärdad",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "1.518",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato1",
+      "id": "1.523",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato1",
+      "id": "3.57",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato1",
+      "id": "3.799",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato1",
+      "id": "3.812",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "mato1",
+      "id": "4.31",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "4.36",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "4.41",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "4.46",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "4.409",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "mato1",
+      "id": "4.495",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "1.17",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "1.54",
+      "status": "Granskad – inget fel",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "1.82",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "1.317",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "1.329",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "1.347",
+      "status": "Granskad – inget fel",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "1.348",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.01",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.26",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.49",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.57",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.81",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.109",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.128",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.129",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma2",
+      "id": "2.217",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.219",
+      "status": "Åtgärdad",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.241",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma2",
+      "id": "2.250",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma1",
+      "id": "7.162",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.163",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.165",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.167",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.168",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.169",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma1",
+      "id": "7.488",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.490",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.491",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.493",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.499",
+      "status": "Åtgärdad",
+      "changedBankObject": true
+    },
+    {
+      "course": "ma1",
+      "id": "7.525",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    },
+    {
+      "course": "ma1",
+      "id": "7.536",
+      "status": "Granskad – inget fel",
+      "changedBankObject": false
+    }
+  ],
+  "verification": {
+    "consumerUnitTests": 140,
+    "masterUniqueTestsCovered": 355,
+    "svgTests": 47,
+    "newMasterTests": 12,
+    "browserAnswerCombinations": 144,
+    "browserCards": 96,
+    "visualViews": 10,
+    "databaseWrites": 0,
+    "validator": {
+      "uppgifterma1.js": {
+        "tasks": 3968,
+        "findings": {
+          "WARNING": 17,
+          "INFO": 181
+        },
+        "newErrors": 0
+      },
+      "uppgifterma2.js": {
+        "tasks": 2121,
+        "findings": {
+          "INFO": 97,
+          "WARNING": 161,
+          "ERROR": 4
+        },
+        "newErrors": 0
+      },
+      "uppgiftermatf1.js": {
+        "tasks": 1541,
+        "findings": {
+          "WARNING": 7,
+          "INFO": 69
+        },
+        "newErrors": 0
+      },
+      "uppgiftermato1.js": {
+        "tasks": 2727,
+        "findings": {
+          "WARNING": 51,
+          "INFO": 182
+        },
+        "newErrors": 0
+      },
+      "uppgiftermato2.js": {
+        "tasks": 1975,
+        "findings": {
+          "ERROR": 2,
+          "WARNING": 14,
+          "INFO": 58
+        },
+        "newErrors": 0
+      }
+    }
+  }
+}
