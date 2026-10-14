@@ -786,3 +786,11 @@ Skydd: konsumentens `tools/larare-elevval.integration.js` (lokal PostgreSQL, rä
 Befintliga gruppmedlemmar ska vara ibockade, utan texten ”Redan i gruppen”. Befintliga kryss är låsta i tilläggsvyn; bara nya elever räknas/skickas. Klassimport återställer flyttläget så att en tidigare vald källa inte oavsiktligt används. Okopplade grupper bevarar elevens klass; en tidigare uttrycklig grupp–topplistekoppling har kvar sin dokumenterade trigger och ska inte skapas automatiskt.
 
 Elever utan klass får den obligatoriska klassrutan vid varje inloggning/sidstart, oberoende av nyhetsflaggor. Verifiera rollen, undanta lärare/admin och bind väntande uppmaning till inloggat användar-ID. Klassvalet ska inte visa lärarklassen. Konsumentens klassintegration-/webbläsartester skyddar detta. Aktivera med `sql/2026-10-14-grupper-klassimport.sql`, även när föregående elevval-SQL har körts. Ingen ny SQL behövs för den befintliga klassvalsmodellens inloggningsruta.
+
+## KG04 – separat undervisning/egen träning och samlad gruppvy (2026-10-14)
+
+[Godkänd design, implementation, SQL och tester](LARARFLÖDE_IMPLEMENTATION_2026-10-14.md). Lärarens standardstart är **Min undervisning**; **Träna själv** öppnar ordinarie träning. Läget är kontobundet och återställs med historiken. Första besökets knappar ska vara **Skapa min första grupp** och **Träna själv**, utan den borttagna hjälpsentensen om att växla högst upp. Återinför inte KG02:s dubbla lärar- och träningsstart.
+
+Gruppen samlar översikt, pass, elever, områdesstatistik och hopfällda inställningar. Kurs sparas via `sql/2026-10-14-gruppkurs.sql` och förväljs för pass/statistik; gammal SQL erbjuder bara namn tills kursstöd finns. Behåll tidigare grupp/klassmodeller och behörigheter; gör ingen massflytt av medlemskap. Pass dedupliceras på ID, skapande spärrar dubbelklick, sena svar får inte skriva över ett annat konto/formulär. Elev utan pass går direkt till egen kursväljare. Gruppöversiktens veckoaktivitet gäller alla kurser och måste vara tydligt märkt.
+
+Skydd: konsumentens `tools/gruppkurs.integration.js`, `tools/larare-arbetsflode.browser.py` och uppdaterade `tools/larare-elevval.browser.py`, samt befintligt klassimporttest. Prototyp och produktionskod är olika saker: prototypens exempelsiffror får aldrig användas i den riktiga vyn. Pushmedgivande lämnades efter användarens prototypgranskning.
