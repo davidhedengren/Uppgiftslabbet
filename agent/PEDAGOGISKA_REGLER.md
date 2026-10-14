@@ -217,3 +217,24 @@ Nödvändiga situationsdata, experimentvärden, fjäderkonstanter, material-/iso
 Användarbeslut 2026-10-13 efter Ma1 #0.189: skriv exempelvis ”Avrunda 2,675 till två decimaler.” Lägg inte till en påminnelse om att en avslutande femma avrundas uppåt eller vilken siffra eleven ska titta på. Vanlig skolavrundning för positiva tal förutsätts; förklaringen hör hemma i facit eller bakom den separata ledtrådsknappen. Det gäller även rutinpåminnelser vid halvsteg i frågor om avrundningsgränser.
 
 Behåll efterfrågad noggrannhet och enhet. Behåll också riktad avrundning när den definierar situationen, till exempel att en betalning avrundas uppåt. Metoder och svarsalternativ som eleven ska jämföra, granska eller motivera är själva uppgiftens innehåll och ska inte tas bort som ledningar. En särskild avrundningsmodell som avviker från vanlig skolavrundning måste fortfarande anges. Se FP41 och `MA1_AVRUNDNINGSLEDNINGAR_2026-10-13.md`.
+
+## Statistik: Sx som räkningsstandard
+
+Användarbeslut 2026-10-14: när eleven beräknar standardavvikelse från en
+värdelista, frekvenstabell eller ett histogram ska uppgiften använda räknarens
+**Sx**, med **n−1** i nämnaren. Skriv Sx i frågan så att måttet är entydigt.
+Fråga, huvudfacit, delkort, ledtrådar, maskinsvar och tolerans ska följa samma
+beräkning. Frekvenser räknas som antal observationer, inte antal tabellrader.
+Histogram använder de angivna intervallmittpunkterna och ger uppskattningar.
+
+Detta ersätter FP28–29:s tidigare pedagogiska val av σx för beskrivande
+rådataberäkningar. Det betyder inte att de tidigare σx-beräkningarna var
+matematiskt fel. Sx och σx är olika väldefinierade mått. Påstå inte att en grupp
+är ett slumpmässigt stickprov utan stöd i uppgiften.
+
+Behåll **σ som given parameter i normalfördelningar och sannolikhetsmodeller**.
+Där finns ingen rådataberäkning att byta till n−1. Förskjutning och skalning
+påverkar Sx enligt samma regler som andra standardavvikelser. Vid sammanslagning
+av grupper använder varje grupp kvadratsumman (n−1)·Sx²; räkna också med
+skillnaderna mellan gruppmedelvärdena. Om antalet observationer ändras ska även
+nämnaren ändras. Uppgifter om oförändrad standardavvikelse måste lösas om helt.

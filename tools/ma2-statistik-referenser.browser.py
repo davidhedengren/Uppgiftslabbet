@@ -38,7 +38,7 @@ with sync_playwright() as p:
   if len(aa)>1:
    want=[True]*len(aa) if card['structure']=='mängd' else [aa[i]==aa[-i-1] for i in range(len(aa))]
    check(id,part,list(reversed(full)),want)
- for case in [('4.360',0,['37/5'],[True]),('4.362',0,['5','4'],[True,True]),('4.365',0,['60,3 kg','8,8 kg'],[True,True]),('4.369',0,['28 år'],[True]),('4.372',2,['22/3'],[True]),('4.352',0,['34000 kr'],[True])]:check(*case)
+ for case in [('4.360',0,['37/5'],[True]),('4.362',0,['5','4'],[True,True]),('4.365',0,['60,3 kg','9,0 kg'],[True,True]),('4.369',0,['28 år'],[True]),('4.372',2,['22/3'],[True]),('4.352',0,['34000 kr'],[True])]:check(*case)
  print('Answers checked:',len(results),flush=True)
  views=[];shots={'4.356':0,'4.360':0,'4.362':0,'4.364':2,'4.365':0,'4.366':0,'4.374':0,'4.71':1}
  for width in [390,1280]:

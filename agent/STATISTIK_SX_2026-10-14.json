@@ -1,0 +1,1457 @@
+{
+  "datum": "2026-10-14",
+  "användarbeslut": "Sx och n−1 i databeräkningar; normalfördelningens σ är fortsatt modellparameter.",
+  "granskade": [
+    {
+      "kurs": "ma2",
+      "id": "4.04",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.05",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,5819889, 1,2909944.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.06",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.07",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.08",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.10",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,6431677, 1,6431677.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.13",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.14",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.19",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.20",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.21",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.26",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.27",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.28",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 3,7947332.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.34",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.35",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.36",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.37",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.38",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.39",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.43",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.44",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.45",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.46",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 4,3011626, 3,8470768.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.49",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.50",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.51",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.53",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.56",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Beteckningarna har ändrats till Sx. Förskjutning/skalning och jämförelser ger samma numeriska svar; ingen ny rådataberäkning behövs.",
+      "kommentarsförslag": "Uppgiften använder nu beteckningen Sx. De matematiska reglerna och svaren är oförändrade."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.57",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.58",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.65",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.66",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.68",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.69",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.70",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.72",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.75",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.80",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.81",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.84",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.86",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.87",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.89",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.90",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.93",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.94",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.95",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.97",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 3,8729833, 11,61895.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.99",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.100",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.102",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.104",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.105",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.106",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.107",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.109",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Beteckningarna har ändrats till Sx. Förskjutning/skalning och jämförelser ger samma numeriska svar; ingen ny rådataberäkning behövs.",
+      "kommentarsförslag": "Uppgiften använder nu beteckningen Sx. De matematiska reglerna och svaren är oförändrade."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.110",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.114",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.115",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.116",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.117",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.121",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.122",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.123",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.124",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.151",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.152",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.153",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.154",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.155",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.156",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.157",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,5495098, 2,2803509.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.173",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.174",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.175",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.176",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.177",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.178",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.181",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.184",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.195",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.196",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.197",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.201",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.211",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.212",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.213",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.214",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.215",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.216",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.217",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.218",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.226",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.231",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.232",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.235",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.236",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.237",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.287",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.288",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.295",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.241",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,4142136, 2.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.283",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Givna grupp-Sx ger kvadratsummorna 475 och 725. Med gruppskillnader blir summan 2400. Gemensamt medelvärde 66 och Sx = √(2400/49) ≈7,00.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.284",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Problemet löst om för n−1: tilläggsvärdena är 50 ± √(72/7), cirka 46,79 och 53,21. Gamla 47/53 bevarar inte Sx.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.299",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0,24832774, 0,71390942, 0,62048368.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.302",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 3,3665016, 2,9154759.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.248",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.249",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.250",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.251",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.252",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.253",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.254",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.255",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.256",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.257",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.258",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.259",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.260",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.261",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.262",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.263",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.264",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.285",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.286",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.298",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.301",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.304",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.306",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Golfuppgiftens Sx ≈3,1469 och andel 75 % är korrekta; tidigare regression verifierad.",
+      "kommentarsförslag": "Granskad – inget fel. Golfuppgiften använder redan Sx."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.03",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.12",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.14",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.17",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.24",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.28",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.38",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.46",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.48",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.53",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.64",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Begrepp, givna spridningsmått eller omvandlingsregel. Ingen division med n i en rådataberäkning att ändra; samma jämförelse/regel gäller för Sx.",
+      "kommentarsförslag": "Granskad – inget fel. Resonemanget gäller även Sx; uppgiften kräver ingen annan standardavvikelseberäkning."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.65",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.66",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,3093073, 5,8492979.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.70",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.71",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.74",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.84",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.93",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.94",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.107",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.110",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0,70710678, 2,236068.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.115",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.127",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.132",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.139",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.144",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.156",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.175",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.180",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.165",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "5.168",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.328",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,7888544.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.329",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,2692955.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.330",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,6726124.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.331",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,0954451.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.332",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.333",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,7126977.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.334",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,6457513.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.335",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.336",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,5776213.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.337",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,6329932.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.338",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,2038927.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.339",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0,45166359.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.340",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.341",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,3904572.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.342",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0,9258201.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.343",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Använde redan Sx. Samtliga datavärden och n−1-beräkningen är oberoende omräknade.",
+      "kommentarsförslag": "Granskad – inget fel. Uppgiften räknar redan med Sx och n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.344",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.345",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,4142136.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.346",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,4142136, 2,8284271.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.347",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 152,05262.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.348",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,6457513, 2,6457513.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.349",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 3, 6.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.350",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 1,0540926, 1,6996732.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.351",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 14,142136.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.364",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 0,56324185.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.365",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 8,9955289.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.366",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 4,2345052.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.371",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 2,4494897, 2,081666.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.372",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Beteckningarna har ändrats till Sx. Förskjutning/skalning och jämförelser ger samma numeriska svar; ingen ny rådataberäkning behövs.",
+      "kommentarsförslag": "Uppgiften använder nu beteckningen Sx. De matematiska reglerna och svaren är oförändrade."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.373",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Anpassad till den nya Sx-standarden: n−1 används i rådataberäkningen, och fråga/facit/kort följer samma mått. Oberoende Sx: 33,54102.",
+      "kommentarsförslag": "Uppgiften använder nu Sx konsekvent. Frågan, facit och självrättningen följer samma beräkning med n−1."
+    },
+    {
+      "kurs": "ma2",
+      "id": "4.374",
+      "utfall": "Anpassad – ny Sx-standard",
+      "bedömning": "Beteckningarna har ändrats till Sx. Förskjutning/skalning och jämförelser ger samma numeriska svar; ingen ny rådataberäkning behövs.",
+      "kommentarsförslag": "Uppgiften använder nu beteckningen Sx. De matematiska reglerna och svaren är oförändrade."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.257",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.454",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.455",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.159",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.160",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.161",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.162",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.223",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "3.510",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.540",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.541",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.542",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.543",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.544",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    },
+    {
+      "kurs": "mato2",
+      "id": "4.545",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "σ är normalfördelningens givna eller härledda parameter. Ingen standardavvikelse från en värdelista beräknas. Måttets roll kontrollerad; dessa sannolikhetsfacit räknas inte om i denna Sx-omgång.",
+      "kommentarsförslag": "Granskad – inget fel. σ betecknar den givna normalfördelningens spridning, så ingen Sx-beräkning behövs här."
+    }
+  ],
+  "anpassade": 42,
+  "kontrollgräns": "Sx-valet och datafaciten kontrollerade. Ingen ny fullständig granskning av sannolikhetsfacit eller alla statistikfrågors språk/nivå. Ingen Supabase-status eller kommentar skickad."
+}

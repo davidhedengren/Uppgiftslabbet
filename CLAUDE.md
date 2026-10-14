@@ -89,3 +89,7 @@ berörda uppgifts-ID:n och kör deras regressionstester före ändring och lever
 Användarbeslut 2026-10-13: när du konstruerar nya uppgifter eller gör om befintliga uppgifter ska du **alltid sträva efter att ha med en figur, om det är möjligt**. Bedöm för varje uppgift hur en figur kan hjälpa eleven att förstå situationen, tolka samband eller välja metod. Kretsar, laddningars placeringar, rörelser, krafter och geometri lämpar sig särskilt väl för egna SVG-figurer. Figuren ska bidra till förståelsen och kan vara schematisk; ange skala när skalenlig avläsning behövs.
 
 Placera alla beteckningar, sträckor, vinklar, enheter och pilar tydligt och på rätt plats. Kontrollera modellen, geometrin och faktisk mobil-/datorvisning. Om uppgiften delas i Kunskapsgymmet ska varje kort få den figur och de givna värden som behövs för just det kortet. Förklarande figurer kan också användas i facit. Dokumentera kort om en figur inte hjälper eller inte är meningsfull för uppgiften.
+
+## Statistik: standardavvikelse
+
+Användarbeslut 2026-10-14: databeräkningar från listor, frekvenstabeller och histogram ska använda **Sx och n−1**, inte σx. Följ `agent/PEDAGOGISKA_REGLER.md`, avsnittet ”Statistik: Sx som räkningsstandard”. Fråga, facit, alla delkort och självrättning måste räknas om tillsammans. σ som given normalfördelningsparameter behålls. Det nya beslutet ersätter FP28–29:s tidigare val av beskrivande σx i rådatauppgifter; återställ inte gamla facit från den historiska granskningsloggen.

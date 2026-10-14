@@ -43,11 +43,11 @@ test('Namngivna värden har ordning och namngivna svarsfält även på splitkort
  assert.doesNotMatch(ma('2.436').spelDelar[0].s,/x-koordinat/);
 });
 test('Spridningsfacit har korrekt avrundning och tar hänsyn till spridning noll',()=>{
- const a=[31.2,30.8,31.5,30.9,31.1,31.0],b=[30.4,31.9,30.6,32,30.5,31.1],sd=v=>{let m=v.reduce((s,x)=>s+x,0)/v.length;return Math.sqrt(v.reduce((s,x)=>s+(x-m)**2,0)/v.length)};
- assert.equal(sd(b.filter(x=>x!==32)).toFixed(2),'0.55');assert.match(ma('4.299').spelDelar[3].s,/0\{,\}55/);
- assert.equal(sd(a).toFixed(2),'0.23');assert.equal(sd(b).toFixed(2),'0.65');
+ const a=[31.2,30.8,31.5,30.9,31.1,31.0],b=[30.4,31.9,30.6,32,30.5,31.1],sd=v=>{let m=v.reduce((s,x)=>s+x,0)/v.length;return Math.sqrt(v.reduce((s,x)=>s+(x-m)**2,0)/(v.length-1))};
+ assert.equal(sd(b.filter(x=>x!==32)).toFixed(2),'0.62');assert.match(ma('4.299').spelDelar[3].s,/0\{,\}62/);
+ assert.equal(sd(a).toFixed(2),'0.25');assert.equal(sd(b).toFixed(2),'0.71');
  const golf=[276,279,279,277,278,278,280,282,285,272,279,278];
- const sample=sd(golf)*Math.sqrt(12/11);assert.equal(sample.toFixed(1),'3.1');assert.match(ma('4.306').s,/s\\approx3\{,\}15/);assert.match(ma('4.306').t,/Sx/);
+ const sample=sd(golf);assert.equal(sample.toFixed(1),'3.1');assert.match(ma('4.306').s,/s\\approx3\{,\}15/);assert.match(ma('4.306').t,/Sx/);
  assert.match(ma('4.302').spelDelar[1].s,/redan är noll/);assert.doesNotMatch(ma('4.302').t,/alltid minskar/);
 });
 test('De två fysikrapporterna har oförändrade, oberoende verifierade facit',()=>{

@@ -5,7 +5,7 @@ const models=require('./fixtures/ma2-statistik-referenser.json'),get=id=>ctx.win
 const sum=v=>v.reduce((a,b)=>a+b,0),mean=v=>sum(v)/v.length;
 const med=v=>{const a=v.slice().sort((a,b)=>a-b);return(a[Math.floor((a.length-1)/2)]+a[Math.floor(a.length/2)])/2;};
 const five=v=>{const a=v.slice().sort((a,b)=>a-b),h=Math.floor(a.length/2);return[a[0],med(a.slice(0,h)),med(a),med(a.slice(-h)),a.at(-1)];};
-const iqr=v=>{const a=five(v);return a[3]-a[1];},sd=v=>Math.sqrt(mean(v.map(x=>(x-mean(v))**2))),pair=v=>[mean(v),sd(v)];
+const iqr=v=>{const a=five(v);return a[3]-a[1];},sd=v=>Math.sqrt(v.reduce((s,x)=>s+(x-mean(v))**2,0)/(v.length-1)),pair=v=>[mean(v),sd(v)];
 const mode=v=>{const c=new Map();v.forEach(x=>c.set(x,(c.get(x)||0)+1));return [...c].sort((a,b)=>b[1]-a[1])[0][0];};
 function close(a,b){if(Array.isArray(b)){assert.ok(Array.isArray(a));assert.equal(a.length,b.length);b.forEach((x,i)=>close(a[i],x));}else if(typeof b==='number')assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);else assert.equal(a,b);}
 function expected(m){const v=m.values;switch(m.type){

@@ -2,7 +2,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.createContext(c);for(const f of ['uppgifterma2.js','uppgifter.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',f),'utf8'),c);
 const ma=id=>c.window.BANKMA2.find(t=>t.id===id),fy=id=>c.window.BANK.find(t=>t.id===id);
-const mean=v=>v.reduce((a,b)=>a+b,0)/v.length,sd=(v,sample=false)=>Math.sqrt(v.reduce((a,x)=>a+(x-mean(v))**2,0)/(v.length-(sample?1:0)));
+const mean=v=>v.reduce((a,b)=>a+b,0)/v.length,sd=(v,sample=true)=>Math.sqrt(v.reduce((a,x)=>a+(x-mean(v))**2,0)/(v.length-(sample?1:0)));
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
 test('Temperaturstickprovet använder n−1, Sx och korrekt tvådecimalsrättning',()=>{
  const t=ma('5.94'),v=[20.8,21.2,21,21.4,20.6];close(t.rättSvar[0],mean(v));close(t.rättSvar[1],sd(v,true));
@@ -14,11 +14,11 @@ test('Rumstemperaturernas s-beteckningar motsvarar verkligen Sx',()=>{
  assert.match(t.t,/Sx/);assert.match(t.s,/0\{,\}71/);assert.match(t.s,/1\{,\}41/);
 });
 test('Statistikuppgifter anger vilket spridningsmått som beräknas',()=>{
- for(const id of ['5.66','5.110','4.299'])assert.match(ma(id).t,/σx/,id);
+ for(const id of ['5.66','5.110','4.299'])assert.match(ma(id).t,/Sx/,id);
  close(ma('5.110').rättSvar[1],sd([4,5,5,6,5]));close(ma('5.110').rättSvar[3],sd([2,4,5,6,8]));
  const a=[12,13,13,14,14,15,15,16],b=[12,13,13,14,14,15,15,30];
- assert.equal(sd(a).toFixed(2),'1.22');assert.equal(sd(b).toFixed(2),'5.47');
- close(sd([31.2,30.8,31.5,30.9,31.1,31]),.22669117514559073);
+ assert.equal(sd(a).toFixed(2),'1.31');assert.equal(sd(b).toFixed(2),'5.85');
+ close(sd([31.2,30.8,31.5,30.9,31.1,31]),.248327740429189);
 });
 test('Golfstickprovets intervall använder Sx och innehåller fortfarande nio slagantal',()=>{
  const t=ma('4.306'),v=[276,279,279,277,278,278,280,282,285,272,279,278],m=mean(v),s=sd(v,true);

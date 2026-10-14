@@ -103,7 +103,7 @@
     ],
     "representation": "raw",
     "unit": "min",
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -123,7 +123,7 @@
     ],
     "representation": "bars",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -141,7 +141,7 @@
     ],
     "representation": "dots",
     "unit": "min",
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -157,7 +157,7 @@
     ],
     "representation": "frequency",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -193,7 +193,7 @@
     ],
     "representation": "bars",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -208,7 +208,7 @@
     ],
     "representation": "raw",
     "unit": "cm",
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -243,7 +243,7 @@
     ],
     "representation": "bars",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -263,7 +263,7 @@
     ],
     "representation": "frequency",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -281,7 +281,7 @@
     ],
     "representation": "dots",
     "unit": "mm",
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -297,7 +297,7 @@
     ],
     "representation": "raw",
     "unit": "s",
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -331,7 +331,7 @@
     ],
     "representation": "bars",
     "unit": "år",
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -349,7 +349,7 @@
     ],
     "representation": "raw",
     "unit": "h",
-    "sample": false,
+    "sample": true,
     "quartiles": true
   },
   {
@@ -379,7 +379,7 @@
     ],
     "representation": "raw",
     "unit": "kg",
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -396,7 +396,7 @@
     ],
     "representation": "bars",
     "unit": null,
-    "sample": false,
+    "sample": true,
     "quartiles": false
   },
   {
@@ -416,7 +416,8 @@
       20,
       24
     ],
-    "unit": "mm"
+    "unit": "mm",
+    "sample": true
   },
   {
     "id": "4.347",
@@ -430,7 +431,8 @@
       400
     ],
     "representation": "raw",
-    "unit": "kr"
+    "unit": "kr",
+    "sample": true
   },
   {
     "id": "4.348",
@@ -449,7 +451,8 @@
       11,
       14
     ],
-    "unit": "cm"
+    "unit": "cm",
+    "sample": true
   },
   {
     "id": "4.349",
@@ -468,7 +471,8 @@
       8,
       18
     ],
-    "unit": "m"
+    "unit": "m",
+    "sample": true
   },
   {
     "id": "4.350",
@@ -497,7 +501,8 @@
       4,
       4
     ],
-    "representation": "frequency"
+    "representation": "frequency",
+    "sample": true
   },
   {
     "id": "4.351",
@@ -512,6 +517,7 @@
       40,
       50
     ],
-    "representation": "frequency"
+    "representation": "frequency",
+    "sample": true
   }
 ]

@@ -3,7 +3,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const root=path.join(__dirname,'..'),ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgifterma2.js'),'utf8'),ctx);
 const models=require('./fixtures/ma2-statistik-matt.json'),get=id=>ctx.window.BANKMA2.find(x=>x.id===id),plain=x=>JSON.parse(JSON.stringify(x));
 const mean=v=>v.reduce((a,b)=>a+b,0)/v.length,med=v=>{const a=v.slice().sort((a,b)=>a-b);return (a[Math.floor((a.length-1)/2)]+a[Math.floor(a.length/2)])/2;};
-const sd=(v,sample=false)=>Math.sqrt(v.reduce((a,x)=>a+(x-mean(v))**2,0)/(v.length-(sample?1:0))),pair=(v,s=false)=>[mean(v),sd(v,s)];
+const sd=(v,sample=true)=>Math.sqrt(v.reduce((a,x)=>a+(x-mean(v))**2,0)/(v.length-(sample?1:0))),pair=(v,s=true)=>[mean(v),sd(v,s)];
 const mode=v=>{const c=new Map();v.forEach(x=>c.set(x,(c.get(x)||0)+1));const n=Math.max(...c.values()),a=[...c].filter(x=>x[1]===n).map(x=>x[0]).sort((a,b)=>a-b);return a.length===1?a[0]:a;};
 const range=v=>Math.max(...v)-Math.min(...v),iqr=v=>{const a=v.slice().sort((a,b)=>a-b);assert.equal(a.length%2,0);return med(a.slice(a.length/2))-med(a.slice(0,a.length/2));};
 function close(a,b){if(Array.isArray(b)){assert.equal(a.length,b.length);b.forEach((x,i)=>close(a[i],x));}else if(typeof b==='number')assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);else assert.equal(a,b);}
@@ -29,8 +29,8 @@ test('Alla 111 delkort har tabell/figur, egen fråga, facit, ledtråd och riktig
   q.spelDelar.forEach((p,i)=>{count++;assert.ok(p.fraga&&p.s&&p.ledtrad);assert.doesNotMatch(p.fraga+p.ledtrad,/svaret från|föregående del|använd ditt svar/i);assert.doesNotMatch(p.s,/facit-steglista|<ol/);if(Array.isArray(q.rättSvar[i])){assert.equal(p.svarEtiketter.length,q.rättSvar[i].length);assert.equal(q.svarFormat[i].length,q.rättSvar[i].length);assert.equal(q.svarEnhet[i].length,q.rättSvar[i].length);assert.equal(q.tolerans[i].length,q.rättSvar[i].length);assert.ok(['ordnad','mängd'].includes(p.svarsstruktur));}assert.ok(p.traningsniva>=1&&p.traningsniva<=3);});
  }assert.equal(count,111);
 });
-test('Stickprov använder Sx med n−1; beskrivande spridning använder σx',()=>{
- for(const m of models.filter(x=>x.type==='measures')){const q=get(m.id),p=q.spelDelar[2];assert.match(p.fraga,m.sample?/Sx/:/σx/);if(m.sample){assert.match(q.spelIntro,/stickprov/);assert.ok(Math.abs(sd(m.values)-q.rättSvar[2][1])>.005);assert.match(p.s,new RegExp(m.values.length+' − 1'));}else assert.ok(Math.abs(sd(m.values)-q.rättSvar[2][1])<1e-9);}
+test('Samtliga databeräkningar använder nu Sx med n−1',()=>{
+ for(const m of models.filter(x=>x.type==='measures')){const q=get(m.id),p=q.spelDelar[2];assert.match(p.fraga,/Sx/);assert.equal(m.sample,true);assert.ok(Math.abs(sd(m.values,true)-q.rättSvar[2][1])<1e-9);if(!m.values.every(v=>v===m.values[0]))assert.notEqual(sd(m.values,false),q.rättSvar[2][1]);}
 });
 test('Rätt avrundning godtas och närliggande felavrundning ligger utanför toleransen',()=>{
  function check(a,t){if(Array.isArray(a))return a.forEach((v,i)=>check(v,t[i]));if(typeof a!=='number'||t!==.005)return;const rounded=Math.round((a+Number.EPSILON)*100)/100;assert.ok(Math.abs(a-rounded)<=t+1e-12);assert.ok(Math.abs(a-(rounded+.01))>t);assert.ok(Math.abs(a-(rounded-.01))>t);}
@@ -38,5 +38,5 @@ test('Rätt avrundning godtas och närliggande felavrundning ligger utanför tol
 });
 test('Två typvärden är en mängd, medan medelvärde och standardavvikelse är ordnade',()=>{
  for(const id of ['4.345','4.347']){const q=get(id);assert.equal(q.spelDelar[1].svarsstruktur,'mängd');assert.equal(q.spelDelar[2].svarsstruktur,'ordnad');}
- close(get('4.344').rättSvar,[2,2,[2,0],0]);close(get('4.350').rättSvar,[[2,1],[2,Math.sqrt(2.6)],'B']);
+ close(get('4.344').rättSvar,[2,2,[2,0],0]);close(get('4.350').rättSvar,[[2,Math.sqrt(10/9)],[2,Math.sqrt(26/9)],'B']);
 });

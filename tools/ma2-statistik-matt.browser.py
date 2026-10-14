@@ -6,7 +6,7 @@ from pathlib import Path
 from collections import Counter
 from playwright.sync_api import sync_playwright
 models=json.loads((Path(__file__).parent/'fixtures/ma2-statistik-matt.json').read_text());ids=[m['id'] for m in models]
-def pair(v,sample=False):return [statistics.mean(v),statistics.stdev(v) if sample else statistics.pstdev(v)]
+def pair(v,sample=True):return [statistics.mean(v),statistics.stdev(v) if sample else statistics.pstdev(v)]
 def mode(v):
  c=Counter(v);a=sorted(x for x in c if c[x]==max(c.values()));return a[0] if len(a)==1 else a
 def iqr(v):
@@ -43,10 +43,10 @@ with sync_playwright() as p:
    if len(aa)==2:
     unordered=m['id'] in ['4.345','4.347'] and part==1
     check(m['id'],part,list(reversed(full)),[unordered]*2)
-  if m.get('sample'):
+  if m['type']=='measures' and len(set(m['values']))>1:
    check(m['id'],2,[str(statistics.mean(m['values'])),str(statistics.pstdev(m['values']))],[True,False])
  # Explicit natural units, scalar fractions, zero spread, and near-miss rounding.
- for case in [('4.323',0,['5/6'],[True]),('4.328',2,['4 min','1,63 min'],[True,True]),('4.328',2,['4','1,64'],[True,False]),('4.339',0,['12,6 s'],[True]),('4.343',3,['0,6 mm'],[True]),('4.344',2,['2 kg','0 kg'],[True,True]),('4.345',1,['4','2'],[True,True]),('4.347',1,['30 kr','20 kr'],[True,True])]:check(*case)
+ for case in [('4.323',0,['5/6'],[True]),('4.328',2,['4 min','1,79 min'],[True,True]),('4.328',2,['4','1,78'],[True,False]),('4.339',0,['12,6 s'],[True]),('4.343',3,['0,6 mm'],[True]),('4.344',2,['2 kg','0 kg'],[True,True]),('4.345',1,['4','2'],[True,True]),('4.347',1,['30 kr','20 kr'],[True,True])]:check(*case)
  print('Answers checked:',len(results),flush=True)
  views=[];shots={'4.323':0,'4.326':0,'4.328':2,'4.330':3,'4.335':2,'4.338':2,'4.339':2,'4.343':2,'4.344':2,'4.345':1,'4.347':2,'4.350':2,'4.351':3}
  for width in [390,1280]:
