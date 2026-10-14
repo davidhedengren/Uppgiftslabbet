@@ -41,6 +41,13 @@ x/y-fält; 1.299 har fält för T-shirts och hoodies. 2.12 b frågar efter fakto
 
 ## FP-02: Delkort saknar tidigare information eller visar andra delars facit
 
+**Uppföljning 2026-10-14 13:25:** Mato1 #2.82 och tretton analoger visar
+en funktion på varje kort. Där används singular och giltig HTML;
+huvudbladets plural och matematik behålls. Ma2 #3.201 a får
+egna x/y-etiketter, medan b-facit beräknar dubbla MB från sina synliga data
+i stället för att börja med A:s osynliga koordinater. Se
+[granskning 13:25](FELRAPPORTER_2026-10-14_1325.md).
+
 **Sök efter:** `spelDelning`, saknat `spelDelar[i].s`, ”använd”, ”samma”, ”modellen”,
 ”mer än så”, facit som börjar med ett mellanresultat utan att det ges på kortet.
 
@@ -613,6 +620,13 @@ Kontrollera fysisk lutning med båda axlarnas skalor, särskilt ms/s, min/s och 
 
 ## FP34 – standardkonstanter och formelval hör till elevens arbete (2026-10-12)
 
+**Uppföljning 2026-10-14:** Fy1 #4.364 saknade en uttrycklig fråga redan i
+precisionstexten från 11 oktober; borttagandet av formeluppmaningen gjorde
+bristen ännu tydligare. Skriv ”Bestäm planetens massa” utan att återinföra
+standardkonstanten eller färdig formel i frågan. Gamla maskinsvar/toleranser
+behålls. Ledtrådar får inte hänvisa till en ”given formel” som inte längre visas.
+Se [granskning 13:25](FELRAPPORTER_2026-10-14_1325.md).
+
 [Helbankens avgränsade granskning, alla ID, åtgärder och kommentarer](FYSIK_FORMELSAMLING_2026-10-12.md), med maskinläsbar JSON-logg. Användarbeslut: ge inte g, G, Coulombs konstant, e, h, c eller andra standardkonstanter/omvandlingar i frågan. Skriv inte ”Använd F = ma” eller liknande färdiga formelledningar. Regeln gäller också `spelIntro` och delkortens `t`/`fraga`. Facit ska fortsatt förklara formelval och insättning. Ledtrådar bakom separat knapp ingår inte i frågetexten.
 
 Behåll nödvändiga situations- och experimentdata, materialvärden, fjäderkonstanter, modellplaneters g, lokala jämförelsevärden, riktning och fysikaliska villkor. En formel som eleven ska kritisera eller härleda är själva uppgiften och ska inte raderas. Granska träffar i sammanhanget; radera inte efter en bred regex på ”konstant”, ”=” eller ”använd”. Nivåer höjs inte automatiskt för att eleven söker en formel.
@@ -805,6 +819,15 @@ Kontrollerat i riktiga appen med Chromium: 12 öppna/stängda lägen vid 320/390
 
 ## KG06 – pergament med egen scroll och veckobok; halv XP för äldre uppdrag (2026-10-14)
 
+**Senare presentation samma dag:** Konsumentens `docs/UPPDRAGSBOK.md` beskriver
+det aktuella lilla bokomslaget uppe till höger, dialogen och sidornas uppvikta
+bläddringshörn. En räknare på omslaget visar dagens antal klara/antal uppdrag,
+exempelvis 0/4. Den hämtar dagens verkliga lista för vald kurs, även om boken
+visar en äldre dag. Kursgränsens `{tak:true}` får ingen falsk 0/4-indikator.
+Ingen XP-, historik- eller SQL-regel ändras av räknaren. Kontrollerna i
+`tools/uppdragsbok-vy.browser.js` omfattar nu riktig måluppdatering och båda
+tränarkortens räknare.
+
 [Implementation, slutligt XP-beslut, historikens gränser, SQL och verifiering](UPPDRAGSBOK_2026-10-14.md). Ersätter KG05:s stora utfällda höjd: öppning får inte öka tränarkortet. Pergament/rullar återinförs; dagbläddring visar senaste sju dagarna och äldre uppdrag kan slutföras. Skapa inte påhittad historik för tidigare osparade dagar.
 
 Användarens senaste korrigering är **halva original-XP** för äldre uppdrag, inklusive hela-dagen-bonus: 25/50/50 XP, totalt 175 för en gammal fyrgrupp. Dagens 350 XP består. Historisk träning gäller vald dag/ägare/kurs och följer med återupptagning/fortsättning. Normalstart och noXp-repetition ska inte ge gamla bonusar. Kvitterade äldre uppdrag får inte betalas igen; gamla redan klara mål migreras som redan betalda.
@@ -812,3 +835,25 @@ Användarens senaste korrigering är **halva original-XP** för äldre uppdrag, 
 Aktivera med konsumentens `sql/2026-10-14-uppdragsbok.sql`. Privat unik betalningsbok och serverns kontroll av kända, oförändrade uppdrag skyddar varje halvbelöning. Profilens revisions-/kredit-/bonusregler kvarstår. Inloggad klient väntar på `uppdragsbok:true` innan historisk träning tillåts, så nya XP inte skickas till äldre SQL. Lägg inte en generell extra XP-marginal i profilen eller topplistans spärr utan verifierade betalningar. Undvik tvetydiga SQL-variabelnamn (t.ex. `v_dag` mot kolumnen `dag`).
 
 Skydd: konsumentens `tools/uppdragsbok.test.js`, `tools/uppdragsbok.integration.js` och `tools/uppdragsbok.browser.py`. Dessa ersätter inte tidigare passhistorik-, konto- eller adminskydd. Bankerna är oförändrade.
+
+## FP47 – stora bokstäver i förenklade polynom och tydliga grupperingar (2026-10-14)
+
+[Nio rapporter, följdgranskade ID:n och kommentarer](FELRAPPORTER_2026-10-14_1325.md).
+Ma1 #1.09 a hade korrekt facit men dess särskilda `förenklat_polynom`-parser
+avvisade `10X+3`. Den normaliserar nu bokstäver som övrig uttrycksrättning.
+Detta gäller det avgränsade formatet, inte fysikens enheter eller allmän
+symbolisk multiplikation. Kraven på samlade termer och förkortade bråk består:
+`7X+5+3X-2`, `X+x` och `3X/9` ska fortfarande avvisas som ofärdiga svar.
+
+De numeriska uttrycken #0.265/#0.266/#0.282 var matematiskt entydiga.
+Explicit multiplikation och yttre hakparenteser gör dem lättare att läsa;
+faciten visar den inre beräkningen först. Ändra inte värdena på grund av
+typografiska synpunkter. Koordinatfält i ma2 #3.134/#3.341 får tydliga x/y-
+etiketter och ordnad struktur. Mato2 #1.611:s ledtråd ska täcka alla tre
+egenskaper, inte bara amplituden.
+
+Skydd: master `tools/felrapporter-2026-10-14-1325.test.js`; konsument
+`tools/brakuttryck.test.js` och `tools/felrapporter-2026-10-14-1325.browser.js`.
+Matf1 #1.680 a har rätt facit 25/81; mato1 #2.250 har korrekt derivata och
+testade ekvivalenta skrivsätt. Historiska underkännanden kan inte förklaras
+säkert utan elevens faktiska inmatning. Lagra dem inte som bevisade facitfel.
