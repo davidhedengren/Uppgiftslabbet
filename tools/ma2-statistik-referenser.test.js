@@ -65,7 +65,7 @@ test('Lådornas kanter och medianer ligger på samma linjära skala som axeln',(
  }
 });
 test('Tabeller innehåller källdata och alla kort har självständiga förutsättningar',()=>{
- let cards=0;for(const m of models){const q=get(m.id);assert.match(q.t,/<table|<svg/);assert.equal(q.kap,4);close(plain(q.kurs),['2a','2b','2c']);assert.equal(q.miniräknare,!['data','histogram','append_values','weighted_data'].includes(m.type));if(['data','histogram','append_values','weighted_data'].includes(m.type))assert.equal(q.geogebra,true);assert.doesNotMatch(q.s,/facit-steglista|<ol/);
+ let cards=0;for(const m of models){const q=get(m.id);assert.match(q.t,/<table|<svg/);assert.equal(q.kap,4);close(plain(q.kurs),['2a','2b','2c']);assert.equal(q.miniräknare,true);if(['data','histogram','append_values','weighted_data'].includes(m.type))assert.equal(q.geogebra,true);assert.doesNotMatch(q.s,/facit-steglista|<ol/);
  const cells=[...q.t.matchAll(/<td>(.*?)<\/td>/g)].map(x=>x[1]);const num=x=>Number(x.replace('−','-').replace(',','.'));
  if(['data','quartiles_frequency','weighted_data'].includes(m.type)){const v=[];for(let i=0;i<cells.length;i+=2)v.push(...Array(num(cells[i+1])).fill(num(cells[i])));close(v,m.values.slice().sort((a,b)=>a-b));}
  if(m.type==='percentiles')for(const [p,v]of m.percentiles)assert.ok(cells.includes('P'+p)&&cells.some(x=>num(x.replace(/ (kr|min)/,'').replaceAll(' ',''))===v));

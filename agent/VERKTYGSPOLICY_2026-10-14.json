@@ -1,0 +1,967 @@
+{
+  "datum": "2026-10-14",
+  "phase": "Grundinstruktioner, full metadatainventering och första avgränsade verktygsbedömningen",
+  "before": [
+    {
+      "file": "uppgifter.js",
+      "count": 3780,
+      "gg": 2,
+      "conflicts": []
+    },
+    {
+      "file": "uppgifter2.js",
+      "count": 1412,
+      "gg": 0,
+      "conflicts": []
+    },
+    {
+      "file": "uppgifterma1.js",
+      "count": 3968,
+      "gg": 63,
+      "conflicts": []
+    },
+    {
+      "file": "uppgifterma2.js",
+      "count": 2190,
+      "gg": 172,
+      "conflicts": [
+        [
+          "4.05",
+          "parent"
+        ],
+        [
+          "4.05",
+          1
+        ],
+        [
+          "4.10",
+          "parent"
+        ],
+        [
+          "4.28",
+          "parent"
+        ],
+        [
+          "4.28",
+          1
+        ],
+        [
+          "4.46",
+          "parent"
+        ],
+        [
+          "4.97",
+          "parent"
+        ],
+        [
+          "4.157",
+          "parent"
+        ],
+        [
+          "4.241",
+          "parent"
+        ],
+        [
+          "4.241",
+          1
+        ],
+        [
+          "4.283",
+          "parent"
+        ],
+        [
+          "4.284",
+          "parent"
+        ],
+        [
+          "4.299",
+          "parent"
+        ],
+        [
+          "4.299",
+          1
+        ],
+        [
+          "4.299",
+          2
+        ],
+        [
+          "4.299",
+          3
+        ],
+        [
+          "4.302",
+          "parent"
+        ],
+        [
+          "4.302",
+          0
+        ],
+        [
+          "4.302",
+          1
+        ],
+        [
+          "4.306",
+          "parent"
+        ],
+        [
+          "4.306",
+          0
+        ],
+        [
+          "5.66",
+          "parent"
+        ],
+        [
+          "5.71",
+          "parent"
+        ],
+        [
+          "5.94",
+          "parent"
+        ],
+        [
+          "5.110",
+          "parent"
+        ],
+        [
+          "4.328",
+          "parent"
+        ],
+        [
+          "4.328",
+          2
+        ],
+        [
+          "4.329",
+          "parent"
+        ],
+        [
+          "4.329",
+          2
+        ],
+        [
+          "4.330",
+          "parent"
+        ],
+        [
+          "4.330",
+          2
+        ],
+        [
+          "4.331",
+          "parent"
+        ],
+        [
+          "4.331",
+          2
+        ],
+        [
+          "4.332",
+          "parent"
+        ],
+        [
+          "4.332",
+          2
+        ],
+        [
+          "4.333",
+          "parent"
+        ],
+        [
+          "4.333",
+          2
+        ],
+        [
+          "4.334",
+          "parent"
+        ],
+        [
+          "4.334",
+          2
+        ],
+        [
+          "4.335",
+          "parent"
+        ],
+        [
+          "4.335",
+          2
+        ],
+        [
+          "4.336",
+          "parent"
+        ],
+        [
+          "4.336",
+          2
+        ],
+        [
+          "4.337",
+          "parent"
+        ],
+        [
+          "4.337",
+          2
+        ],
+        [
+          "4.338",
+          "parent"
+        ],
+        [
+          "4.338",
+          2
+        ],
+        [
+          "4.339",
+          "parent"
+        ],
+        [
+          "4.339",
+          2
+        ],
+        [
+          "4.340",
+          "parent"
+        ],
+        [
+          "4.340",
+          2
+        ],
+        [
+          "4.341",
+          "parent"
+        ],
+        [
+          "4.341",
+          2
+        ],
+        [
+          "4.342",
+          "parent"
+        ],
+        [
+          "4.342",
+          2
+        ],
+        [
+          "4.343",
+          "parent"
+        ],
+        [
+          "4.343",
+          2
+        ],
+        [
+          "4.344",
+          "parent"
+        ],
+        [
+          "4.344",
+          2
+        ],
+        [
+          "4.345",
+          "parent"
+        ],
+        [
+          "4.345",
+          2
+        ],
+        [
+          "4.346",
+          "parent"
+        ],
+        [
+          "4.346",
+          0
+        ],
+        [
+          "4.346",
+          1
+        ],
+        [
+          "4.346",
+          2
+        ],
+        [
+          "4.347",
+          "parent"
+        ],
+        [
+          "4.347",
+          2
+        ],
+        [
+          "4.348",
+          "parent"
+        ],
+        [
+          "4.348",
+          0
+        ],
+        [
+          "4.348",
+          1
+        ],
+        [
+          "4.349",
+          "parent"
+        ],
+        [
+          "4.349",
+          0
+        ],
+        [
+          "4.349",
+          1
+        ],
+        [
+          "4.350",
+          "parent"
+        ],
+        [
+          "4.350",
+          0
+        ],
+        [
+          "4.350",
+          1
+        ],
+        [
+          "4.350",
+          2
+        ],
+        [
+          "4.351",
+          "parent"
+        ],
+        [
+          "4.351",
+          0
+        ],
+        [
+          "4.364",
+          "parent"
+        ],
+        [
+          "4.364",
+          2
+        ],
+        [
+          "4.365",
+          "parent"
+        ],
+        [
+          "4.365",
+          0
+        ],
+        [
+          "4.366",
+          "parent"
+        ],
+        [
+          "4.366",
+          0
+        ],
+        [
+          "4.371",
+          "parent"
+        ],
+        [
+          "4.371",
+          0
+        ],
+        [
+          "4.371",
+          1
+        ],
+        [
+          "4.373",
+          "parent"
+        ],
+        [
+          "4.373",
+          0
+        ]
+      ]
+    },
+    {
+      "file": "uppgiftermato1.js",
+      "count": 2727,
+      "gg": 61,
+      "conflicts": []
+    },
+    {
+      "file": "uppgiftermato2.js",
+      "count": 1975,
+      "gg": 566,
+      "conflicts": []
+    },
+    {
+      "file": "uppgiftermatf1.js",
+      "count": 1547,
+      "gg": 13,
+      "conflicts": []
+    }
+  ],
+  "after": [
+    {
+      "file": "uppgifter.js",
+      "count": 3780,
+      "gg": 2,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgifter2.js",
+      "count": 1412,
+      "gg": 0,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgifterma1.js",
+      "count": 3968,
+      "gg": 63,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgifterma2.js",
+      "count": 2190,
+      "gg": 177,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgiftermato1.js",
+      "count": 2727,
+      "gg": 70,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgiftermato2.js",
+      "count": 1975,
+      "gg": 567,
+      "conflicts": [],
+      "copiesIdentical": true
+    },
+    {
+      "file": "uppgiftermatf1.js",
+      "count": 1547,
+      "gg": 14,
+      "conflicts": [],
+      "copiesIdentical": true
+    }
+  ],
+  "granskade": [
+    {
+      "bank": "uppgifterma2.js",
+      "id": "1.342",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "2.757",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.05",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.10",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.28",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.46",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.97",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.157",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.287",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.292",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.241",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.283",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.284",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.299",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.302",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.306",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "5.66",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "5.71",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "5.94",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "5.110",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "5.181",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.328",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.329",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.330",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.331",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.332",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.333",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.334",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.335",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.336",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.337",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.338",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.339",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.340",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.341",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.342",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.343",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.344",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.345",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.346",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.347",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.348",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.349",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.350",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.351",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.364",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.365",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.366",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.371",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.373",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "GeoGebra innebär alltid tillåten miniräknare enligt nya användarbeslutet.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.462",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.467",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.532",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.534",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.583",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.588",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.589",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.590",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.592",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermato2.js",
+      "id": "2.573",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgiftermatf1.js",
+      "id": "3.287",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Frågan efterfrågar digital undersökning, numerisk integral, regression eller ekvationslösning.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: GeoGebra och miniräknare är nu båda tillåtna."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.44",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Normalfördelningsfiguren prövar avläsning av andel; miniräknare tillåts för andel × 800/500. GeoGebra behövs inte när figuren är given.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: Miniräknare är tillåten för antalsberäkningen; figuren används för att tolka andelen."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.115",
+      "utfall": "Åtgärdad – verktygsbehörigheter",
+      "bedömning": "Normalfördelningsfiguren prövar avläsning av andel; miniräknare tillåts för andel × 800/500. GeoGebra behövs inte när figuren är given.",
+      "kommentarsförslag": "Verktygstaggarna är uppdaterade: Miniräknare är tillåten för antalsberäkningen; figuren används för att tolka andelen."
+    },
+    {
+      "bank": "uppgifterma1.js",
+      "id": "3.118",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Potensjämförelse med motivering utan digitala verktyg. Logaritmberäkning skulle ersätta den metod som prövas.",
+      "kommentarsförslag": "Granskad – inget fel: Potensjämförelse med motivering utan digitala verktyg. Logaritmberäkning skulle ersätta den metod som prövas."
+    },
+    {
+      "bank": "uppgifterma1.js",
+      "id": "3.177",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Olikheten ska visas utan digitala verktyg genom potensregler; en numerisk kvot ersätter inte beviset.",
+      "kommentarsförslag": "Granskad – inget fel: Olikheten ska visas utan digitala verktyg genom potensregler; en numerisk kvot ersätter inte beviset."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "2.55",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "En enkel exponentialekvation ska lösas med potensregler utan digitalt verktyg.",
+      "kommentarsförslag": "Granskad – inget fel: En enkel exponentialekvation ska lösas med potensregler utan digitalt verktyg."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "2.69",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Två modeller är redan givna. Miniräknare tillåts för residualer; eleven behöver inte göra regressionen på nytt.",
+      "kommentarsförslag": "Granskad – inget fel: Två modeller är redan givna. Miniräknare tillåts för residualer; eleven behöver inte göra regressionen på nytt."
+    },
+    {
+      "bank": "uppgifterma2.js",
+      "id": "4.290",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Regressionslinjen är redan given. Miniräknare är tillåten; det saknade värdet bestäms algebraiskt utan att återköra regression.",
+      "kommentarsförslag": "Granskad – inget fel: Regressionslinjen är redan given. Miniräknare är tillåten; det saknade värdet bestäms algebraiskt utan att återköra regression."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.586",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Integralen ska tolkas som en halvcirkels area utan digitalt verktyg. Numerisk integration skulle ersätta just den tolkningen.",
+      "kommentarsförslag": "Granskad – inget fel: Integralen ska tolkas som en halvcirkels area utan digitalt verktyg. Numerisk integration skulle ersätta just den tolkningen."
+    },
+    {
+      "bank": "uppgiftermatf1.js",
+      "id": "3.53",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Integralvärdet är redan givet. Uppgiften prövar geometrisk betydelse, inte numerisk integration. Miniräknare är tillåten.",
+      "kommentarsförslag": "Granskad – inget fel: Integralvärdet är redan givet. Uppgiften prövar geometrisk betydelse, inte numerisk integration. Miniräknare är tillåten."
+    },
+    {
+      "bank": "uppgiftermatf1.js",
+      "id": "4.87",
+      "utfall": "Granskad – inget fel i verktygsvalet",
+      "bedömning": "Lösningsförslaget är redan givet. Kontroll genom derivata och insättning är målet, inte digital lösning av differentialekvationen. Miniräknare är tillåten.",
+      "kommentarsförslag": "Granskad – inget fel: Lösningsförslaget är redan givet. Kontroll genom derivata och insättning är målet, inte digital lösning av differentialekvationen. Miniräknare är tillåten."
+    },
+    {
+      "bank": "uppgiftermato1.js",
+      "id": "3.466",
+      "utfall": "Granskad – kvarstående delbedömning",
+      "bedömning": "a frågar vad man kan avgöra utan digitalt verktyg; b ber om ett numeriskt integralvärde. Hela uppgiften är inte fristående delkort. Kontrollera metodvillkor och verktygsbehörighet per del i den fortsatta genomgången. Ingen ny GeoGebra-tagg sätts slentrianmässigt.",
+      "kommentarsförslag": "Delarnas verktygsbehov behöver granskas var för sig. Uppgiften är ännu inte färdigreviderad."
+    }
+  ],
+  "fullPedagogicalReviewCompleted": false
+}

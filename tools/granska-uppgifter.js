@@ -152,6 +152,17 @@ function granskaBank(filnamn, bank, projektrot, struktur = null) {
   bank.forEach((u, index) => {
     const kort = kortUppgift(u, index);
     if (!arObjekt(u)) { laggTill(resultat, 'ERROR', 'TASK_NOT_OBJECT', kort, 'Bankelementet är inte ett objekt.'); return; }
+    if (u.geogebra === true && u.miniräknare !== true)
+      laggTill(resultat, 'ERROR', 'GEOGEBRA_REQUIRES_CALCULATOR', kort,
+        'GeoGebra är tillåtet men miniräknare är inte tillåten.');
+    if (Array.isArray(u.spelDelar)) u.spelDelar.forEach((del, i) => {
+      if (!arObjekt(del)) return;
+      const geo = del.geogebra ?? u.geogebra;
+      const calc = del.miniräknare ?? u.miniräknare;
+      if (geo === true && calc !== true)
+        laggTill(resultat, 'ERROR', 'GEOGEBRA_REQUIRES_CALCULATOR', kort,
+          `Deluppgift ${i + 1} tillåter GeoGebra men inte miniräknare.`, {delIndex: i + 1});
+    });
     const id = textFinns(u.id) ? u.id.trim() : '';
     if (!id) laggTill(resultat, 'ERROR', 'MISSING_ID', kort, 'ID saknas eller är tomt.'); else { if (!idPositioner.has(id)) idPositioner.set(id, []); idPositioner.get(id).push(index + 1); }
     if (!textFinns(u.niva)) laggTill(resultat, 'ERROR', 'MISSING_LEVEL', kort, 'Nivå saknas eller är tom.'); else if (!GILTIGA_NIVAER.has(u.niva.trim())) laggTill(resultat, 'ERROR', 'INVALID_LEVEL', kort, `Ogiltig nivå: ${u.niva}.`);

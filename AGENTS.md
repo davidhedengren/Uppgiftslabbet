@@ -17,3 +17,13 @@ dokumentera då varför det tidigare beslutet ersätts och anpassa testerna efte
 korrekt beteende. Ta aldrig bort en regressionstest enbart för att få grön körning.
 
 Uppgiftslabbet är master för de gemensamma bankerna. Följ synkroniseringsreglerna.
+
+## Obligatorisk kontroll av verktyg
+
+Vid varje konstruktion, granskning och rättning: kontrollera miniräknare och
+GeoGebra för huvuduppgift och delkort enligt masterrepots
+`agent/PEDAGOGISKA_REGLER.md`, ”Verktygsval i varje granskning”. Tillåt
+miniräknare för beräkningar som inte är snabb huvudräkning, så länge den inte
+tar bort det som prövas. GeoGebra tillåts när digitala funktioner behövs.
+**GeoGebra tillåtet innebär alltid att miniräknare också är tillåten.**
+Motivera pedagogiska undantag och kontrollera de faktiska kortens metadata.

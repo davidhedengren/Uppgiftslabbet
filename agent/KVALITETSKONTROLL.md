@@ -21,6 +21,8 @@ För varje ändrad uppgift:
 - [ ] Bedöm förmåga självständigt.
 - [ ] Bedöm nivå självständigt.
 - [ ] Bedöm självrättningsbarhet självständigt.
+- [ ] Kontrollera miniräknare och GeoGebra utifrån uppgiftens syfte och beräkningsbehov; motivera om ett verktyg skulle ta bort det som prövas.
+- [ ] Kontrollera verktygsbehörigheter på varje fristående delkort. GeoGebra tillåtet innebär alltid tillåten miniräknare.
 - [ ] Kontrollera att svarsformat, etiketter, tolerans, enheter och alternativa representationer motsvarar matematiken.
 - [ ] Kontrollera att uppgiftstext, facit och maskinellt rätt svar är förenliga.
 - [ ] Bevara ID om uppgiftens identitet inte faktiskt har ändrats.

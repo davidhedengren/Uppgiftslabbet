@@ -241,10 +241,49 @@ nämnaren ändras. Uppgifter om oförändrad standardavvikelse måste lösas om 
 
 ### Verktyg för standardavvikelse
 
-Användarbeslut 2026-10-14: när eleven behöver beräkna standardavvikelse från
-data används **GeoGebra**. Sätt `geogebra:true` och `miniräknare:false` på dessa
-uppgifter/kort. Kunskapsgymmets inbyggda miniräknare har ingen statistikfunktion.
-Andra delar i samma uppgift, exempelvis median eller variationsbredd, behåller
-sina tidigare miniräknartillstånd. GeoGebra tillåts i hela läraruppgiften.
-Separata korts uttryckliga verktygsmetadata ska gå före förälderns metadata.
-Frågor och ledtrådar ska hänvisa till GeoGebra, inte till Sx på miniräknaren.
+Senaste användarbeslutet 2026-10-14 ersätter den tidigare spärren för vanlig
+miniräknare: standardavvikelseberäkningar tillåter GeoGebra **och** miniräknare.
+Sätt `geogebra:true` och `miniräknare:true`. GeoGebra behövs för statistikfunktionen,
+men tillståndet att använda den vanliga miniräknaren får inte dras in.
+Separata korts uttryckliga verktygsmetadata går före förälderns, med det
+överordnade kravet att tillåten GeoGebra alltid innebär tillåten miniräknare.
+
+## Verktygsval i varje granskning
+
+Användarbeslut 2026-10-14 gäller vid konstruktion, analys, rättning och revidering.
+**Kontrollera alltid både `miniräknare` och `geogebra` för huvuduppgiften och varje
+fristående delkort.** Verktygstaggar är en del av den pedagogiska granskningen,
+inte något som får lämnas till en separat framtida kontroll.
+
+1. Identifiera först vad eleven ska lära sig och vad svaret prövar.
+2. Tillåt miniräknare när beräkningarna inte kan göras snabbt och enkelt i huvudet:
+   till exempel multiplikation med stora tal utanför enkla tabellfakta (ungefär
+   upp till 11:ans tabell), besvärliga divisioner, potenser, rötter, logaritmer
+   och numeriska värden av sinus, cosinus och tangens.
+3. Fråga: **Gör miniräknaren uppgiften för lätt eller tar den bort det som ska
+   prövas?** Om svaret är nej får miniräknare gärna tillåtas även när den inte
+   är absolut nödvändig. Gymnasiematematiken ska normalt inte pröva huvudräkning
+   eller hur väl eleven ställer upp aritmetiska algoritmer för hand.
+4. Tillåt GeoGebra när arbetet kräver digitala verktyg: digital grafanalys,
+   grafritning/undersökning, statistiska mått från data, regression, numerisk
+   lösning av ekvationer och mer avancerade integraler/derivator där ett digitalt
+   verktyg behövs. Anger frågan att digitala verktyg ska/får användas måste
+   metadata tillåta det. Att läsa av en redan given enkel figur kräver inte
+   automatiskt GeoGebra.
+5. **GeoGebra tillåtet ⇒ miniräknare alltid tillåten.** Detta gäller såväl
+   huvuduppgift som delkort. En GeoGebra-tagg får aldrig kombineras med spärrad
+   miniräknare, även om den inbyggda miniräknaren saknar en viss funktion.
+6. Om ett verktyg skulle ge bort den metod, det samband eller det resonemang
+   som uttryckligen prövas, gör ett pedagogiskt motiverat undantag. Exempel:
+   användning av potenslagar, exakt symbolisk algebra eller en kvalitativ
+   förutsägelse före digital beräkning. Motivera undantaget i granskningsloggen;
+   ett stort tal eller ordet ”graf” räcker inte ensamt som beslutsgrund.
+7. Kontrollera särskilt blandade uppgifter. En del som ska lösas utan digitalt
+   verktyg och en annan som kräver det behöver skilda delkort/behörigheter.
+   Hela uppgiftens tillstånd får inte blint användas för alla delar.
+
+Fysikens tidigare regel gäller fortsatt: miniräknare är alltid tillåten i
+Fysik 1 och 2. GeoGebra bedöms efter behovet av digitala funktioner.
+Dokumentera verktygsbeslut tillsammans med nivå, facit och självrättning.
+Heuristiska sökningar får hitta granskningskandidater men ska inte massändra
+verktygsflaggor utan en pedagogisk bedömning.

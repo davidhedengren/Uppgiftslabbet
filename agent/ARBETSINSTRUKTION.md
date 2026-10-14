@@ -116,3 +116,13 @@ Oberoende AI-granskningar ska endast göras när en konkret risknivå motiverar 
 ## 8. Fysik: språk och lösningar
 
 Användarens instruktion 2026-10-08: fysikfacit ska vara sammanhängande förklaringar och tydliga beräkningar utan numrerade lösningssteg. Visa de mellanled som behövs för att förstå svaret, särskilt enhetsomvandlingar, reaktionssträcka, bromssträcka och deras summa. Deluppgifter a), b) osv. ska stå på egna rader. Nivå 1 ska innehålla de allra enklaste uppgifterna med korta, konkreta formuleringar. Granska själva fysiken och varje berört delkort manuellt innan innehåll ändras; enbart presentation eller automatiska kontroller innebär inte att en uppgift är färdiggranskad.
+
+## 9. Verktygsbehörigheter i all uppgiftsgranskning
+
+Vid varje analys, rättning, konstruktion och revidering ska agenten kontrollera
+miniräknare och GeoGebra för både huvuduppgift och delkort. Följ
+`PEDAGOGISKA_REGLER.md`, ”Verktygsval i varje granskning”. Verktyget ska hjälpa
+med beräkningen utan att ta bort den kunskap som prövas. GeoGebra tillåtet
+innebär alltid miniräknare tillåten. Ta med verktygsbesluten i granskningsloggen
+och kör tillstånds-/konsumentkontroller; en heuristisk inventering räcker inte
+som fullständig pedagogisk genomgång.

@@ -152,3 +152,19 @@ test('svarsmetadata som används genomgående får inte saknas', () => {
   assert.ok(harKod(r,'MISSING_RIGHT_ANSWER_METADATA','ERROR'));
   assert.ok(harKod(r,'MISSING_TOLERANCE_METADATA','WARNING'));
 });
+
+test('GeoGebra med spärrad eller saknad miniräknare är ett säkert kontraktsfel',()=>{
+ for(const value of [false,undefined]){
+  const r=granskaBank('test.js',[uppgift({geogebra:true,miniräknare:value})],projektrot,struktur);
+  assert.ok(harKod(r,'GEOGEBRA_REQUIRES_CALCULATOR','ERROR'));
+ }
+ const good=granskaBank('test.js',[uppgift({geogebra:true,miniräknare:true})],projektrot,struktur);
+ assert.equal(harKod(good,'GEOGEBRA_REQUIRES_CALCULATOR'),false);
+});
+test('Verktygsvalidering använder delkortens uttryckliga flaggor och annars arv',()=>{
+ const parts=[{t:'A',s:'Svar',geogebra:true,miniräknare:false},{t:'B',s:'Svar',geogebra:false,miniräknare:false},{t:'C',s:'Svar'}];
+ const r=granskaBank('test.js',[uppgift({geogebra:true,miniräknare:true,spelDelar:parts})],projektrot,struktur);
+ const errors=r.fynd.filter(f=>f.kod==='GEOGEBRA_REQUIRES_CALCULATOR');assert.equal(errors.length,1);assert.equal(errors[0].delIndex,1);
+ const inherited=granskaBank('test.js',[uppgift({geogebra:true,miniräknare:false,spelDelar:[{t:'A',s:'Svar'},{t:'B',s:'Svar',miniräknare:true}]})],projektrot,struktur);
+ assert.deepEqual(inherited.fynd.filter(f=>f.kod==='GEOGEBRA_REQUIRES_CALCULATOR').map(f=>f.delIndex||0),[0,1]);
+});
