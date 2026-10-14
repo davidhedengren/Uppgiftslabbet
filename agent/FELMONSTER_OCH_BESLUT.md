@@ -857,3 +857,16 @@ Skydd: master `tools/felrapporter-2026-10-14-1325.test.js`; konsument
 Matf1 #1.680 a har rätt facit 25/81; mato1 #2.250 har korrekt derivata och
 testade ekvivalenta skrivsätt. Historiska underkännanden kan inte förklaras
 säkert utan elevens faktiska inmatning. Lagra dem inte som bevisade facitfel.
+
+
+## ST02 – lektionsområden och historiska uppdragskort (2026-10-14)
+
+[Beslut och verifiering](LEKTIONSOMRADEN_MA2_2026-10-14.md). Ma2:s breda
+GRUPPMA2-samlingskort är historiska; nya kort följer befintliga OMR-moment.
+Konjugatregeln och kvadreringsreglerna är ett gemensamt område. I 2a samlas
+andragradsfördjupning med tillämpningarna. ST01:s geometriavgränsning bevaras.
+Gamla g:-nycklar måste fungera för sparade dagsuppdrag och arkiverade uppdrag
+utan att återkomma i nya rekommendationer. Ändra inte OMR eller familjer för
+en ren visningsuppdelning. Uppgiftslabbet ska behålla ordningen och filtrera
+historiska/spårbegränsade grupper. Tester: lektionsomraden.test.js i båda
+repona och lektionsomraden.browser.js i Kunskapsgymmet.

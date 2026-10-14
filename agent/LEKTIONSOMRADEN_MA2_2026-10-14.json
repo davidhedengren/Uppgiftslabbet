@@ -1,0 +1,3497 @@
+{
+  "tracks": [
+    {
+      "track": "2a",
+      "cards": [
+        {
+          "key": "rata_linjens_ekvation",
+          "name": "Räta linjens ekvation",
+          "kap": 1,
+          "omr": [
+            "rata_linjens_ekvation"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Tolka och använda y = kx + m",
+              "count": 17
+            },
+            {
+              "family": "Skärningspunkter, parallella och vinkelräta linjer",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm linjens skärningar med axlarna"
+          ]
+        },
+        {
+          "key": "linjara_representationer",
+          "name": "Räta linjer: formel, tabell och graf",
+          "kap": 1,
+          "omr": [
+            "linjara_representationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Från tabell till formel",
+              "count": 11
+            },
+            {
+              "family": "Växla mellan text, graf och formel",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm en linjär funktion från en tabell"
+          ]
+        },
+        {
+          "key": "bestamma_linjara_funktioner",
+          "name": "Bestämma linjära funktioner",
+          "kap": 1,
+          "omr": [
+            "bestamma_linjara_funktioner"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Linjär funktion från villkor",
+              "count": 11
+            },
+            {
+              "family": "Linjär funktion från två punkter",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm linjen genom två punkter"
+          ]
+        },
+        {
+          "key": "linjara_ekvationssystem",
+          "name": "Linjära ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "linjara_ekvationssystem"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Lösa och kontrollera ekvationssystem",
+              "count": 10
+            },
+            {
+              "family": "Ekvationssystem i text och med parametrar",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "grafisk_losning_ekvationssystem",
+          "name": "Grafisk lösning av ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "grafisk_losning_ekvationssystem"
+          ],
+          "count": 11,
+          "families": [],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "substitutionsmetoden",
+          "name": "Substitutionsmetoden",
+          "kap": 1,
+          "omr": [
+            "substitutionsmetoden"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Lösa med substitutionsmetoden",
+              "count": 17
+            },
+            {
+              "family": "Substitution med parametrar och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med substitution"
+          ]
+        },
+        {
+          "key": "additionsmetoden",
+          "name": "Additionsmetoden",
+          "kap": 1,
+          "omr": [
+            "additionsmetoden"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Eliminera med additionsmetoden",
+              "count": 16
+            },
+            {
+              "family": "Välja multiplikator och parametrar",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med addition"
+          ]
+        },
+        {
+          "key": "speciella_ekvationssystem",
+          "name": "Ekvationssystem med ingen eller oändligt många lösningar",
+          "kap": 1,
+          "omr": [
+            "speciella_ekvationssystem"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Klassificera antal lösningar",
+              "count": 17
+            },
+            {
+              "family": "Parameterfall i ekvationssystem",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Avgör om ett system saknar eller har oändligt många lösningar"
+          ]
+        },
+        {
+          "key": "ekvationssystem_tillampningar",
+          "name": "Tillämpningar och problemlösning med ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "ekvationssystem_tillampningar"
+          ],
+          "count": 31,
+          "families": [
+            {
+              "family": "Ekonomiska problem med ekvationssystem",
+              "count": 15
+            },
+            {
+              "family": "Blandnings-, rörelse- och talproblem",
+              "count": 9
+            },
+            {
+              "family": "Ställa upp ekvationssystem",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa ett ekvationssystem från en text"
+          ]
+        },
+        {
+          "key": "multiplicera_parenteser",
+          "name": "Multiplikation av parentesuttryck",
+          "kap": 1,
+          "omr": [
+            "multiplicera_parenteser"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Förenkla och bestämma konstanter",
+              "count": 12
+            },
+            {
+              "family": "Utveckla produkter av parenteser",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Multiplicera två parenteser"
+          ]
+        },
+        {
+          "key": "g:konjugat_kvadrering",
+          "name": "Konjugatregeln och kvadreringsreglerna",
+          "kap": 1,
+          "omr": [
+            "konjugatregeln",
+            "kvadreringsreglerna"
+          ],
+          "count": 47,
+          "families": [
+            {
+              "family": "Utveckla och räkna med konjugatregeln",
+              "count": 14
+            },
+            {
+              "family": "Faktorisera och lösa ekvationer med konjugatregeln",
+              "count": 12
+            },
+            {
+              "family": "Kvadreringsregler med parametrar och rötter",
+              "count": 11
+            },
+            {
+              "family": "Utveckla med kvadreringsreglerna",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd konjugatregeln",
+            "Kvadrera en summa",
+            "Kvadrera en differens"
+          ]
+        },
+        {
+          "key": "faktorisering",
+          "name": "Faktorisering",
+          "kap": 1,
+          "omr": [
+            "faktorisering"
+          ],
+          "count": 24,
+          "families": [
+            {
+              "family": "Faktorisera i flera steg",
+              "count": 15
+            },
+            {
+              "family": "Faktorisering för ekvationslösning",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Faktorisera ett uttryck"
+          ]
+        },
+        {
+          "key": "enkla_andragradsekvationer",
+          "name": "Enkla andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "enkla_andragradsekvationer"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Ekvationer av typen x² = a",
+              "count": 20
+            },
+            {
+              "family": "Ekvationer av typen (x + a)² = b",
+              "count": 17
+            }
+          ],
+          "lessons": [
+            "Lös en enkel andragradsekvation"
+          ]
+        },
+        {
+          "key": "nollproduktmetoden",
+          "name": "Nollproduktmetoden",
+          "kap": 2,
+          "omr": [
+            "nollproduktmetoden"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Nollproduktmetoden i faktoriserad form",
+              "count": 24
+            },
+            {
+              "family": "Faktorisera och lösa med nollproduktmetoden",
+              "count": 13
+            }
+          ],
+          "lessons": [
+            "Använd nollproduktmetoden"
+          ]
+        },
+        {
+          "key": "losningsformel_andragrad",
+          "name": "Lösningsformel för andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "losningsformel_andragrad"
+          ],
+          "count": 32,
+          "families": [
+            {
+              "family": "Lösa med pq-formeln",
+              "count": 18
+            },
+            {
+              "family": "Ekvationer där x²-termen har en koefficient",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Lös med pq-formeln"
+          ]
+        },
+        {
+          "key": "g:andragrad_tillampning_2a",
+          "name": "Andragradsekvationer – tillämpningar och fördjupning",
+          "kap": 2,
+          "omr": [
+            "mer_om_andragradsekvationer",
+            "andragradsekvationer_tillampningar"
+          ],
+          "count": 32,
+          "families": [
+            {
+              "family": "Andragradsekvationer i geometri",
+              "count": 23
+            },
+            {
+              "family": "Talproblem och villkor",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa en andragradsekvation i ett problem"
+          ]
+        },
+        {
+          "key": "andragradsfunktioner",
+          "name": "Andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Egenskaper och funktionsvärden",
+              "count": 24
+            },
+            {
+              "family": "Bestämma andragradsfunktion från nollställen",
+              "count": 10
+            },
+            {
+              "family": "Parameterfamiljer av andragradsfunktioner",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "andragradsfunktion_graf",
+          "name": "Andragradsfunktionens graf",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktion_graf"
+          ],
+          "count": 52,
+          "families": [
+            {
+              "family": "Avläsa egenskaper ur grafen",
+              "count": 38
+            },
+            {
+              "family": "Bestämma formel från graf",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "symmetrilinje_extrempunkt",
+          "name": "Största och minsta värde",
+          "kap": 2,
+          "omr": [
+            "symmetrilinje_extrempunkt"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Extrempunkt från funktionsformel",
+              "count": 19
+            },
+            {
+              "family": "Extrempunkt från nollställen",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "fran_graf_till_formel",
+          "name": "Från graf till formel",
+          "kap": 2,
+          "omr": [
+            "fran_graf_till_formel"
+          ],
+          "count": 28,
+          "families": [
+            {
+              "family": "Avläsa koefficienter ur grafen",
+              "count": 17
+            },
+            {
+              "family": "Andragradsfunktion från graf och punkter",
+              "count": 11
+            }
+          ],
+          "lessons": []
+        },
+        {
+          "key": "andragradsfunktioner_tillampningar",
+          "name": "Problemlösning med andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner_tillampningar"
+          ],
+          "count": 38,
+          "families": [
+            {
+              "family": "Olikheter och intervall",
+              "count": 15
+            },
+            {
+              "family": "Optimering",
+              "count": 15
+            },
+            {
+              "family": "Rörelse- och höjdmodeller",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka en andragradsmodell"
+          ]
+        },
+        {
+          "key": "potensregler",
+          "name": "Potenser och potensregler",
+          "kap": 2,
+          "omr": [
+            "potensregler"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Förenkla med potensregler",
+              "count": 22
+            },
+            {
+              "family": "Bestämma exponenter och tillämpningar",
+              "count": 12
+            },
+            {
+              "family": "Negativa och rationella exponenter",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Använd potensreglerna"
+          ]
+        },
+        {
+          "key": "potensfunktioner",
+          "name": "Potensfunktioner",
+          "kap": 2,
+          "omr": [
+            "potensfunktioner"
+          ],
+          "count": 30,
+          "families": [
+            {
+              "family": "Tolka och använda potensfunktioner",
+              "count": 20
+            },
+            {
+              "family": "Skalning med potensfunktioner",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Tolka en potensfunktion"
+          ]
+        },
+        {
+          "key": "exponentialfunktioner",
+          "name": "Exponentialfunktioner",
+          "kap": 2,
+          "omr": [
+            "exponentialfunktioner"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Förändringsfaktor och procent",
+              "count": 14
+            },
+            {
+              "family": "Beräkna och tolka exponentialfunktioner",
+              "count": 13
+            },
+            {
+              "family": "Bestämma exponentialmodell",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bygg och använd en exponentialmodell"
+          ]
+        },
+        {
+          "key": "exponentialgraf",
+          "name": "Exponentialfunktioners grafer",
+          "kap": 2,
+          "omr": [
+            "exponentialgraf"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Tolka tillväxt och avtagande",
+              "count": 14
+            },
+            {
+              "family": "Avläsa exponentialgrafer",
+              "count": 13
+            }
+          ],
+          "lessons": [
+            "Tolka en exponentialfunktions graf"
+          ]
+        },
+        {
+          "key": "exponentialekvationer",
+          "name": "Exponentialekvationer",
+          "kap": 2,
+          "omr": [
+            "exponentialekvationer"
+          ],
+          "count": 36,
+          "families": [
+            {
+              "family": "Tillämpade exponentialekvationer",
+              "count": 20
+            },
+            {
+              "family": "Lösa exponentialekvationer algebraiskt",
+              "count": 9
+            },
+            {
+              "family": "Lösa exponentialekvationer digitalt eller grafiskt",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Lös en exponentialekvation grafiskt"
+          ]
+        },
+        {
+          "key": "potensekvationer",
+          "name": "Potensekvationer",
+          "kap": 2,
+          "omr": [
+            "potensekvationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Isolera potensen och ta roten",
+              "count": 11
+            },
+            {
+              "family": "Skiftade potensekvationer och två rötter",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Lös en potensekvation"
+          ]
+        },
+        {
+          "key": "yttervinkelsatsen",
+          "name": "Yttervinkelsatsen",
+          "kap": 3,
+          "omr": [
+            "yttervinkelsatsen"
+          ],
+          "count": 11,
+          "families": [
+            {
+              "family": "Yttervinkelsatsen med ekvationer och likbenta trianglar",
+              "count": 6
+            },
+            {
+              "family": "Beräkna vinklar med yttervinkelsatsen",
+              "count": 5
+            }
+          ],
+          "lessons": []
+        },
+        {
+          "key": "pythagoras",
+          "name": "Pythagoras sats",
+          "kap": 3,
+          "omr": [
+            "pythagoras"
+          ],
+          "count": 50,
+          "families": [
+            {
+              "family": "Diagonaler och tillämpningar",
+              "count": 25
+            },
+            {
+              "family": "Beräkna sidor i rätvinkliga trianglar",
+              "count": 17
+            },
+            {
+              "family": "Omvändning, bevis och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Beräkna en längd med Pythagoras sats"
+          ]
+        },
+        {
+          "key": "avstandsformeln_mittpunktsformeln",
+          "name": "Avståndsformeln och mittpunktsformeln",
+          "kap": 3,
+          "omr": [
+            "avstandsformeln_mittpunktsformeln"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avståndsformeln och kombinerade problem",
+              "count": 24
+            },
+            {
+              "family": "Mittpunktsformeln",
+              "count": 15
+            }
+          ],
+          "lessons": [
+            "Bestäm avstånd och mittpunkt"
+          ]
+        },
+        {
+          "key": "koordinatgeometri_problemlosning",
+          "name": "Koordinatgeometri – problemlösning",
+          "kap": 3,
+          "omr": [
+            "koordinatgeometri_problemlosning"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avstånd, mittpunkt och villkor i koordinatsystem",
+              "count": 21
+            },
+            {
+              "family": "Area och omkrets i koordinatsystem",
+              "count": 18
+            }
+          ],
+          "lessons": [
+            "Kontrollera en rät vinkel med koordinater"
+          ]
+        },
+        {
+          "key": "tabeller_diagram",
+          "name": "Tabeller och diagram",
+          "kap": 4,
+          "omr": [
+            "tabeller_diagram"
+          ],
+          "count": 9,
+          "families": [],
+          "lessons": []
+        },
+        {
+          "key": "lagesmatt",
+          "name": "Medelvärde, median och typvärde",
+          "kap": 4,
+          "omr": [
+            "lagesmatt"
+          ],
+          "count": 75,
+          "families": [
+            {
+              "family": "Beräkna lägesmått",
+              "count": 51
+            },
+            {
+              "family": "Viktat medelvärde och saknade värden",
+              "count": 18
+            },
+            {
+              "family": "Förändring av lägesmått",
+              "count": 5
+            }
+          ],
+          "lessons": [
+            "Bestäm medelvärde, median och typvärde"
+          ]
+        },
+        {
+          "key": "kvartiler_percentiler",
+          "name": "Kvartiler och percentiler",
+          "kap": 4,
+          "omr": [
+            "kvartiler_percentiler"
+          ],
+          "count": 43,
+          "families": [
+            {
+              "family": "Percentiler",
+              "count": 31
+            },
+            {
+              "family": "Median, kvartiler och kvartilavstånd",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bestäm median och kvartiler"
+          ]
+        },
+        {
+          "key": "ladagram",
+          "name": "Lådagram",
+          "kap": 4,
+          "omr": [
+            "ladagram"
+          ],
+          "count": 64,
+          "families": [
+            {
+              "family": "Avläsa lådagram",
+              "count": 35
+            },
+            {
+              "family": "Jämföra och rita lådagram",
+              "count": 29
+            }
+          ],
+          "lessons": [
+            "Tolka ett lådagram"
+          ]
+        },
+        {
+          "key": "standardavvikelse",
+          "name": "Standardavvikelse",
+          "kap": 4,
+          "omr": [
+            "standardavvikelse"
+          ],
+          "count": 154,
+          "families": [
+            {
+              "family": "Beräkna och tolka standardavvikelse",
+              "count": 107
+            },
+            {
+              "family": "Jämföra spridning och förändring",
+              "count": 46
+            }
+          ],
+          "lessons": [
+            "Tolka standardavvikelse",
+            "Beräkna standardavvikelse"
+          ]
+        },
+        {
+          "key": "normalfordelat_material",
+          "name": "Normalfördelning",
+          "kap": 4,
+          "omr": [
+            "normalfordelat_material"
+          ],
+          "count": 70,
+          "families": [
+            {
+              "family": "Andel i ett intervall",
+              "count": 48
+            },
+            {
+              "family": "Svansar och standardavvikelse",
+              "count": 22
+            }
+          ],
+          "lessons": [
+            "Använd 68–95–99,7-regeln"
+          ]
+        },
+        {
+          "key": "normalfordelning_digitala_verktyg",
+          "name": "Normalfördelning med digitala verktyg",
+          "kap": 4,
+          "omr": [
+            "normalfordelning_digitala_verktyg"
+          ],
+          "count": 41,
+          "families": [
+            {
+              "family": "Sannolikhet över, under och i intervall",
+              "count": 27
+            },
+            {
+              "family": "Bestämma gränsvärde och percentil",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Beräkna normalfördelningssannolikhet digitalt"
+          ]
+        },
+        {
+          "key": "vard_omsorgsprogrammet",
+          "name": "Vård- och omsorgsprogrammet",
+          "kap": 5,
+          "omr": [
+            "vard_omsorgsprogrammet"
+          ],
+          "count": 65,
+          "families": [
+            {
+              "family": "Vård och omsorg: modeller, ekvationssystem och geometri",
+              "count": 42
+            },
+            {
+              "family": "Vård och omsorg: statistik",
+              "count": 23
+            }
+          ],
+          "lessons": []
+        },
+        {
+          "key": "vvs_fastighetsprogrammet",
+          "name": "VVS- och fastighetsprogrammet",
+          "kap": 5,
+          "omr": [
+            "vvs_fastighetsprogrammet"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "VVS och fastighet: modeller, ekvationssystem och geometri",
+              "count": 29
+            },
+            {
+              "family": "VVS och fastighet: statistik",
+              "count": 8
+            }
+          ],
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "track": "2b",
+      "cards": [
+        {
+          "key": "rata_linjens_ekvation",
+          "name": "Räta linjens ekvation",
+          "kap": 1,
+          "omr": [
+            "rata_linjens_ekvation"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Tolka och använda y = kx + m",
+              "count": 17
+            },
+            {
+              "family": "Skärningspunkter, parallella och vinkelräta linjer",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm linjens skärningar med axlarna"
+          ]
+        },
+        {
+          "key": "linjara_representationer",
+          "name": "Räta linjer: formel, tabell och graf",
+          "kap": 1,
+          "omr": [
+            "linjara_representationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Från tabell till formel",
+              "count": 11
+            },
+            {
+              "family": "Växla mellan text, graf och formel",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm en linjär funktion från en tabell"
+          ]
+        },
+        {
+          "key": "bestamma_linjara_funktioner",
+          "name": "Bestämma linjära funktioner",
+          "kap": 1,
+          "omr": [
+            "bestamma_linjara_funktioner"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Linjär funktion från villkor",
+              "count": 11
+            },
+            {
+              "family": "Linjär funktion från två punkter",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm linjen genom två punkter"
+          ]
+        },
+        {
+          "key": "linjara_ekvationssystem",
+          "name": "Linjära ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "linjara_ekvationssystem"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Lösa och kontrollera ekvationssystem",
+              "count": 10
+            },
+            {
+              "family": "Ekvationssystem i text och med parametrar",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "grafisk_losning_ekvationssystem",
+          "name": "Grafisk lösning av ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "grafisk_losning_ekvationssystem"
+          ],
+          "count": 11,
+          "families": [],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "substitutionsmetoden",
+          "name": "Substitutionsmetoden",
+          "kap": 1,
+          "omr": [
+            "substitutionsmetoden"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Lösa med substitutionsmetoden",
+              "count": 17
+            },
+            {
+              "family": "Substitution med parametrar och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med substitution"
+          ]
+        },
+        {
+          "key": "additionsmetoden",
+          "name": "Additionsmetoden",
+          "kap": 1,
+          "omr": [
+            "additionsmetoden"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Eliminera med additionsmetoden",
+              "count": 16
+            },
+            {
+              "family": "Välja multiplikator och parametrar",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med addition"
+          ]
+        },
+        {
+          "key": "speciella_ekvationssystem",
+          "name": "Ekvationssystem med ingen eller oändligt många lösningar",
+          "kap": 1,
+          "omr": [
+            "speciella_ekvationssystem"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Klassificera antal lösningar",
+              "count": 17
+            },
+            {
+              "family": "Parameterfall i ekvationssystem",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Avgör om ett system saknar eller har oändligt många lösningar"
+          ]
+        },
+        {
+          "key": "ekvationssystem_tillampningar",
+          "name": "Tillämpningar och problemlösning med ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "ekvationssystem_tillampningar"
+          ],
+          "count": 31,
+          "families": [
+            {
+              "family": "Ekonomiska problem med ekvationssystem",
+              "count": 15
+            },
+            {
+              "family": "Blandnings-, rörelse- och talproblem",
+              "count": 9
+            },
+            {
+              "family": "Ställa upp ekvationssystem",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa ett ekvationssystem från en text"
+          ]
+        },
+        {
+          "key": "multiplicera_parenteser",
+          "name": "Multiplikation av parentesuttryck",
+          "kap": 1,
+          "omr": [
+            "multiplicera_parenteser"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Förenkla och bestämma konstanter",
+              "count": 12
+            },
+            {
+              "family": "Utveckla produkter av parenteser",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Multiplicera två parenteser"
+          ]
+        },
+        {
+          "key": "g:konjugat_kvadrering",
+          "name": "Konjugatregeln och kvadreringsreglerna",
+          "kap": 1,
+          "omr": [
+            "konjugatregeln",
+            "kvadreringsreglerna"
+          ],
+          "count": 47,
+          "families": [
+            {
+              "family": "Utveckla och räkna med konjugatregeln",
+              "count": 14
+            },
+            {
+              "family": "Faktorisera och lösa ekvationer med konjugatregeln",
+              "count": 12
+            },
+            {
+              "family": "Kvadreringsregler med parametrar och rötter",
+              "count": 11
+            },
+            {
+              "family": "Utveckla med kvadreringsreglerna",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd konjugatregeln",
+            "Kvadrera en summa",
+            "Kvadrera en differens"
+          ]
+        },
+        {
+          "key": "faktorisering",
+          "name": "Faktorisering",
+          "kap": 1,
+          "omr": [
+            "faktorisering"
+          ],
+          "count": 24,
+          "families": [
+            {
+              "family": "Faktorisera i flera steg",
+              "count": 15
+            },
+            {
+              "family": "Faktorisering för ekvationslösning",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Faktorisera ett uttryck"
+          ]
+        },
+        {
+          "key": "enkla_andragradsekvationer",
+          "name": "Enkla andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "enkla_andragradsekvationer"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Ekvationer av typen x² = a",
+              "count": 20
+            },
+            {
+              "family": "Ekvationer av typen (x + a)² = b",
+              "count": 17
+            }
+          ],
+          "lessons": [
+            "Lös en enkel andragradsekvation"
+          ]
+        },
+        {
+          "key": "nollproduktmetoden",
+          "name": "Nollproduktmetoden",
+          "kap": 2,
+          "omr": [
+            "nollproduktmetoden"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Nollproduktmetoden i faktoriserad form",
+              "count": 24
+            },
+            {
+              "family": "Faktorisera och lösa med nollproduktmetoden",
+              "count": 13
+            }
+          ],
+          "lessons": [
+            "Använd nollproduktmetoden"
+          ]
+        },
+        {
+          "key": "losningsformel_andragrad",
+          "name": "Lösningsformel för andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "losningsformel_andragrad"
+          ],
+          "count": 32,
+          "families": [
+            {
+              "family": "Lösa med pq-formeln",
+              "count": 18
+            },
+            {
+              "family": "Ekvationer där x²-termen har en koefficient",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Lös med pq-formeln"
+          ]
+        },
+        {
+          "key": "mer_om_andragradsekvationer",
+          "name": "Andragradsekvationer – fördjupning",
+          "kap": 2,
+          "omr": [
+            "mer_om_andragradsekvationer"
+          ],
+          "count": 15,
+          "families": [
+            {
+              "family": "Sammansatta andragradsekvationer",
+              "count": 9
+            },
+            {
+              "family": "Parametrar och villkor på rötterna",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Använd sambandet mellan rötter och koefficienter"
+          ]
+        },
+        {
+          "key": "samband_roter_koefficienter",
+          "name": "Samband mellan rötter och koefficienter",
+          "kap": 2,
+          "omr": [
+            "samband_roter_koefficienter"
+          ],
+          "count": 17,
+          "families": [
+            {
+              "family": "Från rötter till ekvation",
+              "count": 10
+            },
+            {
+              "family": "Rötternas summa och produkt",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Använd sambandet mellan rötter och koefficienter"
+          ]
+        },
+        {
+          "key": "andragradsekvationer_tillampningar",
+          "name": "Tillämpningar och problemlösning med andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "andragradsekvationer_tillampningar"
+          ],
+          "count": 30,
+          "families": [
+            {
+              "family": "Andragradsekvationer i geometri",
+              "count": 23
+            },
+            {
+              "family": "Talproblem och villkor",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa en andragradsekvation i ett problem"
+          ]
+        },
+        {
+          "key": "funktionsskrivsatt_rep",
+          "name": "Funktioner och funktionsskrivsätt – repetition",
+          "kap": 2,
+          "omr": [
+            "funktionsskrivsatt_rep"
+          ],
+          "count": 129,
+          "families": [
+            {
+              "family": "Funktionsnotation och grafer",
+              "count": 69
+            },
+            {
+              "family": "Lösa ekvationer med funktionsvärden",
+              "count": 32
+            },
+            {
+              "family": "Beräkna funktionsvärden",
+              "count": 21
+            },
+            {
+              "family": "Tolka funktionsnotation",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Tolka funktionsnotation"
+          ]
+        },
+        {
+          "key": "andragradsfunktioner",
+          "name": "Andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Egenskaper och funktionsvärden",
+              "count": 24
+            },
+            {
+              "family": "Bestämma andragradsfunktion från nollställen",
+              "count": 10
+            },
+            {
+              "family": "Parameterfamiljer av andragradsfunktioner",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "andragradsfunktion_graf",
+          "name": "Andragradsfunktionens graf",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktion_graf"
+          ],
+          "count": 52,
+          "families": [
+            {
+              "family": "Avläsa egenskaper ur grafen",
+              "count": 38
+            },
+            {
+              "family": "Bestämma formel från graf",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "symmetrilinje_extrempunkt",
+          "name": "Största och minsta värde",
+          "kap": 2,
+          "omr": [
+            "symmetrilinje_extrempunkt"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Extrempunkt från funktionsformel",
+              "count": 19
+            },
+            {
+              "family": "Extrempunkt från nollställen",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "fran_graf_till_formel",
+          "name": "Från graf till formel",
+          "kap": 2,
+          "omr": [
+            "fran_graf_till_formel"
+          ],
+          "count": 28,
+          "families": [
+            {
+              "family": "Avläsa koefficienter ur grafen",
+              "count": 17
+            },
+            {
+              "family": "Andragradsfunktion från graf och punkter",
+              "count": 11
+            }
+          ],
+          "lessons": []
+        },
+        {
+          "key": "andragradsfunktioner_tillampningar",
+          "name": "Problemlösning med andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner_tillampningar"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Optimering",
+              "count": 16
+            },
+            {
+              "family": "Olikheter och intervall",
+              "count": 15
+            },
+            {
+              "family": "Rörelse- och höjdmodeller",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka en andragradsmodell"
+          ]
+        },
+        {
+          "key": "potensregler",
+          "name": "Potenser och potensregler",
+          "kap": 2,
+          "omr": [
+            "potensregler"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Förenkla med potensregler",
+              "count": 22
+            },
+            {
+              "family": "Bestämma exponenter och tillämpningar",
+              "count": 12
+            },
+            {
+              "family": "Negativa och rationella exponenter",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Använd potensreglerna"
+          ]
+        },
+        {
+          "key": "exponentialfunktioner",
+          "name": "Exponentialfunktioner",
+          "kap": 2,
+          "omr": [
+            "exponentialfunktioner"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Förändringsfaktor och procent",
+              "count": 14
+            },
+            {
+              "family": "Beräkna och tolka exponentialfunktioner",
+              "count": 14
+            },
+            {
+              "family": "Bestämma exponentialmodell",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bygg och använd en exponentialmodell"
+          ]
+        },
+        {
+          "key": "exponentialgraf",
+          "name": "Exponentialfunktioners grafer",
+          "kap": 2,
+          "omr": [
+            "exponentialgraf"
+          ],
+          "count": 28,
+          "families": [
+            {
+              "family": "Tolka tillväxt och avtagande",
+              "count": 14
+            },
+            {
+              "family": "Avläsa exponentialgrafer",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Tolka en exponentialfunktions graf"
+          ]
+        },
+        {
+          "key": "logaritmbegreppet",
+          "name": "Logaritmbegreppet",
+          "kap": 2,
+          "omr": [
+            "logaritmbegreppet"
+          ],
+          "count": 36,
+          "families": [
+            {
+              "family": "Bestämma logaritmvärden",
+              "count": 25
+            },
+            {
+              "family": "Logaritm som invers till exponentialfunktion",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Förstå logaritmer"
+          ]
+        },
+        {
+          "key": "logaritmlagar",
+          "name": "Logaritmlagarna",
+          "kap": 2,
+          "omr": [
+            "logaritmlagar"
+          ],
+          "count": 46,
+          "families": [
+            {
+              "family": "Lösa logaritmekvationer",
+              "count": 19
+            },
+            {
+              "family": "Förenkla med logaritmlagarna",
+              "count": 17
+            },
+            {
+              "family": "Tillämpa logaritmlagarna",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd logaritmlagarna"
+          ]
+        },
+        {
+          "key": "exponentialekvationer",
+          "name": "Exponentialekvationer",
+          "kap": 2,
+          "omr": [
+            "exponentialekvationer"
+          ],
+          "count": 47,
+          "families": [
+            {
+              "family": "Tillämpade exponentialekvationer",
+              "count": 30
+            },
+            {
+              "family": "Lösa exponentialekvationer algebraiskt",
+              "count": 11
+            },
+            {
+              "family": "Lösa exponentialekvationer digitalt eller grafiskt",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Lös en exponentialekvation grafiskt",
+            "Lös en exponentialekvation med logaritmer"
+          ]
+        },
+        {
+          "key": "potensekvationer",
+          "name": "Potensekvationer",
+          "kap": 2,
+          "omr": [
+            "potensekvationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Isolera potensen och ta roten",
+              "count": 11
+            },
+            {
+              "family": "Skiftade potensekvationer och två rötter",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Lös en potensekvation"
+          ]
+        },
+        {
+          "key": "jamfora_exponential_potens",
+          "name": "Jämföra exponential- och potensekvationer",
+          "kap": 2,
+          "omr": [
+            "jamfora_exponential_potens"
+          ],
+          "count": 21,
+          "families": [
+            {
+              "family": "Klassificera funktionstyp",
+              "count": 14
+            },
+            {
+              "family": "Jämföra tillväxt och funktionsvärden",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skilj på potens- och exponentialfunktion"
+          ]
+        },
+        {
+          "key": "regressionsanalys_olika_modeller",
+          "name": "Regressionsanalys",
+          "kap": 2,
+          "omr": [
+            "regressionsanalys_olika_modeller"
+          ],
+          "count": 15,
+          "families": [
+            {
+              "family": "Välja regressionsmodell",
+              "count": 10
+            },
+            {
+              "family": "Jämföra modeller och modellkvalitet",
+              "count": 5
+            }
+          ],
+          "lessons": [
+            "Välj en rimlig regressionsmodell"
+          ]
+        },
+        {
+          "key": "geometriska_begrepp_definitioner",
+          "name": "Geometriska begrepp och definitioner",
+          "kap": 3,
+          "omr": [
+            "geometriska_begrepp_definitioner"
+          ],
+          "count": 36,
+          "families": [
+            {
+              "family": "Geometriska grundbegrepp",
+              "count": 18
+            },
+            {
+              "family": "Vinkelregler och cirklar",
+              "count": 18
+            }
+          ],
+          "lessons": [
+            "Känna igen geometriska begrepp"
+          ]
+        },
+        {
+          "key": "sats_bevis",
+          "name": "Sats och bevis, implikation och ekvivalens",
+          "kap": 3,
+          "omr": [
+            "sats_bevis"
+          ],
+          "count": 59,
+          "families": [
+            {
+              "family": "Implikation och ekvivalens",
+              "count": 27
+            },
+            {
+              "family": "Satser, motexempel och vad ett bevis är",
+              "count": 17
+            },
+            {
+              "family": "Bevis med vinklar",
+              "count": 15
+            }
+          ],
+          "lessons": [
+            "Förstå vad ett bevis visar",
+            "Skilj på implikation och ekvivalens"
+          ]
+        },
+        {
+          "key": "yttervinkelsatsen",
+          "name": "Yttervinkelsatsen",
+          "kap": 3,
+          "omr": [
+            "yttervinkelsatsen"
+          ],
+          "count": 43,
+          "families": [
+            {
+              "family": "Beräkna vinklar med yttervinkelsatsen",
+              "count": 31
+            },
+            {
+              "family": "Yttervinkelsatsen med ekvationer och likbenta trianglar",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Använd yttervinkelsatsen"
+          ]
+        },
+        {
+          "key": "g:cirkelgeometri",
+          "name": "Cirkelgeometri",
+          "kap": 3,
+          "omr": [
+            "randvinkel_medelpunkt",
+            "kordasatsen_biskarningssatsen"
+          ],
+          "count": 130,
+          "families": [
+            {
+              "family": "Randvinklar i bevis och problemlösning",
+              "count": 22
+            },
+            {
+              "family": "Randvinkel och medelpunktsvinkel",
+              "count": 20
+            },
+            {
+              "family": "Flera randvinklar på samma båge",
+              "count": 20
+            },
+            {
+              "family": "Kordasatsen med givna längder",
+              "count": 16
+            },
+            {
+              "family": "Kordasatsen i tillämpningar",
+              "count": 15
+            },
+            {
+              "family": "Vinkel i en halvcirkel",
+              "count": 14
+            },
+            {
+              "family": "Bisektrissatsen",
+              "count": 13
+            },
+            {
+              "family": "Kordasatsen med algebra och bevis",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Beräkna en randvinkel",
+            "Använd kordasatsen"
+          ]
+        },
+        {
+          "key": "pythagoras",
+          "name": "Pythagoras sats",
+          "kap": 3,
+          "omr": [
+            "pythagoras"
+          ],
+          "count": 50,
+          "families": [
+            {
+              "family": "Diagonaler och tillämpningar",
+              "count": 25
+            },
+            {
+              "family": "Beräkna sidor i rätvinkliga trianglar",
+              "count": 17
+            },
+            {
+              "family": "Omvändning, bevis och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Beräkna en längd med Pythagoras sats"
+          ]
+        },
+        {
+          "key": "likformighet",
+          "name": "Likformighet",
+          "kap": 3,
+          "omr": [
+            "likformighet"
+          ],
+          "count": 63,
+          "families": [
+            {
+              "family": "Motsvarande sidor och längdskala",
+              "count": 30
+            },
+            {
+              "family": "Indirekt mätning",
+              "count": 17
+            },
+            {
+              "family": "Areaskala",
+              "count": 16
+            }
+          ],
+          "lessons": [
+            "Beräkna med likformighet"
+          ]
+        },
+        {
+          "key": "topptriangel_transversal",
+          "name": "Topptriangelsatsen och transversalsatsen",
+          "kap": 3,
+          "omr": [
+            "topptriangel_transversal"
+          ],
+          "count": 49,
+          "families": [
+            {
+              "family": "Transversalsatsen och delningsförhållanden",
+              "count": 26
+            },
+            {
+              "family": "Topptriangelsatsen",
+              "count": 23
+            }
+          ],
+          "lessons": [
+            "Använd topptriangelsatsen"
+          ]
+        },
+        {
+          "key": "bevis_likformighet",
+          "name": "Bevis med likformighet",
+          "kap": 3,
+          "omr": [
+            "bevis_likformighet"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Visa att trianglar är likformiga",
+              "count": 23
+            },
+            {
+              "family": "Bevis och tillämpningar med likformighet",
+              "count": 16
+            }
+          ],
+          "lessons": [
+            "Visa att två trianglar är likformiga"
+          ]
+        },
+        {
+          "key": "avstandsformeln_mittpunktsformeln",
+          "name": "Avståndsformeln och mittpunktsformeln",
+          "kap": 3,
+          "omr": [
+            "avstandsformeln_mittpunktsformeln"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avståndsformeln och kombinerade problem",
+              "count": 24
+            },
+            {
+              "family": "Mittpunktsformeln",
+              "count": 15
+            }
+          ],
+          "lessons": [
+            "Bestäm avstånd och mittpunkt"
+          ]
+        },
+        {
+          "key": "koordinatgeometri_problemlosning",
+          "name": "Koordinatgeometri – problemlösning",
+          "kap": 3,
+          "omr": [
+            "koordinatgeometri_problemlosning"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avstånd, mittpunkt och villkor i koordinatsystem",
+              "count": 21
+            },
+            {
+              "family": "Area och omkrets i koordinatsystem",
+              "count": 18
+            }
+          ],
+          "lessons": [
+            "Kontrollera en rät vinkel med koordinater"
+          ]
+        },
+        {
+          "key": "g:geometri_problemlosning",
+          "name": "Problemlösning",
+          "kap": 3,
+          "omr": [
+            "geometri_problemlosning"
+          ],
+          "count": 30,
+          "families": [],
+          "lessons": []
+        },
+        {
+          "key": "tabeller_diagram",
+          "name": "Tabeller och diagram",
+          "kap": 4,
+          "omr": [
+            "tabeller_diagram"
+          ],
+          "count": 9,
+          "families": [],
+          "lessons": []
+        },
+        {
+          "key": "lagesmatt",
+          "name": "Medelvärde, median och typvärde",
+          "kap": 4,
+          "omr": [
+            "lagesmatt"
+          ],
+          "count": 75,
+          "families": [
+            {
+              "family": "Beräkna lägesmått",
+              "count": 51
+            },
+            {
+              "family": "Viktat medelvärde och saknade värden",
+              "count": 18
+            },
+            {
+              "family": "Förändring av lägesmått",
+              "count": 5
+            }
+          ],
+          "lessons": [
+            "Bestäm medelvärde, median och typvärde"
+          ]
+        },
+        {
+          "key": "kvartiler_percentiler",
+          "name": "Kvartiler och percentiler",
+          "kap": 4,
+          "omr": [
+            "kvartiler_percentiler"
+          ],
+          "count": 43,
+          "families": [
+            {
+              "family": "Percentiler",
+              "count": 31
+            },
+            {
+              "family": "Median, kvartiler och kvartilavstånd",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bestäm median och kvartiler"
+          ]
+        },
+        {
+          "key": "ladagram",
+          "name": "Lådagram",
+          "kap": 4,
+          "omr": [
+            "ladagram"
+          ],
+          "count": 64,
+          "families": [
+            {
+              "family": "Avläsa lådagram",
+              "count": 35
+            },
+            {
+              "family": "Jämföra och rita lådagram",
+              "count": 29
+            }
+          ],
+          "lessons": [
+            "Tolka ett lådagram"
+          ]
+        },
+        {
+          "key": "standardavvikelse",
+          "name": "Standardavvikelse",
+          "kap": 4,
+          "omr": [
+            "standardavvikelse"
+          ],
+          "count": 154,
+          "families": [
+            {
+              "family": "Beräkna och tolka standardavvikelse",
+              "count": 107
+            },
+            {
+              "family": "Jämföra spridning och förändring",
+              "count": 46
+            }
+          ],
+          "lessons": [
+            "Tolka standardavvikelse",
+            "Beräkna standardavvikelse"
+          ]
+        },
+        {
+          "key": "korrelation_koefficient",
+          "name": "Korrelation och korrelationskoefficient",
+          "kap": 4,
+          "omr": [
+            "korrelation_koefficient"
+          ],
+          "count": 31,
+          "families": [
+            {
+              "family": "Tolka och jämföra korrelationskoefficienter",
+              "count": 17
+            },
+            {
+              "family": "Uppskatta r från diagram",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Tolka korrelation utan att påstå kausalitet"
+          ]
+        },
+        {
+          "key": "linjar_regression",
+          "name": "Linjär regression",
+          "kap": 4,
+          "omr": [
+            "linjar_regression"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Bestämma och använda regressionsmodellen",
+              "count": 18
+            },
+            {
+              "family": "Tolka regressionsmodellen",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Tolka en regressionslinje och göra en prognos"
+          ]
+        },
+        {
+          "key": "normalfordelat_material",
+          "name": "Normalfördelning",
+          "kap": 4,
+          "omr": [
+            "normalfordelat_material"
+          ],
+          "count": 70,
+          "families": [
+            {
+              "family": "Andel i ett intervall",
+              "count": 48
+            },
+            {
+              "family": "Svansar och standardavvikelse",
+              "count": 22
+            }
+          ],
+          "lessons": [
+            "Använd 68–95–99,7-regeln"
+          ]
+        },
+        {
+          "key": "normalfordelning_digitala_verktyg",
+          "name": "Normalfördelning med digitala verktyg",
+          "kap": 4,
+          "omr": [
+            "normalfordelning_digitala_verktyg"
+          ],
+          "count": 41,
+          "families": [
+            {
+              "family": "Sannolikhet över, under och i intervall",
+              "count": 27
+            },
+            {
+              "family": "Bestämma gränsvärde och percentil",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Beräkna normalfördelningssannolikhet digitalt"
+          ]
+        },
+        {
+          "key": "ekonomiprogrammet",
+          "name": "Ekonomiprogrammet",
+          "kap": 5,
+          "omr": [
+            "ekonomiprogrammet"
+          ],
+          "count": 49,
+          "families": [
+            {
+              "family": "Ekonomi: modeller, ekvationssystem och geometri",
+              "count": 35
+            },
+            {
+              "family": "Ekonomi: statistik",
+              "count": 14
+            }
+          ],
+          "lessons": []
+        },
+        {
+          "key": "samhallsvetenskapsprogrammet",
+          "name": "Samhällsvetenskapsprogrammet",
+          "kap": 5,
+          "omr": [
+            "samhallsvetenskapsprogrammet"
+          ],
+          "count": 33,
+          "families": [
+            {
+              "family": "Samhällsvetenskap: modeller, ekvationssystem och geometri",
+              "count": 20
+            },
+            {
+              "family": "Samhällsvetenskap: statistik",
+              "count": 13
+            }
+          ],
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "track": "2c",
+      "cards": [
+        {
+          "key": "rata_linjens_ekvation",
+          "name": "Räta linjens ekvation",
+          "kap": 1,
+          "omr": [
+            "rata_linjens_ekvation"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Tolka och använda y = kx + m",
+              "count": 17
+            },
+            {
+              "family": "Skärningspunkter, parallella och vinkelräta linjer",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm linjens skärningar med axlarna"
+          ]
+        },
+        {
+          "key": "linjara_representationer",
+          "name": "Räta linjer: formel, tabell och graf",
+          "kap": 1,
+          "omr": [
+            "linjara_representationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Från tabell till formel",
+              "count": 11
+            },
+            {
+              "family": "Växla mellan text, graf och formel",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Tolka räta linjens ekvation",
+            "Bestäm en linjär funktion från en tabell"
+          ]
+        },
+        {
+          "key": "bestamma_linjara_funktioner",
+          "name": "Bestämma linjära funktioner",
+          "kap": 1,
+          "omr": [
+            "bestamma_linjara_funktioner"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Linjär funktion från villkor",
+              "count": 11
+            },
+            {
+              "family": "Linjär funktion från två punkter",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm linjen genom två punkter"
+          ]
+        },
+        {
+          "key": "linjara_ekvationssystem",
+          "name": "Linjära ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "linjara_ekvationssystem"
+          ],
+          "count": 19,
+          "families": [
+            {
+              "family": "Lösa och kontrollera ekvationssystem",
+              "count": 10
+            },
+            {
+              "family": "Ekvationssystem i text och med parametrar",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "grafisk_losning_ekvationssystem",
+          "name": "Grafisk lösning av ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "grafisk_losning_ekvationssystem"
+          ],
+          "count": 11,
+          "families": [],
+          "lessons": [
+            "Förstå lösningen till ett ekvationssystem"
+          ]
+        },
+        {
+          "key": "substitutionsmetoden",
+          "name": "Substitutionsmetoden",
+          "kap": 1,
+          "omr": [
+            "substitutionsmetoden"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Lösa med substitutionsmetoden",
+              "count": 17
+            },
+            {
+              "family": "Substitution med parametrar och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med substitution"
+          ]
+        },
+        {
+          "key": "additionsmetoden",
+          "name": "Additionsmetoden",
+          "kap": 1,
+          "omr": [
+            "additionsmetoden"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Eliminera med additionsmetoden",
+              "count": 16
+            },
+            {
+              "family": "Välja multiplikator och parametrar",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Lös ett ekvationssystem med addition"
+          ]
+        },
+        {
+          "key": "ekvationssystem_tre_obekanta",
+          "name": "Ekvationssystem med tre obekanta",
+          "kap": 1,
+          "omr": [
+            "ekvationssystem_tre_obekanta"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Lösa system med tre obekanta",
+              "count": 20
+            },
+            {
+              "family": "Textproblem med tre obekanta",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Lös ett system med tre obekanta"
+          ]
+        },
+        {
+          "key": "speciella_ekvationssystem",
+          "name": "Ekvationssystem med ingen eller oändligt många lösningar",
+          "kap": 1,
+          "omr": [
+            "speciella_ekvationssystem"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Klassificera antal lösningar",
+              "count": 17
+            },
+            {
+              "family": "Parameterfall i ekvationssystem",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Avgör om ett system saknar eller har oändligt många lösningar"
+          ]
+        },
+        {
+          "key": "ekvationssystem_tillampningar",
+          "name": "Tillämpningar och problemlösning med ekvationssystem",
+          "kap": 1,
+          "omr": [
+            "ekvationssystem_tillampningar"
+          ],
+          "count": 31,
+          "families": [
+            {
+              "family": "Ekonomiska problem med ekvationssystem",
+              "count": 15
+            },
+            {
+              "family": "Blandnings-, rörelse- och talproblem",
+              "count": 9
+            },
+            {
+              "family": "Ställa upp ekvationssystem",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa ett ekvationssystem från en text"
+          ]
+        },
+        {
+          "key": "multiplicera_parenteser",
+          "name": "Multiplikation av parentesuttryck",
+          "kap": 1,
+          "omr": [
+            "multiplicera_parenteser"
+          ],
+          "count": 23,
+          "families": [
+            {
+              "family": "Förenkla och bestämma konstanter",
+              "count": 12
+            },
+            {
+              "family": "Utveckla produkter av parenteser",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Multiplicera två parenteser"
+          ]
+        },
+        {
+          "key": "g:konjugat_kvadrering",
+          "name": "Konjugatregeln och kvadreringsreglerna",
+          "kap": 1,
+          "omr": [
+            "konjugatregeln",
+            "kvadreringsreglerna"
+          ],
+          "count": 47,
+          "families": [
+            {
+              "family": "Utveckla och räkna med konjugatregeln",
+              "count": 14
+            },
+            {
+              "family": "Faktorisera och lösa ekvationer med konjugatregeln",
+              "count": 12
+            },
+            {
+              "family": "Kvadreringsregler med parametrar och rötter",
+              "count": 11
+            },
+            {
+              "family": "Utveckla med kvadreringsreglerna",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd konjugatregeln",
+            "Kvadrera en summa",
+            "Kvadrera en differens"
+          ]
+        },
+        {
+          "key": "faktorisering",
+          "name": "Faktorisering",
+          "kap": 1,
+          "omr": [
+            "faktorisering"
+          ],
+          "count": 24,
+          "families": [
+            {
+              "family": "Faktorisera i flera steg",
+              "count": 15
+            },
+            {
+              "family": "Faktorisering för ekvationslösning",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Faktorisera ett uttryck"
+          ]
+        },
+        {
+          "key": "enkla_andragradsekvationer",
+          "name": "Enkla andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "enkla_andragradsekvationer"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Ekvationer av typen x² = a",
+              "count": 20
+            },
+            {
+              "family": "Ekvationer av typen (x + a)² = b",
+              "count": 17
+            }
+          ],
+          "lessons": [
+            "Lös en enkel andragradsekvation"
+          ]
+        },
+        {
+          "key": "nollproduktmetoden",
+          "name": "Nollproduktmetoden",
+          "kap": 2,
+          "omr": [
+            "nollproduktmetoden"
+          ],
+          "count": 37,
+          "families": [
+            {
+              "family": "Nollproduktmetoden i faktoriserad form",
+              "count": 24
+            },
+            {
+              "family": "Faktorisera och lösa med nollproduktmetoden",
+              "count": 13
+            }
+          ],
+          "lessons": [
+            "Använd nollproduktmetoden"
+          ]
+        },
+        {
+          "key": "kvadratkomplettering",
+          "name": "Kvadratkomplettering",
+          "kap": 2,
+          "omr": [
+            "kvadratkomplettering"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Extrempunkt och ekvationer via kvadratkomplettering",
+              "count": 13
+            },
+            {
+              "family": "Skriva på kvadratkompletterad form",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Kvadratkomplettera"
+          ]
+        },
+        {
+          "key": "losningsformel_andragrad",
+          "name": "Lösningsformel för andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "losningsformel_andragrad"
+          ],
+          "count": 32,
+          "families": [
+            {
+              "family": "Lösa med pq-formeln",
+              "count": 18
+            },
+            {
+              "family": "Ekvationer där x²-termen har en koefficient",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Lös med pq-formeln"
+          ]
+        },
+        {
+          "key": "mer_om_andragradsekvationer",
+          "name": "Andragradsekvationer – fördjupning",
+          "kap": 2,
+          "omr": [
+            "mer_om_andragradsekvationer"
+          ],
+          "count": 15,
+          "families": [
+            {
+              "family": "Sammansatta andragradsekvationer",
+              "count": 9
+            },
+            {
+              "family": "Parametrar och villkor på rötterna",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Använd sambandet mellan rötter och koefficienter"
+          ]
+        },
+        {
+          "key": "samband_roter_koefficienter",
+          "name": "Samband mellan rötter och koefficienter",
+          "kap": 2,
+          "omr": [
+            "samband_roter_koefficienter"
+          ],
+          "count": 17,
+          "families": [
+            {
+              "family": "Från rötter till ekvation",
+              "count": 10
+            },
+            {
+              "family": "Rötternas summa och produkt",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Använd sambandet mellan rötter och koefficienter"
+          ]
+        },
+        {
+          "key": "andragradsekvationer_tillampningar",
+          "name": "Tillämpningar och problemlösning med andragradsekvationer",
+          "kap": 2,
+          "omr": [
+            "andragradsekvationer_tillampningar"
+          ],
+          "count": 30,
+          "families": [
+            {
+              "family": "Andragradsekvationer i geometri",
+              "count": 23
+            },
+            {
+              "family": "Talproblem och villkor",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skapa en andragradsekvation i ett problem"
+          ]
+        },
+        {
+          "key": "rotekvationer",
+          "name": "Rotekvationer",
+          "kap": 2,
+          "omr": [
+            "rotekvationer"
+          ],
+          "count": 25,
+          "families": [
+            {
+              "family": "Isolera roten och kvadrera",
+              "count": 17
+            },
+            {
+              "family": "Falska rötter och kontroll",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Lös en rotekvation och kontrollera"
+          ]
+        },
+        {
+          "key": "funktionsskrivsatt_rep",
+          "name": "Funktioner och funktionsskrivsätt – repetition",
+          "kap": 2,
+          "omr": [
+            "funktionsskrivsatt_rep"
+          ],
+          "count": 129,
+          "families": [
+            {
+              "family": "Funktionsnotation och grafer",
+              "count": 69
+            },
+            {
+              "family": "Lösa ekvationer med funktionsvärden",
+              "count": 32
+            },
+            {
+              "family": "Beräkna funktionsvärden",
+              "count": 21
+            },
+            {
+              "family": "Tolka funktionsnotation",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Tolka funktionsnotation"
+          ]
+        },
+        {
+          "key": "andragradsfunktioner",
+          "name": "Andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Egenskaper och funktionsvärden",
+              "count": 24
+            },
+            {
+              "family": "Bestämma andragradsfunktion från nollställen",
+              "count": 10
+            },
+            {
+              "family": "Parameterfamiljer av andragradsfunktioner",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "andragradsfunktion_graf",
+          "name": "Andragradsfunktionens graf",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktion_graf"
+          ],
+          "count": 52,
+          "families": [
+            {
+              "family": "Avläsa egenskaper ur grafen",
+              "count": 38
+            },
+            {
+              "family": "Bestämma formel från graf",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "symmetrilinje_extrempunkt",
+          "name": "Största och minsta värde",
+          "kap": 2,
+          "omr": [
+            "symmetrilinje_extrempunkt"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Extrempunkt från funktionsformel",
+              "count": 19
+            },
+            {
+              "family": "Extrempunkt från nollställen",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Bestäm nollställen, symmetrilinje och extrempunkt"
+          ]
+        },
+        {
+          "key": "fran_graf_till_formel",
+          "name": "Från graf till formel",
+          "kap": 2,
+          "omr": [
+            "fran_graf_till_formel"
+          ],
+          "count": 28,
+          "families": [
+            {
+              "family": "Avläsa koefficienter ur grafen",
+              "count": 17
+            },
+            {
+              "family": "Andragradsfunktion från graf och punkter",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Bestäm en andragradsfunktion från nollställen"
+          ]
+        },
+        {
+          "key": "andragradsfunktioner_tillampningar",
+          "name": "Problemlösning med andragradsfunktioner",
+          "kap": 2,
+          "omr": [
+            "andragradsfunktioner_tillampningar"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Optimering",
+              "count": 16
+            },
+            {
+              "family": "Olikheter och intervall",
+              "count": 15
+            },
+            {
+              "family": "Rörelse- och höjdmodeller",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Tolka en andragradsmodell"
+          ]
+        },
+        {
+          "key": "potensregler",
+          "name": "Potenser och potensregler",
+          "kap": 2,
+          "omr": [
+            "potensregler"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Förenkla med potensregler",
+              "count": 22
+            },
+            {
+              "family": "Bestämma exponenter och tillämpningar",
+              "count": 12
+            },
+            {
+              "family": "Negativa och rationella exponenter",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Använd potensreglerna"
+          ]
+        },
+        {
+          "key": "exponentialfunktioner",
+          "name": "Exponentialfunktioner",
+          "kap": 2,
+          "omr": [
+            "exponentialfunktioner"
+          ],
+          "count": 40,
+          "families": [
+            {
+              "family": "Förändringsfaktor och procent",
+              "count": 14
+            },
+            {
+              "family": "Beräkna och tolka exponentialfunktioner",
+              "count": 14
+            },
+            {
+              "family": "Bestämma exponentialmodell",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bygg och använd en exponentialmodell"
+          ]
+        },
+        {
+          "key": "exponentialgraf",
+          "name": "Exponentialfunktioners grafer",
+          "kap": 2,
+          "omr": [
+            "exponentialgraf"
+          ],
+          "count": 28,
+          "families": [
+            {
+              "family": "Tolka tillväxt och avtagande",
+              "count": 14
+            },
+            {
+              "family": "Avläsa exponentialgrafer",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Tolka en exponentialfunktions graf"
+          ]
+        },
+        {
+          "key": "logaritmbegreppet",
+          "name": "Logaritmbegreppet",
+          "kap": 2,
+          "omr": [
+            "logaritmbegreppet"
+          ],
+          "count": 36,
+          "families": [
+            {
+              "family": "Bestämma logaritmvärden",
+              "count": 25
+            },
+            {
+              "family": "Logaritm som invers till exponentialfunktion",
+              "count": 11
+            }
+          ],
+          "lessons": [
+            "Förstå logaritmer"
+          ]
+        },
+        {
+          "key": "logaritmlagar",
+          "name": "Logaritmlagarna",
+          "kap": 2,
+          "omr": [
+            "logaritmlagar"
+          ],
+          "count": 46,
+          "families": [
+            {
+              "family": "Lösa logaritmekvationer",
+              "count": 19
+            },
+            {
+              "family": "Förenkla med logaritmlagarna",
+              "count": 17
+            },
+            {
+              "family": "Tillämpa logaritmlagarna",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd logaritmlagarna"
+          ]
+        },
+        {
+          "key": "exponentialekvationer",
+          "name": "Exponentialekvationer",
+          "kap": 2,
+          "omr": [
+            "exponentialekvationer"
+          ],
+          "count": 47,
+          "families": [
+            {
+              "family": "Tillämpade exponentialekvationer",
+              "count": 30
+            },
+            {
+              "family": "Lösa exponentialekvationer algebraiskt",
+              "count": 11
+            },
+            {
+              "family": "Lösa exponentialekvationer digitalt eller grafiskt",
+              "count": 6
+            }
+          ],
+          "lessons": [
+            "Lös en exponentialekvation grafiskt",
+            "Lös en exponentialekvation med logaritmer"
+          ]
+        },
+        {
+          "key": "potensekvationer",
+          "name": "Potensekvationer",
+          "kap": 2,
+          "omr": [
+            "potensekvationer"
+          ],
+          "count": 20,
+          "families": [
+            {
+              "family": "Isolera potensen och ta roten",
+              "count": 11
+            },
+            {
+              "family": "Skiftade potensekvationer och två rötter",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Lös en potensekvation"
+          ]
+        },
+        {
+          "key": "jamfora_exponential_potens",
+          "name": "Jämföra exponential- och potensekvationer",
+          "kap": 2,
+          "omr": [
+            "jamfora_exponential_potens"
+          ],
+          "count": 21,
+          "families": [
+            {
+              "family": "Klassificera funktionstyp",
+              "count": 14
+            },
+            {
+              "family": "Jämföra tillväxt och funktionsvärden",
+              "count": 7
+            }
+          ],
+          "lessons": [
+            "Skilj på potens- och exponentialfunktion"
+          ]
+        },
+        {
+          "key": "regressionsanalys_olika_modeller",
+          "name": "Regressionsanalys",
+          "kap": 2,
+          "omr": [
+            "regressionsanalys_olika_modeller"
+          ],
+          "count": 15,
+          "families": [
+            {
+              "family": "Välja regressionsmodell",
+              "count": 10
+            },
+            {
+              "family": "Jämföra modeller och modellkvalitet",
+              "count": 5
+            }
+          ],
+          "lessons": [
+            "Välj en rimlig regressionsmodell"
+          ]
+        },
+        {
+          "key": "geometriska_begrepp_definitioner",
+          "name": "Geometriska begrepp och definitioner",
+          "kap": 3,
+          "omr": [
+            "geometriska_begrepp_definitioner"
+          ],
+          "count": 36,
+          "families": [
+            {
+              "family": "Geometriska grundbegrepp",
+              "count": 18
+            },
+            {
+              "family": "Vinkelregler och cirklar",
+              "count": 18
+            }
+          ],
+          "lessons": [
+            "Känna igen geometriska begrepp"
+          ]
+        },
+        {
+          "key": "sats_bevis",
+          "name": "Sats och bevis, implikation och ekvivalens",
+          "kap": 3,
+          "omr": [
+            "sats_bevis"
+          ],
+          "count": 59,
+          "families": [
+            {
+              "family": "Implikation och ekvivalens",
+              "count": 27
+            },
+            {
+              "family": "Satser, motexempel och vad ett bevis är",
+              "count": 17
+            },
+            {
+              "family": "Bevis med vinklar",
+              "count": 15
+            }
+          ],
+          "lessons": [
+            "Förstå vad ett bevis visar",
+            "Skilj på implikation och ekvivalens"
+          ]
+        },
+        {
+          "key": "yttervinkelsatsen",
+          "name": "Yttervinkelsatsen",
+          "kap": 3,
+          "omr": [
+            "yttervinkelsatsen"
+          ],
+          "count": 43,
+          "families": [
+            {
+              "family": "Beräkna vinklar med yttervinkelsatsen",
+              "count": 31
+            },
+            {
+              "family": "Yttervinkelsatsen med ekvationer och likbenta trianglar",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Använd yttervinkelsatsen"
+          ]
+        },
+        {
+          "key": "g:randvinkel_medelpunkt",
+          "name": "Randvinklar och medelpunktsvinklar",
+          "kap": 3,
+          "omr": [
+            "randvinkel_medelpunkt"
+          ],
+          "count": 76,
+          "families": [
+            {
+              "family": "Randvinklar i bevis och problemlösning",
+              "count": 22
+            },
+            {
+              "family": "Randvinkel och medelpunktsvinkel",
+              "count": 20
+            },
+            {
+              "family": "Flera randvinklar på samma båge",
+              "count": 20
+            },
+            {
+              "family": "Vinkel i en halvcirkel",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Beräkna en randvinkel"
+          ]
+        },
+        {
+          "key": "pythagoras",
+          "name": "Pythagoras sats",
+          "kap": 3,
+          "omr": [
+            "pythagoras"
+          ],
+          "count": 50,
+          "families": [
+            {
+              "family": "Diagonaler och tillämpningar",
+              "count": 25
+            },
+            {
+              "family": "Beräkna sidor i rätvinkliga trianglar",
+              "count": 17
+            },
+            {
+              "family": "Omvändning, bevis och resonemang",
+              "count": 8
+            }
+          ],
+          "lessons": [
+            "Beräkna en längd med Pythagoras sats"
+          ]
+        },
+        {
+          "key": "likformighet",
+          "name": "Likformighet",
+          "kap": 3,
+          "omr": [
+            "likformighet"
+          ],
+          "count": 63,
+          "families": [
+            {
+              "family": "Motsvarande sidor och längdskala",
+              "count": 30
+            },
+            {
+              "family": "Indirekt mätning",
+              "count": 17
+            },
+            {
+              "family": "Areaskala",
+              "count": 16
+            }
+          ],
+          "lessons": [
+            "Beräkna med likformighet"
+          ]
+        },
+        {
+          "key": "topptriangel_transversal",
+          "name": "Topptriangelsatsen och transversalsatsen",
+          "kap": 3,
+          "omr": [
+            "topptriangel_transversal"
+          ],
+          "count": 49,
+          "families": [
+            {
+              "family": "Transversalsatsen och delningsförhållanden",
+              "count": 26
+            },
+            {
+              "family": "Topptriangelsatsen",
+              "count": 23
+            }
+          ],
+          "lessons": [
+            "Använd topptriangelsatsen"
+          ]
+        },
+        {
+          "key": "bevis_likformighet",
+          "name": "Bevis med likformighet",
+          "kap": 3,
+          "omr": [
+            "bevis_likformighet"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Visa att trianglar är likformiga",
+              "count": 23
+            },
+            {
+              "family": "Bevis och tillämpningar med likformighet",
+              "count": 16
+            }
+          ],
+          "lessons": [
+            "Visa att två trianglar är likformiga"
+          ]
+        },
+        {
+          "key": "g:kordasatsen_biskarningssatsen",
+          "name": "Kordasatsen och bisektrissatsen",
+          "kap": 3,
+          "omr": [
+            "kordasatsen_biskarningssatsen"
+          ],
+          "count": 54,
+          "families": [
+            {
+              "family": "Kordasatsen med givna längder",
+              "count": 16
+            },
+            {
+              "family": "Kordasatsen i tillämpningar",
+              "count": 15
+            },
+            {
+              "family": "Bisektrissatsen",
+              "count": 13
+            },
+            {
+              "family": "Kordasatsen med algebra och bevis",
+              "count": 10
+            }
+          ],
+          "lessons": [
+            "Använd kordasatsen"
+          ]
+        },
+        {
+          "key": "avstandsformeln_mittpunktsformeln",
+          "name": "Avståndsformeln och mittpunktsformeln",
+          "kap": 3,
+          "omr": [
+            "avstandsformeln_mittpunktsformeln"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avståndsformeln och kombinerade problem",
+              "count": 24
+            },
+            {
+              "family": "Mittpunktsformeln",
+              "count": 15
+            }
+          ],
+          "lessons": [
+            "Bestäm avstånd och mittpunkt"
+          ]
+        },
+        {
+          "key": "koordinatgeometri_problemlosning",
+          "name": "Koordinatgeometri – problemlösning",
+          "kap": 3,
+          "omr": [
+            "koordinatgeometri_problemlosning"
+          ],
+          "count": 39,
+          "families": [
+            {
+              "family": "Avstånd, mittpunkt och villkor i koordinatsystem",
+              "count": 21
+            },
+            {
+              "family": "Area och omkrets i koordinatsystem",
+              "count": 18
+            }
+          ],
+          "lessons": [
+            "Kontrollera en rät vinkel med koordinater"
+          ]
+        },
+        {
+          "key": "g:geometri_problemlosning",
+          "name": "Problemlösning",
+          "kap": 3,
+          "omr": [
+            "geometri_problemlosning"
+          ],
+          "count": 30,
+          "families": [],
+          "lessons": []
+        },
+        {
+          "key": "tabeller_diagram",
+          "name": "Tabeller och diagram",
+          "kap": 4,
+          "omr": [
+            "tabeller_diagram"
+          ],
+          "count": 9,
+          "families": [],
+          "lessons": []
+        },
+        {
+          "key": "lagesmatt",
+          "name": "Medelvärde, median och typvärde",
+          "kap": 4,
+          "omr": [
+            "lagesmatt"
+          ],
+          "count": 75,
+          "families": [
+            {
+              "family": "Beräkna lägesmått",
+              "count": 51
+            },
+            {
+              "family": "Viktat medelvärde och saknade värden",
+              "count": 18
+            },
+            {
+              "family": "Förändring av lägesmått",
+              "count": 5
+            }
+          ],
+          "lessons": [
+            "Bestäm medelvärde, median och typvärde"
+          ]
+        },
+        {
+          "key": "kvartiler_percentiler",
+          "name": "Kvartiler och percentiler",
+          "kap": 4,
+          "omr": [
+            "kvartiler_percentiler"
+          ],
+          "count": 43,
+          "families": [
+            {
+              "family": "Percentiler",
+              "count": 31
+            },
+            {
+              "family": "Median, kvartiler och kvartilavstånd",
+              "count": 12
+            }
+          ],
+          "lessons": [
+            "Bestäm median och kvartiler"
+          ]
+        },
+        {
+          "key": "ladagram",
+          "name": "Lådagram",
+          "kap": 4,
+          "omr": [
+            "ladagram"
+          ],
+          "count": 64,
+          "families": [
+            {
+              "family": "Avläsa lådagram",
+              "count": 35
+            },
+            {
+              "family": "Jämföra och rita lådagram",
+              "count": 29
+            }
+          ],
+          "lessons": [
+            "Tolka ett lådagram"
+          ]
+        },
+        {
+          "key": "standardavvikelse",
+          "name": "Standardavvikelse",
+          "kap": 4,
+          "omr": [
+            "standardavvikelse"
+          ],
+          "count": 154,
+          "families": [
+            {
+              "family": "Beräkna och tolka standardavvikelse",
+              "count": 107
+            },
+            {
+              "family": "Jämföra spridning och förändring",
+              "count": 46
+            }
+          ],
+          "lessons": [
+            "Tolka standardavvikelse",
+            "Beräkna standardavvikelse"
+          ]
+        },
+        {
+          "key": "korrelation_koefficient",
+          "name": "Korrelation och korrelationskoefficient",
+          "kap": 4,
+          "omr": [
+            "korrelation_koefficient"
+          ],
+          "count": 31,
+          "families": [
+            {
+              "family": "Tolka och jämföra korrelationskoefficienter",
+              "count": 17
+            },
+            {
+              "family": "Uppskatta r från diagram",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Tolka korrelation utan att påstå kausalitet"
+          ]
+        },
+        {
+          "key": "linjar_regression",
+          "name": "Linjär regression",
+          "kap": 4,
+          "omr": [
+            "linjar_regression"
+          ],
+          "count": 27,
+          "families": [
+            {
+              "family": "Bestämma och använda regressionsmodellen",
+              "count": 18
+            },
+            {
+              "family": "Tolka regressionsmodellen",
+              "count": 9
+            }
+          ],
+          "lessons": [
+            "Tolka en regressionslinje och göra en prognos"
+          ]
+        },
+        {
+          "key": "normalfordelat_material",
+          "name": "Normalfördelning",
+          "kap": 4,
+          "omr": [
+            "normalfordelat_material"
+          ],
+          "count": 70,
+          "families": [
+            {
+              "family": "Andel i ett intervall",
+              "count": 48
+            },
+            {
+              "family": "Svansar och standardavvikelse",
+              "count": 22
+            }
+          ],
+          "lessons": [
+            "Använd 68–95–99,7-regeln"
+          ]
+        },
+        {
+          "key": "normalfordelning_digitala_verktyg",
+          "name": "Normalfördelning med digitala verktyg",
+          "kap": 4,
+          "omr": [
+            "normalfordelning_digitala_verktyg"
+          ],
+          "count": 41,
+          "families": [
+            {
+              "family": "Sannolikhet över, under och i intervall",
+              "count": 27
+            },
+            {
+              "family": "Bestämma gränsvärde och percentil",
+              "count": 14
+            }
+          ],
+          "lessons": [
+            "Beräkna normalfördelningssannolikhet digitalt"
+          ]
+        }
+      ]
+    }
+  ],
+  "quests": {
+    "today": true,
+    "archived": true,
+    "xpOnce": true
+  }
+}

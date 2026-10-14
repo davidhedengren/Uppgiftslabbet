@@ -6965,7 +6965,11 @@ function byggTräd(){
     const defs=(sp&&DB.grupp?.[sp]?.[k]) || (Array.isArray(DB.grupp?.[k])?DB.grupp[k]:null);
     if(!Array.isArray(defs)||!defs.length) return omrs.map(o=>områdesknapp(k,o)).join('');
     const använda=new Set();
-    const html=defs.map(g=>{
+    const html=omrs.map(o=>{
+      if(använda.has(o)) return '';
+      const g=defs.find(g=>!g.historisk && (g.omr||[]).includes(o)
+        && (!Array.isArray(g.kurs)||!g.kurs.length||g.kurs.includes(sp)));
+      if(!g) return områdesknapp(k,o);
       const gos=(g.omr||[]).filter(o=>omrs.includes(o));
       if(!gos.length) return '';
       gos.forEach(o=>använda.add(o));
@@ -6983,8 +6987,7 @@ function byggTräd(){
         <div class="omrunderlista">${gos.map(o=>områdesknapp(k,o)).join('')}</div>
       </div>`;
     }).join('');
-    const rest=omrs.filter(o=>!använda.has(o));
-    return html+rest.map(o=>områdesknapp(k,o)).join('');
+    return html;
   };
 
   $('#träd').innerHTML=kapitel.map(k=>{
