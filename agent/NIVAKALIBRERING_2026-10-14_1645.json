@@ -1,0 +1,928 @@
+[
+  {
+    "bank": "uppgifter.js",
+    "id": "4.533",
+    "before": {
+      "kap": 4,
+      "omr": "friktion",
+      "niva": "E",
+      "typ": "friktionstal ur glidsträcka",
+      "poang": "(2/0/0)",
+      "t": "<p>En puck glider med startfarten 20,0 m/s på vågrät is och stannar efter 112 m. Glidfriktionen är den enda bromsande kraften och är konstant.  Bestäm glidfriktionstalet med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{20{,}0^2}{2\\cdot112}\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg, så mb = μmg ger μ = b/g.</p>\\[\\mu=\\frac{20{,}0^2}{2\\cdot112\\cdot9{,}82}\\approx0{,}18\\]</div>",
+      "id": "4.533",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Friktion och Newtons andra lag",
+      "svarstyp": "numeriskt",
+      "rättSvar": 0.18,
+      "tolerans": 0.005,
+      "självrättning": true,
+      "formaga": [
+        "procedur",
+        "modellering"
+      ],
+      "svarFormat": "numeriskt",
+      "ledtrad": "<p>\\(v^2=2\\mu gs\\).</p>",
+      "traningsniva": 2,
+      "familjNyckel": "friktion__friktion_och_newtons_andra_lag",
+      "arbetsinsats": 1,
+      "spel": true
+    },
+    "after": {
+      "kap": 4,
+      "omr": "friktion",
+      "niva": "C",
+      "typ": "friktionstal ur glidsträcka",
+      "poang": "(0/2/0)",
+      "t": "<p>En puck glider med startfarten 20,0 m/s på vågrät is och stannar efter 112 m. Glidfriktionen är den enda bromsande kraften och är konstant.  Bestäm glidfriktionstalet med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{20{,}0^2}{2\\cdot112}\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg, så mb = μmg ger μ = b/g.</p>\\[\\mu=\\frac{20{,}0^2}{2\\cdot112\\cdot9{,}82}\\approx0{,}18\\]</div>",
+      "id": "4.533",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Friktion och Newtons andra lag",
+      "svarstyp": "numeriskt",
+      "rättSvar": 0.18,
+      "tolerans": 0.005,
+      "självrättning": true,
+      "formaga": [
+        "procedur",
+        "modellering"
+      ],
+      "svarFormat": "numeriskt",
+      "ledtrad": "<p>\\(v^2=2\\mu gs\\).</p>",
+      "traningsniva": 3,
+      "familjNyckel": "friktion__friktion_och_newtons_andra_lag",
+      "arbetsinsats": 1,
+      "spel": true
+    }
+  },
+  {
+    "bank": "uppgifter.js",
+    "id": "4.536",
+    "before": {
+      "kap": 4,
+      "omr": "friktion",
+      "niva": "E",
+      "typ": "pulka som glider ut",
+      "poang": "(2/0/0)",
+      "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><ol type=\"a\"><li>Bestäm retardationen i m/s² med två decimaler.</li><li>Bestäm glidfriktionstalet med tre decimaler.</li></ol>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Svar: 0,53 m/s².</p><p><strong>b)</strong></p><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg och bromsar med mb. Massan förkortas bort.</p>\\[\\mu=\\frac{b}{g}=\\frac{4{,}0^2}{2\\cdot15{,}0\\cdot9{,}82}\\approx0{,}054\\]</div>",
+      "id": "4.536",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Friktion och Newtons andra lag",
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        0.53,
+        0.054
+      ],
+      "tolerans": [
+        0.005,
+        0.0005
+      ],
+      "självrättning": true,
+      "formaga": [
+        "procedur"
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b"
+      ],
+      "svarEnhet": [
+        "m/s²",
+        null
+      ],
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "Bestäm retardationen i m/s² med två decimaler.",
+          "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><p>Bestäm retardationen i m/s² med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Svar: 0,53 m/s².</p></div>",
+          "ledtrad": "<p>\\(v^2=2as\\).</p>",
+          "niva": "E",
+          "poang": "(1/0/0)",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "b",
+          "fraga": "Bestäm glidfriktionstalet med tre decimaler.",
+          "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><p>Bestäm glidfriktionstalet med tre decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg och bromsar med mb. Massan förkortas bort.</p>\\[\\mu=\\frac{b}{g}=\\frac{4{,}0^2}{2\\cdot15{,}0\\cdot9{,}82}\\approx0{,}054\\]</div>",
+          "ledtrad": "<p>\\(\\mu mg=ma\\).</p>",
+          "niva": "E",
+          "poang": "(1/0/0)",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        }
+      ],
+      "ledtrad": "<p>Bromssträckan beror inte på massan.</p>",
+      "traningsniva": 2,
+      "familjNyckel": "friktion__friktion_och_newtons_andra_lag",
+      "arbetsinsats": 2,
+      "spel": true
+    },
+    "after": {
+      "kap": 4,
+      "omr": "friktion",
+      "niva": "C",
+      "typ": "pulka som glider ut",
+      "poang": "(1/1/0)",
+      "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><ol type=\"a\"><li>Bestäm retardationen i m/s² med två decimaler.</li><li>Bestäm glidfriktionstalet med tre decimaler.</li></ol>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Svar: 0,53 m/s².</p><p><strong>b)</strong></p><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg och bromsar med mb. Massan förkortas bort.</p>\\[\\mu=\\frac{b}{g}=\\frac{4{,}0^2}{2\\cdot15{,}0\\cdot9{,}82}\\approx0{,}054\\]</div>",
+      "id": "4.536",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Friktion och Newtons andra lag",
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        0.53,
+        0.054
+      ],
+      "tolerans": [
+        0.005,
+        0.0005
+      ],
+      "självrättning": true,
+      "formaga": [
+        "procedur"
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b"
+      ],
+      "svarEnhet": [
+        "m/s²",
+        null
+      ],
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "Bestäm retardationen i m/s² med två decimaler.",
+          "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><p>Bestäm retardationen i m/s² med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Svar: 0,53 m/s².</p></div>",
+          "ledtrad": "<p>\\(v^2=2as\\).</p>",
+          "niva": "E",
+          "poang": "(1/0/0)",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "b",
+          "fraga": "Bestäm glidfriktionstalet med tre decimaler.",
+          "t": "<p>En pulka glider ut på vågrät mark med 4,0 m/s och stannar efter 15,0 m. Glidfriktionen är den enda bromsande kraften och är konstant.</p><p>Bestäm glidfriktionstalet med tre decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid stopp är slutfarten noll. Sambandet 0 = v₀² − 2bs ger retardationen</p>\\[b=\\frac{v_0^2}{2s}=\\frac{4{,}0^2}{2\\cdot15{,}0}=0{,}533333\\ldots\\,\\mathrm{m/s^2}\\]<p>Friktionen är μmg och bromsar med mb. Massan förkortas bort.</p>\\[\\mu=\\frac{b}{g}=\\frac{4{,}0^2}{2\\cdot15{,}0\\cdot9{,}82}\\approx0{,}054\\]</div>",
+          "ledtrad": "<p>\\(\\mu mg=ma\\).</p>",
+          "niva": "C",
+          "poang": "(0/1/0)",
+          "traningsniva": 3,
+          "arbetsinsats": 2
+        }
+      ],
+      "ledtrad": "<p>Bromssträckan beror inte på massan.</p>",
+      "traningsniva": 3,
+      "familjNyckel": "friktion__friktion_och_newtons_andra_lag",
+      "arbetsinsats": 2,
+      "spel": true
+    }
+  },
+  {
+    "bank": "uppgifter.js",
+    "id": "4.669",
+    "before": {
+      "kap": 4,
+      "omr": "newton2",
+      "niva": "C",
+      "typ": "tre kulor över trissa",
+      "poang": "(1/2/0)",
+      "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p><ol type=\"a\"><li>Bestäm accelerationen. Svara med två decimaler.</li><li>Bestäm spännkraften mellan A och B.</li><li>Bestäm \\(m\\). Svara med två decimaler.</li></ol>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><p>C:s tyngdkraft är 9,0 · 9,82 = 88,38 N. Snöret drar uppåt med 50,4 N. C accelererar därför nedåt.</p>\\[a=\\frac{88{,}38-50{,}4}{9{,}0}=4{,}22\\,\\mathrm{m/s^2}\\]<p><strong>b)</strong></p><p>För C ger a = (9,0g − 50,4)/9,0 = 4,22 m/s² nedåt. På B verkar dess tyngdkraft och det undre snöret nedåt. Det övre snöret drar uppåt.</p>\\[1{,}0g+50{,}4-S=1{,}0a\\]\\[S=9{,}82+50{,}4-4{,}22=56{,}0\\,\\mathrm N\\]<p><strong>c)</strong></p><p>C ger accelerationen a = (9,0g − 50,4)/9,0 = 4,22 m/s². Det övre snörets kraft är S = 1,0g + 50,4 − 1,0a = 56,0 N. A accelererar uppåt med samma storlek på accelerationen.</p>\\[S-mg=ma\\quad\\Rightarrow\\quad m=\\frac{S}{g+a}\\]\\[m=\\frac{56{,}0}{9{,}82+4{,}22}\\approx3{,}99\\,\\mathrm{kg}\\]</div>",
+      "id": "4.669",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Motståndskrafter och kopplade kroppar",
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        4.22,
+        56,
+        3.99
+      ],
+      "tolerans": [
+        0,
+        0,
+        0.005
+      ],
+      "självrättning": true,
+      "formaga": [
+        "problemlösning",
+        "modellering"
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b",
+        "c"
+      ],
+      "svarEnhet": [
+        "m/s²",
+        "N",
+        "kg"
+      ],
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "Bestäm accelerationen. Svara med två decimaler.",
+          "t": "<p>En vikt C på 9,0 kg dras uppåt av ett snöre med kraften 50,4 N. Bara snörkraften och tyngdkraften verkar.</p><p>Bestäm accelerationen. Svara med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>C:s tyngdkraft är 9,0 · 9,82 = 88,38 N. Snöret drar uppåt med 50,4 N. C accelererar därför nedåt.</p>\\[a=\\frac{88{,}38-50{,}4}{9{,}0}=4{,}22\\,\\mathrm{m/s^2}\\]</div>",
+          "ledtrad": "<p>Rita krafterna på C.</p>",
+          "niva": "E",
+          "poang": "(1/0/0)",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "Bestäm spännkraften mellan A och B.",
+          "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>Accelerationen är 4,22 m/s².<p>Bestäm spännkraften mellan A och B.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>För C ger a = (9,0g − 50,4)/9,0 = 4,22 m/s² nedåt. På B verkar dess tyngdkraft och det undre snöret nedåt. Det övre snöret drar uppåt.</p>\\[1{,}0g+50{,}4-S=1{,}0a\\]\\[S=9{,}82+50{,}4-4{,}22=56{,}0\\,\\mathrm N\\]</div>",
+          "ledtrad": "<p>Rita krafterna på B.</p>",
+          "niva": "C",
+          "poang": "(0/1/0)",
+          "traningsniva": 3,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "Bestäm \\(m\\). Svara med två decimaler.",
+          "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>Accelerationen är 4,22 m/s² och spännkraften 56 N.<p>Bestäm \\(m\\). Svara med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>C ger accelerationen a = (9,0g − 50,4)/9,0 = 4,22 m/s². Det övre snörets kraft är S = 1,0g + 50,4 − 1,0a = 56,0 N. A accelererar uppåt med samma storlek på accelerationen.</p>\\[S-mg=ma\\quad\\Rightarrow\\quad m=\\frac{S}{g+a}\\]\\[m=\\frac{56{,}0}{9{,}82+4{,}22}\\approx3{,}99\\,\\mathrm{kg}\\]</div>",
+          "ledtrad": "<p>Rita krafterna på A.</p>",
+          "niva": "C",
+          "poang": "(0/1/0)",
+          "traningsniva": 3,
+          "arbetsinsats": 2
+        }
+      ],
+      "ledtrad": "<p>Rita krafterna på en kula i taget.</p>",
+      "traningsniva": 3,
+      "familjNyckel": "newton2__motstandskrafter_och_kopplade_kroppar",
+      "arbetsinsats": 2,
+      "spel": true
+    },
+    "after": {
+      "kap": 4,
+      "omr": "newton2",
+      "niva": "C",
+      "typ": "tre kulor över trissa",
+      "poang": "(1/2/0)",
+      "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p><ol type=\"a\"><li>Bestäm accelerationen. Svara med två decimaler.</li><li>Bestäm spännkraften mellan A och B.</li><li>Bestäm \\(m\\). Svara med två decimaler.</li></ol>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p><strong>a)</strong></p><p>C:s tyngdkraft är 9,0 · 9,82 = 88,38 N. Snöret drar uppåt med 50,4 N. C accelererar därför nedåt.</p>\\[a=\\frac{88{,}38-50{,}4}{9{,}0}=4{,}22\\,\\mathrm{m/s^2}\\]<p><strong>b)</strong></p><p>För C ger a = (9,0g − 50,4)/9,0 = 4,22 m/s² nedåt. På B verkar dess tyngdkraft och det undre snöret nedåt. Det övre snöret drar uppåt.</p>\\[1{,}0g+50{,}4-S=1{,}0a\\]\\[S=9{,}82+50{,}4-4{,}22=56{,}0\\,\\mathrm N\\]<p><strong>c)</strong></p><p>C ger accelerationen a = (9,0g − 50,4)/9,0 = 4,22 m/s². Det övre snörets kraft är S = 1,0g + 50,4 − 1,0a = 56,0 N. A accelererar uppåt med samma storlek på accelerationen.</p>\\[S-mg=ma\\quad\\Rightarrow\\quad m=\\frac{S}{g+a}\\]\\[m=\\frac{56{,}0}{9{,}82+4{,}22}\\approx3{,}99\\,\\mathrm{kg}\\]</div>",
+      "id": "4.669",
+      "miniräknare": true,
+      "geogebra": false,
+      "familj": "Motståndskrafter och kopplade kroppar",
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        4.22,
+        56,
+        3.99
+      ],
+      "tolerans": [
+        0,
+        0,
+        0.005
+      ],
+      "självrättning": true,
+      "formaga": [
+        "problemlösning",
+        "modellering"
+      ],
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEtiketter": [
+        "a",
+        "b",
+        "c"
+      ],
+      "svarEnhet": [
+        "m/s²",
+        "N",
+        "kg"
+      ],
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "Bestäm accelerationen. Svara med två decimaler.",
+          "t": "<p>En vikt C på 9,0 kg dras uppåt av ett snöre med kraften 50,4 N. Bara snörkraften och tyngdkraften verkar.</p><p>Bestäm accelerationen. Svara med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>C:s tyngdkraft är 9,0 · 9,82 = 88,38 N. Snöret drar uppåt med 50,4 N. C accelererar därför nedåt.</p>\\[a=\\frac{88{,}38-50{,}4}{9{,}0}=4{,}22\\,\\mathrm{m/s^2}\\]</div>",
+          "ledtrad": "<p>Rita krafterna på C.</p>",
+          "niva": "E",
+          "poang": "(1/0/0)",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "Bestäm spännkraften mellan A och B.",
+          "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>Accelerationen är 4,22 m/s².<p>Bestäm spännkraften mellan A och B.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>För C ger a = (9,0g − 50,4)/9,0 = 4,22 m/s² nedåt. På B verkar dess tyngdkraft och det undre snöret nedåt. Det övre snöret drar uppåt.</p>\\[1{,}0g+50{,}4-S=1{,}0a\\]\\[S=9{,}82+50{,}4-4{,}22=56{,}0\\,\\mathrm N\\]</div>",
+          "ledtrad": "<p>Rita krafterna på B.</p>",
+          "niva": "C",
+          "poang": "(0/1/0)",
+          "traningsniva": 4,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "Bestäm \\(m\\). Svara med två decimaler.",
+          "t": "<p>Snören och trissor är masslösa och friktionsfria.</p><p>Kula A (massa \\(m\\)) hänger på ena sidan av en trissa och kula B (1,0 kg) på den andra. Under B hänger kula C (9,0 kg) i ett eget snöre. Systemet släpps med A vid golvet. Spännkraften mellan B och C är 50,4 N.</p>Accelerationen är 4,22 m/s² och spännkraften 56 N.<p>Bestäm \\(m\\). Svara med två decimaler.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>C ger accelerationen a = (9,0g − 50,4)/9,0 = 4,22 m/s². Det övre snörets kraft är S = 1,0g + 50,4 − 1,0a = 56,0 N. A accelererar uppåt med samma storlek på accelerationen.</p>\\[S-mg=ma\\quad\\Rightarrow\\quad m=\\frac{S}{g+a}\\]\\[m=\\frac{56{,}0}{9{,}82+4{,}22}\\approx3{,}99\\,\\mathrm{kg}\\]</div>",
+          "ledtrad": "<p>Rita krafterna på A.</p>",
+          "niva": "C",
+          "poang": "(0/1/0)",
+          "traningsniva": 3,
+          "arbetsinsats": 2
+        }
+      ],
+      "ledtrad": "<p>Rita krafterna på en kula i taget.</p>",
+      "traningsniva": 4,
+      "familjNyckel": "newton2__motstandskrafter_och_kopplade_kroppar",
+      "arbetsinsats": 2,
+      "spel": true
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.492",
+    "before": {
+      "id": "3.492",
+      "kap": 3,
+      "omr": "avstandsformeln_mittpunktsformeln",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>Punkterna \\(A=(-2,0)\\) och \\(B=(4,0)\\) är givna. Punkten \\(P\\) ligger på \\(y\\)-axeln, och triangeln \\(ABP\\) är rätvinklig med den räta vinkeln vid \\(P\\).</p><p>Bestäm alla möjliga \\(y\\)-koordinater för \\(P\\). Svara exakt.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Låt</p><div class=\"facit-matte\">\\[P=(0,p)\\].</div></div></li><li><p>Avståndsformeln ger</p></li><li><p>\\[PA^2=(0+2)^2+p^2=4+p^2,\\quad PB^2=(0-4)^2+p^2=16+p^2,\\quad AB^2=6^2=36.\\]</p></li><li><p>Rät vinkel vid \\(P\\) betyder att \\(AB\\) är hypotenusa, så enligt Pythagoras sats:</p></li><li><p>\\[(4+p^2)+(16+p^2)=36\\;\\Leftrightarrow\\;2p^2=16\\;\\Leftrightarrow\\;p=\\pm2\\sqrt2.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(y=2\\sqrt2\\) eller \\(y=-2\\sqrt2\\)</p></div>",
+      "familj": "Avståndsformeln och kombinerade problem",
+      "formaga": [
+        "problemlösning",
+        "procedur"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Kalla punkten \\((0,p)\\). Vilken sida är hypotenusa? Använd Pythagoras sats tillsammans med avståndsformeln.</p>",
+      "spel": true,
+      "traningsniva": 4,
+      "arbetsinsats": 2,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        "2\\sqrt2",
+        "-2\\sqrt2"
+      ],
+      "tolerans": null,
+      "svarEtiketter": [
+        "y",
+        "y"
+      ],
+      "svarsstruktur": "mängd",
+      "svarFormat": [
+        "uttryck",
+        "uttryck"
+      ]
+    },
+    "after": {
+      "id": "3.492",
+      "kap": 3,
+      "omr": "avstandsformeln_mittpunktsformeln",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/2/0",
+      "t": "<p>Punkterna \\(A=(-2,0)\\) och \\(B=(4,0)\\) är givna. Punkten \\(P\\) ligger på \\(y\\)-axeln, och triangeln \\(ABP\\) är rätvinklig med den räta vinkeln vid \\(P\\).</p><p>Bestäm alla möjliga \\(y\\)-koordinater för \\(P\\). Svara exakt.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Låt</p><div class=\"facit-matte\">\\[P=(0,p)\\].</div></div></li><li><p>Avståndsformeln ger</p></li><li><p>\\[PA^2=(0+2)^2+p^2=4+p^2,\\quad PB^2=(0-4)^2+p^2=16+p^2,\\quad AB^2=6^2=36.\\]</p></li><li><p>Rät vinkel vid \\(P\\) betyder att \\(AB\\) är hypotenusa, så enligt Pythagoras sats:</p></li><li><p>\\[(4+p^2)+(16+p^2)=36\\;\\Leftrightarrow\\;2p^2=16\\;\\Leftrightarrow\\;p=\\pm2\\sqrt2.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(y=2\\sqrt2\\) eller \\(y=-2\\sqrt2\\)</p></div>",
+      "familj": "Avståndsformeln och kombinerade problem",
+      "formaga": [
+        "problemlösning",
+        "procedur"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Kalla punkten \\((0,p)\\). Vilken sida är hypotenusa? Använd Pythagoras sats tillsammans med avståndsformeln.</p>",
+      "spel": true,
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        "2\\sqrt2",
+        "-2\\sqrt2"
+      ],
+      "tolerans": null,
+      "svarEtiketter": [
+        "y",
+        "y"
+      ],
+      "svarsstruktur": "mängd",
+      "svarFormat": [
+        "uttryck",
+        "uttryck"
+      ]
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.488",
+    "before": {
+      "id": "3.488",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>I triangeln \\(ABC\\) är \\(AC=12\\) cm. Sträckan \\(DE\\) är parallell med \\(AB\\) och delar triangeln i två delar med lika stor area: den skuggade topptriangeln \\(DEC\\) och fyrhörningen \\(ABED\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"290\" viewBox=\"0 0 420 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med sträckan DE parallell med AB; topptriangeln DEC är skuggad\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"183.1,101.5 271.0,101.5 230,40\" fill=\"#dbe8f7\"/><polygon points=\"70,250 370,250 230,40\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"183.1\" y1=\"101.5\" x2=\"271.0\" y2=\"101.5\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"70.0\" cy=\"250.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"56\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"370.0\" cy=\"250.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"384\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"230.0\" cy=\"40.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"230\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"183.1\" cy=\"101.5\" r=\"3.2\" fill=\"#24262b\"/><text x=\"167\" y=\"108\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"271.0\" cy=\"101.5\" r=\"3.2\" fill=\"#24262b\"/><text x=\"287\" y=\"108\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">E</text><text x=\"123\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">12 cm</text></svg></div><p>Hur lång är sträckan \\(CD\\)? Svara med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Eftersom \\(DE\\parallel AB\\) är triangeln \\(DEC\\) likformig med triangeln \\(ABC\\) (topptriangelsatsen).</p></li><li><div class=\"facit-berakning\"><p>Kalla längdskalan</p><div class=\"facit-matte\">\\[k=\\frac{CD}{CA}\\].</div></div></li><li><p>Areaskalan är \\(k^2\\).</p></li><li><p>Topptriangeln ska ha halva arean:</p></li><li><p>\\[k^2=\\frac12\\;\\Rightarrow\\;k=\\frac{1}{\\sqrt2}.\\]</p></li><li><p>Alltså \\(CD=\\frac{12}{\\sqrt2}=6\\sqrt2\\approx8{,}49\\) cm.</p></li><li><p>Lägg märke till att \\(D\\) inte ligger mitt på \\(AC\\): halva sträckan skulle bara ge en fjärdedel av arean.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(CD=6\\sqrt2\\approx8{,}49\\) cm</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "problemlösning",
+        "begrepp"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Hur förhåller sig areaskalan till längdskalan för två likformiga trianglar?</p>",
+      "spel": true,
+      "traningsniva": 5,
+      "arbetsinsats": 2,
+      "svarstyp": "numeriskt",
+      "rättSvar": 8.49,
+      "tolerans": 0.01
+    },
+    "after": {
+      "id": "3.488",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/2/0",
+      "t": "<p>I triangeln \\(ABC\\) är \\(AC=12\\) cm. Sträckan \\(DE\\) är parallell med \\(AB\\) och delar triangeln i två delar med lika stor area: den skuggade topptriangeln \\(DEC\\) och fyrhörningen \\(ABED\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"290\" viewBox=\"0 0 420 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med sträckan DE parallell med AB; topptriangeln DEC är skuggad\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"183.1,101.5 271.0,101.5 230,40\" fill=\"#dbe8f7\"/><polygon points=\"70,250 370,250 230,40\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"183.1\" y1=\"101.5\" x2=\"271.0\" y2=\"101.5\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"70.0\" cy=\"250.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"56\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"370.0\" cy=\"250.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"384\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"230.0\" cy=\"40.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"230\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"183.1\" cy=\"101.5\" r=\"3.2\" fill=\"#24262b\"/><text x=\"167\" y=\"108\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"271.0\" cy=\"101.5\" r=\"3.2\" fill=\"#24262b\"/><text x=\"287\" y=\"108\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">E</text><text x=\"123\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">12 cm</text></svg></div><p>Hur lång är sträckan \\(CD\\)? Svara med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Eftersom \\(DE\\parallel AB\\) är triangeln \\(DEC\\) likformig med triangeln \\(ABC\\) (topptriangelsatsen).</p></li><li><div class=\"facit-berakning\"><p>Kalla längdskalan</p><div class=\"facit-matte\">\\[k=\\frac{CD}{CA}\\].</div></div></li><li><p>Areaskalan är \\(k^2\\).</p></li><li><p>Topptriangeln ska ha halva arean:</p></li><li><p>\\[k^2=\\frac12\\;\\Rightarrow\\;k=\\frac{1}{\\sqrt2}.\\]</p></li><li><p>Alltså \\(CD=\\frac{12}{\\sqrt2}=6\\sqrt2\\approx8{,}49\\) cm.</p></li><li><p>Lägg märke till att \\(D\\) inte ligger mitt på \\(AC\\): halva sträckan skulle bara ge en fjärdedel av arean.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(CD=6\\sqrt2\\approx8{,}49\\) cm</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "problemlösning",
+        "begrepp"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Hur förhåller sig areaskalan till längdskalan för två likformiga trianglar?</p>",
+      "spel": true,
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "svarstyp": "numeriskt",
+      "rättSvar": 8.49,
+      "tolerans": 0.01
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.489",
+    "before": {
+      "id": "3.489",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>I triangeln \\(ABC\\) är \\(DE\\) parallell med \\(BC\\). Längderna (i cm) framgår av figuren: \\(AD=x\\), \\(DB=x+5\\), \\(AE=4\\) och \\(EC=x\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"290\" viewBox=\"0 0 420 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med DE parallell med BC och sträckor uttryckta i x\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"210,30 50,260 380,260\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"151.3\" y1=\"114.4\" x2=\"272.4\" y2=\"114.4\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"210.0\" cy=\"30.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"50.0\" cy=\"260.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"36\" y=\"276\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"380.0\" cy=\"260.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"394\" y=\"276\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"151.3\" cy=\"114.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"135\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"272.4\" cy=\"114.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"288\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">E</text><text x=\"168\" y=\"69\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">x</text><text x=\"76\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">x + 5</text><text x=\"252\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">4</text><text x=\"339\" y=\"184\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">x</text></svg></div><p>Bestäm \\(x\\). Svara med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Transversalsatsen ger att \\(DE\\) delar sidorna i samma förhållande:</p></li><li><p>\\[\\frac{AD}{DB}=\\frac{AE}{EC}\\;\\Leftrightarrow\\;\\frac{x}{x+5}=\\frac{4}{x}\\;\\Leftrightarrow\\;x^2=4x+20.\\]</p></li><li><p>\\(x^2-4x-20=0\\) ger \\(x=2\\pm\\sqrt{4+20}=2\\pm2\\sqrt6\\).</p></li><li><p>Längden måste vara positiv, så</p></li><li><p>\\[x=2+2\\sqrt6\\approx6{,}90.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2+2\\sqrt6\\approx6{,}90\\) cm</p></div>",
+      "familj": "Transversalsatsen och delningsförhållanden",
+      "formaga": [
+        "procedur",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Ställ upp transversalsatsen. Du får en andragradsekvation. Vilken lösning är rimlig?</p>",
+      "spel": true,
+      "traningsniva": 4,
+      "arbetsinsats": 2,
+      "svarstyp": "numeriskt",
+      "rättSvar": 6.9,
+      "tolerans": 0.01
+    },
+    "after": {
+      "id": "3.489",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/2/0",
+      "t": "<p>I triangeln \\(ABC\\) är \\(DE\\) parallell med \\(BC\\). Längderna (i cm) framgår av figuren: \\(AD=x\\), \\(DB=x+5\\), \\(AE=4\\) och \\(EC=x\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"290\" viewBox=\"0 0 420 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med DE parallell med BC och sträckor uttryckta i x\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"210,30 50,260 380,260\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"151.3\" y1=\"114.4\" x2=\"272.4\" y2=\"114.4\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"210.0\" cy=\"30.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"50.0\" cy=\"260.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"36\" y=\"276\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"380.0\" cy=\"260.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"394\" y=\"276\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"151.3\" cy=\"114.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"135\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"272.4\" cy=\"114.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"288\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">E</text><text x=\"168\" y=\"69\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">x</text><text x=\"76\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">x + 5</text><text x=\"252\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">4</text><text x=\"339\" y=\"184\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-style=\"italic\">x</text></svg></div><p>Bestäm \\(x\\). Svara med två decimaler.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Transversalsatsen ger att \\(DE\\) delar sidorna i samma förhållande:</p></li><li><p>\\[\\frac{AD}{DB}=\\frac{AE}{EC}\\;\\Leftrightarrow\\;\\frac{x}{x+5}=\\frac{4}{x}\\;\\Leftrightarrow\\;x^2=4x+20.\\]</p></li><li><p>\\(x^2-4x-20=0\\) ger \\(x=2\\pm\\sqrt{4+20}=2\\pm2\\sqrt6\\).</p></li><li><p>Längden måste vara positiv, så</p></li><li><p>\\[x=2+2\\sqrt6\\approx6{,}90.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2+2\\sqrt6\\approx6{,}90\\) cm</p></div>",
+      "familj": "Transversalsatsen och delningsförhållanden",
+      "formaga": [
+        "procedur",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Ställ upp transversalsatsen. Du får en andragradsekvation. Vilken lösning är rimlig?</p>",
+      "spel": true,
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "svarstyp": "numeriskt",
+      "rättSvar": 6.9,
+      "tolerans": 0.01
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.497",
+    "before": {
+      "id": "3.497",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>I parallelltrapetset \\(ABCD\\) är \\(AB\\parallel DC\\), \\(AB=12\\) cm och \\(DC=4\\) cm. Avståndet mellan de parallella sidorna är 8 cm. Diagonalerna skär varandra i \\(S\\).</p><div class=\"fig smal\"><svg width=\"400\" height=\"290\" viewBox=\"0 0 400 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Parallelltrapetset ABCD med AB parallell med DC, diagonalerna skär varandra i S och triangeln ABS är skuggad\"><rect x=\"1\" y=\"1\" width=\"398\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"44.0,252.0 356.0,252.0 180.5,96.0\" fill=\"#dbe8f7\" stroke=\"#24262b\" stroke-width=\"0\" stroke-linejoin=\"round\"/><polygon points=\"44.0,252.0 356.0,252.0 226.0,44.0 122.0,44.0\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"44.0\" y1=\"252.0\" x2=\"226.0\" y2=\"44.0\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"252.0\" x2=\"122.0\" y2=\"44.0\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M124.4 246.0 L134.4 252.0 L124.4 258.0\" fill=\"none\" stroke=\"#2e7d52\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M146.2 38.0 L156.2 44.0 L146.2 50.0\" fill=\"none\" stroke=\"#2e7d52\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"44.0\" cy=\"252.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"32\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"356.0\" cy=\"252.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"368\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"226.0\" cy=\"44.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"238\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"122.0\" cy=\"44.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"110\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"180.5\" cy=\"96.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"180\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">S</text><text x=\"200\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">12</text><text x=\"174\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">4</text></svg></div><p>Bestäm arean av triangeln \\(ABS\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Eftersom \\(AB\\parallel DC\\) är vinkel \\(SAB\\) = vinkel \\(SCD\\) och vinkel \\(SBA\\) = vinkel \\(SDC\\) (alternatvinklar).</p></li><li><p>Trianglarna \\(ABS\\) och \\(CDS\\) är därför likformiga.</p></li><li><div class=\"facit-berakning\"><p>Längdskalan är</p><div class=\"facit-matte\">\\[\\frac{AB}{DC}=\\frac{12}{4}=3\\].</div></div></li><li><p>Höjderna från \\(S\\) mot \\(AB\\) respektive mot \\(DC\\) har samma förhållande.</p></li><li><p>Tillsammans är de 8 cm:</p></li><li><p>\\[h_{AB}+h_{DC}=8,\\quad h_{AB}=3h_{DC}\\;\\Rightarrow\\;h_{DC}=2,\\ h_{AB}=6.\\]</p></li><li><p>\\[A_{ABS}=\\frac{12\\cdot6}{2}=36\\text{ cm}^2.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 36 cm²</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "problemlösning",
+        "resonemang"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Vilka två trianglar i figuren är likformiga? Vad är längdskalan, och hur delas höjden 8 cm upp av punkten \\(S\\)?</p>",
+      "spel": true,
+      "traningsniva": 5,
+      "arbetsinsats": 3,
+      "svarstyp": "numeriskt",
+      "rättSvar": 36,
+      "tolerans": null,
+      "svarEnhet": "cm²"
+    },
+    "after": {
+      "id": "3.497",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/2/0",
+      "t": "<p>I parallelltrapetset \\(ABCD\\) är \\(AB\\parallel DC\\), \\(AB=12\\) cm och \\(DC=4\\) cm. Avståndet mellan de parallella sidorna är 8 cm. Diagonalerna skär varandra i \\(S\\).</p><div class=\"fig smal\"><svg width=\"400\" height=\"290\" viewBox=\"0 0 400 290\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Parallelltrapetset ABCD med AB parallell med DC, diagonalerna skär varandra i S och triangeln ABS är skuggad\"><rect x=\"1\" y=\"1\" width=\"398\" height=\"288\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"44.0,252.0 356.0,252.0 180.5,96.0\" fill=\"#dbe8f7\" stroke=\"#24262b\" stroke-width=\"0\" stroke-linejoin=\"round\"/><polygon points=\"44.0,252.0 356.0,252.0 226.0,44.0 122.0,44.0\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"44.0\" y1=\"252.0\" x2=\"226.0\" y2=\"44.0\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"252.0\" x2=\"122.0\" y2=\"44.0\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M124.4 246.0 L134.4 252.0 L124.4 258.0\" fill=\"none\" stroke=\"#2e7d52\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M146.2 38.0 L156.2 44.0 L146.2 50.0\" fill=\"none\" stroke=\"#2e7d52\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"44.0\" cy=\"252.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"32\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"356.0\" cy=\"252.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"368\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"226.0\" cy=\"44.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"238\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"122.0\" cy=\"44.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"110\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">D</text><circle cx=\"180.5\" cy=\"96.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"180\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">S</text><text x=\"200\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">12</text><text x=\"174\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">4</text></svg></div><p>Bestäm arean av triangeln \\(ABS\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Eftersom \\(AB\\parallel DC\\) är vinkel \\(SAB\\) = vinkel \\(SCD\\) och vinkel \\(SBA\\) = vinkel \\(SDC\\) (alternatvinklar).</p></li><li><p>Trianglarna \\(ABS\\) och \\(CDS\\) är därför likformiga.</p></li><li><div class=\"facit-berakning\"><p>Längdskalan är</p><div class=\"facit-matte\">\\[\\frac{AB}{DC}=\\frac{12}{4}=3\\].</div></div></li><li><p>Höjderna från \\(S\\) mot \\(AB\\) respektive mot \\(DC\\) har samma förhållande.</p></li><li><p>Tillsammans är de 8 cm:</p></li><li><p>\\[h_{AB}+h_{DC}=8,\\quad h_{AB}=3h_{DC}\\;\\Rightarrow\\;h_{DC}=2,\\ h_{AB}=6.\\]</p></li><li><p>\\[A_{ABS}=\\frac{12\\cdot6}{2}=36\\text{ cm}^2.\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 36 cm²</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "problemlösning",
+        "resonemang"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Vilka två trianglar i figuren är likformiga? Vad är längdskalan, och hur delas höjden 8 cm upp av punkten \\(S\\)?</p>",
+      "spel": true,
+      "traningsniva": 4,
+      "arbetsinsats": 3,
+      "svarstyp": "numeriskt",
+      "rättSvar": 36,
+      "tolerans": null,
+      "svarEnhet": "cm²"
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.498",
+    "before": {
+      "id": "3.498",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>En 1,8 m lång person står 4,0 m från en gatlykta och har en 2,4 m lång skugga på marken.</p><p><strong>a)</strong> Hur högt sitter lampan?</p><p><strong>b)</strong> Personen går 2,0 m längre bort från lyktan. Hur lång blir skuggan nu?</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Lyktstolpen och personen är båda lodräta, alltså parallella.</p></li><li><p>Ljusstrålen över personens huvud ger en topptriangel inuti den stora triangeln.</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Den stora triangeln har basen \\(4{,}0+2{,}4=6{,}4\\) m och höjden \\(H\\).</p></li><li><p>Den lilla har basen 2,4 m och höjden 1,8 m:</p></li></ol></div></div><ol class=\"facit-steglista\" role=\"list\"><li><p>\\[\\frac{H}{6{,}4}=\\frac{1{,}8}{2{,}4}\\;\\Rightarrow\\;H=4{,}8\\text{ m}.\\]</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Nu är avståndet 6,0 m.</p></li><li><p>Med skuggan \\(s\\):</p></li></ol></div></div><ol class=\"facit-steglista\" role=\"list\"><li><p>\\[\\frac{s}{6{,}0+s}=\\frac{1{,}8}{4{,}8}=0{,}375\\;\\Leftrightarrow\\;0{,}625s=2{,}25\\;\\Leftrightarrow\\;s=3{,}6\\text{ m}.\\]</p></li><li><p>Skuggan blir 1,2 m längre när personen går 2 m bort.</p></li><li><p>Skuggan växer med 60 % av sträckan man går.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> a) 4,8 m &nbsp; b) 3,6 m</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "modellering",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Rita en figur med lyktstolpen, personen och skuggan. Vilka trianglar är likformiga? Bestäm först lampans höjd.</p>",
+      "spel": true,
+      "traningsniva": 4,
+      "arbetsinsats": 3,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        4.8,
+        3.6
+      ],
+      "tolerans": [
+        0.01,
+        0.01
+      ],
+      "svarEtiketter": [
+        "a) Höjd",
+        "b) Skugga"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEnhet": [
+        "m",
+        "m"
+      ]
+    },
+    "after": {
+      "id": "3.498",
+      "kap": 3,
+      "omr": "topptriangel_transversal",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "1/2/0",
+      "t": "<p>En 1,8 m lång person står 4,0 m från en gatlykta och har en 2,4 m lång skugga på marken.</p><p><strong>a)</strong> Hur högt sitter lampan?</p><p><strong>b)</strong> Personen går 2,0 m längre bort från lyktan. Hur lång blir skuggan nu?</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Lyktstolpen och personen är båda lodräta, alltså parallella.</p></li><li><p>Ljusstrålen över personens huvud ger en topptriangel inuti den stora triangeln.</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Den stora triangeln har basen \\(4{,}0+2{,}4=6{,}4\\) m och höjden \\(H\\).</p></li><li><p>Den lilla har basen 2,4 m och höjden 1,8 m:</p></li></ol></div></div><ol class=\"facit-steglista\" role=\"list\"><li><p>\\[\\frac{H}{6{,}4}=\\frac{1{,}8}{2{,}4}\\;\\Rightarrow\\;H=4{,}8\\text{ m}.\\]</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Nu är avståndet 6,0 m.</p></li><li><p>Med skuggan \\(s\\):</p></li></ol></div></div><ol class=\"facit-steglista\" role=\"list\"><li><p>\\[\\frac{s}{6{,}0+s}=\\frac{1{,}8}{4{,}8}=0{,}375\\;\\Leftrightarrow\\;0{,}625s=2{,}25\\;\\Leftrightarrow\\;s=3{,}6\\text{ m}.\\]</p></li><li><p>Skuggan blir 1,2 m längre när personen går 2 m bort.</p></li><li><p>Skuggan växer med 60 % av sträckan man går.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> a) 4,8 m &nbsp; b) 3,6 m</p></div>",
+      "familj": "Topptriangelsatsen",
+      "formaga": [
+        "modellering",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Rita en figur med lyktstolpen, personen och skuggan. Vilka trianglar är likformiga? Bestäm först lampans höjd.</p>",
+      "spel": true,
+      "traningsniva": 3,
+      "arbetsinsats": 3,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        4.8,
+        3.6
+      ],
+      "tolerans": [
+        0.01,
+        0.01
+      ],
+      "svarEtiketter": [
+        "a) Höjd",
+        "b) Skugga"
+      ],
+      "svarsstruktur": "ordnad",
+      "svarEnhet": [
+        "m",
+        "m"
+      ]
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.487",
+    "before": {
+      "id": "3.487",
+      "kap": 3,
+      "omr": "bevis_likformighet",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/0/2",
+      "t": "<p>I triangeln ABC ligger punkten D på sidan AC. De markerade vinklarna \\(\\angle ABD\\) och \\(\\angle ACB\\) är lika stora. Det är givet att AD = 4 och AC = 9.</p><div class=\"fig smal\"><svg width=\"520\" height=\"320\" viewBox=\"0 0 520 320\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med sträckan BD och två markerade lika stora vinklar\"><rect x=\"1\" y=\"1\" width=\"518\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"437.3,265.4 371.1,34.6 82.7,202.8\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"371.1\" y1=\"34.6\" x2=\"279.7\" y2=\"237.6\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"451\" y=\"281\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">A</text><text x=\"379\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">B</text><text x=\"66\" y=\"212\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">C</text><text x=\"273\" y=\"258\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">D</text><path d=\"M380.5 67.3 A34 34 0 0 1 357.1 65.6\" fill=\"none\" stroke=\"#315f9e\" stroke-width=\"2\"/><path d=\"M108.6 187.7 A30 30 0 0 1 112.3 208.0\" fill=\"none\" stroke=\"#315f9e\" stroke-width=\"2\"/><text x=\"419\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-style=\"italic\">x</text><text x=\"356\" y=\"271\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">4</text><line x1=\"430.3\" y1=\"304.7\" x2=\"75.8\" y2=\"242.2\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><line x1=\"431.4\" y1=\"298.8\" x2=\"429.3\" y2=\"310.7\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><line x1=\"76.8\" y1=\"236.3\" x2=\"74.7\" y2=\"248.1\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><text x=\"250\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">9</text></svg></div><p>Bestäm \\(x=AB\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Trianglarna ABD och ACB har vinkeln A gemensam, och</p><div class=\"facit-matte\">\\[\\angle ABD=\\angle ACB\\].</div></div></li><li><p>De är alltså likformiga (VV) med hörnen i ordningen A ↔ A, B ↔ C och D ↔ B.</p></li><li><p>Motsvarande sidor ger</p></li><li><p>\\[\\frac{AB}{AC}=\\frac{AD}{AB}\\quad\\Rightarrow\\quad AB^2=AD\\cdot AC=4\\cdot9=36\\quad\\Rightarrow\\quad AB=6\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar: \\(x=6\\).</strong></p></div>",
+      "familj": "Bevis och tillämpningar med likformighet",
+      "formaga": [
+        "begrepp",
+        "resonemang",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "svarstyp": "numeriskt",
+      "rättSvar": 6,
+      "tolerans": 1e-09,
+      "självrättning": true,
+      "ledtrad": "<p>Hitta två trianglar som har två par lika stora vinklar. Sidan AB ingår i båda – vilka sidor motsvarar den?</p>",
+      "traningsniva": 5,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarFormat": "numeriskt"
+    },
+    "after": {
+      "id": "3.487",
+      "kap": 3,
+      "omr": "bevis_likformighet",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/2/0",
+      "t": "<p>I triangeln ABC ligger punkten D på sidan AC. De markerade vinklarna \\(\\angle ABD\\) och \\(\\angle ACB\\) är lika stora. Det är givet att AD = 4 och AC = 9.</p><div class=\"fig smal\"><svg width=\"520\" height=\"320\" viewBox=\"0 0 520 320\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med sträckan BD och två markerade lika stora vinklar\"><rect x=\"1\" y=\"1\" width=\"518\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><polygon points=\"437.3,265.4 371.1,34.6 82.7,202.8\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"371.1\" y1=\"34.6\" x2=\"279.7\" y2=\"237.6\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"451\" y=\"281\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">A</text><text x=\"379\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">B</text><text x=\"66\" y=\"212\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">C</text><text x=\"273\" y=\"258\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\">D</text><path d=\"M380.5 67.3 A34 34 0 0 1 357.1 65.6\" fill=\"none\" stroke=\"#315f9e\" stroke-width=\"2\"/><path d=\"M108.6 187.7 A30 30 0 0 1 112.3 208.0\" fill=\"none\" stroke=\"#315f9e\" stroke-width=\"2\"/><text x=\"419\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-style=\"italic\">x</text><text x=\"356\" y=\"271\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">4</text><line x1=\"430.3\" y1=\"304.7\" x2=\"75.8\" y2=\"242.2\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><line x1=\"431.4\" y1=\"298.8\" x2=\"429.3\" y2=\"310.7\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><line x1=\"76.8\" y1=\"236.3\" x2=\"74.7\" y2=\"248.1\" stroke=\"#6b7280\" stroke-width=\"1.3\"/><text x=\"250\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">9</text></svg></div><p>Bestäm \\(x=AB\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Trianglarna ABD och ACB har vinkeln A gemensam, och</p><div class=\"facit-matte\">\\[\\angle ABD=\\angle ACB\\].</div></div></li><li><p>De är alltså likformiga (VV) med hörnen i ordningen A ↔ A, B ↔ C och D ↔ B.</p></li><li><p>Motsvarande sidor ger</p></li><li><p>\\[\\frac{AB}{AC}=\\frac{AD}{AB}\\quad\\Rightarrow\\quad AB^2=AD\\cdot AC=4\\cdot9=36\\quad\\Rightarrow\\quad AB=6\\]</p></li></ol><p class=\"facit-svar\"><strong>Svar: \\(x=6\\).</strong></p></div>",
+      "familj": "Bevis och tillämpningar med likformighet",
+      "formaga": [
+        "begrepp",
+        "resonemang",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "svarstyp": "numeriskt",
+      "rättSvar": 6,
+      "tolerans": 1e-09,
+      "självrättning": true,
+      "ledtrad": "<p>Hitta två trianglar som har två par lika stora vinklar. Sidan AB ingår i båda – vilka sidor motsvarar den?</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarFormat": "numeriskt"
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.531",
+    "before": {
+      "id": "3.531",
+      "kap": 3,
+      "omr": "geometri_problemlosning",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Punkterna \\(A\\), \\(B\\) och \\(C\\) ligger på en cirkel. \\(AB\\) är en diameter och är 10 cm lång. \\(AC=6\\) cm.</p><div class=\"fig smal\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 310\" width=\"460\" height=\"310\" role=\"img\" aria-label=\"Triangel ABC i en cirkel där AB är diameter\"><rect x=\"1\" y=\"1\" width=\"458\" height=\"308\" rx=\"12\" fill=\"#fff\" stroke=\"#d4dde5\"/><circle cx=\"230.00\" cy=\"150.00\" r=\"105.00\" fill=\"none\" stroke=\"#253747\" stroke-width=\"2\"/><line x1=\"125.00\" y1=\"150.00\" x2=\"335.00\" y2=\"150.00\" stroke=\"#253747\" stroke-width=\"2\" /><line x1=\"335.00\" y1=\"150.00\" x2=\"200.60\" y2=\"49.20\" stroke=\"#253747\" stroke-width=\"2\" /><line x1=\"200.60\" y1=\"49.20\" x2=\"125.00\" y2=\"150.00\" stroke=\"#253747\" stroke-width=\"2\" /><text x=\"113.00\" y=\"170.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">A</text><text x=\"347.00\" y=\"170.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">B</text><text x=\"200.60\" y=\"34.20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">C</text><text x=\"230.00\" y=\"174.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">10 cm</text><text x=\"230\" y=\"285\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">AC = 6 cm</text></svg></div><p>Hur lång är sidan \\(BC\\)?</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>En randvinkel över en diameter är rät. Triangeln är alltså rätvinklig vid \\(C\\), och \\(AB\\) är hypotenusan.</p>\\[BC^2=10^2-6^2=64\\]<p>En längd är positiv, så \\(BC=\\sqrt{64}=8\\) cm.</p><p class=\"facit-svar\"><strong>Svar:</strong> 8 cm</p></div>",
+      "familj": "Längder i en cirkel",
+      "formaga": [
+        "problemlösning",
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Vad vet du om en vinkel som står på en diameter?</p>",
+      "spel": true,
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "svarstyp": "numeriskt",
+      "svarFormat": "numeriskt",
+      "rättSvar": 8,
+      "tolerans": 1e-09,
+      "svarEnhet": "cm"
+    },
+    "after": {
+      "id": "3.531",
+      "kap": 3,
+      "omr": "geometri_problemlosning",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Punkterna \\(A\\), \\(B\\) och \\(C\\) ligger på en cirkel. \\(AB\\) är en diameter och är 10 cm lång. \\(AC=6\\) cm.</p><div class=\"fig smal\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 310\" width=\"460\" height=\"310\" role=\"img\" aria-label=\"Triangel ABC i en cirkel där AB är diameter\"><rect x=\"1\" y=\"1\" width=\"458\" height=\"308\" rx=\"12\" fill=\"#fff\" stroke=\"#d4dde5\"/><circle cx=\"230.00\" cy=\"150.00\" r=\"105.00\" fill=\"none\" stroke=\"#253747\" stroke-width=\"2\"/><line x1=\"125.00\" y1=\"150.00\" x2=\"335.00\" y2=\"150.00\" stroke=\"#253747\" stroke-width=\"2\" /><line x1=\"335.00\" y1=\"150.00\" x2=\"200.60\" y2=\"49.20\" stroke=\"#253747\" stroke-width=\"2\" /><line x1=\"200.60\" y1=\"49.20\" x2=\"125.00\" y2=\"150.00\" stroke=\"#253747\" stroke-width=\"2\" /><text x=\"113.00\" y=\"170.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">A</text><text x=\"347.00\" y=\"170.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">B</text><text x=\"200.60\" y=\"34.20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">C</text><text x=\"230.00\" y=\"174.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"19\" fill=\"#183747\">10 cm</text><text x=\"180\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#183747\">6 cm</text></svg></div><p>Hur lång är sidan \\(BC\\)?</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>En randvinkel över en diameter är rät. Triangeln är alltså rätvinklig vid \\(C\\), och \\(AB\\) är hypotenusan.</p>\\[BC^2=10^2-6^2=64\\]<p>En längd är positiv, så \\(BC=\\sqrt{64}=8\\) cm.</p><p class=\"facit-svar\"><strong>Svar:</strong> 8 cm</p></div>",
+      "familj": "Längder i en cirkel",
+      "formaga": [
+        "problemlösning",
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Vad vet du om en vinkel som står på en diameter?</p>",
+      "spel": true,
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "svarstyp": "numeriskt",
+      "svarFormat": "numeriskt",
+      "rättSvar": 8,
+      "tolerans": 1e-09,
+      "svarEnhet": "cm"
+    }
+  },
+  {
+    "bank": "uppgifterma2.js",
+    "id": "3.491",
+    "before": {
+      "id": "3.491",
+      "kap": 3,
+      "omr": "yttervinkelsatsen",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "A",
+      "poang": "0/1/2",
+      "t": "<p>I triangeln \\(ABC\\) är vinkeln vid \\(A\\) lika med \\(40^\\circ\\). Sidorna \\(AB\\) och \\(AC\\) förlängs förbi \\(B\\) och \\(C\\). Linjerna som halverar yttervinklarna vid \\(B\\) och \\(C\\) möts i punkten \\(P\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"320\" viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med de yttre bisektriserna vid B och C som möts i P\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><line x1=\"162.1\" y1=\"153.4\" x2=\"135.8\" y2=\"81.1\" stroke=\"#24262b\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><line x1=\"257.9\" y1=\"153.4\" x2=\"284.2\" y2=\"81.1\" stroke=\"#24262b\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><polygon points=\"210.0,285.0 162.1,153.4 257.9,153.4\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"162.1\" y1=\"153.4\" x2=\"210.0\" y2=\"85.1\" stroke=\"#2b6cb0\" stroke-width=\"2.2\"/><line x1=\"257.9\" y1=\"153.4\" x2=\"210.0\" y2=\"85.1\" stroke=\"#2b6cb0\" stroke-width=\"2.2\"/><circle cx=\"210.0\" cy=\"285.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"305\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"162.1\" cy=\"153.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"146\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"257.9\" cy=\"153.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"274\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"210.0\" cy=\"85.1\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">P</text><text x=\"210\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">40°</text></svg></div><p>Bestäm vinkeln \\(BPC\\). Visa också att svaret inte beror på hur stora vinklarna vid \\(B\\) och \\(C\\) är, så länge vinkeln vid \\(A\\) är \\(40^\\circ\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Kalla vinklarna i triangeln \\(A\\),</p></li><li><p>\\(B\\) och \\(C\\).</p></li><li><p>Yttervinkeln vid \\(B\\) är \\(180^\\circ-B\\) och halveras, så vinkeln \\(PBC=\\frac{180^\\circ-B}{2}=90^\\circ-\\frac B2\\).</p></li><li><div class=\"facit-berakning\"><p>På samma sätt är vinkeln</p><div class=\"facit-matte\">\\[PCB=90^\\circ-\\frac C2\\].</div></div></li><li><p>Vinkelsumman i triangeln \\(BPC\\):</p></li><li><p>\\[\\angle BPC=180^\\circ-\\left(90^\\circ-\\tfrac B2\\right)-\\left(90^\\circ-\\tfrac C2\\right)=\\frac{B+C}{2}=\\frac{180^\\circ-A}{2}=90^\\circ-\\frac A2.\\]</p></li><li><p>Bara vinkeln \\(A\\) ingår i slutresultatet.</p></li><li><p>Med \\(A=40^\\circ\\) är \\(\\angle BPC=90^\\circ-20^\\circ=70^\\circ\\).</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(70^\\circ\\)</p></div>",
+      "familj": "Yttervinkelsatsen med ekvationer och likbenta trianglar",
+      "formaga": [
+        "resonemang",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Uttryck vinklarna \\(PBC\\) och \\(PCB\\) med hjälp av triangelns vinklar vid \\(B\\) och \\(C\\). Använd sedan vinkelsumman två gånger.</p>",
+      "spel": true,
+      "traningsniva": 5,
+      "arbetsinsats": 3,
+      "svarstyp": "numeriskt",
+      "rättSvar": 70,
+      "tolerans": null
+    },
+    "after": {
+      "id": "3.491",
+      "kap": 3,
+      "omr": "yttervinkelsatsen",
+      "kurs": [
+        "2b",
+        "2c"
+      ],
+      "niva": "C",
+      "poang": "0/3/0",
+      "t": "<p>I triangeln \\(ABC\\) är vinkeln vid \\(A\\) lika med \\(40^\\circ\\). Sidorna \\(AB\\) och \\(AC\\) förlängs förbi \\(B\\) och \\(C\\). Linjerna som halverar yttervinklarna vid \\(B\\) och \\(C\\) möts i punkten \\(P\\).</p><div class=\"fig smal\"><svg width=\"420\" height=\"320\" viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangeln ABC med de yttre bisektriserna vid B och C som möts i P\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><line x1=\"162.1\" y1=\"153.4\" x2=\"135.8\" y2=\"81.1\" stroke=\"#24262b\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><line x1=\"257.9\" y1=\"153.4\" x2=\"284.2\" y2=\"81.1\" stroke=\"#24262b\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><polygon points=\"210.0,285.0 162.1,153.4 257.9,153.4\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"162.1\" y1=\"153.4\" x2=\"210.0\" y2=\"85.1\" stroke=\"#2b6cb0\" stroke-width=\"2.2\"/><line x1=\"257.9\" y1=\"153.4\" x2=\"210.0\" y2=\"85.1\" stroke=\"#2b6cb0\" stroke-width=\"2.2\"/><circle cx=\"210.0\" cy=\"285.0\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"305\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">A</text><circle cx=\"162.1\" cy=\"153.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"146\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">B</text><circle cx=\"257.9\" cy=\"153.4\" r=\"3.2\" fill=\"#24262b\"/><text x=\"274\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">C</text><circle cx=\"210.0\" cy=\"85.1\" r=\"3.2\" fill=\"#24262b\"/><text x=\"210\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">P</text><text x=\"210\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">40°</text></svg></div><p>Bestäm vinkeln \\(BPC\\). Visa också att svaret inte beror på hur stora vinklarna vid \\(B\\) och \\(C\\) är, så länge vinkeln vid \\(A\\) är \\(40^\\circ\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Kalla vinklarna i triangeln \\(A\\),</p></li><li><p>\\(B\\) och \\(C\\).</p></li><li><p>Yttervinkeln vid \\(B\\) är \\(180^\\circ-B\\) och halveras, så vinkeln \\(PBC=\\frac{180^\\circ-B}{2}=90^\\circ-\\frac B2\\).</p></li><li><div class=\"facit-berakning\"><p>På samma sätt är vinkeln</p><div class=\"facit-matte\">\\[PCB=90^\\circ-\\frac C2\\].</div></div></li><li><p>Vinkelsumman i triangeln \\(BPC\\):</p></li><li><p>\\[\\angle BPC=180^\\circ-\\left(90^\\circ-\\tfrac B2\\right)-\\left(90^\\circ-\\tfrac C2\\right)=\\frac{B+C}{2}=\\frac{180^\\circ-A}{2}=90^\\circ-\\frac A2.\\]</p></li><li><p>Bara vinkeln \\(A\\) ingår i slutresultatet.</p></li><li><p>Med \\(A=40^\\circ\\) är \\(\\angle BPC=90^\\circ-20^\\circ=70^\\circ\\).</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(70^\\circ\\)</p></div>",
+      "familj": "Yttervinkelsatsen med ekvationer och likbenta trianglar",
+      "formaga": [
+        "resonemang",
+        "problemlösning"
+      ],
+      "miniräknare": true,
+      "geogebra": false,
+      "självrättning": true,
+      "ledtrad": "<p>Uttryck vinklarna \\(PBC\\) och \\(PCB\\) med hjälp av triangelns vinklar vid \\(B\\) och \\(C\\). Använd sedan vinkelsumman två gånger.</p>",
+      "spel": true,
+      "traningsniva": 4,
+      "arbetsinsats": 3,
+      "svarstyp": "numeriskt",
+      "rättSvar": 70,
+      "tolerans": null
+    }
+  }
+]

@@ -882,3 +882,14 @@ ska inte sammanfalla med det efterfrågade stoppet. Stopptiden beräknas från
 arean, inte från accelerationens grafände. Tidigare numeriska rättningar
 bevaras. Regression: tools/felrapporter-2026-10-14-1634.test.js i master och
 motsvarande browser.js i Kunskapsgymmet.
+
+## FP49 – modellbygge på delkort och rutinuppgifter felmärkta A (2026-10-14)
+
+[Nivåbeslut och jämförelser](NIVAKALIBRERING_2026-10-14_1645.md), även som JSON.
+Fy1 4.536 b och 4.533 är nivå 3 när retardationen ska härledas innan ett okänt
+friktionstal bestäms. 4.669 b är nivå 4: tre krafter på B, rätt accelerationstecken;
+att a-kortet är enklare ska inte styra b:s nivå. Givna mellanresultat ska fortfarande
+vägas in. Ma2 3.487/488/489/491/492/497/498 har inte A-krav: poäng och E/C/A måste
+ändras tillsammans med träningsnivån. Gör inte en rutinuppgift till A enbart
+för att den har flera beräkningssteg. Ma2 3.531:s mått står vid AC i figuren.
+Test: tools/nivakalibrering-2026-10-14-1645.browser.js i Kunskapsgymmet.
