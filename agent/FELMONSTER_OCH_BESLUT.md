@@ -893,3 +893,14 @@ vägas in. Ma2 3.487/488/489/491/492/497/498 har inte A-krav: poäng och E/C/A m
 ändras tillsammans med träningsnivån. Gör inte en rutinuppgift till A enbart
 för att den har flera beräkningssteg. Ma2 3.531:s mått står vid AC i figuren.
 Test: tools/nivakalibrering-2026-10-14-1645.browser.js i Kunskapsgymmet.
+
+## KG07 – π och exakta uttryck utan algebrabibliotek (2026-10-14)
+
+[Reproduktion, rättning och sex granskade uppgifter](FELRAPPORT_PI_2026-10-14_1905.md).
+Mato2 #1.37 fick en textfallback när algebraisktLika avbröt vid saknat nerdamer.
+Då godtogs pi/3 men inte π/3. Rena taluttryck ska normaliseras och jämföras
+med den befintliga strikta talparsern även utan bibliotek; symboliska uttryck
+behåller tidigare bibliotek/fallback. Ändra inte ett korrekt bankfacit för
+att kringgå det. Testa själva π-knappen i rätt svarsfält och sätt biblioteket
+uttryckligen undefined när frånvaro simuleras (delete kan misslyckas).
+Tester: exakta-talsvar.test.js och pi-symbolrad-2026-10-14.browser.js i konsumenten.
