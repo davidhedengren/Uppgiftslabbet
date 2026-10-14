@@ -778,3 +778,11 @@ Skydd: validatorns ERROR `GEOGEBRA_REQUIRES_CALCULATOR` granskar parent och delk
 Standardtillägg behåller andra undervisningsgrupper. En flytt måste ha en uttryckligt vald, behörig källklass, och alla valda elever måste finnas där. Validera hela mängden före första ändringen; behåll övriga grupper, träningshistorik och XP. Topplisteklass är en separat modell; befintlig trigger gäller nya gruppmedlemskap i kopplade klasser. Elevvalet informerar om detta. Val ska bevaras genom sökning och sparfel, och kontroller spärras under sparande.
 
 Skydd: konsumentens `tools/larare-elevval.integration.js` (lokal PostgreSQL, rättigheter/atomisk flytt och verklig toppliste-trigger) och `tools/larare-elevval.browser.py` (roller, direkt start, klassskapande, statistik, val/flytt och mobil). `sql/2026-10-14-larare-elevval.sql` måste köras separat i Supabase; push aktiverar inte databasen.
+
+## KG03 – undervisningsgrupper, klassimport och återkommande elevklassval (2026-10-14)
+
+[Åtgärder, klassimportens omfattning, SQL och verifiering](GRUPPER_KLASSIMPORT_2026-10-14.md). Ersätter KG02:s benämning **Mina klasser** med **Mina grupper**. Klass och undervisningsgrupp är skilda: samma elev kan ha olika ämnesgrupper/lärare. Klassimport markerar nya, behöriga elever från en eller flera valda klasser och behåller övriga grupper; inget sparas före lärarens knapptryck. Klassalternativ byggs från den behöriga elevlistan, inte globala elevuppgifter.
+
+Befintliga gruppmedlemmar ska vara ibockade, utan texten ”Redan i gruppen”. Befintliga kryss är låsta i tilläggsvyn; bara nya elever räknas/skickas. Klassimport återställer flyttläget så att en tidigare vald källa inte oavsiktligt används. Okopplade grupper bevarar elevens klass; en tidigare uttrycklig grupp–topplistekoppling har kvar sin dokumenterade trigger och ska inte skapas automatiskt.
+
+Elever utan klass får den obligatoriska klassrutan vid varje inloggning/sidstart, oberoende av nyhetsflaggor. Verifiera rollen, undanta lärare/admin och bind väntande uppmaning till inloggat användar-ID. Klassvalet ska inte visa lärarklassen. Konsumentens klassintegration-/webbläsartester skyddar detta. Aktivera med `sql/2026-10-14-grupper-klassimport.sql`, även när föregående elevval-SQL har körts. Ingen ny SQL behövs för den befintliga klassvalsmodellens inloggningsruta.
