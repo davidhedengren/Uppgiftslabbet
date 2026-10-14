@@ -870,3 +870,15 @@ utan att återkomma i nya rekommendationer. Ändra inte OMR eller familjer för
 en ren visningsuppdelning. Uppgiftslabbet ska behålla ordningen och filtrera
 historiska/spårbegränsade grupper. Tester: lektionsomraden.test.js i båda
 repona och lektionsomraden.browser.js i Kunskapsgymmet.
+
+## FP48 – flerdelsformulering på fristående kort och avslöjande grafände (2026-10-14)
+
+[Rapporter och jämförelser](FELRAPPORTER_2026-10-14_1634.md). Fy1 3.192,
+3.197 och 3.386 visar hur pluralinledning, ”vart och ett av slutvärdena”
+och byte från partikel till bil följer med trots att kortets siffror är
+kompletta. Granska också referensord och vilket föremål en mening avser.
+Fy1 3.143:s a–t-graf ska fortsätta streckad förbi 13 s; grafens slutpunkt
+ska inte sammanfalla med det efterfrågade stoppet. Stopptiden beräknas från
+arean, inte från accelerationens grafände. Tidigare numeriska rättningar
+bevaras. Regression: tools/felrapporter-2026-10-14-1634.test.js i master och
+motsvarande browser.js i Kunskapsgymmet.
