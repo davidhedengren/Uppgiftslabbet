@@ -25,7 +25,7 @@ test('Tabeller och diagram visar de observationer som facit använder',()=>{
  }
 });
 test('Alla 111 delkort har tabell/figur, egen fråga, facit, ledtråd och riktiga svarsfält',()=>{
- let count=0;for(const m of models){const q=get(m.id);assert.equal(q.kap,4);assert.deepEqual(plain(q.kurs),['2a','2b','2c']);assert.equal(q.spel,true);assert.equal(q.miniräknare,true);assert.equal(q.spelDelning,'deluppgifter');assert.equal(q.spelDelar.length,q.rättSvar.length);assert.equal(q.svarEtiketter.length,q.rättSvar.length);
+ let count=0;for(const m of models){const q=get(m.id);assert.equal(q.kap,4);assert.deepEqual(plain(q.kurs),['2a','2b','2c']);assert.equal(q.spel,true);assert.equal(q.miniräknare,['basic','categorical'].includes(m.type));if(!['basic','categorical'].includes(m.type))assert.equal(q.geogebra,true);assert.equal(q.spelDelning,'deluppgifter');assert.equal(q.spelDelar.length,q.rättSvar.length);assert.equal(q.svarEtiketter.length,q.rättSvar.length);
   q.spelDelar.forEach((p,i)=>{count++;assert.ok(p.fraga&&p.s&&p.ledtrad);assert.doesNotMatch(p.fraga+p.ledtrad,/svaret från|föregående del|använd ditt svar/i);assert.doesNotMatch(p.s,/facit-steglista|<ol/);if(Array.isArray(q.rättSvar[i])){assert.equal(p.svarEtiketter.length,q.rättSvar[i].length);assert.equal(q.svarFormat[i].length,q.rättSvar[i].length);assert.equal(q.svarEnhet[i].length,q.rättSvar[i].length);assert.equal(q.tolerans[i].length,q.rättSvar[i].length);assert.ok(['ordnad','mängd'].includes(p.svarsstruktur));}assert.ok(p.traningsniva>=1&&p.traningsniva<=3);});
  }assert.equal(count,111);
 });

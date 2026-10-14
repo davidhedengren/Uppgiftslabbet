@@ -752,3 +752,11 @@ Skydd: master `tools/felrapporter-2026-10-14.test.js`, konsument `tools/felrappo
 Ändra inte enbart nämnarsymbolen i specialproblem. #4.283:s två grupper har nu givna Sx-värden: deras inre kvadratsummor är 19·25 och 29·25. Lägg till skillnaderna från gemensamma medelvärdet 66: total kvadratsumma 2400, Sx = √(2400/49). #4.284:s oförändrade Sx kräver v = 50 ± √(72/7), cirka 46,79 och 53,21; de gamla 47/53 bevarar σx men inte Sx. Både exakta uttryck och angiven avrundning godtas.
 
 Skydd: `tools/statistik-sx-2026-10-14.test.js`, `tools/fixtures/statistik-sx-2026-10-14.json` och konsument `tools/statistik-sx-2026-10-14.browser.py`. Befintliga stickprovs-, statistikmåtts-, referens- och 17:49-regressioner har nya oberoende Sx-mål; skydd för ordning, frekvenser, nollspridning, histogramuppskattningar och felavrundning behålls. Ett σx-värde kan avrundas till samma tal som Sx; avvisa det andra måttet när skillnaden faktiskt överstiger den angivna toleransen, inte när avrundade svar sammanfaller.
+
+## FP45 – GeoGebra för statistik och verktyg per delkort (2026-10-14)
+
+[Alla 45 berörda uppgifter, verktygsregler och licensbeslut](STATISTIK_GEOGEBRA_2026-10-14.md). Samtliga 42 datamodeller från FP44 samt #4.283/284/306 tillåter GeoGebra. Den inbyggda miniräknaren spärras för standardavvikelseberäkningar; övriga delar behåller sin tidigare miniräknare. `expandGameTask` ska beakta uttryckliga `geogebra`/`miniräknare` från varje del, även false. Ändra inte fysikens generella miniräknartillstånd.
+
+Kunskapsgymmet visar en GeoGebra-länk till officiella Classic i ny flik, med noopener/noreferrer. Ingen app, kod, språkfil eller iframe bäddas in. Användaren bekräftade att tjänsten är kostnadsfri nu men överväger kommersiell uppskalning. GeoGebras officiella licens kräver särskilt avtal för kommersiell användning; extern länk är inte ett generellt undantag från deras användarvillkor vid framtida kommersiell användning. Aktivera inte en inbäddning utifrån enbart att webbplatsen är gratis.
+
+Skydd: `tools/statistik-geogebra-2026-10-14.test.js`, dess fixture och konsument `tools/statistik-geogebra-2026-10-14.browser.py`. Facit, maskinsvar, toleranser och figurer är oförändrade från FP44. Hänvisningar till ”Sx på räknaren” uppdateras till GeoGebra.

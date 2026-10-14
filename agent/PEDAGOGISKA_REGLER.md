@@ -238,3 +238,13 @@ påverkar Sx enligt samma regler som andra standardavvikelser. Vid sammanslagnin
 av grupper använder varje grupp kvadratsumman (n−1)·Sx²; räkna också med
 skillnaderna mellan gruppmedelvärdena. Om antalet observationer ändras ska även
 nämnaren ändras. Uppgifter om oförändrad standardavvikelse måste lösas om helt.
+
+### Verktyg för standardavvikelse
+
+Användarbeslut 2026-10-14: när eleven behöver beräkna standardavvikelse från
+data används **GeoGebra**. Sätt `geogebra:true` och `miniräknare:false` på dessa
+uppgifter/kort. Kunskapsgymmets inbyggda miniräknare har ingen statistikfunktion.
+Andra delar i samma uppgift, exempelvis median eller variationsbredd, behåller
+sina tidigare miniräknartillstånd. GeoGebra tillåts i hela läraruppgiften.
+Separata korts uttryckliga verktygsmetadata ska gå före förälderns metadata.
+Frågor och ledtrådar ska hänvisa till GeoGebra, inte till Sx på miniräknaren.
