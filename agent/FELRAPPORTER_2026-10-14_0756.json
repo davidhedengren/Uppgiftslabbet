@@ -1,0 +1,302 @@
+{
+  "datum": "2026-10-14",
+  "källa": "Felrapporter 07:56",
+  "rapporter": 9,
+  "granskade": [
+    {
+      "bank": "matf1",
+      "id": "3.99",
+      "utfall": "Åtgärdad – variation i området",
+      "bedömning": "Facit 5,04 var rätt. Fyra andra ID:n återanvände redan befintliga funktioner och tal. Dessa har omarbetats; sex nya frågetyper ger mer variation. Urvalet förbrukar hela tillgängliga poolen före normal repetition.",
+      "kommentarsförslag": "Området har fått sex nya varierade uppgifter och fyra tidigare upprepningar har gjorts om. Facit i denna uppgift var korrekt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.06",
+      "utfall": "Åtgärdad – inmatning",
+      "bedömning": "B∩∅ är ∅. Ny ∅-knapp med förklarande titel, korrekt fokus och markering; {}, ∅ och ”tomma mängden” godtas redan.",
+      "kommentarsförslag": "Tecknet ∅ finns nu i teckenraden. Du kan även skriva {} eller tomma mängden."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.451",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "|x|=3 ger −3 och 3. Lösningsmängd ersätter felaktig ordning i metadata. Samlad inmatning och separata fält fungerar; saknade och upprepade rötter godtas inte.",
+      "kommentarsförslag": "Båda lösningarna kan nu skrivas tillsammans, exempelvis x=-3 eller x=3, eller var för sig i svarsfälten."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.20",
+      "utfall": "Åtgärdad – självrättning och tydlighet",
+      "bedömning": "Urval med ordning utan återläggning ger P(16,5)=524160. Tydliga klickbara alternativ, egen figur och fungerande flervalsrättning; facit refererar till uttrycket eftersom alternativen blandas. Nivå 2: skilj permutation från kombination.",
+      "kommentarsförslag": "Nu finns tydliga klickbara svarsalternativ. Uppgiften gäller både vilka fem spelare som väljs och deras ordning."
+    },
+    {
+      "bank": "matf1",
+      "id": "4.326",
+      "utfall": "Tidigare åtgärdad – kontrollerad",
+      "bedömning": "Konstant lösning y=3, eftersom 2·3−6=0. Begreppet är redan förklarat.",
+      "kommentarsförslag": "Begreppet har ändrats till konstant lösning och förklaras i uppgiften."
+    },
+    {
+      "bank": "matf1",
+      "id": "2.305",
+      "utfall": "Tidigare åtgärdad – kontrollerad",
+      "bedömning": "Indirekt bevis genom kontraposition; redan korrekt placerad och formulerad.",
+      "kommentarsförslag": "Benämningen är nu indirekt bevis. Facit förklarar hur resonemanget fungerar."
+    },
+    {
+      "bank": "matf1",
+      "id": "2.541",
+      "utfall": "Tidigare åtgärdad – kontrollerad",
+      "bedömning": "Indirekt bevis; redan rättad terminologi och korrekt svar A.",
+      "kommentarsförslag": "Benämningen är nu indirekt bevis, med en tydligare förklaring i facit."
+    },
+    {
+      "bank": "fy1",
+      "id": "4.64",
+      "utfall": "Tidigare åtgärdad – kontrollerad",
+      "bedömning": "c-kortet är självständigt: fjäderkraft 28 N, konstant 350 N/m, förlängning 0,08 m.",
+      "kommentarsförslag": "Del c är omskriven och innehåller nu all information som behövs."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.478",
+      "utfall": "Tidigare åtgärdad – kontrollerad",
+      "bedömning": "A∩B={3,4}. Ett avslutande komma accepteras redan, men extra eller saknade element avvisas.",
+      "kommentarsförslag": "Ett extra avslutande komma godtas nu. Mängdens element måste fortfarande vara rätt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.787",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Tomma mängden uppkommer korrekt genom differens, komplement eller en ekvation utan reella lösningar. ∅, {} och ord fungerar i faktiska svarsfält.",
+      "kommentarsförslag": "Granskad – inget fel. Tomma mängden kan skrivas med ∅, {} eller tomma mängden."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.788",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Tomma mängden uppkommer korrekt genom differens, komplement eller en ekvation utan reella lösningar. ∅, {} och ord fungerar i faktiska svarsfält.",
+      "kommentarsförslag": "Granskad – inget fel. Tomma mängden kan skrivas med ∅, {} eller tomma mängden."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.789",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Tomma mängden uppkommer korrekt genom differens, komplement eller en ekvation utan reella lösningar. ∅, {} och ord fungerar i faktiska svarsfält.",
+      "kommentarsförslag": "Granskad – inget fel. Tomma mängden kan skrivas med ∅, {} eller tomma mängden."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.781",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Tomma mängden uppkommer korrekt genom differens, komplement eller en ekvation utan reella lösningar. ∅, {} och ord fungerar i faktiska svarsfält.",
+      "kommentarsförslag": "Granskad – inget fel. Tomma mängden kan skrivas med ∅, {} eller tomma mängden."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.21",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "C(23,5)=33649. Facit var rätt, men generell numerisk tolerans kunde godta fel heltalsantal. Nu antal_satt, tolerans 0: giltiga produkter/fakulteter fungerar, ±1 avvisas. Nivå 2.",
+      "kommentarsförslag": "Självrättningen kräver nu rätt heltalsantal och godtar också likvärdiga produkter eller fakulteter. Facit var korrekt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.24",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "10⁴=10000. Facit var rätt, men generell numerisk tolerans kunde godta fel heltalsantal. Nu antal_satt, tolerans 0: giltiga produkter/fakulteter fungerar, ±1 avvisas. Nivå 2.",
+      "kommentarsförslag": "Självrättningen kräver nu rätt heltalsantal och godtar också likvärdiga produkter eller fakulteter. Facit var korrekt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.25",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "5·10·6·7=2100. Facit var rätt, men generell numerisk tolerans kunde godta fel heltalsantal. Nu antal_satt, tolerans 0: giltiga produkter/fakulteter fungerar, ±1 avvisas. Nivå 2.",
+      "kommentarsförslag": "Självrättningen kräver nu rätt heltalsantal och godtar också likvärdiga produkter eller fakulteter. Facit var korrekt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.26",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "3!·6!·4!·3!=622080. Facit var rätt, men generell numerisk tolerans kunde godta fel heltalsantal. Nu antal_satt, tolerans 0: giltiga produkter/fakulteter fungerar, ±1 avvisas. Nivå 3.",
+      "kommentarsförslag": "Självrättningen kräver nu rätt heltalsantal och godtar också likvärdiga produkter eller fakulteter. Facit var korrekt."
+    },
+    {
+      "bank": "matf1",
+      "id": "1.27",
+      "utfall": "Åtgärdad – självrättning",
+      "bedömning": "C(52,5)=2598960. Facit var rätt, men generell numerisk tolerans kunde godta fel heltalsantal. Nu antal_satt, tolerans 0: giltiga produkter/fakulteter fungerar, ±1 avvisas. Nivå 2.",
+      "kommentarsförslag": "Självrättningen kräver nu rätt heltalsantal och godtar också likvärdiga produkter eller fakulteter. Facit var korrekt."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.20",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "|x−3|=5 ⇒ −2,8. Facit och oordnad metadata var rätt. Ny UI-funktion stödjer även samlad inmatning.",
+      "kommentarsförslag": "Granskad – inget fel i uppgiften. Lösningarna kan nu även skrivas tillsammans i ett fält."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.30",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "|x−4|=1 ⇒ 3,5. Facit och oordnad metadata var rätt. Ny UI-funktion stödjer även samlad inmatning.",
+      "kommentarsförslag": "Granskad – inget fel i uppgiften. Lösningarna kan nu även skrivas tillsammans i ett fält."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.95",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "|x|+3=8 ⇒ −5,5. Facit och oordnad metadata var rätt. Ny UI-funktion stödjer även samlad inmatning.",
+      "kommentarsförslag": "Granskad – inget fel i uppgiften. Lösningarna kan nu även skrivas tillsammans i ett fält."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.237",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "|x|+1=5 ⇒ −4,4. Facit och oordnad metadata var rätt. Ny UI-funktion stödjer även samlad inmatning.",
+      "kommentarsförslag": "Granskad – inget fel i uppgiften. Lösningarna kan nu även skrivas tillsammans i ett fält."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.25",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "|x−2|=7 ⇒ −5,9. Facit och oordnad metadata var rätt. Ny UI-funktion stödjer även samlad inmatning.",
+      "kommentarsförslag": "Granskad – inget fel i uppgiften. Lösningarna kan nu även skrivas tillsammans i ett fält."
+    },
+    {
+      "bank": "mato1",
+      "id": "1.65",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "Spetsen till |x−3|+2 är (3,2). Ordnade x/y-fält berörs inte av lösningsmängdernas nya inmatning.",
+      "kommentarsförslag": "Granskad – inget fel. x- och y-koordinaten har separata namngivna fält."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.277",
+      "utfall": "Åtgärdad",
+      "bedömning": "√36,6 ≈ 6+(1/12)·0,6=6,05; givna värden gör nivå 1 rimlig.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.278",
+      "utfall": "Åtgärdad",
+      "bedömning": "f(4,9) ≈12−3·(−0,1)=12,3; negativ lutning och minskat x. Nivå 1.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.280",
+      "utfall": "Åtgärdad",
+      "bedömning": "Given tangent y=x−1 ger ln0,97≈−0,03; ändring under baspunkten. Nivå 1.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.281",
+      "utfall": "Åtgärdad",
+      "bedömning": "Given tangent y=1−x ger e⁻⁰·⁰⁴≈0,96; avtagande exponentialfunktion. Nivå 1.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.26",
+      "utfall": "Åtgärdad",
+      "bedömning": "√16,3≈4+(1/8)·0,3=4,0375; gammal graf gick utanför viewBox. Ny matematiskt beräknad kurva/tangent och kort mobilfacit.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.116",
+      "utfall": "Åtgärdad",
+      "bedömning": "ln1,05≈0,05; gammal schematisk kurva/tangent visade inte tydligt korrekt tangering. Ny exakt skalad graf och förklarat facit.",
+      "kommentarsförslag": "Uppgiften och figuren har förbättrats för tydlighet och variation; facit och självrättning är kontrollerade."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.18",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "√15,8≈4−0,2/8=3,975. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.08",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "ln1,04≈0,04; ln är konkav, så tangenten ger ett för stort värde. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.64",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "e⁰·⁰³≈1,03. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.41",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "1/2,04≈1/2−0,04/4=0,49. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.42",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "∛27,3≈3+0,3/27. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.63",
+      "utfall": "Granskad – inget fel",
+      "bedömning": "sin0,06≈0,06 i radianer. Facit och rättningsfält kontrollerade.",
+      "kommentarsförslag": "Granskad – inget fel. Facit följer tangentens linjära approximation."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.324",
+      "utfall": "Ny uppgift",
+      "bedömning": "Sensorns signal: 7+3·0,1=7,3 V. Träningsnivå 1. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.325",
+      "utfall": "Ny uppgift",
+      "bedömning": "Soppans temperatur: 50−2·0,5=49 °C. Träningsnivå 1. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.326",
+      "utfall": "Ny uppgift",
+      "bedömning": "Kvadratens areaökning: 2·10·0,2=4 cm², alltså cirka 4 procent. Exakta 4,04 procent är inte den efterfrågade linjära approximationen. Träningsnivå 3. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.327",
+      "utfall": "Ny uppgift",
+      "bedömning": "Omvänd användning: x≈4+(12,24−12)/0,8=4,3. Träningsnivå 2. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.328",
+      "utfall": "Ny uppgift",
+      "bedömning": "x² vid 1,95 uppskattas med tangenten vid2: 4+4·(−0,05)=3,8. Träningsnivå 2. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    },
+    {
+      "bank": "matf1",
+      "id": "3.329",
+      "utfall": "Ny uppgift",
+      "bedömning": "x³ har f(0)=f′(0)=0: tangenten ger0. Facit jämför med exakta0,008 och förklarar begränsningen. Träningsnivå 2. Egen figur, språk, facit och verkliga svarsfält kontrollerade.",
+      "kommentarsförslag": "Ny varierad uppgift med egen figur och verifierad självrättning."
+    }
+  ],
+  "begränsning": "Git-push ändrar bank/appkod, inte rapportstatus eller elevkommentar i Supabase. Ingen skärminmatning finns för den ursprungliga repetitionsrapporten, så faktisk dåvarande filterinställning är okänd."
+}
