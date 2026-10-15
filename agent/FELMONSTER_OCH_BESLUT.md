@@ -935,3 +935,17 @@ avsiktliga fyllningar. Kontrollera rekursivt huvudfråga, spelIntro, delkort
 och facit, oberoende av SVG-attributens ordning. Tio ytterligare Mato2-poster
 rättade; alla sju bankerna inventerade. Metadata, matematik och geometri
 bevarade. Riktad SVG- och mobil/datorverifiering gav inga nya fynd.
+
+
+## FP52 – lösningsgång försvinner på separata delkort (2026-10-15)
+
+[Ma2 2.130 b och 80 jämförelser](MA2_LOSNINGSGANG_2026-10-15.md).
+Ett fylligt huvudfacit garanterar inte ett pedagogiskt delkort: expandGameTask
+väljer del.s före förälderns s. Ett explicit kortfacit med enbart rötter
+ska kompletteras med metod och relevanta mellanled, inte bara få en
+facit-stegvis-klass. Saknat del.s kan i stället visa hela huvudfacit och
+avslöja andra delar (2.521). Varje kort ska ha sin egen fullständiga lösning.
+Kontrollera s och samtliga spelDelar[i].s separat, inklusive faktisk
+webbläsarvisning. 12 uppgifter rättade, 68 utan motsvarande brist;
+matematiska svar och rättningsmetadata bevarade. 2.134 b:s missvisande
+kommalista ersatt med entydiga separata rötter.

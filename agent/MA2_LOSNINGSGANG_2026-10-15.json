@@ -1,0 +1,2013 @@
+[
+  {
+    "id": "2.10",
+    "paths": [
+      "spelDelar[0].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.10",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2=81\\)<br>b) \\(x^2-9x=0\\)<br>c) \\(2x^2=50\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p></li></ol><p class=\"facit-svar\"><strong>a) \\(x=\\pm9\\)</strong></p><p class=\"facit-svar\"><strong>b) \\(x=0\\) eller \\(x=9\\)</strong></p><p class=\"facit-svar\"><strong>c) \\(x=\\pm5\\)</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "9",
+          "-9"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Välj den enklaste standardmetoden i varje del: kvadratrot eller nollprodukt.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=81\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=9\\) eller \\(x=-9\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-9x=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x-9)=0\\), alltså <strong>\\(x=0\\) eller \\(x=9\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(2x^2=50\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25\\), alltså <strong>\\(x=5\\) eller \\(x=-5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    },
+    "after": {
+      "id": "2.10",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2=81\\)<br>b) \\(x^2-9x=0\\)<br>c) \\(2x^2=50\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{81}=\\pm 9.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=9\\) eller \\(x=-9\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x-9)=0\\), alltså <strong>\\(x=0\\) eller \\(x=9\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25\\), alltså <strong>\\(x=5\\) eller \\(x=-5\\)</strong>.</p></li></ol></div></div></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "9",
+          "-9"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Välj den enklaste standardmetoden i varje del: kvadratrot eller nollprodukt.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=81\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{81}=\\pm 9.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=9\\) eller \\(x=-9\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-9x=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x-9)=0\\), alltså <strong>\\(x=0\\) eller \\(x=9\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(2x^2=50\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25\\), alltså <strong>\\(x=5\\) eller \\(x=-5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    }
+  },
+  {
+    "id": "2.16",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.16",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2=36\\)<br>b) \\(x^2=\\frac94\\)<br>c) \\(4x^2=25\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När du tar kvadratroten måste både den positiva och den negativa roten tas med.</p></li></ol><p class=\"facit-svar\"><strong>a) \\(x=\\pm6\\).</strong></p><p class=\"facit-svar\"><strong>b) \\(x=\\pm\\frac32\\).</strong></p><p class=\"facit-svar\"><strong>c) \\(x=\\pm\\frac52\\).</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "6",
+          "-6"
+        ],
+        [
+          "3/2",
+          "-3/2"
+        ],
+        [
+          "5/2",
+          "-5/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Isolera \\(x^2\\) och kom ihåg att \\(x^2=a\\) normalt ger två rötter.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=36\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=6\\) eller \\(x=-6\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2=\\frac94\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=\\frac32\\) eller \\(x=-\\frac32\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(4x^2=25\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25/4\\), alltså <strong>\\(x=\\frac52\\) eller \\(x=-\\frac52\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    },
+    "after": {
+      "id": "2.16",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2=36\\)<br>b) \\(x^2=\\frac94\\)<br>c) \\(4x^2=25\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{36}=\\pm 6.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=6\\) eller \\(x=-6\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{\\frac94}=\\pm \\frac32.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac32\\) eller \\(x=-\\frac32\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25/4\\), alltså <strong>\\(x=\\frac52\\) eller \\(x=-\\frac52\\)</strong>.</p></li></ol></div></div></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "6",
+          "-6"
+        ],
+        [
+          "3/2",
+          "-3/2"
+        ],
+        [
+          "5/2",
+          "-5/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Isolera \\(x^2\\) och kom ihåg att \\(x^2=a\\) normalt ger två rötter.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=36\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{36}=\\pm 6.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=6\\) eller \\(x=-6\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2=\\frac94\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{\\frac94}=\\pm \\frac32.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac32\\) eller \\(x=-\\frac32\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(4x^2=25\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=25/4\\), alltså <strong>\\(x=\\frac52\\) eller \\(x=-\\frac52\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    }
+  },
+  {
+    "id": "2.41",
+    "paths": [
+      "spelDelar[0].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.41",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös ekvationerna.</p><p>a) \\(x^2=49\\)<br>b) \\(x(x-7)=0\\)<br>c) \\(x^2+5x=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=\\pm7\\].</div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x=0\\) eller \\(x=7\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x+5)=0\\), alltså \\(x=0\\) eller \\(x=-5\\).</p></li></ol></div></div><p class=\"facit-svar\"><strong>Svar: a) ±7, b) 0 eller 7, c) 0 eller −5.</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "7",
+          "-7"
+        ],
+        [
+          "0",
+          "7"
+        ],
+        [
+          "0",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Välj nollproduktmetoden när ett uttryck redan är faktoriserat eller kan få en gemensam faktor.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=49\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=7\\) eller \\(x=-7\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x(x-7)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Med nollproduktmetoden: <strong>\\(x=0\\) eller \\(x=7\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2+5x=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x+5)=0\\), alltså <strong>\\(x=0\\) eller \\(x=-5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    },
+    "after": {
+      "id": "2.41",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös ekvationerna.</p><p>a) \\(x^2=49\\)<br>b) \\(x(x-7)=0\\)<br>c) \\(x^2+5x=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{49}=\\pm 7.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=7\\) eller \\(x=-7\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Med nollproduktmetoden: <strong>\\(x=0\\) eller \\(x=7\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x+5)=0\\), alltså <strong>\\(x=0\\) eller \\(x=-5\\)</strong>.</p></li></ol></div></div></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "7",
+          "-7"
+        ],
+        [
+          "0",
+          "7"
+        ],
+        [
+          "0",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Välj nollproduktmetoden när ett uttryck redan är faktoriserat eller kan få en gemensam faktor.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2=49\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{49}=\\pm 7.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=7\\) eller \\(x=-7\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x(x-7)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Med nollproduktmetoden: <strong>\\(x=0\\) eller \\(x=7\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2+5x=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x(x+5)=0\\), alltså <strong>\\(x=0\\) eller \\(x=-5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadratrotmetoden"
+      ]
+    }
+  },
+  {
+    "id": "2.50",
+    "paths": [
+      "spelDelar[0].s"
+    ],
+    "before": {
+      "id": "2.50",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös ekvationerna.</p><p>a) \\((x-4)(x+7)=0\\)</p><p>b) \\(x^2-10x+25=0\\)</p><p>c) \\(9x^2=16\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Nollproduktmetoden ger \\(x=4\\) eller \\(x=-7\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-10x+25=(x-5)^2\\), alltså \\(x=5\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=16/9\\), alltså \\(x=\\pm4/3\\).</p></li></ol></div></div><p class=\"facit-svar\"><strong>a) 4 eller −7 &nbsp;&nbsp; b) 5 &nbsp;&nbsp; c) \\(\\pm\\frac43\\)</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "4",
+          "-7"
+        ],
+        "5",
+        [
+          "4/3",
+          "-4/3"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Delarna kräver olika standardmetoder: nollprodukt, perfekt kvadrat och kvadratrot.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\((x-4)(x+7)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=4\\) eller \\(x=-7\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-10x+25=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\((x-5)^2=0\\), alltså <strong>\\(x=5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(9x^2=16\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=16/9\\), alltså <strong>\\(x=\\frac43\\) eller \\(x=-\\frac43\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__blandade_standardmetoder"
+      ]
+    },
+    "after": {
+      "id": "2.50",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös ekvationerna.</p><p>a) \\((x-4)(x+7)=0\\)</p><p>b) \\(x^2-10x+25=0\\)</p><p>c) \\(9x^2=16\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Nollproduktmetoden ger \\(x=4\\) eller \\(x=-7\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-10x+25=(x-5)^2\\), alltså \\(x=5\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=16/9\\), alltså \\(x=\\pm4/3\\).</p></li></ol></div></div><p class=\"facit-svar\"><strong>a) 4 eller −7 &nbsp;&nbsp; b) 5 &nbsp;&nbsp; c) \\(\\pm\\frac43\\)</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "4",
+          "-7"
+        ],
+        "5",
+        [
+          "4/3",
+          "-4/3"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "spelDelning": "deluppgifter",
+      "ledtrad": "<p>Delarna kräver olika standardmetoder: nollprodukt, perfekt kvadrat och kvadratrot.</p>",
+      "spelIntro": "<p>Lös ekvationen.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\((x-4)(x+7)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[x-4=0\\Rightarrow x=4.\\]</div><div class=\"facit-matte\">\\[x+7=0\\Rightarrow x=-7.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=4\\) eller \\(x=-7\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-10x+25=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\((x-5)^2=0\\), alltså <strong>\\(x=5\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(9x^2=16\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2=16/9\\), alltså <strong>\\(x=\\frac43\\) eller \\(x=-\\frac43\\)</strong>.</p></li></ol></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "enkla_andragradsekvationer__blandade_standardmetoder"
+      ]
+    }
+  },
+  {
+    "id": "2.89",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "spelDelar[2].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.89",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2+2x-8=0\\)<br>b) \\(x^2-6x+8=0\\)<br>c) \\(x^2+4x-5=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd <strong>pq-formeln</strong>.</p></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[p=2\\],</div></li><li><p>\\(q=-8\\): \\(x=-1\\pm\\sqrt{1+8}=-1\\pm3\\Rightarrow x=2,-4\\).</p></li></ol></div></div>\n<div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[p=-6\\],</div></li><li><p>\\(q=8\\): \\(x=3\\pm\\sqrt{9-8}=3\\pm1\\Rightarrow x=2,4\\).</p></li></ol></div></div>\n<div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[p=4\\],</div></li><li><p>\\(q=-5\\): \\(x=-2\\pm\\sqrt{4+5}=-2\\pm3\\Rightarrow x=1,-5\\).</p></li></ol></div></div></div>",
+      "familj": "Lösa med pq-formeln",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "4"
+        ],
+        [
+          "1",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Behandla varje ekvation för sig. Identifiera p och q och använd samma pq-formel systematiskt.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2+2x-8=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=2\\) eller \\(x=-4\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-6x+8=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=2\\) eller \\(x=4\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2+4x-5=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=1\\) eller \\(x=-5\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    },
+    "after": {
+      "id": "2.89",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2+2x-8=0\\)<br>b) \\(x^2-6x+8=0\\)<br>c) \\(x^2+4x-5=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=2\\) och \\(q=-8\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-1\\pm\\sqrt{1-(-8)}\\\\&=-1\\pm\\sqrt9\\\\&=-1\\pm3\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2\\) eller \\(x=-4\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-6\\) och \\(q=8\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=3\\pm\\sqrt{9-8}\\\\&=3\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2\\) eller \\(x=4\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=4\\) och \\(q=-5\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-2\\pm\\sqrt{4-(-5)}\\\\&=-2\\pm3\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=1\\) eller \\(x=-5\\).</p></div></div></div>",
+      "familj": "Lösa med pq-formeln",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "4"
+        ],
+        [
+          "1",
+          "-5"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Behandla varje ekvation för sig. Identifiera p och q och använd samma pq-formel systematiskt.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2+2x-8=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=2\\) och \\(q=-8\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-1\\pm\\sqrt{1-(-8)}\\\\&=-1\\pm\\sqrt9\\\\&=-1\\pm3\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2\\) eller \\(x=-4\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2-6x+8=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-6\\) och \\(q=8\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=3\\pm\\sqrt{9-8}\\\\&=3\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2\\) eller \\(x=4\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2+4x-5=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=4\\) och \\(q=-5\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-2\\pm\\sqrt{4-(-5)}\\\\&=-2\\pm3\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=1\\) eller \\(x=-5\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    }
+  },
+  {
+    "id": "2.122",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s"
+    ],
+    "before": {
+      "id": "2.122",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Funktionen ges av \\(f(x)=2(x+3)(x-5)\\).</p><p>a) Bestäm funktionens nollställen.<br>b) Bestäm \\(f(0)\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Produkten är noll när \\(x+3=0\\) eller \\(x-5=0\\), alltså är nollställena −3 och 5.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[f(0)=2\\cdot3\\cdot(-5)=-30\\].</div></li></ol></div></div><p class=\"facit-svar\"><strong>a) −3 och 5. b) −30.</strong></p></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur",
+        "begrepp"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-3",
+          "5"
+        ],
+        "-30"
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>I faktorform syns nollställena direkt genom att sätta varje faktor lika med noll. För \\(f(0)\\) sätter du in \\(x=0\\).</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>\\(f(x)=2(x+3)(x-5)\\).</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>Bestäm funktionens nollställen.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>−3 och 5</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>Bestäm \\(f(0)\\).</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>−30</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__tolka_faktoriserad_form"
+      ]
+    },
+    "after": {
+      "id": "2.122",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Funktionen ges av \\(f(x)=2(x+3)(x-5)\\).</p><p>a) Bestäm funktionens nollställen.<br>b) Bestäm \\(f(0)\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Produkten är noll när \\(x+3=0\\) eller \\(x-5=0\\), alltså är nollställena −3 och 5.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[f(0)=2\\cdot3\\cdot(-5)=-30\\].</div></li></ol></div></div><p class=\"facit-svar\"><strong>a) −3 och 5. b) −30.</strong></p></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur",
+        "begrepp"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-3",
+          "5"
+        ],
+        "-30"
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>I faktorform syns nollställena direkt genom att sätta varje faktor lika med noll. För \\(f(0)\\) sätter du in \\(x=0\\).</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>\\(f(x)=2(x+3)(x-5)\\).</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>Bestäm funktionens nollställen.</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Vid ett nollställe är \\(f(x)=0\\). Konstanten 2 är inte noll, så någon av de två andra faktorerna måste vara noll:</p><div class=\"facit-matte\">\\[x+3=0\\Rightarrow x=-3.\\]</div><div class=\"facit-matte\">\\[x-5=0\\Rightarrow x=5.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-3\\) eller \\(x=5\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>Bestäm \\(f(0)\\).</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Sätt in \\(x=0\\) i \\(f(x)=2(x+3)(x-5)\\):</p><div class=\"facit-matte\">\\[f(0)=2(0+3)(0-5)=2\\cdot3\\cdot(-5)=-30.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(f(0)=-30\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__tolka_faktoriserad_form"
+      ]
+    }
+  },
+  {
+    "id": "2.130",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "spelDelar[2].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.130",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(4x^2-12x+5=0\\)<br>b) \\(6x^2+x-2=0\\)<br>c) \\(2x^2-5x-12=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Dela först varje ekvation så att koefficienten framför \\(x^2\\) blir 1.</p></li><li><p>Använd sedan <strong>pq-formeln</strong>.</p></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x^2-3x+\\frac54=0\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=\\frac32\\pm\\sqrt{\\frac94-\\frac54}\n=\\frac32\\pm1\\Rightarrow x=\\frac12,\\frac52\\].</div></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x^2+\\frac16x-\\frac13=0\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=-\\frac1{12}\\pm\\sqrt{\\frac1{144}+\\frac{48}{144}}\n=-\\frac1{12}\\pm\\frac7{12}\\Rightarrow x=\\frac12,-\\frac23\\].</div></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x^2-\\frac52x-6=0\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=\\frac54\\pm\\sqrt{\\frac{25}{16}+\\frac{96}{16}}\n=\\frac54\\pm\\frac{11}{4}\\Rightarrow x=4,-\\frac32\\].</div></li></ol></div>",
+      "familj": "Ekvationer där x²-termen har en koefficient",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "1/2",
+          "5/2"
+        ],
+        [
+          "1/2",
+          "-2/3"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Dela varje ekvation med koefficienten framför \\(x^2\\) innan du använder pq-formeln. Behåll bråken exakt.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln. Svara exakt.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(4x^2-12x+5=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=\\frac12\\) eller \\(x=\\frac52\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(6x^2+x-2=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=\\frac12\\) eller \\(x=-\\frac23\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(2x^2-5x-12=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=4\\) eller \\(x=-\\frac32\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        2,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    },
+    "after": {
+      "id": "2.130",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(4x^2-12x+5=0\\)<br>b) \\(6x^2+x-2=0\\)<br>c) \\(2x^2-5x-12=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>Dividera hela ekvationen med \\(4\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2-3x+\\frac54=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-3\\) och \\(q=\\frac54\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac32\\pm\\sqrt{\\frac94-\\frac54}\\\\&=\\frac32\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac12\\) eller \\(x=\\frac52\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><p>Dividera hela ekvationen med \\(6\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2+\\frac16x-\\frac13=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=\\frac16\\) och \\(q=-\\frac13\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-\\frac1{12}\\pm\\sqrt{\\frac1{144}+\\frac13}\\\\&=-\\frac1{12}\\pm\\sqrt{\\frac{49}{144}}\\\\&=-\\frac1{12}\\pm\\frac7{12}\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac12\\) eller \\(x=-\\frac23\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><p>Dividera hela ekvationen med \\(2\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2-\\frac52x-6=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-\\frac52\\) och \\(q=-6\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac54\\pm\\sqrt{\\frac{25}{16}+6}\\\\&=\\frac54\\pm\\sqrt{\\frac{121}{16}}\\\\&=\\frac54\\pm\\frac{11}{4}\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=4\\) eller \\(x=-\\frac32\\).</p></div></div></div>",
+      "familj": "Ekvationer där x²-termen har en koefficient",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "1/2",
+          "5/2"
+        ],
+        [
+          "1/2",
+          "-2/3"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Dela varje ekvation med koefficienten framför \\(x^2\\) innan du använder pq-formeln. Behåll bråken exakt.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln. Svara exakt.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(4x^2-12x+5=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Dividera hela ekvationen med \\(4\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2-3x+\\frac54=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-3\\) och \\(q=\\frac54\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac32\\pm\\sqrt{\\frac94-\\frac54}\\\\&=\\frac32\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac12\\) eller \\(x=\\frac52\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(6x^2+x-2=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Dividera hela ekvationen med \\(6\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2+\\frac16x-\\frac13=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=\\frac16\\) och \\(q=-\\frac13\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-\\frac1{12}\\pm\\sqrt{\\frac1{144}+\\frac13}\\\\&=-\\frac1{12}\\pm\\sqrt{\\frac{49}{144}}\\\\&=-\\frac1{12}\\pm\\frac7{12}\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=\\frac12\\) eller \\(x=-\\frac23\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(2x^2-5x-12=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Dividera hela ekvationen med \\(2\\) så att koefficienten framför \\(x^2\\) blir 1:</p><div class=\"facit-matte\">\\[x^2-\\frac52x-6=0.\\]</div><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-\\frac52\\) och \\(q=-6\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac54\\pm\\sqrt{\\frac{25}{16}+6}\\\\&=\\frac54\\pm\\sqrt{\\frac{121}{16}}\\\\&=\\frac54\\pm\\frac{11}{4}\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=4\\) eller \\(x=-\\frac32\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        2,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    }
+  },
+  {
+    "id": "2.133",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "spelDelar[2].s"
+    ],
+    "before": {
+      "id": "2.133",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\((2x+3)(x-4)=0\\)<br>b) \\((5x-10)(x+1)=0\\)<br>c) \\((4x+1)(2x-6)=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(2x+3=0\\Rightarrow x=-3/2\\), eller \\(x-4=0\\Rightarrow x=4\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(5x-10=0\\Rightarrow x=2\\), eller \\(x+1=0\\Rightarrow x=-1\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(4x+1=0\\Rightarrow x=-1/4\\), eller \\(2x-6=0\\Rightarrow x=3\\).</p></li></ol></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-3/2",
+          "4"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1/4",
+          "3"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Produkten är redan faktoriserad. Sätt varje faktor lika med noll och lös de enkla linjära ekvationerna.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med nollproduktmetoden.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\((2x+3)(x-4)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-\\frac32\\) eller \\(x=4\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\((5x-10)(x+1)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=2\\) eller \\(x=-1\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\((4x+1)(2x-6)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-\\frac14\\) eller \\(x=3\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    },
+    "after": {
+      "id": "2.133",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\((2x+3)(x-4)=0\\)<br>b) \\((5x-10)(x+1)=0\\)<br>c) \\((4x+1)(2x-6)=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(2x+3=0\\Rightarrow x=-3/2\\), eller \\(x-4=0\\Rightarrow x=4\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(5x-10=0\\Rightarrow x=2\\), eller \\(x+1=0\\Rightarrow x=-1\\).</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(4x+1=0\\Rightarrow x=-1/4\\), eller \\(2x-6=0\\Rightarrow x=3\\).</p></li></ol></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-3/2",
+          "4"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1/4",
+          "3"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "ledtrad": "<p>Produkten är redan faktoriserad. Sätt varje faktor lika med noll och lös de enkla linjära ekvationerna.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med nollproduktmetoden.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\((2x+3)(x-4)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[2x+3=0\\Rightarrow 2x=-3\\Rightarrow x=-\\frac32.\\]</div><div class=\"facit-matte\">\\[x-4=0\\Rightarrow x=4.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-\\frac32\\) eller \\(x=4\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\((5x-10)(x+1)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[5x-10=0\\Rightarrow 5x=10\\Rightarrow x=2.\\]</div><div class=\"facit-matte\">\\[x+1=0\\Rightarrow x=-1.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=2\\) eller \\(x=-1\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\((4x+1)(2x-6)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[4x+1=0\\Rightarrow 4x=-1\\Rightarrow x=-\\frac14.\\]</div><div class=\"facit-matte\">\\[2x-6=0\\Rightarrow 2x=6\\Rightarrow x=3.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-\\frac14\\) eller \\(x=3\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    }
+  },
+  {
+    "id": "2.134",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.134",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x(x+2)(x-5)=0\\)<br>b) \\((x-1)(x+4)(2x-3)=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Produkten är redan faktoriserad.</p></li><li><p>Sätt varje faktor lika med 0.</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=0\\],</div></li><li><p>\\(x+2=0\\) eller \\(x-5=0\\).</p></li><li><div class=\"facit-berakning\"><p>Alltså</p><div class=\"facit-matte\">\\[x=-2,0,5\\].</div></div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x-1=0\\],</div></li><li><p>\\(x+4=0\\) eller \\(2x-3=0\\).</p></li><li><div class=\"facit-berakning\"><p>Alltså</p><div class=\"facit-matte\">\\[x=1,-4,\\frac32\\].</div></div></li></ol></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-2",
+          "0",
+          "5"
+        ],
+        [
+          "-4",
+          "1",
+          "3/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>En produkt är noll om minst en faktor är noll. Här finns tre faktorer, så varje del kan ge tre lösningar.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med nollproduktmetoden.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x(x+2)(x-5)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-2,0,5\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\((x-1)(x+4)(2x-3)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-4{,}1,\\frac32\\)</strong></p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    },
+    "after": {
+      "id": "2.134",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "2/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x(x+2)(x-5)=0\\)<br>b) \\((x-1)(x+4)(2x-3)=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[x=0.\\]</div><div class=\"facit-matte\">\\[x+2=0\\Rightarrow x=-2.\\]</div><div class=\"facit-matte\">\\[x-5=0\\Rightarrow x=5.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-2\\) eller \\(x=0\\) eller \\(x=5\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[x-1=0\\Rightarrow x=1.\\]</div><div class=\"facit-matte\">\\[x+4=0\\Rightarrow x=-4.\\]</div><div class=\"facit-matte\">\\[2x-3=0\\Rightarrow x=\\frac32.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-4\\) eller \\(x=1\\) eller \\(x=\\frac32\\).</p></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "-2",
+          "0",
+          "5"
+        ],
+        [
+          "-4",
+          "1",
+          "3/2"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>En produkt är noll om minst en faktor är noll. Här finns tre faktorer, så varje del kan ge tre lösningar.</p>",
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med nollproduktmetoden.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x(x+2)(x-5)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[x=0.\\]</div><div class=\"facit-matte\">\\[x+2=0\\Rightarrow x=-2.\\]</div><div class=\"facit-matte\">\\[x-5=0\\Rightarrow x=5.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-2\\) eller \\(x=0\\) eller \\(x=5\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\((x-1)(x+4)(2x-3)=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>En produkt är noll om minst en faktor är noll. Sätt därför varje faktor som innehåller \\(x\\) lika med noll:</p><div class=\"facit-matte\">\\[x-1=0\\Rightarrow x=1.\\]</div><div class=\"facit-matte\">\\[x+4=0\\Rightarrow x=-4.\\]</div><div class=\"facit-matte\">\\[2x-3=0\\Rightarrow x=\\frac32.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-4\\) eller \\(x=1\\) eller \\(x=\\frac32\\).</p></div>",
+          "poang": "1/0/0",
+          "traningsniva": 1,
+          "arbetsinsats": 2
+        }
+      ],
+      "spel": true,
+      "traningsniva": [
+        1,
+        1
+      ],
+      "arbetsinsats": [
+        2,
+        2
+      ],
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    }
+  },
+  {
+    "id": "2.171",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "spelDelar[2].s",
+      "s"
+    ],
+    "before": {
+      "id": "2.171",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2-8x+15=0\\)<br>b) \\(x^2+7x+10=0\\)<br>c) \\(x^2-x-12=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd <strong>pq-formeln</strong> på varje ekvation.</p></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-8x+15=0\\): \\(p=-8\\),</p></li><li><div class=\"facit-matte\">\\[q=15\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=4\\pm\\sqrt{16-15}=4\\pm1\\Rightarrow x=3,5\\].</div></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2+7x+10=0\\): \\(p=7\\),</p></li><li><div class=\"facit-matte\">\\[q=10\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=-\\frac72\\pm\\sqrt{\\frac{49}{4}-10}\n=-\\frac72\\pm\\frac32\\Rightarrow x=-5,-2\\].</div></li></ol>\n<div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-x-12=0\\): \\(p=-1\\),</p></li><li><div class=\"facit-matte\">\\[q=-12\\].</div></li></ol></div></div>\n<ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=\\frac12\\pm\\sqrt{\\frac14+12}\n=\\frac12\\pm\\frac72\\Rightarrow x=-3,4\\].</div></li></ol></div>",
+      "familj": "Lösa med pq-formeln",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "3",
+          "5"
+        ],
+        [
+          "-5",
+          "-2"
+        ],
+        [
+          "-3",
+          "4"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "svarsstruktur": "mängd",
+      "antalSvar": [
+        2,
+        2,
+        2
+      ],
+      "ledtrad": "<p>Använd pq-formeln på en ekvation i taget. Håll \\(p\\) och \\(q\\) tydligt åtskilda.</p>",
+      "spel": true,
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2-8x+15=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=3\\) eller \\(x=5\\)</strong></p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2+7x+10=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-5\\) eller \\(x=-2\\)</strong></p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2-x-12=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p class=\"facit-svar\"><strong>\\(x=-3\\) eller \\(x=4\\)</strong></p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        }
+      ],
+      "traningsniva": [
+        2,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        1,
+        1,
+        1
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    },
+    "after": {
+      "id": "2.171",
+      "kap": 2,
+      "omr": "losningsformel_andragrad",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2-8x+15=0\\)<br>b) \\(x^2+7x+10=0\\)<br>c) \\(x^2-x-12=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-8\\) och \\(q=15\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=4\\pm\\sqrt{16-15}\\\\&=4\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=3\\) eller \\(x=5\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=7\\) och \\(q=10\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-\\frac72\\pm\\sqrt{\\frac{49}{4}-10}\\\\&=-\\frac72\\pm\\sqrt{\\frac94}\\\\&=-\\frac72\\pm\\frac32\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-5\\) eller \\(x=-2\\).</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-1\\) och \\(q=-12\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac12\\pm\\sqrt{\\frac14+12}\\\\&=\\frac12\\pm\\sqrt{\\frac{49}{4}}\\\\&=\\frac12\\pm\\frac72\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-3\\) eller \\(x=4\\).</p></div></div></div>",
+      "familj": "Lösa med pq-formeln",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          "3",
+          "5"
+        ],
+        [
+          "-5",
+          "-2"
+        ],
+        [
+          "-3",
+          "4"
+        ]
+      ],
+      "tolerans": null,
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "svarsstruktur": "mängd",
+      "antalSvar": [
+        2,
+        2,
+        2
+      ],
+      "ledtrad": "<p>Använd pq-formeln på en ekvation i taget. Håll \\(p\\) och \\(q\\) tydligt åtskilda.</p>",
+      "spel": true,
+      "spelDelning": "deluppgifter",
+      "spelIntro": "<p>Lös med pq-formeln.</p>",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "fraga": "<p>\\(x^2-8x+15=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-8\\) och \\(q=15\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=4\\pm\\sqrt{16-15}\\\\&=4\\pm1\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=3\\) eller \\(x=5\\).</p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "b",
+          "fraga": "<p>\\(x^2+7x+10=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=7\\) och \\(q=10\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=-\\frac72\\pm\\sqrt{\\frac{49}{4}-10}\\\\&=-\\frac72\\pm\\sqrt{\\frac94}\\\\&=-\\frac72\\pm\\frac32\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-5\\) eller \\(x=-2\\).</p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "c",
+          "fraga": "<p>\\(x^2-x-12=0\\)</p>",
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Jämför med \\(x^2+px+q=0\\). Här är \\(p=-1\\) och \\(q=-12\\).</p><p>Använd pq-formeln:</p><div class=\"facit-matte\">\\[x=-\\frac p2\\pm\\sqrt{\\left(\\frac p2\\right)^2-q}.\\]</div><div class=\"facit-matte\">\\[\\begin{aligned}x&=\\frac12\\pm\\sqrt{\\frac14+12}\\\\&=\\frac12\\pm\\sqrt{\\frac{49}{4}}\\\\&=\\frac12\\pm\\frac72\\end{aligned}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=-3\\) eller \\(x=4\\).</p></div>",
+          "niva": "E",
+          "poang": "1/0/0",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        }
+      ],
+      "traningsniva": [
+        2,
+        2,
+        2
+      ],
+      "arbetsinsats": [
+        1,
+        1,
+        1
+      ],
+      "familjTidigare": [
+        "losningsformel_andragrad__losa_med_pq_eller_formel"
+      ]
+    }
+  },
+  {
+    "id": "2.521",
+    "paths": [
+      "spelDelar[0].s",
+      "spelDelar[1].s",
+      "spelDelar[2].s"
+    ],
+    "before": {
+      "id": "2.521",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2-9x=0\\)<br>b) \\(x^2+5x=0\\)<br>c) \\(4x^2-12x=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Faktorisera genom att bryta ut \\(x\\).</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-9x=x(x-9)=0\\Rightarrow x=0\\) eller 9.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2+5x=x(x+5)=0\\Rightarrow x=0\\) eller −5.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(4x^2-12x=4x(x-3)=0\\Rightarrow x=0\\) eller 3.</p></li></ol></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          0,
+          9
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "tolerans": [
+        [
+          1e-09,
+          1e-09
+        ],
+        [
+          1e-09,
+          1e-09
+        ],
+        [
+          1e-09,
+          1e-09
+        ]
+      ],
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "svarFormat": [
+        [
+          "numeriskt",
+          "numeriskt"
+        ],
+        [
+          "numeriskt",
+          "numeriskt"
+        ],
+        [
+          "numeriskt",
+          "numeriskt"
+        ]
+      ],
+      "svarsstruktur": "ordnad",
+      "spelDelning": "deluppgifter",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "t": "<p>Lös \\(x^2-9x=0\\).</p>",
+          "traningsniva": 1,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "b",
+          "t": "<p>Lös \\(x^2+5x=0\\).</p>",
+          "traningsniva": 1,
+          "arbetsinsats": 1
+        },
+        {
+          "etikett": "c",
+          "t": "<p>Lös \\(4x^2-12x=0\\).</p>",
+          "traningsniva": 2,
+          "arbetsinsats": 1
+        }
+      ],
+      "ledtrad": "<p>Bryt ut den gemensamma faktorn x i varje deluppgift.</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "spel": true,
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    },
+    "after": {
+      "id": "2.521",
+      "kap": 2,
+      "omr": "nollproduktmetoden",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "3/0/0",
+      "t": "<p>Lös.</p><p>a) \\(x^2-9x=0\\)<br>b) \\(x^2+5x=0\\)<br>c) \\(4x^2-12x=0\\)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Faktorisera genom att bryta ut \\(x\\).</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2-9x=x(x-9)=0\\Rightarrow x=0\\) eller 9.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(x^2+5x=x(x+5)=0\\Rightarrow x=0\\) eller −5.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(4x^2-12x=4x(x-3)=0\\Rightarrow x=0\\) eller 3.</p></li></ol></div></div></div>",
+      "familj": "Nollproduktmetoden i faktoriserad form",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        [
+          0,
+          9
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "tolerans": [
+        [
+          1e-09,
+          1e-09
+        ],
+        [
+          1e-09,
+          1e-09
+        ],
+        [
+          1e-09,
+          1e-09
+        ]
+      ],
+      "självrättning": [
+        true,
+        true,
+        true
+      ],
+      "svarFormat": [
+        [
+          "numeriskt",
+          "numeriskt"
+        ],
+        [
+          "numeriskt",
+          "numeriskt"
+        ],
+        [
+          "numeriskt",
+          "numeriskt"
+        ]
+      ],
+      "svarsstruktur": "ordnad",
+      "spelDelning": "deluppgifter",
+      "spelDelar": [
+        {
+          "etikett": "a",
+          "t": "<p>Lös \\(x^2-9x=0\\).</p>",
+          "traningsniva": 1,
+          "arbetsinsats": 1,
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Bryt ut den gemensamma faktorn \\(x\\):</p><div class=\"facit-matte\">\\[x(x-9)=0.\\]</div><p>Använd nollproduktmetoden: minst en faktor måste vara noll.</p><div class=\"facit-matte\">\\[x=0\\quad\\text{eller}\\quad x-9=0\\Rightarrow x=9.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=0\\) eller \\(x=9\\).</p></div>"
+        },
+        {
+          "etikett": "b",
+          "t": "<p>Lös \\(x^2+5x=0\\).</p>",
+          "traningsniva": 1,
+          "arbetsinsats": 1,
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Bryt ut den gemensamma faktorn \\(x\\):</p><div class=\"facit-matte\">\\[x(x+5)=0.\\]</div><p>Använd nollproduktmetoden: minst en faktor måste vara noll.</p><div class=\"facit-matte\">\\[x=0\\quad\\text{eller}\\quad x+5=0\\Rightarrow x=-5.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=0\\) eller \\(x=-5\\).</p></div>"
+        },
+        {
+          "etikett": "c",
+          "t": "<p>Lös \\(4x^2-12x=0\\).</p>",
+          "traningsniva": 2,
+          "arbetsinsats": 1,
+          "s": "<div class=\"facit-v2 facit-stegvis\"><p>Bryt ut den gemensamma faktorn \\(4x\\):</p><div class=\"facit-matte\">\\[4x(x-3)=0.\\]</div><p>Använd nollproduktmetoden. Konstanten 4 kan inte vara noll.</p><div class=\"facit-matte\">\\[x=0\\quad\\text{eller}\\quad x-3=0\\Rightarrow x=3.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=0\\) eller \\(x=3\\).</p></div>"
+        }
+      ],
+      "ledtrad": "<p>Bryt ut den gemensamma faktorn x i varje deluppgift.</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "spel": true,
+      "familjTidigare": [
+        "nollproduktmetoden__nollprodukt_faktoriserad_form"
+      ]
+    }
+  },
+  {
+    "id": "2.608",
+    "paths": [
+      "s"
+    ],
+    "before": {
+      "id": "2.608",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "1/0/0",
+      "t": "<p>Lös \\(x^2=81\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[x=\\pm9\\].</div></li></ol><p class=\"facit-svar\"><strong>−9 eller 9</strong></p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        -9,
+        9
+      ],
+      "tolerans": [
+        1e-09,
+        1e-09
+      ],
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>Ta kvadratroten och kom ihåg båda tecknen.</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "mängd",
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadrat"
+      ]
+    },
+    "after": {
+      "id": "2.608",
+      "kap": 2,
+      "omr": "enkla_andragradsekvationer",
+      "kurs": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "niva": "E",
+      "poang": "1/0/0",
+      "t": "<p>Lös \\(x^2=81\\).</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>När vi tar kvadratroten måste vi ta med båda tecknen: både ett positivt och ett negativt tal kan ha samma kvadrat.</p><div class=\"facit-matte\">\\[x=\\pm\\sqrt{81}=\\pm 9.\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> \\(x=9\\) eller \\(x=-9\\).</p></div>",
+      "familj": "Ekvationer av typen x² = a",
+      "formaga": [
+        "procedur"
+      ],
+      "miniräknare": false,
+      "geogebra": false,
+      "svarstyp": "flera_delar",
+      "rättSvar": [
+        -9,
+        9
+      ],
+      "tolerans": [
+        1e-09,
+        1e-09
+      ],
+      "självrättning": [
+        true,
+        true
+      ],
+      "ledtrad": "<p>Ta kvadratroten och kom ihåg båda tecknen.</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarFormat": [
+        "numeriskt",
+        "numeriskt"
+      ],
+      "svarsstruktur": "mängd",
+      "familjTidigare": [
+        "enkla_andragradsekvationer__kvadrat"
+      ]
+    }
+  }
+]
