@@ -949,3 +949,15 @@ Kontrollera s och samtliga spelDelar[i].s separat, inklusive faktisk
 webbläsarvisning. 12 uppgifter rättade, 68 utan motsvarande brist;
 matematiska svar och rättningsmetadata bevarade. 2.134 b:s missvisande
 kommalista ersatt med entydiga separata rötter.
+
+
+### FP52, fortsättning: andragradsfunktioner (2026-10-15)
+
+[90 funktionsuppgifter granskade, 24 åtgärdade och 66 oförändrade](MA2_FUNKTIONSLOSNINGAR_2026-10-15.md).
+27 saknade delkortsfacit ersatta med egna lösningar. Visa hur grafens
+y-skärning bestämmer a (2.141 c/2.144/2.305), hur extremvärdet följer av
+kvadraten och hur avläsning skiljer mellan x-koordinat, y-koordinat och
+hela punkten. 2.238 ska bestämma tecknet på a innan punkten kallas minimum.
+Bevara 2.146 b:s tidigare verifierade ekvationsformat och ordnade koordinater
+i 2.141/2.146. Kontrollera formelns faktiska kanter på mobil; en klippt
+KaTeX-bas behöver inte öka förälderns scrollWidth.
