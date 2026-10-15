@@ -904,3 +904,22 @@ behåller tidigare bibliotek/fallback. Ändra inte ett korrekt bankfacit för
 att kringgå det. Testa själva π-knappen i rätt svarsfält och sätt biblioteket
 uttryckligen undefined när frånvaro simuleras (delete kan misslyckas).
 Tester: exakta-talsvar.test.js och pi-symbolrad-2026-10-14.browser.js i konsumenten.
+
+## KG08 / FP50 – polär form, mobilinmatning och ordnade kvartilfält (2026-10-15)
+
+[Rapporter, alla jämförelser och tester](FELRAPPORTER_2026-10-15_0945.md), även
+som JSON med 16 ändrade bankposter. Mato2 4.117 b kräver stöd för både
+trigonometrisk och Eulerform; det använda biblioteket gav fel tecken på
+imaginärdelen vid en reproducerad negativ Eulerexponent. Formaten `polar` och
+`polar_0_2pi` använder en avgränsad konstant komplexparser, oberoende av
+biblioteket. Bevara positiva belopp och uttryckliga argumentintervall.
+Mato2 4.09 c:s reella facit får inte ge numeriskt mobiltangentbord när ett
+symboliskt svar begärs. Symbolraden ska finnas
+även för manuella textområden. Ma2 4.296 b ska ha tydliga Q₁/Q₃-fält och
+ritjämförelse först efter båda kvartilerna. Talet 8,5 i facit var korrekt.
+
+Mato2 4.10:s cirkel måste vara ofylld även i spelIntro, vars SVG-attribut kan
+ha annan ordning än i huvudtexten. Ändra semantiskt, inte bara genom en
+ordningsberoende strängersättning. Små punktmarkörer behåller fyllning.
+Fy1 3.298 visar båten som rektangel med pilarna fem respektive två rutor.
+Tester: felrapporter-2026-10-15.test.js, polara-svar.test.js och motsvarande browserkontroll.
