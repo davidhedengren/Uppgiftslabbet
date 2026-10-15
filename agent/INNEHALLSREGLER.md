@@ -108,6 +108,13 @@ Kontrollera mer än XML-syntax:
 
 SVG-validatorn (`tools/granska-svg.js`) är en prioriterad del av arbetet.
 
+Användarbeslut 2026-10-15 om cirkelfigurer: cirkellinjer, enhetscirklar och
+ortslinjer i koordinatsystem ska vara ofyllda (`fill="none"`). När en
+cirkelskiva eller annan yta faktiskt är det som visas får den skuggas
+genomskinligt, så att axlar och rutnät syns igenom. Bevara små punktmarkörer
+och avsiktliga fyllningar i exempelvis fysiska föremål och Venndiagram.
+Kontrollera alla figurkopior, även i `spelIntro`, delkort och facit.
+
 ### 3.10 Metadata bedöms pedagogiskt
 
 `kurs`, `kap`, `omr`, `familj`, `formaga`, E/C/A, `poang`, `traningsniva`, `arbetsinsats`, `miniräknare`, `geogebra` och `spel` ska bedömas mot själva uppgiften.

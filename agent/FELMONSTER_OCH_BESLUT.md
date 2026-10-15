@@ -923,3 +923,15 @@ ha annan ordning än i huvudtexten. Ändra semantiskt, inte bara genom en
 ordningsberoende strängersättning. Små punktmarkörer behåller fyllning.
 Fy1 3.298 visar båten som rektangel med pilarna fem respektive två rutor.
 Tester: felrapporter-2026-10-15.test.js, polara-svar.test.js och motsvarande browserkontroll.
+
+
+## FP51 – ofyllda cirkellinjer i samtliga banker (2026-10-15)
+
+[Cirkelfigurer, inventering och exakt ändringslista](CIRKLAR_2026-10-15.md).
+Följ upp KG08/FP50 även på enhetscirklar och liknande figurer. Ofylld
+cirkellinje ska inte markera hela cirkelskivan. Äkta ytor får ha transparent
+skuggning, medan små punktmarkörer, Venndiagram och fysiska föremål behåller
+avsiktliga fyllningar. Kontrollera rekursivt huvudfråga, spelIntro, delkort
+och facit, oberoende av SVG-attributens ordning. Tio ytterligare Mato2-poster
+rättade; alla sju bankerna inventerade. Metadata, matematik och geometri
+bevarade. Riktad SVG- och mobil/datorverifiering gav inga nya fynd.
