@@ -777,6 +777,19 @@ Skydd: `tools/statistik-geogebra-2026-10-14.test.js`, dess fixture och konsument
 
 ## FP46 – verktyg efter uppgiftens syfte; GeoGebra ger alltid miniräknare (2026-10-14)
 
+**Fullständig Ma1-runda 2026-10-15:** [3 968 huvuduppgifter och 954 delkort,
+146 ändrade uppgifter](MA1_VERKTYG_2026-10-15.md); per-ID-beslut och
+verktygstillstånd finns i motsvarande JSON. Vanlig insättning och n:te rötter
+behöver normalt miniräknare men inte GeoGebra. Faktiska digitala
+undersökningar måste däremot tillåtas. Blandade delar bedöms separat:
+6.69 c ska fortsatt kontrolleras utan digitalt verktyg, medan a/b får båda.
+Överslag som följs av ett efterfrågat faktiskt värde behöver räknare till
+kontrollen; rena överslagsfrågor kan behålla spärren. Verktygsbedömningen
+får ompröva en provförlagas delindelning: 0.1126 och 0.1130–1132 får räknare
+enligt senaste policyn, med källa, frågor och svar bevarade. Skydd:
+`tools/ma1-verktyg-2026-10-15.test.js` i båda repona och den uppdaterade
+masterkontrollen `tools/ma1-prov-varianter.test.js`.
+
 [Grundregler, bankinventering, alla granskade/åtgärdade ID:n och nästa granskningssteg](VERKTYGSPOLICY_2026-10-14.md), även som JSON. Senaste användarbeslutet ersätter FP45:s miniräknarspärr för statistik: GeoGebra tillåtet innebär alltid miniräknare tillåten. Fysikens generella miniräknartillstånd består. Sx-facit och den externa GeoGebra-knappen bevaras.
 
 Alla uppgiftsanalyser, rättningar och konstruktioner ska kontrollera miniräknare och GeoGebra, också per delkort. Tillåt miniräknare för beräkningar som inte är snabb huvudräkning, inklusive stora produkter och numerisk trigonometri. Nekande ska motiveras av att verktyget tar bort det som prövas; huvudräkning och aritmetiska handalgoritmer är normalt inte målet. GeoGebra tillåts för digital grafundersökning, grafritning, statistik, regression och avancerade beräkningar där digitalt verktyg behövs. Läs hela frågan, inte bara nyckelordet: givna resultat från ett digitalt verktyg innebär inte att eleven själv behöver verktyget; ”utan digitalt verktyg” kan skydda metodförståelse.
