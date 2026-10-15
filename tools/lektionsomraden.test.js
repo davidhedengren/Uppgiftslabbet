@@ -16,6 +16,8 @@ for(const track of ['2a','2b','2c'])test('Områdesträdet behåller lektionsordn
  assert.ok(keys.indexOf('1:rata_linjens_ekvation')<keys.indexOf('1:konjugatregeln'));
  assert.ok(keys.indexOf('1:konjugatregeln')<keys.indexOf('1:faktorisering'));
  assert.ok(!tree.innerHTML.includes('data-grupp="1:ekvationssystem"'));
- assert.ok(tree.innerHTML.includes('Konjugatregeln och kvadreringsreglerna'));
+ // ST03: i 2c ingår konjugat- och kvadreringsreglerna i Uttryck med parenteser.
+ assert.ok(tree.innerHTML.includes(track==='2c'?'Uttryck med parenteser':'Konjugatregeln och kvadreringsreglerna'));
+ assert.equal(tree.innerHTML.includes('data-grupp="1:losa_ekvationssystem"'),track==='2c');
  assert.equal(tree.innerHTML.includes('data-grupp="3:cirkelgeometri"'),track==='2b');
 });

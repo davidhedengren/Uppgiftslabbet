@@ -974,3 +974,28 @@ hela punkten. 2.238 ska bestämma tecknet på a innan punkten kallas minimum.
 Bevara 2.146 b:s tidigare verifierade ekvationsformat och ordnade koordinater
 i 2.141/2.146. Kontrollera formelns faktiska kanter på mobil; en klippt
 KaTeX-bas behöver inte öka förälderns scrollWidth.
+
+
+## ST03 – balanserade lektionsområden i Ma2c (2026-10-14)
+
+[Beslut och verifiering](LEKTIONSOMRADEN_MA2C_2026-10-14.md). Användaren tyckte
+att ST02 gav för många kort i 2c (57), att de gamla samlingskorten var för få
+(22) och att en första version med 39 kort hade för få uppgifter per område.
+Ma2c har nu 27 kort, ett per avsnitt i planeringen. Närliggande lektioner är
+samlade, så de flesta kort har 55–130 träningskort och 4–8 delmoment.
+
+Gruppernas inställningar:
+- Nya grupper har `kurs:["2c"]`.
+- `konjugat_kvadrering` gäller 2a/2b.
+- 2c-gruppen `randvinkel_medelpunkt` är historisk.
+
+ST01 i ny form: Randvinklar ligger med Yttervinkelsatsen, men aldrig i samma
+kort som Kordasatsen. 2a/2b är oförändrade.
+
+`hittaTraningskort()` måste hitta ensamma OMR-nycklar och grupper för andra
+spår, så att äldre uppdrag fungerar. Ändra inte OMR eller familjer för
+visningsgrupper.
+
+Tester:
+- lektionsomraden.test.js i båda repona,
+- ma2c-geometri-omraden.test.js och lektionsomraden.browser.js i Kunskapsgymmet.
