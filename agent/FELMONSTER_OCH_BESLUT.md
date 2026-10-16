@@ -999,3 +999,44 @@ visningsgrupper.
 Tester:
 - lektionsomraden.test.js i båda repona,
 - ma2c-geometri-omraden.test.js och lektionsomraden.browser.js i Kunskapsgymmet.
+
+## FP53 – begärd uttrycksform, likhetstecken och namngivna delfält (2026-10-16)
+
+[Alla 13 rapporter, 81 granskade uppgifter och kommentarsförslag](FELRAPPORTER_2026-10-16_0809.md),
+även som JSON. 58 bankposter ändrade, 23 granskade utan motsvarande fel.
+
+Ma2 2.241 ska uttryckligen begära **en enda logaritm**: ”förenkla” anger inte
+varför 2lg3 skulle vara sämre än lg9. Formatet `en_logaritm` prövar både
+ekvivalens och form, före generella numeriska genvägar. Bevara FP35:s
+lg-/LaTeX-normalisering. I 2.572 och fem jämförelser används `faktoriserat`:
+f(x)=, y= och enbart produkten godtas; utvecklat polynom ersätter inte den
+begärda faktoriseringen. Rensa LaTeX-avgränsare **före** vänsterledet,
+även när facit inte innehåller andra LaTeX-kommandon.
+
+2.14 och fyra jämförelser får numeriska facit; = och ≈ får inte skilja
+mellan rätt/fel på samma avrundade tal. Frågans precision styr toleransen.
+3.202 a och andra koordinat-/storhetskort ska ha ordning och underetiketter
+på delen själv, även när heluppgiften har a/b/c. Helvyn visar delens
+fältetiketter. Neutrala ”Sidlängd”-fält passar oordnade sidlängder (2.73);
+uttryckligt kortast→längst i 2.709 kräver däremot ordnad a-del.
+
+Följ upp FP52 även när numerisk självrättning kompletteras med resonemang:
+på ett fristående ordnat flersvarskort visar en ensam
+`manuellKomplettering:true` hela kortfacit efter **första** rätta fältet.
+Använd fältvis `[false, ..., true]` så att nästa tal inte avslöjas.
+Verifierat i 3.412 c, 3.413 b, 3.515 b och 2.709 a.
+
+Nivåbeslut: 2.32 är 5; 2.505 är 4. 2.620 c behålls på 5 men får given
+linjeform och egen lösning. Omvandling av given standardavvikelse är
+begreppsresonemang: 4.21/4.43/4.56 b är 4, enklare spridningsomvandlingar
+är 3. Detta ändrar tidigare låg nivåbedömning, inte FP44:s korrekta
+Sx-resultat. 2.484:s **reella** ska behållas. 4.107/4.226:s bokstäver
+kopplas till kurvor med peklinjer, färg och linjetyp; deras tätheter har
+samma totalarea. De tidigare korrekta svaren C respektive A bevaras.
+
+Mät också `.katex-display .base` mot formelbehållaren: intern klippning
+behöver inte öka sidans scrollWidth. 19 granskade lösningar fick kortare
+rader efter en sådan reproduktion. Bevara den tidigare verifierade matematiken.
+
+Tester: master `tools/felrapporter-2026-10-16.test.js`; konsument
+`tools/felrapporter-2026-10-16.browser.py` (riktiga svarsfält och mobil/dator).
