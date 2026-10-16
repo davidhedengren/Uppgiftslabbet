@@ -1040,3 +1040,41 @@ rader efter en sådan reproduktion. Bevara den tidigare verifierade matematiken.
 
 Tester: master `tools/felrapporter-2026-10-16.test.js`; konsument
 `tools/felrapporter-2026-10-16.browser.py` (riktiga svarsfält och mobil/dator).
+
+## FP54 – nästlade √-uttryck, exakt mobilsvar och rotmängder i Mato1 (2026-10-16)
+
+[Rapporter kl. 19:19, 28 granskade ID:n och kommentarsförslag](FELRAPPORTER_2026-10-16_1919.md).
+21 bankposter ändrade; ytterligare fyra rotuppgifter omfattas av parserfixen.
+Tre jämförelser har inget motsvarande fel. JSON-loggen anger alla fält och verktyg.
+
+Mato1 2.530:s två rötter ska vara en `mängd`, inte underförstått ordnade
+`flera_delar`. Samma fel fanns i 2.531/2.416/2.576. Namngivna storheter
+som x-värde/minimivärde i 2.826 behåller däremot ordning (FP53).
+Tidsvariabeln måste stå i den självständiga frågan: minuter i 2.571/2.537,
+timmar i 3.655, år i 2.321/3.656. 2.321 hade dessutom fel `rättSvar=6`:
+ln(150/96)/0,08≈5,57859 ger **5,6 år** enligt frågans decimalprecision.
+
+Ett numeriskt lagrat facit kan fortfarande tillåta ln2, √3 eller 11/3.
+`sifferlage` ska därför få frågetexten, inte enbart facittypen. Exakt svar
+kräver fullständigt mobiltangentbord. Bevara numerisk tolerans när både
+exakt och avrundat svar tillåts. För tre decimaler används 0,0005 i de
+granskade uppgifterna, så fel närliggande avrundning inte godtas. Enbart
+exakt svar i 2.816 lagras däremot som ln2/ln3, inte avrundade rottal.
+
+√x och √(x) fungerade redan i 2.212; det tidigare korrekta facit får inte
+ändras därför att eleven skriver att roten ur generellt inte fungerar.
+Den reproducerade bristen är √((x)): den gamla regexen tillät inga inre
+parenteser. Normalisera √ framför en öppningsparentes till sqrt och låt
+uttrycksparsern hantera den nästlade gruppen. Avvisa fortfarande ogiltig
+syntax. Testa den **verkliga √-knappen**. Den rapporterade elevens exakta
+historiska inmatning är okänd; ange denna begränsning i kommentaren.
+
+Nivåer efter självständig analys: 2.530 C/3, 2.826 C/4; poäng uppdateras
+tillsammans med nivå. 2.826/4.474 tillåter miniräknare eftersom frågan även
+tillåter numeriska svar. Digital grafanalys i 2.321 kräver GeoGebra tillåtet.
+De fem visuellt bekräftat klippta lösningarna får kortare rader, med
+tidigare korrekt matematik och FP52:s förklaringar bevarade.
+
+Tester: master `tools/felrapporter-2026-10-16-1919.test.js`; konsument
+`tools/mato1-inmatning-2026-10-16.test.js` och
+`tools/felrapporter-2026-10-16-1919.browser.py`.

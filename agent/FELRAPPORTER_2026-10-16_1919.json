@@ -1,0 +1,661 @@
+{
+  "datum": "2026-10-16",
+  "logg": "19:19",
+  "bank": "mato1",
+  "rapporter": [
+    "2.530",
+    "2.571",
+    "2.826",
+    "2.212"
+  ],
+  "granskade": [
+    "2.530",
+    "2.531",
+    "2.576",
+    "2.416",
+    "2.42",
+    "2.182",
+    "2.422",
+    "2.423",
+    "2.571",
+    "2.321",
+    "2.537",
+    "3.655",
+    "3.656",
+    "2.753",
+    "2.757",
+    "2.826",
+    "2.816",
+    "1.579",
+    "2.810",
+    "4.474",
+    "2.823",
+    "1.586",
+    "2.212",
+    "2.10",
+    "2.250",
+    "2.393",
+    "2.117",
+    "2.127"
+  ],
+  "bankAndrade": [
+    "2.530",
+    "2.531",
+    "2.576",
+    "2.416",
+    "2.182",
+    "2.571",
+    "2.321",
+    "2.537",
+    "3.655",
+    "3.656",
+    "2.753",
+    "2.757",
+    "2.826",
+    "2.816",
+    "1.579",
+    "2.810",
+    "4.474",
+    "2.823",
+    "1.586",
+    "2.212",
+    "2.10"
+  ],
+  "atgardade": [
+    "2.530",
+    "2.531",
+    "2.576",
+    "2.416",
+    "2.182",
+    "2.571",
+    "2.321",
+    "2.537",
+    "3.655",
+    "3.656",
+    "2.753",
+    "2.757",
+    "2.826",
+    "2.816",
+    "1.579",
+    "2.810",
+    "4.474",
+    "2.823",
+    "1.586",
+    "2.212",
+    "2.10",
+    "2.250",
+    "2.393",
+    "2.117",
+    "2.127"
+  ],
+  "granskad_inga_fel": [
+    "2.42",
+    "2.422",
+    "2.423"
+  ],
+  "jamforelsegrupper": {
+    "Lösningsmängd och svarsordning": [
+      "2.530",
+      "2.531",
+      "2.576",
+      "2.416",
+      "2.42",
+      "2.182",
+      "2.422",
+      "2.423"
+    ],
+    "Tidsenheter i exponentialmodeller": [
+      "2.571",
+      "2.321",
+      "2.537",
+      "3.655",
+      "3.656",
+      "2.753",
+      "2.757"
+    ],
+    "Exakta svar och mobiltangentbord": [
+      "2.826",
+      "2.816",
+      "1.579",
+      "2.810",
+      "4.474",
+      "2.823",
+      "1.586"
+    ],
+    "Roten ur i derivatasvar": [
+      "2.212",
+      "2.10",
+      "2.250",
+      "2.393",
+      "2.117",
+      "2.127"
+    ]
+  },
+  "poster": [
+    {
+      "id": "2.530",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: x=11 och x=−1 godtas nu i valfri ordning. Det framgår också vid svarsfälten. Uppgiften är flyttad till nivå 3.",
+      "kontroll": "f′=30x och g′=3x²−33 ger x²−10x−11=(x−11)(x+1)=0: −1/11.",
+      "andringar": [
+        "Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter.",
+        "Nivå 2→3: jämföra två derivator och lösa den resulterande andragradsekvationen."
+      ],
+      "andradeFalt": [
+        "t",
+        "antalSvar",
+        "svarFormat",
+        "traningsniva",
+        "poang",
+        "svarsstruktur",
+        "s",
+        "niva"
+      ],
+      "traningsniva": 3,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.531",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter.",
+      "kontroll": "3x²−0,88=5 ger x²=1,96, alltså x=±1,4.",
+      "andringar": [
+        "Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter."
+      ],
+      "andradeFalt": [
+        "t",
+        "antalSvar",
+        "svarFormat",
+        "svarsstruktur"
+      ],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.576",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter. Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik.",
+      "kontroll": "24x=3x²−27 ger (x−9)(x+1)=0, alltså −1/9.",
+      "andringar": [
+        "Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter.",
+        "Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik."
+      ],
+      "andradeFalt": [
+        "t",
+        "antalSvar",
+        "svarsstruktur",
+        "s"
+      ],
+      "traningsniva": 3,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.416",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter.",
+      "kontroll": "3x²−6=6 ger x=±2; tangenterna ska jämföras med linjens lutning 6.",
+      "andringar": [
+        "Två lösningar rättas som mängd i valfri ordning, inte som ordnade deluppgifter."
+      ],
+      "andradeFalt": [
+        "t",
+        "antalSvar",
+        "svarsstruktur"
+      ],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.42",
+      "status": "Granskad – inget fel",
+      "bankAndrad": false,
+      "kommentar": "Granskad – inget fel: 3x²−6x−9=3(x−3)(x+1); noll vid −1/3. Båda lösningarna godtas redan i valfri ordning.",
+      "kontroll": "3x²−6x−9=3(x−3)(x+1); noll vid −1/3.",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.182",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik.",
+      "kontroll": "3x²−12x+9=3(x−1)(x−3); noll vid 1/3.",
+      "andringar": [
+        "Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik."
+      ],
+      "andradeFalt": [
+        "s"
+      ],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.422",
+      "status": "Granskad – inget fel",
+      "bankAndrad": false,
+      "kommentar": "Granskad – inget fel: 5x⁴−5=0 ger de två reella lösningarna ±1. Båda lösningarna godtas redan i valfri ordning.",
+      "kontroll": "5x⁴−5=0 ger de två reella lösningarna ±1.",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.423",
+      "status": "Granskad – inget fel",
+      "bankAndrad": false,
+      "kommentar": "Granskad – inget fel: 3x²−6x=3x(x−2)=0 ger 0/2. Båda lösningarna godtas redan i valfri ordning.",
+      "kontroll": "3x²−6x=3x(x−2)=0 ger 0/2.",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.571",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: nu står det att tiden t mäts i minuter och temperaturen i °C. Minskningen är cirka 3,82 % per minut; svar med eller utan procenttecken godtas.",
+      "kontroll": "100·(1−exp(−0,039))≈3,82493 %. Minuter definierade i frågan.",
+      "andringar": [
+        "T anges i °C och t i minuter; procentenhet och rättningsformat uttryckliga."
+      ],
+      "andradeFalt": [
+        "t",
+        "svarFormat",
+        "svarEnhet"
+      ],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.321",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Tidsvariabeln definierad i år. Bekräftat facitfel rättat: 5,6 år, inte 6. Digital grafanalys tillåts.",
+      "kontroll": "ln(150/96)/0,08≈5,57859 år, vilket blir 5,6 år. Gamla rättSvar=6 var fel.",
+      "andringar": [
+        "Tidsvariabeln definierad i år. Bekräftat facitfel rättat: 5,6 år, inte 6. Digital grafanalys tillåts."
+      ],
+      "andradeFalt": [
+        "t",
+        "rättSvar",
+        "svarEnhet",
+        "tolerans",
+        "geogebra",
+        "s"
+      ],
+      "traningsniva": 3,
+      "miniraknare": true,
+      "geogebra": true,
+      "delkort": []
+    },
+    {
+      "id": "2.537",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: T och t definierade även i den fristående modellbedömningsuppgiften.",
+      "kontroll": "Gränsvärdet av modellen är 0 °C, medan kaffet i verkligheten närmar sig 20 °C.",
+      "andringar": [
+        "T och t definierade även i den fristående modellbedömningsuppgiften."
+      ],
+      "andradeFalt": [
+        "t"
+      ],
+      "traningsniva": 5,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "3.655",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Tiden anges i timmar, både frågan och facit använder bakterier/h.",
+      "kontroll": "N′(t)=100e^(0,2t); N′(0)=100 bakterier/h.",
+      "andringar": [
+        "Tiden anges i timmar, både frågan och facit använder bakterier/h."
+      ],
+      "andradeFalt": [
+        "t",
+        "s"
+      ],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "3.656",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Tiden anges i år, både frågan och facit använder individer/år. Precision stämd mot en decimal.",
+      "kontroll": "N′(5)=100e^0,5≈164,87213 individer/år, alltså 164,9.",
+      "andringar": [
+        "Tiden anges i år, både frågan och facit använder individer/år. Precision stämd mot en decimal."
+      ],
+      "andradeFalt": [
+        "t",
+        "rättSvar",
+        "tolerans",
+        "s"
+      ],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.753",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Angiven tidsenhet stämmer; svarsenhet tillagd så både talet och ett svar med enhet godtas.",
+      "kontroll": "m′(0)=−2 g/h; massan minskar med 2 gram per timme.",
+      "andringar": [
+        "Angiven tidsenhet stämmer; svarsenhet tillagd så både talet och ett svar med enhet godtas."
+      ],
+      "andradeFalt": [
+        "svarEnhet"
+      ],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.757",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Angiven tidsenhet stämmer; svarsenhet tillagd så både talet och ett svar med enhet godtas.",
+      "kontroll": "N′(0)=30 bakterier/h.",
+      "andringar": [
+        "Angiven tidsenhet stämmer; svarsenhet tillagd så både talet och ett svar med enhet godtas."
+      ],
+      "andradeFalt": [
+        "svarEnhet"
+      ],
+      "traningsniva": 2,
+      "miniraknare": false,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.826",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: mobilen får nu ett fullständigt tangentbord för exakta svar. ln2 och 0,693 godtas i a), och −4 i b). Frågan och lösningen är tydligare och miniräknare är tillåten.",
+      "kontroll": "f′=2e^x(e^x−2); minus/plus runt x=ln2 ger minimum, f(ln2)=−4. Alternativt f=(e^x−2)²−4.",
+      "andringar": [
+        "Mobiltangentbord, a/b-formulering och exakt/numeriskt svar samordnade. Miniräknare tillåts. Lösningen förklarar minimum.",
+        "Nivå 5→4: derivera, faktorisera och tolka tecken, utan parameteranalys eller ny avancerad metod."
+      ],
+      "andradeFalt": [
+        "t",
+        "miniräknare",
+        "svarFormat",
+        "traningsniva",
+        "poang",
+        "tolerans",
+        "s",
+        "niva"
+      ],
+      "traningsniva": 4,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.816",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakta logaritmrötter lagras som uttryck, så att exakt form visas och fullständigt tangentbord används.",
+      "kontroll": "Sätt z=e^x>0; (z−2)(z−3)=0 ger x=ln2 eller ln3, båda reella och tillåtna.",
+      "andringar": [
+        "Exakta logaritmrötter lagras som uttryck, så att exakt form visas och fullständigt tangentbord används."
+      ],
+      "andradeFalt": [
+        "rättSvar",
+        "svarFormat",
+        "tolerans"
+      ],
+      "traningsniva": 5,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "1.579",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg.",
+      "kontroll": "Tangentens lutning är 3 och sekantens a²; a>0 ger a=√3.",
+      "andringar": [
+        "Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg."
+      ],
+      "andradeFalt": [
+        "tolerans"
+      ],
+      "traningsniva": 5,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.810",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg.",
+      "kontroll": "Sekantlutningen är (64−1)/(4−1)=21; 3c²=21 och 1<c<4 ger c=√7.",
+      "andringar": [
+        "Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg."
+      ],
+      "andradeFalt": [
+        "tolerans"
+      ],
+      "traningsniva": 5,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "4.474",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg. Miniräknare tillåts eftersom frågan också tillåter numerisk rotberäkning.",
+      "kontroll": "Sex trianglar med sidor 1/1 och mellanvinkel 60° ger area 6·sin60°/2=3√3/2.",
+      "andringar": [
+        "Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg.",
+        "Miniräknare tillåts eftersom frågan också tillåter numerisk rotberäkning."
+      ],
+      "andradeFalt": [
+        "miniräknare",
+        "tolerans"
+      ],
+      "traningsniva": 4,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.823",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg. Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik.",
+      "kontroll": "Tangenten y=5−3(x−2)=11−3x ger f(2,1)≈4,7 och x-skärning 11/3.",
+      "andringar": [
+        "Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg.",
+        "Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik."
+      ],
+      "andradeFalt": [
+        "tolerans",
+        "s"
+      ],
+      "traningsniva": 4,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "1.586",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg. Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik.",
+      "kontroll": "f(g(x))=2x²+1 och g(f(x))=4x²+12x+8; x=−3±√5,5.",
+      "andringar": [
+        "Exakt svar kräver fullständigt mobiltangentbord; tolerans för tre decimaler ändrad till ett halvt avrundningssteg.",
+        "Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik."
+      ],
+      "andradeFalt": [
+        "tolerans",
+        "s"
+      ],
+      "traningsniva": 4,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.212",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Granskad: facit 3√x/2−6/x² är korrekt. Vanliga svar med √ fungerar redan. Ett bekräftat fel med nästlade parenteser, till exempel 3√((x))/2−6/x², är nu rättat. Utan det faktiskt inskrivna svaret kan vi inte avgöra om just elevens underkännande hade den orsaken.",
+      "kontroll": "d/dx[x^(3/2)+6x^−1]=(3/2)√x−6/x², för x>0.",
+      "andringar": [
+        "Derivatan är korrekt. √ med nästlade parenteser rättas i konsumenten; facit delas i korta, förklarade rader."
+      ],
+      "andradeFalt": [
+        "s"
+      ],
+      "traningsniva": 3,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.10",
+      "status": "Åtgärdad",
+      "bankAndrad": true,
+      "kommentar": "Åtgärdad: Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik.",
+      "kontroll": "g′=15x²−1/√x.",
+      "andringar": [
+        "Bekräftad formelklippning på mobil: lösningen delas i korta rader med bibehållen matematik."
+      ],
+      "andradeFalt": [
+        "s"
+      ],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.250",
+      "status": "Åtgärdad",
+      "bankAndrad": false,
+      "kommentar": "Granskad: facit är korrekt. √ och sqrt godtas även med nästlade parenteser efter den generella inmatningsrättningen.",
+      "kontroll": "f′=(3/2)√x+7/x²−1/(2x√x). Tidigare korrekt facit och rättad ledtråd bevaras.",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 3,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.393",
+      "status": "Åtgärdad",
+      "bankAndrad": false,
+      "kommentar": "Granskad: facit är korrekt. √ och sqrt godtas även med nästlade parenteser efter den generella inmatningsrättningen.",
+      "kontroll": "f′=5/(2√x).",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": []
+    },
+    {
+      "id": "2.117",
+      "status": "Åtgärdad",
+      "bankAndrad": false,
+      "kommentar": "Granskad: facit är korrekt. √ och sqrt godtas även med nästlade parenteser efter den generella inmatningsrättningen.",
+      "kontroll": "a: (3/2)√x. b: (5x²−2)/(2√x).",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": [
+        {
+          "etikett": "a",
+          "traningsniva": 2,
+          "miniraknare": true,
+          "geogebra": false
+        },
+        {
+          "etikett": "b",
+          "traningsniva": 2,
+          "miniraknare": true,
+          "geogebra": false
+        }
+      ]
+    },
+    {
+      "id": "2.127",
+      "status": "Åtgärdad",
+      "bankAndrad": false,
+      "kommentar": "Granskad: facit är korrekt. √ och sqrt godtas även med nästlade parenteser efter den generella inmatningsrättningen.",
+      "kontroll": "a: 5/(2√x)−1/x². b: 3√x+6/x³.",
+      "andringar": [],
+      "andradeFalt": [],
+      "traningsniva": 2,
+      "miniraknare": true,
+      "geogebra": false,
+      "delkort": [
+        {
+          "etikett": "a",
+          "traningsniva": 2,
+          "miniraknare": true,
+          "geogebra": false
+        },
+        {
+          "etikett": "b",
+          "traningsniva": 2,
+          "miniraknare": true,
+          "geogebra": false
+        }
+      ]
+    }
+  ],
+  "verifiering": {
+    "svarskombinationer": 173,
+    "visningar": 116,
+    "javascriptfel": 0,
+    "nya_validatorfynd": 0,
+    "mobilformler": "Displayformlernas faktiska kanter kontrollerade, ingen klippning i slutkörningen."
+  }
+}
