@@ -1078,3 +1078,47 @@ tidigare korrekt matematik och FP52:s förklaringar bevarade.
 Tester: master `tools/felrapporter-2026-10-16-1919.test.js`; konsument
 `tools/mato1-inmatning-2026-10-16.test.js` och
 `tools/felrapporter-2026-10-16-1919.browser.py`.
+
+## FP55 – uppgiftstrogna figurer, samtidig optimering och svarsprecision i Mato1 (2026-10-17)
+
+[Rapporter kl. 19:17 och 71 manuellt granskade uppgifter](FELRAPPORTER_2026-10-17_1917.md).
+62 bankposter ändras, med 47 omritade figurer. Av 27 rapporter ändras 26;
+2.321 är redan rättad enligt FP54 och lämnas exakt oförändrad.
+
+Återanvänd inte en generisk triangel eller tangentkurva till andra givna tal.
+Konstruera figuren från sidlängder/vinklar respektive funktion och derivata.
+Vinkeltext ska ligga inne vid rätt hörn; längder utanför rätt sida. Separera
+figurens fyllningsopacitet från dess tydliga kontur. Studsbågar ska nå marken
+mellan hoppen och följa den givna höjdkvoten. Kontrollera även färgen i den
+riktiga appen: ärvd ljus currentColor på dess vita figuryta gör linjer osynliga.
+De 47 nya figurerna har därför en egen mörk grundfärg.
+
+4.257/4.260:s ursprungliga minimering är korrekt: alla olikheter gäller
+samtidigt och origo bryter mot de positiva undre gränserna. Förtydliga
+villkoren och skugga rätt område; ändra inte ≥ till > eller minimum till 0.
+Minimivärdena är fortfarande 35,4 respektive 204. I 4.260 tillåts uttryckligen
+bråkdelar av portioner, i enlighet med den ursprungliga kontinuerliga modellen.
+
+2.317 hade däremot ett verkligt facitfel: frågan gäller x², men lösningen
+använde x²+1. Tangenter genom (0, −4) ger a²=4 och tangentpunkterna
+(−2, 4)/(2, 4). Digitalt ritande och tangentanalys i 2.316/2.317/2.318/2.349
+ska tillåta GeoGebra och miniräknare. Generiska tidströskelledtrådar passar
+inte parameterbeviset i 2.323.
+
+En ensam svarsruta i 2.318 efterfrågar nu endast tangentekvationen, med
+koefficienter till tre decimaler. 2.346 ska avrundas till 10,9; 10,8 är
+avkortning och ska inte godkännas. Lagra fullprecisionsvärdet med tolerans
+anpassad till den efterfrågade avrundningen, inte ett grovt mellanresultat.
+Samma kontroll omfattar närliggande tids-, längd-, area- och vinkeluppgifter;
+ange tidsenhet i den självständiga frågan och rätt enhet vid svarsfältet.
+
+Fyra areaövningar får mellanvinklarna 50°/120°/40°/150° och 4.463 får 60°
+för att minska upprepningen av 90°-fall. Fråga, figur, lösning, numeriskt mål,
+miniräknare och nivå 2 samordnas; E-bedömning och poäng bevaras.
+17 lösningar får kortare formelrader efter reproducerad intern KaTeX-klippning
+på mobil, med matematik och pedagogiska förklaringar bevarade.
+
+Tester: master `tools/felrapporter-2026-10-17.test.js`; konsument
+`tools/felrapporter-2026-10-17.browser.cjs`. Webbläsaren provar riktiga
+svarsfält och elev-/lärarvisning på mobil och dator, inklusive SVG-kontrast
+och intern formelklippning. Tidigare FP53/FP54-regressioner ska fortsatt passera.
