@@ -1,0 +1,227 @@
+{
+  "changes": [
+    {
+      "id": "2.08",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "ledtrad"
+      ],
+      "note": "Uttalat avrundningskrav, fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "2.44",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "note": "Uttalat avrundningskrav, fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "2.48",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "note": "Uttalat avrundningskrav, fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "2.52",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "note": "Uttalat avrundningskrav, fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "2.509",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "ledtrad"
+      ],
+      "note": "Precisionskrav och avrundning samordnade; samband förklarat utan falsk exakt likhet eller facit i ledtråden."
+    },
+    {
+      "id": "2.510",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "ledtrad"
+      ],
+      "note": "Precisionskrav och avrundning samordnade; samband förklarat utan falsk exakt likhet eller facit i ledtråden."
+    },
+    {
+      "id": "2.511",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "ledtrad"
+      ],
+      "note": "Precisionskrav och avrundning samordnade; samband förklarat utan falsk exakt likhet eller facit i ledtråden."
+    },
+    {
+      "id": "2.512",
+      "fields": [
+        "t",
+        "s",
+        "tolerans",
+        "ledtrad"
+      ],
+      "note": "Precisionskrav och avrundning samordnade; samband förklarat utan falsk exakt likhet eller facit i ledtråden."
+    },
+    {
+      "id": "2.547",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans"
+      ],
+      "note": "Sekantfigur saknade korrekt skala och kontakt med kurvan. Ny skalenlig figur, fullständig logaritmlösning och precisionskontrakt."
+    },
+    {
+      "id": "3.1149",
+      "fields": [
+        "manuellKomplettering"
+      ],
+      "note": "Efterfrågad tolkning/motivering får manuell komplettering; numeriska svar fortsätter självrättas."
+    },
+    {
+      "id": "2.753",
+      "fields": [
+        "manuellKomplettering"
+      ],
+      "note": "Efterfrågad tolkning/motivering får manuell komplettering; numeriska svar fortsätter självrättas."
+    },
+    {
+      "id": "3.1079",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "arbetsinsats",
+        "rättSvar",
+        "svarEnhet"
+      ],
+      "note": "Exakt dubblett av 2.753 ersatt med omvänd användning av derivatasambandet; enkel E-variant på nivå 2."
+    },
+    {
+      "id": "2.14",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.18",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.22",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.26",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.207",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.210",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.248",
+      "fields": [
+        "s",
+        "spelDelar",
+        "ledtrad"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.301",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.302",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.303",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.304",
+      "fields": [
+        "s",
+        "spelDelar"
+      ],
+      "note": "Tre fristående delkort och helfacit får korta uppgiftsspecifika regel- och insättningsförklaringar. Felriktad ledtråd rättas där den fanns. Facitvärden och verktygsval bevarade."
+    },
+    {
+      "id": "2.202",
+      "fields": [
+        "s",
+        "spelDelar",
+        "ledtrad"
+      ],
+      "note": "Rättar sista kvarvarande potensmodell-ledtråden i Mato1 och ersätter orelaterat råd om ekvationsrötter med deriveringsförklaringar för tre delkort."
+    }
+  ],
+  "scope": "24 huvuduppgifter, varav 36 delkort med utvecklade lösningar. Inte hela banken.",
+  "verification": {
+    "masterTests": 416,
+    "consumerTests": 178,
+    "browserAnswerChecks": 88,
+    "browserCardViews": 96,
+    "browserErrors": []
+  }
+}

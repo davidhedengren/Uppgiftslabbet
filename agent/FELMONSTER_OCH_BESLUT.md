@@ -1158,3 +1158,16 @@ blandade delkort kan fortfarande ha skilda behörigheter (4.158 a/b).
 Tester: `tools/mato1-granskning-2026-10-18.test.js` och konsumentens
 `tools/mato1-granskning-2026-10-18.browser.cjs`. Hela banken är ännu inte
 färdiggranskad; JSON-loggen skiljer lästa områden från ändrade uppgifter.
+
+## FP58 – derivatafacit ska förklara regeln, inte bara återge svaret (2026-10-18)
+
+[Mato1 derivata, delomgång 2](MATO1_DERIVATA_2026-10-18.md): 24 huvuduppgifter,
+36 delkort med egna förklaringar. Ledtrådar om skalning av potensmodeller hör
+inte hemma vid termvis derivering. Numeriska logaritmsvar kräver uttalad
+precision, fullprecisionsmål och rätt tolerans. Avrundade mellanled får inte
+skrivas som exakta likheter. En efterfrågad tolkning eller motivering måste
+bedömas även om talet självrättas. Sekantpunkter måste ligga på den ritade
+kurvan i samma koordinatsystem. 3.1079 varierar en exakt dubblett av 2.753.
+
+Tester: `tools/mato1-derivata-2026-10-18.test.js` och konsumentens motsvarande
+`.browser.cjs`. Tidigare korrekta svar och verktygsbeslut från FP54 bevaras.
