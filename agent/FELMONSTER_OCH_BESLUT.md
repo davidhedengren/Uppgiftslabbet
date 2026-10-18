@@ -1180,3 +1180,16 @@ Exakta taluttryck och begärda närmevärden ska båda fungera. Två asymptoter
 behöver två svarsfält även i fristående delkort. De Moivre-frågor anger
 uttryckligen svarsform. Ma2 1.168 och 1.272 var redan korrekta i master.
 Tester: `tools/felrapporter-2026-10-18-2150.test.js` och konsumentens browser-test.
+
+## FP60 – grafavläsning ska bygga på elevens information (2026-10-18)
+
+[Mato1 andraderivatan](MATO1_ANDRADERIVATA_2026-10-18.md): 37 uppgifter
+granskade, 12 ändrade. Ett dolt funktionsuttryck får inte vara den enda
+förklaringen till en grafavläsning. Ange konkreta intervall när frågan
+efterfrågar dem, begränsa slutsatserna till synligt område och markera
+avlästa gränser som ungefärliga. Ledtrådar ska stödja metoden utan att
+avslöja antal eller färdig teckentabell. Dubbletten 3.241 varierar nu
+resonemanget från maximum till minimum med positiv andraderivata.
+
+Tester: `tools/mato1-andraderivata-2026-10-18.test.js` och konsumentens
+motsvarande `.browser.cjs`. Numeriska svar och verktygsbeslut bevarade.

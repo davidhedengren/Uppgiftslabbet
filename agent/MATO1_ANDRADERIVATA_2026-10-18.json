@@ -1,0 +1,174 @@
+{
+  "reviewed": [
+    "2.85",
+    "2.90",
+    "2.95",
+    "2.100",
+    "2.105",
+    "2.110",
+    "2.115",
+    "2.120",
+    "2.160",
+    "2.175",
+    "2.180",
+    "2.227",
+    "2.232",
+    "2.249",
+    "2.252",
+    "2.266",
+    "2.268",
+    "2.270",
+    "2.273",
+    "2.308",
+    "2.374",
+    "2.380",
+    "2.418",
+    "2.536",
+    "3.19",
+    "3.43",
+    "3.49",
+    "3.55",
+    "3.93",
+    "3.221",
+    "3.241",
+    "3.245",
+    "3.257",
+    "3.611",
+    "3.612",
+    "3.1150",
+    "3.1151"
+  ],
+  "changes": [
+    {
+      "id": "2.85",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.90",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.95",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.100",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.105",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.110",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.115",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.120",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Grafavläsning förklaras med tangent och lutning, utan att förutsätta ett okänt funktionsuttryck. Slutsatser avgränsas till visat område."
+    },
+    {
+      "id": "2.175",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Ledtråden avslöjade de efterfrågade resultaten. Ersatt med metodstöd utan antal eller färdig teckentabell."
+    },
+    {
+      "id": "2.380",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Lösningen saknade de efterfrågade intervallen och ledtråden bad eleven bestämma en redan given derivata."
+    },
+    {
+      "id": "3.241",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Exakt upprepning av 2.270 ersatt med motsvarande resonemang för positiv andraderivata; variation mellan maximum och minimum."
+    },
+    {
+      "id": "3.245",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Ledtråden avslöjade de efterfrågade resultaten. Ersatt med metodstöd utan antal eller färdig teckentabell."
+    }
+  ],
+  "unchanged": [
+    "2.160",
+    "2.180",
+    "2.227",
+    "2.232",
+    "2.249",
+    "2.252",
+    "2.266",
+    "2.268",
+    "2.270",
+    "2.273",
+    "2.308",
+    "2.374",
+    "2.418",
+    "2.536",
+    "3.19",
+    "3.43",
+    "3.49",
+    "3.55",
+    "3.93",
+    "3.221",
+    "3.257",
+    "3.611",
+    "3.612",
+    "3.1150",
+    "3.1151"
+  ]
+}
