@@ -1,0 +1,1258 @@
+{
+  "status": "pågående, första delomgången",
+  "totalParents": 2727,
+  "renderedCards": 2887,
+  "changes": [
+    {
+      "id": "1.43",
+      "fields": [
+        "svarFormat",
+        "svarEtiketter",
+        "svarsstruktur",
+        "svarstyp",
+        "rättSvar"
+      ],
+      "note": "Frågan kräver både uttryck och förbjudna värden; båda prövas nu i märkta fält."
+    },
+    {
+      "id": "1.45",
+      "fields": [
+        "svarFormat",
+        "rättSvar"
+      ],
+      "note": "Trasigt rättningssvar x5 ersatt med hela lösningsmängden; strikt olikhet bevarad."
+    },
+    {
+      "id": "1.48",
+      "fields": [
+        "svarFormat",
+        "svarEtiketter",
+        "svarsstruktur",
+        "svarstyp",
+        "rättSvar"
+      ],
+      "note": "Frågan kräver både uttryck och förbjudna värden; båda prövas nu i märkta fält."
+    },
+    {
+      "id": "1.53",
+      "fields": [
+        "svarFormat",
+        "svarEtiketter",
+        "svarsstruktur",
+        "svarstyp",
+        "rättSvar"
+      ],
+      "note": "Frågan kräver både uttryck och förbjudna värden; båda prövas nu i märkta fält."
+    },
+    {
+      "id": "1.149",
+      "fields": [
+        "s",
+        "t",
+        "ledtrad"
+      ],
+      "note": "Förklarar ordet moniskt med den konkreta koefficientegenskap som eleven behöver. Tydlig definition av polynomets namn och ledande koefficient."
+    },
+    {
+      "id": "1.156",
+      "fields": [
+        "t",
+        "ledtrad"
+      ],
+      "note": "Den tredje efterfrågade storheten f(2) uttrycks tydligt; avhuggen ledtråd avslutas."
+    },
+    {
+      "id": "1.187",
+      "fields": [
+        "s",
+        "t",
+        "ledtrad"
+      ],
+      "note": "Kontinuitet saknades för slutsatsen att hela intervallet utgör värdemängden."
+    },
+    {
+      "id": "1.218",
+      "fields": [
+        "t"
+      ],
+      "note": "Onödigt fackord monisk tas bort; de redan givna funktionsuttrycken anger koefficienterna."
+    },
+    {
+      "id": "1.219",
+      "fields": [
+        "s",
+        "t",
+        "ledtrad"
+      ],
+      "note": "Förklarar ordet moniskt med den konkreta koefficientegenskap som eleven behöver. Förklarat ledande koefficient även i lösningen; uppgiftsspecifik ledtråd."
+    },
+    {
+      "id": "1.228",
+      "fields": [
+        "t"
+      ],
+      "note": "Saknad dubbel radbrytning i cases blandade ihop funktionens grenar. Matematiska villkor bevaras."
+    },
+    {
+      "id": "1.254",
+      "fields": [
+        "svarFormat",
+        "självrättning",
+        "svarEtiketter",
+        "s",
+        "svarsstruktur",
+        "t",
+        "tolerans",
+        "svarstyp",
+        "rättSvar",
+        "ledtrad"
+      ],
+      "note": "Endast det förbjudna värdet rättades trots att frågan även efterfrågar ekvationens lösning. Två namngivna fält och fullständigt slutsvar."
+    },
+    {
+      "id": "1.255",
+      "fields": [
+        "svarFormat",
+        "självrättning",
+        "svarEtiketter",
+        "s",
+        "svarsstruktur",
+        "t",
+        "tolerans",
+        "svarstyp",
+        "rättSvar",
+        "ledtrad"
+      ],
+      "note": "Endast det förbjudna värdet rättades trots att frågan även efterfrågar ekvationens lösning. Två namngivna fält och fullständigt slutsvar."
+    },
+    {
+      "id": "1.571",
+      "fields": [
+        "svarFormat",
+        "självrättning",
+        "svarEtiketter",
+        "svarsstruktur",
+        "t",
+        "tolerans",
+        "svarstyp",
+        "rättSvar"
+      ],
+      "note": "Sekantens uttryck och gränsvärde behöver två svarsfält; sekantvillkoret h≠0 läggs till."
+    },
+    {
+      "id": "1.573",
+      "fields": [
+        "manuellKomplettering",
+        "t"
+      ],
+      "note": "Bevisdelen ska bedömas av eleven efter det numeriska svaret; ange sekantens definitionsvillkor."
+    },
+    {
+      "id": "1.263",
+      "fields": [
+        "t"
+      ],
+      "note": "Saknad dubbel radbrytning i cases blandade ihop funktionens grenar. Matematiska villkor bevaras."
+    },
+    {
+      "id": "1.272",
+      "fields": [
+        "s",
+        "t",
+        "geogebra",
+        "ledtrad"
+      ],
+      "note": "Felaktiga gränstider 2,34/9,66 rättade till 2.32332697/9.67667303; tidsenhet, radianer och digitalt verktyg tydliga."
+    },
+    {
+      "id": "1.273",
+      "fields": [
+        "s",
+        "t",
+        "ledtrad"
+      ],
+      "note": "Tidsenhet och efterfrågad gränstid definierade; ledtråd matchar algebraisk lösning."
+    },
+    {
+      "id": "1.278",
+      "fields": [
+        "t"
+      ],
+      "note": "Saknad dubbel radbrytning i cases blandade ihop funktionens grenar. Matematiska villkor bevaras."
+    },
+    {
+      "id": "1.279",
+      "fields": [
+        "t"
+      ],
+      "note": "Råa olikhetstecken inuti matematik kunde tolkas som HTML och dölja delar av funktionen."
+    },
+    {
+      "id": "1.580",
+      "fields": [
+        "svarFormat",
+        "svarEtiketter",
+        "poang",
+        "svarsstruktur",
+        "rättSvar",
+        "traningsniva",
+        "niva",
+        "formaga"
+      ],
+      "note": "Både faktorisering och lösningsmängd efterfrågas. Rutin med x²-substitution bedöms C/3, inte A/4."
+    },
+    {
+      "id": "1.284",
+      "fields": [
+        "spelDelar"
+      ],
+      "note": "Två delkort hade bara slutsvar. Varje kort får egen insättning, teckenförklaring och specifik ledtråd."
+    },
+    {
+      "id": "1.435",
+      "fields": [
+        "t",
+        "svarEnhet"
+      ],
+      "note": "Befolkningens enhet och tidsvariabel saknades i frågan."
+    },
+    {
+      "id": "1.582",
+      "fields": [
+        "manuellKomplettering"
+      ],
+      "note": "Hela beviset måste granskas manuellt, även om teleskopsummans värde kan självrättas."
+    },
+    {
+      "id": "2.01",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "2.17",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "2.49",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "2.53",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.349",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.373",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.374",
+      "fields": [
+        "s",
+        "miniräknare",
+        "t"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande. Enhet för temperaturen och sönderhackad klockslagsförklaring rättade."
+    },
+    {
+      "id": "3.375",
+      "fields": [
+        "s",
+        "miniräknare",
+        "t"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande. Saknade måttenheter tillagda; lösningen behandlar inte längre öppna ändpunkter som tillåtna."
+    },
+    {
+      "id": "3.377",
+      "fields": [
+        "s",
+        "miniräknare",
+        "t"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande. Felplacerade axlar/kurva ersatta med skalenlig graf fram till markträffen. Lösningen använder inte längre ett påhittat intervall 0–10."
+    },
+    {
+      "id": "3.390",
+      "fields": [
+        "s",
+        "t"
+      ],
+      "note": "Figurens hörn låg inte på sneda kanten och etikett klipptes. Korrekt punkt på kanten, mått och maxkontroll."
+    },
+    {
+      "id": "3.400",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.414",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.436",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.453",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.456",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.05",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.60",
+      "fields": [
+        "miniräknare",
+        "spelDelar"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.158",
+      "fields": [
+        "miniräknare",
+        "spelDelar"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.179",
+      "fields": [
+        "t"
+      ],
+      "note": "Studsfiguren omritad: varje båge når marken och topphöjderna följer rätt kvot; räknar rätt antal hela studsar. Tidigare korrekta facit bevarade."
+    },
+    {
+      "id": "4.183",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.213",
+      "fields": [
+        "miniräknare",
+        "spelDelar"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.229",
+      "fields": [
+        "t"
+      ],
+      "note": "Studsfiguren omritad: varje båge når marken och topphöjderna följer rätt kvot; räknar rätt antal hela studsar. Tidigare korrekta facit bevarade."
+    },
+    {
+      "id": "4.237",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.241",
+      "fields": [
+        "s",
+        "miniräknare",
+        "geogebra"
+      ],
+      "note": "Grafundersökning får GeoGebra och förklaring av skärningarna, inte bara slutsvar."
+    },
+    {
+      "id": "4.297",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.819",
+      "fields": [
+        "miniräknare",
+        "tolerans",
+        "rättSvar"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande. Fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "3.820",
+      "fields": [
+        "miniräknare",
+        "tolerans",
+        "rättSvar"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande. Fullprecisionsmål och tolerans för två decimaler."
+    },
+    {
+      "id": "3.887",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "3.896",
+      "fields": [
+        "miniräknare"
+      ],
+      "note": "Miniräknare tillåten för numeriska beräkningar; metodval och uppställning prövas fortfarande."
+    },
+    {
+      "id": "4.432",
+      "fields": [
+        "t"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området."
+    },
+    {
+      "id": "4.437",
+      "fields": [
+        "t"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området."
+    },
+    {
+      "id": "4.444",
+      "fields": [
+        "t"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området."
+    },
+    {
+      "id": "4.452",
+      "fields": [
+        "s",
+        "t",
+        "rättSvar",
+        "traningsniva",
+        "ledtrad",
+        "arbetsinsats"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området. Varierad från direkt insättning till baklängesberäkning, jämförelse eller förändring; mer krävande E på träningsnivå 2."
+    },
+    {
+      "id": "4.453",
+      "fields": [
+        "t"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området. Ersatt med rätt triangel i samma skala för x och y."
+    },
+    {
+      "id": "4.454",
+      "fields": [
+        "s",
+        "t",
+        "rättSvar",
+        "traningsniva",
+        "ledtrad",
+        "arbetsinsats"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området. Varierad från direkt insättning till baklängesberäkning, jämförelse eller förändring; mer krävande E på träningsnivå 2."
+    },
+    {
+      "id": "4.455",
+      "fields": [
+        "t"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området. Ersatt med rätt triangel i samma skala för x och y."
+    },
+    {
+      "id": "4.458",
+      "fields": [
+        "s",
+        "t",
+        "rättSvar",
+        "traningsniva",
+        "ledtrad",
+        "arbetsinsats"
+      ],
+      "note": "Orelaterad fyrhörning borttagen: uppgiftens data beskrev inte det ritade området. Varierad från direkt insättning till baklängesberäkning, jämförelse eller förändring; mer krävande E på träningsnivå 2."
+    },
+    {
+      "id": "1.537",
+      "fields": [
+        "traningsniva",
+        "arbetsinsats"
+      ],
+      "note": "Direkt addition av två koefficienter hör till den enklaste nivån, jämför 1.555."
+    },
+    {
+      "id": "1.539",
+      "fields": [
+        "svarFormat",
+        "s",
+        "t",
+        "svarstyp",
+        "rättSvar",
+        "ledtrad",
+        "formaga",
+        "arbetsinsats"
+      ],
+      "note": "Verkligt facitfel: originaluttrycket är odefinierat vid x=2. Begreppsval ersätter det felaktiga numeriska facit 4."
+    },
+    {
+      "id": "1.542",
+      "fields": [
+        "s",
+        "t",
+        "rättSvar",
+        "ledtrad"
+      ],
+      "note": "Varierar metoden på nivå 2: parentes/minustecken i stället för ännu en identisk addition av x-termer."
+    },
+    {
+      "id": "1.556",
+      "fields": [
+        "s",
+        "t",
+        "rättSvar",
+        "ledtrad"
+      ],
+      "note": "Varierar metoden på nivå 2: parentes/minustecken i stället för ännu en identisk addition av x-termer."
+    },
+    {
+      "id": "1.560",
+      "fields": [
+        "traningsniva",
+        "formaga",
+        "arbetsinsats"
+      ],
+      "note": "Direkt identifiering av högsta exponenten hör till nivå 1, jämför 1.471."
+    },
+    {
+      "id": "1.565",
+      "fields": [
+        "s",
+        "t",
+        "ledtrad"
+      ],
+      "note": "Ett dubbelt nollställe är inte två olika nollställen. Fråga och lösning rättas; värdet 3 bevaras."
+    }
+  ],
+  "readQuestionAndAnswerAreas": {
+    "polynom": [
+      "1.01",
+      "1.125",
+      "1.216",
+      "1.284",
+      "1.286",
+      "1.449",
+      "1.463",
+      "1.464",
+      "1.471",
+      "1.531",
+      "1.560",
+      "1.574",
+      "1.575",
+      "1.587",
+      "1.588"
+    ],
+    "faktorisera_polynom": [
+      "1.06",
+      "1.21",
+      "1.36",
+      "1.41",
+      "1.46",
+      "1.51",
+      "1.113",
+      "1.116",
+      "1.155",
+      "1.215",
+      "1.282",
+      "1.580",
+      "1.818",
+      "1.819"
+    ],
+    "algebra_polynom": [
+      "1.16",
+      "1.101",
+      "1.104",
+      "1.107",
+      "1.110",
+      "1.149",
+      "1.281",
+      "1.446",
+      "1.439",
+      "1.443",
+      "1.444",
+      "1.459",
+      "1.528",
+      "1.537",
+      "1.542",
+      "1.555",
+      "1.556",
+      "1.581"
+    ],
+    "rakna_rationella": [
+      "1.18",
+      "1.43",
+      "1.48",
+      "1.53",
+      "1.114",
+      "1.117",
+      "1.135",
+      "1.204",
+      "1.205",
+      "1.211",
+      "1.288",
+      "1.289",
+      "1.291",
+      "1.447",
+      "1.582",
+      "1.824",
+      "1.825"
+    ],
+    "polynomfunktioner": [
+      "1.37",
+      "1.42",
+      "1.47",
+      "1.57",
+      "1.62",
+      "1.67",
+      "1.76",
+      "1.81",
+      "1.82",
+      "1.86",
+      "1.92",
+      "1.134",
+      "1.140",
+      "1.152",
+      "1.171",
+      "1.193",
+      "1.195",
+      "1.197",
+      "1.199",
+      "1.217",
+      "1.219",
+      "1.223",
+      "1.224",
+      "1.235",
+      "1.252",
+      "1.285",
+      "1.458",
+      "1.486",
+      "1.489",
+      "1.493",
+      "1.553",
+      "1.554",
+      "1.583"
+    ],
+    "forkorta_rationella": [
+      "1.03",
+      "1.08",
+      "1.23",
+      "1.28",
+      "1.33",
+      "1.38",
+      "1.93",
+      "1.98",
+      "1.102",
+      "1.105",
+      "1.108",
+      "1.111",
+      "1.144",
+      "1.156",
+      "1.203",
+      "1.208",
+      "1.209",
+      "1.287",
+      "1.294",
+      "1.420",
+      "1.440",
+      "1.442",
+      "1.445",
+      "1.465",
+      "1.467",
+      "1.468",
+      "1.478",
+      "1.502",
+      "1.529",
+      "1.538",
+      "1.539",
+      "1.543",
+      "1.544",
+      "1.561",
+      "1.562",
+      "1.563",
+      "1.577",
+      "1.578",
+      "1.585",
+      "1.822",
+      "1.823"
+    ],
+    "rationella_uttryck": [
+      "1.73",
+      "1.78",
+      "1.201",
+      "1.210",
+      "1.257",
+      "1.290",
+      "1.293",
+      "1.405",
+      "1.406",
+      "1.407",
+      "1.419",
+      "1.424",
+      "1.425",
+      "1.426",
+      "1.427",
+      "1.428",
+      "1.448",
+      "1.466",
+      "1.473",
+      "1.491",
+      "1.501",
+      "1.530",
+      "1.584"
+    ],
+    "rationella_ekvationer": [
+      "1.13",
+      "1.58",
+      "1.63",
+      "1.68",
+      "1.83",
+      "1.88",
+      "1.120",
+      "1.123",
+      "1.126",
+      "1.129",
+      "1.132",
+      "1.138",
+      "1.141",
+      "1.147",
+      "1.150",
+      "1.153",
+      "1.159",
+      "1.202",
+      "1.206",
+      "1.207",
+      "1.212",
+      "1.213",
+      "1.214",
+      "1.254",
+      "1.255",
+      "1.256",
+      "1.258",
+      "1.292",
+      "1.414",
+      "1.415",
+      "1.423",
+      "1.429",
+      "1.450",
+      "1.452",
+      "1.460",
+      "1.480",
+      "1.492",
+      "1.507",
+      "1.508",
+      "1.509",
+      "1.510",
+      "1.532",
+      "1.533",
+      "1.535",
+      "1.536",
+      "1.557",
+      "1.558"
+    ],
+    "polynomekvationer": [
+      "1.11",
+      "1.26",
+      "1.31",
+      "1.56",
+      "1.61",
+      "1.66",
+      "1.71",
+      "1.91",
+      "1.96",
+      "1.119",
+      "1.122",
+      "1.128",
+      "1.131",
+      "1.137",
+      "1.143",
+      "1.146",
+      "1.158",
+      "1.218",
+      "1.220",
+      "1.244",
+      "1.245",
+      "1.246",
+      "1.247",
+      "1.248",
+      "1.283",
+      "1.438",
+      "3.33",
+      "1.441",
+      "1.470",
+      "1.476",
+      "1.526",
+      "1.527",
+      "3.807",
+      "3.808",
+      "1.540",
+      "1.541",
+      "1.564",
+      "1.565"
+    ],
+    "gransvarde": [
+      "1.09",
+      "1.29",
+      "1.34",
+      "1.39",
+      "1.44",
+      "1.94",
+      "1.103",
+      "1.106",
+      "1.109",
+      "1.112",
+      "1.115",
+      "1.136",
+      "1.139",
+      "1.148",
+      "1.154",
+      "1.225",
+      "1.226",
+      "1.227",
+      "1.275",
+      "1.276",
+      "1.277",
+      "1.280",
+      "1.421",
+      "1.422",
+      "1.431",
+      "1.432",
+      "1.433",
+      "1.435",
+      "1.436",
+      "1.437",
+      "3.03",
+      "3.15",
+      "3.27",
+      "3.51",
+      "3.63",
+      "1.454",
+      "1.474",
+      "1.483",
+      "1.488",
+      "1.505",
+      "1.506",
+      "1.513",
+      "1.514",
+      "1.515",
+      "1.516",
+      "1.520",
+      "1.521",
+      "1.524",
+      "1.525",
+      "3.791",
+      "3.803",
+      "3.804",
+      "3.816",
+      "1.547"
+    ],
+    "kontinuitet": [
+      "1.19",
+      "1.24",
+      "1.59",
+      "1.64",
+      "1.69",
+      "1.74",
+      "1.79",
+      "1.84",
+      "1.89",
+      "1.99",
+      "1.118",
+      "1.121",
+      "1.124",
+      "1.127",
+      "1.133",
+      "1.142",
+      "1.145",
+      "1.151",
+      "1.157",
+      "1.160",
+      "1.228",
+      "1.259",
+      "1.260",
+      "1.262",
+      "1.263",
+      "1.278",
+      "1.279",
+      "1.416",
+      "3.09",
+      "3.21",
+      "3.39",
+      "3.57",
+      "3.75",
+      "1.482",
+      "1.484",
+      "1.503",
+      "1.504",
+      "1.517",
+      "1.518",
+      "1.522",
+      "1.523",
+      "3.795",
+      "3.798",
+      "3.799",
+      "3.812",
+      "3.817",
+      "1.820",
+      "1.821"
+    ],
+    "tangent_sekant": [
+      "1.04",
+      "1.14",
+      "1.49",
+      "1.54",
+      "1.130",
+      "1.261",
+      "1.566",
+      "1.567",
+      "1.568",
+      "1.569",
+      "1.570",
+      "1.571",
+      "1.572",
+      "1.573",
+      "1.579",
+      "1.589"
+    ],
+    "funktioner": [
+      "1.02",
+      "1.07",
+      "1.12",
+      "1.17",
+      "1.22",
+      "1.27",
+      "1.32",
+      "1.52",
+      "1.72",
+      "1.77",
+      "1.87",
+      "1.97",
+      "1.161",
+      "1.163",
+      "1.165",
+      "1.167",
+      "1.169",
+      "1.173",
+      "1.175",
+      "1.177",
+      "1.179",
+      "1.181",
+      "1.183",
+      "1.185",
+      "1.187",
+      "1.189",
+      "1.191",
+      "1.221",
+      "1.222",
+      "1.229",
+      "1.230",
+      "1.231",
+      "1.232",
+      "1.233",
+      "1.234",
+      "1.249",
+      "1.250",
+      "1.251",
+      "1.253",
+      "1.269",
+      "1.270",
+      "1.271",
+      "1.272",
+      "1.273",
+      "1.274",
+      "1.430",
+      "1.434",
+      "1.453",
+      "1.457",
+      "1.461",
+      "1.472",
+      "1.477",
+      "1.487",
+      "1.511",
+      "1.512",
+      "1.519",
+      "1.545",
+      "1.546",
+      "1.551",
+      "1.552",
+      "1.559",
+      "1.576",
+      "1.586"
+    ],
+    "absolutbelopp": [
+      "1.05",
+      "1.10",
+      "1.15",
+      "1.20",
+      "1.25",
+      "1.30",
+      "1.35",
+      "1.40",
+      "1.45",
+      "1.50",
+      "1.55",
+      "1.65",
+      "1.70",
+      "1.75",
+      "1.80",
+      "1.85",
+      "1.90",
+      "1.95",
+      "1.100",
+      "1.162",
+      "1.164",
+      "1.166",
+      "1.168",
+      "1.170",
+      "1.172",
+      "1.174",
+      "1.176",
+      "1.178",
+      "1.180",
+      "1.182",
+      "1.184",
+      "1.186",
+      "1.188",
+      "1.190",
+      "1.192",
+      "1.194",
+      "1.196",
+      "1.198",
+      "1.200",
+      "1.236",
+      "1.237",
+      "1.238",
+      "1.239",
+      "1.240",
+      "1.241",
+      "1.242",
+      "1.243",
+      "1.264",
+      "1.265",
+      "1.266",
+      "1.267",
+      "1.268",
+      "1.401",
+      "1.402",
+      "1.403",
+      "1.404",
+      "1.411",
+      "1.412",
+      "1.413",
+      "1.451",
+      "1.462",
+      "1.475",
+      "1.479",
+      "1.481",
+      "1.485",
+      "1.490",
+      "1.534"
+    ],
+    "derivata_a_x": [
+      "2.04",
+      "2.08",
+      "2.28",
+      "2.32",
+      "2.36",
+      "2.40",
+      "2.84",
+      "2.89",
+      "2.94",
+      "2.99",
+      "2.109",
+      "2.154",
+      "2.204",
+      "2.214",
+      "2.219",
+      "2.220",
+      "2.408",
+      "2.409",
+      "2.412",
+      "2.425",
+      "2.503",
+      "2.508",
+      "2.509",
+      "2.510",
+      "2.511",
+      "2.512",
+      "2.540",
+      "2.571",
+      "2.704",
+      "2.705",
+      "2.772",
+      "2.813",
+      "2.824"
+    ],
+    "naturliga_logaritmer": [
+      "2.12",
+      "2.16",
+      "2.44",
+      "2.48",
+      "2.52",
+      "2.114",
+      "2.119",
+      "2.124",
+      "2.129",
+      "2.134",
+      "2.139",
+      "2.144",
+      "2.149",
+      "2.234",
+      "2.413",
+      "2.414",
+      "2.564",
+      "2.543",
+      "2.586",
+      "2.739",
+      "2.751",
+      "2.816",
+      "2.1111",
+      "2.1112"
+    ],
+    "talet_e": [
+      "2.20",
+      "2.56",
+      "2.60",
+      "2.64",
+      "2.80",
+      "2.104",
+      "2.159",
+      "2.169",
+      "2.174",
+      "2.179",
+      "2.224",
+      "2.229",
+      "2.254",
+      "2.410",
+      "2.411",
+      "2.415",
+      "2.421",
+      "2.427",
+      "2.562",
+      "2.541",
+      "2.547",
+      "2.581",
+      "2.597",
+      "2.701",
+      "2.707",
+      "2.737",
+      "2.738",
+      "2.746",
+      "2.747",
+      "2.748",
+      "2.749",
+      "2.752",
+      "2.753",
+      "2.757",
+      "2.758",
+      "2.770",
+      "2.771",
+      "3.1079",
+      "3.1080",
+      "2.815",
+      "2.826"
+    ],
+    "derivata_exponential": [
+      "2.520",
+      "2.526",
+      "2.534",
+      "3.769",
+      "2.709",
+      "2.716",
+      "2.717",
+      "2.729",
+      "2.730",
+      "2.820"
+    ],
+    "deriverbarhet": [
+      "2.278",
+      "3.633",
+      "3.634",
+      "3.635",
+      "3.636",
+      "3.637",
+      "3.638",
+      "3.639",
+      "3.640",
+      "2.638",
+      "2.639",
+      "2.673",
+      "2.678",
+      "3.1143",
+      "3.1149"
+    ],
+    "derivatans_definition": [
+      "2.25",
+      "2.73",
+      "2.800",
+      "2.801",
+      "2.802",
+      "2.803",
+      "2.804",
+      "2.805",
+      "2.806",
+      "2.807",
+      "2.808",
+      "2.809",
+      "2.817"
+    ]
+  },
+  "coverageNote": "Frågor och svar lästa i dessa områden. Detta är inte ett intyg på fullständig matematisk/visuell granskning av varje facit eller delkort. Resten återstår; inga övriga poster markeras som granskade utan fel.",
+  "verification": {
+    "masterTestsPassed": 412,
+    "consumerTestsPassed": 178,
+    "browserAnswerChecks": 46,
+    "browserViews": 140,
+    "newValidatorErrorsOrWarnings": 0,
+    "separateSvgToolSuite": "CLI Chromium timeout in environment; actual app figures tested with Playwright instead."
+  }
+}

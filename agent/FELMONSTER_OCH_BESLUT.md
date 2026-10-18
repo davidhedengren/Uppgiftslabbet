@@ -1136,3 +1136,25 @@ Nivå och verktygsval bevaras efter individuell kontroll.
 Tester: master `tools/ma2-tre-obekanta-2026-10-18.test.js`; konsument
 `tools/ma2-tre-obekanta-2026-10-18.browser.cjs` kontrollerar alla 14 kort
 med korrekta och omkastade svar i riktig mobil-/datorvy (56 kontroller).
+
+## FP57 – Mato1: fullständiga svar, definitionsvillkor och uppgiftstrogna figurer (2026-10-18)
+
+[Mato1, första delomgången](MATO1_GRANSKNING_2026-10-18.md) ändrar 66 uppgifter.
+Förkortning ger inte originaluttrycket ett värde i en förbjuden punkt (1.539).
+När frågan begär både uttryck och definitionsvillkor ska båda få svarsfält
+(1.43/48/53). En mängd förbjudna värden är oordnad även när huvudfältens
+etiketter kräver ordning. Olikheter kräver hela lösningsmängden, inte en
+trasig textrest (1.45). Kontinuitet behövs för slutsatsen att en värdemängd
+fyller hela intervallet mellan minsta och största värdet (1.187).
+
+Studsfigurer ska nå marken mellan varje båge och ha rätt höjdkvot.
+En optimeringsfigur ska motsvara just frågans tillåtna område; en återanvänd
+fyrhörning får inte illustrera en triangel eller en ren insättningsuppgift.
+Öppna intervalls ändpunkter får inte behandlas som tillåtna extrempunkter.
+Tids- och storhetsenheter måste finnas även när modellen ger ett rent tal.
+Miniräknare tillåts när aritmetiken annars skymmer den avsedda metoden;
+blandade delkort kan fortfarande ha skilda behörigheter (4.158 a/b).
+
+Tester: `tools/mato1-granskning-2026-10-18.test.js` och konsumentens
+`tools/mato1-granskning-2026-10-18.browser.cjs`. Hela banken är ännu inte
+färdiggranskad; JSON-loggen skiljer lästa områden från ändrade uppgifter.
