@@ -1,0 +1,104 @@
+{
+  "changes": [
+    {
+      "id": "2.186",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet"
+      ]
+    },
+    {
+      "id": "2.187",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "spelDelar",
+        "svarEnhet"
+      ]
+    },
+    {
+      "id": "2.206",
+      "fields": [
+        "t",
+        "s",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "2.211",
+      "fields": [
+        "t",
+        "s",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "svarEnhet",
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "2.237",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "tolerans",
+        "svarEnhet"
+      ]
+    },
+    {
+      "id": "2.78",
+      "fields": [
+        "t",
+        "rättSvar",
+        "självrättning",
+        "spelIntro",
+        "spelDelar",
+        "svarFormat"
+      ]
+    },
+    {
+      "id": "4.91",
+      "fields": [
+        "t",
+        "s",
+        "rättSvar",
+        "spelDelar",
+        "spelIntro"
+      ]
+    }
+  ],
+  "ma2Changes": [
+    {
+      "id": "2.257",
+      "fields": [
+        "s",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "svarFormat",
+        "svarsstruktur",
+        "svarEtiketter"
+      ]
+    }
+  ],
+  "unchanged": {
+    "ma2": [
+      "1.168",
+      "1.272"
+    ]
+  }
+}

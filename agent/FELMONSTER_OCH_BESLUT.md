@@ -1171,3 +1171,12 @@ kurvan i samma koordinatsystem. 3.1079 varierar en exakt dubblett av 2.753.
 
 Tester: `tools/mato1-derivata-2026-10-18.test.js` och konsumentens motsvarande
 `.browser.cjs`. Tidigare korrekta svar och verktygsbeslut från FP54 bevaras.
+
+## FP59 – enhet, precision och antal efterfrågade svar (2026-10-18)
+
+[Fellogg 21:50](FELRAPPORTER_2026-10-18_2150.md): hastigheter behöver explicit
+målenhet och precision. cm/min kan omvandlas till m/min; cm/s är något annat.
+Exakta taluttryck och begärda närmevärden ska båda fungera. Två asymptoter
+behöver två svarsfält även i fristående delkort. De Moivre-frågor anger
+uttryckligen svarsform. Ma2 1.168 och 1.272 var redan korrekta i master.
+Tester: `tools/felrapporter-2026-10-18-2150.test.js` och konsumentens browser-test.
