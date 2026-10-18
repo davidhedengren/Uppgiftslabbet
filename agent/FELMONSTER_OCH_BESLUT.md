@@ -1122,3 +1122,17 @@ Tester: master `tools/felrapporter-2026-10-17.test.js`; konsument
 `tools/felrapporter-2026-10-17.browser.cjs`. Webbläsaren provar riktiga
 svarsfält och elev-/lärarvisning på mobil och dator, inklusive SVG-kontrast
 och intern formelklippning. Tidigare FP53/FP54-regressioner ska fortsatt passera.
+
+## FP56 – tre namngivna obekanta ska ha egna svarsfält (2026-10-18)
+
+[Ma2 1.168 och 27 jämförelser](MA2_TRE_OBEKANTA_2026-10-18.md).
+Tolv ekvationssystem hade ett uttrycksfält med facit som `(x,y,z)=(4,3,2)`.
+Använd tre ordnade fält med etiketter x/y/z och exakt uttrycksrättning.
+Eleven ska inte behöva gissa en sammansatt koordinatnotation. Facitens värden
+är verifierade mot alla ekvationer och bevaras, även bråken i 1.65.
+1.165/1.269 får också uttrycklig ordning för sina redan namngivna kategorier.
+Nivå och verktygsval bevaras efter individuell kontroll.
+
+Tester: master `tools/ma2-tre-obekanta-2026-10-18.test.js`; konsument
+`tools/ma2-tre-obekanta-2026-10-18.browser.cjs` kontrollerar alla 14 kort
+med korrekta och omkastade svar i riktig mobil-/datorvy (56 kontroller).
