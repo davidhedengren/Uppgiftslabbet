@@ -1,0 +1,148 @@
+{
+  "reviewed": [
+    "2.529",
+    "3.04",
+    "3.10",
+    "3.16",
+    "3.40",
+    "3.46",
+    "3.52",
+    "3.58",
+    "3.64",
+    "3.70",
+    "3.76",
+    "3.82",
+    "3.94",
+    "3.100",
+    "3.106",
+    "3.112",
+    "3.118",
+    "3.122",
+    "3.126",
+    "3.130",
+    "3.134",
+    "3.138",
+    "3.142",
+    "3.146",
+    "3.150"
+  ],
+  "changes": [
+    {
+      "id": "3.04",
+      "fields": [
+        "s",
+        "spelDelar",
+        "ledtrad"
+      ],
+      "note": "Sex delkort med bara slutsvar får egna förklaringar; huvudfacit synkas. Exponentialdelen får korrekt ledtråd."
+    },
+    {
+      "id": "3.10",
+      "fields": [
+        "s",
+        "spelDelar",
+        "ledtrad"
+      ],
+      "note": "Sex delkort med bara slutsvar får egna förklaringar; huvudfacit synkas. Exponentialdelen får korrekt ledtråd."
+    },
+    {
+      "id": "3.16",
+      "fields": [
+        "spelDelar"
+      ],
+      "note": "Exponentialdelens ledtråd pekade felaktigt på potensregeln. Tidigare fullständiga lösningar bevaras."
+    },
+    {
+      "id": "3.40",
+      "fields": [
+        "traningsniva"
+      ],
+      "note": "Flera termvisa operationer bedöms som E/nivå 2, inte områdets allra enklaste nivå 1."
+    },
+    {
+      "id": "3.58",
+      "fields": [
+        "t",
+        "ledtrad"
+      ],
+      "note": "Påståendet kräver samma intervall. Ledtråden ska gälla derivatan av skillnaden, inte potensintegrering."
+    },
+    {
+      "id": "3.64",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Ledtråden avslöjade hela resonemanget; ersatt med en fråga om tangentens lutning."
+    },
+    {
+      "id": "3.76",
+      "fields": [
+        "traningsniva"
+      ],
+      "note": "Flera termvisa operationer bedöms som E/nivå 2, inte områdets allra enklaste nivå 1."
+    },
+    {
+      "id": "3.82",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "Förtydligat intervallvillkor vid x=0 och förklarat potensregeln med negativ exponent."
+    },
+    {
+      "id": "3.130",
+      "fields": [
+        "s",
+        "ledtrad"
+      ],
+      "note": "Visar den nödvändiga utvecklingen före termvis integrering."
+    },
+    {
+      "id": "3.134",
+      "fields": [
+        "s",
+        "ledtrad"
+      ],
+      "note": "Potens med bråkexponent får mellanled och kontroll i stället för bara svar."
+    },
+    {
+      "id": "3.138",
+      "fields": [
+        "s",
+        "ledtrad"
+      ],
+      "note": "Potens med bråkexponent får mellanled och kontroll i stället för bara svar."
+    },
+    {
+      "id": "3.142",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Förtydligat intervallvillkor vid x=0 och förklarat potensregeln med negativ exponent."
+    },
+    {
+      "id": "3.146",
+      "fields": [
+        "s",
+        "ledtrad"
+      ],
+      "note": "Blandat polynom/exponentialuttryck behöver två olika integrationsregler."
+    }
+  ],
+  "unchanged": [
+    "2.529",
+    "3.46",
+    "3.52",
+    "3.70",
+    "3.94",
+    "3.100",
+    "3.106",
+    "3.112",
+    "3.118",
+    "3.122",
+    "3.126",
+    "3.150"
+  ]
+}

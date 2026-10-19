@@ -1210,3 +1210,17 @@ uttrycksrättning: en felaktig integrationskonstant får inte godtas.
 
 Tester: `tools/mato1-primitiva-villkor-2026-10-19.test.js` och konsumentens
 motsvarande `.browser.cjs`. Tidigare korrekta uttryck och verktygsval bevaras.
+
+## FP62 – primitivkontrollen får inte tappa exponentialuttryckets variabel (2026-10-19)
+
+[Mato1 primitiva, del 1](MATO1_PRIMITIVA_DEL1_2026-10-19.md): 25 uppgifter
+granskade, 13 ändrade. Sex delkort får lösningar utöver slutsvaret.
+Potensregel-ledtrådar ska inte användas för exponentialfunktioner.
+
+Nerdamers simplify efter expand kunde felaktigt göra en x-beroende
+exponentialdifferens konstant. Använd expand utan denna förenkling i
+primitiv/primitiva. 3.16 b ska avvisa 3e^(2x)+K och godta 3e^(2x)/2+K.
+Fri konstant krävs fortfarande när alla primitiva funktioner efterfrågas.
+Kontrollera flera baser, negativa exponenter och blandade uttryck.
+
+Skydd: konsumentens `tools/mato1-primitiva-del1-2026-10-19.browser.cjs`.
