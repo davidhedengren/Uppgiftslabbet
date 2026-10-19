@@ -1310,3 +1310,15 @@ för att vara minimum. Visa metod för numeriska skärningar, inte bara svaren.
 ersätter överdriven A/nivå 4. Grafer i lösningarna förklarar skärningar utan
 att avslöja andra delars svar i frågan. Skydd: tools/mato2-extremvarden-2026-10-19.test.js
 samt motsvarande browserkontroll i konsumentrepot.
+
+## FP68 – numeriska extrempunkter ska inte lämnas utan självrättning (2026-10-19)
+
+[Mato2 asymptoter](MATO2_ASYMPTOTER_2026-10-19.md): sex förbättrade uppgifter.
+2.264/267 använder märkta ordnade fält för maximi- och minimipunktens x/y.
+Lagra oavrundade koordinater; testa rotuttryck, tre decimaler och omkastade
+punkter. Asymptotfält kan fråga efter a och g(x) i x=a och y=g(x), så eleven
+inte måste gissa ett särskilt ekvationsformat. Förklara varför punkten är
+maximum/minimum med teckenbyte. Fristående b-facit ska visa sin egen
+funktionsomskrivning. Skiss/resonemang i 2.14/103 förblir lärarbedömt.
+Ledtrådar om polynomdivision passar inte ln x eller produktregeln.
+Skydd: tools/mato2-asymptoter-2026-10-19.test.js och konsumentens browserkontroll.
