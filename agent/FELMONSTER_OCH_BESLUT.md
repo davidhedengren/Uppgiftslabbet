@@ -1281,3 +1281,18 @@ relativ tolerans. Bevara enhetskontroll, exakta heltal, formkrav och uttalad
 precision. CLAUDE.md anger regeln. Noll ersätter inte ett litet icke-nollvärde.
 Skydd: `tools/mato2-derivatavarden-2026-10-19.test.js` samt konsumentens
 motsvarande `.browser.cjs` med positiva och negativa rättningsfall.
+
+## FP66 – fristående förändringskort och facits egna avrundningar (2026-10-19)
+
+[Mato2 hastigheter](MATO2_HASTIGHETER_2026-10-19.md): 2.125, 2.184 och 2.212
+rättade; fem analoger kontrollerade utan ytterligare fel. Testa alltid det
+avrundade svar som lösningen själv visar (28,1 s mot 28,125 s). Ett rent
+numeriskt värde får inte kräva uttrycksformat när frågan inte begär exakt svar.
+
+När b-kortet redan får volymökningen ska det inte också ärva a-kortets radie
+och radiehastighet. Använd delens egen t och en figur med rätt radie. Bedöm
+nivån för den faktiskt visade frågan. Härled mellanled i delens eget facit.
+Dela upp enhetsmetadata per del; dA/ds har enheten längd, ds/dt längd/tid.
+Kontrollera att radiepilar verkligen når kanten och etiketter inte ligger på
+pil/ellips. Skydd: tools/mato2-hastigheter-2026-10-19.test.js samt konsumentens
+motsvarande browserkontroll.
