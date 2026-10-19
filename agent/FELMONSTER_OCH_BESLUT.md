@@ -1238,3 +1238,31 @@ Testa klick i aktiv svarsruta och båda rotfälten, inte bara knappens HTML.
 Bankens korrekta rotpar och tidigare polär-/π-rättning bevaras.
 
 Skydd: konsumentens `tools/felrapporter-2026-10-19-0807.browser.cjs`.
+
+## FP64 – radianenheter, uttalad precision och uppgiftsspecifik grafanalys (2026-10-19)
+
+[Fellogg 20:44, 23 granskade uppgifter och alla kommentarsförslag](FELRAPPORTER_2026-10-19_2044.md).
+Mato2 1.166:s matematiska facit π/6 var korrekt och vanliga π-skrivsätt
+fungerade. Det reproducerade felet gällde utskriven radianenhet. Använd
+`svarEnhet:"rad"` på rätt fält; normalisera radian/radianer till rad med
+den befintliga enhetsrättningen. Ta inte bort enhetssuffix globalt och
+godta inte grader, längdenheter eller rad/s i en radianomvandling.
+Fem analoger rättas. Elevens historiska exakta inmatning är fortfarande okänd.
+
+2.187:s precision är redan rättad i FP59 och ska bevaras. Sex jämförelser
+får uttalad precision, fullprecisionsmål och relevanta enheter. Ett grovt
+avrundat maskinfacit får inte underkänna mer noggranna eller exakta svar.
+2.188 b ska själv härleda radiens ökning innan areans ökning beräknas.
+2.237 får kortare formelrader efter reproducerad mobilklippning, med FP59:s
+matematik och svarskontrakt bevarade.
+
+2.420/421 frågar om x-koordinaten, inte en otydlig ”x-skärning”. Lösningen
+ska använda f(x)=0 och rätt ekvation, inte asymptoternas generiska mall.
+Rita grafer från faktiska funktioner. 2.407/408 förklarar sina egna
+gränsbeteenden; orelaterad polynomdivision ska inte återinföras.
+2.420/421 är E/nivå 2, 2.182 C/nivå 3. GeoGebra innebär fortsatt räknare;
+1.27:s enkla exakta delar och numeriska d-del har olika verktygsbehov.
+
+Skydd: master `tools/felrapporter-2026-10-19-2044.test.js`; konsumentens
+motsvarande `.browser.cjs` provar faktiska svarsfält, π-knapp, mobil/dator
+och båda apparnas figur- och formelvisning.
