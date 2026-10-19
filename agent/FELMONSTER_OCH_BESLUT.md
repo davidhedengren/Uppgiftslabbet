@@ -1224,3 +1224,17 @@ Fri konstant krävs fortfarande när alla primitiva funktioner efterfrågas.
 Kontrollera flera baser, negativa exponenter och blandade uttryck.
 
 Skydd: konsumentens `tools/mato1-primitiva-del1-2026-10-19.browser.cjs`.
+
+## FP63 – kontrolluppgifter ska ge en konkret fråga i träningskortet (2026-10-19)
+
+[Fellogg 08:07](FELRAPPORTER_2026-10-19_0807.md): Mato2 4.179 a/b visade
+redan det vänsterled som svarsrutan väntade sig. Läraruppgiftens kontroll av
+likheten bevaras; träningskortet frågar efter utveckling av högerledet.
+Använd förenklat_polynom så att den ursprungliga produkten inte kan kopieras
+som ett godkänt svar. Lösning och ledtråd ska förklara multiplikationen.
+
+Matematikens symbolrad kompletteras med i och e (rapport 4.144 a).
+Testa klick i aktiv svarsruta och båda rotfälten, inte bara knappens HTML.
+Bankens korrekta rotpar och tidigare polär-/π-rättning bevaras.
+
+Skydd: konsumentens `tools/felrapporter-2026-10-19-0807.browser.cjs`.
