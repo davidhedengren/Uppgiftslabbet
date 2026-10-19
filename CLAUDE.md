@@ -97,3 +97,12 @@ Användarbeslut 2026-10-14: databeräkningar från listor, frekvenstabeller och 
 ## Verktyg: senaste användarbeslutet 2026-10-14
 
 Vid alla analyser, rättningar och nya/omarbetade uppgifter ska miniräknare och GeoGebra kontrolleras. Läs masterrepots `agent/PEDAGOGISKA_REGLER.md`, ”Verktygsval i varje granskning”. Tillåt miniräknare för beräkningar som inte görs snabbt i huvudet, såsom stora multiplikationer och numerisk trigonometri; neka bara när verktyget tar bort det som faktiskt prövas. Vi testar normalt inte huvudräkning eller aritmetiska handalgoritmer. Tillåt GeoGebra för digital grafanalys/ritning, statistik, regression och avancerade numeriska/symboliska beräkningar när digitala verktyg behövs. **GeoGebra innebär alltid också tillåten miniräknare.** Detta ersätter den tidigare miniräknarspärren för Sx-kort. Kontrollera huvuduppgift och delkort separat, och dokumentera beslut/undantag tillsammans med nivå, facit och självrättning.
+
+## Avrundning utan uttalad precision (användarbeslut 2026-10-19)
+
+Om frågan inte anger avrundning ska exakta, mer noggranna och korrekt avrundade
+svar godkännas. Kräv inte ett dolt antal decimaler eller värdesiffror. Jämför
+med facit avrundat till elevens precision, inte med en godtyckligt stor felmarginal.
+Bevara krav på exakt form och angiven precision när frågan faktiskt ställer dem.
+Antal och andra exakta heltal ska fortfarande vara korrekta; fel enhet eller
+felaktigt avrundade tal ska inte godtas. Kontrollera detta i verkliga svarsfält.

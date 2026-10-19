@@ -1266,3 +1266,18 @@ gränsbeteenden; orelaterad polynomdivision ska inte återinföras.
 Skydd: master `tools/felrapporter-2026-10-19-2044.test.js`; konsumentens
 motsvarande `.browser.cjs` provar faktiska svarsfält, π-knapp, mobil/dator
 och båda apparnas figur- och formelvisning.
+
+## FP65 – deriveringen måste visas; ingen dold avrundningsprecision (2026-10-19)
+
+[Mato2 derivatavärden](MATO2_DERIVATAVARDEN_2026-10-19.md): sex granskade och
+rättade uppgifter 2.417–419 och 2.423–425. En metodfras är inte en lösning:
+visa den konkreta derivatan och insättningen. Beräkna med frågans verkliga
+indata, inte ett tänkt exakt värde nära dess decimal. Skriv exponenter med
+LaTeX-klamrar. Tangentfrågor ska namnge variabeln och dess värde.
+
+Användarbeslut: utan angiven precision godtas korrekt avrundade numeriska
+svar på elevens valda precision. Räkna avrundningen, vidga inte bara en
+relativ tolerans. Bevara enhetskontroll, exakta heltal, formkrav och uttalad
+precision. CLAUDE.md anger regeln. Noll ersätter inte ett litet icke-nollvärde.
+Skydd: `tools/mato2-derivatavarden-2026-10-19.test.js` samt konsumentens
+motsvarande `.browser.cjs` med positiva och negativa rättningsfall.
