@@ -1193,3 +1193,20 @@ resonemanget från maximum till minimum med positiv andraderivata.
 
 Tester: `tools/mato1-andraderivata-2026-10-18.test.js` och konsumentens
 motsvarande `.browser.cjs`. Numeriska svar och verktygsbeslut bevarade.
+
+## FP61 – villkor för primitiva funktioner ska vara matematiskt möjliga (2026-10-19)
+
+[Mato1 primitiva med villkor](MATO1_PRIMITIVA_VILLKOR_2026-10-19.md):
+49 uppgifter i området och två följdfynd granskade, 19 ändrade. En kubik
+på hela reella axeln har inget globalt minimum; 3.313 måste ange lokalt
+minimum. Bilens avstånd från en linje kräver känd färdriktning, inte
+bara fart och initialt avstånd (3.898/3.1014/3.1100).
+
+Begärt exakt svar ska inte rättas med tolerans för avrundade decimaler
+(3.1147). Begärda två decimaler använder fullprecisionsmål med halv
+hundradels tolerans (3.1011). Integration med givet funktionsvärde behåller
+uttrycksrättning: en felaktig integrationskonstant får inte godtas.
+3.944 varierar framåträkning med bestämning av startvolymen.
+
+Tester: `tools/mato1-primitiva-villkor-2026-10-19.test.js` och konsumentens
+motsvarande `.browser.cjs`. Tidigare korrekta uttryck och verktygsval bevaras.

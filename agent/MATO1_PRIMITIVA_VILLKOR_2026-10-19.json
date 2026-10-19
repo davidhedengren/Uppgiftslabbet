@@ -1,0 +1,256 @@
+{
+  "reviewed": [
+    "3.22",
+    "3.28",
+    "3.34",
+    "3.81",
+    "3.88",
+    "3.154",
+    "3.158",
+    "3.166",
+    "3.170",
+    "3.186",
+    "3.212",
+    "3.220",
+    "3.224",
+    "3.240",
+    "3.281",
+    "3.310",
+    "3.311",
+    "3.312",
+    "3.313",
+    "3.314",
+    "3.353",
+    "3.354",
+    "3.418",
+    "3.422",
+    "3.423",
+    "3.615",
+    "3.616",
+    "3.619",
+    "3.641",
+    "3.741",
+    "3.800",
+    "3.813",
+    "3.825",
+    "3.832",
+    "3.861",
+    "3.862",
+    "3.874",
+    "3.875",
+    "3.898",
+    "3.899",
+    "3.944",
+    "3.945",
+    "3.1010",
+    "3.1011",
+    "3.1012",
+    "3.1013",
+    "3.1074",
+    "3.1147",
+    "3.1156",
+    "3.1100",
+    "3.1014"
+  ],
+  "changes": [
+    {
+      "id": "3.22",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.28",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.34",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.154",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.166",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.186",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Ledtråden gällde potensintegrering trots att inget funktionsuttryck ges."
+    },
+    {
+      "id": "3.220",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "De båda extremvärdena är lokala; polynomet har inga globala extremvärden."
+    },
+    {
+      "id": "3.310",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.313",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "note": "Globalt minimum finns inte för kubiken. Villkor och lösning preciseras till lokalt minimum."
+    },
+    {
+      "id": "3.354",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Generisk ledtråd ersatt med uppgiftens konkreta villkor."
+    },
+    {
+      "id": "3.422",
+      "fields": [
+        "ledtrad"
+      ],
+      "note": "Ledtrådens obekanta notation F_C ersatt med uppgiftens F."
+    },
+    {
+      "id": "3.898",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "Riktning och tidsenhet saknades. Förklarar skillnaden mellan förflyttning och avstånd från startlinjen."
+    },
+    {
+      "id": "3.899",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "Tidens enhet uttalad och volymberäkningen förklarad."
+    },
+    {
+      "id": "3.944",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ],
+      "note": "Närliggande tankuppgift varierad: bestäm startvolym från slutvolym i stället för ytterligare talbyte i framåträkning."
+    },
+    {
+      "id": "3.1011",
+      "fields": [
+        "rättSvar",
+        "tolerans"
+      ],
+      "note": "Fullprecisionsmål och halv hundradels tolerans i stället för avrundat mål med hel hundradels tolerans."
+    },
+    {
+      "id": "3.1074",
+      "fields": [
+        "s"
+      ],
+      "note": "Lång sammanhängande formel delas i läsbara mellanled. Tidigare variationsbeslut och svar 6 bevaras."
+    },
+    {
+      "id": "3.1147",
+      "fields": [
+        "niva",
+        "poang",
+        "s",
+        "traningsniva",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat"
+      ],
+      "note": "Exakt bråksvar i stället för tolerans som godkände avrundade svar. Kortare lösningsrader. C/4 efter sammansatt men standardmässig tangentanalys."
+    },
+    {
+      "id": "3.1100",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "Följdfynd: samma saknade riktning och tidsenhet som 3.898. Korrekt svar bevarat."
+    },
+    {
+      "id": "3.1014",
+      "fields": [
+        "t",
+        "s"
+      ],
+      "note": "Följdfynd: samma saknade riktning och tidsenhet som 3.898. Korrekt svar bevarat."
+    }
+  ],
+  "unchanged": [
+    "3.81",
+    "3.88",
+    "3.158",
+    "3.170",
+    "3.212",
+    "3.224",
+    "3.240",
+    "3.281",
+    "3.311",
+    "3.312",
+    "3.314",
+    "3.353",
+    "3.418",
+    "3.423",
+    "3.615",
+    "3.616",
+    "3.619",
+    "3.641",
+    "3.741",
+    "3.800",
+    "3.813",
+    "3.825",
+    "3.832",
+    "3.861",
+    "3.862",
+    "3.874",
+    "3.875",
+    "3.945",
+    "3.1010",
+    "3.1012",
+    "3.1013",
+    "3.1156"
+  ],
+  "comparisons": [
+    "3.338",
+    "3.364",
+    "3.719",
+    "3.43",
+    "3.49",
+    "3.93",
+    "3.257",
+    "3.06",
+    "3.12",
+    "3.30",
+    "3.60",
+    "3.66"
+  ]
+}
