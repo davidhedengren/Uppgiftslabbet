@@ -1296,3 +1296,17 @@ Dela upp enhetsmetadata per del; dA/ds har enheten längd, ds/dt längd/tid.
 Kontrollera att radiepilar verkligen når kanten och etiketter inte ligger på
 pil/ellips. Skydd: tools/mato2-hastigheter-2026-10-19.test.js samt konsumentens
 motsvarande browserkontroll.
+
+## FP67 – minimipunkt är ordnad, skärningsrötter är en mängd (2026-10-19)
+
+[Mato2 extremvärden](MATO2_EXTREMVARDEN_2026-10-19.md): fem ändrade och en
+oförändrad. 2.266:s minimipunkt använder märkta x/y-fält och ordnad struktur;
+2.265/266/268:s skärningsrötter tillåter valfri ordning. Säg x-koordinater när
+bara x söks. Lagra fullprecisionsvärden, även vid numerisk rotlösning, och
+kontrollera originalekvationen. En stationär punkt behöver ett teckenargument
+för att vara minimum. Visa metod för numeriska skärningar, inte bara svaren.
+
+2.571/582 erbjuder decimalsvar och måste därför tillåta räknare. C/nivå 3
+ersätter överdriven A/nivå 4. Grafer i lösningarna förklarar skärningar utan
+att avslöja andra delars svar i frågan. Skydd: tools/mato2-extremvarden-2026-10-19.test.js
+samt motsvarande browserkontroll i konsumentrepot.
