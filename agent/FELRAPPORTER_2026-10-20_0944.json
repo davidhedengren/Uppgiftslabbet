@@ -1,0 +1,28 @@
+[
+  {
+    "bank": "matf1",
+    "id": "3.323",
+    "fields": [
+      "spelIntro",
+      "spelDelar"
+    ]
+  },
+  {
+    "bank": "matf1",
+    "id": "3.322",
+    "fields": [
+      "tolerans",
+      "svarFormat",
+      "spelIntro",
+      "spelDelar"
+    ]
+  },
+  {
+    "bank": "mato2",
+    "id": "3.220",
+    "fields": [
+      "t",
+      "s"
+    ]
+  }
+]

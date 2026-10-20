@@ -1340,3 +1340,19 @@ kvadratkompletterade formen ska prövas. Kontrollera det faktiska kortet.
 
 Skydd: master `tools/felrapporter-2026-10-20-0703.test.js` och konsumentens
 motsvarande `.browser.cjs`.
+
+## FP70 – en integral per delkort och synligt exaktkrav (2026-10-20)
+
+[Fellogg 09:44](FELRAPPORTER_2026-10-20_0944.md): Matf1 3.322/323 ska tala
+om en integral på varje fristående kort, även när hela läraruppgiften har
+flera. Kontrollera både spelIntro och delens egen t, som ersätter introt.
+3.322:s uttryckliga exaktkrav samordnas med uttrycksrättning utan gammal
+numerisk tolerans: 1/3 ska fungera, 0,3333 ska underkännas.
+
+Mato2 3.220 hade korrekt facit och redan ett exaktkrav. Flytta den viktiga
+instruktionen före den stora figuren och ange exakt uttryck med π.
+Behåll det korrekta värdet 128π/15. Fri avrundning utan precisionskrav
+ska inte ta bort ett uttryckligt exaktkrav. Ersätt orelaterad malltext med
+konkreta radier, tvärsnittsarea och integrationssteg.
+
+Skydd: konsumentens `tools/felrapporter-2026-10-20-0944.browser.cjs`.
