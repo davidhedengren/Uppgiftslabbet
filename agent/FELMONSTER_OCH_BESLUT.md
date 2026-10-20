@@ -1322,3 +1322,21 @@ maximum/minimum med teckenbyte. Fristående b-facit ska visa sin egen
 funktionsomskrivning. Skiss/resonemang i 2.14/103 förblir lärarbedömt.
 Ledtrådar om polynomdivision passar inte ln x eller produktregeln.
 Skydd: tools/mato2-asymptoter-2026-10-19.test.js och konsumentens browserkontroll.
+
+## FP69 – variation, sannolikhetsavrundning och energienheter (2026-10-20)
+
+[Fellogg 07:03](FELRAPPORTER_2026-10-20_0703.md): sju rapporter åtgärdade
+samt fem energianaloger. Variera faktiskt funktion/intervall när separata
+ID:n visar samma matematiska fråga. Synka huvudtext, delkort, figur och mål.
+3.116 a ger nu 26π/3; 3.77 använder en avtagande parabeltäthet.
+3.450/508 normaliserar nya funktioner på intervall med undre gräns 1.
+
+Energi från kW och timmar kräver kWh även i svarEnhet. Lagra full precision,
+inte facits avrundade visning. Fri korrekt avrundning enligt FP65 gäller
+också sannolikhetsformatet, inklusive andel/procent. Fel närliggande
+avrundning och fel dimension ska avvisas. 3.132 a godtar 0,71 och 71 %.
+Ma2 2.88 b har egen räknarspärr för att begreppet i den givna
+kvadratkompletterade formen ska prövas. Kontrollera det faktiska kortet.
+
+Skydd: master `tools/felrapporter-2026-10-20-0703.test.js` och konsumentens
+motsvarande `.browser.cjs`.

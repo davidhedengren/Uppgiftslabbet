@@ -1,0 +1,136 @@
+[
+  {
+    "bank": "mato2",
+    "id": "3.116",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "spelDelar"
+    ],
+    "note": "Exakt kopia av linjär rotation ersatt med y=x+1 på samma intervall; figur och delens facit/rättSvar samordnas."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.508",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "ledtrad"
+    ],
+    "note": "Exakt dubblett varierad till kvadratisk täthet på intervallet 1 till 2."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.132",
+    "fields": [
+      "s",
+      "rättSvar",
+      "tolerans",
+      "spelDelar",
+      "svarFormat"
+    ],
+    "note": "Ingen dold precision: oavrundade sannolikheter, sannolikhetsformat för andelar/procent, uppgiftsspecifika lösningar."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.450",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "ledtrad"
+    ],
+    "note": "Dubblett med saknat täthetsvillkor ersatt med linjär täthet på intervall som inte börjar vid noll."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.77",
+    "fields": [
+      "geogebra",
+      "t",
+      "s",
+      "rättSvar",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "note": "Återkommande 2x-täthet varierad till avtagande parabel på annat intervall."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.245",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Uttalad tids- och energienhet, fullprecisionsmål och lösning med primitiv funktion."
+  },
+  {
+    "bank": "ma2",
+    "id": "2.88",
+    "fields": [
+      "spelDelar"
+    ],
+    "note": "Miniräknare spärras i symmetrilinjekortet: direkt begreppsavläsning från kvadratkompletterad form."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.69",
+    "fields": [
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Följdfynd: energisvar behöver kWh och oavrundat mål; uttalad tvådecimalsprecision bevaras där den finns."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.84",
+    "fields": [
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Följdfynd: energisvar behöver kWh och oavrundat mål; uttalad tvådecimalsprecision bevaras där den finns."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.125",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Följdfynd: energisvar behöver kWh och oavrundat mål; uttalad tvådecimalsprecision bevaras där den finns."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.137",
+    "fields": [
+      "t",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Följdfynd: energisvar behöver kWh och oavrundat mål; uttalad tvådecimalsprecision bevaras där den finns."
+  },
+  {
+    "bank": "mato2",
+    "id": "3.210",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ],
+    "note": "Följdfynd: energisvar behöver kWh och oavrundat mål; uttalad tvådecimalsprecision bevaras där den finns."
+  }
+]
