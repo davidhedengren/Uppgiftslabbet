@@ -1,0 +1,40 @@
+[
+  {
+    "id": "3.79",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ]
+  },
+  {
+    "id": "3.45",
+    "fields": [
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ]
+  },
+  {
+    "id": "3.44",
+    "fields": [
+      "t",
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ]
+  },
+  {
+    "id": "3.20",
+    "fields": [
+      "s",
+      "rättSvar",
+      "tolerans",
+      "svarEnhet"
+    ]
+  }
+]

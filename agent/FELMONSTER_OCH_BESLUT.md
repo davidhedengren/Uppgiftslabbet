@@ -1356,3 +1356,18 @@ ska inte ta bort ett uttryckligt exaktkrav. Ersätt orelaterad malltext med
 konkreta radier, tvärsnittsarea och integrationssteg.
 
 Skydd: konsumentens `tools/felrapporter-2026-10-20-0944.browser.cjs`.
+
+## FP71 – avrundat maskinfacit och klippt figurtext (2026-10-20)
+
+[Fellogg 12:48](FELRAPPORTER_2026-10-20_1248.md): Matf1 3.44 lagrade 15,1
+med tolerans 0,01 och underkände därför 15,08. Lagra 4,8π i full precision;
+bevara FP65:s jämförelse på elevens valda precision. Samma fel rättas i
+3.20 och 3.45. Ange rätt storhetsenhet i svarEnhet, inte bara i facit.
+
+3.79:s etikett vid x=237 gick utanför SVG:ns högra kant. Flytta texten,
+inte bara viewBox, och mät textens faktiska bounding box i appen.
+Förtydliga om frågan söker negativ förändringshastighet eller positivt
+minskningsbelopp; facit och rättningsmål måste följa samma tolkning.
+
+Skydd: `tools/felrapporter-2026-10-20-1248.test.js` och konsumentens
+motsvarande `.browser.cjs`, inklusive reproduktion från föregående bank.
