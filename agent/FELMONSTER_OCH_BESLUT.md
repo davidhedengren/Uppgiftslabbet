@@ -1371,3 +1371,12 @@ minskningsbelopp; facit och rättningsmål måste följa samma tolkning.
 
 Skydd: `tools/felrapporter-2026-10-20-1248.test.js` och konsumentens
 motsvarande `.browser.cjs`, inklusive reproduktion från föregående bank.
+
+## FP72 – primtecknet ska vara ett upphöjt matematiskt tecken (2026-10-20)
+
+[Fellogg 13:05](FELRAPPORTER_2026-10-20_1305.md): Matf1 3.277 och sju
+analoger använder f^{\prime} respektive A^{\prime} i stället för f\prime
+på baslinjen. Kontrollera renderad KaTeX, inte bara att LaTeX saknar syntaxfel.
+Endast formateringen ändras; tidigare matematik, variation och behörigheter
+bevaras. Skydd: konsumentens `tools/felrapporter-2026-10-20-1305.browser.cjs`
+samt befintliga `tools/felrapporter-2026-10-14.test.js` i master.
