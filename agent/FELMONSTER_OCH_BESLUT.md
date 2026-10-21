@@ -1753,3 +1753,26 @@ Standardavvikelse:
 - Välj data så att antal-inom-intervall-svar inte hamnar nära en intervallgräns.
 
 Skydd: `tools/ma2-pafyllnad-2026-10-21.test.js`.
+
+
+## FP88 – golvimpulsens nivå och elektriska punkters verkliga anslutning
+
+2026-10-21, rapport 21:14: se `FELRAPPORTER_FY1_2026-10-21_2114.md`/JSON
+för alla 12 granskade ID:n, två åtgärdade uppgifter, tio jämförelser utan fel
+och färdiga kommentarsförslag.
+
+5.386a behåller den fullständiga modellen (normalkraft och tyngdkraft), men
+flyttas uttryckligen enligt användarens beslut till träningsnivå 5. B stannar
+på 2. Ändra inte den tidigare riktiga golvimpulsen 9,00 Ns till nettoimpulsen
+8,76 Ns utan att uttryckligen ändra modellen. Fristående b använder sina egna
+9,00 Ns och ger 450 N. Kraftskiss och mellanled förklarar skillnaden; figurens
+riktningar respektive skalning måste framgå. Befintliga tyngdkraftsregressioner
+ska bevaras. Träningsnivå är separat från E/C/A-poäng.
+
+8.150:s C var en lös punkt i figuren. Ny sluten krets förbinder B med C genom
+ett motstånd och C med batteriets minuspol. Rita inte en ideal sladd mellan
+punkter med olika givna potentialer. Att välja A som ny nollnivå ändrar
+referensen i hela kretsen, inte ström eller spänningar. Varje elkort ska ha
+figuren och egna namngivna, ordnade svarsfält vid flera potentialer.
+Skydd: riktat rapporttest, äldre rörelsemängds-/elektricitetstest, konsumentens
+delkortstest och webbläsartest med rapportens tidsstämpel 2114.

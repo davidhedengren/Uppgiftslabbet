@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-21",
+  "report": "21:14",
+  "course": "fy1",
+  "reviewed": [
+    {
+      "id": "5.386",
+      "parts": "a–b"
+    },
+    {
+      "id": "8.150",
+      "parts": "a–d"
+    },
+    {
+      "id": "5.381",
+      "parts": "a–b"
+    },
+    {
+      "id": "5.394",
+      "parts": "hela"
+    },
+    {
+      "id": "5.395",
+      "parts": "a–c"
+    },
+    {
+      "id": "5.396",
+      "parts": "hela"
+    },
+    {
+      "id": "5.397",
+      "parts": "a–c"
+    },
+    {
+      "id": "8.49",
+      "parts": "a–c"
+    },
+    {
+      "id": "8.117",
+      "parts": "a–b"
+    },
+    {
+      "id": "8.144",
+      "parts": "a–c"
+    },
+    {
+      "id": "8.148",
+      "parts": "a–c"
+    },
+    {
+      "id": "8.149",
+      "parts": "a–c"
+    }
+  ],
+  "fixed": [
+    {
+      "course": "fy1",
+      "id": "5.386",
+      "parts": "a–b",
+      "status": "Åtgärdad – nivå och pedagogik",
+      "suggestedComment": "A-delen är flyttad till nivå 5. Facits 9,00 Ns var korrekt: golvets impuls måste även motverka tyngdkraftens impuls nedåt. En kraftskiss och tydligare förklaring är tillagda. B-delen ligger kvar på nivå 2."
+    },
+    {
+      "course": "fy1",
+      "id": "8.150",
+      "parts": "a–d",
+      "status": "Åtgärdad – otydlig figur",
+      "suggestedComment": "Figuren är omritad så att C är tydligt ansluten till batteriets minuspol. Ett motstånd mellan B och C visar hur punkterna hör ihop utan att kortslutas. Med A som ny jordpunkt är potentialerna fortfarande A = 0 V, B = −5 V och C = −12 V."
+    }
+  ],
+  "reviewedNoError": [
+    {
+      "course": "fy1",
+      "id": "5.381",
+      "parts": "a–b",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Vågrät rörelsemängdsändring är −2,835 kg·m/s, korrekt avrundad till −2,84. B-kortets eget −2,84 ger −51,6 N; frågan gäller uttryckligen den sammanlagda vågräta kraften."
+    },
+    {
+      "course": "fy1",
+      "id": "5.394",
+      "parts": "hela",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Tyngdkraftens impuls är uttryckligen försummad under kontakten. De två fallhöjderna ger cirka 1,39 Ns uppåt i den modellen."
+    },
+    {
+      "course": "fy1",
+      "id": "5.395",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Farten är 4,4317 m/s. Golvets kraft inkluderar tyngdkraften: cirka 22,6 N. Sträckan vid den angivna konstanta accelerationen är cirka 0,0222 m."
+    },
+    {
+      "course": "fy1",
+      "id": "5.396",
+      "parts": "hela",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Markens kraft inkluderar tyngdkraften: 0,10·(327,333… + 9,82) ≈ 33,7 N, inte bara nettokraften."
+    },
+    {
+      "course": "fy1",
+      "id": "5.397",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Fallsträcka cirka 29,3 m, stopptid cirka 0,0833 s. Det egna c-kortets 0,0833 s ger segelkraften cirka 2,23·10⁴ N inklusive tyngdkraften."
+    },
+    {
+      "course": "fy1",
+      "id": "8.49",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Kopplingen och batteriets polaritet stämmer: 15 mA, spänningsfall 3 och 6 V, potentialerna A = 9 V och B = 6 V."
+    },
+    {
+      "course": "fy1",
+      "id": "8.117",
+      "parts": "a–b",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Laddare och batteri motverkar varandra: 0,10 A. Effekterna 1,4 W, 1,2 W och 0,20 W balanserar; figuren visar rätt polaritet och ledningar."
+    },
+    {
+      "course": "fy1",
+      "id": "8.144",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Potentialskillnaden är 10 V och strömmen 40 mA från A till B. Med B som ny nollnivå blir potentialerna 10 V och 0 V. Figuren visar ett resistoravsnitt mellan två tydligt markerade punkter."
+    },
+    {
+      "course": "fy1",
+      "id": "8.148",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Seriekretsen ger 10 mA och mellanpunktens potential 6 V. När pluspolen väljs som noll blir samma punkt −3 V; ledningar och jordpunkt framgår."
+    },
+    {
+      "course": "fy1",
+      "id": "8.149",
+      "parts": "a–c",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 40 mA ger spänningsfallen 4 och 8 V. Med jordad mellanpunkt blir polpotentialerna +4 V och −8 V; figuren stämmer med detta."
+    }
+  ],
+  "pending": [],
+  "bankCount": 3907,
+  "bankChanges": [
+    {
+      "id": "8.150",
+      "fields": [
+        "t",
+        "s",
+        "ledtrad",
+        "spelIntro",
+        "spelDelar"
+      ]
+    },
+    {
+      "id": "5.386",
+      "fields": [
+        "t",
+        "s",
+        "formaga",
+        "spelIntro",
+        "spelDelar",
+        "traningsniva"
+      ]
+    }
+  ],
+  "answersChanged": false,
+  "levels": {
+    "5.386": 5,
+    "5.386a": 5,
+    "5.386b": 2
+  },
+  "browser": {
+    "checks": 74,
+    "views": 12,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "svg": {
+    "figures": 8,
+    "ERROR": 0,
+    "WARNING": 0,
+    "INFO": 3,
+    "interpretation": "Tre INFO gäller de nya figurernas avsiktliga vita bakgrundsrektanglar vid viewBox-kanten, inte klippta uppgiftsetiketter. CLI-start av Chrome gav timeout; samma DOM- och geometrifunktioner kördes via Playwright utan ändrade analysregler."
+  },
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "reportStatusSaved": false,
+  "studentCommentsSent": false
+}

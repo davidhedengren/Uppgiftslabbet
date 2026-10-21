@@ -1,0 +1,23 @@
+[
+  {
+    "id": "8.150",
+    "fields": [
+      "t",
+      "s",
+      "ledtrad",
+      "spelIntro",
+      "spelDelar"
+    ]
+  },
+  {
+    "id": "5.386",
+    "fields": [
+      "t",
+      "s",
+      "formaga",
+      "spelIntro",
+      "spelDelar",
+      "traningsniva"
+    ]
+  }
+]
