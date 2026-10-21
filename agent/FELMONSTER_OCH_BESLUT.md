@@ -1557,3 +1557,38 @@ växelspänning används inte i elevinnehållet eller i multimeterfiguren.
 Sladdfärg får inte avgöra rätt eller fel; beskriv uttagen. Den gamla 8.541 om
 växelspänning är ersatt av en uppgift om att byta från strömmätning till
 spänningsmätning. Skydd: sista testet i `tools/fysik1-multimeter-2026-10-21.test.js`.
+
+## FP84 – synlig alternativordning, metodledningar och kraftmodeller
+
+2026-10-21 17:41: se `FELRAPPORTER_2026-10-21_1741.md` och JSON-listan
+med samtliga granskade, ändrade och oförändrade ID:n samt kommentarsförslag.
+
+- Skilj råbankens ordning från elevens visade ordning. Kunskapsgymmets
+  `altOrdna` blandar redan klickbara alternativ och `altLista` håller ordningen
+  stabil under kortet. Uppgiftslabbet använder grundordningen i export.
+  Variera även denna vid konstruktion. Rätt/fel och kommentarer måste följa
+  hela alternativobjektet. Ändra aldrig A/B-beteckningar i en figur enbart
+  genom att flytta bokstäver i facit. Fy1 8.559 har nu även 4000 µA som val.
+- Figurer ska visa uppgiftens situation, inte ge bort metoden. Matf1
+  1.137/1.40/1.73 visar bokstäverna utan upprepningsantal. 1.152 visar
+  likvärdiga platser utan fixerad person. Förklaringen hör hemma i facit.
+- En negativ laddning ger inte ensam en kraftriktning; fältets riktning behövs.
+  Fy2 3.346 visar fält nedåt och räknar med elektrisk kraft uppåt minus tyngd.
+  Återinför inte den gamla modellen med outtalat försumbar tyngdkraft.
+- Kopiera inte "bortse från tyngdkraften på elektroner och protoner" till en
+  svävande oljedroppe. Fy2 3.353/3.354 behöver droppens tyngd i kraftbalansen.
+  Ett fristående kort med ett nytt avrundat mellanresultat måste räknas från
+  just detta värde (FP13), eller ges fullständiga ursprungsdata som nu i
+  3.354 b. En bred tolerans får inte dölja två olika fysikaliska mål.
+- Vanliga tabellkonstanter verifieras med separata beräknade `svarTabell`,
+  inte generell extra tolerans (FP34/FP64). Både fullprecisionssvar och
+  rimliga avrundningar testas genom den faktiska konsumenten.
+- Matf1 4.30/4.153 följer tidigare avgränsning i FP73: extra fördjupning,
+  nivå 5 och `spel:false`. Markera även närliggande resonansuppgifter tydligt.
+  Ämnesplanen omfattar enklare linjära differentialekvationer av första och
+  andra ordningen; kalla inte hela området högskoleinnehåll. Fysikens
+  kondensatorfråga 3.121 har korrekt facit; avsaknad av uttryckligt omnämnande
+  i ämnesplanen räcker inte för att massradera tillämpningsuppgifter.
+
+Skydd: master `tools/felrapporter-2026-10-21-1741.test.js`, tidigare
+multimetertester och konsumentens motsvarande `.browser.cjs`.

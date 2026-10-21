@@ -1,0 +1,598 @@
+{
+  "date": "2026-10-21",
+  "reportTime": "17:41",
+  "reviewed": {
+    "fy1": [
+      "8.530",
+      "8.531",
+      "8.532",
+      "8.533",
+      "8.534",
+      "8.535",
+      "8.536",
+      "8.537",
+      "8.538",
+      "8.539",
+      "8.540",
+      "8.541",
+      "8.542",
+      "8.543",
+      "8.544",
+      "8.545",
+      "8.546",
+      "8.547",
+      "8.548",
+      "8.549",
+      "8.550",
+      "8.551",
+      "8.552",
+      "8.553",
+      "8.554",
+      "8.555",
+      "8.556",
+      "8.557",
+      "8.558",
+      "8.559",
+      "8.560",
+      "8.561",
+      "8.562",
+      "8.563",
+      "8.564",
+      "8.565"
+    ],
+    "fy2": [
+      "3.115",
+      "3.116",
+      "3.117",
+      "3.118",
+      "3.119",
+      "3.120",
+      "3.121",
+      "3.122",
+      "3.337",
+      "3.338",
+      "3.339",
+      "3.340",
+      "3.341",
+      "3.346",
+      "3.353",
+      "3.354"
+    ],
+    "matf1": [
+      "1.20",
+      "1.26",
+      "1.40",
+      "1.73",
+      "1.76",
+      "1.123",
+      "1.137",
+      "1.152",
+      "1.220",
+      "4.30",
+      "4.32",
+      "4.34",
+      "4.81",
+      "4.106",
+      "4.153",
+      "4.386",
+      "4.490"
+    ]
+  },
+  "changed": {
+    "fy1": [
+      {
+        "id": "8.531",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.534",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.537",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.538",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.539",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.541",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.542",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.543",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.545",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.546",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.548",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.549",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.550",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.551",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.555",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.556",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.557",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.559",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.560",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.561",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.562",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.563",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.564",
+        "fields": [
+          "alternativ"
+        ]
+      },
+      {
+        "id": "8.565",
+        "fields": [
+          "alternativ"
+        ]
+      }
+    ],
+    "fy2": [
+      {
+        "id": "3.337",
+        "fields": [
+          "t",
+          "spelIntro",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "3.338",
+        "fields": [
+          "t",
+          "spelIntro",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "3.339",
+        "fields": [
+          "t",
+          "spelIntro",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "3.340",
+        "fields": [
+          "t"
+        ]
+      },
+      {
+        "id": "3.341",
+        "fields": [
+          "niva",
+          "t",
+          "traningsniva"
+        ]
+      },
+      {
+        "id": "3.346",
+        "fields": [
+          "t",
+          "s",
+          "rättSvar",
+          "tolerans",
+          "spelIntro",
+          "spelDelar",
+          "ledtrad",
+          "traningsniva",
+          "svarTabell"
+        ]
+      },
+      {
+        "id": "3.115",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.116",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.117",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.118",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.119",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.120",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.121",
+        "fields": [
+          "t",
+          "s",
+          "tolerans",
+          "ledtrad",
+          "miniräknare",
+          "geogebra",
+          "traningsniva"
+        ]
+      },
+      {
+        "id": "3.122",
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "3.353",
+        "fields": [
+          "t",
+          "spelIntro",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "3.354",
+        "fields": [
+          "t",
+          "s",
+          "rättSvar",
+          "tolerans",
+          "spelIntro",
+          "spelDelar",
+          "svarTabell"
+        ]
+      }
+    ],
+    "matf1": [
+      {
+        "id": "1.26",
+        "fields": [
+          "t",
+          "s"
+        ]
+      },
+      {
+        "id": "1.40",
+        "fields": [
+          "t"
+        ]
+      },
+      {
+        "id": "1.73",
+        "fields": [
+          "t"
+        ]
+      },
+      {
+        "id": "1.137",
+        "fields": [
+          "t"
+        ]
+      },
+      {
+        "id": "1.152",
+        "fields": [
+          "t",
+          "ledtrad"
+        ]
+      },
+      {
+        "id": "4.30",
+        "fields": [
+          "niva",
+          "poang",
+          "t",
+          "s",
+          "geogebra",
+          "traningsniva",
+          "spel"
+        ]
+      },
+      {
+        "id": "4.32",
+        "fields": [
+          "niva",
+          "poang",
+          "t",
+          "geogebra",
+          "traningsniva"
+        ]
+      },
+      {
+        "id": "4.34",
+        "fields": [
+          "t",
+          "geogebra"
+        ]
+      },
+      {
+        "id": "4.153",
+        "fields": [
+          "niva",
+          "poang",
+          "t",
+          "s",
+          "geogebra",
+          "traningsniva",
+          "spel"
+        ]
+      },
+      {
+        "id": "4.490",
+        "fields": [
+          "geogebra",
+          "t"
+        ]
+      }
+    ]
+  },
+  "reviewedNoChange": {
+    "fy1": [
+      "8.530",
+      "8.532",
+      "8.533",
+      "8.535",
+      "8.536",
+      "8.540",
+      "8.544",
+      "8.547",
+      "8.552",
+      "8.553",
+      "8.554",
+      "8.558"
+    ],
+    "fy2": [],
+    "matf1": [
+      "1.20",
+      "1.76",
+      "1.123",
+      "1.220",
+      "4.81",
+      "4.106",
+      "4.386"
+    ]
+  },
+  "reports": [
+    {
+      "course": "fy1",
+      "id": "8.559",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "4000 µA finns nu som svarsalternativ. V är fortfarande rätt när batteriets spänning ska mätas. Grundordningen i multimeterområdet är varierad; Kunskapsgymmet blandar dessutom de klickbara alternativen."
+    },
+    {
+      "course": "matf1",
+      "id": "1.152",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Figuren visar nu sex likvärdiga platser utan markeringen ”en person fixeras”. Metoden förklaras i facit. Svaret är fortfarande 120."
+    },
+    {
+      "course": "matf1",
+      "id": "1.137",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Antalsförklaringarna är borttagna från bilden. Eleven får själv räkna de upprepade bokstäverna. Svaret är fortfarande 60."
+    },
+    {
+      "course": "fy2",
+      "id": "3.346 b",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Fältet är nu uttryckligen riktat nedåt och visas i en figur. Den negativa droppens elektriska kraft verkar uppåt, medan tyngdkraften verkar nedåt. Med båda krafterna blir vinkeln cirka 4,53° uppåt. Båda delkorten har fullständiga uträkningar."
+    },
+    {
+      "course": "fy2",
+      "id": "3.354 b",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Den irrelevanta texten om elektroner och protoner är borttagen. Del b innehåller alla uppgifter som behövs och facit använder samma data som frågan. Spänningen blir cirka 118 V; droppens tyngdkraft ingår i beräkningen."
+    },
+    {
+      "course": "fy2",
+      "id": "3.121",
+      "outcome": "Facit korrekt; formalia förbättrad; kursfrågan kommenterad",
+      "suggestedComment": "Facit 13,536 mJ är korrekt. Svarsenheten och lösningen är förtydligade. Kondensatorer nämns inte uttryckligen i Skolverkets aktuella centrala innehåll för fysik nivå 2, men elektriska fält och tekniska tillämpningar ingår. Uppgiften har därför inte tagits bort som ett konstaterat kursfel."
+    },
+    {
+      "course": "matf1",
+      "id": "4.30",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Uppgiften är nu märkt som extra fördjupning, nivå 5, och väljs inte i Kunskapsgymmets ordinarie träning. Den finns kvar i Uppgiftslabbet. Det matematiska facit var korrekt."
+    },
+    {
+      "course": "matf1",
+      "id": "4.153",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Uppgiften är nu uttryckligen märkt som extra fördjupning, nivå 5, och spärrad från ordinarie elevträning. Den var redan utan självrättning. Facit är matematiskt korrekt och har fått en tydligare förklaring."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://api.skolverket.se/syllabus/v1/subjects/FYSK",
+      "readDate": "2026-10-21",
+      "subject": "Fysik",
+      "version": 2,
+      "startDate": "2026-02-01",
+      "content": [
+        {
+          "code": "FYSK2000X",
+          "name": "Nivå 2",
+          "centralContent": "<p>Undervisningen i ämnet fysik på nivå 2 ska behandla följande centrala innehåll:</p><p><em>Krafter och rörelse</em></p><ul><li>Harmonisk svängning och centralrörelse samt tvådimensionell rörelse i gravitationsfält och i elektriska fält.</li><li>Elektriska laddningars rörelse i magnetiska och elektriska fält.</li><li>Vågrörelser och deras utbredning samt brytning, diffraktion och interferens. Stående vågor och resonans. Tillämpningar inom akustik.</li><li>Einsteins beskrivning av rörelse och energi vid höga hastigheter.</li></ul><p><em>Energi, energiresurser och elektromagnetism</em></p><ul><li>Elektriska och magnetiska fält samt samband mellan dessa. Induktion samt tillämpningar av växelström i generatorer och transformatorer.</li><li>Våg- och partikelbeskrivning av elektromagnetisk strålning och materia. Fotoelektrisk effekt, fotonbegreppet och våg-partikeldualism.</li><li>Temperaturstrålning och strålningsbalans, däribland jordens strålningsbalans.</li><li>Fysikaliska principer bakom tekniska tillämpningar, till exempel inom kommunikations- och medicinteknik. Elektromagnetiska fält i omgivningen.</li></ul><p><em>Universum, materien och strålning</em></p><ul><li>Huvuddragen i universums utveckling och struktur, till exempel stjärnbildning och exoplaneter.</li><li>Metoder för undersökning av universum. Elektromagnetisk strålning från stjärnor och interstellära rymden.</li><li>Atomers elektronstruktur samt absorptions- och emissionsspektra.</li></ul><p><em>Fysiken i omvärlden</em></p><ul><li>Fysikens betydelse för vetenskap, individ och samhälle med exempel från historiska och aktuella händelser.</li><li>Frågor om etik och hållbar utveckling med koppling till fysik.</li></ul><p><em>Fysikens arbetsmetoder</em></p><ul><li>Laborationer och experiment. Insamling av data från observationer, mätningar och simuleringar. Formulering av frågeställningar, samt planering, riskbedömning och utförande av systematiska undersökningar. Bearbetning av data, värdering av metod och resultat samt redovisning med olika uttrycksformer.</li><li>Beräkningar, regressionsanalys och analys av grafer. Storleksuppskattningar, enhetsanalys, mätnoggrannhet och felberäkningar.</li><li>Fysikaliska och matematiska modeller som beskrivning av verkligheten. Modellers och teoriers giltighet och det experimentella arbetes betydelse för deras utveckling över tid.</li><li>Granskning av information och argumentation som rör fysik. Skillnader mellan vetenskapliga och icke-vetenskapliga påståenden.</li></ul>"
+        }
+      ]
+    },
+    {
+      "url": "https://api.skolverket.se/syllabus/v1/subjects/MATF",
+      "readDate": "2026-10-21",
+      "subject": "Matematik – fördjupning",
+      "version": 1,
+      "startDate": "2025-07-01",
+      "content": [
+        {
+          "code": "MATF1000X",
+          "name": "Nivå 1",
+          "centralContent": "<p>Undervisningen i ämnet matematik – fördjupning på nivå 1 ska behandla följande centrala innehåll:</p> <p><em>Aritmetik, algebra och funktioner</em></p> <ul> <li>Begreppet differentialekvation och exempel på tillämpningar. Verifiering av lösningar till differentialekvationer.</li> <li>Strategier för att ställa upp och tolka differentialekvationer. Digitala metoder för att lösa differentialekvationer.</li> <li>Metoder för att lösa enklare linjära differentialekvationer av första och andra ordningen för hand.</li> </ul> <p><em>Logik och diskret matematik</em></p> <ul> <li>Bevismetoder, däribland motsägelsebevis och induktionsbevis.</li> <li>Representation av tal i olika talbaser.</li> <li>Kongruens hos hela tal och metoder för kongruensräkning.</li> <li>Begreppen permutation och kombination. Motivering och hantering av metoder för att bestämma antal permutationer och kombinationer.</li> <li>Begreppet rekursion och rekursiva talföljder.</li> <li>Begreppet mängd. Notationer i mängdlära och hantering av operationer på mängder.</li> </ul> <p><em>Digitala verktyg</em></p> <ul> <li>Användning av digitala verktyg, även symbolhanterande, för att effektivisera beräkningar och komplettera metoder, till exempel vid ekvationslösning, derivering, integrering hantering av algebraiska uttryck och problemlösning.</li> <li>Användning av programmering som verktyg vid problemlösning, databearbetning eller tillämpning av numeriska metoder.</li> </ul> <p><em>Problemlösning och tillämpningsområden</em></p> <ul> <li>Problemlösning med särskild utgångspunkt i utbildningens karaktär och samhällsliv.</li> <li>Omfångsrika problemsituationer som är relevanta för utbildningens karaktär, däribland problem som fördjupar kunskaper om integraler och derivata.</li> <li>Tillämpning och formulering av matematiska modeller i realistiska situationer. Utvärdering av matematiska modellers egenskaper och begränsningar.</li> <li>Orientering om något ur matematikens historia, till exempel hur ett matematiskt begrepp utvecklats, matematikens roll i något historiskt skeende, en betydande person inom matematik eller ett historiskt matematiskt problem.</li> </ul>"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "before": {
+      "ERROR": 1593,
+      "WARNING": 227,
+      "INFO": 1453
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": [],
+    "katexExpressionsChecked": 239,
+    "katexErrors": 0,
+    "differentialEquationResiduals": {
+      "4.30": "0",
+      "4.153": "0"
+    }
+  },
+  "browser": {
+    "answerChecks": 90,
+    "views": 22,
+    "widths": [
+      390,
+      1280
+    ],
+    "javascriptErrors": 0,
+    "katexErrors": 0,
+    "pageOverflow": 0,
+    "allFiveAlternativePositionsReached": true
+  },
+  "databaseUpdated": false
+}
