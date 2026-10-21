@@ -1719,3 +1719,18 @@ Vid positiv effekt från en vinsch längs rörelsen ska kraft och fart peka
 åt samma håll (5.627). Kontrollera visuellt och håll regression för spetsen.
 Skydd: effektvariationstestet, utökat äldre effekttest och konsumentens
 kompletteringsprov med argument `effekt`.
+
+
+### FP87, komplettering – ström, tabellintervall och korta signaler
+
+Sex nya 8.574–8.579: ström 31 → 37 uppgifter, 4 → 10 figurer.
+Se `FYSIK1_RUTINVARIATION_STROM_2026-10-21.md`/JSON för alla nya,
+alla sex granskade jämförelse-ID:n och färdiga kommentarsförslag.
+
+För sammanlagd laddning ska ett valt intervall använda skillnader i både
+laddning och tid (8.575). Vid korta signaler kräver medelström hela
+periodens tid, även den strömlösa delen (8.578). Vid förgrening måste
+pilar och beräkning ha samma in-/utströmmar. Diagram för konstant ström
+ska särskilja rak Q-t-linje från böjda eller knäckta grafer (8.579).
+Axlar och skala måste räcka för den avläsning som efterfrågas.
+Skydd: strömvariationstestet och konsumentens kompletteringsprov `strom`.

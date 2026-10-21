@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-21",
+  "area": "strom",
+  "scope": "Ny rutinvariation; sex befintliga numeriska jämförelser samt deras facit/verktyg. Ingen fullständig ny granskning av de äldre 31.",
+  "before": 31,
+  "after": 37,
+  "figuresBefore": 4,
+  "figuresAfter": 10,
+  "reviewedExisting": [
+    "8.26",
+    "8.191",
+    "8.197",
+    "8.377",
+    "8.378",
+    "8.379"
+  ],
+  "changedExisting": [],
+  "reviewedNoError": [
+    {
+      "id": "8.26",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 18 mC på 4,0 s ger 4,5 mA. Prefixomvandlingen är korrekt i facit."
+    },
+    {
+      "id": "8.191",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 7,5 C på 3,2 s ger 2,34375 A; facit visar också rimliga avrundningar."
+    },
+    {
+      "id": "8.197",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 0,90 A under 150 s ger 135 C."
+    },
+    {
+      "id": "8.377",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 0,50 A under 60 s ger 30 C."
+    },
+    {
+      "id": "8.378",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 2,1 mC på 0,75 ms ger 2,8 A eftersom prefixen tar ut varandra."
+    },
+    {
+      "id": "8.379",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 900 C vid 2,5 A kräver 360 s, alltså 6 minuter."
+    }
+  ],
+  "new": [
+    {
+      "id": "8.574",
+      "level": 1,
+      "note": "18 C på 6 s ger 3 A ur ett laddningsdiagram. Nivå 1."
+    },
+    {
+      "id": "8.575",
+      "level": 2,
+      "note": "Skillnaderna (7−1) C och (5−2) s ger 2 A i tabellintervallet. Nivå 2."
+    },
+    {
+      "id": "8.576",
+      "level": 2,
+      "note": "Två strömnivåer ger 0,40·10 + 0,10·20 = 6 C. Nivå 2."
+    },
+    {
+      "id": "8.577",
+      "level": 1,
+      "note": "I en förgrening ger 1,20 − 0,45 = 0,75 A i nedre ledningen. Nivå 1."
+    },
+    {
+      "id": "8.578",
+      "level": 2,
+      "note": "En kort signal ger 0,12 C över 2,0 s, alltså 60 mA i medelström. Nivå 2."
+    },
+    {
+      "id": "8.579",
+      "level": 2,
+      "note": "Diagram B har samma Q-t-lutning hela tiden och visar konstant ström. Nivå 2."
+    }
+  ],
+  "browser": {
+    "batch": "strom",
+    "ids": [
+      "8.574",
+      "8.575",
+      "8.576",
+      "8.577",
+      "8.578",
+      "8.579"
+    ],
+    "checks": 68,
+    "views": 12,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "reportsUpdated": false
+}
