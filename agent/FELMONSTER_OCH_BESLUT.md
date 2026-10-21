@@ -1592,3 +1592,30 @@ med samtliga granskade, ändrade och oförändrade ID:n samt kommentarsförslag.
 
 Skydd: master `tools/felrapporter-2026-10-21-1741.test.js`, tidigare
 multimetertester och konsumentens motsvarande `.browser.cjs`.
+
+### FP82/FP84, fortsättning: rimliga felkopplingar (2026-10-21 18:13)
+
+Alla 36 multimeterkort granskade; se
+`MULTIMETER_INKOPPLING_2026-10-21_1813.md` och JSON-listan. Nya beslut:
+
+- Frågan om **hur** mätaren ska kopplas ska inte redan säga att kretsen måste
+  brytas. Blanda serie/parallellt och rätt/fel komponent eller gren i alternativen.
+  Låt även rätt uttag och rätt område förekomma med fel inkoppling, exempelvis
+  i 8.548/8.564. Felalternativ får inte alltid ha flera uppenbara fel samtidigt.
+- Hela strömmen kan mätas efter att grenarna gått ihop, inte bara före
+  förgreningen. 8.553 visar detta. En mätning över en annan parallellgren kan
+  ge samma spänning och får inte automatiskt märkas fel.
+- Variera själva schemat: lampornas placering, gemensamt motstånd före grenar,
+  antal grenar och mätpunkt på återledningen. Flytta med etiketter, alternativ
+  och facit. Ingen etikett ska ligga på en ledning. 8.543 behåller sitt innehåll.
+- 8.554 har fyra bilder (A/V i serie/parallellt), med Bild B fortsatt rätt.
+  Bildbokstaven ska följa bilden även när knappordningen blandas.
+- 8.542/8.550 är nu nivå 2 efter omarbetning; 8.539 sänks till 2 och 8.548
+  till 3. Flera raka val är inte automatiskt nivå 4.
+- 10 A kan fungera för mindre strömmar med sämre upplösning; undvik absoluta
+  påståenden att det endast går över 400 mA. OL på 4000 µA ger bara en undre
+  gräns. 8.540 anger därför även ström under 100 mA när 400 mA ska väljas.
+
+Skydd: `tools/multimeter-inkoppling-2026-10-21.test.js`, uppdaterade
+`tools/fysik1-multimeter-2026-10-21.test.js` och konsumentens motsvarande
+browsertest (alla kort och varje felalternativ på mobil/dator).

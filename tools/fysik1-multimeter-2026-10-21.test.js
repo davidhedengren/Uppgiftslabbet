@@ -44,10 +44,10 @@ test('Mätområden: minsta område som räcker, OL betyder för litet område',(
 });
 
 test('Inkoppling: amperemeter i serie, voltmeter parallellt',()=>{
- assert.match(ratta('8.542')[0],/Bryt kretsen/);
+ assert.match(ratta('8.542')[0],/I serie med L1: bryt ledningen vid Q/);
  assert.deepEqual(ratta('8.543'),['Mellan A och B.']);
- assert.deepEqual(ratta('8.544'),['B och C']);
- assert.deepEqual(ratta('8.545'),['Vid R']);
+ assert.deepEqual(ratta('8.544'),['Parallellt med L2: mellan B och C.']);
+ assert.deepEqual(ratta('8.545'),['I serie med L2: bryt ledningen vid R.']);
  assert.match(ratta('8.546')[0],/säkring/);
  assert.match(ratta('8.547')[0],/Lampan lyser inte/);
  assert.match(ratta('8.548')[0],/10A.*10 A.*vid Q/);
@@ -70,7 +70,7 @@ test('Förslag B (8.550–8.565) och mindre multimeterfigurer',()=>{
   assert.ok(!/µA mA \/ V/.test(JSON.stringify(t)),id);
   for(const m of t.t.matchAll(/max-width:(\d+)px/g))assert.ok(Number(m[1])<=440,id);
  }
- assert.deepEqual(ratta('8.550'),['B och C']);assert.deepEqual(ratta('8.551'),['A och C']);
+ assert.deepEqual(ratta('8.550'),['Parallellt med R₂: mellan B och C.']);assert.deepEqual(ratta('8.551'),['Parallellt med båda motstånden: mellan A och C.']);
  assert.deepEqual(ratta('8.558'),['COM och 10A']);           // 0,65 A > 400 mA
  assert.deepEqual(ratta('8.560'),['4000 µA']);               // 250 µA
  assert.deepEqual(ratta('8.561'),['0 V']);

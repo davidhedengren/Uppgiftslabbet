@@ -1,0 +1,532 @@
+{
+  "reportTime": "2026-10-21 18:13",
+  "scope": "Manuell granskning av alla 36 multimeteruppgifter, med tyngdpunkt på inkoppling, alternativ, figurer och nivå. Övriga rapporter hänvisas till verifierad leverans 17:41.",
+  "reviewed": [
+    {
+      "course": "fy1",
+      "id": "8.530",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Facit skiljer på vad 10A-uttaget är avsett för och ett felaktigt absolut krav på ström över 400 mA."
+    },
+    {
+      "course": "fy1",
+      "id": "8.531",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "COM är gemensamt uttag för samtliga mätningar."
+    },
+    {
+      "course": "fy1",
+      "id": "8.532",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Facit säger konsekvent att 10 A fungerar för 150 mA men ger grövre upplösning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.533",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "2 A kräver COM/10A; 400 mA-uttaget är för litet."
+    },
+    {
+      "course": "fy1",
+      "id": "8.534",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Vredet är på V men sladden måste flyttas från 10A till det högra uttaget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.535",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Okänd ström som kan vara flera ampere mäts först med största strömområdet och motsvarande uttag."
+    },
+    {
+      "course": "fy1",
+      "id": "8.536",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Spänning mäts i V-läget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.537",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Ett frånkopplat motstånd mäts i Ω-läget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.538",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "50 mA ryms inte i 4000 µA=4 mA; de givna uttagen hör till 400 mA-läget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.539",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Nivå 3 till 2: 1,5 mA = 1500 µA och val av minsta tillräckliga mätområde, jämför 8.560."
+    },
+    {
+      "course": "fy1",
+      "id": "8.540",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "En övre strömgräns, under 100 mA, gör att 400 mA är ett säkert tillräckligt nästa mätområde. OL på 4000 µA ger ensamt ingen övre gräns."
+    },
+    {
+      "course": "fy1",
+      "id": "8.541",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Från 10A/10 A till spänning behövs både nytt uttag och vredläge V."
+    },
+    {
+      "course": "fy1",
+      "id": "8.542",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Ny tvågrenskoppling och val mellan serie/parallellt samt L1/L2. Frågan ger inte längre metoden. Nivå 1 till 2."
+    },
+    {
+      "course": "fy1",
+      "id": "8.543",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Innehållet och den goda kretsfrågan behållna; endast placeringen i listan ändrad vid balansering."
+    },
+    {
+      "course": "fy1",
+      "id": "8.544",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Ny figur med L2 på högra sidan; alternativ blandar serie/parallellt och L1/L2. L2-etiketten ligger bredvid ledningen. Nivå 2 behålls."
+    },
+    {
+      "course": "fy1",
+      "id": "8.545",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "L2 finns till vänster och L1 till höger. Både fel seriegren och fel parallellkopplingar måste kunna skiljas från rätt inkoppling vid R."
+    },
+    {
+      "course": "fy1",
+      "id": "8.546",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Frågan gäller följden av en redan angiven felkoppling; att säga parallellt här avslöjar inte efterfrågad konsekvens."
+    },
+    {
+      "course": "fy1",
+      "id": "8.547",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Frågan gäller följden av en redan angiven voltmeter i serie. Hög resistans ger liten ström, släckt lampa och nästan hela spänningen över voltmetern."
+    },
+    {
+      "course": "fy1",
+      "id": "8.548",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Ett felalternativ har nu rätt 10A-uttag och 10 A-läge men fel parallellkoppling. Nivå 4 till 3: flera direkta val, inte avancerad problemlösning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.549",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Resistansmätning kräver spänningslös krets och isolerad komponent; alternativen prövar andra fel än strömmätningens serieplacering."
+    },
+    {
+      "course": "fy1",
+      "id": "8.550",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Felalternativen omfattar serieplacering, spänningen över båda motstånden och två närliggande punkter på samma ledning. Nivå 1 till 2."
+    },
+    {
+      "course": "fy1",
+      "id": "8.551",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Eleven måste välja både parallellkoppling och hela seriekombinationen A–C. Inget råd om att bryta kretsen ges i frågan."
+    },
+    {
+      "course": "fy1",
+      "id": "8.552",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Ny blandad krets: R0 gemensamt före R1/R2. Fel serieplacering vid P mäter summan, inte bara strömmen genom R2."
+    },
+    {
+      "course": "fy1",
+      "id": "8.553",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Ny krets med tre parallella grenar. Rätt seriepunkt P ligger efter att grenarna gått ihop; alternativet parallellt över batteriet är fel."
+    },
+    {
+      "course": "fy1",
+      "id": "8.554",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Fyra bildalternativ: amperemeter serie/parallellt och voltmeter serie/parallellt. Bild B är fortsatt rätt. Nivå 1 behålls som grundläggande igenkänning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.555",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "COM + högra uttaget är rätt för spänning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.556",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Med COM anslutet väljs högra uttaget för spänning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.557",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "85 mA med 400 mA-läge använder COM + högra uttaget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.558",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "0,65 A = 650 mA överstiger 400 mA och kräver 10A-uttaget."
+    },
+    {
+      "course": "fy1",
+      "id": "8.559",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "4000 µA-alternativet är redan tillagt i leveransen 17:41; V är rätt vid batteriets spänningsmätning."
+    },
+    {
+      "course": "fy1",
+      "id": "8.560",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "250 µA ryms i 4000 µA, det minsta lämpliga området."
+    },
+    {
+      "course": "fy1",
+      "id": "8.561",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "B och F är samma elektriska nod, så voltmetern visar 0 V."
+    },
+    {
+      "course": "fy1",
+      "id": "8.562",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Intervallet upp till 1,5 A kräver 10 A som startområde."
+    },
+    {
+      "course": "fy1",
+      "id": "8.563",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "650 mA kräver ändring av både uttag till 10A och vred till 10 A."
+    },
+    {
+      "course": "fy1",
+      "id": "8.564",
+      "outcome": "Innehåll/nivå ändrat",
+      "reason": "Rätt 400 mA-inställning finns även med fel parallellkoppling. Ett för litet 4000 µA-område är ett annat alternativ. I=6/300=20 mA."
+    },
+    {
+      "course": "fy1",
+      "id": "8.565",
+      "outcome": "Granskad – inget fel i innehållet",
+      "reason": "Omvända mätspetsar ändrar spänningens tecken; uttag och V-läge behålls."
+    }
+  ],
+  "changed": [
+    {
+      "id": "8.530",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "8.532",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "id": "8.539",
+      "fields": [
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "8.540",
+      "fields": [
+        "t",
+        "s"
+      ]
+    },
+    {
+      "id": "8.542",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "traningsniva",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.543",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.544",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.545",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.548",
+      "fields": [
+        "s",
+        "alternativ",
+        "traningsniva"
+      ]
+    },
+    {
+      "id": "8.550",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "traningsniva",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.551",
+      "fields": [
+        "t",
+        "s",
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.552",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.553",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.554",
+      "fields": [
+        "t",
+        "s",
+        "alternativ",
+        "ledtrad"
+      ]
+    },
+    {
+      "id": "8.555",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.556",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.557",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.558",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.560",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.561",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.562",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.563",
+      "fields": [
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.564",
+      "fields": [
+        "s",
+        "alternativ"
+      ]
+    },
+    {
+      "id": "8.565",
+      "fields": [
+        "alternativ"
+      ]
+    }
+  ],
+  "contentOrLevelChanged": [
+    "8.530",
+    "8.532",
+    "8.539",
+    "8.540",
+    "8.542",
+    "8.544",
+    "8.545",
+    "8.548",
+    "8.550",
+    "8.551",
+    "8.552",
+    "8.553",
+    "8.554",
+    "8.564"
+  ],
+  "orderOnly": [
+    "8.543",
+    "8.555",
+    "8.556",
+    "8.557",
+    "8.558",
+    "8.560",
+    "8.561",
+    "8.562",
+    "8.563",
+    "8.565"
+  ],
+  "unchanged": [
+    "8.531",
+    "8.533",
+    "8.534",
+    "8.535",
+    "8.536",
+    "8.537",
+    "8.538",
+    "8.541",
+    "8.546",
+    "8.547",
+    "8.549",
+    "8.559"
+  ],
+  "reports": [
+    {
+      "course": "fy1",
+      "id": "8.543",
+      "outcome": "Granskad – inget fel i innehållet",
+      "suggestedComment": "Tack! Uppgiften behålls som förebild. Liknande strömfrågor har omarbetats så att eleven behöver välja både rätt inkoppling och rätt gren."
+    },
+    {
+      "course": "fy1",
+      "id": "8.544",
+      "outcome": "Åtgärdad",
+      "suggestedComment": "Frågan har ett omritat schema och fyra alternativ som blandar serie- och parallellkoppling med val av L1/L2. Rätt är parallellt med L2 mellan B och C. Nivå 2 behålls efter omarbetningen."
+    },
+    {
+      "course": "fy1",
+      "id": "8.559",
+      "outcome": "Redan åtgärdad 17:41",
+      "suggestedComment": "4000 µA finns som alternativ. V är rätt för spänning. Grundordningen är varierad och Kunskapsgymmet blandar de klickbara alternativen."
+    },
+    {
+      "course": "matf1",
+      "id": "1.152",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Figuren visar nu sex likvärdiga platser utan markeringen ”en person fixeras”. Metoden förklaras i facit. Svaret är fortfarande 120."
+    },
+    {
+      "course": "matf1",
+      "id": "1.137",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Antalsförklaringarna är borttagna från bilden. Eleven får själv räkna de upprepade bokstäverna. Svaret är fortfarande 60."
+    },
+    {
+      "course": "fy2",
+      "id": "3.346 b",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Fältet är nu uttryckligen riktat nedåt och visas i en figur. Den negativa droppens elektriska kraft verkar uppåt, medan tyngdkraften verkar nedåt. Med båda krafterna blir vinkeln cirka 4,53° uppåt. Båda delkorten har fullständiga uträkningar."
+    },
+    {
+      "course": "fy2",
+      "id": "3.354 b",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Den irrelevanta texten om elektroner och protoner är borttagen. Del b innehåller alla uppgifter som behövs och facit använder samma data som frågan. Spänningen blir cirka 118 V; droppens tyngdkraft ingår i beräkningen."
+    },
+    {
+      "course": "fy2",
+      "id": "3.121",
+      "outcome": "Tidigare granskad 17:41: Facit korrekt; formalia förbättrad; kursfrågan kommenterad",
+      "suggestedComment": "Facit 13,536 mJ är korrekt. Svarsenheten och lösningen är förtydligade. Kondensatorer nämns inte uttryckligen i Skolverkets aktuella centrala innehåll för fysik nivå 2, men elektriska fält och tekniska tillämpningar ingår. Uppgiften har därför inte tagits bort som ett konstaterat kursfel."
+    },
+    {
+      "course": "matf1",
+      "id": "4.30",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Uppgiften är nu märkt som extra fördjupning, nivå 5, och väljs inte i Kunskapsgymmets ordinarie träning. Den finns kvar i Uppgiftslabbet. Det matematiska facit var korrekt."
+    },
+    {
+      "course": "matf1",
+      "id": "4.153",
+      "outcome": "Tidigare granskad 17:41: Åtgärdad",
+      "suggestedComment": "Uppgiften är nu uttryckligen märkt som extra fördjupning, nivå 5, och spärrad från ordinarie elevträning. Den var redan utan självrättning. Facit är matematiskt korrekt och har fått en tydligare förklaring."
+    }
+  ],
+  "tools": {
+    "calculator": true,
+    "geogebra": false,
+    "reason": "Fysik tillåter alltid miniräknare. Ingen av dessa begrepps- eller områdesvalsfrågor behöver digital grafanalys eller CAS."
+  },
+  "productionReportStatusesUpdated": false,
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "browser": {
+    "tasks": 36,
+    "checks": 266,
+    "views": 72,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  }
+}
