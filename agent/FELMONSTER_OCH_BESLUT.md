@@ -1619,3 +1619,29 @@ Alla 36 multimeterkort granskade; se
 Skydd: `tools/multimeter-inkoppling-2026-10-21.test.js`, uppdaterade
 `tools/fysik1-multimeter-2026-10-21.test.js` och konsumentens motsvarande
 browsertest (alla kort och varje felalternativ på mobil/dator).
+
+### FP82/FP84, fortsättning: ”det spelar ingen roll” och likvärdiga mätpunkter (2026-10-21 18:36)
+
+Se `MULTIMETER_VARIATION_2026-10-21_1836.md` och JSON-listan med samtliga
+18 manuellt granskade/konstruerade ID:n, ändringar och kommentarsförslag.
+
+- I 8.542/8.545/8.552/8.553 finns det preciserade felalternativet ”Det spelar
+  ingen roll: bryt vid P, Q eller R.” P/Q/R mäter inte alla samma ström i dessa
+  förgrenade kretsar. Beskriv vad punkterna mäter; påstå inte att två
+  parallellgrenars strömmar alltid måste vara olika.
+- Använd inte formuleringen som ett automatiskt felalternativ. I nya 8.566
+  är P/Q/R likvärdiga i en seriekrets. I 8.568 ger de tre angivna
+  spänningsparen samma mätning över parallellgrenarna. ”Vilka punkter som
+  helst” vore ett annat och felaktigt påstående.
+- Åtta nya kort 8.566–8.573: serie med motor, motorgren, likvärdiga
+  spänningspar, tre seriemotstånd, totalström före/efter grenar, fyra
+  bildalternativ, öppen motorgren och två samtidiga mätare. Varje kort har
+  egen figur, självständig text, förklarande facit och alternativa kopplingar.
+- 8.570: P och S mäter totalström. 8.572: med öppen motorgren mäter P och Q
+  lampström medan R ger noll. Bedöm aktuell topologi och brytarläge.
+- 8.571: Bild C är rätt spänningsmätning över R2. Rätt knapp måste följa
+  bilden när alternativordningen blandas. 8.573 kräver både amperemeter i
+  serie och voltmeter över rätt del av kretsen.
+
+Skydd: det utökade `tools/multimeter-inkoppling-2026-10-21.test.js` och
+konsumentens motsvarande browsertest (44 kort, 334 svarskontroller, 88 vyer).
