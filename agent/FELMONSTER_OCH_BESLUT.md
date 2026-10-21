@@ -1753,3 +1753,16 @@ Standardavvikelse:
 - Välj data så att antal-inom-intervall-svar inte hamnar nära en intervallgräns.
 
 Skydd: `tools/ma2-pafyllnad-2026-10-21.test.js`.
+
+### FP84, fortsättning: ombyggda upprepningar (2026-10-21)
+
+Ma2 4.14, 4.65, 4.102, 4.114, 4.173, 4.174, 4.195, 4.201, 4.211, 4.212,
+4.213, 4.235 och 4.236 är ombyggda på plats, med bevarade ID:n, `kurs` och
+`familjTidigare`. De gamla versionerna finns i
+`MA2_SX_OMBYGGDA_GAMLA_VERSIONER_2026-10-21.json`.
+
+Bygg inte tillbaka fler omvandlingsuppgifter av typen "alla värden ökas med a".
+Det finns tillräckligt med representanter för den typen.
+
+En flervalsfråga om att välja det värde som ger störst eller minst Sx måste ha
+en tydlig marginal mellan alternativen. Kontrollera alla alternativ numeriskt.

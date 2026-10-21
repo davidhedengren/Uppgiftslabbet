@@ -32,3 +32,19 @@ test('Standardavvikelse: Sx (n−1) och GeoGebra där data beräknas',()=>{
   assert.ok(!/SD\(/.test(JSON.stringify(t)),'4.'+i);}
  for(let i=384;i<=389;i++)assert.ok(q('4.'+i).t.includes('<svg'),'figur 4.'+i);
 });
+
+test('Ombyggda upprepningar: varierade typer med kontrollerade svar',()=>{
+ const FEL=[5.2,5.6,4.9,5.8,55,5.1,5.4,5.0],RATT=[5.2,5.6,4.9,5.8,5.5,5.1,5.4,5.0];
+ assert.deepEqual(Array.from(q('4.235').rättSvar),[Math.round(Sx(FEL)*100)/100,Math.round(Sx(RATT)*100)/100]);
+ const MA=[24.3,24.6,24.1,24.5,24.4,24.7],MB=[24.40,24.46,24.43,24.48,24.41,24.45];
+ assert.deepEqual(Array.from(q('4.174').rättSvar),[Math.round(Sx(MA)*100)/100,Math.round(Sx(MB)*100)/100]);
+ assert.equal(q('4.236').rättSvar,(190-170)/8);
+ assert.equal(ratt('4.211').length,3);
+ assert.deepEqual(ratt('4.212'),['X']);assert.deepEqual(ratt('4.14'),['24']);assert.deepEqual(ratt('4.65'),['Q']);
+ assert.deepEqual(ratt('4.173'),['5, 5, 5, 5']);assert.deepEqual(ratt('4.195'),['27']);
+ assert.match(ratt('4.201')[0],/^Bea/);assert.match(ratt('4.114')[0],/Betydligt större/);
+ for(const id of ['4.235','4.174'])assert.equal(q(id).geogebra,true,id);
+ // Ingen ombyggd uppgift är längre en ren "alla värden ökas/multipliceras"-omvandling.
+ for(const id of ['4.102','4.114','4.201','4.211','4.212','4.235','4.236','4.174'])
+  assert.doesNotMatch(q(id).t,/Alla värden (ökas|multipliceras)/,id);
+});
