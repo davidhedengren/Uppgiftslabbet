@@ -1734,3 +1734,22 @@ pilar och beräkning ha samma in-/utströmmar. Diagram för konstant ström
 ska särskilja rak Q-t-linje från böjda eller knäckta grafer (8.579).
 Axlar och skala måste räcka för den avläsning som efterfrågas.
 Skydd: strömvariationstestet och konsumentens kompletteringsprov `strom`.
+
+## FP84 – påfyllnad i Ma2 inom ämnesplanen
+
+2026-10-21: Ma2 1.675–1.683 (grafisk lösning) och 4.384–4.395 (standardavvikelse)
+dokumenteras i `MA2_PAFYLLNAD_2026-10-21.md`.
+
+Innan en uppgift läggs till ska innehållet stämmas av mot Gy25-ämnesplanens
+centrala innehåll för nivån, och nya uppgifter ska bara läggas i befintliga
+områden. Tabeller och diagram som eget innehåll finns inte på nivå 2, så det
+området byggs inte ut.
+
+Standardavvikelse:
+
+- Räkna aldrig Sx för hand. Datauppgifter har GeoGebra påslaget, och lösningen
+  hänvisar till Sx i statistikverktyget, aldrig till SD(), som ger σ.
+- Teori- och diagramuppgifter får sakna GeoGebra.
+- Välj data så att antal-inom-intervall-svar inte hamnar nära en intervallgräns.
+
+Skydd: `tools/ma2-pafyllnad-2026-10-21.test.js`.
