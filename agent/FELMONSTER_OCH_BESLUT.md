@@ -1825,3 +1825,22 @@ faktiska placering: stavar får inte se ut att gå genom kärlväggen.
 Giltiga vardagsord som "dubbelt" ska godtas via `multipel` när en faktor söks.
 Skydd: värmeöverföringstestet, äldre värmetestet och konsumentens
 `fysik1-kompletteringar-2026-10-21.browser.cjs varme`.
+
+
+## FP90 – variation i tyngdkraft utan att blanda kraft och hastighet
+
+2026-10-21: nya 4.758–4.763 ger 25 spelbara tyngdkraftsfrågor (tidigare 19),
+27 huvuduppgifter totalt och sju med figur. Fullständiga ID-/kommentarslistor
+finns i `FYSIK1_VARIATION_TYNGDKRAFT_2026-10-21.md`/JSON. Listan över områden
+under 25 är uppdaterad; samma spelräknemetod måste användas där.
+
+Variera kraftbilder, diagram, mätningar och jämförelser. Gör inte bara fler
+texter med given massa/g. Standardkonstanter hör till formelsamlingen, men
+nödvändiga experimentvärden på modellplaneter får finnas i diagram.
+
+Kraftpilar och hastighetspilar måste skiljas åt i frågan. Noll hastighet
+innebär inte noll tyngdkraft. Större tyngdkraft på en större massa innebär
+inte automatiskt större fallacceleration. När pilar kvantitativt jämför
+krafter ska längdförhållandet stämma (4.762: 3:1).
+Skydd: tyngdkraftsvariationstestet, utökat kapitel 4-test och konsumentens
+`fysik1-kompletteringar-2026-10-21.browser.cjs tyngd`.

@@ -8,14 +8,16 @@ får samma uppgifter om och om igen. Listan tar med alla områden som har färre
 - Räknat som eleven ser det i Kunskapsgymmet: ett område är ett områdeskort per kurs och spår, med Ma2c:s sammanslagna kort.
 - Antalet är unika uppgifter i kortets pool (`spel` ≠ false). Delkort räknas inte separat.
 - Siffran efter spåret är antalet uppgifter. **Fetstil = under 20.**
-- Totalt finns 563 områdeskort, räknade per spår. 142 har under 25 uppgifter, vilket motsvarar 103 olika områden.
+- Totalt finns 563 områdeskort, räknade per spår. 141 har under 25 uppgifter, vilket motsvarar 102 olika områden.
 
 ## Fysik 1 (fy1)
 
 - Kap 3 Rörelse: a-t-diagram 23
-- Kap 4 Kraft: Newtons tredje lag 21 · **Tyngdkraft 19**
+- Kap 4 Kraft: Newtons tredje lag 21
 - Kap 8 Elektricitet: Seriekoppling 23 · Parallellkoppling 24
 - Kap 9 Partikel- och kärnfysik: **Standardmodellen 19** · De fyra krafterna 20 · **Sönderfall 16** · **Strålning möter materia 18** · **Fusion 19** · Medicinska metoder 21 · **Elektromagnetisk strålning 15**
+
+Tyngdkraft har fyllts på till 25 spelbara huvuduppgifter och är därför borttaget från listan.
 
 ## Fysik 2 (fy2)
 

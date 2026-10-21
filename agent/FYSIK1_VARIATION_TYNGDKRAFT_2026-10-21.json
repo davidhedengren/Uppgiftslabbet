@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21",
+  "area": "tyngdkraft",
+  "family": "Massa och tyngd",
+  "areaBefore": 21,
+  "areaAfter": 27,
+  "playableBefore": 19,
+  "playableAfter": 25,
+  "figuresBefore": 1,
+  "figuresAfter": 7,
+  "new": [
+    {
+      "id": "4.758",
+      "level": 1,
+      "note": "24 N motsvarar 6 kg i det givna diagrammet. Nivå 1."
+    },
+    {
+      "id": "4.759",
+      "level": 1,
+      "note": "Bild C visar bara tyngdkraften nedåt efter att bollen släppts. Nivå 1."
+    },
+    {
+      "id": "4.760",
+      "level": 2,
+      "note": "B:s dubbla massa ger kraftmätarvärdet 30 N på samma modellplanet. Nivå 2."
+    },
+    {
+      "id": "4.761",
+      "level": 2,
+      "note": "Samma massa ger 20 N på B och 8 N på A, alltså faktorn 2,5. Nivå 2."
+    },
+    {
+      "id": "4.762",
+      "level": 2,
+      "note": "B har tre gånger större tyngdkraft och tre gånger större massa: samma fallacceleration. Nivå 2."
+    },
+    {
+      "id": "4.763",
+      "level": 1,
+      "note": "Samma massa och samma höjd ger lika stor tyngdkraft, oberoende av uppåt/noll/nedåt-hastighet. Nivå 1."
+    }
+  ],
+  "reviewedExisting": [
+    "4.347",
+    "4.350",
+    "4.356",
+    "4.469",
+    "4.474",
+    "4.504"
+  ],
+  "changedExisting": [],
+  "reviewedNoError": [
+    {
+      "id": "4.347",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: Modellplanetens givna 4,2 m/s² och massan 15 kg ger 63 N. Det lokala modellvärdet är nödvändig situationsdata, inte en lösningsledning om jordens standardkonstant."
+    },
+    {
+      "id": "4.350",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: 136,8 N och modellplanetens 5,7 m/s² ger massan 24 kg."
+    },
+    {
+      "id": "4.356",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: Tyngdkraften ökar från 66,6 till 133,2 N; ökningen är 66,6 N, med oförändrad massa."
+    },
+    {
+      "id": "4.469",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: Massan är oförändrad vid resan till månen, medan tyngdkraften minskar."
+    },
+    {
+      "id": "4.474",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: Mätvärdet 14,8 N vid 4,0 kg ger tyngdaccelerationen 3,7 m/s²."
+    },
+    {
+      "id": "4.504",
+      "status": "Granskad – inget fel",
+      "scope": "Innehåll, fysisk beräkning/facit och verktyg jämförda, inte en ny fullständig UX-granskning av äldre kort.",
+      "suggestedComment": "Granskad – inget fel: En massa på 60 kg ger tyngdkraften 589,2 N med g = 9,82 m/s². Uppgiften är ett direkt nivå 1-samband."
+    }
+  ],
+  "browser": {
+    "batch": "tyngd",
+    "ids": [
+      "4.758",
+      "4.759",
+      "4.760",
+      "4.761",
+      "4.762",
+      "4.763"
+    ],
+    "checks": 60,
+    "views": 12,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1450
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1450
+    },
+    "newFindings": []
+  },
+  "svg": {
+    "ERROR": 0,
+    "WARNING": 0,
+    "INFO": 6,
+    "interpretation": "En avsiktlig vit bakgrund vid viewBox-kanten i varje figur. Inga klippta etiketter."
+  },
+  "pending": [],
+  "productionDataChanged": false
+}
