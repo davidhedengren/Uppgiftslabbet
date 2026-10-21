@@ -1548,3 +1548,12 @@ fortfarande är läsbar.
 Breda diagram med avsiktlig maxbredd på 640–700 px och rimlig höjd lämnades orörda.
 Nya figurer ska alltid ha en bredd eller maxbredd.
 Skydd: `tools/svg-bredd-2026-10-21.test.js`.
+
+### FP82, fortsättning: begrepp och sladdfärg (2026-10-21)
+
+Området Mäta med multimeter (8.530–8.565) har gemensamma regler. Alla uppgifter
+utgår från samma strömtyp, så DC/AC, likström, likspänning, växelström och
+växelspänning används inte i elevinnehållet eller i multimeterfiguren.
+Sladdfärg får inte avgöra rätt eller fel; beskriv uttagen. Den gamla 8.541 om
+växelspänning är ersatt av en uppgift om att byta från strömmätning till
+spänningsmätning. Skydd: sista testet i `tools/fysik1-multimeter-2026-10-21.test.js`.

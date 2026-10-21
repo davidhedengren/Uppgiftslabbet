@@ -28,7 +28,7 @@ alternativ (COM + rätt uttag). Kunskapsgymmet kräver att båda markeras.
 | 8.538 | 2 | Vred | 50 mA | 400 mA |
 | 8.539 | 3 | Vred | 1,5 mA, noggrannast | 4000 µA |
 | 8.540 | 3 | Vred | Displayen visar OL på 4000 µA | Vrid till 400 mA |
-| 8.541 | 2 | Vred | 12 V växelspänning | V + AC med SELECT |
+| 8.541 | 3 | Vred | Från strömmätning (10A, 10 A) till spänningsmätning | Flytta sladden från 10A och vrid till V |
 | 8.542 | 1 | Koppla in | Amperemeter | Bryt vid A, i serie |
 | 8.543 | 1 | Koppla in | Voltmeter över lampa | A och B |
 | 8.544 | 2 | Koppla in | Spänning över L2 i serie | B och C |
@@ -96,8 +96,25 @@ Därför är maxbredderna nu:
 Etiketterna är kontrollerade på skärmbild och är läsbara.
 
 Förslagets README anger egna regler: inga ord som DC/AC eller likström/växelström
-i elevtexten, och sladdfärger avgör inte rätt eller fel. 8.530–8.549 har inte
-anpassats efter dessa regler. Användaren tillfrågas.
+i elevtexten, och sladdfärger avgör inte rätt eller fel. 8.530–8.549 har därefter
+anpassats efter dessa regler på användarens begäran (se nedan).
 
 Verifiering: alla 16 nya kort rättas korrekt i Kunskapsgymmet, både med rätt och
 med felaktigt val. Området har 36 uppgifter: koppla in 16, uttag 11 och mätområde 9.
+
+## Anpassning till förslag B:s regler (samma dag)
+
+Användaren bad att 8.530–8.549 skulle följa samma regler som förslag B:
+
+- Multimeterfiguren har inte längre DC/AC-etiketter vid V, 4000 µA, 400 mA och 10 A.
+- Elevtexten nämner varken DC, AC, likström, likspänning, växelström eller växelspänning.
+- Sladdfärg avgör inte rätt eller fel. Frågor, alternativ och lösningar beskriver
+  uttagen ("sladden i 10A", "sladdarna i COM och 10A"). Figurerna visar fortfarande
+  sladdar i två färger för tydlighetens skull.
+- 8.541 om växelspänning är ersatt. Den nya 8.541 handlar om att gå från
+  strömmätning (10A och 10 A) till spänningsmätning. Både uttaget och vredet ska
+  ändras. Med en sladd kvar i 10A kortsluts batteriet genom mätarens mycket lilla
+  resistans mellan 10A och COM. Den nya uppgiften har träningsnivå 3.
+
+Test: ingen multimeteruppgift innehåller de förbjudna orden eller DC/AC, och alla
+36 kort rättas korrekt i Kunskapsgymmet.
