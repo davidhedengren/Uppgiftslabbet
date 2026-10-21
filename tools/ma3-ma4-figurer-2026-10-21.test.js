@@ -28,3 +28,14 @@ test('Ma3c deriverbarhet: hörn, hopp, ensidiga lutningar och lodrät tangent',(
  for(let i=1157;i<=1162;i++)assert.ok(q(m1,'3.'+i).t.includes('<svg'),'3.'+i);
  assert.ok(q(m1,'3.1164').t.includes('<svg'));
 });
+
+test('Ma3c: extrempunktsuppgifter flyttade från deriverbarhet med bevarade gamla namn',()=>{
+ const mal={'3.633':'extrempunkter','3.634':'extrempunkter','3.635':'extrempunkter','3.639':'extrempunkter','3.640':'extrempunkter',
+  '3.637':'extrempunkter','3.638':'extrempunkter','2.278':'extrempunkter','2.673':'extrempunkter',
+  '3.636':'derivatan_och_grafen','2.678':'derivatan_och_grafen','2.638':'andraderivatan','2.639':'andraderivatan'};
+ for(const [id,omr] of Object.entries(mal)){const t=q(m1,id);assert.equal(t.omr,omr,id);
+  assert.ok([].concat(t.omrTidigare).includes('deriverbarhet'),id);assert.ok([].concat(t.familjTidigare).includes('Deriverbarhet'),id);}
+ const kvar=m1.filter(t=>t.omr==='deriverbarhet').map(t=>t.id);
+ for(const id of ['3.1143','3.1149'])assert.ok(kvar.includes(id));
+ assert.ok(kvar.every(id=>id==='3.1143'||id==='3.1149'||Number(id.split('.')[1])>=1157),kvar.join(','));
+});

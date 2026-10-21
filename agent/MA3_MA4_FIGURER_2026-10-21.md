@@ -52,3 +52,26 @@ flyttas till "Vad säger derivatan om funktionens graf?".
 - Gradsvar godtas med och utan °.
 - Alla figurer är granskade på skärmbild.
 - Test: `tools/ma3-ma4-figurer-2026-10-21.test.js`.
+
+## Flyttade uppgifter (användarbeslut samma dag)
+
+Användaren godkände att de 13 extrempunktsuppgifterna flyttas från `deriverbarhet`.
+Jag lade dem i de områden som motsvarar innehållet, i stället för att lägga alla i
+"Vad säger derivatan om funktionens graf?":
+
+- Extrempunkter och terrasspunkter:
+  - Teckenstudium: 3.633, 3.634, 3.635, 3.639 och 3.640.
+  - Terrasspunkter: 3.637, 3.638 och 2.278.
+  - Bestämma extrempunkter: 2.673.
+- Vad säger derivatan om funktionens graf? (Växande och avtagande): 3.636 och 2.678.
+- Andraderivatan och funktionens graf: 2.638 och 2.639.
+
+Bara `omr` och `familj` ändrades. `deriverbarhet` och `Deriverbarhet` lades till i
+`omrTidigare` och `familjTidigare`, och övriga fält och filens format är oförändrade.
+
+Kunskapsgymmets `migreraFamiljer()` flyttar inget områdesvärde, eftersom 9 av 213
+uppgifter är under tröskeln på 20 %. Elevernas värde för Deriverbarhet ligger
+därför kvar, och historiken räknas om per uppgift.
+
+Deriverbarhet innehåller nu 3.1143, 3.1149 och 3.1157–3.1164, alltså 10 uppgifter
+i spår 1c. Genomgångarna för deriverbarhet (spets, parametrar) passar fortfarande.
