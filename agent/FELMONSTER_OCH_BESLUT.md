@@ -1444,3 +1444,18 @@ Enhet ska synas ovanför svarsfältet, inte enbart i en platshållare som
 försvinner när eleven skriver. Fullprecision i maskinfacit ska hållas skild
 från det avrundade elevfacit. Regression: `tools/felrapporter-2026-10-21-1300.test.js`
 och konsumentens motsvarande browsertest.
+
+## FP76 – variation i densitet utan fler likadana insättningsuppgifter
+
+2026-10-21: `FYSIK1_DENSITET_2026-10-21.md` dokumenterar nya fy1 2.327–2.334
+och jämförelsegranskning av 2.284/285/287/190/194. Skilj på materialets densitet,
+hela föremålets medeldensitet och uppmätt densitet vid luftbubblor. Mätglasets
+nivåökning räknar undanträngd volym; vågens massa kan inkludera behållaren.
+Lägg inte till rena talvarianter när området redan har många rutinuppgifter.
+Samband mellan massa, hålrum, kompression och mätfel ger mer varierad träning.
+Skydd: `tools/fysik1-densitet-2026-10-21.test.js` och motsvarande browsertest.
+
+I samma omgång rättades fullprecision/tolerans i fy1 2.176–2.179, 2.190
+och 2.194. 2.190 reproducerade underkännande av ett korrekt oavrundat
+beräkningsuttryck. Behåll fullvärdet i maskinfacit och frågans noggrannhet
+i toleransen; huvudfacit ska inte använda avrundade mellanled som exakta.

@@ -1,0 +1,368 @@
+[
+  {
+    "id": "2.176",
+    "before": {
+      "id": "2.176",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "E",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(2/0/0)",
+      "t": "<p>Hur stor volym aluminium krävs för att ha samma massa som 45 cm³ guld? Densiteter: guld 19,3 g/cm³ och aluminium 2,70 g/cm³.</p><p>Avrunda till hela kubikcentimeter. (Ange svaret i cm³.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Beräkna först guldets massa och låt sedan aluminiumet ha samma massa.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[m=19{,}3\\cdot45=868{,}5\\,\\mathrm g\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[V_{Al}=\\frac{868{,}5}{2{,}70}\\approx322\\,\\mathrm{cm^3}\\]</div></div></div><p class=\"facit-svar\">Svar: 322 cm³.</p></div>",
+      "familj": "Massa, volym och densitet",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "densitet__massa_volym_och_densitet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 322,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Bestäm först massan som båda materialen ska ha.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "cm³",
+      "svarFormat": "numeriskt"
+    },
+    "after": {
+      "id": "2.176",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "E",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(2/0/0)",
+      "t": "<p>Hur stor volym aluminium krävs för att ha samma massa som 45 cm³ guld? Densiteter: guld 19,3 g/cm³ och aluminium 2,70 g/cm³.</p><p>(Svara i cm³, avrundat till ett heltal.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Beräkna först guldets massa och låt sedan aluminiumet ha samma massa.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[m=19{,}3\\cdot45=868{,}5\\,\\mathrm g\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[V_{Al}=\\frac{868{,}5}{2{,}70}\\approx322\\,\\mathrm{cm^3}\\]</div></div></div><p class=\"facit-svar\">Svar: 322 cm³.</p></div>",
+      "familj": "Massa, volym och densitet",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "densitet__massa_volym_och_densitet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 321.66666666666663,
+      "tolerans": 0.5,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Bestäm först massan som båda materialen ska ha.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "cm³",
+      "svarFormat": "numeriskt"
+    }
+  },
+  {
+    "id": "2.177",
+    "before": {
+      "id": "2.177",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "E",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(2/0/0)",
+      "t": "<p>Hur stor massa bly krävs för att ha samma volym som 3,4 kg koppar? Densiteter: koppar 8,96 g/cm³ och bly 11,3 g/cm³.<br>(Ange svaret i kg. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>Beräkna kopparens volym. Blyet ska ha samma volym. Använd de oavrundade mellanleden och omvandla blymassan till kg.</p><div class=\"facit-matte\">\\[V=\\frac{3400}{8{,}96}\\approx379{,}46\\,\\mathrm{cm^3}\\]</div><div class=\"facit-matte\">\\[m_{\\mathrm{Pb}}=11{,}3\\cdot\\frac{3400}{8{,}96}\\approx4287{,}95\\,\\mathrm g\\]</div><div class=\"facit-matte\">\\[m_{\\mathrm{Pb}}\\approx4{,}29\\,\\mathrm{kg}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 4,29 kg.</p></div>",
+      "familj": "Massa, volym och densitet",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "densitet__massa_volym_och_densitet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 4.29,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Kopparns volym är också den volym blyet ska ha.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "kg",
+      "svarFormat": "numeriskt"
+    },
+    "after": {
+      "id": "2.177",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "E",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(2/0/0)",
+      "t": "<p>Hur stor massa bly krävs för att ha samma volym som 3,4 kg koppar? Densiteter: koppar 8,96 g/cm³ och bly 11,3 g/cm³.<br>(Ange svaret i kg. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><p>Beräkna kopparens volym. Blyet ska ha samma volym. Använd de oavrundade mellanleden och omvandla blymassan till kg.</p><div class=\"facit-matte\">\\[V=\\frac{3400}{8{,}96}\\approx379{,}46\\,\\mathrm{cm^3}\\]</div><div class=\"facit-matte\">\\[m_{\\mathrm{Pb}}=11{,}3\\cdot\\frac{3400}{8{,}96}\\approx4287{,}95\\,\\mathrm g\\]</div><div class=\"facit-matte\">\\[m_{\\mathrm{Pb}}\\approx4{,}29\\,\\mathrm{kg}\\]</div><p class=\"facit-svar\"><strong>Svar:</strong> 4,29 kg.</p></div>",
+      "familj": "Massa, volym och densitet",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "densitet__massa_volym_och_densitet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 4.287946428571428,
+      "tolerans": 0.005,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Kopparns volym är också den volym blyet ska ha.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "kg",
+      "svarFormat": "numeriskt"
+    }
+  },
+  {
+    "id": "2.178",
+    "before": {
+      "id": "2.178",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(0/2/0)",
+      "t": "<p>En kula av ett visst material har diametern 18,2 mm och massan 28,32 g. Ett oregelbundet föremål av samma material har massan 86,28 g. Bestäm det oregelbundna föremålets volym.<br>(Ange svaret i cm³. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p>Kulan har radien 0,91 cm och volymen \\(4\\pi\\cdot0{,}91^3/3\\) cm³.</p></div><div class=\"facit-stycke\"><p>Samma material ger samma densitet, så det andra föremålets volym är \\((86{,}28/28{,}32)\\cdot4\\pi\\cdot0{,}91^3/3\\approx9{,}62\\) cm³.</p></div></div></div>",
+      "familj": "Densitet med geometri",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_med_geometri_och_volymberakning",
+      "svarstyp": "numeriskt",
+      "rättSvar": 9.62,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Vid samma densitet är volymkvoten lika med masskvoten.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "cm³",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet med geometri och volymberäkning"
+      ]
+    },
+    "after": {
+      "id": "2.178",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(0/2/0)",
+      "t": "<p>En kula av ett visst material har diametern 18,2 mm och massan 28,32 g. Ett oregelbundet föremål av samma material har massan 86,28 g. Bestäm det oregelbundna föremålets volym.<br>(Ange svaret i cm³. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p>Kulan har radien 0,91 cm och volymen \\(4\\pi\\cdot0{,}91^3/3\\) cm³.</p></div><div class=\"facit-stycke\"><p>Samma material ger samma densitet, så det andra föremålets volym är \\((86{,}28/28{,}32)\\cdot4\\pi\\cdot0{,}91^3/3\\approx9{,}62\\) cm³.</p></div></div></div>",
+      "familj": "Densitet med geometri",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_med_geometri_och_volymberakning",
+      "svarstyp": "numeriskt",
+      "rättSvar": 9.616779839121063,
+      "tolerans": 0.005,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Vid samma densitet är volymkvoten lika med masskvoten.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "cm³",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet med geometri och volymberäkning"
+      ]
+    }
+  },
+  {
+    "id": "2.179",
+    "before": {
+      "id": "2.179",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(0/2/0)",
+      "t": "<p>En ihålig kopparcylinder är 1,50 m lång. Ytterdiametern är 3,50 cm och innerdiametern 2,50 cm. Koppar har densiteten 8,96 g/cm³. Bestäm cylinderns massa.<br>(Ange svaret i kg. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Metallens tvärsnittsarea är skillnaden mellan två cirkelareor.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[V=\\pi(R^2-r^2)L=\\pi(1{,}75^2-1{,}25^2)\\cdot150\\approx707\\,\\mathrm{cm^3}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[m=8{,}96\\cdot707\\approx6{,}33\\cdot10^3\\,\\mathrm g\\]</div></div></div><p class=\"facit-svar\">Svar: 6,33 kg.</p></div>",
+      "familj": "Sammansatta och ihåliga föremål",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__sammansatt_densitet_och_ihaliga_foremal",
+      "svarstyp": "numeriskt",
+      "rättSvar": 6.33,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Metallen upptar skillnaden mellan den yttre och den inre cylindern.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "kg",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Sammansatt densitet och ihåliga föremål"
+      ]
+    },
+    "after": {
+      "id": "2.179",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa densitet i en fysikalisk beräkning",
+      "poang": "(0/2/0)",
+      "t": "<p>En ihålig kopparcylinder är 1,50 m lång. Ytterdiametern är 3,50 cm och innerdiametern 2,50 cm. Koppar har densiteten 8,96 g/cm³. Bestäm cylinderns massa.<br>(Ange svaret i kg. Svara med två decimaler.)</p>",
+      "s": "<div class=\"facit-v2\"><p>Radierna är 1,75 cm och 1,25 cm. Längden är 150 cm. Kopparens volym fås genom att dra bort hålrummets volym:</p><p>\\[V=\\pi(1{,}75^2-1{,}25^2)\\cdot150\\,\\mathrm{cm^3}\\]</p><p>Multiplicera med densiteten och omvandla gram till kilogram:</p><p>\\[m=\\frac{8{,}96V}{1000}\\approx6{,}33\\,\\mathrm{kg}\\]</p></div>",
+      "familj": "Sammansatta och ihåliga föremål",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__sammansatt_densitet_och_ihaliga_foremal",
+      "svarstyp": "numeriskt",
+      "rättSvar": 6.333450789637023,
+      "tolerans": 0.005,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Metallen upptar skillnaden mellan den yttre och den inre cylindern.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "kg",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Sammansatt densitet och ihåliga föremål"
+      ]
+    }
+  },
+  {
+    "id": "2.190",
+    "before": {
+      "id": "2.190",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa fysikaliska samband i en problemsituation",
+      "poang": "(0/2/0)",
+      "t": "<p>En glasflaska väger 35,00 g tom och 98,44 g fylld med vatten. Vattnets densitet är 0,998 g/cm³. När samma flaska fylls med en okänd vätska väger den 89,22 g. Bestäm den okända vätskans densitet.<br>(Ange svaret i g/cm³. Svara med tre decimaler.)</p><p>Flaskan fylls till exakt samma nivå vid båda vägningarna.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Vattnet används för att bestämma flaskans volym.</p></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Sedan används samma volym för den okända vätskan.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[m_v=98{,}44-35{,}00=63{,}44\\,\\mathrm g\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[V=\\frac{63{,}44}{0{,}998}\\approx63{,}57\\,\\mathrm{cm^3}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[m_x=89{,}22-35{,}00=54{,}22\\,\\mathrm g\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\rho_x=\\frac{54{,}22}{63{,}57}\\approx0{,}853\\,\\mathrm{g/cm^3}\\]</div></div></div><p class=\"facit-svar\">Svar: 0,853 g/cm³.</p></div>",
+      "familj": "Densitet ur diagram och mätdata",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_fran_diagram_och_matdata",
+      "svarstyp": "numeriskt",
+      "rättSvar": 0.853,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Använd vattnet för att bestämma den gemensamma fyllnadsvolymen.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "g/cm³",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet från diagram och mätdata"
+      ]
+    },
+    "after": {
+      "id": "2.190",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa fysikaliska samband i en problemsituation",
+      "poang": "(0/2/0)",
+      "t": "<p>En glasflaska väger 35,00 g tom och 98,44 g fylld med vatten. Vattnets densitet är 0,998 g/cm³. När samma flaska fylls med en okänd vätska väger den 89,22 g. Bestäm den okända vätskans densitet.<br>(Ange svaret i g/cm³. Svara med tre decimaler.)</p><p>Flaskan fylls till exakt samma nivå vid båda vägningarna.</p>",
+      "s": "<div class=\"facit-v2\"><p>Vattnets massa är 98,44 − 35,00 = 63,44 g. Flaskans fyllnadsvolym är därför 63,44/0,998 cm³.</p><p>Den okända vätskans massa är 89,22 − 35,00 = 54,22 g. Använd samma volym utan att avrunda mellanleden:</p><p>\\[\\rho=\\frac{54{,}22}{63{,}44/0{,}998}\\approx0{,}853\\,\\mathrm{g/cm^3}\\]</p></div>",
+      "familj": "Densitet ur diagram och mätdata",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_fran_diagram_och_matdata",
+      "svarstyp": "numeriskt",
+      "rättSvar": 0.8529564943253468,
+      "tolerans": 0.0005,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Använd vattnet för att bestämma den gemensamma fyllnadsvolymen.</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "g/cm³",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet från diagram och mätdata"
+      ]
+    }
+  },
+  {
+    "id": "2.194",
+    "before": {
+      "id": "2.194",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa fysikaliska samband i en problemsituation",
+      "poang": "(0/2/0)",
+      "t": "<p>Ett A4-papper har ytvikten 80 g/m² och densiteten 0,85 g/cm³. Bestäm papperets tjocklek.<br>(Ange svaret i µm. Svara med en decimal.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Ytvikten ger massan per area.</p></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Densiteten kopplar sedan massan till volymen \\(V=At\\).</p></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Arean förkortas faktiskt bort om man använder ytvikten direkt.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[t=\\frac{m/A}{\\rho}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[80\\,\\mathrm{g/m^2}=0{,}0080\\,\\mathrm{g/cm^2}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[t=\\frac{0{,}0080}{0{,}85}=0{,}00941\\,\\mathrm{cm}=94{,}1\\,\\mu\\mathrm m\\]</div></div></div><p class=\"facit-svar\">Svar: 94,1 µm.</p></div>",
+      "familj": "Densitet med geometri",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_med_geometri_och_volymberakning",
+      "svarstyp": "numeriskt",
+      "rättSvar": 94.1,
+      "tolerans": 0,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Ytvikten är massa per area. Hur kopplas det till densitet och tjocklek?</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "µm",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet med geometri och volymberäkning"
+      ]
+    },
+    "after": {
+      "id": "2.194",
+      "kap": 2,
+      "omr": "densitet",
+      "niva": "C",
+      "typ": "tillämpa fysikaliska samband i en problemsituation",
+      "poang": "(0/2/0)",
+      "t": "<p>Ett A4-papper har ytvikten 80 g/m² och densiteten 0,85 g/cm³. Bestäm papperets tjocklek.<br>(Ange svaret i µm. Svara med en decimal.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Ytvikten ger massan per area.</p></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Densiteten kopplar sedan massan till volymen \\(V=At\\).</p></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Arean förkortas faktiskt bort om man använder ytvikten direkt.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[t=\\frac{m/A}{\\rho}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[80\\,\\mathrm{g/m^2}=0{,}0080\\,\\mathrm{g/cm^2}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[t=\\frac{0{,}0080}{0{,}85}\\approx0{,}00941\\,\\mathrm{cm}\\approx94{,}1\\,\\mu\\mathrm m\\]</div></div></div><p class=\"facit-svar\">Svar: 94,1 µm.</p></div>",
+      "familj": "Densitet med geometri",
+      "formaga": [
+        "problemlösning"
+      ],
+      "familjNyckel": "densitet__densitet_med_geometri_och_volymberakning",
+      "svarstyp": "numeriskt",
+      "rättSvar": 94.11764705882354,
+      "tolerans": 0.05,
+      "självrättning": true,
+      "miniräknare": true,
+      "geogebra": false,
+      "ledtrad": "<p>Ytvikten är massa per area. Hur kopplas det till densitet och tjocklek?</p>",
+      "traningsniva": 3,
+      "arbetsinsats": 2,
+      "spel": true,
+      "svarEnhet": "µm",
+      "svarFormat": "numeriskt",
+      "familjTidigare": [
+        "Densitet med geometri och volymberäkning"
+      ]
+    }
+  }
+]
