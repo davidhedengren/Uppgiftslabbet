@@ -1505,3 +1505,13 @@ Vid sträckberäkning i flera intervall ska föregående sluthastighet bli näst
 starthastighet; visa även delsträckorna i lösningen. Testa teckenfel och
 förväxling mellan acceleration, hastighetsändring och sträcka.
 Skydd: `tools/fysik1-at-diagram-2026-10-21.test.js` och motsvarande browsertest.
+
+## FP81 – vektorskillnad och kompenserad ström
+
+2026-10-21: Nya fy1 3.461–3.464 dokumenteras i
+`FYSIK1_VEKTORER_2026-10-21.md`. Hastighetsändring är skillnaden mellan
+hastighetsvektorer, inte alltid skillnaden mellan farter. Vid relativ rörelse
+ska referensen anges tydligt: golv, band respektive vatten. En båts fart
+relativt vattnet är inte farten tvärs över ån när strömmen kompenseras.
+Visa riktningar med tydliga pilar och låt komponentförhållanden stämma i figuren.
+Skydd: `tools/fysik1-vektorer-2026-10-21.test.js` och motsvarande browsertest.
