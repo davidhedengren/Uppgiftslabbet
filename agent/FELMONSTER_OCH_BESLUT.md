@@ -1472,3 +1472,15 @@ av att glömma pausen. Behåll fri avrundning i frågor utan precisionskrav.
 Mätnoggrannhet hoppas över i denna utbyggnad enligt användarens beslut.
 Skydd: `tools/fysik1-medelhastighet-2026-10-21.test.js` och konsumentens
 motsvarande browsertest.
+
+## FP78 – accelerationens tecken, graflutning och ikappkörning
+
+2026-10-21: Nya fy1 3.440–3.448, med kontroll av 3.190/191/194/270/279,
+dokumenteras i `FYSIK1_ACCELERATION_2026-10-21.md`. Positiv acceleration kan
+minska farten när hastigheten är negativ. Högre hastighet i ett v-t-diagram
+innebär inte större lutning. Vid ikappkörning ska positioner jämföras;
+hastighetslikhet räcker inte. Ange vald positiv riktning när tecken behövs.
+Förklara skillnaden mellan acceleration och retardationens storlek utan att
+likställa negativa svar med fel när frågan faktiskt gäller acceleration.
+Skydd: `tools/fysik1-acceleration-2026-10-21.test.js` och konsumentens
+motsvarande browsertest.
