@@ -1422,3 +1422,12 @@ rapporterade områdena. 3.212/3.227:s uppgift/facit är oförändrade och korrek
 Skydd: master tools/felrapporter-2026-10-21-0910.test.js; konsument
 tools/passvariation-2026-10-21.test.js och
 tools/felrapporter-2026-10-21-0910.browser.cjs. Tidigare tester kvarstår.
+
+## FP74 – verifiera versalrapporter före extra normalisering (2026-10-21)
+
+[Ma1 1.902 och fem jämförelser](FELRAPPORTER_2026-10-21_1113.md): 6X+4 godtas
+redan som 6x+4 i förenklat_polynom. Samma gäller 1.11/18/26/27/70.
+Ändra inte facit eller parser utifrån en kommentar om stort X utan att
+reproducera felet. Testa faktisk inmatning och bevara kravet på förenklad form.
+Elevens historiska fullständiga inmatning är okänd. Sex granskade, inga
+innehållsändringar. Skydd: konsumentens tools/felrapporter-2026-10-21-1113.browser.cjs.
