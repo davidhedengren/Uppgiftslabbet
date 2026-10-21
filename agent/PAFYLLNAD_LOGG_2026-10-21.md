@@ -29,3 +29,4 @@ Varje runda följer samma arbetssätt:
 |---|---|---|---|
 | 1 | Ma2 yttervinkelsatsen (2b/2c) | 3.555–3.562 | Otydliga yttervinklar: en sträcka i triangeln, en inre punkt, en roterad triangel, vertikalvinkel och två yttervinklar. Med x: delad triangel och inre punkt. Känna igen en yttervinkel. Figurer med vinklar som stämmer med siffrorna. |
 | 2 | Ma3c När ger sinussatsen två fall? (1c) | 4.496–4.505 | Området hade bara 5 självrättande uppgifter. Nu: supplementvinkel med samma sinus, antal trianglar i SSA-fallet (0/1/1/2 via h = b sin A) i ett nytt delmoment, båda vinklarna B, minsta vinkeln C och båda längderna c. Konstruktionsfigurer med B₁/B₂. |
+| 3 | Ma4 Förskjutna kurvor (2c) | 2.613–2.620 | Området hade 13 uppgifter men bara en figur. Nytt delmoment, Tolka förskjutna kurvor i grafer: avläsa förskjutning, v ur maximum, välja ekvation, nollställe, a/v/c ur graf, cos förskjuten blir sin, temperaturmodell och sin(2x − v). |
