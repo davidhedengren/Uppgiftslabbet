@@ -1380,3 +1380,45 @@ på baslinjen. Kontrollera renderad KaTeX, inte bara att LaTeX saknar syntaxfel.
 Endast formateringen ändras; tidigare matematik, variation och behörigheter
 bevaras. Skydd: konsumentens `tools/felrapporter-2026-10-20-1305.browser.cjs`
 samt befintliga `tools/felrapporter-2026-10-14.test.js` i master.
+
+
+## FP73 – fria konstanter, enhetskontrakt och verklig variation i Matf1 (2026-10-21)
+
+[23 rapporter, alla beslut och jämförelser](FELRAPPORTER_2026-10-21_0910.md),
+med ändrade ID:n/fält i motsvarande JSON. Matf1 4.04/4.53/4.27 och 21
+analoger använder `diffekv_losning`: samma affina lösningsfamilj, inte samma
+namn eller ordning på två fria konstanter. C/D, A/B och C₁/C₂ stöds. Kontrollera
+hela spannet i båda riktningar och den partikulära lösningen symboliskt;
+fel exponent, beroende konstanter och fel partikulärterm får inte godtas.
+4.102 är villkorsbestämd och ska fortsatt ha uttrycksformat med
+e^(−2x)(2cos3x+4sin3x/3), aldrig två fria konstanter.
+
+`diffekvation` används för 4.160/4.72/4.76/4.78 och jämför ekvationernas
+residualer upp till en konstant icke-noll faktor. Flyttade termer godtas;
+variabla faktorer kan lägga till lösningar och ska inte godtas. Den generella
+uttrycksrättningen ändras inte. 3.03 och sex analoga obestämda integraler
+använder `primitiva` och kräver en fri integrationskonstant oberoende av namn.
+
+Användarbeslut: 4.106 och 4.386 behålls som markerad fördjupning i
+Uppgiftslabbet men har spel:false och nivå 5. Återaktivera dem inte genom
+heuristisk nivå- eller svarstypsrensning. 3.275 ger den primitiva funktionen
+och standardgränsvärdet; inga sådana förkunskaper krävs längre i smyg.
+4.134/4.172:s delkort är singular; 3.284 frågar konkret efter tangentens c.
+3.60 har explicit konvergensval och 4.46 säger ja/nej. Mängdklamrar finns i
+symbolraden och Venn-etiketter ligger inne i cirklarna.
+
+Svarsenheter förtydligade i Matf1 och Mato2:s förändringshastigheter.
+Fullprecisionsmål plus FP64:s precisionsjämförelse används i berörda
+Matf1-kort utan angivet avrundningskrav. Återinför inte avrundade facitmål
+eller breda toleranser. Explicit precision/exakthet i andra kort kvarstår.
+
+FP38:s urvalsprincip kompletteras: karensen är nu ett helt varv av det
+aktuella urvalet (fortsatt tak 250), så att kort inte blir färska för tidigt
+mellan två pass. Felsvarskö och balanserad repetition när området är uttömt
+bevaras. Nya 3.330–339 och 4.569–576 ger 16 spelbara kort i vardera av de två
+rapporterade områdena. 3.212/3.227:s uppgift/facit är oförändrade och korrekta.
+3.277 är oförändrad efter FP72.
+
+Skydd: master tools/felrapporter-2026-10-21-0910.test.js; konsument
+tools/passvariation-2026-10-21.test.js och
+tools/felrapporter-2026-10-21-0910.browser.cjs. Tidigare tester kvarstår.

@@ -1,0 +1,2336 @@
+{
+  "date": "2026-10-21",
+  "source": "Kunskapsgymmet 09:10",
+  "reportIds": [
+    "4.386",
+    "4.106",
+    "4.27",
+    "4.134",
+    "4.04",
+    "4.53",
+    "1.161",
+    "4.514",
+    "4.160",
+    "4.46",
+    "3.227",
+    "3.212",
+    "3.03",
+    "3.113",
+    "3.47",
+    "3.248",
+    "3.263",
+    "3.261",
+    "3.275",
+    "3.60",
+    "3.66",
+    "3.284",
+    "3.277"
+  ],
+  "unchangedReports": {
+    "3.212": "Korrekt uppgift/facit; urval och utbud förbättrat.",
+    "3.227": "Korrekt uppgift/facit; urval och utbud förbättrat.",
+    "3.277": "Redan åtgärdad i FP72."
+  },
+  "changes": {
+    "matf1": [
+      {
+        "id": "1.05",
+        "new": false,
+        "fields": [
+          "t",
+          "s"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "1.07",
+        "new": false,
+        "fields": [
+          "t",
+          "s"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "1.09",
+        "new": false,
+        "fields": [
+          "t",
+          "s"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "1.12",
+        "new": false,
+        "fields": [
+          "t",
+          "s"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "1.14",
+        "new": false,
+        "fields": [
+          "t",
+          "s"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "1.161",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "spelDelar"
+        ],
+        "answerBefore": [
+          "{5,7}",
+          "{1,3}",
+          "{11}"
+        ],
+        "answerAfter": [
+          "{5,7}",
+          "{1,3}",
+          "{11}"
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.01",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "-e^{-2x}(\\frac{1}{2}x^2+\\frac{1}{2}x+\\frac14)+C",
+        "answerAfter": "-e^{-2x}(\\frac{1}{2}x^2+\\frac{1}{2}x+\\frac14)+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.02",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "e^x(x-1)+C",
+        "answerAfter": "e^x(x-1)+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.03",
+        "new": false,
+        "fields": [
+          "niva",
+          "poang",
+          "t",
+          "s",
+          "svarFormat",
+          "traningsniva"
+        ],
+        "answerBefore": "x\\ln x-x+C",
+        "answerAfter": "x\\ln x-x+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.14",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "x\\sin x+\\cos x+C",
+        "answerAfter": "x\\sin x+\\cos x+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.15",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "\\frac{x^3}{3}\\ln x-\\frac{x^3}{9}+C",
+        "answerAfter": "\\frac{x^3}{3}\\ln x-\\frac{x^3}{9}+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.30",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "\\frac{x}{2}e^{2x}-\\frac14e^{2x}+C",
+        "answerAfter": "\\frac{x}{2}e^{2x}-\\frac14e^{2x}+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.31",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "-x\\cos x+\\sin x+C",
+        "answerAfter": "-x\\cos x+\\sin x+C",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.60",
+        "new": false,
+        "fields": [
+          "t",
+          "svarstyp",
+          "alternativ"
+        ],
+        "answerBefore": "divergerar",
+        "answerAfter": "divergerar",
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.09",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 90,
+        "answerAfter": 90,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.10",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 5.3,
+        "answerAfter": 5.303300858899107,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.11",
+        "new": false,
+        "fields": [
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 1.59,
+        "answerAfter": 1.5915494309189535,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.19",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.6,
+        "answerAfter": 0.6,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.20",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 15.079644737231007,
+        "answerAfter": 15.079644737231007,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.27",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 6,
+        "answerAfter": 6,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.45",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 62.83185307179586,
+        "answerAfter": 62.83185307179586,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.47",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.375,
+        "answerAfter": 0.375,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.66",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 18,
+        "answerAfter": 18,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.67",
+        "new": false,
+        "fields": [
+          "t",
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "3.6*pi",
+        "answerAfter": 11.309733552923255,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.68",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.64,
+        "answerAfter": 0.6428571428571429,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.69",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.106,
+        "answerAfter": 0.1061032953945969,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.98",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 12.6,
+        "answerAfter": 12.566370614359172,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.100",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.75,
+        "answerAfter": 0.75,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.101",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.597,
+        "answerAfter": 0.5968310365946076,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.110",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 8,
+        "answerAfter": 8,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.111",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.127,
+        "answerAfter": 0.12732395447351627,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.112",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 121,
+        "answerAfter": 121,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.113",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.0597,
+        "answerAfter": 0.05968310365946075,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.114",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.213,
+        "answerAfter": 0.21301775147928995,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.115",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 187.5,
+        "answerAfter": 187.5,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.117",
+        "new": false,
+        "fields": [
+          "t",
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "2*pi",
+        "answerAfter": 6.283185307179586,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.205",
+        "new": false,
+        "fields": [
+          "t",
+          "svarEnhet"
+        ],
+        "answerBefore": "1.6*pi",
+        "answerAfter": "1.6*pi",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.242",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.06,
+        "answerAfter": 0.06,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.243",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.390625,
+        "answerAfter": 0.390625,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.244",
+        "new": false,
+        "fields": [
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": -1,
+        "answerAfter": -1,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.245",
+        "new": false,
+        "fields": [
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 0.2,
+        "answerAfter": 0.2,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.46",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          "ja",
+          "nej",
+          "ja",
+          "nej"
+        ],
+        "answerAfter": [
+          "ja",
+          "nej",
+          "ja",
+          "nej"
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.160",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "y'=-2(y-3)",
+        "answerAfter": "y'=-2(y-3)",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.72",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "y'=-5y+15",
+        "answerAfter": "y'=-5y+15",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.386",
+        "new": false,
+        "fields": [
+          "t",
+          "traningsniva",
+          "spel"
+        ],
+        "answerBefore": "C_1*cos(2*x)+C_2*sin(2*x)+x*sin(2*x)/4",
+        "answerAfter": "C_1*cos(2*x)+C_2*sin(2*x)+x*sin(2*x)/4",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.04",
+        "new": false,
+        "fields": [
+          "t",
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^{4x}+C_2e^{8x}",
+        "answerAfter": "C_1e^{4x}+C_2e^{8x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.53",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^{2x}+C_2e^{3x}",
+        "answerAfter": "C_1e^{2x}+C_2e^{3x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.73",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^{2x}+C_2e^{-3x}",
+        "answerAfter": "C_1e^{2x}+C_2e^{-3x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.74",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^{-2x}+C_2e^{-3x}",
+        "answerAfter": "C_1e^{-2x}+C_2e^{-3x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.97",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{-4x}",
+        "answerAfter": "C_1e^x+C_2e^{-4x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.10",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "(C_1+C_2x)e^{-2x}",
+        "answerAfter": "(C_1+C_2x)e^{-2x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.13",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "e^{-2x}(C_1\\cos3x+C_2\\sin3x)",
+        "answerAfter": "e^{-2x}(C_1\\cos3x+C_2\\sin3x)",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.54",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "(C_1+C_2x)e^{2x}",
+        "answerAfter": "(C_1+C_2x)e^{2x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.75",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "(C_1+C_2x)e^{-3x}",
+        "answerAfter": "(C_1+C_2x)e^{-3x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.76",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "y''-8y'+16y=0",
+        "answerAfter": "y''-8y'+16y=0",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.99",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "(C_1+C_2x)e^{-4x}",
+        "answerAfter": "(C_1+C_2x)e^{-4x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.55",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1\\cos 3x+C_2\\sin 3x",
+        "answerAfter": "C_1\\cos 3x+C_2\\sin 3x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.77",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "e^{-x}(C_1\\cos2x+C_2\\sin2x)",
+        "answerAfter": "e^{-x}(C_1\\cos2x+C_2\\sin2x)",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.78",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "y''-4y'+13y=0",
+        "answerAfter": "y''-4y'+13y=0",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.514",
+        "new": false,
+        "fields": [
+          "niva",
+          "poang",
+          "traningsniva"
+        ],
+        "answerBefore": 3,
+        "answerAfter": 3,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.101",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1\\cos4x+C_2\\sin4x",
+        "answerAfter": "C_1\\cos4x+C_2\\sin4x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.102",
+        "new": false,
+        "fields": [
+          "s",
+          "rättSvar"
+        ],
+        "answerBefore": "e^{-2x}(C_1\\cos3x+C_2\\sin3x)",
+        "answerAfter": "e^(-2*x)*(2*cos(3*x)+4*sin(3*x)/3)",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.27",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{2x}+3",
+        "answerAfter": "C_1e^x+C_2e^{2x}+3",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.28",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{-2x}-2x-1",
+        "answerAfter": "C_1e^x+C_2e^{-2x}-2x-1",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.29",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^{2x}+C_2e^{3x}+\\frac32e^x",
+        "answerAfter": "C_1e^{2x}+C_2e^{3x}+\\frac32e^x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.30",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{2x}-xe^x",
+        "answerAfter": "C_1e^x+C_2e^{2x}-xe^x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.31",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1\\cos2x+C_2\\sin2x+\\frac83\\cos x",
+        "answerAfter": "C_1\\cos2x+C_2\\sin2x+\\frac83\\cos x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.79",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{-2x}-4",
+        "answerAfter": "C_1e^x+C_2e^{-2x}-4",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.103",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{-x}+\\frac43e^{2x}",
+        "answerAfter": "C_1e^x+C_2e^{-x}+\\frac43e^{2x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.105",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1\\cos x+C_2\\sin x+3x-2",
+        "answerAfter": "C_1\\cos x+C_2\\sin x+3x-2",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.106",
+        "new": false,
+        "fields": [
+          "t",
+          "traningsniva",
+          "spel"
+        ],
+        "answerBefore": "\\frac12x^2e^{2x}",
+        "answerAfter": "\\frac12x^2e^{2x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.151",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{-x}-6",
+        "answerAfter": "C_1e^x+C_2e^{-x}-6",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.152",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1e^x+C_2e^{2x}+\\frac16e^{4x}",
+        "answerAfter": "C_1e^x+C_2e^{2x}+\\frac16e^{4x}",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.155",
+        "new": false,
+        "fields": [
+          "svarFormat"
+        ],
+        "answerBefore": "C_1\\cos2x+C_2\\sin2x+\\frac13\\cos x",
+        "answerAfter": "C_1\\cos2x+C_2\\sin2x+\\frac13\\cos x",
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.134",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          -1,
+          2,
+          1
+        ],
+        "answerAfter": [
+          -1,
+          2,
+          1
+        ],
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "4.172",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          2,
+          0,
+          -1
+        ],
+        "answerAfter": [
+          2,
+          0,
+          -1
+        ],
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.246",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 11309.7336,
+        "answerAfter": 11309.733552923255,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.247",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 62.8319,
+        "answerAfter": 62.83185307179586,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.248",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 188.4956,
+        "answerAfter": 188.49555921538757,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.249",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": -6.0,
+        "answerAfter": -6.0,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.250",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 6.4,
+        "answerAfter": 6.4,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.251",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": -12.0,
+        "answerAfter": -12.0,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.252",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 108,
+        "answerAfter": 108,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.253",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 75,
+        "answerAfter": 75,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.254",
+        "new": false,
+        "fields": [
+          "t",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 6.0,
+        "answerAfter": 6.0,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.255",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 50.2655,
+        "answerAfter": 50.26548245743669,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.256",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 56.5487,
+        "answerAfter": 56.548667764616276,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.257",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 37.6991,
+        "answerAfter": 37.69911184307752,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.258",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 3.1416,
+        "answerAfter": 3.141592653589793,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.259",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 12.5664,
+        "answerAfter": 12.566370614359172,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.260",
+        "new": false,
+        "fields": [
+          "t",
+          "rättSvar",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": -6.2832,
+        "answerAfter": -6.283185307179586,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.261",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "3600*pi",
+        "answerAfter": 11309.733552923255,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.262",
+        "new": false,
+        "fields": [
+          "t",
+          "miniräknare",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": -6,
+        "answerAfter": -6,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.263",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "miniräknare",
+          "tolerans",
+          "svarEnhet"
+        ],
+        "answerBefore": 108,
+        "answerAfter": 108,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.264",
+        "new": false,
+        "fields": [
+          "t",
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "11520*pi",
+        "answerAfter": 36191.14736935442,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.265",
+        "new": false,
+        "fields": [
+          "t",
+          "miniräknare",
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "12/pi",
+        "answerAfter": 3.819718634205488,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.266",
+        "new": false,
+        "fields": [
+          "svarstyp",
+          "rättSvar",
+          "tolerans",
+          "svarFormat",
+          "svarEnhet"
+        ],
+        "answerBefore": "1680*pi",
+        "answerAfter": 5277.875658030853,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.292",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": -0.15,
+        "answerAfter": -0.15,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.293",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 2.0,
+        "answerAfter": 2.0,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.295",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 3.82,
+        "answerAfter": 3.82,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.296",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 6.11,
+        "answerAfter": 6.11,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.298",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          12.566370614359172,
+          25.132741228718345
+        ],
+        "answerAfter": [
+          12.566370614359172,
+          25.132741228718345
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.300",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": "6*pi",
+        "answerAfter": "6*pi",
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.303",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": -0.6666666666666666,
+        "answerAfter": -0.6666666666666666,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.306",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          -0.6,
+          6.0
+        ],
+        "answerAfter": [
+          -0.6,
+          6.0
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.307",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 0.39,
+        "answerAfter": 0.39,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.308",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": -27.398223686155035,
+        "answerAfter": -27.398223686155035,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.309",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": -7.5,
+        "answerAfter": -7.5,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.310",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 2.647975236512909,
+        "answerAfter": 2.647975236512909,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.311",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 24.331050121192877,
+        "answerAfter": 24.331050121192877,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.275",
+        "new": false,
+        "fields": [
+          "t",
+          "s",
+          "ledtrad"
+        ],
+        "answerBefore": -1,
+        "answerAfter": -1,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.284",
+        "new": false,
+        "fields": [
+          "t",
+          "ledtrad"
+        ],
+        "answerBefore": -1,
+        "answerAfter": -1,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.330",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 1,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.331",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 6,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.332",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 1,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.333",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat"
+        ],
+        "answerBefore": null,
+        "answerAfter": [
+          "-sqrt(2)",
+          "sqrt(2)"
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.334",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 0,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.335",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": -3,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.336",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": -16,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.337",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 3,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.338",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 1.5121345516578424,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "3.339",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 2,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.569",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 6,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.570",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 4,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.571",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 2,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.572",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans",
+          "svarsstruktur",
+          "svarEtiketter"
+        ],
+        "answerBefore": null,
+        "answerAfter": [
+          -1,
+          1
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.573",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 7,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.574",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans",
+          "svarsstruktur",
+          "svarEtiketter"
+        ],
+        "answerBefore": null,
+        "answerAfter": [
+          -2,
+          1
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.575",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans"
+        ],
+        "answerBefore": null,
+        "answerAfter": 5,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "4.576",
+        "new": true,
+        "fields": [
+          "id",
+          "kap",
+          "omr",
+          "familj",
+          "niva",
+          "poang",
+          "traningsniva",
+          "typ",
+          "t",
+          "s",
+          "ledtrad",
+          "formaga",
+          "miniräknare",
+          "geogebra",
+          "spel",
+          "självrättning",
+          "svarstyp",
+          "rättSvar",
+          "svarFormat",
+          "tolerans",
+          "svarsstruktur",
+          "svarEtiketter"
+        ],
+        "answerBefore": null,
+        "answerAfter": [
+          2,
+          8
+        ],
+        "calculator": true,
+        "geogebra": false
+      }
+    ],
+    "mato2": [
+      {
+        "id": "2.19",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.26",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.74",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.100",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.125",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          502.6548245743669,
+          28.125
+        ],
+        "answerAfter": [
+          502.6548245743669,
+          28.125
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "2.179",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.181",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.183",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.184",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          6,
+          0.3
+        ],
+        "answerAfter": [
+          6,
+          0.3
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "2.185",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.212",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 1,
+        "answerAfter": 1,
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "2.221",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.222",
+        "new": false,
+        "fields": [
+          "t",
+          "svarEnhet"
+        ],
+        "answerBefore": 1,
+        "answerAfter": 1,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.223",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.248",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.250",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.258",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": null,
+        "answerAfter": null,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.259",
+        "new": false,
+        "fields": [
+          "t",
+          "svarEnhet"
+        ],
+        "answerBefore": 4,
+        "answerAfter": 4,
+        "calculator": true,
+        "geogebra": true
+      },
+      {
+        "id": "2.523",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 30,
+        "answerAfter": 30,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "2.526",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 0.2,
+        "answerAfter": 0.2,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "2.527",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 30,
+        "answerAfter": 30,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "2.556",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 14,
+        "answerAfter": 14,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "2.557",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 2,
+        "answerAfter": 2,
+        "calculator": false,
+        "geogebra": false
+      },
+      {
+        "id": "3.525",
+        "new": false,
+        "fields": [
+          "spelDelar"
+        ],
+        "answerBefore": [
+          10.25,
+          -0.039
+        ],
+        "answerAfter": [
+          10.25,
+          -0.039
+        ],
+        "calculator": true,
+        "geogebra": false
+      },
+      {
+        "id": "3.530",
+        "new": false,
+        "fields": [
+          "t"
+        ],
+        "answerBefore": 52.5,
+        "answerAfter": 52.5,
+        "calculator": true,
+        "geogebra": false
+      }
+    ]
+  }
+}
