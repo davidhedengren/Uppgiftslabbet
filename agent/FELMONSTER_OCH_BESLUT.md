@@ -1766,3 +1766,24 @@ Det finns tillräckligt med representanter för den typen.
 
 En flervalsfråga om att välja det värde som ger störst eller minst Sx måste ha
 en tydlig marginal mellan alternativen. Kontrollera alla alternativ numeriskt.
+
+## FP85 – tangensgrafer och deriverbarhet med figurer
+
+2026-10-21: Ma4 2.605–2.612 (tan_kurvan) och Ma3c 3.1157–3.1164 (deriverbarhet)
+dokumenteras i `MA3_MA4_FIGURER_2026-10-21.md`.
+
+Tangensgrafer:
+
+- Bryt kurvan vid asymptoterna, aldrig med en lodrät förbindelselinje, och streckmarkera asymptoterna.
+- Gradetiketter på x-axeln.
+
+Deriverbarhet:
+
+- Hopp ritas med ofylld och ifylld ändpunkt.
+- Pröva både värde och lutning i skarven.
+- Kontinuitet räcker inte för deriverbarhet (|x|), och en lodrät tangent ger ingen derivata (∛x).
+
+13 äldre uppgifter i området deriverbarhet handlar om extrempunkter. Flytta dem
+inte utan användarens beslut, eftersom elevresultaten följer området.
+
+Skydd: `tools/ma3-ma4-figurer-2026-10-21.test.js`.
