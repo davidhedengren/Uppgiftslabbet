@@ -106,3 +106,11 @@ med facit avrundat till elevens precision, inte med en godtyckligt stor felmargi
 Bevara krav på exakt form och angiven precision när frågan faktiskt ställer dem.
 Antal och andra exakta heltal ska fortfarande vara korrekta; fel enhet eller
 felaktigt avrundade tal ska inte godtas. Kontrollera detta i verkliga svarsfält.
+
+## Fysik: placering av svarsinstruktioner
+
+Skriv enhet, avrundning och särskilda krav på svaret i parentes efter själva
+frågan, även på fristående delkort: ”Hur lång tid är pilen i luften?
+(Svara i s med två decimaler.)” Behåll nödvändiga förutsättningar och vald
+positiv riktning. Kontrollera att enhet och precision stämmer med facit och
+självrättning. Lägg inte till avrundningskrav som eleven inte behöver.

@@ -1431,3 +1431,16 @@ redan som 6x+4 i förenklat_polynom. Samma gäller 1.11/18/26/27/70.
 reproducera felet. Testa faktisk inmatning och bevara kravet på förenklad form.
 Elevens historiska fullständiga inmatning är okänd. Sex granskade, inga
 innehållsändringar. Skydd: konsumentens tools/felrapporter-2026-10-21-1113.browser.cjs.
+
+## FP75 – fysikens svarsinstruktioner, mätarscheman och beständiga enheter
+
+2026-10-21: Se `GRANSKNING_2026-10-21_1300.md` och fullständig före/efter-lista
+`FYSIK_SVARSINSTRUKTIONER_2026-10-21.json`. Svarsinstruktioner ska stå i
+parentes efter frågan, även på egna delkort. Bevara fysikens nödvändiga
+förutsättningar. Kopplingsfrågorna fy1 8.382/8.383 har nu schemaalternativ
+A–C. Återställ inte till enbart textalternativ. Matf1 3.303/3.308 behöver
+explicit mörka färger och vit bakgrund för kontrast även i mörkt läge.
+Enhet ska synas ovanför svarsfältet, inte enbart i en platshållare som
+försvinner när eleven skriver. Fullprecision i maskinfacit ska hållas skild
+från det avrundade elevfacit. Regression: `tools/felrapporter-2026-10-21-1300.test.js`
+och konsumentens motsvarande browsertest.
