@@ -1515,3 +1515,36 @@ ska referensen anges tydligt: golv, band respektive vatten. En båts fart
 relativt vattnet är inte farten tvärs över ån när strömmen kompenseras.
 Visa riktningar med tydliga pilar och låt komponentförhållanden stämma i figuren.
 Skydd: `tools/fysik1-vektorer-2026-10-21.test.js` och motsvarande browsertest.
+
+## FP82 – mäta med multimeter
+
+2026-10-21: Det nya området `multimeter` i kap 8 och fy1 8.530–8.549
+dokumenteras i `FYSIK1_MULTIMETER_2026-10-21.md`. Mätaren följer Mollic MS8201:
+COM alltid, µA mA V Ω Hz högst 400 mA och 10A för större strömmar, med områdena
+4000 µA, 400 mA och 10 A. När frågan ber om den noggrannaste mätningen är det
+minsta område som räcker rätt, och ett större område som fungerar är fel.
+Vredet får inte visa svaret i uttags- eller lägesfrågor.
+Amperemetern kopplas i serie och voltmetern parallellt. Resistans mäts utan
+spänningskälla.
+Skydd: `tools/fysik1-multimeter-2026-10-21.test.js`.
+
+## FP83 – figurer utan bredd blir för stora
+
+2026-10-21: Användaren påpekade att flera äldre figurer, till exempel fy1 8.383,
+var väldigt stora. Orsaken var inbäddade SVG utan width-attribut och utan
+width/max-width i style. De fyller hela uppgiftens bredd, cirka 880 px på dator,
+och tre scheman i samma uppgift blev mycket höga.
+
+Åtgärden är deterministisk. Varje sådan SVG fick
+`style="width:100%;max-width:<viewBox-bredd>px"`, och inget annat ändrades.
+Det gällde 59 figurer i 52 uppgifter i fy1 (bland annat 8.382, 8.383, 2.321–2.342,
+3.440–3.452, 9.7, 9.96 och 9.301), 1 i matf1 (3.308) och 14 i mato2
+(2.14, 2.125, 2.184 och 2.264–2.268).
+
+fy2 2.12 och 2.13 hade en uttrycklig storlek på 380×801 respektive 380×886 px. De
+krymptes till 260 px bredd, med höjden i samma proportion, så att skalan
+fortfarande är läsbar.
+
+Breda diagram med avsiktlig maxbredd på 640–700 px och rimlig höjd lämnades orörda.
+Nya figurer ska alltid ha en bredd eller maxbredd.
+Skydd: `tools/svg-bredd-2026-10-21.test.js`.
