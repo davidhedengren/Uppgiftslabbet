@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-21",
+  "area": "effekt",
+  "scope": "Ny rutinvariation; sex befintliga jämförda för fysik, facit och verktyg, inte full ny UX-granskning av hela området.",
+  "before": 110,
+  "after": 116,
+  "figuresBefore": 2,
+  "figuresAfter": 8,
+  "reviewedExisting": [
+    "5.251",
+    "5.254",
+    "5.261",
+    "5.325",
+    "5.264",
+    "5.270"
+  ],
+  "changedExisting": [],
+  "reviewedNoError": [
+    {
+      "id": "5.251",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 15000 J på 20 s ger 750 W. Facit förklarar joule per sekund."
+    },
+    {
+      "id": "5.254",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 500 W i 10 s och 1000 W i 30 s ger 35 kJ och 875 W över hela tiden. Tidsviktningen förklaras."
+    },
+    {
+      "id": "5.261",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 600 N längs rörelsen vid 2,0 m/s ger 1200 W."
+    },
+    {
+      "id": "5.325",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 0,75 av 800 W ger 600 W nyttig effekt."
+    },
+    {
+      "id": "5.264",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 1053/1300 = 81 % och 1620/0,81 = 2000 W. Det separata b-kortet anger sin egen verkningsgrad."
+    },
+    {
+      "id": "5.270",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: 260 W under totalt 67,5 h ger 17,55 kWh, korrekt avrundat till 17,6 kWh."
+    }
+  ],
+  "new": [
+    {
+      "id": "5.623",
+      "level": 1,
+      "note": "500 W från 3 kJ på 6 s i ett arbetsdiagram. Nivå 1."
+    },
+    {
+      "id": "5.624",
+      "level": 2,
+      "note": "A ger 500 W och B 300 W; störst arbete behöver inte ge störst effekt. Nivå 2."
+    },
+    {
+      "id": "5.625",
+      "level": 1,
+      "note": "600 J nyttigt av 800 J tillfört ger 75 %. Energiflöde med 200 J värme. Nivå 1."
+    },
+    {
+      "id": "5.626",
+      "level": 2,
+      "note": "Två effektlägen ger 0,04 + 0,02 = 0,06 kWh. Nivå 2."
+    },
+    {
+      "id": "5.627",
+      "level": 1,
+      "note": "60 W vid 0,50 m/s ger dragkraften 120 N. Kraft och rörelse åt vänster. Nivå 1."
+    },
+    {
+      "id": "5.628",
+      "level": 2,
+      "note": "Mätarökning 0,3 kWh på 0,25 h ger 1,2 kW. Startvärdet ska dras bort. Nivå 2."
+    }
+  ],
+  "browser": {
+    "batch": "effekt",
+    "ids": [
+      "5.623",
+      "5.624",
+      "5.625",
+      "5.626",
+      "5.627",
+      "5.628"
+    ],
+    "checks": 64,
+    "views": 12,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "reportsUpdated": false
+}

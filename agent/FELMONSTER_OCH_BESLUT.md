@@ -1681,3 +1681,41 @@ och facit, inte till frågetext. Ekvationen i ett facit måste ändå förklaras
 ange vad termerna står för (9.329), inte bara algebra utan fysikalisk koppling.
 Skydd: `fysik1-standardmodellen-2026-10-21.test.js`, partiklar/medicin-testet
 och konsumentens kompletteringsprov med argument `standard`.
+
+## FP87 – rutinvariation är mer än nya tal eller nya maskinnamn
+
+2026-10-21: användaren ber att lämna återstående kärn-/partikeldelar och
+komplettera andra rutinområden med variation. Effekt 110 → 116 uppgifter,
+2 → 8 figurer. Nya 5.623–5.628, se fullständig ID-/kommentarslista i
+`FYSIK1_RUTINVARIATION_EFFEKT_2026-10-21.md` och JSON.
+
+Variera representation (diagram, tabell, energiflöde, instrumentavläsning),
+frågans riktning (effekt/kraft/energi) och faktisk tankegång, inte bara siffror.
+Enkla nivåer får fortfarande ha figur. Fler textkloner behövs inte bara för
+att en familj har många uppgifter. I facit: visa kJ→J och min→h när det behövs,
+varje tidsdel och skillnaden mellan två mätarställningar.
+
+Pilspetsen i en SVG avgör riktningen, inte banans start-/slutordning.
+Vid positiv effekt från en vinsch längs rörelsen ska kraft och fart peka
+åt samma håll (5.627). Kontrollera visuellt och håll regression för spetsen.
+Skydd: effektvariationstestet, utökat äldre effekttest och konsumentens
+kompletteringsprov med argument `effekt`.
+
+## FP87 – rutinvariation är mer än nya tal eller nya maskinnamn
+
+2026-10-21: användaren ber att lämna återstående kärn-/partikeldelar och
+komplettera andra rutinområden med variation. Effekt 110 → 116 uppgifter,
+2 → 8 figurer. Nya 5.623–5.628, se fullständig ID-/kommentarslista i
+`FYSIK1_RUTINVARIATION_EFFEKT_2026-10-21.md` och JSON.
+
+Variera representation (diagram, tabell, energiflöde, instrumentavläsning),
+frågans riktning (effekt/kraft/energi) och faktisk tankegång, inte bara siffror.
+Enkla nivåer får fortfarande ha figur. Fler textkloner behövs inte bara för
+att en familj har många uppgifter. I facit: visa kJ→J och min→h när det behövs,
+varje tidsdel och skillnaden mellan två mätarställningar.
+
+Pilspetsen i en SVG avgör riktningen, inte banans start-/slutordning.
+Vid positiv effekt från en vinsch längs rörelsen ska kraft och fart peka
+åt samma håll (5.627). Kontrollera visuellt och håll regression för spetsen.
+Skydd: effektvariationstestet, utökat äldre effekttest och konsumentens
+kompletteringsprov med argument `effekt`.
