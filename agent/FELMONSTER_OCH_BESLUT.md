@@ -1645,3 +1645,21 @@ Se `MULTIMETER_VARIATION_2026-10-21_1836.md` och JSON-listan med samtliga
 
 Skydd: det utökade `tools/multimeter-inkoppling-2026-10-21.test.js` och
 konsumentens motsvarande browsertest (44 kort, 334 svarskontroller, 88 vyer).
+
+## FP85 – medicinska bilder, pulsantal och motsatta tidskrav
+
+2026-10-21: åtta nya fy1 9.436–9.443 i `medicinska_metoder`, se
+`FYSIK1_MEDICINSKA_METODER_2026-10-21.md` med fullständig ID-lista och
+kommentarsförslag. 13 → 21 huvuduppgifter, figurer 1 → 9.
+
+Skilj yttre röntgenkälla från spårämne i kroppen; minskad detektorsignal från
+kvarvarande andel; absorberad energi från dos per kilogram; registrerade
+pulser från aktivitet. Bakgrund dras från samma mättid. En lämplig
+halveringstid måste kunna uppfylla både tidigt och sent aktivitetskrav.
+Pröva båda, som i 9.443. 9.438 anger dosbidrag i tumören utan att påstå att
+annan vävnad slipper strålning. Pulsantalet i 9.441 är diskret och exakt
+beräknat från de givna värdena (`antal_satt`). Nivå 1 innehåller raka
+avläsningar och ett direkt samband; de två tidskraven i 9.443 är nivå 3.
+
+Skydd: `tools/fysik1-medicinska-metoder-2026-10-21.test.js`, utökat äldre
+partiklar/medicin-test och konsumentens `fysik1-kompletteringar-2026-10-21.browser.cjs medicin`.

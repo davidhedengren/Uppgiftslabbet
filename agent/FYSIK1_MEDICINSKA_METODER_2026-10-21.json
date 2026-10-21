@@ -1,0 +1,161 @@
+{
+  "area": "medicinska_metoder",
+  "date": "2026-10-21",
+  "before": 13,
+  "after": 21,
+  "figuresBefore": 1,
+  "figuresAfter": 9,
+  "reviewedExisting": [
+    "9.3",
+    "9.12",
+    "9.28",
+    "9.56",
+    "9.92",
+    "9.296",
+    "9.297",
+    "9.298",
+    "9.299",
+    "9.300",
+    "9.301",
+    "9.302",
+    "9.303"
+  ],
+  "changedExisting": [],
+  "reviewedNoError": [
+    {
+      "id": "9.3",
+      "suggestedComment": "Granskad – inget fel: Tre halveringstider ger 50 MBq; behandlingsfrågans fria förklaring bevarad."
+    },
+    {
+      "id": "9.12",
+      "suggestedComment": "Granskad – inget fel: Maxenergi 60 keV och kortaste våglängd cirka 2,07·10⁻¹¹ m."
+    },
+    {
+      "id": "9.28",
+      "suggestedComment": "Granskad – inget fel: Effektiv halveringstid 80/11 dygn; kortets eget 7,27 används i den separata b-beräkningen."
+    },
+    {
+      "id": "9.56",
+      "suggestedComment": "Granskad – inget fel: 210 minuter ger cirka 5,325 GBq från 20 GBq vid T=110 min."
+    },
+    {
+      "id": "9.92",
+      "suggestedComment": "Granskad – inget fel: 0,30 J och cirka 4,78·10⁻⁴ K per behandling; strålverkan ska inte likställas med uppvärmning."
+    },
+    {
+      "id": "9.296",
+      "suggestedComment": "Granskad – inget fel: Fyra halveringar ger 50 MBq."
+    },
+    {
+      "id": "9.297",
+      "suggestedComment": "Granskad – inget fel: Gammastrålning som lämnar kroppen kan registreras utifrån."
+    },
+    {
+      "id": "9.298",
+      "suggestedComment": "Granskad – inget fel: Två fotoner à 511 keV ger 1022 keV."
+    },
+    {
+      "id": "9.299",
+      "suggestedComment": "Granskad – inget fel: Kortare halveringstid ger snabbare avtagande aktivitet vid samma startaktivitet."
+    },
+    {
+      "id": "9.300",
+      "suggestedComment": "Granskad – inget fel: Tre halveringar ger 12,5 % kvar."
+    },
+    {
+      "id": "9.301",
+      "suggestedComment": "Granskad – inget fel: Flera dosbidrag möts i tumören medan frisk vävnad på vägen får färre bidrag."
+    },
+    {
+      "id": "9.302",
+      "suggestedComment": "Granskad – inget fel: 500·2^(−20/8) ≈ 88,388 MBq."
+    },
+    {
+      "id": "9.303",
+      "suggestedComment": "Granskad – inget fel: Vanlig röntgen använder elektromagnetisk röntgenstrålning."
+    }
+  ],
+  "new": [
+    {
+      "id": "9.436",
+      "level": 1,
+      "note": "Bild B: strålkällan finns i patienten, till skillnad från den yttre röntgenkällan. Nivå 1."
+    },
+    {
+      "id": "9.437",
+      "level": 2,
+      "note": "Minskning från 800 till 300 fotoner: (800−300)/800 = 62,5 %. Nivå 2."
+    },
+    {
+      "id": "9.438",
+      "level": 1,
+      "note": "Fyra dosbidrag à 0,8 Gy ger 3,2 Gy i tumören. Nivå 1."
+    },
+    {
+      "id": "9.439",
+      "level": 1,
+      "note": "Aktivitetsgrafens 160 MBq blir 80 MBq efter 3 h. Nivå 1."
+    },
+    {
+      "id": "9.440",
+      "level": 2,
+      "note": "180 MBq ska återstå efter två halveringar: startaktivitet 720 MBq. Nivå 2."
+    },
+    {
+      "id": "9.441",
+      "level": 1,
+      "note": "180 uppmätta pulser minus 60 bakgrundspulser under samma tid ger 120. Diskret antal, inte aktivitet. Nivå 1."
+    },
+    {
+      "id": "9.442",
+      "level": 2,
+      "note": "A får 0,20 Gy och B 0,10 Gy vid samma absorberade 2 mJ. Nivå 2."
+    },
+    {
+      "id": "9.443",
+      "level": 3,
+      "note": "B ger 50 % efter 2 h och cirka 0,0244 % efter 24 h och klarar båda kraven. A minskar för snabbt, C för långsamt. Nivå 3."
+    }
+  ],
+  "additionalNumericComparisons": [
+    "9.431",
+    "9.432",
+    "9.435"
+  ],
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "browser": {
+    "batch": "medicin",
+    "ids": [
+      "9.436",
+      "9.437",
+      "9.438",
+      "9.439",
+      "9.440",
+      "9.441",
+      "9.442",
+      "9.443"
+    ],
+    "checks": 86,
+    "views": 16,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "reportsUpdated": false
+}
