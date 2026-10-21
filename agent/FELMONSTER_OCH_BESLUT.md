@@ -1484,3 +1484,13 @@ Förklara skillnaden mellan acceleration och retardationens storlek utan att
 likställa negativa svar med fel när frågan faktiskt gäller acceleration.
 Skydd: `tools/fysik1-acceleration-2026-10-21.test.js` och konsumentens
 motsvarande browsertest.
+
+## FP79 – position, sträcka och tangent i läge–tid-diagram
+
+2026-10-21: Nya fy1 3.449–3.454 dokumenteras i
+`FYSIK1_ST_DIAGRAM_2026-10-21.md`. Skilj position från körd sträcka.
+Position noll betyder inte stillastående och negativ position betyder inte
+negativ hastighet. Summera delsträckornas positiva längder vid vändning.
+Momentanhastighet avläses från tangentens lutning, inte sekanten från start.
+Utritad tangent och tydliga rutnät gör uppgiften självständig i Kunskapsgymmet.
+Skydd: `tools/fysik1-st-diagram-2026-10-21.test.js` och motsvarande browsertest.
