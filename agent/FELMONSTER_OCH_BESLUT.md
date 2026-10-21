@@ -1494,3 +1494,14 @@ negativ hastighet. Summera delsträckornas positiva längder vid vändning.
 Momentanhastighet avläses från tangentens lutning, inte sekanten från start.
 Utritad tangent och tydliga rutnät gör uppgiften självständig i Kunskapsgymmet.
 Skydd: `tools/fysik1-st-diagram-2026-10-21.test.js` och motsvarande browsertest.
+
+## FP80 – arean under accelerationsgrafen är en hastighetsändring
+
+2026-10-21: Nya fy1 3.455–3.460 dokumenteras i
+`FYSIK1_AT_DIAGRAM_2026-10-21.md`. Lägg till starthastigheten när arean
+under a-t-grafen har beräknats. Noll acceleration betyder konstant hastighet,
+inte nödvändigtvis vila. Riktningsbyte sker när hastigheten passerar noll.
+Vid sträckberäkning i flera intervall ska föregående sluthastighet bli nästa
+starthastighet; visa även delsträckorna i lösningen. Testa teckenfel och
+förväxling mellan acceleration, hastighetsändring och sträcka.
+Skydd: `tools/fysik1-at-diagram-2026-10-21.test.js` och motsvarande browsertest.
