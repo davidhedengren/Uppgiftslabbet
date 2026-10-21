@@ -60,3 +60,21 @@ test('Vredet avslöjar inte svaret i uttags-, läges- och växelspänningsfrågo
  for(const id of ['8.531','8.532','8.533','8.535','8.536','8.537','8.538','8.539','8.541'])assert.ok(q(id).t.includes(OFF),id);
  assert.ok(!q('8.540').t.includes(OFF)); // OL-uppgiften visar 4000 µA
 });
+
+test('Förslag B (8.550–8.565) och mindre multimeterfigurer',()=>{
+ const nya=Array.from({length:16},(_,i)=>'8.'+(550+i));
+ for(const id of nya){
+  const t=q(id);assert.equal(b.filter(x=>x.id===id).length,1,id);
+  assert.equal(t.omr,'multimeter');assert.equal(t.svarstyp,'alternativ');assert.ok(t.t.includes('<svg'),id);
+  assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);
+  assert.ok(!/µA mA \/ V/.test(JSON.stringify(t)),id);
+  for(const m of t.t.matchAll(/max-width:(\d+)px/g))assert.ok(Number(m[1])<=440,id);
+ }
+ assert.deepEqual(ratta('8.550'),['B och C']);assert.deepEqual(ratta('8.551'),['A och C']);
+ assert.deepEqual(ratta('8.558'),['COM och 10A']);           // 0,65 A > 400 mA
+ assert.deepEqual(ratta('8.560'),['4000 µA']);               // 250 µA
+ assert.deepEqual(ratta('8.561'),['0 V']);
+ assert.match(ratta('8.564')[0],/400 mA; i serie/);           // 6 V / 300 Ω = 20 mA
+ assert.equal(6/300,0.02);
+ for(let i=530;i<=541;i++)assert.ok(q('8.'+i).t.includes('max-width:240px'),'8.'+i);
+});

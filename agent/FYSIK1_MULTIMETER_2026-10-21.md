@@ -65,3 +65,39 @@ Mätarens data följer förlagan:
 - Test: `tools/fysik1-multimeter-2026-10-21.test.js`.
 
 Kunskapsgymmet har ännu ingen genomgång kopplad till området.
+
+## Tillägg: förslag B och mindre figurer (samma dag)
+
+Användaren bad att förslaget `multimeter-forslag-b.zip` skulle läggas till.
+Uppgifterna MM-B01–B16 är importerade som 8.550–8.565 i samma område. Namnet
+"Mäta med multimeter" behålls enligt användaren, och området är fristående, inte
+grupperat med "Spänning och resistans".
+
+Importen:
+
+- Facit är kontrollerade. 0,65 A = 650 mA ger 10A-uttaget. 250 µA ger 4000 µA.
+  6 V / 300 Ω = 20 mA ger 400 mA. Två punkter på samma ledning ger 0 V. Ett
+  minustecken betyder omvända mätspetsar.
+- Uttagsnamnet "µA mA / V Ω Hz" är ändrat till "µA mA V Ω Hz", som i övriga uppgifter.
+- Delmoment:
+  - Koppla in: B01–B05, B12, B15 och B16.
+  - Uttag: B06–B09 och B14.
+  - Funktion och mätområde: B10, B11 och B13.
+- Bild A/B i B05, samt schemat och mätaren i B15, ligger i egna figurrutor.
+- Förslaget har inga kommentarer per alternativ. Lösningen förklarar felalternativen.
+
+Användaren tyckte att multimeterbilderna var väldigt stora i Uppgiftslabbet.
+Därför är maxbredderna nu:
+
+- 240 px för 8.530–8.541, som tidigare var 320 px,
+- 300 px för förslagets multimetrar, som har mindre text,
+- 440 px för kopplingsscheman.
+
+Etiketterna är kontrollerade på skärmbild och är läsbara.
+
+Förslagets README anger egna regler: inga ord som DC/AC eller likström/växelström
+i elevtexten, och sladdfärger avgör inte rätt eller fel. 8.530–8.549 har inte
+anpassats efter dessa regler. Användaren tillfrågas.
+
+Verifiering: alla 16 nya kort rättas korrekt i Kunskapsgymmet, både med rätt och
+med felaktigt val. Området har 36 uppgifter: koppla in 16, uttag 11 och mätområde 9.
