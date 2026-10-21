@@ -28,3 +28,4 @@ Varje runda följer samma arbetssätt:
 | Runda | Bank / område | Nya ID | Innehåll |
 |---|---|---|---|
 | 1 | Ma2 yttervinkelsatsen (2b/2c) | 3.555–3.562 | Otydliga yttervinklar: en sträcka i triangeln, en inre punkt, en roterad triangel, vertikalvinkel och två yttervinklar. Med x: delad triangel och inre punkt. Känna igen en yttervinkel. Figurer med vinklar som stämmer med siffrorna. |
+| 2 | Ma3c När ger sinussatsen två fall? (1c) | 4.496–4.505 | Området hade bara 5 självrättande uppgifter. Nu: supplementvinkel med samma sinus, antal trianglar i SSA-fallet (0/1/1/2 via h = b sin A) i ett nytt delmoment, båda vinklarna B, minsta vinkeln C och båda längderna c. Konstruktionsfigurer med B₁/B₂. |
