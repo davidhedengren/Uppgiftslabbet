@@ -1,0 +1,260 @@
+[
+  {
+    "id": "3.126",
+    "before": {
+      "id": "3.126",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "poang": "(2/0/0)",
+      "t": "<p>Ett tåg färdas 340 km på 2 timmar och 50 minuter. Bestäm medelfarten i km/h.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Tiden är</p><div class=\"facit-matte\">\\[2+\\frac{50}{60}=\\frac{17}{6}\\, \\mathrm{h}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Medelfarten är</p><div class=\"facit-matte\">\\[\\frac{340}{\\frac{17}{6}}=120\\, \\mathrm{km/h}\\]</div></div></div></div></div>",
+      "familj": "Medelhastighet och medelfart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__medelhastighet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 120,
+      "tolerans": 0,
+      "självrättning": true,
+      "ledtrad": "<p>50 minuter är en del av en timme, inte 0,50 timmar.</p>",
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "km/h",
+      "svarFormat": "numeriskt",
+      "miniräknare": true,
+      "geogebra": false,
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Medelhastighet"
+      ]
+    },
+    "after": {
+      "id": "3.126",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "poang": "(2/0/0)",
+      "t": "<p>Ett tåg färdas 340 km på 2 timmar och 50 minuter. Vilken är tågets medelfart? (Svara i km/h.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Tiden är</p><div class=\"facit-matte\">\\[2+\\frac{50}{60}=\\frac{17}{6}\\, \\mathrm{h}\\]</div></div></div><div class=\"facit-stycke\"><div class=\"facit-berakning\"><p class=\"facit-metod\">Medelfarten är</p><div class=\"facit-matte\">\\[\\frac{340}{\\frac{17}{6}}=120\\, \\mathrm{km/h}\\]</div></div></div></div></div>",
+      "familj": "Medelhastighet och medelfart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__medelhastighet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 120,
+      "tolerans": 0,
+      "självrättning": true,
+      "ledtrad": "<p>50 minuter är en del av en timme, inte 0,50 timmar.</p>",
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "spel": true,
+      "svarEnhet": "km/h",
+      "svarFormat": "numeriskt",
+      "miniräknare": true,
+      "geogebra": false,
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Medelhastighet"
+      ]
+    }
+  },
+  {
+    "id": "3.259",
+    "before": {
+      "id": "3.259",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "omvandla m/s till km/h",
+      "poang": "(1/0/0)",
+      "t": "<p>En elsparkcykel kör i 10 m/s. Ange farten i km/h.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">För att gå från m/s till km/h multiplicerar man med 3,6.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[10\\cdot3{,}6=36\\ \\mathrm{km/h}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(36\\ \\mathrm{km/h}\\).</p></div>",
+      "familj": "Sträcka, tid och fart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__likformig_rorelse",
+      "svarstyp": "numeriskt",
+      "rättSvar": 36,
+      "tolerans": 0,
+      "självrättning": true,
+      "ledtrad": "<p>Hur hänger m/s och km/h ihop?</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "km/h",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Likformig rörelse"
+      ]
+    },
+    "after": {
+      "id": "3.259",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "omvandla m/s till km/h",
+      "poang": "(1/0/0)",
+      "t": "<p>En elsparkcykel kör i 10 m/s. Hur stor är farten uttryckt i kilometer per timme? (Svara i km/h.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">För att gå från m/s till km/h multiplicerar man med 3,6.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[10\\cdot3{,}6=36\\ \\mathrm{km/h}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(36\\ \\mathrm{km/h}\\).</p></div>",
+      "familj": "Sträcka, tid och fart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__likformig_rorelse",
+      "svarstyp": "numeriskt",
+      "rättSvar": 36,
+      "tolerans": 0,
+      "självrättning": true,
+      "ledtrad": "<p>Hur hänger m/s och km/h ihop?</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "km/h",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Likformig rörelse"
+      ]
+    }
+  },
+  {
+    "id": "3.260",
+    "before": {
+      "id": "3.260",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "omvandla km/h till m/s",
+      "poang": "(1/0/0)",
+      "t": "<p>En bil kör i 50 km/h. Ange farten i m/s.</p><p>Avrunda till en decimal.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">För att gå från km/h till m/s dividerar man med 3,6.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\frac{50}{3{,}6}\\approx13{,}9\\ \\mathrm{m/s}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(13{,}9\\ \\mathrm{m/s}\\).</p></div>",
+      "familj": "Sträcka, tid och fart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__likformig_rorelse",
+      "svarstyp": "numeriskt",
+      "rättSvar": 13.9,
+      "tolerans": 0.05,
+      "självrättning": true,
+      "ledtrad": "<p>Hur hänger km/h och m/s ihop?</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "m/s",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Likformig rörelse"
+      ]
+    },
+    "after": {
+      "id": "3.260",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "omvandla km/h till m/s",
+      "poang": "(1/0/0)",
+      "t": "<p>En bil kör i 50 km/h. Hur stor är farten uttryckt i meter per sekund? (Svara i m/s med en decimal.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">För att gå från km/h till m/s dividerar man med 3,6.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\frac{50}{3{,}6}\\approx13{,}9\\ \\mathrm{m/s}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(13{,}9\\ \\mathrm{m/s}\\).</p></div>",
+      "familj": "Sträcka, tid och fart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__likformig_rorelse",
+      "svarstyp": "numeriskt",
+      "rättSvar": 13.88888888888889,
+      "tolerans": 0.05,
+      "självrättning": true,
+      "ledtrad": "<p>Hur hänger km/h och m/s ihop?</p>",
+      "traningsniva": 1,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "m/s",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Likformig rörelse"
+      ]
+    }
+  },
+  {
+    "id": "3.262",
+    "before": {
+      "id": "3.262",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "bestämma medelfart med tidsomvandling",
+      "poang": "(1/0/0)",
+      "t": "<p>En elev cyklar 650 m på 2,5 min. Bestäm medelfarten i m/s.</p><p>Avrunda till en decimal.</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Skriv först tiden i sekunder.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[2{,}5\\ \\mathrm{min}=150\\ \\mathrm s\\]\\[v=\\frac{650}{150}\\approx4{,}3\\ \\mathrm{m/s}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4{,}3\\ \\mathrm{m/s}\\).</p></div>",
+      "familj": "Medelhastighet och medelfart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__medelhastighet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 4.3,
+      "tolerans": 0.05,
+      "självrättning": true,
+      "ledtrad": "<p>Börja med att skriva 2,0 minuter i sekunder.</p>",
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "m/s",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Medelhastighet"
+      ]
+    },
+    "after": {
+      "id": "3.262",
+      "kap": 2,
+      "omr": "medelhastighet",
+      "niva": "E",
+      "typ": "bestämma medelfart med tidsomvandling",
+      "poang": "(1/0/0)",
+      "t": "<p>En elev cyklar 650 m på 2,5 min. Vilken är elevens medelfart? (Svara i m/s med en decimal.)</p>",
+      "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Skriv först tiden i sekunder.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[2{,}5\\ \\mathrm{min}=150\\ \\mathrm s\\]\\[v=\\frac{650}{150}\\approx4{,}3\\ \\mathrm{m/s}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> \\(4{,}3\\ \\mathrm{m/s}\\).</p></div>",
+      "familj": "Medelhastighet och medelfart",
+      "formaga": [
+        "procedur"
+      ],
+      "familjNyckel": "hastighet__medelhastighet",
+      "svarstyp": "numeriskt",
+      "rättSvar": 4.333333333333333,
+      "tolerans": 0.05,
+      "självrättning": true,
+      "ledtrad": "<p>Börja med att skriva 2,0 minuter i sekunder.</p>",
+      "traningsniva": 2,
+      "arbetsinsats": 1,
+      "miniräknare": true,
+      "geogebra": false,
+      "spel": true,
+      "svarEnhet": "m/s",
+      "svarFormat": "numeriskt",
+      "omrTidigare": "hastighet",
+      "familjTidigare": [
+        "Medelhastighet"
+      ]
+    }
+  }
+]

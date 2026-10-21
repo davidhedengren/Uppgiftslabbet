@@ -1459,3 +1459,16 @@ I samma omgång rättades fullprecision/tolerans i fy1 2.176–2.179, 2.190
 och 2.194. 2.190 reproducerade underkännande av ett korrekt oavrundat
 beräkningsuttryck. Behåll fullvärdet i maskinfacit och frågans noggrannhet
 i toleransen; huvudfacit ska inte använda avrundade mellanled som exakta.
+
+## FP77 – positionsändring, total sträcka och total tid
+
+2026-10-21: `FYSIK1_MEDELHASTIGHET_2026-10-21.md` dokumenterar nya fy1
+2.335–2.342 samt granskning av 3.102/126/259/260/262. En position skild från
+noll är inte en färdad sträcka. Medelhastighet använder förflyttning;
+medelfart använder hela tillryggalagda sträckan. Pauser ingår i hela tiden.
+I 2.338 begärs en decimal uttryckligen för att särskilja korrekt svar 1,6
+från 2 m/s, vilket annars både är en tillåten grov avrundning och resultatet
+av att glömma pausen. Behåll fri avrundning i frågor utan precisionskrav.
+Mätnoggrannhet hoppas över i denna utbyggnad enligt användarens beslut.
+Skydd: `tools/fysik1-medelhastighet-2026-10-21.test.js` och konsumentens
+motsvarande browsertest.
