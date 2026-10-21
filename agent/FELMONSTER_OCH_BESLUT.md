@@ -1809,3 +1809,19 @@ referensen i hela kretsen, inte ström eller spänningar. Varje elkort ska ha
 figuren och egna namngivna, ordnade svarsfält vid flera potentialer.
 Skydd: riktat rapporttest, äldre rörelsemängds-/elektricitetstest, konsumentens
 delkortstest och webbläsartest med rapportens tidsstämpel 2114.
+
+
+## FP89 – värmeöverföring genom flera representationer
+
+2026-10-21: nya 7.225–7.230 kompletterar familjen Värmeledning och strålning
+från 6 till 12. Se `FYSIK1_VARIATION_VARMEOVERFORING_2026-10-21.md`/JSON
+för nya/granskade ID:n och kommentarsförslag. Inga äldre bankobjekt ändras.
+
+Variera experiment, strömmande vatten, tomrum, avkylningsdiagram, reflekterad
+energi och lika temperatur vid olika massa. I temperaturjämförelser ska
+**ändringarna**, inte sluttemperaturerna, jämföras. Lika temperatur betyder
+inte lika inre energi. Vakuum hindrar inte värmestrålning. Visa materialens
+faktiska placering: stavar får inte se ut att gå genom kärlväggen.
+Giltiga vardagsord som "dubbelt" ska godtas via `multipel` när en faktor söks.
+Skydd: värmeöverföringstestet, äldre värmetestet och konsumentens
+`fysik1-kompletteringar-2026-10-21.browser.cjs varme`.

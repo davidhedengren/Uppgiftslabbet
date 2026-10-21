@@ -136,7 +136,7 @@ test('Värme: skrivna slutsvar har den avrundning som frågan ber om',()=>{
 });
 
 test('Värme: varje delkort har egen fråga och en egen förklaring',()=>{
- const tasks=c.window.BANK.filter(q=>q.omr==='varme');assert.equal(tasks.length,121);
+ const tasks=c.window.BANK.filter(q=>q.omr==='varme');assert.equal(tasks.length,127);
  for(const t of tasks){assert.doesNotMatch(t.s,/<ol|facit-steglista/);
   for(const d of t.spelDelar||[]){assert.ok(d.t&&d.s,t.id);assert.doesNotMatch(d.t,/samma tid|svaret i|från [a-c]\)/i,t.id);}
  }
