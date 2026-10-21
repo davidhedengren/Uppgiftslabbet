@@ -1,0 +1,526 @@
+{
+ "4.211": {
+  "id": "4.211",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Ett material har standardavvikelsen 3,5. Alla värden ökas med 20.</p><p>Vad blir den nya standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Alla värden flyttas lika mycket, så spridningen ändras inte.</p></li></ol><p class=\"facit-svar\"><strong>Svar: 3,5.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Att addera samma tal till alla värden flyttar materialet utan att ändra avstånden mellan värdena.</p>",
+  "svarstyp": "numeriskt",
+  "rättSvar": 3.5,
+  "tolerans": 1e-09,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "familjTidigare": [
+   "standardavvikelse__forskjutning"
+  ]
+ },
+ "4.212": {
+  "id": "4.212",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Ett material har standardavvikelsen 2,4. Alla värden multipliceras med 5.</p><p>Vad blir den nya standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Standardavvikelsen multipliceras med samma positiva faktor:</p><div class=\"facit-matte\">\\[2{,}4\\cdot5=12\\].</div></div></li></ol><p class=\"facit-svar\"><strong>Svar: 12.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "procedur",
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Alla avstånd från medelvärdet blir fem gånger så stora.</p>",
+  "svarstyp": "numeriskt",
+  "rättSvar": 12,
+  "tolerans": 1e-09,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "familjTidigare": [
+   "standardavvikelse__forandring_av_standardavvikelse"
+  ]
+ },
+ "4.235": {
+  "id": "4.235",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Ett material har standardavvikelsen 4,5. Alla värden ökas med 20. Vad blir den nya standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Att lägga till samma tal till alla värden flyttar materialet men ändrar inte spridningen.</p></li></ol><p class=\"facit-svar\"><strong>4,5.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Påverkas avstånden mellan värdena om alla flyttas lika mycket?</p>",
+  "svarstyp": "numeriskt",
+  "rättSvar": 4.5,
+  "tolerans": 1e-09,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "familjTidigare": [
+   "standardavvikelse__forskjutning_niva1"
+  ]
+ },
+ "4.236": {
+  "id": "4.236",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "2/0/0",
+  "t": "<p>Ett material har standardavvikelsen 3,2. Alla värden multipliceras med 2. Vad blir den nya standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Standardavvikelsen multipliceras med samma positiva skalfaktor:</p><div class=\"facit-matte\">\\[2\\cdot3{,}2=6,4\\].</div></div></li></ol></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "procedur",
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 2,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>När alla avstånd från medelvärdet fördubblas gör standardavvikelsen det också.</p>",
+  "svarstyp": "numeriskt",
+  "rättSvar": 6.4,
+  "tolerans": 1e-09,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "familjTidigare": [
+   "standardavvikelse__skalning_niva2"
+  ]
+ },
+ "4.201": {
+  "id": "4.201",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Ett material har standardavvikelsen 3,5. Till varje värde adderas 10.</p><p>Vilken standardavvikelse får det nya materialet?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När samma tal adderas till alla observationer flyttas hela materialet lika mycket.</p></li><li><p>Spridningen förändras inte.</p></li></ol><p class=\"facit-svar\"><strong>3,5</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "begrepp",
+   "procedur"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 2,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Fråga dig om avstånden mellan observationerna förändras när alla flyttas lika mycket.</p>",
+  "svarstyp": "numeriskt",
+  "rättSvar": 3.5,
+  "tolerans": 0.01,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "familjTidigare": [
+   "standardavvikelse__forskjutning"
+  ]
+ },
+ "4.102": {
+  "id": "4.102",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "2/0/0",
+  "t": "<p>Ett material har standardavvikelsen 4. Alla värden multipliceras med 0,5. Vad blir den nya standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När alla värden multipliceras med 0,5 multipliceras standardavvikelsen med \\(|0{,}5|\\).</p></li><li><div class=\"facit-matte\">\\[4\\cdot0{,}5=2\\].</div></li></ol><p class=\"facit-svar\"><strong>Den nya standardavvikelsen är 2.</strong></p></div>",
+  "familj": "Beräkna och tolka standardavvikelse",
+  "formaga": [
+   "procedur",
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "numeriskt",
+  "rättSvar": 2,
+  "tolerans": 1e-09,
+  "självrättning": true,
+  "svarFormat": "numeriskt",
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>När alla värden multipliceras med en faktor skalas alla avstånd från medelvärdet med samma faktor.</p>",
+  "familjTidigare": [
+   "standardavvikelse__berakna_och_tolka_standardavvikelse"
+  ]
+ },
+ "4.114": {
+  "id": "4.114",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Alla värden i ett datamaterial ökas med 5.</p><p>Hur påverkas medelvärdet och standardavvikelsen?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Medelvärdet ökar med 5.</p></li><li><p>Avstånden mellan varje värde och medelvärdet ändras inte.</p></li></ol><p class=\"facit-svar\"><strong>Medelvärdet ökar med 5 och standardavvikelsen är oförändrad.</strong></p></div>",
+  "familj": "Beräkna och tolka standardavvikelse",
+  "formaga": [
+   "procedur",
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "alternativ": [
+   {
+    "txt": "Medelvärdet ökar med 5 och standardavvikelsen är oförändrad",
+    "ratt": true
+   },
+   {
+    "txt": "Både medelvärdet och standardavvikelsen ökar med 5",
+    "ratt": false
+   },
+   {
+    "txt": "Medelvärdet är oförändrat och standardavvikelsen ökar med 5",
+    "ratt": false
+   }
+  ],
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Att addera samma tal till alla observationer flyttar hela materialet men ändrar inte spridningen.</p>",
+  "familjTidigare": [
+   "standardavvikelse__berakna_och_tolka_standardavvikelse"
+  ]
+ },
+ "4.174": {
+  "id": "4.174",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "C",
+  "poang": "0/2/0",
+  "t": "<p>Ett material har medelvärdet 35 och standardavvikelsen 6. Alla värden omvandlas enligt \\(y=3x-10\\).</p><p>Bestäm nytt medelvärde och ny standardavvikelse.</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Medelvärdet omvandlas med samma linjära formel:</p><div class=\"facit-matte\">\\[3\\cdot35-10=95\\].</div></div></li><li><div class=\"facit-berakning\"><p>Standardavvikelsen multipliceras med absolutbeloppet av skalningsfaktorn 3:</p><div class=\"facit-matte\">\\[3\\cdot6=18\\].</div></div></li></ol><p class=\"facit-svar\"><strong>Nytt medelvärde 95 och standardavvikelse 18.</strong></p></div>",
+  "familj": "Beräkna och tolka standardavvikelse",
+  "formaga": [
+   "procedur",
+   "begrepp",
+   "resonemang"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "flera_delar",
+  "rättSvar": [
+   95,
+   18
+  ],
+  "tolerans": [
+   1e-09,
+   1e-09
+  ],
+  "självrättning": [
+   true,
+   true
+  ],
+  "traningsniva": 2,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Standardavvikelsen beskriver spridningen kring medelvärdet. En förskjutning ändrar inte spridningen, men en skalning gör det.</p>",
+  "svarsstruktur": "ordnad",
+  "svarEtiketter": [
+   "Nytt medelvärde",
+   "Ny standardavvikelse"
+  ],
+  "svarFormat": [
+   "numeriskt",
+   "numeriskt"
+  ],
+  "familjTidigare": [
+   "standardavvikelse__berakna_och_tolka_standardavvikelse"
+  ]
+ },
+ "4.14": {
+  "id": "4.14",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Två material har standardavvikelserna 2,1 respektive 5,7. Vilket material har störst spridning?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Standardavvikelsen mäter spridningen kring medelvärdet.</p></li><li><p>Eftersom \\(5{,}7&gt;2{,}1\\) har materialet med standardavvikelsen 5,7 större spridning.</p></li></ol><p class=\"facit-svar\"><strong>Materialet med standardavvikelsen 5,7.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "procedur",
+   "begrepp",
+   "resonemang"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Större standardavvikelse betyder större spridning kring medelvärdet.</p>",
+  "alternativ": [
+   {
+    "txt": "Materialet med standardavvikelsen 2,1",
+    "ratt": false
+   },
+   {
+    "txt": "Materialet med standardavvikelsen 5,7",
+    "ratt": true
+   },
+   {
+    "txt": "De har lika stor spridning",
+    "ratt": false
+   }
+  ],
+  "familjTidigare": [
+   "standardavvikelse__jamfora_spridning"
+  ]
+ },
+ "4.65": {
+  "id": "4.65",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "2/0/0",
+  "t": "<p>Två grupper har samma medelvärde. Grupp A har standardavvikelsen 2,1 och grupp B har standardavvikelsen 7,8.</p><p>I vilken grupp ligger värdena mest samlade kring medelvärdet? Förklara kort.</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>En mindre standardavvikelse innebär att värdena i genomsnitt ligger närmare medelvärdet.</p></li></ol><p class=\"facit-svar\"><strong>Grupp A är mest samlad.</strong></p></div>",
+  "familj": "Beräkna och tolka standardavvikelse",
+  "formaga": [
+   "procedur",
+   "begrepp",
+   "resonemang"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "alternativ": [
+   {
+    "txt": "Grupp A",
+    "ratt": true
+   },
+   {
+    "txt": "Grupp B",
+    "ratt": false
+   },
+   {
+    "txt": "De är lika samlade",
+    "ratt": false
+   }
+  ],
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Mindre standardavvikelse betyder att värdena i genomsnitt ligger närmare medelvärdet.</p>",
+  "familjTidigare": [
+   "standardavvikelse__berakna_och_tolka_standardavvikelse"
+  ]
+ },
+ "4.173": {
+  "id": "4.173",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "2/0/0",
+  "t": "<p>Två material har samma medelvärde. Material A har standardavvikelsen 1,8 och material B 4,9.</p><p>Vilket material har större spridning?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Båda materialen har samma medelvärde, så skillnaden ligger i spridningen.</p></li><li><p>Standardavvikelsen är 1,8 i A och 4,9 i B.</p></li><li><p>Eftersom 4,9 är större ligger värdena i B i genomsnitt längre från medelvärdet.</p></li></ol><p class=\"facit-svar\"><strong>Material B har större spridning.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "procedur",
+   "begrepp",
+   "resonemang"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Standardavvikelsen beskriver spridningen kring medelvärdet. En förskjutning ändrar inte spridningen, men en skalning gör det.</p>",
+  "alternativ": [
+   {
+    "txt": "Material A",
+    "ratt": false
+   },
+   {
+    "txt": "Material B",
+    "ratt": true
+   },
+   {
+    "txt": "Samma spridning",
+    "ratt": false
+   }
+  ],
+  "familjTidigare": [
+   "standardavvikelse__jamfora_spridning"
+  ]
+ },
+ "4.195": {
+  "id": "4.195",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Två material har samma medelvärde. Material A har standardavvikelsen 1,2 och material B standardavvikelsen 4,7.</p><p>Vilket material är mest samlat kring medelvärdet?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Mindre standardavvikelse betyder mindre spridning kring medelvärdet.</p></li></ol><p class=\"facit-svar\"><strong>Material A.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Jämför storleken på standardavvikelserna.</p>",
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "alternativ": [
+   {
+    "txt": "Material A",
+    "ratt": true
+   },
+   {
+    "txt": "Material B",
+    "ratt": false
+   },
+   {
+    "txt": "De är lika samlade",
+    "ratt": false
+   }
+  ],
+  "familjTidigare": [
+   "standardavvikelse__jamfora_niva1"
+  ]
+ },
+ "4.213": {
+  "id": "4.213",
+  "kap": 4,
+  "omr": "standardavvikelse",
+  "kurs": [
+   "2a",
+   "2b",
+   "2c"
+  ],
+  "niva": "E",
+  "poang": "1/0/0",
+  "t": "<p>Två grupper har samma medelvärde. Grupp A har standardavvikelsen 1,8 och grupp B 5,6.</p><p>Vilken grupp är mest samlad kring medelvärdet?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Mindre standardavvikelse betyder mindre spridning.</p></li></ol><p class=\"facit-svar\"><strong>Grupp A.</strong></p></div>",
+  "familj": "Jämföra spridning och förändring",
+  "formaga": [
+   "begrepp"
+  ],
+  "miniräknare": true,
+  "geogebra": false,
+  "traningsniva": 1,
+  "arbetsinsats": 1,
+  "spel": true,
+  "ledtrad": "<p>Jämför standardavvikelsernas storlek.</p>",
+  "svarstyp": "alternativ",
+  "rättSvar": null,
+  "tolerans": null,
+  "självrättning": true,
+  "alternativ": [
+   {
+    "txt": "Grupp A",
+    "ratt": true
+   },
+   {
+    "txt": "Grupp B",
+    "ratt": false
+   },
+   {
+    "txt": "De är lika samlade",
+    "ratt": false
+   }
+  ],
+  "familjTidigare": [
+   "standardavvikelse__jamfora_niva1"
+  ]
+ }
+}

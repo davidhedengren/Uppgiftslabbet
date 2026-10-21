@@ -193,6 +193,21 @@
     "before": {
       "ERROR": 1577,
       "WARNING": 227,
+      "INFO": 1450
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1450
+    },
+    "newFindings": []
+  },
+  "reportStatusSaved": false,
+  "studentCommentsSent": false,
+  "validatorBeforeMerge": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
       "INFO": 1452
     },
     "after": {
@@ -202,6 +217,9 @@
     },
     "newFindings": []
   },
-  "reportStatusSaved": false,
-  "studentCommentsSent": false
+  "parallelChangesIntegrated": {
+    "master": "e89ed33",
+    "consumer": "2a74b34",
+    "resolution": "Båda registertilläggen bevarade; gemensam cacheversion ma3-ma4-fy1-2114. Alla nya mattebankändringar bevarade."
+  }
 }

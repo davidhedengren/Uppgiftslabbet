@@ -52,5 +52,18 @@ Vid val av A som ny jordpunkt i stället för C subtraheras 12 V överallt: **0,
 - Nytt webbläsartest `tools/felrapporter-fy1-2026-10-21-2114.browser.cjs`: **74 svarskontroller**, **12 kortvyer** vid 390/1280 px. Prövar rätta enheter, felaktig 8,76 Ns som golvimpuls, negativa tecken, omvända potentialfält, gammal nollnivå och samtliga fyra strömalternativ. Nivå 5/2 och figur på varje elkort verifieras i de verkligt expanderade korten.
 - Alla tre nya SVG och fem elektriska jämförelsefigurer visuellt granskade. Inga klippta etiketter, KaTeX-/JavaScript-fel, sidöverflöden eller överfulla displayformler.
 - SVG-validatorns oförändrade DOM-/geometriregler gav **0 ERROR, 0 WARNING, 3 INFO** på dessa åtta figurer. INFO gäller avsiktliga vita bakgrunder vid viewBox-kanten. Den vanliga CLI-starten av Chromium gav timeout i molnmiljön; samma analysfunktioner kördes därför via Playwright, utan att ändra repo-validatorn eller dess regler.
-- Full bankvalidator före/efter: **ERROR 1577, WARNING 227, INFO 1452**, inga nya fynd. Äldre fynd ligger utanför omgången.
+- Full bankvalidator före/efter: **ERROR 1577, WARNING 227, INFO 1450**, inga nya fynd. Äldre fynd ligger utanför omgången.
 - Masterbankens bas jämförd med Kunskapsgymmet före identisk synk. Cacheversioner uppdateras i båda repona. Endast avsedda filer ska ingå i commits; befintliga orelaterade prototyper och Python-cache lämnas kvar.
+
+
+## Parallella ändringar integrerade före push
+
+Under arbetet tillkom matteändringar i båda repona (master till e89ed33,
+konsument till 2a74b34). De är integrerade utan att ändra deras uppgifter.
+Registerkonflikten har lösts genom att bevara både matteagentens tillägg och
+FP88. Cacheversionen i Kunskapsgymmet täcker både matte- och fysikändringarna.
+Efter integration passerar alla fyra relevanta fysiktestfiler, båda nya
+gemensamma mattetestfilerna samt konsumentens delkortstest. Full validator
+mot den integrerade basen visar ERROR 1577, WARNING 227, INFO 1450 före/efter;
+inget nytt fynd kommer från dessa fysikändringar. De två färre INFO-fynden
+jämfört med första körningen kommer från den parallella matteomgången.

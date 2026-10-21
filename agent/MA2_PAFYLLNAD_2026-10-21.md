@@ -85,3 +85,38 @@ ligger närmare än 0,5 från intervallgränserna, vilket gör svaret robust mot
   - x-axelns etikett ligger ovanför pilen,
   - varje SVG har ett unikt clipPath-id och en maxbredd.
 - Test: `tools/ma2-pafyllnad-2026-10-21.test.js`.
+
+## Ombyggda upprepningar i standardavvikelse (samma dag)
+
+Användaren godkände att en del upprepade uppgifter tas bort och byggs om till mer
+varierade uppgifter. Uppgifterna byggdes om på plats. ID, `kurs` och
+`familjTidigare` behölls, så att länkar och elevhistorik inte går sönder. De gamla
+versionerna finns i `MA2_SX_OMBYGGDA_GAMLA_VERSIONER_2026-10-21.json`.
+
+Följande ID:n byggdes om:
+
+- 4.211: flera påståenden om egenskaper.
+- 4.212: samma variationsbredd men olika Sx (prickdiagram).
+- 4.235: felskrivet värde med GeoGebra, 17,58 → 0,31 m.
+- 4.236: antal standardavvikelser från medelvärdet, svar 2,5.
+- 4.201: jämföra resultat relativt spridningen, svar Bea.
+- 4.102: slå ihop material med samma medelvärde, ungefär 5.
+- 4.114: slå ihop material med olika medelvärden, betydligt större än 5.
+- 4.174: mätmetoders precision med GeoGebra, 0,22 och 0,03 cm.
+- 4.14: ta bort extremvärdet, svar 24.
+- 4.65: lådagram och Sx, svar Q.
+- 4.173: vilket material har Sx = 0.
+- 4.195: värde mer än två standardavvikelser bort, svar 27.
+- 4.213: vardagsbeslut utifrån spridning, svar buss 1.
+
+Kvar av de upprepade typerna finns:
+
+- omvandlingar: 4.21, 4.43, 4.49, 4.56, 4.68, 4.75, 4.86, 4.90, 4.93 och 4.109,
+- jämförelser: 4.36, 4.84, 4.121 och 4.156.
+
+4.43, 4.49 och 4.90 skyddas av `felrapporter-2026-10-16.test.js` och ändrades inte.
+
+En ändringsvariant ("vilket värde ändras till 20 för största Sx") förkastades,
+eftersom tre alternativ gav nästan samma Sx (4,90, 4,92 och 4,89). Den ersattes
+av borttagning av ett tydligt extremvärde. Alla 13 kort rättas korrekt i
+Kunskapsgymmet, både med rätt och med felaktigt svar.

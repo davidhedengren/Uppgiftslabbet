@@ -1754,6 +1754,39 @@ Standardavvikelse:
 
 Skydd: `tools/ma2-pafyllnad-2026-10-21.test.js`.
 
+### FP84, fortsättning: ombyggda upprepningar (2026-10-21)
+
+Ma2 4.14, 4.65, 4.102, 4.114, 4.173, 4.174, 4.195, 4.201, 4.211, 4.212,
+4.213, 4.235 och 4.236 är ombyggda på plats, med bevarade ID:n, `kurs` och
+`familjTidigare`. De gamla versionerna finns i
+`MA2_SX_OMBYGGDA_GAMLA_VERSIONER_2026-10-21.json`.
+
+Bygg inte tillbaka fler omvandlingsuppgifter av typen "alla värden ökas med a".
+Det finns tillräckligt med representanter för den typen.
+
+En flervalsfråga om att välja det värde som ger störst eller minst Sx måste ha
+en tydlig marginal mellan alternativen. Kontrollera alla alternativ numeriskt.
+
+## FP85 – tangensgrafer och deriverbarhet med figurer
+
+2026-10-21: Ma4 2.605–2.612 (tan_kurvan) och Ma3c 3.1157–3.1164 (deriverbarhet)
+dokumenteras i `MA3_MA4_FIGURER_2026-10-21.md`.
+
+Tangensgrafer:
+
+- Bryt kurvan vid asymptoterna, aldrig med en lodrät förbindelselinje, och streckmarkera asymptoterna.
+- Gradetiketter på x-axeln.
+
+Deriverbarhet:
+
+- Hopp ritas med ofylld och ifylld ändpunkt.
+- Pröva både värde och lutning i skarven.
+- Kontinuitet räcker inte för deriverbarhet (|x|), och en lodrät tangent ger ingen derivata (∛x).
+
+13 äldre uppgifter i området deriverbarhet handlar om extrempunkter. Flytta dem
+inte utan användarens beslut, eftersom elevresultaten följer området.
+
+Skydd: `tools/ma3-ma4-figurer-2026-10-21.test.js`.
 
 ## FP88 – golvimpulsens nivå och elektriska punkters verkliga anslutning
 
