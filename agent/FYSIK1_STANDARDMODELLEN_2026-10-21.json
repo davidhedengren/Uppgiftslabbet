@@ -1,0 +1,242 @@
+{
+  "date": "2026-10-21",
+  "area": "standardmodellen",
+  "before": 16,
+  "after": 24,
+  "figuresBefore": 0,
+  "figuresAfter": 8,
+  "reviewedExisting": [
+    "GY25-FY1-STD-01",
+    "GY25-FY1-STD-02",
+    "GY25-FY1-STD-03",
+    "GY25-FY1-STD-04",
+    "GY25-FY1-STD-05",
+    "9.261",
+    "9.262",
+    "9.263",
+    "9.264",
+    "9.265",
+    "9.266",
+    "9.267",
+    "9.268",
+    "9.269",
+    "9.270",
+    "9.329"
+  ],
+  "changedExisting": [
+    "GY25-FY1-STD-02",
+    "9.261",
+    "9.262",
+    "9.263",
+    "9.264",
+    "9.265",
+    "9.329"
+  ],
+  "reviewedNoError": [
+    {
+      "id": "GY25-FY1-STD-01",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektronen och kvarken är elementarpartiklar; protonen är sammansatt."
+    },
+    {
+      "id": "GY25-FY1-STD-03",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: udd är oladdad men sammansatt. Resonemanget är korrekt."
+    },
+    {
+      "id": "GY25-FY1-STD-04",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektron och neutrino är leptoner, u en kvark och proton en sammansatt partikel."
+    },
+    {
+      "id": "GY25-FY1-STD-05",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Laddningen bevaras vid beta-minus: 0 = +e − e + 0. Elektronen bildas vid sönderfallet."
+    },
+    {
+      "id": "9.266",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektronen är en lepton; korrekt alternativ och förklaring."
+    },
+    {
+      "id": "9.267",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Protonen är sammansatt och därmed inte en elementarpartikel."
+    },
+    {
+      "id": "9.268",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektron och positron har samma massa och motsatt laddning."
+    },
+    {
+      "id": "9.269",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Upp- och nedkvarkar bygger upp protoner och neutroner."
+    },
+    {
+      "id": "9.270",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: En baryon innehåller tre kvarkar."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "GY25-FY1-STD-01",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektronen och kvarken är elementarpartiklar; protonen är sammansatt."
+    },
+    {
+      "id": "GY25-FY1-STD-02",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Kvarkladdningarna hämtas nu ur formelsamlingen; uträkningen och slutsatsen +e är bevarade i facit."
+    },
+    {
+      "id": "GY25-FY1-STD-03",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: udd är oladdad men sammansatt. Resonemanget är korrekt."
+    },
+    {
+      "id": "GY25-FY1-STD-04",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektron och neutrino är leptoner, u en kvark och proton en sammansatt partikel."
+    },
+    {
+      "id": "GY25-FY1-STD-05",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Laddningen bevaras vid beta-minus: 0 = +e − e + 0. Elektronen bildas vid sönderfallet."
+    },
+    {
+      "id": "9.261",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Kvarkladdningar finns i formelsamlingen; protonens laddning +e godkänns oförändrat."
+    },
+    {
+      "id": "9.262",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Kvarkladdningar finns i formelsamlingen; neutronens laddning 0 godkänns oförändrat."
+    },
+    {
+      "id": "9.263",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Tre u-kvarkar ger +2e. Utskriven standardladdning är borttagen ur frågan."
+    },
+    {
+      "id": "9.264",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Antikvarkarnas laddningar ger −e. Standardladdningar och lösningsledning är borttagna ur frågan."
+    },
+    {
+      "id": "9.265",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: u och anti-d ger +e. Standardladdningar och lösningsledning är borttagna ur frågan."
+    },
+    {
+      "id": "9.266",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektronen är en lepton; korrekt alternativ och förklaring."
+    },
+    {
+      "id": "9.267",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Protonen är sammansatt och därmed inte en elementarpartikel."
+    },
+    {
+      "id": "9.268",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Elektron och positron har samma massa och motsatt laddning."
+    },
+    {
+      "id": "9.269",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: Upp- och nedkvarkar bygger upp protoner och neutroner."
+    },
+    {
+      "id": "9.270",
+      "status": "Granskad – inget fel",
+      "suggestedComment": "Granskad – inget fel: En baryon innehåller tre kvarkar."
+    },
+    {
+      "id": "9.329",
+      "status": "Åtgärdad",
+      "suggestedComment": "Åtgärdad: Båda korten har egna givna baryonladdningar och inga utskrivna kvarkladdningar. Facit förklarar kvarkladdningarna före ekvationen; svar 3 respektive 0."
+    }
+  ],
+  "new": [
+    {
+      "id": "9.444",
+      "level": 1,
+      "note": "A är elektronen, inte protonen, kärnan eller hela atomen. Nivå 1."
+    },
+    {
+      "id": "9.445",
+      "level": 1,
+      "note": "Bild B visar neutronens udd. Nivå 1."
+    },
+    {
+      "id": "9.446",
+      "level": 2,
+      "note": "En d-kvark omvandlas till u vid beta-minus. Nivå 2."
+    },
+    {
+      "id": "9.447",
+      "level": 2,
+      "note": "Antineutronen är oladdad men består av antikvarkar. Nivå 2."
+    },
+    {
+      "id": "9.448",
+      "level": 2,
+      "note": "Sju nukleoner à tre kvarkar ger 21; elektroner räknas inte. Nivå 2."
+    },
+    {
+      "id": "9.449",
+      "level": 2,
+      "note": "Neutronen är oladdad men sammansatt. Nivå 2."
+    },
+    {
+      "id": "9.450",
+      "level": 2,
+      "note": "Proton i en kärna ger neutron, positron och neutrino. +e bevaras. Nivå 2."
+    },
+    {
+      "id": "9.451",
+      "level": 3,
+      "note": "C har +e och −e; övriga pars summor är +2e, +e och −e. Nivå 3."
+    }
+  ],
+  "browser": {
+    "batch": "standard",
+    "ids": [
+      "9.444",
+      "9.445",
+      "9.446",
+      "9.447",
+      "9.448",
+      "9.449",
+      "9.450",
+      "9.451"
+    ],
+    "checks": 114,
+    "views": 30,
+    "widths": [
+      390,
+      1280
+    ],
+    "issues": [],
+    "errors": [],
+    "clippedLabels": []
+  },
+  "validator": {
+    "before": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "after": {
+      "ERROR": 1577,
+      "WARNING": 227,
+      "INFO": 1452
+    },
+    "newFindings": []
+  },
+  "reportsUpdated": false
+}

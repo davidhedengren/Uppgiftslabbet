@@ -1663,3 +1663,21 @@ avläsningar och ett direkt samband; de två tidskraven i 9.443 är nivå 3.
 
 Skydd: `tools/fysik1-medicinska-metoder-2026-10-21.test.js`, utökat äldre
 partiklar/medicin-test och konsumentens `fysik1-kompletteringar-2026-10-21.browser.cjs medicin`.
+
+## FP86 – neutral är inte samma sak som elementär eller sin egen antipartikel
+
+2026-10-21: Standardmodellen 16 → 24 uppgifter, 0 → 8 figurer.
+Se `FYSIK1_STANDARDMODELLEN_2026-10-21.md` och JSON för alla 16 granskade,
+7 reviderade och 8 nya ID:n samt kommentarsförslag.
+
+Neutronen är neutral men består av kvarkar; antineutronen är också neutral
+men består av antikvarkar. Summera varje laddning, inklusive avgivna
+leptoner vid betaomvandling. Beta-plus med proton till neutron ska gälla
+proton i en kärna, inte fri proton. Atommodellers markeringar måste skilja
+elektron, proton, kärna och hel atom. Räkna inte elektroner som kvarkar.
+
+Standardladdningarna hos u/d och deras antikvarkar hör till formelsamling
+och facit, inte till frågetext. Ekvationen i ett facit måste ändå förklaras:
+ange vad termerna står för (9.329), inte bara algebra utan fysikalisk koppling.
+Skydd: `fysik1-standardmodellen-2026-10-21.test.js`, partiklar/medicin-testet
+och konsumentens kompletteringsprov med argument `standard`.
