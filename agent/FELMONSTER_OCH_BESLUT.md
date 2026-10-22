@@ -1936,3 +1936,13 @@ och motsvarande browserprov i konsumenten.
 - Nya kort har miniräknare men behöver inte GeoGebra. Flera tankeled ligger
   på nivå 2 eller 3 även om slutberäkningen är enkel. De nya uppgifterna
   ersätter inga tidigare ID:n eller redaktionella beslut.
+
+### Ma3-logaritmer: fortsättning 2026-10-22
+
+Se `MA3_LOGARITMER_2026-10-22.md`, nya 2.1150–2.1157 och granskade
+2.124, 2.129, 2.134, 2.413, 2.414, 2.816. I ln x=3 finns ingen exponentialterm
+att först isolera; ledtråden ska koppla ln till potenser med basen e.
+De fem förbättrade äldre faciten behåller rätt svar och visar sina egna
+algebraiska övergångar. 2.816 behålls. När en enda logaritm uttryckligen
+efterfrågas används `en_logaritm`, även för ln. Se FP53. Skydd:
+`tools/ma3-logaritmer-2026-10-22.test.js` och konsumentens browserprov.
