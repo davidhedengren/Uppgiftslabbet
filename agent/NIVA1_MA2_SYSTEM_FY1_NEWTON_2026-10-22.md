@@ -18,3 +18,14 @@ Ekvationssystem hade 0–7 kort på nivå 1 per område. Området ingår i natio
 - **Kontroll:** sympy kontrollerar varje system när korten byggs.
 - **Figurer:** linjeetiketterna står bredvid linjerna, till höger om branta linjer. Axelsiffrorna har vit bakgrund och ritas sist.
 - **Omformuleringar:** validatorn hittade nio kort med samma textmall (”Lös ekvationssystemet.”) som befintliga kort, och de är omformulerade.
+
+## Fy1 4.800–4.836 (37 kort)
+
+| Område | Före | Efter | Innehåll |
+|---|---|---|---|
+| normalkraft | 6 | 25 | bok, dator, katt, bil och astronaut på månen; riktning och ramp (fyra pilar); hiss med konstant fart, med acceleration uppåt och nedåt, vid inbromsning och i fritt fall; vågens utslag; massa ur normalkraften; bok mot vägg |
+| newton3 | 7 | 25 | låda, spark, satellit, boxare, dragkamp, studsboll; raket, att gå, fluga mot vindruta, båt, astronaut, skateboard mot vägg; kraft och motkraft verkar på olika föremål och är av samma slag; välja motkraft i figur |
+
+- **Kapitel 4-testet:** de nya numeriska korten är tillagda i `tools/fysik1-kapitel4.test.js`, och facit räknas om oberoende med g = 9,82.
+- **Formattest:** `tools/fysik1-niva1-newton-2026-10-22.test.js`.
+- **Granskning:** validatorn ger inga nya fynd och SVG-granskningen 0 fynd.
