@@ -3398,6 +3398,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
 @media(max-width:1050px){.topp-dokumentknapp span{display:none}.topp-dokumentknapp{padding:8px 10px}.topp-dokumentknapp:first-child:after{content:'Mina dokument';font-size:11.5px}.topp-dokumentknapp:last-child:after{content:'Gemensam bank';font-size:11.5px}}
 @media(max-width:760px){.topp-dokumentknappar{gap:5px}.topp-dokumentknapp{min-height:35px;padding:7px 8px}.topp-dokumentknapp:after{display:none}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
 
+.kurs-tidigare{display:block;margin-top:6px;font-size:16px;font-weight:500;line-height:1.4;letter-spacing:normal;}
 </style>
 <!-- KaTeX för matematikrendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -6660,7 +6661,7 @@ function ritaKursval(){
      upprepas i rubriken. "Fysik - nivå 2" blir rubriken "Fysik" plus "Nivå 2". */
   const delaTitel=t=>{
     const m=/^(.*?)\s*[-–]\s*niv[åa]\s*(\S+)(?:\s+(\([^)]*\)))?\s*$/i.exec(t);
-    return m?{namn:m[1].trim()+(m[3]?" "+m[3]:""),niva:m[2]}:{namn:t,niva:null};
+    return m?{namn:m[1].trim(),niva:m[2],tidigare:m[3]||""}:{namn:t,niva:null};
   };
   /* Områdena skrivs som löptext. Listan kortas på hela områdesnamn i
      stället för att klippas mitt i ett ord, och resten summeras. */
@@ -6676,7 +6677,7 @@ function ritaKursval(){
     return {visade, kvar:lista.length-visade.length};
   };
   const kortHTML=k=>{
-    const {namn,niva}=delaTitel(k.titel);
+    const {namn,niva,tidigare}=delaTitel(k.titel);
     const taggar=k.taggar||[];
     const omr=kortaOmraden(taggar);
     const spår=(k.spår||[]).map(s=>
@@ -6689,7 +6690,7 @@ function ritaKursval(){
         <span class="kk-index">Nivå ${niva||k.siffra}</span>
         ${spår?`<span class="kk-spar" aria-hidden="true">${spår}</span>`:''}
       </span>
-      <span class="kk-namn">${namn}</span>
+      <span class="kk-namn">${namn}${tidigare?`<span class="kurs-tidigare">${tidigare}</span>`:""}</span>
       <span class="kk-taggar" title="${taggar.join(' · ')}">${
         omr.visade.map(t=>`<span class="kk-tag">${t}</span>`).join('')}${
         omr.kvar>0?`<span class="kk-mer"> +${omr.kvar} till</span>`:''}</span>
