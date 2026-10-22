@@ -1955,3 +1955,13 @@ Faktorform kräver `faktoriserat`: omordnade faktorer och likvärdiga
 teckenbyten godtas, medan en utvecklad summa inte uppfyller ett uttryckligt
 krav på faktorform. Skydd: `tools/ma3-faktorisering-2026-10-22.test.js`
 och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
+
+### Rationella uttryck och svarsetiketter före förenklade polynom, 2026-10-22
+
+Se `MA3_RATIONELLA_2026-10-22.md`: nya Mato1 1.880–1.887 samt fem
+Ma1-jämförelser (1.08, 1.11, 1.18, 1.26, 1.67). `förenklat_polynom`
+använder nu befintliga `hogerled` före sin strikta formkontroll, så att
+y=3x och f(x)=3x godtas liksom 3x. Detta tar inte bort kravet på ett
+färdigförenklat svar. Samlade termer, reducerade bråk och rätt variabel
+krävs fortfarande. Skydd: konsumentens `tools/brakuttryck.test.js` och
+`tools/ma3-rationella-2026-10-22.browser.cjs`, mastertest med samma datum.
