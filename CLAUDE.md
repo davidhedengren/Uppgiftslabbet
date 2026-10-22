@@ -85,6 +85,20 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
 berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.
 
+## Långsiktigt mål: många och varierade uppgifter på nivå 1
+
+Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1**. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1 och som undervisas nu.
+
+Variation betyder mer än nya tal:
+
+- olika sammanhang, frågeformer och representationer, till exempel text, figur, tabell, graf och flerval;
+- olika svarsformer;
+- olika delmoment (`familj`) inom området.
+
+Det räcker inte att byta tal i samma mall, eftersom validatorns `VERY_SIMILAR_TEXT` och `EXACT_TEXT_DUPLICATE` fångar kloner. Undvik också identiska facit inom ett område. Nivå 1 betyder ett steg eller ett tydligt grundsamband, utan fällor. Kunskapsgymmet räknar ett kort som nivå 1 bara när `traningsniva` är 1 på uppgiften eller delkortet, så ange den uttryckligen.
+
+Räkna själv, sträva efter figurer och följ verktygs- och avrundningsreglerna nedan. Logga varje påfyllnad i `agent/` och lägg till ett regressionstest.
+
 ## Figurer vid konstruktion och omarbetning
 
 Användarbeslut 2026-10-13: när du konstruerar nya uppgifter eller gör om befintliga uppgifter ska du **alltid sträva efter att ha med en figur, om det är möjligt**. Bedöm för varje uppgift hur en figur kan hjälpa eleven att förstå situationen, tolka samband eller välja metod. Kretsar, laddningars placeringar, rörelser, krafter och geometri lämpar sig särskilt väl för egna SVG-figurer. Figuren ska bidra till förståelsen och kan vara schematisk; ange skala när skalenlig avläsning behövs.
