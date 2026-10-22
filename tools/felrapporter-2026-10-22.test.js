@@ -19,10 +19,10 @@ test('Rapporterade delkort har egna rätta nivåer och tydliga frågor',()=>{
  assert.equal(q('5.395').spelDelar[1].traningsniva,4);assert.equal(q('5.395').spelDelar[0].traningsniva,2);
  assert.match(q('5.97').spelDelar[0].t,/energi är lagrad/);
  assert.equal((q('5.382').spelDelar[1].t.match(/18 m\/s/g)||[]).length,1);
- assert.match(q('9.415').spelDelar[0].t,/för en proton/);assert.doesNotMatch(q('9.415').spelDelar[0].ledtrad,/givna formeln/);
- assert.match(q('4.117','ma2').spelIntro,/medelvärdet 70 och standardavvikelsen 8/);
+ assert.match(q('9.415').spelDelar[0].t,/protons genomsnittliga rörelseenergi/);assert.doesNotMatch(q('9.415').spelDelar[0].ledtrad,/givna formeln/);
+ assert.match(q('4.117','ma2').spelIntro,/medelvärdet 70 min och standardavvikelsen 8 min/);
  assert.match(q('4.117','ma2').spelDelar[1].s,/90:e percentilen/);
- assert.match(q('5.95').spelDelar[0].t,/två värdesiffror/);assert.equal(q('5.95').tolerans[0],50);
+ assert.doesNotMatch(q('5.95').spelDelar[0].t,/decimal|värdesiffr/);assert.equal(q('5.95').spelDelar[0].svarVardesiffror,2);
 });
 test('Kalibrerad precision använder oavrundade målvärden och ärvs på rätt kort',()=>{
  near(q('2.2').rättSvar[0],84/2**3);near(q('2.2').rättSvar[1],84*(4/2)**3);

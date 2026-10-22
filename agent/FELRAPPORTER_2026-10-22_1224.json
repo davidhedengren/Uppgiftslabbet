@@ -198,5 +198,325 @@
     "WARNING": 230,
     "INFO": 1451,
     "newFindingsInChangedBanks": 0
+  },
+  "integratedRemote": {
+    "master": "0926c87",
+    "consumer": "7697ea5",
+    "validator": {
+      "uppgifter.js": {
+        "before": {
+          "ERROR": 0,
+          "WARNING": 8,
+          "INFO": 833
+        },
+        "after": {
+          "ERROR": 0,
+          "WARNING": 8,
+          "INFO": 832
+        },
+        "added": [],
+        "changed": [
+          {
+            "id": "2.2",
+            "fields": [
+              "spelDelar",
+              "svarVardesiffror"
+            ]
+          },
+          {
+            "id": "5.95",
+            "fields": [
+              "s",
+              "spelDelar",
+              "svarVardesiffror"
+            ]
+          },
+          {
+            "id": "5.395",
+            "fields": [
+              "spelDelar",
+              "traningsniva"
+            ]
+          },
+          {
+            "id": "5.396",
+            "fields": [
+              "t",
+              "s"
+            ]
+          },
+          {
+            "id": "5.225",
+            "fields": [
+              "s",
+              "spelDelar"
+            ]
+          },
+          {
+            "id": "9.415",
+            "fields": [
+              "t",
+              "s",
+              "spelIntro",
+              "spelDelar",
+              "svarVardesiffror"
+            ]
+          }
+        ]
+      },
+      "uppgifter2.js": {
+        "before": {
+          "ERROR": 1571,
+          "WARNING": 0,
+          "INFO": 39
+        },
+        "after": {
+          "ERROR": 1563,
+          "WARNING": 0,
+          "INFO": 39
+        },
+        "added": [],
+        "changed": [
+          {
+            "id": "1.2",
+            "fields": [
+              "svarVardesiffror",
+              "geogebra",
+              "miniräknare"
+            ]
+          },
+          {
+            "id": "1.3",
+            "fields": [
+              "rättSvar",
+              "spelDelar",
+              "svarVardesiffror",
+              "geogebra",
+              "miniräknare"
+            ]
+          },
+          {
+            "id": "1.4",
+            "fields": [
+              "s",
+              "rättSvar",
+              "spelDelar",
+              "svarVardesiffror",
+              "geogebra",
+              "miniräknare"
+            ]
+          },
+          {
+            "id": "1.6",
+            "fields": [
+              "svarVardesiffror",
+              "geogebra",
+              "miniräknare"
+            ]
+          }
+        ]
+      },
+      "uppgifterma2.js": {
+        "before": {
+          "ERROR": 4,
+          "WARNING": 131,
+          "INFO": 89
+        },
+        "after": {
+          "ERROR": 4,
+          "WARNING": 131,
+          "INFO": 89
+        },
+        "added": [],
+        "changed": [
+          {
+            "id": "4.117",
+            "fields": [
+              "spelDelar"
+            ]
+          }
+        ]
+      }
+    },
+    "browser": {
+      "checks": 146,
+      "views": 40,
+      "widths": [
+        390,
+        1280
+      ],
+      "errors": [],
+      "issues": []
+    },
+    "consumerTests": {
+      "total": 208,
+      "pass": 208
+    },
+    "masterTargetTests": {
+      "total": 14,
+      "pass": 14
+    },
+    "conflictDecisions": [
+      {
+        "path": [
+          "uppgifter.js",
+          "5.95",
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.95",
+          "spelDelar",
+          0,
+          "fraga"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.95",
+          "spelDelar",
+          0,
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.97",
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.97",
+          "spelDelar",
+          0,
+          "fraga"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.97",
+          "spelDelar",
+          0,
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.97",
+          "spelDelar",
+          0,
+          "ledtrad"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.117",
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.382",
+          "spelDelar",
+          1,
+          "fraga"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "5.382",
+          "spelDelar",
+          1,
+          "t"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "9.415",
+          "t"
+        ],
+        "take": "ours"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "9.415",
+          "spelDelar",
+          0,
+          "fraga"
+        ],
+        "take": "ours"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "9.415",
+          "spelDelar",
+          0,
+          "ledtrad"
+        ],
+        "take": "ours"
+      },
+      {
+        "path": [
+          "uppgifter.js",
+          "9.415",
+          "spelDelar",
+          0,
+          "t"
+        ],
+        "take": "ours"
+      },
+      {
+        "path": [
+          "uppgifterma2.js",
+          "4.117",
+          "spelIntro"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifterma2.js",
+          "4.117",
+          "spelDelar",
+          0,
+          "fraga"
+        ],
+        "take": "remote"
+      },
+      {
+        "path": [
+          "uppgifterma2.js",
+          "4.117",
+          "spelDelar",
+          1,
+          "fraga"
+        ],
+        "take": "remote"
+      }
+    ]
   }
 }

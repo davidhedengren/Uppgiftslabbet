@@ -1882,7 +1882,8 @@ sammanhängande text; fy1 5.117, 5.97, 5.382 och 9.415 får tydligare frågor.
 9.415 gäller fortfarande protoner, inte neutrala atomer i solens inre.
 5.123a är nivå 4, 5.225a och 5.396 nivå 5; jämförelsen 5.395b nivå 4.
 Detta är träningsnivåer, inte automatisk omräkning av E/C/A-poäng.
-5.95a:s uttryckliga krav ändras särskilt efter rapporten till två värdesiffror.
+5.95a:s decimalregel togs bort särskilt efter rapporten i remote 6d9dcb3.
+Kortet får två rekommenderade värdesiffror med den nya ±2-regeln.
 Oavrundat facit 9427,2 J bevaras; 9,4·10³ J är rätt avrundning.
 
 Enhetsförhandsvisningen ska skilja tal från enhetsbråk, skriva enhetsbokstäver
@@ -1905,7 +1906,7 @@ automatiskt styra precisionen. Skilj dessutom subtraktion av nära massor från
 vanlig multiplikation av mätvärden. Heltalsnollor är tvetydiga; grundpotensform
 och decimalnollor ger entydig precision.
 
-Första införandet omfattar tio kort: fy1 2.2ab, 9.415ab samt fy2 1.2,
+Första införandet omfattar elva kort: fy1 2.2ab, 5.95a, 9.415ab samt fy2 1.2,
 1.3ab, 1.4ab, 1.6. Övriga äldre fysikkort är **inte** färdigkalibrerade.
 Alla beslut, ändrade mål och begränsningar finns i samma rapport som FP92.
 Skydd: `tools/fysik-vardesiffror-2026-10-22.test.js` i Kunskapsgymmet,
