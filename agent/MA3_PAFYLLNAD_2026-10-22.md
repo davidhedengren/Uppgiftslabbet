@@ -88,3 +88,38 @@ SVG: noll ERROR/WARNING, fem INFO om den vita bakgrundens avsiktliga kantläge.
 Etiketter och axeltal flyttades för bättre marginaler. Full validator:
 1539 ERROR / 230 WARNING / 1446 INFO före och efter; inga nya fynd.
 Enbart 2.1144–2.1149 tillagda, tidigare uppgifter oförändrade.
+
+## Omgång 3 – polynombegrepp, grad och koefficienter
+
+Inventeringen visade 23 huvuduppgifter, varav 20 spelbara. Efter påfyllnad:
+29 huvuduppgifter, 26 spelbara. Begreppet polynom ingår i områdets algebra
+för både 1b och 1c. Nytt innehåll prövar samma grundbegrepp med flera
+representationer, i stället för sex nästan identiska uttryck.
+
+| ID | Variation | Nivå | Facit / kommentarsförslag |
+|---|---|---:|---|
+| 1.868 | Konstantterm i vertikal värdetabell | 1 | c=p(0)=−3. Termerna med x försvinner vid x=0. |
+| 1.869 | Grad för en rektangels areapolynom | 2 | (x+4)(x+1)=x²+5x+4, alltså grad 2. |
+| 1.870 | Cirkelyta och π som koefficient | 1 | πx² är ett polynom; koefficienten behöver inte vara ett heltal. |
+| 1.871 | Konstantterm som skärning med y-axeln | 1 | d=p(0)=−2. |
+| 1.872 | Gradtal efter att termer tagit ut varandra | 2 | 3x⁴−3x⁴=0, kvar är x³+2x² och graden är 3. |
+| 1.873 | Ledande koefficient i en lådas volym | 2 | x·2x·(x+1)=2x³+2x²; koefficienten är 2. |
+
+Alla sex är fullständigt konstruktionsgranskade: **Granskad – inget fel**.
+Inga äldre uppgifter åtgärdade och inga kommentarer skickade till användare.
+Jämförelseunderlaget för variation var de 23 tidigare uppgiftstexterna,
+bland annat 1.125, 1.449, 1.463, 1.531, 1.560 och 1.834–1.841; detta
+innebär inte en fullständig omgranskning av de äldre uppgifterna.
+
+Tre nivå 1 och tre nivå 2. Area, volym och förenkling kräver flera tankeled
+och ligger därför på nivå 2. Miniräknare tillåten; GeoGebra behövs inte och
+symboliska verktyg skulle ta över det begrepp som prövas. Alla kort är
+fristående. Fyra egna SVG-figurer. 1.868 har tabell; 1.872 har bara ett
+kort uttryck eftersom en figur inte tillför något till termförenklingen.
+
+Kontroller: `tools/ma3-polynom-2026-10-22.test.js` samt konsumentens
+motsvarande `.browser.cjs`: 42 svarskontroller, 12 elevvyer och 12 lärarvyer
+på mobil/dator, inga fel eller överflöden. Även `c=-3` och `d=-2` godtas.
+SVG: noll ERROR/WARNING, fyra INFO om vit bakgrund vid viewBox-kanten.
+Full bankvalidator oförändrad (1539 ERROR, 230 WARNING, 1446 INFO).
+Strukturell diff visar endast de sex nya ID:na 1.868–1.873.

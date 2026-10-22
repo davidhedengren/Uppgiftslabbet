@@ -1919,3 +1919,20 @@ bevarade uttryckliga precisionskrav. Ytterligare fem kort kalibreras för
 ±2: 2.26acd och 2.38ab. Skilj ren enhetsomvandling från mätberäkning.
 Skydd: `tools/fysik1-densitet-2026-10-22.test.js` och konsumentens
 likadaterade browserprov. Fyra jämförelseuppgifter lämnas oförändrade.
+
+## Ma3-påfyllnad 2026-10-22 – grundbegrepp med flera representationer
+
+Se `MA3_PAFYLLNAD_2026-10-22.md`: 1.862–1.873 och 2.1144–2.1149.
+Skyddas av `tools/ma3-tangenter-2026-10-22.test.js`,
+`tools/ma3-definition-2026-10-22.test.js`, `tools/ma3-polynom-2026-10-22.test.js`
+och motsvarande browserprov i konsumenten.
+
+- En tangent kan korsa kurvan: x³/4 har vågrät tangent i origo (1.865).
+- Negativt h är tillåtet; h är en förändring, inte en x-koordinat.
+- En differenskvot kan vara odefinierad vid h=0 men ha ett gränsvärde (2.1149).
+- Ändligt många tabellvärden ger en uppskattning, inte ett bevis för derivatan.
+- Gradtal bedöms efter förenkling; π är en tillåten polynomkoefficient.
+- Konstanttermen är värdet vid x=0, även när den läses ur en tabell eller graf.
+- Nya kort har miniräknare men behöver inte GeoGebra. Flera tankeled ligger
+  på nivå 2 eller 3 även om slutberäkningen är enkel. De nya uppgifterna
+  ersätter inga tidigare ID:n eller redaktionella beslut.
