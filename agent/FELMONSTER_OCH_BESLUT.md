@@ -1983,3 +1983,18 @@ större mellanliggande vinkel betyder inte alltid större area. Kontrollera
 att en utritad trubbig vinkel och sidförhållandena följer uppgiftens givna
 data. Skydd: `tools/ma3-areasatsen-2026-10-22.test.js` mäter polygonerna,
 och konsumentens browserprov kontrollerar både svar och rätt kursspår.
+
+### Ma3-deriveringsregler och signerade funktionsargument, 2026-10-22
+
+Se `MA3_DERIVERINGSREGLER_2026-10-22.md`: nya 2.1165–2.1175 samt fem
+äldre jämförelser 2.30, 2.34, 2.38, 2.142 och 2.177. Svarsetiketten
+`f'(-2)=` ska fungera precis som `f'(2)=`; negativa argument får inte göra
+ett korrekt tal fel. `hogerled` känner nu igen signerade numeriska
+funktionsargument utan att godta godtyckliga ekvationsvänsterled.
+Skydd: konsumentens `tools/funktionsvansterled-2026-10-22.test.js`,
+`tools/brakuttryck.test.js` och derivataomgångens browserprov.
+Samtliga fem äldre facit är oförändrade och kontrollerade; miniräknare
+tillåts eftersom deriveringsmetoden fortfarande måste utföras av eleven.
+Vid lika hastigheter ska sträckfunktionernas derivator jämföras, inte
+deras värden. Dela inte bort en variabel innan dess möjliga nollvärde
+kontrollerats. Nivå 3 ska kräva samband eller metodval, inte bara fler siffror.
