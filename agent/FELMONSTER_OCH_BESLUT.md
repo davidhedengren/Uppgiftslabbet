@@ -1912,3 +1912,10 @@ Alla beslut, ändrade mål och begränsningar finns i samma rapport som FP92.
 Skydd: `tools/fysik-vardesiffror-2026-10-22.test.js` i Kunskapsgymmet,
 masterrapportens test samt gemensamt browserprov. Äldre matematikrättning
 och fysikkort med uttrycklig precision ska vara oförändrade.
+
+Uppföljning 2026-10-22: se `FYSIK1_DENSITET_2026-10-22.md`. Fem äldre
+avrundade maskinfacit rättas (2.18, 2.27, 2.274, 2.52, 2.54), med
+bevarade uttryckliga precisionskrav. Ytterligare fem kort kalibreras för
+±2: 2.26acd och 2.38ab. Skilj ren enhetsomvandling från mätberäkning.
+Skydd: `tools/fysik1-densitet-2026-10-22.test.js` och konsumentens
+likadaterade browserprov. Fyra jämförelseuppgifter lämnas oförändrade.
