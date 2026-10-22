@@ -1946,3 +1946,12 @@ De fem förbättrade äldre faciten behåller rätt svar och visar sina egna
 algebraiska övergångar. 2.816 behålls. När en enda logaritm uttryckligen
 efterfrågas används `en_logaritm`, även för ln. Se FP53. Skydd:
 `tools/ma3-logaritmer-2026-10-22.test.js` och konsumentens browserprov.
+
+### Ma3-faktorisering: fortsättning 2026-10-22
+
+Se `MA3_FAKTORISERING_2026-10-22.md`, nya 1.874–1.879. Areabilder ska
+stämma med det algebraiska uttrycket och ha läsbara längdmarkeringar.
+Faktorform kräver `faktoriserat`: omordnade faktorer och likvärdiga
+teckenbyten godtas, medan en utvecklad summa inte uppfyller ett uttryckligt
+krav på faktorform. Skydd: `tools/ma3-faktorisering-2026-10-22.test.js`
+och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
