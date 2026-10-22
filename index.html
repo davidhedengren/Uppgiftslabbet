@@ -65,31 +65,31 @@
       description:"Uppgiftslabbet är en uppgiftsbank för matematik och fysik. Sök, filtrera, slumpa och bygg övningsblad och prov för gymnasiet."
     },
     "/ma1/": {
-      title:"Matematik nivå 1 – Uppgiftslabbet",
+      title:"Matematik nivå 1 (Ma1a/Ma1b/Ma1c) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik nivå 1a, 1b och 1c. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/ma2/": {
-      title:"Matematik nivå 2 – Uppgiftslabbet",
+      title:"Matematik nivå 2 (Ma2a/Ma2b/Ma2c) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik nivå 2a, 2b och 2c. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/maforts1/": {
-      title:"Matematik fortsättning nivå 1 – Uppgiftslabbet",
+      title:"Matematik fortsättning nivå 1 (Ma3b/Ma3c) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik – fortsättning nivå 1. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/maforts2/": {
-      title:"Matematik fortsättning nivå 2 – Uppgiftslabbet",
+      title:"Matematik fortsättning nivå 2 (Ma4) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik – fortsättning nivå 2. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/mafordjupning1/": {
-      title:"Matematik fördjupning nivå 1 – Uppgiftslabbet",
+      title:"Matematik fördjupning nivå 1 (Ma5) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik – fördjupning nivå 1. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/fysik1/": {
-      title:"Fysik nivå 1 – Uppgiftslabbet",
+      title:"Fysik nivå 1 (Fy1) – Uppgiftslabbet",
       description:"Övningsuppgifter i Fysik nivå 1. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
     "/fysik2/": {
-      title:"Fysik nivå 2 – Uppgiftslabbet",
+      title:"Fysik nivå 2 (Fy2) – Uppgiftslabbet",
       description:"Övningsuppgifter i Fysik nivå 2. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     }
   };
@@ -5830,19 +5830,19 @@ if('scrollRestoration' in history) history.scrollRestoration='manual';
    måste vara unika mellan kurserna, annars krockar deklarationerna. */
 const KURSER=[
   {
-    id:'fy1', titel:'Fysik - nivå 1', siffra:'1', färg:'#12808E', rygg:'#12808E',
+    id:'fy1', titel:'Fysik - nivå 1 (Fy1)', siffra:'1', färg:'#12808E', rygg:'#12808E',
     taggar:['Fysikens grunder','Rörelse','Kraft','Energi och rörelsemängd','Tryck','Värme och temperatur','Elektricitet','Partikel- och kärnfysik'],
     filer:['struktur.js','uppgifter.js'],
     globaler:{bank:'BANK',kapnamn:'KAPNAMN',omr:'OMR'}
   },
   {
-    id:'fy2', titel:'Fysik - nivå 2', siffra:'2', färg:'#0A5163', rygg:'#0A5163',
+    id:'fy2', titel:'Fysik - nivå 2 (Fy2)', siffra:'2', färg:'#0A5163', rygg:'#0A5163',
     taggar:['Rörelse och krafter','Ljud och andra mekaniska vågor','Elektromagnetism','Vågor och partiklar','Astrofysik','Relativitetsteori'],
     filer:['struktur2.js','uppgifter2.js'],
     globaler:{bank:'BANK2',kapnamn:'KAPNAMN2',omr:'OMR2'}
   },
   {
-    id:'ma1', titel:'Matematik - nivå 1', siffra:'1', färg:'#2C62A8',
+    id:'ma1', titel:'Matematik - nivå 1 (Ma1a/Ma1b/Ma1c)', siffra:'1', färg:'#2C62A8',
     rygg:'linear-gradient(90deg,#BF3A2E 0 50%,#E3B52B 50% 100%) top/100% 33.333% no-repeat,linear-gradient(#2E7D52 0 0) center/100% 33.334% no-repeat,linear-gradient(#2C62A8 0 0) bottom/100% 33.333% no-repeat',
     spår:[
       {id:'1a',etikett:'1a',färg:'#BF3A2E',bakgrund:'linear-gradient(165deg,color-mix(in oklab,#E3B52B 28%,#fff) 0 47%,color-mix(in oklab,#BF3A2E 23%,#fff) 53% 100%)'},
@@ -5855,7 +5855,7 @@ const KURSER=[
     globaler:{bank:'BANKMA1',kapnamn:'KAPNAMNMA1',omr:'OMRMA1'}
   },
   {
-    id:'ma2', titel:'Matematik - nivå 2', siffra:'2', färg:'#2C62A8',
+    id:'ma2', titel:'Matematik - nivå 2 (Ma2a/Ma2b/Ma2c)', siffra:'2', färg:'#2C62A8',
     rygg:'linear-gradient(90deg,#BF3A2E 0 50%,#E3B52B 50% 100%) top/100% 33.333% no-repeat,linear-gradient(#2E7D52 0 0) center/100% 33.334% no-repeat,linear-gradient(#2C62A8 0 0) bottom/100% 33.333% no-repeat',
     spår:[
       {id:'2a',etikett:'2a',färg:'#BF3A2E',bakgrund:'linear-gradient(165deg,color-mix(in oklab,#E3B52B 28%,#fff) 0 47%,color-mix(in oklab,#BF3A2E 23%,#fff) 53% 100%)'},
@@ -5868,7 +5868,7 @@ const KURSER=[
     globaler:{bank:'BANKMA2',kapnamn:'KAPNAMNMA2',kapnamnSpar:'KAPNAMNMA2SPAR',omr:'OMRMA2',spar:'SPARMA2',grupp:'GRUPPMA2'}
   },
   {
-    id:'mato1', titel:'Matematik fortsättning - nivå 1', siffra:'1', färg:'#2C62A8',
+    id:'mato1', titel:'Matematik fortsättning - nivå 1 (Ma3b/Ma3c)', siffra:'1', färg:'#2C62A8',
     rygg:'linear-gradient(#2E7D52 0 50%,#2C62A8 50% 100%)',
     spår:[
       {id:'1b',etikett:'1b',färg:'#2E7D52'},
@@ -5880,14 +5880,14 @@ const KURSER=[
     globaler:{bank:'BANKMATO1',kapnamn:'KAPNAMNMATO1',kapnamnSpar:'KAPNAMNMATO1SPAR',omr:'OMRMATO1',spar:'SPARMATO1',grupp:'GRUPPMATO1'}
   },
   {
-    id:'mato2', titel:'Matematik fortsättning - nivå 2', siffra:'2', färg:'#2C62A8', rygg:'#2C62A8',
+    id:'mato2', titel:'Matematik fortsättning - nivå 2 (Ma4)', siffra:'2', färg:'#2C62A8', rygg:'#2C62A8',
     spår:[{id:'2c',etikett:'2c',färg:'#2C62A8'}], defaultSpår:'2c',
     taggar:['Komplexa tal','Polynom och faktorsatsen','Fördjupade funktioner och derivata','Integraler','Trigonometri'],
     filer:['strukturmato2.js','uppgiftermato2.js'],
     globaler:{bank:'BANKMATO2',kapnamn:'KAPNAMNMATO2',omr:'OMRMATO2',spar:'SPARMATO2'}
   },
   {
-    id:'matf1', titel:'Matematik fördjupning - nivå 1', siffra:'1', färg:'#6E3B86', rygg:'#6E3B86',
+    id:'matf1', titel:'Matematik fördjupning - nivå 1 (Ma5)', siffra:'1', färg:'#6E3B86', rygg:'#6E3B86',
     taggar:['Differentialekvationer','Bevismetoder','Talbaser och kongruens','Kombinatorik','Rekursion och mängdlära'],
     filer:['strukturmatf1.js','uppgiftermatf1.js'],
     globaler:{bank:'BANKMATF1',kapnamn:'KAPNAMNMATF1',omr:'OMRMATF1'}
@@ -6577,9 +6577,9 @@ function byggSpårfilter(){
 function kursnamnMedSpår(){
   const sp=aktivtSpår();
   if(!sp) return AKTIV?.titel||'';
-  if(AKTIV.id==='ma1'||AKTIV.id==='ma2') return `Matematik nivå ${sp}`;
-  if(AKTIV.id==='mato1') return `Matematik – fortsättning nivå ${sp}`;
-  if(AKTIV.id==='mato2') return `Matematik – fortsättning nivå 2 · ${sp}`;
+  if(AKTIV.id==='ma1'||AKTIV.id==='ma2') return `Matematik nivå ${sp} (Ma${sp})`;
+  if(AKTIV.id==='mato1') return `Matematik – fortsättning nivå ${sp} (Ma3${sp.slice(-1)})`;
+  if(AKTIV.id==='mato2') return `Matematik – fortsättning nivå 2 (Ma4)`;
   return `${AKTIV.titel} · ${sp}`;
 }
 function uppdateraKursRubriker(){
@@ -6659,8 +6659,8 @@ function ritaKursval(){
   /* Titeln delas upp så att nivån blir en egen markör i stället för att
      upprepas i rubriken. "Fysik - nivå 2" blir rubriken "Fysik" plus "Nivå 2". */
   const delaTitel=t=>{
-    const m=/^(.*?)\s*[-–]\s*niv[åa]\s*(\S+)\s*$/i.exec(t);
-    return m?{namn:m[1].trim(),niva:m[2]}:{namn:t,niva:null};
+    const m=/^(.*?)\s*[-–]\s*niv[åa]\s*(\S+)(?:\s+(\([^)]*\)))?\s*$/i.exec(t);
+    return m?{namn:m[1].trim()+(m[3]?" "+m[3]:""),niva:m[2]}:{namn:t,niva:null};
   };
   /* Områdena skrivs som löptext. Listan kortas på hela områdesnamn i
      stället för att klippas mitt i ett ord, och resten summeras. */
