@@ -1844,3 +1844,32 @@ inte automatiskt större fallacceleration. När pilar kvantitativt jämför
 krafter ska längdförhållandet stämma (4.762: 3:1).
 Skydd: tyngdkraftsvariationstestet, utökat kapitel 4-test och konsumentens
 `fysik1-kompletteringar-2026-10-21.browser.cjs tyngd`.
+
+## FP91 – importerade kopplingsblad: lös om facit och namnge komponenterna
+
+2026-10-22: användarens två blad med enkla kopplingar ger 24 importerade
+frågor och 16 varianter, **8.580–8.619**. Se
+[FYSIK1_ENKLA_KOPPLINGAR_2026-10-22.md](FYSIK1_ENKLA_KOPPLINGAR_2026-10-22.md)
+och motsvarande JSON för alla ID:n, källmappning, rättningar och
+kommentarsförslag. Inga äldre bankobjekt ändras.
+
+- Originalfacit är inte en verifierad beräkning: I 3b ger 30,0 W, I 5a
+  ger 13,38 mW och II 6a ger 7,5 Ω när lampan har effekten 10 W.
+  Bevara dessa omräknade svar; återinför inte 30,3 W, 1,33 mW eller 22,5 Ω.
+- ”En av komponenterna” med känd effekt/spänning kan ge olika svar beroende
+  på vilken komponent som avses. Här får komponenten ett tydligt namn och
+  det andra fallet en egen fråga (8.604–8.607). Byt aldrig plats på U₁/U₂
+  när den kända resistansen byter komponent.
+- En serieresistor använder samma ström som lampan men **sin egen**
+  spänning/effekt. En lampas märkeffekt gäller när den får märkspänningen.
+  Visa den kopplingen i lösningen utan att ge färdiga formler i frågan.
+- Voltmetergrenen ansluts över rätt komponent(er). Totalamperemetern ska
+  ligga före förgreningen; ledningen måste avbrytas vid mätarsymbolen.
+  Ingen genomgående ledning får kortsluta mätare, resistor eller batteri.
+- Använd två namngivna, ordnade fält när två komponentstorheter efterfrågas.
+  Pröva även omkastade svar. Bevara tillräcklig precision i mellanled och
+  följ den avrundning som faktiskt står i slutet av frågan.
+
+Skydd: master `tools/fysik1-enkla-kopplingar-2026-10-22.test.js` med
+oberoende svarsberäkningar och ström-/effektbalans; konsumentens likadaterade
+`.browser.cjs` prövar samtliga 40 kort och enheter på mobil/dator.
