@@ -50,3 +50,14 @@ Det befintliga testet `statistik-sx-2026-10-14` förbjuder σx i Ma2-uppgifter. 
 ## Förslag, inte genomfört
 
 De flerdelade uppgifterna 4.328–4.345 kan behållas hela i Uppgiftslabbet. I Kunskapsgymmet kan de bara visa Sx-kortet, eftersom `spelDelar` får vara en delmängd av läraruppgiftens delar. Median-, typvärdes- och variationsbreddsdelarna skulle då inte längre dyka upp i standardavvikelseområdet. Det kräver användarens beslut.
+
+## Genomfört: dolda delkort i standardavvikelseområdet
+
+Användaren godkände förslaget 2026-10-22. 67 delkort i 25 uppgifter har fått `"spel": false`. Det gäller delkort som enbart frågar efter median, typvärde, variationsbredd, kvartilavstånd eller vilket lägesmått som påverkas minst.
+
+Berörda uppgifter: 4.241, 4.328–4.345, 4.347, 4.348, 4.351, 4.364, 4.366 och 4.372.
+
+- **Uppgiftslabbet:** uppgifterna är oförändrade, med text, facit och alla delkort kvar. En strukturerad jämförelse visar att den enda skillnaden är de 67 markeringarna.
+- **Kunskapsgymmet:** `expandGameTask` hoppar över delkort med `spel:false`. Indexen räknas mot alla delar, så svarmetadata hamnar på rätt kort. Ett ensamt kvarvarande delkort visas som ett eget kort med sitt delkorts-ID, till exempel 4.328c, så att elevhistoriken behålls. Uppgifter utan dolda delar beter sig som tidigare.
+- **Behållna delar:** medelvärdesdelarna i transformationsuppgifterna (4.372 a) och missuppfattningsfrågan 4.351 e.
+- **Tester:** `kunskapsgymmet/tools/dolda-delkort.test.js`. Validatorn för Ma2 är oförändrad. Testerna ger 97 godkända i master och 194 i Kunskapsgymmet.
