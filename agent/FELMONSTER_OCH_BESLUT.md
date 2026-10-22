@@ -1974,3 +1974,12 @@ visar f′ mot f och ska ha just dessa axelbeteckningar. En tillagd konstant
 försvinner vid derivering: 4+3e²ˣ har f′=2(f−4), inte 2f. Behåll nivå 3
 på detta mer krävande begreppskort. Skydd: `tools/ma3-exponential-2026-10-22.test.js`
 och konsumentens motsvarande browserprov.
+
+### Ma3c-areasatsen: påfyllnad 2026-10-22
+
+Se `MA3_AREASATSEN_2026-10-22.md`, nya 4.512–4.519. Uppgifterna hör till
+1c, inte 1b. Samma sidprodukt och supplementvinklar ger lika stor area;
+större mellanliggande vinkel betyder inte alltid större area. Kontrollera
+att en utritad trubbig vinkel och sidförhållandena följer uppgiftens givna
+data. Skydd: `tools/ma3-areasatsen-2026-10-22.test.js` mäter polygonerna,
+och konsumentens browserprov kontrollerar både svar och rätt kursspår.
