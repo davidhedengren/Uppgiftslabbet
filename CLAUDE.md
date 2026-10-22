@@ -61,6 +61,7 @@ Eleverna är gymnasieelever; texten ska vara enkel och konkret.
 - Facit där `rättSvar` bara godkänner ett format som eleven inte kan gissa (t.ex. bara "5" men inte "5 m/s").
 - Figurer där text/beteckningar hamnar utanför bilden (SVG); se `agent/INNEHALLSREGLER.md` och `tools/granska-svg.js`.
 - Allmänt: internt utvecklarspråk i elevtext, kryssprodukter, och nya uppgifter som är massproducerade. Användaren vill ha relativt unika uppgifter med egna sammanhang.
+- Begreppen interpolation och extrapolation används inte i uppgifter, facit eller ledtrådar (användarbeslut 2026-10-22, begreppen tas inte upp på gymnasiet). Skriv i stället vardagligt, till exempel ”inom det undersökta intervallet” och ”långt utanför mätvärdena”. Ma2 4.142 och 4.224 togs bort av detta skäl.
 
 ## Kurser och planeringar
 
