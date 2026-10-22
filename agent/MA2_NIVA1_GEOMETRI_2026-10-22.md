@@ -42,6 +42,17 @@ Alla har träningsnivå 1 och en figur eller tabell.
 
 Testet `tools/ma2-niva1-statistik-modeller-2026-10-22.test.js` räknar om normalfördelningsandelarna ur texten och kontrollerar att de sju svaren är olika. Övriga facit räknas om från figurernas och tabellernas data.
 
+## Omgång 3: problemlösning, koordinater och bevis (3.650–3.697)
+
+| Område | Före | Efter | Innehåll |
+|---|---|---|---|
+| geometri_problemlosning | 2 | 14 | Thales sats, randvinkelsatsen, tangent och radie, L-formad tomt, parallellogrammets diagonal, likbent triangel, fyrhörning, alternat- och sidovinklar, välj sats (korda, Pythagoras), rektangel i cirkel |
+| koordinatgeometri_problemlosning | 5 | 17 | area och omkrets i rutnät, fjärde hörnet, höjd, punkt på axel, avstånd till axel, kvadrant, lodrät sträcka, lodrät bas, parallellogram, rät vinkel |
+| avstandsformeln_mittpunktsformeln | 9 | 21 | Pythagoreiska taltripplar (5–12–13, 8–15–17, 9–12–15, 5–12–13 med drönare), √13, mittpunkt med decimaler, karta, formelval, cirkelns radie |
+| bevis_likformighet | 11 | 23 | tredje vinkeln avgör, sidkvoter (ja/nej, segel), vertikalvinklar, motsvarande sida och vinkel, rätvinkliga och likbenta trianglar, längdskala |
+
+Koordinatfigurerna har etiketter med vit bakgrund, och axelsiffror utelämnas där en punkt ligger på axeln. SVG-granskningen ger en kvarstående varning i 3.651 (DEGREE_LABEL_MISPLACED). Den är heuristisk, och figuren är granskad visuellt. Validatorn ger inga nya fynd efter att två texter skrevs om för att inte likna befintliga uppgifter. Testet ligger i `tools/ma2-niva1-geometri-omgang3-2026-10-22.test.js`.
+
 ## Kontroller
 
 - **Variation:** inga två frågetexter är lika. Validatorn ger inga nya fynd, inte heller `VERY_SIMILAR_TEXT`.
