@@ -1,0 +1,202 @@
+{
+  "uppgifter.js": {
+    "before": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 833
+    },
+    "after": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 832
+    },
+    "added": [],
+    "changed": [
+      {
+        "id": "2.2",
+        "fields": [
+          "spelDelar",
+          "svarVardesiffror"
+        ]
+      },
+      {
+        "id": "5.95",
+        "fields": [
+          "t",
+          "s",
+          "tolerans",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "5.97",
+        "fields": [
+          "t",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "5.117",
+        "fields": [
+          "t",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "5.123",
+        "fields": [
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "5.382",
+        "fields": [
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "5.395",
+        "fields": [
+          "spelDelar",
+          "traningsniva"
+        ]
+      },
+      {
+        "id": "5.396",
+        "fields": [
+          "t",
+          "s",
+          "traningsniva"
+        ]
+      },
+      {
+        "id": "5.225",
+        "fields": [
+          "s",
+          "traningsniva",
+          "spelDelar"
+        ]
+      },
+      {
+        "id": "9.415",
+        "fields": [
+          "t",
+          "s",
+          "spelIntro",
+          "spelDelar",
+          "svarVardesiffror"
+        ]
+      }
+    ]
+  },
+  "uppgifter2.js": {
+    "before": {
+      "ERROR": 1571,
+      "WARNING": 0,
+      "INFO": 39
+    },
+    "after": {
+      "ERROR": 1563,
+      "WARNING": 0,
+      "INFO": 39
+    },
+    "added": [],
+    "changed": [
+      {
+        "id": "1.2",
+        "fields": [
+          "svarVardesiffror",
+          "geogebra",
+          "miniräknare"
+        ]
+      },
+      {
+        "id": "1.3",
+        "fields": [
+          "rättSvar",
+          "spelDelar",
+          "svarVardesiffror",
+          "geogebra",
+          "miniräknare"
+        ]
+      },
+      {
+        "id": "1.4",
+        "fields": [
+          "s",
+          "rättSvar",
+          "spelDelar",
+          "svarVardesiffror",
+          "geogebra",
+          "miniräknare"
+        ]
+      },
+      {
+        "id": "1.6",
+        "fields": [
+          "svarVardesiffror",
+          "geogebra",
+          "miniräknare"
+        ]
+      }
+    ]
+  },
+  "uppgifterma2.js": {
+    "before": {
+      "ERROR": 4,
+      "WARNING": 131,
+      "INFO": 94
+    },
+    "after": {
+      "ERROR": 4,
+      "WARNING": 131,
+      "INFO": 94
+    },
+    "added": [],
+    "changed": [
+      {
+        "id": "4.117",
+        "fields": [
+          "spelIntro",
+          "spelDelar"
+        ]
+      }
+    ]
+  },
+  "browser": {
+    "checks": 142,
+    "views": 40,
+    "widths": [
+      390,
+      1280
+    ],
+    "errors": [],
+    "issues": []
+  },
+  "base": {
+    "Uppgiftslabbet": "b91178f",
+    "Kunskapsgymmet": "f0710f7"
+  },
+  "tests": {
+    "master": {
+      "total": 554,
+      "pass": 546,
+      "baselineFailures": 8
+    },
+    "consumer": {
+      "total": 199,
+      "pass": 199
+    },
+    "targetedMaster": {
+      "total": 16,
+      "pass": 16
+    }
+  },
+  "fullValidator": {
+    "lasfel": [],
+    "ERROR": 1569,
+    "WARNING": 230,
+    "INFO": 1451,
+    "newFindingsInChangedBanks": 0
+  }
+}

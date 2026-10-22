@@ -199,6 +199,34 @@ som hittas under granskningen ska också följas upp med en sökning efter
 liknande fall. Bevara skillnaden mellan fullständig granskning och en
 avgränsad kontroll, exempelvis enbart svarsfält eller delkortens facit.
 
+## Värdesiffror i fysik – användarbeslut 2026-10-22
+
+Om ingen precision anges rekommenderas lika många värdesiffror som det minst
+noggranna **relevanta mätvärdet**. Korrekt avrundade slutsvar med ±2 värdesiffror
+godtas, dock minst en. Rekommenderat 2 innebär alltså 1–4, men inte 5.
+Detta är inte en procentuell feltolerans: talet måste vara korrekt avrundat
+vid den precision eleven faktiskt har skrivit, även efter enhetsbyte.
+
+Uttryckliga krav på exempelvis två decimaler, tre värdesiffror, heltal eller
+exakt form behålls enligt användarens förtydligande samma dag. Ändra inte
+äldre sådana krav mekaniskt. Exakta antal, koefficienter, enhetsomvandlingar
+och standardkonstanter ska inte sänka mätvärdenas precision. Bedöm det
+fristående kortets egna givna värden, inte data som bara hör till andra delar.
+Vid addition/subtraktion och osäkerhetsuppgifter krävs en särskild bedömning;
+tillämpa inte multiplikationens tumregel blint på exempelvis massdefekter.
+
+Spara den manuellt verifierade rekommendationen i `svarVardesiffror` (tal per
+kort, array per svar i huvuduppgiften). Spara oavrundat `rättSvar`; maskinen
+avrundar till elevens precision. Använd ingen textheuristik för att fylla
+metadata över hela banken. Äldre kort utan verifierad metadata behåller
+befintlig rättning tills de granskats. Se FP93 för införandets faktiska omfattning.
+
+Avslutande nollor i heltal är tvetydiga: 9400 kan stå för två värdesiffror.
+För entydigt fler siffror används decimaler eller grundpotensform, t.ex.
+9,400·10³ (fyra) och 9,4000·10³ (fem). Inledande nollor och exponentens siffror
+räknas inte. Informera eleven om rekommendationen och accepterat spann vid
+svarsfältet när standardregeln används.
+
 ## Miniräknare i fysik
 
 Användarbeslut 2026-10-09: miniräknare är alltid tillåten i Fysik 1 och Fysik 2,

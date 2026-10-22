@@ -1873,3 +1873,41 @@ kommentarsförslag. Inga äldre bankobjekt ändras.
 Skydd: master `tools/fysik1-enkla-kopplingar-2026-10-22.test.js` med
 oberoende svarsberäkningar och ström-/effektbalans; konsumentens likadaterade
 `.browser.cjs` prövar samtliga 40 kort och enheter på mobil/dator.
+
+## FP92 – delkortens nivå, sammanhang och enhetsvisning
+
+2026-10-22 12:24: `FELRAPPORTER_2026-10-22_1224.md` innehåller samtliga tio
+rapportbeslut, följdgranskningar och färdiga kommentarer. Ma2 4.117 får
+sammanhängande text; fy1 5.117, 5.97, 5.382 och 9.415 får tydligare frågor.
+9.415 gäller fortfarande protoner, inte neutrala atomer i solens inre.
+5.123a är nivå 4, 5.225a och 5.396 nivå 5; jämförelsen 5.395b nivå 4.
+Detta är träningsnivåer, inte automatisk omräkning av E/C/A-poäng.
+5.95a:s uttryckliga krav ändras särskilt efter rapporten till två värdesiffror.
+Oavrundat facit 9427,2 J bevaras; 9,4·10³ J är rätt avrundning.
+
+Enhetsförhandsvisningen ska skilja tal från enhetsbråk, skriva enhetsbokstäver
+upprätt och visa multiplikation i kg·m/s. Algebra får inte bli enheter (1,5x).
+Skydd: master `tools/felrapporter-2026-10-22.test.js`, befintliga fysiktester
+och konsumentens `tools/felrapporter-2026-10-22.browser.cjs`.
+
+## FP93 – värdesiffror med ±2, uttryckliga precisionskrav går före
+
+Användarbeslut 2026-10-22, förtydligat i chatten: behåll äldre uttryckliga
+decimal-/värdesifferkrav. Utan sådant krav rekommenderas minsta relevanta
+mätprecision och korrekt avrundade svar med ±2 värdesiffror godtas, minst en.
+Godta inte felavrundade värden genom att bara öka toleransen.
+
+Granskad metadata `svarVardesiffror` och oavrundat maskinfacit krävs. Den nya
+kontrollen ligger före den generella rättningen, även för enhetsalternativ
+och separata delkort. Nya regeln får inte kringgås av en äldre bred tolerans.
+Exakta antal, konstanter, figursiffror och andra delars uppgifter får inte
+automatiskt styra precisionen. Skilj dessutom subtraktion av nära massor från
+vanlig multiplikation av mätvärden. Heltalsnollor är tvetydiga; grundpotensform
+och decimalnollor ger entydig precision.
+
+Första införandet omfattar tio kort: fy1 2.2ab, 9.415ab samt fy2 1.2,
+1.3ab, 1.4ab, 1.6. Övriga äldre fysikkort är **inte** färdigkalibrerade.
+Alla beslut, ändrade mål och begränsningar finns i samma rapport som FP92.
+Skydd: `tools/fysik-vardesiffror-2026-10-22.test.js` i Kunskapsgymmet,
+masterrapportens test samt gemensamt browserprov. Äldre matematikrättning
+och fysikkort med uttrycklig precision ska vara oförändrade.
