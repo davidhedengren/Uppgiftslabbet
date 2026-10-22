@@ -1998,3 +1998,18 @@ tillåts eftersom deriveringsmetoden fortfarande måste utföras av eleven.
 Vid lika hastigheter ska sträckfunktionernas derivator jämföras, inte
 deras värden. Dela inte bort en variabel innan dess möjliga nollvärde
 kontrollerats. Nivå 3 ska kräva samband eller metodval, inte bara fler siffror.
+
+### Fy2-astronomi: magnitudspråk och långa delkort, 2026-10-22
+
+Se `FY2_ASTRONOMI_FELRAPPORTER_2026-10-22.md`: rapporterade 5.30, 5.35,
+5.41, 5.42, 5.48 och jämförelser 5.31–5.34, 5.39. Skriv att magnituderna
+gäller total strålning i stället för att kräva ordet ”bolometrisk”. Ta inte
+bort detta fysikaliska villkor när magnitud används för total effekt.
+Fotonantal per sekund följer mottagen effekt dividerad med fotonenergi;
+det är ingen separat ”enfärgsformel”. Fristående delkort behöver hela
+lösningen från sina egna givna data. 5.42 f och de långa kedjorna ligger
+på nivå 5, men enkla delar a/c ska inte ärva heluppgiftens höga nivå.
+5.41 och 5.48 är nu begreppsfrågor enligt lärarens kursanpassning. Detta
+är inte ett generellt förbud mot magnitudberäkningar i resten av banken.
+Skydd: `tools/fy2-astronomi-2026-10-22.test.js`, formelsamlingstestet och
+konsumentens motsvarande browserprov.
