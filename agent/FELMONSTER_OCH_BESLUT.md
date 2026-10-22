@@ -1965,3 +1965,12 @@ y=3x och f(x)=3x godtas liksom 3x. Detta tar inte bort kravet på ett
 färdigförenklat svar. Samlade termer, reducerade bråk och rätt variabel
 krävs fortfarande. Skydd: konsumentens `tools/brakuttryck.test.js` och
 `tools/ma3-rationella-2026-10-22.browser.cjs`, mastertest med samma datum.
+
+### Ma3: exponentialfunktionens värde och derivata, 2026-10-22
+
+Se `MA3_EXPONENTIAL_2026-10-22.md`, nya 2.1158–2.1164. Tabellen i 2.1158
+visar punktvärden, inte jämnt fördelade x-värden. Diagrammet i 2.1164
+visar f′ mot f och ska ha just dessa axelbeteckningar. En tillagd konstant
+försvinner vid derivering: 4+3e²ˣ har f′=2(f−4), inte 2f. Behåll nivå 3
+på detta mer krävande begreppskort. Skydd: `tools/ma3-exponential-2026-10-22.test.js`
+och konsumentens motsvarande browserprov.
