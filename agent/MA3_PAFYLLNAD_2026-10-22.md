@@ -53,3 +53,38 @@ visar Ma1a/Ma1b/Ma1c, Ma2a/Ma2b/Ma2c, Ma3b/Ma3c, Ma4, Ma5, Fy1 och Fy2.
 Valt matematikspår visar sitt eget tidigare kursnamn. Kurs-ID och sparade
 resultat ändras inte. Lokal webbläsarkontroll på mobil/dator och byte mellan
 Ma3b/Ma3c godkända. Commits: Uppgiftslabbet `5b854bb`, Kunskapsgymmet `6ebc5f7`.
+
+## Omgång 2 – derivatans definition
+
+Före: 21 huvuduppgifter, 20 spelbara, två uttryckligen på träningsnivå 1.
+Efter: 27 huvuduppgifter, 26 spelbara. Fyra nya på nivå 1, en på nivå 2,
+en på nivå 3. Samtliga för 1b/1c. Området hör till derivatans definition
+och tolkning, ett centralt grundmoment i Matematik 3.
+
+| ID | Innehåll | Nivå | Facit / kommentarsförslag |
+|---|---|---:|---|
+| 2.1144 | Tolka h i en graf | 1 | h=4,2−4=0,2; h är ändringen, inte den andra x-koordinaten. |
+| 2.1145 | Punkten flyttas till vänster | 1 | h=4,7−5=−0,3. Ett h får vara negativt. |
+| 2.1146 | Konstant funktion med definitionen | 1 | (7−7)/h=0 för h≠0. Gränsvärdet och derivatan är 0. |
+| 2.1147 | Välja rätt differenskvot | 2 | [2(1+h)²−2]/h; både funktionsvärdena och ändringen i x behövs. |
+| 2.1148 | Tabell med h från båda håll | 1 | Kvoten närmar sig 2,5. Tabellen ger en uppskattning, inte ett bevis. |
+| 2.1149 | Gränsvärde trots odefinierad kvot vid h=0 | 3 | Kvoten är 2+h för h≠0, så derivatan är 2. Ett hål hindrar inte gränsvärdet. |
+
+Alla sex nya uppgifter är granskade: **Granskad – inget fel** efter
+konstruktionskontrollen. Inga äldre uppgifter åtgärdade. Kommentarerna är
+förslag/dokumentation; inga rapportstatusar ändrades i produktion.
+
+Områdets 21 äldre uppgiftstexter inventerades för variation, särskilt
+2.800–2.809 och 2.1124–2.1131; detta var ingen fullständig omgranskning av dem.
+Nya uppgifter kompletterar vanliga beräkningar med definitionens byggstenar.
+Alla kort är fristående. Miniräknare tillåten; GeoGebra behövs inte.
+2.1148 använder en vertikal tabell som fungerar på mobil. En extra graf
+skulle upprepa samma information, så den uppgiften har ingen SVG.
+
+Verifiering: `tools/ma3-definition-2026-10-22.test.js` samt konsumentens
+motsvarande `.browser.cjs`. 56 kontroller i riktiga svarsfält, alla alternativ,
+12 elevvyer och 12 lärarvyer, 390/1280 px. Inga JS-/KaTeX-fel eller överflöden.
+SVG: noll ERROR/WARNING, fem INFO om den vita bakgrundens avsiktliga kantläge.
+Etiketter och axeltal flyttades för bättre marginaler. Full validator:
+1539 ERROR / 230 WARNING / 1446 INFO före och efter; inga nya fynd.
+Enbart 2.1144–2.1149 tillagda, tidigare uppgifter oförändrade.
