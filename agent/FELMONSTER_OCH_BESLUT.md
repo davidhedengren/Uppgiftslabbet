@@ -2013,3 +2013,14 @@ på nivå 5, men enkla delar a/c ska inte ärva heluppgiftens höga nivå.
 är inte ett generellt förbud mot magnitudberäkningar i resten av banken.
 Skydd: `tools/fy2-astronomi-2026-10-22.test.js`, formelsamlingstestet och
 konsumentens motsvarande browserprov.
+
+### Ma3 – primitiva funktioner med olika slags villkor, 2026-10-22
+
+Se `MA3_PRIMITIVA_VILLKOR_2026-10-22.md`, nya 3.1195–3.1200. Skilj
+värdet på funktionen från värdet på dess derivata. Ett skillnadsvillkor
+kan vara uppfyllt för alla integrationskonstanter och ger då inget
+bestämt startvärde. Om en integral gäller F får den inte beräknas genom
+att integrera F′ i stället. Figurer av en okänd funktion ska inte
+avslöja den konstant som eleven ska bestämma; visa då givna punkter
+eller en känd derivatagraf. Skydd: `tools/ma3-primitiva-villkor-2026-10-22.test.js`
+och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
