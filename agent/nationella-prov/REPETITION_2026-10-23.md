@@ -114,7 +114,15 @@ Detta är första omgången; Ma5 väntar.”
   Tre vinkelbågar har manuellt kontrollerats mot figurernas koordinater.
 - Full bankvalidator: inga fynd på de nya ID:na. Befintlig baslinje är oförändrad:
   1 483 ERROR, 230 WARNING och 1 445 INFO. Hela banken är alltså inte felfri.
-- Ursprungliga bankobjekt oförändrade och gemensamma bank-/strukturfiler identiska.
+- Ursprungliga bankobjekt oförändrade av denna omgång. De fyra bankfilerna
+  är byteidentiska mellan apparna och de nya kapitlens struktur är densamma.
+  Kunskapsgymmets befintliga GRUPPMATO1-överskrivning är avsiktligt bevarad.
+- Parallella ändringar integrerade före push: Uppgiftslabbet b52eed1,
+  5a0a8b9, 33fc582 och Kunskapsgymmet f5d30f7, 3837df1, eaf38a3.
+  De ändrar gamla Ma3-facit. Samtliga deras bankobjekt är bevarade oförändrade;
+  nya uppgifter ligger efter dem. Enda manuella mergekonflikten var bankens
+  cacheversion i Kunskapsgymmet, som fick en gemensam ny versionssträng.
+  Spår-/visningskontroller kördes igen efter integrationen.
 
 Tester:
 `tools/np-repetition-2026-10-23.test.py` (SymPy),
