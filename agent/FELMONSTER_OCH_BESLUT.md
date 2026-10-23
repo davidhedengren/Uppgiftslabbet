@@ -2124,3 +2124,13 @@ med angiven andragrad räcker tre olika x-värden (1.899). Bevara skillnaden.
 Förenklade polynom rättas med `förenklat_polynom`, inklusive naturliga
 prefix och omordnade termer. Skydd: `tools/ma3-startvariation-2026-10-23.test.js`
 och konsumentens browserprov. Befintliga matematikkort ändrades inte.
+
+### Fy2-astronomi: formelsamling, AU och ”bolometrisk”, 2026-10-23
+
+Se `FY2_STJARNOR_STADNING_2026-10-23.md`.
+- **Inga formelsamlingsvärden i frågan:** solens magnitud, temperatur, luminositet och radie, σ, Wiens konstant, solmassa, jordradie och Jupiters massa ska inte stå i frågan. Läraren ändrade beslutet från 2026-10-12 om att ange M☉ = 4,74. Hubblekonstanten 70 står kvar som modellvärde.
+- **Tolerans:** svar som beror på solens värden ska godtas med alla vanliga formelsamlingsvärden, M☉ 4,74/4,83 och T☉ 5 772–5 800 K.
+- **Begrepp och enhet:** begreppet ”bolometrisk” används inte. Skriv ”Magnituderna gäller all strålning från stjärnan.” Enheten för astronomisk enhet heter AU, aldrig AE.
+- **Dubbletter:** skapa inte nya kort som upprepar samma stjärna och samma data som ett befintligt kort.
+
+Skydd: `tools/fy2-stjarnor-stadning-2026-10-23.test.js`.
