@@ -2163,3 +2163,35 @@ Exakta bråkkrav anges uttryckligen; annars följs tidigare avrundningsbeslut.
 Långa ekvationer ska radbrytas matematiskt begripligt, inte klippas eller
 krympas till oläsbar text. Kontrollera både frågan och facit på mobil.
 Skydd: `tools/ma1-parenteser-2026-10-23.test.js` och konsumentens browserprov.
+
+### Procentfacit, öppna talpar och stjärnors delkort, 2026-10-23 kl. 13:45
+
+Se `FELRAPPORTER_2026-10-23_1345.md`, 20 granskade och 15 ändrade objekt.
+Ma1 #3.114 avvisade 27 men godtog felavrundade 27,2: facit var den
+avrundade strängen 27.3 med bred tolerans och saknat numeriskt format.
+Behåll full precision, sätt `svarFormat:"numeriskt"` och `svarEnhet:"%"`,
+och använd den befintliga regeln för fria korrekta avrundningar när frågan
+saknar precisionskrav. Lägg inte nya avrundningsledningar i frågan.
+Samma felmönster rättades i #3.23/#3.65/#3.70/#3.71/#3.105.
+Konsumenten måste tolka hela procentuttryck som `300/11 %`, inte kalla
+bråkets nämnare en enhet. Bevara skillnaden mellan explicit procenttal och
+andel utan procenttecken; felaktiga enheter och nollnämnare avvisas.
+
+Ma1 #0.1121 tillåter alla negativa talpar med a−b=6. Inget fel kunde
+återskapas, men rapporten innehåller inte elevens inmatning: påstå inte
+att eleven säkert räknat fel. Ma1 #1.116 är användarens uttryckliga
+facitreferens, nu inskriven i CLAUDE.md. Behåll tydliga matematiska steg och
+slutsvar, radbryt långa formler och tillåt miniräknare när algebraarbetet
+fortfarande prövas.
+
+Fy2 #5.360/#5.361/#5.362/#5.365 har självständiga delkort. Rensa även
+irrelevanta data från de enskilda korten: exempelvis behöver magnituddelen
+luminositeten men inte radie och temperatur. Ta inte bort data som behövs
+för att lösa kortet fristående. #5.314/#5.324:s HR-diagram och #5.323:s
+nivå 3 var redan rättade i tidigare stjärngranskning; bevara dessa beslut.
+Fy2 #2.498b frågar uttryckligen efter pendellängden. #3.426 är positiv
+återkoppling, ingen anledning att ändra den fysikaliska frågan.
+
+Skydd: `tools/felrapporter-2026-10-23-1345.test.js`, befintligt stjärntest
+samt konsumentens `tools/procent-enheter.test.js` och
+`tools/felrapporter-2026-10-23-1345.browser.cjs`.

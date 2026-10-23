@@ -82,6 +82,17 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 
 ## Tidigare granskningar och skydd mot återkommande fel
 
+### Referens för tydliga matematiklösningar (2026-10-23)
+
+Användaren har pekat ut **Ma1 #1.116** som förebild: tydliga, matematiskt
+motiverade steg, relevanta mellanled och ett tydligt slutsvar. Använd dess
+struktur vid nya och reviderade matematikfacit. Rubriker ska förklara vad
+man gör (t.ex. ”Ta bort samma kvadratterm från båda leden”), inte bara heta
+”Steg 1”. Visa beräkningen som leder till nästa rad och kontrollera svaret
+när det tillför förståelse. Anpassa längden till uppgiften och radbryt långa
+uttryck för mobilvisning. Detta ändrar inte regeln om sammanhängande
+fysiklösningar utan generiska numrerade steglistor.
+
 Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
 berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.
 
