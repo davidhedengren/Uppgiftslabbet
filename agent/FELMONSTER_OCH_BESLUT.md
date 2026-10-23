@@ -2134,3 +2134,18 @@ Se `FY2_STJARNOR_STADNING_2026-10-23.md`.
 - **Dubbletter:** skapa inte nya kort som upprepar samma stjärna och samma data som ett befintligt kort.
 
 Skydd: `tools/fy2-stjarnor-stadning-2026-10-23.test.js`.
+
+### Mato1 – faktorformer, olika rötter och fysisk definitionsmängd, 2026-10-23
+
+Se `MATO1_FAKTORISERING_EKVATIONER_2026-10-23.md`, nya 1.900–1.912.
+Bevara kopplingen mellan beröring av x-axeln och dubbelrot (1.904), samt
+skillnaden mellan antalet faktorer och antalet olika rötter (1.912).
+Division med x kan tappa nollroten (1.908). En lådmodell kan ge algebraiska
+rötter som inte motsvarar möjliga längder (1.911); båda giltiga längderna
+ska godtas i valfri ordning. Uttrycklig faktorform ska rättas som sådan,
+medan omordnade faktorer och ekvivalenta teckenpar godtas.
+Använd inte råa mindre-än-tecken i HTML-prosa: `0<x<8` kan göra att
+webbläsaren döljer resten av stycket. Koda tecknen eller använd säker LaTeX
+och kontrollera faktiskt synlig text, inte bara frånvaro av KaTeX-fel.
+Skydd: `tools/ma3-faktorisering-ekvationer-2026-10-23.test.js` och
+konsumentens browserprov med kontroll av hela definitionsvillkoret.
