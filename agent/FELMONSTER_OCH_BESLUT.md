@@ -2082,3 +2082,22 @@ Långa fysikinsättningar ska delas på mobil utan att beräkningsled försvinne
 Skydd: `tools/fy2-figurer-2026-10-23.test.js`, befintligt magnetismtest och
 konsumentens motsvarande browserprov. Den tidigare generella bildbedömningen
 i `FY2_NIVA1_2026-10-22.md` ersätts för de figurer som denna logg specificerar.
+
+### Fy2 – variation i induktion och nödvändiga riktningar, 2026-10-23
+
+Se `FY2_INDUKTIONSVARIATION_2026-10-23.md`: inventering av kapitel 3,
+16 nya 3.516–3.531 och användarbeställd omarbetning av sex repetitiva
+Lenzkort 3.197–3.202. Bevara variationen i sökt storhet, mätdata, graf,
+öppen krets, verksam längd, två rörliga stavar och energi-/tidsresonemang.
+Återställ inte dem till samma fråga om medurs/moturs med endast nya tal.
+För e = Blv måste staven, hastigheten och fältet vara parvis vinkelräta.
+Att v är vinkelrät mot två andra riktningar bestämmer inte deras inbördes
+vinkel. Vid sned rörelse måste även stavens läge bestämmas (3.421, 3.438).
+Vid borttagning av formelledningar (3.435–3.440) ska nödvändiga riktningar
+bevaras som vanlig text. Två rörliga stavar kan ha motverkande emk; använd
+fartskillnaden. En sluten slinga helt inne i homogent konstant fält kan ha
+noll inducerad emk trots rörelse. Lenz lag motverkar flödesändringen och
+inte alltid det yttre fältet. Varvtal rättas som heltal; mätvärdesprecision
+ska inte användas som generell tolerans för antal.
+Skydd: `tools/fy2-induktionsvariation-2026-10-23.test.js` och konsumentens
+motsvarande browserprov. Tidigare figurrättningar 2026-10-23 behålls.
