@@ -62,6 +62,7 @@ ungefär 1 400 Ma3-facit svarsraden, och ungefär 350 var löpande stycken.
 | 2 | Kap 2, och kap 1 grupperas om | 656 (kap 1: 165, kap 2: 491) | kap 1: 87, kap 2: 153 |
 | 3 | Kap 3, och 34 svarsrader i kap 1–2 formateras om | 726 | kap 3: 208 |
 | 4 | Kap 4, och 5 rader i kap 1–3 | 336 | kap 4: 53 |
+| 5 | Kap 1–4: delvis självrättade uppgifter och lösningsmängder | 55 | totalt cirka 450 |
 
 Efter runda 4 har 2 951 av 2 969 Ma3-facit steglista. Svarsrad finns i omkring
 2 460 facit, varav några har en svarsrad per deluppgift.
@@ -78,6 +79,19 @@ Från runda 4 gäller också följande:
 Regressionstest: `tools/ma3-facit-som-ma2-2026-10-23.test.js` kontrollerar
 balanserade steglistor, att svarsraderna saknar rå kalkylatorsyntax, att de
 handskrivna svaren stämmer med egen räkning och att undantagen gäller.
+
+## Runda 5
+
+- **Lösningsmängder** skrivs "\(x=30^\circ\) eller \(x=150^\circ\)". Variabeln
+  (x, v eller C) hämtas från frågan.
+- **Två efterfrågade storheter** ("Bestäm \(\cos v\) och \(\sin v\)") ger etiketterna
+  direkt ur frågetexten. Etiketten måste innehålla en bokstav, så att punkter
+  som (4;3) aldrig tolkas som etiketter.
+- **Delvis självrättade uppgifter** visar "c) se lösningen" för delar som bedöms
+  manuellt, så att svarsraden aldrig ser fullständig ut när den inte är det.
+- **Nollställen och förbjudna värden** i en del skrivs "\(x=-2\), \(x=0\) och \(x=2\)".
+  Andra tallistor utan känd betydelse skrivs för hand: 2.785, 2.793, 2.797,
+  2.798, 2.799 och 2.242, alla räknade för hand.
 
 ## Kvar
 

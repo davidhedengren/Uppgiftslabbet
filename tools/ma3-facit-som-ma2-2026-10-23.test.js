@@ -44,6 +44,26 @@ test('Handskrivna svarsrader stämmer med egen räkning',()=>{
  for(const id of ['1.451','1.491','2.29','2.121','2.422','2.423','2.231','3.237','1.212'])assert.ok(svar(q(id).s),id);
 });
 
+test('Runda 5: lösningsmängder, delvis självrättade delar och handräknade modelluppgifter',()=>{
+ assert.equal(svar(q('4.31').s),'\\(x=30^\\circ\\) eller \\(x=150^\\circ\\)');
+ assert.equal(svar(q('4.165').s),'\\(\\cos v=\\dfrac{3}{5}\\), \\(\\sin v=\\dfrac{4}{5}\\)');
+ assert.equal(svar(q('1.19').s),'a) \\(3\\), b) \\(1\\), c) se lösningen');
+ assert.equal(svar(q('4.264').s),'\\((0;5)\\)');
+ assert.match(svar(q('1.205').s),/\\dfrac\{\(x-1\)\^2\}\{\(x\+3\)\^2\}.*x=-5.*x=-3.*x=-2.*x=1/);
+ // 1.205: nämnarna och divisorns täljare ger -5, -3, -2 och 1 som förbjudna värden.
+ for(const x of [-5,-3,-2,1])assert.ok([x*x+8*x+15,x*x+5*x+6,x*x+4*x-5].includes(0),String(x));
+ // 2.797: L+A=80, e^(-4k)=1/2, A=60, L=20; T'(t)=-1 när t=ln(60k)/k.
+ const k=Math.log(2)/4;assert.ok(Math.abs(k-0.1733)<5e-5);assert.ok(Math.abs(Math.log(60*k)/k-13.51)<0.005);
+ // 2.799: kA=30, e^(-3k)=1/4.
+ const k2=Math.log(4)/3,A2=30/k2;assert.ok(Math.abs(k2-0.4621)<5e-5&&Math.abs(A2-64.92)<0.005&&Math.abs(180-A2-115.08)<0.005&&Math.abs(Math.log(5)/k2-3.48)<0.005);
+ // 2.798: 120e^(-0,1t)<90e^(-0,06t) för t>ln(4/3)/0,04 och 12e^(-0,1t)>5,4e^(-0,06t) för t<ln(1/0,45)/0,04.
+ assert.ok(Math.abs(Math.log(4/3)/0.04-7.19)<0.005&&Math.abs(Math.log(1/0.45)/0.04-19.96)<0.005);
+ // 2.793 och 2.785.
+ assert.ok(Math.abs(Math.log(1.5)/0.06-6.76)<0.005&&Math.abs(36*Math.sqrt(1.5)-44.1)<0.05&&Math.abs(72*1.5**1.5-132.3)<0.05);
+ assert.ok(Math.abs(Math.log(10)/0.4-5.76)<0.005&&Math.abs(Math.log(25)/0.4-8.05)<0.005);
+ for(const id of ['2.785','2.793','2.797','2.798','2.799','2.242'])assert.ok(svar(q(id).s),id);
+});
+
 test('Uppgifter med deluppgifter eller bevis får inga ofullständiga svarsrader',()=>{
  for(const id of ['3.149','3.217','3.774','4.197','4.207'])assert.equal(svar(q(id).s),null,id);
  for(const id of ['2.124','2.129','2.134','2.413','2.414'])assert.doesNotMatch(q(id).s,/facit-steglista/,id);
