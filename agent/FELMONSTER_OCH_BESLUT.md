@@ -2195,3 +2195,33 @@ Fy2 #2.498b frågar uttryckligen efter pendellängden. #3.426 är positiv
 Skydd: `tools/felrapporter-2026-10-23-1345.test.js`, befintligt stjärntest
 samt konsumentens `tools/procent-enheter.test.js` och
 `tools/felrapporter-2026-10-23-1345.browser.cjs`.
+
+### Försvunna påståenden och avrundning till hela tiotal, 2026-10-23 kl. 14:08
+
+Se `FELRAPPORTER_2026-10-23_1408.md`. Ma1 #3.72 och #3.27 hade påståenden
+men `svarstyp:"val"`, medan Kunskapsgymmets alternativvy kräver
+`"alternativ"`. Använd alternativens `ratt`-flaggor och ta bort gamla
+motstridiga bokstavsfacit. Testa alla kombinationer när flera svar är rätt.
+Frågan måste också göra alternativen synliga i Uppgiftslabbets exportunderlag.
+Ändra inte alla objekt som har ett alternativfält: Ma1 #3.408 är korrekt
+numerisk och #5.50 är en öppen resonemangsfråga.
+
+Ma1 #3.175 och fem analoger #3.35/#3.108/#3.134/#3.138/#3.168 har samma
+procentmetadatafel som #3.114 i föregående omgång. Fullprecisionsmål,
+numeriskt format, procentenhet och korrekt avrundning ersätter avrundade
+strängmål med vida toleranser. Fråga uttryckligen efter minskningens storlek
+när ett positivt procenttal ska anges (#3.35/#3.108).
+
+Heltal som slutar på nollor har tvetydig precision: utan uttryckligt krav
+ska 190 godtas som tvåsiffrig avrundning av 1300/7. Pröva även de grövre
+steg som nollorna kan representera. Explicit precision i 190,0 eller
+1,90·10² får inte tappas bort. Bevara exakta format, uttryckliga krav,
+heltalsfacit, enhetskontroll och fysikens separata värdesifferregel.
+
+Fy1 #3.84a:s 2,5 godtas redan med och utan m/s². Rapporten saknar elevens
+inmatning; inget historiskt fel kan bekräftas. Retardationens storlek är
+positiv, till skillnad från den teckenbestämda accelerationen i #3.34b.
+Fem jämförelser av enhetskontraktet dokumenteras i loggen.
+
+Skydd: `tools/felrapporter-2026-10-23-1408.test.js`, konsumentens
+motsvarande browserprov och `tools/fri-avrundning-heltal.test.js`.
