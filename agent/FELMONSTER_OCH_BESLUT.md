@@ -1956,6 +1956,16 @@ teckenbyten godtas, medan en utvecklad summa inte uppfyller ett uttryckligt
 krav på faktorform. Skydd: `tools/ma3-faktorisering-2026-10-22.test.js`
 och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
 
+### Ma3c – cosinussatsen och jämförbara figurer, 2026-10-23
+
+Se `MA3_COSINUSSATSEN_2026-10-23.md`, nya 4.520–4.525. Figurer som
+jämför sidlängder ska använda samma skala. Vid trubbig vinkel är cosinus
+negativt; minustecknet i cosinussatsen ger då en positiv term.
+Parallellogrammens två cosinussamband har motsatta cosinustermer och kan
+adderas för att bestämma en okänd sida. Skydd: `tools/ma3-cosinussatsen-2026-10-23.test.js`
+mäter också vinkelbågar, gemensam skala och diagonaler; konsumentens
+browserprov kontrollerar svar, grader, avrundning och enbart spår 1c.
+
 ### Ma3 – förändringskvoter med olika representationer, 2026-10-23
 
 Se `MA3_ANDRINGSKVOTER_2026-10-23.md`, nya 2.1176–2.1184. Jämför
