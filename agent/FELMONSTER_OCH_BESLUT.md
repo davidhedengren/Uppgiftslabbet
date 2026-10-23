@@ -1956,6 +1956,16 @@ teckenbyten godtas, medan en utvecklad summa inte uppfyller ett uttryckligt
 krav på faktorform. Skydd: `tools/ma3-faktorisering-2026-10-22.test.js`
 och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
 
+### Ma3 – förändringskvoter med olika representationer, 2026-10-23
+
+Se `MA3_ANDRINGSKVOTER_2026-10-23.md`, nya 2.1176–2.1184. Jämför
+ändring per tidsenhet när mätperioderna är olika långa. Ett vanligt
+medelvärde av två hastigheter gäller inte för olika långa perioder.
+Negativ förändring ska ge negativ kvot; ett okänt slutvärde är inte samma
+sak som själva ökningen. Förkortning med b−1 kräver b≠1; bevara villkoret
+b>1 i 2.1184. Skydd: `tools/ma3-andringskvoter-2026-10-23.test.js` och
+konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
+
 ### Rationella uttryck och svarsetiketter före förenklade polynom, 2026-10-22
 
 Se `MA3_RATIONELLA_2026-10-22.md`: nya Mato1 1.880–1.887 samt fem
