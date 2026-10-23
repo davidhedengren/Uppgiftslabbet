@@ -2101,3 +2101,14 @@ inte alltid det yttre fältet. Varvtal rättas som heltal; mätvärdesprecision
 ska inte användas som generell tolerans för antal.
 Skydd: `tools/fy2-induktionsvariation-2026-10-23.test.js` och konsumentens
 motsvarande browserprov. Tidigare figurrättningar 2026-10-23 behålls.
+
+### Fy2 – kombinerade samband på nivå 4–5, 2026-10-23
+
+Se `FY2_FORDJUPNING_2026-10-23.md`, nya 3.532–3.537. Bevara självständiga
+modellval: båda kropparnas acceleration i generatorförsöket; rörelsemängd
+men inte rörelseenergi bevaras för två fria stavar; detektoravståndet är
+diameter; generatorns toppvärde skiljs från RMS; resistiva kablar kräver
+effekt; inducerad spänning kan ladda ett batteri. Vid växande area och
+minskande B avgör produkten BA strömriktningen. Lösningen får använda
+andragradsfunktionens maximum och ska inte kräva differentialekvationer.
+Skydd: `tools/fy2-fordjupning-2026-10-23.test.js` och konsumentens browserprov.
