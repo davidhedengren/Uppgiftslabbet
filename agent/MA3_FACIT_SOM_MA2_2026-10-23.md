@@ -27,7 +27,19 @@ ungefär 1 400 Ma3-facit svarsraden, och ungefär 350 var löpande stycken.
   - manuella uppgifter: sista `\boxed{…}` i facit.
   Manuella uppgifter utan inramat svar lämnas och räknas upp nedan.
 - `rättSvar`-uttryck som `(x-1)/2`, `x^(2)` och `<=` skrivs om till LaTeX
-  (`\dfrac`, `^{}`, `\le`).
+  (`\dfrac`, `^{}`, `\le`), med följande regler:
+  - `x^3/3` betyder \(\dfrac{x^3}{3}\);
+  - bråkexponenter skrivs `x^{3/2}`;
+  - `6*sqrt(5)` skrivs \(6\sqrt5\);
+  - avslutande nollor tas bort (4,5, inte 4,50);
+  - tal med fem eller fler siffror får tusentalsavstånd.
+- **Deluppgifter:** när frågan har a), b) … blir svaret "a) …, b) …", även om
+  `svarEtiketter` saknas. Ett inramat svar (`\boxed`) används inte som svarsrad
+  i uppgifter med deluppgifter, eftersom det bara täcker sista delen.
+- **Handskrivna svarsrader** för 13 uppgifter där svaret behöver tolkning,
+  till exempel lösningsmängd, extrempunktens karaktär eller storhet:
+  1.451, 1.491, 2.29, 2.121, 2.231, 2.282, 2.422, 2.423, 3.27, 3.38, 3.231,
+  3.237 och 3.478. Alla är räknade för hand.
 
 ## Kontroller per runda
 
@@ -48,3 +60,4 @@ ungefär 1 400 Ma3-facit svarsraden, och ungefär 350 var löpande stycken.
 |---|---|---:|---:|
 | 1 | Kap 1 | 215 | 87 (manuella utan inramat svar) |
 | 2 | Kap 2, och kap 1 grupperas om | 656 (kap 1: 165, kap 2: 491) | kap 1: 87, kap 2: 153 |
+| 3 | Kap 3, och 34 svarsrader i kap 1–2 formateras om | 726 | kap 3: 208 |
