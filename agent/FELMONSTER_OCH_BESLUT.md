@@ -1966,6 +1966,16 @@ adderas för att bestämma en okänd sida. Skydd: `tools/ma3-cosinussatsen-2026-
 mäter också vinkelbågar, gemensam skala och diagonaler; konsumentens
 browserprov kontrollerar svar, grader, avrundning och enbart spår 1c.
 
+### Ma3c – sinussatsens vinkelpar och sammansatta problem, 2026-10-23
+
+Se `MA3_SINUSSATSEN_2026-10-23.md`, nya 4.526–4.531. Varje sida ska
+paras ihop med motstående vinkel, inte med en vinkel vid sidans ändpunkt.
+Sidornas förhållande är förhållandet mellan sinusvärdena, inte mellan
+vinklarna. En vinkelfördubbling ger därför inte automatiskt dubbla sidan.
+Höjdproblem kan kräva sinussatsen följd av rätvinklig trigonometri; facit
+ska visa båda sambanden och inte avrunda mellanresultatet. Skydd:
+`tools/ma3-sinussatsen-2026-10-23.test.js` samt konsumentens browserprov.
+
 ### Ma3 – förändringskvoter med olika representationer, 2026-10-23
 
 Se `MA3_ANDRINGSKVOTER_2026-10-23.md`, nya 2.1176–2.1184. Jämför
