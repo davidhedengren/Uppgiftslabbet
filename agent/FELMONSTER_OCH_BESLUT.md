@@ -1966,6 +1966,15 @@ sak som själva ökningen. Förkortning med b−1 kräver b≠1; bevara villkore
 b>1 i 2.1184. Skydd: `tools/ma3-andringskvoter-2026-10-23.test.js` och
 konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
 
+### Ma3 – skilj andraderivatans tecken från förstaderivatans, 2026-10-23
+
+Se `MA3_ANDRADERIVATA_2026-10-23.md`, nya 3.1201–3.1206. En negativ
+förstaderivata kan öka och då är andraderivatan positiv. f″>0 betyder
+inte att f är växande. En vågrät f′-graf ger f″=0 även när grafens höjd
+är negativ. Märk varje diagram med rätt funktion: f, f′ eller f″.
+Skydd: `tools/ma3-andraderivata-2026-10-23.test.js` och konsumentens
+motsvarande browserprov. Ingen äldre uppgift eller kalibrering ändrades.
+
 ### Rationella uttryck och svarsetiketter före förenklade polynom, 2026-10-22
 
 Se `MA3_RATIONELLA_2026-10-22.md`: nya Mato1 1.880–1.887 samt fem
