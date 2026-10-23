@@ -40,3 +40,52 @@ Enhetstabellen har nu parsec, ljusår och AE, med prefix som kpc. Därmed godtas
 - **Validator:** inga nya fynd.
 - **SVG-granskning:** 0 fynd för 5.400–5.446.
 - **Test:** `tools/fy2-astronomi-hr-parallax-2026-10-23.test.js` räknar om facit och kontrollerar radieordningen med Stefan–Boltzmanns lag, både för bokstavsstjärnorna och de verkliga stjärnorna. Det kontrollerar också att inga formler står i frågorna.
+
+## Omgång 2: äldre kort görs om och kombinationsuppgifter läggs till
+
+### Äldre kort (56 ändrade)
+
+- **Automatisk rättning:** 25 självrättade kort rättas nu automatiskt, med tal, ordsvar eller flerval. Uppdelade kort fick fält per delkort, där resonemangsdelar blev flerval enligt mönstret i Fy1 8.11. Exempel:
+  - 5.28: tabellen med åtta tomma rutor;
+  - 5.43: rangordningen blev flerval;
+  - 5.53: cepheiden svaras i Mpc och km/s;
+  - 5.23: parallaxen om 100 år räknas om exakt;
+  - 5.54: dubbelstjärnan har två luminositeter, två våglängder och flerval.
+- **Träningsnivå:** 42 kort saknade nivå och fick en.
+- **Formler ur frågorna:** formler som inte påverkar svaret är borttagna, till exempel ”Absolut magnitud: M = m + 5 − 5 lg r”, Wiens och Stefan–Boltzmanns lagar och Wiens konstant. Formeln P = P☉·10^(−0,4M + 1,932) är kvar i 5.356–5.368. Den bygger på M☉ = 4,83 i stället för 4,74, och att ta bort den skulle ändra facit.
+- **Svarsinstruktioner** finns nu i 5.349–5.355 och 5.385. Delkortens mellanresultat (”Avståndet är 3,63 pc.”) ligger nu i egna stycken.
+- **Facit:** irrelevant text om kärnreaktioner är borttagen i 5.8, 5.315 och 6.51.
+
+### Nya kort 5.447–5.463 (17 st, nivå 1–5)
+
+- **Kedjor på nivå 4–5:**
+  - Arcturus: parallax → d → M → L → R;
+  - Wiens lag och L → R;
+  - vit dvärg: parallax och m → M → L → R;
+  - hela kedjan från strålningsmaximum, parallax och m;
+  - huvudseriepassning: ett diagram över en stjärnhop med apparent magnitud jämfört med standardhuvudserien.
+- **Nivå 2–3:**
+  - luminositet ur flöde;
+  - solens intensitet vid Mars, med skalenlig figur;
+  - radie ur ett avläst HR-diagram;
+  - samma L med olika T;
+  - radiekvot i en hop;
+  - luminositetskvot i en dubbelstjärna;
+  - Sirius jämfört med Polstjärnan;
+  - Sirius på 10 pc;
+  - absolut magnitud ur L;
+  - den kosmiska avståndsstegen;
+  - vilken stjärna har störst luminositet (tabell).
+- **Tolerans:** svar som beror på solens värden har en tolerans som även godtar M☉ = 4,83 och T☉ = 5 778 K. Det kontrolleras i testet.
+
+### Kunskapsgymmet
+
+- Bågsekunder (″, ”bågsekunder”) och bågminuter (′) är nu enheter.
+- ”Lika långt” och ”samma avstånd” godtas som ordsvaret ”lika”.
+- Rättningen är prövad med 59 svar.
+
+**Verifiering:**
+- Testet `tools/fy2-astronomi-omgjorda-2026-10-23.test.js` kontrollerar att inga självrättade kort finns kvar, att inga formler står i frågorna och att facit stämmer.
+- Validatorn ger inga nya fynd och SVG-granskningen 0 fynd.
+
+**Lärdom:** en annan session pushade `uppgifter2.js` medan arbetet pågick. Eftersom alla ändringar var skriptade kunde de köras om på den nya versionen.
