@@ -118,8 +118,8 @@ Detta är första omgången; Ma5 väntar.”
   är byteidentiska mellan apparna och de nya kapitlens struktur är densamma.
   Kunskapsgymmets befintliga GRUPPMATO1-överskrivning är avsiktligt bevarad.
 - Parallella ändringar integrerade före push: Uppgiftslabbet b52eed1,
-  5a0a8b9, 33fc582, e41548e och Kunskapsgymmet f5d30f7, 3837df1,
-  eaf38a3, ddb7ebd. Även det nya regressionstestet för gamla Ma3-facit passerar.
+  5a0a8b9, 33fc582, e41548e, 82c6118 och Kunskapsgymmet f5d30f7, 3837df1,
+  eaf38a3, ddb7ebd, 928a2d0. Även det nya regressionstestet för gamla Ma3-facit passerar.
   De ändrar gamla Ma3-facit. Samtliga deras bankobjekt är bevarade oförändrade;
   nya uppgifter ligger efter dem. Enda manuella mergekonflikten var bankens
   cacheversion i Kunskapsgymmet, som fick en gemensam ny versionssträng.
