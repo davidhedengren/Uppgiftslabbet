@@ -2149,3 +2149,17 @@ webbläsaren döljer resten av stycket. Koda tecknen eller använd säker LaTeX
 och kontrollera faktiskt synlig text, inte bara frånvaro av KaTeX-fel.
 Skydd: `tools/ma3-faktorisering-ekvationer-2026-10-23.test.js` och
 konsumentens browserprov med kontroll av hela definitionsvillkoret.
+
+### Ma1 – svårare ekvationer med parenteser, 2026-10-23
+
+Se `MA1_PARENTESER_2026-10-23.md`, nya 1.1386–1.1400. Bevara variationen
+mellan nästlade parenteser, olika nämnare, decimaler, subtraktion av en hel
+produkt och parameterresonemang. När nämnare tas bort måste även fristående
+termer multipliceras (1.1391). Minus framför en produkt gäller alla termer
+när produkten utvecklats (1.1394). Likhet för alla x kräver både samma
+x-koefficient och samma konstantterm (1.1398). I 1.1399 måste samma a ge
+samma x i båda ekvationerna; en lösning till bara en av dem räcker inte.
+Exakta bråkkrav anges uttryckligen; annars följs tidigare avrundningsbeslut.
+Långa ekvationer ska radbrytas matematiskt begripligt, inte klippas eller
+krympas till oläsbar text. Kontrollera både frågan och facit på mobil.
+Skydd: `tools/ma1-parenteser-2026-10-23.test.js` och konsumentens browserprov.
