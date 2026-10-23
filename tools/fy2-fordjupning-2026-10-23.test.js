@@ -3,6 +3,7 @@ const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../u
 test('Sex fristående problemlösningar med verktyg, nivå och figurer',()=>{
  const levels={};for(let n=532;n<=537;n++){const q=get(n);assert.ok(q);assert.match(q.t,/<svg/);assert.match(q.s,/facit-svar/);assert.equal(q.spel,true);assert.equal(q.självrättning,true);assert.equal(q.miniräknare,true);assert.equal(q.geogebra,false);assert.equal(q.svarVardesiffror,2);assert.ok(q.formaga.includes('problemlosning'));assert.doesNotMatch(q.t,/Använd .*?=|e=Blv|g\s*=\s*9/);levels[q.traningsniva]=(levels[q.traningsniva]||0)+1;}
  assert.deepEqual(levels,{4:3,5:3});assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
+ assert.equal(get(534).familj,'Hastighetsfilter och masspektrometer');assert.equal(get(535).familj,'Transformatorn och kraftöverföring');
 });
 test('Kopplade kroppar: Newtons lag på båda kropparna återger uppmätt acceleration',()=>{
  const R=get(532).rättSvar,I=.6*.4*1.8/R,F=.6*.4*I;

@@ -69,3 +69,10 @@ verkningsgrad i figuren. Nya regressionstester skyddar fysiken och visningen.
   och jonens halvcirkelbana, som är manuellt och geometriskt verifierad).
 - Gemensam bank synkas från master, cacheversion höjs i båda apparna.
   Befintliga orelaterade Fy1-utkast i `uppgifter.js` ingår inte.
+
+## Uppföljning av delmomentsplacering
+
+3.534 använder den befintliga familjen ”Hastighetsfilter och masspektrometer”
+och 3.535 ”Transformatorn och kraftöverföring”. Dessa namn korrigerades vid
+efterkontrollen så att uppgifterna ingår i befintliga delmoment och inte bildar
+egna enstaka grupper. Frågor, figurer, svar och nivåer ändrades inte.

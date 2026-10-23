@@ -2112,3 +2112,15 @@ effekt; inducerad spänning kan ladda ett batteri. Vid växande area och
 minskande B avgör produkten BA strömriktningen. Lösningen får använda
 andragradsfunktionens maximum och ska inte kräva differentialekvationer.
 Skydd: `tools/fy2-fordjupning-2026-10-23.test.js` och konsumentens browserprov.
+
+### Mato1 – variation i kursens två första områden, 2026-10-23
+
+Se `MATO1_STARTVARIATION_2026-10-23.md`, nya 1.888–1.899. Ett bortklippt
+rektangulärt hörn behöver inte minska omkretsen: nya kanter ersätter gamla.
+Kostnadsökningen för en extra del är K(n+1)−K(n), inte K(1). Ett gradvillkor
+kräver både att högre koefficienter försvinner och att den avsedda finns kvar.
+Tre tabellvärden bestämmer inte ett polynom när graden är okänd (1.898);
+med angiven andragrad räcker tre olika x-värden (1.899). Bevara skillnaden.
+Förenklade polynom rättas med `förenklat_polynom`, inklusive naturliga
+prefix och omordnade termer. Skydd: `tools/ma3-startvariation-2026-10-23.test.js`
+och konsumentens browserprov. Befintliga matematikkort ändrades inte.
