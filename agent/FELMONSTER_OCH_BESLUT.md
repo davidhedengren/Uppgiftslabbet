@@ -2063,3 +2063,22 @@ att integrera F′ i stället. Figurer av en okänd funktion ska inte
 avslöja den konstant som eleven ska bestämma; visa då givna punkter
 eller en känd derivatagraf. Skydd: `tools/ma3-primitiva-villkor-2026-10-22.test.js`
 och konsumentens motsvarande browserprov. Äldre uppgifter är oförändrade.
+
+### Fy2 – situationsriktiga figurer och kompassperspektiv, 2026-10-23
+
+Se `FY2_FIGURER_2026-10-23.md`: sex rapporter, 34 granskade uppgifter,
+22 ändrade. En generisk stav-på-skenor-figur får inte återanvändas som ett
+flygplan (3.501); hastighetsfilter måste visa både E och B med kraftbalans
+(3.490). En kompass ska vara placerad uttryckligen och perspektivet förklarat
+(3.230–3.240). Nål/partikelbana får inte ge bort det efterfrågade riktningvalet.
+Polfärger ska följa N/S konsekvent. Försök inte visa en ”lodrät” magnet med
+vanlig kompass utan att förklara att det är en vy ovanifrån.
+Vinkeltext måste ligga vid rätt vinkel även när själva triangeln är skalenlig
+(3.508, 3.509, 3.511). Resistor i text måste finnas i motsvarande slutna krets
+(3.503); rita inte en oavsiktlig sluten krets kring en fri stav (3.502).
+Kontrollera roterade SVG-texters transformerade hörn, inte bara lokal getBBox.
+Långa fysikinsättningar ska delas på mobil utan att beräkningsled försvinner
+(3.484, 3.485, 3.493). Facitvärdena var korrekta och behålls.
+Skydd: `tools/fy2-figurer-2026-10-23.test.js`, befintligt magnetismtest och
+konsumentens motsvarande browserprov. Den tidigare generella bildbedömningen
+i `FY2_NIVA1_2026-10-22.md` ersätts för de figurer som denna logg specificerar.
