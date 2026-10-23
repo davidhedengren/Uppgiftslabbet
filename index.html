@@ -13076,5 +13076,18 @@ document.addEventListener('click',async e=>{
 },true);
 document.getElementById('onskemalModal')?.addEventListener('click',e=>{if(e.target.id==='onskemalModal')ulOnskemalStang();});
 </script>
+<script>
+// Kursadresser som /ma3/ använder samma panelverktyg från appens rot.
+(()=>{
+  const bas=new URL(APP_ROOT,location.origin);
+  const css=document.createElement('link');css.rel='stylesheet';
+  css.href=new URL('panelstorlek.css?v=2026-10-23',bas);
+  css.onload=()=>{
+    const js=document.createElement('script');
+    js.src=new URL('panelstorlek.js?v=2026-10-23',bas);document.body.append(js);
+  };
+  document.head.append(css);
+})();
+</script>
 </body>
 </html>

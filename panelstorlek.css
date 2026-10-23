@@ -1,0 +1,29 @@
+/* Ge uppgifterna mer plats; mobilens staplade layout och utskrift behålls. */
+.panelavdelare{display:none}
+@media screen and (min-width:961px){
+  .arbetsyta{
+    position:relative;
+    --vanster-standard:252px;
+    --hoger-standard:360px;
+    grid-template-columns:var(--panel-vanster,var(--vanster-standard)) minmax(0,1fr) var(--panel-hoger,var(--hoger-standard));
+  }
+  .panelavdelare{
+    display:block;position:absolute;top:0;bottom:0;width:12px;
+    z-index:12;cursor:col-resize;touch-action:none;
+  }
+  .panelavdelare[data-sida="vanster"]{left:calc(var(--panel-vanster,var(--vanster-standard)) - 6px)}
+  .panelavdelare[data-sida="hoger"]{right:calc(var(--panel-hoger,var(--hoger-standard)) - 6px)}
+  .panelavdelare::after{
+    content:"";position:absolute;top:42%;left:4px;width:4px;height:44px;
+    border-radius:4px;background:#a8adb8;transition:background .15s;
+  }
+  .panelavdelare:hover::after,.panelavdelare:focus-visible::after{background:var(--ed,#a52d27)}
+  .panelavdelare:focus-visible{outline:2px solid var(--ed,#a52d27);outline-offset:-2px}
+  body.panelbredd-dras,body.panelbredd-dras *{cursor:col-resize!important;user-select:none!important}
+}
+@media screen and (min-width:961px) and (max-width:1440px){
+  .arbetsyta{--hoger-standard:300px}
+}
+@media screen and (min-width:961px) and (max-width:1180px){
+  .arbetsyta{--vanster-standard:236px}
+}
