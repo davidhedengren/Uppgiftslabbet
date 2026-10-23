@@ -1,0 +1,1716 @@
+{
+  "date": "2026-10-23",
+  "scope": "Första 80 egna repetitionsuppgifter. Ma5 pausad. Inte hela provarkivet.",
+  "tasks": [
+    {
+      "course": "ma1",
+      "id": "8.01",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Procent och modeller",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 242,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.02",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Funktioner och grafer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 42,
+      "correctOptions": [],
+      "unit": "l",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.03",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "5*x-18",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.04",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 75,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.05",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Funktioner och grafer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 7,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.06",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Procent och modeller",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 752.0255999999998,
+      "correctOptions": [],
+      "unit": "Wh",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.07",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Procent och modeller",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 900,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.08",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Sannolikhet och granskning",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 22.131199999999996,
+      "correctOptions": [],
+      "unit": "%",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.09",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Sannolikhet och granskning",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 0.1,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.10",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Funktioner och grafer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": null,
+      "correctOptions": [
+        "\\(K=90+12x\\)"
+      ],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.11",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b"
+      ],
+      "curriculumTopic": "Begreppet index",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 11.25,
+      "correctOptions": [],
+      "unit": "%",
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.12",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1c"
+      ],
+      "curriculumTopic": "Trigonometri i rätvinkliga trianglar; yrkesrelevant geometri för 1a",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 3.7304612652399887,
+      "correctOptions": [],
+      "unit": "m",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.13",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1c"
+      ],
+      "curriculumTopic": "Addition och absolutbelopp av vektorer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 4.47213595499958,
+      "correctOptions": [],
+      "unit": "m",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.14",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 8,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.15",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Funktioner och grafer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 105,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.16",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Procent och modeller",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 8,
+      "correctOptions": [],
+      "unit": "%",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.17",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Sannolikhet och granskning",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": null,
+      "correctOptions": [
+        "Det finns ett samband i svaren, men orsaken är inte visad."
+      ],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.18",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 70,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.19",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Funktioner och grafer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": null,
+      "correctOptions": [
+        "A är linjär och B är exponentiell."
+      ],
+      "unit": null,
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma1",
+      "id": "8.20",
+      "status": "ny – granskad",
+      "level": 4,
+      "tracks": [
+        "1a",
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma1a/b/c VT22, delprov B",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "4*n+4",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.01",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": [
+        -7,
+        7
+      ],
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.02",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "(x-3)^2",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.03",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Funktioner och modeller",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 2,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.04",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": [
+        9,
+        8
+      ],
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.05",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Digital lösning av exponentialekvation; 2b/c även logaritmer",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": true,
+      "toolReason": "Digital statistik, regression, ekvationslösning eller optimering.",
+      "answer": 8.31295041412083,
+      "correctOptions": [],
+      "unit": "år",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.06",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Logaritmlagar",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "lg(14)",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.07",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Vinklar i likbent triangel",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 65,
+      "correctOptions": [],
+      "unit": "°",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.08",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Likformighet",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 3.6,
+      "correctOptions": [],
+      "unit": "m",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.09",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Digital beräkning av standardavvikelse Sx",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": true,
+      "toolReason": "Digital statistik, regression, ekvationslösning eller optimering.",
+      "answer": 1.632993161855452,
+      "correctOptions": [],
+      "unit": "min",
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.10",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Normalfördelning med given standardavvikelse",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 68.26894921370858,
+      "correctOptions": [],
+      "unit": "%",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.11",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Kvartiler och spridningsmått",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 8,
+      "correctOptions": [],
+      "unit": "dagar",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.12",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Funktioner och modeller",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 9,
+      "correctOptions": [],
+      "unit": "cm",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.13",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Rotekvationer och extralösningar",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 3,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.14",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Algebra och ekvationer",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 16,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.15",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Koordinatgeometri och mittpunkt",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": [
+        7,
+        7
+      ],
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.16",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Funktioner och modeller",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": -18,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.17",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Digital linjär regression",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": true,
+      "toolReason": "Digital statistik, regression, ekvationslösning eller optimering.",
+      "answer": 12,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.18",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Medelvärde och median",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": null,
+      "correctOptions": [
+        "Medelvärdet ökar med 8 och medianen är oförändrad."
+      ],
+      "unit": null,
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.19",
+      "status": "ny – granskad",
+      "level": 4,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Geometri och samband",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 2,
+      "correctOptions": [],
+      "unit": "m",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "ma2",
+      "id": "6.20",
+      "status": "ny – granskad",
+      "level": 5,
+      "tracks": [
+        "2a",
+        "2b",
+        "2c"
+      ],
+      "curriculumTopic": "Funktioner och modeller",
+      "sourceTheme": "Ma2a/b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": [
+        -6,
+        6
+      ],
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.01",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "12*x^2-5",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.02",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "2*x^3-2*x^2",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.03",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": -5,
+      "correctOptions": [],
+      "unit": "l/min",
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.04",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 2,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.05",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Rationella uttryck",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "x+5",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.06",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 4,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.07",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 12,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.08",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "2*x^2+3*x+5",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.09",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": -22.072766470286542,
+      "correctOptions": [],
+      "unit": "mg/h",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.10",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Optimering och modeller",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 450,
+      "correctOptions": [],
+      "unit": "m²",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.11",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 15,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.12",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 60,
+      "correctOptions": [],
+      "unit": "l",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.13",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Integraler och area",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 2.5,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.14",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1c"
+      ],
+      "curriculumTopic": "Cosinussatsen",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 7.211102550927978,
+      "correctOptions": [],
+      "unit": "cm",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.15",
+      "status": "ny – granskad",
+      "level": 4,
+      "tracks": [
+        "1c"
+      ],
+      "curriculumTopic": "Sinussatsen och den tvetydiga situationen",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 2,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.16",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "1b"
+      ],
+      "curriculumTopic": "Geometriska summor",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 9364.8,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "tabell",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.17",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1b"
+      ],
+      "curriculumTopic": "Linjär optimering",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": true,
+      "toolReason": "Digital statistik, regression, ekvationslösning eller optimering.",
+      "answer": 310,
+      "correctOptions": [],
+      "unit": "kr",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.18",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": -1.5,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.19",
+      "status": "ny – granskad",
+      "level": 5,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 4,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato1",
+      "id": "5.20",
+      "status": "ny – granskad",
+      "level": 4,
+      "tracks": [
+        "1b",
+        "1c"
+      ],
+      "curriculumTopic": "Derivata och förändring",
+      "sourceTheme": "Ma3b/c VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 8,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.01",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "3*cos(3*x)",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.02",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Trigonometri och modeller",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 3.141592653589793,
+      "correctOptions": [],
+      "unit": "rad",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.03",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Komplexa tal och algebra",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 5,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.04",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "exp(x)*(x^2+2*x+1)",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.05",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "2/(x+2)^2",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.06",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "-2/(7-2*x)",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.07",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Trigonometri och modeller",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": [
+        0.5235987755982988,
+        2.6179938779914944
+      ],
+      "correctOptions": [],
+      "unit": "rad",
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.08",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Integraler och tillämpningar",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 0.5,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.09",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Integraler och tillämpningar",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": "9*pi",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.10",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Integraler och tillämpningar",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 0.125,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.11",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Komplexa tal och algebra",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": "3/5+11/5*i",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.12",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Komplexa tal och algebra",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "(x-2)^2*(x+1)",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.13",
+      "status": "ny – granskad",
+      "level": 1,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 3,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.14",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Trigonometri och modeller",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 6.5,
+      "correctOptions": [],
+      "unit": "m",
+      "figure": "SVG",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.15",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 1,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.16",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Derivata och funktioner",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": true,
+      "geogebra": false,
+      "toolReason": "Räknare får användas; den tar inte bort det huvudsakliga matematiska resonemanget.",
+      "answer": 72,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.17",
+      "status": "ny – granskad",
+      "level": 2,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Komplexa tal och algebra",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": [
+        "2*sqrt(3)*i",
+        "-2*sqrt(3)*i"
+      ],
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.18",
+      "status": "ny – granskad",
+      "level": 3,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Integraler och tillämpningar",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 1,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.19",
+      "status": "ny – granskad",
+      "level": 4,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Integraler och tillämpningar",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": "pi/2",
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    },
+    {
+      "course": "mato2",
+      "id": "6.20",
+      "status": "ny – granskad",
+      "level": 5,
+      "tracks": [
+        "2c"
+      ],
+      "curriculumTopic": "Trigonometri och modeller",
+      "sourceTheme": "Ma4 VT22",
+      "sourceRelationship": "tematisk referens; inte en omskrivning av en utpekad originaluppgift",
+      "calculator": false,
+      "geogebra": false,
+      "toolReason": "Symbolisk metod är det som prövas; huvudräkning är inte huvudsyftet.",
+      "answer": 4,
+      "correctOptions": [],
+      "unit": null,
+      "figure": "ingen – algebraisk uppgift eller figur skulle ge för stark ledning",
+      "commentSuggestion": "Ny repetitionsuppgift med kontrollerat facit, svarsinmatning, nivå och verktyg."
+    }
+  ]
+}

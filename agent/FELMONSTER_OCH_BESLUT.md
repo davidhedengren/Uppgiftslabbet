@@ -2225,3 +2225,22 @@ Fem jämförelser av enhetskontraktet dokumenteras i loggen.
 
 Skydd: `tools/felrapporter-2026-10-23-1408.test.js`, konsumentens
 motsvarande browserprov och `tools/fri-avrundning-heltal.test.js`.
+
+## Repetition inför nationella prov – egna uppgifter, 2026-10-23
+
+Användaren har valt egna repetitionsuppgifter i ett sista område,
+`np_repetition`, i ma1, ma2, mato1 och mato2. Ma5/matf1 ska vänta.
+Tematiska källhänvisningar i `repetition.underlag` får inte tolkas som att
+frågorna är original eller att ett helt historiskt prov har granskats.
+
+Första omgången: ma1 #8.01–8.20, ma2 #6.01–6.20, mato1 #5.01–5.20,
+mato2 #6.01–6.20. För icke ordnade rotmängder används `svarsstruktur:"mängd"`;
+`"oordnad"` är inte den fungerande metadataformen. Ordnade fält används när
+värden tillhör namngivna storheter. Vinkel- och punktetiketter ska kontrolleras
+mot verkliga SVG-koordinater, inte bara figurens viewBox eller en kontaktkarta.
+
+Se [källor och avgränsning](nationella-prov/README.md),
+[fullständig granskning och kommentarer](nationella-prov/REPETITION_2026-10-23.md)
+och [uppgiftsvis metadata](nationella-prov/REPETITION_2026-10-23.json).
+Skydd: `tools/np-repetition-2026-10-23.test.py` samt browser-testet med samma
+datum i respektive repo. Författarkällan ska hållas i synk med bankerna.
