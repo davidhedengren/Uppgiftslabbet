@@ -24,7 +24,7 @@ test('Runda 1 och 2: styckeform, förklaring före formeln och kommentar före s
 });
 
 // Runda 3: talet i en genererad svarsruta ska stämma med rättSvar inom toleransen.
-const tal=x=>{const m=x.match(/^\\\((-?)([\d\\,]+)(?:\{,\}(\d+))?(?:\\cdot10\^\{(-?\d+)\})?\\\)/);if(!m)return null;
+const tal=x=>{const m=x.match(/^\\\((-?)(\d{1,3}(?:\\,\d{3})+|\d+)(?:(?:\{,\}|,)(\d+))?(?:\\cdot10\^\{(-?\d+)\})?\\\)/);if(!m)return null;
  return (m[1]?-1:1)*Number(m[2].replace(/\\,/g,'')+'.'+(m[3]||'0'))*10**Number(m[4]||0);};
 test('Runda 3: svarsrutans tal stämmer med självrättningen',()=>{
  let n=0;
@@ -41,4 +41,19 @@ test('Runda 3: svarsrutans tal stämmer med självrättningen',()=>{
  assert.equal(svar(q('2.210').s)[0],'\\(3{,}50\\cdot10^{-4}\\) A.');
  assert.equal(svar(q('4.77').s)[0],'\\(48{,}6\\)°.');
  assert.equal(svar(q('7.227').s)[0],'Värmestrålning.');
+});
+
+test('Runda 4: flerdelsfacit har en svarsruta per del, och talen stämmer med delens rättSvar',()=>{
+ // 2.2: 84 g på 2³ cm³ ger 10,5 g/cm³; dubbel sida ger 8·84 g.
+ assert.equal(84/2**3,10.5);assert.deepEqual(svar(q('2.2').s),['\\(10{,}5\\) g/cm³.','\\(672\\) g.']);
+ assert.equal(svar(q('8.60').s).length,3);
+ let n=0;
+ for(const t of bank){
+  if(t.kap===9||t.svarstyp!=='flera_delar'||!Array.isArray(t.rättSvar))continue;
+  const s=svar(t.s);if(s.length!==t.rättSvar.length)continue;
+  s.forEach((x,i)=>{const v=tal(x),r=t.rättSvar[i];if(v===null||typeof r!=='number')return;n++;
+   const tol=Math.max((Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans)||0,Math.abs(r)*1e-9);
+   assert.ok(Math.abs(v-r)<=tol*1.0001+1e-12,`${t.id} del ${i+1}: ${x} mot ${r}`);});
+ }
+ assert.ok(n>=1300,`kontrollerade delsvar: ${n}`);
 });

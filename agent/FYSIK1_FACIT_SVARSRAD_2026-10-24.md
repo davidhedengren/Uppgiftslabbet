@@ -26,6 +26,7 @@ Kapitel 9 lämnas utanför svarsradsrundorna, eftersom en annan session arbetar 
 | 1 | Numrerade steglistor från nivå 1-rundorna 2026-10-21/22 görs om till stycken | 60 |
 | 2 | Lösa svarsstycken blir svarsrutor, och svarsrutor utan etikett normaliseras | 887 + 302 |
 | 3 | Svarsruta i enkla numeriska facit och flervalsfacit som saknade svar | 696 |
+| 4 | En svarsruta per del i flerdelsfacit som saknade svar | 504 (1 408 rutor) |
 
 ### Runda 1
 
@@ -69,5 +70,16 @@ Regressionstest: `tools/fysik1-facit-svarsrad-2026-10-24.test.js`.
   yttersta element inte är `facit-v2` lämnades.
 - Regressionstestet kontrollerar att talet i varje svarsruta stämmer med självrättningen.
 
-Kvar efter runda 3: flerdelsuppgifter (kapitel 2–8: cirka 590) och resonemangsuppgifter
-(cirka 325) utan svarsruta.
+### Runda 4
+
+- 504 flerdelsfacit fick 1 408 svarsrutor, en efter varje del, som i de redan granskade
+  Fy1-facit. Delarna hittas via `<p><strong>a)</strong></p>` eller `facit-del`, och antalet
+  delar måste vara lika med antalet `rättSvar`. I `facit-del` står rutan sist i `facit-arbete`.
+- Talet hämtas ur delens egen lösning med samma regel som i runda 3. Textsvar i `rättSvar`
+  används som de står. Delar utan självrättat svar, eller där talet inte syns i delens
+  lösning, fick ingen ruta (28 delar).
+- Regressionstestet jämför varje dels tal med delens `rättSvar` och tolerans.
+
+Kvar efter runda 4: cirka 90 flerdelsfacit (delarna kunde inte paras ihop säkert med
+`rättSvar`) och cirka 325 resonemangsuppgifter utan svarsruta. De flesta resonemangsuppgifter
+saknar ett kort entydigt svar och lämnas.
