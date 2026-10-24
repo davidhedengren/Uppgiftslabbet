@@ -2350,3 +2350,16 @@ Ma1 #8.02 har en tydligare tankbild; modell och svar var redan korrekta.
 Se [felloggen 17:12](FELRAPPORTER_2026-10-24_1712.md) för alla granskade
 ID:n, tidigare åtgärder och oförändrade uppgifter. Skydd:
 `felrapporter-2026-10-24-1712.test.js` och faktiska browserfall.
+
+## Ma4 kap 2.1 – nivå 1 och grafer i trigonometriska kurvor, 2026-10-24
+
+Nya #2.656–2.718 (63 kort, 36 på nivå 1, 28 grafer) i sinus-/cosinuskurvor,
+förskjutna kurvor, sinusformad kurva, tan x och a sin x + b cos x. Se
+[MA4_KAP2_1_KURVOR_2026-10-24.md](MA4_KAP2_1_KURVOR_2026-10-24.md).
+Avläsningskort får miniräknare; exakta värden (#2.706, #2.718) prövas utan.
+Graftexter ritas ovanpå kurvan med vit kant och tangenskurvor bryts vid
+asymptoterna (FP85). Validatorns `EXACT_TEXT_DUPLICATE` ignorerar formler:
+”Bestäm c” för sin x + c och tan x + c blev dubbletter och har omformulerats.
+SVG-granskarens vinkelfynd i #2.699 är en falsk träff (axelhörnet väljs som
+vinkelben). Skydd: `ma4-kurvor-2026-10-24.test.js` och browserrättning av
+alla 63 kort.
