@@ -2250,3 +2250,16 @@ Se [källor och avgränsning](nationella-prov/README.md),
 och [uppgiftsvis metadata](nationella-prov/REPETITION_2026-10-23.json).
 Skydd: `tools/np-repetition-2026-10-23.test.py` samt browser-testet med samma
 datum i respektive repo. Författarkällan ska hållas i synk med bankerna.
+
+
+## Ma3 rationella uttryck – 2026-10-24
+
+Tolv nya uppgifter #1.913–1.924 i ordinarie områden. #1.73 och #1.78 anger
+nu variablernas betydelse och enheter i varje delkort (delnivåer 2/1/3).
+#1.854 anger att repdelningen går jämnt upp; återställ inte den oavgränsade
+versionen där antalet bitar kan bli ett bråktal. #1.920 kräver uttryckligen
+exakt svar: 1,5 och 3/2 godtas, avrundningen 2 gör det inte.
+
+Se [alla granskade ID:n, beräkningar och kommentarer](MA3_RATIONELLA_2026-10-24.md).
+Skydd: `tools/ma3-rationella-2026-10-24.test.js` och browserharnessen med samma
+datum i respektive repo. Allmän avrundningspolicy är oförändrad.
