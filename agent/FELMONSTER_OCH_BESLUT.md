@@ -2263,3 +2263,14 @@ exakt svar: 1,5 och 3/2 godtas, avrundningen 2 gör det inte.
 Se [alla granskade ID:n, beräkningar och kommentarer](MA3_RATIONELLA_2026-10-24.md).
 Skydd: `tools/ma3-rationella-2026-10-24.test.js` och browserharnessen med samma
 datum i respektive repo. Allmän avrundningspolicy är oförändrad.
+
+## Ma3 kontinuitet – 2026-10-24
+
+Nya #1.925–1.932 varierar grafer, tabeller, modeller och parameterfrågor.
+Viktigt: ändrad lutning är inte ett hopp; ett hopp går inte att laga genom
+att bara ändra ett punktvärde. #1.927 anger verkliga gränsvärden i tabellen,
+inte ett fåtal provvärden som påstås bevisa gränsvärden. #1.930 skiljer hål
+från asymptot och använder ordnade, namngivna fält för x och f(x).
+Se [alla ID:n och granskningskommentarer](MA3_KONTINUITET_2026-10-24.md).
+Skydd: `tools/ma3-kontinuitet-2026-10-24.test.js` och browserharnessen
+`ma3-kontinuitet-deriverbarhet-2026-10-24.browser.cjs` i båda repona.
