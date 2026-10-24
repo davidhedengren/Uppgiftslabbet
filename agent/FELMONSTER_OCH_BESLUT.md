@@ -2285,3 +2285,12 @@ Ett explicit polynom som motsäger det gamla beviset finns i
 Nya #3.1207–3.1214 varierar kontinuitet, hörn, absolutbelopp, villkor och
 missvisande symmetriska kvoter. Skydd: `tools/ma3-deriverbarhet-2026-10-24.test.js`
 och båda apparnas `ma3-kontinuitet-deriverbarhet-2026-10-24.browser.cjs`.
+
+## Ma3 rationella ekvationer – 2026-10-24
+
+Nya #1.933–1.940 varierar avläsning, kostnadsfördelning, felsökning, pumpar,
+geometri och parameterresonemang. #1.939 har en lösningsmängd: 4 och 6 cm ska
+godtas i båda ordningarna. #1.940 måste behålla villkoret x ≠ 2 även när a = 4.
+Se [alla granskade ID:n och kommentarer](MA3_RATIONELLA_EKVATIONER_2026-10-24.md).
+Skydd: `tools/ma3-rationella-ekvationer-2026-10-24.test.js` och browserharnessen
+med samma datum i båda repona. Inga äldre objekt ändrades i denna omgång.
