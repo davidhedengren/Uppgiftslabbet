@@ -2363,3 +2363,14 @@ asymptoterna (FP85). Validatorns `EXACT_TEXT_DUPLICATE` ignorerar formler:
 SVG-granskarens vinkelfynd i #2.699 är en falsk träff (axelhörnet väljs som
 vinkelben). Skydd: `ma4-kurvor-2026-10-24.test.js` och browserrättning av
 alla 63 kort.
+
+## Ma5 kap 4 – nivå 1 och lösningskurvor i differentialekvationer, 2026-10-24
+
+Nya #4.605–4.665 (61 kort, 34 på nivå 1, 13 figurer) i y′ = ky, inhomogena
+av första ordningen, homogena och inhomogena av andra ordningen samt logistisk
+tillväxt. Se [MA5_DIFFEKV_2026-10-24.md](MA5_DIFFEKV_2026-10-24.md).
+Allmänna lösningar använder `diffekv_losning` även med en konstant; villkors-
+bestämda lösningar `ekvation`/`uttryck`. Resonansansatser läggs inte till
+(FP73/FP84). Avsvalning och blandning hör till Förändringsmodeller. GeoGebra
+nekas eftersom CAS löser ekvationerna. Skydd: `ma5-diffekv-2026-10-24.test.js`
+och browserrättning av alla 61 kort.
