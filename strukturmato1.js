@@ -428,8 +428,3 @@ window.GRUPPMATO1 = {
     }
   ]
 };
-
-// Självständiga repetitionsuppgifter, 2026-10-23. Originalprov återges inte.
-window.KAPNAMNMATO1["5"] = "Repetera inför Nationella provet";
-window.OMRMATO1["5"] = {"np_repetition": "Repetera inför Nationella provet"};
-window.SPARMATO1["5"] = {"np_repetition": ["1b", "1c"]};

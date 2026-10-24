@@ -255,6 +255,15 @@ add('mato2','Integraler och tillämpningar',4,p('Beräkna '+m(r'\displaystyle\in
 add('mato2','Trigonometri och modeller',5,p('Funktionen '+m(r'f(x)=3\sin x+b\cos x')+' har största värdet 5. Konstanten '+m(r'b')+' är positiv. Bestäm '+m(r'b')+'.'),4,
     solution('Skriv summan som en förskjuten sinuskurva.',p('Sätt '+m(r'f(x)=R\sin(x+\varphi)')+'. Additionsformeln ger '+m(r'R\cos\varphi=3')+' och '+m(r'R\sin\varphi=b')+'.')+mathline(r'R^2=3^2+b^2')+p('Största värdet är R = 5, så '+m(r'25=9+b^2')+'. Eftersom b är positivt väljs b = 4.'),m(r'b=4')+'.'),'Använd additionsformeln för sin(x + φ) och trigonometriska ettan.',calc=False,ability='problemlösning')
 
+# Senaste användarbeslutet: vanliga ämnesområden, bevara de publicerade ID:na.
+PLACEMENTS=json.loads((ROOT/'agent/nationella-prov/OMPLACERING_2026-10-24.json').read_text())['tasks']
+for placement in PLACEMENTS:
+    task=next(q for q in BANKS[placement['course']] if q['id']==placement['id'])
+    task.update(placement['after'])
+    task['omrTidigare']=placement['before']['omr']
+    task['familjTidigare']=placement['before']['familj']
+
+
 def install():
     for course, tasks in BANKS.items():
         if not tasks:continue

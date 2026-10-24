@@ -1,4 +1,18 @@
-# Repetera inför Nationella provet
+# Uppgifterna från repetitionsomgången
+
+## Aktuellt beslut 2026-10-24
+
+Användaren vill inte längre ha ett separat repetitionsområde. Alla 80 uppgifter
+är flyttade till befintliga ämnesområden och delmoment i båda apparna. ID:n,
+frågor, facit, figurer, nivåer, spår och verktyg är bevarade. **Återskapa inte
+repetitionsknappen eller repetitionskapitlen. Ma5 väntar fortfarande.**
+
+Se [omplaceringen med samtliga ID:n](OMPLACERING_2026-10-24.md) och
+[aktuell placeringskarta](OMPLACERING_2026-10-24.json). Författarskriptet använder
+placeringskartan, och regressionstesterna kontrollerar de vanliga ämnesområdena.
+Äldre käll- och granskningsmetadata behålls som historik.
+
+## Historik: ursprunglig leverans 2026-10-23
 
 Användarbeslut 2026-10-23: ett eget område sist i matematikkurserna, med
 självständiga repetitionsuppgifter som tränar kunskaper och uppgiftstyper
@@ -54,7 +68,8 @@ ut att vara original, och skapa inte en systematisk nära omskrivning av hela pr
 
 ## Fortsatt arbete
 
-1. Analysera fler frisläppta prov för kunskapskrav, variation och luckor.
+1. Följ senaste uppdraget: behåll dessa frågor i vanliga områden. Utöka inte
+   något separat NP-område utan ett nytt uttryckligt beslut.
 2. Konstruera självständiga uppgifter mot dagens ämnesplan och aktuellt spår.
 3. Dokumentera exakt vad som lästs, vad som konstruerats och vad som återstår.
 4. Kontrollera matematik, språk, nivå, verktyg, självrättning och figurer per ID.

@@ -20,25 +20,29 @@ const fs=require('fs'),path=require('path'),assert=require('node:assert/strict')
     return await väljKurs(kurs,document.querySelector('[data-kurs="'+id+'"]'));
    },id);
    assert.equal(started,true);
-   const tracks=await page.evaluate(()=>[...new Set(DB.bank.filter(q=>q.omr==='np_repetition').flatMap(q=>q.kurs))]);
+   const tracks=await page.evaluate(()=>[...new Set(DB.bank.filter(q=>q.repetition?.omgang==='2026-10-23').flatMap(q=>q.kurs))]);
    for(const track of tracks){
     const info=await page.evaluate(track=>{
      state.spår=track;byggTräd();
-     const tasks=variantBank().filter(q=>q.omr==='np_repetition');
-     state.omr=new Set([tasks[0].kap+':np_repetition']);rita();
+     const tasks=variantBank().filter(q=>q.repetition?.omgang==='2026-10-23');
+     const checked=[];
+     for(const q of tasks){
+      state.omr=new Set([q.kap+':'+q.omr]);const list=urval();const position=list.findIndex(t=>t.id===q.id);
+      rita(Math.floor(position/UPPGIFTER_PER_SIDA));
+      checked.push({id:q.id,found:position>=0,rendered:!!document.querySelector('#lista article.kort[data-id=\"'+q.id+'\"]'),areaButton:!!document.querySelector('[data-omr=\"'+q.kap+':'+q.omr+'\"]')});
+     }
      return {
-      track,last:document.querySelector('.kapgrupp:last-child .kaprad').textContent,
-      expected:DB.bank.filter(q=>q.omr==='np_repetition'&&q.kurs.includes(track)).map(q=>q.id).sort(),
+      track,checked,oldButton:!!document.querySelector('[data-omr$=\":np_repetition\"]'),oldText:document.querySelector('#träd').textContent.includes('Repetera inför Nationella provet'),
+      expected:DB.bank.filter(q=>q.repetition?.omgang==='2026-10-23'&&q.kurs.includes(track)).map(q=>q.id).sort(),
       ids:tasks.map(q=>q.id).sort(),
-      rendered:[...document.querySelectorAll('#lista article.kort')].map(e=>e.dataset.id).sort(),
       latex:document.querySelectorAll('#lista .katex-error').length,
       explanation:document.querySelector('.kapgrupp:last-child .np-repetition-info')?.textContent,
       alternatives:tasks.filter(q=>q.alternativ).map(q=>({id:q.id,visible:q.alternativ.every(a=>uppgiftsText(q).includes(a.txt))}))
      };
     },track);
-    assert.match(info.last,/Repetera inför Nationella provet/);
-    assert.match(info.explanation,/inte officiella/);
-    assert.deepEqual(info.ids,info.expected);assert.deepEqual(info.rendered,info.expected);
+    assert.equal(info.oldButton,false);assert.equal(info.oldText,false);
+    assert.ok(info.checked.every(q=>q.found&&q.rendered&&q.areaButton),JSON.stringify(info.checked));
+    assert.deepEqual(info.ids,info.expected);
     assert.equal(info.latex,0);assert.ok(info.alternatives.every(a=>a.visible));
     rows.push({course:id,...info});
    }

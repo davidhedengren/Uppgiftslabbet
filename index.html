@@ -6779,7 +6779,7 @@ const BANK_VERSION=(()=>{
   const d=new Date(document.lastModified);
   if(Number.isNaN(d.getTime())) return 'auto';
   const två=n=>String(n).padStart(2,'0');
-  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-np-repetition-80-2026-10-23`;
+  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-omplacering-80-2026-10-24`;
 })();
 const skriptLöften=new Map();
 function laddaSkript(src){
@@ -7000,7 +7000,7 @@ function byggTräd(){
         <span class="nr">${k}</span><span>${kapitelNamn(k)}</span>
         <span class="antal">${kapAntal}</span>
       </button>
-      <div class="omrlista">${omrs.includes('np_repetition')?'<p class="np-repetition-info" style="padding:0 12px;font-size:13px;line-height:1.5">Egna övningsuppgifter inför provet, med aktuellt kursinnehåll. Uppgifterna är inte officiella provuppgifter.</p>':''}${grupperFör(k,omrs)}</div>
+      <div class="omrlista">${grupperFör(k,omrs)}</div>
     </div>`;
   }).join('');
     $$('.kaprad').forEach(b=>b.addEventListener('click',()=>b.parentElement.classList.toggle('stängd')));

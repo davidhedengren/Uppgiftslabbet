@@ -1,7 +1,7 @@
 """Oberoende matematik och bankkontrakt för första repetitionsomgången.
 Kör: python tools/np-repetition-2026-10-23.test.py (kräver sympy).
 """
-import json, math, subprocess, unittest, runpy
+import json, math, subprocess, unittest, runpy, hashlib
 from pathlib import Path
 import sympy as s
 
@@ -12,7 +12,8 @@ x,n,t=s.symbols('x n t',real=True)
 def load(course):
     text=(ROOT/f'uppgifter{course}.js').read_text()
     return json.loads(text[text.index('['):text.rindex(']')+1])
-B={c:[q for q in load(c) if q['omr']=='np_repetition'] for c in COURSES}
+PLACEMENTS=json.loads((ROOT/'agent/nationella-prov/OMPLACERING_2026-10-24.json').read_text())['tasks']
+B={c:[q for q in load(c) if q.get('repetition',{}).get('omgang')=='2026-10-23'] for c in COURSES}
 def expr(value):return s.sympify(value,locals={'x':x,'n':n,'t':t,'i':s.I,'lg':lambda a:s.log(a,10)})
 
 class Repetition(unittest.TestCase):
@@ -107,9 +108,20 @@ class Repetition(unittest.TestCase):
             self.assertEqual(B[c],authored[c],f'{c}: författarkälla och bank skiljer sig')
             allq=load(c);self.assertEqual(len({q['id'] for q in allq}),len(allq));self.assertEqual(len(B[c]),20)
             oldtxt=subprocess.check_output(['git','show',f'HEAD:uppgifter{c}.js'],cwd=ROOT,text=True)
-            old=json.loads(oldtxt[oldtxt.index('['):oldtxt.rindex(']')+1]);self.assertEqual(allq[:len(old)],old)
+            old=json.loads(oldtxt[oldtxt.index('['):oldtxt.rindex(']')+1])
+            moved={r['id']:r for r in PLACEMENTS if r['course']==c}
+            self.assertEqual(len(allq),len(old))
+            for before,after in zip(old,allq):
+                if before['id'] not in moved:self.assertEqual(after,before)
             for q in B[c]:
-                self.assertEqual(q['kap'],kap);self.assertEqual(q['repetition']['typ'],'egen')
+                placement=moved[q['id']]
+                self.assertTrue(any(t['id'] not in moved and t['kap']==q['kap'] and t['omr']==q['omr'] and t['familj']==q['familj'] for t in allq),q['id'])
+                self.assertTrue(all(q[k]==v for k,v in placement['after'].items()))
+                content={k:v for k,v in q.items() if k not in ('kap','omr','familj','omrTidigare','familjTidigare')}
+                self.assertEqual(hashlib.sha256(json.dumps(content,ensure_ascii=False,sort_keys=True).encode()).hexdigest(),placement['contentSha256'])
+                self.assertEqual(q['omrTidigare'],'np_repetition')
+                self.assertEqual(q['familjTidigare'],placement['before']['familj'])
+                self.assertEqual(q['repetition']['typ'],'egen')
                 self.assertIn('facit-svar',q['s']);self.assertTrue(q['spel']);self.assertTrue(q['självrättning'])
                 if q['geogebra']:self.assertTrue(q['miniräknare'])
                 self.assertNotIn('spelDelar',q)  # Alla dessa kort är självständiga.

@@ -2228,6 +2228,12 @@ motsvarande browserprov och `tools/fri-avrundning-heltal.test.js`.
 
 ## Repetition inför nationella prov – egna uppgifter, 2026-10-23
 
+**Ersatt placeringsbeslut 2026-10-24:** Alla 80 uppgifter ska ligga i vanliga
+ämnesområden och befintliga delmoment. Repetitionsområdet och knappen tas bort.
+Bevara publicerade ID:n även när ID-prefixet inte längre motsvarar `kap`.
+Se [hela omplaceringen](nationella-prov/OMPLACERING_2026-10-24.md).
+Nedanstående beskrivning gäller den ursprungliga leveransen.
+
 Användaren har valt egna repetitionsuppgifter i ett sista område,
 `np_repetition`, i ma1, ma2, mato1 och mato2. Ma5/matf1 ska vänta.
 Tematiska källhänvisningar i `repetition.underlag` får inte tolkas som att

@@ -1,0 +1,1206 @@
+{
+  "date": "2026-10-24",
+  "reason": "Användaren vill ta bort repetitionsområdet och placera samtliga 80 uppgifter i befintliga ämnesområden.",
+  "tasks": [
+    {
+      "course": "ma1",
+      "id": "8.01",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Procent och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "procent",
+        "familj": "Procentuell ökning och minskning"
+      },
+      "contentSha256": "0666388011047d8dd620f32eef95f4f46156d0980f60adc2b54f404408f6a5d8"
+    },
+    {
+      "course": "ma1",
+      "id": "8.02",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Funktioner och grafer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "funktionsbegreppet",
+        "familj": "Funktionsvärden från formel"
+      },
+      "contentSha256": "25592525cb8b65d88216fc0cffd4c1e4bd47347782ce521a42216b4fff455939"
+    },
+    {
+      "course": "ma1",
+      "id": "8.03",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "forenkla_uttryck",
+        "familj": "Uttryck med parenteser"
+      },
+      "contentSha256": "c62867b392ac45251e1311ca9b152d6b93b5d3670fef06e0b8cf91e05d1c267f"
+    },
+    {
+      "course": "ma1",
+      "id": "8.04",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "ekv_problemlosning",
+        "familj": "Ställa upp och lösa ekvationer"
+      },
+      "contentSha256": "ca76f5eb9f43d348c9d4d9d751145e4598993314a41d13292cebdeebef7baac9"
+    },
+    {
+      "course": "ma1",
+      "id": "8.05",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Funktioner och grafer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "funktionsbegreppet",
+        "familj": "f(x) i grafer"
+      },
+      "contentSha256": "31608b408cebd5743ee152abfb02830837520ab454b320584c45c2052d094f36"
+    },
+    {
+      "course": "ma1",
+      "id": "8.06",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Procent och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "upprepade_forandringar",
+        "familj": "Upprepad procentuell förändring"
+      },
+      "contentSha256": "2745941b2c4d11f0b880371b0c06e9672888ef4a10633e67287e35c6ebaba40d"
+    },
+    {
+      "course": "ma1",
+      "id": "8.07",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Procent och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "forandringsfaktor",
+        "familj": "Räkna med förändringsfaktor"
+      },
+      "contentSha256": "b3da5ef95e313e3fa7414bb8e6a2b3b0a22865eef9a6ffcd7525c292d87b6c86"
+    },
+    {
+      "course": "ma1",
+      "id": "8.08",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Sannolikhet och granskning"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "komplementhandelse",
+        "familj": "Sannolikheten för minst en händelse"
+      },
+      "contentSha256": "2eb37266a447fe9fab5874a86ca72e8123962a411aed71299fa48b586e2913e3"
+    },
+    {
+      "course": "ma1",
+      "id": "8.09",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Sannolikhet och granskning"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "beroende_handelser",
+        "familj": "Dragning utan återläggning"
+      },
+      "contentSha256": "174378bf79b9073cb69e6f6320ba7f8ec3c3d487d8bc6140e4d40042189a49ad"
+    },
+    {
+      "course": "ma1",
+      "id": "8.10",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Funktioner och grafer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "linjara_funktioner",
+        "familj": "Linjära funktioner i vardagliga sammanhang"
+      },
+      "contentSha256": "58491d8825c7bcbb1fea482957cf0e9ddae6d80713423ae86766efe9c50916e3"
+    },
+    {
+      "course": "ma1",
+      "id": "8.11",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Procent och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "index",
+        "familj": "Procentuell förändring av index"
+      },
+      "contentSha256": "f88cc9675e83d159dd4acd369cc103e384303784f4cb31653eb014605549c84d"
+    },
+    {
+      "course": "ma1",
+      "id": "8.12",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Geometri och vektorer"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "strackor_vinklar",
+        "familj": "Sträckor i tillämpningar"
+      },
+      "contentSha256": "7b738f444d9b1409305a159ff635fa640320ff25789face6b7acd844de9d0a3b"
+    },
+    {
+      "course": "ma1",
+      "id": "8.13",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Geometri och vektorer"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "vektor_absolutbelopp",
+        "familj": "Längd i tillämpningar och resonemang"
+      },
+      "contentSha256": "70943a2356b0d577a173f2e280a6948316e91867a1d6fbfd3769873c29a49401"
+    },
+    {
+      "course": "ma1",
+      "id": "8.14",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "linjara_olikheter",
+        "familj": "Olikheter i vardagsproblem"
+      },
+      "contentSha256": "23ac1b6d0fb08091cdd3f93c3e166a2e7b3080872ef8cbb9c00db1e5b9e00f54"
+    },
+    {
+      "course": "ma1",
+      "id": "8.15",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Funktioner och grafer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "bestamma_linjar_funktion",
+        "familj": "Linjär funktion från tabell"
+      },
+      "contentSha256": "ebc19cbc7977867f0674c0d0b240b53250065f4eec7eceb694894a8e5108fdf3"
+    },
+    {
+      "course": "ma1",
+      "id": "8.16",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Procent och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "upprepade_forandringar",
+        "familj": "Total förändring i flera steg"
+      },
+      "contentSha256": "fb011f54ad63008a62473f390cbd1511330a0262e4ec4f964f2b9091f40a4562"
+    },
+    {
+      "course": "ma1",
+      "id": "8.17",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Sannolikhet och granskning"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "korrelation",
+        "familj": "Kausalitet och bakomliggande variabler"
+      },
+      "contentSha256": "4df67d52a601902586b905e34ad0bf0678e9d76d7c3e4394182687b9defb46d2"
+    },
+    {
+      "course": "ma1",
+      "id": "8.18",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 0,
+        "omr": "proportionalitet_grunder",
+        "familj": "Proportionalitet i problemlösning"
+      },
+      "contentSha256": "b65d3f36f163e31374d337ff0b4d059667c0398b6dadea0f3b3ceaa6289049fe"
+    },
+    {
+      "course": "ma1",
+      "id": "8.19",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Funktioner och grafer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "jamfora_modeller",
+        "familj": "Jämföra linjär och exponentiell tillväxt"
+      },
+      "contentSha256": "d6f5da4d9a3fff3504ed264d62953c14e6beba31c7860559476c0242a3070e47"
+    },
+    {
+      "course": "ma1",
+      "id": "8.20",
+      "before": {
+        "kap": 8,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "monster_samband",
+        "familj": "Figurmönster i bilder"
+      },
+      "contentSha256": "18a36f451092f3f3f7750ff09c108dd51f0f775b78c57592980fd43ec0fd0bff"
+    },
+    {
+      "course": "ma2",
+      "id": "6.01",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "enkla_andragradsekvationer",
+        "familj": "Ekvationer av typen x² = a"
+      },
+      "contentSha256": "8df06f0c6807ff7c05c81e439c3adcffba4899db99dfc54847a41048f3211336"
+    },
+    {
+      "course": "ma2",
+      "id": "6.02",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "faktorisering",
+        "familj": "Faktorisera i flera steg"
+      },
+      "contentSha256": "f0cb81a30f17c10f9420f5a18795faa05ef584469efe1dfd3c80db3987551e37"
+    },
+    {
+      "course": "ma2",
+      "id": "6.03",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Funktioner och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "andragradsfunktion_graf",
+        "familj": "Avläsa egenskaper ur grafen"
+      },
+      "contentSha256": "836fe7ac7eb7c22eb2bda467adc212f89465af046eb8cd0640a5e4d7ddebb97c"
+    },
+    {
+      "course": "ma2",
+      "id": "6.04",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "ekvationssystem_tillampningar",
+        "familj": "Ställa upp ekvationssystem"
+      },
+      "contentSha256": "aa75d42804048c8cff1128339fa28f7036fa37e1d7edd30f2f4a3186cce34be2"
+    },
+    {
+      "course": "ma2",
+      "id": "6.05",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Funktioner och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "exponentialekvationer",
+        "familj": "Tillämpade exponentialekvationer"
+      },
+      "contentSha256": "0d1ad7e3879e3b8d982a0360c0f58a5ac03afcc7bdbd73a808ed2ddcc3fc82d8"
+    },
+    {
+      "course": "ma2",
+      "id": "6.06",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "logaritmlagar",
+        "familj": "Förenkla med logaritmlagarna"
+      },
+      "contentSha256": "96491df8184e1f87bc19b570687dacf71217e415696a6ae943d1489fd2155c82"
+    },
+    {
+      "course": "ma2",
+      "id": "6.07",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Geometri och samband"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "geometriska_begrepp_definitioner",
+        "familj": "Geometriska grundbegrepp"
+      },
+      "contentSha256": "44faccdd10b85a97bc1718e9388ef3f08059abdd7507f1816e974bd46ff64492"
+    },
+    {
+      "course": "ma2",
+      "id": "6.08",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Geometri och samband"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "likformighet",
+        "familj": "Indirekt mätning"
+      },
+      "contentSha256": "3d86e02044703a082d33de0a4f498c661e65e6e0d5fac9fca2e455b876d99f9c"
+    },
+    {
+      "course": "ma2",
+      "id": "6.09",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Statistik och tolkning"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "standardavvikelse",
+        "familj": "Beräkna och tolka standardavvikelse"
+      },
+      "contentSha256": "e4802bbe7b049ac11d1e572446f599a75e02f13d8d444c196a83eaecc529fd9d"
+    },
+    {
+      "course": "ma2",
+      "id": "6.10",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Statistik och tolkning"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "normalfordelat_material",
+        "familj": "Andel i ett intervall"
+      },
+      "contentSha256": "84bb3c1700ee0e9bd9f3a33aecf3601bc7738626f6693267f6f1136400e689f3"
+    },
+    {
+      "course": "ma2",
+      "id": "6.11",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Statistik och tolkning"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "ladagram",
+        "familj": "Avläsa lådagram"
+      },
+      "contentSha256": "34ea040fba08437728acb69b5eb872f780ff8f07e12ec72ede39a214e3180c95"
+    },
+    {
+      "course": "ma2",
+      "id": "6.12",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Funktioner och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "andragradsfunktioner_tillampningar",
+        "familj": "Optimering"
+      },
+      "contentSha256": "e2d063cf945fe3dee5ff42e4d7aa3ca76c868839628ed3e206b63d3958bed017"
+    },
+    {
+      "course": "ma2",
+      "id": "6.13",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "rotekvationer",
+        "familj": "Falska rötter och kontroll"
+      },
+      "contentSha256": "eb73cc1196baec80b2f53e78629578f324e82e3f7aeb3c9d7216759304807c61"
+    },
+    {
+      "course": "ma2",
+      "id": "6.14",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Algebra och ekvationer"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "mer_om_andragradsekvationer",
+        "familj": "Parametrar och villkor på rötterna"
+      },
+      "contentSha256": "3874f26cfa7d2bf606ae9eff747d75685912601bf3fe9b200ce42f3cd03141c4"
+    },
+    {
+      "course": "ma2",
+      "id": "6.15",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Geometri och samband"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "avstandsformeln_mittpunktsformeln",
+        "familj": "Mittpunktsformeln"
+      },
+      "contentSha256": "4c05558707b09fd67119f5d72506247f40388fa7b721f104bc75ab77cc8fc6f2"
+    },
+    {
+      "course": "ma2",
+      "id": "6.16",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Funktioner och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "andragradsfunktioner",
+        "familj": "Bestämma andragradsfunktion från nollställen"
+      },
+      "contentSha256": "888bf6ecb0b36f55952d112af86f9311cbe2b788412b23f64f5b0329ad93677c"
+    },
+    {
+      "course": "ma2",
+      "id": "6.17",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Statistik och tolkning"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "linjar_regression",
+        "familj": "Bestämma och använda regressionsmodellen"
+      },
+      "contentSha256": "1a870ad5ebcf22fdc3b7f475a46ef71e6b6e89e8eae942ec106051ea7a11b4b7"
+    },
+    {
+      "course": "ma2",
+      "id": "6.18",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Statistik och tolkning"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "lagesmatt",
+        "familj": "Förändring av lägesmått"
+      },
+      "contentSha256": "111da478f41f1100c844ec5ff74bd00efc677a7d517aa74dcfc97f1270fb6852"
+    },
+    {
+      "course": "ma2",
+      "id": "6.19",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Geometri och samband"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "andragradsekvationer_tillampningar",
+        "familj": "Andragradsekvationer i geometri"
+      },
+      "contentSha256": "724d1a7d8fbbe833e111c32c8f0e1af99520ff3afeb8bc84d3d0501355cf19d4"
+    },
+    {
+      "course": "ma2",
+      "id": "6.20",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Funktioner och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "mer_om_andragradsekvationer",
+        "familj": "Antal lösningar och tillämpningar med grafer"
+      },
+      "contentSha256": "9ae6783e936cad5ac3f5660bb18edb05ed8a14111c46bf65797d3e6ac587ce6f"
+    },
+    {
+      "course": "mato1",
+      "id": "5.01",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "deriveringsregler",
+        "familj": "Derivera polynom"
+      },
+      "contentSha256": "ab4a71030ff1ea610484ca081f858c7e42e43c6244fef29fab4a829bcc30c4cb"
+    },
+    {
+      "course": "mato1",
+      "id": "5.02",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "primitiva",
+        "familj": "Bestämma primitiva funktioner"
+      },
+      "contentSha256": "80b0224a931445f501d86e762a484a4332ea90254f5bcb339cbe216bd8632eaf"
+    },
+    {
+      "course": "mato1",
+      "id": "5.03",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "andringskvoter",
+        "familj": "Förändring ur grafer, tabeller och sammanhang"
+      },
+      "contentSha256": "c4c321f3bee82166576bcf73700801aabfa61c4b4f825cd19c82edbfdb7b5ca6"
+    },
+    {
+      "course": "mato1",
+      "id": "5.04",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "begreppet_derivata",
+        "familj": "Derivata som tangentens lutning"
+      },
+      "contentSha256": "d52bc87fe9d9bbe84855eaa4a615631acd2ca2dcb6eeaaeef93562e174bd4811"
+    },
+    {
+      "course": "mato1",
+      "id": "5.05",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Algebra och samband"
+      },
+      "after": {
+        "kap": 1,
+        "omr": "forkorta_rationella",
+        "familj": "Förkorta rationella uttryck"
+      },
+      "contentSha256": "effa9e5ca54c7007e886e7d0da78e0c9b4c89bca64e44d11a69ecd90dec0f21c"
+    },
+    {
+      "course": "mato1",
+      "id": "5.06",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "extrempunkter",
+        "familj": "Bestämma extrempunkter"
+      },
+      "contentSha256": "25adfb789d55eb74d9ef79edeff37bfc9bba43368cca41f6f6fbba94dcdfb950"
+    },
+    {
+      "course": "mato1",
+      "id": "5.07",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "integralberakning",
+        "familj": "Area med integraler"
+      },
+      "contentSha256": "3848e1be9ea50b7e2e51ff7449218ee9edecd8003cac574b6b62248caea77572"
+    },
+    {
+      "course": "mato1",
+      "id": "5.08",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "primitiva_villkor",
+        "familj": "Primitiv funktion genom en given punkt"
+      },
+      "contentSha256": "371458175f818f0c7aaeb5520152ddea10b9daae56bce9a6a6a52ade30afbce2"
+    },
+    {
+      "course": "mato1",
+      "id": "5.09",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "exp_tillampningar",
+        "familj": "Derivata i exponentialmodeller"
+      },
+      "contentSha256": "f5af1d7a16747c1b1badf4d67f67bdba8fcbd90aa4b5953fc8e7a1c562052a9e"
+    },
+    {
+      "course": "mato1",
+      "id": "5.10",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Optimering och modeller"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "extremvarde_modellering",
+        "familj": "Stängsel och inhägnader"
+      },
+      "contentSha256": "95e173283806d8399b1112fbcf0aabeceb351b5243c0762ee9233c34a00833e1"
+    },
+    {
+      "course": "mato1",
+      "id": "5.11",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "primitiva_villkor",
+        "familj": "Återskapa funktion från derivata"
+      },
+      "contentSha256": "131e132d49f248e622bf8d03ca70e0b0aff95471c3558af367465b0bd88bd4bc"
+    },
+    {
+      "course": "mato1",
+      "id": "5.12",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "integral_tillampningar",
+        "familj": "Ackumulerad mängd från förändringshastighet"
+      },
+      "contentSha256": "f209f4ba1d6956128148f4abab3ac51ba5408e771f99ceedb8450276d385aedd"
+    },
+    {
+      "course": "mato1",
+      "id": "5.13",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Integraler och area"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "integral_area",
+        "familj": "Integral som area under en graf"
+      },
+      "contentSha256": "c3705a843be8bf232544364a62fe6122929865940da3c6c170dae805de204e89"
+    },
+    {
+      "course": "mato1",
+      "id": "5.14",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Trigonometri"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "cosinussatsen",
+        "familj": "Använda cosinussatsen"
+      },
+      "contentSha256": "8927f755c6d5718eb244f8260dcd5d5b1ab51a6fcabce4131c4a4cf91760043c"
+    },
+    {
+      "course": "mato1",
+      "id": "5.15",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Trigonometri"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "sinussatsen_tva_fall",
+        "familj": "Antal möjliga trianglar"
+      },
+      "contentSha256": "3db8812152085d3067cd5f32a2acefb89f8c5dd376df65da6cae33b122bdce0c"
+    },
+    {
+      "course": "mato1",
+      "id": "5.16",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Optimering och modeller"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "geometriska_summor",
+        "familj": "Geometriska summor i tillämpningar"
+      },
+      "contentSha256": "8fe9f73bccabb1c8012621264cbb44bf09433d22d9d4655747fa11b6cf7542e8"
+    },
+    {
+      "course": "mato1",
+      "id": "5.17",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Optimering och modeller"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "linjar_optimering",
+        "familj": "Grafisk optimering"
+      },
+      "contentSha256": "ed69b73183c101ca93be906e11bba5e7056c3dec39c19263a54a642eab17edab"
+    },
+    {
+      "course": "mato1",
+      "id": "5.18",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "derivata_polynom",
+        "familj": "Parameterproblem med derivata"
+      },
+      "contentSha256": "a2132c61a29fa3a869e8d79a7e4aaad9709177ca60a008132c55500ef8de0e81"
+    },
+    {
+      "course": "mato1",
+      "id": "5.19",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "tangenter",
+        "familj": "Fördjupade tangentproblem"
+      },
+      "contentSha256": "844bedd5c4211b05ba5a1fa34fe6f248d2d3b0254b052f837725fc2ea268f9e7"
+    },
+    {
+      "course": "mato1",
+      "id": "5.20",
+      "before": {
+        "kap": 5,
+        "omr": "np_repetition",
+        "familj": "Derivata och förändring"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "extrempunkter",
+        "familj": "Extrempunkter med parameter"
+      },
+      "contentSha256": "bf920a0464460ef39e05bba48e08f11c30d19dcc103cb1581b119588097c5a9c"
+    },
+    {
+      "course": "mato2",
+      "id": "6.01",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "derivata_sammansatta",
+        "familj": "Kedjeregeln för trigonometriska och exponentiella funktioner"
+      },
+      "contentSha256": "452326bbad272f96a4cc04a790cb8de36ff117611bd8fc71ce042a6118ff0cc8"
+    },
+    {
+      "course": "mato2",
+      "id": "6.02",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Trigonometri och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "kurvor_radianer",
+        "familj": "Amplitud, period och medellinje för trigonometriska funktioner"
+      },
+      "contentSha256": "9252bb604fc240fc5f91eb33c33cc843484ed6ccd7202eb40591732c54953ea2"
+    },
+    {
+      "course": "mato2",
+      "id": "6.03",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Komplexa tal och algebra"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "konjugat_raknesatt",
+        "familj": "Konjugat och absolutbelopp av komplexa tal"
+      },
+      "contentSha256": "d2668e495416bed4104544fe6407c76253f5905b3d85f1b8f05b528694dca4e7"
+    },
+    {
+      "course": "mato2",
+      "id": "6.04",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "produktregeln",
+        "familj": "Derivering med produktregeln"
+      },
+      "contentSha256": "fafdbe6aaa0332aed4ae820de2b02026b10abe3a40d47d3608d9127ff7cfdcd5"
+    },
+    {
+      "course": "mato2",
+      "id": "6.05",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "kvotregeln",
+        "familj": "Derivering med kvotregeln"
+      },
+      "contentSha256": "daee7ef5dc477e96acc13a89a52fdc2b2d7ffc739641225d999d976722e4bd78"
+    },
+    {
+      "course": "mato2",
+      "id": "6.06",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "exp_log_derivata",
+        "familj": "Kedjeregeln med logaritmfunktioner"
+      },
+      "contentSha256": "0d351f1599619c17d8f60ccc6e1208134d94b60db2f27eed1a57580d6ce63080"
+    },
+    {
+      "course": "mato2",
+      "id": "6.07",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Trigonometri och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "kurvor_radianer",
+        "familj": "Trigonometriska ekvationer i radianer"
+      },
+      "contentSha256": "02b3738f9bfb4d19ea90a4a6cfe0859fc010d2993520eca077482c64c7426e26"
+    },
+    {
+      "course": "mato2",
+      "id": "6.08",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Integraler och tillämpningar"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "integraler_primitiva",
+        "familj": "Bestämda integraler med trigonometriska funktioner"
+      },
+      "contentSha256": "0b747597b5591c81b1d129e4d5bc75517e18104e422a0572f4e5575814f34704"
+    },
+    {
+      "course": "mato2",
+      "id": "6.09",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Integraler och tillämpningar"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "skivmetoden",
+        "familj": "Rotationsvolymer"
+      },
+      "contentSha256": "cc850acccbc5f609dd078678b0aefcf27d892c0e8b5b056ff797807f9db0688b"
+    },
+    {
+      "course": "mato2",
+      "id": "6.10",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Integraler och tillämpningar"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "sannolikhetsfordelning",
+        "familj": "Normalisera täthetsfunktion och bestäm parameter"
+      },
+      "contentSha256": "a830129c3667e9bedd579ea9bc0ff5ad8afed1b4f1560386dbdc256642f3b499"
+    },
+    {
+      "course": "mato2",
+      "id": "6.11",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Komplexa tal och algebra"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "konjugat_raknesatt",
+        "familj": "Division av komplexa tal"
+      },
+      "contentSha256": "a4477b40d6bfb122382efd9d8da461339efbf5f40322e6cc38bef1c889769445"
+    },
+    {
+      "course": "mato2",
+      "id": "6.12",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Komplexa tal och algebra"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "faktorsatsen",
+        "familj": "Faktorsatsen och faktorisering"
+      },
+      "contentSha256": "9e2620272857557627a9b0d2dd395cfbe976c107cb38404955daa1f0dda3c595"
+    },
+    {
+      "course": "mato2",
+      "id": "6.13",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "kurvor_asymptoter",
+        "familj": "Asymptoter för rationella funktioner"
+      },
+      "contentSha256": "2454412118bba40ba3964cd90f1057337a7a31c37f7d6c75e3cc15bc8e3464e8"
+    },
+    {
+      "course": "mato2",
+      "id": "6.14",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Trigonometri och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "trig_problemlosning_2",
+        "familj": "Tolka och bestämma trigonometriska modeller"
+      },
+      "contentSha256": "f5b26b74d474919a8c64db4e96f1b3b481dcb721d6143ac5e6070d2f34bf4012"
+    },
+    {
+      "course": "mato2",
+      "id": "6.15",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 3,
+        "omr": "grafer_derivator",
+        "familj": "Extrempunkter, terrasspunkter och inflexion"
+      },
+      "contentSha256": "0bdce250c22500a718b87843208fbf174bbed5095877280026bf90d20165fb27"
+    },
+    {
+      "course": "mato2",
+      "id": "6.16",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Derivata och funktioner"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "derivata_sammansatta",
+        "familj": "Derivering med kedjeregeln"
+      },
+      "contentSha256": "537e47d035ab1529935515f5c5de2b0a36027d0b9d7505281eae803caba127e9"
+    },
+    {
+      "course": "mato2",
+      "id": "6.17",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Komplexa tal och algebra"
+      },
+      "after": {
+        "kap": 5,
+        "omr": "andragradsekv_komplexa",
+        "familj": "Andragradsekvationer med komplexa lösningar"
+      },
+      "contentSha256": "4535224edda25538cf2fe0cc0e03d35f49b143bdfe1f1bef83ae44e4ffd8841a"
+    },
+    {
+      "course": "mato2",
+      "id": "6.18",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Integraler och tillämpningar"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "integraler_areor",
+        "familj": "Parameterproblem med area och integral"
+      },
+      "contentSha256": "ff16df736ee6a0765e679c1401e5e35655feb8f437877878179f702c3bd67194"
+    },
+    {
+      "course": "mato2",
+      "id": "6.19",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Integraler och tillämpningar"
+      },
+      "after": {
+        "kap": 4,
+        "omr": "integraler_primitiva",
+        "familj": "Bestämda integraler med trigonometriska funktioner"
+      },
+      "contentSha256": "49038919d64098e5ff4a934b75dbd282aeb8a9c9ed4d5ba4d0486bcd05473eca"
+    },
+    {
+      "course": "mato2",
+      "id": "6.20",
+      "before": {
+        "kap": 6,
+        "omr": "np_repetition",
+        "familj": "Trigonometri och modeller"
+      },
+      "after": {
+        "kap": 2,
+        "omr": "asinx_bcosx",
+        "familj": "Skriva om kombinationer av sinus och cosinus"
+      },
+      "contentSha256": "591b0cf580d757fa44efcc0a9a2125a54584bc6fd762206cf5a301345b753230"
+    }
+  ]
+}
