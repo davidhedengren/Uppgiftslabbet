@@ -33,12 +33,17 @@ test('Grafskärningarnas lösningar svarar på frågan och använder rätt model
  }
  assert.equal(q('2.420').traningsniva,2);assert.equal(q('2.420').tolerans,.005);
  assert.equal(q('2.422').rättSvar,4);assert.equal(q('2.422').tolerans,0);
- for(const id of ['2.407','2.408']){assert.equal(q(id).rättSvar,'C');assert.doesNotMatch(q(id).s,/polynomdivision|sned asymptot/);}
+ // 2.407 och 2.408 är flervalskort sedan 2026-10-24; C är tredje alternativet i bankens ordning.
+ for(const id of ['2.407','2.408']){assert.equal(q(id).rättSvar??'ABCD'[q(id).alternativ.findIndex(a=>a.ratt)],'C');assert.doesNotMatch(q(id).s,/polynomdivision|sned asymptot/);}
 });
 test('Granskningsspåret omfattar varje förändring och bevarar övriga bankobjekt',()=>{
  const report=JSON.parse(fs.readFileSync(__dirname+'/../agent/FELRAPPORTER_2026-10-19_2044.json','utf8'));
  assert.equal(report.reviewed.length,23);assert.equal(report.changes.length,18);assert.equal(report.unchanged.length,5);
- for(const item of report.changes)assert.deepEqual(q(item.id),item.after,item.id);
+ // Bokstavsuppgifter som gjordes till flervalskort 2026-10-24 (agent/FLERVAL_BOKSTAVSUPPGIFTER_2026-10-24.md)
+ // jämförs utan de fält som omvandlingen ändrade.
+ const FLERVAL=['t','s','svarstyp','rättSvar','tolerans','alternativ','svarFormat','svarEnhet','svarVardesiffror'];
+ const utan=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!FLERVAL.includes(k)));
+ for(const item of report.changes){const t=q(item.id);if(t.svarstyp==='alternativ'&&item.after.svarstyp!=='alternativ')assert.deepEqual(utan(t),utan(item.after),item.id);else assert.deepEqual(t,item.after,item.id);}
  for(const id of report.reviewed){const t=q(id);assert.ok(!t.geogebra||t.miniräknare,id);
   for(const p of t.spelDelar||[])assert.ok(!(p.geogebra??t.geogebra)||(p.miniräknare??t.miniräknare),id);
  }

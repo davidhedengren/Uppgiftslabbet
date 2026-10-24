@@ -48,3 +48,7 @@ Rättelse i runda 4: svarsrader med formen "Svar: B – regn." eller "Svar: A: u
 fick först alternativtexten före det korta svaret ("Regn.– regn."). I 45 Ma1-uppgifter är nu det
 korta svaret efter tankstrecket eller kolonet svaret ("Svar: Regn.", "Svar: Ungefär 30 miljoner").
 Regressionstestet letar efter sådana rester i alla omgjorda banker.
+
+| 5 | Ma3, Ma4, Ma5 och Ma1: fler svarsformer ("<b>Svar: B</b>", "Rätt svar: A.", "B är rätt.", "Svar: B – självurval.") | 4 + 3 + 12 + 24 | ca 125 kvar totalt |
+
+Runda 5 uppdaterade felrapporter-2026-10-13-2127, felrapporter-2026-10-19-2044 (granskningsspåret jämförs utan de omvandlade fälten för 2.407 och 2.408) och stickprov-standardavvikelse.

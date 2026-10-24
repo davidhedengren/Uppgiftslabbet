@@ -45,7 +45,7 @@ test('Delkort anger själva ordning, eget mått och ger inte andra delars svar i
 });
 test('Målgruppen är definierad när ett urval bedöms som snedvridet',()=>{
  for(const id of ['5.182','5.221','5.526','5.535'])assert.match(m1(id).t,/alla invånare|invånarna/);
- assert.match(m1('5.565').t,/högre inkomster/);assert.doesNotMatch(m1('5.174').t,/Bortfalls-/);assert.match(m1('5.180').t,/A: Bortfall<br>/);
+ assert.match(m1('5.565').t,/högre inkomster/);assert.doesNotMatch(m1('5.174').t,/Bortfalls-/);assert.ok(m1('5.180').alternativ.some(a=>a.txt==='Bortfall'&&a.ratt)); // flervalskort sedan 2026-10-24
  assert.doesNotMatch(m1('5.545').s,/hur troligt det är att skillnaden beror på slumpen/);
 });
 test('Förändring av data använder |a| för båda spridningsmåtten; exempel och golfandel stämmer',()=>{

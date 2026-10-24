@@ -14,7 +14,8 @@ test('Indirekta bevis får korrekt område och bygger på logisk ekvivalens',()=
  // Sedan 2026-10-24 är flera av korten flervalskort; bokstaven motsvarar platsen i bankens (oblandade) alternativlista.
  const bokstav=q=>q.rättSvar??'ABCDEFGH'[q.alternativ.findIndex(a=>a.ratt)];
  assert.equal(get(mf,'2.305').omr,'indirekta_bevis');assert.equal(bokstav(get(mf,'2.305')),'B');assert.equal(bokstav(get(mf,'2.541')),'A');assert.equal(bokstav(get(mf,'2.572')),'D');assert.equal(bokstav(get(mf,'2.577')),'C');
- for(const id of ['2.305','2.541','2.144','2.148','2.316','2.572','2.577']){const q=get(mf,id);assert.match(q.t,/indirekt/i);assert.doesNotMatch(q.t,/Kontraposition|kontraposition/);}
+ for(const id of ['2.305','2.541','2.144','2.148','2.316','2.572','2.577']){const q=get(mf,id),text=q.t+JSON.stringify(q.alternativ||[]);assert.match(text,/indirekt/i); // flervalskort har metoden i alternativen sedan 2026-10-24
+ assert.doesNotMatch(q.t,/Kontraposition|kontraposition/);}
  for(const P of [true,false])for(const Q of [true,false])assert.equal(!P||Q,Q||!P);
  for(let k=-20;k<=20;k++){assert.equal((2*k+1)**2,2*(2*k*k+2*k)+1);assert.equal((2*k)**2,2*(2*k*k));for(const r of [1,2])assert.notEqual((3*k+r)**2%3,0);}
 });
