@@ -8,14 +8,15 @@ const utanSvg=h=>h.replace(/<svg[\s\S]*?<\/svg>/g,'');
 
 test('fy2 3.161–3.172: ledaren syns i figuren och facit följer F = IL × B',()=>{
   const E={höger:[1,0,0],vänster:[-1,0,0],uppåt:[0,1,0],nedåt:[0,-1,0],ut:[0,0,1],in:[0,0,-1]};
-  const SV={'1,0,0':'A','-1,0,0':'B','0,1,0':'C','0,-1,0':'D','0,0,-1':'E','0,0,1':'F'};
+  // Sedan 2026-10-24 är korten riktiga flervalskort som appen blandar; rätt alternativ jämförs i stället för bokstaven.
+  const SV={'1,0,0':'höger','-1,0,0':'vänster','0,1,0':'uppåt','0,-1,0':'nedåt','0,0,-1':'in i pappret','0,0,1':'ut ur pappret'};
   for(let k=161;k<=172;k++){
     const t=hitta(fy2,`3.${k}`);
     assert.match(t.t,/stroke="#b87333"/,t.id);
     const m=t.t.match(/aria-label="Strömförande ledare med strömmen (\S+)(?: ur pappret| i pappret)? i ett magnetfält ([^\s"]+)/);
     assert.ok(m,t.id);const i=E[m[1]],b=E[m[2]];
     const f=[i[1]*b[2]-i[2]*b[1],i[2]*b[0]-i[0]*b[2],i[0]*b[1]-i[1]*b[0]].map(x=>x+0);
-    assert.equal(SV[f.join(',')],t.rättSvar,t.id);
+    assert.equal(SV[f.join(',')],t.alternativ.find(a=>a.ratt).txt,t.id);
   }
 });
 
