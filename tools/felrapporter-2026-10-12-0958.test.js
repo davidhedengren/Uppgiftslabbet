@@ -48,8 +48,9 @@ test('Avrundning använder fullprecision och halva steget, inte ett allmänt pro
 test('Avgiftens tidpunkt och nettobehovets spillpåslag har uttryckligt angiven jämförelsegrund',()=>{
  for(const id of ['3.258','3.256','3.84'])assert.match(q(id).t,/efter att räntan lagts till/,id);
  assert.match(q('3.86').t,/startavgift dras direkt/);
- assert.equal(2000*1.018-50,1986);assert.equal(2000*1.016,2032);assert.equal(q('3.258').rättSvar,'B');
- assert.equal(10000*1.03,10300);assert.equal(10000*1.035-100,10250);assert.equal(q('3.256').rättSvar,'A');
+ assert.equal(2000*1.018-50,1986);assert.equal(2000*1.016,2032);assert.equal(q('3.258').alternativ.find(a=>a.ratt).txt,'B'); // flervalskort sedan 2026-10-24
+ 
+ assert.equal(10000*1.03,10300);assert.equal(10000*1.035-100,10250);assert.equal(q('3.256').alternativ.find(a=>a.ratt).txt,'Konto A');
  assert.equal(Math.ceil(120/(.032-.025)),17143);assert.equal(q('3.84').rättSvar,17143);
  const a=1.03**5,b=1.045**2*1.022**3,bound=300*b/(b-a);
  assert.ok(bound>54456&&bound<54457);assert.match(q('3.86').t,/300 kr/);

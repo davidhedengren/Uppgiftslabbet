@@ -52,3 +52,6 @@ Regressionstestet letar efter sådana rester i alla omgjorda banker.
 | 5 | Ma3, Ma4, Ma5 och Ma1: fler svarsformer ("<b>Svar: B</b>", "Rätt svar: A.", "B är rätt.", "Svar: B – självurval.") | 4 + 3 + 12 + 24 | ca 125 kvar totalt |
 
 Runda 5 uppdaterade felrapporter-2026-10-13-2127, felrapporter-2026-10-19-2044 (granskningsspåret jämförs utan de omvandlade fälten för 2.407 och 2.408) och stickprov-standardavvikelse.
+| 6 | Handgranskade: bokstäverna är namn i uppgiften ("Lån A", "System B", kompassuppgifterna i Fy2). Fy1 3.442, Ma1 7.185 och 3.256 omskrivna för hand | 11 + 1 + 1 + 34 + 1 | |
+
+Runda 6 uppdaterade fy2-figurer-2026-10-23, fysik1-acceleration-2026-10-21 och felrapporter-2026-10-12-0958 så att de jämför rätt alternativs text.

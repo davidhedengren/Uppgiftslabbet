@@ -15,7 +15,7 @@ test('Kompassernas facit följer fältet från N till S vid den utritade positio
   const offset=n<237?8:7.5;
   const contribution=(pole,sign)=>{const dx=P[0]-pole.x,dy=P[1]-(pole.y-offset),r=Math.hypot(dx,dy);return [sign*dx/r**3,sign*dy/r**3];};
   const a=contribution(N,1),b=contribution(S,-1),F=[a[0]+b[0],a[1]+b[1]];
-  const answer=Math.abs(F[0])>Math.abs(F[1])?(F[0]>0?'A':'B'):(F[1]>0?'D':'C');assert.equal(q.rättSvar,answer,q.id);
+  const answer=Math.abs(F[0])>Math.abs(F[1])?(F[0]>0?'höger':'vänster'):(F[1]>0?'nedåt':'uppåt');assert.equal(q.alternativ.find(a=>a.ratt).txt,answer,q.id); // flervalskort sedan 2026-10-24
   assert.match(q.t,/ovanifrån/);assert.match(q.t,/Bortse från jordens magnetfält/);assert.match(q.t,/Kompassen visas utan nål/);
  }
 });
