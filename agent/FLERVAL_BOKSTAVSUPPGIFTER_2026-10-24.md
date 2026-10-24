@@ -61,3 +61,8 @@ I runda 7 rättades också ett fel i det ursprungliga facit för Ma3 1.449: det 
 | 8 | Handgranskade med en specifikation per uppgift (bokstav_spec.py): alternativ i egna stycken eller efter radbrytning, "Svara A eller B" mellan två namngivna saker (blir t.ex. "Butik A"/"Butik B"), figurer med bokstäver (blir bokstavsknappar som inte blandas) och svarsrader som "**C.** För …" | 5 + 2 + 1 + 2 + 32 (+ 5 tolkade automatiskt) | |
 
 Runda 8 uppdaterade fysik1-densitet-2026-10-21, felrapporter-2026-10-21-1300 och tunna-omraden-2026-10-21.
+| 9 | Ma3 3.466 och 3.470: deluppgift a) var ett bokstavsflerval i en flerdelsuppgift. Uppgifterna fick delkort där a) är ett flervalskort som appen blandar och b) ett numeriskt kort | 2 | |
+
+## Medvetet kvar
+
+11 flerdelsuppgifter där bokstaven är namnet på det man väljer, inte platsen i en lista, och därför inte kan avslöja något: Ma1 1.197, 1.469, 3.111, 3.116, 3.125, 3.173, 7.17 och 7.224 (abonnemang, sparformer eller tal som heter A, B och C), Ma2 1.267 (tabell A eller B) och 4.297 (para ihop histogram med lådagram A–C). Dessutom Fy2 5.24, där delkortet redan frågar efter en namngiven stjärna.
