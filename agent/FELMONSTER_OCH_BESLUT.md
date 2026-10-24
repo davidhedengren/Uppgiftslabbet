@@ -2294,3 +2294,17 @@ godtas i båda ordningarna. #1.940 måste behålla villkoret x ≠ 2 även när 
 Se [alla granskade ID:n och kommentarer](MA3_RATIONELLA_EKVATIONER_2026-10-24.md).
 Skydd: `tools/ma3-rationella-ekvationer-2026-10-24.test.js` och browserharnessen
 med samma datum i båda repona. Inga äldre objekt ändrades i denna omgång.
+
+## Ma3 gränsvärden och okänd målenhet – 2026-10-24
+
+#1.103/1.106/1.109/1.112/1.115 hade felaktig 0/0-mall trots kontinuerliga
+linjära uttryck. Kontrollera faktisk insättning innan en förkortningsmetod
+anges. Nya #1.941–1.948 och nivåkalibrering dokumenteras i
+[granskningsloggen med samtliga ID:n](MA3_GRANSVARDEN_2026-10-24.md).
+
+Kunskapsgymmets `enhetsJamforelse` får inte släppa igenom en känd fysisk
+enhet när målenheten är ett okänt ord, exempelvis ”miljarder” eller ”kr”.
+Annars kan den efterföljande rena taljämförelsen felaktigt godta ”11 kg”.
+Skydd: `okand-malenhet-fysisk-enhet.test.js`; fem ytterligare faktiska kort
+kontrollerade enligt loggen. Befintliga ord-/svarsformat och riktiga
+enhetsomvandlingar ska fortsatt fungera.
