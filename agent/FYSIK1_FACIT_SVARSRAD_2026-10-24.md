@@ -25,6 +25,7 @@ Kapitel 9 lämnas utanför svarsradsrundorna, eftersom en annan session arbetar 
 |---|---|---:|
 | 1 | Numrerade steglistor från nivå 1-rundorna 2026-10-21/22 görs om till stycken | 60 |
 | 2 | Lösa svarsstycken blir svarsrutor, och svarsrutor utan etikett normaliseras | 887 + 302 |
+| 3 | Svarsruta i enkla numeriska facit och flervalsfacit som saknade svar | 696 |
 
 ### Runda 1
 
@@ -55,3 +56,18 @@ figurbreddstestet `svg-bredd-2026-10-21.test.js`.
   och inga andra fält ändrades.
 
 Regressionstest: `tools/fysik1-facit-svarsrad-2026-10-24.test.js`.
+
+### Runda 3
+
+- 591 numeriska facit och 105 flervalsfacit i kapitel 2–8 saknade svar och fick en svarsruta.
+- **Talet hämtas ur facit självt:** det sista visade värdet som stämmer med `rättSvar` inom
+  toleransen, i samma skrivform (decimaler och tiopotens). Facit visar alltså samma
+  avrundning i beräkningen och i svarsrutan. Enheten tas från `svarEnhet`. Grader skrivs
+  48,6°, övriga enheter med mellanslag.
+- Flervalsfacit får det rätta alternativets text.
+- Facit som redan nämner "Svar" i löptext (till exempel 7.35 och 8.79) och facit vars
+  yttersta element inte är `facit-v2` lämnades.
+- Regressionstestet kontrollerar att talet i varje svarsruta stämmer med självrättningen.
+
+Kvar efter runda 3: flerdelsuppgifter (kapitel 2–8: cirka 590) och resonemangsuppgifter
+(cirka 325) utan svarsruta.
