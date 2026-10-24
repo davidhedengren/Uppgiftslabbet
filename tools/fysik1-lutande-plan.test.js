@@ -81,11 +81,12 @@ const cases=[
  ["4.631",[m631,(((m631*g)*cos(35))+(40*sin(35)))]],
  ["4.633",[Math.sqrt(((2*50)/(g*sin(13)))),Math.sqrt((((2*g)*sin(13))*50))]],
  ["4.634",Math.sqrt(((12**2)-((2*g)*2.5)))],
- ["4.635",[asin((((19**2)/(2*40))/g)),((19**2)/((2*g)*sin(20)))]]
+ ["4.635",[asin((((19**2)/(2*40))/g)),((19**2)/((2*g)*sin(20)))]],
+ ["4.846",40],["4.847",85],["4.849",asin(1.5/3.0)],["4.850",200*sin(30)],["4.851",36],["4.852",50-20],
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
-test('Lutande plan: samtliga 72 numeriska huvuduppgifter räknas självständigt',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='lutande_plan'&&t.rättSvar!=null);assert.equal(tasks.length,72);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
+test('Lutande plan: samtliga 78 numeriska huvuduppgifter räknas självständigt',()=>{
+ const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='lutande_plan'&&t.rättSvar!=null);assert.equal(tasks.length,78);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
 });
 test('Elevkortens egna avrundade givna värden ger svar inom rättningens tolerans',()=>{
  for(const[id,v]of [['4.583',[f583,5.292/(5*g*cos(15)),down(15,.11)]],['4.586',[m586,20/(40.7*g*cos(20))]],['4.593',[30*brake(30,.3),224+30*.5]],['4.604',[.2*(100*g*cos(15)-600*sin(20)),(600*cos(20)-100*g*sin(15)-149)/100]],['4.629',[s629,1230*g*cos(25)-5960*sin(31)]]])check(id,v);
@@ -100,7 +101,9 @@ test('Startfart, avrundning och kraftbalans finns på det fristående kortet',()
  assert.doesNotMatch(q('4.491').ledtrad,/deler/);assert.doesNotMatch(q('4.590').spelDelar[1].ledtrad,/μ|mu/);
 });
 test('Facits numeriska slutsvar stämmer med de självständiga beräkningarna',()=>{
- const direct={'4.45a':/=([\d]+\{,\}[\d]+)\\,\\mathrm N/,'4.485':/Svar med tre värdesiffror: ([\d]+,[\d]+)/,'4.593b':/=([\d]+)\\,\\mathrm N/,'4.619a':/=([\d]+\{,\}[\d]+)\\,\\mathrm m/,'4.615':/Svar: ([\d]+,[\d]+) km\/h/};
+ const direct={'4.45a':/=([\d]+\{,\}[\d]+)\\,\\mathrm N/,'4.485':/Svar med tre värdesiffror: ([\d]+,[\d]+)/,'4.593b':/=([\d]+)\\,\\mathrm N/,'4.619a':/=([\d]+\{,\}[\d]+)\\,\\mathrm m/,'4.615':/Svar: ([\d]+,[\d]+) km\/h/,
+  // Nivå 1-korten 4.846-4.852 har exakta svar och visar dem med likhetstecken.
+  '4.846':/F_f=(\d+)\\ \\mathrm N/,'4.847':/F_N=(\d+)\\ \\mathrm N/,'4.849':/v=(\d+)\^\\circ/,'4.850':/=(\d+)\\ \\mathrm N/,'4.851':/F_f=(\d+)\\ \\mathrm N/,'4.852':/=(\d+)\\ \\mathrm N/};
  let checked=0;
  for(const[id,expected]of cases){const t=q(id),vs=Array.isArray(expected)?expected:[expected];
   vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,cardId=t.spelDelar?id+String.fromCharCode(97+i):id;
@@ -111,5 +114,5 @@ test('Facits numeriska slutsvar stämmer med de självständiga beräkningarna',
    assert.ok(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)),`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`);checked++;
   });
  }
- assert.equal(checked,113);
+ assert.equal(checked,119);
 });
