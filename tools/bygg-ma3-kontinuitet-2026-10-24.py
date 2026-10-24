@@ -11,8 +11,8 @@ def svg(title,body,h=310):return '<span class="fig"><svg xmlns="http://www.w3.or
 def text(x,y,t,size=18,anchor='middle'):return f'<text x="{x}" y="{y}" text-anchor="{anchor}" font-family="Arial,sans-serif" font-size="{size}" fill="#172e46">{html.escape(str(t))}</text>'
 def graph(title,xlim,ylim,segments,xticks,yticks,dots=(),xlabel='x',ylabel='y'):
  X=lambda v:65+370*(v-xlim[0])/(xlim[1]-xlim[0]);Y=lambda v:250-200*(v-ylim[0])/(ylim[1]-ylim[0]);body=''
- for v in xticks:body+=f'<path d="M{X(v)} 50V250" stroke="#d6e1ea"/>'+text(X(v),275,str(v).replace('-','−'),17)
- for v in yticks:body+=f'<path d="M65 {Y(v)}H435" stroke="#d6e1ea"/>'+text(52,Y(v)+6,str(v).replace('-','−'),17,'end')
+ for v in xticks:body+=f'<path d="M{X(v)} 50V250" stroke="#d6e1ea"/>'+text(X(v),275,str(v).replace('-','−').replace('.',','),17)
+ for v in yticks:body+=f'<path d="M65 {Y(v)}H435" stroke="#d6e1ea"/>'+text(52,Y(v)+6,str(v).replace('-','−').replace('.',','),17,'end')
  body+='<path d="M65 45V250H445" fill="none" stroke="#344c60" stroke-width="2"/>'+text(250,302,xlabel)+text(65,28,ylabel,18,'start')
  for points in segments:body+='<polyline points="'+' '.join(f'{X(x):.3f},{Y(y):.3f}' for x,y in points)+'" fill="none" stroke="#096c9a" stroke-width="3.5" stroke-linejoin="round"/>'
  for x,y,filled in dots:body+=f'<circle cx="{X(x)}" cy="{Y(y)}" r="6" fill="'+('#096c9a' if filled else '#fff')+'" stroke="#096c9a" stroke-width="2.5"/>'

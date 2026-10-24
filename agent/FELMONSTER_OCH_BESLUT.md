@@ -2274,3 +2274,14 @@ från asymptot och använder ordnade, namngivna fält för x och f(x).
 Se [alla ID:n och granskningskommentarer](MA3_KONTINUITET_2026-10-24.md).
 Skydd: `tools/ma3-kontinuitet-2026-10-24.test.js` och browserharnessen
 `ma3-kontinuitet-deriverbarhet-2026-10-24.browser.cjs` i båda repona.
+
+## Ma3: ändligt många kvoter bevisar inte en derivata – 2026-10-24
+
+#3.1191 angav tidigare fyra provvärden men drog en säker slutsats om två
+olika gränsvärden. Tabellen anger nu verkliga ensidiga gränsvärden. Återställ
+inte den gamla tabellen utan att också ändra slutsatsen till en uppskattning.
+Ett explicit polynom som motsäger det gamla beviset finns i
+[granskningsloggen](MA3_DERIVERBARHET_2026-10-24.md), med fem jämförelser.
+Nya #3.1207–3.1214 varierar kontinuitet, hörn, absolutbelopp, villkor och
+missvisande symmetriska kvoter. Skydd: `tools/ma3-deriverbarhet-2026-10-24.test.js`
+och båda apparnas `ma3-kontinuitet-deriverbarhet-2026-10-24.browser.cjs`.

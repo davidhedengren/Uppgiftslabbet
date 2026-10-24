@@ -20,11 +20,11 @@ const fs=require('fs'),path=require('path'),assert=require('node:assert/strict')
     return await väljKurs(kurs,document.querySelector('[data-kurs="'+id+'"]'));
    },id);
    assert.equal(started,true);
-   const tracks=await page.evaluate(()=>[...new Set(DB.bank.filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(120[7-9]|121[0-4]))$/.test(q.id)).flatMap(q=>q.kurs))]);
+   const tracks=await page.evaluate(()=>[...new Set(DB.bank.filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(1191|120[7-9]|121[0-4]))$/.test(q.id)).flatMap(q=>q.kurs))]);
    for(const track of tracks){
     const info=await page.evaluate(track=>{
      state.spår=track;byggTräd();
-     const tasks=variantBank().filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(120[7-9]|121[0-4]))$/.test(q.id));
+     const tasks=variantBank().filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(1191|120[7-9]|121[0-4]))$/.test(q.id));
      const checked=[];
      for(const q of tasks){
       state.omr=new Set([q.kap+':'+q.omr]);const list=urval();const position=list.findIndex(t=>t.id===q.id);
@@ -33,7 +33,7 @@ const fs=require('fs'),path=require('path'),assert=require('node:assert/strict')
      }
      return {
       track,checked,oldButton:!!document.querySelector('[data-omr$=\":np_repetition\"]'),oldText:document.querySelector('#träd').textContent.includes('Repetera inför Nationella provet'),
-      expected:DB.bank.filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(120[7-9]|121[0-4]))$/.test(q.id)&&q.kurs.includes(track)).map(q=>q.id).sort(),
+      expected:DB.bank.filter(q=>/^(1\.(92[5-9]|93[0-2])|3\.(1191|120[7-9]|121[0-4]))$/.test(q.id)&&q.kurs.includes(track)).map(q=>q.id).sort(),
       ids:tasks.map(q=>q.id).sort(),
       latex:document.querySelectorAll('#lista .katex-error').length,
       explanation:document.querySelector('.kapgrupp:last-child .np-repetition-info')?.textContent,
