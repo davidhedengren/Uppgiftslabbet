@@ -2336,3 +2336,17 @@ olikheter. Ta endast bort sådana noter efter kontroll mot den faktiska
 metoden. De två mobilfynden #3.896/#3.917 från gränsvärdesloggen är också
 åtgärdade. Se [alla ID:n och kommentarer](MA3_TALET_E_2026-10-24.md).
 Skydd: `ma3-talet-e-2026-10-24.test.js` och faktisk browserrättning.
+
+## Ma4 areabilder och verklig innehållsvariation – 2026-10-24
+
+#3.91 hade dekorativa kurvor som inte följde sin/cos. Rita från funktionerna,
+kontrollera axelskärningar och skärningspunkter och skugga endast det
+angivna intervallet. Facit √2−1 var korrekt och ska bevaras.
+#3.57/3.63/3.157/3.177/3.417 frågade tidigare efter samma grundarea som
+#3.18. De varierar nu tecknad integral/geometrisk area, absolutbelopp,
+exponentialfunktion, omvänd areafråga och två parabler. Återställ inte
+innehållsdubbletterna. Detta är separat från appens deluppgiftshantering.
+Ma1 #8.02 har en tydligare tankbild; modell och svar var redan korrekta.
+Se [felloggen 17:12](FELRAPPORTER_2026-10-24_1712.md) för alla granskade
+ID:n, tidigare åtgärder och oförändrade uppgifter. Skydd:
+`felrapporter-2026-10-24-1712.test.js` och faktiska browserfall.
