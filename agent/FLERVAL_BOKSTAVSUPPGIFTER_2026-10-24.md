@@ -32,6 +32,7 @@ blandas inte, eftersom deras ordning inte är någon ledtråd.
 | 1 | Fy2 (`uppgifter2.js`) | 75 | 14 |
 | 2 | Ma3 (`uppgiftermato1.js`) | 59 | 12 |
 | 3 | Ma4 (`uppgiftermato2.js`) och Ma5 (`uppgiftermatf1.js`) | 16 + 14 | 7 + 15 |
+| 4 | Ma1 (`uppgifterma1.js`) | 471 | 116 |
 
 Testet `tools/felrapporter-2026-10-22-1541.test.js` jämför nu kraftriktningen i 3.161–3.172
 med rätt alternativs text i stället för bokstaven.
@@ -42,3 +43,8 @@ skriptet tar nu bara bort bokstaven i sådana fall. `mato1-granskning-2026-10-18
 1.539 med rätt alternativs text.
 
 `felrapporter-2026-10-13-2127.test.js` läser bokstaven för Ma5 2.305, 2.541, 2.572 och 2.577 ur platsen i bankens alternativlista när kortet är ett flervalskort (banken behåller ursprunglig ordning; appen blandar).
+
+Rättelse i runda 4: svarsrader med formen "Svar: B – regn." eller "Svar: A: ungefär 30 miljoner"
+fick först alternativtexten före det korta svaret ("Regn.– regn."). I 45 Ma1-uppgifter är nu det
+korta svaret efter tankstrecket eller kolonet svaret ("Svar: Regn.", "Svar: Ungefär 30 miljoner").
+Regressionstestet letar efter sådana rester i alla omgjorda banker.
