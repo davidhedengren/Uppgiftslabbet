@@ -3,7 +3,7 @@ const load=f=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(
 const ren=h=>String(h||'').replace(/<svg[\s\S]*?<\/svg>/g,'').replace(/<[^>]+>/g,' ');
 
 // Se agent/FLERVAL_BOKSTAVSUPPGIFTER_2026-10-24.md.
-const KONTROLL={'uppgifter2.js':['3.145','3.161','4.305','5.301','2.301'],'uppgiftermato1.js':['1.401','1.539','3.636']};
+const KONTROLL={'uppgifter2.js':['3.145','3.161','4.305','5.301','2.301'],'uppgiftermato1.js':['1.401','1.539','3.636'],'uppgiftermato2.js':['1.410','1.401'],'uppgiftermatf1.js':['2.301','2.572']};
 test('Omgjorda bokstavsuppgifter är flervalskort utan hårdkodade alternativ',()=>{
  for(const[f,ids]of Object.entries(KONTROLL)){const b=load(f);
   for(const id of ids){const t=b.find(x=>x.id===id);

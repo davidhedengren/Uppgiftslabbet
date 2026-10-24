@@ -31,6 +31,7 @@ blandas inte, eftersom deras ordning inte är någon ledtråd.
 |---|---|---:|---:|
 | 1 | Fy2 (`uppgifter2.js`) | 75 | 14 |
 | 2 | Ma3 (`uppgiftermato1.js`) | 59 | 12 |
+| 3 | Ma4 (`uppgiftermato2.js`) och Ma5 (`uppgiftermatf1.js`) | 16 + 14 | 7 + 15 |
 
 Testet `tools/felrapporter-2026-10-22-1541.test.js` jämför nu kraftriktningen i 3.161–3.172
 med rätt alternativs text i stället för bokstaven.
@@ -39,3 +40,5 @@ Rättelse efter runda 1: när facit redan skrev ut svaret efter bokstaven ("Svar
 blev innehållet dubblerat. 2.301 och 5.324 (Fy2) samt 1.539 och 3.636 (Ma3) är rättade, och
 skriptet tar nu bara bort bokstaven i sådana fall. `mato1-granskning-2026-10-18.test.js` jämför
 1.539 med rätt alternativs text.
+
+`felrapporter-2026-10-13-2127.test.js` läser bokstaven för Ma5 2.305, 2.541, 2.572 och 2.577 ur platsen i bankens alternativlista när kortet är ett flervalskort (banken behåller ursprunglig ordning; appen blandar).
