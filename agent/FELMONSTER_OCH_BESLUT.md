@@ -2308,3 +2308,18 @@ Annars kan den efterföljande rena taljämförelsen felaktigt godta ”11 kg”.
 Skydd: `okand-malenhet-fysisk-enhet.test.js`; fem ytterligare faktiska kort
 kontrollerade enligt loggen. Befintliga ord-/svarsformat och riktiga
 enhetsomvandlingar ska fortsatt fungera.
+
+## Ma1 språk och Ma4 trigonometrisk variation – 2026-10-24
+
+Se [felloggen 11:13 med samtliga ID:n och kommentarer](FELRAPPORTER_2026-10-24_1113.md).
+Ma1 #0.607–0.612 efterfrågar ett vanligt tal utan potenser; det är en
+exakt omskrivning, inte avrundning. #0.906 frågar vilket av alternativen
+som avrundas till 6,0 och har nu klickbara, blandade alternativ. Skriv inte
+en fast alternativbokstav i facit. #0.629 använder en konkret tillverkare
+och tablettkarta i stället för ”lager”. #3.34 a skiljer procent från faktor;
+#3.80 är kalibrerad till nivå 5. #3.32 har kontextvillkoret 0 < p < 100.
+
+Ma4 #1.693–1.698 kompletterar #1.34/#1.61 med förskjutna vinklar och
+omvända kvoter. Behåll de enkla originalen. #1.676 är uppskattad träning
+utan miniräknare och ska inte ändras till numerisk vinkellösning.
+Regression: `felrapporter-2026-10-24-1113.test.js` och browserfallen.

@@ -15,7 +15,7 @@ const fs=require('fs'),path=require('path'),assert=require('node:assert/strict')
   await page.goto(process.env.REVIEW_URL||'http://localhost:8028');
   await page.waitForFunction(()=>typeof väljKurs==='function');
   await page.evaluate(ids=>window.reviewIds=ids,process.env.REVIEW_IDS.split(','));
-  for(const id of ['mato1']){
+  for(const id of [process.env.REVIEW_COURSE||'mato1']){
    const started=await page.evaluate(async id=>{
     const kurs=KURSER.find(k=>k.id===id);
     return await väljKurs(kurs,document.querySelector('[data-kurs="'+id+'"]'));
