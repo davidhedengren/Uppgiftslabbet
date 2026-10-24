@@ -5,7 +5,7 @@ const fy1=load('uppgifter.js'),fy2=load('uppgifter2.js'),matf=load('uppgiftermat
 const q=(b,id)=>b.find(x=>x.id===id),near=(a,b,t=1e-10)=>assert.ok(Math.abs(a-b)<=Math.abs(b)*t,`${a} ≠ ${b}`);
 test('Mikroampere som distraktor; varierad grundordning utan att förlora svar',()=>{
  const p=q(fy1,'8.559');assert.ok(p.alternativ.some(a=>a.txt==='4000 µA'&&!a.ratt));assert.equal(p.alternativ.find(a=>a.ratt).txt,'V');
- const counts=[0,0,0,0,0],byLength={};for(const p of fy1.filter(x=>x.omr==='multimeter')){
+ const counts=[0,0,0,0,0],byLength={};for(const p of fy1.filter(x=>x.omr==='multimeter'&&x.alternativ)){
   assert.equal(new Set(p.alternativ.map(a=>a.txt)).size,p.alternativ.length,p.id);
   if(p.alternativ.filter(a=>a.ratt).length===1){const n=p.alternativ.length,i=p.alternativ.findIndex(a=>a.ratt);counts[i]++;(byLength[n] ||= Array(n).fill(0))[i]++;}
  }

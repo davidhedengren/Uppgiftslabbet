@@ -33,8 +33,8 @@ test('Kombinationsfrågor kan besvaras fel enbart genom fel inkoppling',()=>{
  assert.match(r.alternativ.find(a=>a.ratt).txt,/400 mA; i serie/);
 });
 test('Alla 44 kort bevarar verktygsregler och blandade alternativ',()=>{
- assert.equal(all.length,44);
- for(const p of all){assert.equal(p.miniräknare,true,p.id);assert.equal(p.geogebra,false,p.id);assert.equal(p.spel,true,p.id);assert.equal(p.självrättning,true,p.id);assert.match(p.t,/<svg/);assert.equal(new Set(p.alternativ.map(a=>a.txt)).size,p.alternativ.length,p.id);}
+ assert.equal(all.length,52); // 44 + 8 avläsningskort 2026-10-24 (8.628-8.635), varav fem med talsvar
+ for(const p of all){assert.equal(p.miniräknare,true,p.id);assert.equal(p.geogebra,false,p.id);assert.equal(p.spel,true,p.id);assert.equal(p.självrättning,true,p.id);assert.match(p.t,/<svg/);if(p.alternativ)assert.equal(new Set(p.alternativ.map(a=>a.txt)).size,p.alternativ.length,p.id);}
  assert.equal(q('8.539').traningsniva,2);assert.equal(q('8.548').traningsniva,3);
  assert.ok(q('8.559').alternativ.some(a=>a.txt==='4000 µA'&&!a.ratt));assert.equal(q('8.543').alternativ.find(a=>a.ratt).txt,'Mellan A och B.');
 });
