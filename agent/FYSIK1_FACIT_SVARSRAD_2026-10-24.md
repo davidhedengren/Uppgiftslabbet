@@ -24,6 +24,7 @@ Kapitel 9 lämnas utanför svarsradsrundorna, eftersom en annan session arbetar 
 | Runda | Innehåll | Ändrade facit |
 |---|---|---:|
 | 1 | Numrerade steglistor från nivå 1-rundorna 2026-10-21/22 görs om till stycken | 60 |
+| 2 | Lösa svarsstycken blir svarsrutor, och svarsrutor utan etikett normaliseras | 887 + 302 |
 
 ### Runda 1
 
@@ -37,3 +38,20 @@ första mening, till exempel "Hastighetsändringen är arean under a-t-grafen" (
 Kända fel före och efter rundan, inte orsakade av den: fem antalskontroller i
 `fysik1-kapitel3.test.js` (områdenas antal har ändrats av en annan session) och
 figurbreddstestet `svg-bredd-2026-10-21.test.js`.
+
+### Runda 2
+
+- 887 facit hade svaret i ett löst stycke, `<p><strong>Svar:</strong> X</p>` eller
+  `<p><strong>Svar: X</strong> Y</p>`. De blev svarsrutor
+  `<p class="facit-svar"><strong>Svar:</strong> X</p>`. I flerdelsuppgifter står en
+  svarsruta efter varje del, som i de redan granskade Fy1-facit (till exempel 3.28).
+- En kommentar efter det fetstilta svaret (47 fall, till exempel "Minustecknet betyder
+  att impulsen är riktad åt vänster" i 5.32 c) flyttades till ett eget stycke direkt
+  före svarsrutan.
+- 302 facit hade svarsrutor utan fetstilt etikett: "Svar: X" (255) och "Svaret är X"
+  (145). De fick samma form som övriga. Orden "Svaret är" ersattes av "Svar:".
+- 2.62 ("Exempel på svar") och 3.172 (svar i hela meningar per del) lämnades.
+- Kontroll: all text finns kvar i varje ändrat facit, bortsett från "Svaret är" → "Svar:",
+  och inga andra fält ändrades.
+
+Regressionstest: `tools/fysik1-facit-svarsrad-2026-10-24.test.js`.
