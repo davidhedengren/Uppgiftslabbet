@@ -35,3 +35,32 @@ Området är Fy1 `vektorer` (kap 3). Det hade 53 kort, varav cirka 10 om komposa
   - svar med enheter och negativa komposanter med båda minustecknen;
   - att omvänd ordning och fel tecken underkänns;
   - grader och svar i två eller tre fält.
+
+## Omgång 2: 43 kort till (3.690–3.732)
+
+Läraren bad om fler kort i komposantdelen.
+
+- **Grafiskt:** förflyttning på 100 m per ruta, fjäderkraft snett uppåt vänster, hastighetspil som börjar mitt i rutnätet, decimal skala (1,5 N), vinkel ur rutnät (även under x-axeln), addition med motsatt riktade komposanter och hastighetsändringen Δv = v₂ − v₁.
+- **Trigonometri:**
+  - gräsklippare (vågrät komposant och hur hårt den trycker nedåt), resväska, skidlift och vattenskidor;
+  - basket, pilbåge, tennisserve nedåt, längdhopp, raket och segelflygplan;
+  - kranvajer mot lodlinjen (båda komposanterna);
+  - kurser väster om norr, söder om öster och väster om söder.
+- **Lutande plan:** rutschkana 35° (figuren skalas nu ned för branta vinklar), skateramp, lastramp, transportband och snöskoter.
+- **Baklänges och resonemang:**
+  - den okända komposanten ur storleken och den andra komposanten;
+  - vinkeln ur storleken och en komposant;
+  - kraften i ett rep ur den lodräta komposanten;
+  - kursavvikelse och lutning ur en kraftandel;
+  - vid vilken vinkel komposanterna blir lika stora;
+  - hur komposanten ändras när repet hålls brantare;
+  - komposantformen för en kraft rakt åt vänster.
+- **Addition och jämvikt:** två bogserbåtar i olika vinklar, lampa i vajer, tre förflyttningar med sydväst, en tredje kraft för jämvikt och flygplan i snedvind.
+
+Kontroll:
+
+- Validatorn för Fy1 ger inga nya fynd. Två kort fick nya tal och en formulering ändrades för att undvika dubblettfacit och lika mallar.
+- SVG-granskaren ger bara INFO-fynd.
+- Kontrollistan i kapitel 3-testet är utökad med oberoende facit, och vektordelen går igenom.
+- `fysik1-komposanter`-testet omfattar nu 3.620–3.732.
+- Självrättningen i Kunskapsgymmet testades i webbläsaren med 44 svar, och alla gav väntat resultat.
