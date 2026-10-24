@@ -55,3 +55,6 @@ Runda 5 uppdaterade felrapporter-2026-10-13-2127, felrapporter-2026-10-19-2044 (
 | 6 | Handgranskade: bokstäverna är namn i uppgiften ("Lån A", "System B", kompassuppgifterna i Fy2). Fy1 3.442, Ma1 7.185 och 3.256 omskrivna för hand | 11 + 1 + 1 + 34 + 1 | |
 
 Runda 6 uppdaterade fy2-figurer-2026-10-23, fysik1-acceleration-2026-10-21 och felrapporter-2026-10-12-0958 så att de jämför rätt alternativs text.
+| 7 | Facit förklarade alternativen med bokstäver ("A ger 76, B ger 25"). Bokstäverna byttes mot alternativets innehåll (formler som de står, text inom citattecken); 1.121 och 2.343 (Ma1) som namnuppgifter | 24 + 4 + 3 | |
+
+I runda 7 rättades också ett fel i det ursprungliga facit för Ma3 1.449: det sade "Endast D uppfyller detta" fast rätt svar är E, \(4x^3+2x^2\). Ma1 0.402 sade "I alternativens ordning blir talen A: …", vilket inte stämmer när alternativen blandas, och visar nu bara talen. `ma1-uttryck-med-parenteser.test.js` jämför 1.1150 och 1.1151 med alternativens text.

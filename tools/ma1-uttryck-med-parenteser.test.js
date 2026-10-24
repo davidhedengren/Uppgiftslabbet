@@ -59,8 +59,9 @@ test('Varje facit är lika med uttrycket i frågan och står i förenklad form',
 });
 
 test('Begrepps- och problemlösningsuppgifterna har entydiga svar',()=>{
-  assert.equal(get('1.1150').rättSvar,'C');assert.match(get('1.1150').t,/C: \\\(-2x\+6\\\)/);
-  assert.equal(get('1.1151').rättSvar,'B');assert.match(get('1.1151').t,/B: .*13-2x/);
+  // Flervalskort sedan 2026-10-24: rätt alternativ jämförs med text i stället för bokstav.
+  assert.equal(get('1.1150').alternativ.find(a=>a.ratt).txt,'\\(-2x+6\\)');
+  assert.match(get('1.1151').alternativ.find(a=>a.ratt).txt,/13-2x/);
   for(const x of [-3,0,2,5]){
     assert.equal(-4*(2*x-3),-8*x+12);
     assert.equal(4*(x+3)-3*(x-2),x+18);

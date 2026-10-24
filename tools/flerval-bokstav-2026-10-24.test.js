@@ -27,6 +27,6 @@ test('Svarsraden upprepar inte innehållet och börjar inte med skiljetecken',()
   const txt=t.alternativ.find(a=>a.ratt).txt.replace(/<[^>]+>/g,'').toLowerCase().replace(/[.\s]+$/,'');
   // "Svar: Infraljud., infraljud." är fel; "Svar: Oförändrat. Magnetfältet är oförändrat." är en förklaring.
   const p=r.replace(/<[^>]+>/g,'').toLowerCase().replace(/^\s*svar:\s*/,''),esc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  if(txt.length>3)assert.doesNotMatch(p,new RegExp('^'+esc(txt)+'[.,\\s]+'+esc(txt)),`${f} ${t.id}: dubblerat svar`);
+  if(txt.length>3)assert.doesNotMatch(p,new RegExp('^'+esc(txt)+'(?:[.,\\s]+'+esc(txt)+'[.\\s]*$|\\.,)'),`${f} ${t.id}: dubblerat svar`);
  }
 });
