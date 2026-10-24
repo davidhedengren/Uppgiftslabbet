@@ -49,7 +49,7 @@ test('Fysikfacit stämmer med omräkning',()=>{
   nara(get('fy2','5.374','stjarnornas_utveckling').rättSvar,1.4*Ms/(4/3*Math.PI*12e3**3));
   nara(get('fy2','5.375','stjarnornas_utveckling').rättSvar,2*G*10*Ms/c**2/1000);
   nara(get('fy2','5.376','stjarnornas_utveckling').rättSvar,Math.sqrt(2000)*(5778/3500)**2);
-  assert.equal(get('fy2','3.419','induktion_ledare').rättSvar,'A');
+  assert.equal(get('fy2','3.419','induktion_ledare').alternativ.find(a=>a.ratt).txt,'Uppåt i figuren'); // flervalskort sedan 2026-10-24
 });
 
 test('Matematikfacit stämmer med omräkning',()=>{

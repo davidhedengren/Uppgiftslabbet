@@ -4,7 +4,7 @@ const bank=f=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+
 const phy=bank('uppgifter.js'),mat=bank('uppgiftermatf1.js'),q=id=>phy.find(q=>q.id===id);
 test('Fullständiga beräkningsvärden och kopplingsscheman',()=>{
  assert.equal(q('3.165').rättSvar[0],9.82*2.5**2/2);assert.equal(q('3.221').rättSvar[1],7/9.82);assert.equal(q('3.222').rättSvar,10/3);
- for(const[id,answer] of [['8.382','A'],['8.383','B']]){assert.equal(q(id).rättSvar,answer);assert.equal((q(id).t.match(/<svg/g)||[]).length,3);assert.equal(q(id).svarstyp,'val');}
+ for(const[id,answer] of [['8.382','A'],['8.383','B']]){assert.equal(q(id).alternativ.find(a=>a.ratt).txt,answer);assert.equal((q(id).t.match(/<svg/g)||[]).length,3);assert.equal(q(id).svarstyp,'alternativ');} // bokstavsknappar sedan 2026-10-24
  assert.equal(mat.find(q=>q.id==='3.309').miniräknare,true);
 });
 test('Sex varierade enhetsuppgifter: beräkning, verktyg och figur',()=>{

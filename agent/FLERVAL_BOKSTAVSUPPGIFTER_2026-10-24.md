@@ -58,3 +58,6 @@ Runda 6 uppdaterade fy2-figurer-2026-10-23, fysik1-acceleration-2026-10-21 och f
 | 7 | Facit förklarade alternativen med bokstäver ("A ger 76, B ger 25"). Bokstäverna byttes mot alternativets innehåll (formler som de står, text inom citattecken); 1.121 och 2.343 (Ma1) som namnuppgifter | 24 + 4 + 3 | |
 
 I runda 7 rättades också ett fel i det ursprungliga facit för Ma3 1.449: det sade "Endast D uppfyller detta" fast rätt svar är E, \(4x^3+2x^2\). Ma1 0.402 sade "I alternativens ordning blir talen A: …", vilket inte stämmer när alternativen blandas, och visar nu bara talen. `ma1-uttryck-med-parenteser.test.js` jämför 1.1150 och 1.1151 med alternativens text.
+| 8 | Handgranskade med en specifikation per uppgift (bokstav_spec.py): alternativ i egna stycken eller efter radbrytning, "Svara A eller B" mellan två namngivna saker (blir t.ex. "Butik A"/"Butik B"), figurer med bokstäver (blir bokstavsknappar som inte blandas) och svarsrader som "**C.** För …" | 5 + 2 + 1 + 2 + 32 (+ 5 tolkade automatiskt) | |
+
+Runda 8 uppdaterade fysik1-densitet-2026-10-21, felrapporter-2026-10-21-1300 och tunna-omraden-2026-10-21.
