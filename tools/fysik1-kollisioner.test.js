@@ -101,10 +101,11 @@ const cases=[
  ["5.470",[((5 * 1.2) / (1.2 + 0.0005)), (((2 * 4.998) / 0.0005) ** 0.5)]],
  ["5.471",((((0.5 * 0.01) * (850 ** 2)) + ((0.5 * 5) * (((0.01 * 850) / 5) ** 2))) / (0.48 * 3000))],
  ["5.472",((1.9 * 50000000.0) / 197)],
+ ["5.629",2.0*3.0],["5.631",0.50*3.0+0.50*(-3.0)],["5.632",0-12],["5.633",(50*1.5)/50],["5.635",12],
 ];
 test('Kollisioner: alla numeriska uppgifter räknas från givna värden',()=>{
  const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='kollisioner'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));
- assert.equal(tasks.length,94);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
+ assert.equal(tasks.length,99);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
  for(const[id,values]of cases){const t=q(id),want=Array.isArray(values)?values:[values],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);
  want.forEach((v,i)=>{
   // Exakta halvsteg: maskinmålet är rätt avrundat grannvärde, med fullvärdet på toleransgränsen.
@@ -123,7 +124,7 @@ test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  if(m&&m[2]){const digits={'⁻':'-','⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9'};shown*=10**Number([...m[2]].map(c=>digits[c]).join(''));}
  const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
  if(!(Math.abs(shown-v)<=tol+1e-10*Math.max(1,Math.abs(v))))failures.push(`${id} del ${i}: skrivet ${shown}, beräknat ${v} ± ${tol}`);checked++;
- });}assert.equal(checked,134);assert.deepEqual(failures,[]);
+ });}assert.equal(checked,139);assert.deepEqual(failures,[]);
 });
 
 test('Delkortens avrundade givna värden och kollisionsmodeller är konsekventa',()=>{
