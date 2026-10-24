@@ -2323,3 +2323,16 @@ Ma4 #1.693–1.698 kompletterar #1.34/#1.61 med förskjutna vinklar och
 omvända kvoter. Behåll de enkla originalen. #1.676 är uppskattad träning
 utan miniräknare och ska inte ändras till numerisk vinkellösning.
 Regression: `felrapporter-2026-10-24-1113.test.js` och browserfallen.
+
+## Ma3 talet e – 2026-10-24
+
+Nya #2.1193–2.1200 varierar grafer, modeller och parametrar. #2.20 är nu
+två självständiga kort på nivå 2. #2.771 skiljer mellan en exponentialdel
+och en konstant basnivå: f′ är inte k·f om f även har en konstantterm.
+Återställ inte den gamla nästan identiska versionen av #2.752.
+
+Tangentfacit #2.06/2.07/2.11/2.15/2.19/2.20 hade ovidkommande malltext om
+olikheter. Ta endast bort sådana noter efter kontroll mot den faktiska
+metoden. De två mobilfynden #3.896/#3.917 från gränsvärdesloggen är också
+åtgärdade. Se [alla ID:n och kommentarer](MA3_TALET_E_2026-10-24.md).
+Skydd: `ma3-talet-e-2026-10-24.test.js` och faktisk browserrättning.
