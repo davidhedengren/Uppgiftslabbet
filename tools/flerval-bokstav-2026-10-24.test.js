@@ -30,3 +30,14 @@ test('Svarsraden upprepar inte innehållet och börjar inte med skiljetecken',()
   if(txt.length>3)assert.doesNotMatch(p,new RegExp('^'+esc(txt)+'(?:[.,\\s]+'+esc(txt)+'[.\\s]*$|\\.,)'),`${f} ${t.id}: dubblerat svar`);
  }
 });
+test('Ingen uppgift eller delkort har ett ensamt bokstavssvar utan riktiga alternativ',()=>{
+ // Bokstavssvar i flerdelsuppgifter där bokstaven är ett namn (abonnemang A, tabell B) är medvetet kvar;
+ // se "Medvetet kvar" i agent/FLERVAL_BOKSTAVSUPPGIFTER_2026-10-24.md.
+ const bokst=v=>typeof v==='string'&&/^\s*[A-H]\s*\.?\s*$/.test(v);
+ for(const f of ['uppgifter.js','uppgifter2.js','uppgifterma1.js','uppgifterma2.js','uppgiftermato1.js','uppgiftermato2.js','uppgiftermatf1.js']){
+  for(const t of load(f)){
+   if(bokst(t.rättSvar))assert.ok((t.alternativ||[]).length,`${f} ${t.id}`);
+   (t.spelDelar||[]).forEach((d,i)=>{if(bokst(d.rättSvar))assert.ok((d.alternativ||[]).length,`${f} ${t.id} del ${i}`);});
+  }
+ }
+});
