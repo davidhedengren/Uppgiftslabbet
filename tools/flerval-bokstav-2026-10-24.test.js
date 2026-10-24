@@ -3,7 +3,7 @@ const load=f=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(
 const ren=h=>String(h||'').replace(/<svg[\s\S]*?<\/svg>/g,'').replace(/<[^>]+>/g,' ');
 
 // Se agent/FLERVAL_BOKSTAVSUPPGIFTER_2026-10-24.md.
-const KONTROLL={'uppgifter2.js':['3.145','3.161','4.305','5.301']};
+const KONTROLL={'uppgifter2.js':['3.145','3.161','4.305','5.301','2.301'],'uppgiftermato1.js':['1.401','1.539','3.636']};
 test('Omgjorda bokstavsuppgifter är flervalskort utan hårdkodade alternativ',()=>{
  for(const[f,ids]of Object.entries(KONTROLL)){const b=load(f);
   for(const id of ids){const t=b.find(x=>x.id===id);
@@ -19,4 +19,14 @@ test('Inga kvarvarande bokstavssvar med alternativ i texten i omgjorda banker, u
  const b=load('uppgifter2.js');
  const kvar=b.filter(t=>typeof t.rättSvar==='string'&&/^[A-H]$/.test(t.rättSvar.trim())&&/<p>\s*(?:<strong>)?A(?:<\/strong>)?\s*[.:)]?\s/.test(t.t));
  assert.ok(kvar.length<=14,kvar.map(t=>t.id).join(' '));
+});
+test('Svarsraden upprepar inte innehållet och börjar inte med skiljetecken',()=>{
+ for(const f of Object.keys(KONTROLL))for(const t of load(f).filter(t=>t.svarstyp==='alternativ'&&/facit-svar/.test(t.s||''))){
+  const r=(t.s.match(/<p class="facit-svar">([\s\S]*?)<\/p>/)||[])[1]||'';
+  assert.doesNotMatch(r,/Svar:\s*(?:<\/strong>)?\s*[,.;:]|\.\.|\.,/,`${f} ${t.id}`);
+  const txt=t.alternativ.find(a=>a.ratt).txt.replace(/<[^>]+>/g,'').toLowerCase().replace(/[.\s]+$/,'');
+  // "Svar: Infraljud., infraljud." är fel; "Svar: Oförändrat. Magnetfältet är oförändrat." är en förklaring.
+  const p=r.replace(/<[^>]+>/g,'').toLowerCase().replace(/^\s*svar:\s*/,''),esc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  if(txt.length>3)assert.doesNotMatch(p,new RegExp('^'+esc(txt)+'[.,\\s]+'+esc(txt)),`${f} ${t.id}: dubblerat svar`);
+ }
 });

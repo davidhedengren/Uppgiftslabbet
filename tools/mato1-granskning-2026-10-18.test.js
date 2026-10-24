@@ -3,7 +3,8 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato1.js','utf8'),c);const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1)),q=id=>bank.find(q=>q.id===id);
 test('Definitionsvillkor och uttryck kräver separata svar',()=>{
  for(const [id,bad] of [['1.43',[1,-4]],['1.48',[-1,2]],['1.53',[0,3]]]){assert.deepEqual(q(id).rättSvar[1],bad);assert.equal(q(id).svarsstruktur,'ordnad');}
- const a=q('1.539');assert.equal(a.rättSvar,'C');assert.match(a.s,/inte definierad/);
+ const a=q('1.539');assert.equal(a.alternativ.find(x=>x.ratt).txt,'Uttrycket är inte definierat.'); // flervalskort sedan 2026-10-24
+ assert.match(a.s,/inte definierad/);
  assert.equal(q('1.45').svarFormat,'intervall');assert.equal(q('1.45').rättSvar,'x<1 eller x>5');
 });
 test('Gränstider och kontinuitet kontrolleras matematiskt',()=>{
