@@ -96,9 +96,9 @@ fysiklösningar utan generiska numrerade steglistor.
 Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
 berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.
 
-## Långsiktigt mål: många och varierade uppgifter på nivå 1
+## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
-Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1**. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1 och som undervisas nu.
+Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1 och 2 tillsammans** (preciserat 2026-10-25). Nivå 3 ska också fyllas på, så att det finns varierad träning även där. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1–2 (eller nivå 3) och som undervisas nu. Fyll inte bara på nivå 1.
 
 Variation betyder mer än nya tal:
 
