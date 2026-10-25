@@ -2645,3 +2645,17 @@ Alla 34 facit är omskrivna. Problemlösningsområdet behåller löpande facit
 Gäller från och med nu: varje nytt eller omskrivet facit har en rubrik per steg eller
 stycke, och varje delkort har egen ledtråd och eget svar.
 Skydd: `tools/ma2-facit-rubriker-2026-10-25.test.js`.
+
+## Ma2 kap 3 etapp 2: randvinklar, 2026-10-25
+
+**Figurer:**
+- Randvinkelfigurer ritas med verkliga gradlägen på cirkeln, och varje markerad vinkel mäts mot sitt värde.
+- Etiketter som måste flyttas långt från spetsen blir tvetydiga och kan se ut att höra till grannhörnet. Välj då ett annat läge, eller ge uttrycket i texten och markera vinkeln med bara en båge.
+- En korda genom sektorn vid medelpunkten, och en radie inne i en distraktorvinkel, gör figuren svårläst.
+
+**Delkort:** delkort ska vara oberoende. b får inte behöva a:s svar, eftersom b-facit då visar a:s svar (3.42).
+
+**Kontroll:** jämför nya svar med andra kort i området. 3.331 krockade först med 3.2032.
+
+Se MA2_KAP3_REVISION_2026-10-25.md, etapp 2.
+Skydd: `ma2-kap3-randvinklar-2026-10-25.test.js`.

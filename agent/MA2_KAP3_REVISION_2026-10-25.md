@@ -59,3 +59,39 @@
 
 - **Kapitlet:** genomgång av alla övriga figurer i kapitel 3 (omkring 540), med överlappande vinkelmarkeringar och etiketter, och variation i texter med nästan identiska mallar. Exempel är ”Bestäm vinklarna x och y.” på 13 randvinkelkort och ”Trianglarna är likformiga. Bestäm x.” på 6 kort.
 - **Fler varianter:** av exemplen i kapitel 4 (standardavvikelse ur stapeldiagram, frekvenstabell med percentil) och kapitel 1–2 (faktorisering, symmetrilinje, raket, hage, vattenspridare, skärning, parameter). Kapitel 1–2 ska samordnas med den andra sessionen.
+
+## Etapp 2: randvinklar och medelpunktsvinklar (`randvinkel_medelpunkt`)
+
+**Utgångsläge**
+- Serien 3.363–3.382 (20 kort) hade nästan samma figur: spetsen överst och två randvinklar från sidorna. 13 av korten hade dessutom samma text, ”Bestäm vinklarna x och y.”, och värdena fanns bara i figuren.
+- Mallkorten 3.03, 3.42 och 3.132 var identiska i text och figur.
+- 3.17, 3.157, 3.293 och 3.331 var nästan likadana. 3.331 hade samma tal som 3.293.
+
+**Ändrat (33 kort)**
+- **Figurer:**
+  - Alla figurer är omritade med en egen cirkelmodul (`cirk`). Punkterna placeras med gradtal på cirkeln, och varje markerad vinkel mäts och jämförs med sitt värde innan figuren skapas.
+  - Lägena varieras. Fria punkter söks fram så att:
+    - inga etiketter korsar linjer eller överlappar varandra;
+    - inga kordor går genom vinkelsektorn vid medelpunkten;
+    - inga sträckor löper längs en radie;
+    - punkterna ligger isär;
+    - vinkelbenen inte är för korta.
+  - Givna vinklar är blå, okända orange och distraktorer grå.
+- **Texter:** formerna varieras:
+  - sammanhang: fotografer vid en damm, park med fontän, hus runt en sjö, lampor på en ring, karusell, rund skiva;
+  - felresonemang att kommentera: Lina tror att vinkeln växer närmare kordan, Kim halverar i stället för att dubbla;
+  - distraktorer där alla uppgifter inte behövs (3.373, 3.374, 3.378);
+  - inskriven fyrhörning med diagonaler;
+  - Thales med tre punkter (3.361).
+- **Facit:** varje steg har en rubrik, enligt Ma1 #1.116.
+- **3.42:** delkorten var beroende av varandra (b behövde a:s svar). Nu frågar a efter medelpunktsvinkeln (124°) och b efter en annan randvinkel (62°). Kortet räknas som E 2/0/0.
+- **3.331:** var en dubblett av 3.293 och har nu 154° och svaret 77°. 76° krockade med 3.2032.
+- **Algebrakorten 3.376 och 3.377:** uttrycken för de smala randvinklarna står i texten och inte i figuren, eftersom långa etiketter inte får plats nära spetsen.
+- **Endast ny figur:** 3.2029, 3.2134 och 3.2137. Där behålls text och facit.
+
+**Kontroll**
+- **Validator:** 0 fynd för de 33 korten.
+- **Bågarna:** de har rätt storlek och sitter på vinkelbenen. Testet mäter dem ur SVG-koordinaterna.
+- **Självrättning i Kunskapsgymmet:** 41 fall med rätt och fel svar, inklusive flerdelskort del för del, och alla ger väntat resultat.
+- **Mobilvy:** kontrollerad för 3.378.
+- **Skydd:** `tools/ma2-kap3-randvinklar-2026-10-25.test.js`.
