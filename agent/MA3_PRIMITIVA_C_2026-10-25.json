@@ -1,0 +1,110 @@
+{
+  "3.1215": {
+    "C-motivering": "Kombinerar kubutveckling med villkoret att två funktioner har samma derivata.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "a = 3 och b = −1."
+  },
+  "3.1216": {
+    "C-motivering": "Skiljer kända värden vid olika punkter från den konstanta skillnaden mellan två primitiva funktioner.",
+    "figur": "Figur eller tabell förtydligar den givna informationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "F(3)−G(3) = −4."
+  },
+  "3.1217": {
+    "C-motivering": "Algebraisk mängdträning med kvadrering, division och en negativ exponent.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(F(x)=x^3/3-2x-1/x+C\\)."
+  },
+  "3.1218": {
+    "C-motivering": "Bearbetar en kvadrat över en rot och hanterar tre olika bråkexponenter.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(F(x)=\\frac25x^{5/2}+\\frac43x^{3/2}+2\\sqrt{x}+C\\)."
+  },
+  "3.1219": {
+    "C-motivering": "Återskapar två koefficienter och skiljer en term med negativ exponent från integrationskonstanten.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "a = 2 och b = 2."
+  },
+  "3.1220": {
+    "C-motivering": "Kombinerar kvadreringsregel, exponentiallag och korrekt kedjefaktor.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(F(x)=e^{2x}/2-4e^x+4x+C\\)."
+  },
+  "3.1221": {
+    "C-motivering": "Tränar en produkt av parenteser följd av division och integration med teckenkontroll.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(F(x)=2x^3/3-x+3/x+C\\)."
+  },
+  "3.1222": {
+    "C-motivering": "Prövar om en förskjuten kub beskriver rätt familj och bestämmer två samverkande parametrar.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "a = 1 och b = −1."
+  },
+  "3.1223": {
+    "C-motivering": "Kopplar primitiv funktion till medellutning och skiljer f:s graf från F:s.",
+    "figur": "Figur eller tabell förtydligar den givna informationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(13/6\\)."
+  },
+  "3.1224": {
+    "C-motivering": "Kombinerar primitiv funktion, substitution i ett uttryck och ny derivering; ingen kedjeregel krävs.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "G′(1) = 48."
+  },
+  "3.1225": {
+    "C-motivering": "Skiljer rätt derivata från att verkligen beskriva hela familjen av primitiva funktioner.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Familjer av uttryck och konstantens betydelse prövas utan räknare.",
+    "kommentar": "x²+2C beskriver hela familjen."
+  },
+  "3.1226": {
+    "C-motivering": "Använder konstantbegreppet på två skilda intervall och undviker ett felaktigt krav vid den uteslutna punkten.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Familjer av uttryck och konstantens betydelse prövas utan räknare.",
+    "kommentar": "Båda är primitiva funktioner på vart och ett av intervallen x < 0 och x > 0."
+  },
+  "3.1227": {
+    "C-motivering": "Introducerar en hjälpfunktion och kopplar ett villkor på två funktioner till dess konstant.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "F(3)−G(3) = 8."
+  },
+  "3.1228": {
+    "C-motivering": "Känner igen likvärdiga familjer trots en dold konstant efter utveckling.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Familjer av uttryck och konstantens betydelse prövas utan räknare.",
+    "kommentar": "Båda är korrekta och beskriver samma familj."
+  },
+  "3.1229": {
+    "C-motivering": "Algebraisk mängdträning där rottermer först måste multipliceras och slås ihop.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(F(x)=\\frac25x^{5/2}+\\frac23x^{3/2}-4\\sqrt{x}+C\\)."
+  },
+  "3.1230": {
+    "C-motivering": "Bestämmer en parameter genom hur en hel familj förändras när argumentet fördubblas.",
+    "figur": "Symbolisk bearbetning är innehållet; en extra bild skulle inte hjälpa.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "k = 3."
+  },
+  "3.1231": {
+    "C-motivering": "Skiljer derivatagraf från primitiv funktion och visar att en höjdskillnad inte kräver känd konstant.",
+    "figur": "Figur eller tabell förtydligar den givna informationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(4/3\\) längdenheter i höjdled."
+  },
+  "3.1232": {
+    "C-motivering": "Kombinerar primitiv funktion, teckenstudium och extremvärden; konstanten elimineras.",
+    "figur": "Figur eller tabell förtydligar den givna informationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "Skillnaden är 9."
+  }
+}

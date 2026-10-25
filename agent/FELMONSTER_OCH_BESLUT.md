@@ -2487,3 +2487,19 @@ och browserharnessen `ma3-c-2026-10-25.browser.cjs` med omgångens fallfil.
 Användaren vill uttryckligen behålla mängdträning, även olika funktioner att derivera. Bedöm nivån individuellt: rutin är inte automatiskt E-nivå. #2.212 och #2.250 behåller C3; enbart den kortare #2.217 sänks till nivå 2. 20 nya varierade C-kort #2.1221–2.1240 kompletterar dem.
 
 Långa mellanrader med alla multiplikationer kan bli bredare än mobilens facit trots att slutsvaret ryms. I #2.02 står de enskilda termernas derivator nu i brytbar löptext. Bevara matematiken och kontrollera minst fem liknande fall i faktisk mobilvy. Se [alla granskade ID:n, ändringar och kommentarer](MA3_POTENS_C_2026-10-25.md). Skydd: `ma3-potens-c-2026-10-25.test.js` och omgångens browserfall.
+
+
+## Ma3 primitiva: algebraisk träning och olika familjer – 2026-10-25
+
+18 nya C-kort #3.1215–3.1232 ger 20 spelbara uppgifter i `primitiva`.
+Behåll mängdträningen i #3.236/#3.284. Alla primitiva funktioner kräver
+fri konstant; vanlig uttrycksrättning är fel för dessa familjer. Konstanten
+kan döljas av parentesutveckling eller heta K/2K. På skilda intervall kan
+konstanterna vara olika (#3.1226); vid grafiska frågor måste det framgå
+om grafen visar f eller F. De nya figurerna visar f.
+
+Två äldre mobilfacit #3.16 c och #3.284 har delats i kortare rader utan
+att ändra svar, format eller tidigare pedagogiska förklaringar. Fem
+liknande äldre uppgifter har följdkontrollerats. Se [alla granskade ID:n,
+kommentarer och verifiering](MA3_PRIMITIVA_C_2026-10-25.md). Skydd:
+`ma3-primitiva-c-2026-10-25.test.js` och motsvarande browserfall.
