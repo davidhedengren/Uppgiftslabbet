@@ -1,0 +1,422 @@
+[
+  {
+    "id": "4.800",
+    "index": 0,
+    "reason": "Lika stora motriktade krafter på samma verkningslinje; N från kontaktytan, Fg från tyngdpunkten."
+  },
+  {
+    "id": "4.810",
+    "index": 0,
+    "reason": "Kontaktkrafter vid tassarna; deras summa balanserar tyngdkraften utan vridmoment."
+  },
+  {
+    "id": "4.814",
+    "index": 0,
+    "reason": "Pil 2 från kontaktytan och pil 1 från tyngdpunkten, lika långa i vila."
+  },
+  {
+    "id": "4.223",
+    "index": 1,
+    "reason": "Friläggning i facit: jämvikt utan ett oavsiktligt kraftpar."
+  },
+  {
+    "id": "4.98",
+    "index": 0,
+    "reason": "Handkraft från lådans ovansida; N = mg + 40 N och gemensam lodrät verkningslinje."
+  },
+  {
+    "id": "4.6",
+    "index": 0,
+    "reason": "Momentarmarna har förhållandet 2:1. Kraftpilen börjar på stången."
+  },
+  {
+    "id": "4.7",
+    "index": 0,
+    "reason": "Handkraftspilar från handtagen. Momentarmarna mäts vinkelrätt mot krafterna och har förhållandet 4:1."
+  },
+  {
+    "id": "4.10",
+    "index": 0,
+    "reason": "Kraften börjar vid handtaget; avståndet mäts till samma angreppspunkt."
+  },
+  {
+    "id": "4.870",
+    "index": 0,
+    "reason": "D börjar på dörren och är lika lång som A–C. B ligger halvvägs mellan gångjärnet och C, som återkopplingen anger."
+  },
+  {
+    "id": "4.872",
+    "index": 0,
+    "reason": "Pilarna börjar på brädan och längdförhållandet är 3:4. Momentarmarnas geometri är förenlig med jämvikt."
+  },
+  {
+    "id": "4.873",
+    "index": 0,
+    "reason": "Spettet ligger under stenen; kraftpilen börjar på spettet och momentarmarna visas horisontellt."
+  },
+  {
+    "id": "4.876",
+    "index": 0,
+    "reason": "Stödkrafterna utgår från plankans kontaktpunkter, inte från fria punkter under stöden."
+  },
+  {
+    "id": "4.66",
+    "index": 0,
+    "reason": "Tyngdkraft från lampans centrum, inte nederkanten."
+  },
+  {
+    "id": "4.194",
+    "index": 0,
+    "reason": "Handkraft från spettets ände, nedåt."
+  },
+  {
+    "id": "4.79",
+    "index": 0,
+    "reason": "Vindkraft från skyltens yta och tyngdkraft från markerad tyngdpunkt."
+  },
+  {
+    "id": "4.257",
+    "index": 1,
+    "reason": "Normalkraft från bollens faktiska kontaktpunkt; samma verkningslinje och längd som tyngdkraften."
+  },
+  {
+    "id": "4.856",
+    "index": 0,
+    "reason": "Handkraften börjar på klossens högra sida."
+  },
+  {
+    "id": "4.859",
+    "index": 0,
+    "reason": "Tryckkraften börjar på klossen och pekar in mot fjädern."
+  },
+  {
+    "id": "4.840",
+    "index": 0,
+    "reason": "Tyngdkraft från lådans centrum, inte från golvet."
+  },
+  {
+    "id": "4.201",
+    "index": 0,
+    "reason": "Handkraft från kundvagnens handtag."
+  },
+  {
+    "id": "4.206",
+    "index": 0,
+    "reason": "Stödkrafter från räcket vid båda händerna, inte bredvid armarna."
+  },
+  {
+    "id": "4.861",
+    "index": 0,
+    "reason": "Båda kontaktkrafterna angriper vid golvet; längdförhållandet är 60:12. Normalkraftens läge balanserar friktionens vridning."
+  },
+  {
+    "id": "4.250",
+    "index": 0,
+    "reason": "Kraften börjar på nyckeln. Måttlinjen går från rotationsaxeln till kraftens verkningslinje."
+  },
+  {
+    "id": "4.219",
+    "index": 0,
+    "reason": "Massor visas vid lasten och förväxlas inte med kraftpilar märkta i kg."
+  },
+  {
+    "id": "4.195",
+    "index": 0,
+    "reason": "Avstånden från tornets axel har rätt förhållande 6:15; måtten avser lastens och motviktens lodlinjer."
+  },
+  {
+    "id": "4.11",
+    "index": 0,
+    "reason": "Tyngdpunkten ligger inne i lasten och avstånden 0,50/1,4 m har rätt proportioner."
+  },
+  {
+    "id": "4.253",
+    "index": 0,
+    "reason": "Plankans inre del och överhäng är ritade i förhållandet 4:1."
+  },
+  {
+    "id": "4.94",
+    "index": 0,
+    "reason": "Stödkrafterna angriper mitt i respektive kontaktyta och ligger i samma lodlinje."
+  },
+  {
+    "id": "4.133",
+    "index": 1,
+    "reason": "Friläggning av den undre lådan: korrekt kontakt, tyngdpunkt och kraftbalans utan oavsiktligt vridmoment."
+  },
+  {
+    "id": "4.1",
+    "index": 1,
+    "reason": "Krafter på datorn får en gemensam lodlinje. Mobilens kontaktkraft börjar på ovansidan, bordets på undersidan."
+  },
+  {
+    "id": "4.2",
+    "index": 0,
+    "reason": "Alla fyra kraftpilar börjar på lådan. Samma längdskala för 25, 8, 12 och 15 N."
+  },
+  {
+    "id": "4.31",
+    "index": 0,
+    "reason": "Båda pilarna angriper på lådan och längderna står i förhållandet 3:1."
+  },
+  {
+    "id": "4.88",
+    "index": 0,
+    "reason": "Tryckkraft från den vänstra klossens yta, inte en fristående pil bredvid den."
+  },
+  {
+    "id": "4.237",
+    "index": 0,
+    "reason": "Handkrafterna angriper i två grepp och tyngdkraften i stångens tyngdpunkt. Summan av handkrafterna är större än tyngdkraften vid uppåtriktad acceleration."
+  },
+  {
+    "id": "4.144",
+    "index": 1,
+    "reason": "Normalkraft vinkelrätt mot planet och friktion parallellt med planet från samma kontaktresultant. Kraft- och momentjämvikt stämmer."
+  },
+  {
+    "id": "4.222",
+    "index": 1,
+    "reason": "Normalkraft vinkelrätt mot planet och friktion parallellt med planet från samma kontaktresultant. Kraft- och momentjämvikt stämmer."
+  },
+  {
+    "id": "4.200",
+    "index": 1,
+    "reason": "Normalkraft från kontakten mellan böckerna och tyngdkraft från övre bokens centrum på samma lodlinje."
+  },
+  {
+    "id": "4.44",
+    "index": 0,
+    "reason": "Dragkraften ritas från viktens fäste. Den tidigare pilen visade i stället en kraft på dynamometern."
+  },
+  {
+    "id": "4.53",
+    "index": 0,
+    "reason": "Motorkraft från munstycket, tyngdkraft från tyngdpunkten; kraftskala 45:5,892."
+  },
+  {
+    "id": "4.277",
+    "index": 0,
+    "reason": "Motorkraften börjar vid raketens munstycke i stället för i luften bredvid."
+  },
+  {
+    "id": "4.55",
+    "index": 0,
+    "reason": "N angriper i golvkontakten, tyngden i centrum och dragkraften på lådans sida."
+  },
+  {
+    "id": "4.93",
+    "index": 0,
+    "reason": "Motorkraften börjar vid motorns munstycke; den tidigare pilen började framför sonden."
+  },
+  {
+    "id": "4.110",
+    "index": 0,
+    "reason": "Loket framför vagnarna i färdriktningen. Drivkraft från hjul–räls; koppel 1 ligger närmast loket."
+  },
+  {
+    "id": "4.175",
+    "index": 0,
+    "reason": "Alla pilar börjar vid kroppen, utan glapp. Pilarnas längder följer kraftbeloppen."
+  },
+  {
+    "id": "4.92",
+    "index": 0,
+    "reason": "Kraft–motkraftsparet börjar i händernas gemensamma kontakt, på olika personer."
+  },
+  {
+    "id": "4.834",
+    "index": 0,
+    "reason": "Kim visas som person och pilen börjar vid handens kontakt med lådan."
+  },
+  {
+    "id": "4.754",
+    "index": 0,
+    "reason": "Fjädern är synlig och hoptryckt. Pilar från fästena på respektive vagn, inte svävande ovanför."
+  },
+  {
+    "id": "4.755",
+    "index": 0,
+    "reason": "Fjädern är synlig och hoptryckt. Pilar från fästena på respektive vagn, inte svävande ovanför."
+  },
+  {
+    "id": "4.756",
+    "index": 0,
+    "reason": "Fjädern är synlig och hoptryckt. Pilar från fästena på respektive vagn, inte svävande ovanför."
+  },
+  {
+    "id": "4.757",
+    "index": 0,
+    "reason": "Fjädern är synlig och hoptryckt. Pilar från fästena på respektive vagn, inte svävande ovanför."
+  },
+  {
+    "id": "4.179",
+    "index": 0,
+    "reason": "Kontaktkrafterna utgår från golvet; deras moment balanserar varandra vid konstant fart."
+  },
+  {
+    "id": "4.264",
+    "index": 1,
+    "reason": "Friläggningen visar kontaktkrafter i rätt yta och förenlig kraft- och momentjämvikt."
+  },
+  {
+    "id": "4.146",
+    "index": 1,
+    "reason": "N och friktion från väggkontakten, handkraft från motsatt sida och mg från centrum. Inget oavsiktligt vridmoment."
+  },
+  {
+    "id": "4.262",
+    "index": 1,
+    "reason": "N och friktion från väggkontakten, handkraft från motsatt sida och mg från centrum. Inget oavsiktligt vridmoment."
+  },
+  {
+    "id": "4.199",
+    "index": 1,
+    "reason": "Stödkrafter vid båda fötterna, tyngdkraft mitt emellan. Totala N överstiger mg utan oavsiktlig rotation."
+  },
+  {
+    "id": "4.145",
+    "index": 1,
+    "reason": "Lyftkraft i deplacementets centrum och mg i båtens markerade tyngdpunkt. Gemensam lodlinje i vila."
+  },
+  {
+    "id": "4.261",
+    "index": 1,
+    "reason": "Den samlade kontaktkraften ritas vid greppet om grenen, på samma lodlinje som tyngdkraften."
+  },
+  {
+    "id": "4.171",
+    "index": 0,
+    "reason": "Takets kraft från ballongens översta kontaktpunkt. Lyftkraft och tyngd från centrum, alla lodräta och i balans."
+  },
+  {
+    "id": "4.260",
+    "index": 0,
+    "reason": "Övre fästet flyttat så att de tre kraftlinjerna kan mötas; 35° från lodlinjen ritas exakt."
+  },
+  {
+    "id": "4.260",
+    "index": 1,
+    "reason": "Båda snörkrafterna från sina fästen och mg från tyngdpunkten. Kraftsumma och momentsumma är noll."
+  },
+  {
+    "id": "4.288",
+    "index": 0,
+    "reason": "Massor visas som laster, inte kraftpilar med kg. Vågräta momentarmar i rätt proportion."
+  },
+  {
+    "id": "4.254",
+    "index": 0,
+    "reason": "Tyngdkraft från plankans centrum, inte dess underkant."
+  },
+  {
+    "id": "4.846",
+    "index": 0,
+    "reason": "Friktion från kontaktytan. Tyngdkomponenten särskiljs med streckad pil och förklaring."
+  },
+  {
+    "id": "4.847",
+    "index": 0,
+    "reason": "N från kontaktytan, tyngdens normalkomponent från centrum; komponenten märks streckad."
+  },
+  {
+    "id": "4.851",
+    "index": 0,
+    "reason": "Friktion från kontaktytan; den streckade pilen är tyngdens komponent, inte en extra kraft."
+  },
+  {
+    "id": "4.852",
+    "index": 0,
+    "reason": "Friktion från kontaktytan; 50 N-komponenten och 20 N-friktionen har korrekt längdförhållande."
+  },
+  {
+    "id": "4.867",
+    "index": 0,
+    "reason": "Friktion i hjulens vägkontakter. Det givna beloppet är uttryckligen den sammanlagda friktionen."
+  },
+  {
+    "id": "4.164",
+    "index": 0,
+    "reason": "Dragkraften börjar i pulkans fäste, riktad vågrätt."
+  },
+  {
+    "id": "4.151",
+    "index": 0,
+    "reason": "Fjäderkraft från vagnens fäste; rullmotståndets resultanter i hjulkontakterna. Fördelningen mellan hjulen är schematisk."
+  },
+  {
+    "id": "4.167",
+    "index": 0,
+    "reason": "Kraften verkar på lådan vid fjäderfästet; friktionen vid golvet. Synlig fjäder i kraftmätaren."
+  },
+  {
+    "id": "4.298",
+    "index": 0,
+    "reason": "Tyngdkraft från en markerad gemensam tyngdpunkt, inte under korgen. Lyftkraft från ballongvolymens centrum."
+  },
+  {
+    "id": "4.302",
+    "index": 0,
+    "reason": "Lastens och kärrans tyngdkrafter visas var för sig vid rätt avstånd. Handkraften börjar på handtaget."
+  },
+  {
+    "id": "4.132",
+    "index": 1,
+    "reason": "Normalkraft och liten friktionskraft från skidans kontaktresultant. Tyngdkraften från markerad tyngdpunkt; ingen ofrivillig rotation."
+  },
+  {
+    "id": "4.51",
+    "index": 0,
+    "reason": "Momentarmar och tyngdpunkt ritade i proportion 0,50:2,0 m."
+  },
+  {
+    "id": "4.51",
+    "index": 1,
+    "reason": "Den alternativa motviktsplaceringen 0,80 m ritas längre från axeln, med samma skala."
+  },
+  {
+    "id": "4.123",
+    "index": 1,
+    "reason": "Tyngd och normalkraft lika stora. Friktion åt höger från kontaktytan; normalkraftens läge ger noll vridmoment."
+  },
+  {
+    "id": "4.196",
+    "index": 1,
+    "reason": "Tyngd och normalkraft lika stora. Friktion åt höger från kontaktytan; normalkraftens läge ger noll vridmoment."
+  },
+  {
+    "id": "4.221",
+    "index": 1,
+    "reason": "Tyngd och normalkraft lika stora. Friktion åt höger från kontaktytan; normalkraftens läge ger noll vridmoment."
+  },
+  {
+    "id": "4.137",
+    "index": 1,
+    "reason": "Normalkrafter vid båda hjulkontakterna. Drivkraft vid bakdäcket, motstånd på bilen och mg i tyngdpunkten; jämvikt inklusive moment."
+  },
+  {
+    "id": "4.266",
+    "index": 1,
+    "reason": "Normalkrafter vid hjulen med större stöd fram vid bromsning. Bromskraft från däckkontakten, luftkraft på karossen."
+  },
+  {
+    "id": "4.100",
+    "index": 0,
+    "reason": "N från golvet på förenlig verkningslinje. Figuren märks som ofullständig friläggning, så mg och friktion inte verkar saknas av misstag."
+  },
+  {
+    "id": "4.849",
+    "index": 0,
+    "reason": "Rampen ritas med längdförhållandet 3,0:1,5 och en vinkel som stämmer med givna mått."
+  },
+  {
+    "id": "4.111",
+    "index": 0,
+    "reason": "Ny SVG ersätter rasterbilden: två lodräta bärande vajerdelar, korrekt vajerdragning och handkraft från handtaget."
+  },
+  {
+    "id": "4.258",
+    "index": 1,
+    "reason": "Snörkraft från fästet i exakt 30°. N är mindre än mg; kontaktresultantens läge stämmer med momentjämvikt."
+  }
+]

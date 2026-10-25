@@ -2374,3 +2374,19 @@ bestämda lösningar `ekvation`/`uttryck`. Resonansansatser läggs inte till
 (FP73/FP84). Avsvalning och blandning hör till Förändringsmodeller. GeoGebra
 nekas eftersom CAS löser ekvationerna. Skydd: `ma5-diffekv-2026-10-24.test.js`
 och browserrättning av alla 61 kort.
+
+## Fy1: kraftpilarnas angreppspunkter och momentjämvikt – 2026-10-25
+
+Se [bildgranskningen av hela kapitel 4](FY1_FIGURER_2026-10-24.md), med alla
+ID:n och 84 bildändringar. Tyngdkraftens resultant utgår från tyngdpunkten;
+kontaktkrafter från rätt kontaktyta på rätt kropp. Kraft–motkraft verkar på
+olika kroppar. Flytta inte pilar åt sidan bara för att skilja dem visuellt:
+lika stora motriktade krafter på olika verkningslinjer ger ett kraftpar.
+Vid friktion kan normalkraftens resultant behöva vara förskjuten för att
+momentet ska stämma. Kontrollera både kraftsumma och moment kring tyngdpunkten.
+
+Tyngdkomponenter i 4.846/847/851/852 är streckade och förklarade. 4.111 har
+två lodräta bärande vajerdelar för sin 2:1-modell. 4.110 visar loket framför
+vagnarna i färdriktningen. 4.244 är däremot uttryckligen ej skalenlig och
+framåtriktningen är vänster; återinför inte ett felaktigt högerkrav där.
+Skydd: `fy1-forcefigures-2026-10-24.test.js` och faktisk browserkontroll.

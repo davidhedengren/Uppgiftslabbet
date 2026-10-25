@@ -1,0 +1,9729 @@
+[
+  {
+    "id": "4.1",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.2",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.3",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.4",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.5",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.6",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.7",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.8",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.323",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.9",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.346",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.347",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.10",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.11",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.12",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.13",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.14",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.15",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.16",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.17",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.324",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.18",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.19",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.325",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.20",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.326",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.21",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.348",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.22",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.350",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.351",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.23",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.354",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.24",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.356",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.357",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.26",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.387",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.27",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.28",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.29",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.30",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.388",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.31",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.32",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.33",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.34",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.35",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.447",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.36",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.37",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.362",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.38",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.363",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.364",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.39",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.365",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.367",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.41",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.327",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.42",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.328",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.43",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.44",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.45",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.46",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.47",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.389",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.49",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.451",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.50",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.51",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.52",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.53",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.54",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.55",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.56",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.57",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.58",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.59",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.390",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.61",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.62",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.63",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.329",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.64",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.65",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.66",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.67",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.68",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.69",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.70",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.71",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.72",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.73",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.74",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.368",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.369",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.75",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.76",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.0.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.1.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.77",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.78",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.79",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.82",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.83",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.84",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.85",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t",
+          "spelDelar.4.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.86",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.87",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.88",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.89",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.90",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.91",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.92",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.93",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.94",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.448",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.95",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.96",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.97",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.98",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.99",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.100",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.101",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.102",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.103",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.104",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.391",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.105",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.106",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.107",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.108",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.109",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.392",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.110",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.111",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "raster",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.112",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.113",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.114",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.115",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.116",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.117",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.393",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.118",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.119",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.120",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.121",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.394",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.122",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.123",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.124",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.395",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.125",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.126",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.127",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.128",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.130",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.452",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.131",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.132",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.400",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.133",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.134",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.401",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.135",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.402",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.136",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.137",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.138",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.139",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.404",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.140",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.141",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.405",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.142",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.143",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.406",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.144",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.407",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.145",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.408",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.146",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.147",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.148",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.410",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.149",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.150",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.411",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.151",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.425",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.152",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.153",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.154",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.155",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.427",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.156",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.157",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.158",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.429",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.159",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.160",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.430",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.161",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.162",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.163",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.164",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.165",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.166",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.167",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.434",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.168",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.169",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.435",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.170",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.436",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.171",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.172",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.173",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.174",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.449",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.175",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.176",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.396",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.177",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.178",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.179",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.397",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.180",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.181",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.332",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.182",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.183",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.334",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.185",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.186",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.370",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.187",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.372",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.188",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.374",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.375",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.189",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.190",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.378",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.379",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.191",
+    "area": "moment",
+    "images": [
+      {
+        "type": "raster",
+        "paths": [
+          "t",
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.194",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.195",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.196",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.412",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.197",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.413",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.198",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.199",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.414",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.200",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.415",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.201",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.202",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.437",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.203",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.204",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.205",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.206",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.207",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.208",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.209",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.210",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.211",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.398",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.212",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.213",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.336",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.214",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.215",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.381",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.216",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.217",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.385",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.735",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.736",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.737",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.738",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.739",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.740",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.741",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.742",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.743",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.744",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.745",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.746",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.747",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.748",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.749",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.750",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.751",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.752",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.753",
+    "area": "gravitation",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.218",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.219",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.220",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.221",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.222",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.416",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.223",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.417",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.224",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.439",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.225",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.226",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.227",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.228",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.229",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.230",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.231",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.232",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.233",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.234",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.235",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.236",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.237",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.238",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.239",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.240",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t",
+          "spelDelar.4.t",
+          "spelDelar.5.t",
+          "spelDelar.6.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.241",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.242",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.243",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.244",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.245",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.248",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.249",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.453",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.250",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.251",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.252",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.253",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.254",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.255",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.256",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.257",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.258",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.259",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.419",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.260",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.420",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.261",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.262",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.421",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.263",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.422",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.264",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.423",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.265",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.266",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.424",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.267",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.268",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.338",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.269",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.270",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.271",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.272",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.340",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.273",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.341",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.274",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.275",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.277",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.441",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.278",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.279",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.442",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.280",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.443",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.281",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.282",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.444",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.283",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.284",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t",
+          "spelDelar.3.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.445",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.285",
+    "area": "blandat_kraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.286",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.446",
+    "area": "blandat_kraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.288",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.289",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.290",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.450",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.499",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.516",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.517",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.518",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.519",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.520",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.521",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.522",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.523",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.524",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.525",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.526",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.527",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.528",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.529",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.530",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.531",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.532",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.533",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.534",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.535",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.536",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.537",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.538",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.539",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.540",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.541",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.542",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.543",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.544",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.545",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.546",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.547",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.548",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.549",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.550",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.551",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.552",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.553",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.554",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.555",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.556",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.563",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.576",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.577",
+    "area": "friktion",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.291",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.292",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.293",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.295",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.297",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.298",
+    "area": "newton2",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.557",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.558",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.559",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.560",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.561",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.562",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.564",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.565",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.566",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.567",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.568",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.569",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.570",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.571",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.572",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.573",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.574",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.575",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.596",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.597",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.598",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.599",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.630",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.632",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.643",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.648",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.649",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.650",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.651",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.652",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.653",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.654",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.655",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.656",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.657",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.658",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.659",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.660",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.661",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.662",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.663",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.664",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.665",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.666",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.667",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.668",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.669",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.670",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.675",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.676",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.677",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.678",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.679",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.680",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.681",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.682",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.683",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.684",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.685",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.686",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.687",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.688",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.689",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.690",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.691",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.692",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.693",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.694",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.695",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.696",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.697",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.698",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.699",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.700",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.701",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.702",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.703",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.704",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.705",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.706",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.707",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.708",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.709",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.710",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.711",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.712",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.713",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.714",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.715",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.716",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.717",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.718",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.719",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.720",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.721",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.722",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.723",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.724",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.725",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.726",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.727",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.728",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.729",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.730",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.731",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.732",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.733",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.734",
+    "area": "newton2",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.299",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.300",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.454",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.301",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.302",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.303",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.304",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.305",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.306",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.307",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.308",
+    "area": "fjadrar",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.309",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.310",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.311",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.312",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.505",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.506",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.507",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.508",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.509",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.510",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.511",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.512",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.513",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.514",
+    "area": "moment",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.515",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.313",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.314",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.315",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.316",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.317",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.500",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.671",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.672",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.673",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.674",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.318",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.319",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.320",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.321",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.399",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.322",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.286",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.287",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.288",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.289",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.290",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.291",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.292",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.293",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.301",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.302",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.303",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.304",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.305",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.306",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.307",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.308",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t",
+          "spelDelar.2.t"
+        ]
+      },
+      {
+        "type": "svg",
+        "paths": [
+          "s"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.314",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.315",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.316",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.319",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.321",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.322",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.323",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.324",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.325",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.327",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.328",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.329",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.331",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.332",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.334",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.335",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.336",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.337",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.338",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.339",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.341",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.342",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.343",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.344",
+    "area": "newton1",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t",
+          "spelIntro",
+          "spelDelar.0.t",
+          "spelDelar.1.t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "3.366",
+    "area": "newton1",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.455",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.456",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.457",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.458",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.459",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.460",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.461",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.462",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.463",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.464",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.465",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.466",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.467",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.468",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.469",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.470",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.471",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.472",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.473",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.474",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.498",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.503",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.504",
+    "area": "tyngdkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.475",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.476",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.477",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.478",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.479",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.480",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.481",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.482",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.483",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.484",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.497",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.502",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.636",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.637",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.638",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.639",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.640",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.641",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.642",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.644",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.645",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.646",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.647",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.485",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.486",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.487",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.488",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.489",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.490",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.491",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.492",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.578",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.579",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.580",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.581",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.582",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.583",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.584",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.585",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.586",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.587",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.588",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.589",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.590",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.591",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.592",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.593",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.594",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.595",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.600",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.601",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.602",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.603",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.604",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.605",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.606",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.607",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.608",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.609",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.610",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.611",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.612",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.613",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.614",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.615",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.616",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.617",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.618",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.619",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.620",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.621",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.622",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.623",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.624",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.625",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.626",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.627",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.628",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.629",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.631",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.633",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.634",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.635",
+    "area": "lutande_plan",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.493",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.494",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.495",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.496",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.501",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.754",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.755",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.756",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.757",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.758",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.759",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.760",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.761",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.762",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.763",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.800",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.801",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.802",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.803",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.804",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.805",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.806",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.807",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.808",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.809",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.810",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.811",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.812",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.813",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.814",
+    "area": "normalkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.815",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.816",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.817",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.818",
+    "area": "normalkraft",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.819",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.820",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.821",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.822",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.823",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.824",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.825",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.826",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.827",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.828",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.829",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.830",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.831",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.832",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.833",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.834",
+    "area": "newton3",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.835",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.836",
+    "area": "newton3",
+    "images": [],
+    "status": "inventerad – ingen bild",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.837",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.838",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.839",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.840",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.841",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.842",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.843",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.844",
+    "area": "gravitation",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.845",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.846",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.847",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.848",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.849",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.850",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.851",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.852",
+    "area": "lutande_plan",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.853",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.854",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.855",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.856",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.857",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.858",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.859",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.860",
+    "area": "fjadrar",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.861",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.862",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.863",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.864",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.865",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.866",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.867",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.868",
+    "area": "friktion",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.869",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.870",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.871",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.872",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.873",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.874",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.875",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.876",
+    "area": "moment",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild ändrad",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.877",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.878",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.879",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.880",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.881",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.882",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.883",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  },
+  {
+    "id": "4.884",
+    "area": "tyngdkraft",
+    "images": [
+      {
+        "type": "svg",
+        "paths": [
+          "t"
+        ]
+      }
+    ],
+    "status": "bild granskad – ingen ändring",
+    "calculator": true,
+    "geogebra": false
+  }
+]
