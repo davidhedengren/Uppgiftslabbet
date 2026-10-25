@@ -1,0 +1,44 @@
+[
+  {
+    "runda": "ln-c-final",
+    "svarskontroller": 266,
+    "elevvyer": 40,
+    "lärarvyer": 40
+  },
+  {
+    "runda": "potens-c",
+    "svarskontroller": 260,
+    "elevvyer": 40,
+    "lärarvyer": 40
+  },
+  {
+    "runda": "primitiva-c-final",
+    "svarskontroller": 234,
+    "elevvyer": 36,
+    "lärarvyer": 36
+  },
+  {
+    "runda": "derivatabegrepp-c-final",
+    "svarskontroller": 318,
+    "elevvyer": 36,
+    "lärarvyer": 36
+  },
+  {
+    "runda": "funktioner-c-final",
+    "svarskontroller": 262,
+    "elevvyer": 38,
+    "lärarvyer": 38
+  },
+  {
+    "runda": "sinus-c",
+    "svarskontroller": 252,
+    "elevvyer": 36,
+    "lärarvyer": 36
+  },
+  {
+    "runda": "cosinus-c-final2",
+    "svarskontroller": 276,
+    "elevvyer": 36,
+    "lärarvyer": 36
+  }
+]

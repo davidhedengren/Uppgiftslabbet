@@ -1,0 +1,92 @@
+{
+  "4.549": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Algebraisk rutin: bygger och löser en andragradsekvation med geometriskt rotvillkor.",
+    "kommentar": "5."
+  },
+  "4.550": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Tränar parameteruttryck, trubbig vinkel och val av positiv rot.",
+    "kommentar": "5,29."
+  },
+  "4.551": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar cosinussatsen och areasatsen och kopplar rätt vinkel till rätt sidor.",
+    "kommentar": "17,32 cm²."
+  },
+  "4.552": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Använder cosinussatsen i två sammanhängande trianglar och utnyttjar mittpunkten.",
+    "kommentar": "8,54 cm."
+  },
+  "4.553": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Översätter en riktning i verkligheten till rätt triangelvinkel.",
+    "kommentar": "6,08 km."
+  },
+  "4.554": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar hastighet och tid med avstånd i två olika riktningar.",
+    "kommentar": "6,29 km."
+  },
+  "4.555": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar vinkelbestämning med två uttryck för samma area.",
+    "kommentar": "6,84 m."
+  },
+  "4.556": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kopplar cosinussatsen till rät vinkel och skiljer ny längd från förändring.",
+    "kommentar": "1,55 cm."
+  },
+  "4.557": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "För över en beräknad längd från en triangel till en annan.",
+    "kommentar": "71,68 °."
+  },
+  "4.558": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar area med cosinussats och återanvänder ett exakt mellanresultat.",
+    "kommentar": "6 cm."
+  },
+  "4.559": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar bisektrissats med cosinussats i två trianglar.",
+    "kommentar": "8,45 cm."
+  },
+  "4.560": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Översätter ett längdvillkor till vinkelgräns och väljer rätt heltal.",
+    "kommentar": "96 °."
+  },
+  "4.561": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Väljer motstående sida, löser en andragradsekvation och kontrollerar geometriska villkor.",
+    "kommentar": "1,50."
+  },
+  "4.562": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Utnyttjar en parallellograms egenskaper och väljer rätt av två möjliga vinklar.",
+    "kommentar": "10,44 cm."
+  },
+  "4.563": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar regelbunden månghörning, medelpunktsvinkel och cosinussats.",
+    "kommentar": "35,27 cm."
+  },
+  "4.564": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bestämmer två vinkellägen och kombinerar dem med en avståndsberäkning.",
+    "kommentar": "9,20 cm."
+  },
+  "4.565": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar två geometriska beräkningar med relativ förändring.",
+    "kommentar": "67,76 %."
+  },
+  "4.566": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Tolkar negativ cosinus som en projektion utanför sidan och bestämmer ett positivt avstånd.",
+    "kommentar": "5,43 cm."
+  }
+}

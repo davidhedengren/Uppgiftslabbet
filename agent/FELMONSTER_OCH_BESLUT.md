@@ -2568,3 +2568,8 @@ placeras på cirkeln för hand (3.2131 visade 60° men var märkt 34°). Mät d�
 vinkelbågarna ur SVG-koordinaterna. Delningspunkter i topptriangelfigurer ska följa
 de angivna måtten. Commita lokalt före rebase; använd inte pull med autostash.
 Skydd: `ma2-s6-2026-10-25.test.js` (även vinkelbågar) och browserrättning.
+## Ma3c cosinussatsen: C-rutiner, samband och läsbara figurer – 2026-10-25
+
+18 nya #4.549–4.566 ger 20 C-kort. Blanda algebraisk mängdträning med tillämpningar. Kontrollera svängvinkel kontra triangelvinkel, timvisarens verkliga läge och att procentförändring gäller längder, inte deras kvadrater. Gemensam skala krävs i sammansatta figurer. Placera långa sidoetiketter efter deras bredd, inte med ett konstant litet avstånd. Basens hela längd ska ligga på en egen rad när H/M/D delar basen.
+
+[Alla ID:n och kommentarer](MA3_COSINUS_C_2026-10-25.md). [Sammanställning av alla sju Ma3-rundor](MA3_NIVA3_2026-10-25.md). Skydd: oberoende matematik-/geometritester samt faktisk browserrättning på mobil och dator.
