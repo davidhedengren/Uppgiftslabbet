@@ -2503,3 +2503,18 @@ att ändra svar, format eller tidigare pedagogiska förklaringar. Fem
 liknande äldre uppgifter har följdkontrollerats. Se [alla granskade ID:n,
 kommentarer och verifiering](MA3_PRIMITIVA_C_2026-10-25.md). Skydd:
 `ma3-primitiva-c-2026-10-25.test.js` och motsvarande browserfall.
+
+
+## Ma3 derivatabegrepp: skilj hastigheter och enhetsskalor – 2026-10-25
+
+18 nya C-kort #2.1241–2.1258 ger 20 i området. Håll isär funktionsvärde,
+derivata och förändring över ett intervall; en derivata per kilometer
+är inte en förbrukning per minut. Pröva enhetsskalorna på båda axlarna.
+En symmetrisk kvot kan vara noll i ett hörn utan att derivatan finns
+(#2.1248). Derivatan noll räcker inte för ett extremställe (#2.1258).
+
+Figurer ska ange om linjen är en tangent eller en annan modell. Punkter
+på tangenten markeras i dess färg. Tätare yticks kan krocka trots att
+hela SVG:n ryms; #2.1252 fick glesare axelmarkeringar före publicering.
+Se [alla granskade uppgifter och kommentarer](MA3_DERIVATABEGREPP_C_2026-10-25.md).
+Skydd: `ma3-derivatabegrepp-c-2026-10-25.test.js` och browserfallfilen.
