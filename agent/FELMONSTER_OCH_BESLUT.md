@@ -2553,3 +2553,8 @@ publicering). Koordinatfigurer med lika axlar ska få höjden ur y-intervallet, 
 hamnar punkter utanför viewBox. LaTeX-ändringar görs med exakta ersättningar i Node,
 inte sed, och den färdiga texten läses efteråt.
 Skydd: `ma2-s5-2026-10-25.test.js` (även triangelolikhet och viewBox) och browserrättning.
+## Ma3c sinussatsen: två möjliga trianglar och gränsfall – 2026-10-25
+
+17 nya C-uppgifter #4.532–4.548 samt självrättning i #4.52. En exempelfigur får inte tyst utesluta den andra sinuslösningen. Kontrollera både supplementvinkel och positiv återstående vinkel; använd mängdsvar när båda efterfrågas. Vid minsta/största sidlängd måste gränsvinkeln också ge en verklig triangel. Markera observationsvinkel som yttervinkel om den inte är triangelns inre vinkel. Sidproportioner och vinklar testas från SVG-koordinater.
+
+Se [alla ID:n, ändringar och kommentarer](MA3_SINUS_C_2026-10-25.md). Skydd: `ma3-sinus-c-2026-10-25.test.js`, browserfall och befintligt sinussatstest.

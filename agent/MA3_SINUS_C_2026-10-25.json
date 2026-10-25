@@ -1,0 +1,92 @@
+{
+  "4.52": {
+    "status": "Åtgärdad: tidigare manuellt C-resonemang blir självrättande.",
+    "C-motivering": "Kontrollerar att givna data beskriver en möjlig triangel.",
+    "kommentar": "Nej, villkoren skulle kräva sin B > 1."
+  },
+  "4.532": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar två sidberäkningar och tolkar skillnaden mellan två färdvägar.",
+    "kommentar": "48,30 m."
+  },
+  "4.533": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar sinussatsen med area och väljer en vinkel mellan rätt två sidor.",
+    "kommentar": "1859,20 m²."
+  },
+  "4.534": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bestämmer en okänd skala ur ett sidförhållande och en summa.",
+    "kommentar": "7,75 cm."
+  },
+  "4.535": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kopplar tre sidförhållanden till omkrets och väljer rätt efterfrågad sida.",
+    "kommentar": "13,70 cm."
+  },
+  "4.536": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kontrollerar båda sinuslösningarna mot triangelns vinkelsumma.",
+    "kommentar": "B ≈ 48,6° eller 131,4°."
+  },
+  "4.537": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Översätter sinusgränsen till ett möjligt längdintervall och verifierar gränsfallet.",
+    "kommentar": "6,43 cm."
+  },
+  "4.538": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar tvetydigt sinusfall med en jämförelse av areor.",
+    "kommentar": "33,90 cm²."
+  },
+  "4.539": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bestämmer sidlängder från omkrets innan arean kan beräknas.",
+    "kommentar": "71,38 cm²."
+  },
+  "4.540": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Skiljer observationsvinkel från triangelvinkel och kombinerar avstånd med höjd.",
+    "kommentar": "41,35 m."
+  },
+  "4.541": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Använder sinussatsen i två sammanhängande trianglar och utnyttjar en vinkelbisektris.",
+    "kommentar": "13,47 cm."
+  },
+  "4.542": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Optimerar en sidlängd med sinus begränsning och kontrollerar vinkelsumman.",
+    "kommentar": "20,00 cm."
+  },
+  "4.543": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Väljer rätt vinkelgren före en ny sidberäkning.",
+    "kommentar": "5,51 cm."
+  },
+  "4.544": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Översätter ett längdförhållande till en vinkel och utesluter den omöjliga grenen.",
+    "kommentar": "107,5°."
+  },
+  "4.545": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Väljer en deltriangel och använder halverad vinkel i rätt motstående par.",
+    "kommentar": "25,39 cm."
+  },
+  "4.546": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Räknar de trianglar som uppfyller ett extra villkor, inte bara antalet sinuslösningar.",
+    "kommentar": "1 triangel."
+  },
+  "4.547": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Algebraisk mängdträning med en parameter i båda sidlängderna.",
+    "kommentar": "x ≈ 129,65."
+  },
+  "4.548": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Återskapar en längd från area och vinklar genom två satser och en kvadratrot.",
+    "kommentar": "8,71 cm."
+  }
+}
