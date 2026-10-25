@@ -2413,3 +2413,13 @@ steglista: där skrivs facit löpande och varje kort har figur (skyddas av
 ha jämna delningar så att skärningspunkten inte hamnar vid randen. Exakta
 decimalfacit kräver ”(Svara exakt.)” i frågan.
 Skydd: `ma2-geometri-s2-2026-10-25.test.js` och browserrättning av alla kort.
+
+## Ma2 kap 4 statistik S3 – textuppgifter, 2026-10-25
+
+Nya #4.2061–4.2111 (51 kort, nivå 1/2/3 = 17/23/11, 17 figurer). Se
+[MA2_STATISTIK_S3_2026-10-25.md](MA2_STATISTIK_S3_2026-10-25.md). Nästa lediga ID i
+serien S: 3.2053 och 4.2112. GeoGebra sätts per kort: tillåtet när frågan ber om
+sannolikhetskalkylator, regression eller r ur data, annars nekat (testet kräver att
+`geogebra` följer ordet GeoGebra i frågan). Små heltalssvar krockar lätt med äldre
+kort i samma område; kontrollera krockar mot hela området innan talen låses.
+Skydd: `ma2-statistik-s3-2026-10-25.test.js` och browserrättning av alla kort.
