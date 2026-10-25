@@ -2608,3 +2608,13 @@ genomförs. Skydd: `ma2-satsbevis-figurer-2026-10-25.test.js` och `ma2-s6-2026-1
 
 [69 granskade uppgifter med status och kommentarer](MA3_KVALITET_2026-10-25.md).
 Typografiska primtecken ska fungera i funktionsvänsterled även när argumentet är en variabel; ändra inte RHS eller vinkelenheter. Jämför full precision vid angiven avrundning. Växande funktion kan ha derivatan noll i enstaka punkter. Slutsatsen F−G=konstant kräver ett sammanhängande intervall. Delad formelrad på mobil får inte tappa mellanled. Rutinträning behålls; sex dubbletter fick andra frågeidéer. Nivåbeslut och jämförelseuppgifter står i loggen. Skydd: `ma3-kvalitet-2026-10-25.test.py`, svarsfältens cases-fil och `derivataprimtecken-2026-10-25.test.js` i Kunskapsgymmet.
+
+## Ma2 kap 3: figurer ska följa måtten, ingen skisstext, varierade texter – lärarbeslut 2026-10-25
+
+Texten ”Skiss. Mät inte i figuren.” används inte på någon uppgift. Mallfigurer som ser likadana ut
+oavsett mått ersätts med skalenliga figurer per kort: givna mått och den okända sträckan utsatta,
+måttlinjer för hela sidor, parallellitet med pilar och varierad form och vridning. Nästan identiska
+kort (samma textmall och samma tal) formuleras om eller får nya tal. Nya uppgifter byggs efter
+lärarens exempel (se NP_EXEMPEL_ANALYS_2026-10-25.md): poängen följer antalet tankesteg och figuren
+bär strukturen. Mät alltid vinkelbågarna ur SVG-koordinaterna; 3.2165 hade först fel vinklar.
+Se MA2_KAP3_REVISION_2026-10-25.md. Skydd: `ma2-kap3-revision-2026-10-25.test.js`.
