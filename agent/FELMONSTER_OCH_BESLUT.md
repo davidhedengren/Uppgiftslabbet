@@ -2402,3 +2402,14 @@ Normalfördelningens andelar följer 34,1/13,6/2,1/0,1; räkna andelar under en 
 direkt (50 + 34,1 + 13,6 = 97,7) i stället för 100 minus svansen. Kvartiler med
 jämnt antal värden. NP används bara tematiskt, utan omskrivna provtexter.
 Skydd: `ma2-statistik-s1-2026-10-25.test.js` och browserrättning av alla kort.
+
+## Ma2 kap 3 geometri S2 – problemlösning, 2026-10-25
+
+Nya #3.2000–3.2052 (53 kort, nivå 1/2/3 = 14/21/18, 29 figurer). Se
+[MA2_GEOMETRI_S2_2026-10-25.md](MA2_GEOMETRI_S2_2026-10-25.md). Nästa lediga ID i
+serien S: 3.2053 och 4.2061. Området `geometri_problemlosning` avviker från Ma2:s
+steglista: där skrivs facit löpande och varje kort har figur (skyddas av
+`ma2-problemlosning.test.js`, som också räknar korten i området). Kordfigurer ska
+ha jämna delningar så att skärningspunkten inte hamnar vid randen. Exakta
+decimalfacit kräver ”(Svara exakt.)” i frågan.
+Skydd: `ma2-geometri-s2-2026-10-25.test.js` och browserrättning av alla kort.
