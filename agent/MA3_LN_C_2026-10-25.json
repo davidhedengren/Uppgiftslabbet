@@ -1,0 +1,122 @@
+{
+  "2.1201": {
+    "C-motivering": "Kombinerar logaritmlag, andragradsekvation och bortval av en otillåten rot.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(x=3\\)."
+  },
+  "2.1202": {
+    "C-motivering": "Växlar mellan logaritmskillnad, längdkvot och areafaktor.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(e^3\\) gånger."
+  },
+  "2.1203": {
+    "C-motivering": "Identifierar geometriskt mellanvärde i stället för aritmetiskt medelvärde.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "x = 10."
+  },
+  "2.1204": {
+    "C-motivering": "Logaritmlag och faktorisering ger en extrakandidat som måste uteslutas.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "x = 2."
+  },
+  "2.1205": {
+    "C-motivering": "Bestämmer en modell från två villkor och använder ln som invers till e-potens.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "1."
+  },
+  "2.1206": {
+    "C-motivering": "Generaliserar med två logaritmlagar och ser att parametern försvinner.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Utan räknare: det exakta symbolsambandet är det som prövas. GeoGebra behövs inte.",
+    "kommentar": "2."
+  },
+  "2.1207": {
+    "C-motivering": "Bedömer logaritmlagens giltighet och bevarar definitionsmängden.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Utan räknare: det exakta symbolsambandet är det som prövas. GeoGebra behövs inte.",
+    "kommentar": "\\(2\\ln(2-x)\\)."
+  },
+  "2.1208": {
+    "C-motivering": "Arbetar baklänges genom två sammansatta logaritmfunktioner.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(x=\\frac{e+2}{3}\\)."
+  },
+  "2.1209": {
+    "C-motivering": "Kombinerar koordinatgeometri med logaritmlagar, inte bara avläsning.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(\\ln(5/4)\\) längdenheter."
+  },
+  "2.1210": {
+    "C-motivering": "Använder regelbundenhet i en logaritmisk modell utan att behöva bestämma båda konstanterna.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "x = 162."
+  },
+  "2.1211": {
+    "C-motivering": "Bestämmer först en okänd modellparameter och hanterar en basnivå före logaritmering.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "14,34 min."
+  },
+  "2.1212": {
+    "C-motivering": "Jämför två olika exponentiella modeller och tolkar skillnaden mellan tillväxttakterna.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "6,93 dygn."
+  },
+  "2.1213": {
+    "C-motivering": "Översätter en geometrisk position på logaritmisk skala till ett tal.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "316,2."
+  },
+  "2.1214": {
+    "C-motivering": "Översätter två logaritmsamband till ett ekvationssystem och använder positivitet.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "a = 6 och b = 2."
+  },
+  "2.1215": {
+    "C-motivering": "Skiljer formellt liknande uttryck genom definitionsmängder och lösningsmängder.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Utan räknare: det exakta symbolsambandet är det som prövas. GeoGebra behövs inte.",
+    "kommentar": "Den första har lösningarna −3 och 3, den andra bara 3."
+  },
+  "2.1216": {
+    "C-motivering": "Kombinerar definitionsvillkor, logaritmens monotoni och en andragradsolikhet.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "1 heltal."
+  },
+  "2.1217": {
+    "C-motivering": "Ser andragradsstrukturen i ln x och bevarar båda lösningarna.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(x=1\\) eller \\(x=e^3\\)."
+  },
+  "2.1218": {
+    "C-motivering": "Hämtar två parameterkrav ur en figur och löser sedan en logaritmekvation.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "\\(x=2+e^{-4}\\)."
+  },
+  "2.1219": {
+    "C-motivering": "Kopplar logaritmisk kvot till två procentförändringar och en andragradsekvation.",
+    "figur": "Figur/tabell hjälper representationen.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "p = 50."
+  },
+  "2.1220": {
+    "C-motivering": "Översätter lika logaritmsteg till kvoter och förenklar en ekvation där kvadrattermerna försvinner.",
+    "figur": "Symbolisk analys är själva innehållet; en figur skulle inte tillföra information.",
+    "verktyg": "Miniräknare tillåten; GeoGebra behövs inte.",
+    "kommentar": "x = 3."
+  }
+}

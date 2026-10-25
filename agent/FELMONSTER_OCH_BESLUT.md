@@ -2466,3 +2466,17 @@ Ma4 2.576/4.520 och placeringen av Ma5 4.358 är granskningskandidater, inte
 redan konstaterade och rättade fel. Inga bankändringar gjordes i inventeringen.
 Prioritera Ma3 naturliga logaritmer (0 på nivå 3), derivatabegrepp och graf,
 Ma1 statistiska resonemang samt Fy1 tredje lagen, s-t-diagram och laddning.
+
+## Ma3 nivå 3: naturliga logaritmer och exp-svar – 2026-10-25
+
+20 nya självständiga C-kort #2.1201–2.1220 fyller den tidigare tomma
+nivå 3-poolen, utan att höja äldre uppgifter. Bevara definitionsvillkor,
+ordnade a/b-fält och mängdformatet för de två rötterna i #2.1217.
+
+`exp(...)` är en tillåten matematisk funktion i normaliseringen och måste
+också kunna värderas av räknarparsern. Saknad exp-token gav tidigare NaN
+för korrekta svar. Den läggs före konstanten e och beräknas med Math.exp.
+Fem äldre kort har följdkontrollerats i riktiga svarsfält. Se
+[uppgiftslista, C-motiv och verifiering](MA3_LN_C_2026-10-25.md).
+Skydd: `ma3-ln-c-2026-10-25.test.js`, `exp-svar-2026-10-25.test.js`
+och browserharnessen `ma3-c-2026-10-25.browser.cjs` med omgångens fallfil.
