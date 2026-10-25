@@ -2518,3 +2518,14 @@ på tangenten markeras i dess färg. Tätare yticks kan krocka trots att
 hela SVG:n ryms; #2.1252 fick glesare axelmarkeringar före publicering.
 Se [alla granskade uppgifter och kommentarer](MA3_DERIVATABEGREPP_C_2026-10-25.md).
 Skydd: `ma3-derivatabegrepp-c-2026-10-25.test.js` och browserfallfilen.
+
+## Ma2 kap 3 geometri S4 – yttervinklar, begrepp och likformighetsbevis, 2026-10-25
+
+Nya #3.2053–3.2095 (43 kort, nivå 1/2/3 = 12/24/7, 26 figurer). Se
+[MA2_GEOMETRI_S4_2026-10-25.md](MA2_GEOMETRI_S4_2026-10-25.md). Nästa lediga ID i
+serien S: 3.2096 och 4.2112. Vinkelbågar i nya figurer mäts ur SVG-koordinaterna
+i regressionstestet. Gradetiketter placeras på bågens bisektris och ska därför inte
+användas när en ritad bisektris går genom samma riktning (3.2079). En sträcketikett
+får inte stå på en sida som delas av en punkt (3.2086). En skiss som inte är
+skalenlig märks så, men dess linjer ska ändå vara geometriskt korrekta (3.2087).
+Skydd: `ma2-geometri-s4-2026-10-25.test.js` och browserrättning av alla kort.
