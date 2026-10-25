@@ -21,6 +21,7 @@ for id,f in {'1.804':s.factorial(n+2)/s.factorial(n),'1.805':(s.factorial(n+1)-3
 for id in ids:
  t=q[id];assert t['spel'] and t['självrättning'] and not t.get('alternativ')
  assert t['t'] and t['ledtrad'] and 'facit-svar' in t['s']
+ assert t['s'].count('facit-rubrik')==t['s'].count('<li>'),id
  assert not re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f]',t['t']+t['s'])
  assert not t['geogebra'] or t['miniräknare']
  assert 1<=t['traningsniva']<=5

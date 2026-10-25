@@ -2,6 +2,8 @@
 
 18 nya uppgifter: 7 kombinatorik/fakulteter, 6 kongruens och 5 partiell integration. Samtliga har öppna svar, individuella lösningar med mellanled och markerat slutsvar samt en egen ledtråd. Inga gamla bankuppgifter ändras. Användarens bilder är referens för innehåll och nivå; uppgifterna är egna varianter med andra uttryck, sammanhang eller frågeidéer.
 
+Slutgranskning enligt de preciserade instruktionerna 2026-10-25: varje steg har en manuellt skriven, uppgiftsspecifik `facit-rubrik`. Alla 18 facit och ledtrådar har lästs och renderats. Efter rubrikrevisionen passerar ytterligare 206 svarskontroller och mobil-/datorvisning för samtliga nya kort.
+
 ## Nivåer och variation
 
 Nivå 1/2/3/4/5: **2/5/6/4/1**. Ren resttolkning är nivå 1. Val av grupp och enkel partiell integration är nivå 2. Omvända frågor och samband får nivå 3. Urval med villkor, fakultetssumma och två integrationsomgångar är nivå 4. Den cirkulära integralen #3.356 kräver att eleven löser ett samband där samma integral återkommer och ligger på nivå 5.
