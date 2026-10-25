@@ -2627,3 +2627,21 @@ Fakultetskvoter kan bli 3471,9999999999995 i flyttalsaritmetik. Diskreta antal s
 ## Ma3 grafisk derivata, nivå 3 – 2026-10-25
 
 13 nya kort 3.1233–3.1245, se N3_DERIVATAGRAF_2026-10-25.md. Skilj f från f′ och från derivatan av en transformerad funktion. Maxvärdets höjd kan inte bestämmas ur enbart f′. Vid läsning av 4,5 efterfrågas en decimal så att det avrundade heltalet 5 inte ersätter det avsedda läget. Alla nya facit följer Ma1 1.116 med konkreta rubriker, förklaringar och mellanled. Skydd: n3-derivatagraf-2026-10-25.test.js och faktiska browserfall. Äldre uppgifter oförändrade.
+
+## Ma2: facit enligt grundinställningen, 2026-10-25
+
+Användaren påminde om att facit ska följa grundinställningen i CLAUDE.md, med Ma1 #1.116
+som förebild. Varje steg ska ha en rubrik som säger vad man gör, mellanleden ska visas
+och ett tydligt svar ska stå sist. Granskningen av seriens 327 kort (3.2000–3.2173,
+4.2000–4.2147) och etapp 1:s omskrivna facit gav tre fynd:
+
+- 24 kort i `geometri_problemlosning` hade löpande facit utan rubriker.
+- 5 omskrivna likformighetsfacit (3.48, 3.77, 3.297, 3.311 och 3.313) saknade rubriker.
+- 5 kort (3.2001, 3.2032, 3.2042, 4.2010 och 4.2043) saknade rubrik på andra steget.
+
+Alla 34 facit är omskrivna. Problemlösningsområdet behåller löpande facit
+(`facit-stycke`, ingen steglista) men har samma rubriker.
+
+Gäller från och med nu: varje nytt eller omskrivet facit har en rubrik per steg eller
+stycke, och varje delkort har egen ledtråd och eget svar.
+Skydd: `tools/ma2-facit-rubriker-2026-10-25.test.js`.
