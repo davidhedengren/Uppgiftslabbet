@@ -1,0 +1,190 @@
+{
+  "new": [
+    "1.802",
+    "1.803",
+    "1.804",
+    "1.805",
+    "1.806",
+    "1.807",
+    "1.808",
+    "2.720",
+    "2.721",
+    "2.722",
+    "2.723",
+    "2.724",
+    "2.725",
+    "3.353",
+    "3.354",
+    "3.355",
+    "3.356",
+    "3.357"
+  ],
+  "reviewed": [
+    "1.802",
+    "1.803",
+    "1.804",
+    "1.805",
+    "1.806",
+    "1.807",
+    "1.808",
+    "2.720",
+    "2.721",
+    "2.722",
+    "2.723",
+    "2.724",
+    "2.725",
+    "3.353",
+    "3.354",
+    "3.355",
+    "3.356",
+    "3.357",
+    "1.21",
+    "1.27",
+    "1.509",
+    "1.510",
+    "1.136"
+  ],
+  "gradingChanged": [
+    "1.21",
+    "1.27"
+  ],
+  "noError": [
+    "1.509",
+    "1.510",
+    "1.136"
+  ],
+  "items": [
+    {
+      "id": "1.802",
+      "status": "Ny – granskad",
+      "level": 2,
+      "area": "kombinationer",
+      "comment": "Tillagd och granskad: Välja sju ledamöter utan roller: 120 grupper."
+    },
+    {
+      "id": "1.803",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "permutationer",
+      "comment": "Tillagd och granskad: Två bestämda böcker intill varandra: 2·6! = 1 440 ordningar."
+    },
+    {
+      "id": "1.804",
+      "status": "Ny – granskad",
+      "level": 2,
+      "area": "permutationer",
+      "comment": "Tillagd och granskad: Fakultetskvot till polynom: (n+1)(n+2)."
+    },
+    {
+      "id": "1.805",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "permutationer",
+      "comment": "Tillagd och granskad: Gemensam faktor i fakultetsdifferens: faktorn n−2."
+    },
+    {
+      "id": "1.806",
+      "status": "Ny – granskad",
+      "level": 4,
+      "area": "permutationer",
+      "comment": "Tillagd och granskad: Summa av fakultetskvoter: (n+1)(n+3)."
+    },
+    {
+      "id": "1.807",
+      "status": "Ny – granskad",
+      "level": 4,
+      "area": "kombinationer",
+      "comment": "Tillagd och granskad: Fyra lappar med 8 som näst minsta tal: 7·C(32,2) = 3 472."
+    },
+    {
+      "id": "1.808",
+      "status": "Ny – granskad",
+      "level": 2,
+      "area": "permutationer",
+      "comment": "Tillagd och granskad: Omvänd permutation: n! = 120 ger n = 5."
+    },
+    {
+      "id": "2.720",
+      "status": "Ny – granskad",
+      "level": 1,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Tolka resten: 47 modulo 6 ger 5."
+    },
+    {
+      "id": "2.721",
+      "status": "Ny – granskad",
+      "level": 2,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Två kongruenser i ett intervall: enda lösningen är 32."
+    },
+    {
+      "id": "2.722",
+      "status": "Ny – granskad",
+      "level": 1,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Kongruent med noll: minsta tillägg till 79 är 12."
+    },
+    {
+      "id": "2.723",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Klocka och stor exponent: efter 7¹²³ timmar är timtalet 0."
+    },
+    {
+      "id": "2.724",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Period sex för potensrester: resten av 14³⁷ modulo 9 är 5."
+    },
+    {
+      "id": "2.725",
+      "status": "Ny – granskad",
+      "level": 4,
+      "area": "kongruens",
+      "comment": "Tillagd och granskad: Två olika potensperioder och addition: sista siffran är 2."
+    },
+    {
+      "id": "3.353",
+      "status": "Ny – granskad",
+      "level": 2,
+      "area": "partiell_integration",
+      "comment": "Tillagd och granskad: Linjärt polynom gånger eˣ: en partiell integration."
+    },
+    {
+      "id": "3.354",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "partiell_integration",
+      "comment": "Tillagd och granskad: x³ ln x: logaritmen deriveras, polynomet integreras."
+    },
+    {
+      "id": "3.355",
+      "status": "Ny – granskad",
+      "level": 4,
+      "area": "partiell_integration",
+      "comment": "Tillagd och granskad: x² cos(2x): två partiella integrationer och teckenkontroll."
+    },
+    {
+      "id": "3.356",
+      "status": "Ny – granskad",
+      "level": 5,
+      "area": "partiell_integration",
+      "comment": "Tillagd och granskad: e²ˣ sin x: två integraler kopplas ihop till en ekvation."
+    },
+    {
+      "id": "3.357",
+      "status": "Ny – granskad",
+      "level": 3,
+      "area": "partiell_integration",
+      "comment": "Tillagd och granskad: Exakt skuggad area: π/2−1."
+    }
+  ],
+  "checks": {
+    "answerChecks": 256,
+    "studentViews": 46,
+    "teacherViews": 46,
+    "figures": 4
+  }
+}

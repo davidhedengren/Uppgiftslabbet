@@ -2618,3 +2618,8 @@ kort (samma textmall och samma tal) formuleras om eller får nya tal. Nya uppgif
 lärarens exempel (se NP_EXEMPEL_ANALYS_2026-10-25.md): poängen följer antalet tankesteg och figuren
 bär strukturen. Mät alltid vinkelbågarna ur SVG-koordinaterna; 3.2165 hade först fel vinklar.
 Se MA2_KAP3_REVISION_2026-10-25.md. Skydd: `ma2-kap3-revision-2026-10-25.test.js`.
+
+## Matf1: öppna fakultets-, kongruens- och integralsvar – 2026-10-25
+
+[18 nya uppgifter och fem äldre jämförelser](MATF1_REFERENS_2026-10-25.md).
+Fakultetskvoter kan bli 3471,9999999999995 i flyttalsaritmetik. Diskreta antal ska beräknas exakt som bråk när uttrycket tillåter det, inte godtas med en ökad tolerans. Bevara kontroll av varje led i likhetskedjor, syntax, fria konstanter och exakta heltal. Parserändringen gäller endast `antal_satt`; rotuttryck och övriga numeriska format behåller sin tidigare väg. Skydd: `antal-satt.test.js`, `exakta-talsvar.test.js` och browserfallen för 18 nya/fem äldre uppgifter. Partiell integration har korta men kompletta mellanled; använd mobila formelradbrytningar när produkterna blir långa.
