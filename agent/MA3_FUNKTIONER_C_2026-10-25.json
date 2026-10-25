@@ -1,0 +1,135 @@
+{
+  "1.183": {
+    "status": "Åtgärdad: självrättning aktiverad, tydligare svarsfält och facit.",
+    "C-motivering": "Jämför funktioner och kopplar två exakta rötter till rätt koordinatpar.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "\\((3-\\sqrt3,\\,5-2\\sqrt3)\\) och \\((3+\\sqrt3,\\,5+2\\sqrt3)\\)."
+  },
+  "1.233": {
+    "status": "Åtgärdad: självrättning aktiverad, tydligare svarsfält och facit.",
+    "C-motivering": "Bestämmer två parametrar från funktionsvärden; relevant algebraisk C-träning.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 3/2 och b = 7/2."
+  },
+  "1.274": {
+    "status": "Åtgärdad: självrättning aktiverad, tydligare svarsfält och facit.",
+    "C-motivering": "Kopplar antal nollställen till en okänd parameter och beaktar båda möjligheterna.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = −4 eller a = 4."
+  },
+  "1.949": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Löser en sammansatt funktionsrelation genom att arbeta baklänges i en diskret tabell.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "x = −2 eller x = 2."
+  },
+  "1.950": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Skiljer en förskjuten definitionsmängd från oförändrade funktionsvärden.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "Definitionsmängd: −1 ≤ t ≤ 3. Värdemängd: −1 ≤ g(t) ≤ 8."
+  },
+  "1.951": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar faktorisering med vad det innebär att två funktioner är samma.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Ett begreppsligt resonemang prövas utan räknare.",
+    "kommentar": "Värdena är lika där båda är definierade, men definitionsmängderna skiljer sig."
+  },
+  "1.952": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Jämför två sammansättningar och identifierar en motsägelse efter förenkling.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "0 lösningar."
+  },
+  "1.953": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Resonerar om en hel värdemängd under en negativ skalning och en förskjutning.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "Minsta värde −7, största värde 7."
+  },
+  "1.954": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bedömer vad ett ändligt underlag faktiskt bestämmer och använder ett motexempel.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Ett begreppsligt resonemang prövas utan räknare.",
+    "kommentar": "Nej, andra funktioner kan ge samma tabellvärden men skilja sig utanför tabellen."
+  },
+  "1.955": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Prövar kandidatvärden mot modellens villkor i en funktion med hopp.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "Nej, 45 kr ligger mellan de två delarnas möjliga priser."
+  },
+  "1.956": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Skapar en funktion från geometrin och löser ett villkor på dess värden.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "8 ≤ x ≤ 12 cm."
+  },
+  "1.957": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar symmetrisk jämförelse av två funktionsvärden med ett punktvillkor.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 0 och b = 2."
+  },
+  "1.958": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Rekonstruerar hela funktionen genom ett inverterat argument och algebraisk förenkling.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "\\(f(x)=x^2/4-3x/2+21/4\\)."
+  },
+  "1.959": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bestämmer parametrar ur en sammansättning och använder ett villkor för att välja rätt gren.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "\\(f(x)=-2x-3\\)."
+  },
+  "1.960": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kopplar ett parametervärde till antal skärningar och beaktar slutna ändpunkter.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "k = 1."
+  },
+  "1.961": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Kombinerar rotvillkor med nämnarvillkor och löser en kvadratisk olikhet.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "\\(-2\\lt x\\lt4\\)."
+  },
+  "1.962": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Analyserar en funktion med absolutbelopp över flera intervall och skiljer minsta värde från en enskild minimipunkt.",
+    "figur": "Algebra eller begrepp; ingen extra illustration behövs.",
+    "verktyg": "Ett begreppsligt resonemang prövas utan räknare.",
+    "kommentar": "Minsta värdet är 4 och nås för alla x i intervallet [−2, 2]."
+  },
+  "1.963": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Bestämmer två möjliga linjemodeller från ett villkor på antal skärningar.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "k = 0 eller k = 8."
+  },
+  "1.964": {
+    "status": "Ny, granskad – inget fel.",
+    "C-motivering": "Jämför två funktioner och kontrollerar en falsk rot som uppstår vid kvadrering.",
+    "figur": "Relevant figur eller tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "\\(x=(5-\\sqrt{13})/2\\)."
+  }
+}

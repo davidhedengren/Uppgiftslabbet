@@ -2529,3 +2529,16 @@ användas när en ritad bisektris går genom samma riktning (3.2079). En sträck
 får inte stå på en sida som delas av en punkt (3.2086). En skiss som inte är
 skalenlig märks så, men dess linjer ska ändå vara geometriskt korrekta (3.2087).
 Skydd: `ma2-geometri-s4-2026-10-25.test.js` och browserrättning av alla kort.
+
+## Ma3 funktioner: återanvänd innehåll med tydliga svarsfält – 2026-10-25
+
+#1.183, #1.233 och #1.274 hade användbart C-innehåll men saknade rättning.
+De har nu märkta koordinat-/parameterfält och fullständiga facit. Båda
+parametervärdena i #1.274 är en mängd; koordinaterna i #1.183 är ordnade
+med uttryckligt mindre/större x. 16 nya #1.949–1.964 kompletterar dem.
+
+Bedöm det eleven faktiskt ska göra: en logistisk formel gör inte en
+ren startvärdesinsättning till C-nivå. #1.430 blir nivå 2; inga uppgifter
+tas bort. Dess breda likhetskedja bryts för mobil. Fem jämförelseuppgifter
+kontrollerade. Se [samtliga ID:n, ändringar och kommentarer](MA3_FUNKTIONER_C_2026-10-25.md).
+Skydd: `ma3-funktioner-c-2026-10-25.test.js` och omgångens browserfall.
