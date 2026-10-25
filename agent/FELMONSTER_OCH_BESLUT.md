@@ -2530,6 +2530,7 @@ får inte stå på en sida som delas av en punkt (3.2086). En skiss som inte är
 skalenlig märks så, men dess linjer ska ändå vara geometriskt korrekta (3.2087).
 Skydd: `ma2-geometri-s4-2026-10-25.test.js` och browserrättning av alla kort.
 
+<<<<<<< Updated upstream
 ## Ma3 funktioner: återanvänd innehåll med tydliga svarsfält – 2026-10-25
 
 #1.183, #1.233 och #1.274 hade användbart C-innehåll men saknade rättning.
@@ -2542,3 +2543,15 @@ ren startvärdesinsättning till C-nivå. #1.430 blir nivå 2; inga uppgifter
 tas bort. Dess breda likhetskedja bryts för mobil. Fem jämförelseuppgifter
 kontrollerade. Se [samtliga ID:n, ändringar och kommentarer](MA3_FUNKTIONER_C_2026-10-25.md).
 Skydd: `ma3-funktioner-c-2026-10-25.test.js` och omgångens browserfall.
+=======
+## Ma2 kap 3–4 S5 – tunnaste områdena, 2026-10-25
+
+Nya #3.2096–3.2121 och #4.2112–4.2138 (53 kort, nivå 1/2/3 = 15/29/9, 27 figurer). Se
+[MA2_S5_2026-10-25.md](MA2_S5_2026-10-25.md). Nästa lediga ID i serien S: 3.2122 och 4.2139.
+Felmönster: en triangel som anges med tre sidor måste uppfylla triangelolikheten,
+även när den är räknad baklänges från bisektrissatsen (3.2117, 3.2120 rättades före
+publicering). Koordinatfigurer med lika axlar ska få höjden ur y-intervallet, annars
+hamnar punkter utanför viewBox. LaTeX-ändringar görs med exakta ersättningar i Node,
+inte sed, och den färdiga texten läses efteråt.
+Skydd: `ma2-s5-2026-10-25.test.js` (även triangelolikhet och viewBox) och browserrättning.
+>>>>>>> Stashed changes
