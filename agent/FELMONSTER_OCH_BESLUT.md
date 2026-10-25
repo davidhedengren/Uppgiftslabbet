@@ -2603,3 +2603,8 @@ kort har figur. Regel: logik-, begrepps- och bevisstrukturkort får ingen figur.
 uppgiften handlar om en konkret figur eller beräkning. ”Hellre figur än utan” betyder inte att en figur
 ska konstrueras när texten redan är tydlig. Visa några exempel för läraren innan en hel områdesrevision
 genomförs. Skydd: `ma2-satsbevis-figurer-2026-10-25.test.js` och `ma2-s6-2026-10-25.test.js`.
+
+## Ma3: primtecken, nivåer, konstantskillnader och mobilfacit – 2026-10-25
+
+[69 granskade uppgifter med status och kommentarer](MA3_KVALITET_2026-10-25.md).
+Typografiska primtecken ska fungera i funktionsvänsterled även när argumentet är en variabel; ändra inte RHS eller vinkelenheter. Jämför full precision vid angiven avrundning. Växande funktion kan ha derivatan noll i enstaka punkter. Slutsatsen F−G=konstant kräver ett sammanhängande intervall. Delad formelrad på mobil får inte tappa mellanled. Rutinträning behålls; sex dubbletter fick andra frågeidéer. Nivåbeslut och jämförelseuppgifter står i loggen. Skydd: `ma3-kvalitet-2026-10-25.test.py`, svarsfältens cases-fil och `derivataprimtecken-2026-10-25.test.js` i Kunskapsgymmet.

@@ -1,0 +1,184 @@
+{
+  "3.182": {
+    "ändring": "4 → 2: derivera en given funktion och jämför en koefficient.",
+    "fält": [
+      "traningsniva",
+      "niva",
+      "poang",
+      "ledtrad"
+    ]
+  },
+  "3.194": {
+    "ändring": "4 → 2: F′ är redan given som f. Horisontell tangent ger en enkel insättning.",
+    "fält": [
+      "traningsniva",
+      "niva",
+      "poang",
+      "ledtrad"
+    ]
+  },
+  "3.283": {
+    "ändring": "Nivå 2 och mobilfacit med separata mellanled; svaret och primitiv-formatet oförändrade.",
+    "fält": [
+      "traningsniva",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "3.551": {
+    "ändring": "1 → 2: flera termvisa operationer eller jämförelse av flera derivator; behålls som E-mängdträning. Mobilanpassat facit.",
+    "fält": [
+      "traningsniva",
+      "s"
+    ]
+  },
+  "3.617": {
+    "ändring": "1 → 2: flera termvisa operationer eller jämförelse av flera derivator; behålls som E-mängdträning.",
+    "fält": [
+      "traningsniva"
+    ]
+  },
+  "3.727": {
+    "ändring": "1 → 2: flera termvisa operationer eller jämförelse av flera derivator; behålls som E-mängdträning.",
+    "fält": [
+      "traningsniva"
+    ]
+  },
+  "2.825": {
+    "ändring": "4 → 3: vanlig extremvärdesundersökning med negativ potens, positiv domän och teckenkontroll.",
+    "fält": [
+      "traningsniva",
+      "niva",
+      "poang"
+    ]
+  },
+  "2.812": {
+    "ändring": "5 → 3: samma metodkrav som #2.1227, en okänd tangentpunkt och en linjär ekvation efter förenkling. Tydligare mellanled och situationsfigur.",
+    "fält": [
+      "traningsniva",
+      "niva",
+      "poang",
+      "t",
+      "s"
+    ]
+  },
+  "3.58": {
+    "ändring": "4 → 3: kort samband mellan derivatan av en skillnad och en konstant funktion; manuell motivering kvar. Kortare formelrader för mobilvisning.",
+    "fält": [
+      "traningsniva",
+      "niva",
+      "poang",
+      "s"
+    ]
+  },
+  "2.740": {
+    "ändring": "Nära dubblett av #2.605 blir omvänd användning av samma derivata; nivå 2 kvar.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "tolerans",
+      "miniräknare",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "2.744": {
+    "ändring": "Nära dubblett av #2.585 blir kvalitativ teckenfråga för negativ x; nivå 2 kvar.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "svarstyp",
+      "svarFormat",
+      "alternativ",
+      "s",
+      "ledtrad",
+      "formaga",
+      "miniräknare"
+    ]
+  },
+  "3.921": {
+    "ändring": "Exakt dubblett blir förändring mellan två x-värden; fullprecisionsmål och halv hundradels tolerans ersätter för stor tolerans.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "tolerans",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "3.1052": {
+    "ändring": "Exakt dubblett av #3.1011 blir baklängesberäkning av ett startvärde; nivå 2 kvar.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "tolerans",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "3.1063": {
+    "ändring": "Exakt dubblett av #3.1012 blir bestämning av skillnad utan givet startvärde; nivå 2 kvar.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "3.1057": {
+    "ändring": "Exakt dubblett av #3.1015 blir enkel vertikal förskjutning av en primitiv funktion; nivå 1 kvar.",
+    "fält": [
+      "t",
+      "rättSvar",
+      "s",
+      "ledtrad"
+    ]
+  },
+  "3.178": {
+    "ändring": "Samma intervall måste anges, i linje med den tidigare rättningen av #3.58. Kortare formelrader för mobilvisning.",
+    "fält": [
+      "t",
+      "s"
+    ]
+  },
+  "3.198": {
+    "ändring": "Korrigerar slutsatsen växande ⇒ strikt positiv derivata. Enstaka nollvärden kan förekomma.",
+    "fält": [
+      "s"
+    ]
+  },
+  "3.1016": {
+    "ändring": "Förtydligar tidsvariabeln och visar insättning och startvolym i facit. Svaret 28 liter oförändrat.",
+    "fält": [
+      "t",
+      "s"
+    ]
+  },
+  "3.1106": {
+    "ändring": "Anger hastighetens enhet i frågan och svarsfältet; korrekt svar med eller utan m/s.",
+    "fält": [
+      "t",
+      "svarEnhet",
+      "s"
+    ]
+  },
+  "2.539": {
+    "ändring": "Delar upp derivatans potensform och bråkform i facit för mobilvisning; samma svar.",
+    "fält": [
+      "s"
+    ]
+  },
+  "3.792": {
+    "ändring": "Kortare formelrader i facit för mobil; konstanten och svaret oförändrade.",
+    "fält": [
+      "s"
+    ]
+  },
+  "3.355": {
+    "ändring": "Kortare formelrader i fråga och facit så båda funktionerna syns på mobil; samma matematik och nivå.",
+    "fält": [
+      "t",
+      "s"
+    ]
+  }
+}
