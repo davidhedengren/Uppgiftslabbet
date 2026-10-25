@@ -2390,3 +2390,15 @@ två lodräta bärande vajerdelar för sin 2:1-modell. 4.110 visar loket framfö
 vagnarna i färdriktningen. 4.244 är däremot uttryckligen ej skalenlig och
 framåtriktningen är vänster; återinför inte ett felaktigt högerkrav där.
 Skydd: `fy1-forcefigures-2026-10-24.test.js` och faktisk browserkontroll.
+
+## Ma2 kap 4 statistik S1 – problemlösning, 2026-10-25
+
+Nya #4.2000–4.2060 (61 kort, nivå 1/2/3 = 19/31/11, 15 figurer). Se
+[MA2_STATISTIK_S1_2026-10-25.md](MA2_STATISTIK_S1_2026-10-25.md). Samordning:
+serien S tar Ma2 kap 3–4 med ID 3.2000+/4.2000+, medan omgång 1–6 tar kap 1–2.
+Appen godtar ett korrekt avrundat svar när frågan saknar precision; ange därför
+precisionen i frågan när facit är ett exakt decimaltal (annars godtas 2 för 1,85).
+Normalfördelningens andelar följer 34,1/13,6/2,1/0,1; räkna andelar under en gräns
+direkt (50 + 34,1 + 13,6 = 97,7) i stället för 100 minus svansen. Kvartiler med
+jämnt antal värden. NP används bara tematiskt, utan omskrivna provtexter.
+Skydd: `ma2-statistik-s1-2026-10-25.test.js` och browserrättning av alla kort.
