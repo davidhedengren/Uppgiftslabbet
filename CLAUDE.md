@@ -164,6 +164,17 @@ Bevara krav på exakt form och angiven precision när frågan faktiskt ställer 
 Antal och andra exakta heltal ska fortfarande vara korrekta; fel enhet eller
 felaktigt avrundade tal ska inte godtas. Kontrollera detta i verkliga svarsfält.
 
+## Fysik: konstanter slås upp i formelsamlingen (användarbeslut 2026-10-25)
+
+Skriv inte naturkonstanter i fysikuppgifternas frågor eller ledtrådar. Det gäller
+c, h, e, elektronens, protonens och neutronens massa, k, G, \(\mu_0\), Avogadros
+tal, atommassenheten och viloenergier. Det gäller också omvandlingar som
+”1 eV = 1,602·10⁻¹⁹ J”. Eleverna slår upp dem i formelsamlingen. Data som hör
+till själva situationen, som mätvärden och atommassor för en viss nuklid, får stå
+kvar. Självrättningen ska godkänna svar som räknats med vanliga värden, till
+exempel både \(c=2{,}998\cdot10^8\) och \(3{,}00\cdot10^8\) m/s. Kontrollera
+facit och tolerans med båda varianterna.
+
 ## Fysik: placering av svarsinstruktioner
 
 Skriv enhet, avrundning och särskilda krav på svaret i parentes efter själva

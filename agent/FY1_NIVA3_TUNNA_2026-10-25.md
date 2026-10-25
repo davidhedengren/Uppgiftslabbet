@@ -47,3 +47,33 @@ Kontroller:
 
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades i Kunskapsgymmet med 20 svar, och alla gav väntat resultat.
+
+## Lärarbeslut: konstanter slås upp i formelsamlingen
+
+Läraren beslutade att naturkonstanter inte ska stå i uppgifterna. Svar räknade med c = 2,998·10⁸ ska också godkännas. Regeln står nu i `CLAUDE.md`.
+
+Dagens fysikkort söktes igenom:
+
+- **Konstanter i frågan:** 9.526, 9.527, 9.532, 8.650 och den nya 9.576. De togs bort.
+- **Konstanter i ledtråden:** 8.638, 9.537, 9.539 och 9.542. Ledtrådarna formulerades om.
+- **Toleranser:** alla kort med c eller h räknades om med formelsamlingens värden (6,626·10⁻³⁴ och 2,998·10⁸).
+  - Bara 9.539 underkände då ett korrekt avrundat svar (496 mot facit 497 nm), så toleransen vidgades till 1 nm.
+
+Testet kontrollerar att inga naturkonstanter står kvar i frågor eller ledtrådar.
+
+## 2. Måttenheter och prefix (enheter): 6 kort, 2.359–2.364
+
+| ID | Innehåll |
+|---|---|
+| 2.359 | Tvärsnittsarean av ett hårstrå i mm² (prefix i kvadrat) |
+| 2.360 | Hur långt ljuset färdas på en nanosekund (c slås upp) |
+| 2.361 | Volym och kantlängd för en guldkub ur densiteten |
+| 2.362 | En laddares energi i kJ och kWh |
+| 2.363 | Ungefär antalet sandkorn i en liter (storleksordning) |
+| 2.364 | Löparens fart ur tempot i min per km |
+
+Kontroller:
+
+- Facit renderades och lästes igenom, och alla räkneled ryms på mobil.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 29 svar, inklusive de rättade konstantkorten. Alla gav väntat resultat.

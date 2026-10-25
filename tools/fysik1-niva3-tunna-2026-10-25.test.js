@@ -4,8 +4,16 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifter.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANK));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
-const OMR={em_stralning:['9.576','9.577','9.578','9.579','9.580','9.581']};
+const OMR={em_stralning:['9.576','9.577','9.578','9.579','9.580','9.581'],enheter:['2.359','2.360','2.361','2.362','2.363','2.364']};
 const v=x=>JSON.stringify(x.rättSvar);
+// Lärarbeslut 2026-10-25: naturkonstanter slås upp i formelsamlingen och skrivs inte i frågor eller ledtrådar.
+const KONST=/6,6[23]\d*·10|[23],99?8?·10\^?\{?8|3,00·10\^?\{?8|3,00·10⁸|1,602·10|9,1[01]9?·10|8,99·10|6,02·10|931,5|0,511 MeV/;
+test('Inga naturkonstanter i frågor eller ledtrådar',()=>{
+  for(const id of [...Object.values(OMR).flat(),'9.526','9.527','9.532','9.537','9.539','9.542','8.638','8.650']){const t=get(id);
+    const txt=(t.t+' '+t.ledtrad).replace(/<svg[\s\S]*?<\/svg>/g,'').replace(/\{,\}/g,',').replace(/\\cdot/g,'·').replace(/\s*·\s*/g,'·');
+    assert.doesNotMatch(txt,KONST,id);}
+  assert.equal(get('9.539').tolerans,1);
+});
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'(0/1/0)',id);assert.equal(t.spel,true,id);
     assert.match(t.s,/class="facit-metod"/,id);assert.match(t.s,/class="facit-svar"/,id);assert.ok(String(t.ledtrad).replace(/<[^>]+>/g,'').trim().length>=15,id);
