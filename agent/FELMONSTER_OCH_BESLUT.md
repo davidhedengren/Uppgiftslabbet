@@ -2558,3 +2558,13 @@ Skydd: `ma2-s5-2026-10-25.test.js` (även triangelolikhet och viewBox) och brows
 17 nya C-uppgifter #4.532–4.548 samt självrättning i #4.52. En exempelfigur får inte tyst utesluta den andra sinuslösningen. Kontrollera både supplementvinkel och positiv återstående vinkel; använd mängdsvar när båda efterfrågas. Vid minsta/största sidlängd måste gränsvinkeln också ge en verklig triangel. Markera observationsvinkel som yttervinkel om den inte är triangelns inre vinkel. Sidproportioner och vinklar testas från SVG-koordinater.
 
 Se [alla ID:n, ändringar och kommentarer](MA3_SINUS_C_2026-10-25.md). Skydd: `ma3-sinus-c-2026-10-25.test.js`, browserfall och befintligt sinussatstest.
+
+## Ma2 kap 3–4 S6 – sats och bevis, randvinklar, lådagram med flera, 2026-10-25
+
+Nya #3.2122–3.2161 och #4.2139–4.2147 (49 kort, nivå 1/2/3 = 14/25/10, 35 figurer). Se
+[MA2_S6_2026-10-25.md](MA2_S6_2026-10-25.md). Nästa lediga ID i serien S: 3.2162 och 4.2148.
+Felmönster: en vinkeletikett kan vara rätt i texten men fel i figuren när punkterna
+placeras på cirkeln för hand (3.2131 visade 60° men var märkt 34°). Mät därför
+vinkelbågarna ur SVG-koordinaterna. Delningspunkter i topptriangelfigurer ska följa
+de angivna måtten. Commita lokalt före rebase; använd inte pull med autostash.
+Skydd: `ma2-s6-2026-10-25.test.js` (även vinkelbågar) och browserrättning.
