@@ -178,3 +178,22 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 16 svar, och alla gav väntat resultat.
+
+## 8. Sönderfall: 5 kort, 9.582–9.586
+
+| ID | Innehåll |
+|---|---|
+| 9.582 | Antal alfa- och beta-minus-sönderfall från Th-232 till Pb-208 |
+| 9.583 | Våglängden för en gammafoton på 0,662 MeV från Ba-137 (svar i pm) |
+| 9.584 | Vilket sönderfall som är möjligt när massskillnaden bara är 0,00080 u (flerval) |
+| 9.585 | Energin vid tritiums beta-minus-sönderfall (svar i keV) |
+| 9.586 | Sönderfallstyp ur ett N–Z-diagram med stabilitetsband (figur, flerval) |
+
+Övriga ändringar och kontroller:
+
+- 9.557: meningen ”Elektronens massa är 0,000549 u.” togs bort ur frågan, eftersom konstanten ska slås upp i formelsamlingen. Svaret 1,20 MeV gäller fortfarande.
+- 9.583 räknas med 6,626·10⁻³⁴ och 2,998·10⁸ och har toleransen 0,01. Svaren 1,87 och 1,88 godkänns båda.
+- Facit renderades och lästes igenom. 4 räkneled radbröts.
+- I figuren blev etiketten ”stabila kärnor” en förklaring uppe till vänster, och de lodräta rutlinjerna togs bort. SVG-granskaren ger 0 fynd.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 12 svar, och alla gav väntat resultat.
