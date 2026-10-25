@@ -2480,3 +2480,10 @@ Fem äldre kort har följdkontrollerats i riktiga svarsfält. Se
 [uppgiftslista, C-motiv och verifiering](MA3_LN_C_2026-10-25.md).
 Skydd: `ma3-ln-c-2026-10-25.test.js`, `exp-svar-2026-10-25.test.js`
 och browserharnessen `ma3-c-2026-10-25.browser.cjs` med omgångens fallfil.
+
+
+## Ma3 potensderivata: mängdträning och mobilfacit – 2026-10-25
+
+Användaren vill uttryckligen behålla mängdträning, även olika funktioner att derivera. Bedöm nivån individuellt: rutin är inte automatiskt E-nivå. #2.212 och #2.250 behåller C3; enbart den kortare #2.217 sänks till nivå 2. 20 nya varierade C-kort #2.1221–2.1240 kompletterar dem.
+
+Långa mellanrader med alla multiplikationer kan bli bredare än mobilens facit trots att slutsvaret ryms. I #2.02 står de enskilda termernas derivator nu i brytbar löptext. Bevara matematiken och kontrollera minst fem liknande fall i faktisk mobilvy. Se [alla granskade ID:n, ändringar och kommentarer](MA3_POTENS_C_2026-10-25.md). Skydd: `ma3-potens-c-2026-10-25.test.js` och omgångens browserfall.

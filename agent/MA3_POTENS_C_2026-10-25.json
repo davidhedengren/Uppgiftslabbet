@@ -1,0 +1,122 @@
+{
+  "2.1221": {
+    "C-motivering": "Bestämmer både koefficient och exponent från två slags information.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 6 och n = 1,5."
+  },
+  "2.1222": {
+    "C-motivering": "Resonerar om hur derivatan skalar när x ändras, inte bara ett derivatavärde.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "n = 3."
+  },
+  "2.1223": {
+    "C-motivering": "Kombinerar funktionens höjd och lutning med bråk- och negativa exponenter.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 4 och b = 2."
+  },
+  "2.1224": {
+    "C-motivering": "Översätter ett geometriskt krav till en parameter i en negativ potens.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "k = 16."
+  },
+  "2.1225": {
+    "C-motivering": "Behöver välja en omskrivning och lösa ett villkor som innehåller både rot och invers rot.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "x = 4."
+  },
+  "2.1226": {
+    "C-motivering": "Väljer en algebraisk strategi och drar en slutsats om hela grafen.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Symbolisk jämförelse prövas utan räknare.",
+    "kommentar": "Funktionen växer eftersom båda termerna i derivatan är positiva."
+  },
+  "2.1227": {
+    "C-motivering": "Kombinerar potensderivata och koordinatgeometri med okänd tangentpunkt.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "x = 9."
+  },
+  "2.1228": {
+    "C-motivering": "Två tangensvillkor måste kombineras och den okända punkten bestämmas.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 12."
+  },
+  "2.1229": {
+    "C-motivering": "Kopplar okänd exponent till andraderivata och väljer rätt rot med hjälp av villkoret.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "n = 5."
+  },
+  "2.1230": {
+    "C-motivering": "Analyserar varför ett fel kan döljas vid ett provvärde och mäter felet vid ett annat.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "4 gånger."
+  },
+  "2.1231": {
+    "C-motivering": "Skiljer läge och hastighet och kopplar ihop dem genom en okänd tidpunkt.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "1,25 m/s."
+  },
+  "2.1232": {
+    "C-motivering": "Översätter mellan sekant, tangent och en ekvation med bråkexponent.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "x = 4."
+  },
+  "2.1233": {
+    "C-motivering": "Kopplar negativ bråkexponent till lokal linjär uppskattning och relativ förändring.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "7,5 %."
+  },
+  "2.1234": {
+    "C-motivering": "Avgör ett existenspåstående genom att jämföra två derivator symboliskt.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Symbolisk jämförelse prövas utan räknare.",
+    "kommentar": "Nej, f′(x)−g′(x) är alltid positiv."
+  },
+  "2.1235": {
+    "C-motivering": "Ställer upp och löser ett ekvationssystem från två lokala lutningar.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "a = 2 och b = 3."
+  },
+  "2.1236": {
+    "C-motivering": "Kombinerar rotderivata, stationärt villkor, teckenstudium och efterfrågat funktionsvärde.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "Det minsta värdet är −3."
+  },
+  "2.1237": {
+    "C-motivering": "Skiljer funktionens förändring från derivatans förändring efter en nödvändig omskrivning.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Symbolisk jämförelse prövas utan räknare.",
+    "kommentar": "f′ är positiv och avtagande."
+  },
+  "2.1238": {
+    "C-motivering": "Bestämmer en parameter genom både derivatans tecken och extremvärdets höjd.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "c = 4."
+  },
+  "2.1239": {
+    "C-motivering": "Jämför positiva och negativa potenser och hittar hela lösningsmängden.",
+    "figur": "Algebraiska samband är innehållet; ingen extra illustration behövs.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "x = −1 eller x = 1."
+  },
+  "2.1240": {
+    "C-motivering": "Kombinerar generell potensderivata, tangentekvation och triangelarea; parametern elimineras.",
+    "figur": "Relevant figur/tabell.",
+    "verktyg": "Miniräknare tillåten, GeoGebra behövs inte.",
+    "kommentar": "2 areaenheter."
+  }
+}
