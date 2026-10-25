@@ -48,11 +48,10 @@ test('Figurer: vinkelbågar, områdesregler, precision och flerval',()=>{
   for(const id of NYA.filter(id=>get(id).omr==='geometri_problemlosning')){assert.match(get(id).t,/<svg/,id);assert.doesNotMatch(get(id).s,/facit-steglista/,id);}
   for(const id of NYA){const t=get(id);if(typeof t.rättSvar==='number'&&!Number.isInteger(t.rättSvar))assert.match(t.t,/decimal|exakt/,id);}
   for(const id of NYA.filter(id=>get(id).svarstyp==='alternativ')){const a=get(id).alternativ,r=a.filter(x=>x.ratt).length;assert.ok(r>=1&&a.length-r>=2,id);if(r===1)assert.equal(a[0].ratt,false,id);}
-  const fig=NYA.filter(id=>/<svg/.test(get(id).t));assert.equal(fig.length,43);
-  // Lärarbeslut 2026-10-25: sats och bevis får figurer (Venndiagram, prickbilder, romb, sexhörning, talmönster).
-  // 3.2130 (felet i beviset för 2 = 1) är ren algebra och är ett dokumenterat undantag.
-  for(let i=2122;i<=2129;i++)assert.match(get(`3.${i}`).t,/<svg/,`3.${i}`);
-  assert.doesNotMatch(get('3.2130').t,/<svg/);
+  const fig=NYA.filter(id=>/<svg/.test(get(id).t));assert.equal(fig.length,36);
+  // Lärarbeslut 2026-10-25 (andra beslutet): logik- och begreppskort i sats och bevis har ingen figur.
+  // Bara 3.2128 behåller sin figur, eftersom texten beskriver sexhörningens uppdelning i trianglar.
+  for(let i=2122;i<=2130;i++)(i===2128?assert.match:assert.doesNotMatch)(get(`3.${i}`).t,/<svg/,`3.${i}`);
   for(const id of fig)for(const svg of get(id).t.match(/<svg[^>]*>/g))assert.match(svg,/aria-label="[^"]{20,}"/,id);
   assert.match(get('3.2154').t,/inte skalenlig/);
 });

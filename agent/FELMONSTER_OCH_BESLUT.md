@@ -2592,3 +2592,14 @@ stödjer resonemanget utan att peka ut svaret. För omvändningar ritas satsens 
 motexemplet. Undantag: symbolers betydelse, vad ett bevis är, direkta insättningar och
 ren algebra. Äldre kompakta bankkort ändras bara i det enskilda textfältet, och hela
 banken jämförs efteråt. Skydd: `ma2-satsbevis-figurer-2026-10-25.test.js`.
+
+## Sats och bevis: figurer bara där uppgiften bär dem – lärarbeslut 2026-10-25 (ersätter de två föregående posterna)
+
+Läraren granskade figurerna i `sats_bevis` och tyckte att de var tvingade. Venndiagram, rutor
+med ✓, ✗ och ?, om-så-scheman, prickbilder, talremsor, tallinjer och former bredvid ja/nej-frågor togs bort
+igen (41 kort, exakt återställda). Kvar är 3.236 och 3.352 (tredje vinkeln i en triangel),
+3.433 (yttervinklarnas summa) och 3.2128 (sexhörningen som texten delar i trianglar), så att 27 av 76
+kort har figur. Regel: logik-, begrepps- och bevisstrukturkort får ingen figur. Figur används när
+uppgiften handlar om en konkret figur eller beräkning. ”Hellre figur än utan” betyder inte att en figur
+ska konstrueras när texten redan är tydlig. Visa några exempel för läraren innan en hel områdesrevision
+genomförs. Skydd: `ma2-satsbevis-figurer-2026-10-25.test.js` och `ma2-s6-2026-10-25.test.js`.

@@ -1,5 +1,7 @@
 # Ma2 sats och bevis: figurer till äldre kort, 2026-10-25
 
+> **Återtaget samma dag (lärarbeslut 2026-10-25, andra beslutet).** Läraren tyckte inte om resultatet och menade att figurerna var tvingade. Figurerna togs bort igen från 34 av de 37 korten nedan och från 7 av S6-korten, och korten återställdes exakt till texten före figurerna. Kvar är 3.236, 3.352 och 3.433 här, och 3.2128 i S6. Där handlar uppgiften om en konkret figur eller beräkning. Efter återtagandet har 27 av 76 kort i `sats_bevis` figur. Resten av dokumentet beskriver den första, återtagna revisionen.
+
 **Lärarbeslut 2026-10-25:** ”alltid hellre figur än utan om det är möjligt och tillför något.” Före revisionen hade 31 av 76 kort i `sats_bevis` figur. Nu har 68 av 76 det.
 
 ## Princip
