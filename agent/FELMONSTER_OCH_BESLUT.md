@@ -2581,4 +2581,4 @@ implikation, motexempel och bevis får en figur när den stödjer resonemanget: 
 för påståenden och omvändningar, prickbilder för bevis om heltal, satsens figur (inte
 motexemplet) och talmönster. Figuren får inte peka ut rätt alternativ. Bara ren algebra,
 som felet i beviset för 2 = 1, är ett dokumenterat undantag. Skydd: `ma2-s6-2026-10-25.test.js`.
-Övriga 53 kort i `sats_bevis` utan figur är inte genomgångna i denna revision.
+Efter revisionen har 31 av 76 kort i `sats_bevis` figur. De 44 äldre korten utan figur är inte genomgångna här.
