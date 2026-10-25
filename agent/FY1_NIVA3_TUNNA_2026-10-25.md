@@ -136,3 +136,22 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 14 svar, och alla gav väntat resultat.
+
+## 6. Parallellkoppling: 6 kort, 8.672–8.677
+
+| ID | Innehåll |
+|---|---|
+| 8.672 | Ström genom den ena grenen ur totalströmmen, via ersättningsresistansen |
+| 8.673 | En tredje lampa kopplas in: ny ström och ersättningsresistans |
+| 8.674 | Okänd resistans ur två amperemetrar (kretsfigur) |
+| 8.675 | Två hushållslampor i ett vägguttag: total ström och resistans |
+| 8.676 | En ledning utan resistans parallellt med en lampa, alltså kortslutning (flerval) |
+| 8.677 | Hur många resistorer på 150 Ω som behövs för högst 22 Ω |
+
+Kontroller:
+
+- Facit renderades och lästes igenom.
+- Testet hittade att 8.677 saknade svarsinstruktion, och den lades till.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 14 svar, och alla gav väntat resultat.
