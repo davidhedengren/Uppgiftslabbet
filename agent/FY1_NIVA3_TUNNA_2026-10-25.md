@@ -97,3 +97,25 @@ Kontroller:
 - Facit renderades och lästes igenom, och 3 räkneled radbröts.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 13 svar, och alla gav väntat resultat.
+
+## 4. Elektriska fält och fältstyrka (falt): 6 kort, 8.661–8.666
+
+Tre av de fem befintliga nivå 3-korten var samma mall (fältet mellan +Q och −Q i P). De nya korten:
+
+| ID | Innehåll |
+|---|---|
+| 8.661 | Antal elementarladdningar på en svävande oljedroppe |
+| 8.662 | Kraften när plattorna flyttas isär med samma spänning |
+| 8.663 | Avståndet för en given fältstyrka från en punktladdning |
+| 8.664 | Fältet mellan två lika positiva laddningar, där fälten subtraheras (figur) |
+| 8.665 | Fältets storlek och riktning ur kraften på en negativ laddning (flerval) |
+| 8.666 | Fältet när laddningen dubblas och avståndet tredubblas |
+
+Konstanterna k och e slås upp i formelsamlingen.
+
+Kontroller:
+
+- Facit renderades och lästes igenom, och 5 räkneled radbröts.
+- SVG-granskaren ger 0 fynd. Plustecknen ritades som linjer.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 17 svar, och alla gav väntat resultat.
