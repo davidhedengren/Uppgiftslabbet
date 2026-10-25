@@ -2561,7 +2561,7 @@ Se [alla ID:n, ändringar och kommentarer](MA3_SINUS_C_2026-10-25.md). Skydd: `m
 
 ## Ma2 kap 3–4 S6 – sats och bevis, randvinklar, lådagram med flera, 2026-10-25
 
-Nya #3.2122–3.2161 och #4.2139–4.2147 (49 kort, nivå 1/2/3 = 14/25/10, 35 figurer). Se
+Nya #3.2122–3.2161 och #4.2139–4.2147 (49 kort, nivå 1/2/3 = 14/25/10, 43 figurer efter revisionen). Se
 [MA2_S6_2026-10-25.md](MA2_S6_2026-10-25.md). Nästa lediga ID i serien S: 3.2162 och 4.2148.
 Felmönster: en vinkeletikett kan vara rätt i texten men fel i figuren när punkterna
 placeras på cirkeln för hand (3.2131 visade 60° men var märkt 34°). Mät därför
@@ -2573,3 +2573,12 @@ Skydd: `ma2-s6-2026-10-25.test.js` (även vinkelbågar) och browserrättning.
 18 nya #4.549–4.566 ger 20 C-kort. Blanda algebraisk mängdträning med tillämpningar. Kontrollera svängvinkel kontra triangelvinkel, timvisarens verkliga läge och att procentförändring gäller längder, inte deras kvadrater. Gemensam skala krävs i sammansatta figurer. Placera långa sidoetiketter efter deras bredd, inte med ett konstant litet avstånd. Basens hela längd ska ligga på en egen rad när H/M/D delar basen.
 
 [Alla ID:n och kommentarer](MA3_COSINUS_C_2026-10-25.md). [Sammanställning av alla sju Ma3-rundor](MA3_NIVA3_2026-10-25.md). Skydd: oberoende matematik-/geometritester samt faktisk browserrättning på mobil och dator.
+
+## Sats och bevis ska också ha figurer – lärarbeslut 2026-10-25
+
+Ersätter S6-loggens första motivering (”logikkort behöver ingen figur”). Även kort om
+implikation, motexempel och bevis får en figur när den stödjer resonemanget: Venndiagram
+för påståenden och omvändningar, prickbilder för bevis om heltal, satsens figur (inte
+motexemplet) och talmönster. Figuren får inte peka ut rätt alternativ. Bara ren algebra,
+som felet i beviset för 2 = 1, är ett dokumenterat undantag. Skydd: `ma2-s6-2026-10-25.test.js`.
+Övriga 53 kort i `sats_bevis` utan figur är inte genomgångna i denna revision.
