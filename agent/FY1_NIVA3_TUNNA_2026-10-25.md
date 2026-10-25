@@ -155,3 +155,26 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 14 svar, och alla gav väntat resultat.
+
+## 7. Potential: 6 kort, 8.678–8.683
+
+Nästan alla befintliga nivå 3-kort var potentialvandringar med flera batterier. De nya korten:
+
+| ID | Innehåll |
+|---|---|
+| 8.678 | Negativ potential i P när pluspolen är jordad (kretsfigur) |
+| 8.679 | Hur mycket en elektrons rörelseenergi ökar när den går från −20 V till +30 V |
+| 8.680 | En proton som accelereras genom 2,0 kV och sedan bromsas med 500 V |
+| 8.681 | Energin i ett mobilbatteri (3,7 V, 3 000 mAh) |
+| 8.682 | R₁ och R₂ ur ett potentialdiagram runt kretsen (figur) |
+| 8.683 | Åt vilket håll en elektron börjar röra sig i ett fält (flerval) |
+
+Kontroller:
+
+- Facit renderades och lästes igenom.
+  - ”3,000 Ah” skrevs om till ”3 000 mAh = 3,0 Ah”.
+  - Batterietiketten i figuren flyttades.
+  - 4 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 16 svar, och alla gav väntat resultat.
