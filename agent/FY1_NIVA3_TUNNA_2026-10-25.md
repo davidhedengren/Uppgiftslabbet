@@ -77,3 +77,23 @@ Kontroller:
 - Facit renderades och lästes igenom, och alla räkneled ryms på mobil.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 29 svar, inklusive de rättade konstantkorten. Alla gav väntat resultat.
+
+## 3. Tyngdkraft: 5 kort, 4.897–4.901
+
+| ID | Innehåll |
+|---|---|
+| 4.897 | Vilken planet det är, ur en mätning (flerval, jämför med formelsamlingen) |
+| 4.898 | Lastbilens massa ur tyngdkraften 0,15 MN, i ton |
+| 4.899 | Tyngden av en hink med vatten (densiteten ingår) |
+| 4.900 | Vilken låda som har störst tyngd, 12 kg på månen eller 2,0 kg på jorden (flerval efter beräkning) |
+| 4.901 | Kraftmätarens mätområde på jorden och på månen |
+
+g-värden står inte i frågorna. Toleranserna godtar både 9,81 och 9,82 m/s² samt 1,62 och 1,63 m/s².
+
+De numeriska korten har lagts till i tyngdkraftslistan i `fysik1-kapitel4.test.js`. Antalet i `fysik1-tyngdkraft-variation-2026-10-21` är nu 46 kort, varav 44 spelbara.
+
+Kontroller:
+
+- Facit renderades och lästes igenom, och 3 räkneled radbröts.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 13 svar, och alla gav väntat resultat.
