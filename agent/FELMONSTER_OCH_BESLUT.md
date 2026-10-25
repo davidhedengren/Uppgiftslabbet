@@ -2423,3 +2423,27 @@ sannolikhetskalkylator, regression eller r ur data, annars nekat (testet kräver
 `geogebra` följer ordet GeoGebra i frågan). Små heltalssvar krockar lätt med äldre
 kort i samma område; kontrollera krockar mot hela området innan talen låses.
 Skydd: `ma2-statistik-s3-2026-10-25.test.js` och browserrättning av alla kort.
+
+
+## Småtal, delkedjor och spårens faktiska urval – 2026-10-25
+
+Se `FELRAPPORTER_2026-10-25_0758.md` och `_1332.md`. Miniräknaren får
+inte nollställa alla tal under en absolut storleksgräns: Ma1 0.1073 och
+flera fysikstorheter är mycket mindre än 10⁻¹³. Endast exakta trigonometriska
+nollställen korrigeras, inte små vinklar eller små beräknade storheter.
+0.1073 kräver grundpotensform; noll får aldrig accepteras som det lilla svaret.
+
+Delkedjor startar med första delen och visar original-ID och delräknare.
+Svårare delar förblir frivilliga även först i kedjan. Ett hopp över en svårare
+mellandel får inte kasta bort senare lättare delar. Hopp är inte felsvar/XP.
+Prov/adminblad behåller oberoende kort. Ma4 3.22/3.51 har förbättrade lösningar.
+
+Räkna variation via `availableTasks()` per spår, inte bara råbanken. Ma1c hade
+endast 8.18 i Proportionalitet, trots fler kort på 1a/1b. Åtta nya 0.1253–1260
+ger nio möjliga nivå-3-kort för 1c. Inga falska dubblett-ID:n eller slumpade
+talvarianter används. Nya kort ändrar inte elevens historik för 8.18.
+
+Abstrakt kedjeregel med punktvis givna värden för okända funktioner ligger på
+nivå 4 i Ma4 2.263/225/193. Konkreta rutinuttryck höjs inte automatiskt.
+Skydd: `felrapporter-2026-10-25.test.js`, konsumentens browser/cases och
+`passvariation-2026-10-21.test.js`. Rapportstatus i databasen har inte ändrats.
