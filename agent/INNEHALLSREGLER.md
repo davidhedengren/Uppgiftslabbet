@@ -74,6 +74,10 @@ Standardkonstanter och färdiga formelledningar ska däremot inte skrivas i frå
 - För enkla rutinuppgifter kan facit vara kort. För resonemang, modellering och högre träningsnivåer ska lösningen vara så fullständig att eleven förstår varför metoden fungerar.
 - Inga generiska malltexter som bara halvdåligt passar många uppgifter.
 - Facit och ledtråd på ett Kunskapsgymmet-kort får inte referera till osynliga tidigare delar.
+- Användarbeslut 2026-10-25: facit, ledtråd och flervalskommentarer ska **alltid granskas noggrant** för varje nytt kort, även vid stora påfyllnader.
+  - Matematikfacit följer Ma1 1.116: varje steg har en förklarande `facit-rubrik` och beräkningen står i samma steg. Avsluta med en svarsrad.
+  - Fysikfacit är en sammanhängande lösning med modell, samband, beräkning med enheter och en svarsrad.
+  - Rendera och läs facit och ledtråd före leverans, och bygg ut tunna facit. Se `CLAUDE.md`, avsnittet ”Facit, ledtråd och svar ska alltid granskas noggrant”.
 
 ### 3.7 Självrättningen måste fungera
 

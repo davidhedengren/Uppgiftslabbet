@@ -93,6 +93,37 @@ när det tillför förståelse. Anpassa längden till uppgiften och radbryt lån
 uttryck för mobilvisning. Detta ändrar inte regeln om sammanhängande
 fysiklösningar utan generiska numrerade steglistor.
 
+### Facit, ledtråd och svar ska alltid granskas noggrant (användarbeslut 2026-10-25)
+
+Varje ny eller omarbetad uppgift ska ha ett tydligt facit, en bra ledtråd och
+genomtänkta svarsalternativ. Det gäller även vid stora påfyllnadsomgångar.
+Detta är ett krav, inte något man gör om tid finns.
+
+- **Facit i matematik** följer 1.116. Varje steg har en rubrik som förklarar
+  vad man gör (`facit-rubrik`), och beräkningen står i samma steg. Visa
+  mellanled och avsluta med en svarsrad. Vid resonemang ska facit förklara
+  varför, inte bara konstatera.
+- **Rubrikerna skrivs för just den uppgiften.** Läraren vill ha det exakt
+  så (2026-10-25). En rubrik ska beskriva det som faktiskt händer i steget,
+  till exempel ”\(x^2\) finns i båda leden och tar ut varandra” eller
+  ”Gången finns på båda sidor, så hela ytan är \(8+2x\) lång”. Den får
+  inte vara en allmän mallfras som ”Steg 2”, ”Förenkla” eller ”Lös
+  ekvationen” som skulle passa på vilken uppgift som helst. Generera
+  aldrig rubriker automatiskt. Lägg till en kontroll när den tillför
+  förståelse.
+- **Facit i fysik** är en sammanhängande lösning: först modell och samband
+  i ord, sedan beräkning med enheter och till sist en svarsrad med enhet
+  och rimlig precision.
+- **Ledtråden** är specifik för uppgiften och pekar mot nästa tanke eller
+  metodval. Den får inte innehålla svaret, de insatta värdena eller den
+  färdiga ekvationen när det är just modellvalet som tränas.
+- **Flerval:** varje felaktigt alternativ har en kommentar som förklarar
+  felet, och facit förklarar varför det rätta alternativet stämmer.
+- **Före leverans:** rendera facit och ledtråd för varje nytt kort, inte
+  bara frågan och figuren, och läs igenom dem. Bygg ut för tunna facit.
+  Kontrollera att facit, svarsrad och `rättSvar` stämmer överens. Skriv i
+  loggen att granskningen är gjord.
+
 Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
 berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.
 
