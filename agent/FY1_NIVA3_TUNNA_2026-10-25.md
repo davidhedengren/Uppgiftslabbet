@@ -119,3 +119,20 @@ Kontroller:
 - SVG-granskaren ger 0 fynd. Plustecknen ritades som linjer.
 - Validatorn ger 788 fynd både före och efter ändringen.
 - Självrättningen testades med 17 svar, och alla gav väntat resultat.
+
+## 5. Kretsar och ström (strom): 5 kort, 8.667–8.671
+
+| ID | Innehåll |
+|---|---|
+| 8.667 | Resistans och ström ur ett U–I-diagram med två resistorer (figur) |
+| 8.668 | Glödlampans resistans vid två spänningar ur en böjd I–U-kurva (figur) |
+| 8.669 | Tiden för en mol elektroner vid 2,0 A (konstanterna slås upp) |
+| 8.670 | Voltmeter kopplad i serie med en lampa (flerval) |
+| 8.671 | Resistans ur ändringen i spänning och ström |
+
+Kontroller:
+
+- Facit renderades och lästes igenom, och 4 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 788 fynd både före och efter ändringen.
+- Självrättningen testades med 14 svar, och alla gav väntat resultat.
