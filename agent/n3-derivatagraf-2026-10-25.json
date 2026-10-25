@@ -1,0 +1,67 @@
+{
+  "3.1233": {
+    "nivå": "Översätter en förändrad funktion till ny nollnivå för derivatan och klassificerar teckenbytet.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1234": {
+    "nivå": "Kopplar derivatans teckenbyte till spegling av själva funktionen.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1235": {
+    "nivå": "Prövar om en stationär punkt kan stoppa en strikt ökning över ett intervall.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1236": {
+    "nivå": "Översätter och klassificerar två stationära punkter.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1237": {
+    "nivå": "Jämför två förändringshastigheter och drar slutsats om deras funktionsskillnad.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1238": {
+    "nivå": "Skiljer negativ förändring från en ökande förändringshastighet.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1239": {
+    "nivå": "Kopplar grafavläsning till en ändrad vågrät skala.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1240": {
+    "nivå": "Kombinerar tvåpunktlutning med två möjliga tangentlägen.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1241": {
+    "nivå": "Kombinerar kontinuitet och monotonitet för att få exakt antal, inte bara ett minimiantal.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1242": {
+    "nivå": "Skiljer x-koordinat, derivatans värde och funktionens maxvärde.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1243": {
+    "nivå": "Kopplar derivatagrafens tecknade area till funktionsskillnad och skiljer den från slutvärdet.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1244": {
+    "nivå": "Kombinerar funktionsvärde med grafiskt given derivata till en tangent.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  },
+  "3.1245": {
+    "nivå": "Formulerar vinstens förändring och tolkar grafisk marginalkostnad.",
+    "figur": "Figur/tabell bär informationen.",
+    "verktyg": "Miniräknare tillåten, men sambanden behöver tolkas av eleven."
+  }
+}

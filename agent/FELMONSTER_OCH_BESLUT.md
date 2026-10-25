@@ -2623,3 +2623,7 @@ Se MA2_KAP3_REVISION_2026-10-25.md. Skydd: `ma2-kap3-revision-2026-10-25.test.js
 
 [18 nya uppgifter och fem äldre jämförelser](MATF1_REFERENS_2026-10-25.md).
 Fakultetskvoter kan bli 3471,9999999999995 i flyttalsaritmetik. Diskreta antal ska beräknas exakt som bråk när uttrycket tillåter det, inte godtas med en ökad tolerans. Bevara kontroll av varje led i likhetskedjor, syntax, fria konstanter och exakta heltal. Parserändringen gäller endast `antal_satt`; rotuttryck och övriga numeriska format behåller sin tidigare väg. Skydd: `antal-satt.test.js`, `exakta-talsvar.test.js` och browserfallen för 18 nya/fem äldre uppgifter. Partiell integration har korta men kompletta mellanled; använd mobila formelradbrytningar när produkterna blir långa.
+
+## Ma3 grafisk derivata, nivå 3 – 2026-10-25
+
+13 nya kort 3.1233–3.1245, se N3_DERIVATAGRAF_2026-10-25.md. Skilj f från f′ och från derivatan av en transformerad funktion. Maxvärdets höjd kan inte bestämmas ur enbart f′. Vid läsning av 4,5 efterfrågas en decimal så att det avrundade heltalet 5 inte ersätter det avsedda läget. Alla nya facit följer Ma1 1.116 med konkreta rubriker, förklaringar och mellanled. Skydd: n3-derivatagraf-2026-10-25.test.js och faktiska browserfall. Äldre uppgifter oförändrade.
