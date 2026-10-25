@@ -2447,3 +2447,22 @@ Abstrakt kedjeregel med punktvis givna värden för okända funktioner ligger p�
 nivå 4 i Ma4 2.263/225/193. Konkreta rutinuttryck höjs inte automatiskt.
 Skydd: `felrapporter-2026-10-25.test.js`, konsumentens browser/cases och
 `passvariation-2026-10-21.test.js`. Rapportstatus i databasen har inte ändrats.
+
+
+## Bankinventering: elevområde, spår och svårighetsnivå – 2026-10-25
+
+Fullständig mängdinventering i `NIVAINVENTERING_2026-10-25.md/.json`: 566
+elevsynliga område/spår-vyer, 411 skilda urval efter sammanslagning av identiska
+ID-pooler. Räkna via konsumentens availableTasks/getCards och beakta spel:false,
+deluppgifter och spår. Det finns 54 urval med färre än 20 kort på nivå 1–2,
+och 149 med färre än 8 på nivå 3. Målet 50–100 gäller nivå 1–2 tillsammans.
+Gränsen 16 på nivå 3 är ett arbetsförslag, inte ett fast användarkrav.
+
+Fyll inte automatiskt spåröar som skapats av återplacerade repetitionskort
+(t.ex. Ma3b trigonometri). Kontrollera kursplanering först. Antalet delkort
+får inte förväxlas med skilda situationer: Ma3 exponentialtillämpningar har
+35 nivå-3-kort från 13 huvuduppgifter. Nivåer ska kalibreras före påfyllnad;
+Ma4 2.576/4.520 och placeringen av Ma5 4.358 är granskningskandidater, inte
+redan konstaterade och rättade fel. Inga bankändringar gjordes i inventeringen.
+Prioritera Ma3 naturliga logaritmer (0 på nivå 3), derivatabegrepp och graf,
+Ma1 statistiska resonemang samt Fy1 tredje lagen, s-t-diagram och laddning.
