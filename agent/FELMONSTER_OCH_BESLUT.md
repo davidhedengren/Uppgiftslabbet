@@ -2582,3 +2582,13 @@ för påståenden och omvändningar, prickbilder för bevis om heltal, satsens f
 motexemplet) och talmönster. Figuren får inte peka ut rätt alternativ. Bara ren algebra,
 som felet i beviset för 2 = 1, är ett dokumenterat undantag. Skydd: `ma2-s6-2026-10-25.test.js`.
 Efter revisionen har 31 av 76 kort i `sats_bevis` figur. De 44 äldre korten utan figur är inte genomgångna här.
+
+## Sats och bevis: figurer till äldre kort – 2026-10-25
+
+Lärarbeslut: ”alltid hellre figur än utan om det är möjligt och tillför något.” 37 äldre
+kort i `sats_bevis` fick figur, så att 68 av 76 nu har figur. Se
+[MA2_SATSBEVIS_FIGURER_2026-10-25.md](MA2_SATSBEVIS_FIGURER_2026-10-25.md). Principen är att figuren
+stödjer resonemanget utan att peka ut svaret. För omvändningar ritas satsens figur, inte
+motexemplet. Undantag: symbolers betydelse, vad ett bevis är, direkta insättningar och
+ren algebra. Äldre kompakta bankkort ändras bara i det enskilda textfältet, och hela
+banken jämförs efteråt. Skydd: `ma2-satsbevis-figurer-2026-10-25.test.js`.
