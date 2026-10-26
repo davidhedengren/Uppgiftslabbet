@@ -1,0 +1,481 @@
+{
+  "kurs": "matf1",
+  "omrade": "integraler_area",
+  "granskade": [
+    "3.12",
+    "3.22",
+    "3.28",
+    "3.206",
+    "3.208",
+    "3.210",
+    "3.49",
+    "3.50",
+    "3.51",
+    "3.70",
+    "3.71",
+    "3.219",
+    "3.73",
+    "3.80",
+    "3.224",
+    "3.53",
+    "3.75",
+    "3.84",
+    "3.102",
+    "3.103",
+    "3.104",
+    "3.285",
+    "3.288",
+    "3.347",
+    "3.348",
+    "3.349",
+    "3.350",
+    "3.351",
+    "3.352"
+  ],
+  "atgardade": [
+    "3.12",
+    "3.22",
+    "3.28",
+    "3.206",
+    "3.208",
+    "3.210",
+    "3.49",
+    "3.50",
+    "3.51",
+    "3.70",
+    "3.71",
+    "3.219",
+    "3.73",
+    "3.80",
+    "3.224",
+    "3.53",
+    "3.75",
+    "3.84",
+    "3.102",
+    "3.103",
+    "3.104",
+    "3.285",
+    "3.288",
+    "3.347",
+    "3.348",
+    "3.349",
+    "3.350",
+    "3.351",
+    "3.352"
+  ],
+  "granskad_inget_fel": [],
+  "uppgifter": [
+    {
+      "id": "3.12",
+      "status": "Åtgärdad",
+      "kommentar": "Facit härleder nollställena, areauttrycket a³/6 och parametern. Den irrelevanta geometriledtråden ersätts.",
+      "andrade_falt": [
+        "typ",
+        "s",
+        "ledtrad"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.22",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar båda gränsvärdena och varför den negativa integralen ger en positiv area. Exakt bråksvar behålls.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.28",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar trapetsens båda höjder och bredd samt en kontroll med integral.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 1
+    },
+    {
+      "id": "3.206",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar den primitiva funktionen och insättning av båda gränserna. Exakthetskravet behålls.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.208",
+      "status": "Åtgärdad",
+      "kommentar": "Integralen beräknas före division med intervallets längd. Det exakta svaret är 64/3.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.210",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar den positiva roten och bevisar unikheten med strikt positiv derivata. Motiveringen bedöms fortsatt manuellt.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.49",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar symmetrin och halva arean. Bråk och korrekta decimalavrundningar godtas eftersom frågan inte kräver exakt svar. Nivå 2.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.50",
+      "status": "Åtgärdad",
+      "kommentar": "Den felaktiga absolutbeloppsledtråden ersätts. Facit skiljer funktionsmedelvärde från mittpunktens värde. Numeriskt självrättande; nivå 2.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "ledtrad",
+        "traningsniva",
+        "svarFormat",
+        "spel"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.51",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur och full beräkning av skärningsgränser och övre minus undre kurva. Både 9/2 och 4,5 godtas. C/nivå 3.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.70",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur. Facit beräknar axelskärningarna och triangelarean.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 1
+    },
+    {
+      "id": "3.71",
+      "status": "Åtgärdad",
+      "kommentar": "Felaktig optimeringsledtråd ersätts. Båda gränsvärdena och subtraktionen av ett negativt tal visas. Nivå 2.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.219",
+      "status": "Åtgärdad",
+      "kommentar": "Facit beräknar integralen och dividerar med rätt intervallängd. Rutinuppgift, nivå 2.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "tolerans",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.73",
+      "status": "Åtgärdad",
+      "kommentar": "Den irrelevanta deriveringsledtråden ersätts. Villkoret a positivt används för att välja rot. E/nivå 2.",
+      "andrade_falt": [
+        "niva",
+        "poang",
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.80",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur visar de tre delområdena. Facit beräknar mittarean och de yttre areorna separat innan addition.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.224",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar integralekvationen och väljer den positiva exakta roten. E/nivå 2.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.53",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur och ett geometriskt tolkningsfacit. Det givna digitala integralvärdet behöver inte beräknas igen.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "ledtrad"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 1
+    },
+    {
+      "id": "3.75",
+      "status": "Åtgärdad",
+      "kommentar": "Facit förklarar tidpunkt, minustecken och °C/min och skiljer momentan hastighet från total temperaturändring.",
+      "andrade_falt": [
+        "s",
+        "ledtrad"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 1
+    },
+    {
+      "id": "3.84",
+      "status": "Åtgärdad",
+      "kommentar": "Två delkort med egna facit och ledtrådar. Två skärningspunkter godtas i valfri ordning; arean får eget numeriskt fält. En koordinatetikett som avslöjade svaret är borttagen ur figuren.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "rättSvar",
+        "svarFormat",
+        "ledtrad",
+        "spelIntro",
+        "spelDelar",
+        "spelDelning"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.102",
+      "status": "Åtgärdad",
+      "kommentar": "Felaktig absolutbeloppsledtråd ersätts av linjär medelvärdesmetod och integralkontroll. Numeriskt självrättande.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "ledtrad",
+        "svarFormat",
+        "spel"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 1
+    },
+    {
+      "id": "3.103",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur och relevant ledtråd. Facit integrerar övre minus undre funktion. Självrättningen godtar 1/6 och korrekt decimalavrundning; nivå 2.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "miniräknare",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "självrättning",
+        "ledtrad",
+        "traningsniva",
+        "svarFormat",
+        "spel"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.104",
+      "status": "Åtgärdad",
+      "kommentar": "Facit härleder gränserna och k³/6 före parameterekvationen. Nivå 3.",
+      "andrade_falt": [
+        "t",
+        "s",
+        "ledtrad",
+        "traningsniva"
+      ],
+      "niva_fore": 4,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.285",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar att både integralgräns och intervallängd beror på a. Nivå 3.",
+      "andrade_falt": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "miniräknare",
+        "ledtrad",
+        "traningsniva",
+        "svarFormat"
+      ],
+      "niva_fore": 4,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.288",
+      "status": "Åtgärdad",
+      "kommentar": "Ny figur och full lösning med kontroll av kvadreringen. Exakt bråkformat ersätter decimaltolerans i en fråga som uttryckligen kräver exakt svar. Nivå 3.",
+      "andrade_falt": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "miniräknare",
+        "ledtrad",
+        "traningsniva",
+        "svarstyp",
+        "rättSvar",
+        "tolerans",
+        "svarFormat"
+      ],
+      "niva_fore": 4,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.347",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar e^(ln 3) och e⁰ separat innan subtraktion.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.348",
+      "status": "Åtgärdad",
+      "kommentar": "Facit kopplar positiv hastighet till sträcka och visar integral, gränser och enhet. Nivå 2.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "traningsniva",
+        "ledtrad"
+      ],
+      "niva_fore": 1,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.349",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar varför integralen ger area och hanterar båda cosinusvärdenas tecken.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.350",
+      "status": "Åtgärdad",
+      "kommentar": "Ny temperaturgraf. Facit visar kedjefaktor, båda gränsvärdena och division med 12. Rättningen utgår från oavrundade 20+8/π. C/nivå 3.",
+      "andrade_falt": [
+        "niva",
+        "poang",
+        "t",
+        "s",
+        "ledtrad",
+        "rättSvar"
+      ],
+      "niva_fore": 3,
+      "niva_efter": 3
+    },
+    {
+      "id": "3.351",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar varje trapets från tabellen och deras summa. Resultatet betecknas approximation.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    },
+    {
+      "id": "3.352",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar den primitiva funktionen och de exakta logaritmvärdena.",
+      "andrade_falt": [
+        "s",
+        "miniräknare",
+        "ledtrad"
+      ],
+      "niva_fore": 2,
+      "niva_efter": 2
+    }
+  ]
+}
