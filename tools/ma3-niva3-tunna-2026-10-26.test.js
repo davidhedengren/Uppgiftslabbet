@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -50,4 +50,12 @@ test('rationella_uttryck: svaren räknas om',()=>{
   assert.equal(get('1.974').alternativ.find(a=>a.ratt).txt,'a måste vara större än 0');
   for(const x of get('1.975').rättSvar)assert.ok(x-1===0||x*x-4*x===0);
   assert.equal(get('1.976').alternativ.find(a=>a.ratt).txt,'(x + 3)/(x² − 3x)');
+});
+test('problemlosning_derivata: svaren räknas om',()=>{
+  const v=t=>8*t-3*t*t,[t1,v1]=get('3.1246').rättSvar;assert.ok(Math.abs(t1-4/3)<0.005&&Math.abs(v1-16/3)<0.005);for(let t=0.01;t<=2.5;t+=0.01)assert.ok(v(t)>0&&v(t)<=16/3+1e-12);
+  assert.equal(get('3.1247').rättSvar,12-1.5*2);
+  const [x,y]=get('3.1248').rättSvar,f=x=>x*x-2*x,tan=a=>X=>f(a)+d(f,a)*(X-a);nara(tan(3)(x),y,'3.1248');nara(tan(-1)(x),y,'3.1248');
+  const V=x=>-0.5*x*x+80*x-1200,[m,xm]=get('3.1249').rättSvar;nara(d(V,50),m,'3.1249');nara(d(V,xm),0,'3.1249');
+  const s=t=>6*t-0.75*t*t,[ts,ss]=get('3.1250').rättSvar;nara(d(s,ts),0,'3.1250');assert.equal(s(ts),ss);
+  assert.equal(get('3.1251').alternativ.find(a=>a.ratt).txt,'f(2) = 5 och f′(2) = 3');
 });

@@ -110,3 +110,22 @@ Kontroller:
   - Svaren måste stå i rätt ordning i 1.971 och 1.972.
 
 - 2.1261 byttes 2026-10-26. Kortet gällde först en parabel och en tangent parallell med en linje, och det liknade 3.1185 på nivå 2 för mycket. Nu gäller det y = 2√x, och svaret är (4, 4).
+
+## 5. Problemlösning med derivata: 6 kort, 3.1246–3.1251
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 3.1246 | Rörelse och hastighet | När hastigheten är som störst. Svaret får man med derivatan av v(t) |
+| 3.1247 | Tolka derivata i modeller | Temperaturen kl. 08 uppskattas ur T(6) = 12 och T′(6) = −1,5 |
+| 3.1248 | Tangenter och bevis | Var två tangenter till y = x² − 2x skär varandra |
+| 3.1249 | Tolka derivata i modeller | Marginalvinsten V′(50) och den största vinsten |
+| 3.1250 | Rörelse och hastighet | När en boll stannar och hur långt den har rullat |
+| 3.1251 | Tangenter och bevis | f(2) och f′(2) ur tangentens ekvation (flerval) |
+
+Kontroller:
+
+- 3.1246 gäller nu för 0 ≤ t ≤ 2,5. Med 0 ≤ t ≤ 4 hade bilen backat efter t = 8/3, och farten 16 m/s vid t = 4 hade då varit störst.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 2 räkneled radbröts.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 14 svar, och alla gav väntat resultat.
