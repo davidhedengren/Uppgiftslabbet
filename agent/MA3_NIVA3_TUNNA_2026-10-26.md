@@ -337,3 +337,30 @@ Kontroller:
   - Vinkeln 70° mäts mellan kursens fortsättning och riktningen mot fyren, och bågen ligger rätt.
   - Tre linjer möts i hörnet, och granskaren väljer det inre vinkelparet.
   - I 4.599 försvann motsvarande varning när marklinjen kortades till sträckan AB.
+
+### 17. Kap 1, omgång 3: 11 kort, 1.985–1.995
+
+Korten fyller fyra områden till 9 nivå 3-uppgifter vardera.
+
+| ID | Område | Innehåll |
+|---|---|---|
+| 1.985 | algebra_polynom | (x + 3)² − (x − 3)² = 12x |
+| 1.986 | algebra_polynom | Golvarea som inte täcks av mattan: 5x + 4 (figur) |
+| 1.987 | algebra_polynom | (x + a)² = x² + 10x + b ger a = 5 och b = 25 |
+| 1.988 | polynom | Gradtal för p·q och p + q: 5 och 3 |
+| 1.989 | polynom | Minsta gradtal ur en graf med tre nollställen: grad 3 (figur, flerval) |
+| 1.990 | polynom | p(2) = 15 ger a = 3, och då är p(−1) = 0 |
+| 1.991 | rationella_ekvationer | 3/(x − 1) = 2/(x + 1) ger x = −5 |
+| 1.992 | rationella_ekvationer | Falsk rot: x²/(x − 3) = 9/(x − 3) ger bara x = −3 |
+| 1.993 | rationella_ekvationer | Cykelfarten ur tidsskillnaden, 10 km/h |
+| 1.994 | rakna_rationella | Division av rationella uttryck: (x + 2)(x − 3) |
+| 1.995 | rakna_rationella | 1/x − 1/(x + 2) = 2/(x(x + 2)) |
+
+Kontroller:
+
+- 1.992 fick talen 3 och 9 i stället för 2 och 4. Svaret −2 krockade med 1.535.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 7 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 22 svar, och alla gav väntat resultat. Likvärdiga uttryck godtas.

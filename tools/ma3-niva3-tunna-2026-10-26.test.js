@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -141,4 +141,16 @@ test('trig_tillampningar: svaren räknas om',()=>{
   inom(get('4.598'),0,5*SIN(30)/SIN(40));
   inom(get('4.599'),0,2000*SIN(50)/SIN(95)*SIN(35));
   assert.equal(get('4.600').alternativ.find(a=>a.ratt).txt,'Beräkna vinkeln C och använd sedan sinussatsen');
+});
+test('kap 1 omgång 3: svaren räknas om',()=>{
+  for(const x of [-2,0.5,3])nara((x+3)**2-(x-3)**2,12*x,'1.985');assert.equal(get('1.985').rättSvar,'12x');
+  for(const x of [1,2.5,7])nara((x+4)*(x+1)-x*x,5*x+4,'1.986');
+  const [a,b]=get('1.987').rättSvar;for(const x of [-1,2,4])nara((x+a)**2,x*x+10*x+b,'1.987');
+  assert.deepEqual(get('1.988').rättSvar,[5,3]);assert.equal(get('1.989').alternativ.find(a=>a.ratt).txt,'Grad 3');
+  const [a3,p1]=get('1.990').rättSvar,P=x=>2*x**3-x*x+a3;assert.equal(P(2),15);assert.equal(P(-1),p1);
+  const x1=get('1.991').rättSvar;nara(3/(x1-1),2/(x1+1),'1.991');
+  const x2=get('1.992').rättSvar;assert.notEqual(x2-3,0);nara(x2*x2/(x2-3),9/(x2-3),'1.992');
+  const v=get('1.993').rättSvar;nara(30/v-30/(v+5),1,'1.993');
+  for(const x of [0.5,4,7])nara((x*x-4)/(x+3)/((x-2)/(x*x-9)),(x+2)*(x-3),'1.994');
+  for(const x of [0.5,3])nara(1/x-1/(x+2),2/(x*(x+2)),'1.995');
 });
