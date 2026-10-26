@@ -261,3 +261,30 @@ Kontroller:
 - 5 räkneled radbröts.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 20 svar, och alla gav väntat resultat. Både 4√3 och 4sqrt(3) godtas, och 6,93 underkänns där frågan kräver exakt svar.
+
+### 12. Primitiva funktioner med villkor: 5 kort, 3.1258–3.1262
+
+| ID | Innehåll |
+|---|---|
+| 3.1258 | Läget ur hastigheten och startläget: s(5) = 9 m. Föremålet vänder vid t = 3 |
+| 3.1259 | Grafen går genom (2, 5), vilket ger f(3) = 14 |
+| 3.1260 | En tangent ger både k och C: F(x) = x³ + 2x |
+| 3.1261 | Volym ur flöde och största volym: 100 liter efter 5 min |
+| 3.1262 | Två primitiva funktioner skiljer sig med en konstant: F(5) − G(5) = 3 (flerval) |
+
+### 13. Största och minsta värde: 4 kort, 3.1263–3.1266
+
+| ID | Innehåll |
+|---|---|
+| 3.1263 | Öppen låda av kartong: x = 5 och V = 2 000 cm³ (figur) |
+| 3.1264 | Det största värdet antas i en ändpunkt: största 20 och minsta 0 |
+| 3.1265 | Hage mot en vägg med 40 m stängsel: 200 m² (figur) |
+| 3.1266 | Det största värdet antas där f′ = 0 eller i en ändpunkt (flerval) |
+
+Kontroller:
+
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 8 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 15 svar, och alla gav väntat resultat.

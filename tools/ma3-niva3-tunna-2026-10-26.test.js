@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -114,4 +114,15 @@ test('sinussatsen_tva_fall: svaren räknas om',()=>{
   const B4=DEG(Math.asin(8*SIN(25)/5)),C4=[180-25-B4,B4-25].sort((a,b)=>a-b),u4=get('4.594');[...u4.rättSvar].sort((a,b)=>a-b).forEach((x,i)=>assert.ok(Math.abs(x-C4[i])<=0.1,'4.594'));
   nara(12*SIN(30)/6,1,'4.595');assert.equal(get('4.595').rättSvar,90);
   const B6=DEG(Math.asin(9*SIN(32)/6));inom(get('4.596'),0,27*SIN(180-32-B6));
+});
+test('primitiva_villkor och storsta_minsta: svaren räknas om',()=>{
+  const s=t=>6*t-t*t+4;nara(d(s,2),6-4,'3.1258');assert.equal(s(0),4);assert.equal(get('3.1258').rättSvar,s(5));
+  const f=x=>x**3-2*x*x+5;nara(d(f,1.5),3*2.25-6,'3.1259');assert.equal(f(2),5);assert.equal(get('3.1259').rättSvar,f(3));
+  assert.equal(get('3.1260').rättSvar,'x^3+2x');const F=x=>x**3+2*x;nara(d(F,1),5,'3.1260');assert.equal(F(1),3);
+  const V=t=>50+20*t-2*t*t,[tm,vm]=get('3.1261').rättSvar;nara(d(V,tm),0,'3.1261');assert.equal(V(tm),vm);
+  assert.equal(get('3.1262').alternativ.find(a=>a.ratt).txt,'F(5) − G(5) = 3');
+  const L=x=>x*(30-2*x)**2,[x1,v1]=get('3.1263').rättSvar;assert.equal(L(x1),v1);for(let x=0.1;x<15;x+=0.1)assert.ok(L(x)<=v1+1e-9);
+  const g=x=>x**3-6*x*x+9*x,xs=[];for(let x=0;x<=5.0001;x+=0.001)xs.push(g(x));assert.deepEqual(get('3.1264').rättSvar,[Math.round(Math.max(...xs)),Math.round(Math.min(...xs))+0]);
+  const A=x=>x*(40-2*x);let m=0;for(let x=0;x<=20;x+=0.01)m=Math.max(m,A(x));nara(m,get('3.1265').rättSvar,'3.1265');
+  assert.match(get('3.1266').alternativ.find(a=>a.ratt).txt,/eller i en ändpunkt/);
 });
