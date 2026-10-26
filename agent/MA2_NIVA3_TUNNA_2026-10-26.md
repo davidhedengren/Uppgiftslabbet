@@ -46,3 +46,24 @@ Kontroller:
 - Självrättningen testades med 14 svar, och alla gav väntat resultat.
   - Både 2+sqrt(5) och 2+√5 godtas.
   - Närmevärdena 4,24 och −1,33 underkänns, eftersom frågan säger ”exakt”.
+
+## 3. Linjära representationer: 6 kort, 1.1235–1.1240
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 1.1235 | Räta linjer i grafer | Nollstället 8,5 ligger utanför figuren och beräknas ur punkterna A och B (figur) |
+| 1.1236 | Räta linjer i grafer | Poolens djup läses av i grafen, och tiden till 100 cm räknas ut (figur) |
+| 1.1237 | Från tabell till formel | Fast avgift och pris per person ur en tabell med bussresor |
+| 1.1238 | Växla mellan text, graf och formel | Ljuset brinner ner: längden från början och den totala brinntiden |
+| 1.1239 | Växla mellan text, graf och formel | Vad k och m betyder för ett busskort (flerval) |
+| 1.1240 | Från tabell till formel | När en tabellfunktion och en formel ger samma värde |
+
+Kontroller:
+
+- Ett kort med olika långa steg i tabellen byttes mot bussresorna i 1.1237. Det liknade 1.1132 på nivå 2 för mycket.
+- 1.1235 och 1.1240 fick ”Svara exakt.”. Annars godtog den fria avrundningsregeln 9 för 8,5 och 4 för 3,6.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 4 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 216 fynd både före och efter ändringen.
+- Självrättningen testades med 20 svar, och alla gav väntat resultat.

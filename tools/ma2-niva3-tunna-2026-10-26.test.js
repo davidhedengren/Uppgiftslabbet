@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222)};
+const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222),linjara_representationer:r(1,1235,1240)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -34,4 +34,12 @@ test('losningsformel_andragrad: svaren räknas om',()=>{
   const [b4,x4]=get('2.1220').rättSvar;assert.equal(4+2*b4-14,0);assert.equal(x4*x4+b4*x4-14,0);assert.notEqual(x4,2);
   assert.match(get('2.1221').alternativ.find(a=>a.ratt).txt,/delat ekvationen med 2/);
   assert.deepEqual(get('2.1222').rättSvar,['2','-4/3']);for(const x of [2,-4/3])assert.ok(Math.abs(3*x*x-2*(x+4))<1e-12);
+});
+test('linjara_representationer: svaren räknas om',()=>{
+  const k=(3-5)/(4-1),m=5-k*1;assert.ok(Math.abs(get('1.1235').rättSvar-(-m/k))<1e-12);
+  assert.equal(get('1.1236').rättSvar,(100-20)/((30-20)/4));
+  const [fast,pp]=get('1.1237').rättSvar;for(const [n,y] of [[12,2040],[20,3160],[35,5260]])assert.equal(fast+pp*n,y);
+  const [L0,T]=get('1.1238').rättSvar;const kl=(12-21)/(5-2);assert.equal(L0+kl*2,21);assert.equal(L0+kl*T,0);
+  assert.equal(get('1.1239').alternativ.find(a=>a.ratt).txt,'Efter 30 resor är kortet tomt');assert.equal(450-15*30,0);
+  const x=get('1.1240').rättSvar;assert.ok(Math.abs((-1.5*x+10)-(x+1))<1e-12);
 });
