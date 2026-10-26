@@ -30,3 +30,9 @@ test('Varierade texter och facit med rubriker',()=>{
   for(const id of Object.keys(FORV)){const q=get(id),b=q.t.replace(/<[^>]+>/g,'').slice(0,40);assert.ok(!borjan.has(b),`${id}: samma inledning`);borjan.add(b);
     const li=(q.s.match(/<li>/g)||[]).length,r=(q.s.match(/facit-rubrik/g)||[]).length;assert.ok(li>0&&r>=li,id);assert.match(q.s,/facit-svar/,id);}
 });
+test('Geometriska begrepp: tre dubbletter varierade, med figurer som skiljer begreppen åt',()=>{
+  const q291=get('3.291');assert.match(q291.t,/<svg/);assert.deepEqual(q291.alternativ.filter(a=>a.ratt).map(a=>a.txt),['AE']);assert.equal(q291.alternativ[0].ratt,false);
+  const q303=get('3.303');assert.deepEqual(q303.alternativ.filter(a=>a.ratt).map(a=>a.txt),['Tangent']);assert.match(q303.t,/<circle/);
+  assert.equal(get('3.347').rättSvar,62);const b=bagar(get('3.347').t);assert.ok(Math.abs(b[0]-118)<1&&Math.abs(b[1]-62)<1);
+  for(const id of ['3.291','3.303','3.347'])assert.match(get(id).s,/facit-rubrik/,id);
+});

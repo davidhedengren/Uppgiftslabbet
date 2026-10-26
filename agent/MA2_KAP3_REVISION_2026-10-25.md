@@ -127,3 +127,11 @@
 - **Validator:** 0 fynd.
 - **Självrättning:** 23 fall i Kunskapsgymmet, och alla ger väntat resultat.
 - **Skydd:** `tools/ma2-kap3-yttervinkel-2026-10-26.test.js`.
+
+### Geometriska begrepp (etapp 3b)
+
+- **3.291:** var en dubblett av 3.212 (vad en bisektris gör). Nu visar figuren höjd, median och bisektris från samma hörn. Höjden har en markerad rät vinkel och medianen markerade lika delar, och eleven ska avgöra vilken sträcka som är bisektrisen.
+- **3.303:** var en dubblett av 3.214 och 3.31 (transversal). Nu handlar kortet om tangent: en figur med tangeringspunkt och rät vinkel mot radien, och sekant och korda som distraktorer.
+- **3.347:** var en dubblett av 3.215 (sidovinkel utan figur). Kortet har nu en figur med två skärande linjer och de uppmätta vinklarna 118° och 62°.
+- **Övriga figurer i området:** 3.222, 6.07 och 3.2068–3.2081 är skalenliga och tydliga och behålls.
+- **Kontroll:** självrättningen ger väntat resultat i Kunskapsgymmet, och testet är tillagt i `ma2-kap3-yttervinkel-2026-10-26.test.js`.
