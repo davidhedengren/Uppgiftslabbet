@@ -130,7 +130,7 @@ test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
 test('Delkortens avrundade givna värden och kollisionsmodeller är konsekventa',()=>{
  for(const[id,i,given]of [['5.420',1,'2,60 m/s'],['5.420',2,'59,3 J'],['5.426',1,'0,167 m/s'],['5.440',1,'3,03 m/s'],['5.460',1,'0,991 m/s'],['5.464',1,'0,147 m'],['5.470',1,'4,998 J']]){assert.ok(q(id).t.includes(given),id);assert.ok(q(id).spelDelar[i].t.includes(given),id);}
  assert.match(q('5.440').spelDelar[1].t,/Pilen fastnar/);
- assert.match(q('5.470').spelDelar[0].t,/fyra decimaler/);assert.equal(q('5.470').tolerans[0],.00005);
+ assert.equal(q('5.470').svarVardesiffror[0],5);assert.equal(q('5.470').tolerans[0],.00005);
  assert.match(q('5.448').t,/tyngdkraftens impuls/);assert.doesNotMatch(q('5.448').t,/Rörelsemängden bevaras/);
  assert.match(q('5.469').t,/var sitt rep/);assert.doesNotMatch(q('5.469').t,/samma rep/);
  assert.match(q('5.432').t,/nytt försök/);assert.match(q('5.432').t,/stilla före hoppet/);

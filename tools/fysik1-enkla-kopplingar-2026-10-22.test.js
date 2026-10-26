@@ -22,7 +22,7 @@ test('Sammansatta nät löses även med Kirchhoffs strömlag i noderna',()=>{
 });
 test('Nivåer, verktyg, precision och namngivna fält följer själva frågan',()=>{
  const levels={1:0,2:0,3:0};
- for(const id of ids){const p=q(id);assert.ok(p,id);levels[p.traningsniva]++;assert.equal(p.kap,8);assert.equal(p.spel,true);assert.equal(p.självrättning,true);assert.equal(p.miniräknare,true);assert.equal(p.geogebra,false);assert.ok(p.ledtrad.length>35);assert.match(p.t,/\(Svara i [^<]+\)\<\/p\>/);assert.doesNotMatch(p.t,/använd \w+=|från [abc]\)|föregående del|^steg/i);assert.doesNotMatch(p.s,/facit-stegvis|Steg \d/);assert.doesNotMatch(p.t+p.s,/[\u0000-\u0008\u000b-\u001f]/);assert.equal(p.niva,p.traningsniva<3?'E':'C');
+ for(const id of ids){const p=q(id);assert.ok(p,id);levels[p.traningsniva]++;assert.equal(p.kap,8);assert.equal(p.spel,true);assert.equal(p.självrättning,true);assert.equal(p.miniräknare,true);assert.equal(p.geogebra,false);assert.ok(p.ledtrad.length>35);assert.ok(/\(Svara i [^<]+\)<\/p>/.test(p.t)||p.svarEnhet);assert.doesNotMatch(p.t,/använd \w+=|från [abc]\)|föregående del|^steg/i);assert.doesNotMatch(p.s,/facit-stegvis|Steg \d/);assert.doesNotMatch(p.t+p.s,/[\u0000-\u0008\u000b-\u001f]/);assert.equal(p.niva,p.traningsniva<3?'E':'C');
  if(Array.isArray(p.rättSvar)){assert.equal(p.svarsstruktur,'ordnad');assert.equal(p.rättSvar.length,p.svarEtiketter.length);assert.equal(p.rättSvar.length,p.svarEnhet.length);assert.equal(p.rättSvar.length,p.tolerans.length);assert.equal(p.rättSvar.length,p.svarFormat.length);assert.notDeepEqual(Array.from(p.svarEtiketter),['a','b']);}
  }
  assert.deepEqual(levels,{1:6,2:30,3:4});

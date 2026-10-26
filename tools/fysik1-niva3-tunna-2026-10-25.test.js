@@ -19,5 +19,5 @@ for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-k
     assert.match(t.s,/class="facit-metod"/,id);assert.match(t.s,/class="facit-svar"/,id);assert.ok(String(t.ledtrad).replace(/<[^>]+>/g,'').trim().length>=15,id);
     for(const m of (t.t+t.s+t.ledtrad).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g))assert.doesNotMatch(m[1]??m[2],/[<>]/,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);for(const a of t.alternativ)if(!a.ratt)assert.ok(a.kommentar,id);}
-    else{assert.match(t.t,/\(Svara[^)]*\)/,id);const krock=B.filter(w=>w.omr===omr&&w.id!==id&&w.rättSvar!=null&&v(w)===v(t)).map(w=>w.id);assert.deepEqual(krock,[],id);}}
+    else{assert.ok(/\(Svara[^)]*\)/.test(t.t)||t.svarEnhet||t.svarVardesiffror!=null||/Hur många/.test(t.t),id);const krock=B.filter(w=>w.omr===omr&&w.id!==id&&w.rättSvar!=null&&v(w)===v(t)).map(w=>w.id);assert.deepEqual(krock,[],id);}}
 });

@@ -58,5 +58,5 @@ test('Avgiftens tidpunkt och nettobehovets spillpåslag har uttryckligt angiven 
 });
 test('Två värdesiffror i fysik: 6.470 c har korrekt mål, precision och självständiga givna data',()=>{
  const t=c.window.BANK.find(q=>q.id==='6.470');assert.equal(t.rättSvar[2],70*9.82);assert.equal(t.tolerans[2],5);
- assert.ok(Math.abs(690-t.rättSvar[2])<t.tolerans[2]);assert.match(t.spelDelar[2].t,/70 kg/);assert.match(t.spelDelar[2].t,/två värdesiffror/);assert.equal(t.spelDelar[2].traningsniva,1);
+ assert.ok(Math.abs(690-t.rättSvar[2])<t.tolerans[2]);assert.match(t.spelDelar[2].t,/70 kg/);assert.equal(t.svarVardesiffror[2],2);assert.doesNotMatch(t.spelDelar[2].t,/värdesiffror/);assert.equal(t.spelDelar[2].traningsniva,1);
 });

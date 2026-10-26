@@ -14,7 +14,7 @@ test('113 komposantkort (två omgångar) i vektorer med varierade delmoment',()=
   // trigonometrikort är markerade
   for(const id of NYA){const t=get(id);if(t.familjNyckel==='vektorer__komposanter_med_trigonometri')assert.equal(t.trigonometri,true,id);}
   // frågor med decimalsvar anger precision i parentes
-  for(const id of NYA){const t=get(id);const tol=[].concat(t.tolerans);if(tol.some(x=>x===0.05)&&[].concat(t.rättSvar).some(v=>!Number.isInteger(v)))assert.match(t.t,/med en decimal\.\)/,id);}
+  for(const id of NYA){const t=get(id);const tol=[].concat(t.tolerans);if(tol.some(x=>x===0.05)&&[].concat(t.rättSvar).some(v=>!Number.isInteger(v)))assert.ok(/med en decimal\.\)/.test(t.t)||t.svarVardesiffror!=null,id);}
 });
 
 test('Rättelser: draksnöre och ledtråd i 3.285',()=>{

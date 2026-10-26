@@ -9,7 +9,7 @@ test('Fullständiga beräkningsvärden och kopplingsscheman',()=>{
 });
 test('Sex varierade enhetsuppgifter: beräkning, verktyg och figur',()=>{
  const answers=[75e-6,1.2*.8,3.6*1000/60,120/.15,35*.012*1000,1200];
- answers.forEach((v,i)=>{const x=q('2.'+(321+i));assert.ok(Math.abs(x.rättSvar-v)<1e-10);assert.equal(x.miniräknare,true);assert.equal(x.geogebra,false);assert.ok(x.t.includes('<svg'));assert.ok(x.t.includes('(Svara'));});
+ answers.forEach((v,i)=>{const x=q('2.'+(321+i));assert.ok(Math.abs(x.rättSvar-v)<1e-10);assert.equal(x.miniräknare,true);assert.equal(x.geogebra,false);assert.ok(x.t.includes('<svg'));assert.ok(x.t.includes('(Svara')||x.svarEnhet||/Hur många/.test(x.t));});
 });
 test('Omformatering bevarar samtliga ord, tal och matematiska tecken',()=>{
  const r=JSON.parse(fs.readFileSync(__dirname+'/../agent/FYSIK_SVARSINSTRUKTIONER_2026-10-21.json'));

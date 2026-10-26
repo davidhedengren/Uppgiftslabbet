@@ -17,5 +17,5 @@ test('Begreppsval och förklaringar följer den markerade bilden',()=>{
 });
 test('Kvarkladdningar finns i facit men inte som formelsamlingsledningar i frågorna',()=>{
  for(const id of ['GY25-FY1-STD-02','9.261','9.262','9.263','9.264','9.265','9.329']){const p=q(id);for(const text of [p.t,p.spelIntro||'',...(p.spelDelar||[]).map(d=>d.t)])assert.doesNotMatch(text,/laddningen [+-]?[−+]?2\/3|laddningen [−-]1\/3|\\frac\{?2\}?\{?3/);assert.match(p.s,/(2\/3|\\frac23)/);}
- for(const p of q('9.329').spelDelar){assert.match(p.t,/tre kvarkar av typerna u och d/);assert.match(p.t,/laddningen/);assert.match(p.t,/\(Svara med ett heltal\.\)/);assert.doesNotMatch(p.t,/föregående|svaret ovan/);}
+ for(const p of q('9.329').spelDelar){assert.match(p.t,/tre kvarkar av typerna u och d/);assert.match(p.t,/laddningen/);assert.doesNotMatch(p.t,/heltal/);assert.doesNotMatch(p.t,/föregående|svaret ovan/);}
 });

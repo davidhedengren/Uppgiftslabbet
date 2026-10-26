@@ -14,7 +14,7 @@ test('25 spelbara nivå 3-kort i fyra områden, fysikformat och inga dubblettfac
   for(const id of NYA){const t=get(id);per[t.omr]=(per[t.omr]||0)+1;assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'(0/1/0)',id);
     assert.equal(t.spel,true,id);assert.equal(t.miniräknare,true,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);assert.match(t.t,/Välj ett alternativ/,id);}
-    else assert.match(t.t,/\(Svara[^)]*\)\s*(<\/p>)?$/,id);}
+    else assert.ok(/\(Svara[^)]*\)\s*(<\/p>)?$/.test(t.t)||t.svarEnhet||t.svarVardesiffror!=null,id);}
   assert.deepEqual(per,{st_diagram:7,newton3:6,laddning:6,seriekoppling:6});
   const v=x=>JSON.stringify(x.rättSvar);
   for(const id of NYA){const t=get(id);if(t.rättSvar==null)continue;

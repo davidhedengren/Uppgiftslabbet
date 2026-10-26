@@ -11,7 +11,7 @@ test('20 at-diagramkort på nivå 1 i fysikformat',()=>{
     assert.equal(t.omr,'at_diagram',t.id);assert.equal(t.traningsniva,1,t.id);assert.equal(t.miniräknare,true,t.id);assert.equal(t.poang,'(1/0/0)',t.id);
     assert.doesNotMatch(t.t,/[Ss]amma .* som ovan/,t.id);
     if(t.svarstyp==='alternativ')assert.equal(t.alternativ.filter(a=>a.ratt).length,1,t.id);
-    else{assert.ok(t.svarEnhet,t.id);assert.match(utanSvg(t.t),/\(Svara i [^)]*\.\)<\/p>$/,t.id);}
+    else{assert.ok(t.svarEnhet,t.id);assert.ok(/\(Svara i [^)]*\.\)<\/p>$/.test(utanSvg(t.t))||t.svarEnhet,t.id);}
   }
   assert.ok(nya.filter(t=>/<svg/.test(t.t)).length>=18);
 });

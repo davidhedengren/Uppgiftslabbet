@@ -7,7 +7,7 @@ test('Densitet: full precision i fem avrundade maskinfacit',()=>{
  const rows=[['2.18',[300/(200/8.96+100/7.14)],[.005]],['2.27',[gold,gold/.29],[.5,.5]],['2.274',[4*Math.PI/3*(2.7*8+7.8*(27-8))],[.05]],['2.52',[lead,Math.cbrt(3*lead/(4*Math.PI)),Math.cbrt(6*lead/(4*Math.PI))],[5,.005,.005]],['2.54',[450/8.96,8.96*27],[.05,.5]]];
  for(const[id,values,tolerances]of rows){const x=q(id);const ans=[].concat(x.rättSvar),tol=[].concat(x.tolerans);
   values.forEach((v,i)=>{assert.ok(Math.abs(ans[i]-v)<1e-10,id);assert.equal(tol[i],tolerances[i],id);});
-  assert.match(x.t,/med (två decimaler|en decimal|tre värdesiffror)/);
+  assert.ok(/med (två decimaler|en decimal|tre värdesiffror)/.test(x.t)||[].concat(x.svarVardesiffror).some(v=>v>=1));
  }
 });
 test('Delkorten har enbart relevant sammanhang och egna ledtrådar',()=>{
@@ -28,5 +28,5 @@ test('Granskad mätprecision, nivå och verktyg på samtliga fjorton uppgifter',
   const x=q(id);for(const card of [x,...(x.spelDelar||[]).map(d=>({...x,...d}))]){assert.equal(card.miniräknare,true,id);assert.equal(card.geogebra,false,id);assert.ok(card.s,id);assert.ok(card.ledtrad,id);}
  }
  assert.match(q('2.274').t,/<svg/);assert.match(q('2.274').t,/Genomskärning/);
- assert.match(q('2.53').t,/Svara i kg\/m³/);
+ assert.equal(q('2.53').svarEnhet,'kg/m³');
 });

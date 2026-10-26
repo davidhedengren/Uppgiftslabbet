@@ -10,8 +10,8 @@ test('Vanliga tabellvärden för G ger godtagbara svar med frågans precision',(
   for(const G of [6.67e-11,6.674e-11]){const value=model(G);assert.ok(good(value),id+' fullt värde');assert.ok(good(Number(value.toPrecision(sf))),id+' avrundat');assert.equal(good(2*value),false,id+' dubbelt');}
   assert.ok(good(model(6.674e-11)),id+' självständigt facit');
  }
- assert.match(q('4.346').t,/tre värdesiffror/);
- for(const part of q('4.9').spelDelar){assert.match(part.t,/tre värdesiffror/);assert.match(part.fraga,/tre värdesiffror/);}
+ assert.equal(q('4.346').svarVardesiffror,3);
+ q('4.9').spelDelar.forEach((part,i)=>{assert.equal(q('4.9').svarVardesiffror[i],3);assert.doesNotMatch(part.t+part.fraga,/värdesiffror/);});
  assert.match(q('4.9').spelDelar[0].s,/Svar: 10,7 /);assert.match(q('4.9').spelDelar[1].s,/Svar: 747 /);
  assert.match(q('4.372').s,/3414/);
 });

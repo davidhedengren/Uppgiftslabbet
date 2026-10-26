@@ -10,5 +10,5 @@ test('Rörelse: sträcka, förflyttning och tid i varje sammanhang',()=>{
 test('Diagrammens punkter motsvarar uppgifternas rörelser',()=>{
  assert.ok(q('2.335').t.includes('0 s: 100 m, 40 s: 180 m'));
  assert.ok(q('2.338').t.includes('0 s: 0 m, 10 s: 20 m, 15 s: 20 m, 25 s: 0 m'));
- for(let i=335;i<=342;i++){const x=q('2.'+i);assert.equal(bank.filter(t=>t.id===x.id).length,1);assert.ok(x.t.includes('<svg'));assert.equal(x.miniräknare,true);assert.equal(x.geogebra,false);assert.equal(x.spel,true);assert.equal(x.självrättning,true);assert.ok(x.t.includes('(Svara'));assert.ok(x.ledtrad);}
+ for(let i=335;i<=342;i++){const x=q('2.'+i);assert.equal(bank.filter(t=>t.id===x.id).length,1);assert.ok(x.t.includes('<svg'));assert.equal(x.miniräknare,true);assert.equal(x.geogebra,false);assert.equal(x.spel,true);assert.equal(x.självrättning,true);assert.ok(x.t.includes('(Svara')||x.svarEnhet);assert.ok(x.ledtrad);}
 });

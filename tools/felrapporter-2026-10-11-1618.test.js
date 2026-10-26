@@ -51,6 +51,6 @@ test('Spridningsfacit har korrekt avrundning och tar hänsyn till spridning noll
  assert.match(ma('4.302').spelDelar[1].s,/redan är noll/);assert.doesNotMatch(ma('4.302').t,/alltid minskar/);
 });
 test('De två fysikrapporterna har oförändrade, oberoende verifierade facit',()=>{
- const q=fy('6.300');assert.equal(q.rättSvar,800*9.82*1);assert.equal(q.tolerans,0);assert.match(q.t,/heltal/);
+ const q=fy('6.300');assert.equal(q.rättSvar,800*9.82*1);assert.equal(q.tolerans,0);assert.equal(q.svarVardesiffror,4); // avrundningskravet ersatt av svarVardesiffror 2026-10-26
  const v=.12*Math.sqrt(250/.8);close(fy('5.99').rättSvar[0],v);assert.equal(fy('5.99').spelDelar[0].traningsniva,2);
 });

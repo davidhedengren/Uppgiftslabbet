@@ -154,7 +154,7 @@ test('Arkimedes: givna mellanvärden på separata kort ger samma avrundade sluts
  ['6.512',1,1.29*S(.5)*G0-(.4+.090*S(.5))*(G0+4.2797)]];
  for(const[id,i,value]of values){const t=q(id),part=t.spelDelar[i],tol=t.tolerans[i];
  assert.ok(Math.abs(value-t.rättSvar[i])<=tol,id+' '+i);
- assert.ok(Math.abs(written(part)-rounding(part.fraga,value))<=1e-10*Math.max(Math.abs(value),1e-12),id+' kortfacit '+i);}
+ assert.ok(Math.abs(written(part)-(rounding(part.fraga,value)??((x,n)=>{const d=n-1-Math.floor(Math.log10(Math.abs(x)));const s=10**(-d);return Math.sign(x)*Math.floor(Math.abs(x)/s+0.5+1e-10)*s})(value,[].concat(t.svarVardesiffror)[i])))<=1e-10*Math.max(Math.abs(value),1e-12),id+' kortfacit '+i);}
 });
 test('6.73: enkla höjdord och densitetskort på nivå 3',()=>{
  const t=q('6.73');assert.equal(t.traningsniva,3);assert.equal(t.niva,'C');

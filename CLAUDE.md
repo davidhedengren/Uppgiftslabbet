@@ -183,9 +183,11 @@ frågan, även på fristående delkort: ”Hur lång tid är pilen i luften?
 positiv riktning. Kontrollera att enhet och precision stämmer med facit och
 självrättning. Lägg inte till avrundningskrav som eleven inte behöver.
 
-**Ändrat 2026-10-26 (lärarens felrapporter, Fy1):** skriv inte ut svarsenhet
-eller avrundningskrav när de är underförstådda ("Svara i m", "med två decimaler").
-Precisionen sköts av `svarVardesiffror` med oavrundat `rättSvar`. Skriv inte
+**Ändrat 2026-10-26 (användarbeslut, Fy1):** skriv inte ut avrundningskrav; precisionen
+ligger i `svarVardesiffror` och ±2 värdesiffror godtas vid korrekt avrundning. Skriv
+enheten bara när den inte är underförstådd: när svaret inte ska ges i naturlig SI-enhet
+(kJ, mN, cm, kWh, %, h …) eller när givna värden har en annan enhet av samma slag (km/h,
+µm, g). Antal utan enhet rättas exakt. Se `agent/FY1_SVARSINSTRUKTIONER_2026-10-26.md`. Skriv inte
 "likformig" om acceleration och skriv "fart", inte "fartbelopp". Behåll nödvändig
 positiv riktning. Deluppgifter visas i Kunskapsgymmets deluppgiftskedja (a → b → c,
 commit e48195f): alla delkort ska börja med **exakt samma** inledning och figur,

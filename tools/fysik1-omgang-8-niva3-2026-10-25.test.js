@@ -16,7 +16,7 @@ test('25 nya Fy1-kort, främst nivå 3, med fysikformat och unika facit',()=>{
   for(const id of NYA){const t=q(id);if(t.svarstyp!=='numeriskt')continue;
     const krock=B.filter(w=>w.omr===t.omr&&w.id!==id&&typeof w.rättSvar==='number'&&Math.abs(w.rättSvar-t.rättSvar)<1e-9).map(w=>w.id);
     assert.deepEqual(krock,[],`${id} har samma facit som ${krock}`);
-    if(t.tolerans>0)assert.match(t.t,/\(Svara[^)]*(decimal|heltal|värdesiffror)[^)]*\)/,id);}
+    if(t.tolerans>0)assert.ok(/\(Svara[^)]*(decimal|heltal|värdesiffror)[^)]*\)/.test(t.t)||t.svarVardesiffror!=null,id);}
   for(const id of NYA.filter(id=>q(id).svarstyp==='alternativ'))assert.ok(!q(id).alternativ[0].ratt,id);
   // kretsfiguren: huvudledningen får inte kortsluta de parallella grenarna
   assert.doesNotMatch(q('8.648').t,/L420 60 L60 60/);

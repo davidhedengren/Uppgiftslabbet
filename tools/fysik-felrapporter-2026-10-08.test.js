@@ -3,12 +3,12 @@ const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../u
 test('Massan ur rörelseenergin godtar två värdesiffror och avvisar nästa heltal',()=>{
  const q=get('5.142'),m=2*1900/6.8**2;
  assert.equal(q.rättSvar,82);assert.ok(Math.abs(m-q.rättSvar)<q.tolerans);assert.ok(Math.abs(83-q.rättSvar)>q.tolerans);
- assert.match(q.t,/två värdesiffror/);assert.match(q.s,/82 kg/);
+ assert.equal(q.svarVardesiffror,2);assert.match(q.s,/82 kg/);
 });
 test('Arbetet av en sned kraft avrundas konsekvent i text, facit och maskinsvar',()=>{
  const q=get('5.209'),w=100*5*Math.cos(Math.PI/6);
  assert.ok(Math.abs(q.rättSvar[1]-w)<1e-9);assert.ok(Math.abs(433-q.rättSvar[1])<q.tolerans[1]);assert.ok(Math.abs(432-q.rättSvar[1])>q.tolerans[1]);
- assert.match(q.spelDelar[1].t,/tre värdesiffror/);assert.match(q.spelDelar[1].s,/433(?: J|\\,\\mathrm J)/);assert.equal(q.omr,'arbete');
+ assert.equal(q.svarVardesiffror[1],3);assert.match(q.spelDelar[1].s,/433(?: J|\\,\\mathrm J)/);assert.equal(q.omr,'arbete');
 });
 test('Rörelsemängdskortet a innehåller bara sin egen vagn och tydlig teckenriktning',()=>{
  const q=get('5.160'),a=q.spelDelar[0];assert.equal(q.rättSvar[0],3*2.5);assert.equal(a.traningsniva,1);
