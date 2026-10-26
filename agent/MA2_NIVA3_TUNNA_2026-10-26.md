@@ -115,3 +115,7 @@ Kontroller:
 - Självrättningen testades med 12 svar, och alla gav väntat resultat.
   - \((x+5)^2-7\) godtas, även skrivet med ² och −.
   - Den outvecklade formen \(x^2+10x+18\) underkänns.
+
+## Rättelse 2026-10-26: generiska rubriker
+
+Rubrikerna i 1.1233, 1.1240, 2.1222 och 2.1234 var allmänna mallfraser och skrevs om. Detaljerna står i `agent/MA3_NIVA3_TUNNA_2026-10-26.md`. Testet underkänner nu sådana rubriker.

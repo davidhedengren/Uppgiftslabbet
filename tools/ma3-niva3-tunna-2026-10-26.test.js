@@ -5,11 +5,12 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
     const steg=[...t.s.matchAll(/<li>([\s\S]*?)<\/li>/g)];assert.ok(steg.length>=2,id);for(const m of steg)assert.match(m[1],/^<p class="facit-rubrik">/,id);
+    for(const m of steg)assert.doesNotMatch(m[1],/^<p class="facit-rubrik">(Lös ekvationen|Lös|Kontrollera|Förenkla|Beräkna|Beräkna y|Derivera|Svar|Steg \d+|Sätt in|Faktorisera|Multiplicera ut|Kvadratkomplettera|Sätt uttrycken lika|Två lösningar)\.?<\/p>/,`${id}: generisk rubrik`);
     assert.match(t.s,/class="facit-svar"/,id);assert.ok(String(t.ledtrad).replace(/<[^>]+>/g,'').trim().length>=15,id);
     for(const m of (t.t+t.s+t.ledtrad).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g))assert.doesNotMatch(m[1]??m[2],/[<>]/,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);for(const a of t.alternativ)if(!a.ratt)assert.ok(a.kommentar,id);}
@@ -58,4 +59,12 @@ test('problemlosning_derivata: svaren räknas om',()=>{
   const V=x=>-0.5*x*x+80*x-1200,[m,xm]=get('3.1249').rättSvar;nara(d(V,50),m,'3.1249');nara(d(V,xm),0,'3.1249');
   const s=t=>6*t-0.75*t*t,[ts,ss]=get('3.1250').rättSvar;nara(d(s,ts),0,'3.1250');assert.equal(s(ts),ss);
   assert.equal(get('3.1251').alternativ.find(a=>a.ratt).txt,'f(2) = 5 och f′(2) = 3');
+});
+test('integral_area: svaren räknas om',()=>{
+  const F=x=>x**3/3-4*x;nara(get('3.1252').rättSvar,-(F(2)-F(0))+(F(3)-F(2)),'3.1252');
+  const a=get('3.1253').rättSvar;assert.equal(a*a-1,120);assert.ok(a>1);
+  const b=get('3.1254').rättSvar,G=x=>x**4/4+5*x;nara(G(b)-G(-b),130,'3.1254');
+  assert.equal(get('3.1255').rättSvar,(12*6-36));
+  assert.equal(get('3.1256').rättSvar,2+3);
+  assert.equal(get('3.1257').alternativ.find(a=>a.ratt).txt,'∫₀¹ x³ dx < ∫₀¹ x² dx < ∫₀¹ x dx');
 });

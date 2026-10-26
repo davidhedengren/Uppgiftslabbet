@@ -129,3 +129,37 @@ Kontroller:
 - 2 räkneled radbröts.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 14 svar, och alla gav väntat resultat.
+
+## 6. Integral och area: 6 kort, 3.1252–3.1257
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 3.1252 | Integral som area under en graf | Area när grafen delvis ligger under x-axeln, 23/3 (figur, svaret exakt) |
+| 3.1253 | Integralens egenskaper | Övre gränsen a = 11 så att ∫₁ᵃ 2x dx = 120 |
+| 3.1254 | Integralens egenskaper | Symmetriskt intervall: x³-delen blir 0, och a = 13 |
+| 3.1255 | Integral som area under en graf | Utrunnen volym ur ett flöde som minskar, 36 liter (figur) |
+| 3.1256 | Integralens egenskaper | Arean ovanför x-axeln ur integralen och arean under, 5 |
+| 3.1257 | Integralens egenskaper | Jämför ∫x, ∫x² och ∫x³ på [0, 1] utan att räkna (flerval) |
+
+Kontroller:
+
+- Kort 3.1254 var först ”bestäm k i ∫₀² (kx + 1) dx”. Validatorn flaggade VERY_SIMILAR_TEXT mot 3.159, och kortet byttes mot uppgiften om symmetri.
+- Fyra heltalssvar byttes för att undvika facitkrockar.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 4 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 11 svar, och alla gav väntat resultat. Svaret 23/3 godtas och 7,67 underkänns, eftersom frågan säger ”exakt”.
+
+## Generiska facit-rubriker rättade (2026-10-26)
+
+En genomsökning av dagens nya mattekort hittade åtta rubriker som var allmänna mallfraser. Alla skrevs om så att de beskriver just det steget:
+
+- Ma2 1.1233: ”Beräkna y”
+- Ma2 1.1240: ”Sätt uttrycken lika” och ”Kontrollera”
+- Ma2 2.1222: ”Två lösningar”
+- Ma2 2.1234: ”Multiplicera ut” och ”Kvadratkomplettera”
+- Ma3 1.973: ”Kontrollera”
+- Ma3 3.1254: ”Lös ekvationen”
+
+Båda regressionstesterna underkänner nu sådana rubriker.
