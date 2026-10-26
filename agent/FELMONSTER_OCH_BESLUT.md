@@ -2718,3 +2718,19 @@ Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.
 ## Matf1: integralarea, medelvärden och svarsprecision – 2026-10-26
 
 [29 uppgifter manuellt granskade och förbättrade](MATF1_AREA_FACIT_2026-10-26.md). Visa primitiv funktion, båda gränsvärdena och eventuell division med intervallängd. Geometrisk area kräver teckenanalys; 3.80 måste dela vid båda nollställena. 3.49/51/103/84b saknar exakthetskrav och får fullprecisionsmål med fria korrekta avrundningar. 3.288 kräver uttryckligen exakt svar och får bråkformat, inte decimaltolerans. 3.350 lagrar 20+8/π, inte 22,5. 3.84 har två egna delkort: oordnade skärningspunkter och separat area. Båda behåller samma inledning och figur; etiketten som gav bort koordinaterna är borttagen. 3.50/102/103 kan självrättas. Sju nya figurer har kontrollerade koordinater. Bevara individuella nivå-/verktygsbeslut i loggen. Skydd: matf1-area-facit-2026-10-26.test.py och browserfallen.
+
+## Matf1: tappade LaTeX-avgränsare i ledtrådar, 2026-10-26
+
+Ledtrådarna till 19 Matf1-kort hade samma fel som Ma2: ”(x)” och ”(k)” i stället för \(x\) och \(k\), och i 2.28 också ”aequiv bpmod n” i stället för \(a\equiv b\pmod n\). De berörda korten är:
+
+- 1.127 och 1.184, om exponenten av \(x\);
+- 16 kombinatorikkort (1.35, 1.102–1.105, 1.109, 1.128, 1.159, 1.197–1.201, 1.203, 1.226 och 1.444), med samma ledtråd om exakt \(k\);
+- 2.28.
+
+Ledtrådarna är rättade, och renderingen av \(\pmod\) är kontrollerad i Kunskapsgymmet.
+
+Unicode-matematik i facittext, som A′(x) i 3.83 och y(0) i 4.522, är inte trasig och lämnas orörd.
+
+**Skalfel i tester:** en heredoc i Bash halverar backslash i regexar. Kontrollen i `ma2-kap3-yttervinkel-2026-10-26.test.js` hade därför tyst blivit verkningslös. Testfiler med LaTeX-regexar skrivs med filverktyget, inte med en heredoc.
+
+Skydd: `tools/latex-avgransare-2026-10-26.test.js`, som söker igenom hela Ma2 och Matf1.

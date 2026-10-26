@@ -13,11 +13,7 @@ const bagar=s=>[...s.matchAll(/<path d="M ([\d.-]+) ([\d.-]+) A ([\d.]+) [\d.]+ 
 test('Bågarna har de storlekar som uppgiften anger',()=>{
   for(const[id,v]of Object.entries(FORV)){const s=get(id).t.match(/<svg[\s\S]*?<\/svg>/)[0],b=bagar(s);assert.equal(b.length,v.length,id);b.forEach((x,i)=>assert.ok(Math.abs(x-v[i])<1.2,`${id}: ${x.toFixed(1)} ≠ ${v[i]}`));}
 });
-test('Ingen matematik utan LaTeX-avgränsare i Ma2',()=>{
-  const re=/(^|[^\A-Za-zåäöÅÄÖ0-9_^{])\(([a-z](?:[′']|_\d)?)\)/,ENH=new Set(['m','s','h','g','l']);
-  for(const q of B)for(const s of [q.t,q.s,q.ledtrad,q.spelIntro,...(q.spelDelar||[]).flatMap(d=>[d.t,d.s,d.ledtrad,d.fraga])]){if(typeof s!=='string')continue;
-    const p=s.replace(/<svg[\s\S]*?<\/svg>/g,'').replace(/\\([\s\S]*?\\)/g,'M').replace(/\\[[\s\S]*?\\]/g,'M').replace(/<[^>]+>/g,' ');const m=p.match(re);assert.ok(!m||ENH.has(m[2]),`${q.id}: ${m&&m[0]}`);}
-});
+// Kontrollen av LaTeX-avgränsare ligger i latex-avgransare-2026-10-26.test.js (regexarna här hade förstörts av skalet).
 test('Svar, nivåer och delning',()=>{
   const svar={'3.181':[30,130],'3.197':[15,45,50,85],'3.386':[85,67],'3.389':[36,138],'3.392':[35,45,55,80],'3.383':73,'3.384':85,'3.385':48,'3.387':68};
   for(const[id,v]of Object.entries(svar))assert.deepEqual(get(id).rättSvar,v,id);
