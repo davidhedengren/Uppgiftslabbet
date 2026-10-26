@@ -2702,3 +2702,7 @@ Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.
 ## Matf1: verifiering, fria parametrar och omvänd arbetsriktning – 2026-10-26
 
 [Alla 29 uppgifter i verifiering](MATF1_VERIFIERING_FACIT_2026-10-26.md) har manuella facit och ledtrådar. Visa derivator och insättning före slutsats. Om familjen är given och ekvationen söks (4.76/78), ska ledtråden börja med familjens struktur, inte med en ännu okänd ekvation. Likhet i en enda punkt är inte en lösning på ett intervall (4.587). Fria C/D innebär att villkoren ska fungera för oberoende val, även noll (4.574). Bevara FP73: endast konstanta icke-nollmultiplar av ekvationer är säkert ekvivalenta i rättningen. Bevara manuella verifieringar, nivåerna i loggen och ordnade parameterfält jämfört med oordnade rötter (4.590). Miniräknare tillåts; digital lösare krävs inte. Skydd: `matf1-verifiering-facit-2026-10-26.test.py` och konsumentens browserfall. Kör revisionsskriptet efter äldre byggare.
+
+## Fy1: fristående delkort utan svarsinstruktioner – 2026-10-26
+
+[Felloggen 2026-10-26 15:31](FELRAPPORTER_2026-10-26_1531.md). Läraren vill att Fy1-delkort är fristående och inte upprepar samma inledning. Enhet och avrundning skrivs inte ut när de är underförstådda; `svarVardesiffror` med oavrundat `rättSvar` sköter precisionen. Inget "likformig", "fart" i stället för "fartbelopp". Kap 3: 3.89–3.93, 3.119, 3.121, 3.124, 3.146, 3.155, 3.156 och 8.158 är omgjorda; cirka 480 huvuduppgifter i Fy1 återstår. Ma1-generatorn som ritade axlar i rutnätets kant (2.620, 2.626, 2.628) är ersatt med axlar genom origo.

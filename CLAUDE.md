@@ -182,3 +182,10 @@ frågan, även på fristående delkort: ”Hur lång tid är pilen i luften?
 (Svara i s med två decimaler.)” Behåll nödvändiga förutsättningar och vald
 positiv riktning. Kontrollera att enhet och precision stämmer med facit och
 självrättning. Lägg inte till avrundningskrav som eleven inte behöver.
+
+**Ändrat 2026-10-26 (lärarens felrapporter, Fy1):** skriv inte ut svarsenhet
+eller avrundningskrav när de är underförstådda ("Svara i m", "med två decimaler").
+Precisionen sköts av `svarVardesiffror` med oavrundat `rättSvar`. Skriv inte
+"likformig" om acceleration och skriv "fart", inte "fartbelopp". Delkort ska vara
+fristående med egna givna värden och inte upprepa samma inledning ordagrant
+(se `agent/FELRAPPORTER_2026-10-26_1531.md`). Behåll nödvändig positiv riktning.
