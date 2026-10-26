@@ -85,3 +85,26 @@ Kontroller:
 - Självrättningen testades via `answerLayout`, alltså samma väg som appen använder, och 1.440 användes som referens.
   - Likvärdiga former godtas, till exempel (x² − 2x)/(x + 2) och −(x − 3)/(x + 3).
   - Teckenfel underkänns.
+
+## 4. Rationella uttryck: 6 kort, 1.971–1.976
+
+| ID | Innehåll |
+|---|---|
+| 1.971 | När uttrycket är noll (täljaren) och när det inte är definierat (nämnaren) |
+| 1.972 | Konstanten c ur ett förbjudet värde och det andra förbjudna värdet: c = −12 och x = −6 |
+| 1.973 | Medelkostnaden per produkt blir 65 kr vid 200 produkter |
+| 1.974 | Definierat för alla x kräver att a är större än 0 (flerval) |
+| 1.975 | Förbjudna värden i en summa av bråk: 0, 1 och 4 |
+| 1.976 | Välj uttrycket som har definitionsmängden alla x utom 0 och 3 (flerval) |
+
+Alla kort tillhör familjen ”Definitionsmängd för rationella uttryck”, utom 1.973 som tillhör ”Räkna med rationella uttryck”.
+
+Kontroller:
+
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- I 1.973 står M(x) på en egen rad.
+- 3 räkneled radbröts.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades på samma väg som appen använder, både `answerLayout` och `flersvar`.
+  - Svaren godtas i valfri ordning i 1.975.
+  - Svaren måste stå i rätt ordning i 1.971 och 1.972.

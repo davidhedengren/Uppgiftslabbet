@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -42,4 +42,12 @@ test('forkorta_rationella: förenklingarna prövas i flera punkter',()=>{
   assert.equal(get('1.968').alternativ.find(a=>a.ratt).txt,'(x − 1)/(x² − 1)');lika(x=>(x-1)/(x*x-1),x=>1/(x+1),[],'1.968');
   lika(x=>(x*x-6*x+9)/(9-x*x),x=>(3-x)/(x+3),[],'1.969');assert.deepEqual(get('1.969').rättSvar[1],[-3,3]);
   assert.deepEqual(get('1.970').rättSvar,[1,2]);assert.doesNotMatch(get('1.970').t,/<circle/);
+});
+test('rationella_uttryck: svaren räknas om',()=>{
+  const [n0,ute]=get('1.971').rättSvar;assert.equal(n0-3,0);assert.notEqual(n0*n0-4,0);for(const x of ute)assert.equal(x*x-4,0);
+  const [c,x2]=get('1.972').rättSvar;assert.equal(4+8+c,0);assert.equal(x2*x2+4*x2+c,0);assert.notEqual(x2,2);
+  const n=get('1.973').rättSvar;assert.equal((5000+40*n)/n,65);
+  assert.equal(get('1.974').alternativ.find(a=>a.ratt).txt,'a måste vara större än 0');
+  for(const x of get('1.975').rättSvar)assert.ok(x-1===0||x*x-4*x===0);
+  assert.equal(get('1.976').alternativ.find(a=>a.ratt).txt,'(x + 3)/(x² − 3x)');
 });
