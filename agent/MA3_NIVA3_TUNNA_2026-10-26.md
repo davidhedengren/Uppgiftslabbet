@@ -578,3 +578,18 @@ Tester:
 - Validatorn ger inga nya fynd, och hela sviten har bara de 12 kända felen.
 
 Ämnesplanen för Ma5 (”Matematik fördjupning”) innehåller bara betygskriterier och inget centralt innehåll, så matf1 kan inte kontrolleras mot den. Ma4-banken (mato2) motsvarar nivå 2. Kort om derivator och enhetscirkeln finns där som repetition, vilket är avsiktligt.
+
+## 24. Ma4 trig_ekv_formler: fyra mallkloner varierade
+
+Validatorns `EXACT_TEXT_DUPLICATE` gällde 1.201, 1.240, 1.290 och 1.704. Korten var inte dubbletter, för ekvationerna skiljer sig i tecken och mellan sin och cos. De var däremot kloner av samma mall. Användaren godkände att de varieras. Inget kort togs bort, och alla id och `rättSvar` är oförändrade.
+
+| Kort | Ny form |
+|---|---|
+| 1.201 | oförändrad: 2sin²x + sin x − 1 = 0 |
+| 1.240 | 2cos²x + sin x = 1 (trigonometriska ettan ger andragradsekvationen) |
+| 1.290 | cos x(2cos x + 1) = 1 (multiplicera ut först, eftersom produkten inte är noll) |
+| 1.704 | 2cos²x = cos x + 1, för 0° ≤ x ≤ 360° |
+
+Alla fyra har fått facit som 1.116 med rubriker skrivna för uppgiften, en specifik ledtråd och radbrytning för mobil. Facit är renderat och genomläst. Validatorfyndet är borta, och inga nya fynd har tillkommit.
+
+Testet är `tools/ma4-andragrad-trig-2026-10-26.test.js`. Det prövar svaren i ekvationerna och söker igenom varje heltalsgrad, så att ingen lösning saknas.
