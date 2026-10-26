@@ -220,3 +220,27 @@
 **Facit:** varje steg har en rubrik, även i delkorten för 3.151 och 3.177.
 
 **Kontroll:** validatorn ger 0 fynd, och självrättningen i Kunskapsgymmet ger väntat resultat. Skydd: `tools/ma2-kap3-korda-bevis-2026-10-26.test.js`.
+
+## Etapp 7: avstånd, mittpunkt och koordinatgeometri (2026-10-26)
+
+**Figurerna** är ritade i rutnät och var skalenliga. Problemet var texterna.
+
+**Dubbletter med nya tal och sammanhang**
+- 3.342 hade samma punkter som 3.264. Nu kör en robotgräsklippare från \((-2,-3)\) till \((7,9)\), och svaret är 15 m.
+- 3.341 hade samma punkter som 3.263. Nu hänger en lykta mitt på en lina mellan \((-3,8)\) och \((7,2)\), och svaret är \((2,5)\).
+- 3.319 hade samma rektangel som 3.288. Nu gäller det en pool med hörnen \((-3,-1)\) till \((5,4)\), och svaret är 40 m².
+- 3.362 hade samma uppbyggnad och samma svar som 3.301. Nu är det en ny triangel med svaret 36.
+- 3.2036 hade samma triangel som 3.203. Nu är det en rätvinklig triangel, \((0,0)\), \((4,2)\) och \((1,8)\).
+
+**Nästan identiska texter med ny form**
+- 3.358 är omvänd: avståndet är givet och \(b\) ska bestämmas.
+- I 3.326 adderar Elin förflyttningarna i x- och y-led, och eleven ska förklara felet.
+- 3.343 handlar om Hanna som går förbi ett träd, där trädet är mittpunkten.
+- I 3.128 flyger en fågel.
+- 3.2045 handlar om staket runt en hage.
+
+**Facit:** varje steg har en rubrik.
+
+**Tester:** `felrapporter-2026-10-14-1325.test.js` har uppdaterats med 3.341:s nya tal.
+
+**Kontroll:** validatorn ger 0 fynd, och självrättningen i Kunskapsgymmet ger väntat resultat. Skydd: `tools/ma2-kap3-koordinat-2026-10-26.test.js`.

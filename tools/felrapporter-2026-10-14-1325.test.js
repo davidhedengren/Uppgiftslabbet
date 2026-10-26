@@ -14,7 +14,7 @@ test('Parentesernas gruppering ger samma oberoende aritmetiska resultat',()=>{
  }
 });
 test('Koordinater är ordnade också när punkten är ett separat delkort',()=>{
- for(const[id,value]of [['3.341',[(2+8)/2,(4+10)/2]],['3.134',[2*2-(-3),2*1-5]]]){
+ for(const[id,value]of [['3.341',[(-3+7)/2,(8+2)/2]]/* nya tal 2026-10-26: var en dubblett av 3.263 */,['3.134',[2*2-(-3),2*1-5]]]){
   const q=ma2.get(id);assert.deepEqual(Array.from(q.rättSvar),value);assert.equal(q.svarsstruktur,'ordnad');assert.equal(q.svarEtiketter.length,2);
  }
  const q=ma2.get('3.201');assert.deepEqual(Array.from(q.rättSvar[0]),[2*2-7,2*5-(-1)]);assert.equal(q.spelDelar[0].svarEtiketter.length,2);
