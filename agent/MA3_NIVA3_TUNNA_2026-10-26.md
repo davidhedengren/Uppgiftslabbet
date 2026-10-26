@@ -27,7 +27,7 @@ Regressionstest: `tools/ma3-niva3-tunna-2026-10-26.test.js`.
 |---|---|---|
 | 2.1259 | Beräkna derivatans värde | För vilka x är f′(x) = 9? Derivatan ger en andragradsekvation |
 | 2.1260 | Derivera polynom | \((x^2+4)/\sqrt x\) skrivs om till potenser innan deriveringen |
-| 2.1261 | Beräkna derivatans värde | Punkten där tangenten är parallell med y = 2x + 5 |
+| 2.1261 | Beräkna derivatans värde | Punkten på y = 2√x där tangenten är parallell med y = 0,5x + 3 (ändrat 2026-10-26, se nedan) |
 | 2.1262 | Beräkna derivatans värde | Volymen i en tank: ändringshastigheten och när ökningen upphör |
 | 2.1263 | Beräkna derivatans värde | Vilken funktion har f′(2) = 0 (flerval) |
 | 2.1264 | Derivera polynom | En kvot förenklas innan deriveringen |
@@ -108,3 +108,5 @@ Kontroller:
 - Självrättningen testades på samma väg som appen använder, både `answerLayout` och `flersvar`.
   - Svaren godtas i valfri ordning i 1.975.
   - Svaren måste stå i rätt ordning i 1.971 och 1.972.
+
+- 2.1261 byttes 2026-10-26. Kortet gällde först en parabel och en tangent parallell med en linje, och det liknade 3.1185 på nivå 2 för mycket. Nu gäller det y = 2√x, och svaret är (4, 4).

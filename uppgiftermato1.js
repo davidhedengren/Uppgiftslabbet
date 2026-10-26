@@ -116292,9 +116292,9 @@ window.BANKMATO1 = [
   ],
   "niva": "C",
   "poang": "0/1/0",
-  "typ": "punkt där tangenten har en given lutning",
-  "t": "<p>I vilken punkt på kurvan \\(y=x^2-4x+1\\) är tangenten parallell med linjen \\(y=2x+5\\)?</p>",
-  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Parallella linjer har samma lutning</p><p>Tangentens lutning ska vara 2, alltså samma som linjens k-värde.</p></li><li><p class=\"facit-rubrik\">Tangentens lutning är derivatan</p><div class=\"facit-matte\">\\[y'=2x-4=2\\quad\\Rightarrow\\quad x=3\\]</div></li><li><p class=\"facit-rubrik\">Beräkna y-koordinaten på kurvan</p><div class=\"facit-matte\">\\[y=3^2-4\\cdot3+1=-2\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> I punkten \\((3,\\ -2)\\)</p></div>",
+  "typ": "punkt där tangenten till en rotkurva har en given lutning",
+  "t": "<p>I vilken punkt på kurvan \\(y=2\\sqrt x\\) är tangenten parallell med linjen \\(y=0{,}5x+3\\)?</p>",
+  "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Parallella linjer har samma lutning</p><p>Tangentens lutning ska vara 0,5, alltså samma som linjens k-värde.</p></li><li><p class=\"facit-rubrik\">Skriv roten som en potens och derivera</p><div class=\"facit-matte\">\\[y=2x^{1/2}\\quad\\Rightarrow\\quad y'=x^{-1/2}=\\frac{1}{\\sqrt x}\\]</div></li><li><p class=\"facit-rubrik\">Sätt derivatan lika med 0,5</p><div class=\"facit-matte\">\\[\\frac{1}{\\sqrt x}=0{,}5\\quad\\Rightarrow\\quad\\sqrt x=2\\]</div><div class=\"facit-matte\">\\[x=2^2=4\\]</div></li><li><p class=\"facit-rubrik\">Beräkna y-koordinaten på kurvan</p><div class=\"facit-matte\">\\[y=2\\sqrt4=4\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> I punkten \\((4,\\ 4)\\)</p></div>",
   "familj": "Beräkna derivatans värde",
   "formaga": [
     "begrepp",
@@ -116309,11 +116309,11 @@ window.BANKMATO1 = [
   ],
   "traningsniva": 3,
   "arbetsinsats": 2,
-  "ledtrad": "<p>Vilken lutning har linjen \\(y=2x+5\\)? Vilken lutning har tangenten i en punkt på kurvan?</p>",
+  "ledtrad": "<p>Vilken lutning har linjen? Skriv \\(2\\sqrt x\\) som en potens av x innan du deriverar.</p>",
   "svarstyp": "flera_delar",
   "rättSvar": [
-    3,
-    -2
+    4,
+    4
   ],
   "tolerans": [
     0,

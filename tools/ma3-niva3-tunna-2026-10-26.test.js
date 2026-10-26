@@ -21,7 +21,7 @@ const nara=(a,b,id)=>assert.ok(Math.abs(a-b)<1e-6,`${id}: ${a} ≠ ${b}`);
 test('deriveringsregler: derivatorna räknas om numeriskt',()=>{
   for(const x of get('2.1259').rättSvar)nara(d(x=>x**3-3*x*x+2,x),9,'2.1259');
   nara(d(x=>(x*x+4)/Math.sqrt(x),4),get('2.1260').rättSvar,'2.1260');
-  const [x3,y3]=get('2.1261').rättSvar,f3=x=>x*x-4*x+1;nara(d(f3,x3),2,'2.1261');assert.equal(f3(x3),y3);
+  const [x3,y3]=get('2.1261').rättSvar,f3=x=>2*Math.sqrt(x);nara(d(f3,x3),0.5,'2.1261');assert.equal(f3(x3),y3);
   const [v5,tt]=get('2.1262').rättSvar,V=t=>200+30*t-t*t;nara(d(V,5),v5,'2.1262');nara(d(V,tt),0,'2.1262');
   assert.equal(get('2.1263').alternativ.find(a=>a.ratt).txt,'f(x) = x³ − 12x');nara(d(x=>x**3-12*x,2),0,'2.1263');
   nara(d(x=>(x**3-4*x)/(x*x),2),get('2.1264').rättSvar,'2.1264');
