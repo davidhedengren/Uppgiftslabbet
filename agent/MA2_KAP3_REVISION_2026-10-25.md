@@ -102,7 +102,6 @@
 - 22 kort (3.127, 3.154, 3.156, 3.181, 3.182, 3.197, 3.198, 3.271, 3.274, 3.275, 3.306, 3.330 och 3.383–3.392) hade samma mallfigur. Bågarna var alltid 44°, 86° och 129° oavsett uppgiftens värden, och algebraiska etiketter korsade sidorna.
 - Texterna visade ”Bestäm (x).”: avgränsarna `\(` och `\)` hade tappat sina backslash.
 - Flera texter var identiska, till exempel ”Bestäm yttervinkeln (x).” på fyra kort.
-- 3.181:s delkort b gav svaret på a (”Det är givet att x = 30”).
 - 3.383, 3.384, 3.385, 3.386 och 3.387 var märkta C men var direkta E-uppgifter på träningsnivå 1–2.
 
 **Ändrat**
@@ -117,7 +116,7 @@
   - begreppsformulering (3.387);
   - olika punktnamn (PQR, KLM, DEF, STU, GHI).
 - **Facit:** varje steg har en rubrik. Algebrakorten har ett kontrollsteg.
-- **3.181:** är ett vanligt kort med två svar, utan delning.
+- **3.181:** delningen togs först bort, men det var fel och den är återställd i etapp 4. Ett givet mellanresultat i b-frågan är tillåtet.
 - **Nivåer:** 3.383–3.387 är E (1/0/0, och 2/0/0 för 3.386).
 - **Ledtrådar i Ma2 kap 1–2** (1.261, 1.263, 1.271, 1.273, 1.274, 2.07, 2.22, 2.25, 2.31, 2.32, 2.33 och 2.40) hade samma fel och har fått tillbaka `\(` och `\)`. Även `\ge` i 2.31 var trasig.
 
@@ -135,3 +134,46 @@
 - **3.347:** var en dubblett av 3.215 (sidovinkel utan figur). Kortet har nu en figur med två skärande linjer och de uppmätta vinklarna 118° och 62°.
 - **Övriga figurer i området:** 3.222, 6.07 och 3.2068–3.2081 är skalenliga och tydliga och behålls.
 - **Kontroll:** självrättningen ger väntat resultat i Kunskapsgymmet, och testet är tillagt i `ma2-kap3-yttervinkel-2026-10-26.test.js`.
+
+## Etapp 4: Pythagoras (2026-10-26)
+
+**Utgångsläge**
+- **Figurer som inte följde måtten:**
+  - 3.142 (8 och 15), 3.310 (12 och 5), 3.624 (9 och 40) och 3.625: den långa kateten var ritad kortare än den korta.
+  - 3.630 (drake): höjden 40 var ritad lägre än avståndet 30.
+  - 3.632 (ramp): 0,5 m på 6 m var ritad brant.
+  - 3.04: stegen hade fel proportioner och etiketter i typsnittet Courier.
+  - 3.34: delsträckan 4 m var lika lång som 6 m.
+  - 3.333: kateterna 6 och 8 hade fel proportioner.
+- **Dubbletter:**
+  - 3.240 = 3.129 (9, 12, 15) och 3.353 = 3.309 (6, 8, 10).
+  - 3.302 = 3.241 (13, 5, 12), och 3.310 och 3.200 gav också svaret 12.
+  - 3.632 = 3.2006 (rampen 0,5 m och 6 m).
+
+**Ändrat (16 kort)**
+- **Skalenliga figurer:** 3.04, 3.34, 3.142, 3.145, 3.187, 3.333, 3.624, 3.625 och 3.630.
+- **Nya tal och sammanhang:**
+
+  | Kort | Uppgift | Svar |
+  |---|---|---|
+  | 3.240 | Grind 2,0 × 1,5 m med diagonalstag | 2,5 m |
+  | 3.353 | Triangeln ABC med AC = 20 mm och BC = 21 mm | 29 mm |
+  | 3.302 | Längsta sidan 53 cm, kortaste 28 cm | 45 cm |
+  | 3.310 | Hypotenusan 37 cm, kateten 12 cm | 35 cm |
+  | 3.200 | Bordsskiva med diagonalen 2,6 m och bredden 1,0 m | 2,4 m |
+  | 3.632 | Ramp till en lastkaj, 0,8 m på 9,6 m | 9,63 m |
+
+- **Facit:** varje steg har en rubrik. 3.632 har dessutom ett rimlighetssteg.
+- **3.145:** behåller sina delkort, och b får höjden 6 cm given i frågan.
+- **3.181:** delningen från etapp 3 är återställd.
+
+**Delkort**
+- Sökningen efter delkort som innehåller ett tidigare delkorts svar gav 28 träffar. De flesta är avsiktliga mellanresultat som gör korten fristående, till exempel ”Med a = 5 …” och ”Modellen är m(s) = 2,25s³”. Det är tillåtet enligt principen att ge nödvändiga mellanresultat direkt.
+- Det som inte får förekomma är att ett delkorts facit visar ett annat delkorts svar.
+
+**Kontroll**
+- **Figurer:** testet mäter kateternas kvot i figuren mot måtten i uppgiften.
+- **Validator:** 0 fynd.
+- **Självrättning:** 17 fall i Kunskapsgymmet, och alla ger väntat resultat.
+- **Tester:** `ma2-niva1-geometri-2026-10-22.test.js` har uppdaterats med 3.632:s nya tal.
+- **Skydd:** `tools/ma2-kap3-pythagoras-2026-10-26.test.js`.

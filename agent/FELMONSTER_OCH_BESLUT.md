@@ -2674,6 +2674,6 @@ Sök efter `(x)` som inte föregås av backslash innan en bank anses ren.
 
 **Etiketter:** långa uttryck i spetsiga vinklar placeras utanför hörnet.
 
-**Delkort:** ett delkort får inte ge ett annat delkorts svar i sin fråga (3.181 b).
+**Delkort (rättat i etapp 4):** ett givet mellanresultat i ett delkorts fråga, som ”Det är givet att x = 30”, är tillåtet och gör kortet fristående. Det som inte får förekomma är att ett delkorts facit visar ett annat delkorts svar. 3.181:s delning togs bort av misstag i etapp 3 och är återställd.
 
 Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.

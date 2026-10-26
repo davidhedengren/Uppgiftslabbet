@@ -21,7 +21,8 @@ test('Ingen matematik utan LaTeX-avgränsare i Ma2',()=>{
 test('Svar, nivåer och delning',()=>{
   const svar={'3.181':[30,130],'3.197':[15,45,50,85],'3.386':[85,67],'3.389':[36,138],'3.392':[35,45,55,80],'3.383':73,'3.384':85,'3.385':48,'3.387':68};
   for(const[id,v]of Object.entries(svar))assert.deepEqual(get(id).rättSvar,v,id);
-  assert.equal(get('3.181').spelDelar,undefined);// b-kortet gav tidigare svaret på a
+  // Delkort får ha ett givet mellanresultat i frågan (b: x = 30) så att de kan lösas fristående; facit får inte visa andra delars svar.
+  assert.equal(get('3.181').spelDelar.length,2);assert.match(get('3.181').spelDelar[1].fraga,/x=30/);assert.ok(!get('3.181').spelDelar[1].s.includes('4x+10=(2x'));
   for(const id of Object.keys(FORV)){const q=get(id),[e,cc,a]=q.poang.split('/').map(Number);assert.equal(q.niva,a?'A':cc?'C':'E',id);
     assert.ok(q.niva==='E'?q.traningsniva<=2:q.niva==='C'?[3,4].includes(q.traningsniva):q.traningsniva>=4,id);}
 });
