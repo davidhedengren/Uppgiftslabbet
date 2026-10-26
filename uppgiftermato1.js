@@ -117527,7 +117527,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117557,7 +117556,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117609,7 +117607,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117656,7 +117653,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117685,7 +117681,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117735,7 +117730,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "enhetscirkeln",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117765,7 +117759,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117811,7 +117804,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117858,7 +117850,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117905,7 +117896,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -117952,7 +117942,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118002,7 +117991,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ekvationer",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118049,7 +118037,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118096,7 +118083,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118127,7 +118113,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118158,7 +118143,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118202,7 +118186,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",
@@ -118249,7 +118232,6 @@ window.BANKMATO1 = [
   "kap": 4,
   "omr": "trig_ratvinkliga",
   "kurs": [
-    "1b",
     "1c"
   ],
   "niva": "C",

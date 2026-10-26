@@ -398,3 +398,19 @@ Kontroller:
 ### Läge efter omgång 2
 
 Alla 17 kort i Ma3c som hade färre än 8 nivå 3-uppgifter har nu minst 9. Totalt tillkom 69 kort i omgång 2.
+
+## Ma3b (användarens beslut 2026-10-26: fyll på Ma3b också)
+
+Lärarhandledningen till Matematik 5000 Kurs 3b har fyra kapitel:
+
+1. Algebra och funktioner
+2. Förändringshastigheter och derivator
+3. Kurvor, derivator och integraler
+4. Geometrisk summa och linjär optimering
+
+Där finns ingen trigonometri, inget absolutbelopp och ingen deriverbarhet.
+
+- **Trigonometrikorten:** de 18 nya trigonometrikorten (4.573–4.590) var märkta 1b+1c. De är nu bara märkta 1c, och testet låser det.
+- **Äldre kort:** 17 äldre trigonometrikort är fortfarande märkta 1b, liksom 3 äldre absolutbeloppskort (1.451, 1.462 och 1.534). De har inte ändrats.
+  - Trigonometri: 4.416, 4.417, 4.426, 4.427, 4.428, 4.442, 4.469–4.472, 4.487–4.492 och 4.495.
+  - Läraren får avgöra om de ska bli bara 1c.

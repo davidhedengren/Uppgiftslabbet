@@ -170,3 +170,6 @@ test('kap 2 omgång 3: svaren räknas om',()=>{
   inom(get('2.1283'),0,Math.log(3)/2);
   inom(get('2.1284'),0,Math.log(0.2)/-0.25);
 });
+test('Trigonometri ingår inte i Ma3b: de nya trigonometrikorten är bara Ma3c',()=>{
+  for(const id of r(4,573,600))assert.deepEqual(get(id).kurs,['1c'],id);
+});
