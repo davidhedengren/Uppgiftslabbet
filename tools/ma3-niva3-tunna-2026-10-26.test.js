@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -86,4 +86,14 @@ test('enhetscirkeln: svaren räknas om',()=>{
   assert.equal(get('4.576').rättSvar,'-1/4');nara(S(150)*C(300)+C(135)*S(45),-0.25,'4.576');
   assert.equal(get('4.577').alternativ.find(a=>a.ratt).txt,'130°');nara(S(130),S(50),'4.577');nara(C(130),-C(50),'4.577');
   const u6=get('4.578');assert.ok(Math.abs(u6.rättSvar+Math.sqrt(0.84))<=u6.tolerans);
+});
+test('trig_ekvationer: lösningarna prövas i ekvationerna',()=>{
+  const g=v=>v*Math.PI/180,S=v=>Math.sin(g(v)),C=v=>Math.cos(g(v)),T=v=>Math.tan(g(v));
+  const u1=get('4.579');for(const x of u1.rättSvar)assert.ok(Math.abs(3*S(x)-1-0.2)<0.01,'4.579');
+  for(const x of get('4.580').rättSvar)nara(2*S(x)+Math.sqrt(3),0,'4.580');
+  for(const x of get('4.581').rättSvar)nara(T(x),Math.sqrt(3),'4.581');
+  for(const x of get('4.582').rättSvar)nara(20-18*C(x),11,'4.582');
+  assert.equal(get('4.583').alternativ.find(a=>a.ratt).txt,'4');
+  const [x6,k6]=get('4.584').rättSvar;nara(S(x6),S(40),'4.584');assert.ok(Math.abs(k6-S(40))<=0.005);
+  for(const id of r(4,579,584))for(const x of [get(id).rättSvar].flat())if(typeof x==='number'&&x>2)assert.ok(x>=0&&x<360,id);
 });

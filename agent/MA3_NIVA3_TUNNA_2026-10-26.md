@@ -202,3 +202,24 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 15 svar, och alla gav väntat resultat. Tecken- och kvadrantfel underkänns.
+
+## 9. Trigonometriska ekvationer: 6 kort, 4.579–4.584
+
+| ID | Innehåll |
+|---|---|
+| 4.579 | Skriv om 3 sin x − 1 = 0,2 och lös med räknare, x ≈ 23,6° och 156,4° |
+| 4.580 | Exakt: 2 sin x + √3 = 0 ger 240° och 300° |
+| 4.581 | tan x = √3 ger 60° och 240° (tangens upprepas var 180:e grad) |
+| 4.582 | Höjden i ett pariserhjul: 20 − 18 cos v = 11 ger 60° och 300° |
+| 4.583 | Antal lösningar till sin x = 0,8 på två varv, 4 (flerval) |
+| 4.584 | Den andra skärningspunkten med y = k ur grafen och värdet på k (figur) |
+
+Kontroller:
+
+- Pariserhjulet gällde först 29 m. Svaret [120, 240] krockade med 4.36, och höjden ändrades till 11 m.
+- 4.584 fick en egen sinusfigur med skaltalen vid nederkanten. De vanliga skaltalen vid 180° och 360° krockade med kurvan.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 2 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 11 svar, och alla gav väntat resultat. Vinklarna godtas i valfri ordning och med eller utan gradtecken.
