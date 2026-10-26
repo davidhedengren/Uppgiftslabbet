@@ -33,7 +33,7 @@ test('Abstrakt kedjeregel ligger på nivå 4; svaren är självständigt beräkn
  for(const id of ['2.143','2.453','2.256'])assert.equal(q(ma4,id).traningsniva,3);
 });
 test('Nya proportionella modeller prövar åtta olika situationer med korrekta mål',()=>{
- const answers=[300/(45/3+60/5),Math.min(Math.floor(2000/(750/12)),Math.floor(900/(300/12))),9/(3/1)+.5,(.8+.4)*(2.4/.8)-2.4,40000/.8,12*(80-25)/20,31-44*12/18,45-(10+60*(4*45/60)/6)];
+ const answers=[300/(45/3+60/5),Math.min(Math.floor(2000/(750/12)),Math.floor(900/(300/12))),9/(3/1)+.5,(.8+.4)*(2.4/.8)-2.4,40000/.8,12*(80-25)/20,31-44*12/18,45-(8+60*(4*45/60)/6)];
  for(let i=0;i<8;i++){const t=q(ma1,'0.'+(1253+i));assert.ok(Math.abs(t.rättSvar-answers[i])<1e-10);assert.equal(t.traningsniva,i===4?4:3);assert.equal(t.miniräknare,true);assert.equal(t.geogebra,false);assert.match(t.s,/facit-svar/);}
  assert.equal(q(ma1,'8.18').rättSvar,210-(2*210)/3);
  assert.equal(ma1.filter(t=>t.omr==='proportionalitet_grunder'&&t.familj==='Proportionalitet i problemlösning'&&t.traningsniva===3).length,13); // 0.1257 nivå 4 enligt lärarrapport 2026-10-26

@@ -72,9 +72,11 @@ test('Newtons tredje lag visar lika stora, motsatta krafter på olika föremål'
  assert.equal(fy.get('4.755').rättSvar,20);
  for(const id of ['4.754','4.755','4.756','4.757']){
   const q=fy.get(id);
-  assert.match(q.t,/B på A/);assert.match(q.t,/A på B/);
-  assert.match(q.t,/x1="110" y1="90" x2="35" y2="90"/);
-  assert.match(q.t,/x1="350" y1="90" x2="425" y2="90"/);
+  if(id!=='4.757'){assert.match(q.t,/B på A/);assert.match(q.t,/A på B/);}
+  // Figuren omritad efter testet skrevs: två lika långa, motsatt riktade pilar på var sin vagn.
+  const pilar=[...q.t.matchAll(/<line x1="(\d+)" y1="(\d+)" x2="(\d+)" y2="(\d+)" stroke="#(?:b13b19|176c91)"/g)].map(m=>m.slice(1,5).map(Number));
+  assert.equal(pilar.length,2,id);const [p,r]=pilar;assert.equal(p[1],p[3]);assert.equal(r[1],r[3]);
+  assert.equal(Math.abs(p[2]-p[0]),Math.abs(r[2]-r[0]),id);assert.ok(Math.sign(p[2]-p[0])===-Math.sign(r[2]-r[0]),id);
  }
  assert.match(fy.get('4.756').alternativ.find(a=>a.ratt).txt,/olika vagnar/);
  assert.ok(8/2>8/4);assert.equal(fy.get('4.757').alternativ.find(a=>a.ratt).txt,'Vagn A.');

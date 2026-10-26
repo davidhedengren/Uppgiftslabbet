@@ -6,12 +6,14 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'uppgifterma1.js'),'utf8'),con
 const bank=JSON.parse(JSON.stringify(context.window.BANKMA1));
 const review=JSON.parse(fs.readFileSync(path.join(root,'agent/MA1_VERKTYG_2026-10-15.json'),'utf8'));
 const q=id=>{const found=bank.find(q=>q.id===id);assert.ok(found,id);return found;};
+// Senare dokumenterade verktygsbeslut: 1.116 miniräknare tillåten (FELRAPPORTER_2026-10-23_1345).
+const SENARE={'1.116':[true,false]};
 const tools=(parent,part)=>[part?.miniräknare??parent.miniräknare,part?.geogebra??parent.geogebra];
 test('Hela Ma1 motsvarar de manuellt bedömda verktygsbesluten, inklusive egna delkort',()=>{
  // Nya uppgifter får tillkomma utan att en daterad granskningslogg skrivs om.
  assert.equal(review.reviewed.length,3968);assert.ok(bank.length>=review.reviewed.length);
  const ids=new Set();let parts=0;
- for(const r of review.reviewed){assert.ok(!ids.has(r.id),r.id);ids.add(r.id);const task=q(r.id);assert.equal(task.omr,r.area);assert.ok(r.reason.length>30);assert.deepEqual(tools(task),r.tools,r.id);
+ for(const r of review.reviewed){assert.ok(!ids.has(r.id),r.id);ids.add(r.id);const task=q(r.id);assert.equal(task.omr,r.area);assert.ok(r.reason.length>30);assert.deepEqual(tools(task),SENARE[r.id]??r.tools,r.id);
   assert.equal(task.spelDelar?.length??0,r.parts.length,r.id);
   r.parts.forEach((p,i)=>{parts++;assert.deepEqual(tools(task,task.spelDelar[i]),p.tools,r.id+p.label);assert.ok(!p.tools[1]||p.tools[0],r.id+p.label);});
   assert.ok(!r.tools[1]||r.tools[0],r.id);

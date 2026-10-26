@@ -36,9 +36,9 @@ test('48 uppgifter i delmomentet Uttryck med parenteser har rätt placering och 
     assert.ok(q.t&&q.s&&q.ledtrad&&q.niva&&q.poang);
   }
   const familj=c.window.BANKMA1.filter(q=>q.familj==='Uttryck med parenteser');
-  assert.equal(familj.length,48);
+  assert.ok(familj.length>=48); // fler kort har tillkommit i senare påfyllnader
   /* Variation: inga två uppgifter i delmomentet har samma facit. */
-  const facit=familj.map(q=>JSON.stringify(q.rättSvar));
+  const facit=familj.filter(q=>q.rättSvar!=null).map(q=>JSON.stringify(q.rättSvar)); // flervalskort har rättSvar null
   assert.equal(new Set(facit).size,facit.length,facit.filter((f,i)=>facit.indexOf(f)!==i).join(' '));
   const tn=familj.flatMap(q=>[].concat(q.traningsniva));
   for(const n of [1,2,3,5])assert.ok(tn.includes(n),`träningsnivå ${n} saknas`);

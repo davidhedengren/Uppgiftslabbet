@@ -8,7 +8,8 @@ test('Varje rapport och varje jämförelse har ett dokumenterat beslut och komme
  assert.equal(report.rapporter.length,13);assert.equal(new Set(report.granskade).size,81);
  assert.equal(report.atgardade.length+report.granskad_inga_fel.length,81);
  for(const ids of Object.values(report.jamforelsegrupper))assert.ok(ids.length>=6);
- for(const id of report.granskade){assert.ok(find(id));const row=report.poster.find(x=>x.id===id);assert.ok(row.kommentar);assert.equal(typeof find(id)['miniräknare'],'boolean');if(find(id).geogebra)assert.ok(find(id)['miniräknare']);}
+ for(const id of report.granskade.filter(id=>id!=='4.142')){assert.ok(find(id)); // 4.142 borttagen (interpolation, användarbeslut 2026-10-22)
+ const row=report.poster.find(x=>x.id===id);assert.ok(row.kommentar);assert.equal(typeof find(id)['miniräknare'],'boolean');if(find(id).geogebra)assert.ok(find(id)['miniräknare']);}
  assert.ok(report.granskad_inga_fel.includes('2.484'));
 });
 test('Uttryckligt logaritmkrav och faktoriserat funktionssvar har avgränsade format',()=>{

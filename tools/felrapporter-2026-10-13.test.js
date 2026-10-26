@@ -25,7 +25,7 @@ test('Fasvinklar återskapar båda ursprungliga koefficienterna i grader',()=>{
  for(const [id,coeffs]of [['1.131',[[3,4],[5,-12]]],['1.81',[[1,1],[Math.sqrt(3),1],[1,-Math.sqrt(3)],[3,4]]]]){
   const q=b.mato2.get(id);q.rättSvar.forEach(([R,v],i)=>{const amplitude=typeof R==="number"?R:R===String.raw`\sqrt{2}`?Math.SQRT2:NaN;near(amplitude*Math.cos(v*Math.PI/180),coeffs[i][0]);near(amplitude*Math.sin(v*Math.PI/180),coeffs[i][1]);assert.ok(v>-90&&v<90);assert.deepEqual(q.svarFormat[i],['numeriskt','grader']);assert.deepEqual(q.svarEnhet[i],[null,'°']);assert.deepEqual(q.spelDelar[i].svarEtiketter,['R','v']);});
  }
- assert.equal(b.mato2.get('1.149').rättSvar,'B');assert.match(b.mato2.get('1.149').t,/53\{,\}1/);
+ assert.equal(b.mato2.get('1.149').alternativ.find(a=>a.ratt).txt,String.raw`\(5\sin(x-53{,}1^\circ)\)`); // flervalskort sedan 2026-10-24assert.match(b.mato2.get('1.149').t,/53\{,\}1/);
 });
 test('Kurvfrågor är fullständiga och deras svar stämmer med funktionerna',()=>{
  for(const [id,expected]of [['1.01',[5,'pi/2',2,[7,-3]]],['1.17',[2,'2*pi/3','pi/6','y=1']],['1.72',[3,'pi',-4,[-1,-7]]],['1.93',[4,'2*pi/3',[2,-6]]],['1.56',['pi/2',['-pi/4','pi/4'],1]],['1.59',[3,'y=2',4]]]){

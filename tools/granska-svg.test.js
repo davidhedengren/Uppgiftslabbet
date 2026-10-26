@@ -386,8 +386,9 @@ test('real-bank provenance keeps same numeric IDs in uppgifter.js and uppgifterm
   assert.equal(basic4133[1].taskIndex, sourceBank.findIndex((task) => task.id === '4.133'));
   assert.equal(sourceBank[basic4133[1].taskIndex].id, '4.133');
   assert.deepEqual(basic4133[1].paths, ['s[svg:0]']);
-  assert.match(basic4133[1].svg, /5,0 kg/);
-  assert.match(basic4133[1].svg, />golv</);
+  // Facitfiguren är numera ett kraftdiagram; figuren med 5,0 kg ligger i frågan (t[svg:0]).
+  assert.match(basic4133[1].svg, /N från golvet/);
+  assert.match(basic4133[0].svg, /5,0 kg/);
   assert.equal(ma24133.length, 1);
   assert.notEqual(ma24133[0].hash, basic4133[1].hash, 'Ma2 4.133 är en annan figur');
 
