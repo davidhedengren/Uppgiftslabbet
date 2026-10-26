@@ -177,3 +177,27 @@
 - **Självrättning:** 17 fall i Kunskapsgymmet, och alla ger väntat resultat.
 - **Tester:** `ma2-niva1-geometri-2026-10-22.test.js` har uppdaterats med 3.632:s nya tal.
 - **Skydd:** `tools/ma2-kap3-pythagoras-2026-10-26.test.js`.
+
+## Etapp 5: likformighet och topptriangel (2026-10-26)
+
+**Utgångsläge**
+- **Topptriangelkort med samma triangel:**
+  - 3.36, 3.69, 3.98, 3.99, 3.100, 3.162, 3.164, 3.176 och 3.323 använde samma likbenta triangel. I 3.99 och 3.259 låg D på fel ställe.
+  - 3.600–3.611 använde samma liksidiga triangel (D låg rätt).
+- **3.359:** var en exakt dubblett av 3.337 (AD = 4, AB = 10, AC = 15).
+- **Fel skala mellan likformiga figurer:**
+  - 3.43 (skala 2, ritad ungefär 1,2), 3.209, 3.335, 3.466–3.470, 3.639 och 3.642;
+  - rektanglarna i 3.641 (skala 3, ritad 2).
+- **Samma text:** 3.209, 3.335 och 3.466–3.470 hade texten ”Trianglarna är likformiga. Bestäm x.”.
+
+**Ändrat (34 kort)**
+- **Topptriangel:** 23 figurer är ritade med `topp()` från etapp 1, med varierad form och vridning. Spetsen pekar ibland nedåt eller åt sidan, och parallellitet markeras med pilar. Hela sidor har måttlinjer, och i figurer där toppen heter C (3.99, 3.164) är punkterna omdöpta.
+- **Likformiga trianglar:** paren är ritade med `tva()` i rätt skala. Den stora triangeln är ofta vriden, så att eleven måste para ihop sidorna efter storlek.
+- **Texter:** varierade sammanhang (segel, förminskning, olika lägen och samma vinklar). 3.359 har nya tal (AD = 6, AB = 15, AC = 20, så AE = 8).
+- **Facit:** varje steg har en rubrik, även i delkorten för 3.43, 3.99 och 3.176.
+
+**Kontroll**
+- **Figurer:** testet mäter DE/BC mot längdskalan och omkretsarnas kvot mot skalan, och kontrollerar att inga två topptriangelfigurer är identiska.
+- **Validator:** 0 fynd.
+- **Självrättning:** 33 fall i Kunskapsgymmet, och alla ger väntat resultat.
+- **Skydd:** `tools/ma2-kap3-likformighet-2026-10-26.test.js`.
