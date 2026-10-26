@@ -2659,3 +2659,21 @@ Skydd: `tools/ma2-facit-rubriker-2026-10-25.test.js`.
 
 Se MA2_KAP3_REVISION_2026-10-25.md, etapp 2.
 Skydd: `ma2-kap3-randvinklar-2026-10-25.test.js`.
+
+## Ma2 kap 3 etapp 3: yttervinkelsatsen och tappade LaTeX-avgränsare, 2026-10-26
+
+**Felmönster: tappade avgränsare.** ”Bestäm (x).” betyder att `\(x\)` har tappat sina backslash. Felet fanns:
+
+- i 22 yttervinkelkort i Ma2;
+- i 12 ledtrådar i Ma2 kap 1–2;
+- i ledtrådar i 19 Matf1-kort, som inte är rättade än.
+
+Sök efter `(x)` som inte föregås av backslash innan en bank anses ren.
+
+**Mallfigurer:** en mallfigur med fasta bågar (44°, 86°, 129°) stämmer aldrig med värdena. Mät bågarna i figuren.
+
+**Etiketter:** långa uttryck i spetsiga vinklar placeras utanför hörnet.
+
+**Delkort:** ett delkort får inte ge ett annat delkorts svar i sin fråga (3.181 b).
+
+Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.

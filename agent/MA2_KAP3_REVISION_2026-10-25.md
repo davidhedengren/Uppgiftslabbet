@@ -95,3 +95,35 @@
 - **Självrättning i Kunskapsgymmet:** 41 fall med rätt och fel svar, inklusive flerdelskort del för del, och alla ger väntat resultat.
 - **Mobilvy:** kontrollerad för 3.378.
 - **Skydd:** `tools/ma2-kap3-randvinklar-2026-10-25.test.js`.
+
+## Etapp 3: yttervinkelsatsen (2026-10-26)
+
+**Utgångsläge**
+- 22 kort (3.127, 3.154, 3.156, 3.181, 3.182, 3.197, 3.198, 3.271, 3.274, 3.275, 3.306, 3.330 och 3.383–3.392) hade samma mallfigur. Bågarna var alltid 44°, 86° och 129° oavsett uppgiftens värden, och algebraiska etiketter korsade sidorna.
+- Texterna visade ”Bestäm (x).”: avgränsarna `\(` och `\)` hade tappat sina backslash.
+- Flera texter var identiska, till exempel ”Bestäm yttervinkeln (x).” på fyra kort.
+- 3.181:s delkort b gav svaret på a (”Det är givet att x = 30”).
+- 3.383, 3.384, 3.385, 3.386 och 3.387 var märkta C men var direkta E-uppgifter på träningsnivå 1–2.
+
+**Ändrat**
+- **Ny figurmodul** (`vfig.js`) för trianglar med en förlängd sida:
+  - triangeln byggs ur vinklarna, och varje båge mäts mot sitt värde;
+  - läget varierar per kort (vridning och spegling);
+  - etiketter placeras fria från sträckorna. Långa uttryck flyttas till utsidan av hörnet om de annars skulle hamna långt in i vinkeln.
+- **Texter:**
+  - sammanhang: segelbåt som svänger (3.384), tält (3.383);
+  - Felix räknar i två steg (3.330);
+  - beräkning utan att först räkna den tredje vinkeln (3.198);
+  - begreppsformulering (3.387);
+  - olika punktnamn (PQR, KLM, DEF, STU, GHI).
+- **Facit:** varje steg har en rubrik. Algebrakorten har ett kontrollsteg.
+- **3.181:** är ett vanligt kort med två svar, utan delning.
+- **Nivåer:** 3.383–3.387 är E (1/0/0, och 2/0/0 för 3.386).
+- **Ledtrådar i Ma2 kap 1–2** (1.261, 1.263, 1.271, 1.273, 1.274, 2.07, 2.22, 2.25, 2.31, 2.32, 2.33 och 2.40) hade samma fel och har fått tillbaka `\(` och `\)`. Även `\ge` i 2.31 var trasig.
+
+**Kontroll**
+- **Banken:** inga fler ”(x)” utan avgränsare i Ma2. Testet söker igenom hela banken.
+- **Matf1:** har samma fel i 19 kort, i ledtrådar som 1.35, 1.102–1.109 och 1.127. Banken redigeras av en annan session och lämnas till en egen rättning.
+- **Validator:** 0 fynd.
+- **Självrättning:** 23 fall i Kunskapsgymmet, och alla ger väntat resultat.
+- **Skydd:** `tools/ma2-kap3-yttervinkel-2026-10-26.test.js`.
