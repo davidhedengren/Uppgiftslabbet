@@ -1,0 +1,287 @@
+[
+  {
+    "id": "3.01",
+    "integrand": "x**2*exp(-2*x)",
+    "primitive": "-exp(-2*x)*(x**2/2+x/2+s.Rational(1,4))",
+    "variable": "x"
+  },
+  {
+    "id": "3.02",
+    "integrand": "x*exp(x)",
+    "primitive": "(x-1)*exp(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.03",
+    "integrand": "log(x)",
+    "primitive": "x*log(x)-x",
+    "variable": "x"
+  },
+  {
+    "id": "3.125",
+    "integrand": "x*sin(2*x)",
+    "primitive": "-x*cos(2*x)/2+sin(2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.14",
+    "integrand": "x*cos(x)",
+    "primitive": "x*sin(x)+cos(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.15",
+    "integrand": "x**2*log(x)",
+    "primitive": "x**3*log(x)/3-x**3/9",
+    "variable": "x"
+  },
+  {
+    "id": "3.30",
+    "integrand": "x*exp(2*x)",
+    "primitive": "x*exp(2*x)/2-exp(2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.31",
+    "integrand": "x*sin(x)",
+    "primitive": "-x*cos(x)+sin(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.132",
+    "integrand": "x**2*exp(2*x)",
+    "primitive": "exp(2*x)*(2*x**2-2*x+1)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.133",
+    "integrand": "x**2*sin(2*x)",
+    "primitive": "-x**2*cos(2*x)/2+x*sin(2*x)/2+cos(2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.34",
+    "integrand": "x**2*exp(x)",
+    "primitive": "exp(x)*(x**2-2*x+2)",
+    "variable": "x"
+  },
+  {
+    "id": "3.135",
+    "integrand": "x*log(x)",
+    "primitive": "x**2*log(x)/2-x**2/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.55",
+    "integrand": "x*cos(2*x)",
+    "primitive": "x*sin(2*x)/2+cos(2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.56",
+    "integrand": "x*exp(-x)",
+    "primitive": "-(x+1)*exp(-x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.58",
+    "integrand": "x**2*sin(x)",
+    "primitive": "-x**2*cos(x)+2*x*sin(x)+2*cos(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.81",
+    "integrand": "exp(x)*sin(x)",
+    "primitive": "exp(x)*(sin(x)-cos(x))/2",
+    "variable": "x"
+  },
+  {
+    "id": "3.82",
+    "integrand": "log(x)**2",
+    "primitive": "x*log(x)**2-2*x*log(x)+2*x",
+    "variable": "x"
+  },
+  {
+    "id": "3.90",
+    "integrand": "x*exp(3*x)",
+    "primitive": "exp(3*x)*(x/3-s.Rational(1,9))",
+    "variable": "x"
+  },
+  {
+    "id": "3.145",
+    "integrand": "x*cos(3*x)",
+    "primitive": "x*sin(3*x)/3+cos(3*x)/9",
+    "variable": "x"
+  },
+  {
+    "id": "3.91",
+    "integrand": "x*sin(3*x)",
+    "primitive": "-x*cos(3*x)/3+sin(3*x)/9",
+    "variable": "x"
+  },
+  {
+    "id": "3.92",
+    "integrand": "log(3*x)",
+    "primitive": "x*log(3*x)-x",
+    "variable": "x"
+  },
+  {
+    "id": "3.95",
+    "integrand": "x**2*cos(x)",
+    "primitive": "x**2*sin(x)+2*x*cos(x)-2*sin(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.96",
+    "integrand": "x*log(2*x)",
+    "primitive": "x**2*log(2*x)/2-x**2/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.318a",
+    "integrand": "2*x*exp(x)",
+    "primitive": "2*(x-1)*exp(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.318b",
+    "integrand": "(x+1)*sin(x)",
+    "primitive": "-(x+1)*cos(x)+sin(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.318c",
+    "integrand": "t*cos(3*t)",
+    "primitive": "t*sin(3*t)/3+cos(3*t)/9",
+    "variable": "t"
+  },
+  {
+    "id": "3.318d",
+    "integrand": "x*exp(-2*x)",
+    "primitive": "-x*exp(-2*x)/2-exp(-2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.319a",
+    "integrand": "x*log(x)",
+    "primitive": "x**2*log(x)/2-x**2/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.319b",
+    "integrand": "x**2*sin(x)",
+    "primitive": "-x**2*cos(x)+2*x*sin(x)+2*cos(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.319c",
+    "integrand": "log(x)/x**2",
+    "primitive": "-log(x)/x-1/x",
+    "variable": "x"
+  },
+  {
+    "id": "3.319d",
+    "integrand": "exp(x)*cos(x)",
+    "primitive": "exp(x)*(cos(x)+sin(x))/2",
+    "variable": "x"
+  },
+  {
+    "id": "3.320a",
+    "integrand": "(x+2)*sin(x)",
+    "primitive": "-(x+2)*cos(x)+sin(x)+4",
+    "variable": "x"
+  },
+  {
+    "id": "3.320b",
+    "integrand": "2*x*exp(-x)",
+    "primitive": "-2*x*exp(-x)-2*exp(-x)+5",
+    "variable": "x"
+  },
+  {
+    "id": "3.353",
+    "integrand": "(2*x-1)*exp(x)",
+    "primitive": "(2*x-3)*exp(x)",
+    "variable": "x"
+  },
+  {
+    "id": "3.354",
+    "integrand": "x**3*log(x)",
+    "primitive": "x**4*log(x)/4-x**4/16",
+    "variable": "x"
+  },
+  {
+    "id": "3.355",
+    "integrand": "x**2*cos(2*x)",
+    "primitive": "x**2*sin(2*x)/2+x*cos(2*x)/2-sin(2*x)/4",
+    "variable": "x"
+  },
+  {
+    "id": "3.356",
+    "integrand": "exp(2*x)*sin(x)",
+    "primitive": "exp(2*x)*(2*sin(x)-cos(x))/5",
+    "variable": "x"
+  },
+  {
+    "id": "3.33",
+    "integrand": "x*exp(x)",
+    "bounds": [
+      "0",
+      "1"
+    ],
+    "value": "1"
+  },
+  {
+    "id": "3.57",
+    "integrand": "x*log(x)",
+    "bounds": [
+      "1",
+      "E"
+    ],
+    "value": "1/4 + exp(2)/4"
+  },
+  {
+    "id": "3.76",
+    "integrand": "x*cos(x)",
+    "bounds": [
+      "0",
+      "pi"
+    ],
+    "value": "-2"
+  },
+  {
+    "id": "3.97",
+    "integrand": "log(x)**2",
+    "bounds": [
+      "1",
+      "E"
+    ],
+    "value": "-2 + E"
+  },
+  {
+    "id": "3.321a",
+    "integrand": "x*sin(2*x)",
+    "bounds": [
+      "0",
+      "pi/2"
+    ],
+    "value": "pi/4"
+  },
+  {
+    "id": "3.321b",
+    "integrand": "x**2*log(x)",
+    "bounds": [
+      "1",
+      "2"
+    ],
+    "value": "-7/9 + 8*log(2)/3"
+  },
+  {
+    "id": "3.357",
+    "integrand": "x*cos(x)",
+    "bounds": [
+      "0",
+      "pi/2"
+    ],
+    "value": "-1 + pi/2"
+  }
+]

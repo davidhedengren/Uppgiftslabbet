@@ -1,0 +1,432 @@
+[
+  {
+    "id": "3.01",
+    "parts": [],
+    "changed": [
+      "s"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Svaret var korrekt. De två partiella integrationerna och derivatakontrollen är nu lättare att läsa även på mobil."
+  },
+  {
+    "id": "3.02",
+    "parts": [],
+    "changed": [
+      "s",
+      "traningsniva"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Svaret var korrekt. Formelraderna är tydligare på mobil. Uppgiften ligger nu på nivå 2 eftersom metoden kräver flera beräkningsled."
+  },
+  {
+    "id": "3.03",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar nu varför logaritmen skrivs som en produkt med 1 och hur den återstående integralen blir x. Alla primitiva funktioner innehåller en fri konstant."
+  },
+  {
+    "id": "3.125",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar nu hela integrationen och förklarar faktorerna 1/2 och 1/4. En primitiv funktion får väljas med C = 0."
+  },
+  {
+    "id": "3.14",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit förklarar nu varför den sista cosinustermen får plustecken. Uppgiften är nivå 2."
+  },
+  {
+    "id": "3.15",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "En partiell integration räcker. Den felaktiga ledtråden om flera omgångar är rättad och potensintegrationen visas."
+  },
+  {
+    "id": "3.30",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar båda faktorerna 1/2 så att termen e^(2x)/4 går att följa."
+  },
+  {
+    "id": "3.31",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar varför subtraktionen av −cos x ger en positiv integral. Uppgiften är nivå 2."
+  },
+  {
+    "id": "3.132",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Båda partiella integrationerna och insättningen av den andra integralen visas nu. Slutsvaret var korrekt."
+  },
+  {
+    "id": "3.133",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Facit visar båda integrationerna, inklusive tecken och faktorer från argumentet 2x. Slutsvaret var korrekt."
+  },
+  {
+    "id": "3.33",
+    "parts": [],
+    "changed": [
+      "s",
+      "miniräknare",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Den primitiva funktionen härleds nu innan F(1)−F(0) beräknas. Svaret är fortfarande 1. Miniräknare tillåts."
+  },
+  {
+    "id": "3.34",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad",
+      "traningsniva",
+      "svarFormat"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Facit visar båda integrationerna och hur −2 påverkar hela parentesen. Alla primitiva funktioner kräver en fri konstant. Nivå 4."
+  },
+  {
+    "id": "3.135",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar hur logaritmens derivata förenklar integranden och varför C = 0 kan väljas när en funktion efterfrågas."
+  },
+  {
+    "id": "3.55",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad",
+      "svarFormat"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar båda faktorerna 1/2 och varför cosinustermen blir positiv. Rättningen hanterar hela familjen av primitiva funktioner."
+  },
+  {
+    "id": "3.56",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit förklarar båda minustecknen vid integrering av e^(−x). En fri konstant kan skrivas på olika platser i svaret."
+  },
+  {
+    "id": "3.57",
+    "parts": [],
+    "changed": [
+      "s",
+      "miniräknare",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar metoden samt F(e) och F(1) separat. Svaret är (e²+1)/4. Miniräknare tillåts."
+  },
+  {
+    "id": "3.58",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Båda integrationerna visas med ett eget mellanresultat J. Rättningen skiljer hela familjen från en enskild primitiv funktion."
+  },
+  {
+    "id": "3.76",
+    "parts": [],
+    "changed": [
+      "s",
+      "miniräknare",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit härleder den primitiva funktionen och visar varför F(π)−F(0)=−2. En integral kan vara negativ. Miniräknare tillåts."
+  },
+  {
+    "id": "3.81",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 5,
+    "comment": "Facit förklarar hur ursprungsintegralen kommer tillbaka och hur ekvationen 2I=eˣ(sin x−cos x) löses."
+  },
+  {
+    "id": "3.82",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Facit visar även den andra integrationen av ln x. Rättningen kräver en fri konstant för hela familjen."
+  },
+  {
+    "id": "3.90",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar varför två faktorer 1/3 ger 1/9. Ekvivalenta skrivsätt med fri konstant godtas."
+  },
+  {
+    "id": "3.145",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad",
+      "svarFormat"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit visar nu den efterfrågade derivatakontrollen, där sinustermerna tar ut varandra. Självrättningen kontrollerar slututtrycket; motiveringen läses i lärarvyn."
+  },
+  {
+    "id": "3.91",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Facit förklarar tecknet och båda faktorerna 1/3. Rättningen hanterar hela familjen av primitiva funktioner."
+  },
+  {
+    "id": "3.92",
+    "parts": [],
+    "changed": [
+      "niva",
+      "poang",
+      "s",
+      "svarFormat",
+      "ledtrad",
+      "traningsniva"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar kedjeregeln: derivatan av ln(3x) är 1/x. Uppgiften ligger på nivå 3, liksom den jämförbara logaritmuppgiften 3.03."
+  },
+  {
+    "id": "3.95",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Facit visar den andra integrationen och hur −2 ändrar båda tecknen. Slutsvaret var korrekt."
+  },
+  {
+    "id": "3.96",
+    "parts": [],
+    "changed": [
+      "s",
+      "svarFormat",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar hur derivatan av ln(2x) förenklas till 1/x. Rättningen hanterar en godtycklig fri konstant."
+  },
+  {
+    "id": "3.97",
+    "parts": [],
+    "changed": [
+      "s",
+      "miniräknare",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Facit visar båda integrationerna och båda gränsvärdena. Svaret är e−2. Miniräknare tillåts."
+  },
+  {
+    "id": "3.318",
+    "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "changed": [
+      "niva",
+      "poang",
+      "s",
+      "svarFormat",
+      "spelDelar",
+      "traningsniva"
+    ],
+    "status": "Åtgärdad",
+    "level": 2,
+    "comment": "Alla fyra delkort har fullständiga lösningar. En fri konstant krävs när alla primitiva funktioner efterfrågas. t behandlas som integrationsvariabel i c. Samtliga delar är rutinuppgifter på nivå 2."
+  },
+  {
+    "id": "3.319",
+    "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "changed": [
+      "s",
+      "svarFormat",
+      "spelDelar"
+    ],
+    "status": "Åtgärdad",
+    "level": 5,
+    "comment": "Alla fyra delkort visar metodval och mellanled, särskilt den återkommande integralen i d. En fri konstant krävs i samtliga delar."
+  },
+  {
+    "id": "3.320",
+    "parts": [
+      "a",
+      "b"
+    ],
+    "changed": [
+      "s",
+      "spelDelar"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Båda delkorten visar integrationen innan villkoret används. Konstanterna 4 respektive 5 är bestämda och får inte ersättas med en fri konstant."
+  },
+  {
+    "id": "3.321",
+    "parts": [
+      "a",
+      "b"
+    ],
+    "changed": [
+      "s",
+      "miniräknare",
+      "spelDelar"
+    ],
+    "status": "Åtgärdad",
+    "level": 4,
+    "comment": "Båda delkorten visar primitiv funktion och gränsinsättning separat. De exakta svaren π/4 respektive 8ln(2)/3−7/9 är korrekta. Miniräknare tillåts."
+  },
+  {
+    "id": "3.353",
+    "parts": [],
+    "changed": [],
+    "status": "Granskad – inget fel",
+    "level": 2,
+    "comment": "Granskad – inget fel. Derivering av (2x−3)eˣ ger (2x−1)eˣ. Metodval, mellanled och fri konstant framgår."
+  },
+  {
+    "id": "3.354",
+    "parts": [],
+    "changed": [],
+    "status": "Granskad – inget fel",
+    "level": 3,
+    "comment": "Granskad – inget fel. Derivering av x⁴ln(x)/4−x⁴/16 ger x³ln(x). Facit och ledtråd visar rätt val av faktorer."
+  },
+  {
+    "id": "3.355",
+    "parts": [],
+    "changed": [],
+    "status": "Granskad – inget fel",
+    "level": 4,
+    "comment": "Granskad – inget fel. De två partiella integrationerna och teckenbytet vid subtraktion av J är korrekta och tydliga."
+  },
+  {
+    "id": "3.356",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 5,
+    "comment": "Facit visar nu vilka faktorer som väljs i båda omgångarna och hela insättningen som ger 5I/4. Slutsvaret var korrekt."
+  },
+  {
+    "id": "3.357",
+    "parts": [],
+    "changed": [
+      "s",
+      "ledtrad"
+    ],
+    "status": "Åtgärdad",
+    "level": 3,
+    "comment": "Facit visar nu hela integrationen och varför integralen motsvarar den skuggade arean. Svaret π/2−1 och figuren är korrekta."
+  }
+]
