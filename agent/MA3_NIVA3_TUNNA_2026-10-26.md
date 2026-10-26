@@ -414,3 +414,35 @@ Där finns ingen trigonometri, inget absolutbelopp och ingen deriverbarhet.
 - **Äldre kort:** 17 äldre trigonometrikort är fortfarande märkta 1b, liksom 3 äldre absolutbeloppskort (1.451, 1.462 och 1.534). De har inte ändrats.
   - Trigonometri: 4.416, 4.417, 4.426, 4.427, 4.428, 4.442, 4.469–4.472, 4.487–4.492 och 4.495.
   - Läraren får avgöra om de ska bli bara 1c.
+
+### 19. Ma3b-omgången: 15 kort
+
+| ID | Område (kurs) | Innehåll |
+|---|---|---|
+| 1.996 | absolutbelopp (1c) | \|2x − 5\| = 7 ger x = −1 och x = 6 |
+| 1.997 | absolutbelopp (1c) | \|x − 3\| = \|x + 1\| tolkat som avstånd ger x = 1 |
+| 1.998 | absolutbelopp (1c) | \|x + 1\| = 2x − 5 med en falsk lösning, svaret är x = 6 |
+| 1.999 | absolutbelopp (1c) | Grafisk lösning av \|x + 1\| = 0,5x + 2 ger x = ±2 (figur) |
+| 1.1000 | absolutbelopp (1c) | Ett belopp kan inte vara negativt, så ekvationen saknar lösning (flerval) |
+| 1.1001 | absolutbelopp (1c) | Temperaturavvikelse: 18,5 eller 23,5 °C |
+| 1.1002 | faktorisera_polynom | x(x − 3)² |
+| 1.1003 | faktorisera_polynom | Gruppering ger (x − 2)²(x + 2) |
+| 3.1267 | andraderivatan | Grafen byter från att böja nedåt till uppåt vid x = 3 |
+| 3.1268 | andraderivatan | Lokalt max 0 och lokalt min −16 för x⁴ − 8x² |
+| 3.1269 | deriverbarhet | a = 1, och derivatan är 2 till vänster och 3 till höger (hörn) |
+| 3.1270 | deriverbarhet | \|x − 3\| + \|x + 1\| är inte deriverbar i −1 och 3 |
+| 4.601 | geometriska_summor (1b) | 5 + 10 + … + 2 560 = 5 115 |
+| 4.602 | geometriska_summor (1b) | Ett meddelande sprids under 8 dagar, 148 personer |
+| 4.603 | geometriska_summor (1b) | Kvoten ur summan av tre termer, k = 4 |
+
+Kontroller:
+
+- **Kursmärkning:** absolutbeloppskorten är bara märkta 1c, eftersom absolutbelopp inte finns i 3b-boken. Faktorisering, andraderivatan och deriverbarhet följer de befintliga kortens märkning 1b+1c.
+- **Bytta tal:** två svar krockade med befintliga kort (1.998 och 3.1267) och fick andra tal.
+- **Faktoriseringsformat:** 1.1002 och 1.1003 har formatet ”faktoriserat”, precis som de befintliga faktoriseringskorten. Annars godtogs det ofaktoriserade uttrycket.
+- **Granskning:**
+  - Etiketterna i 1.999 fick vit bakgrund.
+  - 1.1002 omformulerades efter VERY_SIMILAR_TEXT mot 1.843.
+  - Tre allmänna rubriker skrevs om.
+  - SVG-granskaren ger 0 fynd, och validatorn ger 224 fynd både före och efter ändringen.
+- **Självrättningen:** testades med 29 svar, och alla gav väntat resultat.

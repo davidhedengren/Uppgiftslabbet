@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995),andringskvoter:r(2,1271,1273),derivata_exponential:r(2,1274,1276),numerisk_derivering:r(2,1277,1278),derivatans_definition:r(2,1279,1280),derivata_polynom:r(2,1281,1282),talet_e:r(2,1283,1284)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995),andringskvoter:r(2,1271,1273),derivata_exponential:r(2,1274,1276),numerisk_derivering:r(2,1277,1278),derivatans_definition:r(2,1279,1280),derivata_polynom:r(2,1281,1282),talet_e:r(2,1283,1284),absolutbelopp:r(1,996,1001),faktorisera_polynom:r(1,1002,1003),andraderivatan:r(3,1267,1268),deriverbarhet:r(3,1269,1270),geometriska_summor:r(4,601,603)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -172,4 +172,22 @@ test('kap 2 omgång 3: svaren räknas om',()=>{
 });
 test('Trigonometri ingår inte i Ma3b: de nya trigonometrikorten är bara Ma3c',()=>{
   for(const id of r(4,573,600))assert.deepEqual(get(id).kurs,['1c'],id);
+});
+test('Ma3b-omgången: svaren räknas om och kursmärkningen stämmer',()=>{
+  for(const x of get('1.996').rättSvar)assert.equal(Math.abs(2*x-5),7);
+  const x2=get('1.997').rättSvar;assert.equal(Math.abs(x2-3),Math.abs(x2+1));
+  const x3=get('1.998').rättSvar;assert.equal(Math.abs(x3+1),2*x3-5);
+  for(const x of get('1.999').rättSvar)assert.equal(Math.abs(x+1),0.5*x+2);
+  assert.equal(get('1.1000').alternativ.find(a=>a.ratt).txt,'Ingen lösning');
+  for(const T of get('1.1001').rättSvar)nara(Math.abs(T-21),2.5,'1.1001');
+  for(const x of [-1,2,5]){nara(x*(x-3)**2,x**3-6*x*x+9*x,'1.1002');nara((x-2)**2*(x+2),x**3-2*x*x-4*x+8,'1.1003');}
+  const f=x=>x**3-9*x*x+4;nara(d(x=>d(f,x),get('3.1267').rättSvar,1e-3),0,'3.1267');
+  const g=x=>x**4-8*x*x;assert.deepEqual(get('3.1268').rättSvar,[g(0),g(2)]);
+  const [a,v,h]=get('3.1269').rättSvar;assert.equal(1+a,3*1-1);assert.deepEqual([v,h],[2,3]);
+  assert.deepEqual([...get('3.1270').rättSvar].sort((p,q)=>p-q),[-1,3]);
+  assert.equal(get('4.601').rättSvar,5*(2**10-1));assert.ok(Math.abs(get('4.602').rättSvar-3*(1.5**8-1)/0.5)<=0.5);
+  const k=get('4.603').rättSvar;assert.equal(2+2*k+2*k*k,42);
+  for(const id of r(1,996,1001))assert.deepEqual(get(id).kurs,['1c'],id);
+  for(const id of r(4,601,603))assert.deepEqual(get(id).kurs,['1b'],id);
+  for(const id of ['1.1002','1.1003'])assert.equal(get(id).svarFormat,'faktoriserat',id);
 });
