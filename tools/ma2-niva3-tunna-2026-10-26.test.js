@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234)};
+const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -26,4 +26,12 @@ test('grafisk_losning_ekvationssystem: svaren räknas om',()=>{
   const m=get('1.1232').rättSvar;assert.equal(-8+8,0);assert.equal(2*8+m,0);
   sys('1.1233',(x,y)=>0.5*x+1-y,(x,y)=>0.6*x-1-y);
   assert.equal(get('1.1234').alternativ.find(a=>a.ratt).txt,'Om c = 10 har systemet oändligt många lösningar');
+});
+test('losningsformel_andragrad: svaren räknas om',()=>{
+  const [b,l]=get('2.1217').rättSvar;assert.equal(l-b,3);assert.equal(b*l,40);
+  assert.deepEqual(get('2.1218').rättSvar,['\\(2+\\sqrt5\\)','\\(2-\\sqrt5\\)']);for(const x of [2+Math.sqrt(5),2-Math.sqrt(5)])assert.ok(Math.abs((x-1)*(x-3)-4)<1e-12);
+  const [c,x3]=get('2.1219').rättSvar;assert.equal(36-4*c,0);assert.equal(x3*x3+6*x3+c,0);
+  const [b4,x4]=get('2.1220').rättSvar;assert.equal(4+2*b4-14,0);assert.equal(x4*x4+b4*x4-14,0);assert.notEqual(x4,2);
+  assert.match(get('2.1221').alternativ.find(a=>a.ratt).txt,/delat ekvationen med 2/);
+  assert.deepEqual(get('2.1222').rättSvar,['2','-4/3']);for(const x of [2,-4/3])assert.ok(Math.abs(3*x*x-2*(x+4))<1e-12);
 });
