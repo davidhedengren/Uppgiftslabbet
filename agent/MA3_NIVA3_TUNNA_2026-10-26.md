@@ -61,3 +61,27 @@ Kontroller:
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Alla Ma3-tester går igenom.
 - Självrättningen testades med 15 svar, och alla gav väntat resultat.
+
+## 3. Förkorta rationella uttryck: 6 kort, 1.965–1.970
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 1.965 | Förkorta rationella uttryck | x bryts ut i täljaren, och nämnaren är en kvadrat: x/(x + 5), där −5 är förbjudet |
+| 1.966 | Förkorta rationella uttryck | Täljare av tredje graden: x(x − 2)/(x + 2), där ±2 är förbjudna |
+| 1.967 | Förkorta rationella uttryck | Förkorta först och lös sedan R(x) = 1/2, som ger x = −1 |
+| 1.968 | Förenkla och ange definitionsvillkor | Vilket uttryck är lika med 1/(x + 1) (flerval) |
+| 1.969 | Förkorta rationella uttryck | Faktorer med omvänt tecken: (3 − x)/(x + 3), där ±3 är förbjudna |
+| 1.970 | Förenkla och ange definitionsvillkor | Hålet i grafen till (x² − 1)/(x − 1), punkten (1, 2) (figur utan synligt hål) |
+
+Svarsformatet följer 1.440: ett förenklat uttryck och en lista med förbjudna x-värden.
+
+Kontroller:
+
+- I 1.970 togs den öppna ringen bort ur figuren, eftersom hålet annars kunde läsas av direkt.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 5 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades via `answerLayout`, alltså samma väg som appen använder, och 1.440 användes som referens.
+  - Likvärdiga former godtas, till exempel (x² − 2x)/(x + 2) och −(x − 3)/(x + 3).
+  - Teckenfel underkänns.
