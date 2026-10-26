@@ -1,6 +1,8 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato1.js','utf8'),c);const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1)),q=id=>bank.find(q=>q.id===id);
+// Kort som 2026-10-26 flyttats till Ma4 enligt ämnesplanen hittas via idTidigare.
+const c2={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato2.js','utf8'),c2);const flyttat=id=>c2.window.BANKMATO2.find(q=>q.idTidigare==='mato1 '+id);
 test('Definitionsvillkor och uttryck kräver separata svar',()=>{
  for(const [id,bad] of [['1.43',[1,-4]],['1.48',[-1,2]],['1.53',[0,3]]]){assert.deepEqual(q(id).rättSvar[1],bad);assert.equal(q(id).svarsstruktur,'ordnad');}
  const a=q('1.539');assert.equal(a.alternativ.find(x=>x.ratt).txt,'Uttrycket är inte definierat.'); // flervalskort sedan 2026-10-24
@@ -10,7 +12,7 @@ test('Definitionsvillkor och uttryck kräver separata svar',()=>{
 test('Gränstider och kontinuitet kontrolleras matematiskt',()=>{
  const a=12*Math.asin(4/7)/Math.PI,b=12-a,T=t=>18+7*Math.sin(Math.PI*t/12);
  assert.ok(Math.abs(T(a)-22)<1e-12);assert.ok(Math.abs(T(b)-22)<1e-12);assert.ok(T(6)>22&&T(12)<22);
- assert.equal(a.toFixed(2),'2.32');assert.equal(b.toFixed(2),'9.68');assert.match(q('1.272').s,/2\{,\}32/);assert.match(q('1.187').t,/kontinuerliga/);assert.match(q('1.435').t,/miljarder/);
+ assert.equal(a.toFixed(2),'2.32');assert.equal(b.toFixed(2),'9.68');assert.match(flyttat('1.272').s,/2\{,\}32/);assert.match(q('1.187').t,/kontinuerliga/);assert.match(q('1.435').t,/miljarder/);
 });
 test('Faktoriseringens fyra rötter och sekantens gränsvärde',()=>{
  for(const x of q('1.580').rättSvar[1])assert.equal(x**4-5*x*x+4,0);
@@ -37,6 +39,6 @@ test('Variation i linjär optimering har självständigt kontrollerade svar',()=
 });
 test('Verktyg och avrundningskontrakt gäller också blandade delkort',()=>{
  assert.equal(q('4.158').spelDelar[0].miniräknare,false);assert.equal(q('4.158').spelDelar[1].miniräknare,true);
- for(const id of ['4.241','1.272'])assert.ok(q(id).geogebra&&q(id).miniräknare);
+ for(const t of [q('4.241'),flyttat('1.272')])assert.ok(t.geogebra&&t.miniräknare);
  for(const [id,exact,rounded,wrong]of [['3.819',16/3,5.33,5.34],['3.820',4/3,1.33,1.34]]){const t=q(id);assert.equal(t.rättSvar,exact);assert.ok(Math.abs(rounded-exact)<t.tolerans);assert.ok(Math.abs(wrong-exact)>t.tolerans);assert.equal(t.miniräknare,true);}
 });

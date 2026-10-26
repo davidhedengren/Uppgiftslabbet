@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995),andringskvoter:r(2,1271,1273),derivata_exponential:r(2,1274,1276),numerisk_derivering:r(2,1277,1278),derivatans_definition:r(2,1279,1280),derivata_polynom:r(2,1281,1282),talet_e:r(2,1283,1284),absolutbelopp:r(1,996,1001),faktorisera_polynom:r(1,1002,1003),andraderivatan:r(3,1267,1268),deriverbarhet:r(3,1269,1270),geometriska_summor:r(4,601,603)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:[...r(4,574,578),'4.604'],trig_ekvationer:[...r(4,579,582),...r(4,605,608)],trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995),andringskvoter:r(2,1271,1273),derivata_exponential:r(2,1274,1276),numerisk_derivering:r(2,1277,1278),derivatans_definition:r(2,1279,1280),derivata_polynom:r(2,1281,1282),talet_e:r(2,1283,1284),absolutbelopp:r(1,996,1001),faktorisera_polynom:r(1,1002,1003),andraderivatan:r(3,1267,1268),deriverbarhet:r(3,1269,1270),geometriska_summor:r(4,601,603)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -80,7 +80,8 @@ test('areasatsen: svaren räknas om',()=>{
 });
 test('enhetscirkeln: svaren räknas om',()=>{
   const g=v=>v*Math.PI/180,S=v=>Math.sin(g(v)),C=v=>Math.cos(g(v));
-  nara(S(37)**2+S(53)**2,get('4.573').rättSvar,'4.573');
+  // 4.573 (trigonometriska ettan som identitet) flyttad till Ma4 2026-10-26; 4.604 ersätter den.
+  const u1=get('4.604');assert.deepEqual(u1.rättSvar,['3/5','-4/5']);nara((3/5)**2+(-4/5)**2,1,'4.604');nara((3/5)/(-4/5),-3/4,'4.604');
   const u2=get('4.574');[C(140),C(220),C(320)].forEach((x,i)=>assert.ok(Math.abs(u2.rättSvar[i]-x)<=u2.tolerans[i]+0.0005,'4.574'));
   const u3=get('4.575'),[y,v]=u3.rättSvar;assert.ok(Math.abs(y+Math.sqrt(1-0.28**2))<=u3.tolerans[0]);assert.ok(Math.abs(v-(360-Math.acos(0.28)*180/Math.PI))<=u3.tolerans[1]);
   assert.equal(get('4.576').rättSvar,'-1/4');nara(S(150)*C(300)+C(135)*S(45),-0.25,'4.576');
@@ -88,14 +89,18 @@ test('enhetscirkeln: svaren räknas om',()=>{
   const u6=get('4.578');assert.ok(Math.abs(u6.rättSvar+Math.sqrt(0.84))<=u6.tolerans);
 });
 test('trig_ekvationer: lösningarna prövas i ekvationerna',()=>{
+  const DEGX=x=>x*180/Math.PI;
   const g=v=>v*Math.PI/180,S=v=>Math.sin(g(v)),C=v=>Math.cos(g(v)),T=v=>Math.tan(g(v));
   const u1=get('4.579');for(const x of u1.rättSvar)assert.ok(Math.abs(3*S(x)-1-0.2)<0.01,'4.579');
   for(const x of get('4.580').rättSvar)nara(2*S(x)+Math.sqrt(3),0,'4.580');
   for(const x of get('4.581').rättSvar)nara(T(x),Math.sqrt(3),'4.581');
   for(const x of get('4.582').rättSvar)nara(20-18*C(x),11,'4.582');
-  assert.equal(get('4.583').alternativ.find(a=>a.ratt).txt,'4');
-  const [x6,k6]=get('4.584').rättSvar;nara(S(x6),S(40),'4.584');assert.ok(Math.abs(k6-S(40))<=0.005);
-  for(const id of r(4,579,584))for(const x of [get(id).rättSvar].flat())if(typeof x==='number'&&x>2)assert.ok(x>=0&&x<360,id);
+  // 4.583 och 4.584 (period och sinuskurvan) flyttade till Ma4 2026-10-26; 4.605–4.608 ersätter dem.
+  const u5=get('4.605');u5.rättSvar.forEach((x,i)=>assert.ok(Math.abs(x-[DEGX(Math.acos(-0.3)),360-DEGX(Math.acos(-0.3))][i])<=u5.tolerans[i],'4.605'));
+  for(const x of get('4.606').rättSvar)nara(Math.sqrt(3)*T(x)+1,0,'4.606');
+  const u7=get('4.607');u7.rättSvar.forEach((x,i)=>assert.ok(Math.abs(x-[DEGX(Math.asin(0.6)),180-DEGX(Math.asin(0.6))][i])<=u7.tolerans[i],'4.607'));for(const x of u7.rättSvar)assert.ok(Math.abs(60+35*S(x)-81)<0.05,'4.607');
+  assert.equal(get('4.608').alternativ.find(a=>a.ratt).txt,'\\(k=1\\)');
+  for(const id of [...r(4,579,582),...r(4,605,608)])for(const x of [get(id).rättSvar].flat())if(typeof x==='number'&&x>2)assert.ok(x>=0&&x<360,id);
 });
 const G=v=>v*Math.PI/180,SIN=v=>Math.sin(G(v)),COS=v=>Math.cos(G(v)),TAN=v=>Math.tan(G(v)),DEG=x=>x*180/Math.PI;
 const inom=(u,i,x)=>{const a=[u.rättSvar].flat()[i],t=[u.tolerans].flat()[i]??0;assert.ok(Math.abs(a-x)<=t+1e-9,`${u.id}[${i}]: ${a} ≠ ${x}`);};
@@ -171,7 +176,7 @@ test('kap 2 omgång 3: svaren räknas om',()=>{
   inom(get('2.1284'),0,Math.log(0.2)/-0.25);
 });
 test('Trigonometri ingår inte i Ma3b: de nya trigonometrikorten är bara Ma3c',()=>{
-  for(const id of r(4,573,600))assert.deepEqual(get(id).kurs,['1c'],id);
+  for(const id of [...r(4,574,582),...r(4,585,600),...r(4,604,608)])assert.deepEqual(get(id).kurs,['1c'],id);
 });
 test('Ma3b-omgången: svaren räknas om och kursmärkningen stämmer',()=>{
   for(const x of get('1.996').rättSvar)assert.equal(Math.abs(2*x-5),7);

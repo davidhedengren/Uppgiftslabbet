@@ -493,3 +493,54 @@ Iakttagelser utan ändring:
 
 - **Trigonometriska ekvationer:** metoder för att lösa trigonometriska ekvationer står i nivå 2 (Ma4), inte i nivå 1c. Området trig_ekvationer ligger ändå i Ma3c, som enkla ekvationer kopplade till enhetscirkeln.
 - **Radianer:** begreppet radian hör till nivå 2. Det används i 4.416 och 4.417.
+
+## 22. Nivå 2-innehåll flyttat från Ma3 till Ma4 (ämnesplanen)
+
+Användaren: ”lägg dem där de ska vara, och fortsätt granskningen”. Ämnesplanens nivå 2 omfattar metoder för trigonometriska ekvationer, radianer, trigonometriska identiteter (däribland trigonometriska ettan), trigonometriska funktioners derivator och integraler samt sammansatta funktioner, produkt- och kvotregeln. Hela mato1 söktes igenom (skript i scratchpad: niva2scan, scan2–scan5). Kort som kräver detta innehåll flyttades till mato2 med nytt id, `kurs: ["2c"]`, en befintlig familj i målområdet, `idTidigare: "mato1 <id>"` och gammalt område i `omrTidigare`. Det följer samma mönster som när restsatsen flyttades.
+
+37 kort flyttades:
+
+| Ma3 | Ma4 | Mål-område | Skäl |
+|---|---|---|---|
+| 4.71, 4.177, 4.583 | 1.699, 1.700, 1.701 | trig_grundekvationer | alla lösningar och periodicitet |
+| 4.410 | 1.702 | trig_grundekvationer | multipel vinkel, cos 2x |
+| 4.476, 4.484 | 1.703, 1.704 | trig_ekv_formler | faktorisering och andragradssubstitution |
+| 4.573 | 1.705 | trig_identiteter | trigonometriska ettan som identitet |
+| 4.584 | 2.719 | sinus_cosinuskurvor | sinuskurvan |
+| 4.416, 4.417 | 2.720, 2.721 | kurvor_radianer | ekvationer i radianer |
+| 1.272 | 2.722 | trig_problemlosning_2 | sinusmodell i radianer |
+| 2.358, 2.365, 2.367, 2.372 | 2.723–2.726 | derivatan_sin_cos | derivatan av sin och cos |
+| 2.356, 2.361, 2.366, 3.1239 | 2.727–2.730 | derivata_sammansatta | kedjeregeln |
+| 2.368, 2.370, 3.519, 3.520, 3.530, 3.577 | 3.531–3.536 | produktregeln | produktregeln |
+| 3.579, 3.531, 3.532, 3.534, 3.535, 3.583, 3.585 | 4.621–4.627 | integraler_primitiva | integraler av trigonometriska funktioner (radianer) |
+| 3.538 | 4.628 | areor_mellan_kurvor | area mot 1 + sin x |
+| 3.589, 3.547, 3.548, 3.610 | 4.629–4.632 | integraler_storheter | sinusformade modeller i integraler |
+
+Kvar i Ma3c och bedömda som nivå 1c:
+
+- Enkla ekvationer i grader på ett varv som löses med enhetscirkeln, till exempel sin x = ½ för 0° ≤ x < 360°.
+- Beräkning av en koordinat med Pythagoras sats på enhetscirkeln.
+
+I 4.578 och 4.479 står det nu ”Pythagoras sats på enhetscirkeln” i stället för ”trigonometriska ettan”. I 2.254 nämnde ledtråden kedjeregeln. Den säger nu att derivatan av \(e^{kx}\) är \(ke^{kx}\). Facit till 2.1258 deriverar \((x-1)^3\) genom att först utveckla uttrycket.
+
+Fem nya nivå 3-kort i Ma3c ersätter de flyttade nivå 3-korten. Alla använder gradmått och 0°–360°:
+
+- **4.604** (enhetscirkeln): sin v och cos v bestäms när tan v = −3/4 i andra kvadranten.
+- **4.605**: 2cos x + 0,6 = 0, löst med räknare och spegling i x-axeln.
+- **4.606**: √3 tan x + 1 = 0 med exakt svar.
+- **4.607**: höjden för ett vindkraftverks bladspets.
+- **4.608**: flerval om när sin x = k har exakt en lösning.
+
+Nivå 3 efter ändringen: trig_ekvationer har 9 kort och enhetscirkeln 12. Facit och ledtråd är renderade och genomlästa. Radbrytning är gjord för mobil, och inga facit krockar.
+
+Kända följder:
+
+- Ma4 1.704 (tidigare 4.484) är textmässigt identisk med Ma4 1.201, 1.240 och 1.290, som redan var dubbletter. Användaren tillfrågas innan några dubbletter tas bort.
+- 18 av de flyttade korten har `spel: false`. De var inga träningskort i Ma3 heller, och det har inte ändrats.
+
+Tester:
+
+- Nytt test: `tools/ma3-ma4-flytt-2026-10-26.test.js`. Det kontrollerar flyttkartan och att Ma3 inte längre innehåller radianer, trigonometriska ettan, produkt- eller kedjeregeln. Sinus, cosinus och tangens får bara förekomma i Ma3c kap 4–5.
+- Uppdaterade tester: `ma3-niva3-tunna`, `mato1-granskning-2026-10-18`, `verktygspolicy-2026-10-14` och `n3-derivatagraf-2026-10-25`. De hittar nu de flyttade korten via `idTidigare`.
+- Hela sviten: bara de 12 kända felen återstår.
+- Rättningstest i webbläsaren: de nya korten finns i spår 1c men inte i 1b, och de flyttade korten rättas rätt i Ma4.
