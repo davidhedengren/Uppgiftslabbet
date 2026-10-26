@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -77,4 +77,13 @@ test('areasatsen: svaren räknas om',()=>{
   assert.equal(get('4.571').alternativ.find(a=>a.ratt).txt,'Sidorna 5 och 9 med vinkeln 90°');
   for(const v of get('4.572').rättSvar)nara(ar(5,8,v),ar(5,8,90)/2,'4.572');
   for(const id of r(4,567,572))assert.deepEqual(get(id).kurs,['1c'],id);
+});
+test('enhetscirkeln: svaren räknas om',()=>{
+  const g=v=>v*Math.PI/180,S=v=>Math.sin(g(v)),C=v=>Math.cos(g(v));
+  nara(S(37)**2+S(53)**2,get('4.573').rättSvar,'4.573');
+  const u2=get('4.574');[C(140),C(220),C(320)].forEach((x,i)=>assert.ok(Math.abs(u2.rättSvar[i]-x)<=u2.tolerans[i]+0.0005,'4.574'));
+  const u3=get('4.575'),[y,v]=u3.rättSvar;assert.ok(Math.abs(y+Math.sqrt(1-0.28**2))<=u3.tolerans[0]);assert.ok(Math.abs(v-(360-Math.acos(0.28)*180/Math.PI))<=u3.tolerans[1]);
+  assert.equal(get('4.576').rättSvar,'-1/4');nara(S(150)*C(300)+C(135)*S(45),-0.25,'4.576');
+  assert.equal(get('4.577').alternativ.find(a=>a.ratt).txt,'130°');nara(S(130),S(50),'4.577');nara(C(130),-C(50),'4.577');
+  const u6=get('4.578');assert.ok(Math.abs(u6.rättSvar+Math.sqrt(0.84))<=u6.tolerans);
 });

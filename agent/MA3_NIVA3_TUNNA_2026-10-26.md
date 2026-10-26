@@ -183,3 +183,22 @@ Kontroller:
 - 3 räkneled radbröts. Raden i 4.571 delades på fyra rader.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 12 svar, och alla gav väntat resultat. I 4.572 godtas vinklarna i valfri ordning.
+
+## 8. Enhetscirkeln: 6 kort, 4.573–4.578
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 4.573 | Symmetri och exakta värden | sin² 37° + sin² 53° = 1. Komplementvinklar ger trigonometriska ettan |
+| 4.574 | Symmetri och exakta värden | cos 140°, cos 220° och cos 320° ur cos 40° ≈ 0,766 |
+| 4.575 | Koordinater och vinklar | En punkt i fjärde kvadranten med x = 0,28: y = −0,96 och v ≈ 286,3° (figur) |
+| 4.576 | Symmetri och exakta värden | Exakt värde av sin 150° · cos 300° + cos 135° · sin 45° = −1/4 |
+| 4.577 | Koordinater och vinklar | Vinkeln där sin v = sin 50° och cos v = −cos 50° samtidigt (flerval) |
+| 4.578 | Koordinater och vinklar | cos v ur sin v = −0,4 i tredje kvadranten, ≈ −0,917 |
+
+Kontroller:
+
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 3 räkneled radbröts. Ledet i 4.576 delades i två.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 15 svar, och alla gav väntat resultat. Tecken- och kvadrantfel underkänns.
