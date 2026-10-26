@@ -67,3 +67,26 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 216 fynd både före och efter ändringen.
 - Självrättningen testades med 20 svar, och alla gav väntat resultat.
+
+## 4. Exponentialgrafer: 6 kort, 2.1223–2.1228
+
+Familjen ”Tolka tillväxt och avtagande” saknade nivå 3. De befintliga nivå 3-korten handlade mest om att bestämma C och a ur två punkter.
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 2.1223 | Tolka tillväxt och avtagande | Bilens värde: punkterna ligger två år isär, och minskningen är 15 % per år (figur) |
+| 2.1224 | Jämföra och tolka exponentialgrafer | Linjär mot exponentiell tillväxt: Omar går om Elsa efter 13 år (figur) |
+| 2.1225 | Avläsa exponentialgrafer | Vilken av tre grafer som hör till \(5\cdot0{,}7^x\) (figur, flerval) |
+| 2.1226 | Tolka tillväxt och avtagande | Årlig procentökning ur tio års tillväxt, 12 % (figur) |
+| 2.1227 | Avläsa exponentialgrafer | Första heltalet där \(5\cdot2^x\) passerar 10 000, långt utanför figuren (figur) |
+| 2.1228 | Tolka tillväxt och avtagande | Antalet fåglar ett år innan mätningen började |
+
+Kontroller:
+
+- Ett kort om halveringstid ersattes med 2.1224, eftersom det liknade 2.784 (fördubblingstid och prognos).
+- Sju facitkrockar med befintliga heltalssvar togs bort genom att talen byttes. Små heltal som 2–10 är redan upptagna i området.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 5 räkneled radbröts.
+- SVG-granskaren ger 0 fynd. Etiketten ”Omar” fick en bredare bakgrundsrektangel.
+- Validatorn ger 215 fynd både före och efter ändringen.
+- Självrättningen testades med 13 svar, och alla gav väntat resultat.

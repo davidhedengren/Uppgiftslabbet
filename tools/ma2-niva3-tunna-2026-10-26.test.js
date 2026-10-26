@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222),linjara_representationer:r(1,1235,1240)};
+const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222),linjara_representationer:r(1,1235,1240),exponentialgraf:r(2,1223,1228)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -42,4 +42,12 @@ test('linjara_representationer: svaren räknas om',()=>{
   const [L0,T]=get('1.1238').rättSvar;const kl=(12-21)/(5-2);assert.equal(L0+kl*2,21);assert.equal(L0+kl*T,0);
   assert.equal(get('1.1239').alternativ.find(a=>a.ratt).txt,'Efter 30 resor är kortet tomt');assert.equal(450-15*30,0);
   const x=get('1.1240').rättSvar;assert.ok(Math.abs((-1.5*x+10)-(x+1))<1e-12);
+});
+test('exponentialgraf: svaren räknas om',()=>{
+  assert.ok(Math.abs(get('2.1223').rättSvar-100*(1-Math.sqrt(289/400)))<1e-9);
+  const n=get('2.1224').rättSvar,E=x=>1000+250*x,O=x=>1000*1.12**x;assert.ok(O(n)>E(n)&&O(n-1)<E(n-1));
+  assert.equal(get('2.1225').alternativ.find(a=>a.ratt).txt,'Graf B');
+  assert.equal(get('2.1226').rättSvar,Math.round(100*((6212/2000)**0.1-1)));
+  const x=get('2.1227').rättSvar;assert.ok(5*2**x>10000&&5*2**(x-1)<10000);
+  assert.equal(get('2.1228').rättSvar,Math.round(500/Math.sqrt(720/500)));
 });
