@@ -186,6 +186,9 @@ självrättning. Lägg inte till avrundningskrav som eleven inte behöver.
 **Ändrat 2026-10-26 (lärarens felrapporter, Fy1):** skriv inte ut svarsenhet
 eller avrundningskrav när de är underförstådda ("Svara i m", "med två decimaler").
 Precisionen sköts av `svarVardesiffror` med oavrundat `rättSvar`. Skriv inte
-"likformig" om acceleration och skriv "fart", inte "fartbelopp". Delkort ska vara
-fristående med egna givna värden och inte upprepa samma inledning ordagrant
-(se `agent/FELRAPPORTER_2026-10-26_1531.md`). Behåll nödvändig positiv riktning.
+"likformig" om acceleration och skriv "fart", inte "fartbelopp". Behåll nödvändig
+positiv riktning. Deluppgifter visas i Kunskapsgymmets deluppgiftskedja (a → b → c,
+commit e48195f): alla delkort ska börja med **exakt samma** inledning och figur,
+följt av bara delens fråga. Ett behövt mellanresultat skrivs i delens fråga. Ge
+inte delkorten egna omformulerade inledningar, för då försvinner den gemensamma
+inledningen och eleven upplever samma fråga igen.
