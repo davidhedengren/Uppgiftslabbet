@@ -244,3 +244,38 @@
 **Tester:** `felrapporter-2026-10-14-1325.test.js` har uppdaterats med 3.341:s nya tal.
 
 **Kontroll:** validatorn ger 0 fynd, och självrättningen i Kunskapsgymmet ger väntat resultat. Skydd: `tools/ma2-kap3-koordinat-2026-10-26.test.js`.
+
+## Etapp 8: problemlösning (2026-10-26)
+
+**Ändrat (4 kort)**
+- **3.2106 och 3.2161:** radien (10 cm respektive 7 cm) var märkt på hela diagonalen, alltså på diametern. Nu är radien dragen från medelpunkten till ett hörn.
+- **3.2160:** figuren visade ”ett halvt varv”. Nu visar den sträckan för ett helt varv (2π · 30 cm), märkt ”ett varv = omkretsen”.
+- **3.2052:** var nästan samma fråga som 3.659 (vilken sats gäller kordor). Nu frågar kortet vilken sats som ger yttervinkeln direkt, med en triangelfigur.
+
+**Övriga figurer:** de övriga 62 figurerna i området är skalenliga och tydliga och behålls.
+
+**Kontroll:** validatorn ger 0 fynd och självrättningen ger väntat resultat. Skydd: `tools/ma2-kap3-problemlosning-2026-10-26.test.js`.
+
+## Sammanfattning av revisionen av kapitel 3
+
+| Etapp | Område | Kort |
+|---|---|---|
+| 1 | Mallfigurer och satskort | 55 |
+| 2 | Randvinklar | 33 |
+| 3 | Yttervinkelsatsen och begrepp | 25 |
+| 4 | Pythagoras | 16 |
+| 5 | Likformighet och topptriangel | 34 |
+| 6 | Kordasats och bevis | 11 |
+| 7 | Avstånd och koordinatgeometri | 10 |
+| 8 | Problemlösning | 4 |
+
+**Alla etapper**
+- **Figurer:** figurerna följer måtten, och vinkelbågar och proportioner mäts i testerna.
+- **Texter:** dubbletter och nästan identiska kort är varierade.
+- **Facit:** varje steg har en rubrik.
+- **Tappade avgränsare:** LaTeX-avgränsare har återställts i 34 kort. Matf1 har kvar samma fel i 19 kort.
+- **Nya verktyg i scratchpad:**
+  - `vfig.js`, för vinkelfigurer med kollisionskontroll;
+  - `cirk`, i `rv-revision.js`;
+  - `kordor`, i `kb-revision.js`;
+  - `topp` och `tva`, i `tt-revision.js`, med vinkelmarkeringar.
