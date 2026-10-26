@@ -22,30 +22,30 @@
     },
     {
       "course": "mato1",
-      "huvuduppgifter": 3316,
-      "huvud_och_delar": 3580,
+      "huvuduppgifter": 3284,
+      "huvud_och_delar": 3548,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 1551,
+      "kort_facit_signal": 1546,
       "utan_ledtrad": 0,
-      "matte_utan_stegrubrik": 3248
+      "matte_utan_stegrubrik": 3215
     },
     {
       "course": "mato2",
-      "huvuduppgifter": 2206,
-      "huvud_och_delar": 3978,
+      "huvuduppgifter": 2243,
+      "huvud_och_delar": 4015,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 1726,
+      "kort_facit_signal": 1731,
       "utan_ledtrad": 0,
-      "matte_utan_stegrubrik": 3873
+      "matte_utan_stegrubrik": 3906
     },
     {
       "course": "matf1",
       "huvuduppgifter": 1703,
       "huvud_och_delar": 2306,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 715,
+      "kort_facit_signal": 697,
       "utan_ledtrad": 0,
-      "matte_utan_stegrubrik": 2101
+      "matte_utan_stegrubrik": 2048
     },
     {
       "course": "fy1",

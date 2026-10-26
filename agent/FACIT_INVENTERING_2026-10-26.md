@@ -1,16 +1,16 @@
 # Inventering av hela banken – 2026-10-26
 
-**21470 huvuduppgifter** i sju kurser är inventerade automatiskt. Detta är inte en manuell kvalitetskontroll. Korta lösningar kan räcka för enkla frågor. Fysik ska ha sammanhängande lösningar, inte matematikens numrerade stegrubriker.
+**21475 huvuduppgifter** i sju kurser är inventerade automatiskt. Detta är inte en manuell kvalitetskontroll. Korta lösningar kan räcka för enkla frågor. Fysik ska ha sammanhängande lösningar, inte matematikens numrerade stegrubriker.
 
-107 delkort utan egna facit och sex uppgifter utan ledtråd har åtgärdats i [rundans logg](FACIT_DELKORT_2026-10-26.md). De tidigare 158 Ma3-faciten finns i [Ma3-loggen](MA3_FACITSTRUKTUR_2026-10-25.md). Därefter har hela området partiell integration i Matf1 granskats: [36 huvuduppgifter / 44 kort](MATF1_PARTIELL_FACIT_2026-10-26.md), varav 33 förbättrades och tre var utan fel. Totalt **247 huvuduppgifter granskade och 244 bearbetade i dessa tre rundor**.
+107 delkort utan egna facit och sex uppgifter utan ledtråd har åtgärdats i [rundans logg](FACIT_DELKORT_2026-10-26.md). De tidigare 158 Ma3-faciten finns i [Ma3-loggen](MA3_FACITSTRUKTUR_2026-10-25.md). Därefter har hela området partiell integration i Matf1 granskats: [36 huvuduppgifter / 44 kort](MATF1_PARTIELL_FACIT_2026-10-26.md), varav 33 förbättrades och tre var utan fel. Därefter har [linjär approximation i Matf1](MATF1_LINJAR_FACIT_2026-10-26.md) granskats: 39 huvuduppgifter / 48 kort, samtliga förbättrade. Totalt **286 huvuduppgifter granskade och 283 bearbetade i dessa fyra rundor**.
 
 | Kurs | Huvuduppgifter | Huvud- och delobjekt | Facit under 150 tecken (söksignal) | Saknar egen lösning | Saknar ledtråd |
 |---|---:|---:|---:|---:|---:|
 | ma1 | 4674 | 5630 | 3720 | 0 | 0 |
 | ma2 | 3362 | 4231 | 1993 | 0 | 0 |
-| mato1 | 3316 | 3580 | 1551 | 0 | 0 |
-| mato2 | 2206 | 3978 | 1726 | 0 | 0 |
-| matf1 | 1703 | 2306 | 715 | 0 | 0 |
+| mato1 | 3284 | 3548 | 1546 | 0 | 0 |
+| mato2 | 2243 | 4015 | 1731 | 0 | 0 |
+| matf1 | 1703 | 2306 | 697 | 0 | 0 |
 | fy1 | 4444 | 7857 | 2515 | 0 | 0 |
 | fy2 | 1765 | 2739 | 1221 | 0 | 0 |
 

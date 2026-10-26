@@ -1,0 +1,573 @@
+{
+  "datum": "2026-10-26",
+  "kurs": "matf1",
+  "område": "linjar_approximation",
+  "granskade": 39,
+  "åtgärdade": 39,
+  "granskad_inget_fel": [],
+  "träningskort": 48,
+  "uppgifter": [
+    {
+      "id": "3.07",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "rättSvar",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar tangentpunkt, lutning och insättning. Rättningen använder 91/30 utan mellanavrundning och godtar rimligt avrundade svar. Miniräknare tillåts."
+    },
+    {
+      "id": "3.08",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "delar": [],
+      "nivå_före": 5,
+      "nivå_efter": 4,
+      "status": "Åtgärdad",
+      "kommentar": "Facit förklarar varför logaritmens avtagande lutning ger en för stor approximation. Nivå 4. Talet 0,04 självrättas; motiveringen bedöms fortfarande manuellt."
+    },
+    {
+      "id": "3.18",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar den negativa ändringen −0,2 och hela beräkningen till 3,975. Korrekt avrundning 3,98 godtas, men 3,97 gör det inte."
+    },
+    {
+      "id": "3.26",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar varför lutningen är 1/8 och hur den ger 4,0375. Formlerna ryms på mobil. Figuren är kontrollerad."
+    },
+    {
+      "id": "3.41",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar derivatans minustecken och hur ökningen i x sänker tangentens värde till 0,49."
+    },
+    {
+      "id": "3.192",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit svarar nu med de fyra decimaler som efterfrågas: 7,0286. Rättningen skiljer korrekt avrundning från grannvärdet 7,0285. Miniräknare tillåts."
+    },
+    {
+      "id": "3.42",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "rättSvar",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar kubikrotens derivata och värdet 271/90. Rättningen utgår från full precision; exempelvis 3,01 och 3,01111 godtas. Miniräknare tillåts."
+    },
+    {
+      "id": "3.43",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s"
+      ],
+      "delar": [],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Den irrelevanta ledtråden är ersatt. Lösningen förklarar att kvadratrotens avtagande lutning gör tangentens uppskattning för stor. Fortsatt manuell bedömning."
+    },
+    {
+      "id": "3.63",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar varför sin 0 = 0 och cos 0 = 1 ger tangentlinjen y = x. Vinkeln räknas i radianer."
+    },
+    {
+      "id": "3.64",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar att både startvärdet och lutningen är 1, innan 0,03 sätts in."
+    },
+    {
+      "id": "3.65",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit skiljer konstruktionen av tangentlinjen x−1 från beräkningen av uppskattningen 0,08. Båda svarsfälten är kontrollerade."
+    },
+    {
+      "id": "3.78",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarFormat",
+        "svarstyp",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Rättningsformatet är anpassat till att en funktion efterfrågas. Både 1, L(x)=1 och y=1 godtas. Facit förklarar den vågräta tangenten."
+    },
+    {
+      "id": "3.196",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit svarar nu med fyra decimaler: 7,0143. Rättningen utgår från det oavrundade tangentvärdet och avvisar 7,0142. Miniräknare tillåts."
+    },
+    {
+      "id": "3.99",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Irrelevanta råd om potens- och logaritmlagar är borttagna. Facit visar derivatan 1/10 och höjdändringen 0,04."
+    },
+    {
+      "id": "3.116",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar tangentlinjen och insättningen av 1,05. Grafens logaritm, tangent och tangentpunkt stämmer."
+    },
+    {
+      "id": "3.118",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit använder den givna lutningen och visar båda beräkningsleden till 2,025. Nivå 1 behålls."
+    },
+    {
+      "id": "3.119",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar ändringen 0,03 och använder den givna lutningen. Nivå 1 behålls."
+    },
+    {
+      "id": "3.120",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit skiljer höjdändringen 0,05 från startvärdet 1, som ska adderas. Nivå 1 behålls."
+    },
+    {
+      "id": "3.277",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar 0,6/12 = 0,05 och därefter 6,05. Den givna lutningen gör uppgiften lämplig för nivå 1. Tabellen är kontrollerad."
+    },
+    {
+      "id": "3.278",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit förklarar varför negativ ändring gånger negativ lutning ger ökning. Svaret är 12,3. Tabellen är kontrollerad."
+    },
+    {
+      "id": "3.279",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar hur kubikrotens derivata ger 1/12 vid 8, och därmed uppskattningen 2,025."
+    },
+    {
+      "id": "3.280",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit använder den redan givna linjen och förklarar minustecknet i −0,03. Grafen är kontrollerad."
+    },
+    {
+      "id": "3.281",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Ledtråden och facitet klargör att x är positivt 0,04 medan minustecknet redan finns i funktionen. Svaret 0,96 och grafen stämmer."
+    },
+    {
+      "id": "3.282",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar derivatan −1/x² och hur tangentens värde blir 0,98."
+    },
+    {
+      "id": "3.283",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarFormat",
+        "svarstyp",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Frågan kräver inte bråkform. Rättningen godtar nu både 1/6 och korrekt avrundade decimaler, exempelvis 0,17 och 0,1667."
+    },
+    {
+      "id": "3.284",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar hur tangentpunkten (1,0) sätts in i y=x+c och ger c=−1."
+    },
+    {
+      "id": "3.286",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "delar": [],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar båda avstånden och kvadraten av deras kvot. Nivå 3 eftersom felmodellen är given. För grov tolerans på svaret 100 är borttagen."
+    },
+    {
+      "id": "3.312",
+      "ändrade_fält": [
+        "s",
+        "spelDelar"
+      ],
+      "delar": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Alla fyra delar har egna facit med funktionsvärde, derivata och tangentekvation. Del a är nivå 2. Ekvivalenta tangentuttryck godtas."
+    },
+    {
+      "id": "3.313",
+      "ändrade_fält": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "tolerans"
+      ],
+      "delar": [
+        "a",
+        "b"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Båda delkort visar val av tangentpunkt och hela beräkningen. Del b rättas mot 49/24 och avrundas till 2,042."
+    },
+    {
+      "id": "3.314",
+      "ändrade_fält": [
+        "s",
+        "spelDelar",
+        "tolerans"
+      ],
+      "delar": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Alla fyra delkort visar hur exponent och ändring identifieras, inklusive negativa tecken och kubikrotens exponent."
+    },
+    {
+      "id": "3.315",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit skiljer den linjära ekvationen från den ursprungliga. Svaret är 1,125; det icke-linjära närmevärdet 1,127 godtas inte som lösning till den nya ekvationen."
+    },
+    {
+      "id": "3.316",
+      "ändrade_fält": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "svarEnhet",
+        "tolerans"
+      ],
+      "delar": [
+        "a",
+        "b"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar kedjeregel, radianer, enheter och tidsomvandling. Del b har egna givna temperatur- och lutningsvärden och är nivå 2. Huvudfacitet räknar från modellen utan mellanavrundning."
+    },
+    {
+      "id": "3.317",
+      "ändrade_fält": [
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "tolerans"
+      ],
+      "delar": [
+        "a",
+        "b"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar tangentens konstruktion och båda temperaturerna före beräkningen av relativt fel. Referensvärdet behåller full precision; svaret avrundas till 0,8 %."
+    },
+    {
+      "id": "3.324",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar ändring i mm, ökning i V och den uppskattade signalen 7,3 V. Svarsfältet har rätt enhet."
+    },
+    {
+      "id": "3.325",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar tidsändringen och temperatursänkningen till 49 °C. Svarsfältet har rätt enhet."
+    },
+    {
+      "id": "3.326",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar areans derivata, uppskattad areaökning och omvandling till procent. Svaret är 4 %, inte den exakta areaökningen 4,04 %. Figuren har kontrollerats."
+    },
+    {
+      "id": "3.327",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar hur höjdändringen divideras med lutningen innan 4 adderas. Svaret är x≈4,3. Tabellen har kontrollerats."
+    },
+    {
+      "id": "3.328",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans",
+        "typ"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar att ändringen är −0,05 och ger tangentvärdet 3,8. Figuren och tangentpunkten är kontrollerade."
+    },
+    {
+      "id": "3.329",
+      "ändrade_fält": [
+        "alternativ",
+        "ledtrad",
+        "s",
+        "typ"
+      ],
+      "delar": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "status": "Åtgärdad",
+      "kommentar": "Facit förklarar varför en vågrät tangent ger 0 även om funktionens värde är 0,008. Alla fyra alternativ har nu egna kommentarer. Figuren är kontrollerad."
+    }
+  ],
+  "verifiering": {
+    "rättningsfall": 570,
+    "elevvyer": 96,
+    "lärarvyer": 106,
+    "figurer": 12,
+    "validator": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 67
+    },
+    "inga_nya_validatorfynd": true
+  }
+}
