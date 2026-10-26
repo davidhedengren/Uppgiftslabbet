@@ -1,0 +1,386 @@
+{
+  "datum": "2026-10-26",
+  "kurs": "matf1",
+  "område": "vad_ar_diffekv",
+  "granskade": 28,
+  "åtgärdade": 28,
+  "granskad_inget_fel": [],
+  "uppgifter": [
+    {
+      "id": "4.326",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar jämviktsekvationen och kontrollen. Miniräknare tillåts."
+    },
+    {
+      "id": "4.328",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar insättningen och förklarar varför alla kurvor har samma lutning. Irrelevanta jämviktsråd tas bort."
+    },
+    {
+      "id": "4.329",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit använder nollproduktmetoden; den felaktiga hänvisningen till exponentiell avvikelse tas bort. Jämvikterna kan självrättas i valfri ordning. E/nivå 2."
+    },
+    {
+      "id": "4.330",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Ledtrådens trasiga olikhetstecken ersätts med tydlig text. Båda sidor om jämvikten förklaras. Nivå 3 och fortsatt manuell motivering."
+    },
+    {
+      "id": "4.15",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s",
+        "spel"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Ordning och homogenitet förklaras separat. Uppgiften behålls för manuell bedömning i Uppgiftslabbet."
+    },
+    {
+      "id": "4.46",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "s",
+        "spelDelar"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Varje del får egen rubrik, förklaring, svarsrad och ledtråd. Ja/nej-rättningen behålls."
+    },
+    {
+      "id": "4.88",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat",
+        "svarstyp",
+        "t"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Frågan ber uttryckligen om bokstaven. Textformat godtar både T och t."
+    },
+    {
+      "id": "4.16",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar varför en negativ temperaturskillnad kräver negativt k för att ge uppvärmning. E/nivå 2; motiveringen bedöms manuellt."
+    },
+    {
+      "id": "4.44",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit härleder även den partikulära termen 8 cos(x)/3 och jämför lösningsfamiljerna. Manuell resonemangsbedömning."
+    },
+    {
+      "id": "4.66",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit skiljer de två positiva populationsintervallen och gränsfallet. E/nivå 2."
+    },
+    {
+      "id": "4.90",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "spel"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Båda insättningarna och derivatans tecken visas separat. Miniräknare tillåts."
+    },
+    {
+      "id": "4.91",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar tecknen även under noll och skiljer instabil från stabil jämvikt. Nivå 3."
+    },
+    {
+      "id": "4.123",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "traningsniva"
+      ],
+      "nivå_före": 5,
+      "nivå_efter": 3,
+      "kommentar": "Figuren avslöjade hela teckenanalysen och har flyttats till facit. Beteckningarna stämmer nu med P, och kontrasten är förbättrad. C/nivå 3."
+    },
+    {
+      "id": "4.344",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "t",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 2,
+      "kommentar": "Olikheten i frågan renderas nu korrekt. Den felaktiga generiska exponentialförklaringen är ersatt av teckenanalys. E/nivå 2."
+    },
+    {
+      "id": "4.346",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 1,
+      "kommentar": "Kort facit visar jämvikt, beräkning och kontroll. Nivå 1 för en direkt linjär ekvation."
+    },
+    {
+      "id": "4.158",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "miniräknare",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Ledtråden pekar på nollproduktmetoden. Båda jämvikterna får två svarsfält och godtas i valfri ordning."
+    },
+    {
+      "id": "4.159",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "spel"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar beräkningarna vid båda temperaturerna och förklarar riktningen mot jämvikten."
+    },
+    {
+      "id": "4.351",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 1,
+      "kommentar": "Irrelevanta jämviktsråd är borttagna. Facit visar direkt insättning; nivå 1."
+    },
+    {
+      "id": "4.319",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "niva",
+        "poang",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit skiljer de två rötterna från den efterfrågade positiva roten. E-metadata samordnad med nivå 2."
+    },
+    {
+      "id": "4.518",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Facit skiljer populationsvärdet vid störst tillväxt från själva tillväxthastigheten. Tre namngivna fält behålls. C/nivå 3."
+    },
+    {
+      "id": "4.577",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit förklarar vilken derivata som bestämmer ordningen och avslutas med svarsrad."
+    },
+    {
+      "id": "4.578",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit använder först kolumnerna, sedan tecknet på x. Riktningsfältet och alternativen är kontrollerade."
+    },
+    {
+      "id": "4.579",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar den konstanta lösningen algebraisk och kopplar till vågräta streck i fältet."
+    },
+    {
+      "id": "4.580",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar insättningen av båda koordinaterna och en tydlig svarsrad."
+    },
+    {
+      "id": "4.581",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit förklarar tillväxten och utplaningen var för sig. Grafen och riktningsfältet är kontrollerade. Nivå 2."
+    },
+    {
+      "id": "4.582",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit analyserar båda sidor om jämvikten innan slutsatsen. Nivå 2 för avläsning och tecken."
+    },
+    {
+      "id": "4.583",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit jämför koefficienter för alla x utan otillåten division vid x=0."
+    },
+    {
+      "id": "4.584",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 2,
+      "kommentar": "Facit binder ihop temperaturdifferens, derivata och minustecken. Uppgiften är E/nivå 2."
+    }
+  ]
+}
