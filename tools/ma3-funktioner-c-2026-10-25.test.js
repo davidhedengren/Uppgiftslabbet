@@ -1,10 +1,11 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),c);
-const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1)),q=n=>bank.find(x=>x.id==='1.'+n),near=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} ≠ ${b}`),value=(s,x=0)=>Function('x','return '+String(s).replace(/\^/g,'**').replace(/\bsqrt\(/g,'Math.sqrt('))(x);
+const c2={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato2.js'),'utf8'),c2);const flyttat=id=>JSON.parse(JSON.stringify(c2.window.BANKMATO2.find(x=>x.idTidigare==='mato1 '+id)||null));// Sammansatta funktioner och logaritmfunktioner flyttade till Ma4 2026-10-26 enligt ämnesplanen
+const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1)),q=n=>bank.find(x=>x.id==='1.'+n)||flyttat('1.'+n),near=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} ≠ ${b}`),value=(s,x=0)=>Function('x','return '+String(s).replace(/\^/g,'**').replace(/\bsqrt\(/g,'Math.sqrt('))(x);
 test('16 nya och tre återanvända C-uppgifter ger 20 spelbara kort efter nivåkalibrering',()=>{
- for(const n of [183,233,274,...Array.from({length:16},(_,i)=>949+i)]){let t=q(n);assert.equal(t.traningsniva,3);assert.equal(t.omr,'funktioner');assert.equal(t.spel,true);assert.equal(t.självrättning,true);assert.equal(t.geogebra,false);assert.deepEqual(t.kurs,['1b','1c']);}
+ for(const n of [183,233,274,...Array.from({length:16},(_,i)=>949+i)]){let t=q(n);assert.equal(t.traningsniva,3);if([949,952,958,959].includes(n)){assert.equal(t.omr,'derivata_sammansatta');continue;}assert.equal(t.omr,'funktioner');assert.equal(t.spel,true);assert.equal(t.självrättning,true);assert.equal(t.geogebra,false);assert.deepEqual(t.kurs,['1b','1c']);}
  assert.equal(q(430).traningsniva,2);assert.equal(q(430).rättSvar,3000);
- assert.ok(bank.filter(q=>q.omr==='funktioner'&&q.traningsniva===3&&q.spel!==false).length>=20);
+ assert.ok(bank.filter(q=>q.omr==='funktioner'&&q.traningsniva===3&&q.spel!==false).length>=16); // 20 före flytten av fyra kort med sammansatta funktioner
  for(const n of [274,949,963])assert.equal(q(n).svarsstruktur,'mängd');
  for(const n of [183,233,950,953,956,957])assert.equal(q(n).svarsstruktur,'ordnad');
 });

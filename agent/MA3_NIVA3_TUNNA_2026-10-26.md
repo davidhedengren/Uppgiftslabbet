@@ -544,3 +544,37 @@ Tester:
 - Uppdaterade tester: `ma3-niva3-tunna`, `mato1-granskning-2026-10-18`, `verktygspolicy-2026-10-14` och `n3-derivatagraf-2026-10-25`. De hittar nu de flyttade korten via `idTidigare`.
 - Hela sviten: bara de 12 kända felen återstår.
 - Rättningstest i webbläsaren: de nya korten finns i spår 1c men inte i 1b, och de flyttade korten rättas rätt i Ma4.
+
+## 23. Andra omgången: logaritmfunktioner och sammansatta funktioner
+
+Ämnesplanens nivå 2 omfattar också fördjupningen av funktionsbegreppet. Där ingår sammansatta funktioner, logaritmfunktioner och linjära asymptoter, och dessutom deriveringsregler för logaritmfunktioner. Nivå 1b/1c har bara ”talet e och naturlig logaritm”. Ma1 och Ma2 behandlar inte sammansatta funktioner enligt sina ämnesplaner.
+
+Sökningen (scan6/scan7 i scratchpad) gav följande:
+
+- Ingen derivata av ln x finns i Ma3. Integraler som ger ln (3.584, 3.1003) görs med digitalt verktyg och får ligga kvar enligt nivå 1c.
+- Åtta kort flyttades till Ma4:
+
+| Ma3 | Ma4 | Område | Innehåll |
+|---|---|---|---|
+| 2.1218 | 3.537 | kurvor_asymptoter (Asymptoter i grafer) | förskjuten graf till ln x med lodrät asymptot |
+| 2.1208 | 2.731 | derivata_sammansatta (Beräkna sammansatta funktioner) | f(f(x)) = 0 för f(x) = ln(3x − 2) |
+| 1.203 | 2.732 | derivata_sammansatta | f(f(x))/f(x) |
+| 1.586 | 2.733 | derivata_sammansatta | f(g(x)) = g(f(x)) |
+| 1.949, 1.952, 1.959 | 2.734–2.736 | derivata_sammansatta | f(f(x)) och f(g(x)) |
+| 1.958 | 2.737 | derivata_sammansatta | f bestäms ur f(2x+1) |
+
+Kvar i Ma3 och bedömda som nivå 1c:
+
+- 1.950 (g(t) = f(t+1)) och 1.953 (g = 3 − 2f) är förskjutning och skalning av en funktion, inte sammansättning.
+- 1.514 handlar om gränsvärdet då x → ∞.
+- 2.1152 och 2.1209 använder grafen till ln x för att belysa begreppet naturlig logaritm.
+
+Nivå 3 kvar i Ma3, räknat på spelbara kort: funktioner 16, naturliga_logaritmer 18 och forkorta_rationella 10. Alla ligger över målet på 8.
+
+Tester:
+
+- `ma3-ma4-flytt-2026-10-26` har utökats med de åtta nya flyttarna och ett skydd mot sammansatta funktioner i Ma3.
+- `ma3-funktioner-c-2026-10-25`, `ma3-ln-c-2026-10-25` och `felrapporter-2026-10-16-1919` hittar nu flyttade kort via `idTidigare`, och nivå 3-golven har sänkts med det antal kort som flyttats.
+- Validatorn ger inga nya fynd, och hela sviten har bara de 12 kända felen.
+
+Ämnesplanen för Ma5 (”Matematik fördjupning”) innehåller bara betygskriterier och inget centralt innehåll, så matf1 kan inte kontrolleras mot den. Ma4-banken (mato2) motsvarar nivå 2. Kort om derivator och enhetscirkeln finns där som repetition, vilket är avsiktligt.

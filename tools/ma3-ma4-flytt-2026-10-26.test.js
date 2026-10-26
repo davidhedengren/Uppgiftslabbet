@@ -13,7 +13,10 @@ const FLYTT=[['4.71','1.699','trig_grundekvationer'],['4.177','1.700','trig_grun
  ['2.368','3.531','produktregeln'],['2.370','3.532','produktregeln'],['3.519','3.533','produktregeln'],['3.520','3.534','produktregeln'],['3.530','3.535','produktregeln'],['3.577','3.536','produktregeln'],
  ['3.579','4.621','integraler_primitiva'],['3.531','4.622','integraler_primitiva'],['3.532','4.623','integraler_primitiva'],['3.534','4.624','integraler_primitiva'],
  ['3.535','4.625','integraler_primitiva'],['3.583','4.626','integraler_primitiva'],['3.585','4.627','integraler_primitiva'],['3.538','4.628','areor_mellan_kurvor'],
- ['3.589','4.629','integraler_storheter'],['3.547','4.630','integraler_storheter'],['3.548','4.631','integraler_storheter'],['3.610','4.632','integraler_storheter']];
+ ['3.589','4.629','integraler_storheter'],['3.547','4.630','integraler_storheter'],['3.548','4.631','integraler_storheter'],['3.610','4.632','integraler_storheter'],
+ // andra omgången: logaritmfunktioner och sammansatta funktioner
+ ['2.1218','3.537','kurvor_asymptoter'],['2.1208','2.731','derivata_sammansatta'],['1.203','2.732','derivata_sammansatta'],['1.586','2.733','derivata_sammansatta'],
+ ['1.949','2.734','derivata_sammansatta'],['1.952','2.735','derivata_sammansatta'],['1.959','2.736','derivata_sammansatta'],['1.958','2.737','derivata_sammansatta']];
 const omrer2=new Set(Object.values(OMR2).flatMap(o=>Object.keys(o)));
 
 test('De flyttade korten finns bara i Ma4, med spår till sitt gamla Ma3-id',()=>{
@@ -34,5 +37,7 @@ test('Ma3 innehåller inte längre nivå 2-innehåll som ämnesplanen lägger i 
     // sinus, cosinus och tangens hör bara hemma i Ma3c:s trigonometrikapitel, och där i grader
     if(/\\(sin|cos|tan)(?![a-z])/.test(x.t))assert.deepEqual(x.kurs,['1c'],x.id);
     if(x.kap!==4&&x.kap!==5)assert.doesNotMatch(x.t,/\\(sin|cos|tan)(?![a-z])/,x.id);
+    // sammansatta funktioner, t.ex. f(g(x)), f(f(x)) och f(2x+1)=…, hör till nivå 2
+    assert.doesNotMatch(x.t,/[fgh]\(\s*[fgh]\(|[fgh]\(\d+x\s*[+-]\s*\d+\)\s*=\s*x|sammansatt/i,x.id);
   }
 });

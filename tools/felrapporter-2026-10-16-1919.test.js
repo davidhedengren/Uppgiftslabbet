@@ -1,6 +1,8 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const root=path.join(__dirname,'..'),c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgiftermato1.js'),'utf8'),c);const bank=c.window.BANKMATO1,q=id=>bank.find(x=>x.id===id),plain=x=>JSON.parse(JSON.stringify(x));
+const root=path.join(__dirname,'..'),c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgiftermato1.js'),'utf8'),c);const c2={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgiftermato2.js'),'utf8'),c2);
+// 1.586 (sammansatta funktioner) flyttad till Ma4 2026-10-26; hittas via idTidigare.
+const bank=c.window.BANKMATO1,q=id=>bank.find(x=>x.id===id)||c2.window.BANKMATO2.find(x=>x.idTidigare==='mato1 '+id),plain=x=>JSON.parse(JSON.stringify(x));
 const report=JSON.parse(fs.readFileSync(path.join(root,'agent/FELRAPPORTER_2026-10-16_1919.json'),'utf8'));
 test('Rapporter och minst fem relevanta jämförelser har kommentarer och verktygsbeslut',()=>{
  assert.equal(report.rapporter.length,4);assert.equal(report.granskade.length,28);assert.equal(report.bankAndrade.length,21);
