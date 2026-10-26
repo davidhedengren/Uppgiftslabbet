@@ -24,3 +24,22 @@ Koden finns i Kunskapsgymmets `index.html`, i funktionerna `kedjaStarta`, `kedja
 `kedjaTbody`, `kedjaSpara`, `kedjaNasta` och `kedjaFortsatt` samt i `visaUppgift`, som bröts ut ur
 `nextTask`. Den är provad med Ma3 3.466 (flerval och tal) och Fy1 4.173 (nivå 1, 3 och 3, med
 "Hoppa över").
+
+## Tillägg 2026-10-26: lärarversionen när delkorten saknar gemensam inledning
+
+I Fy1 har 764 av 1217 flerdelsuppgifter delkort som är skrivna som självständiga kort med egna
+inledningar. Kedjan hittade då ingen gemensam inledning och visade varje dels hela text. Samma
+situation kom därför i ny formulering i varje del, och läraren rapporterade att det kändes som
+samma fråga igen (Fy1 3.93 i felloggen 2026-10-26).
+
+`kedjaLararversion` i Kunskapsgymmet används nu när inga inledande block är gemensamma:
+
+- Uppgiftens `spelIntro` (inledning och figur) visas en gång.
+- Varje del visar bara sin korta fråga, `fraga`.
+- Villkoret är att `spelIntro` och alla synliga delars `fraga` finns. Det gäller 695 av 764 sådana
+  Fy1-uppgifter.
+- Bankerna ändras inte. Uppgifter som redan har gemensam inledning, som nästan alla mattekort,
+  visas som tidigare.
+
+Provat live med Fy1 3.93. Inledningen och figuren visas en gång. a) står kvar med svar och ✓,
+och b) är bara ”Hur lång tid tar det att nå lyftfarten?”.
