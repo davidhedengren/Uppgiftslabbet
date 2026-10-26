@@ -461,3 +461,35 @@ Läraren beslutade: ”ändra dem till bara Ma3c om det inte ingår i kursen”.
   - Kunskapsgymmets avslutande `window.GRUPPMATO1 = {};` finns kvar.
 - **Resultat i Kunskapsgymmet:** Ma3b har 41 kort och inga trigonometri- eller absolutbeloppsuppgifter. Inget Ma3b- eller Ma3c-område har färre än 8 nivå 3-uppgifter.
 - **Deriverbarhet** finns inte heller i 3b-boken, men det beslutet gällde inte det området. Det är fortfarande märkt 1b+1c.
+
+### 21. Kontroll mot ämnesplanen (2026-10-26)
+
+Källa: ”Matematik – fortsättning” (MATO), nivå 1b och 1c, i lärarens OneDrive (Matematik/Ämnesplan matematik fortsättning.docx).
+
+**Nivå 1b (Ma3b) innehåller:**
+
+- rationella uttryck
+- gränsvärde och derivatans begrepp
+- villkor för deriverbarhet
+- deriveringsregler, talet e och naturlig logaritm
+- andraderivata och extremvärden
+- polynom och polynomekvationer
+- integraler
+- linjär optimering
+- geometrisk summa
+
+Nivå 1b saknar absolutbelopp och trigonometri.
+
+**Nivå 1c (Ma3c)** har samma kärna. Därtill kommer absolutbelopp, enhetscirkeln och cosinus-, sinus- och areasatsen. Linjär optimering och geometrisk summa ingår inte.
+
+Beslut:
+
+- Deriverbarhet ligger kvar på 1b+1c, eftersom ”Villkor för deriverbarhet” står uttryckligen i nivå 1b.
+- Absolutbelopp och trigonometri är bara 1c. Det bekräftar ändringen i avsnitt 20.
+
+Kontroll av alla 50 områden i SPARMATO1: varje område har rätt spår enligt ämnesplanen. Inget kort har en kursmärkning utanför sitt områdes spår.
+
+Iakttagelser utan ändring:
+
+- **Trigonometriska ekvationer:** metoder för att lösa trigonometriska ekvationer står i nivå 2 (Ma4), inte i nivå 1c. Området trig_ekvationer ligger ändå i Ma3c, som enkla ekvationer kopplade till enhetscirkeln.
+- **Radianer:** begreppet radian hör till nivå 2. Det används i 4.416 och 4.417.
