@@ -446,3 +446,18 @@ Kontroller:
   - Tre allmänna rubriker skrevs om.
   - SVG-granskaren ger 0 fynd, och validatorn ger 224 fynd både före och efter ändringen.
 - **Självrättningen:** testades med 29 svar, och alla gav väntat resultat.
+
+### 20. Trigonometri och absolutbelopp tas bort ur Ma3b (lärarbeslut 2026-10-26)
+
+Läraren beslutade: ”ändra dem till bara Ma3c om det inte ingår i kursen”.
+
+- **Kort som ändrats:** 20 kort har ändrats från 1b+1c till bara 1c:
+  - Absolutbelopp: 1.451, 1.462 och 1.534.
+  - Trigonometriska ekvationer: 4.416, 4.417, 4.426 och 4.495.
+  - Enhetscirkeln: 4.427, 4.428 och 4.472.
+  - Trigonometri i rätvinkliga trianglar: 4.442, 4.469–4.471 och 4.487–4.492.
+- **Struktur:** I `strukturmato1.js` har områdena absolutbelopp, trig_ratvinkliga, enhetscirkeln och trig_ekvationer fått spåret ["1c"] i SPARMATO1.
+  - Samma ändring gjordes i Kunskapsgymmets kopia.
+  - Kunskapsgymmets avslutande `window.GRUPPMATO1 = {};` finns kvar.
+- **Resultat i Kunskapsgymmet:** Ma3b har 41 kort och inga trigonometri- eller absolutbeloppsuppgifter. Inget Ma3b- eller Ma3c-område har färre än 8 nivå 3-uppgifter.
+- **Deriverbarhet** finns inte heller i 3b-boken, men det beslutet gällde inte det området. Det är fortfarande märkt 1b+1c.
