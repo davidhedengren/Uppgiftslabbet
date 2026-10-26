@@ -1,0 +1,894 @@
+{
+  "datum": "2026-10-26",
+  "kurs": "matf1",
+  "områden": [
+    "homogena_forsta",
+    "inhomogena_forsta"
+  ],
+  "granskade": 68,
+  "åtgärdade": 51,
+  "granskad_inget_fel": [
+    "4.605",
+    "4.607",
+    "4.608",
+    "4.609",
+    "4.610",
+    "4.612",
+    "4.613",
+    "4.616",
+    "4.617",
+    "4.618",
+    "4.619",
+    "4.620",
+    "4.621",
+    "4.624",
+    "4.625",
+    "4.626",
+    "4.627"
+  ],
+  "uppgifter": [
+    {
+      "id": "4.48",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 1,
+      "kommentar": "Facit använder den redan givna familjen direkt. Nivå 1; inga onödiga råd om att lösa ekvationen på nytt."
+    },
+    {
+      "id": "4.03",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar varför exponentialfamiljen fungerar för alla C. Fria konstanter får heta exempelvis K."
+    },
+    {
+      "id": "4.358",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Separationen och integreringen visas. Nollösningen tas med trots divisionen med y. C/nivå 3 och familjerättning."
+    },
+    {
+      "id": "4.50",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Startvärdet används uttryckligen och båda villkoren kontrolleras."
+    },
+    {
+      "id": "4.67",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Ledtråden påstår inte längre att alla lösningar avtar: negativa C ger växande funktioner mot noll. Familjerättning."
+    },
+    {
+      "id": "4.68",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar varför C=7 och kontrollerar derivatan."
+    },
+    {
+      "id": "4.69",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Fullprecision för k och korrekt fri avrundning. Lösningen visar båda mätvärdena och logaritmsteget. E/nivå 2."
+    },
+    {
+      "id": "4.362",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur avvikelsen från jämvikten ger den homogena ekvationen. Alternativa namn på fria konstanten godtas."
+    },
+    {
+      "id": "4.120",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarFormat",
+        "svarstyp",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Numeriskt format godtar både exakt 10/e² och korrekta decimalavrundningar. Nivå 2."
+    },
+    {
+      "id": "4.09",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit utvecklar den linjära ansatsen och bestämmer båda koefficienterna. Rättningen jämför hela lösningsfamiljen."
+    },
+    {
+      "id": "4.21",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar derivatan av ansatsen, koefficientjämförelsen och summan av lösningsdelarna. Familjerättning."
+    },
+    {
+      "id": "4.51",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit bestämmer båda lösningsdelarna och kontrollerar insättningen. Familjerättning."
+    },
+    {
+      "id": "4.71",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar varför jämvikten är 5 innan startvillkoret används."
+    },
+    {
+      "id": "4.94",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Den missvisande förklaringen om proportionalitet mot y ersätts: det är avvikelsen från jämvikten som är proportionell. Familjerättning."
+    },
+    {
+      "id": "4.95",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit beskriver avvikelsen från jämvikten och använder startvärdet utan att ledtråden ger bort jämviktsvärdet."
+    },
+    {
+      "id": "4.142",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar minustecknet när den konstanta partikulärlösningen bestäms. Familjerättning."
+    },
+    {
+      "id": "4.143",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar jämvikten och förklarar att positiva exponenten ger ökande avstånd från den. Familjerättning."
+    },
+    {
+      "id": "4.145",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Båda koefficientvillkoren i den linjära ansatsen visas. Familjerättning."
+    },
+    {
+      "id": "4.396",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Ett startvillkor används utan irrelevant text om flera villkor. Fullprecision och fri avrundning ersätter bred tolerans."
+    },
+    {
+      "id": "4.397",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar C=4 och värdet vid x=2. Fri avrundning med fullprecision; rutinuppgiften är E/nivå 2."
+    },
+    {
+      "id": "4.399",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "självrättning",
+        "spel",
+        "svarEtiketter",
+        "svarFormat",
+        "svarsstruktur",
+        "svarstyp",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Två märkta svarsfält för C och k ger robust självrättning av den entydiga beräkningen. E/nivå 2."
+    },
+    {
+      "id": "4.107",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar den konstanta delen och det enda startvillkoret, utan generiska instruktioner för högre ordning."
+    },
+    {
+      "id": "4.124",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar lösningsfamilj, startvillkor och kontroll. Nivå 2 för två beroende steg."
+    },
+    {
+      "id": "4.125",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur startvärdet bestämmer C och kontrollerar tecknet i derivatan. Nivå 2."
+    },
+    {
+      "id": "4.515",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Halveringstid, logaritmer och rimlighetskontroll visas. Toleransen avvisar angränsande felaktiga tiotalsavrundningar. C/nivå 3."
+    },
+    {
+      "id": "4.516",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar startvillkoret före insättningen. E/nivå 2; 15,06 godtas och 15,05/15,07 avvisas."
+    },
+    {
+      "id": "4.520",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Facit använder exakt k i nästa beräkning. Enheter och precisionsgränser för båda fälten är uttryckliga. C/nivå 3."
+    },
+    {
+      "id": "4.554",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "traningsniva"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Båda delarna har egna steg och ledtrådar. B-kortet får modellen det behöver; fullprecision används vid avrundning till hundratal. Nivå 2."
+    },
+    {
+      "id": "4.556",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "rättSvar",
+        "s",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar logaritmsteget och att tiden räknas från eldningens början. Fullprecision, snävare tolerans och C/nivå 3."
+    },
+    {
+      "id": "4.557",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit förklarar de tre åttatimmarsperioderna. Det exakta antalet är 3 125; närliggande felaktiga heltal godtas inte."
+    },
+    {
+      "id": "4.558",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "spelDelar",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Egna facit för båda delarna. Fullprecision används före heltals-/decimalavrundning. A-kortet är nivå 2."
+    },
+    {
+      "id": "4.559",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar tidsintervallet 48 år och logaritmsteget. Fullprecision, tre decimaler och enheten per år."
+    },
+    {
+      "id": "4.560",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarEnhet",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur starttrycket förkortas och varför k är positivt. Fullprecision och enheten per km."
+    },
+    {
+      "id": "4.126",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur −4 och sedan C=6 bestäms och kontrollerar lösningen."
+    },
+    {
+      "id": "4.168",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit förklarar avvikelsen från jämvikten, startvillkoret och riktningen mot 3."
+    },
+    {
+      "id": "4.517",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 5,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar temperaturskillnaderna och använder oavrundat k. C/nivå 3; rätt tiondelsavrundning godtas."
+    },
+    {
+      "id": "4.521",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarEnhet",
+        "svarFormat",
+        "t",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 5,
+      "nivå_efter": 3,
+      "kommentar": "Frågan skiljer kg från minuter. Facit visar jämvikten, startvillkoret och tiden till 15 kg. C/nivå 3."
+    },
+    {
+      "id": "4.591",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit kopplar jämvikten till nivån som kurvorna närmar sig. Figuren behålls."
+    },
+    {
+      "id": "4.592",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar minustecknet framför hela ansatsen och båda koefficientvillkoren. E/nivå 2."
+    },
+    {
+      "id": "4.593",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Kedjeregel och koefficientjämförelse visas före slutsvaret."
+    },
+    {
+      "id": "4.594",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar beräkningen av gränshastigheten och kontrollerar den mot grafen och derivatans tecken."
+    },
+    {
+      "id": "4.595",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Startvärde och jämviktsnivå används var för sig för att välja rätt kurva, följt av kontroll."
+    },
+    {
+      "id": "4.596",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "poang",
+        "rättSvar",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar lösningen med startvillkor och logaritmsteget. Fullprecision och E/nivå 2."
+    },
+    {
+      "id": "4.597",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 3,
+      "kommentar": "Facit kopplar tangentens lutning och jämviktsnivån till två separata parametervillkor. C/nivå 3."
+    },
+    {
+      "id": "4.605",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.606",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Den långa deriveringsraden delas i två meningsfulla steg för mobilvisning."
+    },
+    {
+      "id": "4.607",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.608",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.609",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.610",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.611",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Andel och procent behandlas i separata steg. Fullprecision används vid avrundningen."
+    },
+    {
+      "id": "4.612",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.613",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.614",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar varför C=10/e och hur det ger y(0). Fullprecision används vid rättning."
+    },
+    {
+      "id": "4.615",
+      "område": "homogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar halveringsvillkor, förkortning och logaritmer. Fullprecision används vid rättning."
+    },
+    {
+      "id": "4.616",
+      "område": "homogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.617",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.618",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.619",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.620",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.621",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.622",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit prövar den konstanta lösningen direkt i båda villkoren."
+    },
+    {
+      "id": "4.623",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar jämvikten, familjen och hur startvärdet bestämmer konstanten."
+    },
+    {
+      "id": "4.624",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.625",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.626",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.627",
+      "område": "inhomogena_forsta",
+      "status": "Granskad – inget fel",
+      "ändrade_fält": [],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Granskad – inget fel: frågan, lösningen, ledtråden, nivån och självrättningen stämmer. Befintligt facit behålls."
+    },
+    {
+      "id": "4.628",
+      "område": "inhomogena_forsta",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit härleder båda lösningsdelarna före insättning. Fullprecision används vid tvådecimalerssvaret."
+    }
+  ]
+}

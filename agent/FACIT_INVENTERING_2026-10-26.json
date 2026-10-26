@@ -7,9 +7,9 @@
       "huvuduppgifter": 4674,
       "huvud_och_delar": 5630,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 3720,
+      "kort_facit_signal": 3717,
       "utan_ledtrad": 0,
-      "matte_utan_stegrubrik": 5236
+      "matte_utan_stegrubrik": 5230
     },
     {
       "course": "ma2",
@@ -43,16 +43,16 @@
       "huvuduppgifter": 1703,
       "huvud_och_delar": 2306,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 678,
+      "kort_facit_signal": 668,
       "utan_ledtrad": 0,
-      "matte_utan_stegrubrik": 1992
+      "matte_utan_stegrubrik": 1944
     },
     {
       "course": "fy1",
       "huvuduppgifter": 4444,
       "huvud_och_delar": 7857,
       "utan_eget_facit": 0,
-      "kort_facit_signal": 2515,
+      "kort_facit_signal": 2508,
       "utan_ledtrad": 0,
       "matte_utan_stegrubrik": 0
     },
