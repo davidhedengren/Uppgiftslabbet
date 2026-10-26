@@ -32,3 +32,8 @@ test('svarVardesiffror är heltal 1–12 och hör till numeriska svar',()=>{
   for(const x of B){const vs=[].concat(x.svarVardesiffror??[]);const rs=[].concat(x.rättSvar);
     vs.forEach((v,i)=>{if(v==null)return;assert.ok(Number.isInteger(v)&&v>=1&&v<=12,x.id);if(Array.isArray(x.svarVardesiffror))assert.equal(typeof rs[i],'number',x.id);});}
 });
+test('Ordet likformig används inte om acceleration eller retardation (underförstått i Fy1)',()=>{
+  const kvar=[];for(const x of B){const t=JSON.stringify([x.t,x.spelIntro,x.s,x.ledtrad,x.spelDelar]);for(const m of t.matchAll(/.{30}likformig.{30}/gi))kvar.push(x.id);}
+  // kvar: geometrisk likformighet (2.224, 2.73) och en homogen stege (4.248)
+  assert.deepEqual([...new Set(kvar)].sort(),['2.224','2.73','4.248']);
+});
