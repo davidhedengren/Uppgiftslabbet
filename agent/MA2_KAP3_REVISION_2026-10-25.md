@@ -201,3 +201,22 @@
 - **Validator:** 0 fynd.
 - **Självrättning:** 33 fall i Kunskapsgymmet, och alla ger väntat resultat.
 - **Skydd:** `tools/ma2-kap3-likformighet-2026-10-26.test.js`.
+
+## Etapp 6: kordasatsen och bevis med likformighet (2026-10-26)
+
+**Kordasatsen**
+- 3.79, 3.315 och 3.340 var nästan samma textuppgift som 3.44 (”Två kordor skär varandra. Den ena delas i …”).
+- 3.79 handlar nu om en rund matta och 3.315 om ett runt fönster. I 3.340 adderar Sara delarna i stället för att multiplicera, och eleven ska rätta henne.
+- Alla tre har fått en kordafigur. Cirkeln beräknas ur delarna, så att alla fyra ändpunkter ligger på cirkeln och delarna har rätt proportioner.
+- Övriga kordafigurer och bisektrisfigurer är i stort sett skalenliga och behålls.
+
+**Bevis med likformighet**
+- 3.152, 3.177, 3.206, 3.254, 3.255 och 3.283 använde samma likbenta DE ∥ BC-triangel. De har nu varierade, skalenliga figurer ritade med `topp()`, som har fått stöd för vinkelmarkeringar.
+- 3.283 var samma fråga som 3.254 och markerar nu vinkeln \(AED\) (rätt svar: \(\angle ACB\)).
+- 3.254 hade alternativen \(\angle ACB\) och \(\angle BCA\), som är samma vinkel. Det ena är bytt mot \(\angle AED\).
+- 3.151 är ritad i rätt skala (1,5).
+- 3.284 har fått en egen figur, eftersom den hade samma som 3.256.
+
+**Facit:** varje steg har en rubrik, även i delkorten för 3.151 och 3.177.
+
+**Kontroll:** validatorn ger 0 fynd, och självrättningen i Kunskapsgymmet ger väntat resultat. Skydd: `tools/ma2-kap3-korda-bevis-2026-10-26.test.js`.
