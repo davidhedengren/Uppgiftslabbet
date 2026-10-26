@@ -1,0 +1,70 @@
+{
+  "datum": "2026-10-26",
+  "avgransning": "Inventering av lagrade huvuduppgifter och delobjekt. Kort text och saknade rubriker är söksignaler, inte bevis på bristande facit. Delar utan eget facit ärver huvudfacitet i Kunskapsgymmet och kräver kontroll av svarsläckage. Detta är inte en manuell helbanksgranskning.",
+  "summary": [
+    {
+      "course": "ma1",
+      "huvuduppgifter": 4674,
+      "huvud_och_delar": 5630,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 3720,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 5236
+    },
+    {
+      "course": "ma2",
+      "huvuduppgifter": 3362,
+      "huvud_och_delar": 4231,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 1993,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 3296
+    },
+    {
+      "course": "mato1",
+      "huvuduppgifter": 3301,
+      "huvud_och_delar": 3565,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 1550,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 3248
+    },
+    {
+      "course": "mato2",
+      "huvuduppgifter": 2206,
+      "huvud_och_delar": 3978,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 1726,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 3873
+    },
+    {
+      "course": "matf1",
+      "huvuduppgifter": 1703,
+      "huvud_och_delar": 2306,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 719,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 2142
+    },
+    {
+      "course": "fy1",
+      "huvuduppgifter": 4444,
+      "huvud_och_delar": 7857,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 2515,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 0
+    },
+    {
+      "course": "fy2",
+      "huvuduppgifter": 1765,
+      "huvud_och_delar": 2739,
+      "utan_eget_facit": 0,
+      "kort_facit_signal": 1221,
+      "utan_ledtrad": 0,
+      "matte_utan_stegrubrik": 0
+    }
+  ],
+  "kvar_utan_eget_facit": []
+}

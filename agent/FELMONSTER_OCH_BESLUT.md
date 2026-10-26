@@ -2681,3 +2681,8 @@ Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.
 ## Ma3 facitstruktur – återkontroll 2026-10-25/26
 
 158 uppgifter har fått manuella uppgiftsspecifika `facit-rubrik`, mellanled vid behov och individuella alternativkommentarer. Ändra även `spelDelar[].s` när huvudfacitet ändras. I 3.198 gäller icke-negativ derivata för växande funktion, inte strikt positiv i varje punkt; ledtråden ska vara konsekvent med facitet. Äldre byggare får inte återställa korta facit. Kör `tools/revidera-ma3-facitstruktur-2026-10-25.py` sist och skyddstestet `tools/ma3-facitstruktur-2026-10-25.test.py`. Alla ID och kommentarsförslag: [MA3_FACITSTRUKTUR_2026-10-25.md](MA3_FACITSTRUKTUR_2026-10-25.md).
+
+
+## Facit och delkort, bred genomgång 2026-10-26
+
+107 Ma2-delkort ärvde huvudfacitet. De har nu egna manuella lösningar och ledtrådar; återställ inte tomma `s`. Huvuduppgiftens extra resonemang ska finnas kvar. I 2.261 används oavrundade parametrar: a = 1,39247665… avrundas till 1,392. I 2.428c prövas funktionsnotation och vänsterledet måste behållas. Vanliga funktionsfrågor ska fortfarande tillåta uttryck med eller utan f(x)=. 2.636/2.637 behåller manuell bedömning men har explicit metadata. Lista och kommentarer: [FACIT_DELKORT_2026-10-26.md](FACIT_DELKORT_2026-10-26.md). Fortsatt genomgång: [FACIT_INVENTERING_2026-10-26.md](FACIT_INVENTERING_2026-10-26.md). Skydd: `tools/facit-delkort-2026-10-26.test.cjs` och browserfallen.
