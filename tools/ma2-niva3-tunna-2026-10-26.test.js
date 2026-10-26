@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222),linjara_representationer:r(1,1235,1240),exponentialgraf:r(2,1223,1228)};
+const OMR={grafisk_losning_ekvationssystem:r(1,1229,1234),losningsformel_andragrad:r(2,1217,1222),linjara_representationer:r(1,1235,1240),exponentialgraf:r(2,1223,1228),kvadratkomplettering:r(2,1229,1234)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -50,4 +50,13 @@ test('exponentialgraf: svaren räknas om',()=>{
   assert.equal(get('2.1226').rättSvar,Math.round(100*((6212/2000)**0.1-1)));
   const x=get('2.1227').rättSvar;assert.ok(5*2**x>10000&&5*2**(x-1)<10000);
   assert.equal(get('2.1228').rättSvar,Math.round(500/Math.sqrt(720/500)));
+});
+test('kvadratkomplettering: svaren räknas om',()=>{
+  assert.equal(get('2.1229').rättSvar,'(x+5)^2-7');for(let x=-5;x<=5;x++)assert.equal((x+5)**2-7,x*x+10*x+18);
+  const [mx,xm]=get('2.1230').rättSvar,f=x=>-x*x+4*x+1;assert.equal(f(xm),mx);for(let x=-5;x<=8;x+=0.5)assert.ok(f(x)<=mx);
+  const A=x=>x*(12-x);assert.equal(get('2.1231').rättSvar,A(6));for(let x=0;x<=12;x+=0.25)assert.ok(A(x)<=36);
+  assert.match(get('2.1232').alternativ.find(a=>a.ratt).txt,/glömt att dra bort 25/);
+  const [b,c]=get('2.1233').rättSvar;assert.equal(-b/2,3);assert.equal(9+3*b+c,2);
+  const g=x=>(x-1)*(x-5);assert.equal(get('2.1234').rättSvar,g(3));for(let x=-5;x<=9;x+=0.25)assert.ok(g(x)>=-4);
+  for(const id of r(2,1229,1234))assert.deepEqual(get(id).kurs,['2c'],id);
 });

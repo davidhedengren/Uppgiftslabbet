@@ -90,3 +90,28 @@ Kontroller:
 - SVG-granskaren ger 0 fynd. Etiketten ”Omar” fick en bredare bakgrundsrektangel.
 - Validatorn ger 215 fynd både före och efter ändringen.
 - Självrättningen testades med 13 svar, och alla gav väntat resultat.
+
+## 5. Kvadratkomplettering (Ma2c): 6 kort, 2.1229–2.1234
+
+De befintliga nivå 3-korten handlade mest om att bestämma k så att minsta värdet blir något visst. De nya korten:
+
+| ID | Innehåll |
+|---|---|
+| 2.1229 | Ytmodell: kvadraten, två rektanglar 5x och biten som saknas i hörnet ger \((x+5)^2-7\) (figur) |
+| 2.1230 | Största värde när \(x^2\)-termen är negativ: \(-(x-2)^2+5\) |
+| 2.1231 | Största area för en rektangel med omkretsen 24 m |
+| 2.1232 | Hitta felet: eleven har glömt att dra bort 25 (flerval) |
+| 2.1233 | b och c ur parabelns markerade minimipunkt (figur) |
+| 2.1234 | Minsta värdet av \((x-1)(x-5)\) |
+
+Kontroller:
+
+- Rektangelns omkrets ändrades från 20 m till 24 m. Svaret 25 krockade med 2.1002.
+- Ledtråden i 2.1233 skriver formen \((x-p)^2+q\), så att b inte används med två betydelser.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 6 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 215 fynd både före och efter ändringen.
+- Självrättningen testades med 12 svar, och alla gav väntat resultat.
+  - \((x+5)^2-7\) godtas, även skrivet med ² och −.
+  - Den outvecklade formen \(x^2+10x+18\) underkänns.
