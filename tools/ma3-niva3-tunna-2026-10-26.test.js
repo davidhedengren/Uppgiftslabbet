@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -25,4 +25,12 @@ test('deriveringsregler: derivatorna räknas om numeriskt',()=>{
   const [v5,tt]=get('2.1262').rättSvar,V=t=>200+30*t-t*t;nara(d(V,5),v5,'2.1262');nara(d(V,tt),0,'2.1262');
   assert.equal(get('2.1263').alternativ.find(a=>a.ratt).txt,'f(x) = x³ − 12x');nara(d(x=>x**3-12*x,2),0,'2.1263');
   nara(d(x=>(x**3-4*x)/(x*x),2),get('2.1264').rättSvar,'2.1264');
+});
+test('derivata_a_x: svaren räknas om',()=>{
+  const ln=Math.log;assert.equal(get('2.1265').rättSvar,Math.round(2400*1.035**10*ln(1.035)));
+  const t2=ln(4/(40*-ln(0.8)))/ln(0.8),u2=get('2.1266');assert.ok(Math.abs(u2.rättSvar-t2)<=u2.tolerans,'2.1266');
+  const u3=get('2.1267');[8*ln(2),8-24*ln(2)].forEach((x,i)=>assert.ok(Math.abs(u3.rättSvar[i]-x)<=u3.tolerans[i],'2.1267'));
+  assert.ok(Math.abs(get('2.1268').rättSvar-Math.exp(2))<=get('2.1268').tolerans);
+  assert.equal(get('2.1269').alternativ.find(a=>a.ratt).txt,'f′(x) = −ln 2 · 2^(−x)');nara(d(x=>2**-x,1.3),-ln(2)*2**-1.3,'2.1269');
+  assert.deepEqual(get('2.1270').rättSvar,[Math.round(10000*1.04**5*ln(1.04)),Math.round(10000*(1.04**6-1.04**5))]);
 });
