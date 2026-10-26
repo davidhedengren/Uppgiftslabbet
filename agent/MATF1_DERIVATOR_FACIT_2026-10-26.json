@@ -1,0 +1,375 @@
+{
+  "datum": "2026-10-26",
+  "kurs": "matf1",
+  "område": "repetition_derivator",
+  "granskade": 27,
+  "åtgärdade": 27,
+  "granskad_inget_fel": [],
+  "uppgifter": [
+    {
+      "id": "3.207",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "svarFormat",
+        "ledtrad",
+        "svarEtiketter",
+        "svarsstruktur",
+        "rättSvar",
+        "miniräknare",
+        "s",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar derivatan och båda rötterna. Svaren godtas i valfri ordning, som exakta rotuttryck eller korrekt avrundade decimaltal eftersom frågan inte kräver exakt form."
+    },
+    {
+      "id": "3.209",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "niva",
+        "s",
+        "tolerans",
+        "poang",
+        "formaga"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur skärningen bestäms i GeoGebra och varför lösningen är unik. Tre decimaler ger 1,606; angränsande felavrundningar godtas inte längre. Nivå 2."
+    },
+    {
+      "id": "3.212",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "svarEtiketter",
+        "svarsstruktur",
+        "miniräknare",
+        "s",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hela ekvationen för horisontell tangent. −2 och 2 godtas i valfri ordning."
+    },
+    {
+      "id": "3.52",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "t",
+        "svarFormat",
+        "typ",
+        "ledtrad",
+        "rättSvar",
+        "s",
+        "svarstyp",
+        "tolerans"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "En figur har lagts till. Facit visar både areamodellen och varför derivatans tecken ger ett globalt maximum. Både 12√3 och korrekt avrundade decimaler godtas."
+    },
+    {
+      "id": "3.29",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "t",
+        "traningsniva",
+        "ledtrad",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Den irrelevanta ledtråden om absolutbelopp är ersatt. Frågan preciserar x-värden för horisontell tangent. Facit förklarar derivatans tecken och hur ändpunkterna kan ingå i växande intervall. Nivå 2."
+    },
+    {
+      "id": "3.227",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "niva",
+        "s",
+        "tolerans",
+        "poang",
+        "formaga"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar digital metod, definitionsmängd och kontroll av att lösningen är unik. Korrekt fri avrundning bevaras medan för bred bastolerans tas bort. Nivå 2."
+    },
+    {
+      "id": "3.54",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit skiljer den icke-negativa kvadratroten från ekvationens två lösningar och visar ett konkret motexempel. Slutsatsen var korrekt."
+    },
+    {
+      "id": "3.74",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "geogebra",
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar den faktiska avvikelsen från noll och ett teckenbyte mellan 1,521 och 1,522. Vanlig miniräknare räcker för kontrollen; GeoGebra behövs inte."
+    },
+    {
+      "id": "3.83",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "t",
+        "traningsniva",
+        "ledtrad",
+        "niva",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 5,
+      "nivå_efter": 3,
+      "kommentar": "Figuren visar nu en möjlig rektangel utan att redan ge optimal bredd och höjd. Facit binder ihop area, derivata och globalt maximum. Uppgiften är C/nivå 3."
+    },
+    {
+      "id": "3.287",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "t",
+        "svarFormat",
+        "ledtrad",
+        "s",
+        "tolerans"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 4,
+      "kommentar": "Facit visar faktoriseringen och alla tre lösningar. Frågan kräver inte längre både exakt bekräftelse och ett valfritt decimalsvar samtidigt. Exakta svar och rätt tresiffriga avrundningar godtas i valfri ordning."
+    },
+    {
+      "id": "3.330",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar både inre och yttre derivata innan x=1 sätts in. Tangentens lutning är 1."
+    },
+    {
+      "id": "3.331",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Båda deriveringarna visas separat, följt av insättningen som ger f″(2)=6."
+    },
+    {
+      "id": "3.332",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar båda termerna i produktregeln, faktorisering och tecken på hela definitionsmängden. Största värdet nås vid x=1."
+    },
+    {
+      "id": "3.333",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "svarEtiketter",
+        "svarsstruktur",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur lutningsvillkoret ger x²=2. Båda exakta rötterna godtas i valfri ordning; decimalsvar besvarar inte kravet på exakt form."
+    },
+    {
+      "id": "3.334",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar nollproduktmetoden och skiljer maximum vid x=0 från minimum vid x=2 med andraderivatan."
+    },
+    {
+      "id": "3.335",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar att a är en konstant vid derivering och löser det givna tangentvillkoret. Svaret är a=−3."
+    },
+    {
+      "id": "3.336",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit motiverar kvadratkompletteringen och visar att den nedre gränsen −16 verkligen nås vid x=±2."
+    },
+    {
+      "id": "3.337",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit förklarar att parallella linjer har samma lutning och varför linjens konstantterm inte påverkar svaret x=3."
+    },
+    {
+      "id": "3.338",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "niva",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar båda digitala skärningarna, valet av den större och kontroll genom insättning. Svaret är 1,512. Nivå 2."
+    },
+    {
+      "id": "3.339",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar både lösningen till derivataekvationen och teckenundersökningen på x>0. Största värdet nås vid x=2."
+    },
+    {
+      "id": "3.340",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "miniräknare",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Kedjeregelns båda faktorer och insättningen visas separat. Flera beroende led motiverar nivå 2. Miniräknare tillåts."
+    },
+    {
+      "id": "3.341",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "rättSvar",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar produktregel, exakt värde 3e och avrundning till 8,15. Rättningen lagrar nu hela referensvärdet 3e."
+    },
+    {
+      "id": "3.342",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar täljarens och nämnarens derivator, kvotregeln och insättningen vid noll. Miniräknare tillåts."
+    },
+    {
+      "id": "3.343",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "miniräknare",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar båda kedjeregelns faktorer och minustecknet vid derivering av cosinus. Nivå 2, med tillåten miniräknare."
+    },
+    {
+      "id": "3.344",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "miniräknare",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar hur tangentens lutning läses ur två punkter innan kedjeregeln används. Figuren stämmer. C/nivå 3, med tillåten miniräknare."
+    },
+    {
+      "id": "3.345",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "miniräknare",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar vilket argument som ska användas, hur tangentlutningen beräknas och varför den multipliceras med 2. Figuren stämmer. C/nivå 3."
+    },
+    {
+      "id": "3.346",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "traningsniva",
+        "ledtrad",
+        "miniräknare",
+        "s",
+        "poang"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit skiljer produktregelns addition från kvotregelns subtraktion och visar hanteringen av negativa tabellvärden. Fälten är fortsatt märkta och ordnade. E/nivå 2."
+    }
+  ],
+  "verifiering": {
+    "rättningsfall": 234,
+    "elevvyer": 54,
+    "lärarvyer": 54,
+    "figurer": 4,
+    "validator": {
+      "ERROR": 0,
+      "WARNING": 8,
+      "INFO": 67
+    }
+  }
+}
