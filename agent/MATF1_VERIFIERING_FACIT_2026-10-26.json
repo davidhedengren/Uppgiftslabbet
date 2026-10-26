@@ -1,0 +1,366 @@
+{
+  "datum": "2026-10-26",
+  "kurs": "matf1",
+  "område": "verifiering",
+  "granskade": 29,
+  "åtgärdade": 29,
+  "granskad_inget_fel": [],
+  "uppgifter": [
+    {
+      "id": "4.14",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar kedjeregeln och insättningen i vänsterledet. Uppgiften är nivå 2 eftersom två beroende steg krävs."
+    },
+    {
+      "id": "4.327",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit jämför båda leden för ett godtyckligt C, även C=0. Den irrelevanta ledtråden är ersatt."
+    },
+    {
+      "id": "4.36",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Båda derivatorna och subtraktionen av hela funktionen visas. Slutsvaret var korrekt."
+    },
+    {
+      "id": "4.64",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar båda kedjefaktorerna och hur termerna tar ut varandra."
+    },
+    {
+      "id": "4.89",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar derivatan, multiplikationen med 3 och jämförelsen med högerledet 12."
+    },
+    {
+      "id": "4.160",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Frågan preciserar ekvationens form. Facit eliminerar C och kontrollerar att hela lösningsfamiljen blir rätt. Ekvivalenta ekvationsformer godtas."
+    },
+    {
+      "id": "4.161",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Produktregeln visas vid båda deriveringarna före insättning. Den givna rutinverifieringen är nu E/nivå 2."
+    },
+    {
+      "id": "4.320",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "niva",
+        "poang",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur faktorn k känns igen efter derivering. E-metadata stämmer nu med nivå 2 och miniräknare tillåts."
+    },
+    {
+      "id": "4.321",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "miniräknare",
+        "niva",
+        "poang",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit använder startvärdet direkt i differentialekvationen. Irrelevanta råd om att lösa hela ekvationen är borttagna. E/nivå 1."
+    },
+    {
+      "id": "4.72",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit eliminerar C och kontrollerar lösningsfamiljen. Likvärdiga former och konstanta multiplar av ekvationen godtas."
+    },
+    {
+      "id": "4.144",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit räknar ut leden separat och förklarar varför likheten gäller för alla C."
+    },
+    {
+      "id": "4.76",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Frågan preciserar andra ordningen och allmän lösning. Ledtråden börjar nu med den givna familjen; facit bygger ekvationen från dubbelroten."
+    },
+    {
+      "id": "4.78",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "t"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit går från den givna familjen till komplexa rötter och utvecklar rotfaktorerna. Frågan preciserar andra ordningen."
+    },
+    {
+      "id": "4.514",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s",
+        "svarFormat",
+        "tolerans"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar hur C-termerna tar ut varandra och varför exponentialfaktorn får förkortas. Numeriskt svarsformat anges uttryckligen."
+    },
+    {
+      "id": "4.522",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "svarFormat",
+        "tolerans",
+        "traningsniva"
+      ],
+      "nivå_före": 4,
+      "nivå_efter": 2,
+      "kommentar": "De två startvillkoren behandlas var för sig med produktregeln däremellan. Uppgiften är E/nivå 2 eftersom lösningsfamiljen redan är given."
+    },
+    {
+      "id": "4.569",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar derivatan och hela insättningen innan slutsatsen a=6."
+    },
+    {
+      "id": "4.570",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar kedjefaktorn k och förklarar varför division med exponentialfaktorn är tillåten."
+    },
+    {
+      "id": "4.571",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar att C deriveras till noll och att koefficienterna jämförs för alla x."
+    },
+    {
+      "id": "4.572",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "niva",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Minustecknet framför hela funktionen och jämförelsen med ax+b visas. Rutinuppgiften är E/nivå 2."
+    },
+    {
+      "id": "4.573",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit använder startvärdet direkt; hela funktionen behöver inte lösas ut."
+    },
+    {
+      "id": "4.574",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit visar båda produktderiveringarna, samlar koefficienterna och motiverar villkoren med fria val av C och D."
+    },
+    {
+      "id": "4.575",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar båda kedjefaktorerna. Villkoret ska gälla för alla x; endast den positiva roten väljs enligt frågan."
+    },
+    {
+      "id": "4.576",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 3,
+      "kommentar": "Facit förklarar varför exponentialtermens koefficient måste vara noll för att vänsterledet ska vara konstant."
+    },
+    {
+      "id": "4.585",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Figuren är kontrollerad och behålls. Facit använder först startlutningen och kontrollerar sedan både ekvation och startvärde."
+    },
+    {
+      "id": "4.586",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Figuren är kontrollerad och behålls. Facit visar tangentens lutning före insättningen. Två rutinberäkningar motsvarar nivå 2."
+    },
+    {
+      "id": "4.587",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "alternativ",
+        "ledtrad",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Varje alternativ kontrolleras separat. Likhet i en enda punkt räcker inte för en lösning. Uppgiften är nivå 2."
+    },
+    {
+      "id": "4.588",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 2,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar båda derivatorna för varje alternativ, även de felaktiga, med tydliga tecken och kedjefaktorer."
+    },
+    {
+      "id": "4.589",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "ledtrad",
+        "s"
+      ],
+      "nivå_före": 1,
+      "nivå_efter": 1,
+      "kommentar": "Facit visar hur startvillkoret väljer C och kontrollerar svaret. Den redan givna lösningsfamiljen behöver inte härledas igen."
+    },
+    {
+      "id": "4.590",
+      "status": "Åtgärdad",
+      "ändrade_fält": [
+        "formaga",
+        "ledtrad",
+        "poang",
+        "s",
+        "traningsniva"
+      ],
+      "nivå_före": 3,
+      "nivå_efter": 2,
+      "kommentar": "Facit visar derivering, faktorisering och kontroll av båda rötterna. Rötterna godtas i valfri ordning. Rutinuppgiften är nivå 2."
+    }
+  ]
+}
