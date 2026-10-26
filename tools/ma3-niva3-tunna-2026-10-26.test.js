@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -67,4 +67,14 @@ test('integral_area: svaren räknas om',()=>{
   assert.equal(get('3.1255').rättSvar,(12*6-36));
   assert.equal(get('3.1256').rättSvar,2+3);
   assert.equal(get('3.1257').alternativ.find(a=>a.ratt).txt,'∫₀¹ x³ dx < ∫₀¹ x² dx < ∫₀¹ x dx');
+});
+test('areasatsen: svaren räknas om',()=>{
+  const sin=v=>Math.sin(v*Math.PI/180),ar=(a,b,v)=>a*b*sin(v)/2;
+  const u1=get('4.567');assert.ok(Math.abs(u1.rättSvar-ar(14,9,110)*85)<=u1.tolerans);
+  const u2=get('4.568');assert.ok(Math.abs(u2.rättSvar-5*ar(5,5,72))<=u2.tolerans);
+  const u3=get('4.569');assert.ok(Math.abs(u3.rättSvar-(2*ar(5,7,60)+2*ar(5,7,120)))<=u3.tolerans);
+  assert.equal(get('4.570').rättSvar,24/3);
+  assert.equal(get('4.571').alternativ.find(a=>a.ratt).txt,'Sidorna 5 och 9 med vinkeln 90°');
+  for(const v of get('4.572').rättSvar)nara(ar(5,8,v),ar(5,8,90)/2,'4.572');
+  for(const id of r(4,567,572))assert.deepEqual(get(id).kurs,['1c'],id);
 });

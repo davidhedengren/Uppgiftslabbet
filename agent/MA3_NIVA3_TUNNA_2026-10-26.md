@@ -163,3 +163,23 @@ En genomsökning av dagens nya mattekort hittade åtta rubriker som var allmänn
 - Ma3 3.1254: ”Lös ekvationen”
 
 Båda regressionstesterna underkänner nu sådana rubriker.
+
+## 7. Areasatsen (Ma3c): 6 kort, 4.567–4.572
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 4.567 | Areasatsen | Kostnaden för en triangulär gräsmatta (14 m, 9 m, 110°), 5 032 kr (figur) |
+| 4.568 | Sammansatta figurer | Regelbunden femhörning i en cirkel med radien 5 cm, 59,4 cm² (figur) |
+| 4.569 | Sammansatta figurer | Parallellogrammens area ur diagonalerna 10 och 14 cm och vinkeln 60°. sin 120° = sin 60° ger 60,6 cm² (figur) |
+| 4.570 | Sammansatta figurer | Areaförhållandet när AD:DB = 1:2, 8 cm² (figur) |
+| 4.571 | Areasatsen | Vilken triangel har störst area? 30° och 150° ger samma area (flerval) |
+| 4.572 | Areasatsen | Vinklar som ger halva den största arean, 30° och 150° |
+
+Kontroller:
+
+- I första versionen av figuren till 4.567 var vinkeln vid A spetsig, fast den var märkt 110°. Det rättades.
+- Fyra etiketter låg för nära linjerna och flyttades. SVG-granskaren ger nu bara INFO om vinkelbågar.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 3 räkneled radbröts. Raden i 4.571 delades på fyra rader.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 12 svar, och alla gav väntat resultat. I 4.572 godtas vinklarna i valfri ordning.
