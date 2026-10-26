@@ -288,3 +288,32 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 15 svar, och alla gav väntat resultat.
+
+### 14. Polynomfunktioner: 4 kort, 1.977–1.980
+
+| ID | Innehåll |
+|---|---|
+| 1.977 | Andragradsfunktionen ur grafens skärningspunkter: (x + 1)(x − 5) (figur) |
+| 1.978 | Dubbelrot i 0 och nollstället 3 ger 2x²(x − 3) |
+| 1.979 | Nollställena 2 och 8 och största värdet 18 ger −2(x − 2)(x − 8) |
+| 1.980 | En parabelformad båge, 40 m bred och 10 m hög, är 4,4 m hög 5 m från fästet (figur) |
+
+### 15. Tangent och sekant: 4 kort, 1.981–1.984
+
+| ID | Innehåll |
+|---|---|
+| 1.981 | Tangenten är parallell med sekanten mellan x = 1 och x = 4 när x = 2,5 |
+| 1.982 | Sekantens och tangentens lutning ur graf, 2 och 3 (figur) |
+| 1.983 | Medelhastigheten 20 + 5h är 21 m/s när h = 0,2 |
+| 1.984 | Vilket uttryck ger tangentens lutning (derivatans definition, flerval) |
+
+Kontroller:
+
+- Graferna har en ny figurtyp med skaltalen längs kanterna, så att de inte krockar med kurvorna.
+- Etiketterna i 1.980 och 1.982 flyttades tills SVG-granskaren gav 0 fynd.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 2 räkneled radbröts.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 16 svar, och alla gav väntat resultat.
+  - Både faktoriserad och utvecklad form godtas.
+  - Fel tecken eller fel koefficient underkänns.

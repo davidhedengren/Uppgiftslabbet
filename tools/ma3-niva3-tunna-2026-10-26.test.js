@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -125,4 +125,14 @@ test('primitiva_villkor och storsta_minsta: svaren räknas om',()=>{
   const g=x=>x**3-6*x*x+9*x,xs=[];for(let x=0;x<=5.0001;x+=0.001)xs.push(g(x));assert.deepEqual(get('3.1264').rättSvar,[Math.round(Math.max(...xs)),Math.round(Math.min(...xs))+0]);
   const A=x=>x*(40-2*x);let m=0;for(let x=0;x<=20;x+=0.01)m=Math.max(m,A(x));nara(m,get('3.1265').rättSvar,'3.1265');
   assert.match(get('3.1266').alternativ.find(a=>a.ratt).txt,/eller i en ändpunkt/);
+});
+test('polynomfunktioner och tangent_sekant: svaren räknas om',()=>{
+  assert.equal(get('1.977').rättSvar,'(x+1)(x-5)');const f1=x=>(x+1)*(x-5);assert.equal(f1(0),-5);assert.ok(f1(-1)===0);
+  assert.equal(get('1.978').rättSvar,'2x^2(x-3)');assert.equal(2*1*(1-3),-4);
+  assert.equal(get('1.979').rättSvar,'-2(x-2)(x-8)');assert.equal(-2*(5-2)*(5-8),18);
+  inom(get('1.980'),0,-(1/40)*5*(5-40));
+  assert.equal(get('1.981').rättSvar,(16-1)/3/2);
+  const g=x=>0.5*x*x;assert.deepEqual(get('1.982').rättSvar,[(g(3)-g(1))/2,3]);nara(d(g,3),3,'1.982');
+  const s=t=>5*t*t,h=get('1.983').rättSvar;nara((s(2+h)-s(2))/h,21,'1.983');
+  assert.equal(get('1.984').alternativ.find(a=>a.ratt).txt,'gränsvärdet av (f(a + h) − f(a)) / h när h går mot 0');
 });
