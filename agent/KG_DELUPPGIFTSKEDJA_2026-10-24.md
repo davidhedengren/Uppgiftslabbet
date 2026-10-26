@@ -43,3 +43,27 @@ samma fråga igen (Fy1 3.93 i felloggen 2026-10-26).
 
 Provat live med Fy1 3.93. Inledningen och figuren visas en gång. a) står kvar med svar och ✓,
 och b) är bara ”Hur lång tid tar det att nå lyftfarten?”.
+
+## Tillägg 2026-10-26 (2): gemensamma meningar och rensade korta frågor
+
+- **`kedjaGemensammaMeningar`** används när varken block eller lärarversion ger en inledning. Om
+  alla delkorts första stycke börjar med samma meningar blir de meningarna inledningen, och resten
+  av stycket blir delens fråga. Det gäller till exempel Fy1 2.11, 5.544, 5.548 och 9.398, och fler
+  uppgifter i andra banker.
+- **Andel uppgifter med gemensam inledning efteråt:** Fy1 1152/1217 (före: 453), Fy2 373/384, Ma1
+  325/366, Ma2 294/323, Ma3 93/101, Ma4 553/553, Ma5 224/231.
+- **Uppgifter som fortfarande saknar inledning** är samlingar av olika övningar, till exempel
+  "Omvandla 2,7 g/cm³ till kg/dm³." följt av andra omvandlingar. Där ska varje del visa sin egen
+  text. Fy1 8.10 är inte med i träningen (`spel:false`).
+- **Korta frågor (`fraga`) i Fy1 som upprepade inledningen:** 89 frågor i 65 uppgifter är
+  rensade. Inledande meningar som redan står i `spelIntro` har tagits bort (skripten
+  fraga_strip.py och fraga_godkann.py i scratchpad). Alla förslag är genomlästa, och 23 är
+  handjusterade där frågan annars blev tvetydig eller fortfarande upprepade inledningen:
+  - 2.35 a: "Bestäm A4-arkets area".
+  - 8.37 a: "laddaren".
+  - 8.445: "torktumlaren" och "datorn".
+  - 9.43 a: "Vad betyder det att bananen har aktiviteten 15 Bq?".
+  - 9.91 och 9.96: "dosen per timme".
+  - 9.20, 9.61 och 9.62: bara "Bestäm massdefekten i u.".
+  - 9.66 a: figuren behålls.
+- Delkortens egna `t`, facit och svar är oförändrade.
