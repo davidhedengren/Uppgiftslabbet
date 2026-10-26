@@ -364,3 +364,37 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 22 svar, och alla gav väntat resultat. Likvärdiga uttryck godtas.
+
+### 18. Kap 2, omgång 3: 14 kort, 2.1271–2.1284
+
+| ID | Område | Innehåll |
+|---|---|---|
+| 2.1271 | andringskvoter | Ökning per år i två perioder ur en tabell: 250 och 300 |
+| 2.1272 | andringskvoter | Genomsnittlig förändring ur en graf, −2,5 °C/h (figur) |
+| 2.1273 | andringskvoter | Genomsnittlig ökning för N = 500·2ᵗ mellan t = 2 och t = 5, 4 667/h |
+| 2.1274 | derivata_exponential | f′ = 0,3f och f(0) = 50 ger f(5) ≈ 224 |
+| 2.1275 | derivata_exponential | C och k ur en tabell med f och f′: 12 och −0,25 |
+| 2.1276 | derivata_exponential | M′ = −0,12M vid 40 g ger 4,8 g/år |
+| 2.1277 | numerisk_derivering | Central differenskvot ur en tabell, 24 m/s |
+| 2.1278 | numerisk_derivering | Minimipunkt med digitalt verktyg: (1,10; −0,30) |
+| 2.1279 | derivatans_definition | f′(2) för x² + 3x med definitionen, 7 |
+| 2.1280 | derivatans_definition | Gränsvärdet (√(9 + h) − 3)/h tolkat som en derivata, 1/6 |
+| 2.1281 | derivata_polynom | Avtagande intervall −2 ≤ x ≤ 1 |
+| 2.1282 | derivata_polynom | En extrempunkt i (1, −2) ger a = 0 och b = −3 |
+| 2.1283 | talet_e | e²ˣ har lutningen 6 när x ≈ 0,55 |
+| 2.1284 | talet_e | Läkemedlet minskar med 10 mg/h efter 6,4 h |
+
+Kontroller:
+
+- Svaren för numerisk derivering (först 10) och avtagande intervall (först [−1, 3]) krockade med befintliga kort och byttes.
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- Rubrikerna ”Derivera” och ”Logaritmera” skrevs om, så att de beskriver just det steget.
+- En ny genomsökning av omgång 2 hittade tolv korta mallrubriker, till exempel ”Jämför”, ”Beräkna arean” och ”Sätt in värdena”. De skrevs om i 4.570, 4.590, 4.595, 3.1259, 3.1264, 3.1265, 1.993, 2.1259, 2.1271, 2.1273, 2.1277 och 2.1282. Testets spärr mot sådana rubriker har utökats.
+- 9 räkneled radbröts.
+- SVG-granskaren ger 0 fynd.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 22 svar, och alla gav väntat resultat.
+
+### Läge efter omgång 2
+
+Alla 17 kort i Ma3c som hade färre än 8 nivå 3-uppgifter har nu minst 9. Totalt tillkom 69 kort i omgång 2.

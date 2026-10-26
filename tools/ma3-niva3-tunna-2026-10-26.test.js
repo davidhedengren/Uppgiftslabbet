@@ -5,12 +5,12 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596),primitiva_villkor:r(3,1258,1262),storsta_minsta:r(3,1263,1266),polynomfunktioner:r(1,977,980),tangent_sekant:r(1,981,984),trig_tillampningar:r(4,597,600),algebra_polynom:r(1,985,987),polynom:r(1,988,990),rationella_ekvationer:r(1,991,993),rakna_rationella:r(1,994,995),andringskvoter:r(2,1271,1273),derivata_exponential:r(2,1274,1276),numerisk_derivering:r(2,1277,1278),derivatans_definition:r(2,1279,1280),derivata_polynom:r(2,1281,1282),talet_e:r(2,1283,1284)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
     const steg=[...t.s.matchAll(/<li>([\s\S]*?)<\/li>/g)];assert.ok(steg.length>=2,id);for(const m of steg)assert.match(m[1],/^<p class="facit-rubrik">/,id);
-    for(const m of steg)assert.doesNotMatch(m[1],/^<p class="facit-rubrik">(Lös ekvationen|Lös|Kontrollera|Förenkla|Beräkna|Beräkna y|Derivera|Svar|Steg \d+|Sätt in|Faktorisera|Multiplicera ut|Kvadratkomplettera|Sätt uttrycken lika|Två lösningar)\.?<\/p>/,`${id}: generisk rubrik`);
+    for(const m of steg)assert.doesNotMatch(m[1],/^<p class="facit-rubrik">(Lös ekvationen|Lös|Kontrollera|Logaritmera|Jämför|Jämför värdena|Beräkna arean|Beräkna funktionsvärdet|Sätt in värdena|Lös ekvationssystemet|Lös andragradsekvationen|Sinussatsen|Ändringskvoten|Förenkla|Beräkna|Beräkna y|Derivera|Svar|Steg \d+|Sätt in|Faktorisera|Multiplicera ut|Kvadratkomplettera|Sätt uttrycken lika|Två lösningar)\.?<\/p>/,`${id}: generisk rubrik`);
     assert.match(t.s,/class="facit-svar"/,id);assert.ok(String(t.ledtrad).replace(/<[^>]+>/g,'').trim().length>=15,id);
     for(const m of (t.t+t.s+t.ledtrad).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g))assert.doesNotMatch(m[1]??m[2],/[<>]/,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);for(const a of t.alternativ)if(!a.ratt)assert.ok(a.kommentar,id);}
@@ -153,4 +153,20 @@ test('kap 1 omgång 3: svaren räknas om',()=>{
   const v=get('1.993').rättSvar;nara(30/v-30/(v+5),1,'1.993');
   for(const x of [0.5,4,7])nara((x*x-4)/(x+3)/((x-2)/(x*x-9)),(x+2)*(x-3),'1.994');
   for(const x of [0.5,3])nara(1/x-1/(x+2),2/(x*(x+2)),'1.995');
+});
+test('kap 2 omgång 3: svaren räknas om',()=>{
+  assert.deepEqual(get('2.1271').rättSvar,[(13150-12400)/3,(14650-13150)/5]);
+  const T=t=>0.25*t*t-4.5*t+22;assert.equal(get('2.1272').rättSvar,(T(6)-T(2))/4);
+  inom(get('2.1273'),0,(500*2**5-500*2**2)/3);
+  inom(get('2.1274'),0,50*Math.exp(1.5));
+  const f=x=>12*Math.exp(-0.25*x);nara(d(f,2)/f(2),get('2.1275').rättSvar[1],'2.1275');assert.equal(get('2.1275').rättSvar[0],f(0));
+  nara(get('2.1276').rättSvar,0.12*40,'2.1276');
+  inom(get('2.1277'),0,(38.44-33.64)/0.2);
+  const u=get('2.1278');inom(u,0,Math.log(3));inom(u,1,3-3*Math.log(3));
+  nara(d(x=>x*x+3*x,2),get('2.1279').rättSvar,'2.1279');
+  assert.equal(get('2.1280').rättSvar,'1/6');nara(d(Math.sqrt,9),1/6,'2.1280');
+  const g=x=>2*x**3+3*x*x-12*x,[a1,b1]=get('2.1281').rättSvar;nara(d(g,a1),0,'2.1281');nara(d(g,b1),0,'2.1281');assert.ok(d(g,(a1+b1)/2)<0);
+  const [a,b]=get('2.1282').rättSvar,h=x=>x**3+a*x*x+b*x;nara(d(h,1),0,'2.1282');assert.equal(h(1),-2);
+  inom(get('2.1283'),0,Math.log(3)/2);
+  inom(get('2.1284'),0,Math.log(0.2)/-0.25);
 });
