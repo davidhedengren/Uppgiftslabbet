@@ -1,0 +1,134 @@
+{
+  "2.1207": [
+    "x−2 är negativt när x < 2, så denna logaritm är inte definierad.",
+    "Kvadraten i ursprungsuttrycket kräver faktorn två framför logaritmen.",
+    "2−x är positivt och dess kvadrat är samma som (x−2)².",
+    "Detta motsvarar logaritmen av (x/2)², inte av (x−2)²."
+  ],
+  "2.1215": [
+    "I den första ekvationen fungerar även −3 eftersom (−3)² = 9.",
+    "Den första har positivt argument för båda rötterna; den andra kräver x > 0.",
+    "ln x är inte definierad vid x = −3 i den andra ekvationen.",
+    "Definitionsmängderna är omkastade här: det är ln x som kräver positivt x."
+  ],
+  "2.1226": [
+    "Att x finns i nämnaren avgör inte monotonin. Täljaren förändras också.",
+    "Derivatan är positiv överallt för x > 0 och byter inte tecken.",
+    "Potensomskrivningen ger två positiva termer i derivatan när x > 0.",
+    "Termerna förkortas inte till konstanter; derivatan är strikt positiv."
+  ],
+  "2.1234": [
+    "De olika bråktermerna ger olika bidrag till lutningen.",
+    "Vid x = 1 är lutningarna 2,5 respektive −2,5.",
+    "Olika höjd hindrar inte parallella tangenter; det är lutningarna som måste jämföras.",
+    "Skillnaden 5/x² är positiv, så lutningarna kan aldrig bli lika."
+  ],
+  "2.1237": [
+    "Båda termerna i derivatan är positiva för x > 0.",
+    "De negativa exponenterna gör att derivatatermerna minskar när x ökar.",
+    "Båda termerna är positiva och minskar när x ökar.",
+    "Vid x = 1 är derivatan 2, och den är positiv på båda sidor."
+  ],
+  "3.1225": [
+    "C² kan inte ge negativa konstanta förskjutningar.",
+    "För varje reell konstant k kan vi välja C=k/2.",
+    "sin C ger bara förskjutningar mellan −1 och 1.",
+    "Detta är en enda primitiv funktion, inte alla."
+  ],
+  "3.1226": [
+    "Samma konstant krävs bara inom ett sammanhängande intervall.",
+    "Även konstanten noll är tillåten; F₁ behöver ingen utskriven extra konstant.",
+    "Funktionen f är inte heller definierad vid noll. Derivatan ska stämma där f är definierad.",
+    "De extra termerna är konstanta på respektive intervall och försvinner vid derivering."
+  ],
+  "3.1228": [
+    "Även det andra uttrycket har derivatan x²−2x+1.",
+    "Skillnaden mellan uttrycken kan tas upp av den fria konstanten.",
+    "Sambandet K=C−1/3 gör att båda beskriver exakt samma familj.",
+    "Även den förskjutna kuben har rätt derivata, (x−1)²."
+  ],
+  "2.1248": [
+    "En symmetrisk förändringskvot räcker inte när vänster och höger lutning skiljer sig.",
+    "Vänsterlutningen är −1 och högerlutningen +1. Derivatan vid hörnet finns inte.",
+    "Grafens höjd är funktionsvärdet, inte tangentlutningen.",
+    "Derivatan måste stämma från båda håll, inte bara från höger."
+  ],
+  "2.1249": [
+    "Att temperaturen sjunker avgör inte felets riktning; jämför skärningarna med 25 °C.",
+    "Tangenten och kurvan har samma lutning i en punkt men följs inte åt därefter.",
+    "När tangenten når 25 °C är kurvan fortfarande högre. Kurvan når nivån senare.",
+    "När kurvan ligger ovanför tangenten behöver den mer tid till 25 °C, så tangentens tid är för tidig."
+  ],
+  "2.1255": [
+    "Villkoren garanterar inte att den vågräta tangenten finns just i mitten.",
+    "En graf kan först stiga och sedan sjunka tillbaka till samma höjd.",
+    "Positiv derivata överallt skulle ge ett högre värde vid höger ändpunkt.",
+    "En konstant graf har derivatan noll; annars måste ett inre extremvärde ge en vågrät tangent."
+  ],
+  "2.1258": [
+    "Derivatan är positiv före och efter ett. Funktionen fortsätter växa.",
+    "För ett minimum behöver funktionen gå från avtagande till växande.",
+    "Noll derivata är inte ensamt tillräckligt för ett extremvärde.",
+    "Derivatan är noll i en enda punkt, inte överallt på ett intervall."
+  ],
+  "1.951": [
+    "Förkortningen gäller där f är definierad. Punkten x = 1 är ändå utesluten för f men tillåten för g.",
+    "Vid x = 1 är nämnaren i f noll. En förkortning får inte lägga till den punkten i definitionsmängden.",
+    "Uttrycket för f ger 0/0 vid x = 1, vilket är odefinierat, inte noll.",
+    "Efter förkortning har funktionerna samma värden där båda är definierade. Däremot skiljer sig definitionsmängderna."
+  ],
+  "1.954": [
+    "Fyra punkter kan bestämma en funktion inom vissa givna modeller, men här är ingen sådan modell bestämd.",
+    "En extra term som är noll vid tabellens fyra x-värden kan ändra funktionen vid andra x-värden.",
+    "Att värdena ökar säger inte vilken formel som gäller mellan eller utanför tabellens punkter.",
+    "Vid x = 3 ger x² + 1 värdet 10, precis som i tabellen. Problemet är vad som händer utanför de fyra punkterna."
+  ],
+  "1.955": [
+    "Uttrycket 20 + 10m gäller bara till och med 2 kg. Vid 2,5 kg måste du använda den andra delen.",
+    "Funktionen har ett hopp. Alla priser mellan det minsta och största priset behöver därför inte förekomma.",
+    "Den första delen ger högst 40 kr och den andra ger mer än 50 kr. Därför kan priset inte bli 45 kr.",
+    "Vid 2 kg gäller den första delen: 20 + 10 · 2 = 40 kr."
+  ],
+  "1.961": [
+    "Vid ändpunkterna blir roten noll och då går det inte att dividera med den. Ändpunkterna måste uteslutas.",
+    "Även värden utanför intervallet måste uteslutas: där blir uttrycket under roten negativt.",
+    "Villkoret gäller x − 1, inte x. Förskjut därför båda intervallgränserna ett steg åt höger.",
+    "Kravet 9 − (x − 1)² > 0 ger −2 < x < 4. Det säkerställer både en reell rot och en nämnare som inte är noll."
+  ],
+  "1.962": [
+    "Mellan −2 och 2 är summan av avstånden till ändpunkterna alltid 4. Utanför intervallet är summan större.",
+    "Vid x = 0 är de två absolutbeloppen 2 och 2. Summan blir 4, inte 0.",
+    "Även till exempel x = 1 ger 1 + 3 = 4. Alla x i intervallet ger samma minsta värde.",
+    "Vid x = −2 respektive x = 2 blir det ena absolutbeloppet 0 och det andra 4. Summan är därför 4."
+  ],
+  "2.744": [
+    "Det är tecknet på derivatan, inte tecknet på x, som avgör tangentens lutning. Här är −1/x² negativt.",
+    "En vågrät tangent kräver att derivatan är noll. −1/x² är aldrig noll.",
+    "Kvadraten x² är positiv när x är negativt. Minustecknet framför bråket gör därför lutningen negativ.",
+    "Funktionen och dess derivata är definierade för negativa x. Endast x = 0 är uteslutet."
+  ],
+  "3.551": [
+    "Derivatan är \\(6x^2-4x+3\\), alltså precis den givna funktionen.",
+    "Derivatan av detta förslag är \\(6x-4\\), vilket inte är samma som f.",
+    "Derivatan blir \\(6x^2-8x\\). Både termen med x och konstanttermen skiljer sig från f.",
+    "Derivatan blir \\(18x^2-4x+3\\). Koefficienten framför x² ska vara 6."
+  ],
+  "3.617": [
+    "Derivatan av \\(-x^2/2\\) är −x, inte −x². Elevens term \\(-x^3/3\\) är redan korrekt.",
+    "Termen +x ger derivatan +1. Den saknas i elevens förslag.",
+    "Derivatan av \\(2x^5/5\\) är \\(2x^4\\), inte \\(2x^5\\). Elevens term \\(x^6/3\\) är korrekt.",
+    "Alla konstanter har derivatan noll. Inget val av C kan därför skapa konstanttermen +1 i derivatan."
+  ],
+  "3.727": [
+    "Detta är derivatan av f, inte en primitiv funktion. Deriverar du förslaget får du 6x.",
+    "Derivatan blir \\(x^3-4\\). Den andra termen ska vara −2x.",
+    "Derivatan av \\(x^4/4-x^2\\) är \\(x^3-2x\\), precis som i frågan.",
+    "Derivatan blir \\(4x^3-4x\\). Båda koefficienterna skiljer sig från den givna funktionen."
+  ],
+  "4.52": [
+    "Positiva sidlängder räcker inte för att alla givna vinklar och sidor ska passa ihop. Sinussatsen måste också vara uppfylld.",
+    "Om B vore 90° skulle sin B vara 1. Här kräver de givna värdena ett sinusvärde större än 1.",
+    "Sinussatsen skulle ge sin B ≈ 1,12. Eftersom sinus högst kan vara 1 finns ingen sådan triangel.",
+    "Sidan b får vara längre än a, om vinkeln B är större än A. Här är problemet i stället att det beräknade sinusvärdet överstiger 1."
+  ]
+}

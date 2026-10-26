@@ -1,0 +1,16 @@
+{
+  "2.02": {
+    "ledtrad": "<p>Derivera de fyra termerna var för sig. Vad blir derivatan av konstanttermen −7?</p>"
+  },
+  "2.217": {
+    "ledtrad": "<p>Dela först varje term i täljaren med \\(x^2\\). Då kan du använda potensregeln i stället för kvotregeln.</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Funktionen är definierad för \\(x\\ne0\\).</p>\\[g(x)=\\frac{4x^3}{x^2}-\\frac6{x^2}\\]\\[=4x-6x^{-2}\\]</li><li>\\[g^{\\prime}(x)=4-6\\cdot(-2)x^{-3}\\]\\[=4+12x^{-3}\\]</li><li><p>Eftersom \\(x^{-3}=1/x^3\\) kan derivatan skrivas</p>\\[g^{\\prime}(x)=4+\\frac{12}{x^3}.\\]</li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(g^{\\prime}(x)=4+12/x^3\\), för \\(x\\ne0\\).</p></div>"
+  },
+  "3.198": {
+    "ledtrad": "<p>Jämför tecknet på F:s lutning i de tre intervallen. En växande funktion kan ha en vågrät tangent i enstaka punkter. Vad händer när F går från att växa till att avta?</p>"
+  },
+  "3.284": {
+    "ledtrad": "<p>Skriv bråktermen med negativ exponent. Vilken exponent får varje term när du integrerar?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>För reella värden måste \\(x>0\\): den första termen innehåller en rot och den andra får inte ha nämnaren noll.</p>\\[f(x)=5x^{3/2}-2x^{-3}\\]</li><li>\\[F(x)=5\\frac{x^{5/2}}{5/2}-2\\frac{x^{-2}}{-2}+C\\]\\[=2x^{5/2}+x^{-2}+C\\]</li><li>\\[F^{\\prime}(x)=2\\cdot\\frac52x^{3/2}-2x^{-3}\\]\\[=5x^{3/2}-\\frac2{x^3}=f(x)\\]</li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(F(x)=2x^{5/2}+1/x^2+C\\), för \\(x>0\\).</p></div>"
+  }
+}

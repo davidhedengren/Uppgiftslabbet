@@ -2677,3 +2677,7 @@ Sök efter `(x)` som inte föregås av backslash innan en bank anses ren.
 **Delkort (rättat i etapp 4):** ett givet mellanresultat i ett delkorts fråga, som ”Det är givet att x = 30”, är tillåtet och gör kortet fristående. Det som inte får förekomma är att ett delkorts facit visar ett annat delkorts svar. 3.181:s delning togs bort av misstag i etapp 3 och är återställd.
 
 Skydd: `ma2-kap3-yttervinkel-2026-10-26.test.js`.
+
+## Ma3 facitstruktur – återkontroll 2026-10-25/26
+
+158 uppgifter har fått manuella uppgiftsspecifika `facit-rubrik`, mellanled vid behov och individuella alternativkommentarer. Ändra även `spelDelar[].s` när huvudfacitet ändras. I 3.198 gäller icke-negativ derivata för växande funktion, inte strikt positiv i varje punkt; ledtråden ska vara konsekvent med facitet. Äldre byggare får inte återställa korta facit. Kör `tools/revidera-ma3-facitstruktur-2026-10-25.py` sist och skyddstestet `tools/ma3-facitstruktur-2026-10-25.test.py`. Alla ID och kommentarsförslag: [MA3_FACITSTRUKTUR_2026-10-25.md](MA3_FACITSTRUKTUR_2026-10-25.md).

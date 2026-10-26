@@ -1,0 +1,742 @@
+{
+  "2.1201": [
+    "Båda logaritmernas argument måste vara positiva",
+    "Skriv logaritmsumman som en produkt",
+    "Pröva rötterna mot villkoret x > 1"
+  ],
+  "2.1202": [
+    "Logaritmskillnaden ger sidlängdernas kvot",
+    "Kvadrera längdfaktorn för att få areafaktorn"
+  ],
+  "2.1203": [
+    "Lika logaritmsteg ger dubbla logaritmen av x",
+    "Skriv dubbla logaritmen som logaritmen av x²",
+    "Välj talet mellan fyra och tjugofem"
+  ],
+  "2.1204": [
+    "Kravet x > 0 måste behållas vid omskrivningen",
+    "Faktorisera den bildade andragradsekvationen",
+    "Den negativa roten saknar logaritm"
+  ],
+  "2.1205": [
+    "Raden med x = 1 bestämmer b",
+    "Raden med x = e² bestämmer a",
+    "Beräkna funktionen när logaritmen är −1"
+  ],
+  "2.1206": [
+    "Kvoten och kvadraten ger en logaritmskillnad",
+    "Termerna med a tar ut varandra"
+  ],
+  "2.1207": [
+    "Byt till ett positivt logaritmargument",
+    "Kvadraten ger faktorn två framför logaritmen"
+  ],
+  "2.1208": [
+    "Det yttre logaritmargumentet ska vara ett",
+    "Bestäm x ur villkoret f(x) = 1",
+    "Kontrollera båda logaritmargumenten"
+  ],
+  "2.1209": [
+    "Bestäm mittpunktens båda koordinater",
+    "Jämför kurvans höjd med mittpunktens höjd"
+  ],
+  "2.1210": [
+    "En tredubbling ger samma logaritmökning",
+    "Två sådana ökningar tar värdet från fem till nio"
+  ],
+  "2.1211": [
+    "Mätningen efter fyra minuter bestämmer k",
+    "Vid 25 grader återstår en tolftedel av temperaturskillnaden",
+    "Logaritmera för att bestämma tiden"
+  ],
+  "2.1212": [
+    "Dividera bort odlingarnas gemensamma exponentialfaktor",
+    "Logaritmen gör tiden till en faktor"
+  ],
+  "2.1213": [
+    "Ta tre fjärdedelar av logaritmernas avstånd",
+    "Gå från logaritmkvoten till talet P"
+  ],
+  "2.1214": [
+    "Logaritmsumma och logaritmskillnad ger produkt och kvot",
+    "Ersätt a med tre gånger b",
+    "Använd att båda talen är positiva"
+  ],
+  "2.1215": [
+    "I den första ekvationen räcker ett positivt x²",
+    "I den andra måste x självt vara positivt",
+    "Logaritmlagen får inte utöka definitionsmängden"
+  ],
+  "2.1216": [
+    "Bestäm definitionsmängden innan argumenten jämförs",
+    "Faktorisera uttrycket i olikheten",
+    "Räkna heltalen mellan rötterna"
+  ],
+  "2.1217": [
+    "Bryt ut den gemensamma faktorn ln x",
+    "Sätt en faktor i taget till noll",
+    "Gå tillbaka från logaritm till x"
+  ],
+  "2.1218": [
+    "Asymptoten bestämmer förskjutningen a",
+    "Den givna punkten bestämmer höjdförskjutningen b",
+    "Sätt den färdiga funktionen lika med noll"
+  ],
+  "2.1219": [
+    "Multiplicera höjningens och sänkningens förändringsfaktorer",
+    "Konjugatregeln tar bort de linjära termerna",
+    "Välj den positiva procentförändringen"
+  ],
+  "2.1220": [
+    "Lika logaritmskillnader blir lika logaritmkvoter",
+    "Lika logaritmer har lika positiva argument",
+    "Kvadrattermerna tar ut varandra",
+    "Kontrollera samma kvot mellan de tre talen"
+  ],
+  "2.1221": [
+    "Funktionsvärdet vid ett bestämmer a",
+    "Derivatan vid ett bestämmer exponenten n"
+  ],
+  "2.1222": [
+    "Bilda kvoten mellan tangenternas lutningar",
+    "Förkorta n och samla potenserna",
+    "Jämför exponenterna när basen är fyra"
+  ],
+  "2.1223": [
+    "Punkten och den vågräta tangenten ger två villkor",
+    "Derivera rottermen och bråktermen",
+    "Lös sambanden mellan a och b"
+  ],
+  "2.1224": [
+    "Derivera funktionen inför villkoret om vågrät tangent",
+    "Kräv att derivatan är noll vid x = 2"
+  ],
+  "2.1225": [
+    "Skriv rotuttrycken som potenser och derivera",
+    "Multiplicera nollställesekvationen med den positiva roten"
+  ],
+  "2.1226": [
+    "Kvoten kan skrivas som två potenser",
+    "Derivera potenstermerna var för sig",
+    "Båda positiva derivatatermerna ger en växande funktion"
+  ],
+  "2.1227": [
+    "Derivatan ger lutningen i den okända tangentpunkten",
+    "Samma lutning fås mellan tangentens två punkter",
+    "Multiplicera bort nämnarna och bestäm a"
+  ],
+  "2.1228": [
+    "Tangenten och kurvan ska ha samma höjd och lutning",
+    "Använd lutningsvillkoret i höjdvillkoret",
+    "Sätt tangentpunktens x-värde i uttrycket för a"
+  ],
+  "2.1229": [
+    "Två deriveringar ger faktorn n(n−1)",
+    "Använd andraderivatans värde vid ett",
+    "Välj roten som uppfyller n ≥ 2"
+  ],
+  "2.1230": [
+    "Derivering minskar exponenten med ett",
+    "Jämför båda uttrycken vid x = 4",
+    "Bilda kvoten mellan beloppen"
+  ],
+  "2.1231": [
+    "Bestäm tiden då vagnen är vid tio meter",
+    "Derivera läget för att få hastigheten",
+    "Beräkna hastigheten vid den funna tiden"
+  ],
+  "2.1232": [
+    "Beräkna sekantens lutning mellan de två punkterna",
+    "Sätt tangentlutningen lika med sekantlutningen",
+    "Bestäm x från rotvillkoret"
+  ],
+  "2.1233": [
+    "Bestäm efterfrågan och lutningen vid det gamla priset",
+    "Multiplicera lutningen med prisökningen",
+    "Jämför minskningen med den ursprungliga efterfrågan"
+  ],
+  "2.1234": [
+    "Parallella tangenter kräver lika derivator",
+    "Derivatornas skillnad är alltid positiv"
+  ],
+  "2.1235": [
+    "Derivera båda negativa potenserna",
+    "Sätt in de två givna tangentlutningarna",
+    "Subtrahera ekvationerna för att bestämma konstanterna"
+  ],
+  "2.1236": [
+    "Skriv derivatan med en positiv nämnare",
+    "Derivatan byter från minus till plus vid ett",
+    "Beräkna det minsta funktionsvärdet"
+  ],
+  "2.1237": [
+    "Skriv kvoten som en skillnad av potenser",
+    "Derivatan består av två positiva termer",
+    "Båda derivatatermerna minskar när x ökar"
+  ],
+  "2.1238": [
+    "Samla derivatan till ett bråk",
+    "Teckenbytet visar att minimum finns vid x = c",
+    "Sätt minimivärdet lika med fyra"
+  ],
+  "2.1239": [
+    "Derivera båda funktionerna för att jämföra lutningarna",
+    "Lika lutningar ger en ekvation i x⁴",
+    "Kontrollera båda reella rötterna"
+  ],
+  "2.1240": [
+    "Skriv tangentlinjen med den okända punkten",
+    "Utveckla tangentens ekvation",
+    "Använd axelskärningarna som bas och höjd",
+    "Arean beror inte på tangentpunktens läge"
+  ],
+  "3.1215": [
+    "Samma ursprungsfunktion kräver samma derivata",
+    "Jämför x-termerna och konstanttermerna var för sig"
+  ],
+  "3.1216": [
+    "Bestäm konstanten i F med värdet vid noll",
+    "Bestäm konstanten i G med värdet vid ett",
+    "De gemensamma x-termerna tar ut varandra"
+  ],
+  "3.1217": [
+    "Utveckla kvadraten och dividera med x²",
+    "Integrera de tre potenserna med rätt tecken",
+    "Kontrollera genom att derivera tillbaka"
+  ],
+  "3.1218": [
+    "Utveckla täljaren och dividera med roten",
+    "Integrera potenserna med halvheltalsexponenter",
+    "Derivering ska ge de tre ursprungliga termerna"
+  ],
+  "3.1219": [
+    "Derivera förslaget med a och b kvar",
+    "Matcha rottermens och bråktermens koefficienter",
+    "Bestäm a och b medan C förblir fri"
+  ],
+  "3.1220": [
+    "Utveckla kvadraten av exponentialuttrycket",
+    "Faktorn en halv kompenserar för derivatan av 2x",
+    "Konstanttermen i f kräver en linjär term i F"
+  ],
+  "3.1221": [
+    "Multiplicera täljarens två parenteser",
+    "Dividera med x² och integrera termvis",
+    "Två minustecken ger den positiva bråktermen"
+  ],
+  "3.1222": [
+    "Derivera den förskjutna kuben",
+    "Koefficienten framför x bestämmer a",
+    "Den saknade konstanttermen bestämmer b"
+  ],
+  "3.1223": [
+    "Sekantens lutning ska beräknas från F",
+    "Integrationskonstanten försvinner i differensen"
+  ],
+  "3.1224": [
+    "Ersätt varje x i den primitiva funktionen med 2x",
+    "Derivera den sammansatta funktionen G",
+    "Kontrollera varför f(2) inte räcker"
+  ],
+  "3.1225": [
+    "Alla konstanta förskjutningar måste ingå",
+    "Undersök vilka värden konstantuttrycken kan anta"
+  ],
+  "3.1226": [
+    "Derivera på vart och ett av de två intervallen",
+    "De åtskilda intervallen får ha olika konstanter"
+  ],
+  "3.1227": [
+    "Betrakta skillnaden F−G som en egen funktion",
+    "Lika värden vid ett bestämmer konstanten",
+    "Beräkna skillnaden vid tre"
+  ],
+  "3.1228": [
+    "Utveckla den förskjutna kuben",
+    "Låt konstanten ta hand om skillnaden en tredjedel"
+  ],
+  "3.1229": [
+    "Multiplicera rottermerna med båda termerna i parentesen",
+    "Integrera de tre samlade potenserna",
+    "Kontrollera de tre termerna genom derivering"
+  ],
+  "3.1230": [
+    "Skriv F och ersätt sedan x med 2x",
+    "Jämför koefficienterna efter att konstanten försvunnit"
+  ],
+  "3.1231": [
+    "Skriv en primitiv funktion och välj differensens ordning",
+    "Beräkna F vid maximum och minimum",
+    "Ta maximivärdet minus minimivärdet"
+  ],
+  "3.1232": [
+    "Nollställena till f ger F:s stationära punkter",
+    "Använd teckenbytena för att klassificera punkterna",
+    "Jämför det lokala maximivärdet med det globala minimumet"
+  ],
+  "2.1241": [
+    "Beräkna tankvolymens ändring per timme",
+    "Anpassa ändringen till tio minuter",
+    "Jämför utflödet med den aktuella vattenvolymen"
+  ],
+  "2.1242": [
+    "Använd värden lika långt från år fem",
+    "Jämför årsökningen med befolkningen vid år fem"
+  ],
+  "2.1243": [
+    "Bestäm medelhastigheten från intervallets ändpunkter",
+    "Sätt den momentana hastigheten lika med medelhastigheten",
+    "Kontrollera att tidpunkten ligger i intervallet"
+  ],
+  "2.1244": [
+    "De två funktionsvärdena ger ett samband mellan a och b",
+    "Derivatavärdet ger ett andra samband",
+    "Bestäm b som är lutningen vid noll"
+  ],
+  "2.1245": [
+    "Subtrahera utflödet från inflödet",
+    "Beräkna gränserna för ökningen under tio minuter",
+    "Lägg tillbaka vattnet som fanns från början"
+  ],
+  "2.1246": [
+    "Vinstens förändring är intäktsökning minus kostnadsökning",
+    "Multiplicera med de tre extra varorna"
+  ],
+  "2.1247": [
+    "Omvandla antalet stolar till hundratal",
+    "Uppskatta den nya totalkostnaden med tangenten",
+    "Omvandla till kronor och dela med antalet stolar"
+  ],
+  "2.1248": [
+    "Symmetrin gör förändringskvoten noll",
+    "De ensidiga lutningarna visar att derivatan saknas"
+  ],
+  "2.1249": [
+    "Jämför kurvan och tangenten vid temperaturnivån",
+    "Kurvan behöver mer tid för att nå samma temperatur"
+  ],
+  "2.1250": [
+    "Bestäm när cyklisterna möts igen",
+    "Beräkna båda hastigheterna vid mötet",
+    "Avståndet ökar med skillnaden mellan hastigheterna"
+  ],
+  "2.1251": [
+    "Uppskatta kostnadsökningen med lutningen vid femtio",
+    "Beräkna den exakta ökningen med funktionsvärden",
+    "Subtrahera tangentens uppskattning från exakt ökning"
+  ],
+  "2.1252": [
+    "Tangentlutningen anger liter per centimeter",
+    "Omvandla volymen till kubikcentimeter",
+    "Volymändring per höjdändring är vattenytans area"
+  ],
+  "2.1253": [
+    "De två uttrycken måste mötas vid x = 1",
+    "Grenarna måste också ha samma lutning",
+    "Använd den funna lutningen för att bestämma b"
+  ],
+  "2.1254": [
+    "Lika snabb tillväxt betyder lika derivator",
+    "Dividera bort den gemensamma exponentialfaktorn",
+    "Logaritmera för att bestämma tidpunkten"
+  ],
+  "2.1255": [
+    "En konstant funktion har vågrät tangent överallt",
+    "En annan graf måste vända inne i intervallet",
+    "Det måste finnas en vågrät tangent men inte nödvändigtvis i mitten"
+  ],
+  "2.1256": [
+    "Beräkna förbrukningen per kilometer",
+    "Bestäm körsträckan under tjugo minuter",
+    "Multiplicera sträckan med förbrukningen per kilometer"
+  ],
+  "2.1257": [
+    "Omvandla sekunder till minuter innan tangenten används",
+    "Omvandla den nya temperaturen till Fahrenheit"
+  ],
+  "2.1258": [
+    "Derivatan är positiv på båda sidor om nollstället",
+    "Funktionen fortsätter växa genom den vågräta tangenten"
+  ],
+  "1.949": [
+    "Det yttre funktionsvärdet ska bli noll",
+    "Hitta de x-värden som ger −1 eller 1",
+    "Kontrollera båda sammansatta funktionsvärdena"
+  ],
+  "1.950": [
+    "Det nya argumentet måste ligga mellan 0 och 4",
+    "Bestäm minsta och största värdet för f",
+    "Översätt definitionsmängden till g"
+  ],
+  "1.951": [
+    "Nämnarna avgör var funktionerna är definierade",
+    "Förkortningen gör inte f definierad vid x = 1"
+  ],
+  "1.952": [
+    "Beräkna båda funktionssammansättningarna",
+    "Skillnaden är alltid 1"
+  ],
+  "1.953": [
+    "Den negativa faktorn vänder ordningen",
+    "Beräkna g när f har sina ändvärden",
+    "Båda gränserna ingår i värdemängden"
+  ],
+  "1.954": [
+    "Tabellen visar bara fyra funktionsvärden",
+    "Ett motexempel kan stämma i tabellen men skilja sig utanför den"
+  ],
+  "1.955": [
+    "Pröva priset 45 kr i det första viktintervallet",
+    "Det andra prisuttrycket ger alltid mer än 50 kr"
+  ],
+  "1.956": [
+    "Skriv rektangelns area med en variabel",
+    "Arean ska vara minst 96",
+    "Produkten är negativ eller noll mellan nollställena"
+  ],
+  "1.957": [
+    "Termerna med udda exponent tar ut varandra",
+    "Summan ska vara 8 för alla x",
+    "Använd funktionsvärdet vid x = 1 för att bestämma b"
+  ],
+  "1.958": [
+    "Ge det inre argumentet ett eget namn",
+    "Ersätt x med uttrycket i u",
+    "Utveckla kvadraten och samla termer",
+    "Skriv funktionen med x som variabel"
+  ],
+  "1.959": [
+    "Sätt in en linjär funktion i sig själv",
+    "Jämför koefficienterna med 4x + 3",
+    "Villkoret f(0) < 0 väljer den negativa lutningen"
+  ],
+  "1.960": [
+    "Den vågräta linjen y = 1 träffar grafen tre gånger",
+    "Övriga höjder ger högst två skärningar",
+    "Räkna även skärningarna i ändpunkterna"
+  ],
+  "1.961": [
+    "Roten i nämnaren måste vara strikt positiv",
+    "Översätt kvadratvillkoret till ett öppet intervall"
+  ],
+  "1.962": [
+    "Mellan −2 och 2 är summan av avstånden konstant",
+    "Utanför intervallet är summan större än 4"
+  ],
+  "1.963": [
+    "En skärningspunkt uppfyller båda ekvationerna",
+    "En tangent ger en dubbelrot",
+    "Lös villkoret för linjens lutning"
+  ],
+  "1.964": [
+    "Båda sidor måste vara definierade och icke-negativa",
+    "Kvadrera och lös andragradsekvationen",
+    "Förkasta roten som ligger utanför det tillåtna intervallet"
+  ],
+  "4.532": [
+    "Använd triangelns tredje vinkel för att få stigarnas längder",
+    "Jämför vägen via C med den direkta vägen"
+  ],
+  "4.533": [
+    "Bestäm sidan AC med sinussatsen",
+    "Använd två sidor och den mellanliggande vinkeln till arean"
+  ],
+  "4.534": [
+    "Uttryck b med hjälp av a och vinklarna",
+    "Använd att de två sidorna tillsammans är 20"
+  ],
+  "4.535": [
+    "Den längsta sidan ligger mot den största vinkeln",
+    "Använd omkretsen för att bestämma skalfaktorn",
+    "Beräkna sidan mot vinkeln 75°"
+  ],
+  "4.536": [
+    "Sinussatsen ger sinus för vinkeln B",
+    "Både den spetsiga och den trubbiga vinkeln är möjliga"
+  ],
+  "4.537": [
+    "Sinusvärdet för B får inte överstiga 1",
+    "Gränsfallet B = 90° ger den minsta sidan a"
+  ],
+  "4.538": [
+    "Det finns två möjliga vinklar B",
+    "Beräkna den tredje sidan i båda trianglarna",
+    "Välj den triangel som ger störst area"
+  ],
+  "4.539": [
+    "Uttryck basen med hjälp av de lika långa sidorna",
+    "Omkretsen bestämmer sidlängden x",
+    "Beräkna arean med toppvinkeln 40°"
+  ],
+  "4.540": [
+    "Bestäm triangelns inre vinklar",
+    "Beräkna siktlinjen AC med sinussatsen",
+    "Höjden är siktlinjens lodräta del"
+  ],
+  "4.541": [
+    "Bestäm AC i den stora triangeln",
+    "Bisektrisen ger vinklarna i triangeln ACD",
+    "Använd sinussatsen till bisektrisens längd"
+  ],
+  "4.542": [
+    "Uttryck b som en funktion av vinkeln B",
+    "Sinus får sitt största värde vid 90°"
+  ],
+  "4.543": [
+    "Välj den trubbiga lösningen för B",
+    "Bestäm C och därefter sidan c",
+    "Behåll precisionen tills sidlängden är beräknad"
+  ],
+  "4.544": [
+    "Sidförhållandet ger sinus för B",
+    "Den trubbiga lösningen ryms inte i triangeln",
+    "Dra bort A och B från vinkelsumman"
+  ],
+  "4.545": [
+    "Bisektrisen delar vinkeln B i två lika delar",
+    "Beräkna AD i den mindre triangeln"
+  ],
+  "4.546": [
+    "Undersök båda vinklarna med det givna sinusvärdet",
+    "Kontrollera att den trubbiga vinkeln ger en positiv vinkel C",
+    "Räkna endast trianglarna med B > 90°"
+  ],
+  "4.547": [
+    "Sätt in siduttrycken i sinussatsen",
+    "Samla alla termer med x på samma sida",
+    "Isolera x utan att avrunda sinusvärdet"
+  ],
+  "4.548": [
+    "Uttryck b och c med hjälp av sidan a",
+    "Sätt in siduttrycken i triangelns areaformel",
+    "Välj den positiva lösningen för sidlängden"
+  ],
+  "4.549": [
+    "Sätt in sidorna x och x + 3 i cosinussatsen",
+    "Samla termerna till en andragradsekvation",
+    "Välj roten som ger positiva sidlängder"
+  ],
+  "4.550": [
+    "Cosinussatsen kopplar den kända sidan till x",
+    "Välj den positiva roten ur x² = 28"
+  ],
+  "4.551": [
+    "Bestäm vinkeln mellan sidorna 5 och 7",
+    "Använd vinkeln i triangelns areaformel",
+    "Beräkna arean utan att avrunda vinkeln i förtid"
+  ],
+  "4.552": [
+    "Bestäm cosinus för vinkeln vid A",
+    "Medianen delar basen i två lika delar",
+    "Ta den positiva roten för medianens längd"
+  ],
+  "4.553": [
+    "Triangelns inre vinkel är 120°",
+    "Beräkna avståndet med cosinussatsen",
+    "Avståndet är den positiva roten ur 37"
+  ],
+  "4.554": [
+    "Omvandla 20 minuter till en tredjedels timme",
+    "Använd de tillryggalagda sträckorna i cosinussatsen",
+    "Beräkna avståndet mellan båtarna"
+  ],
+  "4.555": [
+    "Bestäm vinkeln mellan kablarna",
+    "Skriv triangelns area på två sätt",
+    "Lös ut mastens höjd"
+  ],
+  "4.556": [
+    "Pythagoras sats ger den nya sidlängden",
+    "Dra bort den ursprungliga längden 6"
+  ],
+  "4.557": [
+    "Beräkna diagonalen AC i den första triangeln",
+    "Använd samma diagonal i triangeln ADC",
+    "Omvandla cosinusvärdet till vinkeln D"
+  ],
+  "4.558": [
+    "Arean bestämmer värdet på x²",
+    "Cosinussatsen ger den tredje sidans kvadrat",
+    "Välj den positiva sidlängden"
+  ],
+  "4.559": [
+    "Bisektrissatsen delar basen i förhållandet 10 : 12",
+    "Bestäm cosinus för vinkeln vid B",
+    "Använd cosinussatsen i triangeln ABD",
+    "Beräkna bisektrisens längd utan mellanavrundning"
+  ],
+  "4.560": [
+    "Kravet på tredje sidan ger ett villkor för cosinus",
+    "Bestäm gränsvinkeln för sidlängden 9",
+    "Välj det minsta hela gradtalet över gränsen"
+  ],
+  "4.561": [
+    "Den största vinkeln ligger mot den längsta sidan",
+    "Samla termerna efter insättning i cosinussatsen",
+    "Förkasta den negativa roten och kontrollera triangeln"
+  ],
+  "4.562": [
+    "Diagonalerna halverar varandra",
+    "Den längsta sidan ligger mot vinkeln 120°",
+    "Ta den positiva roten ur 109"
+  ],
+  "4.563": [
+    "Dela ett helt varv i fem medelpunktsvinklar",
+    "Beräkna en sida med cosinussatsen",
+    "Multiplicera sidlängden med fem"
+  ],
+  "4.564": [
+    "Båda visarna har flyttat sig sedan klockan 2",
+    "Använd vinkeln mellan visarna i cosinussatsen",
+    "Beräkna avståndet mellan visarspetsarna"
+  ],
+  "4.565": [
+    "Beräkna avståndet före och efter vinkeländringen",
+    "Jämför ökningen med det ursprungliga avståndet"
+  ],
+  "4.566": [
+    "Bestäm cosinus för den trubbiga vinkeln A",
+    "Använd den spetsiga yttervinkeln i den rätvinkliga triangeln",
+    "Beräkna det positiva avståndet AH"
+  ],
+  "1.183": [
+    "Sätt de två funktionsuttrycken lika",
+    "Kvadratkomplettera för att få båda x-koordinaterna",
+    "Beräkna y-koordinaten till varje rot"
+  ],
+  "1.233": [
+    "De givna funktionsvärdena ger två ekvationer",
+    "Subtrahera ekvationerna för att bestämma a",
+    "Sätt in a för att bestämma b"
+  ],
+  "1.274": [
+    "Kvadratkomplettera så att minimivärdet syns",
+    "Parabeln ska precis nudda x-axeln",
+    "Kontrollera båda värdena på parametern"
+  ],
+  "1.430": [
+    "Starttidpunkten motsvarar t = 0",
+    "Beräkna modellens startvärde"
+  ],
+  "2.02": [
+    "Potensregeln sänker exponenten i varje term",
+    "Derivera de fyra termerna var för sig",
+    "Samla de tre termer som återstår"
+  ],
+  "2.217": [
+    "Dividera båda termerna i täljaren med x²",
+    "Derivera den negativa potensen med potensregeln",
+    "Skriv derivatan utan negativ exponent"
+  ],
+  "2.539": [
+    "Skriv bråktermen som −4x⁻¹",
+    "Behandla a som en konstant vid deriveringen"
+  ],
+  "2.740": [
+    "Derivatan ger tangentens lutning",
+    "Lutningen ska vara en sjättedel",
+    "Lös ekvationen för det positiva x-värdet"
+  ],
+  "2.744": [
+    "Derivera 1/x som en negativ potens",
+    "Kvadraten i nämnaren gör derivatan negativ även för x < 0"
+  ],
+  "2.812": [
+    "Skriv derivatan i den okända tangentpunkten",
+    "Beräkna samma lutning mellan de två punkterna",
+    "Ekvationen för lutningen bestämmer a",
+    "Beräkna y-koordinaten och kontrollera tangenten"
+  ],
+  "2.825": [
+    "Derivera x + 4/x med potensregeln",
+    "Sök en stationär punkt med positivt x",
+    "Teckenbytet från minus till plus visar ett minimum",
+    "Koppla minimivärdet till en rektangel med area 4"
+  ],
+  "3.16": [
+    "Skriv 2/x² med negativ exponent",
+    "Öka exponenten −2 till −1 och dividera med −1",
+    "Kontrollera att derivatan blir 2/x²",
+    "Kompensera för faktorn 2 i exponenten",
+    "Kontrollera att derivatan blir 3e²ˣ",
+    "Skriv kvadratroten med exponenten 1/2",
+    "Öka exponenten till 3/2 och dividera med 3/2",
+    "Kontrollera att derivatan blir 7√x"
+  ],
+  "3.58": [
+    "Derivatan av skillnaden blir noll",
+    "En derivata som är noll på hela intervallet ger en konstant"
+  ],
+  "3.178": [
+    "Derivatan av skillnaden blir noll",
+    "En derivata som är noll på hela intervallet ger en konstant"
+  ],
+  "3.182": [
+    "Derivera F och jämför koefficienten framför x²"
+  ],
+  "3.194": [
+    "En horisontell tangent innebär F′ = 0",
+    "Sätt in x = −3 och x = 3 i f"
+  ],
+  "3.198": [
+    "Koppla F:s förändring till derivatans tecken",
+    "Ta med möjligheten att derivatan är noll i intervallen",
+    "Teckenbytena visar maximum respektive minimum"
+  ],
+  "3.283": [
+    "Integrera båda termerna med potensregeln",
+    "Välj konstanten till noll och kontrollera derivatan"
+  ],
+  "3.284": [
+    "Skriv båda termerna som potenser",
+    "Integrera varje term och behåll konstanten",
+    "Kontrollera svaret genom derivering"
+  ],
+  "3.355": [
+    "Derivera båda funktionerna",
+    "Samma derivata ger samma ursprungliga funktion",
+    "Skillnaden mellan konstanterna ger grafernas avstånd"
+  ],
+  "3.551": [
+    "Derivera det föreslagna polynomet",
+    "Jämför resultatet med den givna funktionen"
+  ],
+  "3.617": [
+    "Derivera elevens föreslagna funktion",
+    "Jämförelsen visar att konstanttermen 1 saknas",
+    "Lägg till termen vars derivata är 1"
+  ],
+  "3.727": [
+    "En primitiv funktion ska ge x³ − 2x vid derivering",
+    "Kontrollera alternativet med x⁴/4 − x²"
+  ],
+  "3.792": [
+    "Subtraktionen tar bort båda x²-termerna"
+  ],
+  "3.921": [
+    "Samma integrationskonstant försvinner i differensen"
+  ],
+  "3.1016": [
+    "Integrera inflödet för att få volymen",
+    "Använd startvolymen och beräkna volymen efter tre minuter"
+  ],
+  "3.1052": [
+    "Använd värdet F(1) för att bestämma konstanten",
+    "Beräkna F(0) med samma konstant"
+  ],
+  "3.1057": [
+    "G:s graf ligger tre enheter över F:s graf"
+  ],
+  "3.1063": [
+    "Bestäm en allmän primitiv funktion",
+    "Beräkna skillnaden mellan värdena vid x = 2 och x = 1"
+  ],
+  "3.1106": [
+    "Derivera läget för att få hastigheten",
+    "Beräkna hastigheten efter en sekund"
+  ],
+  "4.52": [
+    "Sinussatsen ger ett omöjligt sinusvärde",
+    "Ett sinusvärde över 1 utesluter triangeln"
+  ]
+}
