@@ -317,3 +317,23 @@ Kontroller:
 - Självrättningen testades med 16 svar, och alla gav väntat resultat.
   - Både faktoriserad och utvecklad form godtas.
   - Fel tecken eller fel koefficient underkänns.
+
+### 16. Trigonometriska tillämpningar (Ma3c): 4 kort, 4.597–4.600
+
+| ID | Familj | Innehåll |
+|---|---|---|
+| 4.597 | Areor i tillämpningar | Fyrhörnig tomt: diagonalen ger en rätvinklig triangel och en triangel som löses med cosinussatsen, 1 006 m² (figur) |
+| 4.598 | Avstånd och triangulering | Avståndet till en fyr efter 5,0 km, 3,89 km (figur) |
+| 4.599 | Avstånd och triangulering | Flyghöjden ur två höjdvinklar, 882 m (figur) |
+| 4.600 | Välja metod | Två vinklar och den mellanliggande sidan: beräkna C och använd sinussatsen (flerval) |
+
+Kontroller:
+
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- 4 räkneled radbröts.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 8 svar, och alla gav väntat resultat.
+- I 4.598 finns en kvarstående ANGLE_ARC_DIRECTION_MISMATCH från SVG-granskaren. Det är en falsk träff:
+  - Vinkeln 70° mäts mellan kursens fortsättning och riktningen mot fyren, och bågen ligger rätt.
+  - Tre linjer möts i hörnet, och granskaren väljer det inre vinkelparet.
+  - I 4.599 försvann motsvarande varning när marklinjen kortades till sträckan AB.
