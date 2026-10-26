@@ -223,3 +223,41 @@ Kontroller:
 - SVG-granskaren ger 0 fynd.
 - Validatorn ger 224 fynd både före och efter ändringen.
 - Självrättningen testades med 11 svar, och alla gav väntat resultat. Vinklarna godtas i valfri ordning och med eller utan gradtecken.
+
+## Omgång 2 (användarens beslut 2026-10-26: fyll Ma3c där det är tunt)
+
+En räkning per synligt kort visar att 17 kort i Ma3c har färre än 8 nivå 3-uppgifter. Ma2a:s ”mer om andragradsekvationer” finns redan i det gemensamma kortet ”Andragradsekvationer – tillämpningar och fördjupning”, som har 15 nivå 3-uppgifter. Där behövs ingen ändring.
+
+### 10. Trigonometri i rätvinkliga trianglar: 6 kort, 4.585–4.590
+
+| ID | Innehåll |
+|---|---|
+| 4.585 | Stegens vinkel och höjd: 68,9° och 4,66 m |
+| 4.586 | Båten närmar sig klippan, och sänkningsvinkeln ändras från 12° till 20°. Båten kör 78,3 m (figur) |
+| 4.587 | Höjden i en likbent triangel med basen 10 cm och toppvinkeln 40°, 13,7 cm (figur) |
+| 4.588 | Exakta kateter i en 30°-triangel: 4 och 4√3 (figur) |
+| 4.589 | Lutningen 8 % ger 4,6° och 199 m höjd på 2,5 km |
+| 4.590 | Vinkeln mellan rymddiagonalen och bottenytan i ett rätblock, 21,8° (figur) |
+
+### 11. Sinussatsens två fall (Ma3c): 6 kort, 4.591–4.596
+
+| ID | Innehåll |
+|---|---|
+| 4.591 | Ett staket når gränsen i två punkter: AB = 4,3 eller 10,4 m (figur) |
+| 4.592 | Intervallet 7,66 < a < 10 ger två trianglar |
+| 4.593 | Trubbig vinkel A ger exakt en triangel (flerval) |
+| 4.594 | Båda möjliga vinklarna C, 112,5° och 17,5° |
+| 4.595 | När a är lika med höjden blir sin B = 1 och B = 90° |
+| 4.596 | Arean av den större av två trianglar, 26,9 cm² |
+
+Kontroller:
+
+- Facit följer 1.116. Facit och ledtråd renderades och lästes igenom.
+- Figurerna rättades i flera omgångar:
+  - Klippans topp hamnade på fel nivå.
+  - ”40°” låg på höjdlinjen.
+  - ”8 cm” och ”v” låg för nära linjerna.
+- SVG-granskaren ger 0 varningar.
+- 5 räkneled radbröts.
+- Validatorn ger 224 fynd både före och efter ändringen.
+- Självrättningen testades med 20 svar, och alla gav väntat resultat. Både 4√3 och 4sqrt(3) godtas, och 6,93 underkänns där frågan kräver exakt svar.

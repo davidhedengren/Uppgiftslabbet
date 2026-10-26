@@ -5,7 +5,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgiftermato1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMATO1));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const r=(p,a,b)=>Array.from({length:b-a+1},(_,i)=>`${p}.${a+i}`);
-const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584)};
+const OMR={deriveringsregler:r(2,1259,1264),derivata_a_x:r(2,1265,1270),forkorta_rationella:r(1,965,970),rationella_uttryck:r(1,971,976),problemlosning_derivata:r(3,1246,1251),integral_area:r(3,1252,1257),areasatsen:r(4,567,572),enhetscirkeln:r(4,573,578),trig_ekvationer:r(4,579,584),trig_ratvinkliga:r(4,585,590),sinussatsen_tva_fall:r(4,591,596)};
 const v=x=>JSON.stringify(x.rättSvar);
 for(const [omr,ids] of Object.entries(OMR))test(`${omr}: ${ids.length} nivå 3-kort med facitkraven uppfyllda`,()=>{
   for(const id of ids){const t=get(id);assert.equal(t.omr,omr,id);assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);assert.equal(t.spel,true,id);
@@ -96,4 +96,22 @@ test('trig_ekvationer: lösningarna prövas i ekvationerna',()=>{
   assert.equal(get('4.583').alternativ.find(a=>a.ratt).txt,'4');
   const [x6,k6]=get('4.584').rättSvar;nara(S(x6),S(40),'4.584');assert.ok(Math.abs(k6-S(40))<=0.005);
   for(const id of r(4,579,584))for(const x of [get(id).rättSvar].flat())if(typeof x==='number'&&x>2)assert.ok(x>=0&&x<360,id);
+});
+const G=v=>v*Math.PI/180,SIN=v=>Math.sin(G(v)),COS=v=>Math.cos(G(v)),TAN=v=>Math.tan(G(v)),DEG=x=>x*180/Math.PI;
+const inom=(u,i,x)=>{const a=[u.rättSvar].flat()[i],t=[u.tolerans].flat()[i]??0;assert.ok(Math.abs(a-x)<=t+1e-9,`${u.id}[${i}]: ${a} ≠ ${x}`);};
+test('trig_ratvinkliga: svaren räknas om',()=>{
+  const u1=get('4.585');inom(u1,0,DEG(Math.acos(1.8/5)));inom(u1,1,Math.sqrt(25-1.8**2));
+  inom(get('4.586'),0,40/TAN(12)-40/TAN(20));inom(get('4.587'),0,5/TAN(20));
+  assert.deepEqual(get('4.588').rättSvar,['4','4*sqrt(3)']);nara(8*SIN(30),4,'4.588');nara(8*COS(30),4*Math.sqrt(3),'4.588');
+  const u5=get('4.589');inom(u5,0,DEG(Math.atan(0.08)));inom(u5,1,2500*Math.sin(Math.atan(0.08)));
+  inom(get('4.590'),0,DEG(Math.atan(20/Math.hypot(40,30))));
+});
+test('sinussatsen_tva_fall: svaren räknas om',()=>{
+  const B=DEG(Math.asin(9*SIN(35)/6)),c=[180-35-B,B-35].map(C=>6*SIN(C)/SIN(35)).sort((a,b)=>a-b),u1=get('4.591');
+  [...u1.rättSvar].sort((a,b)=>a-b).forEach((x,i)=>assert.ok(Math.abs(x-c[i])<=0.1,'4.591'));
+  const u2=get('4.592');inom(u2,0,10*SIN(50));assert.equal(u2.rättSvar[1],10);
+  assert.equal(get('4.593').alternativ.find(a=>a.ratt).txt,'Det finns exakt en triangel');assert.ok(110+(180-DEG(Math.asin(8*SIN(110)/12)))>180);
+  const B4=DEG(Math.asin(8*SIN(25)/5)),C4=[180-25-B4,B4-25].sort((a,b)=>a-b),u4=get('4.594');[...u4.rättSvar].sort((a,b)=>a-b).forEach((x,i)=>assert.ok(Math.abs(x-C4[i])<=0.1,'4.594'));
+  nara(12*SIN(30)/6,1,'4.595');assert.equal(get('4.595').rättSvar,90);
+  const B6=DEG(Math.asin(9*SIN(32)/6));inom(get('4.596'),0,27*SIN(180-32-B6));
 });
