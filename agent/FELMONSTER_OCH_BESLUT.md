@@ -2811,6 +2811,14 @@ Uppföljning med figurer: [skuggade areor](MA4_SKUGGADE_AREOR_2026-10-27.md).
 3.212 visar differensen mellan den övre och undre grafen. De befintliga
 figurerna stämmer med lösningarna och har bevarats.
 
+## Ma4: enheter och avrundning i cirkelsektorer
+
+[Cirkelsektorgranskningen](MA4_SEKTORFACIT_2026-10-27.md) visar metod och
+resultat för 1.64, 1.167 och 1.172. 1.64 b begär en decimal och har noll
+tolerans kring det avrundade målvärdet 11,1. 1.167 och 1.172 anger cm/cm²
+i svarsmetadata så att uttryck med rätt enhet kan godtas. Fri avrundning
+behålls där uppgiften inte anger någon precision.
+
 ## Ma4: flöde som volymändring
 
 I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
