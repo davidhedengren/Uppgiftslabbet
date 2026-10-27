@@ -2814,6 +2814,11 @@ nettovolym ska både stationära punkter och intervallets ändpunkter jämföras
 3.248 redovisar nu alla kandidater. 3.106 har fullprecision på det numeriska
 rättningsmålet, och korrekt avrundning och svar med enhet är testade.
 
+Uppföljning: [flödesuppgifter med delar](MA4_FLODE_DELAR_2026-10-27.md).
+3.209 a får inte glömma startvolymen; 3.209 b och 3.225 b använder
+medelvärde över respektive intervall. Fullprecision lagras för 3.209 a.
+Utan uttryckligt precisionskrav gäller appens fria avrundning.
+
 ## Ma4: motivera maximum och minimum
 
 Se [sex optimeringsfacit](MA4_OPTIMERINGSFACIT_2026-10-27.md). En stationär
