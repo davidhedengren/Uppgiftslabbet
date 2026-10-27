@@ -46,7 +46,7 @@ test('Fem jämförelser: partikel, inträdesriktning och talvärden',()=>{
 });
 test('Kondensatorer: enheter, prefix, svar och tillåten miniräknare',()=>{
  const expected={'3.115':22*9,'3.116':100*5,'3.117':470*12,'3.118':360/12,'3.119':150/25,'3.120':.5*220e-6*12**2*1000,'3.121':.5*47e-6*24**2*1000,'3.122':Math.sqrt(2*.020/100e-6)};
- for(const [id,value] of Object.entries(expected)){const p=q(fy2,id);near(p.rättSvar,value);assert.equal(p.miniräknare,true);assert.equal(p.geogebra,false);assert.match(p.t,/\(Svara i /);assert.match(p.t,/<svg/);assert.ok(!/facit-steglista/.test(p.s));}
+ for(const [id,value] of Object.entries(expected)){const p=q(fy2,id);near(p.rättSvar,value);assert.equal(p.miniräknare,true);assert.equal(p.geogebra,false);assert.ok(/\(Svara i /.test(p.t)||p.svarEnhet);assert.match(p.t,/<svg/);assert.ok(!/facit-steglista/.test(p.s));}
 });
 test('Avancerad resonans förblir tillgänglig för lärare men väljs inte i elevträning',()=>{
  for(const id of ['4.30','4.153','4.32','4.34','4.490']){const p=q(matf,id);assert.equal(p.spel,false);assert.equal(p.traningsniva,5);assert.match(p.t,/Fördjupning utanför/);assert.equal(p.geogebra,true);assert.equal(p.miniräknare,true);}

@@ -24,14 +24,14 @@ test('Omgjorda kort: facit räknas om',()=>{
   assert.deepEqual(get('2.161').rättSvar,[340,1020]);
   assert.deepEqual(get('2.160').rättSvar,['motfas',255,'minimum']);
   assert.deepEqual(get('2.157').rättSvar,[[4,5,1],'minimum']);assert.equal(get('2.157').spelDelar[0].svarsstruktur,'ordnad');
-  for(const id of ['2.154','2.157','2.160','2.162']) for(const d of get(id).spelDelar) assert.match(d.t,/\(Svara [^)]*\.\)<\/p><\/div>$/,`${id}${d.etikett}`);
+  for(const id of ['2.154','2.157','2.160','2.162']) for(const d of get(id).spelDelar) assert.ok(/\(Svara [^)]*\.\)<\/p><\/div>$/.test(d.t)||[].concat(get(id).svarEnhet).some(Boolean),`${id}${d.etikett}`);
 });
 
 test('28 nya kort i fysikformat med figur',()=>{
   assert.equal(nya.length,28);const niv={};
   for(const t of nya){niv[t.traningsniva]=(niv[t.traningsniva]||0)+1;
     assert.match(t.t,/<svg/,t.id);assert.match(t.poang,/^\(\d\/\d\/\d\)$/,t.id);assert.equal(t.miniräknare,true,t.id);
-    assert.match(utanSvg(t.t),/\(Svara [^)]*\.\)<\/p>$/,t.id);
+    assert.ok(/\(Svara [^)]*\.\)<\/p>$/.test(utanSvg(t.t))||[].concat(t.svarEnhet).some(Boolean)||/Hur många/.test(t.t),t.id);
     assert.doesNotMatch(utanSvg(t.t),/340 m\/s|ljudhastighet|ljudfart/i,t.id);
     if(t.svarVardesiffror!=null) assert.doesNotMatch(utanSvg(t.t),/decimal|avrund|värdesiffr/i,t.id);
     if(t.svarstyp==='kort_text') assert.match(t.rättSvar,/^(maximum|minimum)$/,t.id);

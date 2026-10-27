@@ -14,7 +14,7 @@ test('47 kort i fysikformat, inga formler eller konstanter i frågan',()=>{
     assert.equal(t.miniräknare,true,t.id);assert.match(t.poang,/^\(\d\/\d\/\d\)$/,t.id);assert.ok(t.traningsniva>=1&&t.traningsniva<=3,t.id);
     assert.doesNotMatch(utanSvg(t.t),/5\s*\\?lg|10\^|2,898|5,67|4,74|3,26|206\s?265|\\sigma|\\lambda_\{?max/,t.id);
     if(t.svarstyp==='alternativ')assert.equal(t.alternativ.filter(a=>a.ratt).length,1,t.id);
-    else assert.match(utanSvg(t.t),/\(Svara [^)]*\.\)<\/p>$/,t.id);
+    else assert.ok(/\(Svara [^)]*\.\)<\/p>$/.test(utanSvg(t.t))||[].concat(t.svarEnhet).some(Boolean),t.id);
     if(/HR-diagram/.test(t.t)&&/<svg/.test(t.t))assert.match(t.t,/verkliga stjärnor/,t.id);
   }
   assert.deepEqual(per,{farg_ljusstyrka:19,magnituder:12,avstandsmatning:11,stjarnornas_utveckling:5});

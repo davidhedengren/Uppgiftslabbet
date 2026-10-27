@@ -15,7 +15,7 @@ test('48 spelbara kort på nivå 1–2 med facitkraven uppfyllda',()=>{
     assert.match(t.s,/class="facit-metod"/,id);assert.match(t.s,/class="facit-svar"/,id);
     for(const m of (t.t+t.s+t.ledtrad).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g))assert.doesNotMatch(m[1]??m[2],/[<>]/,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);for(const a of t.alternativ)if(!a.ratt)assert.ok(a.kommentar,id);}
-    else assert.match(t.t,/\(Svara[^)]*\)/,id);}
+    else assert.ok(/\(Svara[^)]*\)/.test(t.t)||[].concat(t.svarEnhet).some(Boolean)||t.svarVardesiffror!=null,id);}
   assert.deepEqual(per,{vaxelstrom_spole_kondensator:8,kast_elfalt:8,elektriska_falt:8,de_broglie:8,atomstruktur:8,em_vagor:8});
   assert.deepEqual(niv,{1:25,2:23});
   const v=x=>JSON.stringify(x.rättSvar);

@@ -44,7 +44,7 @@ test('Nya facit räknas om och toleranserna tål olika formelsamlingar',()=>{
 test('Rapporterade kort',()=>{
   for(const id of ['5.314','5.324'])assert.match(get(id).t,/<svg[\s\S]*verkliga stjärnor/,id);
   assert.equal(get('5.323').traningsniva,3);assert.match(get('5.323').ledtrad,/R\^2/);
-  const p=get('2.498');assert.doesNotMatch(p.t,/2\\pi\\sqrt/);assert.match(p.spelDelar[1].t,/pendeln vara för att få perioden 1,0 s på månen\? \(Svara i m\.\)/);
+  const p=get('2.498');assert.doesNotMatch(p.t,/2\\pi\\sqrt/);assert.match(p.spelDelar[1].t,/pendeln vara för att få perioden 1,0 s på månen\?/);
 });
 
 test('Enheten heter AU, inte AE, och kapitel 5 har inga självrättade kort',()=>{

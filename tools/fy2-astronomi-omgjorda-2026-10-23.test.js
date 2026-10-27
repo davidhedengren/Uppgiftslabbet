@@ -23,7 +23,7 @@ test('Delkort har egna rättningsfält och svarsinstruktion',()=>{
     assert.equal(t.rättSvar.length,t.spelDelar.length,t.id);
     t.spelDelar.forEach((d,i)=>{
       if(Array.isArray(d.alternativ)){assert.equal(d.alternativ.filter(a=>a.ratt).length,1,t.id+d.etikett);assert.equal(t.rättSvar[i],d.alternativ.find(a=>a.ratt).txt,t.id+d.etikett);}
-      else if(['5.2','5.16','5.19','5.20','5.25','5.27','5.37','5.49','5.53','5.54','5.349','5.350','5.351','5.352'].includes(t.id))assert.match(d.t,/\(Svara [^)]*\.\)/,t.id+d.etikett);
+      else if(['5.2','5.16','5.19','5.20','5.25','5.27','5.37','5.49','5.53','5.54','5.349','5.350','5.351','5.352'].includes(t.id))assert.ok(/\(Svara [^)]*\.\)/.test(d.t)||[].concat(t.svarEnhet)[i],t.id+d.etikett);
     });
   }
 });
@@ -45,7 +45,7 @@ test('Omgjorda kort: facit räknas om',()=>{
 
 test('Nya kort: facit räknas om och toleransen tål M☉ = 4,83 och T☉ = 5 778 K',()=>{
   const nya=B.filter(t=>t.kap===5&&+t.id.split('.')[1]>=447&&+t.id.split('.')[1]<=463);assert.equal(nya.length,17);
-  for(const t of nya){assert.match(t.t.replace(/<svg[\s\S]*?<\/svg>/g,''),/\(Svara [^)]*\.\)<\/p>|<\/table><p>Vilken|Vilken ordning|störst luminositet\?<\/p>/,t.id);assert.ok(t.traningsniva>=1,t.id);}
+  for(const t of nya){assert.ok(/\(Svara [^)]*\.\)<\/p>|<\/table><p>Vilken|Vilken ordning|störst luminositet\?<\/p>/.test(t.t.replace(/<svg[\s\S]*?<\/svg>/g,''))||[].concat(t.svarEnhet).some(Boolean),t.id);assert.ok(t.traningsniva>=1,t.id);}
   const kedja=(p,m,T,Msol=4.74,Tsol=5772)=>{const d=1/p,M=m+5-5*Math.log10(d),L=10**(0.4*(Msol-M)),R=Math.sqrt(L)*(Tsol/T)**2;return [d,M,L,R];};
   const inom=(t,i,x)=>Math.abs(x-t.rättSvar[i])<=t.tolerans[i];
   for(const [id,p,m,T] of [['5.447',0.0889,-0.05,4290]]){const t=get(id);kedja(p,m,T).forEach((x,i)=>assert.ok(nara(x,t.rättSvar[i]),id+i));

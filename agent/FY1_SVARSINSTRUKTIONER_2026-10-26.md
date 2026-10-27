@@ -63,3 +63,31 @@ Delkorten 3.155 c, 6.445 b och 3.368 a är också provade.
 
 - Nytt test: `tools/fy1-svarsinstruktioner-2026-10-26.test.js`.
 - 25 äldre testfiler krävde ”(Svara …” eller precisionstext i frågan. De godtar nu en angiven enhet (`svarEnhet`) eller `svarVardesiffror` i stället. Där de krävde precisionstexten kontrollerar de nu värdet i `svarVardesiffror`.
+
+## Tillägg 2026-10-27: Fy2 (uppgifter2.js)
+
+Användaren: ”gör samma sak där”. Samma skript och regler användes.
+
+Fy2 hade redan få avrundningskrav. De flesta Fy2-kort har `svarVardesiffror` sedan tidigare, och inga handkalibrerade värden skrevs över.
+
+| Mått | Antal |
+|---|---|
+| Kort | 1 765 |
+| Ändrade kort | 173 |
+| Borttagna avrundningskrav | 28 |
+| Borttagna enhetsangivelser | 174 |
+| Enhetsangivelser kvar | 211 (bland annat nm, pc, km/s, procent, µT och år) |
+
+”(Svara med ett tal.)”, 111 gånger, står kvar. Det talar om att svaret ska vara ett tal och inte text, vilket gör det till ett svarsformat och inte ett avrundningskrav. Specialformuleringar som ”Svara i miljoner år”, ”Svara med maximum eller minimum” och ”Svara i varv per sekund” är orörda.
+
+Urval genomläst (16 kort). Provat i appen:
+
+| Kort | Godkänt | Underkänt |
+|---|---|---|
+| 3.556 | 2,5·10⁻⁹; 2,5 ns; 3·10⁻⁹ | 2,6·10⁻⁹ |
+| 3.472 | 10; 10 A | 11 |
+| 3.529 (antal varv) | 100 | 99 |
+| 2.608 | 0,68; 0,7 | 0,69 |
+| 4.519 | 3,3·10⁻¹⁰; 3,31·10⁻¹⁰ | 3,4·10⁻¹⁰ |
+
+Sex Fy2-testfiler godtar nu en angiven enhet (`svarEnhet`) i stället för en svarsinstruktion i frågan. Antalsfrågor (”Hur många …”) godtas utan heltalsinstruktion. Hela testsviten är grön (1 060 tester).
