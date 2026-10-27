@@ -2755,3 +2755,11 @@ har bara sin egen lösning. Långa formler radbryts utan ändrad matematik.
 Skydd: konsumentens `felrapporter-2026-10-26-flow.browser.cjs`,
 `felrapporter-2026-10-26.cases.json` och båda apparnas motsvarande browserharness.
 Den tidigare 15:31-rättningens figurer, flerval och fysikprecision ska bevaras.
+
+## Ma4: felaktig generell facittext i komplexa tal
+
+Ma4 4.322 hade råd om förändringsfaktor och tid noll trots att uppgiften
+handlar om avstånd mellan komplexa tal. Facit är omskrivet och träningsnivån
+höjd till 5. Se [felloggen 27 oktober 17:15](FELRAPPORTER_2026-10-27_1715.md)
+för kontrollen och sju liknande uppgifter som ännu behöver granskas. Dra inte
+slutsatsen att deras matematiska svar är fel bara utifrån standardtexten.
