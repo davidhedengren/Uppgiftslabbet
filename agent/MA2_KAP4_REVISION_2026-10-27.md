@@ -237,3 +237,12 @@ Ingen figur behövde ändras.
   - 4.75 visar kommentaren till det felaktiga alternativet.
 - **Validatorn:** Ma2 ger 86 fynd, mot 87 före etappen.
 - **Test:** `tools/ma2-kap4-standardavvikelse-2026-10-27.test.js` täcker nu hela området. Alla Ma2-tester går igenom (213/213).
+
+### Etapp 4b: regressionsrättning
+
+Hela testsviten (inte bara ma2-*) visade fyra äldre krav som etapp 4b bröt. De är återställda:
+- **4.302 b:** meningen ”Om spridningen redan är noll förblir den noll.” finns kvar (felrapport 2026-10-11).
+- **4.21, 4.43, 4.56 b:** steget säger ”Alla avstånd till medelvärdet multipliceras med …” (felrapport 2026-10-16).
+- **4.283:** kvadratsummorna visas som 19 · 25 och 29 · 25, och Sx som √(2400/49) (statistik-sx 2026-10-14).
+
+Bara dessa fem kort skiljer sig från den pushade etappen. Hela sviten går igenom.
