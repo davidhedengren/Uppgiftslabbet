@@ -2798,6 +2798,14 @@ trots att frågan bad om cm²/år. Lösningen använder nu 2700π cm²/år.
 Enheter ska kontrolleras mot den faktiska frågan, även när facitets tal är
 ekvivalent efter omräkning. Generiska råd om vinklar har tagits bort.
 
+## Ma4: motivera maximum och minimum
+
+Se [sex optimeringsfacit](MA4_OPTIMERINGSFACIT_2026-10-27.md). En stationär
+punkt är inte i sig ett bevis för ett extremvärde: kontrollera derivatans
+tecken, andra derivatan eller hela det tillåtna intervallet. I 2.205 används
+den beräknade roten som numeriskt rättningsmål. 2.131 och 2.205 har samma
+lådkontext, och 2.131 är avstängd från ordinarie spelträning. Bevara ID:n.
+
 ## Ma2 kap 4: statistikfacit får steglista med rubriker, 2026-10-27
 
 Testerna från 2026-10-13 (`ma2-statistik-matt`, `ma2-statistik-referenser`)
