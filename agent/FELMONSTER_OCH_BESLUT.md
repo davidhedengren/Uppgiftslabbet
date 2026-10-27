@@ -2763,3 +2763,9 @@ handlar om avstånd mellan komplexa tal. Facit är omskrivet och träningsnivån
 höjd till 5. Se [felloggen 27 oktober 17:15](FELRAPPORTER_2026-10-27_1715.md)
 för kontrollen och sju liknande uppgifter som ännu behöver granskas. Dra inte
 slutsatsen att deras matematiska svar är fel bara utifrån standardtexten.
+
+Uppföljning: [Ma4-facit 27 oktober](MA4_FACIT_KOMPLEXA_TAL_2026-10-27.md)
+redovisar de sju och fem ytterligare uppgifter. Polära svaren i 4.197 och
+4.198 behöver både `polar` och en svarsträng som parsern kan läsa; de
+tidigare LaTeX-strängarna kunde underkänna lagrade korrekta svar. Behåll
+polär form som formkrav och de befintliga reglerna för reella slutsvar.
