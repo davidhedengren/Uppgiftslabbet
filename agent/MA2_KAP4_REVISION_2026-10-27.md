@@ -182,3 +182,23 @@ Ingen figur behövde ändras.
   - 4.296 har en ritdel och visar därför ”Jämför med facit” med det nya facit, som tidigare.
 - **Validatorn:** Ma2 ger 87 fynd, mot 98 före etappen. Tio figurer fick tillgänglighetsbeskrivning och en exakt dubblett försvann.
 - **Test:** `tools/ma2-kap4-ladagram-2026-10-27.test.js` faller på den gamla banken och går igenom på den nya. Alla Ma2-tester går igenom (205/205).
+
+## Etapp 4a: standardavvikelse, kort med delar (29 kort)
+
+**Vad som ändrades**
+- **Facit med rubriker:** 4.328–4.351, 4.364–4.366, 4.371 och 4.372 hade genererade facit i löptext, till exempel ”Det finns 6 värden … Kvadrera avvikelserna …”. De har nu en rubrik per steg.
+  - Beräkningarna (medelvärde, kvadrerade avvikelser med insatta tal, kvadratsumma och Sx med n − 1) byggs ur datan med `sx-hjalp.js`.
+  - Rubriker och ledtrådar är skrivna för varje kort, till exempel ”Kvadrerade avvikelser från 2 minuters försening” och ”Q1 ur de fyra kortaste delarna”.
+- **4.338:** facit skrev ”2−−0,5”. Nu står det 2 − (−0,5) = 2,5.
+- **Tusental** skrivs med tunt mellanrum, till exempel 115 600.
+- **Histogramkorten** 4.365 och 4.366 säger nu uttryckligen att mittpunkterna ger en uppskattning, som `ma2-statistik-referenser` kräver.
+- **Ledtrådar:** den gemensamma ledtråden ”Räkna upprepade värden med sin frekvens och välj Sx i GeoGebra.” fanns i 20 kort. Varje kort har nu en egen huvudledtråd, och varje delkort har en egen ledtråd.
+
+**Kontroll**
+- Svarsraderna jämfördes automatiskt med rättSvar, och alla tal stämmer.
+- Testet kontrollerar dessutom att varje Sx i facit är √(kvadratsumman/(n − 1)).
+- Facit renderades och lästes igenom.
+- **Självrättning:**
+  - 4.338 ger [true, true, true, true, false] vid fel kvartilavstånd.
+  - 4.344 godtar Sx = 0.
+- **Test:** `tools/ma2-kap4-standardavvikelse-2026-10-27.test.js`. Alla Ma2-tester går igenom (209/209).
