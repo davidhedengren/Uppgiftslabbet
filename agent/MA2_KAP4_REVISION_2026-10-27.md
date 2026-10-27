@@ -137,3 +137,48 @@ Ingen figur behövde ändras.
   - 4.22 visar kommentaren till det felaktiga alternativet.
 - **Validatorn:** Ma2 ger 98 fynd, mot 99 före etappen.
 - **Test:** `tools/ma2-kap4-kvartiler-2026-10-27.test.js` faller på den gamla banken och går igenom på den nya. Alla Ma2-tester går igenom (202/202).
+
+## Etapp 3: lådagram (69 kort)
+
+**Figurer**
+- **Tio lådagram är omritade** med samma generator som de nyare korten. Alla tal på axeln är utskrivna, och figurerna har ljust rutnät, typsnitt i läsbar storlek och tillgänglighetsbeskrivning.
+  - 4.03, 4.12, 4.18, 4.42, 4.67 och 4.88 hade en mall med mycket liten text, och bara vartannat skalstreck hade ett tal.
+  - 4.82, 4.108 och 4.210 hade gamla småfigurer.
+  - 4.209 hade samma figur som 4.210. Den har nu egna värden (3, 7, 10, 15, 19) och samma svar som förut.
+- **Kontroll av värdena:** alla värden lästes ut ur de gamla figurerna med ett skript (`lasbox.js`). De nya figurerna visar samma femtal, och testet läser tillbaka dem.
+- **Övriga figurer stämmer mot facit:** 4.265–4.278, 4.296, 4.305, 4.316, 4.356–4.362 och S-serien kontrollerades visuellt.
+
+**Rättade fel**
+- **4.82:** exempelmaterialet 2, 3, 5, 5, 6, 8, 10, 10, 11 ger Q3 = 10, inte 9. Nytt material: 2, 3, 5, 5, 6, 7, 8, 10, 11.
+- **4.165:** exempelmaterialet 2, 4, 6, 7, 8, 10, 12, 14, 18 ger Q3 = 13, inte 11. Nytt material: 2, 4, 6, 7, 8, 9, 10, 12, 18.
+- **4.103:** frågan handlade om klasser men alternativen om grupper. Alternativen följer nu texten.
+
+**Facit och texter**
+- Alla 50 facit utan rubriker och 13 kort med delkort är omskrivna, och 6.11 ingår. Rubrikerna är skrivna för varje kort, till exempel ”Kallaste 12 °C och varmaste 31 °C” och ”Föreningarnas lådor är lika breda”.
+- Generiska rubriker i S-serien har gjorts specifika i 16 kort. Exempel: ”Skillnad”, ”Medianer”, ”Spridning” och ”Antal”.
+- **Mallkorten** har fått sammanhang:
+  - 4.03: lästid;
+  - 4.12: sms;
+  - 4.18: temperatur;
+  - 4.42: glosförhör;
+  - 4.67: armhävningar;
+  - 4.88: datorspel;
+  - 4.194: boklån;
+  - 4.209: cykeltid;
+  - 4.210: pluggtid;
+  - 4.103: tankenöt.
+- **4.194 och 4.209** hade samma text, ”Läs av medianen i lådagrammet.”, och har nu olika frågor.
+- **Flerval:** alla alternativ har kommentarer. Det gäller 4.52, 4.103, 4.108, 4.166, 4.245, 4.247, 4.269, 4.272, 4.274, 4.275 och 4.277.
+- **Ledtrådar:** generiska ledtrådar är ersatta i 4.42, 4.67, 4.88, 4.103, 4.108, 4.118, 4.165, 4.166, 4.172, 4.316 och 4.360–4.362.
+  - Exempel: ”Läs av medianlinjen … whiskrarnas ändpunkter …”, ”Använd femtals-sammanfattningen” och ”Vilken information i tabellen …”.
+  - ”Whiskrar” heter nu ”morrhår”, som i resten av kapitlet.
+
+**Kontroll**
+- Facit, ledtråd och alternativ i alla 69 kort renderades och lästes igenom.
+- **Självrättning i Kunskapsgymmet:**
+  - 4.03 ger [true, false, true] vid fel kvartilavstånd.
+  - 4.209 godtar 10.
+  - 4.103 visar kommentaren till det felaktiga alternativet.
+  - 4.296 har en ritdel och visar därför ”Jämför med facit” med det nya facit, som tidigare.
+- **Validatorn:** Ma2 ger 87 fynd, mot 98 före etappen. Tio figurer fick tillgänglighetsbeskrivning och en exakt dubblett försvann.
+- **Test:** `tools/ma2-kap4-ladagram-2026-10-27.test.js` faller på den gamla banken och går igenom på den nya. Alla Ma2-tester går igenom (205/205).
