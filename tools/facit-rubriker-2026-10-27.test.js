@@ -4,7 +4,7 @@
    inget facit sakna rubriker eller ha allmänna rubriker. Se agent/FACIT_RUBRIKER_2026-10-27.md. */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const FÄRDIGA={
-  'uppgifterma1.js':['tal_rakneordning'],
+  'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 const GENERISK=/^(Steg \d+|Lös ekvationen|Lös|Förenkla|Beräkna|Svar|Derivera|Sätt in|Faktorisera|Multiplicera ut|Kontrollera|Metod)\.?$/i;
 function brister(s){
