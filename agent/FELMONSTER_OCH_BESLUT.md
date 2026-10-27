@@ -2806,6 +2806,11 @@ nu om arean och säger att eleven börjar med punkterna. Facit visar båda
 koordinaterna och beräkningen. Acceptera avrundade svar när inget exaktkrav
 anges och bevara tidigare bild- och urvalsbeslut för 3.64 och 3.71.
 
+Uppföljning med figurer: [skuggade areor](MA4_SKUGGADE_AREOR_2026-10-27.md).
+3.31 visar varför en negativ integral måste byta tecken för geometrisk area;
+3.212 visar differensen mellan den övre och undre grafen. De befintliga
+figurerna stämmer med lösningarna och har bevarats.
+
 ## Ma4: flöde som volymändring
 
 I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
