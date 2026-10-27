@@ -273,7 +273,7 @@
 - **Figurer:** figurerna följer måtten, och vinkelbågar och proportioner mäts i testerna.
 - **Texter:** dubbletter och nästan identiska kort är varierade.
 - **Facit:** varje steg har en rubrik.
-- **Tappade avgränsare:** LaTeX-avgränsare har återställts i 34 kort. Matf1 har kvar samma fel i 19 kort.
+- **Tappade avgränsare:** LaTeX-avgränsare har återställts i 34 kort. Samma fel i 19 Matf1-ledtrådar rättades 2026-10-26 (se FELMONSTER_OCH_BESLUT.md).
 - **Nya verktyg i scratchpad:**
   - `vfig.js`, för vinkelfigurer med kollisionskontroll;
   - `cirk`, i `rv-revision.js`;
