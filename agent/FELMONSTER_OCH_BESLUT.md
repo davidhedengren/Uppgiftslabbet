@@ -2831,6 +2831,10 @@ Uppföljning: [sju fler geometriska villkor](MA4_KOMPLEXA_VILLKOR_2026-10-27.md)
 Faciten visar avståndsekvationer, kvadratkomplettering eller skärning mellan
 kurvor. För maximum i 4.306 visas både övre gräns och ett värde som når den.
 
+Uppföljning: [trianglar och avbildning](MA4_KOMPLEXA_TRIANGULAR_2026-10-27.md).
+4.113 visar avstånd och area i respektive del; 4.294 visar hur differensen
+mellan två bilder förändras, vilket motiverar längdfaktorn \(\sqrt2\).
+
 ## Ma4: flöde som volymändring
 
 I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
