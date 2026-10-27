@@ -2806,6 +2806,14 @@ nu om arean och säger att eleven börjar med punkterna. Facit visar båda
 koordinaterna och beräkningen. Acceptera avrundade svar när inget exaktkrav
 anges och bevara tidigare bild- och urvalsbeslut för 3.64 och 3.71.
 
+## Ma4: flöde som volymändring
+
+I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
+faciten hur grafens delareor eller integralen ger volym. Vid maximering av
+nettovolym ska både stationära punkter och intervallets ändpunkter jämföras;
+3.248 redovisar nu alla kandidater. 3.106 har fullprecision på det numeriska
+rättningsmålet, och korrekt avrundning och svar med enhet är testade.
+
 ## Ma4: motivera maximum och minimum
 
 Se [sex optimeringsfacit](MA4_OPTIMERINGSFACIT_2026-10-27.md). En stationär
