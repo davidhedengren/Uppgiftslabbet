@@ -2819,6 +2819,14 @@ tolerans kring det avrundade målvärdet 11,1. 1.167 och 1.172 anger cm/cm²
 i svarsmetadata så att uttryck med rätt enhet kan godtas. Fri avrundning
 behålls där uppgiften inte anger någon precision.
 
+## Ma4: avstånd och geometriska mängder
+
+[Sju granskade facit](MA4_KOMPLEXA_MANGDER_2026-10-27.md) tolkar
+absolutbelopp som avstånd och anger centrum, radie eller mittpunktsnormal.
+Vid delkort ska eventuella beräkningar stå på egna ben. Cirklarna i 4.10,
+4.18 och 4.97 stämmer med de granskade lösningarna; tidigare beslut om
+genomskinliga cirklar gäller fortsatt. 4.10 och 4.18 är snarlika.
+
 ## Ma4: flöde som volymändring
 
 I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
