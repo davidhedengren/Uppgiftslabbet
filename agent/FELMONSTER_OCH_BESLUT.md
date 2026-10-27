@@ -2798,6 +2798,14 @@ trots att frågan bad om cm²/år. Lösningen använder nu 2700π cm²/år.
 Enheter ska kontrolleras mot den faktiska frågan, även när facitets tal är
 ekvivalent efter omräkning. Generiska råd om vinklar har tagits bort.
 
+## Ma4: area som ensamt svar när skärningspunkter används som metod
+
+[Granskning av sex areauppgifter](MA4_AREAFACIT_2026-10-27.md): 3.71 bad
+om både skärningspunkter och area men hade bara fält för arean. Frågan ber
+nu om arean och säger att eleven börjar med punkterna. Facit visar båda
+koordinaterna och beräkningen. Acceptera avrundade svar när inget exaktkrav
+anges och bevara tidigare bild- och urvalsbeslut för 3.64 och 3.71.
+
 ## Ma4: motivera maximum och minimum
 
 Se [sex optimeringsfacit](MA4_OPTIMERINGSFACIT_2026-10-27.md). En stationär
