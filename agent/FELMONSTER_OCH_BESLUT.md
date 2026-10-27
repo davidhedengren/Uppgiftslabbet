@@ -2734,3 +2734,24 @@ Unicode-matematik i facittext, som A′(x) i 3.83 och y(0) i 4.522, är inte tra
 **Skalfel i tester:** en heredoc i Bash halverar backslash i regexar. Kontrollen i `ma2-kap3-yttervinkel-2026-10-26.test.js` hade därför tyst blivit verkningslös. Testfiler med LaTeX-regexar skrivs med filverktyget, inte med en heredoc.
 
 Skydd: `tools/latex-avgransare-2026-10-26.test.js`, som söker igenom hela Ma2 och Matf1.
+
+## Fellogg 26 oktober: ekvationer, mängder och sparade delkedjor
+
+[Kompletterande slutgranskning av 25 rapporter](FELRAPPORTER_2026-10-26_1400_KOMPLETTERING.md).
+Två ekvationer ska jämföras i sin helhet, aldrig bara genom samma högerled.
+Ma1 3.194 använder s: ett ensamt 512 eller s²=512 ersätter inte s³=512;
+likvärdigt omflyttade led och konstanta multiplar ska godtas. Mängder i 2.22
+ignorerar exakt upprepade element, men saknade/extra olika värden är fel.
+3.55 behåller flerval. 2.180c är manuell och har ett eget facit.
+
+Delkedjor ska överleva omladdning: spara svar som text, återbygg frågor från
+aktuell bank och HTML-escapa den lagrade texten. Återupptagning får inte
+dubblera aktuell del eller ge ny XP. Äldre sparningar ska ge tidigare frågor
+som sammanhang utan påhittade rätt/fel-markeringar. Testat på 3.93 och fem
+följdkedjor. I Fy1 3.121b måste det givna mellanresultatet 1,37 m/s² finnas
+även i den korta kedjefrågan. 8.158 behåller huvudfacitets c men varje spelkort
+har bara sin egen lösning. Långa formler radbryts utan ändrad matematik.
+
+Skydd: konsumentens `felrapporter-2026-10-26-flow.browser.cjs`,
+`felrapporter-2026-10-26.cases.json` och båda apparnas motsvarande browserharness.
+Den tidigare 15:31-rättningens figurer, flerval och fysikprecision ska bevaras.
