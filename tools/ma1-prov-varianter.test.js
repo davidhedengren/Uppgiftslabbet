@@ -11,7 +11,7 @@ test('Provets 30 uppgifter har två varianter var och unika ID:n',()=>{
  // Verktygsgranskning 2026-10-15: tillämpningarna nedan får räknare även
  // när förlagans provdel saknade den. Övriga provbehörigheter bevaras.
  const omprovadeVerktyg=new Set(['0.1126','0.1130','0.1131','0.1132']);
- for(const x of tasks){assert.ok(x.kurs.includes('1a'));assert.ok(x.traningsniva>=1&&x.traningsniva<=4);assert.equal(x.självrättning,true);assert.equal(typeof x.miniräknare,'boolean');assert.equal(x.miniräknare,x.kallaProv.uppgift>=20||omprovadeVerktyg.has(x.id),x.id);assert.equal(x.geogebra,false);assert.doesNotMatch(x.s,/facit-steglista|<ol\b/);}
+ for(const x of tasks){assert.ok(x.kurs.includes('1a'));assert.ok(x.traningsniva>=1&&x.traningsniva<=4);assert.equal(x.självrättning,true);assert.equal(typeof x.miniräknare,'boolean');assert.equal(x.miniräknare,x.kallaProv.uppgift>=20||omprovadeVerktyg.has(x.id),x.id);assert.equal(x.geogebra,false);assert.doesNotMatch(x.s,/facit-rubrik.>Steg \d/);} // rubricerade steg enligt 1.116 är tillåtna sedan 2026-10-25
 });
 test('Grundberäkningarna stämmer med provets uttryck, enheter och storleksordning',()=>{
  assert.deepEqual(q(1).rättSvar,[16-3*4,(-4)*(-5)-7,100-11+4*2,(-24)/(-6)-3]);
