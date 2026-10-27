@@ -2797,3 +2797,13 @@ var metoden och de matematiska värdena korrekta. 2.179 angav däremot m²/år
 trots att frågan bad om cm²/år. Lösningen använder nu 2700π cm²/år.
 Enheter ska kontrolleras mot den faktiska frågan, även när facitets tal är
 ekvivalent efter omräkning. Generiska råd om vinklar har tagits bort.
+
+## Ma2 kap 4: statistikfacit får steglista med rubriker, 2026-10-27
+
+Testerna från 2026-10-13 (`ma2-statistik-matt`, `ma2-statistik-referenser`)
+förbjöd steglista i statistikfacit. Det kravet är ersatt av grundinställningen
+Ma1 #1.116 och användarens begäran att kapitel 4 ska revideras med facit med
+rubriker. Testerna kräver nu en rubrik per steg och en svarsrad när facit har
+steglista. Ett bygghjälpmedel får bygga beräkningar gemensamt, men rubrikerna
+skrivs per kort. Testet för etappen underkänner rubriker som återanvänds. Se
+[kap 4-loggen](MA2_KAP4_REVISION_2026-10-27.md).
