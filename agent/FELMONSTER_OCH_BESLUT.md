@@ -2827,6 +2827,10 @@ Vid delkort ska eventuella beräkningar stå på egna ben. Cirklarna i 4.10,
 4.18 och 4.97 stämmer med de granskade lösningarna; tidigare beslut om
 genomskinliga cirklar gäller fortsatt. 4.10 och 4.18 är snarlika.
 
+Uppföljning: [sju fler geometriska villkor](MA4_KOMPLEXA_VILLKOR_2026-10-27.md).
+Faciten visar avståndsekvationer, kvadratkomplettering eller skärning mellan
+kurvor. För maximum i 4.306 visas både övre gräns och ett värde som når den.
+
 ## Ma4: flöde som volymändring
 
 I [sex granskade flödesuppgifter](MA4_FLODESFACIT_2026-10-27.md) visar
