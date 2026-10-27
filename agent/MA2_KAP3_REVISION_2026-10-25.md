@@ -279,3 +279,33 @@
   - `cirk`, i `rv-revision.js`;
   - `kordor`, i `kb-revision.js`;
   - `topp` och `tva`, i `tt-revision.js`, med vinkelmarkeringar.
+
+## Överlappskontroll av hela kapitlet (2026-10-27)
+
+**Metod**
+- `tools/granska-svg.js` mätte kapitlets 593 figurer i Chrome. Granskarens breda regler flaggar 322 figurer, men de flesta fynden gäller rutnät, små avstånd eller vinkelheuristik.
+- En striktare regel tog bort ljusa rutnätslinjer och räknade bara mörka linjer genom textens kärna, överlappande texter och text utanför figuren. Den flaggade 112 figurer, och alla granskades visuellt.
+
+**Rättat i 66 kort (bara figurerna, ingen text, inget svar eller facit)**
+- **Etiketter på linjer:** 52 etiketter flyttades kortaste vägen till en fri plats. Exempel är vinkeletiketter på triangelsidor (3.229–3.237, 3.2058, 3.2074), punktnamn på sidor (3.77, 3.209, 3.394–3.408, 3.2163, 3.2173) och mått på linjer (3.14, 3.100, 3.460, 3.2020, 3.2098).
+- **Axeltal:** axeltal som skars av en graf eller en figursida (17 koordinatfigurer) fick vit kant och ritas sist. Deras plats vid skalstrecket är oförändrad.
+- **Handflyttat:**
+  - 3.520, 3.521 och 3.529: BC-måttet stod direkt under D och flyttades under BD.
+  - 3.607: D och måttet 2 stod staplade.
+  - 3.121: ”föremål 1,80 m” och ”3,0 m” överlappade. Avståndet har nu en måttlinje.
+  - 3.2102: ”1,8 m” klipptes i kanten.
+  - 3.458: ”a/2” klipptes i kanten.
+  - 3.175: A låg på x-axeln.
+  - 3.2157: minutvisaren täckte 12.
+  - 3.2160: radieetiketten korsade hjulet.
+  - 3.112, 3.291 och 3.315: punktnamn låg på punkter eller mått.
+
+**Efter rättningen**
+- Den strikta regeln ger 23 figurer, mot 112 före rättningen. 18 av dem är axeltal med vit kant. 3.455, 3.456, 3.540, 3.2104 och 3.390 är uppmätta falsklarm, eftersom texten ligger utanför linjerna.
+- Granskarens TEXT_TEXT_COLLISION gick från 11 till 3, och text utanför figuren från 2 till 0. De tre återstående överlappen är tre talpar vid origo och P/3 dm i 3.315, som granskades visuellt.
+- POINT_LABEL_COLLISION finns kvar i 30 figurer. De granskades visuellt i full storlek, och etiketterna ligger tätt intill punkten utan att täcka den.
+
+**Inte åtgärdat**
+- Liten text i äldre koordinatmallar, med font-size 10–11 i 430 breda figurer (3.13, 3.25, 3.58, 3.82, 3.112 och 3.205). Det är läsbarhet, inte överlapp, och hanteras separat.
+
+Regressionstest: `tools/ma2-kap3-overlapp-2026-10-27.test.js`.

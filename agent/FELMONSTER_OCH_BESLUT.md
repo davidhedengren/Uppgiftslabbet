@@ -2769,3 +2769,14 @@ redovisar de sju och fem ytterligare uppgifter. Polära svaren i 4.197 och
 4.198 behöver både `polar` och en svarsträng som parsern kan läsa; de
 tidigare LaTeX-strängarna kunde underkänna lagrade korrekta svar. Behåll
 polär form som formkrav och de befintliga reglerna för reella slutsvar.
+
+## Ma2 kap 3: överlappskontroll av alla figurer, 2026-10-27
+
+Granskarens breda regler (`tools/granska-svg.js`) ger för många träffar för att
+användas rakt av, bland annat rutnätslinjer och vinkelheuristik. Filtrera bort
+ljusa linjer (luminans över 0,8) och räkna bara mörka linjer genom textens kärna.
+Granska alltid träffarna visuellt. En bounding box för en linje är inget bevis
+för att linjen korsar texten. Axeltal flyttas inte från sitt skalstreck. De får
+i stället vit kant (paint-order="stroke") och ritas sist. Se
+[kap 3-loggen](MA2_KAP3_REVISION_2026-10-25.md) och
+`tools/ma2-kap3-overlapp-2026-10-27.test.js`.
