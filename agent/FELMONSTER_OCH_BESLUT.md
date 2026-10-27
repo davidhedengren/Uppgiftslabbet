@@ -2789,3 +2789,11 @@ inte till deras lösningar. Ma4 3.11 hade även en ledtråd om asymptoter och
 saknade beräkning i delkorten. Den ändrade formuleringen skiljer integralens
 tecknade värde från den geometriska arean. Kontrollera liknande fall ett i
 taget: att rita en figur kan vara relevant när geometrisk area efterfrågas.
+
+## Ma4: kontrollera svarsenheter vid förändringshastighet
+
+I [sju granskade facit](MA4_FORANDRINGSHASTIGHET_FACIT_2026-10-27.md)
+var metoden och de matematiska värdena korrekta. 2.179 angav däremot m²/år
+trots att frågan bad om cm²/år. Lösningen använder nu 2700π cm²/år.
+Enheter ska kontrolleras mot den faktiska frågan, även när facitets tal är
+ekvivalent efter omräkning. Generiska råd om vinklar har tagits bort.
