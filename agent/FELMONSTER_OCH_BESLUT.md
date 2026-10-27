@@ -2780,3 +2780,12 @@ för att linjen korsar texten. Axeltal flyttas inte från sitt skalstreck. De f�
 i stället vit kant (paint-order="stroke") och ritas sist. Se
 [kap 3-loggen](MA2_KAP3_REVISION_2026-10-25.md) och
 `tools/ma2-kap3-overlapp-2026-10-27.test.js`.
+
+## Ma4: geometrimall i integrallösningar
+
+I [granskningen av integralfacit 27 oktober](MA4_INTEGRALFACIT_2026-10-27.md)
+har sex uppgifter granskats. Generella råd om vinklar och längdenheter hörde
+inte till deras lösningar. Ma4 3.11 hade även en ledtråd om asymptoter och
+saknade beräkning i delkorten. Den ändrade formuleringen skiljer integralens
+tecknade värde från den geometriska arean. Kontrollera liknande fall ett i
+taget: att rita en figur kan vara relevant när geometrisk area efterfrågas.
