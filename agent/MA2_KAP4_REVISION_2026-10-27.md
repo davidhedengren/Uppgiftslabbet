@@ -202,3 +202,38 @@ Ingen figur behövde ändras.
   - 4.338 ger [true, true, true, true, false] vid fel kvartilavstånd.
   - 4.344 godtar Sx = 0.
 - **Test:** `tools/ma2-kap4-standardavvikelse-2026-10-27.test.js`. Alla Ma2-tester går igenom (209/209).
+
+## Etapp 4b: standardavvikelse, övriga kort (69 kort)
+
+**Facit**
+- Alla övriga kort i området har facit med en rubrik per steg och svarsrad.
+- **Kort med data** har uträkningar med insatta värden, byggda ur datan: 4.05, 4.28, 4.97, 4.157, 4.241, 4.299, 4.302, 4.450–4.459 och 6.09.
+- **GeoGebra-kort** visar vilka värden som skrivs in och vad som läses av. Alla värden är omräknade: 4.174, 4.235, 4.390–4.393 och 4.454.
+
+**Varierade mallfamiljer**
+- **Addera konstant:**
+  - 4.49: extrapoäng;
+  - 4.75: felinställd våg;
+  - 4.90: bonuspoäng.
+- **Multiplicera:**
+  - 4.86: förstorad karta;
+  - 4.93: dubblat recept.
+- **y = ax + b:**
+  - 4.21: omräkning av provpoäng;
+  - 4.56: −4x + 10.
+- **4.195** handlar nu om flaskfyllning, så att den inte längre har samma inledning som 4.43.
+
+**Flerval och ledtrådar**
+- Kommentarer är tillagda för 4.36, 4.75, 4.86, 4.93, 4.121, 4.156, 4.374 och de rätta alternativen i 4.462–4.464.
+- Gemensamma ledtrådar är ersatta, till exempel ”Skriv in värdena i en lista i GeoGebra …” i 4.452 och 4.459.
+
+**Kontroll**
+- Svarsraderna stämmer med rättSvar.
+- Varje Sx-uträkning i facit kontrolleras mot √(kvadratsumman/(n − 1)).
+- Facit renderades och lästes igenom.
+- **Självrättning:**
+  - 4.21 ger [true, false] vid fel standardavvikelse.
+  - 4.451 godtar 1,51.
+  - 4.75 visar kommentaren till det felaktiga alternativet.
+- **Validatorn:** Ma2 ger 86 fynd, mot 87 före etappen.
+- **Test:** `tools/ma2-kap4-standardavvikelse-2026-10-27.test.js` täcker nu hela området. Alla Ma2-tester går igenom (213/213).

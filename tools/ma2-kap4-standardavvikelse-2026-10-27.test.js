@@ -26,3 +26,21 @@ test('4a: rubriker och huvudledtrådar delas inte mellan korten',()=>{
   const rub={},led={};for(const id of ETAPP4A){const q=get(id);(led[q.ledtrad]=led[q.ledtrad]||[]).push(id);for(const r of new Set([q.s,...(q.spelDelar||[]).map(d=>d.s)].flatMap(rubriker)))(rub[r]=rub[r]||new Set()).add(id);}
   assert.deepEqual(Object.entries(rub).filter(([,v])=>v.size>1).map(([r,v])=>r+': '+[...v]),[]);assert.deepEqual(Object.values(led).filter(v=>v.length>1),[]);
 });
+// 4b: övriga kort i området (2026-10-27). Hela området har nu facit med rubriker, kommentarer till flerval och egna ledtrådar.
+test('4b: hela området har facit med rubrik per steg och svarsrad',()=>{
+  assert.ok(L.length>=97,L.length);for(const q of L){facit(q.id,q.s);for(const d of q.spelDelar||[])facit(q.id+d.etikett,d.s);}
+});
+test('4b: alla flervalsalternativ har kommentarer och inga huvudledtrådar eller rubriker delas',()=>{
+  for(const q of L.filter(q=>q.alternativ))for(const a of q.alternativ)assert.ok((a.kommentar||'').length>8,`${q.id}: ${a.txt}`);
+  const rub={},led={};for(const q of L){(led[q.ledtrad]=led[q.ledtrad]||[]).push(q.id);for(const r of new Set([q.s,...(q.spelDelar||[]).map(d=>d.s)].flatMap(rubriker)))(rub[r]=rub[r]||new Set()).add(q.id);}
+  assert.deepEqual(Object.entries(rub).filter(([,v])=>v.size>1).map(([r,v])=>r+': '+[...v]),[]);assert.deepEqual(Object.values(led).filter(v=>v.length>1),[]);
+});
+test('4b: svarsraderna innehåller rättSvar, och Sx-uträkningarna stämmer',()=>{
+  for(const q of L){const svar=[...q.s.matchAll(/facit-svar"><strong>Svar:<\/strong> ([\s\S]*?)<\/p>/g)].map(m=>ren(m[1]).replace(/\\(|\\)/g,'').replace(/\{,\}/g,',')).join(' ; '),f=(svar.match(/−?\d+(?:[ ,]\d{3})*(?:,\d+)?/g)||[]).map(x=>+x.replace('−','-').replace(/ /g,'').replace(',','.'));
+    for(const t of tal(JSON.parse(JSON.stringify(q.rättSvar))))assert.ok(f.some(x=>Math.abs(x-t)<=0.051),`${q.id}: ${t} saknas i ”${svar}”`);
+    for(const m of q.s.matchAll(/S_x=\sqrt\{\frac\{([\d\,{}]+)\}\{(\d+)-1\}\}(?:\approx|=)([\d{},]+)/g)){const num=x=>+x.replace(/\,/g,'').replace('{,}','.');assert.ok(Math.abs(Math.sqrt(num(m[1])/(+m[2]-1))-num(m[3]))<0.006,q.id);}}
+});
+test('4b: mallfamiljerna har egna sammanhang',()=>{
+  assert.match(get('4.49').t,/extrapoäng/);assert.match(get('4.75').t,/våg/);assert.match(get('4.86').t,/karta/);assert.match(get('4.93').t,/recept/);assert.match(get('4.195').t,/flaskor/);
+  const b={};for(const q of L){const k=ren(q.t).slice(0,45).toLowerCase();(b[k]=b[k]||[]).push(q.id);}assert.deepEqual(Object.values(b).filter(v=>v.length>1),[]);
+});
