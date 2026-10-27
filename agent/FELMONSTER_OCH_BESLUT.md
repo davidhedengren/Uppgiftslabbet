@@ -2872,3 +2872,14 @@ rubriker. Testerna kräver nu en rubrik per steg och en svarsrad när facit har
 steglista. Ett bygghjälpmedel får bygga beräkningar gemensamt, men rubrikerna
 skrivs per kort. Testet för etappen underkänner rubriker som återanvänds. Se
 [kap 4-loggen](MA2_KAP4_REVISION_2026-10-27.md).
+
+## Fy1 kap 4: balansvågar och självrättning nära felsvaret, 2026-10-27
+
+[Åtta balansvågskort](BALANSVAGAR_FYSIK1_2026-10-27.md) (4.902–4.909) prövar
+vridmoment genom Alberts och Isaacs vågar. Om ett felsvar ligger nära det rätta
+svaret (100 g mot 107 g) kan appens regel med n − 2 värdesiffror godkänna
+felsvaret. Välj då `svarVardesiffror` så att felsvaret underkänns, och pröva
+felsvaret i webbläsaren.
+
+Kör alltid hela `tools/*.test.js` före push, inte bara ämnets tester. Etapp 4b i
+Ma2 kap 4 bröt fyra äldre krav från felrapporter, och de syntes bara i hela sviten.

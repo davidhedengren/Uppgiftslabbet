@@ -48,11 +48,12 @@ const cases=[
  ["4.513",atan((1.2/2.2))],
  ["4.514",(((21*0.15)+(7*0.4))/0.05)],
  ["4.515",(((2.5*g)*Math.sqrt(((0.34**2)-((0.34-0.12)**2))))/(0.34-0.12))],
- ["4.869",40*0.30],["4.872",300*2.0/400],["4.875",4.0/2],["4.876",200/2]
+ ["4.869",40*0.30],["4.872",300*2.0/400],["4.875",4.0/2],["4.876",200/2],
+ ["4.908",[15*cos(10)-3*sin(10),15*cos(10)+3*sin(10),(100*15.29)/14.25]]
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
-test('Kraftmoment: samtliga 47 numeriska uppgifter räknas självständigt',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='moment'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,47);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
+test('Kraftmoment: samtliga 48 numeriska uppgifter räknas självständigt',()=>{
+ const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='moment'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,48);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
 });
 test('Kortets givna avrundade stödkraft ger ett godkänt eget svar',()=>{check('4.508',[f508,95*g-393]);});
 test('Momentkort har egna förutsättningar, rätt enheter och nödvändig geometri',()=>{
@@ -61,7 +62,7 @@ test('Momentkort har egna förutsättningar, rätt enheter och nödvändig geome
  assert.doesNotMatch(q('4.130').spelDelar[3].t,/1,5 m/);assert.doesNotMatch(q('4.249').spelDelar[0].t,/F₂|1,2 m/);
  assert.doesNotMatch(q('4.304').spelDelar[0].fraga,/tråden/);assert.match(q('4.515').t,/grepp/);
 });
-test('Alla 80 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
+test('Alla 83 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
  let checked=0;
  for(const[id,expected]of cases){const t=q(id),vs=Array.isArray(expected)?expected:[expected];
   vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,cardId=t.spelDelar?id+String.fromCharCode(97+i):id;
@@ -72,5 +73,5 @@ test('Alla 80 numeriska slutsvar i lösningsförslagen stämmer med beräkningar
    assert.ok(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)),`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`);checked++;
   });
  }
- assert.equal(checked,80);
+ assert.equal(checked,83);
 });
