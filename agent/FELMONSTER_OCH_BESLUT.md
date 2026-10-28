@@ -2883,3 +2883,13 @@ felsvaret i webbläsaren.
 
 Kör alltid hela `tools/*.test.js` före push, inte bara ämnets tester. Etapp 4b i
 Ma2 kap 4 bröt fyra äldre krav från felrapporter, och de syntes bara i hela sviten.
+
+## Fellogg 28 oktober: automatiskt procentresultat och figurer
+
+[Granskningen](FELRAPPORTER_2026-10-28_1923.md) behåller de generella
+resonemangen i Ma1 3.06, 3.58 och 3.190. Ett numeriskt procentresultat
+kontrolleras först; därefter jämför eleven sin motivering med facit. Att
+öppna lösningen före svar ger ingen XP. Detta kontrollerar inte att den fria
+motiveringen är korrekt. 3.544 visar inte längre den härledbara rätvinkeln
+vid C; höjdens markering vid H behövs fortsatt. 3.669 visar inte kvadrantnamn
+i figuren. Ma4 4.322 var redan nivå 5.

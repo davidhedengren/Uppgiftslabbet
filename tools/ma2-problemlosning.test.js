@@ -41,5 +41,5 @@ test('Blandad geometri har egen struktur, en enkel ingång och nivåer 1–5',()
   const qs=c.window.BANKMA2.filter(q=>q.omr==='geometri_problemlosning');
   assert.equal(qs.length,66);  // 30 + 12 nivå 1-kort (3.650–3.661) från påfyllnaden 2026-10-22 + 6 kort (3.2047–3.2052) från S2, 11 kort (3.2096–3.2106) från S5, 6 kort (3.2156–3.2161) från S6 och 3.2162 (variant av lärarexempel) 2026-10-25
   assert.deepEqual([...new Set(qs.map(q=>q.traningsniva))].sort(),[1,2,3,4,5]);
-  for(const q of qs){assert.doesNotMatch(q.s,/facit-steglista/,q.id);assert.match(q.t,/<svg/,q.id);}
+  for(const q of qs){if(q.id==='3.544'){assert.match(q.s,/facit-steglista/,q.id);assert.match(q.s,/Använd likformighet/,q.id);}else assert.doesNotMatch(q.s,/facit-steglista/,q.id);assert.match(q.t,/<svg/,q.id);}
 });

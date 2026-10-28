@@ -11,7 +11,7 @@ function angle(a,o,b){const u=a.map((v,i)=>v-o[i]),v=b.map((x,i)=>x-o[i]);return
 function distanceToLine(p,l){const u=l[1].map((v,i)=>v-l[0][i]),t=u.reduce((s,v,i)=>s+v*(p[i]-l[0][i]),0)/len(l)**2;return len([p,l[0].map((v,i)=>v+t*u[i])]);}
 test('Femton nya självständiga problem har kontrollerade svar och tydliga nivåer',()=>{
  const expected=[Math.sqrt(13**2-12**2),4+3*8/4,84*13/(13+15),8*Math.sqrt(17**2-8**2),(9+12**2/9)/2,90-(180-110)/2,50*(1-(6/10)**2),(14+8)/2*Math.sqrt(10**2-6**2),4*6*Math.sqrt(10**2-6**2)/2,36/2,54/((9+12+15)/2),8*6/2-4*3/2,180-50/2-70/2,(3**2+3**2)/3**2,12*(1-12/(12+18))];
- expected.forEach((v,i)=>{const q=task(540+i);close(q.rättSvar,v,1e-9);assert.equal(q.omr,'geometri_problemlosning');assert.deepEqual(Array.from(q.kurs),['2b','2c']);assert.equal(q.självrättning,true);assert.match(q.t,/<svg/);assert.doesNotMatch(q.s,/facit-steglista|<ol/);assert.equal(q.spelDelar,undefined);});
+ expected.forEach((v,i)=>{const q=task(540+i);close(q.rättSvar,v,1e-9);assert.equal(q.omr,'geometri_problemlosning');assert.deepEqual(Array.from(q.kurs),['2b','2c']);assert.equal(q.självrättning,true);assert.match(q.t,/<svg/);if(q.id==='3.544'){assert.match(q.s,/facit-steglista/);assert.match(q.s,/Bestäm vinkeln vid C/);assert.match(q.s,/Använd likformighet/);assert.match(q.s,/Bestäm radien/);}else assert.doesNotMatch(q.s,/facit-steglista|<ol/);assert.equal(q.spelDelar,undefined);});
  assert.equal(task(549).traningsniva,1);for(const n of [540,541,543,545,546,552]){assert.equal(task(n).traningsniva,2);assert.equal(task(n).niva,'E');}
 });
 test('Cirklarnas radier, kordor, rektangel och höjd följer de givna måtten',()=>{
