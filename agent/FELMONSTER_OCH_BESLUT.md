@@ -2893,7 +2893,8 @@ kontrolleras först; därefter jämför eleven sin motivering med facit. Att
 motiveringen är korrekt. 3.544 visar inte längre den härledbara rätvinkeln
 vid C; höjdens markering vid H behövs fortsatt. 3.669 visar inte kvadrantnamn
 i figuren. Ma4 4.322 var redan nivå 5.
-# Fellogg 2026-11-01 18:10: definitionsmängd och facit per del
+
+## Fellogg 2026-11-01 18:10: definitionsmängd och facit per del
 
 Se [rapporten med alla bedömningar och kommentarsförslag](FELRAPPORTER_2026-11-01_1810.md).
 Ma3 1.93 och 1.98 frågar efter definitionsmängden och rättar därför `x≠2`
@@ -2908,3 +2909,12 @@ med ofullständiga parenteser ska varnas före rättning och förhandsvisningen
 får inte tyst låtsas att en saknad parentes har skrivits. Enhetscirklarna
 4.429, 4.434, 4.442, 4.465, 4.466 och 4.469–4.472 använder synlig mörk
 kontrast på vit bakgrund. Tidigare riktade kontroller bevaras.
+
+## Delkedjor och facit per del 2026-11-01
+
+[Granskning och testade uppgifter](DELKEDJOR_OCH_FACIT_2026-11-01.md).
+En kort `fraga` får inte ersätta en egen deltext som innehåller särskilda
+givna värden, villkor eller figurer. Kedjans synliga delar numreras a/b/c
+utan att ändra de ursprungliga ID:n som används för historik och rapporter.
+Om delfacit saknas får inte hela huvudfacit användas i stället. Se de
+individuella ändringarna och de naturliga beroenden som kvarstår i rapporten.
