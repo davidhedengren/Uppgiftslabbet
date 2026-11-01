@@ -7,7 +7,7 @@ test('0.1047 jämför positioner i decimaltal och ligger på nivå 2',()=>{
  const t=q('BANKMA1','0.1047');assert.equal(t.rättSvar,[.7,.07,.707,.77].sort((a,b)=>b-a)[1]);assert.equal(t.traningsniva,2);
 });
 test('4.514 ger en ordnad vektor med båda komponenterna multiplicerade',()=>{
- const t=q('BANKMA1','4.514');assert.deepEqual(Array.from(t.rättSvar),[-2,-4].map(x=>-3*x));assert.equal(t.svarsstruktur,'ordnad');assert.match(t.t,/pmatrix/);assert.doesNotMatch(t.s,/facit-steglista/);
+ const t=q('BANKMA1','4.514');assert.deepEqual(Array.from(t.rättSvar),[-2,-4].map(x=>-3*x));assert.equal(t.svarsstruktur,'ordnad');assert.match(t.t,/\(-2,-4\)/);assert.doesNotMatch(t.t,/pmatrix/);assert.doesNotMatch(t.s,/facit-steglista/);
 });
 test('1.84 följer både den lodräta kraftbalansen och cirkelrörelsen',()=>{
  const t=q('BANK2','1.84'),v=24,r=80,g=9.82,theta=Math.atan(v*v/(r*g));

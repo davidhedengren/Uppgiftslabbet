@@ -2893,3 +2893,18 @@ kontrolleras först; därefter jämför eleven sin motivering med facit. Att
 motiveringen är korrekt. 3.544 visar inte längre den härledbara rätvinkeln
 vid C; höjdens markering vid H behövs fortsatt. 3.669 visar inte kvadrantnamn
 i figuren. Ma4 4.322 var redan nivå 5.
+# Fellogg 2026-11-01 18:10: definitionsmängd och facit per del
+
+Se [rapporten med alla bedömningar och kommentarsförslag](FELRAPPORTER_2026-11-01_1810.md).
+Ma3 1.93 och 1.98 frågar efter definitionsmängden och rättar därför `x≠2`
+respektive `x≠3`, inte talet som utesluts. 1.135 och 1.211 frågar i stället
+uttryckligen efter de otillåtna värden som deras fält rättar. Intervall för
+funktionsvärden som `−9≤g(7)≤6` jämförs även med `[-9,6]`.
+
+När Kunskapsgymmet visar flera delar tillsammans ska jämförelse av en del
+välja motsvarande `spelDelar[i].s`, inte hela huvudfacit; Ma4 2.106:s
+delfacit a/b innehåller inte de övriga delarnas svar. Inmatning av uttryck
+med ofullständiga parenteser ska varnas före rättning och förhandsvisningen
+får inte tyst låtsas att en saknad parentes har skrivits. Enhetscirklarna
+4.429, 4.434, 4.442, 4.465, 4.466 och 4.469–4.472 använder synlig mörk
+kontrast på vit bakgrund. Tidigare riktade kontroller bevaras.
