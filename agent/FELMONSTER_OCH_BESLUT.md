@@ -3056,3 +3056,11 @@ från en given relation. Förklara varför varje felalternativ inte passar.
 ange temperaturens enhet och vad tiden räknas från. Kommentera varje felval
 utan att påstå att ett annat funktionsvärde är omöjligt när det bara inte
 följer av den givna punkten.
+
+## Ma1: dolda omdömen och modelljämförelse 2026-11-02
+
+[Genomgång](MA1_DOLDA_OMDOMEN_2026-11-02.md) skyddar 1.148, 1.933,
+1.939 och 2.341. Visa de påståenden en fråga ber eleven välja bland och ge
+specifik återkoppling på felval. När ett påstående gäller två konkreta modeller
+kan ett beräknat motexempel visa att slutsatsen är fel, inte bara att den
+saknar motivering. I 2.341 är A(20)=20 och B(20)≈44,2.
