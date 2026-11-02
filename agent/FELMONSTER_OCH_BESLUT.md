@@ -3040,3 +3040,11 @@ jämförelseuppgifterna behöver inte göras om till flervalsfrågor.
 lärarvyn; varje felval ska få återkoppling som pekar ut dess faktiska fel.
 När areans talvärde jämförs vid enhetsbyte måste både ursprunglig och ny
 areaenhet anges. Själva arean ändras inte.
+
+## Ma1: modeller och funktioner med dolda alternativ 2026-11-02
+
+[Genomgång](MA1_DOLDA_MODELLER_2026-11-02.md) skyddar 1.1067, 2.15,
+2.106, 2.532, 2.533 och 3.13. När en fråga hänvisar till en lista av
+funktioner eller modeller ska listan vara synlig i Uppgiftslabbet. Definiera
+variabeln i praktiska modeller och skilj en beskrivning av ett funktionsvillkor
+från en given relation. Förklara varför varje felalternativ inte passar.
