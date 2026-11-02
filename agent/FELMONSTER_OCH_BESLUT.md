@@ -3073,3 +3073,11 @@ samma positiva startvärde. En genomsnittlig procentsats får inte bedömas som
 konstant årlig ränta utan att detta anges. Nollränta kan göra två alternativ
 sanna; ange positiv ränta och om räntan återförs när det krävs för entydighet.
 Visa alternativen och ge individuella förklaringar vid felval.
+
+## Ma1: geometri och sannolikhet med dolda alternativ 2026-11-02
+
+[Genomgång](MA1_SANNOLIKHET_GEOMETRI_2026-11-02.md) skyddar 4.47, 4.402,
+5.192, 5.212, 5.245, 5.416 och 5.539. Frågor som förutsätter en alternativlista
+ska visa den i lärarvyn och ge individuella kommentarer i träningen. Ge gärna
+en generell fråga ett konkret ämne; vid avläsningsfel förklarar ”se skalan
+snett” orsaken utan att eleven behöver kunna termen parallax.
