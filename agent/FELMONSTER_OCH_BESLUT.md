@@ -3089,3 +3089,12 @@ snett” orsaken utan att eleven behöver kunna termen parallax.
 till och förklara varför varje felval är fel. Bortfall kan snedvrida även en
 avsedd totalundersökning; ett slumpurval garanterar inte exakt representation
 eller frånvaro av bortfall. Samvariation fastslår inte orsaksriktning.
+
+## Ma1: korrelation, urval och mätningar 2026-11-02
+
+[Genomgång](MA1_SAMBAND_MATNING_2026-11-02.md) skyddar 5.201, 5.202,
+5.205, 5.500, 5.567, 7.05 och 7.88. En större undersökning med samma
+sneda urval kan minska slumpmässig osäkerhet men behöver inte undanröja
+systematisk snedvridning. Använd inte en ovillkorlig garanti för en förändring
+som förutsättningarna inte säkrar. Visa alternativa påståenden och kommentera
+felval, men bevara självbärande öppna frågor.
