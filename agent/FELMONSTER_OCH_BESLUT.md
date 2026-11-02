@@ -2973,3 +2973,14 @@ Varje fristående allmänt delfacit måste ange att \(n\) är ett heltal. Vid kv
 fokusflytt får inte ta fokus från en ruta eller knapp som eleven själv har
 valt, och en timer från en gammal uppgift får inte påverka en ny. Samma sak
 gäller när nästa svarssteg öppnas och när tangentbordsläge byts.
+
+## Fellogg 2026-11-02: koordinataxlar, precision och kontobonus
+
+[Genomgång](FELRAPPORTER_2026-11-02_0837.md). Ma3 3.1201–3.1205 hade en
+mörk diagramkant som kunde misstas för x-axeln; etiketter och delstreck ska
+följa den faktiska nollaxeln och kurvornas koordinater bevaras. Ma3 4.104,
+4.102, 4.114 och 4.118 lagrar beräkningsvärdet och numeriskt format så att
+korrekt fri avrundning och längdenheter fungerar. 4.485 och 4.486 har ett
+uttryckligt krav på en decimal, vilket inte får kringgås av en bred tolerans.
+3.1233 är nu träningsnivå 4. Det angivna inloggningskontot undantas från
+rapportbonus i klienten; andra konton och befintlig XP bevaras.
