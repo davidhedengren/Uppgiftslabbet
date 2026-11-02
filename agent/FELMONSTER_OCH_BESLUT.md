@@ -2966,3 +2966,10 @@ bero på ett riktigt trigonometriskt samband.
 [Ma4 1.16, 1.68, 1.69, 1.132 och 1.299](MA4_TRIG_EKVATION_FACIT_2026-11-02.md):
 förklara grundvinkel, tecken och period i stället för att endast lista svar.
 Varje fristående allmänt delfacit måste ange att \(n\) är ett heltal. Vid kvadrerade uttryck måste både positiva och negativa rötter beaktas.
+
+## Fördröjt fokus i svarsrutor 2026-11-02
+
+[Återskapande och rättning](SVARSFOKUS_2026-11-02.md): en fördröjd
+fokusflytt får inte ta fokus från en ruta eller knapp som eleven själv har
+valt, och en timer från en gammal uppgift får inte påverka en ny. Samma sak
+gäller när nästa svarssteg öppnas och när tangentbordsläge byts.

@@ -21,3 +21,5 @@ Banktester kontrollerar parametrarnas heltalsvillkor och vinkelsvaren genom ins�
 Förslag till rapportkommentar: ”Tack! Lösningen visar nu hur referensvinkeln och tecknet används och anger vad parametern \(n\) betyder.” Ingen rapportstatus eller kommentar har sparats i appen.
 
 Testutfall: de riktade bank- och webbläsartesterna passerade. Hela sviten gav 1 068 godkända och 43 tidigare kända SVG-miljöfel i Uppgiftslabbet samt 304 godkända och 10 tidigare kända fel i Kunskapsgymmet. Vid en snabb inmatning i flera rutor kunde appens fördröjda autofokus flytta fokus tillbaka till den första rutan och sammanfoga två svar. Det är ett separat UI-problem som behöver åtgärdas; rättningstestet inväntar därför att den första fokusflyttningen är klar.
+
+Uppföljning: Fokusproblemet som upptäcktes under denna testomgång har därefter rättats och testats enligt [fokusgranskningen](SVARSFOKUS_2026-11-02.md).
