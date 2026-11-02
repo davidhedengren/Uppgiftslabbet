@@ -2943,3 +2943,11 @@ svar, som i Ma1 4.22 och Matf1 4.138; skilj det från att visa nästa lösning.
 resultants x-komposant behöver inte skriva ut krafternas y-komposanter inför
 nästa del. Behåll däremot nödvändiga mellanled och ändra inte siffror bara
 för att två delresultat naturligt råkar vara lika.
+
+## Ledtrådar för deluppgifter 2026-11-02
+
+[Granskning av ärvda ledtrådar](DELLEDTRADAR_2026-11-02.md): den gemensamma
+ledtråden kan avslöja koefficienter eller förklara ett begrepp som efterfrågas
+i en senare del, eller vara irrelevant för den aktuella delen. Ge vid behov
+varje del en egen `ledtrad`; ändra inte huvudledtråden för hela läraruppgiften.
+Kontrollera ledtråden i verklig visning även efter att eleven går vidare.
