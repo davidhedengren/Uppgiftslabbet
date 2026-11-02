@@ -2999,3 +2999,17 @@ som ett säkert faktiskt utfall; enhet och period ska framgå. Beroendeantagande
 måste anges när upprepade sannolikheter kombineras. Undvik irrelevanta
 ledtrådar. För extrempunkter används minimi-/maximipunkt. Träningsnivå bedöms
 separat från E/C/A-poäng och kan justeras när djupare resonemang krävs.
+
+## Fellogg 2026-11-02 13:38: olika modeller och delfacit
+
+[Genomgång](FELRAPPORTER_2026-11-02_1338.md). Ma3 3.132 har olika givna
+hastighetsfunktioner i lärarversionen och delkorten. Kontrollera varje faktiskt
+visad fråga, och ge kort med annat scenario eget `rättSvar`; ärv inte förälderns
+nyckel. I 3.731 och jämförbara heluppgifter kräver manuella delar uttryckligt
+`delfacit`, även om deras lösning redan finns i huvudfacit. Ett tidigare facit
+får inte avslöja senare frågor.
+
+Vid kostnadstakt i tkr eller Mkr ska frågan ange önskad enhet, facit ange
+samma enhet och rättningsmålet lagra full precision. Kunskapsgymmet hanterar
+kr/tkr/Mkr som samma valuta med korrekt skala; kontrollera både korrekt
+avrundning och fel enhet. Ma3 3.500 och 3.486 är skyddade av riktade tester.
