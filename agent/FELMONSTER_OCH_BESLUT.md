@@ -3064,3 +3064,12 @@ följer av den givna punkten.
 specifik återkoppling på felval. När ett påstående gäller två konkreta modeller
 kan ett beräknat motexempel visa att slutsatsen är fel, inte bara att den
 saknar motivering. I 2.341 är A(20)=20 och B(20)≈44,2.
+
+## Ma1: lika startvärde, årlig förändring och ränta 2026-11-02
+
+[Genomgång](MA1_PROCENT_VILLKOR_2026-11-02.md) skyddar 1.82, 3.210,
+3.411, 3.453, 3.454, 3.512 och 3.526. Jämförelse av slutvärden kräver
+samma positiva startvärde. En genomsnittlig procentsats får inte bedömas som
+konstant årlig ränta utan att detta anges. Nollränta kan göra två alternativ
+sanna; ange positiv ränta och om räntan återförs när det krävs för entydighet.
+Visa alternativen och ge individuella förklaringar vid felval.
