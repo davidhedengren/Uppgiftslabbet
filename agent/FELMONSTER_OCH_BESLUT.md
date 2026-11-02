@@ -2984,3 +2984,18 @@ korrekt fri avrundning och längdenheter fungerar. 4.485 och 4.486 har ett
 uttryckligt krav på en decimal, vilket inte får kringgås av en bred tolerans.
 3.1233 är nu träningsnivå 4. Det angivna inloggningskontot undantas från
 rapportbonus i klienten; andra konton och befintlig XP bevaras.
+
+## Fellogg 2026-11-02 13:19: derivator och förväntat värde
+
+[Granskning och rapportkommentarer](FELRAPPORTER_2026-11-02_1319.md):
+En derivataetikett som f′(x)= är ett namn på uttrycket, inte ett villkor eller
+ett ekvationssystem. Jämför högerleden algebraiskt och acceptera både utvecklad
+och faktoriserad derivata, men avvisa avvikande funktionsnamn, variabel,
+derivataordning och tecken. Bevara fungerande exaktsvar om algebrabiblioteket
+inte laddas. Exempel: Ma3 2.302 a godtar 18x²−2x och 2x(9x−1).
+
+I riskuppgifter måste förväntat värde förklaras som ett genomsnitt, snarare än
+som ett säkert faktiskt utfall; enhet och period ska framgå. Beroendeantaganden
+måste anges när upprepade sannolikheter kombineras. Undvik irrelevanta
+ledtrådar. För extrempunkter används minimi-/maximipunkt. Träningsnivå bedöms
+separat från E/C/A-poäng och kan justeras när djupare resonemang krävs.

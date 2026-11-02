@@ -6,8 +6,8 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'uppgifterma1.js'),'utf8'),con
 const bank=JSON.parse(JSON.stringify(context.window.BANKMA1));
 const review=JSON.parse(fs.readFileSync(path.join(root,'agent/MA1_VERKTYG_2026-10-15.json'),'utf8'));
 const q=id=>{const found=bank.find(q=>q.id===id);assert.ok(found,id);return found;};
-// Senare dokumenterade verktygsbeslut: 1.116 miniräknare tillåten (FELRAPPORTER_2026-10-23_1345).
-const SENARE={'1.116':[true,false]};
+// Senare dokumenterade verktygsbeslut: 1.116 och omformulerade 5.272 tillåter miniräknare.
+const SENARE={'1.116':[true,false],'5.272':[true,false]};
 // Delade i delkort efter felrapport 2026-10-27 10:04; verktygen är oförändrade.
 const NYA_DELAR={'2.109':2,'2.254':2};
 const tools=(parent,part)=>[part?.miniräknare??parent.miniräknare,part?.geogebra??parent.geogebra];
