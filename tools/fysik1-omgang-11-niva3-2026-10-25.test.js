@@ -15,7 +15,8 @@ test('25 spelbara nivå 3-kort i fyra områden, fysikformat och inga dubblettfac
     assert.equal(t.spel,true,id);assert.equal(t.miniräknare,true,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);assert.match(t.t,/Välj ett alternativ/,id);}
     else assert.ok(/\(Svara[^)]*\)\s*(<\/p>)?$/.test(t.t)||t.svarEnhet||t.svarVardesiffror!=null,id);}
-  assert.deepEqual(per,{st_diagram:7,newton3:6,laddning:6,seriekoppling:6});
+  // 8.658 och 8.659 handlar om effekt och flyttades 2026-11-02 till kopplingar (effekt har inte gåtts igenom vid seriekoppling).
+  assert.deepEqual(per,{st_diagram:7,newton3:6,laddning:6,seriekoppling:4,kopplingar:2});
   const v=x=>JSON.stringify(x.rättSvar);
   for(const id of NYA){const t=get(id);if(t.rättSvar==null)continue;
     const krock=B.filter(w=>w.omr===t.omr&&w.id!==id&&w.rättSvar!=null&&v(w)===v(t)).map(w=>w.id);assert.deepEqual(krock,[],`${id}: ${krock}`);}
