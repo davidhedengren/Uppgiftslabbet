@@ -3081,3 +3081,11 @@ Visa alternativen och ge individuella förklaringar vid felval.
 ska visa den i lärarvyn och ge individuella kommentarer i träningen. Ge gärna
 en generell fråga ett konkret ämne; vid avläsningsfel förklarar ”se skalan
 snett” orsaken utan att eleven behöver kunna termen parallax.
+
+## Ma1: urval, bortfall och sannolikhet 2026-11-02
+
+[Genomgång](MA1_URVAL_SANNOLIKHET_2026-11-02.md) skyddar 4.550, 5.20,
+5.44, 5.81, 5.106, 5.108 och 5.187. Visa påståendena en fråga hänvisar
+till och förklara varför varje felval är fel. Bortfall kan snedvrida även en
+avsedd totalundersökning; ett slumpurval garanterar inte exakt representation
+eller frånvaro av bortfall. Samvariation fastslår inte orsaksriktning.
