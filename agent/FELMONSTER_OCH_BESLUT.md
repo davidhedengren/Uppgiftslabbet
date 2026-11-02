@@ -3024,3 +3024,11 @@ och exportunderlag samt Kunskapsgymmets faktiska alternativ. Gör inte om öppna
 självbärande frågor bara för att de har alternativa svar i Kunskapsgymmet.
 Ma1 0.89:s utfyllnadsruta är synlig och matematiken korrekt; rapporten saknar
 kommentar, så någon mer specifik orsak kan inte fastställas.
+
+## Ma1: fler alternativberoende uppgifter 2026-11-02
+
+[Fortsatt avgränsad granskning](MA1_DOLDA_ALTERNATIV_2026-11-02.md) skyddar
+0.51, 0.264, 0.267, 0.280, 0.301, 0.309 och 0.404. Flervalsuppgifter med
+ofullständigt underlag i lärarvyn behöver visa alternativen; felalternativens
+kommentarer ska förklara varför de är fel. De öppna och självbärande
+jämförelseuppgifterna behöver inte göras om till flervalsfrågor.
