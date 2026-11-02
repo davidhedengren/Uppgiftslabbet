@@ -2925,3 +2925,14 @@ individuella ändringarna och de naturliga beroenden som kvarstår i rapporten.
 delkort använder åter originalets tabell och behåller ordnade x/y-svar. Ma4
 3.116 har en figur som endast avser a, och detta sägs vid figuren. Flera
 svarsfält i samma delkort visas som svarssteg, inte som nya deluppgifter.
+
+## Heluppgifter med flera svar och manuell komplettering 2026-11-02
+
+[Granskning av åtta uppgifter](HELUPPGIFT_DELFACIT_2026-11-02.md). Även
+uppgifter utan `spelDelar` kan ha stegvis rättade fält: använd deras egna
+`delfacit` och fall inte tillbaka på huvudlösningen när fler ordnade svar
+återstår. För oordnade svarsmängder ska samtliga svar rättas tillsammans;
+en föreskriven manuell motivering bedöms därefter, inte hoppas över. Bevara
+pågående kontroll när eleven bläddrar i passet och låt inte upprepade klick
+registrera resultat i förtid. Vissa värden återkommer oundvikligen i olika
+svar, som i Ma1 4.22 och Matf1 4.138; skilj det från att visa nästa lösning.
