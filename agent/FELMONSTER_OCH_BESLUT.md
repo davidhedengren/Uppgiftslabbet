@@ -2918,3 +2918,10 @@ givna värden, villkor eller figurer. Kedjans synliga delar numreras a/b/c
 utan att ändra de ursprungliga ID:n som används för historik och rapporter.
 Om delfacit saknas får inte hela huvudfacit användas i stället. Se de
 individuella ändringarna och de naturliga beroenden som kvarstår i rapporten.
+
+## Delkortstabell och namngivna svarsfält 2026-11-01
+
+[Fortsatt granskning](DELKORT_TABELL_2026-11-01.md). Ma2 2.436:s tre
+delkort använder åter originalets tabell och behåller ordnade x/y-svar. Ma4
+3.116 har en figur som endast avser a, och detta sägs vid figuren. Flera
+svarsfält i samma delkort visas som svarssteg, inte som nya deluppgifter.
