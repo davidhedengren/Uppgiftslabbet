@@ -2936,3 +2936,10 @@ en föreskriven manuell motivering bedöms därefter, inte hoppas över. Bevara
 pågående kontroll när eleven bläddrar i passet och låt inte upprepade klick
 registrera resultat i förtid. Vissa värden återkommer oundvikligen i olika
 svar, som i Ma1 4.22 och Matf1 4.138; skilj det från att visa nästa lösning.
+
+## Vektorers delfacit 2026-11-02
+
+[Fy1 3.301–3.308](FY1_VEKTORER_DELFACIT_2026-11-02.md): beräkningen av en
+resultants x-komposant behöver inte skriva ut krafternas y-komposanter inför
+nästa del. Behåll däremot nödvändiga mellanled och ändra inte siffror bara
+för att två delresultat naturligt råkar vara lika.
