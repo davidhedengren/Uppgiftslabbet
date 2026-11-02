@@ -2951,3 +2951,12 @@ ledtråden kan avslöja koefficienter eller förklara ett begrepp som efterfråg
 i en senare del, eller vara irrelevant för den aktuella delen. Ge vid behov
 varje del en egen `ledtrad`; ändra inte huvudledtråden för hela läraruppgiften.
 Kontrollera ledtråden i verklig visning även efter att eleven går vidare.
+
+## Exakta trigonometriska värden 2026-11-02
+
+[Granskning av Ma4 1.20, 1.38, 1.41 och 1.145](MA4_TRIG_EXAKT_FACIT_2026-11-02.md):
+exakta trigonometriska värden är inte ekvationer. Facit ska visa den aktuella
+additions- eller subtraktionsformeln och insatta standardvärden, utan generell
+text om olikheter, ekvationssystem eller periodicitet. Bryt långa matematiska
+uttryck på ett sätt som fungerar i mobilvisning. Sammanfallande delsvar kan
+bero på ett riktigt trigonometriskt samband.
