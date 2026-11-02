@@ -3048,3 +3048,11 @@ areaenhet anges. Själva arean ändras inte.
 funktioner eller modeller ska listan vara synlig i Uppgiftslabbet. Definiera
 variabeln i praktiska modeller och skilj en beskrivning av ett funktionsvillkor
 från en given relation. Förklara varför varje felalternativ inte passar.
+
+## Ma1: fler beskrivningar och intervall 2026-11-02
+
+[Genomgång](MA1_DOLDA_BESKRIVNINGAR_2026-11-02.md) skyddar 1.121, 1.907,
+2.236, 2.287 och 2.319. Visa påståenden när frågan ber eleven välja ett;
+ange temperaturens enhet och vad tiden räknas från. Kommentera varje felval
+utan att påstå att ett annat funktionsvärde är omöjligt när det bara inte
+följer av den givna punkten.
