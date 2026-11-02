@@ -3032,3 +3032,11 @@ kommentar, så någon mer specifik orsak kan inte fastställas.
 ofullständigt underlag i lärarvyn behöver visa alternativen; felalternativens
 kommentarer ska förklara varför de är fel. De öppna och självbärande
 jämförelseuppgifterna behöver inte göras om till flervalsfrågor.
+
+## Ma1: ytterligare påståenden och areaenhet 2026-11-02
+
+[Genomgång](MA1_DOLDA_PASTAENDEN_2026-11-02.md) skyddar 0.55, 0.87,
+0.256, 0.540, 0.740 och 0.744. Påståenden som frågan kräver ska visas i
+lärarvyn; varje felval ska få återkoppling som pekar ut dess faktiska fel.
+När areans talvärde jämförs vid enhetsbyte måste både ursprunglig och ny
+areaenhet anges. Själva arean ändras inte.
