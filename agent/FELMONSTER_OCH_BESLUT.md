@@ -3013,3 +3013,14 @@ Vid kostnadstakt i tkr eller Mkr ska frågan ange önskad enhet, facit ange
 samma enhet och rättningsmålet lagra full precision. Kunskapsgymmet hanterar
 kr/tkr/Mkr som samma valuta med korrekt skala; kontrollera både korrekt
 avrundning och fel enhet. Ma3 3.500 och 3.486 är skyddade av riktade tester.
+
+## Fellogg 2026-11-02 13:52: alternativ saknas i lärarvyn
+
+[Genomgång](FELRAPPORTER_2026-11-02_1352.md). Uppgiftslabbet visar
+alternativfältet bara om texten anger alternativval. Frågor som hänvisar till
+påståenden eller till ”följande uttryck” måste därför uttryckligen be eleven
+välja ett alternativ om de är beroende av listan. Kontrollera lärarkort, facit
+och exportunderlag samt Kunskapsgymmets faktiska alternativ. Gör inte om öppna,
+självbärande frågor bara för att de har alternativa svar i Kunskapsgymmet.
+Ma1 0.89:s utfyllnadsruta är synlig och matematiken korrekt; rapporten saknar
+kommentar, så någon mer specifik orsak kan inte fastställas.
