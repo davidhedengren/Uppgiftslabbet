@@ -2960,3 +2960,9 @@ additions- eller subtraktionsformeln och insatta standardvärden, utan generell
 text om olikheter, ekvationssystem eller periodicitet. Bryt långa matematiska
 uttryck på ett sätt som fungerar i mobilvisning. Sammanfallande delsvar kan
 bero på ett riktigt trigonometriskt samband.
+
+## Trigonometriska ekvationer 2026-11-02
+
+[Ma4 1.16, 1.68, 1.69, 1.132 och 1.299](MA4_TRIG_EKVATION_FACIT_2026-11-02.md):
+förklara grundvinkel, tecken och period i stället för att endast lista svar.
+Varje fristående allmänt delfacit måste ange att \(n\) är ett heltal. Vid kvadrerade uttryck måste både positiva och negativa rötter beaktas.
