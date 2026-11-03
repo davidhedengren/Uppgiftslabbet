@@ -3146,3 +3146,10 @@ Vid uppföljningen av 3.691 hittades ytterligare omärkta trianglar i Ma2
 3.692 och 3.695. [Kontrollen](MA2_TRIANGELHORN_2026-11-03.md) anger
 hörnens placering och vilka jämförbara figurer som granskats. En text som
 namnger trianglarnas hörn kräver att samma bokstäver syns i figuren.
+
+## Fellogg 2026-11-03 10:34: nivå på ekvationer
+
+[Genomgång](FELRAPPORTER_2026-11-03_1034.md): Ma1 1.1311 har flyttats
+från träningsnivå 1 till 2. Eleven måste ställa uttryck lika och sedan lösa en
+ekvation med variabeltermer och konstanter i båda leden; lösningen är negativ.
+E-poängen är oförändrad. Facit visar ekvationen, omformningen och en kontroll.

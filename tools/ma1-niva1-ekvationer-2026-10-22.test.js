@@ -6,10 +6,10 @@ const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));
 const nya=B.filter(t=>{const [k,n]=t.id.split('.').map(Number);return k===1&&n>=1300&&n<=1385;});
 const get=id=>{const t=nya.find(x=>x.id===id);assert.ok(t,id);return t;};
 
-test('86 kort på nivå 1 fördelade på fyra ekvationsområden',()=>{
+test('86 kort fördelade på fyra ekvationsområden med kalibrerade nivåer',()=>{
   assert.equal(nya.length,86);const per={};
   for(const t of nya){per[t.omr]=(per[t.omr]||0)+1;
-    assert.equal(t.traningsniva,1,t.id);assert.deepEqual(t.kurs,['1a','1b','1c'],t.id);assert.equal(t.poang,'1/0/0',t.id);
+    assert.equal(t.traningsniva,t.id==='1.1311'?2:1,t.id);assert.deepEqual(t.kurs,['1a','1b','1c'],t.id);assert.equal(t.poang,'1/0/0',t.id);
     if(t.svarstyp==='alternativ')assert.equal(t.alternativ.filter(a=>a.ratt).length,1,t.id);
     if(/^<p>(Lös ekvationen|Förenkla)/.test(t.t))assert.equal(t.miniräknare,false,t.id);
   }
