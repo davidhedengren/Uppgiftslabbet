@@ -3129,3 +3129,15 @@ tolkas som början på en tagg och kapa formeln innan KaTeX hinner se den.
 Använd `&lt;` i HTML-text och HTML-renderade alternativ och kommentarer.
 Ändra däremot inte maskinläsbara `rättSvar` på detta sätt utan att kontrollera
 hur rättningsmotorn läser dem.
+
+## Fellogg 2026-11-03 09:15
+
+[Fullständig genomgång](FELRAPPORTER_2026-11-03_0915.md) skyddar Ma1
+5.554 och 5.97, Ma2 3.691, 4.514, 6.10 och 3.2064, Ma3 4.23, 4.274 och
+4.548 samt Ma4 2.17. En figur måste visa namngivna hörn, ha läsbar skala
+och visa rätt vinkel och längdförhållande. Kontrollera areasatsen numeriskt;
+ett facit kan vara fel även om metoden är korrekt. Detaljerade delfacit får
+inte ärva generisk vägledning som behandlar en annan uppgiftstyp. För
+normalfördelning kan 68-procentsregeln förklaras i ledtråden utan att hävda
+att grafritare krävs. Frågor om sant och falskt kan få självrättande
+alternativ så eleven vet vilken svarstyp som efterfrågas.
