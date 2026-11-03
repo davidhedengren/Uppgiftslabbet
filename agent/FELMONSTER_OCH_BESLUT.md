@@ -3141,3 +3141,8 @@ inte ärva generisk vägledning som behandlar en annan uppgiftstyp. För
 normalfördelning kan 68-procentsregeln förklaras i ledtråden utan att hävda
 att grafritare krävs. Frågor om sant och falskt kan få självrättande
 alternativ så eleven vet vilken svarstyp som efterfrågas.
+
+Vid uppföljningen av 3.691 hittades ytterligare omärkta trianglar i Ma2
+3.692 och 3.695. [Kontrollen](MA2_TRIANGELHORN_2026-11-03.md) anger
+hörnens placering och vilka jämförbara figurer som granskats. En text som
+namnger trianglarnas hörn kräver att samma bokstäver syns i figuren.

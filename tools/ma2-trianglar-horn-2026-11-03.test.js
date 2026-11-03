@@ -1,0 +1,4 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterma2.js','utf8'),c);const q=id=>Object.values(c.window).find(Array.isArray).find(x=>x.id===id);
+test('Namngivna hörn i likformiga trianglar syns i båda figurer',()=>{for(const [id,names] of [['3.692','ABCPQR'],['3.695','ABCXYZ']]){const t=q(id).t;for(const name of names)assert.match(t,new RegExp('>'+name+'</text>'),`${id} ${name}`)}});
+test('Vinkel och motsvarande sida stämmer med uppgift och facit',()=>{assert.equal(q('3.692').rättSvar,48);assert.match(q('3.692').s,/Q.*B/);const v=q('3.695');assert.match(v.t,/Välj ett alternativ/);assert.equal(v.alternativ.find(a=>a.ratt).txt,'\\(YZ\\)');assert.match(v.s,/B.*Y.*C.*Z/)});
