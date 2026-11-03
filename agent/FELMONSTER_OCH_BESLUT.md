@@ -3153,3 +3153,10 @@ namnger trianglarnas hörn kräver att samma bokstäver syns i figuren.
 från träningsnivå 1 till 2. Eleven måste ställa uttryck lika och sedan lösa en
 ekvation med variabeltermer och konstanter i båda leden; lösningen är negativ.
 E-poängen är oförändrad. Facit visar ekvationen, omformningen och en kontroll.
+
+## Fellogg 2026-11-03 14:00: ovanliga vinkelbegrepp
+
+[Genomgång](FELRAPPORTER_2026-11-03_1400.md): Ma2 3.495 har `spel:false`
+efter önskemålet om att ta bort den från träningen; den finns kvar i
+Uppgiftslabbet. I 3.327 och 3.2075 anges summan 90° direkt i stället för att
+kräva ordet komplementvinkel. Geometrin och rättningssvaren är oförändrade.

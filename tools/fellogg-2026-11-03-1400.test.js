@@ -1,0 +1,5 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterma2.js','utf8'),c);const bank=Object.values(c.window).find(Array.isArray),q=id=>bank.find(x=>x.id===id);
+test('Rapporterad uppgift är kvar i banken men avstängd för träning',()=>{const t=q('3.495');assert.ok(t);assert.equal(t.spel,false);assert.equal(t.rättSvar,60);assert.equal(180-60,4*(90-60))});
+test('Liknande vinkelproblem är självbärande och har korrekta svar',()=>{for(const id of ['3.327','3.2075']){const t=q(id);assert.equal(t.spel,true);assert.match(t.t,/90/);assert.doesNotMatch(t.t+t.s+t.ledtrad,/komplementvinkel|supplementvinkel/i)}assert.equal(q('3.327').rättSvar,90-35);const v=q('3.2075').rättSvar;assert.equal(v+(v-24),90);assert.equal(v-(v-24),24)});
+test('Fem jämförbara vinkelfrågor har matematiskt korrekta svar',()=>{for(const [id,value] of [['3.220',180-48-67],['3.221',(180-38)/2],['3.222',180-2*64],['3.223',360-90-105-82],['3.224',86/2]])assert.equal(q(id).rättSvar,value,id)});
