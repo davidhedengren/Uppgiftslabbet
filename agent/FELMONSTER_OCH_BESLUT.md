@@ -3114,3 +3114,9 @@ ytterligare 5.07, 5.25 och 5.69. När ett punktmoln beskrivs som tätare får
 den relativa spridningen inte ensam avgöra vilket som har starkast linjär
 korrelation; i 5.69 anges i stället att A är perfekt negativt och B inte är
 det. Kontrollera också diagramrubrikers storlek när bilden skalas för mobil.
+
+I [fortsättningen](MA1_KORRELATION_ENHETER_2026-11-03.md) rättades 5.197,
+5.678 och 5.681. Att byta enhet genom att skala variabler med olika positiva
+faktorer bevarar korrelationskoefficienten men kan ändra diagrammets visuella
+form. Ange avrundning när exakta koefficienter anges till en figur som ger
+avrundade värden; kontrollera punkterna numeriskt.
