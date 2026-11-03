@@ -3120,3 +3120,12 @@ I [fortsättningen](MA1_KORRELATION_ENHETER_2026-11-03.md) rättades 5.197,
 faktorer bevarar korrelationskoefficienten men kan ändra diagrammets visuella
 form. Ange avrundning när exakta koefficienter anges till en figur som ger
 avrundade värden; kontrollera punkterna numeriskt.
+
+## Olikhetstecken i HTML 2026-11-03
+
+[Genomgång](OLIKHETER_HTML_2026-11-03.md) rättar Ma2 2.1091 och Ma3
+2.1152. Ett rått `<` direkt före en bokstav i text som infogas som HTML kan
+tolkas som början på en tagg och kapa formeln innan KaTeX hinner se den.
+Använd `&lt;` i HTML-text och HTML-renderade alternativ och kommentarer.
+Ändra däremot inte maskinläsbara `rättSvar` på detta sätt utan att kontrollera
+hur rättningsmotorn läser dem.
