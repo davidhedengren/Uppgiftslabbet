@@ -3098,3 +3098,13 @@ sneda urval kan minska slumpmässig osäkerhet men behöver inte undanröja
 systematisk snedvridning. Använd inte en ovillkorlig garanti för en förändring
 som förutsättningarna inte säkrar. Visa alternativa påståenden och kommentera
 felval, men bevara självbärande öppna frågor.
+
+## Ma1: korrelation och statistisk signifikans 2026-11-03
+
+[Genomgång](MA1_KORRELATION_BEGREPP_2026-11-03.md) skyddar 5.198, 5.512
+och 5.90. Att ett punktmoln är tätare kring en trend räcker inte ensamt för
+att jämföra korrelationskoefficienter utan jämförbara förutsättningar. En
+korrelation bevisar inte orsak; ett orsakssamband behöver inte heller alltid
+synas som en enkel korrelation. Ett p-värde är inte sannolikheten att
+nollhypotesen är sann, och statistisk signifikans garanterar varken praktisk
+betydelse eller representativt urval.
