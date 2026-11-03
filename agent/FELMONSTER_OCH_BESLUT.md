@@ -3108,3 +3108,9 @@ korrelation bevisar inte orsak; ett orsakssamband behöver inte heller alltid
 synas som en enkel korrelation. Ett p-värde är inte sannolikheten att
 nollhypotesen är sann, och statistisk signifikans garanterar varken praktisk
 betydelse eller representativt urval.
+
+I [uppföljningen](MA1_KORRELATION_JAMFORELSE_2026-11-03.md) förtydligades
+ytterligare 5.07, 5.25 och 5.69. När ett punktmoln beskrivs som tätare får
+den relativa spridningen inte ensam avgöra vilket som har starkast linjär
+korrelation; i 5.69 anges i stället att A är perfekt negativt och B inte är
+det. Kontrollera också diagramrubrikers storlek när bilden skalas för mobil.
