@@ -24,8 +24,10 @@ test('Runda 1 och 2: styckeform, förklaring före formeln och kommentar före s
 });
 
 // Runda 3: talet i en genererad svarsruta ska stämma med rättSvar inom toleransen.
-const tal=x=>{const m=x.match(/^\\\((-?)(\d{1,3}(?:\\,\d{3})+|\d+)(?:(?:\{,\}|,)(\d+))?(?:\\cdot10\^\{(-?\d+)\})?\\\)/);if(!m)return null;
- return (m[1]?-1:1)*Number(m[2].replace(/\\,/g,'')+'.'+(m[3]||'0'))*10**Number(m[4]||0);};
+// Svarsrader enligt agent/FACITMALL.md (2026-11-04) skrivs som vanlig text, t.ex. ”−1,33 m/s.”, och kontrolleras på samma sätt.
+// Tiopotenser i vanlig text (”8,9 · 10²³”) hoppas över.
+const tal=x=>{const m=x.match(/^\\\((-?)(\d{1,3}(?:\\,\d{3})+|\d+)(?:(?:\{,\}|,)(\d+))?(?:\\cdot10\^\{(-?\d+)\})?\\\)/)||x.match(/^([-−]?)(\d{1,3}(?: \d{3})+(?!\d)|\d+)(?:,(\d+))?(?=\.?(?:\s(?![·\d])|$))/);if(!m)return null;
+ return (m[1]?-1:1)*Number(m[2].replace(/\\,| /g,'')+'.'+(m[3]||'0'))*10**Number(m[4]||0);};
 test('Runda 3: svarsrutans tal stämmer med självrättningen',()=>{
  let n=0;
  for(const t of bank){

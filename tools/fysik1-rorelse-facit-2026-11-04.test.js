@@ -5,7 +5,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifter.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANK));
-const FÄRDIGA=['konstacc','st_diagram'];
+const FÄRDIGA=['konstacc','st_diagram','acceleration'];
 const RUBRIK_MED_FORMEL=/<p class="facit-rubrik">[^<]*\\\([^<]*\\\)[^<]*<\/p>/;
 const GENERISK=/<p class="facit-rubrik">(Steg \d+|Beräkna|Förenkla|Svar|Lösning)\.?<\/p>/;
 function brister(s,alt){
@@ -31,4 +31,8 @@ test('st_diagram: delfacit avslöjar inte senare delars svar',()=>{
   assert.doesNotMatch(d('3.13',3),/60\\ \\mathrm m|60 m/);
   assert.doesNotMatch(d('3.138',2),/100/);
   assert.doesNotMatch(d('3.36',1),/4\{,\}8/);
+});
+test('acceleration: andragradsekvationen i 3.360 löses grafiskt och tillåter GeoGebra',()=>{
+  const t=B.find(x=>x.id==='3.360');assert.equal(t.geogebra,true);assert.match(t.s,/grafiskt/);assert.match(t.s,/<svg[\s\S]*<polyline[\s\S]*<\/svg>/);
+  const r=8+Math.sqrt(96);assert.ok(Math.abs(t.rättSvar[0]-r)<1e-9&&Math.abs(t.rättSvar[1]-(40+20*r))<1e-9);
 });

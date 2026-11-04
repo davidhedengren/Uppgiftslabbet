@@ -38,3 +38,13 @@ Uppgiftslabbet och som hade den gamla mallen. Arbetet fortsätter därför i
 Inga räknefel hittades, och inga `rättSvar`, frågetexter eller toleranser är
 ändrade. Delfacit i 3.13 d, 3.36 b och 3.138 c avslöjar inte svaret på en senare del.
 Faciten är renderade i mobilbredd utan KaTeX-fel eller för breda formler.
+
+## Omgång 2: acceleration (48 uppgifter, 70 delfacit)
+
+- Formelrubriker: ”Hastighetsformeln: \(v=v_0+at\)”, ”Acceleration: \(a=\Delta v/\Delta t\)”,
+  ”Medelacceleration”, ”Retardation: \(b=|\Delta v|/\Delta t\)” och ”Gör om till m/s”.
+  Tecken och positiv riktning står i ett eget steg, ”Givet med tecken”.
+- 3.360 (omkörning) löses grafiskt med två kurvor, och lösningsformeln står som
+  alternativ. `geogebra: true`.
+- 3.207: det tidsvägda medelvärdet visas som formel.
+- Inga räknefel. Alla 48 svar är omräknade, och inga `rättSvar` eller frågetexter är ändrade.
