@@ -7,7 +7,7 @@ test('Lutande plan: åtta nivå 1-kort i alla tre delmomenten, med figur och sva
  const fam=new Set();
  for(const id of IDS){const t=q(id);
   assert.equal(t.omr,'lutande_plan',id);assert.equal(t.traningsniva,1,id);assert.match(t.t,/<svg/,id);
-  assert.match(t.s,/<p class="facit-svar"><strong>Svar:<\/strong>/,id);assert.doesNotMatch(t.s,/facit-steglista/,id);fam.add(t.familj);
+  assert.match(t.s,/<p class="facit-svar"><strong>Svar:<\/strong>/,id);assert.match(t.s,/facit-steglista/,id); /* facitmallen sedan 2026-11-04 */fam.add(t.familj);
  }
  assert.equal(fam.size,3);
  assert.equal(q('4.845').alternativ.find(a=>a.ratt).txt,'A');

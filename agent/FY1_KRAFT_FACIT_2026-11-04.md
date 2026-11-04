@@ -115,3 +115,15 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Inga räknefel. Alla 96 svar är omräknade.
 - Rubrikputs i hela Fy1-banken: 38 formelnamn mitt i en rubrik har fått gemen bokstav
   (”… och tidlösa formeln”, ”… och vågens kilogramvisning”). Egennamn (Newtons, Ohms, Mars) är orörda.
+
+## Omgång 9: lutande_plan (103 uppgifter)
+
+- Formelrubriker: ”Tyngdkraftens komposant längs planet: \(F_\parallel=mg\sin\alpha\)”, ”Normalkraft på
+  planet: \(N=mg\cos\alpha\)”, ”Glidgränsen: \(\mu=\tan\alpha\)”, ”Newtons andra lag nedför:
+  \(a=g(\sin\alpha-\mu\cos\alpha)\)”, motsvarande uppför, ”Friktionsfritt plan: \(a=g\sin\alpha\)”,
+  ”Konstant fart: \(\sum F_\parallel=0\)” samt rörelseformlerna. Snedriktade krafter (4.600–4.604,
+  4.629, 4.631) ställer upp jämvikt både vinkelrätt mot och längs planet.
+- Inga energimetoder: 4.618, 4.621 och 4.634 löses med tidlösa formeln längs planet.
+- Facitfigurerna i 4.132, 4.144, 4.222, 4.407 och 4.417 ligger kvar.
+- `tools/fysik1-lutande-plan.test.js` läser nu slutsvaret i svarsrutan, och nivå 1-testet kräver steglistan.
+- Inga räknefel. Alla 103 svar är omräknade.

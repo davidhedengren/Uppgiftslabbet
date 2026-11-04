@@ -93,7 +93,7 @@ test('Elevkortens egna avrundade givna värden ger svar inom rättningens tolera
 });
 test('Startfart, avrundning och kraftbalans finns på det fristående kortet',()=>{
  assert.match(q('4.610').spelDelar[2].t,/3,0 m\/s/);assert.match(q('4.610').spelDelar[2].s,/t_\{\\text\{upp\}\}/);
- assert.match(q('4.631').spelDelar[1].s,/40cos35/);assert.doesNotMatch(q('4.631').spelDelar[1].t,/5,8 kg/);
+ assert.match(q('4.631').spelDelar[1].s,/F\\cos\\alpha=mg\\sin\\alpha/);assert.doesNotMatch(q('4.631').spelDelar[1].t,/5,8 kg/);
  assert.match(q('4.616').spelDelar[1].t,/2,50 m/);assert.doesNotMatch(q('4.616').spelDelar[1].t,/21,0 m\/s/);
  assert.doesNotMatch(q('4.635').spelDelar[1].t,/andra backen/);assert.match(q('4.635').spelDelar[1].t,/19,0 m\/s/);
  assert.match(q('4.47').s,/0\{,\}590/);assert.match(q('4.124').spelDelar[0].s,/76\{,\}2/);
@@ -101,15 +101,12 @@ test('Startfart, avrundning och kraftbalans finns på det fristående kortet',()
  assert.doesNotMatch(q('4.491').ledtrad,/deler/);assert.doesNotMatch(q('4.590').spelDelar[1].ledtrad,/μ|mu/);
 });
 test('Facits numeriska slutsvar stämmer med de självständiga beräkningarna',()=>{
- const direct={'4.45a':/=([\d]+\{,\}[\d]+)\\,\\mathrm N/,'4.485':/Svar med tre värdesiffror: ([\d]+,[\d]+)/,'4.593b':/=([\d]+)\\,\\mathrm N/,'4.619a':/=([\d]+\{,\}[\d]+)\\,\\mathrm m/,'4.615':/Svar: ([\d]+,[\d]+) km\/h/,
-  // Nivå 1-korten 4.846-4.852 har exakta svar och visar dem med likhetstecken.
-  '4.846':/F_f=(\d+)\\ \\mathrm N/,'4.847':/F_N=(\d+)\\ \\mathrm N/,'4.849':/v=(\d+)\^\\circ/,'4.850':/=(\d+)\\ \\mathrm N/,'4.851':/F_f=(\d+)\\ \\mathrm N/,'4.852':/=(\d+)\\ \\mathrm N/};
+ // Sedan 2026-11-04 följer facit agent/FACITMALL.md: talet läses ur svarsrutan.
+ const svar=s=>{const m=/<strong>Svar:<\/strong>\s*(?:Ungefär\s*)?([−-]?\d+(?: \d{3})*(?:,\d+)?)/.exec(s);return m?Number(m[1].replace('−','-').replace(/ /g,'').replace(',','.')):NaN;};
  let checked=0;
  for(const[id,expected]of cases){const t=q(id),vs=Array.isArray(expected)?expected:[expected];
   vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,cardId=t.spelDelar?id+String.fromCharCode(97+i):id;
-   const hits=[...part.s.matchAll(/\\approx\s*(-?\d+(?:\{,\}\d+)?)(?:\\cdot10\^\{?(-?\d+)\}?)?/g)];
-   const last=hits.at(-1),literal=direct[cardId]?.exec(part.s),shown=direct[cardId]?(literal?Number(literal[1].replace('{,}',',').replace(',','.')):NaN):(last?Number(last[1].replace('{,}','.'))*10**Number(last[2]||0):NaN);
-   const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
+   const shown=svar(part.s),tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
    assert.ok(Number.isFinite(shown),`Ingen kontrollerbar slutsiffra i ${cardId}`);
    assert.ok(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)),`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`);checked++;
   });
