@@ -46,3 +46,7 @@ Hela familjen **Ems, polspänning och inre resistans**, 48 huvuduppgifter och 48
 ### Uppdatering efter verkningsgradsomgången
 
 **Effekt och verkningsgrad med inre resistans** är nu manuellt genomgången: 14 befintliga huvuduppgifter + 4 delkort förbättrade. 12 varierade nya huvuduppgifter ger familjen totalt 26. [Analys, nivåer och alla kommentarer](FY1_VERKNINGSGRAD_FACIT_2026-11-04.md). Återstående separat familj i kopplingar: Kretsanalys och blandade resistorkopplingar, 3 huvuduppgifter. Användaren har därefter skickat rapporter om figurerna 3.73, 3.93, 3.88 och formuleringen i Ma1 0.879; dessa hanteras i nästa avgränsade omgång.
+
+### Uppdatering: kopplingsområdet avslutat och absorberad dos granskad
+
+De tre återstående kopplingsfaciten 8.614/8.615/8.619 följer nu mallen. Området `kopplingar` innehåller 183 huvuduppgifter efter den tidigare utökningen; alla har steglista. Fem närliggande mätinstrumentuppgifter har också förbättrats. Hela familjen **Absorberad dos (Gy), 20 huvuduppgifter och 11 delkort**, är nu manuellt genomgången: [granskningslista och kommentarer](FY1_ABSORBERAD_DOS_FACIT_2026-11-04.md). Nästa prioritet inom Fy1 är **Ekvivalent dos (Sv), 35 huvuduppgifter**, sedan **Dosrat, avstånd och strålskydd, 22 huvuduppgifter**. Baslinjetabellerna ovan beskriver fortfarande inventeringens ursprungliga tidpunkt.
