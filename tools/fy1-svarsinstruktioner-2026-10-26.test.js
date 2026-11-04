@@ -34,6 +34,6 @@ test('svarVardesiffror är heltal 1–12 och hör till numeriska svar',()=>{
 });
 test('Ordet likformig används inte om acceleration eller retardation (underförstått i Fy1)',()=>{
   const kvar=[];for(const x of B){const t=JSON.stringify([x.t,x.spelIntro,x.s,x.ledtrad,x.spelDelar]);for(const m of t.matchAll(/.{30}likformig.{30}/gi))kvar.push(x.id);}
-  // kvar: geometrisk likformighet (2.224, 2.73) och en homogen stege (4.248)
-  assert.deepEqual([...new Set(kvar)].sort(),['2.224','2.73','4.248']);
+  // kvar: geometrisk likformighet (2.73). 2.224 och 4.248 har sedan 2026-11-04 facit enligt facitmallen utan ordet.
+  assert.deepEqual([...new Set(kvar)].sort(),['2.73']);
 });

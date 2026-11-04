@@ -127,3 +127,15 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Facitfigurerna i 4.132, 4.144, 4.222, 4.407 och 4.417 ligger kvar.
 - `tools/fysik1-lutande-plan.test.js` läser nu slutsvaret i svarsrutan, och nivå 1-testet kräver steglistan.
 - Inga räknefel. Alla 103 svar är omräknade.
+
+## Omgång 10: moment (88 uppgifter)
+
+- Formelrubriker: ”Kraftmoment: \(M=Fl\)”, ”Momentjämvikt: \(\sum M_{\text{moturs}}=\sum M_{\text{medurs}}\)”,
+  ”Moment med sned kraft: \(M=Fl\sin\theta\)”, ”Lodrät kraftjämvikt: \(\sum F_y=0\)”, ”Jämntjock balk:
+  tyngdkraften angriper i mitten”, ”Tyngdpunkt: \(x_T=\dfrac{m_1x_1+m_2x_2}{m_1+m_2}\)” och
+  ”Tippgräns: tyngdpunkten rakt över kanten”. Balansvågarna (4.902–4.909) förklaras med att
+  momentarmen är det vågräta avståndet till skålens lodlinje.
+- Facitfigurerna i 4.15, 4.79, 4.220, 4.263, 4.904 och 4.907 ligger kvar.
+- `tools/fy1-svarsinstruktioner-2026-10-26.test.js`: listan över kvarvarande ”likformig” är nu bara 2.73
+  (4.248 och 2.224 använder inte längre ordet).
+- Inga räknefel. Alla 88 svar är omräknade.
