@@ -1,0 +1,3395 @@
+{
+  "baseline": "1ff40ce",
+  "scope": "Samtliga huvudfacit och explicita spelDelar, även spel:false. Före denna omgångs 26 rättningar.",
+  "banks": [
+    {
+      "file": "uppgifter.js",
+      "tasks": 4495,
+      "facit": 7911,
+      "noSteps": 5987,
+      "noHeadings": 5986,
+      "noAnswer": 3070,
+      "thin": 1951,
+      "areas": [
+        {
+          "area": "enheter",
+          "tasks": 71,
+          "facit": 181,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 46
+        },
+        {
+          "area": "densitet",
+          "tasks": 178,
+          "facit": 231,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 12
+        },
+        {
+          "area": "matnogg",
+          "tasks": 68,
+          "facit": 77,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 3
+        },
+        {
+          "area": "gaslagen",
+          "tasks": 171,
+          "facit": 274,
+          "noSteps": 274,
+          "noHeadings": 274,
+          "noAnswer": 89,
+          "thin": 37
+        },
+        {
+          "area": "medelhastighet",
+          "tasks": 92,
+          "facit": 217,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 28
+        },
+        {
+          "area": "konstacc",
+          "tasks": 135,
+          "facit": 367,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 7
+        },
+        {
+          "area": "acceleration",
+          "tasks": 48,
+          "facit": 110,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 10
+        },
+        {
+          "area": "vektorer",
+          "tasks": 166,
+          "facit": 223,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 52
+        },
+        {
+          "area": "st_diagram",
+          "tasks": 54,
+          "facit": 80,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 10
+        },
+        {
+          "area": "vt_diagram",
+          "tasks": 68,
+          "facit": 114,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 24
+        },
+        {
+          "area": "at_diagram",
+          "tasks": 51,
+          "facit": 63,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 14
+        },
+        {
+          "area": "blandat_energi",
+          "tasks": 72,
+          "facit": 140,
+          "noSteps": 140,
+          "noHeadings": 140,
+          "noAnswer": 64,
+          "thin": 25
+        },
+        {
+          "area": "normalkraft",
+          "tasks": 59,
+          "facit": 80,
+          "noSteps": 80,
+          "noHeadings": 80,
+          "noAnswer": 19,
+          "thin": 26
+        },
+        {
+          "area": "newton2",
+          "tasks": 159,
+          "facit": 429,
+          "noSteps": 429,
+          "noHeadings": 429,
+          "noAnswer": 326,
+          "thin": 115
+        },
+        {
+          "area": "moment",
+          "tasks": 88,
+          "facit": 143,
+          "noSteps": 143,
+          "noHeadings": 143,
+          "noAnswer": 68,
+          "thin": 27
+        },
+        {
+          "area": "fjadrar",
+          "tasks": 55,
+          "facit": 94,
+          "noSteps": 94,
+          "noHeadings": 94,
+          "noAnswer": 47,
+          "thin": 36
+        },
+        {
+          "area": "gravitation",
+          "tasks": 53,
+          "facit": 83,
+          "noSteps": 83,
+          "noHeadings": 83,
+          "noAnswer": 37,
+          "thin": 8
+        },
+        {
+          "area": "tyngdkraft",
+          "tasks": 46,
+          "facit": 60,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 22
+        },
+        {
+          "area": "friktion",
+          "tasks": 96,
+          "facit": 180,
+          "noSteps": 180,
+          "noHeadings": 180,
+          "noAnswer": 97,
+          "thin": 32
+        },
+        {
+          "area": "kollisioner",
+          "tasks": 120,
+          "facit": 190,
+          "noSteps": 190,
+          "noHeadings": 190,
+          "noAnswer": 80,
+          "thin": 10
+        },
+        {
+          "area": "lutande_plan",
+          "tasks": 103,
+          "facit": 175,
+          "noSteps": 175,
+          "noHeadings": 175,
+          "noAnswer": 86,
+          "thin": 11
+        },
+        {
+          "area": "newton1",
+          "tasks": 95,
+          "facit": 201,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 27
+        },
+        {
+          "area": "arbete",
+          "tasks": 108,
+          "facit": 212,
+          "noSteps": 212,
+          "noHeadings": 212,
+          "noAnswer": 128,
+          "thin": 51
+        },
+        {
+          "area": "newton3",
+          "tasks": 53,
+          "facit": 53,
+          "noSteps": 53,
+          "noHeadings": 53,
+          "noAnswer": 4,
+          "thin": 20
+        },
+        {
+          "area": "arkimedes",
+          "tasks": 134,
+          "facit": 236,
+          "noSteps": 236,
+          "noHeadings": 236,
+          "noAnswer": 102,
+          "thin": 33
+        },
+        {
+          "area": "blandat_kraft",
+          "tasks": 53,
+          "facit": 121,
+          "noSteps": 121,
+          "noHeadings": 121,
+          "noAnswer": 85,
+          "thin": 38
+        },
+        {
+          "area": "effekt",
+          "tasks": 116,
+          "facit": 245,
+          "noSteps": 245,
+          "noHeadings": 245,
+          "noAnswer": 140,
+          "thin": 45
+        },
+        {
+          "area": "rorelseenergi",
+          "tasks": 113,
+          "facit": 280,
+          "noSteps": 280,
+          "noHeadings": 280,
+          "noAnswer": 173,
+          "thin": 31
+        },
+        {
+          "area": "rorelsemangd",
+          "tasks": 92,
+          "facit": 154,
+          "noSteps": 154,
+          "noHeadings": 154,
+          "noAnswer": 49,
+          "thin": 57
+        },
+        {
+          "area": "vatsketryck",
+          "tasks": 105,
+          "facit": 179,
+          "noSteps": 179,
+          "noHeadings": 179,
+          "noAnswer": 79,
+          "thin": 10
+        },
+        {
+          "area": "tryck",
+          "tasks": 108,
+          "facit": 157,
+          "noSteps": 157,
+          "noHeadings": 156,
+          "noAnswer": 43,
+          "thin": 39
+        },
+        {
+          "area": "varme",
+          "tasks": 127,
+          "facit": 188,
+          "noSteps": 188,
+          "noHeadings": 188,
+          "noAnswer": 66,
+          "thin": 41
+        },
+        {
+          "area": "fasandring",
+          "tasks": 103,
+          "facit": 152,
+          "noSteps": 152,
+          "noHeadings": 152,
+          "noAnswer": 56,
+          "thin": 35
+        },
+        {
+          "area": "kretsar",
+          "tasks": 72,
+          "facit": 113,
+          "noSteps": 113,
+          "noHeadings": 113,
+          "noAnswer": 40,
+          "thin": 31
+        },
+        {
+          "area": "kopplingar",
+          "tasks": 171,
+          "facit": 338,
+          "noSteps": 338,
+          "noHeadings": 338,
+          "noAnswer": 171,
+          "thin": 180
+        },
+        {
+          "area": "potential",
+          "tasks": 68,
+          "facit": 126,
+          "noSteps": 126,
+          "noHeadings": 126,
+          "noAnswer": 49,
+          "thin": 34
+        },
+        {
+          "area": "laddning",
+          "tasks": 52,
+          "facit": 71,
+          "noSteps": 71,
+          "noHeadings": 71,
+          "noAnswer": 20,
+          "thin": 12
+        },
+        {
+          "area": "falt",
+          "tasks": 67,
+          "facit": 106,
+          "noSteps": 106,
+          "noHeadings": 106,
+          "noAnswer": 40,
+          "thin": 40
+        },
+        {
+          "area": "parallellkoppling",
+          "tasks": 72,
+          "facit": 118,
+          "noSteps": 118,
+          "noHeadings": 118,
+          "noAnswer": 37,
+          "thin": 39
+        },
+        {
+          "area": "seriekoppling",
+          "tasks": 53,
+          "facit": 94,
+          "noSteps": 94,
+          "noHeadings": 94,
+          "noAnswer": 19,
+          "thin": 48
+        },
+        {
+          "area": "coulomb",
+          "tasks": 71,
+          "facit": 135,
+          "noSteps": 135,
+          "noHeadings": 135,
+          "noAnswer": 65,
+          "thin": 20
+        },
+        {
+          "area": "strom",
+          "tasks": 48,
+          "facit": 70,
+          "noSteps": 70,
+          "noHeadings": 70,
+          "noAnswer": 22,
+          "thin": 22
+        },
+        {
+          "area": "aktivitet",
+          "tasks": 101,
+          "facit": 190,
+          "noSteps": 190,
+          "noHeadings": 190,
+          "noAnswer": 184,
+          "thin": 114
+        },
+        {
+          "area": "stralning_materia",
+          "tasks": 35,
+          "facit": 44,
+          "noSteps": 44,
+          "noHeadings": 44,
+          "noAnswer": 26,
+          "thin": 26
+        },
+        {
+          "area": "straldoser",
+          "tasks": 77,
+          "facit": 125,
+          "noSteps": 125,
+          "noHeadings": 125,
+          "noAnswer": 121,
+          "thin": 78
+        },
+        {
+          "area": "medicinska_metoder",
+          "tasks": 38,
+          "facit": 53,
+          "noSteps": 53,
+          "noHeadings": 53,
+          "noAnswer": 31,
+          "thin": 25
+        },
+        {
+          "area": "karnreaktioner",
+          "tasks": 57,
+          "facit": 126,
+          "noSteps": 126,
+          "noHeadings": 126,
+          "noAnswer": 97,
+          "thin": 73
+        },
+        {
+          "area": "sonderfall",
+          "tasks": 46,
+          "facit": 66,
+          "noSteps": 66,
+          "noHeadings": 66,
+          "noAnswer": 30,
+          "thin": 38
+        },
+        {
+          "area": "fission",
+          "tasks": 37,
+          "facit": 71,
+          "noSteps": 71,
+          "noHeadings": 71,
+          "noAnswer": 59,
+          "thin": 32
+        },
+        {
+          "area": "nuklider",
+          "tasks": 84,
+          "facit": 160,
+          "noSteps": 160,
+          "noHeadings": 160,
+          "noAnswer": 137,
+          "thin": 89
+        },
+        {
+          "area": "fusion",
+          "tasks": 35,
+          "facit": 63,
+          "noSteps": 63,
+          "noHeadings": 63,
+          "noAnswer": 45,
+          "thin": 23
+        },
+        {
+          "area": "standardmodellen",
+          "tasks": 31,
+          "facit": 33,
+          "noSteps": 33,
+          "noHeadings": 33,
+          "noAnswer": 21,
+          "thin": 12
+        },
+        {
+          "area": "em_stralning",
+          "tasks": 41,
+          "facit": 41,
+          "noSteps": 41,
+          "noHeadings": 41,
+          "noAnswer": 14,
+          "thin": 13
+        },
+        {
+          "area": "fyra_krafterna",
+          "tasks": 27,
+          "facit": 27,
+          "noSteps": 27,
+          "noHeadings": 27,
+          "noAnswer": 4,
+          "thin": 7
+        },
+        {
+          "area": "multimeter",
+          "tasks": 52,
+          "facit": 52,
+          "noSteps": 52,
+          "noHeadings": 52,
+          "noAnswer": 0,
+          "thin": 13
+        }
+      ]
+    },
+    {
+      "file": "uppgifter2.js",
+      "tasks": 1765,
+      "facit": 2739,
+      "noSteps": 229,
+      "noHeadings": 2727,
+      "noAnswer": 113,
+      "thin": 1221,
+      "areas": [
+        {
+          "area": "cirkel",
+          "tasks": 56,
+          "facit": 126,
+          "noSteps": 1,
+          "noHeadings": 125,
+          "noAnswer": 5,
+          "thin": 57
+        },
+        {
+          "area": "kast",
+          "tasks": 68,
+          "facit": 186,
+          "noSteps": 6,
+          "noHeadings": 186,
+          "noAnswer": 4,
+          "thin": 65
+        },
+        {
+          "area": "fjadrar",
+          "tasks": 50,
+          "facit": 84,
+          "noSteps": 0,
+          "noHeadings": 83,
+          "noAnswer": 0,
+          "thin": 50
+        },
+        {
+          "area": "svangningar",
+          "tasks": 84,
+          "facit": 200,
+          "noSteps": 0,
+          "noHeadings": 200,
+          "noAnswer": 0,
+          "thin": 159
+        },
+        {
+          "area": "pendlar",
+          "tasks": 36,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 52,
+          "noAnswer": 1,
+          "thin": 33
+        },
+        {
+          "area": "vagrorelser",
+          "tasks": 39,
+          "facit": 56,
+          "noSteps": 0,
+          "noHeadings": 56,
+          "noAnswer": 0,
+          "thin": 26
+        },
+        {
+          "area": "staende_vagor",
+          "tasks": 58,
+          "facit": 104,
+          "noSteps": 0,
+          "noHeadings": 104,
+          "noAnswer": 0,
+          "thin": 63
+        },
+        {
+          "area": "ljud_horsel",
+          "tasks": 62,
+          "facit": 107,
+          "noSteps": 0,
+          "noHeadings": 107,
+          "noAnswer": 0,
+          "thin": 64
+        },
+        {
+          "area": "ljudvagor",
+          "tasks": 58,
+          "facit": 87,
+          "noSteps": 1,
+          "noHeadings": 87,
+          "noAnswer": 0,
+          "thin": 45
+        },
+        {
+          "area": "interferens",
+          "tasks": 80,
+          "facit": 106,
+          "noSteps": 20,
+          "noHeadings": 106,
+          "noAnswer": 10,
+          "thin": 27
+        },
+        {
+          "area": "elektriska_falt",
+          "tasks": 41,
+          "facit": 60,
+          "noSteps": 21,
+          "noHeadings": 57,
+          "noAnswer": 12,
+          "thin": 14
+        },
+        {
+          "area": "magnetism",
+          "tasks": 44,
+          "facit": 47,
+          "noSteps": 0,
+          "noHeadings": 47,
+          "noAnswer": 0,
+          "thin": 16
+        },
+        {
+          "area": "orsted",
+          "tasks": 50,
+          "facit": 57,
+          "noSteps": 0,
+          "noHeadings": 57,
+          "noAnswer": 0,
+          "thin": 18
+        },
+        {
+          "area": "laddade_partiklar",
+          "tasks": 84,
+          "facit": 134,
+          "noSteps": 6,
+          "noHeadings": 134,
+          "noAnswer": 0,
+          "thin": 43
+        },
+        {
+          "area": "jordens_magnetfalt",
+          "tasks": 40,
+          "facit": 40,
+          "noSteps": 20,
+          "noHeadings": 40,
+          "noAnswer": 6,
+          "thin": 5
+        },
+        {
+          "area": "induktion",
+          "tasks": 48,
+          "facit": 50,
+          "noSteps": 12,
+          "noHeadings": 50,
+          "noAnswer": 1,
+          "thin": 5
+        },
+        {
+          "area": "induktion_ledare",
+          "tasks": 43,
+          "facit": 48,
+          "noSteps": 26,
+          "noHeadings": 48,
+          "noAnswer": 4,
+          "thin": 12
+        },
+        {
+          "area": "vaxelstrom",
+          "tasks": 37,
+          "facit": 57,
+          "noSteps": 1,
+          "noHeadings": 57,
+          "noAnswer": 6,
+          "thin": 26
+        },
+        {
+          "area": "vaxelstrom_spole_kondensator",
+          "tasks": 27,
+          "facit": 34,
+          "noSteps": 15,
+          "noHeadings": 34,
+          "noAnswer": 6,
+          "thin": 9
+        },
+        {
+          "area": "kast_elfalt",
+          "tasks": 33,
+          "facit": 57,
+          "noSteps": 17,
+          "noHeadings": 57,
+          "noAnswer": 9,
+          "thin": 19
+        },
+        {
+          "area": "spolar",
+          "tasks": 72,
+          "facit": 83,
+          "noSteps": 0,
+          "noHeadings": 83,
+          "noAnswer": 0,
+          "thin": 32
+        },
+        {
+          "area": "em_vagor",
+          "tasks": 34,
+          "facit": 44,
+          "noSteps": 8,
+          "noHeadings": 41,
+          "noAnswer": 1,
+          "thin": 15
+        },
+        {
+          "area": "vagrorelselara",
+          "tasks": 47,
+          "facit": 80,
+          "noSteps": 0,
+          "noHeadings": 80,
+          "noAnswer": 0,
+          "thin": 43
+        },
+        {
+          "area": "temperaturstralning",
+          "tasks": 48,
+          "facit": 71,
+          "noSteps": 0,
+          "noHeadings": 71,
+          "noAnswer": 1,
+          "thin": 42
+        },
+        {
+          "area": "straloptik",
+          "tasks": 67,
+          "facit": 116,
+          "noSteps": 1,
+          "noHeadings": 116,
+          "noAnswer": 1,
+          "thin": 61
+        },
+        {
+          "area": "ljus_partikelstrom",
+          "tasks": 51,
+          "facit": 92,
+          "noSteps": 0,
+          "noHeadings": 92,
+          "noAnswer": 2,
+          "thin": 55
+        },
+        {
+          "area": "de_broglie",
+          "tasks": 26,
+          "facit": 41,
+          "noSteps": 14,
+          "noHeadings": 41,
+          "noAnswer": 7,
+          "thin": 17
+        },
+        {
+          "area": "atomstruktur",
+          "tasks": 32,
+          "facit": 47,
+          "noSteps": 8,
+          "noHeadings": 47,
+          "noAnswer": 0,
+          "thin": 15
+        },
+        {
+          "area": "farg_ljusstyrka",
+          "tasks": 52,
+          "facit": 88,
+          "noSteps": 9,
+          "noHeadings": 85,
+          "noAnswer": 0,
+          "thin": 41
+        },
+        {
+          "area": "exoplaneter",
+          "tasks": 29,
+          "facit": 33,
+          "noSteps": 6,
+          "noHeadings": 33,
+          "noAnswer": 6,
+          "thin": 9
+        },
+        {
+          "area": "stjarnornas_utveckling",
+          "tasks": 29,
+          "facit": 31,
+          "noSteps": 6,
+          "noHeadings": 31,
+          "noAnswer": 6,
+          "thin": 10
+        },
+        {
+          "area": "kosmologi",
+          "tasks": 37,
+          "facit": 42,
+          "noSteps": 0,
+          "noHeadings": 42,
+          "noAnswer": 0,
+          "thin": 9
+        },
+        {
+          "area": "avstandsmatning",
+          "tasks": 45,
+          "facit": 68,
+          "noSteps": 6,
+          "noHeadings": 68,
+          "noAnswer": 13,
+          "thin": 40
+        },
+        {
+          "area": "magnituder",
+          "tasks": 53,
+          "facit": 85,
+          "noSteps": 19,
+          "noHeadings": 85,
+          "noAnswer": 2,
+          "thin": 49
+        },
+        {
+          "area": "tidsdilatation",
+          "tasks": 34,
+          "facit": 36,
+          "noSteps": 6,
+          "noHeadings": 35,
+          "noAnswer": 7,
+          "thin": 11
+        },
+        {
+          "area": "langdkontraktion",
+          "tasks": 34,
+          "facit": 41,
+          "noSteps": 0,
+          "noHeadings": 41,
+          "noAnswer": 1,
+          "thin": 8
+        },
+        {
+          "area": "relativistisk_energi",
+          "tasks": 37,
+          "facit": 49,
+          "noSteps": 0,
+          "noHeadings": 49,
+          "noAnswer": 2,
+          "thin": 8
+        }
+      ]
+    },
+    {
+      "file": "uppgifterma1.js",
+      "tasks": 4730,
+      "facit": 5690,
+      "noSteps": 461,
+      "noHeadings": 4946,
+      "noAnswer": 1793,
+      "thin": 3663,
+      "areas": [
+        {
+          "area": "decimaltal_positionssystem",
+          "tasks": 90,
+          "facit": 141,
+          "noSteps": 9,
+          "noHeadings": 140,
+          "noAnswer": 46,
+          "thin": 112
+        },
+        {
+          "area": "negativa_tal",
+          "tasks": 104,
+          "facit": 158,
+          "noSteps": 0,
+          "noHeadings": 7,
+          "noAnswer": 7,
+          "thin": 77
+        },
+        {
+          "area": "brakform",
+          "tasks": 50,
+          "facit": 50,
+          "noSteps": 5,
+          "noHeadings": 48,
+          "noAnswer": 14,
+          "thin": 29
+        },
+        {
+          "area": "brakrakning",
+          "tasks": 98,
+          "facit": 119,
+          "noSteps": 19,
+          "noHeadings": 114,
+          "noAnswer": 40,
+          "thin": 78
+        },
+        {
+          "area": "tal_rakneordning",
+          "tasks": 96,
+          "facit": 108,
+          "noSteps": 0,
+          "noHeadings": 9,
+          "noAnswer": 8,
+          "thin": 62
+        },
+        {
+          "area": "avrundning",
+          "tasks": 67,
+          "facit": 67,
+          "noSteps": 9,
+          "noHeadings": 58,
+          "noAnswer": 2,
+          "thin": 29
+        },
+        {
+          "area": "overslag_grunder",
+          "tasks": 65,
+          "facit": 65,
+          "noSteps": 10,
+          "noHeadings": 56,
+          "noAnswer": 11,
+          "thin": 44
+        },
+        {
+          "area": "enhetsbyten",
+          "tasks": 139,
+          "facit": 151,
+          "noSteps": 36,
+          "noHeadings": 54,
+          "noAnswer": 15,
+          "thin": 36
+        },
+        {
+          "area": "tiopotenser_prefix",
+          "tasks": 72,
+          "facit": 72,
+          "noSteps": 32,
+          "noHeadings": 69,
+          "noAnswer": 34,
+          "thin": 53
+        },
+        {
+          "area": "prefix",
+          "tasks": 93,
+          "facit": 99,
+          "noSteps": 20,
+          "noHeadings": 30,
+          "noAnswer": 5,
+          "thin": 24
+        },
+        {
+          "area": "andelar",
+          "tasks": 56,
+          "facit": 56,
+          "noSteps": 6,
+          "noHeadings": 55,
+          "noAnswer": 1,
+          "thin": 42
+        },
+        {
+          "area": "forhallanden",
+          "tasks": 63,
+          "facit": 63,
+          "noSteps": 3,
+          "noHeadings": 60,
+          "noAnswer": 0,
+          "thin": 50
+        },
+        {
+          "area": "proportionalitet_grunder",
+          "tasks": 81,
+          "facit": 81,
+          "noSteps": 11,
+          "noHeadings": 78,
+          "noAnswer": 1,
+          "thin": 56
+        },
+        {
+          "area": "algebraiska_uttryck",
+          "tasks": 41,
+          "facit": 41,
+          "noSteps": 5,
+          "noHeadings": 40,
+          "noAnswer": 15,
+          "thin": 36
+        },
+        {
+          "area": "multiplicera_uttryck",
+          "tasks": 67,
+          "facit": 84,
+          "noSteps": 5,
+          "noHeadings": 83,
+          "noAnswer": 72,
+          "thin": 67
+        },
+        {
+          "area": "faktorisering",
+          "tasks": 67,
+          "facit": 67,
+          "noSteps": 5,
+          "noHeadings": 64,
+          "noAnswer": 49,
+          "thin": 40
+        },
+        {
+          "area": "formler",
+          "tasks": 60,
+          "facit": 62,
+          "noSteps": 8,
+          "noHeadings": 49,
+          "noAnswer": 35,
+          "thin": 38
+        },
+        {
+          "area": "ekv_problemlosning",
+          "tasks": 110,
+          "facit": 110,
+          "noSteps": 1,
+          "noHeadings": 104,
+          "noAnswer": 26,
+          "thin": 75
+        },
+        {
+          "area": "intervall",
+          "tasks": 55,
+          "facit": 55,
+          "noSteps": 0,
+          "noHeadings": 49,
+          "noAnswer": 41,
+          "thin": 40
+        },
+        {
+          "area": "linjara_olikheter",
+          "tasks": 69,
+          "facit": 69,
+          "noSteps": 1,
+          "noHeadings": 49,
+          "noAnswer": 41,
+          "thin": 44
+        },
+        {
+          "area": "forenkla_uttryck",
+          "tasks": 104,
+          "facit": 119,
+          "noSteps": 8,
+          "noHeadings": 110,
+          "noAnswer": 77,
+          "thin": 88
+        },
+        {
+          "area": "ekv_brak",
+          "tasks": 107,
+          "facit": 107,
+          "noSteps": 0,
+          "noHeadings": 48,
+          "noAnswer": 7,
+          "thin": 69
+        },
+        {
+          "area": "linjara_ekvationer",
+          "tasks": 46,
+          "facit": 46,
+          "noSteps": 8,
+          "noHeadings": 40,
+          "noAnswer": 12,
+          "thin": 38
+        },
+        {
+          "area": "ekv_parenteser",
+          "tasks": 64,
+          "facit": 64,
+          "noSteps": 23,
+          "noHeadings": 63,
+          "noAnswer": 13,
+          "thin": 42
+        },
+        {
+          "area": "ekv_flera_variabeltermer",
+          "tasks": 48,
+          "facit": 48,
+          "noSteps": 2,
+          "noHeadings": 45,
+          "noAnswer": 7,
+          "thin": 39
+        },
+        {
+          "area": "funktionsbegreppet",
+          "tasks": 106,
+          "facit": 203,
+          "noSteps": 52,
+          "noHeadings": 201,
+          "noAnswer": 101,
+          "thin": 165
+        },
+        {
+          "area": "representationer",
+          "tasks": 57,
+          "facit": 76,
+          "noSteps": 4,
+          "noHeadings": 68,
+          "noAnswer": 25,
+          "thin": 39
+        },
+        {
+          "area": "definitionsmangd_vardemangd",
+          "tasks": 41,
+          "facit": 48,
+          "noSteps": 1,
+          "noHeadings": 47,
+          "noAnswer": 9,
+          "thin": 33
+        },
+        {
+          "area": "grafisk_ekvationslosning",
+          "tasks": 68,
+          "facit": 75,
+          "noSteps": 1,
+          "noHeadings": 61,
+          "noAnswer": 35,
+          "thin": 43
+        },
+        {
+          "area": "linjara_funktioner",
+          "tasks": 57,
+          "facit": 88,
+          "noSteps": 1,
+          "noHeadings": 80,
+          "noAnswer": 32,
+          "thin": 48
+        },
+        {
+          "area": "rata_linjens_ekvation",
+          "tasks": 59,
+          "facit": 85,
+          "noSteps": 0,
+          "noHeadings": 81,
+          "noAnswer": 19,
+          "thin": 45
+        },
+        {
+          "area": "bestamma_linjar_funktion",
+          "tasks": 74,
+          "facit": 93,
+          "noSteps": 1,
+          "noHeadings": 89,
+          "noAnswer": 17,
+          "thin": 60
+        },
+        {
+          "area": "exponentialfunktioner",
+          "tasks": 52,
+          "facit": 78,
+          "noSteps": 5,
+          "noHeadings": 74,
+          "noAnswer": 20,
+          "thin": 37
+        },
+        {
+          "area": "potensfunktioner",
+          "tasks": 54,
+          "facit": 66,
+          "noSteps": 0,
+          "noHeadings": 65,
+          "noAnswer": 24,
+          "thin": 55
+        },
+        {
+          "area": "jamfora_modeller",
+          "tasks": 64,
+          "facit": 84,
+          "noSteps": 4,
+          "noHeadings": 83,
+          "noAnswer": 32,
+          "thin": 41
+        },
+        {
+          "area": "potensregler",
+          "tasks": 60,
+          "facit": 83,
+          "noSteps": 8,
+          "noHeadings": 83,
+          "noAnswer": 64,
+          "thin": 66
+        },
+        {
+          "area": "potensekvationer",
+          "tasks": 59,
+          "facit": 82,
+          "noSteps": 0,
+          "noHeadings": 76,
+          "noAnswer": 26,
+          "thin": 56
+        },
+        {
+          "area": "procent",
+          "tasks": 57,
+          "facit": 66,
+          "noSteps": 10,
+          "noHeadings": 59,
+          "noAnswer": 13,
+          "thin": 36
+        },
+        {
+          "area": "index",
+          "tasks": 52,
+          "facit": 60,
+          "noSteps": 4,
+          "noHeadings": 59,
+          "noAnswer": 12,
+          "thin": 53
+        },
+        {
+          "area": "forandringsfaktor",
+          "tasks": 40,
+          "facit": 69,
+          "noSteps": 11,
+          "noHeadings": 68,
+          "noAnswer": 23,
+          "thin": 46
+        },
+        {
+          "area": "upprepade_forandringar",
+          "tasks": 59,
+          "facit": 80,
+          "noSteps": 5,
+          "noHeadings": 75,
+          "noAnswer": 34,
+          "thin": 56
+        },
+        {
+          "area": "genomsnittlig_forandring",
+          "tasks": 57,
+          "facit": 68,
+          "noSteps": 4,
+          "noHeadings": 63,
+          "noAnswer": 15,
+          "thin": 40
+        },
+        {
+          "area": "ranta",
+          "tasks": 51,
+          "facit": 63,
+          "noSteps": 22,
+          "noHeadings": 62,
+          "noAnswer": 25,
+          "thin": 41
+        },
+        {
+          "area": "amortering",
+          "tasks": 50,
+          "facit": 56,
+          "noSteps": 1,
+          "noHeadings": 56,
+          "noAnswer": 19,
+          "thin": 43
+        },
+        {
+          "area": "pythagoras",
+          "tasks": 48,
+          "facit": 56,
+          "noSteps": 0,
+          "noHeadings": 55,
+          "noAnswer": 14,
+          "thin": 37
+        },
+        {
+          "area": "sinus_cosinus_tangens",
+          "tasks": 58,
+          "facit": 71,
+          "noSteps": 0,
+          "noHeadings": 71,
+          "noAnswer": 30,
+          "thin": 45
+        },
+        {
+          "area": "arcusfunktioner",
+          "tasks": 46,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 52,
+          "noAnswer": 5,
+          "thin": 32
+        },
+        {
+          "area": "strackor_vinklar",
+          "tasks": 45,
+          "facit": 55,
+          "noSteps": 1,
+          "noHeadings": 54,
+          "noAnswer": 18,
+          "thin": 31
+        },
+        {
+          "area": "koordinatgeometri",
+          "tasks": 46,
+          "facit": 46,
+          "noSteps": 0,
+          "noHeadings": 46,
+          "noAnswer": 7,
+          "thin": 42
+        },
+        {
+          "area": "vektorer",
+          "tasks": 50,
+          "facit": 64,
+          "noSteps": 4,
+          "noHeadings": 60,
+          "noAnswer": 16,
+          "thin": 47
+        },
+        {
+          "area": "vektor_addition_subtraktion",
+          "tasks": 42,
+          "facit": 62,
+          "noSteps": 6,
+          "noHeadings": 62,
+          "noAnswer": 15,
+          "thin": 44
+        },
+        {
+          "area": "vektor_absolutbelopp",
+          "tasks": 47,
+          "facit": 64,
+          "noSteps": 1,
+          "noHeadings": 63,
+          "noAnswer": 15,
+          "thin": 50
+        },
+        {
+          "area": "vektor_skalar",
+          "tasks": 48,
+          "facit": 60,
+          "noSteps": 1,
+          "noHeadings": 60,
+          "noAnswer": 10,
+          "thin": 43
+        },
+        {
+          "area": "omkrets_area",
+          "tasks": 39,
+          "facit": 39,
+          "noSteps": 5,
+          "noHeadings": 39,
+          "noAnswer": 5,
+          "thin": 33
+        },
+        {
+          "area": "volym",
+          "tasks": 39,
+          "facit": 39,
+          "noSteps": 5,
+          "noHeadings": 39,
+          "noAnswer": 5,
+          "thin": 34
+        },
+        {
+          "area": "kvadratrotter",
+          "tasks": 33,
+          "facit": 33,
+          "noSteps": 6,
+          "noHeadings": 33,
+          "noAnswer": 6,
+          "thin": 27
+        },
+        {
+          "area": "grundlaggande_sannolikhet",
+          "tasks": 48,
+          "facit": 48,
+          "noSteps": 0,
+          "noHeadings": 48,
+          "noAnswer": 14,
+          "thin": 31
+        },
+        {
+          "area": "oberoende_handelser",
+          "tasks": 62,
+          "facit": 76,
+          "noSteps": 0,
+          "noHeadings": 49,
+          "noAnswer": 11,
+          "thin": 30
+        },
+        {
+          "area": "beroende_handelser",
+          "tasks": 62,
+          "facit": 75,
+          "noSteps": 2,
+          "noHeadings": 73,
+          "noAnswer": 19,
+          "thin": 42
+        },
+        {
+          "area": "komplementhandelse",
+          "tasks": 49,
+          "facit": 62,
+          "noSteps": 1,
+          "noHeadings": 61,
+          "noAnswer": 19,
+          "thin": 35
+        },
+        {
+          "area": "sannolikhet_flera_steg",
+          "tasks": 48,
+          "facit": 59,
+          "noSteps": 0,
+          "noHeadings": 59,
+          "noAnswer": 13,
+          "thin": 27
+        },
+        {
+          "area": "risk_sakerhet",
+          "tasks": 46,
+          "facit": 51,
+          "noSteps": 4,
+          "noHeadings": 47,
+          "noAnswer": 5,
+          "thin": 39
+        },
+        {
+          "area": "korrelation",
+          "tasks": 85,
+          "facit": 90,
+          "noSteps": 9,
+          "noHeadings": 76,
+          "noAnswer": 12,
+          "thin": 42
+        },
+        {
+          "area": "urvalsmetoder",
+          "tasks": 50,
+          "facit": 53,
+          "noSteps": 5,
+          "noHeadings": 46,
+          "noAnswer": 13,
+          "thin": 22
+        },
+        {
+          "area": "signifikans",
+          "tasks": 85,
+          "facit": 87,
+          "noSteps": 17,
+          "noHeadings": 79,
+          "noAnswer": 24,
+          "thin": 40
+        },
+        {
+          "area": "kalkylprogram",
+          "tasks": 41,
+          "facit": 79,
+          "noSteps": 0,
+          "noHeadings": 78,
+          "noAnswer": 52,
+          "thin": 57
+        },
+        {
+          "area": "monster_samband",
+          "tasks": 40,
+          "facit": 43,
+          "noSteps": 8,
+          "noHeadings": 42,
+          "noAnswer": 14,
+          "thin": 31
+        },
+        {
+          "area": "samhallsliv",
+          "tasks": 57,
+          "facit": 62,
+          "noSteps": 0,
+          "noHeadings": 62,
+          "noAnswer": 27,
+          "thin": 30
+        },
+        {
+          "area": "programmering",
+          "tasks": 34,
+          "facit": 37,
+          "noSteps": 6,
+          "noHeadings": 37,
+          "noAnswer": 18,
+          "thin": 29
+        },
+        {
+          "area": "proportionalitet_yrke",
+          "tasks": 54,
+          "facit": 89,
+          "noSteps": 6,
+          "noHeadings": 89,
+          "noAnswer": 53,
+          "thin": 67
+        },
+        {
+          "area": "skala_likformighet",
+          "tasks": 53,
+          "facit": 61,
+          "noSteps": 3,
+          "noHeadings": 59,
+          "noAnswer": 28,
+          "thin": 45
+        },
+        {
+          "area": "matning_enheter",
+          "tasks": 40,
+          "facit": 75,
+          "noSteps": 5,
+          "noHeadings": 71,
+          "noAnswer": 26,
+          "thin": 35
+        },
+        {
+          "area": "uppskattning_overslag",
+          "tasks": 42,
+          "facit": 44,
+          "noSteps": 2,
+          "noHeadings": 39,
+          "noAnswer": 12,
+          "thin": 23
+        },
+        {
+          "area": "matfel_felmarginal",
+          "tasks": 38,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 52,
+          "noAnswer": 34,
+          "thin": 45
+        },
+        {
+          "area": "spill_svinnostnad",
+          "tasks": 45,
+          "facit": 58,
+          "noSteps": 1,
+          "noHeadings": 58,
+          "noAnswer": 16,
+          "thin": 45
+        },
+        {
+          "area": "kostnadsberakningar",
+          "tasks": 51,
+          "facit": 71,
+          "noSteps": 0,
+          "noHeadings": 67,
+          "noAnswer": 36,
+          "thin": 61
+        },
+        {
+          "area": "sakerhetsmarginaler",
+          "tasks": 43,
+          "facit": 54,
+          "noSteps": 0,
+          "noHeadings": 54,
+          "noAnswer": 17,
+          "thin": 43
+        },
+        {
+          "area": "yrkesformler",
+          "tasks": 49,
+          "facit": 52,
+          "noSteps": 3,
+          "noHeadings": 48,
+          "noAnswer": 37,
+          "thin": 30
+        },
+        {
+          "area": "yrkesverktyg",
+          "tasks": 38,
+          "facit": 46,
+          "noSteps": 0,
+          "noHeadings": 46,
+          "noAnswer": 23,
+          "thin": 38
+        }
+      ]
+    },
+    {
+      "file": "uppgifterma2.js",
+      "tasks": 3362,
+      "facit": 4231,
+      "noSteps": 421,
+      "noHeadings": 2818,
+      "noAnswer": 636,
+      "thin": 1918,
+      "areas": [
+        {
+          "area": "multiplicera_parenteser",
+          "tasks": 46,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 39,
+          "noAnswer": 1,
+          "thin": 30
+        },
+        {
+          "area": "konjugatregeln",
+          "tasks": 45,
+          "facit": 45,
+          "noSteps": 0,
+          "noHeadings": 26,
+          "noAnswer": 1,
+          "thin": 31
+        },
+        {
+          "area": "rata_linjens_ekvation",
+          "tasks": 50,
+          "facit": 61,
+          "noSteps": 6,
+          "noHeadings": 51,
+          "noAnswer": 7,
+          "thin": 44
+        },
+        {
+          "area": "bestamma_linjara_funktioner",
+          "tasks": 51,
+          "facit": 53,
+          "noSteps": 9,
+          "noHeadings": 42,
+          "noAnswer": 7,
+          "thin": 29
+        },
+        {
+          "area": "linjara_representationer",
+          "tasks": 52,
+          "facit": 62,
+          "noSteps": 9,
+          "noHeadings": 46,
+          "noAnswer": 9,
+          "thin": 30
+        },
+        {
+          "area": "kvadreringsreglerna",
+          "tasks": 49,
+          "facit": 51,
+          "noSteps": 0,
+          "noHeadings": 40,
+          "noAnswer": 3,
+          "thin": 29
+        },
+        {
+          "area": "linjara_ekvationssystem",
+          "tasks": 52,
+          "facit": 52,
+          "noSteps": 7,
+          "noHeadings": 43,
+          "noAnswer": 6,
+          "thin": 29
+        },
+        {
+          "area": "substitutionsmetoden",
+          "tasks": 52,
+          "facit": 52,
+          "noSteps": 1,
+          "noHeadings": 45,
+          "noAnswer": 1,
+          "thin": 26
+        },
+        {
+          "area": "additionsmetoden",
+          "tasks": 43,
+          "facit": 43,
+          "noSteps": 1,
+          "noHeadings": 43,
+          "noAnswer": 0,
+          "thin": 22
+        },
+        {
+          "area": "grafisk_losning_ekvationssystem",
+          "tasks": 53,
+          "facit": 53,
+          "noSteps": 16,
+          "noHeadings": 39,
+          "noAnswer": 5,
+          "thin": 20
+        },
+        {
+          "area": "speciella_ekvationssystem",
+          "tasks": 47,
+          "facit": 53,
+          "noSteps": 6,
+          "noHeadings": 36,
+          "noAnswer": 8,
+          "thin": 13
+        },
+        {
+          "area": "ekvationssystem_tre_obekanta",
+          "tasks": 51,
+          "facit": 51,
+          "noSteps": 0,
+          "noHeadings": 42,
+          "noAnswer": 0,
+          "thin": 20
+        },
+        {
+          "area": "ekvationssystem_tillampningar",
+          "tasks": 56,
+          "facit": 65,
+          "noSteps": 18,
+          "noHeadings": 55,
+          "noAnswer": 9,
+          "thin": 25
+        },
+        {
+          "area": "faktorisering",
+          "tasks": 50,
+          "facit": 56,
+          "noSteps": 1,
+          "noHeadings": 46,
+          "noAnswer": 3,
+          "thin": 36
+        },
+        {
+          "area": "enkla_andragradsekvationer",
+          "tasks": 38,
+          "facit": 53,
+          "noSteps": 7,
+          "noHeadings": 37,
+          "noAnswer": 9,
+          "thin": 26
+        },
+        {
+          "area": "losningsformel_andragrad",
+          "tasks": 44,
+          "facit": 53,
+          "noSteps": 12,
+          "noHeadings": 46,
+          "noAnswer": 0,
+          "thin": 21
+        },
+        {
+          "area": "andragradsfunktioner",
+          "tasks": 42,
+          "facit": 66,
+          "noSteps": 20,
+          "noHeadings": 53,
+          "noAnswer": 4,
+          "thin": 28
+        },
+        {
+          "area": "andragradsfunktion_graf",
+          "tasks": 37,
+          "facit": 71,
+          "noSteps": 41,
+          "noHeadings": 70,
+          "noAnswer": 4,
+          "thin": 28
+        },
+        {
+          "area": "fran_graf_till_formel",
+          "tasks": 37,
+          "facit": 43,
+          "noSteps": 1,
+          "noHeadings": 37,
+          "noAnswer": 0,
+          "thin": 27
+        },
+        {
+          "area": "symmetrilinje_extrempunkt",
+          "tasks": 37,
+          "facit": 43,
+          "noSteps": 10,
+          "noHeadings": 43,
+          "noAnswer": 0,
+          "thin": 23
+        },
+        {
+          "area": "nollproduktmetoden",
+          "tasks": 37,
+          "facit": 56,
+          "noSteps": 11,
+          "noHeadings": 46,
+          "noAnswer": 7,
+          "thin": 22
+        },
+        {
+          "area": "exponentialfunktioner",
+          "tasks": 40,
+          "facit": 61,
+          "noSteps": 3,
+          "noHeadings": 41,
+          "noAnswer": 6,
+          "thin": 33
+        },
+        {
+          "area": "exponentialgraf",
+          "tasks": 49,
+          "facit": 67,
+          "noSteps": 18,
+          "noHeadings": 42,
+          "noAnswer": 14,
+          "thin": 27
+        },
+        {
+          "area": "logaritmbegreppet",
+          "tasks": 42,
+          "facit": 50,
+          "noSteps": 6,
+          "noHeadings": 39,
+          "noAnswer": 11,
+          "thin": 35
+        },
+        {
+          "area": "exponentialekvationer",
+          "tasks": 54,
+          "facit": 63,
+          "noSteps": 2,
+          "noHeadings": 58,
+          "noAnswer": 15,
+          "thin": 20
+        },
+        {
+          "area": "regressionsanalys_olika_modeller",
+          "tasks": 55,
+          "facit": 59,
+          "noSteps": 9,
+          "noHeadings": 56,
+          "noAnswer": 16,
+          "thin": 23
+        },
+        {
+          "area": "rotekvationer",
+          "tasks": 46,
+          "facit": 50,
+          "noSteps": 1,
+          "noHeadings": 29,
+          "noAnswer": 1,
+          "thin": 22
+        },
+        {
+          "area": "kvadratkomplettering",
+          "tasks": 40,
+          "facit": 46,
+          "noSteps": 7,
+          "noHeadings": 40,
+          "noAnswer": 9,
+          "thin": 26
+        },
+        {
+          "area": "funktionsskrivsatt_rep",
+          "tasks": 82,
+          "facit": 179,
+          "noSteps": 13,
+          "noHeadings": 81,
+          "noAnswer": 26,
+          "thin": 118
+        },
+        {
+          "area": "andragradsekvationer_tillampningar",
+          "tasks": 40,
+          "facit": 48,
+          "noSteps": 2,
+          "noHeadings": 47,
+          "noAnswer": 14,
+          "thin": 14
+        },
+        {
+          "area": "samband_roter_koefficienter",
+          "tasks": 36,
+          "facit": 36,
+          "noSteps": 6,
+          "noHeadings": 36,
+          "noAnswer": 8,
+          "thin": 25
+        },
+        {
+          "area": "andragradsfunktioner_tillampningar",
+          "tasks": 48,
+          "facit": 58,
+          "noSteps": 1,
+          "noHeadings": 54,
+          "noAnswer": 9,
+          "thin": 24
+        },
+        {
+          "area": "logaritmlagar",
+          "tasks": 50,
+          "facit": 50,
+          "noSteps": 2,
+          "noHeadings": 47,
+          "noAnswer": 2,
+          "thin": 20
+        },
+        {
+          "area": "jamfora_exponential_potens",
+          "tasks": 41,
+          "facit": 51,
+          "noSteps": 7,
+          "noHeadings": 33,
+          "noAnswer": 10,
+          "thin": 17
+        },
+        {
+          "area": "mer_om_andragradsekvationer",
+          "tasks": 39,
+          "facit": 44,
+          "noSteps": 13,
+          "noHeadings": 41,
+          "noAnswer": 13,
+          "thin": 19
+        },
+        {
+          "area": "potensregler",
+          "tasks": 43,
+          "facit": 43,
+          "noSteps": 0,
+          "noHeadings": 43,
+          "noAnswer": 0,
+          "thin": 35
+        },
+        {
+          "area": "potensekvationer",
+          "tasks": 33,
+          "facit": 33,
+          "noSteps": 0,
+          "noHeadings": 23,
+          "noAnswer": 1,
+          "thin": 22
+        },
+        {
+          "area": "potensfunktioner",
+          "tasks": 37,
+          "facit": 48,
+          "noSteps": 0,
+          "noHeadings": 20,
+          "noAnswer": 0,
+          "thin": 22
+        },
+        {
+          "area": "geometriska_begrepp_definitioner",
+          "tasks": 49,
+          "facit": 54,
+          "noSteps": 9,
+          "noHeadings": 36,
+          "noAnswer": 13,
+          "thin": 36
+        },
+        {
+          "area": "yttervinkelsatsen",
+          "tasks": 67,
+          "facit": 69,
+          "noSteps": 8,
+          "noHeadings": 29,
+          "noAnswer": 10,
+          "thin": 20
+        },
+        {
+          "area": "randvinkel_medelpunkt",
+          "tasks": 83,
+          "facit": 110,
+          "noSteps": 0,
+          "noHeadings": 59,
+          "noAnswer": 30,
+          "thin": 27
+        },
+        {
+          "area": "pythagoras",
+          "tasks": 73,
+          "facit": 89,
+          "noSteps": 1,
+          "noHeadings": 54,
+          "noAnswer": 19,
+          "thin": 39
+        },
+        {
+          "area": "avstandsformeln_mittpunktsformeln",
+          "tasks": 56,
+          "facit": 62,
+          "noSteps": 2,
+          "noHeadings": 49,
+          "noAnswer": 7,
+          "thin": 40
+        },
+        {
+          "area": "likformighet",
+          "tasks": 75,
+          "facit": 97,
+          "noSteps": 1,
+          "noHeadings": 69,
+          "noAnswer": 34,
+          "thin": 51
+        },
+        {
+          "area": "topptriangel_transversal",
+          "tasks": 69,
+          "facit": 87,
+          "noSteps": 0,
+          "noHeadings": 44,
+          "noAnswer": 24,
+          "thin": 46
+        },
+        {
+          "area": "kordasatsen_biskarningssatsen",
+          "tasks": 76,
+          "facit": 87,
+          "noSteps": 1,
+          "noHeadings": 71,
+          "noAnswer": 19,
+          "thin": 36
+        },
+        {
+          "area": "sats_bevis",
+          "tasks": 79,
+          "facit": 88,
+          "noSteps": 0,
+          "noHeadings": 76,
+          "noAnswer": 24,
+          "thin": 26
+        },
+        {
+          "area": "koordinatgeometri_problemlosning",
+          "tasks": 67,
+          "facit": 74,
+          "noSteps": 3,
+          "noHeadings": 57,
+          "noAnswer": 11,
+          "thin": 41
+        },
+        {
+          "area": "bevis_likformighet",
+          "tasks": 74,
+          "facit": 93,
+          "noSteps": 1,
+          "noHeadings": 65,
+          "noAnswer": 21,
+          "thin": 26
+        },
+        {
+          "area": "geometri_problemlosning",
+          "tasks": 66,
+          "facit": 66,
+          "noSteps": 65,
+          "noHeadings": 42,
+          "noAnswer": 1,
+          "thin": 11
+        },
+        {
+          "area": "lagesmatt",
+          "tasks": 72,
+          "facit": 108,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 35
+        },
+        {
+          "area": "kvartiler_percentiler",
+          "tasks": 59,
+          "facit": 78,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 35
+        },
+        {
+          "area": "ladagram",
+          "tasks": 76,
+          "facit": 109,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 50
+        },
+        {
+          "area": "standardavvikelse",
+          "tasks": 98,
+          "facit": 228,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 73
+        },
+        {
+          "area": "normalfordelat_material",
+          "tasks": 75,
+          "facit": 96,
+          "noSteps": 1,
+          "noHeadings": 85,
+          "noAnswer": 27,
+          "thin": 41
+        },
+        {
+          "area": "normalfordelning_digitala_verktyg",
+          "tasks": 56,
+          "facit": 79,
+          "noSteps": 6,
+          "noHeadings": 61,
+          "noAnswer": 29,
+          "thin": 24
+        },
+        {
+          "area": "linjar_regression",
+          "tasks": 56,
+          "facit": 70,
+          "noSteps": 10,
+          "noHeadings": 46,
+          "noAnswer": 24,
+          "thin": 40
+        },
+        {
+          "area": "korrelation_koefficient",
+          "tasks": 59,
+          "facit": 85,
+          "noSteps": 32,
+          "noHeadings": 70,
+          "noAnswer": 36,
+          "thin": 26
+        },
+        {
+          "area": "ekonomiprogrammet",
+          "tasks": 48,
+          "facit": 65,
+          "noSteps": 0,
+          "noHeadings": 64,
+          "noAnswer": 21,
+          "thin": 29
+        },
+        {
+          "area": "vard_omsorgsprogrammet",
+          "tasks": 49,
+          "facit": 79,
+          "noSteps": 1,
+          "noHeadings": 79,
+          "noAnswer": 28,
+          "thin": 47
+        },
+        {
+          "area": "vvs_fastighetsprogrammet",
+          "tasks": 43,
+          "facit": 43,
+          "noSteps": 3,
+          "noHeadings": 43,
+          "noAnswer": 7,
+          "thin": 8
+        },
+        {
+          "area": "samhallsvetenskapsprogrammet",
+          "tasks": 42,
+          "facit": 42,
+          "noSteps": 1,
+          "noHeadings": 42,
+          "noAnswer": 2,
+          "thin": 12
+        },
+        {
+          "area": "tabeller_diagram",
+          "tasks": 51,
+          "facit": 53,
+          "noSteps": 10,
+          "noHeadings": 22,
+          "noAnswer": 10,
+          "thin": 38
+        }
+      ]
+    },
+    {
+      "file": "uppgiftermato1.js",
+      "tasks": 3276,
+      "facit": 3540,
+      "noSteps": 90,
+      "noHeadings": 3208,
+      "noAnswer": 606,
+      "thin": 1544,
+      "areas": [
+        {
+          "area": "polynom",
+          "tasks": 38,
+          "facit": 40,
+          "noSteps": 2,
+          "noHeadings": 37,
+          "noAnswer": 2,
+          "thin": 22
+        },
+        {
+          "area": "funktioner",
+          "tasks": 73,
+          "facit": 98,
+          "noSteps": 4,
+          "noHeadings": 79,
+          "noAnswer": 44,
+          "thin": 51
+        },
+        {
+          "area": "forkorta_rationella",
+          "tasks": 47,
+          "facit": 53,
+          "noSteps": 8,
+          "noHeadings": 46,
+          "noAnswer": 11,
+          "thin": 21
+        },
+        {
+          "area": "tangent_sekant",
+          "tasks": 34,
+          "facit": 37,
+          "noSteps": 0,
+          "noHeadings": 33,
+          "noAnswer": 4,
+          "thin": 17
+        },
+        {
+          "area": "absolutbelopp",
+          "tasks": 73,
+          "facit": 80,
+          "noSteps": 0,
+          "noHeadings": 73,
+          "noAnswer": 5,
+          "thin": 47
+        },
+        {
+          "area": "faktorisera_polynom",
+          "tasks": 36,
+          "facit": 48,
+          "noSteps": 12,
+          "noHeadings": 46,
+          "noAnswer": 1,
+          "thin": 28
+        },
+        {
+          "area": "gransvarde",
+          "tasks": 62,
+          "facit": 62,
+          "noSteps": 0,
+          "noHeadings": 62,
+          "noAnswer": 6,
+          "thin": 35
+        },
+        {
+          "area": "polynomekvationer",
+          "tasks": 45,
+          "facit": 45,
+          "noSteps": 1,
+          "noHeadings": 45,
+          "noAnswer": 4,
+          "thin": 19
+        },
+        {
+          "area": "rationella_ekvationer",
+          "tasks": 58,
+          "facit": 58,
+          "noSteps": 0,
+          "noHeadings": 55,
+          "noAnswer": 6,
+          "thin": 24
+        },
+        {
+          "area": "algebra_polynom",
+          "tasks": 33,
+          "facit": 33,
+          "noSteps": 2,
+          "noHeadings": 30,
+          "noAnswer": 0,
+          "thin": 20
+        },
+        {
+          "area": "rakna_rationella",
+          "tasks": 39,
+          "facit": 39,
+          "noSteps": 0,
+          "noHeadings": 37,
+          "noAnswer": 0,
+          "thin": 13
+        },
+        {
+          "area": "kontinuitet",
+          "tasks": 56,
+          "facit": 58,
+          "noSteps": 0,
+          "noHeadings": 58,
+          "noAnswer": 16,
+          "thin": 28
+        },
+        {
+          "area": "polynomfunktioner",
+          "tasks": 37,
+          "facit": 45,
+          "noSteps": 0,
+          "noHeadings": 41,
+          "noAnswer": 11,
+          "thin": 19
+        },
+        {
+          "area": "rationella_uttryck",
+          "tasks": 35,
+          "facit": 41,
+          "noSteps": 0,
+          "noHeadings": 35,
+          "noAnswer": 0,
+          "thin": 27
+        },
+        {
+          "area": "andringskvoter",
+          "tasks": 45,
+          "facit": 48,
+          "noSteps": 1,
+          "noHeadings": 44,
+          "noAnswer": 8,
+          "thin": 25
+        },
+        {
+          "area": "derivata_potens",
+          "tasks": 78,
+          "facit": 131,
+          "noSteps": 0,
+          "noHeadings": 104,
+          "noAnswer": 45,
+          "thin": 65
+        },
+        {
+          "area": "tangenter",
+          "tasks": 181,
+          "facit": 185,
+          "noSteps": 1,
+          "noHeadings": 181,
+          "noAnswer": 30,
+          "thin": 106
+        },
+        {
+          "area": "derivata_a_x",
+          "tasks": 39,
+          "facit": 43,
+          "noSteps": 0,
+          "noHeadings": 37,
+          "noAnswer": 8,
+          "thin": 24
+        },
+        {
+          "area": "begreppet_derivata",
+          "tasks": 88,
+          "facit": 90,
+          "noSteps": 2,
+          "noHeadings": 70,
+          "noAnswer": 11,
+          "thin": 53
+        },
+        {
+          "area": "naturliga_logaritmer",
+          "tasks": 50,
+          "facit": 50,
+          "noSteps": 5,
+          "noHeadings": 32,
+          "noAnswer": 2,
+          "thin": 21
+        },
+        {
+          "area": "talet_e",
+          "tasks": 51,
+          "facit": 61,
+          "noSteps": 3,
+          "noHeadings": 59,
+          "noAnswer": 7,
+          "thin": 39
+        },
+        {
+          "area": "numerisk_derivering",
+          "tasks": 71,
+          "facit": 73,
+          "noSteps": 3,
+          "noHeadings": 71,
+          "noAnswer": 37,
+          "thin": 29
+        },
+        {
+          "area": "exp_tillampningar",
+          "tasks": 43,
+          "facit": 101,
+          "noSteps": 1,
+          "noHeadings": 100,
+          "noAnswer": 60,
+          "thin": 46
+        },
+        {
+          "area": "derivatans_definition",
+          "tasks": 29,
+          "facit": 31,
+          "noSteps": 2,
+          "noHeadings": 29,
+          "noAnswer": 1,
+          "thin": 15
+        },
+        {
+          "area": "deriveringsregler",
+          "tasks": 79,
+          "facit": 82,
+          "noSteps": 1,
+          "noHeadings": 75,
+          "noAnswer": 24,
+          "thin": 61
+        },
+        {
+          "area": "derivata_polynom",
+          "tasks": 59,
+          "facit": 59,
+          "noSteps": 1,
+          "noHeadings": 56,
+          "noAnswer": 12,
+          "thin": 39
+        },
+        {
+          "area": "andraderivatan",
+          "tasks": 55,
+          "facit": 58,
+          "noSteps": 4,
+          "noHeadings": 55,
+          "noAnswer": 24,
+          "thin": 8
+        },
+        {
+          "area": "extrempunkter",
+          "tasks": 224,
+          "facit": 224,
+          "noSteps": 2,
+          "noHeadings": 222,
+          "noAnswer": 55,
+          "thin": 67
+        },
+        {
+          "area": "derivatan_och_grafen",
+          "tasks": 75,
+          "facit": 75,
+          "noSteps": 0,
+          "noHeadings": 63,
+          "noAnswer": 34,
+          "thin": 15
+        },
+        {
+          "area": "problemlosning_derivata",
+          "tasks": 47,
+          "facit": 47,
+          "noSteps": 0,
+          "noHeadings": 41,
+          "noAnswer": 7,
+          "thin": 13
+        },
+        {
+          "area": "derivata_exponential",
+          "tasks": 34,
+          "facit": 34,
+          "noSteps": 0,
+          "noHeadings": 31,
+          "noAnswer": 1,
+          "thin": 12
+        },
+        {
+          "area": "primitiva",
+          "tasks": 97,
+          "facit": 106,
+          "noSteps": 9,
+          "noHeadings": 66,
+          "noAnswer": 23,
+          "thin": 27
+        },
+        {
+          "area": "storsta_minsta",
+          "tasks": 60,
+          "facit": 60,
+          "noSteps": 0,
+          "noHeadings": 56,
+          "noAnswer": 10,
+          "thin": 30
+        },
+        {
+          "area": "integralberakning",
+          "tasks": 193,
+          "facit": 197,
+          "noSteps": 1,
+          "noHeadings": 196,
+          "noAnswer": 8,
+          "thin": 131
+        },
+        {
+          "area": "integral_tillampningar",
+          "tasks": 147,
+          "facit": 151,
+          "noSteps": 6,
+          "noHeadings": 148,
+          "noAnswer": 18,
+          "thin": 74
+        },
+        {
+          "area": "extremvarde_modellering",
+          "tasks": 130,
+          "facit": 130,
+          "noSteps": 1,
+          "noHeadings": 129,
+          "noAnswer": 19,
+          "thin": 26
+        },
+        {
+          "area": "primitiva_villkor",
+          "tasks": 62,
+          "facit": 62,
+          "noSteps": 2,
+          "noHeadings": 54,
+          "noAnswer": 1,
+          "thin": 38
+        },
+        {
+          "area": "fler_extremvarde",
+          "tasks": 57,
+          "facit": 57,
+          "noSteps": 0,
+          "noHeadings": 57,
+          "noAnswer": 6,
+          "thin": 5
+        },
+        {
+          "area": "integral_area",
+          "tasks": 78,
+          "facit": 80,
+          "noSteps": 1,
+          "noHeadings": 73,
+          "noAnswer": 2,
+          "thin": 53
+        },
+        {
+          "area": "enhetscirkeln",
+          "tasks": 66,
+          "facit": 86,
+          "noSteps": 9,
+          "noHeadings": 80,
+          "noAnswer": 5,
+          "thin": 33
+        },
+        {
+          "area": "cosinussatsen",
+          "tasks": 58,
+          "facit": 58,
+          "noSteps": 1,
+          "noHeadings": 38,
+          "noAnswer": 5,
+          "thin": 10
+        },
+        {
+          "area": "trig_tillampningar",
+          "tasks": 47,
+          "facit": 47,
+          "noSteps": 2,
+          "noHeadings": 41,
+          "noAnswer": 6,
+          "thin": 10
+        },
+        {
+          "area": "linjar_optimering",
+          "tasks": 82,
+          "facit": 82,
+          "noSteps": 1,
+          "noHeadings": 80,
+          "noAnswer": 10,
+          "thin": 22
+        },
+        {
+          "area": "geometriska_summor",
+          "tasks": 70,
+          "facit": 76,
+          "noSteps": 1,
+          "noHeadings": 71,
+          "noAnswer": 9,
+          "thin": 33
+        },
+        {
+          "area": "areasatsen",
+          "tasks": 45,
+          "facit": 45,
+          "noSteps": 0,
+          "noHeadings": 39,
+          "noAnswer": 2,
+          "thin": 14
+        },
+        {
+          "area": "trig_ratvinkliga",
+          "tasks": 39,
+          "facit": 39,
+          "noSteps": 0,
+          "noHeadings": 33,
+          "noAnswer": 1,
+          "thin": 15
+        },
+        {
+          "area": "sinussatsen_tva_fall",
+          "tasks": 32,
+          "facit": 32,
+          "noSteps": 1,
+          "noHeadings": 25,
+          "noAnswer": 5,
+          "thin": 4
+        },
+        {
+          "area": "trig_ekvationer",
+          "tasks": 24,
+          "facit": 28,
+          "noSteps": 0,
+          "noHeadings": 20,
+          "noAnswer": 0,
+          "thin": 5
+        },
+        {
+          "area": "sinussatsen",
+          "tasks": 49,
+          "facit": 49,
+          "noSteps": 0,
+          "noHeadings": 31,
+          "noAnswer": 0,
+          "thin": 4
+        },
+        {
+          "area": "deriverbarhet",
+          "tasks": 26,
+          "facit": 26,
+          "noSteps": 0,
+          "noHeadings": 24,
+          "noAnswer": 0,
+          "thin": 1
+        }
+      ]
+    },
+    {
+      "file": "uppgiftermato2.js",
+      "tasks": 2251,
+      "facit": 4023,
+      "noSteps": 369,
+      "noHeadings": 3850,
+      "noAnswer": 3060,
+      "thin": 1724,
+      "areas": [
+        {
+          "area": "enhetscirkeln_trianglar",
+          "tasks": 44,
+          "facit": 100,
+          "noSteps": 0,
+          "noHeadings": 99,
+          "noAnswer": 71,
+          "thin": 51
+        },
+        {
+          "area": "enhetscirkeln_formler",
+          "tasks": 38,
+          "facit": 64,
+          "noSteps": 0,
+          "noHeadings": 64,
+          "noAnswer": 48,
+          "thin": 22
+        },
+        {
+          "area": "dubbla_vinkeln",
+          "tasks": 48,
+          "facit": 72,
+          "noSteps": 0,
+          "noHeadings": 72,
+          "noAnswer": 61,
+          "thin": 32
+        },
+        {
+          "area": "additionsformler",
+          "tasks": 32,
+          "facit": 65,
+          "noSteps": 18,
+          "noHeadings": 47,
+          "noAnswer": 55,
+          "thin": 12
+        },
+        {
+          "area": "trig_identiteter",
+          "tasks": 29,
+          "facit": 59,
+          "noSteps": 0,
+          "noHeadings": 58,
+          "noAnswer": 46,
+          "thin": 36
+        },
+        {
+          "area": "trig_ekv_formler",
+          "tasks": 42,
+          "facit": 53,
+          "noSteps": 10,
+          "noHeadings": 39,
+          "noAnswer": 34,
+          "thin": 1
+        },
+        {
+          "area": "asinx_bcosx",
+          "tasks": 37,
+          "facit": 43,
+          "noSteps": 15,
+          "noHeadings": 29,
+          "noAnswer": 20,
+          "thin": 6
+        },
+        {
+          "area": "trig_grundekvationer",
+          "tasks": 75,
+          "facit": 134,
+          "noSteps": 14,
+          "noHeadings": 119,
+          "noAnswer": 101,
+          "thin": 56
+        },
+        {
+          "area": "trig_problemlosning_1",
+          "tasks": 23,
+          "facit": 23,
+          "noSteps": 8,
+          "noHeadings": 23,
+          "noAnswer": 16,
+          "thin": 7
+        },
+        {
+          "area": "kurvor_radianer",
+          "tasks": 119,
+          "facit": 221,
+          "noSteps": 29,
+          "noHeadings": 219,
+          "noAnswer": 194,
+          "thin": 89
+        },
+        {
+          "area": "sinus_cosinuskurvor",
+          "tasks": 36,
+          "facit": 40,
+          "noSteps": 0,
+          "noHeadings": 27,
+          "noAnswer": 8,
+          "thin": 12
+        },
+        {
+          "area": "trig_problemlosning_2",
+          "tasks": 78,
+          "facit": 125,
+          "noSteps": 1,
+          "noHeadings": 124,
+          "noAnswer": 93,
+          "thin": 56
+        },
+        {
+          "area": "tan_kurvan",
+          "tasks": 32,
+          "facit": 32,
+          "noSteps": 8,
+          "noHeadings": 20,
+          "noAnswer": 8,
+          "thin": 13
+        },
+        {
+          "area": "radianbegreppet",
+          "tasks": 31,
+          "facit": 58,
+          "noSteps": 5,
+          "noHeadings": 58,
+          "noAnswer": 41,
+          "thin": 42
+        },
+        {
+          "area": "cirkelsektorn",
+          "tasks": 44,
+          "facit": 82,
+          "noSteps": 0,
+          "noHeadings": 82,
+          "noAnswer": 72,
+          "thin": 56
+        },
+        {
+          "area": "kort_om_derivator",
+          "tasks": 24,
+          "facit": 67,
+          "noSteps": 0,
+          "noHeadings": 62,
+          "noAnswer": 53,
+          "thin": 48
+        },
+        {
+          "area": "kvotregeln",
+          "tasks": 34,
+          "facit": 77,
+          "noSteps": 3,
+          "noHeadings": 74,
+          "noAnswer": 59,
+          "thin": 42
+        },
+        {
+          "area": "produktregeln",
+          "tasks": 44,
+          "facit": 79,
+          "noSteps": 1,
+          "noHeadings": 78,
+          "noAnswer": 54,
+          "thin": 44
+        },
+        {
+          "area": "derivata_sammansatta",
+          "tasks": 87,
+          "facit": 156,
+          "noSteps": 7,
+          "noHeadings": 147,
+          "noAnswer": 111,
+          "thin": 93
+        },
+        {
+          "area": "exp_log_derivata",
+          "tasks": 68,
+          "facit": 179,
+          "noSteps": 5,
+          "noHeadings": 178,
+          "noAnswer": 159,
+          "thin": 104
+        },
+        {
+          "area": "derivatan_sin_cos",
+          "tasks": 26,
+          "facit": 56,
+          "noSteps": 5,
+          "noHeadings": 56,
+          "noAnswer": 42,
+          "thin": 20
+        },
+        {
+          "area": "derivata_problemlosning",
+          "tasks": 57,
+          "facit": 68,
+          "noSteps": 3,
+          "noHeadings": 68,
+          "noAnswer": 44,
+          "thin": 14
+        },
+        {
+          "area": "forandringshastigheter",
+          "tasks": 41,
+          "facit": 51,
+          "noSteps": 22,
+          "noHeadings": 51,
+          "noAnswer": 32,
+          "thin": 4
+        },
+        {
+          "area": "grafer_derivator",
+          "tasks": 40,
+          "facit": 69,
+          "noSteps": 17,
+          "noHeadings": 62,
+          "noAnswer": 59,
+          "thin": 16
+        },
+        {
+          "area": "olika_grafer",
+          "tasks": 25,
+          "facit": 37,
+          "noSteps": 31,
+          "noHeadings": 37,
+          "noAnswer": 35,
+          "thin": 4
+        },
+        {
+          "area": "kurvor_asymptoter",
+          "tasks": 47,
+          "facit": 69,
+          "noSteps": 7,
+          "noHeadings": 67,
+          "noAnswer": 51,
+          "thin": 20
+        },
+        {
+          "area": "sneda_asymptoter",
+          "tasks": 28,
+          "facit": 36,
+          "noSteps": 8,
+          "noHeadings": 36,
+          "noAnswer": 25,
+          "thin": 7
+        },
+        {
+          "area": "integraler_primitiva",
+          "tasks": 92,
+          "facit": 270,
+          "noSteps": 10,
+          "noHeadings": 263,
+          "noAnswer": 234,
+          "thin": 153
+        },
+        {
+          "area": "areor_mellan_kurvor",
+          "tasks": 38,
+          "facit": 49,
+          "noSteps": 2,
+          "noHeadings": 49,
+          "noAnswer": 25,
+          "thin": 7
+        },
+        {
+          "area": "grafiska_metoder",
+          "tasks": 25,
+          "facit": 35,
+          "noSteps": 12,
+          "noHeadings": 35,
+          "noAnswer": 21,
+          "thin": 10
+        },
+        {
+          "area": "integraler_areor",
+          "tasks": 35,
+          "facit": 46,
+          "noSteps": 6,
+          "noHeadings": 45,
+          "noAnswer": 31,
+          "thin": 10
+        },
+        {
+          "area": "integraler_storheter",
+          "tasks": 82,
+          "facit": 123,
+          "noSteps": 6,
+          "noHeadings": 123,
+          "noAnswer": 84,
+          "thin": 25
+        },
+        {
+          "area": "sannolikhetsfordelning",
+          "tasks": 87,
+          "facit": 179,
+          "noSteps": 7,
+          "noHeadings": 178,
+          "noAnswer": 96,
+          "thin": 82
+        },
+        {
+          "area": "skivmetoden",
+          "tasks": 69,
+          "facit": 83,
+          "noSteps": 4,
+          "noHeadings": 81,
+          "noAnswer": 58,
+          "thin": 11
+        },
+        {
+          "area": "imaginara_tal",
+          "tasks": 20,
+          "facit": 70,
+          "noSteps": 0,
+          "noHeadings": 65,
+          "noAnswer": 59,
+          "thin": 49
+        },
+        {
+          "area": "konjugat_raknesatt",
+          "tasks": 79,
+          "facit": 271,
+          "noSteps": 14,
+          "noHeadings": 264,
+          "noAnswer": 239,
+          "thin": 190
+        },
+        {
+          "area": "avlasa_rita",
+          "tasks": 45,
+          "facit": 54,
+          "noSteps": 8,
+          "noHeadings": 54,
+          "noAnswer": 47,
+          "thin": 12
+        },
+        {
+          "area": "komplexa_vektorer",
+          "tasks": 28,
+          "facit": 41,
+          "noSteps": 8,
+          "noHeadings": 41,
+          "noAnswer": 30,
+          "thin": 13
+        },
+        {
+          "area": "mult_div_polar",
+          "tasks": 41,
+          "facit": 84,
+          "noSteps": 10,
+          "noHeadings": 83,
+          "noAnswer": 72,
+          "thin": 18
+        },
+        {
+          "area": "polar_form",
+          "tasks": 57,
+          "facit": 143,
+          "noSteps": 1,
+          "noHeadings": 143,
+          "noAnswer": 129,
+          "thin": 64
+        },
+        {
+          "area": "eulers_formel",
+          "tasks": 25,
+          "facit": 33,
+          "noSteps": 8,
+          "noHeadings": 33,
+          "noAnswer": 27,
+          "thin": 8
+        },
+        {
+          "area": "ekvationen_zn",
+          "tasks": 53,
+          "facit": 65,
+          "noSteps": 9,
+          "noHeadings": 64,
+          "noAnswer": 59,
+          "thin": 18
+        },
+        {
+          "area": "de_moivre",
+          "tasks": 32,
+          "facit": 55,
+          "noSteps": 11,
+          "noHeadings": 55,
+          "noAnswer": 47,
+          "thin": 26
+        },
+        {
+          "area": "polynomekv_hogre",
+          "tasks": 42,
+          "facit": 55,
+          "noSteps": 8,
+          "noHeadings": 55,
+          "noAnswer": 47,
+          "thin": 16
+        },
+        {
+          "area": "polynomdivision",
+          "tasks": 50,
+          "facit": 98,
+          "noSteps": 3,
+          "noHeadings": 98,
+          "noAnswer": 88,
+          "thin": 43
+        },
+        {
+          "area": "andragradsekv_komplexa",
+          "tasks": 22,
+          "facit": 25,
+          "noSteps": 10,
+          "noHeadings": 24,
+          "noAnswer": 16,
+          "thin": 13
+        },
+        {
+          "area": "faktorsatsen",
+          "tasks": 33,
+          "facit": 62,
+          "noSteps": 7,
+          "noHeadings": 61,
+          "noAnswer": 50,
+          "thin": 33
+        },
+        {
+          "area": "sinusformad_kurva",
+          "tasks": 33,
+          "facit": 33,
+          "noSteps": 0,
+          "noHeadings": 19,
+          "noAnswer": 1,
+          "thin": 11
+        },
+        {
+          "area": "forskjutna_kurvor",
+          "tasks": 34,
+          "facit": 34,
+          "noSteps": 8,
+          "noHeadings": 21,
+          "noAnswer": 8,
+          "thin": 5
+        }
+      ]
+    },
+    {
+      "file": "uppgiftermatf1.js",
+      "tasks": 1703,
+      "facit": 2308,
+      "noSteps": 775,
+      "noHeadings": 1883,
+      "noAnswer": 481,
+      "thin": 660,
+      "areas": [
+        {
+          "area": "venndiagram",
+          "tasks": 67,
+          "facit": 82,
+          "noSteps": 7,
+          "noHeadings": 81,
+          "noAnswer": 34,
+          "thin": 24
+        },
+        {
+          "area": "mangdlara_grund",
+          "tasks": 30,
+          "facit": 46,
+          "noSteps": 7,
+          "noHeadings": 45,
+          "noAnswer": 15,
+          "thin": 25
+        },
+        {
+          "area": "mangdoperatorer",
+          "tasks": 24,
+          "facit": 53,
+          "noSteps": 0,
+          "noHeadings": 53,
+          "noAnswer": 10,
+          "thin": 32
+        },
+        {
+          "area": "mult_add_principen",
+          "tasks": 77,
+          "facit": 98,
+          "noSteps": 98,
+          "noHeadings": 86,
+          "noAnswer": 13,
+          "thin": 54
+        },
+        {
+          "area": "ladprincipen",
+          "tasks": 41,
+          "facit": 47,
+          "noSteps": 47,
+          "noHeadings": 47,
+          "noAnswer": 15,
+          "thin": 12
+        },
+        {
+          "area": "permutationer",
+          "tasks": 85,
+          "facit": 122,
+          "noSteps": 117,
+          "noHeadings": 99,
+          "noAnswer": 18,
+          "thin": 44
+        },
+        {
+          "area": "kombinationer",
+          "tasks": 89,
+          "facit": 133,
+          "noSteps": 131,
+          "noHeadings": 108,
+          "noAnswer": 26,
+          "thin": 35
+        },
+        {
+          "area": "binomialsatsen",
+          "tasks": 78,
+          "facit": 95,
+          "noSteps": 95,
+          "noHeadings": 88,
+          "noAnswer": 20,
+          "thin": 28
+        },
+        {
+          "area": "kombinatorik_sannolikhet",
+          "tasks": 108,
+          "facit": 210,
+          "noSteps": 210,
+          "noHeadings": 193,
+          "noAnswer": 0,
+          "thin": 19
+        },
+        {
+          "area": "delbarhet_primtal",
+          "tasks": 44,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 50,
+          "noAnswer": 13,
+          "thin": 24
+        },
+        {
+          "area": "gemensamma_faktorer",
+          "tasks": 45,
+          "facit": 55,
+          "noSteps": 0,
+          "noHeadings": 55,
+          "noAnswer": 9,
+          "thin": 31
+        },
+        {
+          "area": "talbaser",
+          "tasks": 44,
+          "facit": 51,
+          "noSteps": 0,
+          "noHeadings": 51,
+          "noAnswer": 19,
+          "thin": 27
+        },
+        {
+          "area": "kongruens",
+          "tasks": 92,
+          "facit": 124,
+          "noSteps": 0,
+          "noHeadings": 118,
+          "noAnswer": 33,
+          "thin": 63
+        },
+        {
+          "area": "inledning_talfoljder",
+          "tasks": 37,
+          "facit": 50,
+          "noSteps": 0,
+          "noHeadings": 50,
+          "noAnswer": 19,
+          "thin": 23
+        },
+        {
+          "area": "aritm_geom_talfoljder",
+          "tasks": 37,
+          "facit": 52,
+          "noSteps": 0,
+          "noHeadings": 52,
+          "noAnswer": 18,
+          "thin": 17
+        },
+        {
+          "area": "talfoljder_tillampningar",
+          "tasks": 56,
+          "facit": 139,
+          "noSteps": 0,
+          "noHeadings": 139,
+          "noAnswer": 5,
+          "thin": 59
+        },
+        {
+          "area": "rekursionsformler",
+          "tasks": 38,
+          "facit": 59,
+          "noSteps": 0,
+          "noHeadings": 59,
+          "noAnswer": 21,
+          "thin": 24
+        },
+        {
+          "area": "induktionsbevis",
+          "tasks": 27,
+          "facit": 27,
+          "noSteps": 9,
+          "noHeadings": 27,
+          "noAnswer": 15,
+          "thin": 5
+        },
+        {
+          "area": "indirekta_bevis",
+          "tasks": 32,
+          "facit": 32,
+          "noSteps": 12,
+          "noHeadings": 32,
+          "noAnswer": 20,
+          "thin": 3
+        },
+        {
+          "area": "direkta_bevis",
+          "tasks": 27,
+          "facit": 27,
+          "noSteps": 10,
+          "noHeadings": 27,
+          "noAnswer": 15,
+          "thin": 7
+        },
+        {
+          "area": "partiell_integration",
+          "tasks": 36,
+          "facit": 48,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 0
+        },
+        {
+          "area": "generaliserade_integraler",
+          "tasks": 40,
+          "facit": 46,
+          "noSteps": 1,
+          "noHeadings": 46,
+          "noAnswer": 21,
+          "thin": 7
+        },
+        {
+          "area": "forandringshastigheter",
+          "tasks": 80,
+          "facit": 88,
+          "noSteps": 11,
+          "noHeadings": 88,
+          "noAnswer": 16,
+          "thin": 2
+        },
+        {
+          "area": "linjar_approximation",
+          "tasks": 39,
+          "facit": 53,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 0
+        },
+        {
+          "area": "integraler_area",
+          "tasks": 29,
+          "facit": 31,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 2
+        },
+        {
+          "area": "repetition_derivator",
+          "tasks": 27,
+          "facit": 27,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 0
+        },
+        {
+          "area": "vad_ar_diffekv",
+          "tasks": 28,
+          "facit": 32,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 7
+        },
+        {
+          "area": "verifiering",
+          "tasks": 29,
+          "facit": 29,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 3
+        },
+        {
+          "area": "homogena_forsta",
+          "tasks": 33,
+          "facit": 37,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 8
+        },
+        {
+          "area": "tillvaxt_begransning",
+          "tasks": 40,
+          "facit": 78,
+          "noSteps": 0,
+          "noHeadings": 66,
+          "noAnswer": 3,
+          "thin": 31
+        },
+        {
+          "area": "forandringsmodeller",
+          "tasks": 76,
+          "facit": 106,
+          "noSteps": 0,
+          "noHeadings": 106,
+          "noAnswer": 19,
+          "thin": 16
+        },
+        {
+          "area": "inhomogena_forsta",
+          "tasks": 35,
+          "facit": 35,
+          "noSteps": 0,
+          "noHeadings": 0,
+          "noAnswer": 0,
+          "thin": 6
+        },
+        {
+          "area": "inhomogena_andra",
+          "tasks": 47,
+          "facit": 47,
+          "noSteps": 9,
+          "noHeadings": 35,
+          "noAnswer": 28,
+          "thin": 9
+        },
+        {
+          "area": "homogena_andra",
+          "tasks": 50,
+          "facit": 50,
+          "noSteps": 1,
+          "noHeadings": 35,
+          "noAnswer": 23,
+          "thin": 6
+        },
+        {
+          "area": "riktningsfalt_euler",
+          "tasks": 36,
+          "facit": 47,
+          "noSteps": 10,
+          "noHeadings": 47,
+          "noAnswer": 33,
+          "thin": 7
+        }
+      ]
+    }
+  ]
+}
