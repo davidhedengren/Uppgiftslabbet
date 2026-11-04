@@ -91,3 +91,14 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
   (kontrollerat i `index.html`), så självrättningen godkänner båda G-värdena.
 - `tools/gravitationskonstant-precision.test.js` läser nu svarsrutan i facitmallen.
 - Inga räknefel. Alla 53 svar är omräknade.
+
+## Omgång 7: fjadrar (55 uppgifter)
+
+- Formelrubriker: ”Hookes lag: \(F=kx\)” (lös ut x respektive k), ”Jämvikt för vikten: \(kx=mg\)”,
+  ”Förlängning: \(x=l-l_0\)”, ”Hela längden: \(l=l_0+x\)”, ”Seriekoppling:
+  \(\dfrac{1}{k_s}=\dfrac{1}{k_1}+\dfrac{1}{k_2}\)”, ”Parallellkoppling: \(k_p=k_1+k_2\)” och
+  ”Lutningen i ett F-x-diagram: \(k=\dfrac{F}{x}\)”. 4.329 visar riktningen med \(F=-kx\).
+- Delkort med egen inledning (4.63 a–c, 4.64) använder bara värdena i det egna kortet.
+  Facitfigurerna i 4.18 och 4.272 ligger kvar.
+- `tools/fysik1-gravitation-niva1-2026-10-24.test.js` kräver nu facitmallen (steglista) i stället för att förbjuda den.
+- Inga räknefel. Alla 55 svar är omräknade.
