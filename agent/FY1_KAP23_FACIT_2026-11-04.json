@@ -1,0 +1,367 @@
+{
+  "omgangar": [
+    {
+      "omrade": "enheter",
+      "granskade": 71,
+      "delfacit": 110,
+      "atgardade": [
+        {
+          "id": "2.1",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.204",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.5",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.9",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.205",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.10",
+          "status": "Åtgärdad",
+          "kommentar": "Årsmodellen som frågan hänvisar till är nu angiven. Facit visar beräkning, avrundning och skillnaden mellan exakt tid och ålder."
+        },
+        {
+          "id": "2.206",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.11",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.12",
+          "status": "Åtgärdad",
+          "kommentar": "Facit visar omvandlingarna stegvis. Huvuduppgiftens 50,6 µm och träningskortets 50,5 µm bygger på olika givna data och är båda korrekta."
+        },
+        {
+          "id": "2.207",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.19",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.208",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.21",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.209",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.22",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.210",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.29",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.32",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.211",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.33",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.212",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.34",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.213",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.35",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.36",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.214",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.57",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.215",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.58",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.59",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.216",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.60",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.217",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.61",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.62",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.218",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.63",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.219",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.64",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.220",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.65",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.66",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.221",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.67",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.222",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.68",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.69",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.223",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.70",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.224",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.71",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.72",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.225",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.73",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.226",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.74",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.75",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.227",
+          "status": "Åtgärdad",
+          "kommentar": "Facit sammanfattar nu alla tre svaren: p = 1, q = 2 och ändringsfaktorn 18. Exponentjämförelsen visas stegvis."
+        },
+        {
+          "id": "2.76",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.321",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.322",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.323",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.324",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.325",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.326",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.359",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.360",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.361",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.362",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.363",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        },
+        {
+          "id": "2.364",
+          "status": "Åtgärdad",
+          "kommentar": "Facit har fått tydliga regelrubriker, visade beräkningar och en egen svarsruta för varje del."
+        }
+      ],
+      "granskad_inget_fel": []
+    }
+  ]
+}
