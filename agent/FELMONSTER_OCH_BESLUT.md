@@ -3172,3 +3172,22 @@ behöver ett rimligt godkänt intervall. Bråkens nämnare i ett sannolikhetstr�
 behöver inte vara antal kulor: använd även villkorade sannolikheter. Placera
 graderingen intill respektive koordinataxel och kontrollera att grafens
 matematiska koordinater inte ändras.
+
+
+## Ma1: bråkrutin och enkel nivå 1–2, 2026-11-04
+
+[56 nya uppgifter och fullständig kontroll](MA1_BRAKRUTIN_2026-11-04.md)
+lägger till #1.1567–1.1622 i `ekv_brak`. Användarens uttryckliga beslut för
+denna påfyllnad: nivå 1–2 har enkla bråktermer utan parenteser eller summor
+i täljaren. Parenteser börjar på nivå 3; nya nivå 4–5 har x i nämnaren.
+Det är ett beslut om progression i dessa nya rutiner, inte en automatisk
+omklassificering av alla äldre ekvationer. Förbjudna värden och kontroll i
+ursprungsekvationen ska finnas i rationella ekvationers facit. De två gamla
+#1.1364/#1.270 har korrekt svar men förbättrade facitrubriker/svarsrad.
+
+Nivå 1–2 kan mängdtränas med avsiktligt snarlika uttryck, men tecken,
+nämnare och operationer varieras. Ekvivalenta färdigförenklade polynom
+accepteras; oförkortade bråk och osamlade termer är inte färdiga svar.
+Bevara explicit exakthetskrav när ekvationen efterfrågar ett bråksvar.
+Skydd: `ma1-brak-rutin-2026-11-04.test.js` och browserharnessen/cases i båda
+repona, samt konsumentens tidigare `brakuttryck.test.js`.
