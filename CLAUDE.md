@@ -124,6 +124,31 @@ Detta är ett krav, inte något man gör om tid finns.
   Kontrollera att facit, svarsrad och `rättSvar` stämmer överens. Skriv i
   loggen att granskningen är gjord.
 
+### Fysikfacit: formeln ska alltid stå (användarbeslut 2026-11-04, Fy1 konstacc)
+
+Läraren vill ha tydligare fysikfacit med fler steg. Framför allt ska det
+**alltid stå vilken formel som används**, inte bara en beskrivning i ord som
+”hastighet är acceleration gånger tid”. Börja i Fy1:s kapitel ”Rörelse med
+konstant acceleration” (`konstacc`) och följ samma mönster i övriga fysikfacit
+som skrivs om.
+
+- Facit är en numrerad steglista (`facit-stegvis`/`facit-steglista`) med
+  specifika rubriker. Det ersätter för dessa facit den äldre regeln om löpande
+  fysiklösning utan steglista.
+- Typiskt: ”Givet och sökt” (med tecken, vald positiv riktning och omvandlade
+  enheter) → ett steg vars rubrik namnger och visar formeln, t.ex.
+  ”Tidlösa formeln: \(v^2=v_0^2+2as\)”, med en rad om varför den passar →
+  ”Lös ut … och sätt in” → svarsrad.
+- **Andragradsekvationer löses grafiskt** i Fy1 och ska alltid ha en grafisk
+  lösning i facit: rita \(s(t)\)/\(h(t)\) och den vågräta linjen (eller
+  t-axeln) som SVG, markera och läs av skärningspunkten. Lösningsformeln får
+  stå kvar som ”Alternativ”. Sådana uppgifter får `geogebra: true`.
+- Delfacit får fortfarande inte avslöja svaret på en senare del (se
+  `agent/DELKEDJOR_OCH_FACIT_2026-11-01.md`). Välj hellre en formel som inte
+  går via nästa dels svar, t.ex. sträckformeln med grafisk lösning i stället
+  för att först räkna ut slutfarten.
+- Bygghjälp och logg: `agent/FY1_KONSTACC_FACIT_2026-11-04.md`.
+
 Läs `AGENTS.md` och `agent/FELMONSTER_OCH_BESLUT.md`. Sök tidigare beslut för
 berörda uppgifts-ID:n och kör deras regressionstester före ändring och leverans.
 

@@ -8,7 +8,9 @@ test('Bilen: beräkna reaktion, bromsning, stopp och träfffart oberoende',()=>{
 });
 test('Fysiklösningar saknar numrerade steg men bevarar separata delbokstäver',()=>{
  function visit(x){if(Array.isArray(x))x.forEach(visit);else if(x&&typeof x==='object')for(const[k,v]of Object.entries(x)){if(k==='s'&&typeof v==='string'){assert.doesNotMatch(v,/facit-steglista|<span class="facit-mark">\d+<\/span>/);assert.match(v,/facit-v2/);}else if(v&&typeof v==='object')visit(v);}}
- visit(c.window.BANK);assert.match(q('2.315').s,/<strong>a\)/);
+ // Användarbeslut 2026-11-04: konstacc-facit skrivs som numrerade steg där formeln alltid står
+ // (agent/FY1_KONSTACC_FACIT_2026-11-04.md). De omfattas inte av prosaregeln.
+ visit(c.window.BANK.filter(t=>!(t.omr==='konstacc'&&/facit-steglista/.test(t.s))));assert.match(q('2.315').s,/<strong>a\)/);
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.
  for(const id of ['8.49','8.103','8.117','8.149']){assert.match(q(id).s,/<strong>a\)/);assert.match(q(id).s,/<strong>b\)/);}
