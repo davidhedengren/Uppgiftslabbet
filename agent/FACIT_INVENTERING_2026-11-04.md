@@ -42,3 +42,7 @@ Reproducerbar inventering: `node tools/inventera-facitmall-2026-11-04.cjs`. JSON
 ### Uppdatering efter ems-granskningen
 
 Hela familjen **Ems, polspänning och inre resistans**, 48 huvuduppgifter och 48 delkort, är nu genomgången enligt mallen: [alla ID och kommentarer](FY1_EMS_FACIT_2026-11-04.md). Nästa återstående kopplingsfamilj är **Effekt och verkningsgrad med inre resistans**, 14 huvuduppgifter. Baslinjesiffrorna ovan beskriver den ursprungliga inventeringen, inte dagens kvarvarande arbete.
+
+### Uppdatering efter verkningsgradsomgången
+
+**Effekt och verkningsgrad med inre resistans** är nu manuellt genomgången: 14 befintliga huvuduppgifter + 4 delkort förbättrade. 12 varierade nya huvuduppgifter ger familjen totalt 26. [Analys, nivåer och alla kommentarer](FY1_VERKNINGSGRAD_FACIT_2026-11-04.md). Återstående separat familj i kopplingar: Kretsanalys och blandade resistorkopplingar, 3 huvuduppgifter. Användaren har därefter skickat rapporter om figurerna 3.73, 3.93, 3.88 och formuleringen i Ma1 0.879; dessa hanteras i nästa avgränsade omgång.
