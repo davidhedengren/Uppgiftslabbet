@@ -72,3 +72,20 @@ når nya facit inte äldre blad av sig själva. Sedan 2026-11-04 (UL 6ebc154)
 visar bladet "N uppgifter i bladet har nytt facit i banken" med knappen
 **Uppdatera facit**. Den byter bara facit i uppgifter som inte redigerats i
 bladet och går via skyddet för sparade dokument. Läraren väljer sedan Spara.
+
+## Omgång 3: Reaktions- och bromssträcka (21 uppgifter, 19 delfacit)
+
+3.5, 3.63, 3.77, 3.81, 3.84, 3.91, 3.157, 3.159, 3.162, 3.164, 3.172, 3.185,
+3.186, 3.187, 3.188, 3.189, 3.276, 3.278, 3.372, 3.376, 3.378.
+
+- Formelrubriker som återkommer: "Konstant fart under reaktionstiden: \(s_r=v_0t_r\)",
+  "Bromssträcka till stillastående (tidlösa formeln med \(v=0\)): \(s_b=\dfrac{v_0^2}{2b}\)",
+  "Stoppsträcka: \(s_{\text{stopp}}=s_r+s_b\)" och för v-t-diagram
+  "Accelerationen är lutningen …: \(a=\dfrac{\Delta v}{\Delta t}\)" och "Sträckan är arean under v-t-grafen".
+- 3.188: andragradsekvationen i farten löses grafiskt (stoppsträckan som funktion av
+  farten och linjen s = 45). `geogebra: true`.
+- 3.189 är helt symbolisk (L, τ, b). Facit visar lösningsformeln steg för steg och
+  förklarar varför en graf kräver givna värden.
+- 3.172 behåller de delsträngar som `fysik1-prosa` kräver.
+- Odelade uppgifter med flera delfrågor (3.5, 3.63, 3.157, 3.162, 3.164, 3.172) får
+  ett facit per delfråga med a), b) …
