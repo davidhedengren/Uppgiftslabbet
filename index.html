@@ -5151,6 +5151,13 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .brad.del-slapp::after{content:'Lägg till som deluppgift';position:absolute;right:8px;bottom:-7px;
   z-index:2;background:var(--ed);color:#fff;padding:2px 7px;border-radius:5px;font-size:10px}
 .brad .separera{font-size:10px;color:var(--ed);padding:2px 5px;min-height:22px}
+/* Verktygsknapparna ligger över metaraden i stället för i en egen kolumn, så att uppgiftstexten får hela bredden. */
+.brad{grid-template-columns:22px minmax(0,1fr)}
+.brad.deluppgift{grid-template-columns:42px minmax(0,1fr)}
+.brad .bverktyg{position:absolute;top:5px;right:6px;z-index:1;border-radius:8px;padding:1px;
+  background:var(--x-sunken,var(--canvas));pointer-events:none}
+.brad:hover .bverktyg,.brad:focus-within .bverktyg{pointer-events:auto}
+.brad.del-slapp .bverktyg{background:var(--ed-tint)}
 #utskrift .pu.pdf-pu.pdf-grupp,.lr-papper .pu.pdf-pu.pdf-grupp{
   grid-template-columns:25pt minmax(0,1fr)!important}
 .pdf-gruppinnehall,.pdf-delar{min-width:0;grid-column:2}
