@@ -71,3 +71,19 @@ Faciten är renderade i mobilbredd utan KaTeX-fel eller för breda formler.
 - Inga räknefel. Diagramvärdena i 3.455–3.460 är kontrollerade mot koordinaterna.
 - Intervall som ”0–2 s” skrivs ”0 till 2 s” i formlerna. KaTeX visar inte
   tankstreck inne i `\text{}`, och det gällde även st_diagram och vt_diagram.
+
+## Omgång 5: vektorer (166 uppgifter, 54 delfacit)
+
+Därmed följer hela kapitel 3 (Rörelse) facitmallen. Det gäller alla 522 uppgifter i
+konstacc, st_diagram, acceleration, vt_diagram, at_diagram och vektorer, även de som bara visas i UL.
+
+- Formelrubriker: ”Relativ fart åt samma håll: \(v_{\text{rel}}=v_1-v_2\)”, ”Relativ fart
+  mot varandra: \(v_{\text{rel}}=v_1+v_2\)”, ”Hastigheter adderas med tecken”,
+  ”Komposanten intill vinkeln: \(F\cos\alpha\)”, ”Komposanten mitt emot vinkeln: \(F\sin\alpha\)”,
+  ”Pythagoras sats”, ”Pythagoras sats baklänges”, ”Riktning: \(\tan\alpha\)”,
+  ”Vektoraddition komposantvis”, ”Antal rutor gånger skalan” och ”Tyngdkraftens
+  komposant längs/vinkelrätt mot planet: \(mg\sin\alpha\), \(mg\cos\alpha\)”.
+- Vinkeln i facit heter α (de gamla faciten använde v, som lätt förväxlas med
+  hastigheten). Uppgiften 3.644 behåller v, eftersom frågan och alternativen använder det.
+- 3.637, 3.638, 3.678 m.fl. hade Unicode-minus (−) inne i LaTeX. Det är borta i de nya faciten.
+- Inga räknefel. Alla 166 svar är omräknade, och inga `rättSvar` eller frågetexter är ändrade.
