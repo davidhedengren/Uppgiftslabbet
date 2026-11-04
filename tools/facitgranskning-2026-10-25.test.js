@@ -26,7 +26,8 @@ test('Matematikfacit: varje steg har en uppgiftsspecifik rubrik med beräkningen
 test('Fysikfacit har metodtext, och alla kort har svarsrad och kommenterade felalternativ',()=>{
   for(const f of Object.keys(SETS))for(const t of kort(f)){
     assert.match(t.s,/class="facit-svar"/,t.id);
-    if(f==='uppgifter.js'||f==='uppgifter2.js')assert.match(t.s,/class="facit-metod"/,t.id);
+    // Fysikfacit enligt agent/FACITMALL.md (2026-11-04) är steglistor med formel i rubriken i stället för facit-metod.
+    if(f==='uppgifter.js'||f==='uppgifter2.js')assert.match(t.s,/class="facit-metod"|class="facit-steglista"/,t.id);
     for(const a of t.alternativ||[])if(!a.ratt)assert.ok(a.kommentar,`${t.id}: ${a.txt}`);
     assert.ok(String(t.ledtrad||'').replace(/<[^>]+>/g,'').trim().length>=8,`${t.id}: ledtråd saknas`);}
 });
