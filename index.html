@@ -1185,6 +1185,8 @@ table.data th{background:var(--sunken);font-weight:600}
 .chip.A{background:var(--nA-bg);color:var(--nA)}
 
 .bladlista{flex:1;overflow-y:auto;padding:10px 12px 20px}
+.facitnytt{margin:8px 12px 0;padding:9px 12px;border-radius:10px;background:#eef6fb;border:1px solid #bcd9ea;font-size:13px;line-height:1.45;color:#1d3d52}
+.facitnytt .knapp{margin-top:6px}.facitnytt small{display:block;margin-top:4px;color:#506574}
 .brad{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:flex-start;padding:10px 9px;
   border-radius:var(--r-m);transition:background .15s}
 .brad:hover{background:var(--canvas)}
@@ -5608,6 +5610,7 @@ function ulLösenordUpplåst(){
     </div>
 
     <div class="blad-draghjalp">Dra uppgifter från mitten. Släpp på en uppgift i bladet för att skapa a), b), c).</div>
+    <div class="facitnytt" id="facitNytt" role="status" hidden></div>
     <div class="panel bladlista" id="blad"></div>
 
     <div class="bladfot">
@@ -7407,8 +7410,53 @@ function bladFörhandsvisning(html){
   d.querySelectorAll('br').forEach(el=>el.replaceWith(document.createTextNode(' ')));
   return d.innerHTML.trim();
 }
+/* Nytt facit i banken (2026-11-04). Sparade dokument innehåller en ögonblicksbild av varje uppgift,
+   så ett förbättrat facit i banken når inte ett äldre blad av sig självt. Här jämförs bladets facit med
+   bankens. Läraren kan hämta det nya facit för uppgifter som inte redigerats i bladet; egna ändringar
+   (_redigerad) och egna uppgifter lämnas orörda. Bara facit (s och delarnas s) byts, aldrig uppgiftstexten. */
+function facitNyttLista(){
+  const nya=[],egna=[];
+  for(const x of state.blad||[]){
+    const bank=x?.id==null?null:DB.bank?.find(b=>String(b.id)===String(x.id));
+    if(!bank||bank===x) continue;
+    const delar=(bank.spelDelar||[]).some(d=>{
+      const egen=(x.spelDelar||[]).find(e=>e?.etikett===d?.etikett);
+      return egen&&(egen.s||'')!==(d.s||'');
+    });
+    if((x.s||'')===(bank.s||'')&&!delar) continue;
+    (x._redigerad?egna:nya).push(x);
+  }
+  return {nya,egna};
+}
+function facitNyttKontrollera(){
+  const el=$('#facitNytt'); if(!el) return;
+  const {nya,egna}=facitNyttLista();
+  if(!nya.length){ el.hidden=true; el.innerHTML=''; return; }
+  el.hidden=false;
+  el.innerHTML=`<b>${nya.length===1?'En uppgift':nya.length+' uppgifter'} i bladet har nytt facit i banken.</b>
+    <br><button class="knapp liten" type="button" onclick="facitNyttUppdatera()">Uppdatera facit</button>
+    ${egna.length?`<small>${egna.length===1?'En uppgift':egna.length+' uppgifter'} som du har redigerat i bladet uppdateras inte.</small>`:''}`;
+}
+async function facitNyttUppdatera(){
+  const {nya}=facitNyttLista(); if(!nya.length) return;
+  if(!(await skyddaSparat())) return;
+  let n=0;
+  for(const x of nya){
+    const bank=DB.bank.find(b=>String(b.id)===String(x.id)); if(!bank) continue;
+    x.s=bank.s;
+    for(const d of x.spelDelar||[]){
+      const ny=(bank.spelDelar||[]).find(b=>b?.etikett===d?.etikett);
+      if(ny&&'s' in ny) d.s=ny.s;
+    }
+    n++;
+  }
+  ritaBlad(); sparAutosparaNu();
+  sparStatus(n===1?'Facit uppdaterat i en uppgift. Välj Spara för att spara dokumentet.':`Facit uppdaterat i ${n} uppgifter. Välj Spara för att spara dokumentet.`);
+}
+
 function ritaBlad(){
   bladNormaliseraGrupper();
+  facitNyttKontrollera();
   if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
   const b=state.blad, vp=state.visaPoäng,nummer=bladNumrering();
   const p={E:0,C:0,A:0};
