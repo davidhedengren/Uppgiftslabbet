@@ -3208,3 +3208,7 @@ Se konsumentens `docs/TOPPLISTA_UPPDATERING_2026-11-04.md`. Topplistan hämtades
 ## KG – antal uppgifter i lärarens Just nu (2026-11-04)
 
 Se konsumentens `docs/JUST_NU_UPPGIFTER_2026-11-04.md`. Kolumnen Uppgifter i dag visar godkända profilförsök i alla kurser från beständig dygnsbokföring, svensk kalenderdag. Noll ska vara 0, saknat RPC-fält ska vara streck; använd inte trunkerad profilhistorik som exakt dygnsräknare. Behåll gruppbehörighet och tillgången till offline-elevers antal. SQL `2026-11-04-fokus-uppgifter.sql` behöver installeras; den ändrar inga poäng. Lokala integrationstester och browserprov skyddar tidsperiod, gruppavgränsning, äldre SQL och mobilvisning.
+
+## Fy1 densitet: delindelning, mellanled och grafmodeller (2026-11-04)
+
+[Alla 178 ID och kommentarer](FY1_DENSITET_FACIT_2026-11-04.md). Den nya facitmallen gäller också densitet. Läs den faktiska frågan: antalet delkort säger inte alltid hur många delar huvuduppgiften har. 2.90 behöver volymantagandet före del a. Bevara fullprecisionsnycklar även när slutsvaret visas avrundat. 2.99:s avläsningskoordinater måste ligga inom grafen. Luftbubblor ger för stor volym, alltså en punkt under masslinjen, inte över. Skilj neutralt flytande vid likhet från strikt flytvillkor i 2.91; använd yttervolym för undanträngt vatten och materialvolym för massa. Grafkonstruktion/linjeanpassning ska tillåta GeoGebra; 14 sådana uppgifter är korrigerade. Skydd: `tools/fysik1-densitet-facit-2026-11-04.test.js` och de äldre numeriska densitetstesterna.
