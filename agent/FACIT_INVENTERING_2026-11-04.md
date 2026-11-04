@@ -34,3 +34,7 @@ Fy1 kraftavsnittet har också omfattande mallavvikelser men bearbetas redan i de
 - Exempel från varje bank har lästs: många äldre mallar har löpande text i numrerade listor men saknar specifika rubriker. Att bara byta CSS-klass skulle inte lösa den pedagogiska bristen.
 
 Reproducerbar inventering: `node tools/inventera-facitmall-2026-11-04.cjs`. JSON-filen intill denna rapport innehåller utgångsvärden för alla områden. [Manuell första omgång och kommentarslista](FY1_BLANDADE_KOPPLINGAR_FACIT_2026-11-04.md).
+
+## Fortsättning: elektrisk effekt och energi
+
+Även hela familjen **Elektrisk effekt och energi**, 80 huvuduppgifter och 78 delkort, är nu manuellt granskad och förbättrad: [fullständig logg och kommentarer](FY1_ELEFFEKT_FACIT_2026-11-04.md). Baslinjetabellerna ovan behålls som inventeringens utgångsvärden. Nästa återstående del av Fy1 kopplingar är Ems/inre resistans (48 huvuduppgifter), följt av effekt/verkningsgrad med inre resistans (14).
