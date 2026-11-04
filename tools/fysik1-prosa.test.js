@@ -11,11 +11,11 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
  // Användarbeslut 2026-11-04: konstacc-facit skrivs som numrerade steg där formeln alltid står
  // (agent/FY1_KONSTACC_FACIT_2026-11-04.md). De omfattas inte av prosaregeln.
  // Sedan 2026-11-04 gäller agent/FACITMALL.md även övriga områden i kapitel 3 (agent/FY1_RORELSE_FACIT_2026-11-04.md).
- // Kapitel 2: enheter, mätnoggrannhet och densitet omarbetade enligt samma nya mall.
- const MALL=['enheter','matnogg','densitet','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer',
+ // Kapitel 2: enheter, mätnoggrannhet, densitet och medelhastighet omarbetade enligt samma nya mall.
+ const MALL=['enheter','matnogg','densitet','medelhastighet','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer',
   // Kapitel 4 (agent/FY1_KRAFT_FACIT_2026-11-04.md)
   'newton1','newton2','newton3','tyngdkraft','normalkraft','gravitation','fjadrar','friktion','lutande_plan','moment','blandat_kraft'];
- visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));assert.match(q('2.315').s,/<strong>a\)/);
+ visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.
  for(const id of ['8.49','8.103','8.117','8.149']){assert.match(q(id).s,/<strong>a\)/);assert.match(q(id).s,/<strong>b\)/);}
