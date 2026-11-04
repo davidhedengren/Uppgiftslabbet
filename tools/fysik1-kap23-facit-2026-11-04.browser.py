@@ -27,7 +27,7 @@ with sync_playwright() as pw:
   for id,s in [(q['id'],q['s'])]+[(q['id']+d['etikett'],d['s']) for d in q.get('spelDelar',[])]:
    page.evaluate(r's=>{const el=document.querySelector("#review");el.innerHTML="<div class=\"facit öppen\">"+s+"</div>";renderMathInElement(el,{throwOnError:false,strict:"ignore"});}',s)
    count+=1
-   dims=page.evaluate('''()=>({errors:document.querySelectorAll('.katex-error').length,katex:document.querySelectorAll('.katex').length,pageOverflow:document.documentElement.scrollWidth>innerWidth+3,overflow:[...document.querySelectorAll('.facit-matte,.facit-rubrik,.facit-svar')].filter(x=>x.scrollWidth>x.clientWidth+3).map(x=>({cls:x.className,text:x.textContent.slice(0,120),extra:x.scrollWidth-x.clientWidth}))})''')
+   dims=page.evaluate('''()=>({errors:document.querySelectorAll('.katex-error').length,katex:document.querySelectorAll('.katex').length,pageOverflow:document.documentElement.scrollWidth>innerWidth+3,overflow:[...document.querySelectorAll('.facit-matte,.facit-rubrik,.facit-svar')].filter(x=>x.scrollWidth>x.clientWidth+3).map(x=>({cls:x.className,text:x.textContent.slice(0,120),tex:x.querySelector('annotation')?.textContent,extra:x.scrollWidth-x.clientWidth}))})''')
    if dims['errors'] or (('\\(' in s or '\\[' in s) and not dims['katex']):errors.append(id)
    if dims['overflow'] or dims['pageOverflow']:overflow.append({'id':id,**dims})
    if id in ['2.12b','2.227','2.63','2.5a','2.361','2.46','2.13','2.47','2.354','2.253']:page.screenshot(path='/tmp/fy1-'+id+'.png',full_page=True)

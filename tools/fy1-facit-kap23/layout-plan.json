@@ -1,0 +1,475 @@
+[
+  {
+    "id": "3.4",
+    "old": "s=6{,}0\\cdot4{,}0+\\frac{(-2{,}0)\\cdot4{,}0^2}{2}=24-16=8{,}0\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=6{,}0\\cdot4{,}0+\\frac{(-2{,}0)\\cdot4{,}0^2}{2}\\\\&=24-16\\\\&=8{,}0\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.10",
+    "old": "s=8{,}0\\cdot6{,}0+\\frac{3{,}0\\cdot6{,}0^2}{2}=48+54=102\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=8{,}0\\cdot6{,}0+\\frac{3{,}0\\cdot6{,}0^2}{2}\\\\&=48+54\\\\&=102\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.12",
+    "old": "\\Delta s=4{,}0\\cdot12-6{,}0\\cdot6{,}0=48-36=12\\ \\mathrm m",
+    "new": "\\begin{aligned}\\Delta s&=4{,}0\\cdot12-6{,}0\\cdot6{,}0\\\\&=48-36\\\\&=12\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.23",
+    "old": "s=\\frac{3\\cdot2}{2}+6\\cdot2+\\frac{3\\cdot2}{2}=3+12+3=18\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{3\\cdot2}{2}+6\\cdot2+\\frac{3\\cdot2}{2}\\\\&=3+12+3\\\\&=18\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.30",
+    "old": "t=\\frac{-8{,}0+\\sqrt{8{,}0^2+4\\cdot4{,}91\\cdot22}}{9{,}82}\\approx1{,}453\\ \\mathrm s",
+    "new": "\\begin{aligned}t&=\\frac{-8{,}0+\\sqrt{8{,}0^2+4\\cdot4{,}91\\cdot22}}{9{,}82}\\\\&\\approx1{,}453\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.32",
+    "old": "s=\\frac{6\\cdot8{,}0}{2}+10\\cdot8{,}0+\\frac{4\\cdot8{,}0}{2}=24+80+16=120\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{6\\cdot8{,}0}{2}+10\\cdot8{,}0+\\frac{4\\cdot8{,}0}{2}\\\\&=24+80+16\\\\&=120\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.33",
+    "old": "s=\\frac{6\\cdot3}{2}+(20-6)\\cdot3=9+42=51\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{6\\cdot3}{2}+(20-6)\\cdot3\\\\&=9+42\\\\&=51\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.34",
+    "old": "s=10\\cdot20+\\frac{40\\cdot20}{2}=200+400=600\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=10\\cdot20+\\frac{40\\cdot20}{2}\\\\&=200+400\\\\&=600\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.35",
+    "old": "s=\\frac{10\\cdot4}{2}+40\\cdot4+\\frac{10\\cdot4}{2}=20+160+20=200\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{10\\cdot4}{2}+40\\cdot4+\\frac{10\\cdot4}{2}\\\\&=20+160+20\\\\&=200\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.42",
+    "old": "a=g-\\frac{kv^2}{m}=9{,}82\\left(1-\\frac{30^2}{55^2}\\right)\\approx6{,}90\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=g-\\frac{kv^2}{m}\\\\&=9{,}82\\left(1-\\frac{30^2}{55^2}\\right)\\\\&\\approx6{,}90\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.43",
+    "old": "\\Delta x=11\\cdot3{,}5+\\frac{(-1{,}6)\\cdot3{,}5^2}{2}=38{,}5-9{,}8=28{,}7\\ \\mathrm m",
+    "new": "\\begin{aligned}\\Delta x&=11\\cdot3{,}5+\\frac{(-1{,}6)\\cdot3{,}5^2}{2}\\\\&=38{,}5-9{,}8\\\\&=28{,}7\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.44",
+    "old": "t=\\frac{120}{200}=0{,}60\\ \\mathrm h=0{,}60\\cdot60\\ \\mathrm{min}=36\\ \\mathrm{min}",
+    "new": "\\begin{aligned}t&=\\frac{120}{200}\\\\&=0{,}60\\ \\mathrm h\\\\&=0{,}60\\cdot60\\ \\mathrm{min}\\\\&=36\\ \\mathrm{min}\\end{aligned}"
+  },
+  {
+    "id": "3.45",
+    "old": "v=\\sqrt{2gh}=\\sqrt{2\\cdot9{,}82\\cdot18}\\approx18{,}8\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v&=\\sqrt{2gh}\\\\&=\\sqrt{2\\cdot9{,}82\\cdot18}\\\\&\\approx18{,}8\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.245",
+    "old": "\\Delta x=3\\cdot5+\\frac{3+8}{2}\\cdot5=15+27{,}5=42{,}5\\ \\mathrm m",
+    "new": "\\begin{aligned}\\Delta x&=3\\cdot5+\\frac{3+8}{2}\\cdot5\\\\&=15+27{,}5\\\\&=42{,}5\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.48",
+    "old": "a=\\frac{v^2-v_0^2}{2s}=\\frac{19{,}44^2-0^2}{2\\cdot55}\\approx3{,}44\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v^2-v_0^2}{2s}\\\\&=\\frac{19{,}44^2-0^2}{2\\cdot55}\\\\&\\approx3{,}44\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.233",
+    "old": "t=\\frac{330}{211{,}66}\\ \\mathrm h\\approx1{,}559\\cdot60\\ \\mathrm{min}\\approx93{,}5\\ \\mathrm{min}",
+    "new": "\\begin{aligned}t&=\\frac{330}{211{,}66}\\ \\mathrm h\\\\&\\approx1{,}559\\cdot60\\ \\mathrm{min}\\\\&\\approx93{,}5\\ \\mathrm{min}\\end{aligned}"
+  },
+  {
+    "id": "3.62",
+    "old": "a=\\frac{v-v_0}{t}=\\frac{25{,}00-19{,}44}{4{,}0}\\approx1{,}39\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v-v_0}{t}\\\\&=\\frac{25{,}00-19{,}44}{4{,}0}\\\\&\\approx1{,}39\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.67",
+    "old": "s=\\frac{20\\cdot30}{2}+80\\cdot30+\\frac{30\\cdot30}{2}=300+2400+450=3150\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{20\\cdot30}{2}+80\\cdot30+\\frac{30\\cdot30}{2}\\\\&=300+2400+450\\\\&=3150\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.67",
+    "old": "s=\\frac{20\\cdot30}{2}+80\\cdot30+\\frac{30\\cdot30}{2}=3150\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{20\\cdot30}{2}+80\\cdot30+\\frac{30\\cdot30}{2}\\\\&=3150\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.78",
+    "old": "s=\\frac{5\\cdot10}{2}+4\\cdot10+\\frac{4\\cdot10}{2}=25+40+20=85\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{5\\cdot10}{2}+4\\cdot10+\\frac{4\\cdot10}{2}\\\\&=25+40+20\\\\&=85\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.79",
+    "old": "h=20\\cdot2{,}787-4{,}91\\cdot2{,}787^2\\approx17{,}6\\ \\mathrm m",
+    "new": "\\begin{aligned}h&=20\\cdot2{,}787-4{,}91\\cdot2{,}787^2\\\\&\\approx17{,}6\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.79",
+    "old": "\\begin{aligned}&v_1=20-9{,}82\\cdot2{,}787\\approx-7{,}37\\ \\mathrm{m/s}\\\\&v_2=20-9{,}82\\cdot(2{,}787-1{,}5)\\approx+7{,}37\\ \\mathrm{m/s}\\end{aligned}",
+    "new": "\\begin{aligned}v_1&=20-9{,}82\\cdot2{,}787\\\\&\\approx-7{,}37\\ \\mathrm{m/s}\\\\v_2&=20-9{,}82\\cdot(2{,}787-1{,}5)\\\\&\\approx+7{,}37\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.86",
+    "old": "h_m-h_g=\\left(2{,}6+ut-\\frac{9{,}82t^2}{2}\\right)-\\left(ut+\\frac{1{,}2t^2}{2}\\right)=2{,}6-\\frac{(9{,}82+1{,}2)t^2}{2}",
+    "new": "\\begin{aligned}h_m-h_g&=\\left(2{,}6+ut-\\frac{9{,}82t^2}{2}\\right)\\\\&\\quad-\\left(ut+\\frac{1{,}2t^2}{2}\\right)\\\\&=2{,}6-\\frac{(9{,}82+1{,}2)t^2}{2}\\end{aligned}",
+    "previous": "\\begin{aligned}h_m-h_g&=\\left(2{,}6+ut-\\frac{9{,}82t^2}{2}\\right)-\\left(ut+\\frac{1{,}2t^2}{2}\\right)\\\\&=2{,}6-\\frac{(9{,}82+1{,}2)t^2}{2}\\end{aligned}"
+  },
+  {
+    "id": "3.88",
+    "old": "t=\\frac{2s}{v_0+v}=\\frac{2\\cdot0{,}60}{0+55}\\approx0{,}0218\\ \\mathrm s=21{,}8\\ \\mathrm{ms}",
+    "new": "\\begin{aligned}t&=\\frac{2s}{v_0+v}\\\\&=\\frac{2\\cdot0{,}60}{0+55}\\\\&\\approx0{,}0218\\ \\mathrm s\\\\&=21{,}8\\ \\mathrm{ms}\\end{aligned}"
+  },
+  {
+    "id": "3.93",
+    "old": "a=\\frac{v^2-v_0^2}{2s}=\\frac{68^2-0^2}{2\\cdot1156}=\\frac{4624}{2312}=2{,}0\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v^2-v_0^2}{2s}\\\\&=\\frac{68^2-0^2}{2\\cdot1156}\\\\&=\\frac{4624}{2312}\\\\&=2{,}0\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.106",
+    "old": "s_{\\text{upp}}=\\frac{4\\cdot8}{2}+6\\cdot8+\\frac{4\\cdot8}{2}=16+48+16=80\\ \\mathrm m",
+    "new": "\\begin{aligned}s_{\\text{upp}}&=\\frac{4\\cdot8}{2}+6\\cdot8+\\frac{4\\cdot8}{2}\\\\&=16+48+16\\\\&=80\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.106",
+    "old": "s_{\\text{ned}}=\\frac{4\\cdot6}{2}+6\\cdot6+\\frac{4\\cdot6}{2}=12+36+12=60\\ \\mathrm m",
+    "new": "\\begin{aligned}s_{\\text{ned}}&=\\frac{4\\cdot6}{2}+6\\cdot6+\\frac{4\\cdot6}{2}\\\\&=12+36+12\\\\&=60\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.109",
+    "old": "s\\approx11{,}3+30{,}8+44{,}8+54{,}8\\approx142\\ \\mathrm m",
+    "new": "\\begin{aligned}s&\\approx11{,}3+30{,}8+44{,}8+54{,}8\\\\&\\approx142\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.113",
+    "old": "s=6{,}0\\cdot5{,}0+4{,}0\\cdot3{,}0=30+12=42\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=6{,}0\\cdot5{,}0+4{,}0\\cdot3{,}0\\\\&=30+12\\\\&=42\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.115",
+    "old": "s=2{,}2\\cdot6{,}0+\\frac{0{,}25\\cdot6{,}0^2}{2}=13{,}2+4{,}5=17{,}7\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=2{,}2\\cdot6{,}0+\\frac{0{,}25\\cdot6{,}0^2}{2}\\\\&=13{,}2+4{,}5\\\\&=17{,}7\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.253",
+    "old": "s=14\\cdot4{,}0+\\frac{14+24{,}35}{2}\\cdot0{,}5\\approx65{,}59\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=14\\cdot4{,}0+\\frac{14+24{,}35}{2}\\cdot0{,}5\\\\&\\approx65{,}59\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.118",
+    "old": "\\begin{aligned}&t^2-1{,}833t-0{,}3055=0\\\\&\\Rightarrow\\  t=0{,}9165+\\sqrt{0{,}9165^2+0{,}3055}\\approx1{,}99\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&t^2-1{,}833t-0{,}3055=0\\\\&\\Rightarrow\\  t=0{,}9165+\\sqrt{0{,}9165^2+0{,}3055}\\\\&\\approx1{,}99\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}t^2-1{,}833t-0{,}3055&=0\\\\\\Rightarrow\\  t&=0{,}9165+\\sqrt{0{,}9165^2+0{,}3055}\\\\&\\approx1{,}99\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.120",
+    "old": "a=\\frac{v-v_0}{t}=\\frac{6{,}0-55}{3{,}0}\\approx-16{,}33\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v-v_0}{t}\\\\&=\\frac{6{,}0-55}{3{,}0}\\\\&\\approx-16{,}33\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.122",
+    "old": "s=2{,}5\\cdot8+\\frac{0{,}40\\cdot8^2}{2}=20+12{,}8=32{,}8\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=2{,}5\\cdot8+\\frac{0{,}40\\cdot8^2}{2}\\\\&=20+12{,}8\\\\&=32{,}8\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.124",
+    "old": "a=\\frac{v^2-v_0^2}{2s}=\\frac{23^2-0^2}{2\\cdot68}=\\frac{529}{136}\\approx3{,}9\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v^2-v_0^2}{2s}\\\\&=\\frac{23^2-0^2}{2\\cdot68}\\\\&=\\frac{529}{136}\\\\&\\approx3{,}9\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.139",
+    "old": "s=\\frac{20\\cdot15}{2}+40\\cdot15+\\frac{20\\cdot15}{2}=150+600+150=900\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{20\\cdot15}{2}+40\\cdot15+\\frac{20\\cdot15}{2}\\\\&=150+600+150\\\\&=900\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.145",
+    "old": "A_{\\text{fram}}=\\frac{6\\cdot8}{2}+4\\cdot8+\\frac{2{,}46\\cdot8}{2}\\approx65{,}85\\ \\mathrm m",
+    "new": "\\begin{aligned}A_{\\text{fram}}&=\\frac{6\\cdot8}{2}+4\\cdot8+\\frac{2{,}46\\cdot8}{2}\\\\&\\approx65{,}85\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.145",
+    "old": "\\Delta s=\\frac{6\\cdot8}{2}+4\\cdot8+\\frac{8+(-5)}{2}\\cdot4-5\\cdot4",
+    "new": "\\begin{aligned}\\Delta s&=\\frac{6\\cdot8}{2}+4\\cdot8\\\\&\\quad+\\frac{8+(-5)}{2}\\cdot4-5\\cdot4\\end{aligned}",
+    "previous": "\\begin{aligned}\\Delta s&=\\frac{6\\cdot8}{2}+4\\cdot8+\\frac{8+(-5)}{2}\\cdot4-5\\cdot4\\end{aligned}"
+  },
+  {
+    "id": "3.148",
+    "old": "s_{\\text{upp}}=\\frac{2\\cdot4}{2}+3\\cdot4+\\frac{2\\cdot4}{2}=4+12+4=20\\ \\mathrm m",
+    "new": "\\begin{aligned}s_{\\text{upp}}&=\\frac{2\\cdot4}{2}+3\\cdot4+\\frac{2\\cdot4}{2}\\\\&=4+12+4\\\\&=20\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.148",
+    "old": "s_{\\text{ned}}=\\frac{2\\cdot4}{2}+3\\cdot4+\\frac{2\\cdot4}{2}=4+12+4=20\\ \\mathrm m",
+    "new": "\\begin{aligned}s_{\\text{ned}}&=\\frac{2\\cdot4}{2}+3\\cdot4+\\frac{2\\cdot4}{2}\\\\&=4+12+4\\\\&=20\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.152",
+    "old": "s=4{,}0\\cdot4{,}0+\\frac{0{,}80\\cdot4{,}0^2}{2}=16+6{,}4=22{,}4\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=4{,}0\\cdot4{,}0+\\frac{0{,}80\\cdot4{,}0^2}{2}\\\\&=16+6{,}4\\\\&=22{,}4\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.154",
+    "old": "s=2{,}4\\cdot6{,}0+\\frac{0{,}35\\cdot6{,}0^2}{2}=14{,}4+6{,}3=20{,}7\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=2{,}4\\cdot6{,}0+\\frac{0{,}35\\cdot6{,}0^2}{2}\\\\&=14{,}4+6{,}3\\\\&=20{,}7\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.155",
+    "old": "a=\\frac{v-v_0}{t}=\\frac{1{,}2-5{,}5}{7{,}5}\\approx-0{,}57\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a&=\\frac{v-v_0}{t}\\\\&=\\frac{1{,}2-5{,}5}{7{,}5}\\\\&\\approx-0{,}57\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.161",
+    "old": "t_2=\\sqrt{\\frac{2\\cdot2\\cdot19{,}64}{9{,}82}}=\\sqrt2\\cdot2{,}0\\approx2{,}83\\ \\mathrm s",
+    "new": "\\begin{aligned}t_2&=\\sqrt{\\frac{2\\cdot2\\cdot19{,}64}{9{,}82}}\\\\&=\\sqrt2\\cdot2{,}0\\\\&\\approx2{,}83\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.163",
+    "old": "s=12\\cdot10+\\frac{(-0{,}40)\\cdot10^2}{2}=120-20=100\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=12\\cdot10+\\frac{(-0{,}40)\\cdot10^2}{2}\\\\&=120-20\\\\&=100\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.168",
+    "old": "\\Delta v=3\\cdot4+1\\cdot(10-4)=12+6=18\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}\\Delta v&=3\\cdot4+1\\cdot(10-4)\\\\&=12+6\\\\&=18\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.171",
+    "old": "\\begin{aligned}&t^2+0{,}815t-5{,}09=0\\\\&\\Rightarrow\\  t=-0{,}407+\\sqrt{0{,}407^2+5{,}09}\\approx1{,}89\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&t^2+0{,}815t-5{,}09=0\\\\&\\Rightarrow\\  t=-0{,}407+\\sqrt{0{,}407^2+5{,}09}\\\\&\\approx1{,}89\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}t^2+0{,}815t-5{,}09&=0\\\\\\Rightarrow\\  t&=-0{,}407+\\sqrt{0{,}407^2+5{,}09}\\\\&\\approx1{,}89\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.172",
+    "old": "v^2=22{,}22^2+2\\cdot(-7{,}0)\\cdot8{,}89\\approx369{,}4",
+    "new": "\\begin{aligned}v^2&=22{,}22^2+2\\cdot(-7{,}0)\\cdot8{,}89\\\\&\\approx369{,}4\\end{aligned}"
+  },
+  {
+    "id": "3.172",
+    "old": "v=\\sqrt{369{,}4}\\approx19{,}22\\ \\mathrm{m/s}=19{,}22\\cdot3{,}6\\approx69\\ \\mathrm{km/h}",
+    "new": "\\begin{aligned}v&=\\sqrt{369{,}4}\\\\&\\approx19{,}22\\ \\mathrm{m/s}\\\\&=19{,}22\\cdot3{,}6\\\\&\\approx69\\ \\mathrm{km/h}\\end{aligned}"
+  },
+  {
+    "id": "3.192",
+    "old": "v=21{,}2+(-1{,}25)\\cdot12{,}0=21{,}2-15{,}0=6{,}2\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v&=21{,}2+(-1{,}25)\\cdot12{,}0\\\\&=21{,}2-15{,}0\\\\&=6{,}2\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.192",
+    "old": "v_0=v-at=0-(-1{,}30)\\cdot6{,}55\\approx8{,}52\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v_0&=v-at\\\\&=0-(-1{,}30)\\cdot6{,}55\\\\&\\approx8{,}52\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.198",
+    "old": "v=(-11)+(-3{,}5)\\cdot2{,}5=-19{,}75\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v&=(-11)+(-3{,}5)\\cdot2{,}5\\\\&=-19{,}75\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.203",
+    "old": "\\Delta v_x=(-18{,}5-20{,}9)\\ \\mathrm{km/s}=-39{,}4\\ \\mathrm{km/s}",
+    "new": "\\begin{aligned}\\Delta v_x&=(-18{,}5-20{,}9)\\ \\mathrm{km/s}\\\\&=-39{,}4\\ \\mathrm{km/s}\\end{aligned}"
+  },
+  {
+    "id": "3.203",
+    "old": "\\Delta t=2{,}16\\cdot365{,}25\\cdot86\\,400=68\\,164\\,416\\ \\mathrm s",
+    "new": "\\begin{aligned}\\Delta t&=2{,}16\\cdot365{,}25\\cdot86\\,400\\\\&=68\\,164\\,416\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.203",
+    "old": "a_{mx}=\\frac{-39\\,400}{68\\,164\\,416}\\approx-5{,}7801\\cdot10^{-4}\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a_{mx}&=\\frac{-39\\,400}{68\\,164\\,416}\\\\&\\approx-5{,}7801\\cdot10^{-4}\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.203",
+    "old": "a_{mx}\\approx-5{,}7801\\cdot10^{-4}\\cdot10^{6}\\approx-578{,}01\\ \\mathrm{\\mu m/s^2}",
+    "new": "\\begin{aligned}a_{mx}&\\approx-5{,}7801\\cdot10^{-4}\\cdot10^{6}\\\\&\\approx-578{,}01\\ \\mathrm{\\mu m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.212",
+    "old": "\\begin{aligned}&\\text{med kudde: }s=\\frac{12+0}{2}\\cdot0{,}12=0{,}72\\ \\mathrm m\\\\&\\text{utan: }s=\\frac{12+0}{2}\\cdot0{,}030=0{,}18\\ \\mathrm m\\end{aligned}",
+    "new": "\\begin{aligned}\\text{med kudde: }s&=\\frac{12+0}{2}\\cdot0{,}12\\\\&=0{,}72\\ \\mathrm m\\\\\\text{utan: }s&=\\frac{12+0}{2}\\cdot0{,}030\\\\&=0{,}18\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.214",
+    "old": "\\Delta t=\\frac{\\Delta v}{a_m}=\\frac{-2{,}60-15{,}0}{-135}=\\frac{-17{,}60}{-135}\\approx0{,}13037\\ \\mathrm s",
+    "new": "\\begin{aligned}\\Delta t&=\\frac{\\Delta v}{a_m}\\\\&=\\frac{-2{,}60-15{,}0}{-135}\\\\&=\\frac{-17{,}60}{-135}\\\\&\\approx0{,}13037\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.215",
+    "old": "a_m=\\frac{3{,}8-(-5{,}4)}{0{,}055}=\\frac{9{,}2}{0{,}055}\\approx+167{,}27\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a_m&=\\frac{3{,}8-(-5{,}4)}{0{,}055}\\\\&=\\frac{9{,}2}{0{,}055}\\\\&\\approx+167{,}27\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.216",
+    "old": "a_m=\\frac{30-(-30)}{0{,}0047}=\\frac{60}{0{,}0047}\\approx+12\\,765{,}96\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a_m&=\\frac{30-(-30)}{0{,}0047}\\\\&=\\frac{60}{0{,}0047}\\\\&\\approx+12\\,765{,}96\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.222",
+    "old": "\\begin{aligned}&gt=4g(t-2{,}50)\\\\&\\Rightarrow\\ 3t=10\\quad\\Rightarrow\\quad t\\approx3{,}33\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}gt&=4g(t-2{,}50)\\\\\\Rightarrow\\ 3t&=10\\\\\\Rightarrow\\quad t&\\approx3{,}33\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}gt&=4g(t-2{,}50)\\\\\\Rightarrow\\ 3t&=10\\quad\\Rightarrow\\quad t\\\\&\\approx3{,}33\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.223",
+    "old": "a_m=\\frac{-12-(+12)}{45}=\\frac{-24}{45}\\approx-0{,}53\\ \\mathrm{m/s^2}",
+    "new": "\\begin{aligned}a_m&=\\frac{-12-(+12)}{45}\\\\&=\\frac{-24}{45}\\\\&\\approx-0{,}53\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.370",
+    "old": "v=\\sqrt{2\\cdot5\\cdot10^{14}\\cdot0{,}15}=\\sqrt{1{,}5\\cdot10^{14}}\\approx1{,}22\\cdot10^{7}\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v&=\\sqrt{2\\cdot5\\cdot10^{14}\\cdot0{,}15}\\\\&=\\sqrt{1{,}5\\cdot10^{14}}\\\\&\\approx1{,}22\\cdot10^{7}\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.373",
+    "old": "s=\\frac{v^2-v_0^2}{2a}=\\frac{20{,}83^2-12{,}5^2}{2\\cdot1{,}4}\\approx99{,}21\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{v^2-v_0^2}{2a}\\\\&=\\frac{20{,}83^2-12{,}5^2}{2\\cdot1{,}4}\\\\&\\approx99{,}21\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.379",
+    "old": "v^2=2{,}52^2+2\\cdot(-0{,}65)\\cdot4{,}80=0{,}1104",
+    "new": "\\begin{aligned}v^2&=2{,}52^2+2\\cdot(-0{,}65)\\cdot4{,}80\\\\&=0{,}1104\\end{aligned}"
+  },
+  {
+    "id": "3.380",
+    "old": "s=34{,}0\\cdot14{,}0+\\frac{(-0{,}750)\\cdot14{,}0^2}{2}=476-73{,}5=402{,}5\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=34{,}0\\cdot14{,}0+\\frac{(-0{,}750)\\cdot14{,}0^2}{2}\\\\&=476-73{,}5\\\\&=402{,}5\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.387",
+    "old": "v_m=\\frac{476+855}{28+45}=\\frac{1331}{73}\\approx18{,}23\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v_m&=\\frac{476+855}{28+45}\\\\&=\\frac{1331}{73}\\\\&\\approx18{,}23\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.388",
+    "old": "\\begin{aligned}&170=\\frac{v+18}{2}\\cdot11\\\\&\\Rightarrow\\  v=\\frac{340}{11}-18=\\frac{142}{11}\\approx12{,}91\\ \\mathrm{m/s}\\end{aligned}",
+    "new": "\\begin{aligned}170&=\\frac{v+18}{2}\\cdot11\\\\\\Rightarrow\\  v&=\\frac{340}{11}-18\\\\&=\\frac{142}{11}\\\\&\\approx12{,}91\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.388",
+    "old": "t=\\frac{-12{,}91+\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}}{2\\cdot0{,}2314}\\approx5{,}95\\ \\mathrm s",
+    "new": "\\begin{aligned}t&=\\frac{\\begin{gathered}-12{,}91+\\\\\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}\\end{gathered}}{2\\cdot0{,}2314}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}t&=\\frac{-12{,}91+\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}}{2\\cdot0{,}2314}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.389",
+    "old": "s_1=4{,}0\\cdot16{,}47+0{,}375\\cdot16{,}47^2\\approx167{,}64\\ \\mathrm m",
+    "new": "\\begin{aligned}s_1&=4{,}0\\cdot16{,}47+0{,}375\\cdot16{,}47^2\\\\&\\approx167{,}64\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.389",
+    "old": "\\begin{aligned}&\\text{A: }v_0=28\\ \\mathrm{m/s},\\ a=0{,}10\\ \\mathrm{m/s^2},\\ s_0=230\\ \\mathrm m\\\\&\\text{B: }v_0=24\\ \\mathrm{m/s},\\ a=0{,}20\\ \\mathrm{m/s^2}\\end{aligned}",
+    "new": "\\begin{aligned}\\text{A: }v_0&=28\\ \\mathrm{m/s},\\ a\\\\&=0{,}10\\ \\mathrm{m/s^2},\\ s_0\\\\&=230\\ \\mathrm m\\\\\\text{B: }v_0&=24\\ \\mathrm{m/s},\\ a\\\\&=0{,}20\\ \\mathrm{m/s^2}\\end{aligned}"
+  },
+  {
+    "id": "3.389",
+    "old": "\\begin{aligned}&\\text{cyklist: }v=11\\ \\mathrm{m/s}\\\\&\\text{bil: }v_0=30\\ \\mathrm{m/s},\\ a=-2{,}0\\ \\mathrm{m/s^2}\\ \\text{från }t=6{,}0\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}\\text{cyklist: }v&=11\\ \\mathrm{m/s}\\\\\\text{bil: }v_0&=30\\ \\mathrm{m/s},\\ a\\\\&=-2{,}0\\ \\mathrm{m/s^2}\\ \\text{från }t\\\\&=6{,}0\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.389",
+    "old": "t=\\frac{31-\\sqrt{31^2-4\\cdot216}}{2}=\\frac{31-\\sqrt{97}}{2}\\approx10{,}58\\ \\mathrm s",
+    "new": "\\begin{aligned}t&=\\frac{31-\\sqrt{31^2-4\\cdot216}}{2}\\\\&=\\frac{31-\\sqrt{97}}{2}\\\\&\\approx10{,}58\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.391",
+    "old": "s=18\\cdot0{,}50+18\\cdot2{,}5-\\frac{4{,}0\\cdot2{,}5^2}{2}=41{,}5\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=18\\cdot0{,}50+18\\cdot2{,}5-\\frac{4{,}0\\cdot2{,}5^2}{2}\\\\&=41{,}5\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.396",
+    "old": "\\Delta s=\\frac{9{,}82\\cdot1{,}5^2}{2}-\\frac{9{,}82\\cdot0{,}5^2}{2}=11{,}05-1{,}23=9{,}82\\ \\mathrm m",
+    "new": "\\begin{aligned}\\Delta s&=\\frac{9{,}82\\cdot1{,}5^2}{2}-\\frac{9{,}82\\cdot0{,}5^2}{2}\\\\&=11{,}05-1{,}23\\\\&=9{,}82\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.397",
+    "old": "s=6{,}0\\cdot1{,}30-\\frac{9{,}82\\cdot1{,}30^2}{2}\\approx-0{,}5\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=6{,}0\\cdot1{,}30-\\frac{9{,}82\\cdot1{,}30^2}{2}\\\\&\\approx-0{,}5\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.399",
+    "old": "\\begin{aligned}&t^2-3{,}462t+2{,}444=0\\\\&\\Rightarrow\\  t=1{,}731-\\sqrt{1{,}731^2-2{,}444}\\approx0{,}99\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&t^2-3{,}462t+2{,}444=0\\\\&\\Rightarrow\\  t=1{,}731-\\sqrt{1{,}731^2-2{,}444}\\\\&\\approx0{,}99\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}t^2-3{,}462t+2{,}444&=0\\\\\\Rightarrow\\  t&=1{,}731-\\sqrt{1{,}731^2-2{,}444}\\\\&\\approx0{,}99\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.399",
+    "old": "\\begin{aligned}&t^2-3{,}462t+2{,}444=0\\\\&\\Rightarrow\\  t=1{,}731+\\sqrt{1{,}731^2-2{,}444}\\approx2{,}47\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&t^2-3{,}462t+2{,}444=0\\\\&\\Rightarrow\\  t=1{,}731+\\sqrt{1{,}731^2-2{,}444}\\\\&\\approx2{,}47\\ \\mathrm s\\end{aligned}",
+    "previous": "\\begin{aligned}t^2-3{,}462t+2{,}444&=0\\\\\\Rightarrow\\  t&=1{,}731+\\sqrt{1{,}731^2-2{,}444}\\\\&\\approx2{,}47\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.400",
+    "old": "t=\\frac{35+\\sqrt{35^2+4\\cdot4{,}91\\cdot7{,}0}}{9{,}82}\\approx7{,}32\\ \\mathrm s",
+    "new": "\\begin{aligned}t&=\\frac{35+\\sqrt{35^2+4\\cdot4{,}91\\cdot7{,}0}}{9{,}82}\\\\&\\approx7{,}32\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.401",
+    "old": "-h=29{,}0\\cdot6{,}00-\\frac{9{,}82\\cdot6{,}00^2}{2}=174-176{,}76",
+    "new": "\\begin{aligned}-h&=29{,}0\\cdot6{,}00-\\frac{9{,}82\\cdot6{,}00^2}{2}\\\\&=174-176{,}76\\end{aligned}"
+  },
+  {
+    "id": "3.402",
+    "old": "h=14{,}0\\cdot0{,}500-\\frac{9{,}82\\cdot0{,}500^2}{2}\\approx5{,}77\\ \\mathrm m",
+    "new": "\\begin{aligned}h&=14{,}0\\cdot0{,}500-\\frac{9{,}82\\cdot0{,}500^2}{2}\\\\&\\approx5{,}77\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.402",
+    "old": "h(2)=14{,}0\\cdot2{,}00-\\frac{9{,}82\\cdot2{,}00^2}{2}=8{,}36\\ \\mathrm m",
+    "new": "\\begin{aligned}h(2)&=14{,}0\\cdot2{,}00-\\frac{9{,}82\\cdot2{,}00^2}{2}\\\\&=8{,}36\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.404",
+    "old": "t=\\frac{24+\\sqrt{24^2+4\\cdot4{,}91\\cdot2{,}50}}{9{,}82}\\approx4{,}99\\ \\mathrm s",
+    "new": "\\begin{aligned}t&=\\frac{24+\\sqrt{24^2+4\\cdot4{,}91\\cdot2{,}50}}{9{,}82}\\\\&\\approx4{,}99\\ \\mathrm s\\end{aligned}"
+  },
+  {
+    "id": "3.405",
+    "old": "h=14{,}0\\cdot\\frac{44}{21}-4{,}91\\left(\\frac{44}{21}\\right)^2\\approx7{,}78\\ \\mathrm m",
+    "new": "\\begin{aligned}h&=14{,}0\\cdot\\frac{44}{21}-4{,}91\\left(\\frac{44}{21}\\right)^2\\\\&\\approx7{,}78\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.408",
+    "old": "-h=39{,}16\\cdot8{,}00-\\frac{9{,}82\\cdot8{,}00^2}{2}=-0{,}96",
+    "new": "\\begin{aligned}-h&=39{,}16\\cdot8{,}00-\\frac{9{,}82\\cdot8{,}00^2}{2}\\\\&=-0{,}96\\end{aligned}"
+  },
+  {
+    "id": "3.309",
+    "old": "s=(300-600,\\ 400)=(-300,\\ 400)\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=(300-600,\\ 400)\\\\&=(-300,\\ 400)\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.313",
+    "old": "v_{\\text{mark}}=(-70,\\ 240)+(70,\\ 0)=(0,\\ 240)\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}v_{\\text{mark}}&=(-70,\\ 240)+(70,\\ 0)\\\\&=(0,\\ 240)\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.354",
+    "old": "\\Delta v=2\\cdot2+0\\cdot4+(-1)\\cdot2=4+0-2=2\\ \\mathrm{m/s}",
+    "new": "\\begin{aligned}\\Delta v&=2\\cdot2+0\\cdot4+(-1)\\cdot2\\\\&=4+0-2\\\\&=2\\ \\mathrm{m/s}\\end{aligned}"
+  },
+  {
+    "id": "3.361",
+    "old": "s=\\frac{4\\cdot12}{2}+2\\cdot12+\\frac{6\\cdot12}{2}=24+24+36=84\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{4\\cdot12}{2}+2\\cdot12+\\frac{6\\cdot12}{2}\\\\&=24+24+36\\\\&=84\\ \\mathrm m\\end{aligned}"
+  },
+  {
+    "id": "3.658",
+    "old": "F_3=-\\big((40,\\ 0)+(0,\\ 30)\\big)=(-40,\\ -30)\\ \\mathrm N",
+    "new": "\\begin{aligned}F_3&=-\\big((40,\\ 0)+(0,\\ 30)\\big)\\\\&=(-40,\\ -30)\\ \\mathrm N\\end{aligned}"
+  },
+  {
+    "id": "3.730",
+    "old": "s_3=(-4{,}0\\cos45^\\circ,\\ -4{,}0\\sin45^\\circ)\\approx(-2{,}83,\\ -2{,}83)\\ \\mathrm{km}",
+    "new": "\\begin{aligned}s_3&=(-4{,}0\\cos45^\\circ,\\ -4{,}0\\sin45^\\circ)\\\\&\\approx(-2{,}83,\\ -2{,}83)\\ \\mathrm{km}\\end{aligned}"
+  },
+  {
+    "id": "3.731",
+    "old": "F_1+F_2=(50+40\\cos60^\\circ,\\ 40\\sin60^\\circ)\\approx(70{,}0,\\ 34{,}6)\\ \\mathrm N",
+    "new": "\\begin{aligned}F_1+F_2&=(50+40\\cos60^\\circ,\\ 40\\sin60^\\circ)\\\\&\\approx(70{,}0,\\ 34{,}6)\\ \\mathrm N\\end{aligned}"
+  },
+  {
+    "id": "3.738",
+    "old": "s=\\frac{0+3{,}0}{2}\\cdot2{,}0+3{,}0\\cdot5{,}0+\\frac{3{,}0+0}{2}\\cdot2{,}0=3+15+3=21\\ \\mathrm m",
+    "new": "\\begin{aligned}s&=\\frac{0+3{,}0}{2}\\cdot2{,}0+3{,}0\\cdot5{,}0+\\frac{3{,}0+0}{2}\\cdot2{,}0\\\\&=3+15+3\\\\&=21\\ \\mathrm m\\end{aligned}"
+  }
+]

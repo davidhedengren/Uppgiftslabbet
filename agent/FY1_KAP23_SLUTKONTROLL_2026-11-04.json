@@ -1,0 +1,4188 @@
+{
+  "datum": "2026-11-04",
+  "omfattning": "Efterkontroll av parallellt omarbetade kapitel 3-facit; inte en ny oberoende numerisk omräkning av alla 522 uppgifter.",
+  "granskade": [
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.230",
+    "3.10",
+    "3.11",
+    "3.12",
+    "3.13",
+    "3.240",
+    "3.14",
+    "3.15",
+    "3.16",
+    "3.241",
+    "3.17",
+    "3.18",
+    "3.231",
+    "3.22",
+    "3.23",
+    "3.24",
+    "3.25",
+    "3.26",
+    "3.27",
+    "3.28",
+    "3.29",
+    "3.30",
+    "3.31",
+    "3.242",
+    "3.32",
+    "3.33",
+    "3.34",
+    "3.243",
+    "3.35",
+    "3.36",
+    "3.37",
+    "3.38",
+    "3.39",
+    "3.40",
+    "3.244",
+    "3.41",
+    "3.42",
+    "3.43",
+    "3.44",
+    "3.232",
+    "3.45",
+    "3.46",
+    "3.47",
+    "3.245",
+    "3.48",
+    "3.233",
+    "3.52",
+    "3.56",
+    "3.57",
+    "3.59",
+    "3.60",
+    "3.246",
+    "3.61",
+    "3.62",
+    "3.63",
+    "3.64",
+    "3.252",
+    "3.65",
+    "3.66",
+    "3.67",
+    "3.68",
+    "3.69",
+    "3.70",
+    "3.71",
+    "3.72",
+    "3.73",
+    "3.74",
+    "3.75",
+    "3.76",
+    "3.77",
+    "3.78",
+    "3.79",
+    "3.80",
+    "3.81",
+    "3.82",
+    "3.83",
+    "3.84",
+    "3.85",
+    "3.86",
+    "3.87",
+    "3.88",
+    "3.89",
+    "3.90",
+    "3.91",
+    "3.92",
+    "3.93",
+    "3.94",
+    "3.95",
+    "3.98",
+    "3.100",
+    "3.105",
+    "3.106",
+    "3.247",
+    "3.107",
+    "3.108",
+    "3.109",
+    "3.110",
+    "3.111",
+    "3.248",
+    "3.112",
+    "3.113",
+    "3.114",
+    "3.249",
+    "3.115",
+    "3.116",
+    "3.117",
+    "3.253",
+    "3.118",
+    "3.119",
+    "3.120",
+    "3.121",
+    "3.122",
+    "3.123",
+    "3.124",
+    "3.135",
+    "3.136",
+    "3.137",
+    "3.138",
+    "3.139",
+    "3.250",
+    "3.140",
+    "3.141",
+    "3.142",
+    "3.251",
+    "3.143",
+    "3.144",
+    "3.145",
+    "3.146",
+    "3.147",
+    "3.148",
+    "3.149",
+    "3.150",
+    "3.151",
+    "3.152",
+    "3.153",
+    "3.154",
+    "3.155",
+    "3.156",
+    "3.157",
+    "3.158",
+    "3.159",
+    "3.160",
+    "3.161",
+    "3.162",
+    "3.163",
+    "3.164",
+    "3.165",
+    "3.166",
+    "3.167",
+    "3.168",
+    "3.169",
+    "3.254",
+    "3.170",
+    "3.171",
+    "3.172",
+    "3.173",
+    "3.174",
+    "3.175",
+    "3.176",
+    "3.177",
+    "3.180",
+    "3.181",
+    "3.182",
+    "3.183",
+    "3.239",
+    "3.184",
+    "3.185",
+    "3.186",
+    "3.187",
+    "3.188",
+    "3.189",
+    "3.190",
+    "3.191",
+    "3.192",
+    "3.193",
+    "3.194",
+    "3.195",
+    "3.196",
+    "3.197",
+    "3.198",
+    "3.199",
+    "3.200",
+    "3.201",
+    "3.202",
+    "3.203",
+    "3.204",
+    "3.205",
+    "3.206",
+    "3.207",
+    "3.208",
+    "3.209",
+    "3.210",
+    "3.211",
+    "3.212",
+    "3.255",
+    "3.213",
+    "3.214",
+    "3.215",
+    "3.216",
+    "3.217",
+    "3.218",
+    "3.219",
+    "3.220",
+    "3.221",
+    "3.222",
+    "3.223",
+    "3.224",
+    "3.225",
+    "3.226",
+    "3.227",
+    "3.228",
+    "3.263",
+    "3.264",
+    "3.265",
+    "3.266",
+    "3.267",
+    "3.268",
+    "3.362",
+    "3.365",
+    "3.269",
+    "3.270",
+    "3.271",
+    "3.272",
+    "3.273",
+    "3.274",
+    "3.275",
+    "3.276",
+    "3.277",
+    "3.278",
+    "3.369",
+    "3.370",
+    "3.371",
+    "3.372",
+    "3.373",
+    "3.374",
+    "3.375",
+    "3.376",
+    "3.377",
+    "3.378",
+    "3.379",
+    "3.380",
+    "3.381",
+    "3.382",
+    "3.383",
+    "3.384",
+    "3.385",
+    "3.386",
+    "3.387",
+    "3.388",
+    "3.389",
+    "3.390",
+    "3.391",
+    "3.392",
+    "3.393",
+    "3.394",
+    "3.395",
+    "3.396",
+    "3.397",
+    "3.398",
+    "3.399",
+    "3.400",
+    "3.401",
+    "3.402",
+    "3.403",
+    "3.404",
+    "3.405",
+    "3.406",
+    "3.407",
+    "3.408",
+    "3.409",
+    "3.279",
+    "3.360",
+    "3.363",
+    "3.368",
+    "3.280",
+    "3.281",
+    "3.282",
+    "3.283",
+    "3.284",
+    "3.285",
+    "3.294",
+    "3.295",
+    "3.296",
+    "3.297",
+    "3.298",
+    "3.299",
+    "3.300",
+    "3.309",
+    "3.310",
+    "3.311",
+    "3.312",
+    "3.313",
+    "3.317",
+    "3.318",
+    "3.320",
+    "3.326",
+    "3.330",
+    "3.333",
+    "3.340",
+    "3.345",
+    "3.346",
+    "3.347",
+    "3.348",
+    "3.349",
+    "3.350",
+    "3.351",
+    "3.352",
+    "3.353",
+    "3.354",
+    "3.355",
+    "3.361",
+    "3.364",
+    "3.356",
+    "3.357",
+    "3.358",
+    "3.359",
+    "3.367",
+    "3.410",
+    "3.411",
+    "3.412",
+    "3.413",
+    "3.414",
+    "3.415",
+    "3.416",
+    "3.417",
+    "3.418",
+    "3.419",
+    "3.420",
+    "3.421",
+    "3.422",
+    "3.423",
+    "3.424",
+    "3.425",
+    "3.426",
+    "3.427",
+    "3.428",
+    "3.429",
+    "3.430",
+    "3.431",
+    "3.432",
+    "3.433",
+    "3.434",
+    "3.435",
+    "3.436",
+    "3.437",
+    "3.438",
+    "3.439",
+    "3.440",
+    "3.441",
+    "3.442",
+    "3.443",
+    "3.444",
+    "3.445",
+    "3.446",
+    "3.447",
+    "3.448",
+    "3.449",
+    "3.450",
+    "3.451",
+    "3.452",
+    "3.453",
+    "3.454",
+    "3.455",
+    "3.456",
+    "3.457",
+    "3.458",
+    "3.459",
+    "3.460",
+    "3.461",
+    "3.462",
+    "3.463",
+    "3.464",
+    "3.600",
+    "3.601",
+    "3.602",
+    "3.603",
+    "3.604",
+    "3.605",
+    "3.606",
+    "3.607",
+    "3.608",
+    "3.609",
+    "3.610",
+    "3.611",
+    "3.612",
+    "3.613",
+    "3.614",
+    "3.615",
+    "3.616",
+    "3.617",
+    "3.618",
+    "3.619",
+    "3.620",
+    "3.621",
+    "3.622",
+    "3.623",
+    "3.624",
+    "3.625",
+    "3.626",
+    "3.627",
+    "3.628",
+    "3.629",
+    "3.630",
+    "3.631",
+    "3.632",
+    "3.633",
+    "3.634",
+    "3.635",
+    "3.636",
+    "3.637",
+    "3.638",
+    "3.639",
+    "3.640",
+    "3.641",
+    "3.642",
+    "3.643",
+    "3.644",
+    "3.645",
+    "3.646",
+    "3.647",
+    "3.648",
+    "3.649",
+    "3.650",
+    "3.651",
+    "3.652",
+    "3.653",
+    "3.654",
+    "3.655",
+    "3.656",
+    "3.657",
+    "3.658",
+    "3.659",
+    "3.660",
+    "3.661",
+    "3.662",
+    "3.663",
+    "3.664",
+    "3.665",
+    "3.666",
+    "3.667",
+    "3.668",
+    "3.669",
+    "3.670",
+    "3.671",
+    "3.672",
+    "3.673",
+    "3.674",
+    "3.675",
+    "3.676",
+    "3.677",
+    "3.678",
+    "3.679",
+    "3.680",
+    "3.681",
+    "3.682",
+    "3.683",
+    "3.684",
+    "3.685",
+    "3.686",
+    "3.687",
+    "3.688",
+    "3.689",
+    "3.690",
+    "3.691",
+    "3.692",
+    "3.693",
+    "3.694",
+    "3.695",
+    "3.696",
+    "3.697",
+    "3.698",
+    "3.699",
+    "3.700",
+    "3.701",
+    "3.702",
+    "3.703",
+    "3.704",
+    "3.705",
+    "3.706",
+    "3.707",
+    "3.708",
+    "3.709",
+    "3.710",
+    "3.711",
+    "3.712",
+    "3.713",
+    "3.714",
+    "3.715",
+    "3.716",
+    "3.717",
+    "3.718",
+    "3.719",
+    "3.720",
+    "3.721",
+    "3.722",
+    "3.723",
+    "3.724",
+    "3.725",
+    "3.726",
+    "3.727",
+    "3.728",
+    "3.729",
+    "3.730",
+    "3.731",
+    "3.732",
+    "3.733",
+    "3.734",
+    "3.735",
+    "3.736",
+    "3.737",
+    "3.738",
+    "3.739",
+    "3.740",
+    "3.741",
+    "3.742",
+    "3.743",
+    "3.744",
+    "3.745"
+  ],
+  "åtgärdade": [
+    "3.4",
+    "3.10",
+    "3.12",
+    "3.23",
+    "3.30",
+    "3.32",
+    "3.33",
+    "3.34",
+    "3.35",
+    "3.42",
+    "3.43",
+    "3.44",
+    "3.45",
+    "3.245",
+    "3.48",
+    "3.233",
+    "3.62",
+    "3.65",
+    "3.67",
+    "3.78",
+    "3.79",
+    "3.86",
+    "3.88",
+    "3.93",
+    "3.106",
+    "3.109",
+    "3.113",
+    "3.115",
+    "3.253",
+    "3.118",
+    "3.120",
+    "3.122",
+    "3.124",
+    "3.139",
+    "3.145",
+    "3.148",
+    "3.152",
+    "3.154",
+    "3.155",
+    "3.161",
+    "3.163",
+    "3.168",
+    "3.171",
+    "3.172",
+    "3.192",
+    "3.198",
+    "3.203",
+    "3.212",
+    "3.214",
+    "3.215",
+    "3.216",
+    "3.222",
+    "3.223",
+    "3.370",
+    "3.373",
+    "3.379",
+    "3.380",
+    "3.387",
+    "3.388",
+    "3.389",
+    "3.391",
+    "3.396",
+    "3.397",
+    "3.399",
+    "3.400",
+    "3.401",
+    "3.402",
+    "3.404",
+    "3.405",
+    "3.408",
+    "3.309",
+    "3.313",
+    "3.354",
+    "3.361",
+    "3.658",
+    "3.730",
+    "3.731",
+    "3.738"
+  ],
+  "granskade_utan_nytt_fel": [
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.230",
+    "3.11",
+    "3.13",
+    "3.240",
+    "3.14",
+    "3.15",
+    "3.16",
+    "3.241",
+    "3.17",
+    "3.18",
+    "3.231",
+    "3.22",
+    "3.24",
+    "3.25",
+    "3.26",
+    "3.27",
+    "3.28",
+    "3.29",
+    "3.31",
+    "3.242",
+    "3.243",
+    "3.36",
+    "3.37",
+    "3.38",
+    "3.39",
+    "3.40",
+    "3.244",
+    "3.41",
+    "3.232",
+    "3.46",
+    "3.47",
+    "3.52",
+    "3.56",
+    "3.57",
+    "3.59",
+    "3.60",
+    "3.246",
+    "3.61",
+    "3.63",
+    "3.64",
+    "3.252",
+    "3.66",
+    "3.68",
+    "3.69",
+    "3.70",
+    "3.71",
+    "3.72",
+    "3.73",
+    "3.74",
+    "3.75",
+    "3.76",
+    "3.77",
+    "3.80",
+    "3.81",
+    "3.82",
+    "3.83",
+    "3.84",
+    "3.85",
+    "3.87",
+    "3.89",
+    "3.90",
+    "3.91",
+    "3.92",
+    "3.94",
+    "3.95",
+    "3.98",
+    "3.100",
+    "3.105",
+    "3.247",
+    "3.107",
+    "3.108",
+    "3.110",
+    "3.111",
+    "3.248",
+    "3.112",
+    "3.114",
+    "3.249",
+    "3.116",
+    "3.117",
+    "3.119",
+    "3.121",
+    "3.123",
+    "3.135",
+    "3.136",
+    "3.137",
+    "3.138",
+    "3.250",
+    "3.140",
+    "3.141",
+    "3.142",
+    "3.251",
+    "3.143",
+    "3.144",
+    "3.146",
+    "3.147",
+    "3.149",
+    "3.150",
+    "3.151",
+    "3.153",
+    "3.156",
+    "3.157",
+    "3.158",
+    "3.159",
+    "3.160",
+    "3.162",
+    "3.164",
+    "3.165",
+    "3.166",
+    "3.167",
+    "3.169",
+    "3.254",
+    "3.170",
+    "3.173",
+    "3.174",
+    "3.175",
+    "3.176",
+    "3.177",
+    "3.180",
+    "3.181",
+    "3.182",
+    "3.183",
+    "3.239",
+    "3.184",
+    "3.185",
+    "3.186",
+    "3.187",
+    "3.188",
+    "3.189",
+    "3.190",
+    "3.191",
+    "3.193",
+    "3.194",
+    "3.195",
+    "3.196",
+    "3.197",
+    "3.199",
+    "3.200",
+    "3.201",
+    "3.202",
+    "3.204",
+    "3.205",
+    "3.206",
+    "3.207",
+    "3.208",
+    "3.209",
+    "3.210",
+    "3.211",
+    "3.255",
+    "3.213",
+    "3.217",
+    "3.218",
+    "3.219",
+    "3.220",
+    "3.221",
+    "3.224",
+    "3.225",
+    "3.226",
+    "3.227",
+    "3.228",
+    "3.263",
+    "3.264",
+    "3.265",
+    "3.266",
+    "3.267",
+    "3.268",
+    "3.362",
+    "3.365",
+    "3.269",
+    "3.270",
+    "3.271",
+    "3.272",
+    "3.273",
+    "3.274",
+    "3.275",
+    "3.276",
+    "3.277",
+    "3.278",
+    "3.369",
+    "3.371",
+    "3.372",
+    "3.374",
+    "3.375",
+    "3.376",
+    "3.377",
+    "3.378",
+    "3.381",
+    "3.382",
+    "3.383",
+    "3.384",
+    "3.385",
+    "3.386",
+    "3.390",
+    "3.392",
+    "3.393",
+    "3.394",
+    "3.395",
+    "3.398",
+    "3.403",
+    "3.406",
+    "3.407",
+    "3.409",
+    "3.279",
+    "3.360",
+    "3.363",
+    "3.368",
+    "3.280",
+    "3.281",
+    "3.282",
+    "3.283",
+    "3.284",
+    "3.285",
+    "3.294",
+    "3.295",
+    "3.296",
+    "3.297",
+    "3.298",
+    "3.299",
+    "3.300",
+    "3.310",
+    "3.311",
+    "3.312",
+    "3.317",
+    "3.318",
+    "3.320",
+    "3.326",
+    "3.330",
+    "3.333",
+    "3.340",
+    "3.345",
+    "3.346",
+    "3.347",
+    "3.348",
+    "3.349",
+    "3.350",
+    "3.351",
+    "3.352",
+    "3.353",
+    "3.355",
+    "3.364",
+    "3.356",
+    "3.357",
+    "3.358",
+    "3.359",
+    "3.367",
+    "3.410",
+    "3.411",
+    "3.412",
+    "3.413",
+    "3.414",
+    "3.415",
+    "3.416",
+    "3.417",
+    "3.418",
+    "3.419",
+    "3.420",
+    "3.421",
+    "3.422",
+    "3.423",
+    "3.424",
+    "3.425",
+    "3.426",
+    "3.427",
+    "3.428",
+    "3.429",
+    "3.430",
+    "3.431",
+    "3.432",
+    "3.433",
+    "3.434",
+    "3.435",
+    "3.436",
+    "3.437",
+    "3.438",
+    "3.439",
+    "3.440",
+    "3.441",
+    "3.442",
+    "3.443",
+    "3.444",
+    "3.445",
+    "3.446",
+    "3.447",
+    "3.448",
+    "3.449",
+    "3.450",
+    "3.451",
+    "3.452",
+    "3.453",
+    "3.454",
+    "3.455",
+    "3.456",
+    "3.457",
+    "3.458",
+    "3.459",
+    "3.460",
+    "3.461",
+    "3.462",
+    "3.463",
+    "3.464",
+    "3.600",
+    "3.601",
+    "3.602",
+    "3.603",
+    "3.604",
+    "3.605",
+    "3.606",
+    "3.607",
+    "3.608",
+    "3.609",
+    "3.610",
+    "3.611",
+    "3.612",
+    "3.613",
+    "3.614",
+    "3.615",
+    "3.616",
+    "3.617",
+    "3.618",
+    "3.619",
+    "3.620",
+    "3.621",
+    "3.622",
+    "3.623",
+    "3.624",
+    "3.625",
+    "3.626",
+    "3.627",
+    "3.628",
+    "3.629",
+    "3.630",
+    "3.631",
+    "3.632",
+    "3.633",
+    "3.634",
+    "3.635",
+    "3.636",
+    "3.637",
+    "3.638",
+    "3.639",
+    "3.640",
+    "3.641",
+    "3.642",
+    "3.643",
+    "3.644",
+    "3.645",
+    "3.646",
+    "3.647",
+    "3.648",
+    "3.649",
+    "3.650",
+    "3.651",
+    "3.652",
+    "3.653",
+    "3.654",
+    "3.655",
+    "3.656",
+    "3.657",
+    "3.659",
+    "3.660",
+    "3.661",
+    "3.662",
+    "3.663",
+    "3.664",
+    "3.665",
+    "3.666",
+    "3.667",
+    "3.668",
+    "3.669",
+    "3.670",
+    "3.671",
+    "3.672",
+    "3.673",
+    "3.674",
+    "3.675",
+    "3.676",
+    "3.677",
+    "3.678",
+    "3.679",
+    "3.680",
+    "3.681",
+    "3.682",
+    "3.683",
+    "3.684",
+    "3.685",
+    "3.686",
+    "3.687",
+    "3.688",
+    "3.689",
+    "3.690",
+    "3.691",
+    "3.692",
+    "3.693",
+    "3.694",
+    "3.695",
+    "3.696",
+    "3.697",
+    "3.698",
+    "3.699",
+    "3.700",
+    "3.701",
+    "3.702",
+    "3.703",
+    "3.704",
+    "3.705",
+    "3.706",
+    "3.707",
+    "3.708",
+    "3.709",
+    "3.710",
+    "3.711",
+    "3.712",
+    "3.713",
+    "3.714",
+    "3.715",
+    "3.716",
+    "3.717",
+    "3.718",
+    "3.719",
+    "3.720",
+    "3.721",
+    "3.722",
+    "3.723",
+    "3.724",
+    "3.725",
+    "3.726",
+    "3.727",
+    "3.728",
+    "3.729",
+    "3.732",
+    "3.733",
+    "3.734",
+    "3.735",
+    "3.736",
+    "3.737",
+    "3.739",
+    "3.740",
+    "3.741",
+    "3.742",
+    "3.743",
+    "3.744",
+    "3.745"
+  ],
+  "uppgifter": [
+    {
+      "id": "3.4",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.5",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.6",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.7",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.230",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.10",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.11",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.12",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.13",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.240",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.14",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.15",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.16",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.241",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.17",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.18",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.231",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.22",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.23",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.24",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.25",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.26",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.27",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.28",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.29",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.30",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.31",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.242",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.32",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.33",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.34",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.243",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.35",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.36",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.37",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.38",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.39",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.40",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.244",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.41",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.42",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.43",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.44",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.232",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.45",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.46",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.47",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.245",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.48",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.233",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.52",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.56",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.57",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.59",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.60",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.246",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.61",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.62",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.63",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.64",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.252",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.65",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Modellantagandet står nu före beräkningarna och resonemangsfrågan är tydligt märkt som del d, precis som i facit."
+    },
+    {
+      "id": "3.66",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.67",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.68",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.69",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.70",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.71",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.72",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.73",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.74",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.75",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.76",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.77",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.78",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.79",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.80",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.81",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.82",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.83",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.84",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.85",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.86",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.87",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.88",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.89",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.90",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.91",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.92",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.93",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.94",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.95",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.98",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.100",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.105",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.106",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.247",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.107",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.108",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.109",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.110",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.111",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.248",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.112",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.113",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.114",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.249",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.115",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.116",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.117",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.253",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.118",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.119",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.120",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.121",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.122",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.123",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.124",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.135",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.136",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.137",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.138",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.139",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.250",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.140",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.141",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.142",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.251",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.143",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.144",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.145",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.146",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.147",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.148",
+      "område": "vt_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.149",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.150",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.151",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.152",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.153",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.154",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.155",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.156",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.157",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.158",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.159",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.160",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.161",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.162",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.163",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.164",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.165",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.166",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.167",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.168",
+      "område": "at_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.169",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.254",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.170",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.171",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.172",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.173",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.174",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.175",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.176",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.177",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.180",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.181",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.182",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.183",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.239",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.184",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.185",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.186",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.187",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.188",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.189",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.190",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.191",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.192",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.193",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.194",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.195",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.196",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.197",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.198",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.199",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.200",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.201",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.202",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.203",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.204",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.205",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.206",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.207",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.208",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.209",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.210",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.211",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.212",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.255",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.213",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.214",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.215",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.216",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.217",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.218",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.219",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.220",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.221",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.222",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Formeln visades fel eftersom gt tolkades som ett HTML-tecken. Nu visas gt = 4g(t − 2,50) korrekt och uträkningen är uppdelad i tydliga rader."
+    },
+    {
+      "id": "3.223",
+      "område": "acceleration",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.224",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.225",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.226",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.227",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.228",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.263",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.264",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.265",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.266",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.267",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.268",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.362",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.365",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.269",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.270",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.271",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.272",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.273",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.274",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.275",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.276",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.277",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.278",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.369",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.370",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.371",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.372",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.373",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.374",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.375",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.376",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.377",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.378",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.379",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.380",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.381",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.382",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.383",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.384",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.385",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.386",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.387",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.388",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen. Accelerationen beräknas med det exakta värdet från a), innan svaret avrundas."
+    },
+    {
+      "id": "3.389",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.390",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.391",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.392",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.393",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.394",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.395",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.396",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.397",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.398",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.399",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.400",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.401",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.402",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.403",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.404",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.405",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.406",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.407",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.408",
+      "område": "konstacc",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.409",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.279",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.360",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.363",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.368",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.280",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.281",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.282",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.283",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.284",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.285",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.294",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.295",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.296",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.297",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.298",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.299",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.300",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.309",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.310",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.311",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.312",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.313",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.317",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.318",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.320",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.326",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.330",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.333",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.340",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.345",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.346",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.347",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.348",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.349",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.350",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.351",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.352",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.353",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.354",
+      "område": "at_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.355",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.361",
+      "område": "at_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.364",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.356",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.357",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.358",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.359",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.367",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.410",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.411",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.412",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.413",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.414",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.415",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.416",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.417",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.418",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.419",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.420",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.421",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.422",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.423",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.424",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.425",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.426",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.427",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.428",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.429",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.430",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.431",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.432",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.433",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.434",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.435",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.436",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.437",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.438",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.439",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.440",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.441",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.442",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.443",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.444",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.445",
+      "område": "acceleration",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.446",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.447",
+      "område": "vt_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.448",
+      "område": "konstacc",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.449",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.450",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.451",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.452",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.453",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.454",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.455",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.456",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.457",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.458",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.459",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.460",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.461",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.462",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.463",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.464",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.600",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.601",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.602",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.603",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.604",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.605",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.606",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.607",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.608",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.609",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.610",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.611",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.612",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.613",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.614",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.615",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.616",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.617",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.618",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.619",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.620",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.621",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.622",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.623",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.624",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.625",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.626",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.627",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.628",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.629",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.630",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.631",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.632",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.633",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.634",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.635",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.636",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.637",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.638",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.639",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.640",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.641",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.642",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.643",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.644",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.645",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.646",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.647",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.648",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.649",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.650",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.651",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.652",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.653",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.654",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.655",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.656",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.657",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.658",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.659",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.660",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.661",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.662",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.663",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.664",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.665",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.666",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.667",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.668",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.669",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.670",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.671",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.672",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.673",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.674",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.675",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.676",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.677",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.678",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.679",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.680",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.681",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.682",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.683",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.684",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.685",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.686",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.687",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.688",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.689",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.690",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.691",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.692",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.693",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.694",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.695",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.696",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.697",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.698",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.699",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.700",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.701",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.702",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.703",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.704",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.705",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.706",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.707",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.708",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.709",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.710",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.711",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.712",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.713",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.714",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.715",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.716",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.717",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.718",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.719",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.720",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.721",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.722",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.723",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.724",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.725",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.726",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.727",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.728",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.729",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.730",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.731",
+      "område": "vektorer",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.732",
+      "område": "vektorer",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.733",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.734",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.735",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.736",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.737",
+      "område": "at_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.738",
+      "område": "at_diagram",
+      "status": "Åtgärdad",
+      "kommentarsförslag": "Facitets långa uträkningar har delats upp på fler rader för att vara läsbara på mobilen."
+    },
+    {
+      "id": "3.739",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.740",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.741",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.742",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.743",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.744",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    },
+    {
+      "id": "3.745",
+      "område": "st_diagram",
+      "status": "Granskad – inget fel",
+      "kommentarsförslag": "Facitets stegstruktur, svarsrutor och mobilvisning har efterkontrollerats utan ytterligare fynd."
+    }
+  ]
+}

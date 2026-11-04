@@ -3216,3 +3216,8 @@ Se konsumentens `docs/JUST_NU_UPPGIFTER_2026-11-04.md`. Kolumnen Uppgifter i dag
 ## Fy1 medelhastighet: kompletta delfacit och grafiska ekvationer (2026-11-04)
 
 [Alla 92 ID och kommentarsförslag](FY1_MEDELHASTIGHET_FACIT_2026-11-04.md). Bevara fullständiga svarsrutor på delkort och skilj vägsträcka från förflyttning. Lika långa delsträckor ger inte ett vanligt medelvärde av farterna; lika långa tidsperioder gör det. Förklara tidsstart vid fördröjd start, dubbel sträcka vid eko och summan av längder vid fullständig tågomkörning. 2.301 c, 2.303 och 2.315 ska ha grafisk ekvationslösning med GeoGebra tillåtet och kontroll i ursprungsmodellen. Använd ≈ vid avrundade mellanled, och behåll oavrundade värden i fortsatta beräkningar. Numerisk täckning för varje huvudnyckel: `tools/fysik1-medelhastighet-facit-2026-11-04.test.js`.
+
+
+## Fy1 kapitel 2–3: mobilfacit och HTML-tolkning av TeX (2026-11-04)
+
+[Slutkontroll, alla 522 ID och kommentarer](FY1_KAP23_SLUTKONTROLL_2026-11-04.md) kompletterar områdesgranskningarna. KaTeX utan syntaxfel räcker inte: mät radbredd med båda apparnas faktiska CSS, även i huvudfacitets indragna delavsnitt. 77 uppgifter behöver ytterligare radbrytningar. I 3.222 tolkades TeX-strängen `&gt` av HTML som > innan KaTeX kördes; placera alignmenttecknet efter vänsterledet. 3.65 har fyra frågor och ska ha fyra uttryckliga delar. Bevara 3.388:s exakta hastighet 142/11 i den efterföljande beräkningen; avrundade mellanled får inte jämställas med exakta resultat. Skydd: `tools/fysik1-kap23-slutkontroll-2026-11-04.test.js` och browserharnessen.
