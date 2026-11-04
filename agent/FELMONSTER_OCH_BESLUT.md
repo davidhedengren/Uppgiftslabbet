@@ -3257,3 +3257,7 @@ Lärarens metodönskemål: [2.291](FELRAPPORT_MA2_2291_2026-11-04.md) använder 
 ## 4 november: Ma2 – pq som normalmetod framför gissade faktorer
 
 Användaren förtydligade efter 2.291 att faktorisering inte ska vara standard när faktorer måste gissas. 26 huvuduppgifter och tre delkort har fått pq-formeln med insättning och rottolkning. Utbrytning, konjugatregeln, kvadratrotsmetoden och redan given produktform behålls där de passar. FACITMALL.md har ett uttryckligt undantag för algebraisk Ma2-lösning; lägg inte tillbaka krav på grafisk huvudmetod eller faktorgissning här. Se [fullständig ID- och kommentarslista](MA2_PQ_METOD_2026-11-04.md) och JSON-listan över återstående sökkandidater. Regression: `tools/ma2-pq-metod-2026-11-04.test.js`.
+
+## Ma2 pq, runda 2 (4 november)
+
+[25 åtgärdade uppgifter, två delkort och sex metodjämförelser](MA2_PQ_RUNDA2_2026-11-04.md). Bevara prövning av extralösningar och förklaringar av öppna/slutna intervall. I 2.488 är x den längre sidan enligt bilden: x(x−2)=48. I 2.65 avser streckningen krävd höjd inklusive marginal, inte fordonets egen höjd. I 2.1148 är division med x+1 tillåten eftersom produkten är 5; återinför inte påståendet att den förlorar lösningar. 2.338 anger sekunder och meter. 2.342 har geometrifamilj, 2.730 lösningsformel och 5.21 träningsnivå 3. Skydd: `tools/ma2-pq-runda2-2026-11-04.test.js`.
