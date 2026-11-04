@@ -113,6 +113,15 @@ Använd samma namn överallt så att eleverna känner igen dem:
 
 ## 4. Grafisk lösning
 
+**Undantag för Ma2, användarbeslut 2026-11-04:** Vid algebraisk lösning av
+andragradsekvationer används pq-formeln som normalmetod när faktorer annars
+måste gissas. Visa normalformen, p och q, insättningen och tolkningen av
+rötterna. En grafisk huvudlösning eller GeoGebra krävs inte för dessa uppgifter.
+Behåll naturlig utbrytning, konjugatregeln och direkt nollprodukt när uttrycket
+redan är faktoriserat; använd kvadratrotsmetoden där den passar. Uppgifter
+som faktiskt prövar grafisk lösning behåller graf och digitalt verktyg.
+
+
 Eleverna löser andragradsekvationer (och liknande ekvationer) grafiskt. Facit ska
 därför alltid visa det:
 

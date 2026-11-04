@@ -315,3 +315,13 @@ Fysik 1 och 2. GeoGebra bedöms efter behovet av digitala funktioner.
 Dokumentera verktygsbeslut tillsammans med nivå, facit och självrättning.
 Heuristiska sökningar får hitta granskningskandidater men ska inte massändra
 verktygsflaggor utan en pedagogisk bedömning.
+
+## Ma2: pq-formeln framför gissad faktorisering
+
+Användarbeslut 2026-11-04: använd normalt pq-formeln för algebraiska
+andragradsekvationer, även i talproblem och geometri. Kräv inte att eleven
+gissar två tal med en viss summa och produkt. Utbrytning, konjugatregeln,
+kvadratrotsmetoden och nollprodukt på redan given produktform är fortfarande
+lämpliga. Uppgifter om faktorform eller samband mellan rötter och koefficienter
+kan använda dessa samband när de är det som prövas. Vid metodbyte kontrolleras
+även ledtråd, frågans metodkrav, delkort, område, nivå och verktyg.

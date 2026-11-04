@@ -3249,3 +3249,11 @@ Ma1 0.879 är redan rättad den 2 november: `Välj ett alternativ` gör att lär
 [Manuell granskning av 20 dosuppgifter och åtta kretsuppgifter](FY1_ABSORBERAD_DOS_FACIT_2026-11-04.md), totalt 39 huvud-/delfacit. I 9.380 b är 2,125 J cirka 2,13 J, inte 2,12 J; den numeriska nyckeln var redan korrekt. Det fristående kortet anger 14 Gy och ska fortfarande ge 2,1 J. Samma princip gäller 9.97 och 9.373: kortets egna givna värden styr det egna facit. 9.373 a använder skillnaden mellan startantal och kvarvarande kärnor, inte konstant startaktivitet gånger tid. Temperaturökning i 9.363/9.365 b behandlas utan Celsius-offset. Formelledtrådar i begreppsfrågorna 9.155/9.156/9.167 får inte avslöja rätt alternativ. Inga svar, frågor eller nivåer ändras i omgången.
 
 Skydd: `fysik1-absorberad-dos-facit-2026-11-04.test.js`, tidigare stråldos-/kopplingstester och konsumentens `fysik1-absorberad-dos-rattning-2026-11-04.test.js`. Kontrollera även bredden hos inre KaTeX-displayelement och granska de långa formlerna visuellt; en sida utan horisontell överströmning räcker inte ensam.
+
+## 4 november: Ma2 2.291 löses med pq-formeln
+
+Lärarens metodönskemål: [2.291](FELRAPPORT_MA2_2291_2026-11-04.md) använder nu pq-formeln med p=−17, q=60 och kontroll av talen 5 och 12. Den gamla faktoriseringen var korrekt; återinför den inte som enda metod. Den specifika beställningen om algebraisk pq-lösning prioriteras här framför den generella grafiska facitmetoden. Verktyg och svar är oförändrade. Fem jämförelser är matematiskt kontrollerade; 2.502 behöver fortfarande en utförligare rotberäkning vid en kommande Ma2-omgång. Skydd: `ma2-pq-2291-2026-11-04.test.js`.
+
+## 4 november: Ma2 – pq som normalmetod framför gissade faktorer
+
+Användaren förtydligade efter 2.291 att faktorisering inte ska vara standard när faktorer måste gissas. 26 huvuduppgifter och tre delkort har fått pq-formeln med insättning och rottolkning. Utbrytning, konjugatregeln, kvadratrotsmetoden och redan given produktform behålls där de passar. FACITMALL.md har ett uttryckligt undantag för algebraisk Ma2-lösning; lägg inte tillbaka krav på grafisk huvudmetod eller faktorgissning här. Se [fullständig ID- och kommentarslista](MA2_PQ_METOD_2026-11-04.md) och JSON-listan över återstående sökkandidater. Regression: `tools/ma2-pq-metod-2026-11-04.test.js`.
