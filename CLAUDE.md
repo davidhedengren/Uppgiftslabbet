@@ -7,6 +7,7 @@ Claude är agenten som underhåller Uppgiftslabbet och Kunskapsgymmet. Innan du 
 3. `agent/PEDAGOGISKA_REGLER.md` – förmåga, nivå, självrättning och svarsformat
 4. `agent/KVALITETSKONTROLL.md` – checklistor före och efter ändring
 5. `agent/GIT_OCH_BACKUP.md` – Git från flera datorer, banksynkronisering och backup
+6. `agent/FACITMALL.md` – **standardmall för alla facit** i matematik och fysik (användarbeslut 2026-11-04)
 
 Reglerna i `agent/` gäller Claude på samma sätt som de gällde Hermes.
 
@@ -82,6 +83,19 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 
 ## Tidigare granskningar och skydd mot återkommande fel
 
+### Facitmall – standard i hela Uppgiftslabbet (användarbeslut 2026-11-04)
+
+Alla facit, i alla banker, skrivs enligt **`agent/FACITMALL.md`**. Kortfattat:
+
+- numrerad steglista (`facit-v2 facit-stegvis`, `facit-steglista`) med rubriker som är specifika för uppgiften;
+- **formeln eller regeln står alltid utskriven** i en rubrik, till exempel ”Tidlösa formeln: \(v^2=v_0^2+2as\)” eller ”Kvadreringsregeln: …”, aldrig bara i ord;
+- fysik inleds med ”Givet och sökt” (tecken, positiv riktning, omvandlade enheter);
+- insättning med enheter, därefter en svarsrad som stämmer med `rättSvar`;
+- **andragradsekvationer löses grafiskt** i facit med SVG-graf och avläst skärningspunkt, och lösningsformeln står som alternativ (`geogebra: true`);
+- delfacit avslöjar inte senare delars svar, och långa rader bryts för mobil.
+
+Förebilder: Fy1 `konstacc` (3.4–3.448) och Ma1 1.116. Mallen ersätter tidigare formuleringar om ”sammanhängande fysiklösning utan steglista”. Äldre facit görs om efter hand, område för område.
+
 ### Referens för tydliga matematiklösningar (2026-10-23)
 
 Användaren har pekat ut **Ma1 #1.116** som förebild: tydliga, matematiskt
@@ -90,8 +104,8 @@ struktur vid nya och reviderade matematikfacit. Rubriker ska förklara vad
 man gör (t.ex. ”Ta bort samma kvadratterm från båda leden”), inte bara heta
 ”Steg 1”. Visa beräkningen som leder till nästa rad och kontrollera svaret
 när det tillför förståelse. Anpassa längden till uppgiften och radbryt långa
-uttryck för mobilvisning. Detta ändrar inte regeln om sammanhängande
-fysiklösningar utan generiska numrerade steglistor.
+uttryck för mobilvisning. Fysikfacit följer sedan 2026-11-04 samma steglista,
+se `agent/FACITMALL.md`.
 
 ### Facit, ledtråd och svar ska alltid granskas noggrant (användarbeslut 2026-10-25)
 
@@ -111,9 +125,9 @@ Detta är ett krav, inte något man gör om tid finns.
   ekvationen” som skulle passa på vilken uppgift som helst. Generera
   aldrig rubriker automatiskt. Lägg till en kontroll när den tillför
   förståelse.
-- **Facit i fysik** är en sammanhängande lösning: först modell och samband
-  i ord, sedan beräkning med enheter och till sist en svarsrad med enhet
-  och rimlig precision.
+- **Facit i fysik** följer `agent/FACITMALL.md`: givet och sökt, formeln
+  utskriven i rubriken, insättning med enheter och en svarsrad med enhet
+  och rimlig precision (ändrat 2026-11-04).
 - **Ledtråden** är specifik för uppgiften och pekar mot nästa tanke eller
   metodval. Den får inte innehålla svaret, de insatta värdena eller den
   färdiga ekvationen när det är just modellvalet som tränas.

@@ -70,13 +70,16 @@ Standardkonstanter och färdiga formelledningar ska däremot inte skrivas i frå
 
 ### 3.6 Facit
 
+**Alla facit följer `agent/FACITMALL.md`** (användarbeslut 2026-11-04, standard i hela Uppgiftslabbet): numrerad steglista med uppgiftsspecifika rubriker, formeln eller regeln utskriven i en rubrik, insättning med enheter, grafisk lösning vid andragradsekvationer och en svarsrad.
+
+
 - Facit ska vara uppgiftsspecifikt och pedagogiskt, inte bara ange slutsvaret. Det ska visa den centrala idén, relevanta lösningssteg med mellanled och det slutliga svaret.
 - För enkla rutinuppgifter kan facit vara kort. För resonemang, modellering och högre träningsnivåer ska lösningen vara så fullständig att eleven förstår varför metoden fungerar.
 - Inga generiska malltexter som bara halvdåligt passar många uppgifter.
 - Facit och ledtråd på ett Kunskapsgymmet-kort får inte referera till osynliga tidigare delar.
 - Användarbeslut 2026-10-25: facit, ledtråd och flervalskommentarer ska **alltid granskas noggrant** för varje nytt kort, även vid stora påfyllnader.
   - Matematikfacit följer Ma1 1.116: varje steg har en förklarande `facit-rubrik` och beräkningen står i samma steg. Avsluta med en svarsrad.
-  - Fysikfacit är en sammanhängande lösning med modell, samband, beräkning med enheter och en svarsrad.
+  - Fysikfacit följer samma steglista. Varje beräkningssteg har formeln i rubriken (”Hastighetsformeln: \(v=v_0+at\)”), se `agent/FACITMALL.md`. Den äldre regeln om löpande fysiklösning utan steglista gäller inte längre (ersatt 2026-11-04).
   - Rendera och läs facit och ledtråd före leverans, och bygg ut tunna facit. Se `CLAUDE.md`, avsnittet ”Facit, ledtråd och svar ska alltid granskas noggrant”.
 
 ### 3.7 Självrättningen måste fungera

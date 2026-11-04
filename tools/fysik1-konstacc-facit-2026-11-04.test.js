@@ -11,7 +11,8 @@ const OMSKRIVNA=['3.48','3.64','3.74','3.88','3.93','3.124','3.152','3.370','3.3
   ...c.window.BANK.filter(x=>x.omr==='konstacc'&&['Reaktions- och bromssträcka','Sträcka vid konstant acceleration'].includes(x.familj)).map(x=>x.id)];
 // Delar ('' = hela uppgiften) där en andragradsekvation löses och facit ska ha en graf.
 const GRAFISKA={'3.74':['a'],'3.118':['c'],'3.171':['a'],'3.399':['a','b'],'3.39':['b'],'3.169':['c'],'3.176':[''],'3.177':[''],
-  '3.389':['a','b','c'],'3.391':['a'],'3.448':[''],'3.188':[''],'3.383':['b'],'3.388':['b']};
+  '3.389':['a','b','c'],'3.391':['a'],'3.448':[''],'3.188':[''],'3.383':['b'],'3.388':['b'],
+  '3.17':['a','b'],'3.27':[''],'3.30':['b'],'3.79':[''],'3.123':[''],'3.400':['b'],'3.404':['a'],'3.407':['b']};
 const RUBRIK_MED_FORMEL=/<p class="facit-rubrik">[^<]*\\\([^<]*\\\)[^<]*<\/p>/;
 const facit=t=>t.spelDelar?.length?t.spelDelar.map(d=>[d.etikett,d.s]):[['',t.s]];
 const del=(t,et)=>et?t.spelDelar.find(d=>d.etikett===et).s:t.s;
@@ -22,6 +23,12 @@ test('Omskrivna konstacc-facit: steglista, formel i en rubrik och svarsrad',()=>
       assert.match(s,RUBRIK_MED_FORMEL,`${id}${et}: ingen rubrik med formel`);}}
   // Alla konstacc-kort som har steglista har också formelrubriker (gäller kommande omgångar).
   for(const t of B.filter(x=>x.omr==='konstacc'&&/facit-steglista/.test(x.s)))for(const [et,s] of facit(t))assert.match(s,RUBRIK_MED_FORMEL,t.id+et);
+});
+
+test('Hela området konstacc har nya facit (steglista med formelrubrik)',()=>{
+  const alla=B.filter(x=>x.omr==='konstacc');assert.equal(alla.length,135);
+  for(const t of alla)assert.match(t.s,/facit-steglista/,t.id);
+  assert.doesNotMatch(q('3.120').spelDelar[2].s,/None/);
 });
 
 test('Andragradsekvationer har grafisk lösning och tillåter GeoGebra',()=>{

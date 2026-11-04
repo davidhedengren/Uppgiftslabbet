@@ -107,3 +107,22 @@ Hela delmomentet, 3.4–3.388.
   medelhastighetens formel steg för steg.
 - Testet `fysik1-konstacc-facit-2026-11-04` kontrollerar nu hela delmomenten
   reaktions- och bromssträcka samt sträcka vid konstant acceleration.
+
+## Omgång 5: Fritt fall och lodrät kast (46 uppgifter, 72 delfacit)
+
+Därmed har alla 135 uppgifter i `konstacc` nya facit.
+
+- Grafisk lösning: 3.17 och 3.407 b (villkoret \((T-1)^2=k\,T^2\) med två kurvor),
+  3.27 b–c, 3.30 b, 3.79 a (två bollars höjd), 3.123 (två skärningar, båda tolkade),
+  3.400 b och 3.404 a. `geogebra: true`.
+- 3.120 c: svarsraden "1,66 None" är rättad till "1,66".
+- 3.30 b löser tiden med sträckformeln och grafen, utan att gå via farten i a.
+- Tyngdaccelerationens tecken har en egen rubrik, "Tyngdacceleration med tecken:
+  \(a=\pm g\)", som förklarar riktningsvalet.
+
+## Facitmall för hela Uppgiftslabbet
+
+Användaren vill att formatet ska vara standard i hela Uppgiftslabbet. Mallen
+står i `agent/FACITMALL.md` och refereras från `CLAUDE.md` (läsordningen och
+avsnittet "Facitmall") och från `INNEHALLSREGLER.md` 3.6. Den ersätter den
+äldre regeln om löpande fysiklösning utan steglista.
