@@ -3204,3 +3204,7 @@ Se `FY1_MATNOGG_FACIT_2026-11-04.md` för samtliga 68 ID. Kontrollera avklippta 
 ## KG – topplistan ska uppdateras medan den visas (2026-11-04)
 
 Se konsumentens `docs/TOPPLISTA_UPPDATERING_2026-11-04.md`. Topplistan hämtades endast vid öppning/periodbyte. Den får nu 30-sekunders uppdatering i synlig vy, knapp och hämtningstid. Bevara öppna klasser och ignorera sena svar från tidigare perioder. Klassbidragets tak är avsiktligt; ändra inte XP-regler för att rätta gammal visningsdata. Jämför samma elev och samma tidsperiod innan profil, adminhändelser och dygnsbokföring bedöms som fel. Publika periodlistor stämde inbördes vid kontroll; eventuell skillnad mot privata elevresultat är fortfarande outredd. Skydd: `tools/topplista-uppdatering-2026-11-04.browser.py`.
+
+## KG – antal uppgifter i lärarens Just nu (2026-11-04)
+
+Se konsumentens `docs/JUST_NU_UPPGIFTER_2026-11-04.md`. Kolumnen Uppgifter i dag visar godkända profilförsök i alla kurser från beständig dygnsbokföring, svensk kalenderdag. Noll ska vara 0, saknat RPC-fält ska vara streck; använd inte trunkerad profilhistorik som exakt dygnsräknare. Behåll gruppbehörighet och tillgången till offline-elevers antal. SQL `2026-11-04-fokus-uppgifter.sql` behöver installeras; den ändrar inga poäng. Lokala integrationstester och browserprov skyddar tidsperiod, gruppavgränsning, äldre SQL och mobilvisning.
