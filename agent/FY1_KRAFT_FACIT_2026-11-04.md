@@ -65,3 +65,16 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Facit skiljer tydligt mellan kraftpar (tredje lagen) och krafter som balanserar varandra
   på samma kropp (4.99, 4.145, 4.893).
 - Inga räknefel.
+
+## Omgång 5: normalkraft (59 uppgifter)
+
+- Formelrubriker: ”Lodrät jämvikt: \(\sum F_y=0\)”, ”Normalkraft i vila på vågrätt underlag:
+  \(F_N=mg\)”, ”Newtons andra lag i hissen, uppåt positiv: \(F_N-mg=ma\)”, samma lag för
+  lina/kran (\(S-mg=ma\)), ”Vågens kilogramvisning: \(m_{\text{våg}}=F_N/g\)” och Hookes lag
+  för fjädervåg i hiss (4.207 c, 4.647).
+- Hissuppgifter med två faser (4.497, 4.641, 4.642, 4.644) räknar först accelerationen
+  med \(a=\Delta v/\Delta t\) eller sträckformeln och sedan normalkraften eller spännkraften.
+- Facitfigurerna i 4.1, 4.133, 4.199, 4.223, 4.229, 4.406 och 4.412 ligger kvar.
+- Inga räknefel. Alla 59 svar är omräknade.
+- Hela testsviten har vid leveransen tio fel som fanns före denna omgång. De gäller kap 2
+  och 8 (en parallell omskrivning), Ma2 och Ma3, inte kap 4.
