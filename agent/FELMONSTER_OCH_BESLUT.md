@@ -3200,3 +3200,7 @@ repona, samt konsumentens tidigare `brakuttryck.test.js`.
 ### Fy1 mätnoggrannhet: fullständiga frågor och osäkerhet (2026-11-04)
 
 Se `FY1_MATNOGG_FACIT_2026-11-04.md` för samtliga 68 ID. Kontrollera avklippta slutsatser i frågor (2.250/251), visa härledningen innan approximativa osäkerhetsformler används och skilj strikt mindre än från högst (2.273: 41 ark). Regression kräver digitalt verktyg och en läsbar graf (2.46). Ett avvikande mätvärde ska undersökas, inte automatiskt strykas. Använd TeX:s `\lt`/`\gt` för jämförelser i HTML-facit.
+
+## KG – topplistan ska uppdateras medan den visas (2026-11-04)
+
+Se konsumentens `docs/TOPPLISTA_UPPDATERING_2026-11-04.md`. Topplistan hämtades endast vid öppning/periodbyte. Den får nu 30-sekunders uppdatering i synlig vy, knapp och hämtningstid. Bevara öppna klasser och ignorera sena svar från tidigare perioder. Klassbidragets tak är avsiktligt; ändra inte XP-regler för att rätta gammal visningsdata. Jämför samma elev och samma tidsperiod innan profil, adminhändelser och dygnsbokföring bedöms som fel. Publika periodlistor stämde inbördes vid kontroll; eventuell skillnad mot privata elevresultat är fortfarande outredd. Skydd: `tools/topplista-uppdatering-2026-11-04.browser.py`.
