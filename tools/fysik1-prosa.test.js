@@ -12,7 +12,9 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
  // (agent/FY1_KONSTACC_FACIT_2026-11-04.md). De omfattas inte av prosaregeln.
  // Sedan 2026-11-04 gäller agent/FACITMALL.md även övriga områden i kapitel 3 (agent/FY1_RORELSE_FACIT_2026-11-04.md).
  // Kapitel 2: enheter, mätnoggrannhet och densitet omarbetade enligt samma nya mall.
- const MALL=['enheter','matnogg','densitet','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer'];
+ const MALL=['enheter','matnogg','densitet','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer',
+  // Kapitel 4 (agent/FY1_KRAFT_FACIT_2026-11-04.md)
+  'newton1','newton2','newton3','tyngdkraft','normalkraft','gravitation','fjadrar','friktion','lutande_plan','moment','blandat_kraft'];
  visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));assert.match(q('2.315').s,/<strong>a\)/);
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.
