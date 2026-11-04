@@ -102,3 +102,16 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
   Facitfigurerna i 4.18 och 4.272 ligger kvar.
 - `tools/fysik1-gravitation-niva1-2026-10-24.test.js` kräver nu facitmallen (steglista) i stället för att förbjuda den.
 - Inga räknefel. Alla 55 svar är omräknade.
+
+## Omgång 8: friktion (96 uppgifter)
+
+- Formelrubriker: ”Friktion: \(f=\mu N\)” (lös ut \(\mu\) eller N), ”Största vilofriktion:
+  \(f_{\max}=\mu N\)”, ”Konstant hastighet, vågrät jämvikt: \(F=f\)”, ”Normalkraft på vågrätt
+  golv: \(N=mg\)”, ”Lodrät jämvikt med snett drag uppåt: \(N=mg-F\sin\alpha\)” (och tryck
+  nedåt), ”Friktion som enda vågräta kraft: \(a=\mu g\)” samt rörelseformlerna för
+  bromssträckor och tvåfasrörelser (4.535, 4.541, 4.563).
+- Vilofriktion under gränsen (4.28, 4.516 a, 4.527 d) förklaras som ”blir så stor som behövs”.
+- Facitfigurerna i 4.123, 4.146, 4.179, 4.196, 4.221, 4.258, 4.262, 4.264, 4.416, 4.420 och 4.424 ligger kvar.
+- Inga räknefel. Alla 96 svar är omräknade.
+- Rubrikputs i hela Fy1-banken: 38 formelnamn mitt i en rubrik har fått gemen bokstav
+  (”… och tidlösa formeln”, ”… och vågens kilogramvisning”). Egennamn (Newtons, Ohms, Mars) är orörda.
