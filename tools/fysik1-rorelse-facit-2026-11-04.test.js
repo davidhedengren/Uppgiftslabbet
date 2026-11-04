@@ -5,7 +5,9 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifter.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANK));
-const FÄRDIGA=['konstacc','st_diagram','acceleration','vt_diagram'];
+const FÄRDIGA=['konstacc','st_diagram','acceleration','vt_diagram','at_diagram'];
+// KaTeX visar inte tankstreck inne i \text{} (”0 2 s”): skriv ”0 till 2 s”.
+test('Inga tankstreck i text-block i färdiga områden',()=>{for(const x of B.filter(x=>FÄRDIGA.includes(x.omr)))assert.doesNotMatch(JSON.stringify(x),/\\text\{–\}/,x.id);});
 const RUBRIK_MED_FORMEL=/<p class="facit-rubrik">[^<]*\\\([^<]*\\\)[^<]*<\/p>/;
 const GENERISK=/<p class="facit-rubrik">(Steg \d+|Beräkna|Förenkla|Svar|Lösning)\.?<\/p>/;
 function brister(s,alt){

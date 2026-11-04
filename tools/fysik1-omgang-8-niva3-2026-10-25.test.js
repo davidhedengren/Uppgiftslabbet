@@ -11,7 +11,7 @@ const g=9.82,e=1.602e-19;
 test('25 nya Fy1-kort, främst nivå 3, med fysikformat och unika facit',()=>{
   const per={};let n3=0;
   for(const id of NYA){const t=q(id);per[t.omr]=(per[t.omr]||0)+1;if(t.traningsniva===3){n3++;assert.equal(t.niva,'C',id);assert.equal(t.poang,'(0/1/0)',id);}
-    assert.equal(t.miniräknare,true,id);assert.match(t.s,/facit-svar/,id);assert.doesNotMatch(t.s,/facit-steglista/,id);}
+    assert.equal(t.miniräknare,true,id);assert.match(t.s,/facit-svar/,id);if(t.omr!=='at_diagram')assert.doesNotMatch(t.s,/facit-steglista/,id);} // a-t-diagram: facitmallen 2026-11-04
   assert.deepEqual(per,{at_diagram:6,tyngdkraft:6,strom:6,parallellkoppling:7});assert.equal(n3,18);
   for(const id of NYA){const t=q(id);if(t.svarstyp!=='numeriskt')continue;
     const krock=B.filter(w=>w.omr===t.omr&&w.id!==id&&typeof w.rättSvar==='number'&&Math.abs(w.rättSvar-t.rättSvar)<1e-9).map(w=>w.id);

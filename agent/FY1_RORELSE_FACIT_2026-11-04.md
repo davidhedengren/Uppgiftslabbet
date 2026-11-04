@@ -61,3 +61,13 @@ Faciten är renderade i mobilbredd utan KaTeX-fel eller för breda formler.
   2,04 s och når −20 m/s först vid 4,07 s. Frågan säger ”förenklad modell”, och
   avläsningen ger 2 s och −10 m/s², så `rättSvar` är oförändrat.
 - Inga räknefel. Diagramvärdena är kontrollerade mot figurernas koordinater.
+
+## Omgång 4: at_diagram (51 uppgifter, 12 delfacit)
+
+- Formelrubriker: ”Hastighetsändringen är arean under a-t-grafen: \(\Delta v=a\cdot\Delta t\)”
+  (triangel \(bh/2\) när a ändras jämnt), ”Ny hastighet: \(v=v_0+\Delta v\)”,
+  ”Ingen acceleration: \(a=0\Rightarrow\Delta v=0\)”, ”Tid till stopp” och
+  ”Accelerationen är v-t-grafens lutning”.
+- Inga räknefel. Diagramvärdena i 3.455–3.460 är kontrollerade mot koordinaterna.
+- Intervall som ”0–2 s” skrivs ”0 till 2 s” i formlerna. KaTeX visar inte
+  tankstreck inne i `\text{}`, och det gällde även st_diagram och vt_diagram.
