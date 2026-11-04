@@ -46,3 +46,29 @@ Kunskapsgymmet (KaTeX, mobilbredd) och lästs.
 Bygghjälp i sessionens scratchpad: `fysfacit.py` (steg, facit, helfacit,
 graf, bryt), `konstacc_pilot.py` (facit per uppgift, handskrivna rubriker) och
 `lagg_in_facit.py` (byter bara `s` och `geogebra` på plats).
+
+## Omgång 2: Möte och ikapp + Konstant acceleration (11 uppgifter, 14 delfacit)
+
+3.39, 3.169, 3.170, 3.176, 3.177, 3.371, 3.389, 3.390, 3.391, 3.446, 3.448.
+
+- Mötesuppgifter ställer upp båda lägena med formel (konstant fart \(s=s_0+vt\),
+  sträckformeln med startläge) och sätter dem lika.
+- Andragradsekvationerna (3.39 b, 3.169 c, 3.176, 3.177, 3.389 a–c, 3.391 a,
+  3.448) löses grafiskt med **två kurvor i samma diagram**, där mötet är
+  skärningspunkten. Faktorisering eller lösningsformeln står som alternativ.
+  `geogebra: true`. Testet `fysik1-acceleration-2026-10-21` tillåter nu
+  GeoGebra för 3.448.
+- 3.389 c: grafen visar båda skärningarna, och facit förklarar varför den
+  första är omkörningen (bilen bromsar och blir senare omkörd av cyklisten).
+- 3.391 a: steget "Har den bakre bilen kört 43 m efter 3,0 s?" visar varför
+  krocken sker efter att den främre bilen stannat.
+- 3.170: \(4{,}91t^2\) tar ut varandra. Facit förklarar att båda bollarna faller
+  lika snabbt, så ekvationen blir linjär (ingen graf).
+
+## Sparade övningsblad i Uppgiftslabbet
+
+Sparade prov och övningsblad lagrar en ögonblicksbild av uppgifterna. Därför
+når nya facit inte äldre blad av sig själva. Sedan 2026-11-04 (UL 6ebc154)
+visar bladet "N uppgifter i bladet har nytt facit i banken" med knappen
+**Uppdatera facit**. Den byter bara facit i uppgifter som inte redigerats i
+bladet och går via skyddet för sparade dokument. Läraren väljer sedan Spara.
