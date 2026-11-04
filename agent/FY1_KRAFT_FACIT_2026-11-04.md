@@ -42,3 +42,17 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Friläggningsfigurer från de gamla faciten ligger kvar i steget ”Frilägg kroppen”, och den
   grafiska kontrollen i 3.302–3.308 ligger kvar som eget steg.
 - Inga räknefel. Alla 95 svar är omräknade, och inga `rättSvar` eller frågetexter är ändrade.
+
+## Omgång 3: newton2 (159 uppgifter, 336 delfacit)
+
+- Formelrubriker: ”Newtons andra lag: \(F_{\text{res}}=ma\)” (lös ut a respektive m),
+  ”Kraftresultant med tecken”, ”Hela systemet: \(F_{\text{res}}=m_{\text{tot}}a\)”,
+  friläggning av en del av systemet (snörkraft och kontaktkraft), ”Friktion: \(F_{\text{fr}}=\mu F_N\)”,
+  ”Tyngdkraftens komposant längs planet”, ”Ideal trissa” samt rörelseformlerna
+  (hastighetsformeln, tidlösa formeln, sträckformeln) där kraft kombineras med kinematik.
+- Delkort med egen inledning, som ”En vikt på 25 kg accelererar nedåt med 0,598 m/s²”,
+  får facit som bara använder värdena i det egna kortet.
+- 4.704: frågetexten innehöll ”Hur stor blir accelerationen om” inklistrat mitt i
+  deluppgifterna a–c, och delkort a och b upprepade frasen. Det är rättat.
+- Inga räknefel. Alla 159 svar är omräknade, bland annat alla trissystem, kopplingar och
+  system med två rörelsefaser (4.650, 4.656, 4.659, 4.662, 4.664, 4.667, 4.670).
