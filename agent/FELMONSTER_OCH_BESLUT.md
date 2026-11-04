@@ -3160,3 +3160,15 @@ E-poängen är oförändrad. Facit visar ekvationen, omformningen och en kontrol
 efter önskemålet om att ta bort den från träningen; den finns kvar i
 Uppgiftslabbet. I 3.327 och 3.2075 anges summan 90° direkt i stället för att
 kräva ordet komplementvinkel. Geometrin och rättningssvaren är oförändrade.
+
+## Fellogg 2026-11-04 07:57: enheter, överslag och träddiagram
+
+[Genomgång](FELRAPPORTER_2026-11-04_0757.md) skyddar Ma1 7.789, 7.435,
+7.178, 7.123, 7.147, 7.161, 7.142, 5.607, 2.27 och 2.05. Ange efterfrågad
+enhet i både fråga och rättningsmetadata. En exakt angiven förutsättning får
+inte av misstag tolkas som krav på exakt slutsvar; bevara ett tillräckligt
+precist numeriskt facit och ange svarsformat. Överslag med fria avrundningar
+behöver ett rimligt godkänt intervall. Bråkens nämnare i ett sannolikhetsträd
+behöver inte vara antal kulor: använd även villkorade sannolikheter. Placera
+graderingen intill respektive koordinataxel och kontrollera att grafens
+matematiska koordinater inte ändras.
