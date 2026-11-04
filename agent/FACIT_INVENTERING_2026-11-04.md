@@ -38,3 +38,7 @@ Reproducerbar inventering: `node tools/inventera-facitmall-2026-11-04.cjs`. JSON
 ## Fortsättning: elektrisk effekt och energi
 
 Även hela familjen **Elektrisk effekt och energi**, 80 huvuduppgifter och 78 delkort, är nu manuellt granskad och förbättrad: [fullständig logg och kommentarer](FY1_ELEFFEKT_FACIT_2026-11-04.md). Baslinjetabellerna ovan behålls som inventeringens utgångsvärden. Nästa återstående del av Fy1 kopplingar är Ems/inre resistans (48 huvuduppgifter), följt av effekt/verkningsgrad med inre resistans (14).
+
+### Uppdatering efter ems-granskningen
+
+Hela familjen **Ems, polspänning och inre resistans**, 48 huvuduppgifter och 48 delkort, är nu genomgången enligt mallen: [alla ID och kommentarer](FY1_EMS_FACIT_2026-11-04.md). Nästa återstående kopplingsfamilj är **Effekt och verkningsgrad med inre resistans**, 14 huvuduppgifter. Baslinjesiffrorna ovan beskriver den ursprungliga inventeringen, inte dagens kvarvarande arbete.
