@@ -89,3 +89,21 @@ bladet och går via skyddet för sparade dokument. Läraren väljer sedan Spara.
 - 3.172 behåller de delsträngar som `fysik1-prosa` kräver.
 - Odelade uppgifter med flera delfrågor (3.5, 3.63, 3.157, 3.162, 3.164, 3.172) får
   ett facit per delfråga med a), b) …
+
+## Omgång 4: Sträcka vid konstant acceleration (44 uppgifter, 98 delfacit)
+
+Hela delmomentet, 3.4–3.388.
+
+- Andragradsekvationer med graf: 3.383 b (\(59{,}5=23t+2t^2\)) och 3.388 b
+  (tid till mittpunkten). `geogebra: true`.
+- Delfacit som inte går via svaret i en senare del: 3.80 b (slutfarten med
+  medelhastighet, inte via medelfarten i c), 3.369 b och 3.373 c (tidlösa
+  formeln i stället för tiden från a/b).
+- 3.166: medelhastigheten under en sekund är hastigheten mitt i sekunden, och
+  därefter används \(a=\Delta v/\Delta t\) och hastighetsformeln.
+- 3.385: tidlösa formeln ger \(v_A=\pm\sqrt{21}\). Facit förklarar varför den
+  positiva roten ger kortast tid.
+- Symboliska uppgifter (3.254, 3.255) visar arean under v-t-grafen och
+  medelhastighetens formel steg för steg.
+- Testet `fysik1-konstacc-facit-2026-11-04` kontrollerar nu hela delmomenten
+  reaktions- och bromssträcka samt sträcka vid konstant acceleration.

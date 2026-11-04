@@ -6,10 +6,12 @@ const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..',
 const B=JSON.parse(JSON.stringify(c.window.BANK)),q=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 // Omgångar: pilot (tidlösa formeln + tre andragradskort) och omgång 2 (möte och ikapp, konstant acceleration).
 const OMSKRIVNA=['3.48','3.64','3.74','3.88','3.93','3.124','3.152','3.370','3.377','3.379','3.118','3.171','3.399',
-  '3.39','3.169','3.170','3.176','3.177','3.371','3.389','3.390','3.391','3.446','3.448'];
+  '3.39','3.169','3.170','3.176','3.177','3.371','3.389','3.390','3.391','3.446','3.448',
+  // omgång 3–4: reaktions- och bromssträcka samt sträcka vid konstant acceleration
+  ...c.window.BANK.filter(x=>x.omr==='konstacc'&&['Reaktions- och bromssträcka','Sträcka vid konstant acceleration'].includes(x.familj)).map(x=>x.id)];
 // Delar ('' = hela uppgiften) där en andragradsekvation löses och facit ska ha en graf.
 const GRAFISKA={'3.74':['a'],'3.118':['c'],'3.171':['a'],'3.399':['a','b'],'3.39':['b'],'3.169':['c'],'3.176':[''],'3.177':[''],
-  '3.389':['a','b','c'],'3.391':['a'],'3.448':['']};
+  '3.389':['a','b','c'],'3.391':['a'],'3.448':[''],'3.188':[''],'3.383':['b'],'3.388':['b']};
 const RUBRIK_MED_FORMEL=/<p class="facit-rubrik">[^<]*\\\([^<]*\\\)[^<]*<\/p>/;
 const facit=t=>t.spelDelar?.length?t.spelDelar.map(d=>[d.etikett,d.s]):[['',t.s]];
 const del=(t,et)=>et?t.spelDelar.find(d=>d.etikett===et).s:t.s;
