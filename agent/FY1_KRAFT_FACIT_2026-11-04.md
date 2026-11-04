@@ -32,3 +32,13 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Frågetexter med genererade fraser är rättade: 4.187 och 4.208 (”Föremålet flyttas” om en
   astronaut), 4.190 och 4.503 (”Föremålet befinner sig på Mars”) samt 4.470, där
   ”(Svara i kN.)” stod två gånger.
+
+## Omgång 2: newton1 (95 uppgifter, 133 delfacit)
+
+- Formelrubriker: ”Newtons första lag: \(\sum\vec F=\vec 0\Leftrightarrow\vec v\) konstant”,
+  ”Jämvikt: \(\sum F_x=0\) och \(\sum F_y=0\)”, ”Lodrät/vågrät jämvikt”, ”Frilägg kroppen”,
+  ”Ideal trissa: samma spännkraft i hela snöret”, ”Komposanter”, ”Pythagoras sats”,
+  ”Riktning: \(\tan\alpha\)” följt av ett steg som bestämmer kvadranten, och ”Vektoraddition komposantvis”.
+- Friläggningsfigurer från de gamla faciten ligger kvar i steget ”Frilägg kroppen”, och den
+  grafiska kontrollen i 3.302–3.308 ligger kvar som eget steg.
+- Inga räknefel. Alla 95 svar är omräknade, och inga `rättSvar` eller frågetexter är ändrade.
