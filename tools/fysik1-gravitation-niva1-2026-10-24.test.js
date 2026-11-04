@@ -6,7 +6,7 @@ const IDS=['4.837','4.838','4.839','4.840','4.841','4.842','4.843','4.844'];
 test('Gravitation: åtta nivå 1-kort med figur, svarsruta och självrättning',()=>{
  for(const id of IDS){const t=q(id);
   assert.equal(t.omr,'gravitation',id);assert.equal(t.traningsniva,1,id);assert.match(t.t,/<svg/,id);
-  assert.match(t.s,/<p class="facit-svar"><strong>Svar:<\/strong>/,id);assert.doesNotMatch(t.s,/facit-steglista/,id);
+  assert.match(t.s,/<p class="facit-svar"><strong>Svar:<\/strong>/,id);assert.match(t.s,/facit-steglista/,id); // facitmallen sedan 2026-11-04
   assert.equal(t.självrättning,true,id);
  }
 });

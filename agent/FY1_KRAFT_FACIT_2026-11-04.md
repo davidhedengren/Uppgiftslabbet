@@ -78,3 +78,16 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - Inga räknefel. Alla 59 svar är omräknade.
 - Hela testsviten har vid leveransen tio fel som fanns före denna omgång. De gäller kap 2
   och 8 (en parallell omskrivning), Ma2 och Ma3, inte kap 4.
+
+## Omgång 6: gravitation (53 uppgifter)
+
+- Formelrubriker: ”Gravitationslagen: \(F=G\dfrac{m_1m_2}{r^2}\)”, ”Tyngdacceleration vid ytan:
+  \(g=\dfrac{GM}{R^2}\)”, ”Avståndslagen: \(\dfrac{g}{g_0}=\left(\dfrac{R}{r}\right)^2\)”,
+  ”Centrumavstånd: \(r=R+h\)”, ”Homogent klot: \(g=\dfrac{4\pi G\rho R}{3}\)” och för
+  nollpunkten ”Fälten tar ut varandra: \(\dfrac{GM_1}{x^2}=\dfrac{GM_2}{(d-x)^2}\)”.
+- Facit använder samma G som `rättSvar` är räknat med: 6,674·10⁻¹¹ i 4.9–4.385 och
+  6,67·10⁻¹¹ i 4.735–4.837. Där `svarTabell` godkänner det andra värdet (4.74 b/c, 4.740,
+  4.742 a/d) står båda svaren i facit. Kunskapsgymmet rättar dessa via `svarTabell`
+  (kontrollerat i `index.html`), så självrättningen godkänner båda G-värdena.
+- `tools/gravitationskonstant-precision.test.js` läser nu svarsrutan i facitmallen.
+- Inga räknefel. Alla 53 svar är omräknade.

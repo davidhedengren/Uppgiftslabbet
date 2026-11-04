@@ -12,6 +12,7 @@ test('Vanliga tabellvärden för G ger godtagbara svar med frågans precision',(
  }
  assert.equal(q('4.346').svarVardesiffror,3);
  q('4.9').spelDelar.forEach((part,i)=>{assert.equal(q('4.9').svarVardesiffror[i],3);assert.doesNotMatch(part.t+part.fraga,/värdesiffror/);});
- assert.match(q('4.9').spelDelar[0].s,/Svar: 10,7 /);assert.match(q('4.9').spelDelar[1].s,/Svar: 747 /);
+ // Sedan 2026-11-04 står svaret i facitmallens svarsruta (agent/FACITMALL.md).
+ assert.match(q('4.9').spelDelar[0].s,/<strong>Svar:<\/strong> 10,7 /);assert.match(q('4.9').spelDelar[1].s,/<strong>Svar:<\/strong> 747 /);
  assert.match(q('4.372').s,/3414/);
 });
