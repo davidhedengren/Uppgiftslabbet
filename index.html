@@ -5170,6 +5170,12 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .fu-grupp{display:grid;grid-template-columns:25pt minmax(0,1fr)}
 .fu-del{display:grid;grid-template-columns:20pt minmax(0,1fr);margin-bottom:5pt}
 .pdf-pu>.pn,.fu>b{white-space:nowrap}
+/* Samma skiljelinje som mellan frågorna, efter hela uppgiftens facit.
+   Deluppgifter hålls ihop visuellt; långa facit får fortsätta på nästa sida. */
+#utskrift .fu,.lr-papper .fu{
+  border-bottom:.55pt solid #b8b8b8;
+  padding-bottom:9pt;
+}
 /* Dokumentets lösningssteg använder siffror; a), b) hör till deluppgifterna. */
 #utskrift .fu .facit-stegvis,.lr-papper .fu .facit-stegvis{font-family:var(--las);font-size:10pt;line-height:1.65}
 #utskrift .facit-steglista,.lr-papper .facit-steglista{counter-reset:facit-steg;margin:0;padding:0}
