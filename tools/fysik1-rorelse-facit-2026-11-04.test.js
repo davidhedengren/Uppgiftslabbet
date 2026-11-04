@@ -5,7 +5,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifter.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(c.window.BANK));
-const FÄRDIGA=['konstacc','st_diagram','acceleration'];
+const FÄRDIGA=['konstacc','st_diagram','acceleration','vt_diagram'];
 const RUBRIK_MED_FORMEL=/<p class="facit-rubrik">[^<]*\\\([^<]*\\\)[^<]*<\/p>/;
 const GENERISK=/<p class="facit-rubrik">(Steg \d+|Beräkna|Förenkla|Svar|Lösning)\.?<\/p>/;
 function brister(s,alt){

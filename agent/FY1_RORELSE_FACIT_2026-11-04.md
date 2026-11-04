@@ -48,3 +48,16 @@ Faciten är renderade i mobilbredd utan KaTeX-fel eller för breda formler.
   alternativ. `geogebra: true`.
 - 3.207: det tidsvägda medelvärdet visas som formel.
 - Inga räknefel. Alla 48 svar är omräknade, och inga `rättSvar` eller frågetexter är ändrade.
+
+## Omgång 3: vt_diagram (68 uppgifter, 61 delfacit)
+
+- Formelrubriker: ”Accelerationen är grafens lutning: \(a=\Delta v/\Delta t\)”,
+  ”Sträckan är arean under v-t-grafen” med areaformlerna (triangel, rektangel,
+  parallelltrapets), ”Förflyttningen är arean med tecken”, ”Sträckan är summan av
+  areornas storlek”, ”Vändning där grafen skär t-axeln: \(v=0\)” och
+  ”Momentanaccelerationen är tangentens lutning”.
+- 3.442 hade inga kommentarer till de felaktiga alternativen. De är tillagda.
+- 3.47: grafen är ritad med lutningen −9,82 m/s². Den skär därför t-axeln vid
+  2,04 s och når −20 m/s först vid 4,07 s. Frågan säger ”förenklad modell”, och
+  avläsningen ger 2 s och −10 m/s², så `rättSvar` är oförändrat.
+- Inga räknefel. Diagramvärdena är kontrollerade mot figurernas koordinater.
