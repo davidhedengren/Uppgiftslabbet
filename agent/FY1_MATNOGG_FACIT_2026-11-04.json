@@ -1,0 +1,415 @@
+{
+  "granskade": [
+    "2.3",
+    "2.228",
+    "2.229",
+    "2.230",
+    "2.231",
+    "2.232",
+    "2.4",
+    "2.233",
+    "2.234",
+    "2.235",
+    "2.13",
+    "2.236",
+    "2.237",
+    "2.238",
+    "2.14",
+    "2.239",
+    "2.240",
+    "2.241",
+    "2.242",
+    "2.15",
+    "2.243",
+    "2.244",
+    "2.245",
+    "2.16",
+    "2.246",
+    "2.247",
+    "2.248",
+    "2.28",
+    "2.249",
+    "2.250",
+    "2.251",
+    "2.252",
+    "2.30",
+    "2.253",
+    "2.254",
+    "2.255",
+    "2.44",
+    "2.256",
+    "2.257",
+    "2.258",
+    "2.45",
+    "2.259",
+    "2.260",
+    "2.261",
+    "2.262",
+    "2.46",
+    "2.263",
+    "2.264",
+    "2.265",
+    "2.47",
+    "2.266",
+    "2.267",
+    "2.268",
+    "2.48",
+    "2.269",
+    "2.270",
+    "2.271",
+    "2.272",
+    "2.49",
+    "2.273",
+    "2.351",
+    "2.352",
+    "2.353",
+    "2.354",
+    "2.355",
+    "2.356",
+    "2.357",
+    "2.358"
+  ],
+  "åtgärdade": [
+    {
+      "id": "2.3",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.228",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.229",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.230",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.231",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.232",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.4",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.233",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.234",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.235",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.13",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.236",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.237",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.238",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.14",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.239",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.240",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.241",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.242",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.15",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.243",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.244",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.245",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.16",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.246",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.247",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.248",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.28",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.249",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.250",
+      "status": "Åtgärdad",
+      "kommentar": "Den avklippta frågan är rättad. Facit visar additionen och avrundningen."
+    },
+    {
+      "id": "2.251",
+      "status": "Åtgärdad",
+      "kommentar": "Den avklippta frågan är rättad. Facit visar differensen och avrundningen till tiondels meter."
+    },
+    {
+      "id": "2.252",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.30",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.253",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.254",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.255",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.44",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.256",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.257",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.258",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.45",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.259",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.260",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.261",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.262",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.46",
+      "status": "Åtgärdad",
+      "kommentar": "Facit visar hur regressionslinjen ger densiteten och vad dess skärning med massaxeln betyder. Graf och GeoGebra-tillstånd har lagts till."
+    },
+    {
+      "id": "2.263",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.264",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.265",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.47",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.266",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.267",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.268",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.48",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.269",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.270",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.271",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.272",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.49",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.273",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.351",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.352",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.353",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.354",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.355",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.356",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.357",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    },
+    {
+      "id": "2.358",
+      "status": "Åtgärdad",
+      "kommentar": "Facit har fått tydliga regelrubriker, visade mellanled och en avslutande svarsruta."
+    }
+  ],
+  "granskad_utan_fel": []
+}

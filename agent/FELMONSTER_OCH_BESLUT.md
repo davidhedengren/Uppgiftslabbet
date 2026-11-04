@@ -3196,3 +3196,7 @@ repona, samt konsumentens tidigare `brakuttryck.test.js`.
 ## Fy1 kapitel 2–3: enhetsfacit, 2026-11-04
 
 [Granskning och alla ID](FY1_KAP23_FACIT_2026-11-04.md). Samtliga 71 enhetsuppgifter följer nu den nya numrerade facitmallen, inklusive 110 egna delfacit. Återinför inte den tidigare onumrerade fysikprosan: FACITMALL.md 2026-11-04 är det senare beslutet. Kontrollera att varje delfacit har en egen komplett svarsruta; 2.227 ska sammanfatta p=1, q=2 och faktorn 18. Bevara 2.12:s avsiktligt olika givna data och resultat mellan huvuduppgift och kort b. 2.10 måste ange årsmodellen som ”sådana år” hänvisar till. Långa enhetskedjor behöver brytas även om KaTeX i sig accepterar dem.
+
+### Fy1 mätnoggrannhet: fullständiga frågor och osäkerhet (2026-11-04)
+
+Se `FY1_MATNOGG_FACIT_2026-11-04.md` för samtliga 68 ID. Kontrollera avklippta slutsatser i frågor (2.250/251), visa härledningen innan approximativa osäkerhetsformler används och skilj strikt mindre än från högst (2.273: 41 ark). Regression kräver digitalt verktyg och en läsbar graf (2.46). Ett avvikande mätvärde ska undersökas, inte automatiskt strykas. Använd TeX:s `\lt`/`\gt` för jämförelser i HTML-facit.

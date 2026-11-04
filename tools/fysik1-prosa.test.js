@@ -6,12 +6,13 @@ test('Bilen: beräkna reaktion, bromsning, stopp och träfffart oberoende',()=>{
  assert.ok(Math.abs(short-53.0511463845)<1e-9);assert.ok(Math.abs(long-86.3844797178)<1e-9);assert.ok(short<60&&long>60);assert.ok(Math.abs(impact-69.18959459)<1e-7);
  const task=q('3.172');assert.match(task.t,/<p>a\)/);assert.match(task.t,/<p>b\)/);assert.match(task.s,/v_0t_r/);assert.match(task.s,/17\{,\}78\+35\{,\}27/);assert.match(task.s,/51\{,\}11\+35\{,\}27/);
 });
-test('Fysiklösningar saknar numrerade steg men bevarar separata delbokstäver',()=>{
+test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',()=>{
  function visit(x){if(Array.isArray(x))x.forEach(visit);else if(x&&typeof x==='object')for(const[k,v]of Object.entries(x)){if(k==='s'&&typeof v==='string'){assert.doesNotMatch(v,/facit-steglista|<span class="facit-mark">\d+<\/span>/);assert.match(v,/facit-v2/);}else if(v&&typeof v==='object')visit(v);}}
  // Användarbeslut 2026-11-04: konstacc-facit skrivs som numrerade steg där formeln alltid står
  // (agent/FY1_KONSTACC_FACIT_2026-11-04.md). De omfattas inte av prosaregeln.
  // Sedan 2026-11-04 gäller agent/FACITMALL.md även övriga områden i kapitel 3 (agent/FY1_RORELSE_FACIT_2026-11-04.md).
- const MALL=['konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer'];
+ // Kapitel 2: enheter och mätnoggrannhet omarbetade enligt samma nya mall.
+ const MALL=['enheter','matnogg','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer'];
  visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));assert.match(q('2.315').s,/<strong>a\)/);
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.

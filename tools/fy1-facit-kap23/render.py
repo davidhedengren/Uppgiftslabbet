@@ -25,7 +25,8 @@ def p(x): return '<p>'+x+'</p>'
 def inline(x): return '\\('+x+'\\)'
 def solution(steps, answer):
     assert steps and answer
-    return '<div class="facit-v2 facit-stegvis"><ol class="facit-steglista" role="list">'+''.join('<li><p class="facit-rubrik">'+h+'</p>'+b+'</li>' for h,b in steps)+'</ol><p class="facit-svar"><strong>Svar:</strong> '+answer+'</p></div>'
+    result='<div class="facit-v2 facit-stegvis"><ol class="facit-steglista" role="list">'+''.join('<li><p class="facit-rubrik">'+h+'</p>'+b+'</li>' for h,b in steps)+'</ol><p class="facit-svar"><strong>Svar:</strong> '+answer+'</p></div>'
+    return re.sub(r'\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]',lambda m:m.group().replace('<',r'\lt ').replace('>',r'\gt '),result)
 def setq(id, steps, answer):
     byid[id]['s']=solution(steps,answer);changes[id]='Åtgärdad'
 def multi(id, plans, cardplans=None):
@@ -40,7 +41,7 @@ def conv(rule, calc, answer, why=''):
     return ([(rule, (p(why) if why else '')+m(calc))],inline(answer)+'.')
 def save():
     # Patch only changed JSON strings, preserving original number spellings and spacing.
-    pattern=re.compile(r'"(?:\\.|[^"\\])*"')
+    pattern=re.compile(r'"(?:\\.|[^"\\])*"|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?|true|false|null')
     old=list(pattern.finditer(SOURCE))
     new=list(pattern.finditer(json.dumps(bank,ensure_ascii=False,indent=2)))
     assert len(old)==len(new), 'Structural changes need a separate explicit patch'
