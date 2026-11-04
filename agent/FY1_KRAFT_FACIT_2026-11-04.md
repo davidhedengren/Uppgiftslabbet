@@ -56,3 +56,12 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
   deluppgifterna a–c, och delkort a och b upprepade frasen. Det är rättat.
 - Inga räknefel. Alla 159 svar är omräknade, bland annat alla trissystem, kopplingar och
   system med två rörelsefaser (4.650, 4.656, 4.659, 4.662, 4.664, 4.667, 4.670).
+
+## Omgång 4: newton3 (53 uppgifter)
+
+- Formelrubriker: ”Newtons tredje lag: \(\vec F_{A\text{ på }B}=-\vec F_{B\text{ på }A}\)” och
+  ”Kraft och motkraft verkar på olika kroppar”. De kombineras med Newtons andra lag när
+  accelerationer ska jämföras.
+- Facit skiljer tydligt mellan kraftpar (tredje lagen) och krafter som balanserar varandra
+  på samma kropp (4.99, 4.145, 4.893).
+- Inga räknefel.

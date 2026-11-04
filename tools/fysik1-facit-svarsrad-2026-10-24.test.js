@@ -13,8 +13,8 @@ test('Fy1-facit: svaret står i en svarsruta, inte i ett löst fetstilt stycke',
 });
 
 test('Runda 1 och 2: styckeform, förklaring före formeln och kommentar före svaret',()=>{
- // 3.609 (a-t-diagram) följer sedan 2026-11-04 agent/FACITMALL.md med steglista.
- for(const id of ['4.826','4.830','9.431']){
+ // 3.609, 4.826 och 4.830 följer sedan 2026-11-04 agent/FACITMALL.md med steglista.
+ for(const id of ['9.431']){
   assert.doesNotMatch(q(id).s,/facit-steglista/,id);
   assert.match(q(id).s,/^<div class="facit-v2 facit-stegvis"><div class="facit-forklaring"><div class="facit-stycke"><p class="facit-metod">/,id);
  }
