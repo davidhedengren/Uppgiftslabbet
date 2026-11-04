@@ -139,3 +139,16 @@ Ingen av de 860 uppgifterna följde mallen före arbetet.
 - `tools/fy1-svarsinstruktioner-2026-10-26.test.js`: listan över kvarvarande ”likformig” är nu bara 2.73
   (4.248 och 2.224 använder inte längre ordet).
 - Inga räknefel. Alla 88 svar är omräknade.
+
+## Omgång 11: blandat_kraft (53 uppgifter) – kapitel 4 klart
+
+- Formelrubriker: ”Newtons andra lag: \(F_{\text{res}}=ma\)”, ”Hela systemet: \(F_{\text{res}}=m_{\text{tot}}a\)”,
+  ”Newtons andra lag, uppåt positiv: \(F-mg=ma\)”, ”Hookes lag: \(F=kx\)”, ”Friktion: \(f=\mu N\)”,
+  rörelseformlerna, ”Lutningen i ett v-t-diagram” och ”Sträckan är arean under v-t-grafen:
+  \(s=\dfrac{bh}{2}\) för en triangel, \(s=bh\) för en rektangel”.
+- Delkort med egen inledning använder bara sina egna värden. Delkort som delar inledning
+  (4.284 c–d) visar hela uträkningen av accelerationen.
+- `tools/fysik1-blandade-krafter.test.js` godtar nu `\dfrac` i accelerationsformeln.
+- Inga räknefel. Alla 53 svar är omräknade.
+- **Kapitel 4 är klart:** alla 860 uppgifter i de elva områdena har steglista enligt facitmallen och
+  ingår i FÄRDIGA i `tools/fysik1-rorelse-facit-2026-11-04.test.js`.

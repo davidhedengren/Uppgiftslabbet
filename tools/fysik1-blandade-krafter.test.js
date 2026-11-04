@@ -52,7 +52,7 @@ test('Självständiga kort använder sina egna givna data och rätt enheter',()=
  assert.match(q('4.201').spelDelar[1].t,/1,5 m\/s²/);assert.doesNotMatch(q('4.201').spelDelar[1].ledtrad,/kraft|massa/);
  assert.match(q('4.281').spelDelar[3].t,/660 N/);assert.doesNotMatch(q('4.281').spelDelar[3].t,/ursprungliga/);
  assert.match(q('4.225').spelDelar[2].t,/48 m\/s²/);assert.match(q('4.284').spelDelar[3].s,/0\{,\}60/);
- for(const id of ['4.153','4.286'])assert.match(q(id).spelDelar[0].s,/\\frac\{\\Delta v\}\{\\Delta t\}/);
+ for(const id of ['4.153','4.286'])assert.match(q(id).spelDelar[0].s,/\\d?frac\{\\Delta v\}\{\\Delta t\}/);
 });
 test('Alla 84 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
  let checked=0;
