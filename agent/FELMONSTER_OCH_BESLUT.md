@@ -3261,3 +3261,7 @@ Användaren förtydligade efter 2.291 att faktorisering inte ska vara standard n
 ## Ma2 pq, runda 2 (4 november)
 
 [25 åtgärdade uppgifter, två delkort och sex metodjämförelser](MA2_PQ_RUNDA2_2026-11-04.md). Bevara prövning av extralösningar och förklaringar av öppna/slutna intervall. I 2.488 är x den längre sidan enligt bilden: x(x−2)=48. I 2.65 avser streckningen krävd höjd inklusive marginal, inte fordonets egen höjd. I 2.1148 är division med x+1 tillåten eftersom produkten är 5; återinför inte påståendet att den förlorar lösningar. 2.338 anger sekunder och meter. 2.342 har geometrifamilj, 2.730 lösningsformel och 5.21 träningsnivå 3. Skydd: `tools/ma2-pq-runda2-2026-11-04.test.js`.
+
+## Ma2 pq, runda 3 (4 november)
+
+[16 åtgärdade huvuduppgifter, åtta delkort och sex metodjämförelser](MA2_PQ_RUNDA3_2026-11-04.md). 2.05 b:s fristående kort använder egna koefficienter, inte hänvisning till a). 2.302 har ordnade fält med tydliga etiketter och stigande ordning. 2.164 ska behålla både positiva och negativa heltalspar; 2.485 ska gå tillbaka från två u-värden till fyra x-rötter. 2.692 bevarar kvadratrotsmetoden respektive utbrytning i a/b, pq används i c. 3.182:s nollvinkel förkastas och tidigare figurfix bevaras. 3.510 söker hela bron, inte bara x. 2.245/2.303 har korrigerad familj, 2.05 har träningsnivåerna 2/1/2. Skydd: `tools/ma2-pq-runda3-2026-11-04.test.js`. De sex metodjämförelserna är inte slutgranskade mot hela facitmallen.
