@@ -3317,3 +3317,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: flerledade normalfördelningsmodeller
 
 [Ma2 4.26, 4.27, 4.66 och 4.106](MA2_NORMALFORDELNING_FLERDELADE_2026-11-05.md): ange GeoGebras parametrar, välj rätt område och visa hur resultatet tolkas. 4.26 b-kortet har sin egen andel 5,02 % och får inte hänvisa till osynlig a; modellens ungefärliga antal ska inte beskrivas som exakt utfall. 4.27 a söker direkt en jämförelsegräns i GeoGebra utan att prova σ; b har egen given σ = 3. 4.66 b räknar själv ut σ från givna gränser och tillåter GeoGebra. 4.106 skiljer en modells förväntade andel från ett faktiskt stickprov. Test: `tools/ma2-normalfordelning-flerdelade-2026-11-05.test.js`.
+
+## 5 november: standardavvikelse från ett mittenintervall
+
+[Ma2 4.07, 4.19, 4.37, 4.51, 4.69, 4.304 och 4.2045](MA2_NORMALFORDELNING_SIGMA_MITT_2026-11-05.md): använd vänsterarea (1 + mittenandelen)/2 i GeoGebras sannolikhetskalkylator med tillfälligt μ = 0 och σ = 1. Läs av jämförelsegränsen och dividera det verkliga avståndet till medelvärdet med gränsen. Avrundade uppgiftsandelar ger ofta en standardavvikelse som ligger nära men inte exakt på äldre facit: rättningen ska godta båda. Varje delkort ska ha sin egen förklaring. Test: `tools/ma2-normalfordelning-sigma-mitt-2026-11-05.test.js` och Kunskapsgymmets rättningstest.
