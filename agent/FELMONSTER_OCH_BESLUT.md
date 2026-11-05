@@ -3325,3 +3325,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: standardavvikelse från diagram och tabell
 
 [Ma2 4.451, 4.455 och 4.456](MA2_STATISTIK_GEOGEBRA_DIAGRAM_2026-11-05.md): visa varje observation som ska in i GeoGebras kalkylblad; ta med upprepningar enligt frekvens och beräkna först skillnader vid parade mätningar. I svensk Envariabelanalys visar raden s stickprovets Sx, medan σ avser populationsstandardavvikelse. Test: `tools/ma2-geogebra-sx-diagram-2026-11-05.test.js`.
+
+## 5 november: GeoGebra och ändrade datamaterial
+
+[Ma2 4.46, 4.97, 4.157, 4.371 och 4.373](MA2_STATISTIK_GEOGEBRA_FORANDRING_2026-11-05.md): ange varje värde och hur Envariabelanalys öppnas; raden s visar Sx. Visa beräkningar före och efter ändringen och förklara vad som händer. I 4.97 måste full precision behållas: 3·3,87 är 11,61 medan 3√15 ≈ 11,62. Fristående kort behöver egen arbetsgång. Det tidigare valet av Sx i `STATISTIK_SX_2026-10-14.md` och samtliga svar bevaras. Test: `tools/ma2-geogebra-sx-forandring-2026-11-05.test.js`.
