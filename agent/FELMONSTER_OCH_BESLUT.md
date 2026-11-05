@@ -3389,3 +3389,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november kl. 11.34: vimpel, yttervinkel, längdenheter och statistikfacit
 
 [Alla rapporter, jämförelser och kommentarsförslag](FELRAPPORTER_2026-11-05_1134.md): 3.2140 anger sidornas mittpunkter; 3.322 har tydligt namngivna vinklar och en granskad figur. 3.670 har 7 längdenheter men elevens exakta inmatning är okänd; `7 l.e.` underkändes tidigare. 3.269/290/664/666/668/670 anger nu svarsenheten längdenheter. Kunskapsgymmet normaliserar enhet/enheter, längdenhet/längdenheter och l.e./le endast när denna svarsenhet efterfrågas. 4.137:s ledtråd utgår från given modell; 4.28:s huvudfacit är odelat medan separata delkort behålls. Liknande 3.16, 4.139 och 4.143 är också förtydligade. Test: `tools/ma2-felrapporter-2026-11-05-1134.test.js`, konsumentens rättningstest och enhetsregressioner.
+
+## 5 november: självständiga normalfördelningskort
+
+[Ma2 4.72, 4.197, 4.215, 4.231, 4.298 och 4.301](MA2_NORMALFORDELNING_DELKORT_2026-11-05.md): varje kort visar sin egen GeoGebra-avläsning och behåller givna förutsättningar. 4.197 anger att mittenintervallet söks; 4.301 anger normalfördelning även för klass B i huvudfråga och spelintro. 4.72, 4.197 och 4.215 godtar både tidigare heltalsgränser och mer precisa avläsningar. 4.231 var redan korrekt. Test: `tools/ma2-normalfordelning-delstatus-2026-11-05.test.js` och konsumentens rättnings-/korttest.
