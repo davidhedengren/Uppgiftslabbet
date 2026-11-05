@@ -3293,3 +3293,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: tabell- och diagramdata, andra omgången
 
 [Ma2 4.333–4.337](MA2_STATISTIK_GEOGEBRA_TABELLER2_2026-11-05.md): alla huvuddelar och delkort visar hur observationerna matas in, hur man hittar typvärdet i Stolpdiagram och hur övriga mått tas fram. 4.334 c har riktig GeoGebra-skärmbild med Medel = 15 och s ≈ 2,6458 utan att avslöja senare d-svar. Kopiera `bilder/geogebra-statistik-plantor-2026-11-05.png` med banken. Test: `tools/ma2-geogebra-tabellserie2-2026-11-05.test.js`.
+
+## 5 november: tabell- och diagramdata, tredje omgången
+
+[Ma2 4.338–4.342](MA2_STATISTIK_GEOGEBRA_TABELLER3_2026-11-05.md): huvuddelar och delkort beskriver inmatning och avläsning av respektive mått. 4.340 c har en riktig GeoGebra-skärmbild med Medel = 190 och s ≈ 7,0711 utan att avslöja senare d-svar. Kopiera `bilder/geogebra-statistik-koppvolymer-2026-11-05.png` med banken. Test: `tools/ma2-geogebra-tabellserie3-2026-11-05.test.js`.
