@@ -3424,3 +3424,6 @@ Att medianen är robust mot storleken på ett extremvärde innebär inte att med
 Användaren har förtydligat att eleverna inte behöver kunna eller känna igen formeln för standardavvikelse. Detta ersätter tidigare beslut att exponera kvadratsummor och nämnare i Ma2-frågor, ledtrådar och facit. Behåll beräkningen Sx men använd GeoGebra och visa inmatning och avläsning. 4.283 och 4.284 har konstruerats om. Se [granskning och samtliga ändrade uppgifter](FELRAPPORTER_2026-11-05_1243.md).
 
 Svar på en fråga om flera onamngivna vinklar ska inte kräva en viss ordning: 3.173 och 3.172 är uttryckligen svarsmängder. När varje svar har en namngiven roll behålls ordnade fält.
+
+### 2026-11-05: abstrakta längdenheter vid koordinatavstånd
+Om koordinater saknar fysisk skala och en fråga ber om en längd kan `svarEnhet: längdenheter` användas för att godkänna bland annat l.e. och längdenheter. Sätt inte metadatan på koordinater eller där frågan anger en fysisk enhet. Exakta rotsvar måste testas i Kunskapsgymmets riktiga numeriska tolk. Se [rapport 12:56](FELRAPPORTER_2026-11-05_1256.md).
