@@ -27,11 +27,11 @@ Beslutet från samma dag gäller också: Ma2-eleverna ska inte behöva kunna for
   - I delkort döljs panelrader som besvarar senare delar.
   - 4.11, 4.28, 4.41, 4.61 och 5.41 har kvar ett sammanhängande huvudfacit utan delmarkeringar.
 
-## Uppgifter (60)
+## Uppgifter (61)
 
 - **Lägesmått:** 4.11, 4.41, 4.61, 4.303, 4.310, 4.311, 4.317, 4.322–4.326, 4.2015, 4.2016 och 5.41.
 - **Standardavvikelse:** 4.05, 4.10, 4.14, 4.28, 4.46, 4.97, 4.157, 4.174, 4.175, 4.212, 4.235, 4.241, 4.283, 4.284, 4.299, 4.302, 4.348–4.351, 4.364–4.366, 4.371, 4.373, 4.384–4.393, 4.454, 4.458, 4.461, 4.463, 5.66, 5.71, 5.94 och 5.110.
-- **Lådagram:** 4.360 och 4.361 a.
+- **Lådagram:** 4.360, 4.361 a och 4.362 (GeoGebras Q1 och Q3 för tio tal ger uppgiftens konvention med två halvor).
 
 Delar som inte bygger på data i GeoGebra står kvar oförändrade, till exempel 4.46 c, 4.97 b, 4.157 a, 4.299 c, 4.348 c, 4.351 e, 4.361 b, 4.365 b, 4.366 b och 5.66 c.
 

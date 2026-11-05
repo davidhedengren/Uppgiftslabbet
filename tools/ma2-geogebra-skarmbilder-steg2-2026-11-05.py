@@ -448,6 +448,15 @@ U('4.361', a=[B('4-361-a', {'p': 'Öppna ett kalkylblad i GeoGebra för material
              N('Avrunda till två decimaler', '<p>8 blir 8,00 och 8.2222 blir 8,22.</p>')],
      b='behall')
 
+D('4-362-utan4', [1, 2, 3, 5, 6, 7, 8, 9, 10, 12], 'talen utan 4')
+D('4-362-utan5', [1, 2, 3, 4, 6, 7, 8, 9, 10, 12], 'talen utan 5')
+# Med tio tal ger GeoGebras Q1 och Q3 medianerna i halvorna med fem tal, alltså uppgiftens konvention.
+U('4.362', _=[K(0, 1), B('4-362-utan4', {'p': 'Öppna ett kalkylblad i GeoGebra för talen utan 4', 'm': 'Analysera talen utan 4 med Envariabelanalys',
+                                       's': 'Visa statistiken för talen utan 4 med Σx'}),
+              R('4-362-utan4', ['Min', 'Q1', 'Median', 'Q3', 'Max'], rub='Utan 4: läs av lådagrammets fem värden'),
+              A('4-362-utan5', 'Byt 5 mot 4 och analysera igen', '<p>Skriv 4 i stället för 5 i A4, så att listan blir 1, 2, 3, 4, 6, 7, 8, 9, 10 och 12.</p>'),
+              R('4-362-utan5', ['Min', 'Q1', 'Median', 'Q3', 'Max'], rub='Utan 5: läs av lådagrammets fem värden'),
+              N('Båda listorna ger samma lådagram', '<p>I båda fallen är Min = 1, Q1 = 3, Median = 6,5, Q3 = 9 och Max = 12, som i figuren. Q1 och Q3 är medianerna i de fem lägsta och de fem högsta talen: deras medianer är 3 respektive 9.</p>')])
 D('4-364', [6.5, 7, 7.5, 8, 8.5], 'pH-värdena', freq=[4, 8, 10, 6, 2])
 U('4.364', a=[B('4-364'), R('4-364', ['Median'], show=MED)], b=[Bn('4-364'), ST('4-364')],
      c=[B('4-364'), R('4-364', ['Medel', 's'], show=SX)], d=[B('4-364'), RD('4-364', 'iqr')])
@@ -591,7 +600,10 @@ def bygg(logg):
     src, data = las_bank()
     by = {u['id']: u for u in data}
     byten = []
+    bara = [a for a in sys.argv if re.fullmatch(r'\d+\.\d+', a)]   # t.ex. "bygg logg.json 4.362 --skriv"
     for uid, delar in T.items():
+        if bara and uid not in bara:
+            continue
         u = by[uid]
         harDel = bool(u.get('spelDelar'))
         if None in delar:                     # ett enda facit

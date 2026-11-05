@@ -3434,3 +3434,7 @@ Ett exakt heltalsresultat kan ha en korrekt avrundning till en värdesiffra som 
 ## 5 november: GeoGebra-skärmbilder i resten av envariabelfacit
 
 [60 Ma2-uppgifter med lägesmått, standardavvikelse och lådagram](MA2_STATISTIK_GEOGEBRA_SKARMBILDER_2026-11-05.md) visar nu GeoGebra steg för steg med riktiga skärmbilder: kalkylblad, inmatning, Envariabelanalys, Σx och avläsning. Frekvenstabeller skrivs med värden i kolumn A och antal i kolumn B. Rubrikerna nämner uppgiftens data. Bilderna kan tas utan Playwright med `GGB_WEBB=1` (geogebra.org). I 4.284 rättades kontrollvärdet för kandidaten 50 till 2,83.
+
+## 5 november: regression och korrelation med GeoGebra-skärmbilder
+
+[11 Ma2-uppgifter](MA2_REGRESSION_GEOGEBRA_BILDER_2026-11-05.md) (4.138, 4.139, 4.141, 4.146, 2.372, 2.773, 4.383, 4.400, 4.2098, 4.2107, 4.2129) visar Tvåvariabels regressionsanalys steg för steg med riktiga skärmbilder: x i kolumn A och y i kolumn B, Regressionsmodell, ekvationen och r med Σx. Tunna delkortsfacit i 4.138 och 4.139 har fått steglista och svarsrad. Lådagramsuppgiften 4.362 har fått Envariabelanalys med bilder.
