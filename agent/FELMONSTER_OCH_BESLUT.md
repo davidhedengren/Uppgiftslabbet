@@ -3289,3 +3289,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: tabell- och diagramdata i statistikfacit
 
 [Ma2 4.328–4.332](MA2_STATISTIK_GEOGEBRA_TABELLER_2026-11-05.md): varje huvuddel och fristående kort visar hur uppgiftens egna observationer matas in och efterfrågat mått fås fram i GeoGebra. Upprepa värden enligt frekvens, läs typvärde från Stolpdiagram och beräkna kvartilavstånd från Q3−Q1. Q1=0 och Q3=2,5 för 4.330 är kontrollerat i GeoGebra. 4.328 c har en riktig beskuren skärmbild som visar Medel och s utan att visa senare d-svaret. Kopiera `bilder/geogebra-statistik-vantetider-2026-11-05.png` vid synkning. Test: `tools/ma2-geogebra-tabellserie-2026-11-05.test.js`.
+
+## 5 november: tabell- och diagramdata, andra omgången
+
+[Ma2 4.333–4.337](MA2_STATISTIK_GEOGEBRA_TABELLER2_2026-11-05.md): alla huvuddelar och delkort visar hur observationerna matas in, hur man hittar typvärdet i Stolpdiagram och hur övriga mått tas fram. 4.334 c har riktig GeoGebra-skärmbild med Medel = 15 och s ≈ 2,6458 utan att avslöja senare d-svar. Kopiera `bilder/geogebra-statistik-plantor-2026-11-05.png` med banken. Test: `tools/ma2-geogebra-tabellserie2-2026-11-05.test.js`.
