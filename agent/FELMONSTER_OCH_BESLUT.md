@@ -3369,3 +3369,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: lådagram med uttrycklig kvartilkonvention
 
 [Ma2 4.355, 4.357 och 4.360–4.362](MA2_STATISTIK_GEOGEBRA_LADAGRAM_2026-11-05.md): för 4.361–362 anges hur medianen av varje halva kan kontrolleras separat i GeoGebra enligt frågans kvartilkonvention. 4.362 har exakt de två möjligheterna 4 och 5, i valfri ordning; 4.360 har fem värden och därför ett entydigt medelvärde trots att lådagram i allmänhet inte bestämmer medelvärdet. Delkorten i 4.361 ärver GeoGebra/miniräknare från huvuduppgiften. Test: `tools/ma2-geogebra-ladagram-2026-11-05.test.js` och konsumentens kortexpansionstest.
+
+## 5 november: regressionstest efter tillagd figur
+
+[Ma2 S5:s figurkontroll](MA2_STATISTIK_TEST_FIGURER_2026-11-05.md): testets historiska antal 27 var föråldrat efter att felrapporterade 3.2116 fick en figur. Testet kräver nu samtliga ursprungliga 27 figurer och 3.2116, utan att förbjuda fler figurer. `tools/ma2-s5-2026-10-25.test.js` passerar.

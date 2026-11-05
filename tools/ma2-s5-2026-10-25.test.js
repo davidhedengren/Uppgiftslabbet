@@ -55,7 +55,9 @@ test('Statistik räknas om',()=>{
 test('Precision, flerval och figurer',()=>{
   for(const id of NYA){const t=get(id);if(typeof t.rättSvar==='number'&&!Number.isInteger(t.rättSvar))assert.match(t.t,/decimal|exakt/,id);if(/med ett heltal/.test(t.t))assert.ok(Number.isInteger(t.rättSvar),id);}
   for(const id of NYA.filter(id=>get(id).svarstyp==='alternativ')){const a=get(id).alternativ,r=a.filter(x=>x.ratt).length;assert.ok(r>=1&&a.length-r>=2,id);if(r===1)assert.equal(a[0].ratt,false,id);}
-  const fig=NYA.filter(id=>/<svg/.test(get(id).t));assert.equal(fig.length,27);
+  const fig=NYA.filter(id=>/<svg/.test(get(id).t));
+  // Bevara alla ursprungliga figurer och den senare tillagda rapporterade figuren.
+  for(const id of ['3.2096','3.2097','3.2098','3.2099','3.2100','3.2101','3.2102','3.2103','3.2104','3.2105','3.2106','3.2107','3.2109','3.2111','3.2112','3.2113','3.2115','3.2116','3.2117','3.2118','3.2119','4.2120','4.2121','4.2122','4.2123','4.2125','4.2128','4.2134']) assert.ok(fig.includes(id),id);
   for(const id of fig)for(const svg of get(id).t.match(/<svg[^>]*>/g))assert.match(svg,/aria-label="[^"]{20,}"/,id);
   // Punkterna i koordinatfigurerna ligger inom viewBox.
   for(const id of ['3.2107','3.2109','3.2111','3.2112','3.2113']){const t=get(id).t,[,w,h]=t.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/).map(Number);
