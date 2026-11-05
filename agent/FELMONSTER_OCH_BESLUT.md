@@ -3393,3 +3393,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: självständiga normalfördelningskort
 
 [Ma2 4.72, 4.197, 4.215, 4.231, 4.298 och 4.301](MA2_NORMALFORDELNING_DELKORT_2026-11-05.md): varje kort visar sin egen GeoGebra-avläsning och behåller givna förutsättningar. 4.197 anger att mittenintervallet söks; 4.301 anger normalfördelning även för klass B i huvudfråga och spelintro. 4.72, 4.197 och 4.215 godtar både tidigare heltalsgränser och mer precisa avläsningar. 4.231 var redan korrekt. Test: `tools/ma2-normalfordelning-delstatus-2026-11-05.test.js` och konsumentens rättnings-/korttest.
+
+## 5 november: programanknutna normalfördelningsuppgifter
+
+[Ma2 5.17, 5.24, 5.38, 5.48, 5.53 och 5.65](MA2_NORMALFORDELNING_PROGRAM_2026-11-05.md): visa parametrar, sannolikhetsområde och avläsning i GeoGebra. Mittenintervall måste vara tydligt angivna även på separata delkort; 5.53:s övre gräns anger nu vilket intervall som avses. Tidigare avrundade gränser och GeoGebras precisare avläsningar godtas. Test: `tools/ma2-normalfordelning-program-2026-11-05.test.js` och konsumentens rättningstest.
