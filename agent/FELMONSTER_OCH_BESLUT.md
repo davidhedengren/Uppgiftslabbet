@@ -3301,3 +3301,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: GeoGebra utan att prova parametrar
 
 [Normalfördelning 4.13, 4.104, 4.287, 4.260, 4.263 och 4.2046](MA2_NORMALFORDELNING_DIREKT_2026-11-05.md): läs av gränsen direkt i sannolikhetskalkylatorn för en jämförelsefördelning med kända parametrar och använd avståndet till medelvärdet, i stället för att upprepat justera okänt μ eller σ. Var tydlig med att parametrarna är tillfälliga hjälpmedel och visa beräkningen efteråt. 4.260:s exakta 84 % ger σ ≈ 20,11146; 20 g ska fortfarande godtas. 4.2046:s avrundade 2,2 % ger ≈ 6,95 och tidigare 7 ska också godtas. 4.263:s avrundade andelar ger cirka 510,004 och 9,998; även 510 och 10 godtas. 4.72 och 4.87:s övre delkort ska fortsatt beskriva intervallet självständigt. Banktest: `tools/ma2-normalfordelning-direkt-2026-11-05.test.js`; rättningstest i Kunskapsgymmet: `tools/ma2-normalfordelning-direkt-rattning-2026-11-05.test.js`.
+
+## 5 november: normalfördelningsgränser och andelar
+
+[Ma2 4.45, 4.53, 4.57, 4.70, 4.95, 4.218 och 4.237](MA2_NORMALFORDELNING_GRANSER_2026-11-05.md): när en gräns söks, ange sannolikheten efter likhetstecknet i GeoGebras sannolikhetskalkylator och läs av X-gränsen. När en andel söks, mata in gräns(er) och läs av sannolikheten. Övre 12 % motsvarar vänsterarea 0,88. 4.70:s cirka 75,5 kan avrundas till 76 om resultatet är heltal; båda godtas. 4.95 c:s fristående figur och egna 10 %-andelar bevaras. Skydd: `tools/ma2-normalfordelning-granser-2026-11-05.test.js`.
