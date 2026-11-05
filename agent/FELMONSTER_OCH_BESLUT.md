@@ -3405,3 +3405,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: programmens normalmodeller och referensintervall
 
 [Ma2 5.70, 5.74, 5.84, 5.93, 5.107, 5.127, 5.132, 5.175 och 5.180](MA2_NORMALFORDELNING_PROGRAM2_2026-11-05.md): visa GeoGebras intervall eller svans och tolka uppskattat antal som modellresultat. 5.175 använder oberoende, komplementhändelsen och logaritmer för att direkt bestämma minst 15 provsorter. Test: `tools/ma2-normalfordelning-program2-2026-11-05.test.js` och konsumentens rättningstest.
+
+## 5 november: programmens percentiler och mittenintervall
+
+[Ma2 5.115, 5.139, 5.144, 5.156, 5.165 och 5.168](MA2_NORMALFORDELNING_PROGRAM3_2026-11-05.md): ange att ett mittenintervall söks och visa hur vänsterandelar matas in och gränser avläses i GeoGebra. Rättningen accepterar tidigare avrundade gränser och verktygets precisare värden. Test: `tools/ma2-normalfordelning-program3-2026-11-05.test.js` och konsumentens rättningstest.
