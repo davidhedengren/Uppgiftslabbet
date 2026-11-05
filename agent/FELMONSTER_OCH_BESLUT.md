@@ -3333,3 +3333,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: frekvenstabeller, histogram och små stickprov
 
 [Ma2 4.14, 4.306, 4.364, 4.365 och 4.366](MA2_STATISTIK_GEOGEBRA_HISTOGRAM_2026-11-05.md): visa hur varje observation eller intervallmittpunkt upprepas enligt frekvens i GeoGebra. Histogrammens mittpunkter ger uppskattningar, inte exakta ursprungliga mätvärden. 4.306:s korrekta Sx-metod och 75 % bevaras; en enda andel i ett litet stickprov bevisar inte normalfördelning. 4.14 var korrekt utan ändring. Test: `tools/ma2-geogebra-histogram-sx-2026-11-05.test.js`.
+
+## 5 november: tabeller och diagram, fjärde omgången
+
+[Ma2 4.343–4.347](MA2_STATISTIK_GEOGEBRA_TABELLER4_2026-11-05.md): varje delkort visar inmatningen i GeoGebra och hur dess mått hittas. Typvärdena i 4.345 och 4.347 kommer från högsta frekvens och de oordnade svaren bevaras. Alla lika värden ger Sx = 0 i 4.344. Test: `tools/ma2-geogebra-tabellserie4-2026-11-05.test.js`.
