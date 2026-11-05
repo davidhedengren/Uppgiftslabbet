@@ -3305,3 +3305,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: normalfördelningsgränser och andelar
 
 [Ma2 4.45, 4.53, 4.57, 4.70, 4.95, 4.218 och 4.237](MA2_NORMALFORDELNING_GRANSER_2026-11-05.md): när en gräns söks, ange sannolikheten efter likhetstecknet i GeoGebras sannolikhetskalkylator och läs av X-gränsen. När en andel söks, mata in gräns(er) och läs av sannolikheten. Övre 12 % motsvarar vänsterarea 0,88. 4.70:s cirka 75,5 kan avrundas till 76 om resultatet är heltal; båda godtas. 4.95 c:s fristående figur och egna 10 %-andelar bevaras. Skydd: `tools/ma2-normalfordelning-granser-2026-11-05.test.js`.
+
+## 5 november: fler konkreta GeoGebra-avläsningar
+
+[Ma2 4.81, 4.89, 4.116, 4.117, 4.151, 4.152, 4.178 och 4.2086](MA2_NORMALFORDELNING_YTTERLIGARE_2026-11-05.md) visar konkreta parametrar och fält i sannolikhetskalkylatorn. I 4.178 används sannolikheten cirka 0,0668 från skola A som högerarea för skola B före avrundning; gränsen är cirka 97 poäng. Delkort för 4.116, 4.117 och 4.151 har egna steg utan facitläckage. Test: `tools/ma2-normalfordelning-ytterligare-2026-11-05.test.js`.
