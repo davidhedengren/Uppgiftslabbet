@@ -325,3 +325,6 @@ kvadratrotsmetoden och nollprodukt på redan given produktform är fortfarande
 lämpliga. Uppgifter om faktorform eller samband mellan rötter och koefficienter
 kan använda dessa samband när de är det som prövas. Vid metodbyte kontrolleras
 även ledtråd, frågans metodkrav, delkort, område, nivå och verktyg.
+
+## Standardavvikelse i Ma2: metod utan formel (2026-11-05)
+Eleverna behöver inte kunna eller känna igen standardavvikelsens formel. Använd GeoGebra för att ta fram Sx ur data och beskriv inmatning och avläsning i facit. Utforma även ledtrådar, alternativ och separata kort utan hänvisning till formelns komponenter. Om uppgiften kräver formeln, konstruera om den så den går att lösa med kursens begrepp och verktyg. Fortsätt använda Sx som tidigare beslutats; σ kan fortfarande förekomma som parameter i normalfördelning.

@@ -31,7 +31,7 @@ test('Varje Sx-facit stämmer med datan som visas i uppgiften',()=>{
   nara(get('4.455').rättSvar,Sx([0,0,0,0,1,1,1,1,1,1,2,2,2,3,4]));
   const d=[12.4,13.1,11.8,12.9,13.5,12.2].map((x,i)=>x-[12.0,12.4,11.6,12.1,12.6,12.0][i]);nara(get('4.456').rättSvar,Sx(d));
   assert.deepEqual([...get('4.457').rättSvar],[13,4]);nara(Sx([5,9,13]),4);
-  nara(Sx([2,4,get('4.458').rättSvar]),4);
+  assert.equal(Sx([2,4,get('4.458').rättSvar]).toFixed(2),'4.00');
   const agg=(get('4.459').t.match(/var ([\d, och]+)\./)[1]).split(/, | och /).map(Number);
   assert.equal(agg.length,8);nara(get('4.459').rättSvar[0],medel(agg));nara(get('4.459').rättSvar[1],Sx(agg));
 });
@@ -48,5 +48,5 @@ test('Flervalsfrågorna prövar innebörden, inte variationsbredd eller lägesm�
   assert.match(get('4.460').alternativ.find(a=>a.ratt).txt,/medelvärdet/);
   assert.match(get('4.461').t,/samma variationsbredd/);
   assert.match(get('4.462').alternativ.find(a=>a.ratt).txt,/alla värden/);
-  assert.match(get('4.463').alternativ.find(a=>a.ratt).txt,/n − 1/);
+  assert.match(get('4.463').alternativ.find(a=>a.ratt).txt,/σ.*s.*Sx/);
 });

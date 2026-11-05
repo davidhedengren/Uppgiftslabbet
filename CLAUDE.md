@@ -233,3 +233,6 @@ commit e48195f): alla delkort ska börja med **exakt samma** inledning och figur
 följt av bara delens fråga. Ett behövt mellanresultat skrivs i delens fråga. Ge
 inte delkorten egna omformulerade inledningar, för då försvinner den gemensamma
 inledningen och eleven upplever samma fråga igen.
+
+### Standardavvikelse utan formel i Ma2 (2026-11-05)
+Ma2-eleverna ska inte behöva känna till eller känna igen formeln för standardavvikelse. Utforma uppgift, alternativ, ledtrådar, facit och eventuella träningskort utan formeln eller dess täljare, nämnare och kvadratsumma. När standardavvikelsen ska beräknas: använd GeoGebra och visa hur data matas in och Sx läses på raden s. Behåll tidigare beslut att använda Sx för datamaterial; ändringen gäller undervisningsmetoden, inte val av statistiskt mått. Ändra uppgifter som annars kräver formeln så de kan lösas med kursens begrepp och verktyg.

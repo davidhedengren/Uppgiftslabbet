@@ -3419,3 +3419,8 @@ För tabeller och frekvensdiagram ska facit visa hur varje observation matas in 
 
 ### 2026-11-05: Median när ett värde tas bort
 Att medianen är robust mot storleken på ett extremvärde innebär inte att medianen nödvändigtvis ändras lite när en observation tas bort. Materialet 1, 100, 1000 har median 100; utan 1000 blir medianen 50,5. Formulera uppgiften så dessa två situationer inte blandas ihop. Se `MA2_STATISTIK_GEOGEBRA_LAGESMATT2_2026-11-05.md`.
+
+### 2026-11-05: Ma2-standardavvikelse utan krav på formeln
+Användaren har förtydligat att eleverna inte behöver kunna eller känna igen formeln för standardavvikelse. Detta ersätter tidigare beslut att exponera kvadratsummor och nämnare i Ma2-frågor, ledtrådar och facit. Behåll beräkningen Sx men använd GeoGebra och visa inmatning och avläsning. 4.283 och 4.284 har konstruerats om. Se [granskning och samtliga ändrade uppgifter](FELRAPPORTER_2026-11-05_1243.md).
+
+Svar på en fråga om flera onamngivna vinklar ska inte kräva en viss ordning: 3.173 och 3.172 är uttryckligen svarsmängder. När varje svar har en namngiven roll behålls ordnade fält.

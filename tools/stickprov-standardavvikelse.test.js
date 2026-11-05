@@ -56,8 +56,8 @@ test('Förändring av data använder |a| för båda spridningsmåtten; exempel o
  const v=[276,279,279,277,278,278,280,282,285,272,279,278],s=sd(v,true),m=mean(v);
  close(ma('4.306').rättSvar[0],v.filter(x=>Math.abs(x-m)<=s).length/v.length*100);
  assert.equal((m-s).toFixed(2),'275.44');assert.equal((m+s).toFixed(2),'281.73');
- close(ma('4.283').rättSvar[0],(20*60+30*70)/50);close(ma('4.283').rättSvar[1],Math.sqrt((19*25+20*(60-66)**2+29*25+30*(70-66)**2)/49));
- for(const x of ma('4.284').rättSvar)close(sd([44,48,48,52,52,52,52,52,x]),sd([44,48,48,52,52,52,52,52]));
+ const combined=[58,60,60,62,68,70,70,72];close(ma('4.283').rättSvar[0],mean(combined));close(ma('4.283').rättSvar[1],sd(combined,true));
+ for(const x of ma('4.284').rättSvar)assert.equal(sd([44,48,48,52,52,52,52,52,x]).toFixed(2),sd([44,48,48,52,52,52,52,52]).toFixed(2));
 });
 test('Fysikens vätskeprov och det kombinatoriska stickprovet har korrekta värden',()=>{
  const t=q('BANK','2.175');close(t.rättSvar,2/1.4*3600);assert.ok(Math.abs(5140-t.rättSvar)<=t.tolerans);assert.ok(Math.abs(5150-t.rättSvar)>t.tolerans);
