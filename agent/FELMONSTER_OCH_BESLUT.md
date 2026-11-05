@@ -3397,3 +3397,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: programanknutna normalfördelningsuppgifter
 
 [Ma2 5.17, 5.24, 5.38, 5.48, 5.53 och 5.65](MA2_NORMALFORDELNING_PROGRAM_2026-11-05.md): visa parametrar, sannolikhetsområde och avläsning i GeoGebra. Mittenintervall måste vara tydligt angivna även på separata delkort; 5.53:s övre gräns anger nu vilket intervall som avses. Tidigare avrundade gränser och GeoGebras precisare avläsningar godtas. Test: `tools/ma2-normalfordelning-program-2026-11-05.test.js` och konsumentens rättningstest.
+
+## 5 november: programanknutna mätvärden och Sx
+
+[Ma2 5.41, 5.66, 5.71, 5.94 och 5.110](MA2_STATISTIK_PROGRAM_SX_2026-11-05.md): visa inmatning och raden s i GeoGebras Envariabelanalys. I 5.41 kontrolleras kvartiler med medianen i vardera halvan; huvudfacit är odelat men korten har egna facit. 5.66 visar varför ett extremvärde kan ge större Sx trots oförändrad median och kvartilavstånd. Test: `tools/ma2-statistik-program-sx-2026-11-05.test.js` och konsumentens rättningstest.
