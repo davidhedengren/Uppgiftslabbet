@@ -3401,3 +3401,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: programanknutna mätvärden och Sx
 
 [Ma2 5.41, 5.66, 5.71, 5.94 och 5.110](MA2_STATISTIK_PROGRAM_SX_2026-11-05.md): visa inmatning och raden s i GeoGebras Envariabelanalys. I 5.41 kontrolleras kvartiler med medianen i vardera halvan; huvudfacit är odelat men korten har egna facit. 5.66 visar varför ett extremvärde kan ge större Sx trots oförändrad median och kvartilavstånd. Test: `tools/ma2-statistik-program-sx-2026-11-05.test.js` och konsumentens rättningstest.
+
+## 5 november: programmens normalmodeller och referensintervall
+
+[Ma2 5.70, 5.74, 5.84, 5.93, 5.107, 5.127, 5.132, 5.175 och 5.180](MA2_NORMALFORDELNING_PROGRAM2_2026-11-05.md): visa GeoGebras intervall eller svans och tolka uppskattat antal som modellresultat. 5.175 använder oberoende, komplementhändelsen och logaritmer för att direkt bestämma minst 15 provsorter. Test: `tools/ma2-normalfordelning-program2-2026-11-05.test.js` och konsumentens rättningstest.
