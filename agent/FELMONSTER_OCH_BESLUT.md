@@ -3345,3 +3345,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: jämförelser med och utan en observation
 
 [Ma2 4.241, 4.299 och 4.302](MA2_STATISTIK_GEOGEBRA_JAMFORELSE_2026-11-05.md): visa varje datamaterial och dess avläsning på raden s i GeoGebra. 4.299 d använder Beas fem kvarvarande tider och Sx ≈ 0,62. 4.302 behåller undantaget att en redan noll standardavvikelse förblir noll. Tidigare Sx-svarsnycklar och ordnade fält bevaras. Test: `tools/ma2-geogebra-sx-jamforelse-2026-11-05.test.js`.
+
+## 5 november: antaganden för fördelning och sammanslagna stickprov
+
+[Ma2 4.65, 4.102, 4.114, 4.121 och 4.213](MA2_STATISTIK_MODELLANTAGANDEN_2026-11-05.md): sammanslagna Sx beror på gruppstorlek och ska inte utan vidare antas lika med gruppernas Sx. 4.102 och 4.114 anger nu antal och räknar med n−1. Medelvärde och standardavvikelse bestämmer inte en svanssannolikhet utan fördelningsantagande: 4.213 anger normalmodell och visar sannolikheterna i GeoGebra. Detta ersätter tidigare bedömningar utan ändring i `STATISTIK_SX_2026-10-14.md`. Test: `tools/ma2-statistik-modellantaganden-2026-11-05.test.js`.
