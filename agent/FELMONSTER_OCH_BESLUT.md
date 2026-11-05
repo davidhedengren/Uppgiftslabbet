@@ -3349,3 +3349,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: antaganden för fördelning och sammanslagna stickprov
 
 [Ma2 4.65, 4.102, 4.114, 4.121 och 4.213](MA2_STATISTIK_MODELLANTAGANDEN_2026-11-05.md): sammanslagna Sx beror på gruppstorlek och ska inte utan vidare antas lika med gruppernas Sx. 4.102 och 4.114 anger nu antal och räknar med n−1. Medelvärde och standardavvikelse bestämmer inte en svanssannolikhet utan fördelningsantagande: 4.213 anger normalmodell och visar sannolikheterna i GeoGebra. Detta ersätter tidigare bedömningar utan ändring i `STATISTIK_SX_2026-10-14.md`. Test: `tools/ma2-statistik-modellantaganden-2026-11-05.test.js`.
+
+## 5 november: normalfördelningens gränser och svansar, ytterligare en omgång
+
+[Ma2 4.153, 4.2092–4.2094, 4.2126–4.2127](MA2_NORMALFORDELNING_GRANSER2_2026-11-05.md): visa parametrar och vänsterområde eller intervall i GeoGebra, samt sannolikhetsfältet när en gräns ska läsas av. 4.2126 behövde ett explicit normalfördelningsantagande; standardavvikelse och medelvärde räcker annars inte för en svanssannolikhet. Normalparametern σ får inte bytas mot rådatamåttet Sx. Test: `tools/ma2-normalfordelning-granser2-2026-11-05.test.js`.
