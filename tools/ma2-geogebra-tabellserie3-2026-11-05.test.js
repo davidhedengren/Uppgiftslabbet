@@ -6,5 +6,5 @@ test('Median, typvärde, medelvärde, Sx och spridningsmått stämmer',()=>{
 });
 test('Alla delkort visar rätt GeoGebra-steg utan att ge senare svar',()=>{
  for(const[id]of cases){const x=q(id);assert.equal(x.geogebra,true,id);assert.equal(x.miniräknare,true,id);assert.equal(x.spelDelar.length,4);for(const d of x.spelDelar){assert.match(d.s,/Envariabelanalys/,id);assert.match(d.s,/facit-svar/,id)}assert.match(x.spelDelar[0].s,/Median/,id);assert.match(x.spelDelar[1].s,/Stolpdiagram|stolpdiagram/,id);assert.match(x.spelDelar[2].s,/raden s/i,id);assert.doesNotMatch(x.spelDelar[0].s,/På raden Medel|raden s står/i,id)}
- const c=q('4.340').spelDelar[2].s;assert.match(c,/geogebra-statistik-koppvolymer/);assert.ok(fs.statSync('bilder/geogebra-statistik-koppvolymer-2026-11-05.png').size>1000);assert.doesNotMatch(c,/variationsbredd|Max − Min/);
+ const c=q('4.340').spelDelar[2].s;assert.match(c,/geogebra-4-340-medel-s\.png/);assert.ok(fs.statSync('bilder/geogebra-4-340-medel-s.png').size>1000);assert.doesNotMatch(c,/variationsbredd|Max − Min/);
 });

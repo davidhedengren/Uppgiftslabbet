@@ -6,5 +6,5 @@ test('Beräkningar och rättningsnycklar för samtliga fem uppgifter',()=>{
 });
 test('Alla delkort ger självständig GeoGebra-arbetsgång utan att exponera senare svar',()=>{
  for(const[id]of cases){const a=q(id);assert.equal(a.geogebra,true,id);assert.equal(a.miniräknare,true,id);assert.equal(a.spelDelar.length,4);for(const d of a.spelDelar){assert.match(d.s,/Envariabelanalys/,id);assert.match(d.s,/facit-svar/,id);}assert.match(a.spelDelar[0].s,/Median/,id);assert.match(a.spelDelar[1].s,/Stolpdiagram|stolpdiagram/,id);assert.match(a.spelDelar[2].s,/raden s/i,id);assert.doesNotMatch(a.spelDelar[0].s,/På raden Medel|raden s står/i,id);}
- const c=q('4.328').spelDelar[2].s;assert.match(c,/geogebra-statistik-vantetider/);assert.ok(fs.statSync('bilder/geogebra-statistik-vantetider-2026-11-05.png').size>1000);assert.doesNotMatch(c,/variationsbredd|Max − Min/);
+ const c=q('4.328').spelDelar[2].s;assert.match(c,/geogebra-4-328-medel-s\.png/);assert.ok(fs.statSync('bilder/geogebra-4-328-medel-s.png').size>1000);assert.doesNotMatch(c,/variationsbredd|Max − Min/);
 });

@@ -195,3 +195,13 @@ Samma struktur. Rubriken namnger regeln eller beskriver förändringen:
 Användaren vill att statistikfacit lär eleven att använda GeoGebra. När uppgiften löses med verktyget ska varje huvudfacit och relevant fristående delkort ange uppgiftens faktiska data, hur de matas in, vilka menyval som används, vilket resultat som läses av och hur det tolkas eller avrundas. Välj lämplig metod för rådata, frekvenstabell, diagram respektive normalfördelning; en allmän uppmaning att ”använda GeoGebra” räcker inte. Sätt GeoGebra och miniräknare som tillåtna när verktyget används. Undvik att avslöja senare delars svar.
 
 I GeoGebras svenska Classic-kalkylblad har gränssnittet kontrollerats: markera celler → stapeldiagramknappen → Envariabelanalys → Σx. Statistikpanelen visar stickprovsstandardavvikelsen som **s**, medan uppgifterna ofta skriver **Sx**; förklara att s motsvarar Sx och skilj den från σ. Gränssnitt kan variera mellan versioner. Visa gärna en relevant och korrekt skärmbild om det är möjligt; hitta inte på en skärmbild. Se [första granskningen](MA2_STATISTIK_GEOGEBRA_BILDER_2026-11-05.md).
+
+### Skärmbilder som visar var man klickar (användarbeslut 2026-11-05)
+
+Användaren: i uppgifter som är tänkta att lösas med GeoGebra ska facit ha **tydliga skärmbilder som visar hur det ser ut i GeoGebra och var man ska trycka**, så att eleven kan lära sig verktyget av facit. Det ersätter ”visa gärna en skärmbild” ovan: skärmbilder är standard för GeoGebra-facit.
+
+- Ett steg per handgrepp, var och ett med sin bild: öppna Kalkylblad (Meny → Perspektiv → Kalkylblad), skriv och markera uppgiftens värden, välj verktyget, visa resultatet (till exempel Σx) och läs av den rad som behövs.
+- Bilderna är riktiga skärmbilder från GeoGebra Classic på svenska med uppgiftens egna värden. Knappar och rader är inringade med numrerade markeringar. Rita aldrig efter eller hitta på en skärmbild.
+- I delkort döljs de rader i statistikpanelen som skulle avslöja en senare dels svar. Sista delen och huvudfacit får visa hela panelen.
+- Nämn att GeoGebra visar decimaltal med punkt (1.7889 betyder 1,7889).
+- Bilderna tas med `tools/geogebra-skarmbilder.js`, som också läser av panelens värden så att facit kan kontrolleras mot dem. Se [stegbilderna](MA2_STATISTIK_GEOGEBRA_STEGBILDER_2026-11-05.md).

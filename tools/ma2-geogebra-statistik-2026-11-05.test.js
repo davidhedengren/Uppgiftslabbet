@@ -7,7 +7,8 @@ test('Statistikfacit visar GeoGebras svenska arbetsgång och skillnaden mellan s
  assert.doesNotMatch(q('4.05').spelDelar[0].s,/1,29|2,58/);assert.doesNotMatch(q('4.28').spelDelar[0].s,/3,8|3,795/);
 });
 test('Skärmbilderna finns och hör till respektive data',()=>{
- for(const [id,n] of [['4.450','4-6-8'],['6.09','4-6-6-8']]){const path=`bilder/geogebra-statistik-${n}-2026-11-05.png`;assert.ok(fs.statSync(path).size>1000,path);assert.ok(q(id).s.includes(path));}
+ // Ersatt 2026-11-05 av stegvisa skärmbilder (MA2_STATISTIK_GEOGEBRA_STEGBILDER_2026-11-05.md).
+ for(const [id,n] of [['4.450','4-450-s'],['6.09','6-09-s']]){const path=`bilder/geogebra-${n}.png`;assert.ok(fs.statSync(path).size>1000,path);assert.ok(q(id).s.includes(path));}
 });
 test('Sx beräknas med n−1 och jämförs mot de bevarade nycklarna',()=>{
  const sx=v=>{const m=v.reduce((s,x)=>s+x,0)/v.length;return Math.sqrt(v.reduce((s,x)=>s+(x-m)**2,0)/(v.length-1));};
