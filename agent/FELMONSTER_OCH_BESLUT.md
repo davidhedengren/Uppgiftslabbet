@@ -3430,3 +3430,7 @@ Om koordinater saknar fysisk skala och en fråga ber om en längd kan `svarEnhet
 
 ### 2026-11-05: korrekt avrundning av heltalsavstånd
 Ett exakt heltalsresultat kan ha en korrekt avrundning till en värdesiffra som skiljer sig från heltalet, exempelvis 54 m → 50 m. När uppgiften inte kräver exakt svar eller särskild precision och avser en uppmätt storhet kan den avrundningen läggas till som ett separat `svarTabell`-värde. Använd inte en bred tolerans och tillämpa inte regeln generellt på exakta antal. Kontrollera enheter och separata träningskort. Se [rapport 13:35](FELRAPPORT_MA2_2026-11-05_1335.md).
+
+## 5 november: GeoGebra-skärmbilder i resten av envariabelfacit
+
+[60 Ma2-uppgifter med lägesmått, standardavvikelse och lådagram](MA2_STATISTIK_GEOGEBRA_SKARMBILDER_2026-11-05.md) visar nu GeoGebra steg för steg med riktiga skärmbilder: kalkylblad, inmatning, Envariabelanalys, Σx och avläsning. Frekvenstabeller skrivs med värden i kolumn A och antal i kolumn B. Rubrikerna nämner uppgiftens data. Bilderna kan tas utan Playwright med `GGB_WEBB=1` (geogebra.org). I 4.284 rättades kontrollvärdet för kandidaten 50 till 2,83.

@@ -21,7 +21,10 @@
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
-const { chromium } = require('playwright');
+// Utan Playwright och lokalt GeoGebra-paket: GGB_WEBB=1 kör riktiga GeoGebra Classic från
+// geogebra.org/classic?lang=sv via tools/geogebra-cdp-playwright.js (samma bilder och kontroller).
+const WEBB = !!process.env.GGB_WEBB;
+const { chromium } = WEBB ? require('./geogebra-cdp-playwright.js') : require('playwright');
 
 const VIEW = { width: 1100, height: 660 };
 const RED = '#d9480f';
@@ -51,11 +54,27 @@ window.onload=function(){applet.inject("ggb");};</script></body></html>`;
 }
 
 async function newApp(browser, port, view = VIEW) {
-  const ctx = await browser.newContext({ viewport: view, deviceScaleFactor: 2, permissions: ['clipboard-read', 'clipboard-write'] });
-  const page = await ctx.newPage();
-  page.on('close', () => ctx.close().catch(() => {}));
-  await page.goto(`http://127.0.0.1:${port}/index.html`);
-  await page.waitForFunction(() => window.ggbReady, null, { timeout: 120000 });
+  let page;
+  if (WEBB) {
+    page = await browser.newPage({ viewport: view, deviceScaleFactor: 2 });
+    await page.goto('https://www.geogebra.org/classic?lang=sv');
+    await page.waitForFunction(() => !!(window.ggbApplet && window.ggbApplet.evalCommand), null, { timeout: 120000 });
+    // Kakbanner: välj det mest integritetsvänliga (bara nödvändiga kakor).
+    for (const t of ['MORE OPTIONS', 'REJECT ALL']) {
+      for (let k = 0; k < 12; k++) {
+        const ok = await page.evaluate((t) => { const b = [...document.querySelectorAll('button')].find((x) => x.textContent.trim() === t); if (b) { b.click(); return true; } return false; }, t);
+        if (ok) break; await page.waitForTimeout(500);
+      }
+    }
+    await page.evaluate(() => { window.api = window.ggbApplet; const st = document.createElement('style');
+      st.textContent = '.snackbarComponent,.gwt-PopupPanel.snackbar,.snackbar,.toolTipPanel{display:none!important}'; document.head.appendChild(st); });
+  } else {
+    const ctx = await browser.newContext({ viewport: view, deviceScaleFactor: 2, permissions: ['clipboard-read', 'clipboard-write'] });
+    page = await ctx.newPage();
+    page.on('close', () => ctx.close().catch(() => {}));
+    await page.goto(`http://127.0.0.1:${port}/index.html`);
+    await page.waitForFunction(() => window.ggbReady, null, { timeout: 120000 });
+  }
   await page.waitForTimeout(1500);
   await page.click('.closeTabbedKeyboardButton').catch(() => {});
   await page.waitForTimeout(400);
@@ -65,6 +84,9 @@ async function newApp(browser, port, view = VIEW) {
 // Ritar markeringar ovanpå GeoGebra. items: {x,y,w,h, n?, label?, side?, mask?}
 async function annotate(page, items) {
   await page.evaluate(({ items, RED }) => {
+    // Dölj tipsrutor som ”Nybörjare? Kolla in vår Kalkylblad guide!”.
+    for (const e of document.querySelectorAll('div')) { const r = e.getBoundingClientRect();
+      if (r.height > 0 && r.height < 140 && /^Nybörjare\?/.test(e.textContent.trim()) && !e.querySelector('canvas')) e.style.visibility = 'hidden'; }
     let layer = document.getElementById('__ann');
     if (layer) layer.remove();
     layer = document.createElement('div');
@@ -132,6 +154,9 @@ async function chooseSpreadsheet(page) {
 }
 
 async function cellBox(page, col, row) {
+  // geogebra.org ritar kalkylbladet på en canvas: kolumn A börjar vid x = 52, kolumnbredd 70,
+  // rad 1 börjar vid y = 79 och radhöjden är 25 (uppmätt i vyn 1100 × 660).
+  if (WEBB) return { x: 52 + 70 * (col.charCodeAt(0) - 65), y: 79 + 25 * (row - 1), w: 70, h: 25 };
   return page.evaluate(({ col, row }) => {
     const heads = [...document.querySelectorAll('td.SVheader')];
     const ch = heads.find((t) => t.textContent.trim() === col && t.getBoundingClientRect().y < 70);
@@ -403,15 +428,24 @@ async function normalJob(browser, port, outDir, j, log) {
 async function jobSteps(page, outDir, j, log) {
   await chooseSpreadsheet(page);
   const values = j.values;
-  const cells = await typeColumn(page, values);
+  let cells = await typeColumn(page, values);
+  if (j.freq) {
+    // Frekvenstabell: antal i kolumn B. När A och B markeras räknar GeoGebra B som frekvenser.
+    const b = await typeColumn(page, j.freq, 'B');
+    const a1 = await cellBox(page, 'A', 1);
+    await page.mouse.move(a1.x + a1.w / 2, a1.y + a1.h / 2); await page.mouse.down();
+    await page.mouse.move(b.x + b.w / 2, b.y + b.h - 4, { steps: 10 }); await page.mouse.up();
+    await page.waitForTimeout(500);
+    cells = { x: cells.x, y: cells.y, w: b.x + b.w - cells.x, h: cells.h };
+  }
   const btn = await box(page, barChartButton(page));
   const last = values.length;
   await annotate(page, [
-    { ...cells, n: 1, label: `A1–A${last} markerade`, side: 'right' },
+    { ...cells, n: 1, label: `${j.freq ? `A1–B${last}` : `A1–A${last}`} markerade`, side: 'right' },
     { ...btn, n: 2, label: 'Klicka här', side: 'right', pad: 2 },
   ]);
   const hData = Math.min(VIEW.height, cells.y + cells.h + 34);
-  await shoot(page, path.join(outDir, `geogebra-${j.slug}-data.png`), { x: 0, y: 0, w: 330, h: hData });
+  await shoot(page, path.join(outDir, `geogebra-${j.slug}-data.png`), { x: 0, y: 0, w: j.freq ? 420 : 330, h: hData });
   await clearAnn(page);
 
   await openOneVar(page);
@@ -442,9 +476,10 @@ async function jobSteps(page, outDir, j, log) {
   await page.waitForFunction(() => [...document.querySelectorAll('td')].some((t) => t.textContent.trim() === 'Median' && t.offsetParent !== null), null, { timeout: 15000 });
   await page.waitForTimeout(1200);
   const { out, rows } = await readStats(page);
-  const summa = values.reduce((x, y) => x + y, 0);
-  if (+out.n !== values.length || Math.abs(+out['Σx'] - summa) > 1e-6) throw new Error(`${j.slug}: GeoGebra visar n=${out.n}, Σx=${out['Σx']}`);
-  log[j.slug] = { values, stats: out };
+  const antal = j.freq ? j.freq.reduce((x, y) => x + y, 0) : values.length;
+  const summa = values.reduce((x, y, k) => x + y * (j.freq ? j.freq[k] : 1), 0);
+  if (+out.n !== antal || Math.abs(+out['Σx'] - summa) > 1e-6) throw new Error(`${j.slug}: GeoGebra visar n=${out.n}, Σx=${out['Σx']}`);
+  log[j.slug] = { values, freq: j.freq, stats: out };
   if (j.expect) {
     for (const [k, v] of Object.entries(j.expect)) {
       if (String(out[k]) !== String(v)) throw new Error(`${j.slug}: GeoGebra visar ${k} = ${out[k]}, förväntat ${v}`);
@@ -466,13 +501,13 @@ async function jobSteps(page, outDir, j, log) {
 
 (async () => {
   const [specFile, outDir, ...only] = process.argv.slice(2);
-  if (!specFile || !outDir || !process.env.GGB_BUNDLE) {
+  if (!specFile || !outDir || !(process.env.GGB_BUNDLE || WEBB)) {
     console.error('Användning: GGB_BUNDLE=<.../GeoGebra> node tools/geogebra-skarmbilder.js spec.json utmapp [slug ...]');
     process.exit(2);
   }
   const spec = JSON.parse(fs.readFileSync(specFile, 'utf8'));
   fs.mkdirSync(outDir, { recursive: true });
-  const server = await startServer(process.env.GGB_BUNDLE);
+  const server = WEBB ? { close() {}, address: () => ({ port: 0 }) } : await startServer(process.env.GGB_BUNDLE);
   const port = server.address().port;
   const browser = await chromium.launch();
   const logFile = path.join(outDir, 'geogebra-skarmbilder-logg.json');
