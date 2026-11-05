@@ -135,7 +135,7 @@ def gg_block(uid, beskr, listtxt, n, vals, med_sigma, skriv=None):
     if neg:
         extra += ' Ett negativt tal skrivs med minustecken före, till exempel -3.'
     steg = [
-        li('Öppna kalkylbladet i GeoGebra Classic',
+        li(f'Öppna ett kalkylblad i GeoGebra för {beskr}',
            '<p>Gå till geogebra.org/classic. Klicka på menyknappen ☰ uppe till höger, '
            'välj <strong>Perspektiv</strong> och sedan <strong>Kalkylblad</strong>.</p>',
            img('geogebra-kalkylblad-perspektiv.png',
@@ -146,14 +146,14 @@ def gg_block(uid, beskr, listtxt, n, vals, med_sigma, skriv=None):
            f'<p>Dra sedan med musen från A1 till A{n} så att cellerna blir blå.</p>',
            img(f'geogebra-{sl}-data.png',
                f'Kalkylbladet med värdena {listtxt} i A1–A{n}. Cellerna är markerade och stapeldiagramknappen är inringad.', 330)),
-        li('Välj Envariabelanalys under stapeldiagramknappen',
+        li(f'Analysera {beskr} med Envariabelanalys',
            '<p>Klicka på stapeldiagramknappen, den andra knappen i verktygsraden (1), och välj '
            '<strong>Envariabelanalys</strong> (2). Ett analysfönster med ett histogram öppnas.</p>',
            img('geogebra-envariabelanalys-meny.png',
                'Menyn under stapeldiagramknappen med Envariabelanalys inringad.', 420)),
     ]
     if med_sigma:
-        steg.append(li('Klicka på Σx för att visa statistiken',
+        steg.append(li(f'Visa statistiken för {beskr} med Σx',
                        '<p>Knappen Σx sitter uppe till höger i analysfönstret. Då visas en tabell med '
                        'statistiska mått till vänster om diagrammet.</p>',
                        img(f'geogebra-{sl}-analys.png',
@@ -185,7 +185,7 @@ def bygg_serie(logg):
         # a) median
         med = st['Median']
         assert abs(num(med) - tal['a'][0]) < 1e-9, (uid, med, tal['a'])
-        las_a = li('Läs av medianen på raden Median',
+        las_a = li(f'Läs av medianen för {beskr} på raden Median',
                    f'<p>På raden Median står {med}{", alltså " + sv(med) if "." in med else ""}{enh(e)}.</p>',
                    img(f'geogebra-{sl}-median.png', f'Statistikpanelen med raden Median = {med} inringad.', 340))
         # b) typvärde
@@ -193,7 +193,7 @@ def bygg_serie(logg):
         c = Counter(vals); top = max(c.values()); modes = [v for v in c if c[v] == top]
         assert len(modes) == 1 and abs(modes[0] - tal['b'][0]) < 1e-9, (uid, modes, tal['b'])
         typ = sv(('%g' % modes[0]))
-        las_b = li('Byt till Stolpdiagram och hitta den högsta stapeln',
+        las_b = li(f'Hitta typvärdet för {beskr} i Stolpdiagram',
                    '<p>Klicka på listan där det står Histogram, uppe till vänster i analysfönstret, och välj '
                    '<strong>Stolpdiagram</strong>. Varje stapel visar hur många gånger ett värde förekommer.</p>'
                    f'<p>Den högsta stapeln står vid {typ}{enh(e)}. Det värdet förekommer {top} gånger, '
@@ -205,7 +205,7 @@ def bygg_serie(logg):
         assert abs(num(m) - tal['c'][0]) < 1e-9, (uid, m, tal['c'])
         dec = len(re.sub(r'<[^>]+>', '', svar['c']).split('≈')[1].strip().split(' ')[0].split(',')[1].rstrip('.'))
         assert round(num(s_), dec) == round(tal['c'][1], dec), (uid, s_, tal['c'])
-        las_c = li('Läs av raderna Medel och s',
+        las_c = li(f'Läs av Medel och s för {beskr}',
                    f'<p>På raden Medel står {m} och på raden s står {s_}.</p>'
                    + punktnot(m, s_) +
                    '<p>Raden s är stickprovsstandardavvikelsen Sx. Raden σ är ett annat mått och används inte här.</p>',
@@ -216,17 +216,18 @@ def bygg_serie(logg):
         diff = round(num(hi) - num(lo), 10)
         assert abs(diff - tal['d'][0]) < 1e-9, (uid, lo, hi, tal['d'])
         lo_s, hi_s, diff_s = sv(lo), sv(hi), sv('%g' % diff)
-        lo_p = f'({lo_s})' if num(lo) < 0 else lo_s
+        lo_t = lo.replace('.', '{,}')
+        lo_p = f'({lo_t})' if num(lo) < 0 else lo_t
         if dr == ['Min', 'Max']:
-            rub = r'Variationsbredden: \(\text{Max}-\text{Min}\)'
+            rub = f'Variationsbredden för {beskr}: ' + r'\(\text{Max}-\text{Min}\)'
             namn = 'Variationsbredden'
         else:
-            rub = r'Kvartilavståndet: \(Q_3-Q_1\)'
+            rub = f'Kvartilavståndet för {beskr}: ' + r'\(Q_3-Q_1\)'
             namn = 'Kvartilavståndet'
         las_d = li(rub,
                    f'<p>Läs av raderna {dr[0]} och {dr[1]}: {dr[0]} = {lo} och {dr[1]} = {hi}.</p>'
                    + punktnot(lo, hi) +
-                   f'<div class="facit-matte">\\[{hi_s.replace(",", "{,}")}-{lo_p.replace(",", "{,}")}={diff_s.replace(",", "{,}")}\\]</div>'
+                   f'<div class="facit-matte">\\[{hi_s.replace(",", "{,}")}-{lo_p}={diff_s.replace(",", "{,}")}\\]</div>'
                    f'<p>{namn} är {diff_s}{enh(e)}.</p>',
                    img(f'geogebra-{sl}-{"-".join(dr).lower()}.png',
                        f'Statistikpanelen med raderna {dr[0]} = {lo} och {dr[1]} = {hi} inringade.', 340))
@@ -241,7 +242,7 @@ def bygg_serie(logg):
             'c': fac(full + las_c) + svar['c'] + '</div>',
             'd': fac(full + las_d) + svar['d'] + '</div>',
         }
-        samma = li('Använd analysfönstret från a)',
+        samma = li(f'Använd analysen av {beskr} från a)',
                    f'<p>Värdena är redan inskrivna i A1–A{n} och analyserade med Envariabelanalys i a).</p>')
         huvud = {
             'a': nya['a'],
@@ -322,10 +323,10 @@ def bygg_enkla(logg, src):
         block = gg_block(uid, c['beskr'], listtxt, n, vals, True, skriv=c.get('skriv'))
         v = [st[r] for r in c['rader']]
         if c['rader'] == ['s']:
-            rub = 'Läs av raden s, som är Sx'
+            rub = f'Läs av raden s (Sx) för {c["beskr"]}'
             las = f'<p>På raden s står {v[0]}.</p>'
         else:
-            rub = 'Läs av raderna Medel och s'
+            rub = f'Läs av Medel och s för {c["beskr"]}'
             las = f'<p>På raden Medel står {v[0]} och på raden s står {v[1]}.</p>'
         las += punktnot(*v)
         las += '<p>Raden s är stickprovsstandardavvikelsen Sx. Raden σ är ett annat mått och används inte här.</p>'

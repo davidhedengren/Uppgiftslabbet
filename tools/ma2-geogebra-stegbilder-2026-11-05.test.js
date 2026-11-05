@@ -87,7 +87,7 @@ test('huvudfacit visar arbetsgången en gång och hänvisar sedan till a)', () =
   for (const id of Object.keys(SERIE)) {
     const s = q(id).s;
     assert.equal((s.match(/geogebra-kalkylblad-perspektiv\.png/g) || []).length, 1, id);
-    assert.equal((s.match(/Använd analysfönstret från a\)/g) || []).length, 3, id);
+    assert.equal((s.match(/Använd analysen av [^<]+ från a\)/g) || []).length, 3, id);
     assert.equal((s.match(/class="facit-svar"/g) || []).length, 4, id);
   }
 });
@@ -104,4 +104,16 @@ test('enkla uppgifter visar raden s från GeoGebra och behåller egna inledande 
   assert.match(q('4.456').s, /Beräkna förbättringarna för varje elev/);
   assert.match(q('4.451').s, /Läs av varje prick/);
   assert.match(q('4.455').s, /Läs av varje matchs antal mål/);
+});
+
+test('rubrikerna är skrivna för sin uppgift och delas inte mellan uppgifter', () => {
+  const rub = (h) => [...h.matchAll(/class="facit-rubrik">([\s\S]*?)<\/p>/g)].map((m) => m[1]);
+  const var_ = {};
+  for (const id of [...Object.keys(SERIE), ...Object.keys(ENKLA)]) {
+    const u = q(id);
+    for (const r of new Set([u.s, ...(u.spelDelar || []).map((d) => d.s)].flatMap(rub))) (var_[r] = var_[r] || new Set()).add(id);
+  }
+  assert.deepEqual(Object.entries(var_).filter(([, v]) => v.size > 1).map(([r, v]) => `${r}: ${[...v]}`), []);
+  assert.doesNotMatch(q('4.338').spelDelar[3].s, /−0\{,\}5/);
+  assert.match(q('4.338').spelDelar[3].s, /2-\(-0\{,\}5\)=2\{,\}5/);
 });
