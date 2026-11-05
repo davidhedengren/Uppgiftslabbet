@@ -14,6 +14,7 @@ import sys
 from pathlib import Path
 from statistics import NormalDist
 
+sys.dont_write_bytecode = True  # skapa ingen __pycache__ i tools/
 _s = importlib.util.spec_from_file_location('nf1', Path(__file__).with_name('geogebra-normalfordelning-2026-11-05.py'))
 nf1 = importlib.util.module_from_spec(_s)
 _s.loader.exec_module(nf1)
