@@ -3277,3 +3277,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: första särskilda statistikomgången
 
 [4.05, 4.10, 4.14 och 4.28](MA2_STATISTIK_GEOGEBRA_2026-11-05.md) anger hur man läser av Sx och andra efterfrågade mått i GeoGebra. 4.14 tillåter nu GeoGebra och miniräknare; Sx är cirka 6,44 före och 1,92 efter att 24 tas bort. Delkort behöver egna instruktioner, men facit i a får inte avslöja svaret i b.
+
+## 5 november: begripliga normalfördelningsintervall
+
+[Ma2 4.87 och fem jämförelser](FELRAPPORT_MA2_487_2026-11-05.md): beskriv de mittersta 90 procenten genom att 5 procent ligger under den nedre gränsen och 5 procent över den övre. Det fristående b-kortet frågar direkt efter längden som 5 procent är kortare än; c frågar efter längden som 5 procent är längre än. Använd inte ett oförklarat ”symmetriskt 90 %-intervall”. Båda kortens facit beskriver GeoGebras sannolikhetskalkylator och avslöjar inte det andra kortets svar. 4.72, 4.117, 4.215 och 4.2125 har förtydligats på motsvarande sätt. Test: `tools/ma2-normalintervall-2026-11-05.test.js`.
