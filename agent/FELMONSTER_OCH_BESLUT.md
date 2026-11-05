@@ -3438,3 +3438,17 @@ Ett exakt heltalsresultat kan ha en korrekt avrundning till en värdesiffra som 
 ## 5 november: regression och korrelation med GeoGebra-skärmbilder
 
 [11 Ma2-uppgifter](MA2_REGRESSION_GEOGEBRA_BILDER_2026-11-05.md) (4.138, 4.139, 4.141, 4.146, 2.372, 2.773, 4.383, 4.400, 4.2098, 4.2107, 4.2129) visar Tvåvariabels regressionsanalys steg för steg med riktiga skärmbilder: x i kolumn A och y i kolumn B, Regressionsmodell, ekvationen och r med Σx. Tunna delkortsfacit i 4.138 och 4.139 har fått steglista och svarsrad. Lådagramsuppgiften 4.362 har fått Envariabelanalys med bilder.
+
+
+## Ma1: ren talrutin i bråk och procent, 2026-11-05
+
+[36 huvuduppgifter / 108 kort](MA1_TALRUTIN_2026-11-05.md), #0.1266–0.1301,
+är avsiktlig mängdträning på nivå 1–2 för samtliga Ma1-spår. Användaren vill
+ha vanliga a), b), c) utan extra twister: gör inte om dessa till textproblem
+för att undvika heuristikens likhetsflaggor. Bråkfrågorna kräver exakt värde
+men accepterar ekvivalenta bråk/decimaler. Procentandelar har numeriskt
+svar med enheten %, inte det äldre breda procentformatet. Bråkkorten har
+ett motiverat räknarundantag eftersom just bråkproceduren tränas; procent
+tillåter miniräknare. Varje del har eget facit, ledtråd och verktygsmetadata.
+Skydd: `ma1-talrutin-2026-11-05.test.py` i master och motsvarande `.test.js`
+i konsumenten, med riktiga delkort och rättningsfunktioner.
