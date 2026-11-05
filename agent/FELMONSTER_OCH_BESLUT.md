@@ -3373,3 +3373,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: regressionstest efter tillagd figur
 
 [Ma2 S5:s figurkontroll](MA2_STATISTIK_TEST_FIGURER_2026-11-05.md): testets historiska antal 27 var föråldrat efter att felrapporterade 3.2116 fick en figur. Testet kräver nu samtliga ursprungliga 27 figurer och 3.2116, utan att förbjuda fler figurer. `tools/ma2-s5-2026-10-25.test.js` passerar.
+
+## 5 november: GeoGebra för svansar och intervall
+
+[Ma2 4.254, 4.255, 4.258, 4.259, 4.262 och 4.264](MA2_NORMALFORDELNING_OMRADEN_2026-11-05.md): visa normalparametrar och rätt område i GeoGebra, omvandla andelen och bevara precision innan beräkning av förväntat antal. I 4.255 ger exaktare andel cirka 45,5 och därmed ungefär 46; både 45 och 46 godtas. Test: `tools/ma2-normalfordelning-omraden-2026-11-05.test.js` och konsumentens rättningstest.
