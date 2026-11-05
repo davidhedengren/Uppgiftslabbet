@@ -3416,3 +3416,6 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 
 ### 2026-11-05: Lägesmått med GeoGebra
 För tabeller och frekvensdiagram ska facit visa hur varje observation matas in och hur medelvärde och median läses i envariabelanalysen. För typvärde kan högsta stapeln användas. En huvudfråga utan delfrågor får ett samlat facit även om träningsläget delar upp svaret; separata kort ska ha fristående lösningar. Granskade exempel och kontrollvärden finns i `MA2_STATISTIK_GEOGEBRA_LAGESMATT_2026-11-05.md`.
+
+### 2026-11-05: Median när ett värde tas bort
+Att medianen är robust mot storleken på ett extremvärde innebär inte att medianen nödvändigtvis ändras lite när en observation tas bort. Materialet 1, 100, 1000 har median 100; utan 1000 blir medianen 50,5. Formulera uppgiften så dessa två situationer inte blandas ihop. Se `MA2_STATISTIK_GEOGEBRA_LAGESMATT2_2026-11-05.md`.
