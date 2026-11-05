@@ -3285,3 +3285,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: GeoGebra i statistikfacit med verkliga skärmbilder
 
 [Första omgången, 11 uppgifter](MA2_STATISTIK_GEOGEBRA_BILDER_2026-11-05.md). GeoGebras svenska Classic-statistikpanel visar stickprovsstandardavvikelse på raden **s**, inte Sx; facit ska förklara att detta är Sx och skilja det från σ. Markera kalkylbladets värden → stapeldiagramknappen → Envariabelanalys → Σx. 4.450 och 6.09 har riktiga skärmbilder med respektive uppgifts data, i `bilder/`; inkludera bildfilerna vid synkning. 4.453 ska lista alla 15 observationer, inte bara fem olika storlekar. Svar, toleranser och nivåer bevarades. Test: `tools/ma2-geogebra-statistik-2026-11-05.test.js`. Hela statistikbanken återstår att gå igenom.
+
+## 5 november: tabell- och diagramdata i statistikfacit
+
+[Ma2 4.328–4.332](MA2_STATISTIK_GEOGEBRA_TABELLER_2026-11-05.md): varje huvuddel och fristående kort visar hur uppgiftens egna observationer matas in och efterfrågat mått fås fram i GeoGebra. Upprepa värden enligt frekvens, läs typvärde från Stolpdiagram och beräkna kvartilavstånd från Q3−Q1. Q1=0 och Q3=2,5 för 4.330 är kontrollerat i GeoGebra. 4.328 c har en riktig beskuren skärmbild som visar Medel och s utan att visa senare d-svaret. Kopiera `bilder/geogebra-statistik-vantetider-2026-11-05.png` vid synkning. Test: `tools/ma2-geogebra-tabellserie-2026-11-05.test.js`.
