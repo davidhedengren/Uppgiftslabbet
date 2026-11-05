@@ -3468,3 +3468,6 @@ Ma2 4.2084: villkoret att det rättade värdet fortfarande är störst krävs
 för lösningens nya maxvärde 38; tidigare kunde ett annat värde vara högre.
 Rätta alternativ är oförändrade. Skydd: `fellogg-2026-11-05-1614.test.js`,
 webbläsartestet med samma namn och tidigare dolda-alternativ-/flervalstester.
+
+### 2026-11-05: flera lösningar i ett fält per lösning
+Svar med flera lösningar ska inte vara fritext med varierande facitformat ({-3,0,3}, x=-2,0,2, a=2 och b=3). Använd ett svarsfält per lösning: svarsstruktur "mängd" med etiketten x (valfri ordning) eller "ordnad" med namngivna fält (a, b). Kunskapsgymmet godtar då även hela svaret samlat i ett fält. Se [FELRAPPORTER_2026-11-05_2156.md](FELRAPPORTER_2026-11-05_2156.md).
