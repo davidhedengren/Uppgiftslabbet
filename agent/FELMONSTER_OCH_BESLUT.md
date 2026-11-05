@@ -3427,3 +3427,6 @@ Svar på en fråga om flera onamngivna vinklar ska inte kräva en viss ordning: 
 
 ### 2026-11-05: abstrakta längdenheter vid koordinatavstånd
 Om koordinater saknar fysisk skala och en fråga ber om en längd kan `svarEnhet: längdenheter` användas för att godkänna bland annat l.e. och längdenheter. Sätt inte metadatan på koordinater eller där frågan anger en fysisk enhet. Exakta rotsvar måste testas i Kunskapsgymmets riktiga numeriska tolk. Se [rapport 12:56](FELRAPPORTER_2026-11-05_1256.md).
+
+### 2026-11-05: korrekt avrundning av heltalsavstånd
+Ett exakt heltalsresultat kan ha en korrekt avrundning till en värdesiffra som skiljer sig från heltalet, exempelvis 54 m → 50 m. När uppgiften inte kräver exakt svar eller särskild precision och avser en uppmätt storhet kan den avrundningen läggas till som ett separat `svarTabell`-värde. Använd inte en bred tolerans och tillämpa inte regeln generellt på exakta antal. Kontrollera enheter och separata träningskort. Se [rapport 13:35](FELRAPPORT_MA2_2026-11-05_1335.md).
