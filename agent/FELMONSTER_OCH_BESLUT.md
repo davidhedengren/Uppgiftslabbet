@@ -3377,3 +3377,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: GeoGebra för svansar och intervall
 
 [Ma2 4.254, 4.255, 4.258, 4.259, 4.262 och 4.264](MA2_NORMALFORDELNING_OMRADEN_2026-11-05.md): visa normalparametrar och rätt område i GeoGebra, omvandla andelen och bevara precision innan beräkning av förväntat antal. I 4.255 ger exaktare andel cirka 45,5 och därmed ungefär 46; både 45 och 46 godtas. Test: `tools/ma2-normalfordelning-omraden-2026-11-05.test.js` och konsumentens rättningstest.
+
+## 5 november: fyllningsgränser och följdberäkningar
+
+[Ma2 4.256, 4.257, 4.261, 4.285 och 4.286](MA2_NORMALFORDELNING_FYLLNING_2026-11-05.md): ange GeoGebras normalmodell och områden. 4.261:s exakta 2,3 % ger cirka 257,98 g; även 258 godtas. I 4.285 ger exakt 0,13 % nytt medelvärde cirka 504,046 g, cirka 429 färre påsar och 80,9 kg extra mjöl; tidigare avrundade svar 504, 428 och 80 godtas. 4.256:s 81,85 % ger σ cirka 6,002, och både detta och 6 godtas. Detta preciserar tidigare avrundade lösningar. Test: `tools/ma2-normalfordelning-fyllning-2026-11-05.test.js` och konsumentens rättningstest.
