@@ -3337,3 +3337,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: tabeller och diagram, fjärde omgången
 
 [Ma2 4.343–4.347](MA2_STATISTIK_GEOGEBRA_TABELLER4_2026-11-05.md): varje delkort visar inmatningen i GeoGebra och hur dess mått hittas. Typvärdena i 4.345 och 4.347 kommer från högsta frekvens och de oordnade svaren bevaras. Alla lika värden ger Sx = 0 i 4.344. Test: `tools/ma2-geogebra-tabellserie4-2026-11-05.test.js`.
+
+## 5 november: jämförelser och frekvenser, femte tabellomgången
+
+[Ma2 4.349–4.353](MA2_STATISTIK_GEOGEBRA_TABELLER5_2026-11-05.md): 4.349–351 har självständiga GeoGebra-steg i alla delkort, med korrekta frekvenser och Sx. I 4.352–353 ges färdiga percentiler och de efterfrågade svaren kan läsas och beräknas direkt utan påhittade rådata. Test: `tools/ma2-geogebra-tabellserie5-2026-11-05.test.js`.
