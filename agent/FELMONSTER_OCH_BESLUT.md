@@ -3265,3 +3265,11 @@ Användaren förtydligade efter 2.291 att faktorisering inte ska vara standard n
 ## Ma2 pq, runda 3 (4 november)
 
 [16 åtgärdade huvuduppgifter, åtta delkort och sex metodjämförelser](MA2_PQ_RUNDA3_2026-11-04.md). 2.05 b:s fristående kort använder egna koefficienter, inte hänvisning till a). 2.302 har ordnade fält med tydliga etiketter och stigande ordning. 2.164 ska behålla både positiva och negativa heltalspar; 2.485 ska gå tillbaka från två u-värden till fyra x-rötter. 2.692 bevarar kvadratrotsmetoden respektive utbrytning i a/b, pq används i c. 3.182:s nollvinkel förkastas och tidigare figurfix bevaras. 3.510 söker hela bron, inte bara x. 2.245/2.303 har korrigerad familj, 2.05 har träningsnivåerna 2/1/2. Skydd: `tools/ma2-pq-runda3-2026-11-04.test.js`. De sex metodjämförelserna är inte slutgranskade mot hela facitmallen.
+
+## 5 november: likformighet och GeoGebra i statistikfacit
+
+Användaren vill minska mängden uppgifter som enbart söker längdskala och hellre fråga efter sidlängder, med variation och ibland förhållanden. När statistiska mått beräknas ska facit visa hur GeoGebra används, särskilt för Sx. Bedöm begreppsfrågor och givna normalfördelningsparametrar individuellt. Se [pågående granskning och kommentarer](MA2_LIKFORMIGHET_STATISTIK_2026-11-05.md); sökträffar är inte automatiskt fel.
+
+## 5 november: felrapporter, avrundning och funktionsetiketter
+
+[Alla rapporter och kommentarsförslag](FELRAPPORTER_2026-11-05_0758.md). Ma2 1.1133 ska acceptera V(t)= och V= med samma funktion; respektera olika namn och variabler. 6.10 och sex jämförelser om intervallet ±1 standardavvikelse tillåter 68 % när avrundning inte anges. 3.43 frågar efter förhållandet och 3.639 efter en sidlängd; återinför inte obligatorisk skalnotation. 3.2116 har en figur. 4.348 använder Sx och visar GeoGebra; 4.116 visar sannolikhetskalkylatorns vänsterarea. 7.21 b gäller expansionskärlets volym och 7.411 har en dörröppning i väggen.
