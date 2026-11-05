@@ -3321,3 +3321,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: standardavvikelse från ett mittenintervall
 
 [Ma2 4.07, 4.19, 4.37, 4.51, 4.69, 4.304 och 4.2045](MA2_NORMALFORDELNING_SIGMA_MITT_2026-11-05.md): använd vänsterarea (1 + mittenandelen)/2 i GeoGebras sannolikhetskalkylator med tillfälligt μ = 0 och σ = 1. Läs av jämförelsegränsen och dividera det verkliga avståndet till medelvärdet med gränsen. Avrundade uppgiftsandelar ger ofta en standardavvikelse som ligger nära men inte exakt på äldre facit: rättningen ska godta båda. Varje delkort ska ha sin egen förklaring. Test: `tools/ma2-normalfordelning-sigma-mitt-2026-11-05.test.js` och Kunskapsgymmets rättningstest.
+
+## 5 november: standardavvikelse från diagram och tabell
+
+[Ma2 4.451, 4.455 och 4.456](MA2_STATISTIK_GEOGEBRA_DIAGRAM_2026-11-05.md): visa varje observation som ska in i GeoGebras kalkylblad; ta med upprepningar enligt frekvens och beräkna först skillnader vid parade mätningar. I svensk Envariabelanalys visar raden s stickprovets Sx, medan σ avser populationsstandardavvikelse. Test: `tools/ma2-geogebra-sx-diagram-2026-11-05.test.js`.
