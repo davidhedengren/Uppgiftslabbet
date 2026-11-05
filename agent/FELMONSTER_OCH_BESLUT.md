@@ -3361,3 +3361,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: tolka normalfördelningsområden i GeoGebra
 
 [Ma2 4.2120–4.2125](MA2_NORMALFORDELNING_TOLKA_2026-11-05.md): ange parametrar, val av vänster-/högerområde eller intervall och vilket fält som ska användas. En sökt gräns fås genom att mata in sannolikheten efter likhetstecknet och läsa av X-gränsen. Ett antal från en sannolikhetsmodell är en uppskattning. Test: `tools/ma2-normalfordelning-tolka-2026-11-05.test.js`.
+
+## 5 november: spridning i listor och diagram
+
+[Ma2 4.175, 4.386, 4.387, 4.389 och 4.461](MA2_STATISTIK_GEOGEBRA_VISUELLT_2026-11-05.md): visa hur de avlästa observationerna analyseras i GeoGebra och jämför raden s. 4.387 använder intervallmittpunkter med diagrammens frekvenser och resultatet är en uppskattning; 4.389 visar att ett tillägg exakt vid medelvärdet minskar en positiv Sx. Test: `tools/ma2-geogebra-sx-visual-2026-11-05.test.js`.
