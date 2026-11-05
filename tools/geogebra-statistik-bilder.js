@@ -72,8 +72,9 @@ async function datamangd(b,d,ut){
 async function main(){
   const spec=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
   const ut=process.argv[3]||path.join(__dirname,'..','bilder');
-  const profil=path.join(require('node:os').tmpdir(),'gg-statistik-profil');
-  const b=await starta({profil,bredd:720,hojd:600,skala:2});
+  const port=Number(process.env.GG_PORT||9333);  // flera körningar parallellt: olika GG_PORT
+  const profil=path.join(require('node:os').tmpdir(),'gg-statistik-profil-'+port);
+  const b=await starta({port,profil,bredd:720,hojd:600,skala:2});
   const resultat=[];
   try{ for(const d of spec){ resultat.push(await datamangd(b,d,ut)); console.log(JSON.stringify(resultat.at(-1))); } }
   finally{ await b.stang(); }

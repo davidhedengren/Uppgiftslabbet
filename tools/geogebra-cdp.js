@@ -11,7 +11,7 @@ async function starta({port=9333,profil,bredd=1100,hojd=640,skala=2}={}){
   const proc=spawn(CHROME,[`--headless=new`,`--remote-debugging-port=${port}`,`--user-data-dir=${profil}`,
     '--lang=sv','--no-first-run','--no-default-browser-check','--disable-extensions',`--window-size=${bredd},${hojd}`,'about:blank'],{stdio:'ignore'});
   let lista=null;
-  for(let i=0;i<60 && !lista;i++){ try{ lista=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json(); }catch(_){ await vila(250); } }
+  for(let i=0;i<240 && !lista;i++){ try{ lista=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json(); }catch(_){ await vila(250); } }
   const sida=lista.find(x=>x.type==='page');
   const ws=new WebSocket(sida.webSocketDebuggerUrl);
   await new Promise((ok,fel)=>{ ws.onopen=ok; ws.onerror=fel; });
