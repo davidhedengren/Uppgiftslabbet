@@ -3385,3 +3385,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: grundläggande normalfördelning med GeoGebra
 
 [Ma2 4.06, 4.08, 4.20, 4.39, 4.80, 4.94, 4.99, 4.105 och 4.115](MA2_NORMALFORDELNING_GRUND_2026-11-05.md): visa parametrar och områden i GeoGebra. 4.08 anger nu att de mittersta 95,4 % söks och godtar både heltalsgränser och precisare värden. De mer precisa andelarna ger cirka 63 personer i 4.20 och 27 påsar i 4.39; tidigare avrundningar 64 och 28 godtas också. Test: `tools/ma2-normalfordelning-grund-2026-11-05.test.js` och konsumentens rättningstest.
+
+## 5 november kl. 11.34: vimpel, yttervinkel, längdenheter och statistikfacit
+
+[Alla rapporter, jämförelser och kommentarsförslag](FELRAPPORTER_2026-11-05_1134.md): 3.2140 anger sidornas mittpunkter; 3.322 har tydligt namngivna vinklar och en granskad figur. 3.670 har 7 längdenheter men elevens exakta inmatning är okänd; `7 l.e.` underkändes tidigare. 3.269/290/664/666/668/670 anger nu svarsenheten längdenheter. Kunskapsgymmet normaliserar enhet/enheter, längdenhet/längdenheter och l.e./le endast när denna svarsenhet efterfrågas. 4.137:s ledtråd utgår från given modell; 4.28:s huvudfacit är odelat medan separata delkort behålls. Liknande 3.16, 4.139 och 4.143 är också förtydligade. Test: `tools/ma2-felrapporter-2026-11-05-1134.test.js`, konsumentens rättningstest och enhetsregressioner.
