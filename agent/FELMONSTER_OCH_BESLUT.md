@@ -3452,3 +3452,19 @@ ett motiverat räknarundantag eftersom just bråkproceduren tränas; procent
 tillåter miniräknare. Varje del har eget facit, ledtråd och verktygsmetadata.
 Skydd: `ma1-talrutin-2026-11-05.test.py` i master och motsvarande `.test.js`
 i konsumenten, med riktiga delkort och rättningsfunktioner.
+
+
+## Alternativberoende jämförelser och lådagram, 2026-11-05 kl. 16:14
+
+[Alla 14 granskade ID:n och kommentarer](FELRAPPORTER_2026-11-05_1614.md).
+Sju Ma1- och fyra Ma2-frågor behöver synliga alternativ i lärarvy/export.
+Frågan måste uttryckligen säga ”alternativ” enligt befintlig presenter;
+”Välj alla som stämmer” räckte inte. Gör inte samtidigt om självständiga
+öppna frågor som Ma1 0.36 och Ma2 4.52/103 till flerval.
+
+Ma2 4.2143: av lådagrammets maxvärde 6 följer inte att nästan ingen ligger
+över 5,5. Beskriv bara median och kvartilavstånd som diagrammet säkrar.
+Ma2 4.2084: villkoret att det rättade värdet fortfarande är störst krävs
+för lösningens nya maxvärde 38; tidigare kunde ett annat värde vara högre.
+Rätta alternativ är oförändrade. Skydd: `fellogg-2026-11-05-1614.test.js`,
+webbläsartestet med samma namn och tidigare dolda-alternativ-/flervalstester.
