@@ -142,7 +142,7 @@ def bildtext(logg, sl, mu, sigma, mode, a, b, p):
     v = logg[sl]['visat']
     if p is not None:
         ind = f'4 sannolikheten {sv(g(p))} efter likhetstecknet'
-        ut = f'5 gränsen {v}'
+        ut = f'5 svaret (gränsen blir {v})'
     elif mode == 'intervall':
         ind = f'4 gränserna {sv(g(a))} och {sv(g(b))}'
         ut = f'5 svaret {v}'
@@ -194,9 +194,18 @@ def infoga_i(f, uid, logg):
     return ''.join(ut), sum(len(v) for v in tillagg.values())
 
 
+def visat(svar):
+    """Som GeoGebra visar med fyra decimaler: avrunda uppåt vid 5 (−3,01145 → −3,0115)."""
+    from decimal import Decimal, ROUND_HALF_UP
+    d = Decimal(svar).quantize(Decimal('0.0001'), rounding=ROUND_HALF_UP)
+    t = format(d, 'f').rstrip('0').rstrip('.')
+    return '0' if t in ('-0', '') else t
+
+
 def kolla(logg, sl, varde, dec):
     v = float(logg[sl]['svar'])
-    assert round(v, dec) == round(varde, dec), (sl, v, varde)
+    # Tolerans i stället för round(): GeoGebras värde kan ligga exakt mitt emellan (−3,01145).
+    assert abs(v - varde) <= 0.5 * 10 ** -dec + 1e-9, (sl, v, varde)
 
 
 def svarsrad(text):
@@ -285,6 +294,14 @@ def main():
         print(json.dumps(spec(), ensure_ascii=False, indent=1))
         return
     logg = json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))
+    # GeoGebra visar fyra decimaler av det exakta värdet. Urklippet ger fem decimaler, så avrunda inte
+    # det igen (dubbelavrundning: −2,0537489 → −2,05375 → −2,0538). Räkna i stället exakt och
+    # kontrollera mot GeoGebras femdecimalsvärde.
+    for sl, mu, sigma, mode, a, b, p in alla_berakningar():
+        v = logg[sl]
+        exakt = forvantat(mu, sigma, mode, a, b, p)
+        assert abs(exakt - float(v['svar'])) <= 0.5e-4 + 1e-9, (sl, exakt, v['svar'])
+        v['visat'] = visat(repr(exakt))
     src, rapport = bygg(logg, BANK.read_text(encoding='utf-8'))
     if '--skriv' in sys.argv:
         with open(BANK, 'w', encoding='utf-8', newline='') as f:

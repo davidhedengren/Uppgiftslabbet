@@ -31,4 +31,10 @@ I 4.285 har bara baklängesräkningen fått bild. Facit anger den tidigare andel
 
 ## Kontroll
 
-<!-- fylls i efter körning -->
+- `tools/geogebra-skarmbilder.js` körde alla 75 beräkningar i GeoGebra 5.4.916 på svenska. Ett tillfälligt avläsningsfel i 4.2043 a gjordes om automatiskt. Varje bild kontrollerades mot indata.
+- `tools/geogebra-normalfordelning2-2026-11-05.py` avbryter om GeoGebras svar avviker från facits värde med mer än en halv enhet i facits sista decimal. Den avbryter också om GeoGebras femdecimalsvärde avviker från en oberoende exakt beräkning, eller om ett sökt steg saknas. Alla 75 beräkningar stämde, liksom summan 0,0956 i 4.87 a.
+- **Avrundning i bildtexten:** urklippet ger fem decimaler, och värden som −3,01145 avrundades först nedåt till −3,0114. GeoGebra visar −3.0115. Det visade värdet räknas nu från det exakta värdet med avrundning uppåt vid 5, och bildtexterna stämmer med skärmen och faciten (−3,0115, −1,6449, 2,3263, −2,0537).
+- **Formeltestet:** bildtexten ”5 gränsen -1.6449” träffade mönstret för n − 1 i `ma2-utan-standardavvikelseformel-2026-11-05`. Texten lyder nu ”5 svaret (gränsen blir …)”, och testet passerar.
+- Den ursprungliga texten finns kvar ordagrant i alla 44 infogade facit. Det kontrollerades genom att ta bort tilläggen och jämföra med föregående version. Bara `s` har ändrats.
+- Alla 83 facit renderades i 390 px med Kunskapsgymmets CSS utan KaTeX-fel, trasiga bilder eller för breda element. Åtta delkort saknar bild eftersom de inte använder kalkylatorn, till exempel 4.07 b med (100 − 95,4)/2.
+- Testet `tools/ma2-geogebra-normalfordelning2-bilder-2026-11-05.test.js` passerar. Valideraren ger samma 86 fynd för Ma2. Testen som redan var röda (bland annat `ma2-kap4-lagesmatt`, `ma2-statistik-diagram` och `ma2-geogebra-sx-jamforelse`) är röda även utan denna ändring.
