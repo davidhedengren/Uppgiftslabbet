@@ -3273,3 +3273,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: felrapporter, avrundning och funktionsetiketter
 
 [Alla rapporter och kommentarsförslag](FELRAPPORTER_2026-11-05_0758.md). Ma2 1.1133 ska acceptera V(t)= och V= med samma funktion; respektera olika namn och variabler. 6.10 och sex jämförelser om intervallet ±1 standardavvikelse tillåter 68 % när avrundning inte anges. 3.43 frågar efter förhållandet och 3.639 efter en sidlängd; återinför inte obligatorisk skalnotation. 3.2116 har en figur. 4.348 använder Sx och visar GeoGebra; 4.116 visar sannolikhetskalkylatorns vänsterarea. 7.21 b gäller expansionskärlets volym och 7.411 har en dörröppning i väggen.
+
+## 5 november: första särskilda statistikomgången
+
+[4.05, 4.10, 4.14 och 4.28](MA2_STATISTIK_GEOGEBRA_2026-11-05.md) anger hur man läser av Sx och andra efterfrågade mått i GeoGebra. 4.14 tillåter nu GeoGebra och miniräknare; Sx är cirka 6,44 före och 1,92 efter att 24 tas bort. Delkort behöver egna instruktioner, men facit i a får inte avslöja svaret i b.
