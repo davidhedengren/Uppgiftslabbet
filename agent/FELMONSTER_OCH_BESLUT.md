@@ -3365,3 +3365,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: spridning i listor och diagram
 
 [Ma2 4.175, 4.386, 4.387, 4.389 och 4.461](MA2_STATISTIK_GEOGEBRA_VISUELLT_2026-11-05.md): visa hur de avlästa observationerna analyseras i GeoGebra och jämför raden s. 4.387 använder intervallmittpunkter med diagrammens frekvenser och resultatet är en uppskattning; 4.389 visar att ett tillägg exakt vid medelvärdet minskar en positiv Sx. Test: `tools/ma2-geogebra-sx-visual-2026-11-05.test.js`.
+
+## 5 november: lådagram med uttrycklig kvartilkonvention
+
+[Ma2 4.355, 4.357 och 4.360–4.362](MA2_STATISTIK_GEOGEBRA_LADAGRAM_2026-11-05.md): för 4.361–362 anges hur medianen av varje halva kan kontrolleras separat i GeoGebra enligt frågans kvartilkonvention. 4.362 har exakt de två möjligheterna 4 och 5, i valfri ordning; 4.360 har fem värden och därför ett entydigt medelvärde trots att lådagram i allmänhet inte bestämmer medelvärdet. Delkorten i 4.361 ärver GeoGebra/miniräknare från huvuduppgiften. Test: `tools/ma2-geogebra-ladagram-2026-11-05.test.js` och konsumentens kortexpansionstest.
