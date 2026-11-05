@@ -3297,3 +3297,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: tabell- och diagramdata, tredje omgången
 
 [Ma2 4.338–4.342](MA2_STATISTIK_GEOGEBRA_TABELLER3_2026-11-05.md): huvuddelar och delkort beskriver inmatning och avläsning av respektive mått. 4.340 c har en riktig GeoGebra-skärmbild med Medel = 190 och s ≈ 7,0711 utan att avslöja senare d-svar. Kopiera `bilder/geogebra-statistik-koppvolymer-2026-11-05.png` med banken. Test: `tools/ma2-geogebra-tabellserie3-2026-11-05.test.js`.
+
+## 5 november: GeoGebra utan att prova parametrar
+
+[Normalfördelning 4.13, 4.104, 4.287, 4.260, 4.263 och 4.2046](MA2_NORMALFORDELNING_DIREKT_2026-11-05.md): läs av gränsen direkt i sannolikhetskalkylatorn för en jämförelsefördelning med kända parametrar och använd avståndet till medelvärdet, i stället för att upprepat justera okänt μ eller σ. Var tydlig med att parametrarna är tillfälliga hjälpmedel och visa beräkningen efteråt. 4.260:s exakta 84 % ger σ ≈ 20,11146; 20 g ska fortfarande godtas. 4.2046:s avrundade 2,2 % ger ≈ 6,95 och tidigare 7 ska också godtas. 4.263:s avrundade andelar ger cirka 510,004 och 9,998; även 510 och 10 godtas. 4.72 och 4.87:s övre delkort ska fortsatt beskriva intervallet självständigt. Banktest: `tools/ma2-normalfordelning-direkt-2026-11-05.test.js`; rättningstest i Kunskapsgymmet: `tools/ma2-normalfordelning-direkt-rattning-2026-11-05.test.js`.
