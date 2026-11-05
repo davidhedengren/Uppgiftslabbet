@@ -3353,3 +3353,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: normalfördelningens gränser och svansar, ytterligare en omgång
 
 [Ma2 4.153, 4.2092–4.2094, 4.2126–4.2127](MA2_NORMALFORDELNING_GRANSER2_2026-11-05.md): visa parametrar och vänsterområde eller intervall i GeoGebra, samt sannolikhetsfältet när en gräns ska läsas av. 4.2126 behövde ett explicit normalfördelningsantagande; standardavvikelse och medelvärde räcker annars inte för en svanssannolikhet. Normalparametern σ får inte bytas mot rådatamåttet Sx. Test: `tools/ma2-normalfordelning-granser2-2026-11-05.test.js`.
+
+## 5 november: normalfördelning och avrundade tumregler
+
+[Ma2 4.2042–4.2044, 4.2047, 4.2049–4.2051](MA2_NORMALFORDELNING_PRECISION_2026-11-05.md): avrundade normalfördelningsandelar får inte behandlas som exakta när frågan anger ett exakt procentvillkor. 4.2044 ger cirka 27 flaskor; tidigare 26 godtas som ungefärligt. 4.2051:s gräns för 2,2 % är σ ≈ 4,965, medan σ = 5 ger cirka 2,275 %; både 4,97 och avrundat 5 godtas. 4.2043 godtar både tidigare heltalsgränser och GeoGebras precisare värden. 4.2050 anger inte Omars fördelning och får inte påstå en viss percentil. Detta preciserar de tidigare tumreglerna i `MA2_STATISTIK_S1_2026-10-25.md`. Test: `tools/ma2-normalfordelning-precision-2026-11-05.test.js` och verklig rättning i Kunskapsgymmet.

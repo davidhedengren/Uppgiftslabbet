@@ -38,7 +38,7 @@ test('Facit räknas om',()=>{
   const lang=[3.1,3.4,3.5,3.8,3.9,4.0,4.2,4.4,4.5,4.7,4.9,5.3],k=kv(lang);s('4.2038').forEach((x,i)=>assert.ok(Math.abs(x-[3.1,...k,5.3][i])<1e-9,'4.2038'));
   for(const a of get('4.2040').alternativ){const v=a.txt.split(',').map(Number),[a1,a2,a3]=kv(v);assert.equal(Math.min(...v)===2&&a1===4&&a2===5.5&&a3===8&&Math.max(...v)===10,a.ratt,a.txt);}
   assert.ok(Math.abs(s('4.2042')-0.682*2500)<1);assert.deepEqual(s('4.2043'),[165,193]);assert.equal(s('4.2046'),7);assert.ok(Math.abs(s('4.2047')-83.9)<1e-9);
-  assert.ok(Math.abs(s('4.2049')-0.33)<1e-12);assert.equal(s('4.2051'),5);assert.equal(s('4.2056'),39);assert.ok(Math.abs(s('4.2058')-3.2)<1e-9);assert.equal(s('4.2059'),10);
+  assert.ok(Math.abs(s('4.2049')-0.33)<1e-12);assert.ok(Math.abs(s('4.2051')-4.9650194223)<1e-8);assert.ok(Math.abs(s('4.2051')-5)<=get('4.2051').tolerans);assert.equal(s('4.2056'),39);assert.ok(Math.abs(s('4.2058')-3.2)<1e-9);assert.equal(s('4.2059'),10);
 });
 
 test('Precision anges där ett avrundat heltal annars skulle godtas',()=>{
