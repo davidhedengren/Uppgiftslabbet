@@ -3329,3 +3329,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: GeoGebra och ändrade datamaterial
 
 [Ma2 4.46, 4.97, 4.157, 4.371 och 4.373](MA2_STATISTIK_GEOGEBRA_FORANDRING_2026-11-05.md): ange varje värde och hur Envariabelanalys öppnas; raden s visar Sx. Visa beräkningar före och efter ändringen och förklara vad som händer. I 4.97 måste full precision behållas: 3·3,87 är 11,61 medan 3√15 ≈ 11,62. Fristående kort behöver egen arbetsgång. Det tidigare valet av Sx i `STATISTIK_SX_2026-10-14.md` och samtliga svar bevaras. Test: `tools/ma2-geogebra-sx-forandring-2026-11-05.test.js`.
+
+## 5 november: frekvenstabeller, histogram och små stickprov
+
+[Ma2 4.14, 4.306, 4.364, 4.365 och 4.366](MA2_STATISTIK_GEOGEBRA_HISTOGRAM_2026-11-05.md): visa hur varje observation eller intervallmittpunkt upprepas enligt frekvens i GeoGebra. Histogrammens mittpunkter ger uppskattningar, inte exakta ursprungliga mätvärden. 4.306:s korrekta Sx-metod och 75 % bevaras; en enda andel i ett litet stickprov bevisar inte normalfördelning. 4.14 var korrekt utan ändring. Test: `tools/ma2-geogebra-histogram-sx-2026-11-05.test.js`.
