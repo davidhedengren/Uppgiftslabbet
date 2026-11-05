@@ -3313,3 +3313,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: mittersta andelar och precis avrundning
 
 [Ma2 4.38, 4.176, 4.177, 4.216, 4.231 och 4.44](MA2_NORMALFORDELNING_MITTEN_2026-11-05.md): en andel i ett intervall räcker inte för att entydigt bestämma båda gränserna; ange att de mittersta värdena söks. Facit visar GeoGebras vänsterareor och tolerans 0,1 godtar både tidigare heltalsgränser och verktygets precisare värden. 4.44:s tidigare 654,4 avrundades felaktigt till 655; GeoGebras andel 0,8186 ger cirka 654,9 och därmed 655 kattungar. Svarsnycklarna bevaras. Banktest: `tools/ma2-normalfordelning-mitten-2026-11-05.test.js`; rättningsmotorn testas i Kunskapsgymmet.
+
+## 5 november: flerledade normalfördelningsmodeller
+
+[Ma2 4.26, 4.27, 4.66 och 4.106](MA2_NORMALFORDELNING_FLERDELADE_2026-11-05.md): ange GeoGebras parametrar, välj rätt område och visa hur resultatet tolkas. 4.26 b-kortet har sin egen andel 5,02 % och får inte hänvisa till osynlig a; modellens ungefärliga antal ska inte beskrivas som exakt utfall. 4.27 a söker direkt en jämförelsegräns i GeoGebra utan att prova σ; b har egen given σ = 3. 4.66 b räknar själv ut σ från givna gränser och tillåter GeoGebra. 4.106 skiljer en modells förväntade andel från ett faktiskt stickprov. Test: `tools/ma2-normalfordelning-flerdelade-2026-11-05.test.js`.
