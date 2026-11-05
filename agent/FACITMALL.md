@@ -189,3 +189,9 @@ Samma struktur. Rubriken namnger regeln eller beskriver förändringen:
 - [ ] Långa rader brutna för mobil.
 - [ ] Facit renderat (KaTeX) och läst, i mobilbredd, före leverans.
 - [ ] Regressionstest kontrollerar formatet (se `tools/fysik1-konstacc-facit-2026-11-04.test.js`).
+
+## Statistikfacit: visa GeoGebra steg för steg (5 november 2026)
+
+Användaren vill att statistikfacit lär eleven att använda GeoGebra. När uppgiften löses med verktyget ska varje huvudfacit och relevant fristående delkort ange uppgiftens faktiska data, hur de matas in, vilka menyval som används, vilket resultat som läses av och hur det tolkas eller avrundas. Välj lämplig metod för rådata, frekvenstabell, diagram respektive normalfördelning; en allmän uppmaning att ”använda GeoGebra” räcker inte. Sätt GeoGebra och miniräknare som tillåtna när verktyget används. Undvik att avslöja senare delars svar.
+
+I GeoGebras svenska Classic-kalkylblad har gränssnittet kontrollerats: markera celler → stapeldiagramknappen → Envariabelanalys → Σx. Statistikpanelen visar stickprovsstandardavvikelsen som **s**, medan uppgifterna ofta skriver **Sx**; förklara att s motsvarar Sx och skilj den från σ. Gränssnitt kan variera mellan versioner. Visa gärna en relevant och korrekt skärmbild om det är möjligt; hitta inte på en skärmbild. Se [första granskningen](MA2_STATISTIK_GEOGEBRA_BILDER_2026-11-05.md).

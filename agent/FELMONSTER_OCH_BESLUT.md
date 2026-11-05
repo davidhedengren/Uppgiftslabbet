@@ -3281,3 +3281,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: begripliga normalfördelningsintervall
 
 [Ma2 4.87 och fem jämförelser](FELRAPPORT_MA2_487_2026-11-05.md): beskriv de mittersta 90 procenten genom att 5 procent ligger under den nedre gränsen och 5 procent över den övre. Det fristående b-kortet frågar direkt efter längden som 5 procent är kortare än; c frågar efter längden som 5 procent är längre än. Använd inte ett oförklarat ”symmetriskt 90 %-intervall”. Båda kortens facit beskriver GeoGebras sannolikhetskalkylator och avslöjar inte det andra kortets svar. 4.72, 4.117, 4.215 och 4.2125 har förtydligats på motsvarande sätt. Test: `tools/ma2-normalintervall-2026-11-05.test.js`.
+
+## 5 november: GeoGebra i statistikfacit med verkliga skärmbilder
+
+[Första omgången, 11 uppgifter](MA2_STATISTIK_GEOGEBRA_BILDER_2026-11-05.md). GeoGebras svenska Classic-statistikpanel visar stickprovsstandardavvikelse på raden **s**, inte Sx; facit ska förklara att detta är Sx och skilja det från σ. Markera kalkylbladets värden → stapeldiagramknappen → Envariabelanalys → Σx. 4.450 och 6.09 har riktiga skärmbilder med respektive uppgifts data, i `bilder/`; inkludera bildfilerna vid synkning. 4.453 ska lista alla 15 observationer, inte bara fem olika storlekar. Svar, toleranser och nivåer bevarades. Test: `tools/ma2-geogebra-statistik-2026-11-05.test.js`. Hela statistikbanken återstår att gå igenom.
