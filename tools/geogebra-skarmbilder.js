@@ -209,7 +209,9 @@ async function highestBars(page) {
       if (!ctx) continue;
       const W = c.width, H = c.height, k = W / c.clientWidth;
       const img = ctx.getImageData(0, 0, W, H).data;
-      const isFill = (i) => Math.abs(img[i] - 179) < 14 && Math.abs(img[i + 1] - 212) < 14 && Math.abs(img[i + 2] - 179) < 14;
+      // Ljusgrön fyllning, eller mörkgrön kant när staplarna blir så smala att bara kanten ritas.
+      const isFill = (i) => (Math.abs(img[i] - 179) < 14 && Math.abs(img[i + 1] - 212) < 14 && Math.abs(img[i + 2] - 179) < 14)
+        || (img[i] < 60 && img[i + 1] > 70 && img[i + 1] < 160 && img[i + 2] < 60 && img[i + 3] > 200);
       const tops = new Array(W).fill(-1);
       for (let x = 0; x < W; x++) for (let y = 0; y < H; y++) if (isFill((y * W + x) * 4)) { tops[x] = y; break; }
       const runs = [];
@@ -218,7 +220,7 @@ async function highestBars(page) {
         const r = runs[runs.length - 1];
         if (r && r.x1 === x - 1) { r.x1 = x; r.top = Math.min(r.top, tops[x]); } else runs.push({ x0: x, x1: x, top: tops[x] });
       }
-      const good = runs.filter((r) => r.x1 - r.x0 > 4);
+      const good = runs.filter((r) => r.x1 - r.x0 >= 1);
       if (!good.length) continue;
       const minTop = Math.min(...good.map((r) => r.top));
       let bottom = 0;
@@ -428,7 +430,8 @@ async function jobSteps(page, outDir, j, log) {
     for (let k = 0; k < 8 && !bars.length; k++) { await page.waitForTimeout(800); bars = await highestBars(page); }
     if (!bars.length) { await shoot(page, path.join(outDir, `DEBUG-${j.slug}-stolp.png`), { x: 0, y: 0, w: VIEW.width, h: VIEW.height }); throw new Error(`${j.slug}: hittade inga staplar i stolpdiagrammet`); }
     await annotate(page, [{ ...sb, label: 'Välj Stolpdiagram', side: 'right', dx: 66, pad: 2, fs: 22, bw: 5 },
-      ...bars.map((r, i) => ({ ...r, pad: 5, bw: 6, fs: 26, label: i === 0 ? 'Högst stapel' : '', side: 'above' }))]);
+      ...bars.map((r, i) => ({ ...r, pad: r.w < 8 ? 9 : 5, bw: r.w < 8 ? 3 : 6, fs: 26,
+        label: i === 0 ? (bars.length > 1 ? 'Högsta staplarna' : 'Högst stapel') : '', side: 'above' }))]);
     await shoot(page, path.join(outDir, `geogebra-${j.slug}-stolp.png`), { x: 200, y: 50, w: 900, h: 610 });
     await clearAnn(page);
     await sel.selectOption({ label: 'Histogram' });
