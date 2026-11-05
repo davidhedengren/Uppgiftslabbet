@@ -3341,3 +3341,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: jämförelser och frekvenser, femte tabellomgången
 
 [Ma2 4.349–4.353](MA2_STATISTIK_GEOGEBRA_TABELLER5_2026-11-05.md): 4.349–351 har självständiga GeoGebra-steg i alla delkort, med korrekta frekvenser och Sx. I 4.352–353 ges färdiga percentiler och de efterfrågade svaren kan läsas och beräknas direkt utan påhittade rådata. Test: `tools/ma2-geogebra-tabellserie5-2026-11-05.test.js`.
+
+## 5 november: jämförelser med och utan en observation
+
+[Ma2 4.241, 4.299 och 4.302](MA2_STATISTIK_GEOGEBRA_JAMFORELSE_2026-11-05.md): visa varje datamaterial och dess avläsning på raden s i GeoGebra. 4.299 d använder Beas fem kvarvarande tider och Sx ≈ 0,62. 4.302 behåller undantaget att en redan noll standardavvikelse förblir noll. Tidigare Sx-svarsnycklar och ordnade fält bevaras. Test: `tools/ma2-geogebra-sx-jamforelse-2026-11-05.test.js`.
