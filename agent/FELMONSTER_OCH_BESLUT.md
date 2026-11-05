@@ -3357,3 +3357,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: normalfördelning och avrundade tumregler
 
 [Ma2 4.2042–4.2044, 4.2047, 4.2049–4.2051](MA2_NORMALFORDELNING_PRECISION_2026-11-05.md): avrundade normalfördelningsandelar får inte behandlas som exakta när frågan anger ett exakt procentvillkor. 4.2044 ger cirka 27 flaskor; tidigare 26 godtas som ungefärligt. 4.2051:s gräns för 2,2 % är σ ≈ 4,965, medan σ = 5 ger cirka 2,275 %; både 4,97 och avrundat 5 godtas. 4.2043 godtar både tidigare heltalsgränser och GeoGebras precisare värden. 4.2050 anger inte Omars fördelning och får inte påstå en viss percentil. Detta preciserar de tidigare tumreglerna i `MA2_STATISTIK_S1_2026-10-25.md`. Test: `tools/ma2-normalfordelning-precision-2026-11-05.test.js` och verklig rättning i Kunskapsgymmet.
+
+## 5 november: tolka normalfördelningsområden i GeoGebra
+
+[Ma2 4.2120–4.2125](MA2_NORMALFORDELNING_TOLKA_2026-11-05.md): ange parametrar, val av vänster-/högerområde eller intervall och vilket fält som ska användas. En sökt gräns fås genom att mata in sannolikheten efter likhetstecknet och läsa av X-gränsen. Ett antal från en sannolikhetsmodell är en uppskattning. Test: `tools/ma2-normalfordelning-tolka-2026-11-05.test.js`.
