@@ -3309,3 +3309,7 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: fler konkreta GeoGebra-avläsningar
 
 [Ma2 4.81, 4.89, 4.116, 4.117, 4.151, 4.152, 4.178 och 4.2086](MA2_NORMALFORDELNING_YTTERLIGARE_2026-11-05.md) visar konkreta parametrar och fält i sannolikhetskalkylatorn. I 4.178 används sannolikheten cirka 0,0668 från skola A som högerarea för skola B före avrundning; gränsen är cirka 97 poäng. Delkort för 4.116, 4.117 och 4.151 har egna steg utan facitläckage. Test: `tools/ma2-normalfordelning-ytterligare-2026-11-05.test.js`.
+
+## 5 november: mittersta andelar och precis avrundning
+
+[Ma2 4.38, 4.176, 4.177, 4.216, 4.231 och 4.44](MA2_NORMALFORDELNING_MITTEN_2026-11-05.md): en andel i ett intervall räcker inte för att entydigt bestämma båda gränserna; ange att de mittersta värdena söks. Facit visar GeoGebras vänsterareor och tolerans 0,1 godtar både tidigare heltalsgränser och verktygets precisare värden. 4.44:s tidigare 654,4 avrundades felaktigt till 655; GeoGebras andel 0,8186 ger cirka 654,9 och därmed 655 kattungar. Svarsnycklarna bevaras. Banktest: `tools/ma2-normalfordelning-mitten-2026-11-05.test.js`; rättningsmotorn testas i Kunskapsgymmet.
