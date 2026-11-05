@@ -3413,3 +3413,6 @@ Användaren vill minska mängden uppgifter som enbart söker längdskala och hel
 ## 5 november: ytterligare gränser och andelar i GeoGebra
 
 [Ma2 4.122, 4.155, 4.181, 4.184, 4.196, 4.214, 4.232, 4.251 och 4.252](MA2_NORMALFORDELNING_GRUND2_2026-11-05.md): visa område och avläsning i GeoGebra. 4.251 och 4.252 godtar både tidigare heltalsgränser och mer precisa värden; 4.252:s 97,72 % ger cirka 165,99. 4.196 och 4.214 var redan korrekta direktberäkningar. Test: `tools/ma2-normalfordelning-grund2-2026-11-05.test.js` och konsumentens rättningstest.
+
+### 2026-11-05: Lägesmått med GeoGebra
+För tabeller och frekvensdiagram ska facit visa hur varje observation matas in och hur medelvärde och median läses i envariabelanalysen. För typvärde kan högsta stapeln användas. En huvudfråga utan delfrågor får ett samlat facit även om träningsläget delar upp svaret; separata kort ska ha fristående lösningar. Granskade exempel och kontrollvärden finns i `MA2_STATISTIK_GEOGEBRA_LAGESMATT_2026-11-05.md`.
