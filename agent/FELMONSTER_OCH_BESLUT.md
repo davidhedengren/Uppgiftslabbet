@@ -3502,3 +3502,12 @@ Kravet gäller **bara** dessa uppgifter (användarens fråga 2026-11-06). Andra 
 inte vara förkortade. Byt inte äldre uppgifter till formatet utan granskning.
 Skydd: `KG_TEST_MA4_SVAR` i Kunskapsgymmet (`tools/kg-sjalvtester.cjs`) och
 `tools/ma3c-kap1-mangdtraning3-2026-11-06.test.js`.
+
+## Ma1 kapitel 1: mängdträning i algebra, 2026-11-06
+
+[52 uppgifter / 120 kort](MA1_KAP1_MANGDTRANING_2026-11-06.md), #1.1623–1.1674, fyller de tunnaste
+algebraområdena som undervisas nu: ekvationer, förenkling, multiplikation, värdet av uttryck och formler.
+Upplägget är detsamma som i kapitel 0: 1–4 delar med stigande träningsnivå. Ekvationsfacit avslutas med
+en kontroll VL = HL. Faktorisering och mönster tas i egna omgångar. Formatet `faktoriserat` kräver inte
+största gemensamma faktor, så bygg inte enfältsdrill i faktorisering med det formatet. Skydd:
+`tools/ma1-kap1-mangdtraning-2026-11-06.test.js` i båda repona.

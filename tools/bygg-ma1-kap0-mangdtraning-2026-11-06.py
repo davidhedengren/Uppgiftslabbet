@@ -167,7 +167,7 @@ def varde(tr):
 
 def parentes(op, foralder, sida):
     """Skrivs deluttrycket med operationen op inom parentes under föräldern?"""
-    if foralder is None or op is ast.USub:
+    if foralder is None or op is ast.USub or (BRAKSTRECK[0] and foralder is ast.Div):
         return False
     pf, p = PREC[foralder], PREC[op]
     return p < pf or (p == pf and sida == 'h' and foralder in (ast.Sub, ast.Div)) or (foralder is ast.Pow and sida == 'v')
@@ -215,6 +215,8 @@ def stegtext(nod, foralder, sida, ip=False):
     if op is ast.Pow:
         upprepad = '\\cdot '.join([P(a)] * int(b))
         regel, kalk = 'potensen först', f'\\({P(a)}^{{{T(b)}}}={upprepad}={T(r)}\\)'
+    elif BRAKSTRECK[0] and foralder is ast.Div:   # bråkstreck i stället för parentes (kapitel 1)
+        return f'{"Räkna ut täljaren" if sida == "v" else "Räkna ut nämnaren"}: {kalk}{teckenregel}', r
     elif hel_parentes:
         return f'Parentesen först: {kalk}{teckenregel}', r
     elif op in (ast.Mult, ast.Div) and foralder in (ast.Add, ast.Sub):
@@ -308,9 +310,9 @@ def svarstext(x, enhet=''):
 
 
 # ------------------------------------------------------------------ deltyper
-def del_uttryck(uttr, bratal='frac', ledtrad=None):
-    """Ett räkneuttryck: facit med ett steg per operation i rätt ordning."""
-    BRAKSTRECK[0] = False
+def del_uttryck(uttr, bratal='frac', ledtrad=None, brakstreck=False):
+    """Ett räkneuttryck: facit med ett steg per operation i rätt ordning. brakstreck: division skrivs som bråk."""
+    BRAKSTRECK[0] = brakstreck
     tr = bygg(ast.parse(uttr, mode='eval'), bratal)
     markera_forsta(tr)
     fraga = tex(tr)
