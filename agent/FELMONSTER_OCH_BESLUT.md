@@ -3480,3 +3480,14 @@ Knapparna xⁿ och ·10ⁿ i Kunskapsgymmet skriver `^()`. Varje strikt svarsfor
 [42 granskade, 28 åtgärdade, alla ID:n och kommentarstexter](SAKNAT_UNDERLAG_2026-11-06.md).
 27 alternativberoende frågor får `visaAlternativ: true`. Ordet ”alternativ” räcker inte alltid: givna påståenden A/B kan felaktigt tolkas som en redan utskriven lista. Flaggan går före denna heuristik men efter skydden mot tomma och rena bokstavslistor. Använd bara efter manuell kontroll; öppna frågor ska förbli öppna.
 Fy1 3.32 behöver uttryckligen konstant acceleration under fartökning och inbromsning för facits räta linjer och 120 m. Matf1 4.513 får relevant ledtråd och räknare; tidigare kontroll av differentialekvation på intervall bevaras. Skydd: `saknat-underlag-2026-11-06.test.js` och motsvarande webbläsartest.
+
+## Ma1 kapitel 0: mängdträning med 1–4 delar i stigande svårighet, 2026-11-06
+
+[86 uppgifter / 208 kort](MA1_KAP0_MANGDTRANING_2026-11-06.md), #0.1302–0.1387, plus felrapport 08:31.
+Mängdträning i kapitel 0 är vanliga beräkningar, ibland en uppgift och ibland a)–d), där a) är
+enklast och varje del har en egen `traningsniva` i stigande ordning. Bygg inte alla flerdelade
+uppgifter som tre likvärdiga delar (rapport 0.02, som nu är a)–d) med nivå 1, 2, 2, 3).
+”Strikt” används inte i Ma1-banken: skriv **mellan** i fetstil i frågor och vanligt ”mellan”
+i facit (rapport 0.125). ”Strikt växande” i Ma3–Ma5 är kvar. Elevexempel med fel räkneordning
+visar elevens mellanresultat (−7·(−5)), inte en parentes som eleven aldrig skrev (rapport 0.62).
+Skydd: `tools/ma1-kap0-mangdtraning-2026-11-06.test.js` i båda repona.
