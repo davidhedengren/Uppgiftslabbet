@@ -24,7 +24,11 @@ VARIANTER = {}  # kort-id -> {"ratt": [...], "fel": [...]} för tools/kg-sjalvra
 # ---------------------------------------------------------------- formattering
 def tal(v):
     """Tal med decimalkomma, utan onödiga decimaler."""
-    v = Fraction(v).limit_denominator(1000)
+    try:
+        v = Fraction(v)
+    except TypeError:
+        v = Fraction(str(v))  # sympys Rational och Integer
+    v = v.limit_denominator(1000)
     if v.denominator == 1:
         return str(v.numerator).replace('-', '−')
     return f'{float(v):g}'.replace('.', ',').replace('-', '−')
@@ -544,7 +548,7 @@ def faktorisera(nr):
 
 
 # ---------------------------------------------------------------- område 4: polynomekvationer
-def graf(e, rotter, beskrivning):
+def graf(e, rotter, beskrivning, punkter=()):
     """SVG av y = p(x) med nollställena markerade (grafisk lösning)."""
     import math
     W, H, ml, mr_, mt_, mb = 400, 250, 34, 14, 14, 30
@@ -555,7 +559,7 @@ def graf(e, rotter, beskrivning):
     ys = [float(f(v)) for v in xs]
     # Skala efter kurvan mellan (och strax utanför) nollställena, så att extrempunkterna syns.
     inre = [abs(float(f(min(rotter) - 0.4 + (max(rotter) - min(rotter) + 0.8) * i / 200))) for i in range(201)]
-    ymax = max(2.0, max(inre) * 1.25)
+    ymax = max(2.0, max(inre) * 1.25, *[abs(py) * 1.3 for _, py, _ in punkter])
     steg_y = [1, 2, 5, 10, 20, 50, 100, 200, 500]
     sy = next(v for v in steg_y if ymax / v <= 4)
     ymax = sy * math.ceil(ymax / sy)
@@ -589,6 +593,11 @@ def graf(e, rotter, beskrivning):
         out.append(f'<circle cx="{X(r):.1f}" cy="{Y(0):.1f}" r="5" fill="#b25c17" stroke="#fff" stroke-width="1.5"/>')
         out.append(f'<text x="{X(r):.1f}" y="{ty:.1f}" font-size="14" font-weight="bold" text-anchor="middle" fill="#b25c17" '
                    f'stroke="#fff" stroke-width="3" paint-order="stroke">{tal(r)}</text>')
+    for px, py, etikett in punkter:
+        out.append(f'<circle cx="{X(px):.1f}" cy="{Y(py):.1f}" r="5" fill="#2f7d32" stroke="#fff" stroke-width="1.5"/>')
+        dy = -10 if py >= 0 else 20
+        out.append(f'<text x="{X(px):.1f}" y="{Y(py)+dy:.1f}" font-size="13" font-weight="bold" text-anchor="middle" fill="#2f7d32" '
+                   f'stroke="#fff" stroke-width="3" paint-order="stroke">{etikett}</text>')
     out.append(f'<text x="{W-mr_:.1f}" y="{Y(0)-6:.1f}" font-size="13" text-anchor="end" fill="{ink}">x</text>')
     return (f'<span class="fig"><svg viewBox="0 0 {W} {H}" width="100%" style="max-width:400px;height:auto" role="img" '
             f'aria-label="{beskrivning}" xmlns="http://www.w3.org/2000/svg">' + ''.join(out) + '</svg></span>')
