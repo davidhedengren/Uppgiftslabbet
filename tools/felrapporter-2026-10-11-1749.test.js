@@ -6,12 +6,12 @@ const mean=v=>v.reduce((a,b)=>a+b,0)/v.length,sd=(v,sample=true)=>Math.sqrt(v.re
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
 test('Temperaturstickprovet använder n−1, Sx och korrekt tvådecimalsrättning',()=>{
  const t=ma('5.94'),v=[20.8,21.2,21,21.4,20.6];close(t.rättSvar[0],mean(v));close(t.rättSvar[1],sd(v,true));
- assert.match(t.t,/stickprov/);assert.match(t.t,/Sx/);assert.match(t.s,/0\{,\}40/);assert.match(t.s,/0\{,\}32/);
+ assert.match(t.t,/stickprov/);assert.match(t.t,/Sx/);/* GeoGebra-facit utan formel sedan 2026-11-05: s-raden 0.3162 och svaret 0,32. */assert.match(t.s,/0\.3162/);assert.match(t.s,/Sx ≈ 0,32/);
  assert.ok(Math.abs(.32-t.rättSvar[1])<=t.tolerans[1]);assert.ok(Math.abs(.28-t.rättSvar[1])>t.tolerans[1]);
 });
 test('Rumstemperaturernas s-beteckningar motsvarar verkligen Sx',()=>{
  const t=ma('5.71');close(t.rättSvar[1],sd([20,21,22,21,21],true));close(t.rättSvar[3],sd([19,21,23,21,21],true));
- assert.match(t.t,/Sx/);assert.match(t.s,/0\{,\}71/);assert.match(t.s,/1\{,\}41/);
+ assert.match(t.t,/Sx/);assert.match(t.s,/Sx ≈ 0,71/);assert.match(t.s,/Sx ≈ 1,41/);
 });
 test('Statistikuppgifter anger vilket spridningsmått som beräknas',()=>{
  for(const id of ['5.66','5.110','4.299'])assert.match(ma(id).t,/Sx/,id);
@@ -22,7 +22,7 @@ test('Statistikuppgifter anger vilket spridningsmått som beräknas',()=>{
 });
 test('Golfstickprovets intervall använder Sx och innehåller fortfarande nio slagantal',()=>{
  const t=ma('4.306'),v=[276,279,279,277,278,278,280,282,285,272,279,278],m=mean(v),s=sd(v,true);
- assert.match(t.t,/Sx/);assert.match(t.spelDelar[0].fraga,/Sx/);assert.match(t.s,/275,44–281,73/);
+ assert.match(t.t,/Sx/);assert.match(t.spelDelar[0].fraga,/Sx/);assert.match(t.s,/275\{,\}44\\lesssim x\\lesssim281\{,\}73/);
  assert.equal(v.filter(x=>x>=m-s&&x<=m+s).length,9);assert.equal(t.rättSvar[0],9/12*100);
 });
 test('Värmekurvans variabler och enheter är definierade med oförändrat svar',()=>{

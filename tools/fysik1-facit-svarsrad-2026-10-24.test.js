@@ -41,14 +41,15 @@ test('Runda 3: svarsrutans tal stämmer med självrättningen',()=>{
   assert.ok(Math.abs(v-t.rättSvar)<=Math.max(tol,steg*5),`${t.id}: ${s[0]} mot ${t.rättSvar}`);
  }
  assert.ok(n>=590,`kontrollerade svarsrutor: ${n}`);
- assert.equal(svar(q('2.210').s)[0],'\\(3{,}50\\cdot10^{-4}\\) A.');
- assert.equal(svar(q('4.77').s)[0],'\\(48{,}6\\)°.');
+ // 2.210 och 2.2 följer sedan 2026-11-04 FACITMALL och svarVardesiffror (2.2: två värdesiffror från 2,0 cm och 84 g).
+ assert.equal(svar(q('2.210').s)[0],'\\(0{,}000350\\ \\mathrm A\\).');
+ assert.equal(svar(q('4.77').s)[0],'48,6°.');
  assert.equal(svar(q('7.227').s)[0],'Värmestrålning.');
 });
 
 test('Runda 4: flerdelsfacit har en svarsruta per del, och talen stämmer med delens rättSvar',()=>{
  // 2.2: 84 g på 2³ cm³ ger 10,5 g/cm³; dubbel sida ger 8·84 g.
- assert.equal(84/2**3,10.5);assert.deepEqual(svar(q('2.2').s),['\\(10{,}5\\) g/cm³.','\\(672\\) g.']);
+ assert.equal(84/2**3,10.5);assert.deepEqual(svar(q('2.2').s),['\\(11\\ \\mathrm{g/cm^3}\\).','\\(6{,}7\\cdot10^2\\ \\mathrm g\\).']);
  assert.equal(svar(q('8.60').s).length,3);
  let n=0;
  for(const t of bank){

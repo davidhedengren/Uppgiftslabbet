@@ -52,3 +52,18 @@ Svepet kör `delSvarRatt` på alla 14 564 kort med ett talsvar i de sju bankerna
 - **Ma5:** linjär approximation och Eulers metod ska räknas för hand.
 - **Ma3c 4.574** ger cos 40° ≈ 0,766.
 - **Ma4 1.672, 2.580, 3.521, 2.562 och 4.582** frågar efter svaret ”exakt eller med tre decimaler”. Rättningen godtar 2√2, 13/16 och 4/3. Inga ändringar behövs.
+
+## 4. Röda regressionstester för tidigare felrapporter
+
+En körning av alla 354 testfiler gav nio röda tester. Två av dem visade verkliga brister i facit:
+
+- **Ma1 5.681** (korrelation vid enhetsbyte) hade tre lösa stycken i stället för steglista. Facit är nu en steglista med tre uppgiftsspecifika rubriker. Det sista steget anger regeln att r inte ändras när en variabel multipliceras med ett positivt tal. Beslutet 2026-11-03 är bevarat: diagrammet *kan* se annorlunda ut med olika skalfaktorer. Förklaringen räknar i antal standardavvikelser, som testet `ma1-korrelation-enheter` kräver.
+- **Ma2 4.302 b** förklarade efter GeoGebra-omskrivningen bara att ”GeoGebra visar att spridningen minskar”. Nu förklarar facit utan formel varför Sx minskar: det nya talet har avståndet 0 till medelvärdet, och de gamla avstånden är oförändrade men fördelas på fler värden. Skrivningen om noll spridning finns kvar.
+
+De övriga sju testerna var föråldrade av senare dokumenterade beslut. Bara deras förväntade text har uppdaterats, och de numeriska kontrollerna är kvar:
+
+- Fysikfacit enligt `FACITMALL.md`, som är standard sedan 2026-11-04. Det gäller Fy1-områdena kopplingar, parallellkoppling, seriekoppling och stråldoser, samt Fy2 3.516–3.531.
+- Fy1 svarsrader enligt `svarVardesiffror`: 2.2 visar 11 g/cm³ och 6,7·10² g (två värdesiffror från 2,0 cm och 84 g), 2.210 visar 0,000350 A och 4.77 visar 48,6°.
+- Ma2-statistik med GeoGebra och utan formel (2026-11-05): 5.94, 5.71 och 4.306 har värdena kvar i ny form, och 4.117 b förklarar 90:e percentilen som att 90 % ligger under gränsen.
+
+Alla nio tester och de tester som rör 4.302 och 5.681 passerar. Valideraren ger inga fel för Ma1 och Ma2. Båda facit renderas i mobilbredd utan fel.
