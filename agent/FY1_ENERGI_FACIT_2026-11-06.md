@@ -20,7 +20,7 @@ Regressionstest: `tools/fysik1-rorelse-facit-2026-11-04.test.js` (listan `FÄRDI
 | rorelseenergi | 113 | 113 |
 | blandat_energi | 72 | 72 |
 
-## Omgång 1: arbete (108 uppgifter, 145 delfacit)
+## Omgång 1: arbete (108 uppgifter, 104 delfacit)
 
 - Formelrubriker:
   - ”Arbete: \(W=Fs\)” (lös ut F respektive s) och ”Arbete med sned kraft: \(W=Fs\cos\alpha\)”. Med α = 180° visas tecknet för bromsande krafter och med α = 90° att en vinkelrät kraft inte gör något arbete.
@@ -32,3 +32,19 @@ Regressionstest: `tools/fysik1-rorelse-facit-2026-11-04.test.js` (listan `FÄRDI
 - 4.40 och 4.345 har tre delfrågor i frågetexten, och faciten har nu också tre delar.
 - 5.23 a och 5.234 har fått en uträkningsrad som leder fram till svaret.
 - Inga räknefel. Alla 108 svar är omräknade. Inga `rättSvar`, toleranser eller frågetexter är ändrade.
+
+## Omgång 2: effekt (116 uppgifter, 129 delfacit)
+
+- Formelrubriker:
+  - ”Effekt: \(P=\dfrac{W}{t}\)” och ”Energi: \(E=Pt\)”, där tiden löses ut när den söks;
+  - ”Effekt vid konstant fart: \(P=Fv\)” och ”Drivkraft: \(F=\dfrac{P}{v}\)”;
+  - ”Verkningsgrad: \(\eta=\dfrac{P_{\text{nyttig}}}{P_{\text{tillförd}}}\)” och motsvarande för energi;
+  - ”Massa per sekund: \(\dfrac{m}{t}=\rho\cdot\dfrac{V}{t}\)” för pumpar, vattenkraft och vind;
+  - enhetsbyten som egna steg: kWh, hk = 735,5 W, kcal = 4186 J och km/h;
+  - backar med ”Tyngdkraftens komposant längs backen” och ”Newtons andra lag”.
+- Andragradsekvationer löses grafiskt enligt FACITMALL 4. Uppgifterna 5.582 b och 5.585 har en SVG-graf med avläst skärningspunkt, och lösningsformeln står som alternativ. Båda har nu `geogebra: true`.
+- Svar i hela tal, alltså antal steg, lyft, verk och personer samt lastmassan i 5.272, slutar med en rad som visar det avrundade värdet och åt vilket håll det avrundas.
+- GY25-FY1-EN-02 har två delfrågor i frågetexten, och facit har nu också två delar.
+- Inga räknefel. Alla 116 svar är omräknade. Inga `rättSvar`, toleranser eller frågetexter är ändrade.
+- `tools/fysik1-effekt-variation-2026-10-21.test.js` kräver nu steglistan i stället för att förbjuda den.
+- 5.575 a: svarsraden visar 30,0 N (tre värdesiffror), som `tools/felrapporter-2026-10-11-1749.test.js` kräver.

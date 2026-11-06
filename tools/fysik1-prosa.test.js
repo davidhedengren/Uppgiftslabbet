@@ -16,7 +16,7 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
   // Kapitel 4 (agent/FY1_KRAFT_FACIT_2026-11-04.md)
   'newton1','newton2','newton3','tyngdkraft','normalkraft','gravitation','fjadrar','friktion','lutande_plan','moment','blandat_kraft',
   // Kapitel 5 (agent/FY1_ENERGI_FACIT_2026-11-06.md)
-  'arbete',
+  'arbete','effekt',
   // Kapitel 8–9: kopplingar och stråldoser skrevs om enligt agent/FACITMALL.md (svep 2026-11-06, agent/FELLOGGSMONSTER_SVEP_2026-11-06.md).
   'kopplingar','parallellkoppling','seriekoppling','straldoser'];
  visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
