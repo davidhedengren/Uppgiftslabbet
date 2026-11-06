@@ -3532,4 +3532,5 @@ Skydd: `KG_TEST_STORSTA_FAKTOR`, `tools/storsta-faktor-2026-11-06.browser.cjs` (
 Frågetexterna i `normalfordelning_digitala_verktyg` säger inte ”Använd GeoGebra” eller ”med GeoGebra”.
 Facit och ledtrådar får visa GeoGebra-metoden, och `geogebra: true` står kvar. Frågor där GeoGebra är själva
 ämnet behålls (vilka värden som ska skrivas in, tolka en GeoGebra-uträkning, beskriv metoden i GeoGebra).
-Övriga Ma2-områden är oförändrade tills läraren har tagit ställning. Skydd: `tools/ma2-felrapporter-2026-11-06-1000.test.js`.
+Samma dag utvidgat till hela Ma2 (65 uppgifter till): har en uppgift `geogebra: true` ska eleven själv förstå
+att GeoGebra ska användas. Skriv alltså inte ”Använd GeoGebra” eller ”med GeoGebra” i nya Ma2-frågor. ”Använd Sx” får stå. Skydd: `tools/ma2-felrapporter-2026-11-06-1000.test.js`.
