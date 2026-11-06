@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "4-257-mitt",
+    "mu": 5.95,
+    "sigma": 0.05,
+    "lo": 5.85,
+    "hi": 6.05,
+    "selected": "Intervall",
+    "version": "5.4.916.2",
+    "parameters": "5.95,0.05",
+    "low": "5.85",
+    "high": "6.05",
+    "mode": "0",
+    "value": "0.9545",
+    "box": {
+      "x": 297.25,
+      "y": 643.5,
+      "w": 48.9375,
+      "h": 36
+    }
+  },
+  {
+    "slug": "ma2-4-2148-lag",
+    "mu": 50,
+    "sigma": 2,
+    "lo": 48,
+    "hi": 56,
+    "selected": "Intervall",
+    "version": "5.4.916.2",
+    "parameters": "50,2",
+    "low": "48",
+    "high": "56",
+    "mode": "0",
+    "value": "0.84",
+    "box": {
+      "x": 297.25,
+      "y": 643.5,
+      "w": 31.140625,
+      "h": 36
+    }
+  },
+  {
+    "slug": "ma2-4-2148-hog",
+    "mu": 54,
+    "sigma": 2,
+    "lo": 48,
+    "hi": 56,
+    "selected": "Intervall",
+    "version": "5.4.916.2",
+    "parameters": "54,2",
+    "low": "48",
+    "high": "56",
+    "mode": "0",
+    "value": "0.84",
+    "box": {
+      "x": 297.25,
+      "y": 643.5,
+      "w": 31.140625,
+      "h": 36
+    }
+  },
+  {
+    "slug": "ma2-4-2149",
+    "mu": 210,
+    "sigma": 10,
+    "lo": 190,
+    "hi": 220,
+    "selected": "Intervall",
+    "version": "5.4.916.2",
+    "parameters": "210,10",
+    "low": "190",
+    "high": "220",
+    "mode": "0",
+    "value": "0.8186",
+    "box": {
+      "x": 297.25,
+      "y": 643.5,
+      "w": 48.9375,
+      "h": 36
+    }
+  },
+  {
+    "slug": "ma2-4-2150",
+    "mu": 495,
+    "sigma": 5,
+    "lo": 490,
+    "hi": 510,
+    "selected": "Intervall",
+    "version": "5.4.916.2",
+    "parameters": "495,5",
+    "low": "490",
+    "high": "510",
+    "mode": "0",
+    "value": "0.84",
+    "box": {
+      "x": 297.25,
+      "y": 643.5,
+      "w": 31.140625,
+      "h": 36
+    }
+  },
+  {
+    "slug": "ma2-4-2151",
+    "mu": 27,
+    "sigma": 2,
+    "lo": 23,
+    "hi": 29,
+    "selected": "Intervallkomplement",
+    "version": "5.4.916.2",
+    "parameters": "27,2",
+    "low": "23",
+    "high": "29",
+    "mode": "3",
+    "value": "0.1814",
+    "box": {
+      "x": 501.84375,
+      "y": 643.5,
+      "w": 48.9375,
+      "h": 36
+    }
+  }
+]

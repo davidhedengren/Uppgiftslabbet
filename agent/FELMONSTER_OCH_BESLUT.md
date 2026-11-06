@@ -3543,3 +3543,7 @@ Eleven skrev att svaret var rätt avrundat, men rapporten innehåller inte själ
 Facit och uppgiften är oförändrade. Kunskapsgymmet godtar nu ca, cirka, ungefär, omkring och runt före talet. Jämförelseord
 (under, över, högst, minst, mindre/mer än …) godtas bara när samma ord står i frågan. Talet rättas som vanligt.
 ”gr” godtas inte som gram, eftersom det betyder grader i Kunskapsgymmet. Skydd: `KG_TEST_MA4_SVAR`.
+
+## Ma2: okänt medelvärde får inte bara gissas, 2026-11-06
+
+[4.257 och fyra nya uppgifter 4.2148–4.2151](MA2_MEDELVARDEN_2026-11-06.md). Visa intervallets bredd i standardavvikelser och procentbanden som motiverar placeringen innan ett medelvärde matas in i GeoGebra. Alternativ numerisk sökning börjar i intervallets mitt och motiverar riktningen. Bevara symmetrin, villkor som väljer spegelplacering och skillnaden mellan nytt medelvärde och sänkning. Procentbanden är avrundade; låt inte 81,85/81,86 % bli ett falskt facitfel. 4.257 kräver två decimaler eftersom fri heltalsavrundning annars godtar den andra lösningen 6. Sex nya bilder från riktig GeoGebra, utan urklippsåtkomst. Uppgiftslabbets lokala bankbilder löses mot `APP_ROOT` även efter kursadressbyte. Skydd: `tools/ma2-medelvarden-2026-11-06.test.js` och `.browser.cjs`. Den nya författarkällan gäller framför äldre generatorer för 4.257.

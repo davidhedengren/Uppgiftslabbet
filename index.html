@@ -6640,8 +6640,14 @@ function altVisas(x){
   return !alt.every(a=>ren(t).includes(ren(a?.txt)));
 }
 const altBokstav=i=>String.fromCharCode(65+i);
+/* Kursens rena adress (/ma2/) får inte ändra basen för bankens bilder.
+   Lös bara lokala bildreferenser; externa bilder och data-URL:er bevaras. */
+function bankBildadresser(html){
+  return String(html||'').replace(/(<img\b[^>]*?\bsrc\s*=\s*)(["'])(?:\.\/)?bilder\/([^"']+)\2/gi,
+    (_,prefix,quote,file)=>prefix+quote+APP_ROOT+'bilder/'+file+quote);
+}
 function uppgiftsText(x){
-  const t=x?.t||'';
+  const t=bankBildadresser(x?.t||'');
   if(!altVisas(x)) return t;
   return t+x.alternativ.map((a,i)=>`<p class="ul-alt"><strong>${altBokstav(i)}.</strong> ${a.txt}</p>`).join('');
 }
@@ -6653,6 +6659,7 @@ function altFacit(x){
 
 function LOS(html){
   if(!html) return '';
+  html=bankBildadresser(html);
   /* Den nya bankstrukturen har redan delbokstäver och lösningssteg.
      Behåll listorna även i dokument, PDF och Word. */
   if(/class=["'][^"']*\bfacit-stegvis\b/.test(html)) return html;
@@ -6798,7 +6805,7 @@ const BANK_VERSION=(()=>{
   const d=new Date(document.lastModified);
   if(Number.isNaN(d.getTime())) return 'auto';
   const två=n=>String(n).padStart(2,'0');
-  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-ma1-ekvationsproblem-2026-11-06`;
+  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-ma2-medelvarden-2026-11-06`;
 })();
 const skriptLöften=new Map();
 function laddaSkript(src){
