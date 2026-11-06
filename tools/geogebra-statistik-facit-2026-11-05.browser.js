@@ -22,7 +22,7 @@ for (let k = 0; k < rest.length; k++) {
 }
 const bredd = +(process.env.BREDD || 390);
 const kd = path.join(process.env.KATEX, 'dist');
-const src = fs.readFileSync(path.join(root, 'uppgifterma2.js'), 'utf8');
+const src = fs.readFileSync(path.join(root, process.env.BANK || 'uppgifterma2.js'), 'utf8');
 const bank = JSON.parse(src.slice(src.indexOf('['), src.lastIndexOf(']') + 1));
 const by = Object.fromEntries(bank.map((u) => [u.id, u]));
 const html = fs.readFileSync(path.join(cssFrom, 'index.html'), 'utf8');
@@ -54,7 +54,7 @@ html,body{height:auto!important;overflow:visible!important}body{display:block;pa
         broken: [...document.images].filter((i) => !i.naturalWidth).map((i) => i.getAttribute('src')),
         imgs: document.images.length,
         pageOverflow: document.documentElement.scrollWidth > innerWidth + 3,
-        wide: [...document.querySelectorAll('.facit-matte,.facit-rubrik,.facit-svar,img')].filter((x) => x.getBoundingClientRect().right > innerWidth + 1 || x.scrollWidth > x.clientWidth + 3).map((x) => x.className || x.getAttribute('src')),
+        wide: [...document.querySelectorAll('.facit-matte,.facit-rubrik,.facit-svar,img,.katex-display')].filter((x) => x.getBoundingClientRect().right > innerWidth + 1 || x.scrollWidth > x.clientWidth + 3).map((x) => (x.className === 'katex-display' ? 'katex: ' + (x.querySelector('annotation')?.textContent || '').slice(0, 90) : x.className || x.getAttribute('src'))),
       }));
       antal++;
       if (r.kerr || r.broken.length || r.pageOverflow || r.wide.length || !r.imgs) fel.push({ facit: namn, ...r });
