@@ -91,7 +91,8 @@ Alla facit, i alla banker, skrivs enligt **`agent/FACITMALL.md`**. Kortfattat:
 - **formeln eller regeln står alltid utskriven** i en rubrik, till exempel ”Tidlösa formeln: \(v^2=v_0^2+2as\)” eller ”Kvadreringsregeln: …”, aldrig bara i ord;
 - fysik inleds med ”Givet och sökt” (tecken, positiv riktning, omvandlade enheter);
 - insättning med enheter, därefter en svarsrad som stämmer med `rättSvar`;
-- **andragradsekvationer löses grafiskt** i facit med SVG-graf och avläst skärningspunkt, och lösningsformeln står som alternativ (`geogebra: true`);
+- **andragradsekvationer löses grafiskt** i facit med SVG-graf och avläst skärningspunkt, och pq-formeln står som alternativ (`geogebra: true`);
+- **pq-formeln, aldrig abc-formeln**, i alla kurser och banker, även fysik (användarbeslut 2026-11-06): normalform x² + px + q = 0 först;
 - delfacit avslöjar inte senare delars svar, och långa rader bryts för mobil.
 
 Förebilder: Fy1 `konstacc` (3.4–3.448) och Ma1 1.116. Mallen ersätter tidigare formuleringar om ”sammanhängande fysiklösning utan steglista”. Äldre facit görs om efter hand, område för område.
@@ -155,7 +156,7 @@ som skrivs om.
   ”Lös ut … och sätt in” → svarsrad.
 - **Andragradsekvationer löses grafiskt** i Fy1 och ska alltid ha en grafisk
   lösning i facit: rita \(s(t)\)/\(h(t)\) och den vågräta linjen (eller
-  t-axeln) som SVG, markera och läs av skärningspunkten. Lösningsformeln får
+  t-axeln) som SVG, markera och läs av skärningspunkten. pq-formeln får
   stå kvar som ”Alternativ”. Sådana uppgifter får `geogebra: true`.
 - Delfacit får fortfarande inte avslöja svaret på en senare del (se
   `agent/DELKEDJOR_OCH_FACIT_2026-11-01.md`). Välj hellre en formel som inte

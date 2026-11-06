@@ -91,7 +91,7 @@ Facit läses ofta på mobil. Bryt därför långa rader:
 | **Formel/regel** | Varje gång en formel eller regel används | ”Sträckformeln: \(s=v_0t+\tfrac{at^2}{2}\)”, ”Pq-formeln”, ”Logaritmlagen \(\lg a^b=b\lg a\)”. En rad om **varför** den passar, till exempel ”tiden är inte given”. |
 | **Sätt in / lös ut** | Efter formelsteget | ”Lös ut \(a\) och sätt in”, ”Sätt lägena lika”. |
 | **Grafisk lösning** | Andragradsekvationer och liknande | ”Lös ekvationen grafiskt”, se avsnitt 4. |
-| **Alternativ** | När en annan metod är vanlig | ”Alternativ: lösningsformeln”, ”Alternativ: faktorisera”. Står efter huvudmetoden. |
+| **Alternativ** | När en annan metod är vanlig | ”Alternativ: pq-formeln”, ”Alternativ: faktorisera”. Står efter huvudmetoden. |
 | **Kontroll** | När den tillför förståelse | ”Kontroll: summan av delspänningarna är 12 V”. |
 | **Tolkning/slutsats** | Resonemang, flera rötter, rimlighet | ”Den första skärningen gäller”, ”Varför blir det inte dubbelt så långt?”. |
 
@@ -135,7 +135,7 @@ därför alltid visa det:
      (”t ≈ 1,99”).
 3. Vid två rötter: visa båda, markera och läs av den som efterfrågas, och förklara
    i ett tolkningssteg varför den andra inte gäller eller vad den betyder.
-4. Därefter ”Alternativ: lösningsformeln” eller ”Alternativ: faktorisera”.
+4. Därefter ”Alternativ: pq-formeln” eller ”Alternativ: faktorisera”. Skriv först ekvationen på normalformen x² + px + q = 0 (dividera med koefficienten framför x²). abc-formeln (−b ± √(b² − 4ac))/2a används aldrig, i någon kurs (användarbeslut 2026-11-06).
 5. Sätt `geogebra: true` på uppgiften (GeoGebra innebär också tillåten miniräknare).
 
 Graferna i `konstacc` är byggda med hjälpfunktionerna `graf`/`graf2` (se

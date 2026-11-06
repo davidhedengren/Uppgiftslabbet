@@ -82,7 +82,7 @@ test('Energimodeller, delkort och lärare har samma fullständiga givna värden'
  for(const t of c.window.BANK.filter(t=>t.omr==='blandat_energi')) {
   if(t.spelDelar)assert.match(t.t,/<ol type="a">/);
   for(const p of [t,...(t.spelDelar||[])]) {
-   assert.doesNotMatch(p.s,/<ol|facit-numero|facit-stegnummer/);
+   assert.match(p.s,/facit-steglista/);assert.doesNotMatch(p.s,/facit-numero|facit-stegnummer/); // facitmallen sedan 2026-11-06 (agent/FY1_ENERGI_FACIT_2026-11-06.md)
    assert.doesNotMatch(p.t,/en antal|under den perioden|innan det stannar|m_\{\\mathrm\{Au\}\}/);
   }
  }
