@@ -21,8 +21,8 @@
   },
   {
     "id": "3.30",
-    "old": "t=\\frac{-8{,}0+\\sqrt{8{,}0^2+4\\cdot4{,}91\\cdot22}}{9{,}82}\\approx1{,}453\\ \\mathrm s",
-    "new": "\\begin{aligned}t&=\\frac{-8{,}0+\\sqrt{8{,}0^2+4\\cdot4{,}91\\cdot22}}{9{,}82}\\\\&\\approx1{,}453\\ \\mathrm s\\end{aligned}"
+    "old": "\\begin{aligned}&4{,}91t^2+8{,}0t-22=0\\\\&\\Leftrightarrow\\ t^2+1{,}629t-4{,}481=0\\\\&\\Rightarrow\\ t=-0{,}815+\\sqrt{0{,}815^2+4{,}481}\\\\&\\approx1{,}453\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&4{,}91t^2+8{,}0t-22=0\\\\&\\Leftrightarrow\\ t^2+1{,}629t-4{,}481=0\\\\&\\Rightarrow\\ t=-0{,}815+\\sqrt{0{,}815^2+4{,}481}\\\\&\\approx1{,}453\\ \\mathrm s\\end{aligned}"
   },
   {
     "id": "3.32",
@@ -346,8 +346,8 @@
   },
   {
     "id": "3.388",
-    "old": "t=\\frac{-12{,}91+\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}}{2\\cdot0{,}2314}\\approx5{,}95\\ \\mathrm s",
-    "new": "\\begin{aligned}t&=\\frac{\\begin{gathered}-12{,}91+\\\\\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}\\end{gathered}}{2\\cdot0{,}2314}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}",
+    "old": "\\begin{aligned}&0{,}2314t^2+12{,}91t-85=0\\\\&\\Leftrightarrow\\ t^2+55{,}79t-367{,}3=0\\\\&\\Rightarrow\\ t=-27{,}90+\\sqrt{27{,}90^2+367{,}3}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&0{,}2314t^2+12{,}91t-85=0\\\\&\\Leftrightarrow\\ t^2+55{,}79t-367{,}3=0\\\\&\\Rightarrow\\ t=-27{,}90+\\sqrt{27{,}90^2+367{,}3}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}",
     "previous": "\\begin{aligned}t&=\\frac{-12{,}91+\\sqrt{12{,}91^2+4\\cdot0{,}2314\\cdot85}}{2\\cdot0{,}2314}\\\\&\\approx5{,}95\\ \\mathrm s\\end{aligned}"
   },
   {
@@ -367,8 +367,8 @@
   },
   {
     "id": "3.389",
-    "old": "t=\\frac{31-\\sqrt{31^2-4\\cdot216}}{2}=\\frac{31-\\sqrt{97}}{2}\\approx10{,}58\\ \\mathrm s",
-    "new": "\\begin{aligned}t&=\\frac{31-\\sqrt{31^2-4\\cdot216}}{2}\\\\&=\\frac{31-\\sqrt{97}}{2}\\\\&\\approx10{,}58\\ \\mathrm s\\end{aligned}"
+    "old": "\\begin{aligned}&t^2-31t+216=0\\\\&\\Rightarrow\\ t=15{,}5-\\sqrt{15{,}5^2-216}\\\\&=15{,}5-\\sqrt{24{,}25}\\\\&\\approx10{,}58\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&t^2-31t+216=0\\\\&\\Rightarrow\\ t=15{,}5-\\sqrt{15{,}5^2-216}\\\\&=15{,}5-\\sqrt{24{,}25}\\\\&\\approx10{,}58\\ \\mathrm s\\end{aligned}"
   },
   {
     "id": "3.391",
@@ -399,8 +399,8 @@
   },
   {
     "id": "3.400",
-    "old": "t=\\frac{35+\\sqrt{35^2+4\\cdot4{,}91\\cdot7{,}0}}{9{,}82}\\approx7{,}32\\ \\mathrm s",
-    "new": "\\begin{aligned}t&=\\frac{35+\\sqrt{35^2+4\\cdot4{,}91\\cdot7{,}0}}{9{,}82}\\\\&\\approx7{,}32\\ \\mathrm s\\end{aligned}"
+    "old": "\\begin{aligned}&4{,}91t^2-35t-7{,}0=0\\\\&\\Leftrightarrow\\ t^2-7{,}128t-1{,}426=0\\\\&\\Rightarrow\\ t=3{,}564+\\sqrt{3{,}564^2+1{,}426}\\\\&\\approx7{,}32\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&4{,}91t^2-35t-7{,}0=0\\\\&\\Leftrightarrow\\ t^2-7{,}128t-1{,}426=0\\\\&\\Rightarrow\\ t=3{,}564+\\sqrt{3{,}564^2+1{,}426}\\\\&\\approx7{,}32\\ \\mathrm s\\end{aligned}"
   },
   {
     "id": "3.401",
@@ -419,8 +419,8 @@
   },
   {
     "id": "3.404",
-    "old": "t=\\frac{24+\\sqrt{24^2+4\\cdot4{,}91\\cdot2{,}50}}{9{,}82}\\approx4{,}99\\ \\mathrm s",
-    "new": "\\begin{aligned}t&=\\frac{24+\\sqrt{24^2+4\\cdot4{,}91\\cdot2{,}50}}{9{,}82}\\\\&\\approx4{,}99\\ \\mathrm s\\end{aligned}"
+    "old": "\\begin{aligned}&4{,}91t^2-24t-2{,}50=0\\\\&\\Leftrightarrow\\ t^2-4{,}888t-0{,}5092=0\\\\&\\Rightarrow\\ t=2{,}444+\\sqrt{2{,}444^2+0{,}5092}\\\\&\\approx4{,}99\\ \\mathrm s\\end{aligned}",
+    "new": "\\begin{aligned}&4{,}91t^2-24t-2{,}50=0\\\\&\\Leftrightarrow\\ t^2-4{,}888t-0{,}5092=0\\\\&\\Rightarrow\\ t=2{,}444+\\sqrt{2{,}444^2+0{,}5092}\\\\&\\approx4{,}99\\ \\mathrm s\\end{aligned}"
   },
   {
     "id": "3.405",

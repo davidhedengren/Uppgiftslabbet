@@ -3547,3 +3547,7 @@ Facit och uppgiften är oförändrade. Kunskapsgymmet godtar nu ca, cirka, ungef
 ## Ma2: okänt medelvärde får inte bara gissas, 2026-11-06
 
 [4.257 och fyra nya uppgifter 4.2148–4.2151](MA2_MEDELVARDEN_2026-11-06.md). Visa intervallets bredd i standardavvikelser och procentbanden som motiverar placeringen innan ett medelvärde matas in i GeoGebra. Alternativ numerisk sökning börjar i intervallets mitt och motiverar riktningen. Bevara symmetrin, villkor som väljer spegelplacering och skillnaden mellan nytt medelvärde och sänkning. Procentbanden är avrundade; låt inte 81,85/81,86 % bli ett falskt facitfel. 4.257 kräver två decimaler eftersom fri heltalsavrundning annars godtar den andra lösningen 6. Sex nya bilder från riktig GeoGebra, utan urklippsåtkomst. Uppgiftslabbets lokala bankbilder löses mot `APP_ROOT` även efter kursadressbyte. Skydd: `tools/ma2-medelvarden-2026-11-06.test.js` och `.browser.cjs`. Den nya författarkällan gäller framför äldre generatorer för 4.257.
+
+## pq-formeln i alla kurser, aldrig abc-formeln, 2026-11-06
+
+[Alla banker och en genomgång i Kunskapsgymmet](PQ_FORMELN_2026-11-06.md). Läraren: ”Vi använder PQ-formeln i alla kurser, inte ABC.” Visa division till normalformen x² + px + q = 0 och pq-formeln. Inget (−b ± √(b² − 4ac))/2a, ingen abc-diskriminant och inte ordet ”lösningsformeln” eller ”andragradsformeln”. Skydd: `tools/pq-formeln-2026-11-06.test.js`.
