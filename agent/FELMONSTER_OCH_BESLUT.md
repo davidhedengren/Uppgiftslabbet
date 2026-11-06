@@ -3474,3 +3474,9 @@ Svar med flera lösningar ska inte vara fritext med varierande facitformat ({-3,
 
 ### 2026-11-06: symbolknapparna skriver ^()
 Knapparna xⁿ och ·10ⁿ i Kunskapsgymmet skriver `^()`. Varje strikt svarsformat måste godta exponenter i parentes (`x^(3)`), annars underkänns svar som ser exakt ut som facit. `förenklat_polynom` rättades för 1.1014; se [FELRAPPORTER_2026-11-06_0824.md](FELRAPPORTER_2026-11-06_0824.md).
+
+## Saknat underlag och dolda alternativ, 2026-11-06
+
+[42 granskade, 28 åtgärdade, alla ID:n och kommentarstexter](SAKNAT_UNDERLAG_2026-11-06.md).
+27 alternativberoende frågor får `visaAlternativ: true`. Ordet ”alternativ” räcker inte alltid: givna påståenden A/B kan felaktigt tolkas som en redan utskriven lista. Flaggan går före denna heuristik men efter skydden mot tomma och rena bokstavslistor. Använd bara efter manuell kontroll; öppna frågor ska förbli öppna.
+Fy1 3.32 behöver uttryckligen konstant acceleration under fartökning och inbromsning för facits räta linjer och 120 m. Matf1 4.513 får relevant ledtråd och räknare; tidigare kontroll av differentialekvation på intervall bevaras. Skydd: `saknat-underlag-2026-11-06.test.js` och motsvarande webbläsartest.

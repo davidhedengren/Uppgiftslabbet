@@ -47,6 +47,15 @@ Detta är en av de viktigaste reglerna. När en uppgift med a), b), c) delas med
 
 ### 3.3 Gemensam information ska följa med
 
+**Alternativlistor i Uppgiftslabbet (2026-11-06):** När en manuellt granskad
+fråga behöver bankfältet `alternativ` för att vara komplett, sätt
+`visaAlternativ: true`. Det gör visningen oberoende av frågans exakta ordval
+och av att givna påståenden heter A och B. Skriv också om eleven ska välja
+ett eller flera alternativ. Lägg inte flaggan på öppna frågor eller när
+samma alternativ redan är utskrivna i text/figur. Rena A–H-knappar till
+etiketterade figurer ska inte bli en extra bokstavslista. Verifiera det
+faktiska lärarkortet och exportunderlaget; massflagga inte efter nyckelord.
+
 Funktioner, modeller, tabeller, diagram, SVG-figurer, nödvändiga situationsdata, koordinater och villkor måste finnas i `spelIntro` eller på själva delkortet. Kontrollera bland annat:
 
 - att delkortet har figuren när huvuduppgiften innehåller en SVG,

@@ -6629,6 +6629,9 @@ function altVisas(x){
   const alt=Array.isArray(x?.alternativ)?x.alternativ:[];
   if(!alt.length) return false;
   if(alt.every(a=>/^\s*[A-H]\s*$/.test(String(a?.txt??'')))) return false;
+  // Handgranskade frågor kan kräva listan även när A/B betecknar givna
+  // påståenden och därför ser ut som en redan utskriven alternativlista.
+  if(x.visaAlternativ===true) return true;
   const t=String(x.t||'').replace(/<svg[\s\S]*?<\/svg>/gi,'').replace(/&nbsp;/g,' ');
   if(!/alternativ|markera|kryssa|ringa in/i.test(t)) return false;
   const post=f=>new RegExp('(?:^|<p>|<br\\s*/?>|<li>|\\s)\\s*(?:<strong>)?'+f+'(?:</strong>)?\\s*[.):]\\s').test(t);
@@ -6795,7 +6798,7 @@ const BANK_VERSION=(()=>{
   const d=new Date(document.lastModified);
   if(Number.isNaN(d.getTime())) return 'auto';
   const två=n=>String(n).padStart(2,'0');
-  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-fellogg-1614-2026-11-05`;
+  return `${d.getFullYear()}-${två(d.getMonth()+1)}-${två(d.getDate())}-${två(d.getHours())}${två(d.getMinutes())}-saknat-underlag-2026-11-06`;
 })();
 const skriptLöften=new Map();
 function laddaSkript(src){
