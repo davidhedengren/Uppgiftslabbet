@@ -14,7 +14,9 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
  // Kapitel 2: enheter, mätnoggrannhet, densitet och medelhastighet omarbetade enligt samma nya mall.
  const MALL=['enheter','matnogg','densitet','medelhastighet','konstacc','st_diagram','acceleration','vt_diagram','at_diagram','vektorer',
   // Kapitel 4 (agent/FY1_KRAFT_FACIT_2026-11-04.md)
-  'newton1','newton2','newton3','tyngdkraft','normalkraft','gravitation','fjadrar','friktion','lutande_plan','moment','blandat_kraft'];
+  'newton1','newton2','newton3','tyngdkraft','normalkraft','gravitation','fjadrar','friktion','lutande_plan','moment','blandat_kraft',
+  // Kapitel 5 (agent/FY1_ENERGI_FACIT_2026-11-06.md)
+  'arbete'];
  visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.
