@@ -3491,3 +3491,14 @@ uppgifter som tre likvärdiga delar (rapport 0.02, som nu är a)–d) med nivå 
 i facit (rapport 0.125). ”Strikt växande” i Ma3–Ma5 är kvar. Elevexempel med fel räkneordning
 visar elevens mellanresultat (−7·(−5)), inte en parentes som eleven aldrig skrev (rapport 0.62).
 Skydd: `tools/ma1-kap0-mangdtraning-2026-11-06.test.js` i båda repona.
+
+## Förkortade svar: svarsformatet `förkortat_uttryck`, 2026-11-06
+
+[Ma3c 1.1078–1.1099](MA3C_KAP1_MANGDTRANING_2026-11-06.md). Med `uttryck` godtas allt som är
+algebraiskt lika med facit, alltså även en avskriven oförkortad fråga. När frågan ber eleven
+förkorta eller skriva som ett enda bråk ska `svarFormat: "förkortat_uttryck"` användas. Då krävs
+också att täljare och nämnare saknar gemensam faktor och att svaret inte är en summa av bråk.
+Kravet gäller **bara** dessa uppgifter (användarens fråga 2026-11-06). Andra uttryckssvar behöver
+inte vara förkortade. Byt inte äldre uppgifter till formatet utan granskning.
+Skydd: `KG_TEST_MA4_SVAR` i Kunskapsgymmet (`tools/kg-sjalvtester.cjs`) och
+`tools/ma3c-kap1-mangdtraning3-2026-11-06.test.js`.
