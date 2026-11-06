@@ -3515,3 +3515,12 @@ största gemensamma faktor, så bygg inte enfältsdrill i faktorisering med det 
 ## Ma1 – blandningar och ekvationsproblem, 2026-11-06
 
 [Tio nya problem 1.1675–1.1684](MA1_EKVATIONSPROBLEM_2026-11-06.md), nivå 4–5, med SVG och kontrollerande stegfacit. Bevara variationen: tillsats av ren vätska, två halter, urtappning/ersättning, avdunstning följd av tillsats, kassor, rabattkedja, gemensamt stängsel, kabeldelar, paus under ikappkörning och två erbjudanden. Oljan ingår i hela volymen (1.1675); tappad blandning tar med glykol (1.1677); bredd är mellanresultat men längd söks (1.1681); mötet sker under pausen och tiden räknas från 09.00 (1.1683). Alla tillåter miniräknare. Test och browserprov: `ma1-ekvationsproblem-2026-11-06.*`.
+
+## Bryta ut största faktor: svarsformatet `största_faktor`, 2026-11-06
+
+[Ma1 1.1685–1.1704](MA1_FAKTORISERING_2026-11-06.md). Läraren vill att eleverna bryter ut **största
+möjliga** faktor. Formatet `faktoriserat` godtar 2(6x²+9x), så faktoriseringsdrill i ett enda svarsfält
+ska använda `svarFormat: "största_faktor"`. Det formatet kräver en produkt där varje parentes saknar
+gemensam talfaktor och gemensam variabel. Äldre tvåfältsuppgifter och Ma2:s `faktoriserat` är oförändrade.
+Skydd: `KG_TEST_STORSTA_FAKTOR`, `tools/storsta-faktor-2026-11-06.browser.cjs` (KG) och
+`tools/ma1-faktorisering-2026-11-06.test.js` (master).

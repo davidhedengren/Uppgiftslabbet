@@ -570,8 +570,8 @@ def bygg_del(d):
 
 def svar_falt(x):
     v = x['svar']
-    if x.get('svarform') == 'förenklat_polynom':
-        return v, 'förenklat_polynom'
+    if x.get('svarform'):   # förenklat_polynom, största_faktor
+        return v, x['svarform']
     v = F(v)
     assert v.denominator in (1, 2, 4, 5, 10), v   # svar i decimalform utan avrundning
     return (int(v) if v.denominator == 1 else float(v)), 'numeriskt'
@@ -599,7 +599,7 @@ def bygg_uppgifter():
             text = x.get('fragetext') or f'{instr[1][:-1]} {x["fraga"]}.'
             t = (f'<p>{intro}</p>' if intro else '') + f'<p>{text}</p>'
             s = lista(x['steg'], svar_html(x))
-            u = dict(svarstyp='uttryck' if fm[0] == 'förenklat_polynom' else 'numeriskt', rättSvar=rs[0], tolerans=1e-9,
+            u = dict(svarstyp='numeriskt' if fm[0] == 'numeriskt' else 'uttryck', rättSvar=rs[0], tolerans=1e-9,
                      svarFormat=fm[0], ledtrad=x['ledtrad'], traningsniva=x['L'], arbetsinsats=1)
         else:
             q = [x.get('fragetext') if instr is None else x['fraga'] for x in dd]
