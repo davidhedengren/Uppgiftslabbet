@@ -3525,3 +3525,11 @@ gemensam talfaktor och gemensam variabel. Ma1:s äldre tvåfältsuppgifter är o
 (användarbeslut samma dag), utom 1.261 som kräver en viss första term. Ma2:s `faktoriserat` är oförändrat.
 Skydd: `KG_TEST_STORSTA_FAKTOR`, `tools/storsta-faktor-2026-11-06.browser.cjs` (KG) och
 `tools/ma1-faktorisering-2026-11-06.test.js` (master).
+
+## Ma2 normalfördelning med digitala verktyg: ingen uppmaning att använda GeoGebra, 2026-11-06
+
+[Felrapport 10:00](FELRAPPORTER_2026-11-06_1000.md), 4.2122–4.2126. Läraren: ”de ska inse det själva”.
+Frågetexterna i `normalfordelning_digitala_verktyg` säger inte ”Använd GeoGebra” eller ”med GeoGebra”.
+Facit och ledtrådar får visa GeoGebra-metoden, och `geogebra: true` står kvar. Frågor där GeoGebra är själva
+ämnet behålls (vilka värden som ska skrivas in, tolka en GeoGebra-uträkning, beskriv metoden i GeoGebra).
+Övriga Ma2-områden är oförändrade tills läraren har tagit ställning. Skydd: `tools/ma2-felrapporter-2026-11-06-1000.test.js`.
