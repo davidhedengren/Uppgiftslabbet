@@ -70,3 +70,27 @@ Ledtråden frågar efter det största tal som talen är delbara med, och efter b
 - Facit renderades i 390 px. Den bredaste formeln är 281 px, och 1.1694 har lästs i skärmbild.
 
 Ma1:s äldre tvåfältsuppgifter i faktorisering lämnas orörda.
+
+## Äldre tvåfältsuppgifter görs om till ett svarsfält (samma dag)
+
+Användaren: ”då kan vi väl göra om de gamla så det inte behövs två svarsfält? Det känns väl mer naturligt
+om de ska svara med hela det faktoriserade uttrycket istället?”
+
+Skriptet `tools/ma1-faktorisering-ett-falt-2026-11-06.py` gör om 35 uppgifter: 1.03, 1.24, 1.25, 1.29–1.31,
+1.90, 1.94, 1.160, 1.162, 1.165, 1.195, 1.217, 1.259, 1.260, 1.262, 1.406, 1.407, 1.414–1.417, 1.434,
+1.911–1.913, 1.916–1.918 och 1.1044–1.1049.
+
+- Det gamla `rättSvar` ["6x", "2x+3"] blir "6x(2x+3)", med `svarstyp: "uttryck"` och `svarFormat: "största_faktor"`.
+- `svarEtiketter`, `svarsstruktur` och `tolerans` tas bort.
+- Meningen ”Ange faktorn och … i varsitt fält” stryks ur frågan.
+- Facit skrivs om enligt FACITMALL med samma steg som i de nya uppgifterna. De gamla facit saknade svarsrad i 29 av 35 fall. Skriptet kontrollerar att det nya svaret är exakt det gamla facit.
+- ID, ledtråd, nivå, poäng, familj och verktygsflaggor är oförändrade.
+- **1.261 behåller sina två fält.** Där ska den första termen i parentesen vara 2x, alltså −7x(2x−3), och det kan `största_faktor` inte kontrollera.
+- Frågorna ber om ”positiv heltalskoefficient”. Formatet godtar även en negativ största faktor, till exempel −6(2x−3) för −12x+18. Det svaret är matematiskt korrekt men följer inte instruktionen. Avvägningen är medveten, eftersom de nya uppgifterna med negativ faktor (−4x−8) ska godta båda tecknen.
+
+Facit med tre termer skriver likheten på två rader. Efter det är den bredaste formeln 257 px i 390 px bredd (tidigare 407 px i 1.417).
+
+Verifiering:
+- Mastertestet kontrollerar de 35 uppgifterna: ett fält, inga etiketter och att produkten är frågans polynom utan kvarvarande gemensam faktor.
+- Kunskapsgymmets `storsta-faktor-2026-11-06.browser.cjs` provar alla 77 kort med formatet (55 uppgifter) med appens riktiga rättning: 0 fel.
+- Hela testsviten i master har samma misslyckade tester, med samma antal, som före ändringen.

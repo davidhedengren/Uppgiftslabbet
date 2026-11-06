@@ -31,8 +31,27 @@ test('20 uppgifter, 42 kort, alla med formatet största_faktor', () => {
   assert.equal(n, 42);
 });
 
+/* Äldre tvåfältsuppgifter som gjordes om till ett fält samma dag (tools/ma1-faktorisering-ett-falt-2026-11-06.py). */
+const GAMLA = ['1.03', '1.24', '1.25', '1.29', '1.30', '1.31', '1.90', '1.94', '1.160', '1.162', '1.165', '1.195', '1.217', '1.259',
+  '1.260', '1.262', '1.406', '1.407', '1.414', '1.415', '1.416', '1.417', '1.434', '1.911', '1.912', '1.913', '1.916', '1.917',
+  '1.918', '1.1044', '1.1045', '1.1046', '1.1047', '1.1048', '1.1049'];
+
+test('35 äldre uppgifter har ett svarsfält med hela det faktoriserade uttrycket', () => {
+  assert.equal(GAMLA.length, 35);
+  for (const id of GAMLA) {
+    const u = byId.get(id);
+    assert.equal(u.svarstyp, 'uttryck', id); assert.equal(u.svarFormat, 'största_faktor', id);
+    assert.equal(typeof u.rättSvar, 'string', id);
+    assert.equal(u.svarEtiketter, undefined, id); assert.equal(u.svarsstruktur, undefined, id);
+    assert.doesNotMatch(u.t, /fält/, id);
+    assert.match(u.s, /Dividera varje term med/); assert.match(u.s, /Kontroll: multiplicera in/); assert.match(u.s, /facit-svar/);
+  }
+  // 1.261 kräver att parentesen börjar med 2x och behåller därför sina två fält.
+  assert.equal(JSON.stringify(byId.get('1.261').svarFormat), '["förenklat_polynom","förenklat_polynom"]');
+});
+
 test('svaret är frågans polynom med största möjliga faktor utbruten', () => {
-  for (const id of NYA) {
+  for (const id of [...NYA, ...GAMLA]) {
     const u = byId.get(id);
     const fragor = u.spelDelar ? u.spelDelar.map(d => d.t.match(/\\\((.+?)\\\)/)[1]) : [u.t.match(/\\\((.+?)\\\)/)[1]];
     const svar = [].concat(u.rättSvar);
@@ -41,7 +60,7 @@ test('svaret är frågans polynom med största möjliga faktor utbruten', () => 
       const m = svar[i].match(/^(-?\d*(?:[a-z](?:\^\d+)?)*)\((.+)\)$/);
       assert.ok(m, `${id}: ${svar[i]}`);
       const M = poly(m[1] === '-' ? '-1' : m[1] || '1')[0], I = poly(m[2]);
-      for (const x of [{x: 2, y: 3, a: -1, b: 5}, {x: -3, y: 2, a: 4, b: -2}, {x: 0.5, y: -1, a: 3, b: 7}])
+      for (const x of [{x: 2, y: 3, a: -1, b: 5, m: 2, n: -3}, {x: -3, y: 2, a: 4, b: -2, m: -1, n: 4}, {x: 0.5, y: -1, a: 3, b: 7, m: 3, n: 0.5}])
         assert.ok(Math.abs(varde([M], x) * varde(I, x) - varde(P, x)) < 1e-9, `${id}: ${svar[i]} ≠ ${f}`);
       assert.equal(I.map(t => t.k).reduce(gcd), 1, `${id}: talfaktor kvar i ${m[2]}`);
       for (const v of new Set(I.flatMap(t => Object.keys(t.e)))) assert.ok(I.some(t => !t.e[v]), `${id}: ${v} kvar i alla termer`);

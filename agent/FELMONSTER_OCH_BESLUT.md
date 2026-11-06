@@ -3521,6 +3521,7 @@ största gemensamma faktor, så bygg inte enfältsdrill i faktorisering med det 
 [Ma1 1.1685–1.1704](MA1_FAKTORISERING_2026-11-06.md). Läraren vill att eleverna bryter ut **största
 möjliga** faktor. Formatet `faktoriserat` godtar 2(6x²+9x), så faktoriseringsdrill i ett enda svarsfält
 ska använda `svarFormat: "största_faktor"`. Det formatet kräver en produkt där varje parentes saknar
-gemensam talfaktor och gemensam variabel. Äldre tvåfältsuppgifter och Ma2:s `faktoriserat` är oförändrade.
+gemensam talfaktor och gemensam variabel. Ma1:s äldre tvåfältsuppgifter är omgjorda till ett fält
+(användarbeslut samma dag), utom 1.261 som kräver en viss första term. Ma2:s `faktoriserat` är oförändrat.
 Skydd: `KG_TEST_STORSTA_FAKTOR`, `tools/storsta-faktor-2026-11-06.browser.cjs` (KG) och
 `tools/ma1-faktorisering-2026-11-06.test.js` (master).

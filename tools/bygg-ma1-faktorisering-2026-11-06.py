@@ -106,9 +106,12 @@ def del_bryt_ut(uttr, L, negativ=False):
         steg.append(li(f'Alla termer är negativa. Bryt ut \\({M}\\), så att termerna i parentesen blir positiva'))
     steg.append(li(f'Dividera varje term med \\({M}\\)',
                    *[mat(f'\\frac{{{mon_tex(k, e)}}}{{{M}}}={mon_tex(ki, ei)}') for (k, e), (ki, ei) in zip(termer, inre)]))
-    steg.append(li(f'Skriv uttrycket som \\({M}\\) gånger parentesen', mat(f'{pol_tex(termer)}={svar_tex}')))
+    # Med tre termer blir likheten för bred på mobil: skriv den på två rader.
+    lang = len(termer) >= 3
+    likhet = lambda v, h: [mat(v), mat(f'={h}')] if lang else [mat(f'{v}={h}')]
+    steg.append(li(f'Skriv uttrycket som \\({M}\\) gånger parentesen', *likhet(pol_tex(termer), svar_tex)))
     steg.append(li(f'Kontroll: multiplicera in \\({M}\\). Termerna i parentesen har ingen gemensam faktor kvar, så det finns inget mer att bryta ut',
-                   mat(f'{svar_tex}={pol_tex(termer)}')))
+                   *likhet(svar_tex, pol_tex(termer))))
     alla = f'både {tal[0]} och {tal[1]} är' if len(tal) == 2 else f'{K1.och_lista([str(t) for t in tal])} alla är'
     tal_led = f'Vilket är det största tal som {alla} delbara med?' if abs(g) > 1 else ''
     var_led = ('Finns samma bokstav i alla termer? Bryt i så fall ut den lägsta potensen av den.' if fexp else
@@ -168,6 +171,17 @@ def main():
     data = json.loads(src[src.index('['):src.rindex(']') + 1])
     finns = {u['id'] for u in data}
     nya = K1.bygg_uppgifter()
+    if '--uppdatera' in sys.argv:
+        # Ersätter redan skrivna uppgifter med en ny byggning (samma ID och innehåll, uppdaterat facit).
+        nl = '\r\n' if '\r\n' in src else '\n'
+        for u in nya:
+            m = re.search(r'\{\s*"id":\s*"' + re.escape(u['id']) + r'"', src)
+            _, slut = json.JSONDecoder().raw_decode(src, m.start())
+            src = src[:m.start()] + K1.som_json(u, nl) + src[slut:]
+        json.loads(src[src.index('['):src.rindex(']') + 1])
+        open(BANK, 'w', encoding='utf-8', newline='').write(src)
+        print('uppdaterat', len(nya))
+        return nya
     for u in nya:
         assert u['id'] not in finns or '--skriv' not in sys.argv, u['id']
     from collections import Counter
