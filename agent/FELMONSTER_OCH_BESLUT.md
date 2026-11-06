@@ -3471,3 +3471,6 @@ webbläsartestet med samma namn och tidigare dolda-alternativ-/flervalstester.
 
 ### 2026-11-05: flera lösningar i ett fält per lösning
 Svar med flera lösningar ska inte vara fritext med varierande facitformat ({-3,0,3}, x=-2,0,2, a=2 och b=3). Använd ett svarsfält per lösning: svarsstruktur "mängd" med etiketten x (valfri ordning) eller "ordnad" med namngivna fält (a, b). Kunskapsgymmet godtar då även hela svaret samlat i ett fält. Se [FELRAPPORTER_2026-11-05_2156.md](FELRAPPORTER_2026-11-05_2156.md).
+
+### 2026-11-06: symbolknapparna skriver ^()
+Knapparna xⁿ och ·10ⁿ i Kunskapsgymmet skriver `^()`. Varje strikt svarsformat måste godta exponenter i parentes (`x^(3)`), annars underkänns svar som ser exakt ut som facit. `förenklat_polynom` rättades för 1.1014; se [FELRAPPORTER_2026-11-06_0824.md](FELRAPPORTER_2026-11-06_0824.md).
