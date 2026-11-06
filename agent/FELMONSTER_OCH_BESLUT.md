@@ -3534,3 +3534,12 @@ Facit och ledtrådar får visa GeoGebra-metoden, och `geogebra: true` står kvar
 ämnet behålls (vilka värden som ska skrivas in, tolka en GeoGebra-uträkning, beskriv metoden i GeoGebra).
 Samma dag utvidgat till hela Ma2 (65 uppgifter till): har en uppgift `geogebra: true` ska eleven själv förstå
 att GeoGebra ska användas. Skriv alltså inte ”Använd GeoGebra” eller ”med GeoGebra” i nya Ma2-frågor. ”Använd Sx” får stå. Skydd: `tools/ma2-felrapporter-2026-11-06-1000.test.js`.
+
+## Ord före ett talsvar, felrapport Ma2 4.2090, 2026-11-06
+
+Frågan ”Under vilken vikt säljs en limpa billigare?” har facit 320,3 g (340 − 1,6449 · 12 ≈ 320,26), och det är rätt.
+Eleven skrev att svaret var rätt avrundat, men rapporten innehåller inte själva svaret. Kunskapsgymmet godtog redan
+320,3, 320,3 g, 320,26 och x ≈ 320,3. Däremot underkändes ”under 320,3 g”, ”ca 320,3” och ”320,3g.”.
+Facit och uppgiften är oförändrade. Kunskapsgymmet godtar nu ca, cirka, ungefär, omkring och runt före talet. Jämförelseord
+(under, över, högst, minst, mindre/mer än …) godtas bara när samma ord står i frågan. Talet rättas som vanligt.
+”gr” godtas inte som gram, eftersom det betyder grader i Kunskapsgymmet. Skydd: `KG_TEST_MA4_SVAR`.
