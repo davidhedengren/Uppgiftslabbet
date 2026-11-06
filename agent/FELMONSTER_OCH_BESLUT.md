@@ -3511,3 +3511,7 @@ Upplägget är detsamma som i kapitel 0: 1–4 delar med stigande träningsnivå
 en kontroll VL = HL. Faktorisering och mönster tas i egna omgångar. Formatet `faktoriserat` kräver inte
 största gemensamma faktor, så bygg inte enfältsdrill i faktorisering med det formatet. Skydd:
 `tools/ma1-kap1-mangdtraning-2026-11-06.test.js` i båda repona.
+
+## Ma1 – blandningar och ekvationsproblem, 2026-11-06
+
+[Tio nya problem 1.1675–1.1684](MA1_EKVATIONSPROBLEM_2026-11-06.md), nivå 4–5, med SVG och kontrollerande stegfacit. Bevara variationen: tillsats av ren vätska, två halter, urtappning/ersättning, avdunstning följd av tillsats, kassor, rabattkedja, gemensamt stängsel, kabeldelar, paus under ikappkörning och två erbjudanden. Oljan ingår i hela volymen (1.1675); tappad blandning tar med glykol (1.1677); bredd är mellanresultat men längd söks (1.1681); mötet sker under pausen och tiden räknas från 09.00 (1.1683). Alla tillåter miniräknare. Test och browserprov: `ma1-ekvationsproblem-2026-11-06.*`.
