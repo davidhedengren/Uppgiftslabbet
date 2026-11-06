@@ -415,7 +415,8 @@ async function normalJob(browser, port, outDir, j, log) {
     if (etikett) grans.push(f[f.length - 1]);
     if (j.p !== undefined) {
       items.push({ ...sann, n: 4, side: 'corner', pad: 2 });
-      for (const g of grans) items.push({ ...g, n: 5, label: 'Svaret', side: 'above', dx: 115, pad: 2 });
+      // Svaret står i gränsrutan. Etiketten läggs under rutan, så att den inte ser ut att höra till sannolikheten.
+      for (const g of grans) items.push({ ...g, n: 5, label: 'Svaret', side: 'below', pad: 2 });
     } else {
       for (const [k, g] of grans.entries()) items.push({ ...g, n: 4, side: 'corner', pad: 2, dx: k ? 0 : 0 });
       items.push({ ...sann, n: 5, label: 'Svaret', side: 'right', pad: 2 });

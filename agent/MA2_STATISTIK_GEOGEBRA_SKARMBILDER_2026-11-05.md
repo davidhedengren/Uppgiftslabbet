@@ -57,3 +57,9 @@ I 4.284 stod tidigare att kandidaten 50 ger 2,96. GeoGebra visar s = 2,8284, och
   - Tre tester misslyckas på samma sätt som före ändringen: `ma2-geogebra-sx-jamforelse`, `ma2-kap4-standardavvikelse` (4.343–4.347, 4.102/4.114 och 4.338) och `ma2-statistik-diagram`.
   - `granska-uppgifter.js` ger samma fynd som före ändringen.
 - **Bilder:** 286 nya bilder på i genomsnitt cirka 18 kB, komprimerade med `tools/geogebra-skarmbilder-komprimera.py`.
+
+## Rättelse 2026-11-06: etiketten ”5 Svaret” vid baklängesberäkning
+
+När en gräns söks utifrån en sannolikhet (jobb med `p`) stod etiketten ”5 Svaret” ovanför sannolikhetsrutan (`dx: 115`), fast svaret står i gränsrutan. Användaren visade felet med en bild från 4.261. Nu läggs etiketten under gränsrutan (`side: 'below'`). Sådana bilder ska köras med `NVIEW_H=680`, så att det finns plats för etiketten under rutan.
+
+Alla 57 bilder med `p` i `geogebra-normalfordelning2-2026-11-05.py` är omgjorda med samma namn, från `4-07` till `4-58`. Facittexterna är oförändrade, eftersom de redan säger ”5 svaret (gränsen blir …)”. GeoGebras råvärden i loggen är desamma som förut, och alla tre bildtesterna för normalfördelning passerar.
