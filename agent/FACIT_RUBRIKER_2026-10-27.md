@@ -16,6 +16,14 @@ Inventeringen gjordes med `facitinventering.js` (scratchpad). Den räknar spelba
 
 Ma5 och Ma2 kap 3 granskas samtidigt i andra sessioner (MATF1_*_FACIT, MA2_KAP3_REVISION).
 
+## Klara områden i Ma4 (uppgiftermato2.js)
+
+Ma4-sessionen fyller i den här tabellen. Svaren kontrolleras automatiskt mot `rättSvar`, även numeriskt (till exempel `-\tfrac{\sqrt3}{2}` mot `-sqrt(3)/2`).
+
+| Område | Uppgifter | Fel och övriga ändringar |
+|---|---|---|
+| enhetscirkeln_trianglar | 42 nya facit (1.429 hade redan rubriker, 1.04 är inte spelbar) | Inga räknefel. Alla svar är omräknade, även 1.672 (åttahörningens area \(2\sqrt2\)), 1.679 och 1.680. 1.410 har nu kommentarer på de tre felaktiga alternativen. |
+
 ## Arbetssätt per område
 
 1. Exportera området (`exportera_omr.js`) och läs varje uppgift.
@@ -31,3 +39,11 @@ Ma5 och Ma2 kap 3 granskas samtidigt i andra sessioner (MATF1_*_FACIT, MA2_KAP3_
 |---|---|---|---|
 | Ma1 | tal_rakneordning | 84 nya facit (3 hade redan rubriker) | Inga räknefel. Alla 87 svar är omräknade, även kombinatorikuppgifterna 0.170, 0.173, 0.859, 0.862, 0.1045 och 0.1065. |
 | Ma1 | negativa_tal | 94 nya facit (3 hade redan rubriker) | Inga räknefel. Alla 97 svar är omräknade. Kommentarer har lagts till för felaktiga alternativ i 11 flervalskort. 0.134: den allmänna rubriken ”Kontrollera” har bytts mot en specifik. Miniräknarbesluten för 0.866 och 0.1067 i MA1_VERKTYG_2026-10-15 gäller fortfarande. 0.1082–0.1084 har nu riktiga minustecken i frågan. |
+
+## Klara områden i Ma3 (uppgiftermato1.js)
+
+Ma3-sessionen fyller i den här tabellen. Hjälpskripten (facitlib.py med svarskontroll, även för delar som bara finns i huvudfacit, och kontroll av att varje felaktigt flervalsalternativ har kommentar) ligger i sessionens scratchpad.
+
+| Område | Uppgifter | Fel och övriga ändringar |
+|---|---|---|
+| funktioner | 27 nya facit (17 hade redan rubriker) | Inga räknefel. Alla svar och figuravläsningar (1.07, 1.27, 1.32) är omräknade. 1.32 c finns bara i huvudfacit och har nu ett eget delfacit där. 1.453 har kommentarer på de tre felaktiga alternativen. Nya specifika ledtrådar i 1.72, 1.77 och 1.221. |
