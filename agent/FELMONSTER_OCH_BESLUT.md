@@ -3595,3 +3595,14 @@ Visa uttryckligen hur koefficienten kommer med, alltså 3(x − 2/3) = 3x − 2.
 En deluppgift som ska multipliceras ut får inte heta ”Förenkla eller faktorisera” när uttrycket redan är faktoriserat.
 Använd formatet `förenklat_polynom`. Ma1 1.982: problem om jämna eller udda tal skriver talen som 2n eller 2n + 1, så att
 antagandet är inbyggt, och kontrollerar att n blir ett heltal. Skydd: `tools/fellogg-2026-11-10.test.js`.
+
+## Fy2 längdkontraktion: specifika steg och rätt observatör (10 november)
+
+[27 manuellt omskrivna facit och kvarvarande ID:n](FY2_LANGDKONTRAKTION_FACIT_2026-11-10.md).
+Börja inte slentrianmässigt med Lorentzfaktorn: 6.16 frågar efter jordens tid
+och behöver bara t=L/v. Identifiera konkret egenlängden och observatören.
+6.21:s tidigare maskinfacit 100 m var fel; rätt längd är cirka 98,9598 m.
+Fråga efter en decimal och godta 99,0, inte 100 eller 101 m. 6.22:s mätning
+är samtidig i tågets referenssystem, inte fotografiskt utseende. Bevara
+6.12:s två beräknade tabellalternativ. Skydd: browserfallen med prefix
+`fy2-langdkontraktion-facit-2026-11-10`.
