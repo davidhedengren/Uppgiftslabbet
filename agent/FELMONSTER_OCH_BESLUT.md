@@ -3571,3 +3571,12 @@ Ord för små antal accepteras bara i avgränsade numeriska antalsfrågor utan e
 Tangentderivator måste använda samma radianenhet i intervall och svar (1.345).
 Polynomfrågor anger reell domän när komplexa rötter inte ingår (4.333).
 Skydd: `tools/felrapporter-2026-11-09.test.js`, browserharness och cases.json.
+
+## Fellogg 2026-11-10 08:28: faktorisering med ledande koefficient och jämna tal
+
+[Genomgång](FELRAPPORTER_2026-11-10_0828.md). Ma3c 1.41 c: ett andragradspolynom med ledande koefficient
+skild från 1 faktoriseras i facit via faktorsatsen. Först normalform, sedan pq-formeln och en grafisk kontroll.
+Visa uttryckligen hur koefficienten kommer med, alltså 3(x − 2/3) = 3x − 2. Facit får aldrig säga bara ”identifiera faktorer”.
+En deluppgift som ska multipliceras ut får inte heta ”Förenkla eller faktorisera” när uttrycket redan är faktoriserat.
+Använd formatet `förenklat_polynom`. Ma1 1.982: problem om jämna eller udda tal skriver talen som 2n eller 2n + 1, så att
+antagandet är inbyggt, och kontrollerar att n blir ett heltal. Skydd: `tools/fellogg-2026-11-10.test.js`.
