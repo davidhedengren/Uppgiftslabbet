@@ -3551,3 +3551,23 @@ Facit och uppgiften är oförändrade. Kunskapsgymmet godtar nu ca, cirka, ungef
 ## pq-formeln i alla kurser, aldrig abc-formeln, 2026-11-06
 
 [Alla banker och en genomgång i Kunskapsgymmet](PQ_FORMELN_2026-11-06.md). Läraren: ”Vi använder PQ-formeln i alla kurser, inte ABC.” Visa division till normalformen x² + px + q = 0 och pq-formeln. Inget (−b ± √(b² − 4ac))/2a, ingen abc-diskriminant och inte ordet ”lösningsformeln” eller ”andragradsformeln”. Skydd: `tools/pq-formeln-2026-11-06.test.js`.
+
+## Fellogg 9 november: lokalt g, kompletta svarsfält och blandade textdelar
+
+[Alla 21 rapporter och riktade jämförelser](FELRAPPORTER_2026-11-09_0758.md).
+Lokalt g på Mars/månen ska anges när formelsamlingen inte entydigt ger uppgiftens
+värde. Beräknade `svarTabell`-alternativ för Mars 3,71/3,72 behåller samma enhets-
+och precisionsregler; vidga inte toleransen generellt. Fy1 4.190 har två
+rekommenderade värdesiffror utifrån 78 kg och ett förenligt avrundat slutsvar.
+Positionstidsgrafers tidsaxel ska ligga vid s=0 även när negativa positioner visas
+(3.452/3.453).
+
+Uttrycksformat måste följa funktionens delkort (Ma2 2.259/2.629), och varje
+namngiven parameter måste få ett svarsfält (Ma4 2.52: a och b). Ma2 4.279 gäller
+exakt likhet: fri grov avrundning får inte förbruka ett annat svar i en oordnad
+mängd. Alla sex ordningar samt dubbletter skyddas med browserfall.
+Manuellt bedömda delar får textarea även i blandade heluppgifter (Ma4 4.38).
+Ord för små antal accepteras bara i avgränsade numeriska antalsfrågor utan enhet.
+Tangentderivator måste använda samma radianenhet i intervall och svar (1.345).
+Polynomfrågor anger reell domän när komplexa rötter inte ingår (4.333).
+Skydd: `tools/felrapporter-2026-11-09.test.js`, browserharness och cases.json.
