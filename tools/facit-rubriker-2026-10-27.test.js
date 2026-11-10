@@ -9,6 +9,11 @@ const FÄRDIGA={
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
   'enhetscirkeln_trianglar',
+  'enhetscirkeln_formler',
+  'dubbla_vinkeln',
+  'additionsformler',
+  'trig_identiteter',
+  'trig_ekv_formler',
 ];
 const GENERISK=/^(Steg \d+|Lös ekvationen|Lös|Förenkla|Beräkna|Svar|Derivera|Sätt in|Faktorisera|Multiplicera ut|Kontrollera|Metod)\.?$/i;
 function brister(s){

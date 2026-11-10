@@ -23,6 +23,11 @@ Ma4-sessionen fyller i den här tabellen. Svaren kontrolleras automatiskt mot `r
 | Område | Uppgifter | Fel och övriga ändringar |
 |---|---|---|
 | enhetscirkeln_trianglar | 42 nya facit (1.429 hade redan rubriker, 1.04 är inte spelbar) | Inga räknefel. Alla svar är omräknade, även 1.672 (åttahörningens area \(2\sqrt2\)), 1.679 och 1.680. 1.410 har nu kommentarer på de tre felaktiga alternativen. |
+| enhetscirkeln_formler | 34 nya facit (4 är inte spelbara) | Inga räknefel. Alla svar är omräknade. 1.675 (två delfrågor utan delkort) har nu ett facit med a) och b) enligt facitmallen. |
+| dubbla_vinkeln | 34 nya facit (14 är inte spelbara) | Inga räknefel. Alla svar är omräknade. 1.214 och 1.220 är samma uppgift; facit är skrivna på olika sätt. 1.250 löses med en 3–4–5-triangel i stället för tangensformeln för sin 2x, som inte står i formelbladet. |
+| additionsformler | 28 nya facit (4 är inte spelbara) | Inga räknefel. Alla svar är omräknade. Dubbletter i området: 1.29 och 1.38 samt 1.41 och 1.145 är samma uppgifter (inte borttagna); facit delar upp vinklarna på olika sätt. |
+| trig_identiteter | 25 nya facit (1.705 hade redan rubriker, 3 är inte spelbara) | Inga räknefel. Alla svar är omräknade. 1.141 (två delsvar utan delkort) har båda svaren i svarsraden. |
+| trig_ekv_formler | 36 nya facit (1.201, 1.240, 1.290 och 1.704 hade redan rubriker, 2 är inte spelbara) | Inga räknefel. Alla vinklar är omräknade och kontrollerade mot `rättSvar`. Andragradsekvationer i \(u=\sin x\) eller \(u=\cos x\) löses med pq-formeln på normalform; ekvationer med en gemensam faktor löses med utbrytning och nollproduktmetoden, med en rubrik om varför man inte delar med faktorn. Allmänna lösningar anger att \(n\in\mathbb Z\). |
 
 ## Arbetssätt per område
 
