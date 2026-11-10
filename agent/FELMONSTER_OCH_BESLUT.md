@@ -3606,3 +3606,9 @@ Fråga efter en decimal och godta 99,0, inte 100 eller 101 m. 6.22:s mätning
 är samtidig i tågets referenssystem, inte fotografiskt utseende. Bevara
 6.12:s två beräknade tabellalternativ. Skydd: browserfallen med prefix
 `fy2-langdkontraktion-facit-2026-11-10`.
+
+Uppföljning samma dag: områdets sju återstående uppgifter och deras delfacit
+är klara, alltså 34/34 i längdkontraktion. I 6.52 ska samtidighetstransformationen
+ange vilken port som subtraheras och vilken riktning som är positiv. Bortre minus
+bakre portens stängning ger −35,6 ns i stångens system; ett positivt belopp utan
+ordningsdefinition förklarar inte varför bortre porten stängs först.

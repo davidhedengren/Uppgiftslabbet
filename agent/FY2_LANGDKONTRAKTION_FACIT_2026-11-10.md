@@ -35,3 +35,19 @@ Författarkälla: tools/fy2-langdkontraktion-facit-2026-11-10.py. Browserharness
 - Ingen rapportstatus eller kommentar sparas i appen. Om 6.21 rapporteras kan kommentaren vara: ”Maskinfacitet var fel. Tåget mäts till 99,0 m och ryms därför i tunneln i markens system. Frågan och rättningen är korrigerade.”
 
 Kvar i området till nästa omgång: 6.9, 6.19, 6.24, 6.30, 6.51, 6.52, 6.57. Ingen fullständig granskning av deras facit påstås här.
+
+## Andra pushomgången: de sista sju uppgifterna
+
+Efter första pushen är även **6.9, 6.19, 6.24, 6.30, 6.51, 6.52 och 6.57** omskrivna. Därmed har samtliga **34 uppgifter** i området och alla deras explicita delfacit fått mallen.
+
+- 6.9 skiljer mellan skeppets förflyttning enligt jorden och jordens rörelse bort från Pelle i skeppets system.
+- 6.19 förklarar att kaptenens avstånd avser samtidiga positioner i skeppets system, inte fotografiskt utseende.
+- 6.24 anger nu uttryckligen jordens referenssystem i frågan. Vilolivstid, tidsdilatation och färdsträcka kopplas ihop med insättningar.
+- 6.30 visar substitutionen β=v/c, kvadreringen och den positiva rot som ger farten. Inga svarsvärden ändras.
+- 6.51 får eget komplett facit per del. Marksystemets färdtid cirka 50,28 μs ger klassiskt cirka 8,1·10⁻¹¹ kvar; egentiden cirka 5,02 μs ger cirka 9,8 %. Samma tid härleds i myonens system från den kontraherade sträckan.
+- 6.52 anger händelseordning och koordinatriktning innan samtidighetstransformationen. Med bortre porten minus bakre porten blir Δt′≈−35,6 ns: bortre porten stängs först. Det gamla facitet använde positivt belopp utan definierad ordning. Absolutbeloppet var korrekt. Befintlig jämförelsefigur i facit bevaras.
+- 6.57 får separata facit för åldrarna 45/37 år, beräkningen av 12 år i skeppets system och varför vändningen bryter symmetrin. Förklaringen gäller hela resan och använder inte acceleration som en fristående formel för åldersskillnaden.
+
+Ingen ytterligare numerisk rättning eller nivåändring i de sju. Samtliga tillåter miniräknare; inga kräver GeoGebra. Alla 34 granskade frågors svar utom 6.21 var matematiskt korrekta; presentationen ändras ändå.
+
+Utökad browserkontroll omfattar 48 svarsförsök och 82 kortvisningar per app (34 huvudfacit plus sju explicita delkort, två bredder). De manuella sammansatta svaren är dessutom oberoende omräknade med relativitetssambanden och sönderfallslagen. Sju tidigare relativitets-/figurregressioner passerar. Full matematisk granskning av andra områden i bankerna återstår.
