@@ -3623,3 +3623,10 @@ halveringstid ska inte blandas ihop med medellivslängden i 6.324. 6.55 b söker
 signalavståndsfelet c·δt, inte en exakt positionsavvikelse för en GPS-mottagare.
 Fråga inte efter egentid i ledtrådar till rena gamma- eller signalavståndsfrågor.
 Skydd: `fy2-tidsdilatation-facit-2026-11-10.test.js`, browserharness och cases.
+
+## Ma1 0.167: beskriv operationsföljden tydligt (10 november)
+
+[Rapport och fem jämförelser](MA1_0_167_2026-11-10.md). 0.167 ber eleven lägga
+samman 4 och 2 och sedan dividera 48 med resultatet. Skriv operationerna som
+två meningar och förklara parentesens funktion utan ”divisor”. Rätt svar och
+öppen lärarfråga bevaras; detta ersätter inte beslutet om dolda alternativ.
