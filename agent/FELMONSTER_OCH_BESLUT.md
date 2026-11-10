@@ -3612,3 +3612,14 @@ Uppföljning samma dag: områdets sju återstående uppgifter och deras delfacit
 ange vilken port som subtraheras och vilken riktning som är positiv. Bortre minus
 bakre portens stängning ger −35,6 ns i stångens system; ett positivt belopp utan
 ordningsdefinition förklarar inte varför bortre porten stängs först.
+
+## Fy2 tidsdilatation: konkreta facit och rätt klocka (10 november)
+
+[Alla 34 uppgifter och GPS-delarna](FY2_TIDSDILATATION_FACIT_2026-11-10.md)
+är omskrivna enligt facitmallen. Skilj mellan jordtid och egentid med hänvisning
+till de faktiska händelserna i uppgiften. Tidskvoten är inte alltid jordtid delad
+med skeppstid: i 6.10 sker händelserna på samma plats på jorden. 6.302:s
+halveringstid ska inte blandas ihop med medellivslängden i 6.324. 6.55 b söker
+signalavståndsfelet c·δt, inte en exakt positionsavvikelse för en GPS-mottagare.
+Fråga inte efter egentid i ledtrådar till rena gamma- eller signalavståndsfrågor.
+Skydd: `fy2-tidsdilatation-facit-2026-11-10.test.js`, browserharness och cases.
