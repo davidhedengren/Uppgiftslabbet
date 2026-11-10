@@ -3630,3 +3630,15 @@ Skydd: `fy2-tidsdilatation-facit-2026-11-10.test.js`, browserharness och cases.
 samman 4 och 2 och sedan dividera 48 med resultatet. Skriv operationerna som
 två meningar och förklara parentesens funktion utan ”divisor”. Rätt svar och
 öppen lärarfråga bevaras; detta ersätter inte beslutet om dolda alternativ.
+
+## Fy2 relativistisk energi: färdiga facit och konsekvent modell (10 november)
+
+[Alla 37 ID:n och 12 delfacit](FY2_RELATIVISTISK_ENERGI_FACIT_2026-11-10.md)
+är omskrivna. Förklara om energin är viloenergi, total eller kinetisk innan
+formeln väljs. Ingen Lorentzfaktor behövs i rena viloenergi-/massdefektfrågor.
+6.53 avser efter rättningen en konstantfartspassage efter accelerationen; under
+själva accelerationen finns inget enda vilosystem/gamma för hela sträckan.
+6.36:s K/c² är en massekvivalent i vägens system, inte ändrad vilomassa.
+6.54:s livstid bygger på konstant effekt; 6.56:s ring ska inte längdkontraheras
+som en rak stav. Skydd: `fy2-relativistisk-energi-facit-2026-11-10.test.js`
+och motsvarande faktiska browserfall.
