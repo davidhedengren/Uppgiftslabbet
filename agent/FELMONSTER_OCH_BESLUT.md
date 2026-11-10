@@ -3571,3 +3571,18 @@ Ord för små antal accepteras bara i avgränsade numeriska antalsfrågor utan e
 Tangentderivator måste använda samma radianenhet i intervall och svar (1.345).
 Polynomfrågor anger reell domän när komplexa rötter inte ingår (4.333).
 Skydd: `tools/felrapporter-2026-11-09.test.js`, browserharness och cases.json.
+
+## 10 november: precision ska komma från data och massmarkering i felloggen
+
+[Alla sex rapporter, jämförelser och kommentarer](FELRAPPORTER_2026-11-10_0824.md).
+Fy1 3.217:s sju siffror och 4.73 c:s fyra siffror kom från facit och ska inte
+återinföras. Använd oavrundade mål och relevanta mätdata. Vid subtraktion av
+26 och 20 cm är förlängningen 6 cm med en värdesiffra. 7.144 b behöver inte få
+ett påhittat precist mellanresultat för att vara självständigt; ge originaldata
+och räkna med kvoten mellan värmekapaciteter. 7.139 a behåller sitt uttryckliga
+heltalskrav; 1715 godtas. 8.439–8.444 är märkt fördjupning med modell och `spel:false`.
+
+Felloggens massknapp använder samma granskning som enskilda rader och får bara
+behandla öppna grupper. Sparfel får aldrig presenteras som genomförd granskning.
+Skydd: `felrapporter-2026-11-10.browser.cjs` med cases samt
+Kunskapsgymmets `fellogg-alla-2026-11-10.browser.cjs`.
