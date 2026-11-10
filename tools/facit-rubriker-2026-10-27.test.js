@@ -14,6 +14,8 @@ FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
   'additionsformler',
   'trig_identiteter',
   'trig_ekv_formler',
+  'asinx_bcosx',
+  'trig_grundekvationer',
 ];
 const GENERISK=/^(Steg \d+|Lös ekvationen|Lös|Förenkla|Beräkna|Svar|Derivera|Sätt in|Faktorisera|Multiplicera ut|Kontrollera|Metod)\.?$/i;
 function brister(s){
