@@ -1069,3 +1069,10 @@ för ”besöks”. 24 nya uppgifter: 12 alfa–beta-träd (rotvärde och beskä
 medel och svår), 4 minimaxträd och en uppgift i vart och ett av de övriga åtta
 områdena. Banken har 95 uppgifter. 57/57 tester godkända.
 [Ändringar och svar](agent/AI_PAFYLLNAD3_2026-11-11.md).
+
+## 2026-11-11 – AI, 30 självrättande uppgifter för Kunskapsgymmet
+
+Tre nya uppgifter per område (1.32–1.43, 2.35–2.46, 3.31–3.36) i
+Kunskapsgymmets format: tal- och flervalsdelar som rättas automatiskt.
+Banken har 125 uppgifter. 65/65 tester godkända och inga nya validatorfynd.
+[Format, svar och kontroller](agent/AI_KUNSKAPSGYMMET_2026-11-11.md).

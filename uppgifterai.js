@@ -8737,5 +8737,3690 @@ window.BANKAI = [
         "etikett": "c"
       }
     ]
+  },
+  {
+    "id": "1.32",
+    "kap": 1,
+    "omr": "ko_stack",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Kön efter några steg",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "C",
+      3
+    ],
+    "tolerans": [
+      null,
+      0
+    ],
+    "t": "<p>Noder läggs in i en FIFO-kö och tas ut enligt följande:</p><p>lägg in A, B, C och D → ta ut två noder → lägg in E.</p><p>a) Vilken nod står först i kön när stegen är gjorda? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A</p><p class=\"ul-alt\"><strong>B.</strong> C</p><p class=\"ul-alt\"><strong>C.</strong> D</p><p class=\"ul-alt\"><strong>D.</strong> E</p><p>b) Hur många noder ligger i kön när stegen är gjorda?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A och B tas ut</p><p>De lades in först. Kvar i kön står C, D och sedan E längst bak.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C.</p><ul><li><strong>A:</strong> A lades in först och har redan tagits ut.</li><li><strong>B:</strong> C är den äldsta noden som är kvar i kön.</li><li><strong>C:</strong> D står efter C i kön.</li><li><strong>D:</strong> E lades in sist och står längst bak.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Fyra in, två ut och en in till</p><p>4 − 2 + 1 = 3. Kön är C, D, E.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div></div>",
+    "ledtrad": "<p>I en FIFO-kö tas den nod ut som har legat längst.</p>",
+    "spelIntro": "<p>Noder läggs in i en FIFO-kö och tas ut enligt följande:</p><p>lägg in A, B, C och D → ta ut två noder → lägg in E.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod står först i kön när stegen är gjorda? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A och B tas ut</p><p>De lades in först. Kvar i kön står C, D och sedan E längst bak.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C.</p><ul><li><strong>A:</strong> A lades in först och har redan tagits ut.</li><li><strong>B:</strong> C är den äldsta noden som är kvar i kön.</li><li><strong>C:</strong> D står efter C i kön.</li><li><strong>D:</strong> E lades in sist och står längst bak.</li></ul></div>",
+        "ledtrad": "<p>Vilka noder tas ut vid de två uttagen?</p>",
+        "alternativ": [
+          {
+            "txt": "A",
+            "ratt": false,
+            "kommentar": "A lades in först och har redan tagits ut."
+          },
+          {
+            "txt": "C",
+            "ratt": true,
+            "kommentar": "C är den äldsta noden som är kvar i kön."
+          },
+          {
+            "txt": "D",
+            "ratt": false,
+            "kommentar": "D står efter C i kön."
+          },
+          {
+            "txt": "E",
+            "ratt": false,
+            "kommentar": "E lades in sist och står längst bak."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många noder ligger i kön när stegen är gjorda?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Fyra in, två ut och en in till</p><p>4 − 2 + 1 = 3. Kön är C, D, E.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Räkna hur många noder som läggs in och hur många som tas ut.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.33",
+    "kap": 1,
+    "omr": "ko_stack",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Uttag ur en stack",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      3,
+      "F"
+    ],
+    "tolerans": [
+      0,
+      null
+    ],
+    "t": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 238\" role=\"img\" aria-label=\"Stack med C nederst och K överst.\" style=\"width:100%;max-width:330px;height:auto\"><title>Stack med C nederst och K överst.</title><rect x=\"60\" y=\"34\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"65\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">K</text><rect x=\"60\" y=\"80\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"111\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">H</text><rect x=\"60\" y=\"126\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"157\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">F</text><rect x=\"60\" y=\"172\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"203\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">C</text><path d=\"M52,28 V222 H138 V28\" fill=\"none\" stroke=\"#111827\" stroke-width=\"2.5\"/><line x1=\"200\" y1=\"57\" x2=\"146\" y2=\"57\" stroke=\"#111827\" stroke-width=\"2\"/><polygon points=\"138,57 150,51 150,63\" fill=\"#111827\"/><text x=\"206\" y=\"54\" font-size=\"14\" fill=\"#111827\">överst: läggs in</text><text x=\"206\" y=\"72\" font-size=\"14\" fill=\"#111827\">och tas ut här</text><text x=\"150\" y=\"204\" font-size=\"14\" fill=\"#111827\">nederst</text></svg><p>Bilden visar en stack. Noder tas ut en i taget.</p><p>a) Hur många noder måste tas ut innan C kan tas ut?</p><p>b) Vilken nod ligger överst efter två uttag? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> C</p><p class=\"ul-alt\"><strong>B.</strong> F</p><p class=\"ul-alt\"><strong>C.</strong> H</p><p class=\"ul-alt\"><strong>D.</strong> K</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">C ligger nederst</p><p>K, H och F ligger ovanpå C och måste tas ut först.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">De två översta tas ut</p><p>K och H tas ut. Då ligger F överst.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> F.</p><ul><li><strong>A:</strong> C ligger nederst och tas ut sist.</li><li><strong>B:</strong> K och H tas ut, och F blir den översta.</li><li><strong>C:</strong> H tas ut vid det andra uttaget.</li><li><strong>D:</strong> K ligger överst från början och tas ut först.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>I en stack kan bara den översta noden tas ut.</p>",
+    "spelIntro": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 238\" role=\"img\" aria-label=\"Stack med C nederst och K överst.\" style=\"width:100%;max-width:330px;height:auto\"><title>Stack med C nederst och K överst.</title><rect x=\"60\" y=\"34\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"65\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">K</text><rect x=\"60\" y=\"80\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"111\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">H</text><rect x=\"60\" y=\"126\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"157\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">F</text><rect x=\"60\" y=\"172\" width=\"70\" height=\"46\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"95\" y=\"203\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#111827\">C</text><path d=\"M52,28 V222 H138 V28\" fill=\"none\" stroke=\"#111827\" stroke-width=\"2.5\"/><line x1=\"200\" y1=\"57\" x2=\"146\" y2=\"57\" stroke=\"#111827\" stroke-width=\"2\"/><polygon points=\"138,57 150,51 150,63\" fill=\"#111827\"/><text x=\"206\" y=\"54\" font-size=\"14\" fill=\"#111827\">överst: läggs in</text><text x=\"206\" y=\"72\" font-size=\"14\" fill=\"#111827\">och tas ut här</text><text x=\"150\" y=\"204\" font-size=\"14\" fill=\"#111827\">nederst</text></svg><p>Bilden visar en stack. Noder tas ut en i taget.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Hur många noder måste tas ut innan C kan tas ut?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">C ligger nederst</p><p>K, H och F ligger ovanpå C och måste tas ut först.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Hur många noder ligger ovanpå C?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilken nod ligger överst efter två uttag? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">De två översta tas ut</p><p>K och H tas ut. Då ligger F överst.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> F.</p><ul><li><strong>A:</strong> C ligger nederst och tas ut sist.</li><li><strong>B:</strong> K och H tas ut, och F blir den översta.</li><li><strong>C:</strong> H tas ut vid det andra uttaget.</li><li><strong>D:</strong> K ligger överst från början och tas ut först.</li></ul></div>",
+        "ledtrad": "<p>Vilka två noder ligger överst från början?</p>",
+        "alternativ": [
+          {
+            "txt": "C",
+            "ratt": false,
+            "kommentar": "C ligger nederst och tas ut sist."
+          },
+          {
+            "txt": "F",
+            "ratt": true,
+            "kommentar": "K och H tas ut, och F blir den översta."
+          },
+          {
+            "txt": "H",
+            "ratt": false,
+            "kommentar": "H tas ut vid det andra uttaget."
+          },
+          {
+            "txt": "K",
+            "ratt": false,
+            "kommentar": "K ligger överst från början och tas ut först."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "F",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.34",
+    "kap": 1,
+    "omr": "ko_stack",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Tredje uttaget med kö och stack",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "R",
+      "Q"
+    ],
+    "tolerans": [
+      null,
+      null
+    ],
+    "t": "<p>Samma steg görs en gång med en FIFO-kö och en gång med en stack:</p><p>lägg in P, Q och R → ta ut en nod → lägg in S → ta ut tre noder.</p><p>a) Vilken nod tas ut som tredje nod med FIFO-kön? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> P</p><p class=\"ul-alt\"><strong>B.</strong> Q</p><p class=\"ul-alt\"><strong>C.</strong> R</p><p class=\"ul-alt\"><strong>D.</strong> S</p><p>b) Vilken nod tas ut som tredje nod med stacken? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> P</p><p class=\"ul-alt\"><strong>B.</strong> Q</p><p class=\"ul-alt\"><strong>C.</strong> R</p><p class=\"ul-alt\"><strong>D.</strong> S</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">FIFO tar ut i samma ordning som noderna lades in</p><p>P, Q, R och sist S.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> R.</p><ul><li><strong>A:</strong> P tas ut först.</li><li><strong>B:</strong> Q tas ut som andra nod.</li><li><strong>C:</strong> R lades in som tredje nod och tas ut som tredje.</li><li><strong>D:</strong> S lades in sist och tas ut sist.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första uttaget tar R</p><p>R ligger överst. Sedan läggs S in överst.</p></li><li><p class=\"facit-rubrik\">De tre sista uttagen</p><p>S, sedan Q och sist P.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Q.</p><ul><li><strong>A:</strong> P ligger nederst och tas ut sist.</li><li><strong>B:</strong> Efter R och S ligger Q överst.</li><li><strong>C:</strong> R tas ut först.</li><li><strong>D:</strong> S tas ut som andra nod.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Gör stegen två gånger: en gång där den äldsta noden tas ut och en gång där den senaste tas ut.</p>",
+    "spelIntro": "<p>Samma steg görs en gång med en FIFO-kö och en gång med en stack:</p><p>lägg in P, Q och R → ta ut en nod → lägg in S → ta ut tre noder.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod tas ut som tredje nod med FIFO-kön? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">FIFO tar ut i samma ordning som noderna lades in</p><p>P, Q, R och sist S.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> R.</p><ul><li><strong>A:</strong> P tas ut först.</li><li><strong>B:</strong> Q tas ut som andra nod.</li><li><strong>C:</strong> R lades in som tredje nod och tas ut som tredje.</li><li><strong>D:</strong> S lades in sist och tas ut sist.</li></ul></div>",
+        "ledtrad": "<p>I vilken ordning lades noderna in?</p>",
+        "alternativ": [
+          {
+            "txt": "P",
+            "ratt": false,
+            "kommentar": "P tas ut först."
+          },
+          {
+            "txt": "Q",
+            "ratt": false,
+            "kommentar": "Q tas ut som andra nod."
+          },
+          {
+            "txt": "R",
+            "ratt": true,
+            "kommentar": "R lades in som tredje nod och tas ut som tredje."
+          },
+          {
+            "txt": "S",
+            "ratt": false,
+            "kommentar": "S lades in sist och tas ut sist."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "R",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilken nod tas ut som tredje nod med stacken? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första uttaget tar R</p><p>R ligger överst. Sedan läggs S in överst.</p></li><li><p class=\"facit-rubrik\">De tre sista uttagen</p><p>S, sedan Q och sist P.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Q.</p><ul><li><strong>A:</strong> P ligger nederst och tas ut sist.</li><li><strong>B:</strong> Efter R och S ligger Q överst.</li><li><strong>C:</strong> R tas ut först.</li><li><strong>D:</strong> S tas ut som andra nod.</li></ul></div>",
+        "ledtrad": "<p>Skriv upp stacken efter varje steg.</p>",
+        "alternativ": [
+          {
+            "txt": "P",
+            "ratt": false,
+            "kommentar": "P ligger nederst och tas ut sist."
+          },
+          {
+            "txt": "Q",
+            "ratt": true,
+            "kommentar": "Efter R och S ligger Q överst."
+          },
+          {
+            "txt": "R",
+            "ratt": false,
+            "kommentar": "R tas ut först."
+          },
+          {
+            "txt": "S",
+            "ratt": false,
+            "kommentar": "S tas ut som andra nod."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Q",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.35",
+    "kap": 1,
+    "omr": "ko_sokning",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Den längsta kön",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      "H"
+    ],
+    "tolerans": [
+      0,
+      null
+    ],
+    "t": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A, B och C. A har D och E, B har F, C har G och H, och E har målet I.\" style=\"width:100%;max-width:400px;height:auto\"><title>Sökträd: S har barnen A, B och C. A har D och E, B har F, C har G och H, och E har målet I.</title><line x1=\"200\" y1=\"35\" x2=\"90\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"200\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"310\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"110\" x2=\"50\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"110\" x2=\"130\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"310\" y1=\"110\" x2=\"270\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"310\" y1=\"110\" x2=\"350\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"130\" y1=\"185\" x2=\"130\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"90\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"90\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"200\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"310\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"310\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"50\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"50\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"130\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"130\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"200\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">F</text><circle cx=\"270\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"270\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">G</text><circle cx=\"350\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"350\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">H</text><circle cx=\"130\" cy=\"260\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"130\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">I</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med BFS (vänster gren först).</p><p>a) Hur många noder ligger som mest i kön samtidigt?</p><p>b) Vilken nod tas ut direkt före målet I? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> E</p><p class=\"ul-alt\"><strong>B.</strong> F</p><p class=\"ul-alt\"><strong>C.</strong> H</p><p class=\"ul-alt\"><strong>D.</strong> D</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">S</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">A B C</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">B C D E</td></tr><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">C D E F</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">D E F G H</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">E F G H</td></tr><tr><td style=\"text-align:left\">E</td><td style=\"text-align:left\">F G H I</td></tr><tr><td style=\"text-align:left\">F</td><td style=\"text-align:left\">G H I</td></tr><tr><td style=\"text-align:left\">G</td><td style=\"text-align:left\">H I</td></tr><tr><td style=\"text-align:left\">H</td><td style=\"text-align:left\">I</td></tr><tr><td style=\"text-align:left\">I</td><td style=\"text-align:left\">tom</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Den längsta kön</p><p>Efter att C har tagits ut ligger D, E, F, G och H i kön.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I läggs in sist</p><p>I är barn till E och läggs in efter G och H. Därför tas G och H ut innan I.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> H.</p><ul><li><strong>A:</strong> E lägger in I, men därefter tas F, G och H ut innan I.</li><li><strong>B:</strong> F tas ut som sjunde nod.</li><li><strong>C:</strong> H lades in före I och tas ut direkt före målet.</li><li><strong>D:</strong> D tas ut som femte nod.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>En nods barn läggs längst bak i kön. Kön kan bli lång när många noder på samma nivå har barn.</p>",
+    "spelIntro": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A, B och C. A har D och E, B har F, C har G och H, och E har målet I.\" style=\"width:100%;max-width:400px;height:auto\"><title>Sökträd: S har barnen A, B och C. A har D och E, B har F, C har G och H, och E har målet I.</title><line x1=\"200\" y1=\"35\" x2=\"90\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"200\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"310\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"110\" x2=\"50\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"110\" x2=\"130\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"310\" y1=\"110\" x2=\"270\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"310\" y1=\"110\" x2=\"350\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"130\" y1=\"185\" x2=\"130\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"90\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"90\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"200\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"310\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"310\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"50\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"50\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"130\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"130\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"200\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">F</text><circle cx=\"270\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"270\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">G</text><circle cx=\"350\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"350\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">H</text><circle cx=\"130\" cy=\"260\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"130\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">I</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med BFS (vänster gren först).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Hur många noder ligger som mest i kön samtidigt?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">S</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">A B C</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">B C D E</td></tr><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">C D E F</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">D E F G H</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">E F G H</td></tr><tr><td style=\"text-align:left\">E</td><td style=\"text-align:left\">F G H I</td></tr><tr><td style=\"text-align:left\">F</td><td style=\"text-align:left\">G H I</td></tr><tr><td style=\"text-align:left\">G</td><td style=\"text-align:left\">H I</td></tr><tr><td style=\"text-align:left\">H</td><td style=\"text-align:left\">I</td></tr><tr><td style=\"text-align:left\">I</td><td style=\"text-align:left\">tom</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Den längsta kön</p><p>Efter att C har tagits ut ligger D, E, F, G och H i kön.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Skriv upp kön efter varje uttag och räkna noderna.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilken nod tas ut direkt före målet I? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I läggs in sist</p><p>I är barn till E och läggs in efter G och H. Därför tas G och H ut innan I.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> H.</p><ul><li><strong>A:</strong> E lägger in I, men därefter tas F, G och H ut innan I.</li><li><strong>B:</strong> F tas ut som sjunde nod.</li><li><strong>C:</strong> H lades in före I och tas ut direkt före målet.</li><li><strong>D:</strong> D tas ut som femte nod.</li></ul></div>",
+        "ledtrad": "<p>I vilken ordning lades G, H och I in i kön?</p>",
+        "alternativ": [
+          {
+            "txt": "E",
+            "ratt": false,
+            "kommentar": "E lägger in I, men därefter tas F, G och H ut innan I."
+          },
+          {
+            "txt": "F",
+            "ratt": false,
+            "kommentar": "F tas ut som sjunde nod."
+          },
+          {
+            "txt": "H",
+            "ratt": true,
+            "kommentar": "H lades in före I och tas ut direkt före målet."
+          },
+          {
+            "txt": "D",
+            "ratt": false,
+            "kommentar": "D tas ut som femte nod."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "H",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.36",
+    "kap": 1,
+    "omr": "ko_sokning",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Överst i stacken",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "C",
+      7
+    ],
+    "tolerans": [
+      null,
+      0
+    ],
+    "t": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A och B. A har C och D, B har E och F, och E har målet G.\" style=\"width:100%;max-width:380px;height:auto\"><title>Sökträd: S har barnen A och B. A har C och D, B har E och F, och E har målet G.</title><line x1=\"200\" y1=\"35\" x2=\"110\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"290\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"60\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"250\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"330\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"250\" y1=\"185\" x2=\"250\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"110\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"290\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"290\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"60\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"160\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"160\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"250\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"250\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"330\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"330\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">F</text><circle cx=\"250\" cy=\"260\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"250\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">G</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med DFS (vänster gren först). Noderna sparas i en stack, och barnen läggs in så att det vänstra barnet hamnar överst.</p><p>a) Vilken nod ligger överst i stacken direkt efter att A har tagits ut och dess barn lagts in? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> B</p><p class=\"ul-alt\"><strong>B.</strong> C</p><p class=\"ul-alt\"><strong>C.</strong> D</p><p class=\"ul-alt\"><strong>D.</strong> E</p><p>b) Hur många noder har tagits ut ur stacken när målet tas ut, inklusive start och mål?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">S lägger in B och A</p><p>A hamnar överst och tas ut.</p></li><li><p class=\"facit-rubrik\">A lägger in D och C</p><p>C läggs in sist och hamnar överst. Stacken är B, D, C med C överst.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C.</p><ul><li><strong>A:</strong> B ligger nederst. Den lades in av S före A:s barn.</li><li><strong>B:</strong> C är A:s vänstra barn och läggs in sist.</li><li><strong>C:</strong> D läggs in före C och ligger under C.</li><li><strong>D:</strong> E läggs in först när B tas ut.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Stacken efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Stacken efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">S</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">B A</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">B D C</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">B D</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">B</td></tr><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">F E</td></tr><tr><td style=\"text-align:left\">E</td><td style=\"text-align:left\">F G</td></tr><tr><td style=\"text-align:left\">G</td><td style=\"text-align:left\">F</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Räkna uttagen</p><p>S, A, C, D, B, E, G: 7 noder. F tas aldrig ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div></div></div></div>",
+    "ledtrad": "<p>Den översta noden tas ut. Barnen läggs på stacken i omvänd ordning, så att det vänstra barnet tas ut först.</p>",
+    "spelIntro": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A och B. A har C och D, B har E och F, och E har målet G.\" style=\"width:100%;max-width:380px;height:auto\"><title>Sökträd: S har barnen A och B. A har C och D, B har E och F, och E har målet G.</title><line x1=\"200\" y1=\"35\" x2=\"110\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"290\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"60\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"250\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"330\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"250\" y1=\"185\" x2=\"250\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"110\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"290\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"290\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"60\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"160\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"160\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"250\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"250\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"330\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"330\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">F</text><circle cx=\"250\" cy=\"260\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"250\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">G</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med DFS (vänster gren först). Noderna sparas i en stack, och barnen läggs in så att det vänstra barnet hamnar överst.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod ligger överst i stacken direkt efter att A har tagits ut och dess barn lagts in? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">S lägger in B och A</p><p>A hamnar överst och tas ut.</p></li><li><p class=\"facit-rubrik\">A lägger in D och C</p><p>C läggs in sist och hamnar överst. Stacken är B, D, C med C överst.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C.</p><ul><li><strong>A:</strong> B ligger nederst. Den lades in av S före A:s barn.</li><li><strong>B:</strong> C är A:s vänstra barn och läggs in sist.</li><li><strong>C:</strong> D läggs in före C och ligger under C.</li><li><strong>D:</strong> E läggs in först när B tas ut.</li></ul></div>",
+        "ledtrad": "<p>I vilken ordning läggs A:s barn in för att det vänstra ska hamna överst?</p>",
+        "alternativ": [
+          {
+            "txt": "B",
+            "ratt": false,
+            "kommentar": "B ligger nederst. Den lades in av S före A:s barn."
+          },
+          {
+            "txt": "C",
+            "ratt": true,
+            "kommentar": "C är A:s vänstra barn och läggs in sist."
+          },
+          {
+            "txt": "D",
+            "ratt": false,
+            "kommentar": "D läggs in före C och ligger under C."
+          },
+          {
+            "txt": "E",
+            "ratt": false,
+            "kommentar": "E läggs in först när B tas ut."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många noder har tagits ut ur stacken när målet tas ut, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Stacken efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Stacken efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">S</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">B A</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">B D C</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">B D</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">B</td></tr><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">F E</td></tr><tr><td style=\"text-align:left\">E</td><td style=\"text-align:left\">F G</td></tr><tr><td style=\"text-align:left\">G</td><td style=\"text-align:left\">F</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Räkna uttagen</p><p>S, A, C, D, B, E, G: 7 noder. F tas aldrig ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div>",
+        "ledtrad": "<p>Gå igenom hela vänstra grenen innan B.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 7,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.37",
+    "kap": 1,
+    "omr": "ko_sokning",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Kön i en 3 × 4-labyrint",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "A2 och B1",
+      3,
+      "C3"
+    ],
+    "tolerans": [
+      null,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p><p>a) Vilka rutor ligger i kön direkt efter att start har tagits ut? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A2 och B1</p><p class=\"ul-alt\"><strong>B.</strong> A2, B1 och B2</p><p class=\"ul-alt\"><strong>C.</strong> Bara A2</p><p class=\"ul-alt\"><strong>D.</strong> A2 och A3</p><p>b) Hur många rutor ligger som mest i kön samtidigt?</p><p>c) Vilken ruta tas ut direkt före målet? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> C3</p><p class=\"ul-alt\"><strong>B.</strong> B3</p><p class=\"ul-alt\"><strong>C.</strong> C2</p><p class=\"ul-alt\"><strong>D.</strong> A4</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Pröva grannarna i ordningen ↑ → ↓ ←</p><p>Uppåt finns ingen ruta. Åt höger A2, nedåt B1, åt vänster ingen ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A2 och B1.</p><ul><li><strong>A:</strong> A2 (→) och B1 (↓) är de enda grannarna till start.</li><li><strong>B:</strong> B2 är en vägg.</li><li><strong>C:</strong> B1 är också granne till start.</li><li><strong>D:</strong> A3 ligger två steg från start.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 A3</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A3 C1</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">C1 A4 B3</td></tr><tr><td style=\"text-align:left\">C1</td><td style=\"text-align:left\">A4 B3 C2</td></tr><tr><td style=\"text-align:left\">A4</td><td style=\"text-align:left\">B3 C2</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">C2 C3</td></tr><tr><td style=\"text-align:left\">C2</td><td style=\"text-align:left\">C3</td></tr><tr><td style=\"text-align:left\">C3</td><td style=\"text-align:left\">C4</td></tr><tr><td style=\"text-align:left\">C4</td><td style=\"text-align:left\">tom</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Den längsta kön</p><p>Kön är som längst 3 rutor, till exempel A4, B3 och C2 efter att C1 har tagits ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">De sista uttagen</p><p>Efter C2 tas C3 ut, och C3 lägger in målet C4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C3.</p><ul><li><strong>A:</strong> C3 lägger in målet och tas ut direkt före det.</li><li><strong>B:</strong> B3 tas ut som sjunde ruta.</li><li><strong>C:</strong> C2 tas ut som åttonde ruta, före C3.</li><li><strong>D:</strong> A4 tas ut som sjätte ruta.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Nya rutor läggs längst bak i kön. En ruta som redan har upptäckts läggs inte in igen.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilka rutor ligger i kön direkt efter att start har tagits ut? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Pröva grannarna i ordningen ↑ → ↓ ←</p><p>Uppåt finns ingen ruta. Åt höger A2, nedåt B1, åt vänster ingen ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A2 och B1.</p><ul><li><strong>A:</strong> A2 (→) och B1 (↓) är de enda grannarna till start.</li><li><strong>B:</strong> B2 är en vägg.</li><li><strong>C:</strong> B1 är också granne till start.</li><li><strong>D:</strong> A3 ligger två steg från start.</li></ul></div>",
+        "ledtrad": "<p>Vilka grannar har start?</p>",
+        "alternativ": [
+          {
+            "txt": "A2 och B1",
+            "ratt": true,
+            "kommentar": "A2 (→) och B1 (↓) är de enda grannarna till start."
+          },
+          {
+            "txt": "A2, B1 och B2",
+            "ratt": false,
+            "kommentar": "B2 är en vägg."
+          },
+          {
+            "txt": "Bara A2",
+            "ratt": false,
+            "kommentar": "B1 är också granne till start."
+          },
+          {
+            "txt": "A2 och A3",
+            "ratt": false,
+            "kommentar": "A3 ligger två steg från start."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "A2 och B1",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor ligger som mest i kön samtidigt?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 A3</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A3 C1</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">C1 A4 B3</td></tr><tr><td style=\"text-align:left\">C1</td><td style=\"text-align:left\">A4 B3 C2</td></tr><tr><td style=\"text-align:left\">A4</td><td style=\"text-align:left\">B3 C2</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">C2 C3</td></tr><tr><td style=\"text-align:left\">C2</td><td style=\"text-align:left\">C3</td></tr><tr><td style=\"text-align:left\">C3</td><td style=\"text-align:left\">C4</td></tr><tr><td style=\"text-align:left\">C4</td><td style=\"text-align:left\">tom</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">Den längsta kön</p><p>Kön är som längst 3 rutor, till exempel A4, B3 och C2 efter att C1 har tagits ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Skriv upp kön efter varje uttag och räkna rutorna.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilken ruta tas ut direkt före målet? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">De sista uttagen</p><p>Efter C2 tas C3 ut, och C3 lägger in målet C4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C3.</p><ul><li><strong>A:</strong> C3 lägger in målet och tas ut direkt före det.</li><li><strong>B:</strong> B3 tas ut som sjunde ruta.</li><li><strong>C:</strong> C2 tas ut som åttonde ruta, före C3.</li><li><strong>D:</strong> A4 tas ut som sjätte ruta.</li></ul></div>",
+        "ledtrad": "<p>Vilken av målets grannar läggs in i kön?</p>",
+        "alternativ": [
+          {
+            "txt": "C3",
+            "ratt": true,
+            "kommentar": "C3 lägger in målet och tas ut direkt före det."
+          },
+          {
+            "txt": "B3",
+            "ratt": false,
+            "kommentar": "B3 tas ut som sjunde ruta."
+          },
+          {
+            "txt": "C2",
+            "ratt": false,
+            "kommentar": "C2 tas ut som åttonde ruta, före C3."
+          },
+          {
+            "txt": "A4",
+            "ratt": false,
+            "kommentar": "A4 tas ut som sjätte ruta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C3",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "1.38",
+    "kap": 1,
+    "omr": "bfs",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "BFS med direkt rättning",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      7,
+      "C1",
+      16
+    ],
+    "tolerans": [
+      0,
+      null,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p><p>a) Hur många steg har vägen som BFS hittar?</p><p>b) Vilken ruta tas ut ur kön som femte ruta? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A3</p><p class=\"ul-alt\"><strong>B.</strong> B3</p><p class=\"ul-alt\"><strong>C.</strong> B4</p><p class=\"ul-alt\"><strong>D.</strong> C1</p><p>c) Hur många rutor tas ut ur kön, inklusive start och mål?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ föregångarna från målet</p><p>A1 → A2 → A3 → B3 → B4 → B5 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>8 rutor ger 7 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 A3</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A3 C1</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">C1 B3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C1 står först i kön</p><p>Efter att A3 har tagits ut står C1 först i kön och tas ut som femte ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C1.</p><ul><li><strong>A:</strong> A3 tas ut som fjärde ruta.</li><li><strong>B:</strong> B3 tas ut som sjätte ruta.</li><li><strong>C:</strong> B4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som femte.</li><li><strong>D:</strong> C1 tas ut som femte ruta.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, B1, A3, C1, B3, C2, D1, B4, C3, B5, D3, A5, C5, D4, D5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 16.</p></div></div></div></div>",
+    "ledtrad": "<p>BFS tar ut rutorna i ordning efter avstånd från start.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Hur många steg har vägen som BFS hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ föregångarna från målet</p><p>A1 → A2 → A3 → B3 → B4 → B5 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>8 rutor ger 7 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div>",
+        "ledtrad": "<p>Vägen har ett steg färre än antalet rutor på den.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 7,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilken ruta tas ut ur kön som femte ruta? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 A3</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A3 C1</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">C1 B3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C1 står först i kön</p><p>Efter att A3 har tagits ut står C1 först i kön och tas ut som femte ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C1.</p><ul><li><strong>A:</strong> A3 tas ut som fjärde ruta.</li><li><strong>B:</strong> B3 tas ut som sjätte ruta.</li><li><strong>C:</strong> B4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som femte.</li><li><strong>D:</strong> C1 tas ut som femte ruta.</li></ul></div>",
+        "ledtrad": "<p>Skriv upp kön efter varje uttag. Nya rutor läggs längst bak.</p>",
+        "alternativ": [
+          {
+            "txt": "A3",
+            "ratt": false,
+            "kommentar": "A3 tas ut som fjärde ruta."
+          },
+          {
+            "txt": "B3",
+            "ratt": false,
+            "kommentar": "B3 tas ut som sjätte ruta."
+          },
+          {
+            "txt": "B4",
+            "ratt": false,
+            "kommentar": "B4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som femte."
+          },
+          {
+            "txt": "C1",
+            "ratt": true,
+            "kommentar": "C1 tas ut som femte ruta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C1",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många rutor tas ut ur kön, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, B1, A3, C1, B3, C2, D1, B4, C3, B5, D3, A5, C5, D4, D5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 16.</p></div>",
+        "ledtrad": "<p>Räkna alla rutor som tas ut fram till och med målet.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 16,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "1.39",
+    "kap": 1,
+    "omr": "bfs",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Avstånd i en labyrint",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      2,
+      6,
+      "C1"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p><p>a) Hur många rutor ligger exakt 2 steg från start?</p><p>b) Hur många steg har vägen som BFS hittar?</p><p>c) Vilken ruta tas ut ur kön som fjärde ruta? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> B2</p><p class=\"ul-alt\"><strong>B.</strong> B3</p><p class=\"ul-alt\"><strong>C.</strong> C1</p><p class=\"ul-alt\"><strong>D.</strong> D1</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna steg utåt från start</p><p>Rutorna 2 steg bort: B3, D1.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ föregångarna från målet</p><p>B1 → B2 → B3 → C3 → C4 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>7 rutor ger 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">B1</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A1 B2 C1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">B2 C1</td></tr><tr><td style=\"text-align:left\">B2</td><td style=\"text-align:left\">C1 B3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C1 står först i kön</p><p>Efter att B2 har tagits ut står C1 först i kön och tas ut som fjärde ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C1.</p><ul><li><strong>A:</strong> B2 tas ut som tredje ruta.</li><li><strong>B:</strong> B3 tas ut som femte ruta. Det är den ruta som DFS skulle ta som fjärde.</li><li><strong>C:</strong> C1 tas ut som fjärde ruta.</li><li><strong>D:</strong> D1 tas ut som sjätte ruta.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Räkna steg utåt från start, en nivå i taget.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Hur många rutor ligger exakt 2 steg från start?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna steg utåt från start</p><p>Rutorna 2 steg bort: B3, D1.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Rutorna närmast start ligger 1 steg bort, deras nya grannar 2 steg bort, och så vidare.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många steg har vägen som BFS hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ föregångarna från målet</p><p>B1 → B2 → B3 → C3 → C4 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>7 rutor ger 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Vägen har ett steg färre än antalet rutor på den.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilken ruta tas ut ur kön som fjärde ruta? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">B1</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">A1 B2 C1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">B2 C1</td></tr><tr><td style=\"text-align:left\">B2</td><td style=\"text-align:left\">C1 B3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C1 står först i kön</p><p>Efter att B2 har tagits ut står C1 först i kön och tas ut som fjärde ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C1.</p><ul><li><strong>A:</strong> B2 tas ut som tredje ruta.</li><li><strong>B:</strong> B3 tas ut som femte ruta. Det är den ruta som DFS skulle ta som fjärde.</li><li><strong>C:</strong> C1 tas ut som fjärde ruta.</li><li><strong>D:</strong> D1 tas ut som sjätte ruta.</li></ul></div>",
+        "ledtrad": "<p>Skriv upp kön efter varje uttag. Nya rutor läggs längst bak.</p>",
+        "alternativ": [
+          {
+            "txt": "B2",
+            "ratt": false,
+            "kommentar": "B2 tas ut som tredje ruta."
+          },
+          {
+            "txt": "B3",
+            "ratt": false,
+            "kommentar": "B3 tas ut som femte ruta. Det är den ruta som DFS skulle ta som fjärde."
+          },
+          {
+            "txt": "C1",
+            "ratt": true,
+            "kommentar": "C1 tas ut som fjärde ruta."
+          },
+          {
+            "txt": "D1",
+            "ratt": false,
+            "kommentar": "D1 tas ut som sjätte ruta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C1",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "1.40",
+    "kap": 1,
+    "omr": "bfs",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Kön i en liten labyrint",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "C2",
+      11,
+      2
+    ],
+    "tolerans": [
+      null,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p><p>a) Vilken ruta tas ut ur kön som sjätte ruta? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> B3</p><p class=\"ul-alt\"><strong>B.</strong> C2</p><p class=\"ul-alt\"><strong>C.</strong> C3</p><p class=\"ul-alt\"><strong>D.</strong> C4</p><p>b) Hur många rutor tas ut ur kön, inklusive start och mål?</p><p>c) Hur många rutor ligger exakt 3 steg från start?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 B2</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">B2</td></tr><tr><td style=\"text-align:left\">B2</td><td style=\"text-align:left\">B3 C2</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">C2 C3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C2 står först i kön</p><p>Efter att B3 har tagits ut står C2 först i kön och tas ut som sjätte ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C2.</p><ul><li><strong>A:</strong> B3 tas ut som femte ruta.</li><li><strong>B:</strong> C2 tas ut som sjätte ruta.</li><li><strong>C:</strong> C3 tas ut som sjunde ruta.</li><li><strong>D:</strong> C4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som sjätte.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, B1, B2, B3, C2, C3, D2, C4, D1, D4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 11.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna steg utåt från start</p><p>Rutorna 3 steg bort: B3, C2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div></div>",
+    "ledtrad": "<p>Skriv upp kön efter varje uttag.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta tas ut ur kön som sjätte ruta? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kön efter varje uttag</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">Kön efter uttaget</th></tr></thead><tbody><tr><td style=\"text-align:left\">Från början</td><td style=\"text-align:left\">A1</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">A2 B1</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">B1 B2</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">B2</td></tr><tr><td style=\"text-align:left\">B2</td><td style=\"text-align:left\">B3 C2</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">C2 C3</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">C2 står först i kön</p><p>Efter att B3 har tagits ut står C2 först i kön och tas ut som sjätte ruta.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> C2.</p><ul><li><strong>A:</strong> B3 tas ut som femte ruta.</li><li><strong>B:</strong> C2 tas ut som sjätte ruta.</li><li><strong>C:</strong> C3 tas ut som sjunde ruta.</li><li><strong>D:</strong> C4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som sjätte.</li></ul></div>",
+        "ledtrad": "<p>Skriv upp kön efter varje uttag. Nya rutor läggs längst bak.</p>",
+        "alternativ": [
+          {
+            "txt": "B3",
+            "ratt": false,
+            "kommentar": "B3 tas ut som femte ruta."
+          },
+          {
+            "txt": "C2",
+            "ratt": true,
+            "kommentar": "C2 tas ut som sjätte ruta."
+          },
+          {
+            "txt": "C3",
+            "ratt": false,
+            "kommentar": "C3 tas ut som sjunde ruta."
+          },
+          {
+            "txt": "C4",
+            "ratt": false,
+            "kommentar": "C4 tas ut som nionde ruta. Det är den ruta som DFS skulle ta som sjätte."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "C2",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor tas ut ur kön, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, B1, B2, B3, C2, C3, D2, C4, D1, D4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 11.</p></div>",
+        "ledtrad": "<p>Räkna alla rutor som tas ut fram till och med målet.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 11,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många rutor ligger exakt 3 steg från start?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna steg utåt från start</p><p>Rutorna 3 steg bort: B3, C2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Rutorna närmast start ligger 1 steg bort, deras nya grannar 2 steg bort, och så vidare.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "1.41",
+    "kap": 1,
+    "omr": "dfs",
+    "niva": "C",
+    "poang": "3/1/0",
+    "familj": "DFS med direkt rättning",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "B4",
+      8,
+      6,
+      "Ja"
+    ],
+    "tolerans": [
+      null,
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med DFS (ordning ↑ → ↓ ←).</p><p>a) Vilken ruta besöks som femte ruta, räknat med start? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> B3</p><p class=\"ul-alt\"><strong>B.</strong> B4</p><p class=\"ul-alt\"><strong>C.</strong> C1</p><p class=\"ul-alt\"><strong>D.</strong> C3</p><p>b) Hur många rutor besöker DFS, inklusive start och mål?</p><p>c) Hur många steg har vägen som DFS hittar?</p><p>d) Är vägen som DFS hittar en av de kortaste vägarna? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> Ja</p><p class=\"ul-alt\"><strong>B.</strong> Nej</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS fortsätter alltid från den senast besökta rutan</p><p>Grannarna prövas i ordningen ↑ → ↓ ←, och DFS backar bara när det tar stopp.</p></li><li><p class=\"facit-rubrik\">De 5 första besöken</p><p>A1 → A2 → A3 → B3 → B4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B4.</p><ul><li><strong>A:</strong> B3 besöks som fjärde ruta.</li><li><strong>B:</strong> B4 besöks som femte ruta.</li><li><strong>C:</strong> C1 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte.</li><li><strong>D:</strong> C3 besöks som sjätte ruta.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>A1, A2, A3, B3, B4, C3, D3, D4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Rutor i återvändsgränder ingår inte</p><p>A1 → A2 → A3 → B3 → C3 → D3 → D4.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>7 rutor ger 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Jämför med BFS</p><p>BFS hittar en kortaste väg med 6 steg. DFS-vägen har 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Ja.</p><ul><li><strong>A:</strong> Ingen väg är kortare än 6 steg.</li><li><strong>B:</strong> DFS-vägen har 6 steg, lika många som en kortaste väg.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Gå så långt det går i första tillåtna riktningen. Backa när det tar stopp.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 4 rader (A–D) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med DFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta besöks som femte ruta, räknat med start? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS fortsätter alltid från den senast besökta rutan</p><p>Grannarna prövas i ordningen ↑ → ↓ ←, och DFS backar bara när det tar stopp.</p></li><li><p class=\"facit-rubrik\">De 5 första besöken</p><p>A1 → A2 → A3 → B3 → B4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B4.</p><ul><li><strong>A:</strong> B3 besöks som fjärde ruta.</li><li><strong>B:</strong> B4 besöks som femte ruta.</li><li><strong>C:</strong> C1 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte.</li><li><strong>D:</strong> C3 besöks som sjätte ruta.</li></ul></div>",
+        "ledtrad": "<p>DFS fortsätter alltid från den senast besökta rutan.</p>",
+        "alternativ": [
+          {
+            "txt": "B3",
+            "ratt": false,
+            "kommentar": "B3 besöks som fjärde ruta."
+          },
+          {
+            "txt": "B4",
+            "ratt": true,
+            "kommentar": "B4 besöks som femte ruta."
+          },
+          {
+            "txt": "C1",
+            "ratt": false,
+            "kommentar": "C1 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte."
+          },
+          {
+            "txt": "C3",
+            "ratt": false,
+            "kommentar": "C3 besöks som sjätte ruta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "B4",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor besöker DFS, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>A1, A2, A3, B3, B4, C3, D3, D4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div>",
+        "ledtrad": "<p>Räkna även rutor i återvändsgränder.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 8,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många steg har vägen som DFS hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Rutor i återvändsgränder ingår inte</p><p>A1 → A2 → A3 → B3 → C3 → D3 → D4.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>7 rutor ger 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Vägen består bara av rutorna från start till mål, utan återvändsgränder.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      },
+      {
+        "fraga": "<p>Är vägen som DFS hittar en av de kortaste vägarna? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Jämför med BFS</p><p>BFS hittar en kortaste väg med 6 steg. DFS-vägen har 6 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Ja.</p><ul><li><strong>A:</strong> Ingen väg är kortare än 6 steg.</li><li><strong>B:</strong> DFS-vägen har 6 steg, lika många som en kortaste väg.</li></ul></div>",
+        "ledtrad": "<p>Hur många steg har en kortaste väg?</p>",
+        "alternativ": [
+          {
+            "txt": "Ja",
+            "ratt": true,
+            "kommentar": "Ingen väg är kortare än 6 steg."
+          },
+          {
+            "txt": "Nej",
+            "ratt": false,
+            "kommentar": "DFS-vägen har 6 steg, lika många som en kortaste väg."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Ja",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "d"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "id": "1.42",
+    "kap": 1,
+    "omr": "dfs",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "DFS i ett sökträd",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "G",
+      9
+    ],
+    "tolerans": [
+      null,
+      0
+    ],
+    "t": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A och B. A har C och D, D har G och H, och B har E och målet F.\" style=\"width:100%;max-width:380px;height:auto\"><title>Sökträd: S har barnen A och B. A har C och D, D har G och H, och B har E och målet F.</title><line x1=\"200\" y1=\"35\" x2=\"110\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"290\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"60\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"250\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"330\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"160\" y1=\"185\" x2=\"120\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"160\" y1=\"185\" x2=\"200\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"110\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"290\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"290\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"60\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"160\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"160\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"250\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"250\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"330\" cy=\"185\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"330\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">F</text><circle cx=\"120\" cy=\"260\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">G</text><circle cx=\"200\" cy=\"260\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">H</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med DFS (vänster gren först).</p><p>a) Vilken nod besöks som femte nod, räknat med start? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> G</p><p class=\"ul-alt\"><strong>B.</strong> B</p><p class=\"ul-alt\"><strong>C.</strong> H</p><p class=\"ul-alt\"><strong>D.</strong> D</p><p>b) Hur många noder besöks, inklusive start och mål?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS går ned i vänster gren</p><p>S → A → C. C har inga barn, så sökningen backar till A och tar D, sedan G.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> G.</p><ul><li><strong>A:</strong> S, A, C, D och sedan G.</li><li><strong>B:</strong> B besöks först när hela grenen under A är klar.</li><li><strong>C:</strong> H besöks som sjätte nod, efter G.</li><li><strong>D:</strong> D besöks som fjärde nod.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>S, A, C, D, G, H, B, E, F.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div></div></div></div>",
+    "ledtrad": "<p>DFS följer en gren ända ned innan den backar.</p>",
+    "spelIntro": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 318\" role=\"img\" aria-label=\"Sökträd: S har barnen A och B. A har C och D, D har G och H, och B har E och målet F.\" style=\"width:100%;max-width:380px;height:auto\"><title>Sökträd: S har barnen A och B. A har C och D, D har G och H, och B har E och målet F.</title><line x1=\"200\" y1=\"35\" x2=\"110\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"200\" y1=\"35\" x2=\"290\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"60\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"250\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"290\" y1=\"110\" x2=\"330\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"160\" y1=\"185\" x2=\"120\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"160\" y1=\"185\" x2=\"200\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"35\" r=\"18\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"200\" y=\"41\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"110\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"290\" cy=\"110\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"290\" y=\"116\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"60\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"160\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"160\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"250\" cy=\"185\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"250\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">E</text><circle cx=\"330\" cy=\"185\" r=\"18\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"330\" y=\"191\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">F</text><circle cx=\"120\" cy=\"260\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">G</text><circle cx=\"200\" cy=\"260\" r=\"18\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"200\" y=\"266\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">H</text><rect x=\"20\" y=\"292\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"304\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"292\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"304\" font-size=\"14\" fill=\"#111827\">Mål</text></svg><p>Trädet söks igenom med DFS (vänster gren först).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod besöks som femte nod, räknat med start? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS går ned i vänster gren</p><p>S → A → C. C har inga barn, så sökningen backar till A och tar D, sedan G.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> G.</p><ul><li><strong>A:</strong> S, A, C, D och sedan G.</li><li><strong>B:</strong> B besöks först när hela grenen under A är klar.</li><li><strong>C:</strong> H besöks som sjätte nod, efter G.</li><li><strong>D:</strong> D besöks som fjärde nod.</li></ul></div>",
+        "ledtrad": "<p>Gå så djupt som möjligt till vänster innan du backar.</p>",
+        "alternativ": [
+          {
+            "txt": "G",
+            "ratt": true,
+            "kommentar": "S, A, C, D och sedan G."
+          },
+          {
+            "txt": "B",
+            "ratt": false,
+            "kommentar": "B besöks först när hela grenen under A är klar."
+          },
+          {
+            "txt": "H",
+            "ratt": false,
+            "kommentar": "H besöks som sjätte nod, efter G."
+          },
+          {
+            "txt": "D",
+            "ratt": false,
+            "kommentar": "D besöks som fjärde nod."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "G",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många noder besöks, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>S, A, C, D, G, H, B, E, F.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div>",
+        "ledtrad": "<p>Hela vänstra grenen besöks innan B.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 9,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "1.43",
+    "kap": 1,
+    "omr": "dfs",
+    "niva": "C",
+    "poang": "3/1/0",
+    "familj": "DFS och återvändsgränder",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "A4",
+      10,
+      9,
+      "Nej"
+    ],
+    "tolerans": [
+      null,
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med DFS (ordning ↑ → ↓ ←).</p><p>a) Vilken ruta besöks som sjätte ruta, räknat med start? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A4</p><p class=\"ul-alt\"><strong>B.</strong> A5</p><p class=\"ul-alt\"><strong>C.</strong> B4</p><p class=\"ul-alt\"><strong>D.</strong> C2</p><p>b) Hur många rutor besöker DFS, inklusive start och mål?</p><p>c) Hur många steg har vägen som DFS hittar?</p><p>d) Är vägen som DFS hittar en av de kortaste vägarna? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> Ja</p><p class=\"ul-alt\"><strong>B.</strong> Nej</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS fortsätter alltid från den senast besökta rutan</p><p>Grannarna prövas i ordningen ↑ → ↓ ←, och DFS backar bara när det tar stopp.</p></li><li><p class=\"facit-rubrik\">De 6 första besöken</p><p>A1 → A2 → B2 → B3 → B4 → A4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A4.</p><ul><li><strong>A:</strong> A4 besöks som sjätte ruta.</li><li><strong>B:</strong> A5 besöks som sjunde ruta.</li><li><strong>C:</strong> B4 besöks som femte ruta.</li><li><strong>D:</strong> C2 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som sjätte.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>A1, A2, B2, B3, B4, A4, A5, B5, C5, D5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 10.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Rutor i återvändsgränder ingår inte</p><p>A1 → A2 → B2 → B3 → B4 → A4 → A5 → B5 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>10 rutor ger 9 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Jämför med BFS</p><p>BFS hittar en kortaste väg med 7 steg. DFS-vägen har 9 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Nej.</p><ul><li><strong>A:</strong> Det finns en väg med 7 steg.</li><li><strong>B:</strong> DFS-vägen har 9 steg, men en kortaste väg har bara 7.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>DFS backar till den senaste rutan som har en obesökt granne.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:305px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med DFS (ordning ↑ → ↓ ←).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta besöks som sjätte ruta, räknat med start? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">DFS fortsätter alltid från den senast besökta rutan</p><p>Grannarna prövas i ordningen ↑ → ↓ ←, och DFS backar bara när det tar stopp.</p></li><li><p class=\"facit-rubrik\">De 6 första besöken</p><p>A1 → A2 → B2 → B3 → B4 → A4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A4.</p><ul><li><strong>A:</strong> A4 besöks som sjätte ruta.</li><li><strong>B:</strong> A5 besöks som sjunde ruta.</li><li><strong>C:</strong> B4 besöks som femte ruta.</li><li><strong>D:</strong> C2 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som sjätte.</li></ul></div>",
+        "ledtrad": "<p>DFS fortsätter alltid från den senast besökta rutan.</p>",
+        "alternativ": [
+          {
+            "txt": "A4",
+            "ratt": true,
+            "kommentar": "A4 besöks som sjätte ruta."
+          },
+          {
+            "txt": "A5",
+            "ratt": false,
+            "kommentar": "A5 besöks som sjunde ruta."
+          },
+          {
+            "txt": "B4",
+            "ratt": false,
+            "kommentar": "B4 besöks som femte ruta."
+          },
+          {
+            "txt": "C2",
+            "ratt": false,
+            "kommentar": "C2 besöks aldrig innan sökningen stoppar. Det är den ruta som BFS skulle ta som sjätte."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "A4",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor besöker DFS, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela besöksordningen</p><p>A1, A2, B2, B3, B4, A4, A5, B5, C5, D5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 10.</p></div>",
+        "ledtrad": "<p>Räkna även rutor i återvändsgränder.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 10,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många steg har vägen som DFS hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Rutor i återvändsgränder ingår inte</p><p>A1 → A2 → B2 → B3 → B4 → A4 → A5 → B5 → C5 → D5.</p></li><li><p class=\"facit-rubrik\">Räkna stegen</p><p>10 rutor ger 9 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div>",
+        "ledtrad": "<p>Vägen består bara av rutorna från start till mål, utan återvändsgränder.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 9,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      },
+      {
+        "fraga": "<p>Är vägen som DFS hittar en av de kortaste vägarna? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Jämför med BFS</p><p>BFS hittar en kortaste väg med 7 steg. DFS-vägen har 9 steg.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Nej.</p><ul><li><strong>A:</strong> Det finns en väg med 7 steg.</li><li><strong>B:</strong> DFS-vägen har 9 steg, men en kortaste väg har bara 7.</li></ul></div>",
+        "ledtrad": "<p>Hur många steg har en kortaste väg?</p>",
+        "alternativ": [
+          {
+            "txt": "Ja",
+            "ratt": false,
+            "kommentar": "Det finns en väg med 7 steg."
+          },
+          {
+            "txt": "Nej",
+            "ratt": true,
+            "kommentar": "DFS-vägen har 9 steg, men en kortaste väg har bara 7."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Nej",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "d"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "id": "2.35",
+    "kap": 2,
+    "omr": "prioritetsko",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Tredje uttaget ur prioritetskön",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "K",
+      6
+    ],
+    "tolerans": [
+      null,
+      0
+    ],
+    "t": "<p>Noder läggs in i och tas ut ur en prioritetskö. Talet inom parentes är nodens värde, och noden med lägst värde tas ut först.</p><p>Lägg in G(6), H(2) och K(5) → ta ut en nod → lägg in M(1) → ta ut två noder.</p><p>a) Vilken nod tas ut vid det tredje uttaget? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> G</p><p class=\"ul-alt\"><strong>B.</strong> H</p><p class=\"ul-alt\"><strong>C.</strong> K</p><p class=\"ul-alt\"><strong>D.</strong> M</p><p>b) Vilket värde har den nod som ligger kvar i kön?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första uttaget</p><p>H har lägst värde, 2.</p></li><li><p class=\"facit-rubrik\">Efter att M(1) lagts in</p><p>M tas ut vid det andra uttaget och K(5) vid det tredje.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> K.</p><ul><li><strong>A:</strong> G har värdet 6 och ligger kvar sist.</li><li><strong>B:</strong> H tas ut vid det första uttaget.</li><li><strong>C:</strong> Efter H och M har K lägst värde.</li><li><strong>D:</strong> M tas ut vid det andra uttaget.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Bara G ligger kvar</p><p>G har värdet 6, det högsta, och tas aldrig ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div></div>",
+    "ledtrad": "<p>Vid varje uttag tas noden med lägst värde.</p>",
+    "spelIntro": "<p>Noder läggs in i och tas ut ur en prioritetskö. Talet inom parentes är nodens värde, och noden med lägst värde tas ut först.</p><p>Lägg in G(6), H(2) och K(5) → ta ut en nod → lägg in M(1) → ta ut två noder.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod tas ut vid det tredje uttaget? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första uttaget</p><p>H har lägst värde, 2.</p></li><li><p class=\"facit-rubrik\">Efter att M(1) lagts in</p><p>M tas ut vid det andra uttaget och K(5) vid det tredje.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> K.</p><ul><li><strong>A:</strong> G har värdet 6 och ligger kvar sist.</li><li><strong>B:</strong> H tas ut vid det första uttaget.</li><li><strong>C:</strong> Efter H och M har K lägst värde.</li><li><strong>D:</strong> M tas ut vid det andra uttaget.</li></ul></div>",
+        "ledtrad": "<p>Skriv upp kön före varje uttag.</p>",
+        "alternativ": [
+          {
+            "txt": "G",
+            "ratt": false,
+            "kommentar": "G har värdet 6 och ligger kvar sist."
+          },
+          {
+            "txt": "H",
+            "ratt": false,
+            "kommentar": "H tas ut vid det första uttaget."
+          },
+          {
+            "txt": "K",
+            "ratt": true,
+            "kommentar": "Efter H och M har K lägst värde."
+          },
+          {
+            "txt": "M",
+            "ratt": false,
+            "kommentar": "M tas ut vid det andra uttaget."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "K",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilket värde har den nod som ligger kvar i kön?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Bara G ligger kvar</p><p>G har värdet 6, det högsta, och tas aldrig ut.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Vilken nod har aldrig lägst värde vid ett uttag?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.36",
+    "kap": 2,
+    "omr": "prioritetsko",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Lägst f i öppna listan",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 1,
+    "arbetsinsats": 1,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "Q",
+      9
+    ],
+    "tolerans": [
+      null,
+      0
+    ],
+    "t": "<p>Under en A*-sökning ligger rutorna i tabellen i öppna listan.</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Ruta</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th></tr></thead><tbody><tr><td style=\"text-align:left\">P</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">7</td></tr><tr><td style=\"text-align:left\">Q</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">3</td></tr><tr><td style=\"text-align:left\">R</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">9</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">6</td></tr></tbody></table><p>a) Vilken ruta tar A* ut härnäst? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> P</p><p class=\"ul-alt\"><strong>B.</strong> Q</p><p class=\"ul-alt\"><strong>C.</strong> R</p><p class=\"ul-alt\"><strong>D.</strong> S</p><p>b) Vilket f-värde har den rutan?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>P: 11, Q: 9, R: 11, S: 11.</p></li><li><p class=\"facit-rubrik\">Lägst f</p><p>Q har f = 9.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Q.</p><ul><li><strong>A:</strong> P har f = 4 + 7 = 11.</li><li><strong>B:</strong> Q har lägst f = 6 + 3 = 9.</li><li><strong>C:</strong> R har lägst g, men f = 2 + 9 = 11.</li><li><strong>D:</strong> S har f = 5 + 6 = 11.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>Q: 6 + 3 = 9.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div></div></div></div>",
+    "ledtrad": "<p>A* tar alltid ut rutan med lägst f = g + h.</p>",
+    "spelIntro": "<p>Under en A*-sökning ligger rutorna i tabellen i öppna listan.</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Ruta</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th></tr></thead><tbody><tr><td style=\"text-align:left\">P</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">7</td></tr><tr><td style=\"text-align:left\">Q</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">3</td></tr><tr><td style=\"text-align:left\">R</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">9</td></tr><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">6</td></tr></tbody></table>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta tar A* ut härnäst? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>P: 11, Q: 9, R: 11, S: 11.</p></li><li><p class=\"facit-rubrik\">Lägst f</p><p>Q har f = 9.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Q.</p><ul><li><strong>A:</strong> P har f = 4 + 7 = 11.</li><li><strong>B:</strong> Q har lägst f = 6 + 3 = 9.</li><li><strong>C:</strong> R har lägst g, men f = 2 + 9 = 11.</li><li><strong>D:</strong> S har f = 5 + 6 = 11.</li></ul></div>",
+        "ledtrad": "<p>Räkna ut f för varje ruta.</p>",
+        "alternativ": [
+          {
+            "txt": "P",
+            "ratt": false,
+            "kommentar": "P har f = 4 + 7 = 11."
+          },
+          {
+            "txt": "Q",
+            "ratt": true,
+            "kommentar": "Q har lägst f = 6 + 3 = 9."
+          },
+          {
+            "txt": "R",
+            "ratt": false,
+            "kommentar": "R har lägst g, men f = 2 + 9 = 11."
+          },
+          {
+            "txt": "S",
+            "ratt": false,
+            "kommentar": "S har f = 5 + 6 = 11."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Q",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilket f-värde har den rutan?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>Q: 6 + 3 = 9.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 9.</p></div>",
+        "ledtrad": "<p>Lägg ihop g och h.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 9,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.37",
+    "kap": 2,
+    "omr": "prioritetsko",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Lika f och lägst h",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      3,
+      "F"
+    ],
+    "tolerans": [
+      0,
+      null
+    ],
+    "t": "<p>Under en A*-sökning ligger noderna i tabellen i prioritetskön. Vid lika f väljs lägst h.</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Nod</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th></tr></thead><tbody><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">4</td></tr><tr><td style=\"text-align:left\">F</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">2</td></tr><tr><td style=\"text-align:left\">H</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">7</td></tr></tbody></table><p>a) Hur många av noderna har det lägsta f-värdet?</p><p>b) Vilken nod tas ut först? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> B</p><p class=\"ul-alt\"><strong>B.</strong> D</p><p class=\"ul-alt\"><strong>C.</strong> F</p><p class=\"ul-alt\"><strong>D.</strong> H</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>B: 8, D: 8, F: 8, H: 9.</p></li><li><p class=\"facit-rubrik\">Lägst f är 8</p><p>B, D och F har f = 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Lika f avgörs av lägst h</p><p>B har h = 5, D h = 4 och F h = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> F.</p><ul><li><strong>A:</strong> B har f = 8 men högst h av de tre, 5.</li><li><strong>B:</strong> D har f = 8 och h = 4.</li><li><strong>C:</strong> F har lägst h = 2 bland noderna med f = 8.</li><li><strong>D:</strong> H har lägst g men f = 9.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Jämför först f. Om flera har samma f avgör h.</p>",
+    "spelIntro": "<p>Under en A*-sökning ligger noderna i tabellen i prioritetskön. Vid lika f väljs lägst h.</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Nod</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th></tr></thead><tbody><tr><td style=\"text-align:left\">B</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">D</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">4</td></tr><tr><td style=\"text-align:left\">F</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">2</td></tr><tr><td style=\"text-align:left\">H</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">7</td></tr></tbody></table>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Hur många av noderna har det lägsta f-värdet?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>B: 8, D: 8, F: 8, H: 9.</p></li><li><p class=\"facit-rubrik\">Lägst f är 8</p><p>B, D och F har f = 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Räkna ut f för varje nod.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilken nod tas ut först? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Lika f avgörs av lägst h</p><p>B har h = 5, D h = 4 och F h = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> F.</p><ul><li><strong>A:</strong> B har f = 8 men högst h av de tre, 5.</li><li><strong>B:</strong> D har f = 8 och h = 4.</li><li><strong>C:</strong> F har lägst h = 2 bland noderna med f = 8.</li><li><strong>D:</strong> H har lägst g men f = 9.</li></ul></div>",
+        "ledtrad": "<p>Jämför h för noderna med lägst f.</p>",
+        "alternativ": [
+          {
+            "txt": "B",
+            "ratt": false,
+            "kommentar": "B har f = 8 men högst h av de tre, 5."
+          },
+          {
+            "txt": "D",
+            "ratt": false,
+            "kommentar": "D har f = 8 och h = 4."
+          },
+          {
+            "txt": "F",
+            "ratt": true,
+            "kommentar": "F har lägst h = 2 bland noderna med f = 8."
+          },
+          {
+            "txt": "H",
+            "ratt": false,
+            "kommentar": "H har lägst g men f = 9."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "F",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.38",
+    "kap": 2,
+    "omr": "astar_varden",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "g, h och f för en ruta",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      3,
+      4,
+      7
+    ],
+    "tolerans": [
+      0,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 361 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:361px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"202\" y=\"41\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"221\" y=\"67\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"261\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"273\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p><p>a) Bestäm g för P.</p><p>b) Bestäm h för P.</p><p>c) Bestäm f för P.</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (A4) är A1 → A2 → A3 → A4. Den kostar 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i A4 och målet i D5: 3 + 1 = 4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>f = 3 + 4 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div></div></div></div>",
+    "ledtrad": "<p>g följer gångarna, h räknas rakt.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 361 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:361px;height:auto\"><title>Labyrint med 4 rader (A–D) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"202\" y=\"41\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"221\" y=\"67\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"261\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"273\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Bestäm g för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (A4) är A1 → A2 → A3 → A4. Den kostar 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Räkna kostnaden längs gångarna, inte rakt genom väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Bestäm h för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i A4 och målet i D5: 3 + 1 = 4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div>",
+        "ledtrad": "<p>Räkna rader och kolumner till målet, utan väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 4,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Bestäm f för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>f = 3 + 4 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div>",
+        "ledtrad": "<p>Lägg ihop g och h.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 7,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "2.39",
+    "kap": 2,
+    "omr": "astar_varden",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "g, h och f med lera",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      2,
+      7
+    ],
+    "tolerans": [
+      0,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 477 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:477px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"202\" y=\"41\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"221\" y=\"67\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"221\" font-size=\"14\" fill=\"#111827\">Lera (3)</text><rect x=\"318\" y=\"209\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"339\" y=\"221\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p><p>Att gå in i en lerruta kostar 3 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0.</p><p>a) Bestäm g för P.</p><p>b) Bestäm h för P.</p><p>c) Bestäm f för P.</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (A4) är A1 → A2 → A3 → A4. Den kostar 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i A4 och målet i C4: 2 + 0 = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>f = 5 + 2 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div></div></div></div>",
+    "ledtrad": "<p>Lerrutor kostar mer än vanliga rutor.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 477 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:477px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"202\" y=\"41\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"221\" y=\"67\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"221\" font-size=\"14\" fill=\"#111827\">Lera (3)</text><rect x=\"318\" y=\"209\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"339\" y=\"221\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p><p>Att gå in i en lerruta kostar 3 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Bestäm g för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (A4) är A1 → A2 → A3 → A4. Den kostar 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Räkna kostnaden längs gångarna, inte rakt genom väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Bestäm h för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i A4 och målet i C4: 2 + 0 = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Räkna rader och kolumner till målet, utan väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Bestäm f för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">f = g + h</p><p>f = 5 + 2 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div>",
+        "ledtrad": "<p>Lägg ihop g och h.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 7,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "2.40",
+    "kap": 2,
+    "omr": "astar_varden",
+    "niva": "C",
+    "poang": "2/1/0",
+    "familj": "g och h på var sin sida om väggen",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      2,
+      2,
+      8
+    ],
+    "tolerans": [
+      0,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 361 340\" role=\"img\" aria-label=\"Labyrint med 5 rader (A–E) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:361px;height:auto\"><title>Labyrint med 5 rader (A–E) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"145\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"65\" y=\"171\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"274\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">E</text><rect data-cell=\"E1\" x=\"39\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E2\" x=\"91\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E3\" x=\"143\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E4\" x=\"195\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E5\" x=\"247\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"313\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"325\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"313\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"325\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"313\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"325\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p><p>a) Bestäm g för P.</p><p>b) Bestäm h för P.</p><p>c) Hur många steg längre är den verkliga vägen från P till målet än h?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (C1) är A1 → B1 → C1. Den kostar 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i C1 och målet i C3: 0 + 2 = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den verkliga vägen från P till målet</p><p>Längs gångarna är det 10 steg från P till målet.</p></li><li><p class=\"facit-rubrik\">Jämför med h</p><p>10 − 2 = 8. h räknar inte med väggarna och blir därför för litet.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div></div></div></div>",
+    "ledtrad": "<p>P ligger nära målet, men vägen dit kan vara lång.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 361 340\" role=\"img\" aria-label=\"Labyrint med 5 rader (A–E) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:361px;height:auto\"><title>Labyrint med 5 rader (A–E) och 5 kolumner (1–5). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"145\" width=\"38\" height=\"38\" fill=\"#fff3b0\" stroke=\"#8a6500\" stroke-width=\"2\"/><text x=\"65\" y=\"171\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"bold\" fill=\"#111827\">P</text><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"274\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">E</text><rect data-cell=\"E1\" x=\"39\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E2\" x=\"91\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E3\" x=\"143\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E4\" x=\"195\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"E5\" x=\"247\" y=\"242\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"313\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"325\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"313\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"325\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"313\" width=\"14\" height=\"14\" fill=\"#fff3b0\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"325\" font-size=\"14\" fill=\"#111827\">Markerad ruta</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd till målet, g = kortaste vägkostnad från start).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Bestäm g för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">g följer gångarna från start</p><p>Den billigaste vägen till P (C1) är A1 → B1 → C1. Den kostar 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Räkna kostnaden längs gångarna, inte rakt genom väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Bestäm h för P.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">h = radskillnad + kolumnskillnad</p><p>P ligger i C1 och målet i C3: 0 + 2 = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Räkna rader och kolumner till målet, utan väggar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många steg längre är den verkliga vägen från P till målet än h?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den verkliga vägen från P till målet</p><p>Längs gångarna är det 10 steg från P till målet.</p></li><li><p class=\"facit-rubrik\">Jämför med h</p><p>10 − 2 = 8. h räknar inte med väggarna och blir därför för litet.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div>",
+        "ledtrad": "<p>Räkna stegen från P till målet längs gångarna.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 8,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "2.41",
+    "kap": 2,
+    "omr": "astar_sokning",
+    "niva": "C",
+    "poang": "1/2/0",
+    "familj": "A* med direkt rättning",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "B3",
+      6,
+      5
+    ],
+    "tolerans": [
+      null,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd). Vid lika f väljs lägst h, och vid lika h den ruta som kommer först i bokstavsordning.</p><p>a) Vilken ruta tas ut ur öppna listan som fjärde ruta? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A3</p><p class=\"ul-alt\"><strong>B.</strong> B3</p><p class=\"ul-alt\"><strong>C.</strong> B4</p><p class=\"ul-alt\"><strong>D.</strong> C4</p><p>b) Hur många rutor tas ut ur öppna listan, inklusive start och mål?</p><p>c) Vad kostar vägen som A* returnerar?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B4</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">5</td></tr></tbody></table></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B3.</p><ul><li><strong>A:</strong> A3 tas ut som tredje ruta. Det är den ruta som BFS skulle ta som fjärde.</li><li><strong>B:</strong> B3 tas ut som fjärde ruta.</li><li><strong>C:</strong> B4 tas ut som femte ruta.</li><li><strong>D:</strong> C4 tas ut som sjätte ruta.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, A3, B3, B4, C4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>A1 → A2 → A3 → B3 → B4 → C4.</p></li><li><p class=\"facit-rubrik\">Kostnaden</p><p>Alla steg kostar 1, så kostnaden är 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div></div>",
+    "ledtrad": "<p>Räkna g, h och f för varje ny granne.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd). Vid lika f väljs lägst h, och vid lika h den ruta som kommer först i bokstavsordning.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta tas ut ur öppna listan som fjärde ruta? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B3</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B4</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">5</td></tr></tbody></table></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B3.</p><ul><li><strong>A:</strong> A3 tas ut som tredje ruta. Det är den ruta som BFS skulle ta som fjärde.</li><li><strong>B:</strong> B3 tas ut som fjärde ruta.</li><li><strong>C:</strong> B4 tas ut som femte ruta.</li><li><strong>D:</strong> C4 tas ut som sjätte ruta.</li></ul></div>",
+        "ledtrad": "<p>Räkna f = g + h för grannarna till varje uttagen ruta.</p>",
+        "alternativ": [
+          {
+            "txt": "A3",
+            "ratt": false,
+            "kommentar": "A3 tas ut som tredje ruta. Det är den ruta som BFS skulle ta som fjärde."
+          },
+          {
+            "txt": "B3",
+            "ratt": true,
+            "kommentar": "B3 tas ut som fjärde ruta."
+          },
+          {
+            "txt": "B4",
+            "ratt": false,
+            "kommentar": "B4 tas ut som femte ruta."
+          },
+          {
+            "txt": "C4",
+            "ratt": false,
+            "kommentar": "C4 tas ut som sjätte ruta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "B3",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor tas ut ur öppna listan, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>A1, A2, A3, B3, B4, C4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Fortsätt tills målet tas ut.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vad kostar vägen som A* returnerar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>A1 → A2 → A3 → B3 → B4 → C4.</p></li><li><p class=\"facit-rubrik\">Kostnaden</p><p>Alla steg kostar 1, så kostnaden är 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Kostnaden är g för målet.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "2.42",
+    "kap": 2,
+    "omr": "astar_sokning",
+    "niva": "C",
+    "poang": "0/2/0",
+    "familj": "Girig bäst först och A* i lera",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      12,
+      8
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 357 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 6 kolumner (1–6). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:357px;height:auto\"><title>Labyrint med 4 rader (A–D) och 6 kolumner (1–6). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"325\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">6</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A6\" x=\"299\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"65\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B6\" x=\"299\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"65\" y=\"171\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"171\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C6\" x=\"299\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D6\" x=\"299\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"273\" font-size=\"14\" fill=\"#111827\">Lera (3)</text></svg></div><p>Labyrinten söks igenom med girig bäst först och med A* (h = Manhattanavstånd). Att gå in i en lerruta kostar 3 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0. Vid lika värde väljs den ruta som kommer först i bokstavsordning.</p><p>a) Vad kostar vägen som girig bäst först hittar?</p><p>b) Vad kostar vägen som A* hittar?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Girig bäst först jämför bara h</p><p>D1 → C1 → B1 → A1 → A2 → A3 → A4 → A5 → A6.</p></li><li><p class=\"facit-rubrik\">Summera kostnaderna</p><p>3 + 3 + 1 + 1 + 1 + 1 + 1 + 1 = 12.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 12.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A* jämför f = g + h</p><p>D1 → D2 → C2 → B2 → A2 → A3 → A4 → A5 → A6.</p></li><li><p class=\"facit-rubrik\">Bara vita rutor</p><p>8 steg som kostar 1 var: 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div></div></div></div>",
+    "ledtrad": "<p>Girig bäst först ser bara h. A* räknar också med kostnaden hittills.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 357 288\" role=\"img\" aria-label=\"Labyrint med 4 rader (A–D) och 6 kolumner (1–6). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:357px;height:auto\"><title>Labyrint med 4 rader (A–D) och 6 kolumner (1–6). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"273\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">5</text><text x=\"325\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">6</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A5\" x=\"247\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A6\" x=\"299\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"65\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B5\" x=\"247\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B6\" x=\"299\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"65\" y=\"171\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"169\" y=\"171\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C5\" x=\"247\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C6\" x=\"299\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"222\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">D</text><rect data-cell=\"D1\" x=\"39\" y=\"190\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D2\" x=\"91\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D3\" x=\"143\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D4\" x=\"195\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D5\" x=\"247\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"D6\" x=\"299\" y=\"190\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"261\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"273\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"273\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"261\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"273\" font-size=\"14\" fill=\"#111827\">Lera (3)</text></svg></div><p>Labyrinten söks igenom med girig bäst först och med A* (h = Manhattanavstånd). Att gå in i en lerruta kostar 3 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0. Vid lika värde väljs den ruta som kommer först i bokstavsordning.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vad kostar vägen som girig bäst först hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Girig bäst först jämför bara h</p><p>D1 → C1 → B1 → A1 → A2 → A3 → A4 → A5 → A6.</p></li><li><p class=\"facit-rubrik\">Summera kostnaderna</p><p>3 + 3 + 1 + 1 + 1 + 1 + 1 + 1 = 12.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 12.</p></div>",
+        "ledtrad": "<p>Följ lägst h från start och summera kostnaderna.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 12,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vad kostar vägen som A* hittar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A* jämför f = g + h</p><p>D1 → D2 → C2 → B2 → A2 → A3 → A4 → A5 → A6.</p></li><li><p class=\"facit-rubrik\">Bara vita rutor</p><p>8 steg som kostar 1 var: 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 8.</p></div>",
+        "ledtrad": "<p>A* räknar med vad leran kostar.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 8,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.43",
+    "kap": 2,
+    "omr": "astar_sokning",
+    "niva": "C",
+    "poang": "1/2/0",
+    "familj": "A* från ett hörn",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "A3",
+      6,
+      5
+    ],
+    "tolerans": [
+      null,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd). Vid lika f väljs lägst h, och vid lika h den ruta som kommer först i bokstavsordning.</p><p>a) Vilken ruta tas ut ur öppna listan som femte ruta? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A2</p><p class=\"ul-alt\"><strong>B.</strong> A3</p><p class=\"ul-alt\"><strong>C.</strong> A4</p><p class=\"ul-alt\"><strong>D.</strong> C3</p><p>b) Hur många rutor tas ut ur öppna listan, inklusive start och mål?</p><p>c) Vad kostar vägen som A* returnerar?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">C1</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A4</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td></tr></tbody></table></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A3.</p><ul><li><strong>A:</strong> A2 tas ut som fjärde ruta.</li><li><strong>B:</strong> A3 tas ut som femte ruta.</li><li><strong>C:</strong> A4 tas ut som sjätte ruta.</li><li><strong>D:</strong> C3 tas aldrig ut innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>C1, B1, A1, A2, A3, A4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>C1 → B1 → A1 → A2 → A3 → A4.</p></li><li><p class=\"facit-rubrik\">Kostnaden</p><p>Alla steg kostar 1, så kostnaden är 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div></div>",
+    "ledtrad": "<p>Vid lika f: lägst h och sedan bokstavsordning.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 253 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:253px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Labyrinten söks igenom med A* (h = Manhattanavstånd). Vid lika f väljs lägst h, och vid lika h den ruta som kommer först i bokstavsordning.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken ruta tas ut ur öppna listan som femte ruta? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">C1</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">B1</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A1</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A2</td><td style=\"text-align:left\">3</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A3</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">1</td><td style=\"text-align:left\">5</td></tr><tr><td style=\"text-align:left\">A4</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">5</td></tr></tbody></table></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A3.</p><ul><li><strong>A:</strong> A2 tas ut som fjärde ruta.</li><li><strong>B:</strong> A3 tas ut som femte ruta.</li><li><strong>C:</strong> A4 tas ut som sjätte ruta.</li><li><strong>D:</strong> C3 tas aldrig ut innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte.</li></ul></div>",
+        "ledtrad": "<p>Räkna f = g + h för grannarna till varje uttagen ruta.</p>",
+        "alternativ": [
+          {
+            "txt": "A2",
+            "ratt": false,
+            "kommentar": "A2 tas ut som fjärde ruta."
+          },
+          {
+            "txt": "A3",
+            "ratt": true,
+            "kommentar": "A3 tas ut som femte ruta."
+          },
+          {
+            "txt": "A4",
+            "ratt": false,
+            "kommentar": "A4 tas ut som sjätte ruta."
+          },
+          {
+            "txt": "C3",
+            "ratt": false,
+            "kommentar": "C3 tas aldrig ut innan sökningen stoppar. Det är den ruta som BFS skulle ta som femte."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "A3",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många rutor tas ut ur öppna listan, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Hela uttagsordningen</p><p>C1, B1, A1, A2, A3, A4.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Fortsätt tills målet tas ut.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vad kostar vägen som A* returnerar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>C1 → B1 → A1 → A2 → A3 → A4.</p></li><li><p class=\"facit-rubrik\">Kostnaden</p><p>Alla steg kostar 1, så kostnaden är 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Kostnaden är g för målet.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "2.44",
+    "kap": 2,
+    "omr": "viktade_vagar",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Is och lera på vägen",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 1,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      10,
+      5
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 417 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:417px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">4</text><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">4</text><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"221\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"209\" width=\"14\" height=\"14\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"221\" font-size=\"14\" fill=\"#111827\">Is (4)</text><rect x=\"301\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"322\" y=\"221\" font-size=\"14\" fill=\"#111827\">Lera (3)</text></svg></div><p>Att gå in i en isruta kostar 4, en lerruta 3 och en vit ruta eller målet 1. Start kostar 0.</p><p>a) Vad kostar vägen A1 → A2 → A3 → A4 → B4 → C4?</p><p>b) Vad kostar den billigaste vägen från start till mål?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kostnad för varje ruta</p><p>A2 (is) 4, A3 1, A4 1, B4 (lera) 3 och målet 1.</p></li><li><p class=\"facit-rubrik\">Summera</p><p>4 + 1 + 1 + 3 + 1 = 10.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 10.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gå ned och sedan åt höger</p><p>A1 → B1 → C1 → C2 → C3 → C4.</p></li><li><p class=\"facit-rubrik\">Bara vita rutor</p><p>5 steg som kostar 1 var: 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div></div>",
+    "ledtrad": "<p>Kostnaden för en väg är summan av kostnaderna för rutorna du går in i.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 417 236\" role=\"img\" aria-label=\"Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.\" style=\"width:100%;max-width:417px;height:auto\"><title>Labyrint med 3 rader (A–C) och 4 kolumner (1–4). Grön ruta är start, röd ruta är mål, mörka rutor är väggar.</title><text x=\"65\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">1</text><text x=\"117\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">2</text><text x=\"169\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">3</text><text x=\"221\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">4</text><text x=\"20\" y=\"66\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">A</text><rect data-cell=\"A1\" x=\"39\" y=\"34\" width=\"52\" height=\"52\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A2\" x=\"91\" y=\"34\" width=\"52\" height=\"52\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">4</text><rect data-cell=\"A3\" x=\"143\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"A4\" x=\"195\" y=\"34\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"20\" y=\"118\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">B</text><rect data-cell=\"B1\" x=\"39\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B2\" x=\"91\" y=\"86\" width=\"52\" height=\"52\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"117\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">4</text><rect data-cell=\"B3\" x=\"143\" y=\"86\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"B4\" x=\"195\" y=\"86\" width=\"52\" height=\"52\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"221\" y=\"119\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">3</text><text x=\"20\" y=\"170\" text-anchor=\"middle\" font-size=\"16\" fill=\"#111827\">C</text><rect data-cell=\"C1\" x=\"39\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C2\" x=\"91\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C3\" x=\"143\" y=\"138\" width=\"52\" height=\"52\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect data-cell=\"C4\" x=\"195\" y=\"138\" width=\"52\" height=\"52\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"39\" y=\"209\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"60\" y=\"221\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"129\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"150\" y=\"221\" font-size=\"14\" fill=\"#111827\">Mål</text><rect x=\"202\" y=\"209\" width=\"14\" height=\"14\" fill=\"#c4d7ef\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"223\" y=\"221\" font-size=\"14\" fill=\"#111827\">Is (4)</text><rect x=\"301\" y=\"209\" width=\"14\" height=\"14\" fill=\"#d6b98c\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"322\" y=\"221\" font-size=\"14\" fill=\"#111827\">Lera (3)</text></svg></div><p>Att gå in i en isruta kostar 4, en lerruta 3 och en vit ruta eller målet 1. Start kostar 0.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vad kostar vägen A1 → A2 → A3 → A4 → B4 → C4?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Kostnad för varje ruta</p><p>A2 (is) 4, A3 1, A4 1, B4 (lera) 3 och målet 1.</p></li><li><p class=\"facit-rubrik\">Summera</p><p>4 + 1 + 1 + 3 + 1 = 10.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 10.</p></div>",
+        "ledtrad": "<p>Start kostar 0. Räkna alla rutor du går in i.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 10,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vad kostar den billigaste vägen från start till mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gå ned och sedan åt höger</p><p>A1 → B1 → C1 → C2 → C3 → C4.</p></li><li><p class=\"facit-rubrik\">Bara vita rutor</p><p>5 steg som kostar 1 var: 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Finns det en väg utan is och lera?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.45",
+    "kap": 2,
+    "omr": "viktade_vagar",
+    "niva": "E",
+    "poang": "2/0/0",
+    "familj": "Billigaste vägen med en omväg",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      6,
+      4
+    ],
+    "tolerans": [
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 277\" role=\"img\" aria-label=\"Graf med noderna S, A, B, C och M. Talet vid varje kant är kostnaden.\" style=\"width:100%;max-width:490px;height:auto\"><title>Graf med noderna S, A, B, C och M. Talet vid varje kant är kostnaden.</title><line x1=\"50\" y1=\"130\" x2=\"170\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"130\" x2=\"170\" y2=\"215\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"45\" x2=\"310\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"215\" x2=\"310\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"215\" x2=\"170\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"310\" y1=\"130\" x2=\"440\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"45\" x2=\"440\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><rect x=\"97\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"97\" y=\"160\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"178\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><rect x=\"227\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"240\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"227\" y=\"160\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"240\" y=\"178\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">6</text><rect x=\"157\" y=\"117\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"170\" y=\"135\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><rect x=\"362\" y=\"117\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"375\" y=\"135\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"292\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"305\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">8</text><circle cx=\"50\" cy=\"130\" r=\"20\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"50\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"170\" cy=\"45\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"51\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"170\" cy=\"215\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"221\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"310\" cy=\"130\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"310\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"440\" cy=\"130\" r=\"20\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"440\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">M</text><rect x=\"20\" y=\"251\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"263\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"251\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"263\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Grafen visar vägar mellan platser. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll.</p><p>a) Vad kostar den billigaste vägen från start till mål?</p><p>b) Hur många kanter har den billigaste vägen?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Billigast till A går via B</p><p>S → B → A kostar 1 + 1 = 2, billigare än kanten S–A som kostar 3.</p></li><li><p class=\"facit-rubrik\">Vidare via C</p><p>S → B → A → C → M kostar 1 + 1 + 2 + 2 = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna kanterna</p><p>S → B → A → C → M har 4 kanter.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div></div></div></div>",
+    "ledtrad": "<p>En väg med fler kanter kan vara billigare än en direkt kant.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 277\" role=\"img\" aria-label=\"Graf med noderna S, A, B, C och M. Talet vid varje kant är kostnaden.\" style=\"width:100%;max-width:490px;height:auto\"><title>Graf med noderna S, A, B, C och M. Talet vid varje kant är kostnaden.</title><line x1=\"50\" y1=\"130\" x2=\"170\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"130\" x2=\"170\" y2=\"215\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"45\" x2=\"310\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"215\" x2=\"310\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"215\" x2=\"170\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"310\" y1=\"130\" x2=\"440\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"45\" x2=\"440\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"2.5\"/><rect x=\"97\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"97\" y=\"160\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"178\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><rect x=\"227\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"240\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"227\" y=\"160\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"240\" y=\"178\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">6</text><rect x=\"157\" y=\"117\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"170\" y=\"135\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><rect x=\"362\" y=\"117\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"375\" y=\"135\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"292\" y=\"74\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"305\" y=\"92\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">8</text><circle cx=\"50\" cy=\"130\" r=\"20\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"50\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"170\" cy=\"45\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"51\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"170\" cy=\"215\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"221\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"310\" cy=\"130\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"310\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"440\" cy=\"130\" r=\"20\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"440\" y=\"136\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">M</text><rect x=\"20\" y=\"251\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"263\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"251\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"263\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Grafen visar vägar mellan platser. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vad kostar den billigaste vägen från start till mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Billigast till A går via B</p><p>S → B → A kostar 1 + 1 = 2, billigare än kanten S–A som kostar 3.</p></li><li><p class=\"facit-rubrik\">Vidare via C</p><p>S → B → A → C → M kostar 1 + 1 + 2 + 2 = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Hitta först det billigaste sättet att komma till A.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många kanter har den billigaste vägen?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Räkna kanterna</p><p>S → B → A → C → M har 4 kanter.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div>",
+        "ledtrad": "<p>Räkna pilarna i vägen.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 4,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "2.46",
+    "kap": 2,
+    "omr": "viktade_vagar",
+    "niva": "C",
+    "poang": "2/1/0",
+    "familj": "A* i en graf, rättas direkt",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      "A",
+      4,
+      7
+    ],
+    "tolerans": [
+      null,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 321\" role=\"img\" aria-label=\"Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden, och h står vid varje nod.\" style=\"width:100%;max-width:490px;height:auto\"><title>Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden, och h står vid varje nod.</title><line x1=\"50\" y1=\"150\" x2=\"170\" y2=\"65\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"150\" x2=\"170\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"65\" x2=\"320\" y2=\"65\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"235\" x2=\"320\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"320\" y1=\"65\" x2=\"440\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"320\" y1=\"235\" x2=\"440\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"65\" x2=\"170\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><rect x=\"97\" y=\"94\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"112\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"97\" y=\"180\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"198\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"232\" y=\"52\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"245\" y=\"70\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"232\" y=\"222\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"245\" y=\"240\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"367\" y=\"94\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"380\" y=\"112\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"367\" y=\"180\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"380\" y=\"198\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">4</text><rect x=\"157\" y=\"137\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"170\" y=\"155\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><circle cx=\"50\" cy=\"150\" r=\"20\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"50\" y=\"156\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"170\" cy=\"65\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"71\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"170\" cy=\"235\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"241\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"320\" cy=\"65\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"320\" y=\"71\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"320\" cy=\"235\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"320\" y=\"241\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"440\" cy=\"150\" r=\"20\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"440\" y=\"156\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">M</text><text x=\"50\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 6</text><text x=\"170\" y=\"36\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 4</text><text x=\"170\" y=\"276\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 5</text><text x=\"320\" y=\"36\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 2</text><text x=\"320\" y=\"276\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 3</text><text x=\"440\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 0</text><rect x=\"20\" y=\"295\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"307\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"295\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"307\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Grafen söks igenom med A*. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll. Värdet h vid varje nod är en uppskattning av kostnaden kvar till målet M.</p><p>a) Vilken nod tar A* ut efter S? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A</p><p class=\"ul-alt\"><strong>B.</strong> B</p><p class=\"ul-alt\"><strong>C.</strong> C</p><p class=\"ul-alt\"><strong>D.</strong> M</p><p>b) Hur många noder tar A* ut, inklusive start och mål?</p><p>c) Vad kostar vägen som A* returnerar?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Grannarna till S</p><p>A: f = 2 + 4 = 6. B: f = 3 + 5 = 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A.</p><ul><li><strong>A:</strong> A har lägst f = 6.</li><li><strong>B:</strong> B har f = 3 + 5 = 8.</li><li><strong>C:</strong> C har inte lagts in i kön ännu.</li><li><strong>D:</strong> Målet har inte lagts in i kön ännu.</li></ul></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">6</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">6</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">7</td></tr><tr><td style=\"text-align:left\">M</td><td style=\"text-align:left\">7</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">7</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">B och D tas aldrig ut</p><p>Deras f-värden är högre än målets 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>S → A → C → M: 2 + 3 + 2 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div></div></div></div>",
+    "ledtrad": "<p>Ta alltid ut noden med lägst f = g + h.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 321\" role=\"img\" aria-label=\"Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden, och h står vid varje nod.\" style=\"width:100%;max-width:490px;height:auto\"><title>Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden, och h står vid varje nod.</title><line x1=\"50\" y1=\"150\" x2=\"170\" y2=\"65\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"150\" x2=\"170\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"65\" x2=\"320\" y2=\"65\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"235\" x2=\"320\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"320\" y1=\"65\" x2=\"440\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"320\" y1=\"235\" x2=\"440\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"65\" x2=\"170\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2.5\"/><rect x=\"97\" y=\"94\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"112\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"97\" y=\"180\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"110\" y=\"198\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"232\" y=\"52\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"245\" y=\"70\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">3</text><rect x=\"232\" y=\"222\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"245\" y=\"240\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"367\" y=\"94\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"380\" y=\"112\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">2</text><rect x=\"367\" y=\"180\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"380\" y=\"198\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">4</text><rect x=\"157\" y=\"137\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#fff\" stroke=\"#94a3b8\"/><text x=\"170\" y=\"155\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#111827\">1</text><circle cx=\"50\" cy=\"150\" r=\"20\" fill=\"#22a05a\" stroke=\"#14532d\" stroke-width=\"2\"/><text x=\"50\" y=\"156\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">S</text><circle cx=\"170\" cy=\"65\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"71\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">A</text><circle cx=\"170\" cy=\"235\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"170\" y=\"241\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">B</text><circle cx=\"320\" cy=\"65\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"320\" y=\"71\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">C</text><circle cx=\"320\" cy=\"235\" r=\"20\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"320\" y=\"241\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#111827\">D</text><circle cx=\"440\" cy=\"150\" r=\"20\" fill=\"#d94343\" stroke=\"#7f1d1d\" stroke-width=\"2\"/><text x=\"440\" y=\"156\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#fff\">M</text><text x=\"50\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 6</text><text x=\"170\" y=\"36\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 4</text><text x=\"170\" y=\"276\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 5</text><text x=\"320\" y=\"36\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 2</text><text x=\"320\" y=\"276\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 3</text><text x=\"440\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">h = 0</text><rect x=\"20\" y=\"295\" width=\"14\" height=\"14\" fill=\"#22a05a\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"41\" y=\"307\" font-size=\"14\" fill=\"#111827\">Start</text><rect x=\"110\" y=\"295\" width=\"14\" height=\"14\" fill=\"#d94343\" stroke=\"#334155\" stroke-width=\"0.8\"/><text x=\"131\" y=\"307\" font-size=\"14\" fill=\"#111827\">Mål</text></svg></div><p>Grafen söks igenom med A*. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll. Värdet h vid varje nod är en uppskattning av kostnaden kvar till målet M.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilken nod tar A* ut efter S? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Grannarna till S</p><p>A: f = 2 + 4 = 6. B: f = 3 + 5 = 8.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> A.</p><ul><li><strong>A:</strong> A har lägst f = 6.</li><li><strong>B:</strong> B har f = 3 + 5 = 8.</li><li><strong>C:</strong> C har inte lagts in i kön ännu.</li><li><strong>D:</strong> Målet har inte lagts in i kön ännu.</li></ul></div>",
+        "ledtrad": "<p>Räkna f = g + h för grannarna till S.</p>",
+        "alternativ": [
+          {
+            "txt": "A",
+            "ratt": true,
+            "kommentar": "A har lägst f = 6."
+          },
+          {
+            "txt": "B",
+            "ratt": false,
+            "kommentar": "B har f = 3 + 5 = 8."
+          },
+          {
+            "txt": "C",
+            "ratt": false,
+            "kommentar": "C har inte lagts in i kön ännu."
+          },
+          {
+            "txt": "M",
+            "ratt": false,
+            "kommentar": "Målet har inte lagts in i kön ännu."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "A",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många noder tar A* ut, inklusive start och mål?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Uttag med g, h och f</p><table class=\"data\"><thead><tr><th style=\"text-align:left\">Tas ut</th><th style=\"text-align:left\">g</th><th style=\"text-align:left\">h</th><th style=\"text-align:left\">f</th></tr></thead><tbody><tr><td style=\"text-align:left\">S</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">6</td><td style=\"text-align:left\">6</td></tr><tr><td style=\"text-align:left\">A</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">4</td><td style=\"text-align:left\">6</td></tr><tr><td style=\"text-align:left\">C</td><td style=\"text-align:left\">5</td><td style=\"text-align:left\">2</td><td style=\"text-align:left\">7</td></tr><tr><td style=\"text-align:left\">M</td><td style=\"text-align:left\">7</td><td style=\"text-align:left\">0</td><td style=\"text-align:left\">7</td></tr></tbody></table></li><li><p class=\"facit-rubrik\">B och D tas aldrig ut</p><p>Deras f-värden är högre än målets 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4.</p></div>",
+        "ledtrad": "<p>Fortsätt tills målet tas ut.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 4,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vad kostar vägen som A* returnerar?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Vägen</p><p>S → A → C → M: 2 + 3 + 2 = 7.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 7.</p></div>",
+        "ledtrad": "<p>Kostnaden är g för målet.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 7,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      null,
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.31",
+    "kap": 3,
+    "omr": "minimax",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Minimax med direkt rättning",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      5,
+      "Draget till B"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 264\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:420px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 6 löv.</title><line x1=\"90.0\" y1=\"148\" x2=\"60.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"90.0\" y1=\"148\" x2=\"120.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"180.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"240.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"300.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"360.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"90.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"210.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"330.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"68.0,132 112.0,132 90.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"117.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"188.0,132 232.0,132 210.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"308.0,132 352.0,132 330.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"357.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"210.0,41 232.0,76 188.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"42.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"60.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><rect x=\"102.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"120.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><rect x=\"162.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"180.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"222.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"240.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><rect x=\"282.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"300.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"342.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"360.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p><p>a) Vilket värde får B?</p><p>b) Vilket värde får roten?</p><p>c) Vilket drag väljer roten? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> Draget till A</p><p class=\"ul-alt\"><strong>B.</strong> Draget till B</p><p class=\"ul-alt\"><strong>C.</strong> Draget till C</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">B är en MIN-nod</p><p>B = min(5, 6) = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>A = min(7, 3) = 3.</p><p>B = min(5, 6) = 5.</p><p>C = min(2, 8) = 2.</p><p>R = max(3, 5, 2) = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det största värdet</p><p>A ger 3, B ger 5, C ger 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till B.</p><ul><li><strong>A:</strong> A har värdet 3, men roten väljer det största värdet, 5.</li><li><strong>B:</strong> B har värdet 5.</li><li><strong>C:</strong> C har värdet 2, men roten väljer det största värdet, 5.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>MIN-noderna väljer det minsta värdet, roten det största.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 264\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:420px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 6 löv.</title><line x1=\"90.0\" y1=\"148\" x2=\"60.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"90.0\" y1=\"148\" x2=\"120.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"180.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"240.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"300.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"360.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"90.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"210.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"330.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"68.0,132 112.0,132 90.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"117.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"188.0,132 232.0,132 210.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"308.0,132 352.0,132 330.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"357.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"210.0,41 232.0,76 188.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"42.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"60.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><rect x=\"102.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"120.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><rect x=\"162.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"180.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"222.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"240.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><rect x=\"282.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"300.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"342.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"360.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får B?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">B är en MIN-nod</p><p>B = min(5, 6) = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Är B en MAX- eller en MIN-nod?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>A = min(7, 3) = 3.</p><p>B = min(5, 6) = 5.</p><p>C = min(2, 8) = 2.</p><p>R = max(3, 5, 2) = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Arbeta från löven och uppåt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilket drag väljer roten? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det största värdet</p><p>A ger 3, B ger 5, C ger 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till B.</p><ul><li><strong>A:</strong> A har värdet 3, men roten väljer det största värdet, 5.</li><li><strong>B:</strong> B har värdet 5.</li><li><strong>C:</strong> C har värdet 2, men roten väljer det största värdet, 5.</li></ul></div>",
+        "ledtrad": "<p>Vilket av rotens barn ger rotens värde?</p>",
+        "alternativ": [
+          {
+            "txt": "Draget till A",
+            "ratt": false,
+            "kommentar": "A har värdet 3, men roten väljer det största värdet, 5."
+          },
+          {
+            "txt": "Draget till B",
+            "ratt": true,
+            "kommentar": "B har värdet 5."
+          },
+          {
+            "txt": "Draget till C",
+            "ratt": false,
+            "kommentar": "C har värdet 2, men roten väljer det största värdet, 5."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Draget till B",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.32",
+    "kap": 3,
+    "omr": "minimax",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Minimax med direkt rättning",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      2,
+      2,
+      "Draget till A"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 352\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MIN i roten R och 8 löv.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"290.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"320.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"440.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"140.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"380.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"58.0,220 102.0,220 80.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"178.0,220 222.0,220 200.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"140.0,129 162.0,164 118.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"167.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"298.0,220 342.0,220 320.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"347.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"418.0,220 462.0,220 440.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"380.0,129 402.0,164 358.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"238.0,44 282.0,44 260.0,79\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"272.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">9</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">0</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p><p>a) Vilket värde får D?</p><p>b) Vilket värde får roten?</p><p>c) Vilket drag väljer roten? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> Draget till A</p><p class=\"ul-alt\"><strong>B.</strong> Draget till B</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">D är en MIN-nod</p><p>D = min(6, 2) = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>C = min(4, 1) = 1.</p><p>D = min(6, 2) = 2.</p><p>A = max(1, 2) = 2.</p><p>E = min(3, 9) = 3.</p><p>F = min(5, 0) = 0.</p><p>B = max(3, 0) = 3.</p><p>R = min(2, 3) = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det minsta värdet</p><p>A ger 2, B ger 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till A.</p><ul><li><strong>A:</strong> A har värdet 2.</li><li><strong>B:</strong> B har värdet 3, men roten väljer det minsta värdet, 2.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Tre nivåer: arbeta nedifrån och växla mellan max och min.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 352\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MIN i roten R och 8 löv.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"290.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"320.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"440.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"140.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"380.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"58.0,220 102.0,220 80.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"178.0,220 222.0,220 200.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"140.0,129 162.0,164 118.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"167.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"298.0,220 342.0,220 320.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"347.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"418.0,220 462.0,220 440.0,255\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"380.0,129 402.0,164 358.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"238.0,44 282.0,44 260.0,79\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"272.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">9</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">0</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får D?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">D är en MIN-nod</p><p>D = min(6, 2) = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Är D en MAX- eller en MIN-nod?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>C = min(4, 1) = 1.</p><p>D = min(6, 2) = 2.</p><p>A = max(1, 2) = 2.</p><p>E = min(3, 9) = 3.</p><p>F = min(5, 0) = 0.</p><p>B = max(3, 0) = 3.</p><p>R = min(2, 3) = 2.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 2.</p></div>",
+        "ledtrad": "<p>Arbeta från löven och uppåt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 2,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilket drag väljer roten? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det minsta värdet</p><p>A ger 2, B ger 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till A.</p><ul><li><strong>A:</strong> A har värdet 2.</li><li><strong>B:</strong> B har värdet 3, men roten väljer det minsta värdet, 2.</li></ul></div>",
+        "ledtrad": "<p>Vilket av rotens barn ger rotens värde?</p>",
+        "alternativ": [
+          {
+            "txt": "Draget till A",
+            "ratt": true,
+            "kommentar": "A har värdet 2."
+          },
+          {
+            "txt": "Draget till B",
+            "ratt": false,
+            "kommentar": "B har värdet 3, men roten väljer det minsta värdet, 2."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Draget till A",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.33",
+    "kap": 3,
+    "omr": "minimax",
+    "niva": "C",
+    "poang": "1/2/0",
+    "familj": "Minimax med direkt rättning",
+    "formaga": [
+      "procedur"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      1,
+      3,
+      "Draget till B"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 352\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:580px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 9 löv.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"290.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"500.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"500.0\" y1=\"236\" x2=\"530.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"148\" x2=\"380.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"148\" x2=\"500.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"315.0\" y1=\"60\" x2=\"190.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"315.0\" y1=\"60\" x2=\"440.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"80.0,217 102.0,252 58.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"200.0,217 222.0,252 178.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"168.0,132 212.0,132 190.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"217.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"380.0,217 402.0,252 358.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"500.0,217 522.0,252 478.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"527.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"418.0,132 462.0,132 440.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"315.0,41 337.0,76 293.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"342.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−3</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−1</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><rect x=\"272.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−2</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">0</text><rect x=\"512.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"530.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p><p>a) Vilket värde får A?</p><p>b) Vilket värde får roten?</p><p>c) Vilket drag väljer roten? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> Draget till A</p><p class=\"ul-alt\"><strong>B.</strong> Draget till B</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A är en MIN-nod</p><p>A = min(2, 4, 1) = 1.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 1.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>C = max(2, −3) = 2.</p><p>D = max(−1, 4) = 4.</p><p>A = min(2, 4, 1) = 1.</p><p>E = max(5, −2) = 5.</p><p>F = max(0, 3) = 3.</p><p>B = min(5, 3) = 3.</p><p>R = max(1, 3) = 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det största värdet</p><p>A ger 1, B ger 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till B.</p><ul><li><strong>A:</strong> A har värdet 1, men roten väljer det största värdet, 3.</li><li><strong>B:</strong> B har värdet 3.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Var noga med minustecknen.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 352\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:580px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 9 löv.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"190.0\" y1=\"148\" x2=\"290.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"500.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"500.0\" y1=\"236\" x2=\"530.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"148\" x2=\"380.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"148\" x2=\"500.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"315.0\" y1=\"60\" x2=\"190.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"315.0\" y1=\"60\" x2=\"440.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"80.0,217 102.0,252 58.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"200.0,217 222.0,252 178.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"168.0,132 212.0,132 190.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"217.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"380.0,217 402.0,252 358.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"500.0,217 522.0,252 478.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"527.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"418.0,132 462.0,132 440.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"315.0,41 337.0,76 293.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"342.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−3</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−1</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><rect x=\"272.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">−2</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">0</text><rect x=\"512.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"530.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med minimax.</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får A?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">A är en MIN-nod</p><p>A = min(2, 4, 1) = 1.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 1.</p></div>",
+        "ledtrad": "<p>Är A en MAX- eller en MIN-nod?</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 1,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Från löven till roten</p><p>C = max(2, −3) = 2.</p><p>D = max(−1, 4) = 4.</p><p>A = min(2, 4, 1) = 1.</p><p>E = max(5, −2) = 5.</p><p>F = max(0, 3) = 3.</p><p>B = min(5, 3) = 3.</p><p>R = max(1, 3) = 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Arbeta från löven och uppåt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilket drag väljer roten? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Roten väljer det största värdet</p><p>A ger 1, B ger 3.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Draget till B.</p><ul><li><strong>A:</strong> A har värdet 1, men roten väljer det största värdet, 3.</li><li><strong>B:</strong> B har värdet 3.</li></ul></div>",
+        "ledtrad": "<p>Vilket av rotens barn ger rotens värde?</p>",
+        "alternativ": [
+          {
+            "txt": "Draget till A",
+            "ratt": false,
+            "kommentar": "A har värdet 1, men roten väljer det största värdet, 3."
+          },
+          {
+            "txt": "Draget till B",
+            "ratt": true,
+            "kommentar": "B har värdet 3."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "Draget till B",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.34",
+    "kap": 3,
+    "omr": "alfa_beta",
+    "niva": "E",
+    "poang": "3/0/0",
+    "familj": "Alfa–beta med direkt rättning",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 2,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      5,
+      1,
+      "L4"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:420px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 6 löv, L1–L6.</title><line x1=\"90.0\" y1=\"148\" x2=\"60.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"90.0\" y1=\"148\" x2=\"120.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"180.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"240.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"300.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"360.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"90.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"210.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"330.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"68.0,132 112.0,132 90.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"117.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"188.0,132 232.0,132 210.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"308.0,132 352.0,132 330.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"357.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"210.0,41 232.0,76 188.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"42.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"60.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"60.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"102.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"120.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"120.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"162.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"180.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><text x=\"180.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"222.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"240.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">9</text><text x=\"240.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"282.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"300.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"300.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"342.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"360.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"360.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p><p>a) Vilket värde får roten?</p><p>b) Hur många löv beskärs?</p><p>c) Vilket av löven behöver aldrig utvärderas? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> L1</p><p class=\"ul-alt\"><strong>B.</strong> L2</p><p class=\"ul-alt\"><strong>C.</strong> L4</p><p class=\"ul-alt\"><strong>D.</strong> L6</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>A = min(5, 8) = 5.</p><p>B: efter L3 är α = 5 och β = 3, alltså α ≥ β. L4 beskärs. B blir högst 3.</p><p>C = min(6, 4) = 4.</p><p>R: barnen ger 5, högst 3, 4. R = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I B efter L3: α = 5 ≥ β = 3</p><p>L4 beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L4: 1 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 1.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första beskärningen sker i B</p><p>Efter L3 är α = 5 och β = 3. L4 beskärs.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> L4.</p><ul><li><strong>A:</strong> L1 utvärderas av alfa–beta.</li><li><strong>B:</strong> L2 utvärderas av alfa–beta.</li><li><strong>C:</strong> L4 beskärs i B.</li><li><strong>D:</strong> L6 utvärderas av alfa–beta.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>När ett MIN-barn får ett löv som är högst α kan resten av barnet hoppas över.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:420px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 6 löv, L1–L6.</title><line x1=\"90.0\" y1=\"148\" x2=\"60.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"90.0\" y1=\"148\" x2=\"120.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"180.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"148\" x2=\"240.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"300.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"330.0\" y1=\"148\" x2=\"360.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"90.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"210.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"210.0\" y1=\"60\" x2=\"330.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"68.0,132 112.0,132 90.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"117.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"188.0,132 232.0,132 210.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"308.0,132 352.0,132 330.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"357.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"210.0,41 232.0,76 188.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"237.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"42.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"60.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"60.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"102.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"120.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"120.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"162.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"180.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><text x=\"180.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"222.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"240.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">9</text><text x=\"240.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"282.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"300.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"300.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"342.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"360.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"360.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>A = min(5, 8) = 5.</p><p>B: efter L3 är α = 5 och β = 3, alltså α ≥ β. L4 beskärs. B blir högst 3.</p><p>C = min(6, 4) = 4.</p><p>R: barnen ger 5, högst 3, 4. R = 5.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Bestäm först rotens första barn helt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 1,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många löv beskärs?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I B efter L3: α = 5 ≥ β = 3</p><p>L4 beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L4: 1 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 1.</p></div>",
+        "ledtrad": "<p>Leta efter noder där α ≥ β innan alla barn är undersökta.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 1,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Vilket av löven behöver aldrig utvärderas? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Första beskärningen sker i B</p><p>Efter L3 är α = 5 och β = 3. L4 beskärs.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> L4.</p><ul><li><strong>A:</strong> L1 utvärderas av alfa–beta.</li><li><strong>B:</strong> L2 utvärderas av alfa–beta.</li><li><strong>C:</strong> L4 beskärs i B.</li><li><strong>D:</strong> L6 utvärderas av alfa–beta.</li></ul></div>",
+        "ledtrad": "<p>Vilken nod avbryts först?</p>",
+        "alternativ": [
+          {
+            "txt": "L1",
+            "ratt": false,
+            "kommentar": "L1 utvärderas av alfa–beta."
+          },
+          {
+            "txt": "L2",
+            "ratt": false,
+            "kommentar": "L2 utvärderas av alfa–beta."
+          },
+          {
+            "txt": "L4",
+            "ratt": true,
+            "kommentar": "L4 beskärs i B."
+          },
+          {
+            "txt": "L6",
+            "ratt": false,
+            "kommentar": "L6 utvärderas av alfa–beta."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "L4",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.35",
+    "kap": 3,
+    "omr": "alfa_beta",
+    "niva": "C",
+    "poang": "1/2/0",
+    "familj": "Alfa–beta med direkt rättning",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      6,
+      3,
+      5
+    ],
+    "tolerans": [
+      0,
+      0,
+      0
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 368\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 8 löv, L1–L8.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"290.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"320.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"440.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"140.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"380.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"80.0,217 102.0,252 58.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"200.0,217 222.0,252 178.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"118.0,132 162.0,132 140.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"167.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"320.0,217 342.0,252 298.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"347.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"440.0,217 462.0,252 418.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"358.0,132 402.0,132 380.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"260.0,41 282.0,76 238.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"50.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><text x=\"110.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><text x=\"170.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><text x=\"230.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"272.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"290.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"350.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"410.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L7</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"470.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p><p>a) Vilket värde får roten?</p><p>b) Hur många löv beskärs?</p><p>c) Hur många löv utvärderas?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>C = max(6, 1) = 6.</p><p>D: efter L3 är α = 7 och β = 6, alltså α ≥ β. L4 beskärs. D blir minst 7.</p><p>A: barnen ger 6, minst 7. A = 6.</p><p>E = max(4, 4) = 4.</p><p>B: efter E är α = 6 och β = 4, alltså α ≥ β. Grenen till F (L7, L8) beskärs. B blir högst 4.</p><p>R: barnen ger 6, högst 4. R = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I D efter L3: α = 7 ≥ β = 6</p><p>L4 beskärs.</p></li><li><p class=\"facit-rubrik\">I B efter E: α = 6 ≥ β = 4</p><p>Grenen till F (L7, L8) beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L4, L7, L8: 3 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Löven som inte beskärs</p><p>L1, L2, L3, L5, L6: 5 av 8 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div></div></div></div>",
+    "ledtrad": "<p>Gränserna förs ned genom trädet.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 368\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MAX i roten R och 8 löv, L1–L8.</title><line x1=\"80.0\" y1=\"236\" x2=\"50.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"80.0\" y1=\"236\" x2=\"110.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"170.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"200.0\" y1=\"236\" x2=\"230.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"80.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"140.0\" y1=\"148\" x2=\"200.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"290.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"320.0\" y1=\"236\" x2=\"350.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"410.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"440.0\" y1=\"236\" x2=\"470.0\" y2=\"324\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"320.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"380.0\" y1=\"148\" x2=\"440.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"140.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"380.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"80.0,217 102.0,252 58.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"107.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"200.0,217 222.0,252 178.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"227.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">D</text><polygon points=\"118.0,132 162.0,132 140.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"167.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"320.0,217 342.0,252 298.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"347.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">E</text><polygon points=\"440.0,217 462.0,252 418.0,252\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"467.0\" y=\"242\" font-size=\"17\" fill=\"#334155\">F</text><polygon points=\"358.0,132 402.0,132 380.0,167\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"407.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"260.0,41 282.0,76 238.0,76\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"50.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"92.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><text x=\"110.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"152.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><text x=\"170.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"212.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><text x=\"230.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"272.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"290.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"332.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"350.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><rect x=\"392.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"410.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L7</text><rect x=\"452.0\" y=\"308\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"331\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"470.0\" y=\"358\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>C = max(6, 1) = 6.</p><p>D: efter L3 är α = 7 och β = 6, alltså α ≥ β. L4 beskärs. D blir minst 7.</p><p>A: barnen ger 6, minst 7. A = 6.</p><p>E = max(4, 4) = 4.</p><p>B: efter E är α = 6 och β = 4, alltså α ≥ β. Grenen till F (L7, L8) beskärs. B blir högst 4.</p><p>R: barnen ger 6, högst 4. R = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Bestäm först rotens första barn helt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många löv beskärs?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I D efter L3: α = 7 ≥ β = 6</p><p>L4 beskärs.</p></li><li><p class=\"facit-rubrik\">I B efter E: α = 6 ≥ β = 4</p><p>Grenen till F (L7, L8) beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L4, L7, L8: 3 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Leta efter noder där α ≥ β innan alla barn är undersökta.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>Hur många löv utvärderas?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Löven som inte beskärs</p><p>L1, L2, L3, L5, L6: 5 av 8 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 5.</p></div>",
+        "ledtrad": "<p>Utgå från antalet löv som beskärs.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 5,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      "numeriskt"
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "3.36",
+    "kap": 3,
+    "omr": "alfa_beta",
+    "niva": "C",
+    "poang": "1/2/0",
+    "familj": "Alfa–beta med direkt rättning",
+    "formaga": [
+      "procedur",
+      "begrepp"
+    ],
+    "traningsniva": 3,
+    "arbetsinsats": 2,
+    "miniräknare": true,
+    "geogebra": false,
+    "spel": true,
+    "självrättning": true,
+    "svarstyp": "flera_delar",
+    "rättSvar": [
+      6,
+      3,
+      "B"
+    ],
+    "tolerans": [
+      0,
+      0,
+      null
+    ],
+    "t": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MIN i roten R och 8 löv, L1–L8.</title><line x1=\"110.0\" y1=\"148\" x2=\"50.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"110.0\" y1=\"148\" x2=\"110.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"110.0\" y1=\"148\" x2=\"170.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"148\" x2=\"230.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"148\" x2=\"290.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"350.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"410.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"470.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"110.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"260.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"410.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"110.0,129 132.0,164 88.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"137.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"260.0,129 282.0,164 238.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"410.0,129 432.0,164 388.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"437.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"238.0,44 282.0,44 260.0,79\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><text x=\"50.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"92.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"110.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"152.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"170.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"212.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><text x=\"230.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"272.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><text x=\"290.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"332.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"350.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><rect x=\"392.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><text x=\"410.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L7</text><rect x=\"452.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"470.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p><p>a) Vilket värde får roten?</p><p>b) Hur många löv beskärs?</p><p>c) I vilken nod sker den första beskärningen? Välj ett alternativ.</p><p class=\"ul-alt\"><strong>A.</strong> A</p><p class=\"ul-alt\"><strong>B.</strong> B</p><p class=\"ul-alt\"><strong>C.</strong> C</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>A = max(2, 6, 4) = 6.</p><p>B: efter L4 är α = 7 och β = 6, alltså α ≥ β. L5 beskärs. B blir minst 7.</p><p>C: efter L6 är α = 8 och β = 6, alltså α ≥ β. L7 och L8 beskärs. C blir minst 8.</p><p>R: barnen ger 6, minst 7, minst 8. R = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I B efter L4: α = 7 ≥ β = 6</p><p>L5 beskärs.</p></li><li><p class=\"facit-rubrik\">I C efter L6: α = 8 ≥ β = 6</p><p>L7 och L8 beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L5, L7, L8: 3 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ sökningen från vänster</p><p>Första gången α ≥ β blir sant är i B, efter L4: α = 7 och β = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B.</p><ul><li><strong>A:</strong> A undersöks helt.</li><li><strong>B:</strong> Efter L4 är α ≥ β i B.</li><li><strong>C:</strong> C undersöks men avbryts senare.</li></ul></div></div></div></div>",
+    "ledtrad": "<p>Roten är en MIN-nod. Jämför med β i roten.</p>",
+    "spelIntro": "<div style=\"overflow-x:auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" role=\"img\" aria-label=\"Spelträd. Uppåtriktad triangel är MAX, nedåtriktad är MIN.\" style=\"width:100%;max-width:520px;min-width:420px;height:auto\"><title>Spelträd med MIN i roten R och 8 löv, L1–L8.</title><line x1=\"110.0\" y1=\"148\" x2=\"50.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"110.0\" y1=\"148\" x2=\"110.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"110.0\" y1=\"148\" x2=\"170.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"148\" x2=\"230.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"148\" x2=\"290.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"350.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"410.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"410.0\" y1=\"148\" x2=\"470.0\" y2=\"236\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"110.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"260.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"260.0\" y1=\"60\" x2=\"410.0\" y2=\"148\" stroke=\"#64748b\" stroke-width=\"1.8\"/><polygon points=\"110.0,129 132.0,164 88.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"137.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">A</text><polygon points=\"260.0,129 282.0,164 238.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">B</text><polygon points=\"410.0,129 432.0,164 388.0,164\" fill=\"#dbf5f1\" stroke=\"#14857f\" stroke-width=\"2.5\"/><text x=\"437.0\" y=\"154\" font-size=\"17\" fill=\"#334155\">C</text><polygon points=\"238.0,44 282.0,44 260.0,79\" fill=\"#fff0d9\" stroke=\"#b86b16\" stroke-width=\"2.5\"/><text x=\"287.0\" y=\"66\" font-size=\"17\" fill=\"#334155\">R</text><rect x=\"32.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"50.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">2</text><text x=\"50.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L1</text><rect x=\"92.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"110.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">6</text><text x=\"110.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L2</text><rect x=\"152.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"170.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">4</text><text x=\"170.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L3</text><rect x=\"212.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"230.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">7</text><text x=\"230.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L4</text><rect x=\"272.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"290.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">1</text><text x=\"290.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L5</text><rect x=\"332.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"350.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">8</text><text x=\"350.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L6</text><rect x=\"392.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"410.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">3</text><text x=\"410.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L7</text><rect x=\"452.0\" y=\"220\" width=\"36\" height=\"32\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\"/><text x=\"470.0\" y=\"243\" text-anchor=\"middle\" font-size=\"18\" fill=\"#111827\">5</text><text x=\"470.0\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">L8</text><polygon points=\"20,7 29,23 11,23\" fill=\"#dbf5f1\" stroke=\"#14857f\"/><text x=\"38\" y=\"22\" font-size=\"14\" fill=\"#334155\">MAX</text><polygon points=\"110,7 128,7 119,23\" fill=\"#fff0d9\" stroke=\"#b86b16\"/><text x=\"137\" y=\"22\" font-size=\"14\" fill=\"#334155\">MIN</text></svg></div><p>Spelträdet söks igenom med alfa–beta-beskärning (vänster gren först).</p>",
+    "spelDelning": "deluppgifter",
+    "spelDelar": [
+      {
+        "fraga": "<p>Vilket värde får roten?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Gren för gren</p><p>A = max(2, 6, 4) = 6.</p><p>B: efter L4 är α = 7 och β = 6, alltså α ≥ β. L5 beskärs. B blir minst 7.</p><p>C: efter L6 är α = 8 och β = 6, alltså α ≥ β. L7 och L8 beskärs. C blir minst 8.</p><p>R: barnen ger 6, minst 7, minst 8. R = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 6.</p></div>",
+        "ledtrad": "<p>Bestäm först rotens första barn helt.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 2,
+        "arbetsinsats": 1,
+        "niva": "E",
+        "poang": "1/0/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 6,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "a"
+      },
+      {
+        "fraga": "<p>Hur många löv beskärs?</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I B efter L4: α = 7 ≥ β = 6</p><p>L5 beskärs.</p></li><li><p class=\"facit-rubrik\">I C efter L6: α = 8 ≥ β = 6</p><p>L7 och L8 beskärs.</p></li><li><p class=\"facit-rubrik\">Räkna</p><p>L5, L7, L8: 3 löv.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3.</p></div>",
+        "ledtrad": "<p>Leta efter noder där α ≥ β innan alla barn är undersökta.</p>",
+        "alternativ": [],
+        "visaAlternativ": false,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "numeriskt",
+        "rättSvar": 3,
+        "tolerans": 0,
+        "svarFormat": "numeriskt",
+        "svarEnhet": null,
+        "etikett": "b"
+      },
+      {
+        "fraga": "<p>I vilken nod sker den första beskärningen? Välj ett alternativ.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Följ sökningen från vänster</p><p>Första gången α ≥ β blir sant är i B, efter L4: α = 7 och β = 6.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> B.</p><ul><li><strong>A:</strong> A undersöks helt.</li><li><strong>B:</strong> Efter L4 är α ≥ β i B.</li><li><strong>C:</strong> C undersöks men avbryts senare.</li></ul></div>",
+        "ledtrad": "<p>Gå igenom löven från vänster och uppdatera α och β efter varje löv.</p>",
+        "alternativ": [
+          {
+            "txt": "A",
+            "ratt": false,
+            "kommentar": "A undersöks helt."
+          },
+          {
+            "txt": "B",
+            "ratt": true,
+            "kommentar": "Efter L4 är α ≥ β i B."
+          },
+          {
+            "txt": "C",
+            "ratt": false,
+            "kommentar": "C undersöks men avbryts senare."
+          }
+        ],
+        "visaAlternativ": true,
+        "traningsniva": 3,
+        "arbetsinsats": 1,
+        "niva": "C",
+        "poang": "0/1/0",
+        "miniräknare": true,
+        "geogebra": false,
+        "självrättning": true,
+        "spel": true,
+        "svarstyp": "alternativ",
+        "rättSvar": "B",
+        "tolerans": null,
+        "svarFormat": null,
+        "svarEnhet": null,
+        "etikett": "c"
+      }
+    ],
+    "svarFormat": [
+      "numeriskt",
+      "numeriskt",
+      null
+    ],
+    "svarEnhet": [
+      null,
+      null,
+      null
+    ],
+    "svarsstruktur": "ordnad",
+    "svarEtiketter": [
+      "a",
+      "b",
+      "c"
+    ]
   }
 ];

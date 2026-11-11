@@ -3724,3 +3724,13 @@ och A* skrivs ”tas ut ur kön/öppna listan”, inte ”besöks”. Alfa–bet
 Undvik frågor om rotens drag när två barn ger samma värde.
 [Granskning och 24 nya uppgifter](AI_PAFYLLNAD3_2026-11-11.md).
 Skydd: `tools/ai-pafyllnad3-2026-11-11.test.js`.
+
+## AI: självrättande kort för Kunskapsgymmet, 2026-11-11
+
+Nya AI-uppgifter byggs så att de kan rättas automatiskt: heltal (`numeriskt`,
+tolerans 0) eller ett rätt alternativ med kommentarer. Ordningsföljder och vägar
+frågas inte som fritext. Gör svaren entydiga: inga lika värden utan uttalad regel,
+och inga dragfrågor där två barn ger samma värde. Användaren har gett stående
+tillstånd att pusha till `main` när ett arbete är klart (2026-11-11).
+[Format och 30 uppgifter](AI_KUNSKAPSGYMMET_2026-11-11.md).
+Skydd: `tools/ai-kunskapsgymmet-2026-11-11.test.js`.
