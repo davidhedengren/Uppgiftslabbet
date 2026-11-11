@@ -90,4 +90,4 @@ områden som hade fått mest C: A*-sökning, g/h/f och viktade vägar.
 
 Byggordning: `bygg-ai-pafyllnad-2026-11-11.py` → `…pafyllnad2…` → `…pafyllnad3…` →
 `bygg-ai-kunskapsgymmet-2026-11-11.py` → `bygg-ai-e-uppgifter-2026-11-11.py` →
-`bygg-ai-nivaer-2026-11-11.py`. Kedjan ger en identisk fil från den committade versionen.
+`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.

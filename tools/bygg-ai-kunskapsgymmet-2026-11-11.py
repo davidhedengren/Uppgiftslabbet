@@ -137,13 +137,13 @@ def t134():
     opts = lambda right, kom: [alt(x, x == right, kom[x]) for x in 'PQRS']  # noqa: E731
     a = val('Vilken nod tas ut som tredje nod med FIFO-kön?',
             [step('FIFO tar ut i samma ordning som noderna lades in', 'P, Q, R och sist S.')],
-            opts('R', {'P': 'P tas ut först.', 'Q': 'Q tas ut som andra nod.', 'R': 'R lades in som tredje nod och tas ut som tredje.',
+            opts('R', {'P': 'P lades in först och tas därför ut först.', 'Q': 'Q tas ut som andra nod.', 'R': 'R lades in som tredje nod och tas ut som tredje.',
                        'S': 'S lades in sist och tas ut sist.'}), 'I vilken ordning lades noderna in?', 1)
     b = val('Vilken nod tas ut som tredje nod med stacken?',
             [step('Första uttaget tar R', 'R ligger överst. Sedan läggs S in överst.'),
              step('De tre sista uttagen', 'S, sedan Q och sist P.')],
             opts('Q', {'P': 'P ligger nederst och tas ut sist.', 'Q': 'Efter R och S ligger Q överst.',
-                       'R': 'R tas ut först.', 'S': 'S tas ut som andra nod.'}), 'Skriv upp stacken efter varje steg.', 2)
+                       'R': 'R låg överst vid det första uttaget och togs ut först.', 'S': 'S tas ut som andra nod.'}), 'Skriv upp stacken efter varje steg.', 2)
     return kg_task('1.34', 'ko_stack', 'Tredje uttaget med kö och stack', intro, [a, b],
                    'Gör stegen två gånger: en gång där den äldsta noden tas ut och en gång där den senaste tas ut.', ['procedur'])
 
@@ -230,7 +230,7 @@ def t137():
     intro = maze(M137, s, g) + p('Labyrinten söks igenom med BFS (ordning ↑ → ↓ ←).')
     a = val('Vilka rutor ligger i kön direkt efter att start har tagits ut?',
             [step('Pröva grannarna i ordningen ↑ → ↓ ←', 'Uppåt finns ingen ruta. Åt höger A2, nedåt B1, åt vänster ingen ruta.')],
-            [alt('A2 och B1', True, 'A2 (→) och B1 (↓) är de enda grannarna till start.'), alt('A2, B1 och B2', False, 'B2 är en vägg.'),
+            [alt('A2 och B1', True, 'A2 (→) och B1 (↓) är de enda grannarna till start.'), alt('A2, B1 och B2', False, 'B2 är en vägg och kan aldrig läggas in i kön.'),
              alt('Bara A2', False, 'B1 är också granne till start.'), alt('A2 och A3', False, 'A3 ligger två steg från start.')],
             'Vilka grannar har start?', 1)
     b = num('Hur många rutor ligger som mest i kön samtidigt?',
@@ -574,7 +574,7 @@ def mm_kg(id_, values, root_max, node_q, ledtrad, tn=(1, 2, 2)):
     assert len(best) == 1, id_
     c = val('Vilket drag väljer roten?',
             [step(f'Roten väljer det {"största" if root_max else "minsta"} värdet', ', '.join(f'{k} ger {T.fmt(info[k][2])}' for k in kids) + '.')],
-            [alt(f'Draget till {k}', k == best[0], f'{k} har värdet {T.fmt(info[k][2])}' + ('.' if k == best[0] else
+            [alt(f'Draget till {k}', k == best[0], f'{k} har värdet {T.fmt(info[k][2])}' + (f', det {"största" if root_max else "minsta"} av rotens barn.' if k == best[0] else
                  f', men roten väljer det {"största" if root_max else "minsta"} värdet, {T.fmt(v)}.')) for k in kids],
             'Vilket av rotens barn ger rotens värde?', tn[2])
     return kg_task(id_, 'minimax', 'Minimax med direkt rättning', intro, [a, b, c], ledtrad, ['procedur'])
@@ -608,7 +608,7 @@ def ab_kg(id_, values, root_max, ledtrad, tn=(2, 3, 3), third='leaf'):
     leaf_opts = [pr[0], ev[-1], ev[0], [x for x in T.leaves(r) if x not in pr and x not in (ev[-1], ev[0])][0]]
     c = val('Vilket av löven behöver aldrig utvärderas?',
             [step(f'Första beskärningen sker i {first[0]}', f'Efter {first[1]} är α = {T.fmt(first[2])} och β = {T.fmt(first[3])}. {T.cap(" och ".join(T.pruned_desc(first[4])))} beskärs.')],
-            [alt(x, x == pr[0], (f'{x} beskärs i {first[0]}.' if x == pr[0] else f'{x} utvärderas av alfa–beta.')) for x in sorted(set(leaf_opts), key=lambda s: int(s[1:]))],
+            [alt(x, x == pr[0], (f'{x} beskärs i {first[0]} och behöver aldrig utvärderas.' if x == pr[0] else f'{x} utvärderas av alfa–beta.')) for x in sorted(set(leaf_opts), key=lambda s: int(s[1:]))],
             'Vilken nod avbryts först?', tn[2])
     return kg_task(id_, 'alfa_beta', 'Alfa–beta med direkt rättning', intro, [a, b, c], ledtrad, ['procedur', 'begrepp'])
 

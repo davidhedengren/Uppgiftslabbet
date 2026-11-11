@@ -36,7 +36,7 @@ def t247():
             [step('Grannarna till start har g = 1', 'A2: h = 2 + 2 = 4, f = 5. B3: h = 1 + 1 = 2, f = 3. B1: h = 1 + 3 = 4, f = 5.'),
              step('Lägst f tas ut', 'B3 har f = 3.')],
             [alt('A2', False, 'A2 har f = 1 + 4 = 5.'), alt('B1', False, 'B1 har f = 1 + 4 = 5.'),
-             alt('B3', True, 'B3 ligger närmast målet och har lägst f = 3.'), alt('C2', False, 'C2 är en vägg.')],
+             alt('B3', True, 'B3 ligger närmast målet och har lägst f = 3.'), alt('C2', False, 'C2 är en vägg och kan inte läggas in i öppna listan.')],
             'Räkna f = g + h för starts grannar. Alla har g = 1.', 2)
     b = num('Vilket f-värde har B3?', [step('f = g + h', 'B3 ligger ett steg från start, g = 1. h = 1 + 1 = 2. f = 1 + 2 = 3.')], 3,
             'g är 1 för en granne till start.', 1)
@@ -51,7 +51,7 @@ def t248():
     a = val('Vilken ruta tar girig bäst först ut efter start?',
             [step('Jämför h för grannarna till start', 'A2: h = 0 + 2 = 2. B1: h = 1 + 3 = 4.'), step('Lägst h vinner', 'A2 ligger närmast målet.')],
             [alt('A2', True, 'A2 har lägst h = 2.'), alt('B1', False, 'B1 har h = 4, längre från målet.'),
-             alt('B2', False, 'B2 är en vägg.'), alt('A3', False, 'A3 är inte granne till start.')],
+             alt('B2', False, 'B2 är en vägg och kan inte läggas in i öppna listan.'), alt('A3', False, 'A3 är inte granne till start.')],
             'Girig bäst först jämför bara h.', 1)
     b = num('Vilket h-värde har den rutan?', [step('h = radskillnad + kolumnskillnad', 'A2 och målet A4 ligger på samma rad, två kolumner isär: h = 2.')], 2,
             'Räkna rader och kolumner till målet.', 1)

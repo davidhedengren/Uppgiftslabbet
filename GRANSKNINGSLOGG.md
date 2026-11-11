@@ -1083,3 +1083,10 @@ Ny instruktion [AI_NIVAINDELNING.md](agent/AI_NIVAINDELNING.md) utifrån
 betygskriterierna för AI nivå 1. Alla delkort är omklassade (80 ändrade), och
 alfa–beta-beskärning är A-nivå. Sju nya E-uppgifter (2.47–2.53). Fördelning:
 245 E, 67 C och 46 A av 358 delkort. 70/70 tester godkända.
+
+## 2026-11-11 – AI, 30 nya självrättande uppgifter (mest E)
+
+1.44–1.54, 2.54–2.66 och 3.37–3.42, med nya sammanhang och frågeformer.
+Alternativkommentarerna är utbyggda i hela banken. Banken har 162 uppgifter
+och 431 delkort (70 % E). 75/75 tester godkända.
+[Uppgifter och kontroller](agent/AI_PAFYLLNAD4_2026-11-11.md).
