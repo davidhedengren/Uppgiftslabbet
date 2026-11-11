@@ -5,7 +5,8 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const FÄRDIGA={
   'uppgiftermato1.js':['funktioner','forkorta_rationella','absolutbelopp','faktorisera_polynom','polynomekvationer',
-    'rationella_ekvationer','tangent_sekant','algebra_polynom','rakna_rationella','kontinuitet'],
+    'rationella_ekvationer','tangent_sekant','algebra_polynom','rakna_rationella','kontinuitet',
+    'gransvarde','polynomfunktioner','rationella_uttryck','polynom','andringskvoter'],
   'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
