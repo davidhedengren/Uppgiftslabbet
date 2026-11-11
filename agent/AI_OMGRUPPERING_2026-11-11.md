@@ -14,25 +14,27 @@ bäst först, f, g och h). Det fanns för få uppgifter om BFS och DFS i träd.
 | | | BFS i träd och grafer | 14 |
 | | Djupet först (DFS) (`dfs`) | DFS i labyrinter | 13 |
 | | | DFS i träd och grafer | 13 |
-| 2 Informerad sökning | Prioritetsköer (`prioritetsko`) | Uttag ur en prioritetskö | 7 |
-| | | Prioritetskön i girig bäst först och A* | 7 |
-| | Heuristik och f-värden (`astar_varden`) | Heuristiken h | 6 |
+| 2 Informerad sökning | Prioritetsköer (`prioritetsko`) | Uttag ur en prioritetskö | 10 |
+| | | Prioritetskön i girig bäst först och A* | 10 |
+| | Heuristik och f-värden (`astar_varden`) | Heuristiken h | 10 |
 | | | g, h och f för en ruta | 15 |
 | | Girig bäst först och A* (`astar_sokning`) | A* steg för steg | 14 |
 | | | Girig bäst först jämfört med A* | 9 |
 | | Viktade vägar (`viktade_vagar`) | Vägkostnad i labyrinter | 10 |
 | | | Billigaste väg i grafer | 9 |
-| 3 Spelträd och beskärning | Minimax, Alfa–beta-beskärning | oförändrat | |
+| 3 Spelträd och beskärning | Minimax (`minimax`) | Minimaxvärden och bästa drag | 20 |
+| | | Tolka och resonera om minimax | 10 |
+| | Alfa–beta-beskärning (`alfa_beta`) | Beskärningens idé | 8 |
+| | | Rotvärde och beskurna löv | 23 |
 
 - Kortet ”Kön under sökningen” (`ko_sokning`) är borttaget. Dess 17 uppgifter hör nu till
   BFS eller DFS efter algoritm (1.58 om oinformerad sökning till Köer och stackar).
   Teorifrågorna 1.55, 1.56 och 1.60 flyttades från BFS/DFS till Köer och stackar.
 - Tidigare hade varje uppgift ett eget delmoment. Nu har varje kort två delmoment
-  (strukturregeln: 2–5 delmoment per kort). Delmomenten med 6–7 uppgifter fylls på senare.
+  (strukturregeln: 2–5 delmoment per kort). Alla delmoment har minst 8 uppgifter.
 - Område-ID:n för kapitel 2 är oförändrade; bara namnen ändrades. Gamla värden finns i
   `omrTidigare` (20 uppgifter) och `familjTidigare`, så att Kunskapsgymmets
   `migreraFamiljer()` flyttar elevernas resultat.
-- Kapitel 3 har fortfarande ett delmoment per uppgift. Det ingick inte i beslutet.
 
 ## Tolv nya uppgifter (1.65–1.76, `tools/bygg-ai-pafyllnad7-2026-11-11.py`)
 
@@ -65,3 +67,31 @@ snabbare än BFS när målet ligger djupt i första grenen, 1.76 barnens ordning
 - Kunskapsgymmet: `tools/ai1-kurs-2026-11-11.browser.cjs` (569 delkort, 1 809
   rättningskontroller, inga fel) och `tools/kapitel-blandat.browser.cjs` med
   `REVIEW_COURSE=ai` (inga fynd).
+
+## Fortsättning samma dag: kapitel 3 och de minsta delmomenten
+
+Användaren bad om fortsättning (”fortsätt”).
+
+- Kapitel 3 har nu två delmoment per kort (tabellen ovan). Beskärning med stöd och
+  begreppsfrågor (3.10, 3.14, 3.56–3.61) ligger i ”Beskärningens idé”. Tolkning och
+  resonemang om minimax (bland annat 3.07, 3.12, 3.43–3.46, 3.50, 3.54) ligger i ”Tolka och
+  resonera om minimax”. Uppdelningen efter trädstorlek valdes bort, eftersom bara 6 träd har
+  minst 12 löv.
+- Tio nya uppgifter (`tools/bygg-ai-pafyllnad8-2026-11-11.py`):
+  - Heuristiken h: 2.78 fågelvägen på en karta, 2.79 h i en labyrint (h = 1 bara
+    för öppna rutor), 2.80 robotens Manhattanavstånd utan figur, 2.81 vad en heuristik är.
+  - Uttag ur en prioritetskö: 2.82 läxlistan, 2.83 spelservern (högst värde först) och
+    2.84 kön just nu med lika värden.
+  - Prioritetskön i girig bäst först och A*: 2.85 öppna listan med g och h, 2.86 A* i en
+    liten graf, 2.87 girig bäst först hittar en dyrare väg än A* (M får ett lägre f senare).
+  - 28 av 29 delkort är E. 2.87c (hela A*-spårningen med uppdaterat f) är C.
+  - Fågelvägen i 2.78 och h i 2.86–2.87 överskattar aldrig den verkliga kostnaden
+    (kontrollerat i testet).
+- Facit, ledtrådar och figurer har lästs igenom i Kunskapsgymmet (390 px). Rubrikerna i
+  2.87c gjordes specifika.
+- Byggkedjan: det äldsta skriptet byggde om 2.03 och tappade `familjTidigare`, och flera
+  skript flyttade sina uppgifter sist vid omkörning. Nu behåller 2.03 sina tidigare värden,
+  och omgrupperingsskriptet sorterar banken efter kapitel och nummer. Två körningar i rad
+  ger samma fil.
+- Test: `tools/ai-pafyllnad8-2026-11-11.test.js`. Kunskapsgymmet: 598 delkort och 1 908
+  rättningskontroller utan fel.

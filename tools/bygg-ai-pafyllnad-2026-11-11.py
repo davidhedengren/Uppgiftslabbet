@@ -228,6 +228,10 @@ def rebuild_203(u):
              'Vad tar respektive algoritm hänsyn till när nästa ruta väljs?', 4)
     ny = task('2.03', 'viktade_vagar', u['familj'], intro, [a, b, c],
               'Jämför kostnaden för den korta övre vägen med den längre vägen runt väggarna.', ['procedur', 'resonemang'], 3)
+    # Tidigare område och delmoment (omgrupperingen 2026-11-11) följer med, så att elevresultat flyttas.
+    for k in ('omrTidigare', 'familjTidigare'):
+        if k in u:
+            ny[k] = u[k]
     return ny
 
 

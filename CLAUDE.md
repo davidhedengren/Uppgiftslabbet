@@ -191,7 +191,8 @@ Struktur sedan 2026-11-11 (`agent/AI_OMGRUPPERING_2026-11-11.md`): kapitel 1 Oin
 sökning (köer och stackar, BFS, DFS, i labyrinter, träd och grafer) och kapitel 2
 Informerad sökning (prioritetsköer, heuristik och f-värden, girig bäst först och A*,
 viktade vägar). Placeringen av varje uppgift står i `tools/bygg-ai-omgruppering-2026-11-11.py`,
-som också skriver `strukturai.js`. Nya AI-uppgifter i kapitel 1–2 måste läggas in där.
+som också skriver `strukturai.js` och sorterar banken. Varje kort har två delmoment, även i
+kapitel 3. Nya AI-uppgifter måste läggas in där, annars stoppar skriptet.
 
 ## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
