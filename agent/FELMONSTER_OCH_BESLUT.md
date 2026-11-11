@@ -3750,3 +3750,12 @@ Användarbeslut: fler beskärningsuppgifter på E–C-nivå. Fullständig alfa�
 och begreppsfrågor om beskärning är E. Facitrubriker får inte vara bara ”Ja” eller ”Nej”.
 [Uppgifter](AI_PAFYLLNAD6_2026-11-11.md). Skydd: `tools/ai-pafyllnad6-2026-11-11.test.js`
 och `tools/ai-nivaer-2026-11-11.test.js`.
+
+## Fy1: tabellkonstanter, inledande enheter och grundblad, 2026-11-11
+
+[Alla fem rapporter, 15 ändrade ID, jämförelser och kontroller](FELRAPPORTER_2026-11-11_1630.md).
+2.59 ersätter knop med 14,0 m/s → 50,4 km/h och 840,0 m/min (en decimal). Återinför inte knop via äldre tester. Energi-/effektomvandlingarna 2.19/2.29/2.33/2.36/2.209/2.217/2.220/2.362 ligger nu i kapitel 5 med sina ursprungliga ID. 8.294 (V=kq/r) är märkt fördjupning i Uppgiftslabbet och har spel=false; vanlig spänning/arbete/laddning i 8.280–8.284 ligger kvar.
+
+7.221 a måste godta både 17,2 och 17,3 °C från vanliga vattendensiteter. Även 7.220 har separat beräknade densitetsalternativ. 6.338 godtar 6,23 och 6,24 liter från olika vanliga R. 6.337/6.201 a skyddar motsvarande precisionseffekt. Använd svarTabell per svarsfält, bevara enheter och precisionsregler, bredda inte toleranser globalt. 6.201 behöver kombinationen R-val och Kelvin-offset; b beror på kvoter och får inte ärva a:s alternativ. Tabellvärden ska inte stoppas in i frågan enbart för att tvinga en viss formelsamling.
+
+Fysik 1 har ett tvåsidigt grundblad (prefix/enheter först, senare formler på sida 2) via befintlig Formelblad-knapp. Källa: tools/bygg-fy1-grundblad-2026-11-11.py. Skydd: fellogg-fy1-2026-11-11.test.js, felrapporter-2026-11-11.browser.cjs/cases.json och konsumentens fy1-grundblad-2026-11-11.browser.cjs. 7.221:s facit följer den senare FACITMALL.md; återinför inte det äldre förbudet mot numrerade fysikfacit.

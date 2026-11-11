@@ -119,8 +119,8 @@ test('Fasändring: skrivna slutsvar har den avrundning som frågan ber om',()=>{
 
 test('Fasändring: varje delkort har egen fråga och en egen förklaring',()=>{
  const tasks=c.window.BANK.filter(q=>q.omr==='fasandring');assert.equal(tasks.length,104);
- // 7.231 följer agent/FACITMALL.md (steglista), som är standard sedan 2026-11-04. Äldre fasändringsfacit görs om efter hand.
- for(const t of tasks){if(t.id!=='7.231')assert.doesNotMatch(t.s,/<ol|facit-steglista/);
+ // 7.221 (fellogg 2026-11-11) och 7.231 följer agent/FACITMALL.md (steglista), som är standard sedan 2026-11-04. Äldre fasändringsfacit görs om efter hand.
+ for(const t of tasks){if(['7.221','7.231'].includes(t.id))assert.match(t.s,/facit-steglista/);else assert.doesNotMatch(t.s,/<ol|facit-steglista/);
   for(const d of t.spelDelar||[]){assert.ok(d.t&&d.s,t.id);assert.doesNotMatch(d.t,/samma tid|svaret i|från [a-c]\)/i,t.id);}
  }
 });

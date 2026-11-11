@@ -1,0 +1,432 @@
+[
+  {
+    "course": "fy1",
+    "id": "2.59",
+    "part": null,
+    "good": [
+      [
+        "50,4",
+        "840,0"
+      ],
+      [
+        "50.4 km/h",
+        "840.0 m/min"
+      ]
+    ],
+    "bad": [
+      [
+        "50.4",
+        "14.0"
+      ],
+      [
+        "50.5",
+        "840.0"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "2.59",
+    "part": 0,
+    "good": [
+      [
+        "50.4"
+      ],
+      [
+        "50,4 km/h"
+      ]
+    ],
+    "bad": [
+      [
+        "50.5"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "2.59",
+    "part": 1,
+    "good": [
+      [
+        "840.0"
+      ],
+      [
+        "840,0 m/min"
+      ]
+    ],
+    "bad": [
+      [
+        "14.0"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "7.221",
+    "part": null,
+    "good": [
+      [
+        "17.2",
+        "0.062",
+        "4.55"
+      ],
+      [
+        "17.3 °C",
+        "0.062 kg",
+        "4.55"
+      ]
+    ],
+    "bad": [
+      [
+        "17.5",
+        "0.062",
+        "4.55"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "7.221",
+    "part": 0,
+    "good": [
+      [
+        "17.2"
+      ],
+      [
+        "17.3"
+      ],
+      [
+        "17.25 °C"
+      ]
+    ],
+    "bad": [
+      [
+        "17.5"
+      ],
+      [
+        "17.3 kg"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "7.221",
+    "part": 1,
+    "good": [
+      [
+        "0.062"
+      ]
+    ],
+    "bad": [
+      [
+        "0.62"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "7.221",
+    "part": 2,
+    "good": [
+      [
+        "4.55"
+      ]
+    ],
+    "bad": [
+      [
+        "4.00"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "6.338",
+    "part": null,
+    "good": [
+      [
+        "6.23"
+      ],
+      [
+        "6.24"
+      ],
+      [
+        "6.24 liter"
+      ],
+      [
+        "6.2"
+      ]
+    ],
+    "bad": [
+      [
+        "6.22"
+      ],
+      [
+        "6.25"
+      ],
+      [
+        "6.24 kg"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "2.76",
+    "part": 3,
+    "good": [
+      [
+        "78"
+      ],
+      [
+        "78 kg"
+      ]
+    ],
+    "bad": [
+      [
+        "780"
+      ],
+      [
+        "0.78"
+      ]
+    ],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "8.294",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.337",
+    "part": null,
+    "good": [
+      [
+        "103.9"
+      ],
+      [
+        "103.93"
+      ],
+      [
+        "103.93 kPa"
+      ]
+    ],
+    "bad": [
+      [
+        "104.2"
+      ]
+    ],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.347",
+    "part": null,
+    "good": [
+      [
+        "0.401"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.201",
+    "part": 0,
+    "good": [
+      [
+        "1.0762"
+      ],
+      [
+        "1.0757"
+      ],
+      [
+        "1.08"
+      ]
+    ],
+    "bad": [
+      [
+        "1.09"
+      ]
+    ],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.204",
+    "part": null,
+    "good": [
+      [
+        "1.91"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.205",
+    "part": null,
+    "good": [
+      [
+        "1.34"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "6.207",
+    "part": null,
+    "good": [
+      [
+        "0.377"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "7.220",
+    "part": null,
+    "good": [
+      [
+        "3.2"
+      ],
+      [
+        "3.15"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "7.222",
+    "part": null,
+    "good": [
+      [
+        "135"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "7.223",
+    "part": 0,
+    "good": [
+      [
+        "5.8"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "7.224",
+    "part": 0,
+    "good": [
+      [
+        "0.437"
+      ]
+    ],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "7.219",
+    "part": null,
+    "good": [
+      [
+        "0.037"
+      ]
+    ],
+    "bad": [
+      [
+        "0.37"
+      ]
+    ],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.19",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.29",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.33",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.36",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.209",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.217",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.220",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  },
+  {
+    "course": "fy1",
+    "id": "2.362",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": true
+  }
+]
