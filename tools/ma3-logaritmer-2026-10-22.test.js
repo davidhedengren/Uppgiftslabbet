@@ -11,7 +11,7 @@ test('Verktyg bedöms efter begreppet och metadata stämmer på varje nytt kort'
 });
 test('Äldre ekvationers svar bevaras och ledtråd för ln x isolerar ingen osynlig exponentialterm',()=>{
  const expected={'2.124':'x=(ln12)/(ln5)','2.129':'x=ln7','2.134':'x=(ln10)/(ln2)','2.413':'x=ln12','2.414':'x=e^3'};
- for(const [id,value]of Object.entries(expected)){const t=q(id);assert.equal(t.rättSvar,value);assert.match(t.s,/facit-svar/);assert.doesNotMatch(t.s,/Skriv om med samma bas när det går|facit-steglista/);assert.equal(t.miniräknare,true);assert.equal(t.geogebra,false);}
+ for(const [id,value]of Object.entries(expected)){const t=q(id);assert.equal(t.rättSvar,value);assert.match(t.s,/facit-svar/);assert.doesNotMatch(t.s,/Skriv om med samma bas när det går/);assert.match(t.s,/facit-rubrik/);assert.equal(t.miniräknare,true);assert.equal(t.geogebra,false);}
  assert.doesNotMatch(q('2.414').ledtrad,/isolera|exponentialtermen|båda leden logaritmeras/);
  assert.ok(Math.abs(5**(Math.log(12)/Math.log(5))-12)<1e-12);assert.ok(Math.abs(4*2**(Math.log(10)/Math.log(2))-40)<1e-12);assert.deepEqual(Array.from(q('2.816').rättSvar),['ln(2)','ln(3)']);
  for(const x of [Math.log(2),Math.log(3)])assert.ok(Math.abs(Math.exp(2*x)-5*Math.exp(x)+6)<1e-12);

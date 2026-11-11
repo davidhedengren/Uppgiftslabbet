@@ -72,5 +72,6 @@ test('Runda 5: lösningsmängder, delvis självrättade delar och handräknade m
 
 test('Uppgifter med deluppgifter eller bevis får inga ofullständiga svarsrader',()=>{
  for(const id of ['3.149','3.217','3.774','4.197','4.207'])assert.equal(svar(q(id).s),null,id);
- for(const id of ['2.124','2.129','2.134','2.413','2.414'])assert.doesNotMatch(q(id).s,/facit-steglista/,id);
+ // Sedan FACIT_RUBRIKER_2026-10-27 ska även dessa ha steglista med en rubrik i varje steg.
+ for(const id of ['2.124','2.129','2.134','2.413','2.414'])assert.match(q(id).s,/facit-steglista[\s\S]*facit-rubrik/,id);
 });
