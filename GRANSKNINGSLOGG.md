@@ -1090,3 +1090,9 @@ alfa–beta-beskärning är A-nivå. Sju nya E-uppgifter (2.47–2.53). Fördeln
 Alternativkommentarerna är utbyggda i hela banken. Banken har 162 uppgifter
 och 431 delkort (70 % E). 75/75 tester godkända.
 [Uppgifter och kontroller](agent/AI_PAFYLLNAD4_2026-11-11.md).
+
+## 2026-11-11 – AI, teorifrågor och beräkningar i minimax och sökning
+
+16 teoriuppgifter med 38 flervalsfrågor och 12 beräkningsuppgifter (1.55–1.64,
+2.67–2.77, 3.43–3.49). Banken har 190 uppgifter. 80/80 tester godkända.
+[Uppgifter och nivåer](agent/AI_PAFYLLNAD5_2026-11-11.md).

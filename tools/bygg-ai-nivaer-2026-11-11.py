@@ -52,6 +52,11 @@ OVERRIDE = {
     # minimax: allt är E utom resonemang och generalisering
     '3.12c': ('C', 3),  # förklara varför spelet inte når lövet
     '3.07c': ('A', 4),  # för vilka x får B större värde än A
+    '3.45a': ('C', 3),  # vad rotvärdet garanterar om MIN gör misstag
+    '3.46b': ('C', 3),  # förklara varför MAX inte väljer det högsta lövet
+    # värdera heuristiken: när kan A* lita på h
+    '2.71a': ('A', 4),  # h får aldrig överskatta
+    '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar
 }
 
 VALUE_Q = re.compile(r'Vilket värde får (roten|[A-Z])\?|Bestäm rotens minimaxvärde')
