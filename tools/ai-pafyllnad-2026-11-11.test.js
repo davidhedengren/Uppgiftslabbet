@@ -50,7 +50,7 @@ test('lärarkommentarer: enhetliga inledningar i labyrinter, träd och spelträd
 test('lärarkommentarer: färgade start- och målnoder samt snygga tabeller',()=>{
  for(const id of ['1.04','1.05','1.09','1.14']){const t=q(id).spelIntro;a.match(t,/<circle[^>]*fill="#22a05a"/,id);a.match(t,/<circle[^>]*fill="#d94343"/,id);a.match(t,/>Start<\/text>/);a.match(t,/>Mål<\/text>/);a.doesNotMatch(t,/#fca5a5|r="23"/);}
  for(const u of bank){for(const h of [u.t,u.s,...u.spelDelar.flatMap(d=>[d.fraga,d.s])]){a.doesNotMatch(h,/<table>/,u.id);a.doesNotMatch(h,/<ol type="A">/,u.id);}}
- a.match(q('1.04').spelDelar[0].fraga,/<td style="text-align:left">–<\/td><td style="text-align:left">S<\/td>/);
+ a.match(q('1.04').spelDelar[0].fraga,/<td style="text-align:left">Från början<\/td><td style="text-align:left">S<\/td>/);
  a.match(q('1.05').t,/Stacken efter uttaget/);a.match(q('1.05').spelDelar[1].fraga,/kvar i stacken/);
  a.match(q('1.03').spelIntro,/Noder läggs in och tas ut enligt följande/);a.match(q('2.04').spelIntro,/Noder läggs in i och tas ut ur en prioritetskö/);
  for(const id of ['1.03','1.04','1.05','2.04','2.05'])a.doesNotMatch(q(id).ledtrad,/upptäckte varje ny ruta/,id);

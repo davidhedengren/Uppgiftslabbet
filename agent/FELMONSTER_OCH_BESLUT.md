@@ -3714,3 +3714,13 @@ i små rutnät med enhetskostnad blir vägarna oftast lika långa.
 [Omskrivna uppgifter och 20 nya](AI_PAFYLLNAD2_2026-11-11.md).
 Skydd: `tools/ai-pafyllnad-2026-11-11.test.js` (ingen UCS) och
 `tools/ai-pafyllnad2-2026-11-11.test.js`.
+
+## AI: tabeller att fylla i och ordet "tas ut", 2026-11-11
+
+Användarbeslut: tabeller som eleven fyller i har tomma, rymliga celler, inte ”…”
+eller ”–”. Startraden i tabeller med kolumnen ”Tas ut” heter ”Från början”. I BFS
+och A* skrivs ”tas ut ur kön/öppna listan”, inte ”besöks”. Alfa–beta-träd för
+övningsblad frågar alltid efter rotens värde och vilka grenar som kan beskäras.
+Undvik frågor om rotens drag när två barn ger samma värde.
+[Granskning och 24 nya uppgifter](AI_PAFYLLNAD3_2026-11-11.md).
+Skydd: `tools/ai-pafyllnad3-2026-11-11.test.js`.

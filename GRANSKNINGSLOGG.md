@@ -1060,3 +1060,12 @@ girig bäst först och A* används, och området heter nu ”Viktade vägar”. 
 uppgifter (1.20–1.27, 2.23–2.30, 3.11–3.14), två per område, med 56
 deluppgifter. Banken har 71 uppgifter. 49/49 tester godkända och inga nya
 validatorfynd. [Ändringar och svar](agent/AI_PAFYLLNAD2_2026-11-11.md).
+
+## 2026-11-11 – AI, övningsblad: tabeller, granskning och 24 nya uppgifter
+
+Tabellerna har tomma celler att fylla i och startraden ”Från början”. Efter
+granskningen säger BFS- och A*-uppgifterna ”tas ut ur kön/öppna listan” i stället
+för ”besöks”. 24 nya uppgifter: 12 alfa–beta-träd (rotvärde och beskärning, lätt,
+medel och svår), 4 minimaxträd och en uppgift i vart och ett av de övriga åtta
+områdena. Banken har 95 uppgifter. 57/57 tester godkända.
+[Ändringar och svar](agent/AI_PAFYLLNAD3_2026-11-11.md).
