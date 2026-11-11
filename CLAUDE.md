@@ -15,7 +15,7 @@ Reglerna i `agent/` gäller Claude på samma sätt som de gällde Hermes.
 
 - Kör `git status`, `git fetch origin --prune` och jämför med upstream före redigering. Användaren laddar ofta upp filer via GitHubs webb och arbetar från flera datorer.
 - Använd aldrig force push. Gör ingen commit eller push utan användarens godkännande.
-- Uppgiftslabbet är master för de sju gemensamma bankerna. Kunskapsgymmet får bara synkade kopior, aldrig egna manuella ändringar.
+- Uppgiftslabbet är master för de sju gemensamma bankerna. Kunskapsgymmet får bara synkade kopior, aldrig egna manuella ändringar. Sedan 2026-11-11 gäller samma sak AI-banken (`uppgifterai.js`, `strukturai.js`), som synkas oförändrad till Kunskapsgymmet som kursen ”Artificiell intelligens nivå 1” (kurs-ID `ai`).
 - Bevara ID:n och radera aldrig uppgifter eller filer utan uttryckligt godkännande.
 - Befintlig metadata och facit är referensmaterial, inte facit. Räkna själv.
 - Heuristiska fynd får aldrig massändras.
