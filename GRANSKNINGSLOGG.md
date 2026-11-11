@@ -1024,3 +1024,10 @@
 node --test tools/granska-uppgifter.test.js
 node tools/granska-uppgifter.js --output GRANSKNINGSLOGG.md
 ```
+
+## 2026-11-11 – AI-bank, första åtta uppgifterna
+
+AI 1.01–1.02, 2.01–2.03 och 3.01–3.03 har lagts till med SVG, ledtrådar och
+stegvisa facit. Samtliga nykonstruerade svar verifierade; inga äldre svarfel
+har rättats. AI-banken har inga validatorfynd. Se
+[detaljerad kontroll och verktygsbeslut](agent/AI_BANK_2026-11-11.md).

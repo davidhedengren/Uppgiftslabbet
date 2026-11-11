@@ -68,6 +68,10 @@
       title:"Matematik nivå 1 (Ma1a/Ma1b/Ma1c) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik nivå 1a, 1b och 1c. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
     },
+    "/ai/": {
+      title:"Artificiell intelligens – Uppgiftslabbet",
+      description:"Övningsuppgifter med labyrinter, BFS, DFS, A*, minimax och alfa–beta-beskärning. Tydliga figurer och stegvisa facit."
+    },
     "/ma2/": {
       title:"Matematik nivå 2 (Ma2a/Ma2b/Ma2c) – Uppgiftslabbet",
       description:"Övningsuppgifter i Matematik nivå 2a, 2b och 2c. Filtrera efter område, nivå och förmåga och bygg egna övningsblad."
@@ -5847,6 +5851,12 @@ if('scrollRestoration' in history) history.scrollRestoration='manual';
    måste vara unika mellan kurserna, annars krockar deklarationerna. */
 const KURSER=[
   {
+    id:'ai', titel:'Artificiell intelligens', siffra:'AI', färg:'#6E3B86', rygg:'#6E3B86',
+    taggar:['Sökning i labyrinter','A* och vägkostnad','Minimax','Alfa–beta-beskärning'],
+    filer:['strukturai.js','uppgifterai.js'],
+    globaler:{bank:'BANKAI',kapnamn:'KAPNAMNAI',omr:'OMRAI'}
+  },
+  {
     id:'fy1', titel:'Fysik - nivå 1 (Fy1)', siffra:'1', färg:'#12808E', rygg:'#12808E',
     taggar:['Fysikens grunder','Rörelse','Kraft','Energi och rörelsemängd','Tryck','Värme och temperatur','Elektricitet','Partikel- och kärnfysik'],
     filer:['struktur.js','uppgifter.js'],
@@ -5915,6 +5925,7 @@ const KURSER=[
    En och samma app används för alla kurser. Små index-filer i kursmapparna
    skickar hit ?kurs=<id>; när kursen är laddad visas den rena adressen igen. */
 const KURSSLUG={
+  ai:'ai',
   fy1:'fysik1',
   fy2:'fysik2',
   ma1:'ma1',
@@ -6713,7 +6724,7 @@ function ritaKursval(){
       <span class="kk-rygg" aria-hidden="true"></span>
       ${k.underUppbyggnad?`<span class="kk-byggstamp">Under uppbyggnad</span>`:''}
       <span class="kk-top">
-        <span class="kk-index">Nivå ${niva||k.siffra}</span>
+        <span class="kk-index">${k.id==='ai'?'AI':`Nivå ${niva||k.siffra}`}</span>
         ${spår?`<span class="kk-spar" aria-hidden="true">${spår}</span>`:''}
       </span>
       <span class="kk-namn">${namn}${tidigare?`<span class="kurs-tidigare">${tidigare}</span>`:""}</span>
@@ -6733,7 +6744,8 @@ function ritaKursval(){
 
   const grupper=[
     {namn:'Fysik',kurser:KURSER.filter(k=>k.id.startsWith('fy'))},
-    {namn:'Matematik',kurser:KURSER.filter(k=>!k.id.startsWith('fy'))}
+    {namn:'Matematik',kurser:KURSER.filter(k=>k.id.startsWith('ma'))},
+    {namn:'Artificiell intelligens',kurser:KURSER.filter(k=>k.id==='ai')}
   ].filter(g=>g.kurser.length);
 
   $('#kvKort').innerHTML=grupper.map(g=>`
@@ -13047,7 +13059,7 @@ function ulRapportDatum(v){ try{return new Intl.DateTimeFormat('sv-SE',{dateStyl
 function ulRapportStatusText(s){return s==='atgardad'?'Åtgärdad':s==='ignorerad'?'Ignorerad':'Öppen';}
 /* Samma format som Kunskapsgymmets logg: en rad per uppgift (och spår) med antal
    rapporter och senaste datum, grupperat per kurs med kursens namn och kod. */
-const UL_LOGG_KURSNAMN={fy1:'Fysik nivå 1',fy2:'Fysik nivå 2',ma1:'Matematik nivå 1',ma2:'Matematik nivå 2',
+const UL_LOGG_KURSNAMN={ai:'Artificiell intelligens',fy1:'Fysik nivå 1',fy2:'Fysik nivå 2',ma1:'Matematik nivå 1',ma2:'Matematik nivå 2',
   mato1:'Matematik – fortsättning nivå 1',mato2:'Matematik – fortsättning nivå 2',matf1:'Matematik – fördjupning nivå 1'};
 function ulRapportLoggText(lista){
   const rader=['Felrapporterade uppgifter · Uppgiftslabbet · '+ulRapportDatum(new Date()),''];

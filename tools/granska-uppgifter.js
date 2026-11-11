@@ -9,6 +9,7 @@ const GILTIGA_NIVAER = new Set(['G', 'E', 'C', 'A']);
 const GILTIGA_FORMAGOR = new Set(['begrepp', 'procedur', 'resonemang', 'modellering', 'problemlösning', 'problemlosning']);
 const ALLVAR = ['ERROR', 'WARNING', 'INFO'];
 const BANKKONFIG = {
+  'uppgifterai.js': { strukturfil: 'strukturai.js', kapnamn: 'KAPNAMNAI', omr: 'OMRAI', spar: null, sparTaggar: [], kravKurs: false },
   'uppgifter.js': { strukturfil: 'struktur.js', kapnamn: 'KAPNAMN', omr: 'OMR', spar: null, sparTaggar: [], kravKurs: false },
   'uppgifter2.js': { strukturfil: 'struktur2.js', kapnamn: 'KAPNAMN2', omr: 'OMR2', spar: null, sparTaggar: [], kravKurs: false },
   'uppgifterma1.js': { strukturfil: 'strukturma1.js', kapnamn: 'KAPNAMNMA1', omr: 'OMRMA1', spar: null, sparTaggar: ['1a', '1b', '1c'], kravKurs: true },

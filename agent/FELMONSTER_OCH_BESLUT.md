@@ -3662,3 +3662,13 @@ ligga nära ett avrundat värde (som 24,03 m eller 80,99 °C), inte nära en avr
 för 24,89 m farten 56 km/h i stället för 57 km/h. Skriv mellanresultatet i delkortets fråga med en värdesiffra mer än svaret.
 Kontrollera också idéerna mot banken: fyra planerade uppgifter fanns redan (4.398/4.547, 5.78/5.272, 5.366, 3.657).
 Skydd: `tools/a-uppgifter-2026-11-11.test.js`.
+
+## AI-bank: entydig sökordning och synliga rutnät, 2026-11-11
+
+[Åtta nya uppgifter](AI_BANK_2026-11-11.md), AI 1.01–1.02, 2.01–2.03 och
+3.01–3.03. Ange grannordning, tie-break, stoppvillkor och vad ett besök är.
+Besöksnummer från 1 får inte förväxlas med g(start)=0. Alfa–beta returnerar
+ibland gränser, inte exakta interna minimaxvärden. Alla labyrinter använder
+mörka 1,5 px SVG-rutlinjer och samma start-/mål-/väggmarkeringar.
+Första omgången är lärarbank med manuella helhetsfacit, inte gymkort.
+Skydd: `tools/ai-bank-2026-11-11.test.js`.

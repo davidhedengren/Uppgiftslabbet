@@ -12,6 +12,7 @@ const { pathToFileURL } = require('node:url');
 const VERSION = '1.1.0';
 const DEFAULT_CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const BANKS = [
+  ['uppgifterai.js', 'BANKAI', 'Artificiell intelligens'],
   ['uppgifter.js', 'BANK', 'Fysik - nivå 1'],
   ['uppgifter2.js', 'BANK2', 'Fysik - nivå 2'],
   ['uppgifterma1.js', 'BANKMA1', 'Matematik - nivå 1'],
