@@ -44,10 +44,12 @@ Kunskapsgymmet visar bara uppgifter med `spel:true` och delkort som inte är
     eftersom gruppkursfunktionerna i databasen bara godtar matematik och fysik;
   - symbolraden visar bara minustecken för AI;
   - titel, metatexter och noscript nämner AI. `BANK_VERSION` = `2026-11-11-ai1`.
-- `sql/2026-11-11-ai1.sql`: lägger till `'ai'` i kurslistorna i
-  `kg_private.uppdragsbok_delta` och `public.kg_skicka_onskemal`. **Den ska köras i
-  Supabase innan index.html publiceras.** Annars avvisas profilsparningar
-  (`uppdragsbok_delta`) i upp till en vecka efter ett dagsuppdrag i AI.
+- `sql/2026-11-11-ai1.sql` (version 2, körd i Supabase 2026-11-11): lägger till `'ai'`
+  i alla funktioner vars kurslista slutar med `'fy2','hist')`. Funktionerna letas upp
+  efter innehåll, eftersom `kg_private.uppdragsbok_delta` inte finns i databasen (version 1
+  föll på det). Resultat: `kg_skicka_onskemal` har `ai`. Gruppkursfunktionerna saknar
+  `ai`, vilket är avsiktligt. Inga andra funktioner har en kurslista.
+- Kunskapsgymmet commit 78d9f31.
 
 ## Kontroller
 
