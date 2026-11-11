@@ -26,7 +26,7 @@ test('Omskrivna konstacc-facit: steglista, formel i en rubrik och svarsrad',()=>
 });
 
 test('Hela området konstacc har nya facit (steglista med formelrubrik)',()=>{
-  const alla=B.filter(x=>x.omr==='konstacc');assert.equal(alla.length,135);
+  const alla=B.filter(x=>x.omr==='konstacc');assert.equal(alla.length,136);
   for(const t of alla)assert.match(t.s,/facit-steglista/,t.id);
   assert.doesNotMatch(q('3.120').spelDelar[2].s,/None/);
 });

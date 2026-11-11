@@ -19,7 +19,10 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
   'arbete','effekt','rorelseenergi','blandat_energi',
   // Kapitel 8–9: kopplingar och stråldoser skrevs om enligt agent/FACITMALL.md (svep 2026-11-06, agent/FELLOGGSMONSTER_SVEP_2026-11-06.md).
   'kopplingar','parallellkoppling','seriekoppling','straldoser'];
- visit(c.window.BANK.filter(t=>!(MALL.includes(t.omr)&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
+ // Enskilda uppgifter enligt agent/FACITMALL.md i områden som ännu inte är omgjorda i sin helhet:
+ // A-uppgifterna 2026-11-10 (5.638, 6.565, 7.231) samt 7.144 och 8.444.
+ const ENSKILDA=['5.638','6.565','7.231','7.144','8.444'];
+ visit(c.window.BANK.filter(t=>!((MALL.includes(t.omr)||ENSKILDA.includes(t.id))&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.
  for(const id of ['8.49','8.103','8.117','8.149']){assert.match(q(id).s,/<strong>a\)/);assert.match(q(id).s,/<strong>b\)/);}

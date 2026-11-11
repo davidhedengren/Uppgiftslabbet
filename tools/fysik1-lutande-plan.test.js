@@ -83,10 +83,12 @@ const cases=[
  ["4.634",Math.sqrt(((12**2)-((2*g)*2.5)))],
  ["4.635",[asin((((19**2)/(2*40))/g)),((19**2)/((2*g)*sin(20)))]],
  ["4.846",40],["4.847",85],["4.849",asin(1.5/3.0)],["4.850",200*sin(30)],["4.851",36],["4.852",50-20],
+ // A-uppgift 2026-11-10 (agent/A_UPPGIFTER_2026-11-10.md)
+ ["4.911",[36/(2*g*(sin(25)+0.30*cos(25))), Math.sqrt(2*g*(sin(25)-0.30*cos(25))*36/(2*g*(sin(25)+0.30*cos(25))))]],
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
-test('Lutande plan: samtliga 78 numeriska huvuduppgifter räknas självständigt',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='lutande_plan'&&t.rättSvar!=null);assert.equal(tasks.length,78);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
+test('Lutande plan: samtliga 79 numeriska huvuduppgifter räknas självständigt',()=>{
+ const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='lutande_plan'&&t.rättSvar!=null);assert.equal(tasks.length,79);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
 });
 test('Elevkortens egna avrundade givna värden ger svar inom rättningens tolerans',()=>{
  for(const[id,v]of [['4.583',[f583,5.292/(5*g*cos(15)),down(15,.11)]],['4.586',[m586,20/(40.7*g*cos(20))]],['4.593',[30*brake(30,.3),224+30*.5]],['4.604',[.2*(100*g*cos(15)-600*sin(20)),(600*cos(20)-100*g*sin(15)-149)/100]],['4.629',[s629,1230*g*cos(25)-5960*sin(31)]]])check(id,v);
@@ -111,5 +113,5 @@ test('Facits numeriska slutsvar stämmer med de självständiga beräkningarna',
    assert.ok(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)),`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`);checked++;
   });
  }
- assert.equal(checked,119);
+ assert.equal(checked,121);
 });

@@ -64,11 +64,13 @@ const cases=[
  ['4.721',7.15e6/(g+3.2)],['4.722',60*Math.sqrt(2*g*5)/.4],['4.723',.1*2*g*2/(2*.06)],
  ['4.724',[(80*g-500)/80,Math.sqrt(2*((80*g-500)/80)*5),80*(2*((80*g-500)/80)*5)/(2*.4),80*(2*((80*g-500)/80)*5)/(2*.4)+80*g]],
  ['4.725',Math.sqrt(2*350*1.7/7)],['4.726',125/500*5],['4.727',95*(265/3.6)**2/(2*90)],['4.728',1/(1/5+1/3)],['4.729',[62.5/(25/2),15/(25**2/(2*62.5))]],
- ['4.730',4/(16-4)],['4.731',[1/(1/3-1/12),1/(1/3+1/12)]],['4.732',[.0018*500**2/(2*.06),.06/2]],['4.733',[.355*2*1.5/1.55**2,1.55*Math.sqrt(.722/.355)]],['4.734',1700*cos(20)/86*.32]
+ ['4.730',4/(16-4)],['4.731',[1/(1/3-1/12),1/(1/3+1/12)]],['4.732',[.0018*500**2/(2*.06),.06/2]],['4.733',[.355*2*1.5/1.55**2,1.55*Math.sqrt(.722/.355)]],['4.734',1700*cos(20)/86*.32],
+ // A-uppgift 2026-11-10 (agent/A_UPPGIFTER_2026-11-10.md)
+ ['4.910',[12*g/70, 12*g/70*2.5, (12*g/70)*2.5**2/2+(12*g/70*2.5)*6.0+(12*g/70*2.5)**2/(2*(9*g/70))]]
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=(tol||0)+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
-test('Newtons andra lag: alla 135 numeriska huvuduppgifter räknas från de givna värdena',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='newton2'&&t.rättSvar!=null);assert.equal(tasks.length,135);assert.deepEqual(new Set(cases.map(v=>v[0])),new Set(tasks.map(t=>t.id)));
+test('Newtons andra lag: alla 136 numeriska huvuduppgifter räknas från de givna värdena',()=>{
+ const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='newton2'&&t.rättSvar!=null);assert.equal(tasks.length,136);assert.deepEqual(new Set(cases.map(v=>v[0])),new Set(tasks.map(t=>t.id)));
  for(const[id,expected]of cases)check(id,expected);
 });
 test('Förenklade elevkort räknas också med kortets egna givna, ibland avrundade, värden',()=>{

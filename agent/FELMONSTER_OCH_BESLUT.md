@@ -3642,3 +3642,13 @@ själva accelerationen finns inget enda vilosystem/gamma för hela sträckan.
 6.54:s livstid bygger på konstant effekt; 6.56:s ring ska inte längdkontraheras
 som en rak stav. Skydd: `fy2-relativistisk-energi-facit-2026-11-10.test.js`
 och motsvarande faktiska browserfall.
+
+## A-uppgifter på nivå 4–5: konstruktion och rättning, 2026-11-10
+
+[15 uppgifter / 38 kort](A_UPPGIFTER_2026-11-10.md) i Ma3c (2.1285, 3.1271–3.1273, 4.609, 4.610, 1.1100) och Fy1 (3.746, 4.910,
+4.911, 5.637, 5.638, 6.565, 7.231, 8.739). Användaren vill ha välkonstruerade A-uppgifter i de centrala områdena, inte i små
+specialområden. Kontrollera alltid idén mot banken först: två planerade uppgifter fanns redan (2.51, 6.22). Delarna går i stigande
+nivå och den sista är A på nivå 5. Ett behövt mellanresultat skrivs i delkortets fråga men inte i huvuduppgiften. Fysikfacit lagras
+oavrundat. Ett facit avrundat till n + 2 värdesiffror ger dubbelavrundning (5,08 underkändes mot 5,085). Ett heltalsfacit som 580 m
+med `svarVardesiffror` godtar 600 som avrundning. Sätt `null` och tolerans när ett näraliggande givet tal annars blir rätt.
+Skydd: `tools/a-uppgifter-2026-11-10.test.js`.

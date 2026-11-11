@@ -44,10 +44,12 @@ const cases=[
  ["5.240",((((2 * (47 - ((0.5 * 5) * g))) * 7) / (5 * (16 - 1))) ** 0.5)],
  ["5.243",((((30000 * 10) - ((0.5 * 2000) * ((12 ** 2) - (10 ** 2)))) - (((2000 * g) * 110) * Math.sin((5.7 * Math.PI / 180)))) / 110)],
  ["5.249",((900 / ((1000 * 20) * ((g * 10) + ((20 ** 2) / 2)))) * 10000.0)],
+ // A-uppgift 2026-11-10 (agent/A_UPPGIFTER_2026-11-10.md)
+ ["5.637",[((2 * (((800 * (0.12 ** 2)) / 2) - (((0.25 * 0.40) * g) * 0.60))) / 0.40) ** 0.5, ((((800 * (0.12 ** 2)) / 2) - (((0.25 * 0.40) * g) * 0.60)) / (0.40 * g)), ((((800 * (0.12 ** 2)) / 2) / ((0.25 * 0.40) * g)) - (9 * 0.60))]],
 ];
 test('Blandad energi: alla numeriska uppgifter räknas från givna värden',()=>{
  const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='blandat_energi'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));
- assert.equal(tasks.length,37);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
+ assert.equal(tasks.length,38);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
  for(const[id,values]of cases){const t=q(id),want=Array.isArray(values)?values:[values],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);
  want.forEach((v,i)=>assert.ok(Math.abs(v-got[i])<=1e-10*Math.max(1,Math.abs(v)),`${id} del ${i}: ${v} mot ${got[i]}`));}
 });
@@ -60,7 +62,7 @@ test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  if(m&&m[2]){const digits={'⁻':'-','⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9'};shown*=10**Number([...m[2]].map(c=>digits[c]).join(''));}
  const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
  if(!(Math.abs(shown-v)<=tol+1e-10*Math.max(1,Math.abs(v))))failures.push(`${id} del ${i}: skrivet ${shown}, beräknat ${v} ± ${tol}`);checked++;
- });}assert.equal(checked,80);assert.deepEqual(failures,[]);
+ });}assert.equal(checked,83);assert.deepEqual(failures,[]);
 });
 
 test('Energimodeller, delkort och lärare har samma fullständiga givna värden',()=>{

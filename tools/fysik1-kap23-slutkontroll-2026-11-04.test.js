@@ -8,9 +8,9 @@ const areas=['enheter','matnogg','densitet','medelhastighet','konstacc','acceler
 const tasks=ctx.window.BANK.filter(q=>areas.includes(q.omr));
 const plan=JSON.parse(fs.readFileSync(path.join(__dirname,'fy1-facit-kap23/layout-plan.json'),'utf8'));
 const tokens=s=>s.replace(/\\(?:begin|end)\{(?:aligned|gathered)\}/g,'').replace(/\\\\|\\quad|&|\s/g,'');
-test('Hela kapitel 2–3: 931 huvudfacit och 732 explicita delfacit har steg och svar',()=>{
- assert.equal(tasks.length,931);
- assert.equal(tasks.reduce((n,q)=>n+(q.spelDelar||[]).length,0),732);
+test('Hela kapitel 2–3: 932 huvudfacit och 734 explicita delfacit har steg och svar',()=>{
+ assert.equal(tasks.length,932);
+ assert.equal(tasks.reduce((n,q)=>n+(q.spelDelar||[]).length,0),734);
  for(const q of tasks){
   assert.equal(q.miniräknare,true,q.id);
   for(const part of [q,...(q.spelDelar||[])]){
