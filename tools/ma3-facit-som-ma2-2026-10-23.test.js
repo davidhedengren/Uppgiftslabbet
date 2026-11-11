@@ -1,6 +1,8 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
 const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),ctx);const bank=ctx.window.BANKMATO1,q=id=>bank.find(q=>q.id===id);
-const svar=s=>{const m=String(s||'').match(/<p class="facit-svar"><strong>Svar: ([\s\S]*?)<\/strong><\/p>/);return m?m[1]:null;};
+const svarGammal=s=>{const m=String(s||'').match(/<p class="facit-svar"><strong>Svar: ([\s\S]*?)<\/strong><\/p>/);return m?m[1]:null;};
+// Både äldre svarsrad (<strong>Svar: …</strong>) och facitmallens (<strong>Svar:</strong> …), se FACIT_RUBRIKER_2026-10-27.
+const svar=s=>{const m=String(s||'').match(/<p class="facit-svar"><strong>Svar:(?:<\/strong>)? ?([\s\S]*?)(?:<\/strong>)?<\/p>/);return m?m[1]:null;};
 const antal=(s,re)=>(String(s).match(re)||[]).length;
 
 // Se agent/MA3_FACIT_SOM_MA2_2026-10-23.md.
@@ -15,8 +17,9 @@ test('Ma3-facit har steglista och svarsrad som i Ma2',()=>{
 });
 
 test('Genererade svarsrader innehåller ingen rå kalkylatorsyntax',()=>{
+ // Syntaxreglerna gäller de äldre genererade svarsraderna. Facitmallens handskrivna rader kan ha avsiktliga nollor (”Svara med två decimaler”).
  for(const t of bank){
-  const s=svar(t.s);if(s===null)continue;
+  const s=svarGammal(t.s);if(s===null)continue;
   assert.doesNotMatch(s,/sqrt\(|\)\s*\/\s*\(|\^\(|\*|\\dfrac\{-|e-0\d|(?<![\\a-z])pi\b/,`${t.id}: ${s}`);
   assert.doesNotMatch(s,/\{,\}\d*0\\\)/,`${t.id}: avslutande nolla i ${s}`);
  }
@@ -47,7 +50,8 @@ test('Handskrivna svarsrader stämmer med egen räkning',()=>{
 test('Runda 5: lösningsmängder, delvis självrättade delar och handräknade modelluppgifter',()=>{
  assert.equal(svar(q('4.31').s),'\\(x=30^\\circ\\) eller \\(x=150^\\circ\\)');
  assert.equal(svar(q('4.165').s),'\\(\\cos v=\\dfrac{3}{5}\\), \\(\\sin v=\\dfrac{4}{5}\\)');
- assert.equal(svar(q('1.19').s),'a) \\(3\\), b) \\(1\\), c) se lösningen');
+ // 1.19 har sedan FACIT_RUBRIKER_2026-10-27 ett delfacit per del, var och en med egen svarsrad.
+ assert.match(q('1.19').s,/Svar:<\/strong> 3<\/p>[\s\S]*Svar:<\/strong> 1<\/p>[\s\S]*Svar:<\/strong> Nej, gränsvärdet 3 är inte lika med/);
  assert.equal(svar(q('4.264').s),'\\((0;5)\\)');
  assert.match(svar(q('1.205').s),/\\dfrac\{\(x-1\)\^2\}\{\(x\+3\)\^2\}.*x=-5.*x=-3.*x=-2.*x=1/);
  // 1.205: nämnarna och divisorns täljare ger -5, -3, -2 och 1 som förbjudna värden.
