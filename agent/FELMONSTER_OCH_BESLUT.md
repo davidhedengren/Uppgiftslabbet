@@ -3691,3 +3691,15 @@ f-uppgift. Alternativ ska fånga specifika feltankar och ha förklarande komment
 Ange uttryckligen när flera alternativ är rätta. Låt inte terrängexempel lära
 ut ”undvik alltid is”: båda utfallen finns. Unika löv-ID:n gör beskärning tydlig.
 De två rapporterade textlikheterna gäller avsiktligt olika figurer, se rapporten.
+
+## AI: enhetliga inledningar, färgade träd och fler uppgifter, 2026-11-11
+
+[Lärarkommentarer och 26 nya uppgifter](AI_PAFYLLNAD_2026-11-11.md). Lärarens beslut:
+varje figuruppgift inleds med ”Labyrinten/Trädet/Grafen/Spelträdet söks igenom med
+<algoritm> (ordning …)”. Startnoden i ett sökträd är grön och målnoderna röda, med
+färgförklaring, som i labyrinterna. Kö-, stack- och prioritetsköuppgifter beskriver
+stegen i ord (”lägg in A, B och C → ta ut en nod → …”). Tabeller har `class="data"`
+och vänsterställda celler. Alternativ i huvudtexten skrivs som A., B., … och inte som
+`<ol>`, eftersom appen visar `<ol>` som a), b), … och de då förväxlas med deluppgifter.
+Ett delkort som behöver ett tidigare delsvar får det i sin fråga.
+Skydd: `tools/ai-pafyllnad-2026-11-11.test.js`.

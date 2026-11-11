@@ -1043,3 +1043,12 @@ Se [revisionsrapport](agent/AI_BANK_REVISION_2026-11-11.md).
 Tolv nya uppgifter (1.06–1.09, 2.06–2.11, 3.04–3.05), 25 nya deluppgifter.
 33 tester godkända. Två avsiktliga likhetsfynd dokumenterade, inga validatorfel.
 [Uppgifter, svar och kontrollomfattning](agent/AI_VARIATION_2026-11-11.md).
+
+## 2026-11-11 – AI, lärarkommentarer och 26 nya uppgifter
+
+Lärarkommentarerna till 1.01, 1.03 och 1.04 är åtgärdade i alla liknande uppgifter:
+inledningarna ”Labyrinten/Trädet/Spelträdet söks igenom med …”, färgade start- och
+målnoder, tydligare kö- och stacktext och tabeller i bankens stil. Dessutom 26 nya
+uppgifter med 75 deluppgifter (1.10–1.19, 2.12–2.22, 3.06–3.10), som nu ger 4–6
+uppgifter per område. 42/42 tester godkända och inga nya validatorfynd.
+[Ändringar, svar och kontroller](agent/AI_PAFYLLNAD_2026-11-11.md).
