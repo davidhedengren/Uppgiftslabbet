@@ -97,9 +97,10 @@ def search_tree(nodes, edges, start, goals, title, width):
     return svg
 
 
-def weighted_graph(nodes, edges, start, goal, title, width):
-    """Graf med kantvikter. edges: [(a, b, vikt)]."""
+def weighted_graph(nodes, edges, start, goal, title, width, h=None):
+    """Graf med kantvikter. edges: [(a, b, vikt)]. h: {nod: värde} skrivs vid noderna."""
     parts = []
+    mid = (min(y for _, y in nodes.values()) + max(y for _, y in nodes.values())) / 2
     for a, b, w in edges:
         (x1, y1), (x2, y2) = nodes[a], nodes[b]
         parts.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#64748b" stroke-width="2.5"/>')
@@ -116,7 +117,11 @@ def weighted_graph(nodes, edges, start, goal, title, width):
             fill, txt, stroke = RED, '#fff', '#7f1d1d'
         parts.append(f'<circle cx="{x}" cy="{y}" r="20" fill="{fill}" stroke="{stroke}" stroke-width="2"/>'
                      f'<text x="{x}" y="{y + 6}" text-anchor="middle" font-size="18" font-weight="bold" fill="{txt}">{esc(n)}</text>')
-    ly = max(y for _, y in nodes.values()) + 36
+    if h:
+        for n, (x, y) in nodes.items():
+            ty = y - 29 if y <= mid else y + 41
+            parts.append(f'<text x="{x}" y="{ty}" text-anchor="middle" font-size="15" font-style="italic" fill="#6d28d9">h = {h[n]}</text>')
+    ly = max(y for _, y in nodes.values()) + (60 if h else 36)
     leg, _ = legend([(GREEN, 'Start'), (RED, 'Mål')], 20, ly, 14, 14, 26)
     parts.append(leg)
     H = ly + 26

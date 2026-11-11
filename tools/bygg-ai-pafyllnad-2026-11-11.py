@@ -127,9 +127,6 @@ INTRO_BYTEN = {
     '2.08': [('<p>A*. Manhattanavstånd och kortaste vägkostnad g.</p>', p(ASTAR_GH))],
     '2.02': [('<p>A*. Manhattanavstånd. Vid lika f: lägst h, sedan rutnamn.</p>',
               p('Labyrinten söks igenom med A* (h = Manhattanavstånd). ' + ASTAR_TIE))],
-    '2.03': [('<p>Kostnad per ruta: 5 i de markerade rutorna, annars 1. Start kostar 0. Använd Manhattanavstånd.</p>',
-              p('Labyrinten söks igenom med girig bäst först och med UCS (h = Manhattanavstånd). '
-                'Att gå in i en ruta med en femma kostar 5 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0.'))],
     '2.09': [('<p>Utgå från sökläget. Manhattanavstånd; vid lika f väljs lägst h.</p>',
               p('Labyrinten söks igenom med girig bäst först och med A* (h = Manhattanavstånd). Vid lika f väljs lägst h. '
                 'Bilden och tabellen visar hur långt sökningen har kommit.'))],
@@ -203,8 +200,41 @@ def table_class(html):
     return re.sub(r'<table>[\s\S]*?</table>', fix, html)
 
 
+M203 = ['S55G', '.##.', '....']
+
+
+def rebuild_203(u):
+    """2.03 utan UCS: girig bäst först jämförs med A* (användarbeslut 2026-11-11)."""
+    s_, g_ = A.parse(M203)
+    gr, ast = A.greedy(M203), A.astar(M203)
+    assert names(gr['path']) == ['A1', 'A2', 'A3', 'A4'] and gr['cost'] == 11
+    assert names(ast['path']) == ['A1', 'B1', 'C1', 'C2', 'C3', 'C4', 'B4', 'A4'] and A.path_cost(M203, ast['path']) == 7
+    svg = re.search(r'<svg[\s\S]*?</svg>', u['spelIntro']).group(0)
+    intro = svg + p('Labyrinten söks igenom med girig bäst först och med A* (h = Manhattanavstånd). '
+                    'Att gå in i en ruta med en femma kostar 5 och att gå in i en vit ruta eller målet kostar 1. Start kostar 0.')
+    a = part(p('Ange vägen och kostnaden med girig bäst först.'),
+             [step('Girig bäst först jämför bara h', 'Från A1 har A2 h = 2 och B1 h = 4. A2 väljs, sedan A3 (h = 1) och målet.'),
+              step('Summera kostnaderna längs vägen', 'A2 och A3 kostar 5 var och målet 1: 5 + 5 + 1 = 11.')],
+             'A1 → A2 → A3 → A4, kostnad 11.', 'Jämför bara h när nästa ruta väljs.', 4)
+    b = part(p('Ange vägen och kostnaden med A*.'),
+             [step('A* jämför f = g + h', 'Från start får A2 f = 5 + 2 = 7 och B1 f = 1 + 4 = 5. B1 tas ut först.'),
+              step('Den övre vägen blir för dyr', 'A3 får g = 5 + 5 = 10 och f = 10 + 1 = 11. Rutorna längs den nedre vägen har f = 7 hela vägen, så A* följer den till målet.'),
+              step('Summera kostnaderna längs vägen', 'Sju steg som kostar 1 var ger kostnaden 7.')],
+             'A1 → B1 → C1 → C2 → C3 → C4 → B4 → A4, kostnad 7.', 'Räkna f = g + h, där g är den samlade kostnaden hittills.', 4)
+    c = part(p('Varför blir kostnaderna olika?'),
+             [step('Girig bäst först jämför bara h', 'Den ser inte att rutorna med femmor är dyra, eftersom den inte räknar med vad vägen hittills har kostat.'),
+              step('A* räknar också med kostnaden hittills', 'Med f = g + h får den dyra övre vägen högre f än den längre men billigare vägen runt väggarna.')],
+             'Girig bäst först tar inte hänsyn till kostnaden hittills, men det gör A*. Den kortaste vägen i antal steg behöver inte vara billigast.',
+             'Vad tar respektive algoritm hänsyn till när nästa ruta väljs?', 4)
+    ny = task('2.03', 'viktade_vagar', u['familj'], intro, [a, b, c],
+              'Jämför kostnaden för den korta övre vägen med den längre vägen runt väggarna.', ['procedur', 'resonemang'], 3)
+    return ny
+
+
 def revidera(u):
     i = u['id']
+    if i == '2.03':
+        return rebuild_203(u)
     for old, new in INTRO_BYTEN.get(i, []):
         if new.replace('<table>', '') in u['spelIntro']:
             continue
@@ -640,26 +670,27 @@ def t213():
 def t214():
     data = {'P': (2, 9), 'Q': (5, 3), 'R': (4, 5), 'T': (8, 1)}
     f = {k: g + h for k, (g, h) in data.items()}
-    assert min(data, key=lambda k: data[k][0]) == 'P' and min(data, key=lambda k: data[k][1]) == 'T' and min(f, key=f.get) == 'Q'
+    assert min(data, key=lambda k: data[k][1]) == 'T' and min(f, key=f.get) == 'Q'
     intro = (p('Fyra noder ligger i prioritetskön. Tabellen visar kostnaden hittills g och uppskattningen h av kostnaden kvar till målet.') +
              tab(['Nod', 'g', 'h'], [[k, str(g), str(h)] for k, (g, h) in data.items()]))
 
     def alts(right, why):
-        txt = {'P': 'P har lägst g = 2. Det är UCS val.', 'Q': 'Q har lägst f = g + h = 8. Det är A*:s val.',
-               'R': 'R har varken lägst g, h eller f.', 'T': 'T har lägst h = 1. Det är valet för girig bäst först.'}
+        txt = {'P': 'P har lägst g = 2. Varken girig bäst först eller A* väljer efter bara g.',
+               'Q': 'Q har lägst f = g + h = 8. Det är A*:s val.',
+               'R': 'R har varken lägst h eller lägst f.', 'T': 'T har lägst h = 1. Det är valet för girig bäst först.'}
         return [alt(k, k == right, why if k == right else txt[k]) for k in 'PQRT']
-    a = part(p('Vilken nod tar UCS ut först? Välj ett alternativ.'),
-             [step('UCS jämför bara g', 'UCS tar ut den nod som har lägst kostnad hittills. g är 2, 5, 4 och 8.')],
-             'P.', 'Vilken av g och h tittar UCS på?', 1, alts('P', 'UCS jämför bara g, och P har lägst g = 2.'))
+    a = part(p('Bestäm f = g + h för varje nod.'),
+             [step('Lägg ihop g och h', 'P: 2 + 9 = 11. Q: 5 + 3 = 8. R: 4 + 5 = 9. T: 8 + 1 = 9.')],
+             'P: 11, Q: 8, R: 9, T: 9.', 'Lägg ihop kostnaden hittills och uppskattningen kvar.', 1)
     b = part(p('Vilken nod tar girig bäst först ut först? Välj ett alternativ.'),
              [step('Girig bäst först jämför bara h', 'Den väljer den nod som verkar ligga närmast målet. h är 9, 3, 5 och 1.')],
-             'T.', 'Vilken av g och h tittar girig bäst först på?', 1, alts('T', 'Girig bäst först jämför bara h, och T har lägst h = 1.'))
+             'T.', 'Vilket av värdena g och h tittar girig bäst först på?', 1, alts('T', 'Girig bäst först jämför bara h, och T har lägst h = 1.'))
     c = part(p('Vilken nod tar A* ut först? Välj ett alternativ.'),
              [step('A* jämför f = g + h', 'P: 2 + 9 = 11. Q: 5 + 3 = 8. R: 4 + 5 = 9. T: 8 + 1 = 9.'),
-              step('Lägst f vinner', 'Q har lägst f = 8.')],
+              step('Lägst f vinner', 'Q har lägst f = 8. T ligger närmast målet men har redan kostat mycket, g = 8.')],
              'Q.', 'Räkna ut g + h för varje nod.', 2, alts('Q', 'A* jämför f = g + h, och Q har lägst f = 8.'))
-    return task('2.14', 'prioritetsko', 'Tre sökningar väljer olika', intro, [a, b, c],
-                'UCS, girig bäst först och A* använder samma sorts kö men sorterar efter olika värden.', ['procedur', 'begrepp'])
+    return task('2.14', 'prioritetsko', 'Girig bäst först och A* väljer olika', intro, [a, b, c],
+                'Girig bäst först sorterar kön efter h, och A* sorterar efter f = g + h.', ['procedur', 'begrepp'])
 
 
 M215 = ['......', 'S.#..G', '..#...', '...#..']
@@ -820,10 +851,10 @@ G220 = dict(nodes={'S': (50, 130), 'A': (170, 45), 'B': (170, 215), 'C': (320, 4
 
 
 def t220():
-    r = A.ucs_graph(G220['edges'], 'S', 'M')
+    r = A.ucs_graph(G220['edges'], 'S', 'M')  # kontroll av billigaste väg, inte elevens metod
     assert r['cost'] == 8 and r['path'] == ['S', 'A', 'B', 'C', 'M']
     svg = weighted_graph(G220['nodes'], G220['edges'], 'S', 'M', 'Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden.', 490)
-    intro = svg + p('Grafen söks igenom med UCS. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll.')
+    intro = svg + p('Grafen visar vägar mellan platser. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll.')
     paths = [['S → A → C → M', '2 + 6 + 1 = 9'], ['S → B → C → M', '5 + 3 + 1 = 9'], ['S → A → B → C → M', '2 + 2 + 3 + 1 = 8'],
              ['S → B → D → M', '5 + 3 + 4 = 12'], ['S → A → B → D → M', '2 + 2 + 3 + 4 = 11']]
     a = part(p('Vad kostar den billigaste vägen från start till mål?'),
@@ -831,49 +862,63 @@ def t220():
               step('Den billigaste vägen till B går via A', 'S → A → B kostar 2 + 2 = 4, billigare än kanten S–B som kostar 5. Det gör vägen via A, B och C billigast.')],
              '8.', 'Hitta först det billigaste sättet att komma till B.', 2)
     b = part(p('Ange den billigaste vägen.'),
-             [step('UCS tar ut noderna i ordning efter kostnad', 'S (0), A (2), B (4), C (7), D (7) och till sist M (8). M nås billigast från C.')],
-             'S → A → B → C → M.', 'Följ kostnaden nod för nod från start.', 2)
+             [step('Jämför vägarna', 'Bara S → A → B → C → M kostar 8. Alla andra vägar kostar 9 eller mer.'),
+              step('Kontrollera delvägarna', 'Till B: 2 + 2 = 4 via A. Till C: 4 + 3 = 7 via B. Till M: 7 + 1 = 8.')],
+             'S → A → B → C → M.', 'Följ den billigaste vägen nod för nod från start.', 2)
     c = part(p('Vilka påståenden stämmer? Välj alla som stämmer.'),
-             [step('Antal kanter och kostnad är olika saker', 'Vägarna med tre kanter kostar 9 eller 12. Den billigaste vägen har fyra kanter och kostar 8.')],
+             [step('Antal kanter och kostnad är olika saker', 'Vägarna med tre kanter kostar 9 eller 12. Den billigaste vägen har fyra kanter och kostar 8.'),
+              step('Den billigaste vägen till B', 'S → A → B kostar 4, medan kanten S–B kostar 5.')],
              'B och D.', 'Jämför antalet kanter med kostnaden för vägarna.', 2,
              [alt('Vägen med minst antal kanter är också billigast.', False, 'S → A → C → M och S → B → C → M har bara tre kanter men kostar 9.'),
               alt('En väg med fler kanter kan vara billigare.', True, 'S → A → B → C → M har fyra kanter och kostar 8.'),
               alt('BFS hade hittat den billigaste vägen här.', False, 'BFS letar efter minst antal kanter, inte lägst kostnad. Den hade hittat en väg med tre kanter, som kostar mer.'),
-              alt('UCS tar alltid ut den nod som har lägst kostnad hittills.', True, 'Det är just så UCS fungerar, och därför hittar den den billigaste vägen.')])
+              alt('Det billigaste sättet att komma till B går via A.', True, 'S → A → B kostar 2 + 2 = 4, billigare än kanten S–B som kostar 5.')])
     return task('2.20', 'viktade_vagar', 'Billigaste vägen i en graf', intro, [a, b, c],
                 'Kostnaden för en väg är summan av talen på kanterna. Fler kanter kan ändå ge lägre kostnad.', ['procedur', 'begrepp'])
 
 
-G221 = dict(nodes={'S': (50, 130), 'A': (170, 45), 'B': (170, 215), 'C': (320, 45), 'D': (320, 215), 'M': (440, 130)},
-            edges=[('S', 'A', 1), ('S', 'B', 4), ('A', 'C', 2), ('A', 'B', 2), ('B', 'D', 1), ('C', 'D', 5), ('C', 'M', 6), ('D', 'M', 2)])
+G221 = dict(nodes={'S': (50, 150), 'A': (170, 65), 'B': (170, 235), 'C': (320, 65), 'D': (320, 235), 'M': (440, 150)},
+            edges=[('S', 'A', 1), ('S', 'B', 4), ('A', 'C', 2), ('A', 'B', 2), ('B', 'D', 1), ('C', 'D', 5), ('C', 'M', 6), ('D', 'M', 2)],
+            h={'S': 5, 'A': 4, 'B': 3, 'C': 5, 'D': 2, 'M': 0})
 
 
 def t221():
-    r = A.ucs_graph(G221['edges'], 'S', 'M')
-    assert r['order'] == [('S', 0), ('A', 1), ('B', 3), ('C', 3), ('D', 4), ('M', 6)] and r['path'] == ['S', 'A', 'B', 'D', 'M']
-    svg = weighted_graph(G221['nodes'], G221['edges'], 'S', 'M', 'Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden.', 490)
-    intro = svg + p('Grafen söks igenom med UCS. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll. '
-                    'Vid lika kostnad tas den nod ut som kommer först i alfabetet.')
-    rows = [[n, str(c)] for n, c in r['order']]
-    a = part(p('Fyll i tabellen med noderna i den ordning de tas ut och deras kostnad g.') + tab(['Tas ut', 'g'], [['S', '0']] + [['…', '…']] * 5),
-             [step('Från S: A får 1 och B får 4', 'A har lägst kostnad och tas ut.'),
-              step('Via A blir B billigare', 'S → A → B kostar 1 + 2 = 3, så B:s kostnad sänks från 4 till 3. C får 1 + 2 = 3.'),
-              step('B och C har båda kostnaden 3', 'B kommer först i alfabetet och tas ut. Via B får D kostnaden 3 + 1 = 4.'),
-              step('Sedan C, D och M', 'C tas ut (3) och ger M kostnaden 3 + 6 = 9. D tas ut (4) och ger M den lägre kostnaden 4 + 2 = 6.',
-                   tab(['Tas ut', 'g'], rows))],
-             'S (0), A (1), B (3), C (3), D (4), M (6).', 'Uppdatera en nods kostnad när du hittar en billigare väg dit.', 3)
-    b = part(p('Ange den billigaste vägen och dess kostnad.'),
-             [step('Följ vilken nod som gav varje kostnad', 'M fick 6 via D, D fick 4 via B, B fick 3 via A och A fick 1 från S.')],
-             'S → A → B → D → M, kostnad 6.', 'Vilken nod gav M dess lägsta kostnad?', 2)
-    c = part(p('B får först kostnaden 4. Varför har B kostnaden 3 när den tas ut? Välj ett alternativ.'),
-             [step('En billigare väg ersätter en dyrare', 'Kanten S–B kostar 4, men vägen S → A → B kostar 1 + 2 = 3. UCS sparar den lägre kostnaden.')],
+    r = A.astar_graph(G221['edges'], G221['h'], 'S', 'M')
+    assert r['order'] == [('S', 0, 5, 5), ('A', 1, 4, 5), ('B', 3, 3, 6), ('D', 4, 2, 6), ('M', 6, 0, 6)]
+    assert r['path'] == ['S', 'A', 'B', 'D', 'M'] and r['open'] == ['C'] and r['g']['C'] == 3
+    svg = weighted_graph(G221['nodes'], G221['edges'], 'S', 'M',
+                         'Graf med noderna S, A, B, C, D och M. Talet vid varje kant är kostnaden, och h står vid varje nod.', 490, h=G221['h'])
+    intro = svg + p('Grafen söks igenom med A*. Talet vid varje kant är kostnaden att gå längs den, åt valfritt håll. '
+                    'Värdet h vid varje nod är en uppskattning av kostnaden kvar till målet M.')
+    rows = [[n, str(g), str(h), str(f)] for n, g, h, f in r['order']]
+    a = part(p('Fyll i tabellen med noderna i den ordning de tas ut och deras g, h och f.') +
+             tab(['Tas ut', 'g', 'h', 'f'], [['S', '0', '5', '5']] + [['…', '…', '…', '…']] * 4),
+             [step('Från S: A får f = 1 + 4 = 5 och B får f = 4 + 3 = 7', 'A har lägst f och tas ut.'),
+              step('Via A blir B billigare', 'S → A → B kostar 1 + 2 = 3, så B får g = 3 och f = 3 + 3 = 6. C får g = 1 + 2 = 3 och f = 3 + 5 = 8.'),
+              step('B tas ut med f = 6', 'Via B får D g = 3 + 1 = 4 och f = 4 + 2 = 6.'),
+              step('D tas ut med f = 6, och sedan målet', 'Via D får M g = 4 + 2 = 6 och f = 6 + 0 = 6. M har lägre f än C (8) och tas ut.',
+                   tab(['Tas ut', 'g', 'h', 'f'], rows))],
+             'S, A, B, D, M med f = 5, 5, 6, 6, 6.', 'Räkna f = g + h för varje ny granne. Sänk g när du hittar en billigare väg till en nod.', 3)
+    b = part(p('Ange vägen A* returnerar och dess kostnad.'),
+             [step('Följ vilken nod som gav varje g-värde', 'M fick g = 6 via D, D fick 4 via B, B fick 3 via A och A fick 1 från S.')],
+             'S → A → B → D → M, kostnad 6.', 'Vilken nod gav M dess g-värde?', 2)
+    c = part(p('B får först g = 4. Varför har B g = 3 när den tas ut? Välj ett alternativ.'),
+             [step('En billigare väg ersätter en dyrare', 'Kanten S–B kostar 4, men vägen S → A → B kostar 1 + 2 = 3. A* sparar den lägre kostnaden, och f sjunker från 7 till 6.')],
              'A.', 'Finns det en annan väg till B än kanten S–B?', 2,
-             [alt('Vägen S → A → B kostar 1 + 2 = 3, och det lägre värdet ersätter 4.', True, 'UCS uppdaterar kostnaden när en billigare väg hittas.'),
-              alt('UCS drar av 1 för varje nod som tas ut.', False, 'Kostnaden ändras bara när en billigare väg hittas.'),
+             [alt('Vägen S → A → B kostar 1 + 2 = 3, och det lägre värdet ersätter 4.', True, 'A* uppdaterar g när en billigare väg hittas.'),
+              alt('A* drar av 1 för varje nod som tas ut.', False, 'g ändras bara när en billigare väg hittas.'),
               alt('B nås via den direkta kanten S–B.', False, 'Den kanten kostar 4, inte 3.'),
               alt('g är antalet kanter till B.', False, 'g är summan av kostnaderna. S → A → B har två kanter men kostar 3.')])
-    return task('2.21', 'viktade_vagar', 'UCS steg för steg i en graf', intro, [a, b, c],
-                'Ta alltid ut noden med lägst kostnad hittills. Sänk en nods kostnad när en billigare väg dit hittas.', ['procedur', 'begrepp'], 3)
+    d = part(p('Vilken nod läggs in i kön men tas aldrig ut? Välj ett alternativ.'),
+             [step('C får f = 8', 'C läggs in när A tas ut, med g = 3 och f = 3 + 5 = 8.'),
+              step('Målet tas ut innan C', 'Målet M tas ut med f = 6. Sökningen stoppar då, och C hinner aldrig tas ut.')],
+             'C.', 'Jämför f för C med f för målet.', 3,
+             [alt('A', False, 'A tas ut som andra nod, med f = 5.'),
+              alt('B', False, 'B tas ut som tredje nod, med f = 6.'),
+              alt('C', True, 'C har f = 8. Målet tas ut med f = 6 innan C, och då stoppar sökningen.'),
+              alt('D', False, 'D tas ut som fjärde nod, med f = 6.')])
+    return task('2.21', 'viktade_vagar', 'A* steg för steg i en graf', intro, [a, b, c, d],
+                'Ta alltid ut noden med lägst f = g + h. Sänk en nods g när en billigare väg dit hittas.', ['procedur', 'begrepp'], 3)
 
 
 M222 = ['S33..', '.#3#.', '..3.G']
@@ -1048,8 +1093,7 @@ def main():
         src = fh.read()
     i, j = src.index('['), src.rindex(']')
     bank = json.loads(src[i:j + 1])
-    for u in bank:
-        revidera(u)
+    bank = [revidera(u) for u in bank]
     nya = [f() for f in NYA]
     ids = {u['id'] for u in nya}
     bank = [u for u in bank if u['id'] not in ids] + nya

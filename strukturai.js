@@ -14,7 +14,7 @@ window.OMRAI = {
     "prioritetsko": "Prioritetsköer",
     "astar_varden": "g-, h- och f-värden",
     "astar_sokning": "A*-sökning",
-    "viktade_vagar": "Viktade vägar och UCS"
+    "viktade_vagar": "Viktade vägar"
   },
   "3": {
     "minimax": "Minimax",

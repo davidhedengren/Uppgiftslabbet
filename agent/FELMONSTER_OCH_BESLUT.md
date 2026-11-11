@@ -3703,3 +3703,14 @@ och vänsterställda celler. Alternativ i huvudtexten skrivs som A., B., … och
 `<ol>`, eftersom appen visar `<ol>` som a), b), … och de då förväxlas med deluppgifter.
 Ett delkort som behöver ett tidigare delsvar får det i sin fråga.
 Skydd: `tools/ai-pafyllnad-2026-11-11.test.js`.
+
+## AI: UCS ingår inte, 2026-11-11
+
+Användarbeslut: informerad sökning tränas bara med girig bäst först och A*. Använd
+inte UCS (eller Dijkstra) i uppgiftstext, alternativ, facit, ledtrådar eller
+områdesnamn. Billigaste väg kan fortfarande efterfrågas utan algoritmnamn.
+Skillnaden mellan girig bäst först och A* visas med terräng eller kantkostnader;
+i små rutnät med enhetskostnad blir vägarna oftast lika långa.
+[Omskrivna uppgifter och 20 nya](AI_PAFYLLNAD2_2026-11-11.md).
+Skydd: `tools/ai-pafyllnad-2026-11-11.test.js` (ingen UCS) och
+`tools/ai-pafyllnad2-2026-11-11.test.js`.

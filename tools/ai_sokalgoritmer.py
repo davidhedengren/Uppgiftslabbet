@@ -205,3 +205,71 @@ def alphabeta(t, mx, a=float('-inf'), b=float('inf'), log=None):
             log.append(('cut', t[i + 1:], a, b))
             break
     return v
+
+
+def greedy(rows):
+    """Girig bäst först: lägst h, vid lika h rutnamn. Föregångare sätts när rutan upptäcks."""
+    start, goal = parse(rows)
+    parent, seen, out = {}, {start}, []
+    openl = [start]
+    while openl:
+        openl.sort(key=lambda x: (manhattan(x, goal), cname(x)))
+        n = openl.pop(0)
+        out.append(n)
+        if n == goal:
+            break
+        for v in neigh(rows, n):
+            if v not in seen:
+                seen.add(v)
+                parent[v] = n
+                openl.append(v)
+    path = path_from(parent, goal)
+    return dict(order=out, path=path, cost=sum(cost(rows, c) for c in path[1:]))
+
+
+def path_cost(rows, path):
+    return sum(cost(rows, c) for c in path[1:])
+
+
+def astar_graph(edges, h, start, goal):
+    """A* i en oriktad viktad graf. Vid lika f: lägst h, sedan namn."""
+    adj = {}
+    for a, b, w in edges:
+        adj.setdefault(a, []).append((b, w))
+        adj.setdefault(b, []).append((a, w))
+    g, parent, closed, out = {start: 0}, {}, set(), []
+    openl = {start}
+    while openl:
+        n = min(openl, key=lambda x: (g[x] + h[x], h[x], x))
+        openl.discard(n)
+        closed.add(n)
+        out.append((n, g[n], h[n], g[n] + h[n]))
+        if n == goal:
+            break
+        for v, w in adj[n]:
+            if v not in closed and g[n] + w < g.get(v, 10 ** 9):
+                g[v] = g[n] + w
+                parent[v] = n
+                openl.add(v)
+    return dict(order=out, path=path_from(parent, goal), cost=g[goal], open=sorted(openl), g=g)
+
+
+def greedy_graph(edges, h, start, goal):
+    adj = {}
+    for a, b, w in edges:
+        adj.setdefault(a, []).append((b, w))
+        adj.setdefault(b, []).append((a, w))
+    parent, seen, out, openl, g = {}, {start}, [], [start], {start: 0}
+    while openl:
+        openl.sort(key=lambda x: (h[x], x))
+        n = openl.pop(0)
+        out.append(n)
+        if n == goal:
+            break
+        for v, w in adj[n]:
+            if v not in seen:
+                seen.add(v)
+                parent[v] = n
+                g[v] = g[n] + w
+                openl.append(v)
+    return dict(order=out, path=path_from(parent, goal), cost=g[goal])

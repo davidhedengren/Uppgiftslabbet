@@ -1,5 +1,8 @@
 # AI: lärarkommentarer och 26 nya uppgifter, 11 november 2026
 
+> Senare samma dag tog användaren bort UCS ur kursen. 2.03, 2.14, 2.20 och 2.21
+> är därför omskrivna, se [AI_PAFYLLNAD2_2026-11-11.md](AI_PAFYLLNAD2_2026-11-11.md).
+
 Uppdrag: åtgärda lärarkommentarerna i felrapporten ”Uppgiftslabbet 2026-11-11
 09:31” (AI 1.01, 1.03 och 1.04), gör samma ändring i alla liknande uppgifter
 och fyll på banken med fler uppgifter i samma stil i alla områden.

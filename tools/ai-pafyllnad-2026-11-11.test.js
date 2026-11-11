@@ -31,6 +31,12 @@ function ucs(edges,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[]).pus
 function ab(t,max,al=-Infinity,be=Infinity,log=[]){if(typeof t==='number'){log.push(t);return t;}let v=max?-Infinity:Infinity;
  for(let i=0;i<t.length;i++){const x=ab(t[i],!max,al,be,log);if(max){v=Math.max(v,x);al=Math.max(al,v);}else{v=Math.min(v,x);be=Math.min(be,v);}if(al>=be)break;}return v;}
 const mm=(t,max)=>typeof t==='number'?t:(max?Math.max:Math.min)(...t.map(x=>mm(x,!max)));
+function astarG(edges,h,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[]).push([y,w]);(adj[y]??=[]).push([x,w]);}
+ const g={[s]:0},op=new Set([s]),cl=new Set(),out=[];while(op.size){const n=[...op].sort((x,y)=>g[x]+h[x]-g[y]-h[y]||h[x]-h[y]||x.localeCompare(y))[0];op.delete(n);cl.add(n);out.push([n,g[n],h[n],g[n]+h[n]]);if(n===t)break;
+  for(const[v,w]of adj[n])if(!cl.has(v)&&g[n]+w<(g[v]??1e9)){g[v]=g[n]+w;op.add(v);}}return{out,open:[...op]};}
+function greedyG(edges,h,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[]).push([y,w]);(adj[y]??=[]).push([x,w]);}
+ const g={[s]:0},par={},seen=new Set([s]),op=[s],out=[];while(op.length){op.sort((x,y)=>h[x]-h[y]||x.localeCompare(y));const n=op.shift();out.push(n);if(n===t)break;
+  for(const[v,w]of adj[n])if(!seen.has(v)){seen.add(v);par[v]=n;g[v]=g[n]+w;op.push(v);}}const path=[t];while(par[path[0]])path.unshift(par[path[0]]);return{out,path,cost:g[t]};}
 const has=(id,s)=>a.ok(q(id).s.includes(s),id+': '+s);
 
 test('lärarkommentarer: enhetliga inledningar i labyrinter, träd och spelträd',()=>{
@@ -50,7 +56,7 @@ test('lärarkommentarer: färgade start- och målnoder samt snygga tabeller',()=
  for(const id of ['1.03','1.04','1.05','2.04','2.05'])a.doesNotMatch(q(id).ledtrad,/upptäckte varje ny ruta/,id);
 });
 test('26 nya uppgifter med fullständiga och självständiga delar',()=>{
- a.equal(bank.length,51);a.equal(new Set(bank.map(u=>u.id)).size,51);
+ a.ok(bank.length>=51);a.equal(new Set(bank.map(u=>u.id)).size,bank.length);
  const omr={};for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omr]=(omr[u.omr]||0)+1;
   a.equal(u.spel,false);a.equal(u['självrättning'],false);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.ok(u.ledtrad.length>20);
   a.match(u.s,/facit-steglista/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
@@ -70,8 +76,8 @@ test('köer och stackar',()=>{
  a.deepEqual(run([],[['M',4],['L',2],['K',4],0,['N',1],0,0,0],pq)[0],['L','N','K','M']);has('2.12','L, N, K, M.');
  a.deepEqual(run([],[['B',6],['D',8],['E',8],0,0],pq)[0],['B','D']);
  const T={P:[2,9],Q:[5,3],R:[4,5],T:[8,1]},by=f=>Object.keys(T).sort((x,y)=>f(T[x])-f(T[y]))[0];
- a.deepEqual([by(v=>v[0]),by(v=>v[1]),by(v=>v[0]+v[1])],['P','T','Q']);
- a.equal(q('2.14').spelDelar.map(d=>d.alternativ.find(x=>x.ratt).txt).join(','),'P,T,Q');
+ a.deepEqual([by(v=>v[1]),by(v=>v[0]+v[1])].join(','),'T,Q');
+ a.equal(q('2.14').spelDelar.slice(1).map(d=>d.alternativ.find(x=>x.ratt).txt).join(','),'T,Q');has('2.14','P: 11, Q: 8, R: 9, T: 9.');
  const K={K:[4,6],L:[6,3],M:[3,8],N:[5,4]},o=Object.keys(K).sort((x,y)=>K[x][0]+K[x][1]-K[y][0]-K[y][1]||K[x][1]-K[y][1]);a.equal(o[0],'L');
  const efterL={K:10,M:11,N:9,P:7+1};a.equal(Object.keys(efterL).sort((x,y)=>efterL[x]-efterL[y])[0],'P');a.equal(q('2.18').spelDelar[1].alternativ.find(x=>x.ratt).txt,o[0]);has('2.18','P.');
 });
@@ -99,8 +105,9 @@ test('h, g och f samt A* jämfört med BFS',()=>{
 });
 test('viktade vägar',()=>{
  const r20=ucs([['S','A',2],['S','B',5],['A','B',2],['A','C',6],['B','C',3],['B','D',3],['C','M',1],['D','M',4]],'S','M');a.equal(r20.cost,8);a.equal(r20.path.join(' → '),'S → A → B → C → M');has('2.20','S → A → B → C → M.');
- const r21=ucs([['S','A',1],['S','B',4],['A','C',2],['A','B',2],['B','D',1],['C','D',5],['C','M',6],['D','M',2]],'S','M');
- a.equal(r21.done.map(([n,v])=>n+' ('+v+')').join(', '),'S (0), A (1), B (3), C (3), D (4), M (6)');has('2.21','S → A → B → D → M, kostnad 6.');
+ const r21=astarG([['S','A',1],['S','B',4],['A','C',2],['A','B',2],['B','D',1],['C','D',5],['C','M',6],['D','M',2]],{S:5,A:4,B:3,C:5,D:2,M:0},'S','M');
+ a.equal(r21.out.map(x=>x.join(' ')).join(' | '),'S 0 5 5 | A 1 4 5 | B 3 3 6 | D 4 2 6 | M 6 0 6');a.deepEqual(r21.open.join(),'C');has('2.21','S → A → B → D → M, kostnad 6.');
+ for(const x of r21.out)has('2.21','<td style="text-align:left">'+x.join('</td><td style="text-align:left">')+'</td>');
  const m22=['S33..','.#3#.','..3.G'],cost=p=>p.split(' → ').slice(1).reduce((s,x)=>{const ch=m22[x.charCodeAt(0)-65][+x.slice(1)-1];return s+(ch==='3'?3:1);},0);
  a.deepEqual(['A1 → A2 → A3 → A4 → A5 → B5 → C5','A1 → B1 → C1 → C2 → C3 → C4 → C5','A1 → A2 → A3 → B3 → C3 → C4 → C5'].map(cost),[10,8,14]);
 });
@@ -110,6 +117,11 @@ test('minimax och alfa–beta',()=>{
  let log=[];a.equal(ab([[5,9,7],[4,8,6],[10,3,11]],true,-Infinity,Infinity,log),5);a.deepEqual(log,[5,9,7,4,10,3]);has('3.09','L5, L6 och L9.');
  log=[];a.equal(ab([[6,9],[4,8,7]],true,-Infinity,Infinity,log),6);a.deepEqual(log,[6,9,4]);
  log=[];ab([[6,9],[8,7,4]],true,-Infinity,Infinity,log);a.deepEqual(log,[6,9,8,7,4]);has('3.10','3 löv, alltså alla.');
+});
+test('UCS ingår inte i kursen: inga uppgifter eller områdesnamn nämner UCS',()=>{
+ for(const u of bank)a.doesNotMatch(JSON.stringify(u),/UCS|Dijkstra|[Uu]niform cost/,u.id);
+ a.doesNotMatch(fs.readFileSync('strukturai.js','utf8'),/UCS/);
+ const m=['S55G','.##.','....'];a.match(q('2.03').t,/girig bäst först och med A\*/);has('2.03','A1 → A2 → A3 → A4, kostnad 11.');has('2.03','A1 → B1 → C1 → C2 → C3 → C4 → B4 → A4, kostnad 7.');
 });
 test('validatorn hittar inget nytt i AI-banken',()=>{const r=require('./granska-uppgifter.js').granskaProjekt(process.cwd()).resultat.find(x=>x.fil==='uppgifterai.js');
  a.deepEqual(r.fynd.filter(f=>NYA.includes(f.id)||(f.relateradeId||[]).some(i=>NYA.includes(i))),[]);});

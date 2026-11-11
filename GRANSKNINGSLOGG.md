@@ -1052,3 +1052,11 @@ målnoder, tydligare kö- och stacktext och tabeller i bankens stil. Dessutom 26
 uppgifter med 75 deluppgifter (1.10–1.19, 2.12–2.22, 3.06–3.10), som nu ger 4–6
 uppgifter per område. 42/42 tester godkända och inga nya validatorfynd.
 [Ändringar, svar och kontroller](agent/AI_PAFYLLNAD_2026-11-11.md).
+
+## 2026-11-11 – AI utan UCS och 20 nya uppgifter
+
+UCS ingår inte i kursen. 2.03, 2.14, 2.20 och 2.21 är omskrivna så att bara
+girig bäst först och A* används, och området heter nu ”Viktade vägar”. 20 nya
+uppgifter (1.20–1.27, 2.23–2.30, 3.11–3.14), två per område, med 56
+deluppgifter. Banken har 71 uppgifter. 49/49 tester godkända och inga nya
+validatorfynd. [Ändringar och svar](agent/AI_PAFYLLNAD2_2026-11-11.md).
