@@ -2,6 +2,9 @@
 // AI-banken 2026-11-11, tredje omgången: lärarkommentarer (1.01, 1.03, 1.04) och 26 nya uppgifter.
 // Svaren kontrolleras här med egna simuleringar, oberoende av byggskriptets Python-kod.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+// 2026-11-11: uppgifterna är självrättande i Kunskapsgymmet (bygg-ai-sjalvrattning). Flervalsdelarna
+// 1.07d, 2.03c och 3.07c finns bara i Kunskapsgymmet; i Uppgiftslabbet är de öppna frågor i t.
+const KG_FLERVAL=new Set(['1.07d','2.03c','3.07c']);
 const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),c);
 const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id);
 const NYA=['1.10','1.11','1.12','1.13','1.14','1.15','1.16','1.17','1.18','1.19','2.12','2.13','2.14','2.15','2.16','2.17','2.18','2.19','2.20','2.21','2.22','3.06','3.07','3.08','3.09','3.10'];
@@ -58,12 +61,12 @@ test('lärarkommentarer: färgade start- och målnoder samt snygga tabeller',()=
 test('26 nya uppgifter med fullständiga och självständiga delar',()=>{
  a.ok(bank.length>=51);a.equal(new Set(bank.map(u=>u.id)).size,bank.length);
  const omr={};for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omr]=(omr[u.omr]||0)+1;
-  a.equal(u.spel,false);a.equal(u['självrättning'],false);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.ok(u.ledtrad.length>20);
+  a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.ok(u.ledtrad.length>20);
   a.match(u.s,/facit-steglista/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s,id);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);a.equal(d.visaAlternativ,d.alternativ.length>0);
-   a.ok(u.t.includes(d.fraga.replace('<p>','').slice(0,30)),id+d.etikett);
+   a.ok(u.t.includes(d.fraga.replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.has(id+d.etikett)?' Välj ett alternativ.':'\u0000','').replace('<p>','').slice(0,30)),id+d.etikett);
    if(d.alternativ.length){a.equal(d.alternativ.filter(x=>x.ratt).length>1,/Välj alla som stämmer/.test(d.fraga),id);a.match(d.fraga,/Välj (ett alternativ|alla som stämmer)/);
-    a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length);for(const x of d.alternativ){a.ok(x.kommentar.length>15);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}}}
+    a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length);for(const x of d.alternativ){a.ok(x.kommentar.length>15);a.ok(KG_FLERVAL.has(id+d.etikett)||u.t.includes('</strong> '+x.txt+'</p>'),id);}}}}
  a.deepEqual(omr,{ko_stack:3,ko_sokning:2,bfs:2,dfs:3,prioritetsko:3,astar_varden:2,astar_sokning:3,viktade_vagar:3,minimax:3,alfa_beta:2});
  a.ok(NYA.filter(id=>q(id).traningsniva===1).length>=4);
 });

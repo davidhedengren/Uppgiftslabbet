@@ -179,6 +179,14 @@ spårning samt att värdera heuristiker och generalisera (träningsnivå 4–5).
 55–60 % av delkorten. Nivåerna sätts i `tools/bygg-ai-nivaer-2026-11-11.py`, med
 motiverade undantag i `OVERRIDE`. Skriptet körs sist i AI-byggkedjan.
 
+AI-uppgifterna används både på övningsblad och prov i Uppgiftslabbet och som
+självrättande kort i Kunskapsgymmet (användarbeslut 2026-11-11). Uppgiftslabbet visar
+bara `t` och `s`, så de ska vara skrivna för papper: inga svarsinstruktioner för
+automaträttning och inga påklistrade alternativ. Allt som rättningen behöver ligger i
+`spelDelar`, till exempel svarsinstruktioner i parentes, `svarEtiketter`, formaten
+`namnordning` och `namnmangd`, samt alternativ som bara finns i Kunskapsgymmet. Se
+`agent/AI_KUNSKAPSGYMMET_KURS_2026-11-11.md`.
+
 ## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
 Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1 och 2 tillsammans** (preciserat 2026-10-25). Nivå 3 ska också fyllas på, så att det finns varierad träning även där. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1–2 (eller nivå 3) och som undervisas nu. Fyll inte bara på nivå 1.

@@ -44,7 +44,7 @@ test('BFS- och A*-uppgifter säger "tas ut" i stället för "besöks"',()=>{
 });
 test('24 nya uppgifter med fullständiga delar och unika texter',()=>{
  a.equal(new Set(bank.map(u=>u.id)).size,bank.length);a.ok(bank.length>=95);
- for(const id of NYA){const u=q(id);a.ok(u,id);a.equal(u.spel,false);a.equal(u['självrättning'],false);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.match(u.s,/facit-steglista/);
+ for(const id of NYA){const u=q(id);a.ok(u,id);a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.match(u.s,/facit-steglista/);
   a.doesNotMatch(JSON.stringify(u),/UCS|Dijkstra/);
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);
    for(const x of d.alternativ||[]){a.ok(x.kommentar.length>15,id);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}}

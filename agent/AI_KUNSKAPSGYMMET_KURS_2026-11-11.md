@@ -62,3 +62,45 @@ Kunskapsgymmet visar bara uppgifter med `spel:true` och delkort som inte är
 - `tools/kapitel-blandat.browser.cjs` med `REVIEW_COURSE=ai`: blandade
   kapitelpass för alla tre kapitel utan fynd.
 - Kunskapsgymmets enhetstester: 491 godkända och 16 underkända, samma 16 som före ändringen.
+
+## Alla 202 uppgifter självrättande och AI i lärarvyn (2026-11-11, andra omgången)
+
+Användarbeslut 2026-11-11: de 95 manuella uppgifterna ska bli självrättande, men
+fortfarande gå att använda på övningsblad och prov utan att se anpassade för
+automaträttning ut. AI ska också finnas i lärarvyn.
+
+**Princip:** Uppgiftslabbet visar bara `t` och `s`. Allt som rättningen behöver ligger i
+delkorten (`spelDelar`), som bara Kunskapsgymmet visar. `t`, `s`, `spelIntro`,
+ledtrådar och nivåer är byte för byte oförändrade (kontrollerat mot föregående version).
+
+`tools/bygg-ai-sjalvrattning-2026-11-11.py` (före nivåskriptet i kedjan):
+
+- 198 delkort har en uttrycklig specifikation: heltal, ordnad namnlista
+  (`namnordning`, t.ex. BFS-ordning och vägar), oordnad namnlista (`namnmangd`, t.ex.
+  beskurna löv) eller flera namngivna fält (`svarEtiketter`, t.ex. g, h och f; nod, α
+  och β; väg och kostnad). Övriga 107 delkort hade redan flervalsalternativ med
+  kommentarer och fick bara `svarstyp` och `rättSvar`.
+- En kort svarsinstruktion i parentes läggs bara i delkortets fråga, t.ex.
+  ”(Skriv rutorna i ordning, åtskilda med kommatecken.)”.
+- Tre fria frågor blev flerval i Kunskapsgymmet: 1.07d (hittade DFS kortaste vägen),
+  2.03c (varför kostnaderna skiljer sig) och 3.07c (för vilka x). I Uppgiftslabbet är
+  de fortfarande öppna frågor.
+- Uppgifter med ett enda delkort (2.06, 2.07, 2.08, 2.11) får `visaSomDelkort: true`.
+  Annars visar Kunskapsgymmet huvudtexten med A/B-listan i stället för knappar.
+- Svaren är hämtade ur delkortens facit, som de tidigare testerna räknar om.
+  `tools/ai-sjalvrattning-2026-11-11.test.js` kontrollerar varje svar mot facit,
+  räknar om köer, stackar och prioritetsköer samt 3.07c, och kontrollerar att `t` och
+  `s` saknar instruktioner som bara hör till Kunskapsgymmet.
+
+Kunskapsgymmet:
+
+- Nya rättningsformat `namnordning` och `namnmangd` (`namnListaRatt`). Kommatecken,
+  mellanslag, pilar och ord som ”och” skiljer elementen åt, små bokstäver godtas och
+  parenteser som E(6) räknas inte. Facit ”tom” betyder en tom lista, och flera godtagbara
+  facit skiljs med | (t.ex. ”R, B, E, L6|R, B, E, 5”).
+- `visaSomDelkort` i `expandGameTask`. Flaggan är opt-in, så andra bankers uppgifter med
+  ett enda delkort påverkas inte.
+- AI i lärarvyn (`UTAN_LARARVY` innehåller bara `hist`). `sql/2026-11-11-ai1-larare.sql`
+  lägger till `ai` i gruppkursfunktionerna.
+- Webbläsartestet `tools/ai1-kurs-2026-11-11.browser.cjs`: 536 delkort, 1 696
+  rättningskontroller, utan fel. Samma 16 enhetstester som tidigare är underkända.
