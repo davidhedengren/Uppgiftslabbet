@@ -1031,3 +1031,9 @@ AI 1.01–1.02, 2.01–2.03 och 3.01–3.03 har lagts till med SVG, ledtrådar o
 stegvisa facit. Samtliga nykonstruerade svar verifierade; inga äldre svarfel
 har rättats. AI-banken har inga validatorfynd. Se
 [detaljerad kontroll och verktygsbeslut](agent/AI_BANK_2026-11-11.md).
+
+## 2026-11-11 – AI, förenklad layout och köuppgifter
+
+Åtta uppgifter omarbetade enligt användarens återkoppling; fem nya (1.03–1.05,
+2.04–2.05). Totalt 13 uppgifter, 39 självständiga delar med facit/ledtrådar.
+Se [revisionsrapport](agent/AI_BANK_REVISION_2026-11-11.md).

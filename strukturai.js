@@ -5,10 +5,13 @@ window.KAPNAMNAI = {
 };
 window.OMRAI = {
   "1": {
+    "ko_stack": "FIFO-kö och stack",
+    "ko_sokning": "Kön under sökningen",
     "bfs": "Bredden först (BFS)",
     "dfs": "Djupet först (DFS)"
   },
   "2": {
+    "prioritetsko": "Prioritetsköer",
     "astar_varden": "g-, h- och f-värden",
     "astar_sokning": "A*-sökning",
     "viktade_vagar": "Viktade vägar och UCS"

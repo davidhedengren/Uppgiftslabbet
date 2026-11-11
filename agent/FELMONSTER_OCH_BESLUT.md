@@ -3672,3 +3672,12 @@ ibland gränser, inte exakta interna minimaxvärden. Alla labyrinter använder
 mörka 1,5 px SVG-rutlinjer och samma start-/mål-/väggmarkeringar.
 Första omgången är lärarbank med manuella helhetsfacit, inte gymkort.
 Skydd: `tools/ai-bank-2026-11-11.test.js`.
+
+## AI: användarens förenklade layout, 2026-11-11
+
+[Revision av åtta och fem nya uppgifter](AI_BANK_REVISION_2026-11-11.md).
+Ersätter tidigare S/G-bokstäver med grön/röd ruta och färgförklaring.
+Frågor skrivs kort som a), b), c); algoritmernas grundregler förklaras inte
+i uppgiftstext. Behåll den ordning som behövs för ett entydigt facit.
+Spelträd använder SCEN:s upp-/nedåtriktade trianglar, nodnamn utanför;
+MAX/MIN endast i symbolförklaringen. Alla 39 delar har egna facit/ledtrådar.
