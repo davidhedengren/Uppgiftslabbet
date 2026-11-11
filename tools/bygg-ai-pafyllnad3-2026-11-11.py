@@ -73,11 +73,20 @@ FRAGOR = {
 }
 
 
+# Kunskapsgymmets svarsinstruktion i parentes (bygg-ai-sjalvrattning-2026-11-11.py) står efter
+# frågan i delkortet. Den ska inte hindra att kontrollen vid omkörning känner igen frågan.
+KG_INSTR = re.compile(r' \((?:Skriv|Svara|Ange noden|Ta beskärningarna)[^)]*\)(?=</p>)')
+
+
+def utan_kg(f):
+    return KG_INSTR.sub('', f)
+
+
 def revidera(u):
     for old, new in FRAGOR.get(u['id'], []):
         hit = [d for d in u['spelDelar'] if d['fraga'].startswith(old)]
         if not hit:
-            assert any(d['fraga'].startswith(new) for d in u['spelDelar']), (u['id'], old)
+            assert any(utan_kg(d['fraga']).startswith(new) for d in u['spelDelar']), (u['id'], old)
             continue
         d = hit[0]
         d['fraga'] = new + d['fraga'][len(old):]

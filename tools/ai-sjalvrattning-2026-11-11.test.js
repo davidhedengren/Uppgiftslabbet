@@ -13,8 +13,8 @@ const element=x=>(String(x).replace(/[−–]/g,'-').toUpperCase().match(/-?\d+|
 const svarsrad=d=>strip((d.s.match(/class="facit-svar"[^>]*>([\s\S]*?)<\/(?:p|div)>/)||[])[1]||'');
 const delsekvens=(xs,ys)=>{let j=0;for(const y of ys)if(j<xs.length&&y===xs[j])j++;return j===xs.length;};
 
-test('alla 202 uppgifter är självrättande och metadata stämmer mellan uppgift och delkort',()=>{
- a.equal(bank.length,202);a.equal(GAMLA.length,95);
+test('alla uppgifter är självrättande och metadata stämmer mellan uppgift och delkort',()=>{
+ a.ok(bank.length>=202);a.equal(GAMLA.length,95);
  for(const u of bank){
   a.equal(u.spel,true,u.id);a.equal(u['självrättning'],true,u.id);a.equal(u.svarstyp,'flera_delar',u.id);
   a.equal(u.svarsstruktur,'ordnad');a.equal(u.visaSomDelkort===true,u.spelDelar.length===1,u.id);a.equal(JSON.stringify(u.svarEtiketter),JSON.stringify(u.spelDelar.map(d=>d.etikett)));

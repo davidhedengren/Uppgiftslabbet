@@ -26,7 +26,8 @@ const mm=(t,max)=>typeof t==='number'?t:(max?Math.max:Math.min)(...t.map(x=>mm(x
 
 test('20 nya uppgifter, två per område, med fullständiga delar',()=>{
  a.equal(new Set(bank.map(u=>u.id)).size,bank.length);a.ok(bank.length>=71);const omr={};
- for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omr]=(omr[u.omr]||0)+1;a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.match(u.s,/facit-steglista/);
+ // Områdena räknas som när omgången byggdes; omgrupperingen 2026-11-11 sparar dem i omrTidigare.
+ for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omrTidigare||u.omr]=(omr[u.omrTidigare||u.omr]||0)+1;a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.match(u.s,/facit-steglista/);
   a.doesNotMatch(JSON.stringify(u),/UCS|Dijkstra/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);a.equal(d.visaAlternativ,d.alternativ.length>0);
    if(d.alternativ.length){a.equal(d.alternativ.filter(x=>x.ratt).length>1,/Välj alla som stämmer/.test(d.fraga),id);a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length);for(const x of d.alternativ){a.ok(x.kommentar.length>15,id);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}}}

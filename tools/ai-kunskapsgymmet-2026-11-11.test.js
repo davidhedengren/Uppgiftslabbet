@@ -35,7 +35,8 @@ test('Kunskapsgymmets format: självrättande delar med entydiga svar',()=>{
    if(d.svarstyp==='numeriskt'){a.ok(Number.isInteger(d.rättSvar),id);a.equal(d.tolerans,0);a.equal(d.svarFormat,'numeriskt');a.equal(d.alternativ.length,0);a.ok(d.s.includes('<strong>Svar:</strong> '+String(d.rättSvar).replace('-','−')+'.'),id);}
    else{a.equal(d.svarstyp,'alternativ',id);const r=d.alternativ.filter(x=>x.ratt);a.equal(r.length,1,id);a.equal(d.rättSvar,r[0].txt);a.equal(d.visaAlternativ,true);a.match(d.fraga,/Välj ett alternativ\./);
     a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length,id);for(const x of d.alternativ){a.ok(x.kommentar.length>12,id+x.txt);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}});}
- const omr={};for(const id of NYA)omr[q(id).omr]=(omr[q(id).omr]||0)+1;a.ok(Object.values(omr).every(n=>n===3));a.equal(Object.keys(omr).length,10);
+ // Områdena räknas som när omgången byggdes; omgrupperingen 2026-11-11 sparar dem i omrTidigare.
+ const o0=u=>u.omrTidigare||u.omr,omr={};for(const id of NYA)omr[o0(q(id))]=(omr[o0(q(id))]||0)+1;a.ok(Object.values(omr).every(n=>n===3));a.equal(Object.keys(omr).length,10);
 });
 test('köer, stackar och prioritetsköer',()=>{
  eq('1.32',['C',3]);eq('1.33',[3,'F']);eq('1.34',['R','Q']);

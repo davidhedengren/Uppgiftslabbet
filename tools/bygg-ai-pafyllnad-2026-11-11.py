@@ -231,6 +231,15 @@ def rebuild_203(u):
     return ny
 
 
+# Kunskapsgymmets svarsinstruktion i parentes (bygg-ai-sjalvrattning-2026-11-11.py) står efter
+# frågan i delkortet. Den ska inte hindra att kontrollen vid omkörning känner igen frågan.
+KG_INSTR = re.compile(r' \((?:Skriv|Svara|Ange noden|Ta beskärningarna)[^)]*\)(?=</p>)')
+
+
+def utan_kg(f):
+    return KG_INSTR.sub('', f)
+
+
 def revidera(u):
     i = u['id']
     if i == '2.03':
@@ -249,7 +258,7 @@ def revidera(u):
     for old, new in FRAGA_BYTEN.get(i, []):
         hit = [d for d in u['spelDelar'] if old in d['fraga']]
         if not hit:
-            assert any(new in d['fraga'] for d in u['spelDelar']), (i, old)
+            assert any(new in utan_kg(d['fraga']) for d in u['spelDelar']), (i, old)
             continue
         hit[0]['fraga'] = hit[0]['fraga'].replace(old, new)
         u['t'] = u['t'].replace('<p>' + hit[0]['etikett'] + ') ' + old[3:], '<p>' + hit[0]['etikett'] + ') ' + new[3:])

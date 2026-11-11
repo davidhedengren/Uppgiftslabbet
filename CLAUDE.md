@@ -187,6 +187,12 @@ automaträttning och inga påklistrade alternativ. Allt som rättningen behöver
 `namnordning` och `namnmangd`, samt alternativ som bara finns i Kunskapsgymmet. Se
 `agent/AI_KUNSKAPSGYMMET_KURS_2026-11-11.md`.
 
+Struktur sedan 2026-11-11 (`agent/AI_OMGRUPPERING_2026-11-11.md`): kapitel 1 Oinformerad
+sökning (köer och stackar, BFS, DFS, i labyrinter, träd och grafer) och kapitel 2
+Informerad sökning (prioritetsköer, heuristik och f-värden, girig bäst först och A*,
+viktade vägar). Placeringen av varje uppgift står i `tools/bygg-ai-omgruppering-2026-11-11.py`,
+som också skriver `strukturai.js`. Nya AI-uppgifter i kapitel 1–2 måste läggas in där.
+
 ## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
 Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1 och 2 tillsammans** (preciserat 2026-10-25). Nivå 3 ska också fyllas på, så att det finns varierad träning även där. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1–2 (eller nivå 3) och som undervisas nu. Fyll inte bara på nivå 1.

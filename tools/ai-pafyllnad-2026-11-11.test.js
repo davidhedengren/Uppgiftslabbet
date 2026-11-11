@@ -60,7 +60,8 @@ test('lärarkommentarer: färgade start- och målnoder samt snygga tabeller',()=
 });
 test('26 nya uppgifter med fullständiga och självständiga delar',()=>{
  a.ok(bank.length>=51);a.equal(new Set(bank.map(u=>u.id)).size,bank.length);
- const omr={};for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omr]=(omr[u.omr]||0)+1;
+ // Områdena räknas som när omgången byggdes; omgrupperingen 2026-11-11 sparar dem i omrTidigare.
+ const omr={};for(const id of NYA){const u=q(id);a.ok(u,id);omr[u.omrTidigare||u.omr]=(omr[u.omrTidigare||u.omr]||0)+1;
   a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.ok(u.ledtrad.length>20);
   a.match(u.s,/facit-steglista/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s,id);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);a.equal(d.visaAlternativ,d.alternativ.length>0);

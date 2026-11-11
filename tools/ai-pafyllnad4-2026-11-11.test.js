@@ -28,7 +28,8 @@ test('format, nivåer och områden',()=>{
  for(const id of NYA){const u=q(id);a.ok(u,id);a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u.svarstyp,'flera_delar');a.equal(u.rättSvar.length,u.spelDelar.length);
   u.spelDelar.forEach((d,i)=>{a.equal(u.rättSvar[i],d.rättSvar);a.match(d.s,/facit-rubrik/);
    if(d.svarstyp==='numeriskt'){a.ok(Number.isInteger(d.rättSvar));a.equal(d.tolerans,0);}else{a.equal(d.alternativ.filter(x=>x.ratt).length,1,id);for(const x of d.alternativ)a.ok(x.kommentar.length>12,id);}});}
- const omr={};for(const id of NYA)omr[q(id).omr]=(omr[q(id).omr]||0)+1;
+ // Områdena räknas som när omgången byggdes; omgrupperingen 2026-11-11 sparar dem i omrTidigare.
+ const o0=u=>u.omrTidigare||u.omr,omr={};for(const id of NYA)omr[o0(q(id))]=(omr[o0(q(id))]||0)+1;
  a.equal(JSON.stringify(omr),JSON.stringify({ko_stack:2,ko_sokning:3,bfs:3,dfs:3,astar_sokning:5,astar_varden:3,viktade_vagar:3,prioritetsko:2,minimax:3,alfa_beta:3}));
  const parts=NYA.flatMap(id=>q(id).spelDelar);a.ok(parts.filter(d=>d.niva==='E').length/parts.length>=0.7,'mest E');
  for(const id of ['1.48','1.49','2.54'])a.match(q(id).spelIntro,/En robot startar i den gröna rutan/);

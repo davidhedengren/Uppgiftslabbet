@@ -20,7 +20,8 @@ test('alfa–beta-beskärning är A-nivå, rot- och nodvärden är vanlig minima
 });
 test('många E-uppgifter',()=>{
  const n=k=>parts.filter(x=>x.d.niva===k).length;a.ok(n('E')/parts.length>=0.55,'minst 55 % E');a.ok(n('A')>0&&n('C')>0);
- for(const omr of ['ko_stack','ko_sokning','prioritetsko','bfs','dfs','minimax'])a.ok(parts.filter(x=>x.u.omr===omr&&x.d.niva==='E').length/parts.filter(x=>x.u.omr===omr).length>=0.7,omr);
+ // ko_sokning ingår sedan omgrupperingen 2026-11-11 i bfs och dfs.
+ for(const omr of ['ko_stack','prioritetsko','bfs','dfs','minimax'])a.ok(parts.filter(x=>x.u.omr===omr&&x.d.niva==='E').length/parts.filter(x=>x.u.omr===omr).length>=0.7,omr);
 });
 test('f och g: E när g följer en rak väg, C när g går runt väggar eller genom terräng',()=>{
  for(const k of ['2.01a','2.01b','2.06a','2.07a','2.15a','2.38a','2.38c','2.40a'])a.equal(del(k).niva,'E',k);
