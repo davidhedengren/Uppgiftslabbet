@@ -73,7 +73,7 @@ def t156():
             ('En FIFO-kö', False, 'En FIFO-kö ger BFS.'),
             ('En prioritetskö sorterad efter f', False, 'Det är A*, en informerad sökning.'),
             ('En tabell med alla avstånd', False, 'DFS behöver inga avstånd.')], 'Vilken nod fortsätter DFS från?', 1)
-    b = mc('Hittar DFS alltid den kortaste vägen till målet?', 'Nej',
+    b = mc('Hittar DFS alltid den kortaste vägen till målet?', 'DFS stoppar vid den första vägen den hittar',
            'DFS följer en väg så långt det går i första tillåtna riktningen. Den kan hitta målet via en lång omväg innan den har prövat en kortare väg.',
            [('Nej, DFS kan hitta en lång väg först', True, 'DFS stoppar vid första vägen den hittar, oavsett längd.'),
             ('Ja, alltid', False, 'Det gäller BFS när varje steg kostar lika, inte DFS.'),
@@ -146,14 +146,14 @@ def t159():
 
 
 def t160():
-    a = mc('Kan grannordningen, till exempel ↑ → ↓ ← eller ↓ → ↑ ←, ändra vilken väg DFS hittar?', 'Ja',
+    a = mc('Kan grannordningen, till exempel ↑ → ↓ ← eller ↓ → ↑ ←, ändra vilken väg DFS hittar?', 'DFS följer den första tillåtna riktningen',
            'DFS går till den första tillåtna grannen och följer den så långt det går. Med en annan ordning kan DFS välja en helt annan väg.',
            [('Ja, eftersom DFS följer den första tillåtna riktningen', True, 'Olika ordning kan ge olika vägar, även olika långa.'),
             ('Nej, DFS hittar alltid samma väg', False, 'Vägen beror på vilken riktning som prövas först.'),
             ('Bara om labyrinten saknar väggar', False, 'Även i labyrinter med väggar påverkar ordningen.'),
             ('Bara antalet besökta rutor ändras, aldrig vägen', False, 'Både vägen och antalet besök kan ändras.')],
            'Vilken granne går DFS till först?', 2)
-    b = mc('Varje steg kostar lika mycket. Kan grannordningen ändra hur många steg vägen som BFS hittar har?', 'Nej',
+    b = mc('Varje steg kostar lika mycket. Kan grannordningen ändra hur många steg vägen som BFS hittar har?', 'BFS hittar alltid en väg med minst antal steg',
            'BFS hittar alltid en väg med minst antal steg. Grannordningen kan bara avgöra vilken av flera lika korta vägar som returneras.',
            [('Nej, men den kan ändra vilken av flera lika korta vägar som hittas', True, 'Längden är alltid den kortaste möjliga.'),
             ('Ja, BFS kan hitta en längre väg med en annan ordning', False, 'BFS undersöker alla rutor på ett avstånd före nästa, så den kortaste vägen hittas alltid.'),
@@ -245,7 +245,7 @@ def t271():
             ('h ska vara så stort som möjligt', False, 'Om h överskattar kan A* missa den billigaste vägen.'),
             ('h måste räkna med alla väggar', False, 'Manhattanavståndet bortser från väggar och fungerar ändå, eftersom det inte överskattar.')],
            'Vad kan hända om h säger att en väg är dyrare än den egentligen är?', 4)
-    b = mc('Varje steg kostar minst 1. Kan Manhattanavståndet då överskatta kostnaden kvar?', 'Nej',
+    b = mc('Varje steg kostar minst 1. Kan Manhattanavståndet då överskatta kostnaden kvar?', 'Varje steg minskar h med högst 1',
            'Varje steg flyttar högst en rad eller en kolumn. För att komma fram behövs därför minst h steg, och de kostar minst h.',
            [('Nej, minst h steg behövs alltid för att nå målet', True, 'Väggar och terräng kan bara göra vägen längre eller dyrare.'),
             ('Ja, när det finns väggar', False, 'Väggar gör den verkliga vägen längre, så h blir för litet, inte för stort.'),

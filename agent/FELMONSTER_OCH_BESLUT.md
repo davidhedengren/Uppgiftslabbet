@@ -3742,3 +3742,11 @@ E/C/A sätts per delkort efter vad eleven gör, inte efter träningsnivån eller
 rättningsformatet. f med g runt väggar eller genom terräng är C, och f med rak g
 eller givet g är E. Minimax är E utom resonemang (C) och generalisering (A).
 [Instruktion](AI_NIVAINDELNING.md). Skydd: `tools/ai-nivaer-2026-11-11.test.js`.
+
+## AI: beskärning med stöd är C, 2026-11-11
+
+Användarbeslut: fler beskärningsuppgifter på E–C-nivå. Fullständig alfa–beta-spårning
+är fortfarande A. Beskärning med stöd (två nivåer, givet mellanvärde, ett beslut) är C,
+och begreppsfrågor om beskärning är E. Facitrubriker får inte vara bara ”Ja” eller ”Nej”.
+[Uppgifter](AI_PAFYLLNAD6_2026-11-11.md). Skydd: `tools/ai-pafyllnad6-2026-11-11.test.js`
+och `tools/ai-nivaer-2026-11-11.test.js`.

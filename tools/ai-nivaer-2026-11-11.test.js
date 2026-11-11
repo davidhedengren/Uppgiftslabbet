@@ -14,7 +14,8 @@ test('E/C/A och träningsnivå hänger ihop',()=>{
 });
 test('alfa–beta-beskärning är A-nivå, rot- och nodvärden är vanlig minimax',()=>{
  for(const{u,d}of parts.filter(x=>x.u.omr==='alfa_beta')){const value=/Vilket värde får (roten|[A-Z])\?|Bestäm rotens minimaxvärde/.test(d.fraga);
-  if(value)a.notEqual(d.niva,'A',u.id+d.etikett);else a.equal(d.niva,'A',u.id+d.etikett);}
+  const stod=['3.56','3.57','3.58','3.59','3.60','3.61'].includes(u.id);/* beskärning med stöd: E–C */
+  if(value||stod)a.notEqual(d.niva,'A',u.id+d.etikett);else a.equal(d.niva,'A',u.id+d.etikett);}
  for(const{u,d}of parts.filter(x=>x.u.omr!=='alfa_beta'))a.doesNotMatch(d.fraga,/beskär|α|β/,u.id+d.etikett);
 });
 test('många E-uppgifter',()=>{

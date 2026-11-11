@@ -90,10 +90,20 @@ områden som hade fått mest C: A*-sökning, g/h/f och viktade vägar.
 
 Byggordning: `bygg-ai-pafyllnad-2026-11-11.py` → `…pafyllnad2…` → `…pafyllnad3…` →
 `bygg-ai-kunskapsgymmet-2026-11-11.py` → `bygg-ai-e-uppgifter-2026-11-11.py` →
-`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
+`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-pafyllnad6-2026-11-11.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
 
 Tillägg 2026-11-11 (teorifrågor): att känna igen ett begrepp, till exempel
 ”vilken datastruktur använder BFS”, är E. Att förklara varför är C, till exempel
 ”varför väljer MAX inte det högsta lövet” eller ”varför är h mindre än det
 verkliga avståndet”. Att värdera en heuristik, till exempel ”h får aldrig
 överskatta”, är A. Minimaxfrågor om vad rotvärdet garanterar är C.
+
+Tillägg 2026-11-11 (beskärning på E–C-nivå, användarbeslut): fullständig
+alfa–beta-spårning är fortfarande A. Det gäller att själv följa α och β, att hitta
+alla beskärningar, djupa beskärningar och α/β-värden. **Beskärning med stöd är C**:
+träd i två nivåer, ett givet mellanvärde (till exempel ”A har värdet 5, B:s första löv
+är 3”) och ett enda beslut (”kan B bli större än 3?”, ”vilket löv kan hoppas över?”,
+”hur påverkar ordningen?”). **Begreppsfrågor om vad beskärning är** (”ändrar beskärning
+rotens värde?”) är E. De äldre beskärningsuppgifterna 3.03–3.42 är oförändrat A.
+Gäller 3.56–3.61. Minimaxfrågor där eleven tolkar eller jämför värden, till exempel
+vad rotvärdet −1 betyder eller två drag med samma värde, är C.

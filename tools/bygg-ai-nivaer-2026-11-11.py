@@ -54,6 +54,16 @@ OVERRIDE = {
     '3.07c': ('A', 4),  # för vilka x får B större värde än A
     '3.45a': ('C', 3),  # vad rotvärdet garanterar om MIN gör misstag
     '3.46b': ('C', 3),  # förklara varför MAX inte väljer det högsta lövet
+    '3.50c': ('C', 3),  # tolka rotvärdet i stickspelet
+    '3.54b': ('C', 3),  # förklara att två drag med samma värde är lika bra
+    # Beskärning med stöd (användarbeslut 2026-11-11): små träd, givna mellanvärden,
+    # ett beslut. Begreppsfrågor är E. Fullständig alfa–beta-spårning är fortfarande A.
+    '3.56a': ('E', 1), '3.56b': ('E', 1),
+    '3.57a': ('C', 3), '3.57b': ('C', 3),
+    '3.58a': ('C', 3), '3.58b': ('C', 3),
+    '3.59b': ('C', 3),
+    '3.60a': ('C', 3), '3.60b': ('C', 3), '3.60c': ('C', 3),
+    '3.61b': ('C', 3),
     # värdera heuristiken: när kan A* lita på h
     '2.71a': ('A', 4),  # h får aldrig överskatta
     '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar

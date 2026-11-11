@@ -1096,3 +1096,11 @@ och 431 delkort (70 % E). 75/75 tester godkända.
 16 teoriuppgifter med 38 flervalsfrågor och 12 beräkningsuppgifter (1.55–1.64,
 2.67–2.77, 3.43–3.49). Banken har 190 uppgifter. 80/80 tester godkända.
 [Uppgifter och nivåer](agent/AI_PAFYLLNAD5_2026-11-11.md).
+
+## 2026-11-11 – AI, minimax och beskärning på E–C-nivå
+
+Sex minimaxuppgifter (3.50–3.55, bland annat stickspelet) och sex
+beskärningsuppgifter med stöd (3.56–3.61). Nytt nivåbeslut: beskärning med stöd
+är C, begreppsfrågor E och fullständig alfa–beta-spårning A. Banken har 202
+uppgifter. 84/84 tester godkända.
+[Uppgifter och nivåbeslut](agent/AI_PAFYLLNAD6_2026-11-11.md).

@@ -173,9 +173,9 @@ AI-uppgifter nivåindelas enligt **`agent/AI_NIVAINDELNING.md`**, som bygger på
 betygskriterierna för Artificiell intelligens nivå 1 (Gy25). Kortfattat:
 E = känna igen principen och ta enstaka steg med given regel (träningsnivå 1–2).
 C = genomföra en hel körning säkert och förklara varför, till exempel g runt
-väggar eller A*-spårning med lika värden (träningsnivå 3). A = allt som gäller
-alfa–beta-beskärning samt att värdera heuristiker och generalisera (träningsnivå
-4–5). Bedöm varje delkort för sig. Banken ska ha många E-uppgifter, minst cirka
+väggar, A*-spårning med lika värden eller beskärning med stöd (två nivåer,
+givet mellanvärde, ett beslut) (träningsnivå 3). A = fullständig alfa–beta-
+spårning samt att värdera heuristiker och generalisera (träningsnivå 4–5). Bedöm varje delkort för sig. Banken ska ha många E-uppgifter, minst cirka
 55–60 % av delkorten. Nivåerna sätts i `tools/bygg-ai-nivaer-2026-11-11.py`, med
 motiverade undantag i `OVERRIDE`. Skriptet körs sist i AI-byggkedjan.
 
