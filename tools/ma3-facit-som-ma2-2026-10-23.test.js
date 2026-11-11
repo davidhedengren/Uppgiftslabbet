@@ -25,7 +25,9 @@ test('Genererade svarsrader innehåller ingen rå kalkylatorsyntax',()=>{
  }
  assert.equal(svar(q('3.309').s),'\\(\\dfrac{x^6}{3}-\\dfrac{x^3}{3}+7x+C\\)');
  assert.equal(svar(q('3.134').s),'\\(F(x)=\\dfrac{2x^{3/2}}{3}+C\\)');
- assert.equal(svar(q('2.127').s),'a) \\(-\\dfrac{1}{x^2}+\\dfrac{5}{2\\sqrt{x}}\\), b) \\(\\dfrac{3(x^{7/2}+2)}{x^3}\\)');
+ // 2.127 har sedan FACIT_RUBRIKER_2026-10-27 ett delfacit per del med egen svarsrad.
+ assert.ok(q('2.127').s.includes('Svar:</strong> \\(-\\dfrac{1}{x^2}+\\dfrac{5}{2\\sqrt{x}}\\)'));
+ assert.ok(q('2.127').s.includes('Svar:</strong> \\(\\dfrac{3(x^{7/2}+2)}{x^3}\\)'));
  assert.equal(svar(q('4.29').s),'\\(-\\dfrac{3}{2}\\)');
  assert.equal(svar(q('3.462').s),'a) \\(2{,}958\\), b) \\(3\\), c) \\(0{,}042\\)');
 });
