@@ -3652,3 +3652,13 @@ nivå och den sista är A på nivå 5. Ett behövt mellanresultat skrivs i delko
 oavrundat. Ett facit avrundat till n + 2 värdesiffror ger dubbelavrundning (5,08 underkändes mot 5,085). Ett heltalsfacit som 580 m
 med `svarVardesiffror` godtar 600 som avrundning. Sätt `null` och tolerans när ett näraliggande givet tal annars blir rätt.
 Skydd: `tools/a-uppgifter-2026-11-10.test.js`.
+
+## A-uppgifter, omgång 2: tal som tål avrundade mellanresultat, 2026-11-11
+
+[6 uppgifter / 17 kort](A_UPPGIFTER_2026-11-11.md) i Fy1 (4.912, 5.639, 5.640, 7.232, 3.747, 5.641). När en senare del
+bygger på ett tidigare svar räknar eleven ofta vidare med sitt avrundade delsvar. Välj talen så att slutsvaret blir detsamma med
+två och tre värdesiffror, oavsett om eleven använder det exakta eller det avrundade mellanresultatet. Mellanresultatet bör alltså
+ligga nära ett avrundat värde (som 24,03 m eller 80,99 °C), inte nära en avrundningsgräns. I första utkastet gav 25 m i stället
+för 24,89 m farten 56 km/h i stället för 57 km/h. Skriv mellanresultatet i delkortets fråga med en värdesiffra mer än svaret.
+Kontrollera också idéerna mot banken: fyra planerade uppgifter fanns redan (4.398/4.547, 5.78/5.272, 5.366, 3.657).
+Skydd: `tools/a-uppgifter-2026-11-11.test.js`.

@@ -21,7 +21,7 @@ test('Äldre fysikprosa och den nya facitmallen bevarar separata delbokstäver',
   'kopplingar','parallellkoppling','seriekoppling','straldoser'];
  // Enskilda uppgifter enligt agent/FACITMALL.md i områden som ännu inte är omgjorda i sin helhet:
  // A-uppgifterna 2026-11-10 (5.638, 6.565, 7.231) samt 7.144 och 8.444.
- const ENSKILDA=['5.638','6.565','7.231','7.144','8.444'];
+ const ENSKILDA=['5.638','6.565','7.231','7.232','7.144','8.444','5.641'];
  visit(c.window.BANK.filter(t=>!((MALL.includes(t.omr)||ENSKILDA.includes(t.id))&&/facit-steglista/.test(t.s))));for(const mark of ['a','b','c'])assert.ok(q('2.315').s.includes('<span class="facit-mark">'+mark+')</span>'));
  // Kort prosa behöver inte den äldre layoutklassen facit-stegvis.
  // Delbokstäver ska finnas kvar även i de nya, enklare lösningarna.

@@ -111,11 +111,12 @@ const cases=[
  ['5.615',(36*((3/6)**2))],
  ['5.616',((20+30)-10)],
  ['5.617',Math.sqrt(((2*32)/4))],
+ ['5.639',[1500*(50/3.6)**2/(2*11200),50/3.6*0.80+1500*(50/3.6)**2/(2*11200),3.6*Math.sqrt((70/3.6)**2-2*(11200/1500)*(50/3.6*0.80+1500*(50/3.6)**2/(2*11200)-70/3.6*0.80))]],
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
 
-test('Rörelseenergi: samtliga 103 numeriska uppgifter räknas självständigt',()=>{const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='rorelseenergi'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,103);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);});
-test('Alla 211 numeriska slutsvar är förenliga med de oberoende beräkningarna',()=>{
+test('Rörelseenergi: samtliga 104 numeriska uppgifter räknas självständigt',()=>{const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='rorelseenergi'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,104);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);});
+test('Alla 214 numeriska slutsvar är förenliga med de oberoende beräkningarna',()=>{
  let checked=0; const failures=[];
  for(const[id,expected]of cases){const t=q(id),vs=Array.isArray(expected)?expected:[expected];
   vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,cardId=t.spelDelar?id+String.fromCharCode(97+i):id;
@@ -126,7 +127,7 @@ test('Alla 211 numeriska slutsvar är förenliga med de oberoende beräkningarna
    if(!(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)))) failures.push(`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`); checked++;
   });
  }
- assert.equal(checked,211); assert.deepEqual(failures,[]);
+ assert.equal(checked,214); assert.deepEqual(failures,[]);
 });
 test('Fristående kort behåller sina givna värden och fysikaliska modeller',()=>{
  assert.match(q('5.488').spelDelar[1].t,/tyngdpunkten/);assert.match(q('5.488').spelDelar[1].t,/konstant retardation/);

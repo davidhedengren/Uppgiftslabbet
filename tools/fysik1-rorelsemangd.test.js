@@ -92,11 +92,12 @@ const cases=[
  ["5.605",0.5 * 0.4 * 80 / 0.4],
  ["5.606",40 * 0.1 - 20 * 0.2],
  ["5.607",30 * 0.2 / 2],
+ ["5.641",[900*0.002/2+900*0.004+900*0.002/2, -18+(900*0.002/2+900*0.004+900*0.002/2)/0.170, 2+(0.170*18-900*0.002/2)/900*1000]],
 ];
 
 test('Rörelsemängd: alla numeriska uppgifter räknas från givna värden',()=>{
  const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='rorelsemangd'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));
- assert.equal(tasks.length,85);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
+ assert.equal(tasks.length,86);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));
  for(const[id,values]of cases){const t=q(id),want=Array.isArray(values)?values:[values],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);
  want.forEach((v,i)=>{
   // Kontrollera både fysikens fullvärde och rätt avrundningscentrum vid exakt halvsteg.
@@ -115,7 +116,7 @@ test('De skrivna numeriska slutsvaren stämmer med beräkningarna',()=>{
  if(m&&m[2]){const digits={'⁻':'-','⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9'};shown*=10**Number([...m[2]].map(c=>digits[c]).join(''));}
  const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
  if(!(Math.abs(shown-v)<=tol+1e-10*Math.max(1,Math.abs(v))))failures.push(`${id} del ${i}: skrivet ${shown}, beräknat ${v} ± ${tol}`);checked++;
- });}assert.equal(checked,122);assert.deepEqual(failures,[]);
+ });}assert.equal(checked,125);assert.deepEqual(failures,[]);
 });
 test('Kortens förutsättningar, riktningar och ändrade frågetyper hänger ihop',()=>{
  assert.equal(q('5.365').spelDelning,'deluppgifter');assert.equal(q('5.365').spelDelar.length,2);

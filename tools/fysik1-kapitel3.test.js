@@ -71,6 +71,7 @@ const vectors=[
  ['3.719',Math.sqrt(25**2-7**2)],['3.720',Math.sqrt(20**2-12**2)],['3.721',deg(Math.acos(35/50))],['3.722',120/sin(65)],['3.723',deg(Math.atan(1.2/4))],['3.724',deg(Math.asin(150/400))],
  ['3.728',[400*cos(30)+300*cos(20),400*sin(30)-300*sin(20),Math.hypot(400*cos(30)+300*cos(20),400*sin(30)-300*sin(20))]],['3.729',2*800*sin(10)],
  ['3.730',Math.hypot(3-4*cos(45),2-4*sin(45))],['3.731',Math.hypot(50+40*cos(60),40*sin(60))],['3.732',Math.hypot(40*cos(45),250+40*sin(45))],
+ ['3.747',[Math.asin(15/60)*180/Math.PI,90000/Math.sqrt(60**2-15**2)/60,90000/(Math.sqrt(60**2-(15*cos(45))**2)+15*sin(45))/60]],
 ];
 const g=9.82,fall=h=>Math.sqrt(2*h/g),upTime=(v,h=0)=>(v+Math.sqrt(v*v+2*g*h))/g,reach=(v,a,s)=>(Math.sqrt(v*v+2*a*s)-v)/a;
 const konstacc=[

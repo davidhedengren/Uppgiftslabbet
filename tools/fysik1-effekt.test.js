@@ -94,12 +94,13 @@ const cases=[
  ["5.597",[(((((1.29*Math.PI)*(20**2))*100)*(8**2))/2),(((((0.59*1.29)*Math.PI)*(20**2))*(8**3))/2)]],
  ["5.598",[((0.35*40000000.0)/2500),(((0.2*0.8)*40000000.0)/10000),((((1000*(40**2))/2)/(0.22*40000000.0))*1000)]],
  ["5.599",[(((1200*g)*sin(3))*(80/3.6)),(((13700*3600)/((6*0.8)*32000000.0))*100)]],
- ["5.600",[((3.6/(0.3*32))*100),(((3.4*3.6)/(2.3*40))*100),((2600/((0.12*17)*8760))*100),(64000/(2600*0.95))]]
+ ["5.600",[((3.6/(0.3*32))*100),(((3.4*3.6)/(2.3*40))*100),((2600/((0.12*17)*8760))*100),(64000/(2600*0.95))]],
+ ["5.640",[998*6.0*4.0*0.25*g*3.2/1000,(998*6*g*3.2+998*6*7.0**2/2)/(750*12*60)*100,(998*6*g*3.2+998*6*3.0**2/2)/((998*6*g*3.2+998*6*7.0**2/2)/(750*12*60))/750/60]]
 ];
 cases.push(['5.623',3000/6],['5.625',600/800*100],['5.626',1.2*2/60+.3*4/60],['5.627',60/.5],['5.628',(12.7-12.4)/(15/60)]);
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
-test('Effekt: samtliga 95 numeriska uppgifter räknas självständigt',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='effekt'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,95);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
+test('Effekt: samtliga 96 numeriska uppgifter räknas självständigt',()=>{
+ const tasks=c.window.BANK.filter(t=>t.kap===5&&t.omr==='effekt'&&(typeof t.rättSvar==='number'||Array.isArray(t.rättSvar)));assert.equal(tasks.length,96);assert.deepEqual(new Set(cases.map(x=>x[0])),new Set(tasks.map(x=>x.id)));for(const[id,v]of cases)check(id,v);
 });
 test('Effektkorten har egna givna värden och tydliga heltalsgränser',()=>{
  assert.match(q('5.565').spelDelar[1].t,/15,0 m\/s/);assert.match(q('5.565').spelDelar[1].t,/850 kg/);
@@ -109,7 +110,7 @@ test('Effektkorten har egna givna värden och tydliga heltalsgränser',()=>{
  assert.equal(q('5.591').rättSvar[1],2664);assert.equal(q('5.591').tolerans[1],0);
  assert.match(q('5.570').spelDelar[2].t,/nedför/);assert.match(q('5.570').spelDelar[2].t,/positivt/);
 });
-test('Alla 180 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
+test('Alla 183 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
  let checked=0; const failures=[];
  for(const[id,expected]of cases){const t=q(id),vs=Array.isArray(expected)?expected:[expected];
   vs.forEach((v,i)=>{const part=t.spelDelar?t.spelDelar[i]:t,cardId=t.spelDelar?id+String.fromCharCode(97+i):id;
@@ -120,5 +121,5 @@ test('Alla 180 numeriska slutsvar i lösningsförslagen stämmer med beräkninga
    if(!(Math.abs(shown-v)<=tol+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(shown)))) failures.push(`${cardId}: facit visar ${shown}, fysisk beräkning ${v} ± ${tol}`); checked++;
   });
  }
- assert.equal(checked,180); assert.deepEqual(failures,[]);
+ assert.equal(checked,183); assert.deepEqual(failures,[]);
 });
