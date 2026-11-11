@@ -1037,3 +1037,9 @@ har rättats. AI-banken har inga validatorfynd. Se
 Åtta uppgifter omarbetade enligt användarens återkoppling; fem nya (1.03–1.05,
 2.04–2.05). Totalt 13 uppgifter, 39 självständiga delar med facit/ledtrådar.
 Se [revisionsrapport](agent/AI_BANK_REVISION_2026-11-11.md).
+
+## 2026-11-11 – fler AI-labyrinter, söklägen och flerval
+
+Tolv nya uppgifter (1.06–1.09, 2.06–2.11, 3.04–3.05), 25 nya deluppgifter.
+33 tester godkända. Två avsiktliga likhetsfynd dokumenterade, inga validatorfel.
+[Uppgifter, svar och kontrollomfattning](agent/AI_VARIATION_2026-11-11.md).

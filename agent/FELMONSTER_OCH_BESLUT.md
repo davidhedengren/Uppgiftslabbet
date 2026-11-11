@@ -3681,3 +3681,13 @@ Frågor skrivs kort som a), b), c); algoritmernas grundregler förklaras inte
 i uppgiftstext. Behåll den ordning som behövs för ett entydigt facit.
 Spelträd använder SCEN:s upp-/nedåtriktade trianglar, nodnamn utanför;
 MAX/MIN endast i symbolförklaringen. Alla 39 delar har egna facit/ledtrådar.
+
+## AI: söklägen, flera rätta alternativ och terräng, 2026-11-11
+
+[Tolv nya uppgifter](AI_VARIATION_2026-11-11.md), 1.06–1.09, 2.06–2.11,
+3.04–3.05. Nästa-ruta-uppgifter visar hela öppna listan och g/h för ett givet
+sökläge. Skilj känt g i sökningen från kortaste g som efterfrågas i en fristående
+f-uppgift. Alternativ ska fånga specifika feltankar och ha förklarande kommentarer.
+Ange uttryckligen när flera alternativ är rätta. Låt inte terrängexempel lära
+ut ”undvik alltid is”: båda utfallen finns. Unika löv-ID:n gör beskärning tydlig.
+De två rapporterade textlikheterna gäller avsiktligt olika figurer, se rapporten.
