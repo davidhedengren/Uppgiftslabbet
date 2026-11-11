@@ -50,7 +50,7 @@ test('24 nya uppgifter med fullständiga delar och unika texter',()=>{
    for(const x of d.alternativ||[]){a.ok(x.kommentar.length>15,id);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}}
  const fam={};for(const id of Object.keys(AB))fam[q(id).familj]=(fam[q(id).familj]||0)+1;
  a.deepEqual(Object.values(fam),[4,4,4]);
- for(const id of Object.keys(AB)){const u=q(id),lv=Math.max(...u.spelDelar.map(d=>d.traningsniva));a.equal(lv,u.familj.endsWith('lätt')?2:u.familj.endsWith('medel')?3:4,id);}
+ for(const id of Object.keys(AB)){const u=q(id),lv=Math.max(...u.spelDelar.map(d=>d.traningsniva));if(u.familj.endsWith('svår'))a.equal(lv,5,id);else a.ok(lv===4||lv===5,id);/* beskärning är A-nivå, se AI_NIVAINDELNING.md */}
 });
 test('alfa–beta: rotvärde och beskurna löv i alla tolv träd',()=>{
  for(const[id,[t,max,root,cut]]of Object.entries(AB)){const r=ab(t,max);a.equal(r.v,root,id);a.equal(r.v,mm(t,max),id);a.equal(r.cut.join(','),cut,id);

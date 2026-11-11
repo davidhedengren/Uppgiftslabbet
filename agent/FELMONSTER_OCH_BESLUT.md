@@ -3734,3 +3734,11 @@ och inga dragfrågor där två barn ger samma värde. Användaren har gett ståe
 tillstånd att pusha till `main` när ett arbete är klart (2026-11-11).
 [Format och 30 uppgifter](AI_KUNSKAPSGYMMET_2026-11-11.md).
 Skydd: `tools/ai-kunskapsgymmet-2026-11-11.test.js`.
+
+## AI: nivåindelning efter betygskriterierna, 2026-11-11
+
+Användarbeslut: alfa–beta-beskärning är A-nivå, och banken ska ha många E-uppgifter.
+E/C/A sätts per delkort efter vad eleven gör, inte efter träningsnivån eller
+rättningsformatet. f med g runt väggar eller genom terräng är C, och f med rak g
+eller givet g är E. Minimax är E utom resonemang (C) och generalisering (A).
+[Instruktion](AI_NIVAINDELNING.md). Skydd: `tools/ai-nivaer-2026-11-11.test.js`.

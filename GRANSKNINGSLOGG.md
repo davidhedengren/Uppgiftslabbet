@@ -1076,3 +1076,10 @@ Tre nya uppgifter per område (1.32–1.43, 2.35–2.46, 3.31–3.36) i
 Kunskapsgymmets format: tal- och flervalsdelar som rättas automatiskt.
 Banken har 125 uppgifter. 65/65 tester godkända och inga nya validatorfynd.
 [Format, svar och kontroller](agent/AI_KUNSKAPSGYMMET_2026-11-11.md).
+
+## 2026-11-11 – AI, nivåindelning E/C/A
+
+Ny instruktion [AI_NIVAINDELNING.md](agent/AI_NIVAINDELNING.md) utifrån
+betygskriterierna för AI nivå 1. Alla delkort är omklassade (80 ändrade), och
+alfa–beta-beskärning är A-nivå. Sju nya E-uppgifter (2.47–2.53). Fördelning:
+245 E, 67 C och 46 A av 358 delkort. 70/70 tester godkända.
