@@ -99,6 +99,8 @@ def klass(u, d):
     key = u['id'] + d['etikett']
     if key in OVERRIDE:
         return OVERRIDE[key]
+    if u['kap'] >= 4:  # maskininlärning m.m.: nivån sätts i byggskriptet (traningsniva 1–2 = E, 3 = C, 5 = A)
+        return (d['niva'], d['traningsniva'])
     if u['omr'] == 'alfa_beta':
         n = leaves(u)
         assert n, u['id']

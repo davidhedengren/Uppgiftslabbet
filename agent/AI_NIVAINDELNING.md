@@ -90,7 +90,7 @@ områden som hade fått mest C: A*-sökning, g/h/f och viktade vägar.
 
 Byggordning: `bygg-ai-pafyllnad-2026-11-11.py` → `…pafyllnad2…` → `…pafyllnad3…` →
 `bygg-ai-kunskapsgymmet-2026-11-11.py` → `bygg-ai-e-uppgifter-2026-11-11.py` →
-`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-pafyllnad6-2026-11-11.py` → `bygg-ai-sjalvrattning-2026-11-11.py` → `bygg-ai-pafyllnad7-2026-11-11.py` → `bygg-ai-pafyllnad8-2026-11-11.py` → `bygg-ai-mangdtraning-2026-11-12.py` → `bygg-ai-pafyllnad9-2026-11-12.py` → `bygg-ai-pafyllnad10-2026-11-12.py` → `bygg-ai-tillampningar-2026-11-12.py` → `bygg-ai-omgruppering-2026-11-11.py` → `bygg-ai-efterbearbetning-2026-11-12.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
+`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-pafyllnad6-2026-11-11.py` → `bygg-ai-sjalvrattning-2026-11-11.py` → `bygg-ai-pafyllnad7-2026-11-11.py` → `bygg-ai-pafyllnad8-2026-11-11.py` → `bygg-ai-mangdtraning-2026-11-12.py` → `bygg-ai-pafyllnad9-2026-11-12.py` → `bygg-ai-pafyllnad10-2026-11-12.py` → `bygg-ai-tillampningar-2026-11-12.py` → `bygg-ai-maskininlarning-2026-11-12.py` → `bygg-ai-omgruppering-2026-11-11.py` → `bygg-ai-efterbearbetning-2026-11-12.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
 
 Tillägg 2026-11-11 (teorifrågor): att känna igen ett begrepp, till exempel
 ”vilken datastruktur använder BFS”, är E. Att förklara varför är C, till exempel
@@ -107,3 +107,11 @@ träd i två nivåer, ett givet mellanvärde (till exempel ”A har värdet 5, B
 rotens värde?”) är E. De äldre beskärningsuppgifterna 3.03–3.42 är oförändrat A.
 Gäller 3.56–3.61. Minimaxfrågor där eleven tolkar eller jämför värden, till exempel
 vad rotvärdet −1 betyder eller två drag med samma värde, är C.
+
+## Kapitel 4 och senare (2026-11-12)
+
+Från kapitel 4 (Maskininlärning) sätts nivån i byggskriptet, och nivåskriptet behåller den. Träningsnivå 1–2
+ger E, 3 ger C och 5 ger A. E betyder ett steg med given formel, till exempel en precision ur en matris eller
+en viktad summa. C betyder flera steg, val av mått eller modell utifrån följderna, eller en förklaring.
+A betyder att generalisera, till exempel FP = FN när precision = recall eller 0 < α < 1. Se
+AI_MASKININLARNING_2026-11-12.md.

@@ -34,7 +34,10 @@ test('alla uppgifter är självrättande och metadata stämmer mellan uppgift oc
    }else if(d.svarstyp==='flera_delar'){
     a.equal(d.rättSvar.length,d.svarEtiketter.length);a.equal(d.svarsstruktur,'ordnad');
     d.rättSvar.forEach((v,j)=>{if(d.svarFormat[j]==='numeriskt'){a.ok(Number.isInteger(v));a.equal(d.tolerans[j],0);}else a.match(d.svarFormat[j],/^namn(ordning|mangd)$/);});
-   }else if(d.svarstyp==='numeriskt'){a.ok(Number.isInteger(d.rättSvar));a.equal(d.tolerans,0);}
+   }else if(d.svarstyp==='numeriskt'){
+    // Kapitel 1–3: heltal. Kapitel 4 (maskininlärning, 2026-11-12): exakta decimaltal med högst tre decimaler, eller avrundat svar med tolerans och angiven precision.
+    if(u.kap<4){a.ok(Number.isInteger(d.rättSvar));a.equal(d.tolerans,0);}
+    else{a.ok(Number.isFinite(d.rättSvar),u.id+d.etikett);a.ok(d.tolerans===0?Math.round(d.rättSvar*1000)/1000===d.rättSvar:/Avrunda till/.test(d.fraga),u.id+d.etikett);}}
    else{a.equal(d.svarstyp,'kort_text');a.match(d.svarFormat,/^namn(ordning|mangd)$/);a.equal(typeof d.rättSvar,'string');}
   });
  }

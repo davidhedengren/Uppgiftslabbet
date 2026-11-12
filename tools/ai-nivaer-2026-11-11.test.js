@@ -16,7 +16,8 @@ test('alfa–beta-beskärning är A-nivå, rot- och nodvärden är vanlig minima
  for(const{u,d}of parts.filter(x=>x.u.omr==='alfa_beta')){const value=/Vilket värde får (roten|[A-Z])\?|Bestäm rotens minimaxvärde/.test(d.fraga);
   const stod=['3.56','3.57','3.58','3.59','3.60','3.61','3.66','3.67','3.68','3.69','3.73','3.74','3.75','3.76','3.77','3.78'].includes(u.id)||['3.70c','3.71c','3.72c','3.80b','3.80c','3.80e'].includes(u.id+d.etikett);/* begreppsfrågor är E (2026-11-12) *//* beskärning med stöd: E–C (3.66–3.69 mängdträning 2026-11-12) */
   if(value||stod)a.notEqual(d.niva,'A',u.id+d.etikett);else a.equal(d.niva,'A',u.id+d.etikett);}
- for(const{u,d}of parts.filter(x=>x.u.omr!=='alfa_beta'))a.doesNotMatch(d.fraga,/beskär|α|β/,u.id+d.etikett);
+ // Kapitel 4 (maskininlärning) använder α för inlärningstakten i gradientnedstigning (2026-11-12).
+ for(const{u,d}of parts.filter(x=>x.u.omr!=='alfa_beta'&&x.u.kap<4))a.doesNotMatch(d.fraga,/beskär|α|β/,u.id+d.etikett);
 });
 test('många E-uppgifter',()=>{
  const n=k=>parts.filter(x=>x.d.niva===k).length;a.ok(n('E')/parts.length>=0.55,'minst 55 % E');a.ok(n('A')>0&&n('C')>0);

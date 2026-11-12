@@ -193,6 +193,11 @@ Informerad sökning (prioritetsköer, heuristik och f-värden, girig bäst förs
 viktade vägar). Placeringen av varje uppgift står i `tools/bygg-ai-omgruppering-2026-11-11.py`,
 som också skriver `strukturai.js` och sorterar banken. Varje kort har två delmoment, även i
 kapitel 3. Nya AI-uppgifter måste läggas in där, annars stoppar skriptet.
+Kapitel 4 Maskininlärning (2026-11-12, `agent/AI_MASKININLARNING_2026-11-12.md`) har fem kort:
+grunder, klassificeringsmatris, regression och gradientnedstigning, kNN och k-means, och en enkel
+fördjupning om neurala nätverk (viktad summa, bias, stegfunktion och ReLU). Uppgifterna ska vara
+ganska lätta, och begrepp utanför AI1 (till exempel residual och F1) används inte. Decimalsvar är tillåtna,
+och nivån sätts i byggskriptet.
 
 Efter granskningen 2026-11-12 (`agent/AI_GRANSKNING_2026-11-12.md`) gäller också:
 - Delkortens facit nämner flervalsalternativen med deras text, aldrig med bokstav, eftersom

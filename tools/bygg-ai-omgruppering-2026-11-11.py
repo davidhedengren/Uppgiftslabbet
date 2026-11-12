@@ -21,12 +21,14 @@ import json
 BANK = 'uppgifterai.js'
 STRUKTUR = 'strukturai.js'
 
-KAPITEL = {'1': 'Oinformerad sökning', '2': 'Informerad sökning', '3': 'Spelträd och beskärning'}
+KAPITEL = {'1': 'Oinformerad sökning', '2': 'Informerad sökning', '3': 'Spelträd och beskärning', '4': 'Maskininlärning'}
 OMRADEN = {
     '1': {'ko_stack': 'Köer och stackar', 'bfs': 'Bredden först (BFS)', 'dfs': 'Djupet först (DFS)'},
     '2': {'prioritetsko': 'Prioritetsköer', 'astar_varden': 'Heuristik och f-värden',
           'astar_sokning': 'Girig bäst först och A*', 'viktade_vagar': 'Viktade vägar'},
     '3': {'minimax': 'Minimax', 'alfa_beta': 'Alfa–beta-beskärning'},
+    '4': {'ml_grunder': 'Grunder i maskininlärning', 'klassmatris': 'Klassificeringsmatris och utvärdering',
+          'regression': 'Linjär regression och gradientnedstigning', 'knn_kmeans': 'kNN och k-means', 'neurala': 'Fördjupning: neurala nätverk'},
 }
 
 # delmoment: (område, uppgifter)
@@ -56,6 +58,25 @@ DELMOMENT = {
     'Rotvärde och beskurna löv': ('alfa_beta', '3.76 3.77 3.70 3.71 3.72 3.03 3.04 3.05 3.09 3.13 3.15 3.16 3.17 3.18 3.19 3.20 3.21 '
                                                '3.22 3.23 3.24 3.25 3.26 3.34 3.35 3.36 3.40 3.41 3.42'),
 }
+
+
+def _ids(a, b):
+    return ' '.join(f'4.{i:02d}' for i in range(a, b + 1))
+
+
+# Kapitel 4 Maskininlärning (bygg-ai-maskininlarning-2026-11-12.py), lärarens planering v. 2–12
+DELMOMENT.update({
+    'Typer av inlärning': ('ml_grunder', _ids(1, 8)),
+    'Träning, test och överanpassning': ('ml_grunder', _ids(9, 16)),
+    'Beräkna utvärderingsmått': ('klassmatris', _ids(20, 29)),
+    'Tolka klassificeringsmatrisen': ('klassmatris', _ids(30, 39)),
+    'Linjär regression': ('regression', _ids(40, 47)),
+    'Gradientnedstigning': ('regression', _ids(48, 55)),
+    'Klassificera med kNN': ('knn_kmeans', _ids(60, 67)),
+    'Klustring med k-means': ('knn_kmeans', _ids(68, 75)),
+    'Viktad summa och bias': ('neurala', _ids(80, 87)),
+    'Aktiveringsfunktioner': ('neurala', _ids(88, 95)),
+})
 
 
 def struktur_js():

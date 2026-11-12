@@ -19,7 +19,8 @@ function dfsG(E,s,mål){const g=adj(E),sett=new Set(),ut=[],st=[];const go=n=>{s
 const L=xs=>xs.join(', ');
 
 test('struktur: oinformerad och informerad sökning, två delmoment per område',()=>{
- a.equal(JSON.stringify(c.window.KAPNAMNAI),JSON.stringify({1:'Oinformerad sökning',2:'Informerad sökning',3:'Spelträd och beskärning'}));
+ // Kapitel 4 Maskininlärning tillkom 2026-11-12 (ai-maskininlarning-2026-11-12.test.js).
+ a.equal(JSON.stringify(c.window.KAPNAMNAI),JSON.stringify({1:'Oinformerad sökning',2:'Informerad sökning',3:'Spelträd och beskärning',4:'Maskininlärning'}));
  a.equal(JSON.stringify(Object.keys(c.window.OMRAI[1])),JSON.stringify(['ko_stack','bfs','dfs']));
  a.equal(JSON.stringify(Object.keys(c.window.OMRAI[2])),JSON.stringify(['prioritetsko','astar_varden','astar_sokning','viktade_vagar']));
  a.ok(!bank.some(u=>u.omr==='ko_sokning'),'kortet Kön under sökningen finns inte längre');
