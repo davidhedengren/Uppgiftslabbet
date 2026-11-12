@@ -505,6 +505,132 @@ def stod_task(id_, seed, root_max):
     return uppgift(id_, 'alfa_beta', 'Beskärningens idé', intro, [a, b, c], 'Jämför vad B högst eller minst kan bli med A.', ['procedur', 'begrepp'])
 
 
+# ======================================================================== träningsnivå 1 (granskningen 2026-11-12, punkt 3)
+
+RIKTNING = {(-1, 0): 'uppåt', (0, 1): 'åt höger', (1, 0): 'nedåt', (0, -1): 'åt vänster'}
+
+
+def dfs_n1_task(id_, seed, sammanhang):
+    """DFS i ett steg: grannar till start, första besöket och nästa besök från en given ruta."""
+    def bygg(rng):
+        return labyrint(rng, 4, 6, 0.3, 6)
+
+    def nasta(rows):
+        r = A.dfs(rows)['order']
+        for i in range(2, len(r) - 1):
+            if A.manhattan(r[i], r[i + 1]) == 1 and len(A.neigh(rows, r[i])) >= 3:
+                return i
+        return None
+
+    def ok(rows):
+        s, _ = A.parse(rows)
+        return len(A.neigh(rows, s)) >= 2 and nasta(rows) is not None
+    rows = sok_fram(seed, bygg, ok)
+    s, g = A.parse(rows)
+    ordning = A.dfs(rows)['order']
+    nb = A.neigh(rows, s)
+    forsta = nb[0]
+    i = nasta(rows)
+    X, nxt = ordning[i], ordning[i + 1]
+    besokta = set(ordning[:i + 1])
+    xn, sn = A.cname(X), A.cname(s)
+    intro = maze(rows, s, g) + p(sammanhang) + p('Labyrinten söks igenom med DFS (ordning ↑ → ↓ ←).')
+    a = num(f'Start ligger i {sn}. Hur många öppna grannar har startrutan?',
+            [step(f'Grannarna till {sn}', ', '.join(f'{RIKTNING[(c[0] - s[0], c[1] - s[1])]}: {A.cname(c)}' for c in nb) + '.')],
+            len(nb), 'Titta uppåt, åt höger, nedåt och åt vänster. Väggar och kanten räknas inte.', 1)
+    b = val('Vilken ruta besöker DFS direkt efter start?',
+            [step('Första tillåtna riktningen', f'Ordningen är ↑ → ↓ ←. Den första öppna grannen är {A.cname(forsta)} '
+                                                f'({RIKTNING[(forsta[0] - s[0], forsta[1] - s[1])]}).')],
+            [alt(f'Rutan {A.cname(c)}', c == forsta,
+                 f'{A.cname(c)} ligger {RIKTNING[(c[0] - s[0], c[1] - s[1])]} och ' +
+                 ('är den första öppna grannen i ordningen.' if c == forsta else 'prövas först senare i ordningen ↑ → ↓ ←.'))
+             for c in nb],
+            'Pröva riktningarna i ordningen ↑ → ↓ ←.', 1)
+    grannar = A.neigh(rows, X)
+    c = val(f'DFS har just kommit till rutan {xn}. Vilken ruta besöks härnäst?',
+            [step(f'Grannarna till {xn} i ordningen ↑ → ↓ ←',
+                  ', '.join(f'{A.cname(v)} ({"redan besökt" if v in besokta else "obesökt"})' for v in grannar) + '.'),
+             step('Den första obesökta grannen', f'{A.cname(nxt)} besöks härnäst.')],
+            [alt(f'Rutan {A.cname(v)}', v == nxt,
+                 f'{A.cname(nxt)} är den första obesökta grannen i ordningen ↑ → ↓ ←.' if v == nxt else
+                 (f'{A.cname(v)} är redan besökt.' if v in besokta else f'{A.cname(v)} kommer senare i ordningen ↑ → ↓ ←.'))
+             for v in grannar],
+            'Hoppa över grannar som redan är besökta.', 1)
+    return uppgift(id_, 'dfs', 'DFS i labyrinter', intro, [a, b, c], 'DFS går till den första obesökta grannen i ordningen ↑ → ↓ ←.', ['procedur'])
+
+
+def astar_n1_task(id_, seed, sammanhang):
+    """A* i ett steg: h för start, f för en granne och vilken granne som har lägst f."""
+    def ok(rows):
+        s, g = A.parse(rows)
+        f = sorted(1 + A.manhattan(v, g) for v in A.neigh(rows, s))
+        return len(f) >= 2 and f[0] < f[1]
+    rows = sok_fram(seed, lambda rng: labyrint(rng, 4, 6, 0.28, 6), ok)
+    s, g = A.parse(rows)
+    nb = sorted(A.neigh(rows, s), key=A.cname)
+    f = {A.cname(v): 1 + A.manhattan(v, g) for v in nb}
+    basta = min(f, key=f.get)
+    X = random.Random(seed).choice(nb)
+    xn, sn, gn = A.cname(X), A.cname(s), A.cname(g)
+    hs = A.manhattan(s, g)
+    intro = maze(rows, s, g) + p(sammanhang) + p(K.ASTAR)
+    a = num(f'Bestäm h för startrutan {sn}.',
+            [step(f'Rader och kolumner från {sn} till målet {gn}', f'{abs(s[0] - g[0])} + {abs(s[1] - g[1])} = {hs}.')], hs,
+            'Räkna rader och kolumner till målet. Väggar räknas inte.', 1)
+    b = num(f'Bestäm f för rutan {xn}, som ligger bredvid start.',
+            [step('g = 1', f'{xn} ligger ett steg från start.'),
+             step(f'f = g + h = 1 + {f[xn] - 1}', f'h = {abs(X[0] - g[0])} + {abs(X[1] - g[1])} = {f[xn] - 1}, så f = {f[xn]}.')], f[xn],
+            'g är antalet steg från start, h räknas rakt till målet.', 1)
+    c = val('Vilken av grannarna till start har lägst f?',
+            [step('f för grannarna', ', '.join(f'{n}: {v}' for n, v in f.items()) + f'. Lägst har {basta}.')],
+            [alt(f'Rutan {n}', n == basta, f'{n} har f = {f[n]}' + (', det lägsta.' if n == basta else f', mer än {basta}:s {f[basta]}.'))
+             for n in f],
+            'Alla grannar har g = 1. Jämför h.', 1)
+    return uppgift(id_, 'astar_sokning', 'A* steg för steg', intro, [a, b, c], 'f = g + h, och A* väljer lägst f.', ['procedur'])
+
+
+# ======================================================================== flera terrängtyper (punkt 5)
+
+TERRANG = {'3': 'lera', '4': 'is', '5': 'backe'}
+
+
+def terrang_task(id_, seed, sorter, sammanhang):
+    """Vägkostnad med två eller tre terrängtyper. Kostnaden är siffran i rutan."""
+    def bygg(rng):
+        rows = labyrint(rng, 4, 6, 0.15, 6)
+        oppna = [(r, c) for r, row in enumerate(rows) for c, ch in enumerate(row) if ch == '.']
+        g = [list(r) for r in rows]
+        for k, (r, c) in enumerate(rng.sample(oppna, 6)):
+            g[r][c] = sorter[k % len(sorter)]
+        return [''.join(r) for r in g]
+
+    def ok(rows):
+        v = A.bfs(rows)['path']
+        typer = {rows[r][c] for r, c in v[1:-1]}
+        kost, _ = A.ucs_grid(rows)
+        return kost is not None and len(typer & set(sorter)) >= 2 and A.path_cost(rows, v) > kost
+    rows = sok_fram(seed, bygg, ok)
+    s, g = A.parse(rows)
+    v = A.bfs(rows)['path']
+    vk = A.path_cost(rows, v)
+    kost, billig = A.ucs_grid(rows)
+    kostnad_txt = ', '.join(f'{TERRANG[t]} {t}' for t in sorter)
+    intro = maze(rows, s, g) + p(sammanhang + f' Att gå in i en ruta med terräng kostar talet i rutan ({kostnad_txt}). '
+                                 'Att gå in i en vit ruta eller målet kostar 1, och start kostar 0.')
+    delar = [f'{A.cname(c)}: {A.cost(rows, c)}' for c in v[1:]]
+    a = num(f'Vad kostar vägen {pil(names(v))}?',
+            [step('Kostnad för varje ruta på vägen', ', '.join(delar) + '.'), step(f'Summa: {vk}', 'Start räknas inte.')], vk,
+            'Lägg ihop kostnaden för varje ruta du går in i.', 1)
+    b = num('Vad kostar den billigaste vägen från start till mål?',
+            [step('En väg som undviker de dyraste rutorna', f'{pil(names(billig))}.'),
+             step(f'Summa: {kost}', ', '.join(f'{A.cname(c)}: {A.cost(rows, c)}' for c in billig[1:]) + '.')], kost,
+            'Jämför några vägar och leta efter en väg runt de dyraste rutorna.', 2)
+    sparar = vk - kost
+    c = num(f'Hur mycket billigare är den billigaste vägen än vägen {pil(names(v))}?',
+            [step('Skillnaden', f'{vk} − {kost} = {sparar}.')], sparar, 'Använd svaren på de två föregående frågorna.', 1)
+    return uppgift(id_, 'viktade_vagar', 'Vägkostnad i labyrinter', intro, [a, b, c], 'Kostnaden är summan av rutorna man går in i.', ['procedur'])
+
+
 # ======================================================================== lista
 
 def alla():
@@ -529,6 +655,11 @@ def alla():
     out += [med_spel(mm_drill('3.62', 6201, '3x2', True), G[0]), med_spel(mm_drill('3.63', 6302, '2x3', False), G[1]),
             med_spel(mm_drill('3.64', 6403, '3niv', True), G[2]), med_spel(mm_drill('3.65', 6504, '3niv', False), G[3])]
     out += [med_spel(stod_task(f'3.{66 + i}', 6600 + i, i % 2 == 0), G[4 + i]) for i in range(4)]
+    # Granskningen 2026-11-12: träningsnivå 1 i DFS och A* (punkt 3) och fler terrängtyper (punkt 5)
+    out += [dfs_n1_task(f'1.{100 + i}', 10100 + i, S[(i + 3) % 8]) for i in range(4)]
+    out += [astar_n1_task(f'2.{109 + i}', 10900 + i, S[(i + 5) % 8]) for i in range(4)]
+    out += [terrang_task(f'2.{113 + i}', 11300 + i, so, S[(i + 6) % 8])
+            for i, so in enumerate([['3', '4'], ['4', '5'], ['3', '5'], ['3', '4', '5']])]
     return out
 
 

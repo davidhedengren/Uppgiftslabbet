@@ -4,6 +4,10 @@
 // får innehålla något som är anpassat för automaträttning.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),c);
+// Efterbearbetningen 2026-11-12 skriver ensamma namn som ”Noden B”/”Rutan P” (och 1.22a ”Efter uttaget av A”).
+// Testerna nedan räknar fram bokstäverna, så prefixet tas bort här. Själva prefixen kontrolleras i
+// tools/ai-efterbearbetning-2026-11-12.test.js.
+c.window.BANKAI=JSON.parse(JSON.stringify(c.window.BANKAI).replace(/(?:Noden|Rutan|Efter uttaget av) ([A-Z])(?=["<.:])/g,'$1'));
 const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id),del=k=>q(k.slice(0,-1)).spelDelar.find(d=>d.etikett===k.slice(-1));
 const GAMLA=bank.filter(u=>/^(1\.(0\d|1\d|2\d|3[01])|2\.(0\d|1\d|2\d|3[0-4])|3\.(0\d|1\d|2\d|30))$/.test(u.id)).map(u=>u.id);
 const KG_FLERVAL=['1.07d','2.03c','3.07c'];

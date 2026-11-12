@@ -66,6 +66,13 @@ OVERRIDE = {
     '3.61b': ('C', 3),
     # Mängdträning 2026-11-12: beskärning med stöd, ett beslut (behöver L4 undersökas?)
     '3.66b': ('C', 3), '3.67b': ('C', 3), '3.68b': ('C', 3), '3.69b': ('C', 3),
+    # Granskningen 2026-11-12, punkt 2: A-uppgifter i sökningsdelen (generalisera och värdera)
+    '1.99c': ('A', 4),  # vad gäller för DFS och BFS i alla labyrinter
+    '2.106c': ('A', 4), '2.106d': ('A', 4),  # värdera tre heuristiker
+    '2.107c': ('A', 4),  # för vilka k lönar sig vägen
+    '2.108c': ('A', 4),  # vad gäller alltid för girig bäst först
+    # E-uppgifter i alfa–beta: begreppsfrågor
+    '3.70c': ('E', 1), '3.71c': ('E', 1), '3.72c': ('E', 1),
     # värdera heuristiken: när kan A* lita på h
     '2.71a': ('A', 4),  # h får aldrig överskatta
     '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar

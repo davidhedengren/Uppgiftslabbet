@@ -90,7 +90,7 @@ områden som hade fått mest C: A*-sökning, g/h/f och viktade vägar.
 
 Byggordning: `bygg-ai-pafyllnad-2026-11-11.py` → `…pafyllnad2…` → `…pafyllnad3…` →
 `bygg-ai-kunskapsgymmet-2026-11-11.py` → `bygg-ai-e-uppgifter-2026-11-11.py` →
-`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-pafyllnad6-2026-11-11.py` → `bygg-ai-sjalvrattning-2026-11-11.py` → `bygg-ai-pafyllnad7-2026-11-11.py` → `bygg-ai-pafyllnad8-2026-11-11.py` → `bygg-ai-mangdtraning-2026-11-12.py` → `bygg-ai-omgruppering-2026-11-11.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
+`bygg-ai-pafyllnad4-2026-11-11.py` → `bygg-ai-pafyllnad5-2026-11-11.py` → `bygg-ai-pafyllnad6-2026-11-11.py` → `bygg-ai-sjalvrattning-2026-11-11.py` → `bygg-ai-pafyllnad7-2026-11-11.py` → `bygg-ai-pafyllnad8-2026-11-11.py` → `bygg-ai-mangdtraning-2026-11-12.py` → `bygg-ai-pafyllnad9-2026-11-12.py` → `bygg-ai-omgruppering-2026-11-11.py` → `bygg-ai-efterbearbetning-2026-11-12.py` → `bygg-ai-nivaer-2026-11-11.py`. Nya byggskript läggs in före nivåskriptet. Kedjan ger en identisk fil från den committade versionen.
 
 Tillägg 2026-11-11 (teorifrågor): att känna igen ett begrepp, till exempel
 ”vilken datastruktur använder BFS”, är E. Att förklara varför är C, till exempel

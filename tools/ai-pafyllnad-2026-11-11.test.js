@@ -6,6 +6,10 @@ const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('no
 // 1.07d, 2.03c och 3.07c finns bara i Kunskapsgymmet; i Uppgiftslabbet är de öppna frågor i t.
 const KG_FLERVAL=new Set(['1.07d','2.03c','3.07c']);
 const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),c);
+// Efterbearbetningen 2026-11-12 skriver ensamma namn som ”Noden B”/”Rutan P” (och 1.22a ”Efter uttaget av A”).
+// Testerna nedan räknar fram bokstäverna, så prefixet tas bort här. Själva prefixen kontrolleras i
+// tools/ai-efterbearbetning-2026-11-12.test.js.
+c.window.BANKAI=JSON.parse(JSON.stringify(c.window.BANKAI).replace(/(?:Noden|Rutan|Efter uttaget av) ([A-Z])(?=["<.:])/g,'$1'));
 const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id);
 const NYA=['1.10','1.11','1.12','1.13','1.14','1.15','1.16','1.17','1.18','1.19','2.12','2.13','2.14','2.15','2.16','2.17','2.18','2.19','2.20','2.21','2.22','3.06','3.07','3.08','3.09','3.10'];
 const nm=([r,k])=>String.fromCharCode(65+r)+(k+1);

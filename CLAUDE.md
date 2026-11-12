@@ -194,6 +194,16 @@ viktade vägar). Placeringen av varje uppgift står i `tools/bygg-ai-omgrupperin
 som också skriver `strukturai.js` och sorterar banken. Varje kort har två delmoment, även i
 kapitel 3. Nya AI-uppgifter måste läggas in där, annars stoppar skriptet.
 
+Efter granskningen 2026-11-12 (`agent/AI_GRANSKNING_2026-11-12.md`) gäller också:
+- Delkortens facit nämner flervalsalternativen med deras text, aldrig med bokstav, eftersom
+  Kunskapsgymmet blandar alternativen. Huvudfacit på papper behåller A–D.
+- Ett alternativ får inte vara en ensam bokstav (”B”), eftersom det krockar med A–D på papper.
+  Skriv ”Noden B” eller ”Rutan P”.
+- Båda reglerna verkställs av `tools/bygg-ai-efterbearbetning-2026-11-12.py`, som körs efter
+  omgrupperingen och före nivåskriptet.
+- Varje område ska ha uppgifter för prov på alla nivåer: C även i köer, stackar och
+  prioritetsköer, A även i sökningsdelen (värdera, generalisera), och E även i alfa–beta.
+
 ## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
 Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1 och 2 tillsammans** (preciserat 2026-10-25). Nivå 3 ska också fyllas på, så att det finns varierad träning även där. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1–2 (eller nivå 3) och som undervisas nu. Fyll inte bara på nivå 1.

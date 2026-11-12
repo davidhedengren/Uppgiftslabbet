@@ -3,6 +3,10 @@
 // Svaren kontrolleras med egna simuleringar, oberoende av byggskriptens Python-kod.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),c);
+// Efterbearbetningen 2026-11-12 skriver ensamma namn som ”Noden B”/”Rutan P” (och 1.22a ”Efter uttaget av A”).
+// Testerna nedan räknar fram bokstäverna, så prefixet tas bort här. Själva prefixen kontrolleras i
+// tools/ai-efterbearbetning-2026-11-12.test.js.
+c.window.BANKAI=JSON.parse(JSON.stringify(c.window.BANKAI).replace(/(?:Noden|Rutan|Efter uttaget av) ([A-Z])(?=["<.:])/g,'$1'));
 const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id),has=(id,s)=>a.ok(q(id).s.includes(s),id+': '+s);
 const NYA=['1.20','1.21','1.22','1.23','1.24','1.25','1.26','1.27','2.23','2.24','2.25','2.26','2.27','2.28','2.29','2.30','3.11','3.12','3.13','3.14'];
 const nm=([r,k])=>String.fromCharCode(65+r)+(k+1),STD=[[-1,0],[0,1],[1,0],[0,-1]];

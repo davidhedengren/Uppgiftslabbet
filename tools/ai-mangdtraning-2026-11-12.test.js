@@ -16,7 +16,7 @@ const L=xs=>xs.join(', ');
 // ---------------------------------------------------------------- labyrinter ur figuren
 function labyrint(u){const svg=svgOf(u),celler=[...svg.matchAll(/<rect data-cell="([A-Z])(\d+)" x="(\d+)" y="(\d+)"[^>]*fill="([^"]+)"/g)];
  const R=Math.max(...celler.map(m=>m[1].charCodeAt(0)-64)),C=Math.max(...celler.map(m=>+m[2]));const rows=Array.from({length:R},()=>Array(C).fill('.'));let s,g,P=null;
- const färg={'#334155':'#','#d6b98c':'3'};for(const m of celler){const r=m[1].charCodeAt(0)-65,k=+m[2]-1;
+ const färg={'#334155':'#','#d6b98c':'3','#c4d7ef':'4','#f4ba88':'5'};for(const m of celler){const r=m[1].charCodeAt(0)-65,k=+m[2]-1;
   if(m[5]==='#22a05a')s=[r,k];else if(m[5]==='#d94343')g=[r,k];else if(färg[m[5]])rows[r][k]=färg[m[5]];else a.equal(m[5],'#fff',u.id+' okänd färg');}
  const mark=svg.match(/<rect x="(\d+)" y="(\d+)" width="\d+" height="\d+" fill="#fff3b0"/);
  if(mark){const x0=+celler[0][3],y0=+celler[0][4];P=[Math.floor((+mark[2]-y0)/52),Math.floor((+mark[1]-x0)/52)];}
@@ -24,7 +24,7 @@ function labyrint(u){const svg=svgOf(u),celler=[...svg.matchAll(/<rect data-cell
 const nm=([r,k])=>String.fromCharCode(65+r)+(k+1),eqc=(x,y)=>x[0]===y[0]&&x[1]===y[1];
 const ÖPPEN=(L,[r,k])=>L.rows[r]?.[k]!==undefined&&L.rows[r][k]!=='#';
 const nb=(L,n)=>[[-1,0],[0,1],[1,0],[0,-1]].map(([x,y])=>[n[0]+x,n[1]+y]).filter(v=>ÖPPEN(L,v));
-const kost=(L,v)=>L.rows[v[0]][v[1]]==='3'?3:1,man=(x,y)=>Math.abs(x[0]-y[0])+Math.abs(x[1]-y[1]);
+const kost=(L,v)=>/[345]/.test(L.rows[v[0]][v[1]])?+L.rows[v[0]][v[1]]:1,man=(x,y)=>Math.abs(x[0]-y[0])+Math.abs(x[1]-y[1]);
 function bfs(L){const kö=[L.s],sett=new Set([nm(L.s)]),far={},ut=[],dist={[nm(L.s)]:0};while(kö.length){const n=kö.shift();ut.push(nm(n));if(eqc(n,L.g))break;
   for(const v of nb(L,n))if(!sett.has(nm(v))){sett.add(nm(v));far[nm(v)]=nm(n);dist[nm(v)]=dist[nm(n)]+1;kö.push(v);}}
  const väg=[nm(L.g)];while(far[väg[0]])väg.unshift(far[väg[0]]);return{ut,väg};}
@@ -123,6 +123,26 @@ test('minimax och beskärning med stöd räknas om ur figuren',()=>{
   // B blir högst L3 (MIN-nod) eller minst L3 (MAX-nod). L4 behövs bara om B ändå kan slå A.
   const kapa=t.max?l3<=mm(A):l3>=mm(A);a.equal(rätt(d[1])[0].startsWith('Nej'),kapa,id);a.equal(d[1].niva,'C',id);}
  const kap=ids(3,66,69).map(id=>rätt(q(id).spelDelar[1])[0].startsWith('Nej'));a.ok(kap.includes(true),'minst en uppgift där L4 kan hoppas över');
+});
+
+test('träningsnivå 1 i DFS och A* samt flera terrängtyper (granskningen 2026-11-12) räknas om ur figuren',()=>{
+ const cell=x=>[x.charCodeAt(0)-65,+x.slice(1)-1];
+ for(const id of ids(1,100,103)){const u=q(id),Lab=labyrint(u),d=u.spelDelar,o=dfs(Lab).ut;a.equal(u.familj,'DFS i labyrinter');
+  for(const x of d)a.equal(x.traningsniva,1,id+x.etikett);
+  a.equal(d[0].rättSvar,nb(Lab,Lab.s).length,id);a.equal(rätt(d[1])[0],'Rutan '+o[1],id);
+  const X=ren(d[2].fraga).match(/till rutan ([A-Z]\d+)/)[1],i=o.indexOf(X);a.ok(i>0,id);
+  a.equal(man(cell(X),cell(o[i+1])),1,id+': nästa ruta är en granne, inget backande');a.equal(rätt(d[2])[0],'Rutan '+o[i+1],id);}
+ for(const id of ids(2,109,112)){const u=q(id),Lab=labyrint(u),d=u.spelDelar;a.equal(u.familj,'A* steg för steg');
+  for(const x of d)a.equal(x.traningsniva,1,id+x.etikett);
+  a.equal(d[0].rättSvar,man(Lab.s,Lab.g),id);const X=cell(ren(d[1].fraga).match(/rutan ([A-Z]\d+)/)[1]);a.equal(man(X,Lab.s),1);a.equal(d[1].rättSvar,1+man(X,Lab.g),id);
+  const f=nb(Lab,Lab.s).map(v=>[1+man(v,Lab.g),nm(v)]).sort((x,y)=>x[0]-y[0]);a.ok(f[0][0]<f[1][0],id+': entydigt lägst f');a.equal(rätt(d[2])[0],'Rutan '+f[0][1],id);}
+ const sorter=new Set();
+ for(const id of ids(2,113,116)){const u=q(id),Lab=labyrint(u),d=u.spelDelar;a.equal(u.familj,'Vägkostnad i labyrinter');
+  Lab.rows.join('').replace(/[^345]/g,'').split('').forEach(x=>sorter.add(x));
+  const väg=ren(d[0].fraga).match(/vägen (.*)\?/)[1].split(' → ').map(cell);a.ok(eqc(väg[0],Lab.s)&&eqc(väg.at(-1),Lab.g));
+  for(let i=1;i<väg.length;i++){a.equal(man(väg[i],väg[i-1]),1,id);a.ok(ÖPPEN(Lab,väg[i]),id);}
+  const vk=väg.slice(1).reduce((x,v)=>x+kost(Lab,v),0),b=billigast(Lab);a.equal(d[0].rättSvar,vk,id);a.equal(d[1].rättSvar,b,id);a.equal(d[2].rättSvar,vk-b,id);a.ok(vk>b,id);}
+ a.deepEqual([...sorter].sort(),['3','4','5'],'lera, is och backe förekommer');
 });
 
 test('validatorn hittar inget nytt',()=>{const r=require('./granska-uppgifter.js').granskaProjekt(process.cwd()).resultat.find(x=>x.fil==='uppgifterai.js');
