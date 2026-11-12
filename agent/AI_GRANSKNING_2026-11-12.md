@@ -74,3 +74,27 @@ Totalt 291 uppgifter och 797 delkort: 613 E, 125 C och 59 A.
 - Byggkedjan ger samma fil två gånger i rad. Validatorn hittar bara de två godkända fynden.
 - Kunskapsgymmet: 797 delkort, 2 462 rättningskontroller, inga fel. Facit och figurer har
   lästs igenom i 390 px (bland annat 1.97b, 1.100c, 2.104b, 2.106d och 3.70c).
+
+## Omgång 10: alfa–beta på C-nivå och BFS på A-nivå (`bygg-ai-pafyllnad10-2026-11-12.py`)
+
+Användaren: ”fyll på där” (de svagaste delarna för prov efter granskningen).
+
+| Uppgift | Delmoment | Nivå | Innehåll |
+|---|---|---|---|
+| 3.73–3.75 | Beskärningens idé | E + C | tre barn under roten: behöver B:s andra löv undersökas, behöver C:s andra löv undersökas? Svaren varierar mellan ja och nej, och rotvärdet är både MAX och MIN |
+| 3.76–3.77 | Rotvärde och beskurna löv | C | tolv löv: A:s värde, hur många av B:s löv som behövs när A är känd, rotvärdet |
+| 3.78 | Beskärningens idé | C | samma löv i olika ordning: 3 löv behövs i bilden, 1 med lägsta värdet först |
+| 1.104 | BFS i labyrinter | E + A | BFS hittar färst steg men inte billigaste vägen (7 mot 5) |
+| 1.105 | BFS i labyrinter | C + A | öppet rutnät, start och mål i motsatta hörn: BFS tar ut R · C rutor |
+| 1.106 | BFS i labyrinter | C + A | öppet rutnät: k + 1 rutor på avstånd k från hörnet |
+
+- Beskärning med stöd är C enligt AI_NIVAINDELNING.md (givna mellanvärden, ett beslut i taget).
+  Värdefrågor i träd med tolv löv blir C enligt nivåskriptets regel.
+- Facit, ledtrådar och figurer har lästs igenom i Kunskapsgymmet (390 px). Allmänna rubriker
+  (”Generalisera”, ”Formel”, ”Antal”, ”Summera”) ersattes med rubriker som beskriver steget.
+- Spelträden är bredare än en mobilskärm och går att rulla i sidled, som alla spelträd i banken.
+- Test: `tools/ai-pafyllnad10-2026-11-12.test.js` räknar om svaren med egen alfa–beta, BFS och
+  billigaste väg, och kontrollerar formlerna för alla rutnät upp till 6 × 6.
+
+Efter omgången: 300 uppgifter och 827 delkort (621 E, 144 C, 62 A). Alfa–beta har 47 E, 35 C och
+50 A. BFS har 99 E, 17 C och 3 A.

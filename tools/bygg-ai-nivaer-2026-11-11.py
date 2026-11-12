@@ -73,6 +73,11 @@ OVERRIDE = {
     '2.108c': ('A', 4),  # vad gäller alltid för girig bäst först
     # E-uppgifter i alfa–beta: begreppsfrågor
     '3.70c': ('E', 1), '3.71c': ('E', 1), '3.72c': ('E', 1),
+    # Omgång 10 (2026-11-12): beskärning med stöd är C, generaliseringar i BFS är A
+    '3.73b': ('C', 3), '3.73c': ('C', 3), '3.74b': ('C', 3), '3.74c': ('C', 3), '3.75b': ('C', 3), '3.75c': ('C', 3),
+    '3.76b': ('C', 3), '3.77b': ('C', 3),  # hur många av B:s löv behövs när A är känd
+    '3.78a': ('C', 3), '3.78b': ('C', 3), '3.78c': ('C', 3),  # ordningen avgör beskärningen
+    '1.104c': ('A', 4), '1.105c': ('A', 4), '1.106c': ('A', 4),
     # värdera heuristiken: när kan A* lita på h
     '2.71a': ('A', 4),  # h får aldrig överskatta
     '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar
