@@ -12,7 +12,8 @@ const FÄRDIGA={
     'numerisk_derivering','extrempunkter','derivata_exponential','problemlosning_derivata','primitiva',
     'integralberakning','integral_tillampningar','extremvarde_modellering','primitiva_villkor',
     'fler_extremvarde','integral_area','storsta_minsta','derivatan_och_grafen','enhetscirkeln',
-    'cosinussatsen','trig_tillampningar','linjar_optimering','geometriska_summor'],
+    'cosinussatsen','trig_tillampningar','linjar_optimering','geometriska_summor','areasatsen',
+    'trig_ratvinkliga','trig_ekvationer','sinussatsen','sinussatsen_tva_fall','deriverbarhet'],
   'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
