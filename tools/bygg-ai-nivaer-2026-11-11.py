@@ -78,6 +78,10 @@ OVERRIDE = {
     '3.76b': ('C', 3), '3.77b': ('C', 3),  # hur många av B:s löv behövs när A är känd
     '3.78a': ('C', 3), '3.78b': ('C', 3), '3.78c': ('C', 3),  # ordningen avgör beskärningen
     '1.104c': ('A', 4), '1.105c': ('A', 4), '1.106c': ('A', 4),
+    # AI-tillämpningar (2026-11-12): förklaringar är C, en egen regel för triage är A
+    '2.122d': ('A', 4),  # föreslå en regel som minskar väntetiden för låg prioritet
+    '3.79c': ('C', 3),  # varför datorn blockerar i stället för att försöka vinna
+    '3.80b': ('C', 3), '3.80c': ('C', 3), '3.80e': ('C', 3),  # beskärning med stöd och dragordning
     # värdera heuristiken: när kan A* lita på h
     '2.71a': ('A', 4),  # h får aldrig överskatta
     '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar
