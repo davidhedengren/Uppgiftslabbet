@@ -11,7 +11,8 @@ const FÄRDIGA={
     'derivatans_definition','deriveringsregler','derivata_polynom','andraderivatan',
     'numerisk_derivering','extrempunkter','derivata_exponential','problemlosning_derivata','primitiva',
     'integralberakning','integral_tillampningar','extremvarde_modellering','primitiva_villkor',
-    'fler_extremvarde'],
+    'fler_extremvarde','integral_area','storsta_minsta','derivatan_och_grafen','enhetscirkeln',
+    'cosinussatsen','trig_tillampningar','linjar_optimering','geometriska_summor'],
   'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
