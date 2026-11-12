@@ -3759,3 +3759,13 @@ och `tools/ai-nivaer-2026-11-11.test.js`.
 7.221 a måste godta både 17,2 och 17,3 °C från vanliga vattendensiteter. Även 7.220 har separat beräknade densitetsalternativ. 6.338 godtar 6,23 och 6,24 liter från olika vanliga R. 6.337/6.201 a skyddar motsvarande precisionseffekt. Använd svarTabell per svarsfält, bevara enheter och precisionsregler, bredda inte toleranser globalt. 6.201 behöver kombinationen R-val och Kelvin-offset; b beror på kvoter och får inte ärva a:s alternativ. Tabellvärden ska inte stoppas in i frågan enbart för att tvinga en viss formelsamling.
 
 Fysik 1 har ett tvåsidigt grundblad (prefix/enheter först, senare formler på sida 2) via befintlig Formelblad-knapp. Källa: tools/bygg-fy1-grundblad-2026-11-11.py. Skydd: fellogg-fy1-2026-11-11.test.js, felrapporter-2026-11-11.browser.cjs/cases.json och konsumentens fy1-grundblad-2026-11-11.browser.cjs. 7.221:s facit följer den senare FACITMALL.md; återinför inte det äldre förbudet mot numrerade fysikfacit.
+
+## Felrapporter 2026-11-12 18:41: AI-figurer, formelblad, Bézout i Ma5 och mått i figurer
+
+[Genomgång](FELRAPPORTER_2026-11-12_1841.md). AI: det som står i en figur ska inte upprepas i uppgiftstexten.
+Förklaringen av punkter i kNN- och k-means-diagram och betydelsen av neuronens indata, formeln för z och
+aktiveringsfunktionens regel står i figuren. När ett värde ändras mellan delar (4.85: bias) får delen en egen
+figur. Flervalsalternativ ska vara luriga, ungefär lika långa och bygga på vanliga missförstånd. AI-kursen har
+ett formelblad (`formelblad/ai.pdf`). Ma5: heltalskombination av sgd (Bézout) ingår inte i kursens läroböcker
+och används inte. Ma2 3.439: ett mått som gäller en hel sida ska ha en måttlinje över hela sidan. Kunskapsgymmet
+godtar ”A∩B = {5, 7}” som mängdsvar och ”12” för klockslaget 12.00. Skydd: `tools/fellogg-2026-11-12-1841.test.js`.

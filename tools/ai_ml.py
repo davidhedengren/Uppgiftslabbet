@@ -114,8 +114,38 @@ FORM = {'A': ('#2563eb', 'circle'), 'B': ('#ea580c', 'square'), 'C': ('#16a34a',
 LINJEFARG = ['#7c3aed', '#0f766e']
 
 
+def markor(form, cx, cy, col):
+    """En punkt i diagrammet eller i förklaringsrutan."""
+    if form == 'circle':
+        return f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="6" fill="{col}"/>'
+    if form == 'square':
+        return f'<rect x="{cx - 6:.1f}" y="{cy - 6:.1f}" width="12" height="12" fill="{col}"/>'
+    if form == 'tri':
+        return f'<polygon points="{cx:.1f},{cy - 7:.1f} {cx + 7:.1f},{cy + 6:.1f} {cx - 7:.1f},{cy + 6:.1f}" fill="{col}"/>'
+    if form == 'kryss':
+        return (f'<path d="M{cx - 6:.1f},{cy - 6:.1f} L{cx + 6:.1f},{cy + 6:.1f} M{cx + 6:.1f},{cy - 6:.1f} L{cx - 6:.1f},{cy + 6:.1f}" '
+                f'stroke="{col}" stroke-width="3"/>')
+    return f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="7" fill="#fff" stroke="{col}" stroke-width="3"/>'
+
+
+def forklaring(poster, W, y0):
+    """Förklaringsruta under diagrammet (användarbeslut 2026-11-12: förklaringen ska stå i bilden, inte i texten).
+    poster: [(klass, text)], där klass är en nyckel i FORM eller 'kryss'. Ger (svg, höjd)."""
+    o, x, y, rad = [], 12.0, y0 + 16, 22
+    for kl, txt in poster:
+        col, form = (INK, 'kryss') if kl == 'kryss' else FORM[kl]
+        bredd = 26 + 7.2 * len(txt)
+        if x > 12 and x + bredd > W - 8:
+            x, y = 12.0, y + rad
+        o.append(markor(form, x + 7, y - 4, col)
+                 + f'<text x="{x + 20:.1f}" y="{y:.1f}" font-size="13" fill="{INK}">{esc(txt)}</text>')
+        x += bredd + 14
+    return ''.join(o), y - y0 + 10
+
+
 def diagram(punkter, titel, xmax, ymax, xlabel, ylabel, linjer=(), centra=(), steg=1, ystep=None, legend=None, W=360, H=300):
-    """punkter: (x, y, klass, etikett). linjer: [(k, m, namn)]. centra: [(x, y, namn)]."""
+    """punkter: (x, y, klass, etikett). linjer: [(k, m, namn)]. centra: [(x, y, namn)].
+    legend: [(klass, text)] ritas i bilden under diagrammet."""
     ystep = ystep or steg
     ml, mb, mt, mr = 40, 46, 26, 16
     sx = (W - ml - mr) / xmax
@@ -148,14 +178,7 @@ def diagram(punkter, titel, xmax, ymax, xlabel, ylabel, linjer=(), centra=(), st
     for x, y, kl, et in punkter:
         col, form = FORM[kl]
         cx, cy = X(x), Y(y)
-        if form == 'circle':
-            o.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="6" fill="{col}"/>')
-        elif form == 'square':
-            o.append(f'<rect x="{cx - 6:.1f}" y="{cy - 6:.1f}" width="12" height="12" fill="{col}"/>')
-        elif form == 'tri':
-            o.append(f'<polygon points="{cx:.1f},{cy - 7:.1f} {cx + 7:.1f},{cy + 6:.1f} {cx - 7:.1f},{cy + 6:.1f}" fill="{col}"/>')
-        else:
-            o.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="7" fill="#fff" stroke="{col}" stroke-width="3"/>')
+        o.append(markor(form, cx, cy, col))
         if et:
             o.append(f'<text x="{cx + 8:.1f}" y="{cy - 8:.1f}" font-size="13" font-weight="bold" fill="{INK}">{esc(et)}</text>')
     for x, y, namn_, *plac in centra:
@@ -164,18 +187,39 @@ def diagram(punkter, titel, xmax, ymax, xlabel, ylabel, linjer=(), centra=(), st
         o.append(f'<path d="M{cx - 7:.1f},{cy - 7:.1f} L{cx + 7:.1f},{cy + 7:.1f} M{cx + 7:.1f},{cy - 7:.1f} L{cx - 7:.1f},{cy + 7:.1f}" '
                  f'stroke="{INK}" stroke-width="3"/><text x="{tx:.1f}" y="{ty:.1f}" text-anchor="{anc}" font-size="13" '
                  f'font-weight="bold" fill="{INK}">{esc(namn_)}</text>')
-    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(titel)}" '
-           f'style="width:100%;max-width:{W}px;height:auto"><title>{esc(titel)}</title>' + ''.join(o) + '</svg>')
-    return svg + (p(legend) if legend else '')
+    if legend:
+        rad, h = forklaring(legend, W, H)
+        o.append(f'<line x1="8" y1="{H + 2}" x2="{W - 8}" y2="{H + 2}" stroke="#e5e7eb"/>' + rad)
+        H += h
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="{esc(titel)}" '
+            f'style="width:100%;max-width:{W}px;height:auto"><title>{esc(titel)}</title>' + ''.join(o) + '</svg>')
 
 
 SUB = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
 
 
-def neuron_svg(x, w, b, titel, akt='steg'):
-    """En neuron: indata x (tal eller None), vikter w, bias b och aktiveringsfunktion."""
+AKT_REGEL = {'steg': 'Stegfunktion: ut = 1 om z ≥ 0, annars 0', 'ReLU': 'ReLU: ut = z om z > 0, annars 0'}
+
+
+def radbryt(txt, n):
+    """Delar en text i rader med högst n tecken."""
+    rader, rad = [], ''
+    for ord_ in txt.split():
+        if rad and len(rad) + 1 + len(ord_) > n:
+            rader.append(rad)
+            rad = ord_
+        else:
+            rad = f'{rad} {ord_}'.strip()
+    return rader + ([rad] if rad else [])
+
+
+def neuron_svg(x, w, b, titel, akt='steg', namn=None):
+    """En neuron: indata x (tal eller None), vikter w, bias b och aktiveringsfunktion.
+    Under neuronen står vad indata betyder (namn), formeln för z och aktiveringsfunktionens regel
+    (användarbeslut 2026-11-12: det som står i bilden ska inte upprepas i uppgiftstexten)."""
     n = len(x)
     H = 80 * n + 10
+    W = 340 if akt is None else 410
     yn = 45 + 80 * (n - 1) / 2
     o = []
     for i, (xi, wi) in enumerate(zip(x, w)):
@@ -195,16 +239,29 @@ def neuron_svg(x, w, b, titel, akt='steg'):
     if akt is None:  # bara viktad summa och bias: pilen slutar i z
         o.append(f'<line x1="260" y1="{yn}" x2="300" y2="{yn}" stroke="#64748b" stroke-width="2"/>'
                  f'<text x="306" y="{yn + 5}" font-size="15" font-weight="bold" fill="{INK}">z</text>')
-        return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 {H}" role="img" aria-label="{esc(titel)}" '
-                f'style="width:100%;max-width:340px;height:auto"><title>{esc(titel)}</title>' + ''.join(o) + '</svg>')
-    o.append(
-             f'<line x1="260" y1="{yn}" x2="290" y2="{yn}" stroke="#64748b" stroke-width="2"/>'
-             f'<rect x="290" y="{yn - 20}" width="62" height="40" rx="6" fill="#fff" stroke="#334155" stroke-width="2"/>'
-             f'<text x="321" y="{yn + 5}" text-anchor="middle" font-size="14" fill="{INK}">{esc(akt)}</text>'
-             f'<line x1="352" y1="{yn}" x2="380" y2="{yn}" stroke="#64748b" stroke-width="2"/>'
-             f'<text x="384" y="{yn + 5}" font-size="14" fill="{INK}">ut</text>')
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 {H}" role="img" aria-label="{esc(titel)}" '
-            f'style="width:100%;max-width:410px;height:auto"><title>{esc(titel)}</title>' + ''.join(o) + '</svg>')
+    else:
+        o.append(f'<line x1="260" y1="{yn}" x2="290" y2="{yn}" stroke="#64748b" stroke-width="2"/>'
+                 f'<rect x="290" y="{yn - 20}" width="62" height="40" rx="6" fill="#fff" stroke="#334155" stroke-width="2"/>'
+                 f'<text x="321" y="{yn + 5}" text-anchor="middle" font-size="14" fill="{INK}">{esc(akt)}</text>'
+                 f'<line x1="352" y1="{yn}" x2="380" y2="{yn}" stroke="#64748b" stroke-width="2"/>'
+                 f'<text x="384" y="{yn + 5}" font-size="14" fill="{INK}">ut</text>')
+    # Förklaring under neuronen: indata, formeln och aktiveringsfunktionen.
+    rader = []
+    for i, t in enumerate(namn or []):
+        rader += [(j == 0, ('x' + str(i + 1)).translate(SUB) + ': ' + r if j == 0 else '      ' + r)
+                  for j, r in enumerate(radbryt(t, (W - 30) // 8 - 5))]
+    summa = ' + '.join(('w' + str(i + 1)).translate(SUB) + ('x' + str(i + 1)).translate(SUB) for i in range(n))
+    rader.append((True, f'z = {summa} + b'))
+    if akt in AKT_REGEL:
+        rader.append((True, AKT_REGEL[akt]))
+    y = H + 8
+    o.append(f'<line x1="6" y1="{y}" x2="{W - 6}" y2="{y}" stroke="#e5e7eb"/>')
+    for ny_post, r in rader:
+        y += 23 if ny_post else 19
+        o.append(f'<text x="10" y="{y}" font-size="15" fill="{INK}" xml:space="preserve">{esc(r)}</text>')
+    H = y + 10
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(titel)}" '
+            f'style="width:100%;max-width:{W}px;height:auto"><title>{esc(titel)}</title>' + ''.join(o) + '</svg>')
 
 
 def natverk_svg(lager, titel, namn_=None, noder=None):

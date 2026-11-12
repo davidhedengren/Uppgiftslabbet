@@ -393,7 +393,7 @@ def avst_steg(pts, q, urval):
 
 def knn_fig(pts, q, titel, xmax, ymax, xl, yl, a_namn, b_namn):
     return diagram(pts + [(q[0], q[1], '?', 'Ny')], titel, xmax, ymax, xl, yl,
-                   legend=f'Blå cirklar: {a_namn}. Orange kvadrater: {b_namn}. Vit ring: den nya punkten.')
+                   legend=[('A', a_namn), ('B', b_namn), ('?', 'ny punkt')])
 
 
 KNN_INTRO = 'AI:n använder k närmaste grannar (kNN). Avståndet i kvadrat mellan två punkter är (Δx)² + (Δy)², och den nya punkten får den klass som flest av de k närmaste grannarna har.'
@@ -597,7 +597,7 @@ def t468():
     g2 = [punkter[k] for k in punkter if till[k] == 'C2']
     assert [k for k in punkter if till[k] == 'C1'] == ['P1', 'P2', 'P3'] and medel(g2) == (7, 5)
     intro = (diagram([(x, y, 'C', k) for k, (x, y) in punkter.items()], 'Sex användare och två klustercentrum, C1 i (2, 2) och C2 i (6, 6).', 9, 7, 'pop', 'rock',
-                     centra=[(2, 2, 'C1'), (6, 6, 'C2')], legend='Gröna trianglar: användare. Kryss: klustercentrum.')
+                     centra=[(2, 2, 'C1'), (6, 6, 'C2')], legend=[('C', 'användare'), ('kryss', 'klustercentrum')])
              + p('En musiktjänst grupperar sex användare efter hur många timmar pop och rock de lyssnar på per vecka. Den använder k-means med k = 2. '
                  'Klustercentrum C1 ligger i (2, 2) och C2 i (6, 6). ' + KM))
     a = namn('Vilka användare tillhör C1?',
@@ -645,7 +645,7 @@ def t470():
     g2 = [punkter[k] for k in punkter if till[k] == 'C2']
     assert [k for k in punkter if till[k] == 'C2'] == ['P4', 'P5', 'P6'] and medel(g1) == (2, 2) and medel(g2) == (8, 7)
     intro = (diagram([(x, y, 'C', k) for k, (x, y) in punkter.items()], 'Sex elever och två klustercentrum, C1 i (3, 3) och C2 i (8, 6).', 10, 9, 'läsning', 'räkning',
-                     centra=[(3, 3, 'C1', 'nh'), (8, 6, 'C2')], legend='Gröna trianglar: elever. Kryss: klustercentrum.')
+                     centra=[(3, 3, 'C1', 'nh'), (8, 6, 'C2')], legend=[('C', 'elever'), ('kryss', 'klustercentrum')])
              + p('En läxhjälpstjänst vill dela in sex elever i två grupper efter hur många timmar per vecka de lägger på läsning och räkning. '
                  'Den använder k-means med k = 2 och startcentrum C1 (3, 3) och C2 (8, 6). ' + KM))
     a = namn('Vilka elever tillhör C2?',
@@ -741,7 +741,7 @@ def t474():
     assert [k for k in punkter if till[k] == 'C1'] == ['P1', 'P2', 'P3'] and medel(g1) == (3, 3)
     assert d2(punkter['P3'], centra['C1']) == 20 and d2(punkter['P3'], centra['C2']) == 34
     intro = (diagram([(x, y, 'C', k) for k, (x, y) in punkter.items()], 'Sex bostadsområden och två startcentrum, C1 i (1, 1) och C2 i (8, 8).', 11, 9, 'x (km)', 'y (km)',
-                     centra=[(1, 1, 'C1'), (8, 8, 'C2')], legend='Gröna trianglar: bostadsområden. Kryss: klustercentrum.')
+                     centra=[(1, 1, 'C1'), (8, 8, 'C2')], legend=[('C', 'bostadsområden'), ('kryss', 'klustercentrum')])
              + p('En kommun ska bygga två laddstationer för elbilar. Sex bostadsområden är markerade på en karta. Kommunen använder k-means med k = 2 och '
                  'startcentrum C1 (1, 1) och C2 (8, 8). ' + KM))
     a = num('Beräkna avståndet i kvadrat från P3 (3, 5) till C1.', [step('Avstånd i kvadrat: (Δx)² + (Δy)²', '(3 − 1)² + (5 − 1)² = 4 + 16 = 20.')], 20,
@@ -805,9 +805,9 @@ def ws_txt(w, x):
 def t480():
     w, x, b = (2, -3), (1, 0), -1
     assert zz(w, x, 0) == 2 and zz(w, x, b) == 1
-    intro = (neuron_svg([1, 0], w, b, 'En neuron med indata x₁ = 1 och x₂ = 0, vikterna 2 och −3 och bias −1.', akt=None)
-             + p('En app avgör om det är cykelväder. x₁ = 1 om solen skiner och x₂ = 1 om det regnar, annars 0. I dag skiner solen och det regnar inte. '
-                 'Neuronen har vikterna w₁ = 2 och w₂ = −3 och bias b = −1. ' + NEURON))
+    intro = (neuron_svg([1, 0], w, b, 'En neuron med indata x₁ = 1 och x₂ = 0, vikterna 2 och −3 och bias −1.', akt=None,
+                        namn=['1 om solen skiner, annars 0', '1 om det regnar, annars 0'])
+             + p('En app avgör med en neuron om det är cykelväder. I dag skiner solen och det regnar inte.'))
     a = num('Beräkna den viktade summan w₁x₁ + w₂x₂.', [step('Viktad summa: w₁x₁ + w₂x₂', '2 · 1 + (−3) · 0 = 2 + 0 = 2.')], 2,
             'Multiplicera varje indata med sin vikt och lägg ihop.', 1)
     bb = num('Lägg till bias. Vad blir z?', [step('z = viktad summa + b', '2 + (−1) = 1.')], 1, 'Bias är −1.', 1)
@@ -824,10 +824,10 @@ def t480():
 def t481():
     w, b = (1, 2), -5
     assert zz(w, (3, 2), 0) == 7 and zz(w, (3, 2), b) == 2 and zz(w, (1, 1), b) == -2
-    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 1 och 2 och bias −5.', akt=None)
-             + p('Ett spamfilter använder en neuron. x₁ är antalet länkar i mejlet och x₂ antalet gånger ordet ”gratis” står i mejlet. '
-                 'Vikterna är w₁ = 1 och w₂ = 2 och bias är b = −5. ' + NEURON))
-    a = num('Ett mejl har 3 länkar och 2 ”gratis”. Beräkna den viktade summan.', [step('Viktad summa: w₁x₁ + w₂x₂', '1 · 3 + 2 · 2 = 3 + 4 = 7.')], 7,
+    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 1 och 2 och bias −5.', akt=None,
+                        namn=['antalet länkar i mejlet', 'antalet gånger ordet ”gratis” står i mejlet'])
+             + p('Ett spamfilter bedömer mejl med en neuron.'))
+    a = num('Ett mejl har 3 länkar och 2 ”gratis”. Beräkna den viktade summan w₁x₁ + w₂x₂.', [step('Viktad summa: w₁x₁ + w₂x₂', '1 · 3 + 2 · 2 = 3 + 4 = 7.')], 7,
             'Sätt in x₁ = 3 och x₂ = 2.', 1)
     bb = num('Vad blir z för samma mejl?', [step('z = viktad summa + b', '7 + (−5) = 2.')], 2, 'Lägg till bias.', 1)
     c = num('Ett annat mejl har 1 länk och 1 ”gratis”. Beräkna z.', [step('z = w₁x₁ + w₂x₂ + b', '1 · 1 + 2 · 1 + (−5) = 1 + 2 − 5 = −2.')], -2,
@@ -839,9 +839,9 @@ def t481():
 def t482():
     w, x, b = (1, 3), (4, 2), -6
     assert w[1] * x[1] == 6 and zz(w, x, b) == 4
-    intro = (neuron_svg([4, 2], w, b, 'En neuron med indata 4 och 2, vikterna 1 och 3 och bias −6.', akt=None)
-             + p('En filmtjänst använder en neuron för att avgöra om den ska föreslå en film för dig. x₁ är ditt betyg på actionfilmer (4) och x₂ '
-                 'ditt betyg på komedier (2). Vikterna är w₁ = 1 och w₂ = 3 och bias är b = −6. ' + NEURON))
+    intro = (neuron_svg([4, 2], w, b, 'En neuron med indata 4 och 2, vikterna 1 och 3 och bias −6.', akt=None,
+                        namn=['ditt betyg på actionfilmer', 'ditt betyg på komedier'])
+             + p('En filmtjänst använder en neuron för att avgöra om den ska föreslå en film för dig.'))
     a = num('Hur mycket bidrar komedibetyget till den viktade summan, alltså w₂x₂?', [step('Bidrag från x₂: w₂x₂', '3 · 2 = 6.')], 6,
             'Multiplicera komedibetyget med dess vikt.', 1)
     bb = num('Beräkna z.', [step('z = w₁x₁ + w₂x₂ + b', '1 · 4 + 3 · 2 + (−6) = 4 + 6 − 6 = 4.')], 4, 'Lägg ihop båda bidragen och bias.', 1)
@@ -858,19 +858,25 @@ def t482():
 def t483():
     w, b = (4, -5, -2), -1
     assert zz(w, (1, 0, 1), b) == 1 and zz(w, (1, 1, 1), b) == -4
-    intro = (neuron_svg([None, None, None], w, b, 'En neuron med tre indata, vikterna 4, −5 och −2 och bias −1.', akt=None)
-             + p('En robotdammsugare bestämmer om den ska städa. x₁ = 1 om golvet är smutsigt, x₂ = 1 om batteriet är nästan slut och x₃ = 1 om någon är hemma, '
-                 'annars 0. Vikterna är 4, −5 och −2 och bias är −1. Ju större z är, desto mer vill roboten städa. ' + NEURON))
+    intro = (neuron_svg([None, None, None], w, b, 'En neuron med tre indata, vikterna 4, −5 och −2 och bias −1.', akt=None,
+                        namn=['1 om golvet är smutsigt, annars 0', '1 om batteriet är nästan slut, annars 0', '1 om någon är hemma, annars 0'])
+             + p('En robotdammsugare bestämmer med en neuron om den ska städa. Ju större z är, desto mer vill roboten städa.'))
     a = num('Golvet är smutsigt, batteriet är fullt och någon är hemma. Beräkna z.', [step('Indata (x₁, x₂, x₃) = (1, 0, 1)', 'z = 4 · 1 + (−5) · 0 + (−2) · 1 + (−1) = 4 − 2 − 1 = 1.')], 1,
             'Sätt in 1, 0 och 1 och glöm inte bias.', 2)
     bb = num('Nu är batteriet också nästan slut. Beräkna z.', [step('Indata (x₁, x₂, x₃) = (1, 1, 1)', 'z = 4 − 5 − 2 − 1 = −4.')], -4,
              'Nu är alla tre indata 1.', 2)
-    c = fv('Vad betyder det att batteriet har vikten −5?', 'Negativ vikt drar ner z', 'När batteriet är nästan slut minskar z med 5. Roboten vill då mycket mindre städa.',
-           [('Ett nästan tomt batteri gör att roboten hellre låter bli att städa', True, 'En negativ vikt drar ner z.'),
-            ('Roboten städar mer när batteriet är svagt', False, 'Den negativa vikten gör tvärtom.'),
-            ('Batteriet laddas ur fem gånger snabbare', False, 'Vikten säger inget om hur batteriet laddas ur.'),
-            ('En negativ vikt påverkar inte z', False, 'z ändrades från 1 till −4 när batteriet blev svagt.')],
-           'Vad hände med z mellan de två situationerna?', 2)
+    c = fv('Vad betyder det att batteriet har vikten −5?', 'Negativ vikt drar ner z',
+           'När batteriet är nästan slut är x₂ = 1, och då bidrar batteriet med −5 · 1 = −5 till z. Det är det största bidraget av alla tre indata, '
+           'men det drar åt fel håll för städning: z minskar med 5.',
+           [('Ett nästan tomt batteri sänker z med 5, och det väger tyngst av alla tre indata', True,
+             'Vikten −5 har störst belopp, men den drar z nedåt i stället för uppåt.'),
+            ('Batteriet är det minst viktiga indatat, eftersom −5 är den minsta vikten', False,
+             'Det är beloppet som visar hur mycket ett indata påverkar. −5 påverkar mer än 4 och −2, fast åt andra hållet.'),
+            ('Ett nästan tomt batteri sänker z med 5, men bara när golvet är smutsigt', False,
+             'Bidraget −5 · x₂ läggs alltid till när x₂ = 1, oavsett vad de andra indata är.'),
+            ('Ett nästan tomt batteri höjer z med 5, eftersom batteriet har den största vikten', False,
+             'Vikten är negativ, så bidraget −5 · 1 sänker z.')],
+           'Vad händer med z när x₂ går från 0 till 1? Jämför också vikternas storlek.', 2)
     return uppgift('4.83', 'neurala', FAM1, intro, [a, bb, c], 'Positiva vikter drar upp z, negativa drar ner.', ['procedur', 'begrepp'])
 
 
@@ -879,9 +885,9 @@ def t484():
     w, b = (Fr(1, 2), -1), 1
     minst = next(n for n in range(20) if zz(w, (n, 3), b) >= 0)
     assert zz(w, (6, 3), b) == 1 and minst == 4
-    intro = (neuron_svg([None, None], [0.5, -1], b, 'En neuron med två indata, vikterna 0,5 och −1 och bias 1.', akt=None)
-             + p('Skolbiblioteket använder en neuron för att avgöra om en bok ska köpas in. x₁ är antalet elever som har önskat boken och x₂ är priset i hundralappar. '
-                 'Vikterna är w₁ = 0,5 och w₂ = −1 och bias är b = 1. Boken köps in om z är minst 0. ' + NEURON))
+    intro = (neuron_svg([None, None], [0.5, -1], b, 'En neuron med två indata, vikterna 0,5 och −1 och bias 1.', akt=None,
+                        namn=['antalet elever som har önskat boken', 'priset i hundralappar'])
+             + p('Skolbiblioteket använder en neuron för att avgöra om en bok ska köpas in. Boken köps in om z är minst 0.'))
     a = num('Sex elever har önskat en bok som kostar 3 hundralappar. Hur mycket bidrar önskningarna till den viktade summan, alltså w₁x₁?',
             [step('Bidrag från x₁: w₁x₁', '0,5 · 6 = 3.')], 3, 'Multiplicera antalet önskningar med 0,5.', 1)
     bb = num('Beräkna z för boken.', [step('z = w₁x₁ + w₂x₂ + b', '0,5 · 6 + (−1) · 3 + 1 = 3 − 3 + 1 = 1.')], 1, 'Lägg ihop båda bidragen och bias.', 1)
@@ -896,14 +902,23 @@ def t485():
     w, x = (2, 3), (1, 1)
     assert zz(w, x, -6) == -1 and zz(w, x, -4) == 1
     intro = (neuron_svg([1, 1], w, -6, 'En neuron med indata 1 och 1, vikterna 2 och 3 och bias −6.', akt=None)
-             + p('En neuron har vikterna w₁ = 2 och w₂ = 3 och bias b = −6. Indata är x₁ = 1 och x₂ = 1. ' + NEURON))
+             + p('När en neuron tränas ändras vikterna och bias lite i taget. Här följer vi vad som händer när bara bias ändras.'))
+    efter = neuron_svg([1, 1], w, -4, 'Samma neuron efter träningen: indata 1 och 1, vikterna 2 och 3 och nu bias −4.', akt=None)
     a = num('Beräkna z.', [step('z = w₁x₁ + w₂x₂ + b', '2 · 1 + 3 · 1 + (−6) = 5 − 6 = −1.')], -1, 'Viktad summa först, sedan bias.', 1)
-    bb = num('Under träningen ändras bias till −4. Beräkna z igen.', [step('Samma viktade summa, nytt bias', '5 + (−4) = 1.')], 1, 'Bara bias har ändrats.', 1)
-    c = fv('Bias ökade med 2. Hur ändrades z?', 'z ändras lika mycket som bias', 'Bias läggs till direkt, så z ökar med lika mycket som bias, från −1 till 1.',
+    bb = num('Under träningen ändras bias till −4. Figuren visar neuronen efter ändringen. Beräkna z igen.',
+             [step('Samma viktade summa, nytt bias', '5 + (−4) = 1.')], 1, 'Bara bias har ändrats.', 1)
+    c = fv('Under träningen ändrades bias från −6 till −4, alltså en ökning med 2. Hur ändrades z?', 'z ändras lika mycket som bias', 'Bias läggs till direkt, så z ökar med lika mycket som bias, från −1 till 1.',
            [('z ökade med 2', True, 'z gick från −1 till 1.'), ('z ökade med 4', False, 'z gick från −1 till 1, det är en ökning med 2.'),
             ('z minskade med 2', False, 'Ett större bias gör z större.'), ('z ändrades inte', False, 'z gick från −1 till 1.')],
            'Jämför de två z-värdena.', 2)
-    return uppgift('4.85', 'neurala', FAM1, intro, [a, bb, c], 'Bias läggs till den viktade summan.', ['procedur', 'begrepp'])
+    u = uppgift('4.85', 'neurala', FAM1, intro, [a, bb, c], 'Bias läggs till den viktade summan.', ['procedur', 'begrepp'])
+    # Del b får en egen figur med det nya bias (lärarens rapport 2026-11-12: samma bild till alla frågor).
+    fraga = 'Under träningen ändras bias till −4. Figuren visar neuronen efter ändringen. Beräkna z igen.'
+    kort = next(k for k in u['spelDelar'] if k['etikett'] == 'b')
+    assert kort['fraga'].count(f'{fraga}</p>') == 1 and u['t'].count(f'b) {fraga}</p>') == 1
+    kort['fraga'] = kort['fraga'].replace(f'{fraga}</p>', f'{fraga}</p>{efter}')
+    u['t'] = u['t'].replace(f'b) {fraga}</p>', f'b) {fraga}</p>{efter}')
+    return u
 
 
 @ny
@@ -912,8 +927,8 @@ def t486():
     vs = zz(w, x, 0)
     assert vs == 10 and 7 - vs == -3
     intro = (neuron_svg([3, 4], w, '?', 'En neuron med indata 3 och 4, vikterna 2 och 1 och okänt bias.', akt=None)
-             + p('En neuron har indata x₁ = 3 och x₂ = 4 och vikterna w₁ = 2 och w₂ = 1. Bias är okänt, men neuronen räknar ut z = 7. ' + NEURON))
-    a = num('Beräkna den viktade summan.', [step('Viktad summa: w₁x₁ + w₂x₂', '2 · 3 + 1 · 4 = 6 + 4 = 10.')], 10, 'Multiplicera och lägg ihop.', 1)
+             + p('Bias i neuronen är okänt, men neuronen räknar ut z = 7.'))
+    a = num('Beräkna den viktade summan w₁x₁ + w₂x₂.', [step('Viktad summa: w₁x₁ + w₂x₂', '2 · 3 + 1 · 4 = 6 + 4 = 10.')], 10, 'Multiplicera och lägg ihop.', 1)
     bb = num('Vilket värde har bias b?', [step('z = viktad summa + b', '7 = 10 + b.'), step('Lös ut b', 'b = 7 − 10 = −3.')], -3,
              'Vilket tal ska läggas till 10 för att få 7?', 3)
     c = num('Vad skulle z bli om bias i stället var 0?', [step('z = viktad summa + 0', '10 + 0 = 10.')], 10, 'Då är z bara den viktade summan.', 1)
@@ -924,9 +939,9 @@ def t486():
 def t487():
     w, b = (2, 3, -4), -2
     assert zz(w, (1, 1, 0), b) == 3 and zz(w, (1, 0, 1), b) == -4
-    intro = (neuron_svg([None, None, None], w, b, 'En neuron med tre indata, vikterna 2, 3 och −4 och bias −2.', akt=None)
-             + p('En neuron ska avgöra om ett djur på en bild är en katt. x₁ = 1 om djuret har spetsiga öron, x₂ = 1 om det har långa morrhår och x₃ = 1 om det skäller, '
-                 'annars 0. Vikterna är 2, 3 och −4 och bias är −2. Ju större z är, desto mer liknar djuret en katt. ' + NEURON))
+    intro = (neuron_svg([None, None, None], w, b, 'En neuron med tre indata, vikterna 2, 3 och −4 och bias −2.', akt=None,
+                        namn=['1 om djuret har spetsiga öron, annars 0', '1 om djuret har långa morrhår, annars 0', '1 om djuret skäller, annars 0'])
+             + p('En neuron ska avgöra om ett djur på en bild är en katt. Ju större z är, desto mer liknar djuret en katt.'))
     a = num('Djuret har spetsiga öron och långa morrhår och skäller inte. Beräkna z.', [step('Indata (x₁, x₂, x₃) = (1, 1, 0)', 'z = 2 + 3 + 0 − 2 = 3.')], 3,
             'Sätt in 1, 1 och 0.', 1)
     bb = num('Ett annat djur har spetsiga öron men inga långa morrhår, och det skäller. Beräkna z.', [step('Indata (x₁, x₂, x₃) = (1, 0, 1)', 'z = 2 + 0 − 4 − 2 = −4.')], -4,
@@ -975,7 +990,7 @@ def t490():
     w, b = (2, 2), -1
     assert [steg(zz(w, x, b)) for x in [(0, 0), (0, 1), (1, 0), (1, 1)]] == [0, 1, 1, 1]
     intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 2 och 2, bias −1 och en stegfunktion.')
-             + p('Indata är 0 eller 1. Neuronen har vikterna w₁ = 2 och w₂ = 2 och bias b = −1. ' + NEURON + STEG))
+             + p('Neuronens indata är 0 eller 1.'))
     a = num('Beräkna z när x₁ = 1 och x₂ = 0.', [step('z = w₁x₁ + w₂x₂ + b', '2 · 1 + 2 · 0 + (−1) = 1.')], 1, 'Sätt in indata och lägg till bias.', 1)
     bb = num('Vad skickar neuronen ut när x₁ = 1 och x₂ = 0?', [step('Stegfunktionen', 'z = 1 ≥ 0, så utdata är 1.')], 1, 'Använd z från förra frågan.', 1)
     c = num('Vad skickar neuronen ut när båda indata är 0?', [step('Beräkna z', '2 · 0 + 2 · 0 + (−1) = −1.'), step('Stegfunktionen', 'z = −1 < 0, så utdata är 0.')], 0,
@@ -993,9 +1008,9 @@ def t490():
 def t491():
     w, b = (2, 2), -3
     assert [steg(zz(w, x, b)) for x in [(0, 0), (0, 1), (1, 0), (1, 1)]] == [0, 0, 0, 1]
-    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 2 och 2, bias −3 och en stegfunktion.')
-             + p('En dörr öppnas bara om man både visar ett passerkort (x₁ = 1) och slår rätt kod (x₂ = 1). Neuronen har vikterna 2 och 2 och bias −3. '
-                 'Utdata 1 betyder att dörren öppnas. ' + NEURON + STEG))
+    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 2 och 2, bias −3 och en stegfunktion.',
+                        namn=['1 om man visar ett passerkort, annars 0', '1 om man slår rätt kod, annars 0'])
+             + p('En dörr ska öppnas bara om man både visar ett passerkort och slår rätt kod. Utdata 1 betyder att dörren öppnas.'))
     a = num('Beräkna z när båda indata är 1.', [step('z = w₁x₁ + w₂x₂ + b', '2 + 2 − 3 = 1.')], 1, 'Sätt in x₁ = 1 och x₂ = 1.', 1)
     bb = num('Någon visar passerkortet men slår fel kod. Vad skickar neuronen ut?', [step('Beräkna z', '2 · 1 + 2 · 0 − 3 = −1.'), step('Stegfunktionen', 'z = −1 < 0, så utdata är 0. Dörren förblir stängd.')],
              0, 'Här är x₁ = 1 och x₂ = 0.', 2)
@@ -1012,8 +1027,7 @@ def t491():
 def t492():
     w, b = (2, -1), 1
     assert zz(w, (3, 2), b) == 5 and relu(zz(w, (1, 4), b)) == 0
-    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 2 och −1, bias 1 och aktiveringsfunktionen ReLU.', akt='ReLU')
-             + p('En neuron har vikterna w₁ = 2 och w₂ = −1 och bias b = 1. Den använder ReLU. ' + NEURON + RELU))
+    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 2 och −1, bias 1 och aktiveringsfunktionen ReLU.', akt='ReLU'))
     a = num('Beräkna z när x₁ = 3 och x₂ = 2.', [step('z = w₁x₁ + w₂x₂ + b', '2 · 3 + (−1) · 2 + 1 = 6 − 2 + 1 = 5.')], 5, 'Multiplicera, lägg ihop och lägg till bias.', 1)
     bb = num('Vad skickar neuronen ut när x₁ = 3 och x₂ = 2?', [step('ReLU', 'z = 5 är positivt, så utdata är 5.')], 5, 'Använd z från förra frågan.', 1)
     c = num('Vad skickar neuronen ut när x₁ = 1 och x₂ = 4?', [step('Beräkna z', '2 · 1 + (−1) · 4 + 1 = 2 − 4 + 1 = −1.'), step('ReLU', 'z = −1 är negativt, så utdata är 0.')], 0,
@@ -1025,9 +1039,9 @@ def t492():
 def t493():
     w, b = (1, 3), -2
     assert [steg(zz(w, x, b)) for x in [(1, 0), (0, 1), (1, 1)]] == [0, 1, 1] and zz(w, (1, 0), b) == -1
-    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 1 och 3, bias −2 och en stegfunktion.')
-             + p('En app säger ”ta med paraply” när neuronen skickar ut 1. x₁ = 1 om det är molnigt och x₂ = 1 om väderprognosen säger regn, annars 0. '
-                 'Vikterna är w₁ = 1 och w₂ = 3 och bias är b = −2. ' + NEURON + STEG))
+    intro = (neuron_svg([None, None], w, b, 'En neuron med två indata, vikterna 1 och 3, bias −2 och en stegfunktion.',
+                        namn=['1 om det är molnigt, annars 0', '1 om väderprognosen säger regn, annars 0'])
+             + p('En app säger ”ta med paraply” när neuronen skickar ut 1.'))
     a = num('Det är molnigt men prognosen säger inte regn. Beräkna z.', [step('Indata (x₁, x₂) = (1, 0)', 'z = 1 · 1 + 3 · 0 + (−2) = −1.')], -1, 'Sätt in x₁ = 1 och x₂ = 0.', 1)
     bb = num('Vad skickar neuronen ut i den situationen?', [step('Stegfunktionen', 'z = −1 < 0, så utdata är 0. Appen säger inget om paraply.')], 0, 'Är z minst 0?', 1)
     c = num('Det är inte molnigt, men prognosen säger regn. Vad skickar neuronen ut?', [step('Beräkna z', '1 · 0 + 3 · 1 + (−2) = 1.'), step('Stegfunktionen', 'z = 1 ≥ 0, så utdata är 1.')],
@@ -1045,7 +1059,7 @@ def t494():
     ut = lambda b: [steg(zz(w, x, b)) for x in [(0, 0), (0, 1), (1, 0), (1, 1)]]  # noqa: E731
     assert ut(-3) == [0, 0, 0, 1] and ut(-1) == [0, 1, 1, 1] and ut(-5) == [0, 0, 0, 0] and ut(1) == [1, 1, 1, 1]
     intro = (neuron_svg([None, None], w, '?', 'En neuron med två indata, vikterna 2 och 2, okänt bias och en stegfunktion.')
-             + p('En neuron har vikterna w₁ = 2 och w₂ = 2. Indata är 0 eller 1. Man vill välja bias b så att neuronen gör olika saker. ' + NEURON + STEG))
+             + p('Neuronens indata är 0 eller 1. Man vill välja bias b så att neuronen gör olika saker.'))
     a = num('Beräkna den viktade summan när båda indata är 1.', [step('Viktad summa: w₁x₁ + w₂x₂', '2 · 1 + 2 · 1 = 4.')], 4, 'Multiplicera och lägg ihop.', 1)
     bb = fv('Vilket bias gör att neuronen bara skickar ut 1 när båda indata är 1?', 'Pröva varje bias',
             'Med b = −3 ger båda indata z = 4 − 3 = 1 ≥ 0, men ett indata ger z = 2 − 3 = −1 < 0.',

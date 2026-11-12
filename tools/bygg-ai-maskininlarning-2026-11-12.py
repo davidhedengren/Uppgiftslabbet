@@ -217,10 +217,14 @@ def t410():
             ('Modell C', False, 'C klarar bara 57 % av testbilderna.'), ('Det går inte att avgöra', False, 'Testresultaten visar tydligt att B är bäst på nya bilder.')],
            'Vilket resultat visar hur modellen klarar nya bilder?', 2)
     c = fv('Vad kan man göra för att minska överanpassning?', 'Fler och mer varierade exempel', 'Med fler och mer varierade exempel blir det svårare att lära sig utantill.',
-           [('Träna på fler och mer varierade exempel', True, 'Då måste modellen hitta allmänna mönster.'),
-            ('Testa på träningsdatan i stället', False, 'Det döljer bara problemet.'),
-            ('Träna längre på samma data', False, 'Det brukar göra överanpassningen värre.'),
-            ('Göra modellen ännu mer komplex', False, 'En mer komplex modell kan lättare lära sig exemplen utantill.')],
+           [('Träna på fler bilder, tagna i olika väder, ljus och vinklar', True,
+             'Med fler och mer varierade bilder går det inte att lära sig varje bild utantill. Modellen måste hitta det som är gemensamt för skyltarna.'),
+            ('Träna fler varv på samma bilder tills modellen klarar alla träningsbilder', False,
+             'Det gör modellen ännu bättre på just träningsbilderna, alltså mer överanpassad. Modell A klarar redan 99 % av dem.'),
+            ('Byta till en större modell med fler parametrar som kan lära sig fler detaljer', False,
+             'En större modell kan lättare lära sig detaljer som bara finns i träningsbilderna. Det brukar öka överanpassningen.'),
+            ('Flytta de testbilder som modellen klassar fel till träningsdatan', False,
+             'Då blir testet lättare, och testresultatet visar inte längre hur modellen klarar helt nya bilder.')],
            'Vad gör det svårare att lära sig exemplen utantill?', 3, oppen=True)
     return uppgift('4.10', 'ml_grunder', 'Träning, test och överanpassning', intro, [a, b, c], 'Överanpassning: bra på träning, dålig på test.', ['begrepp', 'resonemang'])
 
