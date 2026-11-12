@@ -64,6 +64,8 @@ OVERRIDE = {
     '3.59b': ('C', 3),
     '3.60a': ('C', 3), '3.60b': ('C', 3), '3.60c': ('C', 3),
     '3.61b': ('C', 3),
+    # Mängdträning 2026-11-12: beskärning med stöd, ett beslut (behöver L4 undersökas?)
+    '3.66b': ('C', 3), '3.67b': ('C', 3), '3.68b': ('C', 3), '3.69b': ('C', 3),
     # värdera heuristiken: när kan A* lita på h
     '2.71a': ('A', 4),  # h får aldrig överskatta
     '2.71b': ('A', 4),  # varför Manhattanavståndet inte överskattar
