@@ -10,7 +10,8 @@ const FÄRDIGA={
     'derivata_a_x','begreppet_derivata','naturliga_logaritmer','talet_e','exp_tillampningar',
     'derivatans_definition','deriveringsregler','derivata_polynom','andraderivatan',
     'numerisk_derivering','extrempunkter','derivata_exponential','problemlosning_derivata','primitiva',
-    'integralberakning','integral_tillampningar'],
+    'integralberakning','integral_tillampningar','extremvarde_modellering','primitiva_villkor',
+    'fler_extremvarde'],
   'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
