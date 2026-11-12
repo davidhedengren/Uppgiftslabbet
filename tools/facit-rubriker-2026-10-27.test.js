@@ -8,7 +8,8 @@ const FÄRDIGA={
     'rationella_ekvationer','tangent_sekant','algebra_polynom','rakna_rationella','kontinuitet',
     'gransvarde','polynomfunktioner','rationella_uttryck','polynom','andringskvoter','derivata_potens','tangenter',
     'derivata_a_x','begreppet_derivata','naturliga_logaritmer','talet_e','exp_tillampningar',
-    'derivatans_definition','deriveringsregler','derivata_polynom','andraderivatan'],
+    'derivatans_definition','deriveringsregler','derivata_polynom','andraderivatan',
+    'numerisk_derivering','extrempunkter'],
   'uppgifterma1.js':['tal_rakneordning','negativa_tal'],
 };
 FÄRDIGA['uppgiftermato2.js']=[ // Ma4, fylls på av Ma4-sessionen
