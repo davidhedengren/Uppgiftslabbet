@@ -1,0 +1,292 @@
+[
+  {
+    "course": "fy2",
+    "id": "4.403",
+    "part": null,
+    "good": [
+      [
+        "0.93"
+      ],
+      [
+        "0,93 m"
+      ],
+      [
+        "93 cm"
+      ],
+      [
+        "0.928"
+      ]
+    ],
+    "bad": [
+      [
+        "0.41"
+      ],
+      [
+        "0.52"
+      ],
+      [
+        "1.34"
+      ],
+      [
+        "0.93 kg"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "4.456",
+    "part": null,
+    "good": [
+      [
+        "1457"
+      ],
+      [
+        "1457 °C"
+      ],
+      [
+        "1456.8"
+      ]
+    ],
+    "bad": [
+      [
+        "20"
+      ],
+      [
+        "1700"
+      ],
+      [
+        "1457 m"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.104",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.99",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.101",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.103",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.105",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.172",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "4.454",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.135",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.179",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.69",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.940",
+    "part": 0,
+    "good": [
+      [
+        "50"
+      ],
+      [
+        "50 N"
+      ]
+    ],
+    "bad": [
+      [
+        "20"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.948",
+    "part": 0,
+    "good": [
+      [
+        "70"
+      ],
+      [
+        "70 N"
+      ]
+    ],
+    "bad": [
+      [
+        "40"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.948",
+    "part": 1,
+    "good": [
+      [
+        "0"
+      ],
+      [
+        "0 N"
+      ]
+    ],
+    "bad": [
+      [
+        "40"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.948",
+    "part": 2,
+    "good": [
+      [
+        "70"
+      ],
+      [
+        "70 N"
+      ]
+    ],
+    "bad": [
+      [
+        "90"
+      ]
+    ],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.933",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.938",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.939",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy1",
+    "id": "4.947",
+    "part": null,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.135",
+    "part": 0,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.135",
+    "part": 1,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.179",
+    "part": 0,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.179",
+    "part": 1,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  },
+  {
+    "course": "fy2",
+    "id": "2.179",
+    "part": 2,
+    "good": [],
+    "bad": [],
+    "comparison": false
+  }
+]
