@@ -14,7 +14,7 @@ Reglerna i `agent/` gäller Claude på samma sätt som de gällde Hermes.
 ## Kärnregler (gäller även innan dokumenten ovan har lästs)
 
 - Kör `git status`, `git fetch origin --prune` och jämför med upstream före redigering. Användaren laddar ofta upp filer via GitHubs webb och arbetar från flera datorer.
-- Använd aldrig force push. Gör ingen commit eller push utan användarens godkännande.
+- Använd aldrig force push. Committa och pusha när ett arbete är klart och kontrollerat, utan att fråga först (användarbeslut 2026-11-13).
 - Uppgiftslabbet är master för de sju gemensamma bankerna. Kunskapsgymmet får bara synkade kopior, aldrig egna manuella ändringar. Sedan 2026-11-11 gäller samma sak AI-banken (`uppgifterai.js`, `strukturai.js`), som synkas oförändrad till Kunskapsgymmet som kursen ”Artificiell intelligens nivå 1” (kurs-ID `ai`).
 - Bevara ID:n och radera aldrig uppgifter eller filer utan uttryckligt godkännande.
 - Befintlig metadata och facit är referensmaterial, inte facit. Räkna själv.
@@ -46,7 +46,7 @@ Användaren klistrar in en logg ("Felrapporterade uppgifter · Kunskapsgymmet ·
    - Elevens kommentar om en formulering gäller ofta **fler uppgifter**. Användaren vill då att liknande formuleringar tas bort i alla banker/uppgifter ("och ta bort liknande i andra uppgifter"). Sök brett med regex, räkna förekomster, ändra deterministiskt med ett Python-skript (utf-8, `newline=''`), ändra bara `t` (aldrig facit `s` utan skäl) och kontrollera diffen.
 4. Redigera bara master i Uppgiftslabbet, kopiera därefter de ändrade bankfilerna till `kunskapsgymmet` (`cp`) och kontrollera med `cmp` att de är identiska.
 5. Kontrollera att filen fortfarande är giltig JSON (Python: `json.loads` på `[`…`]`), `git diff --check`, `node --check` på bankfilen och att ingen tom `<p></p>` uppstått.
-6. Fråga användaren innan commit/push. Efter ja: `git fetch`, jämför mot upstream, commit i båda repona (Uppgiftslabbet först), `git pull --rebase` i Kunskapsgymmet om remote ligger före (den får ofta ändringar i `index.html`/`sql/` från andra sessioner), push, hämta och verifiera `0 0` mot upstream.
+6. Committa och pusha när åtgärderna är kontrollerade: `git fetch`, jämför mot upstream, commit i båda repona (Uppgiftslabbet först), `git pull --rebase` i Kunskapsgymmet om remote ligger före (den får ofta ändringar i `index.html`/`sql/` från andra sessioner), push, hämta och verifiera `0 0` mot upstream.
 7. Avsluta med en kort lista per uppgift: vad som ändrades, vad som lämnades orört och varför.
 
 ### Formuleringar och mönster att undvika i uppgifter
@@ -77,7 +77,7 @@ Mål (beslutat 2026-10-01): *moment* = en lektion i planeringen (= `omr`, ett ko
 ## Arbetssätt med användaren
 
 - Svara på svenska, kortfattat; rapportera per uppgift vad som ändrats och vad som inte gjorts.
-- Fråga innan commit/push, men när användaren sagt ja: gör båda repona i ett svep och verifiera mot remote.
+- Committa och pusha utan att fråga när arbetet är klart och kontrollerat. Gör båda repona i ett svep och verifiera mot remote.
 - Verktyg på `Hedav`: Python, Bash och Node fungerar (skriv hjälpskript i sessionens scratchpad/`$TEMP`). Skriv Python-skript med filverktyget, inte via bash-heredoc, eftersom backslashes i LaTeX annars kan halveras. Läs/skriv bankfiler som utf-8; konsolutskrift av å/ä/ö kan se trasig ut utan att filen är det.
 - Instruktionerna ovan ersätter inte kontrollen mot `agent/*.md`; läs dem vid innehållsändringar.
 
