@@ -76,3 +76,19 @@ Uppgiftslabbet har ingen genomgångsfunktion. Där syns det nya området och upp
 - Tester: nytt `tools/fy1-kraftvektorer-2026-11-13.test.js` (6 pass). `fysik1-kapitel4.test.js`
   räknar nu även de flyttade uppgifterna (urvalet utökat till `kraftvektorer` med `omrTidigare` newton1).
   `fysik1-prosa` och `verktygspolicy-2026-10-14` har samma fel som före ändringen (andra uppgifter).
+
+## Tillägg samma dag: tre delmoment efter trigonometri
+
+Användaren: delmomenten ska vara ungefär ”Resultantbestämning utan trigonometri”, ”med trigonometri” och
+”Komposantuppdelning”, så att elever som ännu inte gått igenom trigonometri kan träna enklare vektoruppgifter.
+
+| Delmoment | Antal | Innehåll |
+|---|---:|---|
+| Resultantbestämning utan trigonometri | 55 | Resultant längs en linje (4.913–4.924), alla rutnätsuppgifter utan trigonometri (3.301–3.308, 4.925–4.928, 4.930–4.960) |
+| Resultantbestämning med trigonometri | 14 | 3.331–3.344, 3.366 (cosinus i facit) och 4.929 (vinkeln med tangens) |
+| Komposantuppdelning | 20 | Tidigare ”Krafter i komposanter” (3.286–3.293 utan och 3.314–3.329 med trigonometri) |
+
+Gamla delmomentsnamn ligger i `familjTidigare`, så Kunskapsgymmets `migreraFamiljer` för över elevernas
+resultat. `familjNyckel` har nya nycklar; den tidigare står i `familjNyckelTidigare` när fältet saknades.
+Genomgångarnas `traningsfamilj` i Kunskapsgymmet pekar på de nya namnen. Testet kontrollerar att inget kort
+i delmomentet utan trigonometri har `trigonometri: true` eller sinus, cosinus eller tangens i facit.

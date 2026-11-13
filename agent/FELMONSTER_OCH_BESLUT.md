@@ -3783,3 +3783,5 @@ explicita formeln och låt eleven kontrollera och använda den, eller led eleven
 ## Fy1: område Vektorer i kraftkapitlet, 2026-11-13
 
 [Logg](FY1_KRAFTVEKTORER_2026-11-13.md). Nytt område `kraftvektorer` (”Vektorer”) först i kap 4; nyckeln är inte `vektorer` eftersom kap 3 redan har den och Kunskapsgymmet sparar resultat per `omr`. Vektordelmomenten flyttades från `newton1` med `omrTidigare`. 48 nya uppgifter 4.913–4.960. Friktion (och andra kontaktkrafter från underlaget) ritas längs kontaktytan, aldrig mitt på föremålet. Resultanten är grön i facitfigurer. Pilar i rutnät börjar och slutar på kryss. Skydd: `tools/fy1-kraftvektorer-2026-11-13.test.js`.
+
+Tillägg samma dag: delmomenten i Vektorer är ”Resultantbestämning utan trigonometri”, ”Resultantbestämning med trigonometri” och ”Komposantuppdelning”, så att elever utan trigonometri kan träna. Lägg nya vektoruppgifter med sinus, cosinus eller tangens i delmomentet med trigonometri.

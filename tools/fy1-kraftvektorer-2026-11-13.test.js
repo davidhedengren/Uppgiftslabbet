@@ -43,7 +43,7 @@ test('De befintliga vektordelmomenten är flyttade från newton1 med spårbar hi
   const flyttade = B.filter((t) => t.omr === 'kraftvektorer' && [].concat(t.omrTidigare || []).includes('newton1'));
   assert.equal(flyttade.length, 41);
   for (const t of flyttade) {
-    assert.ok(['Addera krafter som vektorer', 'Krafter i komposanter'].includes(t.familj), t.id);
+    assert.ok(['Resultantbestämning utan trigonometri', 'Resultantbestämning med trigonometri', 'Komposantuppdelning'].includes(t.familj), t.id);
     if (t.familjNyckel) assert.ok(t.familjNyckel.startsWith('kraftvektorer__'), t.id);
   }
   assert.equal(B.filter((t) => t.omr === 'newton1' && ['Addera krafter som vektorer', 'Krafter i komposanter'].includes(t.familj)).length, 0);
@@ -61,7 +61,7 @@ test('48 nya uppgifter, unika id och rätt område', () => {
 });
 
 test('Krafter längs en linje: facit och svar stämmer med figurens krafter', () => {
-  const linje = NYA.map(q).filter((t) => t.familj === 'Resultant längs en linje');
+  const linje = NYA.map(q).filter((t) => [].concat(t.familjTidigare || []).includes('Resultant längs en linje'));
   assert.equal(linje.length, 12);
   for (const t of linje) {
     const aria = t.t.match(/aria-label="([^"]*)"/)[1];
@@ -85,7 +85,7 @@ test('Krafter längs en linje: facit och svar stämmer med figurens krafter', ()
 });
 
 test('Rutnätsuppgifter: komposanter, storlek, vinkel och riktning stämmer med figuren', () => {
-  const rut = NYA.map(q).filter((t) => t.familj === 'Addera krafter som vektorer');
+  const rut = NYA.map(q).filter((t) => [].concat(t.familjTidigare || []).includes('Addera krafter som vektorer'));
   assert.equal(rut.length, 36);
   for (const t of rut) {
     const F = krafterUrFigur(t);
@@ -140,4 +140,21 @@ test('Facit följer facitmallen med steglista, formel i rubrik och svarsrad', ()
     for (const del of t.spelDelar || []) assert.match(del.s, /<strong>Svar:<\/strong>/, `${id} ${del.etikett}`);
     assert.doesNotMatch(t.s + t.t, /None|null|undefined/, id);
   }
+});
+
+test('Delmomenten i Vektorer: utan trigonometri, med trigonometri och komposantuppdelning', () => {
+  const v = B.filter((t) => t.omr === 'kraftvektorer');
+  const fam = {};
+  for (const t of v) fam[t.familj] = (fam[t.familj] || 0) + 1;
+  assert.deepEqual(fam, { 'Resultantbestämning utan trigonometri': 55, 'Resultantbestämning med trigonometri': 14, Komposantuppdelning: 20 });
+  // Inget kort i delmomentet utan trigonometri kräver trigonometri.
+  for (const t of v.filter((x) => x.familj === 'Resultantbestämning utan trigonometri')) {
+    assert.notEqual(t.trigonometri, true, t.id);
+    assert.ok(!(t.spelDelar || []).some((d) => d.trigonometri), t.id);
+    assert.doesNotMatch(t.s, /\\(?:sin|cos|tan)\b/, t.id);
+  }
+  for (const t of v.filter((x) => x.familj === 'Resultantbestämning med trigonometri')) {
+    assert.match(t.s, /\\(?:sin|cos|tan)\b/, t.id);
+  }
+  for (const t of v) assert.ok([].concat(t.familjTidigare || []).length >= 1, t.id);
 });
