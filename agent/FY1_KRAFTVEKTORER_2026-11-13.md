@@ -92,3 +92,17 @@ Gamla delmomentsnamn ligger i `familjTidigare`, så Kunskapsgymmets `migreraFami
 resultat. `familjNyckel` har nya nycklar; den tidigare står i `familjNyckelTidigare` när fältet saknades.
 Genomgångarnas `traningsfamilj` i Kunskapsgymmet pekar på de nya namnen. Testet kontrollerar att inget kort
 i delmomentet utan trigonometri har `trigonometri: true` eller sinus, cosinus eller tangens i facit.
+
+## Textändringar (användarbeslut 2026-11-13)
+
+Gjorda med `tools/fy1-kraftvektorer-text-2026-11-13.py` (bara `omr = kraftvektorer`, idempotent) och i
+Kunskapsgymmets `typuppgifter-fy1.js`:
+
+- Punkter och vektorer skrivs \((30,\,20)\) i stället för \((30;\ 20)\): 73 ställen i banken och 3 i genomgången.
+- Facitrubriken ”Kraftresultant längs en linje” heter ”Resulterande kraft: \(F_R=F_1+F_2+\dots\)” (12 uppgifter).
+- ”Addera sedan med tecken.” heter ”Sedan adderar du alla krafter (tänk på tecknen).” (12). Alternativkommentaren
+  ”Resultanten är summan av alla krafter med tecken.” heter ”Resultanten får du genom att addera alla krafter
+  (tänk på tecknen).” (3).
+
+”Ange med tecken” i komposantfrågorna och ”(Svara med tecken.)” är kvar, eftersom de säger hur svaret ska
+skrivas. Punkter med semikolon i andra områden (kap 2–3) är inte ändrade.
