@@ -3769,3 +3769,13 @@ figur. Flervalsalternativ ska vara luriga, ungefär lika långa och bygga på va
 ett formelblad (`formelblad/ai.pdf`). Ma5: heltalskombination av sgd (Bézout) ingår inte i kursens läroböcker
 och används inte. Ma2 3.439: ett mått som gäller en hel sida ska ha en måttlinje över hela sidan. Kunskapsgymmet
 godtar ”A∩B = {5, 7}” som mängdsvar och ”12” för klockslaget 12.00. Skydd: `tools/fellogg-2026-11-12-1841.test.js`.
+
+## Felrapporter 2026-11-13 09:39: dopplereffekt i Fy2, separabla ekvationer och explicita formler ur rekursion i Ma5
+
+[Genomgång](FELRAPPORTER_2026-11-13_0939.md). Fy2 tar inte upp dopplereffekten, varken för ljud eller ljus.
+Använd ekolod, ekolokalisering, gångtid och våglängd i stället. Rödförskjutning med v ≈ zc och Hubbles lag
+ingår i kosmologin och ska inte kallas dopplereffekt. Ma5: separabla differentialekvationer används inte. Ge
+lösningsformen och låt eleven bestämma konstanten och kontrollera genom derivering (4.358). Ma5 tar inte upp
+den allmänna metoden från rekursion till explicit formel (jämviktsvärde och geometrisk avvikelse). Ge den
+explicita formeln och låt eleven kontrollera och använda den, eller led eleven till ett mönster i frågan
+(2.56, 2.180). Skydd: `tools/fellogg-2026-11-13-0939.test.js`.

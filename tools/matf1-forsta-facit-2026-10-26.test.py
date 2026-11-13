@@ -21,7 +21,7 @@ def ode(id,rate,source=0,initial=None):
   assert C in f.free_symbols and s.diff(f,C)!=0 and s.diff(f,C,2)==0,id
  seen.add(id)
 for id,k,src,init in [
- ('4.48',2,0,(0,5)),('4.03',3,0,None),('4.358',3*x,0,None),('4.50',-s.Rational(1,2),0,(0,12)),
+ ('4.48',2,0,(0,5)),('4.03',3,0,None),('4.358',3*x,0,(0,4)),('4.50',-s.Rational(1,2),0,(0,12)),
  ('4.67',-4,0,None),('4.68',s.Rational(3,10),0,(0,7)),('4.124',2,0,(0,3)),('4.125',-s.Rational(1,2),0,(0,8)),
  ('4.362',-2,5,None),('4.09',3,-x,None),('4.21',2,s.exp(3*x),None),('4.51',-2,6,None),('4.71',-2,10,(0,1)),
  ('4.94',-2,8,None),('4.95',-3,6,(0,5)),('4.142',2,8,None),('4.143',s.Rational(1,2),-3,None),('4.145',2,4*x-1,None),
@@ -64,6 +64,8 @@ for id,q in Q.items():
 for id,tol in [('4.515',5),('4.516',.005),('4.556',.05),('4.559',.0005),('4.560',.0005),('4.517',.05)]:assert Q[id]['tolerans']==tol
 assert all(Q[id]['tolerans']==0 for id in ['4.69','4.120','4.396','4.397','4.557'])
 assert 'begynnelsevillkoren' not in Q['4.396']['ledtrad']
-assert 'C får också vara 0' in Q['4.358']['s']
+# 4.358 löses inte längre med separation (felrapport 2026-11-13 09:39, fellogg-2026-11-13-0939.test.js):
+# lösningsformen ges och eleven bestämmer C ur y(0) = 4 och kontrollerar genom derivering.
+assert 'kedjeregeln' in Q['4.358']['s'] and 'separab' not in Q['4.358']['t']
 assert '1500e' in Q['4.554']['spelDelar'][1]['t']
 print('68 uppgifter: lösningar, startvillkor, fria konstanter, numeriska mål, alternativ och delkort OK.')
