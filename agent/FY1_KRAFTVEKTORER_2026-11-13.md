@@ -106,3 +106,28 @@ Kunskapsgymmets `typuppgifter-fy1.js`:
 
 ”Ange med tecken” i komposantfrågorna och ”(Svara med tecken.)” är kvar, eftersom de säger hur svaret ska
 skrivas. Punkter med semikolon i andra områden (kap 2–3) är inte ändrade.
+
+## Felrapporter 2026-11-13 10:49 och 18 nya komposantuppgifter
+
+- **Fy1 4.940 a** (lärare: ”nivå 2”): att läsa av komposanter för två snea krafter är nivå 2. Samma ändring för a och b i
+  4.933, 4.938, 4.939, 4.941, 4.947, 4.948, 4.951, 4.952 och 4.956. Krafter längs rutnätets linjer behåller nivå 1.
+- **Fy1 4.948 b** (”ha dem som a), b), c)”): uppgiften är korrekt byggd som deluppgiftskedja (samma inledning och figur,
+  sedan bara delens fråga). I elevernas träning visas a → b → c → d i följd. Kunskapsgymmets admin-bläddring
+  (`state.adminBlad`) visar däremot varje delkort för sig. **Kvar att utreda:** om bläddringsläget också ska visa kedjan.
+- **Fy2 2.179 c**: ”låter mörkast” och ”klang” krävde musikvana. Ny fråga: vilken pipa ger lägst ton, och finns någon
+  frekvens som båda kan ge? Svar: den täppta (131 Hz); ingen gemensam frekvens (jämna mot udda multiplar av 131 Hz).
+- **Fy2 2.135**: piplängderna står nu längs piporna med måttlinjer i uppgift och delkort.
+- **Fy2 2.69**: pulsernas höjder (4,0 cm och 3,0 cm) står i figuren, frågan gäller punkten där de markerade punkterna
+  möts (+1,0 cm) och en skiss. Facit har en figur med summan punkt för punkt; lägsta punkt ungefär −2,2 cm.
+
+Nya uppgifter i Komposantuppdelning (4.961–4.978):
+
+| ID | Innehåll | Nivå |
+|---|---|---|
+| 4.961–4.968 | Läs av \(F_x\), \(F_y\) och \(F\) i rutnät med olika skalor (2 N, 5 N, 10 N, 20 N, 50 N, 100 N, 1 kN per ruta) | a, b 1; c 2 |
+| 4.969–4.972 | Flerval: vilka tecken har \(F_x\) och \(F_y\)? | 1 |
+| 4.973–4.978 | \(F_x=F\cos v\), \(F_y=F\sin v\) ur given kraft och vinkel (resväska, kälke, gräsklippare, koppel, kran, båtlina) | 3, `trigonometri: true` |
+
+Uppgifter med trigonometri har träningsnivå 3, så elever utan trigonometri möter dem senare. SVG-granskningen: en kvarvarande
+heuristisk varning (4.978: vinkeletiketten 20° ligger inom den flacka pilens omslutande rektangel; bilden är tydlig).
+Testet `tools/fy1-kraftvektorer-2026-11-13.test.js` kontrollerar komposanter, tecken och trigonometrivärden.

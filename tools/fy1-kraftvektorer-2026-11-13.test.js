@@ -146,7 +146,7 @@ test('Delmomenten i Vektorer: utan trigonometri, med trigonometri och komposantu
   const v = B.filter((t) => t.omr === 'kraftvektorer');
   const fam = {};
   for (const t of v) fam[t.familj] = (fam[t.familj] || 0) + 1;
-  assert.deepEqual(fam, { 'Resultantbestämning utan trigonometri': 55, 'Resultantbestämning med trigonometri': 14, Komposantuppdelning: 20 });
+  assert.deepEqual(fam, { 'Resultantbestämning utan trigonometri': 55, 'Resultantbestämning med trigonometri': 14, Komposantuppdelning: 38 });
   // Inget kort i delmomentet utan trigonometri kräver trigonometri.
   for (const t of v.filter((x) => x.familj === 'Resultantbestämning utan trigonometri')) {
     assert.notEqual(t.trigonometri, true, t.id);
@@ -156,5 +156,57 @@ test('Delmomenten i Vektorer: utan trigonometri, med trigonometri och komposantu
   for (const t of v.filter((x) => x.familj === 'Resultantbestämning med trigonometri')) {
     assert.match(t.s, /\\(?:sin|cos|tan)\b/, t.id);
   }
-  for (const t of v) assert.ok([].concat(t.familjTidigare || []).length >= 1, t.id);
+  for (const t of v.filter((x) => !/^4\.9[67]\d$/.test(x.id))) assert.ok([].concat(t.familjTidigare || []).length >= 1, t.id);
+});
+
+// Komposantuppgifter 4.961–4.978 (2026-11-13, andra omgången)
+const KOMP = [];
+for (let n = 961; n <= 978; n++) KOMP.push(`4.${n}`);
+
+test('Komposantuppgifter i rutnät: komposanter och storlek stämmer med figur och skala', () => {
+  for (const id of KOMP.slice(0, 8)) {
+    const t = q(id);
+    assert.equal(t.familj, 'Komposantuppdelning', id);
+    assert.equal(t.trigonometri, false, id);
+    const skala = t.t.match(/1 ruta motsvarar (\d+(?:,\d+)?) (k?N)/);
+    const u = Number(skala[1].replace(',', '.')) * (skala[2] === 'kN' ? 1000 : 1);
+    const m = t.t.match(/går från punkten (\d+) rut(?:a|or) åt (höger|vänster) och (\d+) rut(?:a|or) (uppåt|nedåt)/);
+    const fx = (m[2] === 'höger' ? 1 : -1) * +m[1] * u, fy = (m[4] === 'uppåt' ? 1 : -1) * +m[3] * u;
+    const k = skala[2] === 'kN' ? 1000 : 1;
+    assert.equal(t.rättSvar[0], fx / k, id);
+    assert.equal(t.rättSvar[1], fy / k, id);
+    assert.ok(Math.abs(t.rättSvar[2] - Math.hypot(fx, fy) / k) < 1e-3, id);
+    assert.equal(t.spelDelar.map((d) => d.traningsniva).join(''), '112', id);
+    assert.doesNotMatch(t.spelDelar[0].s, /F_y/, id);
+    for (const d of t.spelDelar) assert.ok(d.t.startsWith(t.spelIntro), `${id} ${d.etikett}`);
+  }
+});
+
+test('Teckenflerval: rätt alternativ följer kraftens riktning', () => {
+  for (const id of KOMP.slice(8, 12)) {
+    const t = q(id);
+    assert.equal(t.svarstyp, 'alternativ');
+    const m = t.t.match(/går från punkten \d+ rut(?:a|or) åt (höger|vänster) och \d+ rut(?:a|or) (uppåt|nedåt)/);
+    const ratt = t.alternativ.filter((a) => a.ratt);
+    assert.equal(ratt.length, 1, id);
+    const x = m[1] === 'höger' ? 'positiv' : 'negativ', y = m[2] === 'uppåt' ? 'positiv' : 'negativ';
+    const txt = ratt[0].txt;
+    if (x === y) assert.match(txt, new RegExp(`är ${x}a\\.$`), id);
+    else assert.match(txt, new RegExp(`F_x\\\\\\) är ${x} och .*F_y\\\\\\) är ${y}`), id);
+    assert.equal(t.alternativ.length, 4);
+  }
+});
+
+test('Komposanter med trigonometri: F·cos v och F·sin v, träningsnivå 3', () => {
+  for (const id of KOMP.slice(12)) {
+    const t = q(id);
+    assert.equal(t.trigonometri, true, id);
+    assert.equal(t.traningsniva, 3, id);
+    const F = Number(t.t.match(/(\d+(?:,\d+)?) k?N/)[1].replace(',', '.'));
+    const v = Number(t.t.match(/(\d+)°/)[1]) * Math.PI / 180;
+    assert.ok(Math.abs(t.rättSvar[0] - F * Math.cos(v)) < 1e-3, id);
+    assert.ok(Math.abs(t.rättSvar[1] - F * Math.sin(v)) < 1e-3, id);
+    assert.match(t.s, /\\cos/, id);
+    assert.match(t.s, /\\sin/, id);
+  }
 });
