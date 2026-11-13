@@ -3779,3 +3779,7 @@ lösningsformen och låt eleven bestämma konstanten och kontrollera genom deriv
 den allmänna metoden från rekursion till explicit formel (jämviktsvärde och geometrisk avvikelse). Ge den
 explicita formeln och låt eleven kontrollera och använda den, eller led eleven till ett mönster i frågan
 (2.56, 2.180). Skydd: `tools/fellogg-2026-11-13-0939.test.js`.
+
+## Fy1: område Vektorer i kraftkapitlet, 2026-11-13
+
+[Logg](FY1_KRAFTVEKTORER_2026-11-13.md). Nytt område `kraftvektorer` (”Vektorer”) först i kap 4; nyckeln är inte `vektorer` eftersom kap 3 redan har den och Kunskapsgymmet sparar resultat per `omr`. Vektordelmomenten flyttades från `newton1` med `omrTidigare`. 48 nya uppgifter 4.913–4.960. Friktion (och andra kontaktkrafter från underlaget) ritas längs kontaktytan, aldrig mitt på föremålet. Resultanten är grön i facitfigurer. Pilar i rutnät börjar och slutar på kryss. Skydd: `tools/fy1-kraftvektorer-2026-11-13.test.js`.

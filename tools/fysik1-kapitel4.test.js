@@ -71,7 +71,7 @@ for(const[id,F,angle]of [['3.314',25,58],['3.315',17,25],['3.316',25,74],['3.321
 for(const[id,x,y]of [['3.319',4,2],['3.327',-2,5],['3.328',2,-5],['3.329',-3,2],['3.331',6,4],['3.332',6,1],['3.338',-3,5],['3.339',-2,-4]])newton1.push([id,(deg(Math.atan2(y,x))+360)%360]);
 for(const[id,F1,a1,F2,a2]of [['3.334',19,0,27,51],['3.335',19,0,27,129],['3.336',24,33,22,90],['3.337',18,0,18,225],['3.341',32,18,37,71],['3.342',23,65,21,141],['3.343',20,300,20,210],['3.344',330,52,361,341]]){const x=F1*cos(a1)+F2*cos(a2),y=F1*sin(a1)+F2*sin(a2);newton1.push([id,[Math.hypot(x,y),(deg(Math.atan2(y,x))+360)%360]]);}
 test('Kapitel 4 newton1: samtliga numeriska svar kontrolleras från oberoende kraftbalanser och avlästa vektorer',()=>{
- const tasks=c.window.BANK.filter(x=>x.kap===4&&x.omr==='newton1'&&x.rättSvar!=null);assert.equal(new Set(newton1.map(x=>x[0])).size,tasks.length);
+ const tasks=c.window.BANK.filter(x=>x.kap===4&&(x.omr==='newton1'||(x.omr==='kraftvektorer'&&[].concat(x.omrTidigare||[]).includes('newton1')))&&x.rättSvar!=null);assert.equal(new Set(newton1.map(x=>x[0])).size,tasks.length);
  for(const[id,expect]of newton1){const t=q(id),a=Array.isArray(expect)?expect:[expect],b=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(a.length,b.length,id);
  a.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-b[i])<=(tol||0)+Number.EPSILON*16*Math.max(Math.abs(v),Math.abs(b[i])),`${id} del ${i}: ${v} jämfört med ${b[i]}`);});}
 });
