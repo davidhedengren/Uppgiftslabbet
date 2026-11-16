@@ -21,9 +21,9 @@ test('Fy2: uppgifter med bara magnetfält har ingen ledtråd om elektrisk kraft 
  for(const id of ['3.11','3.53','4.34','4.35','4.57'])a.match(fy2.find(x=>x.id===id).ledtrad,/centripetalkraft/,id);
 });
 
-test('Ma5 2.626 c: facit oförändrat, frågan kräver π i svaret',()=>{
+test('Ma5 2.626 c: facit och frågetext oförändrade (”Svara exakt” räcker)',()=>{
  const u=ma5.find(x=>x.id==='2.626'),c=u.spelDelar[2];
  a.equal(u.rättSvar[2],'3145725*pi');a.equal(3*(4**10-1),3145725);
- for(const x of [u.t,c.fraga,c.t])a.match(x,/Svara exakt, alltså med \\\(\\pi\\\) i svaret\./);
+ for(const x of [u.t,c.fraga,c.t]){a.match(x,/alla tio cirklarna\. Svara exakt\./);a.doesNotMatch(x,/alltså med/);}
  a.ok(Math.abs(3145725*Math.PI-9882586.55)<0.01,'decimaltalet i rapporten är inte exakt');
 });

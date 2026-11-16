@@ -82,14 +82,16 @@ def satt_ledtradar(u):
 
 
 def ma5_2626(u):
-    gammal = 'Bestäm den sammanlagda arean av alla tio cirklarna. Svara exakt.'
-    ny = r'Bestäm den sammanlagda arean av alla tio cirklarna. Svara exakt, alltså med \(\pi\) i svaret.'
+    # Ingen ändring av uppgiften: ”Svara exakt” räcker, eleven hade fel. En tidigare version av skriptet lade till
+    # ”alltså med π i svaret”; den återställs här till originaltexten.
+    tillagd = r'Bestäm den sammanlagda arean av alla tio cirklarna. Svara exakt, alltså med \(\pi\) i svaret.'
+    original = 'Bestäm den sammanlagda arean av alla tio cirklarna. Svara exakt.'
     c = u['spelDelar'][2]
-    u['t'] = u['t'].replace(gammal, ny)
-    c['fraga'] = c['fraga'].replace(gammal, ny)
-    c['t'] = c['t'].replace(gammal, ny)
+    u['t'] = u['t'].replace(tillagd, original)
+    c['fraga'] = c['fraga'].replace(tillagd, original)
+    c['t'] = c['t'].replace(tillagd, original)
     for x in (u['t'], c['fraga'], c['t']):
-        assert ny in x and gammal + '<' not in x
+        assert original in x and 'alltså med' not in x
 
 
 def main():
