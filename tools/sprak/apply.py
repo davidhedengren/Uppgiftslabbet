@@ -67,6 +67,33 @@ def main():
         ll = li_lista(t0)
         var_lista = (intro0 is not None and ll and norm(ll[0]) == norm(intro0) and len(ll[1]) == len(delar)
                      and all(norm(x) == norm(d.get("fraga")) for x, d in zip(ll[1], delar)) and not ll[2].strip())
+        # ers: handskrivna delsträngsbyten [(gammal, ny)] i t, spelIntro och delkortens t/fraga.
+        # Används när bara en mening ska bort eller skrivas om. Varje byte måste träffa minst en gång.
+        if p.get("ers"):
+            u2 = json.loads(json.dumps(u))
+            for a, c in p["ers"]:
+                traff = 0
+                for obj, key in [(u2, "t"), (u2, "spelIntro")] + [(d, k) for d in (u2.get("spelDelar") or []) for k in ("t", "fraga")]:
+                    if isinstance(obj.get(key), str) and a in obj[key]:
+                        obj[key] = obj[key].replace(a, c); traff += 1
+                if not traff:
+                    raise ValueError(f"{id_}: ers hittade inte «{a[:50]}»")
+            p = dict(p)
+            if u2.get("t") != u.get("t") and "t" not in p and "li" not in p and "fore" not in p:
+                p["t"] = till_platshallare(u2["t"])[0]
+            if u2.get("spelIntro") != u.get("spelIntro") and "intro" not in p:
+                p["intro"] = till_platshallare(u2["spelIntro"])[0]
+            dd = dict(p.get("d") or {})
+            for i, (d0, d2) in enumerate(zip(u.get("spelDelar") or [], u2.get("spelDelar") or [])):
+                et = d0.get("etikett") or chr(97 + i)
+                q = dict(dd.get(et) or {})
+                if d2.get("t") != d0.get("t") and "t" not in q:
+                    q["t"] = till_platshallare(d2["t"])[0]
+                if d2.get("fraga") != d0.get("fraga") and "f" not in q:
+                    q["f"] = d2["fraga"]
+                if q:
+                    dd[et] = q
+            p["d"] = dd
         # spelIntro
         intro1 = intro0
         if "intro" in p:
