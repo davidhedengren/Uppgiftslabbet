@@ -27,6 +27,10 @@ Inled varje nytt arbete med ”För det här jobbet föreslår jag …” (Sonne
 
 Avsnitt 7 i ARBETSINSTRUKTION (Luna/Sol/Astra) översätts så här: använd deterministiska verktyg först, starta inga subagenter för rutinkontroller, och fråga användaren innan en bred AI-granskning av många uppgifter.
 
+## Pågående: språkomskrivning av alla uppgiftstexter (användarbeslut 2026-11-17)
+
+Uppgiftstexterna skrivs om för hand, område för område, så att de låter som lärarens egna prov. Rättningsinstruktioner läggs i `kgInstruktion` och visas bara i Kunskapsgymmet. Skriv aldrig ”svara med tecken”. Användaren vill att arbetet fortsätter område efter område utan att stanna. **Läs och följ `agent/SPRAKOMSKRIVNING_INSTRUKTION.md`**, som har stilguide, verktyg (`tools/sprak/`), arbetsgång och lägestabell. Ny text i uppgifter, även i andra arbeten, ska följa stilguiden där.
+
 ## Miljö på datorn `Hedav`
 
 - Repona ligger i `C:\Users\Hedav\code\Uppgiftslabbet` och `C:\Users\Hedav\code\kunskapsgymmet`.

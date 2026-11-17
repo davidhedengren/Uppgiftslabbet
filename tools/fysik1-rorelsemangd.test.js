@@ -122,9 +122,9 @@ test('Kortens förutsättningar, riktningar och ändrade frågetyper hänger iho
  assert.equal(q('5.365').spelDelning,'deluppgifter');assert.equal(q('5.365').spelDelar.length,2);
  assert.match(q('5.365').spelDelar[1].t,/8,0 m\/s/);assert.match(q('5.365').spelDelar[1].t,/20 m\/s/);
  assert.match(q('5.381').spelDelar[1].t,/−2,84 kg·m\/s/);assert.match(q('5.386').spelDelar[1].t,/9,00 Ns/);
- assert.match(q('5.387').t,/oförändrad under hela tiden/);
- assert.match(q('5.388').spelDelar[2].t,/53 respektive 48/);assert.doesNotMatch(q('5.388').spelDelar[2].t,/1200|1800/);
- assert.match(q('5.395').spelDelar[2].t,/konstant acceleration/);assert.match(q('5.395').spelDelar[2].t,/från vila/);
+ assert.match(q('5.387').t,/Kraften är riktad åt vänster/);assert.match(q('5.387').t,/konstant kraft/);
+ assert.match(q('5.388').spelDelar[2].t,/53 m\/s och 48 m\/s/);assert.doesNotMatch(q('5.388').spelDelar[2].t,/1200|1800/);
+ assert.match(q('5.395').spelDelar[2].t,/konstant acceleration/);assert.match(q('5.395').spelDelar[2].t,/släpps/);
  assert.doesNotMatch(q('5.396').t,/brunt|8,0 N/);
  assert.match(q('5.397').spelDelar[2].t,/0,0833 s/);
  assert.equal(q('5.399').svarEnhet[2],null);assert.equal(q('5.400').svarEnhet[2],'kg');
