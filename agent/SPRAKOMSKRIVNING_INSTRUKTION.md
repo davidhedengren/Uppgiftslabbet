@@ -146,6 +146,15 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-17 | fy1 | rorelsemangd | 92 av 93 | 5.605 lät redan naturlig. 5.16 fick facitjustering. Fyra test uppdaterades eftersom de låste gammal ordalydelse med oförändrad innebörd. 5.603 och 5.608 fick `visaAlternativ`. |
 | 2026-11-17 | fy1 | kollisioner | 121 av 121 | Stöt-förbehållen är borttagna. Villkor som påverkar svaret står kvar, till exempel tyngdkraftens impuls i 5.448 och ”nytt försök … stilla före hoppet” i 5.432. Testerna `fysik1-kollisioner` och `fysik-felrapporter-2026-10-08` uppdaterades: teckenriktningen kontrolleras nu i `kgInstruktion`. |
 | 2026-11-17 | ma1 | enhetsbyten | 107 av 149 | ”Skriv svaret som ett vanligt tal, inte i tiopotensform.” borttaget; kvar i `kgInstruktion` bara för 0.560 och 0.562 (formatet decimalform godtar inte tiopotens). 0.565 fick tolerans 0,05 när kravet på en decimal togs bort. 0.540 behåller ”kvadratcentimeter … kvadratmeter” (låst av `ma1-dolda-pastaenden`). 42 uppgifter lät redan naturliga. |
+| 2026-11-17 | ma1 | prefix | 63 av 96 | Elva ”Två tunna skikt …” och tio ”tolkas det av misstag som …” fick egna sammanhang (förpackning, väggskiva, lysdiod …). ”Vanligt tal” kvar i `kgInstruktion` bara för 0.244 och 0.246. |
+| 2026-11-17 | ma1 | tiopotenser_prefix | 38 av 76 | Definitionen 1 ≤ a < 10 och ”Ange a och n separat.” är borttagna; fälten förklaras i `kgInstruktion`. Elva ”En elev skriver … Vilken korrigering bevarar talets värde?” har namn och en direkt fråga. |
+| 2026-11-17 | ma1 | proportionalitet_grunder | 35 av 81 | ”(Svara i …)” och avrundningskrav borttagna; ”Hur många kilometer …?” där enheten är poängen. Ja/nej-frågor har ”Motivera ditt svar.” och ”Börja svaret med ja eller nej.” i `kgInstruktion`. 0.990 har ”Avrunda till hela gram.” i `kgInstruktion`, eftersom facit är avrundat. 0.991 och 0.992 behåller avrundningen i frågan (”Avrunda till …”), eftersom `felrapporter-2026-10-11-1902` låser den. |
+| 2026-11-17 | ma1 | brakform | 18 av 54 | ”Ange a och b.” och ”Välj ett alternativ.” borttagna. |
+| 2026-11-17 | ma1 | forhallanden | 13 av 63 | ”(Svara i …)” borttaget, ”sammanlagt” heter ”totalt”, 0.829 skrivet om (päron byts mot äpplen). |
+| 2026-11-17 | ma1 | brakrakning | 45 av 135 | ”Ange ett exakt värde.” ersatt av `kgInstruktion` ”Svara exakt med ett bråk eller ett heltal.” Drillserierna 0.1266–0.1289 är oförändrade. |
+| 2026-11-17 | ma1 | negativa_tal | 13 av 120 | 0.62 behåller ”och skriver −7 · (−5) = 35” (låst av `ma1-kap0-mangdtraning`). |
+| 2026-11-17 | ma1 | tal_rakneordning | 10 av 108 | Namn i stället för ”en elev”, inga ”Välj ett alternativ.”. |
+| 2026-11-17 | ma1 | decimaltal_positionssystem, avrundning, overslag_grunder, andelar | 5 av 100, 7 av 71, 12 av 65, 13 av 78 | Avrundningskrav som rättningen behöver (facit avrundat) står i `kgInstruktion`. ”Anta” heter ”Antag”. |
 
 ### Fler lärdomar från kollisioner
 
