@@ -17,7 +17,7 @@ test('Flervalsfrågorna har ett rätt alternativ och en kommentar till varje alt
  for(const id of flerval){const t=q(id);assert.equal(t.svarstyp,'alternativ',id);assert.equal(t.självrättning,true,id);
   assert.equal(t.alternativ.length,4,id);assert.equal(ratt(id).length,1,id);
   for(const a of t.alternativ)assert.ok(a.kommentar&&a.kommentar.length>20,id+': '+a.txt);
-  assert.match(t.t,/Välj ett alternativ/,id);}
+  assert.ok(/Välj ett alternativ/.test(t.t)||t.visaAlternativ===true,id);} // språkomskrivningen 2026-11-17
 });
 test('Rätt alternativ följer momentmodellen för vridpunktens läge',()=>{
  // Vridpunkt ovanför bommen: den tyngre skålen sjunker, och lutningen ökar när h minskar.

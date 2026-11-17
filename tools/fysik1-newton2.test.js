@@ -88,7 +88,7 @@ test('Kort med ändrade kraftlägen visar egna förutsättningar och använder i
  assert.match(q('4.93').spelDelar[3].t,/900 m\/s/);assert.match(q('4.653').spelDelar[3].t,/5,0° och konstant fart/);
  for(const i of [1,2])assert.doesNotMatch(q('4.569').spelDelar[i].t,/säcken/i);
  assert.match(q('4.53').spelDelar[2].t,/39,108 N/);assert.equal(q('4.5').spelDelar[0].traningsniva,1);
- assert.doesNotMatch(q('4.5').spelDelar[0].t,/\\\\\(/);assert.match(q('4.568').t,/Båda snördelarna är vågräta/);
+ assert.doesNotMatch(q('4.5').spelDelar[0].t,/\\\\\(/);assert.match(q('4.568').t,/Båda snördelarna är horisontella/);
  for(const id of ['4.662','4.667']){assert.match(q(id).s,/s_1=|v\^2=/);assert.match(q(id).s,/s_2=|s_\{\\text\{broms\}\}=/);}
 });
 test('Avrundning och kraftmodell får inte motsägas av gamla korttexter eller ledtrådar',()=>{

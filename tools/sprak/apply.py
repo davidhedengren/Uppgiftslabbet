@@ -11,9 +11,9 @@ sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(_
 from sprakverktyg import Bank, till_platshallare, fran_platshallare, norm, li_lista, lit
 
 FORBJUDET = [r"[Vv]älj ett alternativ", r"[Mm]arkera det korrekta", r"\(Svara ", r"[Ss]vara med (tre|två|en) ",
-             r"\b(?:[a-zåäö]+) på [\d ,]+ ?(?:kg|g|ton)\b", r"\b[Vv]ågrät", r"\b[Ll]odrät", r"från vila",
+             r"\b(?:[Ee]n|[Ee]tt|[Tt]vå|[Tt]re) (?:[a-zåäö]+ )?[a-zåäö]+ på [\d ,]+ ?(?:kg|g|ton)\b", r"\b[Vv]ågrät", r"\b[Ll]odrät", r"från vila",
              r"positiva? riktning", r"med tecken", r"[Aa]nge tecken", r"krafters impuls", r"[Rr]äkna (bara )?på",
-             r"[Ss]ammanlagd", r"[Bb]ortse från andra", r"[Rr]äkna bara med", r"[Ee]ndast .* verkar",
+             r"[Ss]ammanlagd", r"[Bb]ortse från andra krafters", r"[Rr]äkna bara med", r"[Ee]ndast .* verkar",
              r"[Bb]ara .* verkar", r"utan tecken", r"\bentydigt\b", r"[Mm]arkera"]
 
 

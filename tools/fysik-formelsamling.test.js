@@ -13,7 +13,7 @@ test('Båda fysikbankernas frågor och delkort saknar standardkonstanter och fä
 });
 test('Givna modellvärden, riktningar, sträckor och experimentdata finns kvar',()=>{
  assert.match(q('4.323').t,/k = 80 N\/m/);assert.match(q('4.350').t,/g = 5,7/);
- assert.match(q('4.53').t,/Uppåt är positiv riktning/);assert.match(q('4.392').t,/Nedför är positiv/);
+ assert.match(q('4.53').kgInstruktion,/Uppåt räknas som positiv riktning/);assert.match(q('4.392').kgInstruktion,/Nedför planet räknas som positiv/);/* språkomskrivningen 2026-11-17: riktningen står i kgInstruktion */
  assert.match(q('4.378').t,/6370 km/);assert.match(q('4.9').t,/4,0 · 10²⁴ kg/);
  assert.match(q('4.19').t,/Bortse från energiförluster/);
  assert.match(q('9.71').t,/2,014102 u/);assert.match(q('9.71').t,/4,002603 u/);
