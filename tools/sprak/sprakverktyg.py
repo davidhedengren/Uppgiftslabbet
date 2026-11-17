@@ -17,7 +17,7 @@ class Bank:
     inne i objektets spann, så att formatet (kompakt eller indraget) bevaras."""
 
     def __init__(self, kod):
-        self.path = UL + "\\" + FIL[kod]
+        self.path = os.path.join(UL, FIL[kod])
         self.src = open(self.path, encoding="utf-8", newline="").read()
         dec, i = json.JSONDecoder(), self.src.index("[") + 1
         self.spann, self.arr = {}, []

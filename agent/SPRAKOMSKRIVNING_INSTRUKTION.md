@@ -74,7 +74,7 @@ gemensam inledning (`[I+F]` i utskriften) byggs automatiskt av `intro` och `f`.
 
 ## Arbetsgång för ett område
 
-Kör alla kommandon från `C:\Users\Hedav\code\Uppgiftslabbet` med `PYTHONUTF8=1`.
+Kör alla kommandon från `C:\Users\Hedav\code\Uppgiftslabbet` med `PYTHONUTF8=1`. Verktygen fungerar också på Linux (molnsessioner), eftersom sökvägarna byggs med `os.path.join`.
 
 1. **Förbered.** Kör `git status`, `git fetch` och jämför med upstream i båda repona. Kontrollera att
    Kunskapsgymmets bankkopia inte har egna ändringar. Ta bort CR innan jämförelsen, till exempel
@@ -145,6 +145,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 |---|---|---|---:|---|
 | 2026-11-17 | fy1 | rorelsemangd | 92 av 93 | 5.605 lät redan naturlig. 5.16 fick facitjustering. Fyra test uppdaterades eftersom de låste gammal ordalydelse med oförändrad innebörd. 5.603 och 5.608 fick `visaAlternativ`. |
 | 2026-11-17 | fy1 | kollisioner | 121 av 121 | Stöt-förbehållen är borttagna. Villkor som påverkar svaret står kvar, till exempel tyngdkraftens impuls i 5.448 och ”nytt försök … stilla före hoppet” i 5.432. Testerna `fysik1-kollisioner` och `fysik-felrapporter-2026-10-08` uppdaterades: teckenriktningen kontrolleras nu i `kgInstruktion`. |
+| 2026-11-17 | ma1 | enhetsbyten | 107 av 149 | ”Skriv svaret som ett vanligt tal, inte i tiopotensform.” borttaget; kvar i `kgInstruktion` bara för 0.560 och 0.562 (formatet decimalform godtar inte tiopotens). 0.565 fick tolerans 0,05 när kravet på en decimal togs bort. 0.540 behåller ”kvadratcentimeter … kvadratmeter” (låst av `ma1-dolda-pastaenden`). 42 uppgifter lät redan naturliga. |
 
 ### Fler lärdomar från kollisioner
 

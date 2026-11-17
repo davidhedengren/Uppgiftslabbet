@@ -7,7 +7,7 @@ BANKER = {"fy1": "uppgifter.js", "fy2": "uppgifter2.js", "ma1": "uppgifterma1.js
 
 
 def las_bank(fil):
-    s = open(UL + "\\" + fil, encoding="utf-8", newline="").read()
+    s = open(os.path.join(UL, fil), encoding="utf-8", newline="").read()
     i = s.index("[")
     arr, _ = json.JSONDecoder().raw_decode(s[i:])
     return arr
