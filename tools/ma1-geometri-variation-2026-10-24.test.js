@@ -38,5 +38,9 @@ test('Facit räknas om',()=>{
 });
 
 test('Frågorna anger svarsform',()=>{
-  for(const id of NYA){const t=get(id);if(t.svarstyp==='alternativ')continue;assert.match(st(t.t),/\((Svara|Svara med)[^)]*\.\)|Skriv ett uttryck/,id);}
+  // Språkomskrivning 2026-11-17 (agent/SPRAKOMSKRIVNING_INSTRUKTION.md): svarsinstruktioner står inte längre i
+  // frågan. Omskrivna områden kontrolleras i sprak-2026-11-17.test.js; där räcker en naturlig fråga eller kgInstruktion.
+  const m=fs.readFileSync(path.join(__dirname,'sprak-2026-11-17.test.js'),'utf8').match(/'uppgifterma1\.js\|BANKMA1':\[([^\]]*)\]/);
+  const OMSKRIVNA=m?[...m[1].matchAll(/'([^']+)'/g)].map(x=>x[1]):[];
+  for(const id of NYA){const t=get(id);if(t.svarstyp==='alternativ'||OMSKRIVNA.includes(t.omr))continue;assert.match(st(t.t),/\((Svara|Svara med)[^)]*\.\)|Skriv ett uttryck/,id);}
 });

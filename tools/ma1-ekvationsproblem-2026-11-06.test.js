@@ -29,19 +29,22 @@ test('Kassor och rabatter: återinsättning i alla villkor',()=>{
  const k=qs[4].rättSvar,j=qs[5].rättSvar;
  assert.match(qs[4].t,/5 000 kr/);assert.match(qs[4].t,/25 %/);assert.match(qs[4].t,/600 kr/);
  near(.75*k,5000-k+600);near(k,3200);
- assert.match(qs[5].t,/240 kr mer/);assert.match(qs[5].t,/redan rabatterade totalsumman/);
+ assert.match(qs[5].t,/240 kr mer/);// Språkomskrivning 2026-11-17: samma villkor, ny ordalydelse (kupongen dras från den rabatterade summan).
+ assert.match(qs[5].t,/kupong på 150 kr från den rabatterade summan/);
  near(.8*j+.9*(j-240)-150,1164);near(j,900);
 });
 test('Hage och kabel: kontrollera hela och delar, inte bara ekvationens rot',()=>{
  const length=qs[6].rättSvar,breadth=(length-4)/2;
- assert.match(qs[6].t,/inklusive mellanstängslet/);assert.match(qs[6].t,/Mellanstängslet har ingen grind/);
+ // Språkomskrivning 2026-11-17: ”inklusive mellanstängslet” blev ”mellanstängslet inräknat”.
+ assert.match(qs[6].t,/mellanstängslet inräknat/);assert.match(qs[6].t,/Mellanstängslet har ingen grind/);
  near(2*length+3*breadth-2,90);near(length,28);near(breadth,12);
  const roll=qs[7].rättSvar,long=roll/4,short=long-1.5;
  assert.match(qs[7].t,/fem lika långa/);assert.ok(short>0);near(long+5*short+2,roll);near(roll,11);
 });
 test('Cykelmötet är det första och ligger under pausen',()=>{
  const time=qs[8].rättSvar;
- assert.match(qs[8].t,/09.20/);assert.match(qs[8].t,/30 minuters cykling/);assert.match(qs[8].t,/stannar hon i 10 minuter/);
+ assert.match(qs[8].t,/09.20/);// Språkomskrivning 2026-11-17: ”efter 30 minuters cykling” blev ”Efter 30 minuter stannar hon”.
+ assert.match(qs[8].t,/Efter 30 minuter stannar hon/);assert.match(qs[8].t,/stannar hon i 10 minuter/);
  assert.ok(time>30&&time<40);near(24*(time-20)/60,15*.5);near(time,38.75);
  // Före Sams start är Nora framför; under 20–30 min minskar ett positivt avstånd.
  for(let t=20;t<=30;t+=.5)assert.ok(15*t/60>24*(t-20)/60);

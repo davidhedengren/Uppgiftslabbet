@@ -6,7 +6,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 function bank(file,key){const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),c);return c.window[key];}
 
-const KLARA={ 'uppgifter.js|BANK':['rorelsemangd','kollisioner','rorelseenergi'], 'uppgifterma1.js|BANKMA1':['enhetsbyten','prefix','tiopotenser_prefix','proportionalitet_grunder','brakform','forhallanden','brakrakning','negativa_tal','tal_rakneordning','decimaltal_positionssystem','avrundning','overslag_grunder','andelar'] };
+const KLARA={ 'uppgifter.js|BANK':['rorelsemangd','kollisioner','rorelseenergi'], 'uppgifterma1.js|BANKMA1':['enhetsbyten','prefix','tiopotenser_prefix','proportionalitet_grunder','brakform','forhallanden','brakrakning','negativa_tal','tal_rakneordning','decimaltal_positionssystem','avrundning','overslag_grunder','andelar','algebraiska_uttryck','ekv_brak','ekv_flera_variabeltermer','ekv_parenteser','ekv_problemlosning','faktorisering','forenkla_uttryck','formler','intervall','linjara_ekvationer','linjara_olikheter','monster_samband','multiplicera_uttryck'] };
 
 const FORBJUDET=[
  [/[Vv]älj ett alternativ/,'Välj ett alternativ'],[/[Mm]arkera det korrekta/,'Markera det korrekta alternativet'],
