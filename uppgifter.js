@@ -104024,7 +104024,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "E",
     "poang": "(4/0/0)",
-    "t": "<p>Radium-226, atomnummer 88, alfasönderfaller till radon-222, atomnummer 86. Atommassorna är 226,025410 u, 222,017578 u och 4,002602 u för radium, radon och helium.</p><p>a) Skriv reaktionsformeln.</p><p>b) Bestäm produkternas totala massa i u med sex decimaler.</p><p>c) Bestäm massminskningen i u.</p><p>d) Bestäm frigjord energi i MeV.</p>",
+    "t": "<p>Radium-226, atomnummer 88, alfasönderfaller till radon-222, atomnummer 86. Atommassorna är 226,025410 u, 222,017578 u och 4,002602 u för radium, radon och helium.</p><p>a) Skriv reaktionsformeln.</p><p>b) Hur stor är produkternas totala massa?</p><p>c) Bestäm massminskningen i u.</p><p>d) Bestäm frigjord energi i MeV.</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[{}^{226}_{88}\\mathrm{Ra}\\rightarrow{}^{222}_{86}\\mathrm{Rn}+{}^4_2\\mathrm{He}\\]</p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[m_{efter}=222{,}017578+4{,}002602\\]</p><p>\\[m_{efter}=226{,}020180\\ \\mathrm u\\]</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}005230\\ \\mathrm u\\]</p></div><p><strong>d)</strong></p><div class=\"facit-v2\"><p>\\[Q=0{,}005230\\cdot931{,}5\\]</p><p>\\[Q\\approx4{,}87\\ \\mathrm{MeV}\\]</p></div></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -104111,7 +104111,7 @@ window.BANK = [
       },
       {
         "etikett": "b",
-        "fraga": "Radium-226 alfasönderfaller till radon-222 och helium-4. Atommassorna är 222,017578 u och 4,002602 u. Bestäm produkternas totala massa i u med sex decimaler.",
+        "fraga": "Radium-226 alfasönderfaller till radon-222 och helium-4. Atommassorna är 222,017578 u och 4,002602 u. Hur stor är produkternas totala massa?",
         "s": "<div class=\"facit-v2\"><p>\\[m_{efter}=222{,}017578+4{,}002602\\]</p><p>\\[m_{efter}=226{,}020180\\ \\mathrm u\\]</p></div>",
         "svarstyp": "numeriskt",
         "rättSvar": 226.02017999999998,
@@ -104124,7 +104124,7 @@ window.BANK = [
         "traningsniva": 1,
         "poang": "1/0/0",
         "ledtrad": "<p>Addera de två produktmassorna.</p>",
-        "t": "<p>Radium-226 alfasönderfaller till radon-222 och helium-4. Atommassorna är 222,017578 u och 4,002602 u. Bestäm produkternas totala massa i u med sex decimaler.</p>",
+        "t": "<p>Radium-226 alfasönderfaller till radon-222 och helium-4. Atommassorna är 222,017578 u och 4,002602 u. Hur stor är produkternas totala massa?</p>",
         "arbetsinsats": 1,
         "miniräknare": true
       },
@@ -104181,7 +104181,7 @@ window.BANK = [
     "niva": "E",
     "typ": "balansera masstal och atomnummer i kärnreaktion",
     "poang": "(1/0/0)",
-    "t": "<p>I kärnreaktionen \\(^{235}_{92}U+n\\rightarrow {}^{141}_{56}Ba+{}^{92}_{36}Kr+x n\\) Hur många neutroner frigörs?</p>",
+    "t": "<p>I kärnreaktionen \\(^{235}_{92}U+n\\rightarrow {}^{141}_{56}Ba+{}^{92}_{36}Kr+x n\\). Hur många neutroner frigörs?</p>",
     "s": "<div class=\"facit-v2\"><p>Summan av masstalen bevaras.</p><p>\\[235+1=141+92+x\\]</p><p>\\[x=3\\]</p></div>",
     "familj": "Reaktionsformler och bevarandelagar",
     "formaga": [
@@ -109605,7 +109605,7 @@ window.BANK = [
     "niva": "E",
     "typ": "balansera masstal och atomnummer i kärnreaktion",
     "poang": "(1/0/0)",
-    "t": "<p>I kärnreaktionen \\(^{2}_{1}H+{}^{3}_{1}H\\rightarrow{}^{4}_{2}He+x n\\) Hur många neutroner frigörs?</p>",
+    "t": "<p>I kärnreaktionen \\(^{2}_{1}H+{}^{3}_{1}H\\rightarrow{}^{4}_{2}He+x n\\). Hur många neutroner frigörs?</p>",
     "s": "<div class=\"facit-v2\"><p>Summan av masstalen bevaras.</p><p>\\[2+3=4+x\\]</p><p>\\[x=1\\]</p></div>",
     "familj": "Reaktionsformler och bevarandelagar",
     "formaga": [
@@ -110741,7 +110741,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>En atomkärna genomgår en serie av α- och β⁻-sönderfall. Från början har kärnan masstalet A och Z antal protoner. Kärnan genomgår totalt 4n stycken sönderfall, där n är ett heltal, och antalet α-sönderfall är tre gånger så många som antalet β⁻-sönderfall.</p>\n<p>Ange kärnans masstal och antal protoner efter sönderfallen.</p>",
+    "t": "<p>En atomkärna genomgår en serie av α- och β⁻-sönderfall. Från början har kärnan masstalet A och atomnumret Z. Kärnan genomgår totalt 4n sönderfall, där n är ett heltal, och antalet α-sönderfall är tre gånger så många som antalet β⁻-sönderfall.</p>\n<p>Ange kärnans masstal och antal protoner efter sönderfallen.</p>",
     "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><div class=\"facit-arbete\"><p class=\"facit-metod\">Av totalt 4n sönderfall är förhållandet alfa till beta-minus 3:1.</p><p class=\"facit-metod\">Därför sker 3n alfa- och n beta-minus-sönderfall.</p><div class=\"facit-matte\">\\[N_\\alpha=3n,\\qquad N_{\\beta^-}=n\\]</div></div></div><div class=\"facit-del\"><div class=\"facit-arbete\"><p class=\"facit-metod\">Endast alfa ändrar masstalet, med −4 per sönderfall.</p><div class=\"facit-matte\">\\[A_f=A-4(3n)=A-12n\\]</div></div></div><div class=\"facit-del\"><div class=\"facit-arbete\"><p class=\"facit-metod\">Atomnumret minskar med 2 per alfa och ökar med 1 per beta-minus.</p><div class=\"facit-matte\">\\[Z_f=Z-2(3n)+n=Z-5n\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> Efter sönderfallen är masstalet \\(A-12n\\) och antalet protoner \\(Z-5n\\).</p></div>",
     "familj": "Reaktionsformler och bevarandelagar",
     "formaga": [
@@ -114043,7 +114043,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "E",
     "poang": "(2/0/0)",
-    "t": "<p>Polonium-210 alfasönderfaller. Atommassorna före och efter är 209,982874 u respektive 205,974465 u och 4,002603 u. Bestäm frigjord energi i MeV.</p><p>a) Bestäm frigjord energi i MeV.</p><p>b) Skriv reaktionsformeln.</p>",
+    "t": "<p>Polonium-210 alfasönderfaller. Atommassorna är 209,982874 u för polonium-210, 205,974465 u för bly-206 och 4,002603 u för helium-4.</p><p>a) Bestäm frigjord energi i MeV.</p><p>b) Skriv reaktionsformeln.</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[m_{före}=209{,}982874\\ \\mathrm u\\]</p><p>\\[m_{efter}=209{,}977068\\ \\mathrm u\\]</p><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}00580600000001\\ \\mathrm u\\]</p><p><div class=\"facit-v2\"><p>\\[Q=\\Delta m\\cdot931{,}5\\]</p><p>\\[Q\\approx5{,}41\\ \\mathrm{MeV}\\]</p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[{}^{210}_{84}\\mathrm{Po}\\rightarrow{}^{206}_{82}\\mathrm{Pb}+{}^4_2\\mathrm{He}\\]</p></div></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -114078,7 +114078,7 @@ window.BANK = [
     "traningsniva": 2,
     "arbetsinsats": 2,
     "spel": true,
-    "spelIntro": "<p>Polonium-210 alfasönderfaller. Atommassorna före och efter är 209,982874 u respektive 205,974465 u och 4,002603 u. Bestäm frigjord energi i MeV.</p>",
+    "spelIntro": "<p>Polonium-210 alfasönderfaller. Atommassorna är 209,982874 u för polonium-210, 205,974465 u för bly-206 och 4,002603 u för helium-4.</p>",
     "spelDelning": "deluppgifter",
     "spelDelar": [
       {
@@ -114096,7 +114096,7 @@ window.BANK = [
         "traningsniva": 2,
         "poang": "1/0/0",
         "ledtrad": "<p>Summera massorna före och efter reaktionen. Massminskningen motsvarar den frigjorda energin.</p>",
-        "t": "<p>Polonium-210 alfasönderfaller. Atommassorna före och efter är 209,982874 u respektive 205,974465 u och 4,002603 u. Bestäm frigjord energi i MeV.</p>",
+        "t": "<p>Polonium-210 alfasönderfaller. Atommassorna är 209,982874 u för polonium-210, 205,974465 u för bly-206 och 4,002603 u för helium-4.</p><p>Bestäm frigjord energi i MeV.</p>",
         "arbetsinsats": 1,
         "miniräknare": true
       },
@@ -138696,7 +138696,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "E",
     "poang": "(1/0/0)",
-    "t": "<p>Torium-232 alfasönderfaller. Atommassorna före och efter är 232,038056 u respektive 228,031071 u och 4,002603 u. Bestäm frigjord energi i MeV.</p>",
+    "t": "<p>Torium-232 alfasönderfaller till radium-228. Atommassorna är 232,038056 u för torium-232, 228,031071 u för radium-228 och 4,002603 u för helium-4. Hur mycket energi frigörs?</p>",
     "s": "<div class=\"facit-v2\"><p>\\[m_{före}=232{,}038056\\ \\mathrm u\\]</p><p>\\[m_{efter}=232{,}033674\\ \\mathrm u\\]</p><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}00438200000002\\ \\mathrm u\\]</p><p><div class=\"facit-v2\"><p>\\[Q=\\Delta m\\cdot931{,}5\\]</p><p>\\[Q\\approx4{,}08\\ \\mathrm{MeV}\\]</p></div></p></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -138854,7 +138854,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "C",
     "poang": "(3/2/0)",
-    "t": "<p>En stillastående plutonium-239-kärna alfasönderfaller till uran-235 och helium-4. Atommassorna är 239,052163 u, 235,043930 u och 4,002603 u i samma ordning. All frigjord energi blir produkternas rörelseenergi.</p><p>a) Skriv reaktionsformeln.</p><p>b) Bestäm frigjord energi i MeV.</p><p>c) Förklara varför produkterna rör sig åt motsatta håll.</p><p>d) Hur många procent av energin får alfapartikeln? Fragmentens massor är 4 u och 235 u.</p><p>e) Bestäm produkternas farter i m/s, först alfapartikeln och sedan urankärnan. Fragmentens massor är 4 u och 235 u.</p>",
+    "t": "<p>En stillastående plutonium-239-kärna alfasönderfaller till uran-235 och helium-4. Atommassorna är 239,052163 u, 235,043930 u och 4,002603 u i samma ordning. All frigjord energi blir produkternas rörelseenergi.</p><p>a) Skriv reaktionsformeln.</p><p>b) Bestäm frigjord energi i MeV.</p><p>c) Förklara varför produkterna rör sig åt motsatta håll.</p><p>d) Hur många procent av energin får alfapartikeln? Fragmentens massor är 4 u och 235 u.</p><p>e) Vilka farter får alfapartikeln och urankärnan? Fragmentens massor är 4 u och 235 u.</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[{}^{239}_{94}\\mathrm{Pu}\\rightarrow{}^{235}_{92}\\mathrm U+{}^4_2\\mathrm{He}\\]</p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[m_{före}=239{,}052163\\ \\mathrm u\\]</p><p>\\[m_{efter}=239{,}046533\\ \\mathrm u\\]</p><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}00563000000002\\ \\mathrm u\\]</p><p><div class=\"facit-v2\"><p>\\[Q=\\Delta m\\cdot931{,}5\\]</p><p>\\[Q\\approx5{,}24\\ \\mathrm{MeV}\\]</p></div></p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>Kärnan är från början i vila, så den sammanlagda rörelsemängden är noll. Produkterna måste få lika stora rörelsemängder åt motsatta håll.</p><p>\\[p_\\alpha+p_{Pb}=0\\]</p><p>\\[|p_\\alpha|=|p_{Pb}|\\]</p><p>Med Eₖ = p²/(2m) får den lättare partikeln större rörelseenergi.</p><p>\\[\\frac{E_\\alpha}{E_{Pb}}=\\frac{m_{Pb}}{m_\\alpha}\\]</p></div><p><strong>d)</strong></p><div class=\"facit-v2\"><p>Vid lika stora rörelsemängder gäller Eₖ = p²/(2m).</p><p><div class=\"facit-v2\"><p>\\[andel=235/(235+4)\\cdot100\\]</p><p>\\[andel\\approx98{,}3\\ \\mathrm{\\%}\\]</p></div></p></div><p><strong>e)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[E_r=5{,}24434500002\\cdot1{,}602\\cdot10^{-13}\\]</p><p>\\[E_r\\approx8{,}4\\cdot10^{-13}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E_\\alpha=E_r\\cdot235/239\\]</p><p>\\[E_\\alpha\\approx8{,}26\\cdot10^{-13}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E_U=E_r\\cdot4/239\\]</p><p>\\[E_U\\approx1{,}41\\cdot10^{-14}\\ \\mathrm{J}\\]</p></div></p><p>\\[m_\\alpha=4\\cdot1{,}6605\\cdot10^{-27}\\ \\mathrm{kg}\\]</p><p>\\[m_U=235\\cdot1{,}6605\\cdot10^{-27}\\ \\mathrm{kg}\\]</p><p><div class=\"facit-v2\"><p>\\[v_\\alpha=\\sqrt{2E_\\alpha/m_\\alpha}\\]</p><p>\\[v_\\alpha\\approx15800000\\ \\mathrm{m/s}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[v_U=\\sqrt{2E_U/m_U}\\]</p><p>\\[v_U\\approx268000\\ \\mathrm{m/s}\\]</p></div></p></div></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -139006,7 +139006,7 @@ window.BANK = [
       },
       {
         "etikett": "e",
-        "fraga": "En stillastående plutonium-239-kärna alfasönderfaller. Totalt frigörs 5,24 MeV som rörelseenergi. Alfapartikeln och urankärnan har massorna 4 u och 235 u. Bestäm deras farter i m/s, först alfapartikeln och sedan urankärnan.  ",
+        "fraga": "En stillastående plutonium-239-kärna alfasönderfaller. Totalt frigörs 5,24 MeV som rörelseenergi. Alfapartikeln och urankärnan har massorna 4 u och 235 u. Vilka farter får de?  ",
         "s": "<div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[E_r=5{,}24\\cdot1{,}602\\cdot10^{-13}\\]</p><p>\\[E_r\\approx8{,}39\\cdot10^{-13}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E_\\alpha=E_r\\cdot235/239\\]</p><p>\\[E_\\alpha\\approx8{,}25\\cdot10^{-13}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E_U=E_r\\cdot4/239\\]</p><p>\\[E_U\\approx1{,}4\\cdot10^{-14}\\ \\mathrm{J}\\]</p></div></p><p>\\[m_\\alpha=4\\cdot1{,}6605\\cdot10^{-27}\\ \\mathrm{kg}\\]</p><p>\\[m_U=235\\cdot1{,}6605\\cdot10^{-27}\\ \\mathrm{kg}\\]</p><p><div class=\"facit-v2\"><p>\\[v_\\alpha=\\sqrt{2E_\\alpha/m_\\alpha}\\]</p><p>\\[v_\\alpha\\approx15800000\\ \\mathrm{m/s}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[v_U=\\sqrt{2E_U/m_U}\\]</p><p>\\[v_U\\approx268000\\ \\mathrm{m/s}\\]</p></div></p></div>",
         "svarstyp": "numeriskt",
         "rättSvar": [
@@ -139028,7 +139028,8 @@ window.BANK = [
         "traningsniva": 4,
         "poang": "0/1/0",
         "ledtrad": "<p>Dela energin med hjälp av lika stora rörelsemängder. Använd sedan Eₖ = mv²/2.</p>",
-        "t": "<p>En stillastående plutonium-239-kärna alfasönderfaller. Totalt frigörs 5,24 MeV som rörelseenergi. Alfapartikeln och urankärnan har massorna 4 u och 235 u. Bestäm deras farter i m/s, först alfapartikeln och sedan urankärnan. </p>",
+        "t": "<p>En stillastående plutonium-239-kärna alfasönderfaller. Totalt frigörs 5,24 MeV som rörelseenergi. Alfapartikeln och urankärnan har massorna 4 u och 235 u. Vilka farter får de? </p>",
+        "kgInstruktion": "Svara först med alfapartikelns fart och sedan med urankärnans.",
         "arbetsinsats": 2,
         "svarsstruktur": "ordnad",
         "svarEtiketter": [
@@ -139205,7 +139206,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "E",
     "poang": "(1/0/0)",
-    "t": "<p>Americium-241 alfasönderfaller. Atommassorna före och efter är 241,056829 u respektive 237,048173 u och 4,002603 u. Bestäm frigjord energi i MeV.</p>",
+    "t": "<p>Americium-241 alfasönderfaller till neptunium-237. Atommassorna är 241,056829 u för americium-241, 237,048173 u för neptunium-237 och 4,002603 u för helium-4. Hur mycket energi frigörs?</p>",
     "s": "<div class=\"facit-v2\"><p>\\[m_{före}=241{,}056829\\ \\mathrm u\\]</p><p>\\[m_{efter}=241{,}050776\\ \\mathrm u\\]</p><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}00605300000001\\ \\mathrm u\\]</p><p><div class=\"facit-v2\"><p>\\[Q=\\Delta m\\cdot931{,}5\\]</p><p>\\[Q\\approx5{,}64\\ \\mathrm{MeV}\\]</p></div></p></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -139232,7 +139233,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>Polonium-211 sönderfaller till bly-207 och helium-4. Atommassorna är 206,975897 u och 4,002603 u. Energin som frigörs är 7,585 MeV. Bestäm poloniumatomens massa i u med fem decimaler.</p>",
+    "t": "<p>Polonium-211 sönderfaller till bly-207 och helium-4. Atommassorna är 206,975897 u och 4,002603 u. Energin som frigörs är 7,585 MeV. Hur stor massa har poloniumatomen?</p>",
     "s": "<div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[\\Delta m=7{,}585/931{,}5\\]</p><p>\\[\\Delta m\\approx0{,}00814\\ \\mathrm{u}\\]</p></div></p><p>\\[m_{sökt}=m_{Pb}+m_{He}+\\Delta m\\]</p><p>\\[m_{sökt}\\approx210{,}98664\\ \\mathrm u\\]</p></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -139840,7 +139841,7 @@ window.BANK = [
     "omr": "karnreaktioner",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>Neptunium-237 sönderfaller till protaktinium-233 och helium-4. Atommassorna är m(Np) = 237,048174 u och m(He) = 4,002603 u. Energin som frigörs är 4,957 MeV. Bestäm protaktiniumatomens massa i u med fem decimaler.</p>",
+    "t": "<p>Neptunium-237 sönderfaller till protaktinium-233 och helium-4. Atommassorna är m(Np) = 237,048174 u och m(He) = 4,002603 u. Energin som frigörs är 4,957 MeV. Hur stor massa har protaktiniumatomen?</p>",
     "s": "<div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[\\Delta m=4{,}957/931{,}5\\]</p><p>\\[\\Delta m\\approx0{,}00532\\ \\mathrm{u}\\]</p></div></p><p>\\[m_{sökt}=m_{Np}-m_{He}-\\Delta m\\]</p><p>\\[m_{sökt}\\approx233{,}04025\\ \\mathrm u\\]</p></div>",
     "familj": "Alfasönderfall",
     "formaga": [
@@ -158539,7 +158540,7 @@ window.BANK = [
     "familj": "Alfasönderfall",
     "niva": "E",
     "poang": "(1/0/0)",
-    "t": "<p>En kärna alfasönderfaller. Atommassorna före och efter är 238,050788 u respektive 234,043601 u och 4,002602 u. Bestäm frigjord energi i MeV.</p>",
+    "t": "<p>En kärna alfasönderfaller. Moderatomen har massan 238,050788 u. Dotteratomen och heliumatomen har massorna 234,043601 u och 4,002602 u. Hur mycket energi frigörs?</p>",
     "s": "<div class=\"facit-v2\"><p>\\[m_{före}=238{,}050788\\ \\mathrm u\\]</p><p>\\[m_{efter}=238{,}046203\\ \\mathrm u\\]</p><p>\\[\\Delta m=m_{före}-m_{efter}\\]</p><p>\\[\\Delta m=0{,}00458500000002\\ \\mathrm u\\]</p><p><div class=\"facit-v2\"><p>\\[Q=\\Delta m\\cdot931{,}5\\]</p><p>\\[Q\\approx4{,}27\\ \\mathrm{MeV}\\]</p></div></p></div>",
     "ledtrad": "<p>Summera massorna före och efter reaktionen. Massminskningen motsvarar den frigjorda energin.</p>",
     "svarstyp": "numeriskt",
@@ -158566,7 +158567,7 @@ window.BANK = [
     "familj": "Alfasönderfall",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom alfa- och beta-minus-sönderfall. Bestäm antalet alfa och antalet beta-minus, i den ordningen.</p>",
+    "t": "<p>Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom en serie alfa- och beta-minus-sönderfall. Hur många sönderfall av varje sort sker?</p>",
     "s": "<div class=\"facit-v2\"><p>\\[238-4n_\\alpha=206\\]</p><p>\\[n_\\alpha=8\\]</p><p>\\[92-2\\cdot8+n_{\\beta^-}=82\\]</p><p>\\[n_{\\beta^-}=6\\]</p></div>",
     "ledtrad": "<p>Använd först masstalen, sedan atomnumren.</p>",
     "formaga": [
@@ -158603,7 +158604,7 @@ window.BANK = [
     "spelDelar": [
       {
         "etikett": "a",
-        "fraga": "Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom alfa- och beta-minus-sönderfall. Bestäm antalet alfa och antalet beta-minus, i den ordningen.",
+        "fraga": "Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom alfa- och beta-minus-sönderfall. Hur många alfasönderfall och hur många beta-minus-sönderfall sker?",
         "s": "<div class=\"facit-v2\"><p>\\[238-4n_\\alpha=206\\]</p><p>\\[n_\\alpha=8\\]</p><p>\\[92-2\\cdot8+n_{\\beta^-}=82\\]</p><p>\\[n_{\\beta^-}=6\\]</p></div>",
         "svarstyp": "numeriskt",
         "rättSvar": [
@@ -158625,7 +158626,8 @@ window.BANK = [
         "traningsniva": 3,
         "poang": "0/1/0",
         "ledtrad": "<p>Använd först masstalen, sedan atomnumren.</p>",
-        "t": "<p>Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom alfa- och beta-minus-sönderfall. Bestäm antalet alfa och antalet beta-minus, i den ordningen.</p>",
+        "t": "<p>Uran-238 med atomnummer 92 blir bly-206 med atomnummer 82 genom alfa- och beta-minus-sönderfall. Hur många alfasönderfall och hur många beta-minus-sönderfall sker?</p>",
+        "kgInstruktion": "Svara först med antalet alfasönderfall och sedan med antalet beta-minus-sönderfall.",
         "arbetsinsats": 2,
         "svarsstruktur": "ordnad",
         "svarEtiketter": [
