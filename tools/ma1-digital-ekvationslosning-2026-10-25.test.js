@@ -13,7 +13,8 @@ test('14 kort i digital ekvationslösning med icke-linjära funktioner',()=>{
   const niv={1:0,2:0,3:0};
   for(const id of NYA){const t=get(id);niv[t.traningsniva]++;assert.equal(t.omr,'grafisk_ekvationslosning',id);assert.equal(t.familj,'Ekvationslösning med digitalt verktyg',id);
     assert.equal(t.geogebra,true,id);assert.equal(t.miniräknare,true,id);assert.deepEqual(t.kurs,['1a','1b','1c'],id);
-    if(t.svarstyp==='numeriskt'&&t.tolerans)assert.match(t.t,/\(Svara[^)]*decimal/,id);}
+    // Språkomskrivning 2026-11-17: avrundningen står i kgInstruktion (visas bara i Kunskapsgymmet), inte i frågan.
+    if(t.svarstyp==='numeriskt'&&t.tolerans&&t.tolerans<0.1)assert.match(t.kgInstruktion||'',/decimal/,id);}
   assert.deepEqual(niv,{1:2,2:7,3:5});
   // innehållet är verkligen icke-linjärt: kvadrat- eller exponentialterm i varje kort
   for(const id of NYA)assert.match(get(id).t,/\^|²|ˣ/,id);
