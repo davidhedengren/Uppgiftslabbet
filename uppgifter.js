@@ -2717,7 +2717,7 @@ window.BANK = [
         "traningsniva": 2,
         "arbetsinsats": 1,
         "tolerans": 0,
-        "fraga": "Ett alfasönderfall frigör 5,0 MeV. Hur mycket energi frigörs vid 10¹² sådana sönderfall? (Svara i J.)",
+        "fraga": "Ett alfasönderfall frigör 5,0 MeV. Hur mycket energi frigörs vid 10¹² sådana sönderfall?",
         "miniräknare": true
       }
     ],
@@ -151347,7 +151347,7 @@ window.BANK = [
     "niva": "C",
     "typ": "tid för fartökning med given medeleffekt",
     "poang": "(0/2/0)",
-    "t": "<p>En bil med massan 850 kg ökar farten från 0 till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Bortse från motstånd.</p><p><strong>a)</strong>Hur lång tid tar det att nå 15,0 m/s på en vågrät väg?</p><p><strong>b)</strong>Bilen kör uppför en backe och kommer 3,00 m högre upp under fartökningen. Hur lång tid tar det att nå 15,0 m/s?</p>",
+    "t": "<p>En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Bortse från luftmotstånd och friktion.</p><p><strong>a)</strong> Hur lång tid tar det på en plan väg?</p><p><strong>b)</strong> Bilen kör uppför en backe och kommer 3,00 m högre upp under fartökningen. Hur lång tid tar det nu?</p>",
     "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Enhetsbyte: \\(1\\ \\mathrm{hk}=735{,}5\\ \\mathrm W\\)</p><div class=\"facit-matte\">\\[P=40{,}0\\cdot735{,}5=29\\,420\\ \\mathrm W\\]</div></li><li><p class=\"facit-rubrik\">Rörelseenergi: \\(E_k=\\dfrac{mv^2}{2}\\)</p><div class=\"facit-matte\">\\[E_k=\\frac{850\\cdot15{,}0^2}{2}=95\\,625\\ \\mathrm J\\]</div></li><li><p class=\"facit-rubrik\">Effekt: \\(P=\\dfrac{W}{t}\\), lös ut \\(t\\)</p><div class=\"facit-matte\">\\[t=\\frac{95\\,625}{29\\,420}\\approx3{,}25\\ \\mathrm s\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3,25 s.</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Enhetsbyte: \\(1\\ \\mathrm{hk}=735{,}5\\ \\mathrm W\\)</p><div class=\"facit-matte\">\\[P=40{,}0\\cdot735{,}5=29\\,420\\ \\mathrm W\\]</div></li><li><p class=\"facit-rubrik\">Energiprincipen: \\(W=\\Delta E_k+\\Delta E_p\\)</p><div class=\"facit-matte\">\\[W=\\frac{850\\cdot15{,}0^2}{2}+850\\cdot9{,}82\\cdot3{,}00=95\\,625+25\\,041=120\\,666\\ \\mathrm J\\]</div></li><li><p class=\"facit-rubrik\">Effekt: \\(P=\\dfrac{W}{t}\\), lös ut \\(t\\)</p><div class=\"facit-matte\">\\[t=\\frac{120\\,666}{29\\,420}\\approx4{,}10\\ \\mathrm s\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4,10 s.</p></div></div></div>",
     "id": "5.565",
     "miniräknare": true,
@@ -151381,12 +151381,12 @@ window.BANK = [
       "s"
     ],
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>En bil med massan 850 kg ökar farten från 0 till 15,0 m/s. Motorn överför i genomsnitt effekten 40,0 hk till bilen. Räkna med att motorns arbete bara ökar bilens rörelseenergi och lägesenergi.</p>",
+    "spelIntro": "<p>En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Räkna med att motorns arbete bara ökar bilens rörelseenergi och lägesenergi.</p>",
     "spelDelar": [
       {
         "etikett": "a",
-        "fraga": "Hur lång tid tar det att nå 15,0 m/s på en vågrät väg?",
-        "t": "<p>En bil med massan 850 kg ökar farten från 0 till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Bilen kör på en vågrät väg. Räkna med att motorns arbete bara ökar bilens rörelseenergi.</p><p>Hur lång tid tar det att nå 15,0 m/s på en vågrät väg?</p>",
+        "fraga": "Hur lång tid tar det att nå 15,0 m/s?",
+        "t": "<p>En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s på en plan väg. Motorns medeleffekt är 40,0 hk. Räkna med att motorns arbete bara ökar bilens rörelseenergi.</p><p>Hur lång tid tar det att nå 15,0 m/s?</p>",
         "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Enhetsbyte: \\(1\\ \\mathrm{hk}=735{,}5\\ \\mathrm W\\)</p><div class=\"facit-matte\">\\[P=40{,}0\\cdot735{,}5=29\\,420\\ \\mathrm W\\]</div></li><li><p class=\"facit-rubrik\">Rörelseenergi: \\(E_k=\\dfrac{mv^2}{2}\\)</p><div class=\"facit-matte\">\\[E_k=\\frac{850\\cdot15{,}0^2}{2}=95\\,625\\ \\mathrm J\\]</div></li><li><p class=\"facit-rubrik\">Effekt: \\(P=\\dfrac{W}{t}\\), lös ut \\(t\\)</p><div class=\"facit-matte\">\\[t=\\frac{95\\,625}{29\\,420}\\approx3{,}25\\ \\mathrm s\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 3,25 s.</p></div>",
         "ledtrad": "<p>Ökningen i rörelseenergi delad med medeleffekten ger tiden.</p>",
         "niva": "C",
@@ -151397,7 +151397,7 @@ window.BANK = [
       {
         "etikett": "b",
         "fraga": "Hur lång tid tar det att nå 15,0 m/s?",
-        "t": "<p>En bil med massan 850 kg kör uppför en backe och ökar farten från 0 till 15,0 m/s. Under fartökningen kommer bilen 3,00 m högre upp. Motorns medeleffekt är 40,0 hk. Bortse från motstånd.</p><p>Hur lång tid tar det att nå 15,0 m/s?</p>",
+        "t": "<p>En bil som väger 850 kg kör uppför en backe och ökar farten från stillastående till 15,0 m/s. Under fartökningen kommer bilen 3,00 m högre upp. Motorns medeleffekt är 40,0 hk. Bortse från luftmotstånd och friktion.</p><p>Hur lång tid tar det att nå 15,0 m/s?</p>",
         "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Enhetsbyte: \\(1\\ \\mathrm{hk}=735{,}5\\ \\mathrm W\\)</p><div class=\"facit-matte\">\\[P=40{,}0\\cdot735{,}5=29\\,420\\ \\mathrm W\\]</div></li><li><p class=\"facit-rubrik\">Energiprincipen: \\(W=\\Delta E_k+\\Delta E_p\\)</p><div class=\"facit-matte\">\\[W=\\frac{850\\cdot15{,}0^2}{2}+850\\cdot9{,}82\\cdot3{,}00=95\\,625+25\\,041=120\\,666\\ \\mathrm J\\]</div></li><li><p class=\"facit-rubrik\">Effekt: \\(P=\\dfrac{W}{t}\\), lös ut \\(t\\)</p><div class=\"facit-matte\">\\[t=\\frac{120\\,666}{29\\,420}\\approx4{,}10\\ \\mathrm s\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> 4,10 s.</p></div>",
         "ledtrad": "<p>Beräkna båda energiökningarna innan du summerar.</p>",
         "niva": "C",
@@ -152090,7 +152090,7 @@ window.BANK = [
       "W"
     ],
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>Leif och cykeln har sammanlagda massan 60 kg.</p>",
+    "spelIntro": "<p>Leif och cykeln väger tillsammans 60 kg.</p>",
     "spelDelar": [
       {
         "etikett": "a",

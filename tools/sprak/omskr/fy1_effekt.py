@@ -19,7 +19,7 @@ R = {
     '2.209': {'t': p(r'Ett vindkraftverk ger effekten \(4{,}2\ \mathrm{MW}\). Hur många watt är det?')},
     '2.29': {
         't': '<div class="deluppgifter" style="display:grid;gap:0.85rem;margin:0.8rem 0"><div>a) En dags mat innehåller 2000 kcal. Hur många joule motsvarar det?</div><div>b) En dags mat innehåller 2000 kcal. Hur många kWh motsvarar det?</div><div>c) En lampa på 60 W är tänd i 5,0 timmar. Hur många kWh använder den?</div><div>d) En lampa på 60 W är tänd i 5,0 timmar. Hur många joule använder den?</div><div>e) Vid ett alfasönderfall frigörs 5,0 MeV. Hur mycket energi frigörs totalt vid 10¹² sådana sönderfall? Ange energin i joule.</div></div>',
-        'd': {'e': {'t': p('Ett alfasönderfall frigör 5,0 MeV. Hur mycket energi frigörs vid 10¹² sådana sönderfall?')}}},
+        'd': {'e': enkel('Ett alfasönderfall frigör 5,0 MeV. Hur mycket energi frigörs vid 10¹² sådana sönderfall?')}},
     '5.1': {
         'fore': p('En elbil som väger 1600 kg bromsar från 90 km/h till stillastående. Bilens batteri kan lagra 60 kWh. Vid inbromsningen lagras 70 % av bilens rörelseenergi i batteriet.'),
         'li': ['Hur stor rörelseenergi har bilen innan den bromsar?', 'Hur många kWh lagras i batteriet vid inbromsningen?',
@@ -301,6 +301,13 @@ R = {
         'd': {'a': kort('En hiss som väger 650 kg ökar farten från stillastående till 1,75 m/s uppåt på 3,0 s med konstant acceleration. Hissen saknar motvikt. Bortse från energiförluster.', 'Hur stor är motorns medeleffekt under accelerationen?'),
               'b': kort('En hiss som väger 650 kg åker uppåt med den konstanta farten 1,75 m/s. Hissen saknar motvikt. Bortse från energiförluster.', 'Hur stor effekt ger motorn?'),
               'c': kort('En hiss som väger 3,0 ton lyfts 21 m på 23 s med konstant fart. Hissen saknar motvikt. Bortse från energiförluster.', 'Hur stor effekt måste motorn minst ge?')}},
+    '5.565': {
+        't': p('En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Bortse från luftmotstånd och friktion.',
+               '<strong>a)</strong> Hur lång tid tar det på en plan väg?',
+               '<strong>b)</strong> Bilen kör uppför en backe och kommer 3,00 m högre upp under fartökningen. Hur lång tid tar det nu?'),
+        'intro': p('En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s. Motorns medeleffekt är 40,0 hk. Räkna med att motorns arbete bara ökar bilens rörelseenergi och lägesenergi.'),
+        'd': {'a': kort('En bil som väger 850 kg ökar farten från stillastående till 15,0 m/s på en plan väg. Motorns medeleffekt är 40,0 hk. Räkna med att motorns arbete bara ökar bilens rörelseenergi.', 'Hur lång tid tar det att nå 15,0 m/s?'),
+              'b': {'t': p('En bil som väger 850 kg kör uppför en backe och ökar farten från stillastående till 15,0 m/s. Under fartökningen kommer bilen 3,00 m högre upp. Motorns medeleffekt är 40,0 hk. Bortse från luftmotstånd och friktion.', 'Hur lång tid tar det att nå 15,0 m/s?')}}},
     '5.566': {
         'li': ['En bil som väger 1200 kg håller farten 90 km/h uppför en backe som stiger 15 m för varje 100 m i horisontell led. Hur mycket mer effekt krävs för att öka lägesenergin jämfört med en plan väg?',
                'En bil som väger 710 kg håller farten 23,0 m/s uppför en backe som lutar 2,0°. Luftmotstånd och friktion bromsar med 500 N. Hur stor effekt måste motorn ge?',
@@ -349,6 +356,7 @@ R = {
         'd': {'a': kort(r'En cyklist och cykeln väger tillsammans 80 kg. Luftmotståndet kan beräknas med \(F=kv^2\). Cyklisten rullar utan att trampa nedför en backe som lutar 3,0° och håller den konstanta farten 3,5 m/s. Bortse från annat motstånd.', 'Bestäm k.'),
               'b': kort(r'En cyklist och cykeln väger tillsammans 80 kg. Luftmotståndet kan beräknas med \(F=kv^2\), där k = 3,4 kg/m och v är farten. Bortse från annat motstånd.', 'Hur stor effekt krävs för att cykla med den konstanta farten 2,0 m/s uppför en backe som lutar 1,5°?')}},
     '5.575': {
+        'intro': p('Leif och cykeln väger tillsammans 60 kg.'),
         'fore': p('Leif och cykeln väger tillsammans 60 kg. På plan väg håller han farten 4,0 m/s med den nyttiga effekten 120 W.'),
         'd': {'b': kort('Leif och cykeln väger tillsammans 60 kg. Motståndskraften är 30 N och backen lutar 4,0°.', 'Hur stor nyttig effekt krävs för att cykla uppför med den konstanta farten 3,0 m/s?'),
               'c': kort(r'Leif och cykeln väger tillsammans 60 kg. Motståndskraften kan beräknas med \(F=kv^2\) och är 30 N vid farten 4,0 m/s.', 'Hur stor nyttig effekt krävs för att cykla med den konstanta farten 3,0 m/s uppför en backe som lutar 4,0°?')}},
