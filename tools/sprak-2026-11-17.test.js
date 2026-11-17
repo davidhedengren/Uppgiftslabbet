@@ -6,7 +6,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 function bank(file,key){const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),c);return c.window[key];}
 
-const KLARA={ 'uppgifter.js|BANK':['rorelsemangd'] };
+const KLARA={ 'uppgifter.js|BANK':['rorelsemangd','kollisioner'] };
 
 const FORBJUDET=[
  [/[Vv]älj ett alternativ/,'Välj ett alternativ'],[/[Mm]arkera det korrekta/,'Markera det korrekta alternativet'],

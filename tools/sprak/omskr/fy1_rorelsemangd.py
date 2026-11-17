@@ -293,11 +293,11 @@ R = {
                     'f': 'En luftmadrass bromsar en testvikt från 36 m/s till stillastående på 4,0 m med konstant acceleration. Madrassens kraft på vikten får vara högst 10,0 kN. Hur stor massa kan vikten högst ha? Ta hänsyn till tyngdkraften.'}}},
     '5.601': {'t': p('Grafen visar kraften på en liten vagn i rörelseriktningen. Hur stor impuls får vagnen under de första 0,50 s?') + DFIG},
     '5.602': {'t': p('En hand knuffar på en boll. Grafen visar kraften från handen. Hur stor impuls ger handen bollen?') + DFIG},
-    '5.603': {'t': p('Graferna visar två olika knuffar på en vagn. Vilken knuff ger störst impuls?') + DFIG},
+    '5.603': {'extra': {'visaAlternativ': True}, 't': p('Graferna visar två olika knuffar på en vagn. Vilken knuff ger störst impuls?') + DFIG},
     '5.604': {'t': p('En motor drar en vagn åt höger. Grafen visar motorns kraft under starten. Hur stor impuls ger motorn vagnen under de första 0,30 s?') + DFIG},
     '5.606': {'t': p('Grafen visar kraften på en vagn. Positiv kraft är riktad åt höger och negativ kraft åt vänster. Hur stor är den totala impulsen på vagnen från 0 till 0,30 s?') + DFIG},
     '5.607': {'t': p('En vagn med massan 2,0 kg står stilla. Grafen visar den resulterande kraften på vagnen under 0,20 s. Vilken fart har vagnen efter 0,20 s?') + DFIG},
-    '5.608': {'t': p('Samma boll stoppas på två olika sätt från samma fart. Graferna visar bromskraften i de två fallen. Vilken graf visar det stopp som tar längst tid och har lägst medelkraft?') + DFIG},
+    '5.608': {'extra': {'visaAlternativ': True}, 't': p('Samma boll stoppas på två olika sätt från samma fart. Graferna visar bromskraften i de två fallen. Vilken graf visar det stopp som tar längst tid och har lägst medelkraft?') + DFIG},
     '5.641': {
         'fore': p('En ishockeypuck med massan 170 g glider rakt mot en spelare med farten 18 m/s. Spelaren slår tillbaka pucken rakt åt motsatt håll. Diagrammet visar kraften från klubban på pucken under slaget. Bortse från friktionen mot isen.') + FIG,
         'intro': p('En ishockeypuck med massan 170 g glider rakt mot en spelare med farten 18 m/s. Spelaren slår tillbaka pucken rakt åt motsatt håll. Diagrammet visar kraften från klubban på pucken under slaget. Bortse från friktionen mot isen.') + FIG,

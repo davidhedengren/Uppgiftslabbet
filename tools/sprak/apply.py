@@ -52,6 +52,16 @@ def main():
     for id_, p in mod.R.items():
         u = b.obj(id_)
         par, till = [], []
+
+        def lagg(obj, ankare, nyckel, varde):
+            """Lägg till nyckel, eller byt värdet om nyckeln redan finns (gör omkörning idempotent)."""
+            if nyckel in obj:
+                if obj[nyckel] != varde:
+                    if not isinstance(obj[nyckel], str):
+                        raise ValueError(f"{id_}: {nyckel} finns redan med annat värde")
+                    par.append((obj[nyckel], varde))
+            else:
+                till.append((ankare, nyckel, varde))
         t0, intro0 = u.get("t", ""), u.get("spelIntro")
         delar = u.get("spelDelar") or []
         ll = li_lista(t0)
@@ -85,13 +95,10 @@ def main():
                 dt1 = dt0
             if dt0 is not None:
                 jamfor(id_, f"del {et}", dt0, dt1, varn)
-            if f0 != f1 and f0 is not None:
-                if delar.count(d) and sum(1 for x in delar if x.get("fraga") == f0) > 1:
-                    raise ValueError(f"{id_}{et}: samma fråga i flera delar")
             par += [(dt0, dt1)] if dt0 is not None else []
             par += [(f0, f1)] if f0 is not None else []
             if q.get("kg"):
-                till.append((dt1 if dt0 is not None else f1, "kgInstruktion", q["kg"]))
+                lagg(d, dt1 if dt0 is not None else f1, "kgInstruktion", q["kg"])
         # huvudtext
         figs = till_platshallare(t0)[1]
         if "t" in p:
@@ -117,19 +124,30 @@ def main():
             jamfor(id_, "t", t0, t1, varn)
             par.insert(0, (t0, t1))
         if p.get("kg"):
-            till.append((t1, "kgInstruktion", p["kg"]))
+            lagg(u, t1, "kgInstruktion", p["kg"])
+        # Uppgiftslabbet skriver bara ut flervalsalternativen om texten nämner "alternativ/markera/…"
+        # eller om visaAlternativ är true (altVisas i index.html). Sätt flaggan när ordet försvinner.
+        ALT = re.compile(r"alternativ|markera|kryssa|ringa in", re.I)
+        if u.get("alternativ") and ALT.search(t0) and not ALT.search(t1) and u.get("visaAlternativ") is not True:
+            lagg(u, t1, "visaAlternativ", True)
+        for nyckel, varde in (p.get("extra") or {}).items():
+            lagg(u, t1, nyckel, varde)
         # facitjustering när pappersfrågan ändrats (sbyt: [(gammal delsträng, ny delsträng)] i huvudfacit s)
         if p.get("sbyt"):
             s0 = u["s"]; s1 = s0
             for a, c in p["sbyt"]:
+                if s1.count(a) == 0 and c in s1:
+                    continue  # redan gjort (omkörning)
                 if s1.count(a) != 1:
                     raise ValueError(f"{id_}: sbyt hittades {s1.count(a)} gånger")
                 s1 = s1.replace(a, c)
-            par.append((s0, s1))
-            varn.append(f"{id_}: huvudfacit justerat")
+            if s1 != s0:
+                par.append((s0, s1))
+                varn.append(f"{id_}: huvudfacit justerat")
         # ordna så att längre strängar ersätts först (undviker delsträngskrockar i literalerna)
         b.ersatt(id_, par, till)
         antal += 1
+    varn += b.dubbletter
     for v in varn:
         print("VARNING", v)
     print(antal, "uppgifter klara", "(skrivet)" if skriv else "(torrkörning)")

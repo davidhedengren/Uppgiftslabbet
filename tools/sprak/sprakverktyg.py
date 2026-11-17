@@ -31,6 +31,7 @@ class Bank:
             self.arr.append(obj)
             i = slut
         self.byte = {}  # id -> ny objekttext
+        self.dubbletter = []
 
     def obj(self, id_):
         s, e = self.spann[id_]
@@ -49,9 +50,11 @@ class Bank:
                 continue
             g = lit(gammal)
             n = txt.count(g)
-            if n != 1:
-                raise ValueError(f"{id_}: literalen hittades {n} gånger: {gammal[:60]}")
-            txt = txt.replace(g, lit(ny))
+            if n == 0:
+                raise ValueError(f"{id_}: literalen hittades inte: {gammal[:60]}")
+            if n > 1:  # t.ex. två delkort med samma fråga: ersätt första förekomsten (dokumentordning)
+                self.dubbletter.append(f"{id_}: {n} lika literaler, första ersatt: {gammal[:50]}")
+            txt = txt.replace(g, lit(ny), 1)
         for efter, nyckel, varde in tillagg:
             e = lit(efter)
             if txt.count(e) != 1:
