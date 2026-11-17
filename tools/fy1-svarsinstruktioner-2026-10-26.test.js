@@ -19,7 +19,8 @@ test('Underförstådda enheter är borttagna, övriga står kvar',()=>{
   assert.match(ren(q('2.321').t),/\(Svara i m\.\)/);   // given i µm
   assert.match(ren(q('6.112').t),/\(Svara i mN\.\)/);  // prefix
   assert.match(ren(q('4.185').spelDelar[1].t),/\(Svara i cm\.\)/);
-  assert.match(ren(q('5.184').t),/i kJ, med tecken/);
+  // Språkgranskningen 2026-11-17: enheten visas i Kunskapsgymmet via svarEnhet och arbetets tecken förstår eleven själv.
+  assert.doesNotMatch(ren(q('5.184').t),/Svara|tecken/); assert.equal(q('5.184').svarEnhet,'kJ');
 });
 test('Antal utan enhet rättas exakt utan rekommenderade värdesiffror',()=>{
   for(const id of ['2.324','8.661','8.677']){const t=q(id);assert.equal(t.svarVardesiffror,undefined,id);assert.ok(Number.isInteger(t.rättSvar),id);assert.doesNotMatch(ren(t.t),/heltal/,id);}

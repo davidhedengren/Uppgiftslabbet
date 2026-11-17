@@ -138,6 +138,8 @@ Kör alla kommandon från `C:\Users\Hedav\code\Uppgiftslabbet` med `PYTHONUTF8=1
 
 ## Läge och ordning
 
+**Parallella sessioner (2026-11-17):** en session tar Fy1 område för område, en annan Ma1. Skriv in ditt område i tabellen när du är klar och hämta (`git pull --rebase`) före varje commit. Vid konflikt i `KLARA` i `tools/sprak-2026-11-17.test.js` slås listorna ihop, och vid konflikt i `BANK_VERSION` i Kunskapsgymmet väljs ett nytt namn.
+
 Prioritet efter täthet av AI-mönster: först resten av Fy1 område för område, sedan Fy2, Ma1, Ma2, Ma3c, Ma4 och Ma5.
 Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter 4, 3, 6–9 och sist 2.
 
@@ -159,6 +161,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-17 | ma1 | kapitel 2: funktionsbegreppet, definitionsmangd_vardemangd, representationer, grafisk_ekvationslosning, jamfora_modeller, linjara_funktioner, rata_linjens_ekvation, bestamma_linjar_funktion, exponentialfunktioner, potensfunktioner | 171 uppgifter (skripten `ma1_kap2a.py`, `ma1_kap2b.py`, `ma1_kap2c.py`) | ”Funktionen är …” heter ”Funktionen f ges av …”. ”Digitalt verktyg” heter GeoGebra eller räknare. Metatexten ”Grafen visar hela det område som ska användas i uppgiften.” är borttagen i 26 uppgifter. Den står kvar som ”Figuren visar hela grafen.” där antalet lösningar beror på det (2.52, 2.97, 2.101, 2.137, 2.139, 2.141, 2.144, 2.145). Formler som bara upprepar texten är borttagna (2.455, 2.545, 2.634). Avrundning ligger i `kgInstruktion` där toleransen är tät, och ”stigande ordning” heter ”Skriv lösningarna i storleksordning, den minsta först.”. 2.29a saknade \(K(x)\) och är nu självbärande. Testet `ma1-digital-ekvationslosning-2026-10-25` kontrollerar nu avrundningen i `kgInstruktion`. Observera: 2.188b har facit 25,3 med toleransen 0,005, så det exakta värdet 25,3125 underkänns utan avrundning. Facit är inte ändrat. |
 
 | 2026-11-17 | fy1 | rorelseenergi | 115 av 115 | Formler är borttagna ur frågorna (”med Eₖ = mv²/2”, ”med F = E/s”, definitionen av mekanisk energi). 5.609 avslöjade svaret i frågan. 5.537 hade förbehållet ”Bortse från luftmotståndet” fast uppgiften handlar om luftmotstånd. Villkor som påverkar svaret står kvar, till exempel ”konstant retardation” (5.488) och ”Bromskraften F är oförändrad” (5.224). |
+| 2026-11-17 | fy1 | arbete | 106 av 109 | ”gör arbete” är bytt mot ”uträttar arbete”. Formeln är borttagen ur intro (5.535) och meningen ”Här är två frågor …” likaså. Arbetets tecken anges inte. 5.499 har fått de verkliga platserna Death Valley och Mount Whitney. Testerna `fy1-svarsinstruktioner` (5.184) och `fysik1-arbete` (”andel”) är uppdaterade. |
 
 ### Tecken: riktning eller fysik
 
