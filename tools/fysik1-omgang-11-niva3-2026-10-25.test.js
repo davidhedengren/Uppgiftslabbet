@@ -13,7 +13,7 @@ test('25 spelbara nivå 3-kort i fyra områden, fysikformat och inga dubblettfac
   const per={};
   for(const id of NYA){const t=get(id);per[t.omr]=(per[t.omr]||0)+1;assert.equal(t.traningsniva,3,id);assert.equal(t.niva,'C',id);assert.equal(t.poang,'(0/1/0)',id);
     assert.equal(t.spel,true,id);assert.equal(t.miniräknare,true,id);
-    if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);assert.match(t.t,/Välj ett alternativ/,id);}
+    if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);assert.ok(/Välj ett alternativ/.test(t.t)||t.visaAlternativ===true,id);} // Språkomskrivningen 2026-11-17: alternativen visas via visaAlternativ i stället för en uppmaning i texten.
     else assert.ok(/\(Svara[^)]*\)\s*(<\/p>)?$/.test(t.t)||t.svarEnhet||t.svarVardesiffror!=null,id);}
   // 8.658 och 8.659 handlar om effekt och flyttades 2026-11-02 till kopplingar (effekt har inte gåtts igenom vid seriekoppling).
   assert.deepEqual(per,{st_diagram:7,newton3:6,laddning:6,seriekoppling:4,kopplingar:2});

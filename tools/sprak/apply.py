@@ -93,6 +93,9 @@ def main():
                     q["t"] = till_platshallare(d2["t"])[0]
                 if d2.get("fraga") != d0.get("fraga") and "f" not in q:
                     q["f"] = d2["fraga"]
+                    # Egen t som inte innehöll den bytta frasen: behåll den (annars kräver delkortet t).
+                    if d0.get("t") and "t" not in q and not (intro0 is not None and norm(d0["t"]) == norm(intro0 + "<p>" + (d0.get("fraga") or "") + "</p>")):
+                        q["t"] = till_platshallare(d2["t"])[0]
                 if q:
                     dd[et] = q
             p["d"] = dd
