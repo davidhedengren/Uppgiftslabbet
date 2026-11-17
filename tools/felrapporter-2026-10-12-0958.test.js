@@ -34,14 +34,17 @@ test('Enheter, precisionskrav och givna belopp följer med fristående delkort',
  assert.deepEqual(Array.from(q('7.03').svarFormat),['decimalform','decimalform','decimalform']);
  for(const id of ['3.08','3.126','3.80','3.82','3.89','3.07'])assert.equal(q(id).svarEnhet,'%',id);
  assert.match(q('3.40').spelDelar[2].t,/12 000 kr/);
- assert.match(q('3.40').spelDelar[2].t,/två decimaler/);
+ // Språkomskrivning 2026-11-17: precisionen står i delkortets kgInstruktion (visas bara i Kunskapsgymmet), inte i frågan.
+ const medKg=x=>(x.t||'')+' '+(x.kgInstruktion||'');
+ assert.match(medKg(q('3.40').spelDelar[2]),/två decimaler/);
  assert.match(q('3.28').spelDelar[2].t,/cykel kostar 1 875 kr med moms/);
- assert.match(q('3.88').spelDelar[1].t,/två decimaler/);
- assert.match(q('3.88').spelDelar[2].t,/två decimaler/);
+ assert.match(medKg(q('3.88').spelDelar[1]),/två decimaler/);
+ assert.match(medKg(q('3.88').spelDelar[2]),/två decimaler/);
  assert.doesNotMatch(q('3.127').spelDelar[2].t,/10 år|120 000/);
 });
 test('Avrundning använder fullprecision och halva steget, inte ett allmänt procentintervall',()=>{
- for(const id of ['3.223','3.203','3.217','3.518','3.519','3.520','3.39']){assert.equal(q(id).tolerans,.5);assert.match(q(id).t,/hela kronor/);}
+ // Språkomskrivning 2026-11-17: ”hela kronor” står i kgInstruktion.
+ for(const id of ['3.223','3.203','3.217','3.518','3.519','3.520','3.39']){assert.equal(q(id).tolerans,.5);assert.match(q(id).t+' '+(q(id).kgInstruktion||''),/hela kronor/);}
  assert.equal(q('3.40').tolerans[2],.005);assert.equal(q('3.88').tolerans[1],.005);assert.equal(q('3.88').tolerans[2],.005);
  assert.equal(q('3.126').tolerans,.05);assert.equal(q('3.82').tolerans,.005);
 });
