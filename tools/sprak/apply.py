@@ -77,7 +77,9 @@ def main():
                     if isinstance(obj.get(key), str) and a in obj[key]:
                         obj[key] = obj[key].replace(a, c); traff += 1
                 if not traff:
-                    raise ValueError(f"{id_}: ers hittade inte «{a[:50]}»")
+                    finns = any(isinstance(o.get(k), str) and c and c in o[k] for o, k in [(u2, "t"), (u2, "spelIntro")] + [(d, kk) for d in (u2.get("spelDelar") or []) for kk in ("t", "fraga")])
+                    if not finns and c:
+                        raise ValueError(f"{id_}: ers hittade inte «{a[:50]}»")
             p = dict(p)
             if u2.get("t") != u.get("t") and "t" not in p and "li" not in p and "fore" not in p:
                 p["t"] = till_platshallare(u2["t"])[0]

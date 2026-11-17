@@ -102932,7 +102932,7 @@ window.BANK = [
     "omr": "medicinska_metoder",
     "niva": "E",
     "poang": "(3/0/0)",
-    "t": "<p>Ett jod-131-preparat har startaktiviteten 400 MBq och halveringstiden 8,0 dygn. Räkna bara med radioaktivt sönderfall.</p><p>a) Bestäm aktiviteten efter 24 dygn i MBq.</p><p>b) Hur många halveringstider är 24 dygn?</p><p>c) Varför kan en halveringstid på några dygn vara användbar vid behandling?</p>",
+    "t": "<p>Ett jod-131-preparat har startaktiviteten 400 MBq och halveringstiden 8,0 dygn. Bortse från att kroppen gör sig av med jod på andra sätt.</p><p>a) Bestäm aktiviteten efter 24 dygn i MBq.</p><p>b) Hur många halveringstider är 24 dygn?</p><p>c) Varför kan en halveringstid på några dygn vara användbar vid behandling?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[n=24/8{,}0=3\\]</p><p>\\[A=400\\cdot2^{-3}=50\\ \\mathrm{MBq}\\]</p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[n=24/8{,}0=3\\]</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>Halveringstiden behöver vara lång nog för att ämnet ska hinna ge behandlingseffekt, men inte så lång att det bestrålar patienten onödigt länge efteråt.</p></div></div>",
     "familj": "Strålning i medicin",
     "formaga": [
@@ -102974,7 +102974,7 @@ window.BANK = [
     "familjNyckelTidigare": "aktivitet__radioaktivt_sonderfall_och_halveringstid",
     "ledtrad": "<p>Hur många halveringstider ryms i 24 dygn?</p>",
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>Ett jod-131-preparat har startaktiviteten 400 MBq och halveringstiden 8,0 dygn. Räkna bara med radioaktivt sönderfall.</p>",
+    "spelIntro": "<p>Ett jod-131-preparat har startaktiviteten 400 MBq och halveringstiden 8,0 dygn. Bortse från att kroppen gör sig av med jod på andra sätt.</p>",
     "spelDelar": [
       {
         "etikett": "a",
@@ -104601,7 +104601,7 @@ window.BANK = [
     "omr": "stralning_materia",
     "niva": "C",
     "poang": "(2/1/0)",
-    "t": "<p>Gammastrålningen halveras för varje 1,2 cm bly den passerar. Detta kallas halveringstjocklek.</p><p>a) Gammastrålningen halveras för varje 1,2 cm bly. Hur många procent passerar ett 2,4 cm tjockt blyskikt?</p><p>b) Gammastrålningen halveras för varje 1,2 cm bly. Hur många procent passerar ett 6 cm tjockt blyskikt?</p><p>c) Gammastrålningen halveras för varje 1,2 cm bly. Hur tjockt blyskikt behövs för att bara 1,0 % ska passera?</p>",
+    "t": "<p>Gammastrålningen halveras för varje 1,2 cm bly den passerar. Detta kallas halveringstjocklek.</p><p>a) Hur många procent passerar ett 2,4 cm tjockt blyskikt?</p><p>b) Hur många procent passerar ett 6 cm tjockt blyskikt?</p><p>c) Hur tjockt blyskikt behövs för att bara 1,0 % ska passera?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[n=2{,}4/1{,}2=2\\]</p><p>\\[p=100\\cdot2^{-2}=25\\ \\%\\]</p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[n=6/1{,}2=5\\]</p><p>\\[p=100\\cdot2^{-5}=3{,}125\\ \\%\\]</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>\\[0{,}010=2^{-x/1{,}2}\\]</p><p>\\[\\ln(0{,}010)=-(x/1{,}2)\\ln2\\]</p><p><div class=\"facit-v2\"><p>\\[x=-1{,}2\\ln(0{,}010)/\\ln2\\]</p><p>\\[x\\approx7{,}97\\ \\mathrm{cm}\\]</p></div></p></div></div>",
     "familj": "Skärmning och halveringstjocklek",
     "formaga": [
@@ -106786,7 +106786,7 @@ window.BANK = [
     "omr": "medicinska_metoder",
     "niva": "C",
     "poang": "(3/0/0)",
-    "t": "<p>Jod-131 försvinner genom radioaktivt sönderfall (halveringstid 8,0 dygn) och genom att kroppen utsöndrar ämnet (halveringstid 80 dygn). De två bortförselkonstanterna adderas.</p><p>a) Visa sambandet 1/Teff = 1/Tfys + 1/Tbio och beräkna Teff i dygn.</p><p>b) Hur många procent finns kvar efter 30 dygn?</p><p>c) Förklara varför Teff är kortare än båda de andra halveringstiderna.</p>",
+    "t": "<p>Jod-131 försvinner genom radioaktivt sönderfall (halveringstid 8,0 dygn) och genom att kroppen utsöndrar ämnet (halveringstid 80 dygn). Båda processerna pågår samtidigt.</p><p>a) Visa sambandet 1/Teff = 1/Tfys + 1/Tbio och beräkna Teff i dygn.</p><p>b) Hur många procent finns kvar efter 30 dygn?</p><p>c) Förklara varför Teff är kortare än båda de andra halveringstiderna.</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>Både sönderfall och utsöndring minskar mängden. De två bortförselkonstanterna adderas.</p><p>\\[\\lambda_{eff}=\\lambda_{fys}+\\lambda_{bio}\\]</p><p>\\[\\lambda=\\ln2/T\\]</p><p>Dividera båda sidor med ln 2.</p><p>\\[1/T_{eff}=1/T_{fys}+1/T_{bio}\\]</p><p><div class=\"facit-v2\"><p>\\[T_{eff}=1/(1/8+1/80)\\]</p><p>\\[T_{eff}\\approx7{,}27\\ \\mathrm{dygn}\\]</p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[p=100\\cdot2^{-30/T_{eff}}\\]</p><p>\\[p\\approx5{,}73\\ \\mathrm{\\%}\\]</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>När två processer minskar mängden samtidigt går den totala minskningen snabbare. Därför halveras mängden snabbare än med någon av processerna ensam.</p></div></div>",
     "familj": "Strålning i medicin",
     "formaga": [
@@ -106830,7 +106830,7 @@ window.BANK = [
     "familjNyckelTidigare": "aktivitet__radioaktivt_sonderfall_och_halveringstid",
     "ledtrad": "<p>Beräkna summan och ta sedan dess invers.</p>",
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>Jod-131 försvinner genom radioaktivt sönderfall (halveringstid 8,0 dygn) och genom att kroppen utsöndrar ämnet (halveringstid 80 dygn). De två bortförselkonstanterna adderas.</p>",
+    "spelIntro": "<p>Jod-131 försvinner genom radioaktivt sönderfall (halveringstid 8,0 dygn) och genom att kroppen utsöndrar ämnet (halveringstid 80 dygn). Båda processerna pågår samtidigt.</p>",
     "spelDelar": [
       {
         "etikett": "a",
@@ -110012,7 +110012,7 @@ window.BANK = [
     "omr": "fusion",
     "niva": "E",
     "poang": "(3/0/0)",
-    "t": "<p>Solen strålar ut 3,85·10²⁶ W och har massan 1,989·10³⁰ kg. Ett år är 3,156·10⁷ s. Räkna i denna modell med samma effekt under 4,6 miljarder år.</p><p>a) Hur mycket massa omvandlas till energi per sekund?</p><p>b) Hur mycket blir det på ett år?</p><p>c) Hur många procent av solens massa omvandlas under 4,6 miljarder år?</p>",
+    "t": "<p>Solen strålar ut 3,85·10²⁶ W och har massan 1,989·10³⁰ kg. Ett år är 3,156·10⁷ s. Antag att solen har strålat med samma effekt i 4,6 miljarder år.</p><p>a) Hur mycket massa omvandlas till energi per sekund?</p><p>b) Hur mycket blir det på ett år?</p><p>c) Hur många procent av solens massa omvandlas under 4,6 miljarder år?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>Effekt är energi per sekund. Därför ger E = mc² massan per sekund.</p><p><div class=\"facit-v2\"><p>\\[\\dot m=P/c^2\\]</p><p>\\[\\dot m\\approx4280000000\\ \\mathrm{kg/s}\\]</p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[m=\\dot m\\cdot3{,}156\\cdot10^7\\]</p><p>\\[m\\approx1{,}35\\cdot10^{17}\\ \\mathrm{kg}\\]</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[m=m_{år}\\cdot4{,}6\\cdot10^9\\]</p><p>\\[m\\approx6{,}22\\cdot10^{26}\\ \\mathrm{kg}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[andel=m/M\\cdot100\\]</p><p>\\[andel\\approx0{,}0313\\ \\%\\]</p></div></p></div></div>",
     "familj": "Fusion och energi",
     "formaga": [
@@ -110054,7 +110054,7 @@ window.BANK = [
     "familjNyckelTidigare": "karnreaktioner__fusion_och_massenergi",
     "ledtrad": "<p>Effekt är energi per sekund. Dela effekten med c².</p>",
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>Solen strålar ut 3,85·10²⁶ W och har massan 1,989·10³⁰ kg. Ett år är 3,156·10⁷ s. Räkna i denna modell med samma effekt under 4,6 miljarder år.</p>",
+    "spelIntro": "<p>Solen strålar ut 3,85·10²⁶ W och har massan 1,989·10³⁰ kg. Ett år är 3,156·10⁷ s. Antag att solen har strålat med samma effekt i 4,6 miljarder år.</p>",
     "spelDelar": [
       {
         "etikett": "a",
@@ -110096,7 +110096,7 @@ window.BANK = [
       },
       {
         "etikett": "c",
-        "fraga": "I en modell omvandlar solen 1,35·10¹⁷ kg till energi varje år under 4,6 miljarder år. Solens massa är 1,989·10³⁰ kg. Hur många procent av massan omvandlas?",
+        "fraga": "Solen omvandlar 1,35·10¹⁷ kg till energi varje år under 4,6 miljarder år. Solens massa är 1,989·10³⁰ kg. Hur många procent av massan omvandlas?",
         "s": "<div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[m=1{,}35\\cdot10^{17}\\cdot4{,}6\\cdot10^9\\]</p><p>\\[m\\approx6{,}21\\cdot10^{26}\\ \\mathrm{kg}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[andel=m/M\\cdot100\\]</p><p>\\[andel\\approx0{,}0312\\ \\%\\]</p></div></p></div>",
         "svarstyp": "numeriskt",
         "rättSvar": 0.03122171945701357,
@@ -110109,7 +110109,7 @@ window.BANK = [
         "traningsniva": 2,
         "poang": "1/0/0",
         "ledtrad": "<p>Räkna massan under hela tiden och dela med solens massa.</p>",
-        "t": "<p>I en modell omvandlar solen 1,35·10¹⁷ kg till energi varje år under 4,6 miljarder år. Solens massa är 1,989·10³⁰ kg. Hur många procent av massan omvandlas?</p>",
+        "t": "<p>Solen omvandlar 1,35·10¹⁷ kg till energi varje år under 4,6 miljarder år. Solens massa är 1,989·10³⁰ kg. Hur många procent av massan omvandlas?</p>",
         "arbetsinsats": 1,
         "miniräknare": true
       }
@@ -110131,7 +110131,7 @@ window.BANK = [
     "omr": "sonderfall",
     "niva": "E",
     "poang": "(4/0/0)",
-    "t": "<p>Stabila lätta kärnor har ungefär lika många protoner och neutroner. Jämför beta-minus och beta-plus.</p><p>a) Kol-11 har 6 protoner och 5 neutroner. Välj beta-minus eller beta-plus och ange dotterkärnan.</p><p>b) Kol-14 har 6 protoner och 8 neutroner. Välj beta-minus eller beta-plus och ange dotterkärnan.</p><p>c) Fosfor-32 har 15 protoner och 17 neutroner. Välj beta-minus eller beta-plus och ange dotterkärnan.</p><p>d) Syre-15 har 8 protoner och 7 neutroner. Välj beta-minus eller beta-plus och ange dotterkärnan.</p>",
+    "t": "<p>Stabila lätta kärnor har ungefär lika många protoner och neutroner. Avgör om kärnan sönderfaller med beta-minus eller beta-plus, och ange dotterkärnan.</p><p>a) Kol-11 har 6 protoner och 5 neutroner.</p><p>b) Kol-14 har 6 protoner och 8 neutroner.</p><p>c) Fosfor-32 har 15 protoner och 17 neutroner.</p><p>d) Syre-15 har 8 protoner och 7 neutroner.</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>Kol-11 är protonrik. Vid beta-plus minskar atomnumret med 1. Masstalet är 11. Dotterkärnan är bor-11, med atomnummer 5.</p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>Kol-14 är neutronrik. Vid beta-minus ökar atomnumret med 1. Masstalet är 14. Dotterkärnan är kväve-14, med atomnummer 7.</p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p>Fosfor-32 är neutronrik. Vid beta-minus ökar atomnumret med 1. Masstalet är 32. Dotterkärnan är svavel-32, med atomnummer 16.</p></div><p><strong>d)</strong></p><div class=\"facit-v2\"><p>Syre-15 är protonrik. Vid beta-plus minskar atomnumret med 1. Masstalet är 15. Dotterkärnan är kväve-15, med atomnummer 7.</p></div></div>",
     "familj": "Beta-minus-sönderfall",
     "formaga": [
@@ -110169,7 +110169,7 @@ window.BANK = [
     "familjTidigare": [
       "Beta-plus-sönderfall"
     ],
-    "spelIntro": "<p>Stabila lätta kärnor har ungefär lika många protoner och neutroner. Jämför beta-minus och beta-plus.</p>",
+    "spelIntro": "<p>Stabila lätta kärnor har ungefär lika många protoner och neutroner. Avgör om kärnan sönderfaller med beta-minus eller beta-plus.</p>",
     "spelDelning": "deluppgifter",
     "spelDelar": [
       {
@@ -160776,7 +160776,7 @@ window.BANK = [
     "omr": "fission",
     "niva": "C",
     "poang": "(1/1/0)",
-    "t": "<p>I en modell frigör fullständig klyvning av uran-235 energin 1,0·10¹⁴ J. Varje klyvning ger 200 MeV och en atom har massan 235,04 u.</p><p>a) Uranklyvning frigör 1,0·10¹⁴ J. Varje klyvning ger 200 MeV och en uranatom har massan 235,04 u. Hur många kg uran klyvs?</p><p>b) Energin 1,0·10¹⁴ J frigörs. Hur stor massa motsvarar energin enligt E = mc²?</p>",
+    "t": "<p>När uran-235 klyvs helt frigörs energin 1,0·10¹⁴ J. Varje klyvning ger 200 MeV och en uranatom har massan 235,04 u.</p><p>a) Hur många kg uran klyvs?</p><p>b) Hur stor massa omvandlas till energi?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[E_f=200\\cdot10^6\\cdot1{,}602\\cdot10^{-19}\\]</p><p>\\[E_f\\approx3{,}2\\cdot10^{-11}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[N=1{,}0\\cdot10^{14}/E_f\\]</p><p>\\[N\\approx3{,}12\\cdot10^{24}\\]</p></div></p><p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[m_{atom}=235{,}04\\cdot1{,}6605\\cdot10^{-27}\\]</p><p>\\[m_{atom}\\approx3{,}9\\cdot10^{-25}\\ \\mathrm{kg}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[m=N m_{atom}\\]</p><p>\\[m\\approx1{,}22\\ \\mathrm{kg}\\]</p></div></p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[\\Delta m=1{,}0\\cdot10^{14}/(3{,}00\\cdot10^8)^2\\]</p><p>\\[\\Delta m\\approx0{,}00111\\ \\mathrm{kg}\\]</p></div></div>",
     "id": "9.409",
     "miniräknare": true,
@@ -160813,7 +160813,7 @@ window.BANK = [
       "kg"
     ],
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>I en modell frigör fullständig klyvning av uran-235 energin 1,0·10¹⁴ J. Varje klyvning ger 200 MeV och en atom har massan 235,04 u.</p>",
+    "spelIntro": "<p>När uran-235 klyvs helt frigörs energin 1,0·10¹⁴ J. Varje klyvning ger 200 MeV och en uranatom har massan 235,04 u.</p>",
     "spelDelar": [
       {
         "etikett": "a",
@@ -160866,7 +160866,7 @@ window.BANK = [
     "omr": "fission",
     "niva": "C",
     "poang": "(3/1/0)",
-    "t": "<p>En reaktor ger 1 400 MW el och dubbelt så stor effekt i värme till omgivningen under ett år. En villa använder 5 000 kWh per år. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Bränslet innehåller 3,0 % uran-235. Ett år är 3,156·10⁷ s.</p><p>a) En reaktor ger 1 400 MW el under ett helt år. En villa använder 5 000 kWh per år. Ungefär hur många villors årsbehov motsvarar elenergin? Ett år är 3,156·10⁷ s.</p><p>b) En reaktor ger 1 400 MW el och 2 800 MW värme till omgivningen under ett år. Hur mycket energi frigörs totalt i reaktorn i J? Ett år är 3,156·10⁷ s.</p><p>c) Uranklyvning frigör 1,33·10¹⁷ J. Varje klyvning ger 200 MeV. En uran-235-atom har massan 235,04 u. Hur många kg uran-235 klyvs?</p><p>d) Det behövs 1 615 kg uran-235. Bränslet innehåller 3,0 % uran-235. Hur många kg bränsle innehåller denna mängd?</p>",
+    "t": "<p>En reaktor ger 1 400 MW el och dubbelt så stor effekt i värme till omgivningen under ett helt år. En villa använder 5 000 kWh per år. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Bränslet innehåller 3,0 % uran-235. Ett år är 3,156·10⁷ s.</p><p>a) Ungefär hur många villors årsbehov motsvarar elenergin?</p><p>b) Hur mycket energi frigörs totalt i reaktorn under ett år?</p><p>c) Hur många kg uran-235 klyvs under ett år?</p><p>d) Hur många kg bränsle går åt under ett år?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[E_{el}=1400\\cdot10^6\\cdot3{,}156\\cdot10^7\\]</p><p>\\[E_{el}\\approx4{,}42\\cdot10^{16}\\ \\mathrm{J}\\]</p></div></p><p>\\[E_{villa}=5000\\cdot3{,}6\\cdot10^6\\ \\mathrm J\\]</p><p><div class=\"facit-v2\"><p>\\[n=E_{el}/E_{villa}\\]</p><p>\\[n\\approx2450000\\]</p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p>\\[P=1400+2800=4200\\ \\mathrm{MW}\\]</p><p><div class=\"facit-v2\"><p>\\[E=4200\\cdot10^6\\cdot3{,}156\\cdot10^7\\]</p><p>\\[E\\approx1{,}33\\cdot10^{17}\\ \\mathrm{J}\\]</p></div></p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[N=E/E_f\\]</p><p>\\[N\\approx4{,}14\\cdot10^{27}\\]</p></div></p><p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[m_{atom}=235{,}04\\cdot1{,}6605\\cdot10^{-27}\\]</p><p>\\[m_{atom}\\approx3{,}9\\cdot10^{-25}\\ \\mathrm{kg}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[m=N m_{atom}\\]</p><p>\\[m\\approx1610\\ \\mathrm{kg}\\]</p></div></p></div></p></div><p><strong>d)</strong></p><div class=\"facit-v2\"><p>\\[m=m_{235}/0{,}030\\]</p><p>\\[m\\approx53800\\ \\mathrm{kg}\\]</p></div></div>",
     "id": "9.410",
     "miniräknare": true,
@@ -161006,7 +161006,7 @@ window.BANK = [
     "omr": "fission",
     "niva": "C",
     "poang": "(2/1/0)",
-    "t": "<p>En uranreserv innehåller 4,4·10⁶ ton naturligt uran, med 0,700 % uran-235. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Jämför med en konstant effekt på 1,5·10¹³ W. Ett år är 3,156·10⁷ s.</p><p>a) En uranreserv innehåller 4,4·10⁶ ton naturligt uran. Av massan är 0,700 % uran-235. Hur många kg uran-235 finns i reserven?</p><p>b) En reserv innehåller 3,08·10⁷ kg uran-235. En atom har massan 235,04 u och varje klyvning ger 200 MeV. Hur mycket energi frigörs om allt klyvs?</p><p>c) En energireserv är 2,5·10²¹ J. Hur många år räcker den vid den konstanta effekten 1,5·10¹³ W? Ett år är 3,156·10⁷ s.</p>",
+    "t": "<p>En uranreserv innehåller 4,4·10⁶ ton naturligt uran, varav 0,700 % är uran-235. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Ett år är 3,156·10⁷ s.</p><p>a) Hur många kg uran-235 finns i reserven?</p><p>b) Hur mycket energi frigörs om allt uran-235 klyvs?</p><p>c) Hela världens energianvändning motsvarar ungefär den konstanta effekten 1,5·10¹³ W. Hur många år skulle energin räcka?</p>",
     "s": "<div class=\"facit-v2\"><p><strong>a)</strong></p><div class=\"facit-v2\"><p>\\[m_U=4{,}4\\cdot10^9\\ \\mathrm{kg}\\]</p><p><div class=\"facit-v2\"><p>\\[m_{235}=4{,}4\\cdot10^9\\cdot0{,}00700\\]</p><p>\\[m_{235}\\approx30800000\\ \\mathrm{kg}\\]</p></div></p></div><p><strong>b)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[m_{atom}=235{,}04\\cdot1{,}6605\\cdot10^{-27}\\]</p><p>\\[m_{atom}\\approx3{,}9\\cdot10^{-25}\\ \\mathrm{kg}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[N=3{,}08\\cdot10^7/m_{atom}\\]</p><p>\\[N\\approx7{,}89\\cdot10^{31}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E_f=200\\cdot10^6\\cdot1{,}602\\cdot10^{-19}\\]</p><p>\\[E_f\\approx3{,}2\\cdot10^{-11}\\ \\mathrm{J}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[E=N E_f\\]</p><p>\\[E\\approx2{,}53\\cdot10^{21}\\ \\mathrm{J}\\]</p></div></p></div><p><strong>c)</strong></p><div class=\"facit-v2\"><p><div class=\"facit-v2\"><p>\\[t=E/P\\]</p><p>\\[t\\approx169000000\\ \\mathrm{s}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[t=t_{\\mathrm s}/(3{,}156\\cdot10^7)\\]</p><p>\\[t\\approx5{,}34\\ \\mathrm{år}\\]</p></div></p></div></div>",
     "id": "9.411",
     "miniräknare": true,
@@ -161049,7 +161049,7 @@ window.BANK = [
       "år"
     ],
     "spelDelning": "deluppgifter",
-    "spelIntro": "<p>En uranreserv innehåller 4,4·10⁶ ton naturligt uran, med 0,700 % uran-235. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Jämför med en konstant effekt på 1,5·10¹³ W. Ett år är 3,156·10⁷ s.</p>",
+    "spelIntro": "<p>En uranreserv innehåller 4,4·10⁶ ton naturligt uran, varav 0,700 % är uran-235. En uran-235-atom har massan 235,04 u och varje klyvning ger 200 MeV. Ett år är 3,156·10⁷ s.</p>",
     "spelDelar": [
       {
         "etikett": "a",
@@ -185367,7 +185367,7 @@ window.BANK = [
     "omr": "fyra_krafterna",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>Mellan två protoner gäller Fₑ = ke²/r² och Fg = Gmₚ²/r². Hur många gånger större är den elektriska kraften än gravitationskraften?</p>",
+    "t": "<p>Två protoner påverkar varandra både med en elektrisk kraft och med gravitationskraft. Hur många gånger större är den elektriska kraften än gravitationskraften?</p>",
     "s": "<div class=\"facit-v2\"><p>Faktorn 1/r² förkortas bort i kvoten.</p><p>\\[F_e/F_g=ke^2/(Gm_p^2)\\]</p><p><div class=\"facit-v2\"><p>\\[ke^2=8{,}99\\cdot10^9(1{,}602\\cdot10^{-19})^2\\]</p><p>\\[ke^2\\approx2{,}31\\cdot10^{-28}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[Gm_p^2=6{,}67\\cdot10^{-11}(1{,}673\\cdot10^{-27})^2\\]</p><p>\\[Gm_p^2\\approx1{,}87\\cdot10^{-64}\\]</p></div></p><p>\\[F_e/F_g=ke^2/(Gm_p^2)\\]\\[F_e/F_g\\approx1{,}24\\cdot10^{36}\\]</p></div>",
     "familj": "De fyra fundamentala krafterna",
     "formaga": [
@@ -185394,7 +185394,7 @@ window.BANK = [
     "omr": "fyra_krafterna",
     "niva": "C",
     "poang": "(0/1/0)",
-    "t": "<p>Tänk dig att jorden och månen har lika stora laddningar av samma tecken. Hur stor laddning på vardera kroppen skulle göra den elektriska kraften lika stor som gravitationskraften? Jordens massa är Mⱼ = 5,97·10²⁴ kg och månens Mₘ = 7,35·10²² kg.</p>",
+    "t": "<p>Antag att jorden och månen hade lika stora laddningar av samma slag. Hur stor laddning skulle de behöva ha för att den elektriska kraften mellan dem skulle bli lika stor som gravitationskraften?</p>",
     "s": "<div class=\"facit-v2\"><p>Elektrisk bortstötning ska vara lika stor som gravitationens attraktion.</p><p>\\[kQ^2/r^2=GM_JM_M/r^2\\]</p><p>Faktorn 1/r² förkortas bort.</p><p>\\[Q^2=GM_JM_M/k\\]</p><p><div class=\"facit-v2\"><p><p>Multiplicera G med de båda massorna.</p></p><p>\\[GM_JM_M\\approx2{,}93\\cdot10^{37}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[Q^2=2{,}92676265\\cdot10^{37}/(8{,}99\\cdot10^9)\\]</p><p>\\[Q^2\\approx3{,}26\\cdot10^{27}\\]</p></div></p><p><div class=\"facit-v2\"><p>\\[Q=\\sqrt{3{,}25557580645\\cdot10^{27}}\\]</p><p>\\[Q\\approx5{,}71\\cdot10^{13}\\ \\mathrm{C}\\]</p></div></p></div>",
     "familj": "De fyra fundamentala krafterna",
     "formaga": [
@@ -185762,7 +185762,7 @@ window.BANK = [
     "omr": "fusion",
     "niva": "E",
     "poang": "(1/0/0)",
-    "t": "<p>D–T-fusion: ²H + ³H → ⁴He + n. Atommassorna är 2,014102 u, 3,016049 u, 4,002603 u och 1,008665 u i samma ordning. Bestäm massminskningen i u med sex decimaler.</p>",
+    "t": "<p>D–T-fusion: ²H + ³H → ⁴He + n. Atommassorna är 2,014102 u, 3,016049 u, 4,002603 u och 1,008665 u i samma ordning. Hur mycket minskar massan?</p>",
     "s": "<div class=\"facit-v2\"><p>\\[m_{före}=2{,}014102+3{,}016049\\]</p><p>\\[m_{före}=5{,}030151\\ \\mathrm u\\]</p><p>\\[m_{efter}=4{,}002603+1{,}008665\\]</p><p>\\[m_{efter}=5{,}011268\\ \\mathrm u\\]</p><p>\\[\\Delta m=5{,}030151-5{,}011268\\]</p><p>\\[\\Delta m=0{,}018883\\ \\mathrm u\\]</p></div>",
     "familj": "Fusion och energi",
     "formaga": [
@@ -198696,7 +198696,7 @@ window.BANK = [
   "omr": "fyra_krafterna",
   "niva": "C",
   "poang": "(0/1/0)",
-  "t": "<p>I en väteatom attraherar protonen och elektronen varandra både elektriskt och med gravitation. Båda krafterna avtar som \\(1/r^2\\).</p><p>Hur många gånger större är den elektriska kraften än gravitationskraften mellan protonen och elektronen?</p>",
+  "t": "<p>I en väteatom attraherar protonen och elektronen varandra både elektriskt och med gravitationskraft.</p><p>Hur många gånger större är den elektriska kraften än gravitationskraften?</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Skriv kvoten mellan Coulombs lag och gravitationslagen. Avståndet r finns i båda nämnarna:</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\frac{F_e}{F_g}=\\frac{ke^2/r^2}{Gm_em_p/r^2}=\\frac{ke^2}{Gm_em_p}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\frac{8{,}99\\cdot10^9\\cdot(1{,}602\\cdot10^{-19})^2}{6{,}674\\cdot10^{-11}\\cdot9{,}109\\cdot10^{-31}\\cdot1{,}673\\cdot10^{-27}}\\approx2{,}3\\cdot10^{39}\\]</div></div><div class=\"facit-stycke\"><p>Avståndet tar ut sig, så kvoten gäller oberoende av avståndet. Gravitationen är helt försumbar i atomen.</p></div></div><p class=\"facit-svar\"><strong>Svar:</strong> cirka 2,3·10³⁹ gånger</p></div>",
   "familj": "De fyra fundamentala krafterna",
   "formaga": [
@@ -198836,7 +198836,7 @@ window.BANK = [
   "omr": "fyra_krafterna",
   "niva": "C",
   "poang": "(0/1/0)",
-  "t": "<p>Två blykulor med massan 1,0 kg vardera ligger 0,10 m från varandra. De attraherar varandra med gravitationen.</p><p>Anta att varje kula fick lika många extra elektroner. Hur många extra elektroner skulle varje kula behöva för att den elektriska repulsionen ska bli lika stor som gravitationen?</p>",
+  "t": "<p>Två blykulor med massan 1,0 kg vardera ligger 0,10 m från varandra. De attraherar varandra med gravitationen.</p><p>Antag att varje kula fick lika många extra elektroner. Hur många extra elektroner skulle varje kula behöva för att den elektriska repulsionen ska bli lika stor som gravitationen?</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Den elektriska repulsionen ska vara lika stor som gravitationen. Sätt Coulombs lag lika med gravitationslagen och lös ut laddningen:</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\frac{kq^2}{r^2}=\\frac{Gm^2}{r^2}\\;\\Rightarrow\\;q=m\\sqrt{\\frac{G}{k}}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[q=1{,}0\\cdot\\sqrt{\\frac{6{,}674\\cdot10^{-11}}{8{,}99\\cdot10^9}}\\ \\text{C}\\approx8{,}6\\cdot10^{-11}\\ \\text{C}\\]</div></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[N=\\frac{q}{e}=\\frac{8{,}6\\cdot10^{-11}}{1{,}602\\cdot10^{-19}}\\approx5{,}4\\cdot10^8\\]</div></div><div class=\"facit-stycke\"><p>En kula med massan 1 kg innehåller ungefär 10²⁶ elektroner. Det räcker alltså med ett överskott på ungefär en elektron på 10¹⁸ för att den elektriska kraften ska bli lika stor som gravitationen. Därför märks gravitationen bara när föremålen är mycket nära neutrala.</p></div></div><p class=\"facit-svar\"><strong>Svar:</strong> cirka 5,4·10⁸ elektroner</p></div>",
   "familj": "De fyra fundamentala krafterna",
   "formaga": [
@@ -202021,7 +202021,7 @@ window.BANK = [
   "niva": "E",
   "typ": "Räkna kvarkar i en atomkärna",
   "poang": "(1/0/0)",
-  "t": "<p>Figuren visar en förenklad modell av en atom. Hur många kvarkar finns sammanlagt i atomkärnan?</p><span class=\"fig\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 325\" role=\"img\" aria-label=\"Atomkärnan innehåller tre protoner och fyra neutroner. Tre elektroner finns utanför kärnan.\" style=\"width:100%;max-width:480px\"><rect width=\"480\" height=\"325\" fill=\"white\"/><ellipse cx=\"240\" cy=\"150\" rx=\"173\" ry=\"112\" fill=\"none\" stroke=\"#94a7b9\" stroke-width=\"2\"/><ellipse cx=\"240\" cy=\"150\" rx=\"109\" ry=\"62\" fill=\"#f1f5fa\" stroke=\"#94a7b9\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"200\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"240\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"240\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"280\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"280\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"180\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"180\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"220\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"220\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"260\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"260\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"300\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"300\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"413.0\" cy=\"150.0\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"413.0\" y=\"156.0\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><circle cx=\"153.5\" cy=\"246.99\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"153.5\" y=\"252.99\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><circle cx=\"153.5\" cy=\"53.01\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"153.5\" y=\"59.01\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><text x=\"240\" y=\"299\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p = proton     n = neutron</text></svg></span>",
+  "t": "<p>Figuren visar en förenklad modell av en atom. Hur många kvarkar finns det i atomkärnan?</p><span class=\"fig\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 325\" role=\"img\" aria-label=\"Atomkärnan innehåller tre protoner och fyra neutroner. Tre elektroner finns utanför kärnan.\" style=\"width:100%;max-width:480px\"><rect width=\"480\" height=\"325\" fill=\"white\"/><ellipse cx=\"240\" cy=\"150\" rx=\"173\" ry=\"112\" fill=\"none\" stroke=\"#94a7b9\" stroke-width=\"2\"/><ellipse cx=\"240\" cy=\"150\" rx=\"109\" ry=\"62\" fill=\"#f1f5fa\" stroke=\"#94a7b9\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"200\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"240\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"240\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"280\" cy=\"125\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"280\" y=\"131\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p</text><circle cx=\"180\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"180\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"220\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"220\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"260\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"260\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"300\" cy=\"170\" r=\"17\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"300\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">n</text><circle cx=\"413.0\" cy=\"150.0\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"413.0\" y=\"156.0\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><circle cx=\"153.5\" cy=\"246.99\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"153.5\" y=\"252.99\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><circle cx=\"153.5\" cy=\"53.01\" r=\"16\" fill=\"#e4f0f8\" stroke=\"#243447\" stroke-width=\"2\"/><text x=\"153.5\" y=\"59.01\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">e−</text><text x=\"240\" y=\"299\" font-family=\"Arial,sans-serif\" font-size=\"18\" text-anchor=\"middle\" fill=\"#243447\">p = proton     n = neutron</text></svg></span>",
   "s": "<div class=\"facit-v2\"><p>Kärnan innehåller 3 protoner och 4 neutroner, alltså \\(3+4=7\\) partiklar.</p><p>Varje proton och neutron innehåller tre kvarkar. Antalet blir därför \\(7\\cdot3=\\mathbf{21}\\).</p><p>Elektronerna utanför kärnan består inte av kvarkar och räknas inte med.</p></div>",
   "familj": "Elementarpartiklar och kvarkar",
   "formaga": [
@@ -213908,7 +213908,7 @@ window.BANK = [
   "niva": "E",
   "typ": "E = mc² med milligram",
   "poang": "(1/0/0)",
-  "t": "<p>Vid fusion i en testreaktor omvandlas sammanlagt 2,0 mg massa till energi. Hur mycket energi frigörs?</p>",
+  "t": "<p>Vid fusion i en testreaktor omvandlas 2,0 mg massa till energi. Hur mycket energi frigörs?</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Använd \\(E=mc^2\\) med massan i kg: 2,0 mg = 2,0·10⁻⁶ kg.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[E=2{,}0\\cdot10^{-6}\\cdot(3{,}0\\cdot10^{8})^2\\ \\mathrm J=1{,}8\\cdot10^{11}\\ \\mathrm J=180\\ \\mathrm{GJ}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> 180 GJ.</p></div>",
   "familj": "Fusion och energi",
   "formaga": [
@@ -215165,7 +215165,7 @@ window.BANK = [
   "niva": "E",
   "typ": "aktivitet efter två halveringstider",
   "poang": "(1/0/0)",
-  "t": "<p>Teknetium-99m har halveringstiden 6,0 h. En patient får ett spårämne med aktiviteten 800 MBq. Hur stor är aktiviteten efter 12 h, om man bara räknar med det radioaktiva sönderfallet?</p>",
+  "t": "<p>Teknetium-99m har halveringstiden 6,0 h. En patient får ett spårämne med aktiviteten 800 MBq. Hur stor är aktiviteten efter 12 h? Bortse från att kroppen gör sig av med ämnet på andra sätt.</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">12 h är två halveringstider.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[800\\cdot\\left(\\tfrac12\\right)^2\\ \\mathrm{MBq}=200\\ \\mathrm{MBq}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> 200 MBq.</p></div>",
   "familj": "Strålning i medicin",
   "formaga": [
@@ -217013,7 +217013,7 @@ window.BANK = [
   "niva": "E",
   "typ": "antineutrinons energi",
   "poang": "(1/0/0)",
-  "t": "<p>Vid ett beta-minus-sönderfall frigörs 1,31 MeV. Elektronen får rörelseenergin 0,52 MeV. Hur mycket energi får antineutrinon? Försumma dotterkärnans rekyl.</p>",
+  "t": "<p>Vid ett beta-minus-sönderfall frigörs 1,31 MeV. Elektronen får rörelseenergin 0,52 MeV. Hur mycket energi får antineutrinon? Bortse från att dotterkärnan börjar röra sig.</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Energin delas mellan elektronen och antineutrinon.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[E_{\\bar\\nu}=1{,}31-0{,}52=0{,}79\\ \\mathrm{MeV}\\]</div></div></div><p class=\"facit-svar\"><strong>Svar:</strong> 0,79 MeV.</p></div>",
   "familj": "Beta-minus-sönderfall",
   "formaga": [
@@ -217140,7 +217140,7 @@ window.BANK = [
   "niva": "C",
   "typ": "energi per kilogram fusionsbränsle",
   "poang": "(0/1/0)",
-  "t": "<p>En D–T-reaktion frigör 17,6 MeV. Bränslet i varje reaktion har massan 5,0 u (1 u = 1,6605·10⁻²⁷ kg). Hur mycket energi frigörs per kilogram bränsle?</p>",
+  "t": "<p>En D–T-reaktion frigör 17,6 MeV. Bränslet i varje reaktion har massan 5,0 u. Hur mycket energi frigörs per kilogram bränsle?</p>",
   "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-forklaring\"><div class=\"facit-stycke\"><p class=\"facit-metod\">Dela energin per reaktion med bränslets massa per reaktion.</p></div><div class=\"facit-stycke\"><div class=\"facit-matte\">\\[\\begin{gathered}\\frac{17{,}6\\cdot10^{6}\\cdot1{,}602\\cdot10^{-19}\\ \\mathrm J}{5{,}0\\cdot1{,}6605\\cdot10^{-27}\\ \\mathrm{kg}}\\\\\\approx3{,}40\\cdot10^{14}\\ \\mathrm{J/kg}\\end{gathered}\\]</div></div><div class=\"facit-stycke\"><p class=\"facit-metod\">Det är ungefär tio miljoner gånger mer än vid förbränning av kol.</p></div></div><p class=\"facit-svar\"><strong>Svar:</strong> 340 TJ per kg.</p></div>",
   "familj": "Fusion och energi",
   "formaga": [
