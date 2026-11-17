@@ -140,7 +140,7 @@ Kör alla kommandon från `C:\Users\Hedav\code\Uppgiftslabbet` med `PYTHONUTF8=1
 
 **Parallella sessioner (2026-11-17):** en session tar Fy1 område för område, en annan Ma1. Skriv in ditt område i tabellen när du är klar och hämta (`git pull --rebase`) före varje commit. Vid konflikt i `KLARA` i `tools/sprak-2026-11-17.test.js` slås listorna ihop, och vid konflikt i `BANK_VERSION` i Kunskapsgymmet väljs ett nytt namn.
 
-Prioritet efter täthet av AI-mönster: först resten av Fy1 område för område, sedan Fy2, Ma1, Ma2, Ma3c, Ma4 och Ma5.
+**Användarbeslut 2026-11-17: Fy1 kapitel 9 görs först (det undervisas nu), sedan resten av kapitel 4.** Efter varje kapitel ska användaren få exempel på gjorda ändringar. Prioritet i övrigt efter täthet av AI-mönster: först resten av Fy1 område för område, sedan Fy2, Ma1, Ma2, Ma3c, Ma4 och Ma5.
 Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter 4, 3, 6–9 och sist 2.
 
 | Datum | Bank | Område | Uppgifter | Anmärkning |
@@ -165,6 +165,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-17 | fy1 | arbete | 106 av 109 | ”gör arbete” är bytt mot ”uträttar arbete”. Formeln är borttagen ur intro (5.535) och meningen ”Här är två frågor …” likaså. Arbetets tecken anges inte. 5.499 har fått de verkliga platserna Death Valley och Mount Whitney. Testerna `fy1-svarsinstruktioner` (5.184) och `fysik1-arbete` (”andel”) är uppdaterade. |
 | 2026-11-17 | fy1 | effekt | 117 av 120 | Svarsinstruktioner som ”(Svara i kW.)” och ”Svara med ett positivt värde” är borttagna. ”Verkningsgrad är …” och ”Räkna på …” likaså. ”En elev” har fått namn. ”Svara i decimalform.” står bara i `kgInstruktion` (5.327, 5.588 b). Testerna `fysik1-effekt`, `fysik1-effekt-variation` och `a-uppgifter` (5.640) är uppdaterade. |
 | 2026-11-17 | fy1 | blandat_energi | 74 av 76 | Uppgifterna på A-nivå behåller nödvändiga modellvillkor men har fått kortare och vardagligare text. 5.117 behåller ”på passageraren under inbromsningen”, som är låst av två felrapporttester. Teckenriktning står i `kgInstruktion` (5.110, 5.132, 5.166). |
+| 2026-11-17 | fy1 | tyngdkraft | 40 av 46 | ”modellplanet” heter nu ”främmande planet”. ”I denna uppgift används …” har blivit en vanlig mening, till exempel ”Tyngdaccelerationen är 1,62 m/s² på månen.”, eftersom testerna låser formen ”… m/s² på månen/Mars”. ”Kraftmätare” behålls, eftersom läraren använder ordet. |
 
 ### Tecken: riktning eller fysik
 
