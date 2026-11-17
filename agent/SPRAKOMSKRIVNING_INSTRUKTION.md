@@ -164,6 +164,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-17 | fy1 | rorelseenergi | 115 av 115 | Formler är borttagna ur frågorna (”med Eₖ = mv²/2”, ”med F = E/s”, definitionen av mekanisk energi). 5.609 avslöjade svaret i frågan. 5.537 hade förbehållet ”Bortse från luftmotståndet” fast uppgiften handlar om luftmotstånd. Villkor som påverkar svaret står kvar, till exempel ”konstant retardation” (5.488) och ”Bromskraften F är oförändrad” (5.224). |
 | 2026-11-17 | fy1 | arbete | 106 av 109 | ”gör arbete” är bytt mot ”uträttar arbete”. Formeln är borttagen ur intro (5.535) och meningen ”Här är två frågor …” likaså. Arbetets tecken anges inte. 5.499 har fått de verkliga platserna Death Valley och Mount Whitney. Testerna `fy1-svarsinstruktioner` (5.184) och `fysik1-arbete` (”andel”) är uppdaterade. |
 | 2026-11-17 | fy1 | effekt | 117 av 120 | Svarsinstruktioner som ”(Svara i kW.)” och ”Svara med ett positivt värde” är borttagna. ”Verkningsgrad är …” och ”Räkna på …” likaså. ”En elev” har fått namn. ”Svara i decimalform.” står bara i `kgInstruktion` (5.327, 5.588 b). Testerna `fysik1-effekt`, `fysik1-effekt-variation` och `a-uppgifter` (5.640) är uppdaterade. |
+| 2026-11-17 | fy1 | blandat_energi | 74 av 76 | Uppgifterna på A-nivå behåller nödvändiga modellvillkor men har fått kortare och vardagligare text. 5.117 behåller ”på passageraren under inbromsningen”, som är låst av två felrapporttester. Teckenriktning står i `kgInstruktion` (5.110, 5.132, 5.166). |
 
 ### Tecken: riktning eller fysik
 
