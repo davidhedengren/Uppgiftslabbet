@@ -156,6 +156,20 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-17 | ma1 | tal_rakneordning | 10 av 108 | Namn i stället för ”en elev”, inga ”Välj ett alternativ.”. |
 | 2026-11-17 | ma1 | decimaltal_positionssystem, avrundning, overslag_grunder, andelar | 5 av 100, 7 av 71, 12 av 65, 13 av 78 | Avrundningskrav som rättningen behöver (facit avrundat) står i `kgInstruktion`. ”Anta” heter ”Antag”. |
 
+| 2026-11-17 | fy1 | rorelseenergi | 115 av 115 | Formler är borttagna ur frågorna (”med Eₖ = mv²/2”, ”med F = E/s”, definitionen av mekanisk energi). 5.609 avslöjade svaret i frågan. 5.537 hade förbehållet ”Bortse från luftmotståndet” fast uppgiften handlar om luftmotstånd. Villkor som påverkar svaret står kvar, till exempel ”konstant retardation” (5.488) och ”Bromskraften F är oförändrad” (5.224). |
+
+### Tecken: riktning eller fysik
+
+- **Riktningstecken** (hastighet, rörelsemängd, impuls och kraft längs en linje) beror på vald riktning. Om svaret har
+  tecken ska `kgInstruktion` säga vilken riktning som är positiv, till exempel ”Höger räknas som positiv riktning.”
+- **Arbetets tecken** (friktionens eller bromsande krafters arbete) är fysik och ingen överenskommelse. Där behövs
+  ingen instruktion, eftersom eleven ska inse att arbetet är negativt (användarbeslut: ”det får de förstå själva”).
+- **Fältkontroll:** kör `python tools/sprak/faltkoll.py <bank före omskrivningen> uppgifter.js [id med avsiktligt
+  ändrat facit …]`. Kontrollen visar om något annat än `t`, `spelIntro`, `kgInstruktion`, `visaAlternativ` eller
+  delkortens `t`, `fraga` och `kgInstruktion` har ändrats. Ta fram banken före omskrivningen med
+  `git show 075bc77~1:uppgifter.js`. Verktyget ankrar varje ersättning vid fältnamnet, så att en ledtråd med
+  samma text inte ändras.
+
 ### Fler lärdomar från kollisioner
 
 - **Flerval:** Uppgiftslabbet skriver bara ut A–D när texten innehåller ”alternativ”, ”markera”, ”kryssa” eller ”ringa

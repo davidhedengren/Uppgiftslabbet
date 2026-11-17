@@ -59,7 +59,7 @@ def main():
                 if obj[nyckel] != varde:
                     if not isinstance(obj[nyckel], str):
                         raise ValueError(f"{id_}: {nyckel} finns redan med annat värde")
-                    par.append((obj[nyckel], varde))
+                    par.append((obj[nyckel], varde, nyckel))
             else:
                 till.append((ankare, nyckel, varde))
         t0, intro0 = u.get("t", ""), u.get("spelIntro")
@@ -72,7 +72,7 @@ def main():
         if "intro" in p:
             intro1 = fran_platshallare(p["intro"], till_platshallare(intro0)[1], id_ + " intro")
             jamfor(id_, "intro", intro0, intro1, varn)
-            par.append((intro0, intro1))
+            par.append((intro0, intro1, "spelIntro"))
         # delkort
         nya_f = {}
         for i, d in enumerate(delar):
@@ -80,7 +80,7 @@ def main():
             q = (p.get("d") or {}).get(et)
             if not q:
                 if "intro" in p and d.get("t") and intro0 is not None and norm(d["t"]) == norm(intro0 + "<p>" + (d.get("fraga") or "") + "</p>"):
-                    par.append((d["t"], intro1 + "<p>" + d["fraga"] + "</p>"))
+                    par.append((d["t"], intro1 + "<p>" + d["fraga"] + "</p>", "t"))
                 continue
             f0, dt0 = d.get("fraga"), d.get("t")
             f1 = q.get("f", f0)
@@ -95,8 +95,8 @@ def main():
                 dt1 = dt0
             if dt0 is not None:
                 jamfor(id_, f"del {et}", dt0, dt1, varn)
-            par += [(dt0, dt1)] if dt0 is not None else []
-            par += [(f0, f1)] if f0 is not None else []
+            par += [(dt0, dt1, "t")] if dt0 is not None else []
+            par += [(f0, f1, "fraga")] if f0 is not None else []
             if q.get("kg"):
                 lagg(d, dt1 if dt0 is not None else f1, "kgInstruktion", q["kg"])
         # huvudtext
@@ -122,7 +122,7 @@ def main():
             t1 = t0
         if t1 != t0:
             jamfor(id_, "t", t0, t1, varn)
-            par.insert(0, (t0, t1))
+            par.insert(0, (t0, t1, "t"))
         if p.get("kg"):
             lagg(u, t1, "kgInstruktion", p["kg"])
         # Uppgiftslabbet skriver bara ut flervalsalternativen om texten nämner "alternativ/markera/…"
@@ -142,7 +142,7 @@ def main():
                     raise ValueError(f"{id_}: sbyt hittades {s1.count(a)} gånger")
                 s1 = s1.replace(a, c)
             if s1 != s0:
-                par.append((s0, s1))
+                par.append((s0, s1, "s"))
                 varn.append(f"{id_}: huvudfacit justerat")
         # ordna så att längre strängar ersätts först (undviker delsträngskrockar i literalerna)
         b.ersatt(id_, par, till)

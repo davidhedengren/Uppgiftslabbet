@@ -45,10 +45,23 @@ class Bank:
         """par: [(gammal sträng, ny sträng)], tillagg: [(efter-sträng, nyckel, värde)]
         där nyckel/värde läggs in direkt efter literalen för efter-sträng (som redan bytts)."""
         txt = self.byte.get(id_, self.text(id_))
-        for gammal, ny in par:
+        for post in par:
+            gammal, ny = post[0], post[1]
+            nyckel = post[2] if len(post) > 2 else None
             if gammal == ny:
                 continue
             g = lit(gammal)
+            if nyckel:  # ankra vid fältnamnet, så att t.ex. en likadan ledtråd inte ändras
+                rx = re.compile(re.escape(lit(nyckel)) + r"\s*:\s*" + re.escape(g))
+                hits = list(rx.finditer(txt))
+                if not hits:
+                    raise ValueError(f"{id_}: {nyckel} med texten hittades inte: {gammal[:60]}")
+                if len(hits) > 1:
+                    self.dubbletter.append(f"{id_}: {len(hits)} lika {nyckel}, första ersatt: {gammal[:50]}")
+                m = hits[0]
+                start = m.end() - len(g)
+                txt = txt[:start] + lit(ny) + txt[m.end():]
+                continue
             n = txt.count(g)
             if n == 0:
                 raise ValueError(f"{id_}: literalen hittades inte: {gammal[:60]}")
