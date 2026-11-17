@@ -108,7 +108,7 @@ test('Effektkorten har egna givna värden och tydliga heltalsgränser',()=>{
  assert.match(q('5.557').spelDelar[2].t,/hela lampor/);assert.equal(q('5.557').rättSvar[2],582.6);
  assert.equal(q('5.556').rättSvar[1],3);assert.equal(q('5.556').tolerans[1],0);
  assert.equal(q('5.591').rättSvar[1],2664);assert.equal(q('5.591').tolerans[1],0);
- assert.match(q('5.570').spelDelar[2].t,/nedför/);assert.match(q('5.570').spelDelar[2].t,/positivt/);
+ assert.match(q('5.570').spelDelar[2].t,/nedför/);/* Språkgranskningen 2026-11-17: frågan om effekten som bromsarna tar bort är entydigt positiv utan svarsinstruktion. */ assert.match(q('5.570').spelDelar[2].t,/ta bort rörelseenergi/);
 });
 test('Alla 183 numeriska slutsvar i lösningsförslagen stämmer med beräkningarna',()=>{
  let checked=0; const failures=[];
