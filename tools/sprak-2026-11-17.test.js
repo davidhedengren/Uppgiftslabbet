@@ -57,3 +57,17 @@ test('pilotexempel: Fy1 rörelsemängd skrivet som lärarens prov',()=>{
  // Lösningen hör inte hemma i frågan.
  assert.doesNotMatch(q('5.392').t,/Kraft · stopptid/);
 });
+
+test('Ma1: fristående geometrikort ger rätt underlag och papperet visar valen',()=>{
+ const ma1=bank('uppgifterma1.js','BANKMA1'),q=id=>ma1.find(u=>u.id===id);
+ const triangel=q('4.38'),delB=triangel.spelDelar.find(d=>d.etikett==='b');
+ for(const text of [triangel.t,delB.t]) assert.match(text,/kateterna (?:är )?8 och 15/);
+ assert.equal(triangel.rättSvar[1],Math.hypot(8,15));
+ for(const d of q('4.167').spelDelar){
+  for(const matt of ['28°','30 m','41°']) assert.ok(d.t.includes(matt),d.etikett);
+  assert.doesNotMatch(d.t,/<p>[^<]*<p>/);
+ }
+ for(const id of ['4.85','4.116','4.226','4.508','4.761','4.798']){
+  const u=q(id);assert.equal(u.visaAlternativ,true,id);assert.ok(u.alternativ.length>=2,id);
+ }
+});

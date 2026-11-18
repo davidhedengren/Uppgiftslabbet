@@ -187,6 +187,8 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-18 | ma1 | vektor_absolutbelopp | 17 av 47 | Även provuppgiften 8.13 tillhör området. I 4.508 och 4.798 ser eleven vilka vektorer som ska jämföras. I 4.799 efterfrågas avståndet fågelvägen. |
 | 2026-11-18 | ma1 | vektor_skalar | 14 av 48 | I 4.150 beskrivs förflyttningen från A och i 4.523 efterfrågas både längd och riktning. 4.522, 4.563 och 4.787 visar svarsalternativen på papper. Därmed är alla tolv områden i kapitel 4 genomlästa. Nästa område i Ma1 är grundläggande sannolikhet i kapitel 5. |
 
+**Slutkontroll Ma1 kapitel 4 (2026-11-18).** De tolv områdena omfattar 539 uppgifter i kapitlet och två tillhörande provuppgifter, 8.12 och 8.13. Av dessa 541 ändrades 305. I 303 ändrades huvudtexten och i två enbart visningen av alternativ. Efter områdesskripten kördes `ma1_kap4_genomlasning.py`. Bankkontrollen gav 230 fynd mot 238 före arbetet, utan nya fynd. Inga nya fel syntes när hela testsviterna jämfördes före och efter. Lokal webbläsarkontroll omfattade Kunskapsgymmets delkort 4.38b och 4.167b, avrundning och rättning i 4.50 samt visningen av 4.595, 4.550 och 4.761 i respektive app.
+
 ### Tecken: riktning eller fysik
 
 - **Riktningstecken** (hastighet, rörelsemängd, impuls och kraft längs en linje) beror på vald riktning. Om svaret har

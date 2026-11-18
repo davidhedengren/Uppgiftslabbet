@@ -17,7 +17,11 @@ test('Nivåer, radianvinkel och trigonometrisk avrundning motsvarar uppgifterna'
  for(const x of [-3,-2,3])assert.equal(x**3+2*x*x-9*x-18,0);
  const c=(Math.sqrt(3)-1)/2,v=Math.acos(c),area=200*Math.sin(v)+100*Math.sin(v)*Math.cos(v);
  assert.ok(Math.abs(v-1.196)<.001);assert.ok(Math.abs(area-220.18)<.02);assert.match(q(ma4,'2.269').t,/radianer/);
- assert.equal(Math.round(10*9*Math.sin(32*Math.PI/180))/10,4.8);assert.match(q(ma1,'4.50').t,/en decimal/);assert.equal(q(ma1,'4.50').tolerans,.05);
+ // Avrundningen visas vid träningen i Kunskapsgymmet och utelämnas på uppgiftsbladet.
+ const linan=q(ma1,'4.50');
+ assert.equal(Math.round(10*9*Math.sin(32*Math.PI/180))/10,4.8);
+ assert.equal(linan.kgInstruktion,'Avrunda till en decimal.');
+ assert.doesNotMatch(linan.t,/en decimal/);assert.equal(linan.tolerans,.05);
  assert.deepEqual(Array.from(q(ma1,'4.514').rättSvar),[6,12]);
 });
 test('Figurer och svarsfält ger inte svaret eller bristande kontrast',()=>{
