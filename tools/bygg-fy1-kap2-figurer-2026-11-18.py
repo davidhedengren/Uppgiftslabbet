@@ -263,6 +263,151 @@ def _():
     return b
 
 
+# ================================================================ mätnoggrannhet (matnogg)
+@fig('2.234', 360, 170, 'En digital våg med en vikt på vågskålen. Displayen visar 83,42 g.')
+def _():
+    b = rekt(80, 60, 200, 16, '#c9d3da', INK, 1.8, 4) + rekt(70, 76, 220, 74, '#e9eef2', INK, 2, 10)
+    b += rekt(120, 90, 120, 40, '#1f2d36', INK, 1.5, 4) + tt(180, 118, '83,42 g', 22, 'middle', '#9ff0b4', True)
+    b += path('M150,60 L156,30 L204,30 L210,60 Z', '#b9a07a', INK, 1.8)
+    return b
+
+
+@fig('2.15', 460, 220, 'Två sätt att mäta pappersarkets tjocklek: ett ark i ett skjutmått, 0,10 mm, eller en bunt med 500 ark, 52 mm.')
+def _():
+    b = rekt(30, 60, 170, 14, '#c9d0d5', INK, 1.6, 2) + rekt(30, 74, 14, 60, '#c9d0d5', INK, 1.6, 0)
+    b += rekt(70, 74, 14, 60, '#c9d0d5', INK, 1.6, 0) + rekt(70, 56, 46, 22, '#e9eef2', INK, 1.4, 2)
+    b += rekt(44, 92, 26, 4, '#ffffff', INK, 1, 0)
+    for x in range(90, 196, 8):
+        b += linje(x, 60, x, 66 if (x - 90) % 40 else 70, INK, 1)
+    b += tt(115, 160, 'ett ark', 14, 'middle', INK, True) + tt(115, 178, '0,10 ± 0,02 mm', 13)
+    for i in range(14):
+        y = 70 + i * 5
+        b += rekt(250, y, 110, 5, '#ffffff' if i % 2 else '#f4f1e8', '#b7ad97', 0.8, 0)
+    b += linje(372, 70, 372, 140, GRA, 1.5) + linje(366, 70, 378, 70, GRA, 1.5) + linje(366, 140, 378, 140, GRA, 1.5)
+    b += tt(390, 110, '52 ± 1 mm', 14, 'start', INK)
+    b += tt(305, 160, 'bunt med 500 ark', 14, 'middle', INK, True)
+    b += tt(115, 34, 'metod a', 13, 'middle', GRA, True) + tt(305, 34, 'metod b', 13, 'middle', GRA, True)
+    return b
+
+
+@fig('2.243', 360, 220, 'En pendel svänger fram och tillbaka. Tiden för 10 svängningar mäts med ett tidtagarur till 14,8 s.')
+def _():
+    b = rekt(40, 20, 160, 10, '#8c969e', INK, 1.6, 2)
+    b += path('M120,30 L84,150', 'none', INK, 1.6) + ring(84, 150, 13, '#e07a5f')
+    b += path('M120,30 L156,150', 'none', GRA, 1.2, ' stroke-dasharray="4 4"') + ring(156, 150, 13, 'none', GRA, 1.2)
+    b += path('M80,176 A130,130 0 0 0 160,176', 'none', BLA, 2) + pil(150, 178, 162, 175, BLA, 2, 7)
+    b += ring(280, 110, 44, '#f7fafc') + rekt(272, 56, 16, 12, '#8c969e', INK, 1.4, 2)
+    b += tt(280, 116, '14,8 s', 18, 'middle', INK, True) + tt(280, 180, '10 svängningar', 14, 'middle', INK, True)
+    return b
+
+
+@fig('2.245', 360, 170, 'En personvåg vars display visar 72,40 kg. Vågen visar alltid 0,20 kg för mycket.')
+def _():
+    b = rekt(90, 30, 180, 120, '#dfe6ec', INK, 2, 22) + rekt(130, 44, 100, 34, '#1f2d36', INK, 1.5, 4)
+    b += tt(180, 68, '72,40 kg', 18, 'middle', '#9ff0b4', True)
+    b += path('M128,96 C128,90 150,88 158,96 L156,136 C150,142 132,142 128,134 Z', '#c9d3da', INK, 1.2)
+    b += path('M232,96 C232,90 210,88 202,96 L204,136 C210,142 228,142 232,134 Z', '#c9d3da', INK, 1.2)
+    b += tt(180, 166, 'visar alltid 0,20 kg för mycket', 13, 'middle', ROD, True)
+    return b
+
+
+@fig('2.251', 440, 150, 'Två lägen på en mätlinje: 1,4 m och 8,62 m från nollpunkten. Avståndet mellan dem är okänt.')
+def _():
+    x0, k = 30, 38
+    b = pil(x0, 70, x0 + 10.4 * k, 70, INK, 1.8, 9)
+    for m in range(0, 11):
+        b += linje(x0 + m * k, 64, x0 + m * k, 76, INK, 1.4) + tt(x0 + m * k, 94, str(m), 12, 'middle', GRA)
+    b += tt(x0 + 10.4 * k + 4, 74, 'm', 13, 'start', GRA)
+    for v, namn in ((1.4, '1,4 m'), (8.62, '8,62 m')):
+        b += cirkel(x0 + v * k, 70, 6, ORA, '#fff', 1.5) + tt(x0 + v * k, 52, namn, 13, 'middle', ORA, True)
+    b += matt_h(x0 + 1.4 * k, x0 + 8.62 * k, 134, 'avstånd ?', under=False, size=13)
+    return b
+
+
+@fig('2.255', 330, 250, 'En cylinder med radien 2,50 ± 0,02 cm och höjden 10,0 ± 0,1 cm.')
+def _():
+    cx, top, rx, ry, h = 120, 40, 50, 14, 170
+    b = cylinder_v(cx, top, rx, ry, h, '#cfe0ec', '#e3eef5')
+    b += linje(cx, top, cx + rx, top, INK, 1.6, '5 4') + cirkel(cx, top, 3, INK, INK, 1)
+    b += tt(cx + rx / 2, top - ry - 5, 'r', 15, 'middle', INK, True)
+    b += matt_v(cx + rx + 20, top, top + h, 'h = 10,0 ± 0,1 cm', size=13)
+    b += tt(120, 240, 'r = 2,50 ± 0,02 cm', 13, 'middle', INK, True)
+    return b
+
+
+def termometer(x, y_topp, niva, text, fill=ROD):
+    """Termometer med vätskepelare; niva 0..1 av skalan."""
+    h = 120
+    b = rekt(x - 7, y_topp, 14, h, '#f7fafc', INK, 1.6, 7) + ring(x, y_topp + h + 8, 11, fill)
+    b += rekt(x - 3, y_topp + h * (1 - niva), 6, h * niva + 4, fill, 'none', 0, 2)
+    return b + tt(x, y_topp - 8, text, 13, 'middle', INK, True, halo=True)
+
+
+@fig('2.258', 460, 230, 'En termometer visar 0,8 °C i smältande is och 100,6 °C i kokande vatten. Vilken verklig temperatur motsvarar avläsningen 50,7 °C?')
+def _():
+    b = path('M30,120 L38,200 L118,200 L126,120', '#e3f1fa', INK, 2)
+    for (x, y) in ((50, 160), (80, 172), (96, 148), (60, 186)):
+        b += rekt(x, y, 18, 16, '#ffffff', '#8fb7d0', 1.2, 3)
+    b += termometer(78, 48, 0.12, 'visar 0,8 °C') + tt(78, 220, 'smältande is (0 °C)', 12, 'middle', GRA, True)
+    b += path('M180,120 L188,200 L268,200 L276,120', VATTEN, INK, 2)
+    for x in (204, 228, 250):
+        b += cirkel(x, 186, 4, '#ffffff', BLA, 1)
+    b += termometer(228, 48, 0.9, 'visar 100,6 °C') + tt(228, 220, 'kokande vatten (100 °C)', 12, 'middle', GRA, True)
+    b += termometer(380, 48, 0.5, 'visar 50,7 °C') + tt(380, 220, 'verklig temperatur ?', 12, 'middle', ORA, True)
+    return b
+
+
+@fig('2.269', 440, 170, 'En tunn tråd är lindad 40 täta varv runt en penna. Lindningens totala bredd är 12,6 ± 0,1 mm.')
+def _():
+    b = path('M20,70 L330,70 L360,85 L330,100 L20,100 Z', '#f2c94c', INK, 1.8) + path('M330,70 L360,85 L330,100 Z', '#f2dcb3', INK, 1.4)
+    b += rekt(20, 70, 22, 30, '#e8a0a0', INK, 1.4, 0)
+    x1, n = 100, 40
+    for i in range(n):
+        x = x1 + i * 4.5
+        b += f'<line x1="{x:.1f}" y1="66" x2="{x + 2:.1f}" y2="104" stroke="#b5651d" stroke-width="2.6"/>'
+    x2 = x1 + n * 4.5
+    b += matt_h(x1, x2, 132, '12,6 ± 0,1 mm', under=True)
+    b += tt((x1 + x2) / 2, 52, '40 varv', 14, 'middle', '#8a4a12', True)
+    return b
+
+
+@fig('2.49', 440, 230, 'Ett bägarglas med vatten på en våg som visar hela gram. Vid start visar vågen 312 g och efter 30 minuter 309 g.')
+def _():
+    b = ''
+    for cx, visn, namn, niva in ((110, '312 g', 'vid start', 92), (330, '309 g', 'efter 30 min', 98)):
+        b += path(f'M{cx - 44},70 L{cx - 38},168 L{cx + 38},168 L{cx + 44},70', '#f7fafc', INK, 2)
+        b += path(f'M{cx - 42},{niva} L{cx - 37},166 L{cx + 37},166 L{cx + 42},{niva} Z', VATTEN, 'none', 0) + linje(cx - 42, niva, cx + 42, niva, BLA, 2)
+        b += D.vag(cx, 170, visn) + tt(cx, 50, namn, 14, 'middle', INK, True)
+    b += pil(190, 120, 250, 120, GRA, 2.4, 9) + tt(220, 108, '30 min', 12, 'middle', GRA, True)
+    return b
+
+
+@fig('2.45', 460, 190, 'En granstam som modelleras som en cylinder. Omkretsen är 1,45 ± 0,02 m och längden 12,0 ± 0,3 m.')
+def _():
+    x0, x1, cy, ry, rx = 70, 400, 90, 40, 16
+    b = path(f'M{x0},{cy - ry} L{x1},{cy - ry} A{rx},{ry} 0 0 1 {x1},{cy + ry} L{x0},{cy + ry} Z', '#8b5a2b', INK, 2)
+    for y in (cy - 22, cy - 4, cy + 16):
+        b += path(f'M{x0 + 30},{y} C{x0 + 120},{y - 4} {x0 + 220},{y + 5} {x1 - 20},{y - 2}', 'none', '#6d4420', 1.4)
+    b += ellips(x0, cy, rx, ry, '#e2b77a', INK, 2)
+    for r in (8, 18, 28):
+        b += ellips(x0, cy, rx * r / 40, r, 'none', '#b07f45', 1.1)
+    b += path(f'M{x0 + 40},{cy - ry} A{rx},{ry} 0 0 1 {x0 + 40},{cy + ry}', 'none', ORA, 3)
+    b += tt(x0 + 52, cy + ry + 22, 'omkrets 1,45 ± 0,02 m', 13, 'start', ORA, True)
+    b += matt_h(x0, x1, cy - ry - 18, 'längd 12,0 ± 0,3 m')
+    return b
+
+
+@fig('2.271', 440, 222, 'Metod A: en cirkulär skivas diameter mäts till 120,0 ± 0,5 mm. Metod B: skivans kontur ritas på rutpapper.')
+def _():
+    b = ring(110, 112, 70, '#f2c48d') + linje(40, 112, 180, 112, INK, 1.6, '5 4')
+    b += tt(110, 104, 'd = 120,0 ± 0,5 mm', 12, 'middle', INK, True, halo=True) + tt(110, 212, 'metod A', 13, 'middle', GRA, True)
+    for i in range(0, 161, 10):
+        b += linje(250 + i, 32, 250 + i, 192, '#bcd6e8', 1) + linje(250, 32 + i, 410, 32 + i, '#bcd6e8', 1)
+    b += f'<circle cx="330" cy="112" r="70" fill="#f2c48d" fill-opacity="0.45" stroke="{INK}" stroke-width="2"/>'
+    b += tt(330, 212, 'metod B: rutpapper', 13, 'middle', GRA, True)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur):
     i = html.index('</p>') + 4
@@ -284,9 +429,12 @@ def main():
     src, bank = B.las(ROOT / BANK)
     Q = {q['id']: q for q in bank}
     nya = {}
+    klara = {uid for uid, figur in F.items() if figur in Q[uid]['t']}
     for uid, figur in F.items():
+        if uid in klara:
+            continue
         q = Q[uid]
-        assert q['kap'] == 2 or q['omr'] in ('medelhastighet',), uid
+        assert q['omr'] in ('medelhastighet', 'matnogg', 'enheter'), uid
         assert '<svg' not in q['t'] and '<svg' not in (q.get('spelIntro') or ''), uid
         nya[uid] = med_figur(q, figur)
         for d in nya[uid].get('spelDelar') or []:
@@ -296,7 +444,7 @@ def main():
     ny_bank = json.loads(ny_src[ny_src.index('['):ny_src.rindex(']') + 1])
     assert [q['id'] for q in ny_bank] == [q['id'] for q in bank]
     for ny, gammal in zip(ny_bank, bank):  # bara figuren har lagts till
-        if ny['id'] not in F:
+        if ny['id'] not in nya:
             assert ny == gammal
             continue
         fg = F[ny['id']]
@@ -310,9 +458,9 @@ def main():
                     assert dn.get('t', '').replace(fg, '', 1) == dg.get('t', ''), ny['id']
             else:
                 assert ny[k] == gammal[k], (ny['id'], k)
-    print('figurer', len(F), list(F))
+    print('figurer', len(F), 'redan inlagda', len(klara), 'nya', list(nya))
     if '--ut' in sys.argv:
-        Path(sys.argv[sys.argv.index('--ut') + 1]).write_text(json.dumps([q for q in ny_bank if q['id'] in F], ensure_ascii=False), encoding='utf-8')
+        Path(sys.argv[sys.argv.index('--ut') + 1]).write_text(json.dumps([q for q in ny_bank if q['id'] in nya], ensure_ascii=False), encoding='utf-8')
     if '--skriv' in sys.argv:
         B.skriv(ROOT / BANK, ny_src)
 

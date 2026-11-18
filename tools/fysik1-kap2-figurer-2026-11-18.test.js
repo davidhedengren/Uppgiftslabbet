@@ -12,10 +12,11 @@ const q = (id) => c.window.BANK.find((t) => t.id === id);
 const DENSITET = ['2.37', '2.77', '2.86', '2.87', '2.114', '2.144', '2.151', '2.162', '2.163', '2.165', '2.166', '2.167', '2.168', '2.179',
   '2.180', '2.181', '2.182', '2.188', '2.190', '2.192', '2.196', '2.203', '2.275', '2.277', '2.285', '2.289', '2.290'];
 
+const MATNOGG = ['2.234', '2.15', '2.243', '2.245', '2.251', '2.255', '2.258', '2.269', '2.49', '2.45', '2.271'];
 const MEDEL = ['3.9', '3.51', '3.97', '3.125', '3.130', '3.133', '3.234', '3.103', '3.236', '3.235', '3.101', '2.296', '2.304', '2.313', '2.320'];
 
-test('densitet och medelhastighet: figuren finns i frågan, i inledningen och på varje delkort', () => {
-  for (const id of [...DENSITET, ...MEDEL]) {
+test('kapitel 2: figuren finns i frågan, i inledningen och på varje delkort', () => {
+  for (const id of [...DENSITET, ...MEDEL, ...MATNOGG]) {
     const t = q(id);
     assert.equal((t.t.match(/<svg/g) || []).length, 1, id);
     const fig = t.t.match(/<span class="fig">[\s\S]*?<\/svg><\/span>/)[0];
@@ -49,4 +50,13 @@ test('medelhastighet: figurerna visar de givna värdena och markerar det okända
   }
   // Svaret på 3.51 b (förflyttningen 18 m) och 2.296 (3,0 km) syns inte i figuren.
   assert.doesNotMatch(q('3.51').t, />18 m</); assert.doesNotMatch(q('2.296').t, />3,0 km</);
+});
+
+test('mätnoggrannhet: figurerna visar mätvärdena utan att avslöja svaren', () => {
+  for (const [id, tal] of [['2.234', ['83,42 g']], ['2.245', ['72,40 kg']], ['2.243', ['14,8 s', '10 svängningar']], ['2.251', ['1,4 m', '8,62 m', 'avstånd ?']],
+    ['2.258', ['visar 0,8 °C', 'visar 100,6 °C', 'visar 50,7 °C', 'verklig temperatur ?']], ['2.269', ['40 varv', '12,6 ± 0,1 mm']],
+    ['2.49', ['312 g', '309 g']], ['2.45', ['omkrets 1,45 ± 0,02 m', 'längd 12,0 ± 0,3 m']], ['2.15', ['0,10 ± 0,02 mm', '52 ± 1 mm']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  assert.doesNotMatch(q('2.243').t, />1,48/); assert.doesNotMatch(q('2.245').t, />72,20/); assert.doesNotMatch(q('2.269').t, />0,315/);
 });

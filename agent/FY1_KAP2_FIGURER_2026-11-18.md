@@ -13,7 +13,7 @@ Kapitel 2 i Fy1 (`uppgifter.js`, kap 2) hade 407 uppgifter, och 292 av dem sakna
 |---|---:|---:|---|
 | densitet | 184 | 75 | 27 figurer tillagda 2026-11-18 |
 | medelhastighet | 92 | 22 | 15 figurer tillagda 2026-11-18 |
-| matnogg | 68 | 12 | ej påbörjat |
+| matnogg | 68 | 12 | 11 figurer tillagda 2026-11-18 |
 | enheter | 63 | 6 | ej påbörjat |
 
 ## Urval i densitet
@@ -46,6 +46,18 @@ cykeltur till affären (2.296), ljud genom järn och luft (2.304), båtrace med 
 Utan figur: enhetsbyten och enstegsuppgifter (till exempel 3.102, 3.256–3.262), uppgifter som redan har en tabell
 (3.19, 2.344, 2.350) och samlingsuppgifter där varje delkort har ett eget scenario (2.291–2.295, 2.297–2.319 utom de
 valda). En gemensam figur skulle där bara passa en av delarna.
+
+## Urval i mätnoggrannhet
+
+Alla 56 uppgifter utan figur lästes. Figur lades till där mätsituationen är det svåra att föreställa sig: vågens display
+(2.234), ett ark i skjutmått mot en bunt med 500 ark (2.15), pendel med tidtagarur (2.243), personvåg med fel (2.245),
+lägen på en mätlinje (2.251), cylinder med osäkra mått (2.255), termometer i is och kokande vatten (2.258), tråd lindad
+40 varv på en penna (2.269), bägare på våg före och efter avdunstning (2.49), granstam med omkrets och längd (2.45) och
+skiva mätt med diameter eller på rutpapper (2.271).
+
+Utan figur: frågor om värdesiffror och avrundning, rena beräkningar med ± och uppgifter där ett ritat intervall skulle
+visa svaret, till exempel avrundningsgränserna i 2.236 och 2.237 och om referensvärdet ligger inom intervallet i 2.261.
+2.30 och 2.46 har redan en tabell.
 
 ## Regler för figurerna
 
