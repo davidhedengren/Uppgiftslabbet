@@ -3806,3 +3806,7 @@ I 4.38 kan flera trianglar ha samma tangensvärde. Del b måste ange de två kat
 ## Felrapporter 2026-11-18 12:36: kraftvektorer, π-svar och tydligare frågor
 
 [Sju rapporter och åtgärder](FELRAPPORTER_2026-11-18_1236.md). Kraftuppgifter hör till `kraftvektorer` (kap 4), inte `vektorer` (”Hastighet som vektor”, kap 3); 66 uppgifter (3.620–3.731) är flyttade med historik. Lägg inga nya kraftuppgifter i `vektorer`. I Ma4 cirkelsektorn godtas både exakt svar med π och korrekt avrundat decimaltal när frågan inte säger ”exakt” (numeriskt, tolerans 1e-9). Fy1 3.196 har tabell per del och riktningsfigur. Ma1 2.306 c förklaras med ordningen och talen, inte med ”kommutativ”. Ma1 1.87 rättas som uttryck så att parentes godtas. Skydd: `tools/felrapporter-2026-11-18-1236.test.js`.
+
+## Ma1 grundläggande sannolikhet, 2026-11-18
+
+I 5.561 ska 132/480 avrundas till 0,28. Det tidigare intervallet godkände även 0,27. För 5.568 och 5.569 a ska tre decimaler skilja det korrekt avrundade svaret från närmaste grannvärden. De exakta värdena är 25/216, 27/216 och 130/600. Fallen kontrolleras i `tools/sprak-2026-11-17.test.js` och har prövats i träningsvyn.
