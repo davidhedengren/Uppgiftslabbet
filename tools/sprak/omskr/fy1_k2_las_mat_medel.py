@@ -1,0 +1,30 @@
+# Fy1 kap 2 genomläsning: mätnoggrannhet och medelhastighet (2026-11-18).
+# I matnogg är värdesiffror och avrundning själva uppgiften och står kvar. "… och ange svaret." betydde
+# "med rätt antal värdesiffror" (svarVardesiffror = 2) och skrivs nu ut. Övrigt: "En elev", ledtrådar,
+# precisionskrav som inte hör till uppgiften och definitioner.
+R = {
+    '2.248': {'ers': [('Beräkna arean och ange svaret.', 'Beräkna arean och ange svaret med rätt antal värdesiffror.')]},
+    '2.249': {'ers': [('Beräkna densiteten och ange svaret.', 'Beräkna densiteten och ange svaret med rätt antal värdesiffror.')]},
+    '2.267': {'ers': [(r'Beräkna \(a\) och ange svaret.', r'Beräkna \(a\) och ange svaret med rätt antal värdesiffror.')]},
+    '2.254': {'ers': [('<br>(Ange svaret med två decimaler.)', ''), (' (Ange svaret med två decimaler.)', '')]},
+    '2.256': {'ers': [('<br>(Ange svaret med två decimaler.)', ''), (' (Ange svaret med två decimaler.)', '')]},
+    '2.3': {'ers': [('En elev ska mäta svängningstiden', 'Hampus ska mäta svängningstiden'), ('När eleven startar', 'När han startar'),
+                    ('Eleven mäter en svängning', 'Han mäter en svängning'), ('Istället mäts', 'I stället mäts')]},
+    '2.15': {'ers': [('En elev ska bestämma tjockleken', 'Lisa ska bestämma tjockleken')]},
+    '2.255': {'ers': [('I den här uppgiften uppskattas den relativa osäkerheten genom att de relativa osäkerheterna adderas.',
+                       'Uppskatta den relativa osäkerheten genom att addera de relativa osäkerheterna.')]},
+    '2.257': {'ers': [(' Ange resultatet utan ytterligare avrundning.', '')]},
+    '2.261': {'ers': [('En elev bestämmer', 'Tova bestämmer')]},
+    '2.273': {'ers': [('Räkna med en pendelperiod på 1,50 s.', 'Pendelns period är 1,50 s.'), ('måste eleven minst', 'måste man minst')]},
+    '2.49': {'ers': [('En elev undersöker', 'Noah undersöker'), ('Hur kan eleven ändra', 'Hur kan Noah ändra'),
+                     ('och anta att de två vägningarnas', 'och antag att de två vägningarnas')]},
+    '2.355': {'ers': [('En elev tar tid', 'Saga tar tid'), ('bör eleven kontrollera', 'bör Saga kontrollera')]},
+    '3.103': {'ers': [(' Börja med att anta att ljuset inte tar någon tid på sig. Kontrollera sedan om det antagandet är rimligt.', '')]},
+    '3.104': {'ers': [(' Inga stopp görs.', ''), ('Anta s > 0 och v > 0.', 'Antag att s > 0 och v > 0.')]},
+    '3.262': {'ers': [('En elev cyklar 650 m', 'Ida cyklar 650 m')]},
+    '2.309': {'ers': [(' Avrunda till hela minuter.', '')]},
+    '2.337': {'ers': [(' Riktningen mot större positionsvärden är positiv.', '')], 'kg': 'Riktningen mot större positionsvärden räknas som positiv.'},
+    '2.316': {'ers': [('står still 1,0 h sammanlagt', 'står still totalt 1,0 h')]},
+    '3.8': {'ers': [(', alltså tillryggalagd sträcka delat med tiden', '')]},
+    '3.237': {'ers': [('Anta först att', 'Antag först att')]},
+}

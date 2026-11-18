@@ -12,7 +12,7 @@ test('Densitet: oberoende fysikaliska beräkningar',()=>{
 });
 test('Självbärande kort med nivå, figur och verktyg',()=>{
  const ids=Array.from({length:8},(_,i)=>'2.'+(327+i));
- for(const id of ids){const x=q(id);assert.equal(b.filter(q=>q.id===id).length,1);assert.ok(x.t.includes('<svg'));assert.ok(x.svarstyp==='alternativ'||x.t.includes('(Svara')); // bokstavsknappar sedan 2026-10-24
+ for(const id of ids){const x=q(id);assert.equal(b.filter(q=>q.id===id).length,1);assert.ok(x.t.includes('<svg'));assert.ok(x.svarstyp==='alternativ'||x.t.includes('(Svara')||x.svarEnhet||typeof x.rättSvar==='number');/* språkomskrivningen 2026-11-18: enheten visas via svarEnhet */ // bokstavsknappar sedan 2026-10-24
  assert.equal(x.miniräknare,true);assert.equal(x.geogebra,false);assert.equal(x.spel,true);assert.equal(x.självrättning,true);assert.ok(x.ledtrad);}
  assert.equal(q('2.327').traningsniva,1);assert.equal(q('2.333').traningsniva,4);
 });

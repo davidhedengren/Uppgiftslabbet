@@ -5,7 +5,7 @@ const q=id=>c.window.BANK.find(t=>t.id===id),plain=x=>JSON.parse(JSON.stringify(
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-11*Math.max(1,Math.abs(b)),`${a} ≠ ${b}`);
 test('2.59 prövar vanliga hastighetsenheter, med tydliga självständiga kort',()=>{
  const t=q('2.59');assert.deepEqual(plain(t.rättSvar),[14*3600/1000,14*60]);assert.deepEqual(plain(t.svarEnhet),['km/h','m/min']);
- for(const p of t.spelDelar){assert.match(p.t,/14,0 m\/s/);assert.match(p.t,/en decimal/);assert.doesNotMatch(p.t+p.s,/knop|nautisk/i);assert.match(p.s,/facit-steglista/);}
+ for(const p of t.spelDelar){assert.match(p.t,/14,0 m\/s/);assert.match(p.t+(p.kgInstruktion||''),/en decimal/);/* språkomskrivningen 2026-11-18: precisionen står i kgInstruktion */assert.doesNotMatch(p.t+p.s,/knop|nautisk/i);assert.match(p.s,/facit-steglista/);}
 });
 test('Energiomvandlingar introduceras i energikapitlet utan nya ID eller svar',()=>{
  for(const id of ['2.19','2.29','2.33','2.36','2.209','2.217','2.220','2.362'])assert.equal(q(id).kap,5,id);
