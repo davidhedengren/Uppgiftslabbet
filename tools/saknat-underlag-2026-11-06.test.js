@@ -63,7 +63,7 @@ test('Fy1 3.32 ger uttryckligen konstant acceleration i båda faserna',()=>{
  assert.equal(6*8/2+10*8+4*8/2,120);assert.equal(120/(6+10+4),6);
  // Fem kontrollfall: samma information finns uttryckligen eller är själva
  // frågan i uppgiften om vad mätningar kan och inte kan visa.
- assert.match(q('fy1','3.24').t,/konstant acceleration/);
+ assert.match(q('fy1','3.24').t,/konstant acceleration|accelerationen är konstant/); // språkomskrivningen 2026-11-18
  assert.match(q('fy1','3.31').t,/0,50 m\/s²/);
  assert.match(q('fy1','3.38').t,/vilket antagande behövs/);
  assert.match(q('fy1','3.114').t,/ändras jämnt/);
