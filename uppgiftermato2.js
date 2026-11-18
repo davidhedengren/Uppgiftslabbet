@@ -8357,7 +8357,7 @@ window.BANKMATO2 = [
     "miniräknare": false,
     "geogebra": false,
     "t": "<p>Vinkeln är \\(v=22{,}5^\\circ\\).</p><p>Bestäm exakt \\(\\cos(2v)\\).</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Dubbla vinkeln är \\(2v=2\\cdot22{,}5^\\circ=45^\\circ\\)</p><p>\\(22{,}5^\\circ\\) är ingen standardvinkel, men \\(45^\\circ\\) är det.</p></li><li><p class=\"facit-rubrik\">Standardvärdet \\(\\cos45^\\circ=\\tfrac{\\sqrt2}{2}\\)</p><div class=\"facit-matte\">\\[\\cos(2v)=\\cos45^\\circ=\\frac{\\sqrt2}{2}\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(\\frac{\\sqrt2}{2}\\)</p></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Dubbla vinkeln är \\(2v=2\\cdot22{,}5^\\circ=45^\\circ\\)</p><p>\\(22{,}5^\\circ\\) är ingen standardvinkel, men \\(45^\\circ\\) är det.</p></li><li><p class=\"facit-rubrik\">Formelbladet: \\(\\cos45^\\circ=\\tfrac{1}{\\sqrt2}\\)</p><div class=\"facit-matte\">\\[\\cos(2v)=\\cos45^\\circ=\\frac{1}{\\sqrt2}\\]</div><p>Formelbladet skriver \\(\\tfrac{1}{\\sqrt2}\\). Förläng med \\(\\sqrt2\\) så får du den andra vanliga formen:</p><div class=\"facit-matte\">\\[\\frac{1}{\\sqrt2}=\\frac{1\\cdot\\sqrt2}{\\sqrt2\\cdot\\sqrt2}=\\frac{\\sqrt2}{2}\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(\\frac{1}{\\sqrt2}\\), som också kan skrivas \\(\\frac{\\sqrt2}{2}\\).</p></div>",
     "familj": "Använda formler för dubbla vinkeln",
     "formaga": [
       "procedur"
@@ -21971,7 +21971,7 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>En minutvisare är 6,0 cm lång och rör sig från klockan 12 till klockan 4.</p><p>a) Hur stor vinkel har visaren vridits i radianer?<br>b) Hur lång sträcka har visarens spets rört sig?<br>c) Hur stor area sveper visaren över?</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är \\(2\\pi/3\\) rad.</p></li><li><p>Båglängden blir \\(4\\pi\\) cm och sektorarean \\(12\\pi\\) cm².</p></li></ol></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är \\(2\\pi/3\\) rad.</p></li><li><p>Båglängden blir \\(4\\pi\\approx12{,}6\\) cm och sektorarean \\(12\\pi\\approx37{,}7\\) cm².</p></li></ol></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur",
@@ -21981,13 +21981,13 @@ window.BANKMATO2 = [
     "svarstyp": "flera_delar",
     "rättSvar": [
       "2*pi/3",
-      "4*pi",
-      "12*pi"
+      12.566370614359172,
+      37.69911184307752
     ],
     "tolerans": [
       null,
-      null,
-      null
+      1e-09,
+      1e-09
     ],
     "självrättning": [
       true,
@@ -21996,8 +21996,8 @@ window.BANKMATO2 = [
     ],
     "svarFormat": [
       "uttryck",
-      "uttryck",
-      "uttryck"
+      "numeriskt",
+      "numeriskt"
     ],
     "svarsstruktur": "ordnad",
     "svarEtiketter": [
@@ -22027,7 +22027,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>Hur lång sträcka har visarens spets rört sig?</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(s=r\\theta=6\\cdot2\\pi/3=\\boxed{4\\pi}\\) cm.</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(s=r\\theta=6\\cdot2\\pi/3=\\boxed{4\\pi\\approx12{,}6}\\) cm.</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -22036,7 +22036,7 @@ window.BANKMATO2 = [
       {
         "etikett": "c",
         "fraga": "<p>Hur stor area sveper visaren över?</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(A=\\frac12r^2\\theta=\\frac12\\cdot36\\cdot2\\pi/3=\\boxed{12\\pi}\\) cm².</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(A=\\frac12r^2\\theta=\\frac12\\cdot36\\cdot2\\pi/3=\\boxed{12\\pi\\approx37{,}7}\\) cm².</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -22092,20 +22092,20 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>Använd radianmått.</p><p>a) En cirkel har radien 6 cm. Bestäm båglängden som hör till vinkeln \\(2\\pi/3\\).<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>b) Samma cirkel: bestäm sektorns area.<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>c) En båge är 10 cm lång i en cirkel med radien 4 cm. Bestäm medelpunktsvinkeln i radianer.</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Varför metoden fungerar:</strong> Radianer bygger på förhållandet mellan båglängd och radie.</p></li><li><p>Därför kan samma geometri användas direkt utan en extra omvandlingsfaktor när vinkeln mäts i radianer.</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[s=rv=6\\cdot2\\pi/3=\\boxed{4\\pi\\text{ cm}}\\].</div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[A=\\frac12r^2v=\\frac12\\cdot36\\cdot2\\pi/3=\\boxed{12\\pi\\text{ cm}^2}\\].</div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[v=s/r=10/4=\\boxed{2{,}5\\text{ rad}}\\].</div></li></ol></div></div></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Varför metoden fungerar:</strong> Radianer bygger på förhållandet mellan båglängd och radie.</p></li><li><p>Därför kan samma geometri användas direkt utan en extra omvandlingsfaktor när vinkeln mäts i radianer.</p></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[s=rv=6\\cdot2\\pi/3=\\boxed{4\\pi\\approx12{,}6\\text{ cm}}\\].</div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[A=\\frac12r^2v=\\frac12\\cdot36\\cdot2\\pi/3=\\boxed{12\\pi\\approx37{,}7\\text{ cm}^2}\\].</div></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[v=s/r=10/4=\\boxed{2{,}5\\text{ rad}}\\].</div></li></ol></div></div></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "4*pi",
-      "12*pi",
+      12.566370614359172,
+      37.69911184307752,
       2.5
     ],
     "tolerans": [
-      null,
-      null,
+      1e-09,
+      1e-09,
       null
     ],
     "självrättning": [
@@ -22114,8 +22114,8 @@ window.BANKMATO2 = [
       true
     ],
     "svarFormat": [
-      "uttryck",
-      "uttryck",
+      "numeriskt",
+      "numeriskt",
       "numeriskt"
     ],
     "svarsstruktur": "ordnad",
@@ -22129,7 +22129,7 @@ window.BANKMATO2 = [
       {
         "etikett": "a",
         "fraga": "<p>En cirkel har radien 6 cm. Bestäm båglängden som hör till vinkeln \\(2\\pi/3\\).</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd \\(s=rv\\): \\(s=6\\cdot2\\pi/3=4\\pi\\).</p></li><li><p><strong>\\(4\\pi\\) cm</strong>.</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd \\(s=rv\\): \\(s=6\\cdot2\\pi/3=4\\pi\\).</p></li><li><p><strong>\\(4\\pi\\approx12{,}6\\) cm</strong>.</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -22138,7 +22138,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>En cirkel har radien 6 cm och medelpunktsvinkeln \\(2\\pi/3\\) rad. Bestäm sektorns area.</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd \\(A=\\frac12r^2v\\): \\(A=\\frac12\\cdot36\\cdot2\\pi/3=12\\pi\\).</p></li><li><p><strong>\\(12\\pi\\) cm²</strong>.</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Använd \\(A=\\frac12r^2v\\): \\(A=\\frac12\\cdot36\\cdot2\\pi/3=12\\pi\\).</p></li><li><p><strong>\\(12\\pi\\approx37{,}7\\) cm²</strong>.</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -22339,27 +22339,27 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>En cirkel har radien 12 cm.</p><div class=\"fig smal\"><svg width=\"440\" height=\"330\" viewBox=\"0 0 440 330\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"En cirkelsektor\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"328\" rx=\"10\" fill=\"#fff\" stroke=\"#e2e8f0\"/><path d=\"M220.0 245.0 L364.9 206.2 A150 150 0 0 0 75.1 206.2 Z\" fill=\"#f8dcd8\" stroke=\"#24262b\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M364.9 206.2 A150 150 0 0 0 75.1 206.2\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"4.5\"/><circle cx=\"220.0\" cy=\"245.0\" r=\"3.5\" fill=\"#24262b\"/><path d=\"M249.0 237.2 A30 30 0 0 0 191.0 237.2\" fill=\"none\" stroke=\"#24262b\" stroke-width=\"1.5\"/><text x=\"220\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">5π/6</text><text x=\"300\" y=\"261\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">12 cm</text><text x=\"220\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">b</text><text x=\"220\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">A</text></svg></div><p>a) Bestäm båglängden som svarar mot vinkeln \\(\\frac{5\\pi}{6}\\).<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>b) Bestäm arean av motsvarande cirkelsektor.</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är i radianer. Båglängden är radien gånger vinkeln: \\(b=rv=12\\cdot5\\pi/6\\).</p></li><li><p><strong>Svar:</strong> Båglängden är \\(10\\pi\\) cm.</p></li></ol></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När vinkeln är i radianer är sektorns area \\(A=r^2v/2\\). Sätt in radien 12 cm och vinkeln \\(5\\pi/6\\).</p></li><li><p>\\(A=12^2\\cdot(5\\pi/6)/2=60\\pi\\). <strong>Svar:</strong> Arean är \\(60\\pi\\) cm².</p></li></ol></div></div></div></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är i radianer. Båglängden är radien gånger vinkeln: \\(b=rv=12\\cdot5\\pi/6\\).</p></li><li><p><strong>Svar:</strong> Båglängden är \\(10\\pi\\approx31{,}4\\) cm.</p></li></ol></div></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När vinkeln är i radianer är sektorns area \\(A=r^2v/2\\). Sätt in radien 12 cm och vinkeln \\(5\\pi/6\\).</p></li><li><p>\\(A=12^2\\cdot(5\\pi/6)/2=60\\pi\\). <strong>Svar:</strong> Arean är \\(60\\pi\\approx188\\) cm².</p></li></ol></div></div></div></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "10*pi",
-      "60*pi"
+      31.41592653589793,
+      188.49555921538757
     ],
     "tolerans": [
-      null,
-      null
+      1e-09,
+      1e-09
     ],
     "självrättning": [
       true,
       true
     ],
     "svarFormat": [
-      "uttryck",
-      "uttryck"
+      "numeriskt",
+      "numeriskt"
     ],
     "svarEnhet": [
       "cm",
@@ -22375,7 +22375,7 @@ window.BANKMATO2 = [
       {
         "etikett": "a",
         "fraga": "<p>Bestäm båglängden som svarar mot vinkeln \\(\\frac{5\\pi}{6}\\).</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är i radianer. Båglängden är radien gånger vinkeln: \\(b=rv=12\\cdot5\\pi/6\\).</p></li><li><p><strong>Svar:</strong> Båglängden är \\(10\\pi\\) cm.</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Vinkeln är i radianer. Båglängden är radien gånger vinkeln: \\(b=rv=12\\cdot5\\pi/6\\).</p></li><li><p><strong>Svar:</strong> Båglängden är \\(10\\pi\\approx31{,}4\\) cm.</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -22384,7 +22384,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>Bestäm arean av cirkelsektorn med radien 12 cm och sektorvinkeln \\(\\frac{5\\pi}{6}\\) rad.</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När vinkeln är i radianer är sektorns area \\(A=r^2v/2\\). Sätt in radien 12 cm och vinkeln \\(5\\pi/6\\).</p></li><li><p>\\(A=12^2\\cdot(5\\pi/6)/2=60\\pi\\). <strong>Svar:</strong> Arean är \\(60\\pi\\) cm².</p></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>När vinkeln är i radianer är sektorns area \\(A=r^2v/2\\). Sätt in radien 12 cm och vinkeln \\(5\\pi/6\\).</p></li><li><p>\\(A=12^2\\cdot(5\\pi/6)/2=60\\pi\\). <strong>Svar:</strong> Arean är \\(60\\pi\\approx188\\) cm².</p></li></ol></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -23514,23 +23514,23 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>Bestäm båglängden \\(b\\).</p><p>a) \\(r=5\\), \\(v=\\pi/3\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>b) \\(r=12\\), \\(v=5\\pi/6\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>c) \\(r=2,5\\), \\(v=2\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>d) \\(r=8\\), \\(v=3\\pi/4\\)</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi/3\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(10\\pi\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>5</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(6\\pi\\)</strong>.</p></li></ol></div></div></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi/3\\approx5{,}24\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(10\\pi\\approx31{,}4\\)</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>5</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(6\\pi\\approx18{,}8\\)</strong>.</p></li></ol></div></div></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "5*pi/3",
-      "10*pi",
+      5.235987755982989,
+      31.41592653589793,
       5,
-      "6*pi"
+      18.84955592153876
     ],
     "tolerans": [
+      1e-09,
+      1e-09,
       null,
-      null,
-      null,
-      null
+      1e-09
     ],
     "självrättning": [
       true,
@@ -23539,10 +23539,10 @@ window.BANKMATO2 = [
       true
     ],
     "svarFormat": [
-      "uttryck",
-      "uttryck",
       "numeriskt",
-      "uttryck"
+      "numeriskt",
+      "numeriskt",
+      "numeriskt"
     ],
     "svarsstruktur": "ordnad",
     "svarEtiketter": [
@@ -23556,7 +23556,7 @@ window.BANKMATO2 = [
       {
         "etikett": "a",
         "fraga": "<p>\\(r=5\\), \\(v=\\pi/3\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi/3\\)</strong>.</p></li></ol></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi/3\\approx5{,}24\\)</strong>.</p></li></ol></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23565,7 +23565,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>\\(r=12\\), \\(v=5\\pi/6\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(10\\pi\\)</strong>.</p></li></ol></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(10\\pi\\approx31{,}4\\)</strong>.</p></li></ol></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23583,7 +23583,7 @@ window.BANKMATO2 = [
       {
         "etikett": "d",
         "fraga": "<p>\\(r=8\\), \\(v=3\\pi/4\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(6\\pi\\)</strong>.</p></li></ol></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(6\\pi\\approx18{,}8\\)</strong>.</p></li></ol></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23705,22 +23705,22 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>En cirkel har radien 10 cm. Bestäm båglängden för vinkeln</p><p>a) \\(\\pi/5\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>b) \\(\\pi/2\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>c) \\(3\\pi/4\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>d) \\(1{,}2\\) rad</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(2\\pi\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(15\\pi/2\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>12 cm</strong>.</p></li></ol></div></div></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(2\\pi\\approx6{,}28\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(5\\pi\\approx15{,}7\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(15\\pi/2\\approx23{,}6\\) cm</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>12 cm</strong>.</p></li></ol></div></div></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "2*pi",
-      "5*pi",
-      "15*pi/2",
+      6.283185307179586,
+      15.707963267948966,
+      23.561944901923447,
       12
     ],
     "tolerans": [
-      null,
-      null,
-      null,
+      1e-09,
+      1e-09,
+      1e-09,
       0
     ],
     "självrättning": [
@@ -23737,9 +23737,9 @@ window.BANKMATO2 = [
       "d"
     ],
     "svarFormat": [
-      "uttryck",
-      "uttryck",
-      "uttryck",
+      "numeriskt",
+      "numeriskt",
+      "numeriskt",
       "numeriskt"
     ],
     "svarEnhet": [
@@ -23753,7 +23753,7 @@ window.BANKMATO2 = [
       {
         "etikett": "a",
         "fraga": "<p>\\(\\pi/5\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(2\\pi\\) cm .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(2\\pi\\approx6{,}28\\) cm .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23762,7 +23762,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>\\(\\pi/2\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(5\\pi\\) cm .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(5\\pi\\approx15{,}7\\) cm .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23771,7 +23771,7 @@ window.BANKMATO2 = [
       {
         "etikett": "c",
         "fraga": "<p>\\(3\\pi/4\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(15\\pi/2\\) cm .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[b=vr\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(15\\pi/2\\approx23{,}6\\) cm .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 1,
@@ -23839,22 +23839,22 @@ window.BANKMATO2 = [
     "miniräknare": true,
     "geogebra": false,
     "t": "<p>En cirkel har radien 7 cm. Bestäm sektorarean när vinkeln är</p><p>a) \\(\\pi/6\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>b) \\(\\pi/2\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>c) \\(2\\pi/3\\)<br><span aria-hidden=\"true\" style=\"display:block;height:7px\"></span>d) \\(1{,}5\\) rad</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/12\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/4\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/3\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>36,75 cm²</strong>.</p></li></ol></div></div></div>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Nyckelidé:</strong> Utgå från att ett helt varv är 2π rad.</p></li><li><p>Vid båglängd används sambandet s=r·v när vinkeln v mäts i radianer.</p></li><li><div class=\"facit-berakning\"><p><strong>Formelbladet:</strong></p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/12\\approx12{,}8\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/4\\approx38{,}5\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>\\(49\\pi/3\\approx51{,}3\\) cm²</strong>.</p></li></ol></div></div><div class=\"facit-del\"><span class=\"facit-mark\">d)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>36,75 cm²</strong>.</p></li></ol></div></div></div>",
     "familj": "Båglängd, sektorarea och radianer",
     "formaga": [
       "procedur"
     ],
     "svarstyp": "flera_delar",
     "rättSvar": [
-      "49*pi/12",
-      "49*pi/4",
-      "49*pi/3",
+      12.828170002158322,
+      38.48451000647496,
+      51.312680008633286,
       36.75
     ],
     "tolerans": [
-      null,
-      null,
-      null,
+      1e-09,
+      1e-09,
+      1e-09,
       0.01
     ],
     "självrättning": [
@@ -23871,9 +23871,9 @@ window.BANKMATO2 = [
       "d"
     ],
     "svarFormat": [
-      "uttryck",
-      "uttryck",
-      "uttryck",
+      "numeriskt",
+      "numeriskt",
+      "numeriskt",
       "numeriskt"
     ],
     "svarEnhet": [
@@ -23887,7 +23887,7 @@ window.BANKMATO2 = [
       {
         "etikett": "a",
         "fraga": "<p>\\(\\pi/6\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/12\\) cm² .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/12\\approx12{,}8\\) cm² .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -23896,7 +23896,7 @@ window.BANKMATO2 = [
       {
         "etikett": "b",
         "fraga": "<p>\\(\\pi/2\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/4\\) cm² .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/4\\approx38{,}5\\) cm² .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,
@@ -23905,7 +23905,7 @@ window.BANKMATO2 = [
       {
         "etikett": "c",
         "fraga": "<p>\\(2\\pi/3\\)</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/3\\) cm² .</p></li></ol></div></div></div></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-berakning\"><p>Formelbladet:</p><div class=\"facit-matte\">\\[A=vr^2/2\\].</div></div></li></ol><div class=\"spel-en-del\"><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p>\\(49\\pi/3\\approx51{,}3\\) cm² .</p></li></ol></div></div></div></div>",
         "niva": "E",
         "poang": "1/0/0",
         "traningsniva": 2,

@@ -178,7 +178,9 @@ const at_diagram=[
 
 for(const[name,cases]of [['acceleration',accel],['vektorer',vectors],['konstacc',konstacc],['vt_diagram',vt_diagram],['st_diagram',st_diagram],['at_diagram',at_diagram]])test(`Kapitel 3 ${name}: varje numeriskt facit stämmer med oberoende beräkningar`,()=>{
  const ids=new Set(cases.map(x=>x[0]));
- const tasks=c.window.BANK.filter(x=>x.kap===3&&x.omr===name&&x.rättSvar!=null);assert.equal(ids.size,tasks.length);
+ // 2026-11-18: kraftuppgifterna i vektorer flyttades till kraftvektorer (kap 4) men räknas fortfarande om här.
+ const flyttad=x=>name==='vektorer'&&x.omr==='kraftvektorer'&&(x.omrTidigare||[]).includes('vektorer')&&String(x.familjNyckelTidigare||'').startsWith('vektorer__');
+ const tasks=c.window.BANK.filter(x=>((x.kap===3&&x.omr===name)||flyttad(x))&&x.rättSvar!=null);assert.equal(ids.size,tasks.length);
  for(const[id,expected]of cases){const task=q(id),a=Array.isArray(expected)?expected:[expected],b=Array.isArray(task.rättSvar)?task.rättSvar:[task.rättSvar];assert.equal(a.length,b.length,id);
  a.forEach((n,i)=>{const tol=Array.isArray(task.tolerans)?task.tolerans[i]:task.tolerans;assert.ok(Math.abs(n-b[i])<=(tol||0)+1e-10*Math.max(1,Math.abs(n)),`${id} del ${i}: ${n} jämfört med ${b[i]}`);});}
 });

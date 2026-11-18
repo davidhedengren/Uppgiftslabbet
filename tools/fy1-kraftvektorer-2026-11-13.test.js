@@ -146,15 +146,17 @@ test('Delmomenten i Vektorer: utan trigonometri, med trigonometri och komposantu
   const v = B.filter((t) => t.omr === 'kraftvektorer');
   const fam = {};
   for (const t of v) fam[t.familj] = (fam[t.familj] || 0) + 1;
-  assert.deepEqual(fam, { 'Resultantbestämning utan trigonometri': 55, 'Resultantbestämning med trigonometri': 14, Komposantuppdelning: 38 });
+  // 2026-11-18 (felrapport 3.651/3.652): 66 kraftuppgifter flyttade hit från kap 3 ”Hastighet som vektor”.
+  assert.deepEqual(fam, { 'Resultantbestämning utan trigonometri': 61, 'Resultantbestämning med trigonometri': 19, Komposantuppdelning: 93 });
   // Inget kort i delmomentet utan trigonometri kräver trigonometri.
   for (const t of v.filter((x) => x.familj === 'Resultantbestämning utan trigonometri')) {
     assert.notEqual(t.trigonometri, true, t.id);
     assert.ok(!(t.spelDelar || []).some((d) => d.trigonometri), t.id);
-    assert.doesNotMatch(t.s, /\\(?:sin|cos|tan)\b/, t.id);
+    assert.doesNotMatch(t.s, /\\(?:sin|cos|tan)(?![a-z])/, t.id);
   }
   for (const t of v.filter((x) => x.familj === 'Resultantbestämning med trigonometri')) {
-    assert.match(t.s, /\\(?:sin|cos|tan)\b/, t.id);
+    // (?![a-z]) i stället för \b, så att även \cos60^\circ räknas (3.731).
+    assert.match(t.s, /\\(?:sin|cos|tan)(?![a-z])/, t.id);
   }
   for (const t of v.filter((x) => !/^4\.9[67]\d$/.test(x.id))) assert.ok([].concat(t.familjTidigare || []).length >= 1, t.id);
 });

@@ -3802,3 +3802,7 @@ I 4.38 kan flera trianglar ha samma tangensvärde. Del b måste ange de två kat
 ## Fy1 densitet: blandningsandel ur densitet är A-nivå, 2026-11-18
 
 [Beslut, nya uppgifter och kontroller](FY1_DENSITET_A_2026-11-18.md). Läraren (felrapport #2.51): uppgifter där mängden av två ämnen bestäms ur blandningens densitet är A-uppgifter. 2.51, 2.90, 2.146, 2.200 och 2.202 är flyttade till A. Sex nya A-uppgifter med figur är tillagda (2.365–2.370). Framåtriktade blandningsuppgifter (blandningens densitet ur kända mängder) och uppgifter som bara kräver subtraktion (2.196, 2.201) ligger kvar på E/C. Sänk inte de fem tillbaka till C. Skydd: `tools/fysik1-densitet-a-2026-11-18.test.js`.
+
+## Felrapporter 2026-11-18 12:36: kraftvektorer, π-svar och tydligare frågor
+
+[Sju rapporter och åtgärder](FELRAPPORTER_2026-11-18_1236.md). Kraftuppgifter hör till `kraftvektorer` (kap 4), inte `vektorer` (”Hastighet som vektor”, kap 3); 66 uppgifter (3.620–3.731) är flyttade med historik. Lägg inga nya kraftuppgifter i `vektorer`. I Ma4 cirkelsektorn godtas både exakt svar med π och korrekt avrundat decimaltal när frågan inte säger ”exakt” (numeriskt, tolerans 1e-9). Fy1 3.196 har tabell per del och riktningsfigur. Ma1 2.306 c förklaras med ordningen och talen, inte med ”kommutativ”. Ma1 1.87 rättas som uttryck så att parentes godtas. Skydd: `tools/felrapporter-2026-11-18-1236.test.js`.

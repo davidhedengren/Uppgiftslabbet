@@ -27458,8 +27458,8 @@ window.BANKMA1 = [
     "geogebra": false,
     "miniräknare": true,
     "arbetsinsats": 2,
-    "t": "<p>Uttrycket \\(8a(b-2)+12(b-2)\\) ska skrivas som 4(b − 2) gånger en faktor utan parenteser. Vilken är faktorn?</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Först bryts b − 2 ut: (b − 2)(8a + 12).</p></li><li><p>Eftersom 8a + 12 = 4(2a + 3) blir den efterfrågade faktorn 2a + 3.</p></li></ol></div>",
+    "t": "<p>Skriv uttrycket \\(8a(b-2)+12(b-2)\\) på formen \\(4(b-2)\\cdot(\\ \\ldots\\ )\\). Vad ska stå i den sista parentesen?</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Bryt ut den gemensamma faktorn \\(b-2\\)</p><div class=\"facit-matte\">\\[8a(b-2)+12(b-2)=(b-2)(8a+12)\\]</div></li><li><p class=\"facit-rubrik\">Bryt ut 4 ur \\(8a+12\\)</p><div class=\"facit-matte\">\\[8a+12=4(2a+3)\\]</div></li><li><p class=\"facit-rubrik\">Skriv på formen \\(4(b-2)\\cdot(\\ \\ldots\\ )\\)</p><div class=\"facit-matte\">\\[(b-2)\\cdot4(2a+3)=4(b-2)(2a+3)\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(2a+3\\)</p></div>",
     "ledtrad": "<p>Behandla den gemensamma parentesen som en enda faktor.</p>",
     "niva": "C",
     "poang": "0/1/0",
@@ -27472,7 +27472,7 @@ window.BANKMA1 = [
     "rättSvar": "2a+3",
     "tolerans": null,
     "självrättning": true,
-    "svarFormat": "förenklat_polynom",
+    "svarFormat": "uttryck",
     "traningsniva": 3,
     "spel": true,
     "familjTidigare": [
@@ -56843,8 +56843,8 @@ window.BANKMA1 = [
     ],
     "niva": "C",
     "poang": "2/1/0",
-    "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>a) Bestäm \\(f(g(3))\\).<br>b) Bestäm \\(g(f(3))\\).<br>c) Förklara varför svaren inte behöver bli lika.</p>",
-    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p><strong>Steg 1:</strong> \\(g(3)=10\\), så \\(f(g(3))=f(10)=\\)<strong>25</strong>.</p></li><li><p>\\(f(3)=4\\), så \\(g(f(3))=g(4)=\\)<strong>12</strong>.</p></li><li><p>Funktionerna används i olika ordning, och sammansättning är i allmänhet inte kommutativ.</p></li></ol></div></div>",
+    "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>a) Bestäm \\(f(g(3))\\).<br>b) Bestäm \\(g(f(3))\\).<br>c) I a) räknar du först ut \\(g(3)\\) och sätter in svaret i \\(f\\). I b) är det tvärtom. Förklara med hjälp av uträkningarna varför svaren blir olika.</p>",
+    "s": "<div class=\"facit-v2 facit-stegvis\"><div class=\"facit-del\"><span class=\"facit-mark\">a)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den inre funktionen räknas först: \\(g(3)\\)</p><div class=\"facit-matte\">\\[g(3)=2\\cdot3+4=10\\]</div></li><li><p class=\"facit-rubrik\">Sätt in 10 i \\(f\\)</p><div class=\"facit-matte\">\\[f(g(3))=f(10)=3\\cdot10-5=25\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(f(g(3))=25\\)</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">b)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den inre funktionen räknas först: \\(f(3)\\)</p><div class=\"facit-matte\">\\[f(3)=3\\cdot3-5=4\\]</div></li><li><p class=\"facit-rubrik\">Sätt in 4 i \\(g\\)</p><div class=\"facit-matte\">\\[g(f(3))=g(4)=2\\cdot4+4=12\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(g(f(3))=12\\)</p></div></div><div class=\"facit-del\"><span class=\"facit-mark\">c)</span><div class=\"facit-arbete\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I \\(f(g(3))\\) räknas \\(g\\) först</p><div class=\"facit-matte\">\\[g(3)=10\\quad\\Rightarrow\\quad f(10)=25\\]</div><p>Det tal som \\(f\\) får är 10.</p></li><li><p class=\"facit-rubrik\">I \\(g(f(3))\\) räknas \\(f\\) först</p><div class=\"facit-matte\">\\[f(3)=4\\quad\\Rightarrow\\quad g(4)=12\\]</div><p>Det tal som \\(g\\) får är 4.</p></li><li><p class=\"facit-rubrik\">Ordningen avgör vilket tal som sätts in i den andra funktionen</p><p>Funktionerna gör olika saker med ett tal: \\(f\\) multiplicerar med 3 och drar bort 5, medan \\(g\\) multiplicerar med 2 och lägger till 4. När ordningen byts får den andra funktionen ett annat tal, och den behandlar det på ett annat sätt. Därför blir slutresultaten olika.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Den funktion som räknas först bestämmer vilket tal den andra funktionen får. Eftersom \\(f\\) och \\(g\\) räknar på olika sätt blir \\(f(g(3))\\) och \\(g(f(3))\\) olika.</p></div></div></div>",
     "familj": "Använda och tolka f(x)",
     "geogebra": false,
     "miniräknare": true,
@@ -56885,7 +56885,7 @@ window.BANKMA1 = [
       {
         "etikett": "a",
         "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>Bestäm \\(f(g(3))\\).</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[g(3)=2\\cdot3+4=10\\].</div></li><li><div class=\"facit-berakning\"><p>Därför</p><div class=\"facit-matte\">\\[f(g(3))=f(10)=3\\cdot10-5=25\\].</div></div></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den inre funktionen räknas först: \\(g(3)\\)</p><div class=\"facit-matte\">\\[g(3)=2\\cdot3+4=10\\]</div></li><li><p class=\"facit-rubrik\">Sätt in 10 i \\(f\\)</p><div class=\"facit-matte\">\\[f(g(3))=f(10)=3\\cdot10-5=25\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(f(g(3))=25\\)</p></div>",
         "niva": "E",
         "poang": "1/0/0",
         "ledtrad": "<p>Räkna den inre funktionen först i varje sammansättning. Jämför sedan vad som ändras när ordningen byts.</p>",
@@ -56895,7 +56895,7 @@ window.BANKMA1 = [
       {
         "etikett": "b",
         "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>Bestäm \\(g(f(3))\\).</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><div class=\"facit-matte\">\\[f(3)=3\\cdot3-5=4\\].</div></li><li><div class=\"facit-berakning\"><p>Därför</p><div class=\"facit-matte\">\\[g(f(3))=g(4)=2\\cdot4+4=12\\].</div></div></li></ol></div>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">Den inre funktionen räknas först: \\(f(3)\\)</p><div class=\"facit-matte\">\\[f(3)=3\\cdot3-5=4\\]</div></li><li><p class=\"facit-rubrik\">Sätt in 4 i \\(g\\)</p><div class=\"facit-matte\">\\[g(f(3))=g(4)=2\\cdot4+4=12\\]</div></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> \\(g(f(3))=12\\)</p></div>",
         "niva": "E",
         "poang": "1/0/0",
         "ledtrad": "<p>Räkna den inre funktionen först i varje sammansättning. Jämför sedan vad som ändras när ordningen byts.</p>",
@@ -56904,11 +56904,11 @@ window.BANKMA1 = [
       },
       {
         "etikett": "c",
-        "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>Förklara varför svaren inte behöver bli lika.</p>",
-        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p>Funktionerna används i olika ordning.</p></li><li><p>Sammansättning är i allmänhet inte kommutativ, så \\(f(g(x))\\) behöver inte vara lika med \\(g(f(x))\\).</p></li></ol></div>",
+        "t": "<p>Funktionerna är \\(f(x)=3x-5\\) och \\(g(x)=2x+4\\).</p><p>Julia räknar ut att \\(f(g(3))=25\\) men att \\(g(f(3))=12\\). Förklara med hjälp av uträkningarna varför svaren blir olika.</p>",
+        "s": "<div class=\"facit-v2 facit-stegvis\"><ol class=\"facit-steglista\" role=\"list\"><li><p class=\"facit-rubrik\">I \\(f(g(3))\\) räknas \\(g\\) först</p><div class=\"facit-matte\">\\[g(3)=10\\quad\\Rightarrow\\quad f(10)=25\\]</div><p>Det tal som \\(f\\) får är 10.</p></li><li><p class=\"facit-rubrik\">I \\(g(f(3))\\) räknas \\(f\\) först</p><div class=\"facit-matte\">\\[f(3)=4\\quad\\Rightarrow\\quad g(4)=12\\]</div><p>Det tal som \\(g\\) får är 4.</p></li><li><p class=\"facit-rubrik\">Ordningen avgör vilket tal som sätts in i den andra funktionen</p><p>Funktionerna gör olika saker med ett tal: \\(f\\) multiplicerar med 3 och drar bort 5, medan \\(g\\) multiplicerar med 2 och lägger till 4. När ordningen byts får den andra funktionen ett annat tal, och den behandlar det på ett annat sätt. Därför blir slutresultaten olika.</p></li></ol><p class=\"facit-svar\"><strong>Svar:</strong> Den funktion som räknas först bestämmer vilket tal den andra funktionen får. Eftersom \\(f\\) och \\(g\\) räknar på olika sätt blir \\(f(g(3))\\) och \\(g(f(3))\\) olika.</p></div>",
         "niva": "C",
         "poang": "0/1/0",
-        "ledtrad": "<p>Räkna den inre funktionen först i varje sammansättning. Jämför sedan vad som ändras när ordningen byts.</p>",
+        "ledtrad": "<p>Skriv ut båda uträkningarna steg för steg. Vilket tal sätts in i \\(f\\) i den ena, och vilket tal sätts in i \\(g\\) i den andra?</p>",
         "traningsniva": 3,
         "arbetsinsats": 2
       }

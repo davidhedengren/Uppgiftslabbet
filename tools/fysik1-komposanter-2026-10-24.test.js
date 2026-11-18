@@ -7,12 +7,14 @@ const B=c.window.BANK;const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id
 const NYA=Array.from({length:113},(_,i)=>`3.${620+i}`);
 
 test('113 komposantkort (två omgångar) i vektorer med varierade delmoment',()=>{
-  for(const id of NYA){const t=get(id);assert.equal(t.omr,'vektorer',id);assert.equal(t.kap,3,id);assert.match(t.poang,/^\(\d\/\d\/\d\)$/,id);assert.equal(t.miniräknare,true,id);}
-  const per={};for(const id of NYA){const k=get(id).familjNyckel;per[k]=(per[k]||0)+1;}
+  // 2026-11-18 (felrapport 3.651/3.652): kraftkorten ligger nu i kraftvektorer (kap 4); den gamla delmomentsnyckeln finns i familjNyckelTidigare.
+  const nyckel=t=>t.omr==='kraftvektorer'?t.familjNyckelTidigare:t.familjNyckel;
+  for(const id of NYA){const t=get(id);if(t.omr==='kraftvektorer'){assert.ok(t.omrTidigare.includes('vektorer'),id);assert.equal(t.kap,4,id);}else{assert.equal(t.omr,'vektorer',id);assert.equal(t.kap,3,id);}assert.match(t.poang,/^\(\d\/\d\/\d\)$/,id);assert.equal(t.miniräknare,true,id);}
+  const per={};for(const id of NYA){const k=nyckel(get(id));per[k]=(per[k]||0)+1;}
   assert.ok(per['vektorer__komposanter_utan_trigonometri']>=26,JSON.stringify(per));assert.ok(per['vektorer__komposanter_med_trigonometri']>=60,JSON.stringify(per));assert.ok(per['vektorer__addera']>=18,JSON.stringify(per));
   assert.ok(NYA.filter(id=>get(id).traningsniva===1).length>=25);
   // trigonometrikort är markerade
-  for(const id of NYA){const t=get(id);if(t.familjNyckel==='vektorer__komposanter_med_trigonometri')assert.equal(t.trigonometri,true,id);}
+  for(const id of NYA){const t=get(id);if(nyckel(t)==='vektorer__komposanter_med_trigonometri')assert.equal(t.trigonometri,true,id);}
   // frågor med decimalsvar anger precision i parentes
   for(const id of NYA){const t=get(id);const tol=[].concat(t.tolerans);if(tol.some(x=>x===0.05)&&[].concat(t.rättSvar).some(v=>!Number.isInteger(v)))/* språkomskrivningen 2026-11-18: precisionskrav skrivs inte i Fy1 (beslut 2026-10-26); korrekt avrundning godtas */ ;}
 });
