@@ -12,7 +12,7 @@ const FORBJUDET=[
  [/[Vv]älj ett alternativ/,'Välj ett alternativ'],[/[Mm]arkera det korrekta/,'Markera det korrekta alternativet'],
  [/\(Svara /,'(Svara …)'],[/[Ss]vara med (tre|två|en) (värdesiffr|decimal)/,'precisionskrav'],
  [/\b(?:[Ee]n|[Ee]tt|[Tt]vå|[Tt]re) (?:[a-zåäö]+ )?[a-zåäö]+ på [\d ,]+ ?(kg|g|ton)\b/,'"en kloss på 2 kg" (bestämd form som "lådan på 20 kg" pekar ut ett föremål och får stå)'],[/\b[Vv]ågrät|\b[Ll]odrät/,'vågrät/lodrät'],
- [/från vila/,'från vila'],[/positiva? riktning/,'positiv riktning'],[/med tecken|[Aa]nge tecken/,'med tecken'],
+ [/[Ff]rån vila/,'från vila'],[/[Pp]ositiva? riktning/,'positiv riktning'],[/[Mm]ed tecken|[Aa]nge tecken/,'med tecken'],
  [/andra krafters impuls|den korta stöten/,'stöt-förbehåll'],[/[Rr]äkna (bara )?på /,'Räkna på …'],[/[Ss]ammanlagd/,'sammanlagd'],
  [/[Bb]ortse från andra krafters/,'Bortse från andra krafters …'],[/[Ee]ndast .{0,40} verkar|[Bb]ara .{0,40} verkar/,'Endast … verkar'],
  [/utan tecken|\bentydigt\b/,'modellspråk'],[/[Mm]iniräknare får användas|[Bb]ehåll oavrundade|[Ff]ördjupning utanför/,'metatext'],

@@ -7,7 +7,7 @@ from sprakverktyg import Bank
 
 F = [r'[Vv]älj ett alternativ', r'[Mm]arkera det korrekta', r'\(Svara ', r'[Ss]vara med (tre|två|en) (värdesiffr|decimal)',
      r'\b(?:[Ee]n|[Ee]tt|[Tt]vå|[Tt]re) (?:[a-zåäö]+ )?[a-zåäö]+ på [\d ,]+ ?(kg|g|ton)\b', r'\b[Vv]ågrät|\b[Ll]odrät',
-     r'från vila', r'positiva? riktning', r'med tecken|[Aa]nge tecken', r'[Rr]äkna (bara )?på ', r'[Ss]ammanlagd',
+     r'[Ff]rån vila', r'[Pp]ositiva? riktning', r'[Mm]ed tecken|[Aa]nge tecken', r'[Rr]äkna (bara )?på ', r'[Ss]ammanlagd',
      r'[Bb]ortse från andra krafters', r'[Ee]ndast .{0,40} verkar|[Bb]ara .{0,40} verkar', r'utan tecken|\bentydigt\b']
 
 
