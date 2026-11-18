@@ -182,6 +182,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-18 | ma1 | arcusfunktioner | 38 av 46 | I 4.800 och 4.801 får eleven själv välja sambandet från linjens lutning respektive katetens andel av hypotenusan. I 4.804 anges höjdskillnaden från handen. Flervalet i 4.116 visar fortsatt samtliga uttryck. |
 | 2026-11-18 | ma1 | strackor_vinklar | 37 av 45 | Även provuppgiften 8.12 tillhör området. I 4.33 är det vägen som lutar, i 4.62 framgår vilken lina som har vilken vinkel, och 4.167 har två fullständiga delkort med mätpunkter och frågor. |
 | 2026-11-18 | ma1 | koordinatgeometri | 15 av 46 | 4.811 anger kartans skala per steg längs en axel. Triangelpåståendena i 4.85 och 4.815 visas också på uppgiftsbladet. Decimalkrav ligger vid träningens svar i 4.460–4.462 och 4.816. |
+| 2026-11-18 | ma1 | vektorer | 16 av 50 | I 4.92 anges hur kartans axlar ligger. 4.773 frågar efter en annan vektor än den givna. Alternativen visas i 4.481 och 4.776. |
 
 ### Tecken: riktning eller fysik
 
