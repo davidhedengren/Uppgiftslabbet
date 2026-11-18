@@ -42,7 +42,7 @@ test('Fy1: fristående delkort utan svarsenhet, likformig eller fartbelopp',()=>
   for(const id of ['3.89','3.90','3.91','3.93','3.119','3.121','3.124','3.146','3.155']){const t=q(FY1,id);const txt=allText(t);
     assert.doesNotMatch(txt,/Svara i|likformig|fartbelopp|stationsavstånd|Behandla cykeln|med två decimaler|med tre decimaler|med en decimal/i,id);
     assert.equal(t.svarVardesiffror.length,t.rättSvar.length,id);
-    for(const d of t.spelDelar){assert.ok(d.t&&/\?|med tecken\.|Ange tecknet\./.test(d.t),id+d.etikett);assert.match(d.s,/facit-svar/);assert.ok(d.ledtrad.length>20);}}
+    for(const d of t.spelDelar){assert.ok(d.t&&/\?|med tecken\.|Ange tecknet\.|Bestäm [^<]*\./.test(d.t),id+d.etikett);/* språkomskrivningen 2026-11-18: tecken- och riktningskrav står i kgInstruktion */assert.match(d.s,/facit-svar/);assert.ok(d.ledtrad.length>20);}}
   assert.doesNotMatch(q(FY1,'3.92').t,/fartbelopp|Svara i/);assert.match(q(FY1,'3.156').t,/mellan stationerna/);
 });
 test('Fy1: svaren räknas om från delkortens egna givna värden',()=>{
