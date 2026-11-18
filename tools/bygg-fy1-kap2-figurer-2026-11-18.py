@@ -408,6 +408,87 @@ def _():
     return b
 
 
+# ================================================================ enheter
+# Delkort med egna, avskalade texter får bara figuren när de har samma data som figuren visar.
+KORT = {'2.11': [], '2.12': ['a'], '2.35': []}
+
+
+@fig('2.11', 460, 190, 'En modell av solsystemet. Solen är en boll med diametern 22 cm. Jordens storlek och avståndet till jorden i modellen är okända.')
+def _():
+    b = rekt(0, 0, 460, 190, '#1d2733', 'none', 0, 0)
+    for (x, y) in ((200, 30), (260, 150), (320, 50), (380, 160), (150, 170), (430, 30)):
+        b += cirkel(x, y, 1.6, '#ffffff', '#ffffff', 0)
+    b += ring(90, 95, 55, '#f9c74f', '#e09f1f', 2)
+    b += linje(35, 95, 145, 95, '#7a4f00', 1.6, '5 4') + tt(90, 89, '22 cm', 14, 'middle', '#5a3a00', True)
+    b += tt(90, 176, 'solen', 14, 'middle', '#ffffff', True)
+    b += ring(400, 95, 4, '#5b9bd5', '#cfe6f5', 1) + tt(400, 120, 'jorden', 13, 'middle', '#ffffff', True)
+    b += tt(400, 140, 'diameter ?', 12, 'middle', '#cfe6f5')
+    b += linje(90, 30, 400, 30, '#cfe6f5', 1.5) + linje(90, 24, 90, 36, '#cfe6f5', 1.5) + linje(400, 24, 400, 36, '#cfe6f5', 1.5)
+    b += tt(245, 22, 'avstånd ?', 13, 'middle', '#cfe6f5', True)
+    return b
+
+
+@fig('2.12', 420, 260, 'En mobilskärm med 2778 × 1284 kvadratiska bildpunkter och diagonalen 6,1 tum. Ett förstorat utsnitt visar bildpunkterna.')
+def _():
+    b = rekt(60, 20, 120, 230, '#2b2f36', INK, 2, 16) + rekt(68, 32, 104, 206, '#9cc3e4', 'none', 0, 6)
+    b += linje(68, 238, 172, 32, '#ffffff', 1.8, '6 4') + tt(142, 200, '6,1 tum', 13, 'middle', INK, True, halo=True)
+    b += tt(120, 16, '1284 bildpunkter', 12, 'middle', INK, True)
+    b += f'<text x="44" y="135" fill="{INK}" font-family="Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="middle" transform="rotate(-90 44 135)">2778 bildpunkter</text>'
+    b += rekt(150, 100, 14, 14, 'none', ORA, 2, 0) + linje(164, 100, 260, 60, ORA, 1.4) + linje(164, 114, 260, 200, ORA, 1.4)
+    for i in range(5):
+        for j in range(5):
+            fill = ('#e57373', '#81c784', '#64b5f6')[(i + j) % 3]
+            b += rekt(260 + j * 28, 60 + i * 28, 28, 28, fill, '#ffffff', 1.5, 0)
+    b += tt(330, 222, 'förstorat: bildpunkter', 12, 'middle', GRA, True) + tt(330, 238, 'kant i kant', 12, 'middle', GRA)
+    return b
+
+
+@fig('2.35', 460, 230, 'En fotbollsplan som är 105 m lång och 68 m bred, och ett A4-ark som är 210 mm × 297 mm, förstorat.')
+def _():
+    b = rekt(30, 40, 300, 170, '#5aa05a', INK, 2, 0)
+    for k in range(1, 6):
+        b += rekt(30 + k * 50, 40, 25, 170, '#63aa63', 'none', 0, 0)
+    b += rekt(30, 40, 300, 170, 'none', '#ffffff', 2, 0) + linje(180, 40, 180, 210, '#ffffff', 2)
+    b += f'<circle cx="180" cy="125" r="26" fill="none" stroke="#ffffff" stroke-width="2"/>'
+    b += rekt(30, 90, 40, 70, 'none', '#ffffff', 2, 0) + rekt(290, 90, 40, 70, 'none', '#ffffff', 2, 0)
+    b += matt_h(30, 330, 26, '105 m') + matt_v(346, 40, 210, '68 m')
+    b += rekt(396, 70, 42, 59, '#ffffff', INK, 1.6, 0)
+    for y in range(80, 124, 8):
+        b += linje(402, y, 432, y, '#c9d3da', 1)
+    b += tt(417, 148, 'A4-ark', 12, 'middle', INK, True) + tt(417, 164, '210 mm ×', 11, 'middle', INK) + tt(417, 178, '297 mm', 11, 'middle', INK)
+    b += tt(417, 196, '(förstorat)', 10, 'middle', GRA)
+    return b
+
+
+@fig('2.223', 440, 210, 'En kamerasensor som är 23,5 mm bred och har 6000 bildpunkter längs bredden. Ett förstorat utsnitt visar bildpunkter som ligger kant i kant.')
+def _():
+    b = rekt(30, 40, 180, 120, '#3b4a5a', INK, 2, 6) + rekt(44, 52, 152, 96, '#6c8eae', 'none', 0, 2)
+    b += matt_h(44, 196, 178, '23,5 mm', under=True)
+    b += tt(120, 30, '6000 bildpunkter längs bredden', 12, 'middle', INK, True)
+    b += rekt(180, 92, 12, 12, 'none', ORA, 2, 0) + linje(192, 92, 250, 70, ORA, 1.4) + linje(192, 104, 250, 150, ORA, 1.4)
+    for j in range(6):
+        b += rekt(250 + j * 28, 96, 28, 28, ('#e57373', '#81c784', '#64b5f6')[j % 3], '#ffffff', 1.5, 0)
+    b += linje(250, 136, 278, 136, INK, 1.5) + linje(250, 130, 250, 142, INK, 1.5) + linje(278, 130, 278, 142, INK, 1.5)
+    b += tt(264, 172, '? µm', 13, 'middle', ORA, True)
+    return b
+
+
+@fig('2.363', 440, 230, 'En kub som rymmer 1 liter är fylld med sandkorn. Varje korn antas vara en liten kub med sidan 0,5 mm. Antalet korn är okänt.')
+def _():
+    b = lada(40, 80, 130, 130, 50, 36, '#e9d9a6', '#f3e7c2', '#d9c78f')
+    import random
+    rnd = random.Random(3)
+    for _ in range(140):
+        x, y = 44 + rnd.random() * 122, 84 + rnd.random() * 122
+        b += f'<rect x="{x:.1f}" y="{y:.1f}" width="2.4" height="2.4" fill="#b9975b"/>'
+    b += tt(105, 226, '1 liter sand', 14, 'middle', INK, True)
+    b += rekt(150, 140, 10, 10, 'none', ORA, 2, 0) + linje(160, 140, 290, 70, ORA, 1.4) + linje(160, 150, 290, 170, ORA, 1.4)
+    b += lada(300, 90, 70, 70, 26, 18, '#d8b878', '#e8cf9a', '#c3a160')
+    b += matt_h(300, 370, 182, '0,5 mm', under=True) + tt(348, 60, 'ett sandkorn (förstorat)', 12, 'middle', GRA, True)
+    b += tt(220, 20, 'antal korn ?', 14, 'middle', ORA, True)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur):
     i = html.index('</p>') + 4
@@ -416,11 +497,12 @@ def efter_forsta_stycket(html, figur):
 
 def med_figur(q, figur):
     q = json.loads(json.dumps(q))
+    kort = KORT.get(q['id'])  # None: alla delkort
     q['t'] = efter_forsta_stycket(q['t'], figur)
-    if q.get('spelIntro'):
+    if q.get('spelIntro') and kort is None:
         q['spelIntro'] = q['spelIntro'] + figur
     for d in q.get('spelDelar') or []:
-        if d.get('t'):
+        if d.get('t') and (kort is None or d['etikett'] in kort):
             d['t'] = efter_forsta_stycket(d['t'], figur)
     return q
 
@@ -438,7 +520,7 @@ def main():
         assert '<svg' not in q['t'] and '<svg' not in (q.get('spelIntro') or ''), uid
         nya[uid] = med_figur(q, figur)
         for d in nya[uid].get('spelDelar') or []:
-            assert '<svg' in d.get('t', '<svg'), uid
+            assert '<svg' in d.get('t', '<svg') or d['etikett'] not in KORT.get(uid, [d['etikett']]), uid
     assert not B.kontrollera_rundresa(ROOT / BANK, set(nya))
     ny_src = B.ersatt(src, nya)
     ny_bank = json.loads(ny_src[ny_src.index('['):ny_src.rindex(']') + 1])

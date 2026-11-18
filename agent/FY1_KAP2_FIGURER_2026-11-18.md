@@ -14,7 +14,7 @@ Kapitel 2 i Fy1 (`uppgifter.js`, kap 2) hade 407 uppgifter, och 292 av dem sakna
 | densitet | 184 | 75 | 27 figurer tillagda 2026-11-18 |
 | medelhastighet | 92 | 22 | 15 figurer tillagda 2026-11-18 |
 | matnogg | 68 | 12 | 11 figurer tillagda 2026-11-18 |
-| enheter | 63 | 6 | ej påbörjat |
+| enheter | 63 | 6 | 5 figurer tillagda 2026-11-18 |
 
 ## Urval i densitet
 
@@ -59,6 +59,15 @@ Utan figur: frågor om värdesiffror och avrundning, rena beräkningar med ± oc
 visa svaret, till exempel avrundningsgränserna i 2.236 och 2.237 och om referensvärdet ligger inom intervallet i 2.261.
 2.30 och 2.46 har redan en tabell.
 
+## Urval i enheter
+
+Alla 57 uppgifter utan figur lästes. De flesta är rena omvandlingar, där en figur inte tillför något. Figur lades till där
+skalan är svår att föreställa sig: solsystemsmodell (2.11), mobilskärmens bildpunkter (2.12), A4-ark mot fotbollsplan
+(2.35), kamerasensorns bildpunkter (2.223) och sandkorn i en liter (2.363). Delkorten i 2.11, 2.12 b och 2.35 har egna,
+avskalade texter med bara de data kortet behöver. De får därför ingen figur, som annars skulle visa tal kortet inte
+behöver (`KORT` i byggskriptet). 2.34 (”0,75 m² = 75 cm²”) fick ingen figur, eftersom en ruta med 100 × 100 cm skulle
+ge bort förklaringen som efterfrågas.
+
 ## Regler för figurerna
 
 - Varje figur är ritad för sin uppgift, med verkliga färger för materialen (koppar, aluminium, guld, järn, trä, vatten).
@@ -79,7 +88,6 @@ visa svaret, till exempel avrundningsgränserna i 2.236 och 2.237 och om referen
 - Fy1-testerna (151 filer) ger samma resultat som före ändringen.
 - **Kunskapsgymmet är inte synkat i denna session** (ingen behörighet till repot).
 
-## Fortsättning
+## Läge
 
-Nästa steg är medelhastighet, där figurer passar för vägar, kartor, sträckor med olika fart och tidslinjer. Därefter
-mätnoggrannhet (mätinstrument med skala, linjal, skjutmått, termometer) och sist enheter, där figurer sällan tillför något.
+Hela kapitel 2 är genomgånget 2026-11-18: 58 nya figurer (densitet 27, medelhastighet 15, mätnoggrannhet 11, enheter 5).

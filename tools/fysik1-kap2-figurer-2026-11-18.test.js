@@ -60,3 +60,14 @@ test('mätnoggrannhet: figurerna visar mätvärdena utan att avslöja svaren', (
   }
   assert.doesNotMatch(q('2.243').t, />1,48/); assert.doesNotMatch(q('2.245').t, />72,20/); assert.doesNotMatch(q('2.269').t, />0,315/);
 });
+
+test('enheter: figur i frågan, och på delkort bara när kortet har samma data', () => {
+  const KORT = { '2.11': [], '2.12': ['a'], '2.35': [], '2.223': null, '2.363': null };
+  for (const [id, kort] of Object.entries(KORT)) {
+    const t = q(id);
+    assert.equal((t.t.match(/<svg/g) || []).length, 1, id);
+    for (const d of t.spelDelar || []) assert.equal(/<svg/.test(d.t), kort === null || kort.includes(d.etikett), `${id}${d.etikett}`);
+  }
+  assert.ok(q('2.11').t.includes('>avstånd ?<')); assert.ok(q('2.223').t.includes('>? µm<')); assert.ok(q('2.363').t.includes('>antal korn ?<'));
+  assert.doesNotMatch(q('2.223').t, />3,92/);
+});
