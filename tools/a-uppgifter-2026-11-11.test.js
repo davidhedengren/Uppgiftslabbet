@@ -107,6 +107,6 @@ test('delkorten är självbärande och läcker inte senare svar', () => {
 test('Fy1: enhet skrivs bara när den inte är underförstådd, och inga avrundningskrav skrivs ut', () => {
   for (const id of FY) { const t = q(fy, id); for (const d of t.spelDelar) assert.doesNotMatch(d.fraga, /decimal|värdesiffr|avrunda/i, id); }
   assert.doesNotMatch(q(fy, '5.639').spelDelar[2].fraga, /Svara i/); assert.equal(q(fy, '5.639').svarEnhet[2], 'km/h'); assert.doesNotMatch(q(fy, '5.640').spelDelar[0].fraga, /Svara i/); assert.equal(q(fy, '5.640').svarEnhet[0], 'kJ');
-  assert.match(q(fy, '7.232').spelDelar[1].fraga, /\(Svara i gram\.\)$/); /* Språkgranskningen 2026-11-17: enheten visas i Kunskapsgymmet via svarEnhet, inte i frågan. */ assert.doesNotMatch(q(fy, '5.641').spelDelar[2].fraga, /Svara i/); assert.equal(q(fy, '5.641').svarEnhet[2], 'ms');
+  assert.doesNotMatch(q(fy, '7.232').spelDelar[1].fraga, /Svara i/); /* språkomskrivningen 2026-11-18 */ /* Språkgranskningen 2026-11-17: enheten visas i Kunskapsgymmet via svarEnhet, inte i frågan. */ assert.doesNotMatch(q(fy, '5.641').spelDelar[2].fraga, /Svara i/); assert.equal(q(fy, '5.641').svarEnhet[2], 'ms');
   assert.doesNotMatch(q(fy, '4.912').t, /Svara i/);
 });

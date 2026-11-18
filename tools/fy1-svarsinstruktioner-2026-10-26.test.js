@@ -17,7 +17,7 @@ test('Avrundningskrav är ersatta av svarVardesiffror i typiska kort',()=>{
 test('Underförstådda enheter är borttagna, övriga står kvar',()=>{
   assert.doesNotMatch(ren(q('4.447').t),/Svara i m\/s²/);
   assert.match(ren(q('2.321').t),/i meter\?/);   // språkomskrivningen 2026-11-18: målenheten står i frågan   // given i µm
-  assert.match(ren(q('6.112').t),/\(Svara i mN\.\)/);  // prefix
+  assert.equal([].concat(q('6.112').svarEnhet)[0],'mN');  // prefix; språkomskrivningen 2026-11-18: enheten visas via svarEnhet
   assert.equal(q('4.185').svarEnhet[1],'cm');  // språkomskrivningen 2026-11-17: enheten visas via svarEnhet
   // Språkgranskningen 2026-11-17: enheten visas i Kunskapsgymmet via svarEnhet och arbetets tecken förstår eleven själv.
   assert.doesNotMatch(ren(q('5.184').t),/Svara|tecken/); assert.equal(q('5.184').svarEnhet,'kJ');
