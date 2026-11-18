@@ -12,8 +12,10 @@ const q = (id) => c.window.BANK.find((t) => t.id === id);
 const DENSITET = ['2.37', '2.77', '2.86', '2.87', '2.114', '2.144', '2.151', '2.162', '2.163', '2.165', '2.166', '2.167', '2.168', '2.179',
   '2.180', '2.181', '2.182', '2.188', '2.190', '2.192', '2.196', '2.203', '2.275', '2.277', '2.285', '2.289', '2.290'];
 
-test('densitet: figuren finns i frågan, i inledningen och på varje delkort', () => {
-  for (const id of DENSITET) {
+const MEDEL = ['3.9', '3.51', '3.97', '3.125', '3.130', '3.133', '3.234', '3.103', '3.236', '3.235', '3.101', '2.296', '2.304', '2.313', '2.320'];
+
+test('densitet och medelhastighet: figuren finns i frågan, i inledningen och på varje delkort', () => {
+  for (const id of [...DENSITET, ...MEDEL]) {
     const t = q(id);
     assert.equal((t.t.match(/<svg/g) || []).length, 1, id);
     const fig = t.t.match(/<span class="fig">[\s\S]*?<\/svg><\/span>/)[0];
@@ -37,4 +39,14 @@ test('densitet: figurerna avslöjar inte sökta storheter', () => {
     ['2.179', ['3,50 cm', '2,50 cm', '1,50 m']], ['2.203', ['0,30 m', '0,40 m', 'Ø 2,0 cm']]]) {
     for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
   }
+});
+
+test('medelhastighet: figurerna visar de givna värdena och markerar det okända med ?', () => {
+  for (const [id, tal] of [['3.51', ['32 m österut', '14 m västerut']], ['3.130', ['85 m']], ['3.133', ['4,20 s', '2,70 s', '3,80 s']],
+    ['3.236', ['90 km i 90 km/h', '90 km i ? km/h', 'stopp 12 min']], ['3.235', ['50 km/h', '80 km/h', 'v = ?']], ['2.296', ['avstånd ?']],
+    ['3.103', ['avstånd ?']], ['2.313', ['4,0 m/s', '3,1 m/s', '3,6 m/s', '3,9 m/s']], ['3.101', ['6371 km', '700 km', '7,5 km/s']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  // Svaret på 3.51 b (förflyttningen 18 m) och 2.296 (3,0 km) syns inte i figuren.
+  assert.doesNotMatch(q('3.51').t, />18 m</); assert.doesNotMatch(q('2.296').t, />3,0 km</);
 });

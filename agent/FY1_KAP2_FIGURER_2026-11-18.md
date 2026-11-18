@@ -12,7 +12,7 @@ Kapitel 2 i Fy1 (`uppgifter.js`, kap 2) hade 407 uppgifter, och 292 av dem sakna
 | Område | Uppgifter | Med figur före | Läge |
 |---|---:|---:|---|
 | densitet | 184 | 75 | 27 figurer tillagda 2026-11-18 |
-| medelhastighet | 92 | 22 | ej påbörjat |
+| medelhastighet | 92 | 22 | 15 figurer tillagda 2026-11-18 |
 | matnogg | 68 | 12 | ej påbörjat |
 | enheter | 63 | 6 | ej påbörjat |
 
@@ -33,6 +33,19 @@ Alla 109 uppgifter utan figur lästes. En figur lades till där den gör uppgift
 Ingen figur lades till i rena enhetsbyten, i enstegsuppgifter där figuren bara skulle upprepa ett tal, eller där figuren
 skulle avslöja svaret. Exempel: 2.149 och 2.150 frågar hur stor del av stocken eller isbiten som är under eller över ytan,
 och en skalenlig figur skulle visa svaret.
+
+## Urval i medelhastighet
+
+Alla 70 uppgifter utan figur lästes. Figur lades till i 15 uppgifter med en enda situation där bilden hjälper tolkningen:
+backen upp och ner (3.9), förflyttning och fart på en rak gång (3.51), två bilar med olika fart på halva sträckan (3.97),
+båt med och mot strömmen (3.125), eko från en klippvägg (3.130), splittider på löparbanan (3.133), rullgång dit och
+tillbaka (3.234), blixt och åska (3.103), resa med stopp (3.236), sträcka i bråkdelar (3.235), satellitbana (3.101),
+cykeltur till affären (2.296), ljud genom järn och luft (2.304), båtrace med två delsträckor (2.313) och boj med ubåt
+(2.320). Byggskript: `tools/bygg-fy1-kap2-figurer-2026-11-18.py`.
+
+Utan figur: enhetsbyten och enstegsuppgifter (till exempel 3.102, 3.256–3.262), uppgifter som redan har en tabell
+(3.19, 2.344, 2.350) och samlingsuppgifter där varje delkort har ett eget scenario (2.291–2.295, 2.297–2.319 utom de
+valda). En gemensam figur skulle där bara passa en av delarna.
 
 ## Regler för figurerna
 
