@@ -3798,3 +3798,7 @@ Klasstopplistans All time high behöver obegränsat elevbidrag, medan dag/vecka/
 ## Ma1 kapitel 4 – uppgifter som visas var för sig (2026-11-18)
 
 I 4.38 kan flera trianglar ha samma tangensvärde. Del b måste ange de två katetlängder som hör till maskinsvaret 17. I 4.167 behöver båda tornuppgifterna mätpunkterna, avståndet och höjdvinklarna även när eleven bara får ett delkort. Pappersuppgifter som ber eleven välja mellan givna uttryck ska visa uttrycken. Se `tools/sprak-2026-11-17.test.js` och lägestabellen i `SPRAKOMSKRIVNING_INSTRUKTION.md`. I 4.50 visas den tidigare beslutade avrundningen i Kunskapsgymmet genom `kgInstruktion`. Rättningen kontrolleras i `tools/felrapporter-2026-11-01.test.js`.
+
+## Fy1 densitet: blandningsandel ur densitet är A-nivå, 2026-11-18
+
+[Beslut, nya uppgifter och kontroller](FY1_DENSITET_A_2026-11-18.md). Läraren (felrapport #2.51): uppgifter där mängden av två ämnen bestäms ur blandningens densitet är A-uppgifter. 2.51, 2.90, 2.146, 2.200 och 2.202 är flyttade till A. Sex nya A-uppgifter med figur är tillagda (2.365–2.370). Framåtriktade blandningsuppgifter (blandningens densitet ur kända mängder) och uppgifter som bara kräver subtraktion (2.196, 2.201) ligger kvar på E/C. Sänk inte de fem tillbaka till C. Skydd: `tools/fysik1-densitet-a-2026-11-18.test.js`.

@@ -7,8 +7,9 @@ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifter.js'),'utf8'
 const tasks=c.window.BANK.filter(q=>q.omr==='densitet');
 const q=id=>tasks.find(q=>q.id===id);
 
-test('Alla 178 densitetsfacit och 53 delkort har steg, rubriker och slutsvar',()=>{
- assert.equal(tasks.length,178);let cards=0;
+// 2026-11-18: sex nya A-uppgifter (2.365–2.370) med sex delkort, se agent/FY1_DENSITET_A_2026-11-18.md.
+test('Alla 184 densitetsfacit och 59 delkort har steg, rubriker och slutsvar',()=>{
+ assert.equal(tasks.length,184);let cards=0;
  for(const t of tasks){
   assert.equal(t.miniräknare,true,t.id);
   for(const [id,s] of [[t.id,t.s],...(t.spelDelar||[]).map(d=>[t.id+d.etikett,d.s])]){
@@ -23,7 +24,7 @@ test('Alla 178 densitetsfacit och 53 delkort har steg, rubriker och slutsvar',()
   if(parts>1)assert.equal((t.s.match(/class="facit-del"/g)||[]).length,parts,t.id);
   for(const d of t.spelDelar||[]){assert.notEqual(d.miniräknare,false,t.id+d.etikett);cards++;}
  }
- assert.equal(cards,53);
+ assert.equal(cards,59);
 });
 
 test('Grafkonstruktion tillåter digitala verktyg och visar rätt diagramdata',()=>{
