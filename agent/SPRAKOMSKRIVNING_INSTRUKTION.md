@@ -184,6 +184,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-18 | ma1 | koordinatgeometri | 15 av 46 | 4.811 anger kartans skala per steg längs en axel. Triangelpåståendena i 4.85 och 4.815 visas också på uppgiftsbladet. Decimalkrav ligger vid träningens svar i 4.460–4.462 och 4.816. |
 | 2026-11-18 | ma1 | vektorer | 16 av 50 | I 4.92 anges hur kartans axlar ligger. 4.773 frågar efter en annan vektor än den givna. Alternativen visas i 4.481 och 4.776. |
 | 2026-11-18 | ma1 | vektor_addition_subtraktion | 13 av 42 | 4.129 frågar efter robotens körsträcka och 4.194 efter vektorn från start till mål. Pappersfrågorna och motsvarande delkort använder samma formulering. |
+| 2026-11-18 | ma1 | vektor_absolutbelopp | 17 av 47 | Även provuppgiften 8.13 tillhör området. I 4.508 och 4.798 ser eleven vilka vektorer som ska jämföras. I 4.799 efterfrågas avståndet fågelvägen. |
 
 ### Tecken: riktning eller fysik
 
