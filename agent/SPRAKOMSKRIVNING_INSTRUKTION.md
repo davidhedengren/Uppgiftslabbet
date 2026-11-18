@@ -177,6 +177,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-18 | ma1 | omkrets_area | 30 av 39 | Kontrollerat alla 39 uppgifter. 4.568 frågar efter både cirkelns area och ökningen i procent. I 4.588 avser de extra 10 procenten uttryckligen golvarean. 4.732 efterfrågar fortfarande kvadratmeter vid bytet av enhet. |
 | 2026-11-18 | ma1 | volym | 34 av 39 | Invändiga mått anges där frågan gäller hur mycket som ryms. 4.550 visar fortfarande alla fyra alternativ även på papper. Avrundningen till tiotal liter i 4.595 ligger i kgInstruktion. Testet för 4.550 läser nu också in bildhjälpfunktionen som utskriftsvyn använder. |
 | 2026-11-18 | ma1 | kvadratrotter | 26 av 33 | I 4.557, 4.559, 4.561 och 4.754 efterfrågas den positiva lösningen direkt. I 4.601 står nockens läge i frågan. 4.761 visar alla fyra uttrycken på papper. |
+| 2026-11-18 | ma1 | pythagoras | 26 av 48 | I 4.165 anges vilken garderobsdiagonal som behövs. Båda plåtarnas mått och beteckningar följer med till varje delkort i 4.401. I 4.402 visas påståendena även på papper. Utskriftstestet läser in bildhjälpfunktionen. |
 
 ### Tecken: riktning eller fysik
 
