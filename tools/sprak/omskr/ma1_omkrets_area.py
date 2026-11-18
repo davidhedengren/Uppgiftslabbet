@@ -1,0 +1,36 @@
+"""Ma1 kapitel 4, omkrets och area. Handskrivna frågor i figurernas ursprungliga ordning."""
+
+FIG = '<span class="fig">[F1]</span>'
+
+R = {
+    '4.532': {'t': '<p>En kvadratisk matta görs dubbelt så lång och dubbelt så bred. Vad händer med arean?</p>'},
+    '4.533': {'t': '<p>Ett runt köksbord har diametern 1,2 m. Hur stor är bordsskivans area?</p>'},
+    '4.534': {'t': '<p>Ett cykelhjul har diametern 66 cm. Hur långt rullar cykeln när hjulet snurrar ett varv?</p>'},
+    '4.535': {'t': '<p>En cirkelformad gräsmatta har radien 3,5 m. Hur stor är gräsmattan?</p>'},
+    '4.536': {'t': '<p>En rund pizza har diametern 30 cm. Hur stor är pizzans area?</p>'},
+    '4.537': {'t': '<p>Längs innerkanten av en löparbana finns två raksträckor på 85 m var och två halvcirklar med diametern 64 m.</p>' + FIG + '<p>Hur långt är ett varv längs innerkanten?</p>'},
+    '4.567': {'t': '<p>Ett cykelhjul har diametern 70 cm. Ungefär hur många varv snurrar hjulet när cykeln rullar 1 km?</p>'},
+    '4.568': {'t': '<p>Ett 40 m långt rep läggs som en kvadrat på gräset. Kvadraten har arean 100 m².</p><p>Hur stor yta omsluter repet om det i stället läggs som en cirkel? Hur många procent större är cirkelns area än kvadratens?</p>', 'kg': 'Avrunda båda svaren till en decimal.'},
+    '4.582': {'ers': [('ett parallelltrapets', 'en parallelltrapets')]},
+    '4.586': {'t': '<p>Ett rep ligger sträckt runt jorden längs ekvatorn, en sträcka på ungefär 40 000 km. Repet förlängs med 1 meter och spänns så att det ligger lika högt över marken hela vägen.</p><p>Hur högt över marken ligger repet nu?</p>', 'kg': 'Avrunda till en decimal.'},
+    '4.588': {'ers': [('Man räknar med 10 % spill, och ett paket laminat räcker till 2,2 m². Hur många paket behövs?', 'Ett paket laminat räcker till 2,2 m². Hur många paket behöver du köpa om du lägger till 10 % av golvarean för spill?')]},
+    '4.589': {'ers': [('Den nedersta raden måste kapas (se figuren), men varje kapad platta räknas som en hel.', 'I nedersta raden kapas plattorna. Till varje plats i raden används en ny platta.')]},
+    '4.590': {'t': '<p>På en ritning i skala 1 : 50 är ett förråd 9,0 cm långt och 6,0 cm brett. Hur stor är golvarean i verkligheten?</p>' + FIG},
+    '4.591': {'t': '<p>Hur långt staket behövs för att hägna in hela tomten i figuren?</p>' + FIG, 'kg': 'Avrunda till en decimal.'},
+    '4.717': {'t': FIG + '<p>Hur stor är rektangelns area?</p>'},
+    '4.718': {'t': FIG + '<p>Hur lång är kanten runt den rektangulära mattan?</p>'},
+    '4.719': {'t': FIG + '<p>Hur stor är triangelns area?</p>'},
+    '4.720': {'t': '<p>Varje ruta i rutnätet har arean 1 cm².</p>' + FIG + '<p>Hur stor är den färgade ytan?</p>'},
+    '4.721': {'t': FIG + '<p>Beräkna cirkelns area.</p>'},
+    '4.722': {'t': '<p>En rund tallrik har diametern 26 cm.</p>' + FIG + '<p>Hur stor är tallrikens omkrets?</p>'},
+    '4.723': {'t': FIG + '<p>Vilken area har parallellogrammen?</p>'},
+    '4.724': {'t': '<p>En kvadratisk tavla har omkretsen 36 cm. Hur stor är tavlans area?</p>'},
+    '4.725': {'t': '<p>Husgaveln i figuren ska målas.</p>' + FIG + '<p>Hur stor yta ska målas?</p>'},
+    '4.726': {'t': '<p>En scen har formen av en halvcirkel med radien 4 m.</p>' + FIG + '<p>Hur stor är scenens area?</p>'},
+    '4.727': {'t': FIG + '<p>Beräkna parallelltrapetsens area.</p>'},
+    '4.728': {'t': '<p>En skylt är 60 cm lång och 40 cm bred. Mitt i skylten sågas ett runt hål med radien 10 cm.</p>' + FIG + '<p>Hur stor area har den del av skylten som finns kvar?</p>'},
+    '4.730': {'ers': [('Hur stor är gräsmattans area? (Svara i m².)', 'Hur stor är gräsmattans area?')]},
+    '4.731': {'ers': [('Hur stor är planens area? (Svara i m².)', 'Hur stor är planens area?')]},
+    '4.732': {'t': '<p>En altan är 3 m lång och 250 cm bred. Hur många kvadratmeter är altanen?</p>'},
+    '4.733': {'t': '<p>Den nedre delen av ett fönster är en rektangel som är 80 cm bred och 100 cm hög. Upptill avslutas fönstret med en halvcirkel med diametern 80 cm.</p>' + FIG + '<p>Hur lång är fönstrets ytterkant?</p>'},
+}
