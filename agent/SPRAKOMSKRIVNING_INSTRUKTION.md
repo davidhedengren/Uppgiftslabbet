@@ -179,6 +179,7 @@ Inom Fy1 kommer kollisioner (kap 5) först, sedan resten av kapitel 5, därefter
 | 2026-11-18 | ma1 | kvadratrotter | 26 av 33 | I 4.557, 4.559, 4.561 och 4.754 efterfrågas den positiva lösningen direkt. I 4.601 står nockens läge i frågan. 4.761 visar alla fyra uttrycken på papper. |
 | 2026-11-18 | ma1 | pythagoras | 26 av 48 | I 4.165 anges vilken garderobsdiagonal som behövs. Båda plåtarnas mått och beteckningar följer med till varje delkort i 4.401. I 4.402 visas påståendena även på papper. Utskriftstestet läser in bildhjälpfunktionen. |
 | 2026-11-18 | ma1 | sinus_cosinus_tangens | 39 av 58 | I 4.38b anges kateternas längder 8 och 15 så att hypotenusan går att bestämma även på det fristående kortet. I 4.218 framgår vilken katet som ligger mitt emot vinkeln. 4.47 och 4.226 visar alternativen på papper. |
+| 2026-11-18 | ma1 | arcusfunktioner | 38 av 46 | I 4.800 och 4.801 får eleven själv välja sambandet från linjens lutning respektive katetens andel av hypotenusan. I 4.804 anges höjdskillnaden från handen. Flervalet i 4.116 visar fortsatt samtliga uttryck. |
 
 ### Tecken: riktning eller fysik
 
