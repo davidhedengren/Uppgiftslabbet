@@ -14,10 +14,10 @@ Kapitel 4 hade 995 uppgifter, och 574 saknade figur:
 | newton2 | 124 | ej påbörjat |
 | lutande_plan | 79 | ej påbörjat |
 | friktion | 70 | ej påbörjat |
-| gravitation | 45 | ej påbörjat |
+| gravitation | 45 | 7 figurer tillagda 2026-11-19 |
 | kraftvektorer | 41 | ej påbörjat |
 | fjadrar | 33 | ej påbörjat |
-| tyngdkraft | 31 | ej påbörjat |
+| tyngdkraft | 31 | 3 figurer tillagda 2026-11-19 |
 | blandat_kraft | 28 | ej påbörjat |
 | moment | 22 | ej påbörjat |
 | newton1 | 18 | ej påbörjat |
@@ -41,6 +41,17 @@ staplade böcker (4.478), låda som dras och trycks snett (4.502), våg och dyna
 på våg i hiss (4.217), två vikter i hiss (4.646), fisk i lina under brygga (4.642) och bok som trycks mot vägg (4.816).
 Enkla frågor om en låda på golvet (4.475, 4.479, 4.801–4.818) och flera liknande hissuppgifter fick ingen figur, för
 att undvika generiska kopior.
+
+## Urval i gravitation och tyngdkraft
+
+Gravitation: figur där geometrin är det svåra, alltså avstånd från centrum och höjd över ytan. Det gäller satellit 400 km
+över jordytan (4.74, delkort b och c, eftersom a har en egen kortare text), sond på höjden R (4.354), nollpunkten mellan
+två planeter (4.379), sten mellan två massor (4.753), bollar som nuddar varandra (4.738), jordens radie vid pol och
+ekvator (4.739, med överdriven tillplattning) och två fartyg (4.188). I 4.379 är punkten P **inte** skalenligt placerad,
+eftersom läget är svaret. Formelövningar med g = GM/R² och procentjämförelser fick ingen figur.
+
+Tyngdkraft: mest enstegsberäkningar med m och g, utan figur. Figur lades till där mätinstrumentet är poängen:
+kraftmätare på en planet (4.474), fjädervåg och balansvåg på månen (4.498) och kraftmätare på jorden och månen (4.887).
 
 ## Kontroll
 

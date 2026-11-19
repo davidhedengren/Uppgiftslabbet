@@ -15,6 +15,9 @@ const FIGURER = {
   '4.463': null, '4.464': null, '4.465': null, '4.496': null, '4.501': null, '4.896': null, '4.894': null,
   // normalkraft
   '4.477': null, '4.478': null, '4.502': null, '4.207': ['a'], '4.217': null, '4.646': null, '4.642': null, '4.816': null,
+  // gravitation och tyngdkraft
+  '4.74': ['b', 'c'], '4.354': null, '4.379': null, '4.753': null, '4.738': null, '4.739': null, '4.188': null,
+  '4.474': null, '4.498': null, '4.887': null,
 };
 
 test('kapitel 4: figuren finns i frågan och på rätt delkort', () => {
@@ -39,4 +42,13 @@ test('kraftfigurerna visar de givna krafterna men inte de sökta', () => {
   // Normalkraft, kopplingskraft och spännkraft (svaren) är inte utritade.
   for (const id of ['4.477', '4.478', '4.502', '4.816']) assert.doesNotMatch(q(id).t.match(/<svg[\s\S]*?<\/svg>/)[0], />N</, id);
   assert.doesNotMatch(q('4.501').t, />40 kN|>20 kN/); assert.doesNotMatch(q('4.896').t, />30 N</);
+});
+
+test('gravitation och tyngdkraft: givna avstånd och mätvärden står i figuren, det sökta är markerat med ?', () => {
+  for (const [id, tal] of [['4.74', ['R = 6371 km', '400 km']], ['4.379', ['85 000 km', 'x = ?']], ['4.753', ['2,00 m', 'sten 50 kg']], ['4.738', ['12 cm']],
+    ['4.739', ['6 378 km', '6 357 km']], ['4.188', ['200 m mellan masscentrum']], ['4.474', ['visar 14,8 N']], ['4.498', ['på jorden: 4,90 N', 'på månen: ?', 'massa ?']],
+    ['4.887', ['12,0 N', '2,03 N']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  assert.doesNotMatch(q('4.74').t, />6771/); assert.doesNotMatch(q('4.379').t, />54/); assert.doesNotMatch(q('4.498').t, />0,808|>0,499/);
 });

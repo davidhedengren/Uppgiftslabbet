@@ -250,6 +250,131 @@ def _():
     return b
 
 
+# ================================================================ gravitation
+@fig('4.74', 400, 270, 'Jorden med radien 6371 km och en satellit 400 km över jordytan. Satellitens avstånd från jordens centrum är okänt.', kort=['b', 'c'])
+def _():
+    cx, cy, R = 150, 160, 100
+    b = ring(cx, cy, R, '#7fb3d5') + tt(cx, cy + 40, 'jorden', 13, 'middle', '#1f4e6e', True)
+    sx, sy = cx + R + 70, cy - 70
+    b += linje(cx, cy, sx, sy, GRA, 1.4, '5 4') + cirkel(cx, cy, 3.5, INK, INK, 1)
+    ang = math.atan2(cy - sy, sx - cx)
+    px, py = cx + R * math.cos(ang), cy - R * math.sin(ang)
+    b += linje(cx, cy, px, py, INK, 2) + tt(cx + 12, cy + 24, 'R = 6371 km', 12, 'start', INK, True, halo=True)
+    b += linje(px, py, sx, sy, ROD, 2.6) + tt((px + sx) / 2 + 10, (py + sy) / 2 + 14, '400 km', 12, 'start', ROD, True, halo=True)
+    b += rekt(sx - 8, sy - 8, 16, 16, '#d9dde1', INK, 1.6, 2) + linje(sx - 20, sy, sx + 20, sy, '#3a6ea5', 4)
+    b += tt(sx + 4, sy - 18, 'satellit 1200 kg', 12, 'middle', INK, True)
+    b += tt(150, 36, 'avstånd från centrum till satelliten ?', 12, 'middle', ORA, True, halo=True)
+    return b
+
+
+@fig('4.354', 300, 290, 'En planet med radien R och en sond på höjden R över planetens yta.')
+def _():
+    cx, cy, R = 150, 200, 76
+    b = ring(cx, cy, R, '#c9a27a') + cirkel(cx, cy, 3.5, INK, INK, 1)
+    b += linje(cx, cy, cx, cy - R, INK, 2) + tt(cx + 8, cy - R / 2 + 5, 'R', 15, 'start', INK, True, italic=True, halo=True)
+    b += linje(cx, cy - R, cx, cy - 2 * R, ROD, 2.4) + tt(cx + 8, cy - 1.5 * R + 5, 'R', 15, 'start', ROD, True, italic=True, halo=True)
+    b += rekt(cx - 9, cy - 2 * R - 18, 18, 18, '#d9dde1', INK, 1.6, 2) + tt(cx + 16, cy - 2 * R - 6, 'sond', 13, 'start', INK, True)
+    b += cirkel(cx, cy - R, 3, ROD, ROD, 1) + tt(cx - 10, cy - R - 6, 'ytan', 11, 'end', GRA, True)
+    return b
+
+
+@fig('4.379', 460, 170, 'Två planeter med massorna 5,0·10²⁴ kg och 1,6·10²⁴ kg och centrumavståndet 85 000 km. Punkten där gravitationsfälten tar ut varandra ligger mellan dem.')
+def _():
+    x1, x2, y = 70, 400, 80
+    b = rekt(0, 0, 460, 170, '#1d2733', 'none', 0, 0)
+    b += ring(x1, y, 40, '#5b9bd5', '#cfe6f5', 2) + ring(x2, y, 24, '#e07a5f', '#f8d3c8', 2)
+    b += tt(x1, y + 5, 'M₁', 15, 'middle', '#fff', True) + tt(x2, y + 5, 'M₂', 14, 'middle', '#fff', True)
+    xp = x1 + (x2 - x1) * 0.52  # schematiskt, inte skalenligt (svaret är 0,639 av avståndet)
+    b += cirkel(xp, y, 5, '#f9c74f', '#fff', 1.4) + tt(xp, y - 14, 'P', 14, 'middle', '#f9c74f', True)
+    b += linje(x1, 130, x2, 130, '#cfe6f5', 1.5) + linje(x1, 124, x1, 136, '#cfe6f5', 1.5) + linje(x2, 124, x2, 136, '#cfe6f5', 1.5)
+    b += tt((x1 + x2) / 2, 152, '85 000 km', 13, 'middle', '#ffffff', True)
+    b += linje(x1, 108, xp, 108, '#f9c74f', 1.5, '5 4') + tt((x1 + xp) / 2, 102, 'x = ?', 13, 'middle', '#f9c74f', True)
+    b += tt(x1, 30, '5,0·10²⁴ kg', 12, 'middle', '#cfe6f5', True) + tt(x2, 42, '1,6·10²⁴ kg', 12, 'middle', '#f8d3c8', True)
+    return b
+
+
+@fig('4.753', 440, 160, 'Två föremål med massorna 200 kg och 500 kg är 2,00 m från varandra. En sten med massan 50 kg ligger på linjen mellan dem.')
+def _():
+    x1, x2, y = 60, 380, 80
+    b = ring(x1, y, 26, '#9aa4ab') + ring(x2, y, 36, '#6b7a86') + tt(x1, y + 5, '200 kg', 11, 'middle', '#fff', True) + tt(x2, y + 5, '500 kg', 12, 'middle', '#fff', True)
+    b += path('M214,90 C208,80 214,70 222,70 C232,70 236,80 230,90 Z', '#8f8a82', INK, 1.4) + tt(222, 60, 'sten 50 kg', 12, 'middle', INK, True)
+    b += matt_h(x1, x2, 140, '2,00 m', under=False)
+    return b
+
+
+@fig('4.738', 360, 170, 'Två identiska bollar med radien 12 cm ligger så att de nuddar varandra.')
+def _():
+    b = linje(10, 150, 350, 150, INK, 2)
+    for cx in (120, 240):
+        b += ring(cx, 90, 60, '#e9a33b')
+        b += cirkel(cx, 90, 3, INK, INK, 1)
+    b += linje(120, 90, 120 - 60, 90, INK, 1.6, '5 4') + tt(90, 82, '12 cm', 12, 'middle', INK, True, halo=True)
+    return b
+
+
+@fig('4.739', 400, 270, 'Jorden är lite tillplattad: radien är 6 378 km vid ekvatorn och 6 357 km vid nordpolen. Tillplattningen är överdriven i figuren.')
+def _():
+    cx, cy = 180, 140
+    b = ellips(cx, cy, 120, 100, '#7fb3d5', INK, 2) + cirkel(cx, cy, 3.5, INK, INK, 1)
+    b += linje(cx, cy, cx + 120, cy, INK, 1.8, '5 4') + tt(cx + 60, cy - 8, '6 378 km', 12, 'middle', INK, True, halo=True)
+    b += linje(cx, cy, cx, cy - 100, ROD, 1.8, '5 4') + tt(cx + 8, cy - 56, '6 357 km', 12, 'start', ROD, True, halo=True)
+    b += gubbe(cx, cy - 100, INK, 0.5) + tt(cx + 12, cy - 112, 'nordpolen', 12, 'start', INK, True)
+    b += cirkel(cx + 120, cy, 4, ROD, INK, 1) + tt(cx + 128, cy + 20, 'ekvatorn', 12, 'start', INK, True)
+    b += tt(cx, 262, 'tillplattningen är överdriven', 11, 'middle', GRA)
+    return b
+
+
+@fig('4.188', 460, 170, 'Två fartyg med massan 5,0·10⁷ kg vardera. Avståndet mellan deras masscentrum är 200 m.')
+def _():
+    b = f'<rect x="0" y="110" width="460" height="60" fill="{VATTEN}"/>' + linje(0, 110, 460, 110, BLA, 2)
+    for x in (30, 290):
+        b += path(f'M{x},96 L{x + 140},96 L{x + 124},124 L{x + 14},124 Z', '#5d6b75', INK, 2) + rekt(x + 40, 72, 50, 24, '#e9eef2', INK, 1.6, 2)
+        b += cirkel(x + 70, 104, 3.5, '#f9c74f', INK, 1)
+    b += linje(100, 150, 360, 150, INK, 1.5) + linje(100, 144, 100, 156, INK, 1.5) + linje(360, 144, 360, 156, INK, 1.5)
+    b += tt(230, 144, '200 m mellan masscentrum', 12, 'middle', INK, True, halo=True)
+    b += tt(100, 60, '5,0·10⁷ kg', 12, 'middle', INK, True) + tt(360, 60, '5,0·10⁷ kg', 12, 'middle', INK, True)
+    return b
+
+
+# ================================================================ tyngdkraft
+def kraftmatare(x, y_topp, visn, vikt_text, fill='#8c969e'):
+    b = linje(x, y_topp - 20, x, y_topp, INK, 2) + rekt(x - 12, y_topp, 24, 90, '#f7fafc', INK, 1.8, 6)
+    for yy in range(y_topp + 10, y_topp + 84, 10):
+        b += linje(x - 10, yy, x - 2, yy, GRA, 1)
+    b += linje(x, y_topp + 90, x, y_topp + 110, INK, 2) + rekt(x - 18, y_topp + 110, 36, 30, fill, INK, 1.8, 3)
+    b += tt(x, y_topp + 130, vikt_text, 11, 'middle', '#fff', True)
+    b += tt(x + 20, y_topp + 48, visn, 13, 'start', ORA, True)
+    return b
+
+
+@fig('4.474', 300, 210, 'På en planet hänger en vikt med massan 4,0 kg stilla i en kraftmätare som visar 14,8 N.')
+def _():
+    b = rekt(80, 10, 140, 10, '#5d6b75', INK, 1.6, 2) + kraftmatare(150, 40, 'visar 14,8 N', '4,0 kg')
+    return b
+
+
+@fig('4.498', 440, 230, 'Samma föremål vägs på månen. a) I en fjädervåg, som på jorden visar 4,90 N. b) På en balansvåg, där det jämförs med vikter.')
+def _():
+    b = tt(20, 24, 'a)', 14, 'start', INK, True) + tt(240, 24, 'b)', 14, 'start', INK, True)
+    b += rekt(50, 30, 120, 8, '#5d6b75', INK, 1.4, 2) + kraftmatare(110, 58, 'på jorden: 4,90 N', '', '#e07a5f')
+    b += tt(110, 224, 'på månen: ?', 12, 'middle', ORA, True)
+    b += path('M310,190 L300,210 L360,210 L350,190 Z', '#9aa4ab', INK, 1.6) + linje(330, 190, 330, 90, INK, 3) + linje(260, 90, 400, 90, INK, 3)
+    b += path('M310,86 L330,74 L350,86', 'none', INK, 2)
+    for x, fill, text in ((262, '#e07a5f', 'föremål'), (398, '#9aa4ab', 'vikter')):
+        b += linje(x, 90, x - 20, 130, GRA, 1.4) + linje(x, 90, x + 20, 130, GRA, 1.4) + path(f'M{x - 28},130 L{x + 28},130 L{x + 20},140 L{x - 20},140 Z', '#c9d0d5', INK, 1.4)
+        b += rekt(x - 12, 114, 24, 16, fill, INK, 1.2, 2) + tt(x, 158, text, 12, 'middle', INK, True)
+    b += tt(330, 224, 'massa ?', 12, 'middle', ORA, True)
+    return b
+
+
+@fig('4.887', 380, 230, 'Samma föremål hänger i en kraftmätare. På jorden visar kraftmätaren 12,0 N och på månen 2,03 N.')
+def _():
+    b = rekt(20, 10, 160, 10, '#5d6b75', INK, 1.6, 2) + rekt(200, 10, 160, 10, '#5d6b75', INK, 1.6, 2)
+    b += kraftmatare(90, 40, '12,0 N', '', '#e07a5f') + kraftmatare(270, 40, '2,03 N', '', '#e07a5f')
+    b += tt(100, 210, 'på jorden', 13, 'middle', BLA, True) + tt(280, 210, 'på månen', 13, 'middle', GRA, True)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur, efter=None):
     i = (html.index(efter) + len(efter)) if efter and efter in html else html.index('</p>') + 4
