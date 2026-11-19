@@ -18,6 +18,10 @@ const FIGURER = {
   // gravitation och tyngdkraft
   '4.74': ['b', 'c'], '4.354': null, '4.379': null, '4.753': null, '4.738': null, '4.739': null, '4.188': null,
   '4.474': null, '4.498': null, '4.887': null,
+  // Newtons första lag, kraftmoment och fjädrar
+  '4.91': null, '4.97': null, '4.313': null, '4.500': null, '4.671': ['b', 'c'], '4.672': ['b', 'c'], '4.674': null, '4.172': null,
+  '4.451': null, '4.75': null, '4.301': null, '4.505': null, '4.508': ['a'], '4.510': null, '4.511': null, '4.514': null,
+  '4.181': null, '4.272': null, '4.308': null, '4.329': null, '4.327': null,
 };
 
 test('kapitel 4: figuren finns i frågan och på rätt delkort', () => {
@@ -51,4 +55,14 @@ test('gravitation och tyngdkraft: givna avstånd och mätvärden står i figuren
     for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
   }
   assert.doesNotMatch(q('4.74').t, />6771/); assert.doesNotMatch(q('4.379').t, />54/); assert.doesNotMatch(q('4.498').t, />0,808|>0,499/);
+});
+
+test('jämvikt, moment och fjädrar: vinklar, avstånd och fjäderkonstanter står i figuren, det sökta är markerat', () => {
+  for (const [id, tal] of [['4.91', ['25°', 'skylt 12 kg']], ['4.97', ['25°', '40°', '78 kg']], ['4.313', ['120 N', '35°']], ['4.500', ['30°', '60°']],
+    ['4.451', ['500 N', '1,2 m', '3,0 m', 'lina ?']], ['4.301', ['40 N', '30 N', '20 N', '0,60 m', '0,50 m', '0,40 m']], ['4.505', ['Anna 18 kg', 'Britta 24 kg', 'avstånd ?']],
+    ['4.510', ['4,7 m', 'friktionskraft ?']], ['4.511', ['30°', '1,00 m', 'skylt ?']], ['4.514', ['5,0 cm', '15 cm', '40 cm', 'biceps ?']],
+    ['4.181', ['k₁ = 30 N/m', 'k₂ = 45 N/m']], ['4.327', ['18 cm', '24 cm']], ['4.329', ['8,0 cm', 'k = 200 N/m']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  assert.doesNotMatch(q('4.451').t, />200 N</); assert.doesNotMatch(q('4.505').t, />1,1/); assert.doesNotMatch(q('4.514').t, />119/);
 });

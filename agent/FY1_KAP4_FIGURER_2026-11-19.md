@@ -16,11 +16,11 @@ Kapitel 4 hade 995 uppgifter, och 574 saknade figur:
 | friktion | 70 | ej påbörjat |
 | gravitation | 45 | 7 figurer tillagda 2026-11-19 |
 | kraftvektorer | 41 | ej påbörjat |
-| fjadrar | 33 | ej påbörjat |
+| fjadrar | 33 | 5 figurer tillagda 2026-11-19 |
 | tyngdkraft | 31 | 3 figurer tillagda 2026-11-19 |
 | blandat_kraft | 28 | ej påbörjat |
-| moment | 22 | ej påbörjat |
-| newton1 | 18 | ej påbörjat |
+| moment | 22 | 8 figurer tillagda 2026-11-19 |
+| newton1 | 18 | 8 figurer tillagda 2026-11-19 |
 
 ## Regler
 
@@ -52,6 +52,20 @@ eftersom läget är svaret. Formelövningar med g = GM/R² och procentjämförel
 
 Tyngdkraft: mest enstegsberäkningar med m och g, utan figur. Figur lades till där mätinstrumentet är poängen:
 kraftmätare på en planet (4.474), fjädervåg och balansvåg på månen (4.498) och kraftmätare på jorden och månen (4.887).
+
+## Urval i newton1, moment och fjädrar
+
+Newtons första lag (jämvikt): snören och vajrar med vinklar (4.91, 4.97, 4.313, 4.500), trissor (4.671 och 4.672,
+bara delkort b och c, eftersom a har en egen kortare text, samt 4.674) och tvättlinan med nedhänget h (4.172). Inga
+krafter som söks är utritade. 4.171 ber eleven frilägga och rita krafterna och fick ingen figur.
+
+Kraftmoment: balk med led och lina (4.451), skottkärra (4.75), stång med tre krafter kring O (4.301), gungbräda (4.505),
+hängande plattform med målare (4.508, bara delkort a), stege mot vägg (4.510), stång med snöre i 30° (4.511) och
+underarm med bok (4.514). Enstegsuppgifter med M = Fl (4.127) och tyngdpunktsfrågor utan geometri fick ingen figur.
+
+Fjädrar: två fjädrar i serie med vikt (4.181), stång i två fjädrar (4.272, med vikten på okänd plats), serie- och
+parallellkoppling (4.308), fjäder som dras från väggen (4.329) och obelastad och belastad längd (4.327). Enstegsuppgifter
+med F = kx (4.323–4.328, 4.332–4.340) fick ingen figur.
 
 ## Kontroll
 

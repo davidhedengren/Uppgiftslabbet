@@ -375,6 +375,299 @@ def _():
     return b
 
 
+# ================================================================ Newtons första lag (jämvikt)
+def tak(x1, x2, y=20):
+    b = rekt(x1, y - 12, x2 - x1, 12, '#c9d0d5', INK, 1.6, 0)
+    for x in range(int(x1) + 6, int(x2), 14):
+        b += linje(x, y - 12, x + 8, y - 20, GRA, 1)
+    return b
+
+
+def snore_vinkel(px, py, vinkel_lod, L, sida, color=INK):
+    """Snöre från (px, py) upp till taket med vinkeln vinkel_lod mot lodlinjen, åt sida (-1 vänster, 1 höger)."""
+    th = math.radians(vinkel_lod)
+    return px + sida * L * math.sin(th), py - L * math.cos(th)
+
+
+def vinkelbage(cx, cy, r, a1, a2, text, color=ORA, tsize=13, dr=16):
+    n = 20
+    pts = [(cx + r * math.cos(math.radians(a1 + (a2 - a1) * i / n)), cy - r * math.sin(math.radians(a1 + (a2 - a1) * i / n))) for i in range(n + 1)]
+    b = f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" stroke="{color}" stroke-width="2"/>'
+    m = math.radians((a1 + a2) / 2)
+    return b + tt(cx + (r + dr) * math.cos(m), cy - (r + dr) * math.sin(m) + 5, text, tsize, 'middle', color, True, halo=True)
+
+
+@fig('4.91', 400, 220, 'En skylt med massan 12 kg hänger stilla i två symmetriska vajrar. Varje vajer bildar 25° mot lodlinjen.')
+def _():
+    px, py = 200, 120
+    b = tak(40, 360)
+    for sida in (-1, 1):
+        ex, ey = snore_vinkel(px, py, 25, 110, sida)
+        b += linje(px, py, ex, ey, INK, 2)
+    b += linje(px, py, px, 34, GRA, 1.2, '4 4')
+    b += vinkelbage(px, py, 44, 90, 115, '25°', ORA, 12, 46) + vinkelbage(px, py, 44, 65, 90, '25°', ORA, 12, 46)
+    b += rekt(150, 120, 100, 52, '#5b9bd5', INK, 2, 4) + tt(200, 152, 'skylt 12 kg', 13, 'middle', '#fff', True)
+    return b
+
+
+@fig('4.97', 400, 240, 'En klättrare med massan 78 kg hänger stilla i två rep. Det ena repet bildar 25° och det andra 40° med lodlinjen, åt motsatta sidor.')
+def _():
+    px, py = 200, 140
+    b = rekt(0, 0, 400, 20, '#a39b8f', 'none', 0, 0)
+    for v, sida in ((25, -1), (40, 1)):
+        ex, ey = snore_vinkel(px, py, v, 132 / math.cos(math.radians(v)), sida)
+        b += linje(px, py, ex, ey, ORA, 2.4) + cirkel(ex, ey, 4, INK, INK, 1)
+    b += linje(px, py, px, 24, GRA, 1.2, '4 4')
+    b += vinkelbage(px, py, 50, 90, 115, '25°') + vinkelbage(px, py, 50, 50, 90, '40°')
+    b += gubbe(px, py + 70, INK, 1.3) + tt(px + 26, py + 58, '78 kg', 13, 'start', INK, True)
+    return b
+
+
+@fig('4.313', 380, 230, 'En lätt ring i jämvikt. En kraft på 120 N pekar åt höger, ett snöre drar uppåt åt vänster i vinkeln 35° mot horisontellt och en tredje kraft pekar nedåt.')
+def _():
+    cx, cy = 190, 130
+    b = ring(cx, cy, 10, 'none', INK, 3)
+    b += pil(cx + 12, cy, cx + 130, cy, ROD, 3) + tt(cx + 136, cy + 5, '120 N', 13, 'start', ROD, True)
+    th = math.radians(180 - 35)
+    b += linje(cx - 8, cy - 6, cx + 140 * math.cos(th), cy - 140 * math.sin(th), INK, 2.2)
+    b += linje(cx - 10, cy, cx - 110, cy, GRA, 1.2, '4 4') + vinkelbage(cx, cy, 56, 145, 180, '35°')
+    b += tt(cx + 150 * math.cos(th) - 4, cy - 150 * math.sin(th), 'snöre', 12, 'end', INK, True)
+    b += pil(cx, cy + 12, cx, cy + 90, GRA, 3) + tt(cx + 8, cy + 80, 'tredje kraften', 12, 'start', GRA, True)
+    return b
+
+
+@fig('4.500', 400, 220, 'En lampa med massan 4,0 kg hänger stilla i två snören från taket. Det ena snöret bildar 30° med taket och det andra 60°.')
+def _():
+    px, py = 220, 130
+    b = tak(20, 380)
+    x1 = px - (py - 20) / math.tan(math.radians(30))
+    x2 = px + (py - 20) / math.tan(math.radians(60))
+    b += linje(px, py, x1, 20, INK, 2) + linje(px, py, x2, 20, INK, 2)
+    b += vinkelbage(x1, 20, 40, 0, -30, '30°', ORA, 13, 18) + vinkelbage(x2, 20, 30, 180, 240, '60°', ORA, 13, 18)
+    b += path(f'M{px - 18},{py + 26} L{px + 18},{py + 26} L{px + 8},{py} L{px - 8},{py} Z', '#f9c74f', INK, 1.6)
+    b += linje(px, py, px, py, INK, 1) + tt(px, py + 46, 'lampa 4,0 kg', 13, 'middle', INK, True)
+    return b
+
+
+def trissa(cx, cy, r=18):
+    return ring(cx, cy, r, '#c9d0d5') + cirkel(cx, cy, 3, INK, INK, 1)
+
+
+@fig('4.671', 360, 260, 'En person med massan 60 kg hänger i ett rep över en trissa i taket. I repets andra ände sitter en motvikt med massan 100 kg som står på golvet.', kort=['b', 'c'])
+def _():
+    b = tak(80, 280) + linje(180, 20, 180, 40, INK, 2) + trissa(180, 58)
+    b += linje(162, 58, 162, 130, INK, 2) + linje(198, 58, 198, 190, INK, 2) + golv(360, 236)
+    b += gubbe(162, 186, BLA, 1.2) + tt(120, 160, '60 kg', 13, 'end', BLA, True)
+    b += rekt(176, 190, 44, 46, '#8c969e', INK, 2, 3) + tt(198, 218, '100 kg', 11, 'middle', '#fff', True)
+    return b
+
+
+@fig('4.672', 360, 250, 'En vikt med massan 7,0 kg står på ett bord under en trissa i taket. Ett snöre går över trissan till en hängande vikt med massan 4,0 kg.', kort=['b', 'c'])
+def _():
+    b = tak(60, 300) + linje(180, 20, 180, 40, INK, 2) + trissa(180, 58)
+    b += rekt(110, 200, 120, 12, '#b98b5a', INK, 2, 2) + rekt(120, 212, 10, 30, '#9b6f43', INK, 1.2, 0) + rekt(210, 212, 10, 30, '#9b6f43', INK, 1.2, 0)
+    b += rekt(140, 160, 44, 40, '#5b9bd5', INK, 2, 3) + tt(162, 186, '7,0 kg', 11, 'middle', '#fff', True)
+    b += linje(162, 58, 162, 160, INK, 2) + linje(198, 58, 198, 120, INK, 2)
+    b += rekt(182, 120, 32, 30, '#e07a5f', INK, 2, 3) + tt(198, 140, '4,0 kg', 10, 'middle', '#fff', True)
+    return b
+
+
+@fig('4.674', 360, 250, 'En fjäder med fjäderkonstanten 50 N/m är fäst i ett bord. Ett snöre från fjädern går över en trissa i taket till en hängande vikt med massan 1,0 kg.')
+def _():
+    b = tak(60, 300) + linje(180, 20, 180, 40, INK, 2) + trissa(180, 58)
+    b += rekt(90, 212, 160, 12, '#b98b5a', INK, 2, 2)
+    pts = ' '.join(f'{162 + (7 if i % 2 else -7)},{208 - i * 6}' for i in range(12))
+    b += f'<polyline points="162,212 {pts} 162,136" fill="none" stroke="{GRA}" stroke-width="2"/>'
+    b += linje(162, 136, 162, 58, INK, 2) + linje(198, 58, 198, 140, INK, 2)
+    b += rekt(182, 140, 32, 30, '#e07a5f', INK, 2, 3) + tt(198, 160, '1,0 kg', 10, 'middle', '#fff', True)
+    b += tt(150, 176, '50 N/m', 12, 'end', INK, True)
+    return b
+
+
+@fig('4.172', 460, 160, 'En jacka hänger mitt på en tvättlina mellan två fästen på samma höjd, 6,0 m från varandra. Linan hänger ner en liten bit h.')
+def _():
+    b = rekt(20, 30, 10, 110, '#9b6f43', INK, 1.4, 0) + rekt(430, 30, 10, 110, '#9b6f43', INK, 1.4, 0)
+    b += linje(30, 40, 230, 62, INK, 2) + linje(230, 62, 430, 40, INK, 2) + linje(30, 40, 430, 40, GRA, 1.2, '4 4')
+    b += path('M210,62 L250,62 L262,82 L254,118 L206,118 L198,82 Z', '#5b9bd5', INK, 1.6) + tt(230, 100, '2,5 kg', 11, 'middle', '#fff', True)
+    b += linje(244, 40, 244, 62, ORA, 1.6) + tt(276, 34, 'h', 14, 'start', ORA, True, italic=True) + linje(250, 48, 272, 32, ORA, 1)
+    b += matt_h(30, 430, 150, '6,0 m', under=False)
+    return b
+
+
+# ================================================================ kraftmoment
+def balk(x1, x2, y, h=12, fill='#c9a27a'):
+    return rekt(x1, y - h / 2, x2 - x1, h, fill, INK, 2, 2)
+
+
+def led(x, y):
+    return path(f'M{x},{y} L{x - 12},{y + 20} L{x + 12},{y + 20} Z', '#9aa4ab', INK, 1.6) + cirkel(x, y, 4, INK, '#fff', 1.4)
+
+
+@fig('4.451', 440, 200, 'En lätt horisontell balk är ledad i vänstra änden. En last trycker nedåt med 500 N, 1,2 m från leden. En vertikal lina drar uppåt i högra änden, 3,0 m från leden.')
+def _():
+    x0, k, y = 50, 110, 120
+    b = rekt(20, 40, 12, 120, '#d9d3c7', INK, 1.4, 0) + led(x0, y) + balk(x0, x0 + 3.0 * k, y)
+    b += pil(x0 + 1.2 * k, 60, x0 + 1.2 * k, y - 8, ROD, 3) + tt(x0 + 1.2 * k + 8, 74, '500 N', 13, 'start', ROD, True)
+    b += linje(x0 + 3.0 * k, y - 6, x0 + 3.0 * k, 20, INK, 2) + tt(x0 + 3.0 * k + 8, 40, 'lina ?', 13, 'start', ORA, True)
+    b += matt_h(x0, x0 + 1.2 * k, 160, '1,2 m', under=True) + matt_h(x0, x0 + 3.0 * k, 186, '3,0 m', under=False, size=13)
+    return b
+
+
+@fig('4.75', 440, 224, 'En skottkärra med last. Händernas lyftkraft verkar 1,4 m bakom hjulaxeln. Lastens tyngdpunkt ligger ett okänt avstånd bakom hjulaxeln.')
+def _():
+    b = golv(440, 170)
+    b += cirkel(90, 148, 22, INK, '#fff', 3) + cirkel(90, 148, 4, INK, INK, 1)
+    b += path('M90,148 L120,96 L260,96 L290,126 L120,126 Z', '#5b9bd5', INK, 2)
+    b += linje(260, 110, 370, 84, INK, 4) + linje(290, 126, 300, 168, INK, 3)
+    b += pil(370, 130, 370, 90, ROD, 3) + tt(378, 120, 'händerna', 12, 'start', ROD, True)
+    b += cirkel(190, 110, 4, '#f9c74f', INK, 1) + tt(190, 86, 'lastens tyngdpunkt', 11, 'middle', INK, True)
+    b += linje(90, 204, 370, 204, GRA, 1.4) + linje(90, 198, 90, 210, GRA, 1.4) + linje(370, 198, 370, 210, GRA, 1.4)
+    b += tt(230, 220, '1,4 m', 12, 'middle', INK, True) + tt(150, 150, 'x = ?', 12, 'middle', ORA, True, halo=True)
+    return b
+
+
+@fig('4.301', 460, 214, 'En horisontell stång kan vridas kring O. 40 N nedåt 0,60 m till vänster om O, 30 N nedåt 0,50 m till höger och 20 N uppåt 0,40 m till höger.')
+def _():
+    o, k, y = 240, 300, 100
+    b = balk(o - 0.8 * k, o + 0.7 * k, y, 10, '#d9dde1') + led(o, y)
+    b += tt(o - 12, y + 34, 'O', 14, 'end', INK, True)
+    b += pil(o - 0.6 * k, 40, o - 0.6 * k, y - 6, ROD, 3) + tt(o - 0.6 * k - 8, 52, '40 N', 13, 'end', ROD, True)
+    b += pil(o + 0.5 * k, 40, o + 0.5 * k, y - 6, ROD, 3) + tt(o + 0.5 * k + 8, 52, '30 N', 13, 'start', ROD, True)
+    b += pil(o + 0.4 * k, y + 50, o + 0.4 * k, y + 6, BLA, 3) + tt(o + 0.4 * k - 8, y + 40, '20 N', 13, 'end', BLA, True)
+    b += matt_h(o - 0.6 * k, o, 172, '0,60 m', under=False, size=12) + matt_h(o, o + 0.5 * k, 172, '0,50 m', under=False, size=12).replace('0,50 m<', '0,50 m<')
+    b += matt_h(o, o + 0.4 * k, 200, '0,40 m', under=False, size=12)
+    return b
+
+
+@fig('4.505', 460, 170, 'En 3,0 m lång gungbräda med stödet i mitten. Anna, 18 kg, sitter längst ut på sin sida. Britta, 24 kg, sitter på andra sidan på ett okänt avstånd från stödet.')
+def _():
+    o, k, y = 230, 130, 110
+    b = golv(460, 150) + path(f'M{o},{y + 6} L{o - 20},150 L{o + 20},150 Z', '#9aa4ab', INK, 2) + balk(o - 1.5 * k, o + 1.5 * k, y, 10, '#c9a27a')
+    b += gubbe(o - 1.5 * k + 10, y - 5, BLA, 0.9) + tt(o - 1.5 * k + 10, 40, 'Anna 18 kg', 12, 'middle', BLA, True)
+    b += gubbe(o + 1.0 * k, y - 5, ORA, 1.0) + tt(o + 1.0 * k, 36, 'Britta 24 kg', 12, 'middle', ORA, True)
+    b += linje(o + 24, 128, o + 1.0 * k, 128, ORA, 1.4) + linje(o + 1.0 * k, 122, o + 1.0 * k, 134, ORA, 1.4) + tt(o + 0.6 * k, 144, 'avstånd ?', 12, 'middle', ORA, True)
+    b += tt(o - 0.75 * k, 136, '1,5 m', 12, 'middle', INK, True)
+    return b
+
+
+@fig('4.508', 440, 190, 'En 5,0 m lång plattform med massan 20,0 kg hänger i två vertikala snören, ett i varje ände. En målare med massan 75,0 kg står 2,0 m från det vänstra snöret.', kort=['a'])
+def _():
+    x0, k, y = 40, 72, 150
+    b = tak(20, 420) + linje(x0 + 4, 20, x0 + 4, y - 6, INK, 2) + linje(x0 + 5 * k - 4, 20, x0 + 5 * k - 4, y - 6, INK, 2)
+    b += balk(x0, x0 + 5 * k, y, 10, '#c9a27a') + gubbe(x0 + 2 * k, y - 5, BLA, 1.2)
+    b += tt(x0 + 2 * k + 24, 96, 'målare 75,0 kg', 12, 'start', BLA, True) + tt(x0 + 3.6 * k, y + 22, 'plattform 20,0 kg', 12, 'middle', INK, True)
+    b += linje(x0 + 4, y + 30, x0 + 2 * k, y + 30, GRA, 1.4) + tt(x0 + k, y + 26, '2,0 m', 12, 'middle', INK, True, halo=True)
+    b += tt(x0 + 2.5 * k, 50, '5,0 m mellan snörena', 12, 'middle', GRA, True)
+    return b
+
+
+@fig('4.510', 390, 296, 'En 5,0 m lång stege med massan 12 kg står mot en vägg utan friktion. Överänden är 4,7 m över marken. En målare med massan 68 kg har sin tyngdpunkt 3,0 m över marken.')
+def _():
+    b = golv(390, 250) + rekt(290, 0, 100, 250, '#d9d3c7', 'none', 0, 0) + linje(290, 0, 290, 250, INK, 2)
+    k = 50
+    top = (290, 250 - 4.7 * k)
+    bot = (290 - math.sqrt(5.0 ** 2 - 4.7 ** 2) * k, 250)
+    for d in (-6, 6):
+        b += linje(bot[0] + d, bot[1], top[0] + d * 0.3, top[1], '#9b6f43', 3)
+    for i in range(1, 10):
+        t = i / 10
+        x, y = bot[0] + (top[0] - bot[0]) * t, bot[1] + (top[1] - bot[1]) * t
+        b += linje(x - 6, y, x + 6, y, '#9b6f43', 2)
+    t3 = 3.0 / 4.7
+    mx, my = bot[0] + (top[0] - bot[0]) * t3, 250 - 3.0 * k
+    b += gubbe(mx - 14, my + 20, BLA, 0.9) + cirkel(mx - 14, my, 3, '#f9c74f', INK, 1)
+    b += matt_v(310, top[1], 250, '4,7 m') + tt(mx - 30, my - 4, 'målare', 12, 'end', BLA, True)
+    b += linje(30, my, mx - 18, my, GRA, 1.2, '4 4') + tt(30, my - 6, '3,0 m över golvet', 11, 'start', GRA, True)
+    b += tt(bot[0] - 10, 288, 'friktionskraft ?', 12, 'end', ORA, True)
+    return b
+
+
+@fig('4.511', 440, 210, 'En 1,00 m lång stång är ledad i en vägg. Ett snöre från väggen fäst i stångens mitt drar 30° uppåt från stången. En skylt hänger längst ut.')
+def _():
+    wx, y, L = 40, 150, 330
+    b = rekt(0, 0, wx, 210, '#d9d3c7', 'none', 0, 0) + linje(wx, 0, wx, 210, INK, 2)
+    b += balk(wx, wx + L, y, 10, '#9aa4ab') + cirkel(wx + 4, y, 5, INK, '#fff', 1.4)
+    mx = wx + L / 2
+    topy = y - (L / 2) * math.tan(math.radians(30))
+    b += linje(wx, topy, mx, y - 5, INK, 2) + vinkelbage(mx, y, 50, 180, 150, '30°', ORA, 13, 18)
+    b += linje(wx + L - 10, y + 5, wx + L - 10, y + 22, INK, 1.6) + rekt(wx + L - 40, y + 22, 60, 30, '#5b9bd5', INK, 1.6, 3)
+    b += tt(wx + L - 10, y + 42, 'skylt ?', 11, 'middle', '#fff', True) + tt(wx + L / 2, y + 26, '1,00 m', 12, 'middle', INK, True)
+    return b
+
+
+@fig('4.514', 420, 220, 'En horisontell underarm håller en bok. Bokens tyngdpunkt är 40 cm från armbågen, underarmens 15 cm. Bicepsmuskeln drar uppåt 5,0 cm från armbågen.')
+def _():
+    k, x0, y = 8, 40, 110
+    b = path(f'M{x0},{y - 14} L{x0 + 44 * k},{y - 10} L{x0 + 44 * k},{y + 10} L{x0},{y + 14} Z', '#f0c9a8', INK, 2)
+    b += cirkel(x0, y, 14, '#f0c9a8', INK, 2) + tt(x0, y - 22, 'armbåge', 11, 'middle', GRA, True)
+    b += rekt(x0 + 40 * k - 26, y - 34, 52, 22, '#5b9bd5', INK, 1.6, 2) + tt(x0 + 40 * k, y - 18, 'bok', 12, 'middle', '#fff', True)
+    b += pil(x0 + 5 * k, y + 46, x0 + 5 * k, y + 4, ROD, 3) + tt(x0 + 5 * k + 8, y + 42, 'biceps ?', 12, 'start', ROD, True)
+    b += cirkel(x0 + 15 * k, y, 3, INK, INK, 1)
+    for d, t, yy in ((5, '5,0 cm', 176), (15, '15 cm', 194), (40, '40 cm', 212)):
+        b += linje(x0, yy - 4, x0 + d * k, yy - 4, GRA, 1.2) + linje(x0 + d * k, yy - 8, x0 + d * k, yy, GRA, 1.2) + linje(x0, yy - 8, x0, yy, GRA, 1.2)
+        b += tt(x0 + d * k + 6, yy, t, 11, 'start', INK, True)
+    return b
+
+
+# ================================================================ fjädrar
+def fjader(x, y1, y2, n=12, color=GRA, w=2):
+    pts = ' '.join(f'{x + (7 if i % 2 else -7):.1f},{y1 + (y2 - y1) * (i + 0.5) / n:.1f}' for i in range(n))
+    return f'<polyline points="{x},{y1} {pts} {x},{y2}" fill="none" stroke="{color}" stroke-width="{w}"/>'
+
+
+def fjader_h(x1, x2, y, n=12, color=GRA, w=2):
+    pts = ' '.join(f'{x1 + (x2 - x1) * (i + 0.5) / n:.1f},{y + (7 if i % 2 else -7):.1f}' for i in range(n))
+    return f'<polyline points="{x1},{y} {pts} {x2},{y}" fill="none" stroke="{color}" stroke-width="{w}"/>'
+
+
+@fig('4.181', 300, 290, 'Två fjädrar hänger i serie från taket. Den övre har k₁ = 30 N/m och den undre k₂ = 45 N/m. Längst ner hänger en vikt med massan 0,50 kg.')
+def _():
+    b = tak(80, 220) + fjader(150, 20, 110, 12, BLA) + cirkel(150, 112, 3, INK, INK, 1) + fjader(150, 114, 200, 12, ORA)
+    b += rekt(130, 200, 40, 34, '#8c969e', INK, 2, 3) + tt(150, 222, '0,50 kg', 10, 'middle', '#fff', True)
+    b += tt(168, 70, 'k₁ = 30 N/m', 13, 'start', BLA, True) + tt(168, 160, 'k₂ = 45 N/m', 13, 'start', ORA, True)
+    return b
+
+
+@fig('4.272', 440, 230, 'En lätt stång hänger horisontellt i två vertikala fjädrar med k₁ = 150 N/m och k₂ = 250 N/m. Avståndet mellan fästena är L. En vikt med massan 4,0 kg hänger i stången.')
+def _():
+    x1, x2, y = 90, 350, 140
+    b = tak(40, 400) + fjader(x1, 20, y - 4, 12, BLA) + fjader(x2, 20, y - 4, 12, ORA) + balk(x1 - 30, x2 + 30, y, 8, '#9aa4ab')
+    b += tt(x1 + 14, 80, 'k₁ = 150 N/m', 12, 'start', BLA, True) + tt(x2 - 14, 80, 'k₂ = 250 N/m', 12, 'end', ORA, True)
+    xm = 245
+    b += linje(xm, y + 4, xm, y + 30, INK, 1.6) + rekt(xm - 18, y + 30, 36, 30, '#5b9bd5', INK, 1.6, 3) + tt(xm, y + 50, '4,0 kg', 10, 'middle', '#fff', True)
+    b += matt_h(x1, x2, 216, 'L', under=False) + tt(xm + 26, y + 50, 'var ?', 12, 'start', ORA, True)
+    return b
+
+
+@fig('4.308', 360, 250, 'Två fjädrar med k = 100 N/m vardera sitter i serie i en gren. Grenen är parallellkopplad med en fjäder med k = 50 N/m.')
+def _():
+    b = tak(60, 300)
+    b += fjader(120, 20, 90, 10, BLA) + cirkel(120, 92, 3, INK, INK, 1) + fjader(120, 94, 164, 10, BLA)
+    b += fjader(240, 20, 164, 18, ORA)
+    b += balk(90, 270, 170, 8, '#9aa4ab') + linje(180, 174, 180, 200, INK, 1.6) + pil(180, 200, 180, 236, ROD, 3)
+    b += tt(136, 60, '100 N/m', 12, 'start', BLA, True) + tt(136, 134, '100 N/m', 12, 'start', BLA, True) + tt(256, 100, '50 N/m', 12, 'start', ORA, True)
+    return b
+
+
+@fig('4.329', 400, 150, 'En fjäder med k = 200 N/m är fäst i en vägg till vänster. En hand drar den fria änden 8,0 cm åt höger från fjäderns obelastade läge.')
+def _():
+    b = rekt(0, 30, 30, 100, '#d9d3c7', 'none', 0, 0) + linje(30, 30, 30, 130, INK, 2)
+    b += fjader_h(30, 260, 80, 14, BLA) + linje(200, 50, 200, 112, GRA, 1.2, '4 4') + tt(200, 44, 'obelastat läge', 11, 'middle', GRA, True)
+    b += path('M260,70 L300,66 L312,80 L300,94 L260,90 Z', '#f0c9a8', INK, 1.6)
+    b += linje(200, 124, 260, 124, ORA, 1.6) + linje(200, 118, 200, 130, ORA, 1.6) + linje(260, 118, 260, 130, ORA, 1.6)
+    b += tt(230, 144, '8,0 cm', 12, 'middle', ORA, True) + tt(120, 112, 'k = 200 N/m', 12, 'middle', BLA, True)
+    return b
+
+
+@fig('4.327', 360, 260, 'En fjäder är 18 cm lång obelastad. När den belastas med 9,6 N är den 24 cm lång.')
+def _():
+    b = tak(40, 320) + fjader(100, 20, 128, 12, BLA) + fjader(240, 20, 164, 14, BLA)
+    b += rekt(222, 164, 36, 30, '#8c969e', INK, 2, 3) + tt(240, 184, '9,6 N', 10, 'middle', '#fff', True)
+    b += matt_v(60, 20, 128, '18 cm', vanster=True) + matt_v(290, 20, 164, '24 cm')
+    b += tt(100, 150, 'obelastad', 12, 'middle', GRA, True) + tt(240, 216, 'belastad', 12, 'middle', GRA, True)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur, efter=None):
     i = (html.index(efter) + len(efter)) if efter and efter in html else html.index('</p>') + 4
