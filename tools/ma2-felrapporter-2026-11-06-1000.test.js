@@ -39,7 +39,7 @@ test('de rapporterade uppgifterna saknar uppmaningen, men verktyget är tillåte
     assert.equal(u.geogebra, true, id);
     assert.match(u.s, /GeoGebra/, id);
   }
-  assert.match(byId.get('4.2126').t, /Hur stor får standardavvikelsen högst vara\? \(Svara i cl med två decimaler\.\)/);
+  assert.match(byId.get('4.2126').t, /Hur stor får standardavvikelsen högst vara\? Avrunda till två decimaler\./); assert.equal([].concat(byId.get('4.2126').svarEnhet)[0], 'cl'); /* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */
 });
 
 test('frågor där GeoGebra är själva ämnet finns kvar', () => {

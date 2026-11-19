@@ -43,7 +43,7 @@ test('Vinkelräta linjer måste också passera den givna punkten',()=>{
  for(const [id,k,m,other,x,y]of [['1.54',-2,9,.5,4,1],['1.347',3,-1,-1/3,2,5]]){const q=b.ma2.get(id);assert.equal(k*other,-1);assert.equal(k*x+m,y);assert.match(q.t,/båda villkoren/);assert.match(q.s,/Punktvillkoret/);}
 });
 test('Sex kvadratekvationer har båda rötterna i oordnade fält',()=>{
- for(const [id,f]of [['2.57',x=>(2*x+1)**2-25],['2.01',x=>4*(x-1)**2-25],['2.81',x=>3*(x-2)**2-27],['2.128',x=>x*x-49],['2.129',x=>(x+3)**2-16],['2.49',x=>5*x*x-80]]){const q=b.ma2.get(id);assert.equal(q.rättSvar.length,2);assert.notEqual(...q.rättSvar);q.rättSvar.forEach(x=>assert.equal(f(x),0));assert.equal(q.svarsstruktur,'mängd');assert.match(q.t,/en i varje svarsfält/);}
+ for(const [id,f]of [['2.57',x=>(2*x+1)**2-25],['2.01',x=>4*(x-1)**2-25],['2.81',x=>3*(x-2)**2-27],['2.128',x=>x*x-49],['2.129',x=>(x+3)**2-16],['2.49',x=>5*x*x-80]]){const q=b.ma2.get(id);assert.equal(q.rättSvar.length,2);assert.notEqual(...q.rättSvar);q.rättSvar.forEach(x=>assert.equal(f(x),0));assert.equal(q.svarsstruktur,'mängd');assert.match(q.kgInstruktion||q.t,/en i varje svarsfält/);/* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */}
 });
 test('Säkerhetsfaktor och materialkostnad har tydlig definition och rätt svar',()=>{
  for(const [id,n]of [['7.488',300/1.5],['7.490',5/2],['7.491',12/4],['7.493',480*2.5],['7.499',120/1.6]]){near(val(b.ma1.get(id).rättSvar),n);assert.match(b.ma1.get(id).t,/betyder/);}

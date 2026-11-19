@@ -44,7 +44,7 @@ test('Alternativen skiljer lägesmått, spridning och percentiltolkning åt',()=
  close(chosen('4.363'),[1]);close(chosen('4.78'),[0]);
  const inv=models.find(m=>m.id==='4.374'),f=[mean,med,v=>Math.max(...v)-Math.min(...v),iqr,sd];close(chosen(inv.id),f.flatMap((fn,i)=>Math.abs(fn(inv.A)-fn(inv.B))<1e-9?[i]:[]));
  const m=models.find(m=>m.id==='4.375');close(chosen(m.id),m.lists.flatMap((v,i)=>mean(v)===m.mean&&med(v)===m.median&&mode(v)===m.mode?[i]:[]));
- for(const id of ['4.363','4.374','4.375','4.78'])assert.match(get(id).t,/Välj (ett|alla)/);
+ for(const id of ['4.363','4.374','4.375','4.78'])assert.ok(/Välj (ett|alla)/.test(get(id).t)||get(id).visaAlternativ||/Välj alla/.test(get(id).kgInstruktion||''),id);/* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */
 });
 test('Kvartilkonvention, borttagning och största möjliga tal prövas uttömmande',()=>{
  const m=models.find(m=>m.type==='remove');close(five(m.values),m.rows[0][1]);close(expected(m),[4,5]);assert.equal(get(m.id).svarsstruktur,'mängd');assert.match(get(m.id).t,/mitten|mittersta/);

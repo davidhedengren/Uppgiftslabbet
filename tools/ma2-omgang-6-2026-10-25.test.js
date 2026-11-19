@@ -25,7 +25,7 @@ test('62 nya kort på nivå 2 och 3 i Ma2 kap 2, utan dubblettfacit och med rät
     assert.deepEqual(krock,[],`${id} har samma facit som ${krock}`);}
   for(const id of NYA.filter(id=>get(id).svarstyp==='alternativ')){const a=get(id).alternativ;assert.equal(a.filter(x=>x.ratt).length,1,id);assert.ok(!a[0].ratt,id);}
   // decimalsvar: frågan anger precisionen och toleransen är högst ett halvt avrundningssteg
-  for(const id of NYA){const t=get(id);if(t.svarstyp!=='numeriskt'||!t.tolerans)continue;assert.match(t.t,/\((Svara|svara)[^)]*(decimal|heltal|värdesiffror)[^)]*\)/,id);}
+  for(const id of NYA){const t=get(id);if(t.svarstyp!=='numeriskt'||!t.tolerans)continue;assert.match(t.t,/\((Svara|svara)[^)]*(decimal|heltal|värdesiffror)[^)]*\)|Avrunda till [^.]*(decimal|heltal|värdesiffror)/,id);/* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */}
 });
 
 test('Facit räknas om',()=>{
