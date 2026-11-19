@@ -43,7 +43,9 @@ test('Granskningsspåret omfattar varje förändring och bevarar övriga bankobj
  // jämförs utan de fält som omvandlingen ändrade.
  const FLERVAL=['t','s','svarstyp','rättSvar','tolerans','alternativ','svarFormat','svarEnhet','svarVardesiffror'];
  const utan=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!FLERVAL.includes(k)));
- for(const item of report.changes){const t=q(item.id);if(t.svarstyp==='alternativ'&&item.after.svarstyp!=='alternativ')assert.deepEqual(utan(t),utan(item.after),item.id);else assert.deepEqual(t,item.after,item.id);}
+ // Språkomskrivningen 2026-11-19 ändrade bara uppgiftstexterna (t, delkortens text, kgInstruktion, visaAlternativ); de jämförs inte här.
+ const SPRAK=['t','spelIntro','spelDelar','kgInstruktion','visaAlternativ'];const utanS=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!SPRAK.includes(k)));
+ for(const item of report.changes){const t=q(item.id);if(t.svarstyp==='alternativ'&&item.after.svarstyp!=='alternativ')assert.deepEqual(utanS(utan(t)),utanS(utan(item.after)),item.id);else assert.deepEqual(utanS(t),utanS(item.after),item.id);}
  for(const id of report.reviewed){const t=q(id);assert.ok(!t.geogebra||t.miniräknare,id);
   for(const p of t.spelDelar||[])assert.ok(!(p.geogebra??t.geogebra)||(p.miniräknare??t.miniräknare),id);
  }
