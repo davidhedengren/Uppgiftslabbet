@@ -19,6 +19,8 @@ const FIGURER = {
   // vektorer (hastighet som vektor)
   '3.638': null, '3.711': null, '3.713': null, '3.677': null, '3.689': null, '3.723': null, '3.732': null, '3.656': null, '3.730': null,
   '3.705': null, '3.676': null, '3.7': null, '3.52': null, '3.82': ['b', 'c'], '3.95': null,
+  // diagram som beskrivs i ord
+  '3.364': null, '3.355': null, '3.112': null, '3.105': null,
 };
 
 test('kapitel 3: figuren finns i frågan och på rätt delkort', () => {
@@ -65,4 +67,13 @@ test('vektorer: vinklar och väderstreck står i figuren, men inte komposanterna
   // Svaren (komposanter, avstånd) syns inte.
   assert.doesNotMatch(q('3.638').t, />−13|>−7,5/); assert.doesNotMatch(q('3.656').t, />608/); assert.doesNotMatch(q('3.723').t, />16,7/);
   assert.doesNotMatch(q('3.95').t, />40 km</);
+});
+
+test('diagram: diagrammet som beskrivs i texten är ritat, utan tangenter eller areor som ger svaret', () => {
+  // 3.419 är medvetet utan figur (tangentpunkter i text), se FYSIK1_MOMENTAN_2026-10-12.md.
+  assert.doesNotMatch(q('3.419').t, /<svg/);
+  assert.ok(q('3.364').t.includes('>(6,0; 4,0)<'));
+  assert.ok(q('3.112').t.includes('>20 s<'));
+  for (const id of ['3.364', '3.355', '3.112', '3.105']) assert.doesNotMatch(q(id).t, />tangent</, id);
+  assert.doesNotMatch(q('3.364').t, /fill-opacity/);
 });

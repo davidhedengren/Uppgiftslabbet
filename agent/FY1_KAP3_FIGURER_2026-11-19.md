@@ -12,9 +12,9 @@ Kapitel 3 hade 458 uppgifter, och 233 saknade figur:
 | acceleration | 48 | 44 | 11 figurer tillagda 2026-11-19 |
 | konstacc | 136 | 100 | 16 figurer tillagda 2026-11-19 |
 | vektorer | 101 | 58 | 15 figurer tillagda 2026-11-19 |
-| st_diagram | 54 | 12 | ej påbörjat |
-| vt_diagram | 68 | 12 | ej påbörjat |
-| at_diagram | 51 | 7 | ej påbörjat |
+| st_diagram | 54 | 12 | genomgånget 2026-11-19 |
+| vt_diagram | 68 | 12 | genomgånget 2026-11-19 |
+| at_diagram | 51 | 7 | genomgånget 2026-11-19 |
 
 ## Regler
 
@@ -65,6 +65,24 @@ delkort b och c, eftersom a saknar sträckan) och flugan mellan tågen (3.95). F
 Utan figur: enstegsuppgifter om relativ fart (3.173–3.183, 3.263), uppgifter som bara ger komposanterna (3.285, 3.648,
 3.682, 3.684) och kast- och komposantuppgifter som liknar varandra (3.630, 3.636, 3.671, 3.672, 3.703, 3.704,
 3.706–3.708), där en figur skulle bli en generisk kopia.
+
+## Urval i diagramområdena (st, vt, at)
+
+De 31 uppgifterna utan figur lästes. De flesta ber eleven rita diagrammet själv (till exempel 3.14, 3.24, 3.32, 3.56,
+3.60, 3.108, 3.113, 3.743), och där skulle en figur ta bort det som tränas. Figur lades bara till där texten beskriver
+ett diagram i ord och eleven ska tolka det: a–t-linje genom
+origo (3.364), a–t-linje under t-axeln (3.355), s–t-grafer för två bilar som skär varandra vid 20 s (3.112) och en
+s–t-kurva som böjer uppåt (3.105). Ingen figur visar tangenter eller areor som ger svaret. 3.418–3.420 är medvetet
+utan figur (tangentpunkter och mätvärden i text, som variant bredvid uppgifterna med ritad tangent, se
+`FYSIK1_MOMENTAN_2026-10-12.md` och `fysik1-momentan.test.js`), så 3.419 fick ingen figur. Kvar utan figur är också
+3.736 och 3.738, där ett a–t-diagram skulle vara själva lösningsmetoden.
+
+Fyra diagramfigurer får varningar i `granska-svg.js` för etiketter med vit kontur över rutnätslinjer och för
+axelnamn. Det är avsiktligt och samma som i de tidigare A-uppgifternas grafer.
+
+## Läge
+
+Hela kapitel 3 är genomgånget 2026-11-19: 46 nya figurer (acceleration 11, konstacc 16, vektorer 15, diagram 4).
 
 ## Kontroll
 

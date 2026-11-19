@@ -612,6 +612,31 @@ def _():
     return b
 
 
+# ================================================================ diagram (st, vt, at): bara diagram som beskrivs i ord och ska tolkas
+from a_uppgifter_hjalp import Plot  # noqa: E402
+
+
+def plotfig(uid, label, P):
+    F[uid] = P.svg(label)
+
+
+# 3.419 får ingen figur: tangentpunkterna anges medvetet bara i text (FYSIK1_MOMENTAN_2026-10-12.md, fysik1-momentan.test.js).
+plotfig('3.364', 'Ett a–t-diagram där accelerationen ökar jämnt från 0 vid t = 0 till 4,0 m/s² vid t = 6,0 s.',
+        Plot(0, 7, 0, 5, W=400, H=260).axlar(xt=range(0, 8), yt=range(0, 6), xlabel='t (s)', ylabel='a (m/s²)')
+        .kurva(lambda t: 4 * t / 6, 0, 6, BLA).punkt(6, 4, '(6,0; 4,0)', -10, -10, BLA, 'end'))
+plotfig('3.355', 'Ett a–t-diagram där accelerationen är en horisontell linje under t-axeln.',
+        Plot(0, 6, -3, 2, W=380, H=220).axlar(xt=range(0, 7), yt=(-2, -1, 1), xlabel='t', ylabel='a', siffror=False)
+        .kurva(lambda t: -1.6, 0, 5.6, ORA).text(4.6, -1.0, 'a', ORA, 15, 'middle', True))
+plotfig('3.112', 'Ett s–t-diagram för två bilar. A:s graf är en stigande rät linje. B:s graf är först flackare men blir allt brantare och skär A:s graf igen vid t = 20 s.',
+        Plot(0, 25, 0, 560, W=420, H=280).axlar(xt=range(0, 26, 5), yt=(100, 200, 300, 400, 500), xlabel='t (s)', ylabel='s', siffror=False)
+        .kurva(lambda t: 20 * t, 0, 25, BLA).kurva(lambda t: t * t, 0, 23.6, ORA)
+        .streck(20, 0, 20, 400).punkt(20, 400, '', 0, 0, INK)
+        .text(24, 500, 'A', BLA, 15, 'middle', True).text(21.8, 520, 'B', ORA, 15, 'end', True).text(20, -40, '20 s', INK, 13, 'middle', True))
+plotfig('3.105', 'Ett s–t-diagram med en stigande kurva som böjer uppåt, så att lutningen hela tiden ökar.',
+        Plot(0, 6, 0, 16, W=360, H=240).axlar(xt=range(0, 7), yt=(4, 8, 12), xlabel='t', ylabel='s', siffror=False)
+        .kurva(lambda t: 0.3 * t * t + 0.8 * t, 0, 5.6, BLA))
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur, efter=None):
     i = (html.index(efter) + len(efter)) if efter and efter in html else html.index('</p>') + 4
