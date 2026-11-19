@@ -18,7 +18,7 @@ test('Tidigare rättade 5,6 år bevaras; andraderivatans korrekta avrundning är
  const a=q('2.321');close(a.rättSvar,Math.log(150/96)/.08);assert.equal(a.tolerans,.05);assert.ok(Math.abs(5.6-a.rättSvar)<=a.tolerans);assert.ok(Math.abs(6-a.rättSvar)>a.tolerans);
  const b=q('2.346');close(b.rättSvar,9*Math.log(3)**2);assert.match(b.t,/en decimal/);assert.equal(b.tolerans,.05);assert.ok(Math.abs(10.9-b.rättSvar)<b.tolerans);assert.ok(Math.abs(10.8-b.rättSvar)>b.tolerans);
  assert.equal(b.geogebra,true);assert.equal(b.miniräknare,true);
- assert.match(q('2.318').t,/endast ekvationen/);assert.equal(q('2.318').svarstyp,'uttryck');assert.equal(q('2.318').geogebra,true);
+ assert.match(q('2.318').kgInstruktion||q('2.318').t,/endast ekvationen|bara ekvationen/);/* språkomskrivningen 2026-11-19: svarsformen står i kgInstruktion */assert.equal(q('2.318').svarstyp,'uttryck');assert.equal(q('2.318').geogebra,true);
 });
 test('Tangenter från (0, −4) hör till x², utan den gamla oavsiktliga förskjutningen',()=>{
  const task=q('2.317');assert.match(task.t,/f\(x\)=x\^2/);assert.doesNotMatch(task.s,/sqrt5|sqrt\s*5|a\^2\+1/);
