@@ -13,6 +13,9 @@ const q = (id) => c.window.BANK.find((t) => t.id === id);
 const FIGURER = {
   '3.213': null, '3.214': null, '3.215': null, '3.216': null, '3.217': null, '3.218': [], '3.223': null, '3.226': null,
   '3.210': null, '3.360': null, '3.203': null,
+  // konstacc
+  '3.30': null, '3.63': null, '3.68': null, '3.86': null, '3.118': null, '3.124': null, '3.162': null, '3.170': null, '3.172': null,
+  '3.177': null, '3.378': null, '3.379': null, '3.391': null, '3.400': null, '3.406': null, '3.387': ['b', 'c'],
 };
 
 test('kapitel 3: figuren finns i frågan och på rätt delkort', () => {
@@ -36,4 +39,16 @@ test('acceleration: figurerna visar givna hastigheter och avslöjar inga svar', 
     for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
   }
   assert.doesNotMatch(q('3.360').t, />17,8|>396/); assert.doesNotMatch(q('3.214').t, />0,13/);
+});
+
+test('konstacc: figurerna visar givna data och markerar det okända med ?', () => {
+  for (const [id, tal] of [['3.30', ['8,0 m/s', '22 m']], ['3.63', ['9,0 m/s', 'stoppsträcka ?']], ['3.118', ['9,0 m/s', '1,5 m', 'högsta punkt ?']],
+    ['3.162', ['18 cm', 'reaktionstid ?']], ['3.170', ['18 m/s', '45 m', 'möts ?']], ['3.172', ['80 km/h', '60 m']], ['3.177', ['30 m', '6,0 m/s', 'jämsides ?']],
+    ['3.378', ['50 km/h', '35 m']], ['3.379', ['2,52 m/s', '4,80 m']], ['3.391', ['16,0 m']], ['3.400', ['35 m/s', '7,0 m']], ['3.387', ['476 m', '855 m', '24 m/s', '10 m/s']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  // 3.400: figuren står efter situationen, inte efter förbehållet.
+  assert.ok(q('3.400').t.indexOf('<svg') > q('3.400').t.indexOf('landar på marken.'));
+  assert.ok(q('3.387').t.indexOf('<svg') > q('3.387').t.indexOf('45 s efter B.'));
+  assert.doesNotMatch(q('3.177').t, />11,5|>11,48/);
 });

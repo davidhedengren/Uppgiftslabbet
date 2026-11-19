@@ -10,7 +10,7 @@ Kapitel 3 hade 458 uppgifter, och 233 saknade figur:
 | Område | Uppgifter | Utan figur före | Läge |
 |---|---:|---:|---|
 | acceleration | 48 | 44 | 11 figurer tillagda 2026-11-19 |
-| konstacc | 136 | 100 | ej påbörjat |
+| konstacc | 136 | 100 | 16 figurer tillagda 2026-11-19 |
 | vektorer | 101 | 58 | ej påbörjat |
 | st_diagram | 54 | 12 | ej påbörjat |
 | vt_diagram | 68 | 12 | ej påbörjat |
@@ -38,6 +38,20 @@ vagn var), cyklist som passerar markeringen åt båda hållen (3.223), två moto
 
 Utan figur: enstegsberäkningar (3.190, 3.270–3.279), tabelluppgifter och uppgifter där varje delkort har en egen
 rörelse (3.151, 3.192, 3.198, 3.368), samt 3.207, där ett a–t-diagram skulle visa lösningen.
+
+## Urval i konstacc
+
+Alla 100 uppgifter utan figur lästes. Figur lades till i 16 uppgifter med en enda situation: sten kastad nedåt från en
+bro (3.30), reaktions- och bromssträcka för en cyklist (3.63), hiss i tre faser (3.68), mutter som lossnar i en hiss
+(3.86), kast uppåt från 1,5 m (3.118), backhoppets ansats (3.124), linjal som mäter reaktionstid (3.162), två bollar som
+möts (3.170), bil mot hinder (3.172), två vagnar på parallella banor (3.177), bil mot trafikljus (3.378), golfputt
+(3.379), två bilar i kö (3.391), kast uppåt från ett tak (3.400), raket med motor på och av (3.406) och vägen A–B–C
+(3.387). I 3.400 och 3.387 står figuren efter det stycke som beskriver situationen (`EFTER`). Delkort a i 3.387 har en
+egen kortare text och får ingen figur.
+
+Utan figur: enstegsuppgifter (3.273–3.278), uppgifter med bokstäver i stället för tal (3.153, 3.187, 3.189, 3.254,
+3.255), tabelluppgifter (3.65, 3.83, 3.167) och samlingsuppgifter där varje delkort har en egen situation
+(3.43, 3.90, 3.369, 3.370, 3.373, 3.380–3.386, 3.392–3.409 utom de valda).
 
 ## Kontroll
 

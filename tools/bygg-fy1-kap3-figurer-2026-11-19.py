@@ -218,21 +218,212 @@ def _():
     return b
 
 
+# ================================================================ rörelse med konstant acceleration (konstacc)
+# Figuren läggs efter stycket som slutar med denna text i stället för efter första stycket.
+EFTER = {'3.400': 'landar på marken.</p>', '3.387': '45 s efter B.</p>'}
+
+
+@fig('3.30', 420, 240, 'En sten kastas rakt nedåt med farten 8,0 m/s från en bro som är 22 m över vattenytan.')
+def _():
+    b = f'<rect x="0" y="190" width="420" height="50" fill="{VATTEN}"/>' + linje(0, 190, 420, 190, BLA, 2)
+    b += rekt(0, 40, 300, 16, '#9aa4ab', INK, 2, 0) + rekt(250, 56, 30, 134, '#b7bec4', INK, 2, 0)
+    b += rekt(0, 30, 300, 10, '#c9d0d5', INK, 1.4, 0)
+    b += cirkel(150, 70, 8, '#8f8a82', INK, 1.4) + pil(150, 80, 150, 140, BLA, 3) + tt(160, 118, '8,0 m/s', 14, 'start', BLA, True)
+    b += matt_v(340, 56, 190, '22 m')
+    return b
+
+
+@fig('3.63', 460, 170, 'En cyklist med farten 9,0 m/s. Under reaktionstiden 0,70 s rullar cykeln med samma fart, sedan bromsar den med 3,5 m/s².')
+def _():
+    b = rekt(10, 100, 440, 16, VAG, INK, 1.4, 2)
+    b += cirkel(30, 88, 10, 'none', INK, 2) + cirkel(58, 88, 10, 'none', INK, 2) + linje(30, 88, 46, 70, INK, 2) + linje(46, 70, 58, 88, INK, 2)
+    b += pil(72, 60, 130, 60, BLA, 3) + tt(136, 65, '9,0 m/s', 13, 'start', BLA, True)
+    b += rekt(60, 120, 150, 14, '#9cc3e4', INK, 1.2, 0) + rekt(210, 120, 220, 14, '#f2c48d', INK, 1.2, 0)
+    b += tt(135, 152, 'reaktionstid 0,70 s', 12, 'middle', BLA, True) + tt(320, 152, 'bromsar 3,5 m/s²', 12, 'middle', ORA, True)
+    b += tt(245, 30, 'stoppsträcka ?', 13, 'middle', INK, True)
+    return b
+
+
+@fig('3.68', 340, 300, 'En hiss åker uppåt i tre faser: den accelererar med 0,70 m/s² till 2,6 m/s, åker med 2,6 m/s i 5,0 s och bromsar med 0,70 m/s² till stillastående.')
+def _():
+    b = rekt(40, 20, 90, 270, '#eef2f5', INK, 2, 0)
+    for y0, h, fill, text in ((206, 84, '#cfe6f5', 'accelererar 0,70 m/s²'), (106, 100, '#e3f1d9', '2,6 m/s i 5,0 s'), (20, 86, '#f8e0c8', 'bromsar 0,70 m/s²')):
+        b += rekt(42, y0, 86, h, fill, 'none', 0, 0) + tt(146, y0 + h / 2 + 5, text, 13, 'start', INK, True)
+        b += linje(40, y0, 130, y0, GRA, 1.2, '4 3')
+    b += rekt(55, 240, 60, 46, '#8c969e', INK, 2, 3) + rekt(62, 246, 20, 34, '#c9d0d5', INK, 1, 0) + rekt(88, 246, 20, 34, '#c9d0d5', INK, 1, 0)
+    b += tt(85, 236, 'start', 11, 'middle', GRA, True)
+    return b
+
+
+@fig('3.86', 360, 250, 'En hiss åker uppåt med 2,0 m/s. En mutter lossnar från hissens tak, 2,6 m ovanför hissgolvet.')
+def _():
+    b = rekt(40, 20, 180, 220, '#eef2f5', INK, 3, 4) + rekt(40, 20, 180, 14, '#8c969e', INK, 2, 0) + rekt(40, 226, 180, 14, '#8c969e', INK, 2, 0)
+    b += path('M124,34 L136,34 L139,42 L130,47 L121,42 Z', '#c9a400', INK, 1.4)
+    b += pil(130, 52, 130, 110, GRA, 2, 8).replace('stroke="#526777"', 'stroke="#526777" stroke-dasharray="5 4"')
+    b += tt(140, 76, 'mutter', 13, 'start', INK, True)
+    b += matt_v(70, 34, 226, '2,6 m', vanster=False)
+    b += pil(280, 200, 280, 60, BLA, 3) + tt(290, 120, 'hissen', 13, 'start', BLA, True) + tt(290, 138, '2,0 m/s', 13, 'start', BLA, True)
+    return b
+
+
+@fig('3.118', 360, 280, 'Anna kastar en boll rakt uppåt med 9,0 m/s från höjden 1,5 m över marken.')
+def _():
+    b = rekt(0, 250, 360, 30, GRAS, 'none', 0, 0) + linje(0, 250, 360, 250, '#6f9a5b', 2)
+    b += cirkel(120, 156, 11, INK, INK, 1) + linje(120, 167, 120, 214, INK, 3) + linje(120, 214, 108, 250, INK, 3) + linje(120, 214, 132, 250, INK, 3)
+    b += linje(120, 180, 140, 170, INK, 3) + linje(140, 170, 146, 162, INK, 3)
+    b += cirkel(148, 156, 8, '#e07a3a', INK, 1.4)
+    b += pil(170, 150, 170, 70, BLA, 3) + tt(180, 110, '9,0 m/s', 14, 'start', BLA, True)
+    b += linje(148, 140, 148, 40, GRA, 1.4, '4 4') + tt(158, 36, 'högsta punkt ?', 12, 'start', GRA, True)
+    b += matt_v(60, 156, 250, '1,5 m', vanster=True)
+    return b
+
+
+@fig('3.124', 440, 240, 'En backhoppare startar från stillastående överst i ansatsen och har farten 23 m/s efter 68 m.')
+def _():
+    b = path('M30,40 C120,60 220,150 330,190 L420,196', 'none', '#7aa3bd', 10)
+    b += path('M30,40 C120,60 220,150 330,190 L420,196', 'none', '#eef6fb', 5)
+    b += gubbe(40, 40, BLA, 0.7) + tt(58, 22, 'start', 12, 'start', GRA, True)
+    b += cirkel(330, 186, 6, ORA, INK, 1.2) + pil(340, 182, 400, 192, ORA, 3) + tt(396, 178, '23 m/s', 14, 'end', ORA, True)
+    b += tt(250, 78, '68 m längs ansatsen', 13, 'middle', INK, True, halo=True)
+    return b
+
+
+@fig('3.162', 360, 270, 'En linjal hålls vertikalt mellan tummen och pekfingret och släpps. Linjalen faller 18 cm innan den fångas.')
+def _():
+    b = rekt(150, 20, 40, 230, '#f2dcb3', INK, 2, 2)
+    for cm in range(0, 31, 2):
+        y = 30 + cm * 7
+        b += linje(150, y, 150 + (14 if cm % 10 == 0 else 8), y, INK, 1.2)
+        if cm % 10 == 0:
+            b += tt(186, y + 4, str(cm), 11, 'end', INK)
+    b += path('M120,52 C112,48 104,52 106,60 L146,64 L146,54 Z', '#f0c9a8', INK, 1.4)
+    b += path('M220,52 C228,48 236,52 234,60 L194,64 L194,54 Z', '#f0c9a8', INK, 1.4)
+    b += tt(244, 46, 'fingrarna', 12, 'start', GRA, True)
+    b += pil(310, 70, 310, 196, BLA, 3) + tt(300, 128, 'faller', 13, 'end', BLA, True) + tt(300, 144, '18 cm', 13, 'end', BLA, True)
+    b += tt(170, 266, 'reaktionstid ?', 13, 'middle', ORA, True)
+    return b
+
+
+@fig('3.170', 320, 300, 'En boll kastas uppåt från marken med 18 m/s samtidigt som en annan boll släpps 45 m ovanför.')
+def _():
+    b = rekt(0, 270, 320, 30, GRAS, 'none', 0, 0) + linje(0, 270, 320, 270, '#6f9a5b', 2)
+    b += cirkel(130, 260, 9, '#e07a3a', INK, 1.4) + pil(150, 260, 150, 196, BLA, 3) + tt(158, 232, '18 m/s', 13, 'start', BLA, True)
+    b += cirkel(130, 30, 9, '#5b9bd5', INK, 1.4) + tt(148, 34, 'släpps', 13, 'start', INK, True)
+    b += linje(130, 44, 130, 246, GRA, 1.2, '4 4') + tt(90, 150, 'möts ?', 13, 'end', ORA, True)
+    b += matt_v(250, 30, 270, '45 m')
+    return b
+
+
+@fig('3.172', 460, 166, 'En bil kör i 80 km/h. Ett hinder står stilla 60 m framför bilens front.')
+def _():
+    b = rekt(10, 90, 440, 30, VAG, INK, 1.4, 2) + linje(14, 105, 446, 105, '#fff', 1.5, '12 9')
+    b += bil(20, 102, '#5b9bd5') + pil(80, 60, 150, 60, BLA, 3) + tt(156, 65, '80 km/h', 14, 'start', BLA, True)
+    b += path('M412,100 L412,64 C412,54 430,54 430,64 L430,100 Z', '#8f8a82', INK, 1.6) + tt(421, 50, 'hinder', 12, 'middle', INK, True)
+    b += matt_h(74, 412, 152, '60 m', under=False)
+    return b
+
+
+@fig('3.177', 460, 170, 'Två vagnar på parallella raka banor. Den främre håller 6,0 m/s och ligger 30 m före. Den bakre startar från stillastående med 1,5 m/s².')
+def _():
+    b = ''
+    for y in (60, 120):
+        b += linje(10, y, 450, y, VAG, 4)
+    b += rekt(30, 96, 50, 22, '#e07a5f', INK, 1.6, 3) + cirkel(42, 120, 5, INK, '#fff', 1.2) + cirkel(68, 120, 5, INK, '#fff', 1.2)
+    b += tt(55, 146, 'startar, a = 1,5 m/s²', 12, 'start', ORA, True)
+    b += rekt(30 + 160, 36, 50, 22, '#5b9bd5', INK, 1.6, 3) + cirkel(202, 60, 5, INK, '#fff', 1.2) + cirkel(228, 60, 5, INK, '#fff', 1.2)
+    b += pil(250, 46, 320, 46, BLA, 3) + tt(326, 51, '6,0 m/s', 13, 'start', BLA, True)
+    b += linje(80, 90, 80, 30, GRA, 1.2, '4 3') + linje(190, 90, 190, 30, GRA, 1.2, '4 3')
+    b += linje(80, 24, 190, 24, GRA, 1.5) + tt(135, 18, '30 m', 13, 'middle', INK, True)
+    b += tt(400, 96, 'jämsides ?', 13, 'middle', INK, True)
+    return b
+
+
+@fig('3.378', 460, 170, 'En bil kör i 50 km/h och är 35 m från stopplinjen vid ett trafikljus.')
+def _():
+    b = rekt(10, 96, 440, 34, VAG, INK, 1.4, 2) + linje(14, 113, 446, 113, '#fff', 1.5, '12 9')
+    b += bil(20, 110, '#5b9bd5') + pil(80, 70, 150, 70, BLA, 3) + tt(156, 75, '50 km/h', 14, 'start', BLA, True)
+    b += linje(330, 96, 330, 130, '#fff', 4) + tt(330, 148, 'stopplinje', 12, 'middle', INK, True)
+    b += linje(360, 96, 360, 40, INK, 3) + rekt(350, 16, 20, 50, '#2b2f36', INK, 1.4, 4)
+    for i, fill in enumerate((ROD, '#5a4a2a', '#2a4a2a')):
+        b += cirkel(360, 25 + i * 15, 5, fill, INK, 0.8)
+    b += matt_h(74, 330, 160, '35 m', under=False)
+    return b
+
+
+@fig('3.379', 460, 150, 'En golfboll puttas mot hålet med farten 2,52 m/s. Hålet är 4,80 m bort.')
+def _():
+    b = rekt(0, 30, 460, 100, '#7cbf72', 'none', 0, 6)
+    b += cirkel(40, 80, 7, '#ffffff', INK, 1.4) + pil(52, 80, 130, 80, BLA, 3) + tt(90, 70, '2,52 m/s', 13, 'middle', BLA, True)
+    b += ellips(410, 82, 12, 5, '#1d3320', INK, 1.4) + linje(410, 82, 410, 34, INK, 2) + path('M410,34 L432,40 L410,46 Z', ROD, INK, 1)
+    b += matt_h(40, 410, 118, '4,80 m', under=False)
+    return b
+
+
+@fig('3.391', 460, 170, 'Två bilar kör åt samma håll med 18 m/s. Avståndet mellan den bakre bilens front och den främre bilens bakände är 16,0 m.')
+def _():
+    b = rekt(10, 90, 440, 30, VAG, INK, 1.4, 2) + linje(14, 105, 446, 105, '#fff', 1.5, '12 9')
+    b += bil(40, 102, '#e07a5f', 70) + bil(300, 102, '#5b9bd5', 70)
+    b += linje(110, 130, 110, 146, GRA, 1.5) + linje(300, 130, 300, 146, GRA, 1.5) + linje(110, 140, 300, 140, GRA, 1.5) + tt(205, 160, '16,0 m', 13, 'middle', INK, True)
+    b += tt(75, 40, 'bakre: 18 m/s', 13, 'middle', ORA, True) + tt(75, 56, '0,50 s, sedan 4,0 m/s²', 11, 'middle', ORA)
+    b += tt(335, 40, 'främre: 18 m/s', 13, 'middle', BLA, True) + tt(335, 56, 'bromsar 6,0 m/s²', 11, 'middle', BLA)
+    b += pil(380, 76, 440, 76, INK, 2, 8)
+    return b
+
+
+@fig('3.400', 380, 300, 'En boll kastas rakt uppåt med 35 m/s från kanten av ett 7,0 m högt tak och landar sedan på marken bredvid huset.')
+def _():
+    b = rekt(0, 270, 380, 30, GRAS, 'none', 0, 0) + linje(0, 270, 380, 270, '#6f9a5b', 2)
+    b += rekt(60, 190, 140, 80, '#f2dcb3', INK, 2, 0) + path('M50,190 L130,150 L210,190 Z', '#b55a3c', INK, 2)
+    b += rekt(80, 220, 30, 50, '#b98b5a', INK, 1.4, 0)
+    b += cirkel(214, 182, 7, '#e07a3a', INK, 1.4)
+    b += pil(214, 172, 214, 110, BLA, 3) + tt(204, 136, '35 m/s', 14, 'end', BLA, True)
+    b += path('M222,104 C224,40 250,40 254,104 L254,262', 'none', GRA, 1.4, ' stroke-dasharray="5 4"')
+    b += matt_v(44, 190, 270, '7,0 m', vanster=True)
+    return b
+
+
+@fig('3.406', 360, 280, 'En raket startar från marken. Under de första 4,0 s ökar farten uppåt med 15 m/s varje sekund. Sedan stängs motorn av.')
+def _():
+    b = rekt(0, 250, 360, 30, GRAS, 'none', 0, 0) + linje(0, 250, 360, 250, '#6f9a5b', 2)
+    b += path('M110,120 L130,90 L150,120 L150,210 L110,210 Z', '#e9eef2', INK, 2) + path('M110,190 L94,214 L110,210 Z', ROD, INK, 1.4)
+    b += path('M150,190 L166,214 L150,210 Z', ROD, INK, 1.4) + cirkel(130, 140, 8, '#9cc3e4', INK, 1.2)
+    b += path('M118,212 L130,244 L142,212 Z', '#f9c74f', '#e09f1f', 1.2)
+    b += tt(190, 120, 'motorn på i 4,0 s:', 13, 'start', INK, True) + tt(190, 138, 'farten ökar 15 m/s', 13, 'start', BLA, True)
+    b += tt(190, 154, 'varje sekund', 13, 'start', BLA, True)
+    b += tt(190, 190, 'sedan motorn av', 13, 'start', INK, True) + tt(190, 206, 'tills den landar', 13, 'start', GRA)
+    return b
+
+
+@fig('3.387', 460, 160, 'En rak väg med punkterna A, B och C. AB = 476 m och BC = 855 m. Bilen passerar A med 24 m/s, har 10 m/s i B och når C 45 s efter B.', kort=['b', 'c'])
+def _():
+    x0, k = 30, 400 / (476 + 855)
+    xa, xb, xc = x0, x0 + 476 * k, x0 + (476 + 855) * k
+    b = rekt(10, 70, 440, 20, VAG, INK, 1.4, 2)
+    for x, namn, v in ((xa, 'A', '24 m/s'), (xb, 'B', '10 m/s'), (xc, 'C', None)):
+        b += linje(x, 62, x, 98, INK, 2.4) + tt(x, 54, namn, 15, 'middle', INK, True)
+        if v:
+            b += tt(x + 6, 40, v, 12, 'start', BLA, True)
+    b += matt_h(xa, xb, 120, '476 m', under=False) + matt_h(xb, xc, 120, '855 m', under=False)
+    b += tt((xb + xc) / 2, 150, 'B till C: 45 s', 12, 'middle', ORA, True)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
-def efter_forsta_stycket(html, figur):
-    i = html.index('</p>') + 4
+def efter_forsta_stycket(html, figur, efter=None):
+    i = (html.index(efter) + len(efter)) if efter and efter in html else html.index('</p>') + 4
     return html[:i] + figur + html[i:]
 
 
 def med_figur(q, figur):
     q = json.loads(json.dumps(q))
     kort = KORT.get(q['id'])  # None: alla delkort
-    q['t'] = efter_forsta_stycket(q['t'], figur)
-    if q.get('spelIntro') and kort is None:
+    efter = EFTER.get(q['id'])
+    q['t'] = efter_forsta_stycket(q['t'], figur, efter)
+    if q.get('spelIntro') and (kort is None or q['id'] in EFTER):
         q['spelIntro'] = q['spelIntro'] + figur
     for d in q.get('spelDelar') or []:
         if d.get('t') and (kort is None or d['etikett'] in kort):
-            d['t'] = efter_forsta_stycket(d['t'], figur)
+            d['t'] = efter_forsta_stycket(d['t'], figur, efter)
     return q
 
 
