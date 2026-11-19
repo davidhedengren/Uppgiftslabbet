@@ -11,7 +11,7 @@ Kapitel 3 hade 458 uppgifter, och 233 saknade figur:
 |---|---:|---:|---|
 | acceleration | 48 | 44 | 11 figurer tillagda 2026-11-19 |
 | konstacc | 136 | 100 | 16 figurer tillagda 2026-11-19 |
-| vektorer | 101 | 58 | ej påbörjat |
+| vektorer | 101 | 58 | 15 figurer tillagda 2026-11-19 |
 | st_diagram | 54 | 12 | ej påbörjat |
 | vt_diagram | 68 | 12 | ej påbörjat |
 | at_diagram | 51 | 7 | ej påbörjat |
@@ -52,6 +52,19 @@ egen kortare text och får ingen figur.
 Utan figur: enstegsuppgifter (3.273–3.278), uppgifter med bokstäver i stället för tal (3.153, 3.187, 3.189, 3.254,
 3.255), tabelluppgifter (3.65, 3.83, 3.167) och samlingsuppgifter där varje delkort har en egen situation
 (3.43, 3.90, 3.369, 3.370, 3.373, 3.380–3.386, 3.392–3.409 utom de valda).
+
+## Urval i vektorer (hastighet som vektor)
+
+Alla 58 uppgifter utan figur lästes. Figur lades till där riktningen anges med väderstreck eller vinklar och är svår
+att föreställa sig: axlar med väderstreck och en vektor med markerad vinkel (3.638, 3.711, 3.713, 3.677), båt i älv
+(3.689, 3.723), flygplan i sidvind (3.732), vandrares och orienterares vägar med okänt avstånd (3.656, 3.730),
+tennisserve och stigande flygplan (3.705, 3.676), boll i tåg (3.7), stafettväxling (3.52), omkörning (3.82, bara
+delkort b och c, eftersom a saknar sträckan) och flugan mellan tågen (3.95). Figurerna visar vektorn och vinkeln men
+**inte komposantuppdelningen**, som är själva metoden som tränas.
+
+Utan figur: enstegsuppgifter om relativ fart (3.173–3.183, 3.263), uppgifter som bara ger komposanterna (3.285, 3.648,
+3.682, 3.684) och kast- och komposantuppgifter som liknar varandra (3.630, 3.636, 3.671, 3.672, 3.703, 3.704,
+3.706–3.708), där en figur skulle bli en generisk kopia.
 
 ## Kontroll
 

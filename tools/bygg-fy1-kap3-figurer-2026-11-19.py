@@ -408,6 +408,210 @@ def _():
     return b
 
 
+# ================================================================ hastighet som vektor (vektorer)
+def bage(cx, cy, r, fran, till, color=ORA, w=2):
+    """Vinkelbåge från riktningen fran till riktningen till (grader moturs från öster), ritad som polyline."""
+    n = 24
+    pts = [(cx + r * math.cos(math.radians(fran + (till - fran) * i / n)), cy - r * math.sin(math.radians(fran + (till - fran) * i / n)))
+           for i in range(n + 1)]
+    return f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" stroke="{color}" stroke-width="{w}"/>'
+
+
+def kompassvektor(theta, ref, vinkeltext, vtext, W=380, H=300):
+    """Axlar med väderstreck och en vektor i riktningen theta (grader moturs från öster) med vinkeln mot ref markerad."""
+    cx, cy, L, A = W / 2, H / 2, 110, 120
+    b = pil(cx - A, cy, cx + A, cy, INK, 1.6, 9) + pil(cx, cy + A, cx, cy - A, INK, 1.6, 9)
+    b += tt(cx + A + 4, cy + 18, 'x', 14, 'end', INK, True, italic=True) + tt(cx - 10, cy - A + 6, 'y', 14, 'end', INK, True, italic=True)
+    b += tt(cx + A - 2, cy - 8, 'öster', 12, 'end', GRA, True) + tt(cx - A, cy - 8, 'väster', 12, 'start', GRA, True)
+    sida = 1 if math.cos(math.radians(theta)) <= 0.05 else -1  # ordet på motsatt sida om vektorn
+    b += tt(cx + sida * 10, cy - A + 36, 'norr', 12, 'start' if sida > 0 else 'end', GRA, True)
+    b += tt(cx + sida * 10, cy + A - 2, 'söder', 12, 'start' if sida > 0 else 'end', GRA, True)
+    ex, ey = cx + L * math.cos(math.radians(theta)), cy - L * math.sin(math.radians(theta))
+    b += pil(cx, cy, ex, ey, BLA, 3.4, 12)
+    lx, ly = cx + (L + 22) * math.cos(math.radians(theta)), cy - (L + 22) * math.sin(math.radians(theta))
+    if abs(math.cos(math.radians(theta))) < 0.4:  # nästan lodrät vektor: etiketten vid sidan av spetsen
+        lx, ly = ex - 12 * (1 if math.cos(math.radians(theta)) <= 0 else -1) * 3, ey + (14 if math.sin(math.radians(theta)) < 0 else -6)
+    b += tt(lx, ly + 5, vtext, 14, 'middle', BLA, True, halo=True)
+    b += bage(cx, cy, 46, ref, theta)
+    mid = math.radians((ref + theta) / 2)
+    rt = 64 if abs(theta - ref) >= 25 else 80
+    sida_v = math.copysign(1, ref - theta)  # liten vinkel: etiketten på andra sidan referensaxeln
+    if abs(theta - ref) < 25:
+        mid = math.radians(ref + sida_v * 12)
+    b += tt(cx + rt * math.cos(mid), cy - rt * math.sin(mid) + 5, vinkeltext, 14, 'middle', ORA, True, halo=True)
+    return b
+
+
+@fig('3.638', 380, 300, 'Axlar där x pekar österut och y norrut. Båtens hastighet, 15 m/s, pekar 30° söder om väster.')
+def _():
+    return kompassvektor(210, 180, '30°', '15 m/s')
+
+
+@fig('3.711', 380, 300, 'Axlar där x pekar österut och y norrut. Kajakens hastighet, 12 km/h, pekar 40° väster om norr.')
+def _():
+    return kompassvektor(130, 90, '40°', '12 km/h')
+
+
+@fig('3.713', 380, 300, 'Axlar där x pekar österut och y norrut. Fiskebåtens hastighet, 6,0 m/s, pekar 15° väster om söder.')
+def _():
+    return kompassvektor(255, 270, '15°', '6,0 m/s')
+
+
+@fig('3.677', 380, 300, 'Axlar där x pekar österut och y norrut. Vinden, 15 m/s, blåser mot nordost, 45° från öster.')
+def _():
+    return kompassvektor(45, 0, '45°', '15 m/s')
+
+
+def alv(H=210, ström='', y1=40, y2=170):
+    b = rekt(0, 0, 440, y1, GRAS, 'none', 0, 0) + rekt(0, y2, 440, H - y2, GRAS, 'none', 0, 0)
+    b += f'<rect x="0" y="{y1}" width="440" height="{y2 - y1}" fill="{VATTEN}"/>' + linje(0, y1, 440, y1, '#6f9a5b', 2) + linje(0, y2, 440, y2, '#6f9a5b', 2)
+    return b
+
+
+@fig('3.689', 440, 210, 'En älv där strömmen går längs stranden med 2,0 m/s. Båten är riktad 30° ut från strandkanten, nedströms, med farten 5,0 m/s genom vattnet.')
+def _():
+    b = alv()
+    x0, y0 = 80, 166
+    th = math.radians(30)
+    b += pil(x0, y0, x0 + 150 * math.cos(th), y0 - 150 * math.sin(th), BLA, 3.4, 12)
+    b += tt(x0 + 100, y0 - 92, '5,0 m/s genom vattnet', 13, 'middle', BLA, True, halo=True)
+    b += linje(x0, y0, x0 + 90, y0, GRA, 1.4, '4 3') + bage(x0, y0, 52, 0, 30) + tt(x0 + 70, y0 - 12, '30°', 13, 'start', ORA, True, halo=True)
+    b += pil(290, 140, 400, 140, '#3d6d8c', 2.6, 9) + tt(345, 130, 'ström 2,0 m/s', 13, 'middle', '#3d6d8c', True, halo=True)
+    b += tt(220, 196, 'strandkant', 12, 'middle', '#3f6b32', True)
+    return b
+
+
+@fig('3.723', 440, 210, 'En båt rör sig 4,0 m/s rakt över en älv och driver samtidigt 1,2 m/s med strömmen. Avvikelsen från rakt över är okänd.')
+def _():
+    b = alv()
+    x0, y0 = 160, 166
+    b += pil(x0, y0, x0, 52, BLA, 3.4, 12) + tt(x0 - 10, 110, '4,0 m/s', 13, 'end', BLA, True, halo=True) + tt(x0 - 10, 126, 'rakt över', 12, 'end', BLA, halo=True)
+    b += pil(x0, y0 - 4, x0 + 80, y0 - 4, '#3d6d8c', 3, 10) + tt(x0 + 90, y0 - 10, '1,2 m/s med strömmen', 12, 'start', '#3d6d8c', True, halo=True)
+    b += tt(x0 + 40, 76, 'avvikelse ?', 13, 'start', ORA, True, halo=True)
+    return b
+
+
+@fig('3.732', 400, 280, 'Ett flygplan håller 250 m/s rakt norrut genom luften. Vinden blåser med 40 m/s mot nordost, 45° mellan öster och norr.')
+def _():
+    cx, cy = 120, 230
+    b = pil(cx, cy, cx, 50, BLA, 3.4, 12) + tt(cx - 10, 140, '250 m/s', 14, 'end', BLA, True) + tt(cx - 10, 158, 'norrut', 12, 'end', BLA)
+    b += path(f'M{cx},{cy - 12} L{cx - 22},{cy + 6} L{cx + 22},{cy + 6} Z', '#d9dde1', INK, 1.4) + path(f'M{cx - 4},{cy - 30} L{cx + 4},{cy - 30} L{cx + 4},{cy + 14} L{cx - 4},{cy + 14} Z', '#d9dde1', INK, 1.4)
+    wx, wy = 250, 200
+    b += pil(wx, wy, wx + 90 * math.cos(math.radians(45)), wy - 90 * math.sin(math.radians(45)), GRON, 3.4, 12)
+    b += linje(wx, wy, wx + 90, wy, GRA, 1.4, '4 3') + bage(wx, wy, 40, 0, 45) + tt(wx + 54, wy - 12, '45°', 13, 'start', ORA, True, halo=True)
+    b += tt(wx + 60, wy - 82, 'vind 40 m/s', 13, 'start', GRON, True)
+    b += pil(340, 270, 380, 270, INK, 2, 8) + tt(336, 274, 'öster', 12, 'end', GRA) + pil(30, 270, 30, 230, INK, 2, 8) + tt(38, 236, 'norr', 12, 'start', GRA)
+    return b
+
+
+@fig('3.656', 440, 230, 'En vandrare går först 400 m österut och sedan 300 m i riktningen 60° norr om öster. Avståndet fågelvägen är okänt.')
+def _():
+    k = 0.48
+    x0, y0 = 40, 190
+    x1, y1 = x0 + 400 * k, y0
+    x2, y2 = x1 + 300 * k * math.cos(math.radians(60)), y1 - 300 * k * math.sin(math.radians(60))
+    b = rekt(0, 0, 440, 230, '#f4f1e8', 'none', 0, 0)
+    b += pil(x0, y0, x1, y1, BLA, 3, 10) + tt((x0 + x1) / 2, y0 + 20, '400 m österut', 13, 'middle', BLA, True)
+    b += pil(x1, y1, x2, y2, BLA, 3, 10) + tt(x2 + 10, (y1 + y2) / 2, '300 m', 13, 'start', BLA, True)
+    b += linje(x1, y1, x1 + 80, y1, GRA, 1.4, '4 3') + bage(x1, y1, 34, 0, 60) + tt(x1 + 48, y1 - 12, '60°', 13, 'start', ORA, True, halo=True)
+    b += linje(x0, y0, x2, y2, ORA, 2, '6 5') + tt((x0 + x2) / 2 - 14, (y0 + y2) / 2 - 8, '?', 16, 'end', ORA, True, halo=True)
+    b += cirkel(x0, y0, 5, INK, INK, 1) + tt(x0, y0 + 20, 'start', 12, 'middle', GRA, True)
+    b += pil(380, 60, 420, 60, INK, 2, 8) + tt(376, 64, 'öster', 12, 'end', GRA) + pil(400, 110, 400, 72, INK, 2, 8) + tt(408, 90, 'norr', 12, 'start', GRA)
+    return b
+
+
+@fig('3.730', 400, 290, 'En orienterare springer 3,0 km österut, 2,0 km norrut och 4,0 km mot sydväst. Avståndet från starten är okänt.')
+def _():
+    k = 50
+    x0, y0 = 110, 200
+    p1 = (x0 + 3 * k, y0)
+    p2 = (p1[0], p1[1] - 2 * k)
+    p3 = (p2[0] - 4 * k * math.cos(math.radians(45)), p2[1] + 4 * k * math.sin(math.radians(45)))
+    b = rekt(0, 0, 400, 290, '#f4f1e8', 'none', 0, 0)
+    b += pil(x0, y0, *p1, BLA, 3, 10) + tt((x0 + p1[0]) / 2, y0 + 20, '3,0 km', 13, 'middle', BLA, True, halo=True)
+    b += pil(*p1, *p2, BLA, 3, 10) + tt(p1[0] + 10, (p1[1] + p2[1]) / 2, '2,0 km', 13, 'start', BLA, True, halo=True)
+    b += pil(*p2, *p3, BLA, 3, 10) + tt((p2[0] + p3[0]) / 2 - 16, (p2[1] + p3[1]) / 2 - 16, '4,0 km mot sydväst', 13, 'end', BLA, True, halo=True)
+    b += linje(x0, y0, *p3, ORA, 2, '5 4') + tt((x0 + p3[0]) / 2 - 10, (y0 + p3[1]) / 2 + 20, '?', 16, 'end', ORA, True, halo=True)
+    b += path(f'M{x0},{y0 - 10} L{x0 + 10},{y0 + 8} L{x0 - 10},{y0 + 8} Z', 'none', ROD, 2) + tt(x0 - 14, y0 - 6, 'start', 12, 'end', ROD, True)
+    b += pil(330, 40, 370, 40, INK, 2, 8) + tt(326, 44, 'öster', 12, 'end', GRA) + pil(350, 90, 350, 52, INK, 2, 8) + tt(358, 70, 'norr', 12, 'start', GRA)
+    return b
+
+
+@fig('3.705', 440, 210, 'En tennisboll serveras med farten 45 m/s riktad 12° under det horisontella.')
+def _():
+    b = rekt(0, 170, 440, 40, '#5a8f4e', 'none', 0, 0) + rekt(300, 120, 6, 50, '#ffffff', INK, 1, 0) + linje(303, 120, 303, 170, INK, 1)
+    for y in range(124, 170, 8):
+        b += linje(300, y, 306, y, '#9aa4ab', 1)
+    x0, y0 = 70, 60
+    b += cirkel(x0, y0, 7, '#d4e157', INK, 1.4)
+    th = math.radians(-12)
+    b += pil(x0 + 8, y0, x0 + 8 + 170 * math.cos(th), y0 - 170 * math.sin(th), BLA, 3, 11)
+    b += tt(x0 + 110, y0 + 58, '45 m/s', 14, 'middle', BLA, True, halo=True)
+    b += linje(x0 + 8, y0, x0 + 200, y0, GRA, 1.4, '4 3') + bage(x0 + 8, y0, 110, 0, -12) + tt(x0 + 130, y0 - 6, '12°', 13, 'start', ORA, True, halo=True)
+    return b
+
+
+@fig('3.676', 440, 190, 'Ett flygplan flyger med farten 240 m/s och stiger i vinkeln 6° mot marken.')
+def _():
+    b = rekt(0, 160, 440, 30, GRAS, 'none', 0, 0) + linje(0, 160, 440, 160, '#6f9a5b', 2)
+    x0, y0 = 60, 120
+    th = math.radians(6)
+    b += path(f'M{x0 - 30},{y0 + 2} L{x0 + 10},{y0 - 2} L{x0 + 16},{y0 - 1} L{x0 + 10},{y0 + 4} L{x0 - 30},{y0 + 6} Z', '#d9dde1', INK, 1.4)
+    b += path(f'M{x0 - 26},{y0 + 2} L{x0 - 32},{y0 - 12} L{x0 - 22},{y0 + 1} Z', '#d9dde1', INK, 1.2)
+    b += pil(x0 + 18, y0, x0 + 18 + 300 * math.cos(th), y0 - 300 * math.sin(th), BLA, 3, 11)
+    b += tt(x0 + 200, y0 - 36, '240 m/s', 14, 'middle', BLA, True, halo=True)
+    b += linje(x0 + 18, y0, x0 + 340, y0, GRA, 1.4, '4 3') + bage(x0 + 18, y0, 200, 0, 6) + tt(x0 + 226, y0 - 4, '6°', 13, 'start', ORA, True, halo=True)
+    return b
+
+
+@fig('3.7', 460, 170, 'Ett tåg kör i 90 km/h. Inne i tåget rullas en boll framåt i mittgången med 1,5 m/s i förhållande till golvet.')
+def _():
+    b = linje(10, 150, 450, 150, INK, 3) + rekt(40, 50, 360, 90, '#e7eef4', INK, 2, 14)
+    for x in (80, 150, 290, 360):
+        b += cirkel(x, 146, 9, INK, '#fff', 2)
+    for x in range(70, 380, 56):
+        b += rekt(x, 66, 36, 26, '#cfe6f5', INK, 1.2, 3)
+    b += linje(50, 128, 390, 128, '#b7bec4', 2) + cirkel(180, 122, 6, '#e07a3a', INK, 1.2)
+    b += pil(190, 112, 250, 112, ORA, 2.6, 9) + tt(256, 116, '1,5 m/s mot golvet', 12, 'start', ORA, True, halo=True)
+    b += pil(330, 30, 420, 30, BLA, 3) + tt(326, 35, 'tåget 90 km/h', 13, 'end', BLA, True)
+    return b
+
+
+@fig('3.52', 460, 150, 'Stafettväxling. Mottagaren är 6,0 m före den inkommande löparen och springer 9,2 m/s. Den inkommande löparen springer 8,5 m/s.')
+def _():
+    b = rekt(0, 100, 460, 40, '#d9734e', 'none', 0, 0) + linje(0, 100, 460, 100, '#fff', 2) + linje(0, 140, 460, 140, '#fff', 2)
+    b += gubbe(120, 120, BLA, 0.9) + gubbe(280, 120, ORA, 0.9)
+    b += pil(132, 60, 196, 60, BLA, 2.6, 9) + tt(120, 40, 'inkommande 8,5 m/s', 12, 'middle', BLA, True)
+    b += pil(292, 60, 362, 60, ORA, 2.6, 9) + tt(300, 40, 'mottagare 9,2 m/s', 12, 'middle', ORA, True)
+    b += linje(120, 128, 120, 146, '#fff', 1.6) + linje(280, 128, 280, 146, '#fff', 1.6) + linje(120, 137, 280, 137, '#fff', 1.6)
+    b += tt(200, 133, '6,0 m', 13, 'middle', '#fff', True)
+    return b
+
+
+@fig('3.82', 460, 170, 'En bil som kör 27,5 m/s kör om en lastbil som kör 23,0 m/s. Bilen måste förflytta sig 95 m i förhållande till lastbilen.', kort=['b', 'c'])
+def _():
+    b = rekt(10, 70, 440, 70, VAG, INK, 1.4, 2) + linje(14, 105, 446, 105, '#fff', 1.6, '14 10')
+    b += rekt(200, 110, 140, 26, '#e9eef2', INK, 1.6, 2) + rekt(340, 112, 30, 22, '#5b9bd5', INK, 1.6, 3)
+    for x in (220, 250, 320, 356):
+        b += cirkel(x, 138, 6, INK, '#fff', 1.4)
+    b += pil(380, 124, 440, 124, BLA, 2.6, 9) + tt(410, 160, 'lastbil 23,0 m/s', 12, 'middle', BLA, True)
+    b += bil(100, 98, '#e07a5f') + pil(160, 82, 210, 82, ORA, 2.6, 9) + tt(140, 60, 'bil 27,5 m/s', 12, 'middle', ORA, True)
+    b += tt(330, 40, '95 m i förhållande till lastbilen', 12, 'middle', INK, True)
+    return b
+
+
+@fig('3.95', 460, 180, 'Två tåg 60 km från varandra kör mot varandra med 90 km/h vardera. En fluga flyger med 120 km/h fram och tillbaka mellan dem.')
+def _():
+    b = linje(10, 140, 450, 140, INK, 3)
+    b += path('M20,90 L110,90 L130,110 L130,136 L20,136 Z', '#5b9bd5', INK, 2) + path('M440,90 L350,90 L330,110 L330,136 L440,136 Z', '#e07a5f', INK, 2)
+    b += pil(80, 70, 140, 70, BLA, 2.6, 9) + tt(80, 60, '90 km/h', 12, 'middle', BLA, True)
+    b += pil(380, 70, 320, 70, ORA, 2.6, 9) + tt(380, 60, '90 km/h', 12, 'middle', ORA, True)
+    b += path('M134,104 L180,48 L226,96 L262,58 L290,92 L310,70', 'none', GRA, 1.4, ' stroke-dasharray="4 3"')
+    b += cirkel(134, 104, 4, INK, INK, 1) + tt(230, 34, 'flugan 120 km/h', 12, 'middle', INK, True)
+    b += matt_h(130, 330, 166, '60 km', under=False)
+    return b
+
+
 # ---------------------------------------------------------------- inläggning
 def efter_forsta_stycket(html, figur, efter=None):
     i = (html.index(efter) + len(efter)) if efter and efter in html else html.index('</p>') + 4

@@ -16,6 +16,9 @@ const FIGURER = {
   // konstacc
   '3.30': null, '3.63': null, '3.68': null, '3.86': null, '3.118': null, '3.124': null, '3.162': null, '3.170': null, '3.172': null,
   '3.177': null, '3.378': null, '3.379': null, '3.391': null, '3.400': null, '3.406': null, '3.387': ['b', 'c'],
+  // vektorer (hastighet som vektor)
+  '3.638': null, '3.711': null, '3.713': null, '3.677': null, '3.689': null, '3.723': null, '3.732': null, '3.656': null, '3.730': null,
+  '3.705': null, '3.676': null, '3.7': null, '3.52': null, '3.82': ['b', 'c'], '3.95': null,
 };
 
 test('kapitel 3: figuren finns i frågan och på rätt delkort', () => {
@@ -51,4 +54,15 @@ test('konstacc: figurerna visar givna data och markerar det okända med ?', () =
   assert.ok(q('3.400').t.indexOf('<svg') > q('3.400').t.indexOf('landar på marken.'));
   assert.ok(q('3.387').t.indexOf('<svg') > q('3.387').t.indexOf('45 s efter B.'));
   assert.doesNotMatch(q('3.177').t, />11,5|>11,48/);
+});
+
+test('vektorer: vinklar och väderstreck står i figuren, men inte komposanterna', () => {
+  for (const [id, tal] of [['3.638', ['30°', '15 m/s', 'väster', 'söder']], ['3.711', ['40°', '12 km/h']], ['3.713', ['15°', '6,0 m/s']], ['3.677', ['45°', '15 m/s']],
+    ['3.689', ['30°', 'ström 2,0 m/s']], ['3.723', ['avvikelse ?']], ['3.656', ['400 m österut', '300 m', '60°', '?']], ['3.730', ['3,0 km', '2,0 km', '4,0 km mot sydväst', '?']],
+    ['3.705', ['12°', '45 m/s']], ['3.676', ['6°', '240 m/s']], ['3.52', ['6,0 m']], ['3.95', ['60 km', 'flugan 120 km/h']]]) {
+    for (const s of tal) assert.ok(q(id).t.includes(`>${s}<`), `${id}: ${s}`);
+  }
+  // Svaren (komposanter, avstånd) syns inte.
+  assert.doesNotMatch(q('3.638').t, />−13|>−7,5/); assert.doesNotMatch(q('3.656').t, />608/); assert.doesNotMatch(q('3.723').t, />16,7/);
+  assert.doesNotMatch(q('3.95').t, />40 km</);
 });
