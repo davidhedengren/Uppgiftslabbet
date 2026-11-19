@@ -7,7 +7,7 @@ const q=(b,id)=>{const x=b.find(x=>x.id===id);assert.ok(x,id);return x};
 
 test('Ma5 4.469 frågar efter kvoten mellan felen och facit följer mallen',()=>{
  const u=q(ma5,'4.469');
- assert.match(u.t,/Hur många gånger mindre blir felet när steglängden halveras\? \(Svara med kvoten mellan felen\.\)/);
+ assert.match(u.t,/Hur många gånger mindre blir felet när steglängden halveras\? \(?Svara med kvoten mellan felen\.\)?/);/* språkomskrivningen 2026-11-19 */
  assert.doesNotMatch(u.t,/Hur mycket mindre/);
  assert.match(u.t,/h=0\{,\}2/);assert.match(u.t,/h=0\{,\}1/);
  const f1=Math.E-1.2**5,f2=Math.E-1.1**10;

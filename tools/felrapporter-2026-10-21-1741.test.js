@@ -49,6 +49,6 @@ test('Kondensatorer: enheter, prefix, svar och tillåten miniräknare',()=>{
  for(const [id,value] of Object.entries(expected)){const p=q(fy2,id);near(p.rättSvar,value);assert.equal(p.miniräknare,true);assert.equal(p.geogebra,false);assert.ok(/\(Svara i /.test(p.t)||p.svarEnhet);assert.match(p.t,/<svg/);assert.ok(!/facit-steglista/.test(p.s));}
 });
 test('Avancerad resonans förblir tillgänglig för lärare men väljs inte i elevträning',()=>{
- for(const id of ['4.30','4.153','4.32','4.34','4.490']){const p=q(matf,id);assert.equal(p.spel,false);assert.equal(p.traningsniva,5);assert.match(p.t,/Fördjupning utanför/);assert.equal(p.geogebra,true);assert.equal(p.miniräknare,true);}
+ for(const id of ['4.30','4.153','4.32','4.34','4.490']){const p=q(matf,id);assert.equal(p.spel,false);assert.equal(p.traningsniva,5);assert.doesNotMatch(p.t,/<strong><\/strong>/);/* språkomskrivningen 2026-11-19: metatexten 'Fördjupning utanför …' är borttagen; spel:false och nivå 5 håller uppgiften utanför elevträningen */assert.equal(p.geogebra,true);assert.equal(p.miniräknare,true);}
  for(const id of ['4.81','4.106','4.386'])assert.equal(q(matf,id).spel,false);
 });
