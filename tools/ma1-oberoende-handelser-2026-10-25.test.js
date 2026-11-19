@@ -4,6 +4,13 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma1.js'),'utf8'),c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=Array.from({length:24},(_,i)=>`5.${641+i}`);
+
+test('5.573 skiljer rätt sannolikhet från närmaste tusendelar',()=>{
+  const uppgift=get('5.573');
+  const sannolikhet=3*0.7**2*0.3;
+  assert.ok(Math.abs(uppgift.rättSvar-sannolikhet)<=uppgift.tolerans);
+  for(const felSvar of [0.440,0.442]) assert.ok(Math.abs(uppgift.rättSvar-felSvar)>uppgift.tolerans);
+});
 const fr=s=>{const [a,b]=String(s).split('/').map(Number);return a/b;};
 const n=(id,x)=>{const t=get(id);const v=t.svarstyp==='bråk'?fr(t.rättSvar):Number(t.rättSvar);assert.ok(Math.abs(v-x)<1e-12,`${id}: ${t.rättSvar} ≠ ${x}`);};
 

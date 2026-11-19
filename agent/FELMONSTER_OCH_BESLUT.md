@@ -3810,3 +3810,7 @@ I 4.38 kan flera trianglar ha samma tangensvärde. Del b måste ange de två kat
 ## Ma1 grundläggande sannolikhet, 2026-11-18
 
 I 5.561 ska 132/480 avrundas till 0,28. Det tidigare intervallet godkände även 0,27. För 5.568 och 5.569 a ska tre decimaler skilja det korrekt avrundade svaret från närmaste grannvärden. De exakta värdena är 25/216, 27/216 och 130/600. Fallen kontrolleras i `tools/sprak-2026-11-17.test.js` och har prövats i träningsvyn.
+
+## Ma1 – exakt sannolikhet i 5.573, 2026-11-19
+
+För exakt två träffar på tre oberoende straffkast med träffsannolikhet 0,70 är sannolikheten exakt 0,441. Toleransen 0,001 godtog även 0,440 och 0,442. Uppgiften använder nu 1e-9 som flera andra exakta sannolikhetssvar i området. Grannvärdena kontrolleras i `tools/ma1-oberoende-handelser-2026-10-25.test.js`.
