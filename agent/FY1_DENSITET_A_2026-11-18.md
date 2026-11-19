@@ -60,5 +60,4 @@ Bara `niva`, `poang` och `traningsniva` är ändrade. Text, facit och självrät
   varning. Det som återstår är INFO om att bakgrundsrektangeln ligger mot kanten, vilket är avsiktligt.
 - Valideraren: Fy1 har 0 fel, 10 varningar och 761 INFO, alltså samma antal som före ändringen.
 - Fy1-testerna (151 filer) ger samma resultat som före ändringen. 14 filer var röda redan innan och berörs inte.
-- **Kunskapsgymmet är inte synkat i denna session**, eftersom sessionen inte fick behörighet till det repot. Kopiera
-  `uppgifter.js` till Kunskapsgymmet, kontrollera med `cmp` och höj `BANK_VERSION`.
+- **Kunskapsgymmet är synkat 2026-11-19** (commit b3b7c8e, `uppgifter.js` identisk med `cmp`, `BANK_VERSION` 2026-11-19-fy1-figurer-kap2-4). Kunskapsgymmets rättning är prövad med `tools/kg-sjalvrattning-kontroll.cjs`: 1.319 a godtar 2pi, 2π, 6,28 och 6,3, 1.424 godtar 1/√2 och √2/2, och 1.87 godtar (2a+3).

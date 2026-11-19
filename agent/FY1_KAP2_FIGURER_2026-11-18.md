@@ -86,7 +86,7 @@ ge bort förklaringen som efterfrågas.
   och geometri. Det som återstår är varningar om ”vinkelbågar”, vilket är ellipsbågar i cylindrar och fatets ringar, och
   INFO om att bakgrundsrektangeln ligger mot kanten. Båda är falsklarm.
 - Fy1-testerna (151 filer) ger samma resultat som före ändringen.
-- **Kunskapsgymmet är inte synkat i denna session** (ingen behörighet till repot).
+- **Kunskapsgymmet är synkat 2026-11-19** (commit b3b7c8e, `uppgifter.js` identisk med `cmp`, `BANK_VERSION` 2026-11-19-fy1-figurer-kap2-4). Kunskapsgymmets rättning är prövad med `tools/kg-sjalvrattning-kontroll.cjs`: 1.319 a godtar 2pi, 2π, 6,28 och 6,3, 1.424 godtar 1/√2 och √2/2, och 1.87 godtar (2a+3).
 
 ## Läge
 

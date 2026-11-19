@@ -72,4 +72,4 @@ med F = kx (4.323–4.328, 4.332–4.340) fick ingen figur.
 - Byggskript: `tools/bygg-fy1-kap4-figurer-2026-11-19.py`. Regressionstest: `tools/fysik1-kap4-figurer-2026-11-19.test.js`.
 - Figurerna är granskade som bilder och med `tools/granska-svg.js`. Inga krockar eller klippta etiketter återstår.
 - Hela testsviten ger samma resultat som före ändringen.
-- **Kunskapsgymmet är inte synkat i denna session.**
+- **Kunskapsgymmet är synkat 2026-11-19** (commit b3b7c8e, `uppgifter.js` identisk med `cmp`, `BANK_VERSION` 2026-11-19-fy1-figurer-kap2-4). Kunskapsgymmets rättning är prövad med `tools/kg-sjalvrattning-kontroll.cjs`: 1.319 a godtar 2pi, 2π, 6,28 och 6,3, 1.424 godtar 1/√2 och √2/2, och 1.87 godtar (2a+3).
