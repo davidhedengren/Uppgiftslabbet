@@ -3843,3 +3843,7 @@ På lärarens begäran är 30 uppgifter pausade tills vidare med `spel: false`. 
 - Växelström, kapacitiv reaktans och kretsar med kondensator (17): 3.23–3.24, 3.108–3.109, 3.142–3.144, 3.303, 3.311, 3.423–3.426, 3.545 och 3.548–3.550.
 
 De tio uppgifterna som enbart behandlar spolar i det gemensamma växelströmsavsnittet ingår fortfarande i elevträningen.
+
+## Begreppet ”diskret funktion” används inte, 2026-11-20
+
+[Ma3c Funktioner utan ”diskret”](MA3C_FUNKTIONER_UTAN_DISKRET_2026-11-20.md). Läraren vill inte ha begreppet diskret funktion i uppgifter, facit eller ledtrådar. Beskriv i stället att variabeln bara kan anta heltal. Fyra klonade summauppgifter (1.545, 1.546, 1.551, 1.552) är ersatta med egna sammanhang, tabell, graf och funktionsuttryck.
