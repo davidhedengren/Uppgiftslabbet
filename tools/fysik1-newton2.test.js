@@ -70,7 +70,8 @@ const cases=[
 ];
 function check(id,expected){const t=q(id),want=Array.isArray(expected)?expected:[expected],got=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(want.length,got.length,id);want.forEach((v,i)=>{const tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;assert.ok(Math.abs(v-got[i])<=(tol||0)+Number.EPSILON*32*Math.max(Math.abs(v),Math.abs(got[i])),`${id} del ${i}: ${v} jämfört med ${got[i]} ± ${tol}`);});}
 test('Newtons andra lag: alla 136 numeriska huvuduppgifter räknas från de givna värdena',()=>{
- const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='newton2'&&t.rättSvar!=null);assert.equal(tasks.length,136);assert.deepEqual(new Set(cases.map(v=>v[0])),new Set(tasks.map(t=>t.id)));
+ // Delmomentet ”Kopplade klossar med snören och trissor” (4.979–4.1004, 2026-11-20) räknas om i fy1-kopplade-klossar-2026-11-20.test.js.
+ const tasks=c.window.BANK.filter(t=>t.kap===4&&t.omr==='newton2'&&t.rättSvar!=null&&t.familj!=='Kopplade klossar med snören och trissor');assert.equal(tasks.length,136);assert.deepEqual(new Set(cases.map(v=>v[0])),new Set(tasks.map(t=>t.id)));
  for(const[id,expected]of cases)check(id,expected);
 });
 test('Förenklade elevkort räknas också med kortets egna givna, ibland avrundade, värden',()=>{

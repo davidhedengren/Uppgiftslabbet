@@ -3828,3 +3828,7 @@ Läraren vill behålla originalfotot i bänkpressuppgiften 4.191 och har tagit b
 Direkt numerisk insättning i funktionsuttryck är träning på nivå 1, även när en pappersuppgift innehåller flera sådana beräkningar. Högre nivåer i avsnittet Funktioner prövar bland annat symboliska argument, ändringskvoter och resonemang utifrån grafer. Se [granskningen med uppgifts-ID:n och nivåer](MA3_FUNKTIONER_C_2026-10-25.md).
 
 Läraren vill tills vidare begränsa Kunskapsgymmets träning i Funktioner till bokuppslagets innehåll. Bland annat diskreta funktioner och fristående modelluppgifter är bortkopplade med `spel: false` och finns kvar i lärarbanken. ID-listan finns i samma granskning.
+
+## Fy1 kopplade klossar och häftet om Newtons andra lag, 2026-11-20
+
+[Häfte och 26 nya uppgifter](FY1_KOPPLADE_KLOSSAR_2026-11-20.md). Lärarens gamla facit till ”Färdighetsträning – Newtons andra lag” hade fel i 12 av 15 uppgifter och blandade g = 9,82 och g = 10. Använd det nya facit (g = 9,82 m/s²) i `material/fysik1/`. Uppgifterna i banken (4.979–4.1004, delmomentet ”Kopplade klossar med snören och trissor”) är fristående och anger alla massor i kg. Figurer och friläggningar ritas med `tools/newton2_klossar.py`.
