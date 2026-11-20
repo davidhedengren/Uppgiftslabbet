@@ -45,6 +45,10 @@ def main():
             continue
         t = b.byte.get(id_, b.text(id_))
         for a, k in zip(alt, kommentarer):
+            if a.get('ratt') and k:
+                # Skydd (2026-11-20): None på fel plats i listan förskjuter alla kommentarer.
+                fel.append(f'{id_}: kommentar på det rätta alternativet {a["txt"][:40]} (står None på rätt plats?)')
+                continue
             if not k or (a.get('kommentar') or '').strip():
                 continue
             t, n = lagg_in(t, a['txt'], bool(a.get('ratt')), k)
