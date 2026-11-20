@@ -22,3 +22,12 @@ skriver ”diskret modell” om en rekursionsformel.
 Kontroll: `tools/ma3c-funktioner-utan-diskret-2026-11-20.py` (skript) och `.test.js` (skydd). Kunskapsgymmets rättning
 är prövad (45, 25 cm, 0,25 m, 3 zoner, 40 kr godtas). Renderat i 390 px. Valideraren: Ma3c 0 fel, 48 varningar,
 190 INFO (före 191). Hela testsviten oförändrad.
+
+## Tillägg: rutinuppgifter ”förenkla f(x+h) − f(x)”, 1.1129–1.1144
+
+Användaren: ”lägg till ett gäng med rutinuppgifter av typen f(x)=2x^2+3x, förenkla f(x+h)-f(x).” 16 uppgifter i
+Funktionsvärden (`tools/bygg-ma3c-fxh-2026-11-20.py`, test `tools/ma3c-fxh-2026-11-20.test.js`): linjära (E1),
+ax², ax²+bx, ax²+bx+c, negativ ledande koefficient, decimalkoefficient, punkt (f(2+h) − f(2)), annan bokstav
+(g(a+h) − g(a), s(t+h) − s(t)) och en ändringskvot. E2 för de flesta, C3 för minustecken framför kvadraten,
+decimaler och kvoten. Formatet `förenklat_polynom` godtar termerna i valfri ordning (prövat i Kunskapsgymmet).
+Valideraren: Ma3c 0 fel, 48 varningar, 190 INFO som före.
