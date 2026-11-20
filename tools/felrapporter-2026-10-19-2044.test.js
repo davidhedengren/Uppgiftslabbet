@@ -44,7 +44,8 @@ test('Granskningsspåret omfattar varje förändring och bevarar övriga bankobj
  const FLERVAL=['t','s','svarstyp','rättSvar','tolerans','alternativ','svarFormat','svarEnhet','svarVardesiffror'];
  const utan=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!FLERVAL.includes(k)));
  // Språkomskrivningen 2026-11-19 ändrade bara uppgiftstexterna (t, delkortens text, kgInstruktion, visaAlternativ); de jämförs inte här.
- const SPRAK=['t','spelIntro','spelDelar','kgInstruktion','visaAlternativ'];const utanS=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!SPRAK.includes(k)));
+ // Facitgranskningen 2026-11-20 tog bort maskinskrivna mallrader ur facit (s, ledtrad) med tools/sprak/mallblock_bort.py.
+ const SPRAK=['t','spelIntro','spelDelar','kgInstruktion','visaAlternativ','s','ledtrad'];const utanS=o=>Object.fromEntries(Object.entries(o).filter(([k])=>!SPRAK.includes(k)));
  for(const item of report.changes){const t=q(item.id);if(t.svarstyp==='alternativ'&&item.after.svarstyp!=='alternativ')assert.deepEqual(utanS(utan(t)),utanS(utan(item.after)),item.id);else assert.deepEqual(utanS(t),utanS(item.after),item.id);}
  for(const id of report.reviewed){const t=q(id);assert.ok(!t.geogebra||t.miniräknare,id);
   for(const p of t.spelDelar||[])assert.ok(!(p.geogebra??t.geogebra)||(p.miniräknare??t.miniräknare),id);
