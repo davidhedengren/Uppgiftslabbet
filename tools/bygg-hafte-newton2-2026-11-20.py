@@ -123,7 +123,7 @@ body { font-family: Inter, "Segoe UI", Arial, sans-serif; color: var(--ink); fon
 .fr { font-size: 9.3pt; color: var(--ink); margin: 3px 0 0; }
 .fig { flex: 1; display: flex; align-items: center; justify-content: center; padding: 4px 0; }
 .fig svg { max-height: 190px; width: auto !important; max-width: 100%; }
-.sokt { font-size: 8.8pt; color: var(--mute); border-top: 1px dashed var(--line); padding-top: 4px; }
+.sokt { font-size: 9.1pt; color: var(--ink); font-weight: 600; border-top: 1px dashed var(--line); padding-top: 4px; }
 .sida { break-before: page; }
 h2.rubrik { font-size: 15pt; color: var(--navy); margin: 0 0 4px; }
 .ingress { color: var(--mute); margin: 0 0 10px; font-size: 9.6pt; }
@@ -145,8 +145,9 @@ td.n { font-weight: 800; color: var(--navy); width: 34px; }
 .mini svg { width: 250px !important; max-height: 170px; }
 .katex { font-size: 1.04em; }
 @media print { .kort, .ruta { box-shadow: none; } }
-.tips { margin-top: 12px; background: #f3f8f4; border-color: #cfe5d6; }
+.tips { margin: 0 0 12px; background: #f3f8f4; border-color: #cfe5d6; }
 .tips h2 { color: #23704a; }
+.nw { white-space: nowrap; }
 .tips ul { margin: 0; padding-left: 18px; } .tips li { margin: 3px 0; }
 """
 
@@ -162,10 +163,10 @@ def kort(n, villkor, fr, s, sokt):
 def sokt_text(s):
     n = len(s.kedja()) - 1
     if n == 0:
-        return 'Sökt: accelerationen \\(a\\)'
+        return 'Bestäm accelerationen.'
     if n == 1:
-        return 'Sökt: accelerationen \\(a\\) och snörkraften \\(S\\)'
-    return 'Sökt: accelerationen \\(a\\) och snörkrafterna \\(S_1\\) och \\(S_2\\)'
+        return 'Bestäm accelerationen och snörkraften <span class="nw">\\(S\\).</span>'
+    return 'Bestäm accelerationen och snörkrafterna <span class="nw">\\(S_1\\) och \\(S_2\\).</span>'
 
 
 def bygg():
@@ -184,11 +185,8 @@ def bygg():
         '<div class="ruta givet"><h2>Givet</h2><div class="givna"><span>\\(F\\)</span><span>\\(=10\\ \\text{N}\\)</span>'
         '<span>\\(m\\)</span><span>\\(=1{,}0\\ \\text{kg}\\)</span><span>\\(g\\)</span><span>\\(=9{,}82\\ \\text{m/s}^2\\)</span>'
         '</div><div class="notis">Snören och trissor är masslösa och trissorna är friktionsfria. Snörena är märkta '
-        '\\(S_1\\) och \\(S_2\\) när det finns fler än ett.</div></div></div>'
-        '<div class="utmaning"><strong>Högre nivå:</strong> Lös först uppgiften algebraiskt, så att accelerationen och '
-        'snörkrafterna uttrycks med \\(F\\), \\(m\\) och \\(g\\). Sätt in värdena sist.</div>')
+        '\\(S_1\\) och \\(S_2\\) när det finns fler än ett.</div></div></div>')
     korten = [kort(n, v, fr, s, sokt_text(s)) for n, (v, fr, s) in enumerate(UPPG, 1)]
-    delar.append('<div class="grid">' + ''.join(korten[:4]) + '</div>')
     delar.append(
         '<div class="ruta tips"><h2>Bra att veta</h2><ul>'
         '<li>Klossar som sitter ihop med sträckta snören har <strong>samma accelerationsstorlek</strong>.</li>'
@@ -197,6 +195,7 @@ def bygg():
         'accelererar uppåt har \\(S&gt;mg\\).</li>'
         '<li>Kontrollera svaret: om hela systemet ses som en enda kropp är \\(F_{\\text{res}}=m_{\\text{tot}}\\,a\\), '
         'och snörkrafterna tar ut varandra.</li></ul></div>')
+    delar.append('<div class="grid">' + ''.join(korten[:4]) + '</div>')
     delar.append('<div class="grid sida">' + ''.join(korten[4:10]) + '</div>')
     delar.append('<div class="grid sida">' + ''.join(korten[10:]) + '</div>')
 

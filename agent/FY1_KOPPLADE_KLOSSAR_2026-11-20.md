@@ -16,8 +16,9 @@ facit och lösning av exempel 2 och 6):
 - `material/fysik1/Fardighetstraning_Newtons_andra_lag.pdf` (6 sidor A4) och `.html`, byggda med
   `tools/bygg-hafte-newton2-2026-11-20.py --deps=<mapp med katex/package>`.
 - Sida 1: rubrikband, rutan ”Så här gör du” (frilägg, positiv riktning, \(F_{\text{res}}=ma\) för varje kloss, lös
-  ekvationssystemet), givna värden (F = 10 N, m = 1,0 kg, g = 9,82 m/s²), ”Högre nivå” (lös algebraiskt först), uppgift
-  1–4 och rutan ”Bra att veta”. Sida 2–3: uppgift 5–15. Sida 4: facit. Sida 5–6: lösning av exempel 2 och 6.
+  ekvationssystemet), givna värden (F = 10 N, m = 1,0 kg, g = 9,82 m/s²), rutan ”Bra att veta” och uppgift 1–4.
+  Varje uppgiftskort slutar med en uppmaning, till exempel ”Bestäm accelerationen och snörkraften S.” (lärarens
+  önskemål 2026-11-20: ”Bra att veta” före uppgifterna, ingen ruta ”Högre nivå”). Sida 2–3: uppgift 5–15. Sida 4: facit. Sida 5–6: lösning av exempel 2 och 6.
 - Figurerna ritas om med `tools/newton2_klossar.py`: klossar med färgtoning och skugga, bord i trä med ben, trissor
   i metall, streckat golv, röd dragkraft och friktionsyta där det finns friktion. Snörena märks \(S_1\), \(S_2\) i
   kedjans ordning när det finns fler än ett. Uppgift 13 ritas som originalet, med ett snöre över ett bord och en
