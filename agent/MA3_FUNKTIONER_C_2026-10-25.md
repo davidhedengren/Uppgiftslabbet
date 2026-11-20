@@ -80,3 +80,34 @@ annars skulle bli otydlig.
   Bankkopiorna synkas byte för byte och båda cacheversionerna uppdateras.
 
 Inga rapportstatusar eller kommentarer har skrivits till databasen.
+
+## Förberedelse för derivatans definition, 20 november 2026
+
+Lärarens tre referensbilder ligger till grund för tolv nyskrivna uppgifter i Ma3c, kapitel 1, Funktioner. Träningsnivån avser den matematik eleven utför.
+
+| Uppgift | Nivå | Vad eleven gör |
+| --- | --- | --- |
+| 1.1101–1.1102 | 2 | Sätter in uttryck som argument och förenklar skillnaden mellan två funktionsvärden. |
+| 1.1103 | 2 | Förenklar ändringskvoten från en given startpunkt. |
+| 1.1104 | 3 | Bildar sekantens lutning mellan två allmänna punkter och förenklar kvoten. |
+| 1.1105–1.1106 | 3, 2 | Väljer rätt steg ur en värdetabell respektive läser av var två grafer har lika värde. |
+| 1.1107–1.1108 | 3, 4 | Bestämmer en parameter från en värdemängd respektive använder parabelns symmetri för att bestämma en koordinat i ett uttryck med h. |
+| 1.1109 | 3 | Skiljer kvotens gränsvärde från dess värde vid nollsteget. |
+| 1.1110–1.1111 | 4, 3 | Återskapar en andragradsfunktion respektive bestämmer en skärningspunkts x-koordinat från en given sekantlutning. |
+| 1.1112 | 5 | Visar att samma ändringskvot på alla intervall bestämmer skillnaden mellan två funktioner upp till en konstant, vars värde följer av startvillkoret. |
+| 1.1113–1.1114 | 3 | Jämför funktionsvärden med olika symboliska argument och bestämmer ett värde från upprepade förändringar. |
+
+1.12, 1.17, 1.22, 1.165, 1.167, 1.169 och 1.559 har flyttats till nivå 1 för direkt numerisk insättning. Detsamma gäller 1.546 och 1.552, där eleven adderar tre givna funktionsvärden. De 18 delkorten med direkt insättning har också nivå 1.
+
+De fyra frågor som uttryckligen kräver ett förenklat polynom använder det svarskravet. Alla nya uppgifter har ledtråd och stegvis facit. 1.1112 bedöms av läraren eftersom motiveringen utgör prestationen. Inga nya uppgifter kräver digitala verktyg. De fyra graferna prövas i mobilbredd och i lärarens utskriftsvy. Regressionstestet finns i `tools/ma3-funktionsvarden-2026-11-20.test.js`.
+
+### Tillfälligt urval i Kunskapsgymmet
+
+Efter genomgång av alla frågor i området har 16 tidigare spelbara uppgifter fått `spel: false`. De finns kvar i Uppgiftslabbet med samma ID och facit.
+
+- Diskreta funktioner och summering av uppräknade värden: 1.453, 1.545, 1.546, 1.551, 1.552.
+- Befolkningsmodeller, porto och geometrisk modellering: 1.430, 1.434, 1.955, 1.956.
+- Konstruktion av tredjegradspolynom från nollställen: 1.07, 1.77. Ren uttrycksräkning utan funktionsnotation: 1.461.
+- Förkortning av rationella uttryck, rotvillkor, absolutbelopp och rotekvationer: 1.951, 1.961, 1.962, 1.964.
+
+Urvalet gäller området Funktioner. En värdetabell som används för att jämföra förändringar hör fortfarande hemma här. Enkla insättningsuppgifter med funktionsnotation finns på nivå 1. Bokuppslagets öppna resonemang har en motsvarighet i 1.1112 på lärarbladet.

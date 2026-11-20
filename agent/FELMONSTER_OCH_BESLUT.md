@@ -3822,3 +3822,9 @@ Läraren vill behålla originalfotot i bänkpressuppgiften 4.191 och har tagit b
 ## Felrapporter 2026-11-20 08:05: grundpotensform i omvandlingar, a/b som förhållande, radianer
 
 [Elva rapporter och åtgärder](FELRAPPORTER_2026-11-20_0805.md). Enhets- och prefixbyten i Ma1 rättas med formatet `omvandling`: målenheten krävs men grundpotensform godtas (`decimalform` behålls bara där decimalformen är det som tränas eller `kgInstruktion` ber om vanligt tal). Ett förhållande a:b godtas som a/b med samma tal. Periodfrågor i `kurvor_radianer` säger ”i radianer”. Sidlängder och andra utbytbara svarspar rättas som `mängd`. `rättSvarAlternativ` läses inte av Kunskapsgymmet; lägg inte alternativ där i tron att de godtas.
+
+## Ma3c, funktioner före derivatans definition, 2026-11-20
+
+Direkt numerisk insättning i funktionsuttryck är träning på nivå 1, även när en pappersuppgift innehåller flera sådana beräkningar. Högre nivåer i avsnittet Funktioner prövar bland annat symboliska argument, ändringskvoter och resonemang utifrån grafer. Se [granskningen med uppgifts-ID:n och nivåer](MA3_FUNKTIONER_C_2026-10-25.md).
+
+Läraren vill tills vidare begränsa Kunskapsgymmets träning i Funktioner till bokuppslagets innehåll. Bland annat diskreta funktioner och fristående modelluppgifter är bortkopplade med `spel: false` och finns kvar i lärarbanken. ID-listan finns i samma granskning.
