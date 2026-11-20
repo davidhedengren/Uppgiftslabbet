@@ -3814,3 +3814,7 @@ I 5.561 ska 132/480 avrundas till 0,28. Det tidigare intervallet godkände även
 ## Ma1 – exakt sannolikhet i 5.573, 2026-11-19
 
 För exakt två träffar på tre oberoende straffkast med träffsannolikhet 0,70 är sannolikheten exakt 0,441. Toleransen 0,001 godtog även 0,440 och 0,442. Uppgiften använder nu 1e-9 som flera andra exakta sannolikhetssvar i området. Grannvärdena kontrolleras i `tools/ma1-oberoende-handelser-2026-10-25.test.js`.
+
+## Fysik 1, kraftkapitlets bilder, 2026-11-20
+
+Läraren vill behålla originalfotot i bänkpressuppgiften 4.191 och har tagit bort uppgift 4.514 om biceps och en bok. I vägguppgifterna 4.146 och 4.816 ska kontakten mellan föremålet och handen vara lätt att läsa. Markera tryckpunkten när eleven ska rita krafterna själv, och rita den givna kraften när den behövs i frågan. Se [granskningen av kraftkapitlets bilder](FY1_KAP4_FIGURER_2026-11-19.md).

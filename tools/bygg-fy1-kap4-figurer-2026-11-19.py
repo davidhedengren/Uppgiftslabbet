@@ -16,6 +16,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
+from fy1_kraftbilder import illustrations
 import bankobjekt as B  # noqa: E402
 from a_uppgifter_hjalp import svg, tt, linje, pil, rekt, cirkel, BLA, ORA, GRON, GRA, INK, ROD  # noqa: E402
 
@@ -595,20 +596,6 @@ def _():
     return b
 
 
-@fig('4.514', 420, 220, 'En horisontell underarm håller en bok. Bokens tyngdpunkt är 40 cm från armbågen, underarmens 15 cm. Bicepsmuskeln drar uppåt 5,0 cm från armbågen.')
-def _():
-    k, x0, y = 8, 40, 110
-    b = path(f'M{x0},{y - 14} L{x0 + 44 * k},{y - 10} L{x0 + 44 * k},{y + 10} L{x0},{y + 14} Z', '#f0c9a8', INK, 2)
-    b += cirkel(x0, y, 14, '#f0c9a8', INK, 2) + tt(x0, y - 22, 'armbåge', 11, 'middle', GRA, True)
-    b += rekt(x0 + 40 * k - 26, y - 34, 52, 22, '#5b9bd5', INK, 1.6, 2) + tt(x0 + 40 * k, y - 18, 'bok', 12, 'middle', '#fff', True)
-    b += pil(x0 + 5 * k, y + 46, x0 + 5 * k, y + 4, ROD, 3) + tt(x0 + 5 * k + 8, y + 42, 'biceps ?', 12, 'start', ROD, True)
-    b += cirkel(x0 + 15 * k, y, 3, INK, INK, 1)
-    for d, t, yy in ((5, '5,0 cm', 176), (15, '15 cm', 194), (40, '40 cm', 212)):
-        b += linje(x0, yy - 4, x0 + d * k, yy - 4, GRA, 1.2) + linje(x0 + d * k, yy - 8, x0 + d * k, yy, GRA, 1.2) + linje(x0, yy - 8, x0, yy, GRA, 1.2)
-        b += tt(x0 + d * k + 6, yy, t, 11, 'start', INK, True)
-    return b
-
-
 # ================================================================ fjädrar
 def fjader(x, y1, y2, n=12, color=GRA, w=2):
     pts = ' '.join(f'{x + (7 if i % 2 else -7):.1f},{y1 + (y2 - y1) * (i + 0.5) / n:.1f}' for i in range(n))
@@ -690,6 +677,9 @@ def med_figur(q, figur):
 def main():
     src, bank = B.las(ROOT / BANK)
     Q = {q['id']: q for q in bank}
+    for uid, drawing in illustrations().items():
+        if uid in F:
+            F[uid] = '<span class="fig">' + drawing + '</span>'
     klara = {uid for uid, figur in F.items() if figur in Q[uid]['t']}
     nya = {}
     for uid, figur in F.items():

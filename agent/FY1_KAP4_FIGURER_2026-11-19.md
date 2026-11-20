@@ -73,3 +73,15 @@ med F = kx (4.323–4.328, 4.332–4.340) fick ingen figur.
 - Figurerna är granskade som bilder och med `tools/granska-svg.js`. Inga krockar eller klippta etiketter återstår.
 - Hela testsviten ger samma resultat som före ändringen.
 - **Kunskapsgymmet är synkat 2026-11-19** (commit b3b7c8e, `uppgifter.js` identisk med `cmp`, `BANK_VERSION` 2026-11-19-fy1-figurer-kap2-4). Kunskapsgymmets rättning är prövad med `tools/kg-sjalvrattning-kontroll.cjs`: 1.319 a godtar 2pi, 2π, 6,28 och 6,3, 1.424 godtar 1/√2 och √2/2, och 1.87 godtar (2a+3).
+
+## Bildgranskning 20 november 2026
+
+Granskningen omfattade 596 olika bilder i kraftkapitlets uppgifter, lösningar, delkort och genomgångar. I 32 uppgifter fick frågan en ny SVG. Samma bild används på de delkort som tidigare visade den.
+
+- 4.913–4.924 visar föremålet i frågan, bland annat rep, kälke, båt och fotboll. Alla vågräta kraftpilar inom en bild använder samma skala. Pilen för vattenmotstånd sitter vid skrovet och friktionspilarna vid underlaget.
+- Skottkärrorna i 4.11, 4.75 och 4.302 visar hjulaxeln och lastens tyngdpunkt. Måttlinjerna går mellan krafternas lodräta verkningslinjer.
+- Även hissen i 4.39, 4.115, 4.199, 4.202, 4.217 och 4.804–4.806, fallskärmen i 4.136, 4.413 och 4.422 samt 4.411, 4.463, 4.464 och 4.478 har nya teckningar.
+- I 4.146 markerar en punkt var handen trycker på klossen. Eleven får rita krafterna själv. I 4.816 pekar den givna kraften 30 N mot bokens kontaktyta. I den gemensamma facitfiguren i 4.146 och 4.262 visas de fyra kraftpilarna utan den rektangel som föreställde en hand.
+- På lärarens begäran behålls originalfotot i bänkpressuppgift 4.191. Uppgift 4.514 om biceps och en bok har utgått.
+
+Originalteckningar och inläggning finns i `tools/fy1_kraftbilder.py`. Kontrollera med `python tools/fy1_kraftbilder.py`. Kraftvektortestet jämför pilarnas ritade riktningar och längder med krafterna. Testet för kapitelbilderna skyddar också originalfotot.

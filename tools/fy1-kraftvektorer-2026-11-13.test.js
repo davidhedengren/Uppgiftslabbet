@@ -66,7 +66,22 @@ test('Krafter längs en linje: facit och svar stämmer med figurens krafter', ()
   for (const t of linje) {
     const aria = t.t.match(/aria-label="([^"]*)"/)[1];
     let net = 0;
-    for (const m of aria.matchAll(/(\d+) N åt (höger|vänster)/g)) net += (m[2] === 'höger' ? 1 : -1) * +m[1];
+    const values = [...aria.matchAll(/(\d+) N åt (höger|vänster)/g)].map(m => (m[2] === 'höger' ? 1 : -1) * Number(m[1]));
+    // Läs pilens start och spets ur de synliga banorna. Alla ska använda samma skala.
+    const arrows = [...t.t.matchAll(/<g class="kraftpil">([\s\S]*?)<\/g>/g)];
+    assert.equal(arrows.length, values.length, t.id);
+    let scale;
+    arrows.forEach(([_, body], i) => {
+      const coordinates = [...body.matchAll(/<path d="M([-\d.]+) ([-\d.]+) L/g)];
+      assert.equal(coordinates.length, 2, t.id);
+      const [tail, tip] = coordinates;
+      assert.equal(Number(tail[2]), Number(tip[2]), t.id);
+      const ratio = (Number(tip[1]) - Number(tail[1])) / values[i];
+      assert.ok(ratio > 0, t.id);
+      scale ??= ratio;
+      assert.ok(Math.abs(ratio - scale) < 1e-6, t.id);
+      net += values[i];
+    });
     if (t.svarstyp === 'numeriskt') {
       assert.equal(t.rättSvar, net, t.id);
     } else {
