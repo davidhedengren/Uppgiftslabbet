@@ -3834,3 +3834,12 @@ Läraren vill tills vidare begränsa Kunskapsgymmets träning i Funktioner till 
 [Häfte och 26 nya uppgifter](FY1_KOPPLADE_KLOSSAR_2026-11-20.md). Lärarens gamla facit till ”Färdighetsträning – Newtons andra lag” hade fel i 12 av 15 uppgifter och blandade g = 9,82 och g = 10. Använd det nya facit (g = 9,82 m/s²) i `material/fysik1/`. Uppgifterna i banken (4.979–4.1004, delmomentet ”Kopplade klossar med snören och trissor”) är fristående och anger alla massor i kg. Figurer och friläggningar ritas med `tools/newton2_klossar.py`.
 
 Ma3c 1.1126 kräver ett exakt gränsvärde för steglängden. Fri avrundning av tal får annars 0,1 att godtas för 0,05 trots att steget blir för stort. Frågan anger nu att gränsen ska bestämmas exakt. Se [andra bokomgången i Funktioner](MA3_FUNKTIONER_C_2026-10-25.md).
+
+## Fysik 2, kondensatorer pausade i Kunskapsgymmet, 2026-11-20
+
+På lärarens begäran är 30 uppgifter pausade tills vidare med `spel: false`. Samtliga kan väljas till arbetsblad i Uppgiftslabbet. Pausen omfattar även uppgifter där eleven behöver en kondensator för att resonera om växelström eller resonans.
+
+- Elektriska fält, familjen Kondensatorer (13): 3.4–3.6, 3.104–3.105 och 3.115–3.122.
+- Växelström, kapacitiv reaktans och kretsar med kondensator (17): 3.23–3.24, 3.108–3.109, 3.142–3.144, 3.303, 3.311, 3.423–3.426, 3.545 och 3.548–3.550.
+
+De tio uppgifterna som enbart behandlar spolar i det gemensamma växelströmsavsnittet ingår fortfarande i elevträningen.

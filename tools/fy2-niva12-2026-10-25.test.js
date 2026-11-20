@@ -9,9 +9,9 @@ const NYA=[...Array.from({length:24},(_,i)=>`3.${544+i}`),...Array.from({length:
 const h=6.626e-34,e=1.602e-19,me=9.109e-31,mp=1.673e-27,mn=1.675e-27,k=8.99e9,cl=2.998e8;
 const n=(id,v)=>{const t=get(id);assert.ok(Math.abs(t.rättSvar-v)<=(t.tolerans||0)+1e-9*Math.abs(v),`${id}: ${t.rättSvar} ≠ ${v}`);};
 
-test('48 spelbara kort på nivå 1–2 med facitkraven uppfyllda',()=>{
+test('48 kort på nivå 1–2 med rätt träningsurval och facit',()=>{
   const per={},niv={1:0,2:0};
-  for(const id of NYA){const t=get(id);per[t.omr]=(per[t.omr]||0)+1;niv[t.traningsniva]++;assert.equal(t.spel,true,id);assert.equal(t.poang,'(1/0/0)',id);assert.equal(t.niva,'E',id);
+  for(const id of NYA){const t=get(id);per[t.omr]=(per[t.omr]||0)+1;niv[t.traningsniva]++;assert.equal(t.spel,!['3.545','3.548','3.549','3.550'].includes(id),id);assert.equal(t.poang,'(1/0/0)',id);assert.equal(t.niva,'E',id);
     assert.match(t.s,/class="facit-metod"/,id);assert.match(t.s,/class="facit-svar"/,id);
     for(const m of (t.t+t.s+t.ledtrad).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g))assert.doesNotMatch(m[1]??m[2],/[<>]/,id);
     if(t.svarstyp==='alternativ'){assert.equal(t.alternativ.filter(a=>a.ratt).length,1,id);assert.ok(!t.alternativ[0].ratt,id);for(const a of t.alternativ)if(!a.ratt)assert.ok(a.kommentar,id);}
@@ -31,4 +31,15 @@ test('Facit räknas om',()=>{
   n('4.526',1.51-0.85);n('4.527',3);n('4.528',h*cl/((13.6/4-13.6/25)*e)*1e9);n('4.530',1.51*e/h);n('4.531',-13.6/36);
   assert.equal(Math.round(Math.sqrt(13.6/(13.6-13.06))),5);n('4.532',5);n('4.533',h*6.2e14);
   n('4.534',cl*2e-3/2/1000);n('4.536',20200e3/cl*1000);n('4.537',h*cl/0.1e-9/e/1000);n('4.538',cl/1.5);n('4.539',600/1.5);n('4.540',9);n('4.541',cl/900e6/4*100);
+});
+
+test('kondensatoruppgifterna finns i lärarbanken men är pausade i elevträningen', () => {
+  const grund = B.filter(t => t.kap === 3 && t.familj === 'Kondensatorer');
+  const vaxel = [23, 24, 108, 109, 142, 143, 144, 303, 311, 423, 424, 425, 426, 545, 548, 549, 550].map(n => get('3.' + n));
+  assert.equal(grund.length, 13);
+  for (const t of [...grund, ...vaxel]) {
+    assert.equal(t.spel, false, t.id);
+    assert.ok(t.t && t.s, t.id);
+  }
+  for (const n of [22, 112, 140, 141, 427, 428, 544, 546, 547, 551]) assert.notEqual(get('3.' + n).spel, false);
 });
