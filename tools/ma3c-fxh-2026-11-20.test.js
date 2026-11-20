@@ -41,7 +41,8 @@ test('16 uppgifter i Funktionsvärden med rätt svar', () => {
 
 test('Nivåer och facit', () => {
   assert.deepEqual([...new Set(Q.map((q) => q.niva))].sort(), ['C', 'E']);
-  assert.ok(Q.filter((q) => q.traningsniva <= 2).length >= 10);
+  // Felrapport 2026-11-20 11:04: flera termer och kvadreringsregeln ger träningsnivå 3 (lärarbeslut).
+  assert.deepEqual(Q.filter((q) => q.traningsniva <= 2).map((q) => q.id), ['1.1129', '1.1130', '1.1131', '1.1132']);
   for (const q of Q) {
     assert.match(q.s, /facit-rubrik/);
     assert.match(q.s, /<strong>Svar:<\/strong>/);

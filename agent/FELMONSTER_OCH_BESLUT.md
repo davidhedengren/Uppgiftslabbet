@@ -3847,3 +3847,7 @@ De tio uppgifterna som enbart behandlar spolar i det gemensamma växelströmsavs
 ## Begreppet ”diskret funktion” används inte, 2026-11-20
 
 [Ma3c Funktioner utan ”diskret”](MA3C_FUNKTIONER_UTAN_DISKRET_2026-11-20.md). Läraren vill inte ha begreppet diskret funktion i uppgifter, facit eller ledtrådar. Beskriv i stället att variabeln bara kan anta heltal. Fyra klonade summauppgifter (1.545, 1.546, 1.551, 1.552) är ersatta med egna sammanhang, tabell, graf och funktionsuttryck.
+
+## Insättning med flera termer är träningsnivå 3 (Ma3c), 2026-11-20
+
+[Felrapport 1.1103](FELRAPPORTER_2026-11-20_1104.md). Uppgifter som f(x+h) − f(x) eller f(3+h) − f(3) där funktionen har flera termer och kvadreringsregeln behövs är E men träningsnivå 3. Linjära funktioner och en enda kvadratterm kan vara nivå 1–2.

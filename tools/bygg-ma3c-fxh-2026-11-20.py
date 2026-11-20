@@ -162,15 +162,15 @@ def bygg():
          'Använd kvadreringsregeln på \\((x+h)^2\\).')
     uppg('1.1132', 'f', 'x', 3, 0, 0, 'Funktionen \\(f\\) ges av \\(f(x)=3x^2\\). Förenkla \\(f(x+h)-f(x)\\).', 'E', 2,
          'Utveckla \\((x+h)^2\\) först och multiplicera sedan med 3.')
-    uppg('1.1133', 'f', 'x', 2, 3, 0, 'Funktionen \\(f\\) ges av \\(f(x)=2x^2+3x\\). Förenkla \\(f(x+h)-f(x)\\).', 'E', 2,
+    uppg('1.1133', 'f', 'x', 2, 3, 0, 'Funktionen \\(f\\) ges av \\(f(x)=2x^2+3x\\). Förenkla \\(f(x+h)-f(x)\\).', 'E', 3,
          'Ersätt \\(x\\) med \\(x+h\\) i båda termerna. Vilka termer tar ut varandra när du drar bort \\(f(x)\\)?')
     uppg('1.1134', 'f', 'x', 1, -5, 0, 'För funktionen \\(f(x)=x^2-5x\\) ska \\(f(x+h)-f(x)\\) förenklas. Skriv uttrycket '
-         'utan parenteser.', 'E', 2, 'Skriv \\(f(x+h)=(x+h)^2-5(x+h)\\) och utveckla.')
-    uppg('1.1135', 'p', 'x', 1, 4, 7, 'Polynomet \\(p(x)=x^2+4x+7\\) är givet. Förenkla \\(p(x+h)-p(x)\\).', 'E', 2,
+         'utan parenteser.', 'E', 3, 'Skriv \\(f(x+h)=(x+h)^2-5(x+h)\\) och utveckla.')
+    uppg('1.1135', 'p', 'x', 1, 4, 7, 'Polynomet \\(p(x)=x^2+4x+7\\) är givet. Förenkla \\(p(x+h)-p(x)\\).', 'E', 3,
          'Konstanten 7 finns i både \\(p(x+h)\\) och \\(p(x)\\). Vad händer med den?')
-    uppg('1.1136', 's', 't', 5, -1, 0, 'Ett föremål har läget \\(s(t)=5t^2-t\\). Förenkla \\(s(t+h)-s(t)\\).', 'E', 2,
+    uppg('1.1136', 's', 't', 5, -1, 0, 'Ett föremål har läget \\(s(t)=5t^2-t\\). Förenkla \\(s(t+h)-s(t)\\).', 'E', 3,
          'Byt \\(t\\) mot \\(t+h\\) och utveckla \\((t+h)^2\\).')
-    uppg('1.1137', 'f', 'x', -1, 0, 6, 'Funktionen \\(f\\) ges av \\(f(x)=6-x^2\\). Förenkla \\(f(x+h)-f(x)\\).', 'E', 2,
+    uppg('1.1137', 'f', 'x', -1, 0, 6, 'Funktionen \\(f\\) ges av \\(f(x)=6-x^2\\). Förenkla \\(f(x+h)-f(x)\\).', 'E', 3,
          'Minustecknet framför \\((x+h)^2\\) gäller alla tre termerna när du utvecklar.')
     uppg('1.1138', 'f', 'x', -1, 6, 0, 'Förenkla \\(f(x+h)-f(x)\\) för \\(f(x)=-x^2+6x\\).', 'C', 3,
          'Utveckla \\(-(x+h)^2\\) med en parentes runt kvadraten, så att tecknen blir rätt.')
@@ -179,14 +179,14 @@ def bygg():
          'alla termer.')
     uppg('1.1140', 'f', 'x', Fr(1, 2), 2, 0, 'Låt \\(f(x)=0{,}5x^2+2x\\). Förenkla \\(f(x+h)-f(x)\\).', 'C', 3,
          'Halva av \\(2xh\\) är \\(xh\\). Utveckla \\((x+h)^2\\) och multiplicera med 0,5.')
-    uppg('1.1141', 'f', 'x', 1, 3, 0, 'Funktionen \\(f\\) ges av \\(f(x)=x^2+3x\\). Förenkla \\(f(2+h)-f(2)\\).', 'E', 2,
+    uppg('1.1141', 'f', 'x', 1, 3, 0, 'Funktionen \\(f\\) ges av \\(f(x)=x^2+3x\\). Förenkla \\(f(2+h)-f(2)\\).', 'E', 3,
          'Räkna ut \\(f(2)\\) som ett tal. Sätt sedan in \\(2+h\\) och utveckla.', punkt=2)
-    uppg('1.1142', 'g', 'x', 2, -1, 4, 'För \\(g(x)=2x^2-x+4\\), förenkla \\(g(a+h)-g(a)\\).', 'E', 2,
+    uppg('1.1142', 'g', 'x', 2, -1, 4, 'För \\(g(x)=2x^2-x+4\\), förenkla \\(g(a+h)-g(a)\\).', 'E', 3,
          'Gör som med \\(x+h\\), men med bokstaven \\(a\\) i stället för \\(x\\).', arg='a')
     uppg('1.1143', 'f', 'x', 4, -3, 0, 'Funktionen \\(f\\) ges av \\(f(x)=4x^2-3x\\). Förenkla ändringskvoten '
          '\\(\\dfrac{f(x+h)-f(x)}{h}\\). Anta att \\(h\\ne0\\).', 'C', 3,
          'Förenkla först täljaren \\(f(x+h)-f(x)\\). Alla termer som blir kvar innehåller \\(h\\).', kvot=True)
-    uppg('1.1144', 'f', 'x', 1, -2, 5, 'Skriv \\(f(x+h)-f(x)\\) utan parenteser när \\(f(x)=x^2-2x+5\\).', 'E', 2,
+    uppg('1.1144', 'f', 'x', 1, -2, 5, 'Skriv \\(f(x+h)-f(x)\\) utan parenteser när \\(f(x)=x^2-2x+5\\).', 'E', 3,
          'Vilka termer finns i både \\(f(x+h)\\) och \\(f(x)\\)?')
 
 
