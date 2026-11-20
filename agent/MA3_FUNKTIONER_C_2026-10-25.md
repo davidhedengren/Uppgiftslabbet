@@ -83,7 +83,7 @@ Inga rapportstatusar eller kommentarer har skrivits till databasen.
 
 ## Förberedelse för derivatans definition, 20 november 2026
 
-Lärarens tre referensbilder ligger till grund för tolv nyskrivna uppgifter i Ma3c, kapitel 1, Funktioner. Träningsnivån avser den matematik eleven utför.
+Lärarens tre referensbilder ligger till grund för fjorton nyskrivna uppgifter i Ma3c, kapitel 1, Funktioner. Träningsnivån avser den matematik eleven utför.
 
 | Uppgift | Nivå | Vad eleven gör |
 | --- | --- | --- |
@@ -111,3 +111,17 @@ Efter genomgång av alla frågor i området har 16 tidigare spelbara uppgifter f
 - Förkortning av rationella uttryck, rotvillkor, absolutbelopp och rotekvationer: 1.951, 1.961, 1.962, 1.964.
 
 Urvalet gäller området Funktioner. En värdetabell som används för att jämföra förändringar hör fortfarande hemma här. Enkla insättningsuppgifter med funktionsnotation finns på nivå 1. Bokuppslagets öppna resonemang har en motsvarighet i 1.1112 på lärarbladet.
+
+### Andra bokomgången, 1.1115–1.1128
+
+Alla fjorton uppgifterna finns i lärarbanken och kan tränas i Kunskapsgymmet. De använder befintliga familjer och kan lösas utan digitala verktyg.
+
+| Uppgifter | Innehåll |
+| --- | --- |
+| 1.1115–1.1117 | Lös en ekvation ur en graf, fyll i argument och funktionsvärde i en tabell och skilj mellan att dubblera ett argument och att dubblera ett värde. |
+| 1.1118–1.1120 | Läs av definitions- och värdemängd med en öppen ändpunkt, jämför en parabel med en linje och använd ett känt värde för att bestämma en förskjutning. |
+| 1.1121–1.1123 | Bestäm ett saknat tabellvärde på olika långa intervall, utveckla en symmetrisk differens och jämför två sekanters lutningar. |
+| 1.1124–1.1126 | Förenkla en rationell ändringskvot med givna definitionsvillkor, bestäm en kubisk funktions sekantlutning och dess gränsvärde samt härled en exakt gräns för steglängden. |
+| 1.1127–1.1128 | Matcha ett gränsvärde mot en linjes lutning och konstruera två parabler från gemensamma villkor för funktionsvärde och ändringskvot. |
+
+Fem frågefigurer och två värdetabeller ingår. Rättningen skiljer öppna från slutna intervall, kräver förkortning i 1.1124 och godtar likvärdiga polynomformer i den avslutande konstruktionsuppgiften. I 1.1126 krävs den exakta gränsen; både 0,05 och 1/20 är giltiga.

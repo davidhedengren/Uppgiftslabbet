@@ -77,3 +77,50 @@ test('de pausade uppgifterna finns kvar på lärarbladet och de nya funktionssam
   assert.equal(answer(1113),'-3/2');
   assert.equal(answer(1114),[-1,1,3].reduce((y,a)=>y+2*a+1,4));
 });
+
+test('andra bokomgångens grafer, tabeller och numeriska svar', () => {
+  const ids=Array.from({length:14},(_,i)=>1115+i);
+  for(const n of ids){
+    assert.equal(task(n).omr,'funktioner');
+    assert.equal(task(n).spel,true);
+    assert.equal(task(n).självrättning,true);
+  }
+  const f=x=>4-(x-1)**2;
+  assert.deepEqual(answer(1115),[-1,3]);
+  for (const x of answer(1115)) assert.equal(f(x),f(1)-4);
+  const [A,B]=answer(1116), cube=t=>t**3-2;
+  assert.equal(A,cube(-2)); assert.equal(cube(B),25);
+  assert.deepEqual(answer(1118),['-3<x<=2','-2<=y<=1']);
+  assert.equal(answer(1119),'-1<x<2');
+  for(const x of [-2,-1,0,1,2,3]) assert.equal(4-x*x>2-x, x> -1 && x<2);
+  assert.equal(answer(1120),2*5-(2*9-1));
+  const middle=answer(1121);
+  assert.equal((middle+4)/3,(10-middle)/4);
+});
+
+test('ändringskvoter och konstruktioner verifieras mot de givna funktionerna', () => {
+  function expr(source, vars) {
+    assert.match(source,/^[\daxh^*/+().\s-]+$/);
+    const js=source.replace(/([\dah])(?=[axh])/g,'$1*').replaceAll('^','**').replace(/^-x\*\*2/,'-(x**2)');
+    return vm.runInNewContext(js,vars);
+  }
+  const p=x=>3*x*x-2*x+1, f=x=>4*x-x*x;
+  for(const a of [-2,0,.5,3]) for(const h of [-1,-.25,.5,2]){
+    assert.equal(expr(answer(1117),{a}),3*(2*a)+1-2*(a*a-1));
+    assert.equal(expr(answer(1122),{a,h}),p(a+h)-p(a-h));
+    assert.ok(Math.abs(expr(answer(1124),{h})-(6/(2+h)-3)/h)<1e-12);
+    assert.equal(expr(answer(1125)[0],{h}),((h-1)**3+1)/h);
+    assert.equal(((f(3+h)-f(3))/h+(f(3-h)-f(3))/(-h))/2,answer(1123));
+  }
+  assert.equal(answer(1125)[1],3);
+  assert.equal(2*answer(1126),.1);
+  assert.ok(task(1126).tolerans<.001);
+  const a=expr(answer(1127),{});
+  assert.equal(2*a+1,(4-(-2))/(2-(-1)));
+  answer(1128).forEach((s,i)=>{
+    const fun=x=>expr(s,{x});
+    assert.equal(fun(2),0);
+    assert.equal((fun(4)-fun(0))/4,3);
+    assert.equal((fun(1)+fun(-1)-2*fun(0))/2,i===0?1:-1);
+  });
+});

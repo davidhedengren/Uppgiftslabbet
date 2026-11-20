@@ -3832,3 +3832,5 @@ Läraren vill tills vidare begränsa Kunskapsgymmets träning i Funktioner till 
 ## Fy1 kopplade klossar och häftet om Newtons andra lag, 2026-11-20
 
 [Häfte och 26 nya uppgifter](FY1_KOPPLADE_KLOSSAR_2026-11-20.md). Lärarens gamla facit till ”Färdighetsträning – Newtons andra lag” hade fel i 12 av 15 uppgifter och blandade g = 9,82 och g = 10. Använd det nya facit (g = 9,82 m/s²) i `material/fysik1/`. Uppgifterna i banken (4.979–4.1004, delmomentet ”Kopplade klossar med snören och trissor”) är fristående och anger alla massor i kg. Figurer och friläggningar ritas med `tools/newton2_klossar.py`.
+
+Ma3c 1.1126 kräver ett exakt gränsvärde för steglängden. Fri avrundning av tal får annars 0,1 att godtas för 0,05 trots att steget blir för stort. Frågan anger nu att gränsen ska bestämmas exakt. Se [andra bokomgången i Funktioner](MA3_FUNKTIONER_C_2026-10-25.md).
