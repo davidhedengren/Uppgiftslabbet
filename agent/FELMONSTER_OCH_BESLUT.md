@@ -3818,3 +3818,7 @@ För exakt två träffar på tre oberoende straffkast med träffsannolikhet 0,70
 ## Fysik 1, kraftkapitlets bilder, 2026-11-20
 
 Läraren vill behålla originalfotot i bänkpressuppgiften 4.191 och har tagit bort uppgift 4.514 om biceps och en bok. I vägguppgifterna 4.146 och 4.816 ska kontakten mellan föremålet och handen vara lätt att läsa. Markera tryckpunkten när eleven ska rita krafterna själv, och rita den givna kraften när den behövs i frågan. Se [granskningen av kraftkapitlets bilder](FY1_KAP4_FIGURER_2026-11-19.md).
+
+## Felrapporter 2026-11-20 08:05: grundpotensform i omvandlingar, a/b som förhållande, radianer
+
+[Elva rapporter och åtgärder](FELRAPPORTER_2026-11-20_0805.md). Enhets- och prefixbyten i Ma1 rättas med formatet `omvandling`: målenheten krävs men grundpotensform godtas (`decimalform` behålls bara där decimalformen är det som tränas eller `kgInstruktion` ber om vanligt tal). Ett förhållande a:b godtas som a/b med samma tal. Periodfrågor i `kurvor_radianer` säger ”i radianer”. Sidlängder och andra utbytbara svarspar rättas som `mängd`. `rättSvarAlternativ` läses inte av Kunskapsgymmet; lägg inte alternativ där i tron att de godtas.
