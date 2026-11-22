@@ -13,5 +13,6 @@ for(const f of ['uppgifterma2.js','uppgiftermatf1.js'])test(`${f}: ingen matemat
 test('Matf1: de rättade ledtrådarna',()=>{
   const B=bank('uppgiftermatf1.js'),g=id=>B.find(q=>q.id===id).ledtrad;
   assert.ok(g('2.28').includes(String.raw`\(a\equiv b\pmod n\)`));assert.ok(g('1.127').includes(String.raw`\(x\)`));
-  for(const id of ['1.35','1.102','1.226'])assert.ok(g(id).includes(String.raw`exakt \(k\)`),id);
+  // Ledtrådarna skrevs om för hand 2026-11-22; kontrollen gäller nu att ingen variabel står utan avgränsare.
+  for(const id of ['1.35','1.102','1.226'])assert.ok(!/exakt k\b/.test(g(id)),id);
 });
