@@ -65,7 +65,13 @@ def main():
         # Återanvänd figur nr n (span.fig eller div.fig med svg) ur uppgiftens nuvarande facit
         m = list(re.finditer(r'<(span|div) class="fig[^"]*">\s*<svg[\s\S]*?</svg>\s*</\1>', b.obj(id_)['s']))
         return m[n].group(0)
-    ns = {'FIG': FIG}
+
+    def TAB(id_, n=0):
+        # Återanvänd tabell nr n ur uppgiftens nuvarande facit (med eventuell omslutande div)
+        s = b.obj(id_)['s']
+        m = list(re.finditer(r'(?:<div class="[^"]*tabell[^"]*">\s*)?<table[\s\S]*?</table>(?:\s*</div>)?', s))
+        return m[n].group(0)
+    ns = {'FIG': FIG, 'TAB': TAB}
     exec(open(skript, encoding='utf-8').read(), ns)
     F = ns['F']
     n = 0
