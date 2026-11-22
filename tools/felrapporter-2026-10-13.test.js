@@ -36,7 +36,7 @@ test('Kurvfrågor är fullständiga och deras svar stämmer med funktionerna',()
 test('Fem kontinuitetsvarianter ger olika algebraiska gränsvärden',()=>{
  const cases=[['1.518',2,x=>(x*x+x-6)/(x-2),5],['3.57',2,x=>(3*x-6)/(x-2),3],['3.799',2,x=>(x**3-8)/(x-2),12],['1.523',3,x=>(x*x-9)/(2*x-6),3],['3.812',-3,x=>(x*x-9)/(x+3),-6]];
  for(const [id,x,f,expected]of cases){assert.equal(b.mato1.get(id).rättSvar,expected);for(const h of [-1e-5,1e-5])assert.ok(Math.abs(f(x+h)-expected)<.0001,id);}
- assert.equal(b.mato1.get('3.799').traningsniva,3);assert.equal(b.mato1.get('3.799').niva,'C');assert.equal(b.mato1.get('1.99').rättSvar,4);
+ /* Lärarrapport 2026-11-22: x³−8 ligger utanför kursen på nivå 3; nu A, träningsnivå 5 med ansats (felrapporter-2026-11-22-1935). */assert.equal(b.mato1.get('3.799').traningsniva,5);assert.equal(b.mato1.get('3.799').niva,'A');assert.equal(b.mato1.get('1.99').rättSvar,4);
  assert.doesNotMatch(b.mato1.get('4.495').t,/cos0/);assert.equal(b.mato1.get('4.495').rättSvar,0);
 });
 test('Vinkelräta linjer måste också passera den givna punkten',()=>{
