@@ -1,0 +1,136 @@
+# Ma4 radianer, cirkelsektor, derivatans tillämpningar, förändringshastigheter och grafer: egna ledtrådar (2026-11-22).
+RAD = r"\(180^\circ=\pi\) rad. Från grader till radianer multiplicerar du med \(\pi/180^\circ\), åt andra hållet med \(180^\circ/\pi\)."
+BAGE = r"Med vinkeln v i radianer är båglängden \(b=rv\)."
+SEKT = r"Med vinkeln v i radianer är sektorns area \(A=\frac{r^2v}{2}\)."
+BOTH = BAGE + r" Sektorns area är \(A=\frac{r^2v}{2}\)."
+KEDJT = r"Skriv sambandet mellan storheterna och derivera båda leden med avseende på tiden. Sätt in de givna värdena först efter deriveringen."
+CIRK = r"Arean är \(A=\pi r^2\). Derivera med avseende på tiden: \(\frac{dA}{dt}=2\pi r\frac{dr}{dt}\)."
+KLOT = r"Volymen är \(V=\frac{4\pi r^3}{3}\). Derivera med avseende på tiden: \(\frac{dV}{dt}=4\pi r^2\frac{dr}{dt}\)."
+KUB = r"Volymen är \(V=s^3\). Derivera med avseende på tiden: \(\frac{dV}{dt}=3s^2\frac{ds}{dt}\)."
+CYL = r"Volymen är \(V=\pi r^2h\) med konstant h. Derivera med avseende på tiden."
+KVAD = r"Arean är \(A=s^2\). Derivera med avseende på tiden."
+OPT = r"Skriv storheten som en funktion av en variabel, derivera och sätt derivatan lika med 0. Kontrollera att det är ett maximum eller minimum."
+LADA = r"Lådans volym är \(V(x)=x(30-2x)(20-2x)\). Derivera och sätt \(V'(x)=0\). Vilket x är möjligt?"
+OMKR = r"Skriv den andra sidan med hjälp av omkretsen. Arean blir då en andragradsfunktion av x."
+PARAB = r"Rektangelns area är bredden gånger höjden, där höjden är \(12-x^2\). Derivera och sätt derivatan lika med 0."
+TANG = r"Bestäm punkten och derivatans värde där. Tangenten är \(y-y_1=k(x-x_1)\)."
+FPRIM = r"f växer där \(f'(x)>0\) och avtar där \(f'(x)<0\). Där \(f'\) byter tecken från plus till minus har f ett maximum, och från minus till plus ett minimum."
+TECKEN = r"Derivera, sätt \(f'(x)=0\) och gör en teckentabell för att avgöra typen."
+SAKNAR = r"Grafen saknar extrempunkter om \(f'(x)\) aldrig byter tecken. Derivatan är ett andragradsuttryck. När saknar det två olika nollställen?"
+L = {
+    # ---------- radianer ----------
+    '1.27': RAD, '1.449': RAD, '1.114': RAD, '1.459': RAD, '1.166': RAD, '1.171': RAD,
+    '1.259': RAD, '1.260': RAD, '1.261': RAD, '1.262': RAD, '1.280': RAD, '1.286': RAD,
+    # ---------- cirkelsektor ----------
+    '1.86': BOTH, '1.124': BOTH + r" I c) löser du ut v ur \(b=rv\).", '1.167': BOTH, '1.172': BOTH,
+    '1.464': BAGE,
+    '1.264': SEKT + r" Lös ut v.",
+    '1.470': SEKT,
+    '1.287': r"Vinkeln är \(v=b/r\). Arean är sedan \(A=\frac{r^2v}{2}\).",
+    '1.474': r"Ett varv är omkretsen \(2\pi r\). Farten är sträckan delad med tiden.",
+    '1.306': BAGE,
+    '1.307': SEKT + r" Lös ut v.",
+    '1.319': BAGE,
+    '1.477': r"En radian definieras som den vinkel där båglängden är lika med radien.",
+    '1.324': SEKT,
+    '1.478': r"Båglängden \(b=rv\) och arean \(A=\frac{r^2v}{2}\) är båda proportionella mot v när r är densamma.",
+    # ---------- förändringshastigheter ----------
+    '2.19': r"Rita den rätvinkliga triangeln med lasern, väggen och avståndet L. Sträckan längs väggen är \(L\tan v\). Derivera med avseende på tiden.",
+    '2.26': CIRK,
+    '2.74': KUB,
+    '2.100': KLOT,
+    '2.125': KLOT,
+    '2.456': CYL,
+    '2.179': CIRK,
+    '2.180': CIRK + r" Lös ut \(dr/dt\).",
+    '2.181': KLOT,
+    '2.182': r"Klotets yta är \(A=4\pi r^2\). Derivera med avseende på tiden och lös ut \(dr/dt\).",
+    '2.183': KUB,
+    '2.184': KVAD + r" \(\frac{dA}{dt}=\frac{dA}{ds}\cdot\frac{ds}{dt}\).",
+    '2.185': CYL + r" Tänk på enheterna: radien ökar i cm/min men höjden är i m.",
+    '2.186': r"Skriv konens volym med bara r, eftersom \(h=3r\). Derivera med avseende på tiden och lös ut \(dr/dt\).",
+    '2.187': CIRK,
+    '2.188': r"Omkretsen är \(O=2\pi r\), så \(\frac{dO}{dt}=2\pi\frac{dr}{dt}\). Använd sedan \(\frac{dA}{dt}=2\pi r\frac{dr}{dt}\).",
+    '2.206': CIRK,
+    '2.211': KLOT,
+    '2.212': CYL + r" Lös ut \(dr/dt\).",
+    '2.221': KVAD,
+    '2.458': r"Derivera \(x^2+y^2=25\) med avseende på tiden: \(2x\frac{dx}{dt}+2y\frac{dy}{dt}=0\). Bestäm y när \(x=3\).",
+    '2.222': CIRK + r" Lös ut \(dr/dt\).",
+    '2.223': r"Skriv volymen med bara r, eftersom \(h=2r\). Derivera med avseende på tiden.",
+    '2.231': CIRK + r" Lös ut \(dr/dt\).",
+    '2.237': r"Skriv konens volym med bara h, eftersom \(r=h/2\). Derivera med avseende på tiden och lös ut \(dh/dt\).",
+    '2.248': KLOT,
+    '2.249': KLOT + r" Lös ut \(dr/dt\).",
+    '2.250': r"Kvadratens area är \(A=D^2/2\), uttryckt med diagonalen. Derivera med avseende på tiden.",
+    '2.258': CYL,
+    '2.259': r"Använd \(\frac{dA}{dt}=2\pi r\frac{dr}{dt}\) för att bestämma \(dr/dt\). Omkretsen ändras med \(2\pi\frac{dr}{dt}\).",
+    # ---------- derivatans tillämpningar ----------
+    '2.11': TANG + r" Tangentens skärningspunkter med axlarna ger triangelns kateter.",
+    '2.12': PARAB,
+    '2.20': r"Låt x vara avståndet längs väggen från ena fotpunkten. Skriv den totala sträckan med Pythagoras sats och minimera den.",
+    '2.22': r"Med de övre hörnen i \((\pm x,\,12-x^2)\) är arean \(2x(12-x^2)\). Derivera och sätt derivatan lika med 0.",
+    '2.23': r"Parallell med \(y=5x-7\) betyder att \(f'(1)=5\). Derivera och lös ut a.",
+    '2.44': r"Avståndet i kvadrat från \((0,3)\) till \((x,x^2)\) är \(x^2+(x^2-3)^2\). Minimera det uttrycket.",
+    '2.45': r"Volymen ger \(h=\frac{1000}{\pi r^2}\). Sätt in det i arean, derivera och sätt \(S'(r)=0\).",
+    '2.58': r"Derivera med produkt- och kedjeregeln och sätt \(P'(v)=0\). Jämför med ändpunkterna.",
+    '2.269': r"Skriv tvärsnittsarean som en funktion av v och derivera. Sätt derivatan lika med 0.",
+    '2.66': r"Låt x vara avståndet från A till L. Skriv den totala kostnaden eller sträckan som funktion av x och minimera.",
+    '2.455': OMKR,
+    '2.76': TANG,
+    '2.83': TECKEN,
+    '2.84': r"Lådans volym är \(V(x)=x(32-2x)(22-2x)\). Derivera och sätt \(V'(x)=0\). Vilket x är möjligt?",
+    '2.88': r"Maximum vid \(x=4\) betyder att \(f'(4)=0\), vilket ger b. Sätt sedan \(f(4)=12\) för att bestämma a.",
+    '2.97': r"Derivera med produktregeln och sätt \(M'(t)=0\).",
+    '2.119': r"Sidan längs ån blir \(180-2x\). Arean är \(x(180-2x)\). Derivera och sätt derivatan lika med 0.",
+    '2.121': LADA,
+    '2.270': r"Volymen 120 liter ger höjden uttryckt i x. Glasytan är botten plus fyra sidor. Derivera och sätt derivatan lika med 0.",
+    '2.124': r"Låt den tryckta ytan ha bredden x, så att höjden är \(384/x\). Hela affischens area är \((x+4)(384/x+6)\). Minimera den.",
+    '2.129': TECKEN,
+    '2.130': TANG + r" Derivera med produktregeln.",
+    '2.131': LADA,
+    '2.138': r"Med de övre hörnen i \((\pm x,\,12-x^2)\) är arean \(2x(12-x^2)\). Derivera och sätt derivatan lika med 0.",
+    '2.139': OMKR,
+    '2.173': OMKR + r" Vilket x ger det största värdet?",
+    '2.271': r"Låt x vara sträckan längs stranden som livräddaren springer. Tiden är sträckan på land delad med 4,0 plus sträckan i vattnet delad med simfarten. Minimera tiden.",
+    '2.457': LADA,
+    '2.204': r"Sidan längs muren blir \(80-2x\). Arean är \(x(80-2x)\). Derivera och sätt derivatan lika med 0.",
+    '2.205': LADA,
+    '2.272': r"Derivera och sätt \(C'(t)=0\). Då får du \(0{,}15e^{-0{,}15t}=0{,}80e^{-0{,}80t}\), som du löser med logaritmer.",
+    '2.224': r"Den andra sidan är \(100/x\). Skriv omkretsen som funktion av x och minimera den.",
+    '2.233': r"Den yttre kanten är \(2h+2r+\pi r=8{,}0\). Lös ut h och skriv fönstrets area som funktion av r. Maximera arean.",
+    '2.234': TANG,
+    '2.273': r"Derivera med produktregeln och sätt \(P'(t)=0\). Jämför med värdena i ändpunkterna.",
+    '2.242': r"Derivera med produktregeln och sätt \(C'(t)=0\).",
+    '2.244': r"Låt bredden vara x och höjden \(12/x\). Kostnaden är \(2\cdot2x+2\cdot\frac{12}{x}\) gånger priset per meter. Minimera.",
+    '2.459': r"Den andra sidan är \(48/x\). Skriv omkretsen som funktion av x, minimera och kontrollera med en teckentabell.",
+    '2.251': r"Volymen 1,0 liter = 1 000 cm³ ger h uttryckt i r. Sätt in i den totala arean och minimera.",
+    '2.252': r"Lådans volym är \(V(x)=x(30-2x)^2\). Derivera och sätt \(V'(x)=0\).",
+    '2.260': r"Rektangelns area är \(x(12-x^2)\). Derivera och sätt derivatan lika med 0.",
+    '2.404': TANG + r" Sätt sedan \(x=0\).",
+    '2.405': r"Tangenten skär x-axeln där \(y=0\).",
+    '2.406': r"Derivatan av \(\ln x\) är \(1/x\).",
+    # ---------- grafer och derivator ----------
+    '2.01': SAKNAR, '2.39': SAKNAR, '2.226': SAKNAR,
+    '2.02': FPRIM, '2.42': FPRIM, '2.60': FPRIM, '2.77': FPRIM, '2.106': FPRIM, '2.240': FPRIM,
+    '2.16': TECKEN,
+    '2.21': r"\(f'(x)=3x^2-3a\). Hur många nollställen har derivatan när \(a>0\), \(a=0\) och \(a<0\)?",
+    '2.41': FPRIM + r" Arean under \(f'\) visar hur mycket f ändras.",
+    '2.51': r"Asymptoterna är \(x=2\) och \(y=2x-1\). Derivera och sätt \(f'(x)=0\) för att hitta extrempunkterna.",
+    '2.62': r"Där grafen stiger är \(f'(x)>0\), där den faller är \(f'(x)<0\), och vid toppar och dalar är \(f'(x)=0\).",
+    '2.64': TECKEN + r" Minimipunkten ligger där \(x=a\).",
+    '2.68': TECKEN,
+    '2.90': r"Gör en teckentabell för \((x-1)(x+3)\).",
+    '2.96': TECKEN,
+    '2.99': TECKEN,
+    '2.137': r"Tangentens lutning är \(f'(x_P)\). Lutar den uppåt eller nedåt?",
+    '2.158': r"Derivera två gånger. Gör sedan en teckentabell för \(f''(x)\).",
+    '2.160': r"Derivera med produktregeln och bryt ut \(-e^{-x}\). Vilket tecken har det som blir kvar?",
+    '2.199': TECKEN,
+    '2.201': TECKEN,
+    '2.202': r"\(f'(x)=3x^2-3a\). Hur många nollställen har derivatan när \(a>0\), \(a=0\) och \(a<0\)?",
+    '2.213': TECKEN,
+    '2.219': TECKEN,
+    '2.245': r"Derivera och sätt \(f'(x)=0\). Minimum ligger vid \(x=\sqrt a\). Sätt minsta värdet lika med 10.",
+    '2.253': r"Gör en teckentabell för \((x-1)(x-4)\).",
+}
