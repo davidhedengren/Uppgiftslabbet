@@ -2,7 +2,7 @@
 
 Användning: python tools/sprak/facitsteg.py <bank> <skript.py> [--skriv]
 Skriptet definierar F = {id: FACIT} eller F = {id: {'': FACIT, 'a': FACIT, …}} där
-FACIT = (steg, svar) och steg = [(rubrik, matte), …] eller [(rubrik, matte, text), …].
+FACIT = (steg, svar) och steg = [(rubrik, matte), …], [(rubrik, matte, text), …] eller [(rubrik, matte, text, html), …].
 - rubrik: specifik rubrik för steget (facit-rubrik), gärna med formeln utskriven
 - matte: LaTeX utan \\[ \\] (blir en facit-matte), eller None
 - text: valfri förklarande mening (blir <p>) före matematiken; FIG(id, n) ger figur nr n ur uppgiftens nuvarande facit
@@ -25,6 +25,8 @@ def html(facit):
             delar.append(f'<p>{text}</p>')
         if matte:
             delar.append(f'<div class="facit-matte">\\[{matte}\\]</div>')
+        if len(s) > 3 and s[3]:
+            delar.append(s[3])  # färdig HTML, till exempel en figur från FIG()
         li.append('<li>' + ''.join(delar) + '</li>')
     return ('<div class="facit-v2 facit-stegvis"><ol class="facit-steglista" role="list">' + ''.join(li) +
             f'</ol><p class="facit-svar"><strong>Svar:</strong> {svar}</p></div>')
@@ -60,8 +62,9 @@ def main():
     b = Bank(kod)
 
     def FIG(id_, n=0):
-        # Återanvänd figur nr n (span.fig med svg) ur uppgiftens nuvarande facit
-        return re.findall(r'<span class="fig[^"]*">\s*<svg[\s\S]*?</svg>\s*</span>', b.obj(id_)['s'])[n]
+        # Återanvänd figur nr n (span.fig eller div.fig med svg) ur uppgiftens nuvarande facit
+        m = list(re.finditer(r'<(span|div) class="fig[^"]*">\s*<svg[\s\S]*?</svg>\s*</\1>', b.obj(id_)['s']))
+        return m[n].group(0)
     ns = {'FIG': FIG}
     exec(open(skript, encoding='utf-8').read(), ns)
     F = ns['F']

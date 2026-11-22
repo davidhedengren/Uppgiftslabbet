@@ -65,7 +65,7 @@ F = {
     '1.142': ([(r"Rektangelns omkrets: två längder och två bredder", r"2(x+4)+2x"), (MULTIN, r"2x+8+2x=4x+8")], r"\(4x+8\) cm"),
     '1.430': ([('Längden är 3 cm mer än dubbla bredden', r"l=2b+3"), (r"Omkrets: \(O=2b+2l\)", r"2b+2(2b+3)=2b+4b+6=6b+6")], r"\(6b+6\) cm"),
     '1.404': ([('Skriv operationerna i ordning', r"3(x-4)"), (MULTIN, r"3x-12")], r"\(3x-12\)"),
-    '1.1136': ett(MULTIN, r"4(x+5)=4\cdot x+4\cdot5=4x+20", r"\(4x+20\)"),
+    '1.1136': ([(MULTIN, r"4(x+5)=4\cdot x+4\cdot5=4x+20", 'Figuren visar en rektangel med höjden 4 och bredden x + 5. De två delarna har areorna 4x och 20.', FIG('1.1136'))], r"\(4x+20\)"),
     '1.1137': ett(MULTIN, r"6(a-2)=6\cdot a-6\cdot2=6a-12", r"\(6a-12\)"),
     '1.1139': ett(MULTIN, r"5(1-2x)=5\cdot1-5\cdot2x=5-10x", r"\(5-10x\)"),
     '1.1141': ett(MULTIN, r"-3(x+4)=(-3)\cdot x+(-3)\cdot4=-3x-12", r"\(-3x-12\)"),
