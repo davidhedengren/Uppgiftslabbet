@@ -1,0 +1,73 @@
+# Ma4 skivmetoden: egna ledtrådar (2026-11-22).
+SKIVA = r"Varje tvärsnitt är en cirkelskiva med radien \(y\). Volymen är \(\pi\int_a^by^2\,dx\)."
+BRICKA = r"Tvärsnitten är brickor. Volymen är \(\pi\int_a^b(R^2-r^2)\,dx\), där R är ytterradien och r innerradien."
+YAXEL = r"Vid rotation kring y-axeln är skivans radie x. Lös ut x som funktion av y, så blir \(g(y)=x^2\)."
+NUM = r" Integralen beräknas numeriskt."
+
+
+def bricka(R, r):
+    return rf"Tvärsnitten är brickor med ytterradien \({R}\) och innerradien \({r}\). Volymen är \(\pi\int(R^2-r^2)\,dx\)."
+
+
+L = {
+    '3.21': bricka('2', 'x'),
+    '3.28': SKIVA,
+    '3.42': r"Lägg klotets medelpunkt i origo. Tvärsnitten vinkelrätt mot x-axeln är cirklar med radien \(\sqrt{25-x^2}\). Integrera från 3 till 5.",
+    '3.429': SKIVA,
+    '3.46': BRICKA,
+    '3.49': r"Vilken kurva ligger överst på \(0\le x\le1\)? Den ger ytterradien och den andra innerradien.",
+    '3.52': r"Avståndet från kurvan till rotationsaxeln \(y=4\) är \(4-x^2\). Det är skivans radie.",
+    '3.430': SKIVA,
+    '3.155': YAXEL,
+    '3.249': SKIVA + NUM,
+    '3.58': r"Rotationsaxeln är \(y=5\). Ytterradien är avståndet från axeln till x-axeln och innerradien avståndet från axeln till kurvan.",
+    '3.431': SKIVA,
+    '3.59': BRICKA,
+    '3.74': SKIVA + r" Vilken kropp får du när en rät linje genom origo roteras?",
+    '3.78': r"Avståndet från kurvan till rotationsaxeln \(y=4\) är \(4-x^2\). Det är skivans radie.",
+    '3.432': SKIVA,
+    '3.101': r"Rotationsaxeln är \(y=-1\), så radierna blir \(\sqrt x+1\) och \(x/2+1\). Vilken är ytterradien?",
+    '3.107': r"Vid rotation kring y-axeln är radien x. Lös ut x ur båda kurvorna och avgör vilken som ligger längst från y-axeln.",
+    '3.433': SKIVA,
+    '3.250': SKIVA + NUM,
+    '3.108': r"Rotationsaxeln är \(y=5\). Ytterradien är avståndet från axeln till parabeln och innerradien avståndet till linjen \(y=4\).",
+    '3.111': SKIVA + r" Här är \(y^2=x\).",
+    '3.434': bricka('2', 'x'),
+    '3.113': SKIVA + r" Här är \(y^2=x^4\).",
+    '3.152': YAXEL,
+    '3.153': YAXEL,
+    '3.435': SKIVA + r" Här är \(y^2=x\).",
+    '3.116': SKIVA + r" I c) blir kroppen en cylinder.",
+    '3.122': r"Rotationsaxeln är \(y=3\). Ytterradien är avståndet från axeln till x-axeln och innerradien avståndet från axeln till linjen \(y=x\).",
+    '3.251': r"Var skär \(y=\sin x\) linjen \(y=0{,}3\)? Mellan skärningspunkterna är tvärsnitten brickor med radierna \(\sin x\) och 0,3." + NUM,
+    '3.436': SKIVA + r" Här är \(y^2=x^4\).",
+    '3.124': bricka('2x', 'x'),
+    '3.151': YAXEL,
+    '3.154': YAXEL,
+    '3.437': bricka('3', '1'),
+    '3.126': r"Rotationsaxeln är \(y=3\). Ytterradien är avståndet till x-axeln och innerradien avståndet till kurvan, \(3-\sqrt x\).",
+    '3.127': r"Tvärsnitten vinkelrätt mot y-axeln är brickor med radierna \(3\pm\sqrt{1-y^2}\). Integralen av \(\sqrt{1-y^2}\) kan tolkas som en halvcirkels area.",
+    '3.156': SKIVA,
+    '3.438': SKIVA + r" Skriv \(\sin^2x\) med formeln för dubbla vinkeln.",
+    '3.164': r"Vid rotation kring y-axeln är skivans radie \(x=y^2\). Volymen är \(\pi\int_0^2x^2\,dy\).",
+    '3.252': SKIVA + NUM,
+    '3.180': SKIVA + r" Här är \(y^2=x\).",
+    '3.439': SKIVA + r" Beräkna volymen uttryckt i k och sätt den lika med \(12\pi\).",
+    '3.181': bricka('2', 'x^2'),
+    '3.186': SKIVA + r" Vilken kropp bildas?",
+    '3.440': r"Vilken kurva ligger överst på \(0\le x\le1\)? Den ger ytterradien och den andra innerradien.",
+    '3.194': SKIVA + r" Här är \(y^2=x^4\).",
+    '3.197': r"Vilken kurva ligger överst på \(0\le x\le1\)? Den ger ytterradien och den andra innerradien.",
+    '3.203': SKIVA,
+    '3.441': r"Varje tvärsnitt är en cirkel med radien \(f(x)\). Vilken area har en sådan cirkel?",
+    '3.253': r"Bestäm skärningspunkten numeriskt. Tvärsnitten är brickor med radierna \(e^{-x}\) och \(0{,}2x\)." + NUM,
+    '3.207': SKIVA + r" Här är \(y^2=x^4\).",
+    '3.208': r"Vid rotation kring y-axeln är skivans radie \(x=\sqrt y\). Volymen är \(\pi\int_0^4x^2\,dy\).",
+    '3.442': SKIVA + r" Beräkna volymen uttryckt i a och sätt den lika med \(32\pi\).",
+    '3.215': r"Kurvorna skär varandra vid \(x=0\) och \(x=4\). Vilken kurva ligger överst? Den ger ytterradien.",
+    '3.219': SKIVA + r" Vilken kropp bildas?",
+    '3.220': r"Vilken kurva ligger överst på \(0\le x\le4\)? Den ger ytterradien och den andra innerradien.",
+    '3.443': r"Varje tvärsnitt är en bricka. Vilken area har en cirkelring med ytterradien f och innerradien g?",
+    '3.228': SKIVA,
+    '3.229': r"Vid rotation kring y-axeln är skivans radie \(x=y/2\). Volymen är \(\pi\int_0^6x^2\,dy\).",
+}
