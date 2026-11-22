@@ -5,7 +5,7 @@ Skriptet definierar F = {id: FACIT} eller F = {id: {'': FACIT, 'a': FACIT, …}}
 FACIT = (steg, svar) och steg = [(rubrik, matte), …] eller [(rubrik, matte, text), …].
 - rubrik: specifik rubrik för steget (facit-rubrik), gärna med formeln utskriven
 - matte: LaTeX utan \\[ \\] (blir en facit-matte), eller None
-- text: valfri förklarande mening (blir <p>) före matematiken
+- text: valfri förklarande mening (blir <p>) före matematiken; FIG(id, n) ger figur nr n ur uppgiftens nuvarande facit
 - svar: svarsraden efter ”Svar:” (HTML/LaTeX med \\( \\))
 Delkortens facit byts bara inne i det delkortets objekt. Formatet i bankfilen bevaras.
 """
@@ -57,10 +57,14 @@ def byt(txt, start, slut, gammal, ny, id_, var):
 
 def main():
     kod, skript = sys.argv[1], sys.argv[2]
-    ns = {}
+    b = Bank(kod)
+
+    def FIG(id_, n=0):
+        # Återanvänd figur nr n (span.fig med svg) ur uppgiftens nuvarande facit
+        return re.findall(r'<span class="fig[^"]*">\s*<svg[\s\S]*?</svg>\s*</span>', b.obj(id_)['s'])[n]
+    ns = {'FIG': FIG}
     exec(open(skript, encoding='utf-8').read(), ns)
     F = ns['F']
-    b = Bank(kod)
     n = 0
     for id_, v in F.items():
         if isinstance(v, tuple):

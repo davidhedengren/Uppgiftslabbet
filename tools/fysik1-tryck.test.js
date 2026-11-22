@@ -149,7 +149,9 @@ test('Tryck: gränsvärden, fysikmodeller och delkort har tillräckliga egna dat
  for(const t of c.window.BANK.filter(t=>t.kap===6&&t.omr==='tryck')){
   if(t.spelDelar)assert.match(t.t,/<ol type="a">/);
   for(const p of [t,...(t.spelDelar||[])]){
-   assert.doesNotMatch(p.s,/<ol|facit-numero|facit-stegnummer/);
+   // Steglista enligt agent/FACITMALL.md är tillåten (korta facit 2026-11-22); gamla numreringar är det inte.
+   assert.doesNotMatch(p.s,/facit-numero|facit-stegnummer/);
+   if(/<ol/.test(p.s))assert.match(p.s,/<ol class="facit-steglista"/);
    assert.doesNotMatch(p.t+p.s,/\bformenen\b|\bstor kolven\b|\bfonografnål\b|\bP a\b|\bk g\b/);
   }
  }
