@@ -2,7 +2,7 @@
 /* Ma2 kap 3 geometri, omgång S4 2026-10-25: 43 kort 3.2053–3.2095 på nivå 1–3 i yttervinkelsatsen,
    geometriska begrepp och bevis med likformighet. */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMA2));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=Array.from({length:43},(_,i)=>`3.${2053+i}`);
 const s=id=>get(id).rättSvar;

@@ -2,7 +2,7 @@
 // Felrapporter 2026-11-16 08:53 (Ma5 2.626 c) och uppföljning av 08:16 (ledtrådar om fältkrafter i Fy2).
 // Logg: agent/FELRAPPORTER_2026-11-16_0853.md.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const las=(f,n)=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(f,'utf8'),c);return c.window[n];};
+const las=(f,n)=>{const c={window:{}};vm.runInNewContext(fs.readFileSync(f,'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);return c.window[n];};
 const fy2=las('uppgifter2.js','BANK2'),ma5=las('uppgiftermatf1.js','BANKMATF1');
 const ledtradar=u=>[u.ledtrad,...(u.spelDelar||[]).map(p=>p.ledtrad)].filter(Boolean);
 const HASTIGHETSFILTER=['3.12','3.114','4.37','4.38','4.46','4.48','4.50'];
@@ -24,6 +24,6 @@ test('Fy2: uppgifter med bara magnetfält har ingen ledtråd om elektrisk kraft 
 test('Ma5 2.626 c: facit och frågetext oförändrade (”Svara exakt” räcker)',()=>{
  const u=ma5.find(x=>x.id==='2.626'),c=u.spelDelar[2];
  a.equal(u.rättSvar[2],'3145725*pi');a.equal(3*(4**10-1),3145725);
- for(const x of [u.t,c.fraga,c.t]){a.match(x,/alla tio cirklarna\. Svara exakt\./);a.doesNotMatch(x,/alltså med/);}
+ /* 2026-11-23: Kunskapsgymmet lägger kgInstruktion i delkortets t, inte i fraga */for(const x of [u.t,c.t]){a.match(x,/alla tio cirklarna\.[\s\S]*Svara exakt\./);a.doesNotMatch(x,/alltså med/);}a.match(c.fraga,/alla tio cirklarna\./);a.doesNotMatch(c.fraga,/alltså med/);
  a.ok(Math.abs(3145725*Math.PI-9882586.55)<0.01,'decimaltalet i rapporten är inte exakt');
 });

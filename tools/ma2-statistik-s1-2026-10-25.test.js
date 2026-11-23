@@ -2,7 +2,7 @@
 /* Ma2 kap 4 statistik, omgång S1 2026-10-25: 61 problemlösnings- och textkort 4.2000–4.2060 på nivå 1–3
    (tabeller och diagram, lägesmått, kvartiler, lådagram, normalfördelning, korrelation och regression). */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMA2));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=Array.from({length:61},(_,i)=>`4.${2000+i}`);
 const s=id=>get(id).rättSvar;

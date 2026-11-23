@@ -2,7 +2,7 @@
 /* Felrapport Ma2 2026-11-06 10:00 (4.2122, 4.2123, 4.2124, 4.2126): "Ta bort 'använd geogebra' och gör det i alla
    uppgifter här. de ska inse det själva." Logg: agent/FELRAPPORTER_2026-11-06_1000.md */
 const test = require('node:test'), assert = require('node:assert/strict'), fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
-const c = {window: {}}; vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../uppgifterma2.js'), 'utf8'), c);
+const c = {window: {}}; vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../uppgifterma2.js'), 'utf8'), c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const bank = c.window.BANKMA2, byId = new Map(bank.map(u => [u.id, u]));
 const ren = h => String(h || '').replace(/<[^>]+>/g, ' ');
 const fragetexter = u => [u.t, u.spelIntro, ...(u.spelDelar || []).map(d => d.t || d.fraga)].map(ren).join(' ');
@@ -39,7 +39,7 @@ test('de rapporterade uppgifterna saknar uppmaningen, men verktyget är tillåte
     assert.equal(u.geogebra, true, id);
     assert.match(u.s, /GeoGebra/, id);
   }
-  assert.match(byId.get('4.2126').t, /Hur stor får standardavvikelsen högst vara\? Avrunda till två decimaler\./); assert.equal([].concat(byId.get('4.2126').svarEnhet)[0], 'cl'); /* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */
+  assert.match(byId.get('4.2126').t, /Hur stor får standardavvikelsen högst vara\?(?:<\/p>)?\s*Avrunda till två decimaler\./); assert.equal([].concat(byId.get('4.2126').svarEnhet)[0], 'cl'); /* språkomskrivningen 2026-11-18: svarsform i kgInstruktion, enhet via svarEnhet, avrundning som vanlig mening */
 });
 
 test('frågor där GeoGebra är själva ämnet finns kvar', () => {

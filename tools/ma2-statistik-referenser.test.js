@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifterma2.js'),'utf8'),ctx);
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifterma2.js'),'utf8'),ctx);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(ctx);
 const models=require('./fixtures/ma2-statistik-referenser.json'),get=id=>ctx.window.BANKMA2.find(q=>q.id===id),plain=x=>JSON.parse(JSON.stringify(x));
 const sum=v=>v.reduce((a,b)=>a+b,0),mean=v=>sum(v)/v.length;
 const med=v=>{const a=v.slice().sort((a,b)=>a-b);return(a[Math.floor((a.length-1)/2)]+a[Math.floor(a.length/2)])/2;};

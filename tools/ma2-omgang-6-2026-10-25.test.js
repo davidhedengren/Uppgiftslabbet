@@ -2,7 +2,7 @@
 /* Ma2 2026-10-25 omgång 6: varierade kort på nivå 2 och 3 i kap 2 (logaritmbegreppet, exponentialfunktioner, rotekvationer,
    enkla andragradsekvationer, nollproduktmetoden, potensekvationer). */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(Object.values(c.window).find(Array.isArray)));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=Array.from({length:62},(_,i)=>`2.${1097+i}`);
 const val=s=>typeof s==='number'?s:Function(`return ${String(s).replace(/sqrt/g,'Math.sqrt')};`)();

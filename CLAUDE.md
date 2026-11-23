@@ -261,6 +261,10 @@ kvar. Självrättningen ska godkänna svar som räknats med vanliga värden, til
 exempel både \(c=2{,}998\cdot10^8\) och \(3{,}00\cdot10^8\) m/s. Kontrollera
 facit och tolerans med båda varianterna.
 
+## Rena uppgifter i Uppgiftslabbet (användarbeslut 2026-11-23)
+
+Uppgiftstexten `t` innehåller inga instruktioner om svarets form (avrundning, ”Svara exakt”, svarsform) och inga tabellvärden som eleven slår upp själv (specifik värmekapacitet, smältvärme, vattnets densitet, resistivitet osv.). Sådant står i `kgInstruktion`, som bara Kunskapsgymmet visar. Undantag: när svarsformen är det som tränas, när värdet är uppgiftens eget, eller när ämnet annars inte framgår. Se `agent/FELMONSTER_OCH_BESLUT.md` (2026-11-23). Avsnitten nedan om svarsinstruktioner gäller därför Kunskapsgymmets text (`kgInstruktion`).
+
 ## Fysik: placering av svarsinstruktioner
 
 Skriv enhet, avrundning och särskilda krav på svaret i parentes efter själva

@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato2.js','utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato2.js','utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const bank=JSON.parse(JSON.stringify(c.window.BANKMATO2)),q=id=>bank.find(t=>t.id===id);
 test('Radianfacit är matematiskt korrekta och har rad på rätt del',()=>{
  for(const [id,expected]of [['1.166',['(pi)/(6)','(3*pi)/(4)','(5*pi)/(4)','(5*pi)/(3)']],['1.449','pi/12'],['1.451','5*pi/6'],['1.458','5*pi/12'],['1.46',['pi','3*pi/2','5*pi']]]){

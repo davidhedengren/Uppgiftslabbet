@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifter.js'),'utf8'),c);const q=id=>c.window.BANK.find(x=>x.id===id),area=d=>Math.PI*(d/2)**2,wire=(rho,L,d)=>rho*L/area(d),near=(a,b,id)=>{if(b===null)return;if(Array.isArray(b)){b.forEach((v,i)=>near(a[i],v,id));return;}assert.equal(typeof a,'number',id);assert.ok(Math.abs(a-b)<=Math.abs(b)*1e-10+1e-30,id+': '+a+' / '+b);};
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifter.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (tabellvärden och svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);const q=id=>c.window.BANK.find(x=>x.id===id),area=d=>Math.PI*(d/2)**2,wire=(rho,L,d)=>rho*L/area(d),near=(a,b,id)=>{if(b===null)return;if(Array.isArray(b)){b.forEach((v,i)=>near(a[i],v,id));return;}assert.equal(typeof a,'number',id);assert.ok(Math.abs(a-b)<=Math.abs(b)*1e-10+1e-30,id+': '+a+' / '+b);};
 const r8=1.72e-8*50/1.5e-6,r28=wire(1.72e-8,8,.0005),r61=1.7e-8*2.5/(Math.PI*.0005**2),r84=1.72e-8*30/1e-6,i84=12/(6+r84),V424=1/8.96*1e-6,L424=Math.sqrt(V424/1.7e-8),A430=1.7e-8*50/(3/6.7),a433=area(.0008),l433=(.2/8960)/a433,r436cu=wire(1.7e-8,5,.0014),r436al=wire(2.7e-8,5,.0014),r437=1.7e-8*80/1.3e-6;
 const cases=[
  ['8.1',Math.sqrt(2.4/1.7*3*8)],['8.188',6/4.7],['8.189',5.6*1.8],['8.190',12/2.6],['8.192',10/.45],

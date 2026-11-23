@@ -3,7 +3,7 @@
    (3.2122–3.2161: sats och bevis, randvinklar, topptriangel/transversal, Pythagoras, geometrisk problemlösning;
     4.2139–4.2147: lådagram). */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMA2));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=[...Array.from({length:40},(_,i)=>`3.${2122+i}`),...Array.from({length:9},(_,i)=>`4.${2139+i}`)];
 const s=id=>get(id).rättSvar,nara=(a,b,t)=>Math.abs(a-b)<=t,ratt=id=>get(id).alternativ.filter(a=>a.ratt).map(a=>a.txt);

@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato1.js','utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato1.js','utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1)),report=JSON.parse(fs.readFileSync(__dirname+'/../agent/FELRAPPORTER_2026-10-17_1917.json','utf8'));
 const q=id=>{const task=bank.find(q=>q.id===id);assert.ok(task,id);return task;};
 const close=(a,b,tol=1e-6)=>assert.ok(Math.abs(a-b)<=tol,`${a} != ${b}`);

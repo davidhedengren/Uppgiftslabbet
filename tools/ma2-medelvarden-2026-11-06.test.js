@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),cp=require('node:child_process');
-const root=path.join(__dirname,'..'),c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgifterma2.js'),'utf8'),c);
+const root=path.join(__dirname,'..'),c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const bank=c.window.BANKMA2,q=id=>bank.find(x=>x.id===id),ids=['4.257','4.2148','4.2149','4.2150','4.2151'];
 test('Ingen gissning: bandresonemanget föregår kontrollen av 5,90',()=>{
  const s=q('4.257').s;assert.match(s,/95,4/);assert.match(s,/34\{,\}13\+34\{,\}13\+13\{,\}59\+2\{,\}14/);assert.match(s,/mu-0\{,\}05=5\{,\}85/);

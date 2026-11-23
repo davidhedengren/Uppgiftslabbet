@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato2.js','utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato2.js','utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const bank=c.window.BANKMATO2;
 test('Derivatavärden stämmer med oberoende numerisk differens',()=>{
  for(const [id,f,x] of [['2.417',x=>Math.sin(3*x),0],['2.418',x=>Math.exp(2*x-1),0],['2.419',x=>Math.cos(x*x),1.25331],['2.423',x=>x**3-6*x*x+9*x,1],['2.424',x=>Math.log(x)+x,1],['2.425',x=>Math.PI*x*x,3]]){

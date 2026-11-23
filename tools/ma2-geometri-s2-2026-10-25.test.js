@@ -2,7 +2,7 @@
 /* Ma2 kap 3 geometri, omgång S2 2026-10-25: 53 problemlösnings- och textkort 3.2000–3.2052 på nivå 1–3
    (Pythagoras, likformighet, topptriangel- och transversalsatsen, kordor, randvinklar, avstånd, koordinatgeometri, problemlösning). */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMA2));const get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 const NYA=Array.from({length:53},(_,i)=>`3.${2000+i}`);
 const s=id=>get(id).rättSvar,nara=(a,b,t=1e-9)=>Math.abs(a-b)<=t;

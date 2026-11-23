@@ -38,7 +38,7 @@ test('kgInstruktion är kort och står inte i uppgiftstexten',()=>{
   const [fil,glob]=nyckel.split('|');
   for(const u of bank(fil,glob).filter(u=>omraden.includes(u.omr))){
    for(const x of [u,...(u.spelDelar||[])]) if(x.kgInstruktion){
-    assert.equal(typeof x.kgInstruktion,'string',u.id);assert.ok(x.kgInstruktion.length<160,u.id);
+    assert.equal(typeof x.kgInstruktion,'string',u.id);/* 2026-11-23: svarsinstruktioner för a), b), c) samlas här, därför högre gräns */assert.ok(x.kgInstruktion.length<320,u.id);
     assert.ok(!String(x.t||'').includes(x.kgInstruktion),u.id);
     // Användarbeslut 2026-11-17: "svara med tecken" skrivs inte, eleverna förstår det själva.
     assert.doesNotMatch(x.kgInstruktion,/tecken/i,u.id);

@@ -1,5 +1,5 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),c);const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1));const q=id=>{const t=bank.find(x=>x.id===id);assert.ok(t,id);return t};
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);const bank=JSON.parse(JSON.stringify(c.window.BANKMATO1));const q=id=>{const t=bank.find(x=>x.id===id);assert.ok(t,id);return t};
 test('Endast den verkliga nollaxeln är mörk och x-beteckningar följer den',()=>{
  for(const [id,y] of [['3.1201','200.667'],['3.1202','76.0'],['3.1203','89.6'],['3.1204','161.0'],['3.1205','200.667']]){
   const t=q(id).t;assert.doesNotMatch(t,/M60 280L443 280/);assert.ok(t.includes(`M60 ${y}L443 ${y}`),id);assert.match(t,/<text x="449"[^>]*>x<\/text>/,id);

@@ -1,5 +1,5 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
-function load(file,name){const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),c);return JSON.parse(JSON.stringify(c.window[name]));}
+function load(file,name){const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);return JSON.parse(JSON.stringify(c.window[name]));}
 const ma1=load('uppgifterma1.js','BANKMA1'),ma3=load('uppgiftermato1.js','BANKMATO1');const q=(b,id)=>{const v=b.find(x=>x.id===id);assert.ok(v,id);return v};
 test('Riskuppgifter har konkret situation, relevant ledtråd och korrekta medelvärden',()=>{
  let t=q(ma1,'5.272');assert.match(t.t,/komponent/i);assert.doesNotMatch(t.t,/försök|händelse/i);assert.equal(t.rättSvar,24/.03);assert.equal(t.miniräknare,true);

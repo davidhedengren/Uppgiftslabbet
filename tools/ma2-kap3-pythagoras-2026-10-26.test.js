@@ -2,7 +2,7 @@
 /* Ma2 kap 3, etapp 4: Pythagoras (lärarbeslut 2026-10-25). Figurerna följer måtten: den långa kateten är ritad
    lång. Dubbletter har fått nya tal och sammanhang, och facit har en rubrik per steg. */
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','uppgifterma2.js'),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const B=JSON.parse(JSON.stringify(c.window.BANKMA2)),get=id=>{const t=B.find(x=>x.id===id);assert.ok(t,id);return t;};
 // Sidförhållanden ur polygonens hörn (rätvinklig triangel): kvoten mellan kateterna i figuren ska stämma med måtten.
 const katetkvot=(id)=>{const s=get(id).t.match(/<svg[\s\S]*?<\/svg>/)[0],pts=s.match(/<polygon points="([^"]+)"/)[1].trim().split(/\s+/).map(p=>p.split(',').map(Number));

@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const c={window:{}};vm.createContext(c);for(const f of ['uppgifter.js','uppgifterma1.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',f),'utf8'),c);
+const c={window:{}};vm.createContext(c);for(const f of ['uppgifter.js','uppgifterma1.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',f),'utf8'),c);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(c);
 const fy=id=>c.window.BANK.find(t=>t.id===id),ma=id=>c.window.BANKMA1.find(t=>t.id===id),g=9.82,sin=a=>Math.sin(a*Math.PI/180);
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-10,`${a} ≠ ${b}`);
 test('5.224: samma bromskraft används utan för tidig avrundning; varje kort är självständigt',()=>{

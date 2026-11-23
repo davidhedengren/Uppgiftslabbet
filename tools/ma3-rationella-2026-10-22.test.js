@@ -1,5 +1,5 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
-const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),ctx);const bank=ctx.window.BANKMATO1,q=id=>bank.find(q=>q.id===id),ids=Array.from({length:8},(_,i)=>'1.'+(880+i));
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgiftermato1.js'),'utf8'),ctx);/* 2026-11-23: läs Kunskapsgymmets vy (svarsinstruktioner i kgInstruktion) */require('./kg-vy.cjs')(ctx);const bank=ctx.window.BANKMATO1,q=id=>bank.find(q=>q.id===id),ids=Array.from({length:8},(_,i)=>'1.'+(880+i));
 test('Rationella samband och förbjudna värden räknas oberoende',()=>{
  for(const x of [0.5,1,2,3,7,12]){assert.ok(Math.abs(x*12/x-12)<1e-12);assert.equal(6*x/(2*x),3);assert.ok(Math.abs((x+4)/x/4-(x+4)/(4*x))<1e-12);assert.ok(Math.abs((x+3)/5*10/(x+3)-2)<1e-12);assert.ok(Math.abs((6/x)/(2/x**2)-3*x)<1e-12);assert.ok(Math.abs((x*8/x)/(x*3/x)-8/3)<1e-12);}
  assert.equal(q('1.880').rättSvar,12);assert.equal(q('1.882').rättSvar,3);assert.equal(q('1.884').rättSvar,2);assert.equal(q('1.886').rättSvar,'3x');assert.equal(q('1.887').rättSvar,'8/3');

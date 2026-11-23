@@ -3851,3 +3851,7 @@ De tio uppgifterna som enbart behandlar spolar i det gemensamma växelströmsavs
 ## Insättning med flera termer är träningsnivå 3 (Ma3c), 2026-11-20
 
 [Felrapport 1.1103](FELRAPPORTER_2026-11-20_1104.md). Uppgifter som f(x+h) − f(x) eller f(3+h) − f(3) där funktionen har flera termer och kvadreringsregeln behövs är E men träningsnivå 3. Linjära funktioner och en enda kvadratterm kan vara nivå 1–2.
+
+## Uppgiftslabbet visar rena uppgifter: svarsinstruktioner och tabellvärden bara i Kunskapsgymmet, 2026-11-23
+
+Användarbeslut 2026-11-23. Uppgiftstexten `t` i Uppgiftslabbet skrivs utan instruktioner om svarets form (”Avrunda till …”, ”Svara exakt.”, ”Svara med två decimaler.”, ”Svara i enklaste form.”) och utan tabellvärden som eleven slår upp själv (vattnets specifika värmekapacitet, isens smältvärme, vattnets densitet, kopparns resistivitet, ljudets fart, brytningsindex för vatten, halveringstid för kol-14 osv.). Sådant står i `kgInstruktion`, som Kunskapsgymmet lägger sist i texten, så att självrättningen och facit stämmer där. Undantag: när svarsformen eller avrundningen är det som tränas, när värdet är uppgiftens eget (inte tabellvärdet), och när ämnet annars inte framgår av uppgiften. Ny text i uppgifter ska följa detta. Beslutet ersätter, för texten i Uppgiftslabbet, tidigare praxis att skriva materialdata i frågan. Verktyg: `tools/sprak/svar_till_kg.py`, `tools/sprak/tabell_till_kg.py`, och testerna läser Kunskapsgymmets vy via `tools/kg-vy.cjs`. Logg: [SPRAKOMSKRIVNING_INSTRUKTION.md](SPRAKOMSKRIVNING_INSTRUKTION.md).

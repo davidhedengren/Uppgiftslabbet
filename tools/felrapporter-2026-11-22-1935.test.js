@@ -4,7 +4,7 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const las = (f) => { const s = fs.readFileSync(path.join(__dirname, '..', f), 'utf8'); return JSON.parse(s.slice(s.indexOf('['), s.lastIndexOf(']') + 1)); };
+const las = (f) => { const s = fs.readFileSync(path.join(__dirname, '..', f), 'utf8'); /* 2026-11-23: läs Kunskapsgymmets vy (tabellvärden och svarsinstruktioner i kgInstruktion) */ return require('./kg-vy.cjs')({ window: { B: JSON.parse(s.slice(s.indexOf('['), s.lastIndexOf(']') + 1)) } }).window.B; };
 const fy1 = las('uppgifter.js'), ma2 = las('uppgifterma2.js'), mato1 = las('uppgiftermato1.js');
 const q = (b, id) => b.find((x) => x.id === id);
 
