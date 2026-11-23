@@ -4,8 +4,8 @@ const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifter.js'),'utf8'),c);
 const tasks=c.window.BANK.filter(q=>q.omr==='medelhastighet'),q=id=>tasks.find(q=>q.id===id);
 
-test('Alla 92 huvudfacit och 125 delkort har komplett facitstruktur',()=>{
- assert.equal(tasks.length,92);let cards=0;
+test('Alla 93 huvudfacit och 125 delkort har komplett facitstruktur',()=>{
+ assert.equal(tasks.length,93);let cards=0;
  for(const t of tasks){
   assert.equal(t.miniräknare,true,t.id);
   for(const[id,s]of[[t.id,t.s],...(t.spelDelar||[]).map(d=>[t.id+d.etikett,d.s])]){
@@ -108,7 +108,8 @@ test('Varje numerisk huvudnyckel i området kontrolleras från givna data',()=>{
  '2.319':[60*(40/6)/(60-40),5/610*3600],'2.320':(40/3.6)*(7500/(1500+40/3.6)),
  '2.335':(180-100)/40,'2.336':600/480,'2.337':(50-20)/30,'2.338':40/25,'2.339':60/6,
  '2.340':8/.4,'2.341':300/(54/3.6),'2.342':540/(1/6+1/4),'2.343':8/.5,'2.344':16/4,
- '2.346':90/3.6,'2.348':150/100,'2.349':600/120,'2.350':30/.5};
+ '2.346':90/3.6,'2.348':150/100,'2.349':600/120,'2.350':30/.5,
+ '2.380':18-2*18/(36/6+3)};
  const numerical=tasks.filter(t=>typeof t.rättSvar==='number'||Array.isArray(t.rättSvar));
  assert.deepEqual(Array.from(numerical,t=>t.id).sort(),Object.keys(cases).sort());
  for(const t of numerical){const values=[].concat(cases[t.id]),actual=[].concat(t.rättSvar);

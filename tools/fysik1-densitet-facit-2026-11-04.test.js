@@ -9,8 +9,8 @@ const q=id=>tasks.find(q=>q.id===id);
 
 // 2026-11-18: sex nya A-uppgifter (2.365–2.370) med sex delkort, se agent/FY1_DENSITET_A_2026-11-18.md.
 // 2026-11-23: sex nya A-uppgifter (2.371–2.376) med sex delkort, se agent/FY1_DENSITET_A_2026-11-23.md.
-test('Alla 190 densitetsfacit och 65 delkort har steg, rubriker och slutsvar',()=>{
- assert.equal(tasks.length,190);let cards=0;
+test('Alla 193 densitetsfacit och 65 delkort har steg, rubriker och slutsvar',()=>{
+ assert.equal(tasks.length,193);let cards=0;
  for(const t of tasks){
   assert.equal(t.miniräknare,true,t.id);
   for(const [id,s] of [[t.id,t.s],...(t.spelDelar||[]).map(d=>[t.id+d.etikett,d.s])]){
