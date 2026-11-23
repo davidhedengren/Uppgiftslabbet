@@ -43,7 +43,9 @@ MENING = (r'(?:Avrunda (?:svaret |svaren |vid behov |sedan )?(?:till|med|på)\b[
           r'|med olikhetstecken|i (?:enklaste form|bråkform|decimalform|grundpotensform|procent|exakt form|hela)'
           r'|på formen)[^.<?]{0,110}'
           r'|Ange (?:svaret(?! både| också)|ett exakt värde)[^.<?]{0,90}|Skriv svaret[^.<?]{0,90})\.')
-SV = re.compile(r'(?:(?<=^)|(?<=[.?!] )|(?<=[.?!]))\s?(' + MENING + r')')
+# (?<=<p>) tillagt 2026-11-23: en instruktion i ett eget stycke efter en figur (”…</span><p>Avrunda till en
+# decimal.</p>”) missades, eftersom den varken stod först i texten eller efter en annan mening.
+SV = re.compile(r'(?:(?<=^)|(?<=[.?!] )|(?<=[.?!])|(?<=<p>))\s?(' + MENING + r')')
 UPPMANING = re.compile(r'\?|\b(?:Bestäm|Beräkna|Lös|Ange|Skriv|Förenkla|Visa|Rita|Faktorisera|Utveckla|Derivera|'
                        r'Undersök|Hur|Vilk|Vad|Teckna|Ställ|Räkna|Bryt|Kontrollera|Jämför|Förklara|Motivera|Skissa|'
                        r'Uppskatta|Avgör|Tolka|Pröva|Konstruera|Markera|Gör|Använd|Välj|Omvandla|Multiplicera|'

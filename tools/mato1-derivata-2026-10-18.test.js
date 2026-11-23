@@ -1,10 +1,11 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgiftermato1.js','utf8'),c);const q=id=>c.window.BANKMATO1.find(q=>q.id===id);
+// Avrundningskravet står sedan 2026-11-23 i kgInstruktion (svarsinstruktioner bara i Kunskapsgymmet).
 test('Exponentialekvationerna har fullprecisionsmål och korrekt avrundning',()=>{
- for(const [id,a,k,b]of [['2.44',2,.4,7],['2.48',5,.2,12],['2.52',3,.5,20]]){const t=q(id);assert.ok(Math.abs(a*Math.exp(k*t.rättSvar)-b)<1e-12);assert.equal(t.tolerans,.005);assert.match(t.t,/två decimaler/);}
+ for(const [id,a,k,b]of [['2.44',2,.4,7],['2.48',5,.2,12],['2.52',3,.5,20]]){const t=q(id);assert.ok(Math.abs(a*Math.exp(k*t.rättSvar)-b)<1e-12);assert.equal(t.tolerans,.005);assert.match(t.t+(t.kgInstruktion||''),/två decimaler/);}
  assert.ok(Math.abs(q('2.08').rättSvar-Math.exp(.4))<1e-12);
- for(const [id,b]of [['2.509',1.05],['2.510',.8],['2.511',1.03],['2.512',.96]]){const t=q(id);assert.ok(Math.abs(Math.exp(t.rättSvar)-b)<1e-12);assert.equal(t.tolerans,.00005);assert.match(t.t,/fyra decimaler/);assert.doesNotMatch(t.ledtrad,/0\{,\}02956|0\{,\}04082/);}
+ for(const [id,b]of [['2.509',1.05],['2.510',.8],['2.511',1.03],['2.512',.96]]){const t=q(id);assert.ok(Math.abs(Math.exp(t.rättSvar)-b)<1e-12);assert.equal(t.tolerans,.00005);assert.match(t.t+(t.kgInstruktion||''),/fyra decimaler/);assert.doesNotMatch(t.ledtrad,/0\{,\}02956|0\{,\}04082/);}
  assert.match(q('2.511').t,/ökar/);assert.match(q('2.512').t,/minskar/);
 });
 test('Sekantpunkterna ligger på exponentialkurvan och tangentlutningen är samma',()=>{
