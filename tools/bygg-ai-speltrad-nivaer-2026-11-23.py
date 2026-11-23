@@ -426,6 +426,92 @@ ROTFRAGA = ['Vilket värde får roten?', 'Bestäm rotens minimaxvärde.', 'Vilke
             'Bestäm värdet i roten R.', 'Vilket minimaxvärde får roten när båda väljer så bra de kan?']
 
 
+# ---------------------------------------------------------------- ledtrådar (2026-11-23, andra omgången)
+# Ledtrådarna nämner uppgiftens egna löv och den väg sökningen tar, så att ingen ledtråd står ordagrant i flera
+# uppgifter (steg 3 i språkomskrivningen: specifika ledtrådar). De ger första steget, inte svaret.
+
+def _lista(namn):
+    namn = list(namn)
+    return namn[0] if len(namn) == 1 else ', '.join(namn[:-1]) + ' och ' + namn[-1]
+
+
+def _lov(n):
+    return _lista(T.fmt(k['leaf']) for k in n['kids'] if 'leaf' in k)
+
+
+def _vem(ktx, nod):
+    """', där väljer konkurrenten' i tillämpningar, annars tomt."""
+    if 'spel' in ktx:
+        return ''
+    return f', där väljer {ktx["max"] if nod["max"] else ktx["min"]}'
+
+
+def _typ(nod):
+    return 'MAX' if nod['max'] else 'MIN'
+
+
+def led_minimax(r, ktx, djupen):
+    noder = {n['name']: n for n in _alla(r) if 'leaf' not in n}
+    djupast = djupen[max(djupen)]
+    forsta = noder[djupast[0]]
+    ord_ = 'största' if forsta['max'] else 'minsta'
+    ovriga = djupast[1:]
+    if max(djupen) == 1:
+        rest = f'Gör likadant för {_lista(ovriga)}, och välj sedan som roten.'
+    elif len(ovriga) <= 3:
+        rest = f'Gör likadant för {_lista(ovriga)} och arbeta sedan uppåt, nivå för nivå, mot roten.'
+    else:
+        rest = 'Gör likadant för de andra noderna på samma nivå och arbeta sedan uppåt, nivå för nivå, mot roten.'
+    return (f'{forsta["name"]} är en {_typ(forsta)}-nod{_vem(ktx, forsta)}. Den har löven {_lov(forsta)} och får det '
+            f'{ord_} av dem. {rest}')
+
+
+def led_beskarning(r, ktx, tn):
+    a, b = r['kids'][0], r['kids'][1]
+    if tn == 3:
+        forsta_b = next(k for k in b['kids'])
+        return (f'{a["name"]} är en {_typ(a)}-nod med löven {_lov(a)}. Vilket värde får {a["name"]}, och vad är roten då '
+                f'säker på? {b["name"]}:s första löv är {T.fmt(forsta_b["leaf"])}. Kan {b["name"]} fortfarande bli bättre '
+                f'för roten än {a["name"]}?')
+    vag = [a['name']]
+    n = a
+    while 'kids' in n and 'leaf' not in n['kids'][0]:
+        n = n['kids'][0]
+        vag.append(n['name'])
+    return (f'Sökningen börjar i R med α = −∞ och β = +∞ och går ned genom {_lista(vag)}. {n["name"]} är en '
+            f'{_typ(n)}-nod med löven {_lov(n)}. Skriv α och β vid varje nod sökningen går in i, och uppdatera dem när '
+            'ett barn blir klart. Var blir α ≥ β innan alla barn är undersökta?')
+
+
+def led_ab5(r, mal, foralder):
+    nod = mal[1]
+    noder = {n['name']: n for n in _alla(r)}
+    if mal[0] == 'in':
+        klara = []
+        barn = nod
+        while barn in foralder:
+            f = noder[foralder[barn]]
+            for k in f['kids']:
+                if k['name'] == barn:
+                    break
+                klara.append(k['name'])
+            barn = f['name']
+        vag = [nod]
+        while vag[-1] in foralder:
+            vag.append(foralder[vag[-1]])
+        forsta = noder[klara[0]]
+        om_forsta = (f' {forsta["name"]} har löven {_lov(forsta)}.' if 'kids' in forsta and
+                     all('leaf' in k for k in forsta['kids']) else '')
+        return (f'Vägen ned till {nod} går genom {_lista(list(reversed(vag[1:])))}. När sökningen kommer fram är '
+                f'{_lista(sorted(klara, key=lambda x: (x.startswith("L"), x)))} redan klara.{om_forsta} Vad gjorde de '
+                'med α och β på vägen ned?')
+    f = foralder[nod]
+    barn = [f'{k["name"]} = {T.fmt(k["leaf"])}' if 'leaf' in k else k['name'] for k in noder[nod]['kids']]
+    return (f'{nod} får α och β från {f} när sökningen går in i {nod}. Gå sedan igenom {nod}:s barn '
+            f'{_lista(barn)} ett i taget och uppdatera {"α" if noder[nod]["max"] else "β"} när ett barn blir klart. '
+            'När blir α ≥ β?')
+
+
 def mm_uppgift(id_, ktx, qv, v, rm, tn):
     r = T.build(v, rm)
     rot, info = minimax_info(r)
@@ -455,16 +541,7 @@ def mm_uppgift(id_, ktx, qv, v, rm, tn):
     steg.append(step('Trädet med alla värden',
                      figur(r, rm, 'Spelträdet med minimaxvärdet vid varje inre nod.', varden={n: f'= {T.fmt(x[3])}' for n, x in info.items()})))
     s = facit(steg, f'{T.fmt(rot)}.')
-    if tn == 1:
-        ledtrad = f'Bestäm först {", ".join(barn[:-1])} och {barn[-1]}. De är {bn}-noder, så de väljer det {"minsta" if bn == "MIN" else "största"} av sina löv.'
-    else:
-        djupast = djupen[max(djupen)]
-        lista = (', '.join(djupast[:-1]) + ' och ' + djupast[-1]) if len(djupast) <= 4 else f'{djupast[0]}, {djupast[1]} och de andra noderna på samma nivå'
-        if max(djupen) == 1:
-            ledtrad = f'Bestäm först {lista}. De är {bn}-noder. Vilket av sina löv väljer de?'
-        else:
-            ledtrad = (f'Börja längst ner med {lista}. '
-                       'Avgör för varje nivå om noderna är MAX eller MIN och arbeta uppåt mot roten.')
+    ledtrad = led_minimax(r, ktx, djupen)
     fraga = ROTFRAGA[qv % len(ROTFRAGA)]
     return bas(id_, 'minimax', 'Minimaxvärden och bästa drag', tn, intro_text(ktx, r, rm, 'mm'), fraga, s, ledtrad, NUM(rot), ['procedur'])
 
@@ -496,13 +573,7 @@ def besk_uppgift(id_, ktx, qv, v, rm, tn):
     steg.append(step(f'Löv som aldrig utvärderas: {len(pr)} st', ', '.join(pr) + '.',
                      figur(r, rm, 'Spelträdet med värden och beskurna grenar.', varden=ab_varden(notes), beskurna=beskurna)))
     s = facit(steg, ', '.join(pr) + '.')
-    forst, andra = r['kids'][0]['name'], r['kids'][1]['name']
-    if tn == 3:
-        ledtrad = (f'Bestäm {forst} helt. Vad är roten då säker på? Undersök sedan {andra} löv för löv: '
-                   f'när kan {andra} inte längre bli bättre för roten än {forst}?')
-    else:
-        ledtrad = (f'Gå igenom trädet från vänster och skriv α och β vid varje nod, med början i {forst}. '
-                   'Var blir α ≥ β innan alla barn är undersökta?')
+    ledtrad = led_beskarning(r, ktx, tn)
     fraga = BESK_FRAGA[tn][qv % len(BESK_FRAGA[tn])]
     svar = {'svarstyp': 'kort_text', 'rättSvar': ', '.join(pr), 'tolerans': None, 'svarFormat': 'namnmangd'}
     return bas(id_, 'alfa_beta', 'Rotvärde och beskurna löv', tn, intro_text(ktx, r, rm, 'ab'), fraga, s, ledtrad, svar,
@@ -571,13 +642,11 @@ def ab5_uppgift(id_, ktx, qv, v, rm, mal):
     if mal[0] == 'in':
         fraga = [f'Vilka värden har α och β när sökningen går in i noden {nod}?',
                  f'Sökningen kommer fram till noden {nod}. Vilka värden har α och β där innan något av {nod}:s barn har undersökts?'][qv % 2]
-        ledtrad = (f'Följ sökningen från roten längs vägen ned till {nod}. Vilka barn har redan blivit klara på vägen, '
-                   'och hur ändrade de α och β?')
+        ledtrad = led_ab5(r, mal, foralder)
     else:
         fraga = [f'I noden {nod} sker en beskärning. Vilka värden har α och β i {nod} precis när den sker?',
                  f'Alfa–beta beskär en del av trädet under noden {nod}. Vilka värden har α och β i {nod} när beskärningen sker?'][qv % 2]
-        ledtrad = (f'Ta reda på vilka α och β {nod} får från sin förälder. Hur ändras de sedan när {nod}:s barn '
-                   'blir klara ett i taget?')
+        ledtrad = led_ab5(r, mal, foralder)
     svar = {'svarstyp': 'flera_delar', 'rättSvar': [a, b], 'tolerans': [0, 0], 'svarFormat': ['numeriskt', 'numeriskt'],
             'svarsstruktur': 'ordnad', 'svarEtiketter': ['α', 'β'], 'svarEnhet': [None, None]}
     u = bas(id_, 'alfa_beta', 'Rotvärde och beskurna löv', 5, intro_text(ktx, r, rm, 'ab'), fraga, s, ledtrad, svar,

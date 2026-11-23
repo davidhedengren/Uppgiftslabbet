@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.join(HERE, '..'))
 import bankobjekt as B  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(HERE))
-FILER = {'fy1': 'uppgifter.js', 'fy2': 'uppgifter2.js', 'ma1': 'uppgifterma1.js', 'ma2': 'uppgifterma2.js',
+FILER = {'ai': 'uppgifterai.js', 'fy1': 'uppgifter.js', 'fy2': 'uppgifter2.js', 'ma1': 'uppgifterma1.js', 'ma2': 'uppgifterma2.js',
          'mato1': 'uppgiftermato1.js', 'mato2': 'uppgiftermato2.js', 'matf1': 'uppgiftermatf1.js'}
 MIN = 4
 ETIKETTER = ('Tänk så här:', 'Kontroll och insikt:', 'Varför metoden fungerar:')
