@@ -59,6 +59,13 @@ DELMOMENT = {
                                                '3.22 3.23 3.24 3.25 3.26 3.34 3.35 3.36 3.40 3.41 3.42'),
 }
 
+# Spelträd på nivå 1–5 (bygg-ai-speltrad-nivaer-2026-11-23.py): rotvärde på nivå 1–2, beskurna löv på nivå 3–4,
+# α och β i en nod på nivå 5. 3.216–3.255 är samma nivåer med enkla tillämpningar (åtta per nivå).
+_minimax_nya = ' '.join(f'3.{i}' for i in [*range(81, 141), *range(216, 232)])
+_alfabeta_nya = ' '.join(f'3.{i}' for i in [*range(141, 216), *range(232, 256)])
+DELMOMENT['Minimaxvärden och bästa drag'] = ('minimax', DELMOMENT['Minimaxvärden och bästa drag'][1] + ' ' + _minimax_nya)
+DELMOMENT['Rotvärde och beskurna löv'] = ('alfa_beta', DELMOMENT['Rotvärde och beskurna löv'][1] + ' ' + _alfabeta_nya)
+
 
 def _ids(a, b):
     return ' '.join(f'4.{i:02d}' for i in range(a, b + 1))

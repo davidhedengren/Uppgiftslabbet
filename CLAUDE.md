@@ -213,6 +213,13 @@ Efter granskningen 2026-11-12 (`agent/AI_GRANSKNING_2026-11-12.md`) gäller ocks
 - Varje område ska ha uppgifter för prov på alla nivåer: C även i köer, stackar och
   prioritetsköer, A även i sökningsdelen (värdera, generalisera), och E även i alfa–beta.
 
+Spelträd (användarbeslut 2026-11-23, `agent/AI_SPELTRAD_NIVAER_2026-11-23.md`): träningsnivå 1 = rotens
+minimaxvärde i små träd, 2 = samma i större träd, 3 = vilken gren som beskärs (en beskärning, C), 4 = flera
+beskärningar i större träd (A), 5 = α och β i en given nod (A). Minimaxområdet har fristående kort
+(`kgFristaendeDelar`, inga a → b → c i samma kort). Uppgifterna ska gärna ha mycket enkla tillämpningar som säger
+vem som är MAX och MIN och vad talen betyder (vinst i kronor, batterier, minuter flygtid …), och facit säger vad
+rotens värde betyder.
+
 ## Långsiktigt mål: många och varierade uppgifter på nivå 1–3
 
 Användarbeslut 2026-10-22: varje område (`omr`, ett kort i Kunskapsgymmet) ska på sikt ha **50–100 kort på träningsnivå 1 och 2 tillsammans** (preciserat 2026-10-25). Nivå 3 ska också fyllas på, så att det finns varierad träning även där. Korten ska vara **mycket varierade**, så att eleverna kan mängdträna utan att känna att de får samma uppgift om och om igen. Fortsätt fylla på löpande när tillfälle ges, och prioritera de områden som har minst antal kort på nivå 1–2 (eller nivå 3) och som undervisas nu. Fyll inte bara på nivå 1.

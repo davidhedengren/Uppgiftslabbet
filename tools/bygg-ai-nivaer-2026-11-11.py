@@ -98,6 +98,10 @@ def klass(u, d):
     key = u['id'] + d['etikett']
     if key in OVERRIDE:
         return OVERRIDE[key]
+    if u['kap'] == 3 and 81 <= int(u['id'].split('.')[1]) <= 255:
+        # Spelträd på nivå 1–5 (2026-11-23): nivån sätts i bygg-ai-speltrad-nivaer-2026-11-23.py enligt användarens
+        # trappa (1–2 rotvärde E, 3 en beskärning C, 4 flera beskärningar A, 5 α och β A).
+        return (d['niva'], d['traningsniva'])
     if u['kap'] >= 4:  # maskininlärning m.m.: nivån sätts i byggskriptet (traningsniva 1–2 = E, 3 = C, 5 = A)
         return (d['niva'], d['traningsniva'])
     if u['omr'] == 'alfa_beta':
