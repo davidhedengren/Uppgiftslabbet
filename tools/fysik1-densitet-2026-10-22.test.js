@@ -1,10 +1,11 @@
 'use strict';
+// Zink 7,13 g/cm³ enligt formelsamlingen (felrapport 2026-11-23 18:07).
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
 const c={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/../uppgifter.js','utf8'),c);
 const bank=Object.values(c.window)[0],q=id=>bank.find(x=>x.id===id);
 test('Densitet: full precision i fem avrundade maskinfacit',()=>{
  const gold=1/19.3/5000*1e7,lead=15000/11.3;
- const rows=[['2.18',[300/(200/8.96+100/7.14)],[.005]],['2.27',[gold,gold/.29],[.5,.5]],['2.274',[4*Math.PI/3*(2.7*8+7.8*(27-8))],[.05]],['2.52',[lead,Math.cbrt(3*lead/(4*Math.PI)),Math.cbrt(6*lead/(4*Math.PI))],[5,.005,.005]],['2.54',[450/8.96,8.96*27],[.05,.5]]];
+ const rows=[['2.18',[300/(200/8.96+100/7.13)],[.005]],['2.27',[gold,gold/.29],[.5,.5]],['2.274',[4*Math.PI/3*(2.7*8+7.8*(27-8))],[.05]],['2.52',[lead,Math.cbrt(3*lead/(4*Math.PI)),Math.cbrt(6*lead/(4*Math.PI))],[5,.005,.005]],['2.54',[450/8.96,8.96*27],[.05,.5]]];
  for(const[id,values,tolerances]of rows){const x=q(id);const ans=[].concat(x.rättSvar),tol=[].concat(x.tolerans);
   values.forEach((v,i)=>{assert.ok(Math.abs(ans[i]-v)<1e-10,id);assert.equal(tol[i],tolerances[i],id);});
   assert.ok(/med (två decimaler|en decimal|tre värdesiffror)/.test(x.t)||[].concat(x.svarVardesiffror).some(v=>v>=1));

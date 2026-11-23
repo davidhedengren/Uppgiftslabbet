@@ -3,7 +3,7 @@ import json, re, os
 
 UL = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 FIL = {"fy1": "uppgifter.js", "fy2": "uppgifter2.js", "ma1": "uppgifterma1.js", "ma2": "uppgifterma2.js",
-       "mato1": "uppgiftermato1.js", "mato2": "uppgiftermato2.js", "matf1": "uppgiftermatf1.js"}
+       "mato1": "uppgiftermato1.js", "mato2": "uppgiftermato2.js", "matf1": "uppgiftermatf1.js", "ai": "uppgifterai.js"}
 
 FIG = re.compile(r"<svg\b.*?</svg>|<table\b.*?</table>|<img\b[^>]*>", re.S)
 

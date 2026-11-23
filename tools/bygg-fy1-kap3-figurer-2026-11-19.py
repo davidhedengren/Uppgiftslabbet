@@ -233,14 +233,39 @@ def _():
     return b
 
 
-@fig('3.63', 460, 170, 'En cyklist med farten 9,0 m/s. Under reaktionstiden 0,70 s rullar cykeln med samma fart, sedan bromsar den med 3,5 m/s².')
+def cyklist(x, y):
+    """Cyklist på cykel sedd från sidan, åt höger. Bakhjulets nav i (x, y), hjulen står på y + 20."""
+    r = 20
+    fx = x + 60                                  # framhjulets nav
+    kx, sx, hx = x + 26, x + 20, x + 52           # vevlager, sadelstolpe, styrrör
+    b = cirkel(x, y, r, 'none', INK, 2.4) + cirkel(fx, y, r, 'none', INK, 2.4)
+    b += cirkel(x, y, 2.5, INK, INK, 1) + cirkel(fx, y, 2.5, INK, INK, 1)
+    ram = ROD
+    b += path(f'M{x},{y} L{kx},{y} L{sx},{y - 26} Z', 'none', ram, 3)          # bakre triangel
+    b += path(f'M{sx},{y - 26} L{hx},{y - 28} L{kx},{y} M{hx},{y - 28} L{fx},{y}', 'none', ram, 3)
+    b += linje(hx, y - 28, hx - 2, y - 38, INK, 2.4) + linje(hx - 2, y - 38, hx + 8, y - 39, INK, 2.6)  # styre
+    b += linje(sx, y - 26, sx - 2, y - 33, INK, 2.4) + rekt(sx - 10, y - 36, 16, 4, INK, INK, 1, 2)    # sadel
+    hud, troja = '#e8b58f', '#2f7d4f'
+    b += path(f'M{sx - 1},{y - 37} L{x + 40},{y - 64}', 'none', troja, 7)                               # överkropp
+    b += path(f'M{x + 40},{y - 62} L{hx + 6},{y - 40}', 'none', troja, 4)                                # arm
+    b += cirkel(x + 46, y - 74, 8, hud, INK, 1.6)                                                        # huvud
+    b += path(f'M{x + 37},{y - 78} Q{x + 46},{y - 89} {x + 55},{y - 77} Z', '#0b6fa4', INK, 1.4)          # hjälm
+    b += path(f'M{sx - 1},{y - 37} L{kx + 12},{y - 24} L{kx + 5},{y + 6}', 'none', '#203746', 4)         # ben
+    b += linje(kx, y, kx + 5, y + 6, INK, 2) + linje(kx + 1, y + 6, kx + 10, y + 6, INK, 2.4)            # vev och pedal
+    return b
+
+
+@fig('3.63', 460, 200, 'En cyklist med farten 9,0 m/s. Under reaktionstiden 0,70 s rullar cykeln med samma fart, sedan bromsar den med 3,5 m/s².')
 def _():
-    b = rekt(10, 100, 440, 16, VAG, INK, 1.4, 2)
-    b += cirkel(30, 88, 10, 'none', INK, 2) + cirkel(58, 88, 10, 'none', INK, 2) + linje(30, 88, 46, 70, INK, 2) + linje(46, 70, 58, 88, INK, 2)
-    b += pil(72, 60, 130, 60, BLA, 3) + tt(136, 65, '9,0 m/s', 13, 'start', BLA, True)
-    b += rekt(60, 120, 150, 14, '#9cc3e4', INK, 1.2, 0) + rekt(210, 120, 220, 14, '#f2c48d', INK, 1.2, 0)
-    b += tt(135, 152, 'reaktionstid 0,70 s', 12, 'middle', BLA, True) + tt(320, 152, 'bromsar 3,5 m/s²', 12, 'middle', ORA, True)
-    b += tt(245, 30, 'stoppsträcka ?', 13, 'middle', INK, True)
+    b = rekt(10, 140, 440, 14, VAG, INK, 1.4, 2)
+    b += cyklist(28, 120)
+    b += pil(112, 70, 172, 70, BLA, 3) + tt(178, 75, '9,0 m/s', 14, 'start', BLA, True)
+    x0, x1, x2 = 88, 228, 438
+    b += rekt(x0, 160, x1 - x0, 12, '#9cc3e4', INK, 1.2, 0) + rekt(x1, 160, x2 - x1, 12, '#f2c48d', INK, 1.2, 0)
+    b += tt((x0 + x1) / 2, 190, 'reaktionstid 0,70 s', 13, 'middle', BLA, True)
+    b += tt((x1 + x2) / 2, 190, 'bromsar med 3,5 m/s²', 13, 'middle', ORA, True)
+    b += linje(x0, 30, x2, 30, INK, 1.4) + linje(x0, 24, x0, 36, INK, 1.4) + linje(x2, 24, x2, 36, INK, 1.4)
+    b += tt((x0 + x2) / 2, 22, 'stoppsträcka ?', 14, 'middle', INK, True)
     return b
 
 
