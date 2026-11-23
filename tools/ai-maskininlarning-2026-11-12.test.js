@@ -1,4 +1,5 @@
 'use strict';
+// Språksteg 1 i AI-banken 2026-11-23 (tools/sprak/ai_steg1.py): ”Välj ett alternativ.” bort och svarsinstruktioner i kgInstruktion.
 // AI-banken kapitel 4 Maskininlärning (bygg-ai-maskininlarning-2026-11-12.py, ai_ml_modeller.py).
 // Räknar om svaren oberoende av byggskriptet: klassificeringsmatriserna läses ur uppgiftens tabell,
 // övriga svar räknas med egna formler. Kontrollerar också struktur, nivåer och pappersversionen.
@@ -150,8 +151,8 @@ test('Kunskapsgymmet och papper: decimalsvar, förklaringsfrågor och ordval',()
  for(const u of ml){
   a.doesNotMatch(u.t+u.s,/Svara i decimalform/,u.id);a.doesNotMatch(JSON.stringify(u),/interpol|extrapol/i,u.id);
   for(const d of u.spelDelar){const k=u.id+d.etikett;
-   if(d.svarstyp==='numeriskt'&&!Number.isInteger(d.rättSvar))a.match(d.fraga,/\(Svara i decimalform\.\)/,k);
-   if(d.svarstyp==='numeriskt'&&Number.isInteger(d.rättSvar))a.doesNotMatch(d.fraga,/decimalform/,k);
+   if(d.svarstyp==='numeriskt'&&!Number.isInteger(d.rättSvar))a.match(d.kgInstruktion||'',/Svara i decimalform\./,k);
+   if(d.svarstyp==='numeriskt'&&Number.isInteger(d.rättSvar)){a.doesNotMatch(d.fraga,/decimalform/,k);a.doesNotMatch(d.kgInstruktion||'',/decimalform/,k);}
    if(d.svarstyp==='numeriskt'&&!Number.isInteger(d.rättSvar))a.match(d.s,new RegExp(String(d.rättSvar).replace('.',',').replace('-','−')),k);
    if(d.svarstyp==='alternativ')for(const x of d.alternativ)a.doesNotMatch(x.txt,/^[A-ZÅÄÖ]$/,k);
   }}

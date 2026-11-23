@@ -1,4 +1,5 @@
 'use strict';
+// Språksteg 1 i AI-banken 2026-11-23 (tools/sprak/ai_steg1.py): ”Välj ett alternativ.” bort och svarsinstruktioner i kgInstruktion.
 // AI-banken 2026-11-11, tredje omgången: lärarkommentarer (1.01, 1.03, 1.04) och 26 nya uppgifter.
 // Svaren kontrolleras här med egna simuleringar, oberoende av byggskriptets Python-kod.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
@@ -70,7 +71,7 @@ test('26 nya uppgifter med fullständiga och självständiga delar',()=>{
   a.match(u.s,/facit-steglista/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s,id);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);a.equal(d.visaAlternativ,d.alternativ.length>0);
    a.ok(u.t.includes(d.fraga.replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.has(id+d.etikett)?' Välj ett alternativ.':'\u0000','').replace('<p>','').slice(0,30)),id+d.etikett);
-   if(d.alternativ.length){a.equal(d.alternativ.filter(x=>x.ratt).length>1,/Välj alla som stämmer/.test(d.fraga),id);a.match(d.fraga,/Välj (ett alternativ|alla som stämmer)/);
+   if(d.alternativ.length){a.equal(d.alternativ.filter(x=>x.ratt).length>1,/Välj alla som stämmer/.test(d.fraga),id);a.doesNotMatch(d.fraga,/Välj ett alternativ/);
     a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length);for(const x of d.alternativ){a.ok(x.kommentar.length>15);a.ok(KG_FLERVAL.has(id+d.etikett)||u.t.includes('</strong> '+x.txt+'</p>'),id);}}}}
  a.deepEqual(omr,{ko_stack:3,ko_sokning:2,bfs:2,dfs:3,prioritetsko:3,astar_varden:2,astar_sokning:3,viktade_vagar:3,minimax:3,alfa_beta:2});
  a.ok(NYA.filter(id=>q(id).traningsniva===1).length>=4);

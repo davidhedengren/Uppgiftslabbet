@@ -1,4 +1,5 @@
 'use strict';
+// Språksteg 1 i AI-banken 2026-11-23 (tools/sprak/ai_steg1.py): ”Välj ett alternativ.” bort och svarsinstruktioner i kgInstruktion.
 // AI-banken 2026-11-11: omgruppering i oinformerad och informerad sökning, och tolv nya
 // uppgifter med BFS och DFS i träd och grafer (1.65–1.76). Svaren räknas om oberoende.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
@@ -39,7 +40,7 @@ test('nya uppgifter: format, nivåer och pappersversion utan svarsinstruktioner'
  for(const id of NYA){const u=q(id);a.ok(u,id);a.equal(u.spel,true);a.equal(u['självrättning'],true);a.match(u.familj,/^(BFS|DFS) i träd och grafer$/);
   a.match(u.t,/<svg/);a.doesNotMatch(u.t,/\((Skriv|Svara)[^)]*\)/,id);a.match(u.s,/facit-steglista/);
   u.spelDelar.forEach((d,i)=>{a.equal(JSON.stringify(u.rättSvar[i]),JSON.stringify(d.rättSvar));a.match(d.s,/facit-rubrik/);a.ok(d.ledtrad.length>20);
-   if(d.svarFormat==='namnordning')a.match(d.fraga,/\((Skriv|Svara)[^)]*\)<\/p>/,id+d.etikett);
+   if(d.svarFormat==='namnordning'){a.match(d.kgInstruktion||'',/^(Skriv|Svara)/,id+d.etikett);a.doesNotMatch(d.fraga,/\((Skriv|Svara)/,id+d.etikett);}
    for(const x of d.alternativ||[]){a.ok(x.kommentar.length>15,id+x.txt);a.doesNotMatch(x.txt,/^[A-Z]\d*$/,'ett ensamt nodnamn krockar med A–D på papper');}});}
  const parts=NYA.flatMap(id=>q(id).spelDelar);a.ok(parts.filter(d=>d.niva==='E').length/parts.length>=0.7,'mest E');
  a.ok(parts.some(d=>d.niva==='C'));

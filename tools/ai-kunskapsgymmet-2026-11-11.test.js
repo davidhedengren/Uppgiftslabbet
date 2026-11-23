@@ -1,4 +1,5 @@
 'use strict';
+// Språksteg 1 i AI-banken 2026-11-23 (tools/sprak/ai_steg1.py): ”Välj ett alternativ.” bort och svarsinstruktioner i kgInstruktion.
 // AI-banken 2026-11-11, sjätte omgången: 30 självrättande uppgifter i Kunskapsgymmets format.
 // Testet kontrollerar formatet och räknar om varje svar med egna simuleringar.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
@@ -37,7 +38,7 @@ test('Kunskapsgymmets format: självrättande delar med entydiga svar',()=>{
   a.equal(u.rättSvar.length,u.spelDelar.length);a.equal(JSON.stringify(u.svarEtiketter),JSON.stringify(u.spelDelar.map(d=>d.etikett)));a.equal(u.svarFormat.length,u.spelDelar.length);
   u.spelDelar.forEach((d,i)=>{a.equal(d.spel,true);a.equal(d['självrättning'],true);a.equal(u.rättSvar[i],d.rättSvar,id);a.ok(Number.isInteger(d.traningsniva));a.match(d.s,/facit-svar/);a.ok(d.ledtrad.length>20);
    if(d.svarstyp==='numeriskt'){a.ok(Number.isInteger(d.rättSvar),id);a.equal(d.tolerans,0);a.equal(d.svarFormat,'numeriskt');a.equal(d.alternativ.length,0);a.ok(d.s.includes('<strong>Svar:</strong> '+String(d.rättSvar).replace('-','−')+'.'),id);}
-   else{a.equal(d.svarstyp,'alternativ',id);const r=d.alternativ.filter(x=>x.ratt);a.equal(r.length,1,id);a.equal(d.rättSvar,r[0].txt);a.equal(d.visaAlternativ,true);a.match(d.fraga,/Välj ett alternativ\./);
+   else{a.equal(d.svarstyp,'alternativ',id);const r=d.alternativ.filter(x=>x.ratt);a.equal(r.length,1,id);a.equal(d.rättSvar,r[0].txt);a.equal(d.visaAlternativ,true);a.doesNotMatch(d.fraga,/Välj ett alternativ/);
     a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length,id);for(const x of d.alternativ){a.ok(x.kommentar.length>12,id+x.txt);a.ok(u.t.includes('</strong> '+x.txt+'</p>'),id);}}});}
  // Områdena räknas som när omgången byggdes; omgrupperingen 2026-11-11 sparar dem i omrTidigare.
  const o0=u=>u.omrTidigare||u.omr,omr={};for(const id of NYA)omr[o0(q(id))]=(omr[o0(q(id))]||0)+1;a.ok(Object.values(omr).every(n=>n===3));a.equal(Object.keys(omr).length,10);
