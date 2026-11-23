@@ -513,6 +513,7 @@ def t379():
             [alt(f'Draget till {k}', k == 'B', f'{k} har värdet {v:+d}'.replace('+0', '0').replace('-', '−') +
                  ('. Det är det högsta, eftersom det stoppar O.' if k == 'B' else '. O kan då vinna.')) for k, v in varden.items()],
             'Vilken nod har högst värde?', 2)
+    # Del c (varför datorn blockerar) togs bort efter felrapport 2026-11-23 14:31 (”del C var konstig”).
     c = val('Datorn väljer ett drag som bara leder till oavgjort, värdet 0. Varför försöker den inte vinna i stället?',
             [step('O hotar att vinna', 'O har två i den högra kolumnen. Om X inte lägger i B vinner O direkt.'),
              step('Minimax räknar med bästa motspel', 'Med A eller C kan O vinna. Bästa X kan garantera är oavgjort.')],
@@ -522,9 +523,9 @@ def t379():
              alt('Datorn räknar bara ett drag framåt', False, 'Datorn räknar igenom alla fortsättningar till spelets slut.'),
              alt('Ruta B ger flest egna möjligheter att vinna', False, 'B ger ingen egen vinst. Den stoppar O:s vinst.')],
             'Vad händer om datorn inte lägger i B?', 3)
-    u = uppgift('3.79', 'minimax', 'Tolka och resonera om minimax', intro, [a, b, c], 'Minimax räknar med att motspelaren spelar sitt bästa drag.',
+    u = uppgift('3.79', 'minimax', 'Tolka och resonera om minimax', intro, [a, b], 'Minimax räknar med att motspelaren spelar sitt bästa drag.',
                 ['procedur', 'resonemang'])
-    return oppen_pa_papper(u, ['c'])
+    return u
 
 
 # ======================================================================== 3.80 schackdator

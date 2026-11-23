@@ -6,7 +6,7 @@ const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),
 const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id),del=k=>q(k.slice(0,-1)).spelDelar.find(d=>d.etikett===k.slice(-1));
 const rätt=k=>{const d=del(k);return d.svarstyp==='alternativ'?d.alternativ.filter(x=>x.ratt).map(x=>x.txt).join('|'):JSON.stringify(d.rättSvar);};
 const NYA=['1.107','1.108','2.117','2.118','2.119','2.120','2.121','2.122','3.79','3.80'];
-const ÖPPNA={'1.107':['d'],'1.108':['d'],'2.117':['e'],'2.118':['d'],'2.119':['d'],'2.120':['d'],'2.121':['d'],'2.122':['c','d'],'3.79':['c'],'3.80':['e']};
+const ÖPPNA={'1.107':['d'],'1.108':['d'],'2.117':['e'],'2.118':['d'],'2.119':['d'],'2.120':['d'],'2.121':['d'],'2.122':['c','d'],'3.80':['e']};
 const L=xs=>JSON.stringify(xs.join(', '));
 const adj=E=>{const g={};for(const[x,y,w=1]of E){(g[x]??=[]).push([y,w]);(g[y]??=[]).push([x,w]);}for(const k in g)g[k].sort((p,r)=>p[0].localeCompare(r[0]));return g;};
 function bfsG(E,s,m){const g=adj(E),kö=[s],sett=new Set([s]),far={},ut=[],d={[s]:0};while(kö.length){const n=kö.shift();ut.push(n);if(n===m)break;for(const[v]of g[n])if(!sett.has(v)){sett.add(v);far[v]=n;d[v]=d[n]+1;kö.push(v);}}
@@ -19,8 +19,8 @@ const kortast=(E,s,m)=>astarG(E,new Proxy({},{get:()=>0}),s,m).kost;
 
 test('format: självrättande i Kunskapsgymmet, öppna förklaringsfrågor på papper',()=>{
  for(const id of NYA){const u=q(id);a.ok(u,id);a.equal(u.spel,true);a.equal(u['självrättning'],true);a.match(u.t,/<svg|<table/,id);
-  a.ok(u.spelDelar.some(d=>['C','A'].includes(d.niva)),id+': har C eller A');
-  for(const e of ÖPPNA[id]){const d=del(id+e);a.equal(d.svarstyp,'alternativ',id+e);a.ok(d.alternativ.length>=4);
+  if(id!=='3.79') a.ok(u.spelDelar.some(d=>['C','A'].includes(d.niva)),id+': har C eller A'); // 3.79 c (C-delen) togs bort 2026-11-23
+  for(const e of ÖPPNA[id]||[]){const d=del(id+e);a.equal(d.svarstyp,'alternativ',id+e);a.ok(d.alternativ.length>=4);
    for(const x of d.alternativ){a.ok(x.kommentar.length>15,id+e);a.ok(!u.t.includes('</strong> '+x.txt+'</p>'),id+e+': alternativen syns inte på papper');}
    const para=u.t.match(new RegExp(`<p>${e}\\) ([^<]*)</p>`));a.ok(para,id+e);a.doesNotMatch(para[1],/Välj ett alternativ/,id+e);
    const start=u.s.indexOf(`<span class="facit-mark">${e})</span>`),slut=u.s.indexOf('<div class="facit-del">',start);
@@ -81,7 +81,7 @@ test('luffarschack och schackdator räknas om',()=>{
  const mm=(b,tur)=>{const w=vinst(b);if(w)return w==='X'?1:-1;if(!b.includes('.'))return 0;const v=[...b].map((c2,i)=>c2==='.'?mm(b.slice(0,i)+tur+b.slice(i+1),tur==='X'?'O':'X'):null).filter(x=>x!==null);return tur==='X'?Math.max(...v):Math.min(...v);};
  const B0='X..X.OOXO',tomma=[...B0].map((x,i)=>x==='.'?i:-1).filter(i=>i>=0),värde=tomma.map(i=>mm(B0.slice(0,i)+'X'+B0.slice(i+1),'O'));
  a.equal(rätt('3.79a'),String(värde[0]));a.equal(rätt('3.79b'),'Draget till '+'ABC'[värde.indexOf(Math.max(...värde))]);a.equal(JSON.stringify(värde),'[-1,0,-1]');
- a.ok(tomma.some(i=>vinst(B0.slice(0,i)+'O'+B0.slice(i+1))==='O'),'O hotar att vinna');a.match(rätt('3.79c'),/kan O vinna/);
+ a.ok(tomma.some(i=>vinst(B0.slice(0,i)+'O'+B0.slice(i+1))==='O'),'O hotar att vinna'); // 3.79 c borttagen 2026-11-23
  const ab=(t,max,al=-Infinity,be=Infinity,logg=[])=>{if(typeof t==='number'){logg.push(t);return t;}let v=max?-Infinity:Infinity;for(const k of t){const x=ab(k,!max,al,be,logg);if(max){v=Math.max(v,x);al=Math.max(al,v);}else{v=Math.min(v,x);be=Math.min(be,v);}if(al>=be)break;}return v;};
  const V=[[3,5],[1,4],[2,0,6]],l1=[];a.equal(ab(V,true,-Infinity,Infinity,l1),3);a.equal(l1.length,4);
  a.equal(rätt('3.80a'),'3');a.match(rätt('3.80b'),/^Nej/);a.equal(rätt('3.80c'),'1');
