@@ -27,6 +27,7 @@ test('nivåer: mest E, C i varje kort, A bara i 4.33c, neurala nätverk utan A',
  for(const u of ml)for(const omr of [u.omr])a.ok(ml.filter(x=>x.omr===omr).some(x=>x.spelDelar.some(d=>d.niva==='C')),omr);
 });
 
+// Frågornas ordalydelse ändrad i språkomskrivningen 2026-11-23 (tools/sprak/omskr/ai_kap4.py).
 test('klassificeringsmatriser 4.20–4.29: alla mått räknas om ur tabellen',()=>{
  for(let i=20;i<=29;i++){const u=q('4.'+i);
   const cells=[...u.spelIntro.matchAll(/<td[^>]*>(\d+)<\/td>/g)].map(m=>+m[1]);a.equal(cells.length,4,u.id);
@@ -34,7 +35,7 @@ test('klassificeringsmatriser 4.20–4.29: alla mått räknas om ur tabellen',()
   for(const d of u.spelDelar){const f=d.fraga,k=u.id+d.etikett;let v;
    if(/träffsäkerheten/.test(f))v=r3((tp+tn)/n);else if(/precisionen,/.test(f))v=r3(P);else if(/recall \(täckningen\)/.test(f))v=r3(R);
    else if(/F1-värdet/.test(f)){v=Math.round(2*P*R/(P+R)*100)/100;a.equal(d.tolerans,0.005,k);a.ok(Math.abs(2*P*R/(P+R)-v)<=0.005);}
-   else if(/klassade modellen fel/.test(f))v=fp+fn;else if(/var verkligen/.test(f))v=tp+fn;else if(/fast de egentligen var/.test(f))v=fp;else if(/missade modellen/.test(f))v=fn;
+   else if(/klassade modellen fel/.test(f))v=fp+fn;else if(/var verkligen|hade verkligen|sades orden verkligen/.test(f))v=tp+fn;else if(/fast de egentligen (inte )?var|fast det egentligen var/.test(f))v=fp;else if(/missade modellen/.test(f))v=fn;
    if(v===undefined){a.equal(d.svarstyp,'alternativ',k);continue;}
    a.equal(d.rättSvar,v,k);if(d.tolerans!==0.005){a.equal(d.tolerans,0,k);a.equal(r3((tp+tn)/n)===v||true,true);}
   }}
