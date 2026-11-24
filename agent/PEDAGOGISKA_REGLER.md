@@ -328,3 +328,18 @@ kan använda dessa samband när de är det som prövas. Vid metodbyte kontroller
 
 ## Standardavvikelse i Ma2: metod utan formel (2026-11-05)
 Eleverna behöver inte kunna eller känna igen standardavvikelsens formel. Använd GeoGebra för att ta fram Sx ur data och beskriv inmatning och avläsning i facit. Utforma även ledtrådar, alternativ och separata kort utan hänvisning till formelns komponenter. Om uppgiften kräver formeln, konstruera om den så den går att lösa med kursens begrepp och verktyg. Fortsätt använda Sx som tidigare beslutats; σ kan fortfarande förekomma som parameter i normalfördelning.
+
+## Förmågor och provpoäng i matematik
+
+Läs hela elevfrågan, inklusive deluppgifterna, och lös den på kursens nivå. Tagga de förmågor eleven behöver visa. Använd kursprov som jämförelse för enskilda uppgifter. Fördelningen över ett helt prov är inget kvotmål för träningsbanken.
+
+| Förmåga | Vad eleven visar |
+|---|---|
+| Begrepp | Eleven beskriver, skiljer mellan eller knyter ihop begrepp och representationer. |
+| Procedur | Eleven använder en etablerad metod, exempelvis utveckling av en potens eller derivering med kedjeregeln. En ren beräkning får P. |
+| Problemlösning | Eleven måste själv finna en strategi för att komma vidare. Det kan räcka med en enkel idé på E-nivå. Pröva vid A-uppgifter om en anvisad standardmetod ensam löser uppgiften. |
+| Modellering | Eleven formulerar, väljer, tolkar eller värderar ett matematiskt samband i sitt sammanhang. Ett startvärdes betydelse i en regressionsmodell ger M. Receptomräkning med en given proportion ger P. |
+| Resonemang | Eleven motiverar en slutsats, förklarar varför något gäller, granskar ett argument eller för ett bevis. Läs vad ”avgör om” kräver. Direkt insättning eller avläsning kan räcka för ett ja eller nej. |
+| Kommunikation | På C- eller A-nivå kräver uppgiften en sammanhängande skriftlig lösning där beteckningar, mellanled och slutsats kan bedömas. Ett kort med enbart slutsvar får ingen K-tagg. |
+
+För K läggs exakt en poäng till i uppgiftens befintliga C- eller A-kolumn i `poang`. Skriv i facit vilken kvalitet som krävs för denna poäng. Läraren ska kunna ge full matematisk utdelning även om eleven mister K-poängen. Håll träningsnivå och XP åtskilda från provpoäng. Vid uppdelning i självrättande delkort bedöms varje kort efter sin egen fråga.

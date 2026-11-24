@@ -3892,3 +3892,5 @@ kunskapsgymmet även om man använder fler eller färre decimaler (så länge de
 ## Matematik – procedur och problemlösning, 2026-11-24
 
 Bedöm strategivalet i den konkreta frågan på kursens nivå. En given ekvation med parentesprodukter, standardberäkning av en tangent i en given punkt eller direkt integrering av ett givet positivt flöde kan kräva flera steg och ändå vara en rutinuppgift. Behåll problemlösning när eleven exempelvis själv måste finna en geometrisk konstruktion eller kombinera villkor för att hitta en framkomlig väg. Samtliga bedömda ID:n finns i [förmågegranskningen](MATEMATIK_FORMAGOR_2026-11-24.md).
+
+För de sex matematiska förmågorna och separat K-poäng, följ [förmågoreglerna](PEDAGOGISKA_REGLER.md#förmågor-och-provpoäng-i-matematik). Beslut per uppgift finns i [andra granskningsomgången](MATEMATIK_FORMAGOR_2026-11-24.md#andra-omgången).

@@ -868,7 +868,7 @@ table.ov th{background:var(--card-2)}table.ov th,table.ov td{padding:10px 11px}.
             <button class="btn btn-out" id="printBtn">Skriv ut eller spara som PDF</button>
           </div>
           <details class="dinline"><summary>Klassens resultat per innehåll<span class="chev">▸</span></summary><div class="dbody"><div class="viewsw" role="group" aria-label="Visning"><button class="vw on" data-areaview="area">Per innehåll</button><button class="vw" data-areaview="level">Delat på svårighet</button></div><div id="detArea"></div></div></details>
-          <details class="dinline" id="detAbilityWrap"><summary>Klassens resultat per förmåga<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">En uppgift med två förmågor delas lika mellan dem, så att samma poäng inte räknas dubbelt.</div><div id="detAbility"></div></div></details>
+          <details class="dinline" id="detAbilityWrap"><summary>Klassens resultat per förmåga<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">Kommunikationspoängen bedöms separat när den har en egen poängruta. Övriga poäng fördelas lika mellan uppgiftens övriga förmågor.</div><div id="detAbility"></div></div></details>
           <details class="dinline" id="detFamilyWrap"><summary>Klassens resultat per uppgiftstyp<span class="chev">▸</span></summary><div class="dbody"><div class="meta-note">Uppgiftstyper visar mer specifikt vilken typ av färdighet uppgifterna prövar. Uppgifter som lagts in manuellt utan metadata för uppgiftstyp räknas inte här.</div><div id="detFamily"></div></div></details>
           <details class="dinline"><summary>Klassens resultat per uppgift<span class="chev">▸</span></summary><div class="dbody"><div id="detTask"></div></div></details>
           <details class="dinline" id="detLevelWrap"><summary>Klassens resultat per svårighetsnivå<span class="chev">▸</span></summary><div class="dbody"><div id="detLevel"></div></div></details>
@@ -1150,7 +1150,7 @@ function normalizeState(s){ const d=defaultState(); s=Object.assign(d,s||{}); s.
   s.tasks=(s.tasks||[]).map(t=>{
     const legacyLevel=t.level||null;
     let parts;
-    if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:p.id,max:p.max??"",level:p.level||p.niva||p["nivå"]||legacyLevel||null}));
+    if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:p.id,...(p.ability?{ability:p.ability}:{}),max:p.max??"",level:p.level||p.niva||p["nivå"]||legacyLevel||null}));
     else parts=[{id:t.id,max:t.max??"",level:legacyLevel}];
     const src=(t.source&&typeof t.source==="object")?Object.assign({},t.source):{};
     if(!Array.isArray(src.abilities)){
@@ -1308,11 +1308,12 @@ function letter(i){
   for(let n=i+1;n>0;n=Math.floor((n-1)/26)) text=String.fromCharCode(97+(n-1)%26)+text;
   return text;
 }
-function partLabel(t,pi){ return t.parts.length>1 ? letter(pi)+")" : "Poäng"; }
+function partLabel(t,pi){ if(t.parts[pi]?.ability==="kommunikation") return "K"; return t.parts.length>1 ? letter(pi)+")" : "Poäng"; }
 function partLevel(p,t){ return +(p&&p.level||t&&t.level||0)||null; }
 function levelOptions(level){ return '<option value="" '+(!level?'selected':'')+' disabled hidden>Välj nivå</option>'+[1,2,3,4,5].map(l=>`<option value="${l}" ${+level===l?"selected":""}>Nivå ${l}${l===1?" · grund":l===3?" · medel":l===5?" · avancerad":""}</option>`).join(""); }
 function partCode(ti,pi,pc){
-  const n=taskNo(validTasks()[ti]);
+  const t=validTasks()[ti], n=taskNo(t);
+  if(t.parts[pi]?.ability==="kommunikation") return n+" K";
   return String(n)+(pc>1?(typeof n==='string'?'.':'')+letter(pi):'');
 }
 function taskMax(t){ return t.parts.reduce((a,p)=>a+num(p.max),0); }
@@ -1337,9 +1338,9 @@ function taskNo(t){
 function taskAreas(t){ return (t.areas&&t.areas.length)?t.areas:["(utan område)"]; }
 function studentTaskPoints(s,t){ return t.parts.reduce((a,p)=>a+num(s.scores[p.id]),0); }
 function usedAreas(){ const o=[]; validTasks().forEach(t=>taskAreas(t).forEach(a=>{ if(!o.includes(a)) o.push(a); })); return o; }
-const ABILITY_LABELS={begrepp:"Begrepp",procedur:"Procedur",resonemang:"Resonemang",modellering:"Modellering","problemlösning":"Problemlösning"};
-const ABILITY_ORDER=["begrepp","procedur","resonemang","modellering","problemlösning"];
-function normalizeAbility(a){ if(!a) return null; const x=String(a).trim().toLowerCase().replace(/ö/g,"o").replace(/å/g,"a").replace(/ä/g,"a"); const map={begrepp:"begrepp",procedur:"procedur",resonemang:"resonemang",modellering:"modellering",problemlosning:"problemlösning",problemloesning:"problemlösning"}; return map[x]||null; }
+const ABILITY_LABELS={kommunikation:"Kommunikation",begrepp:"Begrepp",procedur:"Procedur",resonemang:"Resonemang",modellering:"Modellering","problemlösning":"Problemlösning"};
+const ABILITY_ORDER=["begrepp","procedur","resonemang","modellering","problemlösning","kommunikation"];
+function normalizeAbility(a){ if(!a) return null; const x=String(a).trim().toLowerCase().replace(/ö/g,"o").replace(/å/g,"a").replace(/ä/g,"a"); const map={kommunikation:"kommunikation",begrepp:"begrepp",procedur:"procedur",resonemang:"resonemang",modellering:"modellering",problemlosning:"problemlösning",problemloesning:"problemlösning"}; return map[x]||null; }
 function taskAbilities(t){ const raw=(t.source&&Array.isArray(t.source.abilities))?t.source.abilities:[]; return [...new Set(raw.map(normalizeAbility).filter(Boolean))]; }
 function taskFamily(t){ return (t.source&&typeof t.source.family==="string"&&t.source.family)?t.source.family:null; }
 function familyLabel(f){
@@ -1350,10 +1351,26 @@ function familyLabel(f){
 }
 function usedAbilities(){ return ABILITY_ORDER.filter(a=>validTasks().some(t=>taskAbilities(t).includes(a))); }
 function abilityTaskCount(a){ return validTasks().filter(t=>taskAbilities(t).includes(a)).length; }
-function classAbilityMaxOnly(a){ let m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(w) m+=taskMax(t)*w; }); return m; }
-function abilityWInTask(t,a){ const aa=taskAbilities(t); return aa.includes(a)?1/aa.length:0; }
-function studentAbilityPct(st,a){ let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; g+=studentTaskPoints(st,t)*w; m+=taskMax(t)*w; }); return m?g/m:0; }
-function classAbilityAvg(a){ const act=activeStudents(),n=act.length||1; let g=0,m=0; validTasks().forEach(t=>{ const w=abilityWInTask(t,a); if(!w)return; act.forEach(st=>g+=studentTaskPoints(st,t)*w); m+=taskMax(t)*w; }); return {got:g/n,max:m,pct:m?(g/n)/m:0}; }
+function abilityPoints(t, ability, student){
+  const tagged = taskAbilities(t);
+  const separate = new Set(t.parts.map(p=>p.ability).filter(Boolean));
+  const shared = tagged.filter(a=>!separate.has(a));
+  return t.parts.reduce((sum,p)=>{
+    const points = student ? num(student.scores[p.id]) : num(p.max);
+    if(p.ability) return sum + (p.ability===ability ? points : 0);
+    return sum + (shared.includes(ability) ? points/shared.length : 0);
+  },0);
+}
+function classAbilityMaxOnly(a){ return validTasks().reduce((m,t)=>m+abilityPoints(t,a),0); }
+function studentAbilityPct(st,a){
+  const max=classAbilityMaxOnly(a);
+  return max ? validTasks().reduce((g,t)=>g+abilityPoints(t,a,st),0)/max : 0;
+}
+function classAbilityAvg(a){
+  const students=activeStudents(), max=classAbilityMaxOnly(a);
+  const pct=students.reduce((g,st)=>g+studentAbilityPct(st,a),0)/(students.length||1);
+  return {got:pct*max,max,pct};
+}
 function usedFamilies(){ const out=[]; validTasks().forEach(t=>{ const f=taskFamily(t); if(f&&!out.includes(f))out.push(f); }); return out; }
 function familyTaskCount(f){ return validTasks().filter(t=>taskFamily(t)===f).length; }
 function studentFamilyPct(st,f){ let g=0,m=0; validTasks().filter(t=>taskFamily(t)===f).forEach(t=>{g+=studentTaskPoints(st,t);m+=taskMax(t);}); return m?g/m:0; }
@@ -1832,7 +1849,7 @@ function dupTask(i){
   const t=state.tasks[i],source=t.source?JSON.parse(JSON.stringify(t.source)):null;
   if(source) delete source.documentGroup;
   const copy={id:nextId++,areas:[...(t.areas||[])],level:t.level,weights:Object.assign({},t.weights||{}),
-    parts:t.parts.map(p=>({id:nextId++,max:p.max,level:partLevel(p,t)})),source};
+    parts:t.parts.map(p=>({id:nextId++,...(p.ability?{ability:p.ability}:{}),max:p.max,level:partLevel(p,t)})),source};
   let pos=i+1;
   const group=t.source?.documentGroup;
   if(group) while(pos<state.tasks.length&&state.tasks[pos].source?.documentGroup===group) pos++;
@@ -1882,7 +1899,7 @@ function renderGrid(){
   validTasks().forEach(t=>{ r1+=`<th class="area-h grp" colspan="${t.parts.length}">${taskNo(t)}.<span class="mx">${esc(taskAreas(t).join(", "))}</span></th>`; });
   r1+=`<th class="tot-col" rowspan="2">Totalt<span class="mx">av ${fmt(totalMax())||"0"}</span></th>`;
   r1+=`<th class="rm-col" rowspan="2"></th></tr>`;
-  let r2="<tr>"; cols.forEach(c=>{ r2+=`<th class="${c.pi===0?'grp':''}">${c.pc>1?letter(c.pi)+")":""}<span class="mx">max ${fmt(c.p.max)||"?"}${partLevel(c.p,c.t)?" · N"+partLevel(c.p,c.t):""}</span></th>`; }); r2+="</tr>";
+  let r2="<tr>"; cols.forEach(c=>{ r2+=`<th class="${c.pi===0?'grp':''}">${c.pc>1?partLabel(c.t,c.pi):""}<span class="mx">max ${fmt(c.p.max)||"?"}${partLevel(c.p,c.t)?" · N"+partLevel(c.p,c.t):""}</span></th>`; }); r2+="</tr>";
   const table=document.createElement("table"); table.className="grid"; table.innerHTML="<thead>"+r1+r2+"</thead>"; const tbody=document.createElement("tbody");
   state.students.forEach((s,r)=>{
     const tr=document.createElement("tr"); if(s.absent) tr.className="absent-row";
@@ -2128,7 +2145,7 @@ function snapshotOf(t){
       grades: gradesValid()? gradeDistribution() : null,
       students: act.map(x=>{ const v=studentTotals(x);
         const ar={}; usedAreas().forEach(a=>{ ar[a]={got:studentAreaPoints(x,a),max:areaMax(a)}; });
-        const ab={}; usedAbilities().forEach(a=>{ let m=0; validTasks().forEach(t=>m+=taskMax(t)*abilityWInTask(t,a)); ab[a]={got:studentAbilityPct(x,a)*m,max:m}; });
+        const ab={}; usedAbilities().forEach(a=>{ const m=classAbilityMaxOnly(a); ab[a]={got:studentAbilityPct(x,a)*m,max:m}; });
         return {name:(x.name||"").trim(), pts:v.pts, max:v.max, pct:v.pct, grade:v.grade||null,
                 areas:ar, abilities:ab, levels:studentLevelStats(x)}; })
     };
@@ -2510,9 +2527,9 @@ function buildPrint(){
 function printStudents(){ if(!validTasks().length||!activeStudents().length){ alert("Det finns inga elevresultat att skriva ut."); return; } buildPrint(); window.print(); }
 
 /* ===== Provfil + bibliotek ===== */
-function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level||null,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,max:p.max,level:partLevel(p,t)})),source:t.source||null}))}; }
+function currentTestData(){ return {testName:state.testName,grades:state.grades,areas:state.areas,tasks:state.tasks.map(t=>({areas:t.areas,level:t.level||null,weights:t.weights||{},parts:t.parts.map(p=>({id:p.id,...(p.ability?{ability:p.ability}:{}),max:p.max,level:partLevel(p,t)})),source:t.source||null}))}; }
 function applyTestData(d){ state.testName=d.testName||""; state.grades=Object.assign({e:"",d:"",c:"",b:"",a:""},d.grades||{}); state.areas=d.areas||[]; nextId=1;
-  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; const legacy=t.level||null; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,max:p.max??"",level:p.level||p.niva||p["nivå"]||legacy})); else parts=[{id:nextId++,max:t.max??"",level:legacy}]; return {id:tid,areas:t.areas||[],level:legacy,weights:t.weights||{},parts,source:t.source||null}; });
+  state.tasks=(d.tasks||[]).map(t=>{ const tid=nextId++; const legacy=t.level||null; let parts; if(Array.isArray(t.parts)&&t.parts.length) parts=t.parts.map(p=>({id:nextId++,...(p.ability?{ability:p.ability}:{}),max:p.max??"",level:p.level||p.niva||p["nivå"]||legacy})); else parts=[{id:nextId++,max:t.max??"",level:legacy}]; return {id:tid,areas:t.areas||[],level:legacy,weights:t.weights||{},parts,source:t.source||null}; });
   renderAll(); save(); }
 function saveTestFile(){ const blob=new Blob([JSON.stringify(currentTestData(),null,2)],{type:"application/json"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=((state.testName||"prov").replace(/[^\w åäöÅÄÖ-]/g,"").trim()||"prov")+".prov.json"; a.click(); URL.revokeObjectURL(a.href); }
 function loadTestFile(file){ const r=new FileReader(); r.onload=()=>{ try{ applyTestData(JSON.parse(r.result)); }catch(e){ alert("Filen kunde inte läsas. Är det en sparad provmall?"); } }; r.readAsText(file); }

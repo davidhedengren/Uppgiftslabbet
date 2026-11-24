@@ -380,3 +380,39 @@ ID i kolumnen **Rutin** har fått taggen problemlösning borttagen. **Behåller 
 ## Verifiering
 
 Strukturerad jämförelse före och efter visar att bara den bedömda taggen ändrades på de 409 huvuduppgifterna. GeoGebra och miniräknare kontrollerades för dessa uppgifter och deras delkort. Master och konsument har identiska bankfiler. Den fullständiga bankvalidatorn gav samma fynd före och efter ändringen (1 322 fel, 155 varningar, 1 358 informationsposter i åtta banker).
+
+## Andra omgången
+
+Alla fem matematikbanker genomsöktes. Följande lista avser ändrade huvuduppgifter. En given räkneoperation, en uttrycklig uppmaning att motivera samt bevis med självständig skriftlig redovisning har granskats. Frågorna Ma2 3.282 och 3.286 ber eleven identifiera ett villkor för likformighet. Orden ”visa att” syftar där på satsens användning. I Ma2 3.123 måste eleven kombinera diagonalvillkoret med hur sidorna förändras. I Ma1 2.25 behöver eleven använda villkoret för den sammansatta funktionen. Fortsatt individuell granskning återstår för bland annat modellering och strategival på E-nivå.
+
+### ma1
+
+- Begärd motivering (14) — 0.274, 1.161, 2.201, 2.221, 2.313, 2.346, 2.374, 2.432, 3.403, 4.125, 5.27, 2.550, 2.551, 2.552.
+- En given beräkning (9) — 0.321, 0.324, 0.418, 0.856, 0.875, 0.1063, 1.1140, 1.1143, 1.1171.
+- Kommunikation (4) — 0.591, 0.592, 1.141, 1.201.
+- Individuell bedömning (4) — 2.25, 2.212, 4.448, 0.937.
+- Stavning (2) — 2.342, 2.344.
+
+### ma2
+
+- Individuell bedömning (3) — 2.488, 3.123, 4.2097.
+- Kommunikation (4) — 3.511, 3.438, 3.446, 3.447.
+- Begärd motivering (2) — 3.450, 4.268.
+
+### matf1
+
+- En given beräkning (30) — 1.143, 2.20, 2.22, 2.23, 2.65, 2.90, 2.91, 2.92, 2.119, 2.128, 2.129, 2.103, 3.35, 3.36, 3.59, 3.71, 1.518, 1.519, 1.520, 1.533, 1.534, 1.535, 1.538, 1.540, 1.543, 1.545, 1.547, 3.270, 3.271, 3.274.
+- Begärd motivering (23) — 2.21, 2.25, 2.88, 4.14, 4.36, 4.64, 4.89, 4.16, 4.32, 4.81, 1.483, 1.541, 2.511, 2.512, 2.513, 2.521, 1.574, 2.553, 3.267, 3.268, 3.273, 3.276, 4.506.
+
+### mato1
+
+- Begärd motivering (17) — 2.388, 3.171, 3.203, 3.512, 3.557, 3.756, 4.52, 3.890, 3.960, 3.1017, 3.1054, 3.1109, 2.785, 2.1234, 2.1249, 1.954, 1.955.
+- Kommunikation (4) — 4.33, 4.62, 4.133, 3.744.
+- En given beräkning (1) — 3.793.
+- Stavning (11) — 2.1173, 2.1174, 1.890, 1.892, 1.893, 1.899, 1.902, 1.904, 1.905, 1.910, 1.911.
+
+### mato2
+
+- En given beräkning (38) — 1.552, 2.492, 2.437, 2.502, 2.503, 2.504, 2.505, 2.442, 2.443, 2.444, 2.445, 2.446, 2.447, 2.448, 2.449, 2.450, 2.452, 2.510, 2.511, 2.473, 2.426, 2.427, 2.428, 2.429, 2.518, 2.519, 2.520, 2.521, 3.411, 3.483, 3.484, 3.485, 4.451, 4.468, 4.469, 4.488, 4.491, 4.501.
+
+Strukturerad jämförelse visade 166 ändrade huvuduppgifter. Tolv fick en extra poäng i rätt nivåkolumn och ett bedömningsvillkor i facit. Alla fem bankkopior jämfördes byte för byte. Förmågefiltret, övningsbladsurvalet och separat bedömning av K klarade regressionstesterna. I verktygspolicytestet avviker GeoGebra-flaggan för en normalfördelningsfigur även i utgångsversionen. Den fristående fullvalidatorn fanns inte i dessa repon.

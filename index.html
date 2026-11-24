@@ -5549,6 +5549,7 @@ function ulLösenordUpplåst(){
         <button type="button" data-formaga="resonemang" aria-pressed="true">Resonemang</button>
         <button type="button" data-formaga="modellering" aria-pressed="true">Modellering</button>
         <button type="button" data-formaga="problemlösning" aria-pressed="true">Problemlösning</button>
+        <button type="button" data-formaga="kommunikation" aria-pressed="true">Kommunikation</button>
       </div>
       <div class="kryssgrupp">
         <label class="kryss" for="visaPoäng">
@@ -6065,7 +6066,7 @@ let LOGO='logo.png';
 /* ═══ tillstånd ═══ */
 let AKTIV=null;                                   /* vald kurs */
 let DB={bank:[],kapnamn:{},omr:{}};               /* kursens data */
-const FORMAGOR=['begrepp','procedur','resonemang','modellering','problemlösning'];
+const FORMAGOR=['begrepp','procedur','resonemang','modellering','problemlösning','kommunikation'];
 const state={omr:new Set(),nivåer:new Set(['E','C','A']),formagor:new Set(FORMAGOR),sök:'',blad:[],visaPoäng:false,spår:null,
   /* Hjälpmedelsfiltret är av/på: true = visa bara uppgifter där
      hjälpmedlet är tillåtet, false = filtrera inte alls. */
@@ -7083,6 +7084,7 @@ function byggFormagefilter(){
   const harMetadata=DB.bank.some(x=>Array.isArray(x.formaga)?x.formaga.length:Boolean(x.formaga));
   box.hidden=!harMetadata;
   $$('#formagefilter [data-formaga]').forEach(b=>{
+    b.hidden=b.dataset.formaga==='kommunikation' && !AKTIV.id.startsWith('ma');
     b.setAttribute('aria-pressed',state.formagor.has(b.dataset.formaga));
   });
 }
@@ -8855,7 +8857,9 @@ function byggAnalysOverforing({blad=state.blad, omr=DB.omr, kurs=AKTIV, spår=st
       areas:[omradesnamn],
       level:analysNiva(x.niva),
       weights:{[omradesnamn]:1},
-      parts:maxdelar.map(max=>({id:nextId++,max})),
+      parts:x.formaga?.includes('kommunikation') && maxdelar.length===1 && maxdelar[0]>1
+        ? [{id:nextId++,max:maxdelar[0]-1},{id:nextId++,max:1,ability:'kommunikation'}]
+        : maxdelar.map(max=>({id:nextId++,max})),
       source:{
         bankId:x.id,
         family:x.familj||null,
