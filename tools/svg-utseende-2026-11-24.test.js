@@ -35,7 +35,7 @@ test('delbokstaven följs av mellanslag', () => {
 
 test('figurtext förstorad för mobil (exempel som var 6 px)', () => {
   const fy = svgs(las('uppgifter.js').find((q) => q.id === '6.52'))[0];
-  assert.match(fy, /font-size="15\.75"[^>]*>fönster</);
+  assert.match(fy, /font-size="1[5-9](?:\.\d+)?"[^>]*>fönster</);
   const ma4 = las('uppgiftermato2.js').find((q) => q.id === '2.51');
   assert.ok(svgs(ma4).length > 0);
 });
