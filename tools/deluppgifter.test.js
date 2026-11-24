@@ -218,3 +218,21 @@ test('Långa grupper fortsätter med aa) efter z)',()=>{
   assert.equal(c.bladNumrering()[25].etikett,'1 z)');
   assert.equal(c.bladNumrering()[26].etikett,'1 aa)');
 });
+
+test('Till analys hämtar valt sparat dokument när en annan kurs har samma uppgifts-ID',async()=>{
+  const c=setup(), före=plain(c.state.blad);
+  c.KURSER=[{id:'annan',titel:'Annan kurs'}];
+  c.läsKursdata=async()=>({bank:[{id:'a',kap:1,omr:'rörelse',niva:'A',poang:'0/0/3',t:'Sparad kurs'}],omr:{1:{rörelse:'Rörelse'}}});
+  let överfört;
+  c.localStorage={setItem:(_,v)=>{överfört=JSON.parse(v);}};
+  c.window={location:{}};c.APP_ROOT='/';c.ANALYS_TRANSFER_KEY='test';c.sparAutosparaNu=()=>{};
+  load(c,html,['analyseraSparatDokument']);
+  await c.analyseraSparatDokument({course:'annan',tasks:[{bankId:'a'}],settings:{title:'Mitt sparade blad',className:'TE2'}});
+  assert.equal(överfört.data.testName,'Mitt sparade blad');
+  assert.equal(överfört.className,'TE2');assert.equal(överfört.courseName,'Annan kurs');
+  assert.deepEqual(överfört.data.tasks[0].areas,['Rörelse']);
+  assert.equal(överfört.data.tasks[0].parts[0].max,3);
+  assert.deepEqual(plain(c.state.blad),före);
+  assert.equal(c.window.location.href,'/analys/?from=uppgiftslabbet');
+  assert.doesNotMatch(html,/<button[^>]+id="tillAnalys"/);
+});

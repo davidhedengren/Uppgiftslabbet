@@ -5085,7 +5085,7 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* Tydlig fysisk knappkänsla: ljus kant, bottenkant och en liten lyftning. */
-#sparaDokument,#laddaDokument,#nyttDokument,#delaDokument,#delaMedAlla,#oppnaLayout,#tillAnalys,
+#sparaDokument,#laddaDokument,#nyttDokument,#delaDokument,#delaMedAlla,#oppnaLayout,
 #expPdf,#expWord,#lrPdf,#lrWord,#lrKlar{
   border:1px solid rgba(31,38,48,.18)!important;
   background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F7 100%)!important;
@@ -5093,13 +5093,13 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 2px 0 rgba(96,104,116,.22),0 4px 10px rgba(31,38,48,.09)!important;
   transform:translateY(0);transition:transform .14s ease,box-shadow .14s ease,background .14s ease,border-color .14s ease!important;
 }
-#sparaDokument:hover,#laddaDokument:hover,#nyttDokument:hover,#delaDokument:hover,#delaMedAlla:hover,#oppnaLayout:hover,#tillAnalys:hover,
+#sparaDokument:hover,#laddaDokument:hover,#nyttDokument:hover,#delaDokument:hover,#delaMedAlla:hover,#oppnaLayout:hover,
 #expPdf:hover,#expWord:hover,#lrPdf:hover,#lrWord:hover,#lrKlar:hover{
   transform:translateY(-1px);border-color:rgba(31,38,48,.26)!important;
   background:linear-gradient(180deg,#FFFFFF 0%,#ECEFF3 100%)!important;
   box-shadow:inset 0 1px 0 #fff,0 3px 0 rgba(96,104,116,.20),0 7px 14px rgba(31,38,48,.11)!important;
 }
-#sparaDokument:active,#laddaDokument:active,#nyttDokument:active,#delaDokument:active,#delaMedAlla:active,#oppnaLayout:active,#tillAnalys:active,
+#sparaDokument:active,#laddaDokument:active,#nyttDokument:active,#delaDokument:active,#delaMedAlla:active,#oppnaLayout:active,
 #expPdf:active,#expWord:active,#lrPdf:active,#lrWord:active,#lrKlar:active{
   transform:translateY(2px);box-shadow:inset 0 1px 2px rgba(31,38,48,.10),0 1px 0 rgba(96,104,116,.15)!important;
 }
@@ -5107,11 +5107,6 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   border-color:color-mix(in oklab,var(--ed) 48%,#BDC4CA)!important;
   background:linear-gradient(180deg,color-mix(in oklab,var(--ed-tint,#E6F0EC) 45%,#fff) 0%,color-mix(in oklab,var(--ed-tint,#E6F0EC) 82%,#F1F5F3) 100%)!important;
   color:var(--ed-dark,#0B5942)!important;
-}
-#tillAnalys{
-  border-color:rgba(42,90,147,.25)!important;
-  background:linear-gradient(180deg,#F9FCFF 0%,#E9F1FA 100%)!important;
-  color:#27588F!important;
 }
 .dokument-action{padding:6px 8px!important;border-radius:9px!important;font-size:10.5px!important;gap:4px!important;line-height:1!important;white-space:nowrap}
 .dokument-action svg{width:13px!important;height:13px!important}
@@ -5325,6 +5320,30 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   .bladfot{grid-template-columns:1fr!important}
   .bladfot>.exportrad{grid-column:1!important}
 }
+#bladverkstad{width:min(720px,calc(100vw - 24px));max-height:90dvh;padding:0;margin:auto;border:1px solid var(--line,#ddd);border-radius:18px;color:var(--ink,#242424);background:var(--surface,#fff);box-shadow:0 24px 90px #17171735}
+#bladverkstad[open]{display:flex;flex-direction:column}
+#bladverkstad::backdrop{background:#17191f80}
+#bladverkstad header,#bladverkstad footer{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;gap:10px}
+#bladverkstad header{border-bottom:1px solid #8883}#bladverkstad footer{justify-content:flex-end;border-top:1px solid #8883}
+#bladverkstad h2,#bladverkstad h3{margin:0}
+#bladverkstad footer{display:block}.bv-knappar{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+#bvStatus{margin:0 0 8px}#bvStatus:empty{display:none}
+#bvAnvänd:disabled{opacity:.48}
+.bv-kropp{padding:18px 22px;overflow:auto}.bv-fält,.bv-nivåer{display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+.bv-fält label:first-child{flex:1;min-width:180px}
+#bladverkstad input[type=number],#bladverkstad select{border:1px solid #8887;border-radius:7px;padding:7px;font:inherit;background:var(--surface,#fff);color:inherit}
+#bladverkstad select,.bv-fält input,.bv-nivåer input{display:block;margin-top:4px}#bladverkstad select{width:100%}#bladverkstad input[type=number]{width:5.5em}
+#bladverkstad label,#bladverkstad legend,#bladverkstad summary{font-size:14px}
+.bv-profiler{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;border:0;padding:0;margin:18px 0}
+.bv-profiler legend{font-weight:650;margin-bottom:6px}.bv-profiler label{display:flex;align-items:baseline;gap:5px;border:1px solid #8885;border-radius:10px;padding:10px;cursor:pointer}
+.bv-profiler label:has(:checked){border-color:var(--accent,#923720);background:#aa52200c}.bv-profiler small{display:block;line-height:1.35;margin-top:4px}
+.bv-anpassa{border-block:1px solid #8883;padding:10px 0}.bv-anpassa summary{cursor:pointer;font-weight:650}.bv-anpassa>label{display:block;margin:12px 0 6px}
+#bvFamiljer{max-height:220px;overflow:auto}.bv-familj{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0}
+#bladverkstad [hidden]{display:none!important}.bv-info,.bv-status,#bvDelar p{font-size:13px;line-height:1.4}.bv-status:empty{margin:0}
+#bvResultat{margin-top:18px}#bvLista{padding-left:26px}#bvLista li{padding:8px 0;border-bottom:1px solid #8883}
+.bv-meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:12px}.bv-meta b{margin-right:auto}.bv-text{font-size:14px;margin:6px 0;line-height:1.45}
+.bv-text svg,.bv-text img{max-width:100%;max-height:180px}.bv-text{overflow-x:auto}.bv-text p{margin:3px 0}
+@media(max-width:550px){.bv-profiler{grid-template-columns:1fr}.bv-profiler small{display:inline;margin-left:6px}.bv-kropp{padding:12px}.bv-profiler{margin:12px 0}}
 </style>
 
 </head>
@@ -5461,7 +5480,7 @@ function ulLösenordUpplåst(){
   <div class="slumpwrap" id="slumpwrapTop">
     <button class="knapp tyst" id="slumpaKnapp" type="button" aria-expanded="false" aria-controls="slumppanel">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
-      Slumpa
+      <span class="slumptext">Skapa övningsblad</span>
     </button>
   </div>
   <div class="konto-plats" data-konto-plats></div>
@@ -5523,7 +5542,7 @@ function ulLösenordUpplåst(){
   <aside class="höger">
     <div class="hogerverktyg">
       <div class="slumpwrap">
-        <button class="knapp tyst" id="slumpaKnappHoger" type="button" aria-expanded="false" aria-controls="slumppanel">Slumpa</button>
+        <button class="knapp tyst" id="slumpaKnappHoger" type="button" aria-expanded="false" aria-controls="bladverkstad"><span class="slumptext">Skapa övningsblad</span></button>
         <div class="slumppanel" id="slumppanel">
           <label for="slumpaAntal">Antal uppgifter</label>
           <div class="slumprad">
@@ -5565,12 +5584,7 @@ function ulLösenordUpplåst(){
         <div class="dokumenthuvud-kompakt" aria-label="Aktuellt dokument">
           <div class="dokumenthuvud-rubrikrad">
             <div class="dokumenthuvud-namn" id="bTitelVisa">Övningsblad</div>
-            <div class="dokumenthuvud-actions">
-              <button class="knapp liten dokument-action analys-mini" id="tillAnalys" type="button" title="Skicka provets uppgifter direkt till resultatanalysen">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v7.2l-4.7 7.2A2.3 2.3 0 0 0 7.2 21h9.6a2.3 2.3 0 0 0 1.9-3.6L14 10.2V3"/><path d="M7.7 16h8.6"/><path d="M10 13.2h4"/></svg>
-                Till analys
-              </button>
-            </div>
+
           </div>
           <div class="dokumenthuvud-meta" id="bMetaVisa">Ändra namn, klass och datum under Redigera.</div>
         </div>
@@ -5833,7 +5847,37 @@ function ulLösenordUpplåst(){
   </div>
 </div>
 
+<dialog id="bladverkstad" aria-labelledby="bvRubrik">
+  <header class="bv-huvud"><h2 id="bvRubrik">Skapa övningsblad</h2><button type="button" class="knapp tyst liten" data-bv-stäng>Stäng</button></header>
+  <div class="bv-kropp">
+    <div class="bv-fält">
+      <label>Område<select id="bvOmråde"></select></label>
+      <label>Antal uppgifter<input type="number" min="1" max="40" value="12" id="bvAntal"></label>
+    </div>
+    <fieldset class="bv-profiler"><legend>Vad ska eleverna träna på?</legend>
+      <label><input type="radio" name="bvProfil" value="rutin"><span><b>Mängdträning</b><small>Öva samma metod flera gånger.</small></span></label>
+      <label><input type="radio" name="bvProfil" value="varierad" checked><span><b>Varierad träning</b><small>Växla mellan delmoment och metoder.</small></span></label>
+      <label><input type="radio" name="bvProfil" value="stegring"><span><b>Stegvis svårare</b><small>Börja enkelt och öka svårigheten.</small></span></label>
+    </fieldset>
+    <details class="bv-anpassa"><summary>Anpassa urval</summary>
+      <label>Arbetsmängd<select id="bvLängd"><option value="alla">Blandad längd</option><option value="kort">Mest korta uppgifter</option><option value="lång">Mest längre eller flerdelade uppgifter</option></select></label>
+      <label><input id="bvNivåval" type="checkbox"> Ange antal per nivå</label>
+      <div id="bvNivåer" class="bv-nivåer" hidden></div>
+      <label><input id="bvDelval" type="checkbox"> Välj delmoment och antal</label>
+      <div id="bvDelar" hidden><p>Markera delmoment. Lämna antalet tomt för fri fördelning.</p><label id="bvFamiljsökRad" hidden>Sök delmoment<input type="search" id="bvFamiljsök"></label><div id="bvFamiljer"></div></div>
+    </details>
+    <p class="bv-info" id="bvUnderlag"></p>
+    <section id="bvResultat" hidden><h3>Uppgifter i bladet</h3><ol id="bvLista"></ol></section>
+  </div>
+  <footer><p class="bv-status" id="bvStatus" role="status"></p><div class="bv-knappar">
+    <button type="button" class="knapp tyst" data-bv-stäng>Avbryt</button>
+    <button class="knapp primär" id="bvDra" type="button">Skapa förslag</button>
+    <button class="knapp primär" type="button" id="bvAnvänd" disabled>Använd bladet</button>
+  </div></footer>
+</dialog>
+
 <div id="utskrift"></div>
+<script src="bladval.js"></script>
 
 <script>
 /* Webbläsaren minns annars sidans skrollposition mellan sidladdningar och
@@ -6332,12 +6376,12 @@ function sparAppliceraInstallningar(d){
   if(typeof uppdateraDokumentidentitet==='function') uppdateraDokumentidentitet();
 }
 /* Bygger bladets uppgifter ur ett sparat eller delat dokument. */
-function sparUppgifterUrDokument(doc){
+function sparUppgifterUrDokument(doc,banklista=DB.bank){
   const sparade=Array.isArray(doc?.tasks)?doc.tasks:(Array.isArray(doc?.blad)?doc.blad:[]);
   return sparade.slice().sort((a,b)=>(a?.order??0)-(b?.order??0)).map(t=>{
     const snapshot=t?.snapshot||(t&&typeof t==='object'&&(t.t||t.poang)?t:null);
     const bankId=t?.bankId??t?.id??(typeof t==='string'||typeof t==='number'?t:null);
-    const bank=bankId==null?null:DB.bank.find(x=>String(x.id)===String(bankId));
+    const bank=bankId==null?null:banklista.find(x=>String(x.id)===String(bankId));
     if(snapshot) return Object.assign({},bank||{},sparSnapshotUppgift(snapshot));
     return bank;
   }).filter(x=>x&&x.id!=null&&x.t!=null&&x.poang!=null);
@@ -6843,6 +6887,19 @@ function hämtaGlobal(namn){
   if(namn in window && window[namn]!==undefined) return window[namn];
   try{ return (0,eval)(namn); }catch(e){ return undefined; }
 }
+async function läsKursdata(kurs){
+  if(kurs.data) return kurs.data;
+  for(const f of kurs.filer) await laddaSkript(f);
+  const bank=synligaUppgifter(hämtaGlobal(kurs.globaler.bank));
+  const kapnamn=hämtaGlobal(kurs.globaler.kapnamn);
+  const omr=hämtaGlobal(kurs.globaler.omr);
+  const spar=kurs.globaler.spar?hämtaGlobal(kurs.globaler.spar):null;
+  const kapnamnSpar=kurs.globaler.kapnamnSpar?hämtaGlobal(kurs.globaler.kapnamnSpar):null;
+  const grupp=kurs.globaler.grupp?hämtaGlobal(kurs.globaler.grupp):null;
+  if(!Array.isArray(bank)||!kapnamn||!omr) throw new Error('data saknas');
+  kurs.data={bank,kapnamn,kapnamnSpar:kapnamnSpar||null,omr,spar:spar||null,grupp:grupp||null};
+  return kurs.data;
+}
 let kursvalPågår=false;
 async function väljKurs(kurs,kort){
   if(kursvalPågår) return;
@@ -6876,15 +6933,7 @@ async function väljKurs(kurs,kort){
   /* Felhanteringen omfattar endast filinläsningen. Kursstarten hanteras separat
      så att fel i bankvyn inte rapporteras som saknade kursfiler. */
   try{
-    for(const f of kurs.filer) await laddaSkript(f);
-    const bank=synligaUppgifter(hämtaGlobal(kurs.globaler.bank));
-    const kapnamn=hämtaGlobal(kurs.globaler.kapnamn);
-    const omr=hämtaGlobal(kurs.globaler.omr);
-    const spar=kurs.globaler.spar?hämtaGlobal(kurs.globaler.spar):null;
-    const kapnamnSpar=kurs.globaler.kapnamnSpar?hämtaGlobal(kurs.globaler.kapnamnSpar):null;
-    const grupp=kurs.globaler.grupp?hämtaGlobal(kurs.globaler.grupp):null;
-    if(!Array.isArray(bank)||!kapnamn||!omr) throw new Error('data saknas');
-    kurs.data={bank,kapnamn,kapnamnSpar:kapnamnSpar||null,omr,spar:spar||null,grupp:grupp||null};
+    await läsKursdata(kurs);
   }catch(e){
     console.error('Kunde inte läsa in kursfilerna',e);
     kort.classList.remove('laddar');
@@ -8121,8 +8170,174 @@ function slumpSättÖppen(öppen){
 }
 function slumpVäxla(e){
   e.stopPropagation();
+  if(dokumentTyp()==='ovning'){ öppnaBladverkstad(); return; }
   slumpSättÖppen(!$('#slumppanel').classList.contains('öppen'));
 }
+/* Bladverkstaden arbetar med ett förslag tills läraren väljer Använd bladet. */
+const verkstad = $('#bladverkstad');
+let bladförslag = [], startblad = [], verkstadKurs, basurval, verkstadÄndrad;
+const bladhistorik = new Map();
+let förslagsnummer = 0;
+
+function verkstadPool() {
+  const område = $('#bvOmråde').value;
+  return område ? basurval.filter(x => Bladval.område(x) === område) : basurval;
+}
+function verkstadHistorik() {
+  if (!bladhistorik.has(verkstadKurs)) bladhistorik.set(verkstadKurs, new Map());
+  return bladhistorik.get(verkstadKurs);
+}
+function minnsFörslag(lista) {
+  const historik = verkstadHistorik(), nr = ++förslagsnummer;
+  lista.forEach(x => historik.set(x.id, nr));
+}
+function verkstadFamiljer() {
+  const pool = verkstadPool(), antal = new Map();
+  for (const x of pool) {
+    const k = Bladval.familj(x);
+    if (!antal.has(k)) antal.set(k, {namn:x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr, n:0});
+    antal.get(k).n++;
+  }
+  $('#bvFamiljer').innerHTML = [...antal].map(([k, f]) =>
+    '<div class="bv-familj"><label><input type="checkbox" value="'+wordEsc(k)+'"> '+wordEsc(f.namn)+' ('+f.n+')</label>'+
+    '<input type="number" min="0" max="40" placeholder="Fritt" disabled aria-label="Antal för '+wordEsc(f.namn)+'"></div>').join('');
+  $('#bvFamiljsök').value = '';
+  $('#bvFamiljsökRad').hidden = antal.size < 12;
+  const nivåer = ['E','C','A'];
+  $('#bvNivåer').innerHTML = nivåer.map(n => {
+    const antal = pool.filter(x => x.niva === n).length;
+    return '<label>'+n+' ('+antal+')<input type="number" aria-label="Antal '+n+'" min="0" max="'+Math.min(40,antal)+'" value="0" '+(antal?'':'disabled')+'></label>';
+  }).join('');
+  verkstadUnderlag();
+}
+function verkstadVal() {
+  let familjer;
+  if ($('#bvDelval').checked) {
+    familjer = new Map();
+    for (const rad of $('#bvFamiljer').children) {
+      const [vald, n] = rad.querySelectorAll('input');
+      if (vald.checked) familjer.set(vald.value, n.value === '' ? null : n.valueAsNumber);
+    }
+  }
+  return {antal:$('#bvAntal').valueAsNumber, profil:verkstad.querySelector('[name=bvProfil]:checked').value,
+    längd:$('#bvLängd').value, familjer, täckOmråden:state.omr.size > 1,
+    nivåantal:$('#bvNivåval').checked ? [...$('#bvNivåer').querySelectorAll('input')].map(el=>el.valueAsNumber) : null};
+}
+function verkstadUnderlag() {
+  const val = verkstadVal();
+  const pool = verkstadPool().filter(x => !val.familjer || val.familjer.has(Bladval.familj(x)));
+  const nivåer = ['E','C','A'];
+  const fördelning = val.nivåantal
+    ? nivåer.map((n,i) => (val.nivåantal[i] || 0)+' '+n).join(' · ')
+    : nivåer.filter(n => pool.some(x=>x.niva===n)).join(', ');
+  const brist = val.nivåantal?.findIndex((n,i) => n > pool.filter(x=>x.niva===nivåer[i]).length);
+  let besked = '';
+  if (brist >= 0) besked = 'För få '+nivåer[brist]+'-uppgifter i urvalet.';
+  else if (pool.length < val.antal) besked = 'Välj ett lägre antal eller bredda urvalet.';
+  $('#bvUnderlag').textContent = [(val.antal || 0)+' uppgifter', fördelning,
+    pool.length+' att välja bland med bankens filter'].filter(Boolean).join(' · ')+'. '+besked;
+}
+function verkstadVisaLista() {
+  $('#bvResultat').hidden = !bladförslag.length;
+  $('#bvLista').innerHTML = bladförslag.map((x,i) => '<li><div class="bv-meta"><b>'+
+    wordEsc([x.niva, x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr].filter(Boolean).join(' · '))+
+    '</b><button type="button" class="knapp liten" data-bv-lås="'+i+'" aria-pressed="'+Boolean(x._bladLåst)+'">'+
+    (x._bladLåst?'Lås upp':'Lås')+'</button><button type="button" class="knapp liten" data-bv-byt="'+i+'" '+
+    (x._bladLåst?'disabled':'')+'>Byt ut</button></div><div class="bv-text">'+uppgiftsText(x)+'</div></li>').join('');
+  renderKatex($('#bvLista'));
+  $('#bvDra').textContent = bladförslag.length ? 'Nytt förslag' : 'Skapa förslag';
+}
+function öppnaBladverkstad() {
+  verkstadKurs = AKTIV.id;
+  basurval = urval();
+  startblad = state.blad.slice();
+  bladförslag = startblad.map(x => ({...x}));
+  minnsFörslag(bladförslag);
+  const områden = new Map(basurval.map(x => [Bladval.område(x), DB.omr?.[x.kap]?.[x.omr] || x.omr]));
+  const etikett = state.omr.size ? 'Valda områden i banken' : 'Alla områden i urvalet';
+  $('#bvOmråde').replaceChildren(new Option(etikett, ''), ...[...områden].map(([k, namn])=>new Option(namn,k)));
+  if (områden.size === 1) $('#bvOmråde').value = områden.keys().next().value;
+  $('#bvDelval').checked = $('#bvNivåval').checked = false;
+  $('#bvNivåer').hidden = $('#bvDelar').hidden = true;
+  $('#bvAntal').value = Math.min(40, startblad.length || 12);
+  $('#bvAnvänd').disabled = true;
+  verkstadÄndrad = false;
+  $('#bvStatus').textContent = startblad.length ? 'Ditt nuvarande blad visas nedan. Lås de uppgifter du vill behålla.' : '';
+  verkstadFamiljer(); verkstadVisaLista();
+  verkstad.showModal();
+  for (const knapp of document.querySelectorAll('[aria-controls="bladverkstad"]')) knapp.setAttribute('aria-expanded','true');
+}
+verkstad.addEventListener('close', () => {
+  for (const knapp of document.querySelectorAll('[aria-controls="bladverkstad"]')) knapp.setAttribute('aria-expanded','false');
+});
+verkstad.querySelectorAll('[data-bv-stäng]').forEach(b => b.onclick = () => verkstad.close());
+verkstad.addEventListener('input', e => {
+  if (e.target.id === 'bvFamiljsök') {
+    const sök = e.target.value.trim().toLocaleLowerCase('sv');
+    for (const rad of $('#bvFamiljer').children) rad.hidden = !rad.textContent.toLocaleLowerCase('sv').includes(sök);
+    return;
+  }
+  if (e.target.id === 'bvOmråde') verkstadFamiljer();
+  if (e.target.matches('#bvFamiljer input[type=checkbox]'))
+    e.target.closest('.bv-familj').querySelector('input[type=number]').disabled = !e.target.checked;
+  $('#bvNivåer').hidden = !$('#bvNivåval').checked;
+  $('#bvDelar').hidden = !$('#bvDelval').checked;
+  verkstadUnderlag();
+  verkstadÄndrad = true;
+  $('#bvAnvänd').disabled = true;
+  $('#bvStatus').textContent = bladförslag.length ? 'Skapa ett nytt förslag med de nya inställningarna.' : '';
+});
+$('#bvDra').onclick = () => {
+  try {
+    const pool = verkstadPool();
+    const ids = new Set(pool.map(x => x.id));
+    if (bladförslag.some(x => x._bladLåst && !ids.has(x.id))) throw Error('En låst uppgift ligger utanför urvalet. Ändra filtret eller lås upp den.');
+    const gamla = new Set(bladförslag.filter(x=>x._bladLåst));
+    bladförslag = Bladval.dra(pool, verkstadVal(), bladförslag, verkstadHistorik()).map(x =>
+      gamla.has(x) ? x : renBankuppgift(x));
+    minnsFörslag(bladförslag); verkstadÄndrad = false;
+    $('#bvAnvänd').disabled = false;
+    verkstadVisaLista();
+    $('#bvResultat').scrollIntoView({block:'start'});
+    $('#bvStatus').textContent = bladförslag.length+' uppgifter i förslaget. Lås favoriter eller byt en uppgift i taget.';
+  } catch (fel) { $('#bvStatus').textContent = fel.message; }
+};
+function renBankuppgift(x) {
+  return Object.fromEntries(Object.entries(x).filter(([k]) => !k.startsWith('_')));
+}
+$('#bvLista').onclick = e => {
+  const lås = e.target.closest('[data-bv-lås]'), byt = e.target.closest('[data-bv-byt]');
+  if (!lås && !byt) return;
+  const i = Number(lås ? lås.dataset.bvLås : byt.dataset.bvByt), x = bladförslag[i];
+  try {
+    if (lås) {
+      const låst = !x._bladLåst;
+      bladförslag = bladförslag.map(t => t === x || (x._delgrupp && t._delgrupp === x._delgrupp) ? {...t,_bladLåst:låst} : t);
+    } else {
+      const val = verkstadVal();
+      if (verkstadÄndrad) throw Error('Skapa först ett förslag med de nya inställningarna.');
+      const ny = renBankuppgift(Bladval.ersätt(verkstadPool(), bladförslag, i, verkstadHistorik(), val.längd));
+      for (const k of ['_delgrupp','_provdel','_utrymme','_sidbryt']) if (k in x) ny[k] = x[k];
+      bladförslag[i] = ny; minnsFörslag([ny]);
+    }
+    $('#bvStatus').textContent = lås ? (bladförslag[i]._bladLåst ? 'Uppgiften behåller sin plats vid nästa förslag.' : 'Låset har tagits bort.') : 'Uppgiften byttes ut inom samma delmoment och nivå.';
+    $('#bvAnvänd').disabled = verkstadÄndrad;
+    verkstadVisaLista();
+    $('#bvLista').querySelector(lås ? '[data-bv-lås="'+i+'"]' : '[data-bv-byt="'+i+'"]').focus();
+  } catch (fel) { $('#bvStatus').textContent = fel.message; }
+};
+$('#bvAnvänd').onclick = async () => {
+  // Den befintliga skyddsdialogen för sparade dokument ligger utanför dialogens topplager.
+  verkstad.close();
+  if (!await skyddaSparat()) { verkstad.showModal(); return; }
+  if (AKTIV?.id !== verkstadKurs || dokumentTyp() !== 'ovning' || state.blad.length !== startblad.length ||
+      state.blad.some((x,i) => x !== startblad[i])) {
+    sparStatus('Bladet ändrades medan förslaget var öppet. Öppna bladverkstaden igen.'); return;
+  }
+  state.blad = bladförslag.slice();
+  rita(); ritaBlad();
+};
+
 $('#slumpaKnapp').addEventListener('click',slumpVäxla);
 $('#slumpaKnappHoger').addEventListener('click',slumpVäxla);
 document.addEventListener('click',e=>{
@@ -8522,13 +8737,14 @@ function analysDelar(x){
   const total=analysPoangSumma(x?.poang);
   return total>0?[total]:[];
 }
-function byggAnalysOverforing(){
+function byggAnalysOverforing({blad=state.blad, omr=DB.omr, kurs=AKTIV, spår=state.spår,
+  klass=$('#bKlass').value, titel=$('#bTitel').value}={}){
   const tasks=[];
   let nextId=1;
-  state.blad.forEach(x=>{
+  blad.forEach(x=>{
     const maxdelar=analysDelar(x);
     if(!maxdelar.length) return;
-    const omradesnamn=DB.omr?.[x.kap]?.[x.omr] || x.omr || '(utan område)';
+    const omradesnamn=omr?.[x.kap]?.[x.omr] || x.omr || '(utan område)';
     const tid=nextId++;
     tasks.push({
       id:tid,
@@ -8540,8 +8756,8 @@ function byggAnalysOverforing(){
         bankId:x.id,
         family:x.familj||null,
         abilities:Array.isArray(x.formaga)?[...x.formaga]:[],
-        course:AKTIV?.id||null,
-        track:state.spår||null,
+        course:kurs?.id||null,
+        track:spår||null,
         documentGroup:x._delgrupp||null
       }
     });
@@ -8554,10 +8770,10 @@ function byggAnalysOverforing(){
   return {
     schema:'uppgiftslabbet-analysis-transfer-v1',
     createdAt:Date.now(),
-    className:($('#bKlass').value||'').trim(),
-    courseName:AKTIV?.titel||'',
+    className:(klass||'').trim(),
+    courseName:kurs?.titel||'',
     data:{
-      testName:($('#bTitel').value||'').trim()||'Prov från Uppgiftslabbet',
+      testName:(titel||'').trim()||'Prov från Uppgiftslabbet',
       grades:{
         e:total?Math.round(total*.28):'',
         d:'',
@@ -8571,12 +8787,15 @@ function byggAnalysOverforing(){
     }
   };
 }
-function skickaTillAnalys(){
-  if(!state.blad.length){
-    alert('Lägg först till minst en uppgift i bladet.');
-    return;
-  }
-  const transfer=byggAnalysOverforing();
+async function analyseraSparatDokument(doc){
+  const kurs=KURSER.find(k=>k.id===(doc.course||doc.courseId));
+  if(!kurs) throw Error('Dokumentets kurs kunde inte hittas.');
+  const db=await läsKursdata(kurs);
+  const blad=sparUppgifterUrDokument(doc,db.bank);
+  if(blad.length!==(doc.tasks||doc.blad||[]).length)
+    throw Error('En sparad uppgift kunde inte läsas. Öppna dokumentet och kontrollera innehållet.');
+  const transfer=byggAnalysOverforing({blad,omr:db.omr,kurs,spår:doc.track||null,
+    klass:doc.settings?.className||'',titel:doc.settings?.title||doc.name||''});
   if(!transfer.data.tasks.length){
     alert('De valda uppgifterna saknar poäng och kan därför inte skickas till analysen.');
     return;
@@ -8587,9 +8806,10 @@ function skickaTillAnalys(){
     alert('Kunde inte förbereda överföringen till analysen i den här webbläsaren.');
     return;
   }
-  window.location.href='/analys/?from=uppgiftslabbet';
+  if(AKTIV) sparAutosparaNu();
+  window.location.href=APP_ROOT+'analys/?from=uppgiftslabbet';
 }
-$('#tillAnalys').addEventListener('click',skickaTillAnalys);
+
 
 $('#expPdf').addEventListener('click',()=>{
   try{
@@ -10026,6 +10246,13 @@ function provRitaKontroller(){
   const val=document.getElementById('antalProvdelar');
   if(!panel||!lista||!val) return;
   const prov=dokumentTyp()==='prov';
+  for(const id of ['slumpaKnapp','slumpaKnappHoger']){
+    const knapp=document.getElementById(id);
+    if(!knapp) continue;
+    knapp.querySelector('.slumptext').textContent=prov?'Slumpa prov':'Skapa övningsblad';
+    knapp.setAttribute('aria-controls',prov?'slumppanel':'bladverkstad');
+    if(!prov) knapp.setAttribute('aria-haspopup','dialog'); else knapp.removeAttribute('aria-haspopup');
+  }
   panel.hidden=!prov;
   if(!prov) return;
   provSakerstallDelar(PROVDELAR.length);
@@ -12734,6 +12961,7 @@ function minaPost(d){
     </button>
     <div class="mina-atg">
       ${ägare?`<button type="button" class="skolbank${d.skolbank?' aktiv':''}" data-mina-skolbank="${ulEsc(d.id)}" data-delad="${d.skolbank?'1':'0'}" title="${d.skolbank?'Ta bort från gemensamma banken':'Publicera en kopierbar mall för alla lärare på skolan'}">${d.skolbank?'I gemensamma banken':'Dela med alla'}</button>`:''}
+      <button type="button" data-mina-analys="${ulEsc(d.id)}">Till analys</button>
       <button type="button" data-mina-dela="${ulEsc(d.id)}">Dela</button>
       <button type="button" data-mina-kopiera="${ulEsc(d.id)}">Duplicera</button>
       <button type="button" class="radera" data-mina-radera="${ulEsc(d.id)}">${ägare?'Ta bort':'Lämna'}</button>
@@ -12816,6 +13044,16 @@ function minaRita(){
     </div>`;
 }
 async function minaKlick(e){
+  const analys=e.target.closest('[data-mina-analys]');
+  if(analys){
+    analys.disabled=true;
+    try{
+      const h=await ulRpc('ul_hamta',{p_id:analys.dataset.minaAnalys});
+      await analyseraSparatDokument({...h.data,course:h.kurs,name:h.namn});
+    }catch(err){ alert(err.message); }
+    finally{ analys.disabled=false; }
+    return;
+  }
   const öppna=e.target.closest('[data-mina-oppna]');
   const kopiera=e.target.closest('[data-mina-kopiera]');
   const radera=e.target.closest('[data-mina-radera]');
