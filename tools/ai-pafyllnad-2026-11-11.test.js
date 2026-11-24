@@ -1,4 +1,5 @@
 'use strict';
+// A* och girig bäst först skrivs sedan 2026-11-24 med f(n), g(n), h(n) och f(P) för en bestämd nod (tools/sprak/ai_fgh_n.py).
 // Språksteg 1 i AI-banken 2026-11-23 (tools/sprak/ai_steg1.py): ”Välj ett alternativ.” bort och svarsinstruktioner i kgInstruktion.
 // AI-banken 2026-11-11, tredje omgången: lärarkommentarer (1.01, 1.03, 1.04) och 26 nya uppgifter.
 // Svaren kontrolleras här med egna simuleringar, oberoende av byggskriptets Python-kod.
@@ -45,7 +46,7 @@ function astarG(edges,h,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[]
 function greedyG(edges,h,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[]).push([y,w]);(adj[y]??=[]).push([x,w]);}
  const g={[s]:0},par={},seen=new Set([s]),op=[s],out=[];while(op.length){op.sort((x,y)=>h[x]-h[y]||x.localeCompare(y));const n=op.shift();out.push(n);if(n===t)break;
   for(const[v,w]of adj[n])if(!seen.has(v)){seen.add(v);par[v]=n;g[v]=g[n]+w;op.push(v);}}const path=[t];while(par[path[0]])path.unshift(par[path[0]]);return{out,path,cost:g[t]};}
-const has=(id,s)=>a.ok(q(id).s.includes(s),id+': '+s);
+const has=(id,s)=>a.ok(q(id).s.replace(/\b([fgh])\((?:n|[A-Z]\d?)\)/g,'$1').includes(s),id+': '+s);
 
 test('lärarkommentarer: enhetliga inledningar i labyrinter, träd och spelträd',()=>{
  for(const id of ['1.01','1.06','1.08'])a.match(q(id).spelIntro,/<p>Labyrinten söks igenom med BFS \(ordning ↑ → ↓ ←\)\.<\/p>/);

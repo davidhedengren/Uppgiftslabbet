@@ -1,4 +1,5 @@
 'use strict';
+// A* och girig bäst först skrivs sedan 2026-11-24 med f(n), g(n), h(n) och f(P) för en bestämd nod (tools/sprak/ai_fgh_n.py).
 // AI-banken 2026-11-11, åttonde omgången: 16 teoriuppgifter (flerval) och 12 beräkningar
 // inom minimax, oinformerad och informerad sökning. Beräkningarna räknas om oberoende.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
@@ -7,7 +8,7 @@ const c={window:{}};vm.runInNewContext(fs.readFileSync('uppgifterai.js','utf8'),
 // Testerna nedan räknar fram bokstäverna, så prefixet tas bort här. Själva prefixen kontrolleras i
 // tools/ai-efterbearbetning-2026-11-12.test.js.
 c.window.BANKAI=JSON.parse(JSON.stringify(c.window.BANKAI).replace(/(?:Noden|Rutan|Efter uttaget av) ([A-Z])(?=["<.:])/g,'$1'));
-const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id),eq=(id,w)=>a.equal(JSON.stringify(q(id).rättSvar),JSON.stringify(w),id);
+const bank=c.window.BANKAI,q=id=>bank.find(u=>u.id===id),eq=(id,w)=>a.equal(JSON.stringify(q(id).rättSvar).replace(/\b([fgh])\((?:n|[A-Z]\d?)\)/g,'$1'),JSON.stringify(w),id);
 const nm=([r,k])=>String.fromCharCode(65+r)+(k+1),STD=[[-1,0],[0,1],[1,0],[0,-1]];
 const find=(m,ch)=>{for(let r=0;r<m.length;r++){const k=m[r].indexOf(ch);if(k>=0)return[r,k];}};
 const nb=(m,n)=>STD.map(([x,y])=>[n[0]+x,n[1]+y]).filter(([r,k])=>m[r]?.[k]!==undefined&&m[r][k]!=='#');

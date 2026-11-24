@@ -1,4 +1,5 @@
 'use strict';
+// A* och girig bäst först skrivs sedan 2026-11-24 med f(n), g(n), h(n) och f(P) för en bestämd nod (tools/sprak/ai_fgh_n.py).
 // AI-banken 2026-11-11, tionde omgången: 2.78–2.87 (heuristiken h och prioritetsköer) samt
 // delmoment i kapitel 3. Svaren räknas om oberoende av byggskriptets Python-kod.
 const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
@@ -38,7 +39,7 @@ test('heuristiken h räknas om',()=>{
  eq('2.79a',man([4,0],G));eq('2.79b',0);
  eq('2.79c',[[-1,0],[1,0],[0,-1],[0,1]].map(([x,y])=>[G[0]+x,G[1]+y]).filter(([r,k])=>M[r]?.[k]&&M[r][k]!=='#').length);
  const rad=ch=>ch.charCodeAt(0)-65;eq('2.80a',man([rad('B'),2],[rad('F'),9]));eq('2.80b',man([rad('C'),2],[rad('F'),9]));
- a.match(svar('2.80c'),/exakt 1/);a.equal(svar('2.81b'),JSON.stringify('h minskar med 1'));
+ a.match(svar('2.80c'),/exakt 1/);a.equal(svar('2.81b'),JSON.stringify('h(n) minskar med 1'));
 });
 
 test('prioritetsköer räknas om',()=>{

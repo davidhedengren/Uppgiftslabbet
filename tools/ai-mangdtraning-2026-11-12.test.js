@@ -1,4 +1,5 @@
 'use strict';
+// A* och girig bäst först skrivs sedan 2026-11-24 med f(n), g(n), h(n) och f(P) för en bestämd nod (tools/sprak/ai_fgh_n.py).
 // AI-banken 2026-11-12: mängdträning (1.77–1.96, 2.88–2.103, 3.62–3.69).
 // Svaren räknas om oberoende av byggskriptet: labyrinter, sökträd och spelträd läses ur
 // figurerna som eleven ser, köer och prioritetsköer ur texten.
@@ -97,7 +98,7 @@ test('g, h och f samt A*:s första steg räknas om ur figuren',()=>{
   const d=u.spelDelar;a.equal(d[0].rättSvar,gv,id);a.equal(d[1].rättSvar,hv,id);a.equal(d[2].rättSvar,gv+hv,id);}
  for(const id of ids(2,96,99)){const u=q(id),Lab=labyrint(u),grannar=nb(Lab,Lab.s).sort((x,y)=>nm(x).localeCompare(nm(y)));
   const f=grannar.map(v=>1+man(v,Lab.g)),d=u.spelDelar;
-  a.equal(JSON.stringify(d[0].svarEtiketter),JSON.stringify(grannar.map(v=>'f för '+nm(v))),id);a.equal(JSON.stringify(d[0].rättSvar),JSON.stringify(f),id);
+  a.equal(JSON.stringify(d[0].svarEtiketter),JSON.stringify(grannar.map(v=>'f('+nm(v)+')')),id);a.equal(JSON.stringify(d[0].rättSvar),JSON.stringify(f),id);
   const bäst=grannar.map((v,i)=>[f[i],man(v,Lab.g),nm(v)]).sort((x,y)=>x[0]-y[0]||x[1]-y[1]||x[2].localeCompare(y[2]))[0][2];
   a.equal(rätt(d[1])[0],'Rutan '+bäst,id);a.equal(d[2].rättSvar,bfs(Lab).väg.length-1,id);}
 });

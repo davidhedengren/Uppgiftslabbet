@@ -197,6 +197,10 @@ Informerad sökning (prioritetsköer, heuristik och f-värden, girig bäst förs
 viktade vägar). Placeringen av varje uppgift står i `tools/bygg-ai-omgruppering-2026-11-11.py`,
 som också skriver `strukturai.js` och sorterar banken. Varje kort har två delmoment, även i
 kapitel 3. Nya AI-uppgifter måste läggas in där, annars stoppar skriptet.
+Notation i A* och girig bäst först (användarbeslut 2026-11-24): skriv f(n), g(n) och h(n), aldrig bara f, g
+och h, i text, facit, ledtrådar, alternativ, tabellrubriker och svarsetiketter. För en bestämd nod skrivs
+nodens namn: f(P), g(C1). Figurernas nodetiketter ”h = 2” står kvar. De äldre byggskripten (`bygg-ai-*.py`)
+skriver den gamla notationen; kör `tools/sprak/ai_fgh_n.py` efter en ombyggnad.
 Kapitel 4 Maskininlärning (2026-11-12, `agent/AI_MASKININLARNING_2026-11-12.md`) har fem kort:
 grunder, klassificeringsmatris, regression och gradientnedstigning, kNN och k-means, och en enkel
 fördjupning om neurala nätverk (viktad summa, bias, stegfunktion och ReLU). Uppgifterna ska vara

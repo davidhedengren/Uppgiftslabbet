@@ -1,4 +1,5 @@
 'use strict';
+// A* och girig bäst först skrivs sedan 2026-11-24 med f(n), g(n), h(n) och f(P) för en bestämd nod (tools/sprak/ai_fgh_n.py).
 // AI-banken, granskningen 2026-11-12: (1) delkortens facit nämner alternativen med text, inte
 // bokstav, (2) C- och A-uppgifter för prov samt E i alfa–beta, (3) träningsnivå 1 i DFS och A*,
 // (4) inga ensamma bokstäver som alternativ. Svaren räknas om oberoende av byggskripten.
@@ -44,7 +45,7 @@ test('2. C på prioritetsköer: A*:s öppna lista med uppdaterat f',()=>{
  while(öppen.size){const n=[...öppen].sort((x,y)=>g[x]+h[x]-g[y]-h[y]||h[x]-h[y]||x.localeCompare(y))[0];öppen.delete(n);stängd.add(n);ut.push(n);if(n==='M')break;
   for(const[v,w]of adj[n])if(!stängd.has(v)&&g[n]+w<(g[v]??1e9)){g[v]=g[n]+w;öppen.add(v);if(v==='M')fM.push(g[v]+h.M);}}
  a.equal(rätt('2.104a'),JSON.stringify(ut.join(', ')));a.equal(rätt('2.104b'),JSON.stringify(fM));a.ok(fM[0]>fM[1]);
- a.match(rätt('2.105a'),/f-värdena används inte/);a.match(rätt('2.105b'),/billigare väg/);
+ a.match(rätt('2.105a'),/f\(n\)-värdena används inte/);a.match(rätt('2.105b'),/billigare väg/);
  // Fågelvägen och h överskattar inte (h ≤ verklig kostnad kvar).
  const kortast=n=>{const d={[n]:0},kv=new Set([n]);while(kv.size){const x=[...kv].sort((p,r)=>d[p]-d[r])[0];kv.delete(x);for(const[v,w]of adj[x])if(d[x]+w<(d[v]??1e9)){d[v]=d[x]+w;kv.add(v);}}return d.M;};
  for(const n in h)a.ok(h[n]<=kortast(n),n);

@@ -56,7 +56,7 @@ test('AI 4.10 c och 4.83 c: luriga alternativ med kommentarer', () => {
 test('AI 1.14 b och grannordning: frågan säger vad som ska skrivas', () => {
   const b = del(q(ai, '1.14'), 'b');
   assert.match(b.fraga, /S och A är redan uttagna\. I vilken ordning tas resten av noderna ut, fram till och med målet F\?/);
-  assert.match(b.fraga, /Skriv noderna i ordning, åtskilda med kommatecken/);
+  assert.match(b.fraga + ' ' + (b.kgInstruktion || ''), /Skriv noderna i ordning, åtskilda med kommatecken/); // i kgInstruktion sedan 2026-11-23
   assert.equal(b.rättSvar, 'B, C, D, E, F');
   for (const id of ['1.60', '1.18', '1.99']) {
     for (const f of ['t', 'spelIntro']) assert.match(q(ai, id)[f], /Grannordningen är den ordning som grannarna till en ruta prövas i\./, id);
