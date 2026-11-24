@@ -50,3 +50,19 @@ Ramen är högst cirka 420 enheter bred, så att texten blir minst cirka 11 px i
   (”i kΩ”, ”i mA”).
 
 Byggskript: `tools/bygg-fy1-komplexa-kopplingar-2026-11-24.py`.
+
+## Omgång 2: fler kretsar på E-nivå, 8.782–8.811
+
+Användaren: ”Bra, lägg till ännu fler kretsar på E-nivå.” 30 uppgifter till, alla E och träningsnivå 1 (17) eller 2 (13),
+med egen kretsfigur. Byggskript `tools/bygg-fy1-komplexa-kopplingar-e-2026-11-24.py` (återanvänder hjälpfunktionerna
+från omgång 1), test `tools/fysik1-komplexa-kopplingar-e-2026-11-24.test.js`.
+
+- Att se kopplingen (flerval med kommentarer): vilka som är parallellkopplade, vilka som alltid har samma ström respektive
+  samma spänning, vilken amperemeter som visar mest, hur huvudströmmen ändras när en gren kopplas in.
+- Mätare: två voltmetrar (V₂ ur V₁ och batteriet, batteriets spänning ur V₁ och V₂), tre amperemetrar, ström i mA,
+  en okänd resistor ur två amperemetrar, spänningen över parallelldelen ur amperemeter och voltmeter.
+- Korta beräkningar: samma ström i en seriegren, spänningen över en gren ur dess delar, tre lika parallellkopplade,
+  ljusslinga med tio lampor per gren, köksapparater bakom en säkring, akvariepump och lampa, instrumentbelysning,
+  två parallellkopplingar i serie, kΩ, tre grenar med amperemeter, spänningsdelning i en gren.
+- Kontroll: svaren räknas om oberoende, facit och ledtrådar renderade vid 390 px och lästa (fyra rubriker fick sin formel),
+  validatorn och SVG-granskningen utan fynd, självrättningen i Kunskapsgymmet provad (30 kort, inga fel).
