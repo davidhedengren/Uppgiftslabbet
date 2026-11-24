@@ -3855,3 +3855,12 @@ De tio uppgifterna som enbart behandlar spolar i det gemensamma växelströmsavs
 ## Uppgiftslabbet visar rena uppgifter: svarsinstruktioner och tabellvärden bara i Kunskapsgymmet, 2026-11-23
 
 Användarbeslut 2026-11-23. Uppgiftstexten `t` i Uppgiftslabbet skrivs utan instruktioner om svarets form (”Avrunda till …”, ”Svara exakt.”, ”Svara med två decimaler.”, ”Svara i enklaste form.”) och utan tabellvärden som eleven slår upp själv (vattnets specifika värmekapacitet, isens smältvärme, vattnets densitet, kopparns resistivitet, ljudets fart, brytningsindex för vatten, halveringstid för kol-14 osv.). Sådant står i `kgInstruktion`, som Kunskapsgymmet lägger sist i texten, så att självrättningen och facit stämmer där. Undantag: när svarsformen eller avrundningen är det som tränas, när värdet är uppgiftens eget (inte tabellvärdet), och när ämnet annars inte framgår av uppgiften. Ny text i uppgifter ska följa detta. Beslutet ersätter, för texten i Uppgiftslabbet, tidigare praxis att skriva materialdata i frågan. Verktyg: `tools/sprak/svar_till_kg.py`, `tools/sprak/tabell_till_kg.py`, och testerna läser Kunskapsgymmets vy via `tools/kg-vy.cjs`. Logg: [SPRAKOMSKRIVNING_INSTRUKTION.md](SPRAKOMSKRIVNING_INSTRUKTION.md).
+
+## Figurtext ska vara läsbar i mobil, och SVG skrivs med rätt skiftläge, 2026-11-24
+
+[SVG_UTSEENDE_2026-11-24.md](SVG_UTSEENDE_2026-11-24.md). Kunskapsgymmets kort är cirka 320 px breda i mobil. Rita
+figurer så att texten blir minst cirka 10 px där: med viewBox-bredden B ska font-size vara minst 10 · B / 320 (till
+exempel 19 i en figur som är 600 enheter bred), eller rita smalare. Kör `tools/svg-textstorlek-2026-11-24.cjs --bank <fil>`
+som kontroll. Skriv aldrig om SVG med en HTML-tolkare (BeautifulSoup m.fl.), som gör viewBox, refX och markerWidth
+gemena, och byt aldrig bindestreck mot typografiskt minus inne i taggar (`font−size`, `dy="−6"`). Testet
+`svg-utseende-2026-11-24` stoppar båda.
