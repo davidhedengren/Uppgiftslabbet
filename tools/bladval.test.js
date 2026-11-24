@@ -67,3 +67,19 @@ test('Svårighetsgrad utgår från träningsnivån och den svåraste delen av he
   assert.equal(svårighetsgrad(uppgift('c','Metod','A',{spelDelar:[{traningsniva:5}]})),5);
   assert.equal(svårighetsgrad(uppgift('d','Metod','A',{traningsniva:[null,'',0,6,2.5]})),null);
 });
+
+test('Matematikblad tar med valda förmågor även när en äldre tagg saknar ö',()=>{
+  const {matcharFörmågor} = require('../bladval');
+  const val = {...inst(2), förmågor:new Set(['problemlösning','resonemang'])};
+  const problem = uppgift('p','Algebra','C',{formaga:'problemlosning'});
+  const argument = uppgift('a','Algebra','C',{formaga:['begrepp','resonemang']});
+  const xs = [problem, argument, ...pool];
+  assert.deepEqual(new Set(dra(xs,val).map(x=>x.id)),new Set(['p','a']));
+  assert.equal(matcharFörmågor({},null),true);
+  assert.equal(matcharFörmågor({},val.förmågor),false);
+  assert.throws(()=>dra(xs,{...val,förmågor:new Set()}),/minst en förmåga/);
+  assert.throws(()=>dra(xs,val,[{...pool[0],_bladLåst:true}]),/låst/);
+  const andra = {...problem,id:'p2'};
+  assert.equal(ersätt([...xs,andra],[argument,problem],1,new Map(),'alla',Math.random,val.förmågor).id,'p2');
+  assert.throws(()=>ersätt([...xs,{...argument,id:'a2'}],[argument,problem],1,new Map(),'alla',Math.random,val.förmågor),/behåller/);
+});

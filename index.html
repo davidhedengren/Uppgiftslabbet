@@ -5351,6 +5351,9 @@ table.data th,table.data td{border-color:var(--x-line)!important}
 .bv-profiler{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;border:0;padding:0;margin:18px 0}
 .bv-profiler legend{font-weight:650;margin-bottom:6px}.bv-profiler label{display:flex;align-items:baseline;gap:5px;border:1px solid #8885;border-radius:10px;padding:10px;cursor:pointer}
 .bv-profiler label:has(:checked){border-color:var(--accent,#923720);background:#aa52200c}.bv-profiler small{display:block;line-height:1.35;margin-top:4px}
+#bvFörmågor{border:0;padding:0;margin:18px 0}#bvFörmågor legend{font-weight:650}
+#bvFörmågor p{margin:4px 0 8px}#bvFörmågeval{display:flex;flex-wrap:wrap;gap:6px 14px}
+#bvFörmågeval label{display:inline-flex;align-items:center;gap:5px;padding:4px 0;cursor:pointer}
 .bv-anpassa{border-block:1px solid #8883;padding:10px 0}.bv-anpassa summary{cursor:pointer;font-weight:650}.bv-anpassa>label{display:block;margin:12px 0 6px}
 #bvFamiljer{max-height:220px;overflow:auto}.bv-familj{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0}
 #bladverkstad [hidden]{display:none!important}.bv-info,.bv-status,#bvDelar p{font-size:13px;line-height:1.4}.bv-status:empty{margin:0}
@@ -5885,6 +5888,10 @@ function ulLösenordUpplåst(){
       <label><input type="radio" name="bvProfil" value="varierad" checked><span><b>Varierad träning</b><small>Växla mellan delmoment och metoder.</small></span></label>
       <label><input type="radio" name="bvProfil" value="stegring"><span><b>Stegvis svårare</b><small>Börja enkelt och öka svårigheten.</small></span></label>
     </fieldset>
+    <fieldset id="bvFörmågor" hidden><legend>Matematiska förmågor</legend>
+      <p class="bv-info">Varje uppgift ska vara märkt med minst en av de förmågor du kryssar i.</p>
+      <div id="bvFörmågeval"></div>
+    </fieldset>
     <details class="bv-anpassa"><summary>Anpassa urval</summary>
       <label>Arbetsmängd<select id="bvLängd"><option value="alla">Blandad längd</option><option value="kort">Mest korta uppgifter</option><option value="lång">Mest längre eller flerdelade uppgifter</option></select></label>
       <label><input id="bvNivåval" type="checkbox"> Ange antal per nivå</label>
@@ -5893,7 +5900,7 @@ function ulLösenordUpplåst(){
       <div id="bvDelar" hidden><p>Markera delmoment. Lämna antalet tomt för fri fördelning.</p><label id="bvFamiljsökRad" hidden>Sök delmoment<input type="search" id="bvFamiljsök"></label><div id="bvFamiljer"></div></div>
     </details>
     <p class="bv-info" id="bvUnderlag"></p>
-    <section id="bvResultat" hidden><h3>Uppgifter i bladet</h3><ol id="bvLista"></ol></section>
+    <section id="bvResultat" hidden><h3>Uppgifter i bladet</h3><p id="bvTäckning" class="bv-info" hidden></p><ol id="bvLista"></ol></section>
   </div>
   <footer><p class="bv-status" id="bvStatus" role="status"></p><div class="bv-knappar">
     <button type="button" class="knapp tyst" data-bv-stäng>Avbryt</button>
@@ -5903,7 +5910,7 @@ function ulLösenordUpplåst(){
 </dialog>
 
 <div id="utskrift"></div>
-<script src="bladval.js?v=20261124-niva"></script>
+<script src="bladval.js?v=20261124-formagor"></script>
 
 <script>
 /* Webbläsaren minns annars sidans skrollposition mellan sidladdningar och
@@ -7230,21 +7237,15 @@ function förvärmSökindex(){
 }
 
 const idSortering=new Intl.Collator('sv',{numeric:true});
-function urval(){
+function urval(valdaFörmågor=state.formagor){
   const termer=state.sök ? state.sök.split(' ').filter(Boolean) : [];
   return variantBank().filter(x=>{
     if(!state.nivåer.has(x.niva)) return false;
-    const formagor=Array.isArray(x.formaga)?x.formaga:(x.formaga?[x.formaga]:[]);
-    /* Inkluderande förmågefilter:
-       - Alla förmågor aktiva: visa även äldre/otaggade uppgifter.
-       - Några förmågor aktiva: visa uppgiften om MINST EN av dess taggar är vald.
-       - Inga förmågor aktiva: visa inga uppgifter.
-       En uppgift med t.ex. ["procedur","resonemang"] ska alltså fortfarande
-       visas när endast Resonemang är aktivt. */
-    const allaFormagorAktiva=state.formagor.size===FORMAGOR.length;
-    if(state.formagor.size===0) return false;
-    if(!formagor.length && !allaFormagorAktiva) return false;
-    if(formagor.length && !formagor.some(f=>state.formagor.has(f))) return false;
+    if(valdaFörmågor){
+      const taggar = Bladval.förmågor(x);
+      const träff = taggar.length ? taggar.some(f => valdaFörmågor.has(f)) : valdaFörmågor.size === FORMAGOR.length;
+      if(!träff) return false;
+    }
     if(state.miniraknare!=='alla' && Boolean(x['miniräknare'])!==(state.miniraknare==='ja')) return false;
     if(state.geogebra && !x.geogebra) return false;
     if(state.omr.size && !state.omr.has(nyckel(x))) return false;
@@ -8228,10 +8229,16 @@ function verkstadOmrådespool() {
   const område = $('#bvOmråde').value;
   return område ? basurval.filter(x => Bladval.område(x) === område) : basurval;
 }
+function verkstadFörmågor() {
+  if ($('#bvFörmågor').hidden) return null;
+  const valda = new Set([...$('#bvFörmågeval').querySelectorAll(':checked')].map(el => el.value));
+  return valda.size === FORMAGOR.length ? null : valda;
+}
 function verkstadPool() {
   const grad = Number($('#bvSvårighet').value);
   const pool = verkstadOmrådespool();
-  return grad ? pool.filter(x => Bladval.svårighetsgrad(x) === grad) : pool;
+  const valda = verkstadFörmågor();
+  return pool.filter(x => (!grad || Bladval.svårighetsgrad(x) === grad) && Bladval.matcharFörmågor(x, valda));
 }
 function verkstadHistorik() {
   if (!bladhistorik.has(verkstadKurs)) bladhistorik.set(verkstadKurs, new Map());
@@ -8274,7 +8281,7 @@ function verkstadVal() {
     }
   }
   return {antal:$('#bvAntal').valueAsNumber, profil:verkstad.querySelector('[name=bvProfil]:checked').value,
-    längd:$('#bvLängd').value, familjer, täckOmråden:state.omr.size > 1,
+    längd:$('#bvLängd').value, familjer, förmågor:verkstadFörmågor(), täckOmråden:state.omr.size > 1,
     nivåantal:$('#bvNivåval').checked ? [...$('#bvNivåer').querySelectorAll('input')].map(el=>el.valueAsNumber) : null};
 }
 function verkstadUnderlag() {
@@ -8286,15 +8293,23 @@ function verkstadUnderlag() {
     : nivåer.filter(n => pool.some(x=>x.niva===n)).join(', ');
   const brist = val.nivåantal?.findIndex((n,i) => n > pool.filter(x=>x.niva===nivåer[i]).length);
   let besked = '';
-  if (brist >= 0) besked = 'För få '+nivåer[brist]+'-uppgifter i urvalet.';
+  if (val.förmågor?.size === 0) besked = 'Välj minst en förmåga.';
+  else if (brist >= 0) besked = 'För få '+nivåer[brist]+'-uppgifter i urvalet.';
   else if (pool.length < val.antal) besked = 'Välj ett lägre antal eller bredda urvalet.';
   $('#bvUnderlag').textContent = [(val.antal || 0)+' uppgifter', fördelning,
     pool.length+' att välja bland med bankens filter'].filter(Boolean).join(' · ')+'. '+besked;
 }
 function verkstadVisaLista() {
   $('#bvResultat').hidden = !bladförslag.length;
+  const förmågeval = verkstadFörmågor();
+  const täckning = $('#bvTäckning');
+  täckning.hidden = $('#bvFörmågor').hidden;
+  if (!täckning.hidden) {
+    const antal = FORMAGOR.map(f => [f, bladförslag.filter(x => Bladval.förmågor(x).includes(f)).length]);
+    täckning.textContent = 'Förmågor i förslaget: '+antal.filter(([f,n]) => n || förmågeval?.has(f)).map(([f,n]) => f+' ('+n+')').join(' · ');
+  }
   $('#bvLista').innerHTML = bladförslag.map((x,i) => '<li><div class="bv-meta"><b>'+
-    wordEsc([x.niva, Bladval.svårighetsgrad(x) ? 'Svårighet '+Bladval.svårighetsgrad(x)+'/5' : '', x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr].filter(Boolean).join(' · '))+
+    wordEsc([x.niva, Bladval.svårighetsgrad(x) ? 'Svårighet '+Bladval.svårighetsgrad(x)+'/5' : '', x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr, !täckning.hidden && Bladval.förmågor(x).join(', ')].filter(Boolean).join(' · '))+
     '</b><button type="button" class="knapp liten" data-bv-lås="'+i+'" aria-pressed="'+Boolean(x._bladLåst)+'">'+
     (x._bladLåst?'Lås upp':'Lås')+'</button><button type="button" class="knapp liten" data-bv-byt="'+i+'" '+
     (x._bladLåst?'disabled':'')+'>Byt ut</button></div><div class="bv-text">'+uppgiftsText(x)+'</div></li>').join('');
@@ -8310,7 +8325,18 @@ document.querySelector('.top [data-skapa-blad]').onclick = öppnaBladFrånMenyn;
 function öppnaBladverkstad() {
   verkstadDokumenttyp = dokumentTyp();
   verkstadKurs = AKTIV.id;
-  basurval = urval();
+  const matte = AKTIV.id.startsWith('ma');
+  $('#bvFörmågor').hidden = !matte;
+  $('#bvFörmågeval').replaceChildren();
+  if (matte) {
+    for (const f of FORMAGOR) {
+      const ruta = document.createElement('input'), etikett = document.createElement('label');
+      ruta.type = 'checkbox'; ruta.value = f; ruta.checked = state.formagor.has(f);
+      etikett.append(ruta, f[0].toUpperCase()+f.slice(1));
+      $('#bvFörmågeval').append(etikett);
+    }
+  }
+  basurval = urval(matte ? null : state.formagor);
   startblad = state.blad.slice();
   bladförslag = verkstadDokumenttyp === 'prov' ? [] : startblad.map(x => ({...x}));
   const grader = new Set(bladförslag.map(Bladval.svårighetsgrad));
@@ -8341,7 +8367,7 @@ verkstad.addEventListener('input', e => {
     return;
   }
   if (e.target.id === 'bvOmråde') verkstadFamiljer();
-  if (e.target.id === 'bvSvårighet') verkstadFamiljer(true);
+  if (e.target.id === 'bvSvårighet' || e.target.closest('#bvFörmågeval')) verkstadFamiljer(true);
   if (e.target.matches('#bvFamiljer input[type=checkbox]'))
     e.target.closest('.bv-familj').querySelector('input[type=number]').disabled = !e.target.checked;
   $('#bvNivåer').hidden = !$('#bvNivåval').checked;
@@ -8354,6 +8380,8 @@ verkstad.addEventListener('input', e => {
 $('#bvDra').onclick = () => {
   try {
     const pool = verkstadPool();
+    const val = verkstadVal();
+    if (val.förmågor && !val.förmågor.size) throw Error('Välj minst en förmåga.');
     const grad = Number($('#bvSvårighet').value);
     if (grad && bladförslag.some(x => x._bladLåst && Bladval.svårighetsgrad(x) !== grad))
       throw Error('En låst uppgift har en annan svårighetsgrad. Lås upp den eller välj blandad svårighetsgrad.');
@@ -8362,7 +8390,7 @@ $('#bvDra').onclick = () => {
     const ids = new Set(pool.map(x => x.id));
     if (bladförslag.some(x => x._bladLåst && !ids.has(x.id))) throw Error('En låst uppgift ligger utanför urvalet. Ändra filtret eller lås upp den.');
     const gamla = new Set(bladförslag.filter(x=>x._bladLåst));
-    bladförslag = Bladval.dra(pool, verkstadVal(), bladförslag, verkstadHistorik()).map(x =>
+    bladförslag = Bladval.dra(pool, val, bladförslag, verkstadHistorik()).map(x =>
       gamla.has(x) ? x : renBankuppgift(x));
     minnsFörslag(bladförslag); verkstadÄndrad = false;
     $('#bvAnvänd').disabled = false;
@@ -8385,12 +8413,13 @@ $('#bvLista').onclick = e => {
     } else {
       const val = verkstadVal();
       if (verkstadÄndrad) throw Error('Skapa först ett förslag med de nya inställningarna.');
-      const ny = renBankuppgift(Bladval.ersätt(verkstadPool(), bladförslag, i, verkstadHistorik(), val.längd));
+      const ny = renBankuppgift(Bladval.ersätt(verkstadPool(), bladförslag, i, verkstadHistorik(), val.längd, Math.random, val.förmågor));
       for (const k of ['_delgrupp','_provdel','_utrymme','_sidbryt']) if (k in x) ny[k] = x[k];
       bladförslag[i] = ny; minnsFörslag([ny]);
     }
     $('#bvStatus').textContent = lås ? (bladförslag[i]._bladLåst ? 'Uppgiften behåller sin plats vid nästa förslag.' : 'Låset har tagits bort.') : 'Uppgiften byttes ut inom samma delmoment och nivå.';
-    $('#bvAnvänd').disabled = verkstadÄndrad;
+    const förmågor = verkstadFörmågor();
+    $('#bvAnvänd').disabled = verkstadÄndrad || bladförslag.some(t => !Bladval.matcharFörmågor(t, förmågor));
     verkstadVisaLista();
     $('#bvLista').querySelector(lås ? '[data-bv-lås="'+i+'"]' : '[data-bv-byt="'+i+'"]').focus();
   } catch (fel) { $('#bvStatus').textContent = fel.message; }
@@ -10357,8 +10386,7 @@ function nivaRang(n){
   return NIVARANG[v]??3;
 }
 function formagorAv(x){
-  if(Array.isArray(x?.formaga)) return x.formaga.map(String);
-  return x?.formaga?[String(x.formaga)]:[];
+  return Bladval.förmågor(x);
 }
 
 /* ── önskad förmågefördelning vid slumpning ─────────────────────────────────

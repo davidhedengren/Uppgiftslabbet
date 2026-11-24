@@ -5,6 +5,13 @@ const Bladval = (() => {
   const familj = x => område(x) + '/' + (x.familj || '');
   const info = new WeakMap();
 
+  function förmågor(x) {
+    return [].concat(x?.formaga || []).map(f => f === 'problemlosning' ? 'problemlösning' : f);
+  }
+  function matcharFörmågor(x, valda) {
+    return !valda || förmågor(x).some(f => valda.has(f));
+  }
+
   function egenskaper(x) {
     if (info.has(x)) return info.get(x);
     const delar = Math.max(1, x.spelDelar?.length || 0, x.delpoang?.length || 0,
@@ -13,10 +20,10 @@ const Bladval = (() => {
     const insats = tal(x.arbetsinsats);
     const träning = [x.traningsniva, ...(x.spelDelar || []).map(del => del?.traningsniva)]
       .flatMap(tal).filter(n => Number.isInteger(n) && n <= 5);
-    const förmågor = [].concat(x.formaga || []);
+    const taggar = förmågor(x);
     const eg = {
-      metod: x.typ || x.familj || x.omr, förmåga: förmågor.slice().sort().join("/"),
-      rutin: förmågor.includes('procedur') && !förmågor.some(f => ['resonemang','modellering','problemlösning'].includes(f)),
+      metod: x.typ || x.familj || x.omr, taggar, förmåga: taggar.slice().sort().join("/"),
+      rutin: taggar.includes('procedur') && !taggar.some(f => ['resonemang','modellering','problemlösning'].includes(f)),
       lång: delar > 1 || insats.some(n => n >= 3),
       svårighet: träning.length ? Math.max(...träning) : null
     };
@@ -74,12 +81,16 @@ const Bladval = (() => {
   function dra(pool, val, tidigare = [], historik = new Map(), slump = Math.random) {
     const {antal, profil, längd, familjer, nivåantal} = val;
     if (!Number.isInteger(antal) || antal < 1 || antal > 40) throw Error('Välj mellan 1 och 40 uppgifter.');
+    if (val.förmågor && !val.förmågor.size) throw Error('Välj minst en förmåga.');
+    const återstår = new Set(val.förmågor);
     const låsta = tidigare.map((x, i) => ({x, i})).filter(p => p.x._bladLåst);
     if (låsta.some(p => p.i >= antal)) throw Error('En låst uppgift ligger efter bladets sista plats. Höj antalet eller lås upp den.');
+    if (låsta.some(({x}) => !matcharFörmågor(x, val.förmågor))) throw Error('En låst uppgift saknar vald förmåga. Ändra urvalet eller lås upp uppgiften.');
     const valda = new Set(låsta.map(p => p.x.id));
     const antalPerFamilj = new Map(), antalPerOmråde = new Map(), antalPerMetod = new Map(), antalPerFörmåga = new Map();
     const räkna = (m, k) => m.set(k, (m.get(k) || 0) + 1);
     function registrera(x) {
+      for (const f of egenskaper(x).taggar) återstår.delete(f);
       räkna(antalPerFamilj, familj(x)); räkna(antalPerOmråde, område(x));
       räkna(antalPerMetod, egenskaper(x).metod); räkna(antalPerFörmåga, egenskaper(x).förmåga);
     }
@@ -88,7 +99,7 @@ const Bladval = (() => {
     const fasta = new Map([...(familjer || [])].filter(([, n]) => n !== null));
     const grupper = new Map();
     for (const x of pool) {
-      if (valda.has(x.id) || (familjer && !familjer.has(familj(x)))) continue;
+      if (!matcharFörmågor(x, val.förmågor) || valda.has(x.id) || (familjer && !familjer.has(familj(x)))) continue;
       const k = fasta.has(familj(x)) ? familj(x) : '*';
       if (!grupper.has(k)) grupper.set(k, []);
       grupper.get(k).push(x);
@@ -129,6 +140,7 @@ const Bladval = (() => {
       for (const x of möjliga) {
         const eg = egenskaper(x), nf = antalPerFamilj.get(familj(x)) || 0;
         const rang = [
+          återstår.size ? -eg.taggar.filter(f => återstår.has(f)).length : 0,
           längd === 'alla' || (längd === 'lång') === eg.lång ? 0 : 1,
           mål && x.niva !== mål ? 1 : 0,
           profil === 'rutin' && !eg.rutin ? 1 : 0,
@@ -158,14 +170,21 @@ const Bladval = (() => {
     return Array.from({length:antal}, (_,i) => tidigare[i]?._bladLåst ? tidigare[i] : nya.shift());
   }
 
-  function ersätt(pool, lista, index, historik, längd, slump = Math.random) {
+  function ersätt(pool, lista, index, historik, längd, slump = Math.random, valdaFörmågor = null) {
     const x = lista[index], upptagna = new Set(lista.map(t => t.id));
-    const kandidater = pool.filter(t => !upptagna.has(t.id) && t.niva === x.niva && familj(t) === familj(x));
+    const kandidater = pool.filter(t => matcharFörmågor(t, valdaFörmågor) && !upptagna.has(t.id) && t.niva === x.niva && familj(t) === familj(x));
     if (!kandidater.length) throw Error('Det finns ingen ytterligare uppgift på samma nivå i detta delmoment med dina filter.');
-    const likaMetod = kandidater.filter(t => x.typ && t.typ === x.typ);
+    const saknas = new Set(valdaFörmågor);
+    for (const [i, uppgift] of lista.entries()) {
+      if (i !== index) förmågor(uppgift).forEach(f => saknas.delete(f));
+    }
+    const behåll = förmågor(x).filter(f => saknas.has(f));
+    const möjliga = kandidater.filter(t => behåll.every(f => förmågor(t).includes(f)));
+    if (!möjliga.length) throw Error('Ingen annan uppgift på samma nivå i delmomentet behåller bladets valda förmågor.');
+    const likaMetod = möjliga.filter(t => x.typ && t.typ === x.typ);
     const val = {antal:1, profil:'varierad', längd: längd === 'alla' ? (egenskaper(x).lång ? 'lång' : 'kort') : längd};
-    return dra(likaMetod.length ? likaMetod : kandidater, val, [], historik, slump)[0];
+    return dra(likaMetod.length ? likaMetod : möjliga, val, [], historik, slump)[0];
   }
-  return {dra, ersätt, familj, område, svårighetsgrad};
+  return {dra, ersätt, familj, område, svårighetsgrad, förmågor, matcharFörmågor};
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Bladval;
