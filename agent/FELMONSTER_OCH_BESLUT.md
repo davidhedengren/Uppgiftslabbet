@@ -3864,3 +3864,27 @@ exempel 19 i en figur som är 600 enheter bred), eller rita smalare. Kör `tools
 som kontroll. Skriv aldrig om SVG med en HTML-tolkare (BeautifulSoup m.fl.), som gör viewBox, refX och markerWidth
 gemena, och byt aldrig bindestreck mot typografiskt minus inne i taggar (`font−size`, `dy="−6"`). Testet
 `svg-utseende-2026-11-24` stoppar båda.
+
+## Rätt svar godtas med fler eller färre decimaler inom rimliga gränser, 2026-11-24
+
+Användaren: ”Att facit inte svarar med rätt antal värdesiffror gör inget, men det är viktigt att man får rätt i
+kunskapsgymmet även om man använder fler eller färre decimaler (så länge det är inom rimliga gränser).”
+
+Ändrat i Kunskapsgymmets `index.html` (`fysikVardesiffrorRatt`, ny `rimligAvrundningRatt`), test
+`kunskapsgymmet/tools/rimlig-avrundning-2026-11-24.test.js`:
+
+- Med `svarVardesiffror`: oförändrat n−2 till n+2 värdesiffror, men ett värde exakt mitt emellan får avrundas åt
+  båda hållen från två värdesiffror (7,545 → 7,54 eller 7,55; med en siffra uppåt: 8,5 → 9). Avslutande
+  heltalsnollor prövas i alla tolkningar (200 för 199,7 med fyra rekommenderade siffror).
+- Utan aktiv värdesifferrättning, för närmevärden: ett korrekt avrundat svar godtas med en värdesiffra färre till
+  tre fler än facit visar, minst två (17, 17,5, 17,46 för 17,4576). Anger uppgiften antal decimaler godtas en
+  decimal färre till tre fler. Närmevärden = fysik (utom antal, ”hela …”), matte där facit är ett långt oavrundat
+  tal, och uppgifter som ber om avrundning.
+- Strikt som förut: ”exakt” (men inte ”exakt eller med tre decimaler”), ”utan avrundning”, avrunda ett givet tal,
+  avrundningsgränser, avrundnings- och enhetsområdena (`matnogg`, `enheter`, `avrundning`,
+  `decimaltal_positionssystem` …), heltal i matte (antal, kronbelopp) och exakta decimaltal i matte.
+- Kontroll i webbläsaren över alla sju banker: för varje numeriskt svar provades facits värde avrundat till p−1, p
+  och p+1 värdesiffror och 3 % fel. Före: 698 rimliga svar underkändes (bl.a. 7,54 för 7,545, 0,0012 för 0,00118).
+  Efter: kvar är bara avsiktligt strikta uppgifter. Inga fel svar godtas som inte redan godtogs, utom korrekta
+  avrundningar (halvsteg, en värdesiffra färre).
+- Uppgifternas egna toleranser (`tolerans`) är orörda; en del är vida (Fy2 4.64: 0,2).
