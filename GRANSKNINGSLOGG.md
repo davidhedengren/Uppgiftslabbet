@@ -1104,3 +1104,7 @@ beskärningsuppgifter med stöd (3.56–3.61). Nytt nivåbeslut: beskärning med
 är C, begreppsfrågor E och fullständig alfa–beta-spårning A. Banken har 202
 uppgifter. 84/84 tester godkända.
 [Uppgifter och nivåbeslut](agent/AI_PAFYLLNAD6_2026-11-11.md).
+
+## Förmågor i matematik, 2026-11-24
+
+Av 1 133 uppgifter märkta med både procedur och problemlösning fick 409 taggen problemlösning borttagen. [Beslut per kurs, delmoment och uppgift](agent/MATEMATIK_FORMAGOR_2026-11-24.md).

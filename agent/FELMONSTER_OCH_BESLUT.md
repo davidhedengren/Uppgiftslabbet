@@ -3888,3 +3888,7 @@ kunskapsgymmet även om man använder fler eller färre decimaler (så länge de
   Efter: kvar är bara avsiktligt strikta uppgifter. Inga fel svar godtas som inte redan godtogs, utom korrekta
   avrundningar (halvsteg, en värdesiffra färre).
 - Uppgifternas egna toleranser (`tolerans`) är orörda; en del är vida (Fy2 4.64: 0,2).
+
+## Matematik – procedur och problemlösning, 2026-11-24
+
+Bedöm strategivalet i den konkreta frågan på kursens nivå. En given ekvation med parentesprodukter, standardberäkning av en tangent i en given punkt eller direkt integrering av ett givet positivt flöde kan kräva flera steg och ändå vara en rutinuppgift. Behåll problemlösning när eleven exempelvis själv måste finna en geometrisk konstruktion eller kombinera villkor för att hitta en framkomlig väg. Samtliga bedömda ID:n finns i [förmågegranskningen](MATEMATIK_FORMAGOR_2026-11-24.md).

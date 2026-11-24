@@ -83,3 +83,27 @@ test('Matematikblad tar med valda förmågor även när en äldre tagg saknar ö
   assert.equal(ersätt([...xs,andra],[argument,problem],1,new Map(),'alla',Math.random,val.förmågor).id,'p2');
   assert.throws(()=>ersätt([...xs,{...argument,id:'a2'}],[argument,problem],1,new Map(),'alla',Math.random,val.förmågor),/behåller/);
 });
+
+test('Matematikbankernas förmågefilter skiljer direkta metoder från eget strategival', () => {
+  const {matcharFörmågor} = require('../bladval');
+  const {readFileSync} = require('node:fs');
+  const {runInNewContext} = require('node:vm');
+  const stickprov = [
+    ['ma1','1.1116','1.1400'],
+    ['ma2','1.1122','3.515'],
+    ['mato1','2.307','3.193'],
+    ['mato2','3.28','3.42'],
+    ['matf1','1.199','1.227']
+  ];
+  for (const [kurs,rutin,problem] of stickprov) {
+    const window = {};
+    runInNewContext(readFileSync(require.resolve('../uppgifter'+kurs+'.js'),'utf8'),{window});
+    const bank = Object.values(window).find(Array.isArray);
+    for (const [id, problemlösning] of [[rutin,false],[problem,true]]) {
+      const x = bank.find(t => t.id === id);
+      assert.ok(x, kurs+' '+id);
+      assert.ok(matcharFörmågor(x,new Set(['procedur'])), kurs+' '+id);
+      assert.equal(matcharFörmågor(x,new Set(['problemlösning'])), problemlösning, kurs+' '+id);
+    }
+  }
+});
