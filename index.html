@@ -5852,8 +5852,15 @@ function ulLösenordUpplåst(){
   <div class="bv-kropp">
     <div class="bv-fält">
       <label>Område<select id="bvOmråde"></select></label>
+      <div><label for="bvSvårighet">Svårighetsgrad</label><select id="bvSvårighet" aria-describedby="bvSvårighetInfo">
+        <option value="">Blandad svårighetsgrad</option>
+        <option value="1">1 · Mycket lätt</option><option value="2">2 · Lätt</option>
+        <option value="3">3 · Medel</option><option value="4">4 · Svår</option>
+        <option value="5">5 · Mycket svår</option>
+      </select></div>
       <label>Antal uppgifter<input type="number" min="1" max="40" value="12" id="bvAntal"></label>
     </div>
+    <p class="bv-info" id="bvSvårighetInfo" hidden>Vid en vald svårighetsgrad ingår uppgifter med den träningsnivån. För flerdelade uppgifter räknas den högsta angivna nivån.</p>
     <fieldset class="bv-profiler"><legend>Vad ska eleverna träna på?</legend>
       <label><input type="radio" name="bvProfil" value="rutin"><span><b>Mängdträning</b><small>Öva samma metod flera gånger.</small></span></label>
       <label><input type="radio" name="bvProfil" value="varierad" checked><span><b>Varierad träning</b><small>Växla mellan delmoment och metoder.</small></span></label>
@@ -5877,7 +5884,7 @@ function ulLösenordUpplåst(){
 </dialog>
 
 <div id="utskrift"></div>
-<script src="bladval.js"></script>
+<script src="bladval.js?v=20261124-niva"></script>
 
 <script>
 /* Webbläsaren minns annars sidans skrollposition mellan sidladdningar och
@@ -8179,9 +8186,14 @@ let bladförslag = [], startblad = [], verkstadKurs, basurval, verkstadÄndrad;
 const bladhistorik = new Map();
 let förslagsnummer = 0;
 
-function verkstadPool() {
+function verkstadOmrådespool() {
   const område = $('#bvOmråde').value;
   return område ? basurval.filter(x => Bladval.område(x) === område) : basurval;
+}
+function verkstadPool() {
+  const grad = Number($('#bvSvårighet').value);
+  const pool = verkstadOmrådespool();
+  return grad ? pool.filter(x => Bladval.svårighetsgrad(x) === grad) : pool;
 }
 function verkstadHistorik() {
   if (!bladhistorik.has(verkstadKurs)) bladhistorik.set(verkstadKurs, new Map());
@@ -8191,23 +8203,27 @@ function minnsFörslag(lista) {
   const historik = verkstadHistorik(), nr = ++förslagsnummer;
   lista.forEach(x => historik.set(x.id, nr));
 }
-function verkstadFamiljer() {
-  const pool = verkstadPool(), antal = new Map();
+function verkstadFamiljer(behållVal = false) {
+  const förra = behållVal ? verkstadVal() : {};
+  const pool = verkstadPool(), antal = new Map(), namn = new Map();
+  for (const x of verkstadOmrådespool()) namn.set(Bladval.familj(x), x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr);
   for (const x of pool) {
     const k = Bladval.familj(x);
-    if (!antal.has(k)) antal.set(k, {namn:x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr, n:0});
-    antal.get(k).n++;
+    antal.set(k, (antal.get(k) || 0) + 1);
   }
-  $('#bvFamiljer').innerHTML = [...antal].map(([k, f]) =>
-    '<div class="bv-familj"><label><input type="checkbox" value="'+wordEsc(k)+'"> '+wordEsc(f.namn)+' ('+f.n+')</label>'+
-    '<input type="number" min="0" max="40" placeholder="Fritt" disabled aria-label="Antal för '+wordEsc(f.namn)+'"></div>').join('');
-  $('#bvFamiljsök').value = '';
-  $('#bvFamiljsökRad').hidden = antal.size < 12;
-  const nivåer = ['E','C','A'];
-  $('#bvNivåer').innerHTML = nivåer.map(n => {
-    const antal = pool.filter(x => x.niva === n).length;
-    return '<label>'+n+' ('+antal+')<input type="number" aria-label="Antal '+n+'" min="0" max="'+Math.min(40,antal)+'" value="0" '+(antal?'':'disabled')+'></label>';
+  $('#bvFamiljer').innerHTML = [...namn].map(([k, etikett]) => {
+    const vald = förra.familjer?.has(k), n = antal.get(k) || 0;
+    if (!n && !vald) return '';
+    return '<div class="bv-familj"><label><input type="checkbox" value="'+wordEsc(k)+'" '+(vald?'checked':'')+'> '+wordEsc(etikett)+' ('+n+')</label>'+
+      '<input type="number" min="0" max="40" placeholder="Fritt" value="'+(förra.familjer?.get(k) ?? '')+'" '+(vald?'':'disabled')+' aria-label="Antal för '+wordEsc(etikett)+'"></div>';
   }).join('');
+  $('#bvFamiljsök').value = '';
+  $('#bvFamiljsökRad').hidden = $('#bvFamiljer').childElementCount < 12;
+  $('#bvNivåer').innerHTML = ['E','C','A'].map((n,i) => {
+    const antal = pool.filter(x => x.niva === n).length, valt = förra.nivåantal?.[i] || 0;
+    return '<label>'+n+' ('+antal+')<input type="number" aria-label="Antal '+n+'" min="0" max="'+Math.min(40,antal)+'" value="'+valt+'" '+(antal||valt?'':'disabled')+'></label>';
+  }).join('');
+  $('#bvSvårighetInfo').hidden = !$('#bvSvårighet').value;
   verkstadUnderlag();
 }
 function verkstadVal() {
@@ -8240,7 +8256,7 @@ function verkstadUnderlag() {
 function verkstadVisaLista() {
   $('#bvResultat').hidden = !bladförslag.length;
   $('#bvLista').innerHTML = bladförslag.map((x,i) => '<li><div class="bv-meta"><b>'+
-    wordEsc([x.niva, x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr].filter(Boolean).join(' · '))+
+    wordEsc([x.niva, Bladval.svårighetsgrad(x) ? 'Svårighet '+Bladval.svårighetsgrad(x)+'/5' : '', x.familj || DB.omr?.[x.kap]?.[x.omr] || x.omr].filter(Boolean).join(' · '))+
     '</b><button type="button" class="knapp liten" data-bv-lås="'+i+'" aria-pressed="'+Boolean(x._bladLåst)+'">'+
     (x._bladLåst?'Lås upp':'Lås')+'</button><button type="button" class="knapp liten" data-bv-byt="'+i+'" '+
     (x._bladLåst?'disabled':'')+'>Byt ut</button></div><div class="bv-text">'+uppgiftsText(x)+'</div></li>').join('');
@@ -8252,6 +8268,8 @@ function öppnaBladverkstad() {
   basurval = urval();
   startblad = state.blad.slice();
   bladförslag = startblad.map(x => ({...x}));
+  const grader = new Set(startblad.map(Bladval.svårighetsgrad));
+  $('#bvSvårighet').value = grader.size === 1 ? (Bladval.svårighetsgrad(startblad[0]) ?? '') : '';
   minnsFörslag(bladförslag);
   const områden = new Map(basurval.map(x => [Bladval.område(x), DB.omr?.[x.kap]?.[x.omr] || x.omr]));
   const etikett = state.omr.size ? 'Valda områden i banken' : 'Alla områden i urvalet';
@@ -8278,6 +8296,7 @@ verkstad.addEventListener('input', e => {
     return;
   }
   if (e.target.id === 'bvOmråde') verkstadFamiljer();
+  if (e.target.id === 'bvSvårighet') verkstadFamiljer(true);
   if (e.target.matches('#bvFamiljer input[type=checkbox]'))
     e.target.closest('.bv-familj').querySelector('input[type=number]').disabled = !e.target.checked;
   $('#bvNivåer').hidden = !$('#bvNivåval').checked;
@@ -8290,6 +8309,11 @@ verkstad.addEventListener('input', e => {
 $('#bvDra').onclick = () => {
   try {
     const pool = verkstadPool();
+    const grad = Number($('#bvSvårighet').value);
+    if (grad && bladförslag.some(x => x._bladLåst && Bladval.svårighetsgrad(x) !== grad))
+      throw Error('En låst uppgift har en annan svårighetsgrad. Lås upp den eller välj blandad svårighetsgrad.');
+    if (grad && pool.length < $('#bvAntal').valueAsNumber)
+      throw Error('Det finns '+pool.length+' uppgifter med svårighetsgrad '+grad+' i urvalet. Sänk antalet eller välj en annan svårighetsgrad.');
     const ids = new Set(pool.map(x => x.id));
     if (bladförslag.some(x => x._bladLåst && !ids.has(x.id))) throw Error('En låst uppgift ligger utanför urvalet. Ändra filtret eller lås upp den.');
     const gamla = new Set(bladförslag.filter(x=>x._bladLåst));

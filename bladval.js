@@ -11,16 +11,24 @@ const Bladval = (() => {
       x.svarstyp === 'flera_delar' && Array.isArray(x.rättSvar) ? x.rättSvar.length : 0);
     const tal = v => (Array.isArray(v) ? v : [v]).map(Number).filter(n => n > 0 && Number.isFinite(n));
     const insats = tal(x.arbetsinsats);
-    const träning = tal(x.traningsniva);
+    const träning = [x.traningsniva, ...(x.spelDelar || []).map(del => del?.traningsniva)]
+      .flatMap(tal).filter(n => Number.isInteger(n) && n <= 5);
     const förmågor = [].concat(x.formaga || []);
     const eg = {
       metod: x.typ || x.familj || x.omr, förmåga: förmågor.slice().sort().join("/"),
       rutin: förmågor.includes('procedur') && !förmågor.some(f => ['resonemang','modellering','problemlösning'].includes(f)),
       lång: delar > 1 || insats.some(n => n >= 3),
-      svårighet: träning.length ? Math.max(...träning) : 1 + 2 * nivåer.indexOf(x.niva)
+      svårighet: träning.length ? Math.max(...träning) : null
     };
     info.set(x, eg);
     return eg;
+  }
+
+  function svårighetsgrad(x) {
+    return egenskaper(x).svårighet;
+  }
+  function stegringsvärde(x) {
+    return svårighetsgrad(x) ?? (1 + 2 * nivåer.indexOf(x.niva));
   }
 
   // Fördela exakta delmoments- och nivåantal samtidigt. Vid en krock kan en
@@ -138,7 +146,7 @@ const Bladval = (() => {
       valda.add(vald.id); registrera(vald); nya.push(vald);
     }
     if (profil === 'stegring') nya.sort((a,b) => nivåer.indexOf(a.niva)-nivåer.indexOf(b.niva)
-      || egenskaper(a).svårighet-egenskaper(b).svårighet || Number(egenskaper(a).lång)-Number(egenskaper(b).lång));
+      || stegringsvärde(a)-stegringsvärde(b) || Number(egenskaper(a).lång)-Number(egenskaper(b).lång));
     else if (profil === 'rutin') {
       const ordning = new Map([...new Set(nya.map(familj))].map((k,i) => [k,i]));
       nya.sort((a,b) => ordning.get(familj(a))-ordning.get(familj(b)));
@@ -158,6 +166,6 @@ const Bladval = (() => {
     const val = {antal:1, profil:'varierad', längd: längd === 'alla' ? (egenskaper(x).lång ? 'lång' : 'kort') : längd};
     return dra(likaMetod.length ? likaMetod : kandidater, val, [], historik, slump)[0];
   }
-  return {dra, ersätt, familj, område};
+  return {dra, ersätt, familj, område, svårighetsgrad};
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Bladval;

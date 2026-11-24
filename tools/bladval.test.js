@@ -59,3 +59,11 @@ test('Möjliga kombinationer av glesa delmoment och nivåer får alltid en lösn
     for(const [k,n] of krav) assert.equal(lista.filter(x=>familj(x)===k).length,n);
   }
 });
+
+test('Svårighetsgrad utgår från träningsnivån och den svåraste delen av hela uppgiften',()=>{
+  const {svårighetsgrad} = require('../bladval');
+  assert.equal(svårighetsgrad(uppgift('a','Metod','E',{traningsniva:'2'})),2);
+  assert.equal(svårighetsgrad(uppgift('b','Metod','C',{traningsniva:[1,3],spelDelar:[{traningsniva:4}]})),4);
+  assert.equal(svårighetsgrad(uppgift('c','Metod','A',{spelDelar:[{traningsniva:5}]})),5);
+  assert.equal(svårighetsgrad(uppgift('d','Metod','A',{traningsniva:[null,'',0,6,2.5]})),null);
+});
