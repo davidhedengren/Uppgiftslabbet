@@ -3401,7 +3401,7 @@ button,input,select,textarea{font-family:var(--ui)!important}
 .hogerverktyg{display:flex;gap:8px;padding:10px 12px 0;align-items:center}.hogerverktyg .knapp{flex:1;justify-content:center}.hogerverktyg .slumpwrap{flex:1}.hogerverktyg .slumpwrap>.knapp{width:100%}
 #slumpwrapTop{display:none!important}
 .hogerverktyg .slumppanel{left:0;right:auto;width:min(246px,calc(100% + 120px))!important}
-@media(max-width:1050px){.topp-dokumentknapp span{display:none}.topp-dokumentknapp{padding:8px 10px}.topp-dokumentknapp:first-child:after{content:'Mina dokument';font-size:11.5px}.topp-dokumentknapp:last-child:after{content:'Gemensam bank';font-size:11.5px}}
+@media(max-width:1050px){.topp-dokumentknapp span{display:none}.topp-dokumentknapp{padding:8px 10px}.topp-dokumentknapp[data-topp-dokument="mina"]:after{content:'Mina dokument';font-size:11.5px}.topp-dokumentknapp[data-topp-dokument="bank"]:after{content:'Gemensam bank';font-size:11.5px}}
 @media(max-width:760px){.topp-dokumentknappar{gap:5px}.topp-dokumentknapp{min-height:35px;padding:7px 8px}.topp-dokumentknapp:after{display:none}.kursrad{gap:3px}.byt-kurs-inline{font-size:10px}}
 
 .kurs-tidigare{display:block;margin-top:6px;font-size:16px;font-weight:500;line-height:1.4;letter-spacing:normal;}
@@ -4853,6 +4853,20 @@ table.data th,table.data td{border-color:var(--x-line)!important}
   border-top-color:var(--ed);animation:kvspin .7s linear infinite}
 @media (max-width:480px){ .grind-par{grid-template-columns:1fr} }
 
+/* Dokumentgenvägarna i de två sidhuvudena. */
+.topp-dokumentknapp[hidden]{display:none!important}
+.topp-dokumentknapp[data-skapa-blad]{background:var(--ed-dark);border-color:var(--ed-dark);color:white}
+.topp-dokumentknapp[data-skapa-blad] svg{color:inherit}
+.topp-dokumentknapp[data-skapa-blad] span{display:inline}
+.kv-nav{flex-wrap:wrap}
+.kv-sektionstopp:has(#kvAvbrytBlad:not([hidden])){display:flex!important;align-items:center}
+.kv-sektionstopp #kvKurserRubrik{font:600 16px/1.3 var(--ui)!important;letter-spacing:normal!important;text-transform:none}
+.kv-nav .topp-dokumentknappar{order:1;flex-basis:100%;justify-content:center}
+@media(max-width:760px){
+  .top{flex-wrap:wrap;height:auto!important}
+  .top .topp-dokumentknappar{order:1;flex-basis:100%}
+}
+
 /* ── Kontomenyn ── */
 .konto-plats{position:relative;flex:none}
 .konto-plats:empty{display:none}
@@ -5443,7 +5457,8 @@ function ulLösenordUpplåst(){
 
     <section class="kv-kurssektion" aria-labelledby="kvKurserRubrik">
       <div class="kv-sektionstopp">
-        <h2 id="kvKurserRubrik">Kurser</h2>
+        <h2 id="kvKurserRubrik" tabindex="-1">Kurser</h2>
+        <button type="button" class="knapp tyst" id="kvAvbrytBlad" hidden>Avbryt</button>
       </div>
       <div class="kv-kort" id="kvKort"></div>
       <p class="kv-fel" id="kvFel" hidden></p>
@@ -5467,12 +5482,16 @@ function ulLösenordUpplåst(){
     </div>
   </div>
   <div class="fyll"></div>
-  <div class="topp-dokumentknappar" data-konto-dokument hidden>
-    <button class="topp-dokumentknapp" type="button" data-topp-dokument="mina" title="Mina prov och övningsblad">
+  <div class="topp-dokumentknappar">
+    <button class="topp-dokumentknapp" type="button" data-skapa-blad aria-haspopup="dialog" aria-controls="bladverkstad" title="Skapa övningsblad">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v5h4M9 14h6m-3-3v6"/></svg>
+      <span>Skapa övningsblad</span>
+    </button>
+    <button class="topp-dokumentknapp" type="button" data-topp-dokument="mina" data-konto-dokument hidden aria-label="Mina prov och övningsblad" title="Mina prov och övningsblad">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
       <span>Mina prov och övningsblad</span>
     </button>
-    <button class="topp-dokumentknapp" type="button" data-topp-dokument="bank" title="Gemensamma banken">
+    <button class="topp-dokumentknapp" type="button" data-topp-dokument="bank" data-konto-dokument hidden aria-label="Gemensamma banken" title="Gemensamma banken">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-6h8v6M9 10h.01M15 10h.01"/></svg>
       <span>Gemensamma banken</span>
     </button>
@@ -6200,11 +6219,11 @@ function sparAutosparaNu(){
   if(typeof delningLokalAndring==='function') delningLokalAndring();
 }
 /* Töm arbetsytan och börja om i den aktuella kursen. */
-function sparNyttDokument(){
+function sparNyttDokument(fråga='Töm arbetsytan och börja om? Det sparade originalet påverkas inte. Du kan ångra tömningen här efteråt.'){
   if(!AKTIV) return;
   let backup=null;
   if(state.blad.length){
-    if(!confirm('Töm arbetsytan och börja om? Det sparade originalet påverkas inte. Du kan ångra tömningen här efteråt.')) return false;
+    if(!confirm(fråga)) return false;
     backup=sparByggDokument('Före Börja om – '+($('#bTitel')?.value||'Dokument'),sparUuid());
     try{ sparSkrivAlla([backup,...sparLasaAlla()]); }
     catch(e){ alert('Bladet kunde inte säkerhetskopieras. Arbetsytan har inte tömts.'); return false; }
@@ -6844,11 +6863,28 @@ function räknaUppgifter(){
 /* Ett enda delegerat klicklyssnare på kursytan är robustare än att binda om
    klick på varje kort efter varje rendering. Den fungerar även när korten
    byggs om efter att en kursfil har lästs in. */
-$('#kvKort').addEventListener('click',e=>{
+const startmeny = document.querySelector('.top .topp-dokumentknappar').cloneNode(true);
+const skapaPåStart = startmeny.querySelector('[data-skapa-blad]');
+skapaPåStart.removeAttribute('aria-haspopup');
+skapaPåStart.setAttribute('aria-controls','kvKort');
+document.querySelector('.kv-nav').append(startmeny);
+
+function visaBladkursval(välj) {
+  $('#kvAvbrytBlad').hidden = !välj;
+  $('#kvKurserRubrik').textContent = välj ? 'Välj kurs för övningsbladet' : 'Kurser';
+  if (välj) $('#kvKurserRubrik').focus();
+}
+skapaPåStart.onclick = () => visaBladkursval(true);
+$('#kvAvbrytBlad').onclick = () => { visaBladkursval(false); skapaPåStart.focus(); };
+$('#kvKort').addEventListener('click',async e=>{
   const kort=e.target.closest('.kurskort');
   if(!kort)return;
   const kurs=KURSER.find(x=>x.id===kort.dataset.kurs);
-  if(kurs)väljKurs(kurs,kort);
+  const skapa = !$('#kvAvbrytBlad').hidden;
+  if (kurs && await väljKurs(kurs,kort) && skapa) {
+    visaBladkursval(false);
+    await öppnaBladFrånMenyn();
+  }
 });
 /* Versionsdatum hämtas automatiskt från själva HTML-filens
    Last-Modified-värde. På GitHub Pages uppdateras det när den publicerade
@@ -6959,6 +6995,7 @@ async function väljKurs(kurs,kort){
   }finally{ kursvalPågår=false; }
 }
 function visaKursval(){
+  visaBladkursval(false);
   sparAutosparaNu();   /* kursens utkast skrivs innan kursen lämnas */
   AKTIV=null;
   renStartadress();
@@ -6977,6 +7014,7 @@ function visaKursval(){
   ritaKursval();
   window.scrollTo(0,0);
 }
+let kursutkastKlart = Promise.resolve();
 function startaKurs(kurs){
   AKTIV=kurs; DB=kurs.data;
   AKTIV_SPAR_ID=null;
@@ -7020,7 +7058,7 @@ function startaKurs(kurs){
       byggTräd();
       rita();
       ritaBlad();
-      if(!sparHoppaAterstall) sparAterstallUtkast(kurs);
+      kursutkastKlart = sparHoppaAterstall ? Promise.resolve() : sparAterstallUtkast(kurs);
       resolve(true);
     }catch(err){
       console.error('Kunde inte starta kursen',err);
@@ -8182,7 +8220,7 @@ function slumpVäxla(e){
 }
 /* Bladverkstaden arbetar med ett förslag tills läraren väljer Använd bladet. */
 const verkstad = $('#bladverkstad');
-let bladförslag = [], startblad = [], verkstadKurs, basurval, verkstadÄndrad;
+let bladförslag = [], startblad = [], verkstadKurs, verkstadDokumenttyp, basurval, verkstadÄndrad;
 const bladhistorik = new Map();
 let förslagsnummer = 0;
 
@@ -8263,12 +8301,19 @@ function verkstadVisaLista() {
   renderKatex($('#bvLista'));
   $('#bvDra').textContent = bladförslag.length ? 'Nytt förslag' : 'Skapa förslag';
 }
+async function öppnaBladFrånMenyn() {
+  const kurs = AKTIV;
+  await kursutkastKlart;
+  if (kurs && AKTIV === kurs && !verkstad.open) öppnaBladverkstad();
+}
+document.querySelector('.top [data-skapa-blad]').onclick = öppnaBladFrånMenyn;
 function öppnaBladverkstad() {
+  verkstadDokumenttyp = dokumentTyp();
   verkstadKurs = AKTIV.id;
   basurval = urval();
   startblad = state.blad.slice();
-  bladförslag = startblad.map(x => ({...x}));
-  const grader = new Set(startblad.map(Bladval.svårighetsgrad));
+  bladförslag = verkstadDokumenttyp === 'prov' ? [] : startblad.map(x => ({...x}));
+  const grader = new Set(bladförslag.map(Bladval.svårighetsgrad));
   $('#bvSvårighet').value = grader.size === 1 ? (Bladval.svårighetsgrad(startblad[0]) ?? '') : '';
   minnsFörslag(bladförslag);
   const områden = new Map(basurval.map(x => [Bladval.område(x), DB.omr?.[x.kap]?.[x.omr] || x.omr]));
@@ -8277,10 +8322,10 @@ function öppnaBladverkstad() {
   if (områden.size === 1) $('#bvOmråde').value = områden.keys().next().value;
   $('#bvDelval').checked = $('#bvNivåval').checked = false;
   $('#bvNivåer').hidden = $('#bvDelar').hidden = true;
-  $('#bvAntal').value = Math.min(40, startblad.length || 12);
+  $('#bvAntal').value = Math.min(40, bladförslag.length || 12);
   $('#bvAnvänd').disabled = true;
   verkstadÄndrad = false;
-  $('#bvStatus').textContent = startblad.length ? 'Ditt nuvarande blad visas nedan. Lås de uppgifter du vill behålla.' : '';
+  $('#bvStatus').textContent = bladförslag.length ? 'Ditt nuvarande blad visas nedan. Lås de uppgifter du vill behålla.' : '';
   verkstadFamiljer(); verkstadVisaLista();
   verkstad.showModal();
   for (const knapp of document.querySelectorAll('[aria-controls="bladverkstad"]')) knapp.setAttribute('aria-expanded','true');
@@ -8353,10 +8398,16 @@ $('#bvLista').onclick = e => {
 $('#bvAnvänd').onclick = async () => {
   // Den befintliga skyddsdialogen för sparade dokument ligger utanför dialogens topplager.
   verkstad.close();
-  if (!await skyddaSparat()) { verkstad.showModal(); return; }
-  if (AKTIV?.id !== verkstadKurs || dokumentTyp() !== 'ovning' || state.blad.length !== startblad.length ||
+  if (verkstadDokumenttyp === 'ovning' && !await skyddaSparat()) { verkstad.showModal(); return; }
+  if (AKTIV?.id !== verkstadKurs || dokumentTyp() !== verkstadDokumenttyp || state.blad.length !== startblad.length ||
       state.blad.some((x,i) => x !== startblad[i])) {
     sparStatus('Bladet ändrades medan förslaget var öppet. Öppna bladverkstaden igen.'); return;
+  }
+  if (verkstadDokumenttyp === 'prov') {
+    if (!sparNyttDokument('Lägg övningsbladet på arbetsytan? En kopia av ditt pågående prov sparas i den här webbläsaren.')) { verkstad.showModal(); return; }
+    $('#bladTyp').value = 'ovning';
+    uppdateraKursRubriker();
+    uppdateraDokumenttyp();
   }
   state.blad = bladförslag.slice();
   rita(); ritaBlad();
