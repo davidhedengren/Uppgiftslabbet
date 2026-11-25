@@ -15,7 +15,8 @@ test('61 kort i kap 4 med nivå 1–3 och rätt kursspår',()=>{
     assert.deepEqual(t.kurs,['korrelation_koefficient','linjar_regression'].includes(t.omr)?['2b','2c']:['2a','2b','2c'],id);
     if(t.traningsniva===3){assert.equal(t.niva,'C',id);assert.equal(t.poang,'0/1/0',id);}}
   assert.deepEqual(per,{tabeller_diagram:12,lagesmatt:11,kvartiler_percentiler:9,ladagram:10,normalfordelat_material:10,korrelation_koefficient:4,linjar_regression:5});
-  assert.deepEqual(niv,{1:19,2:31,3:11});
+  /* Felrapport 2026-11-25 16:23: läraren bedömer 4.2036 och 4.2040 som E (1/0/0), alltså träningsnivå 2 i stället för 3. */
+  assert.deepEqual(niv,{1:19,2:33,3:9});
   assert.equal(new Set(B.map(x=>x.id)).size,B.length,'dubblerade ID:n');
 });
 
