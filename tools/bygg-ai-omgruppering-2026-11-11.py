@@ -65,6 +65,9 @@ _minimax_nya = ' '.join(f'3.{i}' for i in [*range(81, 141), *range(216, 232)])
 _alfabeta_nya = ' '.join(f'3.{i}' for i in [*range(141, 216), *range(232, 256)])
 DELMOMENT['Minimaxvärden och bästa drag'] = ('minimax', DELMOMENT['Minimaxvärden och bästa drag'][1] + ' ' + _minimax_nya)
 DELMOMENT['Rotvärde och beskurna löv'] = ('alfa_beta', DELMOMENT['Rotvärde och beskurna löv'][1] + ' ' + _alfabeta_nya)
+# g(n), h(n) och f(n) för en markerad ruta i labyrinter med väggar (bygg-ai-labyrinter-2026-11-26.py).
+_ghf_nya = ' '.join(f'2.{i}' for i in range(123, 153))
+DELMOMENT['g, h och f för en ruta'] = ('astar_varden', DELMOMENT['g, h och f för en ruta'][1] + ' ' + _ghf_nya)
 
 
 def _ids(a, b):

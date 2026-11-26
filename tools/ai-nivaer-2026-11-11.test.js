@@ -33,8 +33,9 @@ test('f och g: E när g följer en rak väg, C när g går runt väggar eller ge
  for(const k of ['2.16c','3.07c'])a.equal(del(k).niva,'A',k);
 });
 test('sju nya E-uppgifter (2.47–2.53) i Kunskapsgymmets format med kontrollerade svar',()=>{
- const want={'2.47':['B3',3],'2.48':['A2',2],'2.49':[5,2],'2.50':[4,11],'2.51':[3,2,5],'2.52':[7,'S → A → M',6],'2.53':[2,9]};
- for(const[id,w]of Object.entries(want)){const u=q(id);a.ok(u,id);a.equal(JSON.stringify(u.rättSvar),JSON.stringify(w),id);a.equal(u.spel,true);a.equal(u.svarstyp,'flera_delar');
+ // 2.48, 2.51 och 2.53 byggdes om med väggar 2026-11-26; deras svar räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
+ const want={'2.47':['B3',3],'2.48':null,'2.49':[5,2],'2.50':[4,11],'2.51':null,'2.52':[7,'S → A → M',6],'2.53':null};
+ for(const[id,w]of Object.entries(want)){const u=q(id);a.ok(u,id);if(w)a.equal(JSON.stringify(u.rättSvar),JSON.stringify(w),id);a.equal(u.spel,true);a.equal(u.svarstyp,'flera_delar');
   a.equal(u.niva,'E',id);for(const d of u.spelDelar){a.equal(d.niva,'E');a.ok(d.traningsniva<=2);a.equal(d['självrättning'],true);}}
  const man=(x,y)=>Math.abs(x[0]-y[0])+Math.abs(x[1]-y[1]);
  a.deepEqual([[0,1],[1,2],[1,0]].map(c=>1+man(c,[2,3])),[5,3,5]);a.equal(man([0,1],[0,3]),2);a.equal(man([1,0],[0,3]),4);

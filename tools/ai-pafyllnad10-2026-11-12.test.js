@@ -40,11 +40,8 @@ test('BFS på A-nivå räknas om',()=>{
  const bfs=(rows,s,g)=>{const R=rows.length,C=rows[0].length,kö=[s],sett=new Set([s.join()]),far={},ut=[];while(kö.length){const n=kö.shift();ut.push(n);if(n.join()===g.join())break;
   for(const[x,y]of[[-1,0],[0,1],[1,0],[0,-1]]){const v=[n[0]+x,n[1]+y];if(v[0]>=0&&v[1]>=0&&v[0]<R&&v[1]<C&&rows[v[0]][v[1]]!=='#'&&!sett.has(v.join())){sett.add(v.join());far[v.join()]=n;kö.push(v);}}}
   const väg=[g];while(far[väg[0].join()])väg.unshift(far[väg[0].join()]);return{ut,väg};};
- const M=['S3..','.3#.','...G'],kost=v=>/\d/.test(M[v[0]][v[1]])?+M[v[0]][v[1]]:1,{väg}=bfs(M,[0,0],[2,3]);
- a.equal(rätt('1.104a'),väg.slice(1).reduce((s,v)=>s+kost(v),0));
- const best={'0,0':0},kv=new Set(['0,0']);while(kv.size){const x=[...kv].sort((p,r)=>best[p]-best[r])[0];kv.delete(x);const n=x.split(',').map(Number);
-  for(const[dx,dy]of[[-1,0],[0,1],[1,0],[0,-1]]){const v=[n[0]+dx,n[1]+dy];if(v[0]<0||v[1]<0||v[0]>2||v[1]>3||M[v[0]][v[1]]==='#')continue;const alt=best[x]+kost(v);if(alt<(best[v.join()]??1e9)){best[v.join()]=alt;kv.add(v.join());}}}
- a.equal(rätt('1.104b'),best['2,3']);a.ok(rätt('1.104a')>rätt('1.104b'));a.match(rätt('1.104c'),/behöver inte vara billigast/);
+ // 1.104 byggdes om med väggar 2026-11-26; a och b räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
+ a.ok(rätt('1.104a')>rätt('1.104b'));a.match(rätt('1.104c'),/behöver inte vara billigast/);
  const öppet=(R,C)=>Array.from({length:R},()=>'.'.repeat(C));
  a.equal(rätt('1.105a'),bfs(öppet(3,4),[0,0],[2,3]).ut.length);a.equal(rätt('1.105b'),bfs(öppet(5,6),[0,0],[4,5]).ut.length);
  for(let R=2;R<=6;R++)for(let C=2;C<=6;C++)a.equal(bfs(öppet(R,C),[0,0],[R-1,C-1]).ut.length,R*C);a.equal(rätt('1.105c'),'R · C');

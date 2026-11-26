@@ -57,7 +57,7 @@ test('beräkningsuppgifternas svar',()=>{
  for(const[id,m,k]of [['1.62',['.S.#','.#..','...#','#..G'],3],['1.63',['S..#..','.#....','.#.##.','...#.G'],8]]){const r=dfs(m),b=bfs(m);eq(id,[r.out[k-1],r.out.length,r.path.length-1,r.path.length===b.path.length?'Ja':'Nej']);}
  const kids={S:['A','B'],A:['C','D'],B:['E'],C:['F'],E:['G']},qq=['S'],o=[],par={};while(qq.length){const n=qq.shift();o.push(n);if(n==='G')break;for(const k of kids[n]||[]){par[k]=n;qq.push(k);}}eq('1.64',[o.length,par.G]);
  const r74=search(['S....','.##..','...#.','.#..G'],'astar');eq('2.74',[r74.out[5],r74.out.length,r74.cost]);
- const m75=['.....','.S.#G','.....'],s75=find(m75,'S'),g75=find(m75,'G'),n75=nb(m75,s75);eq('2.75',[n75.length,search(m75,'greedy').out[1],man([1,2],g75)]);
+ // 2.75: labyrinten byggdes om med väggar 2026-11-26; svaren räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
  const g76={P:5,Q:6,R:4},c76={P:[0,5],Q:[2,3],R:[3,2]},G76=[3,5],f76=k=>g76[k]+man(c76[k],G76);eq('2.76',[Object.keys(g76).sort((x,y)=>f76(x)-f76(y))[0],f76('Q')]);
  eq('2.77',[10,2+3+2,10-(2+3+2)]);
  eq('3.47',[Math.max(1,7),mm([[[3,-2],[4,1]],[[-5,6],[2,0]],[[1,7],[-3,8]]],true),'Draget till C']);

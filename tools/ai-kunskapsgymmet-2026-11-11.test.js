@@ -67,10 +67,11 @@ test('g, h och f samt A*',()=>{
  const m40=['S....','.###.','.#G..','.###.','.....'],P40=[2,0],G40=find(m40,'G');eq('2.40',[dist(m40,[0,0])[nm(P40)],man(P40,G40),dist(m40,G40)[nm(P40)]-man(P40,G40)]);
  a.ok(ans('2.40')[2]>=4,'tydlig skillnad mellan h och verklig väg');
  for(const[id,m,k]of [['2.41',['S..#','.#..','...G'],4],['2.43',['...G','.#.#','S...'],5]]){const r=search(m,'astar');eq(id,[r.out[k-1],r.out.length,r.cost]);}
- const m42=['.....G','3.3...','3.3...','S.....'];eq('2.42',[search(m42,'greedy').cost,search(m42,'astar').cost]);a.ok(ans('2.42')[0]>ans('2.42')[1]);
+ // 2.42 och 2.44 byggdes om med väggar 2026-11-26; svaren räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
+ a.ok(ans('2.42')[0]>ans('2.42')[1]);
 });
 test('viktade vägar',()=>{
- const m44=['S4..','.4.3','...G'];eq('2.44',[[[0,1],[0,2],[0,3],[1,3],[2,3]].reduce((s,c)=>s+cost(m44,c),0),cheapest(m44,[0,0],[2,3])]);
+ a.ok(ans('2.44')[0]>ans('2.44')[1]);
  const r45=graph([['S','A',3],['S','B',1],['A','C',2],['B','C',6],['B','A',1],['C','M',2],['A','M',8]],'S','M');eq('2.45',[r45.cost,r45.path.length-1]);
  const h={S:6,A:4,B:5,C:2,D:3,M:0},r46=graph([['S','A',2],['S','B',3],['A','C',3],['B','D',2],['C','M',2],['D','M',4],['A','B',1]],'S','M',h);eq('2.46',[r46.out[1],r46.out.length,r46.cost]);
 });

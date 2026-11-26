@@ -66,12 +66,8 @@ test('2. A i sökningsdelen räknas om',()=>{
  a.equal(rätt('2.106c'),'h₂');a.match(rätt('2.106d'),/^h₁/);
  // 2.107: 2k < 6
  a.equal([1,2,3,4,5,6].filter(k=>2*k<6).join(),'1,2');a.equal(rätt('2.107a'),'8');a.equal(rätt('2.107b'),'6');a.equal(rätt('2.107c'),'k ≤ 2');
- // 2.108: girig bäst först och A* i S333G / .....
- const M8=['S333G','.....'],G8=[0,4],k8=([r,k])=>/\d/.test(M8[r][k])?+M8[r][k]:1,h8=p=>Math.abs(p[0]-G8[0])+Math.abs(p[1]-G8[1]);
- const grannar=n=>[U,Rr,D,L].map(([x,y])=>[n[0]+x,n[1]+y]).filter(v=>öppen(v,M8));
- let n=[0,0],gk=0;const sett=new Set([n.join()]);while(n.join()!==G8.join()){const v=grannar(n).filter(v=>!sett.has(v.join())).sort((x,y)=>h8(x)-h8(y))[0];sett.add(v.join());gk+=k8(v);n=v;}
- const best={'0,0':0},kv=new Set(['0,0']);while(kv.size){const x=[...kv].sort((p,r)=>best[p]-best[r])[0];kv.delete(x);for(const v of grannar(x.split(',').map(Number))){const alt=best[x]+k8(v);if(alt<(best[v.join()]??1e9)){best[v.join()]=alt;kv.add(v.join());}}}
- a.equal(rätt('2.108a'),String(gk));a.equal(rätt('2.108b'),String(best['0,4']));a.match(rätt('2.108c'),/kan hitta en dyrare väg/);
+ // 2.108: labyrinten byggdes om med väggar 2026-11-26; a och b räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
+ a.ok(+rätt('2.108a')>+rätt('2.108b'));a.match(rätt('2.108c'),/kan hitta en dyrare väg/);
  for(const k of ['1.99c','2.106c','2.106d','2.107c','2.108c'])a.equal(del(k).niva,'A',k);
 });
 

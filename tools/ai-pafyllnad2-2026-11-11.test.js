@@ -57,12 +57,8 @@ test('BFS, DFS och köer i träd och grafer',()=>{
  const r27=dfs(['S.#','..#','#.G']);a.equal(r27.out.join(' '),'A1 A2 B2 C2 C3');a.equal(q('1.27').spelDelar[0].alternativ.find(x=>x.ratt).txt,r27.out[2]);
 });
 test('g, h och f samt girig bäst först och A*',()=>{
- const m25=['S3..','.3#.','...G'];a.equal(best(m25,[0,0],[0,2]),4);a.equal(man([0,2],[2,3]),3);a.equal(q('2.25').spelDelar[1].alternativ.find(x=>x.ratt).txt,'7');
+ // 2.25, 2.27, 2.28 och 2.29: labyrinten byggdes om med väggar 2026-11-26; svaren räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
  const m26=['S..#G','.#.#.','.#...','...#.'],s26=[0,0],g26=[0,4];a.equal([[0,2],[2,3],[3,2]].map(x=>best(m26,s26,x)+'/'+man(x,g26)).join(' '),'2/2 5/3 5/5');a.equal(best(m26,[0,2],g26),6);
- const m27=['....G','44...','44...','S....'],gr=search(m27,'greedy'),as=search(m27,'astar');a.equal(gr.path.join(' '),'D1 C1 B1 A1 A2 A3 A4 A5');a.equal(gr.cost,13);a.equal(as.cost,7);a.equal(as.out[1],'D2');
- has('2.27','Girig bäst först: 13. A*: 7.');
- const m28=['S...','.#..','...G'],r28=search(m28,'astar');a.equal(r28.out.join(', '),'A1, A2, A3, A4, B4, C4');a.equal(r28.open.join(),'B1,B3');for(const k of r28.open)a.equal(r28.G[k]+r28.h(k),5);
- const m29=['S3..','.33.','..3.','3..G'];a.equal(best(m29,[0,0],[3,3]),6);a.equal(['A2','A3','A4','B4','C4','D4'].reduce((s,x)=>s+(m29[x.charCodeAt(0)-65][+x[1]-1]==='3'?3:1),0),8);
  const E=[['S','A',2],['A','M',9],['S','B',3],['B','C',2],['C','M',2]],h={S:4,A:2,B:4,C:2,M:0};
  const g30=graph(E,h,'S','M','greedy'),a30=graph(E,h,'S','M','astar');a.equal(g30.path.join(''),'SAM');a.equal(g30.cost,11);a.equal(a30.path.join(''),'SBCM');a.equal(a30.cost,7);
  a.equal(a30.out.join(' | '),'S 0 4 4 | A 2 2 4 | B 3 4 7 | C 5 2 7 | M 7 0 7');

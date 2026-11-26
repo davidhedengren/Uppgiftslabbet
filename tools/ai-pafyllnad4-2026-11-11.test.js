@@ -51,10 +51,8 @@ test('köer, stackar, BFS och DFS',()=>{
 });
 test('A*, girig bäst först och g/h/f',()=>{
  const r54=search(['S..#','.#..','..#.','...G'],'astar');eq('2.54',[r54.out[2],r54.out.length,r54.cost]);
- const m55=['....','S.#G','....'],s55=find(m55,'S'),g55=find(m55,'G'),f55=nb(m55,s55).map(v=>[nm(v),1+man(v,g55)]).sort((x,y)=>x[1]-y[1]);a.ok(f55[0][1]<f55[1][1]);eq('2.55',[f55[0][0],1+man([0,0],g55)]);
+ // 2.55, 2.57 och 2.63: labyrinten byggdes om med väggar 2026-11-26; svaren räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
  const g56=search(['S...','#.#.','...G'],'greedy');eq('2.56',[g56.out[1]+' och '+g56.out[2],man([0,2],[2,3])]);
- const m57=['S...','..#.','...G'];const st=search(m57,'astar');a.deepEqual(st.out.slice(0,2),['A1','A2']);
- a.equal(1+man([1,0],[2,3]),5);a.equal(2+man([0,2],[2,3]),5);a.equal(2+man([1,1],[2,3]),5);eq('2.57',['B1, A3 och B2',3]);
  eq('2.58',[3+man([3,1],[3,4])<6+man([0,4],[3,4])?'Q':'P',6+man([0,4],[3,4])]);
  eq('2.59',[man([1,2],[3,4]),3+man([1,2],[3,4])]);
  const hs={P:man([0,4],[3,5]),Q:man([3,1],[3,5]),R:man([2,4],[3,5])};eq('2.60',[Object.keys(hs).sort((x,y)=>hs[x]-hs[y])[0],hs.Q]);
@@ -62,7 +60,6 @@ test('A*, girig bäst först och g/h/f',()=>{
 });
 test('viktade vägar, prioritetsköer, minimax och alfa–beta',()=>{
  eq('2.62',['S → B → C → M',Math.min(2+9,2+5+2,4+1+2)]);
- const m63=['S44.','....','.3..','...G'],path=c=>c.reduce((s,x)=>s+cost(m63,x),0);eq('2.63',['Väg 2',path([[0,1],[0,2],[0,3],[1,3],[2,3],[3,3]])]);
  const m64=['.....','.#.#.','S433G'];eq('2.64',[4+3+3+1,cheapest(m64,[2,0],[2,4]),8]);
  const T={A:[2,8],B:[5,2],C:[3,6],D:[6,4],E:[1,9]},o=Object.keys(T).sort((x,y)=>T[x][0]+T[x][1]-T[y][0]-T[y][1]);eq('2.66',[o[1],T[o[0]][0]+T[o[0]][1]]);
  eq('3.37',[Math.min(5,7),mm([[4,8],[6,2,9],[5,7]],true),'Draget till C']);
