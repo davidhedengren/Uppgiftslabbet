@@ -181,6 +181,14 @@ def cell_alts(ratt, andra, kommentar):
 
 # ---------------------------------------------------------------- g(n), h(n), f(n)
 
+G_LED_RAK = 'Räkna stegen från start till {L}. Här behöver vägen inte gå runt någon vägg.'
+
+
+def g_rad(vag, L, mn):
+    """Facitrad för g(n) när vägen till rutan går utan omväg."""
+    return f'Från start till {L} ({mn}) går en väg utan omväg: {pil(names(vag))}. Den har {len(vag) - 1} steg.'
+
+
 def ghf_delar(rows, mark, L, tn=(2, 1, 1), bara=('g', 'h', 'f')):
     s, goal = A.parse(rows)
     gv, vag = billigast(rows, mark)
@@ -188,12 +196,15 @@ def ghf_delar(rows, mark, L, tn=(2, 1, 1), bara=('g', 'h', 'f')):
     mn, gn = A.cname(mark), A.cname(goal)
     terr = any(c in TERR for x in rows for c in x)
     delar = []
+    rak = not terr and gv == A.manhattan(s, mark)
     if 'g' in bara:
         rad = (f'Den billigaste vägen från start till {L} ({mn}) är {pil(names(vag))}. Den kostar {summa(rows, vag)} = {gv}.'
-               if terr else f'Den kortaste vägen från start till {L} ({mn}) går runt väggarna: {pil(names(vag))}. '
-                            f'Den har {len(vag) - 1} steg.')
+               if terr else g_rad(vag, L, mn) if rak else
+               f'Den kortaste vägen från start till {L} ({mn}) går runt väggarna: {pil(names(vag))}. '
+               f'Den har {len(vag) - 1} steg.')
         delar.append(num(f'Bestäm g(n) för rutan {L}.',
                          [step('g(n) = kostnaden för den billigaste vägen från start till n', rad)], gv,
+                         G_LED_RAK.format(L=L) if rak else
                          f'Följ gångarna från start till {L}. Väggarna går inte att passera.' if not terr else
                          f'Pröva vägar från start till {L} och jämför vad de kostar. Väggarna går inte att passera.',
                          tn[0]))
@@ -245,7 +256,14 @@ def ghf_intro(rows, mark, L, i):
     return maze(rows, s, goal, {mark: L}, extra_legend=MARK) + p(text) + (p(kt) if kt else '')
 
 
-def ghf_villkor(omvag=True, terr=False):
+def rak_till(rows, c):
+    """Sant när billigaste vägen från start till c varken går runt väggar eller genom terräng."""
+    s, _ = A.parse(rows)
+    gv, vag = billigast(rows, c)
+    return bool(vag) and gv == A.manhattan(s, c) and all(A.cost(rows, x) == 1 for x in vag[1:])
+
+
+def ghf_villkor(omvag=True, terr=False, rak=False):
     def v(rows, rng):
         s, goal = A.parse(rows)
         kand = []
@@ -255,6 +273,10 @@ def ghf_villkor(omvag=True, terr=False):
                 continue
             steg = len(vag) - 1
             if steg < 2:
+                continue
+            if rak:
+                if steg >= 3 and rak_till(rows, c):
+                    kand.append(c)
                 continue
             dv = gv - A.manhattan(s, c)
             if omvag and dv < 2 and not terr:
@@ -277,8 +299,9 @@ def byt_i(del_, par):
     return json.loads(t)
 
 
-def g_ghf(old, fro, i, terr='', delar=('g', 'h', 'f')):
-    rows, mark = sok(fro, ghf_villkor(omvag=not terr, terr=bool(terr)), terr=terr)
+def g_ghf(old, fro, i, terr='', delar=('g', 'h', 'f'), rak=False):
+    # rak: E-uppgift, så g(n) ska följa en väg utan omväg (AI_NIVAINDELNING: g runt väggar är C).
+    rows, mark = sok(fro, ghf_villkor(omvag=not terr, terr=bool(terr), rak=rak), terr=terr)
     tn = tuple(d.get('traningsniva', 2) for d in old['spelDelar']) + (1, 1, 1)
     parts, gv, hv = ghf_delar(rows, mark, 'P', tn, delar)
     return K.kg_task(old['id'], old['omr'], old['familj'], ghf_intro(rows, mark, 'P', i), parts,
@@ -568,7 +591,7 @@ def g_bfs(old, fro):
 
 
 OMBYGG = {
-    '2.51': lambda o: g_ghf(o, 2051, 30),
+    '2.51': lambda o: g_ghf(o, 2051, 30, rak=True),
     '2.25': lambda o: g_ghf(o, 2025, 31, terr='333', delar=('g', 'f')),
     '2.29': lambda o: g_vikt(o, 2029, '2.29'), '2.44': lambda o: g_vikt(o, 2044, '2.44'),
     '2.53': lambda o: g_vikt(o, 2053, '2.53'), '2.63': lambda o: g_vikt(o, 2063, '2.63'),
@@ -610,10 +633,182 @@ for i in range(30):
 
 def ny_ghf(id_, fro, terr, L, i):
     rows, mark = sok(fro, ghf_villkor(omvag=not terr, terr=bool(terr)), terr=terr)
-    parts, gv, hv = ghf_delar(rows, mark, L, (2, 1, 1))
+    # g(n) går runt väggar eller genom terräng: C enligt AI_NIVAINDELNING (rättat 2026-11-26), h(n) är E.
+    parts, gv, hv = ghf_delar(rows, mark, L, (3, 1, 3))
     u = K.kg_task(id_, 'astar_varden', 'g, h och f för en ruta', ghf_intro(rows, mark, L, i), parts,
                   'g(n) följer gångarna från start, h(n) räknas rakt till målet.', ['procedur'], 1)
     return u, rows
+
+
+# ---------------------------------------------------------------- enklare: g(n), h(n) och f(n) i flera rutor (E)
+#
+# Användaren 2026-11-26: ”Jag saknar uppgifter med A* och greedy där uppgiften är 'Bestäm f(n), g(n) och h(n)' i lite
+# olika rutor … jag vill ha lite enklare också där man bara ska bestämma dessa värden i olika rutor.”
+# Två eller tre markerade rutor i en labyrint utan terräng. Rutor där g(n) efterfrågas nås utan omväg (E enligt
+# AI_NIVAINDELNING); väggarna finns ändå, och vägen till målet går runt dem.
+
+BOKSTAVER = [('P', 'Q', 'R'), ('K', 'L', 'M'), ('X', 'Y', 'Z'), ('T', 'U', 'V')]
+ASTAR_FLERA = ('Vägen söks med A*. g(n) är kostnaden för den billigaste vägen från start till rutan n, och h(n) är '
+               'Manhattanavståndet från n till målet. Varje steg kostar 1.')
+
+
+def g_del(rows, c, L, tn):
+    gv, vag = billigast(rows, c)
+    return num(f'Bestäm g(n) för rutan {L}.',
+               [step('g(n) = kostnaden för den billigaste vägen från start till n', g_rad(vag, L, A.cname(c)))], gv,
+               G_LED_RAK.format(L=L), tn)
+
+
+def h_del(rows, c, L, tn):
+    _, goal = A.parse(rows)
+    hv = A.manhattan(c, goal)
+    return num(f'Bestäm h(n) för rutan {L}.',
+               [step('h(n) = radskillnad + kolumnskillnad till målet',
+                     f'{L} ligger i {A.cname(c)} och målet i {A.cname(goal)}: {abs(c[0] - goal[0])} + {abs(c[1] - goal[1])} '
+                     f'= {hv}. Väggarna räknas inte.')], hv,
+               f'Räkna rader och kolumner från {L} till målet, som om väggarna inte fanns.', tn)
+
+
+def f_text(rows, c, L):
+    _, goal = A.parse(rows)
+    gv, vag = billigast(rows, c)
+    hv = A.manhattan(c, goal)
+    return gv, hv, f'f({L}) = g({L}) + h({L}) = {gv} + {hv} = {gv + hv}'
+
+
+def f_del(rows, c, L, tn, g_visad):
+    """f(n) för en ruta. Har g(n) för rutan inte efterfrågats i en tidigare del visar facit också g och h."""
+    _, goal = A.parse(rows)
+    gv, hv, rad = f_text(rows, c, L)
+    steg = [step('h(n): radskillnad + kolumnskillnad till målet',
+                 f'{L} ligger i {A.cname(c)} och målet i {A.cname(goal)}: {abs(c[0] - goal[0])} + {abs(c[1] - goal[1])} = {hv}.'),
+            step('f(n) = g(n) + h(n)', rad + '.')]
+    if not g_visad:
+        _, vag = billigast(rows, c)
+        steg = [step('g(n): stegen från start', g_rad(vag, L, A.cname(c)))] + steg
+    return num(f'Bestäm f(n) för rutan {L}.', steg, gv + hv,
+               f'Bestäm g(n) och h(n) för {L} och lägg ihop dem.', tn)
+
+
+def rutval_alts(celler, varde, namn, vinnare, forklaring):
+    return [alt(f'Rutan {L}', c == vinnare,
+                f'{namn}({L}) = {varde[c]}' + ('. Det är lägst, så ' + forklaring if c == vinnare else
+                                               f', högre än {namn}({dict((c2, L2) for c2, L2 in celler)[vinnare]}) = '
+                                               f'{varde[vinnare]}.'))
+            for c, L in celler]
+
+
+def flera_villkor(mall):
+    """Välj markerade rutor. A*-mallarna kräver rutor utan omväg där g(n) efterfrågas."""
+    def v(rows, rng):
+        s, goal = A.parse(rows)
+        if any(ch in TERR for x in rows for ch in x):
+            return None
+        rak = [c for c in oppna(rows) if A.manhattan(s, c) >= 2 and A.manhattan(c, goal) >= 1 and rak_till(rows, c)]
+        nas = [c for c in oppna(rows) if billigast(rows, c)[1] and A.manhattan(c, goal) >= 1]
+        n = 2 if mall in ('T3', 'G2') else 3
+        pool = rak if mall in ('T1', 'T2', 'T3', 'G2') else nas
+        if len(pool) < n + 2:
+            return None
+        for _ in range(60):
+            cs = rng.sample(pool, n)
+            if any(A.manhattan(a, b) < 2 for i, a in enumerate(cs) for b in cs[i + 1:]):
+                continue
+            h = [A.manhattan(c, goal) for c in cs]
+            f = [billigast(rows, c)[0] + A.manhattan(c, goal) for c in cs]
+            if mall == 'T1':
+                # g för P, h för Q, f för R: R:s väg ska ha minst tre steg, så att f inte blir för litet
+                if billigast(rows, cs[2])[0] < 3 or len(set(h)) < 2:
+                    continue
+            if mall == 'T2' and (f[0] == f[1] or len(set(h)) < 2):
+                continue
+            if mall == 'T3' and (f[0] == f[1]):
+                continue
+            if mall == 'G1' and len(set(h)) < 3:
+                continue
+            if mall == 'G2':
+                if h[0] == h[1] or f[0] == f[1] or (h[0] < h[1]) == (f[0] < f[1]):
+                    continue
+            return cs
+        return None
+    return v
+
+
+def ny_flera(id_, fro, mall, bokst, i):
+    rows, cs = sok(fro, flera_villkor(mall), vagg=(0.18, 0.3))
+    s, goal = A.parse(rows)
+    celler = list(zip(cs, bokst))
+    marks = {c: L for c, L in celler}
+    ctx = SAMMANHANG[(i * 7 + 3) % len(SAMMANHANG)]
+    if mall in ('T1', 'T2', 'T3'):
+        omr, familj = 'astar_varden', 'g, h och f för en ruta'
+        text = ctx + ' ' + ASTAR_FLERA
+        (c1, L1), (c2, L2) = celler[:2]
+        if mall == 'T1':
+            c3, L3 = celler[2]
+            parts = [g_del(rows, c1, L1, 1 if billigast(rows, c1)[0] <= 3 else 2), h_del(rows, c2, L2, 1),
+                     f_del(rows, c3, L3, 2, False)]
+            led = 'g(n) räknar stegen från start, h(n) räknar rakt till målet, och f(n) är summan.'
+        elif mall == 'T2':
+            parts = [f_del(rows, c1, L1, 2, False), f_del(rows, c2, L2, 2, False)]
+            fv = {c: billigast(rows, c)[0] + A.manhattan(c, goal) for c in cs[:2]}
+            vin = min(cs[:2], key=lambda c: fv[c])
+            fr = ', '.join(f_text(rows, c, L)[2] for c, L in celler[:2])
+            fel_lika = alt('De har samma f(n)', False, f'Nej: {fr}.')
+            parts.append(val(f'Vilken av rutorna {L1} och {L2} har lägst f(n)?',
+                             [step('Jämför f(n) = g(n) + h(n)', fr + '.')],
+                             rutval_alts(celler[:2], fv, 'f', vin, 'A* tar ut den först av de två.') + [fel_lika],
+                             'Räkna f(n) för båda rutorna och jämför.', 2))
+            led = 'f(n) är g(n) + h(n). Den ruta som har lägst f(n) tas ut först av A*.'
+        else:
+            parts = [g_del(rows, c1, L1, 1 if billigast(rows, c1)[0] <= 3 else 2), f_del(rows, c1, L1, 2, True),
+                     g_del(rows, c2, L2, 1 if billigast(rows, c2)[0] <= 3 else 2), f_del(rows, c2, L2, 2, True)]
+            led = 'Räkna stegen från start för g(n) och lägg till Manhattanavståndet till målet för f(n).'
+    else:
+        omr, familj = 'astar_varden', 'Heuristiken h'
+        hv = {c: A.manhattan(c, goal) for c in cs}
+        if mall == 'G1':
+            namnlista = f'{bokst[0]}, {bokst[1]} och {bokst[2]}'
+            text = (ctx + ' Vägen söks med girig bäst först, där h(n) är Manhattanavståndet från rutan n till målet. '
+                    f'Just nu ligger rutorna {namnlista} i öppna listan.')
+            vin = min(cs, key=lambda c: hv[c])
+            hr = ', '.join(f'h({L}) = {hv[c]}' for c, L in celler)
+            parts = [h_del(rows, c, L, 1) for c, L in celler]
+            parts.append(val('Vilken av rutorna tar girig bäst först ut härnäst?',
+                             [step('Girig bäst först tar ut rutan med lägst h(n)', hr + '.')],
+                             rutval_alts(celler, hv, 'h', vin, 'den tas ut härnäst.'),
+                             'Girig bäst först jämför bara h(n).', 1))
+            led = 'Girig bäst först tar alltid ut den ruta i öppna listan som har lägst h(n).'
+        else:  # G2: girig bäst först och A* väljer olika
+            (c1, L1), (c2, L2) = celler
+            text = (ctx + f' Anta att rutorna {L1} och {L2} ligger i öppna listan. h(n) är Manhattanavståndet från rutan n '
+                    'till målet och g(n) kostnaden för den billigaste vägen från start till n. Varje steg kostar 1.')
+            fv = {c: billigast(rows, c)[0] + hv[c] for c in cs}
+            hvin, fvin = min(cs, key=lambda c: hv[c]), min(cs, key=lambda c: fv[c])
+            hr = ', '.join(f'h({L}) = {hv[c]}' for c, L in celler)
+            fr = ', '.join(f_text(rows, c, L)[2] for c, L in celler)
+            parts = [h_del(rows, c1, L1, 1), h_del(rows, c2, L2, 1),
+                     val('Vilken av rutorna tar girig bäst först ut först?',
+                         [step('Girig bäst först jämför bara h(n)', hr + '.')],
+                         rutval_alts(celler, hv, 'h', hvin, 'girig bäst först tar ut den först.'),
+                         'Jämför h(n) för rutorna.', 1),
+                     val('Vilken av rutorna tar A* ut först?',
+                         [step('g(n): stegen från start', ' '.join(g_rad(billigast(rows, c)[1], L, A.cname(c))
+                                                                   for c, L in celler)),
+                          step('A* jämför f(n) = g(n) + h(n)', fr + '.')],
+                         rutval_alts(celler, fv, 'f', fvin, 'A* tar ut den först.'),
+                         'Räkna stegen från start till varje ruta, g(n), och lägg till h(n).', 2)]
+            led = 'Girig bäst först ser bara h(n). A* räknar också med g(n), vägen hittills.'
+    intro = maze(rows, s, goal, marks, extra_legend=[('#fff3b0', 'Markerade rutor')]) + p(text)
+    u = K.kg_task(id_, omr, familj, intro, parts, led, ['procedur'], 1)
+    return u, rows
+
+
+FLERA = []
+for i in range(20):
+    FLERA.append((f'2.{153 + i}', 25300 + i, ['T1', 'T2', 'T3'][i % 3], BOKSTAVER[i % 4], i))
+for j in range(16):
+    FLERA.append((f'2.{173 + j}', 25500 + j, ['G1', 'G2'][j % 2], BOKSTAVER[(j // 2) % 4], 20 + j))
 
 
 def efterbehandla(u):
@@ -631,14 +826,14 @@ def kontroll(u, rows):
     s, goal = A.parse(rows)
     walls = sum(x.count('#') for x in rows)
     assert walls >= 2, u['id']
+    markerade = {lab: cn for cn, lab in re.findall(
+        r'data-cell="([A-Z]\d+)"[^>]*/><rect[^>]*fill="#fff3b0"[^>]*/><text[^>]*>([A-Z])</text>', u['spelIntro'])}
     for d in u['spelDelar']:
         m = re.search(r'Bestäm ([ghf])\(n\) för rutan ([A-Z])\.', d['fraga'])
         if not m:
             continue
-        cell = next((rc for rc, lab in [((r, c), None) for r in range(len(rows)) for c in range(len(rows[0]))]
-                     if re.search(rf'data-cell="{A.cname(rc)}"[^>]*/><rect[^>]*fill="#fff3b0"', u['spelIntro'])), None)
-        if cell is None:
-            continue
+        cn = markerade[m.group(2)]
+        cell = (ord(cn[0]) - 65, int(cn[1:]) - 1)
         gv, _ = billigast(rows, cell)
         hv = A.manhattan(cell, goal)
         assert d['rättSvar'] == {'g': gv, 'h': hv, 'f': gv + hv}[m.group(1)], (u['id'], d['etikett'])
@@ -655,8 +850,10 @@ def main():
         nya[id_] = u
         statistik.append((id_, len(rows), len(rows[0]), sum(x.count('#') for x in rows)))
     tillagg = []
-    for id_, fro, terr, L, i in NYA:
-        u, rows = ny_ghf(id_, fro, terr, L, i)
+    jobb = [(id_, lambda a=(id_, fro, terr, L, i): ny_ghf(*a)) for id_, fro, terr, L, i in NYA]
+    jobb += [(id_, lambda a=(id_, fro, mall, bokst, i): ny_flera(*a)) for id_, fro, mall, bokst, i in FLERA]
+    for id_, bygg in jobb:
+        u, rows = bygg()
         efterbehandla(u)
         kontroll(u, rows)
         if id_ in Q:            # omkörning: uppgiften finns redan och ersätts på sin plats

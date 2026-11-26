@@ -47,3 +47,28 @@ EXACT_TEXT_DUPLICATE).
 - Alla 20 AI-tester, `granska-uppgifter.js` (AI: 0 fel, 1 varning, 1 info som förut), `node --check`.
 - Renderat och läst: 2.123, 2.126, 2.128, 2.29, 2.63, 2.27, 2.28, 2.57, 2.75, 1.104, 2.55, 2.48 och 2.42, med figur,
   facit och ledtråd.
+
+## 4. Tillägg samma dag: enklare uppgifter med flera rutor (2.153–2.188)
+
+Användaren: ”Jag saknar uppgifter med A* och greedy där uppgiften är 'Bestäm f(n), g(n) och h(n)' i lite olika rutor.
+Nu är de flesta att man ska bestämma den slutliga vägen. Jag vill ha lite enklare också där man bara ska bestämma
+dessa värden i olika rutor.”
+
+Två eller tre markerade rutor (P, Q, R / K, L, M / X, Y, Z / T, U, V) i labyrinter med väggar men utan terräng. Där
+g(n) behövs nås rutan utan omväg, så alla delkort är E (träningsnivå 1–2).
+
+- 2.153–2.172, A* (delmoment ”g, h och f för en ruta”), tre mallar som växlar:
+  g(n) för P, h(n) för Q och f(n) för R; f(n) för K och L och vilken som har lägst f(n);
+  g(n) och f(n) för X och sedan för Y.
+- 2.173–2.188, girig bäst först (delmoment ”Heuristiken h”), två mallar som växlar:
+  h(n) för tre rutor i öppna listan och vilken som tas ut härnäst; h(n) för två rutor, vilken girig bäst först tar
+  ut först och vilken A* tar ut först (de väljer olika).
+
+## 5. Nivårättelse: 2.123–2.152 är C på g(n) och f(n)
+
+Enligt `agent/AI_NIVAINDELNING.md` är g(n) som måste gå runt väggar eller genom terräng C, och därmed också f(n) för
+den rutan. 2.123–2.152 är byggda just så (omväg eller terräng), så g- och f-delkorten är nu C (träningsnivå 3) och
+h-delkortet E: nivå C, poäng 1/2/0. 2.51 (E sedan tidigare) har fått en labyrint där vägen till P går utan omväg.
+
+Efter tilläggen: 635 uppgifter, 1537 delkort, E 1097 (71 %), C 308, A 132. Testet `ai-labyrinter-2026-11-26.test.js`
+räknar om svaren i alla 81 uppgifterna och kontrollerar nivåerna. Renderat och läst: 2.153, 2.155 och 2.174.
