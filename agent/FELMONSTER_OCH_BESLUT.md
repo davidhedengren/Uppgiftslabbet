@@ -3950,3 +3950,5 @@ som listas där. Återinför inte avrundade grannvärden i `rättSvar` för fysi
 ### AI · Viktade rutor, labyrintgångar och Manhattan-notis (2026-11-27)
 
 Viktad terräng i en labyrint ger träningsnivå minst 3 på samtliga delkort, även h-frågan. Det ersätter undantaget för h i nivåbeslutet 26 november. Vikter på grafkanter bedöms separat. Skriv Manhattan-notisen efter frågan på elevkortet och en gång sist på arbetsbladet. [Granskning, formelblad och kontroller](AI_FELRAPPORTER_2026-11-27.md).
+
+AI-labyrinter ska visa hela kvadratiska rutor. Varje gångruta, även terräng och mål, ska kunna nås från start med lodräta och vågräta steg. Se [uppföljningen för 2.175 och 1.08](AI_FELRAPPORTER_2026-11-27.md).

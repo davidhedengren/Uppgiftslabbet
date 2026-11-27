@@ -37,12 +37,12 @@ def distances(grid, start):
 
 
 def corridors(u, svg):
-    if "data-gangar" in svg or u["id"] in ("1.105", "1.106"):
+    if 'data-maze-tiles="1"' in svg:
         return svg
     cells = [
         m
         for m in CELL.finditer(svg)
-        if m[3] in {*TERRAIN, WALL, "#fff", "#22a05a", "#d94343"}
+        if m[3] in {*TERRAIN, WALL, "#fff", "#22a05a", "#d94343", "#bfdbfe"}
         and ("data-cell=" in m[0] or 'width="52"' in m[0])
     ]
     if not cells:
@@ -66,7 +66,7 @@ def corridors(u, svg):
     keep.update(pos for pos, color in grid.items() if color not in ("#fff", WALL))
     # För värdefrågorna kan vi stänga hela rutor om samtliga relevanta avstånd består.
     # För kö- och spårningsfrågor måste även ordningen i sökningen bestå.
-    if u["familj"] == "g, h och f för en ruta":
+    if u["familj"] == "g, h och f för en ruta" and "data-gangar" not in svg:
         start = next(k for k in grid if grid[k] == "#22a05a")
         old = distances(grid, start)
         goal = next(k for k in grid if grid[k] == "#d94343")
@@ -99,37 +99,42 @@ def corridors(u, svg):
                 grid[pos] = "#fff"
             else:
                 old = new
-    replacements = {
-        m[0]: m[0].replace('fill="' + m[3] + '"', 'fill="' + grid[coord(m)] + '"')
-        for m in cells
+    start = next(k for k in grid if grid[k] == "#22a05a")
+    reachable = distances(grid, start)
+    # Behåll terrängen i de två återvändsgränderna och förbind den övre
+    # gången i 2.175 med start. Namngivna rutor har samma kostnad som förut.
+    repairs = {
+        "2.25": ((4, 4), {(4, 3): "#fff"}),
+        "2.152": ((0, 4), {(1, 4): "#fff", (2, 4): "#fff"}),
+        "2.175": ((5, 0), {(1, 0): "#fff", (4, 1): WALL}),
     }
-    svg = CELL.sub(lambda m: replacements.get(m[0], m[0]), svg)
-    # Rita golvet som gångar med en öppning mitt på varje passerbar sida.
-    # Rutcentrum, markerade rutor och avståndet mellan två grannar är oförändrade.
-    walls = []
+    if u["id"] in repairs:
+        target, changes = repairs[u["id"]]
+        if grid.get(target, WALL) != WALL and target not in reachable:
+            grid.update(changes)
+            reachable = distances(grid, start)
+    for pos, color in grid.items():
+        if color != WALL and pos not in reachable:
+            if pos in keep:
+                raise ValueError(
+                    f"{u['id']}: refererad eller viktad ruta utanför gången {pos}"
+                )
+            grid[pos] = WALL
+
+    # Samma uppbyggnad som paintTile/drawStatic i AI-aktiviteter:
+    # mörk botten och en kvadratisk platta med rundade hörn per rutposition.
+    # Behåll bankens koordinater, terrängfärger och synliga markeringar.
+    replacements = {}
     for m in cells:
-        col, row = coord(m)
-        if grid[col, row] == WALL:
-            continue
-        x, y = int(m[1]), int(m[2])
-        edge = size // 4
-        far = size - edge
-        middle = size - 2 * edge
-        for dx, dy in ((0, 0), (far, 0), (0, far), (far, far)):
-            walls.append(f"M{x + dx} {y + dy}h{edge}v{edge}h-{edge}z")
-        for dx, dy, xx, yy, w, h in (
-            (0, -1, edge, 0, middle, edge),
-            (1, 0, far, edge, edge, middle),
-            (0, 1, edge, far, middle, edge),
-            (-1, 0, 0, edge, edge, middle),
-        ):
-            if grid.get((col + dx, row + dy), WALL) == WALL:
-                walls.append(f"M{x + xx} {y + yy}h{w}v{h}h-{w}z")
-    # En gemensam kontur för väggarnas kanter och hörn.
-    return svg.replace(
-        "</svg>",
-        f'<path data-gangar="1" pointer-events="none" fill="{WALL}" d="{" ".join(walls)}"/></svg>',
-    )
+        tile = re.sub(r' stroke="[^"]*"| stroke-width="[^"]*"', "", m[0])
+        tile = tile.replace('fill="' + m[3] + '"', 'fill="' + grid[coord(m)] + '"')
+        replacements[m[0]] = tile[:-2] + ' rx="4" stroke="#1d2743" stroke-width="1.5"/>'
+    svg = CELL.sub(lambda m: replacements.get(m[0], m[0]), svg)
+    svg = re.sub(r'<path data-gangar="1"[^>]*/>', "", svg)
+    width = (1 + max(x for x, y in grid)) * size
+    height = (1 + max(y for x, y in grid)) * size
+    base = f'<rect data-maze-tiles="1" x="{x0}" y="{y0}" width="{width}" height="{height}" fill="#0b0f1a"/>'
+    return svg.replace("</title>", "</title>" + base, 1)
 
 
 INTROS = {

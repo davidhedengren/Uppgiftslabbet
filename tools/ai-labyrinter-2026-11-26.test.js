@@ -135,9 +135,29 @@ test('texten: f(n)-notation och inga påklistrade alternativ',()=>{
 test('Rapport 27 november: gångar, elevkort och arbetsblad',()=>{
  const notis='(h(n) är Manhattanavståndet till målet)';
  const kartor=bank.filter(u=>u.spelIntro.includes('Labyrint med'));
+ a.ok(kartor.length>=187);
  for(const u of kartor){
-  if(['1.105','1.106'].includes(u.id))a.doesNotMatch(u.spelIntro,/data-gangar/);
-  else a.match(u.spelIntro,/data-gangar="1"/,u.id);
+  const svg=u.spelIntro.match(/<svg[\s\S]*?<\/svg>/)[0];
+  a.ok(u.t.includes(svg),u.id+' samma karta i båda vyerna');
+  a.doesNotMatch(svg,/data-gangar/);
+  const tiles=[...svg.matchAll(/<rect (?:data-cell="[^"]+" )?x="(\d+)" y="(\d+)" width="(\d+)" height="\3" fill="(#[a-f0-9]+)"[^>]* rx="4"[^>]*\/>/g)];
+  const positions=new Map(tiles.map(t=>[t[1]+','+t[2],t[4]]));
+  const board=svg.match(/<rect data-maze-tiles="1" x="(\d+)" y="(\d+)" width="(\d+)" height="(\d+)"/);
+  a.ok(board,u.id+' rutnätets bakgrund');
+  const [start]=tiles.filter(t=>t[4]==='#22a05a');
+  a.ok(start,u.id+' start'); const size=Number(start[3]);
+  for(let x=+board[1];x<+board[1]+Number(board[3]);x+=size){
+   for(let y=+board[2];y<+board[2]+Number(board[4]);y+=size)a.ok(positions.has(x+','+y),u.id+' saknad platta '+x+','+y);
+  }
+  a.equal(tiles.filter(t=>t[4]==='#d94343').length,1,u.id+' mål');
+  const pending=[[+start[1],+start[2]]],seen=new Set([pending[0].join(',')]);
+  for(const [x,y] of pending){
+   for(const next of [[x+size,y],[x-size,y],[x,y+size],[x,y-size]]){
+    const key=next.join(',');
+    if(positions.has(key)&&positions.get(key)!=='#334155'&&!seen.has(key)){seen.add(key);pending.push(next);}
+   }
+  }
+  for(const [key,color] of positions)if(color!=='#334155')a.ok(seen.has(key),u.id+' avskild ruta '+key);
  }
  const exempel=labyrint(q('2.93'));
  a.ok(exempel.rows.join('').split('#').length-1>=10);

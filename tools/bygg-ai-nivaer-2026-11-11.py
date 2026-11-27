@@ -29,7 +29,7 @@ OVERRIDE = {
     # BFS och DFS: långa ordningar, backning och värdering av sökningens beteende
     '1.01a': ('C', 3),  # hela BFS-ordningen, 13 uttag
     '1.07a': ('C', 3),  # hela DFS-ordningen i 5 × 6 med backning
-    '1.08a': ('C', 3),  # påståenden om onåbart mål
+    '1.08a': ('C', 3),  # påståenden om kortaste väg och kön vid målgång
     '1.30a': ('C', 3),  # hela BFS-ordningen, 14 uttag
     '1.31a': ('C', 3),  # hela DFS-ordningen med återvändsgränd
     '1.22a': ('C', 3),  # hitta felet i en kötabell

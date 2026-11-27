@@ -16,3 +16,11 @@ Banken behåller alla ID:n och självrättningssvar. För nya hela väggar kontr
 Samtliga huvuduppgifter och delkort har jämförts med sina tidigare verktygsval. De viktade kartorna tillåter miniräknare för kostnadsberäkningen och har GeoGebra avstängt. Regeln GeoGebra ⇒ miniräknare är uppfylld i hela AI-banken.
 
 Slutredigeringen ingår i det befintliga sista byggsteget för nivåer. Upprepad körning ger en byteidentisk bank. Formelbladet byggs med pdfLaTeX via det befintliga Python-kommandot.
+
+## Uppföljning · Hela rutor och sammanhängande gångar
+
+Alla 187 kartor använder nu en kvadratisk platta per position och en mörk bakgrund, enligt rutprincipen i [AI-aktiviteters labyrintsimulering](https://github.com/davidhedengren/AI-aktiviteter/blob/main/sokalgoritmer-labyrinter/index.html). Bankens grön/röda start- och målmarkörer, rad- och kolumnnamn och terrängkostnader finns kvar.
+
+13 kartor hade rutor utanför startens sammanhängande område. I 2.175 öppnar A2 passagen till övre högra gången. I 2.25 och 2.152 ansluts de avskilda lerrutorna. Överflödiga avskilda gångar har blivit väggar. I 1.08 prövas nu hur BFS stannar vid ett nåbart mål. Där räknas rutterna, uttagsordningen och lösningen med två korrekta alternativ om. Övriga facit och verktygsval behålls.
+
+Regressionstestet söker från start i den publicerade SVG-figurens fyra grannriktningar och kräver att alla öppna plattor nås, även på det öppna rutnätet. Samma figur ska finnas på papper och elevkort.
