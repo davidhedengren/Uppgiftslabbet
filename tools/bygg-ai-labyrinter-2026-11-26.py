@@ -44,6 +44,7 @@ FGH = _ladda('fgh', os.path.join('sprak', 'ai_fgh_n.py'))
 B, A = K.B, K.A
 maze, step, tab = K.maze, K.step, K.tab
 alt, names, pil, lista, p = B.alt, B.names, B.pil, B.lista, B.p
+from ai_labyrintdidaktik import vald_karta
 import bankobjekt as BO  # noqa: E402
 
 BANK = os.path.join(HERE, '..', 'uppgifterai.js')
@@ -626,15 +627,24 @@ def ombyggd(old):
 NYA = []
 for i in range(30):
     nr = 123 + i
-    terr = ['', '', '', '333', '', '34', '', '3'][i % 8]
     L = ['P', 'P', 'Q', 'P', 'R', 'P', 'X', 'P'][i % 8]
-    NYA.append((f'2.{nr}', 23000 + i, terr, L, i))
+    NYA.append((f'2.{nr}', L, i))
 
 
-def ny_ghf(id_, fro, terr, L, i):
-    rows, mark = sok(fro, ghf_villkor(omvag=not terr, terr=bool(terr)), terr=terr)
+def ny_ghf(id_, L, i):
+    rows, (mark,) = vald_karta(id_)
     # g(n) går runt väggar eller genom terräng: C enligt AI_NIVAINDELNING (rättat 2026-11-26), h(n) är E.
     parts, gv, hv = ghf_delar(rows, mark, L, (3, 1, 3))
+    if any(ch in TERR for row in rows for ch in row):
+        girig, astar = A.greedy(rows)['path'], A.astar(rows)['path']
+        cg, ca = A.path_cost(rows, girig), A.path_cost(rows, astar)
+        assert len(astar) > len(girig) and ca < cg
+        fraga = ('Hur mycket lägre blir vägkostnaden med A* än med girig bäst först?' if i % 2 else
+                 'Hur många extra steg går A* på den billigare vägen jämfört med girig bäst först?')
+        svar = cg-ca if i%2 else len(astar)-len(girig)
+        parts.append(num(fraga, [step('Vägen med girig bäst först', f'{pil(names(girig))}. {len(girig)-1} steg, kostnad {cg}.'),
+                                step('Vägen med A*', f'{pil(names(astar))}. {len(astar)-1} steg, kostnad {ca}.')],
+                         svar, 'Spåra båda sökningarna. Skriv antal steg och kostnad var för sig.', 3))
     u = K.kg_task(id_, 'astar_varden', 'g, h och f för en ruta', ghf_intro(rows, mark, L, i), parts,
                   'g(n) följer gångarna från start, h(n) räknas rakt till målet.', ['procedur'], 1)
     return u, rows
@@ -735,7 +745,7 @@ def flera_villkor(mall):
 
 
 def ny_flera(id_, fro, mall, bokst, i):
-    rows, cs = sok(fro, flera_villkor(mall), vagg=(0.18, 0.3))
+    rows, cs = (vald_karta(id_) if mall.startswith("G") else sok(fro, flera_villkor(mall), vagg=(0.18, 0.3)))
     s, goal = A.parse(rows)
     celler = list(zip(cs, bokst))
     marks = {c: L for c, L in celler}
@@ -850,7 +860,7 @@ def main():
         nya[id_] = u
         statistik.append((id_, len(rows), len(rows[0]), sum(x.count('#') for x in rows)))
     tillagg = []
-    jobb = [(id_, lambda a=(id_, fro, terr, L, i): ny_ghf(*a)) for id_, fro, terr, L, i in NYA]
+    jobb = [(a[0], lambda a=a: ny_ghf(*a)) for a in NYA]
     jobb += [(id_, lambda a=(id_, fro, mall, bokst, i): ny_flera(*a)) for id_, fro, mall, bokst, i in FLERA]
     for id_, bygg in jobb:
         u, rows = bygg()

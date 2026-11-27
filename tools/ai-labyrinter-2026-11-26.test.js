@@ -36,11 +36,11 @@ function billigast(L,mål=L.g){const best={[nm(L.s)]:0},klar=new Set(),cel={[nm(
 function girig(L){const öppna=[L.s],sett=new Set([nm(L.s)]),far={},ut=[];while(öppna.length){öppna.sort((x,y)=>man(x,L.g)-man(y,L.g)||(nm(x)<nm(y)?-1:1));const n=öppna.shift();ut.push(n);if(eqc(n,L.g))break;
   for(const v of nb(L,n))if(!sett.has(nm(v))){sett.add(nm(v));far[nm(v)]=n;öppna.push(v);}}
  const väg=[L.g];while(far[nm(väg[0])])väg.unshift(far[nm(väg[0])]);return{ut,väg};}
-function astar(L){const g={[nm(L.s)]:0},cel={[nm(L.s)]:L.s},öppna=new Set([nm(L.s)]),stängda=new Set(),ut=[],efter=[];const h=k=>man(cel[k],L.g),f=k=>g[k]+h(k);
+function astar(L){const g={[nm(L.s)]:0},far={},cel={[nm(L.s)]:L.s},öppna=new Set([nm(L.s)]),stängda=new Set(),ut=[],efter=[];const h=k=>man(cel[k],L.g),f=k=>g[k]+h(k);
  while(öppna.size){const n=[...öppna].sort((x,y)=>f(x)-f(y)||h(x)-h(y)||(x<y?-1:1))[0];öppna.delete(n);stängda.add(n);ut.push(n);
   if(eqc(cel[n],L.g)){efter.push(new Set(öppna));break;}
-  for(const v of nb(L,cel[n])){const k=nm(v);if(stängda.has(k))continue;const alt=g[n]+kost(L,v);if(alt<(g[k]??1e9)){g[k]=alt;cel[k]=v;öppna.add(k);}}efter.push(new Set(öppna));}
- return{ut,efter,g,f};}
+  for(const v of nb(L,cel[n])){const k=nm(v);if(stängda.has(k))continue;const alt=g[n]+kost(L,v);if(alt<(g[k]??1e9)){g[k]=alt;far[k]=n;cel[k]=v;öppna.add(k);}}efter.push(new Set(öppna));}
+ const path=[nm(L.g)];while(far[path[0]])path.unshift(far[path[0]]);return{ut,efter,g,f,path};}
 const lista=xs=>[...xs].sort().join(', ');
 const ochLista=xs=>{xs=[...xs].sort();return xs.length>1?xs.slice(0,-1).join(', ')+' och '+xs.at(-1):xs[0];};
 
@@ -53,6 +53,8 @@ function förväntat(u,d,L){const F=frågetext(d);let m;
  if((m=F.match(/^Vilken av rutorna ([A-Z]) och ([A-Z]) har lägst f\(n\)\?$/)))return lägst([m[1],m[2]],fv);
  if(/^Vilken av rutorna tar girig bäst först ut (härnäst|först)\?$/.test(F))return lägst(Object.keys(L.M),hv);
  if(/^Vilken av rutorna tar A\* ut först\?$/.test(F))return lägst(Object.keys(L.M),fv);
+ if(/^Hur mycket lägre blir vägkostnaden med A/.test(F))return vägkost(L,girig(L).väg)-billigast(L);
+ if(/^Hur många extra steg går A/.test(F))return astar(L).path.length-girig(L).väg.length;
  if(/^Vad kostar den billigaste vägen/.test(F))return billigast(L);
  if((m=F.match(/^Vad kostar vägen ([A-Z]\d+(?: → [A-Z]\d+)+)\?$/))){const v=vägur(m[1]);giltig(L,v);return vägkost(L,v);}
  if((m=F.match(/^Vägen ([A-Z]\d+(?: → [A-Z]\d+)+) har (lika många steg som|färre steg än) den billigaste vägen\. Vad kostar den\?$/))){const v=vägur(m[1]);giltig(L,v);
@@ -101,10 +103,10 @@ test('alla svar räknas om ur figuren',()=>{
 
 test('2.123–2.152: g(n) runt väggar eller genom terräng är C (AI_NIVAINDELNING), h(n) är E på oviktad karta och C med terräng',()=>{
  const texter=new Set();
- for(const id of NYA){const u=q(id);a.equal(u.omr,'astar_varden');a.equal(u.familj,'g, h och f för en ruta');a.equal(u.niva,'C');const terräng=/[345]/.test(labyrint(u).rows.join(''));a.equal(u.poang,terräng?'0/3/0':'1/2/0');
-  a.equal(JSON.stringify(u.formaga),'["procedur"]');a.equal(JSON.stringify(u.spelDelar.map(d=>d.traningsniva)),terräng?'[3,3,3]':'[3,1,3]');
-  const L=u.spelDelar.map(d=>värdefråga(d)[2]);a.equal(new Set(L).size,1);
-  a.equal(u.spelDelar.map(d=>värdefråga(d)[1]).join('|'),'g|h|f');
+ for(const id of NYA){const u=q(id);a.equal(u.omr,'astar_varden');a.equal(u.familj,'g, h och f för en ruta');a.equal(u.niva,'C');const terräng=/[345]/.test(labyrint(u).rows.join(''));a.equal(u.poang,terräng?'0/4/0':'1/2/0');
+  a.equal(JSON.stringify(u.formaga),'["procedur"]');a.equal(JSON.stringify(u.spelDelar.map(d=>d.traningsniva)),terräng?'[3,3,3,3]':'[3,1,3]');
+  const L=u.spelDelar.slice(0,3).map(d=>värdefråga(d)[2]);a.equal(new Set(L).size,1);
+  a.equal(u.spelDelar.slice(0,3).map(d=>värdefråga(d)[1]).join('|'),'g|h|f');
   const t=ren(u.t);a.ok(!texter.has(t),id+' samma text som en annan uppgift');texter.add(t);
   a.match(t,/A\*/);a.match(t,/Manhattanavståndet/);}
  // g(n) är större än Manhattanavståndet från start i alla: väggarna eller terrängen tvingar fram en omväg.
@@ -171,4 +173,62 @@ test('Rapport 27 november: gångar, elevkort och arbetsblad',()=>{
   for(const d of u.spelDelar)a.ok(d.fraga.includes(notis),u.id+d.etikett);
  }
  a.doesNotMatch(q('1.98').t+q('1.98').spelIntro,/Varje gång läggs en nods barn/);
+});
+
+test('tillämpningen finns i båda uppgiftsvyerna och kan följas upp i facit', () => {
+ const kartor = bank.filter(u => u.spelIntro.includes('Labyrint med'));
+ for (const u of kartor) {
+  const fokus = u.spelIntro.match(/<p class="labyrintfokus">([^<]+)<\/p>/);
+  a.ok(fokus && u.t.includes(fokus[0]), u.id);
+  a.match(u.s, /<p class="labyrintforklaring">/, u.id);
+  for (const d of u.spelDelar) a.match(d.s, /<details class="labyrintforklaring">/, u.id+d.etikett);
+ }
+});
+
+test('på varje ny terrängkarta hittar A* en längre och billigare väg än girig bäst först', () => {
+ let fall = 0;
+ for (const id of NYA) {
+  const u=q(id), L=labyrint(u);
+  if (!/[345]/.test(L.rows.join(''))) continue;
+  const snabb=girig(L).väg, billig=astar(L).path.map(cell);
+  giltig(L,snabb); giltig(L,billig);
+  a.ok(billig.length>snabb.length,id);
+  a.ok(vägkost(L,billig)<vägkost(L,snabb),id);
+  a.equal(vägkost(L,billig),billigast(L),id);
+  a.equal(u.spelDelar.length,4,id);
+  const bild=u.s.match(/<figure class="labyrintvagar".*?<\/figure>/)[0];
+  const ritade=[...bild.matchAll(/<polyline points="([^"]+)"/g)].map(m=>
+   m[1].split(' ').map(p=>{const [x,y]=p.split(',').map(Number);return [(y-28)/22,(x-28)/22];}));
+  a.deepEqual(ritade,[snabb,billig],id+' färdvägar i pappersfacit');
+  a.ok(u.spelDelar.at(-1).s.includes(bild),id+' samma färdvägar på elevkortet');
+  fall++;
+ }
+ a.equal(fall,11);
+});
+
+test('de markerade öppna listorna kan återskapas från start, även när sökreglerna väljer olika', () => {
+ for (const id of FLERA_G) {
+  const u=q(id), L=labyrint(u), mål=nm(L.g), mark=new Set(Object.values(L.M).map(nm));
+  const öppna=new Map([[nm(L.s),0]]), sett=new Set(öppna.keys());
+  let verifierad=false;
+  while(öppna.size){
+   const nycklar=[...öppna.keys()], h=k=>man(cell(k),L.g);
+   nycklar.sort((x,y)=>h(x)-h(y)||x.localeCompare(y));
+   const n=nycklar[0], g=öppna.get(n);
+   if(nycklar.length===mark.size && nycklar.every(k=>mark.has(k))){
+    if(mark.size===2){
+     const [p,r]=nycklar;
+     a.ok(h(p)<h(r) && öppna.get(p)+h(p)>öppna.get(r)+h(r),id);
+     for(const k of mark)a.equal(öppna.get(k),billigast(L,cell(k)),id+' '+k);
+    }else a.equal(new Set(nycklar.map(h)).size,3,id);
+    verifierad=true; break;
+   }
+   if(n===mål)break;
+   öppna.delete(n);
+   for(const v of nb(L,cell(n)))if(!sett.has(nm(v))){
+    sett.add(nm(v)); öppna.set(nm(v),g+1);
+   }
+  }
+  a.ok(verifierad,id+' markeringarna måste kunna ligga öppna samtidigt');
+ }
 });

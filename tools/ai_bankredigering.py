@@ -4,6 +4,8 @@ import re
 import json
 from heapq import heappop, heappush
 
+from ai_labyrintdidaktik import kartval
+
 CELL = re.compile(
     r'<rect (?:data-cell="[A-Z]\d+" )?x="(\d+)" y="(\d+)" width="(?:52|38)" height="(?:52|38)" fill="(#[a-f0-9]+)"[^>]*/>'
 )
@@ -66,7 +68,11 @@ def corridors(u, svg):
     keep.update(pos for pos, color in grid.items() if color not in ("#fff", WALL))
     # För värdefrågorna kan vi stänga hela rutor om samtliga relevanta avstånd består.
     # För kö- och spårningsfrågor måste även ordningen i sökningen bestå.
-    if u["familj"] == "g, h och f för en ruta" and "data-gangar" not in svg:
+    if (
+        u["familj"] == "g, h och f för en ruta"
+        and "data-gangar" not in svg
+        and u["id"] not in kartval()
+    ):
         start = next(k for k in grid if grid[k] == "#22a05a")
         old = distances(grid, start)
         goal = next(k for k in grid if grid[k] == "#d94343")

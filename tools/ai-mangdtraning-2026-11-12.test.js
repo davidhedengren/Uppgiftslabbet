@@ -80,6 +80,8 @@ test('BFS och DFS i labyrinter räknas om ur figuren',()=>{
   for(const d of u.spelDelar){const f=ren(d.fraga),k=f.match(/som ([a-zåäö]+) ruta/);
    if(k)a.equal(rätt(d)[0],r.ut[ORD.indexOf(k[1])],id+d.etikett);
    else if(/exakt (\d+) steg/.test(f)){const n=+f.match(/exakt (\d+) steg/)[1];a.equal(d.rättSvar,Object.values(avstånd(Lab,Lab.s)).filter(v=>v===n).length,id+d.etikett);}
+   else if(/Hur stor är skillnaden mellan antalet rutor som BFS och DFS/.test(f))a.equal(d.rättSvar,Math.abs(bfs(Lab).ut.length-dfs(Lab).ut.length),id);
+   else if(/Hur många fler steg har vägen som DFS/.test(f))a.equal(d.rättSvar,dfs(Lab).väg.length-bfs(Lab).väg.length,id);
    else if(/Hur många steg har vägen/.test(f))a.equal(d.rättSvar,r.väg.length-1,id+d.etikett);
    else if(/Hur många rutor (tas ut|besöker)/.test(f))a.equal(d.rättSvar,r.ut.length,id+d.etikett);
    else if(/en av de kortaste/.test(f))a.equal(rätt(d)[0],r.väg.length===bv.length?'Ja':'Nej',id+d.etikett);
@@ -149,3 +151,15 @@ test('träningsnivå 1 i DFS och A* samt flera terrängtyper (granskningen 2026-
 test('validatorn hittar inget nytt',()=>{const r=require('./granska-uppgifter.js').granskaProjekt(process.cwd()).resultat.find(x=>x.fil==='uppgifterai.js');
  const ok=f=>(f.kod==='EXACT_TEXT_DUPLICATE'&&['3.04','3.05'].includes(f.id))||(f.kod==='VERY_SIMILAR_TEXT'&&['2.06','2.08'].includes(f.id));
  a.deepEqual(r.fynd.filter(f=>!ok(f)).map(f=>f.kod+' '+f.id+' '+(f.relateradeId||[]).join(',')),[]);});
+
+test('de åtta jämförelsekartorna skiljer antal undersökta rutor från vägens längd', () => {
+ for(const id of ids(1,83,90)){
+  const L=labyrint(q(id)), b=bfs(L), d=dfs(L);
+  switch ((Number(id.split('.')[1])-83)%4) {
+   case 0: a.ok(d.ut.length<b.ut.length,id); a.equal(d.väg.length,b.väg.length,id); break;
+   case 1: a.ok(b.ut.length<d.ut.length,id); a.equal(b.väg.length,d.väg.length,id); break;
+   case 2: a.ok(d.ut.length<b.ut.length,id); a.ok(d.väg.length>b.väg.length,id); break;
+   case 3: a.ok(d.väg.length>=b.väg.length+4,id); break;
+  }
+ }
+});

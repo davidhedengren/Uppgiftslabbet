@@ -19,6 +19,7 @@ import json
 import re
 
 from ai_bankredigering import revise, weighted
+from ai_labyrintdidaktik import tillampning
 
 BANK = 'uppgifterai.js'
 POANG = {'E': '1/0/0', 'C': '0/1/0', 'A': '0/0/1'}
@@ -128,6 +129,7 @@ def main():
     used = set()
     for u in bank:
         revise(u)
+        tillampning(u)
         viktade_rutor = weighted(u)
         for d in u['spelDelar']:
             niva, tn = klass(u, d)

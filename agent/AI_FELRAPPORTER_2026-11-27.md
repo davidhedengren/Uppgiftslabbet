@@ -24,3 +24,13 @@ Alla 187 kartor använder nu en kvadratisk platta per position och en mörk bakg
 13 kartor hade rutor utanför startens sammanhängande område. I 2.175 öppnar A2 passagen till övre högra gången. I 2.25 och 2.152 ansluts de avskilda lerrutorna. Överflödiga avskilda gångar har blivit väggar. I 1.08 prövas nu hur BFS stannar vid ett nåbart mål. Där räknas rutterna, uttagsordningen och lösningen med två korrekta alternativ om. Övriga facit och verktygsval behålls.
 
 Regressionstestet söker från start i den publicerade SVG-figurens fyra grannriktningar och kräver att alla öppna plattor nås, även på det öppna rutnätet. Samma figur ska finnas på papper och elevkort.
+
+## Uppföljning · Vad visar sökningen på kartan?
+
+Varje labyrint har en följdfråga om en egenskap som går att undersöka på just den ritade kartan. Kartan används både på elevkort och arbetsblad. Facit visar uträkningen. På jämförelsekartorna kan eleven också följa vägarna bredvid varandra.
+
+54 kartor har fått ny geometri. I 1.83–1.90 skiljer eleverna på arbetet fram till målet och antalet steg i vägen som algoritmen hittar. I 1.89 besöker DFS 17 rutor och hittar en väg på 16 steg. BFS tar ut 22 rutor och hittar en väg på 10 steg. I 1.84 undersöker BFS färre rutor än DFS.
+
+I 2.123–2.152 visas skillnaden mellan gångavstånd, terrängkostnad och uppskattat avstånd. På alla elva viktade kartor i serien hittar A* en längre väg med lägre totalkostnad än girig bäst först. I 2.126 skiljs vägarna åt vid D2. De har 11 respektive 13 steg och kostar 14 respektive 13. I 2.173–2.188 är de markerade kandidaterna en verklig ögonblicksbild ur girig bäst först. På åtta av kartorna får eleven byta urvalsregel i just det läget och se att A* väljer en annan kandidat.
+
+De 54 ritningarna och markeringarna finns i `tools/ai-labyrintval.json`. JS-testerna tolkar publicerade SVG-rutor och kontrollerar vägkostnaderna, när kandidaterna ligger öppna och de nya självrättningssvaren. Samtliga 187 kartor kontrolleras för nåbarhet.

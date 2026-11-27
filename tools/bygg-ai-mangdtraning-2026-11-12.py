@@ -40,6 +40,7 @@ P4 = _load('ai_p4', 'bygg-ai-pafyllnad4-2026-11-11.py')
 P6 = _load('ai_p6', 'bygg-ai-pafyllnad6-2026-11-11.py')
 P7 = _load('ai_p7', 'bygg-ai-pafyllnad7-2026-11-11.py')
 from ai_figurer import step, maze, box_queue, box_stack, tab  # noqa: E402
+from ai_labyrintdidaktik import vald_karta
 import ai_sokalgoritmer as A  # noqa: E402
 import ai_speltrad as T  # noqa: E402
 
@@ -190,28 +191,34 @@ def ko_stack_task(id_, seed, stack, sammanhang):
 
 # ======================================================================== BFS och DFS
 
-def maze_villkor_bfs(k, avst):
-    def ok(rows):
-        r = A.bfs(rows)
-        d = A.dist_all(rows, A.parse(rows)[0])
-        return len(r['order']) >= k + 2 and 2 <= sum(1 for v in d.values() if v == avst) <= 4
-    return ok
+def jamfor_sokningar(u, rows):
+    b, d = A.bfs(rows), A.dfs(rows)
+    nb, nd = len(b['order']), len(d['order'])
+    lb, ld = len(b['path']) - 1, len(d['path']) - 1
+    if int(u['id'].split('.')[1]) in (85, 86, 89, 90):
+        fraga = 'Hur många fler steg har vägen som DFS hittar än en kortaste väg med BFS?'
+        svar = ld - lb
+    else:
+        fraga = 'Hur stor är skillnaden mellan antalet rutor som BFS och DFS undersöker fram till mål? Räkna med start och mål.'
+        svar = abs(nb - nd)
+    delkort = K.num(fraga, [step('Sök i bredd', f'BFS tar ut {nb} rutor. Vägen till mål har {lb} steg.'),
+                            step('Sök på djupet', f'DFS besöker {nd} rutor. Vägen till mål har {ld} steg.')],
+                    svar, 'Använd ↑ → ↓ ← för båda. För två listor, en över undersökta rutor och en över slutvägen.', 3)
+    return K.kg_task(u['id'], u['omr'], u['familj'], u['spelIntro'], u['spelDelar'] + [delkort],
+                     u['ledtrad'][3:-4], u['formaga'], u['arbetsinsats'])
 
 
-def bfs_drill(id_, seed, k, avst, fragor, tn, sammanhang, R=4, C=6):
-    rows = sok_fram(seed, lambda rng: labyrint(rng, R, C, 0.28, C), maze_villkor_bfs(k, avst))
+def bfs_drill(id_, k, avst, fragor, tn, sammanhang):
+    rows, _ = vald_karta(id_)
     q = [f if f != 'avst' else f'avst{avst}' for f in fragor]
     u = K.bfs_task(id_, 'BFS i labyrinter', rows, k, q, 'Skriv upp kön efter varje uttag. Nya rutor läggs längst bak.', tn)
-    return P4.med_sammanhang(u, sammanhang)
+    return P4.med_sammanhang(jamfor_sokningar(u, rows), sammanhang)
 
 
-def dfs_drill(id_, seed, k, sammanhang, R=4, C=6):
-    def ok(rows):
-        r = A.dfs(rows)
-        return len(r['order']) >= k + 2
-    rows = sok_fram(seed, lambda rng: labyrint(rng, R, C, 0.3, C), ok)
+def dfs_drill(id_, k, sammanhang):
+    rows, _ = vald_karta(id_)
     u = K.dfs_task(id_, 'DFS i labyrinter', rows, k, 'DFS fortsätter alltid från den senast besökta rutan och backar vid stopp.')
-    return P4.med_sammanhang(u, sammanhang)
+    return P4.med_sammanhang(jamfor_sokningar(u, rows), sammanhang)
 
 
 TRAD_SAMMANHANG = ['Trädet visar vilka rum i ett museum som leder vidare till vilka.',
@@ -639,12 +646,12 @@ def alla():
     for i, (id_, stack) in enumerate([('1.77', False), ('1.78', True), ('1.79', False), ('1.80', True), ('1.81', False), ('1.82', True)]):
         ctx = (STACK_SAMMANHANG if stack else KO_SAMMANHANG)[i // 2]
         out.append(ko_stack_task(id_, 7700 + i, stack, ctx))
-    out += [bfs_drill('1.83', 8301, 5, 2, ['avst', 'k', 'steg'], (1, 2, 2), S[0]),
-            bfs_drill('1.84', 8402, 6, 3, ['k', 'avst', 'antal'], (2, 1, 2), S[1]),
-            bfs_drill('1.85', 8503, 4, 2, ['avst', 'steg', 'k'], (1, 2, 2), S[2], R=5, C=5),
-            bfs_drill('1.86', 8604, 7, 3, ['k', 'steg', 'avst'], (2, 2, 1), S[3], R=4, C=7)]
-    out += [dfs_drill('1.87', 8701, 4, S[4]), dfs_drill('1.88', 8802, 5, S[5]),
-            dfs_drill('1.89', 8903, 6, S[6], R=5, C=5), dfs_drill('1.90', 9004, 3, S[7], R=4, C=7)]
+    out += [bfs_drill('1.83', 5, 2, ['avst', 'k', 'steg'], (1, 2, 2), S[0]),
+            bfs_drill('1.84', 6, 3, ['k', 'avst', 'antal'], (2, 1, 2), S[1]),
+            bfs_drill('1.85', 4, 2, ['avst', 'steg', 'k'], (1, 2, 2), S[2]),
+            bfs_drill('1.86', 7, 3, ['k', 'steg', 'avst'], (2, 2, 1), S[3])]
+    out += [dfs_drill('1.87', 4, S[4]), dfs_drill('1.88', 5, S[5]),
+            dfs_drill('1.89', 6, S[6]), dfs_drill('1.90', 3, S[7])]
     out += [trad_drill(f'1.{91 + i}', 9100 + i, False, TRAD_SAMMANHANG[i]) for i in range(3)]
     out += [trad_drill(f'1.{94 + i}', 9400 + i, True, TRAD_SAMMANHANG[i]) for i in range(3)]
     out += [prio_task(f'2.{88 + i}', 8800 + i, PRIO_SAMMANHANG[i]) for i in range(4)]
