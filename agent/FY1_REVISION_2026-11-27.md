@@ -107,3 +107,14 @@ flervalsstammen ”Två isotoper av samma grundämne skiljer sig åt i...” →
 Metatext: ”med ett digitalt verktyg” → ”med GeoGebra” i 6.190 och 2.46 (båda har `geogebra: true`). Rubriken
 ”Fördjupning: …” i 8.294 och 8.439–8.444 står kvar trots stilguiden, eftersom fellogg 2026-11-11 uttryckligen
 märker dem som fördjupning (`fellogg-fy1-2026-11-11.test.js`). Användaren 2026-11-27: rubriken behålls, eftersom den förklarar varför formeln (utanför Fy1) står i frågan.
+
+## Omgång 3: ”kropp” (stilguiden)
+
+Stilguiden säger att ”kropp” och ”objekt” ska undvikas. 33 uppgifter (steget `kropp`):
+- Fysikaliska föremål i kapitel 4 och 6 (4.33, 4.84, 4.89, 4.101, 4.175, 4.216, 4.303, 4.357, 4.409, 6.114, 6.283,
+  6.311–6.328, 6.359, 6.361): ”kropp” → ”föremål” med rätt genus (”Ett stelt föremål … Det flyttas …”).
+- Doser i kapitel 9 (9.44, 9.97, 9.152, 9.173, 9.362, 9.368, 9.379, 9.381, 9.386, 9.387), där en människa avses:
+  ”En kropp med massan 60 kg absorberar …” → ”En person med massan 60 kg absorberar …”.
+- 2.195: ”En annan klotformad himlakropp”.
+Människokroppen i medicin, energi och strålskydd (”inne i kroppen”, ”kroppen använder kemisk energi”) och
+densitetsmätarens ”nedre kropp” (6.80) står kvar.

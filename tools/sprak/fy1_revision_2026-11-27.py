@@ -184,6 +184,42 @@ def r_metatext(u):
     u.clear(); u.update(json.loads(s))
 
 
+# Stilguiden: undvik ”kropp” om föremål. Människokroppen (medicin, energi, strålskydd) står kvar.
+KROPP_FOREMAL = [('En helt nedsänkt, stel kropp', 'Ett helt nedsänkt, stelt föremål'), ('En stel kropp', 'Ett stelt föremål'),
+                 ('en stel kropp', 'ett stelt föremål'), ('På en helt nedsänkt kropp', 'På ett helt nedsänkt föremål'),
+                 ('På en nedsänkt kropp', 'På ett nedsänkt föremål'), ('På en kropp', 'På ett föremål'),
+                 ('en enda kropp', 'ett enda föremål'), ('denna kropp', 'detta föremål'), ('minst en kropp', 'minst ett föremål'),
+                 ('Två kroppar', 'Två föremål'), ('En kropp', 'Ett föremål'), ('en kropp', 'ett föremål'),
+                 ('Kroppens', 'Föremålets'), ('kroppens', 'föremålets'), ('Kroppen', 'Föremålet'), ('kroppen', 'föremålet'),
+                 ('kropparna', 'föremålen'), ('kroppar', 'föremål'),
+                 ('accelerationen 9,0 m/s². Den påverkas', 'accelerationen 9,0 m/s². Det påverkas'),
+                 ('lyftkraften 12 N i vatten. Den flyttas', 'lyftkraften 12 N i vatten. Det flyttas'),
+                 ('densiteten 600 kg/m³. Den hålls stilla', 'densiteten 600 kg/m³. Det hålls stilla')]
+KROPP_PERSON = [('Kalium-40 i en kropp med massan 70 kg', 'Kalium-40 i kroppen hos en person med massan 70 kg'),
+                ('En kropp med massan', 'En person med massan'), ('En kropp har massan', 'En person har massan'),
+                ('en kropp absorberar', 'en person absorberar'), ('absorberar en kropp', 'absorberar en person'),
+                ('Hur stor är kroppens massa?', 'Hur stor är personens massa?'), ('kroppens ekvivalenta dos', 'personens ekvivalenta dos')]
+
+
+def _byt_lista(u, par):
+    s = json.dumps(u, ensure_ascii=False)
+    for a, b in par:
+        s = s.replace(a, b)
+    u.clear(); u.update(json.loads(s))
+
+
+def r_kropp_foremal(u):
+    _byt_lista(u, KROPP_FOREMAL)
+
+
+def r_kropp_person(u):
+    _byt_lista(u, KROPP_PERSON)
+
+
+def r_2_195(u):
+    _byt_lista(u, [('En annan klotformad kropp', 'En annan klotformad himlakropp')])
+
+
 RAPPORTER = {'2.110': r_2_110, '2.84': r_2_84, '2.82': r_2_82, '2.55': r_2_55, '2.52': r_2_52, '3.72': r_3_72,
              '3.234': r_3_234, '2.318': rullband}
 
@@ -838,7 +874,11 @@ class AllaUppgifter(dict):
     """Steg som gäller alla uppgifter: {id: funktion} skapas när banken har lästs."""
 
 
-STEG = {'grammatik': {'7.149': r_7_149, '6.454': r_6_454, '2.379': r_2_379, '7.117': r_7_117, '9.216': r_9_216, **{i: r_metatext for i in ('6.190', '2.46')}}, 'rapporter': RAPPORTER, 'densitet': 'alla:d_densitet', 'kedja': 'alla:k_kedja', 'aterstall': {'3.73': a_aterstall, '3.93': a_aterstall}, 'kg_tillbaka': 'alla:t_kg_tillbaka', 'tabell': 'alla:m_tabell', 'figur': {'4.251': f_figur, '3.311': f_figur, '4.245': f_figur}}
+KROPP_IDS_F = ('4.357 4.33 4.84 4.89 4.101 4.409 4.175 4.303 4.216 6.321 6.327 6.328 6.114 6.283 6.315 6.319 6.311 '
+               '6.313 6.324 6.317 6.359 6.361').split()
+KROPP_IDS_P = '9.44 9.97 9.152 9.173 9.362 9.368 9.379 9.381 9.386 9.387'.split()
+STEG = {'kropp': {**{i: r_kropp_foremal for i in KROPP_IDS_F}, **{i: r_kropp_person for i in KROPP_IDS_P}, '2.195': r_2_195},
+        'grammatik': {'7.149': r_7_149, '6.454': r_6_454, '2.379': r_2_379, '7.117': r_7_117, '9.216': r_9_216, **{i: r_metatext for i in ('6.190', '2.46')}}, 'rapporter': RAPPORTER, 'densitet': 'alla:d_densitet', 'kedja': 'alla:k_kedja', 'aterstall': {'3.73': a_aterstall, '3.93': a_aterstall}, 'kg_tillbaka': 'alla:t_kg_tillbaka', 'tabell': 'alla:m_tabell', 'figur': {'4.251': f_figur, '3.311': f_figur, '4.245': f_figur}}
 
 
 def main():
