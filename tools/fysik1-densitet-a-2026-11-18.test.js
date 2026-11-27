@@ -22,7 +22,7 @@ test('läraren: uppgifter där mängden av två ämnen bestäms ur blandningens 
     assert.equal(t.omr, 'densitet', id); assert.equal(t.niva, 'A', id); assert.equal(t.poang, poang, id); assert.equal(t.traningsniva, tn, id);
   }
   // Facit och självrättning är oförändrade.
-  assert.equal(q('2.146').rättSvar, 71.9); assert.equal(q('2.200').rättSvar, 36.4); assert.equal(q('2.202').rättSvar, 250);
+  assert.equal(q('2.146').rättSvar, 71.9); assert.equal(q('2.200').rättSvar, 36.1); /* 36,1 % med zinkens densitet 7,13 g/cm³ (formelsamlingen, användarbeslut 2026-11-25) */ assert.equal(q('2.202').rättSvar, 250);
   assert.match(q('2.51').s, /0\{,\}566/);
 });
 
