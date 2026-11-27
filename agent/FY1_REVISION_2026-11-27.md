@@ -4,7 +4,7 @@ Användaren: ”Fortsätt revidera språket och uppgifterna i fysik 1. Det är m
 felrapporter och gör sedan liknande ändringar i alla uppgifter, samt det som står i instruktionerna.” Dessutom:
 ”rullgång” ska skrivas om till rulltrappa, rullband eller liknande.
 
-Skript: `tools/sprak/fy1_revision_2026-11-27.py <steg> [--skriv]` med stegen `rapporter`, `grammatik`, `densitet`,
+Skript: `tools/sprak/fy1_revision_2026-11-27.py <steg> [--skriv]` med stegen `rapporter`, `grammatik`, `densitet`, `tabell`,
 `kedja`, `figur` och `kg_tillbaka` (körs i den ordningen; `densitet` och `kedja` kan köras om och ändrar då inget). Handskrivna kedjefrågor:
 `tools/sprak/omskr/fy1_kedjor_2026-11-27.py`. Test: `tools/fy1-revision-2026-11-27.test.js`.
 
@@ -90,3 +90,20 @@ av inledningens figur.
 - Alla `tools/*.test.js` som läser `uppgifter.js` jämförda med läget före ändringen.
 - Andra sessionens commit d9c8312 (figurer, inledningar i 4.747, 4.647, 6.88, 6.530, 6.538, 7.139) hämtades först;
   stegen kördes om ovanpå och gav samma resultat som före hämtningen för alla övriga uppgifter.
+
+## Omgång 2 samma dag: alla tabellvärden bara i kgInstruktion
+
+Samma princip som för densiteterna gäller alla formelsamlingsvärden. Steget `tabell` flyttar dem ur Kunskapsgymmets
+frågetexter (`spelIntro`, delkortens `t` och `fraga`) till `kgInstruktion` på uppgiften respektive delkortet: 77
+uppgifter, främst vattnets och isens specifika värmekapacitet, smält- och ångbildningsvärme (”Isens smältvärme är
+334 kJ/kg.”), ljudets fart i luft och vatten, kopparns resistivitet, g på månen och Mars, kol-14:s halveringstid och
+gasernas densitet. Igenkänningen är `tabell_till_kg.rensa_t` från 2026-11-23, som bara flyttar värden som stämmer
+med tabellvärdet; uppgiftens egna data står kvar (2.312: ljudfarten 1304 m/s i ett material).
+
+Dessutom: 7.117 ”0,200 kg is vid 0 °C har smält till 65 %.” → ”Av 0,200 kg is vid 0 °C har 65 % smält.” och 9.216
+flervalsstammen ”Två isotoper av samma grundämne skiljer sig åt i...” → ”Vad skiljer två isotoper av samma grundämne
+åt?”. En sökning efter fler fristående kort som tappat sitt sammanhang (som 2.110) gav inga fler.
+
+Metatext: ”med ett digitalt verktyg” → ”med GeoGebra” i 6.190 och 2.46 (båda har `geogebra: true`). Rubriken
+”Fördjupning: …” i 8.294 och 8.439–8.444 står kvar trots stilguiden, eftersom fellogg 2026-11-11 uttryckligen
+märker dem som fördjupning (`fellogg-fy1-2026-11-11.test.js`); fråga användaren om de ska bort.

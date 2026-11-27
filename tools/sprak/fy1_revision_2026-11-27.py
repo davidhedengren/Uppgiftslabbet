@@ -160,6 +160,30 @@ def r_2_379(u):
     u.clear(); u.update(json.loads(s))
 
 
+def r_7_117(u):
+    s = json.dumps(u, ensure_ascii=False).replace('0,200 kg is vid 0 °C har smält till 65 %.',
+                                                  'Av 0,200 kg is vid 0 °C har 65 % smält.')
+    u.clear(); u.update(json.loads(s))
+
+
+def r_9_216(u):
+    # Flervalsstam som slutade med ”…”: en hel fråga i lärarens stil, alternativen oförändrade.
+    s = json.dumps(u, ensure_ascii=False).replace('Två isotoper av samma grundämne skiljer sig åt i...',
+                                                  'Vad skiljer två isotoper av samma grundämne åt?')
+    u.clear(); u.update(json.loads(s))
+
+
+def r_metatext(u):
+    """Stilguiden: ingen metatext (”Fördjupning: …”) och ”GeoGebra” i stället för ”digitalt verktyg”."""
+    s = json.dumps(u, ensure_ascii=False)
+    # ”Fördjupning: …” står kvar: uttryckligt beslut i fellogg-fy1-2026-11-11 (märkt fördjupning).
+    s = s.replace('Bestäm höjden med ett digitalt verktyg.', 'Bestäm höjden med GeoGebra.')
+    s = s.replace('Lös ekvationen med ett digitalt verktyg.', 'Lös ekvationen med GeoGebra.')
+    s = s.replace('Lägg in de fem punkterna i ett digitalt verktyg', 'Lägg in de fem punkterna i GeoGebra')
+    s = s.replace('<p><strong></strong></p>', '').replace('<p></p>', '')
+    u.clear(); u.update(json.loads(s))
+
+
 RAPPORTER = {'2.110': r_2_110, '2.84': r_2_84, '2.82': r_2_82, '2.55': r_2_55, '2.52': r_2_52, '3.72': r_3_72,
              '3.234': r_3_234, '2.318': rullband}
 
@@ -754,11 +778,67 @@ def t_kg_tillbaka(u):
                 d.pop('svarTabell', None)
 
 
+# ---------------------------------------------------------------- steg: tabell
+#
+# Samma princip för alla tabellvärden (specifik värmekapacitet, smält- och ångbildningsvärme, resistivitet, ljudets
+# fart, g på månen och Mars, halveringstider, gasernas densitet): de står i kgInstruktion, inte i Kunskapsgymmets
+# frågetexter (spelIntro, delkortens t och fraga). Igenkänningen är tabell_till_kg.rensa_t från 2026-11-23, som
+# bara flyttar meningar och inbäddade värden som stämmer med tabellvärdet.
+
+def _rensa_text(html_text):
+    """rensa_t utan kravet att en fråga ska finnas kvar (spelIntro har ingen fråga)."""
+    vakt = '<p>Hur stor är den?</p>'
+    ny, kg, _ = TK.rensa_t((html_text or '') + vakt)
+    if ny is None:
+        return html_text, []
+    assert ny.endswith(vakt), ny[-60:]
+    return ny[:-len(vakt)], kg
+
+
+def m_tabell(u):
+    intro = u.get('spelIntro')
+    if intro:
+        ny, kg = _rensa_text(intro)
+        if kg:
+            u['spelIntro'] = ny
+            _lagg_kg_efter(u, kg)
+    for d in u.get('spelDelar') or []:
+        kg_del = []
+        for f in ('t', 'fraga'):
+            if isinstance(d.get(f), str) and d[f]:
+                ny, kg = _rensa_text(d[f]) if f == 't' else _rensa_fraga(d[f])
+                if kg:
+                    d[f] = ny
+                    kg_del += kg
+        if kg_del:
+            _lagg_kg_efter(d, list(dict.fromkeys(kg_del)))
+
+
+def _rensa_fraga(txt):
+    ny, kg = _rensa_text(f'<p>{txt}</p>')
+    return re.sub(r'^<p>|</p>$', '', ny).strip(), kg
+
+
+def _lagg_kg_efter(obj, meningar):
+    gammal = obj.get('kgInstruktion') or ''
+    nya = [m for m in meningar if m not in gammal and not _har_alla_varden(gammal, m)]
+    if nya:
+        obj['kgInstruktion'] = (gammal + ' ' + ' '.join(nya)).strip()
+
+
+def _har_alla_varden(text, mening):
+    """Står alla tal med enhet i meningen redan i texten (”1 000” och ”1000” räknas lika)?"""
+    vals = [m for m in NUMENH.finditer(mening)]
+    if not vals:
+        return False
+    return all(_har_varde(text, (None, m.group(1).strip(), m.group(2))) for m in vals)
+
+
 class AllaUppgifter(dict):
     """Steg som gäller alla uppgifter: {id: funktion} skapas när banken har lästs."""
 
 
-STEG = {'grammatik': {'7.149': r_7_149, '6.454': r_6_454, '2.379': r_2_379}, 'rapporter': RAPPORTER, 'densitet': 'alla:d_densitet', 'kedja': 'alla:k_kedja', 'aterstall': {'3.73': a_aterstall, '3.93': a_aterstall}, 'kg_tillbaka': 'alla:t_kg_tillbaka', 'figur': {'4.251': f_figur, '3.311': f_figur, '4.245': f_figur}}
+STEG = {'grammatik': {'7.149': r_7_149, '6.454': r_6_454, '2.379': r_2_379, '7.117': r_7_117, '9.216': r_9_216, **{i: r_metatext for i in ('6.190', '2.46')}}, 'rapporter': RAPPORTER, 'densitet': 'alla:d_densitet', 'kedja': 'alla:k_kedja', 'aterstall': {'3.73': a_aterstall, '3.93': a_aterstall}, 'kg_tillbaka': 'alla:t_kg_tillbaka', 'tabell': 'alla:m_tabell', 'figur': {'4.251': f_figur, '3.311': f_figur, '4.245': f_figur}}
 
 
 def main():

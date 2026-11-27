@@ -39,7 +39,11 @@ test('densiteter: inte i frågetexterna, men i kgInstruktion för rättningen i 
  for(const e of ['a','b','c'])a.match(del('2.52',e).kgInstruktion,/Blyets densitet är 11,3 g\/cm³/);
  a.match(q('2.110').kgInstruktion,/1,03 g\/cm³/);a.match(q('2.18').kgInstruktion,/zink 7,13 g\/cm³/);
  a.match(q('8.424').kgInstruktion,/Kopparns densitet är 8,96 g\/cm³/);a.match(q('8.424').kgInstruktion,/resistivitet/);
- a.match(ren(q('2.82').spelIntro),/Luftens densitet är 1,20 kg\/m³/); // gas: står kvar i texten
+ a.match(q('2.82').kgInstruktion,/Luftens densitet är 1,20 kg\/m³/);a.doesNotMatch(ren(q('2.82').spelIntro),/densitet/);
+ // Övriga tabellvärden (steget tabell): specifik värmekapacitet, smältvärme, ljudets fart, g på månen m.m.
+ const tab2=/(Vattnets|Isens|Kopparns|Järnets|Aluminiumets) (specifika värmekapacitet|smältvärme|ångbildningsvärme) är \d|Ljudets fart (i (luft|vatten) )?är \d|Tyngdaccelerationen är [\d,]+ m\/s² på (månen|Mars)/;
+ for(const u of bank)if(u.id!=='2.312')a.doesNotMatch(fragetext(u),tab2,u.id); // 2.312: ljudfarten 1304 m/s är uppgiftens egna data
+ a.match(q('7.45').kgInstruktion,/smältvärme/);a.match(del('7.45','b').kgInstruktion,/smältvärme är 334 kJ\/kg/);
 });
 
 test('deluppgiftskedjor: alla delkort börjar med inledningen',()=>{

@@ -111,13 +111,13 @@ KEDJA = {
     '6.480': {'a': 's', 'b': 's', 'c': 's', 'd': 's'},
     '6.482': {'a': 's', 'b': 's', 'c': 's'},
     '6.496': {'a': 's', 'b': 's', 'c': 's'},
-    '6.506': {'a': 'Heliumets densitet är 0,179 kg/m³. En heliumballong ska precis kunna bära 180 kg last och ett hölje '
+    '6.506': {'a': 'En heliumballong ska precis kunna bära 180 kg last och ett hölje '
                    'med massan 10 kg. Vilken volym behövs?',
-              'b': 'Vätgasens densitet är 0,090 kg/m³. En vätgasballong ska precis kunna bära 180 kg last och ett hölje '
+              'b': 'En vätgasballong ska precis kunna bära 180 kg last och ett hölje '
                    'med massan 10 kg. Vilken volym behövs?',
-              'c': 'Heliumets densitet är 0,179 kg/m³. En klotformad heliumballong har radien 7,15 m. Hölje och nät väger '
+              'c': 'En klotformad heliumballong har radien 7,15 m. Hölje och nät väger '
                    'tillsammans 930 kg. Hur stor last kan den bära?',
-              'd': 'Heliumets densitet är 0,179 kg/m³. En klotformad heliumballong ska precis kunna bära 7,70 ton last. '
+              'd': 'En klotformad heliumballong ska precis kunna bära 7,70 ton last. '
                    'Hölje, korg och nät väger tillsammans 196 kg. Vilken radie behövs?'},
     '7.45': {'a': 'Hur mycket energi avges när vattnet svalnar från 5,0 °C till 0 °C?',
              'b': 'Hur mycket energi avges när vattnet fryser vid 0 °C?',
