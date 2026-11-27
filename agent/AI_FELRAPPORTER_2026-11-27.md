@@ -29,7 +29,7 @@ Regressionstestet söker från start i den publicerade SVG-figurens fyra grannri
 
 Varje labyrint har en följdfråga om en egenskap som går att undersöka på just den ritade kartan. Kartan används både på elevkort och arbetsblad. Facit visar uträkningen. På jämförelsekartorna kan eleven också följa vägarna bredvid varandra.
 
-54 kartor har fått ny geometri. I 1.83–1.90 skiljer eleverna på arbetet fram till målet och antalet steg i vägen som algoritmen hittar. I 1.89 besöker DFS 17 rutor och hittar en väg på 16 steg. BFS tar ut 22 rutor och hittar en väg på 10 steg. I 1.84 undersöker BFS färre rutor än DFS.
+54 kartor har fått ny geometri. Varje sådan karta har högst två ställen där fyra gångrutor bildar en öppen kvadrat. I 1.83–1.90 skiljer eleverna på arbetet fram till målet och antalet steg i vägen som algoritmen hittar. I 1.89 besöker DFS 16 rutor och hittar en väg på 14 steg. BFS tar ut 19 rutor och hittar en väg på 10 steg. I 1.84 undersöker BFS färre rutor än DFS.
 
 I 2.123–2.152 visas skillnaden mellan gångavstånd, terrängkostnad och uppskattat avstånd. På alla elva viktade kartor i serien hittar A* en längre väg med lägre totalkostnad än girig bäst först. I 2.126 skiljs vägarna åt vid D2. De har 11 respektive 13 steg och kostar 14 respektive 13. I 2.173–2.188 är de markerade kandidaterna en verklig ögonblicksbild ur girig bäst först. På åtta av kartorna får eleven byta urvalsregel i just det läget och se att A* väljer en annan kandidat.
 

@@ -232,3 +232,16 @@ test('de markerade öppna listorna kan återskapas från start, även när sökr
   a.ok(verifierad,id+' markeringarna måste kunna ligga öppna samtidigt');
  }
 });
+
+test('de 54 omritade kartorna har sammanhängande gångar med få öppna ytor', () => {
+ const omritade=Object.keys(JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'ai-labyrintval.json'),'utf8')));
+ a.equal(omritade.length,54);
+ for(const id of omritade){
+  const L=labyrint(q(id));
+  let öppnaKvadrater=0;
+  for(let r=1;r<L.rows.length;r++)for(let k=1;k<L.rows[r].length;k++){
+   if([L.rows[r][k],L.rows[r-1][k],L.rows[r][k-1],L.rows[r-1][k-1]].every(c=>c!=='#'))öppnaKvadrater++;
+  }
+  a.ok(öppnaKvadrater<=2,id+' för stor öppen yta');
+ }
+});
