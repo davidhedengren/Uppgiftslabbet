@@ -44,8 +44,10 @@ function astar(L){const g={[nm(L.s)]:0},cel={[nm(L.s)]:L.s},öppna=new Set([nm(L
 const lista=xs=>[...xs].sort().join(', ');
 const ochLista=xs=>{xs=[...xs].sort();return xs.length>1?xs.slice(0,-1).join(', ')+' och '+xs.at(-1):xs[0];};
 
-function förväntat(u,d,L){const F=ren(d.fraga);let m;
- if((m=F.match(/^Bestäm ([ghf])\(n\) för rutan ([A-Z])\.$/))){const X=L.M[m[2]];a.ok(X,u.id+' bokstaven i figuren');
+const frågetext=d=>ren(d.fraga).replace(/ \(h\(n\) är Manhattanavståndet till målet\)$/,'');
+const värdefråga=d=>frågetext(d).match(/^Bestäm ([ghf])\(n\) för rutan ([A-Z])\.$/) || frågetext(d).match(/([ghf])\(([A-Z])\)(?: där)?[.?]$/);
+function förväntat(u,d,L){const F=frågetext(d);let m;
+ if((m=värdefråga(d))){const X=L.M[m[2]];a.ok(X,u.id+' bokstaven i figuren');
   const gv=billigast(L,X),hv=man(X,L.g);return{g:gv,h:hv,f:gv+hv}[m[1]];}
  const fv=X=>billigast(L,L.M[X])+man(L.M[X],L.g),hv=X=>man(L.M[X],L.g),lägst=(xs,v)=>{const s=[...xs].sort((x,y)=>v(x)-v(y));a.notEqual(v(s[0]),v(s[1]),u.id+' oavgjort');return 'Rutan '+s[0];};
  if((m=F.match(/^Vilken av rutorna ([A-Z]) och ([A-Z]) har lägst f\(n\)\?$/)))return lägst([m[1],m[2]],fv);
@@ -97,12 +99,12 @@ test('alla svar räknas om ur figuren',()=>{
     for(const x of d.alternativ)a.ok(x.kommentar.length>15,id+d.etikett+' '+x.txt);}
    else if(d.svarFormat==='numeriskt'){a.ok(Number.isInteger(d.rättSvar));a.equal(d.tolerans,0);}});}});
 
-test('2.123–2.152: g(n) runt väggar eller genom terräng är C (AI_NIVAINDELNING), h(n) är E',()=>{
+test('2.123–2.152: g(n) runt väggar eller genom terräng är C (AI_NIVAINDELNING), h(n) är E på oviktad karta och C med terräng',()=>{
  const texter=new Set();
- for(const id of NYA){const u=q(id);a.equal(u.omr,'astar_varden');a.equal(u.familj,'g, h och f för en ruta');a.equal(u.niva,'C');a.equal(u.poang,'1/2/0');
-  a.equal(JSON.stringify(u.formaga),'["procedur"]');a.equal(JSON.stringify(u.spelDelar.map(d=>d.traningsniva)),'[3,1,3]');
-  const L=u.spelDelar.map(d=>ren(d.fraga).match(/rutan ([A-Z])\./)[1]);a.equal(new Set(L).size,1);
-  a.equal(u.spelDelar.map(d=>ren(d.fraga).slice(0,10)).join('|'),'Bestäm g(n|Bestäm h(n|Bestäm f(n');
+ for(const id of NYA){const u=q(id);a.equal(u.omr,'astar_varden');a.equal(u.familj,'g, h och f för en ruta');a.equal(u.niva,'C');const terräng=/[345]/.test(labyrint(u).rows.join(''));a.equal(u.poang,terräng?'0/3/0':'1/2/0');
+  a.equal(JSON.stringify(u.formaga),'["procedur"]');a.equal(JSON.stringify(u.spelDelar.map(d=>d.traningsniva)),terräng?'[3,3,3]':'[3,1,3]');
+  const L=u.spelDelar.map(d=>värdefråga(d)[2]);a.equal(new Set(L).size,1);
+  a.equal(u.spelDelar.map(d=>värdefråga(d)[1]).join('|'),'g|h|f');
   const t=ren(u.t);a.ok(!texter.has(t),id+' samma text som en annan uppgift');texter.add(t);
   a.match(t,/A\*/);a.match(t,/Manhattanavståndet/);}
  // g(n) är större än Manhattanavståndet från start i alla: väggarna eller terrängen tvingar fram en omväg.
@@ -116,10 +118,10 @@ test('enklare uppgifter 2.153–2.188: g(n), h(n) och f(n) i flera rutor, E och 
   a.equal(JSON.stringify(u.formaga),'["procedur"]');a.equal(u.omr,'astar_varden');
   a.equal(u.familj,FLERA_A.includes(id)?'g, h och f för en ruta':'Heuristiken h',id);
   a.ok(Object.keys(L.M).length>=2,id+' minst två markerade rutor');a.doesNotMatch(L.rows.join(''),/[345]/,id+' ingen terräng');
-  const bokst=new Set(u.spelDelar.map(d=>(ren(d.fraga).match(/rutan ([A-Z])\./)||[])[1]).filter(Boolean));
+  const bokst=new Set(u.spelDelar.map(d=>(värdefråga(d)||[])[2]).filter(Boolean));
   if(FLERA_A.includes(id))a.ok(bokst.size>=2||/lägst f\(n\)/.test(u.t),id+' flera rutor');
   // Där g(n) behövs (A*) går vägen till rutan utan omväg: g(n) = Manhattanavståndet från start.
-  if(!/girig bäst först, där/.test(u.t))for(const X of Object.values(L.M))a.equal(billigast(L,X),man(L.s,X),id+' omväg till '+nm(X));
+  if(!FLERA_G.includes(id) || /Vilken av rutorna tar A\* ut först/.test(u.t))for(const X of Object.values(L.M))a.equal(billigast(L,X),man(L.s,X),id+' omväg till '+nm(X));
   const t=ren(u.t);a.ok(!texter.has(t),id+' samma text som en annan uppgift');texter.add(t);}
  const mallar=FLERA.map(id=>q(id).spelDelar.map(d=>ren(d.fraga).replace(/[A-Z](?=[.?)]| och)/g,'#').slice(0,16)).join('|'));a.ok(new Set(mallar).size>=5,'varierade frågor');
  a.ok(FLERA_G.every(id=>/girig bäst först/.test(q(id).t)));});
@@ -129,3 +131,24 @@ test('texten: f(n)-notation och inga påklistrade alternativ',()=>{
   a.doesNotMatch(txt,/Välj ett alternativ/,id);a.doesNotMatch(ren(u.t),/\b[fgh] = /,id);a.doesNotMatch(txt,/f\(n\) = g\(n\) \+ h\([A-Z]\)/,id);
   a.doesNotMatch(txt,/\.\./,id);}
  for(const id of ['2.61','2.120'])a.doesNotMatch(JSON.stringify(q(id)),/f\(n\) = g\(n\) \+ h\([A-Z]\)/,id);});
+
+test('Rapport 27 november: gångar, elevkort och arbetsblad',()=>{
+ const notis='(h(n) är Manhattanavståndet till målet)';
+ const kartor=bank.filter(u=>u.spelIntro.includes('Labyrint med'));
+ for(const u of kartor){
+  if(['1.105','1.106'].includes(u.id))a.doesNotMatch(u.spelIntro,/data-gangar/);
+  else a.match(u.spelIntro,/data-gangar="1"/,u.id);
+ }
+ const exempel=labyrint(q('2.93'));
+ a.ok(exempel.rows.join('').split('#').length-1>=10);
+ a.equal(billigast(exempel,exempel.P),q('2.93').rättSvar[0]);
+ const medNotis=bank.filter(u=>u.t.includes(notis));
+ a.ok(medNotis.length>=125);
+ for(const u of medNotis){
+  a.ok(ren(u.t).endsWith(notis),u.id);
+  a.equal(u.t.split(notis).length,2,u.id);
+  a.doesNotMatch(u.spelIntro,/Manhattanavstånd/);
+  for(const d of u.spelDelar)a.ok(d.fraga.includes(notis),u.id+d.etikett);
+ }
+ a.doesNotMatch(q('1.98').t+q('1.98').spelIntro,/Varje gång läggs en nods barn/);
+});

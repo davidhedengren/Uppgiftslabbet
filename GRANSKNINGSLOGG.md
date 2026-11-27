@@ -1108,3 +1108,5 @@ uppgifter. 84/84 tester godkända.
 ## Förmågor i matematik, 2026-11-24
 
 Av 1 133 uppgifter märkta med både procedur och problemlösning fick 409 taggen problemlösning borttagen. [Beslut per kurs, delmoment och uppgift](agent/MATEMATIK_FORMAGOR_2026-11-24.md).
+
+- 2026-11-27 · [AI-bankens sex lärarrapporter, formelblad och verifiering](agent/AI_FELRAPPORTER_2026-11-27.md)

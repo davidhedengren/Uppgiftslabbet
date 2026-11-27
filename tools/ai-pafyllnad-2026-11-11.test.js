@@ -49,11 +49,11 @@ function greedyG(edges,h,s,t){const adj={};for(const[x,y,w]of edges){(adj[x]??=[
 const has=(id,s)=>a.ok(q(id).s.replace(/\b([fgh])\((?:n|[A-Z]\d?)\)/g,'$1').includes(s),id+': '+s);
 
 test('lärarkommentarer: enhetliga inledningar i labyrinter, träd och spelträd',()=>{
- for(const id of ['1.01','1.06','1.08'])a.match(q(id).spelIntro,/<p>Labyrinten söks igenom med BFS \(ordning ↑ → ↓ ←\)\.<\/p>/);
- for(const id of ['1.02','1.07'])a.match(q(id).spelIntro,/<p>Labyrinten söks igenom med DFS \(ordning ↑ → ↓ ←\)\.<\/p>/);
+ for(const [alg,ids] of [['BFS',['1.01','1.06','1.08']],['DFS',['1.02','1.07']]])for(const id of ids){
+  const intro=q(id).spelIntro.split('</svg>').at(-1);a.match(intro,new RegExp(alg));a.match(intro,/↑ → ↓ ←|upp, höger, ned(?: och|,) vänster/i);}
  for(const id of ['2.01','2.02','2.03','2.06','2.07','2.08','2.09','2.10','2.11'])a.match(q(id).spelIntro,/Labyrinten söks igenom med /,id);
  for(const id of ['1.04','1.05','1.09'])a.match(q(id).spelIntro,/Trädet söks igenom med /,id);
- for(const id of ['3.01','3.02','3.03','3.04','3.05'])a.match(q(id).spelIntro,/Spelträdet söks igenom med /,id);
+ for(const id of ['3.01','3.02','3.03','3.04','3.05'])a.match(q(id).spelIntro,/minimax|alfa–beta/i,id);
  for(const u of bank){a.doesNotMatch(u.t,/<p>(BFS|DFS|A\*)\. /,u.id);a.ok(u.t.includes(u.spelIntro.replace(/<table[\s\S]*$/,'').slice(0,40)),u.id);}
 });
 test('lärarkommentarer: färgade start- och målnoder samt snygga tabeller',()=>{
@@ -71,7 +71,7 @@ test('26 nya uppgifter med fullständiga och självständiga delar',()=>{
   a.equal(u.spel,true);a.equal(u['självrättning'],true);a.equal(u['miniräknare'],true);a.equal(u.geogebra,false);a.ok(u.ledtrad.length>20);
   a.match(u.s,/facit-steglista/);a.equal(u.traningsniva,Math.max(...u.spelDelar.map(d=>d.traningsniva)));
   for(const d of u.spelDelar){a.ok(d.fraga&&d.ledtrad&&d.s,id);a.match(d.s,/facit-rubrik/);a.match(d.s,/facit-svar/);a.equal(d.visaAlternativ,d.alternativ.length>0);
-   a.ok(u.t.includes(d.fraga.replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.has(id+d.etikett)?' Välj ett alternativ.':'\u0000','').replace('<p>','').slice(0,30)),id+d.etikett);
+   a.ok(u.t.includes(d.fraga.replace(' (h(n) är Manhattanavståndet till målet)','').replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.has(id+d.etikett)?' Välj ett alternativ.':'\u0000','').replace('<p>','').slice(0,30)),id+d.etikett);
    if(d.alternativ.length){a.equal(d.alternativ.filter(x=>x.ratt).length>1,/Välj alla som stämmer/.test(d.fraga),id);a.doesNotMatch(d.fraga,/Välj ett alternativ/);
     a.equal(new Set(d.alternativ.map(x=>x.txt)).size,d.alternativ.length);for(const x of d.alternativ){a.ok(x.kommentar.length>15);a.ok(KG_FLERVAL.has(id+d.etikett)||u.t.includes('</strong> '+x.txt+'</p>'),id);}}}}
  a.deepEqual(omr,{ko_stack:3,ko_sokning:2,bfs:2,dfs:3,prioritetsko:3,astar_varden:2,astar_sokning:3,viktade_vagar:3,minimax:3,alfa_beta:2});

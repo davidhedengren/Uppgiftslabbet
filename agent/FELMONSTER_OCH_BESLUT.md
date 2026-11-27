@@ -3946,3 +3946,7 @@ hållen. Därför lagras nu fullvärdet i `rättSvar`, som Kunskapsgymmet förut
 Facit visar fortfarande det avrundade svaret. Samma fel fanns i Fy1 kap 5 utanför FP30 (3.370 a, 5.142, 5.272). Se
 `agent/FY1_GRANSKNING_2026-11-27.md` och `tools/fy1-granskning-kap5-2026-11-27.py`. Skydd: de sex uppdaterade testerna
 som listas där. Återinför inte avrundade grannvärden i `rättSvar` för fysik med `svarVardesiffror`.
+
+### AI · Viktade rutor, labyrintgångar och Manhattan-notis (2026-11-27)
+
+Viktad terräng i en labyrint ger träningsnivå minst 3 på samtliga delkort, även h-frågan. Det ersätter undantaget för h i nivåbeslutet 26 november. Vikter på grafkanter bedöms separat. Skriv Manhattan-notisen efter frågan på elevkortet och en gång sist på arbetsbladet. [Granskning, formelblad och kontroller](AI_FELRAPPORTER_2026-11-27.md).

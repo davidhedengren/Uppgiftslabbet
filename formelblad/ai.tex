@@ -1,0 +1,49 @@
+\pdftrailerid{}
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath}
+\usepackage[margin=19mm]{geometry}
+\usepackage{xcolor}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\definecolor{ink}{HTML}{17354B}
+\newcommand{\rubrik}[1]{\par\vspace{4mm}{\large\sffamily\bfseries\color{ink}#1}\par\vspace{2mm}}
+\newcommand{\rad}[2]{\textsf{#1} & $\displaystyle #2$ \\[3.2mm]}
+\begin{document}
+{\sffamily\large Artificiell intelligens nivå 1}\par
+{\sffamily\Huge\bfseries Formelblad}\par\vspace{2mm}\hrule
+\rubrik{Klassificering}
+\begin{tabular}{@{}p{52mm}@{\qquad}l}
+\rad{Träffsäkerhet (accuracy)}{\frac{\mathrm{TP}+\mathrm{TN}}{\mathrm{TP}+\mathrm{TN}+\mathrm{FP}+\mathrm{FN}}}
+\rad{Precision}{\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}}}
+\rad{Recall}{\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}}}
+\end{tabular}
+
+\begin{tabular}{@{}l@{\qquad}ll}
+ & Förutsagt positiv & Förutsagt negativ \\
+Verkligt positiv & TP (sant positiv) & FN (falskt negativ) \\
+Verkligt negativ & FP (falskt positiv) & TN (sant negativ)
+\end{tabular}
+
+\rubrik{Sökning och spelträd}
+\begin{tabular}{@{}p{52mm}@{\qquad}l}
+\rad{Manhattanavstånd till målet}{h(n)=|x_n-x_{\text{mål}}|+|y_n-y_{\text{mål}}|}
+\rad{A*}{f(n)=g(n)+h(n)}
+\rad{Minimax}{V_{\mathrm{MAX}}=\max_i V_i,\qquad V_{\mathrm{MIN}}=\min_i V_i}
+\rad{Alfa–beta, beskärning}{\alpha\geq\beta}
+\end{tabular}
+\rubrik{Regression och gradientnedstigning}
+\begin{tabular}{@{}p{52mm}@{\qquad}l}
+\rad{Linjär modell}{\hat y=kx+m}
+\rad{Fel}{e_i=y_i-\hat y_i}
+\rad{Medelkvadratfel}{\mathrm{MSE}=\frac{1}{N}\sum_{i=1}^{N}(y_i-\hat y_i)^2}
+\rad{Viktuppdatering}{w_{\mathrm{ny}}=w-\alpha\,\frac{\partial L}{\partial w}}
+\end{tabular}
+\rubrik{Grannar, kluster och neuroner}
+\begin{tabular}{@{}p{52mm}@{\qquad}l}
+\rad{Kvadrerat avstånd}{d^2=(x_2-x_1)^2+(y_2-y_1)^2}
+\rad{Klustercentrum}{(\bar x,\bar y)=\left(\frac{1}{N}\sum_{i=1}^{N}x_i,\;\frac{1}{N}\sum_{i=1}^{N}y_i\right)}
+\rad{Viktad summa}{z=\sum_{i=1}^{n}w_ix_i+b}
+\rad{Stegfunktion och ReLU}{s(z)=\begin{cases}1,&z\ge0\\0,&z<0\end{cases}\qquad \mathrm{ReLU}(z)=\max(0,z)}
+\end{tabular}
+\end{document}

@@ -36,7 +36,7 @@ test('sju nya E-uppgifter (2.47–2.53) i Kunskapsgymmets format med kontrollera
  // 2.48, 2.51 och 2.53 byggdes om med väggar 2026-11-26; deras svar räknas om ur figuren i ai-labyrinter-2026-11-26.test.js.
  const want={'2.47':['B3',3],'2.48':null,'2.49':[5,2],'2.50':[4,11],'2.51':null,'2.52':[7,'S → A → M',6],'2.53':null};
  for(const[id,w]of Object.entries(want)){const u=q(id);a.ok(u,id);if(w)a.equal(JSON.stringify(u.rättSvar),JSON.stringify(w),id);a.equal(u.spel,true);a.equal(u.svarstyp,'flera_delar');
-  a.equal(u.niva,'E',id);for(const d of u.spelDelar){a.equal(d.niva,'E');a.ok(d.traningsniva<=2);a.equal(d['självrättning'],true);}}
+  const terräng=id==='2.53';a.equal(u.niva,terräng?'C':'E',id);for(const d of u.spelDelar){a.equal(d.niva,terräng?'C':'E');a.ok(terräng?d.traningsniva===3:d.traningsniva<=2);a.equal(d['självrättning'],true);}}
  const man=(x,y)=>Math.abs(x[0]-y[0])+Math.abs(x[1]-y[1]);
  a.deepEqual([[0,1],[1,2],[1,0]].map(c=>1+man(c,[2,3])),[5,3,5]);a.equal(man([0,1],[0,3]),2);a.equal(man([1,0],[0,3]),4);
  a.deepEqual([man([0,2],[3,4]),man([2,3],[3,4])],[5,2]);a.equal(7+man([0,3],[3,4]),11);a.equal(3+man([1,2],[2,3]),5);

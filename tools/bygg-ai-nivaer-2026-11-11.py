@@ -18,6 +18,8 @@ Regler i korthet:
 import json
 import re
 
+from ai_bankredigering import revise, weighted
+
 BANK = 'uppgifterai.js'
 POANG = {'E': '1/0/0', 'C': '0/1/0', 'A': '0/0/1'}
 RANK = {'E': 0, 'C': 1, 'A': 2}
@@ -125,8 +127,12 @@ def main():
     bank = json.loads(src[i:j + 1])
     used = set()
     for u in bank:
+        revise(u)
+        viktade_rutor = weighted(u)
         for d in u['spelDelar']:
             niva, tn = klass(u, d)
+            if viktade_rutor and tn < 3:
+                niva, tn = 'C', 3
             used.add(u['id'] + d['etikett'])
             d['niva'], d['traningsniva'], d['poang'] = niva, tn, POANG[niva]
         nivaer = [d['niva'] for d in u['spelDelar']]

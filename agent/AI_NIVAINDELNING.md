@@ -115,3 +115,5 @@ ger E, 3 ger C och 5 ger A. E betyder ett steg med given formel, till exempel en
 en viktad summa. C betyder flera steg, val av mått eller modell utifrån följderna, eller en förklaring.
 A betyder att generalisera, till exempel FP = FN när precision = recall eller 0 < α < 1. Se
 AI_MASKININLARNING_2026-11-12.md.
+
+**Lärarbeslut 2026-11-27.** Om labyrinten innehåller viktade rutor har alla dess delkort lägst träningsnivå 3 (C), även vid avläsning av h(n). Högre nivåer behålls.

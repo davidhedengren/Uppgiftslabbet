@@ -48,7 +48,7 @@ test('Uppgiftslabbets text och facit är orörda: inga svarsinstruktioner eller 
  for(const id of GAMLA){const u=q(id);
   a.doesNotMatch(u.t,instr,id);a.doesNotMatch(u.s,instr,id);a.doesNotMatch(u.spelIntro,instr,id);
   for(const d of u.spelDelar){
-   const fraga=d.fraga.replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.includes(id+d.etikett)?' Välj ett alternativ.':'\u0000','');
+   const fraga=d.fraga.replace(' (h(n) är Manhattanavståndet till målet)','').replace(/ \([^)]*\)(?=<\/p>)/,'').replace(KG_FLERVAL.includes(id+d.etikett)?' Välj ett alternativ.':'\u0000','');
    a.ok(strip(u.t).includes(strip(fraga).replace(/ Fyll i[\s\S]*$/,'').slice(0,40)),id+d.etikett);
   }}
  for(const k of KG_FLERVAL){const d=del(k),u=q(k.slice(0,-1));

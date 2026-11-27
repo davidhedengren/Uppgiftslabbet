@@ -60,7 +60,7 @@ test('mängdträningen: 44 uppgifter, självrättande, rätt delmoment och mest 
   a.doesNotMatch(u.t,/\((Skriv|Svara)[^)]*\)/,id);a.match(u.t,/<svg|Stegen:/,id);
   u.spelDelar.forEach((d,i)=>{a.equal(JSON.stringify(u.rättSvar[i]),JSON.stringify(d.rättSvar));a.match(d.s,/facit-rubrik/);
    for(const x of d.alternativ||[]){a.ok(x.kommentar.length>15,id+x.txt);a.doesNotMatch(x.txt,/^[A-Z]$/,id);}});}
- const parts=NYA.flatMap(id=>q(id).spelDelar);a.ok(parts.filter(d=>d.niva==='E').length/parts.length>=0.85);
+ const parts=NYA.map(q).filter(u=>!/<rect[^>]+fill="#(?:d6b98c|c4d7ef|f4ba88)"/.test(u.spelIntro)).flatMap(u=>u.spelDelar);a.ok(parts.filter(d=>d.niva==='E').length/parts.length>=0.85);
 });
 
 test('köer, stackar och prioritetsköer räknas om ur texten',()=>{

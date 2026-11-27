@@ -86,7 +86,10 @@ test('nivåbalansen räcker för prov och för nya elever i Kunskapsgymmet',()=>
  a.ok(bank.filter(u=>u.omr!=='alfa_beta').flatMap(u=>u.spelDelar).filter(d=>d.niva==='A').length>=8,'A-delkort utanför alfa–beta');
  a.ok(bank.filter(u=>u.omr==='alfa_beta'&&u.niva==='E').length>=4,'hela E-uppgifter i alfa–beta');
  a.ok(delar('dfs').filter(d=>d.traningsniva===1).length>=20,'DFS nivå 1');a.ok(delar('astar_sokning').filter(d=>d.traningsniva===1).length>=28,'A* nivå 1');
- a.ok(delar('viktade_vagar').filter(d=>d.traningsniva<=2).length>=50,'viktade vägar nivå 1–2');
+ const viktade=bank.filter(u=>/<rect[^>]+fill="#(?:d6b98c|c4d7ef|f4ba88)"/.test(u.spelIntro));
+ a.ok(viktade.length>=30);
+ for(const u of viktade)a.ok([u,...u.spelDelar].every(d=>d.traningsniva>=3),u.id);
+ a.ok(delar('viktade_vagar').filter(d=>d.traningsniva<=2).length>=24,'enkla vägar i grafer');
 });
 
 test('validatorn hittar inget nytt',()=>{const r=require('./granska-uppgifter.js').granskaProjekt(process.cwd()).resultat.find(x=>x.fil==='uppgifterai.js');
