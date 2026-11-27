@@ -3894,3 +3894,26 @@ kunskapsgymmet även om man använder fler eller färre decimaler (så länge de
 Bedöm strategivalet i den konkreta frågan på kursens nivå. En given ekvation med parentesprodukter, standardberäkning av en tangent i en given punkt eller direkt integrering av ett givet positivt flöde kan kräva flera steg och ändå vara en rutinuppgift. Behåll problemlösning när eleven exempelvis själv måste finna en geometrisk konstruktion eller kombinera villkor för att hitta en framkomlig väg. Samtliga bedömda ID:n finns i [förmågegranskningen](MATEMATIK_FORMAGOR_2026-11-24.md).
 
 För de sex matematiska förmågorna och separat K-poäng, följ [förmågoreglerna](PEDAGOGISKA_REGLER.md#förmågor-och-provpoäng-i-matematik). Beslut per uppgift finns i [andra granskningsomgången](MATEMATIK_FORMAGOR_2026-11-24.md#andra-omgången).
+
+## Fy1: `svarVardesiffror` efter givna värden, inte efter facits decimaler, 2026-11-27
+
+[Felrapport 2026-11-27 08:09](FELRAPPORTER_2026-11-27_0809.md), Fy1 4.271 b: ”Lite väl många värdesiffror krävs.”
+
+- `svarVardesiffror` ska följa de minst noggranna givna värden som behövs, inte antalet siffror i facits svarsrad.
+  Svarsrader med två decimaler (122,75 N) hade gett 5–7 värdesiffror i 60 Fy1-uppgifter. Värdet har nu satts per
+  uppgift efter de givna värdena (`tools/felrapporter-2026-11-27-0809.py`).
+- Absoluttryck (lufttryck plus vätsketryck) får 4, så att bara lufttrycket (≈ 100 kPa) inte godtas med en
+  värdesiffra.
+- 5 eller fler behålls bara när data eller omvandlingen kräver det: °C och K (6.38, 6.138, 7.31), atommassor
+  (9.389–9.572), fyrsiffriga data (6.505 a, 5.470 a, 6.152 b).
+- Facit och `rättSvar` (oavrundat) är oförändrade. Det följer beslutet 2026-11-24 om facits värdesiffror ovan, och
+  de äldre testerna kräver att svarsraden visar `rättSvar`.
+- Testet `tools/felrapporter-2026-11-27-0809.test.js` stoppar nya Fy1-uppgifter med 5–7 värdesiffror utanför
+  undantagen.
+
+## Grafer: talen på axlarna står intill axlarna, 2026-11-27
+
+Lärare om Ma3c 1.904: ”Graderingen på axlarna ska sitta jämte axeln.” När koordinataxlarna går genom rutan ska
+x-talen stå under x-axeln och y-talen till vänster om y-axeln, inte vid en ram. Nollan skrivs en gång vid origo, och
+axlarna har pilspets. Ma3c-generatorns 15 grafer är omgjorda (`tools/mato1-axelgradering-2026-11-27.py`). Rita nya
+grafer så.
