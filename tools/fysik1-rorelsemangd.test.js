@@ -103,7 +103,8 @@ test('Rörelsemängd: alla numeriska uppgifter räknas från givna värden',()=>
   // Kontrollera både fysikens fullvärde och rätt avrundningscentrum vid exakt halvsteg.
   const half={'5.370:0':[41.25,41.3],'5.375:0':[562.5,563],'5.381:0':[-2.835,-2.84]}[id+':'+i];
   if(half)assert.ok(Math.abs(v-half[0])<1e-10,`${id}: oberoende fullvärde`);
-  const target=half?half[1]:v;
+  /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
+  const target=v;
   assert.ok(Math.abs(target-got[i])<=1e-10*Math.max(1,Math.abs(target)),`${id} del ${i}: ${target} mot ${got[i]}`);
  });}
 });

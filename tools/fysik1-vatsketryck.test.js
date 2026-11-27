@@ -94,7 +94,8 @@ test('Vätsketryck: självrättningens svar följer 80 oberoende fysikmodeller',
  const vs=Array.isArray(t.rättSvar)?t.rättSvar:[t.rättSvar];assert.equal(vs.length,xs.length,id);
  xs.forEach((v,i)=>{
   let target=v;
-  if(id==='6.457'&&i===1){assert.ok(Math.abs(v-245.5)<1e-10);target=246;}
+  /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
+  if(id==='6.457'&&i===1)assert.ok(Math.abs(v-245.5)<1e-10);
   assert.ok(Math.abs(target-vs[i])<=1e-12*Math.max(Math.abs(target),1e-12),id+' del '+i+' '+vs[i]+' / '+target);fields++;
  });}
  assert.equal(fields,124);

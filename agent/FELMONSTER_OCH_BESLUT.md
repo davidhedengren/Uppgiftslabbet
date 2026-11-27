@@ -3934,3 +3934,15 @@ IBM Plex Mono, klipptes därför etiketter av i 64 figurer. Ramarna är nu vidga
   eller en vit kopia under texten). Krockkontrollen räknar dem som läsbara.
 - En inledning i plural är rätt i deluppgifter som visas i kedjan. Bara fristående delkort (`kgFristaendeDelar`) visar en
   enda deluppgift.
+
+
+## FP30 ersatt: fullvärdet i rättSvar vid exakta halvsteg (2026-11-27)
+
+FP30 (2026-10-11) lagrade det rätt avrundade grannvärdet (4810 för 4805) med en tolerans som godtog fullvärdet.
+Sedan dess rättar Kunskapsgymmet fysik med `svarVardesiffror`, som inte använder `tolerans`. Ett heltal i `rättSvar`
+behandlas då som exakt, och ett avrundat decimaltal jämförs strikt på sin egen precision. Fullvärdet 4805, 245,5 och
+0,5625 underkändes alltså. Användarbeslutet 2026-11-24 säger dessutom att ett exakt halvsteg får avrundas åt båda
+hållen. Därför lagras nu fullvärdet i `rättSvar`, som Kunskapsgymmet förutsätter (”rättSvar lagras oavrundat”).
+Facit visar fortfarande det avrundade svaret. Samma fel fanns i Fy1 kap 5 utanför FP30 (3.370 a, 5.142, 5.272). Se
+`agent/FY1_GRANSKNING_2026-11-27.md` och `tools/fy1-granskning-kap5-2026-11-27.py`. Skydd: de sex uppdaterade testerna
+som listas där. Återinför inte avrundade grannvärden i `rättSvar` för fysik med `svarVardesiffror`.

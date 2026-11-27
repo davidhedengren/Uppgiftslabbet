@@ -23,9 +23,9 @@ test('5.55: gram till kilogram och energier stämmer; tidigare rättning bevaras
  const t=fy('5.55');close(t.rättSvar[0],25/1000);close(t.rättSvar[1],.025*62**2/2);close(t.rättSvar[2],.025*124**2/2);
  assert.equal(t.spelDelar[0].traningsniva,1);assert.match(t.spelDelar[0].t,/25 g/);assert.doesNotMatch(t.spelDelar[0].t,/62 m\/s/);
 });
-test('Exakt halvavrundning i 5.514 d godtar 4810, full precision och avvisar 4800',()=>{
- const t=fy('5.514'),raw=(.015*310**2/2)/.15;assert.equal(raw,4805);assert.equal(t.rättSvar[3],4810);
- assert.ok(Math.abs(raw-t.rättSvar[3])<=t.tolerans[3]);assert.ok(Math.abs(4800-t.rättSvar[3])>t.tolerans[3]);
+test('Exakt halvsteg i 5.514 d lagras oavrundat (4805), facit visar 4810',()=>{
+ /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
+ const t=fy('5.514'),raw=(.015*310**2/2)/.15;assert.equal(raw,4805);assert.equal(t.rättSvar[3],4805);
  assert.match(t.spelDelar[3].s,/4810/);
 });
 test('Proportionalitetsanalogier har korrekta svar och rimlig rutinnivå',()=>{
@@ -34,14 +34,15 @@ test('Proportionalitetsanalogier har korrekta svar och rimlig rutinnivå',()=>{
  }
  assert.match(ma('0.991').t,/två decimaler/);
 });
-test('Halvavrundningar: rätt avrundat värde och full precision, inte andra grannvärdet',()=>{
+test('Halvsteg: rättSvar är fullvärdet, som inte ligger på något grannvärde',()=>{
+ /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
  const cases=[['5.72',0,25*g,246,245],['5.270',0,.260*2.25*30,17.6,17.5],['5.160',3,(3*2.5-4*1.5+3)/4,1.13,1.12],
  ['5.370',0,5500*3/400,41.3,41.2],['5.375',0,.045*25/.002,563,562],['5.381',0,.35*(-3.1-5),-2.84,-2.83],
  ['5.209',2,15*g*5,737,736],['5.578',0,((96000+60000)/(72/3.6)-1500*(.2+.3))/2,3530,3520],
  ['5.505',2,305/4,76.3,76.2],['5.509',1,57*(7**2-6**2)/2,371,370],['5.514',3,(.015*310**2/2)/.15,4810,4800],
  ['6.457',1,.1*g/.004,246,245],['5.529',1,85*5*.5,213,212],['5.533',0,.030*.25*g,.0737,.0736],
  ['5.418',1,.25*.79**2/2-.25*.12**2/2-.35*.65**2/2,.00228,.00227],['5.440',2,.0225*(30-23)/.2,.788,.787]];
- for(const[id,i,raw,rounded,wrong]of cases){const t=fy(id),target=Array.isArray(t.rättSvar)?t.rättSvar[i]:t.rättSvar,tol=Array.isArray(t.tolerans)?t.tolerans[i]:t.tolerans;
-  assert.equal(target,rounded,id);assert.ok(Math.abs(target-raw)<=tol+1e-10,id);assert.ok(Math.abs(target-wrong)>tol+1e-10,id);
+ for(const[id,i,raw,rounded,wrong]of cases){const t=fy(id),target=Array.isArray(t.rättSvar)?t.rättSvar[i]:t.rättSvar;
+  assert.ok(Math.abs(target-raw)<=1e-9*Math.max(1,Math.abs(raw)),id);assert.notEqual(target,rounded,id);assert.notEqual(target,wrong,id);
  }
 });

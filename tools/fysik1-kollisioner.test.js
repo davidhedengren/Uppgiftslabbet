@@ -113,7 +113,8 @@ test('Kollisioner: alla numeriska uppgifter räknas från givna värden',()=>{
   // Exakta halvsteg: maskinmålet är rätt avrundat grannvärde, med fullvärdet på toleransgränsen.
   const half={'5.160:3':[1.125,1.13],'5.418:1':[.002275,.00228],'5.440:2':[.7875,.788]}[id+':'+i];
   if(half)assert.ok(Math.abs(v-half[0])<1e-12,`${id}: oberoende fullvärde`);
-  const target=half?half[1]:v;
+  /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
+  const target=v;
   assert.ok(Math.abs(target-got[i])<=1e-10*Math.max(1,Math.abs(target)),`${id} del ${i}: ${target} mot ${got[i]}`);
  });}
 });

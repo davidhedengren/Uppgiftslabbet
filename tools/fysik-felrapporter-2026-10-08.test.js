@@ -2,7 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../uppgifter.js'),'utf8'),c);const get=id=>c.window.BANK.find(q=>q.id===id);
 test('Massan ur rörelseenergin godtar två värdesiffror och avvisar nästa heltal',()=>{
  const q=get('5.142'),m=2*1900/6.8**2;
- assert.equal(q.rättSvar,82);assert.ok(Math.abs(m-q.rättSvar)<q.tolerans);assert.ok(Math.abs(83-q.rättSvar)>q.tolerans);
+ /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */assert.ok(Math.abs(q.rättSvar-m)<1e-9);assert.ok(Math.abs(m-q.rättSvar)<q.tolerans);assert.ok(Math.abs(83-q.rättSvar)>q.tolerans);
  assert.equal(q.svarVardesiffror,2);assert.match(q.s,/82 kg/);
 });
 test('Arbetet av en sned kraft avrundas konsekvent i text, facit och maskinsvar',()=>{

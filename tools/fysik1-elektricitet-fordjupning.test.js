@@ -9,7 +9,7 @@ function expected(m){switch(m.type){
  case'vector_force':{const qt=m.charges[0],components=[0,0];for(let i=1;i<m.charges.length;i++){const [x,y]=m.positions[i],r=Math.hypot(x,y);components[0]-=m.k*qt*m.charges[i]*x/r**3;components[1]-=m.k*qt*m.charges[i]*y/r**3;}return[Math.hypot(...components)*1e6,Math.atan2(components[1],components[0])*180/Math.PI];}
  case'ground_order':return null;
  case'cavity_ground':return -m.insideCharge*1e9;
- case'contact_force_ratio':{const shared=(m.charges[0]+m.charges[1])/2,ratio=shared**2/Math.abs(m.charges[0]*m.charges[1]);return Math.round(ratio*1000)/1000;}
+ case'contact_force_ratio':{const shared=(m.charges[0]+m.charges[1])/2,ratio=shared**2/Math.abs(m.charges[0]*m.charges[1]);return ratio;} /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
  case'switch_inference':{const U=m.currents[0]*(m.seriesR+m.knownR),parallel=U/m.currents[1]-m.seriesR;return[U,1/(1/parallel-1/m.knownR)];}
  case'battery_inference':{const I=m.terminalVoltages.map((u,i)=>u/m.loads[i]),r=(m.terminalVoltages[0]-m.terminalVoltages[1])/(I[1]-I[0]);return[m.terminalVoltages[0]+I[0]*r,r];}
  case'meter_loading':{const parallel=1/(1/m.loadR+1/m.meterR),I=m.sourceU/(m.seriesR+parallel);return[I*parallel,I*1000];}
@@ -36,8 +36,9 @@ test('Batteri, strömfördelning, effekt och balans reproducerar givna mätvärd
  const wire=models.find(x=>x.type==='wire_design'),[wireVoltage,eta]=expected(wire),I=Math.sqrt(wire.desiredPower/wire.heaterR);close(wire.desiredPower+I*I*wire.wireRs.reduce((a,b)=>a+b),wireVoltage*I);assert.ok(eta<100);
  const bridge=models.find(x=>x.type==='balanced_bridge'),[Rx]=expected(bridge);close(bridge.sourceU*bridge.leftRs[1]/(bridge.leftRs[0]+bridge.leftRs[1]),bridge.sourceU*bridge.rightLowerR/(Rx+bridge.rightLowerR));
 });
-test('Exact half-rounding has a reviewed centre; lower rounded neighbour is rejected',()=>{
- const q=get('8.523');assert.equal((8-2)**2/4/(8*2),.5625);assert.equal(q.rättSvar,.563);assert.equal(q.tolerans,.0005);assert.ok(Math.abs(.5625-q.rättSvar)<q.tolerans+1e-12);assert.ok(Math.abs(.562-q.rättSvar)>q.tolerans);
+test('Exakt halvsteg i 8.523 lagras oavrundat',()=>{
+ /* 2026-11-27: rättSvar lagras oavrundat. Vid exakta halvsteg godtar Kunskapsgymmets värdesifferrättning båda grannarna (användarbeslut 2026-11-24), och ett lagrat grannvärde underkände fullvärdet. Ersätter FP30:s grannvärdescentrum (agent/FY1_GRANSKNING_2026-11-27.md). */
+ const q=get('8.523');assert.equal((8-2)**2/4/(8*2),.5625);assert.equal(q.rättSvar,.5625);
 });
 // FACITMALL.md 2026-11-04 replaces the older prohibition on numbered solutions.
 test('Alla nya kort har egen figur, efterfrågade enheter, nivå och fullständigt facit',()=>{

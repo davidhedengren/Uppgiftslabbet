@@ -137,3 +137,34 @@ lutande plan, moment och newton2 med skript. Alla stämmer. Ändringar i 83 uppg
 - **”krafterna på föremålet” → det namngivna föremålet:** 4.400–4.402, 4.404, 4.406, 4.408 och 4.421.
 - **”elevens påstående” → ”Ines påstående”:** 4.21.
 - **”Antag” → ”Anta”:** 20 uppgifter.
+
+### Kapitel 5 Energi och rörelsemängd (klart) – `tools/fy1-granskning-kap5-2026-11-27.py`
+
+Arbete, rörelseenergi, effekt, rörelsemängd, kollisioner och blandat energi är lästa. Alla svar som går att räkna fram
+utan figur är kontrollräknade med skript, och alla stämmer. Ändringar i 37 uppgifter:
+
+- **Rättningsfel: avrundat `rättSvar` underkände det exakta svaret.** I Kunskapsgymmet prövat med
+  `kg-sjalvrattning-kontroll.cjs`: 736,5 J, 82,2 kg, 4805 N och 76,25 J underkändes.
+  - Orsaken är tvådelad. Ett heltal i `rättSvar` (737, 82, 371, 4810, 402, 563, 246, 213, 3530, 12 200 000)
+    behandlas som exakt. Ett decimaltal som ligger exakt ett halvt steg från fullvärdet (76,3, 17,6, 41,3, −2,84,
+    1,13, 0,00228, 0,788, 0,0737, 0,563) jämförs strikt.
+  - Nu lagras fullvärdet: 3.370 a, 5.142, 5.160 d, 5.209 c, 5.270, 5.272, 5.370 a, 5.375, 5.381 a, 5.418 b,
+    5.440 c, 5.505 c, 5.509 b, 5.514 d, 5.72 a, 5.529 b, 5.533 a, 5.578 a, 6.457 b och 8.523.
+  - Kontrollen visar att fullvärdet, båda grannarna vid halvsteg och det rekommenderade antalet siffror godtas. Fel
+    grannvärden underkänns fortfarande. Facit (`s`) är oförändrade.
+- **Beslutsändring (FP30, 2026-10-11):** FP30 lagrade vid exakta halvsteg det rätt avrundade grannvärdet med en
+  tolerans som godtog fullvärdet och avvisade den andra grannen.
+  - Sedan dess rättar Kunskapsgymmet fysik med `svarVardesiffror` utan toleransen. Användarbeslutet 2026-11-24 säger
+    dessutom att ett exakt halvsteg får avrundas åt båda hållen.
+  - Med FP30:s lagring underkändes därför fullvärdet, vilket är tvärtemot FP30:s eget syfte.
+  - FP30:s 16 fall och 8.523 lagras nu oavrundat. Testerna `felrapporter-2026-10-11-1902`,
+    `fysik-felrapporter-2026-10-08`, `fysik1-kollisioner`, `fysik1-rorelsemangd`, `fysik1-vatsketryck` och
+    `fysik1-elektricitet-fordjupning` är uppdaterade med denna motivering.
+- **Text:**
+  - 2.29 e: ”Ange energin i joule.” bort.
+  - 5.150: ”Moa använder sin θ = 0,060” kunde läsas som ett possessivt ”sin”. Nu står ”Moa räknar med att
+    \(\sin\theta=0{,}060\)”.
+  - 5.16 b: protonens massa flyttad till `kgInstruktion`.
+  - ”Antag” → ”Anta” i 14 uppgifter.
+- **Står kvar:** luftens densitet i 5.22 och 5.554 (gas), avloppsvattnets densitet i 5.594 och bensinens data i
+  5.599 (uppgiftens egna material).
