@@ -118,3 +118,15 @@ Stilguiden säger att ”kropp” och ”objekt” ska undvikas. 33 uppgifter (s
 - 2.195: ”En annan klotformad himlakropp”.
 Människokroppen i medicin, energi och strålskydd (”inne i kroppen”, ”kroppen använder kemisk energi”) och
 densitetsmätarens ”nedre kropp” (6.80) står kvar.
+
+## Omgång 4: ”till vila”, dubbelord och konstigt.py
+
+- ”till vila” → ”till stillastående” som i lärarens prov (”En bil bromsar från 25 m/s till stillastående …”), 28
+  uppgifter (steget `vila`); ”och kommer till vila” → ”och stannar”, ”fram till vila” → ”tills den står stilla”.
+  ”i vila” och ”från vila” finns i lärarens eget material och står kvar, liksom facitrubriken ”Lyft från vila till
+  vila”.
+- Dubbelord: 5.583 ”Sedan håller den den farten” → ”Sedan behåller vagnen den farten”, 5.584 ”håller den den
+  konstanta farten” → ”håller lastbilen den konstanta farten”.
+- `tools/sprak/konstigt.py fy1` i övrigt: uppmaningar som ”Omvandla”, ”Avrunda”, ”Frilägg” och ”Komplettera” är
+  riktiga frågor; komposanter med negativt tecken följer figurens axlar; negativt arbete för broms- och
+  friktionskrafter är avsiktligt; rita-uppgifterna (3.32, 5.58) ber eleven rita själv. Inget ändrat.

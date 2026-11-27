@@ -220,6 +220,21 @@ def r_2_195(u):
     _byt_lista(u, [('En annan klotformad kropp', 'En annan klotformad himlakropp')])
 
 
+def r_dubbelord(u):
+    _byt_lista(u, [('Sedan håller den den farten tills', 'Sedan behåller vagnen den farten tills'),
+                   ('På plan väg håller den den konstanta farten', 'På plan väg håller lastbilen den konstanta farten')])
+
+
+def v_vila(u):
+    """”till vila” → ”till stillastående” som i lärarens prov (”En bil bromsar från 25 m/s till stillastående”).
+    ”i vila” och ”från vila” finns i lärarens material och står kvar, liksom facitrubriken ”från vila till vila”."""
+    s = json.dumps(u, ensure_ascii=False)
+    ny = s.replace('och kommer till vila', 'och stannar').replace('fram till vila', 'tills den står stilla')
+    ny = re.sub(r'(?<!från vila) till vila\b', ' till stillastående', ny)
+    if ny != s:
+        u.clear(); u.update(json.loads(ny))
+
+
 RAPPORTER = {'2.110': r_2_110, '2.84': r_2_84, '2.82': r_2_82, '2.55': r_2_55, '2.52': r_2_52, '3.72': r_3_72,
              '3.234': r_3_234, '2.318': rullband}
 
@@ -769,9 +784,15 @@ def t_kg_tillbaka(u):
     # Meningar som ett tidigare körning av steget har skapat (formen ”Blyets densitet är 11,3 g/cm³.”) tas bort först
     # om de inte stod ordagrant i den gamla instruktionen; sedan läggs värdena till på nytt. Steget blir idempotent.
     def rensa_genererade(obj, kalla):
+        # Bara dubbletter tas bort: en genererad mening vars värde också står i en annan mening i samma
+        # instruktion. Andra meningar kan vara skrivna för hand (även i andra sessioner) och står kvar.
         kg = obj.get('kgInstruktion')
         if kg:
-            ny = GEN_MENING.sub(lambda m: m.group(0) if m.group(0).strip() in (kalla or '') else '', kg).strip()
+            def beh(m):
+                men = m.group(0)
+                rest = kg.replace(men, '', 1)
+                return '' if _har_alla_varden(rest, men) else men
+            ny = GEN_MENING.sub(beh, kg).strip()
             if ny:
                 obj['kgInstruktion'] = ny
             else:
@@ -877,7 +898,7 @@ class AllaUppgifter(dict):
 KROPP_IDS_F = ('4.357 4.33 4.84 4.89 4.101 4.409 4.175 4.303 4.216 6.321 6.327 6.328 6.114 6.283 6.315 6.319 6.311 '
                '6.313 6.324 6.317 6.359 6.361').split()
 KROPP_IDS_P = '9.44 9.97 9.152 9.173 9.362 9.368 9.379 9.381 9.386 9.387'.split()
-STEG = {'kropp': {**{i: r_kropp_foremal for i in KROPP_IDS_F}, **{i: r_kropp_person for i in KROPP_IDS_P}, '2.195': r_2_195},
+STEG = {'dubbelord': {'5.583': r_dubbelord, '5.584': r_dubbelord}, 'vila': 'alla:v_vila', 'kropp': {**{i: r_kropp_foremal for i in KROPP_IDS_F}, **{i: r_kropp_person for i in KROPP_IDS_P}, '2.195': r_2_195},
         'grammatik': {'7.149': r_7_149, '6.454': r_6_454, '2.379': r_2_379, '7.117': r_7_117, '9.216': r_9_216, **{i: r_metatext for i in ('6.190', '2.46')}}, 'rapporter': RAPPORTER, 'densitet': 'alla:d_densitet', 'kedja': 'alla:k_kedja', 'aterstall': {'3.73': a_aterstall, '3.93': a_aterstall}, 'kg_tillbaka': 'alla:t_kg_tillbaka', 'tabell': 'alla:m_tabell', 'figur': {'4.251': f_figur, '3.311': f_figur, '4.245': f_figur}}
 
 
