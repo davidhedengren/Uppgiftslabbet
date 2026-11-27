@@ -14,7 +14,7 @@ test('Båda fysikbankernas frågor och delkort saknar standardkonstanter och fä
 test('Givna modellvärden, riktningar, sträckor och experimentdata finns kvar',()=>{
  assert.match(q('4.323').t,/k = 80 N\/m/);assert.match(q('4.350').t,/g = 5,7/);
  assert.match(q('4.53').kgInstruktion,/Uppåt räknas som positiv riktning/);assert.match(q('4.392').kgInstruktion,/Nedför planet räknas som positiv/);/* språkomskrivningen 2026-11-17: riktningen står i kgInstruktion */
- assert.match(q('4.378').t,/6370 km/);assert.match(q('4.9').t,/4,0 · 10²⁴ kg/);
+ assert.match(q('4.378').kgInstruktion,/6 370 km/);/* 2026-11-27: jordradien är ett tabellvärde och står bara i kgInstruktion; svaret rättas mot samma radie (agent/FY1_GRANSKNING_2026-11-27.md) */assert.match(q('4.9').t,/4,0 · 10²⁴ kg/);
  assert.match(q('4.19').t,/Bortse från energiförluster/);
  assert.match(q('9.71').t,/2,014102 u/);assert.match(q('9.71').t,/4,002603 u/);
  assert.match(q('4.368').t,/En elev skriver g = 9,82/); // själva felsökningsexemplet, inte en ledning

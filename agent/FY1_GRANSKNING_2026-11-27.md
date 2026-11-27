@@ -98,3 +98,42 @@ kontrollräknade (svar som bara kan läsas av i en figur är inte omräknade). A
 - **Namn i stället för ”eleven”:** 3.38, 3.253, 3.439. **Minustecken:** 3.197, 3.198. **”Antag” → ”Anta”:** 18 uppgifter.
 - **Tester:** `fysik1-kap3-figurer-2026-11-19` väntar nu figuren på alla delkort i 3.387. `felrapporter-2026-10-14-1634`
   går igenom ("Den andra bilen" i stället för "En annan bil").
+
+### Kapitel 4 Krafter (klart) – `tools/fy1-granskning-kap4-2026-11-27.py`
+
+Alla tolv områden är lästa: tyngdkraft, newton1, normalkraft, newton3, fjädrar, friktion, gravitation, blandat_kraft,
+lutande_plan, moment, kraftvektorer och newton2. Alla svar som går att räkna fram utan figur är kontrollräknade, i
+lutande plan, moment och newton2 med skript. Alla stämmer. Ändringar i 83 uppgifter:
+
+- **Data saknades i huvudtexten:**
+  - 4.207 c: fjäderkonstanten 25 N/m fanns bara i delkortet.
+  - 4.749 b: stenen 1,0 m över marken fanns bara i delkortet.
+- **Felaktiga eller otydliga delkort:**
+  - 4.102 b hade 82 N i stället för 75 N och är nu en kedja.
+  - 4.206 c upprepade en mening.
+  - 4.635 skrev ”backen” om två backar. Nu står ”den första backen” och ”backen som lutar 20°”. Testet från
+    2026-10-08 förbjuder ”andra backen” i b.
+  - 4.149 sa både ”ger glidfriktion” och ”bortse från friktionen”. Nu står ”friktionen i trissan”.
+- **Tabellvärden och konstanter till `kgInstruktion`:**
+  - jordens radie och massa: 4.74, 4.186, 4.362, 4.374, 4.378, 4.739–4.741, 4.743, 4.748
+  - g på månen och Mars: 4.840, 4.883, 4.885, 4.886, 4.888, 4.890
+  - jordradien i 4.882 och himlakropparnas data i 4.22
+  - protonens och elektronens massa: 4.736 b, 4.689 a
+  - densiteterna i 4.523 och 4.524
+  - Saknade tabellvärden har lagts till i `kgInstruktion`: Venus g (4.24), månens g (4.273, 4.812) och vattnets
+    densitet (4.899).
+  - 4.368 behåller 6370 km, eftersom elevens felräkning använder talet.
+  - 4.378 hade enligt beslutet 2026-10-12 radien kvar för sitt tvådecimalssvar. Nu står radien i `kgInstruktion`
+    (beslut 2026-11-27), så Kunskapsgymmet rättar fortfarande mot samma radie. Testet `fysik-formelsamling` är
+    uppdaterat.
+- **Modelljargong och metatext bort:**
+  - ”Himlakroppen modelleras som sfäriskt symmetrisk.” och liknande. Kvar står ”Bortse från jordens rotation.” eller
+    motsvarande.
+  - ”Samma jordmodell gäller i alla delar.”, ”De behåller sin form.”, ”Bortse från luftens lyftkraft.” och ”Bortse
+    från variationen i g med höjden.”
+  - Metodtipset ”Skriv krafterna på vektorform och addera dem. Tänk på tecknen.” i 3.334–3.337 och 3.341–3.344.
+  - Det allmänna villkoret i 4.297 och ”Bestäm värdena på grafens raka delar.” i 4.157.
+- **Underförstådda enheter bort:** ”i N” och ”i m/s²” i 4.245, 4.281, 4.578–4.580, 4.585 och 4.594.
+- **”krafterna på föremålet” → det namngivna föremålet:** 4.400–4.402, 4.404, 4.406, 4.408 och 4.421.
+- **”elevens påstående” → ”Ines påstående”:** 4.21.
+- **”Antag” → ”Anta”:** 20 uppgifter.
