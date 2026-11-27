@@ -106,4 +106,4 @@ flervalsstammen ”Två isotoper av samma grundämne skiljer sig åt i...” →
 
 Metatext: ”med ett digitalt verktyg” → ”med GeoGebra” i 6.190 och 2.46 (båda har `geogebra: true`). Rubriken
 ”Fördjupning: …” i 8.294 och 8.439–8.444 står kvar trots stilguiden, eftersom fellogg 2026-11-11 uttryckligen
-märker dem som fördjupning (`fellogg-fy1-2026-11-11.test.js`); fråga användaren om de ska bort.
+märker dem som fördjupning (`fellogg-fy1-2026-11-11.test.js`). Användaren 2026-11-27: rubriken behålls, eftersom den förklarar varför formeln (utanför Fy1) står i frågan.
