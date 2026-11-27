@@ -70,3 +70,31 @@ Alla beräkningar stämmer, även ekvationsuppgifterna (2.301, 2.303, 2.315, 2.3
 - **2.295, 2.299:** pappersbladets b upprepade situationen med nya ord, och 2.295 sa både ”åker” och ”cyklar”. De har
   fått en ny gemensam inledning, och delkorten är inledning + fråga. I 2.299 b står mellanresultatet 11 934 m i frågan.
 - **3.96:** ”Antag” → ”Anta”.
+
+### Kapitel 3 utom medelhastighet (klart) – `tools/fy1-granskning-kap3-2026-11-27.py`
+
+Områdena acceleration, at-diagram, konstant acceleration, st-diagram, vektorer och vt-diagram är lästa och
+kontrollräknade (svar som bara kan läsas av i en figur är inte omräknade). Alla beräknade svar stämmer. Ändringar i
+53 uppgifter:
+
+- **Sakfel i texten:**
+  - 3.231 c frågade efter tunneln, men den fanns bara i delkortet. Den står nu i frågan, och delkorten är kedjade
+    med omkörningstiden 24 s som mellanresultat.
+  - 3.46 c frågade efter ”personens hastighet” utan att det stod att personen går nedåt.
+  - 3.44 b: ”tåget” → ”det snabbare tåget”.
+  - 3.386: delkorten upprepade inledningen med nya ord, och d hänvisade till ”bilen i c”. Nu är de inledning +
+    fråga, b får accelerationen 1,887 m/s² och d sina egna värden. Delfacit b: ”Från a):” → ”Accelerationen är given:”.
+  - 3.387 a saknade A och B och får nu inledningen med figuren (tidigare beslut 2026-11-19 ersatt av kedjeregeln).
+  - 3.388: ”Partikeln … En bil passerar” → en bil. b får farten i A som mellanresultat.
+  - 3.380–3.384: ”Partikeln rör sig … En partikel passerar” → en mening. 3.389: inledningen ”Partikeln …” passade
+    inte bilarna och cyklisten.
+  - 3.407 b: ”Bestäm h” utan h i delen → ”Från vilken höjd faller partikeln?”
+- **Avrundning och underförstådda enheter bort:** 3.88, 3.403, 3.407 b (värdesiffror finns i `svarVardesiffror`),
+  3.388 b (två decimaler, till `kgInstruktion`), samt ”i m/i s/i m/s²/i km/h” i 3.43, 3.47 b, 3.106 d, 3.140 a,
+  3.151 c, 3.163 c och 3.175.
+- **Metatext bort:** 3.39, 3.73, 3.94, 3.95, 3.230, 3.362 (”Bestäm tangentens lutning.”), 3.47 (förenklad modell,
+  till `kgInstruktion` som ”Använd värdena i diagrammet.”), 3.75, 3.76 och 3.144.
+- 3.618: ”På vilken höjd ligger den?” → ”Vilken acceleration har bilen?”
+- **Namn i stället för ”eleven”:** 3.38, 3.253, 3.439. **Minustecken:** 3.197, 3.198. **”Antag” → ”Anta”:** 18 uppgifter.
+- **Tester:** `fysik1-kap3-figurer-2026-11-19` väntar nu figuren på alla delkort i 3.387. `felrapporter-2026-10-14-1634`
+  går igenom ("Den andra bilen" i stället för "En annan bil").

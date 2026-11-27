@@ -15,7 +15,9 @@ const FIGURER = {
   '3.210': null, '3.360': null, '3.203': null,
   // konstacc
   '3.30': null, '3.63': null, '3.68': null, '3.86': null, '3.118': null, '3.124': null, '3.162': null, '3.170': null, '3.172': null,
-  '3.177': null, '3.378': null, '3.379': null, '3.391': null, '3.400': null, '3.406': null, '3.387': ['b', 'c'],
+  '3.177': null, '3.378': null, '3.379': null, '3.391': null, '3.400': null, '3.406': null,
+  // 3.387: alla delkort börjar med inledningen och figuren (kedjeregeln 2026-11-27, agent/FY1_GRANSKNING_2026-11-27.md)
+  '3.387': null,
   // vektorer (hastighet som vektor)
   '3.638': null, '3.711': null, '3.713': null, '3.677': null, '3.689': null, '3.723': null, '3.732': null, '3.656': null, '3.730': null,
   '3.705': null, '3.676': null, '3.7': null, '3.52': null, '3.82': ['b', 'c'], '3.95': null,
