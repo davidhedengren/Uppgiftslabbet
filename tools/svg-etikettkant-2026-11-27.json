@@ -1,0 +1,888 @@
+[
+ {
+  "bank": "uppgifter2.js",
+  "id": "1.21",
+  "etiketter": [
+   "19 m/s"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "1.22",
+  "etiketter": [
+   "22 m/s"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "1.59",
+  "etiketter": [
+   "v₀ = 25 m/s"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "1.76",
+  "etiketter": [
+   "14°",
+   "6,0°"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.158",
+  "etiketter": [
+   "1,8 m"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.159",
+  "etiketter": [
+   "8,0 m"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.162",
+  "etiketter": [
+   "0,50 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.163",
+  "etiketter": [
+   "1,0 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.165",
+  "etiketter": [
+   "0,75 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.166",
+  "etiketter": [
+   "1,0 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.167",
+  "etiketter": [
+   "0,80 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.168",
+  "etiketter": [
+   "0,60 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.169",
+  "etiketter": [
+   "1,5 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.170",
+  "etiketter": [
+   "r₂",
+   "x"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.171",
+  "etiketter": [
+   "0,65 m",
+   "r₂"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "2.539",
+  "etiketter": [
+   "S1",
+   "S2"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "3.443",
+  "etiketter": [
+   "70°"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "4.302",
+  "etiketter": [
+   "30°",
+   "β = ?"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "4.306",
+  "etiketter": [
+   "β = ?"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "4.344",
+  "etiketter": [
+   "30°"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "4.346",
+  "etiketter": [
+   "β = ?"
+  ]
+ },
+ {
+  "bank": "uppgifter2.js",
+  "id": "5.46",
+  "etiketter": [
+   "970 nm"
+  ]
+ },
+ {
+  "bank": "uppgifterma1.js",
+  "id": "0.833",
+  "etiketter": [
+   "(5, 20)"
+  ]
+ },
+ {
+  "bank": "uppgifterma2.js",
+  "id": "2.361",
+  "etiketter": [
+   "(0,2)"
+  ]
+ },
+ {
+  "bank": "uppgifterma2.js",
+  "id": "2.780",
+  "etiketter": [
+   "t (h)"
+  ]
+ },
+ {
+  "bank": "uppgifterma2.js",
+  "id": "2.90",
+  "etiketter": [
+   "(2, 6)"
+  ]
+ },
+ {
+  "bank": "uppgifterma2.js",
+  "id": "5.68",
+  "etiketter": [
+   "kortaste raka vägen"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.115",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.13",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.147",
+  "etiketter": [
+   "E",
+   "S"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.162",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.163",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.164",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.165",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.166",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.167",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.17",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.171",
+  "etiketter": [
+   "delbara",
+   "med 5"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.172",
+  "etiketter": [
+   "T₂"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "1.18",
+  "etiketter": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.10",
+  "etiketter": [
+   "6,0 m/s"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.101",
+  "etiketter": [
+   "r = 2,0 cm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.111",
+  "etiketter": [
+   "r = 2 dm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.113",
+  "etiketter": [
+   "h = 2,0 dm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.20",
+  "etiketter": [
+   "r = 6,0 cm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.35",
+  "etiketter": [
+   "området fortsätter"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.36",
+  "etiketter": [
+   "området fortsätter"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.45",
+  "etiketter": [
+   "r = 5,0 cm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "3.98",
+  "etiketter": [
+   "r = 5,0 cm"
+  ]
+ },
+ {
+  "bank": "uppgiftermatf1.js",
+  "id": "4.40",
+  "etiketter": [
+   "med 0,40 g/L",
+   "ut: 3,0 L/min"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "2.242",
+  "etiketter": [
+   "P(1,1)",
+   "tangent",
+   "y=x²"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "2.547",
+  "etiketter": [
+   "y = 2ˣ"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "2.767",
+  "etiketter": [
+   "x = 2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "2.768",
+  "etiketter": [
+   "x = 2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "2.773",
+  "etiketter": [
+   "x = 1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.1181",
+  "etiketter": [
+   "tangent"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.255",
+  "etiketter": [
+   "y=x+2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.270",
+  "etiketter": [
+   "v₁=t+2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.271",
+  "etiketter": [
+   "14 - x"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.353",
+  "etiketter": [
+   "(1; 4)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.354",
+  "etiketter": [
+   "(1; 2)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.48",
+  "etiketter": [
+   "y = x"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.53",
+  "etiketter": [
+   "negativ del"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "3.555",
+  "etiketter": [
+   "(2,1)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.145",
+  "etiketter": [
+   "(0; 4)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.174",
+  "etiketter": [
+   "P"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.278",
+  "etiketter": [
+   "225°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.279",
+  "etiketter": [
+   "330°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.302",
+  "etiketter": [
+   "(0,4)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato1.js",
+  "id": "4.48",
+  "etiketter": [
+   "5,0°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.110",
+  "etiketter": [
+   "-π/2",
+   "π/2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.121",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.138",
+  "etiketter": [
+   "III"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.19",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.267",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.288",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.318",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.409",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.414",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.415",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.416",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.437",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.438",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.439",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.441",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.442",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.443",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.444",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.559",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.643",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "1.691",
+  "etiketter": [
+   "180°",
+   "360°",
+   "540°",
+   "720°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.42",
+  "etiketter": [
+   "y = f′(x)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.592",
+  "etiketter": [
+   "45°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.599",
+  "etiketter": [
+   "315°",
+   "45°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.605",
+  "etiketter": [
+   "270°",
+   "90°",
+   "−90°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.607",
+  "etiketter": [
+   "90°",
+   "−90°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.608",
+  "etiketter": [
+   "270°",
+   "90°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.609",
+  "etiketter": [
+   "270°",
+   "90°",
+   "−90°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.610",
+  "etiketter": [
+   "90°",
+   "−90°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.612",
+  "etiketter": [
+   "135°",
+   "45°",
+   "−45°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.640",
+  "etiketter": [
+   "120°",
+   "300°"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "2.77",
+  "etiketter": [
+   "y = f′(x)"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.127",
+  "etiketter": [
+   "y-axel"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.177",
+  "etiketter": [
+   "y = x²"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.18",
+  "etiketter": [
+   "y = x²"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.249",
+  "etiketter": [
+   "0,5",
+   "−0,5"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.253",
+  "etiketter": [
+   "0,5",
+   "−0,5"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.511",
+  "etiketter": [
+   "0,5",
+   "−0,5"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.59",
+  "etiketter": [
+   "innerkant"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "3.66",
+  "etiketter": [
+   "π/4"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.577",
+  "etiketter": [
+   "−1",
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.586",
+  "etiketter": [
+   "−1"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.589",
+  "etiketter": [
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.590",
+  "etiketter": [
+   "−5"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.593",
+  "etiketter": [
+   "2",
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.596",
+  "etiketter": [
+   "2",
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.598",
+  "etiketter": [
+   "2",
+   "z2",
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.599",
+  "etiketter": [
+   "2",
+   "−2"
+  ]
+ },
+ {
+  "bank": "uppgiftermato2.js",
+  "id": "4.613",
+  "etiketter": [
+   "1",
+   "D",
+   "−1"
+  ]
+ }
+]

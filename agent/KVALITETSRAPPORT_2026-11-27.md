@@ -76,15 +76,51 @@ det riktiga typsnittet klipptes etiketter av, till exempel ”R₂ = 1000 Ω” 
   - 6.538: ”Temperaturen och gasmängden är konstanta.”, som delkorten redan sa.
   - 7.139: ”Tre olika metallbitar värms upp.”
 
-## Kvar i andra kurser, inte åtgärdat
+## Omgång 2 (samma dag, ”Fortsätt”): övriga kurser
 
-En körning med typsnittet laddat ger i alla kurser 449 fynd ”linje”, 115 ”cirkel”, 341 ”annan etikett” (339 i Ma4), 26
-”plural” och 43 ”miniräknare”. Krockkontrollen är grov, som falsklarmen i Fy1 visar, så fynden behöver bedömas figur
-för figur och massändras inte.
+**Inledningar i plural.** Kortet visar hela uppgiften med alla deluppgifter i följd, eftersom deluppgiftskedjan
+(2026-10-24) gäller allt utom `kgFristaendeDelar`. Därför är ”Lös ekvationerna.” följt av a)–d) rätt, vilket en
+rendering av Ma3c 1.1038 visar. Pluralkontrollen var föråldrad. Den letar nu bara bland fristående delkort, och de 20
+fynden i Ma3c, Ma4 och Ma5 försvann. Även de sex Fy1-inledningarna i omgång 1 var alltså rätt från början. De nya
+formuleringarna fungerar lika bra och står kvar.
+
+**Miniräknare (43 fynd).**
+
+- 42 är rätt bedömda som `miniräknare: false`: avrundning, positionssystem, grundpotensform, prefix och procentform, där
+  räknaren tar bort det som prövas, eller enkel huvudräkning som 12·5/8 och −1/4. De är förda in i Kunskapsgymmets
+  `KV_RAKNARE_GRANSKADE`.
+- Ma3c 1.980 har fått miniräknare, eftersom parabelmodellen ger 175/40 = 4,375 m
+  (`tools/kvalitetsrapport-2026-11-27b.py`).
+
+**Figurkrockar.** Krockkontrollen i Kunskapsgymmet (`kvFigur`) är förbättrad på fyra punkter:
+
+- En vit kantkopia under en etikett, som många figurer ritar, är ingen egen etikett. Det var de flesta ”annan
+  etikett”-fynden i Ma4.
+- En etikett med vit kant (kopia eller `paint-order="stroke"`) räknas som läsbar över linjer och cirklar.
+- En ellips mäts med båda radierna.
+- En nodetikett inuti en liten cirkel, en etikett med en fylld ruta bakom sig och en kontur som döljs av en fylld form
+  ovanpå räknas inte.
+
+Därefter granskades varje kvarvarande figur visuellt, 156 kort och 119 unika figurer, och åtgärdades
+(`tools/svg-etikettkant-2026-11-27.py`):
+
+- **Vit kant** på 172 etiketter i 119 uppgifter som avsiktligt står på en linje eller cirkel. Exempel: hastighet längs
+  kastbanan, mått på måttlinjer, r₂ på streckad sträcka, −1 på enhetscirkeln, mängdnamn på Venndiagrammens cirklar och
+  gradtal på asymptoter. Linjen bryts bakom texten, och ingenting flyttas. Listan finns i
+  `tools/svg-etikettkant-2026-11-27.json`.
+- **Flyttade etiketter:**
+  - ”f” i Ma1 2.56 och 2.58 samt Ma2 2.210 och 2.413 stod där kurvan korsar x-axeln och står nu på kurvans övre högra gren.
+  - ”2x+1” i Ma3c 3.501 låg på gränsetiketten ”3”.
+  - Punktetiketten ”−3” i Ma4 4.589 låg på axelns ”−3” och står nu ovanför punkten.
+- Kontroll: bara `<text>`-taggar har ändrats. Ett urval är renderat före och efter, och Kunskapsgymmets granskning med
+  typsnittet laddat har **0 synliga fynd i alla kurser**. Kvar är bara de små fynden som rapporten döljer som standard,
+  till exempel axeltal som en rutnätslinje går igenom.
 
 Skript och test:
 
 - `tools/kvalitetsrapport-2026-11-27.py` (Ma2 3.67, Fy1 4.852 och inledningarna)
+- `tools/kvalitetsrapport-2026-11-27b.py` och `tools/svg-etikettkant-2026-11-27.py` (omgång 2)
+- `tools/kvalitetsrapport-2026-11-27b.test.js`
 - `tools/svg-ram-plexmono-2026-11-27.cjs`
 - `tools/kvalitetsrapport-2026-11-27.test.js`
 - i Kunskapsgymmet: `tools/kvalitet-facit-2026-11-27.test.js`

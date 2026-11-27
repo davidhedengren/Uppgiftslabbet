@@ -3930,3 +3930,7 @@ IBM Plex Mono, klipptes därför etiketter av i 64 figurer. Ramarna är nu vidga
   figurändringar.
 - Kvalitetsgranskningens facitkontroll provar fysikfacit avrundat till `svarVardesiffror`. Ett oavrundat maskinvärde
   som underkänns är inget fel.
+- Etiketter som avsiktligt står på en linje eller cirkel får en vit kant (`stroke="#fff"` och `paint-order="stroke"`,
+  eller en vit kopia under texten). Krockkontrollen räknar dem som läsbara.
+- En inledning i plural är rätt i deluppgifter som visas i kedjan. Bara fristående delkort (`kgFristaendeDelar`) visar en
+  enda deluppgift.
