@@ -3917,3 +3917,16 @@ Lärare om Ma3c 1.904: ”Graderingen på axlarna ska sitta jämte axeln.” Nä
 x-talen stå under x-axeln och y-talen till vänster om y-axeln, inte vid en ram. Nollan skrivs en gång vid origo, och
 axlarna har pilspets. Ma3c-generatorns 15 grafer är omgjorda (`tools/mato1-axelgradering-2026-11-27.py`). Rita nya
 grafer så.
+
+## Figurtext mäts med IBM Plex Mono, 2026-11-27
+
+[Kvalitetsrapporten 2026-11-27](KVALITETSRAPPORT_2026-11-27.md): textförstoringen 2026-11-24 mättes med ett
+reservtypsnitt, eftersom `tools/granska-svg.js` inte laddade webbtypsnitten. I Kunskapsgymmet, som ritar figurtexten med
+IBM Plex Mono, klipptes därför etiketter av i 64 figurer. Ramarna är nu vidgade.
+
+- SVG-granskningen laddar nu typsnitten och varnar när de saknas.
+- Mät alltid figurtext med typsnittet som visas för eleven.
+- Kunskapsgymmets egen kvalitetsgranskning (admin) mäter i webbläsaren med appens typsnitt. Kör den efter större
+  figurändringar.
+- Kvalitetsgranskningens facitkontroll provar fysikfacit avrundat till `svarVardesiffror`. Ett oavrundat maskinvärde
+  som underkänns är inget fel.
