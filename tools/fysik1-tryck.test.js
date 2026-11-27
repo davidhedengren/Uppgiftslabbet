@@ -135,7 +135,7 @@ test('Tryck: gränsvärden, fysikmodeller och delkort har tillräckliga egna dat
  }
  assert.match(q('6.42').spelDelar[1].s,/120\\cdot15=1800/);
  assert.match(q('6.42').spelDelar[1].s,/4\{,\}0\\cdot25=100/);
- assert.doesNotMatch(q('6.42').spelDelar[0].t,/<svg/);
+ assert.ok(q('6.42').spelDelar[0].t.startsWith(q('6.42').spelIntro)); // 2026-11-27: kedjan, a har samma inledning (och figur) som b
  assert.match(q('6.51').spelDelar[2].t,/400 N/);
  assert.doesNotMatch(q('6.51').spelDelar[2].s,/20000|20 000|0\{,\}020/);
  assert.match(q('6.98').spelDelar[1].t,/24 N/);assert.doesNotMatch(q('6.98').spelDelar[1].ledtrad,/Tryck och area/);

@@ -133,5 +133,5 @@ test('Frågetexterna föreskriver inte omvandlingstalet; domkraften har endast t
 test('Flytklossen har enkelt språk, C-märkning och eget densitetsfacit',()=>{
  const t=q('6.73');assert.equal(t.niva,'C');assert.equal(t.traningsniva,3);assert.equal(t.spelDelar[2].niva,'C');assert.equal(t.spelDelar[2].traningsniva,3);
  for(const d of [t,...t.spelDelar])assert.doesNotMatch(d.t,/homogen|rätblockskloss/i);
- assert.equal(t.rättSvar[2],998*(20-8)/20);assert.match(t.spelDelar[2].s,/Arkimedes princip/);assert.match(t.spelDelar[2].s,/20-8/);assert.match(t.spelDelar[2].t,/998 kg/);
+ assert.equal(t.rättSvar[2],998*(20-8)/20);assert.match(t.spelDelar[2].s,/Arkimedes princip/);assert.match(t.spelDelar[2].s,/20-8/);assert.match(t.spelDelar[2].kgInstruktion,/998 kg/); // 2026-11-27: tabelldensiteter står i kgInstruktion, inte i frågetexten
 });

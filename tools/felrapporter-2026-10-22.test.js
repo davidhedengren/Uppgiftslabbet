@@ -15,7 +15,7 @@ test('Fellogg: energier, krafter och kontakttid verifieras oberoende',()=>{
 test('Rapporterade delkort har egna rätta nivåer och tydliga frågor',()=>{
  assert.equal(q('5.123').spelDelar[0].traningsniva,4);
  assert.equal(q('5.225').spelDelar[0].traningsniva,5);assert.equal(q('5.225').spelDelar[1].traningsniva,3);
- assert.equal(q('5.396').traningsniva,5);assert.match(q('5.117').spelDelar[1].t,/på passageraren under inbromsningen/);
+ assert.equal(q('5.396').traningsniva,5);assert.match(q('5.117').spelDelar[1].t,/på passageraren i genomsnitt om inbromsningen tar 0,020 s/); // 2026-11-27: alla delkort börjar med samma inledning (deluppgiftskedjan, felrapport 2.52); det ändrade står i frågan.
  assert.equal(q('5.395').spelDelar[1].traningsniva,4);assert.equal(q('5.395').spelDelar[0].traningsniva,2);
  assert.match(q('5.97').spelDelar[0].t,/energi är lagrad/);
  assert.equal((q('5.382').spelDelar[1].t.match(/18 m\/s/g)||[]).length,1);

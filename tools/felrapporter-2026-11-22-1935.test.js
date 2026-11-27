@@ -14,7 +14,7 @@ test('Fy1: densiteterna hör till materialen', () => {
     for (const t of [x.t, x.spelIntro || '', ...(x.spelDelar || []).map((d) => d.t || '')]) assert.doesNotMatch(t, /Densiteterna är/, id);
     assert.match(x.t, /Aluminium har densiteten 2,70 g\/cm³/, id);
   }
-  assert.match(q(fy1, '2.143').spelDelar[0].t, /plasten 1,20 g\/cm³/);
+  assert.match(q(fy1, '2.143').spelDelar[0].t, /[Pp]lasten (har densiteten )?1,20 g\/cm³/); // 2026-11-27: aluminiums tabellvärde står i kgInstruktion, plastens (uppgiftens egna data) i texten
 });
 
 test('Fy1: enheter på axlarna i a-t- och s-t-diagrammen', () => {

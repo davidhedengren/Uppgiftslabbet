@@ -12,5 +12,5 @@ test('Arbetet av en sned kraft avrundas konsekvent i text, facit och maskinsvar'
 });
 test('Rörelsemängdskortet a innehåller bara sin egen vagn och tydlig teckenriktning',()=>{
  const q=get('5.160'),a=q.spelDelar[0];assert.equal(q.rättSvar[0],3*2.5);assert.equal(a.traningsniva,1);
- /* Språkgranskningen 2026-11-17: teckenriktningen står i kgInstruktion (bara Kunskapsgymmet), aldrig "med tecken". */ assert.match(a.kgInstruktion,/Höger räknas som positiv riktning/);assert.doesNotMatch(a.t+a.kgInstruktion,/tecken/);assert.doesNotMatch(a.t,/stöten|4,0 kg|1,5 m\/s/);
+ /* Språkgranskningen 2026-11-17: teckenriktningen står i kgInstruktion (bara Kunskapsgymmet), aldrig "med tecken". */ assert.match(a.kgInstruktion,/Höger räknas som positiv riktning/);assert.doesNotMatch(a.t+a.kgInstruktion,/tecken/);assert.match(a.fraga,/vänstra vagnen/); // 2026-11-27: kedjan, alla delkort börjar med samma inledning
 });

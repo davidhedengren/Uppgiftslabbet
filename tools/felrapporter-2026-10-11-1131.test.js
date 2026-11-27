@@ -5,7 +5,7 @@ const get=id=>c.window.BANK.find(t=>t.id===id);
 test('Simmarens tre svar är korrekta och c-kortet har egen tid och riktningsfigur',()=>{
  const q=get('3.311');assert.deepEqual(Array.from(q.rättSvar),[Math.hypot(.9,1.2),60/1.2,.9*50]);
  for(const d of q.spelDelar){assert.match(d.t,/<svg/);assert.match(d.t,/data-vektor="simning"/);assert.match(d.t,/data-vektor="strom"/);assert.match(d.t,/data-vektor="land"/);}
- const d=q.spelDelar[2];assert.match(d.t,/50 s/);assert.match(d.t,/0,9 m\/s/);assert.doesNotMatch(d.t,/60 m|1,2 m\/s|45 m/);
+ const d=q.spelDelar[2];assert.match(d.t,/50 s/);assert.match(d.t,/0,9 m\/s/);assert.doesNotMatch(d.t,/45 m/);assert.match(d.fraga,/50 s/); // 2026-11-27: alla delkort börjar med samma inledning (deluppgiftskedjan, felrapport 2.52); det ändrade står i frågan.
  assert.doesNotMatch(JSON.stringify(q),/överfarten/i);assert.deepEqual(q.spelDelar.map(d=>d.traningsniva).join(','),'2,1,1');
 });
 test('Färjeuppgiften behåller fysiken med enklare språk',()=>{

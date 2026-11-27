@@ -11,14 +11,12 @@ test('Densitet: full precision i fem avrundade maskinfacit',()=>{
   assert.ok(/med (två decimaler|en decimal|tre värdesiffror)/.test(x.t)||[].concat(x.svarVardesiffror).some(v=>v>=1));
  }
 });
-test('Delkorten har enbart relevant sammanhang och egna ledtrådar',()=>{
- assert.doesNotMatch(q('2.17').spelDelar[0].t,/288|massan|m =/);
- assert.doesNotMatch(q('2.26').spelDelar[0].t,/1,05|massan|m =/);
- assert.doesNotMatch(q('2.26').spelDelar[1].t,/5,0|sidan/);
- assert.doesNotMatch(q('2.27').spelDelar[0].t,/0,29|atomlager/);
+test('Delkorten har gemensam inledning, egna frågor och egna ledtrådar',()=>{
+ // 2026-11-27: deluppgiftskedjan (felrapport 2.52). Alla delkort börjar med samma inledning; tidigare krävde testet
+ // att a-korten bara hade sina egna data. Det som ändras i en del står i delens fråga.
+ for(const id of ['2.17','2.26','2.52'])for(const d of q(id).spelDelar)assert.ok(d.t.startsWith(q(id).spelIntro),id+d.etikett);
  assert.match(q('2.27').spelDelar[1].t,/0,29/);
- assert.doesNotMatch(q('2.52').spelDelar[2].t,/15 kg|i stället/);
- assert.match(q('2.52').spelDelar[2].t,/30 kg/);
+ assert.match(q('2.52').spelDelar[2].fraga,/30 kg/);assert.doesNotMatch(q('2.52').spelDelar[2].t,/massan 30 kg\.<\/p>/);
  for(const id of ['2.17','2.26','2.54'])assert.equal(new Set(q(id).spelDelar.map(d=>d.ledtrad)).size,q(id).spelDelar.length);
 });
 test('Granskad mätprecision, nivå och verktyg på samtliga fjorton uppgifter',()=>{

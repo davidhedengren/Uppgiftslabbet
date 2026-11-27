@@ -55,7 +55,7 @@ Användaren klistrar in en logg ("Felrapporterade uppgifter · Kunskapsgymmet ·
 
 ### Formuleringar och mönster att undvika i uppgifter
 
-- Fysikkort på träningsnivå 1–2 ska bara visa de givna tal och materialdata som behövs för just den frågan. Ange nödvändiga mellanresultat direkt, med tillräcklig precision, och låt delens facit använda dem. Behåll nödvändiga villkor, riktning och nollnivå. Kontrollera frågans svarsenhet mot `svarEnhet` i det faktiskt visade delkortet.
+- Delkort i en uppgift med deluppgifter börjar alla med exakt samma inledning (`spelIntro`), eftersom Kunskapsgymmet visar dem som en kedja a → b → c och bara visar det som skiljer (felrapport Fy1 2.52, 2026-11-27; ersätter den äldre regeln att kort på träningsnivå 1–2 bara visar sina egna data). Det som ändras i en del (”i stället 30 kg”) och behövda mellanresultat står i delens fråga. Undantag: en del med ändrat kraftläge behåller egen text utan den gamla kraftbilden. Kontrollera frågans svarsenhet mot `svarEnhet` i det faktiskt visade delkortet.
 
 Eleverna är gymnasieelever; texten ska vara enkel och konkret.
 
@@ -274,7 +274,7 @@ facit och tolerans med båda varianterna.
 
 ## Rena uppgifter i Uppgiftslabbet (användarbeslut 2026-11-23)
 
-Uppgiftstexten `t` innehåller inga instruktioner om svarets form (avrundning, ”Svara exakt”, svarsform) och inga tabellvärden som eleven slår upp själv (specifik värmekapacitet, smältvärme, vattnets densitet, resistivitet osv.). Sådant står i `kgInstruktion`, som bara Kunskapsgymmet visar. Undantag: när svarsformen är det som tränas, när värdet är uppgiftens eget, eller när ämnet annars inte framgår. Se `agent/FELMONSTER_OCH_BESLUT.md` (2026-11-23). Avsnitten nedan om svarsinstruktioner gäller därför Kunskapsgymmets text (`kgInstruktion`).
+Uppgiftstexten `t` innehåller inga instruktioner om svarets form (avrundning, ”Svara exakt”, svarsform) och inga tabellvärden som eleven slår upp själv (specifik värmekapacitet, smältvärme, vattnets densitet, resistivitet osv.). Sådant står i `kgInstruktion`, som bara Kunskapsgymmet visar. **Densiteter** (och andra tabellvärden) står bara i `kgInstruktion`, aldrig i frågetexterna: varken i `t`, `spelIntro` eller delkortens `t`/`fraga` (användarbeslut 2026-11-27, felrapport Fy1 2.84 och förtydligandet ”i kunskapsgymmet kan de stå för att det ska bli rätt med rättningen … en egen del i koden”). Delkort som behöver värdet får det i sin egen `kgInstruktion`. Gasernas densitet och uppgifternas egna data står kvar i texten. Se `agent/FY1_REVISION_2026-11-27.md`. Undantag: när svarsformen är det som tränas, när värdet är uppgiftens eget, eller när ämnet annars inte framgår. Se `agent/FELMONSTER_OCH_BESLUT.md` (2026-11-23). Avsnitten nedan om svarsinstruktioner gäller därför Kunskapsgymmets text (`kgInstruktion`).
 
 ## Fysik: placering av svarsinstruktioner
 

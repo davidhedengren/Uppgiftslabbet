@@ -7,7 +7,7 @@ test('5.224: samma bromskraft används utan för tidig avrundning; varje kort ä
  const t=fy('5.224'),F=(.5*5**2/2)/2-.5*g*sin(20),distance=16/(.5*g*sin(40)+F),b=t.spelDelar[1];
  close(t.rättSvar[0],F);close(t.rättSvar[1],distance);close(b.rättSvar,16/(.5*g*sin(40)+1.4457));
  assert.equal(distance.toFixed(2),'3.48');assert.equal((16/(.5*g*sin(40)+1.45)).toFixed(2),'3.47');
- assert.match(t.t,/Bromskraften F är oförändrad/);assert.match(b.t,/1,4457 N/);assert.doesNotMatch(b.t,/5,0 m\/s|20°|svaret från a/);
+ assert.match(t.t,/Bromskraften F är oförändrad/);assert.match(b.t,/1,4457 N/);assert.doesNotMatch(b.t,/svaret från a/);assert.match(b.fraga,/40°/);assert.match(b.fraga,/8,0 m\/s/); // 2026-11-27: alla delkort börjar med samma inledning (deluppgiftskedjan, felrapport 2.52); det ändrade står i frågan.
  assert.ok(Math.abs(3.48-b.rättSvar)<=t.tolerans[1]);assert.ok(Math.abs(3.47-b.rättSvar)>t.tolerans[1]);
 });
 test('0.992: en decimal är angiven och både 3,1 och extra precision godtas',()=>{
